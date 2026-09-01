@@ -17,16 +17,59 @@
 namespace SDK::Params
 {
 
-// Function WBP_PalSkillEntry.WBP_PalSkillEntry_C.CREATEDELEGATE_PROXYFUNCTION_0
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PalSkillEntry_C_CREATEDELEGATE_PROXYFUNCTION_0 final
+// Function WBP_PalSkillEntry.WBP_PalSkillEntry_C.UpdateCooldown
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalSkillEntry_C_UpdateCooldown final
 {
 public:
-	float                                         CoolRate;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_UpdateCoolDown_Cool_ImplicitCast;         // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Cool;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalSkillEntry_C_CREATEDELEGATE_PROXYFUNCTION_0;
+DUMPER7_ASSERTS_WBP_PalSkillEntry_C_UpdateCooldown;
+
+// Function WBP_PalSkillEntry.WBP_PalSkillEntry_C.Unbind
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalSkillEntry_C_Unbind final
+{
+public:
+	class UPalActiveSkill*                        ActiveSkill;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalSkillEntry_C_Unbind;
+
+// Function WBP_PalSkillEntry.WBP_PalSkillEntry_C.ToggleVisibility
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_PalSkillEntry_C_ToggleVisibility final
+{
+public:
+	bool                                          IsCooling;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalSkillEntry_C_ToggleVisibility;
+
+// Function WBP_PalSkillEntry.WBP_PalSkillEntry_C.Setup
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalSkillEntry_C_Setup final
+{
+public:
+	class UPalActiveSkill*                        ActiveSkill;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalSkillEntry_C_Setup;
+
+// Function WBP_PalSkillEntry.WBP_PalSkillEntry_C.SetSkillText
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_PalSkillEntry_C_SetSkillText final
+{
+public:
+	class FText                                   SkillName;                                         // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_PalSkillEntry_C_SetSkillText;
+
+// Function WBP_PalSkillEntry.WBP_PalSkillEntry_C.LongPress
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_PalSkillEntry_C_LongPress final
+{
+public:
+	bool                                          Start;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalSkillEntry_C_LongPress;
 
 // Function WBP_PalSkillEntry.WBP_PalSkillEntry_C.ExecuteUbergraph_WBP_PalSkillEntry
 // 0x00F0 (0x00F0 - 0x0000)
@@ -80,59 +123,16 @@ public:
 };
 DUMPER7_ASSERTS_WBP_PalSkillEntry_C_ExecuteUbergraph_WBP_PalSkillEntry;
 
-// Function WBP_PalSkillEntry.WBP_PalSkillEntry_C.LongPress
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_PalSkillEntry_C_LongPress final
+// Function WBP_PalSkillEntry.WBP_PalSkillEntry_C.CREATEDELEGATE_PROXYFUNCTION_0
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PalSkillEntry_C_CREATEDELEGATE_PROXYFUNCTION_0 final
 {
 public:
-	bool                                          Start;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CoolRate;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_UpdateCoolDown_Cool_ImplicitCast;         // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalSkillEntry_C_LongPress;
-
-// Function WBP_PalSkillEntry.WBP_PalSkillEntry_C.SetSkillText
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_PalSkillEntry_C_SetSkillText final
-{
-public:
-	class FText                                   SkillName;                                         // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_PalSkillEntry_C_SetSkillText;
-
-// Function WBP_PalSkillEntry.WBP_PalSkillEntry_C.Setup
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalSkillEntry_C_Setup final
-{
-public:
-	class UPalActiveSkill*                        ActiveSkill;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalSkillEntry_C_Setup;
-
-// Function WBP_PalSkillEntry.WBP_PalSkillEntry_C.ToggleVisibility
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_PalSkillEntry_C_ToggleVisibility final
-{
-public:
-	bool                                          IsCooling;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalSkillEntry_C_ToggleVisibility;
-
-// Function WBP_PalSkillEntry.WBP_PalSkillEntry_C.Unbind
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalSkillEntry_C_Unbind final
-{
-public:
-	class UPalActiveSkill*                        ActiveSkill;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalSkillEntry_C_Unbind;
-
-// Function WBP_PalSkillEntry.WBP_PalSkillEntry_C.UpdateCooldown
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalSkillEntry_C_UpdateCooldown final
-{
-public:
-	double                                        Cool;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalSkillEntry_C_UpdateCooldown;
+DUMPER7_ASSERTS_WBP_PalSkillEntry_C_CREATEDELEGATE_PROXYFUNCTION_0;
 
 }
 

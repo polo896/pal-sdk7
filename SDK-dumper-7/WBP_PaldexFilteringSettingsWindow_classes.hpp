@@ -64,27 +64,27 @@ public:
 	struct FPalDataTableRowName_UIInputAction     ResetSettingsInputAction;                          // 0x0678(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ApplyCachedSortInfo();
-	void BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_CommonButton_Sort_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
-	void BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_Menu_btn_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature();
-	void BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_PalInvisibleButton_ExcludeReceivedBonus_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void CacheSortInfo();
-	void CollectFilteringElementType(TArray<EPalElementType>* ElementTypeArray);
-	void CollectFilteringSuitability(TArray<EPalWorkSuitability>* SuitabilityArray);
+	void SaveSettingAndClose();
+	void OnSetup();
+	void OnInputAction_ResetSetting();
+	void OnInputAction_Confirm();
+	void OnInitialized();
+	void OnClickedWorlSutabilityCheckBox(bool bChecked, EPalWorkSuitability WorkSuitbility);
+	void OnClickedSortTypeButton(class UWBP_PaldexFilteringSettings_SortTypeButton_C* Widget);
+	void OnClickedElementTypeCheckBox(bool bChecked, EPalElementType ElementType);
+	void Initialize();
+	void ExecuteUbergraph_WBP_PaldexFilteringSettingsWindow(int32 EntryPoint);
+	class UWidget* DoCustomNavi_ToSortButtonTopLeft(EUINavigation Navigation_0);
+	class UWidget* DoCustomNavi_ToExcludeReceivedBonusButton(EUINavigation Navigation_0);
 	class UWidget* DoCustomNavi_ToCloseButton(EUINavigation Navigation_0);
 	class UWidget* DoCustomNavi_ToConfirmButton(EUINavigation Navigation_0);
-	class UWidget* DoCustomNavi_ToExcludeReceivedBonusButton(EUINavigation Navigation_0);
-	class UWidget* DoCustomNavi_ToSortButtonTopLeft(EUINavigation Navigation_0);
-	void ExecuteUbergraph_WBP_PaldexFilteringSettingsWindow(int32 EntryPoint);
-	void Initialize();
-	void OnClickedElementTypeCheckBox(bool bChecked, EPalElementType ElementType);
-	void OnClickedSortTypeButton(class UWBP_PaldexFilteringSettings_SortTypeButton_C* Widget);
-	void OnClickedWorlSutabilityCheckBox(bool bChecked, EPalWorkSuitability WorkSuitbility);
-	void OnInitialized();
-	void OnInputAction_Confirm();
-	void OnInputAction_ResetSetting();
-	void OnSetup();
-	void SaveSettingAndClose();
+	void CollectFilteringSuitability(TArray<EPalWorkSuitability>* SuitabilityArray);
+	void CacheSortInfo();
+	void CollectFilteringElementType(TArray<EPalElementType>* ElementTypeArray);
+	void BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_PalInvisibleButton_ExcludeReceivedBonus_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_Menu_btn_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature();
+	void BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_CommonButton_Sort_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
+	void ApplyCachedSortInfo();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

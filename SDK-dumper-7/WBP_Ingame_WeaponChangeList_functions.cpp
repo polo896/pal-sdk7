@@ -17,49 +17,41 @@
 namespace SDK
 {
 
-// Function WBP_Ingame_WeaponChangeList.WBP_Ingame_WeaponChangeList_C.AnmEvent_Focus
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Ingame_WeaponChangeList_C::AnmEvent_Focus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_WeaponChangeList_C", "AnmEvent_Focus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Ingame_WeaponChangeList.WBP_Ingame_WeaponChangeList_C.AnmEvent_Unfocus
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Ingame_WeaponChangeList_C::AnmEvent_Unfocus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_WeaponChangeList_C", "AnmEvent_Unfocus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Ingame_WeaponChangeList.WBP_Ingame_WeaponChangeList_C.ExecuteUbergraph_WBP_Ingame_WeaponChangeList
-// (Final, UbergraphFunction)
+// Function WBP_Ingame_WeaponChangeList.WBP_Ingame_WeaponChangeList_C.UpdateDisplayBulletCount
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalItemSlot*                     WeaponSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Ingame_WeaponChangeList_C::ExecuteUbergraph_WBP_Ingame_WeaponChangeList(int32 EntryPoint)
+void UWBP_Ingame_WeaponChangeList_C::UpdateDisplayBulletCount(class UPalItemSlot* WeaponSlot)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_WeaponChangeList_C", "ExecuteUbergraph_WBP_Ingame_WeaponChangeList");
+		Func = Class->GetFunction("WBP_Ingame_WeaponChangeList_C", "UpdateDisplayBulletCount");
 
-	Params::WBP_Ingame_WeaponChangeList_C_ExecuteUbergraph_WBP_Ingame_WeaponChangeList Parms{};
+	Params::WBP_Ingame_WeaponChangeList_C_UpdateDisplayBulletCount Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.WeaponSlot = WeaponSlot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Ingame_WeaponChangeList.WBP_Ingame_WeaponChangeList_C.SetWeaponSlot
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalItemSlot*                     WeaponSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Ingame_WeaponChangeList_C::SetWeaponSlot(class UPalItemSlot* WeaponSlot)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_WeaponChangeList_C", "SetWeaponSlot");
+
+	Params::WBP_Ingame_WeaponChangeList_C_SetWeaponSlot Parms{};
+
+	Parms.WeaponSlot = WeaponSlot;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -89,43 +81,51 @@ void UWBP_Ingame_WeaponChangeList_C::GetDisplayBulletCount(class UPalItemSlot* W
 }
 
 
-// Function WBP_Ingame_WeaponChangeList.WBP_Ingame_WeaponChangeList_C.SetWeaponSlot
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Ingame_WeaponChangeList.WBP_Ingame_WeaponChangeList_C.ExecuteUbergraph_WBP_Ingame_WeaponChangeList
+// (Final, UbergraphFunction)
 // Parameters:
-// class UPalItemSlot*                     WeaponSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Ingame_WeaponChangeList_C::SetWeaponSlot(class UPalItemSlot* WeaponSlot)
+void UWBP_Ingame_WeaponChangeList_C::ExecuteUbergraph_WBP_Ingame_WeaponChangeList(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_WeaponChangeList_C", "SetWeaponSlot");
+		Func = Class->GetFunction("WBP_Ingame_WeaponChangeList_C", "ExecuteUbergraph_WBP_Ingame_WeaponChangeList");
 
-	Params::WBP_Ingame_WeaponChangeList_C_SetWeaponSlot Parms{};
+	Params::WBP_Ingame_WeaponChangeList_C_ExecuteUbergraph_WBP_Ingame_WeaponChangeList Parms{};
 
-	Parms.WeaponSlot = WeaponSlot;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Ingame_WeaponChangeList.WBP_Ingame_WeaponChangeList_C.UpdateDisplayBulletCount
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalItemSlot*                     WeaponSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Ingame_WeaponChangeList.WBP_Ingame_WeaponChangeList_C.AnmEvent_Unfocus
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Ingame_WeaponChangeList_C::UpdateDisplayBulletCount(class UPalItemSlot* WeaponSlot)
+void UWBP_Ingame_WeaponChangeList_C::AnmEvent_Unfocus()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_WeaponChangeList_C", "UpdateDisplayBulletCount");
+		Func = Class->GetFunction("WBP_Ingame_WeaponChangeList_C", "AnmEvent_Unfocus");
 
-	Params::WBP_Ingame_WeaponChangeList_C_UpdateDisplayBulletCount Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.WeaponSlot = WeaponSlot;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function WBP_Ingame_WeaponChangeList.WBP_Ingame_WeaponChangeList_C.AnmEvent_Focus
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Ingame_WeaponChangeList_C::AnmEvent_Focus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_WeaponChangeList_C", "AnmEvent_Focus");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

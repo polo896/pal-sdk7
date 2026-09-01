@@ -28,16 +28,16 @@ public:
 	bool                                          ProgressFinished;                                  // 0x0468(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ClosePanel();
-	void Destruct();
-	void ExecuteUbergraph_WBP_BuildProgress(int32 EntryPoint);
-	void Finished_0A8F9BE3461D19DEC9F1BDA5236BDDCA();
-	void Finished_C8A38F31462C1BFD0CAC6CAE7285A7E3();
-	void OnRequestClose(class UPalBuildProcess* Process);
-	void OnSetup();
-	void OnUpdatedAssignCharacter(class UPalWorkBase* TargetWork);
-	void SetProgress(class UPalWorkProgress* Work);
 	void ShowProgress(EPalHUDDisplayType DisplayType);
+	void SetProgress(class UPalWorkProgress* Work);
+	void OnUpdatedAssignCharacter(class UPalWorkBase* TargetWork);
+	void OnSetup();
+	void OnRequestClose(class UPalBuildProcess* Process);
+	void Finished_C8A38F31462C1BFD0CAC6CAE7285A7E3();
+	void Finished_0A8F9BE3461D19DEC9F1BDA5236BDDCA();
+	void ExecuteUbergraph_WBP_BuildProgress(int32 EntryPoint);
+	void Destruct();
+	void ClosePanel();
 
 public:
 	static class UClass* StaticClass()

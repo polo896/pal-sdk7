@@ -33,19 +33,19 @@ public:
 	bool                                          bDistanceXY;                                       // 0x0490(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_CompassIconBase(int32 EntryPoint);
-	void Get_Offset_Value(double* offSetValue);
-	void GetLocation(class UPalLocationBase** Location);
-	void PostSetup();
-	void SetDisplayDistance(double Length);
-	void SetDistanceText(double Length);
-	void SetLocationId(const struct FGuid& LocationId);
-	void SetTargetLocation(const struct FVector& TargetLocation, bool bInDistanceXY);
-	void SetupTexture(TSoftObjectPtr<class UTexture2D> SoftTexture);
-	void ShouldForceHide(bool* bForceHide);
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void UpdateDistance();
 	void UpdateVisibility(bool* InDistance);
+	void UpdateDistance();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void ShouldForceHide(bool* bForceHide);
+	void SetupTexture(TSoftObjectPtr<class UTexture2D> SoftTexture);
+	void SetTargetLocation(const struct FVector& TargetLocation, bool bInDistanceXY);
+	void SetLocationId(const struct FGuid& LocationId);
+	void SetDistanceText(double Length);
+	void SetDisplayDistance(double Length);
+	void PostSetup();
+	void GetLocation(class UPalLocationBase** Location);
+	void Get_Offset_Value(double* offSetValue);
+	void ExecuteUbergraph_WBP_CompassIconBase(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

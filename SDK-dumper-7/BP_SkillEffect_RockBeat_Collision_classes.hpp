@@ -30,8 +30,8 @@ public:
 	struct FVector                                StartLocation;                                     // 0x0450(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_SkillEffect_RockBeat_Collision(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_SkillEffect_RockBeat_Collision(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

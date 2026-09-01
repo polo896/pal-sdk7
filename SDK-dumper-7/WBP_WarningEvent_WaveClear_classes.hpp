@@ -51,17 +51,17 @@ public:
 	class UWBP_WarningEvent_WaveClear_Mark_C*     CheckTargetWidget;                                 // 0x0340(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Clear(bool IsNext);
-	void AnmEvent_ClearToNextWave();
-	void AnmEvent_NextWave();
-	void AnmEvent_Out();
-	void ExecuteUbergraph_WBP_WarningEvent_WaveClear(int32 EntryPoint);
-	void OnTimer_Out();
-	void OnTimerEvent_CheckMark();
-	void Play_Next_Wave_Info();
-	void Play_Wave_Clear_Sequence(int32 ClearWaveCount, int32 MaxWaveCount);
-	void SequenceEvent();
 	void SequenceEvent__ENTRYPOINTWBP_WarningEvent_WaveClear();
+	void SequenceEvent();
+	void Play_Wave_Clear_Sequence(int32 ClearWaveCount, int32 MaxWaveCount);
+	void Play_Next_Wave_Info();
+	void OnTimerEvent_CheckMark();
+	void OnTimer_Out();
+	void ExecuteUbergraph_WBP_WarningEvent_WaveClear(int32 EntryPoint);
+	void AnmEvent_Out();
+	void AnmEvent_NextWave();
+	void AnmEvent_ClearToNextWave();
+	void AnmEvent_Clear(bool IsNext);
 
 public:
 	static class UClass* StaticClass()

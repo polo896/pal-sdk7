@@ -44,15 +44,6 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Notice_C_ExecuteUbergraph_WBP_Notice;
 
-// Function WBP_Notice.WBP_Notice_C.SetIconTexture
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Notice_C_SetIconTexture final
-{
-public:
-	class UTexture2D*                             Texture;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Notice_C_SetIconTexture;
-
 // Function WBP_Notice.WBP_Notice_C.SetText
 // 0x0018 (0x0018 - 0x0000)
 struct WBP_Notice_C_SetText final
@@ -61,6 +52,15 @@ public:
 	class FText                                   Text;                                              // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 DUMPER7_ASSERTS_WBP_Notice_C_SetText;
+
+// Function WBP_Notice.WBP_Notice_C.SetIconTexture
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Notice_C_SetIconTexture final
+{
+public:
+	class UTexture2D*                             Texture;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Notice_C_SetIconTexture;
 
 }
 

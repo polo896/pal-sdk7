@@ -39,15 +39,6 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Ingame_PlayerGauge_KeyGuide_C_ExecuteUbergraph_WBP_Ingame_PlayerGauge_KeyGuide;
 
-// Function WBP_Ingame_PlayerGauge_KeyGuide.WBP_Ingame_PlayerGauge_KeyGuide_C.OverrideUIText
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Ingame_PlayerGauge_KeyGuide_C_OverrideUIText final
-{
-public:
-	class FName                                   OverrideActionName_0;                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Ingame_PlayerGauge_KeyGuide_C_OverrideUIText;
-
 // Function WBP_Ingame_PlayerGauge_KeyGuide.WBP_Ingame_PlayerGauge_KeyGuide_C.SetTitleText
 // 0x0018 (0x0018 - 0x0000)
 struct WBP_Ingame_PlayerGauge_KeyGuide_C_SetTitleText final
@@ -56,6 +47,15 @@ public:
 	class FText                                   newText;                                           // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 DUMPER7_ASSERTS_WBP_Ingame_PlayerGauge_KeyGuide_C_SetTitleText;
+
+// Function WBP_Ingame_PlayerGauge_KeyGuide.WBP_Ingame_PlayerGauge_KeyGuide_C.OverrideUIText
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Ingame_PlayerGauge_KeyGuide_C_OverrideUIText final
+{
+public:
+	class FName                                   OverrideActionName_0;                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Ingame_PlayerGauge_KeyGuide_C_OverrideUIText;
 
 }
 

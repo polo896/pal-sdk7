@@ -31,9 +31,9 @@ public:
 	TArray<class UWBP_MainMenu_Pal_Skill_Passive_C*> PassiveSkillPanelArray;                         // 0x02A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void ExecuteUbergraph_WBP_Ingame_Incubator_PalInfo(int32 EntryPoint);
-	void OnInitialized();
 	void Setup(TArray<class FName>& passiveList);
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_Ingame_Incubator_PalInfo(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

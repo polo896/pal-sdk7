@@ -14,7 +14,7 @@ struct FAudioParameter
     TArray<float> ArrayFloatParam;                                                    // 0x0030 (size: 0x10)
     TArray<bool> ArrayBoolParam;                                                      // 0x0040 (size: 0x10)
     TArray<int32> ArrayIntParam;                                                      // 0x0050 (size: 0x10)
-    TArray<class UObject*> ArrayObjectParam;                                          // 0x0060 (size: 0x10)
+    TArray<UObject*> ArrayObjectParam;                                                // 0x0060 (size: 0x10)
     TArray<FString> ArrayStringParam;                                                 // 0x0070 (size: 0x10)
     EAudioParameterType ParamType;                                                    // 0x0080 (size: 0x1)
     FName TypeName;                                                                   // 0x0084 (size: 0x8)
@@ -29,7 +29,7 @@ class IAudioParameterControllerInterface : public IInterface
     void SetStringArrayParameter(FName InName, const TArray<FString>& InValue);
     void SetParameters_Blueprint(const TArray<FAudioParameter>& InParameters);
     void SetObjectParameter(FName InName, class UObject* InValue);
-    void SetObjectArrayParameter(FName InName, const TArray<class UObject*>& InValue);
+    void SetObjectArrayParameter(FName InName, const TArray<UObject*>& InValue);
     void SetIntParameter(FName InName, int32 inInt);
     void SetIntArrayParameter(FName InName, const TArray<int32>& InValue);
     void SetFloatParameter(FName InName, float InFloat);
@@ -103,7 +103,7 @@ class UWaveformTransformationBase : public UObject
 
 class UWaveformTransformationChain : public UObject
 {
-    TArray<class UWaveformTransformationBase*> Transformations;                       // 0x0028 (size: 0x10)
+    TArray<UWaveformTransformationBase*> Transformations;                             // 0x0028 (size: 0x10)
 
 }; // Size: 0x38
 

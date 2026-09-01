@@ -36,19 +36,19 @@ public:
 	struct FVector                                LocationOffset;                                    // 0x0560(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_In();
-	void CalcScreenPosition();
-	void Destruct();
-	void ExecuteUbergraph_WBP_PalTarget(int32 EntryPoint);
-	void GetLoupeWidgetSize(struct FVector2D* widgetSize_0);
-	void GetTargetWidgetSize(struct FVector2D* outVector);
-	void GetTargetWorldLocation(struct FVector* outVector);
-	void GetTranslationTarget(class UWidget** Widget);
-	bool IsEnableLoupe();
-	void OnDeadTarget(const struct FPalDeadInfo& DeadInfo);
-	void SetFinalWidgetOpacity(double calcedOpacity);
-	void Setup(class APalCharacter* TargetCharacter);
 	void ValidCheck();
+	void Setup(class APalCharacter* TargetCharacter);
+	void SetFinalWidgetOpacity(double calcedOpacity);
+	void OnDeadTarget(const struct FPalDeadInfo& DeadInfo);
+	bool IsEnableLoupe();
+	void GetTranslationTarget(class UWidget** Widget);
+	void GetTargetWorldLocation(struct FVector* outVector);
+	void GetTargetWidgetSize(struct FVector2D* outVector);
+	void GetLoupeWidgetSize(struct FVector2D* widgetSize_0);
+	void ExecuteUbergraph_WBP_PalTarget(int32 EntryPoint);
+	void Destruct();
+	void CalcScreenPosition();
+	void AnmEvent_In();
 
 public:
 	static class UClass* StaticClass()

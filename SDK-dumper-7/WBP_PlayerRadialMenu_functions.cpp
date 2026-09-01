@@ -17,127 +17,443 @@
 namespace SDK
 {
 
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.BindOpenPlayerActionMenu
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.UnbindPlayerActionMenuEvent
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PlayerRadialMenu_C::UnbindPlayerActionMenuEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "UnbindPlayerActionMenuEvent");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.UnbindOpenPlayerActionMenu
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_PlayerRadialMenu_C::BindOpenPlayerActionMenu()
+void UWBP_PlayerRadialMenu_C::UnbindOpenPlayerActionMenu()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "BindOpenPlayerActionMenu");
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "UnbindOpenPlayerActionMenu");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.BindPlayerActionMenuEvent
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PlayerRadialMenu_C::BindPlayerActionMenuEvent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "BindPlayerActionMenuEvent");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.Can Open Player Action Menu
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.ShouldDisplayOpenChatPanel
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   bShouldDisplay                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PlayerRadialMenu_C::Can_Open_Player_Action_Menu(bool* Result)
+void UWBP_PlayerRadialMenu_C::ShouldDisplayOpenChatPanel(bool* bShouldDisplay)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "Can Open Player Action Menu");
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "ShouldDisplayOpenChatPanel");
 
-	Params::WBP_PlayerRadialMenu_C_Can_Open_Player_Action_Menu Parms{};
+	Params::WBP_PlayerRadialMenu_C_ShouldDisplayOpenChatPanel Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Result != nullptr)
-		*Result = Parms.Result;
+	if (bShouldDisplay != nullptr)
+		*bShouldDisplay = Parms.bShouldDisplay;
 }
 
 
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.CloseConstructionMenu
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.SetupEvent
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_PlayerRadialMenu_C::CloseConstructionMenu()
+void UWBP_PlayerRadialMenu_C::SetupEvent()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "CloseConstructionMenu");
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "SetupEvent");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.CloseMenu
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.SetInteractEnable
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsInteractEnable                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerRadialMenu_C::SetInteractEnable(bool IsInteractEnable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "SetInteractEnable");
+
+	Params::WBP_PlayerRadialMenu_C_SetInteractEnable Parms{};
+
+	Parms.IsInteractEnable = IsInteractEnable;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OpenSetup
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PlayerRadialMenu_C::OpenSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OpenSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OpenPlayerActionMenu
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PlayerRadialMenu_C::OpenPlayerActionMenu()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OpenPlayerActionMenu");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OpenMenu
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PlayerRadialMenu_C::OpenMenu()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OpenMenu");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OpenConstructionMenu
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             SelectMapObjectId                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   SelectedIndex                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerRadialMenu_C::OpenConstructionMenu(class FName SelectMapObjectId, int32 SelectedIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OpenConstructionMenu");
+
+	Params::WBP_PlayerRadialMenu_C_OpenConstructionMenu Parms{};
+
+	Parms.SelectMapObjectId = SelectMapObjectId;
+	Parms.SelectedIndex = SelectedIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OpenBuildObjectList
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PlayerRadialMenu_C::CloseMenu()
+void UWBP_PlayerRadialMenu_C::OpenBuildObjectList()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "CloseMenu");
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OpenBuildObjectList");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.CloseSetup
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.Open Emote Menu
 // (Private, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PlayerRadialMenu_C::CloseSetup()
+void UWBP_PlayerRadialMenu_C::Open_Emote_Menu()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "CloseSetup");
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "Open Emote Menu");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.CreateConstructionMenu
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OnPushedAnyWidget
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWBP_IngameMenuConstruction_Radial_C**createdWidget                                          (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     pushedWidgetID                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PlayerRadialMenu_C::CreateConstructionMenu(class UWBP_IngameMenuConstruction_Radial_C** createdWidget)
+void UWBP_PlayerRadialMenu_C::OnPushedAnyWidget(const struct FGuid& pushedWidgetID)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "CreateConstructionMenu");
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OnPushedAnyWidget");
 
-	Params::WBP_PlayerRadialMenu_C_CreateConstructionMenu Parms{};
+	Params::WBP_PlayerRadialMenu_C_OnPushedAnyWidget Parms{};
+
+	Parms.pushedWidgetID = std::move(pushedWidgetID);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OnPressConstructionMenuButton
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PlayerRadialMenu_C::OnPressConstructionMenuButton()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OnPressConstructionMenuButton");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OnPlayerRideOn
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           RideActor                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerRadialMenu_C::OnPlayerRideOn(class AActor* RideActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OnPlayerRideOn");
+
+	Params::WBP_PlayerRadialMenu_C_OnPlayerRideOn Parms{};
+
+	Parms.RideActor = RideActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OnOtomoChanged_Inactivated
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PlayerRadialMenu_C::OnOtomoChanged_Inactivated()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OnOtomoChanged_Inactivated");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OnOtomoChanged_Activated
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PlayerRadialMenu_C::OnOtomoChanged_Activated()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OnOtomoChanged_Activated");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OnDecidedPlayerActionMenu
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerRadialMenu_C::OnDecidedPlayerActionMenu(int32 Index_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OnDecidedPlayerActionMenu");
+
+	Params::WBP_PlayerRadialMenu_C_OnDecidedPlayerActionMenu Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OnDecidedInstruction_Feed
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   ShouldClose                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerRadialMenu_C::OnDecidedInstruction_Feed(bool* ShouldClose)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OnDecidedInstruction_Feed");
+
+	Params::WBP_PlayerRadialMenu_C_OnDecidedInstruction_Feed Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (createdWidget != nullptr)
-		*createdWidget = Parms.createdWidget;
+	if (ShouldClose != nullptr)
+		*ShouldClose = Parms.ShouldClose;
 }
 
 
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.CreateEmoteMenu
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OnDecidedEmoteMenu
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PlayerRadialMenu_C::CreateEmoteMenu()
+void UWBP_PlayerRadialMenu_C::OnDecidedEmoteMenu(int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "CreateEmoteMenu");
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OnDecidedEmoteMenu");
+
+	Params::WBP_PlayerRadialMenu_C_OnDecidedEmoteMenu Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OnDamagedPlayer
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FPalDamageResult&          DamageResult                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void UWBP_PlayerRadialMenu_C::OnDamagedPlayer(const struct FPalDamageResult& DamageResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OnDamagedPlayer");
+
+	Params::WBP_PlayerRadialMenu_C_OnDamagedPlayer Parms{};
+
+	Parms.DamageResult = std::move(DamageResult);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.On Decided Instruction Care
+// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   ShouldClose                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerRadialMenu_C::On_Decided_Instruction_Care(bool* ShouldClose)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "On Decided Instruction Care");
+
+	Params::WBP_PlayerRadialMenu_C_On_Decided_Instruction_Care Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ShouldClose != nullptr)
+		*ShouldClose = Parms.ShouldClose;
+}
+
+
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.IsAnyMenuOpened
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool*                                   IsOpened                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerRadialMenu_C::IsAnyMenuOpened(bool* IsOpened)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "IsAnyMenuOpened");
+
+	Params::WBP_PlayerRadialMenu_C_IsAnyMenuOpened Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IsOpened != nullptr)
+		*IsOpened = Parms.IsOpened;
+}
+
+
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.HiglightCurrentOrderWidget
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PlayerRadialMenu_C::HiglightCurrentOrderWidget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "HiglightCurrentOrderWidget");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.ExecuteUbergraph_WBP_PlayerRadialMenu
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerRadialMenu_C::ExecuteUbergraph_WBP_PlayerRadialMenu(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "ExecuteUbergraph_WBP_PlayerRadialMenu");
+
+	Params::WBP_PlayerRadialMenu_C_ExecuteUbergraph_WBP_PlayerRadialMenu Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.EmptyFunction
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PlayerRadialMenu_C::EmptyFunction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "EmptyFunction");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.CreatePlayerActionMenu
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PlayerRadialMenu_C::CreatePlayerActionMenu()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "CreatePlayerActionMenu");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -167,466 +483,150 @@ void UWBP_PlayerRadialMenu_C::CreateInstructionsAdditionalWidget(const class FTe
 }
 
 
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.CreatePlayerActionMenu
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.CreateEmoteMenu
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PlayerRadialMenu_C::CreatePlayerActionMenu()
+void UWBP_PlayerRadialMenu_C::CreateEmoteMenu()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "CreatePlayerActionMenu");
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "CreateEmoteMenu");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.EmptyFunction
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.CreateConstructionMenu
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_IngameMenuConstruction_Radial_C**createdWidget                                          (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PlayerRadialMenu_C::CreateConstructionMenu(class UWBP_IngameMenuConstruction_Radial_C** createdWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "CreateConstructionMenu");
+
+	Params::WBP_PlayerRadialMenu_C_CreateConstructionMenu Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (createdWidget != nullptr)
+		*createdWidget = Parms.createdWidget;
+}
+
+
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.CloseSetup
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PlayerRadialMenu_C::CloseSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "CloseSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.CloseMenu
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PlayerRadialMenu_C::EmptyFunction()
+void UWBP_PlayerRadialMenu_C::CloseMenu()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "EmptyFunction");
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "CloseMenu");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.ExecuteUbergraph_WBP_PlayerRadialMenu
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerRadialMenu_C::ExecuteUbergraph_WBP_PlayerRadialMenu(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "ExecuteUbergraph_WBP_PlayerRadialMenu");
-
-	Params::WBP_PlayerRadialMenu_C_ExecuteUbergraph_WBP_PlayerRadialMenu Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.HiglightCurrentOrderWidget
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PlayerRadialMenu_C::HiglightCurrentOrderWidget()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "HiglightCurrentOrderWidget");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.IsAnyMenuOpened
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// bool*                                   IsOpened                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerRadialMenu_C::IsAnyMenuOpened(bool* IsOpened)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "IsAnyMenuOpened");
-
-	Params::WBP_PlayerRadialMenu_C_IsAnyMenuOpened Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (IsOpened != nullptr)
-		*IsOpened = Parms.IsOpened;
-}
-
-
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.On Decided Instruction Care
-// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   ShouldClose                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerRadialMenu_C::On_Decided_Instruction_Care(bool* ShouldClose)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "On Decided Instruction Care");
-
-	Params::WBP_PlayerRadialMenu_C_On_Decided_Instruction_Care Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (ShouldClose != nullptr)
-		*ShouldClose = Parms.ShouldClose;
-}
-
-
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OnDamagedPlayer
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalDamageResult&          DamageResult                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void UWBP_PlayerRadialMenu_C::OnDamagedPlayer(const struct FPalDamageResult& DamageResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OnDamagedPlayer");
-
-	Params::WBP_PlayerRadialMenu_C_OnDamagedPlayer Parms{};
-
-	Parms.DamageResult = std::move(DamageResult);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OnDecidedEmoteMenu
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerRadialMenu_C::OnDecidedEmoteMenu(int32 Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OnDecidedEmoteMenu");
-
-	Params::WBP_PlayerRadialMenu_C_OnDecidedEmoteMenu Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OnDecidedInstruction_Feed
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   ShouldClose                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerRadialMenu_C::OnDecidedInstruction_Feed(bool* ShouldClose)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OnDecidedInstruction_Feed");
-
-	Params::WBP_PlayerRadialMenu_C_OnDecidedInstruction_Feed Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (ShouldClose != nullptr)
-		*ShouldClose = Parms.ShouldClose;
-}
-
-
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OnDecidedPlayerActionMenu
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerRadialMenu_C::OnDecidedPlayerActionMenu(int32 Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OnDecidedPlayerActionMenu");
-
-	Params::WBP_PlayerRadialMenu_C_OnDecidedPlayerActionMenu Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OnOtomoChanged_Activated
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.CloseConstructionMenu
 // (Private, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PlayerRadialMenu_C::OnOtomoChanged_Activated()
+void UWBP_PlayerRadialMenu_C::CloseConstructionMenu()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OnOtomoChanged_Activated");
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "CloseConstructionMenu");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OnOtomoChanged_Inactivated
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PlayerRadialMenu_C::OnOtomoChanged_Inactivated()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OnOtomoChanged_Inactivated");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OnPlayerRideOn
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.Can Open Player Action Menu
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class AActor*                           RideActor                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PlayerRadialMenu_C::OnPlayerRideOn(class AActor* RideActor)
+void UWBP_PlayerRadialMenu_C::Can_Open_Player_Action_Menu(bool* Result)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OnPlayerRideOn");
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "Can Open Player Action Menu");
 
-	Params::WBP_PlayerRadialMenu_C_OnPlayerRideOn Parms{};
-
-	Parms.RideActor = RideActor;
+	Params::WBP_PlayerRadialMenu_C_Can_Open_Player_Action_Menu Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
 }
 
 
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OnPressConstructionMenuButton
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PlayerRadialMenu_C::OnPressConstructionMenuButton()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OnPressConstructionMenuButton");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OnPushedAnyWidget
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGuid&                     pushedWidgetID                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerRadialMenu_C::OnPushedAnyWidget(const struct FGuid& pushedWidgetID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OnPushedAnyWidget");
-
-	Params::WBP_PlayerRadialMenu_C_OnPushedAnyWidget Parms{};
-
-	Parms.pushedWidgetID = std::move(pushedWidgetID);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.Open Emote Menu
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.BindPlayerActionMenuEvent
 // (Private, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PlayerRadialMenu_C::Open_Emote_Menu()
+void UWBP_PlayerRadialMenu_C::BindPlayerActionMenuEvent()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "Open Emote Menu");
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "BindPlayerActionMenuEvent");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OpenBuildObjectList
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PlayerRadialMenu_C::OpenBuildObjectList()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OpenBuildObjectList");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OpenConstructionMenu
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             SelectMapObjectId                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   SelectedIndex                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerRadialMenu_C::OpenConstructionMenu(class FName SelectMapObjectId, int32 SelectedIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OpenConstructionMenu");
-
-	Params::WBP_PlayerRadialMenu_C_OpenConstructionMenu Parms{};
-
-	Parms.SelectMapObjectId = SelectMapObjectId;
-	Parms.SelectedIndex = SelectedIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OpenMenu
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PlayerRadialMenu_C::OpenMenu()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OpenMenu");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OpenPlayerActionMenu
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PlayerRadialMenu_C::OpenPlayerActionMenu()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OpenPlayerActionMenu");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.OpenSetup
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PlayerRadialMenu_C::OpenSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "OpenSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.SetInteractEnable
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsInteractEnable                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerRadialMenu_C::SetInteractEnable(bool IsInteractEnable)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "SetInteractEnable");
-
-	Params::WBP_PlayerRadialMenu_C_SetInteractEnable Parms{};
-
-	Parms.IsInteractEnable = IsInteractEnable;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.SetupEvent
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.BindOpenPlayerActionMenu
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_PlayerRadialMenu_C::SetupEvent()
+void UWBP_PlayerRadialMenu_C::BindOpenPlayerActionMenu()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "SetupEvent");
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "BindOpenPlayerActionMenu");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.ShouldDisplayOpenChatPanel
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// bool*                                   bShouldDisplay                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PlayerRadialMenu_C::ShouldDisplayOpenChatPanel(bool* bShouldDisplay)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "ShouldDisplayOpenChatPanel");
-
-	Params::WBP_PlayerRadialMenu_C_ShouldDisplayOpenChatPanel Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (bShouldDisplay != nullptr)
-		*bShouldDisplay = Parms.bShouldDisplay;
-}
-
-
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.UnbindOpenPlayerActionMenu
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PlayerRadialMenu_C::UnbindOpenPlayerActionMenu()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "UnbindOpenPlayerActionMenu");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.UnbindPlayerActionMenuEvent
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PlayerRadialMenu_C::UnbindPlayerActionMenuEvent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "UnbindPlayerActionMenuEvent");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.HasConstructionMenu
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.IsPlayerRiding
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// bool*                                   HasMenu                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   IsRiding                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PlayerRadialMenu_C::HasConstructionMenu(bool* HasMenu) const
+void UWBP_PlayerRadialMenu_C::IsPlayerRiding(bool* IsRiding) const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "HasConstructionMenu");
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "IsPlayerRiding");
 
-	Params::WBP_PlayerRadialMenu_C_HasConstructionMenu Parms{};
+	Params::WBP_PlayerRadialMenu_C_IsPlayerRiding Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (HasMenu != nullptr)
-		*HasMenu = Parms.HasMenu;
+	if (IsRiding != nullptr)
+		*IsRiding = Parms.IsRiding;
 }
 
 
@@ -651,24 +651,24 @@ void UWBP_PlayerRadialMenu_C::IsPlayerDying(bool* IsDying) const
 }
 
 
-// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.IsPlayerRiding
+// Function WBP_PlayerRadialMenu.WBP_PlayerRadialMenu_C.HasConstructionMenu
 // (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// bool*                                   IsRiding                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   HasMenu                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PlayerRadialMenu_C::IsPlayerRiding(bool* IsRiding) const
+void UWBP_PlayerRadialMenu_C::HasConstructionMenu(bool* HasMenu) const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "IsPlayerRiding");
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_C", "HasConstructionMenu");
 
-	Params::WBP_PlayerRadialMenu_C_IsPlayerRiding Parms{};
+	Params::WBP_PlayerRadialMenu_C_HasConstructionMenu Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (IsRiding != nullptr)
-		*IsRiding = Parms.IsRiding;
+	if (HasMenu != nullptr)
+		*HasMenu = Parms.HasMenu;
 }
 
 }

@@ -28,11 +28,11 @@ public:
 	struct FGuid                                  CacheGroupId;                                      // 0x0460(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_PalHudInvader(int32 EntryPoint);
-	void OnInvadeEnd(const struct FPalIncidentBroadcastParameter& Parameter);
-	void OnSetup();
-	void ParentDeadEvent(const struct FPalDeadInfo& DeadInfo);
 	void ParentDestroyEvent(class AActor* DestroyedActor);
+	void ParentDeadEvent(const struct FPalDeadInfo& DeadInfo);
+	void OnSetup();
+	void OnInvadeEnd(const struct FPalIncidentBroadcastParameter& Parameter);
+	void ExecuteUbergraph_WBP_PalHudInvader(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

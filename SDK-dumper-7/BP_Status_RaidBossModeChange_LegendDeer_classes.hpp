@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "BP_Status_RaidBossModeChange_classes.hpp"
 #include "Pal_structs.hpp"
+#include "BP_Status_RaidBossModeChange_classes.hpp"
 
 
 namespace SDK

@@ -17,17 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_PlayerRadialMenu_MenuContent.WBP_PlayerRadialMenu_MenuContent_C.SetHightlight
+// Function WBP_PlayerRadialMenu_MenuContent.WBP_PlayerRadialMenu_MenuContent_C.SetTextColor
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSlateColor&               NewColor                                               (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_PlayerRadialMenu_MenuContent_C::SetHightlight()
+void UWBP_PlayerRadialMenu_MenuContent_C::SetTextColor(const struct FSlateColor& NewColor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_MenuContent_C", "SetHightlight");
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_MenuContent_C", "SetTextColor");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_PlayerRadialMenu_MenuContent_C_SetTextColor Parms{};
+
+	Parms.NewColor = std::move(NewColor);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -51,23 +57,17 @@ void UWBP_PlayerRadialMenu_MenuContent_C::SetText(const class FText& InText)
 }
 
 
-// Function WBP_PlayerRadialMenu_MenuContent.WBP_PlayerRadialMenu_MenuContent_C.SetTextColor
+// Function WBP_PlayerRadialMenu_MenuContent.WBP_PlayerRadialMenu_MenuContent_C.SetHightlight
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FSlateColor&               NewColor                                               (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_PlayerRadialMenu_MenuContent_C::SetTextColor(const struct FSlateColor& NewColor)
+void UWBP_PlayerRadialMenu_MenuContent_C::SetHightlight()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerRadialMenu_MenuContent_C", "SetTextColor");
+		Func = Class->GetFunction("WBP_PlayerRadialMenu_MenuContent_C", "SetHightlight");
 
-	Params::WBP_PlayerRadialMenu_MenuContent_C_SetTextColor Parms{};
-
-	Parms.NewColor = std::move(NewColor);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

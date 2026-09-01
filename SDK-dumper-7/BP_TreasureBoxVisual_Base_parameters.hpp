@@ -17,6 +17,53 @@
 namespace SDK::Params
 {
 
+// Function BP_TreasureBoxVisual_Base.BP_TreasureBoxVisual_Base_C.SetNoCollisionAllMesh
+// 0x0038 (0x0038 - 0x0000)
+struct BP_TreasureBoxVisual_Base_C_SetNoCollisionAllMesh final
+{
+public:
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UMeshComponent*>                 CallFunc_K2_GetComponentsByClass_ReturnValue;      // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMeshComponent*                         CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_TreasureBoxVisual_Base_C_SetNoCollisionAllMesh;
+
+// Function BP_TreasureBoxVisual_Base.BP_TreasureBoxVisual_Base_C.ReceiveEndPlay
+// 0x0001 (0x0001 - 0x0000)
+struct BP_TreasureBoxVisual_Base_C_ReceiveEndPlay final
+{
+public:
+	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_TreasureBoxVisual_Base_C_ReceiveEndPlay;
+
+// Function BP_TreasureBoxVisual_Base.BP_TreasureBoxVisual_Base_C.PlayEffectAndSound
+// 0x0020 (0x0020 - 0x0000)
+struct BP_TreasureBoxVisual_Base_C_PlayEffectAndSound final
+{
+public:
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x0000(0x0010)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UNiagaraComponent*                      CallFunc_SpawnSystemAttached_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_TreasureBoxVisual_Base_C_PlayEffectAndSound;
+
+// Function BP_TreasureBoxVisual_Base.BP_TreasureBoxVisual_Base_C.OnPlayMontageNotifyBegin_BP
+// 0x0008 (0x0008 - 0x0000)
+struct BP_TreasureBoxVisual_Base_C_OnPlayMontageNotifyBegin_BP final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_TreasureBoxVisual_Base_C_OnPlayMontageNotifyBegin_BP;
+
 // Function BP_TreasureBoxVisual_Base.BP_TreasureBoxVisual_Base_C.ExecuteUbergraph_BP_TreasureBoxVisual_Base
 // 0x0058 (0x0058 - 0x0000)
 struct BP_TreasureBoxVisual_Base_C_ExecuteUbergraph_BP_TreasureBoxVisual_Base final
@@ -41,53 +88,6 @@ public:
 	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_TreasureBoxVisual_Base_C_ExecuteUbergraph_BP_TreasureBoxVisual_Base;
-
-// Function BP_TreasureBoxVisual_Base.BP_TreasureBoxVisual_Base_C.OnPlayMontageNotifyBegin_BP
-// 0x0008 (0x0008 - 0x0000)
-struct BP_TreasureBoxVisual_Base_C_OnPlayMontageNotifyBegin_BP final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_TreasureBoxVisual_Base_C_OnPlayMontageNotifyBegin_BP;
-
-// Function BP_TreasureBoxVisual_Base.BP_TreasureBoxVisual_Base_C.PlayEffectAndSound
-// 0x0020 (0x0020 - 0x0000)
-struct BP_TreasureBoxVisual_Base_C_PlayEffectAndSound final
-{
-public:
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x0000(0x0010)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UNiagaraComponent*                      CallFunc_SpawnSystemAttached_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_TreasureBoxVisual_Base_C_PlayEffectAndSound;
-
-// Function BP_TreasureBoxVisual_Base.BP_TreasureBoxVisual_Base_C.ReceiveEndPlay
-// 0x0001 (0x0001 - 0x0000)
-struct BP_TreasureBoxVisual_Base_C_ReceiveEndPlay final
-{
-public:
-	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_TreasureBoxVisual_Base_C_ReceiveEndPlay;
-
-// Function BP_TreasureBoxVisual_Base.BP_TreasureBoxVisual_Base_C.SetNoCollisionAllMesh
-// 0x0038 (0x0038 - 0x0000)
-struct BP_TreasureBoxVisual_Base_C_SetNoCollisionAllMesh final
-{
-public:
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UMeshComponent*>                 CallFunc_K2_GetComponentsByClass_ReturnValue;      // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMeshComponent*                         CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_TreasureBoxVisual_Base_C_SetNoCollisionAllMesh;
 
 }
 

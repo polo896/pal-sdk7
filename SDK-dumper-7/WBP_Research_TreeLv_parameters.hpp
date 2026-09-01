@@ -18,6 +18,17 @@
 namespace SDK::Params
 {
 
+// Function WBP_Research_TreeLv.WBP_Research_TreeLv_C.SetLevelHeight
+// 0x000C (0x000C - 0x0000)
+struct WBP_Research_TreeLv_C_SetLevelHeight final
+{
+public:
+	int32                                         Level;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         BlockHeight;                                       // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalWorkSuitability                           Type;                                              // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Research_TreeLv_C_SetLevelHeight;
+
 // Function WBP_Research_TreeLv.WBP_Research_TreeLv_C.ExecuteUbergraph_WBP_Research_TreeLv
 // 0x00E0 (0x00E0 - 0x0000)
 struct WBP_Research_TreeLv_C_ExecuteUbergraph_WBP_Research_TreeLv final
@@ -53,17 +64,6 @@ public:
 	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Research_TreeLv_C_ExecuteUbergraph_WBP_Research_TreeLv;
-
-// Function WBP_Research_TreeLv.WBP_Research_TreeLv_C.SetLevelHeight
-// 0x000C (0x000C - 0x0000)
-struct WBP_Research_TreeLv_C_SetLevelHeight final
-{
-public:
-	int32                                         Level;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         BlockHeight;                                       // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalWorkSuitability                           Type;                                              // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Research_TreeLv_C_SetLevelHeight;
 
 }
 

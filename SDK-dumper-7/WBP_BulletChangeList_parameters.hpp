@@ -14,23 +14,14 @@
 namespace SDK::Params
 {
 
-// Function WBP_BulletChangeList.WBP_BulletChangeList_C.AnmEvent_DetailDisplay
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_BulletChangeList_C_AnmEvent_DetailDisplay final
+// Function WBP_BulletChangeList.WBP_BulletChangeList_C.GetBulletItemId
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_BulletChangeList_C_GetBulletItemId final
 {
 public:
-	bool                                          bSkipAnimatio;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ItemId;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BulletChangeList_C_AnmEvent_DetailDisplay;
-
-// Function WBP_BulletChangeList.WBP_BulletChangeList_C.AnmEvent_SimpleDisplay
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_BulletChangeList_C_AnmEvent_SimpleDisplay final
-{
-public:
-	bool                                          bSkipAnimation;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BulletChangeList_C_AnmEvent_SimpleDisplay;
+DUMPER7_ASSERTS_WBP_BulletChangeList_C_GetBulletItemId;
 
 // Function WBP_BulletChangeList.WBP_BulletChangeList_C.ExecuteUbergraph_WBP_BulletChangeList
 // 0x0040 (0x0040 - 0x0000)
@@ -53,14 +44,23 @@ public:
 };
 DUMPER7_ASSERTS_WBP_BulletChangeList_C_ExecuteUbergraph_WBP_BulletChangeList;
 
-// Function WBP_BulletChangeList.WBP_BulletChangeList_C.GetBulletItemId
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_BulletChangeList_C_GetBulletItemId final
+// Function WBP_BulletChangeList.WBP_BulletChangeList_C.AnmEvent_SimpleDisplay
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_BulletChangeList_C_AnmEvent_SimpleDisplay final
 {
 public:
-	class FName                                   ItemId;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bSkipAnimation;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BulletChangeList_C_GetBulletItemId;
+DUMPER7_ASSERTS_WBP_BulletChangeList_C_AnmEvent_SimpleDisplay;
+
+// Function WBP_BulletChangeList.WBP_BulletChangeList_C.AnmEvent_DetailDisplay
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_BulletChangeList_C_AnmEvent_DetailDisplay final
+{
+public:
+	bool                                          bSkipAnimatio;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BulletChangeList_C_AnmEvent_DetailDisplay;
 
 // Function WBP_BulletChangeList.WBP_BulletChangeList_C.Setup
 // 0x00B8 (0x00B8 - 0x0000)

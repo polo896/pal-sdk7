@@ -17,23 +17,17 @@
 namespace SDK
 {
 
-// Function BP_MapObject_PickupItem_SmallStone.BP_MapObject_PickupItem_SmallStone_C.ExecuteUbergraph_BP_MapObject_PickupItem_SmallStone
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_MapObject_PickupItem_SmallStone.BP_MapObject_PickupItem_SmallStone_C.ReturnToPool
+// (Event, Public, BlueprintEvent)
 
-void ABP_MapObject_PickupItem_SmallStone_C::ExecuteUbergraph_BP_MapObject_PickupItem_SmallStone(int32 EntryPoint)
+void ABP_MapObject_PickupItem_SmallStone_C::ReturnToPool()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_PickupItem_SmallStone_C", "ExecuteUbergraph_BP_MapObject_PickupItem_SmallStone");
+		Func = Class->GetFunction("BP_MapObject_PickupItem_SmallStone_C", "ReturnToPool");
 
-	Params::BP_MapObject_PickupItem_SmallStone_C_ExecuteUbergraph_BP_MapObject_PickupItem_SmallStone Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -51,17 +45,23 @@ void ABP_MapObject_PickupItem_SmallStone_C::InitializeFromPool()
 }
 
 
-// Function BP_MapObject_PickupItem_SmallStone.BP_MapObject_PickupItem_SmallStone_C.ReturnToPool
-// (Event, Public, BlueprintEvent)
+// Function BP_MapObject_PickupItem_SmallStone.BP_MapObject_PickupItem_SmallStone_C.ExecuteUbergraph_BP_MapObject_PickupItem_SmallStone
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MapObject_PickupItem_SmallStone_C::ReturnToPool()
+void ABP_MapObject_PickupItem_SmallStone_C::ExecuteUbergraph_BP_MapObject_PickupItem_SmallStone(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_PickupItem_SmallStone_C", "ReturnToPool");
+		Func = Class->GetFunction("BP_MapObject_PickupItem_SmallStone_C", "ExecuteUbergraph_BP_MapObject_PickupItem_SmallStone");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_MapObject_PickupItem_SmallStone_C_ExecuteUbergraph_BP_MapObject_PickupItem_SmallStone Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

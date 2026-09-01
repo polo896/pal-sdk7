@@ -34,7 +34,7 @@ class UWBP_Quest_C : public UPalUserWidget
     class UWBP_Quest_Objective_C* WBP_Quest_Objective_1;                              // 0x0530 (size: 0x8)
     class UWBP_Quest_Objective_C* WBP_Quest_Objective_2;                              // 0x0538 (size: 0x8)
     class UWBP_QuestTab_C* WBP_QuestTab;                                              // 0x0540 (size: 0x8)
-    TArray<class UWBP_Quest_Objective_C*> ObjectiveWidgetArray;                       // 0x0548 (size: 0x10)
+    TArray<UWBP_Quest_Objective_C*> ObjectiveWidgetArray;                             // 0x0548 (size: 0x10)
     FWBP_Quest_COnClickedQuestButton OnClickedQuestButton;                            // 0x0558 (size: 0x10)
     void OnClickedQuestButton(class UWBP_Quest_ListButton_C* QuestWidget);
     FWBP_Quest_COnHoveredQuestButton OnHoveredQuestButton;                            // 0x0568 (size: 0x10)
@@ -45,7 +45,7 @@ class UWBP_Quest_C : public UPalUserWidget
     FName CurrentDisplayingQuestId;                                                   // 0x0590 (size: 0x8)
     bool bFirstSelectTab;                                                             // 0x0598 (size: 0x1)
     EScrollWhenFocusChanges GamePadFocusScrollType;                                   // 0x0599 (size: 0x1)
-    TSoftObjectPtr<UWBP_Quest_ListButton_C> LastClickedQuestButton;                   // 0x05A0 (size: 0x30)
+    TSoftObjectPtr<class UWBP_Quest_ListButton_C> LastClickedQuestButton;             // 0x05A0 (size: 0x30)
 
     void GetTopQuestData(class UPalQuestData*& QuestData);
     void OnUnhoveredRewardItemSlot(class UWBP_PalItemSlotButtonBase_C* Widget);
@@ -66,8 +66,8 @@ class UWBP_Quest_C : public UPalUserWidget
     void OnClickedQuestButton_Binded(class UWBP_Quest_ListButton_C* Widget);
     void ResetQuestProgressDetail();
     void SetCommonRewardData(FText NewParam);
-    void AddQuestProgress(TArray<class UPalQuestBlock*>& QuestBlocks);
-    void AddOrderedQuestData(TArray<class UPalQuestData*>& QuestArray);
+    void AddQuestProgress(TArray<UPalQuestBlock*>& QuestBlocks);
+    void AddOrderedQuestData(TArray<UPalQuestData*>& QuestArray);
     void SetQuestDescription(FText QuestDescText);
     void SetQuestName(FText QuestNameText);
     void SetDisplayQuestData(class UPalQuestData* QuestData);

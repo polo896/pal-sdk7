@@ -29,7 +29,7 @@ public:
 	uint8                                         Pad_2B4[0x4];                                      // 0x02B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FString>                         Asset_Paths;                                       // 0x02B8(0x0010)(Edit, BlueprintVisible, ExposeOnSpawn)
 	class UObject*                                Requester;                                         // 0x02C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	class ModActor_3::AModActor_C*                ModActor;                                          // 0x02D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	class ModActor_2::AModActor_C*                ModActor;                                          // 0x02D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void ReceiveBeginPlay();

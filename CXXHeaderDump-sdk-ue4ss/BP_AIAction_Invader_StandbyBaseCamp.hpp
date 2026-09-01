@@ -9,7 +9,7 @@ class UBP_AIAction_Invader_StandbyBaseCamp_C : public UBP_AIAction_CanCombatBase
     void SoundEvent(FVector EmitLocation);
     void Fun_Damage_AIResponse(FPalDamageResult DamageResult);
     void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
-    void OnSightCheckAsyncCompleted(bool bIncludedPlayer, bool bIncludedAliveNPC, bool bIncludedEdibleDeadNPC, const TArray<class APalCharacter*>& InSightCharacters);
+    void OnSightCheckAsyncCompleted(bool bIncludedPlayer, bool bIncludedAliveNPC, bool bIncludedEdibleDeadNPC, const TArray<APalCharacter*>& InSightCharacters);
     void ExecuteUbergraph_BP_AIAction_Invader_StandbyBaseCamp(int32 EntryPoint);
 }; // Size: 0x180
 

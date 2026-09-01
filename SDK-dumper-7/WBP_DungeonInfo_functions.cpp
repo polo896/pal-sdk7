@@ -17,79 +17,47 @@
 namespace SDK
 {
 
-// Function WBP_DungeonInfo.WBP_DungeonInfo_C.ExecuteUbergraph_WBP_DungeonInfo
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_DungeonInfo.WBP_DungeonInfo_C.UpdateDungeonInfoByTick
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_DungeonInfo_C::ExecuteUbergraph_WBP_DungeonInfo(int32 EntryPoint)
+void UWBP_DungeonInfo_C::UpdateDungeonInfoByTick()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DungeonInfo_C", "ExecuteUbergraph_WBP_DungeonInfo");
+		Func = Class->GetFunction("WBP_DungeonInfo_C", "UpdateDungeonInfoByTick");
 
-	Params::WBP_DungeonInfo_C_ExecuteUbergraph_WBP_DungeonInfo Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_DungeonInfo.WBP_DungeonInfo_C.OnReadyInstanceModel
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalStageModelDungeon*            StageModel                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function WBP_DungeonInfo.WBP_DungeonInfo_C.UpdateDungeonDisappearRemainTime
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_DungeonInfo_C::OnReadyInstanceModel(class UPalStageModelDungeon* StageModel)
+void UWBP_DungeonInfo_C::UpdateDungeonDisappearRemainTime()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DungeonInfo_C", "OnReadyInstanceModel");
+		Func = Class->GetFunction("WBP_DungeonInfo_C", "UpdateDungeonDisappearRemainTime");
 
-	Params::WBP_DungeonInfo_C_OnReadyInstanceModel Parms{};
-
-	Parms.StageModel = StageModel;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_DungeonInfo.WBP_DungeonInfo_C.OnReadyStageModel
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class APalDungeonEntrance*              SelfEntrance                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_DungeonInfo_C::OnReadyStageModel(class APalDungeonEntrance* SelfEntrance)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DungeonInfo_C", "OnReadyStageModel");
-
-	Params::WBP_DungeonInfo_C_OnReadyStageModel Parms{};
-
-	Parms.SelfEntrance = SelfEntrance;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_DungeonInfo.WBP_DungeonInfo_C.SetDungeonBossSpawned
+// Function WBP_DungeonInfo.WBP_DungeonInfo_C.UpdateDisplayInfo
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UPalDungeonInstanceModel*         DungeonInstanceModel                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_DungeonInfo_C::SetDungeonBossSpawned(class UPalDungeonInstanceModel* DungeonInstanceModel)
+void UWBP_DungeonInfo_C::UpdateDisplayInfo(class UPalDungeonInstanceModel* DungeonInstanceModel)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DungeonInfo_C", "SetDungeonBossSpawned");
+		Func = Class->GetFunction("WBP_DungeonInfo_C", "UpdateDisplayInfo");
 
-	Params::WBP_DungeonInfo_C_SetDungeonBossSpawned Parms{};
+	Params::WBP_DungeonInfo_C_UpdateDisplayInfo Parms{};
 
 	Parms.DungeonInstanceModel = DungeonInstanceModel;
 
@@ -97,19 +65,115 @@ void UWBP_DungeonInfo_C::SetDungeonBossSpawned(class UPalDungeonInstanceModel* D
 }
 
 
-// Function WBP_DungeonInfo.WBP_DungeonInfo_C.SetDungeonDisappearTimeAt
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_DungeonInfo.WBP_DungeonInfo_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// class UPalDungeonInstanceModel*         DungeonInstanceModel                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_DungeonInfo_C::SetDungeonDisappearTimeAt(class UPalDungeonInstanceModel* DungeonInstanceModel)
+void UWBP_DungeonInfo_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DungeonInfo_C", "SetDungeonDisappearTimeAt");
+		Func = Class->GetFunction("WBP_DungeonInfo_C", "Tick");
 
-	Params::WBP_DungeonInfo_C_SetDungeonDisappearTimeAt Parms{};
+	Params::WBP_DungeonInfo_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_DungeonInfo.WBP_DungeonInfo_C.SetUseResetText
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_DungeonInfo_C::SetUseResetText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DungeonInfo_C", "SetUseResetText");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_DungeonInfo.WBP_DungeonInfo_C.SetupEvents
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalStageModelDungeon*            StageModel                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DungeonInfo_C::SetupEvents(class UPalStageModelDungeon* StageModel)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DungeonInfo_C", "SetupEvents");
+
+	Params::WBP_DungeonInfo_C_SetupEvents Parms{};
+
+	Parms.StageModel = StageModel;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_DungeonInfo.WBP_DungeonInfo_C.SetupByDungeonEntrance
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APalDungeonEntrance*              Entrance                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DungeonInfo_C::SetupByDungeonEntrance(class APalDungeonEntrance* Entrance)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DungeonInfo_C", "SetupByDungeonEntrance");
+
+	Params::WBP_DungeonInfo_C_SetupByDungeonEntrance Parms{};
+
+	Parms.Entrance = Entrance;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_DungeonInfo.WBP_DungeonInfo_C.Setup by Stage Model
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalStageModelDungeon*            InStageModel                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DungeonInfo_C::Setup_by_Stage_Model(class UPalStageModelDungeon* InStageModel)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DungeonInfo_C", "Setup by Stage Model");
+
+	Params::WBP_DungeonInfo_C_Setup_by_Stage_Model Parms{};
+
+	Parms.InStageModel = InStageModel;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_DungeonInfo.WBP_DungeonInfo_C.SetDungeonName
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalDungeonInstanceModel*         DungeonInstanceModel                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DungeonInfo_C::SetDungeonName(class UPalDungeonInstanceModel* DungeonInstanceModel)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DungeonInfo_C", "SetDungeonName");
+
+	Params::WBP_DungeonInfo_C_SetDungeonName Parms{};
 
 	Parms.DungeonInstanceModel = DungeonInstanceModel;
 
@@ -137,19 +201,19 @@ void UWBP_DungeonInfo_C::SetDungeonLevel(class UPalDungeonInstanceModel* Dungeon
 }
 
 
-// Function WBP_DungeonInfo.WBP_DungeonInfo_C.SetDungeonName
+// Function WBP_DungeonInfo.WBP_DungeonInfo_C.SetDungeonDisappearTimeAt
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UPalDungeonInstanceModel*         DungeonInstanceModel                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_DungeonInfo_C::SetDungeonName(class UPalDungeonInstanceModel* DungeonInstanceModel)
+void UWBP_DungeonInfo_C::SetDungeonDisappearTimeAt(class UPalDungeonInstanceModel* DungeonInstanceModel)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DungeonInfo_C", "SetDungeonName");
+		Func = Class->GetFunction("WBP_DungeonInfo_C", "SetDungeonDisappearTimeAt");
 
-	Params::WBP_DungeonInfo_C_SetDungeonName Parms{};
+	Params::WBP_DungeonInfo_C_SetDungeonDisappearTimeAt Parms{};
 
 	Parms.DungeonInstanceModel = DungeonInstanceModel;
 
@@ -157,59 +221,59 @@ void UWBP_DungeonInfo_C::SetDungeonName(class UPalDungeonInstanceModel* DungeonI
 }
 
 
-// Function WBP_DungeonInfo.WBP_DungeonInfo_C.Setup by Stage Model
+// Function WBP_DungeonInfo.WBP_DungeonInfo_C.SetDungeonBossSpawned
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPalStageModelDungeon*            InStageModel                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalDungeonInstanceModel*         DungeonInstanceModel                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_DungeonInfo_C::Setup_by_Stage_Model(class UPalStageModelDungeon* InStageModel)
+void UWBP_DungeonInfo_C::SetDungeonBossSpawned(class UPalDungeonInstanceModel* DungeonInstanceModel)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DungeonInfo_C", "Setup by Stage Model");
+		Func = Class->GetFunction("WBP_DungeonInfo_C", "SetDungeonBossSpawned");
 
-	Params::WBP_DungeonInfo_C_Setup_by_Stage_Model Parms{};
+	Params::WBP_DungeonInfo_C_SetDungeonBossSpawned Parms{};
 
-	Parms.InStageModel = InStageModel;
+	Parms.DungeonInstanceModel = DungeonInstanceModel;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_DungeonInfo.WBP_DungeonInfo_C.SetupByDungeonEntrance
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_DungeonInfo.WBP_DungeonInfo_C.OnReadyStageModel
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class APalDungeonEntrance*              Entrance                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class APalDungeonEntrance*              SelfEntrance                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_DungeonInfo_C::SetupByDungeonEntrance(class APalDungeonEntrance* Entrance)
+void UWBP_DungeonInfo_C::OnReadyStageModel(class APalDungeonEntrance* SelfEntrance)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DungeonInfo_C", "SetupByDungeonEntrance");
+		Func = Class->GetFunction("WBP_DungeonInfo_C", "OnReadyStageModel");
 
-	Params::WBP_DungeonInfo_C_SetupByDungeonEntrance Parms{};
+	Params::WBP_DungeonInfo_C_OnReadyStageModel Parms{};
 
-	Parms.Entrance = Entrance;
+	Parms.SelfEntrance = SelfEntrance;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_DungeonInfo.WBP_DungeonInfo_C.SetupEvents
+// Function WBP_DungeonInfo.WBP_DungeonInfo_C.OnReadyInstanceModel
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UPalStageModelDungeon*            StageModel                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_DungeonInfo_C::SetupEvents(class UPalStageModelDungeon* StageModel)
+void UWBP_DungeonInfo_C::OnReadyInstanceModel(class UPalStageModelDungeon* StageModel)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DungeonInfo_C", "SetupEvents");
+		Func = Class->GetFunction("WBP_DungeonInfo_C", "OnReadyInstanceModel");
 
-	Params::WBP_DungeonInfo_C_SetupEvents Parms{};
+	Params::WBP_DungeonInfo_C_OnReadyInstanceModel Parms{};
 
 	Parms.StageModel = StageModel;
 
@@ -217,87 +281,23 @@ void UWBP_DungeonInfo_C::SetupEvents(class UPalStageModelDungeon* StageModel)
 }
 
 
-// Function WBP_DungeonInfo.WBP_DungeonInfo_C.SetUseResetText
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_DungeonInfo_C::SetUseResetText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DungeonInfo_C", "SetUseResetText");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_DungeonInfo.WBP_DungeonInfo_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_DungeonInfo.WBP_DungeonInfo_C.ExecuteUbergraph_WBP_DungeonInfo
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_DungeonInfo_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+void UWBP_DungeonInfo_C::ExecuteUbergraph_WBP_DungeonInfo(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DungeonInfo_C", "Tick");
+		Func = Class->GetFunction("WBP_DungeonInfo_C", "ExecuteUbergraph_WBP_DungeonInfo");
 
-	Params::WBP_DungeonInfo_C_Tick Parms{};
+	Params::WBP_DungeonInfo_C_ExecuteUbergraph_WBP_DungeonInfo Parms{};
 
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_DungeonInfo.WBP_DungeonInfo_C.UpdateDisplayInfo
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalDungeonInstanceModel*         DungeonInstanceModel                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_DungeonInfo_C::UpdateDisplayInfo(class UPalDungeonInstanceModel* DungeonInstanceModel)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DungeonInfo_C", "UpdateDisplayInfo");
-
-	Params::WBP_DungeonInfo_C_UpdateDisplayInfo Parms{};
-
-	Parms.DungeonInstanceModel = DungeonInstanceModel;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_DungeonInfo.WBP_DungeonInfo_C.UpdateDungeonDisappearRemainTime
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_DungeonInfo_C::UpdateDungeonDisappearRemainTime()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DungeonInfo_C", "UpdateDungeonDisappearRemainTime");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_DungeonInfo.WBP_DungeonInfo_C.UpdateDungeonInfoByTick
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_DungeonInfo_C::UpdateDungeonInfoByTick()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DungeonInfo_C", "UpdateDungeonInfoByTick");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

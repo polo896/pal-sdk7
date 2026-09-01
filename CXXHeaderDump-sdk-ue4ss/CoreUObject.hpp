@@ -570,7 +570,7 @@ struct FPolyglotTextData
     FString Namespace;                                                                // 0x0018 (size: 0x10)
     FString Key;                                                                      // 0x0028 (size: 0x10)
     FString NativeString;                                                             // 0x0038 (size: 0x10)
-    TMap<class FString, class FString> LocalizedStrings;                              // 0x0048 (size: 0x50)
+    TMap<FString, FString> LocalizedStrings;                                          // 0x0048 (size: 0x50)
     bool bIsMinimalPatch;                                                             // 0x0098 (size: 0x1)
     FText CachedText;                                                                 // 0x00A0 (size: 0x18)
 

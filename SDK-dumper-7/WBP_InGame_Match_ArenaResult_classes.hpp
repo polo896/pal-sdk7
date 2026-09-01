@@ -50,25 +50,25 @@ public:
 	struct FTimerHandle                           AKEStopTimer;                                      // 0x0330(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_InGame_Match_ArenaResult(int32 EntryPoint);
-	void Finished_09AA4E344CDB8A2AAEEDDAA1DFFBFCCF();
-	void Finished_2517530749672A6E0F463DBE32B55F43();
-	void Finished_51226DA145C6CE6446AF19BA1F7479C8();
-	void Finished_983374E3449FA69C8A2C95B3E3F95F17();
-	void Finished_B029AD46493C3D55AC97EF93F4065970();
-	void Finished_C04460CD4BD8217F35A6CC8FB90BA4F0();
-	void Finished_F1F9C2FF45E5B5A41B0C35AE0BD33A32();
-	void Finished_F4F2970F433F3A1F566F1AAB725A91C1();
-	void Finished_FD9DA1F141588EF59E9137B935518ADE();
-	void GetRankPointRange(int32* Min, int32* Max);
-	void RankDownSequence();
-	void RankNoChangeSequence();
-	void RankUpSequence();
-	void Reset();
-	void SetEndRank();
-	void SetPreRank();
-	void SetResult(const struct FPalArenaRankPointChangeResult& ResultInfo);
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void SetResult(const struct FPalArenaRankPointChangeResult& ResultInfo);
+	void SetPreRank();
+	void SetEndRank();
+	void Reset();
+	void RankUpSequence();
+	void RankNoChangeSequence();
+	void RankDownSequence();
+	void GetRankPointRange(int32* Min, int32* Max);
+	void Finished_FD9DA1F141588EF59E9137B935518ADE();
+	void Finished_F4F2970F433F3A1F566F1AAB725A91C1();
+	void Finished_F1F9C2FF45E5B5A41B0C35AE0BD33A32();
+	void Finished_C04460CD4BD8217F35A6CC8FB90BA4F0();
+	void Finished_B029AD46493C3D55AC97EF93F4065970();
+	void Finished_983374E3449FA69C8A2C95B3E3F95F17();
+	void Finished_51226DA145C6CE6446AF19BA1F7479C8();
+	void Finished_2517530749672A6E0F463DBE32B55F43();
+	void Finished_09AA4E344CDB8A2AAEEDDAA1DFFBFCCF();
+	void ExecuteUbergraph_WBP_InGame_Match_ArenaResult(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

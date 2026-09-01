@@ -7,7 +7,7 @@ class UBP_PalIncidentRandomActionHunterVsPal_C : public UBP_PalIncidentRandomAct
     int32 WinnerGroup;                                                                // 0x0058 (size: 0x4)
     bool IsAllNpcSpawned;                                                             // 0x005C (size: 0x1)
 
-    void ExistsAliveCharacter(TArray<class APalCharacter*>& Array, bool& NewParam);
+    void ExistsAliveCharacter(TArray<APalCharacter*>& Array, bool& NewParam);
     void GetSpawnedLocation(class APalAIController* Controller, bool& Found, FVector& Location);
     void GetSpawnRadius(double& Radius);
     void GetSpawnerLocation(FVector& Location);
@@ -15,8 +15,8 @@ class UBP_PalIncidentRandomActionHunterVsPal_C : public UBP_PalIncidentRandomAct
     void ResetAIController_NPC(class ABP_NPCAIController_C* Controller);
     void ResetAIController(int32 GroupId);
     void GetWinnerGroup(int32& GroupId);
-    void Set Hate To Targets(class APalCharacter* Character, TArray<class APalCharacter*>& Targets);
-    void CollectCharactersByGroup(int32 Group, TArray<class APalCharacter*>& MatchCharacters, TArray<class APalCharacter*>& UnmatchCharacters);
+    void Set Hate To Targets(class APalCharacter* Character, TArray<APalCharacter*>& Targets);
+    void CollectCharactersByGroup(int32 Group, TArray<APalCharacter*>& MatchCharacters, TArray<APalCharacter*>& UnmatchCharacters);
     void CollectGroupIds(TArray<int32>& GroupIds);
     void SetHate();
     void OnAllNpcSpawned();

@@ -17,123 +17,89 @@
 namespace SDK
 {
 
-// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.AnmEvent_In
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_PalSelect_C::AnmEvent_In()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "AnmEvent_In");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.BndEvt__WBP_Arena_PalSelect_WBP_CommonButton_2_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Arena_PalSelect_C::BndEvt__WBP_Arena_PalSelect_WBP_CommonButton_2_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "BndEvt__WBP_Arena_PalSelect_WBP_CommonButton_2_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.Cancel Spect
+// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.Update Rival Party Slot
 // (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_PalSelect_C::Cancel_Spect()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "Cancel Spect");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.CancelSoloMatch
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_PalSelect_C::CancelSoloMatch()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "CancelSoloMatch");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.CloseDetail
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_PalSelect_C::CloseDetail()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "CloseDetail");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.ClosePanel
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_PalSelect_C::ClosePanel()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "ClosePanel");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.ConfirmParty
-// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Confirmed                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FPalArenaPlayerParty&      Party                                                  (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_Arena_PalSelect_C::ConfirmParty(bool Confirmed)
+void UWBP_Arena_PalSelect_C::Update_Rival_Party_Slot(const struct FPalArenaPlayerParty& Party)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "ConfirmParty");
+		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "Update Rival Party Slot");
 
-	Params::WBP_Arena_PalSelect_C_ConfirmParty Parms{};
+	Params::WBP_Arena_PalSelect_C_Update_Rival_Party_Slot Parms{};
 
-	Parms.Confirmed = Confirmed;
+	Parms.Party = std::move(Party);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.Display Detail
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.Update Party Count UI
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPalIndividualCharacterHandle*    CharacterHandle                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FPalArenaPlayerParty&      CurrentParty_0                                         (BlueprintVisible, BlueprintReadOnly, Parm)
+// bool                                    IsRival                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_PalSelect_C::Display_Detail(class UPalIndividualCharacterHandle* CharacterHandle)
+void UWBP_Arena_PalSelect_C::Update_Party_Count_UI(const struct FPalArenaPlayerParty& CurrentParty_0, bool IsRival)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "Display Detail");
+		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "Update Party Count UI");
 
-	Params::WBP_Arena_PalSelect_C_Display_Detail Parms{};
+	Params::WBP_Arena_PalSelect_C_Update_Party_Count_UI Parms{};
+
+	Parms.CurrentParty_0 = std::move(CurrentParty_0);
+	Parms.IsRival = IsRival;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.Update Local Party Slot
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Arena_PalSelect_C::Update_Local_Party_Slot()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "Update Local Party Slot");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.ToggleDetailVisibility
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Arena_PalSelect_C::ToggleDetailVisibility()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "ToggleDetailVisibility");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.Toggle Select Party
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalIndividualCharacterHandle*    CharacterHandle                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_PalSelect_C::Toggle_Select_Party(class UPalIndividualCharacterHandle* CharacterHandle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "Toggle Select Party");
+
+	Params::WBP_Arena_PalSelect_C_Toggle_Select_Party Parms{};
 
 	Parms.CharacterHandle = CharacterHandle;
 
@@ -141,71 +107,167 @@ void UWBP_Arena_PalSelect_C::Display_Detail(class UPalIndividualCharacterHandle*
 }
 
 
-// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.EmptyConfirm
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsConfirm                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.ShowArenaRule
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Arena_PalSelect_C::EmptyConfirm(bool IsConfirm)
+void UWBP_Arena_PalSelect_C::ShowArenaRule()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "EmptyConfirm");
-
-	Params::WBP_Arena_PalSelect_C_EmptyConfirm Parms{};
-
-	Parms.IsConfirm = IsConfirm;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.EmptyEvent
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_PalSelect_C::EmptyEvent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "EmptyEvent");
+		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "ShowArenaRule");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.ExecuteUbergraph_WBP_Arena_PalSelect
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.SetupPalList
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const TArray<class UPalIndividualCharacterParameter*>&PalList                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool                                    IsRival                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_PalSelect_C::ExecuteUbergraph_WBP_Arena_PalSelect(int32 EntryPoint)
+void UWBP_Arena_PalSelect_C::SetupPalList(const TArray<class UPalIndividualCharacterParameter*>& PalList, bool IsRival)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "ExecuteUbergraph_WBP_Arena_PalSelect");
+		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "SetupPalList");
 
-	Params::WBP_Arena_PalSelect_C_ExecuteUbergraph_WBP_Arena_PalSelect Parms{};
+	Params::WBP_Arena_PalSelect_C_SetupPalList Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.PalList = std::move(PalList);
+	Parms.IsRival = IsRival;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.Finished_6CCB6F4C49947D6ED3DAE8939CE96337
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.SetupCharacterName
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Arena_PalSelect_C::Finished_6CCB6F4C49947D6ED3DAE8939CE96337()
+void UWBP_Arena_PalSelect_C::SetupCharacterName()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "Finished_6CCB6F4C49947D6ED3DAE8939CE96337");
+		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "SetupCharacterName");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsSoloMode                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_PalSelect_C::Setup(bool IsSoloMode)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "Setup");
+
+	Params::WBP_Arena_PalSelect_C_Setup Parms{};
+
+	Parms.IsSoloMode = IsSoloMode;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.OnUpdateSequence
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalArenaSequencer*               Sequencer                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// EPalArenaSequenceType                   PrevType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalArenaSequenceType                   AfterType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_PalSelect_C::OnUpdateSequence(class UPalArenaSequencer* Sequencer, EPalArenaSequenceType PrevType, EPalArenaSequenceType AfterType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "OnUpdateSequence");
+
+	Params::WBP_Arena_PalSelect_C_OnUpdateSequence Parms{};
+
+	Parms.Sequencer = Sequencer;
+	Parms.PrevType = PrevType;
+	Parms.AfterType = AfterType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Arena_PalSelect_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Arena_PalSelect_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.On Timer Updated
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Time                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_PalSelect_C::On_Timer_Updated(double Time)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "On Timer Updated");
+
+	Params::WBP_Arena_PalSelect_C_On_Timer_Updated Parms{};
+
+	Parms.Time = Time;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.On Party Updated
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalArenaPlayerIndex                    PlayerIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FPalArenaPlayerParty&      Party                                                  (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_Arena_PalSelect_C::On_Party_Updated(EPalArenaPlayerIndex PlayerIndex, const struct FPalArenaPlayerParty& Party)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "On Party Updated");
+
+	Params::WBP_Arena_PalSelect_C_On_Party_Updated Parms{};
+
+	Parms.PlayerIndex = PlayerIndex;
+	Parms.Party = std::move(Party);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -235,183 +297,87 @@ void UWBP_Arena_PalSelect_C::IsRestrictedSelect(const struct FPalArenaRule& Rule
 }
 
 
-// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.On Party Updated
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalArenaPlayerIndex                    PlayerIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FPalArenaPlayerParty&      Party                                                  (BlueprintVisible, BlueprintReadOnly, Parm)
+// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.Finished_6CCB6F4C49947D6ED3DAE8939CE96337
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Arena_PalSelect_C::On_Party_Updated(EPalArenaPlayerIndex PlayerIndex, const struct FPalArenaPlayerParty& Party)
+void UWBP_Arena_PalSelect_C::Finished_6CCB6F4C49947D6ED3DAE8939CE96337()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "On Party Updated");
-
-	Params::WBP_Arena_PalSelect_C_On_Party_Updated Parms{};
-
-	Parms.PlayerIndex = PlayerIndex;
-	Parms.Party = std::move(Party);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.On Timer Updated
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Time                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Arena_PalSelect_C::On_Timer_Updated(double Time)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "On Timer Updated");
-
-	Params::WBP_Arena_PalSelect_C_On_Timer_Updated Parms{};
-
-	Parms.Time = Time;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Arena_PalSelect_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "Finished_6CCB6F4C49947D6ED3DAE8939CE96337");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.ExecuteUbergraph_WBP_Arena_PalSelect
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_PalSelect_C::OnSetup()
+void UWBP_Arena_PalSelect_C::ExecuteUbergraph_WBP_Arena_PalSelect(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "OnSetup");
+		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "ExecuteUbergraph_WBP_Arena_PalSelect");
+
+	Params::WBP_Arena_PalSelect_C_ExecuteUbergraph_WBP_Arena_PalSelect Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.EmptyEvent
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Arena_PalSelect_C::EmptyEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "EmptyEvent");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.OnUpdateSequence
+// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.EmptyConfirm
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPalArenaSequencer*               Sequencer                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// EPalArenaSequenceType                   PrevType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPalArenaSequenceType                   AfterType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsConfirm                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_PalSelect_C::OnUpdateSequence(class UPalArenaSequencer* Sequencer, EPalArenaSequenceType PrevType, EPalArenaSequenceType AfterType)
+void UWBP_Arena_PalSelect_C::EmptyConfirm(bool IsConfirm)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "OnUpdateSequence");
+		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "EmptyConfirm");
 
-	Params::WBP_Arena_PalSelect_C_OnUpdateSequence Parms{};
+	Params::WBP_Arena_PalSelect_C_EmptyConfirm Parms{};
 
-	Parms.Sequencer = Sequencer;
-	Parms.PrevType = PrevType;
-	Parms.AfterType = AfterType;
+	Parms.IsConfirm = IsConfirm;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsSoloMode                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Arena_PalSelect_C::Setup(bool IsSoloMode)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "Setup");
-
-	Params::WBP_Arena_PalSelect_C_Setup Parms{};
-
-	Parms.IsSoloMode = IsSoloMode;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.SetupCharacterName
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_PalSelect_C::SetupCharacterName()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "SetupCharacterName");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.SetupPalList
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const TArray<class UPalIndividualCharacterParameter*>&PalList                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// bool                                    IsRival                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Arena_PalSelect_C::SetupPalList(const TArray<class UPalIndividualCharacterParameter*>& PalList, bool IsRival)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "SetupPalList");
-
-	Params::WBP_Arena_PalSelect_C_SetupPalList Parms{};
-
-	Parms.PalList = std::move(PalList);
-	Parms.IsRival = IsRival;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.ShowArenaRule
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_PalSelect_C::ShowArenaRule()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "ShowArenaRule");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.Toggle Select Party
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.Display Detail
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UPalIndividualCharacterHandle*    CharacterHandle                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_PalSelect_C::Toggle_Select_Party(class UPalIndividualCharacterHandle* CharacterHandle)
+void UWBP_Arena_PalSelect_C::Display_Detail(class UPalIndividualCharacterHandle* CharacterHandle)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "Toggle Select Party");
+		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "Display Detail");
 
-	Params::WBP_Arena_PalSelect_C_Toggle_Select_Party Parms{};
+	Params::WBP_Arena_PalSelect_C_Display_Detail Parms{};
 
 	Parms.CharacterHandle = CharacterHandle;
 
@@ -419,73 +385,107 @@ void UWBP_Arena_PalSelect_C::Toggle_Select_Party(class UPalIndividualCharacterHa
 }
 
 
-// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.ToggleDetailVisibility
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_PalSelect_C::ToggleDetailVisibility()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "ToggleDetailVisibility");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.Update Local Party Slot
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_PalSelect_C::Update_Local_Party_Slot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "Update Local Party Slot");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.Update Party Count UI
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.ConfirmParty
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FPalArenaPlayerParty&      CurrentParty_0                                         (BlueprintVisible, BlueprintReadOnly, Parm)
-// bool                                    IsRival                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    Confirmed                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_PalSelect_C::Update_Party_Count_UI(const struct FPalArenaPlayerParty& CurrentParty_0, bool IsRival)
+void UWBP_Arena_PalSelect_C::ConfirmParty(bool Confirmed)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "Update Party Count UI");
+		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "ConfirmParty");
 
-	Params::WBP_Arena_PalSelect_C_Update_Party_Count_UI Parms{};
+	Params::WBP_Arena_PalSelect_C_ConfirmParty Parms{};
 
-	Parms.CurrentParty_0 = std::move(CurrentParty_0);
-	Parms.IsRival = IsRival;
+	Parms.Confirmed = Confirmed;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.Update Rival Party Slot
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalArenaPlayerParty&      Party                                                  (BlueprintVisible, BlueprintReadOnly, Parm)
+// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.ClosePanel
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Arena_PalSelect_C::Update_Rival_Party_Slot(const struct FPalArenaPlayerParty& Party)
+void UWBP_Arena_PalSelect_C::ClosePanel()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "Update Rival Party Slot");
+		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "ClosePanel");
 
-	Params::WBP_Arena_PalSelect_C_Update_Rival_Party_Slot Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Party = std::move(Party);
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.CloseDetail
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Arena_PalSelect_C::CloseDetail()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "CloseDetail");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.CancelSoloMatch
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Arena_PalSelect_C::CancelSoloMatch()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "CancelSoloMatch");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.Cancel Spect
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Arena_PalSelect_C::Cancel_Spect()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "Cancel Spect");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.BndEvt__WBP_Arena_PalSelect_WBP_CommonButton_2_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Arena_PalSelect_C::BndEvt__WBP_Arena_PalSelect_WBP_CommonButton_2_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "BndEvt__WBP_Arena_PalSelect_WBP_CommonButton_2_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_PalSelect.WBP_Arena_PalSelect_C.AnmEvent_In
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Arena_PalSelect_C::AnmEvent_In()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_PalSelect_C", "AnmEvent_In");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -16,14 +16,44 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameMenu_WorkSpace_Slider.WBP_IngameMenu_WorkSpace_Slider_C.BndEvt__WBP_IngameMenu_WorkSpace_Slider_Slider_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_IngameMenu_WorkSpace_Slider_C_BndEvt__WBP_IngameMenu_WorkSpace_Slider_Slider_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature final
+// Function WBP_IngameMenu_WorkSpace_Slider.WBP_IngameMenu_WorkSpace_Slider_C.SetupRange
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameMenu_WorkSpace_Slider_C_SetupRange final
 {
 public:
-	float                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         Min;                                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         Max;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_Slider_C_BndEvt__WBP_IngameMenu_WorkSpace_Slider_Slider_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature;
+DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_Slider_C_SetupRange;
+
+// Function WBP_IngameMenu_WorkSpace_Slider.WBP_IngameMenu_WorkSpace_Slider_C.SetCurrentValue
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_WorkSpace_Slider_C_SetCurrentValue final
+{
+public:
+	int64                                         Current_0;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_Slider_C_SetCurrentValue;
+
+// Function WBP_IngameMenu_WorkSpace_Slider.WBP_IngameMenu_WorkSpace_Slider_C.On Input Method Changed
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_IngameMenu_WorkSpace_Slider_C_On_Input_Method_Changed final
+{
+public:
+	ECommonInputType                              Selection;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_Slider_C_On_Input_Method_Changed;
+
+// Function WBP_IngameMenu_WorkSpace_Slider.WBP_IngameMenu_WorkSpace_Slider_C.GetPercent
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_WorkSpace_Slider_C_GetPercent final
+{
+public:
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetNormalizedValue_ReturnValue;           // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_Slider_C_GetPercent;
 
 // Function WBP_IngameMenu_WorkSpace_Slider.WBP_IngameMenu_WorkSpace_Slider_C.ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Slider
 // 0x00B0 (0x00B0 - 0x0000)
@@ -56,44 +86,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_Slider_C_ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Slider;
 
-// Function WBP_IngameMenu_WorkSpace_Slider.WBP_IngameMenu_WorkSpace_Slider_C.GetPercent
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_WorkSpace_Slider_C_GetPercent final
+// Function WBP_IngameMenu_WorkSpace_Slider.WBP_IngameMenu_WorkSpace_Slider_C.BndEvt__WBP_IngameMenu_WorkSpace_Slider_Slider_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_IngameMenu_WorkSpace_Slider_C_BndEvt__WBP_IngameMenu_WorkSpace_Slider_Slider_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature final
 {
 public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetNormalizedValue_ReturnValue;           // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_Slider_C_GetPercent;
-
-// Function WBP_IngameMenu_WorkSpace_Slider.WBP_IngameMenu_WorkSpace_Slider_C.On Input Method Changed
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_IngameMenu_WorkSpace_Slider_C_On_Input_Method_Changed final
-{
-public:
-	ECommonInputType                              Selection;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_Slider_C_On_Input_Method_Changed;
-
-// Function WBP_IngameMenu_WorkSpace_Slider.WBP_IngameMenu_WorkSpace_Slider_C.SetCurrentValue
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_WorkSpace_Slider_C_SetCurrentValue final
-{
-public:
-	int64                                         Current_0;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_Slider_C_SetCurrentValue;
-
-// Function WBP_IngameMenu_WorkSpace_Slider.WBP_IngameMenu_WorkSpace_Slider_C.SetupRange
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameMenu_WorkSpace_Slider_C_SetupRange final
-{
-public:
-	int64                                         Min;                                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int64                                         Max;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_Slider_C_SetupRange;
+DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_Slider_C_BndEvt__WBP_IngameMenu_WorkSpace_Slider_Slider_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature;
 
 }
 

@@ -16,6 +16,28 @@
 namespace SDK::Params
 {
 
+// Function WBP_MenuESC_PlayerBlockListPopup.WBP_MenuESC_PlayerBlockListPopup_C.OnSessionMemberUnBlockList
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_MenuESC_PlayerBlockListPopup_C_OnSessionMemberUnBlockList final
+{
+public:
+	class FString                                 UserId;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MenuESC_PlayerBlockListPopup_C_OnSessionMemberUnBlockList;
+
+// Function WBP_MenuESC_PlayerBlockListPopup.WBP_MenuESC_PlayerBlockListPopup_C.ExecuteUbergraph_WBP_MenuESC_PlayerBlockListPopup
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_MenuESC_PlayerBlockListPopup_C_ExecuteUbergraph_WBP_MenuESC_PlayerBlockListPopup final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const class FString& UserId)>  K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalGameInstance*                       CallFunc_GetPalGameInstance_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalOnlineManager*                      CallFunc_GetOnlineManager_ReturnValue;             // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MenuESC_PlayerBlockListPopup_C_ExecuteUbergraph_WBP_MenuESC_PlayerBlockListPopup;
+
 // Function WBP_MenuESC_PlayerBlockListPopup.WBP_MenuESC_PlayerBlockListPopup_C.CreateBlockList
 // 0x0088 (0x0088 - 0x0000)
 struct WBP_MenuESC_PlayerBlockListPopup_C_CreateBlockList final
@@ -37,28 +59,6 @@ public:
 	class FString                                 CallFunc_GetPlayerNicknameByUserId_ReturnValue;    // 0x0078(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_MenuESC_PlayerBlockListPopup_C_CreateBlockList;
-
-// Function WBP_MenuESC_PlayerBlockListPopup.WBP_MenuESC_PlayerBlockListPopup_C.ExecuteUbergraph_WBP_MenuESC_PlayerBlockListPopup
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_MenuESC_PlayerBlockListPopup_C_ExecuteUbergraph_WBP_MenuESC_PlayerBlockListPopup final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const class FString& UserId)>  K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalGameInstance*                       CallFunc_GetPalGameInstance_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalOnlineManager*                      CallFunc_GetOnlineManager_ReturnValue;             // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MenuESC_PlayerBlockListPopup_C_ExecuteUbergraph_WBP_MenuESC_PlayerBlockListPopup;
-
-// Function WBP_MenuESC_PlayerBlockListPopup.WBP_MenuESC_PlayerBlockListPopup_C.OnSessionMemberUnBlockList
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_MenuESC_PlayerBlockListPopup_C_OnSessionMemberUnBlockList final
-{
-public:
-	class FString                                 UserId;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MenuESC_PlayerBlockListPopup_C_OnSessionMemberUnBlockList;
 
 // Function WBP_MenuESC_PlayerBlockListPopup.WBP_MenuESC_PlayerBlockListPopup_C.BP_GetDesiredFocusTarget
 // 0x0038 (0x0038 - 0x0000)

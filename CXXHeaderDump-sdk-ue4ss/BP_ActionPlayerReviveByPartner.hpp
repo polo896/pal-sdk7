@@ -6,7 +6,7 @@ class UBP_ActionPlayerReviveByPartner_C : public UBP_ActionSimpleMonoMontage_C
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0190 (size: 0x8)
     bool IsEnd;                                                                       // 0x0198 (size: 0x1)
     class UNiagaraSystem* ReviveFX;                                                   // 0x01A0 (size: 0x8)
-    TSoftObjectPtr<UNiagaraSystem> ReviveFX_Asset;                                    // 0x01A8 (size: 0x30)
+    TSoftObjectPtr<class UNiagaraSystem> ReviveFX_Asset;                              // 0x01A8 (size: 0x30)
     FName flagName;                                                                   // 0x01D8 (size: 0x8)
 
     void SetDisableWeaponFlags(bool bDisable);

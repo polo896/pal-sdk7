@@ -51,19 +51,19 @@ public:
 	class FName                                   PalStorageReplicateKey;                            // 0x0534(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Close();
-	void AnmEvent_Open();
-	void BndEvt__WBP_Ingame_Incubator_AllOpen_WBP_CommonButton_Close_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
-	void ExecuteUbergraph_WBP_Ingame_Incubator_AllOpen(int32 EntryPoint);
-	void Finished_87D9091741F1283AF653F79A16402783();
-	void OnClose();
-	void OnHatchedInfoHovered(int32 Index_0);
-	void OnHatchedInfoUnhovered();
-	void OnInitialized();
-	void OnSetup();
-	void OnSyncIndividualParameter(class UPalIndividualCharacterHandle* Handle, class UPalIndividualCharacterParameter* Parameter);
-	void Setup();
 	void ViewHatchedDetail();
+	void Setup();
+	void OnSyncIndividualParameter(class UPalIndividualCharacterHandle* Handle, class UPalIndividualCharacterParameter* Parameter);
+	void OnSetup();
+	void OnInitialized();
+	void OnHatchedInfoUnhovered();
+	void OnHatchedInfoHovered(int32 Index_0);
+	void OnClose();
+	void Finished_87D9091741F1283AF653F79A16402783();
+	void ExecuteUbergraph_WBP_Ingame_Incubator_AllOpen(int32 EntryPoint);
+	void BndEvt__WBP_Ingame_Incubator_AllOpen_WBP_CommonButton_Close_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
+	void AnmEvent_Open();
+	void AnmEvent_Close();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

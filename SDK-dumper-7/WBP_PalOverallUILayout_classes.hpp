@@ -61,6 +61,7 @@ public:
 	int32                                         FadeInPendingCount;                                // 0x0568(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void UpdateCursor();
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void ShowLiftIcon();
 	void ShowFocusCursor(class UWidget* TargetWidget);
@@ -86,7 +87,6 @@ public:
 	void DelayDisplay();
 	void CREATEDELEGATE_PROXYFUNCTION_0(EPalUICommonWarningType WarningType);
 	void CheckPause();
-	void UpdateCursor();
 
 	bool IsAnyFadeWidgetActive() const;
 

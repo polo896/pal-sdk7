@@ -52,30 +52,30 @@ public:
 	bool                                          EnableWaitWorkSync;                                // 0x0539(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_Common_Inventory_K2Node_ComponentBoundEvent_3_OnClickedInventorySortButton__DelegateSignature();
-	void BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_CommonButton_OpenAll_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
-	void BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_CommonButton_SetAll_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
-	void BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void Check_Get_All_Enable(class UPalMapObjectHatchingEggModelBase* Model);
-	void Destruct();
-	class UWidget* DoCustomNavigation_ToSetAll(EUINavigation Navigation_0);
-	class UWidget* DoCustomNavigation_ToSlot8(EUINavigation Navigation_0);
-	void Empty(bool bResult);
-	void ExecuteUbergraph_WBP_IngameMenu_Incubator_Multiple(int32 EntryPoint);
-	void FocusLeft();
-	void FocusRight();
-	void OnEggArrayUpdated();
-	void OnHatchFailed();
-	void OnInitialized();
-	void OnLeftClickEggSlot(class UPalItemSlot* TargetSlot);
-	void OnMultiHatchComplete(TArray<struct FPalInstanceID>& HatchedIDs);
-	void OnRightClickEggSlot(class UPalItemSlot* TargetSlot);
-	void OnSetup();
-	void OnWorkSynced(class UPalMapObjectWorkeeModule* WorkeeModule, class UPalWorkBase* WorkProgress);
-	void RatioToPersentOffsetText(double Ratio, class FText* Persent);
-	void SetupHatch();
-	void Update_Power_Suffcient(class UPalMapObjectEnergyModule* Module);
 	void UpdateSlots(class UPalItemContainer* ItemContainer);
+	void Update_Power_Suffcient(class UPalMapObjectEnergyModule* Module);
+	void SetupHatch();
+	void RatioToPersentOffsetText(double Ratio, class FText* Persent);
+	void OnWorkSynced(class UPalMapObjectWorkeeModule* WorkeeModule, class UPalWorkBase* WorkProgress);
+	void OnSetup();
+	void OnRightClickEggSlot(class UPalItemSlot* TargetSlot);
+	void OnMultiHatchComplete(TArray<struct FPalInstanceID>& HatchedIDs);
+	void OnLeftClickEggSlot(class UPalItemSlot* TargetSlot);
+	void OnInitialized();
+	void OnHatchFailed();
+	void OnEggArrayUpdated();
+	void FocusRight();
+	void FocusLeft();
+	void ExecuteUbergraph_WBP_IngameMenu_Incubator_Multiple(int32 EntryPoint);
+	void Empty(bool bResult);
+	class UWidget* DoCustomNavigation_ToSlot8(EUINavigation Navigation_0);
+	class UWidget* DoCustomNavigation_ToSetAll(EUINavigation Navigation_0);
+	void Destruct();
+	void Check_Get_All_Enable(class UPalMapObjectHatchingEggModelBase* Model);
+	void BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
+	void BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_CommonButton_SetAll_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
+	void BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_CommonButton_OpenAll_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
+	void BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_Common_Inventory_K2Node_ComponentBoundEvent_3_OnClickedInventorySortButton__DelegateSignature();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

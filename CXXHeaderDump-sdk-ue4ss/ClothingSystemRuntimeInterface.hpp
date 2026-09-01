@@ -90,7 +90,7 @@ class UClothingSimulationFactory : public UObject
 
 class UClothingSimulationInteractor : public UObject
 {
-    TMap<class FName, class UClothingInteractor*> ClothingInteractors;                // 0x0028 (size: 0x50)
+    TMap<FName, UClothingInteractor*> ClothingInteractors;                            // 0x0028 (size: 0x50)
 
     void SetNumSubsteps(int32 NumSubsteps);
     void SetNumIterations(int32 NumIterations);

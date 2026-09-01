@@ -14,7 +14,7 @@ class UWBP_PalLiftItem_C : public UPalUserWidget
     FEventReply OnMouseMove(FGeometry MyGeometry, const FPointerEvent& MouseEvent);
     void OnFailedItemOperation();
     void OnUpdateCount(int32 Count);
-    void On Update Icon Texture Path(TSoftObjectPtr<UTexture2D> IconTexture);
+    void On Update Icon Texture Path(TSoftObjectPtr<class UTexture2D> IconTexture);
     void Dispose();
     void Setup(class UPalUILiftSlotModel* Model);
 }; // Size: 0x470

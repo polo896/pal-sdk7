@@ -17,95 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_IngameMenu_WorkSpace_Slider.WBP_IngameMenu_WorkSpace_Slider_C.BndEvt__WBP_IngameMenu_WorkSpace_Slider_Slider_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_IngameMenu_WorkSpace_Slider.WBP_IngameMenu_WorkSpace_Slider_C.SetupRange
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int64                                   Min                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int64                                   Max                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_WorkSpace_Slider_C::BndEvt__WBP_IngameMenu_WorkSpace_Slider_Slider_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature(float Value)
+void UWBP_IngameMenu_WorkSpace_Slider_C::SetupRange(int64 Min, int64 Max)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Slider_C", "BndEvt__WBP_IngameMenu_WorkSpace_Slider_Slider_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature");
+		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Slider_C", "SetupRange");
 
-	Params::WBP_IngameMenu_WorkSpace_Slider_C_BndEvt__WBP_IngameMenu_WorkSpace_Slider_Slider_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature Parms{};
+	Params::WBP_IngameMenu_WorkSpace_Slider_C_SetupRange Parms{};
 
-	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_WorkSpace_Slider.WBP_IngameMenu_WorkSpace_Slider_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_IngameMenu_WorkSpace_Slider_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Slider_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_WorkSpace_Slider.WBP_IngameMenu_WorkSpace_Slider_C.ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Slider
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_WorkSpace_Slider_C::ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Slider(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Slider_C", "ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Slider");
-
-	Params::WBP_IngameMenu_WorkSpace_Slider_C_ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Slider Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_WorkSpace_Slider.WBP_IngameMenu_WorkSpace_Slider_C.GetPercent
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-float UWBP_IngameMenu_WorkSpace_Slider_C::GetPercent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Slider_C", "GetPercent");
-
-	Params::WBP_IngameMenu_WorkSpace_Slider_C_GetPercent Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_IngameMenu_WorkSpace_Slider.WBP_IngameMenu_WorkSpace_Slider_C.On Input Method Changed
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ECommonInputType                        Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_WorkSpace_Slider_C::On_Input_Method_Changed(ECommonInputType Selection)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Slider_C", "On Input Method Changed");
-
-	Params::WBP_IngameMenu_WorkSpace_Slider_C_On_Input_Method_Changed Parms{};
-
-	Parms.Selection = Selection;
+	Parms.Min = Min;
+	Parms.Max = Max;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -131,23 +59,95 @@ void UWBP_IngameMenu_WorkSpace_Slider_C::SetCurrentValue(int64 Current_0)
 }
 
 
-// Function WBP_IngameMenu_WorkSpace_Slider.WBP_IngameMenu_WorkSpace_Slider_C.SetupRange
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_WorkSpace_Slider.WBP_IngameMenu_WorkSpace_Slider_C.On Input Method Changed
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int64                                   Min                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int64                                   Max                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ECommonInputType                        Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_WorkSpace_Slider_C::SetupRange(int64 Min, int64 Max)
+void UWBP_IngameMenu_WorkSpace_Slider_C::On_Input_Method_Changed(ECommonInputType Selection)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Slider_C", "SetupRange");
+		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Slider_C", "On Input Method Changed");
 
-	Params::WBP_IngameMenu_WorkSpace_Slider_C_SetupRange Parms{};
+	Params::WBP_IngameMenu_WorkSpace_Slider_C_On_Input_Method_Changed Parms{};
 
-	Parms.Min = Min;
-	Parms.Max = Max;
+	Parms.Selection = Selection;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_WorkSpace_Slider.WBP_IngameMenu_WorkSpace_Slider_C.GetPercent
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+float UWBP_IngameMenu_WorkSpace_Slider_C::GetPercent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Slider_C", "GetPercent");
+
+	Params::WBP_IngameMenu_WorkSpace_Slider_C_GetPercent Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_IngameMenu_WorkSpace_Slider.WBP_IngameMenu_WorkSpace_Slider_C.ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Slider
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_WorkSpace_Slider_C::ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Slider(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Slider_C", "ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Slider");
+
+	Params::WBP_IngameMenu_WorkSpace_Slider_C_ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Slider Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_WorkSpace_Slider.WBP_IngameMenu_WorkSpace_Slider_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_IngameMenu_WorkSpace_Slider_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Slider_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenu_WorkSpace_Slider.WBP_IngameMenu_WorkSpace_Slider_C.BndEvt__WBP_IngameMenu_WorkSpace_Slider_Slider_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// float                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_WorkSpace_Slider_C::BndEvt__WBP_IngameMenu_WorkSpace_Slider_Slider_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature(float Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Slider_C", "BndEvt__WBP_IngameMenu_WorkSpace_Slider_Slider_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature");
+
+	Params::WBP_IngameMenu_WorkSpace_Slider_C_BndEvt__WBP_IngameMenu_WorkSpace_Slider_Slider_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature Parms{};
+
+	Parms.Value = Value;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

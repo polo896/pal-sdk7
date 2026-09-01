@@ -17,66 +17,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Option_ModMenu_ModList_C_BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Option_ModMenu_ModList_C_BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Option_ModMenu_ModList_C_BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Option_ModMenu_ModList_C_BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Option_ModMenu_ModList_C_BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Option_ModMenu_ModList_C_BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.ExecuteUbergraph_WBP_Option_ModMenu_ModList
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_Option_ModMenu_ModList_C_ExecuteUbergraph_WBP_Option_ModMenu_ModList final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_2;               // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_1;               // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Option_ModMenu_ModList_C_ExecuteUbergraph_WBP_Option_ModMenu_ModList;
-
-// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.GetModData
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_Option_ModMenu_ModList_C_GetModData final
-{
-public:
-	struct FPalUIModDisplayData                   DisplayData;                                       // 0x0000(0x0050)(Parm, OutParm)
-};
-DUMPER7_ASSERTS_WBP_Option_ModMenu_ModList_C_GetModData;
-
-// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.GetUniqueId
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Option_ModMenu_ModList_C_GetUniqueId final
-{
-public:
-	struct FPalUIModUniqueId                      ModUniqueId;                                       // 0x0000(0x0010)(Parm, OutParm, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Option_ModMenu_ModList_C_GetUniqueId;
-
 // Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.SetModData
 // 0x00C0 (0x00C0 - 0x0000)
 struct WBP_Option_ModMenu_ModList_C_SetModData final
@@ -102,6 +42,66 @@ public:
 	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x00BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Option_ModMenu_ModList_C_SetModData;
+
+// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.GetUniqueId
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Option_ModMenu_ModList_C_GetUniqueId final
+{
+public:
+	struct FPalUIModUniqueId                      ModUniqueId;                                       // 0x0000(0x0010)(Parm, OutParm, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Option_ModMenu_ModList_C_GetUniqueId;
+
+// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.GetModData
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_Option_ModMenu_ModList_C_GetModData final
+{
+public:
+	struct FPalUIModDisplayData                   DisplayData;                                       // 0x0000(0x0050)(Parm, OutParm)
+};
+DUMPER7_ASSERTS_WBP_Option_ModMenu_ModList_C_GetModData;
+
+// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.ExecuteUbergraph_WBP_Option_ModMenu_ModList
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_Option_ModMenu_ModList_C_ExecuteUbergraph_WBP_Option_ModMenu_ModList final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_2;               // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_1;               // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Option_ModMenu_ModList_C_ExecuteUbergraph_WBP_Option_ModMenu_ModList;
+
+// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Option_ModMenu_ModList_C_BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Option_ModMenu_ModList_C_BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Option_ModMenu_ModList_C_BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Option_ModMenu_ModList_C_BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Option_ModMenu_ModList_C_BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Option_ModMenu_ModList_C_BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
 
 }
 

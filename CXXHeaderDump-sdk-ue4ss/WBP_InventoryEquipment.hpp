@@ -84,11 +84,11 @@ class UWBP_InventoryEquipment_C : public UWBP_IndividualParameterBindWidget_C
     class UWBP_PalPlayerInventoryScrollList_C* WBP_PalPlayerInventoryScrollList;      // 0x08C8 (size: 0x8)
     class UWBP_PlayerInventoryWeightInfo_C* WBP_PlayerInventoryWeightInfo;            // 0x08D0 (size: 0x8)
     class UWBP_StatusBuffTimerContainer_C* WBP_StatusBuffTimerContainer;              // 0x08D8 (size: 0x8)
-    TArray<class UWBP_PalInGameMenuItemSlotButton_C*> WeaponLoadoutSlotArray;         // 0x08E0 (size: 0x10)
-    TArray<class UWBP_PalInGameMenuItemSlotButton_C*> FoodSlotArray;                  // 0x08F0 (size: 0x10)
+    TArray<UWBP_PalInGameMenuItemSlotButton_C*> WeaponLoadoutSlotArray;               // 0x08E0 (size: 0x10)
+    TArray<UWBP_PalInGameMenuItemSlotButton_C*> FoodSlotArray;                        // 0x08F0 (size: 0x10)
     class UBP_InGameMenuInventoryModel_C* Model;                                      // 0x0900 (size: 0x8)
-    TArray<class UWBP_PalInGameMenuItemSlotButton_C*> PlayerArmorSlotArray;           // 0x0908 (size: 0x10)
-    TArray<class UWBP_PalInGameMenuItemSlotButton_C*> DropSlotArray;                  // 0x0918 (size: 0x10)
+    TArray<UWBP_PalInGameMenuItemSlotButton_C*> PlayerArmorSlotArray;                 // 0x0908 (size: 0x10)
+    TArray<UWBP_PalInGameMenuItemSlotButton_C*> DropSlotArray;                        // 0x0918 (size: 0x10)
     FWBP_InventoryEquipment_COnClickedItemDrop OnClickedItemDrop;                     // 0x0928 (size: 0x10)
     void OnClickedItemDrop();
     FWBP_InventoryEquipment_COnClickedItemDestroy OnClickedItemDestroy;               // 0x0938 (size: 0x10)
@@ -107,14 +107,14 @@ class UWBP_InventoryEquipment_C : public UWBP_IndividualParameterBindWidget_C
     FDataTableRowHandle FoodSlotTitleMsgID;                                           // 0x09E8 (size: 0x10)
     FDataTableRowHandle FoodSlotInfoMsgID;                                            // 0x09F8 (size: 0x10)
     FDataTableRowHandle FoodSlotRequireMsgID;                                         // 0x0A08 (size: 0x10)
-    TMap<class FName, class UWBP_InventoryEquipment_StatusPointButton_C*> StatusPointButtonMap; // 0x0A18 (size: 0x50)
+    TMap<FName, UWBP_InventoryEquipment_StatusPointButton_C*> StatusPointButtonMap;   // 0x0A18 (size: 0x50)
     TMap<FName, TEnumAsByte<E_PalUIStatusDIsplayParameter::Type>> StatusEnumMap;      // 0x0A68 (size: 0x50)
     TMap<TEnumAsByte<E_PalUIStatusDIsplayParameter::Type>, FDataTableRowHandle> DescMsgIdMap; // 0x0AB8 (size: 0x50)
     FWBP_InventoryEquipment_COnClickedChangePlayerNameButton OnClickedChangePlayerNameButton; // 0x0B08 (size: 0x10)
     void OnClickedChangePlayerNameButton();
     FWBP_InventoryEquipment_COnClickedToggleHeadDressing OnClickedToggleHeadDressing; // 0x0B18 (size: 0x10)
     void OnClickedToggleHeadDressing();
-    TArray<class UWBP_PalInGameMenuItemSlotButton_C*> AccessorySlots;                 // 0x0B28 (size: 0x10)
+    TArray<UWBP_PalInGameMenuItemSlotButton_C*> AccessorySlots;                       // 0x0B28 (size: 0x10)
     FDataTableRowHandle SameAccessoryNotice;                                          // 0x0B38 (size: 0x10)
     FTimerHandle SameAccessoryNoticeHideTimer;                                        // 0x0B48 (size: 0x8)
     FWBP_InventoryEquipment_COnClickedItemEat OnClickedItemEat;                       // 0x0B50 (size: 0x10)
@@ -125,11 +125,11 @@ class UWBP_InventoryEquipment_C : public UWBP_IndividualParameterBindWidget_C
     void OnClickedToggleGliderDressing();
     FWBP_InventoryEquipment_COnClickQuickStackButton OnClickQuickStackButton;         // 0x0B80 (size: 0x10)
     void OnClickQuickStackButton(TArray<FPalItemSlotId>& SlotIds);
-    TMap<class FPalItemSlotId, class UPalItemSlot*> CurrentStackableSlotIds;          // 0x0B90 (size: 0x50)
+    TMap<FPalItemSlotId, UPalItemSlot*> CurrentStackableSlotIds;                      // 0x0B90 (size: 0x50)
     bool CurrentInBaseCamp;                                                           // 0x0BE0 (size: 0x1)
     bool ShouldQuickStackDialogPop;                                                   // 0x0BE1 (size: 0x1)
-    TMap<class FName, class UBP_ItemSlotEntryData_C*> CurrentExceptItemIdMap;         // 0x0BE8 (size: 0x50)
-    TMap<class UObject*, class UWBP_PalInGameMenuItemSlotButton_C*> ListViewDisplayWidgetMap; // 0x0C38 (size: 0x50)
+    TMap<FName, UBP_ItemSlotEntryData_C*> CurrentExceptItemIdMap;                     // 0x0BE8 (size: 0x50)
+    TMap<UObject*, UWBP_PalInGameMenuItemSlotButton_C*> ListViewDisplayWidgetMap;     // 0x0C38 (size: 0x50)
     bool bReplicateQuickStackItemStackInfo;                                           // 0x0C88 (size: 0x1)
     class UWBP_PalItemSlotButtonBase_C* LastHoveredButton;                            // 0x0C90 (size: 0x8)
 

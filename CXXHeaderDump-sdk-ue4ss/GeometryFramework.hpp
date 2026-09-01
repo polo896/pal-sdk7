@@ -48,7 +48,7 @@ class UBaseDynamicMeshComponent : public UMeshComponent
     class UMaterialInterface* OverrideRenderMaterial;                                 // 0x05B0 (size: 0x8)
     class UMaterialInterface* SecondaryRenderMaterial;                                // 0x05B8 (size: 0x8)
     bool bEnableRayTracing;                                                           // 0x05C1 (size: 0x1)
-    TArray<class UMaterialInterface*> BaseMaterials;                                  // 0x05C8 (size: 0x10)
+    TArray<UMaterialInterface*> BaseMaterials;                                        // 0x05C8 (size: 0x10)
 
     void SetViewModeOverridesEnabled(bool bEnabled);
     void SetShadowsEnabled(bool bEnabled);
@@ -99,7 +99,7 @@ class UDynamicMeshComponent : public UBaseDynamicMeshComponent
     bool bDeferCollisionUpdates;                                                      // 0x0723 (size: 0x1)
     class UBodySetup* MeshBodySetup;                                                  // 0x0728 (size: 0x8)
     FKAggregateGeom AggGeom;                                                          // 0x0768 (size: 0x68)
-    TArray<class UBodySetup*> AsyncBodySetupQueue;                                    // 0x07D0 (size: 0x10)
+    TArray<UBodySetup*> AsyncBodySetupQueue;                                          // 0x07D0 (size: 0x10)
 
     bool ValidateMaterialSlots(bool bCreateIfMissing, bool bDeleteExtraSlots);
     void UpdateCollision(bool bOnlyIfPending);
@@ -109,7 +109,7 @@ class UDynamicMeshComponent : public UBaseDynamicMeshComponent
     void SetComplexAsSimpleCollisionEnabled(bool bEnabled, bool bImmediateUpdate);
     EDynamicMeshComponentTangentsMode GetTangentsType();
     void EnableComplexAsSimpleCollision();
-    void ConfigureMaterialSet(const TArray<class UMaterialInterface*>& NewMaterialSet);
+    void ConfigureMaterialSet(const TArray<UMaterialInterface*>& NewMaterialSet);
 }; // Size: 0x7F0
 
 class UDynamicMeshGenerator : public UObject
@@ -118,8 +118,8 @@ class UDynamicMeshGenerator : public UObject
 
 class UDynamicMeshPool : public UObject
 {
-    TArray<class UDynamicMesh*> CachedMeshes;                                         // 0x0028 (size: 0x10)
-    TArray<class UDynamicMesh*> AllCreatedMeshes;                                     // 0x0038 (size: 0x10)
+    TArray<UDynamicMesh*> CachedMeshes;                                               // 0x0028 (size: 0x10)
+    TArray<UDynamicMesh*> AllCreatedMeshes;                                           // 0x0038 (size: 0x10)
 
     void ReturnMesh(class UDynamicMesh* Mesh);
     void ReturnAllMeshes();

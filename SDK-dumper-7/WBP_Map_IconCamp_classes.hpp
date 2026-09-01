@@ -37,17 +37,17 @@ public:
 	bool                                          bIsSameGuild;                                      // 0x0589(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UpdatePvpItemNum();
-	void SetupInvaderEvent();
-	void Setup_Internal(class UPalLocationPoint* LocationPoint);
-	void SetSameGuild(bool bSameGuild);
-	void SetEnable(bool Enable);
-	void GetInvisibleButton(class UWidget** Button);
-	void GetBaseCampId(struct FGuid* BaseCampId);
-	void ExecuteUbergraph_WBP_Map_IconCamp(int32 EntryPoint);
-	void BndEvt__WBP_Map_IconCamp_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Map_IconCamp_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 	void BndEvt__WBP_Map_IconCamp_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Map_IconCamp_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Map_IconCamp_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void ExecuteUbergraph_WBP_Map_IconCamp(int32 EntryPoint);
+	void GetBaseCampId(struct FGuid* BaseCampId);
+	void GetInvisibleButton(class UWidget** Button);
+	void SetEnable(bool Enable);
+	void SetSameGuild(bool bSameGuild);
+	void Setup_Internal(class UPalLocationPoint* LocationPoint);
+	void SetupInvaderEvent();
+	void UpdatePvpItemNum();
 
 public:
 	static class UClass* StaticClass()

@@ -17,6 +17,17 @@
 namespace SDK::Params
 {
 
+// Function BP_SkyCreatorLightingVolume_WildlifeSanctuary.BP_SkyCreatorLightingVolume_WildlifeSanctuary_C.OnAlertStateChanged
+// 0x0010 (0x0010 - 0x0000)
+struct BP_SkyCreatorLightingVolume_WildlifeSanctuary_C_OnAlertStateChanged final
+{
+public:
+	EPalWildlifeSanctuaryAlertState               NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalPlayerCharacter*                    DetectedPlayer;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SkyCreatorLightingVolume_WildlifeSanctuary_C_OnAlertStateChanged;
+
 // Function BP_SkyCreatorLightingVolume_WildlifeSanctuary.BP_SkyCreatorLightingVolume_WildlifeSanctuary_C.ExecuteUbergraph_BP_SkyCreatorLightingVolume_WildlifeSanctuary
 // 0x0048 (0x0048 - 0x0000)
 struct BP_SkyCreatorLightingVolume_WildlifeSanctuary_C_ExecuteUbergraph_BP_SkyCreatorLightingVolume_WildlifeSanctuary final
@@ -33,17 +44,6 @@ public:
 	TScriptInterface<class IPalWildlifeSanctuaryAlertStateListenerInterface> CallFunc_ResisterAlertStateListener_AlertInterface_CastInput; // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_SkyCreatorLightingVolume_WildlifeSanctuary_C_ExecuteUbergraph_BP_SkyCreatorLightingVolume_WildlifeSanctuary;
-
-// Function BP_SkyCreatorLightingVolume_WildlifeSanctuary.BP_SkyCreatorLightingVolume_WildlifeSanctuary_C.OnAlertStateChanged
-// 0x0010 (0x0010 - 0x0000)
-struct BP_SkyCreatorLightingVolume_WildlifeSanctuary_C_OnAlertStateChanged final
-{
-public:
-	EPalWildlifeSanctuaryAlertState               NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalPlayerCharacter*                    DetectedPlayer;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_SkyCreatorLightingVolume_WildlifeSanctuary_C_OnAlertStateChanged;
 
 // Function BP_SkyCreatorLightingVolume_WildlifeSanctuary.BP_SkyCreatorLightingVolume_WildlifeSanctuary_C.ShouldMaintainAlertWhilePresent
 // 0x0001 (0x0001 - 0x0000)

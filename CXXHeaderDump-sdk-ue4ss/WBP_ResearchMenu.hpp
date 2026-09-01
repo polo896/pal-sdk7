@@ -34,7 +34,7 @@ class UWBP_ResearchMenu_C : public UPalUserWidgetOverlayUI
     bool PinedDetail;                                                                 // 0x054A (size: 0x1)
     FName CurrentResearch;                                                            // 0x054C (size: 0x8)
     bool BlockButton;                                                                 // 0x0554 (size: 0x1)
-    TMap<class EPalWorkSuitability, class UWBP_Research_PalWorkList_C*> EntryMap;     // 0x0558 (size: 0x50)
+    TMap<EPalWorkSuitability, UWBP_Research_PalWorkList_C*> EntryMap;                 // 0x0558 (size: 0x50)
     FTimerHandle ProgressUpdateTimer;                                                 // 0x05A8 (size: 0x8)
 
     void GetResearchCompleteCount(TArray<FPalUIGuildLabResearchInfo>& ResearchInfo, int32& Count);

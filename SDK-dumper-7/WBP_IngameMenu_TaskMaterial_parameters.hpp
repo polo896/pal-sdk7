@@ -16,14 +16,14 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameMenu_TaskMaterial.WBP_IngameMenu_TaskMaterial_C.SetHIdeWhenZeroFlag
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_IngameMenu_TaskMaterial_C_SetHIdeWhenZeroFlag final
+// Function WBP_IngameMenu_TaskMaterial.WBP_IngameMenu_TaskMaterial_C.SetupTexture
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_TaskMaterial_C_SetupTexture final
 {
 public:
-	bool                                          isHideWhenZero;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   StaticItemId;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_TaskMaterial_C_SetHIdeWhenZeroFlag;
+DUMPER7_ASSERTS_WBP_IngameMenu_TaskMaterial_C_SetupTexture;
 
 // Function WBP_IngameMenu_TaskMaterial.WBP_IngameMenu_TaskMaterial_C.SetItemNum
 // 0x0060 (0x0060 - 0x0000)
@@ -44,14 +44,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_IngameMenu_TaskMaterial_C_SetItemNum;
 
-// Function WBP_IngameMenu_TaskMaterial.WBP_IngameMenu_TaskMaterial_C.SetupTexture
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_TaskMaterial_C_SetupTexture final
+// Function WBP_IngameMenu_TaskMaterial.WBP_IngameMenu_TaskMaterial_C.SetHIdeWhenZeroFlag
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_IngameMenu_TaskMaterial_C_SetHIdeWhenZeroFlag final
 {
 public:
-	class FName                                   StaticItemId;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          isHideWhenZero;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_TaskMaterial_C_SetupTexture;
+DUMPER7_ASSERTS_WBP_IngameMenu_TaskMaterial_C_SetHIdeWhenZeroFlag;
 
 }
 

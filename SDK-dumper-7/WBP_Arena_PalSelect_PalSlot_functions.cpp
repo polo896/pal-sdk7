@@ -17,21 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_Arena_PalSelect_PalSlot.WBP_Arena_PalSelect_PalSlot_C.ExecuteUbergraph_WBP_Arena_PalSelect_PalSlot
-// (Final, UbergraphFunction)
+// Function WBP_Arena_PalSelect_PalSlot.WBP_Arena_PalSelect_PalSlot_C.SetPalIcon
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalIndividualCharacterParameter* CharacterParameter                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_PalSelect_PalSlot_C::ExecuteUbergraph_WBP_Arena_PalSelect_PalSlot(int32 EntryPoint)
+void UWBP_Arena_PalSelect_PalSlot_C::SetPalIcon(class UPalIndividualCharacterParameter* CharacterParameter)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_PalSlot_C", "ExecuteUbergraph_WBP_Arena_PalSelect_PalSlot");
+		Func = Class->GetFunction("WBP_Arena_PalSelect_PalSlot_C", "SetPalIcon");
 
-	Params::WBP_Arena_PalSelect_PalSlot_C_ExecuteUbergraph_WBP_Arena_PalSelect_PalSlot Parms{};
+	Params::WBP_Arena_PalSelect_PalSlot_C_SetPalIcon Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.CharacterParameter = CharacterParameter;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,21 +57,21 @@ void UWBP_Arena_PalSelect_PalSlot_C::SetNowSetting(bool IsSetting)
 }
 
 
-// Function WBP_Arena_PalSelect_PalSlot.WBP_Arena_PalSelect_PalSlot_C.SetPalIcon
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Arena_PalSelect_PalSlot.WBP_Arena_PalSelect_PalSlot_C.ExecuteUbergraph_WBP_Arena_PalSelect_PalSlot
+// (Final, UbergraphFunction)
 // Parameters:
-// class UPalIndividualCharacterParameter* CharacterParameter                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_PalSelect_PalSlot_C::SetPalIcon(class UPalIndividualCharacterParameter* CharacterParameter)
+void UWBP_Arena_PalSelect_PalSlot_C::ExecuteUbergraph_WBP_Arena_PalSelect_PalSlot(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_PalSlot_C", "SetPalIcon");
+		Func = Class->GetFunction("WBP_Arena_PalSelect_PalSlot_C", "ExecuteUbergraph_WBP_Arena_PalSelect_PalSlot");
 
-	Params::WBP_Arena_PalSelect_PalSlot_C_SetPalIcon Parms{};
+	Params::WBP_Arena_PalSelect_PalSlot_C_ExecuteUbergraph_WBP_Arena_PalSelect_PalSlot Parms{};
 
-	Parms.CharacterParameter = CharacterParameter;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

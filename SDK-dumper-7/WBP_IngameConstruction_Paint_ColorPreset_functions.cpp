@@ -17,21 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_IngameConstruction_Paint_ColorPreset.WBP_IngameConstruction_Paint_ColorPreset_C.BndEvt__WBP_IngameConstruction_Paint_ColorPreset_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_OnButtonReleased__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_IngameConstruction_Paint_ColorPreset.WBP_IngameConstruction_Paint_ColorPreset_C.SetColor
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              InColor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameConstruction_Paint_ColorPreset_C::BndEvt__WBP_IngameConstruction_Paint_ColorPreset_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_OnButtonReleased__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_IngameConstruction_Paint_ColorPreset_C::SetColor(const struct FLinearColor& InColor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameConstruction_Paint_ColorPreset_C", "BndEvt__WBP_IngameConstruction_Paint_ColorPreset_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_OnButtonReleased__DelegateSignature");
+		Func = Class->GetFunction("WBP_IngameConstruction_Paint_ColorPreset_C", "SetColor");
 
-	Params::WBP_IngameConstruction_Paint_ColorPreset_C_BndEvt__WBP_IngameConstruction_Paint_ColorPreset_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_OnButtonReleased__DelegateSignature Parms{};
+	Params::WBP_IngameConstruction_Paint_ColorPreset_C_SetColor Parms{};
 
-	Parms.Button = Button;
+	Parms.InColor = std::move(InColor);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,21 +57,21 @@ void UWBP_IngameConstruction_Paint_ColorPreset_C::ExecuteUbergraph_WBP_IngameCon
 }
 
 
-// Function WBP_IngameConstruction_Paint_ColorPreset.WBP_IngameConstruction_Paint_ColorPreset_C.SetColor
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameConstruction_Paint_ColorPreset.WBP_IngameConstruction_Paint_ColorPreset_C.BndEvt__WBP_IngameConstruction_Paint_ColorPreset_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_OnButtonReleased__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// const struct FLinearColor&              InColor                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameConstruction_Paint_ColorPreset_C::SetColor(const struct FLinearColor& InColor)
+void UWBP_IngameConstruction_Paint_ColorPreset_C::BndEvt__WBP_IngameConstruction_Paint_ColorPreset_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_OnButtonReleased__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameConstruction_Paint_ColorPreset_C", "SetColor");
+		Func = Class->GetFunction("WBP_IngameConstruction_Paint_ColorPreset_C", "BndEvt__WBP_IngameConstruction_Paint_ColorPreset_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_OnButtonReleased__DelegateSignature");
 
-	Params::WBP_IngameConstruction_Paint_ColorPreset_C_SetColor Parms{};
+	Params::WBP_IngameConstruction_Paint_ColorPreset_C_BndEvt__WBP_IngameConstruction_Paint_ColorPreset_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_OnButtonReleased__DelegateSignature Parms{};
 
-	Parms.InColor = std::move(InColor);
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

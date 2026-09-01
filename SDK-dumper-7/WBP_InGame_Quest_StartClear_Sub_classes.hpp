@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "AkAudio_structs.hpp"
 #include "F_PalQuestStartClearNotifyQueData_structs.hpp"
 #include "WBP_InGame_Quest_StartClearBase_classes.hpp"
-#include "AkAudio_structs.hpp"
 
 
 namespace SDK
@@ -56,20 +56,20 @@ public:
 	bool                                          CompleteSound;                                     // 0x0558(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_CompleteQuest();
-	void AnmEvent_Out_Order();
-	void AnmEvent_StartQuest();
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_InGame_Quest_StartClear_Sub(int32 EntryPoint);
-	void GetQuestNotifyTime(double* NotifyTime);
-	void GetStartQuestNotifyTime(double* NewParam);
-	void OnTImerEvent_EndOutAnimation();
-	void OnTimerEvent_EndStartAnimation();
-	void PlayClear();
-	void PlayOrder();
-	void SetBindData(const struct FPalUIActionBindData& BindData);
 	void SetQuestName(const class FText& InQuestName);
+	void SetBindData(const struct FPalUIActionBindData& BindData);
+	void PlayOrder();
+	void PlayClear();
+	void OnTimerEvent_EndStartAnimation();
+	void OnTImerEvent_EndOutAnimation();
+	void GetStartQuestNotifyTime(double* NewParam);
+	void GetQuestNotifyTime(double* NotifyTime);
+	void ExecuteUbergraph_WBP_InGame_Quest_StartClear_Sub(int32 EntryPoint);
+	void Destruct();
+	void Construct();
+	void AnmEvent_StartQuest();
+	void AnmEvent_Out_Order();
+	void AnmEvent_CompleteQuest();
 
 public:
 	static class UClass* StaticClass()

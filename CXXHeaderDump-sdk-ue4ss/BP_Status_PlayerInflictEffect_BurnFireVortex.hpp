@@ -5,7 +5,7 @@ class UBP_Status_PlayerInflictEffect_BurnFireVortex_C : public UBP_Status_Player
 {
     int32 Max;                                                                        // 0x00F4 (size: 0x4)
     double Probability;                                                               // 0x00F8 (size: 0x8)
-    TArray<class ABP_PassiveAttackBase_C*> EffectList;                                // 0x0100 (size: 0x10)
+    TArray<ABP_PassiveAttackBase_C*> EffectList;                                      // 0x0100 (size: 0x10)
 
     void OnDestroyEffect(class AActor* DestroyedActor);
     void OnSpawnEffect(class ABP_PassiveAttackBase_C* SpawnEffect);

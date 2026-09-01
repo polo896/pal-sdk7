@@ -52,23 +52,23 @@ public:
 	TMulticastInlineDelegate<void()>              OnClickSurrenderRaidBossArea;                      // 0x0370(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void ActivateSurrenderRaidBossArea();
-	void AnmEvent_Close();
-	void AnmEvent_Open();
-	void BndEvt__WBP_GameOver_Defeat_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
-	void BndEvt__WBP_GameOver_Defeat_WBP_CommonButton_RecreateCharacter_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
-	void BndEvt__WBP_GameOver_Defeat_WBP_CommonButton_SurrenderRaidBossArea_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_GameOver_Defeat(int32 EntryPoint);
-	void Finished_58EC9B6A4AC75462EDBD71B398D95E41();
-	void Finished_D92A1E7344709CE3A6F44587549DFD19();
-	void Hide_Respawn_Timer();
-	void Set_Focus_to_Respawn_Button();
-	void SetDeathPenaltyMode(EPalOptionWorldDeathPenalty PenaltyMode, bool bSucide);
-	void SetDropPalInfo(TArray<struct FPalLogInfo_DropPal>& DropPalInfo);
-	void SetHardcoreInfo();
 	void SetRemainingTime(int32 RemainingSecond);
+	void SetHardcoreInfo();
+	void SetDropPalInfo(TArray<struct FPalLogInfo_DropPal>& DropPalInfo);
+	void SetDeathPenaltyMode(EPalOptionWorldDeathPenalty PenaltyMode, bool bSucide);
+	void Set_Focus_to_Respawn_Button();
+	void Hide_Respawn_Timer();
+	void Finished_D92A1E7344709CE3A6F44587549DFD19();
+	void Finished_58EC9B6A4AC75462EDBD71B398D95E41();
+	void ExecuteUbergraph_WBP_GameOver_Defeat(int32 EntryPoint);
+	void Destruct();
+	void Construct();
+	void BndEvt__WBP_GameOver_Defeat_WBP_CommonButton_SurrenderRaidBossArea_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
+	void BndEvt__WBP_GameOver_Defeat_WBP_CommonButton_RecreateCharacter_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
+	void BndEvt__WBP_GameOver_Defeat_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
+	void AnmEvent_Open();
+	void AnmEvent_Close();
+	void ActivateSurrenderRaidBossArea();
 
 public:
 	static class UClass* StaticClass()

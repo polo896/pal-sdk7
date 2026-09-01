@@ -163,7 +163,7 @@ class UBakeInputMeshProperties : public UInteractiveToolPropertySet
 
 class UBakeMeshAttributeMapsResultToolProperties : public UInteractiveToolPropertySet
 {
-    TMap<class EBakeMapType, class UTexture2D*> Result;                               // 0x00A8 (size: 0x50)
+    TMap<EBakeMapType, UTexture2D*> Result;                                           // 0x00A8 (size: 0x50)
 
 }; // Size: 0xF8
 
@@ -181,7 +181,7 @@ class UBakeMeshAttributeMapsToolBase : public UBakeMeshAttributeTool
     class UPreviewMesh* PreviewMesh;                                                  // 0x0498 (size: 0x8)
     class UMaterialInstanceDynamic* PreviewMaterial;                                  // 0x04A0 (size: 0x8)
     class UMaterialInstanceDynamic* BentNormalPreviewMaterial;                        // 0x04A8 (size: 0x8)
-    TMap<class EBakeMapType, class UTexture2D*> CachedMaps;                           // 0x0500 (size: 0x50)
+    TMap<EBakeMapType, UTexture2D*> CachedMaps;                                       // 0x0500 (size: 0x50)
     class UTexture2D* EmptyNormalMap;                                                 // 0x05E8 (size: 0x8)
     class UTexture2D* EmptyColorMapBlack;                                             // 0x05F0 (size: 0x8)
     class UTexture2D* EmptyColorMapWhite;                                             // 0x05F8 (size: 0x8)
@@ -284,10 +284,10 @@ class UBakeMultiMeshInputToolProperties : public UInteractiveToolPropertySet
 
 class UBakeMultiTexture2DProperties : public UInteractiveToolPropertySet
 {
-    TArray<class UTexture2D*> MaterialIDSourceTextures;                               // 0x00A8 (size: 0x10)
+    TArray<UTexture2D*> MaterialIDSourceTextures;                                     // 0x00A8 (size: 0x10)
     FString UVLayer;                                                                  // 0x00B8 (size: 0x10)
     TArray<FString> UVLayerNamesList;                                                 // 0x00C8 (size: 0x10)
-    TArray<class UTexture2D*> AllSourceTextures;                                      // 0x00D8 (size: 0x10)
+    TArray<UTexture2D*> AllSourceTextures;                                            // 0x00D8 (size: 0x10)
 
     TArray<FString> GetUVLayerNamesFunc();
 }; // Size: 0xE8
@@ -329,7 +329,7 @@ class UBakeRenderCaptureResults : public UInteractiveToolPropertySet
 
 class UBakeRenderCaptureTool : public UBakeMeshAttributeMapsToolBase
 {
-    TArray<class AActor*> Actors;                                                     // 0x0600 (size: 0x10)
+    TArray<AActor*> Actors;                                                           // 0x0600 (size: 0x10)
     class UBakeRenderCaptureToolProperties* Settings;                                 // 0x0610 (size: 0x8)
     class URenderCaptureProperties* RenderCaptureProperties;                          // 0x0618 (size: 0x8)
     class UBakeRenderCaptureInputToolProperties* InputMeshSettings;                   // 0x0620 (size: 0x8)
@@ -773,7 +773,7 @@ class UEditNormalsTool : public UMultiSelectionMeshEditingTool
     class UEditNormalsToolProperties* BasicProperties;                                // 0x00B8 (size: 0x8)
     class UEditNormalsAdvancedProperties* AdvancedProperties;                         // 0x00C0 (size: 0x8)
     class UPolygroupLayersProperties* PolygroupLayerProperties;                       // 0x00C8 (size: 0x8)
-    TArray<class UMeshOpPreviewWithBackgroundCompute*> Previews;                      // 0x00D0 (size: 0x10)
+    TArray<UMeshOpPreviewWithBackgroundCompute*> Previews;                            // 0x00D0 (size: 0x10)
 
 }; // Size: 0x150
 
@@ -1240,7 +1240,7 @@ class UMeshSelectionTool : public UDynamicMeshBrushTool
     class UMeshUVChannelProperties* UVChannelProperties;                              // 0x02F0 (size: 0x8)
     class UPolygroupLayersProperties* PolygroupLayerProperties;                       // 0x02F8 (size: 0x8)
     class UMeshSelectionSet* Selection;                                               // 0x0300 (size: 0x8)
-    TArray<class AActor*> SpawnedActors;                                              // 0x0308 (size: 0x10)
+    TArray<AActor*> SpawnedActors;                                                    // 0x0308 (size: 0x10)
 
 }; // Size: 0x690
 
@@ -1347,8 +1347,8 @@ class UMirrorTool : public UMultiSelectionMeshEditingTool
 {
     class UMirrorToolProperties* Settings;                                            // 0x00C0 (size: 0x8)
     class UMirrorToolActionPropertySet* ToolActions;                                  // 0x00C8 (size: 0x8)
-    TArray<class UDynamicMeshReplacementChangeTarget*> MeshesToMirror;                // 0x00D0 (size: 0x10)
-    TArray<class UMeshOpPreviewWithBackgroundCompute*> Previews;                      // 0x00E0 (size: 0x10)
+    TArray<UDynamicMeshReplacementChangeTarget*> MeshesToMirror;                      // 0x00D0 (size: 0x10)
+    TArray<UMeshOpPreviewWithBackgroundCompute*> Previews;                            // 0x00E0 (size: 0x10)
     class UConstructionPlaneMechanic* PlaneMechanic;                                  // 0x0120 (size: 0x8)
 
 }; // Size: 0x168
@@ -1544,9 +1544,9 @@ class UPatternTool_TranslationSettings : public UInteractiveToolPropertySet
 class UPhysicsInspectorTool : public UMultiSelectionMeshEditingTool
 {
     class UCollisionGeometryVisualizationProperties* VizSettings;                     // 0x00B8 (size: 0x8)
-    TArray<class UPhysicsObjectToolPropertySet*> ObjectData;                          // 0x00C0 (size: 0x10)
+    TArray<UPhysicsObjectToolPropertySet*> ObjectData;                                // 0x00C0 (size: 0x10)
     class UMaterialInterface* LineMaterial;                                           // 0x00D0 (size: 0x8)
-    TArray<class UPreviewGeometry*> PreviewElements;                                  // 0x00D8 (size: 0x10)
+    TArray<UPreviewGeometry*> PreviewElements;                                        // 0x00D8 (size: 0x10)
 
 }; // Size: 0x100
 
@@ -1594,8 +1594,8 @@ class UPlaneCutTool : public UMultiSelectionMeshEditingTool
 {
     class UPlaneCutToolProperties* BasicProperties;                                   // 0x00B8 (size: 0x8)
     class UAcceptOutputProperties* AcceptProperties;                                  // 0x00C0 (size: 0x8)
-    TArray<class UMeshOpPreviewWithBackgroundCompute*> Previews;                      // 0x00C8 (size: 0x10)
-    TArray<class UDynamicMeshReplacementChangeTarget*> MeshesToCut;                   // 0x00D8 (size: 0x10)
+    TArray<UMeshOpPreviewWithBackgroundCompute*> Previews;                            // 0x00C8 (size: 0x10)
+    TArray<UDynamicMeshReplacementChangeTarget*> MeshesToCut;                         // 0x00D8 (size: 0x10)
     class UConstructionPlaneMechanic* PlaneMechanic;                                  // 0x00E8 (size: 0x8)
 
     void FlipPlane();
@@ -1699,8 +1699,8 @@ class URemoveOccludedTrianglesTool : public UMultiSelectionMeshEditingTool
     class URemoveOccludedTrianglesToolProperties* BasicProperties;                    // 0x00B8 (size: 0x8)
     class UPolygroupLayersProperties* PolygroupLayersProperties;                      // 0x00C0 (size: 0x8)
     class URemoveOccludedTrianglesAdvancedProperties* AdvancedProperties;             // 0x00C8 (size: 0x8)
-    TArray<class UMeshOpPreviewWithBackgroundCompute*> Previews;                      // 0x00D0 (size: 0x10)
-    TArray<class UPreviewMesh*> PreviewCopies;                                        // 0x00E0 (size: 0x10)
+    TArray<UMeshOpPreviewWithBackgroundCompute*> Previews;                            // 0x00D0 (size: 0x10)
+    TArray<UPreviewMesh*> PreviewCopies;                                              // 0x00E0 (size: 0x10)
 
 }; // Size: 0x1D0
 

@@ -17,478 +17,239 @@
 namespace SDK
 {
 
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_12_OnEditableTextBoxChangedEvent__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_12_OnEditableTextBoxChangedEvent__DelegateSignature(const class FText& Text)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_12_OnEditableTextBoxChangedEvent__DelegateSignature");
-
-	Params::WBP_Trading_Pal_C_BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_12_OnEditableTextBoxChangedEvent__DelegateSignature Parms{};
-
-	Parms.Text = std::move(Text);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_13_OnEditableTextBoxCommittedEvent__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// ETextCommit                             CommitMethod                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_13_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_13_OnEditableTextBoxCommittedEvent__DelegateSignature");
-
-	Params::WBP_Trading_Pal_C_BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_13_OnEditableTextBoxCommittedEvent__DelegateSignature Parms{};
-
-	Parms.Text = std::move(Text);
-	Parms.CommitMethod = CommitMethod;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_0_OnHoverSlot__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_0_OnHoverSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_0_OnHoverSlot__DelegateSignature");
-
-	Params::WBP_Trading_Pal_C_BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_0_OnHoverSlot__DelegateSignature Parms{};
-
-	Parms.Slot_0 = Slot_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_1_OnUnhoverSlot__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_1_OnUnhoverSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_1_OnUnhoverSlot__DelegateSignature");
-
-	Params::WBP_Trading_Pal_C_BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_1_OnUnhoverSlot__DelegateSignature Parms{};
-
-	Parms.Slot_0 = Slot_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_5_OnCreatedNewSlot__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_5_OnCreatedNewSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_5_OnCreatedNewSlot__DelegateSignature");
-
-	Params::WBP_Trading_Pal_C_BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_5_OnCreatedNewSlot__DelegateSignature Parms{};
-
-	Parms.Slot_0 = Slot_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_6_OnLeftClickedSlot__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// EPalItemSlotPressType                   PressType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_6_OnLeftClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_6_OnLeftClickedSlot__DelegateSignature");
-
-	Params::WBP_Trading_Pal_C_BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_6_OnLeftClickedSlot__DelegateSignature Parms{};
-
-	Parms.Slot_0 = Slot_0;
-	Parms.PressType = PressType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_CommonButton_Cancel_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_CommonButton_Cancel_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_CommonButton_Cancel_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_14_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_14_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_14_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_Menu_btn_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_Menu_btn_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_Menu_btn_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_PalCommonCharacterSlotButton_Edit_K2Node_ComponentBoundEvent_4_OnClickedButton__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// EPalItemSlotPressType                   PressType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_PalCommonCharacterSlotButton_Edit_K2Node_ComponentBoundEvent_4_OnClickedButton__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget, EPalItemSlotPressType PressType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_PalCommonCharacterSlotButton_Edit_K2Node_ComponentBoundEvent_4_OnClickedButton__DelegateSignature");
-
-	Params::WBP_Trading_Pal_C_BndEvt__WBP_Trading_Pal_WBP_PalCommonCharacterSlotButton_Edit_K2Node_ComponentBoundEvent_4_OnClickedButton__DelegateSignature Parms{};
-
-	Parms.Widget = Widget;
-	Parms.PressType = PressType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_PalCommonCharacterSlotButton_Edit_K2Node_ComponentBoundEvent_7_OnHoveredButton__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_PalCommonCharacterSlotButton_Edit_K2Node_ComponentBoundEvent_7_OnHoveredButton__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_PalCommonCharacterSlotButton_Edit_K2Node_ComponentBoundEvent_7_OnHoveredButton__DelegateSignature");
-
-	Params::WBP_Trading_Pal_C_BndEvt__WBP_Trading_Pal_WBP_PalCommonCharacterSlotButton_Edit_K2Node_ComponentBoundEvent_7_OnHoveredButton__DelegateSignature Parms{};
-
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_PalCommonCharacterSlotButton_Edit_K2Node_ComponentBoundEvent_8_OnUnhoveredButton__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_PalCommonCharacterSlotButton_Edit_K2Node_ComponentBoundEvent_8_OnUnhoveredButton__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_PalCommonCharacterSlotButton_Edit_K2Node_ComponentBoundEvent_8_OnUnhoveredButton__DelegateSignature");
-
-	Params::WBP_Trading_Pal_C_BndEvt__WBP_Trading_Pal_WBP_PalCommonCharacterSlotButton_Edit_K2Node_ComponentBoundEvent_8_OnUnhoveredButton__DelegateSignature Parms{};
-
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_PalInGameMenuItemSlotButton_Cost_K2Node_ComponentBoundEvent_9_OnClickedButton__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UWBP_PalItemSlotButtonBase_C*     Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// EPalItemSlotPressType                   PressType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_PalInGameMenuItemSlotButton_Cost_K2Node_ComponentBoundEvent_9_OnClickedButton__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Widget, EPalItemSlotPressType PressType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_PalInGameMenuItemSlotButton_Cost_K2Node_ComponentBoundEvent_9_OnClickedButton__DelegateSignature");
-
-	Params::WBP_Trading_Pal_C_BndEvt__WBP_Trading_Pal_WBP_PalInGameMenuItemSlotButton_Cost_K2Node_ComponentBoundEvent_9_OnClickedButton__DelegateSignature Parms{};
-
-	Parms.Widget = Widget;
-	Parms.PressType = PressType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_PalInvisibleButton_Lock_K2Node_ComponentBoundEvent_15_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_PalInvisibleButton_Lock_K2Node_ComponentBoundEvent_15_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_PalInvisibleButton_Lock_K2Node_ComponentBoundEvent_15_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_Trading_Pal_C_BndEvt__WBP_Trading_Pal_WBP_PalInvisibleButton_Lock_K2Node_ComponentBoundEvent_15_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_11_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_11_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_11_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_Trading_Pal_C_BndEvt__WBP_Trading_Pal_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_11_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_10_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_10_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_10_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_Trading_Pal_C_BndEvt__WBP_Trading_Pal_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_10_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.CustomNavigation_ToCancel
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-class UWidget* UWBP_Trading_Pal_C::CustomNavigation_ToCancel(EUINavigation Navigation_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "CustomNavigation_ToCancel");
-
-	Params::WBP_Trading_Pal_C_CustomNavigation_ToCancel Parms{};
-
-	Parms.Navigation_0 = Navigation_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Trading_Pal_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.Enable Pal Select
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    EnableBox                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    EnableParty                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Trading_Pal_C::Enable_Pal_Select(bool EnableBox, bool EnableParty)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "Enable Pal Select");
-
-	Params::WBP_Trading_Pal_C_Enable_Pal_Select Parms{};
-
-	Parms.EnableBox = EnableBox;
-	Parms.EnableParty = EnableParty;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.ExecuteUbergraph_WBP_Trading_Pal
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Trading_Pal_C::ExecuteUbergraph_WBP_Trading_Pal(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "ExecuteUbergraph_WBP_Trading_Pal");
-
-	Params::WBP_Trading_Pal_C_ExecuteUbergraph_WBP_Trading_Pal Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.On Favorite Shortcut
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.Validate Current Trade Info
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Trading_Pal_C::On_Favorite_Shortcut()
+void UWBP_Trading_Pal_C::Validate_Current_Trade_Info()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "On Favorite Shortcut");
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "Validate Current Trade Info");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.On Hover Pal Slot
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.Update Sell List
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Trading_Pal_C::Update_Sell_List()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "Update Sell List");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.ToSetSellPanel
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Trading_Pal_C::ToSetSellPanel()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "ToSetSellPanel");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.ToSellListPanel
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Trading_Pal_C::ToSellListPanel()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "ToSellListPanel");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.ToPrevFocus
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Trading_Pal_C::ToPrevFocus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "ToPrevFocus");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.ToNextFocus
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Trading_Pal_C::ToNextFocus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "ToNextFocus");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.Toggle Private Lock
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Trading_Pal_C::Toggle_Private_Lock()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "Toggle Private Lock");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.Switch Sell Panel
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ToSellList                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Trading_Pal_C::Switch_Sell_Panel(bool ToSellList)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "Switch Sell Panel");
+
+	Params::WBP_Trading_Pal_C_Switch_Sell_Panel Parms{};
+
+	Parms.ToSellList = ToSellList;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Trading_Pal_C::Setup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "Setup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.SetCostSettingNum
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPalIndividualCharacterSlot*      Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UWBP_PalCharacterSlotButtonBase_C*UISlot                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewNum                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Trading_Pal_C::On_Hover_Pal_Slot(class UPalIndividualCharacterSlot* Slot_0, class UWBP_PalCharacterSlotButtonBase_C* UISlot)
+void UWBP_Trading_Pal_C::SetCostSettingNum(int32 NewNum)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "On Hover Pal Slot");
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "SetCostSettingNum");
 
-	Params::WBP_Trading_Pal_C_On_Hover_Pal_Slot Parms{};
+	Params::WBP_Trading_Pal_C_SetCostSettingNum Parms{};
 
-	Parms.Slot_0 = Slot_0;
-	Parms.UISlot = UISlot;
+	Parms.NewNum = NewNum;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnCancelAction
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Trading_Pal_C::OnCancelAction()
+void UWBP_Trading_Pal_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnCancelAction");
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "PreConstruct");
+
+	Params::WBP_Trading_Pal_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnViewDetailInput
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Trading_Pal_C::OnViewDetailInput()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnViewDetailInput");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnClickedCostSelectSlot
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnUnhoverPartyPalSlot
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             StaticItemId                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Trading_Pal_C::OnClickedCostSelectSlot(class FName StaticItemId)
+void UWBP_Trading_Pal_C::OnUnhoverPartyPalSlot(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnClickedCostSelectSlot");
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnUnhoverPartyPalSlot");
 
-	Params::WBP_Trading_Pal_C_OnClickedCostSelectSlot Parms{};
+	Params::WBP_Trading_Pal_C_OnUnhoverPartyPalSlot Parms{};
 
-	Parms.StaticItemId = StaticItemId;
+	Parms.Slot_0 = Slot_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnClickedRemoveTradeButton
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnUnhoverPalSlot
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Trading_Pal_C::OnUnhoverPalSlot()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnUnhoverPalSlot");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnTradeUnhovered
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   TradeIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Trading_Pal_C::OnClickedRemoveTradeButton(int32 TradeIndex)
+void UWBP_Trading_Pal_C::OnTradeUnhovered(int32 TradeIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnClickedRemoveTradeButton");
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnTradeUnhovered");
 
-	Params::WBP_Trading_Pal_C_OnClickedRemoveTradeButton Parms{};
+	Params::WBP_Trading_Pal_C_OnTradeUnhovered Parms{};
 
 	Parms.TradeIndex = TradeIndex;
 
@@ -496,111 +257,41 @@ void UWBP_Trading_Pal_C::OnClickedRemoveTradeButton(int32 TradeIndex)
 }
 
 
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnClickSlot
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnTradeHovered
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// EPalItemSlotPressType                   PressType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   TradeIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Trading_Pal_C::OnClickSlot(class UWBP_PalCharacterSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType)
+void UWBP_Trading_Pal_C::OnTradeHovered(int32 TradeIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnClickSlot");
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnTradeHovered");
 
-	Params::WBP_Trading_Pal_C_OnClickSlot Parms{};
+	Params::WBP_Trading_Pal_C_OnTradeHovered Parms{};
 
-	Parms.Slot_0 = Slot_0;
-	Parms.PressType = PressType;
+	Parms.TradeIndex = TradeIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnHoverPartyPalSlot
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnTradeEdit
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Trading_Pal_C::OnHoverPartyPalSlot(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
+void UWBP_Trading_Pal_C::OnTradeEdit(int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnHoverPartyPalSlot");
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnTradeEdit");
 
-	Params::WBP_Trading_Pal_C_OnHoverPartyPalSlot Parms{};
+	Params::WBP_Trading_Pal_C_OnTradeEdit Parms{};
 
-	Parms.Slot_0 = Slot_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Trading_Pal_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnPrivateLockChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGuid&                     LockPlayerUId                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Trading_Pal_C::OnPrivateLockChanged(const struct FGuid& LockPlayerUId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnPrivateLockChanged");
-
-	Params::WBP_Trading_Pal_C_OnPrivateLockChanged Parms{};
-
-	Parms.LockPlayerUId = std::move(LockPlayerUId);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Trading_Pal_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnSlotUpdate
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Trading_Pal_C::OnSlotUpdate(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnSlotUpdate");
-
-	Params::WBP_Trading_Pal_C_OnSlotUpdate Parms{};
-
-	Parms.Slot_0 = Slot_0;
+	Parms.Index_0 = Index_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -628,93 +319,19 @@ void UWBP_Trading_Pal_C::OnStoreSlotUpdate(class UPalIndividualCharacterSlot* Sl
 }
 
 
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnTradeEdit
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Trading_Pal_C::OnTradeEdit(int32 Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnTradeEdit");
-
-	Params::WBP_Trading_Pal_C_OnTradeEdit Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnTradeHovered
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   TradeIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Trading_Pal_C::OnTradeHovered(int32 TradeIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnTradeHovered");
-
-	Params::WBP_Trading_Pal_C_OnTradeHovered Parms{};
-
-	Parms.TradeIndex = TradeIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnTradeUnhovered
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   TradeIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Trading_Pal_C::OnTradeUnhovered(int32 TradeIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnTradeUnhovered");
-
-	Params::WBP_Trading_Pal_C_OnTradeUnhovered Parms{};
-
-	Parms.TradeIndex = TradeIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnUnhoverPalSlot
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Trading_Pal_C::OnUnhoverPalSlot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnUnhoverPalSlot");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnUnhoverPartyPalSlot
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnSlotUpdate
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Trading_Pal_C::OnUnhoverPartyPalSlot(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
+void UWBP_Trading_Pal_C::OnSlotUpdate(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnUnhoverPartyPalSlot");
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnSlotUpdate");
 
-	Params::WBP_Trading_Pal_C_OnUnhoverPartyPalSlot Parms{};
+	Params::WBP_Trading_Pal_C_OnSlotUpdate Parms{};
 
 	Parms.Slot_0 = Slot_0;
 
@@ -722,189 +339,572 @@ void UWBP_Trading_Pal_C::OnUnhoverPartyPalSlot(class UWBP_PalCharacterSlotButton
 }
 
 
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnViewDetailInput
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Trading_Pal_C::OnViewDetailInput()
+void UWBP_Trading_Pal_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnViewDetailInput");
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.PreConstruct
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnPrivateLockChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGuid&                     LockPlayerUId                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Trading_Pal_C::OnPrivateLockChanged(const struct FGuid& LockPlayerUId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnPrivateLockChanged");
+
+	Params::WBP_Trading_Pal_C_OnPrivateLockChanged Parms{};
+
+	Parms.LockPlayerUId = std::move(LockPlayerUId);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Trading_Pal_C::PreConstruct(bool IsDesignTime)
+void UWBP_Trading_Pal_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "PreConstruct");
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnInitialized");
 
-	Params::WBP_Trading_Pal_C_PreConstruct Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.IsDesignTime = IsDesignTime;
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnHoverPartyPalSlot
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Trading_Pal_C::OnHoverPartyPalSlot(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnHoverPartyPalSlot");
+
+	Params::WBP_Trading_Pal_C_OnHoverPartyPalSlot Parms{};
+
+	Parms.Slot_0 = Slot_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.SetCostSettingNum
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnClickSlot
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   NewNum                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// EPalItemSlotPressType                   PressType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Trading_Pal_C::SetCostSettingNum(int32 NewNum)
+void UWBP_Trading_Pal_C::OnClickSlot(class UWBP_PalCharacterSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "SetCostSettingNum");
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnClickSlot");
 
-	Params::WBP_Trading_Pal_C_SetCostSettingNum Parms{};
+	Params::WBP_Trading_Pal_C_OnClickSlot Parms{};
 
-	Parms.NewNum = NewNum;
+	Parms.Slot_0 = Slot_0;
+	Parms.PressType = PressType;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Trading_Pal_C::Setup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "Setup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.Switch Sell Panel
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnClickedRemoveTradeButton
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    ToSellList                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   TradeIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Trading_Pal_C::Switch_Sell_Panel(bool ToSellList)
+void UWBP_Trading_Pal_C::OnClickedRemoveTradeButton(int32 TradeIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "Switch Sell Panel");
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnClickedRemoveTradeButton");
 
-	Params::WBP_Trading_Pal_C_Switch_Sell_Panel Parms{};
+	Params::WBP_Trading_Pal_C_OnClickedRemoveTradeButton Parms{};
 
-	Parms.ToSellList = ToSellList;
+	Parms.TradeIndex = TradeIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.Toggle Private Lock
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Trading_Pal_C::Toggle_Private_Lock()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "Toggle Private Lock");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.ToNextFocus
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Trading_Pal_C::ToNextFocus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "ToNextFocus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.ToPrevFocus
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Trading_Pal_C::ToPrevFocus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "ToPrevFocus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.ToSellListPanel
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Trading_Pal_C::ToSellListPanel()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "ToSellListPanel");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.ToSetSellPanel
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Trading_Pal_C::ToSetSellPanel()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "ToSetSellPanel");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.Update Sell List
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnClickedCostSelectSlot
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             StaticItemId                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Trading_Pal_C::Update_Sell_List()
+void UWBP_Trading_Pal_C::OnClickedCostSelectSlot(class FName StaticItemId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "Update Sell List");
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnClickedCostSelectSlot");
+
+	Params::WBP_Trading_Pal_C_OnClickedCostSelectSlot Parms{};
+
+	Parms.StaticItemId = StaticItemId;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.OnCancelAction
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Trading_Pal_C::OnCancelAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "OnCancelAction");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Trading_Pal.WBP_Trading_Pal_C.Validate Current Trade Info
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.On Hover Pal Slot
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalIndividualCharacterSlot*      Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UWBP_PalCharacterSlotButtonBase_C*UISlot                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Trading_Pal_C::Validate_Current_Trade_Info()
+void UWBP_Trading_Pal_C::On_Hover_Pal_Slot(class UPalIndividualCharacterSlot* Slot_0, class UWBP_PalCharacterSlotButtonBase_C* UISlot)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Pal_C", "Validate Current Trade Info");
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "On Hover Pal Slot");
+
+	Params::WBP_Trading_Pal_C_On_Hover_Pal_Slot Parms{};
+
+	Parms.Slot_0 = Slot_0;
+	Parms.UISlot = UISlot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.On Favorite Shortcut
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Trading_Pal_C::On_Favorite_Shortcut()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "On Favorite Shortcut");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.ExecuteUbergraph_WBP_Trading_Pal
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Trading_Pal_C::ExecuteUbergraph_WBP_Trading_Pal(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "ExecuteUbergraph_WBP_Trading_Pal");
+
+	Params::WBP_Trading_Pal_C_ExecuteUbergraph_WBP_Trading_Pal Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.Enable Pal Select
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    EnableBox                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    EnableParty                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Trading_Pal_C::Enable_Pal_Select(bool EnableBox, bool EnableParty)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "Enable Pal Select");
+
+	Params::WBP_Trading_Pal_C_Enable_Pal_Select Parms{};
+
+	Parms.EnableBox = EnableBox;
+	Parms.EnableParty = EnableParty;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Trading_Pal_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.CustomNavigation_ToCancel
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_Trading_Pal_C::CustomNavigation_ToCancel(EUINavigation Navigation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "CustomNavigation_ToCancel");
+
+	Params::WBP_Trading_Pal_C_CustomNavigation_ToCancel Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_10_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_10_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_10_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_Trading_Pal_C_BndEvt__WBP_Trading_Pal_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_10_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_11_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_11_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_11_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_Trading_Pal_C_BndEvt__WBP_Trading_Pal_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_11_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_PalInvisibleButton_Lock_K2Node_ComponentBoundEvent_15_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_PalInvisibleButton_Lock_K2Node_ComponentBoundEvent_15_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_PalInvisibleButton_Lock_K2Node_ComponentBoundEvent_15_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_Trading_Pal_C_BndEvt__WBP_Trading_Pal_WBP_PalInvisibleButton_Lock_K2Node_ComponentBoundEvent_15_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_PalInGameMenuItemSlotButton_Cost_K2Node_ComponentBoundEvent_9_OnClickedButton__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UWBP_PalItemSlotButtonBase_C*     Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// EPalItemSlotPressType                   PressType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_PalInGameMenuItemSlotButton_Cost_K2Node_ComponentBoundEvent_9_OnClickedButton__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Widget, EPalItemSlotPressType PressType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_PalInGameMenuItemSlotButton_Cost_K2Node_ComponentBoundEvent_9_OnClickedButton__DelegateSignature");
+
+	Params::WBP_Trading_Pal_C_BndEvt__WBP_Trading_Pal_WBP_PalInGameMenuItemSlotButton_Cost_K2Node_ComponentBoundEvent_9_OnClickedButton__DelegateSignature Parms{};
+
+	Parms.Widget = Widget;
+	Parms.PressType = PressType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_PalCommonCharacterSlotButton_Edit_K2Node_ComponentBoundEvent_8_OnUnhoveredButton__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UWBP_PalCharacterSlotButtonBase_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_PalCommonCharacterSlotButton_Edit_K2Node_ComponentBoundEvent_8_OnUnhoveredButton__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_PalCommonCharacterSlotButton_Edit_K2Node_ComponentBoundEvent_8_OnUnhoveredButton__DelegateSignature");
+
+	Params::WBP_Trading_Pal_C_BndEvt__WBP_Trading_Pal_WBP_PalCommonCharacterSlotButton_Edit_K2Node_ComponentBoundEvent_8_OnUnhoveredButton__DelegateSignature Parms{};
+
+	Parms.Widget = Widget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_PalCommonCharacterSlotButton_Edit_K2Node_ComponentBoundEvent_7_OnHoveredButton__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UWBP_PalCharacterSlotButtonBase_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_PalCommonCharacterSlotButton_Edit_K2Node_ComponentBoundEvent_7_OnHoveredButton__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_PalCommonCharacterSlotButton_Edit_K2Node_ComponentBoundEvent_7_OnHoveredButton__DelegateSignature");
+
+	Params::WBP_Trading_Pal_C_BndEvt__WBP_Trading_Pal_WBP_PalCommonCharacterSlotButton_Edit_K2Node_ComponentBoundEvent_7_OnHoveredButton__DelegateSignature Parms{};
+
+	Parms.Widget = Widget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_PalCommonCharacterSlotButton_Edit_K2Node_ComponentBoundEvent_4_OnClickedButton__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UWBP_PalCharacterSlotButtonBase_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// EPalItemSlotPressType                   PressType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_PalCommonCharacterSlotButton_Edit_K2Node_ComponentBoundEvent_4_OnClickedButton__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget, EPalItemSlotPressType PressType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_PalCommonCharacterSlotButton_Edit_K2Node_ComponentBoundEvent_4_OnClickedButton__DelegateSignature");
+
+	Params::WBP_Trading_Pal_C_BndEvt__WBP_Trading_Pal_WBP_PalCommonCharacterSlotButton_Edit_K2Node_ComponentBoundEvent_4_OnClickedButton__DelegateSignature Parms{};
+
+	Parms.Widget = Widget;
+	Parms.PressType = PressType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_Menu_btn_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_Menu_btn_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_Menu_btn_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_14_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_14_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_14_OnClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_CommonButton_Cancel_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_CommonButton_Cancel_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_CommonButton_Cancel_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_6_OnLeftClickedSlot__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// EPalItemSlotPressType                   PressType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_6_OnLeftClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_6_OnLeftClickedSlot__DelegateSignature");
+
+	Params::WBP_Trading_Pal_C_BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_6_OnLeftClickedSlot__DelegateSignature Parms{};
+
+	Parms.Slot_0 = Slot_0;
+	Parms.PressType = PressType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_5_OnCreatedNewSlot__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_5_OnCreatedNewSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_5_OnCreatedNewSlot__DelegateSignature");
+
+	Params::WBP_Trading_Pal_C_BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_5_OnCreatedNewSlot__DelegateSignature Parms{};
+
+	Parms.Slot_0 = Slot_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_1_OnUnhoverSlot__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_1_OnUnhoverSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_1_OnUnhoverSlot__DelegateSignature");
+
+	Params::WBP_Trading_Pal_C_BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_1_OnUnhoverSlot__DelegateSignature Parms{};
+
+	Parms.Slot_0 = Slot_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_0_OnHoverSlot__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_0_OnHoverSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_0_OnHoverSlot__DelegateSignature");
+
+	Params::WBP_Trading_Pal_C_BndEvt__WBP_Trading_Pal_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_0_OnHoverSlot__DelegateSignature Parms{};
+
+	Parms.Slot_0 = Slot_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_13_OnEditableTextBoxCommittedEvent__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// ETextCommit                             CommitMethod                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_13_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_13_OnEditableTextBoxCommittedEvent__DelegateSignature");
+
+	Params::WBP_Trading_Pal_C_BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_13_OnEditableTextBoxCommittedEvent__DelegateSignature Parms{};
+
+	Parms.Text = std::move(Text);
+	Parms.CommitMethod = CommitMethod;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Trading_Pal.WBP_Trading_Pal_C.BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_12_OnEditableTextBoxChangedEvent__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_Trading_Pal_C::BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_12_OnEditableTextBoxChangedEvent__DelegateSignature(const class FText& Text)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Pal_C", "BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_12_OnEditableTextBoxChangedEvent__DelegateSignature");
+
+	Params::WBP_Trading_Pal_C_BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_12_OnEditableTextBoxChangedEvent__DelegateSignature Parms{};
+
+	Parms.Text = std::move(Text);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

@@ -33,7 +33,7 @@ class UWBP_PalHUD_InGame_InputListener_C : public UPalUIInGameInputListener
     FTimerHandle TimerHandle_DisableWeaponChange;                                     // 0x0538 (size: 0x8)
     bool bIsDIsplayingWeaponList;                                                     // 0x0540 (size: 0x1)
     bool bLastEquipedLoadoutWeapon;                                                   // 0x0541 (size: 0x1)
-    TSoftObjectPtr<APalWeaponBase> SoftLastEquipedWeapon;                             // 0x0548 (size: 0x30)
+    TSoftObjectPtr<class APalWeaponBase> SoftLastEquipedWeapon;                       // 0x0548 (size: 0x30)
     FPalDataTableRowName_UIInputAction ThrowPalActionName;                            // 0x0578 (size: 0x8)
     FPalUIActionBindData ThworPalActionHandle;                                        // 0x0580 (size: 0x4)
     FPalUIActionBindData ThrowPalActionDUmmyPressConsumeHandle;                       // 0x0584 (size: 0x4)

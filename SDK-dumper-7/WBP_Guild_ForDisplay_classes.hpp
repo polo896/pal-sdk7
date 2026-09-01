@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "E_PalUIGuildMenuLogCategory_structs.hpp"
+#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
@@ -55,44 +55,44 @@ public:
 	struct FGuid                                  LastClickedPlayerUId;                              // 0x0630(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_0_OnClickedEditGuildNameButton__DelegateSignature();
-	void BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_2_OnCommiedGuildName__DelegateSignature(const class FString& NewName);
-	void BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_3_OnClickedGuildMemberButton__DelegateSignature(class UWBP_Guild_MemberList_C* Widget);
-	void BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_4_OnClickedLeaveButton__DelegateSignature();
-	void BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_5_OnClickedGuildSettingButton__DelegateSignature();
-	void BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_10_OnClickedChangeMember__DelegateSignature();
-	void BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_11_OnClickedChangeGuest__DelegateSignature();
-	void BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_1_OnClickedMenuCancel__DelegateSignature();
-	void BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_6_OnClickedChangeAdmin__DelegateSignature();
-	void BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_7_OnClickedBanPlayer__DelegateSignature();
-	void BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_9_OnClickedChangeSubMaster__DelegateSignature();
-	void BndEvt__WBP_Guild_ForDisplay_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void SetupGuildLogCategoryButton();
+	void Setup();
+	void OpenWaitingWindow();
+	void OpenExitGuildDialog();
+	void OpenBanPlayerDialog();
+	void Open_Change_Role_Dialog(EPalGuildRole Role);
+	void OnUpdateGroupId_WaitingExitGuild(const struct FGuid& NewGroupId);
+	void OnUpdatedMemberInfo(const struct FGuid& PlayerUId, const struct FPalUIGuildMemberDisplayInfo& PlayerInfo);
+	void OnUpdatedGuildName(const class FString& NewGuildName);
+	void OnTimer_TimeoutExitGuild();
+	void OnTimer_TimeoutChangeRole();
+	void OnTimer_TimeoutBanPlayer();
+	void OnTimer_CheckNewGroup_WaitingExitGuild();
+	void OnTimer_CheckChangeRole();
+	void OnTimer_CheckBanPlayer();
+	void OnRemovedMemberInfo(const struct FGuid& PlayerUId);
+	void OnClosed_GuildExitFailedDialog_Admin(bool bResult);
+	void OnClosed_GuildExitDialog(bool bResult);
+	void OnCloseBanPlayerDialog(bool bResult);
+	void On_Close_Change_Role_Dialog(bool bResult);
+	void ExecuteUbergraph_WBP_Guild_ForDisplay(int32 EntryPoint);
+	void Destruct();
+	void Construct();
+	void CloseWaitingWindow();
 	void CanClose(bool* CanCloseFlag);
 	void CloseMemberSettingList();
-	void CloseWaitingWindow();
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_Guild_ForDisplay(int32 EntryPoint);
-	void On_Close_Change_Role_Dialog(bool bResult);
-	void OnCloseBanPlayerDialog(bool bResult);
-	void OnClosed_GuildExitDialog(bool bResult);
-	void OnClosed_GuildExitFailedDialog_Admin(bool bResult);
-	void OnRemovedMemberInfo(const struct FGuid& PlayerUId);
-	void OnTimer_CheckBanPlayer();
-	void OnTimer_CheckChangeRole();
-	void OnTimer_CheckNewGroup_WaitingExitGuild();
-	void OnTimer_TimeoutBanPlayer();
-	void OnTimer_TimeoutChangeRole();
-	void OnTimer_TimeoutExitGuild();
-	void OnUpdatedGuildName(const class FString& NewGuildName);
-	void OnUpdatedMemberInfo(const struct FGuid& PlayerUId, const struct FPalUIGuildMemberDisplayInfo& PlayerInfo);
-	void OnUpdateGroupId_WaitingExitGuild(const struct FGuid& NewGroupId);
-	void Open_Change_Role_Dialog(EPalGuildRole Role);
-	void OpenBanPlayerDialog();
-	void OpenExitGuildDialog();
-	void OpenWaitingWindow();
-	void Setup();
-	void SetupGuildLogCategoryButton();
+	void BndEvt__WBP_Guild_ForDisplay_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_9_OnClickedChangeSubMaster__DelegateSignature();
+	void BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_7_OnClickedBanPlayer__DelegateSignature();
+	void BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_6_OnClickedChangeAdmin__DelegateSignature();
+	void BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_1_OnClickedMenuCancel__DelegateSignature();
+	void BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_11_OnClickedChangeGuest__DelegateSignature();
+	void BndEvt__WBP_Guild_ForDisplay_WBP_GuildMemberMenu_K2Node_ComponentBoundEvent_10_OnClickedChangeMember__DelegateSignature();
+	void BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_5_OnClickedGuildSettingButton__DelegateSignature();
+	void BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_4_OnClickedLeaveButton__DelegateSignature();
+	void BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_3_OnClickedGuildMemberButton__DelegateSignature(class UWBP_Guild_MemberList_C* Widget);
+	void BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_2_OnCommiedGuildName__DelegateSignature(const class FString& NewName);
+	void BndEvt__WBP_Guild_ForDisplay_WBP_Guild_K2Node_ComponentBoundEvent_0_OnClickedEditGuildNameButton__DelegateSignature();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

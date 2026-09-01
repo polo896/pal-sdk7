@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "SubStemStarter_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "SubStemStarter_structs.hpp"
 #include "MeshToSpawnAlong_structs.hpp"
 #include "SkelMeshToSpawnAlong_structs.hpp"
 #include "Engine_structs.hpp"
@@ -168,28 +168,28 @@ public:
 	struct FLinearColor                           NoRed;                                             // 0x0670(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void _Bridge__TraceTowardsDirection(const struct FVector& StartLocation, const struct FVector& relativeNormal, const struct FVector& Direction_0, bool* hitSomething, struct FVector* LastLocation, struct FVector* HitLocation, struct FVector* HitNormal, struct FVector* traceDirection);
-	void _SubStem__DoCheckSegment(const struct FVector& StartLocation, const struct FVector& relativeNormal, int32 currentSubLevel);
-	void AddMeshesAlongSpline(class USplineComponent* SplineComp);
-	void AddSkelMeshesAlongSpline(class USplineComponent* SplineComp);
-	void AddSplineMeshes(class USplineComponent* SplineComponent);
-	void AddSplinePoints();
-	void AddSubStem(const struct FVector& StartLoc, const struct FVector& StartNormal, int32 currentSubLevel);
-	void CheckIfContainsValueInRange(TArray<double>& Array, double Range__Min, double Range__Max, bool* Contains_);
-	void CheckIfContainsVectorInDistance(TArray<struct FVector>& Array, double InDistance, const struct FVector& Vector, bool* Contains_);
-	void ConstructionLogic();
-	void DoCheckSegment(const struct FVector& StartLocation, const struct FVector& relativeNormal);
-	void FindBridgeEdge(int32 maxSegmentChecks, const struct FVector& fromWhere, const struct FVector& StartNormal, const struct FVector& Direction_0, bool* Found, struct FVector* edgeLocation, struct FVector* edgeNormal);
-	void FindClosestValue(TArray<double>& inArray, double toValue, int32* closestValueIndex_);
-	void FindClosestVector(TArray<struct FVector>& inArray, const struct FVector& toVector, int32* closestValueIndex_);
-	void FindStartPoint(struct FVector* StartLoc, struct FVector* StartNormal);
-	void SearchForEdge(const struct FVector& searchStartLocation, const struct FVector& searchDirectionNormal, bool forSubstem, bool* FoundAnEdge_, struct FVector* foundEdgeLocation, struct FVector* foundEdgeNormal);
-	void SeekForBridge(const struct FVector& StartLoc, const struct FVector& StartNormal, bool* bridgeBuilt, TArray<struct FVector>* bridgePoints, struct FVector* newSurfaceNormal);
-	void SetMainDirectionVector();
-	void TraceDown(const struct FVector& StartLocation, const struct FVector& relativeNormal, bool forBridgeSeek, struct FVector* HitLocation, struct FVector* HitNormal, bool* hitSomething);
-	void TraceTowardsDirection(const struct FVector& StartLocation, const struct FVector& relativeNormal, bool forSubstem, struct FVector* HitLocation, struct FVector* HitNormal, struct FVector* LastLocation, struct FVector* traceDirection, bool* hitSomething, bool* targetReached);
-	void UserConstructionScript();
 	void WorldLocToSplineTimeApprox(const struct FVector& worldLoc, int32 Iterations, double distanceTolerance_, class USplineComponent* SplineComponent, double StartTime, double EndTime, double* bestTime);
+	void UserConstructionScript();
+	void TraceTowardsDirection(const struct FVector& StartLocation, const struct FVector& relativeNormal, bool forSubstem, struct FVector* HitLocation, struct FVector* HitNormal, struct FVector* LastLocation, struct FVector* traceDirection, bool* hitSomething, bool* targetReached);
+	void TraceDown(const struct FVector& StartLocation, const struct FVector& relativeNormal, bool forBridgeSeek, struct FVector* HitLocation, struct FVector* HitNormal, bool* hitSomething);
+	void SetMainDirectionVector();
+	void SeekForBridge(const struct FVector& StartLoc, const struct FVector& StartNormal, bool* bridgeBuilt, TArray<struct FVector>* bridgePoints, struct FVector* newSurfaceNormal);
+	void SearchForEdge(const struct FVector& searchStartLocation, const struct FVector& searchDirectionNormal, bool forSubstem, bool* FoundAnEdge_, struct FVector* foundEdgeLocation, struct FVector* foundEdgeNormal);
+	void FindStartPoint(struct FVector* StartLoc, struct FVector* StartNormal);
+	void FindClosestVector(TArray<struct FVector>& inArray, const struct FVector& toVector, int32* closestValueIndex_);
+	void FindClosestValue(TArray<double>& inArray, double toValue, int32* closestValueIndex_);
+	void FindBridgeEdge(int32 maxSegmentChecks, const struct FVector& fromWhere, const struct FVector& StartNormal, const struct FVector& Direction_0, bool* Found, struct FVector* edgeLocation, struct FVector* edgeNormal);
+	void DoCheckSegment(const struct FVector& StartLocation, const struct FVector& relativeNormal);
+	void ConstructionLogic();
+	void CheckIfContainsVectorInDistance(TArray<struct FVector>& Array, double InDistance, const struct FVector& Vector, bool* Contains_);
+	void CheckIfContainsValueInRange(TArray<double>& Array, double Range__Min, double Range__Max, bool* Contains_);
+	void AddSubStem(const struct FVector& StartLoc, const struct FVector& StartNormal, int32 currentSubLevel);
+	void AddSplinePoints();
+	void AddSplineMeshes(class USplineComponent* SplineComponent);
+	void AddSkelMeshesAlongSpline(class USplineComponent* SplineComp);
+	void AddMeshesAlongSpline(class USplineComponent* SplineComp);
+	void _SubStem__DoCheckSegment(const struct FVector& StartLocation, const struct FVector& relativeNormal, int32 currentSubLevel);
+	void _Bridge__TraceTowardsDirection(const struct FVector& StartLocation, const struct FVector& relativeNormal, const struct FVector& Direction_0, bool* hitSomething, struct FVector* LastLocation, struct FVector* HitLocation, struct FVector* HitNormal, struct FVector* traceDirection);
 
 public:
 	static class UClass* StaticClass()

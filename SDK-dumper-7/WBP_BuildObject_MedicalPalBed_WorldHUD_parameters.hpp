@@ -17,66 +17,29 @@
 namespace SDK::Params
 {
 
-// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.ExecuteUbergraph_WBP_BuildObject_MedicalPalBed_WorldHUD
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_BuildObject_MedicalPalBed_WorldHUD_C_ExecuteUbergraph_WBP_BuildObject_MedicalPalBed_WorldHUD final
+// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.TickForDisplay
+// 0x0006 (0x0006 - 0x0000)
+struct WBP_BuildObject_MedicalPalBed_WorldHUD_C_TickForDisplay final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0008(0x0040)(IsPlainOldData, NoDestructor)
-	float                                         K2Node_Event_InDeltaTime;                          // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bShouldDisplay;                                    // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ShouldDisplay_Return_Value;               // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BuildObject_MedicalPalBed_WorldHUD_C_ExecuteUbergraph_WBP_BuildObject_MedicalPalBed_WorldHUD;
+DUMPER7_ASSERTS_WBP_BuildObject_MedicalPalBed_WorldHUD_C_TickForDisplay;
 
-// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.ReflectProgressRate
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_BuildObject_MedicalPalBed_WorldHUD_C_ReflectProgressRate final
+// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.Tick
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_BuildObject_MedicalPalBed_WorldHUD_C_Tick final
 {
 public:
-	class UPalUIMapObjectMedicalPalBedModel*      CallFunc_GetUIModel_UIModel;                       // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetResurrectProgressRate_ReturnValue;     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_SetProgressRate_Rate_ImplicitCast;        // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BuildObject_MedicalPalBed_WorldHUD_C_ReflectProgressRate;
-
-// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.ReflectRemainingTime
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_BuildObject_MedicalPalBed_WorldHUD_C_ReflectRemainingTime final
-{
-public:
-	class UPalUIMapObjectMedicalPalBedModel*      CallFunc_GetUIModel_UIModel;                       // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetRemainingResurrectTime_ReturnValue;    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_SetRemainingTime_RemainingSeconds_ImplicitCast; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BuildObject_MedicalPalBed_WorldHUD_C_ReflectRemainingTime;
-
-// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.ReflectResurrectAbility
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_BuildObject_MedicalPalBed_WorldHUD_C_ReflectResurrectAbility final
-{
-public:
-	class UPalUIMapObjectMedicalPalBedModel*      CallFunc_GetUIModel_UIModel;                       // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetResurrectSpeedMultiplier_ReturnValue;  // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_SetResurrectAbility_ResurrectSpeedMultiplier_ImplicitCast; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BuildObject_MedicalPalBed_WorldHUD_C_ReflectResurrectAbility;
-
-// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.Setup
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_BuildObject_MedicalPalBed_WorldHUD_C_Setup final
-{
-public:
-	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalUIMapObjectStatusIndicatorParameter_MedicalPalBed* K2Node_DynamicCast_AsPal_UIMap_Object_Status_Indicator_Parameter_Medical_Pal_Bed; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalUIMapObjectMedicalPalBedModel*      CallFunc_GetUIModel_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BuildObject_MedicalPalBed_WorldHUD_C_Setup;
+DUMPER7_ASSERTS_WBP_BuildObject_MedicalPalBed_WorldHUD_C_Tick;
 
 // Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.ShouldDisplay
 // 0x0020 (0x0020 - 0x0000)
@@ -93,29 +56,66 @@ public:
 };
 DUMPER7_ASSERTS_WBP_BuildObject_MedicalPalBed_WorldHUD_C_ShouldDisplay;
 
-// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.Tick
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_BuildObject_MedicalPalBed_WorldHUD_C_Tick final
+// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.Setup
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_BuildObject_MedicalPalBed_WorldHUD_C_Setup final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalUIMapObjectStatusIndicatorParameter_MedicalPalBed* K2Node_DynamicCast_AsPal_UIMap_Object_Status_Indicator_Parameter_Medical_Pal_Bed; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalUIMapObjectMedicalPalBedModel*      CallFunc_GetUIModel_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BuildObject_MedicalPalBed_WorldHUD_C_Tick;
+DUMPER7_ASSERTS_WBP_BuildObject_MedicalPalBed_WorldHUD_C_Setup;
 
-// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.TickForDisplay
-// 0x0006 (0x0006 - 0x0000)
-struct WBP_BuildObject_MedicalPalBed_WorldHUD_C_TickForDisplay final
+// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.ReflectResurrectAbility
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_BuildObject_MedicalPalBed_WorldHUD_C_ReflectResurrectAbility final
 {
 public:
-	bool                                          bShouldDisplay;                                    // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ShouldDisplay_Return_Value;               // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalUIMapObjectMedicalPalBedModel*      CallFunc_GetUIModel_UIModel;                       // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetResurrectSpeedMultiplier_ReturnValue;  // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_SetResurrectAbility_ResurrectSpeedMultiplier_ImplicitCast; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BuildObject_MedicalPalBed_WorldHUD_C_TickForDisplay;
+DUMPER7_ASSERTS_WBP_BuildObject_MedicalPalBed_WorldHUD_C_ReflectResurrectAbility;
+
+// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.ReflectRemainingTime
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_BuildObject_MedicalPalBed_WorldHUD_C_ReflectRemainingTime final
+{
+public:
+	class UPalUIMapObjectMedicalPalBedModel*      CallFunc_GetUIModel_UIModel;                       // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetRemainingResurrectTime_ReturnValue;    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_SetRemainingTime_RemainingSeconds_ImplicitCast; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BuildObject_MedicalPalBed_WorldHUD_C_ReflectRemainingTime;
+
+// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.ReflectProgressRate
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_BuildObject_MedicalPalBed_WorldHUD_C_ReflectProgressRate final
+{
+public:
+	class UPalUIMapObjectMedicalPalBedModel*      CallFunc_GetUIModel_UIModel;                       // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetResurrectProgressRate_ReturnValue;     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_SetProgressRate_Rate_ImplicitCast;        // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BuildObject_MedicalPalBed_WorldHUD_C_ReflectProgressRate;
+
+// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.ExecuteUbergraph_WBP_BuildObject_MedicalPalBed_WorldHUD
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_BuildObject_MedicalPalBed_WorldHUD_C_ExecuteUbergraph_WBP_BuildObject_MedicalPalBed_WorldHUD final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0008(0x0040)(IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_InDeltaTime;                          // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BuildObject_MedicalPalBed_WorldHUD_C_ExecuteUbergraph_WBP_BuildObject_MedicalPalBed_WorldHUD;
 
 // Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.GetUIModel
 // 0x0008 (0x0008 - 0x0000)

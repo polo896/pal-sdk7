@@ -18,7 +18,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_NPC_DarkTrader.BP_NPC_DarkTrader_C
 // 0x0010 (0x0C90 - 0x0C80)
-class ABP_NPC_DarkTrader_C : public ABP_NPC_FatHumanDataSet_C
+class ABP_NPC_DarkTrader_C final : public ABP_NPC_FatHumanDataSet_C
 {
 public:
 	class UBP_PalShopVenderDataComponent_C*       BP_PalShopVenderDataComponent;                     // 0x0C80(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)

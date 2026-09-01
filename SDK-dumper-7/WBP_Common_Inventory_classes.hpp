@@ -36,20 +36,20 @@ public:
 	TMulticastInlineDelegate<void(class UWBP_PalItemSlotButtonBase_C* Slot, EPalItemSlotPressType PressType)> OnRightClickSlot; // 0x02E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__WBP_Common_Inventory_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_1_OnRightClickedSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
-	void BndEvt__WBP_Common_Inventory_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_8_OnLeftClickedSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
-	void BndEvt__WBP_IngameMenu_Chest_WBP_PalInvisibleButton_Sort_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_IngameMenu_Chest_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_4_OnHoveredSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
-	void BndEvt__WBP_IngameMenu_Chest_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_5_OnEndHoveredSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
-	void Destruct();
-	void ExecuteUbergraph_WBP_Common_Inventory(int32 EntryPoint);
-	void FilteringInventoryByInventoryType(TArray<EPalPlayerInventoryType>& inventoryType);
-	void FilteringInventoryByInventoryTypeA(TArray<EPalItemTypeA>& displayTypesA);
-	void FilteringInventoryByInventoryTypeB(TArray<EPalItemTypeB>& displayTypesB);
-	void GetInventoryLastHoveredFocusTarget(class UWidget** Widget);
-	void GetInventoryTopFocustTarget(class UWidget** FocusTarget);
-	void OnLeftClickedTargetContainerSlot(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
 	void Setup(class UBP_PalInventoryModel_C* Model_0);
+	void OnLeftClickedTargetContainerSlot(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
+	void GetInventoryTopFocustTarget(class UWidget** FocusTarget);
+	void GetInventoryLastHoveredFocusTarget(class UWidget** Widget);
+	void FilteringInventoryByInventoryTypeB(TArray<EPalItemTypeB>& displayTypesB);
+	void FilteringInventoryByInventoryTypeA(TArray<EPalItemTypeA>& displayTypesA);
+	void FilteringInventoryByInventoryType(TArray<EPalPlayerInventoryType>& inventoryType);
+	void ExecuteUbergraph_WBP_Common_Inventory(int32 EntryPoint);
+	void Destruct();
+	void BndEvt__WBP_IngameMenu_Chest_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_5_OnEndHoveredSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
+	void BndEvt__WBP_IngameMenu_Chest_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_4_OnHoveredSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
+	void BndEvt__WBP_IngameMenu_Chest_WBP_PalInvisibleButton_Sort_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Common_Inventory_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_8_OnLeftClickedSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
+	void BndEvt__WBP_Common_Inventory_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_1_OnRightClickedSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
 
 public:
 	static class UClass* StaticClass()

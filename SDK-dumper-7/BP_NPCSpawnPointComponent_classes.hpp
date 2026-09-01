@@ -32,10 +32,10 @@ public:
 	struct FPalDataTableRowName_PalMonsterData    OtomoName;                                         // 0x0620(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_NPCSpawnPointComponent(int32 EntryPoint);
-	void GetOneSpawnInfo(struct FF_NPCOnePointSpawnInfo* Info);
-	void ReceiveBeginPlay();
 	void Setup_Walk_Point_Ref();
+	void ReceiveBeginPlay();
+	void GetOneSpawnInfo(struct FF_NPCOnePointSpawnInfo* Info);
+	void ExecuteUbergraph_BP_NPCSpawnPointComponent(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

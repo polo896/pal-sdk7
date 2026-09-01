@@ -14,63 +14,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_Ingame_QuestBoard.WBP_Ingame_QuestBoard_C.CompleteQuest
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Ingame_QuestBoard_C_CompleteQuest final
-{
-public:
-	class FName                                   QuestId;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_IngameQuestBoardListSet_C*         CallFunc_Map_Find_Value;                           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Ingame_QuestBoard_C_CompleteQuest;
-
-// Function WBP_Ingame_QuestBoard.WBP_Ingame_QuestBoard_C.GetNowDisplayQuestWidgetNum
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Ingame_QuestBoard_C_GetNowDisplayQuestWidgetNum final
-{
-public:
-	int32                                         Num;                                               // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Map_Length_ReturnValue;                   // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Ingame_QuestBoard_C_GetNowDisplayQuestWidgetNum;
-
-// Function WBP_Ingame_QuestBoard.WBP_Ingame_QuestBoard_C.OnClosedQuestWidget
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Ingame_QuestBoard_C_OnClosedQuestWidget final
-{
-public:
-	class UWBP_IngameQuestBoardListSet_C*         Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetQuestId_QuestId;                       // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Remove_ReturnValue;                   // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Ingame_QuestBoard_C_OnClosedQuestWidget;
-
-// Function WBP_Ingame_QuestBoard.WBP_Ingame_QuestBoard_C.UpdateQuestDetail
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Ingame_QuestBoard_C_UpdateQuestDetail final
-{
-public:
-	class FName                                   QuestId;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_IngameQuestBoardListSet_C*         CallFunc_Map_Find_Value;                           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Ingame_QuestBoard_C_UpdateQuestDetail;
-
-// Function WBP_Ingame_QuestBoard.WBP_Ingame_QuestBoard_C.UpdateQuestName
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_Ingame_QuestBoard_C_UpdateQuestName final
-{
-public:
-	class FName                                   QuestId;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalQuestManager*                       CallFunc_GetLocalQuestManager_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalQuestData*                          CallFunc_GetQuestData_ReturnValue;                 // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetQuestNameText_OutText;                 // 0x0020(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_Ingame_QuestBoard_C_UpdateQuestName;
-
 // Function WBP_Ingame_QuestBoard.WBP_Ingame_QuestBoard_C.UpdateTrackingQuestDetail
 // 0x00C0 (0x00C0 - 0x0000)
 struct WBP_Ingame_QuestBoard_C_UpdateTrackingQuestDetail final
@@ -112,6 +55,63 @@ public:
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Ingame_QuestBoard_C_UpdateTrackingQuestDetail;
+
+// Function WBP_Ingame_QuestBoard.WBP_Ingame_QuestBoard_C.UpdateQuestName
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_Ingame_QuestBoard_C_UpdateQuestName final
+{
+public:
+	class FName                                   QuestId;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalQuestManager*                       CallFunc_GetLocalQuestManager_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalQuestData*                          CallFunc_GetQuestData_ReturnValue;                 // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetQuestNameText_OutText;                 // 0x0020(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_Ingame_QuestBoard_C_UpdateQuestName;
+
+// Function WBP_Ingame_QuestBoard.WBP_Ingame_QuestBoard_C.UpdateQuestDetail
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Ingame_QuestBoard_C_UpdateQuestDetail final
+{
+public:
+	class FName                                   QuestId;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_IngameQuestBoardListSet_C*         CallFunc_Map_Find_Value;                           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Ingame_QuestBoard_C_UpdateQuestDetail;
+
+// Function WBP_Ingame_QuestBoard.WBP_Ingame_QuestBoard_C.OnClosedQuestWidget
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Ingame_QuestBoard_C_OnClosedQuestWidget final
+{
+public:
+	class UWBP_IngameQuestBoardListSet_C*         Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetQuestId_QuestId;                       // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Remove_ReturnValue;                   // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Ingame_QuestBoard_C_OnClosedQuestWidget;
+
+// Function WBP_Ingame_QuestBoard.WBP_Ingame_QuestBoard_C.GetNowDisplayQuestWidgetNum
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Ingame_QuestBoard_C_GetNowDisplayQuestWidgetNum final
+{
+public:
+	int32                                         Num;                                               // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Map_Length_ReturnValue;                   // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Ingame_QuestBoard_C_GetNowDisplayQuestWidgetNum;
+
+// Function WBP_Ingame_QuestBoard.WBP_Ingame_QuestBoard_C.CompleteQuest
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Ingame_QuestBoard_C_CompleteQuest final
+{
+public:
+	class FName                                   QuestId;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_IngameQuestBoardListSet_C*         CallFunc_Map_Find_Value;                           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Ingame_QuestBoard_C_CompleteQuest;
 
 }
 

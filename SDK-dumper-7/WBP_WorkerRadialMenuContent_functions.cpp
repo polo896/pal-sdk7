@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_WorkerRadialMenuContent.WBP_WorkerRadialMenuContent_C.SetText
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_WorkerRadialMenuContent_C::SetText(const class FText& Text)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorkerRadialMenuContent_C", "SetText");
-
-	Params::WBP_WorkerRadialMenuContent_C_SetText Parms{};
-
-	Parms.Text = std::move(Text);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_WorkerRadialMenuContent.WBP_WorkerRadialMenuContent_C.SetTextColor
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -52,6 +32,26 @@ void UWBP_WorkerRadialMenuContent_C::SetTextColor(const struct FSlateColor& NewC
 	Params::WBP_WorkerRadialMenuContent_C_SetTextColor Parms{};
 
 	Parms.NewColor = std::move(NewColor);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WorkerRadialMenuContent.WBP_WorkerRadialMenuContent_C.SetText
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_WorkerRadialMenuContent_C::SetText(const class FText& Text)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorkerRadialMenuContent_C", "SetText");
+
+	Params::WBP_WorkerRadialMenuContent_C_SetText Parms{};
+
+	Parms.Text = std::move(Text);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -6,7 +6,7 @@ class UBP_PalGameInstance_C : public UPalGameInstance
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x09B8 (size: 0x8)
     class ULoadingProcessTask* CurrentLoadingTask;                                    // 0x09C0 (size: 0x8)
     class UPalHUDDispatchParameter_FadeWidget* LoadingFadeParameter;                  // 0x09C8 (size: 0x8)
-    TSoftObjectPtr<UWorld> LoadWorld;                                                 // 0x09D0 (size: 0x30)
+    TSoftObjectPtr<class UWorld> LoadWorld;                                           // 0x09D0 (size: 0x30)
     bool ShowedCharaMake;                                                             // 0x0A00 (size: 0x1)
     TSoftClassPtr<APalCutsceneActor> OpeningActor;                                    // 0x0A08 (size: 0x30)
     FName CutsceneName;                                                               // 0x0A38 (size: 0x8)
@@ -23,7 +23,7 @@ class UBP_PalGameInstance_C : public UPalGameInstance
     void SetActivePlayerActor(bool Active);
     void BP_PalGameInstance_AutoGenFunc(bool bResult);
     void Completed_32AFD11A49E65B7255FF4BA375D305CC(bool IsSuccess, FString ErrorStr);
-    void LoadLevel(const TSoftObjectPtr<UWorld> Level, const FString& Options, bool AutoClose);
+    void LoadLevel(const TSoftObjectPtr<class UWorld> Level, const FString& Options, bool AutoClose);
     void StartLoading(const class UWBP_LoadingScreen_Transition_C*& CurrentLoadingWidget);
     void LoadingFinished();
     void ShowCharacterMakeScreen();
@@ -36,7 +36,7 @@ class UBP_PalGameInstance_C : public UPalGameInstance
     void SetPlayerSelectMap(bool IsSelecting);
     void OnCloseMap(class UPalHUDDispatchParameterBase* Param);
     void OnCompleteSetup();
-    void OverrideLoadMap(const TSoftObjectPtr<UWorld>& World);
+    void OverrideLoadMap(const TSoftObjectPtr<class UWorld>& World);
     void OnPSNChatDisabled(bool bResult);
     void PollingCheckLoadingScreen();
     void ExecuteUbergraph_BP_PalGameInstance(int32 EntryPoint);

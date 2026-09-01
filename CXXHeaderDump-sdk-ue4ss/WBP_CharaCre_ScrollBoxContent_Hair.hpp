@@ -6,7 +6,7 @@ class UWBP_CharaCre_ScrollBoxContent_Hair_C : public UWBP_CharaCre_ScrollBoxCont
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0470 (size: 0x8)
     class UWBP_CharaCre_ColorSelect_sq_C* WBP_CharaCre_ColorSelect_sq_Hair;           // 0x0478 (size: 0x8)
     class UWBP_CharaCre_PartsSelectPanel_C* WBP_MeshSelectPanel_Hair;                 // 0x0480 (size: 0x8)
-    TMap<class FName, class FPalCharacterCreationMeshPresetDataRow> HairMeshMap;      // 0x0488 (size: 0x50)
+    TMap<FName, FPalCharacterCreationMeshPresetDataRow> HairMeshMap;                  // 0x0488 (size: 0x50)
     TArray<FLinearColor> HairColorPreset;                                             // 0x04D8 (size: 0x10)
     FWBP_CharaCre_ScrollBoxContent_Hair_COnSelectedHairColor OnSelectedHairColor;     // 0x04E8 (size: 0x10)
     void OnSelectedHairColor(FLinearColor HSV);

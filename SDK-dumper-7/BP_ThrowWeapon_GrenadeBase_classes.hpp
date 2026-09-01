@@ -25,15 +25,15 @@ public:
 	class FName                                   ItemName;                                          // 0x06B0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ComsumeItem();
-	void GetBulletShootRotation(struct FRotator* BulletRotate);
-	class FName GetEquipSocketName();
-	void GetShootPitch(double* Pitch);
-	void GetThrowObjectClass(class UClass** ThrowObject);
 	void On_Throw();
+	void GetThrowObjectClass(class UClass** ThrowObject);
+	void GetShootPitch(double* Pitch);
+	class FName GetEquipSocketName();
+	void GetBulletShootRotation(struct FRotator* BulletRotate);
+	void ComsumeItem();
 
-	int32 GetRemainBulletCount() const;
 	bool IsEnableAutoAim() const;
+	int32 GetRemainBulletCount() const;
 
 public:
 	static class UClass* StaticClass()

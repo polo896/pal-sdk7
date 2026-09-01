@@ -15,9 +15,9 @@ class UWBP_IngameMenu_Monitoring_C : public UPalUserWidgetOverlayUI
     class UWBP_IngameMenu_Monitoring_WorkInfo_C* WBP_IngameMenu_Monitoring_WorkInfo_3; // 0x04C0 (size: 0x8)
     class UWBP_Menu_btn_C* WBP_Menu_btn;                                              // 0x04C8 (size: 0x8)
     EPalBaseCampPassiveEffectWorkHardType WorkHardLevel;                              // 0x04D0 (size: 0x1)
-    TMap<class EPalBaseCampPassiveEffectWorkHardType, class UWBP_IngameMenu_Monitoring_WorkButton_C*> WorkHardButtonMap; // 0x04D8 (size: 0x50)
+    TMap<EPalBaseCampPassiveEffectWorkHardType, UWBP_IngameMenu_Monitoring_WorkButton_C*> WorkHardButtonMap; // 0x04D8 (size: 0x50)
     class UPalMapObjectBaseCampPassiveWorkHardModel* PalWorkHardModel;                // 0x0528 (size: 0x8)
-    TArray<class UWBP_IngameMenu_Monitoring_WorkInfo_C*> WorkInfos;                   // 0x0530 (size: 0x10)
+    TArray<UWBP_IngameMenu_Monitoring_WorkInfo_C*> WorkInfos;                         // 0x0530 (size: 0x10)
     bool IsHovering;                                                                  // 0x0540 (size: 0x1)
     TArray<FDataTableRowHandle> WorkHardMsgIds;                                       // 0x0548 (size: 0x10)
 

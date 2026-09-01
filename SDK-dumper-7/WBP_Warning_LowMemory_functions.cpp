@@ -17,17 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_Warning_LowMemory.WBP_Warning_LowMemory_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Warning_LowMemory.WBP_Warning_LowMemory_C.OnMemoryWarning
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsOver                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Warning_LowMemory_C::Construct()
+void UWBP_Warning_LowMemory_C::OnMemoryWarning(bool bIsOver)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Warning_LowMemory_C", "Construct");
+		Func = Class->GetFunction("WBP_Warning_LowMemory_C", "OnMemoryWarning");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Warning_LowMemory_C_OnMemoryWarning Parms{};
+
+	Parms.bIsOver = bIsOver;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -51,23 +57,17 @@ void UWBP_Warning_LowMemory_C::ExecuteUbergraph_WBP_Warning_LowMemory(int32 Entr
 }
 
 
-// Function WBP_Warning_LowMemory.WBP_Warning_LowMemory_C.OnMemoryWarning
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsOver                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Warning_LowMemory.WBP_Warning_LowMemory_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Warning_LowMemory_C::OnMemoryWarning(bool bIsOver)
+void UWBP_Warning_LowMemory_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Warning_LowMemory_C", "OnMemoryWarning");
+		Func = Class->GetFunction("WBP_Warning_LowMemory_C", "Construct");
 
-	Params::WBP_Warning_LowMemory_C_OnMemoryWarning Parms{};
-
-	Parms.bIsOver = bIsOver;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

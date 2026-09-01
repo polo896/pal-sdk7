@@ -17,61 +17,67 @@
 namespace SDK
 {
 
-// Function WBP_ResearchMenu.WBP_ResearchMenu_C.BndEvt__WBP_ResearchMenu_WBP_CommonButton_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_ResearchMenu.WBP_ResearchMenu_C.UpdateCurrentResearchProgress
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_ResearchMenu_C::BndEvt__WBP_ResearchMenu_WBP_CommonButton_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature()
+void UWBP_ResearchMenu_C::UpdateCurrentResearchProgress()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResearchMenu_C", "BndEvt__WBP_ResearchMenu_WBP_CommonButton_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_ResearchMenu_C", "UpdateCurrentResearchProgress");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ResearchMenu.WBP_ResearchMenu_C.BndEvt__WBP_ResearchMenu_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_ResearchMenu.WBP_ResearchMenu_C.Switch Right Panel
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ToDetail                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ResearchMenu_C::BndEvt__WBP_ResearchMenu_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
+void UWBP_ResearchMenu_C::Switch_Right_Panel(bool ToDetail)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResearchMenu_C", "BndEvt__WBP_ResearchMenu_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_ResearchMenu_C", "Switch Right Panel");
+
+	Params::WBP_ResearchMenu_C_Switch_Right_Panel Parms{};
+
+	Parms.ToDetail = ToDetail;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ResearchMenu.WBP_ResearchMenu_C.ShowAllBuff
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ResearchMenu_C::ShowAllBuff()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResearchMenu_C", "ShowAllBuff");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ResearchMenu.WBP_ResearchMenu_C.BndEvt__WBP_ResearchMenu_WBP_Research_AllBuff_K2Node_ComponentBoundEvent_6_OnAllBuffPanelClose__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_ResearchMenu_C::BndEvt__WBP_ResearchMenu_WBP_Research_AllBuff_K2Node_ComponentBoundEvent_6_OnAllBuffPanelClose__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResearchMenu_C", "BndEvt__WBP_ResearchMenu_WBP_Research_AllBuff_K2Node_ComponentBoundEvent_6_OnAllBuffPanelClose__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ResearchMenu.WBP_ResearchMenu_C.BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_1_OnResearchSelectDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_ResearchMenu.WBP_ResearchMenu_C.SetupResearchDetail
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             ResearchId                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ResearchMenu_C::BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_1_OnResearchSelectDelegate__DelegateSignature(class FName ResearchId)
+void UWBP_ResearchMenu_C::SetupResearchDetail(class FName ResearchId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResearchMenu_C", "BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_1_OnResearchSelectDelegate__DelegateSignature");
+		Func = Class->GetFunction("WBP_ResearchMenu_C", "SetupResearchDetail");
 
-	Params::WBP_ResearchMenu_C_BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_1_OnResearchSelectDelegate__DelegateSignature Parms{};
+	Params::WBP_ResearchMenu_C_SetupResearchDetail Parms{};
 
 	Parms.ResearchId = ResearchId;
 
@@ -79,117 +85,159 @@ void UWBP_ResearchMenu_C::BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_Comp
 }
 
 
-// Function WBP_ResearchMenu.WBP_ResearchMenu_C.BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_2_OnResearchHoveredDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_ResearchMenu.WBP_ResearchMenu_C.Setup Research Overview
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             ResearchId                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalWorkSuitability                     ResearchType                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ResearchMenu_C::BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_2_OnResearchHoveredDelegate__DelegateSignature(class FName ResearchId)
+void UWBP_ResearchMenu_C::Setup_Research_Overview(EPalWorkSuitability ResearchType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResearchMenu_C", "BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_2_OnResearchHoveredDelegate__DelegateSignature");
+		Func = Class->GetFunction("WBP_ResearchMenu_C", "Setup Research Overview");
 
-	Params::WBP_ResearchMenu_C_BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_2_OnResearchHoveredDelegate__DelegateSignature Parms{};
+	Params::WBP_ResearchMenu_C_Setup_Research_Overview Parms{};
 
-	Parms.ResearchId = ResearchId;
+	Parms.ResearchType = ResearchType;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ResearchMenu.WBP_ResearchMenu_C.BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_3_OnResearchUnhoveredDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_ResearchMenu.WBP_ResearchMenu_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_ResearchMenu_C::BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_3_OnResearchUnhoveredDelegate__DelegateSignature()
+void UWBP_ResearchMenu_C::Setup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResearchMenu_C", "BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_3_OnResearchUnhoveredDelegate__DelegateSignature");
+		Func = Class->GetFunction("WBP_ResearchMenu_C", "Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ResearchMenu.WBP_ResearchMenu_C.BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_5_OnTreeNodeCreate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UWBP_Research_TreeIcon_C*         NewNode                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function WBP_ResearchMenu.WBP_ResearchMenu_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_ResearchMenu_C::BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_5_OnTreeNodeCreate__DelegateSignature(class UWBP_Research_TreeIcon_C* NewNode)
+void UWBP_ResearchMenu_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResearchMenu_C", "BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_5_OnTreeNodeCreate__DelegateSignature");
-
-	Params::WBP_ResearchMenu_C_BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_5_OnTreeNodeCreate__DelegateSignature Parms{};
-
-	Parms.NewNode = NewNode;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ResearchMenu.WBP_ResearchMenu_C.Check Research Require Satisfy
-// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// TArray<struct FPalStaticItemIdAndNum>&  Materials                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// bool*                                   IsSatisfy                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ResearchMenu_C::Check_Research_Require_Satisfy(TArray<struct FPalStaticItemIdAndNum>& Materials, bool* IsSatisfy)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResearchMenu_C", "Check Research Require Satisfy");
-
-	Params::WBP_ResearchMenu_C_Check_Research_Require_Satisfy Parms{};
-
-	Parms.Materials = std::move(Materials);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Materials = std::move(Parms.Materials);
-
-	if (IsSatisfy != nullptr)
-		*IsSatisfy = Parms.IsSatisfy;
-}
-
-
-// Function WBP_ResearchMenu.WBP_ResearchMenu_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_ResearchMenu_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResearchMenu_C", "Destruct");
+		Func = Class->GetFunction("WBP_ResearchMenu_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ResearchMenu.WBP_ResearchMenu_C.ExecuteUbergraph_WBP_ResearchMenu
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_ResearchMenu.WBP_ResearchMenu_C.OnResearchEntryUnhovered
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalWorkSuitability                     WorkType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ResearchMenu_C::ExecuteUbergraph_WBP_ResearchMenu(int32 EntryPoint)
+void UWBP_ResearchMenu_C::OnResearchEntryUnhovered(EPalWorkSuitability WorkType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResearchMenu_C", "ExecuteUbergraph_WBP_ResearchMenu");
+		Func = Class->GetFunction("WBP_ResearchMenu_C", "OnResearchEntryUnhovered");
 
-	Params::WBP_ResearchMenu_C_ExecuteUbergraph_WBP_ResearchMenu Parms{};
+	Params::WBP_ResearchMenu_C_OnResearchEntryUnhovered Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.WorkType = WorkType;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ResearchMenu.WBP_ResearchMenu_C.OnResearchEntryHovered
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalWorkSuitability                     WorkType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ResearchMenu_C::OnResearchEntryHovered(EPalWorkSuitability WorkType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResearchMenu_C", "OnResearchEntryHovered");
+
+	Params::WBP_ResearchMenu_C_OnResearchEntryHovered Parms{};
+
+	Parms.WorkType = WorkType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ResearchMenu.WBP_ResearchMenu_C.OnResearchEntryClicked
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalWorkSuitability                     WorkType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ResearchMenu_C::OnResearchEntryClicked(EPalWorkSuitability WorkType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResearchMenu_C", "OnResearchEntryClicked");
+
+	Params::WBP_ResearchMenu_C_OnResearchEntryClicked Parms{};
+
+	Parms.WorkType = WorkType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ResearchMenu.WBP_ResearchMenu_C.OnCurrentResearchChanged
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ResearchMenu_C::OnCurrentResearchChanged()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResearchMenu_C", "OnCurrentResearchChanged");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ResearchMenu.WBP_ResearchMenu_C.OnConfirmChangeResearch
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ResearchMenu_C::OnConfirmChangeResearch(bool bResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResearchMenu_C", "OnConfirmChangeResearch");
+
+	Params::WBP_ResearchMenu_C_OnConfirmChangeResearch Parms{};
+
+	Parms.bResult = bResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ResearchMenu.WBP_ResearchMenu_C.OnCancelAction
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ResearchMenu_C::OnCancelAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResearchMenu_C", "OnCancelAction");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -219,175 +267,113 @@ void UWBP_ResearchMenu_C::GetResearchCompleteCount(TArray<struct FPalUIGuildLabR
 }
 
 
-// Function WBP_ResearchMenu.WBP_ResearchMenu_C.OnCancelAction
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_ResearchMenu.WBP_ResearchMenu_C.ExecuteUbergraph_WBP_ResearchMenu
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ResearchMenu_C::OnCancelAction()
+void UWBP_ResearchMenu_C::ExecuteUbergraph_WBP_ResearchMenu(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResearchMenu_C", "OnCancelAction");
+		Func = Class->GetFunction("WBP_ResearchMenu_C", "ExecuteUbergraph_WBP_ResearchMenu");
+
+	Params::WBP_ResearchMenu_C_ExecuteUbergraph_WBP_ResearchMenu Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ResearchMenu.WBP_ResearchMenu_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_ResearchMenu_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResearchMenu_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ResearchMenu.WBP_ResearchMenu_C.OnConfirmChangeResearch
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_ResearchMenu.WBP_ResearchMenu_C.Check Research Require Satisfy
+// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<struct FPalStaticItemIdAndNum>&  Materials                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool*                                   IsSatisfy                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ResearchMenu_C::OnConfirmChangeResearch(bool bResult)
+void UWBP_ResearchMenu_C::Check_Research_Require_Satisfy(TArray<struct FPalStaticItemIdAndNum>& Materials, bool* IsSatisfy)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResearchMenu_C", "OnConfirmChangeResearch");
+		Func = Class->GetFunction("WBP_ResearchMenu_C", "Check Research Require Satisfy");
 
-	Params::WBP_ResearchMenu_C_OnConfirmChangeResearch Parms{};
+	Params::WBP_ResearchMenu_C_Check_Research_Require_Satisfy Parms{};
 
-	Parms.bResult = bResult;
+	Parms.Materials = std::move(Materials);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Materials = std::move(Parms.Materials);
+
+	if (IsSatisfy != nullptr)
+		*IsSatisfy = Parms.IsSatisfy;
+}
+
+
+// Function WBP_ResearchMenu.WBP_ResearchMenu_C.BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_5_OnTreeNodeCreate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UWBP_Research_TreeIcon_C*         NewNode                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ResearchMenu_C::BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_5_OnTreeNodeCreate__DelegateSignature(class UWBP_Research_TreeIcon_C* NewNode)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResearchMenu_C", "BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_5_OnTreeNodeCreate__DelegateSignature");
+
+	Params::WBP_ResearchMenu_C_BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_5_OnTreeNodeCreate__DelegateSignature Parms{};
+
+	Parms.NewNode = NewNode;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ResearchMenu.WBP_ResearchMenu_C.OnCurrentResearchChanged
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_ResearchMenu.WBP_ResearchMenu_C.BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_3_OnResearchUnhoveredDelegate__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_ResearchMenu_C::OnCurrentResearchChanged()
+void UWBP_ResearchMenu_C::BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_3_OnResearchUnhoveredDelegate__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResearchMenu_C", "OnCurrentResearchChanged");
+		Func = Class->GetFunction("WBP_ResearchMenu_C", "BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_3_OnResearchUnhoveredDelegate__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ResearchMenu.WBP_ResearchMenu_C.OnResearchEntryClicked
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalWorkSuitability                     WorkType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ResearchMenu_C::OnResearchEntryClicked(EPalWorkSuitability WorkType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResearchMenu_C", "OnResearchEntryClicked");
-
-	Params::WBP_ResearchMenu_C_OnResearchEntryClicked Parms{};
-
-	Parms.WorkType = WorkType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ResearchMenu.WBP_ResearchMenu_C.OnResearchEntryHovered
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalWorkSuitability                     WorkType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ResearchMenu_C::OnResearchEntryHovered(EPalWorkSuitability WorkType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResearchMenu_C", "OnResearchEntryHovered");
-
-	Params::WBP_ResearchMenu_C_OnResearchEntryHovered Parms{};
-
-	Parms.WorkType = WorkType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ResearchMenu.WBP_ResearchMenu_C.OnResearchEntryUnhovered
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalWorkSuitability                     WorkType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ResearchMenu_C::OnResearchEntryUnhovered(EPalWorkSuitability WorkType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResearchMenu_C", "OnResearchEntryUnhovered");
-
-	Params::WBP_ResearchMenu_C_OnResearchEntryUnhovered Parms{};
-
-	Parms.WorkType = WorkType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ResearchMenu.WBP_ResearchMenu_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ResearchMenu_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResearchMenu_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ResearchMenu.WBP_ResearchMenu_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ResearchMenu_C::Setup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResearchMenu_C", "Setup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ResearchMenu.WBP_ResearchMenu_C.Setup Research Overview
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalWorkSuitability                     ResearchType                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ResearchMenu_C::Setup_Research_Overview(EPalWorkSuitability ResearchType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResearchMenu_C", "Setup Research Overview");
-
-	Params::WBP_ResearchMenu_C_Setup_Research_Overview Parms{};
-
-	Parms.ResearchType = ResearchType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ResearchMenu.WBP_ResearchMenu_C.SetupResearchDetail
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_ResearchMenu.WBP_ResearchMenu_C.BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_2_OnResearchHoveredDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
 // class FName                             ResearchId                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ResearchMenu_C::SetupResearchDetail(class FName ResearchId)
+void UWBP_ResearchMenu_C::BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_2_OnResearchHoveredDelegate__DelegateSignature(class FName ResearchId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResearchMenu_C", "SetupResearchDetail");
+		Func = Class->GetFunction("WBP_ResearchMenu_C", "BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_2_OnResearchHoveredDelegate__DelegateSignature");
 
-	Params::WBP_ResearchMenu_C_SetupResearchDetail Parms{};
+	Params::WBP_ResearchMenu_C_BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_2_OnResearchHoveredDelegate__DelegateSignature Parms{};
 
 	Parms.ResearchId = ResearchId;
 
@@ -395,49 +381,63 @@ void UWBP_ResearchMenu_C::SetupResearchDetail(class FName ResearchId)
 }
 
 
-// Function WBP_ResearchMenu.WBP_ResearchMenu_C.ShowAllBuff
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ResearchMenu_C::ShowAllBuff()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResearchMenu_C", "ShowAllBuff");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ResearchMenu.WBP_ResearchMenu_C.Switch Right Panel
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_ResearchMenu.WBP_ResearchMenu_C.BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_1_OnResearchSelectDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool                                    ToDetail                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ResearchId                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ResearchMenu_C::Switch_Right_Panel(bool ToDetail)
+void UWBP_ResearchMenu_C::BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_1_OnResearchSelectDelegate__DelegateSignature(class FName ResearchId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResearchMenu_C", "Switch Right Panel");
+		Func = Class->GetFunction("WBP_ResearchMenu_C", "BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_1_OnResearchSelectDelegate__DelegateSignature");
 
-	Params::WBP_ResearchMenu_C_Switch_Right_Panel Parms{};
+	Params::WBP_ResearchMenu_C_BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_1_OnResearchSelectDelegate__DelegateSignature Parms{};
 
-	Parms.ToDetail = ToDetail;
+	Parms.ResearchId = ResearchId;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ResearchMenu.WBP_ResearchMenu_C.UpdateCurrentResearchProgress
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_ResearchMenu.WBP_ResearchMenu_C.BndEvt__WBP_ResearchMenu_WBP_Research_AllBuff_K2Node_ComponentBoundEvent_6_OnAllBuffPanelClose__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_ResearchMenu_C::UpdateCurrentResearchProgress()
+void UWBP_ResearchMenu_C::BndEvt__WBP_ResearchMenu_WBP_Research_AllBuff_K2Node_ComponentBoundEvent_6_OnAllBuffPanelClose__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResearchMenu_C", "UpdateCurrentResearchProgress");
+		Func = Class->GetFunction("WBP_ResearchMenu_C", "BndEvt__WBP_ResearchMenu_WBP_Research_AllBuff_K2Node_ComponentBoundEvent_6_OnAllBuffPanelClose__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ResearchMenu.WBP_ResearchMenu_C.BndEvt__WBP_ResearchMenu_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_ResearchMenu_C::BndEvt__WBP_ResearchMenu_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResearchMenu_C", "BndEvt__WBP_ResearchMenu_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ResearchMenu.WBP_ResearchMenu_C.BndEvt__WBP_ResearchMenu_WBP_CommonButton_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_ResearchMenu_C::BndEvt__WBP_ResearchMenu_WBP_CommonButton_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResearchMenu_C", "BndEvt__WBP_ResearchMenu_WBP_CommonButton_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

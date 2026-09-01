@@ -17,21 +17,21 @@
 namespace SDK
 {
 
-// Function BP_PalStaticMeshImposterChunk.BP_PalStaticMeshImposterChunk_C.Dev_SetChunkVisible
-// (Event, Public, BlueprintEvent)
+// Function BP_PalStaticMeshImposterChunk.BP_PalStaticMeshImposterChunk_C.OnSetChunkGridSize
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// const bool                              bVisible                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const int32                             NewChunkGridSize                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalStaticMeshImposterChunk_C::Dev_SetChunkVisible(const bool bVisible)
+void ABP_PalStaticMeshImposterChunk_C::OnSetChunkGridSize(const int32 NewChunkGridSize)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalStaticMeshImposterChunk_C", "Dev_SetChunkVisible");
+		Func = Class->GetFunction("BP_PalStaticMeshImposterChunk_C", "OnSetChunkGridSize");
 
-	Params::BP_PalStaticMeshImposterChunk_C_Dev_SetChunkVisible Parms{};
+	Params::BP_PalStaticMeshImposterChunk_C_OnSetChunkGridSize Parms{};
 
-	Parms.bVisible = bVisible;
+	Parms.NewChunkGridSize = NewChunkGridSize;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,21 +57,21 @@ void ABP_PalStaticMeshImposterChunk_C::ExecuteUbergraph_BP_PalStaticMeshImposter
 }
 
 
-// Function BP_PalStaticMeshImposterChunk.BP_PalStaticMeshImposterChunk_C.OnSetChunkGridSize
-// (Event, Protected, BlueprintEvent)
+// Function BP_PalStaticMeshImposterChunk.BP_PalStaticMeshImposterChunk_C.Dev_SetChunkVisible
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// const int32                             NewChunkGridSize                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const bool                              bVisible                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalStaticMeshImposterChunk_C::OnSetChunkGridSize(const int32 NewChunkGridSize)
+void ABP_PalStaticMeshImposterChunk_C::Dev_SetChunkVisible(const bool bVisible)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalStaticMeshImposterChunk_C", "OnSetChunkGridSize");
+		Func = Class->GetFunction("BP_PalStaticMeshImposterChunk_C", "Dev_SetChunkVisible");
 
-	Params::BP_PalStaticMeshImposterChunk_C_OnSetChunkGridSize Parms{};
+	Params::BP_PalStaticMeshImposterChunk_C_Dev_SetChunkVisible Parms{};
 
-	Parms.NewChunkGridSize = NewChunkGridSize;
+	Parms.bVisible = bVisible;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

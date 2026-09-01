@@ -67,24 +67,24 @@ public:
 	TMulticastInlineDelegate<void()>              OnClickResetButton;                                // 0x03E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void ActivateResetButton();
-	void BndEvt__WBP_IngameConstruction_Paint_EditColor_PalEditableTextBox_ColorCode_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
-	void BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_ColorSlider_K2Node_ComponentBoundEvent_3_OnColorChanged__DelegateSignature(const struct FLinearColor& HSV);
-	void BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_CommonButton_OK_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
-	void BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_CommonButton_Reset_K2Node_ComponentBoundEvent_6_OnClicked__DelegateSignature();
-	void BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_PalInvisibleButton_CopyCode_K2Node_ComponentBoundEvent_4_OnButtonReleased__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_PalInvisibleButton_PasteCode_K2Node_ComponentBoundEvent_5_OnButtonReleased__DelegateSignature(class UCommonButtonBase* Button);
-	class UWidget* DoCustomNavigation_CloseButton(EUINavigation Navigation_0);
-	class UWidget* DoCustomNavigation_To_SliderV(EUINavigation Navigation_0);
-	class UWidget* DoCustomNavigation_To_SubmitButton(EUINavigation Navigation_0);
-	class UWidget* DoCustomNavigation_ToCopyButton(EUINavigation Navigation_0);
-	void ExecuteUbergraph_WBP_IngameConstruction_Paint_EditColor(int32 EntryPoint);
-	TArray<class UWBP_IngameConstruction_Paint_ColorPreset_C*> GetColorPresetWidgets();
-	void OnClickPresetColorButton(const struct FLinearColor& Color);
-	void ReflectColorFromString(const class FString& HexString);
-	void ReflectEditColor(const struct FLinearColor& EditColor, bool bShouldApplySider);
 	void Setup(const struct FLinearColor& CurrentColor, TArray<struct FLinearColor>& InPresetColors, bool bShowResetButton);
+	void ReflectEditColor(const struct FLinearColor& EditColor, bool bShouldApplySider);
+	void ReflectColorFromString(const class FString& HexString);
+	void OnClickPresetColorButton(const struct FLinearColor& Color);
+	TArray<class UWBP_IngameConstruction_Paint_ColorPreset_C*> GetColorPresetWidgets();
+	void ExecuteUbergraph_WBP_IngameConstruction_Paint_EditColor(int32 EntryPoint);
+	class UWidget* DoCustomNavigation_ToCopyButton(EUINavigation Navigation_0);
+	class UWidget* DoCustomNavigation_To_SubmitButton(EUINavigation Navigation_0);
+	class UWidget* DoCustomNavigation_To_SliderV(EUINavigation Navigation_0);
+	class UWidget* DoCustomNavigation_CloseButton(EUINavigation Navigation_0);
+	void BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_PalInvisibleButton_PasteCode_K2Node_ComponentBoundEvent_5_OnButtonReleased__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_PalInvisibleButton_CopyCode_K2Node_ComponentBoundEvent_4_OnButtonReleased__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
+	void BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_CommonButton_Reset_K2Node_ComponentBoundEvent_6_OnClicked__DelegateSignature();
+	void BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_CommonButton_OK_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
+	void BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_ColorSlider_K2Node_ComponentBoundEvent_3_OnColorChanged__DelegateSignature(const struct FLinearColor& HSV);
+	void BndEvt__WBP_IngameConstruction_Paint_EditColor_PalEditableTextBox_ColorCode_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
+	void ActivateResetButton();
 
 public:
 	static class UClass* StaticClass()

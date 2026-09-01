@@ -17,27 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_InventoryListContent.WBP_InventoryListContent_C.AddWidget
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_InventoryListContent.WBP_InventoryListContent_C.SetCategoryName
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWidget*                          inWidgett                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32*                                  Index_0                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      CategoryName                                           (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_InventoryListContent_C::AddWidget(class UWidget* inWidgett, int32* Index_0)
+void UWBP_InventoryListContent_C::SetCategoryName(const class FText& CategoryName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InventoryListContent_C", "AddWidget");
+		Func = Class->GetFunction("WBP_InventoryListContent_C", "SetCategoryName");
 
-	Params::WBP_InventoryListContent_C_AddWidget Parms{};
+	Params::WBP_InventoryListContent_C_SetCategoryName Parms{};
 
-	Parms.inWidgett = inWidgett;
+	Parms.CategoryName = std::move(CategoryName);
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (Index_0 != nullptr)
-		*Index_0 = Parms.Index_0;
 }
 
 
@@ -62,23 +58,27 @@ void UWBP_InventoryListContent_C::GetAllContents(TArray<class UWidget*>* Content
 }
 
 
-// Function WBP_InventoryListContent.WBP_InventoryListContent_C.SetCategoryName
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_InventoryListContent.WBP_InventoryListContent_C.AddWidget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FText&                      CategoryName                                           (BlueprintVisible, BlueprintReadOnly, Parm)
+// class UWidget*                          inWidgett                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32*                                  Index_0                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_InventoryListContent_C::SetCategoryName(const class FText& CategoryName)
+void UWBP_InventoryListContent_C::AddWidget(class UWidget* inWidgett, int32* Index_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InventoryListContent_C", "SetCategoryName");
+		Func = Class->GetFunction("WBP_InventoryListContent_C", "AddWidget");
 
-	Params::WBP_InventoryListContent_C_SetCategoryName Parms{};
+	Params::WBP_InventoryListContent_C_AddWidget Parms{};
 
-	Parms.CategoryName = std::move(CategoryName);
+	Parms.inWidgett = inWidgett;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (Index_0 != nullptr)
+		*Index_0 = Parms.Index_0;
 }
 
 }

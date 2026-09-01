@@ -16,17 +16,24 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameMenu_Task_SimpleList.WBP_IngameMenu_Task_SimpleList_C.ExecuteUbergraph_WBP_IngameMenu_Task_SimpleList
+// Function WBP_IngameMenu_Task_SimpleList.WBP_IngameMenu_Task_SimpleList_C.UpdateNickname
 // 0x0028 (0x0028 - 0x0000)
-struct WBP_IngameMenu_Task_SimpleList_C_ExecuteUbergraph_WBP_IngameMenu_Task_SimpleList final
+struct WBP_IngameMenu_Task_SimpleList_C_UpdateNickname final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const class FString& NewNickName)> K2Node_CreateDelegate_OutputDelegate;          // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UWBP_MainMenu_Pal_State_C*>      K2Node_MakeArray_Array;                            // 0x0018(0x0010)(ReferenceParm, ContainsInstancedReference)
+	class FString                                 NewNickName;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0018)()
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Task_SimpleList_C_ExecuteUbergraph_WBP_IngameMenu_Task_SimpleList;
+DUMPER7_ASSERTS_WBP_IngameMenu_Task_SimpleList_C_UpdateNickname;
+
+// Function WBP_IngameMenu_Task_SimpleList.WBP_IngameMenu_Task_SimpleList_C.UpdateCondition
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameMenu_Task_SimpleList_C_UpdateCondition final
+{
+public:
+	TArray<EPalUIConditionType>                   Conditions;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Task_SimpleList_C_UpdateCondition;
 
 // Function WBP_IngameMenu_Task_SimpleList.WBP_IngameMenu_Task_SimpleList_C.Setup
 // 0x0040 (0x0040 - 0x0000)
@@ -42,24 +49,17 @@ public:
 };
 DUMPER7_ASSERTS_WBP_IngameMenu_Task_SimpleList_C_Setup;
 
-// Function WBP_IngameMenu_Task_SimpleList.WBP_IngameMenu_Task_SimpleList_C.UpdateCondition
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameMenu_Task_SimpleList_C_UpdateCondition final
-{
-public:
-	TArray<EPalUIConditionType>                   Conditions;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Task_SimpleList_C_UpdateCondition;
-
-// Function WBP_IngameMenu_Task_SimpleList.WBP_IngameMenu_Task_SimpleList_C.UpdateNickname
+// Function WBP_IngameMenu_Task_SimpleList.WBP_IngameMenu_Task_SimpleList_C.ExecuteUbergraph_WBP_IngameMenu_Task_SimpleList
 // 0x0028 (0x0028 - 0x0000)
-struct WBP_IngameMenu_Task_SimpleList_C_UpdateNickname final
+struct WBP_IngameMenu_Task_SimpleList_C_ExecuteUbergraph_WBP_IngameMenu_Task_SimpleList final
 {
 public:
-	class FString                                 NewNickName;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0018)()
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const class FString& NewNickName)> K2Node_CreateDelegate_OutputDelegate;          // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UWBP_MainMenu_Pal_State_C*>      K2Node_MakeArray_Array;                            // 0x0018(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Task_SimpleList_C_UpdateNickname;
+DUMPER7_ASSERTS_WBP_IngameMenu_Task_SimpleList_C_ExecuteUbergraph_WBP_IngameMenu_Task_SimpleList;
 
 }
 

@@ -14,23 +14,14 @@
 namespace SDK::Params
 {
 
-// Function BP_BuildObject_BuildableGoddessStatue.BP_BuildObject_BuildableGoddessStatue_C.BP_OnSetConcreteModel
-// 0x0008 (0x0008 - 0x0000)
-struct BP_BuildObject_BuildableGoddessStatue_C_BP_OnSetConcreteModel final
+// Function BP_BuildObject_BuildableGoddessStatue.BP_BuildObject_BuildableGoddessStatue_C.SetActive_Internal
+// 0x0001 (0x0001 - 0x0000)
+struct BP_BuildObject_BuildableGoddessStatue_C_SetActive_Internal final
 {
 public:
-	class UPalMapObjectConcreteModelBase*         ConcreteModel;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bOn;                                               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_BuildObject_BuildableGoddessStatue_C_BP_OnSetConcreteModel;
-
-// Function BP_BuildObject_BuildableGoddessStatue.BP_BuildObject_BuildableGoddessStatue_C.CustomEvent
-// 0x0008 (0x0008 - 0x0000)
-struct BP_BuildObject_BuildableGoddessStatue_C_CustomEvent final
-{
-public:
-	class UPalMapObjectConcreteModelBase*         Model;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_BuildObject_BuildableGoddessStatue_C_CustomEvent;
+DUMPER7_ASSERTS_BP_BuildObject_BuildableGoddessStatue_C_SetActive_Internal;
 
 // Function BP_BuildObject_BuildableGoddessStatue.BP_BuildObject_BuildableGoddessStatue_C.ExecuteUbergraph_BP_BuildObject_BuildableGoddessStatue
 // 0x0028 (0x0028 - 0x0000)
@@ -45,14 +36,23 @@ public:
 };
 DUMPER7_ASSERTS_BP_BuildObject_BuildableGoddessStatue_C_ExecuteUbergraph_BP_BuildObject_BuildableGoddessStatue;
 
-// Function BP_BuildObject_BuildableGoddessStatue.BP_BuildObject_BuildableGoddessStatue_C.SetActive_Internal
-// 0x0001 (0x0001 - 0x0000)
-struct BP_BuildObject_BuildableGoddessStatue_C_SetActive_Internal final
+// Function BP_BuildObject_BuildableGoddessStatue.BP_BuildObject_BuildableGoddessStatue_C.CustomEvent
+// 0x0008 (0x0008 - 0x0000)
+struct BP_BuildObject_BuildableGoddessStatue_C_CustomEvent final
 {
 public:
-	bool                                          bOn;                                               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectConcreteModelBase*         Model;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_BuildObject_BuildableGoddessStatue_C_SetActive_Internal;
+DUMPER7_ASSERTS_BP_BuildObject_BuildableGoddessStatue_C_CustomEvent;
+
+// Function BP_BuildObject_BuildableGoddessStatue.BP_BuildObject_BuildableGoddessStatue_C.BP_OnSetConcreteModel
+// 0x0008 (0x0008 - 0x0000)
+struct BP_BuildObject_BuildableGoddessStatue_C_BP_OnSetConcreteModel final
+{
+public:
+	class UPalMapObjectConcreteModelBase*         ConcreteModel;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BuildObject_BuildableGoddessStatue_C_BP_OnSetConcreteModel;
 
 }
 

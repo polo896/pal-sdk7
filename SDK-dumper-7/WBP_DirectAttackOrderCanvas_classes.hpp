@@ -25,10 +25,10 @@ public:
 	class UWBP_PalTarget_C*                       CurrentTargetWidget;                               // 0x0458(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void OnChangedDirectOrderTarget(class APalCharacter* Target);
 	void OnMissingTarget();
-	void PlayTargetSound();
+	void OnChangedDirectOrderTarget(class APalCharacter* Target);
 	void Setup();
+	void PlayTargetSound();
 
 public:
 	static class UClass* StaticClass()

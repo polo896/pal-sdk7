@@ -36,15 +36,15 @@ public:
 
 public:
 	void CreateGuideText(const class FText& InText, class FText* OutText);
-	void ExecuteUbergraph_WBP_TutorialMessage_Temp(int32 EntryPoint);
-	void Finished_5267E3844738D65023A58CBEE7C11FAC();
-	void Finished_D8B6F6C240191DC6DD60BAADB6596025();
-	void GetCurrentMsgId(struct FDataTableRowHandle* MsgID);
-	void On_Input_Method_Changed(ECommonInputType InputType);
-	void PresentMessage();
-	void QueueTutorial(const struct FDataTableRowHandle& TutorialMsgID);
-	void Setup();
 	void SkipToNextMessage();
+	void Setup();
+	void QueueTutorial(const struct FDataTableRowHandle& TutorialMsgID);
+	void PresentMessage();
+	void On_Input_Method_Changed(ECommonInputType InputType);
+	void GetCurrentMsgId(struct FDataTableRowHandle* MsgID);
+	void Finished_D8B6F6C240191DC6DD60BAADB6596025();
+	void Finished_5267E3844738D65023A58CBEE7C11FAC();
+	void ExecuteUbergraph_WBP_TutorialMessage_Temp(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

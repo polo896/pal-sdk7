@@ -28,10 +28,10 @@ public:
 	bool                                          CurrentEnable;                                     // 0x0290(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Crime_Scene(int32 EntryPoint);
-	void Finished_4B4F0B354CEB0EB1043AE5B3C6D7077A();
-	void Finished_F33B774D46BB4A7E03FF64B35586069D();
 	void SetCrimeSceneEnable(bool Enable);
+	void Finished_F33B774D46BB4A7E03FF64B35586069D();
+	void Finished_4B4F0B354CEB0EB1043AE5B3C6D7077A();
+	void ExecuteUbergraph_WBP_Crime_Scene(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

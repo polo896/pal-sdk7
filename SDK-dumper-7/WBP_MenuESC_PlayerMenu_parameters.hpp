@@ -14,77 +14,29 @@
 namespace SDK::Params
 {
 
-// Function WBP_MenuESC_PlayerMenu.WBP_MenuESC_PlayerMenu_C.BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature final
+// Function WBP_MenuESC_PlayerMenu.WBP_MenuESC_PlayerMenu_C.SetPlayerName
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_MenuESC_PlayerMenu_C_SetPlayerName final
 {
 public:
-	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FString                                 DisplayName;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0018)()
 };
-DUMPER7_ASSERTS_WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_MenuESC_PlayerMenu_C_SetPlayerName;
 
-// Function WBP_MenuESC_PlayerMenu.WBP_MenuESC_PlayerMenu_C.BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature final
+// Function WBP_MenuESC_PlayerMenu.WBP_MenuESC_PlayerMenu_C.GetTopFocusTarget
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_MenuESC_PlayerMenu_C_GetTopFocusTarget final
 {
 public:
-	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                TargetWidget_0;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsXSX_ReturnValue;                        // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsXB1_ReturnValue;                        // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsPS5_ReturnValue;                        // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature;
-
-// Function WBP_MenuESC_PlayerMenu.WBP_MenuESC_PlayerMenu_C.BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_2_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_2_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature final
-{
-public:
-	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_2_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature;
-
-// Function WBP_MenuESC_PlayerMenu.WBP_MenuESC_PlayerMenu_C.BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_3_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_3_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature final
-{
-public:
-	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_3_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature;
-
-// Function WBP_MenuESC_PlayerMenu.WBP_MenuESC_PlayerMenu_C.BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UnBlock_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UnBlock_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature final
-{
-public:
-	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UnBlock_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature;
-
-// Function WBP_MenuESC_PlayerMenu.WBP_MenuESC_PlayerMenu_C.BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UnMute_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UnMute_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature final
-{
-public:
-	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UnMute_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature;
-
-// Function WBP_MenuESC_PlayerMenu.WBP_MenuESC_PlayerMenu_C.BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UserReport_K2Node_ComponentBoundEvent_7_OnClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UserReport_K2Node_ComponentBoundEvent_7_OnClicked__DelegateSignature final
-{
-public:
-	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UserReport_K2Node_ComponentBoundEvent_7_OnClicked__DelegateSignature;
-
-// Function WBP_MenuESC_PlayerMenu.WBP_MenuESC_PlayerMenu_C.BndEvt__WBP_MenuESC_PlayerMenu_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_MenuESC_PlayerMenu_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_MenuESC_PlayerMenu_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_MenuESC_PlayerMenu_C_GetTopFocusTarget;
 
 // Function WBP_MenuESC_PlayerMenu.WBP_MenuESC_PlayerMenu_C.ExecuteUbergraph_WBP_MenuESC_PlayerMenu
 // 0x0108 (0x0108 - 0x0000)
@@ -123,29 +75,77 @@ public:
 };
 DUMPER7_ASSERTS_WBP_MenuESC_PlayerMenu_C_ExecuteUbergraph_WBP_MenuESC_PlayerMenu;
 
-// Function WBP_MenuESC_PlayerMenu.WBP_MenuESC_PlayerMenu_C.GetTopFocusTarget
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_MenuESC_PlayerMenu_C_GetTopFocusTarget final
+// Function WBP_MenuESC_PlayerMenu.WBP_MenuESC_PlayerMenu_C.BndEvt__WBP_MenuESC_PlayerMenu_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_MenuESC_PlayerMenu_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	class UWidget*                                TargetWidget_0;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsXSX_ReturnValue;                        // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsXB1_ReturnValue;                        // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsPS5_ReturnValue;                        // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MenuESC_PlayerMenu_C_GetTopFocusTarget;
+DUMPER7_ASSERTS_WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_MenuESC_PlayerMenu_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature;
 
-// Function WBP_MenuESC_PlayerMenu.WBP_MenuESC_PlayerMenu_C.SetPlayerName
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_MenuESC_PlayerMenu_C_SetPlayerName final
+// Function WBP_MenuESC_PlayerMenu.WBP_MenuESC_PlayerMenu_C.BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UserReport_K2Node_ComponentBoundEvent_7_OnClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UserReport_K2Node_ComponentBoundEvent_7_OnClicked__DelegateSignature final
 {
 public:
-	class FString                                 DisplayName;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0018)()
+	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MenuESC_PlayerMenu_C_SetPlayerName;
+DUMPER7_ASSERTS_WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UserReport_K2Node_ComponentBoundEvent_7_OnClicked__DelegateSignature;
+
+// Function WBP_MenuESC_PlayerMenu.WBP_MenuESC_PlayerMenu_C.BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UnMute_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UnMute_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature final
+{
+public:
+	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UnMute_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature;
+
+// Function WBP_MenuESC_PlayerMenu.WBP_MenuESC_PlayerMenu_C.BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UnBlock_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UnBlock_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature final
+{
+public:
+	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_UnBlock_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature;
+
+// Function WBP_MenuESC_PlayerMenu.WBP_MenuESC_PlayerMenu_C.BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_3_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_3_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature final
+{
+public:
+	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_3_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature;
+
+// Function WBP_MenuESC_PlayerMenu.WBP_MenuESC_PlayerMenu_C.BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_2_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_2_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature final
+{
+public:
+	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_MenuESC_PlayerMenu_WBP_GuildMemberMenuList_2_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature;
+
+// Function WBP_MenuESC_PlayerMenu.WBP_MenuESC_PlayerMenu_C.BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature final
+{
+public:
+	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature;
+
+// Function WBP_MenuESC_PlayerMenu.WBP_MenuESC_PlayerMenu_C.BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature final
+{
+public:
+	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MenuESC_PlayerMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature;
 
 }
 

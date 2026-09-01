@@ -30,9 +30,9 @@ public:
 	TMulticastInlineDelegate<void(const struct FLinearColor& Color)> OnClickButton;                  // 0x0298(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__WBP_IngameConstruction_Paint_ColorPreset_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_OnButtonReleased__DelegateSignature(class UCommonButtonBase* Button);
-	void ExecuteUbergraph_WBP_IngameConstruction_Paint_ColorPreset(int32 EntryPoint);
 	void SetColor(const struct FLinearColor& InColor);
+	void ExecuteUbergraph_WBP_IngameConstruction_Paint_ColorPreset(int32 EntryPoint);
+	void BndEvt__WBP_IngameConstruction_Paint_ColorPreset_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_OnButtonReleased__DelegateSignature(class UCommonButtonBase* Button);
 
 public:
 	static class UClass* StaticClass()

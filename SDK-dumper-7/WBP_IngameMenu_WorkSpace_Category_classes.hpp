@@ -36,14 +36,14 @@ public:
 	TMulticastInlineDelegate<void(class UWBP_IngameMenu_WorkSpace_Category_C* Widget)> OnClicked;    // 0x02F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void AnmEvent_Active(bool bIsActive);
-	void BndEvt__WBP_IngameMenu_WorkSpace_Category_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Category(int32 EntryPoint);
-	void GetBindCategory(E_PalUIWorkSpaceDisplayCategory* OutCategory);
-	void GetTargetItemTypes(TArray<EPalItemTypeA>* ItemTypesA, TArray<EPalItemTypeA>* ExcludeItemTypesB);
 	void Setup();
+	void GetTargetItemTypes(TArray<EPalItemTypeA>* ItemTypesA, TArray<EPalItemTypeA>* ExcludeItemTypesB);
+	void GetBindCategory(E_PalUIWorkSpaceDisplayCategory* OutCategory);
+	void ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Category(int32 EntryPoint);
+	void Destruct();
+	void Construct();
+	void BndEvt__WBP_IngameMenu_WorkSpace_Category_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void AnmEvent_Active(bool bIsActive);
 
 public:
 	static class UClass* StaticClass()

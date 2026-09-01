@@ -99,7 +99,7 @@ class UWBP_MenuESC_C : public UPalUserWidgetOverlayUI
     FWBP_MenuESC_COnCloseEscMenu OnCloseEscMenu;                                      // 0x0A10 (size: 0x10)
     void OnCloseEscMenu();
     bool IsSelectingMemberMenu;                                                       // 0x0A20 (size: 0x1)
-    TSoftObjectPtr<UWBP_MenuESCPlayerListItem_C> SelectionPlayerWidget;               // 0x0A28 (size: 0x30)
+    TSoftObjectPtr<class UWBP_MenuESCPlayerListItem_C> SelectionPlayerWidget;         // 0x0A28 (size: 0x30)
     FDataTableRowHandle MutePlayerDialogMsgID;                                        // 0x0A58 (size: 0x10)
     FGuid MutePlayerUId;                                                              // 0x0A68 (size: 0x10)
     FText Ban Reason;                                                                 // 0x0A78 (size: 0x18)
@@ -118,7 +118,7 @@ class UWBP_MenuESC_C : public UPalUserWidgetOverlayUI
     double ScrollPerSecond;                                                           // 0x0AF8 (size: 0x8)
     double RightStickAxisY;                                                           // 0x0B00 (size: 0x8)
     FTimerHandle CheckEOSStatusTimerHandle;                                           // 0x0B08 (size: 0x8)
-    TArray<class UWBP_MenuESC_Button_Base_C*> MenuButtons;                            // 0x0B10 (size: 0x10)
+    TArray<UWBP_MenuESC_Button_Base_C*> MenuButtons;                                  // 0x0B10 (size: 0x10)
     FDataTableRowHandle EOSConnectionIssueMsgID;                                      // 0x0B20 (size: 0x10)
     TEnumAsByte<E_PalEscMenuType::Type> CurrentMenuType;                              // 0x0B30 (size: 0x1)
     FWBP_MenuESC_COnLaunchHeilGuideOrSurvivalGuide OnLaunchHeilGuideOrSurvivalGuide;  // 0x0B38 (size: 0x10)

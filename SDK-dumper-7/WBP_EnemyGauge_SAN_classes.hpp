@@ -31,8 +31,8 @@ public:
 	struct FLinearColor                           LowSanityGaugeColor;                               // 0x02A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_EnemyGauge_SAN(int32 EntryPoint);
 	void OnInitialized();
+	void ExecuteUbergraph_WBP_EnemyGauge_SAN(int32 EntryPoint);
 	void SetSanityValue(double NowSanityValue, double MaxSanityValue);
 
 public:

@@ -17,177 +17,41 @@
 namespace SDK
 {
 
-// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_AssignBoard_PalSlotButton_C::BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_PalSlotButton_C", "BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_AssignBoard_PalSlotButton_C_BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_AssignBoard_PalSlotButton_C::BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_PalSlotButton_C", "BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_AssignBoard_PalSlotButton_C_BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.ExecuteUbergraph_WBP_AssignBoard_PalSlotButton
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_AssignBoard_PalSlotButton_C::ExecuteUbergraph_WBP_AssignBoard_PalSlotButton(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_PalSlotButton_C", "ExecuteUbergraph_WBP_AssignBoard_PalSlotButton");
-
-	Params::WBP_AssignBoard_PalSlotButton_C_ExecuteUbergraph_WBP_AssignBoard_PalSlotButton Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_AssignBoard_PalSlotButton_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_PalSlotButton_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.RegisterButton
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase**               Button                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_AssignBoard_PalSlotButton_C::RegisterButton(class UCommonButtonBase** Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_PalSlotButton_C", "RegisterButton");
-
-	Params::WBP_AssignBoard_PalSlotButton_C_RegisterButton Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Button != nullptr)
-		*Button = Parms.Button;
-}
-
-
-// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.RegisterCharacterSlotWidget
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_PalCharacterSlotBase_C**     characterSlotWidget                                    (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_AssignBoard_PalSlotButton_C::RegisterCharacterSlotWidget(class UWBP_PalCharacterSlotBase_C** characterSlotWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_PalSlotButton_C", "RegisterCharacterSlotWidget");
-
-	Params::WBP_AssignBoard_PalSlotButton_C_RegisterCharacterSlotWidget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (characterSlotWidget != nullptr)
-		*characterSlotWidget = Parms.characterSlotWidget;
-}
-
-
-// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.Set Is Fixed Assign
+// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.SetSuitability
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsAssign                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalWorkSuitability                     Suitability                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_AssignBoard_PalSlotButton_C::Set_Is_Fixed_Assign(bool IsAssign)
+void UWBP_AssignBoard_PalSlotButton_C::SetSuitability(EPalWorkSuitability Suitability)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_PalSlotButton_C", "Set Is Fixed Assign");
+		Func = Class->GetFunction("WBP_AssignBoard_PalSlotButton_C", "SetSuitability");
 
-	Params::WBP_AssignBoard_PalSlotButton_C_Set_Is_Fixed_Assign Parms{};
+	Params::WBP_AssignBoard_PalSlotButton_C_SetSuitability Parms{};
 
-	Parms.IsAssign = IsAssign;
+	Parms.Suitability = Suitability;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.SetDisplayGender
+// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.SetSelectedCheck
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    isDisplay                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsCheck                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_AssignBoard_PalSlotButton_C::SetDisplayGender(bool isDisplay)
+void UWBP_AssignBoard_PalSlotButton_C::SetSelectedCheck(bool IsCheck)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_PalSlotButton_C", "SetDisplayGender");
+		Func = Class->GetFunction("WBP_AssignBoard_PalSlotButton_C", "SetSelectedCheck");
 
-	Params::WBP_AssignBoard_PalSlotButton_C_SetDisplayGender Parms{};
+	Params::WBP_AssignBoard_PalSlotButton_C_SetSelectedCheck Parms{};
 
-	Parms.isDisplay = isDisplay;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.SetReferenceWorkId
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGuid&                     WorkId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_AssignBoard_PalSlotButton_C::SetReferenceWorkId(const struct FGuid& WorkId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_PalSlotButton_C", "SetReferenceWorkId");
-
-	Params::WBP_AssignBoard_PalSlotButton_C_SetReferenceWorkId Parms{};
-
-	Parms.WorkId = std::move(WorkId);
+	Parms.IsCheck = IsCheck;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -215,41 +79,177 @@ void UWBP_AssignBoard_PalSlotButton_C::SetReferenceWorkSuitability(TArray<EPalWo
 }
 
 
-// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.SetSelectedCheck
+// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.SetReferenceWorkId
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsCheck                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     WorkId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_AssignBoard_PalSlotButton_C::SetSelectedCheck(bool IsCheck)
+void UWBP_AssignBoard_PalSlotButton_C::SetReferenceWorkId(const struct FGuid& WorkId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_PalSlotButton_C", "SetSelectedCheck");
+		Func = Class->GetFunction("WBP_AssignBoard_PalSlotButton_C", "SetReferenceWorkId");
 
-	Params::WBP_AssignBoard_PalSlotButton_C_SetSelectedCheck Parms{};
+	Params::WBP_AssignBoard_PalSlotButton_C_SetReferenceWorkId Parms{};
 
-	Parms.IsCheck = IsCheck;
+	Parms.WorkId = std::move(WorkId);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.SetSuitability
+// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.SetDisplayGender
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EPalWorkSuitability                     Suitability                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    isDisplay                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_AssignBoard_PalSlotButton_C::SetSuitability(EPalWorkSuitability Suitability)
+void UWBP_AssignBoard_PalSlotButton_C::SetDisplayGender(bool isDisplay)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_PalSlotButton_C", "SetSuitability");
+		Func = Class->GetFunction("WBP_AssignBoard_PalSlotButton_C", "SetDisplayGender");
 
-	Params::WBP_AssignBoard_PalSlotButton_C_SetSuitability Parms{};
+	Params::WBP_AssignBoard_PalSlotButton_C_SetDisplayGender Parms{};
 
-	Parms.Suitability = Suitability;
+	Parms.isDisplay = isDisplay;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.Set Is Fixed Assign
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsAssign                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_AssignBoard_PalSlotButton_C::Set_Is_Fixed_Assign(bool IsAssign)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AssignBoard_PalSlotButton_C", "Set Is Fixed Assign");
+
+	Params::WBP_AssignBoard_PalSlotButton_C_Set_Is_Fixed_Assign Parms{};
+
+	Parms.IsAssign = IsAssign;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.RegisterCharacterSlotWidget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_PalCharacterSlotBase_C**     characterSlotWidget                                    (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_AssignBoard_PalSlotButton_C::RegisterCharacterSlotWidget(class UWBP_PalCharacterSlotBase_C** characterSlotWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AssignBoard_PalSlotButton_C", "RegisterCharacterSlotWidget");
+
+	Params::WBP_AssignBoard_PalSlotButton_C_RegisterCharacterSlotWidget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (characterSlotWidget != nullptr)
+		*characterSlotWidget = Parms.characterSlotWidget;
+}
+
+
+// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.RegisterButton
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase**               Button                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_AssignBoard_PalSlotButton_C::RegisterButton(class UCommonButtonBase** Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AssignBoard_PalSlotButton_C", "RegisterButton");
+
+	Params::WBP_AssignBoard_PalSlotButton_C_RegisterButton Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Button != nullptr)
+		*Button = Parms.Button;
+}
+
+
+// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_AssignBoard_PalSlotButton_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AssignBoard_PalSlotButton_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.ExecuteUbergraph_WBP_AssignBoard_PalSlotButton
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_AssignBoard_PalSlotButton_C::ExecuteUbergraph_WBP_AssignBoard_PalSlotButton(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AssignBoard_PalSlotButton_C", "ExecuteUbergraph_WBP_AssignBoard_PalSlotButton");
+
+	Params::WBP_AssignBoard_PalSlotButton_C_ExecuteUbergraph_WBP_AssignBoard_PalSlotButton Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_AssignBoard_PalSlotButton_C::BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AssignBoard_PalSlotButton_C", "BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_AssignBoard_PalSlotButton_C_BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_AssignBoard_PalSlotButton_C::BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AssignBoard_PalSlotButton_C", "BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_AssignBoard_PalSlotButton_C_BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

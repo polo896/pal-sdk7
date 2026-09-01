@@ -16,7 +16,7 @@ class ABP_PickMainMeshVolume_C : public AActor
     void EndOverlapPalLit(class UMaterialInstanceDynamic* Material);
     void BeginOverlapPalLit(class UMaterialInstanceDynamic* Material, bool materialSrc);
     void IsCelShader(class UMaterialInterface* Material, bool& IsCelShader);
-    void GetMeshFromActor(class AActor* Actor, TArray<class UMeshComponent*>& Mesh);
+    void GetMeshFromActor(class AActor* Actor, TArray<UMeshComponent*>& Mesh);
     void EndOverlapMainMesh(class UMeshComponent* OutMainMesh);
     void BeginOverlapMainMesh(class UMeshComponent* InMainMesh);
     void BndEvt__BP_MaterialVolumeTest_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);

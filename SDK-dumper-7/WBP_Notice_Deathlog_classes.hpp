@@ -44,18 +44,18 @@ public:
 	bool                                          IsKillLog;                                         // 0x02F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void CheckDisplay_Long();
-	void CheckDisplay_Short();
-	void ExecuteUbergraph_WBP_Notice_Deathlog(int32 EntryPoint);
-	void Finished_594550FE491318B188D5B8A2D194C1DB();
-	void GetDeathResonText(EPalKillLogDisplayType KillLogType, class FText* ReasonText);
-	void MakeDeathLogText(const struct FPalKillLogDisplayData& DisplayData, class FText* AttackerName, class FText* DefenderName, class FText* Reason);
-	void MakeKillLogText(const struct FPalKillLogDisplayData& DisplayData, class FText* AttackerName, class FText* DefenderName, class FText* Reason);
-	void SetDisplayTime(double ShortDisplayTime, double LongDisplayTime);
-	void SetDisplayTimeType(bool IsShort);
-	void SetupAsDeathLog(const struct FPalKillLogDisplayData& DeathLogDisplayData);
-	void SetupAsKillLog(const struct FPalKillLogDisplayData& KillLogDIsplayData);
 	void SetupIcon(const struct FPalKillLogDisplayData& DisplayData);
+	void SetupAsKillLog(const struct FPalKillLogDisplayData& KillLogDIsplayData);
+	void SetupAsDeathLog(const struct FPalKillLogDisplayData& DeathLogDisplayData);
+	void SetDisplayTimeType(bool IsShort);
+	void SetDisplayTime(double ShortDisplayTime, double LongDisplayTime);
+	void MakeKillLogText(const struct FPalKillLogDisplayData& DisplayData, class FText* AttackerName, class FText* DefenderName, class FText* Reason);
+	void MakeDeathLogText(const struct FPalKillLogDisplayData& DisplayData, class FText* AttackerName, class FText* DefenderName, class FText* Reason);
+	void GetDeathResonText(EPalKillLogDisplayType KillLogType, class FText* ReasonText);
+	void Finished_594550FE491318B188D5B8A2D194C1DB();
+	void ExecuteUbergraph_WBP_Notice_Deathlog(int32 EntryPoint);
+	void CheckDisplay_Short();
+	void CheckDisplay_Long();
 
 public:
 	static class UClass* StaticClass()

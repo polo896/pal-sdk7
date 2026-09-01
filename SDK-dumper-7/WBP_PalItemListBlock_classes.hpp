@@ -43,33 +43,33 @@ public:
 	TArray<EPalItemTypeB>                         FilterTypeB;                                       // 0x0528(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void Add_Item_Container(class UPalItemContainer* TargetContainer, bool IsEnableQuickMove, bool IgnoreEmptySlot, int32 DisplayNumDefault);
-	void AddItemSlot(class UPalItemSlot* TargetSlot, bool bIsEnableQuickMove, bool bIgnoreEmptySlot);
-	void ChangeItemSlotButtonClass(class UClass* NewClass);
-	void ClearFiltering();
-	void Construct();
-	void Create_Item_Slot_Widget(class UPalItemSlot* TargetSlot, bool IsEnableQuickMove, bool IgnoreEmptySlot);
-	void Destruct();
-	void EditCreatedSlotWidget(class UWBP_PalItemSlotButtonBase_C* createdSlotWidget, class UWidget** editedWidget);
-	void ExecuteUbergraph_WBP_PalItemListBlock(int32 EntryPoint);
-	void FilteringFromItemTypeA(TArray<EPalItemTypeA>& displayTypesA, bool isEmptySlotDIsplay);
-	void FilteringFromItemTypeB(TArray<EPalItemTypeB>& displayItemTypesB, bool isEmptySlotDIsplay);
-	void Focus();
-	void GetAllItemSlotButtons(TArray<class UWBP_PalItemSlotButtonBase_C*>* slotButtons);
-	void GetFocusTarget(class UWidget** NewParam);
-	void IsAllSlotEmpty(bool* IsALLEmpty);
-	void On_Drag_Detected_Internal(class UWBP_PalItemSlotButtonBase_C* Widget);
-	void On_Update_Slot_Internal(class UWBP_PalItemSlotButtonBase_C* SlotButton);
-	void OnEndHoveredSlot_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
-	void OnFocusedSlot_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
-	void OnHoveredSlot_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
-	void OnLeftClickedSlot_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
-	void OnMiddletClickedSlot_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
-	void OnRequestUse_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
-	void OnRightClickedSlot_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
-	void OnUnfocusedSlot_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
-	void OnUpdateSlotOverDisplayNumDefault(class UPalItemSlot* Slot_0);
 	void SetListName(const class FText& InName);
+	void OnUpdateSlotOverDisplayNumDefault(class UPalItemSlot* Slot_0);
+	void OnUnfocusedSlot_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
+	void OnRightClickedSlot_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
+	void OnRequestUse_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
+	void OnMiddletClickedSlot_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
+	void OnLeftClickedSlot_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
+	void OnHoveredSlot_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
+	void OnFocusedSlot_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
+	void OnEndHoveredSlot_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
+	void On_Update_Slot_Internal(class UWBP_PalItemSlotButtonBase_C* SlotButton);
+	void On_Drag_Detected_Internal(class UWBP_PalItemSlotButtonBase_C* Widget);
+	void IsAllSlotEmpty(bool* IsALLEmpty);
+	void GetFocusTarget(class UWidget** NewParam);
+	void GetAllItemSlotButtons(TArray<class UWBP_PalItemSlotButtonBase_C*>* slotButtons);
+	void Focus();
+	void FilteringFromItemTypeB(TArray<EPalItemTypeB>& displayItemTypesB, bool isEmptySlotDIsplay);
+	void FilteringFromItemTypeA(TArray<EPalItemTypeA>& displayTypesA, bool isEmptySlotDIsplay);
+	void ExecuteUbergraph_WBP_PalItemListBlock(int32 EntryPoint);
+	void EditCreatedSlotWidget(class UWBP_PalItemSlotButtonBase_C* createdSlotWidget, class UWidget** editedWidget);
+	void Destruct();
+	void Create_Item_Slot_Widget(class UPalItemSlot* TargetSlot, bool IsEnableQuickMove, bool IgnoreEmptySlot);
+	void Construct();
+	void ClearFiltering();
+	void ChangeItemSlotButtonClass(class UClass* NewClass);
+	void AddItemSlot(class UPalItemSlot* TargetSlot, bool bIsEnableQuickMove, bool bIgnoreEmptySlot);
+	void Add_Item_Container(class UPalItemContainer* TargetContainer, bool IsEnableQuickMove, bool IgnoreEmptySlot, int32 DisplayNumDefault);
 
 public:
 	static class UClass* StaticClass()

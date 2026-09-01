@@ -36,17 +36,17 @@ public:
 	struct FGameDateTime                          BossRespawnTimeAt;                                 // 0x04C8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_DungeonInfo_FixedDungeon(int32 EntryPoint);
-	void Set_Dungeon_Level(class UPalDungeonInstanceModel* DungeonInstanceModel);
-	void SetBossRespawnTimeAt(class UPalDungeonInstanceModel* DungeonInstanceModel);
-	void SetDungeonBossSpawned(class UPalDungeonInstanceModel* DungeonInstanceModel);
-	void SetDungeonName(class UPalDungeonInstanceModel* DungeonInstanceModel);
-	void Setup_by_Stage_Model(class UPalStageModelDungeon* InStageModel);
-	void SetupEvents(class UPalStageModelDungeon* StageModel);
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void Update_Display_Info(class UPalDungeonInstanceModel* DungeonInstanceModel);
-	void UpdateBossRespawnRemainTime();
 	void UpdateDungeonInfoByTick();
+	void UpdateBossRespawnRemainTime();
+	void Update_Display_Info(class UPalDungeonInstanceModel* DungeonInstanceModel);
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void SetupEvents(class UPalStageModelDungeon* StageModel);
+	void Setup_by_Stage_Model(class UPalStageModelDungeon* InStageModel);
+	void SetDungeonName(class UPalDungeonInstanceModel* DungeonInstanceModel);
+	void SetDungeonBossSpawned(class UPalDungeonInstanceModel* DungeonInstanceModel);
+	void SetBossRespawnTimeAt(class UPalDungeonInstanceModel* DungeonInstanceModel);
+	void Set_Dungeon_Level(class UPalDungeonInstanceModel* DungeonInstanceModel);
+	void ExecuteUbergraph_WBP_DungeonInfo_FixedDungeon(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

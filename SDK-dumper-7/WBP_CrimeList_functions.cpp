@@ -17,183 +17,57 @@
 namespace SDK
 {
 
-// Function WBP_CrimeList.WBP_CrimeList_C.AnmEvent_Default
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_CrimeList_C::AnmEvent_Default()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeList_C", "AnmEvent_Default");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CrimeList.WBP_CrimeList_C.AnmEvent_In
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_CrimeList_C::AnmEvent_In()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeList_C", "AnmEvent_In");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CrimeList.WBP_CrimeList_C.AnmEvent_Inprogress
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_CrimeList_C::AnmEvent_Inprogress()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeList_C", "AnmEvent_Inprogress");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CrimeList.WBP_CrimeList_C.AnmEvent_Out
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_CrimeList_C::AnmEvent_Out()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeList_C", "AnmEvent_Out");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CrimeList.WBP_CrimeList_C.Construct
+// Function WBP_CrimeList.WBP_CrimeList_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_CrimeList_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeList_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CrimeList.WBP_CrimeList_C.ExecuteUbergraph_WBP_CrimeList
-// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CrimeList_C::ExecuteUbergraph_WBP_CrimeList(int32 EntryPoint)
+void UWBP_CrimeList_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeList_C", "ExecuteUbergraph_WBP_CrimeList");
+		Func = Class->GetFunction("WBP_CrimeList_C", "Tick");
 
-	Params::WBP_CrimeList_C_ExecuteUbergraph_WBP_CrimeList Parms{};
+	Params::WBP_CrimeList_C_Tick Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CrimeList.WBP_CrimeList_C.Finished_F06653854F004C1F58C38EA2B1D3D934
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_CrimeList_C::Finished_F06653854F004C1F58C38EA2B1D3D934()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeList_C", "Finished_F06653854F004C1F58C38EA2B1D3D934");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CrimeList.WBP_CrimeList_C.RemoveAllCrime
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_CrimeList_C::RemoveAllCrime()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeList_C", "RemoveAllCrime");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CrimeList.WBP_CrimeList_C.SetCrimeList
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<class FName>&                    CrimeList                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_CrimeList_C::SetCrimeList(TArray<class FName>& CrimeList)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeList_C", "SetCrimeList");
-
-	Params::WBP_CrimeList_C_SetCrimeList Parms{};
-
-	Parms.CrimeList = std::move(CrimeList);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	CrimeList = std::move(Parms.CrimeList);
-}
-
-
-// Function WBP_CrimeList.WBP_CrimeList_C.SetGaugeProgress
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  CurrentTimer                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  MaxTime                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CrimeList_C::SetGaugeProgress(double CurrentTimer, double MaxTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeList_C", "SetGaugeProgress");
-
-	Params::WBP_CrimeList_C_SetGaugeProgress Parms{};
-
-	Parms.CurrentTimer = CurrentTimer;
-	Parms.MaxTime = MaxTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CrimeList.WBP_CrimeList_C.SetGaugeProgressInternal
+// Function WBP_CrimeList.WBP_CrimeList_C.SortCrime
 // (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  ProgressValue                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CrimeList_C::SetGaugeProgressInternal(double ProgressValue)
+void UWBP_CrimeList_C::SortCrime()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeList_C", "SetGaugeProgressInternal");
+		Func = Class->GetFunction("WBP_CrimeList_C", "SortCrime");
 
-	Params::WBP_CrimeList_C_SetGaugeProgressInternal Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.ProgressValue = ProgressValue;
+
+// Function WBP_CrimeList.WBP_CrimeList_C.SetWantedLevel
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   NewWantedLevel                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CrimeList_C::SetWantedLevel(int32 NewWantedLevel)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeList_C", "SetWantedLevel");
+
+	Params::WBP_CrimeList_C_SetWantedLevel Parms{};
+
+	Parms.NewWantedLevel = NewWantedLevel;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -219,59 +93,185 @@ void UWBP_CrimeList_C::SetPrizeMoney(int32 Money)
 }
 
 
-// Function WBP_CrimeList.WBP_CrimeList_C.SetWantedLevel
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_CrimeList.WBP_CrimeList_C.SetGaugeProgressInternal
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   NewWantedLevel                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  ProgressValue                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CrimeList_C::SetWantedLevel(int32 NewWantedLevel)
+void UWBP_CrimeList_C::SetGaugeProgressInternal(double ProgressValue)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeList_C", "SetWantedLevel");
+		Func = Class->GetFunction("WBP_CrimeList_C", "SetGaugeProgressInternal");
 
-	Params::WBP_CrimeList_C_SetWantedLevel Parms{};
+	Params::WBP_CrimeList_C_SetGaugeProgressInternal Parms{};
 
-	Parms.NewWantedLevel = NewWantedLevel;
+	Parms.ProgressValue = ProgressValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CrimeList.WBP_CrimeList_C.SortCrime
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_CrimeList.WBP_CrimeList_C.SetGaugeProgress
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  CurrentTimer                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  MaxTime                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CrimeList_C::SortCrime()
+void UWBP_CrimeList_C::SetGaugeProgress(double CurrentTimer, double MaxTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeList_C", "SortCrime");
+		Func = Class->GetFunction("WBP_CrimeList_C", "SetGaugeProgress");
+
+	Params::WBP_CrimeList_C_SetGaugeProgress Parms{};
+
+	Parms.CurrentTimer = CurrentTimer;
+	Parms.MaxTime = MaxTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimeList.WBP_CrimeList_C.SetCrimeList
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<class FName>&                    CrimeList                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_CrimeList_C::SetCrimeList(TArray<class FName>& CrimeList)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeList_C", "SetCrimeList");
+
+	Params::WBP_CrimeList_C_SetCrimeList Parms{};
+
+	Parms.CrimeList = std::move(CrimeList);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	CrimeList = std::move(Parms.CrimeList);
+}
+
+
+// Function WBP_CrimeList.WBP_CrimeList_C.RemoveAllCrime
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_CrimeList_C::RemoveAllCrime()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeList_C", "RemoveAllCrime");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_CrimeList.WBP_CrimeList_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_CrimeList.WBP_CrimeList_C.Finished_F06653854F004C1F58C38EA2B1D3D934
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_CrimeList_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+void UWBP_CrimeList_C::Finished_F06653854F004C1F58C38EA2B1D3D934()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeList_C", "Tick");
+		Func = Class->GetFunction("WBP_CrimeList_C", "Finished_F06653854F004C1F58C38EA2B1D3D934");
 
-	Params::WBP_CrimeList_C_Tick Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
+
+// Function WBP_CrimeList.WBP_CrimeList_C.ExecuteUbergraph_WBP_CrimeList
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CrimeList_C::ExecuteUbergraph_WBP_CrimeList(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeList_C", "ExecuteUbergraph_WBP_CrimeList");
+
+	Params::WBP_CrimeList_C_ExecuteUbergraph_WBP_CrimeList Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimeList.WBP_CrimeList_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_CrimeList_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeList_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CrimeList.WBP_CrimeList_C.AnmEvent_Out
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_CrimeList_C::AnmEvent_Out()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeList_C", "AnmEvent_Out");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CrimeList.WBP_CrimeList_C.AnmEvent_Inprogress
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_CrimeList_C::AnmEvent_Inprogress()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeList_C", "AnmEvent_Inprogress");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CrimeList.WBP_CrimeList_C.AnmEvent_In
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_CrimeList_C::AnmEvent_In()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeList_C", "AnmEvent_In");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CrimeList.WBP_CrimeList_C.AnmEvent_Default
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_CrimeList_C::AnmEvent_Default()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeList_C", "AnmEvent_Default");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

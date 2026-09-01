@@ -42,16 +42,16 @@ public:
 	bool                                          RightReady;                                        // 0x04C1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void CancelShoot();
-	void ExecuteUbergraph_BP_SkillEffect_DoubleTornadoBase(int32 EntryPoint);
-	void MoveToTargetLocation(class APalSkillEffectBase*& Tornado, double DeltaTime, const struct FVector2D& TargetLocation2D, const struct FVector2D& NormalizedDirection2D, struct FVector2D* NewDirection, struct FVector2D* NewTargetLocation2D);
-	void OnInitialize();
-	void OnTornadoReady(class APalSkillEffectBase* SkillEffect);
-	void ReceiveTick(float DeltaSeconds);
-	void ShootBullet(const struct FVector& TargetLocation);
-	void ShootTornado(bool IsLeft, class APalSkillEffectBase** SkillEffect);
-	void SpawnLeftTornado();
 	void SpawnRightTornado();
+	void SpawnLeftTornado();
+	void ShootTornado(bool IsLeft, class APalSkillEffectBase** SkillEffect);
+	void ShootBullet(const struct FVector& TargetLocation);
+	void ReceiveTick(float DeltaSeconds);
+	void OnTornadoReady(class APalSkillEffectBase* SkillEffect);
+	void OnInitialize();
+	void MoveToTargetLocation(class APalSkillEffectBase*& Tornado, double DeltaTime, const struct FVector2D& TargetLocation2D, const struct FVector2D& NormalizedDirection2D, struct FVector2D* NewDirection, struct FVector2D* NewTargetLocation2D);
+	void ExecuteUbergraph_BP_SkillEffect_DoubleTornadoBase(int32 EntryPoint);
+	void CancelShoot();
 
 public:
 	static class UClass* StaticClass()

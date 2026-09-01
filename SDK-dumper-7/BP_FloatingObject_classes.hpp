@@ -30,9 +30,9 @@ public:
 	double                                        Speed;                                             // 0x02D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_FloatingObject(int32 EntryPoint);
-	void ReceiveTick(float DeltaSeconds);
 	void Setup(class USceneComponent* InScene, const struct FVector& InBeginPos);
+	void ReceiveTick(float DeltaSeconds);
+	void ExecuteUbergraph_BP_FloatingObject(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

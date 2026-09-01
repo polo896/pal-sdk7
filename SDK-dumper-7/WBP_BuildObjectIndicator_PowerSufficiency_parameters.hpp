@@ -19,14 +19,18 @@
 namespace SDK::Params
 {
 
-// Function WBP_BuildObjectIndicator_PowerSufficiency.WBP_BuildObjectIndicator_PowerSufficiency_C.ExecuteUbergraph_WBP_BuildObjectIndicator_PowerSufficiency
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_BuildObjectIndicator_PowerSufficiency_C_ExecuteUbergraph_WBP_BuildObjectIndicator_PowerSufficiency final
+// Function WBP_BuildObjectIndicator_PowerSufficiency.WBP_BuildObjectIndicator_PowerSufficiency_C.SetupUI
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_BuildObjectIndicator_PowerSufficiency_C_SetupUI final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectEnergyModule*              EnergyModule;                                      // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UPalMapObjectEnergyModule* Module)> K2Node_CreateDelegate_OutputDelegate;   // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDDispatchParameter_MapObjectEnergyModule* K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_Map_Object_Energy_Module; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BuildObjectIndicator_PowerSufficiency_C_ExecuteUbergraph_WBP_BuildObjectIndicator_PowerSufficiency;
+DUMPER7_ASSERTS_WBP_BuildObjectIndicator_PowerSufficiency_C_SetupUI;
 
 // Function WBP_BuildObjectIndicator_PowerSufficiency.WBP_BuildObjectIndicator_PowerSufficiency_C.OnUpdateEnergyModuleState
 // 0x0070 (0x0070 - 0x0000)
@@ -51,18 +55,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_BuildObjectIndicator_PowerSufficiency_C_OnUpdateEnergyModuleState;
 
-// Function WBP_BuildObjectIndicator_PowerSufficiency.WBP_BuildObjectIndicator_PowerSufficiency_C.SetupUI
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_BuildObjectIndicator_PowerSufficiency_C_SetupUI final
+// Function WBP_BuildObjectIndicator_PowerSufficiency.WBP_BuildObjectIndicator_PowerSufficiency_C.ExecuteUbergraph_WBP_BuildObjectIndicator_PowerSufficiency
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_BuildObjectIndicator_PowerSufficiency_C_ExecuteUbergraph_WBP_BuildObjectIndicator_PowerSufficiency final
 {
 public:
-	class UPalMapObjectEnergyModule*              EnergyModule;                                      // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UPalMapObjectEnergyModule* Module)> K2Node_CreateDelegate_OutputDelegate;   // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDDispatchParameter_MapObjectEnergyModule* K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_Map_Object_Energy_Module; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BuildObjectIndicator_PowerSufficiency_C_SetupUI;
+DUMPER7_ASSERTS_WBP_BuildObjectIndicator_PowerSufficiency_C_ExecuteUbergraph_WBP_BuildObjectIndicator_PowerSufficiency;
 
 }
 

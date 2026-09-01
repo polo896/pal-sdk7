@@ -19,6 +19,16 @@
 namespace SDK::Params
 {
 
+// Function WBP_IngameMenu_WorkSpace_Item.WBP_IngameMenu_WorkSpace_Item_C.Setup
+// 0x000C (0x000C - 0x0000)
+struct WBP_IngameMenu_WorkSpace_Item_C_Setup final
+{
+public:
+	class FName                                   ItemStaticId;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         requireNum;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_Item_C_Setup;
+
 // Function WBP_IngameMenu_WorkSpace_Item.WBP_IngameMenu_WorkSpace_Item_C.ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Item
 // 0x0180 (0x0180 - 0x0000)
 struct WBP_IngameMenu_WorkSpace_Item_C_ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Item final
@@ -54,16 +64,6 @@ public:
 	int32                                         CallFunc_CountItemNum_ReturnValue;                 // 0x017C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_Item_C_ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Item;
-
-// Function WBP_IngameMenu_WorkSpace_Item.WBP_IngameMenu_WorkSpace_Item_C.Setup
-// 0x000C (0x000C - 0x0000)
-struct WBP_IngameMenu_WorkSpace_Item_C_Setup final
-{
-public:
-	class FName                                   ItemStaticId;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         requireNum;                                        // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_Item_C_Setup;
 
 }
 

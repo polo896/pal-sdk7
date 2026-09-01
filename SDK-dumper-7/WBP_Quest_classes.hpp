@@ -68,37 +68,37 @@ public:
 	TSoftObjectPtr<class UWBP_Quest_ListButton_C> LastClickedQuestButton;                            // 0x05A0(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, InstancedReference, HasGetValueTypeHash)
 
 public:
-	void AddCompletedQuestId(TArray<class FName>& QuestIdArray);
-	void AddOrderedQuestData(TArray<class UPalQuestData*>& QuestArray);
-	void AddQuestProgress(TArray<class UPalQuestBlock*>& QuestBlocks);
-	void BndEvt__WBP_Quest_WBP_QuestTab_K2Node_ComponentBoundEvent_0_OnChangedFocusIndex__DelegateSignature(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
-	void BndEvt__WBP_Quest_WBP_QuestTab_K2Node_ComponentBoundEvent_1_OnChangeEnableChild__DelegateSignature(int32 Index_0, class UWidget* ChildWidget, bool IsEnable);
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_Quest(int32 EntryPoint);
-	void GetCurrentDisplayQuestId(class FName* QuestId);
-	void GetFocusTargetByQuestId(class FName QuestId, class UWidget** Widget);
-	void GetTopFocusTarget(class UWidget** Widget);
-	void GetTopQuestData(class UPalQuestData** QuestData);
-	void NextTab();
-	void OnClickedQuestButton_Binded(class UWBP_Quest_ListButton_C* Widget);
-	void OnHoveredQuestButton_Binded(class UWBP_Quest_ListButton_C* Widget);
-	void OnHoveredRewardItemSlot(class UWBP_PalItemSlotButtonBase_C* Widget);
-	void OnInitialized();
-	void OnUnhoveredQuestButton_Binded(class UWBP_Quest_ListButton_C* Widget);
-	void OnUnhoveredRewardItemSlot(class UWBP_PalItemSlotButtonBase_C* Widget);
-	void PrevTab();
-	void ResetQuestProgressDetail();
-	void SelectTab(EPalQuestType QuestType);
-	void SetCommonRewardData(const class FText& NewParam);
-	void SetDisplayQuestData(class UPalQuestData* QuestData);
-	void SetQuestDescription(const class FText& QuestDescText);
-	void SetQuestName(const class FText& QuestNameText);
-	void SetRewardData(const struct FPalCommonQuestRewardData& CommonRewardData, const struct FPalCommonQuestRewardData& CustomData);
-	void SetTrackingQuestId(class FName QuestId);
-	void Setup();
-	void UpdateTabEnable();
 	void UpdateTrackingKeyGuideText();
+	void UpdateTabEnable();
+	void Setup();
+	void SetTrackingQuestId(class FName QuestId);
+	void SetRewardData(const struct FPalCommonQuestRewardData& CommonRewardData, const struct FPalCommonQuestRewardData& CustomData);
+	void SetQuestName(const class FText& QuestNameText);
+	void SetQuestDescription(const class FText& QuestDescText);
+	void SetDisplayQuestData(class UPalQuestData* QuestData);
+	void SetCommonRewardData(const class FText& NewParam);
+	void SelectTab(EPalQuestType QuestType);
+	void ResetQuestProgressDetail();
+	void PrevTab();
+	void OnUnhoveredRewardItemSlot(class UWBP_PalItemSlotButtonBase_C* Widget);
+	void OnUnhoveredQuestButton_Binded(class UWBP_Quest_ListButton_C* Widget);
+	void OnInitialized();
+	void OnHoveredRewardItemSlot(class UWBP_PalItemSlotButtonBase_C* Widget);
+	void OnHoveredQuestButton_Binded(class UWBP_Quest_ListButton_C* Widget);
+	void OnClickedQuestButton_Binded(class UWBP_Quest_ListButton_C* Widget);
+	void NextTab();
+	void GetTopQuestData(class UPalQuestData** QuestData);
+	void GetCurrentDisplayQuestId(class FName* QuestId);
+	void ExecuteUbergraph_WBP_Quest(int32 EntryPoint);
+	void Destruct();
+	void Construct();
+	void BndEvt__WBP_Quest_WBP_QuestTab_K2Node_ComponentBoundEvent_1_OnChangeEnableChild__DelegateSignature(int32 Index_0, class UWidget* ChildWidget, bool IsEnable);
+	void GetTopFocusTarget(class UWidget** Widget);
+	void GetFocusTargetByQuestId(class FName QuestId, class UWidget** Widget);
+	void BndEvt__WBP_Quest_WBP_QuestTab_K2Node_ComponentBoundEvent_0_OnChangedFocusIndex__DelegateSignature(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
+	void AddQuestProgress(TArray<class UPalQuestBlock*>& QuestBlocks);
+	void AddOrderedQuestData(TArray<class UPalQuestData*>& QuestArray);
+	void AddCompletedQuestId(TArray<class FName>& QuestIdArray);
 
 public:
 	static class UClass* StaticClass()

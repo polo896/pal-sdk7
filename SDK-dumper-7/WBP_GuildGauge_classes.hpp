@@ -45,17 +45,17 @@ public:
 	class UMaterialInstanceDynamic*               EnemyColorMat;                                     // 0x0300(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_GuildGauge(int32 EntryPoint);
-	void OnInitialized();
-	void Set_Display_Type(E_PalUIGuildHPGaugeDisplayType NewDisplayType);
-	void Set_Shield(const struct FFixedPoint64& NowSh, const struct FFixedPoint64& MaxSh);
-	void SetDying(class UBP_Status_Dying_C* DyingStatus, bool Enable);
-	void SetGuildName(const class FString& GuildName, const struct FGuid& GuildNameModifierPlayerUId);
-	void SetHP(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& MaxHP);
-	void SetLevel(int32 Level);
-	void SetNickName(const class FString& NewNickName, TSoftObjectPtr<class UPalIndividualCharacterHandle> Handle);
-	void SetVoiceChatStatus(bool IsListenMuted, bool IsSpeakerMuted, bool IsSpeaking, bool IsValidCall);
 	void UpdateForTick(double DeltaTime);
+	void SetVoiceChatStatus(bool IsListenMuted, bool IsSpeakerMuted, bool IsSpeaking, bool IsValidCall);
+	void SetNickName(const class FString& NewNickName, TSoftObjectPtr<class UPalIndividualCharacterHandle> Handle);
+	void SetLevel(int32 Level);
+	void SetHP(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& MaxHP);
+	void SetGuildName(const class FString& GuildName, const struct FGuid& GuildNameModifierPlayerUId);
+	void SetDying(class UBP_Status_Dying_C* DyingStatus, bool Enable);
+	void Set_Shield(const struct FFixedPoint64& NowSh, const struct FFixedPoint64& MaxSh);
+	void Set_Display_Type(E_PalUIGuildHPGaugeDisplayType NewDisplayType);
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_GuildGauge(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

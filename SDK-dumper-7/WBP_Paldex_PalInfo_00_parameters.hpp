@@ -17,73 +17,66 @@
 namespace SDK::Params
 {
 
-// Function WBP_Paldex_PalInfo_00.WBP_Paldex_PalInfo_00_C.ChangePalInfoScrollOffset
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Paldex_PalInfo_00_C_ChangePalInfoScrollOffset final
+// Function WBP_Paldex_PalInfo_00.WBP_Paldex_PalInfo_00_C.Tick
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_Paldex_PalInfo_00_C_Tick final
 {
 public:
-	double                                        Offset;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Paldex_PalInfo_00_C_ChangePalInfoScrollOffset;
+DUMPER7_ASSERTS_WBP_Paldex_PalInfo_00_C_Tick;
 
-// Function WBP_Paldex_PalInfo_00.WBP_Paldex_PalInfo_00_C.ExecuteUbergraph_WBP_Paldex_PalInfo_00
-// 0x00C0 (0x00C0 - 0x0000)
-struct WBP_Paldex_PalInfo_00_C_ExecuteUbergraph_WBP_Paldex_PalInfo_00 final
+// Function WBP_Paldex_PalInfo_00.WBP_Paldex_PalInfo_00_C.ShouldDisplay
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Paldex_PalInfo_00_C_ShouldDisplay final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalRightStickScrollSubsystem*          CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0010(0x0040)(IsPlainOldData, NoDestructor)
-	float                                         K2Node_Event_InDeltaTime;                          // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UWBP_Paldex_DropItem_C*>         K2Node_MakeArray_Array;                            // 0x0058(0x0010)(ReferenceParm, ContainsInstancedReference)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_DoubleDouble_ReturnValue;        // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_79[0x3];                                       // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetScrollOffsetOfEnd_ReturnValue;         // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetScrollOffset_ReturnValue;              // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_FMax_ReturnValue;                         // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_FMin_ReturnValue;                         // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_B_ImplicitCast;     // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_FMin_B_ImplicitCast;                      // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScrollOffset_NewScrollOffset_ImplicitCast; // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CharacterID;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDisplay;                                          // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue_1;        // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Paldex_PalInfo_00_C_ExecuteUbergraph_WBP_Paldex_PalInfo_00;
+DUMPER7_ASSERTS_WBP_Paldex_PalInfo_00_C_ShouldDisplay;
 
-// Function WBP_Paldex_PalInfo_00.WBP_Paldex_PalInfo_00_C.HideDropItems
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_Paldex_PalInfo_00_C_HideDropItems final
+// Function WBP_Paldex_PalInfo_00.WBP_Paldex_PalInfo_00_C.SetupCaptureBonusInfo
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_Paldex_PalInfo_00_C_SetupCaptureBonusInfo final
 {
 public:
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Paldex_DropItem_C*                 CallFunc_Array_Get_Item;                           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CharacterID;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalPlayerRecordData*                   CallFunc_GetLocalRecordData_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetRecordData_Int_ReturnValue;            // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetRecordData_Int_ReturnValue_1;          // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1A[0x2];                                       // 0x001A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Min_ReturnValue;                          // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Paldex_PalInfo_00_C_HideDropItems;
+DUMPER7_ASSERTS_WBP_Paldex_PalInfo_00_C_SetupCaptureBonusInfo;
 
-// Function WBP_Paldex_PalInfo_00.WBP_Paldex_PalInfo_00_C.Setup
-// 0x00E8 (0x00E8 - 0x0000)
-struct WBP_Paldex_PalInfo_00_C_Setup final
+// Function WBP_Paldex_PalInfo_00.WBP_Paldex_PalInfo_00_C.Setup_NotEncounted
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_Paldex_PalInfo_00_C_Setup_NotEncounted final
 {
 public:
 	struct FPalUIPaldex_DisplayInfo               DisplayInfo;                                       // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
-	TMap<EPalWorkSuitability, int32>              NewLocalVar;                                       // 0x0038(0x0050)(Edit, BlueprintVisible)
-	bool                                          CallFunc_ShouldDisplay_bDisplay;                   // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8A[0x6];                                       // 0x008A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalDatabaseCharacterParameter*         CallFunc_GetDatabaseCharacterParameter_ReturnValue; // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TMap<EPalWorkSuitability, int32>              CallFunc_GetWorkSuitabilityRank_WorkSuitabilities; // 0x0098(0x0050)()
 };
-DUMPER7_ASSERTS_WBP_Paldex_PalInfo_00_C_Setup;
+DUMPER7_ASSERTS_WBP_Paldex_PalInfo_00_C_Setup_NotEncounted;
+
+// Function WBP_Paldex_PalInfo_00.WBP_Paldex_PalInfo_00_C.Setup_Encounted
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_Paldex_PalInfo_00_C_Setup_Encounted final
+{
+public:
+	struct FPalUIPaldex_DisplayInfo               DisplayInfo;                                       // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_Paldex_PalInfo_00_C_Setup_Encounted;
 
 // Function WBP_Paldex_PalInfo_00.WBP_Paldex_PalInfo_00_C.Setup_Captured
 // 0x01F0 (0x01F0 - 0x0000)
@@ -128,66 +121,73 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Paldex_PalInfo_00_C_Setup_Captured;
 
-// Function WBP_Paldex_PalInfo_00.WBP_Paldex_PalInfo_00_C.Setup_Encounted
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_Paldex_PalInfo_00_C_Setup_Encounted final
+// Function WBP_Paldex_PalInfo_00.WBP_Paldex_PalInfo_00_C.Setup
+// 0x00E8 (0x00E8 - 0x0000)
+struct WBP_Paldex_PalInfo_00_C_Setup final
 {
 public:
 	struct FPalUIPaldex_DisplayInfo               DisplayInfo;                                       // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
+	TMap<EPalWorkSuitability, int32>              NewLocalVar;                                       // 0x0038(0x0050)(Edit, BlueprintVisible)
+	bool                                          CallFunc_ShouldDisplay_bDisplay;                   // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8A[0x6];                                       // 0x008A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalDatabaseCharacterParameter*         CallFunc_GetDatabaseCharacterParameter_ReturnValue; // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TMap<EPalWorkSuitability, int32>              CallFunc_GetWorkSuitabilityRank_WorkSuitabilities; // 0x0098(0x0050)()
 };
-DUMPER7_ASSERTS_WBP_Paldex_PalInfo_00_C_Setup_Encounted;
+DUMPER7_ASSERTS_WBP_Paldex_PalInfo_00_C_Setup;
 
-// Function WBP_Paldex_PalInfo_00.WBP_Paldex_PalInfo_00_C.Setup_NotEncounted
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_Paldex_PalInfo_00_C_Setup_NotEncounted final
+// Function WBP_Paldex_PalInfo_00.WBP_Paldex_PalInfo_00_C.HideDropItems
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_Paldex_PalInfo_00_C_HideDropItems final
 {
 public:
-	struct FPalUIPaldex_DisplayInfo               DisplayInfo;                                       // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Paldex_DropItem_C*                 CallFunc_Array_Get_Item;                           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Paldex_PalInfo_00_C_Setup_NotEncounted;
+DUMPER7_ASSERTS_WBP_Paldex_PalInfo_00_C_HideDropItems;
 
-// Function WBP_Paldex_PalInfo_00.WBP_Paldex_PalInfo_00_C.SetupCaptureBonusInfo
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_Paldex_PalInfo_00_C_SetupCaptureBonusInfo final
+// Function WBP_Paldex_PalInfo_00.WBP_Paldex_PalInfo_00_C.ExecuteUbergraph_WBP_Paldex_PalInfo_00
+// 0x00C0 (0x00C0 - 0x0000)
+struct WBP_Paldex_PalInfo_00_C_ExecuteUbergraph_WBP_Paldex_PalInfo_00 final
 {
 public:
-	class FName                                   CharacterID;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalPlayerRecordData*                   CallFunc_GetLocalRecordData_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetRecordData_Int_ReturnValue;            // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetRecordData_Int_ReturnValue_1;          // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1A[0x2];                                       // 0x001A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Min_ReturnValue;                          // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalRightStickScrollSubsystem*          CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0010(0x0040)(IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_InDeltaTime;                          // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UWBP_Paldex_DropItem_C*>         K2Node_MakeArray_Array;                            // 0x0058(0x0010)(ReferenceParm, ContainsInstancedReference)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_DoubleDouble_ReturnValue;        // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_79[0x3];                                       // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetScrollOffsetOfEnd_ReturnValue;         // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetScrollOffset_ReturnValue;              // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_FMax_ReturnValue;                         // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_FMin_ReturnValue;                         // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_B_ImplicitCast;     // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_FMin_B_ImplicitCast;                      // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScrollOffset_NewScrollOffset_ImplicitCast; // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Paldex_PalInfo_00_C_SetupCaptureBonusInfo;
+DUMPER7_ASSERTS_WBP_Paldex_PalInfo_00_C_ExecuteUbergraph_WBP_Paldex_PalInfo_00;
 
-// Function WBP_Paldex_PalInfo_00.WBP_Paldex_PalInfo_00_C.ShouldDisplay
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Paldex_PalInfo_00_C_ShouldDisplay final
+// Function WBP_Paldex_PalInfo_00.WBP_Paldex_PalInfo_00_C.ChangePalInfoScrollOffset
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Paldex_PalInfo_00_C_ChangePalInfoScrollOffset final
 {
 public:
-	class FName                                   CharacterID;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDisplay;                                          // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue_1;        // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Offset;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Paldex_PalInfo_00_C_ShouldDisplay;
-
-// Function WBP_Paldex_PalInfo_00.WBP_Paldex_PalInfo_00_C.Tick
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_Paldex_PalInfo_00_C_Tick final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Paldex_PalInfo_00_C_Tick;
+DUMPER7_ASSERTS_WBP_Paldex_PalInfo_00_C_ChangePalInfoScrollOffset;
 
 }
 

@@ -31,8 +31,8 @@ public:
 	class UAkAudioEvent*                          OpenSE;                                            // 0x0478(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_MapObject_TreasureBox_RequiredLongHold_Junk(int32 EntryPoint);
 	void TriggerOpen();
+	void ExecuteUbergraph_BP_MapObject_TreasureBox_RequiredLongHold_Junk(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

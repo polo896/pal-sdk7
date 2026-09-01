@@ -32,16 +32,16 @@ public:
 	TMulticastInlineDelegate<void()>              OnSelectedDistributionTab;                         // 0x04E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__WBP_Paldex_tabset_WBP_Main_Menu_Tab_Key_L_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature();
-	void BndEvt__WBP_Paldex_tabset_WBP_Main_Menu_Tab_Key_R_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
-	void BndEvt__WBP_Paldex_tabset_WBP_Paldex_tab_Distribution_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
-	void BndEvt__WBP_Paldex_tabset_WBP_Paldex_tab_Model_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
-	void ExecuteUbergraph_WBP_MenuESC_tabset(int32 EntryPoint);
-	void OnChangedIndexEvent(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
-	void OnInitialized();
-	void OnNextEvent(int32 OldIndex, int32 NewIndex);
-	void OnPrevEvent(int32 OldIndex, int32 NewIndex);
 	void RegisterPanelWidget(class UPanelWidget** PanelWidget);
+	void OnPrevEvent(int32 OldIndex, int32 NewIndex);
+	void OnNextEvent(int32 OldIndex, int32 NewIndex);
+	void OnInitialized();
+	void OnChangedIndexEvent(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
+	void ExecuteUbergraph_WBP_MenuESC_tabset(int32 EntryPoint);
+	void BndEvt__WBP_Paldex_tabset_WBP_Paldex_tab_Model_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
+	void BndEvt__WBP_Paldex_tabset_WBP_Paldex_tab_Distribution_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
+	void BndEvt__WBP_Paldex_tabset_WBP_Main_Menu_Tab_Key_R_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
+	void BndEvt__WBP_Paldex_tabset_WBP_Main_Menu_Tab_Key_L_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()

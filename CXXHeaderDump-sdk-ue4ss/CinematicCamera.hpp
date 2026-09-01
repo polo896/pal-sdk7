@@ -39,7 +39,7 @@ struct FCameraLookatTrackingSettings
     uint8 bEnableLookAtTracking;                                                      // 0x0000 (size: 0x1)
     uint8 bDrawDebugLookAtTrackingPosition;                                           // 0x0000 (size: 0x1)
     float LookAtTrackingInterpSpeed;                                                  // 0x0004 (size: 0x4)
-    TSoftObjectPtr<AActor> ActorToTrack;                                              // 0x0020 (size: 0x30)
+    TSoftObjectPtr<class AActor> ActorToTrack;                                        // 0x0020 (size: 0x30)
     FVector RelativeOffset;                                                           // 0x0050 (size: 0x18)
     uint8 bAllowRoll;                                                                 // 0x0068 (size: 0x1)
 
@@ -47,7 +47,7 @@ struct FCameraLookatTrackingSettings
 
 struct FCameraTrackingFocusSettings
 {
-    TSoftObjectPtr<AActor> ActorToTrack;                                              // 0x0000 (size: 0x30)
+    TSoftObjectPtr<class AActor> ActorToTrack;                                        // 0x0000 (size: 0x30)
     FVector RelativeOffset;                                                           // 0x0030 (size: 0x18)
     uint8 bDrawDebugTrackingFocusPoint;                                               // 0x0048 (size: 0x1)
 

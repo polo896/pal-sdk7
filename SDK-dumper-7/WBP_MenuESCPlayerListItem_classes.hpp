@@ -49,22 +49,22 @@ public:
 	bool                                          IsSamePlatform;                                    // 0x03A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BlockPlayerUId(const class FString& InPlayerUId, const class FString& InPlayerName);
-	void BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void CopyPlayerUId(const class FString& InPlayerUId, const class FString& InPlayerName);
-	void CopyUserId(const class FString& InUserId, const class FString& InPlayerName);
-	void ExecuteUbergraph_WBP_MenuESCPlayerListItem(int32 EntryPoint);
-	void GetDisplayInfo(struct FPalUIGuildMemberDisplayInfo* DisplayInfo);
-	void GetFocusTarget(class UWidget** TargetWidget);
-	void MutePlayerUId(const class FString& InPlayerUId, const class FString& InPlayerName);
-	void On_Right_Clicked_Internal();
-	struct FEventReply OnKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
-	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	void SetPlayerName(const class FString& PlayerName);
-	void Setup(const class FString& PlayerName, const class FString& PlayerUId, const class FString& UserId, const class FString& NickName, EPalPlayerPlatform PlayerPlatform, bool bMute);
 	void カスタムイベント(bool bResult);
+	void Setup(const class FString& PlayerName, const class FString& PlayerUId, const class FString& UserId, const class FString& NickName, EPalPlayerPlatform PlayerPlatform, bool bMute);
+	void SetPlayerName(const class FString& PlayerName);
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	struct FEventReply OnKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
+	void On_Right_Clicked_Internal();
+	void MutePlayerUId(const class FString& InPlayerUId, const class FString& InPlayerName);
+	void GetFocusTarget(class UWidget** TargetWidget);
+	void GetDisplayInfo(struct FPalUIGuildMemberDisplayInfo* DisplayInfo);
+	void ExecuteUbergraph_WBP_MenuESCPlayerListItem(int32 EntryPoint);
+	void CopyUserId(const class FString& InUserId, const class FString& InPlayerName);
+	void CopyPlayerUId(const class FString& InPlayerUId, const class FString& InPlayerName);
+	void BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BlockPlayerUId(const class FString& InPlayerUId, const class FString& InPlayerName);
 
 public:
 	static class UClass* StaticClass()

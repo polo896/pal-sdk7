@@ -28,11 +28,11 @@ public:
 	class UPostProcessComponent*                  PostProcess_Detected;                              // 0x02C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_PalBiomeTriggerBox_WildlifeSanctuary(int32 EntryPoint);
-	void OnAlertStateChanged(EPalWildlifeSanctuaryAlertState NewState, class APalPlayerCharacter* DetectedPlayer);
-	void ReceiveActorBeginOverlap(class AActor* OtherActor);
-	void ReceiveActorEndOverlap(class AActor* OtherActor);
 	void ReceiveBeginPlay();
+	void ReceiveActorEndOverlap(class AActor* OtherActor);
+	void ReceiveActorBeginOverlap(class AActor* OtherActor);
+	void OnAlertStateChanged(EPalWildlifeSanctuaryAlertState NewState, class APalPlayerCharacter* DetectedPlayer);
+	void ExecuteUbergraph_BP_PalBiomeTriggerBox_WildlifeSanctuary(int32 EntryPoint);
 
 	bool ShouldMaintainAlertWhilePresent() const;
 

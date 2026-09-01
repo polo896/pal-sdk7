@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "S_PPSkyCreatorTimePreset_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "S_PPSkyCreatorTimePreset_structs.hpp"
 
 
 namespace SDK
@@ -34,12 +34,12 @@ public:
 	class UPPSkyCreatorWeatherPreset*             next_preset;                                       // 0x02D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_PPSkyCreatorWeatherPresetController(int32 EntryPoint);
-	void GetPrePreset(int32 Index_0, class UPPSkyCreatorWeatherPreset** Pre);
-	void GetPresets(double Time_0, class UPPSkyCreatorWeatherPreset** CurrentPreset, class UPPSkyCreatorWeatherPreset** NextPreset, double* Alpha_0, int32* PresetIndex);
-	void ReceiveBeginPlay();
-	void ReceiveTick(float DeltaSeconds);
 	void SetBrightness();
+	void ReceiveTick(float DeltaSeconds);
+	void ReceiveBeginPlay();
+	void GetPresets(double Time_0, class UPPSkyCreatorWeatherPreset** CurrentPreset, class UPPSkyCreatorWeatherPreset** NextPreset, double* Alpha_0, int32* PresetIndex);
+	void GetPrePreset(int32 Index_0, class UPPSkyCreatorWeatherPreset** Pre);
+	void ExecuteUbergraph_BP_PPSkyCreatorWeatherPresetController(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

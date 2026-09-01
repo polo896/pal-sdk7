@@ -4,7 +4,7 @@
 ---@field UberGraphFrame FPointerToUberGraphFrame
 ---@field Effect UNiagaraComponent
 ---@field Scale double
----@field isInit boolean
+---@field IsInit boolean
 local UBP_VisualEffect_RarePal_C = {}
 
 ---@param IsSizeInitialized boolean

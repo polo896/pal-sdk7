@@ -28,11 +28,11 @@ public:
 	class UBP_PalTextBlock_C*                     Text_LevelNum;                                     // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_IngameMenu_CampLevelUp(int32 EntryPoint);
-	void Finished_CFA6A904409DD4F86430DFBC13F511B5();
-	void SequenceEvent();
-	void SequenceEvent__ENTRYPOINTWBP_IngameMenu_CampLevelUp();
 	void ShowLevelUp(int32 Level);
+	void SequenceEvent__ENTRYPOINTWBP_IngameMenu_CampLevelUp();
+	void SequenceEvent();
+	void Finished_CFA6A904409DD4F86430DFBC13F511B5();
+	void ExecuteUbergraph_WBP_IngameMenu_CampLevelUp(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

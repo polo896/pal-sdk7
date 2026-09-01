@@ -17,21 +17,21 @@
 namespace SDK
 {
 
-// Function BP_SkillEffect_GrassTornado.BP_SkillEffect_GrassTornado_C.ExecuteUbergraph_BP_SkillEffect_GrassTornado
-// (Final, UbergraphFunction)
+// Function BP_SkillEffect_GrassTornado.BP_SkillEffect_GrassTornado_C.OnTornadoReady
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APalSkillEffectBase*              SkillEffect                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SkillEffect_GrassTornado_C::ExecuteUbergraph_BP_SkillEffect_GrassTornado(int32 EntryPoint)
+void ABP_SkillEffect_GrassTornado_C::OnTornadoReady(class APalSkillEffectBase* SkillEffect)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkillEffect_GrassTornado_C", "ExecuteUbergraph_BP_SkillEffect_GrassTornado");
+		Func = Class->GetFunction("BP_SkillEffect_GrassTornado_C", "OnTornadoReady");
 
-	Params::BP_SkillEffect_GrassTornado_C_ExecuteUbergraph_BP_SkillEffect_GrassTornado Parms{};
+	Params::BP_SkillEffect_GrassTornado_C_OnTornadoReady Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.SkillEffect = SkillEffect;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -51,21 +51,21 @@ void ABP_SkillEffect_GrassTornado_C::OnInitialize()
 }
 
 
-// Function BP_SkillEffect_GrassTornado.BP_SkillEffect_GrassTornado_C.OnTornadoReady
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_SkillEffect_GrassTornado.BP_SkillEffect_GrassTornado_C.ExecuteUbergraph_BP_SkillEffect_GrassTornado
+// (Final, UbergraphFunction)
 // Parameters:
-// class APalSkillEffectBase*              SkillEffect                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SkillEffect_GrassTornado_C::OnTornadoReady(class APalSkillEffectBase* SkillEffect)
+void ABP_SkillEffect_GrassTornado_C::ExecuteUbergraph_BP_SkillEffect_GrassTornado(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkillEffect_GrassTornado_C", "OnTornadoReady");
+		Func = Class->GetFunction("BP_SkillEffect_GrassTornado_C", "ExecuteUbergraph_BP_SkillEffect_GrassTornado");
 
-	Params::BP_SkillEffect_GrassTornado_C_OnTornadoReady Parms{};
+	Params::BP_SkillEffect_GrassTornado_C_ExecuteUbergraph_BP_SkillEffect_GrassTornado Parms{};
 
-	Parms.SkillEffect = SkillEffect;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

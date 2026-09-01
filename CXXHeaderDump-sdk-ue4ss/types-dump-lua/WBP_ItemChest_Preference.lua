@@ -1,0 +1,28 @@
+---@meta
+
+---@class UWBP_ItemChest_Preference_C : UPalUserWidgetOverlayUI
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field Default_In UWidgetAnimation
+---@field WBP_IngameMenu_Chest_Filter UWBP_IngameMenu_Chest_Filter_C
+---@field PreferenceModel UPalUIItemChestFilterModel
+local UWBP_ItemChest_Preference_C = {}
+
+function UWBP_ItemChest_Preference_C:WBP_ItemChest_Preference_AutoGenFunc() end
+---@param FilterId FName
+---@param bChecked boolean
+function UWBP_ItemChest_Preference_C:OnClickedCheck(FilterId, bChecked) end
+---@return UWidget
+function UWBP_ItemChest_Preference_C:BP_GetDesiredFocusTarget() end
+function UWBP_ItemChest_Preference_C:Setup() end
+function UWBP_ItemChest_Preference_C:OnSetup() end
+function UWBP_ItemChest_Preference_C:BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_1_OnClickedCloseButton__DelegateSignature() end
+function UWBP_ItemChest_Preference_C:Construct() end
+function UWBP_ItemChest_Preference_C:BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_0_OnClickedAllCheckButton__DelegateSignature() end
+function UWBP_ItemChest_Preference_C:BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_2_OnClickedAllUncheckButton__DelegateSignature() end
+function UWBP_ItemChest_Preference_C:BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_3_OnClickedCustomNameEditButton__DelegateSignature() end
+---@param NewCustomName FString
+function UWBP_ItemChest_Preference_C:BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_4_OnEditedCustomName__DelegateSignature(NewCustomName) end
+---@param EntryPoint int32
+function UWBP_ItemChest_Preference_C:ExecuteUbergraph_WBP_ItemChest_Preference(EntryPoint) end
+
+

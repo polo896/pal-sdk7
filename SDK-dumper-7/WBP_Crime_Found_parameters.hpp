@@ -16,6 +16,15 @@
 namespace SDK::Params
 {
 
+// Function WBP_Crime_Found.WBP_Crime_Found_C.SetCrimesFound
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Crime_Found_C_SetCrimesFound final
+{
+public:
+	TArray<class FName>                           CrimeIds;                                          // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_Crime_Found_C_SetCrimesFound;
+
 // Function WBP_Crime_Found.WBP_Crime_Found_C.ExecuteUbergraph_WBP_Crime_Found
 // 0x00E0 (0x00E0 - 0x0000)
 struct WBP_Crime_Found_C_ExecuteUbergraph_WBP_Crime_Found final
@@ -57,15 +66,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Crime_Found_C_ExecuteUbergraph_WBP_Crime_Found;
-
-// Function WBP_Crime_Found.WBP_Crime_Found_C.SetCrimesFound
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Crime_Found_C_SetCrimesFound final
-{
-public:
-	TArray<class FName>                           CrimeIds;                                          // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_Crime_Found_C_SetCrimesFound;
 
 }
 

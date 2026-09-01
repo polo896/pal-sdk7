@@ -30,15 +30,15 @@ public:
 	struct FDataTableRowHandle                    NoticeTabMsgID;                                    // 0x04D8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void BndEvt__WBP_Guild_Setting_TabSet_WBP_OptionSettings_TabButton_Notice_K2Node_ComponentBoundEvent_1_SwitchTabTo__DelegateSignature(int32 Index_0);
-	void BndEvt__WBP_Guild_Setting_TabSet_WBP_OptionSettings_TabButton_Role_K2Node_ComponentBoundEvent_0_SwitchTabTo__DelegateSignature(int32 Index_0);
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_Guild_Setting_TabSet(int32 EntryPoint);
-	void GetTabWidgetByIndex(int32 Index_0, class UWBP_OptionSettings_TabButton_C** TabWidget);
-	void OnChangedFocusIndex_Binded(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
-	void OnInitialized();
 	void RegisterPanelWidget(class UPanelWidget** PanelWidget);
+	void OnInitialized();
+	void OnChangedFocusIndex_Binded(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
+	void GetTabWidgetByIndex(int32 Index_0, class UWBP_OptionSettings_TabButton_C** TabWidget);
+	void ExecuteUbergraph_WBP_Guild_Setting_TabSet(int32 EntryPoint);
+	void Destruct();
+	void Construct();
+	void BndEvt__WBP_Guild_Setting_TabSet_WBP_OptionSettings_TabButton_Role_K2Node_ComponentBoundEvent_0_SwitchTabTo__DelegateSignature(int32 Index_0);
+	void BndEvt__WBP_Guild_Setting_TabSet_WBP_OptionSettings_TabButton_Notice_K2Node_ComponentBoundEvent_1_SwitchTabTo__DelegateSignature(int32 Index_0);
 
 public:
 	static class UClass* StaticClass()

@@ -14,6 +14,16 @@
 namespace SDK::Params
 {
 
+// Function WBP_PalCommonItemIcon.WBP_PalCommonItemIcon_C.OnLoaded
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PalCommonItemIcon_C_OnLoaded final
+{
+public:
+	class UTexture2D*                             loadedTexture;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalCommonItemIcon_C_OnLoaded;
+
 // Function WBP_PalCommonItemIcon.WBP_PalCommonItemIcon_C.ExecuteUbergraph_WBP_PalCommonItemIcon
 // 0x0040 (0x0040 - 0x0000)
 struct WBP_PalCommonItemIcon_C_ExecuteUbergraph_WBP_PalCommonItemIcon final
@@ -27,16 +37,6 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0030(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_PalCommonItemIcon_C_ExecuteUbergraph_WBP_PalCommonItemIcon;
-
-// Function WBP_PalCommonItemIcon.WBP_PalCommonItemIcon_C.OnLoaded
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PalCommonItemIcon_C_OnLoaded final
-{
-public:
-	class UTexture2D*                             loadedTexture;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalCommonItemIcon_C_OnLoaded;
 
 }
 

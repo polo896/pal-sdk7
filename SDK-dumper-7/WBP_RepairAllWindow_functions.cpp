@@ -17,23 +17,17 @@
 namespace SDK
 {
 
-// Function WBP_RepairAllWindow.WBP_RepairAllWindow_C.BndEvt__WBP_RepairAllWindow_WBP_IngameMenu_RepairAll_K2Node_ComponentBoundEvent_0_OnClickedButton__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// bool                                    IsYes                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_RepairAllWindow.WBP_RepairAllWindow_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_RepairAllWindow_C::BndEvt__WBP_RepairAllWindow_WBP_IngameMenu_RepairAll_K2Node_ComponentBoundEvent_0_OnClickedButton__DelegateSignature(bool IsYes)
+void UWBP_RepairAllWindow_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RepairAllWindow_C", "BndEvt__WBP_RepairAllWindow_WBP_IngameMenu_RepairAll_K2Node_ComponentBoundEvent_0_OnClickedButton__DelegateSignature");
+		Func = Class->GetFunction("WBP_RepairAllWindow_C", "OnSetup");
 
-	Params::WBP_RepairAllWindow_C_BndEvt__WBP_RepairAllWindow_WBP_IngameMenu_RepairAll_K2Node_ComponentBoundEvent_0_OnClickedButton__DelegateSignature Parms{};
-
-	Parms.IsYes = IsYes;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -57,17 +51,23 @@ void UWBP_RepairAllWindow_C::ExecuteUbergraph_WBP_RepairAllWindow(int32 EntryPoi
 }
 
 
-// Function WBP_RepairAllWindow.WBP_RepairAllWindow_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function WBP_RepairAllWindow.WBP_RepairAllWindow_C.BndEvt__WBP_RepairAllWindow_WBP_IngameMenu_RepairAll_K2Node_ComponentBoundEvent_0_OnClickedButton__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// bool                                    IsYes                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_RepairAllWindow_C::OnSetup()
+void UWBP_RepairAllWindow_C::BndEvt__WBP_RepairAllWindow_WBP_IngameMenu_RepairAll_K2Node_ComponentBoundEvent_0_OnClickedButton__DelegateSignature(bool IsYes)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RepairAllWindow_C", "OnSetup");
+		Func = Class->GetFunction("WBP_RepairAllWindow_C", "BndEvt__WBP_RepairAllWindow_WBP_IngameMenu_RepairAll_K2Node_ComponentBoundEvent_0_OnClickedButton__DelegateSignature");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_RepairAllWindow_C_BndEvt__WBP_RepairAllWindow_WBP_IngameMenu_RepairAll_K2Node_ComponentBoundEvent_0_OnClickedButton__DelegateSignature Parms{};
+
+	Parms.IsYes = IsYes;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

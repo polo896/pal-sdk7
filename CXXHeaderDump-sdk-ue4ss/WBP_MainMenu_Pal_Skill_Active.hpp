@@ -24,7 +24,7 @@ class UWBP_MainMenu_Pal_Skill_Active_C : public UUserWidget
     EPalWazaID BindedWazaID;                                                          // 0x0308 (size: 0x2)
     FWBP_MainMenu_Pal_Skill_Active_COnClicked OnClicked;                              // 0x0310 (size: 0x10)
     void OnClicked(class UWBP_MainMenu_Pal_Skill_Active_C* SelfWidget);
-    TMap<class EPalElementType, class TSoftObjectPtr<UTexture2D>> ElementTextureMap;  // 0x0320 (size: 0x50)
+    TMap<EPalElementType, TSoftObjectPtr<class UTexture2D>> ElementTextureMap;        // 0x0320 (size: 0x50)
     FDataTableRowHandle EmptySlotMsgID;                                               // 0x0370 (size: 0x10)
 
     void SetEmptyInfo();

@@ -59,15 +59,15 @@ public:
 	bool                                          HasWorker;                                         // 0x055C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_DisplayWorker();
-	void AnmEvent_NonWorker();
-	void Change_Non_Worker_Mode(bool isNonWorker);
-	void ExecuteUbergraph_WBP_IngameProgress(int32 EntryPoint);
-	void OnInitialized();
-	void Set_Second(int32 RemainingSecond);
-	void Set_Visible_Number(ESlateVisibility NewVisibility);
-	void Set_Work_Amount(double WorkAmount);
 	void SetWorkerPal(TArray<class UPalIndividualCharacterSlot*>& Slots);
+	void Set_Work_Amount(double WorkAmount);
+	void Set_Visible_Number(ESlateVisibility NewVisibility);
+	void Set_Second(int32 RemainingSecond);
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_IngameProgress(int32 EntryPoint);
+	void Change_Non_Worker_Mode(bool isNonWorker);
+	void AnmEvent_NonWorker();
+	void AnmEvent_DisplayWorker();
 
 public:
 	static class UClass* StaticClass()

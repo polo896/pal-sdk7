@@ -48,18 +48,18 @@ public:
 	bool                                          bFirstUpdate;                                      // 0x0511(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_In();
-	void AnmEvent_OutAndRemove();
-	void AnmEvent_Update();
-	void CompleteQuest();
-	void Destruct();
-	void ExecuteUbergraph_WBP_Ingame_QuestBoard_List(int32 EntryPoint);
-	void Finished_4B02D5D84C3448AD992E259045BE3FFE();
-	void Finished_FF8D72744040101F84C0D59873B7619D();
-	void GetQuestId(class FName* QuestId);
-	void OnTimerEvent_UpdateText();
-	void Setup(class UPalQuestBlock* QuestBlock);
 	void UpdateQuest();
+	void Setup(class UPalQuestBlock* QuestBlock);
+	void OnTimerEvent_UpdateText();
+	void GetQuestId(class FName* QuestId);
+	void Finished_FF8D72744040101F84C0D59873B7619D();
+	void Finished_4B02D5D84C3448AD992E259045BE3FFE();
+	void ExecuteUbergraph_WBP_Ingame_QuestBoard_List(int32 EntryPoint);
+	void Destruct();
+	void CompleteQuest();
+	void AnmEvent_Update();
+	void AnmEvent_OutAndRemove();
+	void AnmEvent_In();
 
 public:
 	static class UClass* StaticClass()

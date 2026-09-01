@@ -28,15 +28,15 @@ public:
 	class UPalUIMapObjectRaidBossAreaStatusModel* Cached_UIModel;                                    // 0x0460(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_RaidBossAreaStatusWorldHUD(int32 EntryPoint);
 	class UPalUIMapObjectRaidBossAreaStatusModel* GetUIModel();
-	void OnSetup();
-	void OnUpdatePhase(class UPalUIMapObjectRaidBossAreaStatusModel* UIModel);
-	void OnUpdateRaidBossStaticItemId(class UPalUIMapObjectRaidBossAreaStatusModel* UIModel);
-	void ReflectCurrentPhase(EPalRaidBossAreaPhase InPhase);
-	void ReflectCurrentRemaingTime();
-	void Setup();
+	void ExecuteUbergraph_WBP_RaidBossAreaStatusWorldHUD(int32 EntryPoint);
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void Setup();
+	void ReflectCurrentRemaingTime();
+	void ReflectCurrentPhase(EPalRaidBossAreaPhase InPhase);
+	void OnUpdateRaidBossStaticItemId(class UPalUIMapObjectRaidBossAreaStatusModel* UIModel);
+	void OnUpdatePhase(class UPalUIMapObjectRaidBossAreaStatusModel* UIModel);
+	void OnSetup();
 
 public:
 	static class UClass* StaticClass()

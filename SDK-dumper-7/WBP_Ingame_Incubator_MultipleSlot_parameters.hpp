@@ -17,31 +17,23 @@
 namespace SDK::Params
 {
 
-// Function WBP_Ingame_Incubator_MultipleSlot.WBP_Ingame_Incubator_MultipleSlot_C.ExecuteUbergraph_WBP_Ingame_Incubator_MultipleSlot
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_Ingame_Incubator_MultipleSlot_C_ExecuteUbergraph_WBP_Ingame_Incubator_MultipleSlot final
+// Function WBP_Ingame_Incubator_MultipleSlot.WBP_Ingame_Incubator_MultipleSlot_C.UpdateSlotProgress
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Ingame_Incubator_MultipleSlot_C_UpdateSlotProgress final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalItemSlot*                           K2Node_CustomEvent_slot;                           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalWorkProgress*                       K2Node_CustomEvent_Work_Progress;                  // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UPalWorkProgress* WorkProgress)> K2Node_CreateDelegate_OutputDelegate;      // 0x001C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UPalWorkProgress* WorkProgress)> K2Node_CreateDelegate_OutputDelegate_1;    // 0x0030(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalStaticItemDataBase*                 CallFunc_TryGetStaticItemData_OutStaticItemData;   // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_TryGetStaticItemData_ReturnValue;         // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x004A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsCompleted_ReturnValue;                  // 0x004B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalWorkProgress*                       Work_Progress_0;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Ingame_Incubator_MultipleSlot_C_ExecuteUbergraph_WBP_Ingame_Incubator_MultipleSlot;
+DUMPER7_ASSERTS_WBP_Ingame_Incubator_MultipleSlot_C_UpdateSlotProgress;
+
+// Function WBP_Ingame_Incubator_MultipleSlot.WBP_Ingame_Incubator_MultipleSlot_C.SetSlot
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Ingame_Incubator_MultipleSlot_C_SetSlot final
+{
+public:
+	class UPalItemSlot*                           Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Ingame_Incubator_MultipleSlot_C_SetSlot;
 
 // Function WBP_Ingame_Incubator_MultipleSlot.WBP_Ingame_Incubator_MultipleSlot_C.On Update Work Amount
 // 0x01C8 (0x01C8 - 0x0000)
@@ -84,23 +76,31 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Ingame_Incubator_MultipleSlot_C_On_Update_Work_Amount;
 
-// Function WBP_Ingame_Incubator_MultipleSlot.WBP_Ingame_Incubator_MultipleSlot_C.SetSlot
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Ingame_Incubator_MultipleSlot_C_SetSlot final
+// Function WBP_Ingame_Incubator_MultipleSlot.WBP_Ingame_Incubator_MultipleSlot_C.ExecuteUbergraph_WBP_Ingame_Incubator_MultipleSlot
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_Ingame_Incubator_MultipleSlot_C_ExecuteUbergraph_WBP_Ingame_Incubator_MultipleSlot final
 {
 public:
-	class UPalItemSlot*                           Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalItemSlot*                           K2Node_CustomEvent_slot;                           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalWorkProgress*                       K2Node_CustomEvent_Work_Progress;                  // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UPalWorkProgress* WorkProgress)> K2Node_CreateDelegate_OutputDelegate;      // 0x001C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UPalWorkProgress* WorkProgress)> K2Node_CreateDelegate_OutputDelegate_1;    // 0x0030(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalStaticItemDataBase*                 CallFunc_TryGetStaticItemData_OutStaticItemData;   // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_TryGetStaticItemData_ReturnValue;         // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x004A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsCompleted_ReturnValue;                  // 0x004B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Ingame_Incubator_MultipleSlot_C_SetSlot;
-
-// Function WBP_Ingame_Incubator_MultipleSlot.WBP_Ingame_Incubator_MultipleSlot_C.UpdateSlotProgress
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Ingame_Incubator_MultipleSlot_C_UpdateSlotProgress final
-{
-public:
-	class UPalWorkProgress*                       Work_Progress_0;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Ingame_Incubator_MultipleSlot_C_UpdateSlotProgress;
+DUMPER7_ASSERTS_WBP_Ingame_Incubator_MultipleSlot_C_ExecuteUbergraph_WBP_Ingame_Incubator_MultipleSlot;
 
 }
 

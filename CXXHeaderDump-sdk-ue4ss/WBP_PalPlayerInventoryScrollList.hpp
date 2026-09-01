@@ -5,7 +5,7 @@ class UWBP_PalPlayerInventoryScrollList_C : public UWBP_PalItemScrollList_C
 {
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0568 (size: 0x8)
     class UPalUIInventoryModel* Model;                                                // 0x0570 (size: 0x8)
-    TMap<class EPalPlayerInventoryType, class UWBP_PalItemListBlock_C*> CategoryBlockMap; // 0x0578 (size: 0x50)
+    TMap<EPalPlayerInventoryType, UWBP_PalItemListBlock_C*> CategoryBlockMap;         // 0x0578 (size: 0x50)
     TArray<EPalPlayerInventoryType> InventoryTypeArray;                               // 0x05C8 (size: 0x10)
     FWBP_PalPlayerInventoryScrollList_COnRequestOpenUseItemPanel OnRequestOpenUseItemPanel; // 0x05D8 (size: 0x10)
     void OnRequestOpenUseItemPanel(class UPalItemSlot* SelectedSlot);
@@ -16,7 +16,7 @@ class UWBP_PalPlayerInventoryScrollList_C : public UWBP_PalItemScrollList_C
     FWBP_PalPlayerInventoryScrollList_COnTriedEquipSlot OnTriedEquipSlot;             // 0x05F8 (size: 0x10)
     void OnTriedEquipSlot(class UWBP_PalItemSlotButtonBase_C* SlotButton);
 
-    void GetItemSlotButtons(EPalPlayerInventoryType inventoryType, TArray<class UWBP_PalItemSlotButtonBase_C*>& OutSlotButtonArray);
+    void GetItemSlotButtons(EPalPlayerInventoryType inventoryType, TArray<UWBP_PalItemSlotButtonBase_C*>& OutSlotButtonArray);
     void OnTriedEquipSlot_Internal(class UWBP_PalItemSlotButtonBase_C* Widget);
     void Open Use Item Panel(class UWBP_PalItemSlotButtonBase_C* Button);
     void ScrollToCategoryTop(EPalPlayerInventoryType TargetType, class UWidget*& TopFocusTarget);

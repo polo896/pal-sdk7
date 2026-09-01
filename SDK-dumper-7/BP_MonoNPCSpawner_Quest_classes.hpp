@@ -32,16 +32,16 @@ public:
 	class USphereComponent*                       Sphere_ForceProgressQuest;                         // 0x0650(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BlueprintTick_Spawned(float DeltaTime);
-	void Despawn();
-	void ExecuteUbergraph_BP_MonoNPCSpawner_Quest(int32 EntryPoint);
-	bool IsBlockInProgress(class UClass* QuestBlock, const class FName& QuestId_0, class UPalQuestManager* QuestManager);
-	void On_Dead(const struct FPalDeadInfo& DeadInfo);
-	void OnSpawned_Event();
-	void ReceiveBeginPlay();
-	void SpawnDelegate(const struct FPalInstanceID& ID);
-	void WaitQuestBlockInProgress();
 	void WaitQuestEnemyOverlap();
+	void WaitQuestBlockInProgress();
+	void SpawnDelegate(const struct FPalInstanceID& ID);
+	void ReceiveBeginPlay();
+	void OnSpawned_Event();
+	void On_Dead(const struct FPalDeadInfo& DeadInfo);
+	bool IsBlockInProgress(class UClass* QuestBlock, const class FName& QuestId_0, class UPalQuestManager* QuestManager);
+	void ExecuteUbergraph_BP_MonoNPCSpawner_Quest(int32 EntryPoint);
+	void Despawn();
+	void BlueprintTick_Spawned(float DeltaTime);
 
 public:
 	static class UClass* StaticClass()

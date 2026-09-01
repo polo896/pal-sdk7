@@ -17,6 +17,28 @@
 namespace SDK
 {
 
+// Function WBP_GuildSetting_ForDisplay.WBP_GuildSetting_ForDisplay_C.BndEvt__WBP_GuildSetting_ForDisplay_WBP_Guild_Setting_K2Node_ComponentBoundEvent_1_OnChangedNoticeSetting__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// EPalGuildNotificationType               NotificationType                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bEnableNotice                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_GuildSetting_ForDisplay_C::BndEvt__WBP_GuildSetting_ForDisplay_WBP_Guild_Setting_K2Node_ComponentBoundEvent_1_OnChangedNoticeSetting__DelegateSignature(EPalGuildNotificationType NotificationType, bool bEnableNotice)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GuildSetting_ForDisplay_C", "BndEvt__WBP_GuildSetting_ForDisplay_WBP_Guild_Setting_K2Node_ComponentBoundEvent_1_OnChangedNoticeSetting__DelegateSignature");
+
+	Params::WBP_GuildSetting_ForDisplay_C_BndEvt__WBP_GuildSetting_ForDisplay_WBP_Guild_Setting_K2Node_ComponentBoundEvent_1_OnChangedNoticeSetting__DelegateSignature Parms{};
+
+	Parms.NotificationType = NotificationType;
+	Parms.bEnableNotice = bEnableNotice;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_GuildSetting_ForDisplay.WBP_GuildSetting_ForDisplay_C.BndEvt__WBP_GuildSetting_ForDisplay_WBP_Guild_Setting_K2Node_ComponentBoundEvent_0_OnChangeRoleSetting__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -41,25 +63,73 @@ void UWBP_GuildSetting_ForDisplay_C::BndEvt__WBP_GuildSetting_ForDisplay_WBP_Gui
 }
 
 
-// Function WBP_GuildSetting_ForDisplay.WBP_GuildSetting_ForDisplay_C.BndEvt__WBP_GuildSetting_ForDisplay_WBP_Guild_Setting_K2Node_ComponentBoundEvent_1_OnChangedNoticeSetting__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// EPalGuildNotificationType               NotificationType                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bEnableNotice                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_GuildSetting_ForDisplay.WBP_GuildSetting_ForDisplay_C.SetupNoticeSetting
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_GuildSetting_ForDisplay_C::BndEvt__WBP_GuildSetting_ForDisplay_WBP_Guild_Setting_K2Node_ComponentBoundEvent_1_OnChangedNoticeSetting__DelegateSignature(EPalGuildNotificationType NotificationType, bool bEnableNotice)
+void UWBP_GuildSetting_ForDisplay_C::SetupNoticeSetting()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GuildSetting_ForDisplay_C", "BndEvt__WBP_GuildSetting_ForDisplay_WBP_Guild_Setting_K2Node_ComponentBoundEvent_1_OnChangedNoticeSetting__DelegateSignature");
+		Func = Class->GetFunction("WBP_GuildSetting_ForDisplay_C", "SetupNoticeSetting");
 
-	Params::WBP_GuildSetting_ForDisplay_C_BndEvt__WBP_GuildSetting_ForDisplay_WBP_Guild_Setting_K2Node_ComponentBoundEvent_1_OnChangedNoticeSetting__DelegateSignature Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.NotificationType = NotificationType;
-	Parms.bEnableNotice = bEnableNotice;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function WBP_GuildSetting_ForDisplay.WBP_GuildSetting_ForDisplay_C.OverrideCancelAction_Common
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_GuildSetting_ForDisplay_C::OverrideCancelAction_Common()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GuildSetting_ForDisplay_C", "OverrideCancelAction_Common");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_GuildSetting_ForDisplay.WBP_GuildSetting_ForDisplay_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_GuildSetting_ForDisplay_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GuildSetting_ForDisplay_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_GuildSetting_ForDisplay.WBP_GuildSetting_ForDisplay_C.OnInputAction_PrevTab
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_GuildSetting_ForDisplay_C::OnInputAction_PrevTab()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GuildSetting_ForDisplay_C", "OnInputAction_PrevTab");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_GuildSetting_ForDisplay.WBP_GuildSetting_ForDisplay_C.OnInputAction_NextTab
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_GuildSetting_ForDisplay_C::OnInputAction_NextTab()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GuildSetting_ForDisplay_C", "OnInputAction_NextTab");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -80,76 +150,6 @@ void UWBP_GuildSetting_ForDisplay_C::ExecuteUbergraph_WBP_GuildSetting_ForDispla
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_GuildSetting_ForDisplay.WBP_GuildSetting_ForDisplay_C.OnInputAction_NextTab
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_GuildSetting_ForDisplay_C::OnInputAction_NextTab()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GuildSetting_ForDisplay_C", "OnInputAction_NextTab");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_GuildSetting_ForDisplay.WBP_GuildSetting_ForDisplay_C.OnInputAction_PrevTab
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_GuildSetting_ForDisplay_C::OnInputAction_PrevTab()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GuildSetting_ForDisplay_C", "OnInputAction_PrevTab");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_GuildSetting_ForDisplay.WBP_GuildSetting_ForDisplay_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_GuildSetting_ForDisplay_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GuildSetting_ForDisplay_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_GuildSetting_ForDisplay.WBP_GuildSetting_ForDisplay_C.OverrideCancelAction_Common
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_GuildSetting_ForDisplay_C::OverrideCancelAction_Common()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GuildSetting_ForDisplay_C", "OverrideCancelAction_Common");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_GuildSetting_ForDisplay.WBP_GuildSetting_ForDisplay_C.SetupNoticeSetting
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_GuildSetting_ForDisplay_C::SetupNoticeSetting()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GuildSetting_ForDisplay_C", "SetupNoticeSetting");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

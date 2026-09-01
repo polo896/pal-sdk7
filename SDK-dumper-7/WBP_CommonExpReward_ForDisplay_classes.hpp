@@ -33,12 +33,12 @@ public:
 	struct FTimerHandle                           TimerHandle_EndOut;                                // 0x04D0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Destruct();
-	void ExecuteUbergraph_WBP_CommonExpReward_ForDisplay(int32 EntryPoint);
-	void OnTimerEvent_EndIn();
-	void OnTimerEvent_EndOut();
-	void QueExpReward(const struct FPalUICommonExpRewardData& RewardData);
 	void TryPopRewardData();
+	void QueExpReward(const struct FPalUICommonExpRewardData& RewardData);
+	void OnTimerEvent_EndOut();
+	void OnTimerEvent_EndIn();
+	void ExecuteUbergraph_WBP_CommonExpReward_ForDisplay(int32 EntryPoint);
+	void Destruct();
 
 public:
 	static class UClass* StaticClass()

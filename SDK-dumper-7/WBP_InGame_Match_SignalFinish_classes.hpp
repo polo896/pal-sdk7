@@ -29,9 +29,9 @@ public:
 	class UBP_PalTextBlock_C*                     Text_Finish_2;                                     // 0x0298(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_InGame_Match_SignalFinish(int32 EntryPoint);
-	void SequenceEvent();
 	void SequenceEvent__ENTRYPOINTWBP_InGame_Match_SignalFinish();
+	void SequenceEvent();
+	void ExecuteUbergraph_WBP_InGame_Match_SignalFinish(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

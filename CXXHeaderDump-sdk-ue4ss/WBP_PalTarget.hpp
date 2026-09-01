@@ -10,7 +10,7 @@ class UWBP_PalTarget_C : public UWBP_LoupeBase_C
     class UImage* Image_Ring;                                                         // 0x0500 (size: 0x8)
     class UImage* Image_Ring_1;                                                       // 0x0508 (size: 0x8)
     class UImage* Image_Shadow;                                                       // 0x0510 (size: 0x8)
-    TSoftObjectPtr<APalCharacter> SoftTargetCharacter;                                // 0x0518 (size: 0x30)
+    TSoftObjectPtr<class APalCharacter> SoftTargetCharacter;                          // 0x0518 (size: 0x30)
     FWBP_PalTarget_COnMissingTarget OnMissingTarget;                                  // 0x0548 (size: 0x10)
     void OnMissingTarget();
     FTimerHandle ValidCheckTimerHandle;                                               // 0x0558 (size: 0x8)

@@ -8,7 +8,7 @@ class UWBP_PaldexScrollList_C : public UWBP_PalCommonScrollList_C
     void OnHoveredAnyPanel(FName CharacterID, class UWBP_Paldex_List_C* SelfWidget);
     FWBP_PaldexScrollList_COnClickedAnyPanel OnClickedAnyPanel;                       // 0x04A0 (size: 0x10)
     void OnClickedAnyPanel(FName CharacterID, class UWBP_Paldex_List_C* Widget);
-    TArray<class UWBP_Paldex_List_C*> CreatedChildren;                                // 0x04B0 (size: 0x10)
+    TArray<UWBP_Paldex_List_C*> CreatedChildren;                                      // 0x04B0 (size: 0x10)
 
     void DisplayChild(class UWBP_Paldex_List_C* ChildWidget);
     void DisplayAll();

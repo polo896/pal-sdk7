@@ -17,25 +17,43 @@
 namespace SDK
 {
 
-// Function BP_GrapplingGun_Bullet.BP_GrapplingGun_Bullet_C.AttachSocket
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_GrapplingGun_Bullet.BP_GrapplingGun_Bullet_C.UpdateCable
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USceneComponent*                  Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class FName                             SocketName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   Start                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   End                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsHit                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsVisible                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_GrapplingGun_Bullet_C::AttachSocket(class USceneComponent* Component, class FName SocketName)
+void ABP_GrapplingGun_Bullet_C::UpdateCable(const struct FVector& Start, const struct FVector& End, bool IsHit, bool IsVisible)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GrapplingGun_Bullet_C", "AttachSocket");
+		Func = Class->GetFunction("BP_GrapplingGun_Bullet_C", "UpdateCable");
 
-	Params::BP_GrapplingGun_Bullet_C_AttachSocket Parms{};
+	Params::BP_GrapplingGun_Bullet_C_UpdateCable Parms{};
 
-	Parms.Component = Component;
-	Parms.SocketName = SocketName;
+	Parms.Start = std::move(Start);
+	Parms.End = std::move(End);
+	Parms.IsHit = IsHit;
+	Parms.IsVisible = IsVisible;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_GrapplingGun_Bullet.BP_GrapplingGun_Bullet_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_GrapplingGun_Bullet_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_GrapplingGun_Bullet_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -59,41 +77,23 @@ void ABP_GrapplingGun_Bullet_C::ExecuteUbergraph_BP_GrapplingGun_Bullet(int32 En
 }
 
 
-// Function BP_GrapplingGun_Bullet.BP_GrapplingGun_Bullet_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_GrapplingGun_Bullet_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GrapplingGun_Bullet_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_GrapplingGun_Bullet.BP_GrapplingGun_Bullet_C.UpdateCable
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_GrapplingGun_Bullet.BP_GrapplingGun_Bullet_C.AttachSocket
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FVector&                   Start                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FVector&                   End                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IsHit                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IsVisible                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USceneComponent*                  Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class FName                             SocketName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_GrapplingGun_Bullet_C::UpdateCable(const struct FVector& Start, const struct FVector& End, bool IsHit, bool IsVisible)
+void ABP_GrapplingGun_Bullet_C::AttachSocket(class USceneComponent* Component, class FName SocketName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GrapplingGun_Bullet_C", "UpdateCable");
+		Func = Class->GetFunction("BP_GrapplingGun_Bullet_C", "AttachSocket");
 
-	Params::BP_GrapplingGun_Bullet_C_UpdateCable Parms{};
+	Params::BP_GrapplingGun_Bullet_C_AttachSocket Parms{};
 
-	Parms.Start = std::move(Start);
-	Parms.End = std::move(End);
-	Parms.IsHit = IsHit;
-	Parms.IsVisible = IsVisible;
+	Parms.Component = Component;
+	Parms.SocketName = SocketName;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

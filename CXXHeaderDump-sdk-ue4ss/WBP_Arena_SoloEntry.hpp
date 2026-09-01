@@ -12,7 +12,7 @@ class UWBP_Arena_SoloEntry_C : public UPalUserWidgetOverlayUI
     class UWBP_Arena_SoloEntryButton_C* WBP_Arena_SoloEntryButton_4;                  // 0x04A8 (size: 0x8)
     class UWBP_Arena_SoloEntryButton_C* WBP_Arena_SoloEntryButton_5;                  // 0x04B0 (size: 0x8)
     class UWBP_Arena_SoloEntryButton_C* WBP_Arena_SoloEntryButton_6;                  // 0x04B8 (size: 0x8)
-    TArray<class UWBP_Arena_SoloEntryButton_C*> EntryButtons;                         // 0x04C0 (size: 0x10)
+    TArray<UWBP_Arena_SoloEntryButton_C*> EntryButtons;                               // 0x04C0 (size: 0x10)
     EPalArenaRank CurrentSelectRank;                                                  // 0x04D0 (size: 0x1)
     class UWBP_Arena_SoloEntryButton_C* LastHoveredEntry;                             // 0x04D8 (size: 0x8)
 

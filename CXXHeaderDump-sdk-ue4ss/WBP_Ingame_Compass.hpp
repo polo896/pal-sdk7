@@ -8,17 +8,17 @@ class UWBP_Ingame_Compass_C : public UPalUserWidget
     class UImage* CompassBase;                                                        // 0x0460 (size: 0x8)
     class UCanvasPanel* IconCanvas;                                                   // 0x0468 (size: 0x8)
     class UMaterialInstanceDynamic* CompassMaterial;                                  // 0x0470 (size: 0x8)
-    TMap<class FGuid, class UWBP_CompassIconBase_C*> CreatedIconMap;                  // 0x0478 (size: 0x50)
+    TMap<FGuid, UWBP_CompassIconBase_C*> CreatedIconMap;                              // 0x0478 (size: 0x50)
     TArray<FGuid> VisibleIconIds;                                                     // 0x04C8 (size: 0x10)
-    TMap<class EPalLocationType, class TSubclassOf<UWBP_CompassIconBase_C>> IconWBPMap; // 0x04D8 (size: 0x50)
+    TMap<EPalLocationType, TSubclassOf<class UWBP_CompassIconBase_C>> IconWBPMap;     // 0x04D8 (size: 0x50)
     TSubclassOf<class UWBP_CompassIconBase_C> wbpIconBaseClass;                       // 0x0528 (size: 0x8)
-    TArray<class UWBP_IngameCompass_DeathMark_C*> DeathMarks;                         // 0x0530 (size: 0x10)
-    TMap<class UPalLocationPoint*, class FGuid> DeathMarkMap;                         // 0x0540 (size: 0x50)
-    TMap<class FGuid, class UWBP_IngameCompass_CustomMarker_C*> CustomMarkerMap;      // 0x0590 (size: 0x50)
+    TArray<UWBP_IngameCompass_DeathMark_C*> DeathMarks;                               // 0x0530 (size: 0x10)
+    TMap<UPalLocationPoint*, FGuid> DeathMarkMap;                                     // 0x0540 (size: 0x50)
+    TMap<FGuid, UWBP_IngameCompass_CustomMarker_C*> CustomMarkerMap;                  // 0x0590 (size: 0x50)
     TArray<FGuid> VisibleMarkerIds;                                                   // 0x05E0 (size: 0x10)
     double DeathMarkLength;                                                           // 0x05F0 (size: 0x8)
     class UPalGroupGuildBase* LastBelongGuild;                                        // 0x05F8 (size: 0x8)
-    TMap<class FGuid, class UWBP_IngameCompass_CustomMarker_C*> GuildMarkerMap;       // 0x0600 (size: 0x50)
+    TMap<FGuid, UWBP_IngameCompass_CustomMarker_C*> GuildMarkerMap;                   // 0x0600 (size: 0x50)
     TArray<FGuid> VisibleGuildMarkerIds;                                              // 0x0650 (size: 0x10)
     double MarkerDistance;                                                            // 0x0660 (size: 0x8)
     FTimerHandle GuildChangeTimer;                                                    // 0x0668 (size: 0x8)
@@ -43,7 +43,7 @@ class UWBP_Ingame_Compass_C : public UPalUserWidget
     void SetupGuildMarker();
     void Setup Custom Marker();
     void GetVisibleIcons();
-    void Refresh Death Mark(TMap<class FGuid, class UPalLocationBase*> LocationMap);
+    void Refresh Death Mark(TMap<FGuid, UPalLocationBase*> LocationMap);
     void Setup Created Icon Widget(class UWBP_CompassIconBase_C* createdWidget, FGuid LocationId, FPalLocationUIData LocationUIData);
     void Update Icon();
     void OnRemovedLocation(const FGuid& LocationId, class UPalLocationBase* Location);

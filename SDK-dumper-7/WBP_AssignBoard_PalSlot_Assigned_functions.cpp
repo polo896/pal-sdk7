@@ -17,15 +17,55 @@
 namespace SDK
 {
 
-// Function WBP_AssignBoard_PalSlot_Assigned.WBP_AssignBoard_PalSlot_Assigned_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_AssignBoard_PalSlot_Assigned.WBP_AssignBoard_PalSlot_Assigned_C.SetSuitability
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalWorkSuitability                     Suitability                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_AssignBoard_PalSlot_Assigned_C::Construct()
+void UWBP_AssignBoard_PalSlot_Assigned_C::SetSuitability(EPalWorkSuitability Suitability)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_PalSlot_Assigned_C", "Construct");
+		Func = Class->GetFunction("WBP_AssignBoard_PalSlot_Assigned_C", "SetSuitability");
+
+	Params::WBP_AssignBoard_PalSlot_Assigned_C_SetSuitability Parms{};
+
+	Parms.Suitability = Suitability;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_AssignBoard_PalSlot_Assigned.WBP_AssignBoard_PalSlot_Assigned_C.SetIndividualParameter
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalIndividualCharacterParameter* Parameter                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_AssignBoard_PalSlot_Assigned_C::SetIndividualParameter(class UPalIndividualCharacterParameter* Parameter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AssignBoard_PalSlot_Assigned_C", "SetIndividualParameter");
+
+	Params::WBP_AssignBoard_PalSlot_Assigned_C_SetIndividualParameter Parms{};
+
+	Parms.Parameter = Parameter;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_AssignBoard_PalSlot_Assigned.WBP_AssignBoard_PalSlot_Assigned_C.SetEmpty
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_AssignBoard_PalSlot_Assigned_C::SetEmpty()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AssignBoard_PalSlot_Assigned_C", "SetEmpty");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,57 +91,17 @@ void UWBP_AssignBoard_PalSlot_Assigned_C::ExecuteUbergraph_WBP_AssignBoard_PalSl
 }
 
 
-// Function WBP_AssignBoard_PalSlot_Assigned.WBP_AssignBoard_PalSlot_Assigned_C.SetEmpty
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_AssignBoard_PalSlot_Assigned.WBP_AssignBoard_PalSlot_Assigned_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_AssignBoard_PalSlot_Assigned_C::SetEmpty()
+void UWBP_AssignBoard_PalSlot_Assigned_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_PalSlot_Assigned_C", "SetEmpty");
+		Func = Class->GetFunction("WBP_AssignBoard_PalSlot_Assigned_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_AssignBoard_PalSlot_Assigned.WBP_AssignBoard_PalSlot_Assigned_C.SetIndividualParameter
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalIndividualCharacterParameter* Parameter                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_AssignBoard_PalSlot_Assigned_C::SetIndividualParameter(class UPalIndividualCharacterParameter* Parameter)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_PalSlot_Assigned_C", "SetIndividualParameter");
-
-	Params::WBP_AssignBoard_PalSlot_Assigned_C_SetIndividualParameter Parms{};
-
-	Parms.Parameter = Parameter;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_AssignBoard_PalSlot_Assigned.WBP_AssignBoard_PalSlot_Assigned_C.SetSuitability
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalWorkSuitability                     Suitability                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_AssignBoard_PalSlot_Assigned_C::SetSuitability(EPalWorkSuitability Suitability)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_PalSlot_Assigned_C", "SetSuitability");
-
-	Params::WBP_AssignBoard_PalSlot_Assigned_C_SetSuitability Parms{};
-
-	Parms.Suitability = Suitability;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

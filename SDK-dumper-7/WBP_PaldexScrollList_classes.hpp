@@ -30,21 +30,21 @@ public:
 
 public:
 	void AddDisplayInfo(TArray<struct FPalUIPaldex_DisplayInfo>& infoArray);
-	void ClickByCharacterID(class FName CharacterID);
-	void ClickByIndex(int32 Index_0);
-	void CreateChild(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
-	void Destruct();
-	void DisplayAll();
-	void DisplayChild(class UWBP_Paldex_List_C* ChildWidget);
-	void ExecuteUbergraph_WBP_PaldexScrollList(int32 EntryPoint);
-	void FocusByCharatcerID(class FName CharacterID);
-	void FocusByIndex(int32 Index_0);
-	void GetFocusTargetByCharacterID(class FName CharacterID, class UWidget** Widget);
-	void GetFocusTargetByIndex(int32 Index_0, class UWidget** Target);
-	void GetWidgetByIndex(int32 Index_0, class UWBP_Paldex_List_C** Widget);
-	void OnClickedPanel_Internal(class FName CharacterID, class UWBP_Paldex_List_C* Widget);
-	void OnHoveredPanel_Internal(class FName CharacterID, class UWBP_Paldex_List_C* SelfWidget);
 	void SetDisplayCharacterIdArray(TArray<struct FPalUIPaldex_DisplayInfo>& displayInfoArray);
+	void OnHoveredPanel_Internal(class FName CharacterID, class UWBP_Paldex_List_C* SelfWidget);
+	void OnClickedPanel_Internal(class FName CharacterID, class UWBP_Paldex_List_C* Widget);
+	void GetWidgetByIndex(int32 Index_0, class UWBP_Paldex_List_C** Widget);
+	void GetFocusTargetByIndex(int32 Index_0, class UWidget** Target);
+	void GetFocusTargetByCharacterID(class FName CharacterID, class UWidget** Widget);
+	void FocusByIndex(int32 Index_0);
+	void FocusByCharatcerID(class FName CharacterID);
+	void ExecuteUbergraph_WBP_PaldexScrollList(int32 EntryPoint);
+	void DisplayChild(class UWBP_Paldex_List_C* ChildWidget);
+	void DisplayAll();
+	void Destruct();
+	void CreateChild(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
+	void ClickByIndex(int32 Index_0);
+	void ClickByCharacterID(class FName CharacterID);
 
 public:
 	static class UClass* StaticClass()

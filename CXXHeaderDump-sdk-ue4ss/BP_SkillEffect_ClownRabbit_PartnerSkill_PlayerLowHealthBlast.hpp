@@ -17,12 +17,12 @@ class ABP_SkillEffect_ClownRabbit_PartnerSkill_PlayerLowHealthBlast_C : public A
     double HitMaxCount;                                                               // 0x0378 (size: 0x8)
     bool IsIgnoreFly;                                                                 // 0x0380 (size: 0x1)
     TArray<int32> FoliageIndex;                                                       // 0x0388 (size: 0x10)
-    TMap<class AActor*, class UPrimitiveComponent*> CurrentHitableActorMap;           // 0x0398 (size: 0x50)
-    TArray<class AActor*> HittedActors;                                               // 0x03E8 (size: 0x10)
+    TMap<AActor*, UPrimitiveComponent*> CurrentHitableActorMap;                       // 0x0398 (size: 0x50)
+    TArray<AActor*> HittedActors;                                                     // 0x03E8 (size: 0x10)
     TMap<AActor*, double> HitLastTimeMap;                                             // 0x03F8 (size: 0x50)
     TMap<AActor*, int32> HitCountMap;                                                 // 0x0448 (size: 0x50)
     bool IsRadiusImmediate;                                                           // 0x0498 (size: 0x1)
-    TMap<class AActor*, class FMultiHitFoliageIndexArrayStruct> HittedFoliageArray;   // 0x04A0 (size: 0x50)
+    TMap<AActor*, FMultiHitFoliageIndexArrayStruct> HittedFoliageArray;               // 0x04A0 (size: 0x50)
 
     void GetEffectValue(int32& Value);
     void GetEffectType(EPalAdditionalEffectType& Effect);

@@ -17,21 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_PalWorkPowerPlant_Gauge.WBP_PalWorkPowerPlant_Gauge_C.AnmEvent_Changing
+// Function WBP_PalWorkPowerPlant_Gauge.WBP_PalWorkPowerPlant_Gauge_C.SetState
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsChanging                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsLow                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    Show                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalWorkPowerPlant_Gauge_C::AnmEvent_Changing(bool IsChanging)
+void UWBP_PalWorkPowerPlant_Gauge_C::SetState(bool IsLow, bool Show)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkPowerPlant_Gauge_C", "AnmEvent_Changing");
+		Func = Class->GetFunction("WBP_PalWorkPowerPlant_Gauge_C", "SetState");
 
-	Params::WBP_PalWorkPowerPlant_Gauge_C_AnmEvent_Changing Parms{};
+	Params::WBP_PalWorkPowerPlant_Gauge_C_SetState Parms{};
 
-	Parms.IsChanging = IsChanging;
+	Parms.IsLow = IsLow;
+	Parms.Show = Show;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,23 +59,21 @@ void UWBP_PalWorkPowerPlant_Gauge_C::ExecuteUbergraph_WBP_PalWorkPowerPlant_Gaug
 }
 
 
-// Function WBP_PalWorkPowerPlant_Gauge.WBP_PalWorkPowerPlant_Gauge_C.SetState
+// Function WBP_PalWorkPowerPlant_Gauge.WBP_PalWorkPowerPlant_Gauge_C.AnmEvent_Changing
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsLow                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Show                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsChanging                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalWorkPowerPlant_Gauge_C::SetState(bool IsLow, bool Show)
+void UWBP_PalWorkPowerPlant_Gauge_C::AnmEvent_Changing(bool IsChanging)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkPowerPlant_Gauge_C", "SetState");
+		Func = Class->GetFunction("WBP_PalWorkPowerPlant_Gauge_C", "AnmEvent_Changing");
 
-	Params::WBP_PalWorkPowerPlant_Gauge_C_SetState Parms{};
+	Params::WBP_PalWorkPowerPlant_Gauge_C_AnmEvent_Changing Parms{};
 
-	Parms.IsLow = IsLow;
-	Parms.Show = Show;
+	Parms.IsChanging = IsChanging;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

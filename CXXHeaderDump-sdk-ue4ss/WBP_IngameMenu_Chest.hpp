@@ -61,7 +61,7 @@ class UWBP_IngameMenu_Chest_C : public UUserWidget
     class UWidget* CustomNavi_ToCloseButton(EUINavigation Navigation);
     void GetTargetContainerTopFocustTarget(class UWidget*& FocusTarget);
     void Get Inventory Top Focust Target(class UWidget*& FocusTarget);
-    void OnLeftClickedTargetContainerSLot(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
+    void OnLeftClickedTargetContainerSlot(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
     void Setup(class UBP_PalInventoryModel_C* Model, class UPalItemContainer* TargetContainer, int32 DisplaySlotNumDefault);
     void SetTagetContainerDisplayName(FText TargetContainerName);
     void Setup Target Item Container(class UPalItemContainer* TargetContainer);

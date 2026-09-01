@@ -33,11 +33,11 @@ public:
 	bool                                          isEnableButton;                                    // 0x02B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Active();
-	void AnmEvent_Deactive();
-	void ExecuteUbergraph_WBP_InventoryEquipment_GrowsPointButton(int32 EntryPoint);
-	void SetPoint(int32 Point);
 	void SetSimulatePoint(int32 Point);
+	void SetPoint(int32 Point);
+	void ExecuteUbergraph_WBP_InventoryEquipment_GrowsPointButton(int32 EntryPoint);
+	void AnmEvent_Deactive();
+	void AnmEvent_Active();
 
 public:
 	static class UClass* StaticClass()

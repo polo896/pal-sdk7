@@ -17,25 +17,6 @@
 namespace SDK::Params
 {
 
-// Function BP_GrapplingGun_Bullet.BP_GrapplingGun_Bullet_C.AttachSocket
-// 0x0010 (0x0010 - 0x0000)
-struct BP_GrapplingGun_Bullet_C_AttachSocket final
-{
-public:
-	class USceneComponent*                        Component;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FName                                   SocketName;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_GrapplingGun_Bullet_C_AttachSocket;
-
-// Function BP_GrapplingGun_Bullet.BP_GrapplingGun_Bullet_C.ExecuteUbergraph_BP_GrapplingGun_Bullet
-// 0x0004 (0x0004 - 0x0000)
-struct BP_GrapplingGun_Bullet_C_ExecuteUbergraph_BP_GrapplingGun_Bullet final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_GrapplingGun_Bullet_C_ExecuteUbergraph_BP_GrapplingGun_Bullet;
-
 // Function BP_GrapplingGun_Bullet.BP_GrapplingGun_Bullet_C.UpdateCable
 // 0x0140 (0x0140 - 0x0000)
 struct BP_GrapplingGun_Bullet_C_UpdateCable final
@@ -51,6 +32,25 @@ public:
 	bool                                          CallFunc_K2_SetActorLocationAndRotation_ReturnValue; // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_GrapplingGun_Bullet_C_UpdateCable;
+
+// Function BP_GrapplingGun_Bullet.BP_GrapplingGun_Bullet_C.ExecuteUbergraph_BP_GrapplingGun_Bullet
+// 0x0004 (0x0004 - 0x0000)
+struct BP_GrapplingGun_Bullet_C_ExecuteUbergraph_BP_GrapplingGun_Bullet final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_GrapplingGun_Bullet_C_ExecuteUbergraph_BP_GrapplingGun_Bullet;
+
+// Function BP_GrapplingGun_Bullet.BP_GrapplingGun_Bullet_C.AttachSocket
+// 0x0010 (0x0010 - 0x0000)
+struct BP_GrapplingGun_Bullet_C_AttachSocket final
+{
+public:
+	class USceneComponent*                        Component;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FName                                   SocketName;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_GrapplingGun_Bullet_C_AttachSocket;
 
 }
 

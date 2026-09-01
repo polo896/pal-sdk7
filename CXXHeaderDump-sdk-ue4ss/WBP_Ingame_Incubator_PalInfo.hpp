@@ -9,7 +9,7 @@ class UWBP_Ingame_Incubator_PalInfo_C : public UUserWidget
     class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive_2;        // 0x0290 (size: 0x8)
     class UWBP_MainMenu_Pal_Skill_Passive_C* WBP_MainMenu_Pal_Skill_Passive_3;        // 0x0298 (size: 0x8)
     class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon;                                // 0x02A0 (size: 0x8)
-    TArray<class UWBP_MainMenu_Pal_Skill_Passive_C*> PassiveSkillPanelArray;          // 0x02A8 (size: 0x10)
+    TArray<UWBP_MainMenu_Pal_Skill_Passive_C*> PassiveSkillPanelArray;                // 0x02A8 (size: 0x10)
 
     void Setup(TArray<FName>& passiveList);
     void OnInitialized();

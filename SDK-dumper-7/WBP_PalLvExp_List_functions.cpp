@@ -17,35 +17,29 @@
 namespace SDK
 {
 
-// Function WBP_PalLvExp_List.WBP_PalLvExp_List_C.Anm_Open
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_PalLvExp_List.WBP_PalLvExp_List_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalLvExp_List_C::Anm_Open(int32 Index_0)
+void UWBP_PalLvExp_List_C::Setup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalLvExp_List_C", "Anm_Open");
+		Func = Class->GetFunction("WBP_PalLvExp_List_C", "Setup");
 
-	Params::WBP_PalLvExp_List_C_Anm_Open Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalLvExp_List.WBP_PalLvExp_List_C.Anm_Open_All
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_PalLvExp_List.WBP_PalLvExp_List_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_PalLvExp_List_C::Anm_Open_All()
+void UWBP_PalLvExp_List_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalLvExp_List_C", "Anm_Open_All");
+		Func = Class->GetFunction("WBP_PalLvExp_List_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,31 +65,37 @@ void UWBP_PalLvExp_List_C::ExecuteUbergraph_WBP_PalLvExp_List(int32 EntryPoint)
 }
 
 
-// Function WBP_PalLvExp_List.WBP_PalLvExp_List_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_PalLvExp_List.WBP_PalLvExp_List_C.Anm_Open_All
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalLvExp_List_C::OnInitialized()
+void UWBP_PalLvExp_List_C::Anm_Open_All()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalLvExp_List_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_PalLvExp_List_C", "Anm_Open_All");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalLvExp_List.WBP_PalLvExp_List_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalLvExp_List.WBP_PalLvExp_List_C.Anm_Open
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalLvExp_List_C::Setup()
+void UWBP_PalLvExp_List_C::Anm_Open(int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalLvExp_List_C", "Setup");
+		Func = Class->GetFunction("WBP_PalLvExp_List_C", "Anm_Open");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_PalLvExp_List_C_Anm_Open Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

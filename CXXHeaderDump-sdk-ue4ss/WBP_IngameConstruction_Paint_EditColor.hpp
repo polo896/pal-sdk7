@@ -56,7 +56,7 @@ class UWBP_IngameConstruction_Paint_EditColor_C : public UUserWidget
     class UWidget* DoCustomNavigation_To_SubmitButton(EUINavigation Navigation);
     class UWidget* DoCustomNavigation_To_SliderV(EUINavigation Navigation);
     void OnClickPresetColorButton(FLinearColor Color);
-    TArray<class UWBP_IngameConstruction_Paint_ColorPreset_C*> GetColorPresetWidgets();
+    TArray<UWBP_IngameConstruction_Paint_ColorPreset_C*> GetColorPresetWidgets();
     void ReflectColorFromString(FString HexString);
     void ReflectEditColor(FLinearColor EditColor, bool bShouldApplySider);
     void Setup(FLinearColor CurrentColor, TArray<FLinearColor>& InPresetColors, bool bShowResetButton);

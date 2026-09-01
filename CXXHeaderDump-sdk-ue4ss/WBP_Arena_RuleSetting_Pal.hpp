@@ -13,7 +13,7 @@ class UWBP_Arena_RuleSetting_Pal_C : public UUserWidget
     class UWrapBox* WrapBox;                                                          // 0x02B0 (size: 0x8)
     FWBP_Arena_RuleSetting_Pal_COnCloseButtonClicked OnCloseButtonClicked;            // 0x02B8 (size: 0x10)
     void OnCloseButtonClicked();
-    TMap<class FName, class UWBP_Arena_RuleSetting_PalListButton_C*> PalList;         // 0x02C8 (size: 0x50)
+    TMap<FName, UWBP_Arena_RuleSetting_PalListButton_C*> PalList;                     // 0x02C8 (size: 0x50)
     FWBP_Arena_RuleSetting_Pal_COnToggleCharacterRestrict OnToggleCharacterRestrict;  // 0x0318 (size: 0x10)
     void OnToggleCharacterRestrict(FName CharacterID, class UWBP_Arena_RuleSetting_PalListButton_C* Widget);
     FWBP_Arena_RuleSetting_Pal_COnChangeAll OnChangeAll;                              // 0x0328 (size: 0x10)

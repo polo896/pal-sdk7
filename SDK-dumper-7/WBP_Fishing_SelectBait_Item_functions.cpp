@@ -17,15 +17,15 @@
 namespace SDK
 {
 
-// Function WBP_Fishing_SelectBait_Item.WBP_Fishing_SelectBait_Item_C.Select
+// Function WBP_Fishing_SelectBait_Item.WBP_Fishing_SelectBait_Item_C.UnSelect
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Fishing_SelectBait_Item_C::Select()
+void UWBP_Fishing_SelectBait_Item_C::UnSelect()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_SelectBait_Item_C", "Select");
+		Func = Class->GetFunction("WBP_Fishing_SelectBait_Item_C", "UnSelect");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,15 +51,15 @@ void UWBP_Fishing_SelectBait_Item_C::Setup(const struct FPalStaticItemIdAndNum& 
 }
 
 
-// Function WBP_Fishing_SelectBait_Item.WBP_Fishing_SelectBait_Item_C.UnSelect
+// Function WBP_Fishing_SelectBait_Item.WBP_Fishing_SelectBait_Item_C.Select
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Fishing_SelectBait_Item_C::UnSelect()
+void UWBP_Fishing_SelectBait_Item_C::Select()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_SelectBait_Item_C", "UnSelect");
+		Func = Class->GetFunction("WBP_Fishing_SelectBait_Item_C", "Select");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -17,68 +17,105 @@
 namespace SDK
 {
 
-// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.BndEvt__WBP_Arena_RankingBoard_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Arena_RankingBoard_C::BndEvt__WBP_Arena_RankingBoard_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
+void UWBP_Arena_RankingBoard_C::Setup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RankingBoard_C", "BndEvt__WBP_Arena_RankingBoard_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Arena_RankingBoard_C", "Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.CloseAnm
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Arena_RankingBoard_C::CloseAnm()
+void UWBP_Arena_RankingBoard_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RankingBoard_C", "CloseAnm");
+		Func = Class->GetFunction("WBP_Arena_RankingBoard_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Arena_RankingBoard_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RankingBoard_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.Do Custom Navigation_Left
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.OnLocalPlayerInfoReplicated
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const struct FPalArenaWorldRankingRecord&RankingInfo                                            (BlueprintVisible, BlueprintReadOnly, Parm)
 
-class UWidget* UWBP_Arena_RankingBoard_C::Do_Custom_Navigation_Left(EUINavigation Navigation_0)
+void UWBP_Arena_RankingBoard_C::OnLocalPlayerInfoReplicated(const struct FPalArenaWorldRankingRecord& RankingInfo)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RankingBoard_C", "Do Custom Navigation_Left");
+		Func = Class->GetFunction("WBP_Arena_RankingBoard_C", "OnLocalPlayerInfoReplicated");
 
-	Params::WBP_Arena_RankingBoard_C_Do_Custom_Navigation_Left Parms{};
+	Params::WBP_Arena_RankingBoard_C_OnLocalPlayerInfoReplicated Parms{};
 
-	Parms.Navigation_0 = Navigation_0;
+	Parms.RankingInfo = std::move(RankingInfo);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	return Parms.ReturnValue;
+
+// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.OnListHovered
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_RankingBoard_C::OnListHovered(class UWidget* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_RankingBoard_C", "OnListHovered");
+
+	Params::WBP_Arena_RankingBoard_C_OnListHovered Parms{};
+
+	Parms.Widget = Widget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.Finished_0CE00FEB491F3446724290B53E54505B
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Arena_RankingBoard_C::Finished_0CE00FEB491F3446724290B53E54505B()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_RankingBoard_C", "Finished_0CE00FEB491F3446724290B53E54505B");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.ExecuteUbergraph_WBP_Arena_RankingBoard
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_RankingBoard_C::ExecuteUbergraph_WBP_Arena_RankingBoard(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_RankingBoard_C", "ExecuteUbergraph_WBP_Arena_RankingBoard");
+
+	Params::WBP_Arena_RankingBoard_C_ExecuteUbergraph_WBP_Arena_RankingBoard Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -105,103 +142,66 @@ class UWidget* UWBP_Arena_RankingBoard_C::DoCustomNavigation_Right(EUINavigation
 }
 
 
-// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.ExecuteUbergraph_WBP_Arena_RankingBoard
-// (Final, UbergraphFunction)
+// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.Do Custom Navigation_Left
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_RankingBoard_C::ExecuteUbergraph_WBP_Arena_RankingBoard(int32 EntryPoint)
+class UWidget* UWBP_Arena_RankingBoard_C::Do_Custom_Navigation_Left(EUINavigation Navigation_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RankingBoard_C", "ExecuteUbergraph_WBP_Arena_RankingBoard");
+		Func = Class->GetFunction("WBP_Arena_RankingBoard_C", "Do Custom Navigation_Left");
 
-	Params::WBP_Arena_RankingBoard_C_ExecuteUbergraph_WBP_Arena_RankingBoard Parms{};
+	Params::WBP_Arena_RankingBoard_C_Do_Custom_Navigation_Left Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Navigation_0 = Navigation_0;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 
-// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.Finished_0CE00FEB491F3446724290B53E54505B
+// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Arena_RankingBoard_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_RankingBoard_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.CloseAnm
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Arena_RankingBoard_C::Finished_0CE00FEB491F3446724290B53E54505B()
+void UWBP_Arena_RankingBoard_C::CloseAnm()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RankingBoard_C", "Finished_0CE00FEB491F3446724290B53E54505B");
+		Func = Class->GetFunction("WBP_Arena_RankingBoard_C", "CloseAnm");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.OnListHovered
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.BndEvt__WBP_Arena_RankingBoard_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_Arena_RankingBoard_C::OnListHovered(class UWidget* Widget)
+void UWBP_Arena_RankingBoard_C::BndEvt__WBP_Arena_RankingBoard_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RankingBoard_C", "OnListHovered");
-
-	Params::WBP_Arena_RankingBoard_C_OnListHovered Parms{};
-
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.OnLocalPlayerInfoReplicated
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalArenaWorldRankingRecord&RankingInfo                                            (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_Arena_RankingBoard_C::OnLocalPlayerInfoReplicated(const struct FPalArenaWorldRankingRecord& RankingInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RankingBoard_C", "OnLocalPlayerInfoReplicated");
-
-	Params::WBP_Arena_RankingBoard_C_OnLocalPlayerInfoReplicated Parms{};
-
-	Parms.RankingInfo = std::move(RankingInfo);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_RankingBoard_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RankingBoard_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_RankingBoard_C::Setup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RankingBoard_C", "Setup");
+		Func = Class->GetFunction("WBP_Arena_RankingBoard_C", "BndEvt__WBP_Arena_RankingBoard_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

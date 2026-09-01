@@ -17,21 +17,21 @@
 namespace SDK
 {
 
-// Function BP_PalNightVisionComponent.BP_PalNightVisionComponent_C.ExecuteUbergraph_BP_PalNightVisionComponent
-// (Final, UbergraphFunction)
+// Function BP_PalNightVisionComponent.BP_PalNightVisionComponent_C.SetNightVisionEnabled_ForServer
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bEnable                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_PalNightVisionComponent_C::ExecuteUbergraph_BP_PalNightVisionComponent(int32 EntryPoint)
+void UBP_PalNightVisionComponent_C::SetNightVisionEnabled_ForServer(bool bEnable)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalNightVisionComponent_C", "ExecuteUbergraph_BP_PalNightVisionComponent");
+		Func = Class->GetFunction("BP_PalNightVisionComponent_C", "SetNightVisionEnabled_ForServer");
 
-	Params::BP_PalNightVisionComponent_C_ExecuteUbergraph_BP_PalNightVisionComponent Parms{};
+	Params::BP_PalNightVisionComponent_C_SetNightVisionEnabled_ForServer Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.bEnable = bEnable;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -51,21 +51,21 @@ void UBP_PalNightVisionComponent_C::OnInactive()
 }
 
 
-// Function BP_PalNightVisionComponent.BP_PalNightVisionComponent_C.SetNightVisionEnabled_ForServer
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_PalNightVisionComponent.BP_PalNightVisionComponent_C.ExecuteUbergraph_BP_PalNightVisionComponent
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    bEnable                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_PalNightVisionComponent_C::SetNightVisionEnabled_ForServer(bool bEnable)
+void UBP_PalNightVisionComponent_C::ExecuteUbergraph_BP_PalNightVisionComponent(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalNightVisionComponent_C", "SetNightVisionEnabled_ForServer");
+		Func = Class->GetFunction("BP_PalNightVisionComponent_C", "ExecuteUbergraph_BP_PalNightVisionComponent");
 
-	Params::BP_PalNightVisionComponent_C_SetNightVisionEnabled_ForServer Parms{};
+	Params::BP_PalNightVisionComponent_C_ExecuteUbergraph_BP_PalNightVisionComponent Parms{};
 
-	Parms.bEnable = bEnable;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

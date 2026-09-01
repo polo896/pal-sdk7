@@ -41,17 +41,17 @@ public:
 	TMap<EPalGuildRole, struct FDataTableRowHandle> RoleNameMsgIDMap;                                // 0x0330(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void ExecuteUbergraph_WBP_Guild_MemberList(int32 EntryPoint);
-	void GetDisplayInfo(struct FPalUIGuildMemberDisplayInfo* DisplayInfo);
-	void GetFocusTarget(class UWidget** TargetWidget);
-	void SetIsAdmin(bool IsAdmin);
-	void SetIsOnline(bool IsOnline);
-	void SetPlayerName(const class FString& PlayerName);
-	void SetRole(EPalGuildRole Role);
 	void Setup(const struct FPalUIGuildMemberDisplayInfo& DisplayInfo, const struct FGuid& PlayerUId);
+	void SetRole(EPalGuildRole Role);
+	void SetPlayerName(const class FString& PlayerName);
+	void SetIsOnline(bool IsOnline);
+	void SetIsAdmin(bool IsAdmin);
+	void GetFocusTarget(class UWidget** TargetWidget);
+	void GetDisplayInfo(struct FPalUIGuildMemberDisplayInfo* DisplayInfo);
+	void ExecuteUbergraph_WBP_Guild_MemberList(int32 EntryPoint);
+	void BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 
 public:
 	static class UClass* StaticClass()

@@ -14,6 +14,33 @@
 namespace SDK::Params
 {
 
+// Function WBP_Buildup_Pal_Item.WBP_Buildup_Pal_Item_C.SetNumRed
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Buildup_Pal_Item_C_SetNumRed final
+{
+public:
+	bool                                          IsRed;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Buildup_Pal_Item_C_SetNumRed;
+
+// Function WBP_Buildup_Pal_Item.WBP_Buildup_Pal_Item_C.SetNum
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Buildup_Pal_Item_C_SetNum final
+{
+public:
+	int32                                         Num;                                               // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Buildup_Pal_Item_C_SetNum;
+
+// Function WBP_Buildup_Pal_Item.WBP_Buildup_Pal_Item_C.SetIcon
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Buildup_Pal_Item_C_SetIcon final
+{
+public:
+	int32                                         IconIndex;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Buildup_Pal_Item_C_SetIcon;
+
 // Function WBP_Buildup_Pal_Item.WBP_Buildup_Pal_Item_C.ExecuteUbergraph_WBP_Buildup_Pal_Item
 // 0x0078 (0x0078 - 0x0000)
 struct WBP_Buildup_Pal_Item_C_ExecuteUbergraph_WBP_Buildup_Pal_Item final
@@ -38,33 +65,6 @@ public:
 	class UMaterialInterface*                     K2Node_Select_Default_1;                           // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Buildup_Pal_Item_C_ExecuteUbergraph_WBP_Buildup_Pal_Item;
-
-// Function WBP_Buildup_Pal_Item.WBP_Buildup_Pal_Item_C.SetIcon
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Buildup_Pal_Item_C_SetIcon final
-{
-public:
-	int32                                         IconIndex;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Buildup_Pal_Item_C_SetIcon;
-
-// Function WBP_Buildup_Pal_Item.WBP_Buildup_Pal_Item_C.SetNum
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Buildup_Pal_Item_C_SetNum final
-{
-public:
-	int32                                         Num;                                               // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Buildup_Pal_Item_C_SetNum;
-
-// Function WBP_Buildup_Pal_Item.WBP_Buildup_Pal_Item_C.SetNumRed
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Buildup_Pal_Item_C_SetNumRed final
-{
-public:
-	bool                                          IsRed;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Buildup_Pal_Item_C_SetNumRed;
 
 }
 

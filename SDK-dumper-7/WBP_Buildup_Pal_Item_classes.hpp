@@ -27,10 +27,10 @@ public:
 	class UBP_PalTextBlock_C*                     Text_HaveNum;                                      // 0x0288(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Buildup_Pal_Item(int32 EntryPoint);
-	void SetIcon(int32 IconIndex);
-	void SetNum(int32 Num);
 	void SetNumRed(bool IsRed);
+	void SetNum(int32 Num);
+	void SetIcon(int32 IconIndex);
+	void ExecuteUbergraph_WBP_Buildup_Pal_Item(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

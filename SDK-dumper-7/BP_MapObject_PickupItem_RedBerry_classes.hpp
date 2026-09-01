@@ -28,9 +28,9 @@ public:
 	class UPalMapObjectPickupItemParameterComponent* PalMapObjectPickupItemParameter;                // 0x0448(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_MapObject_PickupItem_RedBerry(int32 EntryPoint);
-	void InitializeFromPool();
 	void ReturnToPool();
+	void InitializeFromPool();
+	void ExecuteUbergraph_BP_MapObject_PickupItem_RedBerry(int32 EntryPoint);
 
 	struct FPalObjectPoolParameter GetObjectPoolParameter() const;
 

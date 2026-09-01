@@ -72,7 +72,7 @@ struct FLiveLinkCameraStaticData : public FLiveLinkTransformStaticData
 
 struct FLiveLinkCurveConversionSettings
 {
-    TMap<class FString, class FSoftObjectPath> CurveConversionAssetMap;               // 0x0000 (size: 0x50)
+    TMap<FString, FSoftObjectPath> CurveConversionAssetMap;                           // 0x0000 (size: 0x50)
 
 }; // Size: 0x50
 
@@ -140,7 +140,7 @@ struct FLiveLinkLightStaticData : public FLiveLinkTransformStaticData
 
 struct FLiveLinkMetaData
 {
-    TMap<class FName, class FString> StringMetaData;                                  // 0x0000 (size: 0x50)
+    TMap<FName, FString> StringMetaData;                                              // 0x0000 (size: 0x50)
     FQualifiedFrameTime SceneTime;                                                    // 0x0050 (size: 0x10)
 
 }; // Size: 0x60
@@ -294,7 +294,7 @@ struct FSubjectFrameHandle : public FLiveLinkBaseBlueprintData
 
 struct FSubjectMetadata
 {
-    TMap<class FName, class FString> StringMetaData;                                  // 0x0000 (size: 0x50)
+    TMap<FName, FString> StringMetaData;                                              // 0x0000 (size: 0x50)
     FTimecode SceneTimecode;                                                          // 0x0050 (size: 0x14)
     FFrameRate SceneFramerate;                                                        // 0x0064 (size: 0x8)
 
@@ -357,9 +357,9 @@ class ULiveLinkSourceSettings : public UObject
 
 class ULiveLinkSubjectSettings : public UObject
 {
-    TArray<class ULiveLinkFramePreProcessor*> PreProcessors;                          // 0x0028 (size: 0x10)
+    TArray<ULiveLinkFramePreProcessor*> PreProcessors;                                // 0x0028 (size: 0x10)
     class ULiveLinkFrameInterpolationProcessor* InterpolationProcessor;               // 0x0038 (size: 0x8)
-    TArray<class ULiveLinkFrameTranslator*> Translators;                              // 0x0040 (size: 0x10)
+    TArray<ULiveLinkFrameTranslator*> Translators;                                    // 0x0040 (size: 0x10)
     TSubclassOf<class ULiveLinkRole> Role;                                            // 0x0050 (size: 0x8)
     FFrameRate FrameRate;                                                             // 0x0058 (size: 0x8)
     bool bRebroadcastSubject;                                                         // 0x0060 (size: 0x1)
@@ -374,7 +374,7 @@ class ULiveLinkVirtualSubject : public UObject
 {
     TSubclassOf<class ULiveLinkRole> Role;                                            // 0x0030 (size: 0x8)
     TArray<FLiveLinkSubjectName> Subjects;                                            // 0x0038 (size: 0x10)
-    TArray<class ULiveLinkFrameTranslator*> FrameTranslators;                         // 0x0048 (size: 0x10)
+    TArray<ULiveLinkFrameTranslator*> FrameTranslators;                               // 0x0048 (size: 0x10)
     bool bRebroadcastSubject;                                                         // 0x0058 (size: 0x1)
 
 }; // Size: 0x160

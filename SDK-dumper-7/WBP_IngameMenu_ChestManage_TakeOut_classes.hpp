@@ -36,11 +36,11 @@ public:
 	int64                                         MaxCount;                                          // 0x04D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature();
-	void BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_IngameCommonSelectNum_K2Node_ComponentBoundEvent_0_OnUpdateNum__DelegateSignature(int64 Num);
-	void BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_Menu_btn_K2Node_ComponentBoundEvent_5_OnButtonClicked__DelegateSignature();
-	void ExecuteUbergraph_WBP_IngameMenu_ChestManage_TakeOut(int32 EntryPoint);
 	void Setup(const struct FPalItemAndNum& ItemAndNum, int64 MaxNum);
+	void ExecuteUbergraph_WBP_IngameMenu_ChestManage_TakeOut(int32 EntryPoint);
+	void BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_Menu_btn_K2Node_ComponentBoundEvent_5_OnButtonClicked__DelegateSignature();
+	void BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_IngameCommonSelectNum_K2Node_ComponentBoundEvent_0_OnUpdateNum__DelegateSignature(int64 Num);
+	void BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()

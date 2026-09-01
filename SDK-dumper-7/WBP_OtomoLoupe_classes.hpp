@@ -27,20 +27,20 @@ public:
 	class UPalIndividualCharacterHandle*          targetHandle;                                      // 0x04F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void CalcScreenPosition();
-	void ExecuteUbergraph_WBP_OtomoLoupe(int32 EntryPoint);
-	void GetLoupeWidgetSize(struct FVector2D* widgetSize_0);
-	void GetTargetWidgetSize(struct FVector2D* outVector);
-	void GetTargetWorldLocation(struct FVector* outVector);
-	void GetTranslationTarget(class UWidget** Widget);
-	bool IsEnableLoupe();
-	void OnActivateOtomo();
-	void OnInactiveOtomo();
-	void OnInitialized();
-	void RoundScreenPosition(const struct FVector2D& ScreenPosition, struct FVector2D* calcedPosition);
-	void SetFinalWidgetOpacity(double calcedOpacity);
-	void Setup();
 	void UpdateArrowImageAngle(double newAngle);
+	void Setup();
+	void SetFinalWidgetOpacity(double calcedOpacity);
+	void RoundScreenPosition(const struct FVector2D& ScreenPosition, struct FVector2D* calcedPosition);
+	void OnInitialized();
+	void OnInactiveOtomo();
+	void OnActivateOtomo();
+	bool IsEnableLoupe();
+	void GetTranslationTarget(class UWidget** Widget);
+	void GetTargetWorldLocation(struct FVector* outVector);
+	void GetTargetWidgetSize(struct FVector2D* outVector);
+	void GetLoupeWidgetSize(struct FVector2D* widgetSize_0);
+	void ExecuteUbergraph_WBP_OtomoLoupe(int32 EntryPoint);
+	void CalcScreenPosition();
 
 public:
 	static class UClass* StaticClass()

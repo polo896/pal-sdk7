@@ -18,6 +18,84 @@
 namespace SDK::Params
 {
 
+// Function BP_GrapplingGun.BP_GrapplingGun_C.UpdateVisibleReticle
+// 0x0020 (0x0020 - 0x0000)
+struct BP_GrapplingGun_C_UpdateVisibleReticle final
+{
+public:
+	class APalCharacter*                          CallFunc_FindOwnerPalCharacter_ReturnValue;        // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanHitGrapplingTarget_ReturnValue;        // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalShooterComponent*                   CallFunc_GetComponentByClass_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsAiming_ReturnValue;                     // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanShoot_ReturnValue;                     // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsGrapplingAction_ReturnValue;            // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_GrapplingGun_C_UpdateVisibleReticle;
+
+// Function BP_GrapplingGun.BP_GrapplingGun_C.UpdateBulletLocation
+// 0x0028 (0x0028 - 0x0000)
+struct BP_GrapplingGun_C_UpdateBulletLocation final
+{
+public:
+	bool                                          CallFunc_IsGrapplingAction_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_GrapplingGun_C_UpdateBulletLocation;
+
+// Function BP_GrapplingGun.BP_GrapplingGun_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_GrapplingGun_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_GrapplingGun_C_ReceiveTick;
+
+// Function BP_GrapplingGun.BP_GrapplingGun_C.ReceiveEndPlay
+// 0x0001 (0x0001 - 0x0000)
+struct BP_GrapplingGun_C_ReceiveEndPlay final
+{
+public:
+	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_GrapplingGun_C_ReceiveEndPlay;
+
+// Function BP_GrapplingGun.BP_GrapplingGun_C.OnGrapplingActionStart
+// 0x0020 (0x0020 - 0x0000)
+struct BP_GrapplingGun_C_OnGrapplingActionStart final
+{
+public:
+	struct FVector                                HitLocation;                                       // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CoolTimeRate;                                      // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_GrapplingGun_C_OnGrapplingActionStart;
+
+// Function BP_GrapplingGun.BP_GrapplingGun_C.OnDetachWeapon
+// 0x0008 (0x0008 - 0x0000)
+struct BP_GrapplingGun_C_OnDetachWeapon final
+{
+public:
+	class AActor*                                 detachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_GrapplingGun_C_OnDetachWeapon;
+
+// Function BP_GrapplingGun.BP_GrapplingGun_C.OnAttachWeapon
+// 0x0008 (0x0008 - 0x0000)
+struct BP_GrapplingGun_C_OnAttachWeapon final
+{
+public:
+	class AActor*                                 attachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_GrapplingGun_C_OnAttachWeapon;
+
 // Function BP_GrapplingGun.BP_GrapplingGun_C.ExecuteUbergraph_BP_GrapplingGun
 // 0x0180 (0x0180 - 0x0000)
 struct BP_GrapplingGun_C_ExecuteUbergraph_BP_GrapplingGun final
@@ -61,83 +139,14 @@ public:
 };
 DUMPER7_ASSERTS_BP_GrapplingGun_C_ExecuteUbergraph_BP_GrapplingGun;
 
-// Function BP_GrapplingGun.BP_GrapplingGun_C.OnAttachWeapon
-// 0x0008 (0x0008 - 0x0000)
-struct BP_GrapplingGun_C_OnAttachWeapon final
-{
-public:
-	class AActor*                                 attachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_GrapplingGun_C_OnAttachWeapon;
-
-// Function BP_GrapplingGun.BP_GrapplingGun_C.OnDetachWeapon
-// 0x0008 (0x0008 - 0x0000)
-struct BP_GrapplingGun_C_OnDetachWeapon final
-{
-public:
-	class AActor*                                 detachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_GrapplingGun_C_OnDetachWeapon;
-
-// Function BP_GrapplingGun.BP_GrapplingGun_C.OnGrapplingActionStart
-// 0x0020 (0x0020 - 0x0000)
-struct BP_GrapplingGun_C_OnGrapplingActionStart final
-{
-public:
-	struct FVector                                HitLocation;                                       // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CoolTimeRate;                                      // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_GrapplingGun_C_OnGrapplingActionStart;
-
-// Function BP_GrapplingGun.BP_GrapplingGun_C.ReceiveEndPlay
+// Function BP_GrapplingGun.BP_GrapplingGun_C.IsShowReticle
 // 0x0001 (0x0001 - 0x0000)
-struct BP_GrapplingGun_C_ReceiveEndPlay final
+struct BP_GrapplingGun_C_IsShowReticle final
 {
 public:
-	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsShow;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_GrapplingGun_C_ReceiveEndPlay;
-
-// Function BP_GrapplingGun.BP_GrapplingGun_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_GrapplingGun_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_GrapplingGun_C_ReceiveTick;
-
-// Function BP_GrapplingGun.BP_GrapplingGun_C.UpdateBulletLocation
-// 0x0028 (0x0028 - 0x0000)
-struct BP_GrapplingGun_C_UpdateBulletLocation final
-{
-public:
-	bool                                          CallFunc_IsGrapplingAction_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_GrapplingGun_C_UpdateBulletLocation;
-
-// Function BP_GrapplingGun.BP_GrapplingGun_C.UpdateVisibleReticle
-// 0x0020 (0x0020 - 0x0000)
-struct BP_GrapplingGun_C_UpdateVisibleReticle final
-{
-public:
-	class APalCharacter*                          CallFunc_FindOwnerPalCharacter_ReturnValue;        // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CanHitGrapplingTarget_ReturnValue;        // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalShooterComponent*                   CallFunc_GetComponentByClass_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsAiming_ReturnValue;                     // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CanShoot_ReturnValue;                     // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsGrapplingAction_ReturnValue;            // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_GrapplingGun_C_UpdateVisibleReticle;
+DUMPER7_ASSERTS_BP_GrapplingGun_C_IsShowReticle;
 
 // Function BP_GrapplingGun.BP_GrapplingGun_C.CanDealDamageWeapon
 // 0x0001 (0x0001 - 0x0000)
@@ -147,15 +156,6 @@ public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_GrapplingGun_C_CanDealDamageWeapon;
-
-// Function BP_GrapplingGun.BP_GrapplingGun_C.IsShowReticle
-// 0x0001 (0x0001 - 0x0000)
-struct BP_GrapplingGun_C_IsShowReticle final
-{
-public:
-	bool                                          IsShow;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_GrapplingGun_C_IsShowReticle;
 
 }
 

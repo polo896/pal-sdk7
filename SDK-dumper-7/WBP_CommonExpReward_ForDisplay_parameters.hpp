@@ -17,35 +17,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_CommonExpReward_ForDisplay.WBP_CommonExpReward_ForDisplay_C.ExecuteUbergraph_WBP_CommonExpReward_ForDisplay
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_CommonExpReward_ForDisplay_C_ExecuteUbergraph_WBP_CommonExpReward_ForDisplay final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CommonExpReward_ForDisplay_C_ExecuteUbergraph_WBP_CommonExpReward_ForDisplay;
-
-// Function WBP_CommonExpReward_ForDisplay.WBP_CommonExpReward_ForDisplay_C.OnTimerEvent_EndIn
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_CommonExpReward_ForDisplay_C_OnTimerEvent_EndIn final
-{
-public:
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CommonExpReward_ForDisplay_C_OnTimerEvent_EndIn;
-
-// Function WBP_CommonExpReward_ForDisplay.WBP_CommonExpReward_ForDisplay_C.QueExpReward
-// 0x000C (0x000C - 0x0000)
-struct WBP_CommonExpReward_ForDisplay_C_QueExpReward final
-{
-public:
-	struct FPalUICommonExpRewardData              RewardData;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CommonExpReward_ForDisplay_C_QueExpReward;
-
 // Function WBP_CommonExpReward_ForDisplay.WBP_CommonExpReward_ForDisplay_C.TryPopRewardData
 // 0x0060 (0x0060 - 0x0000)
 struct WBP_CommonExpReward_ForDisplay_C_TryPopRewardData final
@@ -62,6 +33,35 @@ public:
 	bool                                          CallFunc_Array_IsEmpty_ReturnValue;                // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_CommonExpReward_ForDisplay_C_TryPopRewardData;
+
+// Function WBP_CommonExpReward_ForDisplay.WBP_CommonExpReward_ForDisplay_C.QueExpReward
+// 0x000C (0x000C - 0x0000)
+struct WBP_CommonExpReward_ForDisplay_C_QueExpReward final
+{
+public:
+	struct FPalUICommonExpRewardData              RewardData;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CommonExpReward_ForDisplay_C_QueExpReward;
+
+// Function WBP_CommonExpReward_ForDisplay.WBP_CommonExpReward_ForDisplay_C.OnTimerEvent_EndIn
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_CommonExpReward_ForDisplay_C_OnTimerEvent_EndIn final
+{
+public:
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CommonExpReward_ForDisplay_C_OnTimerEvent_EndIn;
+
+// Function WBP_CommonExpReward_ForDisplay.WBP_CommonExpReward_ForDisplay_C.ExecuteUbergraph_WBP_CommonExpReward_ForDisplay
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_CommonExpReward_ForDisplay_C_ExecuteUbergraph_WBP_CommonExpReward_ForDisplay final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CommonExpReward_ForDisplay_C_ExecuteUbergraph_WBP_CommonExpReward_ForDisplay;
 
 }
 

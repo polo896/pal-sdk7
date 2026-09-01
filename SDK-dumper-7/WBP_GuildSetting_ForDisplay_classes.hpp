@@ -29,14 +29,14 @@ public:
 	struct FPalDataTableRowName_UIInputAction     PrevCategoryInputAction;                           // 0x0490(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_GuildSetting_ForDisplay_WBP_Guild_Setting_K2Node_ComponentBoundEvent_0_OnChangeRoleSetting__DelegateSignature(EPalGuildRole Role, EPalGuildPermission RolePermission, bool bEnable);
 	void BndEvt__WBP_GuildSetting_ForDisplay_WBP_Guild_Setting_K2Node_ComponentBoundEvent_1_OnChangedNoticeSetting__DelegateSignature(EPalGuildNotificationType NotificationType, bool bEnableNotice);
-	void ExecuteUbergraph_WBP_GuildSetting_ForDisplay(int32 EntryPoint);
-	void OnInputAction_NextTab();
-	void OnInputAction_PrevTab();
-	void OnSetup();
-	void OverrideCancelAction_Common();
+	void BndEvt__WBP_GuildSetting_ForDisplay_WBP_Guild_Setting_K2Node_ComponentBoundEvent_0_OnChangeRoleSetting__DelegateSignature(EPalGuildRole Role, EPalGuildPermission RolePermission, bool bEnable);
 	void SetupNoticeSetting();
+	void OverrideCancelAction_Common();
+	void OnSetup();
+	void OnInputAction_PrevTab();
+	void OnInputAction_NextTab();
+	void ExecuteUbergraph_WBP_GuildSetting_ForDisplay(int32 EntryPoint);
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

@@ -17,192 +17,41 @@
 namespace SDK
 {
 
-// Function WBP_PalDamageText.WBP_PalDamageText_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PalDamageText_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalDamageText_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalDamageText.WBP_PalDamageText_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PalDamageText_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalDamageText_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalDamageText.WBP_PalDamageText_C.EndAnimEvent
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalDamageText_C::EndAnimEvent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalDamageText_C", "EndAnimEvent");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalDamageText.WBP_PalDamageText_C.ExecuteUbergraph_WBP_PalDamageText
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalDamageText_C::ExecuteUbergraph_WBP_PalDamageText(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalDamageText_C", "ExecuteUbergraph_WBP_PalDamageText");
-
-	Params::WBP_PalDamageText_C_ExecuteUbergraph_WBP_PalDamageText Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalDamageText.WBP_PalDamageText_C.GetPadding
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// double*                                 Padding_0                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalDamageText_C::GetPadding(double* Padding_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalDamageText_C", "GetPadding");
-
-	Params::WBP_PalDamageText_C_GetPadding Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Padding_0 != nullptr)
-		*Padding_0 = Parms.Padding_0;
-}
-
-
-// Function WBP_PalDamageText.WBP_PalDamageText_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PalDamageText_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalDamageText_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalDamageText.WBP_PalDamageText_C.OnRequestClose
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalDamageText_C::OnRequestClose()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalDamageText_C", "OnRequestClose");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalDamageText.WBP_PalDamageText_C.SetAdditionalPassiveDamageRate
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  AdditionalPassiveRate                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalDamageText_C::SetAdditionalPassiveDamageRate(double AdditionalPassiveRate)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalDamageText_C", "SetAdditionalPassiveDamageRate");
-
-	Params::WBP_PalDamageText_C_SetAdditionalPassiveDamageRate Parms{};
-
-	Parms.AdditionalPassiveRate = AdditionalPassiveRate;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalDamageText.WBP_PalDamageText_C.SetDamageColor
+// Function WBP_PalDamageText.WBP_PalDamageText_C.UpdatePosition
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FSlateColor&               InColor                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const struct FVector&                   targetWorldLocation                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalDamageText_C::SetDamageColor(const struct FSlateColor& InColor)
+void UWBP_PalDamageText_C::UpdatePosition(const struct FVector& targetWorldLocation)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalDamageText_C", "SetDamageColor");
+		Func = Class->GetFunction("WBP_PalDamageText_C", "UpdatePosition");
 
-	Params::WBP_PalDamageText_C_SetDamageColor Parms{};
+	Params::WBP_PalDamageText_C_UpdatePosition Parms{};
 
-	Parms.InColor = std::move(InColor);
+	Parms.targetWorldLocation = std::move(targetWorldLocation);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalDamageText.WBP_PalDamageText_C.SetDamageTextType
+// Function WBP_PalDamageText.WBP_PalDamageText_C.SetMercyHitDisplay
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EPalDamageTextType                      textType_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bMercyHit                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalDamageText_C::SetDamageTextType(EPalDamageTextType textType_0)
+void UWBP_PalDamageText_C::SetMercyHitDisplay(bool bMercyHit)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalDamageText_C", "SetDamageTextType");
+		Func = Class->GetFunction("WBP_PalDamageText_C", "SetMercyHitDisplay");
 
-	Params::WBP_PalDamageText_C_SetDamageTextType Parms{};
+	Params::WBP_PalDamageText_C_SetMercyHitDisplay Parms{};
 
-	Parms.textType_0 = textType_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalDamageText.WBP_PalDamageText_C.SetDamageValue
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   InValue                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalDamageText_C::SetDamageValue(int32 InValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalDamageText_C", "SetDamageValue");
-
-	Params::WBP_PalDamageText_C_SetDamageValue Parms{};
-
-	Parms.InValue = InValue;
+	Parms.bMercyHit = bMercyHit;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -230,43 +79,194 @@ void UWBP_PalDamageText_C::SetElementEffect(TArray<EPalAdditionalEffectType>& Ad
 }
 
 
-// Function WBP_PalDamageText.WBP_PalDamageText_C.SetMercyHitDisplay
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalDamageText.WBP_PalDamageText_C.SetDamageValue
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bMercyHit                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   InValue                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalDamageText_C::SetMercyHitDisplay(bool bMercyHit)
+void UWBP_PalDamageText_C::SetDamageValue(int32 InValue)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalDamageText_C", "SetMercyHitDisplay");
+		Func = Class->GetFunction("WBP_PalDamageText_C", "SetDamageValue");
 
-	Params::WBP_PalDamageText_C_SetMercyHitDisplay Parms{};
+	Params::WBP_PalDamageText_C_SetDamageValue Parms{};
 
-	Parms.bMercyHit = bMercyHit;
+	Parms.InValue = InValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalDamageText.WBP_PalDamageText_C.UpdatePosition
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalDamageText.WBP_PalDamageText_C.SetDamageTextType
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FVector&                   targetWorldLocation                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalDamageTextType                      textType_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalDamageText_C::UpdatePosition(const struct FVector& targetWorldLocation)
+void UWBP_PalDamageText_C::SetDamageTextType(EPalDamageTextType textType_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalDamageText_C", "UpdatePosition");
+		Func = Class->GetFunction("WBP_PalDamageText_C", "SetDamageTextType");
 
-	Params::WBP_PalDamageText_C_UpdatePosition Parms{};
+	Params::WBP_PalDamageText_C_SetDamageTextType Parms{};
 
-	Parms.targetWorldLocation = std::move(targetWorldLocation);
+	Parms.textType_0 = textType_0;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalDamageText.WBP_PalDamageText_C.SetDamageColor
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSlateColor&               InColor                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_PalDamageText_C::SetDamageColor(const struct FSlateColor& InColor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalDamageText_C", "SetDamageColor");
+
+	Params::WBP_PalDamageText_C_SetDamageColor Parms{};
+
+	Parms.InColor = std::move(InColor);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalDamageText.WBP_PalDamageText_C.SetAdditionalPassiveDamageRate
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  AdditionalPassiveRate                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalDamageText_C::SetAdditionalPassiveDamageRate(double AdditionalPassiveRate)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalDamageText_C", "SetAdditionalPassiveDamageRate");
+
+	Params::WBP_PalDamageText_C_SetAdditionalPassiveDamageRate Parms{};
+
+	Parms.AdditionalPassiveRate = AdditionalPassiveRate;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalDamageText.WBP_PalDamageText_C.OnRequestClose
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalDamageText_C::OnRequestClose()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalDamageText_C", "OnRequestClose");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalDamageText.WBP_PalDamageText_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_PalDamageText_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalDamageText_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalDamageText.WBP_PalDamageText_C.GetPadding
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// double*                                 Padding_0                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalDamageText_C::GetPadding(double* Padding_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalDamageText_C", "GetPadding");
+
+	Params::WBP_PalDamageText_C_GetPadding Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Padding_0 != nullptr)
+		*Padding_0 = Parms.Padding_0;
+}
+
+
+// Function WBP_PalDamageText.WBP_PalDamageText_C.ExecuteUbergraph_WBP_PalDamageText
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalDamageText_C::ExecuteUbergraph_WBP_PalDamageText(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalDamageText_C", "ExecuteUbergraph_WBP_PalDamageText");
+
+	Params::WBP_PalDamageText_C_ExecuteUbergraph_WBP_PalDamageText Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalDamageText.WBP_PalDamageText_C.EndAnimEvent
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalDamageText_C::EndAnimEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalDamageText_C", "EndAnimEvent");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalDamageText.WBP_PalDamageText_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_PalDamageText_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalDamageText_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalDamageText.WBP_PalDamageText_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_PalDamageText_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalDamageText_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

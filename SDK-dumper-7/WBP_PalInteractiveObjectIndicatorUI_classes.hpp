@@ -53,28 +53,28 @@ public:
 	bool                                          bDisablingSelectingBullet;                         // 0x0588(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Activate(bool isInputConsume, class UPalUserWidget* Parent);
-	void Deactivate(class UPalUserWidget* Parent);
-	void EndTriggerInteract();
-	void ExecuteUbergraph_WBP_PalInteractiveObjectIndicatorUI(int32 EntryPoint);
-	void IsConflictingCoopAction(bool* bConflicted);
-	void IsConflictingWeaponChangeNext(bool* bConflicted);
-	bool IsInteracting();
-	void IsSameTriggeringActionType(EPalInteractiveObjectActionType ActionType, bool* IsSame);
-	void PressInteractButton();
-	void RegisterAction(bool isInputConsume, class UPalUserWidget* Parent);
-	void ReleaseInteractButton();
-	void ResetInteractInterval();
-	void SetActionInfo(const struct FPalInteractiveObjectActionInfoData& ActionInfo);
-	void SetEnable(bool IsEnable);
-	void Setup(EPalInteractiveObjectActionType ActionType, TScriptInterface<class IPalInteractiveObjectComponentInterface> Interface);
-	void StartTriggerInteract();
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void Unregister_Action(class UPalUserWidget* Parent);
-	void Update_Button_Type(EPalInteractiveObjectButtonType newButtonType, double newLongPushTime, bool IsValidInteract, bool CanToggle_0);
-	void Update_Interactable(bool bInteractable, class UPalUserWidget* Parent);
-	void UpdateText(const class FText& InText, bool IsLockedByRide);
 	void UpdateVisible(bool Visible);
+	void UpdateText(const class FText& InText, bool IsLockedByRide);
+	void Update_Interactable(bool bInteractable, class UPalUserWidget* Parent);
+	void Update_Button_Type(EPalInteractiveObjectButtonType newButtonType, double newLongPushTime, bool IsValidInteract, bool CanToggle_0);
+	void Unregister_Action(class UPalUserWidget* Parent);
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void StartTriggerInteract();
+	void Setup(EPalInteractiveObjectActionType ActionType, TScriptInterface<class IPalInteractiveObjectComponentInterface> Interface);
+	void SetEnable(bool IsEnable);
+	void SetActionInfo(const struct FPalInteractiveObjectActionInfoData& ActionInfo);
+	void ResetInteractInterval();
+	void ReleaseInteractButton();
+	void RegisterAction(bool isInputConsume, class UPalUserWidget* Parent);
+	void PressInteractButton();
+	void IsSameTriggeringActionType(EPalInteractiveObjectActionType ActionType, bool* IsSame);
+	bool IsInteracting();
+	void IsConflictingWeaponChangeNext(bool* bConflicted);
+	void IsConflictingCoopAction(bool* bConflicted);
+	void ExecuteUbergraph_WBP_PalInteractiveObjectIndicatorUI(int32 EntryPoint);
+	void EndTriggerInteract();
+	void Deactivate(class UPalUserWidget* Parent);
+	void Activate(bool isInputConsume, class UPalUserWidget* Parent);
 
 public:
 	static class UClass* StaticClass()

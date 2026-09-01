@@ -17,6 +17,35 @@
 namespace SDK::Params
 {
 
+// Function BP_PalBiomeTriggerBox_WildlifeSanctuary.BP_PalBiomeTriggerBox_WildlifeSanctuary_C.ReceiveActorEndOverlap
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PalBiomeTriggerBox_WildlifeSanctuary_C_ReceiveActorEndOverlap final
+{
+public:
+	class AActor*                                 OtherActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBiomeTriggerBox_WildlifeSanctuary_C_ReceiveActorEndOverlap;
+
+// Function BP_PalBiomeTriggerBox_WildlifeSanctuary.BP_PalBiomeTriggerBox_WildlifeSanctuary_C.ReceiveActorBeginOverlap
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PalBiomeTriggerBox_WildlifeSanctuary_C_ReceiveActorBeginOverlap final
+{
+public:
+	class AActor*                                 OtherActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBiomeTriggerBox_WildlifeSanctuary_C_ReceiveActorBeginOverlap;
+
+// Function BP_PalBiomeTriggerBox_WildlifeSanctuary.BP_PalBiomeTriggerBox_WildlifeSanctuary_C.OnAlertStateChanged
+// 0x0010 (0x0010 - 0x0000)
+struct BP_PalBiomeTriggerBox_WildlifeSanctuary_C_OnAlertStateChanged final
+{
+public:
+	EPalWildlifeSanctuaryAlertState               NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalPlayerCharacter*                    DetectedPlayer;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBiomeTriggerBox_WildlifeSanctuary_C_OnAlertStateChanged;
+
 // Function BP_PalBiomeTriggerBox_WildlifeSanctuary.BP_PalBiomeTriggerBox_WildlifeSanctuary_C.ExecuteUbergraph_BP_PalBiomeTriggerBox_WildlifeSanctuary
 // 0x00E0 (0x00E0 - 0x0000)
 struct BP_PalBiomeTriggerBox_WildlifeSanctuary_C_ExecuteUbergraph_BP_PalBiomeTriggerBox_WildlifeSanctuary final
@@ -50,35 +79,6 @@ public:
 	float                                         CallFunc_IsNearTwoPoint_distance_ImplicitCast;     // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_PalBiomeTriggerBox_WildlifeSanctuary_C_ExecuteUbergraph_BP_PalBiomeTriggerBox_WildlifeSanctuary;
-
-// Function BP_PalBiomeTriggerBox_WildlifeSanctuary.BP_PalBiomeTriggerBox_WildlifeSanctuary_C.OnAlertStateChanged
-// 0x0010 (0x0010 - 0x0000)
-struct BP_PalBiomeTriggerBox_WildlifeSanctuary_C_OnAlertStateChanged final
-{
-public:
-	EPalWildlifeSanctuaryAlertState               NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalPlayerCharacter*                    DetectedPlayer;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBiomeTriggerBox_WildlifeSanctuary_C_OnAlertStateChanged;
-
-// Function BP_PalBiomeTriggerBox_WildlifeSanctuary.BP_PalBiomeTriggerBox_WildlifeSanctuary_C.ReceiveActorBeginOverlap
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PalBiomeTriggerBox_WildlifeSanctuary_C_ReceiveActorBeginOverlap final
-{
-public:
-	class AActor*                                 OtherActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBiomeTriggerBox_WildlifeSanctuary_C_ReceiveActorBeginOverlap;
-
-// Function BP_PalBiomeTriggerBox_WildlifeSanctuary.BP_PalBiomeTriggerBox_WildlifeSanctuary_C.ReceiveActorEndOverlap
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PalBiomeTriggerBox_WildlifeSanctuary_C_ReceiveActorEndOverlap final
-{
-public:
-	class AActor*                                 OtherActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBiomeTriggerBox_WildlifeSanctuary_C_ReceiveActorEndOverlap;
 
 // Function BP_PalBiomeTriggerBox_WildlifeSanctuary.BP_PalBiomeTriggerBox_WildlifeSanctuary_C.ShouldMaintainAlertWhilePresent
 // 0x0001 (0x0001 - 0x0000)

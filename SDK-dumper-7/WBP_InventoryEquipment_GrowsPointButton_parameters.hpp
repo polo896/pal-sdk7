@@ -14,18 +14,16 @@
 namespace SDK::Params
 {
 
-// Function WBP_InventoryEquipment_GrowsPointButton.WBP_InventoryEquipment_GrowsPointButton_C.ExecuteUbergraph_WBP_InventoryEquipment_GrowsPointButton
+// Function WBP_InventoryEquipment_GrowsPointButton.WBP_InventoryEquipment_GrowsPointButton_C.SetSimulatePoint
 // 0x0020 (0x0020 - 0x0000)
-struct WBP_InventoryEquipment_GrowsPointButton_C_ExecuteUbergraph_WBP_InventoryEquipment_GrowsPointButton final
+struct WBP_InventoryEquipment_GrowsPointButton_C_SetSimulatePoint final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Point;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0018)()
 };
-DUMPER7_ASSERTS_WBP_InventoryEquipment_GrowsPointButton_C_ExecuteUbergraph_WBP_InventoryEquipment_GrowsPointButton;
+DUMPER7_ASSERTS_WBP_InventoryEquipment_GrowsPointButton_C_SetSimulatePoint;
 
 // Function WBP_InventoryEquipment_GrowsPointButton.WBP_InventoryEquipment_GrowsPointButton_C.SetPoint
 // 0x0020 (0x0020 - 0x0000)
@@ -39,16 +37,18 @@ public:
 };
 DUMPER7_ASSERTS_WBP_InventoryEquipment_GrowsPointButton_C_SetPoint;
 
-// Function WBP_InventoryEquipment_GrowsPointButton.WBP_InventoryEquipment_GrowsPointButton_C.SetSimulatePoint
+// Function WBP_InventoryEquipment_GrowsPointButton.WBP_InventoryEquipment_GrowsPointButton_C.ExecuteUbergraph_WBP_InventoryEquipment_GrowsPointButton
 // 0x0020 (0x0020 - 0x0000)
-struct WBP_InventoryEquipment_GrowsPointButton_C_SetSimulatePoint final
+struct WBP_InventoryEquipment_GrowsPointButton_C_ExecuteUbergraph_WBP_InventoryEquipment_GrowsPointButton final
 {
 public:
-	int32                                         Point;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0018)()
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_InventoryEquipment_GrowsPointButton_C_SetSimulatePoint;
+DUMPER7_ASSERTS_WBP_InventoryEquipment_GrowsPointButton_C_ExecuteUbergraph_WBP_InventoryEquipment_GrowsPointButton;
 
 }
 

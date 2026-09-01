@@ -38,20 +38,20 @@ public:
 	TMulticastInlineDelegate<void()>              OnAddFocus;                                        // 0x02F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__WBP_GuildHeadButton_PalComboBoxString_15_K2Node_ComponentBoundEvent_0_OnSelectionChangedEvent__DelegateSignature(const class FString& SelectedItem, ESelectInfo SelectionType);
-	void BndEvt__WBP_GuildHeadButton_PalComboBoxString_15_K2Node_ComponentBoundEvent_4_OnOpeningEvent__DelegateSignature();
-	void BndEvt__WBP_GuildHeadButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_GuildHeadButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_GuildHeadButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void ExecuteUbergraph_WBP_GuildHeadButton(int32 EntryPoint);
-	void OnAddedToFocusPath(const struct FFocusEvent& InFocusEvent);
-	void OnClickedComboBoxContent(class UWBP_GuildMemberMenuList_C* Button);
-	class UWidget* OnGenerateWidget(const class FString& Item);
-	void OnInitialized();
-	void OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent);
-	void SetOptions(TArray<class FString>& OptionStrings);
-	void SetupAsSingleButton(const class FText& Text);
 	void SetValue(const class FString& Value);
+	void SetupAsSingleButton(const class FText& Text);
+	void SetOptions(TArray<class FString>& OptionStrings);
+	void OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent);
+	void OnInitialized();
+	class UWidget* OnGenerateWidget(const class FString& Item);
+	void OnClickedComboBoxContent(class UWBP_GuildMemberMenuList_C* Button);
+	void OnAddedToFocusPath(const struct FFocusEvent& InFocusEvent);
+	void ExecuteUbergraph_WBP_GuildHeadButton(int32 EntryPoint);
+	void BndEvt__WBP_GuildHeadButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_GuildHeadButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_GuildHeadButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_GuildHeadButton_PalComboBoxString_15_K2Node_ComponentBoundEvent_4_OnOpeningEvent__DelegateSignature();
+	void BndEvt__WBP_GuildHeadButton_PalComboBoxString_15_K2Node_ComponentBoundEvent_0_OnSelectionChangedEvent__DelegateSignature(const class FString& SelectedItem, ESelectInfo SelectionType);
 
 public:
 	static class UClass* StaticClass()

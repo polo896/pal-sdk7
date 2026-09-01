@@ -14,6 +14,15 @@
 namespace SDK::Params
 {
 
+// Function BP_MapObject_TreasureBox_OilrigGoal.BP_MapObject_TreasureBox_OilrigGoal_C.SetupVisual
+// 0x0008 (0x0008 - 0x0000)
+struct BP_MapObject_TreasureBox_OilrigGoal_C_SetupVisual final
+{
+public:
+	class UPalMapObjectConcreteModelBase*         ConcreteModel;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_MapObject_TreasureBox_OilrigGoal_C_SetupVisual;
+
 // Function BP_MapObject_TreasureBox_OilrigGoal.BP_MapObject_TreasureBox_OilrigGoal_C.ExecuteUbergraph_BP_MapObject_TreasureBox_OilrigGoal
 // 0x0018 (0x0018 - 0x0000)
 struct BP_MapObject_TreasureBox_OilrigGoal_C_ExecuteUbergraph_BP_MapObject_TreasureBox_OilrigGoal final
@@ -27,15 +36,6 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_MapObject_TreasureBox_OilrigGoal_C_ExecuteUbergraph_BP_MapObject_TreasureBox_OilrigGoal;
-
-// Function BP_MapObject_TreasureBox_OilrigGoal.BP_MapObject_TreasureBox_OilrigGoal_C.SetupVisual
-// 0x0008 (0x0008 - 0x0000)
-struct BP_MapObject_TreasureBox_OilrigGoal_C_SetupVisual final
-{
-public:
-	class UPalMapObjectConcreteModelBase*         ConcreteModel;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_MapObject_TreasureBox_OilrigGoal_C_SetupVisual;
 
 }
 

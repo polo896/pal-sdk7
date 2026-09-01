@@ -45,23 +45,23 @@ public:
 	TMulticastInlineDelegate<void(bool Show)>     ToggleLevelSyncInfo;                               // 0x0350(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void ExecuteUbergraph_WBP_Arena_Rule_ListGroup(int32 EntryPoint);
-	void GetDesiredFocusTarget(class UWidget** Widget);
-	void OnBossRestrictChanged(bool IsOn);
-	void OnContentHovered(class UWidget* Button);
-	void OnContentUnhovered();
-	void OnDuplicateRestrictChanged(bool IsOn);
-	void OnElementRestrictChanged(TArray<EPalElementType>& Elements);
-	void OnHumanRestrictChanged(bool IsOn);
-	void OnInitialized();
-	void OnLegendRestrictChanged(bool IsOn);
-	void OnLevelSyncChanged(bool IsOn);
-	void OnPalDamageChanged(double Value);
-	void OnPalRestrictClicked();
-	void OnPlayerDamageChanged(double Value);
-	void OnRideRestrictChanged(bool IsOn);
-	void OnTimeLimitDamageChanged(double Value);
 	void Setup(const struct FPalArenaRule& ArenaRule, bool RuleEditable);
+	void OnTimeLimitDamageChanged(double Value);
+	void OnRideRestrictChanged(bool IsOn);
+	void OnPlayerDamageChanged(double Value);
+	void OnPalRestrictClicked();
+	void OnPalDamageChanged(double Value);
+	void OnLevelSyncChanged(bool IsOn);
+	void OnLegendRestrictChanged(bool IsOn);
+	void OnInitialized();
+	void OnHumanRestrictChanged(bool IsOn);
+	void OnElementRestrictChanged(TArray<EPalElementType>& Elements);
+	void OnDuplicateRestrictChanged(bool IsOn);
+	void OnContentUnhovered();
+	void OnContentHovered(class UWidget* Button);
+	void OnBossRestrictChanged(bool IsOn);
+	void GetDesiredFocusTarget(class UWidget** Widget);
+	void ExecuteUbergraph_WBP_Arena_Rule_ListGroup(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

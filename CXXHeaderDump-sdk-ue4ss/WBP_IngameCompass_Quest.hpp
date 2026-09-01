@@ -7,7 +7,7 @@ class UWBP_IngameCompass_Quest_C : public UWBP_CompassIconBase_C
     class UBP_PalTextBlock_C* Text_Length;                                            // 0x04A0 (size: 0x8)
 
     void ShouldForceHide(bool& bForceHide);
-    void SetupTexture(TSoftObjectPtr<UTexture2D> SoftTexture);
+    void SetupTexture(TSoftObjectPtr<class UTexture2D> SoftTexture);
     void SetDistanceText(double Length);
 }; // Size: 0x4A8
 

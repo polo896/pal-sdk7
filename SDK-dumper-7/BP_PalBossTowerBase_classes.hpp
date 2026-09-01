@@ -36,32 +36,32 @@ public:
 	TMap<EPalBossType, struct FDataTableRowHandle> BossTypeAndQuestIdMap;                            // 0x0358(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void BP_PalBossTowerBase_AutoGenFunc(bool bResult);
-	void ExecuteUbergraph_BP_PalBossTowerBase(int32 EntryPoint);
-	void GetEntryCancelTrigger(class UShapeComponent** EntryCancelTrigger);
-	void GetEntryWaitInfoTrigger(class UShapeComponent** EntryWaitInfoTrigger);
-	void GetInteractableInterface(TScriptInterface<class IPalInteractiveObjectComponentInterface>* Interface);
-	void GetInteractableTrigger(class UShapeComponent** InteractableTrigger);
-	void Interact(class AActor* Other, EPalInteractiveObjectIndicatorType IndicatorType);
-	void IntializeQuestManagerEvent();
-	void On_Close_Start_Battle_Check_Dialog(bool bResult);
-	void OnCancelTriggerEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
-	void OnChangeBossBattleStateBP(EPalBossBattleState NewState);
-	void OnClosedLockDialog(bool bResult);
-	void OnCompleteQuestLocal(const class FName& QuestId);
-	void OnEntryWaitInfoTriggerBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
-	void OnEntryWaitInfoTriggerEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
-	void OnInteractableTriggerEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
-	void OnInteractableTriggerStartOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
-	void OnOrderedQuestLocal(const class FName& QuestId);
-	void OpenStartBattleCheckDialog();
-	void ReceiveBeginPlay();
-	void SetQuestEffectActive(bool IsActive);
 	void UpdateBossBattleState(EPalBossBattleState NewBossBattleState);
+	void SetQuestEffectActive(bool IsActive);
+	void ReceiveBeginPlay();
+	void OpenStartBattleCheckDialog();
+	void OnOrderedQuestLocal(const class FName& QuestId);
+	void OnInteractableTriggerStartOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+	void OnInteractableTriggerEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+	void OnEntryWaitInfoTriggerEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+	void OnEntryWaitInfoTriggerBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+	void OnCompleteQuestLocal(const class FName& QuestId);
+	void OnClosedLockDialog(bool bResult);
+	void OnChangeBossBattleStateBP(EPalBossBattleState NewState);
+	void OnCancelTriggerEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+	void On_Close_Start_Battle_Check_Dialog(bool bResult);
+	void IntializeQuestManagerEvent();
+	void Interact(class AActor* Other, EPalInteractiveObjectIndicatorType IndicatorType);
+	void GetInteractableTrigger(class UShapeComponent** InteractableTrigger);
+	void GetInteractableInterface(TScriptInterface<class IPalInteractiveObjectComponentInterface>* Interface);
+	void GetEntryWaitInfoTrigger(class UShapeComponent** EntryWaitInfoTrigger);
+	void GetEntryCancelTrigger(class UShapeComponent** EntryCancelTrigger);
+	void ExecuteUbergraph_BP_PalBossTowerBase(int32 EntryPoint);
+	void BP_PalBossTowerBase_AutoGenFunc(bool bResult);
 
-	struct FTransform GetDeadItemDropPoint() const;
-	struct FTransform GetFrontWarpPoint() const;
 	struct FTransform GetTopWarpPoint() const;
+	struct FTransform GetFrontWarpPoint() const;
+	struct FTransform GetDeadItemDropPoint() const;
 
 public:
 	static class UClass* StaticClass()

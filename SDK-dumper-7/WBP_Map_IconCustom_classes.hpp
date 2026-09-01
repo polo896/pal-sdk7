@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "WBP_WorldMap_IconBase_NoDesign_classes.hpp"
 #include "Pal_structs.hpp"
 #include "Engine_structs.hpp"
-#include "WBP_WorldMap_IconBase_NoDesign_classes.hpp"
 
 
 namespace SDK
@@ -33,13 +33,13 @@ public:
 	struct FPalGuildMarkerData                    GuildMarkerData;                                   // 0x0580(0x0040)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void SetTexture(class UTexture2D* Texture);
-	void SetColorType(bool IsCustomMarker);
-	void GetInvisibleButton(class UWidget** Button);
-	void ExecuteUbergraph_WBP_Map_IconCustom(int32 EntryPoint);
-	void BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 	void BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void ExecuteUbergraph_WBP_Map_IconCustom(int32 EntryPoint);
+	void GetInvisibleButton(class UWidget** Button);
+	void SetColorType(bool IsCustomMarker);
+	void SetTexture(class UTexture2D* Texture);
 
 	bool GetLocationOnLandscape(struct FVector* OutLocation) const;
 

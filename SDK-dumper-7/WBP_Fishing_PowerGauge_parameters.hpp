@@ -17,38 +17,50 @@
 namespace SDK::Params
 {
 
-// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.AnmEvent_Bad_Loop
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Fishing_PowerGauge_C_AnmEvent_Bad_Loop final
+// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.SetFishPosition
+// 0x0070 (0x0070 - 0x0000)
+struct WBP_Fishing_PowerGauge_C_SetFishPosition final
 {
 public:
-	bool                                          IsStart;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Position;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UImage*                                 CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              CallFunc_GetPosition_ReturnValue;                  // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_BreakVector2D_X;                          // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector2D_Y;                          // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0060(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Fishing_PowerGauge_C_AnmEvent_Bad_Loop;
+DUMPER7_ASSERTS_WBP_Fishing_PowerGauge_C_SetFishPosition;
 
-// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.AnmEvent_GoodToBad
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Fishing_PowerGauge_C_AnmEvent_GoodToBad final
+// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.SetBarSize
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Fishing_PowerGauge_C_SetBarSize final
 {
 public:
-	bool                                          IsStart;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        BarSize_0;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Fishing_PowerGauge_C_AnmEvent_GoodToBad;
+DUMPER7_ASSERTS_WBP_Fishing_PowerGauge_C_SetBarSize;
 
-// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.ApplyHandleSize
-// 0x0600 (0x0600 - 0x0000)
-struct WBP_Fishing_PowerGauge_C_ApplyHandleSize final
+// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.SetBarPosition
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Fishing_PowerGauge_C_SetBarPosition final
 {
 public:
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector2D_X;                          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector2D_Y;                          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0030(0x00D0)()
-	struct FSliderStyle                           K2Node_MakeStruct_SliderStyle;                     // 0x0100(0x0500)()
+	double                                        Position;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetValue_InValue_ImplicitCast;            // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Fishing_PowerGauge_C_ApplyHandleSize;
+DUMPER7_ASSERTS_WBP_Fishing_PowerGauge_C_SetBarPosition;
 
 // Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.ExecuteUbergraph_WBP_Fishing_PowerGauge
 // 0x0080 (0x0080 - 0x0000)
@@ -79,50 +91,38 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Fishing_PowerGauge_C_ExecuteUbergraph_WBP_Fishing_PowerGauge;
 
-// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.SetBarPosition
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Fishing_PowerGauge_C_SetBarPosition final
+// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.ApplyHandleSize
+// 0x0600 (0x0600 - 0x0000)
+struct WBP_Fishing_PowerGauge_C_ApplyHandleSize final
 {
 public:
-	double                                        Position;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetValue_InValue_ImplicitCast;            // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector2D_X;                          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector2D_Y;                          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0030(0x00D0)()
+	struct FSliderStyle                           K2Node_MakeStruct_SliderStyle;                     // 0x0100(0x0500)()
 };
-DUMPER7_ASSERTS_WBP_Fishing_PowerGauge_C_SetBarPosition;
+DUMPER7_ASSERTS_WBP_Fishing_PowerGauge_C_ApplyHandleSize;
 
-// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.SetBarSize
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Fishing_PowerGauge_C_SetBarSize final
+// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.AnmEvent_GoodToBad
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Fishing_PowerGauge_C_AnmEvent_GoodToBad final
 {
 public:
-	double                                        BarSize_0;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsStart;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Fishing_PowerGauge_C_SetBarSize;
+DUMPER7_ASSERTS_WBP_Fishing_PowerGauge_C_AnmEvent_GoodToBad;
 
-// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.SetFishPosition
-// 0x0070 (0x0070 - 0x0000)
-struct WBP_Fishing_PowerGauge_C_SetFishPosition final
+// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.AnmEvent_Bad_Loop
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Fishing_PowerGauge_C_AnmEvent_Bad_Loop final
 {
 public:
-	double                                        Position;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UImage*                                 CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              CallFunc_GetPosition_ReturnValue;                  // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_BreakVector2D_X;                          // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector2D_Y;                          // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0060(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsStart;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Fishing_PowerGauge_C_SetFishPosition;
+DUMPER7_ASSERTS_WBP_Fishing_PowerGauge_C_AnmEvent_Bad_Loop;
 
 }
 

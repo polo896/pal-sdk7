@@ -35,32 +35,32 @@ public:
 	int32                                         Max_Bullets;                                       // 0x06C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void StopReloadWhenRoll(const class UPalActionBase* action);
-	void ShootIntervalEvent();
-	void PlayShootAnim();
-	void PlayFireSound();
-	void PlayEquipAnim();
-	void OnshotInternal(bool* IsShoted);
-	void OnShot();
-	void OnReleaseTrigger(bool bCanShootOnRelease);
-	void OnPullTrigger();
-	void OnDetachWeapon(class AActor* detachActor);
-	void OnAttachWeapon(class AActor* attachActor);
-	void GetTargetPosition(struct FVector* TargetLocation);
-	void GetShootTransformList(double BaseAngle, double BlurAngle, int32 MaxBullets, TArray<struct FTransform>* ShootTransformList);
-	void GetMuzzleTransform(struct FTransform* Transform);
-	class FName GetEquipSocketName();
-	void GetEjectionPort(struct FTransform* EjectionTransform);
-	void ExecuteUbergraph_BP_ShotgunBase(int32 EntryPoint);
-	void CountShotInterval();
-	void CanShoot(bool* can);
-	float CalcRange();
-	float CalcDPS();
 	float CalcAccuracy();
+	float CalcDPS();
+	float CalcRange();
+	void CanShoot(bool* can);
+	void CountShotInterval();
+	void ExecuteUbergraph_BP_ShotgunBase(int32 EntryPoint);
+	void GetEjectionPort(struct FTransform* EjectionTransform);
+	class FName GetEquipSocketName();
+	void GetMuzzleTransform(struct FTransform* Transform);
+	void GetShootTransformList(double BaseAngle, double BlurAngle, int32 MaxBullets, TArray<struct FTransform>* ShootTransformList);
+	void GetTargetPosition(struct FVector* TargetLocation);
+	void OnAttachWeapon(class AActor* attachActor);
+	void OnDetachWeapon(class AActor* detachActor);
+	void OnPullTrigger();
+	void OnReleaseTrigger(bool bCanShootOnRelease);
+	void OnShot();
+	void OnshotInternal(bool* IsShoted);
+	void PlayEquipAnim();
+	void PlayFireSound();
+	void PlayShootAnim();
+	void ShootIntervalEvent();
+	void StopReloadWhenRoll(const class UPalActionBase* action);
 
-	bool IsUseLeftHandAttach() const;
-	struct FTransform GetLeftHandTransform() const;
 	float GetDefaultBlurAngle() const;
+	struct FTransform GetLeftHandTransform() const;
+	bool IsUseLeftHandAttach() const;
 
 public:
 	static class UClass* StaticClass()

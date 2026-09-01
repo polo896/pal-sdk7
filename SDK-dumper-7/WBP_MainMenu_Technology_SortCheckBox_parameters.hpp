@@ -17,14 +17,34 @@
 namespace SDK::Params
 {
 
-// Function WBP_MainMenu_Technology_SortCheckBox.WBP_MainMenu_Technology_SortCheckBox_C.BndEvt__WBP_MainMenu_Technology_SortCheckBox_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_MainMenu_Technology_SortCheckBox_C_BndEvt__WBP_MainMenu_Technology_SortCheckBox_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_MainMenu_Technology_SortCheckBox.WBP_MainMenu_Technology_SortCheckBox_C.SetupAsItem
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_MainMenu_Technology_SortCheckBox_C_SetupAsItem final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EPalItemTypeA                                 ItemType;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CheckState;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MainMenu_Technology_SortCheckBox_C_BndEvt__WBP_MainMenu_Technology_SortCheckBox_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_MainMenu_Technology_SortCheckBox_C_SetupAsItem;
+
+// Function WBP_MainMenu_Technology_SortCheckBox.WBP_MainMenu_Technology_SortCheckBox_C.SetupAsBuild
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_MainMenu_Technology_SortCheckBox_C_SetupAsBuild final
+{
+public:
+	EPalBuildObjectTypeA                          BuildType;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CheckState;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_Technology_SortCheckBox_C_SetupAsBuild;
+
+// Function WBP_MainMenu_Technology_SortCheckBox.WBP_MainMenu_Technology_SortCheckBox_C.SetCheckState
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_MainMenu_Technology_SortCheckBox_C_SetCheckState final
+{
+public:
+	bool                                          Check;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_Technology_SortCheckBox_C_SetCheckState;
 
 // Function WBP_MainMenu_Technology_SortCheckBox.WBP_MainMenu_Technology_SortCheckBox_C.ExecuteUbergraph_WBP_MainMenu_Technology_SortCheckBox
 // 0x0060 (0x0060 - 0x0000)
@@ -65,34 +85,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_MainMenu_Technology_SortCheckBox_C_ExecuteUbergraph_WBP_MainMenu_Technology_SortCheckBox;
 
-// Function WBP_MainMenu_Technology_SortCheckBox.WBP_MainMenu_Technology_SortCheckBox_C.SetCheckState
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_MainMenu_Technology_SortCheckBox_C_SetCheckState final
+// Function WBP_MainMenu_Technology_SortCheckBox.WBP_MainMenu_Technology_SortCheckBox_C.BndEvt__WBP_MainMenu_Technology_SortCheckBox_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_MainMenu_Technology_SortCheckBox_C_BndEvt__WBP_MainMenu_Technology_SortCheckBox_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	bool                                          Check;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MainMenu_Technology_SortCheckBox_C_SetCheckState;
-
-// Function WBP_MainMenu_Technology_SortCheckBox.WBP_MainMenu_Technology_SortCheckBox_C.SetupAsBuild
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_MainMenu_Technology_SortCheckBox_C_SetupAsBuild final
-{
-public:
-	EPalBuildObjectTypeA                          BuildType;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CheckState;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_Technology_SortCheckBox_C_SetupAsBuild;
-
-// Function WBP_MainMenu_Technology_SortCheckBox.WBP_MainMenu_Technology_SortCheckBox_C.SetupAsItem
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_MainMenu_Technology_SortCheckBox_C_SetupAsItem final
-{
-public:
-	EPalItemTypeA                                 ItemType;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CheckState;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_Technology_SortCheckBox_C_SetupAsItem;
+DUMPER7_ASSERTS_WBP_MainMenu_Technology_SortCheckBox_C_BndEvt__WBP_MainMenu_Technology_SortCheckBox_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
 
 }
 

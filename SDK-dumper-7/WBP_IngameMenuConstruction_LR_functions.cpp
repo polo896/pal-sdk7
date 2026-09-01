@@ -17,21 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_IngameMenuConstruction_LR.WBP_IngameMenuConstruction_LR_C.ExecuteUbergraph_WBP_IngameMenuConstruction_LR
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_IngameMenuConstruction_LR.WBP_IngameMenuConstruction_LR_C.SetInputAction
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenuConstruction_LR_C::ExecuteUbergraph_WBP_IngameMenuConstruction_LR(int32 EntryPoint)
+void UWBP_IngameMenuConstruction_LR_C::SetInputAction(int32 Index_0, class FName ActionName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenuConstruction_LR_C", "ExecuteUbergraph_WBP_IngameMenuConstruction_LR");
+		Func = Class->GetFunction("WBP_IngameMenuConstruction_LR_C", "SetInputAction");
 
-	Params::WBP_IngameMenuConstruction_LR_C_ExecuteUbergraph_WBP_IngameMenuConstruction_LR Parms{};
+	Params::WBP_IngameMenuConstruction_LR_C_SetInputAction Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Index_0 = Index_0;
+	Parms.ActionName = ActionName;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -51,23 +53,21 @@ void UWBP_IngameMenuConstruction_LR_C::OnInitialized()
 }
 
 
-// Function WBP_IngameMenuConstruction_LR.WBP_IngameMenuConstruction_LR_C.SetInputAction
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenuConstruction_LR.WBP_IngameMenuConstruction_LR_C.ExecuteUbergraph_WBP_IngameMenuConstruction_LR
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenuConstruction_LR_C::SetInputAction(int32 Index_0, class FName ActionName)
+void UWBP_IngameMenuConstruction_LR_C::ExecuteUbergraph_WBP_IngameMenuConstruction_LR(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenuConstruction_LR_C", "SetInputAction");
+		Func = Class->GetFunction("WBP_IngameMenuConstruction_LR_C", "ExecuteUbergraph_WBP_IngameMenuConstruction_LR");
 
-	Params::WBP_IngameMenuConstruction_LR_C_SetInputAction Parms{};
+	Params::WBP_IngameMenuConstruction_LR_C_ExecuteUbergraph_WBP_IngameMenuConstruction_LR Parms{};
 
-	Parms.Index_0 = Index_0;
-	Parms.ActionName = ActionName;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

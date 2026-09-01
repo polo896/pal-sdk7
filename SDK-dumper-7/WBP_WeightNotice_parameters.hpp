@@ -16,6 +16,25 @@
 namespace SDK::Params
 {
 
+// Function WBP_WeightNotice.WBP_WeightNotice_C.UpdateWeight
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_WeightNotice_C_UpdateWeight final
+{
+public:
+	double                                        NowWeight;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        MaxWeight;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WeightNotice_C_UpdateWeight;
+
+// Function WBP_WeightNotice.WBP_WeightNotice_C.UpdateVisibility
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_WeightNotice_C_UpdateVisibility final
+{
+public:
+	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WeightNotice_C_UpdateVisibility;
+
 // Function WBP_WeightNotice.WBP_WeightNotice_C.ExecuteUbergraph_WBP_WeightNotice
 // 0x0160 (0x0160 - 0x0000)
 struct WBP_WeightNotice_C_ExecuteUbergraph_WBP_WeightNotice final
@@ -47,25 +66,6 @@ public:
 	double                                        CallFunc_GreaterEqual_DoubleDouble_B_ImplicitCast; // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_WeightNotice_C_ExecuteUbergraph_WBP_WeightNotice;
-
-// Function WBP_WeightNotice.WBP_WeightNotice_C.UpdateVisibility
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_WeightNotice_C_UpdateVisibility final
-{
-public:
-	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WeightNotice_C_UpdateVisibility;
-
-// Function WBP_WeightNotice.WBP_WeightNotice_C.UpdateWeight
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_WeightNotice_C_UpdateWeight final
-{
-public:
-	double                                        NowWeight;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        MaxWeight;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WeightNotice_C_UpdateWeight;
 
 }
 

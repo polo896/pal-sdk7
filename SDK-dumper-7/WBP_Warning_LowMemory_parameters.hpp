@@ -16,6 +16,15 @@
 namespace SDK::Params
 {
 
+// Function WBP_Warning_LowMemory.WBP_Warning_LowMemory_C.OnMemoryWarning
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Warning_LowMemory_C_OnMemoryWarning final
+{
+public:
+	bool                                          bIsOver;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Warning_LowMemory_C_OnMemoryWarning;
+
 // Function WBP_Warning_LowMemory.WBP_Warning_LowMemory_C.ExecuteUbergraph_WBP_Warning_LowMemory
 // 0x0048 (0x0048 - 0x0000)
 struct WBP_Warning_LowMemory_C_ExecuteUbergraph_WBP_Warning_LowMemory final
@@ -36,15 +45,6 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Warning_LowMemory_C_ExecuteUbergraph_WBP_Warning_LowMemory;
-
-// Function WBP_Warning_LowMemory.WBP_Warning_LowMemory_C.OnMemoryWarning
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Warning_LowMemory_C_OnMemoryWarning final
-{
-public:
-	bool                                          bIsOver;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Warning_LowMemory_C_OnMemoryWarning;
 
 }
 

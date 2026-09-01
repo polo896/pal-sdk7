@@ -36,7 +36,7 @@ class UMovieSceneGeometryCacheSection : public UMovieSceneSection
 
 class UMovieSceneGeometryCacheTrack : public UMovieSceneNameableTrack
 {
-    TArray<class UMovieSceneSection*> AnimationSections;                              // 0x00A0 (size: 0x10)
+    TArray<UMovieSceneSection*> AnimationSections;                                    // 0x00A0 (size: 0x10)
 
 }; // Size: 0xB0
 

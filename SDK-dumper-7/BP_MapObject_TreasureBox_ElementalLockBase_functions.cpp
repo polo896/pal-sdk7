@@ -17,23 +17,115 @@
 namespace SDK
 {
 
-// Function BP_MapObject_TreasureBox_ElementalLockBase.BP_MapObject_TreasureBox_ElementalLockBase_C.BP_OnSetConcreteModel
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalMapObjectConcreteModelBase*   ConcreteModel                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function BP_MapObject_TreasureBox_ElementalLockBase.BP_MapObject_TreasureBox_ElementalLockBase_C.TriggerUnlockElemental
+// (Event, Protected, BlueprintEvent)
 
-void ABP_MapObject_TreasureBox_ElementalLockBase_C::BP_OnSetConcreteModel(class UPalMapObjectConcreteModelBase* ConcreteModel)
+void ABP_MapObject_TreasureBox_ElementalLockBase_C::TriggerUnlockElemental()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_TreasureBox_ElementalLockBase_C", "BP_OnSetConcreteModel");
+		Func = Class->GetFunction("BP_MapObject_TreasureBox_ElementalLockBase_C", "TriggerUnlockElemental");
 
-	Params::BP_MapObject_TreasureBox_ElementalLockBase_C_BP_OnSetConcreteModel Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.ConcreteModel = ConcreteModel;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function BP_MapObject_TreasureBox_ElementalLockBase.BP_MapObject_TreasureBox_ElementalLockBase_C.TriggerOpen
+// (Event, Protected, BlueprintEvent)
+
+void ABP_MapObject_TreasureBox_ElementalLockBase_C::TriggerOpen()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MapObject_TreasureBox_ElementalLockBase_C", "TriggerOpen");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MapObject_TreasureBox_ElementalLockBase.BP_MapObject_TreasureBox_ElementalLockBase_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_MapObject_TreasureBox_ElementalLockBase_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MapObject_TreasureBox_ElementalLockBase_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MapObject_TreasureBox_ElementalLockBase.BP_MapObject_TreasureBox_ElementalLockBase_C.OnStartUnlockPerformance
+// (Protected, BlueprintCallable, BlueprintEvent)
+
+void ABP_MapObject_TreasureBox_ElementalLockBase_C::OnStartUnlockPerformance()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MapObject_TreasureBox_ElementalLockBase_C", "OnStartUnlockPerformance");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MapObject_TreasureBox_ElementalLockBase.BP_MapObject_TreasureBox_ElementalLockBase_C.OnProceedUnlockPerformance
+// (Protected, BlueprintCallable, BlueprintEvent)
+
+void ABP_MapObject_TreasureBox_ElementalLockBase_C::OnProceedUnlockPerformance()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MapObject_TreasureBox_ElementalLockBase_C", "OnProceedUnlockPerformance");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MapObject_TreasureBox_ElementalLockBase.BP_MapObject_TreasureBox_ElementalLockBase_C.OnNotifiedStartOpen
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_MapObject_TreasureBox_ElementalLockBase_C::OnNotifiedStartOpen()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MapObject_TreasureBox_ElementalLockBase_C", "OnNotifiedStartOpen");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MapObject_TreasureBox_ElementalLockBase.BP_MapObject_TreasureBox_ElementalLockBase_C.OnFinishUnlockPerformance
+// (Protected, BlueprintCallable, BlueprintEvent)
+
+void ABP_MapObject_TreasureBox_ElementalLockBase_C::OnFinishUnlockPerformance()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MapObject_TreasureBox_ElementalLockBase_C", "OnFinishUnlockPerformance");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MapObject_TreasureBox_ElementalLockBase.BP_MapObject_TreasureBox_ElementalLockBase_C.OnFinishOpenVisual
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_MapObject_TreasureBox_ElementalLockBase_C::OnFinishOpenVisual()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MapObject_TreasureBox_ElementalLockBase_C", "OnFinishOpenVisual");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -57,115 +149,23 @@ void ABP_MapObject_TreasureBox_ElementalLockBase_C::ExecuteUbergraph_BP_MapObjec
 }
 
 
-// Function BP_MapObject_TreasureBox_ElementalLockBase.BP_MapObject_TreasureBox_ElementalLockBase_C.OnFinishOpenVisual
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_MapObject_TreasureBox_ElementalLockBase.BP_MapObject_TreasureBox_ElementalLockBase_C.BP_OnSetConcreteModel
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalMapObjectConcreteModelBase*   ConcreteModel                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MapObject_TreasureBox_ElementalLockBase_C::OnFinishOpenVisual()
+void ABP_MapObject_TreasureBox_ElementalLockBase_C::BP_OnSetConcreteModel(class UPalMapObjectConcreteModelBase* ConcreteModel)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_TreasureBox_ElementalLockBase_C", "OnFinishOpenVisual");
+		Func = Class->GetFunction("BP_MapObject_TreasureBox_ElementalLockBase_C", "BP_OnSetConcreteModel");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::BP_MapObject_TreasureBox_ElementalLockBase_C_BP_OnSetConcreteModel Parms{};
 
+	Parms.ConcreteModel = ConcreteModel;
 
-// Function BP_MapObject_TreasureBox_ElementalLockBase.BP_MapObject_TreasureBox_ElementalLockBase_C.OnFinishUnlockPerformance
-// (Protected, BlueprintCallable, BlueprintEvent)
-
-void ABP_MapObject_TreasureBox_ElementalLockBase_C::OnFinishUnlockPerformance()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_TreasureBox_ElementalLockBase_C", "OnFinishUnlockPerformance");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MapObject_TreasureBox_ElementalLockBase.BP_MapObject_TreasureBox_ElementalLockBase_C.OnNotifiedStartOpen
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_MapObject_TreasureBox_ElementalLockBase_C::OnNotifiedStartOpen()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_TreasureBox_ElementalLockBase_C", "OnNotifiedStartOpen");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MapObject_TreasureBox_ElementalLockBase.BP_MapObject_TreasureBox_ElementalLockBase_C.OnProceedUnlockPerformance
-// (Protected, BlueprintCallable, BlueprintEvent)
-
-void ABP_MapObject_TreasureBox_ElementalLockBase_C::OnProceedUnlockPerformance()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_TreasureBox_ElementalLockBase_C", "OnProceedUnlockPerformance");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MapObject_TreasureBox_ElementalLockBase.BP_MapObject_TreasureBox_ElementalLockBase_C.OnStartUnlockPerformance
-// (Protected, BlueprintCallable, BlueprintEvent)
-
-void ABP_MapObject_TreasureBox_ElementalLockBase_C::OnStartUnlockPerformance()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_TreasureBox_ElementalLockBase_C", "OnStartUnlockPerformance");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MapObject_TreasureBox_ElementalLockBase.BP_MapObject_TreasureBox_ElementalLockBase_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_MapObject_TreasureBox_ElementalLockBase_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_TreasureBox_ElementalLockBase_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MapObject_TreasureBox_ElementalLockBase.BP_MapObject_TreasureBox_ElementalLockBase_C.TriggerOpen
-// (Event, Protected, BlueprintEvent)
-
-void ABP_MapObject_TreasureBox_ElementalLockBase_C::TriggerOpen()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_TreasureBox_ElementalLockBase_C", "TriggerOpen");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MapObject_TreasureBox_ElementalLockBase.BP_MapObject_TreasureBox_ElementalLockBase_C.TriggerUnlockElemental
-// (Event, Protected, BlueprintEvent)
-
-void ABP_MapObject_TreasureBox_ElementalLockBase_C::TriggerUnlockElemental()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_TreasureBox_ElementalLockBase_C", "TriggerUnlockElemental");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

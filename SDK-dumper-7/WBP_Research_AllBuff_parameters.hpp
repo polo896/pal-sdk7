@@ -19,28 +19,14 @@
 namespace SDK::Params
 {
 
-// Function WBP_Research_AllBuff.WBP_Research_AllBuff_C.ExecuteUbergraph_WBP_Research_AllBuff
-// 0x0068 (0x0068 - 0x0000)
-struct WBP_Research_AllBuff_C_ExecuteUbergraph_WBP_Research_AllBuff final
+// Function WBP_Research_AllBuff.WBP_Research_AllBuff_C.Setup
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Research_AllBuff_C_Setup final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FPalUIGuildLabPassiveEffectInfo> K2Node_CustomEvent_Effects;                       // 0x0010(0x0010)(ConstParm, ReferenceParm)
-	struct FPalUIGuildLabPassiveEffectInfo        CallFunc_Array_Get_Item;                           // 0x0020(0x0014)(NoDestructor)
-	EPalWorkSuitability                           CallFunc_GetLabCategoryTypeFromEffectInfo_WorkSuitability; // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalLabCategorySubType                        CallFunc_GetLabCategoryTypeFromEffectInfo_SubType; // 0x0035(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_36[0x2];                                       // 0x0036(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_ConvertGuildLabPassiveEffectInfoToText_ReturnValue; // 0x0038(0x0018)()
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Research_Buff_C*                   CallFunc_SpawnObject_ReturnValue;                  // 0x0058(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWrapBoxSlot*                           CallFunc_AddChildToWrapBox_ReturnValue;            // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FPalUIGuildLabPassiveEffectInfo> Effects;                                          // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-DUMPER7_ASSERTS_WBP_Research_AllBuff_C_ExecuteUbergraph_WBP_Research_AllBuff;
+DUMPER7_ASSERTS_WBP_Research_AllBuff_C_Setup;
 
 // Function WBP_Research_AllBuff.WBP_Research_AllBuff_C.OnAnalogValueChanged
 // 0x02A8 (0x02A8 - 0x0000)
@@ -70,14 +56,28 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Research_AllBuff_C_OnAnalogValueChanged;
 
-// Function WBP_Research_AllBuff.WBP_Research_AllBuff_C.Setup
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Research_AllBuff_C_Setup final
+// Function WBP_Research_AllBuff.WBP_Research_AllBuff_C.ExecuteUbergraph_WBP_Research_AllBuff
+// 0x0068 (0x0068 - 0x0000)
+struct WBP_Research_AllBuff_C_ExecuteUbergraph_WBP_Research_AllBuff final
 {
 public:
-	TArray<struct FPalUIGuildLabPassiveEffectInfo> Effects;                                          // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FPalUIGuildLabPassiveEffectInfo> K2Node_CustomEvent_Effects;                       // 0x0010(0x0010)(ConstParm, ReferenceParm)
+	struct FPalUIGuildLabPassiveEffectInfo        CallFunc_Array_Get_Item;                           // 0x0020(0x0014)(NoDestructor)
+	EPalWorkSuitability                           CallFunc_GetLabCategoryTypeFromEffectInfo_WorkSuitability; // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalLabCategorySubType                        CallFunc_GetLabCategoryTypeFromEffectInfo_SubType; // 0x0035(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_36[0x2];                                       // 0x0036(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_ConvertGuildLabPassiveEffectInfoToText_ReturnValue; // 0x0038(0x0018)()
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Research_Buff_C*                   CallFunc_SpawnObject_ReturnValue;                  // 0x0058(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWrapBoxSlot*                           CallFunc_AddChildToWrapBox_ReturnValue;            // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Research_AllBuff_C_Setup;
+DUMPER7_ASSERTS_WBP_Research_AllBuff_C_ExecuteUbergraph_WBP_Research_AllBuff;
 
 }
 

@@ -45,36 +45,36 @@ public:
 	struct FTimerHandle                           TimerHandle_UpdateQuestDetail;                     // 0x0650(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void CREATEDELEGATE_PROXYFUNCTION_0(const class FName& QuestId);
-	void Destruct();
-	void ExecuteUbergraph_WBP_QuestAndBaseCampInfoCanvas(int32 EntryPoint);
-	void HideBaseCampInfo();
-	void LoopCheck();
-	void On_Enter_Base_Camp(class UPalBaseCampModel* Model);
-	void On_Enter_Pal_Box_Area();
-	void On_Leave_Base_Camp();
-	void On_Update_Base_Camp_Detail();
-	void OnChangedUISettings(const struct FPalOptionUISettings& PrevSettings, const struct FPalOptionUISettings& NewSettings);
-	void OnCompletedQuest(const class FName& QuestId);
-	void OnInitialized();
-	void OnLeavePalBoxArea();
-	void OnSetup_AfterCreatedPlayer();
-	void OnTimer_CollectWorkerDirectorModel();
-	void OnTimerEvent_UpdateQuestDetail();
-	void OnUpdateBaseCampWorkHard(EPalBaseCampPassiveEffectWorkHardType WorkHardType);
-	void OnUpdatedQuest(class FName QuestId);
-	void OnUpdatedTrackingQuest(const class FName& QuestId);
-	void OnUpdateWorkerBattleType(EPalBaseCampWorkerDirectionBattleType BattleType);
-	void SetActiveSimpleInfoMode(bool bActiveSimpleInfo);
-	void SetVerticalBoxVisible(bool IsVisible_0);
-	void Show_Base_Camp_Info();
-	void ShowLevelUp(class UPalBaseCampModel* Model);
-	void Trace_Worker_Pal();
-	void Update_Item_Detail();
-	void UpdatePalDetail();
-	void UpdateTask();
 	void UpdateWindowBorder();
+	void UpdateTask();
+	void UpdatePalDetail();
+	void Update_Item_Detail();
+	void Trace_Worker_Pal();
+	void ShowLevelUp(class UPalBaseCampModel* Model);
+	void Show_Base_Camp_Info();
+	void SetVerticalBoxVisible(bool IsVisible_0);
+	void SetActiveSimpleInfoMode(bool bActiveSimpleInfo);
+	void OnUpdateWorkerBattleType(EPalBaseCampWorkerDirectionBattleType BattleType);
+	void OnUpdatedTrackingQuest(const class FName& QuestId);
+	void OnUpdatedQuest(class FName QuestId);
+	void OnUpdateBaseCampWorkHard(EPalBaseCampPassiveEffectWorkHardType WorkHardType);
+	void OnTimerEvent_UpdateQuestDetail();
+	void OnTimer_CollectWorkerDirectorModel();
+	void OnSetup_AfterCreatedPlayer();
+	void OnLeavePalBoxArea();
+	void OnInitialized();
+	void OnCompletedQuest(const class FName& QuestId);
+	void OnChangedUISettings(const struct FPalOptionUISettings& PrevSettings, const struct FPalOptionUISettings& NewSettings);
+	void On_Update_Base_Camp_Detail();
+	void On_Leave_Base_Camp();
+	void On_Enter_Pal_Box_Area();
+	void On_Enter_Base_Camp(class UPalBaseCampModel* Model);
+	void LoopCheck();
+	void HideBaseCampInfo();
+	void ExecuteUbergraph_WBP_QuestAndBaseCampInfoCanvas(int32 EntryPoint);
+	void Destruct();
+	void CREATEDELEGATE_PROXYFUNCTION_0(const class FName& QuestId);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

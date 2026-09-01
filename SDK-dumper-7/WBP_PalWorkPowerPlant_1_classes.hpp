@@ -61,20 +61,20 @@ public:
 	class UPalUIMapObjectEnergyStatusIndicatorModel* UIIndicatorModel;                               // 0x0568(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ChangeCheck();
-	void Construct();
-	void Destruct();
-	void DisplayCheck();
-	void ExecuteUbergraph_WBP_PalWorkPowerPlant_1(int32 EntryPoint);
-	class UWidgetAnimation* GetAnimationDetailToSimple();
-	void On_Updated_Worker_Pal(class UPalWorkBase* Work);
-	void OnSetup();
-	void OnUpdateEnergyStack(class UPalUIMapObjectEnergyStatusIndicatorModel* Model);
-	void OnUpdateOverHeatGauge(class UPalUIMapObjectEnergyStatusIndicatorModel_GenerateEnergy* Model);
-	void SetArrow(bool IsIncrease);
-	void SetHeatGaugeValue(class UPalUIMapObjectEnergyStatusIndicatorModel_GenerateEnergy* IndicatorModel);
-	void SetupForMapObjectConcreteModel();
 	void SetVisibleOverHeatCaution(bool bOn);
+	void SetupForMapObjectConcreteModel();
+	void SetHeatGaugeValue(class UPalUIMapObjectEnergyStatusIndicatorModel_GenerateEnergy* IndicatorModel);
+	void SetArrow(bool IsIncrease);
+	void OnUpdateOverHeatGauge(class UPalUIMapObjectEnergyStatusIndicatorModel_GenerateEnergy* Model);
+	void OnUpdateEnergyStack(class UPalUIMapObjectEnergyStatusIndicatorModel* Model);
+	void OnSetup();
+	void On_Updated_Worker_Pal(class UPalWorkBase* Work);
+	class UWidgetAnimation* GetAnimationDetailToSimple();
+	void ExecuteUbergraph_WBP_PalWorkPowerPlant_1(int32 EntryPoint);
+	void DisplayCheck();
+	void Destruct();
+	void Construct();
+	void ChangeCheck();
 
 public:
 	static class UClass* StaticClass()

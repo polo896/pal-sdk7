@@ -43,7 +43,7 @@ class UWBP_IngameMenu_PalBox_C : public UUserWidget
     class UWBP_IngameMenu_PalBox_PalList_C* WBP_IngameMenu_PalBox_PalList_3;          // 0x03A0 (size: 0x8)
     class UWBP_IngameMenu_PalBox_PalList_C* WBP_IngameMenu_PalBox_PalList_4;          // 0x03A8 (size: 0x8)
     class UWBP_Menu_btn_C* WBP_Menu_btn;                                              // 0x03B0 (size: 0x8)
-    TArray<class UWBP_IngameMenu_PalBox_PalList_C*> PartyPalDetails;                  // 0x03B8 (size: 0x10)
+    TArray<UWBP_IngameMenu_PalBox_PalList_C*> PartyPalDetails;                        // 0x03B8 (size: 0x10)
     FWBP_IngameMenu_PalBox_COnClickedPartySlot OnClickedPartySlot;                    // 0x03C8 (size: 0x10)
     void OnClickedPartySlot(class UPalIndividualCharacterSlot* TargetSlot);
     FWBP_IngameMenu_PalBox_COnClickedPalBoxPal OnClickedPalBoxPal;                    // 0x03D8 (size: 0x10)
@@ -88,7 +88,7 @@ class UWBP_IngameMenu_PalBox_C : public UUserWidget
     void FocusToBoxTopSlot();
     void FocusToPartyTopSlot();
     void Display Pal Detail(class UPalIndividualCharacterSlot* Slot, TEnumAsByte<EPalBoxHoveredSlotType::Type> slotType);
-    void SetBaseCampPalList(TArray<class UPalIndividualCharacterSlot*>& Slots);
+    void SetBaseCampPalList(TArray<UPalIndividualCharacterSlot*>& Slots);
     void GetFocusTarget(class UWidget*& TargetWidget);
     void Setup Party Pal();
     void Setup(class UPalHUDDispatchParameter_PalBox* Parameter);

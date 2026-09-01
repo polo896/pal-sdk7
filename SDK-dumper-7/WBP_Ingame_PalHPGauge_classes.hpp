@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "WBP_IndividualParameterBindWidget_classes.hpp"
+#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 
 
@@ -68,43 +68,43 @@ public:
 	class UPalPartnerSkillParameterComponent*     CurrentPartnerSkillComponent;                      // 0x0790(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_EnableSummonPalGuide(bool EnableFlag);
-	void AnmEvent_NextOtomo();
-	void AnmEvent_OtomoActive();
-	void AnmEvent_OtomoDeactivate();
-	void AnmEvent_PrevOtomo();
-	void AnmEvent_ThrowActivate();
-	void AnmEvent_ThrowOtomoDeactive();
-	void BindPartnerSkillCTTime(class APalCharacter* Character);
-	void CustomEvent(int32 addLevel, int32 nowLevel);
-	void ExecuteUbergraph_WBP_Ingame_PalHPGauge(int32 EntryPoint);
-	void Finished_1811421C440B0864689BD0B33F2F9D51();
-	void Finished_1F59E19C478A6C6286266A9C072DA24B();
-	void Finished_9B82422440F7C97D278AB2B15E642EE3();
-	void Get_Next_Otomo_Slot(class UPalIndividualCharacterSlot** Slot_0, bool* IsEmpty);
-	void Get_Prev_Otomo_Slot(class UPalIndividualCharacterSlot** Slot_0, bool* IsEmpty);
-	void On_Incremented_Otomo_from_Controller();
-	void On_Update_Otomo_Index();
-	void On_Update_Otomo_Slot(int32 SlotIndex, class UPalIndividualCharacterHandle* LastHandle);
-	void OnActivatedOtomo();
-	void OnChangedWeapon(class APalWeaponBase* Weapon);
-	void OnCoolEnd();
-	void OnCoolStart();
-	void OnCTTimeUpdate(const struct FFixedPoint& Now, const struct FFixedPoint& Max);
-	void OnDeactivatedOtomo();
-	void OnDecrementedOtomo_FromController();
-	void OnEndAim();
-	void OnInitialized();
-	void OnSetup_AfterCreatedPlayer();
-	void OnStartAim();
-	void SetElementType(EPalElementType type1, EPalElementType type2);
-	void Setup();
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void UnbindPartnerSkill();
-	void Update_Level_Binded(int32 NewLevel);
-	void Update_Otomo_List();
-	void UpdateHP_Binded(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& nowMaxHP);
 	void UpdateNickName_Binded(const class FString& NewNickName);
+	void UpdateHP_Binded(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& nowMaxHP);
+	void Update_Otomo_List();
+	void Update_Level_Binded(int32 NewLevel);
+	void UnbindPartnerSkill();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void Setup();
+	void SetElementType(EPalElementType type1, EPalElementType type2);
+	void OnStartAim();
+	void OnSetup_AfterCreatedPlayer();
+	void OnInitialized();
+	void OnEndAim();
+	void OnDecrementedOtomo_FromController();
+	void OnDeactivatedOtomo();
+	void OnCTTimeUpdate(const struct FFixedPoint& Now, const struct FFixedPoint& Max);
+	void OnCoolStart();
+	void OnCoolEnd();
+	void OnChangedWeapon(class APalWeaponBase* Weapon);
+	void OnActivatedOtomo();
+	void On_Update_Otomo_Slot(int32 SlotIndex, class UPalIndividualCharacterHandle* LastHandle);
+	void On_Update_Otomo_Index();
+	void On_Incremented_Otomo_from_Controller();
+	void Get_Prev_Otomo_Slot(class UPalIndividualCharacterSlot** Slot_0, bool* IsEmpty);
+	void Get_Next_Otomo_Slot(class UPalIndividualCharacterSlot** Slot_0, bool* IsEmpty);
+	void Finished_9B82422440F7C97D278AB2B15E642EE3();
+	void Finished_1F59E19C478A6C6286266A9C072DA24B();
+	void Finished_1811421C440B0864689BD0B33F2F9D51();
+	void ExecuteUbergraph_WBP_Ingame_PalHPGauge(int32 EntryPoint);
+	void CustomEvent(int32 addLevel, int32 nowLevel);
+	void BindPartnerSkillCTTime(class APalCharacter* Character);
+	void AnmEvent_ThrowOtomoDeactive();
+	void AnmEvent_ThrowActivate();
+	void AnmEvent_PrevOtomo();
+	void AnmEvent_OtomoDeactivate();
+	void AnmEvent_OtomoActive();
+	void AnmEvent_NextOtomo();
+	void AnmEvent_EnableSummonPalGuide(bool EnableFlag);
 
 public:
 	static class UClass* StaticClass()

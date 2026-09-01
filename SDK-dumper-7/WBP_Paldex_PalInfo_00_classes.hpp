@@ -45,19 +45,19 @@ public:
 	double                                        New_Offset;                                        // 0x0318(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ChangePalInfoScrollOffset(double Offset);
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_Paldex_PalInfo_00(int32 EntryPoint);
-	void HideDropItems();
-	void OnInitialized();
-	void Setup(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
-	void Setup_Captured(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
-	void Setup_Encounted(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
-	void Setup_NotEncounted(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
-	void SetupCaptureBonusInfo(class FName CharacterID);
-	void ShouldDisplay(class FName CharacterID, bool* bDisplay);
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void ShouldDisplay(class FName CharacterID, bool* bDisplay);
+	void SetupCaptureBonusInfo(class FName CharacterID);
+	void Setup_NotEncounted(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
+	void Setup_Encounted(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
+	void Setup_Captured(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
+	void Setup(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
+	void OnInitialized();
+	void HideDropItems();
+	void ExecuteUbergraph_WBP_Paldex_PalInfo_00(int32 EntryPoint);
+	void Destruct();
+	void Construct();
+	void ChangePalInfoScrollOffset(double Offset);
 
 public:
 	static class UClass* StaticClass()

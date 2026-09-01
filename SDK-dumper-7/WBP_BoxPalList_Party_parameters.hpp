@@ -16,60 +16,124 @@
 namespace SDK::Params
 {
 
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_0_OnLeftClickedSlot__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_0_OnLeftClickedSlot__DelegateSignature final
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.TryMoveToBox
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_BoxPalList_Party_C_TryMoveToBox final
 {
 public:
-	class UWBP_PalCharacterSlotButtonBase_C*      Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterSlot*            Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_TryMoveToBox;
+
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.ToggleFavorite
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_BoxPalList_Party_C_ToggleFavorite final
+{
+public:
+	class UPalIndividualCharacterSlot*            TargetSlot;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_PalCommonCharacterSlotButton_C*    CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterSlot*            CallFunc_GetTargetSlot_targetSlot;                 // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_ToggleFavorite;
+
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.Setup Party Slot
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_BoxPalList_Party_C_Setup_Party_Slot final
+{
+public:
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalOtomoHolderComponentBase*           CallFunc_GetOtomoHolderComponent_ReturnValue;      // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalCommonCharacterSlotButton_C*    CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterSlot*            CallFunc_GetOtomoIndividualCharacterSlot_ReturnValue; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_Setup_Party_Slot;
+
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.SelectSlot
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_BoxPalList_Party_C_SelectSlot final
+{
+public:
+	class UPalIndividualCharacterSlot*            Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_0_OnLeftClickedSlot__DelegateSignature;
+DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_SelectSlot;
 
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_1_OnHoveredSlot__DelegateSignature
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_BoxPalList_Party_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_PreConstruct;
+
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.OnUnhoverSlot_Internal
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_1_OnHoveredSlot__DelegateSignature final
+struct WBP_BoxPalList_Party_C_OnUnhoverSlot_Internal final
 {
 public:
-	class UWBP_PalCharacterSlotButtonBase_C*      Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalCharacterSlotButtonBase_C*      Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_1_OnHoveredSlot__DelegateSignature;
+DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_OnUnhoverSlot_Internal;
 
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_2_OnUnhoveredSlot__DelegateSignature
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.OnHoverSlot_Internal
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_2_OnUnhoveredSlot__DelegateSignature final
+struct WBP_BoxPalList_Party_C_OnHoverSlot_Internal final
 {
 public:
-	class UWBP_PalCharacterSlotButtonBase_C*      Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalCharacterSlotButtonBase_C*      Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_2_OnUnhoveredSlot__DelegateSignature;
+DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_OnHoverSlot_Internal;
 
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_3_OnCreatedNewSlot__DelegateSignature
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.OnClickSlot_Internal
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_BoxPalList_Party_C_OnClickSlot_Internal final
+{
+public:
+	class UWBP_PalCharacterSlotButtonBase_C*      Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_OnClickSlot_Internal;
+
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.GetPartySlots
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_BoxPalList_Party_C_GetPartySlots final
+{
+public:
+	TArray<class UWBP_PalCommonCharacterSlotButton_C*> PartySlots_0;                                 // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_GetPartySlots;
+
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.GetLastFocusBoxSlot
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_BoxPalList_Party_C_GetLastFocusBoxSlot final
+{
+public:
+	class UWidget*                                TargetWidget;                                      // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetLastHoveredFocusTarget_TargetWidget;   // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_GetLastFocusBoxSlot;
+
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.GetFirstFocusPartyButton
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_3_OnCreatedNewSlot__DelegateSignature final
+struct WBP_BoxPalList_Party_C_GetFirstFocusPartyButton final
 {
 public:
-	class UWBP_PalCharacterSlotButtonBase_C*      NewSlot;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_3_OnCreatedNewSlot__DelegateSignature;
-
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_4_OnRightClickedSlot__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_4_OnRightClickedSlot__DelegateSignature final
-{
-public:
-	class UWBP_PalCharacterSlotButtonBase_C*      Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_4_OnRightClickedSlot__DelegateSignature;
-
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_5_OnUpdatedPage__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_5_OnUpdatedPage__DelegateSignature final
-{
-public:
-	int32                                         NowPage;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_5_OnUpdatedPage__DelegateSignature;
+DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_GetFirstFocusPartyButton;
 
 // Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.ExecuteUbergraph_WBP_BoxPalList_Party
 // 0x0098 (0x0098 - 0x0000)
@@ -103,124 +167,60 @@ public:
 };
 DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_ExecuteUbergraph_WBP_BoxPalList_Party;
 
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.GetFirstFocusPartyButton
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_5_OnUpdatedPage__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_5_OnUpdatedPage__DelegateSignature final
+{
+public:
+	int32                                         NowPage;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_5_OnUpdatedPage__DelegateSignature;
+
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_4_OnRightClickedSlot__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_BoxPalList_Party_C_GetFirstFocusPartyButton final
+struct WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_4_OnRightClickedSlot__DelegateSignature final
 {
 public:
-	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalCharacterSlotButtonBase_C*      Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_GetFirstFocusPartyButton;
+DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_4_OnRightClickedSlot__DelegateSignature;
 
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.GetLastFocusBoxSlot
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_BoxPalList_Party_C_GetLastFocusBoxSlot final
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_3_OnCreatedNewSlot__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_3_OnCreatedNewSlot__DelegateSignature final
 {
 public:
-	class UWidget*                                TargetWidget;                                      // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_GetLastHoveredFocusTarget_TargetWidget;   // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalCharacterSlotButtonBase_C*      NewSlot;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_GetLastFocusBoxSlot;
+DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_3_OnCreatedNewSlot__DelegateSignature;
 
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.GetPartySlots
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_BoxPalList_Party_C_GetPartySlots final
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_2_OnUnhoveredSlot__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_2_OnUnhoveredSlot__DelegateSignature final
 {
 public:
-	TArray<class UWBP_PalCommonCharacterSlotButton_C*> PartySlots_0;                                 // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
+	class UWBP_PalCharacterSlotButtonBase_C*      Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_GetPartySlots;
+DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_2_OnUnhoveredSlot__DelegateSignature;
 
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.OnClickSlot_Internal
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_BoxPalList_Party_C_OnClickSlot_Internal final
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_1_OnHoveredSlot__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_1_OnHoveredSlot__DelegateSignature final
 {
 public:
-	class UWBP_PalCharacterSlotButtonBase_C*      Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalCharacterSlotButtonBase_C*      Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_1_OnHoveredSlot__DelegateSignature;
+
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_0_OnLeftClickedSlot__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_0_OnLeftClickedSlot__DelegateSignature final
+{
+public:
+	class UWBP_PalCharacterSlotButtonBase_C*      Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_OnClickSlot_Internal;
-
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.OnHoverSlot_Internal
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_BoxPalList_Party_C_OnHoverSlot_Internal final
-{
-public:
-	class UWBP_PalCharacterSlotButtonBase_C*      Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_OnHoverSlot_Internal;
-
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.OnUnhoverSlot_Internal
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_BoxPalList_Party_C_OnUnhoverSlot_Internal final
-{
-public:
-	class UWBP_PalCharacterSlotButtonBase_C*      Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_OnUnhoverSlot_Internal;
-
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_BoxPalList_Party_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_PreConstruct;
-
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.SelectSlot
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_BoxPalList_Party_C_SelectSlot final
-{
-public:
-	class UPalIndividualCharacterSlot*            Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_SelectSlot;
-
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.Setup Party Slot
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_BoxPalList_Party_C_Setup_Party_Slot final
-{
-public:
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalOtomoHolderComponentBase*           CallFunc_GetOtomoHolderComponent_ReturnValue;      // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_PalCommonCharacterSlotButton_C*    CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UPalIndividualCharacterSlot*            CallFunc_GetOtomoIndividualCharacterSlot_ReturnValue; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_Setup_Party_Slot;
-
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.ToggleFavorite
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_BoxPalList_Party_C_ToggleFavorite final
-{
-public:
-	class UPalIndividualCharacterSlot*            TargetSlot;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_PalCommonCharacterSlotButton_C*    CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UPalIndividualCharacterSlot*            CallFunc_GetTargetSlot_targetSlot;                 // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_ToggleFavorite;
-
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.TryMoveToBox
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_BoxPalList_Party_C_TryMoveToBox final
-{
-public:
-	class UPalIndividualCharacterSlot*            Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_TryMoveToBox;
+DUMPER7_ASSERTS_WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_0_OnLeftClickedSlot__DelegateSignature;
 
 }
 

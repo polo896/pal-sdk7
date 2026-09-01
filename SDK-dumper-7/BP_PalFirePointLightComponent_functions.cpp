@@ -17,49 +17,15 @@
 namespace SDK
 {
 
-// Function BP_PalFirePointLightComponent.BP_PalFirePointLightComponent_C.CacheAndClearIntensity
+// Function BP_PalFirePointLightComponent.BP_PalFirePointLightComponent_C.ResetBlinkDuration
 // (Private, BlueprintCallable, BlueprintEvent)
 
-void UBP_PalFirePointLightComponent_C::CacheAndClearIntensity()
+void UBP_PalFirePointLightComponent_C::ResetBlinkDuration()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalFirePointLightComponent_C", "CacheAndClearIntensity");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_PalFirePointLightComponent.BP_PalFirePointLightComponent_C.ExecuteUbergraph_BP_PalFirePointLightComponent
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_PalFirePointLightComponent_C::ExecuteUbergraph_BP_PalFirePointLightComponent(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalFirePointLightComponent_C", "ExecuteUbergraph_BP_PalFirePointLightComponent");
-
-	Params::BP_PalFirePointLightComponent_C_ExecuteUbergraph_BP_PalFirePointLightComponent Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PalFirePointLightComponent.BP_PalFirePointLightComponent_C.ReceiveBeginPlay
-// (Event, Public, BlueprintEvent)
-
-void UBP_PalFirePointLightComponent_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalFirePointLightComponent_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_PalFirePointLightComponent_C", "ResetBlinkDuration");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -85,15 +51,49 @@ void UBP_PalFirePointLightComponent_C::ReceiveTick(float DeltaSeconds)
 }
 
 
-// Function BP_PalFirePointLightComponent.BP_PalFirePointLightComponent_C.ResetBlinkDuration
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function BP_PalFirePointLightComponent.BP_PalFirePointLightComponent_C.ReceiveBeginPlay
+// (Event, Public, BlueprintEvent)
 
-void UBP_PalFirePointLightComponent_C::ResetBlinkDuration()
+void UBP_PalFirePointLightComponent_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalFirePointLightComponent_C", "ResetBlinkDuration");
+		Func = Class->GetFunction("BP_PalFirePointLightComponent_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_PalFirePointLightComponent.BP_PalFirePointLightComponent_C.ExecuteUbergraph_BP_PalFirePointLightComponent
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_PalFirePointLightComponent_C::ExecuteUbergraph_BP_PalFirePointLightComponent(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalFirePointLightComponent_C", "ExecuteUbergraph_BP_PalFirePointLightComponent");
+
+	Params::BP_PalFirePointLightComponent_C_ExecuteUbergraph_BP_PalFirePointLightComponent Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PalFirePointLightComponent.BP_PalFirePointLightComponent_C.CacheAndClearIntensity
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UBP_PalFirePointLightComponent_C::CacheAndClearIntensity()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalFirePointLightComponent_C", "CacheAndClearIntensity");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

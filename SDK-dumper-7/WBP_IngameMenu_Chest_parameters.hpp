@@ -18,115 +18,152 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.BndEvt__WBP_IngameMenu_Chest_WBP_Common_Inventory_K2Node_ComponentBoundEvent_11_OnLeftClickSlot__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_Common_Inventory_K2Node_ComponentBoundEvent_11_OnLeftClickSlot__DelegateSignature final
+// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.Setup Target Item Container
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_IngameMenu_Chest_C_Setup_Target_Item_Container final
 {
 public:
-	class UWBP_PalItemSlotButtonBase_C*           Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalItemContainer*                      TargetContainer_0;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType)> K2Node_CreateDelegate_OutputDelegate; // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalItemListBlock_C*                CallFunc_AddItemContainer_createdBlock;            // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_Common_Inventory_K2Node_ComponentBoundEvent_11_OnLeftClickSlot__DelegateSignature;
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_Setup_Target_Item_Container;
 
-// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.BndEvt__WBP_IngameMenu_Chest_WBP_Common_Inventory_K2Node_ComponentBoundEvent_8_OnHoveredInventorySlot__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_Common_Inventory_K2Node_ComponentBoundEvent_8_OnHoveredInventorySlot__DelegateSignature final
+// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.Setup
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_IngameMenu_Chest_C_Setup final
 {
 public:
-	class UWBP_PalItemSlotButtonBase_C*           SlotButton;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UBP_PalInventoryModel_C*                Model_0;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalItemContainer*                      TargetContainer_0;                                 // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         DisplaySlotNumDefault;                             // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UPalItemContainer* Container)> K2Node_CreateDelegate_OutputDelegate;        // 0x0018(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalPlayerInventoryData*                CallFunc_GetLocalInventoryData_ReturnValue;        // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalItemContainer*                      CallFunc_TryGetContainerFromInventoryType_OutContainer; // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_TryGetContainerFromInventoryType_ReturnValue; // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_Common_Inventory_K2Node_ComponentBoundEvent_8_OnHoveredInventorySlot__DelegateSignature;
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_Setup;
 
-// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.BndEvt__WBP_IngameMenu_Chest_WBP_PalInvisibleButton_QuickMove_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalInvisibleButton_QuickMove_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalInvisibleButton_QuickMove_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.BndEvt__WBP_IngameMenu_Chest_WBP_PalInvisibleButton_Sort_TargetContainer_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalInvisibleButton_Sort_TargetContainer_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalInvisibleButton_Sort_TargetContainer_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.BndEvt__WBP_IngameMenu_Chest_WBP_PalItemScrollList_K2Node_ComponentBoundEvent_3_OnHoveredSlot__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalItemScrollList_K2Node_ComponentBoundEvent_3_OnHoveredSlot__DelegateSignature final
-{
-public:
-	class UWBP_PalItemSlotButtonBase_C*           ButtonBase;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalItemScrollList_K2Node_ComponentBoundEvent_3_OnHoveredSlot__DelegateSignature;
-
-// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.BndEvt__WBP_IngameMenu_Chest_WBP_PalItemScrollList_K2Node_ComponentBoundEvent_5_OnLeftClickedSlot__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalItemScrollList_K2Node_ComponentBoundEvent_5_OnLeftClickedSlot__DelegateSignature final
-{
-public:
-	class UWBP_PalItemSlotButtonBase_C*           ButtonBase;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalItemScrollList_K2Node_ComponentBoundEvent_5_OnLeftClickedSlot__DelegateSignature;
-
-// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.BndEvt__WBP_IngameMenu_Chest_WBP_PalItemScrollList_K2Node_ComponentBoundEvent_6_OnEndHoveredSlot__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalItemScrollList_K2Node_ComponentBoundEvent_6_OnEndHoveredSlot__DelegateSignature final
-{
-public:
-	class UWBP_PalItemSlotButtonBase_C*           ButtonBase;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalItemScrollList_K2Node_ComponentBoundEvent_6_OnEndHoveredSlot__DelegateSignature;
-
-// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.CustomNavi_ToCloseButton
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameMenu_Chest_C_CustomNavi_ToCloseButton final
-{
-public:
-	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_CustomNavi_ToCloseButton;
-
-// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.CustomNavi_ToPreferenceOrCloseButton
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameMenu_Chest_C_CustomNavi_ToPreferenceOrCloseButton final
-{
-public:
-	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_CustomNavi_ToPreferenceOrCloseButton;
-
-// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.CustomNavi_ToTargetContainerSortButton
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameMenu_Chest_C_CustomNavi_ToTargetContainerSortButton final
-{
-public:
-	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_CustomNavi_ToTargetContainerSortButton;
-
-// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.CustomNavi_ToTargetContainerTop
+// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.SetTagetContainerDisplayName
 // 0x0018 (0x0018 - 0x0000)
-struct WBP_IngameMenu_Chest_C_CustomNavi_ToTargetContainerTop final
+struct WBP_IngameMenu_Chest_C_SetTagetContainerDisplayName final
 {
 public:
-	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_GetTargetContainerTopFocustTarget_FocusTarget; // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FText                                   TargetContainerName;                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_CustomNavi_ToTargetContainerTop;
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_SetTagetContainerDisplayName;
+
+// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.SetEnableSortButton
+// 0x0005 (0x0005 - 0x0000)
+struct WBP_IngameMenu_Chest_C_SetEnableSortButton final
+{
+public:
+	bool                                          bEnable;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_SetEnableSortButton;
+
+// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.SetCanChestSetting
+// 0x0005 (0x0005 - 0x0000)
+struct WBP_IngameMenu_Chest_C_SetCanChestSetting final
+{
+public:
+	bool                                          CanSetting;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_SetCanChestSetting;
+
+// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.PlayItemMoveSound
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_Chest_C_PlayItemMoveSound final
+{
+public:
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_PlayItemMoveSound;
+
+// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.OnLeftClickedTargetContainerSlot
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_IngameMenu_Chest_C_OnLeftClickedTargetContainerSlot final
+{
+public:
+	class UWBP_PalItemSlotButtonBase_C*           ButtonBase;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalItemSlot*                           CallFunc_GetTargetSlot_targetSlot;                 // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalItemSlotId                         CallFunc_GetSlotId_ReturnValue;                    // 0x0018(0x0014)(NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_OnLeftClickedTargetContainerSlot;
+
+// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.OnContainerFilterChanged
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_IngameMenu_Chest_C_OnContainerFilterChanged final
+{
+public:
+	class UPalItemContainer*                      TargetContainer_0;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                           CallFunc_GetFilterOffList_ReturnValue;             // 0x0008(0x0010)(ReferenceParm)
+	bool                                          CallFunc_Array_IsEmpty_ReturnValue;                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_OnContainerFilterChanged;
+
+// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.GetTargetContainerTopFocustTarget
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameMenu_Chest_C_GetTargetContainerTopFocustTarget final
+{
+public:
+	class UWidget*                                FocusTarget;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetFocusTarget_target;                    // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_GetTargetContainerTopFocustTarget;
+
+// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.GetTargetContainerLastHoveredFocusTarget
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_IngameMenu_Chest_C_GetTargetContainerLastHoveredFocusTarget final
+{
+public:
+	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalItemSlotButtonBase_C*           CallFunc_GetLastHoveredSlotButton_SlotButton;      // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_GetTargetContainerLastHoveredFocusTarget;
+
+// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.GetInventoryLastHoveredFocusTarget
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameMenu_Chest_C_GetInventoryLastHoveredFocusTarget final
+{
+public:
+	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetInventoryLastHoveredFocusTarget_Widget; // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_GetInventoryLastHoveredFocusTarget;
+
+// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.Get Inventory Top Focust Target
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameMenu_Chest_C_Get_Inventory_Top_Focust_Target final
+{
+public:
+	class UWidget*                                FocusTarget;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetInventoryTopFocustTarget_FocusTarget;  // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_Get_Inventory_Top_Focust_Target;
+
+// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.Filtering Inventory by Inventory Type
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameMenu_Chest_C_Filtering_Inventory_by_Inventory_Type final
+{
+public:
+	TArray<EPalPlayerInventoryType>               inventoryType;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_Filtering_Inventory_by_Inventory_Type;
 
 // Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.ExecuteUbergraph_WBP_IngameMenu_Chest
 // 0x00F8 (0x00F8 - 0x0000)
@@ -177,152 +214,115 @@ public:
 };
 DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_ExecuteUbergraph_WBP_IngameMenu_Chest;
 
-// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.Filtering Inventory by Inventory Type
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameMenu_Chest_C_Filtering_Inventory_by_Inventory_Type final
-{
-public:
-	TArray<EPalPlayerInventoryType>               inventoryType;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_Filtering_Inventory_by_Inventory_Type;
-
-// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.Get Inventory Top Focust Target
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameMenu_Chest_C_Get_Inventory_Top_Focust_Target final
-{
-public:
-	class UWidget*                                FocusTarget;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_GetInventoryTopFocustTarget_FocusTarget;  // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_Get_Inventory_Top_Focust_Target;
-
-// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.GetInventoryLastHoveredFocusTarget
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameMenu_Chest_C_GetInventoryLastHoveredFocusTarget final
-{
-public:
-	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_GetInventoryLastHoveredFocusTarget_Widget; // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_GetInventoryLastHoveredFocusTarget;
-
-// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.GetTargetContainerLastHoveredFocusTarget
+// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.CustomNavi_ToTargetContainerTop
 // 0x0018 (0x0018 - 0x0000)
-struct WBP_IngameMenu_Chest_C_GetTargetContainerLastHoveredFocusTarget final
+struct WBP_IngameMenu_Chest_C_CustomNavi_ToTargetContainerTop final
 {
 public:
-	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_PalItemSlotButtonBase_C*           CallFunc_GetLastHoveredSlotButton_SlotButton;      // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetTargetContainerTopFocustTarget_FocusTarget; // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_GetTargetContainerLastHoveredFocusTarget;
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_CustomNavi_ToTargetContainerTop;
 
-// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.GetTargetContainerTopFocustTarget
+// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.CustomNavi_ToTargetContainerSortButton
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameMenu_Chest_C_GetTargetContainerTopFocustTarget final
+struct WBP_IngameMenu_Chest_C_CustomNavi_ToTargetContainerSortButton final
 {
 public:
-	class UWidget*                                FocusTarget;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_GetFocusTarget_target;                    // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_GetTargetContainerTopFocustTarget;
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_CustomNavi_ToTargetContainerSortButton;
 
-// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.OnContainerFilterChanged
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_IngameMenu_Chest_C_OnContainerFilterChanged final
+// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.CustomNavi_ToPreferenceOrCloseButton
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameMenu_Chest_C_CustomNavi_ToPreferenceOrCloseButton final
 {
 public:
-	class UPalItemContainer*                      TargetContainer_0;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                           CallFunc_GetFilterOffList_ReturnValue;             // 0x0008(0x0010)(ReferenceParm)
-	bool                                          CallFunc_Array_IsEmpty_ReturnValue;                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_OnContainerFilterChanged;
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_CustomNavi_ToPreferenceOrCloseButton;
 
-// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.OnLeftClickedTargetContainerSlot
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_IngameMenu_Chest_C_OnLeftClickedTargetContainerSlot final
+// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.CustomNavi_ToCloseButton
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameMenu_Chest_C_CustomNavi_ToCloseButton final
+{
+public:
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_CustomNavi_ToCloseButton;
+
+// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.BndEvt__WBP_IngameMenu_Chest_WBP_PalItemScrollList_K2Node_ComponentBoundEvent_6_OnEndHoveredSlot__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalItemScrollList_K2Node_ComponentBoundEvent_6_OnEndHoveredSlot__DelegateSignature final
+{
+public:
+	class UWBP_PalItemSlotButtonBase_C*           ButtonBase;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalItemScrollList_K2Node_ComponentBoundEvent_6_OnEndHoveredSlot__DelegateSignature;
+
+// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.BndEvt__WBP_IngameMenu_Chest_WBP_PalItemScrollList_K2Node_ComponentBoundEvent_5_OnLeftClickedSlot__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalItemScrollList_K2Node_ComponentBoundEvent_5_OnLeftClickedSlot__DelegateSignature final
 {
 public:
 	class UWBP_PalItemSlotButtonBase_C*           ButtonBase;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalItemSlot*                           CallFunc_GetTargetSlot_targetSlot;                 // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalItemSlotId                         CallFunc_GetSlotId_ReturnValue;                    // 0x0018(0x0014)(NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_OnLeftClickedTargetContainerSlot;
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalItemScrollList_K2Node_ComponentBoundEvent_5_OnLeftClickedSlot__DelegateSignature;
 
-// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.PlayItemMoveSound
+// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.BndEvt__WBP_IngameMenu_Chest_WBP_PalItemScrollList_K2Node_ComponentBoundEvent_3_OnHoveredSlot__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_Chest_C_PlayItemMoveSound final
+struct WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalItemScrollList_K2Node_ComponentBoundEvent_3_OnHoveredSlot__DelegateSignature final
 {
 public:
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalItemSlotButtonBase_C*           ButtonBase;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_PlayItemMoveSound;
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalItemScrollList_K2Node_ComponentBoundEvent_3_OnHoveredSlot__DelegateSignature;
 
-// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.SetCanChestSetting
-// 0x0005 (0x0005 - 0x0000)
-struct WBP_IngameMenu_Chest_C_SetCanChestSetting final
+// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.BndEvt__WBP_IngameMenu_Chest_WBP_PalInvisibleButton_Sort_TargetContainer_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalInvisibleButton_Sort_TargetContainer_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	bool                                          CanSetting;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_SetCanChestSetting;
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalInvisibleButton_Sort_TargetContainer_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
 
-// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.SetEnableSortButton
-// 0x0005 (0x0005 - 0x0000)
-struct WBP_IngameMenu_Chest_C_SetEnableSortButton final
+// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.BndEvt__WBP_IngameMenu_Chest_WBP_PalInvisibleButton_QuickMove_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalInvisibleButton_QuickMove_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	bool                                          bEnable;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_SetEnableSortButton;
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalInvisibleButton_QuickMove_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
 
-// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.SetTagetContainerDisplayName
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_IngameMenu_Chest_C_SetTagetContainerDisplayName final
+// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.BndEvt__WBP_IngameMenu_Chest_WBP_Common_Inventory_K2Node_ComponentBoundEvent_8_OnHoveredInventorySlot__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_Common_Inventory_K2Node_ComponentBoundEvent_8_OnHoveredInventorySlot__DelegateSignature final
 {
 public:
-	class FText                                   TargetContainerName;                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class UWBP_PalItemSlotButtonBase_C*           SlotButton;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_SetTagetContainerDisplayName;
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_Common_Inventory_K2Node_ComponentBoundEvent_8_OnHoveredInventorySlot__DelegateSignature;
 
-// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.Setup
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_IngameMenu_Chest_C_Setup final
+// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.BndEvt__WBP_IngameMenu_Chest_WBP_Common_Inventory_K2Node_ComponentBoundEvent_11_OnLeftClickSlot__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_Common_Inventory_K2Node_ComponentBoundEvent_11_OnLeftClickSlot__DelegateSignature final
 {
 public:
-	class UBP_PalInventoryModel_C*                Model_0;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalItemContainer*                      TargetContainer_0;                                 // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         DisplaySlotNumDefault;                             // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UPalItemContainer* Container)> K2Node_CreateDelegate_OutputDelegate;        // 0x0018(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalPlayerInventoryData*                CallFunc_GetLocalInventoryData_ReturnValue;        // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalItemContainer*                      CallFunc_TryGetContainerFromInventoryType_OutContainer; // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_TryGetContainerFromInventoryType_ReturnValue; // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalItemSlotButtonBase_C*           Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_Setup;
-
-// Function WBP_IngameMenu_Chest.WBP_IngameMenu_Chest_C.Setup Target Item Container
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_IngameMenu_Chest_C_Setup_Target_Item_Container final
-{
-public:
-	class UPalItemContainer*                      TargetContainer_0;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType)> K2Node_CreateDelegate_OutputDelegate; // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWBP_PalItemListBlock_C*                CallFunc_AddItemContainer_createdBlock;            // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_Setup_Target_Item_Container;
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_C_BndEvt__WBP_IngameMenu_Chest_WBP_Common_Inventory_K2Node_ComponentBoundEvent_11_OnLeftClickSlot__DelegateSignature;
 
 }
 

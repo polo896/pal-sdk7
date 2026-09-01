@@ -51,16 +51,16 @@ class UWBP_Control_Settings_C : public UUserWidget
     FPalOptionKeyboardSettings KeyboardSettingCache;                                  // 0x0404 (size: 0x14)
     FPalOptionLocalStaticSettings LocalStaticSettingCache;                            // 0x0418 (size: 0xA8)
     FPalOptionPadSettings PadSettingCache;                                            // 0x04C0 (size: 0x1C)
-    TArray<class UVerticalBox*> VerticalBoxs;                                         // 0x04E0 (size: 0x10)
-    TArray<class UWBP_PalCommonButtonBase_C*> FirstRows;                              // 0x04F0 (size: 0x10)
+    TArray<UVerticalBox*> VerticalBoxs;                                               // 0x04E0 (size: 0x10)
+    TArray<UWBP_PalCommonButtonBase_C*> FirstRows;                                    // 0x04F0 (size: 0x10)
     int32 Current;                                                                    // 0x0500 (size: 0x4)
     FPalOptionUISettings UISettingCache;                                              // 0x0504 (size: 0x1C)
     FPalOptionCommonSettings CommonSettingCache;                                      // 0x0520 (size: 0x30)
     TArray<FDataTableRowHandle> ColorSelections;                                      // 0x0550 (size: 0x10)
     TArray<FDataTableRowHandle> FontSizeSelections;                                   // 0x0560 (size: 0x10)
     TMap<int32, int32> FontSizeMap;                                                   // 0x0570 (size: 0x50)
-    TMap<class FString, class FDataTableRowHandle> LanguageNameMsgID;                 // 0x05C0 (size: 0x50)
-    TMap<class EPalSupportedPlatformType, class FDataTableRowHandle> LanguageTipsMsgIDMap; // 0x0610 (size: 0x50)
+    TMap<FString, FDataTableRowHandle> LanguageNameMsgID;                             // 0x05C0 (size: 0x50)
+    TMap<EPalSupportedPlatformType, FDataTableRowHandle> LanguageTipsMsgIDMap;        // 0x0610 (size: 0x50)
 
     void SetDefault();
     void GetDesiredFocusTarget(class UWidget*& Target);

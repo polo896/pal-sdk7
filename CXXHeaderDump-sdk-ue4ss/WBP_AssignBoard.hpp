@@ -22,13 +22,13 @@ class UWBP_AssignBoard_C : public UPalUserWidget
     class UWBP_PalCommonScrollList_C* WBP_PalCommonScrollList_WorkList;               // 0x04D0 (size: 0x8)
     class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Sort;                     // 0x04D8 (size: 0x8)
     class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon;                                // 0x04E0 (size: 0x8)
-    TSoftObjectPtr<UPalIndividualCharacterContainer> SoftWorkerCharacterContainer;    // 0x04E8 (size: 0x30)
+    TSoftObjectPtr<class UPalIndividualCharacterContainer> SoftWorkerCharacterContainer; // 0x04E8 (size: 0x30)
     FWBP_AssignBoard_COnClickedWorkerSlot OnClickedWorkerSlot;                        // 0x0518 (size: 0x10)
     void OnClickedWorkerSlot(class UWBP_PalCharacterSlotButtonBase_C* SlotButtonBase);
     bool IsSelectingWorker;                                                           // 0x0528 (size: 0x1)
     FWBP_AssignBoard_COnClickedWork OnClickedWork;                                    // 0x0530 (size: 0x10)
     void OnClickedWork(class UWBP_AssignBoard_WorkListBase_C* Widget);
-    TMap<class EPalWorkType, class TSubclassOf<UUserWidget>> WorkTypeWidgetMap;       // 0x0540 (size: 0x50)
+    TMap<EPalWorkType, TSubclassOf<class UUserWidget>> WorkTypeWidgetMap;             // 0x0540 (size: 0x50)
     class UWBP_AssignBoard_WorkListBase_C* SelectedWorkWidget;                        // 0x0590 (size: 0x8)
     FPalUIActionBindData RemoveAssignActionHandle;                                    // 0x0598 (size: 0x4)
     FWBP_AssignBoard_COnTriggerRemoveAssignShortcut OnTriggerRemoveAssignShortcut;    // 0x05A0 (size: 0x10)
@@ -38,7 +38,7 @@ class UWBP_AssignBoard_C : public UPalUserWidget
     void OnHoveredWork(class UWBP_AssignBoard_WorkListBase_C* Widget);
     FWBP_AssignBoard_COnUnhoveredWork OnUnhoveredWork;                                // 0x05C8 (size: 0x10)
     void OnUnhoveredWork(class UWBP_AssignBoard_WorkListBase_C* Widget);
-    TMap<class FGuid, class UWBP_AssignBoard_WorkListBase_C*> WorkListWidgetMap;      // 0x05D8 (size: 0x50)
+    TMap<FGuid, UWBP_AssignBoard_WorkListBase_C*> WorkListWidgetMap;                  // 0x05D8 (size: 0x50)
     FWBP_AssignBoard_COnClickedSortButton OnClickedSortButton;                        // 0x0628 (size: 0x10)
     void OnClickedSortButton();
     FWBP_AssignBoard_COnClickedCloseButton OnClickedCloseButton;                      // 0x0638 (size: 0x10)

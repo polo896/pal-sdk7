@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "E_PaldexDistributionTimeType_structs.hpp"
 #include "Engine_structs.hpp"
+#include "E_PalEscMenuType_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
 #include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "E_PalEscMenuType_structs.hpp"
+#include "E_PaldexDistributionTimeType_structs.hpp"
 
 
 namespace SDK
@@ -154,105 +154,105 @@ public:
 	TMulticastInlineDelegate<void()>              OnReturnFromGuideMenu;                             // 0x0B48(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void AnmEvent_ChnageTimeType(E_PaldexDistributionTimeType timeType);
-	void AnmEvent_FirstOpen();
-	void AnmEvent_ToDistribution();
-	void AnmEvent_ToModel();
-	void ApplyWorldPreset(const class FString& Difficulty);
-	void ApplyWorldSettings();
-	void BndEvt__WBP_MenuESC_AimAssistKeyboard_CheckBox_K2Node_ComponentBoundEvent_27_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
-	void BndEvt__WBP_MenuESC_AimAssistPad_CheckBox_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
-	void BndEvt__WBP_MenuESC_bActiveUNKO_CheckBox_K2Node_ComponentBoundEvent_24_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
-	void BndEvt__WBP_MenuESC_bEnableFriendlyFire_CheckBox_K2Node_ComponentBoundEvent_51_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
-	void BndEvt__WBP_MenuESC_bEnableInvaderEnemy_CheckBox_K2Node_ComponentBoundEvent_55_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
-	void BndEvt__WBP_MenuESC_BuildObjectDamageRate_SpinBox_K2Node_ComponentBoundEvent_19_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
-	void BndEvt__WBP_MenuESC_CollectionDropRate_SpinBox_K2Node_ComponentBoundEvent_20_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
-	void BndEvt__WBP_MenuESC_CollectionObjectHpRate_SpinBox_K2Node_ComponentBoundEvent_21_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
-	void BndEvt__WBP_MenuESC_ComboBoxString_153_K2Node_ComponentBoundEvent_2_OnSelectionChangedEvent__DelegateSignature(const class FString& SelectedItem, ESelectInfo SelectionType);
-	void BndEvt__WBP_MenuESC_DayTimeSpeedRateValue_SpinBox_K2Node_ComponentBoundEvent_1_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
-	void BndEvt__WBP_MenuESC_DropItemMaxNum_SpinBox_K2Node_ComponentBoundEvent_56_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
-	void BndEvt__WBP_MenuESC_DropItemMaxNum_UNKO_SpinBox_K2Node_ComponentBoundEvent_57_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
-	void BndEvt__WBP_MenuESC_EnemyDropItemRate_SpinBox_K2Node_ComponentBoundEvent_23_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
-	void BndEvt__WBP_MenuESC_ExpRate_SpinBox_K2Node_ComponentBoundEvent_4_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
-	void BndEvt__WBP_MenuESC_NightTimeSpeedRate_SpinBox_K2Node_ComponentBoundEvent_3_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
-	void BndEvt__WBP_MenuESC_PalAutoHPRegeneRate_SpinBox_K2Node_ComponentBoundEvent_17_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
-	void BndEvt__WBP_MenuESC_PalAutoHpRegenRateInSleep_SpinBOx_K2Node_ComponentBoundEvent_18_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
-	void BndEvt__WBP_MenuESC_PalCaptureRateAdd_SpinBox_K2Node_ComponentBoundEvent_5_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
-	void BndEvt__WBP_MenuESC_PalDamageRateAttack_SpinBox_K2Node_ComponentBoundEvent_7_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
-	void BndEvt__WBP_MenuESC_PalDamageRateDefense_SpinBox_K2Node_ComponentBoundEvent_8_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
-	void BndEvt__WBP_MenuESC_PalStomachDecreaceRate_SpinBox_K2Node_ComponentBoundEvent_15_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
-	void BndEvt__WBP_MenuESC_PlayerAutoHPRegeneRate_SpinBox_K2Node_ComponentBoundEvent_13_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
-	void BndEvt__WBP_MenuESC_PlayerAutoHpRegenRateInSleep_SpinBox_K2Node_ComponentBoundEvent_14_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
-	void BndEvt__WBP_MenuESC_PlayerDamageRateAttack_SpinBox_K2Node_ComponentBoundEvent_9_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
-	void BndEvt__WBP_MenuESC_PlayerDamageRateDefense_SpinBox_K2Node_ComponentBoundEvent_10_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
-	void BndEvt__WBP_MenuESC_PlayerStomachDecreaceRate_SpinBox_K2Node_ComponentBoundEvent_11_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
-	void BndEvt__WBP_MenuESC_Value_13_K2Node_ComponentBoundEvent_16_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
-	void BndEvt__WBP_MenuESC_Value_15_K2Node_ComponentBoundEvent_22_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
-	void BndEvt__WBP_MenuESC_Value_4_K2Node_ComponentBoundEvent_6_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
-	void BndEvt__WBP_MenuESC_Value_9_K2Node_ComponentBoundEvent_12_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
-	void BndEvt__WBP_MenuESC_WBP_CommonButton_BlockList_K2Node_ComponentBoundEvent_34_OnClicked__DelegateSignature();
-	void BndEvt__WBP_MenuESC_WBP_MenuESC_PlayerMenu_K2Node_ComponentBoundEvent_26_OnPlayerMenuCopyUserId__DelegateSignature(class UWBP_MenuESCPlayerListItem_C* inTargetWidget);
-	void BndEvt__WBP_MenuESC_WBP_MenuESC_PlayerMenu_K2Node_ComponentBoundEvent_28_OnPlayerMenuCopyPlayerUId__DelegateSignature(class UWBP_MenuESCPlayerListItem_C* inTargetWidget);
-	void BndEvt__WBP_MenuESC_WBP_MenuESC_PlayerMenu_K2Node_ComponentBoundEvent_29_OnPlayerMenuMute__DelegateSignature();
-	void BndEvt__WBP_MenuESC_WBP_MenuESC_PlayerMenu_K2Node_ComponentBoundEvent_30_OnPlayerMenuBlock__DelegateSignature();
-	void BndEvt__WBP_MenuESC_WBP_MenuESC_PlayerMenu_K2Node_ComponentBoundEvent_31_OnPlayerMenuUnMute__DelegateSignature();
-	void BndEvt__WBP_MenuESC_WBP_MenuESC_PlayerMenu_K2Node_ComponentBoundEvent_32_OnPlayerMenuUnBlock__DelegateSignature();
-	void BndEvt__WBP_MenuESC_WBP_MenuESC_PlayerMenu_K2Node_ComponentBoundEvent_33_OnPlayerMenuCancel__DelegateSignature();
-	void BndEvt__WBP_MenuESC_WBP_MenuESC_PlayerMenu_K2Node_ComponentBoundEvent_35_OnPlayerMenuUserReport__DelegateSignature();
-	void BndEvt__WBP_MenuESC_WBP_MenuESC_tabset1_K2Node_ComponentBoundEvent_36_OnSelectedModelTab__DelegateSignature();
-	void BndEvt__WBP_MenuESC_WBP_MenuESC_tabset1_K2Node_ComponentBoundEvent_37_OnSelectedDistributionTab__DelegateSignature();
-	void BndEvt__WBP_MenuESC_WBP_PalInvisibleButton_CopyCode_K2Node_ComponentBoundEvent_25_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_MenuESC_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void CanClose(bool* CanCloseFlag);
-	void ChangeTab(int32 TabIndex_0);
-	void Close_Member_Setting_Window();
-	void CloseAction();
-	void CloseBlockList();
-	void CloseOverride();
-	void ConfirmKill(bool Confirm);
-	void ConfirmReturnTitle(bool Confirm);
-	void Construct();
-	void CopyInviteCode();
-	void CreatePlayerList();
-	class UWidget* CustomNavi_ToInviteCode(EUINavigation Navigation_0);
-	class UWidget* CustomNavi_ToLeftMenuBottom(EUINavigation Navigation_0);
-	class UWidget* CustomNavi_ToLeftMenuTop(EUINavigation Navigation_0);
-	void Destruct();
-	void ExecuteUbergraph_WBP_MenuESC(int32 EntryPoint);
-	void HandleDiscordLink();
-	void InitOptionFieldBool(class UCheckBox* CheckBox, bool& CurrentValue);
-	void InitOptionFieldFloat(const struct FPalOptionValueFloat& MinMaxValue, class USpinBox* SpinBox, double& CurrentValue);
-	void InitOptionFieldInt(const struct FPalOptionValueInt& MinMaxValue, class USpinBox* SpinBox, int32& CurrentValue);
-	bool IsLeftMenuFocused(class UPanelWidget* CanvasButtons);
-	void On_Right_Clicked_Player_List_Item(class UWBP_MenuESCPlayerListItem_C* ButtonBase);
-	void On_Session_Member_Change(const class FString& UserId, const EPalSessionMemberChange ChangeType);
-	struct FEventReply OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent);
-	void OnChangePlayerlistInput();
-	void OnChangeServerinfoInput();
-	void OnClickedButton(E_PalEscMenuType MenuType);
-	void OnClosedAnyGuideMenu(class UPalHUDDispatchParameterBase* Param_0);
-	void OnClosedDialog_FirstCheck_Sucide(bool bResult);
-	void OnClosePlayerBlockDialog(bool bResult);
-	void OnClosePlayerMuteDialog(bool bResult);
-	void OnClosePlayerUnBlockDialog(bool bResult);
-	void OnClosePlayerUnMuteDialog(bool bResult);
-	void OnInitialized();
-	void OnKillExecute();
-	void OnReturn2Title();
-	void OnTimerEvent_CheckEOSStatus();
-	void Open_Form();
-	void OpenBlockList();
-	void OpenEULA();
-	void OpenPlayerBlockDialog(bool bInBlock);
-	void OpenPlayerMuteDialog(bool bInMute);
-	void OpenUserReport();
-	void SetInviteCodeText();
-	void SetupWorldOptions();
-	void ShowHideInviteCode();
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void ToPlayerlistDisplayMode();
-	void ToServerinfoDisplayMode();
 	void UpdateRTT();
+	void ToServerinfoDisplayMode();
+	void ToPlayerlistDisplayMode();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void ShowHideInviteCode();
+	void SetupWorldOptions();
+	void SetInviteCodeText();
+	void OpenUserReport();
+	void OpenPlayerMuteDialog(bool bInMute);
+	void OpenPlayerBlockDialog(bool bInBlock);
+	void OpenEULA();
+	void OpenBlockList();
+	void Open_Form();
+	void OnTimerEvent_CheckEOSStatus();
+	void OnReturn2Title();
+	void OnKillExecute();
+	void OnInitialized();
+	void OnClosePlayerUnMuteDialog(bool bResult);
+	void OnClosePlayerUnBlockDialog(bool bResult);
+	void OnClosePlayerMuteDialog(bool bResult);
+	void OnClosePlayerBlockDialog(bool bResult);
+	void OnClosedDialog_FirstCheck_Sucide(bool bResult);
+	void OnClosedAnyGuideMenu(class UPalHUDDispatchParameterBase* Param_0);
+	void OnClickedButton(E_PalEscMenuType MenuType);
+	void OnChangeServerinfoInput();
+	void OnChangePlayerlistInput();
+	struct FEventReply OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent);
+	void On_Session_Member_Change(const class FString& UserId, const EPalSessionMemberChange ChangeType);
+	void On_Right_Clicked_Player_List_Item(class UWBP_MenuESCPlayerListItem_C* ButtonBase);
+	bool IsLeftMenuFocused(class UPanelWidget* CanvasButtons);
+	void InitOptionFieldInt(const struct FPalOptionValueInt& MinMaxValue, class USpinBox* SpinBox, int32& CurrentValue);
+	void InitOptionFieldFloat(const struct FPalOptionValueFloat& MinMaxValue, class USpinBox* SpinBox, double& CurrentValue);
+	void InitOptionFieldBool(class UCheckBox* CheckBox, bool& CurrentValue);
+	void HandleDiscordLink();
+	void ExecuteUbergraph_WBP_MenuESC(int32 EntryPoint);
+	void Destruct();
+	class UWidget* CustomNavi_ToLeftMenuTop(EUINavigation Navigation_0);
+	class UWidget* CustomNavi_ToLeftMenuBottom(EUINavigation Navigation_0);
+	class UWidget* CustomNavi_ToInviteCode(EUINavigation Navigation_0);
+	void CreatePlayerList();
+	void CopyInviteCode();
+	void Construct();
+	void ConfirmReturnTitle(bool Confirm);
+	void ConfirmKill(bool Confirm);
+	void CloseOverride();
+	void CloseBlockList();
+	void CloseAction();
+	void Close_Member_Setting_Window();
+	void ChangeTab(int32 TabIndex_0);
+	void CanClose(bool* CanCloseFlag);
+	void BndEvt__WBP_MenuESC_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MenuESC_WBP_PalInvisibleButton_CopyCode_K2Node_ComponentBoundEvent_25_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MenuESC_WBP_MenuESC_tabset1_K2Node_ComponentBoundEvent_37_OnSelectedDistributionTab__DelegateSignature();
+	void BndEvt__WBP_MenuESC_WBP_MenuESC_tabset1_K2Node_ComponentBoundEvent_36_OnSelectedModelTab__DelegateSignature();
+	void BndEvt__WBP_MenuESC_WBP_MenuESC_PlayerMenu_K2Node_ComponentBoundEvent_35_OnPlayerMenuUserReport__DelegateSignature();
+	void BndEvt__WBP_MenuESC_WBP_MenuESC_PlayerMenu_K2Node_ComponentBoundEvent_33_OnPlayerMenuCancel__DelegateSignature();
+	void BndEvt__WBP_MenuESC_WBP_MenuESC_PlayerMenu_K2Node_ComponentBoundEvent_32_OnPlayerMenuUnBlock__DelegateSignature();
+	void BndEvt__WBP_MenuESC_WBP_MenuESC_PlayerMenu_K2Node_ComponentBoundEvent_31_OnPlayerMenuUnMute__DelegateSignature();
+	void BndEvt__WBP_MenuESC_WBP_MenuESC_PlayerMenu_K2Node_ComponentBoundEvent_30_OnPlayerMenuBlock__DelegateSignature();
+	void BndEvt__WBP_MenuESC_WBP_MenuESC_PlayerMenu_K2Node_ComponentBoundEvent_29_OnPlayerMenuMute__DelegateSignature();
+	void BndEvt__WBP_MenuESC_WBP_MenuESC_PlayerMenu_K2Node_ComponentBoundEvent_28_OnPlayerMenuCopyPlayerUId__DelegateSignature(class UWBP_MenuESCPlayerListItem_C* inTargetWidget);
+	void BndEvt__WBP_MenuESC_WBP_MenuESC_PlayerMenu_K2Node_ComponentBoundEvent_26_OnPlayerMenuCopyUserId__DelegateSignature(class UWBP_MenuESCPlayerListItem_C* inTargetWidget);
+	void BndEvt__WBP_MenuESC_WBP_CommonButton_BlockList_K2Node_ComponentBoundEvent_34_OnClicked__DelegateSignature();
+	void BndEvt__WBP_MenuESC_Value_9_K2Node_ComponentBoundEvent_12_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
+	void BndEvt__WBP_MenuESC_Value_4_K2Node_ComponentBoundEvent_6_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
+	void BndEvt__WBP_MenuESC_Value_15_K2Node_ComponentBoundEvent_22_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
+	void BndEvt__WBP_MenuESC_Value_13_K2Node_ComponentBoundEvent_16_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
+	void BndEvt__WBP_MenuESC_PlayerStomachDecreaceRate_SpinBox_K2Node_ComponentBoundEvent_11_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
+	void BndEvt__WBP_MenuESC_PlayerDamageRateDefense_SpinBox_K2Node_ComponentBoundEvent_10_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
+	void BndEvt__WBP_MenuESC_PlayerDamageRateAttack_SpinBox_K2Node_ComponentBoundEvent_9_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
+	void BndEvt__WBP_MenuESC_PlayerAutoHpRegenRateInSleep_SpinBox_K2Node_ComponentBoundEvent_14_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
+	void BndEvt__WBP_MenuESC_PlayerAutoHPRegeneRate_SpinBox_K2Node_ComponentBoundEvent_13_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
+	void BndEvt__WBP_MenuESC_PalStomachDecreaceRate_SpinBox_K2Node_ComponentBoundEvent_15_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
+	void BndEvt__WBP_MenuESC_PalDamageRateDefense_SpinBox_K2Node_ComponentBoundEvent_8_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
+	void BndEvt__WBP_MenuESC_PalDamageRateAttack_SpinBox_K2Node_ComponentBoundEvent_7_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
+	void BndEvt__WBP_MenuESC_PalCaptureRateAdd_SpinBox_K2Node_ComponentBoundEvent_5_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
+	void BndEvt__WBP_MenuESC_PalAutoHpRegenRateInSleep_SpinBOx_K2Node_ComponentBoundEvent_18_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
+	void BndEvt__WBP_MenuESC_PalAutoHPRegeneRate_SpinBox_K2Node_ComponentBoundEvent_17_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
+	void BndEvt__WBP_MenuESC_NightTimeSpeedRate_SpinBox_K2Node_ComponentBoundEvent_3_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
+	void BndEvt__WBP_MenuESC_ExpRate_SpinBox_K2Node_ComponentBoundEvent_4_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
+	void BndEvt__WBP_MenuESC_EnemyDropItemRate_SpinBox_K2Node_ComponentBoundEvent_23_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
+	void BndEvt__WBP_MenuESC_DropItemMaxNum_UNKO_SpinBox_K2Node_ComponentBoundEvent_57_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
+	void BndEvt__WBP_MenuESC_DropItemMaxNum_SpinBox_K2Node_ComponentBoundEvent_56_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
+	void BndEvt__WBP_MenuESC_DayTimeSpeedRateValue_SpinBox_K2Node_ComponentBoundEvent_1_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
+	void BndEvt__WBP_MenuESC_ComboBoxString_153_K2Node_ComponentBoundEvent_2_OnSelectionChangedEvent__DelegateSignature(const class FString& SelectedItem, ESelectInfo SelectionType);
+	void BndEvt__WBP_MenuESC_CollectionObjectHpRate_SpinBox_K2Node_ComponentBoundEvent_21_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
+	void BndEvt__WBP_MenuESC_CollectionDropRate_SpinBox_K2Node_ComponentBoundEvent_20_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
+	void BndEvt__WBP_MenuESC_BuildObjectDamageRate_SpinBox_K2Node_ComponentBoundEvent_19_OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, ETextCommit CommitMethod);
+	void BndEvt__WBP_MenuESC_bEnableInvaderEnemy_CheckBox_K2Node_ComponentBoundEvent_55_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
+	void BndEvt__WBP_MenuESC_bEnableFriendlyFire_CheckBox_K2Node_ComponentBoundEvent_51_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
+	void BndEvt__WBP_MenuESC_bActiveUNKO_CheckBox_K2Node_ComponentBoundEvent_24_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
+	void BndEvt__WBP_MenuESC_AimAssistPad_CheckBox_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
+	void BndEvt__WBP_MenuESC_AimAssistKeyboard_CheckBox_K2Node_ComponentBoundEvent_27_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
+	void ApplyWorldSettings();
+	void ApplyWorldPreset(const class FString& Difficulty);
+	void AnmEvent_ToModel();
+	void AnmEvent_ToDistribution();
+	void AnmEvent_FirstOpen();
+	void AnmEvent_ChnageTimeType(E_PaldexDistributionTimeType timeType);
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

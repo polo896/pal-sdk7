@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_MapPoint_Info_KeyBossIcon.WBP_MapPoint_Info_KeyBossIcon_C.Setup_Hidden
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_MapPoint_Info_KeyBossIcon_C::Setup_Hidden()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapPoint_Info_KeyBossIcon_C", "Setup_Hidden");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_MapPoint_Info_KeyBossIcon.WBP_MapPoint_Info_KeyBossIcon_C.Setup
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -48,6 +34,20 @@ void UWBP_MapPoint_Info_KeyBossIcon_C::Setup(class FName CharacterID)
 	Parms.CharacterID = CharacterID;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MapPoint_Info_KeyBossIcon.WBP_MapPoint_Info_KeyBossIcon_C.Setup_Hidden
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_MapPoint_Info_KeyBossIcon_C::Setup_Hidden()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MapPoint_Info_KeyBossIcon_C", "Setup_Hidden");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

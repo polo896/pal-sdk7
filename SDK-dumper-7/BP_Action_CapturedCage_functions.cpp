@@ -17,23 +17,17 @@
 namespace SDK
 {
 
-// Function BP_Action_CapturedCage.BP_Action_CapturedCage_C.ExecuteUbergraph_BP_Action_CapturedCage
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Action_CapturedCage.BP_Action_CapturedCage_C.OnEndAction
+// (Event, Public, BlueprintEvent)
 
-void UBP_Action_CapturedCage_C::ExecuteUbergraph_BP_Action_CapturedCage(int32 EntryPoint)
+void UBP_Action_CapturedCage_C::OnEndAction()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Action_CapturedCage_C", "ExecuteUbergraph_BP_Action_CapturedCage");
+		Func = Class->GetFunction("BP_Action_CapturedCage_C", "OnEndAction");
 
-	Params::BP_Action_CapturedCage_C_ExecuteUbergraph_BP_Action_CapturedCage Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -51,17 +45,23 @@ void UBP_Action_CapturedCage_C::OnBeginAction()
 }
 
 
-// Function BP_Action_CapturedCage.BP_Action_CapturedCage_C.OnEndAction
-// (Event, Public, BlueprintEvent)
+// Function BP_Action_CapturedCage.BP_Action_CapturedCage_C.ExecuteUbergraph_BP_Action_CapturedCage
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_Action_CapturedCage_C::OnEndAction()
+void UBP_Action_CapturedCage_C::ExecuteUbergraph_BP_Action_CapturedCage(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Action_CapturedCage_C", "OnEndAction");
+		Func = Class->GetFunction("BP_Action_CapturedCage_C", "ExecuteUbergraph_BP_Action_CapturedCage");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_Action_CapturedCage_C_ExecuteUbergraph_BP_Action_CapturedCage Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

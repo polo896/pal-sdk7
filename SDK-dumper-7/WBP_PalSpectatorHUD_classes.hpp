@@ -57,26 +57,26 @@ public:
 	struct FTimerHandle                           UpdateViewPortWidgetsVisibilityTimerHandle;        // 0x0520(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void DecreaseSpectateMoveSpeed();
-	void DelayedSetup();
-	void DoNothing();
-	void EndSpectate();
-	void ExecuteUbergraph_WBP_PalSpectatorHUD(int32 EntryPoint);
-	void IncreaseSpectateMoveSpeed();
-	void OnClosed();
-	void OnSetup();
-	void OnSpectateNextPlayer(const class FString& PlayerName, const class FString& NickName, const class FString& PlayerUId, const class FString& UserId);
-	void OpenMenu();
-	void RegisterInputActions();
-	void RequestOpenChat();
-	void SetHUDVisible();
-	void SetUILayerVisibility(bool bIsHide, const struct FGameplayTag& LayerTagName);
-	void SetViewportWidgetsVisiblity(ESlateVisibility Visibility_0);
-	void SpectateFreely();
-	void SpectateNextPlayer();
-	void SpectatePrevPlayer();
-	void UnRegisterInputActions();
 	void UpdateViewPortWidgetsVisibility();
+	void UnRegisterInputActions();
+	void SpectatePrevPlayer();
+	void SpectateNextPlayer();
+	void SpectateFreely();
+	void SetViewportWidgetsVisiblity(ESlateVisibility Visibility_0);
+	void SetUILayerVisibility(bool bIsHide, const struct FGameplayTag& LayerTagName);
+	void SetHUDVisible();
+	void RequestOpenChat();
+	void RegisterInputActions();
+	void OpenMenu();
+	void OnSpectateNextPlayer(const class FString& PlayerName, const class FString& NickName, const class FString& PlayerUId, const class FString& UserId);
+	void OnSetup();
+	void OnClosed();
+	void IncreaseSpectateMoveSpeed();
+	void ExecuteUbergraph_WBP_PalSpectatorHUD(int32 EntryPoint);
+	void EndSpectate();
+	void DoNothing();
+	void DelayedSetup();
+	void DecreaseSpectateMoveSpeed();
 
 public:
 	static class UClass* StaticClass()

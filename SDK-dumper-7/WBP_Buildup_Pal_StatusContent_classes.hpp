@@ -59,21 +59,21 @@ public:
 	bool                                          LoopHighSpeed;                                     // 0x0358(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Rankup();
-	void BndEvt__WBP_Buildup_Pal_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_2_OnButtonPressed__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Buildup_Pal_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_5_OnButtonReleased__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Buildup_Pal_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_0_OnButtonPressed__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Buildup_Pal_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_1_OnButtonReleased__DelegateSignature(class UCommonButtonBase* Button);
-	void ExecuteUbergraph_WBP_Buildup_Pal_StatusContent(int32 EntryPoint);
-	void Get_Status(EPalCharacterStatusOperationName* Status_0);
-	void RestoreAnmEvent();
-	void SetEnable(bool IsEnable);
-	void SetInfo(class UPalIndividualCharacterParameter* individualParam, int32 SetTargetRank);
-	void SetItemRequireInfo();
-	void SetSelectRank(int32 ToRank);
-	void Setup(EPalCharacterStatusOperationName Status_0);
-	void StatusMinus();
 	void StatusPlus();
+	void StatusMinus();
+	void Setup(EPalCharacterStatusOperationName Status_0);
+	void SetSelectRank(int32 ToRank);
+	void SetItemRequireInfo();
+	void SetInfo(class UPalIndividualCharacterParameter* individualParam, int32 SetTargetRank);
+	void SetEnable(bool IsEnable);
+	void RestoreAnmEvent();
+	void Get_Status(EPalCharacterStatusOperationName* Status_0);
+	void ExecuteUbergraph_WBP_Buildup_Pal_StatusContent(int32 EntryPoint);
+	void BndEvt__WBP_Buildup_Pal_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_1_OnButtonReleased__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Buildup_Pal_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_0_OnButtonPressed__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Buildup_Pal_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_5_OnButtonReleased__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Buildup_Pal_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_2_OnButtonPressed__DelegateSignature(class UCommonButtonBase* Button);
+	void AnmEvent_Rankup();
 
 public:
 	static class UClass* StaticClass()

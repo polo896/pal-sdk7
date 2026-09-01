@@ -17,71 +17,37 @@
 namespace SDK
 {
 
-// Function WBP_MainMenu_Tab.WBP_MainMenu_Tab_C.AnmEvent_FirstOpen
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_MainMenu_Tab.WBP_MainMenu_Tab_C.SetEnableAttentionDot
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    isFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_Tab_C::AnmEvent_FirstOpen(bool isFocused)
+void UWBP_MainMenu_Tab_C::SetEnableAttentionDot(bool IsEnable)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Tab_C", "AnmEvent_FirstOpen");
+		Func = Class->GetFunction("WBP_MainMenu_Tab_C", "SetEnableAttentionDot");
 
-	Params::WBP_MainMenu_Tab_C_AnmEvent_FirstOpen Parms{};
+	Params::WBP_MainMenu_Tab_C_SetEnableAttentionDot Parms{};
 
-	Parms.isFocused = isFocused;
+	Parms.IsEnable = IsEnable;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_MainMenu_Tab.WBP_MainMenu_Tab_C.AnmEvent_FocusToNormal
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_MainMenu_Tab.WBP_MainMenu_Tab_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_MainMenu_Tab_C::AnmEvent_FocusToNormal()
+void UWBP_MainMenu_Tab_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Tab_C", "AnmEvent_FocusToNormal");
+		Func = Class->GetFunction("WBP_MainMenu_Tab_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu_Tab.WBP_MainMenu_Tab_C.AnmEvent_NormalToFocus
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_MainMenu_Tab_C::AnmEvent_NormalToFocus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Tab_C", "AnmEvent_NormalToFocus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu_Tab.WBP_MainMenu_Tab_C.BndEvt__WBP_MainMenu_Tab_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MainMenu_Tab_C::BndEvt__WBP_MainMenu_Tab_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Tab_C", "BndEvt__WBP_MainMenu_Tab_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_MainMenu_Tab_C_BndEvt__WBP_MainMenu_Tab_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -105,35 +71,69 @@ void UWBP_MainMenu_Tab_C::ExecuteUbergraph_WBP_MainMenu_Tab(int32 EntryPoint)
 }
 
 
-// Function WBP_MainMenu_Tab.WBP_MainMenu_Tab_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_MainMenu_Tab.WBP_MainMenu_Tab_C.BndEvt__WBP_MainMenu_Tab_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_Tab_C::OnInitialized()
+void UWBP_MainMenu_Tab_C::BndEvt__WBP_MainMenu_Tab_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Tab_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_MainMenu_Tab_C", "BndEvt__WBP_MainMenu_Tab_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_MainMenu_Tab_C_BndEvt__WBP_MainMenu_Tab_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu_Tab.WBP_MainMenu_Tab_C.AnmEvent_NormalToFocus
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_MainMenu_Tab_C::AnmEvent_NormalToFocus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Tab_C", "AnmEvent_NormalToFocus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_MainMenu_Tab.WBP_MainMenu_Tab_C.SetEnableAttentionDot
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_MainMenu_Tab.WBP_MainMenu_Tab_C.AnmEvent_FocusToNormal
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_MainMenu_Tab_C::SetEnableAttentionDot(bool IsEnable)
+void UWBP_MainMenu_Tab_C::AnmEvent_FocusToNormal()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Tab_C", "SetEnableAttentionDot");
+		Func = Class->GetFunction("WBP_MainMenu_Tab_C", "AnmEvent_FocusToNormal");
 
-	Params::WBP_MainMenu_Tab_C_SetEnableAttentionDot Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.IsEnable = IsEnable;
+
+// Function WBP_MainMenu_Tab.WBP_MainMenu_Tab_C.AnmEvent_FirstOpen
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    isFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_Tab_C::AnmEvent_FirstOpen(bool isFocused)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Tab_C", "AnmEvent_FirstOpen");
+
+	Params::WBP_MainMenu_Tab_C_AnmEvent_FirstOpen Parms{};
+
+	Parms.isFocused = isFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

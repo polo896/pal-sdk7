@@ -12,10 +12,10 @@
 
 #include "Pal_structs.hpp"
 #include "Engine_structs.hpp"
-#include "BP_ActionUniqueAttackBase_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "AkAudio_structs.hpp"
 #include "Enum_RadiantPurge_State_structs.hpp"
+#include "BP_ActionUniqueAttackBase_classes.hpp"
 
 
 namespace SDK

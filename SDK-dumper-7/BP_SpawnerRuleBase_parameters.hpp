@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "F_Pal_QuestNPCSpawnCondition_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK::Params

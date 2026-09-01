@@ -50,25 +50,25 @@ public:
 	struct FPalUIActionBindData                   DefaultRuleAction;                                 // 0x0564(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void BndEvt__WBP_Arena_RuleSetting_WBP_Arena_Rule_ListGroup_K2Node_ComponentBoundEvent_5_ToggleLevelSyncInfo__DelegateSignature(bool Show);
-	void BndEvt__WBP_Arena_RuleSetting_WBP_Arena_RuleSetting_Pal_K2Node_ComponentBoundEvent_2_OnCloseButtonClicked__DelegateSignature();
-	void BndEvt__WBP_Arena_RuleSetting_WBP_Arena_RuleSetting_Pal_K2Node_ComponentBoundEvent_3_OnToggleCharacterRestrict__DelegateSignature(class FName CharacterID, class UWBP_Arena_RuleSetting_PalListButton_C* Widget);
-	void BndEvt__WBP_Arena_RuleSetting_WBP_Arena_RuleSetting_Pal_K2Node_ComponentBoundEvent_4_OnChangeAll__DelegateSignature(bool IsBan);
-	void BndEvt__WBP_Arena_RuleSetting_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
-	void BndEvt__WBP_Arena_RuleSetting_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void CancelAction();
-	void Construct();
-	void ExecuteUbergraph_WBP_Arena_RuleSetting(int32 EntryPoint);
-	void OnInitialized();
-	void OnOtomoIconHovered(class UWBP_Arena_PalIcon_C* Icon);
-	void OnotomoIconUnhovered();
-	void OnRuleChanged(const struct FPalArenaRule& NewRule);
-	void OnSetup();
-	void RefreshOtomoRestriction();
-	void SaveRule();
-	void SetDefaultRule();
-	void Setup();
 	void ShowRestrictPalDetail();
+	void Setup();
+	void SetDefaultRule();
+	void SaveRule();
+	void RefreshOtomoRestriction();
+	void OnSetup();
+	void OnRuleChanged(const struct FPalArenaRule& NewRule);
+	void OnotomoIconUnhovered();
+	void OnOtomoIconHovered(class UWBP_Arena_PalIcon_C* Icon);
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_Arena_RuleSetting(int32 EntryPoint);
+	void Construct();
+	void CancelAction();
+	void BndEvt__WBP_Arena_RuleSetting_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
+	void BndEvt__WBP_Arena_RuleSetting_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
+	void BndEvt__WBP_Arena_RuleSetting_WBP_Arena_RuleSetting_Pal_K2Node_ComponentBoundEvent_4_OnChangeAll__DelegateSignature(bool IsBan);
+	void BndEvt__WBP_Arena_RuleSetting_WBP_Arena_RuleSetting_Pal_K2Node_ComponentBoundEvent_3_OnToggleCharacterRestrict__DelegateSignature(class FName CharacterID, class UWBP_Arena_RuleSetting_PalListButton_C* Widget);
+	void BndEvt__WBP_Arena_RuleSetting_WBP_Arena_RuleSetting_Pal_K2Node_ComponentBoundEvent_2_OnCloseButtonClicked__DelegateSignature();
+	void BndEvt__WBP_Arena_RuleSetting_WBP_Arena_Rule_ListGroup_K2Node_ComponentBoundEvent_5_ToggleLevelSyncInfo__DelegateSignature(bool Show);
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

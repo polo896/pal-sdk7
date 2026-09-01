@@ -31,14 +31,14 @@ public:
 	struct FRotator                               ThrowRotator;                                      // 0x0448(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void CollectTarget(class AActor** NewParam);
-	void ExecuteUbergraph_BP_ThrowPal_ThrowObject(int32 EntryPoint);
-	void FindNearEnemy(class APalCharacter* OwnerCharacter, class APalCharacter** OutputPin);
-	void OnHit(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FHitResult& Hit);
-	void PostProcessSpawnOtomo(class AActor* HitActor);
-	void ReceiveTick(float DeltaSeconds);
-	void SpawnOtomo(class APalCharacter** SpawnOtomo_0);
 	void UpdateRotator(double DeltaTime);
+	void SpawnOtomo(class APalCharacter** SpawnOtomo_0);
+	void ReceiveTick(float DeltaSeconds);
+	void PostProcessSpawnOtomo(class AActor* HitActor);
+	void OnHit(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FHitResult& Hit);
+	void FindNearEnemy(class APalCharacter* OwnerCharacter, class APalCharacter** OutputPin);
+	void ExecuteUbergraph_BP_ThrowPal_ThrowObject(int32 EntryPoint);
+	void CollectTarget(class AActor** NewParam);
 
 public:
 	static class UClass* StaticClass()

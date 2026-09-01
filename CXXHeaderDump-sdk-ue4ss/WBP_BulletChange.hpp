@@ -8,7 +8,7 @@ class UWBP_BulletChange_C : public UPalUserWidget
     class UWBP_BulletChangeList_C* WBP_BulletChangeList;                              // 0x0460 (size: 0x8)
     class UWBP_BulletChangeList_C* WBP_BulletChangeList_126;                          // 0x0468 (size: 0x8)
     class UWBP_PlayerInputKeyGuideIcon_C* WBP_PlayerInputKeyGuideIcon;                // 0x0470 (size: 0x8)
-    TMap<class FName, class UWBP_BulletChangeList_C*> ListWidgetMap;                  // 0x0478 (size: 0x50)
+    TMap<FName, UWBP_BulletChangeList_C*> ListWidgetMap;                              // 0x0478 (size: 0x50)
     class UWBP_BulletChangeList_C* LastSelectedWidget;                                // 0x04C8 (size: 0x8)
     FTimerHandle FadeoutTimerHandle;                                                  // 0x04D0 (size: 0x8)
     FName CurrentSelectedBulletId;                                                    // 0x04D8 (size: 0x8)

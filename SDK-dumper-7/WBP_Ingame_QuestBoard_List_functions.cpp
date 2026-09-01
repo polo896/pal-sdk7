@@ -17,119 +17,49 @@
 namespace SDK
 {
 
-// Function WBP_Ingame_QuestBoard_List.WBP_Ingame_QuestBoard_List_C.AnmEvent_In
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Ingame_QuestBoard_List.WBP_Ingame_QuestBoard_List_C.UpdateQuest
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Ingame_QuestBoard_List_C::AnmEvent_In()
+void UWBP_Ingame_QuestBoard_List_C::UpdateQuest()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_QuestBoard_List_C", "AnmEvent_In");
+		Func = Class->GetFunction("WBP_Ingame_QuestBoard_List_C", "UpdateQuest");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Ingame_QuestBoard_List.WBP_Ingame_QuestBoard_List_C.AnmEvent_OutAndRemove
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Ingame_QuestBoard_List_C::AnmEvent_OutAndRemove()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_QuestBoard_List_C", "AnmEvent_OutAndRemove");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Ingame_QuestBoard_List.WBP_Ingame_QuestBoard_List_C.AnmEvent_Update
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Ingame_QuestBoard_List_C::AnmEvent_Update()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_QuestBoard_List_C", "AnmEvent_Update");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Ingame_QuestBoard_List.WBP_Ingame_QuestBoard_List_C.CompleteQuest
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Ingame_QuestBoard_List_C::CompleteQuest()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_QuestBoard_List_C", "CompleteQuest");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Ingame_QuestBoard_List.WBP_Ingame_QuestBoard_List_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Ingame_QuestBoard_List_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_QuestBoard_List_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Ingame_QuestBoard_List.WBP_Ingame_QuestBoard_List_C.ExecuteUbergraph_WBP_Ingame_QuestBoard_List
-// (Final, UbergraphFunction)
+// Function WBP_Ingame_QuestBoard_List.WBP_Ingame_QuestBoard_List_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalQuestBlock*                   QuestBlock                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Ingame_QuestBoard_List_C::ExecuteUbergraph_WBP_Ingame_QuestBoard_List(int32 EntryPoint)
+void UWBP_Ingame_QuestBoard_List_C::Setup(class UPalQuestBlock* QuestBlock)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_QuestBoard_List_C", "ExecuteUbergraph_WBP_Ingame_QuestBoard_List");
+		Func = Class->GetFunction("WBP_Ingame_QuestBoard_List_C", "Setup");
 
-	Params::WBP_Ingame_QuestBoard_List_C_ExecuteUbergraph_WBP_Ingame_QuestBoard_List Parms{};
+	Params::WBP_Ingame_QuestBoard_List_C_Setup Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.QuestBlock = QuestBlock;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Ingame_QuestBoard_List.WBP_Ingame_QuestBoard_List_C.Finished_4B02D5D84C3448AD992E259045BE3FFE
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Ingame_QuestBoard_List.WBP_Ingame_QuestBoard_List_C.OnTimerEvent_UpdateText
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Ingame_QuestBoard_List_C::Finished_4B02D5D84C3448AD992E259045BE3FFE()
+void UWBP_Ingame_QuestBoard_List_C::OnTimerEvent_UpdateText()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_QuestBoard_List_C", "Finished_4B02D5D84C3448AD992E259045BE3FFE");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Ingame_QuestBoard_List.WBP_Ingame_QuestBoard_List_C.Finished_FF8D72744040101F84C0D59873B7619D
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Ingame_QuestBoard_List_C::Finished_FF8D72744040101F84C0D59873B7619D()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_QuestBoard_List_C", "Finished_FF8D72744040101F84C0D59873B7619D");
+		Func = Class->GetFunction("WBP_Ingame_QuestBoard_List_C", "OnTimerEvent_UpdateText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -156,49 +86,119 @@ void UWBP_Ingame_QuestBoard_List_C::GetQuestId(class FName* QuestId)
 }
 
 
-// Function WBP_Ingame_QuestBoard_List.WBP_Ingame_QuestBoard_List_C.OnTimerEvent_UpdateText
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Ingame_QuestBoard_List.WBP_Ingame_QuestBoard_List_C.Finished_FF8D72744040101F84C0D59873B7619D
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Ingame_QuestBoard_List_C::OnTimerEvent_UpdateText()
+void UWBP_Ingame_QuestBoard_List_C::Finished_FF8D72744040101F84C0D59873B7619D()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_QuestBoard_List_C", "OnTimerEvent_UpdateText");
+		Func = Class->GetFunction("WBP_Ingame_QuestBoard_List_C", "Finished_FF8D72744040101F84C0D59873B7619D");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Ingame_QuestBoard_List.WBP_Ingame_QuestBoard_List_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalQuestBlock*                   QuestBlock                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Ingame_QuestBoard_List.WBP_Ingame_QuestBoard_List_C.Finished_4B02D5D84C3448AD992E259045BE3FFE
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Ingame_QuestBoard_List_C::Setup(class UPalQuestBlock* QuestBlock)
+void UWBP_Ingame_QuestBoard_List_C::Finished_4B02D5D84C3448AD992E259045BE3FFE()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_QuestBoard_List_C", "Setup");
+		Func = Class->GetFunction("WBP_Ingame_QuestBoard_List_C", "Finished_4B02D5D84C3448AD992E259045BE3FFE");
 
-	Params::WBP_Ingame_QuestBoard_List_C_Setup Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.QuestBlock = QuestBlock;
+
+// Function WBP_Ingame_QuestBoard_List.WBP_Ingame_QuestBoard_List_C.ExecuteUbergraph_WBP_Ingame_QuestBoard_List
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Ingame_QuestBoard_List_C::ExecuteUbergraph_WBP_Ingame_QuestBoard_List(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_QuestBoard_List_C", "ExecuteUbergraph_WBP_Ingame_QuestBoard_List");
+
+	Params::WBP_Ingame_QuestBoard_List_C_ExecuteUbergraph_WBP_Ingame_QuestBoard_List Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Ingame_QuestBoard_List.WBP_Ingame_QuestBoard_List_C.UpdateQuest
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Ingame_QuestBoard_List.WBP_Ingame_QuestBoard_List_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Ingame_QuestBoard_List_C::UpdateQuest()
+void UWBP_Ingame_QuestBoard_List_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_QuestBoard_List_C", "UpdateQuest");
+		Func = Class->GetFunction("WBP_Ingame_QuestBoard_List_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Ingame_QuestBoard_List.WBP_Ingame_QuestBoard_List_C.CompleteQuest
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Ingame_QuestBoard_List_C::CompleteQuest()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_QuestBoard_List_C", "CompleteQuest");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Ingame_QuestBoard_List.WBP_Ingame_QuestBoard_List_C.AnmEvent_Update
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Ingame_QuestBoard_List_C::AnmEvent_Update()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_QuestBoard_List_C", "AnmEvent_Update");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Ingame_QuestBoard_List.WBP_Ingame_QuestBoard_List_C.AnmEvent_OutAndRemove
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Ingame_QuestBoard_List_C::AnmEvent_OutAndRemove()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_QuestBoard_List_C", "AnmEvent_OutAndRemove");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Ingame_QuestBoard_List.WBP_Ingame_QuestBoard_List_C.AnmEvent_In
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Ingame_QuestBoard_List_C::AnmEvent_In()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_QuestBoard_List_C", "AnmEvent_In");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

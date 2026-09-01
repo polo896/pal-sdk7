@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "WBP_IndividualParameterBindWidget_classes.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "DiscordPartnerSDK_structs.hpp"
-#include "WBP_IndividualParameterBindWidget_classes.hpp"
 #include "E_PalUIGuildHPGaugeDisplayType_structs.hpp"
 
 
@@ -37,23 +37,23 @@ public:
 	struct FDiscordUniqueID                       DiscordID;                                         // 0x06A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BindFromHandle(class UPalIndividualCharacterHandle* targetHandle);
-	void DelayClose();
-	void Destruct();
-	void ExecuteUbergraph_WBP_PlayerHPGauge(int32 EntryPoint);
-	void On_Timer_Event_Check_Guild();
-	void On_Update_HP_Binded(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& nowMaxHP);
-	void On_Update_Shield_Binded(const struct FFixedPoint64& NowShield, const struct FFixedPoint64& nowMaxShield);
-	void OnDyingEnd();
-	void OnInitialized();
-	void OnTimerEvent_CheckActor();
-	void OnUpdateLevel_Binded(int32 NewLevel);
-	void OnUpdateNickName_Binded(const class FString& NewNickName);
-	void OnVoiceChatUserStateChanged(const struct FDiscordUniqueID& UserId);
-	void SetupByActor();
-	void SetupDying();
-	void UpdateForTick(double DeltaTime);
 	void UpdateWidgetPosition();
+	void UpdateForTick(double DeltaTime);
+	void SetupDying();
+	void SetupByActor();
+	void OnVoiceChatUserStateChanged(const struct FDiscordUniqueID& UserId);
+	void OnUpdateNickName_Binded(const class FString& NewNickName);
+	void OnUpdateLevel_Binded(int32 NewLevel);
+	void OnTimerEvent_CheckActor();
+	void OnInitialized();
+	void OnDyingEnd();
+	void On_Update_Shield_Binded(const struct FFixedPoint64& NowShield, const struct FFixedPoint64& nowMaxShield);
+	void On_Update_HP_Binded(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& nowMaxHP);
+	void On_Timer_Event_Check_Guild();
+	void ExecuteUbergraph_WBP_PlayerHPGauge(int32 EntryPoint);
+	void Destruct();
+	void DelayClose();
+	void BindFromHandle(class UPalIndividualCharacterHandle* targetHandle);
 
 public:
 	static class UClass* StaticClass()

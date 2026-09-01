@@ -21,7 +21,7 @@ class UWBP_Ingame_Incubator_AllOpen_C : public UPalUIObtainCharactersPerformance
     class UWBP_Ingame_Incubator_AllOpen_List_C* WBP_Ingame_Incubator_AllOpen_List_9;  // 0x04F0 (size: 0x8)
     class UWBP_Ingame_Incubator_PalInfo_C* WBP_Ingame_Incubator_PalInfo;              // 0x04F8 (size: 0x8)
     TArray<FPalInstanceID> Hatched IDs;                                               // 0x0500 (size: 0x10)
-    TArray<class UWBP_Ingame_Incubator_AllOpen_List_C*> HatchedList;                  // 0x0510 (size: 0x10)
+    TArray<UWBP_Ingame_Incubator_AllOpen_List_C*> HatchedList;                        // 0x0510 (size: 0x10)
     FPalUIActionBindData ViewDetailAction;                                            // 0x0520 (size: 0x4)
     class UPalIndividualCharacterHandle* LastHoveredHandle;                           // 0x0528 (size: 0x8)
     bool Closing;                                                                     // 0x0530 (size: 0x1)

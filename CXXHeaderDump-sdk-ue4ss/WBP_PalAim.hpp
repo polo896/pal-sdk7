@@ -18,10 +18,10 @@ class UWBP_PalAim_C : public UPalUIAimReticleWindowBase
     double nowScale;                                                                  // 0x04B8 (size: 0x8)
     bool isThrowPalMode;                                                              // 0x04C0 (size: 0x1)
     class APalCharacter* CurrentCampLiftingPal;                                       // 0x04C8 (size: 0x8)
-    TMap<class FPalDataTableRowName_ItemData, class TSubclassOf<UPalUIAimReticleBase>> FixedItemIDReticleClassMap; // 0x04D0 (size: 0x50)
-    TMap<class EPalItemTypeB, class TSubclassOf<UPalUIAimReticleBase>> ItemTypeBReticleClassMap; // 0x0520 (size: 0x50)
-    TMap<class EPalItemTypeA, class TSubclassOf<UPalUIAimReticleBase>> ItemTypeAReticleClassMap; // 0x0570 (size: 0x50)
-    TMap<class TSubclassOf<UPalUIAimReticleBase>, class UPalUIAimReticleBase*> AdditionalReticleWidgetMap; // 0x05C0 (size: 0x50)
+    TMap<FPalDataTableRowName_ItemData, TSubclassOf<class UPalUIAimReticleBase>> FixedItemIDReticleClassMap; // 0x04D0 (size: 0x50)
+    TMap<EPalItemTypeB, TSubclassOf<class UPalUIAimReticleBase>> ItemTypeBReticleClassMap; // 0x0520 (size: 0x50)
+    TMap<EPalItemTypeA, TSubclassOf<class UPalUIAimReticleBase>> ItemTypeAReticleClassMap; // 0x0570 (size: 0x50)
+    TMap<TSubclassOf<class UPalUIAimReticleBase>, UPalUIAimReticleBase*> AdditionalReticleWidgetMap; // 0x05C0 (size: 0x50)
     class UPalUIAimReticleBase* CurrentAdditionalWidget;                              // 0x0610 (size: 0x8)
 
     void ActivateAdditionalWidget(FPalItemId WeaponItemId, bool& bActivated);

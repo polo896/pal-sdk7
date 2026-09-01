@@ -20,7 +20,7 @@ struct FInAppPurchaseProductInfo2
     FString DecimalSeparator;                                                         // 0x0078 (size: 0x10)
     FString GroupingSeparator;                                                        // 0x0088 (size: 0x10)
     FString ReceiptData;                                                              // 0x0098 (size: 0x10)
-    TMap<class FString, class FString> DynamicFields;                                 // 0x00A8 (size: 0x50)
+    TMap<FString, FString> DynamicFields;                                             // 0x00A8 (size: 0x50)
 
 }; // Size: 0xF8
 
@@ -61,7 +61,7 @@ struct FOnlineProxyStoreOffer
     FDateTime ReleaseDate;                                                            // 0x00A8 (size: 0x8)
     FDateTime ExpirationDate;                                                         // 0x00B0 (size: 0x8)
     EOnlineProxyStoreOfferDiscountType DiscountType;                                  // 0x00B8 (size: 0x1)
-    TMap<class FString, class FString> DynamicFields;                                 // 0x00C0 (size: 0x50)
+    TMap<FString, FString> DynamicFields;                                             // 0x00C0 (size: 0x50)
 
 }; // Size: 0x110
 
@@ -129,7 +129,7 @@ class AOnlineBeaconHost : public AOnlineBeacon
     int32 ListenPort;                                                                 // 0x02C0 (size: 0x4)
     bool bAuthRequired;                                                               // 0x02C4 (size: 0x1)
     uint32 MaxAuthTokenSize;                                                          // 0x02C8 (size: 0x4)
-    TArray<class AOnlineBeaconClient*> ClientActors;                                  // 0x0320 (size: 0x10)
+    TArray<AOnlineBeaconClient*> ClientActors;                                        // 0x0320 (size: 0x10)
 
 }; // Size: 0x3D0
 
@@ -137,7 +137,7 @@ class AOnlineBeaconHostObject : public AActor
 {
     FString BeaconTypeName;                                                           // 0x0290 (size: 0x10)
     TSubclassOf<class AOnlineBeaconClient> ClientBeaconActorClass;                    // 0x02A0 (size: 0x8)
-    TArray<class AOnlineBeaconClient*> ClientActors;                                  // 0x02A8 (size: 0x10)
+    TArray<AOnlineBeaconClient*> ClientActors;                                        // 0x02A8 (size: 0x10)
 
 }; // Size: 0x2B8
 
@@ -408,7 +408,7 @@ class ULogoutCallbackProxy : public UBlueprintAsyncActionBase
 
 class UOnlineEngineInterfaceImpl : public UOnlineEngineInterface
 {
-    TMap<class FName, class FName> MappedUniqueNetIdTypes;                            // 0x0028 (size: 0x50)
+    TMap<FName, FName> MappedUniqueNetIdTypes;                                        // 0x0028 (size: 0x50)
     TArray<FName> CompatibleUniqueNetIdTypes;                                         // 0x0078 (size: 0x10)
     FName VoiceSubsystemNameOverride;                                                 // 0x0088 (size: 0x8)
 

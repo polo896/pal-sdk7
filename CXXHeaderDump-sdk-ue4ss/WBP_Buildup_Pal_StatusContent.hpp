@@ -19,7 +19,7 @@ class UWBP_Buildup_Pal_StatusContent_C : public UUserWidget
     class UBP_PalTextBlock_C* Text_StatusNumBefore;                                   // 0x02E0 (size: 0x8)
     class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Minus;                    // 0x02E8 (size: 0x8)
     class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Plus;                     // 0x02F0 (size: 0x8)
-    TArray<class UWBP_Buildup_Gauge_C*> BuildupGauges;                                // 0x02F8 (size: 0x10)
+    TArray<UWBP_Buildup_Gauge_C*> BuildupGauges;                                      // 0x02F8 (size: 0x10)
     EPalCharacterStatusOperationName Status;                                          // 0x0308 (size: 0x1)
     bool Clickable;                                                                   // 0x0309 (size: 0x1)
     FWBP_Buildup_Pal_StatusContent_COnClicked OnClicked;                              // 0x0310 (size: 0x10)

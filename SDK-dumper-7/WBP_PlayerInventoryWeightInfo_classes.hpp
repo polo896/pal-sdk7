@@ -33,19 +33,19 @@ public:
 	float                                         CachedInventoryWeightRate;                         // 0x02B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_ForceFull();
-	void AnmEvent_ForceNormal();
-	void AnmEvent_FullToNormal();
-	void AnmEvent_NormalToFull();
-	void Construct();
-	void CREATEDELEGATE_PROXYFUNCTION_0(float ChangedWeight);
-	void Destruct();
-	void ExecuteUbergraph_WBP_PlayerInventoryWeightInfo(int32 EntryPoint);
-	void OnUpdateCurrentWeightBuff(double ChangedCurrentWeight);
-	void OnUpdateMaxWeight(float MaxWeight);
-	void OnUpdateMaxWeightBuff();
-	void OnUpdateWeight(float NowWeight);
 	void UpdateWeight_Internal(double NowWeight, double MaxWeight, bool ForceSkipAnim);
+	void OnUpdateWeight(float NowWeight);
+	void OnUpdateMaxWeightBuff();
+	void OnUpdateMaxWeight(float MaxWeight);
+	void OnUpdateCurrentWeightBuff(double ChangedCurrentWeight);
+	void ExecuteUbergraph_WBP_PlayerInventoryWeightInfo(int32 EntryPoint);
+	void Destruct();
+	void CREATEDELEGATE_PROXYFUNCTION_0(float ChangedWeight);
+	void Construct();
+	void AnmEvent_NormalToFull();
+	void AnmEvent_FullToNormal();
+	void AnmEvent_ForceNormal();
+	void AnmEvent_ForceFull();
 
 public:
 	static class UClass* StaticClass()

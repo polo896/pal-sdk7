@@ -17,35 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_Research_AllBuff.WBP_Research_AllBuff_C.BndEvt__WBP_Research_AllBuff_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Research_AllBuff_C::BndEvt__WBP_Research_AllBuff_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Research_AllBuff_C", "BndEvt__WBP_Research_AllBuff_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Research_AllBuff.WBP_Research_AllBuff_C.ExecuteUbergraph_WBP_Research_AllBuff
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_Research_AllBuff.WBP_Research_AllBuff_C.Setup
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const TArray<struct FPalUIGuildLabPassiveEffectInfo>&Effects                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_Research_AllBuff_C::ExecuteUbergraph_WBP_Research_AllBuff(int32 EntryPoint)
+void UWBP_Research_AllBuff_C::Setup(const TArray<struct FPalUIGuildLabPassiveEffectInfo>& Effects)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Research_AllBuff_C", "ExecuteUbergraph_WBP_Research_AllBuff");
+		Func = Class->GetFunction("WBP_Research_AllBuff_C", "Setup");
 
-	Params::WBP_Research_AllBuff_C_ExecuteUbergraph_WBP_Research_AllBuff Parms{};
+	Params::WBP_Research_AllBuff_C_Setup Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Effects = std::move(Effects);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -76,23 +62,37 @@ struct FEventReply UWBP_Research_AllBuff_C::OnAnalogValueChanged(const struct FG
 }
 
 
-// Function WBP_Research_AllBuff.WBP_Research_AllBuff_C.Setup
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_Research_AllBuff.WBP_Research_AllBuff_C.ExecuteUbergraph_WBP_Research_AllBuff
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const TArray<struct FPalUIGuildLabPassiveEffectInfo>&Effects                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Research_AllBuff_C::Setup(const TArray<struct FPalUIGuildLabPassiveEffectInfo>& Effects)
+void UWBP_Research_AllBuff_C::ExecuteUbergraph_WBP_Research_AllBuff(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Research_AllBuff_C", "Setup");
+		Func = Class->GetFunction("WBP_Research_AllBuff_C", "ExecuteUbergraph_WBP_Research_AllBuff");
 
-	Params::WBP_Research_AllBuff_C_Setup Parms{};
+	Params::WBP_Research_AllBuff_C_ExecuteUbergraph_WBP_Research_AllBuff Parms{};
 
-	Parms.Effects = std::move(Effects);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Research_AllBuff.WBP_Research_AllBuff_C.BndEvt__WBP_Research_AllBuff_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Research_AllBuff_C::BndEvt__WBP_Research_AllBuff_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Research_AllBuff_C", "BndEvt__WBP_Research_AllBuff_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

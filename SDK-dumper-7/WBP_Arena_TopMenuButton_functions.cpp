@@ -17,61 +17,107 @@
 namespace SDK
 {
 
-// Function WBP_Arena_TopMenuButton.WBP_Arena_TopMenuButton_C.AnmEvent_Focus
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Arena_TopMenuButton.WBP_Arena_TopMenuButton_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_TopMenuButton_C::AnmEvent_Focus()
+void UWBP_Arena_TopMenuButton_C::Setup(int32 Type)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenuButton_C", "AnmEvent_Focus");
+		Func = Class->GetFunction("WBP_Arena_TopMenuButton_C", "Setup");
+
+	Params::WBP_Arena_TopMenuButton_C_Setup Parms{};
+
+	Parms.Type = Type;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_TopMenuButton.WBP_Arena_TopMenuButton_C.SetLock
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsLock                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_TopMenuButton_C::SetLock(bool IsLock)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_TopMenuButton_C", "SetLock");
+
+	Params::WBP_Arena_TopMenuButton_C_SetLock Parms{};
+
+	Parms.IsLock = IsLock;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_TopMenuButton.WBP_Arena_TopMenuButton_C.Finished_F552AADE467C2B4C78B4C5AEAA55800C
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Arena_TopMenuButton_C::Finished_F552AADE467C2B4C78B4C5AEAA55800C()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_TopMenuButton_C", "Finished_F552AADE467C2B4C78B4C5AEAA55800C");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Arena_TopMenuButton.WBP_Arena_TopMenuButton_C.AnmEvent_Normal
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Arena_TopMenuButton.WBP_Arena_TopMenuButton_C.ExecuteUbergraph_WBP_Arena_TopMenuButton
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_TopMenuButton_C::AnmEvent_Normal()
+void UWBP_Arena_TopMenuButton_C::ExecuteUbergraph_WBP_Arena_TopMenuButton(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenuButton_C", "AnmEvent_Normal");
+		Func = Class->GetFunction("WBP_Arena_TopMenuButton_C", "ExecuteUbergraph_WBP_Arena_TopMenuButton");
+
+	Params::WBP_Arena_TopMenuButton_C_ExecuteUbergraph_WBP_Arena_TopMenuButton Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_TopMenuButton.WBP_Arena_TopMenuButton_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Arena_TopMenuButton_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_TopMenuButton_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Arena_TopMenuButton.WBP_Arena_TopMenuButton_C.AnmEvent_NormalImmediate
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_TopMenuButton_C::AnmEvent_NormalImmediate()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenuButton_C", "AnmEvent_NormalImmediate");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_TopMenuButton.WBP_Arena_TopMenuButton_C.BndEvt__WBP_Arena_TopMenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_Arena_TopMenuButton.WBP_Arena_TopMenuButton_C.BndEvt__WBP_Arena_TopMenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_TopMenuButton_C::BndEvt__WBP_Arena_TopMenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Arena_TopMenuButton_C::BndEvt__WBP_Arena_TopMenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenuButton_C", "BndEvt__WBP_Arena_TopMenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Arena_TopMenuButton_C", "BndEvt__WBP_Arena_TopMenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_Arena_TopMenuButton_C_BndEvt__WBP_Arena_TopMenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_Arena_TopMenuButton_C_BndEvt__WBP_Arena_TopMenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -99,19 +145,19 @@ void UWBP_Arena_TopMenuButton_C::BndEvt__WBP_Arena_TopMenuButton_WBP_PalInvisibl
 }
 
 
-// Function WBP_Arena_TopMenuButton.WBP_Arena_TopMenuButton_C.BndEvt__WBP_Arena_TopMenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_Arena_TopMenuButton.WBP_Arena_TopMenuButton_C.BndEvt__WBP_Arena_TopMenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_TopMenuButton_C::BndEvt__WBP_Arena_TopMenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Arena_TopMenuButton_C::BndEvt__WBP_Arena_TopMenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenuButton_C", "BndEvt__WBP_Arena_TopMenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Arena_TopMenuButton_C", "BndEvt__WBP_Arena_TopMenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_Arena_TopMenuButton_C_BndEvt__WBP_Arena_TopMenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_Arena_TopMenuButton_C_BndEvt__WBP_Arena_TopMenuButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -119,91 +165,45 @@ void UWBP_Arena_TopMenuButton_C::BndEvt__WBP_Arena_TopMenuButton_WBP_PalInvisibl
 }
 
 
-// Function WBP_Arena_TopMenuButton.WBP_Arena_TopMenuButton_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Arena_TopMenuButton_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenuButton_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_TopMenuButton.WBP_Arena_TopMenuButton_C.ExecuteUbergraph_WBP_Arena_TopMenuButton
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Arena_TopMenuButton_C::ExecuteUbergraph_WBP_Arena_TopMenuButton(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenuButton_C", "ExecuteUbergraph_WBP_Arena_TopMenuButton");
-
-	Params::WBP_Arena_TopMenuButton_C_ExecuteUbergraph_WBP_Arena_TopMenuButton Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Arena_TopMenuButton.WBP_Arena_TopMenuButton_C.Finished_F552AADE467C2B4C78B4C5AEAA55800C
+// Function WBP_Arena_TopMenuButton.WBP_Arena_TopMenuButton_C.AnmEvent_NormalImmediate
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Arena_TopMenuButton_C::Finished_F552AADE467C2B4C78B4C5AEAA55800C()
+void UWBP_Arena_TopMenuButton_C::AnmEvent_NormalImmediate()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenuButton_C", "Finished_F552AADE467C2B4C78B4C5AEAA55800C");
+		Func = Class->GetFunction("WBP_Arena_TopMenuButton_C", "AnmEvent_NormalImmediate");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Arena_TopMenuButton.WBP_Arena_TopMenuButton_C.SetLock
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsLock                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Arena_TopMenuButton.WBP_Arena_TopMenuButton_C.AnmEvent_Normal
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Arena_TopMenuButton_C::SetLock(bool IsLock)
+void UWBP_Arena_TopMenuButton_C::AnmEvent_Normal()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenuButton_C", "SetLock");
+		Func = Class->GetFunction("WBP_Arena_TopMenuButton_C", "AnmEvent_Normal");
 
-	Params::WBP_Arena_TopMenuButton_C_SetLock Parms{};
-
-	Parms.IsLock = IsLock;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Arena_TopMenuButton.WBP_Arena_TopMenuButton_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Arena_TopMenuButton.WBP_Arena_TopMenuButton_C.AnmEvent_Focus
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Arena_TopMenuButton_C::Setup(int32 Type)
+void UWBP_Arena_TopMenuButton_C::AnmEvent_Focus()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenuButton_C", "Setup");
+		Func = Class->GetFunction("WBP_Arena_TopMenuButton_C", "AnmEvent_Focus");
 
-	Params::WBP_Arena_TopMenuButton_C_Setup Parms{};
-
-	Parms.Type = Type;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

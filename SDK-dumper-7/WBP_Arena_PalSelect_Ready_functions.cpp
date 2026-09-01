@@ -17,21 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_Arena_PalSelect_Ready.WBP_Arena_PalSelect_Ready_C.ExecuteUbergraph_WBP_Arena_PalSelect_Ready
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_Arena_PalSelect_Ready.WBP_Arena_PalSelect_Ready_C.SetPalCount
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Current                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Max                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_PalSelect_Ready_C::ExecuteUbergraph_WBP_Arena_PalSelect_Ready(int32 EntryPoint)
+void UWBP_Arena_PalSelect_Ready_C::SetPalCount(int32 Current, int32 Max)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_Ready_C", "ExecuteUbergraph_WBP_Arena_PalSelect_Ready");
+		Func = Class->GetFunction("WBP_Arena_PalSelect_Ready_C", "SetPalCount");
 
-	Params::WBP_Arena_PalSelect_Ready_C_ExecuteUbergraph_WBP_Arena_PalSelect_Ready Parms{};
+	Params::WBP_Arena_PalSelect_Ready_C_SetPalCount Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Current = Current;
+	Parms.Max = Max;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -51,23 +53,21 @@ void UWBP_Arena_PalSelect_Ready_C::Ready()
 }
 
 
-// Function WBP_Arena_PalSelect_Ready.WBP_Arena_PalSelect_Ready_C.SetPalCount
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Arena_PalSelect_Ready.WBP_Arena_PalSelect_Ready_C.ExecuteUbergraph_WBP_Arena_PalSelect_Ready
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// int32                                   Current                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Max                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_PalSelect_Ready_C::SetPalCount(int32 Current, int32 Max)
+void UWBP_Arena_PalSelect_Ready_C::ExecuteUbergraph_WBP_Arena_PalSelect_Ready(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalSelect_Ready_C", "SetPalCount");
+		Func = Class->GetFunction("WBP_Arena_PalSelect_Ready_C", "ExecuteUbergraph_WBP_Arena_PalSelect_Ready");
 
-	Params::WBP_Arena_PalSelect_Ready_C_SetPalCount Parms{};
+	Params::WBP_Arena_PalSelect_Ready_C_ExecuteUbergraph_WBP_Arena_PalSelect_Ready Parms{};
 
-	Parms.Current = Current;
-	Parms.Max = Max;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -17,7 +17,7 @@ class UWBP_MainMenu_Technology_List_C : public UUserWidget
     void OnUnhoveredTechnology(class UWBP_MainMenu_Technology_Content_C* Widget);
     int32 CachedPlayerLevel;                                                          // 0x02D8 (size: 0x4)
     int32 CachedTechnologyLevel;                                                      // 0x02DC (size: 0x4)
-    TArray<class UWBP_MainMenu_Technology_Content_C*> TechnologyContents;             // 0x02E0 (size: 0x10)
+    TArray<UWBP_MainMenu_Technology_Content_C*> TechnologyContents;                   // 0x02E0 (size: 0x10)
     class UWBP_MainMenu_Technology_Content_C* BossTech;                               // 0x02F0 (size: 0x8)
 
     void UpdateAllButtonDetail();

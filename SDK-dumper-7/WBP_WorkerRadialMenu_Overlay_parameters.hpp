@@ -17,13 +17,31 @@
 namespace SDK::Params
 {
 
+// Function WBP_WorkerRadialMenu_Overlay.WBP_WorkerRadialMenu_Overlay_C.OnSelectedEvent
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_WorkerRadialMenu_Overlay_C_OnSelectedEvent final
+{
+public:
+	EPalWorkerRadialMenuResult                    Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WorkerRadialMenu_Overlay_C_OnSelectedEvent;
+
+// Function WBP_WorkerRadialMenu_Overlay.WBP_WorkerRadialMenu_Overlay_C.OnAnyUIPushed
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_WorkerRadialMenu_Overlay_C_OnAnyUIPushed final
+{
+public:
+	struct FGuid                                  pushedWidgetID;                                    // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WorkerRadialMenu_Overlay_C_OnAnyUIPushed;
+
 // Function WBP_WorkerRadialMenu_Overlay.WBP_WorkerRadialMenu_Overlay_C.ExecuteUbergraph_WBP_WorkerRadialMenu_Overlay
 // 0x0110 (0x0110 - 0x0000)
 struct WBP_WorkerRadialMenu_Overlay_C_ExecuteUbergraph_WBP_WorkerRadialMenu_Overlay final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalWorkerRadialMenuResult                    K2Node_CustomEvent_Result;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalWorkerRadialMenuResult                    K2Node_CustomEvent_result;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UPalHUDDispatchParameter_WorkerRadialMenu* K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_Worker_Radial_Menu; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -62,24 +80,6 @@ public:
 	bool                                          CallFunc_IsDead_ReturnValue;                       // 0x0109(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_WorkerRadialMenu_Overlay_C_ExecuteUbergraph_WBP_WorkerRadialMenu_Overlay;
-
-// Function WBP_WorkerRadialMenu_Overlay.WBP_WorkerRadialMenu_Overlay_C.OnAnyUIPushed
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_WorkerRadialMenu_Overlay_C_OnAnyUIPushed final
-{
-public:
-	struct FGuid                                  pushedWidgetID;                                    // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WorkerRadialMenu_Overlay_C_OnAnyUIPushed;
-
-// Function WBP_WorkerRadialMenu_Overlay.WBP_WorkerRadialMenu_Overlay_C.OnSelectedEvent
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_WorkerRadialMenu_Overlay_C_OnSelectedEvent final
-{
-public:
-	EPalWorkerRadialMenuResult                    Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WorkerRadialMenu_Overlay_C_OnSelectedEvent;
 
 }
 

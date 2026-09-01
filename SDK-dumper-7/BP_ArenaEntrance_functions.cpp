@@ -17,6 +17,76 @@
 namespace SDK
 {
 
+// Function BP_ArenaEntrance.BP_ArenaEntrance_C.カスタムイベント
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Other                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// EPalInteractiveObjectIndicatorType      IndicatorType                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ArenaEntrance_C::カスタムイベント(class AActor* Other, EPalInteractiveObjectIndicatorType IndicatorType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ArenaEntrance_C", "カスタムイベント");
+
+	Params::BP_ArenaEntrance_C_カスタムイベント Parms{};
+
+	Parms.Other = Other;
+	Parms.IndicatorType = IndicatorType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ArenaEntrance.BP_ArenaEntrance_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_ArenaEntrance_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ArenaEntrance_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ArenaEntrance.BP_ArenaEntrance_C.OpenArenaGuide
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_ArenaEntrance_C::OpenArenaGuide()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ArenaEntrance_C", "OpenArenaGuide");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ArenaEntrance.BP_ArenaEntrance_C.ExecuteUbergraph_BP_ArenaEntrance
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ArenaEntrance_C::ExecuteUbergraph_BP_ArenaEntrance(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ArenaEntrance_C", "ExecuteUbergraph_BP_ArenaEntrance");
+
+	Params::BP_ArenaEntrance_C_ExecuteUbergraph_BP_ArenaEntrance Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_ArenaEntrance.BP_ArenaEntrance_C.BndEvt__BP_ArenaEntrance_EntryCancel_Trigger_K2Node_ComponentBoundEvent_0_ComponentEndOverlapSignature__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -43,73 +113,23 @@ void ABP_ArenaEntrance_C::BndEvt__BP_ArenaEntrance_EntryCancel_Trigger_K2Node_Co
 }
 
 
-// Function BP_ArenaEntrance.BP_ArenaEntrance_C.ExecuteUbergraph_BP_ArenaEntrance
-// (Final, UbergraphFunction)
+// Function BP_ArenaEntrance.BP_ArenaEntrance_C.GetWarpPoint
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FTransform                       ReturnValue                                            (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ArenaEntrance_C::ExecuteUbergraph_BP_ArenaEntrance(int32 EntryPoint)
+struct FTransform ABP_ArenaEntrance_C::GetWarpPoint() const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ArenaEntrance_C", "ExecuteUbergraph_BP_ArenaEntrance");
+		Func = Class->GetFunction("BP_ArenaEntrance_C", "GetWarpPoint");
 
-	Params::BP_ArenaEntrance_C_ExecuteUbergraph_BP_ArenaEntrance Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Params::BP_ArenaEntrance_C_GetWarpPoint Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
-}
 
-
-// Function BP_ArenaEntrance.BP_ArenaEntrance_C.OpenArenaGuide
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_ArenaEntrance_C::OpenArenaGuide()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ArenaEntrance_C", "OpenArenaGuide");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ArenaEntrance.BP_ArenaEntrance_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_ArenaEntrance_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ArenaEntrance_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ArenaEntrance.BP_ArenaEntrance_C.カスタムイベント
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Other                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// EPalInteractiveObjectIndicatorType      IndicatorType                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ArenaEntrance_C::カスタムイベント(class AActor* Other, EPalInteractiveObjectIndicatorType IndicatorType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ArenaEntrance_C", "カスタムイベント");
-
-	Params::BP_ArenaEntrance_C_カスタムイベント Parms{};
-
-	Parms.Other = Other;
-	Parms.IndicatorType = IndicatorType;
-
-	UObject::ProcessEvent(Func, &Parms);
+	return Parms.ReturnValue;
 }
 
 
@@ -126,26 +146,6 @@ struct FTransform ABP_ArenaEntrance_C::GetItemDropPoint() const
 		Func = Class->GetFunction("BP_ArenaEntrance_C", "GetItemDropPoint");
 
 	Params::BP_ArenaEntrance_C_GetItemDropPoint Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function BP_ArenaEntrance.BP_ArenaEntrance_C.GetWarpPoint
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
-// Parameters:
-// struct FTransform                       ReturnValue                                            (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-struct FTransform ABP_ArenaEntrance_C::GetWarpPoint() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ArenaEntrance_C", "GetWarpPoint");
-
-	Params::BP_ArenaEntrance_C_GetWarpPoint Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 

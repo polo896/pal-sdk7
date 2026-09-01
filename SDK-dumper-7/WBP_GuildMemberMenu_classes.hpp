@@ -47,21 +47,21 @@ public:
 	TMap<class UWBP_GuildMemberMenuList_C*, bool> ValidPermissionMap;                                // 0x0378(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature(class UWBP_GuildMemberMenuList_C* Button);
-	void BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeGuest_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature(class UWBP_GuildMemberMenuList_C* Button);
-	void BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeMember_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature(class UWBP_GuildMemberMenuList_C* Button);
-	void BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeSubMaster_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature(class UWBP_GuildMemberMenuList_C* Button);
-	void BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature(class UWBP_GuildMemberMenuList_C* Button);
-	void CanBan(EPalGuildRole SelfRole, EPalGuildRole TargetRole, bool bHasPermission, bool* bCanChangeRole);
-	void CanChangeRoleInternal(EPalGuildRole SelfRole, EPalGuildRole TargetRole, EPalGuildRole ChangeRole, bool bHasPermission, bool* bCanChangeRole);
-	void Destruct();
-	void ExecuteUbergraph_WBP_GuildMemberMenu(int32 EntryPoint);
-	void GetTopFocusTarget(class UWidget** TargetWidget);
-	void isEnableButton(class UWBP_GuildMemberMenuList_C* Widget, bool* bIsEnable);
-	void OnInitialized();
-	void SetButtonEnableInternal(class UWBP_GuildMemberMenuList_C* ListWidget, bool bEnableButton);
-	void SetGuildPermission(EPalGuildRole SelfRole, EPalGuildRole TargetRole, bool bCanBan, bool bCanRoleAssignment);
 	void SetPlayerName(const class FString& DisplayName);
+	void SetGuildPermission(EPalGuildRole SelfRole, EPalGuildRole TargetRole, bool bCanBan, bool bCanRoleAssignment);
+	void SetButtonEnableInternal(class UWBP_GuildMemberMenuList_C* ListWidget, bool bEnableButton);
+	void OnInitialized();
+	void isEnableButton(class UWBP_GuildMemberMenuList_C* Widget, bool* bIsEnable);
+	void GetTopFocusTarget(class UWidget** TargetWidget);
+	void ExecuteUbergraph_WBP_GuildMemberMenu(int32 EntryPoint);
+	void Destruct();
+	void CanChangeRoleInternal(EPalGuildRole SelfRole, EPalGuildRole TargetRole, EPalGuildRole ChangeRole, bool bHasPermission, bool* bCanChangeRole);
+	void CanBan(EPalGuildRole SelfRole, EPalGuildRole TargetRole, bool bHasPermission, bool* bCanChangeRole);
+	void BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature(class UWBP_GuildMemberMenuList_C* Button);
+	void BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeSubMaster_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature(class UWBP_GuildMemberMenuList_C* Button);
+	void BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeMember_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature(class UWBP_GuildMemberMenuList_C* Button);
+	void BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeGuest_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature(class UWBP_GuildMemberMenuList_C* Button);
+	void BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature(class UWBP_GuildMemberMenuList_C* Button);
 
 public:
 	static class UClass* StaticClass()

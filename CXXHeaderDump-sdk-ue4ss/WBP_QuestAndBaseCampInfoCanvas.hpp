@@ -17,7 +17,7 @@ class UWBP_QuestAndBaseCampInfoCanvas_C : public UPalUIInsideBaseCampCanvas
     class UWBP_WorkerSimpleDetail_C* WBP_WorkerSimpleDetail;                          // 0x05F0 (size: 0x8)
     FTimerHandle tackCheckTimerHandle;                                                // 0x05F8 (size: 0x8)
     double TraceLength;                                                               // 0x0600 (size: 0x8)
-    TSoftObjectPtr<APalCharacter> NowDisplayInfoCharacter;                            // 0x0608 (size: 0x30)
+    TSoftObjectPtr<class APalCharacter> NowDisplayInfoCharacter;                      // 0x0608 (size: 0x30)
     FTimerHandle CollectWorkerDirectorModelTimer;                                     // 0x0638 (size: 0x8)
     FTimerHandle LoopCheckTimer;                                                      // 0x0640 (size: 0x8)
     FTimerHandle NewVar;                                                              // 0x0648 (size: 0x8)

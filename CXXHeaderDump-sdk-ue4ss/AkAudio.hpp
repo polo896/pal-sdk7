@@ -128,8 +128,8 @@ struct FAkGeometryData
     TArray<FVector> Vertices;                                                         // 0x0000 (size: 0x10)
     TArray<FAkAcousticSurface> Surfaces;                                              // 0x0010 (size: 0x10)
     TArray<FAkTriangle> Triangles;                                                    // 0x0020 (size: 0x10)
-    TArray<class UPhysicalMaterial*> ToOverrideAcousticTexture;                       // 0x0030 (size: 0x10)
-    TArray<class UPhysicalMaterial*> ToOverrideOcclusion;                             // 0x0040 (size: 0x10)
+    TArray<UPhysicalMaterial*> ToOverrideAcousticTexture;                             // 0x0030 (size: 0x10)
+    TArray<UPhysicalMaterial*> ToOverrideOcclusion;                                   // 0x0040 (size: 0x10)
 
 }; // Size: 0x50
 
@@ -144,7 +144,7 @@ struct FAkGeometrySurfaceOverride
 
 struct FAkGeometrySurfacePropertiesToMap
 {
-    TSoftObjectPtr<UAkAcousticTexture> AcousticTexture;                               // 0x0000 (size: 0x30)
+    TSoftObjectPtr<class UAkAcousticTexture> AcousticTexture;                         // 0x0000 (size: 0x30)
     float OcclusionValue;                                                             // 0x0030 (size: 0x4)
 
 }; // Size: 0x38
@@ -449,13 +449,13 @@ struct FMovieSceneTangentDataSerializationHelper
 struct FWwiseDecayAuxBusRow : public FTableRowBase
 {
     float Decay;                                                                      // 0x0008 (size: 0x4)
-    TSoftObjectPtr<UAkAuxBus> AuxBus;                                                 // 0x0010 (size: 0x30)
+    TSoftObjectPtr<class UAkAuxBus> AuxBus;                                           // 0x0010 (size: 0x30)
 
 }; // Size: 0x40
 
 struct FWwiseGeometrySurfacePropertiesRow : public FTableRowBase
 {
-    TSoftObjectPtr<UAkAcousticTexture> AcousticTexture;                               // 0x0008 (size: 0x30)
+    TSoftObjectPtr<class UAkAcousticTexture> AcousticTexture;                         // 0x0008 (size: 0x30)
     float TransmissionLoss;                                                           // 0x0038 (size: 0x4)
 
 }; // Size: 0x40
@@ -590,7 +590,7 @@ class UAkAudioInputComponent : public UAkComponent
 class UAkAudioType : public UObject
 {
     bool bAutoLoad;                                                                   // 0x0028 (size: 0x1)
-    TArray<class UObject*> UserData;                                                  // 0x0030 (size: 0x10)
+    TArray<UObject*> UserData;                                                        // 0x0030 (size: 0x10)
 
     void UnloadData(bool bAsync);
     void LoadData();
@@ -661,7 +661,7 @@ class UAkComponent : public UAkGameObject
     void SetSwitch(class UAkSwitchValue* SwitchValue, FString SwitchGroup, FString SwitchState);
     void SetStopWhenOwnerDestroyed(bool bStopWhenOwnerDestroyed);
     void SetOutputBusVolume(float BusVolume);
-    void SetListeners(const TArray<class UAkComponent*>& Listeners);
+    void SetListeners(const TArray<UAkComponent*>& Listeners);
     void SetGameObjectRadius(float in_outerRadius, float in_innerRadius);
     void SetEnableSpotReflectors(bool in_enable);
     void SetEarlyReflectionsVolume(float SendVolume);
@@ -782,7 +782,7 @@ class UAkGameplayStatics : public UBlueprintFunctionLibrary
     void ClearSoundBanksAndMedia();
     void CancelEventCallback(const FCancelEventCallbackPostEventCallback& PostEventCallback);
     void AddOutputCaptureMarker(FString MarkerText);
-    void AddOutput(const FAkOutputSettings& in_Settings, FAkOutputDeviceID& out_DeviceID, TArray<class UAkComponent*>& in_ListenerIDs);
+    void AddOutput(const FAkOutputSettings& in_Settings, FAkOutputDeviceID& out_DeviceID, TArray<UAkComponent*>& in_ListenerIDs);
 }; // Size: 0x28
 
 class UAkGeometryComponent : public UAkAcousticTextureSetComponent
@@ -790,7 +790,7 @@ class UAkGeometryComponent : public UAkAcousticTextureSetComponent
     AkMeshType MeshType;                                                              // 0x02B8 (size: 0x1)
     int32 LOD;                                                                        // 0x02BC (size: 0x4)
     float WeldingThreshold;                                                           // 0x02C0 (size: 0x4)
-    TMap<class UMaterialInterface*, class FAkGeometrySurfaceOverride> StaticMeshSurfaceOverride; // 0x02C8 (size: 0x50)
+    TMap<UMaterialInterface*, FAkGeometrySurfaceOverride> StaticMeshSurfaceOverride;  // 0x02C8 (size: 0x50)
     FAkGeometrySurfaceOverride CollisionMeshSurfaceOverride;                          // 0x0318 (size: 0x18)
     bool bEnableDiffraction;                                                          // 0x0330 (size: 0x1)
     bool bEnableDiffractionOnBoundaryEdges;                                           // 0x0331 (size: 0x1)
@@ -955,7 +955,7 @@ class UAkMarkerCallbackInfo : public UAkEventCallbackInfo
 
 class UAkMediaAsset : public UObject
 {
-    TMap<class FString, class UAkMediaAssetData*> MediaAssetDataPerPlatform;          // 0x0028 (size: 0x50)
+    TMap<FString, UAkMediaAssetData*> MediaAssetDataPerPlatform;                      // 0x0028 (size: 0x50)
 
 }; // Size: 0x78
 
@@ -1054,29 +1054,29 @@ class UAkSettings : public UObject
     bool bAutoConnectToWAAPI;                                                         // 0x0083 (size: 0x1)
     TEnumAsByte<ECollisionChannel> DefaultOcclusionCollisionChannel;                  // 0x0084 (size: 0x1)
     TEnumAsByte<ECollisionChannel> DefaultFitToGeometryCollisionChannel;              // 0x0085 (size: 0x1)
-    TMap<class TSoftObjectPtr<UPhysicalMaterial>, class FAkGeometrySurfacePropertiesToMap> AkGeometryMap; // 0x0088 (size: 0x50)
-    TSoftObjectPtr<UAkAcousticTexture> DefaultAcousticTexture;                        // 0x00D8 (size: 0x30)
+    TMap<TSoftObjectPtr<class UPhysicalMaterial>, FAkGeometrySurfacePropertiesToMap> AkGeometryMap; // 0x0088 (size: 0x50)
+    TSoftObjectPtr<class UAkAcousticTexture> DefaultAcousticTexture;                  // 0x00D8 (size: 0x30)
     float DefaultTransmissionLoss;                                                    // 0x0108 (size: 0x4)
-    TSoftObjectPtr<UDataTable> GeometrySurfacePropertiesTable;                        // 0x0110 (size: 0x30)
+    TSoftObjectPtr<class UDataTable> GeometrySurfacePropertiesTable;                  // 0x0110 (size: 0x30)
     float GlobalDecayAbsorption;                                                      // 0x0140 (size: 0x4)
-    TSoftObjectPtr<UAkAuxBus> DefaultReverbAuxBus;                                    // 0x0148 (size: 0x30)
+    TSoftObjectPtr<class UAkAuxBus> DefaultReverbAuxBus;                              // 0x0148 (size: 0x30)
     TMap<float, TSoftObjectPtr<UAkAuxBus>> EnvironmentDecayAuxBusMap;                 // 0x0178 (size: 0x50)
-    TSoftObjectPtr<UDataTable> ReverbAssignmentTable;                                 // 0x01C8 (size: 0x30)
+    TSoftObjectPtr<class UDataTable> ReverbAssignmentTable;                           // 0x01C8 (size: 0x30)
     FString HFDampingName;                                                            // 0x01F8 (size: 0x10)
     FString DecayEstimateName;                                                        // 0x0208 (size: 0x10)
     FString TimeToFirstReflectionName;                                                // 0x0218 (size: 0x10)
-    TSoftObjectPtr<UAkRtpc> HFDampingRTPC;                                            // 0x0228 (size: 0x30)
-    TSoftObjectPtr<UAkRtpc> DecayEstimateRTPC;                                        // 0x0258 (size: 0x30)
-    TSoftObjectPtr<UAkRtpc> TimeToFirstReflectionRTPC;                                // 0x0288 (size: 0x30)
-    TSoftObjectPtr<UAkAudioEvent> AudioInputEvent;                                    // 0x02B8 (size: 0x30)
-    TMap<class FGuid, class FAkAcousticTextureParams> AcousticTextureParamsMap;       // 0x02E8 (size: 0x50)
+    TSoftObjectPtr<class UAkRtpc> HFDampingRTPC;                                      // 0x0228 (size: 0x30)
+    TSoftObjectPtr<class UAkRtpc> DecayEstimateRTPC;                                  // 0x0258 (size: 0x30)
+    TSoftObjectPtr<class UAkRtpc> TimeToFirstReflectionRTPC;                          // 0x0288 (size: 0x30)
+    TSoftObjectPtr<class UAkAudioEvent> AudioInputEvent;                              // 0x02B8 (size: 0x30)
+    TMap<FGuid, FAkAcousticTextureParams> AcousticTextureParamsMap;                   // 0x02E8 (size: 0x50)
     bool SplitSwitchContainerMedia;                                                   // 0x0338 (size: 0x1)
     bool SplitMediaPerFolder;                                                         // 0x0339 (size: 0x1)
     bool UseEventBasedPackaging;                                                      // 0x033A (size: 0x1)
     FString CommandletCommitMessage;                                                  // 0x0340 (size: 0x10)
-    TMap<class FString, class FString> UnrealCultureToWwiseCulture;                   // 0x0350 (size: 0x50)
+    TMap<FString, FString> UnrealCultureToWwiseCulture;                               // 0x0350 (size: 0x50)
     FString DefaultAssetCreationPath;                                                 // 0x03A0 (size: 0x10)
-    TSoftObjectPtr<UAkInitBank> InitBank;                                             // 0x03B0 (size: 0x30)
+    TSoftObjectPtr<class UAkInitBank> InitBank;                                       // 0x03B0 (size: 0x30)
     EAkUnrealAudioRouting AudioRouting;                                               // 0x03E0 (size: 0x4)
     bool bWwiseSoundEngineEnabled;                                                    // 0x03E4 (size: 0x1)
     bool bWwiseAudioLinkEnabled;                                                      // 0x03E5 (size: 0x1)
@@ -1378,7 +1378,7 @@ class UMovieSceneAkAudioRTPCTrack : public UMovieSceneAkTrack
 
 class UMovieSceneAkTrack : public UMovieSceneTrack
 {
-    TArray<class UMovieSceneSection*> Sections;                                       // 0x0098 (size: 0x10)
+    TArray<UMovieSceneSection*> Sections;                                             // 0x0098 (size: 0x10)
     bool bIsAMasterTrack;                                                             // 0x00A8 (size: 0x1)
 
 }; // Size: 0xB0

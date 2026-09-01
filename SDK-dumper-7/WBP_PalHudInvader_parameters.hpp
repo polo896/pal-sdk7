@@ -17,6 +17,33 @@
 namespace SDK::Params
 {
 
+// Function WBP_PalHudInvader.WBP_PalHudInvader_C.ParentDestroyEvent
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalHudInvader_C_ParentDestroyEvent final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalHudInvader_C_ParentDestroyEvent;
+
+// Function WBP_PalHudInvader.WBP_PalHudInvader_C.ParentDeadEvent
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_PalHudInvader_C_ParentDeadEvent final
+{
+public:
+	struct FPalDeadInfo                           DeadInfo;                                          // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_PalHudInvader_C_ParentDeadEvent;
+
+// Function WBP_PalHudInvader.WBP_PalHudInvader_C.OnInvadeEnd
+// 0x0100 (0x0100 - 0x0000)
+struct WBP_PalHudInvader_C_OnInvadeEnd final
+{
+public:
+	struct FPalIncidentBroadcastParameter         Parameter;                                         // 0x0000(0x0100)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_PalHudInvader_C_OnInvadeEnd;
+
 // Function WBP_PalHudInvader.WBP_PalHudInvader_C.ExecuteUbergraph_WBP_PalHudInvader
 // 0x0200 (0x0200 - 0x0000)
 struct WBP_PalHudInvader_C_ExecuteUbergraph_WBP_PalHudInvader final
@@ -53,33 +80,6 @@ public:
 	TDelegate<void(class AActor* DestroyedActor)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x01EC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_PalHudInvader_C_ExecuteUbergraph_WBP_PalHudInvader;
-
-// Function WBP_PalHudInvader.WBP_PalHudInvader_C.OnInvadeEnd
-// 0x0100 (0x0100 - 0x0000)
-struct WBP_PalHudInvader_C_OnInvadeEnd final
-{
-public:
-	struct FPalIncidentBroadcastParameter         Parameter;                                         // 0x0000(0x0100)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_PalHudInvader_C_OnInvadeEnd;
-
-// Function WBP_PalHudInvader.WBP_PalHudInvader_C.ParentDeadEvent
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_PalHudInvader_C_ParentDeadEvent final
-{
-public:
-	struct FPalDeadInfo                           DeadInfo;                                          // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_PalHudInvader_C_ParentDeadEvent;
-
-// Function WBP_PalHudInvader.WBP_PalHudInvader_C.ParentDestroyEvent
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalHudInvader_C_ParentDestroyEvent final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalHudInvader_C_ParentDestroyEvent;
 
 }
 

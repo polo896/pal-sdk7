@@ -34,21 +34,21 @@ public:
 	struct FPalDataTableRowName_UIInputAction     PrevTabAction;                                     // 0x04B8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_Quest_ForDisplay_WBP_Quest_K2Node_ComponentBoundEvent_0_OnClickedQuestButton__DelegateSignature(class UWBP_Quest_ListButton_C* QuestWidget);
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_Quest_ForDisplay(int32 EntryPoint);
-	void GetTopMainQuest(TArray<class UPalQuestData*>& QuestDataArray, class UPalQuestData** DisplayQuest);
-	void On_Input_Action_Quest_Tracking();
-	void OnInputAction_NextTab();
-	void OnInputAction_PrevTab();
-	void OnInputAction_ShowMap();
-	void OnUpdateTrackingQuestId(const class FName& QuestId);
-	void RegisterQuestShowMap();
-	void RegisterQuestTrackingAction();
-	void Setup(class FName DisplayQuestId);
-	void UnregisterQuestTracingAction();
 	void UnregisterShowMapAction();
+	void UnregisterQuestTracingAction();
+	void Setup(class FName DisplayQuestId);
+	void RegisterQuestTrackingAction();
+	void RegisterQuestShowMap();
+	void OnUpdateTrackingQuestId(const class FName& QuestId);
+	void OnInputAction_ShowMap();
+	void OnInputAction_PrevTab();
+	void OnInputAction_NextTab();
+	void On_Input_Action_Quest_Tracking();
+	void GetTopMainQuest(TArray<class UPalQuestData*>& QuestDataArray, class UPalQuestData** DisplayQuest);
+	void ExecuteUbergraph_WBP_Quest_ForDisplay(int32 EntryPoint);
+	void Destruct();
+	void Construct();
+	void BndEvt__WBP_Quest_ForDisplay_WBP_Quest_K2Node_ComponentBoundEvent_0_OnClickedQuestButton__DelegateSignature(class UWBP_Quest_ListButton_C* QuestWidget);
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

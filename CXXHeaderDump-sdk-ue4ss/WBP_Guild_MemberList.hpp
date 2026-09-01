@@ -18,7 +18,7 @@ class UWBP_Guild_MemberList_C : public UUserWidget
     FWBP_Guild_MemberList_COnHovered OnHovered;                                       // 0x0310 (size: 0x10)
     void OnHovered(class UWBP_Guild_MemberList_C* Widget);
     FGuid Player UId;                                                                 // 0x0320 (size: 0x10)
-    TMap<class EPalGuildRole, class FDataTableRowHandle> RoleNameMsgIDMap;            // 0x0330 (size: 0x50)
+    TMap<EPalGuildRole, FDataTableRowHandle> RoleNameMsgIDMap;                        // 0x0330 (size: 0x50)
 
     void SetRole(EPalGuildRole Role);
     void GetFocusTarget(class UWidget*& TargetWidget);

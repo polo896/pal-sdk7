@@ -42,9 +42,9 @@ public:
 	double                                        RigidBodyBlendWeight;                              // 0x1090(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph_0);
-	void ExecuteUbergraph_ABP_FishingRod001(int32 EntryPoint);
 	void SetDisableRigidBodyBlend(bool isDisable);
+	void ExecuteUbergraph_ABP_FishingRod001(int32 EntryPoint);
+	void AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph_0);
 
 public:
 	static class UClass* StaticClass()

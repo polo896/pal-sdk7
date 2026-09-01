@@ -260,7 +260,7 @@ struct FSourceEffectMotionFilterSettings
     float MotionFilterMix;                                                            // 0x0004 (size: 0x4)
     FSourceEffectIndividualFilterSettings FilterASettings;                            // 0x0008 (size: 0xC)
     FSourceEffectIndividualFilterSettings FilterBSettings;                            // 0x0014 (size: 0xC)
-    TMap<class ESourceEffectMotionFilterModDestination, class FSourceEffectMotionFilterModulationSettings> ModulationMappings; // 0x0020 (size: 0x50)
+    TMap<ESourceEffectMotionFilterModDestination, FSourceEffectMotionFilterModulationSettings> ModulationMappings; // 0x0020 (size: 0x50)
     float DryVolumeDb;                                                                // 0x0070 (size: 0x4)
 
 }; // Size: 0x78

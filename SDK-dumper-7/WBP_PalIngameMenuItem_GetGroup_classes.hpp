@@ -40,13 +40,13 @@ public:
 	struct FTimerHandle                           TimerHandle_OutAnm;                                // 0x02E8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_In();
-	void AnmEvent_Out();
-	void Construct();
-	void ExecuteUbergraph_WBP_PalIngameMenuItem_GetGroup(int32 EntryPoint);
-	void OnTimerEvent_Out();
-	void QueRewardData(const struct FPalUICommonItemRewardData& RewardData);
 	void TryPopRewardData();
+	void QueRewardData(const struct FPalUICommonItemRewardData& RewardData);
+	void OnTimerEvent_Out();
+	void ExecuteUbergraph_WBP_PalIngameMenuItem_GetGroup(int32 EntryPoint);
+	void Construct();
+	void AnmEvent_Out();
+	void AnmEvent_In();
 
 public:
 	static class UClass* StaticClass()

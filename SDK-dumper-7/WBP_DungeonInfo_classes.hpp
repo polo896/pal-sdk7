@@ -35,21 +35,21 @@ public:
 	struct FGameDateTime                          DisappeatTimeAt;                                   // 0x04C8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_DungeonInfo(int32 EntryPoint);
-	void OnReadyInstanceModel(class UPalStageModelDungeon* StageModel);
-	void OnReadyStageModel(class APalDungeonEntrance* SelfEntrance);
-	void SetDungeonBossSpawned(class UPalDungeonInstanceModel* DungeonInstanceModel);
-	void SetDungeonDisappearTimeAt(class UPalDungeonInstanceModel* DungeonInstanceModel);
-	void SetDungeonLevel(class UPalDungeonInstanceModel* DungeonInstanceModel);
-	void SetDungeonName(class UPalDungeonInstanceModel* DungeonInstanceModel);
-	void Setup_by_Stage_Model(class UPalStageModelDungeon* InStageModel);
-	void SetupByDungeonEntrance(class APalDungeonEntrance* Entrance);
-	void SetupEvents(class UPalStageModelDungeon* StageModel);
-	void SetUseResetText();
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void UpdateDisplayInfo(class UPalDungeonInstanceModel* DungeonInstanceModel);
-	void UpdateDungeonDisappearRemainTime();
 	void UpdateDungeonInfoByTick();
+	void UpdateDungeonDisappearRemainTime();
+	void UpdateDisplayInfo(class UPalDungeonInstanceModel* DungeonInstanceModel);
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void SetUseResetText();
+	void SetupEvents(class UPalStageModelDungeon* StageModel);
+	void SetupByDungeonEntrance(class APalDungeonEntrance* Entrance);
+	void Setup_by_Stage_Model(class UPalStageModelDungeon* InStageModel);
+	void SetDungeonName(class UPalDungeonInstanceModel* DungeonInstanceModel);
+	void SetDungeonLevel(class UPalDungeonInstanceModel* DungeonInstanceModel);
+	void SetDungeonDisappearTimeAt(class UPalDungeonInstanceModel* DungeonInstanceModel);
+	void SetDungeonBossSpawned(class UPalDungeonInstanceModel* DungeonInstanceModel);
+	void OnReadyStageModel(class APalDungeonEntrance* SelfEntrance);
+	void OnReadyInstanceModel(class UPalStageModelDungeon* StageModel);
+	void ExecuteUbergraph_WBP_DungeonInfo(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

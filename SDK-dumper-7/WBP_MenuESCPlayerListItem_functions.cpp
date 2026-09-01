@@ -17,295 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.BlockPlayerUId
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.カスタムイベント
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FString&                    InPlayerUId                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// const class FString&                    InPlayerName                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MenuESCPlayerListItem_C::BlockPlayerUId(const class FString& InPlayerUId, const class FString& InPlayerName)
+void UWBP_MenuESCPlayerListItem_C::カスタムイベント(bool bResult)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "BlockPlayerUId");
+		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "カスタムイベント");
 
-	Params::WBP_MenuESCPlayerListItem_C_BlockPlayerUId Parms{};
+	Params::WBP_MenuESCPlayerListItem_C_カスタムイベント Parms{};
 
-	Parms.InPlayerUId = std::move(InPlayerUId);
-	Parms.InPlayerName = std::move(InPlayerName);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MenuESCPlayerListItem_C::BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_MenuESCPlayerListItem_C_BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MenuESCPlayerListItem_C::BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_MenuESCPlayerListItem_C_BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MenuESCPlayerListItem_C::BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_MenuESCPlayerListItem_C_BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.CopyPlayerUId
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FString&                    InPlayerUId                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// const class FString&                    InPlayerName                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void UWBP_MenuESCPlayerListItem_C::CopyPlayerUId(const class FString& InPlayerUId, const class FString& InPlayerName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "CopyPlayerUId");
-
-	Params::WBP_MenuESCPlayerListItem_C_CopyPlayerUId Parms{};
-
-	Parms.InPlayerUId = std::move(InPlayerUId);
-	Parms.InPlayerName = std::move(InPlayerName);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.CopyUserId
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FString&                    InUserId                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// const class FString&                    InPlayerName                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void UWBP_MenuESCPlayerListItem_C::CopyUserId(const class FString& InUserId, const class FString& InPlayerName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "CopyUserId");
-
-	Params::WBP_MenuESCPlayerListItem_C_CopyUserId Parms{};
-
-	Parms.InUserId = std::move(InUserId);
-	Parms.InPlayerName = std::move(InPlayerName);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.ExecuteUbergraph_WBP_MenuESCPlayerListItem
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MenuESCPlayerListItem_C::ExecuteUbergraph_WBP_MenuESCPlayerListItem(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "ExecuteUbergraph_WBP_MenuESCPlayerListItem");
-
-	Params::WBP_MenuESCPlayerListItem_C_ExecuteUbergraph_WBP_MenuESCPlayerListItem Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.GetDisplayInfo
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FPalUIGuildMemberDisplayInfo*    DisplayInfo                                            (Parm, OutParm)
-
-void UWBP_MenuESCPlayerListItem_C::GetDisplayInfo(struct FPalUIGuildMemberDisplayInfo* DisplayInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "GetDisplayInfo");
-
-	Params::WBP_MenuESCPlayerListItem_C_GetDisplayInfo Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (DisplayInfo != nullptr)
-		*DisplayInfo = std::move(Parms.DisplayInfo);
-}
-
-
-// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.GetFocusTarget
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWidget**                         TargetWidget                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MenuESCPlayerListItem_C::GetFocusTarget(class UWidget** TargetWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "GetFocusTarget");
-
-	Params::WBP_MenuESCPlayerListItem_C_GetFocusTarget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (TargetWidget != nullptr)
-		*TargetWidget = Parms.TargetWidget;
-}
-
-
-// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.MutePlayerUId
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FString&                    InPlayerUId                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// const class FString&                    InPlayerName                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void UWBP_MenuESCPlayerListItem_C::MutePlayerUId(const class FString& InPlayerUId, const class FString& InPlayerName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "MutePlayerUId");
-
-	Params::WBP_MenuESCPlayerListItem_C_MutePlayerUId Parms{};
-
-	Parms.InPlayerUId = std::move(InPlayerUId);
-	Parms.InPlayerName = std::move(InPlayerName);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.On Right Clicked Internal
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_MenuESCPlayerListItem_C::On_Right_Clicked_Internal()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "On Right Clicked Internal");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.OnKeyDown
-// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// const struct FKeyEvent&                 InKeyEvent                                             (BlueprintVisible, BlueprintReadOnly, Parm)
-// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-struct FEventReply UWBP_MenuESCPlayerListItem_C::OnKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "OnKeyDown");
-
-	Params::WBP_MenuESCPlayerListItem_C_OnKeyDown Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InKeyEvent = std::move(InKeyEvent);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.OnMouseButtonDown
-// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// const struct FPointerEvent&             MouseEvent                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-struct FEventReply UWBP_MenuESCPlayerListItem_C::OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "OnMouseButtonDown");
-
-	Params::WBP_MenuESCPlayerListItem_C_OnMouseButtonDown Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.MouseEvent = std::move(MouseEvent);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.SetPlayerName
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FString&                    PlayerName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void UWBP_MenuESCPlayerListItem_C::SetPlayerName(const class FString& PlayerName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "SetPlayerName");
-
-	Params::WBP_MenuESCPlayerListItem_C_SetPlayerName Parms{};
-
-	Parms.PlayerName = std::move(PlayerName);
+	Parms.bResult = bResult;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -341,21 +67,295 @@ void UWBP_MenuESCPlayerListItem_C::Setup(const class FString& PlayerName, const 
 }
 
 
-// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.カスタムイベント
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.SetPlayerName
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    PlayerName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void UWBP_MenuESCPlayerListItem_C::カスタムイベント(bool bResult)
+void UWBP_MenuESCPlayerListItem_C::SetPlayerName(const class FString& PlayerName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "カスタムイベント");
+		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "SetPlayerName");
 
-	Params::WBP_MenuESCPlayerListItem_C_カスタムイベント Parms{};
+	Params::WBP_MenuESCPlayerListItem_C_SetPlayerName Parms{};
 
-	Parms.bResult = bResult;
+	Parms.PlayerName = std::move(PlayerName);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.OnMouseButtonDown
+// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+struct FEventReply UWBP_MenuESCPlayerListItem_C::OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "OnMouseButtonDown");
+
+	Params::WBP_MenuESCPlayerListItem_C_OnMouseButtonDown Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.MouseEvent = std::move(MouseEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.OnKeyDown
+// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FKeyEvent&                 InKeyEvent                                             (BlueprintVisible, BlueprintReadOnly, Parm)
+// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+struct FEventReply UWBP_MenuESCPlayerListItem_C::OnKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "OnKeyDown");
+
+	Params::WBP_MenuESCPlayerListItem_C_OnKeyDown Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InKeyEvent = std::move(InKeyEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.On Right Clicked Internal
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_MenuESCPlayerListItem_C::On_Right_Clicked_Internal()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "On Right Clicked Internal");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.MutePlayerUId
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    InPlayerUId                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    InPlayerName                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UWBP_MenuESCPlayerListItem_C::MutePlayerUId(const class FString& InPlayerUId, const class FString& InPlayerName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "MutePlayerUId");
+
+	Params::WBP_MenuESCPlayerListItem_C_MutePlayerUId Parms{};
+
+	Parms.InPlayerUId = std::move(InPlayerUId);
+	Parms.InPlayerName = std::move(InPlayerName);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.GetFocusTarget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWidget**                         TargetWidget                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MenuESCPlayerListItem_C::GetFocusTarget(class UWidget** TargetWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "GetFocusTarget");
+
+	Params::WBP_MenuESCPlayerListItem_C_GetFocusTarget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (TargetWidget != nullptr)
+		*TargetWidget = Parms.TargetWidget;
+}
+
+
+// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.GetDisplayInfo
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FPalUIGuildMemberDisplayInfo*    DisplayInfo                                            (Parm, OutParm)
+
+void UWBP_MenuESCPlayerListItem_C::GetDisplayInfo(struct FPalUIGuildMemberDisplayInfo* DisplayInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "GetDisplayInfo");
+
+	Params::WBP_MenuESCPlayerListItem_C_GetDisplayInfo Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (DisplayInfo != nullptr)
+		*DisplayInfo = std::move(Parms.DisplayInfo);
+}
+
+
+// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.ExecuteUbergraph_WBP_MenuESCPlayerListItem
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MenuESCPlayerListItem_C::ExecuteUbergraph_WBP_MenuESCPlayerListItem(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "ExecuteUbergraph_WBP_MenuESCPlayerListItem");
+
+	Params::WBP_MenuESCPlayerListItem_C_ExecuteUbergraph_WBP_MenuESCPlayerListItem Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.CopyUserId
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    InUserId                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    InPlayerName                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UWBP_MenuESCPlayerListItem_C::CopyUserId(const class FString& InUserId, const class FString& InPlayerName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "CopyUserId");
+
+	Params::WBP_MenuESCPlayerListItem_C_CopyUserId Parms{};
+
+	Parms.InUserId = std::move(InUserId);
+	Parms.InPlayerName = std::move(InPlayerName);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.CopyPlayerUId
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    InPlayerUId                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    InPlayerName                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UWBP_MenuESCPlayerListItem_C::CopyPlayerUId(const class FString& InPlayerUId, const class FString& InPlayerName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "CopyPlayerUId");
+
+	Params::WBP_MenuESCPlayerListItem_C_CopyPlayerUId Parms{};
+
+	Parms.InPlayerUId = std::move(InPlayerUId);
+	Parms.InPlayerName = std::move(InPlayerName);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MenuESCPlayerListItem_C::BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_MenuESCPlayerListItem_C_BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MenuESCPlayerListItem_C::BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_MenuESCPlayerListItem_C_BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MenuESCPlayerListItem_C::BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_MenuESCPlayerListItem_C_BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MenuESCPlayerListItem.WBP_MenuESCPlayerListItem_C.BlockPlayerUId
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    InPlayerUId                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    InPlayerName                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UWBP_MenuESCPlayerListItem_C::BlockPlayerUId(const class FString& InPlayerUId, const class FString& InPlayerName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MenuESCPlayerListItem_C", "BlockPlayerUId");
+
+	Params::WBP_MenuESCPlayerListItem_C_BlockPlayerUId Parms{};
+
+	Parms.InPlayerUId = std::move(InPlayerUId);
+	Parms.InPlayerName = std::move(InPlayerName);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

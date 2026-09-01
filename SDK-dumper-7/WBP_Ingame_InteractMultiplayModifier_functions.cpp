@@ -17,23 +17,17 @@
 namespace SDK
 {
 
-// Function WBP_Ingame_InteractMultiplayModifier.WBP_Ingame_InteractMultiplayModifier_C.ExecuteUbergraph_WBP_Ingame_InteractMultiplayModifier
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Ingame_InteractMultiplayModifier.WBP_Ingame_InteractMultiplayModifier_C.OnUpdateLastModifiedUserName
+// (Event, Public, BlueprintEvent)
 
-void UWBP_Ingame_InteractMultiplayModifier_C::ExecuteUbergraph_WBP_Ingame_InteractMultiplayModifier(int32 EntryPoint)
+void UWBP_Ingame_InteractMultiplayModifier_C::OnUpdateLastModifiedUserName()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_InteractMultiplayModifier_C", "ExecuteUbergraph_WBP_Ingame_InteractMultiplayModifier");
+		Func = Class->GetFunction("WBP_Ingame_InteractMultiplayModifier_C", "OnUpdateLastModifiedUserName");
 
-	Params::WBP_Ingame_InteractMultiplayModifier_C_ExecuteUbergraph_WBP_Ingame_InteractMultiplayModifier Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -51,17 +45,23 @@ void UWBP_Ingame_InteractMultiplayModifier_C::OnSetup()
 }
 
 
-// Function WBP_Ingame_InteractMultiplayModifier.WBP_Ingame_InteractMultiplayModifier_C.OnUpdateLastModifiedUserName
-// (Event, Public, BlueprintEvent)
+// Function WBP_Ingame_InteractMultiplayModifier.WBP_Ingame_InteractMultiplayModifier_C.ExecuteUbergraph_WBP_Ingame_InteractMultiplayModifier
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Ingame_InteractMultiplayModifier_C::OnUpdateLastModifiedUserName()
+void UWBP_Ingame_InteractMultiplayModifier_C::ExecuteUbergraph_WBP_Ingame_InteractMultiplayModifier(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_InteractMultiplayModifier_C", "OnUpdateLastModifiedUserName");
+		Func = Class->GetFunction("WBP_Ingame_InteractMultiplayModifier_C", "ExecuteUbergraph_WBP_Ingame_InteractMultiplayModifier");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Ingame_InteractMultiplayModifier_C_ExecuteUbergraph_WBP_Ingame_InteractMultiplayModifier Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

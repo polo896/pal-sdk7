@@ -14,25 +14,16 @@
 namespace SDK::Params
 {
 
-// Function BP_ActionSleepPlayerBedOnSide.BP_ActionSleepPlayerBedOnSide_C.BindInteractEvent
+// Function BP_ActionSleepPlayerBedOnSide.BP_ActionSleepPlayerBedOnSide_C.UnbindInteractEvent
 // 0x0028 (0x0028 - 0x0000)
-struct BP_ActionSleepPlayerBedOnSide_C_BindInteractEvent final
+struct BP_ActionSleepPlayerBedOnSide_C_UnbindInteractEvent final
 {
 public:
 	class APalPlayerController*                   LocalPlayerController;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0018(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_ActionSleepPlayerBedOnSide_C_BindInteractEvent;
-
-// Function BP_ActionSleepPlayerBedOnSide.BP_ActionSleepPlayerBedOnSide_C.GetMontageSleepLoop
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ActionSleepPlayerBedOnSide_C_GetMontageSleepLoop final
-{
-public:
-	class UAnimMontage*                           Montage;                                           // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ActionSleepPlayerBedOnSide_C_GetMontageSleepLoop;
+DUMPER7_ASSERTS_BP_ActionSleepPlayerBedOnSide_C_UnbindInteractEvent;
 
 // Function BP_ActionSleepPlayerBedOnSide.BP_ActionSleepPlayerBedOnSide_C.InvokePhotoMode
 // 0x0018 (0x0018 - 0x0000)
@@ -45,16 +36,25 @@ public:
 };
 DUMPER7_ASSERTS_BP_ActionSleepPlayerBedOnSide_C_InvokePhotoMode;
 
-// Function BP_ActionSleepPlayerBedOnSide.BP_ActionSleepPlayerBedOnSide_C.UnbindInteractEvent
+// Function BP_ActionSleepPlayerBedOnSide.BP_ActionSleepPlayerBedOnSide_C.GetMontageSleepLoop
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ActionSleepPlayerBedOnSide_C_GetMontageSleepLoop final
+{
+public:
+	class UAnimMontage*                           Montage;                                           // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ActionSleepPlayerBedOnSide_C_GetMontageSleepLoop;
+
+// Function BP_ActionSleepPlayerBedOnSide.BP_ActionSleepPlayerBedOnSide_C.BindInteractEvent
 // 0x0028 (0x0028 - 0x0000)
-struct BP_ActionSleepPlayerBedOnSide_C_UnbindInteractEvent final
+struct BP_ActionSleepPlayerBedOnSide_C_BindInteractEvent final
 {
 public:
 	class APalPlayerController*                   LocalPlayerController;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0018(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_ActionSleepPlayerBedOnSide_C_UnbindInteractEvent;
+DUMPER7_ASSERTS_BP_ActionSleepPlayerBedOnSide_C_BindInteractEvent;
 
 }
 

@@ -31,8 +31,8 @@ public:
 	class UWBP_ResearchEffectIcon_C*              WBP_ResearchEffectIcon;                            // 0x0298(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Research_TreeLv(int32 EntryPoint);
 	void SetLevelHeight(int32 Level, int32 BlockHeight, EPalWorkSuitability Type);
+	void ExecuteUbergraph_WBP_Research_TreeLv(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

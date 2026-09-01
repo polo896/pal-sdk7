@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function BP_MapObject_PickupItem_Log.BP_MapObject_PickupItem_Log_C.InitializeFromPool
+// (Event, Public, BlueprintEvent)
+
+void ABP_MapObject_PickupItem_Log_C::InitializeFromPool()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MapObject_PickupItem_Log_C", "InitializeFromPool");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_MapObject_PickupItem_Log.BP_MapObject_PickupItem_Log_C.ExecuteUbergraph_BP_MapObject_PickupItem_Log
 // (Final, UbergraphFunction)
 // Parameters:
@@ -34,20 +48,6 @@ void ABP_MapObject_PickupItem_Log_C::ExecuteUbergraph_BP_MapObject_PickupItem_Lo
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MapObject_PickupItem_Log.BP_MapObject_PickupItem_Log_C.InitializeFromPool
-// (Event, Public, BlueprintEvent)
-
-void ABP_MapObject_PickupItem_Log_C::InitializeFromPool()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_PickupItem_Log_C", "InitializeFromPool");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

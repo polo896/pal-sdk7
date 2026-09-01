@@ -14,48 +14,34 @@
 namespace SDK::Params
 {
 
-// Function WBP_InventoryEquipment_TabList.WBP_InventoryEquipment_TabList_C.BndEvt__WBP_InventoryEquipment_TabList_WBP_InventoryEquipment_InventoryTabButton_Essential_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
+// Function WBP_InventoryEquipment_TabList.WBP_InventoryEquipment_TabList_C.RegisterPanelWidget
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_InventoryEquipment_TabList_C_BndEvt__WBP_InventoryEquipment_TabList_WBP_InventoryEquipment_InventoryTabButton_Essential_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature final
+struct WBP_InventoryEquipment_TabList_C_RegisterPanelWidget final
 {
 public:
-	class UWBP_InventoryEquipment_InventoryTabButton_C* Button;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPanelWidget*                           PanelWidget;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_InventoryEquipment_TabList_C_BndEvt__WBP_InventoryEquipment_TabList_WBP_InventoryEquipment_InventoryTabButton_Essential_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_InventoryEquipment_TabList_C_RegisterPanelWidget;
 
-// Function WBP_InventoryEquipment_TabList.WBP_InventoryEquipment_TabList_C.BndEvt__WBP_InventoryEquipment_TabList_WBP_InventoryEquipment_InventoryTabButton_Inventory_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature
+// Function WBP_InventoryEquipment_TabList.WBP_InventoryEquipment_TabList_C.OnPrev_Binded
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_InventoryEquipment_TabList_C_BndEvt__WBP_InventoryEquipment_TabList_WBP_InventoryEquipment_InventoryTabButton_Inventory_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature final
+struct WBP_InventoryEquipment_TabList_C_OnPrev_Binded final
 {
 public:
-	class UWBP_InventoryEquipment_InventoryTabButton_C* Button;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OldIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewIndex;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_InventoryEquipment_TabList_C_BndEvt__WBP_InventoryEquipment_TabList_WBP_InventoryEquipment_InventoryTabButton_Inventory_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_InventoryEquipment_TabList_C_OnPrev_Binded;
 
-// Function WBP_InventoryEquipment_TabList.WBP_InventoryEquipment_TabList_C.BndEvt__WBP_InventoryEquipment_TabList_WBP_PalInvisibleButton_Sort_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_InventoryEquipment_TabList.WBP_InventoryEquipment_TabList_C.OnNext_Binded
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_InventoryEquipment_TabList_C_BndEvt__WBP_InventoryEquipment_TabList_WBP_PalInvisibleButton_Sort_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+struct WBP_InventoryEquipment_TabList_C_OnNext_Binded final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OldIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewIndex;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_InventoryEquipment_TabList_C_BndEvt__WBP_InventoryEquipment_TabList_WBP_PalInvisibleButton_Sort_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_InventoryEquipment_TabList.WBP_InventoryEquipment_TabList_C.ExecuteUbergraph_WBP_InventoryEquipment_TabList
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_InventoryEquipment_TabList_C_ExecuteUbergraph_WBP_InventoryEquipment_TabList final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(int32 OldIndex, int32 NewIndex)> K2Node_CreateDelegate_OutputDelegate;            // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(int32 OldIndex, int32 NewIndex)> K2Node_CreateDelegate_OutputDelegate_1;          // 0x0014(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget)> K2Node_CreateDelegate_OutputDelegate_2; // 0x0024(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_2;               // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_InventoryEquipment_InventoryTabButton_C* K2Node_ComponentBoundEvent_Button_1;         // 0x0040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_InventoryEquipment_InventoryTabButton_C* K2Node_ComponentBoundEvent_Button;           // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InventoryEquipment_TabList_C_ExecuteUbergraph_WBP_InventoryEquipment_TabList;
+DUMPER7_ASSERTS_WBP_InventoryEquipment_TabList_C_OnNext_Binded;
 
 // Function WBP_InventoryEquipment_TabList.WBP_InventoryEquipment_TabList_C.OnChangedIndex_Binded
 // 0x0040 (0x0040 - 0x0000)
@@ -75,34 +61,48 @@ public:
 };
 DUMPER7_ASSERTS_WBP_InventoryEquipment_TabList_C_OnChangedIndex_Binded;
 
-// Function WBP_InventoryEquipment_TabList.WBP_InventoryEquipment_TabList_C.OnNext_Binded
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_InventoryEquipment_TabList_C_OnNext_Binded final
+// Function WBP_InventoryEquipment_TabList.WBP_InventoryEquipment_TabList_C.ExecuteUbergraph_WBP_InventoryEquipment_TabList
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_InventoryEquipment_TabList_C_ExecuteUbergraph_WBP_InventoryEquipment_TabList final
 {
 public:
-	int32                                         OldIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NewIndex;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(int32 OldIndex, int32 NewIndex)> K2Node_CreateDelegate_OutputDelegate;            // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(int32 OldIndex, int32 NewIndex)> K2Node_CreateDelegate_OutputDelegate_1;          // 0x0014(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget)> K2Node_CreateDelegate_OutputDelegate_2; // 0x0024(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_2;               // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_InventoryEquipment_InventoryTabButton_C* K2Node_ComponentBoundEvent_Button_1;         // 0x0040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_InventoryEquipment_InventoryTabButton_C* K2Node_ComponentBoundEvent_Button;           // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_InventoryEquipment_TabList_C_OnNext_Binded;
+DUMPER7_ASSERTS_WBP_InventoryEquipment_TabList_C_ExecuteUbergraph_WBP_InventoryEquipment_TabList;
 
-// Function WBP_InventoryEquipment_TabList.WBP_InventoryEquipment_TabList_C.OnPrev_Binded
+// Function WBP_InventoryEquipment_TabList.WBP_InventoryEquipment_TabList_C.BndEvt__WBP_InventoryEquipment_TabList_WBP_PalInvisibleButton_Sort_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_InventoryEquipment_TabList_C_OnPrev_Binded final
+struct WBP_InventoryEquipment_TabList_C_BndEvt__WBP_InventoryEquipment_TabList_WBP_PalInvisibleButton_Sort_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	int32                                         OldIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NewIndex;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_InventoryEquipment_TabList_C_OnPrev_Binded;
+DUMPER7_ASSERTS_WBP_InventoryEquipment_TabList_C_BndEvt__WBP_InventoryEquipment_TabList_WBP_PalInvisibleButton_Sort_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
 
-// Function WBP_InventoryEquipment_TabList.WBP_InventoryEquipment_TabList_C.RegisterPanelWidget
+// Function WBP_InventoryEquipment_TabList.WBP_InventoryEquipment_TabList_C.BndEvt__WBP_InventoryEquipment_TabList_WBP_InventoryEquipment_InventoryTabButton_Inventory_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_InventoryEquipment_TabList_C_RegisterPanelWidget final
+struct WBP_InventoryEquipment_TabList_C_BndEvt__WBP_InventoryEquipment_TabList_WBP_InventoryEquipment_InventoryTabButton_Inventory_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature final
 {
 public:
-	class UPanelWidget*                           PanelWidget;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_InventoryEquipment_InventoryTabButton_C* Button;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_InventoryEquipment_TabList_C_RegisterPanelWidget;
+DUMPER7_ASSERTS_WBP_InventoryEquipment_TabList_C_BndEvt__WBP_InventoryEquipment_TabList_WBP_InventoryEquipment_InventoryTabButton_Inventory_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature;
+
+// Function WBP_InventoryEquipment_TabList.WBP_InventoryEquipment_TabList_C.BndEvt__WBP_InventoryEquipment_TabList_WBP_InventoryEquipment_InventoryTabButton_Essential_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_InventoryEquipment_TabList_C_BndEvt__WBP_InventoryEquipment_TabList_WBP_InventoryEquipment_InventoryTabButton_Essential_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature final
+{
+public:
+	class UWBP_InventoryEquipment_InventoryTabButton_C* Button;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InventoryEquipment_TabList_C_BndEvt__WBP_InventoryEquipment_TabList_WBP_InventoryEquipment_InventoryTabButton_Essential_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature;
 
 }
 

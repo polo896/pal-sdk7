@@ -19,7 +19,7 @@ class UBP_FluidImplementation_C : public UActorComponent
     double VelocityDivideIntensity;                                                   // 0x0100 (size: 0x8)
     FName FluidMeshTag;                                                               // 0x0108 (size: 0x8)
     TArray<FName> Bones to Ignore;                                                    // 0x0110 (size: 0x10)
-    TArray<class UMeshComponent*> MeshComponents;                                     // 0x0120 (size: 0x10)
+    TArray<UMeshComponent*> MeshComponents;                                           // 0x0120 (size: 0x10)
     double VelocityBegin;                                                             // 0x0130 (size: 0x8)
     class UMaterialInstanceDynamic* DrawMaterialInstanceDynamic;                      // 0x0138 (size: 0x8)
 

@@ -59,25 +59,25 @@ public:
 	struct FTimerHandle                           ItemUpdateTimer;                                   // 0x0570(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_Buildup_Pal_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void CloseAction();
-	void Destruct();
-	void ExecuteUbergraph_WBP_Buildup_Pal(int32 EntryPoint);
-	void Invoke_Rankup(const TMap<EPalCharacterStatusOperationName, int32>& StatusMap);
-	void InvokeReset();
-	void On_Click_Pal_List(class UPalIndividualCharacterHandle* Handle);
-	void OnHoverPalList(class UPalIndividualCharacterHandle* Handle);
-	void OnSetup();
-	void OnUnhoverPalList();
-	void ReciveResult(EPalCharacterStatusOperationResult Result);
-	void Refresh_Info();
-	void Replicated_Status();
-	void Setup();
-	void SwitchReset();
-	void SwitchTab(int32 Tab);
-	void SwitchUpgrade();
-	void SynchroCheck();
 	void UpdateItemInfo();
+	void SynchroCheck();
+	void SwitchUpgrade();
+	void SwitchTab(int32 Tab);
+	void SwitchReset();
+	void Setup();
+	void Replicated_Status();
+	void Refresh_Info();
+	void ReciveResult(EPalCharacterStatusOperationResult Result);
+	void OnUnhoverPalList();
+	void OnSetup();
+	void OnHoverPalList(class UPalIndividualCharacterHandle* Handle);
+	void On_Click_Pal_List(class UPalIndividualCharacterHandle* Handle);
+	void InvokeReset();
+	void Invoke_Rankup(const TMap<EPalCharacterStatusOperationName, int32>& StatusMap);
+	void ExecuteUbergraph_WBP_Buildup_Pal(int32 EntryPoint);
+	void Destruct();
+	void CloseAction();
+	void BndEvt__WBP_Buildup_Pal_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

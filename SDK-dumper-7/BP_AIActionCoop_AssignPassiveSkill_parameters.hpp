@@ -14,14 +14,26 @@
 namespace SDK::Params
 {
 
-// Function BP_AIActionCoop_AssignPassiveSkill.BP_AIActionCoop_AssignPassiveSkill_C.ActionStart
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIActionCoop_AssignPassiveSkill_C_ActionStart final
+// Function BP_AIActionCoop_AssignPassiveSkill.BP_AIActionCoop_AssignPassiveSkill_C.StartSkill
+// 0x0018 (0x0018 - 0x0000)
+struct BP_AIActionCoop_AssignPassiveSkill_C_StartSkill final
 {
 public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalPartnerSkillParameterComponent*     CallFunc_GetComponentByClass_ReturnValue;          // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPalCoopSkillModuleBase*                CallFunc_CreateSkillModule_ReturnValue;            // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_AIActionCoop_AssignPassiveSkill_C_ActionStart;
+DUMPER7_ASSERTS_BP_AIActionCoop_AssignPassiveSkill_C_StartSkill;
+
+// Function BP_AIActionCoop_AssignPassiveSkill.BP_AIActionCoop_AssignPassiveSkill_C.OnActionNotify
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AIActionCoop_AssignPassiveSkill_C_OnActionNotify final
+{
+public:
+	const class UPalActionBase*                   action;                                            // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   NotifyName;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIActionCoop_AssignPassiveSkill_C_OnActionNotify;
 
 // Function BP_AIActionCoop_AssignPassiveSkill.BP_AIActionCoop_AssignPassiveSkill_C.ExecuteUbergraph_BP_AIActionCoop_AssignPassiveSkill
 // 0x0048 (0x0048 - 0x0000)
@@ -41,26 +53,14 @@ public:
 };
 DUMPER7_ASSERTS_BP_AIActionCoop_AssignPassiveSkill_C_ExecuteUbergraph_BP_AIActionCoop_AssignPassiveSkill;
 
-// Function BP_AIActionCoop_AssignPassiveSkill.BP_AIActionCoop_AssignPassiveSkill_C.OnActionNotify
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AIActionCoop_AssignPassiveSkill_C_OnActionNotify final
+// Function BP_AIActionCoop_AssignPassiveSkill.BP_AIActionCoop_AssignPassiveSkill_C.ActionStart
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIActionCoop_AssignPassiveSkill_C_ActionStart final
 {
 public:
-	const class UPalActionBase*                   action;                                            // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   NotifyName;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_AIActionCoop_AssignPassiveSkill_C_OnActionNotify;
-
-// Function BP_AIActionCoop_AssignPassiveSkill.BP_AIActionCoop_AssignPassiveSkill_C.StartSkill
-// 0x0018 (0x0018 - 0x0000)
-struct BP_AIActionCoop_AssignPassiveSkill_C_StartSkill final
-{
-public:
-	class UPalPartnerSkillParameterComponent*     CallFunc_GetComponentByClass_ReturnValue;          // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UPalCoopSkillModuleBase*                CallFunc_CreateSkillModule_ReturnValue;            // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIActionCoop_AssignPassiveSkill_C_StartSkill;
+DUMPER7_ASSERTS_BP_AIActionCoop_AssignPassiveSkill_C_ActionStart;
 
 }
 

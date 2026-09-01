@@ -29,13 +29,13 @@ public:
 	TArray<class UWBP_Ingame_QuestBoard_List_C*>  CleatedBlockWidget;                                // 0x0480(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void AddBlockWidget(class UPalQuestBlock* QuestBlock);
-	void CompleteQuest();
-	void GetQuestId(class FName* QuestId);
-	void GetSortedQuestBlocks(TArray<class UPalQuestBlock*>* Blocks);
-	void OnEndBlockEndAnim(class UWBP_Ingame_QuestBoard_List_C* Widget);
-	void Setup(class UPalQuestData* QuestData);
 	void UpdateQuest();
+	void Setup(class UPalQuestData* QuestData);
+	void OnEndBlockEndAnim(class UWBP_Ingame_QuestBoard_List_C* Widget);
+	void GetSortedQuestBlocks(TArray<class UPalQuestBlock*>* Blocks);
+	void GetQuestId(class FName* QuestId);
+	void CompleteQuest();
+	void AddBlockWidget(class UPalQuestBlock* QuestBlock);
 
 public:
 	static class UClass* StaticClass()

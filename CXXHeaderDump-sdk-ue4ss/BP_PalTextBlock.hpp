@@ -3,7 +3,7 @@
 
 class UBP_PalTextBlock_C : public UPalTextBlockBase
 {
-    TMap<class UDataTable*, class EPalLocalizeTextCategory> CategryMap_ForViewportGameDebug; // 0x03B0 (size: 0x50)
+    TMap<UDataTable*, EPalLocalizeTextCategory> CategryMap_ForViewportGameDebug;      // 0x03B0 (size: 0x50)
 
     bool BP_ReflectText();
 }; // Size: 0x400

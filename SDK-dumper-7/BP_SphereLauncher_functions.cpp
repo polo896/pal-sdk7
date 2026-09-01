@@ -17,108 +17,59 @@
 namespace SDK
 {
 
-// Function BP_SphereLauncher.BP_SphereLauncher_C.ChangeTransformForRocketReload
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_SphereLauncher.BP_SphereLauncher_C.ReceiveEndPlay
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// const struct FVector&                   Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FRotator&                  Rotation                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SphereLauncher_C::ChangeTransformForRocketReload(const struct FVector& Location, const struct FRotator& Rotation)
+void ABP_SphereLauncher_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SphereLauncher_C", "ChangeTransformForRocketReload");
+		Func = Class->GetFunction("BP_SphereLauncher_C", "ReceiveEndPlay");
 
-	Params::BP_SphereLauncher_C_ChangeTransformForRocketReload Parms{};
+	Params::BP_SphereLauncher_C_ReceiveEndPlay Parms{};
 
-	Parms.Location = std::move(Location);
-	Parms.Rotation = std::move(Rotation);
+	Parms.EndPlayReason = EndPlayReason;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_SphereLauncher.BP_SphereLauncher_C.ChangeTransformForRocketWhenReloadIsDone
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FVector&                   Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FRotator&                  Lotation                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// Function BP_SphereLauncher.BP_SphereLauncher_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_SphereLauncher_C::ChangeTransformForRocketWhenReloadIsDone(const struct FVector& Location, const struct FRotator& Lotation)
+void ABP_SphereLauncher_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SphereLauncher_C", "ChangeTransformForRocketWhenReloadIsDone");
+		Func = Class->GetFunction("BP_SphereLauncher_C", "ReceiveBeginPlay");
 
-	Params::BP_SphereLauncher_C_ChangeTransformForRocketWhenReloadIsDone Parms{};
-
-	Parms.Location = std::move(Location);
-	Parms.Lotation = std::move(Lotation);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_SphereLauncher.BP_SphereLauncher_C.CustomEvent
+// Function BP_SphereLauncher.BP_SphereLauncher_C.OnPalSphereChangeSelectedIndex
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   bulletsNum                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalPlayerInventoryType                 inventoryType                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SphereLauncher_C::CustomEvent(int32 bulletsNum)
+void ABP_SphereLauncher_C::OnPalSphereChangeSelectedIndex(EPalPlayerInventoryType inventoryType, int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SphereLauncher_C", "CustomEvent");
+		Func = Class->GetFunction("BP_SphereLauncher_C", "OnPalSphereChangeSelectedIndex");
 
-	Params::BP_SphereLauncher_C_CustomEvent Parms{};
+	Params::BP_SphereLauncher_C_OnPalSphereChangeSelectedIndex Parms{};
 
-	Parms.bulletsNum = bulletsNum;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SphereLauncher.BP_SphereLauncher_C.ExecuteUbergraph_BP_SphereLauncher
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SphereLauncher_C::ExecuteUbergraph_BP_SphereLauncher(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SphereLauncher_C", "ExecuteUbergraph_BP_SphereLauncher");
-
-	Params::BP_SphereLauncher_C_ExecuteUbergraph_BP_SphereLauncher Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.inventoryType = inventoryType;
+	Parms.Index_0 = Index_0;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SphereLauncher.BP_SphereLauncher_C.GetMuzzleTransform
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FTransform*                      Transform                                              (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SphereLauncher_C::GetMuzzleTransform(struct FTransform* Transform)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SphereLauncher_C", "GetMuzzleTransform");
-
-	Params::BP_SphereLauncher_C_GetMuzzleTransform Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Transform != nullptr)
-		*Transform = std::move(Parms.Transform);
 }
 
 
@@ -150,164 +101,108 @@ void ABP_SphereLauncher_C::GetShootTransformList(double BaseAnglePitch, double B
 }
 
 
-// Function BP_SphereLauncher.BP_SphereLauncher_C.OnPalSphereChangeSelectedIndex
+// Function BP_SphereLauncher.BP_SphereLauncher_C.GetMuzzleTransform
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FTransform*                      Transform                                              (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SphereLauncher_C::GetMuzzleTransform(struct FTransform* Transform)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SphereLauncher_C", "GetMuzzleTransform");
+
+	Params::BP_SphereLauncher_C_GetMuzzleTransform Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Transform != nullptr)
+		*Transform = std::move(Parms.Transform);
+}
+
+
+// Function BP_SphereLauncher.BP_SphereLauncher_C.ExecuteUbergraph_BP_SphereLauncher
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SphereLauncher_C::ExecuteUbergraph_BP_SphereLauncher(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SphereLauncher_C", "ExecuteUbergraph_BP_SphereLauncher");
+
+	Params::BP_SphereLauncher_C_ExecuteUbergraph_BP_SphereLauncher Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SphereLauncher.BP_SphereLauncher_C.CustomEvent
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EPalPlayerInventoryType                 inventoryType                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   bulletsNum                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SphereLauncher_C::OnPalSphereChangeSelectedIndex(EPalPlayerInventoryType inventoryType, int32 Index_0)
+void ABP_SphereLauncher_C::CustomEvent(int32 bulletsNum)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SphereLauncher_C", "OnPalSphereChangeSelectedIndex");
+		Func = Class->GetFunction("BP_SphereLauncher_C", "CustomEvent");
 
-	Params::BP_SphereLauncher_C_OnPalSphereChangeSelectedIndex Parms{};
+	Params::BP_SphereLauncher_C_CustomEvent Parms{};
 
-	Parms.inventoryType = inventoryType;
-	Parms.Index_0 = Index_0;
+	Parms.bulletsNum = bulletsNum;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_SphereLauncher.BP_SphereLauncher_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_SphereLauncher_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SphereLauncher_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SphereLauncher.BP_SphereLauncher_C.ReceiveEndPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_SphereLauncher.BP_SphereLauncher_C.ChangeTransformForRocketWhenReloadIsDone
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FRotator&                  Lotation                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_SphereLauncher_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
+void ABP_SphereLauncher_C::ChangeTransformForRocketWhenReloadIsDone(const struct FVector& Location, const struct FRotator& Lotation)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SphereLauncher_C", "ReceiveEndPlay");
+		Func = Class->GetFunction("BP_SphereLauncher_C", "ChangeTransformForRocketWhenReloadIsDone");
 
-	Params::BP_SphereLauncher_C_ReceiveEndPlay Parms{};
+	Params::BP_SphereLauncher_C_ChangeTransformForRocketWhenReloadIsDone Parms{};
 
-	Parms.EndPlayReason = EndPlayReason;
+	Parms.Location = std::move(Location);
+	Parms.Lotation = std::move(Lotation);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_SphereLauncher.BP_SphereLauncher_C.GetAimingBlurAngle
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function BP_SphereLauncher.BP_SphereLauncher_C.ChangeTransformForRocketReload
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double*                                 Angle                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FRotator&                  Rotation                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_SphereLauncher_C::GetAimingBlurAngle(double* Angle)
+void ABP_SphereLauncher_C::ChangeTransformForRocketReload(const struct FVector& Location, const struct FRotator& Rotation)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SphereLauncher_C", "GetAimingBlurAngle");
+		Func = Class->GetFunction("BP_SphereLauncher_C", "ChangeTransformForRocketReload");
 
-	Params::BP_SphereLauncher_C_GetAimingBlurAngle Parms{};
+	Params::BP_SphereLauncher_C_ChangeTransformForRocketReload Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Angle != nullptr)
-		*Angle = Parms.Angle;
-}
-
-
-// Function BP_SphereLauncher.BP_SphereLauncher_C.GetBlurAngle
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// double*                                 Angle                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SphereLauncher_C::GetBlurAngle(double* Angle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SphereLauncher_C", "GetBlurAngle");
-
-	Params::BP_SphereLauncher_C_GetBlurAngle Parms{};
+	Parms.Location = std::move(Location);
+	Parms.Rotation = std::move(Rotation);
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (Angle != nullptr)
-		*Angle = Parms.Angle;
-}
-
-
-// Function BP_SphereLauncher.BP_SphereLauncher_C.GetBulletClass
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UClass**                          NewParam                                               (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SphereLauncher_C::GetBulletClass(class UClass** NewParam)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SphereLauncher_C", "GetBulletClass");
-
-	Params::BP_SphereLauncher_C_GetBulletClass Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (NewParam != nullptr)
-		*NewParam = Parms.NewParam;
-}
-
-
-// Function BP_SphereLauncher.BP_SphereLauncher_C.GetMuzzleLocation
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FVector*                         MuzzleLocation                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SphereLauncher_C::GetMuzzleLocation(struct FVector* MuzzleLocation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SphereLauncher_C", "GetMuzzleLocation");
-
-	Params::BP_SphereLauncher_C_GetMuzzleLocation Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (MuzzleLocation != nullptr)
-		*MuzzleLocation = std::move(Parms.MuzzleLocation);
-}
-
-
-// Function BP_SphereLauncher.BP_SphereLauncher_C.GetMuzzleRotator
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FRotator*                        Rotator                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ABP_SphereLauncher_C::GetMuzzleRotator(struct FRotator* Rotator)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SphereLauncher_C", "GetMuzzleRotator");
-
-	Params::BP_SphereLauncher_C_GetMuzzleRotator Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Rotator != nullptr)
-		*Rotator = std::move(Parms.Rotator);
 }
 
 
@@ -332,15 +227,120 @@ void ABP_SphereLauncher_C::GetShootInterval(double* Time)
 }
 
 
-// Function BP_SphereLauncher.BP_SphereLauncher_C.OnPullTrigger
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_SphereLauncher.BP_SphereLauncher_C.GetMuzzleRotator
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FRotator*                        Rotator                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_SphereLauncher_C::OnPullTrigger()
+void ABP_SphereLauncher_C::GetMuzzleRotator(struct FRotator* Rotator)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SphereLauncher_C", "OnPullTrigger");
+		Func = Class->GetFunction("BP_SphereLauncher_C", "GetMuzzleRotator");
+
+	Params::BP_SphereLauncher_C_GetMuzzleRotator Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Rotator != nullptr)
+		*Rotator = std::move(Parms.Rotator);
+}
+
+
+// Function BP_SphereLauncher.BP_SphereLauncher_C.GetMuzzleLocation
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FVector*                         MuzzleLocation                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SphereLauncher_C::GetMuzzleLocation(struct FVector* MuzzleLocation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SphereLauncher_C", "GetMuzzleLocation");
+
+	Params::BP_SphereLauncher_C_GetMuzzleLocation Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (MuzzleLocation != nullptr)
+		*MuzzleLocation = std::move(Parms.MuzzleLocation);
+}
+
+
+// Function BP_SphereLauncher.BP_SphereLauncher_C.GetBulletClass
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UClass**                          NewParam                                               (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SphereLauncher_C::GetBulletClass(class UClass** NewParam)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SphereLauncher_C", "GetBulletClass");
+
+	Params::BP_SphereLauncher_C_GetBulletClass Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (NewParam != nullptr)
+		*NewParam = Parms.NewParam;
+}
+
+
+// Function BP_SphereLauncher.BP_SphereLauncher_C.GetBlurAngle
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// double*                                 Angle                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SphereLauncher_C::GetBlurAngle(double* Angle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SphereLauncher_C", "GetBlurAngle");
+
+	Params::BP_SphereLauncher_C_GetBlurAngle Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Angle != nullptr)
+		*Angle = Parms.Angle;
+}
+
+
+// Function BP_SphereLauncher.BP_SphereLauncher_C.GetAimingBlurAngle
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// double*                                 Angle                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SphereLauncher_C::GetAimingBlurAngle(double* Angle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SphereLauncher_C", "GetAimingBlurAngle");
+
+	Params::BP_SphereLauncher_C_GetAimingBlurAngle Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Angle != nullptr)
+		*Angle = Parms.Angle;
+}
+
+
+// Function BP_SphereLauncher.BP_SphereLauncher_C.ShootBullet
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_SphereLauncher_C::ShootBullet()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SphereLauncher_C", "ShootBullet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -366,37 +366,17 @@ void ABP_SphereLauncher_C::OnShoot(class APalBullet* BulletActor)
 }
 
 
-// Function BP_SphereLauncher.BP_SphereLauncher_C.ShootBullet
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_SphereLauncher.BP_SphereLauncher_C.OnPullTrigger
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_SphereLauncher_C::ShootBullet()
+void ABP_SphereLauncher_C::OnPullTrigger()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SphereLauncher_C", "ShootBullet");
+		Func = Class->GetFunction("BP_SphereLauncher_C", "OnPullTrigger");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SphereLauncher.BP_SphereLauncher_C.GetRemainBulletCount
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-int32 ABP_SphereLauncher_C::GetRemainBulletCount() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SphereLauncher_C", "GetRemainBulletCount");
-
-	Params::BP_SphereLauncher_C_GetRemainBulletCount Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 
@@ -413,6 +393,26 @@ bool ABP_SphereLauncher_C::IsEnableAutoAim() const
 		Func = Class->GetFunction("BP_SphereLauncher_C", "IsEnableAutoAim");
 
 	Params::BP_SphereLauncher_C_IsEnableAutoAim Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_SphereLauncher.BP_SphereLauncher_C.GetRemainBulletCount
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+int32 ABP_SphereLauncher_C::GetRemainBulletCount() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SphereLauncher_C", "GetRemainBulletCount");
+
+	Params::BP_SphereLauncher_C_GetRemainBulletCount Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 

@@ -17,341 +17,55 @@
 namespace SDK
 {
 
-// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.BndEvt__WBP_Option_ModMenu_PalEditableTextBox_Search_K2Node_ComponentBoundEvent_3_OnEditableTextBoxCommittedEvent__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// ETextCommit                             CommitMethod                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.UpdateModListActive
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Option_ModMenu_C::BndEvt__WBP_Option_ModMenu_PalEditableTextBox_Search_K2Node_ComponentBoundEvent_3_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod)
+void UWBP_Option_ModMenu_C::UpdateModListActive()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_C", "BndEvt__WBP_Option_ModMenu_PalEditableTextBox_Search_K2Node_ComponentBoundEvent_3_OnEditableTextBoxCommittedEvent__DelegateSignature");
-
-	Params::WBP_Option_ModMenu_C_BndEvt__WBP_Option_ModMenu_PalEditableTextBox_Search_K2Node_ComponentBoundEvent_3_OnEditableTextBoxCommittedEvent__DelegateSignature Parms{};
-
-	Parms.Text = std::move(Text);
-	Parms.CommitMethod = CommitMethod;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Apply_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Option_ModMenu_C::BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Apply_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_C", "BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Apply_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Option_ModMenu_C", "UpdateModListActive");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Cancel_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Option_ModMenu_C::BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Cancel_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_C", "BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Cancel_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Workshop_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Option_ModMenu_C::BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Workshop_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_C", "BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Workshop_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.BndEvt__WBP_Option_ModMenu_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Option_ModMenu_C::BndEvt__WBP_Option_ModMenu_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_C", "BndEvt__WBP_Option_ModMenu_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_Option_ModMenu_C_BndEvt__WBP_Option_ModMenu_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Option_ModMenu_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Option_ModMenu_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.DisplayLoading
+// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.SetSaveButtonActive
 // (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Option_ModMenu_C::DisplayLoading()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_C", "DisplayLoading");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.DoCustomNavigation_ToTextBox
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bActive                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class UWidget* UWBP_Option_ModMenu_C::DoCustomNavigation_ToTextBox(EUINavigation Navigation_0)
+void UWBP_Option_ModMenu_C::SetSaveButtonActive(bool bActive)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_C", "DoCustomNavigation_ToTextBox");
+		Func = Class->GetFunction("WBP_Option_ModMenu_C", "SetSaveButtonActive");
 
-	Params::WBP_Option_ModMenu_C_DoCustomNavigation_ToTextBox Parms{};
+	Params::WBP_Option_ModMenu_C_SetSaveButtonActive Parms{};
 
-	Parms.Navigation_0 = Navigation_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.ExecuteUbergraph_WBP_Option_ModMenu
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Option_ModMenu_C::ExecuteUbergraph_WBP_Option_ModMenu(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_C", "ExecuteUbergraph_WBP_Option_ModMenu");
-
-	Params::WBP_Option_ModMenu_C_ExecuteUbergraph_WBP_Option_ModMenu Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.bActive = bActive;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.Filtering
+// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.SetModSupportIngameFlag
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FString&                    FilteringString                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// bool                                    bSupportIngame                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Option_ModMenu_C::Filtering(const class FString& FilteringString)
+void UWBP_Option_ModMenu_C::SetModSupportIngameFlag(bool bSupportIngame)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_C", "Filtering");
+		Func = Class->GetFunction("WBP_Option_ModMenu_C", "SetModSupportIngameFlag");
 
-	Params::WBP_Option_ModMenu_C_Filtering Parms{};
+	Params::WBP_Option_ModMenu_C_SetModSupportIngameFlag Parms{};
 
-	Parms.FilteringString = std::move(FilteringString);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.FocusToCancelButton
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Option_ModMenu_C::FocusToCancelButton()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_C", "FocusToCancelButton");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.GetRestoreFocusTarget
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWidget**                         Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Option_ModMenu_C::GetRestoreFocusTarget(class UWidget** Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_C", "GetRestoreFocusTarget");
-
-	Params::WBP_Option_ModMenu_C_GetRestoreFocusTarget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Widget != nullptr)
-		*Widget = Parms.Widget;
-}
-
-
-// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.GetTopFocusTarget
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWidget**                         Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Option_ModMenu_C::GetTopFocusTarget(class UWidget** Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_C", "GetTopFocusTarget");
-
-	Params::WBP_Option_ModMenu_C_GetTopFocusTarget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Widget != nullptr)
-		*Widget = Parms.Widget;
-}
-
-
-// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.HideLoading
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Option_ModMenu_C::HideLoading()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_C", "HideLoading");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.IsEditingText
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// bool*                                   bEditing                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Option_ModMenu_C::IsEditingText(bool* bEditing)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_C", "IsEditingText");
-
-	Params::WBP_Option_ModMenu_C_IsEditingText Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (bEditing != nullptr)
-		*bEditing = Parms.bEditing;
-}
-
-
-// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.OnChangedModSupportIngame_Binded
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Option_ModMenu_C::OnChangedModSupportIngame_Binded(bool IsOn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_C", "OnChangedModSupportIngame_Binded");
-
-	Params::WBP_Option_ModMenu_C_OnChangedModSupportIngame_Binded Parms{};
-
-	Parms.IsOn = IsOn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.OnClickedModPanel_Internal
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_Option_ModMenu_ModList_C*    Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Option_ModMenu_C::OnClickedModPanel_Internal(class UWBP_Option_ModMenu_ModList_C* Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_C", "OnClickedModPanel_Internal");
-
-	Params::WBP_Option_ModMenu_C_OnClickedModPanel_Internal Parms{};
-
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.OnHoveredModPanel_Internal
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_Option_ModMenu_ModList_C*    Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Option_ModMenu_C::OnHoveredModPanel_Internal(class UWBP_Option_ModMenu_ModList_C* Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_C", "OnHoveredModPanel_Internal");
-
-	Params::WBP_Option_ModMenu_C_OnHoveredModPanel_Internal Parms{};
-
-	Parms.Widget = Widget;
+	Parms.bSupportIngame = bSupportIngame;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -381,57 +95,343 @@ void UWBP_Option_ModMenu_C::SetModDisplayDataMap(const TMap<struct FPalUIModUniq
 }
 
 
-// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.SetModSupportIngameFlag
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.OnHoveredModPanel_Internal
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bSupportIngame                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWBP_Option_ModMenu_ModList_C*    Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Option_ModMenu_C::SetModSupportIngameFlag(bool bSupportIngame)
+void UWBP_Option_ModMenu_C::OnHoveredModPanel_Internal(class UWBP_Option_ModMenu_ModList_C* Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_C", "SetModSupportIngameFlag");
+		Func = Class->GetFunction("WBP_Option_ModMenu_C", "OnHoveredModPanel_Internal");
 
-	Params::WBP_Option_ModMenu_C_SetModSupportIngameFlag Parms{};
+	Params::WBP_Option_ModMenu_C_OnHoveredModPanel_Internal Parms{};
 
-	Parms.bSupportIngame = bSupportIngame;
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.SetSaveButtonActive
+// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.OnClickedModPanel_Internal
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_Option_ModMenu_ModList_C*    Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Option_ModMenu_C::OnClickedModPanel_Internal(class UWBP_Option_ModMenu_ModList_C* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_ModMenu_C", "OnClickedModPanel_Internal");
+
+	Params::WBP_Option_ModMenu_C_OnClickedModPanel_Internal Parms{};
+
+	Parms.Widget = Widget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.OnChangedModSupportIngame_Binded
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Option_ModMenu_C::OnChangedModSupportIngame_Binded(bool IsOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_ModMenu_C", "OnChangedModSupportIngame_Binded");
+
+	Params::WBP_Option_ModMenu_C_OnChangedModSupportIngame_Binded Parms{};
+
+	Parms.IsOn = IsOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.IsEditingText
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool*                                   bEditing                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Option_ModMenu_C::IsEditingText(bool* bEditing)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_ModMenu_C", "IsEditingText");
+
+	Params::WBP_Option_ModMenu_C_IsEditingText Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (bEditing != nullptr)
+		*bEditing = Parms.bEditing;
+}
+
+
+// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.HideLoading
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bActive                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Option_ModMenu_C::SetSaveButtonActive(bool bActive)
+void UWBP_Option_ModMenu_C::HideLoading()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_C", "SetSaveButtonActive");
-
-	Params::WBP_Option_ModMenu_C_SetSaveButtonActive Parms{};
-
-	Parms.bActive = bActive;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.UpdateModListActive
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Option_ModMenu_C::UpdateModListActive()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_C", "UpdateModListActive");
+		Func = Class->GetFunction("WBP_Option_ModMenu_C", "HideLoading");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.GetTopFocusTarget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWidget**                         Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Option_ModMenu_C::GetTopFocusTarget(class UWidget** Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_ModMenu_C", "GetTopFocusTarget");
+
+	Params::WBP_Option_ModMenu_C_GetTopFocusTarget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Widget != nullptr)
+		*Widget = Parms.Widget;
+}
+
+
+// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.GetRestoreFocusTarget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWidget**                         Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Option_ModMenu_C::GetRestoreFocusTarget(class UWidget** Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_ModMenu_C", "GetRestoreFocusTarget");
+
+	Params::WBP_Option_ModMenu_C_GetRestoreFocusTarget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Widget != nullptr)
+		*Widget = Parms.Widget;
+}
+
+
+// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.FocusToCancelButton
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Option_ModMenu_C::FocusToCancelButton()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_ModMenu_C", "FocusToCancelButton");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.Filtering
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    FilteringString                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UWBP_Option_ModMenu_C::Filtering(const class FString& FilteringString)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_ModMenu_C", "Filtering");
+
+	Params::WBP_Option_ModMenu_C_Filtering Parms{};
+
+	Parms.FilteringString = std::move(FilteringString);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.ExecuteUbergraph_WBP_Option_ModMenu
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Option_ModMenu_C::ExecuteUbergraph_WBP_Option_ModMenu(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_ModMenu_C", "ExecuteUbergraph_WBP_Option_ModMenu");
+
+	Params::WBP_Option_ModMenu_C_ExecuteUbergraph_WBP_Option_ModMenu Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.DoCustomNavigation_ToTextBox
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_Option_ModMenu_C::DoCustomNavigation_ToTextBox(EUINavigation Navigation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_ModMenu_C", "DoCustomNavigation_ToTextBox");
+
+	Params::WBP_Option_ModMenu_C_DoCustomNavigation_ToTextBox Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.DisplayLoading
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Option_ModMenu_C::DisplayLoading()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_ModMenu_C", "DisplayLoading");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Option_ModMenu_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_ModMenu_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Option_ModMenu_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_ModMenu_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.BndEvt__WBP_Option_ModMenu_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Option_ModMenu_C::BndEvt__WBP_Option_ModMenu_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_ModMenu_C", "BndEvt__WBP_Option_ModMenu_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_Option_ModMenu_C_BndEvt__WBP_Option_ModMenu_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Workshop_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Option_ModMenu_C::BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Workshop_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_ModMenu_C", "BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Workshop_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Cancel_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Option_ModMenu_C::BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Cancel_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_ModMenu_C", "BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Cancel_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Apply_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Option_ModMenu_C::BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Apply_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_ModMenu_C", "BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Apply_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Option_ModMenu.WBP_Option_ModMenu_C.BndEvt__WBP_Option_ModMenu_PalEditableTextBox_Search_K2Node_ComponentBoundEvent_3_OnEditableTextBoxCommittedEvent__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// ETextCommit                             CommitMethod                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Option_ModMenu_C::BndEvt__WBP_Option_ModMenu_PalEditableTextBox_Search_K2Node_ComponentBoundEvent_3_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_ModMenu_C", "BndEvt__WBP_Option_ModMenu_PalEditableTextBox_Search_K2Node_ComponentBoundEvent_3_OnEditableTextBoxCommittedEvent__DelegateSignature");
+
+	Params::WBP_Option_ModMenu_C_BndEvt__WBP_Option_ModMenu_PalEditableTextBox_Search_K2Node_ComponentBoundEvent_3_OnEditableTextBoxCommittedEvent__DelegateSignature Parms{};
+
+	Parms.Text = std::move(Text);
+	Parms.CommitMethod = CommitMethod;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

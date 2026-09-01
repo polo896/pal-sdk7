@@ -17,19 +17,19 @@
 namespace SDK
 {
 
-// Function WBP_MainMenu.WBP_MainMenu_C.Anm_focus
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_MainMenu.WBP_MainMenu_C.SelectByMainMenuType
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EPalUIInGameMainMenuTabType             Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_C::Anm_focus(EPalUIInGameMainMenuTabType Type)
+void UWBP_MainMenu_C::SelectByMainMenuType(EPalUIInGameMainMenuTabType Type)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_C", "Anm_focus");
+		Func = Class->GetFunction("WBP_MainMenu_C", "SelectByMainMenuType");
 
-	Params::WBP_MainMenu_C_Anm_focus Parms{};
+	Params::WBP_MainMenu_C_SelectByMainMenuType Parms{};
 
 	Parms.Type = Type;
 
@@ -37,83 +37,124 @@ void UWBP_MainMenu_C::Anm_focus(EPalUIInGameMainMenuTabType Type)
 }
 
 
-// Function WBP_MainMenu.WBP_MainMenu_C.Anm_FocusToNormal
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_MainMenu.WBP_MainMenu_C.RegisterPanelWidget
+// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EPalUIInGameMainMenuTabType             Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPanelWidget**                    PanelWidget                                            (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_C::Anm_FocusToNormal(EPalUIInGameMainMenuTabType Type)
+void UWBP_MainMenu_C::RegisterPanelWidget(class UPanelWidget** PanelWidget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_C", "Anm_FocusToNormal");
+		Func = Class->GetFunction("WBP_MainMenu_C", "RegisterPanelWidget");
 
-	Params::WBP_MainMenu_C_Anm_FocusToNormal Parms{};
+	Params::WBP_MainMenu_C_RegisterPanelWidget Parms{};
 
-	Parms.Type = Type;
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (PanelWidget != nullptr)
+		*PanelWidget = Parms.PanelWidget;
+}
+
+
+// Function WBP_MainMenu.WBP_MainMenu_C.OnPrevEvent
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   OldIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_C::OnPrevEvent(int32 OldIndex, int32 NewIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_C", "OnPrevEvent");
+
+	Params::WBP_MainMenu_C_OnPrevEvent Parms{};
+
+	Parms.OldIndex = OldIndex;
+	Parms.NewIndex = NewIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_MainMenu.WBP_MainMenu_C.Anm_Open
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_MainMenu_C::Anm_Open()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_C", "Anm_Open");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu.WBP_MainMenu_C.BndEvt__WBP_MainMenu_WBP_Tab_Key_L_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_MainMenu_C::BndEvt__WBP_MainMenu_WBP_Tab_Key_L_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_C", "BndEvt__WBP_MainMenu_WBP_Tab_Key_L_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu.WBP_MainMenu_C.BndEvt__WBP_MainMenu_WBP_Tab_Key_R_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_MainMenu_C::BndEvt__WBP_MainMenu_WBP_Tab_Key_R_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_C", "BndEvt__WBP_MainMenu_WBP_Tab_Key_R_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu.WBP_MainMenu_C.ExecuteUbergraph_WBP_MainMenu
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_MainMenu.WBP_MainMenu_C.OnNextEvent
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   OldIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_C::ExecuteUbergraph_WBP_MainMenu(int32 EntryPoint)
+void UWBP_MainMenu_C::OnNextEvent(int32 OldIndex, int32 NewIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_C", "ExecuteUbergraph_WBP_MainMenu");
+		Func = Class->GetFunction("WBP_MainMenu_C", "OnNextEvent");
 
-	Params::WBP_MainMenu_C_ExecuteUbergraph_WBP_MainMenu Parms{};
+	Params::WBP_MainMenu_C_OnNextEvent Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.OldIndex = OldIndex;
+	Parms.NewIndex = NewIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu.WBP_MainMenu_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_MainMenu_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MainMenu.WBP_MainMenu_C.OnClickedTabEvent
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_MainMenu_Tab_C*              TabWidget                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_C::OnClickedTabEvent(class UWBP_MainMenu_Tab_C* TabWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_C", "OnClickedTabEvent");
+
+	Params::WBP_MainMenu_C_OnClickedTabEvent Parms{};
+
+	Parms.TabWidget = TabWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu.WBP_MainMenu_C.OnChangedIndexEvent
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   OldIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          FocusTargetWidget                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_C::OnChangedIndexEvent(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_C", "OnChangedIndexEvent");
+
+	Params::WBP_MainMenu_C_OnChangedIndexEvent Parms{};
+
+	Parms.OldIndex = OldIndex;
+	Parms.NewIndex = NewIndex;
+	Parms.FocusTargetWidget = FocusTargetWidget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -143,142 +184,101 @@ void UWBP_MainMenu_C::GetTabWidgetByMenuType(EPalUIInGameMainMenuTabType MenuTyp
 }
 
 
-// Function WBP_MainMenu.WBP_MainMenu_C.OnChangedIndexEvent
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_MainMenu.WBP_MainMenu_C.ExecuteUbergraph_WBP_MainMenu
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// int32                                   OldIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          FocusTargetWidget                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_C::OnChangedIndexEvent(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget)
+void UWBP_MainMenu_C::ExecuteUbergraph_WBP_MainMenu(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_C", "OnChangedIndexEvent");
+		Func = Class->GetFunction("WBP_MainMenu_C", "ExecuteUbergraph_WBP_MainMenu");
 
-	Params::WBP_MainMenu_C_OnChangedIndexEvent Parms{};
+	Params::WBP_MainMenu_C_ExecuteUbergraph_WBP_MainMenu Parms{};
 
-	Parms.OldIndex = OldIndex;
-	Parms.NewIndex = NewIndex;
-	Parms.FocusTargetWidget = FocusTargetWidget;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_MainMenu.WBP_MainMenu_C.OnClickedTabEvent
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_MainMenu_Tab_C*              TabWidget                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function WBP_MainMenu.WBP_MainMenu_C.BndEvt__WBP_MainMenu_WBP_Tab_Key_R_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_MainMenu_C::OnClickedTabEvent(class UWBP_MainMenu_Tab_C* TabWidget)
+void UWBP_MainMenu_C::BndEvt__WBP_MainMenu_WBP_Tab_Key_R_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_C", "OnClickedTabEvent");
-
-	Params::WBP_MainMenu_C_OnClickedTabEvent Parms{};
-
-	Parms.TabWidget = TabWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MainMenu.WBP_MainMenu_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_MainMenu_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_MainMenu_C", "BndEvt__WBP_MainMenu_WBP_Tab_Key_R_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_MainMenu.WBP_MainMenu_C.OnNextEvent
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   OldIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_MainMenu.WBP_MainMenu_C.BndEvt__WBP_MainMenu_WBP_Tab_Key_L_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_MainMenu_C::OnNextEvent(int32 OldIndex, int32 NewIndex)
+void UWBP_MainMenu_C::BndEvt__WBP_MainMenu_WBP_Tab_Key_L_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_C", "OnNextEvent");
+		Func = Class->GetFunction("WBP_MainMenu_C", "BndEvt__WBP_MainMenu_WBP_Tab_Key_L_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
 
-	Params::WBP_MainMenu_C_OnNextEvent Parms{};
-
-	Parms.OldIndex = OldIndex;
-	Parms.NewIndex = NewIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_MainMenu.WBP_MainMenu_C.OnPrevEvent
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   OldIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_MainMenu.WBP_MainMenu_C.Anm_Open
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_MainMenu_C::OnPrevEvent(int32 OldIndex, int32 NewIndex)
+void UWBP_MainMenu_C::Anm_Open()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_C", "OnPrevEvent");
+		Func = Class->GetFunction("WBP_MainMenu_C", "Anm_Open");
 
-	Params::WBP_MainMenu_C_OnPrevEvent Parms{};
-
-	Parms.OldIndex = OldIndex;
-	Parms.NewIndex = NewIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_MainMenu.WBP_MainMenu_C.RegisterPanelWidget
-// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPanelWidget**                    PanelWidget                                            (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MainMenu_C::RegisterPanelWidget(class UPanelWidget** PanelWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_C", "RegisterPanelWidget");
-
-	Params::WBP_MainMenu_C_RegisterPanelWidget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (PanelWidget != nullptr)
-		*PanelWidget = Parms.PanelWidget;
-}
-
-
-// Function WBP_MainMenu.WBP_MainMenu_C.SelectByMainMenuType
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_MainMenu.WBP_MainMenu_C.Anm_FocusToNormal
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EPalUIInGameMainMenuTabType             Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_C::SelectByMainMenuType(EPalUIInGameMainMenuTabType Type)
+void UWBP_MainMenu_C::Anm_FocusToNormal(EPalUIInGameMainMenuTabType Type)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_C", "SelectByMainMenuType");
+		Func = Class->GetFunction("WBP_MainMenu_C", "Anm_FocusToNormal");
 
-	Params::WBP_MainMenu_C_SelectByMainMenuType Parms{};
+	Params::WBP_MainMenu_C_Anm_FocusToNormal Parms{};
+
+	Parms.Type = Type;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu.WBP_MainMenu_C.Anm_focus
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalUIInGameMainMenuTabType             Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_C::Anm_focus(EPalUIInGameMainMenuTabType Type)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_C", "Anm_focus");
+
+	Params::WBP_MainMenu_C_Anm_focus Parms{};
 
 	Parms.Type = Type;
 

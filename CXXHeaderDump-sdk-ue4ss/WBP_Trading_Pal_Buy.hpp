@@ -20,7 +20,7 @@ class UWBP_Trading_Pal_Buy_C : public UPalUserWidgetOverlayUI
     class UWBP_Trading_Item_List_C* WBP_Trading_Item_List_2;                          // 0x04E8 (size: 0x8)
     class UWBP_Trading_Item_List_C* WBP_Trading_Item_List_3;                          // 0x04F0 (size: 0x8)
     class UWBP_Trading_Item_List_C* WBP_Trading_Item_List_4;                          // 0x04F8 (size: 0x8)
-    TArray<class UWBP_Trading_Item_List_C*> TradeList;                                // 0x0500 (size: 0x10)
+    TArray<UWBP_Trading_Item_List_C*> TradeList;                                      // 0x0500 (size: 0x10)
     class UPalMapObjectPalBoothModel* PalBoothModel;                                  // 0x0510 (size: 0x8)
     int32 CurrentSelectIndex;                                                         // 0x0518 (size: 0x4)
     bool Tradeable;                                                                   // 0x051C (size: 0x1)

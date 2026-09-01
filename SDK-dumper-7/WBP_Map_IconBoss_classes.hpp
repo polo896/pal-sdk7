@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "WBP_WorldMap_IconBase_NoDesign_classes.hpp"
 #include "Pal_structs.hpp"
 #include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "WBP_WorldMap_IconBase_NoDesign_classes.hpp"
 
 
 namespace SDK
@@ -48,14 +48,14 @@ public:
 	class FName                                   MyMapName;                                         // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UpdateBossIconState();
-	void SetOilrig(int32 Level_0, class FName Character_Id_0, const struct FVector& Location, class FName MapName);
-	void SetBoss(class FName CharacterID, int32 Level_0, class FName Spawner_Id_0, class FName OriginalCharacterId, class FName OriginalSpawnerID, const struct FVector& Location, class FName MapName);
-	void IsHiddenLocation(bool* bIsHidden);
-	void GetInvisibleButton(class UWidget** Button);
-	void ExecuteUbergraph_WBP_Map_IconBoss(int32 EntryPoint);
-	void BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 	void BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void ExecuteUbergraph_WBP_Map_IconBoss(int32 EntryPoint);
+	void GetInvisibleButton(class UWidget** Button);
+	void IsHiddenLocation(bool* bIsHidden);
+	void SetBoss(class FName CharacterID, int32 Level_0, class FName Spawner_Id_0, class FName OriginalCharacterId, class FName OriginalSpawnerID, const struct FVector& Location, class FName MapName);
+	void SetOilrig(int32 Level_0, class FName Character_Id_0, const struct FVector& Location, class FName MapName);
+	void UpdateBossIconState();
 
 	bool GetLocationOnLandscape(struct FVector* OutLocation) const;
 

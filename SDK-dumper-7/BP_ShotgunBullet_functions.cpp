@@ -17,17 +17,23 @@
 namespace SDK
 {
 
-// Function BP_ShotgunBullet.BP_ShotgunBullet_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_ShotgunBullet.BP_ShotgunBullet_C.ExecuteUbergraph_BP_ShotgunBullet
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ShotgunBullet_C::ReceiveBeginPlay()
+void ABP_ShotgunBullet_C::ExecuteUbergraph_BP_ShotgunBullet(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShotgunBullet_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_ShotgunBullet_C", "ExecuteUbergraph_BP_ShotgunBullet");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_ShotgunBullet_C_ExecuteUbergraph_BP_ShotgunBullet Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -57,23 +63,17 @@ void ABP_ShotgunBullet_C::OnDestroy(class UPrimitiveComponent* HitComp, class AA
 }
 
 
-// Function BP_ShotgunBullet.BP_ShotgunBullet_C.ExecuteUbergraph_BP_ShotgunBullet
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ShotgunBullet.BP_ShotgunBullet_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_ShotgunBullet_C::ExecuteUbergraph_BP_ShotgunBullet(int32 EntryPoint)
+void ABP_ShotgunBullet_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShotgunBullet_C", "ExecuteUbergraph_BP_ShotgunBullet");
+		Func = Class->GetFunction("BP_ShotgunBullet_C", "ReceiveBeginPlay");
 
-	Params::BP_ShotgunBullet_C_ExecuteUbergraph_BP_ShotgunBullet Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

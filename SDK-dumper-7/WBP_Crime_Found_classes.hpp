@@ -33,12 +33,12 @@ public:
 	bool                                          DroneDisplaying;                                   // 0x02B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ClearFoundList();
-	void ExecuteUbergraph_WBP_Crime_Found(int32 EntryPoint);
-	void Finished_8752189C4872B9EED39A3DB743928758();
-	void Finished_DEA8290E42785E70DA2914B20F7C172E();
-	void SetCrimesFound(const TArray<class FName>& CrimeIds);
 	void SetDroneFound();
+	void SetCrimesFound(const TArray<class FName>& CrimeIds);
+	void Finished_DEA8290E42785E70DA2914B20F7C172E();
+	void Finished_8752189C4872B9EED39A3DB743928758();
+	void ExecuteUbergraph_WBP_Crime_Found(int32 EntryPoint);
+	void ClearFoundList();
 
 public:
 	static class UClass* StaticClass()

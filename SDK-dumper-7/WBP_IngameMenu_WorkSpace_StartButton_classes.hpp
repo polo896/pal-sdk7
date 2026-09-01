@@ -32,9 +32,9 @@ public:
 	TMulticastInlineDelegate<void()>              OnClicked;                                         // 0x02A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__WBP_IngameMenu_WorkSpace_StartButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void ExecuteUbergraph_WBP_IngameMenu_WorkSpace_StartButton(int32 EntryPoint);
 	void SetEnable(bool Enable);
+	void ExecuteUbergraph_WBP_IngameMenu_WorkSpace_StartButton(int32 EntryPoint);
+	void BndEvt__WBP_IngameMenu_WorkSpace_StartButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 
 public:
 	static class UClass* StaticClass()

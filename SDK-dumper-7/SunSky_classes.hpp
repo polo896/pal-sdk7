@@ -51,12 +51,12 @@ public:
 	double                                        HashVal;                                           // 0x0330(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_SunSky(int32 EntryPoint);
-	void GetHMSFromSolarTime(double SolarTime_0, int32* Hour, int32* Minute, int32* Second);
-	void IsDST(bool DSTEnable, int32 DSTStartMonth_0, int32 DSTStartDay_0, int32 DSTEndMonth_0, int32 DSTEndDay_0, int32 DSTSwitchHour_0, bool* IsDST_0);
-	void ReceiveTick(float DeltaSeconds);
-	void UpdateSun();
 	void UserConstructionScript();
+	void UpdateSun();
+	void ReceiveTick(float DeltaSeconds);
+	void IsDST(bool DSTEnable, int32 DSTStartMonth_0, int32 DSTStartDay_0, int32 DSTEndMonth_0, int32 DSTEndDay_0, int32 DSTSwitchHour_0, bool* IsDST_0);
+	void GetHMSFromSolarTime(double SolarTime_0, int32* Hour, int32* Minute, int32* Second);
+	void ExecuteUbergraph_SunSky(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

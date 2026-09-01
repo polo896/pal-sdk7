@@ -28,11 +28,11 @@ public:
 	class UNiagaraComponent*                      Niagara;                                           // 0x0180(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
-	void ActionStart(class APawn* ControlledPawn);
-	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
-	void ExecuteUbergraph_BP_AIAction_BaseCamp_Trantrum(int32 EntryPoint);
 	void カスタムイベント_0();
+	void ExecuteUbergraph_BP_AIAction_BaseCamp_Trantrum(int32 EntryPoint);
+	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
+	void ActionStart(class APawn* ControlledPawn);
+	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
 
 public:
 	static class UClass* StaticClass()

@@ -19,306 +19,68 @@
 namespace SDK::Params
 {
 
-// Function WBP_Quest.WBP_Quest_C.AddCompletedQuestId
+// Function WBP_Quest.WBP_Quest_C.UpdateTrackingKeyGuideText
+// 0x0088 (0x0088 - 0x0000)
+struct WBP_Quest_C_UpdateTrackingKeyGuideText final
+{
+public:
+	struct FDataTableRowHandle                    NewLocalVar_0;                                     // 0x0000(0x0010)(Edit, BlueprintVisible, NoDestructor)
+	struct FDataTableRowHandle                    NewLocalVar_1;                                     // 0x0010(0x0010)(Edit, BlueprintVisible, NoDestructor)
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0020(0x0018)()
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text_1;        // 0x0038(0x0018)()
+	bool                                          Temp_bool_Variable;                                // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalQuestManager*                       CallFunc_GetLocalQuestManager_ReturnValue;         // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsQuestCompleted_ReturnValue;             // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_62[0x2];                                       // 0x0062(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_GetTrackingQuestId_ReturnValue;           // 0x0064(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6D[0x3];                                       // 0x006D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select_Default;                             // 0x0070(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_Quest_C_UpdateTrackingKeyGuideText;
+
+// Function WBP_Quest.WBP_Quest_C.UpdateTabEnable
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_Quest_C_UpdateTabEnable final
+{
+public:
+	TArray<class UWBP_Quest_ListButton_C*>        CallFunc_GetCompletedQuestWidgetByType_Widgets;    // 0x0000(0x0010)(ReferenceParm, ContainsInstancedReference)
+	TArray<class UWBP_Quest_ListButton_C*>        CallFunc_GetOrderedQuestWidgetByType_Widgets;      // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
+	bool                                          CallFunc_Array_IsEmpty_ReturnValue;                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsEmpty_ReturnValue_1;              // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Quest_C_UpdateTabEnable;
+
+// Function WBP_Quest.WBP_Quest_C.Setup
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_Quest_C_Setup final
+{
+public:
+	TDelegate<void(class UWBP_Quest_ListButton_C* Widget)> K2Node_CreateDelegate_OutputDelegate;     // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UWBP_Quest_ListButton_C* Widget)> K2Node_CreateDelegate_OutputDelegate_1;   // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UWBP_Quest_ListButton_C* Widget)> K2Node_CreateDelegate_OutputDelegate_2;   // 0x0020(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Quest_List_C*                      CallFunc_Create_ReturnValue;                       // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Quest_C_Setup;
+
+// Function WBP_Quest.WBP_Quest_C.SetTrackingQuestId
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_Quest_C_AddCompletedQuestId final
-{
-public:
-	TArray<class FName>                           QuestIdArray;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_Quest_C_AddCompletedQuestId;
-
-// Function WBP_Quest.WBP_Quest_C.AddOrderedQuestData
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Quest_C_AddOrderedQuestData final
-{
-public:
-	TArray<class UPalQuestData*>                  QuestArray;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_Quest_C_AddOrderedQuestData;
-
-// Function WBP_Quest.WBP_Quest_C.AddQuestProgress
-// 0x00C0 (0x00C0 - 0x0000)
-struct WBP_Quest_C_AddQuestProgress final
-{
-public:
-	TArray<class UPalQuestBlock*>                 QuestBlocks;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalQuestBlock*                         CallFunc_Array_Get_Item;                           // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CanComplete_ReturnValue;                  // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetProgressText_OutText;                  // 0x0030(0x0018)()
-	class FText                                   CallFunc_GetDescriptionText_OutText;               // 0x0048(0x0018)()
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_61[0x3];                                       // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   Temp_text_Variable;                                // 0x0068(0x0018)()
-	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Quest_Objective_C*                 CallFunc_Create_ReturnValue;                       // 0x0088(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0090(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UPalQuestManager*                       CallFunc_GetLocalQuestManager_ReturnValue;         // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsQuestCompleted_ReturnValue;             // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A2[0x6];                                       // 0x00A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default;                             // 0x00A8(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_Quest_C_AddQuestProgress;
-
-// Function WBP_Quest.WBP_Quest_C.BndEvt__WBP_Quest_WBP_QuestTab_K2Node_ComponentBoundEvent_0_OnChangedFocusIndex__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Quest_C_BndEvt__WBP_Quest_WBP_QuestTab_K2Node_ComponentBoundEvent_0_OnChangedFocusIndex__DelegateSignature final
-{
-public:
-	int32                                         OldIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NewIndex;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                FocusTargetWidget;                                 // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Quest_C_BndEvt__WBP_Quest_WBP_QuestTab_K2Node_ComponentBoundEvent_0_OnChangedFocusIndex__DelegateSignature;
-
-// Function WBP_Quest.WBP_Quest_C.BndEvt__WBP_Quest_WBP_QuestTab_K2Node_ComponentBoundEvent_1_OnChangeEnableChild__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Quest_C_BndEvt__WBP_Quest_WBP_QuestTab_K2Node_ComponentBoundEvent_1_OnChangeEnableChild__DelegateSignature final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ChildWidget;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsEnable;                                          // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Quest_C_BndEvt__WBP_Quest_WBP_QuestTab_K2Node_ComponentBoundEvent_1_OnChangeEnableChild__DelegateSignature;
-
-// Function WBP_Quest.WBP_Quest_C.ExecuteUbergraph_WBP_Quest
-// 0x0068 (0x0068 - 0x0000)
-struct WBP_Quest_C_ExecuteUbergraph_WBP_Quest final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_ComponentBoundEvent_OldIndex;               // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_ComponentBoundEvent_NewIndex;               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                K2Node_ComponentBoundEvent_FocusTargetWidget;      // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                CallFunc_GetTopFocusTarget_Widget;                 // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Quest_ListButton_C*                CallFunc_GetTopQuestWidget_Widget;                 // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UPalRightStickScrollSubsystem*          CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalRightStickScrollSubsystem*          CallFunc_GetLocalPlayerSubsystem_ReturnValue_1;    // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_ComponentBoundEvent_Index;                  // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                K2Node_ComponentBoundEvent_ChildWidget;            // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_IsEnable;               // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_52[0x6];                                       // 0x0052(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0062(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_63[0x1];                                       // 0x0063(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Quest_C_ExecuteUbergraph_WBP_Quest;
-
-// Function WBP_Quest.WBP_Quest_C.GetCurrentDisplayQuestId
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Quest_C_GetCurrentDisplayQuestId final
-{
-public:
-	class FName                                   QuestId;                                           // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Quest_C_GetCurrentDisplayQuestId;
-
-// Function WBP_Quest.WBP_Quest_C.GetFocusTargetByQuestId
-// 0x0060 (0x0060 - 0x0000)
-struct WBP_Quest_C_GetFocusTargetByQuestId final
+struct WBP_Quest_C_SetTrackingQuestId final
 {
 public:
 	class FName                                   QuestId;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                Widget;                                            // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UWBP_Quest_ListButton_C*>        CallFunc_GetAllQuestWidget_NewParam;               // 0x0020(0x0010)(ReferenceParm, ContainsInstancedReference)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Quest_ListButton_C*                CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalQuestData*                          CallFunc_GetQuestData_QuestData;                   // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetQuestId_ReturnValue;                   // 0x0050(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Quest_C_GetFocusTargetByQuestId;
-
-// Function WBP_Quest.WBP_Quest_C.GetTopFocusTarget
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Quest_C_GetTopFocusTarget final
-{
-public:
-	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_GetTopFocusTarget_OrderedQuest_Widget;    // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Quest_C_GetTopFocusTarget;
-
-// Function WBP_Quest.WBP_Quest_C.GetTopQuestData
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Quest_C_GetTopQuestData final
-{
-public:
-	class UPalQuestData*                          QuestData;                                         // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalQuestData*                          CallFunc_GetTopQuestData_QuestData;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Quest_C_GetTopQuestData;
-
-// Function WBP_Quest.WBP_Quest_C.OnClickedQuestButton_Binded
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_Quest_C_OnClickedQuestButton_Binded final
-{
-public:
-	class UWBP_Quest_ListButton_C*                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TSoftObjectPtr<class UWBP_Quest_ListButton_C> CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue; // 0x0008(0x0030)(InstancedReference, UObjectWrapper, HasGetValueTypeHash)
-	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Quest_ListButton_C*                K2Node_DynamicCast_AsWBP_Quest_List_Button;        // 0x0040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Quest_C_OnClickedQuestButton_Binded;
-
-// Function WBP_Quest.WBP_Quest_C.OnHoveredQuestButton_Binded
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Quest_C_OnHoveredQuestButton_Binded final
-{
-public:
-	class UWBP_Quest_ListButton_C*                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Quest_C_OnHoveredQuestButton_Binded;
-
-// Function WBP_Quest.WBP_Quest_C.OnHoveredRewardItemSlot
-// 0x0130 (0x0130 - 0x0000)
-struct WBP_Quest_C_OnHoveredRewardItemSlot final
-{
-public:
-	class UWBP_PalItemSlotButtonBase_C*           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalItemAndNum                         CallFunc_GetItemAndNum_ItemAndNum;                 // 0x0010(0x002C)(NoDestructor)
-	struct FPalItemAndNum                         K2Node_MakeStruct_PalItemAndNum;                   // 0x003C(0x002C)(NoDestructor)
-	struct FPalUICommonItemInfoDisplayData        K2Node_MakeStruct_PalUICommonItemInfoDisplayData;  // 0x0068(0x00C8)(ContainsInstancedReference)
-};
-DUMPER7_ASSERTS_WBP_Quest_C_OnHoveredRewardItemSlot;
-
-// Function WBP_Quest.WBP_Quest_C.OnUnhoveredQuestButton_Binded
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Quest_C_OnUnhoveredQuestButton_Binded final
-{
-public:
-	class UWBP_Quest_ListButton_C*                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Quest_C_OnUnhoveredQuestButton_Binded;
-
-// Function WBP_Quest.WBP_Quest_C.OnUnhoveredRewardItemSlot
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Quest_C_OnUnhoveredRewardItemSlot final
-{
-public:
-	class UWBP_PalItemSlotButtonBase_C*           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Quest_C_OnUnhoveredRewardItemSlot;
-
-// Function WBP_Quest.WBP_Quest_C.ResetQuestProgressDetail
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_Quest_C_ResetQuestProgressDetail final
-{
-public:
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Quest_Objective_C*                 CallFunc_Array_Get_Item;                           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Quest_C_ResetQuestProgressDetail;
-
-// Function WBP_Quest.WBP_Quest_C.SelectTab
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_Quest_C_SelectTab final
-{
-public:
-	EPalQuestType                                 QuestType;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Quest_C_SelectTab;
-
-// Function WBP_Quest.WBP_Quest_C.SetCommonRewardData
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Quest_C_SetCommonRewardData final
-{
-public:
-	class FText                                   NewParam;                                          // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_Quest_C_SetCommonRewardData;
-
-// Function WBP_Quest.WBP_Quest_C.SetDisplayQuestData
-// 0x01F0 (0x01F0 - 0x0000)
-struct WBP_Quest_C_SetDisplayQuestData final
-{
-public:
-	class UPalQuestData*                          QuestData;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    NewLocalVar_2;                                     // 0x0008(0x0010)(Edit, BlueprintVisible, NoDestructor)
-	struct FDataTableRowHandle                    NewLocalVar;                                       // 0x0018(0x0010)(Edit, BlueprintVisible, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalCommonQuestRewardData              CallFunc_GetCustomDisplayRewardData_ReturnValue;   // 0x0030(0x0068)()
-	struct FPalCommonQuestRewardData              CallFunc_GetCommonRewardData_OutData;              // 0x0098(0x0068)()
-	class FName                                   CallFunc_GetQuestId_ReturnValue;                   // 0x0100(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UPalQuestBlock*>                 CallFunc_GetSortedQuestBlocksForUI_OutBlocks;      // 0x0108(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_GetQuestDescriptionText_OutText;          // 0x0118(0x0018)()
-	class FText                                   CallFunc_GetQuestNameText_OutText;                 // 0x0130(0x0018)()
-	class FName                                   CallFunc_GetQuestId_ReturnValue_1;                 // 0x0148(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0151(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0152(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_153[0x5];                                      // 0x0153(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0158(0x0018)()
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text_1;        // 0x0170(0x0018)()
-	struct FPalQuestDataSetRow                    CallFunc_GetDataTableRowFromName_OutRow;           // 0x0188(0x0048)()
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x01D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x01D2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x01D3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D4[0x4];                                      // 0x01D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalQuestManager*                       CallFunc_GetLocalQuestManager_ReturnValue;         // 0x01D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsQuestCompleted_ReturnValue;             // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E1[0x3];                                      // 0x01E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_GetTrackingQuestId_ReturnValue;           // 0x01E4(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x01EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x01ED(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x01EE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x01EF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Quest_C_SetDisplayQuestData;
-
-// Function WBP_Quest.WBP_Quest_C.SetQuestDescription
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Quest_C_SetQuestDescription final
-{
-public:
-	class FText                                   QuestDescText;                                     // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_Quest_C_SetQuestDescription;
-
-// Function WBP_Quest.WBP_Quest_C.SetQuestName
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Quest_C_SetQuestName final
-{
-public:
-	class FText                                   QuestNameText;                                     // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_Quest_C_SetQuestName;
+DUMPER7_ASSERTS_WBP_Quest_C_SetTrackingQuestId;
 
 // Function WBP_Quest.WBP_Quest_C.SetRewardData
 // 0x03A8 (0x03A8 - 0x0000)
@@ -409,68 +171,306 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Quest_C_SetRewardData;
 
-// Function WBP_Quest.WBP_Quest_C.SetTrackingQuestId
+// Function WBP_Quest.WBP_Quest_C.SetQuestName
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Quest_C_SetQuestName final
+{
+public:
+	class FText                                   QuestNameText;                                     // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_Quest_C_SetQuestName;
+
+// Function WBP_Quest.WBP_Quest_C.SetQuestDescription
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Quest_C_SetQuestDescription final
+{
+public:
+	class FText                                   QuestDescText;                                     // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_Quest_C_SetQuestDescription;
+
+// Function WBP_Quest.WBP_Quest_C.SetDisplayQuestData
+// 0x01F0 (0x01F0 - 0x0000)
+struct WBP_Quest_C_SetDisplayQuestData final
+{
+public:
+	class UPalQuestData*                          QuestData;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    NewLocalVar_2;                                     // 0x0008(0x0010)(Edit, BlueprintVisible, NoDestructor)
+	struct FDataTableRowHandle                    NewLocalVar;                                       // 0x0018(0x0010)(Edit, BlueprintVisible, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalCommonQuestRewardData              CallFunc_GetCustomDisplayRewardData_ReturnValue;   // 0x0030(0x0068)()
+	struct FPalCommonQuestRewardData              CallFunc_GetCommonRewardData_OutData;              // 0x0098(0x0068)()
+	class FName                                   CallFunc_GetQuestId_ReturnValue;                   // 0x0100(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UPalQuestBlock*>                 CallFunc_GetSortedQuestBlocksForUI_OutBlocks;      // 0x0108(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_GetQuestDescriptionText_OutText;          // 0x0118(0x0018)()
+	class FText                                   CallFunc_GetQuestNameText_OutText;                 // 0x0130(0x0018)()
+	class FName                                   CallFunc_GetQuestId_ReturnValue_1;                 // 0x0148(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0151(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0152(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_153[0x5];                                      // 0x0153(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0158(0x0018)()
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text_1;        // 0x0170(0x0018)()
+	struct FPalQuestDataSetRow                    CallFunc_GetDataTableRowFromName_OutRow;           // 0x0188(0x0048)()
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x01D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x01D2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x01D3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D4[0x4];                                      // 0x01D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalQuestManager*                       CallFunc_GetLocalQuestManager_ReturnValue;         // 0x01D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsQuestCompleted_ReturnValue;             // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E1[0x3];                                      // 0x01E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_GetTrackingQuestId_ReturnValue;           // 0x01E4(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x01EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x01ED(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x01EE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x01EF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Quest_C_SetDisplayQuestData;
+
+// Function WBP_Quest.WBP_Quest_C.SetCommonRewardData
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Quest_C_SetCommonRewardData final
+{
+public:
+	class FText                                   NewParam;                                          // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_Quest_C_SetCommonRewardData;
+
+// Function WBP_Quest.WBP_Quest_C.SelectTab
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_Quest_C_SelectTab final
+{
+public:
+	EPalQuestType                                 QuestType;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Quest_C_SelectTab;
+
+// Function WBP_Quest.WBP_Quest_C.ResetQuestProgressDetail
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_Quest_C_ResetQuestProgressDetail final
+{
+public:
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Quest_Objective_C*                 CallFunc_Array_Get_Item;                           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Quest_C_ResetQuestProgressDetail;
+
+// Function WBP_Quest.WBP_Quest_C.OnUnhoveredRewardItemSlot
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_Quest_C_SetTrackingQuestId final
+struct WBP_Quest_C_OnUnhoveredRewardItemSlot final
+{
+public:
+	class UWBP_PalItemSlotButtonBase_C*           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Quest_C_OnUnhoveredRewardItemSlot;
+
+// Function WBP_Quest.WBP_Quest_C.OnUnhoveredQuestButton_Binded
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Quest_C_OnUnhoveredQuestButton_Binded final
+{
+public:
+	class UWBP_Quest_ListButton_C*                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Quest_C_OnUnhoveredQuestButton_Binded;
+
+// Function WBP_Quest.WBP_Quest_C.OnHoveredRewardItemSlot
+// 0x0130 (0x0130 - 0x0000)
+struct WBP_Quest_C_OnHoveredRewardItemSlot final
+{
+public:
+	class UWBP_PalItemSlotButtonBase_C*           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalItemAndNum                         CallFunc_GetItemAndNum_ItemAndNum;                 // 0x0010(0x002C)(NoDestructor)
+	struct FPalItemAndNum                         K2Node_MakeStruct_PalItemAndNum;                   // 0x003C(0x002C)(NoDestructor)
+	struct FPalUICommonItemInfoDisplayData        K2Node_MakeStruct_PalUICommonItemInfoDisplayData;  // 0x0068(0x00C8)(ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_WBP_Quest_C_OnHoveredRewardItemSlot;
+
+// Function WBP_Quest.WBP_Quest_C.OnHoveredQuestButton_Binded
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Quest_C_OnHoveredQuestButton_Binded final
+{
+public:
+	class UWBP_Quest_ListButton_C*                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Quest_C_OnHoveredQuestButton_Binded;
+
+// Function WBP_Quest.WBP_Quest_C.OnClickedQuestButton_Binded
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_Quest_C_OnClickedQuestButton_Binded final
+{
+public:
+	class UWBP_Quest_ListButton_C*                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TSoftObjectPtr<class UWBP_Quest_ListButton_C> CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue; // 0x0008(0x0030)(InstancedReference, UObjectWrapper, HasGetValueTypeHash)
+	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Quest_ListButton_C*                K2Node_DynamicCast_AsWBP_Quest_List_Button;        // 0x0040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Quest_C_OnClickedQuestButton_Binded;
+
+// Function WBP_Quest.WBP_Quest_C.GetTopQuestData
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Quest_C_GetTopQuestData final
+{
+public:
+	class UPalQuestData*                          QuestData;                                         // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalQuestData*                          CallFunc_GetTopQuestData_QuestData;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Quest_C_GetTopQuestData;
+
+// Function WBP_Quest.WBP_Quest_C.GetCurrentDisplayQuestId
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Quest_C_GetCurrentDisplayQuestId final
+{
+public:
+	class FName                                   QuestId;                                           // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Quest_C_GetCurrentDisplayQuestId;
+
+// Function WBP_Quest.WBP_Quest_C.ExecuteUbergraph_WBP_Quest
+// 0x0068 (0x0068 - 0x0000)
+struct WBP_Quest_C_ExecuteUbergraph_WBP_Quest final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_ComponentBoundEvent_OldIndex;               // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_ComponentBoundEvent_NewIndex;               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                K2Node_ComponentBoundEvent_FocusTargetWidget;      // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_GetTopFocusTarget_Widget;                 // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Quest_ListButton_C*                CallFunc_GetTopQuestWidget_Widget;                 // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPalRightStickScrollSubsystem*          CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalRightStickScrollSubsystem*          CallFunc_GetLocalPlayerSubsystem_ReturnValue_1;    // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_ComponentBoundEvent_Index;                  // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                K2Node_ComponentBoundEvent_ChildWidget;            // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_IsEnable;               // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_52[0x6];                                       // 0x0052(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0062(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_63[0x1];                                       // 0x0063(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Quest_C_ExecuteUbergraph_WBP_Quest;
+
+// Function WBP_Quest.WBP_Quest_C.BndEvt__WBP_Quest_WBP_QuestTab_K2Node_ComponentBoundEvent_1_OnChangeEnableChild__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Quest_C_BndEvt__WBP_Quest_WBP_QuestTab_K2Node_ComponentBoundEvent_1_OnChangeEnableChild__DelegateSignature final
+{
+public:
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ChildWidget;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsEnable;                                          // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Quest_C_BndEvt__WBP_Quest_WBP_QuestTab_K2Node_ComponentBoundEvent_1_OnChangeEnableChild__DelegateSignature;
+
+// Function WBP_Quest.WBP_Quest_C.GetTopFocusTarget
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Quest_C_GetTopFocusTarget final
+{
+public:
+	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetTopFocusTarget_OrderedQuest_Widget;    // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Quest_C_GetTopFocusTarget;
+
+// Function WBP_Quest.WBP_Quest_C.GetFocusTargetByQuestId
+// 0x0060 (0x0060 - 0x0000)
+struct WBP_Quest_C_GetFocusTargetByQuestId final
 {
 public:
 	class FName                                   QuestId;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                Widget;                                            // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UWBP_Quest_ListButton_C*>        CallFunc_GetAllQuestWidget_NewParam;               // 0x0020(0x0010)(ReferenceParm, ContainsInstancedReference)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Quest_ListButton_C*                CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalQuestData*                          CallFunc_GetQuestData_QuestData;                   // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetQuestId_ReturnValue;                   // 0x0050(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Quest_C_SetTrackingQuestId;
+DUMPER7_ASSERTS_WBP_Quest_C_GetFocusTargetByQuestId;
 
-// Function WBP_Quest.WBP_Quest_C.Setup
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_Quest_C_Setup final
+// Function WBP_Quest.WBP_Quest_C.BndEvt__WBP_Quest_WBP_QuestTab_K2Node_ComponentBoundEvent_0_OnChangedFocusIndex__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Quest_C_BndEvt__WBP_Quest_WBP_QuestTab_K2Node_ComponentBoundEvent_0_OnChangedFocusIndex__DelegateSignature final
 {
 public:
-	TDelegate<void(class UWBP_Quest_ListButton_C* Widget)> K2Node_CreateDelegate_OutputDelegate;     // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UWBP_Quest_ListButton_C* Widget)> K2Node_CreateDelegate_OutputDelegate_1;   // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UWBP_Quest_ListButton_C* Widget)> K2Node_CreateDelegate_OutputDelegate_2;   // 0x0020(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Quest_List_C*                      CallFunc_Create_ReturnValue;                       // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OldIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewIndex;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                FocusTargetWidget;                                 // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Quest_C_Setup;
+DUMPER7_ASSERTS_WBP_Quest_C_BndEvt__WBP_Quest_WBP_QuestTab_K2Node_ComponentBoundEvent_0_OnChangedFocusIndex__DelegateSignature;
 
-// Function WBP_Quest.WBP_Quest_C.UpdateTabEnable
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_Quest_C_UpdateTabEnable final
+// Function WBP_Quest.WBP_Quest_C.AddQuestProgress
+// 0x00C0 (0x00C0 - 0x0000)
+struct WBP_Quest_C_AddQuestProgress final
 {
 public:
-	TArray<class UWBP_Quest_ListButton_C*>        CallFunc_GetCompletedQuestWidgetByType_Widgets;    // 0x0000(0x0010)(ReferenceParm, ContainsInstancedReference)
-	TArray<class UWBP_Quest_ListButton_C*>        CallFunc_GetOrderedQuestWidgetByType_Widgets;      // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
-	bool                                          CallFunc_Array_IsEmpty_ReturnValue;                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsEmpty_ReturnValue_1;              // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UPalQuestBlock*>                 QuestBlocks;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalQuestBlock*                         CallFunc_Array_Get_Item;                           // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanComplete_ReturnValue;                  // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetProgressText_OutText;                  // 0x0030(0x0018)()
+	class FText                                   CallFunc_GetDescriptionText_OutText;               // 0x0048(0x0018)()
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_61[0x3];                                       // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Temp_text_Variable;                                // 0x0068(0x0018)()
+	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Quest_Objective_C*                 CallFunc_Create_ReturnValue;                       // 0x0088(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0090(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPalQuestManager*                       CallFunc_GetLocalQuestManager_ReturnValue;         // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsQuestCompleted_ReturnValue;             // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A2[0x6];                                       // 0x00A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select_Default;                             // 0x00A8(0x0018)()
 };
-DUMPER7_ASSERTS_WBP_Quest_C_UpdateTabEnable;
+DUMPER7_ASSERTS_WBP_Quest_C_AddQuestProgress;
 
-// Function WBP_Quest.WBP_Quest_C.UpdateTrackingKeyGuideText
-// 0x0088 (0x0088 - 0x0000)
-struct WBP_Quest_C_UpdateTrackingKeyGuideText final
+// Function WBP_Quest.WBP_Quest_C.AddOrderedQuestData
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Quest_C_AddOrderedQuestData final
 {
 public:
-	struct FDataTableRowHandle                    NewLocalVar_0;                                     // 0x0000(0x0010)(Edit, BlueprintVisible, NoDestructor)
-	struct FDataTableRowHandle                    NewLocalVar_1;                                     // 0x0010(0x0010)(Edit, BlueprintVisible, NoDestructor)
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0020(0x0018)()
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text_1;        // 0x0038(0x0018)()
-	bool                                          Temp_bool_Variable;                                // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalQuestManager*                       CallFunc_GetLocalQuestManager_ReturnValue;         // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsQuestCompleted_ReturnValue;             // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_62[0x2];                                       // 0x0062(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_GetTrackingQuestId_ReturnValue;           // 0x0064(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6D[0x3];                                       // 0x006D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default;                             // 0x0070(0x0018)()
+	TArray<class UPalQuestData*>                  QuestArray;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-DUMPER7_ASSERTS_WBP_Quest_C_UpdateTrackingKeyGuideText;
+DUMPER7_ASSERTS_WBP_Quest_C_AddOrderedQuestData;
+
+// Function WBP_Quest.WBP_Quest_C.AddCompletedQuestId
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Quest_C_AddCompletedQuestId final
+{
+public:
+	TArray<class FName>                           QuestIdArray;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_Quest_C_AddCompletedQuestId;
 
 }
 

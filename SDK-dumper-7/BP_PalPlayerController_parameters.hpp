@@ -19,166 +19,439 @@
 namespace SDK::Params
 {
 
-// Function BP_PalPlayerController.BP_PalPlayerController_C.CanRideSupportPal
+// Function BP_PalPlayerController.BP_PalPlayerController_C.Warp Spectator
 // 0x0018 (0x0018 - 0x0000)
-struct BP_PalPlayerController_C_CanRideSupportPal final
+struct BP_PalPlayerController_C_Warp_Spectator final
 {
 public:
-	bool                                          CanRide;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsSwimming_ReturnValue;                   // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_TryGetIndividualActor_ReturnValue;        // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsSwimPal_ReturnValue;                    // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Move;                                              // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalPlayerController_C_CanRideSupportPal;
+DUMPER7_ASSERTS_BP_PalPlayerController_C_Warp_Spectator;
 
-// Function BP_PalPlayerController.BP_PalPlayerController_C.ChangeMoveRate
+// Function BP_PalPlayerController.BP_PalPlayerController_C.TryPlayWhistleMontage
+// 0x0018 (0x0018 - 0x0000)
+struct BP_PalPlayerController_C_TryPlayWhistleMontage final
+{
+public:
+	class APalCharacter*                          CallFunc_GetDefaultPlayerCharacter_ReturnValue;    // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanPlayWhistleForRideCall_ReturnValue;    // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_PlayAnimMontage_ReturnValue;              // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalPlayerController_C_TryPlayWhistleMontage;
+
+// Function BP_PalPlayerController.BP_PalPlayerController_C.SetupSupportPal
+// 0x0038 (0x0038 - 0x0000)
+struct BP_PalPlayerController_C_SetupSupportPal final
+{
+public:
+	class APawn*                                  PossessPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          K2Node_DynamicCast_AsPal_Character;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_TryGetIndividualActor_ReturnValue;        // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue;          // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalPlayerController_C_SetupSupportPal;
+
+// Function BP_PalPlayerController.BP_PalPlayerController_C.SetupDamageReaction
 // 0x0008 (0x0008 - 0x0000)
-struct BP_PalPlayerController_C_ChangeMoveRate final
+struct BP_PalPlayerController_C_SetupDamageReaction final
 {
 public:
-	double                                        Rate;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  Pawn_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalPlayerController_C_ChangeMoveRate;
+DUMPER7_ASSERTS_BP_PalPlayerController_C_SetupDamageReaction;
 
-// Function BP_PalPlayerController.BP_PalPlayerController_C.ChangeMoveSpeed
-// 0x0028 (0x0028 - 0x0000)
-struct BP_PalPlayerController_C_ChangeMoveSpeed final
+// Function BP_PalPlayerController.BP_PalPlayerController_C.SetSlotID_ToServer
+// 0x0004 (0x0004 - 0x0000)
+struct BP_PalPlayerController_C_SetSlotID_ToServer final
+{
+public:
+	int32                                         ID;                                                // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalPlayerController_C_SetSlotID_ToServer;
+
+// Function BP_PalPlayerController.BP_PalPlayerController_C.SetOtomoSlot
+// 0x0004 (0x0004 - 0x0000)
+struct BP_PalPlayerController_C_SetOtomoSlot final
+{
+public:
+	int32                                         SlotId;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalPlayerController_C_SetOtomoSlot;
+
+// Function BP_PalPlayerController.BP_PalPlayerController_C.RideSupportPal
+// 0x0230 (0x0230 - 0x0000)
+struct BP_PalPlayerController_C_RideSupportPal final
 {
 public:
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalPlayerCharacter*                    K2Node_DynamicCast_AsPal_Player_Character;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalCharacterMovementComponent*         CallFunc_GetPalCharacterMovementComponent_ReturnValue; // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetWalkSpeedMultiplier_speed_ImplicitCast; // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue_1;                 // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UCharacterMovementComponent*            CallFunc_GetComponentByClass_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0020(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue_2;                 // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_TryGetIndividualActor_ReturnValue;        // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x00A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RideTo_ReturnValue;                       // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x00C0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCharacterMovementComponent*            CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0120(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPalShooterSpringArmComponent*          CallFunc_GetComponentByClass_ReturnValue_2;        // 0x0128(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_131[0x7];                                      // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_AdjustActorToFloor_ReturnValue;           // 0x0138(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetActorTransform_SweepHitResult;      // 0x0140(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_K2_SetActorTransform_ReturnValue;         // 0x0228(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0229(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalPlayerController_C_ChangeMoveSpeed;
+DUMPER7_ASSERTS_BP_PalPlayerController_C_RideSupportPal;
 
-// Function BP_PalPlayerController.BP_PalPlayerController_C.ChangeTargetPlayer
+// Function BP_PalPlayerController.BP_PalPlayerController_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
-struct BP_PalPlayerController_C_ChangeTargetPlayer final
+struct BP_PalPlayerController_C_ReceiveTick final
 {
 public:
-	int32                                         AddPlayerIndex;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalPlayerController_C_ChangeTargetPlayer;
+DUMPER7_ASSERTS_BP_PalPlayerController_C_ReceiveTick;
 
-// Function BP_PalPlayerController.BP_PalPlayerController_C.CreatedOtomoIndividualHandleCallback
-// 0x0050 (0x0050 - 0x0000)
-struct BP_PalPlayerController_C_CreatedOtomoIndividualHandleCallback final
+// Function BP_PalPlayerController.BP_PalPlayerController_C.ReceivePossess
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PalPlayerController_C_ReceivePossess final
+{
+public:
+	class APawn*                                  PossessedPawn;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalPlayerController_C_ReceivePossess;
+
+// Function BP_PalPlayerController.BP_PalPlayerController_C.ReceiveEndPlay
+// 0x0001 (0x0001 - 0x0000)
+struct BP_PalPlayerController_C_ReceiveEndPlay final
+{
+public:
+	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalPlayerController_C_ReceiveEndPlay;
+
+// Function BP_PalPlayerController.BP_PalPlayerController_C.PlayStepAction
+// 0x01A0 (0x01A0 - 0x0000)
+struct BP_PalPlayerController_C_PlayStepAction final
+{
+public:
+	EPalStepAxisType                              Axis;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              Direction;                                         // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalActionType                                StepActionType;                                    // 0x0018(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_GetLowBodyPalCharacter_ReturnValue;       // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalStaticCharacterParameterComponent*  CallFunc_GetComponentByClass_ReturnValue;          // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue;       // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Conv_Vector2DToVector_ReturnValue;        // 0x0048(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_GetLowBodyPalCharacter_ReturnValue_1;     // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_68[0x8];                                       // 0x0068(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FActionDynamicParameter                K2Node_MakeStruct_ActionDynamicParameter;          // 0x0070(0x0100)()
+	class UPalActionComponent*                    CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0170(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_179[0x7];                                      // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UPalActionBase>             CallFunc_Map_Find_Value;                           // 0x0180(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_189[0x7];                                      // 0x0189(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalActionBase*                         CallFunc_PlayActionParameter_ReturnValue;          // 0x0190(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_Vector2DFloat_B_ImplicitCast;    // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalPlayerController_C_PlayStepAction;
+
+// Function BP_PalPlayerController.BP_PalPlayerController_C.PlayAirDashAction
+// 0x01A0 (0x01A0 - 0x0000)
+struct BP_PalPlayerController_C_PlayAirDashAction final
+{
+public:
+	EPalStepAxisType                              Axis;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              Direction;                                         // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalActionType                                StepActionType;                                    // 0x0018(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_GetLowBodyPalCharacter_ReturnValue;       // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalStaticCharacterParameterComponent*  CallFunc_GetComponentByClass_ReturnValue;          // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue;       // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Conv_Vector2DToVector_ReturnValue;        // 0x0048(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_GetLowBodyPalCharacter_ReturnValue_1;     // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_68[0x8];                                       // 0x0068(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FActionDynamicParameter                K2Node_MakeStruct_ActionDynamicParameter;          // 0x0070(0x0100)()
+	class UPalActionComponent*                    CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0170(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_179[0x7];                                      // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UPalActionBase>             CallFunc_Map_Find_Value;                           // 0x0180(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_189[0x7];                                      // 0x0189(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalActionBase*                         CallFunc_PlayActionParameter_ReturnValue;          // 0x0190(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_Vector2DFloat_B_ImplicitCast;    // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalPlayerController_C_PlayAirDashAction;
+
+// Function BP_PalPlayerController.BP_PalPlayerController_C.OnWhistleMontageEnded
+// 0x0020 (0x0020 - 0x0000)
+struct BP_PalPlayerController_C_OnWhistleMontageEnded final
+{
+public:
+	class UAnimMontage*                           Montage;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInterrupted;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_GetDefaultPlayerCharacter_ReturnValue;    // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalPlayerController_C_OnWhistleMontageEnded;
+
+// Function BP_PalPlayerController.BP_PalPlayerController_C.OnRep_SpectatorSpeedRate
+// 0x0088 (0x0088 - 0x0000)
+struct BP_PalPlayerController_C_OnRep_SpectatorSpeedRate final
+{
+public:
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0000(0x0050)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0060(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0078(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalPlayerController_C_OnRep_SpectatorSpeedRate;
+
+// Function BP_PalPlayerController.BP_PalPlayerController_C.OnLoaded_A49E2184416F26810394CD8D2FEDE763
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PalPlayerController_C_OnLoaded_A49E2184416F26810394CD8D2FEDE763 final
+{
+public:
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalPlayerController_C_OnLoaded_A49E2184416F26810394CD8D2FEDE763;
+
+// Function BP_PalPlayerController.BP_PalPlayerController_C.OnLoaded_A1A0202B475755BD73ED5998057E907E
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PalPlayerController_C_OnLoaded_A1A0202B475755BD73ED5998057E907E final
+{
+public:
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalPlayerController_C_OnLoaded_A1A0202B475755BD73ED5998057E907E;
+
+// Function BP_PalPlayerController.BP_PalPlayerController_C.OnDamagePlayerToPlayer
+// 0x00D8 (0x00D8 - 0x0000)
+struct BP_PalPlayerController_C_OnDamagePlayerToPlayer final
+{
+public:
+	struct FPalDamageResult                       DamageResult;                                      // 0x0000(0x0060)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalPlayerCharacter*                    K2Node_DynamicCast_AsPal_Player_Character;         // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalOtomoHolderComponentBase*           CallFunc_GetComponentByClass_ReturnValue;          // 0x0088(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_TryGetSpawnedOtomo_ReturnValue;           // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsServer_ReturnValue;                     // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x009A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetBattleMode_ReturnValue;                // 0x009B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AController*                            CallFunc_GetController_ReturnValue_1;              // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_MonsterAIController_Otomo_C*        K2Node_DynamicCast_AsBP_Monster_AIController_Otomo; // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue_1;                 // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalBattleManager*                      CallFunc_GetBattleManager_ReturnValue;             // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue_2;                 // 0x00C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalBattleManager*                      CallFunc_GetBattleManager_ReturnValue_1;           // 0x00D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalPlayerController_C_OnDamagePlayerToPlayer;
+
+// Function BP_PalPlayerController.BP_PalPlayerController_C.OnCompleteSpawnSupportPal
+// 0x0058 (0x0058 - 0x0000)
+struct BP_PalPlayerController_C_OnCompleteSpawnSupportPal final
 {
 public:
 	struct FPalInstanceID                         ID;                                                // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	int32                                         HoldIndex;                                         // 0x0030(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalIndividualCharacterHandle*          CreatedIndividualHandle;                           // 0x0038(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class UPalIndividualCharacterHandle*>  HoldOtomoIndividualHandles;                        // 0x0040(0x0010)(Edit, BlueprintVisible)
+	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_TryGetIndividualActor_ReturnValue;        // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalCharacterManager*                   CallFunc_GetCharacterManager_ReturnValue;          // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterHandle*          CallFunc_GetIndividualHandle_ReturnValue;          // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalPlayerController_C_CreatedOtomoIndividualHandleCallback;
+DUMPER7_ASSERTS_BP_PalPlayerController_C_OnCompleteSpawnSupportPal;
 
-// Function BP_PalPlayerController.BP_PalPlayerController_C.CreateOtomo
+// Function BP_PalPlayerController.BP_PalPlayerController_C.NotifyChangeTargetPlayerForClient
 // 0x0018 (0x0018 - 0x0000)
-struct BP_PalPlayerController_C_CreateOtomo final
+struct BP_PalPlayerController_C_NotifyChangeTargetPlayerForClient final
 {
 public:
-	bool                                          IsClientPlayer;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FPalDebugOtomoPalInfo>          TempOtomoList;                                     // 0x0008(0x0010)(Edit, BlueprintVisible)
+	class FString                                 TargetPlayerName;                                  // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	int32                                         maxPlayer;                                         // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         SelectPlayer;                                      // 0x0014(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalPlayerController_C_CreateOtomo;
+DUMPER7_ASSERTS_BP_PalPlayerController_C_NotifyChangeTargetPlayerForClient;
 
-// Function BP_PalPlayerController.BP_PalPlayerController_C.CreateOtomoByNameList
-// 0x0458 (0x0458 - 0x0000)
-struct BP_PalPlayerController_C_CreateOtomoByNameList final
+// Function BP_PalPlayerController.BP_PalPlayerController_C.LoadAndSpawnEffect
+// 0x0090 (0x0090 - 0x0000)
+struct BP_PalPlayerController_C_LoadAndSpawnEffect final
 {
 public:
-	TArray<struct FPalDebugOtomoPalInfo>          OtomoInfo;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	TArray<class FName>                           skill;                                             // 0x0010(0x0010)(Edit, BlueprintVisible)
-	int32                                         Temp_int_Variable;                                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FPalCharacterStatusRank>        K2Node_MakeArray_Array;                            // 0x0028(0x0010)(ReferenceParm)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalDebugOtomoPalInfo                  CallFunc_Array_Get_Item;                           // 0x0048(0x0050)()
-	struct FPalDataTableRowName_PassiveSkillData  CallFunc_Array_Get_Item_1;                         // 0x0098(0x0008)(NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_AD[0x3];                                       // 0x00AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B5[0x3];                                       // 0x00B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalPlayerState*                        CallFunc_GetPalPlayerState_ReturnValue;            // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalIndividualCharacterSaveParameter   CallFunc_GetInitializedCharacterSaveParemter_ParamSetup_outParameter; // 0x00C0(0x0370)()
-	bool                                          CallFunc_GetInitializedCharacterSaveParemter_ParamSetup_ReturnValue; // 0x0430(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_431[0x3];                                      // 0x0431(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FPalInstanceID& ID)> K2Node_CreateDelegate_OutputDelegate;           // 0x0434(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_444[0x4];                                      // 0x0444(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalCharacterManager*                   CallFunc_GetCharacterManager_ReturnValue;          // 0x0448(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalIndividualCharacterHandle*          CallFunc_CreateIndividual_ReturnValue;             // 0x0450(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TSoftObjectPtr<class UNiagaraSystem>          EffectPath;                                        // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	struct FTransform                             SpawnTransform;                                    // 0x0030(0x0060)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalPlayerController_C_CreateOtomoByNameList;
+DUMPER7_ASSERTS_BP_PalPlayerController_C_LoadAndSpawnEffect;
 
-// Function BP_PalPlayerController.BP_PalPlayerController_C.CreateOtomoByNameListToServer
+// Function BP_PalPlayerController.BP_PalPlayerController_C.InpActEvt_Up_K2Node_InputKeyEvent_0
+// 0x0018 (0x0018 - 0x0000)
+struct BP_PalPlayerController_C_InpActEvt_Up_K2Node_InputKeyEvent_0 final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalPlayerController_C_InpActEvt_Up_K2Node_InputKeyEvent_0;
+
+// Function BP_PalPlayerController.BP_PalPlayerController_C.InpActEvt_RightShift_K2Node_InputKeyEvent_8
+// 0x0018 (0x0018 - 0x0000)
+struct BP_PalPlayerController_C_InpActEvt_RightShift_K2Node_InputKeyEvent_8 final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalPlayerController_C_InpActEvt_RightShift_K2Node_InputKeyEvent_8;
+
+// Function BP_PalPlayerController.BP_PalPlayerController_C.InpActEvt_RightControl_K2Node_InputKeyEvent_9
+// 0x0018 (0x0018 - 0x0000)
+struct BP_PalPlayerController_C_InpActEvt_RightControl_K2Node_InputKeyEvent_9 final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalPlayerController_C_InpActEvt_RightControl_K2Node_InputKeyEvent_9;
+
+// Function BP_PalPlayerController.BP_PalPlayerController_C.InpActEvt_Right_K2Node_InputKeyEvent_3
+// 0x0018 (0x0018 - 0x0000)
+struct BP_PalPlayerController_C_InpActEvt_Right_K2Node_InputKeyEvent_3 final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalPlayerController_C_InpActEvt_Right_K2Node_InputKeyEvent_3;
+
+// Function BP_PalPlayerController.BP_PalPlayerController_C.InpActEvt_PageUp_K2Node_InputKeyEvent_2
+// 0x0018 (0x0018 - 0x0000)
+struct BP_PalPlayerController_C_InpActEvt_PageUp_K2Node_InputKeyEvent_2 final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalPlayerController_C_InpActEvt_PageUp_K2Node_InputKeyEvent_2;
+
+// Function BP_PalPlayerController.BP_PalPlayerController_C.InpActEvt_PageDown_K2Node_InputKeyEvent_1
+// 0x0018 (0x0018 - 0x0000)
+struct BP_PalPlayerController_C_InpActEvt_PageDown_K2Node_InputKeyEvent_1 final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalPlayerController_C_InpActEvt_PageDown_K2Node_InputKeyEvent_1;
+
+// Function BP_PalPlayerController.BP_PalPlayerController_C.InpActEvt_LeftShift_K2Node_InputKeyEvent_7
+// 0x0018 (0x0018 - 0x0000)
+struct BP_PalPlayerController_C_InpActEvt_LeftShift_K2Node_InputKeyEvent_7 final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalPlayerController_C_InpActEvt_LeftShift_K2Node_InputKeyEvent_7;
+
+// Function BP_PalPlayerController.BP_PalPlayerController_C.InpActEvt_LeftControl_K2Node_InputKeyEvent_6
+// 0x0018 (0x0018 - 0x0000)
+struct BP_PalPlayerController_C_InpActEvt_LeftControl_K2Node_InputKeyEvent_6 final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalPlayerController_C_InpActEvt_LeftControl_K2Node_InputKeyEvent_6;
+
+// Function BP_PalPlayerController.BP_PalPlayerController_C.InpActEvt_Left_K2Node_InputKeyEvent_4
+// 0x0018 (0x0018 - 0x0000)
+struct BP_PalPlayerController_C_InpActEvt_Left_K2Node_InputKeyEvent_4 final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalPlayerController_C_InpActEvt_Left_K2Node_InputKeyEvent_4;
+
+// Function BP_PalPlayerController.BP_PalPlayerController_C.InpActEvt_End_K2Node_InputKeyEvent_5
+// 0x0018 (0x0018 - 0x0000)
+struct BP_PalPlayerController_C_InpActEvt_End_K2Node_InputKeyEvent_5 final
+{
+public:
+	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalPlayerController_C_InpActEvt_End_K2Node_InputKeyEvent_5;
+
+// Function BP_PalPlayerController.BP_PalPlayerController_C.IncrementSelectOtomo_Internal
 // 0x0010 (0x0010 - 0x0000)
-struct BP_PalPlayerController_C_CreateOtomoByNameListToServer final
+struct BP_PalPlayerController_C_IncrementSelectOtomo_Internal final
 {
 public:
-	TArray<struct FPalDebugOtomoPalInfo>          OtomoInfo;                                         // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_BP_PalPlayerController_C_CreateOtomoByNameListToServer;
-
-// Function BP_PalPlayerController.BP_PalPlayerController_C.CreateOtomoToServer
-// 0x0001 (0x0001 - 0x0000)
-struct BP_PalPlayerController_C_CreateOtomoToServer final
-{
-public:
-	bool                                          IsClientServer;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalPlayerController_C_CreateOtomoToServer;
-
-// Function BP_PalPlayerController.BP_PalPlayerController_C.DecrementSelectOtomo_Internal
-// 0x0018 (0x0018 - 0x0000)
-struct BP_PalPlayerController_C_DecrementSelectOtomo_Internal final
-{
-public:
-	int32                                         BeforeDecrementID;                                 // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         BeforeIncrementID;                                 // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetSelectedOtomoID_ReturnValue;           // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetOtomoCount_ReturnValue;                // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetSelectedOtomoID_ReturnValue_1;         // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetSelectedOtomoID_ReturnValue_1;         // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalPlayerController_C_DecrementSelectOtomo_Internal;
+DUMPER7_ASSERTS_BP_PalPlayerController_C_IncrementSelectOtomo_Internal;
 
-// Function BP_PalPlayerController.BP_PalPlayerController_C.DoAirDash
-// 0x0018 (0x0018 - 0x0000)
-struct BP_PalPlayerController_C_DoAirDash final
+// Function BP_PalPlayerController.BP_PalPlayerController_C.GetTimerGaugeWidgetClass
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PalPlayerController_C_GetTimerGaugeWidgetClass final
 {
 public:
-	EPalStepAxisType                              Axis;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              DashDirection;                                     // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TSubclassOf<class UPalUserWidgetTimerGaugeBase> ReturnValue;                                     // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalPlayerController_C_DoAirDash;
+DUMPER7_ASSERTS_BP_PalPlayerController_C_GetTimerGaugeWidgetClass;
 
-// Function BP_PalPlayerController.BP_PalPlayerController_C.DoStep
-// 0x0018 (0x0018 - 0x0000)
-struct BP_PalPlayerController_C_DoStep final
+// Function BP_PalPlayerController.BP_PalPlayerController_C.GetSpectator
+// 0x0020 (0x0020 - 0x0000)
+struct BP_PalPlayerController_C_GetSpectator final
 {
 public:
-	EPalStepAxisType                              Axis;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bSpectatorMode;                                    // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              StepDirection;                                     // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalPlayerCharacter*                    K2Node_DynamicCast_AsPal_Player_Character;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalPlayerController_C_DoStep;
+DUMPER7_ASSERTS_BP_PalPlayerController_C_GetSpectator;
+
+// Function BP_PalPlayerController.BP_PalPlayerController_C.GetOffSupportPal
+// 0x0020 (0x0020 - 0x0000)
+struct BP_PalPlayerController_C_GetOffSupportPal final
+{
+public:
+	class APalCharacter*                          CallFunc_GetRiderCharacter_ReturnValue;            // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetOffFromPal_ReturnValue;                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_TryGetIndividualActor_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalPlayerController_C_GetOffSupportPal;
 
 // Function BP_PalPlayerController.BP_PalPlayerController_C.ExecuteUbergraph_BP_PalPlayerController
 // 0x1100 (0x1100 - 0x0000)
@@ -454,439 +727,166 @@ public:
 };
 DUMPER7_ASSERTS_BP_PalPlayerController_C_ExecuteUbergraph_BP_PalPlayerController;
 
-// Function BP_PalPlayerController.BP_PalPlayerController_C.GetOffSupportPal
-// 0x0020 (0x0020 - 0x0000)
-struct BP_PalPlayerController_C_GetOffSupportPal final
+// Function BP_PalPlayerController.BP_PalPlayerController_C.DoStep
+// 0x0018 (0x0018 - 0x0000)
+struct BP_PalPlayerController_C_DoStep final
 {
 public:
-	class APalCharacter*                          CallFunc_GetRiderCharacter_ReturnValue;            // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetOffFromPal_ReturnValue;                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_TryGetIndividualActor_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalPlayerController_C_GetOffSupportPal;
-
-// Function BP_PalPlayerController.BP_PalPlayerController_C.GetSpectator
-// 0x0020 (0x0020 - 0x0000)
-struct BP_PalPlayerController_C_GetSpectator final
-{
-public:
-	bool                                          bSpectatorMode;                                    // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalStepAxisType                              Axis;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalPlayerCharacter*                    K2Node_DynamicCast_AsPal_Player_Character;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              StepDirection;                                     // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalPlayerController_C_GetSpectator;
+DUMPER7_ASSERTS_BP_PalPlayerController_C_DoStep;
 
-// Function BP_PalPlayerController.BP_PalPlayerController_C.GetTimerGaugeWidgetClass
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PalPlayerController_C_GetTimerGaugeWidgetClass final
+// Function BP_PalPlayerController.BP_PalPlayerController_C.DoAirDash
+// 0x0018 (0x0018 - 0x0000)
+struct BP_PalPlayerController_C_DoAirDash final
 {
 public:
-	TSubclassOf<class UPalUserWidgetTimerGaugeBase> ReturnValue;                                     // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	EPalStepAxisType                              Axis;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector2D                              DashDirection;                                     // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalPlayerController_C_GetTimerGaugeWidgetClass;
+DUMPER7_ASSERTS_BP_PalPlayerController_C_DoAirDash;
 
-// Function BP_PalPlayerController.BP_PalPlayerController_C.IncrementSelectOtomo_Internal
-// 0x0010 (0x0010 - 0x0000)
-struct BP_PalPlayerController_C_IncrementSelectOtomo_Internal final
+// Function BP_PalPlayerController.BP_PalPlayerController_C.DecrementSelectOtomo_Internal
+// 0x0018 (0x0018 - 0x0000)
+struct BP_PalPlayerController_C_DecrementSelectOtomo_Internal final
 {
 public:
-	int32                                         BeforeIncrementID;                                 // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         BeforeDecrementID;                                 // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetSelectedOtomoID_ReturnValue;           // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetSelectedOtomoID_ReturnValue_1;         // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetOtomoCount_ReturnValue;                // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetSelectedOtomoID_ReturnValue_1;         // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalPlayerController_C_IncrementSelectOtomo_Internal;
+DUMPER7_ASSERTS_BP_PalPlayerController_C_DecrementSelectOtomo_Internal;
 
-// Function BP_PalPlayerController.BP_PalPlayerController_C.InpActEvt_End_K2Node_InputKeyEvent_5
+// Function BP_PalPlayerController.BP_PalPlayerController_C.CreateOtomoToServer
+// 0x0001 (0x0001 - 0x0000)
+struct BP_PalPlayerController_C_CreateOtomoToServer final
+{
+public:
+	bool                                          IsClientServer;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalPlayerController_C_CreateOtomoToServer;
+
+// Function BP_PalPlayerController.BP_PalPlayerController_C.CreateOtomoByNameListToServer
+// 0x0010 (0x0010 - 0x0000)
+struct BP_PalPlayerController_C_CreateOtomoByNameListToServer final
+{
+public:
+	TArray<struct FPalDebugOtomoPalInfo>          OtomoInfo;                                         // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_BP_PalPlayerController_C_CreateOtomoByNameListToServer;
+
+// Function BP_PalPlayerController.BP_PalPlayerController_C.CreateOtomoByNameList
+// 0x0458 (0x0458 - 0x0000)
+struct BP_PalPlayerController_C_CreateOtomoByNameList final
+{
+public:
+	TArray<struct FPalDebugOtomoPalInfo>          OtomoInfo;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	TArray<class FName>                           skill;                                             // 0x0010(0x0010)(Edit, BlueprintVisible)
+	int32                                         Temp_int_Variable;                                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FPalCharacterStatusRank>        K2Node_MakeArray_Array;                            // 0x0028(0x0010)(ReferenceParm)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalDebugOtomoPalInfo                  CallFunc_Array_Get_Item;                           // 0x0048(0x0050)()
+	struct FPalDataTableRowName_PassiveSkillData  CallFunc_Array_Get_Item_1;                         // 0x0098(0x0008)(NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_AD[0x3];                                       // 0x00AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B5[0x3];                                       // 0x00B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalPlayerState*                        CallFunc_GetPalPlayerState_ReturnValue;            // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalIndividualCharacterSaveParameter   CallFunc_GetInitializedCharacterSaveParemter_ParamSetup_outParameter; // 0x00C0(0x0370)()
+	bool                                          CallFunc_GetInitializedCharacterSaveParemter_ParamSetup_ReturnValue; // 0x0430(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_431[0x3];                                      // 0x0431(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(const struct FPalInstanceID& ID)> K2Node_CreateDelegate_OutputDelegate;           // 0x0434(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_444[0x4];                                      // 0x0444(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalCharacterManager*                   CallFunc_GetCharacterManager_ReturnValue;          // 0x0448(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterHandle*          CallFunc_CreateIndividual_ReturnValue;             // 0x0450(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalPlayerController_C_CreateOtomoByNameList;
+
+// Function BP_PalPlayerController.BP_PalPlayerController_C.CreateOtomo
 // 0x0018 (0x0018 - 0x0000)
-struct BP_PalPlayerController_C_InpActEvt_End_K2Node_InputKeyEvent_5 final
+struct BP_PalPlayerController_C_CreateOtomo final
 {
 public:
-	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	bool                                          IsClientPlayer;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FPalDebugOtomoPalInfo>          TempOtomoList;                                     // 0x0008(0x0010)(Edit, BlueprintVisible)
 };
-DUMPER7_ASSERTS_BP_PalPlayerController_C_InpActEvt_End_K2Node_InputKeyEvent_5;
+DUMPER7_ASSERTS_BP_PalPlayerController_C_CreateOtomo;
 
-// Function BP_PalPlayerController.BP_PalPlayerController_C.InpActEvt_Left_K2Node_InputKeyEvent_4
-// 0x0018 (0x0018 - 0x0000)
-struct BP_PalPlayerController_C_InpActEvt_Left_K2Node_InputKeyEvent_4 final
-{
-public:
-	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalPlayerController_C_InpActEvt_Left_K2Node_InputKeyEvent_4;
-
-// Function BP_PalPlayerController.BP_PalPlayerController_C.InpActEvt_LeftControl_K2Node_InputKeyEvent_6
-// 0x0018 (0x0018 - 0x0000)
-struct BP_PalPlayerController_C_InpActEvt_LeftControl_K2Node_InputKeyEvent_6 final
-{
-public:
-	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalPlayerController_C_InpActEvt_LeftControl_K2Node_InputKeyEvent_6;
-
-// Function BP_PalPlayerController.BP_PalPlayerController_C.InpActEvt_LeftShift_K2Node_InputKeyEvent_7
-// 0x0018 (0x0018 - 0x0000)
-struct BP_PalPlayerController_C_InpActEvt_LeftShift_K2Node_InputKeyEvent_7 final
-{
-public:
-	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalPlayerController_C_InpActEvt_LeftShift_K2Node_InputKeyEvent_7;
-
-// Function BP_PalPlayerController.BP_PalPlayerController_C.InpActEvt_PageDown_K2Node_InputKeyEvent_1
-// 0x0018 (0x0018 - 0x0000)
-struct BP_PalPlayerController_C_InpActEvt_PageDown_K2Node_InputKeyEvent_1 final
-{
-public:
-	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalPlayerController_C_InpActEvt_PageDown_K2Node_InputKeyEvent_1;
-
-// Function BP_PalPlayerController.BP_PalPlayerController_C.InpActEvt_PageUp_K2Node_InputKeyEvent_2
-// 0x0018 (0x0018 - 0x0000)
-struct BP_PalPlayerController_C_InpActEvt_PageUp_K2Node_InputKeyEvent_2 final
-{
-public:
-	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalPlayerController_C_InpActEvt_PageUp_K2Node_InputKeyEvent_2;
-
-// Function BP_PalPlayerController.BP_PalPlayerController_C.InpActEvt_Right_K2Node_InputKeyEvent_3
-// 0x0018 (0x0018 - 0x0000)
-struct BP_PalPlayerController_C_InpActEvt_Right_K2Node_InputKeyEvent_3 final
-{
-public:
-	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalPlayerController_C_InpActEvt_Right_K2Node_InputKeyEvent_3;
-
-// Function BP_PalPlayerController.BP_PalPlayerController_C.InpActEvt_RightControl_K2Node_InputKeyEvent_9
-// 0x0018 (0x0018 - 0x0000)
-struct BP_PalPlayerController_C_InpActEvt_RightControl_K2Node_InputKeyEvent_9 final
-{
-public:
-	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalPlayerController_C_InpActEvt_RightControl_K2Node_InputKeyEvent_9;
-
-// Function BP_PalPlayerController.BP_PalPlayerController_C.InpActEvt_RightShift_K2Node_InputKeyEvent_8
-// 0x0018 (0x0018 - 0x0000)
-struct BP_PalPlayerController_C_InpActEvt_RightShift_K2Node_InputKeyEvent_8 final
-{
-public:
-	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalPlayerController_C_InpActEvt_RightShift_K2Node_InputKeyEvent_8;
-
-// Function BP_PalPlayerController.BP_PalPlayerController_C.InpActEvt_Up_K2Node_InputKeyEvent_0
-// 0x0018 (0x0018 - 0x0000)
-struct BP_PalPlayerController_C_InpActEvt_Up_K2Node_InputKeyEvent_0 final
-{
-public:
-	struct FKey                                   Key;                                               // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalPlayerController_C_InpActEvt_Up_K2Node_InputKeyEvent_0;
-
-// Function BP_PalPlayerController.BP_PalPlayerController_C.LoadAndSpawnEffect
-// 0x0090 (0x0090 - 0x0000)
-struct BP_PalPlayerController_C_LoadAndSpawnEffect final
-{
-public:
-	TSoftObjectPtr<class UNiagaraSystem>          EffectPath;                                        // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	struct FTransform                             SpawnTransform;                                    // 0x0030(0x0060)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalPlayerController_C_LoadAndSpawnEffect;
-
-// Function BP_PalPlayerController.BP_PalPlayerController_C.NotifyChangeTargetPlayerForClient
-// 0x0018 (0x0018 - 0x0000)
-struct BP_PalPlayerController_C_NotifyChangeTargetPlayerForClient final
-{
-public:
-	class FString                                 TargetPlayerName;                                  // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	int32                                         maxPlayer;                                         // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         SelectPlayer;                                      // 0x0014(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalPlayerController_C_NotifyChangeTargetPlayerForClient;
-
-// Function BP_PalPlayerController.BP_PalPlayerController_C.OnCompleteSpawnSupportPal
-// 0x0058 (0x0058 - 0x0000)
-struct BP_PalPlayerController_C_OnCompleteSpawnSupportPal final
+// Function BP_PalPlayerController.BP_PalPlayerController_C.CreatedOtomoIndividualHandleCallback
+// 0x0050 (0x0050 - 0x0000)
+struct BP_PalPlayerController_C_CreatedOtomoIndividualHandleCallback final
 {
 public:
 	struct FPalInstanceID                         ID;                                                // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_TryGetIndividualActor_ReturnValue;        // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalCharacterManager*                   CallFunc_GetCharacterManager_ReturnValue;          // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalIndividualCharacterHandle*          CallFunc_GetIndividualHandle_ReturnValue;          // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         HoldIndex;                                         // 0x0030(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalIndividualCharacterHandle*          CreatedIndividualHandle;                           // 0x0038(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class UPalIndividualCharacterHandle*>  HoldOtomoIndividualHandles;                        // 0x0040(0x0010)(Edit, BlueprintVisible)
 };
-DUMPER7_ASSERTS_BP_PalPlayerController_C_OnCompleteSpawnSupportPal;
+DUMPER7_ASSERTS_BP_PalPlayerController_C_CreatedOtomoIndividualHandleCallback;
 
-// Function BP_PalPlayerController.BP_PalPlayerController_C.OnDamagePlayerToPlayer
-// 0x00D8 (0x00D8 - 0x0000)
-struct BP_PalPlayerController_C_OnDamagePlayerToPlayer final
-{
-public:
-	struct FPalDamageResult                       DamageResult;                                      // 0x0000(0x0060)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalPlayerCharacter*                    K2Node_DynamicCast_AsPal_Player_Character;         // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalOtomoHolderComponentBase*           CallFunc_GetComponentByClass_ReturnValue;          // 0x0088(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_TryGetSpawnedOtomo_ReturnValue;           // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsServer_ReturnValue;                     // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x009A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetBattleMode_ReturnValue;                // 0x009B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AController*                            CallFunc_GetController_ReturnValue_1;              // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_MonsterAIController_Otomo_C*        K2Node_DynamicCast_AsBP_Monster_AIController_Otomo; // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue_1;                 // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalBattleManager*                      CallFunc_GetBattleManager_ReturnValue;             // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue_2;                 // 0x00C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalBattleManager*                      CallFunc_GetBattleManager_ReturnValue_1;           // 0x00D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalPlayerController_C_OnDamagePlayerToPlayer;
-
-// Function BP_PalPlayerController.BP_PalPlayerController_C.OnLoaded_A1A0202B475755BD73ED5998057E907E
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PalPlayerController_C_OnLoaded_A1A0202B475755BD73ED5998057E907E final
-{
-public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalPlayerController_C_OnLoaded_A1A0202B475755BD73ED5998057E907E;
-
-// Function BP_PalPlayerController.BP_PalPlayerController_C.OnLoaded_A49E2184416F26810394CD8D2FEDE763
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PalPlayerController_C_OnLoaded_A49E2184416F26810394CD8D2FEDE763 final
-{
-public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalPlayerController_C_OnLoaded_A49E2184416F26810394CD8D2FEDE763;
-
-// Function BP_PalPlayerController.BP_PalPlayerController_C.OnRep_SpectatorSpeedRate
-// 0x0088 (0x0088 - 0x0000)
-struct BP_PalPlayerController_C_OnRep_SpectatorSpeedRate final
-{
-public:
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0000(0x0050)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0060(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0078(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalPlayerController_C_OnRep_SpectatorSpeedRate;
-
-// Function BP_PalPlayerController.BP_PalPlayerController_C.OnWhistleMontageEnded
-// 0x0020 (0x0020 - 0x0000)
-struct BP_PalPlayerController_C_OnWhistleMontageEnded final
-{
-public:
-	class UAnimMontage*                           Montage;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInterrupted;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_GetDefaultPlayerCharacter_ReturnValue;    // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalPlayerController_C_OnWhistleMontageEnded;
-
-// Function BP_PalPlayerController.BP_PalPlayerController_C.PlayAirDashAction
-// 0x01A0 (0x01A0 - 0x0000)
-struct BP_PalPlayerController_C_PlayAirDashAction final
-{
-public:
-	EPalStepAxisType                              Axis;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              Direction;                                         // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalActionType                                StepActionType;                                    // 0x0018(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_GetLowBodyPalCharacter_ReturnValue;       // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalStaticCharacterParameterComponent*  CallFunc_GetComponentByClass_ReturnValue;          // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue;       // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Conv_Vector2DToVector_ReturnValue;        // 0x0048(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_GetLowBodyPalCharacter_ReturnValue_1;     // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_68[0x8];                                       // 0x0068(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FActionDynamicParameter                K2Node_MakeStruct_ActionDynamicParameter;          // 0x0070(0x0100)()
-	class UPalActionComponent*                    CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0170(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_179[0x7];                                      // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UPalActionBase>             CallFunc_Map_Find_Value;                           // 0x0180(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_189[0x7];                                      // 0x0189(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalActionBase*                         CallFunc_PlayActionParameter_ReturnValue;          // 0x0190(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_Vector2DFloat_B_ImplicitCast;    // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalPlayerController_C_PlayAirDashAction;
-
-// Function BP_PalPlayerController.BP_PalPlayerController_C.PlayStepAction
-// 0x01A0 (0x01A0 - 0x0000)
-struct BP_PalPlayerController_C_PlayStepAction final
-{
-public:
-	EPalStepAxisType                              Axis;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector2D                              Direction;                                         // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalActionType                                StepActionType;                                    // 0x0018(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_GetLowBodyPalCharacter_ReturnValue;       // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalStaticCharacterParameterComponent*  CallFunc_GetComponentByClass_ReturnValue;          // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_Multiply_Vector2DFloat_ReturnValue;       // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Conv_Vector2DToVector_ReturnValue;        // 0x0048(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_GetLowBodyPalCharacter_ReturnValue_1;     // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_68[0x8];                                       // 0x0068(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FActionDynamicParameter                K2Node_MakeStruct_ActionDynamicParameter;          // 0x0070(0x0100)()
-	class UPalActionComponent*                    CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0170(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_179[0x7];                                      // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UPalActionBase>             CallFunc_Map_Find_Value;                           // 0x0180(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_189[0x7];                                      // 0x0189(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalActionBase*                         CallFunc_PlayActionParameter_ReturnValue;          // 0x0190(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_Vector2DFloat_B_ImplicitCast;    // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalPlayerController_C_PlayStepAction;
-
-// Function BP_PalPlayerController.BP_PalPlayerController_C.ReceiveEndPlay
-// 0x0001 (0x0001 - 0x0000)
-struct BP_PalPlayerController_C_ReceiveEndPlay final
-{
-public:
-	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalPlayerController_C_ReceiveEndPlay;
-
-// Function BP_PalPlayerController.BP_PalPlayerController_C.ReceivePossess
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PalPlayerController_C_ReceivePossess final
-{
-public:
-	class APawn*                                  PossessedPawn;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalPlayerController_C_ReceivePossess;
-
-// Function BP_PalPlayerController.BP_PalPlayerController_C.ReceiveTick
+// Function BP_PalPlayerController.BP_PalPlayerController_C.ChangeTargetPlayer
 // 0x0004 (0x0004 - 0x0000)
-struct BP_PalPlayerController_C_ReceiveTick final
+struct BP_PalPlayerController_C_ChangeTargetPlayer final
 {
 public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         AddPlayerIndex;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalPlayerController_C_ReceiveTick;
+DUMPER7_ASSERTS_BP_PalPlayerController_C_ChangeTargetPlayer;
 
-// Function BP_PalPlayerController.BP_PalPlayerController_C.RideSupportPal
-// 0x0230 (0x0230 - 0x0000)
-struct BP_PalPlayerController_C_RideSupportPal final
+// Function BP_PalPlayerController.BP_PalPlayerController_C.ChangeMoveSpeed
+// 0x0028 (0x0028 - 0x0000)
+struct BP_PalPlayerController_C_ChangeMoveSpeed final
 {
 public:
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue_1;                 // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UCharacterMovementComponent*            CallFunc_GetComponentByClass_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0020(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue_2;                 // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_TryGetIndividualActor_ReturnValue;        // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x00A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RideTo_ReturnValue;                       // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x00C0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCharacterMovementComponent*            CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0120(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UPalShooterSpringArmComponent*          CallFunc_GetComponentByClass_ReturnValue_2;        // 0x0128(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_131[0x7];                                      // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_AdjustActorToFloor_ReturnValue;           // 0x0138(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetActorTransform_SweepHitResult;      // 0x0140(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_K2_SetActorTransform_ReturnValue;         // 0x0228(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0229(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalPlayerController_C_RideSupportPal;
-
-// Function BP_PalPlayerController.BP_PalPlayerController_C.SetOtomoSlot
-// 0x0004 (0x0004 - 0x0000)
-struct BP_PalPlayerController_C_SetOtomoSlot final
-{
-public:
-	int32                                         SlotId;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalPlayerController_C_SetOtomoSlot;
-
-// Function BP_PalPlayerController.BP_PalPlayerController_C.SetSlotID_ToServer
-// 0x0004 (0x0004 - 0x0000)
-struct BP_PalPlayerController_C_SetSlotID_ToServer final
-{
-public:
-	int32                                         ID;                                                // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalPlayerController_C_SetSlotID_ToServer;
-
-// Function BP_PalPlayerController.BP_PalPlayerController_C.SetupDamageReaction
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PalPlayerController_C_SetupDamageReaction final
-{
-public:
-	class APawn*                                  Pawn_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalPlayerController_C_SetupDamageReaction;
-
-// Function BP_PalPlayerController.BP_PalPlayerController_C.SetupSupportPal
-// 0x0038 (0x0038 - 0x0000)
-struct BP_PalPlayerController_C_SetupSupportPal final
-{
-public:
-	class APawn*                                  PossessPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          K2Node_DynamicCast_AsPal_Character;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalPlayerCharacter*                    K2Node_DynamicCast_AsPal_Player_Character;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_TryGetIndividualActor_ReturnValue;        // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue;          // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalCharacterMovementComponent*         CallFunc_GetPalCharacterMovementComponent_ReturnValue; // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetWalkSpeedMultiplier_speed_ImplicitCast; // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalPlayerController_C_SetupSupportPal;
+DUMPER7_ASSERTS_BP_PalPlayerController_C_ChangeMoveSpeed;
 
-// Function BP_PalPlayerController.BP_PalPlayerController_C.TryPlayWhistleMontage
-// 0x0018 (0x0018 - 0x0000)
-struct BP_PalPlayerController_C_TryPlayWhistleMontage final
+// Function BP_PalPlayerController.BP_PalPlayerController_C.ChangeMoveRate
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PalPlayerController_C_ChangeMoveRate final
 {
 public:
-	class APalCharacter*                          CallFunc_GetDefaultPlayerCharacter_ReturnValue;    // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CanPlayWhistleForRideCall_ReturnValue;    // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_PlayAnimMontage_ReturnValue;              // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Rate;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalPlayerController_C_TryPlayWhistleMontage;
+DUMPER7_ASSERTS_BP_PalPlayerController_C_ChangeMoveRate;
 
-// Function BP_PalPlayerController.BP_PalPlayerController_C.Warp Spectator
+// Function BP_PalPlayerController.BP_PalPlayerController_C.CanRideSupportPal
 // 0x0018 (0x0018 - 0x0000)
-struct BP_PalPlayerController_C_Warp_Spectator final
+struct BP_PalPlayerController_C_CanRideSupportPal final
 {
 public:
-	struct FVector                                Move;                                              // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CanRide;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsSwimming_ReturnValue;                   // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_TryGetIndividualActor_ReturnValue;        // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsSwimPal_ReturnValue;                    // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalPlayerController_C_Warp_Spectator;
+DUMPER7_ASSERTS_BP_PalPlayerController_C_CanRideSupportPal;
 
 }
 

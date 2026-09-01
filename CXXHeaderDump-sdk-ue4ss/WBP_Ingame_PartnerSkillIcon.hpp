@@ -17,6 +17,7 @@ class UWBP_Ingame_PartnerSkillIcon_C : public UUserWidget
     void SetupWithStatus(FPalInstanceID GranterId, FPalPassiveSkillEffect SkillEffect, class UPalStatusBase* Status);
     void Setup(FPalInstanceID GranterId, FPalPassiveSkillEffect SkillEffect);
     void Construct();
+    void Destruct();
     void ExecuteUbergraph_WBP_Ingame_PartnerSkillIcon(int32 EntryPoint);
 }; // Size: 0x2B0
 

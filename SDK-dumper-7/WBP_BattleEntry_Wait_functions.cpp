@@ -17,15 +17,15 @@
 namespace SDK
 {
 
-// Function WBP_BattleEntry_Wait.WBP_BattleEntry_Wait_C.Count Down
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_BattleEntry_Wait.WBP_BattleEntry_Wait_C.OnRequestRemove
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_BattleEntry_Wait_C::Count_Down()
+void UWBP_BattleEntry_Wait_C::OnRequestRemove()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BattleEntry_Wait_C", "Count Down");
+		Func = Class->GetFunction("WBP_BattleEntry_Wait_C", "OnRequestRemove");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,29 +51,15 @@ void UWBP_BattleEntry_Wait_C::ExecuteUbergraph_WBP_BattleEntry_Wait(int32 EntryP
 }
 
 
-// Function WBP_BattleEntry_Wait.WBP_BattleEntry_Wait_C.OnRequestRemove
-// (Event, Protected, BlueprintEvent)
+// Function WBP_BattleEntry_Wait.WBP_BattleEntry_Wait_C.Count Down
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_BattleEntry_Wait_C::OnRequestRemove()
+void UWBP_BattleEntry_Wait_C::Count_Down()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BattleEntry_Wait_C", "OnRequestRemove");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_BattleEntry_Wait.WBP_BattleEntry_Wait_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_BattleEntry_Wait_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BattleEntry_Wait_C", "OnSetup");
+		Func = Class->GetFunction("WBP_BattleEntry_Wait_C", "Count Down");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -88,6 +74,20 @@ void UWBP_BattleEntry_Wait_C::UpdateCountDown()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_BattleEntry_Wait_C", "UpdateCountDown");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_BattleEntry_Wait.WBP_BattleEntry_Wait_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_BattleEntry_Wait_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BattleEntry_Wait_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

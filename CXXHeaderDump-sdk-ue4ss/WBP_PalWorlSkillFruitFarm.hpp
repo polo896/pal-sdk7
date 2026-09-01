@@ -25,12 +25,12 @@ class UWBP_PalWorlSkillFruitFarm_C : public UPalUIMapObjectStatusIndicatorBase
     class UWBP_PalCraftInfo_Pal_C* WBP_PalCraftInfo_Pal_3;                            // 0x04E8 (size: 0x8)
     class UWBP_PalCraftInfo_Pal_C* WBP_PalCraftInfo_Pal_4;                            // 0x04F0 (size: 0x8)
     class UWBP_RequirePalInfo_C* WBP_RequirePalInfo;                                  // 0x04F8 (size: 0x8)
-    TArray<class UWBP_PalCraftInfo_Pal_C*> PalInfos;                                  // 0x0500 (size: 0x10)
+    TArray<UWBP_PalCraftInfo_Pal_C*> PalInfos;                                        // 0x0500 (size: 0x10)
     FTimerHandle DisplayCheckTimer;                                                   // 0x0510 (size: 0x8)
     bool isDisplayedDetail;                                                           // 0x0518 (size: 0x1)
     bool HideNextState;                                                               // 0x0519 (size: 0x1)
     class UPalMapObjectFarmSkillFruitsModel* MyModel;                                 // 0x0520 (size: 0x8)
-    TMap<class EPalFarmSkillFruitsState, class FDataTableRowHandle> StateMsgIdMap;    // 0x0528 (size: 0x50)
+    TMap<EPalFarmSkillFruitsState, FDataTableRowHandle> StateMsgIdMap;                // 0x0528 (size: 0x50)
 
     void CREATEDELEGATE_PROXYFUNCTION_0(float NewValue);
     void SetGrowingItemId(FName StaticItemId);

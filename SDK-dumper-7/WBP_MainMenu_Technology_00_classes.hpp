@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Pal_structs.hpp"
 #include "F_PalUITechnologyDataMapContent_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "UMG_classes.hpp"
+#include "Pal_structs.hpp"
 
 
 namespace SDK
@@ -53,35 +53,35 @@ public:
 	int32                                         LastSelectIndex;                                   // 0x03DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Apply_Technology_Filter(const class FText& FilterName, const TSet<EPalItemTypeA>& ItemTypes, const TSet<EPalBuildObjectTypeA>& BuildTypes, bool ShowUnlocked);
-	void BndEvt__WBP_MainMenu_Technology_00_CommonListView_K2Node_ComponentBoundEvent_1_OnListItemSelectionChangedDynamic__DelegateSignature(class UObject* Item, bool bIsSelected);
-	void BndEvt__WBP_MainMenu_Technology_00_CommonListView_K2Node_ComponentBoundEvent_2_OnListEntryInitializedDynamic__DelegateSignature(class UObject* Item, class UUserWidget* Widget);
-	void BndEvt__WBP_MainMenu_Technology_00_CommonListView_K2Node_ComponentBoundEvent_4_OnListEntryReleasedDynamic__DelegateSignature(class UUserWidget* Widget);
-	void BndEvt__WBP_MainMenu_Technology_00_PalEditableTextBox_Search_K2Node_ComponentBoundEvent_8_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
-	void BndEvt__WBP_MainMenu_Technology_00_WBP_CommonButton_Filter_K2Node_ComponentBoundEvent_6_OnClicked__DelegateSignature();
-	void BndEvt__WBP_MainMenu_Technology_00_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_MainMenu_Technology_00_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_MainMenu_Technology_00_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void Construct();
-	void CreateTechnologyMap();
-	class UWidget* Custom_Navi_Down(EUINavigation Navigation_0);
-	class UWidget* CustomNavi_Up(EUINavigation Navigation_0);
-	void Destruct();
-	void ExecuteUbergraph_WBP_MainMenu_Technology_00(int32 EntryPoint);
-	void Focus_To_Local_Player_Level_Technology_Target();
-	void Focus_To_Top_Target();
-	void FocusToFilter();
-	void GetCategoryFilter(const struct FPalTechnologyRecipeUnlockDataTableRow& TechData, const TSet<EPalItemTypeA>& ItemTypes, const TSet<EPalBuildObjectTypeA>& BuildTypes, bool* Return);
-	void GetNameFilter(const class FString& Filter, const struct FPalTechnologyRecipeUnlockDataTableRow& TechData, bool* Return);
-	void GetUnlockFilter(bool ShowUnlocked, const class FName& technologyName, bool* Return);
-	void IsSkillUnlockMask(TArray<class FName>& ItemIds, bool* Masked);
-	void OnClickedAnyTechnology_Internal(class UWBP_MainMenu_Technology_Content_C* Widget);
-	void OnHoveredAnyTechnology_Internal(class UWBP_MainMenu_Technology_Content_C* Widget, class UWBP_MainMenu_Technology_List_C* ListWidget);
-	void OnUnhoveredAnyTechnology_Internal(class UWBP_MainMenu_Technology_Content_C* Widget);
-	void SetTechContentFocus(class UWBP_MainMenu_Technology_List_C* Target);
-	void Setup();
-	void SetupTechnologyList();
 	void UpdateAllTechnologyButton();
+	void SetupTechnologyList();
+	void Setup();
+	void SetTechContentFocus(class UWBP_MainMenu_Technology_List_C* Target);
+	void OnUnhoveredAnyTechnology_Internal(class UWBP_MainMenu_Technology_Content_C* Widget);
+	void OnHoveredAnyTechnology_Internal(class UWBP_MainMenu_Technology_Content_C* Widget, class UWBP_MainMenu_Technology_List_C* ListWidget);
+	void OnClickedAnyTechnology_Internal(class UWBP_MainMenu_Technology_Content_C* Widget);
+	void IsSkillUnlockMask(TArray<class FName>& ItemIds, bool* Masked);
+	void GetUnlockFilter(bool ShowUnlocked, const class FName& technologyName, bool* Return);
+	void GetNameFilter(const class FString& Filter, const struct FPalTechnologyRecipeUnlockDataTableRow& TechData, bool* Return);
+	void GetCategoryFilter(const struct FPalTechnologyRecipeUnlockDataTableRow& TechData, const TSet<EPalItemTypeA>& ItemTypes, const TSet<EPalBuildObjectTypeA>& BuildTypes, bool* Return);
+	void FocusToFilter();
+	void Focus_To_Top_Target();
+	void Focus_To_Local_Player_Level_Technology_Target();
+	void ExecuteUbergraph_WBP_MainMenu_Technology_00(int32 EntryPoint);
+	void Destruct();
+	class UWidget* CustomNavi_Up(EUINavigation Navigation_0);
+	class UWidget* Custom_Navi_Down(EUINavigation Navigation_0);
+	void CreateTechnologyMap();
+	void Construct();
+	void BndEvt__WBP_MainMenu_Technology_00_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MainMenu_Technology_00_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MainMenu_Technology_00_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MainMenu_Technology_00_WBP_CommonButton_Filter_K2Node_ComponentBoundEvent_6_OnClicked__DelegateSignature();
+	void BndEvt__WBP_MainMenu_Technology_00_PalEditableTextBox_Search_K2Node_ComponentBoundEvent_8_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
+	void BndEvt__WBP_MainMenu_Technology_00_CommonListView_K2Node_ComponentBoundEvent_4_OnListEntryReleasedDynamic__DelegateSignature(class UUserWidget* Widget);
+	void BndEvt__WBP_MainMenu_Technology_00_CommonListView_K2Node_ComponentBoundEvent_2_OnListEntryInitializedDynamic__DelegateSignature(class UObject* Item, class UUserWidget* Widget);
+	void BndEvt__WBP_MainMenu_Technology_00_CommonListView_K2Node_ComponentBoundEvent_1_OnListItemSelectionChangedDynamic__DelegateSignature(class UObject* Item, bool bIsSelected);
+	void Apply_Technology_Filter(const class FText& FilterName, const TSet<EPalItemTypeA>& ItemTypes, const TSet<EPalBuildObjectTypeA>& BuildTypes, bool ShowUnlocked);
 
 public:
 	static class UClass* StaticClass()

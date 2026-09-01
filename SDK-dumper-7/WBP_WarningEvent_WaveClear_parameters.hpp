@@ -16,14 +16,48 @@
 namespace SDK::Params
 {
 
-// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.AnmEvent_Clear
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_WarningEvent_WaveClear_C_AnmEvent_Clear final
+// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.Play Wave Clear Sequence
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_WarningEvent_WaveClear_C_Play_Wave_Clear_Sequence final
 {
 public:
-	bool                                          IsNext;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ClearWaveCount;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         MaxWaveCount;                                      // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_17[0x1];                                       // 0x0017(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWBP_WarningEvent_WaveClear_Mark_C*     CallFunc_Create_ReturnValue;                       // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_WarningEvent_WaveClear_C_AnmEvent_Clear;
+DUMPER7_ASSERTS_WBP_WarningEvent_WaveClear_C_Play_Wave_Clear_Sequence;
+
+// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.Play Next Wave Info
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_WarningEvent_WaveClear_C_Play_Next_Wave_Info final
+{
+public:
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_1;        // 0x0028(0x0008)(NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WarningEvent_WaveClear_C_Play_Next_Wave_Info;
+
+// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.OnTimerEvent_CheckMark
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_WarningEvent_WaveClear_C_OnTimerEvent_CheckMark final
+{
+public:
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WarningEvent_WaveClear_C_OnTimerEvent_CheckMark;
 
 // Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.ExecuteUbergraph_WBP_WarningEvent_WaveClear
 // 0x0138 (0x0138 - 0x0000)
@@ -52,48 +86,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_WarningEvent_WaveClear_C_ExecuteUbergraph_WBP_WarningEvent_WaveClear;
 
-// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.OnTimerEvent_CheckMark
+// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.AnmEvent_Clear
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_WarningEvent_WaveClear_C_OnTimerEvent_CheckMark final
+struct WBP_WarningEvent_WaveClear_C_AnmEvent_Clear final
 {
 public:
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsNext;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_WarningEvent_WaveClear_C_OnTimerEvent_CheckMark;
-
-// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.Play Next Wave Info
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_WarningEvent_WaveClear_C_Play_Next_Wave_Info final
-{
-public:
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_1;        // 0x0028(0x0008)(NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WarningEvent_WaveClear_C_Play_Next_Wave_Info;
-
-// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.Play Wave Clear Sequence
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_WarningEvent_WaveClear_C_Play_Wave_Clear_Sequence final
-{
-public:
-	int32                                         ClearWaveCount;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         MaxWaveCount;                                      // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_17[0x1];                                       // 0x0017(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWBP_WarningEvent_WaveClear_Mark_C*     CallFunc_Create_ReturnValue;                       // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WarningEvent_WaveClear_C_Play_Wave_Clear_Sequence;
+DUMPER7_ASSERTS_WBP_WarningEvent_WaveClear_C_AnmEvent_Clear;
 
 }
 

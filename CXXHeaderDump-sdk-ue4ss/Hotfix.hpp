@@ -19,7 +19,7 @@ class UOnlineHotfixManager : public UObject
     FString OSSName;                                                                  // 0x01F8 (size: 0x10)
     FString HotfixManagerClassName;                                                   // 0x0208 (size: 0x10)
     FString DebugPrefix;                                                              // 0x0218 (size: 0x10)
-    TArray<class UObject*> AssetsHotfixedFromIniFiles;                                // 0x0228 (size: 0x10)
+    TArray<UObject*> AssetsHotfixedFromIniFiles;                                      // 0x0228 (size: 0x10)
 
     void StartHotfixProcess();
 }; // Size: 0x238

@@ -10,45 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "EPalTreasureBoxVisualType_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "EPalTreasureBoxVisualType_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 
 
 namespace SDK::Params
 {
-
-// Function BP_MapObject_TreasureBox.BP_MapObject_TreasureBox_C.BP_OnSetConcreteModel
-// 0x0008 (0x0008 - 0x0000)
-struct BP_MapObject_TreasureBox_C_BP_OnSetConcreteModel final
-{
-public:
-	class UPalMapObjectConcreteModelBase*         ConcreteModel;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_MapObject_TreasureBox_C_BP_OnSetConcreteModel;
-
-// Function BP_MapObject_TreasureBox.BP_MapObject_TreasureBox_C.ExecuteUbergraph_BP_MapObject_TreasureBox
-// 0x0058 (0x0058 - 0x0000)
-struct BP_MapObject_TreasureBox_C_ExecuteUbergraph_BP_MapObject_TreasureBox final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0014(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_26[0x2];                                       // 0x0026(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_TreasureBoxVisual_Base_C*           K2Node_DynamicCast_AsBP_Treasure_Box_Visual_Base;  // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalMapObjectConcreteModelBase*         K2Node_Event_ConcreteModel;                        // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_TreasureBoxVisual_Base_C*           K2Node_DynamicCast_AsBP_Treasure_Box_Visual_Base_1; // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_MapObject_TreasureBox_C_ExecuteUbergraph_BP_MapObject_TreasureBox;
 
 // Function BP_MapObject_TreasureBox.BP_MapObject_TreasureBox_C.SetupVisual
 // 0x0240 (0x0240 - 0x0000)
@@ -88,6 +57,37 @@ public:
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue_1;          // 0x0230(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_MapObject_TreasureBox_C_SetupVisual;
+
+// Function BP_MapObject_TreasureBox.BP_MapObject_TreasureBox_C.ExecuteUbergraph_BP_MapObject_TreasureBox
+// 0x0058 (0x0058 - 0x0000)
+struct BP_MapObject_TreasureBox_C_ExecuteUbergraph_BP_MapObject_TreasureBox final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0014(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_26[0x2];                                       // 0x0026(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_TreasureBoxVisual_Base_C*           K2Node_DynamicCast_AsBP_Treasure_Box_Visual_Base;  // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalMapObjectConcreteModelBase*         K2Node_Event_ConcreteModel;                        // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_TreasureBoxVisual_Base_C*           K2Node_DynamicCast_AsBP_Treasure_Box_Visual_Base_1; // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_MapObject_TreasureBox_C_ExecuteUbergraph_BP_MapObject_TreasureBox;
+
+// Function BP_MapObject_TreasureBox.BP_MapObject_TreasureBox_C.BP_OnSetConcreteModel
+// 0x0008 (0x0008 - 0x0000)
+struct BP_MapObject_TreasureBox_C_BP_OnSetConcreteModel final
+{
+public:
+	class UPalMapObjectConcreteModelBase*         ConcreteModel;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_MapObject_TreasureBox_C_BP_OnSetConcreteModel;
 
 }
 

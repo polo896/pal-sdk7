@@ -37,19 +37,95 @@ void UWBP_PalNPCHPGaugeCanvas_C::Add_Boss_Gauge(class APalCharacter* TargetChara
 }
 
 
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Add New Gauge UI
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.UpdateVisibility_BossGauge
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalNPCHPGaugeCanvas_C::UpdateVisibility_BossGauge()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "UpdateVisibility_BossGauge");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.UpdateChildren_ForTick
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class APalCharacter*                    TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalNPCHPGaugeCanvas_C::Add_New_Gauge_UI(class APalCharacter* TargetCharacter)
+void UWBP_PalNPCHPGaugeCanvas_C::UpdateChildren_ForTick(double DeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Add New Gauge UI");
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "UpdateChildren_ForTick");
 
-	Params::WBP_PalNPCHPGaugeCanvas_C_Add_New_Gauge_UI Parms{};
+	Params::WBP_PalNPCHPGaugeCanvas_C_UpdateChildren_ForTick Parms{};
+
+	Parms.DeltaTime = DeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Update Visibility Player Gauges
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalNPCHPGaugeCanvas_C::Update_Visibility_Player_Gauges()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Update Visibility Player Gauges");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Update Visibility Pal HPGauges
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalNPCHPGaugeCanvas_C::Update_Visibility_Pal_HPGauges()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Update Visibility Pal HPGauges");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Update Children Timer
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalNPCHPGaugeCanvas_C::Update_Children_Timer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Update Children Timer");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Try Process DIsplay Gauge
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APalCharacter*                    TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalNPCHPGaugeCanvas_C::Try_Process_DIsplay_Gauge(class APalCharacter* TargetCharacter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Try Process DIsplay Gauge");
+
+	Params::WBP_PalNPCHPGaugeCanvas_C_Try_Process_DIsplay_Gauge Parms{};
 
 	Parms.TargetCharacter = TargetCharacter;
 
@@ -57,367 +133,277 @@ void UWBP_PalNPCHPGaugeCanvas_C::Add_New_Gauge_UI(class APalCharacter* TargetCha
 }
 
 
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Add Player Gauge
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// class APalCharacter*                    TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalNPCHPGaugeCanvas_C::Add_Player_Gauge(class APalCharacter* TargetCharacter)
+void UWBP_PalNPCHPGaugeCanvas_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Add Player Gauge");
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Tick");
 
-	Params::WBP_PalNPCHPGaugeCanvas_C_Add_Player_Gauge Parms{};
+	Params::WBP_PalNPCHPGaugeCanvas_C_Tick Parms{};
 
-	Parms.TargetCharacter = TargetCharacter;
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Add Target Characters HPGauge
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<class APalCharacter*>&           Characters                                             (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalNPCHPGaugeCanvas_C::Add_Target_Characters_HPGauge(TArray<class APalCharacter*>& Characters)
+void UWBP_PalNPCHPGaugeCanvas_C::Setup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Add Target Characters HPGauge");
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Setup");
 
-	Params::WBP_PalNPCHPGaugeCanvas_C_Add_Target_Characters_HPGauge Parms{};
-
-	Parms.Characters = std::move(Characters);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Characters = std::move(Parms.Characters);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.AddNormalPalGauge
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class APalCharacter*                    TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalNPCHPGaugeCanvas_C::AddNormalPalGauge(class APalCharacter* TargetCharacter)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "AddNormalPalGauge");
-
-	Params::WBP_PalNPCHPGaugeCanvas_C_AddNormalPalGauge Parms{};
-
-	Parms.TargetCharacter = TargetCharacter;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.CloseDelayGauges
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.SetGaugeVisibility
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           TargetActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    DelayClose                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    Close                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalNPCHPGaugeCanvas_C::CloseDelayGauges(class UWidget* Widget)
+void UWBP_PalNPCHPGaugeCanvas_C::SetGaugeVisibility(class UWidget* Widget, class AActor* TargetActor, bool DelayClose, bool Close)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "CloseDelayGauges");
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "SetGaugeVisibility");
 
-	Params::WBP_PalNPCHPGaugeCanvas_C_CloseDelayGauges Parms{};
+	Params::WBP_PalNPCHPGaugeCanvas_C_SetGaugeVisibility Parms{};
 
 	Parms.Widget = Widget;
+	Parms.TargetActor = TargetActor;
+	Parms.DelayClose = DelayClose;
+	Parms.Close = Close;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Remove Target Character HPGauge
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APalCharacter*                    TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalNPCHPGaugeCanvas_C::Construct()
+void UWBP_PalNPCHPGaugeCanvas_C::Remove_Target_Character_HPGauge(class APalCharacter* TargetCharacter)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Construct");
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Remove Target Character HPGauge");
+
+	Params::WBP_PalNPCHPGaugeCanvas_C_Remove_Target_Character_HPGauge Parms{};
+
+	Parms.TargetCharacter = TargetCharacter;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Remove Children
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalNPCHPGaugeCanvas_C::Remove_Children()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Remove Children");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.CREATEDELEGATE_PROXYFUNCTION_0
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.OnInitializedCharacter
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FPalDamageInfo&            DamageInfo                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// class AActor*                           Defender                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class APalCharacter*                    TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UBP_UIIndividualParameterInitializeWaiter_C*selfObject                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalNPCHPGaugeCanvas_C::CREATEDELEGATE_PROXYFUNCTION_0(const struct FPalDamageInfo& DamageInfo, class AActor* Defender)
+void UWBP_PalNPCHPGaugeCanvas_C::OnInitializedCharacter(class APalCharacter* TargetCharacter, class UBP_UIIndividualParameterInitializeWaiter_C* selfObject)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "CREATEDELEGATE_PROXYFUNCTION_0");
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "OnInitializedCharacter");
 
-	Params::WBP_PalNPCHPGaugeCanvas_C_CREATEDELEGATE_PROXYFUNCTION_0 Parms{};
+	Params::WBP_PalNPCHPGaugeCanvas_C_OnInitializedCharacter Parms{};
+
+	Parms.TargetCharacter = TargetCharacter;
+	Parms.selfObject = selfObject;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.OnEndPlayNormalPal
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalNPCHPGaugeCanvas_C::OnEndPlayNormalPal(class AActor* Actor, EEndPlayReason EndPlayReason)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "OnEndPlayNormalPal");
+
+	Params::WBP_PalNPCHPGaugeCanvas_C_OnEndPlayNormalPal Parms{};
+
+	Parms.Actor = Actor;
+	Parms.EndPlayReason = EndPlayReason;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.OnEndPlayBossPal
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalNPCHPGaugeCanvas_C::OnEndPlayBossPal(class AActor* Actor, EEndPlayReason EndPlayReason)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "OnEndPlayBossPal");
+
+	Params::WBP_PalNPCHPGaugeCanvas_C_OnEndPlayBossPal Parms{};
+
+	Parms.Actor = Actor;
+	Parms.EndPlayReason = EndPlayReason;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.OnEndOverlap
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalNPCHPGaugeCanvas_C::OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "OnEndOverlap");
+
+	Params::WBP_PalNPCHPGaugeCanvas_C_OnEndOverlap Parms{};
+
+	Parms.OverlappedComponent = OverlappedComponent;
+	Parms.OtherActor = OtherActor;
+	Parms.OtherComp = OtherComp;
+	Parms.OtherBodyIndex = OtherBodyIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.OnDamagePopup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FPalDamageInfo&            DamageInfo                                             (BlueprintVisible, BlueprintReadOnly, Parm)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalNPCHPGaugeCanvas_C::OnDamagePopup(const struct FPalDamageInfo& DamageInfo, class AActor* Actor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "OnDamagePopup");
+
+	Params::WBP_PalNPCHPGaugeCanvas_C_OnDamagePopup Parms{};
 
 	Parms.DamageInfo = std::move(DamageInfo);
-	Parms.Defender = Defender;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PalNPCHPGaugeCanvas_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.ExecuteUbergraph_WBP_PalNPCHPGaugeCanvas
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalNPCHPGaugeCanvas_C::ExecuteUbergraph_WBP_PalNPCHPGaugeCanvas(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "ExecuteUbergraph_WBP_PalNPCHPGaugeCanvas");
-
-	Params::WBP_PalNPCHPGaugeCanvas_C_ExecuteUbergraph_WBP_PalNPCHPGaugeCanvas Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Get Sight Display Require Distance
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class APalCharacter*                    TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// double*                                 Distance                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalNPCHPGaugeCanvas_C::Get_Sight_Display_Require_Distance(class APalCharacter* TargetCharacter, double* Distance)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Get Sight Display Require Distance");
-
-	Params::WBP_PalNPCHPGaugeCanvas_C_Get_Sight_Display_Require_Distance Parms{};
-
-	Parms.TargetCharacter = TargetCharacter;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Distance != nullptr)
-		*Distance = Parms.Distance;
-}
-
-
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.GetCameraLocationAndForwardVector
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FVector*                         Location                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector*                         ForwardVector                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalNPCHPGaugeCanvas_C::GetCameraLocationAndForwardVector(struct FVector* Location, struct FVector* ForwardVector)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "GetCameraLocationAndForwardVector");
-
-	Params::WBP_PalNPCHPGaugeCanvas_C_GetCameraLocationAndForwardVector Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Location != nullptr)
-		*Location = std::move(Parms.Location);
-
-	if (ForwardVector != nullptr)
-		*ForwardVector = std::move(Parms.ForwardVector);
-}
-
-
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.GetDistanceByPlayer
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class AActor*                           TargetActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// double                                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-double UWBP_PalNPCHPGaugeCanvas_C::GetDistanceByPlayer(class AActor* TargetActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "GetDistanceByPlayer");
-
-	Params::WBP_PalNPCHPGaugeCanvas_C_GetDistanceByPlayer Parms{};
-
-	Parms.TargetActor = TargetActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Is Display Distance
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// double                                  Distance                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class APalCharacter*                    TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   isDisplay                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalNPCHPGaugeCanvas_C::Is_Display_Distance(double Distance, class APalCharacter* TargetCharacter, bool* isDisplay)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Is Display Distance");
-
-	Params::WBP_PalNPCHPGaugeCanvas_C_Is_Display_Distance Parms{};
-
-	Parms.Distance = Distance;
-	Parms.TargetCharacter = TargetCharacter;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (isDisplay != nullptr)
-		*isDisplay = Parms.isDisplay;
-}
-
-
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Is Sight Display
-// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class APalCharacter*                    Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalNPCHPGaugeCanvas_C::Is_Sight_Display(class APalCharacter* Actor, bool* Return)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Is Sight Display");
-
-	Params::WBP_PalNPCHPGaugeCanvas_C_Is_Sight_Display Parms{};
-
 	Parms.Actor = Actor;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (Return != nullptr)
-		*Return = Parms.Return;
 }
 
 
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.IsAiming
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.OnChangedEquipment
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   IsAiming_0                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalItemSlot*                     itemSlot                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// EPalPlayerEquipItemSlotType             slotType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalNPCHPGaugeCanvas_C::IsAiming(bool* IsAiming_0)
+void UWBP_PalNPCHPGaugeCanvas_C::OnChangedEquipment(class UPalItemSlot* itemSlot, EPalPlayerEquipItemSlotType slotType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "IsAiming");
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "OnChangedEquipment");
 
-	Params::WBP_PalNPCHPGaugeCanvas_C_IsAiming Parms{};
+	Params::WBP_PalNPCHPGaugeCanvas_C_OnChangedEquipment Parms{};
+
+	Parms.itemSlot = itemSlot;
+	Parms.slotType = slotType;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (IsAiming_0 != nullptr)
-		*IsAiming_0 = Parms.IsAiming_0;
 }
 
 
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.IsConflict
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// bool*                                   IsConflict_0                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalNPCHPGaugeCanvas_C::IsConflict(bool* IsConflict_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "IsConflict");
-
-	Params::WBP_PalNPCHPGaugeCanvas_C_IsConflict Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (IsConflict_0 != nullptr)
-		*IsConflict_0 = Parms.IsConflict_0;
-}
-
-
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.IsDisplayGaugeByPlayerRotation
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.OnBossDead
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class APalCharacter*                    TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   isDisplay                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalNPCHPGaugeCanvas_C::IsDisplayGaugeByPlayerRotation(class APalCharacter* TargetCharacter, bool* isDisplay)
+void UWBP_PalNPCHPGaugeCanvas_C::OnBossDead(class APalCharacter* TargetCharacter)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "IsDisplayGaugeByPlayerRotation");
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "OnBossDead");
 
-	Params::WBP_PalNPCHPGaugeCanvas_C_IsDisplayGaugeByPlayerRotation Parms{};
+	Params::WBP_PalNPCHPGaugeCanvas_C_OnBossDead Parms{};
 
 	Parms.TargetCharacter = TargetCharacter;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (isDisplay != nullptr)
-		*isDisplay = Parms.isDisplay;
 }
 
 
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.IsMimicry
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.On End Player
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class APalCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   IsMimicryMode                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalNPCHPGaugeCanvas_C::IsMimicry(class APalCharacter* Character, bool* IsMimicryMode)
+void UWBP_PalNPCHPGaugeCanvas_C::On_End_Player(class AActor* Actor, EEndPlayReason EndPlayReason)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "IsMimicry");
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "On End Player");
 
-	Params::WBP_PalNPCHPGaugeCanvas_C_IsMimicry Parms{};
+	Params::WBP_PalNPCHPGaugeCanvas_C_On_End_Player Parms{};
 
-	Parms.Character = Character;
+	Parms.Actor = Actor;
+	Parms.EndPlayReason = EndPlayReason;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (IsMimicryMode != nullptr)
-		*IsMimicryMode = Parms.IsMimicryMode;
 }
 
 
@@ -451,293 +437,321 @@ void UWBP_PalNPCHPGaugeCanvas_C::On_Begin_Overlap(class UPrimitiveComponent* Ove
 }
 
 
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.On End Player
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.IsMimicry
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APalCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool*                                   IsMimicryMode                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalNPCHPGaugeCanvas_C::On_End_Player(class AActor* Actor, EEndPlayReason EndPlayReason)
+void UWBP_PalNPCHPGaugeCanvas_C::IsMimicry(class APalCharacter* Character, bool* IsMimicryMode)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "On End Player");
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "IsMimicry");
 
-	Params::WBP_PalNPCHPGaugeCanvas_C_On_End_Player Parms{};
+	Params::WBP_PalNPCHPGaugeCanvas_C_IsMimicry Parms{};
 
-	Parms.Actor = Actor;
-	Parms.EndPlayReason = EndPlayReason;
+	Parms.Character = Character;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (IsMimicryMode != nullptr)
+		*IsMimicryMode = Parms.IsMimicryMode;
 }
 
 
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.OnBossDead
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.IsDisplayGaugeByPlayerRotation
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class APalCharacter*                    TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool*                                   isDisplay                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalNPCHPGaugeCanvas_C::OnBossDead(class APalCharacter* TargetCharacter)
+void UWBP_PalNPCHPGaugeCanvas_C::IsDisplayGaugeByPlayerRotation(class APalCharacter* TargetCharacter, bool* isDisplay)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "OnBossDead");
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "IsDisplayGaugeByPlayerRotation");
 
-	Params::WBP_PalNPCHPGaugeCanvas_C_OnBossDead Parms{};
+	Params::WBP_PalNPCHPGaugeCanvas_C_IsDisplayGaugeByPlayerRotation Parms{};
 
 	Parms.TargetCharacter = TargetCharacter;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (isDisplay != nullptr)
+		*isDisplay = Parms.isDisplay;
 }
 
 
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.OnChangedEquipment
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.IsConflict
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UPalItemSlot*                     itemSlot                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// EPalPlayerEquipItemSlotType             slotType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   IsConflict_0                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalNPCHPGaugeCanvas_C::OnChangedEquipment(class UPalItemSlot* itemSlot, EPalPlayerEquipItemSlotType slotType)
+void UWBP_PalNPCHPGaugeCanvas_C::IsConflict(bool* IsConflict_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "OnChangedEquipment");
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "IsConflict");
 
-	Params::WBP_PalNPCHPGaugeCanvas_C_OnChangedEquipment Parms{};
-
-	Parms.itemSlot = itemSlot;
-	Parms.slotType = slotType;
+	Params::WBP_PalNPCHPGaugeCanvas_C_IsConflict Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (IsConflict_0 != nullptr)
+		*IsConflict_0 = Parms.IsConflict_0;
 }
 
 
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.OnDamagePopup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.IsAiming
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// const struct FPalDamageInfo&            DamageInfo                                             (BlueprintVisible, BlueprintReadOnly, Parm)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool*                                   IsAiming_0                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalNPCHPGaugeCanvas_C::OnDamagePopup(const struct FPalDamageInfo& DamageInfo, class AActor* Actor)
+void UWBP_PalNPCHPGaugeCanvas_C::IsAiming(bool* IsAiming_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "OnDamagePopup");
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "IsAiming");
 
-	Params::WBP_PalNPCHPGaugeCanvas_C_OnDamagePopup Parms{};
+	Params::WBP_PalNPCHPGaugeCanvas_C_IsAiming Parms{};
 
-	Parms.DamageInfo = std::move(DamageInfo);
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IsAiming_0 != nullptr)
+		*IsAiming_0 = Parms.IsAiming_0;
+}
+
+
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Is Sight Display
+// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class APalCharacter*                    Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Return                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalNPCHPGaugeCanvas_C::Is_Sight_Display(class APalCharacter* Actor, bool* Return)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Is Sight Display");
+
+	Params::WBP_PalNPCHPGaugeCanvas_C_Is_Sight_Display Parms{};
+
 	Parms.Actor = Actor;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (Return != nullptr)
+		*Return = Parms.Return;
 }
 
 
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.OnEndOverlap
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Is Display Distance
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Distance                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APalCharacter*                    TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool*                                   isDisplay                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalNPCHPGaugeCanvas_C::OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+void UWBP_PalNPCHPGaugeCanvas_C::Is_Display_Distance(double Distance, class APalCharacter* TargetCharacter, bool* isDisplay)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "OnEndOverlap");
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Is Display Distance");
 
-	Params::WBP_PalNPCHPGaugeCanvas_C_OnEndOverlap Parms{};
+	Params::WBP_PalNPCHPGaugeCanvas_C_Is_Display_Distance Parms{};
 
-	Parms.OverlappedComponent = OverlappedComponent;
-	Parms.OtherActor = OtherActor;
-	Parms.OtherComp = OtherComp;
-	Parms.OtherBodyIndex = OtherBodyIndex;
+	Parms.Distance = Distance;
+	Parms.TargetCharacter = TargetCharacter;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (isDisplay != nullptr)
+		*isDisplay = Parms.isDisplay;
 }
 
 
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.OnEndPlayBossPal
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.GetDistanceByPlayer
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           TargetActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// double                                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalNPCHPGaugeCanvas_C::OnEndPlayBossPal(class AActor* Actor, EEndPlayReason EndPlayReason)
+double UWBP_PalNPCHPGaugeCanvas_C::GetDistanceByPlayer(class AActor* TargetActor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "OnEndPlayBossPal");
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "GetDistanceByPlayer");
 
-	Params::WBP_PalNPCHPGaugeCanvas_C_OnEndPlayBossPal Parms{};
+	Params::WBP_PalNPCHPGaugeCanvas_C_GetDistanceByPlayer Parms{};
 
-	Parms.Actor = Actor;
-	Parms.EndPlayReason = EndPlayReason;
+	Parms.TargetActor = TargetActor;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.OnEndPlayNormalPal
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.GetCameraLocationAndForwardVector
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector*                         Location                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector*                         ForwardVector                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalNPCHPGaugeCanvas_C::OnEndPlayNormalPal(class AActor* Actor, EEndPlayReason EndPlayReason)
+void UWBP_PalNPCHPGaugeCanvas_C::GetCameraLocationAndForwardVector(struct FVector* Location, struct FVector* ForwardVector)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "OnEndPlayNormalPal");
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "GetCameraLocationAndForwardVector");
 
-	Params::WBP_PalNPCHPGaugeCanvas_C_OnEndPlayNormalPal Parms{};
-
-	Parms.Actor = Actor;
-	Parms.EndPlayReason = EndPlayReason;
+	Params::WBP_PalNPCHPGaugeCanvas_C_GetCameraLocationAndForwardVector Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (Location != nullptr)
+		*Location = std::move(Parms.Location);
+
+	if (ForwardVector != nullptr)
+		*ForwardVector = std::move(Parms.ForwardVector);
 }
 
 
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.OnInitializedCharacter
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Get Sight Display Require Distance
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class APalCharacter*                    TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UBP_UIIndividualParameterInitializeWaiter_C*selfObject                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// double*                                 Distance                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalNPCHPGaugeCanvas_C::OnInitializedCharacter(class APalCharacter* TargetCharacter, class UBP_UIIndividualParameterInitializeWaiter_C* selfObject)
+void UWBP_PalNPCHPGaugeCanvas_C::Get_Sight_Display_Require_Distance(class APalCharacter* TargetCharacter, double* Distance)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "OnInitializedCharacter");
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Get Sight Display Require Distance");
 
-	Params::WBP_PalNPCHPGaugeCanvas_C_OnInitializedCharacter Parms{};
+	Params::WBP_PalNPCHPGaugeCanvas_C_Get_Sight_Display_Require_Distance Parms{};
 
 	Parms.TargetCharacter = TargetCharacter;
-	Parms.selfObject = selfObject;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Distance != nullptr)
+		*Distance = Parms.Distance;
+}
+
+
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.ExecuteUbergraph_WBP_PalNPCHPGaugeCanvas
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalNPCHPGaugeCanvas_C::ExecuteUbergraph_WBP_PalNPCHPGaugeCanvas(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "ExecuteUbergraph_WBP_PalNPCHPGaugeCanvas");
+
+	Params::WBP_PalNPCHPGaugeCanvas_C_ExecuteUbergraph_WBP_PalNPCHPGaugeCanvas Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Remove Children
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_PalNPCHPGaugeCanvas_C::Remove_Children()
+void UWBP_PalNPCHPGaugeCanvas_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Remove Children");
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Remove Target Character HPGauge
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.CREATEDELEGATE_PROXYFUNCTION_0
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class APalCharacter*                    TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FPalDamageInfo&            DamageInfo                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class AActor*                           Defender                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalNPCHPGaugeCanvas_C::Remove_Target_Character_HPGauge(class APalCharacter* TargetCharacter)
+void UWBP_PalNPCHPGaugeCanvas_C::CREATEDELEGATE_PROXYFUNCTION_0(const struct FPalDamageInfo& DamageInfo, class AActor* Defender)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Remove Target Character HPGauge");
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "CREATEDELEGATE_PROXYFUNCTION_0");
 
-	Params::WBP_PalNPCHPGaugeCanvas_C_Remove_Target_Character_HPGauge Parms{};
+	Params::WBP_PalNPCHPGaugeCanvas_C_CREATEDELEGATE_PROXYFUNCTION_0 Parms{};
 
-	Parms.TargetCharacter = TargetCharacter;
+	Parms.DamageInfo = std::move(DamageInfo);
+	Parms.Defender = Defender;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.SetGaugeVisibility
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_PalNPCHPGaugeCanvas_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.CloseDelayGauges
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UWidget*                          Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           TargetActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    DelayClose                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Close                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalNPCHPGaugeCanvas_C::SetGaugeVisibility(class UWidget* Widget, class AActor* TargetActor, bool DelayClose, bool Close)
+void UWBP_PalNPCHPGaugeCanvas_C::CloseDelayGauges(class UWidget* Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "SetGaugeVisibility");
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "CloseDelayGauges");
 
-	Params::WBP_PalNPCHPGaugeCanvas_C_SetGaugeVisibility Parms{};
+	Params::WBP_PalNPCHPGaugeCanvas_C_CloseDelayGauges Parms{};
 
 	Parms.Widget = Widget;
-	Parms.TargetActor = TargetActor;
-	Parms.DelayClose = DelayClose;
-	Parms.Close = Close;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalNPCHPGaugeCanvas_C::Setup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Setup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalNPCHPGaugeCanvas_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Tick");
-
-	Params::WBP_PalNPCHPGaugeCanvas_C_Tick Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Try Process DIsplay Gauge
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.AddNormalPalGauge
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class APalCharacter*                    TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalNPCHPGaugeCanvas_C::Try_Process_DIsplay_Gauge(class APalCharacter* TargetCharacter)
+void UWBP_PalNPCHPGaugeCanvas_C::AddNormalPalGauge(class APalCharacter* TargetCharacter)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Try Process DIsplay Gauge");
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "AddNormalPalGauge");
 
-	Params::WBP_PalNPCHPGaugeCanvas_C_Try_Process_DIsplay_Gauge Parms{};
+	Params::WBP_PalNPCHPGaugeCanvas_C_AddNormalPalGauge Parms{};
 
 	Parms.TargetCharacter = TargetCharacter;
 
@@ -745,79 +759,65 @@ void UWBP_PalNPCHPGaugeCanvas_C::Try_Process_DIsplay_Gauge(class APalCharacter* 
 }
 
 
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Update Children Timer
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalNPCHPGaugeCanvas_C::Update_Children_Timer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Update Children Timer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Update Visibility Pal HPGauges
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalNPCHPGaugeCanvas_C::Update_Visibility_Pal_HPGauges()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Update Visibility Pal HPGauges");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Update Visibility Player Gauges
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalNPCHPGaugeCanvas_C::Update_Visibility_Player_Gauges()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Update Visibility Player Gauges");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.UpdateChildren_ForTick
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Add Target Characters HPGauge
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class APalCharacter*>&           Characters                                             (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_PalNPCHPGaugeCanvas_C::UpdateChildren_ForTick(double DeltaTime)
+void UWBP_PalNPCHPGaugeCanvas_C::Add_Target_Characters_HPGauge(TArray<class APalCharacter*>& Characters)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "UpdateChildren_ForTick");
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Add Target Characters HPGauge");
 
-	Params::WBP_PalNPCHPGaugeCanvas_C_UpdateChildren_ForTick Parms{};
+	Params::WBP_PalNPCHPGaugeCanvas_C_Add_Target_Characters_HPGauge Parms{};
 
-	Parms.DeltaTime = DeltaTime;
+	Parms.Characters = std::move(Characters);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Characters = std::move(Parms.Characters);
+}
+
+
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Add Player Gauge
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APalCharacter*                    TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalNPCHPGaugeCanvas_C::Add_Player_Gauge(class APalCharacter* TargetCharacter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Add Player Gauge");
+
+	Params::WBP_PalNPCHPGaugeCanvas_C_Add_Player_Gauge Parms{};
+
+	Parms.TargetCharacter = TargetCharacter;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.UpdateVisibility_BossGauge
+// Function WBP_PalNPCHPGaugeCanvas.WBP_PalNPCHPGaugeCanvas_C.Add New Gauge UI
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APalCharacter*                    TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalNPCHPGaugeCanvas_C::UpdateVisibility_BossGauge()
+void UWBP_PalNPCHPGaugeCanvas_C::Add_New_Gauge_UI(class APalCharacter* TargetCharacter)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "UpdateVisibility_BossGauge");
+		Func = Class->GetFunction("WBP_PalNPCHPGaugeCanvas_C", "Add New Gauge UI");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_PalNPCHPGaugeCanvas_C_Add_New_Gauge_UI Parms{};
+
+	Parms.TargetCharacter = TargetCharacter;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

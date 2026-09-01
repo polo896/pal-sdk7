@@ -34,15 +34,15 @@ public:
 	struct FDataTableRowHandle                    BaseCampMissionMsgId;                              // 0x0500(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void BndEvt__WBP_QuestTab_WBP_Tab_Key_L_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature();
-	void BndEvt__WBP_QuestTab_WBP_Tab_Key_R_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
-	void BndEvt__WBP_QuestTab_WBP_TabButton_Main_K2Node_ComponentBoundEvent_0_SwitchTabTo__DelegateSignature(int32 Index_0);
-	void BndEvt__WBP_QuestTab_WBP_TabButton_Sub_K2Node_ComponentBoundEvent_1_SwitchTabTo__DelegateSignature(int32 Index_0);
-	void Construct();
-	void ExecuteUbergraph_WBP_QuestTab(int32 EntryPoint);
-	void OnChangedTabIndex_Internal(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
-	void OnInitialized();
 	void RegisterPanelWidget(class UPanelWidget** PanelWidget);
+	void OnInitialized();
+	void OnChangedTabIndex_Internal(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
+	void ExecuteUbergraph_WBP_QuestTab(int32 EntryPoint);
+	void Construct();
+	void BndEvt__WBP_QuestTab_WBP_TabButton_Sub_K2Node_ComponentBoundEvent_1_SwitchTabTo__DelegateSignature(int32 Index_0);
+	void BndEvt__WBP_QuestTab_WBP_TabButton_Main_K2Node_ComponentBoundEvent_0_SwitchTabTo__DelegateSignature(int32 Index_0);
+	void BndEvt__WBP_QuestTab_WBP_Tab_Key_R_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
+	void BndEvt__WBP_QuestTab_WBP_Tab_Key_L_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()

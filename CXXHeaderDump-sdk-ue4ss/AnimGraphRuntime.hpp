@@ -316,7 +316,7 @@ struct FAnimNode_LayeredBoneBlend : public FAnimNode_Base
     FPoseLink BasePose;                                                               // 0x0010 (size: 0x10)
     TArray<FPoseLink> BlendPoses;                                                     // 0x0020 (size: 0x10)
     ELayeredBoneBlendMode BlendMode;                                                  // 0x0030 (size: 0x1)
-    TArray<class UBlendProfile*> BlendMasks;                                          // 0x0038 (size: 0x10)
+    TArray<UBlendProfile*> BlendMasks;                                                // 0x0038 (size: 0x10)
     TArray<FInputBlendPose> LayerSetup;                                               // 0x0048 (size: 0x10)
     TArray<float> BlendWeights;                                                       // 0x0058 (size: 0x10)
     bool bMeshSpaceRotationBlend;                                                     // 0x0068 (size: 0x1)

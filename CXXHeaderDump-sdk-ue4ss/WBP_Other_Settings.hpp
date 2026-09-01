@@ -10,7 +10,7 @@ class UWBP_Other_Settings_C : public UUserWidget
     bool SomethingChanged;                                                            // 0x02C0 (size: 0x1)
     FPalOptionAudioSettings OriginalSettingCache;                                     // 0x02C4 (size: 0x24)
     FString NewLang;                                                                  // 0x02E8 (size: 0x10)
-    TMap<class FString, class FDataTableRowHandle> LangMap;                           // 0x02F8 (size: 0x50)
+    TMap<FString, FDataTableRowHandle> LangMap;                                       // 0x02F8 (size: 0x50)
 
     void Construct();
     void OnLanguageChanged(int32 Value);

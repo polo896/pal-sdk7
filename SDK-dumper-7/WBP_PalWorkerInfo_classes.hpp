@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "WBP_IndividualParameterBindWidget_classes.hpp"
 #include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
-#include "WBP_IndividualParameterBindWidget_classes.hpp"
 
 
 namespace SDK
@@ -50,22 +50,22 @@ public:
 	TMap<EPalWorkSuitability, class UWBP_MainMenu_Pal_WorkIcon_C*> WorkSuitabilityWidgetMap;         // 0x0728(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void AnmEvent_Close();
-	void AnmEvent_Open();
-	void Check_Valid_Work_Suitability(EPalWorkSuitability InWorkSuitability, bool* IsValid, EPalWorkSuitability* OutWorkSuitability);
-	void ExecuteUbergraph_WBP_PalWorkerInfo(int32 EntryPoint);
-	void OnInitialized();
-	void OnUpdateCondition_Binded();
-	void Set_Work_Suitability(const TMap<EPalWorkSuitability, int32>& WorkSuitabilities);
-	void SetPassiveSkill(TArray<class FName>& PassiveSkills);
-	void Setup(class UPalIndividualCharacterHandle* targetHandle);
-	void SetWorkerComment(class UPalIndividualCharacterHandle* targetHandle);
-	void SetWorkType(class UPalIndividualCharacterHandle* targetHandle);
-	void UpdateHP(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& nowMaxHP);
-	void UpdateHunger(double nowHunger, double nowMaxHunger);
-	void UpdateLevel(int32 NewLevel);
-	void UpdateNickname(const class FString& NewNickName);
 	void UpdateSanity(double nowSanity, double nowMaxSanity);
+	void UpdateNickname(const class FString& NewNickName);
+	void UpdateLevel(int32 NewLevel);
+	void UpdateHunger(double nowHunger, double nowMaxHunger);
+	void UpdateHP(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& nowMaxHP);
+	void SetWorkType(class UPalIndividualCharacterHandle* targetHandle);
+	void SetWorkerComment(class UPalIndividualCharacterHandle* targetHandle);
+	void Setup(class UPalIndividualCharacterHandle* targetHandle);
+	void SetPassiveSkill(TArray<class FName>& PassiveSkills);
+	void Set_Work_Suitability(const TMap<EPalWorkSuitability, int32>& WorkSuitabilities);
+	void OnUpdateCondition_Binded();
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_PalWorkerInfo(int32 EntryPoint);
+	void Check_Valid_Work_Suitability(EPalWorkSuitability InWorkSuitability, bool* IsValid, EPalWorkSuitability* OutWorkSuitability);
+	void AnmEvent_Open();
+	void AnmEvent_Close();
 
 public:
 	static class UClass* StaticClass()

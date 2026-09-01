@@ -20,172 +20,442 @@
 namespace SDK::Params
 {
 
-// Function WBP_Trading_Item.WBP_Trading_Item_C.AllGet
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_Trading_Item_C_AllGet final
+// Function WBP_Trading_Item.WBP_Trading_Item_C.ValidateCurrentTradeInfo
+// 0x0009 (0x0009 - 0x0000)
+struct WBP_Trading_Item_C_ValidateCurrentTradeInfo final
 {
 public:
-	class UPalMapObjectConcreteModelBase*         MapObjectConcreteModel;                            // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IPalMapObjectItemContainerAccessInterface> ItemContainerAccess;           // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0004(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEmpty_ReturnValue_1;                    // 0x0005(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_ValidateCurrentTradeInfo;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.Update Sell List
+// 0x00B0 (0x00B0 - 0x0000)
+struct WBP_Trading_Item_C_Update_Sell_List final
+{
+public:
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_GetDesiredFocusTarget_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UPalItemContainer*                      CallFunc_GetStoreItemContainer_TargetContainer;    // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FPalItemBoothTradeInfo>         CallFunc_GetTradeInfos_OutTradeInfo;               // 0x0020(0x0010)(ReferenceParm)
+	struct FPalItemBoothTradeInfo                 CallFunc_Array_Get_Item;                           // 0x0030(0x0068)(NoDestructor)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9D[0x3];                                       // 0x009D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Trading_Item_List_C*               CallFunc_Array_Get_Item_1;                         // 0x00A0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Trading_Item_C_AllGet;
+DUMPER7_ASSERTS_WBP_Trading_Item_C_Update_Sell_List;
 
-// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_12_OnEditableTextBoxChangedEvent__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_12_OnEditableTextBoxChangedEvent__DelegateSignature final
+// Function WBP_Trading_Item.WBP_Trading_Item_C.ToSetSellPanel
+// 0x0068 (0x0068 - 0x0000)
+struct WBP_Trading_Item_C_ToSetSellPanel final
 {
 public:
-	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FPalItemBoothTradeInfo                 K2Node_MakeStruct_PalItemBoothTradeInfo;           // 0x0000(0x0068)(NoDestructor)
 };
-DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_12_OnEditableTextBoxChangedEvent__DelegateSignature;
+DUMPER7_ASSERTS_WBP_Trading_Item_C_ToSetSellPanel;
 
-// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_13_OnEditableTextBoxCommittedEvent__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_13_OnEditableTextBoxCommittedEvent__DelegateSignature final
+// Function WBP_Trading_Item.WBP_Trading_Item_C.Toggle Private Lock
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Trading_Item_C_Toggle_Private_Lock final
 {
 public:
-	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	ETextCommit                                   CommitMethod;                                      // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_13_OnEditableTextBoxCommittedEvent__DelegateSignature;
+DUMPER7_ASSERTS_WBP_Trading_Item_C_Toggle_Private_Lock;
 
-// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_PalEditableTextBox_ProductNum_K2Node_ComponentBoundEvent_8_OnEditableTextBoxCommittedEvent__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_PalEditableTextBox_ProductNum_K2Node_ComponentBoundEvent_8_OnEditableTextBoxCommittedEvent__DelegateSignature final
+// Function WBP_Trading_Item.WBP_Trading_Item_C.SwitchStoragePanelVisibility
+// 0x00D0 (0x00D0 - 0x0000)
+struct WBP_Trading_Item_C_SwitchStoragePanelVisibility final
 {
 public:
-	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	ETextCommit                                   CommitMethod;                                      // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Visible;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_MakeLiteralName_ReturnValue_1;            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_MakeLiteralName_ReturnValue_2;            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_MakeLiteralName_ReturnValue_3;            // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_MakeLiteralName_ReturnValue_4;            // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   CallFunc_Array_Get_Item;                           // 0x0040(0x0004)(NoDestructor)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x004C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x005C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x006C(0x0004)(NoDestructor)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_1;      // 0x0070(0x0004)(NoDestructor)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x007C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x008C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_2;      // 0x009C(0x0004)(NoDestructor)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_3;      // 0x00A0(0x0004)(NoDestructor)
+	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue_3;                  // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_4;            // 0x00AC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_GetDesiredFocusTarget_ReturnValue;        // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_4;      // 0x00C8(0x0004)(NoDestructor)
+	int32                                         CallFunc_Array_Add_ReturnValue_4;                  // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_PalEditableTextBox_ProductNum_K2Node_ComponentBoundEvent_8_OnEditableTextBoxCommittedEvent__DelegateSignature;
+DUMPER7_ASSERTS_WBP_Trading_Item_C_SwitchStoragePanelVisibility;
 
-// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_PalEditableTextBox_ProductNum_K2Node_ComponentBoundEvent_9_OnEditableTextBoxChangedEvent__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_PalEditableTextBox_ProductNum_K2Node_ComponentBoundEvent_9_OnEditableTextBoxChangedEvent__DelegateSignature final
+// Function WBP_Trading_Item.WBP_Trading_Item_C.SwitchSlotPanelHoverDisplay
+// 0x002C (0x002C - 0x0000)
+struct WBP_Trading_Item_C_SwitchSlotPanelHoverDisplay final
 {
 public:
-	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	bool                                          IsHover;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0014(0x0014)()
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_PalEditableTextBox_ProductNum_K2Node_ComponentBoundEvent_9_OnEditableTextBoxChangedEvent__DelegateSignature;
+DUMPER7_ASSERTS_WBP_Trading_Item_C_SwitchSlotPanelHoverDisplay;
 
-// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_WBP_IngameMenu_Chest_K2Node_ComponentBoundEvent_20_OnHoveredInventorySlot__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_IngameMenu_Chest_K2Node_ComponentBoundEvent_20_OnHoveredInventorySlot__DelegateSignature final
-{
-public:
-	class UWBP_PalItemSlotButtonBase_C*           SlotButton;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_IngameMenu_Chest_K2Node_ComponentBoundEvent_20_OnHoveredInventorySlot__DelegateSignature;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_WBP_IngameMenu_Chest_K2Node_ComponentBoundEvent_21_OnHoveredTargetContainerSlot__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_IngameMenu_Chest_K2Node_ComponentBoundEvent_21_OnHoveredTargetContainerSlot__DelegateSignature final
-{
-public:
-	class UWBP_PalItemSlotButtonBase_C*           SlotButton;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_IngameMenu_Chest_K2Node_ComponentBoundEvent_21_OnHoveredTargetContainerSlot__DelegateSignature;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_WBP_ItemSlot_Cost_K2Node_ComponentBoundEvent_5_OnClickedButton__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_ItemSlot_Cost_K2Node_ComponentBoundEvent_5_OnClickedButton__DelegateSignature final
-{
-public:
-	class UWBP_PalItemSlotButtonBase_C*           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_ItemSlot_Cost_K2Node_ComponentBoundEvent_5_OnClickedButton__DelegateSignature;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_WBP_ItemSlot_Product_K2Node_ComponentBoundEvent_2_OnClickedButton__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_ItemSlot_Product_K2Node_ComponentBoundEvent_2_OnClickedButton__DelegateSignature final
-{
-public:
-	class UWBP_PalItemSlotButtonBase_C*           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_ItemSlot_Product_K2Node_ComponentBoundEvent_2_OnClickedButton__DelegateSignature;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Lock_CheckBox_K2Node_ComponentBoundEvent_19_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Lock_CheckBox_K2Node_ComponentBoundEvent_19_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Lock_CheckBox_K2Node_ComponentBoundEvent_19_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Minus_1_K2Node_ComponentBoundEvent_10_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Minus_1_K2Node_ComponentBoundEvent_10_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Minus_1_K2Node_ComponentBoundEvent_10_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_7_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_7_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_7_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Plus_1_K2Node_ComponentBoundEvent_11_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Plus_1_K2Node_ComponentBoundEvent_11_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Plus_1_K2Node_ComponentBoundEvent_11_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Sort_TargetContainer_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Sort_TargetContainer_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Sort_TargetContainer_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.Enable Cost Select
+// Function WBP_Trading_Item.WBP_Trading_Item_C.SwitchSellPanel
 // 0x0028 (0x0028 - 0x0000)
-struct WBP_Trading_Item_C_Enable_Cost_Select final
+struct WBP_Trading_Item_C_SwitchSellPanel final
 {
 public:
-	TDelegate<void(class FName StaticItemId)>     K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UBP_HUDDispatchParameter_ItemSearch_C*  CallFunc_CreateDispatchParameterForK2Node_ReturnValue; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  CallFunc_Push_ReturnValue;                         // 0x0018(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_Enable_Cost_Select;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.Enable Product Select
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_Trading_Item_C_Enable_Product_Select final
-{
-public:
-	bool                                          Enable;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ToSellList;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_GetFocusTarget_target;                    // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                K2Node_Select_Default;                             // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_17[0x1];                                       // 0x0017(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_GetDesiredFocusTarget_ReturnValue;        // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Trading_Item_C_Enable_Product_Select;
+DUMPER7_ASSERTS_WBP_Trading_Item_C_SwitchSellPanel;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.Sort
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_Trading_Item_C_Sort final
+{
+public:
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_Sort;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.Setup
+// 0x00F0 (0x00F0 - 0x0000)
+struct WBP_Trading_Item_C_Setup final
+{
+public:
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UWBP_PalItemSlotButtonBase_C* Widget)> K2Node_CreateDelegate_OutputDelegate; // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ECheckBoxState                                Temp_byte_Variable;                                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UWBP_PalItemSlotButtonBase_C* Widget)> K2Node_CreateDelegate_OutputDelegate_1; // 0x001C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ECheckBoxState                                Temp_byte_Variable_1;                              // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UWBP_PalItemSlotButtonBase_C* Widget, EPalItemSlotPressType PressType)> K2Node_CreateDelegate_OutputDelegate_2; // 0x0030(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const struct FGuid& PlayerUId)> K2Node_CreateDelegate_OutputDelegate_3;           // 0x0040(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<EPalPlayerInventoryType>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
+	TDelegate<void(class UPalItemContainer* Container)> K2Node_CreateDelegate_OutputDelegate_4;      // 0x0060(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_5;            // 0x0070(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UWBP_PalItemSlotButtonBase_C*>   CallFunc_GetAllItemSlotButton_Slots;               // 0x0088(0x0010)(ReferenceParm, ContainsInstancedReference)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_PalItemSlotButtonBase_C*           CallFunc_Array_Get_Item;                           // 0x00A0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_AD[0x3];                                       // 0x00AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x00B0(0x0018)()
+	class UBP_PalInventoryModel_C*                CallFunc_SpawnObject_ReturnValue;                  // 0x00C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsLockedPrivateByLocalPlayer_ReturnValue; // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECheckBoxState                                K2Node_Select_Default;                             // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D2[0x6];                                       // 0x00D2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalItemContainer*                      CallFunc_GetStoreItemContainer_TargetContainer;    // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E1[0x3];                                       // 0x00E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalItemListBlock_C*                CallFunc_AddItemContainer_createdBlock;            // 0x00E8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_Setup;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.SetProductSettingNum
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_Trading_Item_C_SetProductSettingNum final
+{
+public:
+	int32                                         NewNum;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalItemIDManager*                      CallFunc_GetItemIDManager_ReturnValue;             // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetTargetItemStock_ReturnValue;           // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalStaticItemDataBase*                 CallFunc_GetStaticItemData_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetMaxStackCount_ReturnValue;             // 0x0020(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Min_ReturnValue;                          // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Min_ReturnValue_1;                        // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Max_ReturnValue;                          // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0038(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_SetProductSettingNum;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.SetCostSettingNum
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_Trading_Item_C_SetCostSettingNum final
+{
+public:
+	int32                                         NewNum;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalItemIDManager*                      CallFunc_GetItemIDManager_ReturnValue;             // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalStaticItemDataBase*                 CallFunc_GetStaticItemData_ReturnValue;            // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetMaxStackCount_ReturnValue;             // 0x0018(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Min_ReturnValue;                          // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Max_ReturnValue;                          // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0028(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_SetCostSettingNum;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.Refill
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Trading_Item_C_Refill final
+{
+public:
+	class UPalItemContainer*                      CallFunc_GetStoreItemContainer_TargetContainer;    // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_Refill;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.OnTradeUnhovered
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Trading_Item_C_OnTradeUnhovered final
+{
+public:
+	int32                                         TradeIndex;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_OnTradeUnhovered;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.OnTradeHovered
+// 0x0088 (0x0088 - 0x0000)
+struct WBP_Trading_Item_C_OnTradeHovered final
+{
+public:
+	int32                                         TradeIndex;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Trading_Item_List_C*               CallFunc_Array_Get_Item;                           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FPalItemBoothTradeInfo>         CallFunc_GetTradeInfos_OutTradeInfo;               // 0x0010(0x0010)(ReferenceParm)
+	struct FPalItemBoothTradeInfo                 CallFunc_Array_Get_Item_1;                         // 0x0020(0x0068)(NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_OnTradeHovered;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.OnTradeEdit
+// 0x00D0 (0x00D0 - 0x0000)
+struct WBP_Trading_Item_C_OnTradeEdit final
+{
+public:
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0018)()
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x0020(0x0018)()
+	int32                                         CallFunc_GetTargetItemStock_ReturnValue;           // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue_2;             // 0x0040(0x0018)()
+	TArray<struct FPalItemBoothTradeInfo>         CallFunc_GetTradeInfos_OutTradeInfo;               // 0x0058(0x0010)(ReferenceParm)
+	struct FPalItemBoothTradeInfo                 CallFunc_Array_Get_Item;                           // 0x0068(0x0068)(NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_OnTradeEdit;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.OnStoreSlotUnhovered
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_Trading_Item_C_OnStoreSlotUnhovered final
+{
+public:
+	class UWBP_PalItemSlotButtonBase_C*           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_OnStoreSlotUnhovered;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.OnStoreSlotHovered
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Trading_Item_C_OnStoreSlotHovered final
+{
+public:
+	class UWBP_PalItemSlotButtonBase_C*           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_OnStoreSlotHovered;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.OnPrivateLockChanged
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Trading_Item_C_OnPrivateLockChanged final
+{
+public:
+	struct FGuid                                  LockPlayerUId;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECheckBoxState                                Temp_byte_Variable;                                // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECheckBoxState                                Temp_byte_Variable_1;                              // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsLockedPrivateByLocalPlayer_ReturnValue; // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECheckBoxState                                K2Node_Select_Default;                             // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_OnPrivateLockChanged;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.OnClickedRemoveTradeButton
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Trading_Item_C_OnClickedRemoveTradeButton final
+{
+public:
+	int32                                         TradeIndex;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_OnClickedRemoveTradeButton;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.OnClickedCostSelectSlot
+// 0x005C (0x005C - 0x0000)
+struct WBP_Trading_Item_C_OnClickedCostSelectSlot final
+{
+public:
+	class FName                                   StaticItemId;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalItemId                             K2Node_MakeStruct_PalItemId;                       // 0x0008(0x0028)(NoDestructor, HasGetValueTypeHash)
+	struct FPalItemAndNum                         K2Node_MakeStruct_PalItemAndNum;                   // 0x0030(0x002C)(NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_OnClickedCostSelectSlot;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.OnClickedAnyProductSlot
+// 0x0090 (0x0090 - 0x0000)
+struct WBP_Trading_Item_C_OnClickedAnyProductSlot final
+{
+public:
+	class UWBP_PalItemSlotButtonBase_C*           Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalItemSlot*                           CallFunc_GetTargetSlot_targetSlot;                 // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalItemId                             CallFunc_GetItemId_ReturnValue;                    // 0x001C(0x0028)(ConstParm, NoDestructor, HasGetValueTypeHash)
+	struct FPalItemAndNum                         K2Node_MakeStruct_PalItemAndNum;                   // 0x0044(0x002C)(NoDestructor)
+	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_72[0x2];                                       // 0x0072(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetTargetItemStock_ReturnValue;           // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0078(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_OnClickedAnyProductSlot;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.OnCancelAction
+// 0x0009 (0x0009 - 0x0000)
+struct WBP_Trading_Item_C_OnCancelAction final
+{
+public:
+	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasAnyUserFocus_ReturnValue;              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasKeyboardFocus_ReturnValue_1;           // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasAnyUserFocus_ReturnValue_1;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue_1;                  // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_OnCancelAction;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.On Store Content Updated
+// 0x00D8 (0x00D8 - 0x0000)
+struct WBP_Trading_Item_C_On_Store_Content_Updated final
+{
+public:
+	class UPalItemContainer*                      ItemContainer;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalItemContainer*                      CallFunc_GetStoreItemContainer_TargetContainer;    // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Trading_Item_List_C*               CallFunc_Array_Get_Item;                           // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FPalItemBoothTradeInfo>         CallFunc_GetTradeInfos_OutTradeInfo;               // 0x0030(0x0010)(ReferenceParm)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalItemBoothTradeInfo                 CallFunc_Array_Get_Item_1;                         // 0x0044(0x0068)(NoDestructor)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B1[0x3];                                       // 0x00B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetItemStackCount_ReturnValue;            // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x00B8(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B9[0x3];                                       // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetTargetItemStock_ReturnValue;           // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x00C0(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_On_Store_Content_Updated;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.FocusToStoreManage
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_Trading_Item_C_FocusToStoreManage final
+{
+public:
+	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_FocusToStoreManage;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.FocusRight
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Trading_Item_C_FocusRight final
+{
+public:
+	class UWidget*                                CallFunc_GetTargetContainerTopFocustTarget_FocusTarget; // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetTargetContainerLastHoveredFocusTarget_Widget; // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_FocusRight;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.FocusLeft
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Trading_Item_C_FocusLeft final
+{
+public:
+	class UWidget*                                CallFunc_Get_Inventory_Top_Focust_Target_FocusTarget; // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetInventoryLastHoveredFocusTarget_Widget; // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_FocusLeft;
 
 // Function WBP_Trading_Item.WBP_Trading_Item_C.ExecuteUbergraph_WBP_Trading_Item
 // 0x02D0 (0x02D0 - 0x0000)
@@ -278,442 +548,172 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Trading_Item_C_ExecuteUbergraph_WBP_Trading_Item;
 
-// Function WBP_Trading_Item.WBP_Trading_Item_C.FocusLeft
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Trading_Item_C_FocusLeft final
-{
-public:
-	class UWidget*                                CallFunc_Get_Inventory_Top_Focust_Target_FocusTarget; // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_GetInventoryLastHoveredFocusTarget_Widget; // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_FocusLeft;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.FocusRight
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Trading_Item_C_FocusRight final
-{
-public:
-	class UWidget*                                CallFunc_GetTargetContainerTopFocustTarget_FocusTarget; // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_GetTargetContainerLastHoveredFocusTarget_Widget; // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_FocusRight;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.FocusToStoreManage
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_Trading_Item_C_FocusToStoreManage final
-{
-public:
-	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_FocusToStoreManage;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.On Store Content Updated
-// 0x00D8 (0x00D8 - 0x0000)
-struct WBP_Trading_Item_C_On_Store_Content_Updated final
-{
-public:
-	class UPalItemContainer*                      ItemContainer;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalItemContainer*                      CallFunc_GetStoreItemContainer_TargetContainer;    // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Trading_Item_List_C*               CallFunc_Array_Get_Item;                           // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FPalItemBoothTradeInfo>         CallFunc_GetTradeInfos_OutTradeInfo;               // 0x0030(0x0010)(ReferenceParm)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalItemBoothTradeInfo                 CallFunc_Array_Get_Item_1;                         // 0x0044(0x0068)(NoDestructor)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B1[0x3];                                       // 0x00B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetItemStackCount_ReturnValue;            // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x00B8(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B9[0x3];                                       // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetTargetItemStock_ReturnValue;           // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x00C0(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_On_Store_Content_Updated;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.OnCancelAction
-// 0x0009 (0x0009 - 0x0000)
-struct WBP_Trading_Item_C_OnCancelAction final
-{
-public:
-	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasAnyUserFocus_ReturnValue;              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasKeyboardFocus_ReturnValue_1;           // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasAnyUserFocus_ReturnValue_1;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsVisible_ReturnValue_1;                  // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_OnCancelAction;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.OnClickedAnyProductSlot
-// 0x0090 (0x0090 - 0x0000)
-struct WBP_Trading_Item_C_OnClickedAnyProductSlot final
-{
-public:
-	class UWBP_PalItemSlotButtonBase_C*           Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalItemSlot*                           CallFunc_GetTargetSlot_targetSlot;                 // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalItemId                             CallFunc_GetItemId_ReturnValue;                    // 0x001C(0x0028)(ConstParm, NoDestructor, HasGetValueTypeHash)
-	struct FPalItemAndNum                         K2Node_MakeStruct_PalItemAndNum;                   // 0x0044(0x002C)(NoDestructor)
-	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_72[0x2];                                       // 0x0072(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetTargetItemStock_ReturnValue;           // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0078(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_OnClickedAnyProductSlot;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.OnClickedCostSelectSlot
-// 0x005C (0x005C - 0x0000)
-struct WBP_Trading_Item_C_OnClickedCostSelectSlot final
-{
-public:
-	class FName                                   StaticItemId;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPalItemId                             K2Node_MakeStruct_PalItemId;                       // 0x0008(0x0028)(NoDestructor, HasGetValueTypeHash)
-	struct FPalItemAndNum                         K2Node_MakeStruct_PalItemAndNum;                   // 0x0030(0x002C)(NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_OnClickedCostSelectSlot;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.OnClickedRemoveTradeButton
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Trading_Item_C_OnClickedRemoveTradeButton final
-{
-public:
-	int32                                         TradeIndex;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_OnClickedRemoveTradeButton;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.OnPrivateLockChanged
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Trading_Item_C_OnPrivateLockChanged final
-{
-public:
-	struct FGuid                                  LockPlayerUId;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECheckBoxState                                Temp_byte_Variable;                                // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECheckBoxState                                Temp_byte_Variable_1;                              // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsLockedPrivateByLocalPlayer_ReturnValue; // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECheckBoxState                                K2Node_Select_Default;                             // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_OnPrivateLockChanged;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.OnStoreSlotHovered
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Trading_Item_C_OnStoreSlotHovered final
-{
-public:
-	class UWBP_PalItemSlotButtonBase_C*           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_OnStoreSlotHovered;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.OnStoreSlotUnhovered
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_Trading_Item_C_OnStoreSlotUnhovered final
-{
-public:
-	class UWBP_PalItemSlotButtonBase_C*           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_OnStoreSlotUnhovered;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.OnTradeEdit
-// 0x00D0 (0x00D0 - 0x0000)
-struct WBP_Trading_Item_C_OnTradeEdit final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0018)()
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x0020(0x0018)()
-	int32                                         CallFunc_GetTargetItemStock_ReturnValue;           // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue_2;             // 0x0040(0x0018)()
-	TArray<struct FPalItemBoothTradeInfo>         CallFunc_GetTradeInfos_OutTradeInfo;               // 0x0058(0x0010)(ReferenceParm)
-	struct FPalItemBoothTradeInfo                 CallFunc_Array_Get_Item;                           // 0x0068(0x0068)(NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_OnTradeEdit;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.OnTradeHovered
-// 0x0088 (0x0088 - 0x0000)
-struct WBP_Trading_Item_C_OnTradeHovered final
-{
-public:
-	int32                                         TradeIndex;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Trading_Item_List_C*               CallFunc_Array_Get_Item;                           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FPalItemBoothTradeInfo>         CallFunc_GetTradeInfos_OutTradeInfo;               // 0x0010(0x0010)(ReferenceParm)
-	struct FPalItemBoothTradeInfo                 CallFunc_Array_Get_Item_1;                         // 0x0020(0x0068)(NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_OnTradeHovered;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.OnTradeUnhovered
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Trading_Item_C_OnTradeUnhovered final
-{
-public:
-	int32                                         TradeIndex;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_OnTradeUnhovered;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.Refill
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Trading_Item_C_Refill final
-{
-public:
-	class UPalItemContainer*                      CallFunc_GetStoreItemContainer_TargetContainer;    // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_Refill;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.SetCostSettingNum
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_Trading_Item_C_SetCostSettingNum final
-{
-public:
-	int32                                         NewNum;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalItemIDManager*                      CallFunc_GetItemIDManager_ReturnValue;             // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalStaticItemDataBase*                 CallFunc_GetStaticItemData_ReturnValue;            // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetMaxStackCount_ReturnValue;             // 0x0018(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Min_ReturnValue;                          // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Max_ReturnValue;                          // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0028(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_SetCostSettingNum;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.SetProductSettingNum
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_Trading_Item_C_SetProductSettingNum final
-{
-public:
-	int32                                         NewNum;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalItemIDManager*                      CallFunc_GetItemIDManager_ReturnValue;             // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetTargetItemStock_ReturnValue;           // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalStaticItemDataBase*                 CallFunc_GetStaticItemData_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetMaxStackCount_ReturnValue;             // 0x0020(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Min_ReturnValue;                          // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Min_ReturnValue_1;                        // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Max_ReturnValue;                          // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0038(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_SetProductSettingNum;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.Setup
-// 0x00F0 (0x00F0 - 0x0000)
-struct WBP_Trading_Item_C_Setup final
-{
-public:
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UWBP_PalItemSlotButtonBase_C* Widget)> K2Node_CreateDelegate_OutputDelegate; // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ECheckBoxState                                Temp_byte_Variable;                                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UWBP_PalItemSlotButtonBase_C* Widget)> K2Node_CreateDelegate_OutputDelegate_1; // 0x001C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ECheckBoxState                                Temp_byte_Variable_1;                              // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UWBP_PalItemSlotButtonBase_C* Widget, EPalItemSlotPressType PressType)> K2Node_CreateDelegate_OutputDelegate_2; // 0x0030(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FGuid& PlayerUId)> K2Node_CreateDelegate_OutputDelegate_3;           // 0x0040(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<EPalPlayerInventoryType>               K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
-	TDelegate<void(class UPalItemContainer* Container)> K2Node_CreateDelegate_OutputDelegate_4;      // 0x0060(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_5;            // 0x0070(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UWBP_PalItemSlotButtonBase_C*>   CallFunc_GetAllItemSlotButton_Slots;               // 0x0088(0x0010)(ReferenceParm, ContainsInstancedReference)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9C[0x4];                                       // 0x009C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_PalItemSlotButtonBase_C*           CallFunc_Array_Get_Item;                           // 0x00A0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_AD[0x3];                                       // 0x00AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x00B0(0x0018)()
-	class UBP_PalInventoryModel_C*                CallFunc_SpawnObject_ReturnValue;                  // 0x00C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsLockedPrivateByLocalPlayer_ReturnValue; // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECheckBoxState                                K2Node_Select_Default;                             // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D2[0x6];                                       // 0x00D2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalItemContainer*                      CallFunc_GetStoreItemContainer_TargetContainer;    // 0x00D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E1[0x3];                                       // 0x00E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_PalItemListBlock_C*                CallFunc_AddItemContainer_createdBlock;            // 0x00E8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_Setup;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.Sort
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_Trading_Item_C_Sort final
-{
-public:
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_Sort;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.SwitchSellPanel
+// Function WBP_Trading_Item.WBP_Trading_Item_C.Enable Product Select
 // 0x0028 (0x0028 - 0x0000)
-struct WBP_Trading_Item_C_SwitchSellPanel final
+struct WBP_Trading_Item_C_Enable_Product_Select final
 {
 public:
-	bool                                          ToSellList;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Enable;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_17[0x1];                                       // 0x0017(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                CallFunc_GetDesiredFocusTarget_ReturnValue;        // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetFocusTarget_target;                    // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                K2Node_Select_Default;                             // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Trading_Item_C_SwitchSellPanel;
+DUMPER7_ASSERTS_WBP_Trading_Item_C_Enable_Product_Select;
 
-// Function WBP_Trading_Item.WBP_Trading_Item_C.SwitchSlotPanelHoverDisplay
-// 0x002C (0x002C - 0x0000)
-struct WBP_Trading_Item_C_SwitchSlotPanelHoverDisplay final
+// Function WBP_Trading_Item.WBP_Trading_Item_C.Enable Cost Select
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_Trading_Item_C_Enable_Cost_Select final
 {
 public:
-	bool                                          IsHover;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0014(0x0014)()
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class FName StaticItemId)>     K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBP_HUDDispatchParameter_ItemSearch_C*  CallFunc_CreateDispatchParameterForK2Node_ReturnValue; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  CallFunc_Push_ReturnValue;                         // 0x0018(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Trading_Item_C_SwitchSlotPanelHoverDisplay;
+DUMPER7_ASSERTS_WBP_Trading_Item_C_Enable_Cost_Select;
 
-// Function WBP_Trading_Item.WBP_Trading_Item_C.SwitchStoragePanelVisibility
-// 0x00D0 (0x00D0 - 0x0000)
-struct WBP_Trading_Item_C_SwitchStoragePanelVisibility final
+// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Sort_TargetContainer_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Sort_TargetContainer_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	bool                                          Visible;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_MakeLiteralName_ReturnValue_1;            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_MakeLiteralName_ReturnValue_2;            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_MakeLiteralName_ReturnValue_3;            // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_MakeLiteralName_ReturnValue_4;            // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   CallFunc_Array_Get_Item;                           // 0x0040(0x0004)(NoDestructor)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x004C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x005C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x006C(0x0004)(NoDestructor)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_1;      // 0x0070(0x0004)(NoDestructor)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x007C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x008C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_2;      // 0x009C(0x0004)(NoDestructor)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_3;      // 0x00A0(0x0004)(NoDestructor)
-	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_3;                  // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_4;            // 0x00AC(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                CallFunc_GetDesiredFocusTarget_ReturnValue;        // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_4;      // 0x00C8(0x0004)(NoDestructor)
-	int32                                         CallFunc_Array_Add_ReturnValue_4;                  // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Trading_Item_C_SwitchStoragePanelVisibility;
+DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Sort_TargetContainer_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
 
-// Function WBP_Trading_Item.WBP_Trading_Item_C.Toggle Private Lock
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Trading_Item_C_Toggle_Private_Lock final
+// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Trading_Item_C_Toggle_Private_Lock;
+DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature;
 
-// Function WBP_Trading_Item.WBP_Trading_Item_C.ToSetSellPanel
-// 0x0068 (0x0068 - 0x0000)
-struct WBP_Trading_Item_C_ToSetSellPanel final
+// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Plus_1_K2Node_ComponentBoundEvent_11_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Plus_1_K2Node_ComponentBoundEvent_11_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	struct FPalItemBoothTradeInfo                 K2Node_MakeStruct_PalItemBoothTradeInfo;           // 0x0000(0x0068)(NoDestructor)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Trading_Item_C_ToSetSellPanel;
+DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Plus_1_K2Node_ComponentBoundEvent_11_CommonButtonBaseClicked__DelegateSignature;
 
-// Function WBP_Trading_Item.WBP_Trading_Item_C.Update Sell List
-// 0x00B0 (0x00B0 - 0x0000)
-struct WBP_Trading_Item_C_Update_Sell_List final
+// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_7_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_7_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                CallFunc_GetDesiredFocusTarget_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_7_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Minus_1_K2Node_ComponentBoundEvent_10_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Minus_1_K2Node_ComponentBoundEvent_10_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Minus_1_K2Node_ComponentBoundEvent_10_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Lock_CheckBox_K2Node_ComponentBoundEvent_19_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Lock_CheckBox_K2Node_ComponentBoundEvent_19_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_PalInvisibleButton_Lock_CheckBox_K2Node_ComponentBoundEvent_19_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_WBP_ItemSlot_Product_K2Node_ComponentBoundEvent_2_OnClickedButton__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_ItemSlot_Product_K2Node_ComponentBoundEvent_2_OnClickedButton__DelegateSignature final
+{
+public:
+	class UWBP_PalItemSlotButtonBase_C*           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_ItemSlot_Product_K2Node_ComponentBoundEvent_2_OnClickedButton__DelegateSignature;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_WBP_ItemSlot_Cost_K2Node_ComponentBoundEvent_5_OnClickedButton__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_ItemSlot_Cost_K2Node_ComponentBoundEvent_5_OnClickedButton__DelegateSignature final
+{
+public:
+	class UWBP_PalItemSlotButtonBase_C*           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_ItemSlot_Cost_K2Node_ComponentBoundEvent_5_OnClickedButton__DelegateSignature;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_WBP_IngameMenu_Chest_K2Node_ComponentBoundEvent_21_OnHoveredTargetContainerSlot__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_IngameMenu_Chest_K2Node_ComponentBoundEvent_21_OnHoveredTargetContainerSlot__DelegateSignature final
+{
+public:
+	class UWBP_PalItemSlotButtonBase_C*           SlotButton;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_IngameMenu_Chest_K2Node_ComponentBoundEvent_21_OnHoveredTargetContainerSlot__DelegateSignature;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_WBP_IngameMenu_Chest_K2Node_ComponentBoundEvent_20_OnHoveredInventorySlot__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_IngameMenu_Chest_K2Node_ComponentBoundEvent_20_OnHoveredInventorySlot__DelegateSignature final
+{
+public:
+	class UWBP_PalItemSlotButtonBase_C*           SlotButton;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_WBP_IngameMenu_Chest_K2Node_ComponentBoundEvent_20_OnHoveredInventorySlot__DelegateSignature;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_PalEditableTextBox_ProductNum_K2Node_ComponentBoundEvent_9_OnEditableTextBoxChangedEvent__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_PalEditableTextBox_ProductNum_K2Node_ComponentBoundEvent_9_OnEditableTextBoxChangedEvent__DelegateSignature final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_PalEditableTextBox_ProductNum_K2Node_ComponentBoundEvent_9_OnEditableTextBoxChangedEvent__DelegateSignature;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_PalEditableTextBox_ProductNum_K2Node_ComponentBoundEvent_8_OnEditableTextBoxCommittedEvent__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_PalEditableTextBox_ProductNum_K2Node_ComponentBoundEvent_8_OnEditableTextBoxCommittedEvent__DelegateSignature final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	ETextCommit                                   CommitMethod;                                      // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_PalEditableTextBox_ProductNum_K2Node_ComponentBoundEvent_8_OnEditableTextBoxCommittedEvent__DelegateSignature;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_13_OnEditableTextBoxCommittedEvent__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_13_OnEditableTextBoxCommittedEvent__DelegateSignature final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	ETextCommit                                   CommitMethod;                                      // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_13_OnEditableTextBoxCommittedEvent__DelegateSignature;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_12_OnEditableTextBoxChangedEvent__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_12_OnEditableTextBoxChangedEvent__DelegateSignature final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_Trading_Item_C_BndEvt__WBP_Trading_Item_PalEditableTextBox_CostNum_K2Node_ComponentBoundEvent_12_OnEditableTextBoxChangedEvent__DelegateSignature;
+
+// Function WBP_Trading_Item.WBP_Trading_Item_C.AllGet
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_Trading_Item_C_AllGet final
+{
+public:
+	class UPalMapObjectConcreteModelBase*         MapObjectConcreteModel;                            // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class IPalMapObjectItemContainerAccessInterface> ItemContainerAccess;           // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPalItemContainer*                      CallFunc_GetStoreItemContainer_TargetContainer;    // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FPalItemBoothTradeInfo>         CallFunc_GetTradeInfos_OutTradeInfo;               // 0x0020(0x0010)(ReferenceParm)
-	struct FPalItemBoothTradeInfo                 CallFunc_Array_Get_Item;                           // 0x0030(0x0068)(NoDestructor)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x009C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9D[0x3];                                       // 0x009D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Trading_Item_List_C*               CallFunc_Array_Get_Item_1;                         // 0x00A0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Trading_Item_C_Update_Sell_List;
-
-// Function WBP_Trading_Item.WBP_Trading_Item_C.ValidateCurrentTradeInfo
-// 0x0009 (0x0009 - 0x0000)
-struct WBP_Trading_Item_C_ValidateCurrentTradeInfo final
-{
-public:
-	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0004(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsEmpty_ReturnValue_1;                    // 0x0005(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Trading_Item_C_ValidateCurrentTradeInfo;
+DUMPER7_ASSERTS_WBP_Trading_Item_C_AllGet;
 
 // Function WBP_Trading_Item.WBP_Trading_Item_C.BP_GetDesiredFocusTarget
 // 0x0018 (0x0018 - 0x0000)

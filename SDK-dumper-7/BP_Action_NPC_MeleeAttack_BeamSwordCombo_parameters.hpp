@@ -14,6 +14,51 @@
 namespace SDK::Params
 {
 
+// Function BP_Action_NPC_MeleeAttack_BeamSwordCombo.BP_Action_NPC_MeleeAttack_BeamSwordCombo_C.OnNotifyEnd_9FDC0D23432EA95FAA7D548694C20C3D
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnNotifyEnd_9FDC0D23432EA95FAA7D548694C20C3D final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnNotifyEnd_9FDC0D23432EA95FAA7D548694C20C3D;
+
+// Function BP_Action_NPC_MeleeAttack_BeamSwordCombo.BP_Action_NPC_MeleeAttack_BeamSwordCombo_C.OnNotifyBegin_9FDC0D23432EA95FAA7D548694C20C3D
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnNotifyBegin_9FDC0D23432EA95FAA7D548694C20C3D final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnNotifyBegin_9FDC0D23432EA95FAA7D548694C20C3D;
+
+// Function BP_Action_NPC_MeleeAttack_BeamSwordCombo.BP_Action_NPC_MeleeAttack_BeamSwordCombo_C.OnInterrupted_9FDC0D23432EA95FAA7D548694C20C3D
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnInterrupted_9FDC0D23432EA95FAA7D548694C20C3D final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnInterrupted_9FDC0D23432EA95FAA7D548694C20C3D;
+
+// Function BP_Action_NPC_MeleeAttack_BeamSwordCombo.BP_Action_NPC_MeleeAttack_BeamSwordCombo_C.OnCompleted_9FDC0D23432EA95FAA7D548694C20C3D
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnCompleted_9FDC0D23432EA95FAA7D548694C20C3D final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnCompleted_9FDC0D23432EA95FAA7D548694C20C3D;
+
+// Function BP_Action_NPC_MeleeAttack_BeamSwordCombo.BP_Action_NPC_MeleeAttack_BeamSwordCombo_C.OnBlendOut_9FDC0D23432EA95FAA7D548694C20C3D
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnBlendOut_9FDC0D23432EA95FAA7D548694C20C3D final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnBlendOut_9FDC0D23432EA95FAA7D548694C20C3D;
+
 // Function BP_Action_NPC_MeleeAttack_BeamSwordCombo.BP_Action_NPC_MeleeAttack_BeamSwordCombo_C.ExecuteUbergraph_BP_Action_NPC_MeleeAttack_BeamSwordCombo
 // 0x00A8 (0x00A8 - 0x0000)
 struct BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_ExecuteUbergraph_BP_Action_NPC_MeleeAttack_BeamSwordCombo final
@@ -38,51 +83,6 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_ExecuteUbergraph_BP_Action_NPC_MeleeAttack_BeamSwordCombo;
-
-// Function BP_Action_NPC_MeleeAttack_BeamSwordCombo.BP_Action_NPC_MeleeAttack_BeamSwordCombo_C.OnBlendOut_9FDC0D23432EA95FAA7D548694C20C3D
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnBlendOut_9FDC0D23432EA95FAA7D548694C20C3D final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnBlendOut_9FDC0D23432EA95FAA7D548694C20C3D;
-
-// Function BP_Action_NPC_MeleeAttack_BeamSwordCombo.BP_Action_NPC_MeleeAttack_BeamSwordCombo_C.OnCompleted_9FDC0D23432EA95FAA7D548694C20C3D
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnCompleted_9FDC0D23432EA95FAA7D548694C20C3D final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnCompleted_9FDC0D23432EA95FAA7D548694C20C3D;
-
-// Function BP_Action_NPC_MeleeAttack_BeamSwordCombo.BP_Action_NPC_MeleeAttack_BeamSwordCombo_C.OnInterrupted_9FDC0D23432EA95FAA7D548694C20C3D
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnInterrupted_9FDC0D23432EA95FAA7D548694C20C3D final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnInterrupted_9FDC0D23432EA95FAA7D548694C20C3D;
-
-// Function BP_Action_NPC_MeleeAttack_BeamSwordCombo.BP_Action_NPC_MeleeAttack_BeamSwordCombo_C.OnNotifyBegin_9FDC0D23432EA95FAA7D548694C20C3D
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnNotifyBegin_9FDC0D23432EA95FAA7D548694C20C3D final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnNotifyBegin_9FDC0D23432EA95FAA7D548694C20C3D;
-
-// Function BP_Action_NPC_MeleeAttack_BeamSwordCombo.BP_Action_NPC_MeleeAttack_BeamSwordCombo_C.OnNotifyEnd_9FDC0D23432EA95FAA7D548694C20C3D
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnNotifyEnd_9FDC0D23432EA95FAA7D548694C20C3D final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_NPC_MeleeAttack_BeamSwordCombo_C_OnNotifyEnd_9FDC0D23432EA95FAA7D548694C20C3D;
 
 }
 

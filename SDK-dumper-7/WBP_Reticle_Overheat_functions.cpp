@@ -17,71 +17,15 @@
 namespace SDK
 {
 
-// Function WBP_Reticle_Overheat.WBP_Reticle_Overheat_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Reticle_Overheat.WBP_Reticle_Overheat_C.OnReticleDeactivated
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_Reticle_Overheat_C::Destruct()
+void UWBP_Reticle_Overheat_C::OnReticleDeactivated()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Reticle_Overheat_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Reticle_Overheat.WBP_Reticle_Overheat_C.ExecuteUbergraph_WBP_Reticle_Overheat
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Reticle_Overheat_C::ExecuteUbergraph_WBP_Reticle_Overheat(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Reticle_Overheat_C", "ExecuteUbergraph_WBP_Reticle_Overheat");
-
-	Params::WBP_Reticle_Overheat_C_ExecuteUbergraph_WBP_Reticle_Overheat Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Reticle_Overheat.WBP_Reticle_Overheat_C.OnChangedHeatValue
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bOverHeated                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  HeatValue                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Reticle_Overheat_C::OnChangedHeatValue(bool bOverHeated, double HeatValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Reticle_Overheat_C", "OnChangedHeatValue");
-
-	Params::WBP_Reticle_Overheat_C_OnChangedHeatValue Parms{};
-
-	Parms.bOverHeated = bOverHeated;
-	Parms.HeatValue = HeatValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Reticle_Overheat.WBP_Reticle_Overheat_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Reticle_Overheat_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Reticle_Overheat_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_Reticle_Overheat_C", "OnReticleDeactivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -107,15 +51,71 @@ void UWBP_Reticle_Overheat_C::OnReticleActivted(const struct FPalItemId& WeaponI
 }
 
 
-// Function WBP_Reticle_Overheat.WBP_Reticle_Overheat_C.OnReticleDeactivated
-// (Event, Protected, BlueprintEvent)
+// Function WBP_Reticle_Overheat.WBP_Reticle_Overheat_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Reticle_Overheat_C::OnReticleDeactivated()
+void UWBP_Reticle_Overheat_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Reticle_Overheat_C", "OnReticleDeactivated");
+		Func = Class->GetFunction("WBP_Reticle_Overheat_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Reticle_Overheat.WBP_Reticle_Overheat_C.OnChangedHeatValue
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bOverHeated                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  HeatValue                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Reticle_Overheat_C::OnChangedHeatValue(bool bOverHeated, double HeatValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Reticle_Overheat_C", "OnChangedHeatValue");
+
+	Params::WBP_Reticle_Overheat_C_OnChangedHeatValue Parms{};
+
+	Parms.bOverHeated = bOverHeated;
+	Parms.HeatValue = HeatValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Reticle_Overheat.WBP_Reticle_Overheat_C.ExecuteUbergraph_WBP_Reticle_Overheat
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Reticle_Overheat_C::ExecuteUbergraph_WBP_Reticle_Overheat(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Reticle_Overheat_C", "ExecuteUbergraph_WBP_Reticle_Overheat");
+
+	Params::WBP_Reticle_Overheat_C_ExecuteUbergraph_WBP_Reticle_Overheat Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Reticle_Overheat.WBP_Reticle_Overheat_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Reticle_Overheat_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Reticle_Overheat_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

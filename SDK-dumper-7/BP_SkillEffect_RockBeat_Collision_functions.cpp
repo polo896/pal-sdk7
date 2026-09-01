@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function BP_SkillEffect_RockBeat_Collision.BP_SkillEffect_RockBeat_Collision_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_SkillEffect_RockBeat_Collision_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SkillEffect_RockBeat_Collision_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_SkillEffect_RockBeat_Collision.BP_SkillEffect_RockBeat_Collision_C.ExecuteUbergraph_BP_SkillEffect_RockBeat_Collision
 // (Final, UbergraphFunction)
 // Parameters:
@@ -34,20 +48,6 @@ void ABP_SkillEffect_RockBeat_Collision_C::ExecuteUbergraph_BP_SkillEffect_RockB
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SkillEffect_RockBeat_Collision.BP_SkillEffect_RockBeat_Collision_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_SkillEffect_RockBeat_Collision_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkillEffect_RockBeat_Collision_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

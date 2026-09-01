@@ -17,16 +17,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_Menu_CharacterHPGauge.WBP_Menu_CharacterHPGauge_C.ExecuteUbergraph_WBP_Menu_CharacterHPGauge
-// 0x0014 (0x0014 - 0x0000)
-struct WBP_Menu_CharacterHPGauge_C_ExecuteUbergraph_WBP_Menu_CharacterHPGauge final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& nowMaxHP)> K2Node_CreateDelegate_OutputDelegate; // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Menu_CharacterHPGauge_C_ExecuteUbergraph_WBP_Menu_CharacterHPGauge;
-
 // Function WBP_Menu_CharacterHPGauge.WBP_Menu_CharacterHPGauge_C.UpdateHP
 // 0x00F8 (0x00F8 - 0x0000)
 struct WBP_Menu_CharacterHPGauge_C_UpdateHP final
@@ -51,6 +41,16 @@ public:
 	float                                         CallFunc_SetPercent_InPercent_ImplicitCast;        // 0x00F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Menu_CharacterHPGauge_C_UpdateHP;
+
+// Function WBP_Menu_CharacterHPGauge.WBP_Menu_CharacterHPGauge_C.ExecuteUbergraph_WBP_Menu_CharacterHPGauge
+// 0x0014 (0x0014 - 0x0000)
+struct WBP_Menu_CharacterHPGauge_C_ExecuteUbergraph_WBP_Menu_CharacterHPGauge final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& nowMaxHP)> K2Node_CreateDelegate_OutputDelegate; // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_CharacterHPGauge_C_ExecuteUbergraph_WBP_Menu_CharacterHPGauge;
 
 }
 

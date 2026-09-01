@@ -43,16 +43,16 @@ public:
 	bool                                          IsSimpleDetail;                                    // 0x04E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ChangeToCompleted();
-	void ChangeToExpandDetail();
-	void ChangeToInProgress();
-	void ChangeToSimpleDetail(bool bSkipAnimation);
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_PalWork_Expedition(int32 EntryPoint);
-	void SetGaugeRate(double Rate);
-	void SetRemainSeconds(int64 Seconds);
 	void SetTitle(const class FText& TitleText);
+	void SetRemainSeconds(int64 Seconds);
+	void SetGaugeRate(double Rate);
+	void ExecuteUbergraph_WBP_PalWork_Expedition(int32 EntryPoint);
+	void Destruct();
+	void Construct();
+	void ChangeToSimpleDetail(bool bSkipAnimation);
+	void ChangeToInProgress();
+	void ChangeToExpandDetail();
+	void ChangeToCompleted();
 
 public:
 	static class UClass* StaticClass()

@@ -31,14 +31,14 @@ class UWBP_PalCharacterScrollList_C : public UWBP_PalCommonScrollList_C
     void OnEmptySlot_Internal(class UWBP_PalCharacterSlotButtonBase_C* SlotButton);
     void OnUpdateSlot_Binded(class UWBP_PalCharacterSlotButtonBase_C* SlotButton);
     void GetTopFocusTarget(class UWidget*& Widget);
-    void Get All Children(TArray<class UWidget*>& widgets);
+    void Get All Children(TArray<UWidget*>& widgets);
     void RemoveChild(class UWBP_PalCharacterSlotButtonBase_C* targetChild);
     void FocusPreviousButton(class UWBP_PalCharacterSlotButtonBase_C* rootSlotButton);
     void ClearAllChildren();
     void FocusToTopContent();
     void ChangeChildrenPadding(FVector2D Padding);
     void ClearInnnerChildren();
-    void AddCharacterSlots(TArray<class UPalIndividualCharacterSlot*>& targetSlots);
+    void AddCharacterSlots(TArray<UPalIndividualCharacterSlot*>& targetSlots);
     void OnUnfocused_Internal(class UWBP_PalCharacterSlotButtonBase_C* Widget);
     void OnFocused_Internal(class UWBP_PalCharacterSlotButtonBase_C* Widget);
     void OnUnhovered_Internal(class UWBP_PalCharacterSlotButtonBase_C* Widget);

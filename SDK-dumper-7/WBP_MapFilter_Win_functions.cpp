@@ -17,23 +17,39 @@
 namespace SDK
 {
 
-// Function WBP_MapFilter_Win.WBP_MapFilter_Win_C.ForceFTEnable
+// Function WBP_MapFilter_Win.WBP_MapFilter_Win_C.ChangeFilter
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
+// EPalLocationType                        LocationType                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    IsEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MapFilter_Win_C::ForceFTEnable(bool IsEnable)
+void UWBP_MapFilter_Win_C::ChangeFilter(EPalLocationType LocationType, bool IsEnable)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapFilter_Win_C", "ForceFTEnable");
+		Func = Class->GetFunction("WBP_MapFilter_Win_C", "ChangeFilter");
 
-	Params::WBP_MapFilter_Win_C_ForceFTEnable Parms{};
+	Params::WBP_MapFilter_Win_C_ChangeFilter Parms{};
 
+	Parms.LocationType = LocationType;
 	Parms.IsEnable = IsEnable;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MapFilter_Win.WBP_MapFilter_Win_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_MapFilter_Win_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MapFilter_Win_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -57,36 +73,20 @@ void UWBP_MapFilter_Win_C::ExecuteUbergraph_WBP_MapFilter_Win(int32 EntryPoint)
 }
 
 
-// Function WBP_MapFilter_Win.WBP_MapFilter_Win_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_MapFilter_Win_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapFilter_Win_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MapFilter_Win.WBP_MapFilter_Win_C.ChangeFilter
+// Function WBP_MapFilter_Win.WBP_MapFilter_Win_C.ForceFTEnable
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EPalLocationType                        LocationType                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    IsEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MapFilter_Win_C::ChangeFilter(EPalLocationType LocationType, bool IsEnable)
+void UWBP_MapFilter_Win_C::ForceFTEnable(bool IsEnable)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapFilter_Win_C", "ChangeFilter");
+		Func = Class->GetFunction("WBP_MapFilter_Win_C", "ForceFTEnable");
 
-	Params::WBP_MapFilter_Win_C_ChangeFilter Parms{};
+	Params::WBP_MapFilter_Win_C_ForceFTEnable Parms{};
 
-	Parms.LocationType = LocationType;
 	Parms.IsEnable = IsEnable;
 
 	UObject::ProcessEvent(Func, &Parms);

@@ -34,11 +34,11 @@ public:
 
 public:
 	void AddTaslDetailText(const class FText& Text, int32 nowNum, int32 requireNum);
-	void ExecuteUbergraph_WBP_BattleEntry_Member(int32 EntryPoint);
-	void OnArenaEntryEnd();
-	void OnArenaEntryPairing(const struct FPalArenaEntryPair& Pair);
-	void OnChangedBossBattlePlayerListEvent(class FName BossType, EPalBossBattleDifficulty Difficulty, const TArray<class APalPlayerCharacter*>& PlayerList, bool ShouldMask);
 	void RemoveTaskDetailText();
+	void OnChangedBossBattlePlayerListEvent(class FName BossType, EPalBossBattleDifficulty Difficulty, const TArray<class APalPlayerCharacter*>& PlayerList, bool ShouldMask);
+	void OnArenaEntryPairing(const struct FPalArenaEntryPair& Pair);
+	void OnArenaEntryEnd();
+	void ExecuteUbergraph_WBP_BattleEntry_Member(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -17,19 +17,33 @@
 namespace SDK
 {
 
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.BindSlotDataEvents
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_PalCommonCharacterSlotButton_C*SlotButton                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.UnregisterPalOperateInput
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_IngameMenu_CommonCharacterContainer_C::BindSlotDataEvents(class UWBP_PalCommonCharacterSlotButton_C* SlotButton)
+void UWBP_IngameMenu_CommonCharacterContainer_C::UnregisterPalOperateInput()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "BindSlotDataEvents");
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "UnregisterPalOperateInput");
 
-	Params::WBP_IngameMenu_CommonCharacterContainer_C_BindSlotDataEvents Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.UnbindSlotDataEvents
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_PalCommonCharacterSlotButton_C*SlotButton                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_CommonCharacterContainer_C::UnbindSlotDataEvents(class UWBP_PalCommonCharacterSlotButton_C* SlotButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "UnbindSlotDataEvents");
+
+	Params::WBP_IngameMenu_CommonCharacterContainer_C_UnbindSlotDataEvents Parms{};
 
 	Parms.SlotButton = SlotButton;
 
@@ -37,120 +51,76 @@ void UWBP_IngameMenu_CommonCharacterContainer_C::BindSlotDataEvents(class UWBP_P
 }
 
 
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_0_OnPageUpdated__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   Page                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.ToPrevShortcut
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_IngameMenu_CommonCharacterContainer_C::BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_0_OnPageUpdated__DelegateSignature(int32 Page)
+void UWBP_IngameMenu_CommonCharacterContainer_C::ToPrevShortcut()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_0_OnPageUpdated__DelegateSignature");
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "ToPrevShortcut");
 
-	Params::WBP_IngameMenu_CommonCharacterContainer_C_BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_0_OnPageUpdated__DelegateSignature Parms{};
-
-	Parms.Page = Page;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_10_OnRightClickedSlot__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.ToNextShortcut
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_IngameMenu_CommonCharacterContainer_C::BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_10_OnRightClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
+void UWBP_IngameMenu_CommonCharacterContainer_C::ToNextShortcut()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_10_OnRightClickedSlot__DelegateSignature");
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "ToNextShortcut");
 
-	Params::WBP_IngameMenu_CommonCharacterContainer_C_BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_10_OnRightClickedSlot__DelegateSignature Parms{};
-
-	Parms.Slot_0 = Slot_0;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_11_OnHoverSlot__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_IngameMenu_CommonCharacterContainer_C::BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_11_OnHoverSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
+void UWBP_IngameMenu_CommonCharacterContainer_C::Setup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_11_OnHoverSlot__DelegateSignature");
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "Setup");
 
-	Params::WBP_IngameMenu_CommonCharacterContainer_C_BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_11_OnHoverSlot__DelegateSignature Parms{};
-
-	Parms.Slot_0 = Slot_0;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_12_OnUnhoverSlot__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.Set Title
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_IngameMenu_CommonCharacterContainer_C::BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_12_OnUnhoverSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
+void UWBP_IngameMenu_CommonCharacterContainer_C::Set_Title()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_12_OnUnhoverSlot__DelegateSignature");
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "Set Title");
 
-	Params::WBP_IngameMenu_CommonCharacterContainer_C_BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_12_OnUnhoverSlot__DelegateSignature Parms{};
-
-	Parms.Slot_0 = Slot_0;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_13_OnCreatedNewSlot__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.Select Slot
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_CommonCharacterContainer_C::BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_13_OnCreatedNewSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_13_OnCreatedNewSlot__DelegateSignature");
-
-	Params::WBP_IngameMenu_CommonCharacterContainer_C_BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_13_OnCreatedNewSlot__DelegateSignature Parms{};
-
-	Parms.Slot_0 = Slot_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_14_OnLeftClickedSlot__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UPalIndividualCharacterSlot*      Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // EPalItemSlotPressType                   PressType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_CommonCharacterContainer_C::BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_14_OnLeftClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType)
+void UWBP_IngameMenu_CommonCharacterContainer_C::Select_Slot(class UPalIndividualCharacterSlot* Slot_0, EPalItemSlotPressType PressType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_14_OnLeftClickedSlot__DelegateSignature");
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "Select Slot");
 
-	Params::WBP_IngameMenu_CommonCharacterContainer_C_BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_14_OnLeftClickedSlot__DelegateSignature Parms{};
+	Params::WBP_IngameMenu_CommonCharacterContainer_C_Select_Slot Parms{};
 
 	Parms.Slot_0 = Slot_0;
 	Parms.PressType = PressType;
@@ -159,73 +129,325 @@ void UWBP_IngameMenu_CommonCharacterContainer_C::BndEvt__WBP_IngameMenu_CommonCh
 }
 
 
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_Menu_btn_K2Node_ComponentBoundEvent_9_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.RegisterPalOperateInput
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    CanFavorite                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_CommonCharacterContainer_C::BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_Menu_btn_K2Node_ComponentBoundEvent_9_OnButtonClicked__DelegateSignature()
+void UWBP_IngameMenu_CommonCharacterContainer_C::RegisterPalOperateInput(bool CanFavorite)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_Menu_btn_K2Node_ComponentBoundEvent_9_OnButtonClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "RegisterPalOperateInput");
+
+	Params::WBP_IngameMenu_CommonCharacterContainer_C_RegisterPalOperateInput Parms{};
+
+	Parms.CanFavorite = CanFavorite;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.RefreshDisplayCageSlotsEnable
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngameMenu_CommonCharacterContainer_C::RefreshDisplayCageSlotsEnable()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "RefreshDisplayCageSlotsEnable");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_3_OnCreatedSlot__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.RefreshDisplayCageSlotEnable
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*createdSlot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UWBP_PalCommonCharacterSlotButton_C*SlotButton                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_CommonCharacterContainer_C::BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_3_OnCreatedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* createdSlot)
+void UWBP_IngameMenu_CommonCharacterContainer_C::RefreshDisplayCageSlotEnable(class UWBP_PalCommonCharacterSlotButton_C* SlotButton)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_3_OnCreatedSlot__DelegateSignature");
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "RefreshDisplayCageSlotEnable");
 
-	Params::WBP_IngameMenu_CommonCharacterContainer_C_BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_3_OnCreatedSlot__DelegateSignature Parms{};
+	Params::WBP_IngameMenu_CommonCharacterContainer_C_RefreshDisplayCageSlotEnable Parms{};
 
-	Parms.createdSlot = createdSlot;
+	Parms.SlotButton = SlotButton;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_4_OnHoveredSlot__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_CommonCharacterContainer_C::BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_4_OnHoveredSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget)
+void UWBP_IngameMenu_CommonCharacterContainer_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_4_OnHoveredSlot__DelegateSignature");
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "PreConstruct");
 
-	Params::WBP_IngameMenu_CommonCharacterContainer_C_BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_4_OnHoveredSlot__DelegateSignature Parms{};
+	Params::WBP_IngameMenu_CommonCharacterContainer_C_PreConstruct Parms{};
 
-	Parms.Widget = Widget;
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_5_OnUnhoveredSlot__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.OnViewDetailInput
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_IngameMenu_CommonCharacterContainer_C::BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_5_OnUnhoveredSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget)
+void UWBP_IngameMenu_CommonCharacterContainer_C::OnViewDetailInput()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_5_OnUnhoveredSlot__DelegateSignature");
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "OnViewDetailInput");
 
-	Params::WBP_IngameMenu_CommonCharacterContainer_C_BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_5_OnUnhoveredSlot__DelegateSignature Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.OnUpdateSlot
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_PalCharacterSlotButtonBase_C*SlotButton                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_CommonCharacterContainer_C::OnUpdateSlot(class UWBP_PalCharacterSlotButtonBase_C* SlotButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "OnUpdateSlot");
+
+	Params::WBP_IngameMenu_CommonCharacterContainer_C_OnUpdateSlot Parms{};
+
+	Parms.SlotButton = SlotButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.OnUnhoverPalSlot
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_CommonCharacterContainer_C::OnUnhoverPalSlot(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "OnUnhoverPalSlot");
+
+	Params::WBP_IngameMenu_CommonCharacterContainer_C_OnUnhoverPalSlot Parms{};
+
+	Parms.Slot_0 = Slot_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.OnSyncSlot
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_PalCharacterSlotButtonBase_C*SlotButton                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_CommonCharacterContainer_C::OnSyncSlot(class UWBP_PalCharacterSlotButtonBase_C* SlotButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "OnSyncSlot");
+
+	Params::WBP_IngameMenu_CommonCharacterContainer_C_OnSyncSlot Parms{};
+
+	Parms.SlotButton = SlotButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngameMenu_CommonCharacterContainer_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.OnSendSlotInput
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngameMenu_CommonCharacterContainer_C::OnSendSlotInput()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "OnSendSlotInput");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.OnHoverPartyPalSlot
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_CommonCharacterContainer_C::OnHoverPartyPalSlot(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "OnHoverPartyPalSlot");
+
+	Params::WBP_IngameMenu_CommonCharacterContainer_C_OnHoverPartyPalSlot Parms{};
+
+	Parms.Slot_0 = Slot_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.OnHoverPalSlot
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_CommonCharacterContainer_C::OnHoverPalSlot(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "OnHoverPalSlot");
+
+	Params::WBP_IngameMenu_CommonCharacterContainer_C_OnHoverPalSlot Parms{};
+
+	Parms.Slot_0 = Slot_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.OnEmptySlot
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_PalCharacterSlotButtonBase_C*SlotButton                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_CommonCharacterContainer_C::OnEmptySlot(class UWBP_PalCharacterSlotButtonBase_C* SlotButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "OnEmptySlot");
+
+	Params::WBP_IngameMenu_CommonCharacterContainer_C_OnEmptySlot Parms{};
+
+	Parms.SlotButton = SlotButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.OnClickSlot
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// EPalItemSlotPressType                   PressType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_CommonCharacterContainer_C::OnClickSlot(class UWBP_PalCharacterSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "OnClickSlot");
+
+	Params::WBP_IngameMenu_CommonCharacterContainer_C_OnClickSlot Parms{};
+
+	Parms.Slot_0 = Slot_0;
+	Parms.PressType = PressType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.On Favorite Shortcut
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngameMenu_CommonCharacterContainer_C::On_Favorite_Shortcut()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "On Favorite Shortcut");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.ExecuteUbergraph_WBP_IngameMenu_CommonCharacterContainer
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_CommonCharacterContainer_C::ExecuteUbergraph_WBP_IngameMenu_CommonCharacterContainer(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "ExecuteUbergraph_WBP_IngameMenu_CommonCharacterContainer");
+
+	Params::WBP_IngameMenu_CommonCharacterContainer_C_ExecuteUbergraph_WBP_IngameMenu_CommonCharacterContainer Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_IngameMenu_CommonCharacterContainer_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_8_OnRightClickedSlot__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UWBP_PalCharacterSlotButtonBase_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_CommonCharacterContainer_C::BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_8_OnRightClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_8_OnRightClickedSlot__DelegateSignature");
+
+	Params::WBP_IngameMenu_CommonCharacterContainer_C_BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_8_OnRightClickedSlot__DelegateSignature Parms{};
 
 	Parms.Widget = Widget;
 
@@ -255,19 +477,19 @@ void UWBP_IngameMenu_CommonCharacterContainer_C::BndEvt__WBP_IngameMenu_DisplayC
 }
 
 
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_8_OnRightClickedSlot__DelegateSignature
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_5_OnUnhoveredSlot__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class UWBP_PalCharacterSlotButtonBase_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_CommonCharacterContainer_C::BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_8_OnRightClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget)
+void UWBP_IngameMenu_CommonCharacterContainer_C::BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_5_OnUnhoveredSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_8_OnRightClickedSlot__DelegateSignature");
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_5_OnUnhoveredSlot__DelegateSignature");
 
-	Params::WBP_IngameMenu_CommonCharacterContainer_C_BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_8_OnRightClickedSlot__DelegateSignature Parms{};
+	Params::WBP_IngameMenu_CommonCharacterContainer_C_BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_5_OnUnhoveredSlot__DelegateSignature Parms{};
 
 	Parms.Widget = Widget;
 
@@ -275,68 +497,74 @@ void UWBP_IngameMenu_CommonCharacterContainer_C::BndEvt__WBP_IngameMenu_DisplayC
 }
 
 
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_IngameMenu_CommonCharacterContainer_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.ExecuteUbergraph_WBP_IngameMenu_CommonCharacterContainer
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_4_OnHoveredSlot__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWBP_PalCharacterSlotButtonBase_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_CommonCharacterContainer_C::ExecuteUbergraph_WBP_IngameMenu_CommonCharacterContainer(int32 EntryPoint)
+void UWBP_IngameMenu_CommonCharacterContainer_C::BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_4_OnHoveredSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "ExecuteUbergraph_WBP_IngameMenu_CommonCharacterContainer");
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_4_OnHoveredSlot__DelegateSignature");
 
-	Params::WBP_IngameMenu_CommonCharacterContainer_C_ExecuteUbergraph_WBP_IngameMenu_CommonCharacterContainer Parms{};
+	Params::WBP_IngameMenu_CommonCharacterContainer_C_BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_4_OnHoveredSlot__DelegateSignature Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.On Favorite Shortcut
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_3_OnCreatedSlot__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UWBP_PalCharacterSlotButtonBase_C*createdSlot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_CommonCharacterContainer_C::On_Favorite_Shortcut()
+void UWBP_IngameMenu_CommonCharacterContainer_C::BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_3_OnCreatedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* createdSlot)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "On Favorite Shortcut");
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_3_OnCreatedSlot__DelegateSignature");
+
+	Params::WBP_IngameMenu_CommonCharacterContainer_C_BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_3_OnCreatedSlot__DelegateSignature Parms{};
+
+	Parms.createdSlot = createdSlot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_Menu_btn_K2Node_ComponentBoundEvent_9_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_IngameMenu_CommonCharacterContainer_C::BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_Menu_btn_K2Node_ComponentBoundEvent_9_OnButtonClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_Menu_btn_K2Node_ComponentBoundEvent_9_OnButtonClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.OnClickSlot
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_14_OnLeftClickedSlot__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
 // class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // EPalItemSlotPressType                   PressType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_CommonCharacterContainer_C::OnClickSlot(class UWBP_PalCharacterSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType)
+void UWBP_IngameMenu_CommonCharacterContainer_C::BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_14_OnLeftClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "OnClickSlot");
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_14_OnLeftClickedSlot__DelegateSignature");
 
-	Params::WBP_IngameMenu_CommonCharacterContainer_C_OnClickSlot Parms{};
+	Params::WBP_IngameMenu_CommonCharacterContainer_C_BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_14_OnLeftClickedSlot__DelegateSignature Parms{};
 
 	Parms.Slot_0 = Slot_0;
 	Parms.PressType = PressType;
@@ -345,39 +573,19 @@ void UWBP_IngameMenu_CommonCharacterContainer_C::OnClickSlot(class UWBP_PalChara
 }
 
 
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.OnEmptySlot
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*SlotButton                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_CommonCharacterContainer_C::OnEmptySlot(class UWBP_PalCharacterSlotButtonBase_C* SlotButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "OnEmptySlot");
-
-	Params::WBP_IngameMenu_CommonCharacterContainer_C_OnEmptySlot Parms{};
-
-	Parms.SlotButton = SlotButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.OnHoverPalSlot
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_13_OnCreatedNewSlot__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
 // class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_CommonCharacterContainer_C::OnHoverPalSlot(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
+void UWBP_IngameMenu_CommonCharacterContainer_C::BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_13_OnCreatedNewSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "OnHoverPalSlot");
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_13_OnCreatedNewSlot__DelegateSignature");
 
-	Params::WBP_IngameMenu_CommonCharacterContainer_C_OnHoverPalSlot Parms{};
+	Params::WBP_IngameMenu_CommonCharacterContainer_C_BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_13_OnCreatedNewSlot__DelegateSignature Parms{};
 
 	Parms.Slot_0 = Slot_0;
 
@@ -385,19 +593,19 @@ void UWBP_IngameMenu_CommonCharacterContainer_C::OnHoverPalSlot(class UWBP_PalCh
 }
 
 
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.OnHoverPartyPalSlot
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_12_OnUnhoverSlot__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
 // class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_CommonCharacterContainer_C::OnHoverPartyPalSlot(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
+void UWBP_IngameMenu_CommonCharacterContainer_C::BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_12_OnUnhoverSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "OnHoverPartyPalSlot");
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_12_OnUnhoverSlot__DelegateSignature");
 
-	Params::WBP_IngameMenu_CommonCharacterContainer_C_OnHoverPartyPalSlot Parms{};
+	Params::WBP_IngameMenu_CommonCharacterContainer_C_BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_12_OnUnhoverSlot__DelegateSignature Parms{};
 
 	Parms.Slot_0 = Slot_0;
 
@@ -405,67 +613,19 @@ void UWBP_IngameMenu_CommonCharacterContainer_C::OnHoverPartyPalSlot(class UWBP_
 }
 
 
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.OnSendSlotInput
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameMenu_CommonCharacterContainer_C::OnSendSlotInput()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "OnSendSlotInput");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameMenu_CommonCharacterContainer_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.OnSyncSlot
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*SlotButton                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_CommonCharacterContainer_C::OnSyncSlot(class UWBP_PalCharacterSlotButtonBase_C* SlotButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "OnSyncSlot");
-
-	Params::WBP_IngameMenu_CommonCharacterContainer_C_OnSyncSlot Parms{};
-
-	Parms.SlotButton = SlotButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.OnUnhoverPalSlot
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_11_OnHoverSlot__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
 // class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_CommonCharacterContainer_C::OnUnhoverPalSlot(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
+void UWBP_IngameMenu_CommonCharacterContainer_C::BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_11_OnHoverSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "OnUnhoverPalSlot");
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_11_OnHoverSlot__DelegateSignature");
 
-	Params::WBP_IngameMenu_CommonCharacterContainer_C_OnUnhoverPalSlot Parms{};
+	Params::WBP_IngameMenu_CommonCharacterContainer_C_BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_11_OnHoverSlot__DelegateSignature Parms{};
 
 	Parms.Slot_0 = Slot_0;
 
@@ -473,223 +633,63 @@ void UWBP_IngameMenu_CommonCharacterContainer_C::OnUnhoverPalSlot(class UWBP_Pal
 }
 
 
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.OnUpdateSlot
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_10_OnRightClickedSlot__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*SlotButton                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_CommonCharacterContainer_C::OnUpdateSlot(class UWBP_PalCharacterSlotButtonBase_C* SlotButton)
+void UWBP_IngameMenu_CommonCharacterContainer_C::BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_10_OnRightClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "OnUpdateSlot");
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_10_OnRightClickedSlot__DelegateSignature");
 
-	Params::WBP_IngameMenu_CommonCharacterContainer_C_OnUpdateSlot Parms{};
-
-	Parms.SlotButton = SlotButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.OnViewDetailInput
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameMenu_CommonCharacterContainer_C::OnViewDetailInput()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "OnViewDetailInput");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_CommonCharacterContainer_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "PreConstruct");
-
-	Params::WBP_IngameMenu_CommonCharacterContainer_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.RefreshDisplayCageSlotEnable
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_PalCommonCharacterSlotButton_C*SlotButton                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_CommonCharacterContainer_C::RefreshDisplayCageSlotEnable(class UWBP_PalCommonCharacterSlotButton_C* SlotButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "RefreshDisplayCageSlotEnable");
-
-	Params::WBP_IngameMenu_CommonCharacterContainer_C_RefreshDisplayCageSlotEnable Parms{};
-
-	Parms.SlotButton = SlotButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.RefreshDisplayCageSlotsEnable
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameMenu_CommonCharacterContainer_C::RefreshDisplayCageSlotsEnable()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "RefreshDisplayCageSlotsEnable");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.RegisterPalOperateInput
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    CanFavorite                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_CommonCharacterContainer_C::RegisterPalOperateInput(bool CanFavorite)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "RegisterPalOperateInput");
-
-	Params::WBP_IngameMenu_CommonCharacterContainer_C_RegisterPalOperateInput Parms{};
-
-	Parms.CanFavorite = CanFavorite;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.Select Slot
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalIndividualCharacterSlot*      Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// EPalItemSlotPressType                   PressType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_CommonCharacterContainer_C::Select_Slot(class UPalIndividualCharacterSlot* Slot_0, EPalItemSlotPressType PressType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "Select Slot");
-
-	Params::WBP_IngameMenu_CommonCharacterContainer_C_Select_Slot Parms{};
+	Params::WBP_IngameMenu_CommonCharacterContainer_C_BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_10_OnRightClickedSlot__DelegateSignature Parms{};
 
 	Parms.Slot_0 = Slot_0;
-	Parms.PressType = PressType;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.Set Title
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_0_OnPageUpdated__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   Page                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_CommonCharacterContainer_C::Set_Title()
+void UWBP_IngameMenu_CommonCharacterContainer_C::BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_0_OnPageUpdated__DelegateSignature(int32 Page)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "Set Title");
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_0_OnPageUpdated__DelegateSignature");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_IngameMenu_CommonCharacterContainer_C_BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_0_OnPageUpdated__DelegateSignature Parms{};
+
+	Parms.Page = Page;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameMenu_CommonCharacterContainer_C::Setup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "Setup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.ToNextShortcut
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameMenu_CommonCharacterContainer_C::ToNextShortcut()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "ToNextShortcut");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.ToPrevShortcut
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameMenu_CommonCharacterContainer_C::ToPrevShortcut()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "ToPrevShortcut");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.UnbindSlotDataEvents
+// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.BindSlotDataEvents
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UWBP_PalCommonCharacterSlotButton_C*SlotButton                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_CommonCharacterContainer_C::UnbindSlotDataEvents(class UWBP_PalCommonCharacterSlotButton_C* SlotButton)
+void UWBP_IngameMenu_CommonCharacterContainer_C::BindSlotDataEvents(class UWBP_PalCommonCharacterSlotButton_C* SlotButton)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "UnbindSlotDataEvents");
+		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "BindSlotDataEvents");
 
-	Params::WBP_IngameMenu_CommonCharacterContainer_C_UnbindSlotDataEvents Parms{};
+	Params::WBP_IngameMenu_CommonCharacterContainer_C_BindSlotDataEvents Parms{};
 
 	Parms.SlotButton = SlotButton;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_CommonCharacterContainer.WBP_IngameMenu_CommonCharacterContainer_C.UnregisterPalOperateInput
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameMenu_CommonCharacterContainer_C::UnregisterPalOperateInput()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_CommonCharacterContainer_C", "UnregisterPalOperateInput");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

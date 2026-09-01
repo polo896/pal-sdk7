@@ -55,16 +55,16 @@ public:
 	TMap<EPalFarmSkillFruitsState, struct FDataTableRowHandle> StateMsgIdMap;                        // 0x0528(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 
 public:
-	void Construct();
-	void CREATEDELEGATE_PROXYFUNCTION_0(float NewValue);
-	void Destruct();
-	void DisplayCheck();
-	void ExecuteUbergraph_WBP_PalWorlSkillFruitFarm(int32 EntryPoint);
-	void On_Updated_Worker_Pal(class UPalWorkBase* Work);
-	void OnSetup();
-	void OnUpdateProgress(double Progress);
-	void OnUpdateState(EPalFarmSkillFruitsState NextState);
 	void SetGrowingItemId(class FName StaticItemId);
+	void OnUpdateState(EPalFarmSkillFruitsState NextState);
+	void OnUpdateProgress(double Progress);
+	void OnSetup();
+	void On_Updated_Worker_Pal(class UPalWorkBase* Work);
+	void ExecuteUbergraph_WBP_PalWorlSkillFruitFarm(int32 EntryPoint);
+	void DisplayCheck();
+	void Destruct();
+	void CREATEDELEGATE_PROXYFUNCTION_0(float NewValue);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

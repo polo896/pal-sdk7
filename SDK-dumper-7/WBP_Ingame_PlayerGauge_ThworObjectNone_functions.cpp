@@ -17,37 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_Ingame_PlayerGauge_ThworObjectNone.WBP_Ingame_PlayerGauge_ThworObjectNone_C.Display
+// Function WBP_Ingame_PlayerGauge_ThworObjectNone.WBP_Ingame_PlayerGauge_ThworObjectNone_C.SetDisplayMode
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  DisplayTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// E_PalUIThrowObjectNoneMessageType       DisplayType                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Ingame_PlayerGauge_ThworObjectNone_C::Display(double DisplayTime)
+void UWBP_Ingame_PlayerGauge_ThworObjectNone_C::SetDisplayMode(E_PalUIThrowObjectNoneMessageType DisplayType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_PlayerGauge_ThworObjectNone_C", "Display");
+		Func = Class->GetFunction("WBP_Ingame_PlayerGauge_ThworObjectNone_C", "SetDisplayMode");
 
-	Params::WBP_Ingame_PlayerGauge_ThworObjectNone_C_Display Parms{};
+	Params::WBP_Ingame_PlayerGauge_ThworObjectNone_C_SetDisplayMode Parms{};
 
-	Parms.DisplayTime = DisplayTime;
+	Parms.DisplayType = DisplayType;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Ingame_PlayerGauge_ThworObjectNone.WBP_Ingame_PlayerGauge_ThworObjectNone_C.Hide
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Ingame_PlayerGauge_ThworObjectNone_C::Hide()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_PlayerGauge_ThworObjectNone_C", "Hide");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -65,21 +51,35 @@ void UWBP_Ingame_PlayerGauge_ThworObjectNone_C::OnTimer_Hide()
 }
 
 
-// Function WBP_Ingame_PlayerGauge_ThworObjectNone.WBP_Ingame_PlayerGauge_ThworObjectNone_C.SetDisplayMode
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// E_PalUIThrowObjectNoneMessageType       DisplayType                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Ingame_PlayerGauge_ThworObjectNone.WBP_Ingame_PlayerGauge_ThworObjectNone_C.Hide
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Ingame_PlayerGauge_ThworObjectNone_C::SetDisplayMode(E_PalUIThrowObjectNoneMessageType DisplayType)
+void UWBP_Ingame_PlayerGauge_ThworObjectNone_C::Hide()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_PlayerGauge_ThworObjectNone_C", "SetDisplayMode");
+		Func = Class->GetFunction("WBP_Ingame_PlayerGauge_ThworObjectNone_C", "Hide");
 
-	Params::WBP_Ingame_PlayerGauge_ThworObjectNone_C_SetDisplayMode Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.DisplayType = DisplayType;
+
+// Function WBP_Ingame_PlayerGauge_ThworObjectNone.WBP_Ingame_PlayerGauge_ThworObjectNone_C.Display
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  DisplayTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Ingame_PlayerGauge_ThworObjectNone_C::Display(double DisplayTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_PlayerGauge_ThworObjectNone_C", "Display");
+
+	Params::WBP_Ingame_PlayerGauge_ThworObjectNone_C_Display Parms{};
+
+	Parms.DisplayTime = DisplayTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

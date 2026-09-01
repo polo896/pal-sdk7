@@ -14,36 +14,38 @@
 namespace SDK::Params
 {
 
-// Function BP_ThrowPalWeapon.BP_ThrowPalWeapon_C.ExecuteUbergraph_BP_ThrowPalWeapon
-// 0x0018 (0x0018 - 0x0000)
-struct BP_ThrowPalWeapon_C_ExecuteUbergraph_BP_ThrowPalWeapon final
+// Function BP_ThrowPalWeapon.BP_ThrowPalWeapon_C.Set Flags
+// 0x0030 (0x0030 - 0x0000)
+struct BP_ThrowPalWeapon_C_Set_Flags final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsNotEmptyOtomo_NotEmpty;                 // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_Event_attachActor;                          // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_Event_detachActor;                          // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Disable;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        Speed;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   flagName;                                          // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_GetOwnerCharacter_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalCharacterMovementComponent*         CallFunc_GetComponentByClass_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetWalkSpeedMultiplier_speed_ImplicitCast; // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_ThrowPalWeapon_C_ExecuteUbergraph_BP_ThrowPalWeapon;
+DUMPER7_ASSERTS_BP_ThrowPalWeapon_C_Set_Flags;
 
-// Function BP_ThrowPalWeapon.BP_ThrowPalWeapon_C.GetEquipSocketName
+// Function BP_ThrowPalWeapon.BP_ThrowPalWeapon_C.OnDetachWeapon
 // 0x0008 (0x0008 - 0x0000)
-struct BP_ThrowPalWeapon_C_GetEquipSocketName final
+struct BP_ThrowPalWeapon_C_OnDetachWeapon final
 {
 public:
-	class FName                                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 detachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_ThrowPalWeapon_C_GetEquipSocketName;
+DUMPER7_ASSERTS_BP_ThrowPalWeapon_C_OnDetachWeapon;
 
-// Function BP_ThrowPalWeapon.BP_ThrowPalWeapon_C.GetThrowObjectClass
+// Function BP_ThrowPalWeapon.BP_ThrowPalWeapon_C.OnAttachWeapon
 // 0x0008 (0x0008 - 0x0000)
-struct BP_ThrowPalWeapon_C_GetThrowObjectClass final
+struct BP_ThrowPalWeapon_C_OnAttachWeapon final
 {
 public:
-	class UClass*                                 ThrowObject;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 attachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_ThrowPalWeapon_C_GetThrowObjectClass;
+DUMPER7_ASSERTS_BP_ThrowPalWeapon_C_OnAttachWeapon;
 
 // Function BP_ThrowPalWeapon.BP_ThrowPalWeapon_C.IsNotEmptyOtomo
 // 0x0040 (0x0040 - 0x0000)
@@ -65,38 +67,36 @@ public:
 };
 DUMPER7_ASSERTS_BP_ThrowPalWeapon_C_IsNotEmptyOtomo;
 
-// Function BP_ThrowPalWeapon.BP_ThrowPalWeapon_C.OnAttachWeapon
+// Function BP_ThrowPalWeapon.BP_ThrowPalWeapon_C.GetThrowObjectClass
 // 0x0008 (0x0008 - 0x0000)
-struct BP_ThrowPalWeapon_C_OnAttachWeapon final
+struct BP_ThrowPalWeapon_C_GetThrowObjectClass final
 {
 public:
-	class AActor*                                 attachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 ThrowObject;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_ThrowPalWeapon_C_OnAttachWeapon;
+DUMPER7_ASSERTS_BP_ThrowPalWeapon_C_GetThrowObjectClass;
 
-// Function BP_ThrowPalWeapon.BP_ThrowPalWeapon_C.OnDetachWeapon
+// Function BP_ThrowPalWeapon.BP_ThrowPalWeapon_C.GetEquipSocketName
 // 0x0008 (0x0008 - 0x0000)
-struct BP_ThrowPalWeapon_C_OnDetachWeapon final
+struct BP_ThrowPalWeapon_C_GetEquipSocketName final
 {
 public:
-	class AActor*                                 detachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_ThrowPalWeapon_C_OnDetachWeapon;
+DUMPER7_ASSERTS_BP_ThrowPalWeapon_C_GetEquipSocketName;
 
-// Function BP_ThrowPalWeapon.BP_ThrowPalWeapon_C.Set Flags
-// 0x0030 (0x0030 - 0x0000)
-struct BP_ThrowPalWeapon_C_Set_Flags final
+// Function BP_ThrowPalWeapon.BP_ThrowPalWeapon_C.ExecuteUbergraph_BP_ThrowPalWeapon
+// 0x0018 (0x0018 - 0x0000)
+struct BP_ThrowPalWeapon_C_ExecuteUbergraph_BP_ThrowPalWeapon final
 {
 public:
-	bool                                          Disable;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        Speed;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   flagName;                                          // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_GetOwnerCharacter_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalCharacterMovementComponent*         CallFunc_GetComponentByClass_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetWalkSpeedMultiplier_speed_ImplicitCast; // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsNotEmptyOtomo_NotEmpty;                 // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Event_attachActor;                          // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_Event_detachActor;                          // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_ThrowPalWeapon_C_Set_Flags;
+DUMPER7_ASSERTS_BP_ThrowPalWeapon_C_ExecuteUbergraph_BP_ThrowPalWeapon;
 
 // Function BP_ThrowPalWeapon.BP_ThrowPalWeapon_C.IsEmptyMagazine
 // 0x0001 (0x0001 - 0x0000)

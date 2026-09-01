@@ -30,12 +30,12 @@ public:
 	class UScrollBox*                             ScrollBox_Content;                                 // 0x0298(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_Option_NoteContent(int32 EntryPoint);
-	void SetImage(TSoftObjectPtr<class UTexture2D> SoftTexture);
-	void SetNoteContent(class UPalNoteData* NoteData, const class FText& Desc);
 	void SetText(const class FText& InText);
+	void SetNoteContent(class UPalNoteData* NoteData, const class FText& Desc);
+	void SetImage(TSoftObjectPtr<class UTexture2D> SoftTexture);
+	void ExecuteUbergraph_WBP_Option_NoteContent(int32 EntryPoint);
+	void Destruct();
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

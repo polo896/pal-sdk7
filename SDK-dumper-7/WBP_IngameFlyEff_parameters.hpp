@@ -17,17 +17,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameFlyEff.WBP_IngameFlyEff_C.EnableEff
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameFlyEff_C_EnableEff final
-{
-public:
-	bool                                          IsEnable;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          Character_0;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameFlyEff_C_EnableEff;
-
 // Function WBP_IngameFlyEff.WBP_IngameFlyEff_C.ExecuteUbergraph_WBP_IngameFlyEff
 // 0x0110 (0x0110 - 0x0000)
 struct WBP_IngameFlyEff_C_ExecuteUbergraph_WBP_IngameFlyEff final
@@ -86,6 +75,17 @@ public:
 	float                                         CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_IngameFlyEff_C_ExecuteUbergraph_WBP_IngameFlyEff;
+
+// Function WBP_IngameFlyEff.WBP_IngameFlyEff_C.EnableEff
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameFlyEff_C_EnableEff final
+{
+public:
+	bool                                          IsEnable;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          Character_0;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameFlyEff_C_EnableEff;
 
 }
 

@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "EPalUIPalInfoType_structs.hpp"
-#include "FPalUIPalInfoDisplayData_structs.hpp"
 #include "UMG_classes.hpp"
+#include "FPalUIPalInfoDisplayData_structs.hpp"
+#include "EPalUIPalInfoType_structs.hpp"
 
 
 namespace SDK
@@ -53,27 +53,27 @@ public:
 	struct FFPalUIPalInfoDisplayData              DisplayingGetInfo;                                 // 0x03B0(0x0040)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_BonusToDesc();
-	void AnmEvent_DescToBonus(bool AlreadyBonusCompleted);
-	void AnmEvent_ForceBonus();
-	void AnmEvent_ForceDesc();
-	void AnmEvent_OpenAndSetTimer(EPalUIPalInfoType infoType, bool AlreadyBonusCompleted);
-	void ClearPassiveList();
-	void Construct();
-	void Create_Default_Get_Info(const struct FPalUIPalCaptureInfo& CaptureInfo, struct FFPalUIPalInfoDisplayData* getInfoData, bool* isSuccessed);
 	void DisplayFirstActivatedInfo(class APalCharacter* Character);
-	void DisplayPassiveSkill(TArray<class FName>& passiveList);
-	void DisplayShorDesc(class FName CharacterID);
-	void ExecuteUbergraph_WBP_PalInfo(int32 EntryPoint);
-	void Finished_8AC905F6491806EF04F1E58EE1398650();
-	void Finished_DDDBAAA14AFFC8A46E31C0A4BCAC3C07();
-	void OnDescToBonus();
-	void OnInitialized();
-	void Setup(const struct FFPalUIPalInfoDisplayData& getInfo);
-	void SetupCapturePalInfo(const struct FPalUIPalCaptureInfo& CaptureInfo);
-	void SetupFirstActivatedPalInfo(class UPalIndividualCharacterHandle* Handle);
-	void TryDisplayNextInfoEvent();
+	void Create_Default_Get_Info(const struct FPalUIPalCaptureInfo& CaptureInfo, struct FFPalUIPalInfoDisplayData* getInfoData, bool* isSuccessed);
+	void Construct();
+	void ClearPassiveList();
+	void AnmEvent_OpenAndSetTimer(EPalUIPalInfoType infoType, bool AlreadyBonusCompleted);
+	void AnmEvent_ForceDesc();
+	void AnmEvent_ForceBonus();
+	void AnmEvent_DescToBonus(bool AlreadyBonusCompleted);
+	void AnmEvent_BonusToDesc();
 	void TryDIsplayStackedCharacter(bool* displayed);
+	void TryDisplayNextInfoEvent();
+	void SetupFirstActivatedPalInfo(class UPalIndividualCharacterHandle* Handle);
+	void SetupCapturePalInfo(const struct FPalUIPalCaptureInfo& CaptureInfo);
+	void Setup(const struct FFPalUIPalInfoDisplayData& getInfo);
+	void OnInitialized();
+	void OnDescToBonus();
+	void Finished_DDDBAAA14AFFC8A46E31C0A4BCAC3C07();
+	void Finished_8AC905F6491806EF04F1E58EE1398650();
+	void ExecuteUbergraph_WBP_PalInfo(int32 EntryPoint);
+	void DisplayShorDesc(class FName CharacterID);
+	void DisplayPassiveSkill(TArray<class FName>& passiveList);
 
 public:
 	static class UClass* StaticClass()

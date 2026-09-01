@@ -40,15 +40,15 @@ public:
 	struct FDataTableRowHandle                    NoBlueprintlMsgID;                                 // 0x0378(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void AnmEvent_CannotBuild_NoBlueprint();
-	void AnmEvent_CannotBuild_NotEnoughMaterials();
-	void AnmEvent_CannotBuild_NoText();
-	void AnmEvent_Small();
-	void Construct();
-	void DisableTextForDeck();
-	void ExecuteUbergraph_WBP_IngameMenuConstruction_ItemSlot(int32 EntryPoint);
-	void SetNewIconVisibility(bool Visable);
 	void Setup(const struct FPalBuildObjectData& BuildObjectData_0);
+	void SetNewIconVisibility(bool Visable);
+	void ExecuteUbergraph_WBP_IngameMenuConstruction_ItemSlot(int32 EntryPoint);
+	void DisableTextForDeck();
+	void Construct();
+	void AnmEvent_Small();
+	void AnmEvent_CannotBuild_NoText();
+	void AnmEvent_CannotBuild_NotEnoughMaterials();
+	void AnmEvent_CannotBuild_NoBlueprint();
 
 	struct FVector2D GetCanvasSize() const;
 

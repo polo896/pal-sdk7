@@ -33,8 +33,8 @@ public:
 	class UNiagaraComponent*                      PlayingFX;                                         // 0x07A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void OnEndGenerate();
 	void OnStartGenerate();
+	void OnEndGenerate();
 
 public:
 	static class UClass* StaticClass()

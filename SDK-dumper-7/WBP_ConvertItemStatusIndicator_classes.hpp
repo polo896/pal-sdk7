@@ -34,19 +34,19 @@ public:
 	class UPalMapObjectConvertItemModel*          Model;                                             // 0x0480(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void CheckLocationEvent();
-	void CloseDetail();
-	void Construct();
-	void Destruct();
-	void DisplayDetail();
-	void ExecuteUbergraph_WBP_ConvertItemStatusIndicator(int32 EntryPoint);
-	void Initialize();
-	void OnReflectWorkProgress(class UPalWorkProgress* WorkProgress);
-	void OnSetup();
-	void OnUpdatedWorkerPal(class UPalWorkBase* Work);
-	void OnUpdateProductSlot(class UPalItemSlot* Slot_0);
-	void OnUpdateRecipe(class UPalMapObjectConvertItemModel* Model_0);
 	void UpdateProductNum(class UPalMapObjectConvertItemModel* Model_0);
+	void OnUpdateRecipe(class UPalMapObjectConvertItemModel* Model_0);
+	void OnUpdateProductSlot(class UPalItemSlot* Slot_0);
+	void OnUpdatedWorkerPal(class UPalWorkBase* Work);
+	void OnSetup();
+	void OnReflectWorkProgress(class UPalWorkProgress* WorkProgress);
+	void Initialize();
+	void ExecuteUbergraph_WBP_ConvertItemStatusIndicator(int32 EntryPoint);
+	void DisplayDetail();
+	void Destruct();
+	void Construct();
+	void CloseDetail();
+	void CheckLocationEvent();
 
 public:
 	static class UClass* StaticClass()

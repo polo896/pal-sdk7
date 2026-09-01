@@ -34,11 +34,11 @@ class UWBP_IngameProgress_C : public UPalUserWidget
     class UWBP_PalCraftInfo_Pal_C* WBP_PalCraftInfo_Pal_04;                           // 0x0530 (size: 0x8)
     class UWBP_PalCraftInfo_Pal_C* WBP_PalCraftInfo_Pal_05;                           // 0x0538 (size: 0x8)
     class UCanvasPanel* WorkerPalCanvas;                                              // 0x0540 (size: 0x8)
-    TArray<class UWBP_PalCraftInfo_Pal_C*> workerPalInfoWidgets;                      // 0x0548 (size: 0x10)
+    TArray<UWBP_PalCraftInfo_Pal_C*> workerPalInfoWidgets;                            // 0x0548 (size: 0x10)
     int32 LastNum;                                                                    // 0x0558 (size: 0x4)
     bool HasWorker;                                                                   // 0x055C (size: 0x1)
 
-    void SetWorkerPal(TArray<class UPalIndividualCharacterSlot*>& Slots);
+    void SetWorkerPal(TArray<UPalIndividualCharacterSlot*>& Slots);
     void Set Work Amount(double WorkAmount);
     void Change Non Worker Mode(bool isNonWorker);
     void Set Visible Number(ESlateVisibility NewVisibility);

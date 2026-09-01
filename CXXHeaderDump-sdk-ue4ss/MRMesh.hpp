@@ -21,7 +21,7 @@ class UMRMeshComponent : public UPrimitiveComponent
     bool bCreateMeshProxySections;                                                    // 0x0550 (size: 0x1)
     bool bUpdateNavMeshOnMeshUpdate;                                                  // 0x0551 (size: 0x1)
     bool bNeverCreateCollisionMesh;                                                   // 0x0553 (size: 0x1)
-    TArray<class UMRMeshBodyHolder*> BodyHolders;                                     // 0x0598 (size: 0x10)
+    TArray<UMRMeshBodyHolder*> BodyHolders;                                           // 0x0598 (size: 0x10)
 
     void SetWireframeMaterial(class UMaterialInterface* InMaterial);
     void SetWireframeColor(const FLinearColor& InColor);

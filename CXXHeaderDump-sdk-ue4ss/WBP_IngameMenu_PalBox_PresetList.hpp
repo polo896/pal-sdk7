@@ -15,7 +15,7 @@ class UWBP_IngameMenu_PalBox_PresetList_C : public UUserWidget
     class UWBP_PalCommonCharacterSlotButton_C* WBP_PalCommonCharacterSlotButton_3;    // 0x02C0 (size: 0x8)
     class UWBP_PalCommonCharacterSlotButton_C* WBP_PalCommonCharacterSlotButton_4;    // 0x02C8 (size: 0x8)
     class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x02D0 (size: 0x8)
-    TArray<class UWBP_PalCommonCharacterSlotButton_C*> CharacterSlots;                // 0x02D8 (size: 0x10)
+    TArray<UWBP_PalCommonCharacterSlotButton_C*> CharacterSlots;                      // 0x02D8 (size: 0x10)
     int32 Index;                                                                      // 0x02E8 (size: 0x4)
     bool IsPreset;                                                                    // 0x02EC (size: 0x1)
     FWBP_IngameMenu_PalBox_PresetList_COnAddPresetClicked OnAddPresetClicked;         // 0x02F0 (size: 0x10)

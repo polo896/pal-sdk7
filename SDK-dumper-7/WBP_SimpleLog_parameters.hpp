@@ -16,6 +16,52 @@
 namespace SDK::Params
 {
 
+// Function WBP_SimpleLog.WBP_SimpleLog_C.SetLogText
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_SimpleLog_C_SetLogText final
+{
+public:
+	class FText                                   InText;                                            // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_SimpleLog_C_SetLogText;
+
+// Function WBP_SimpleLog.WBP_SimpleLog_C.SetAdditionalData
+// 0x0070 (0x0070 - 0x0000)
+struct WBP_SimpleLog_C_SetAdditionalData final
+{
+public:
+	struct FPalLogAdditionalData                  inAdditionalData;                                  // 0x0000(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_SimpleLog_C_SetAdditionalData;
+
+// Function WBP_SimpleLog.WBP_SimpleLog_C.RequestLoadIconTexture
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_SimpleLog_C_RequestLoadIconTexture final
+{
+public:
+	TSoftObjectPtr<class UTexture2D>              softTexturePtr;                                    // 0x0000(0x0030)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, UObjectWrapper, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_SimpleLog_C_RequestLoadIconTexture;
+
+// Function WBP_SimpleLog.WBP_SimpleLog_C.OverrideBgColor
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_SimpleLog_C_OverrideBgColor final
+{
+public:
+	EPalLogContentToneType                        ToneType;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_SimpleLog_C_OverrideBgColor;
+
+// Function WBP_SimpleLog.WBP_SimpleLog_C.OnLoaded_E9D9449849BBF69D84DD6485CBEECF9A
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_SimpleLog_C_OnLoaded_E9D9449849BBF69D84DD6485CBEECF9A final
+{
+public:
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_SimpleLog_C_OnLoaded_E9D9449849BBF69D84DD6485CBEECF9A;
+
 // Function WBP_SimpleLog.WBP_SimpleLog_C.ExecuteUbergraph_WBP_SimpleLog
 // 0x0150 (0x0150 - 0x0000)
 struct WBP_SimpleLog_C_ExecuteUbergraph_WBP_SimpleLog final
@@ -43,52 +89,6 @@ public:
 	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_2;            // 0x0140(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_SimpleLog_C_ExecuteUbergraph_WBP_SimpleLog;
-
-// Function WBP_SimpleLog.WBP_SimpleLog_C.OnLoaded_E9D9449849BBF69D84DD6485CBEECF9A
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_SimpleLog_C_OnLoaded_E9D9449849BBF69D84DD6485CBEECF9A final
-{
-public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_SimpleLog_C_OnLoaded_E9D9449849BBF69D84DD6485CBEECF9A;
-
-// Function WBP_SimpleLog.WBP_SimpleLog_C.OverrideBgColor
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_SimpleLog_C_OverrideBgColor final
-{
-public:
-	EPalLogContentToneType                        ToneType;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_SimpleLog_C_OverrideBgColor;
-
-// Function WBP_SimpleLog.WBP_SimpleLog_C.RequestLoadIconTexture
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_SimpleLog_C_RequestLoadIconTexture final
-{
-public:
-	TSoftObjectPtr<class UTexture2D>              softTexturePtr;                                    // 0x0000(0x0030)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, UObjectWrapper, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_SimpleLog_C_RequestLoadIconTexture;
-
-// Function WBP_SimpleLog.WBP_SimpleLog_C.SetAdditionalData
-// 0x0070 (0x0070 - 0x0000)
-struct WBP_SimpleLog_C_SetAdditionalData final
-{
-public:
-	struct FPalLogAdditionalData                  inAdditionalData;                                  // 0x0000(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_SimpleLog_C_SetAdditionalData;
-
-// Function WBP_SimpleLog.WBP_SimpleLog_C.SetLogText
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_SimpleLog_C_SetLogText final
-{
-public:
-	class FText                                   InText;                                            // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_SimpleLog_C_SetLogText;
 
 }
 

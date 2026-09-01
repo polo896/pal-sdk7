@@ -17,17 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_IngameCompass_camp.WBP_IngameCompass_camp_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_IngameCompass_camp.WBP_IngameCompass_camp_C.SetDistanceText
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Length                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameCompass_camp_C::Destruct()
+void UWBP_IngameCompass_camp_C::SetDistanceText(double Length)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameCompass_camp_C", "Destruct");
+		Func = Class->GetFunction("WBP_IngameCompass_camp_C", "SetDistanceText");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_IngameCompass_camp_C_SetDistanceText Parms{};
+
+	Parms.Length = Length;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -51,23 +57,17 @@ void UWBP_IngameCompass_camp_C::ExecuteUbergraph_WBP_IngameCompass_camp(int32 En
 }
 
 
-// Function WBP_IngameCompass_camp.WBP_IngameCompass_camp_C.SetDistanceText
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Length                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_IngameCompass_camp.WBP_IngameCompass_camp_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_IngameCompass_camp_C::SetDistanceText(double Length)
+void UWBP_IngameCompass_camp_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameCompass_camp_C", "SetDistanceText");
+		Func = Class->GetFunction("WBP_IngameCompass_camp_C", "Destruct");
 
-	Params::WBP_IngameCompass_camp_C_SetDistanceText Parms{};
-
-	Parms.Length = Length;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

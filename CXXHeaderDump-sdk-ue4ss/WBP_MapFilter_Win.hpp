@@ -14,8 +14,8 @@ class UWBP_MapFilter_Win_C : public UUserWidget
     class UWBP_MapFilter_Content_C* WBP_MapFilter_Content_7;                          // 0x02B8 (size: 0x8)
     class UWBP_MapFilter_Content_C* WBP_MapFilter_Content_8;                          // 0x02C0 (size: 0x8)
     class UWBP_MapFilter_Content_C* WBP_MapFilter_Content_9;                          // 0x02C8 (size: 0x8)
-    TArray<class UWBP_MapFilter_Content_C*> Filters;                                  // 0x02D0 (size: 0x10)
-    TMap<class EPalLocationType, class FDataTableRowHandle> FilterMsgMap;             // 0x02E0 (size: 0x50)
+    TArray<UWBP_MapFilter_Content_C*> Filters;                                        // 0x02D0 (size: 0x10)
+    TMap<EPalLocationType, FDataTableRowHandle> FilterMsgMap;                         // 0x02E0 (size: 0x50)
     FWBP_MapFilter_Win_COnFilterChanged OnFilterChanged;                              // 0x0330 (size: 0x10)
     void OnFilterChanged(EPalLocationType FilterMap, bool IsEnable);
 

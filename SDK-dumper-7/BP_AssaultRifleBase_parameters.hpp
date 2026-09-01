@@ -17,79 +17,176 @@
 namespace SDK::Params
 {
 
-// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.CalcAccuracy
-// 0x0020 (0x0020 - 0x0000)
-struct BP_AssaultRifleBase_C_CalcAccuracy final
+// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.OnDetachWeapon
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AssaultRifleBase_C_OnDetachWeapon final
 {
 public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_GetBlurAngle_Angle;                       // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 detachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AssaultRifleBase_C_OnDetachWeapon;
+
+// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.OnAttachWeapon
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AssaultRifleBase_C_OnAttachWeapon final
+{
+public:
+	class AActor*                                 attachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AssaultRifleBase_C_OnAttachWeapon;
+
+// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.IsDecrementBullet
+// 0x0001 (0x0001 - 0x0000)
+struct BP_AssaultRifleBase_C_IsDecrementBullet final
+{
+public:
+	bool                                          Result;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AssaultRifleBase_C_IsDecrementBullet;
+
+// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.Is UseEjectionPort
+// 0x0001 (0x0001 - 0x0000)
+struct BP_AssaultRifleBase_C_Is_UseEjectionPort final
+{
+public:
+	bool                                          isUse;                                             // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AssaultRifleBase_C_Is_UseEjectionPort;
+
+// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.GeyEjectionPortTransform
+// 0x0060 (0x0060 - 0x0000)
+struct BP_AssaultRifleBase_C_GeyEjectionPortTransform final
+{
+public:
+	struct FTransform                             Transform;                                         // 0x0000(0x0060)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AssaultRifleBase_C_GeyEjectionPortTransform;
+
+// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.GetTargetPosition
+// 0x0048 (0x0048 - 0x0000)
+struct BP_AssaultRifleBase_C_GetTargetPosition final
+{
+public:
+	struct FVector                                targetPosition_0;                                  // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_GetOwnerCharacter_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetOverrideTargetLocation_ConsiderRide_ReturnValue; // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AssaultRifleBase_C_GetTargetPosition;
+
+// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.GetShootInterval
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AssaultRifleBase_C_GetShootInterval final
+{
+public:
+	double                                        Time;                                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AssaultRifleBase_C_GetShootInterval;
+
+// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.GetMuzzleRotator
+// 0x0018 (0x0018 - 0x0000)
+struct BP_AssaultRifleBase_C_GetMuzzleRotator final
+{
+public:
+	struct FRotator                               Rotator;                                           // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_AssaultRifleBase_C_GetMuzzleRotator;
+
+// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.GetMuzzleLocation
+// 0x0018 (0x0018 - 0x0000)
+struct BP_AssaultRifleBase_C_GetMuzzleLocation final
+{
+public:
+	struct FVector                                MuzzleLocation;                                    // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AssaultRifleBase_C_GetMuzzleLocation;
+
+// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.GetMuzzleEffectParticle
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AssaultRifleBase_C_GetMuzzleEffectParticle final
+{
+public:
+	class UParticleSystem*                        Particle_System;                                   // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AssaultRifleBase_C_GetMuzzleEffectParticle;
+
+// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.GetMuzzleEffect
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AssaultRifleBase_C_GetMuzzleEffect final
+{
+public:
+	class UNiagaraSystem*                         NewParam;                                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AssaultRifleBase_C_GetMuzzleEffect;
+
+// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.GetInitializeInterval
+// 0x0018 (0x0018 - 0x0000)
+struct BP_AssaultRifleBase_C_GetInitializeInterval final
+{
+public:
+	double                                        Time;                                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_GetShootInterval_Time;                    // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_FunctionResult_ReturnValue_ImplicitCast;    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_AssaultRifleBase_C_CalcAccuracy;
+DUMPER7_ASSERTS_BP_AssaultRifleBase_C_GetInitializeInterval;
 
-// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.CalcDPS
-// 0x00E8 (0x00E8 - 0x0000)
-struct BP_AssaultRifleBase_C_CalcDPS final
+// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.GetEquipSocketName
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AssaultRifleBase_C_GetEquipSocketName final
 {
 public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetWeaponBaseDamage_ReturnValue;          // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetDisplayName_ReturnValue;               // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	double                                        CallFunc_GetShootInterval_Time;                    // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0028(0x0018)()
-	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0048(0x0050)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0098(0x0010)(ReferenceParm)
-	bool                                          CallFunc_EqualEqual_DoubleDouble_ReturnValue;      // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00B0(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	float                                         K2Node_FunctionResult_ReturnValue_ImplicitCast;    // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Divide_DoubleDouble_A_ImplicitCast;       // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_AssaultRifleBase_C_CalcDPS;
+DUMPER7_ASSERTS_BP_AssaultRifleBase_C_GetEquipSocketName;
 
-// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.CalcRange
-// 0x0050 (0x0050 - 0x0000)
-struct BP_AssaultRifleBase_C_CalcRange final
+// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.GetBulletClass
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AssaultRifleBase_C_GetBulletClass final
 {
 public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 CallFunc_GetBulletClass_NewParam;                  // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UProjectileMovementComponent*           CallFunc_GetBulletProjectileComponent_ReturnValue; // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_FunctionResult_ReturnValue_ImplicitCast;    // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Multiply_DoubleDouble_A_ImplicitCast;     // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Subtract_DoubleDouble_A_ImplicitCast;     // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_B_ImplicitCast;     // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 NewParam;                                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TSubclassOf<class APalBullet>                 CallFunc_GetCurrentBulletClass_ReturnValue;        // 0x0008(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_AssaultRifleBase_C_CalcRange;
+DUMPER7_ASSERTS_BP_AssaultRifleBase_C_GetBulletClass;
 
-// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.CanShoot
-// 0x0020 (0x0020 - 0x0000)
-struct BP_AssaultRifleBase_C_CanShoot final
+// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.GetBlurAngle
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AssaultRifleBase_C_GetBlurAngle final
 {
 public:
-	bool                                          can;                                               // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalShooterComponent*                   CallFunc_GetComponentByClass_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CanShoot_ReturnValue;                     // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Angle;                                             // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_AssaultRifleBase_C_CanShoot;
+DUMPER7_ASSERTS_BP_AssaultRifleBase_C_GetBlurAngle;
+
+// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.GetAmmoClass
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AssaultRifleBase_C_GetAmmoClass final
+{
+public:
+	class UClass*                                 AmmoClass;                                         // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AssaultRifleBase_C_GetAmmoClass;
+
+// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.GetAimingBlurAngle
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AssaultRifleBase_C_GetAimingBlurAngle final
+{
+public:
+	double                                        Angle;                                             // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AssaultRifleBase_C_GetAimingBlurAngle;
+
+// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.Get Right Hand Location
+// 0x0018 (0x0018 - 0x0000)
+struct BP_AssaultRifleBase_C_Get_Right_Hand_Location final
+{
+public:
+	struct FVector                                RightHandLocation;                                 // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AssaultRifleBase_C_Get_Right_Hand_Location;
 
 // Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.ExecuteUbergraph_BP_AssaultRifleBase
 // 0x00A8 (0x00A8 - 0x0000)
@@ -122,203 +219,97 @@ public:
 };
 DUMPER7_ASSERTS_BP_AssaultRifleBase_C_ExecuteUbergraph_BP_AssaultRifleBase;
 
-// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.Get Right Hand Location
-// 0x0018 (0x0018 - 0x0000)
-struct BP_AssaultRifleBase_C_Get_Right_Hand_Location final
+// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.CanShoot
+// 0x0020 (0x0020 - 0x0000)
+struct BP_AssaultRifleBase_C_CanShoot final
 {
 public:
-	struct FVector                                RightHandLocation;                                 // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          can;                                               // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalShooterComponent*                   CallFunc_GetComponentByClass_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanShoot_ReturnValue;                     // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_AssaultRifleBase_C_Get_Right_Hand_Location;
+DUMPER7_ASSERTS_BP_AssaultRifleBase_C_CanShoot;
 
-// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.GetAimingBlurAngle
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AssaultRifleBase_C_GetAimingBlurAngle final
+// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.CalcRange
+// 0x0050 (0x0050 - 0x0000)
+struct BP_AssaultRifleBase_C_CalcRange final
 {
 public:
-	double                                        Angle;                                             // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 CallFunc_GetBulletClass_NewParam;                  // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UProjectileMovementComponent*           CallFunc_GetBulletProjectileComponent_ReturnValue; // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_FunctionResult_ReturnValue_ImplicitCast;    // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Multiply_DoubleDouble_A_ImplicitCast;     // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Subtract_DoubleDouble_A_ImplicitCast;     // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_B_ImplicitCast;     // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_AssaultRifleBase_C_GetAimingBlurAngle;
+DUMPER7_ASSERTS_BP_AssaultRifleBase_C_CalcRange;
 
-// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.GetAmmoClass
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AssaultRifleBase_C_GetAmmoClass final
+// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.CalcDPS
+// 0x00E8 (0x00E8 - 0x0000)
+struct BP_AssaultRifleBase_C_CalcDPS final
 {
 public:
-	class UClass*                                 AmmoClass;                                         // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetWeaponBaseDamage_ReturnValue;          // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Conv_IntToFloat_ReturnValue;              // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetDisplayName_ReturnValue;               // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	double                                        CallFunc_GetShootInterval_Time;                    // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0028(0x0018)()
+	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0048(0x0050)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0098(0x0010)(ReferenceParm)
+	bool                                          CallFunc_EqualEqual_DoubleDouble_ReturnValue;      // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00B0(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	float                                         K2Node_FunctionResult_ReturnValue_ImplicitCast;    // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Divide_DoubleDouble_A_ImplicitCast;       // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_AssaultRifleBase_C_GetAmmoClass;
+DUMPER7_ASSERTS_BP_AssaultRifleBase_C_CalcDPS;
 
-// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.GetBlurAngle
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AssaultRifleBase_C_GetBlurAngle final
+// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.CalcAccuracy
+// 0x0020 (0x0020 - 0x0000)
+struct BP_AssaultRifleBase_C_CalcAccuracy final
 {
 public:
-	double                                        Angle;                                             // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AssaultRifleBase_C_GetBlurAngle;
-
-// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.GetBulletClass
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AssaultRifleBase_C_GetBulletClass final
-{
-public:
-	class UClass*                                 NewParam;                                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TSubclassOf<class APalBullet>                 CallFunc_GetCurrentBulletClass_ReturnValue;        // 0x0008(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AssaultRifleBase_C_GetBulletClass;
-
-// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.GetEquipSocketName
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AssaultRifleBase_C_GetEquipSocketName final
-{
-public:
-	class FName                                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AssaultRifleBase_C_GetEquipSocketName;
-
-// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.GetInitializeInterval
-// 0x0018 (0x0018 - 0x0000)
-struct BP_AssaultRifleBase_C_GetInitializeInterval final
-{
-public:
-	double                                        Time;                                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_GetShootInterval_Time;                    // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_GetBlurAngle_Angle;                       // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_FunctionResult_ReturnValue_ImplicitCast;    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_AssaultRifleBase_C_GetInitializeInterval;
+DUMPER7_ASSERTS_BP_AssaultRifleBase_C_CalcAccuracy;
 
-// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.GetMuzzleEffect
+// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.StopWeaponAnim
 // 0x0008 (0x0008 - 0x0000)
-struct BP_AssaultRifleBase_C_GetMuzzleEffect final
+struct BP_AssaultRifleBase_C_StopWeaponAnim final
 {
 public:
-	class UNiagaraSystem*                         NewParam;                                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 CallFunc_GetComponentByClass_ReturnValue;          // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_AssaultRifleBase_C_GetMuzzleEffect;
+DUMPER7_ASSERTS_BP_AssaultRifleBase_C_StopWeaponAnim;
 
-// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.GetMuzzleEffectParticle
+// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.StopReloadWhenRoll
 // 0x0008 (0x0008 - 0x0000)
-struct BP_AssaultRifleBase_C_GetMuzzleEffectParticle final
+struct BP_AssaultRifleBase_C_StopReloadWhenRoll final
 {
 public:
-	class UParticleSystem*                        Particle_System;                                   // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	const class UPalActionBase*                   action;                                            // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_AssaultRifleBase_C_GetMuzzleEffectParticle;
-
-// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.GetMuzzleLocation
-// 0x0018 (0x0018 - 0x0000)
-struct BP_AssaultRifleBase_C_GetMuzzleLocation final
-{
-public:
-	struct FVector                                MuzzleLocation;                                    // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AssaultRifleBase_C_GetMuzzleLocation;
-
-// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.GetMuzzleRotator
-// 0x0018 (0x0018 - 0x0000)
-struct BP_AssaultRifleBase_C_GetMuzzleRotator final
-{
-public:
-	struct FRotator                               Rotator;                                           // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_BP_AssaultRifleBase_C_GetMuzzleRotator;
-
-// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.GetShootInterval
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AssaultRifleBase_C_GetShootInterval final
-{
-public:
-	double                                        Time;                                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AssaultRifleBase_C_GetShootInterval;
-
-// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.GetTargetPosition
-// 0x0048 (0x0048 - 0x0000)
-struct BP_AssaultRifleBase_C_GetTargetPosition final
-{
-public:
-	struct FVector                                targetPosition_0;                                  // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_GetOwnerCharacter_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetOverrideTargetLocation_ConsiderRide_ReturnValue; // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AssaultRifleBase_C_GetTargetPosition;
-
-// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.GeyEjectionPortTransform
-// 0x0060 (0x0060 - 0x0000)
-struct BP_AssaultRifleBase_C_GeyEjectionPortTransform final
-{
-public:
-	struct FTransform                             Transform;                                         // 0x0000(0x0060)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AssaultRifleBase_C_GeyEjectionPortTransform;
-
-// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.Is UseEjectionPort
-// 0x0001 (0x0001 - 0x0000)
-struct BP_AssaultRifleBase_C_Is_UseEjectionPort final
-{
-public:
-	bool                                          isUse;                                             // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AssaultRifleBase_C_Is_UseEjectionPort;
-
-// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.IsDecrementBullet
-// 0x0001 (0x0001 - 0x0000)
-struct BP_AssaultRifleBase_C_IsDecrementBullet final
-{
-public:
-	bool                                          Result;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AssaultRifleBase_C_IsDecrementBullet;
-
-// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.OnAttachWeapon
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AssaultRifleBase_C_OnAttachWeapon final
-{
-public:
-	class AActor*                                 attachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AssaultRifleBase_C_OnAttachWeapon;
-
-// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.OnDetachWeapon
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AssaultRifleBase_C_OnDetachWeapon final
-{
-public:
-	class AActor*                                 detachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AssaultRifleBase_C_OnDetachWeapon;
-
-// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.OnReleaseTrigger
-// 0x0001 (0x0001 - 0x0000)
-struct BP_AssaultRifleBase_C_OnReleaseTrigger final
-{
-public:
-	bool                                          bCanShootOnRelease;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AssaultRifleBase_C_OnReleaseTrigger;
-
-// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.OnReloadStart
-// 0x0004 (0x0004 - 0x0000)
-struct BP_AssaultRifleBase_C_OnReloadStart final
-{
-public:
-	float                                         InReloadSpeedPlayRate;                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AssaultRifleBase_C_OnReloadStart;
-
-// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.OnShoot
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AssaultRifleBase_C_OnShoot final
-{
-public:
-	class APalBullet*                             BulletActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AssaultRifleBase_C_OnShoot;
+DUMPER7_ASSERTS_BP_AssaultRifleBase_C_StopReloadWhenRoll;
 
 // Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.ShootBullet
 // 0x0360 (0x0360 - 0x0000)
@@ -403,23 +394,32 @@ public:
 };
 DUMPER7_ASSERTS_BP_AssaultRifleBase_C_ShootBullet;
 
-// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.StopReloadWhenRoll
+// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.OnShoot
 // 0x0008 (0x0008 - 0x0000)
-struct BP_AssaultRifleBase_C_StopReloadWhenRoll final
+struct BP_AssaultRifleBase_C_OnShoot final
 {
 public:
-	const class UPalActionBase*                   action;                                            // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalBullet*                             BulletActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_AssaultRifleBase_C_StopReloadWhenRoll;
+DUMPER7_ASSERTS_BP_AssaultRifleBase_C_OnShoot;
 
-// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.StopWeaponAnim
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AssaultRifleBase_C_StopWeaponAnim final
+// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.OnReloadStart
+// 0x0004 (0x0004 - 0x0000)
+struct BP_AssaultRifleBase_C_OnReloadStart final
 {
 public:
-	class USkeletalMeshComponent*                 CallFunc_GetComponentByClass_ReturnValue;          // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	float                                         InReloadSpeedPlayRate;                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_AssaultRifleBase_C_StopWeaponAnim;
+DUMPER7_ASSERTS_BP_AssaultRifleBase_C_OnReloadStart;
+
+// Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.OnReleaseTrigger
+// 0x0001 (0x0001 - 0x0000)
+struct BP_AssaultRifleBase_C_OnReleaseTrigger final
+{
+public:
+	bool                                          bCanShootOnRelease;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AssaultRifleBase_C_OnReleaseTrigger;
 
 // Function BP_AssaultRifleBase.BP_AssaultRifleBase_C.IsUseLeftHandAttach
 // 0x0002 (0x0002 - 0x0000)

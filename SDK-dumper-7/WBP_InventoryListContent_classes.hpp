@@ -30,9 +30,9 @@ public:
 	class UWrapBox*                               WrapBox_92;                                        // 0x02A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void AddWidget(class UWidget* inWidgett, int32* Index_0);
-	void GetAllContents(TArray<class UWidget*>* Contents);
 	void SetCategoryName(const class FText& CategoryName);
+	void GetAllContents(TArray<class UWidget*>* Contents);
+	void AddWidget(class UWidget* inWidgett, int32* Index_0);
 
 public:
 	static class UClass* StaticClass()

@@ -73,8 +73,8 @@ class UWBP_Expedition_C : public UPalUserWidget
     bool bIsSelectingTeam;                                                            // 0x0664 (size: 0x1)
     FWBP_Expedition_COnHoveredAssignedPalPanel OnHoveredAssignedPalPanel;             // 0x0668 (size: 0x10)
     void OnHoveredAssignedPalPanel(class UWBP_Expedition_PalList_C* Widget);
-    TSoftObjectPtr<UWBP_Expedition_PalList_C> LastHoveredAssignedPalPanel;            // 0x0678 (size: 0x30)
-    TMap<class FPalInstanceID, class UWBP_Expedition_PalList_C*> SelectedPalPanelMap; // 0x06A8 (size: 0x50)
+    TSoftObjectPtr<class UWBP_Expedition_PalList_C> LastHoveredAssignedPalPanel;      // 0x0678 (size: 0x30)
+    TMap<FPalInstanceID, UWBP_Expedition_PalList_C*> SelectedPalPanelMap;             // 0x06A8 (size: 0x50)
     FGuid CurrentMapObjectModelInstanceId;                                            // 0x06F8 (size: 0x10)
     FWBP_Expedition_COnClickedStartExcludeSettingsButton OnClickedStartExcludeSettingsButton; // 0x0708 (size: 0x10)
     void OnClickedStartExcludeSettingsButton();

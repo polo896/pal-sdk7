@@ -8,8 +8,8 @@ class ABP_SkillEffect_DarkFlameFox_PartnerSkill_C : public ABP_PassiveAttackBase
     class UNiagaraComponent* Niagara;                                                 // 0x0330 (size: 0x8)
     double ImpactTimer;                                                               // 0x0338 (size: 0x8)
     TArray<int32> FoliageIndex;                                                       // 0x0340 (size: 0x10)
-    TMap<class AActor*, class UPrimitiveComponent*> CurrentHitableActorMap;           // 0x0350 (size: 0x50)
-    TArray<class AActor*> HittedActors;                                               // 0x03A0 (size: 0x10)
+    TMap<AActor*, UPrimitiveComponent*> CurrentHitableActorMap;                       // 0x0350 (size: 0x50)
+    TArray<AActor*> HittedActors;                                                     // 0x03A0 (size: 0x10)
     double ImpactAlpha;                                                               // 0x03B0 (size: 0x8)
     double CurrentImpactRadius;                                                       // 0x03B8 (size: 0x8)
     double ImpactTime;                                                                // 0x03C0 (size: 0x8)
@@ -21,7 +21,7 @@ class ABP_SkillEffect_DarkFlameFox_PartnerSkill_C : public ABP_PassiveAttackBase
     TMap<AActor*, double> HitLastTimeMap;                                             // 0x03F0 (size: 0x50)
     TMap<AActor*, int32> HitCountMap;                                                 // 0x0440 (size: 0x50)
     bool IsRadiusImmediate;                                                           // 0x0490 (size: 0x1)
-    TMap<class AActor*, class FMultiHitFoliageIndexArrayStruct> HittedFoliageArray;   // 0x0498 (size: 0x50)
+    TMap<AActor*, FMultiHitFoliageIndexArrayStruct> HittedFoliageArray;               // 0x0498 (size: 0x50)
     bool IsIgnoreFly;                                                                 // 0x04E8 (size: 0x1)
 
     void GetRootLocationZ(class APalCharacter* Character, double& LocationZ);

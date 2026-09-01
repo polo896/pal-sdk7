@@ -23,7 +23,7 @@ class UWBP_MainMenu_Technology_00_C : public UUserWidget
     int32 MinTechnologyLevel;                                                         // 0x0344 (size: 0x4)
     class UWBP_MainMenu_Technology_List_C* LastHoveredListWidget;                     // 0x0348 (size: 0x8)
     class UWBP_MainMenu_Technology_Content_C* LastHoveredButtonWidget;                // 0x0350 (size: 0x8)
-    TMap<class UObject*, class UWBP_MainMenu_Technology_List_C*> ListViewDisplayWidgetMap; // 0x0358 (size: 0x50)
+    TMap<UObject*, UWBP_MainMenu_Technology_List_C*> ListViewDisplayWidgetMap;        // 0x0358 (size: 0x50)
     int32 LastFocusHorizontalIndex;                                                   // 0x03A8 (size: 0x4)
     class UObject* DesiredFocusEntry;                                                 // 0x03B0 (size: 0x8)
     FWBP_MainMenu_Technology_00_COnNameFilterApplied OnNameFilterApplied;             // 0x03B8 (size: 0x10)

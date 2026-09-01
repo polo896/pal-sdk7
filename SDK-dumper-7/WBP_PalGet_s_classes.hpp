@@ -44,16 +44,16 @@ public:
 	struct FDataTableRowHandle                    captureMsgHandle;                                  // 0x0318(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void AnmEvent_Close();
-	void AnmEvent_Open();
-	void ClearAdditionalText();
-	void DisplayCaptureMessage(bool isFirstCapture);
-	void ExecuteUbergraph_WBP_PalGet_s(int32 EntryPoint);
-	void OnInitialized();
-	void OnOpenAnimeFinished();
-	void SetAdditionalText(const class FText& Text);
-	void SetupByCaptureInfo(const struct FPalUIPalCaptureInfo& CaptureInfo);
 	void SetupByTargetHandle(class UPalIndividualCharacterHandle* Handle, bool isVisibleLevel);
+	void SetupByCaptureInfo(const struct FPalUIPalCaptureInfo& CaptureInfo);
+	void SetAdditionalText(const class FText& Text);
+	void OnOpenAnimeFinished();
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_PalGet_s(int32 EntryPoint);
+	void DisplayCaptureMessage(bool isFirstCapture);
+	void ClearAdditionalText();
+	void AnmEvent_Open();
+	void AnmEvent_Close();
 
 public:
 	static class UClass* StaticClass()

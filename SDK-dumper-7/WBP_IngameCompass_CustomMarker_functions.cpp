@@ -17,21 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_IngameCompass_CustomMarker.WBP_IngameCompass_CustomMarker_C.SetColorType
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameCompass_CustomMarker.WBP_IngameCompass_CustomMarker_C.SetDistanceText
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsCustomMarker                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Length                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameCompass_CustomMarker_C::SetColorType(bool IsCustomMarker)
+void UWBP_IngameCompass_CustomMarker_C::SetDistanceText(double Length)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameCompass_CustomMarker_C", "SetColorType");
+		Func = Class->GetFunction("WBP_IngameCompass_CustomMarker_C", "SetDistanceText");
 
-	Params::WBP_IngameCompass_CustomMarker_C_SetColorType Parms{};
+	Params::WBP_IngameCompass_CustomMarker_C_SetDistanceText Parms{};
 
-	Parms.IsCustomMarker = IsCustomMarker;
+	Parms.Length = Length;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,37 +57,23 @@ void UWBP_IngameCompass_CustomMarker_C::SetCustomMarkerTexture(int32 IconType)
 }
 
 
-// Function WBP_IngameCompass_CustomMarker.WBP_IngameCompass_CustomMarker_C.SetDistanceText
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameCompass_CustomMarker.WBP_IngameCompass_CustomMarker_C.SetColorType
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  Length                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsCustomMarker                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameCompass_CustomMarker_C::SetDistanceText(double Length)
+void UWBP_IngameCompass_CustomMarker_C::SetColorType(bool IsCustomMarker)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameCompass_CustomMarker_C", "SetDistanceText");
+		Func = Class->GetFunction("WBP_IngameCompass_CustomMarker_C", "SetColorType");
 
-	Params::WBP_IngameCompass_CustomMarker_C_SetDistanceText Parms{};
+	Params::WBP_IngameCompass_CustomMarker_C_SetColorType Parms{};
 
-	Parms.Length = Length;
+	Parms.IsCustomMarker = IsCustomMarker;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameCompass_CustomMarker.WBP_IngameCompass_CustomMarker_C.UpdateDistance
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameCompass_CustomMarker_C::UpdateDistance()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameCompass_CustomMarker_C", "UpdateDistance");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -109,6 +95,20 @@ void UWBP_IngameCompass_CustomMarker_C::UpdateVisibility(bool* InDistance)
 
 	if (InDistance != nullptr)
 		*InDistance = Parms.InDistance;
+}
+
+
+// Function WBP_IngameCompass_CustomMarker.WBP_IngameCompass_CustomMarker_C.UpdateDistance
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngameCompass_CustomMarker_C::UpdateDistance()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameCompass_CustomMarker_C", "UpdateDistance");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

@@ -16,26 +16,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_InventoryEquipment_InvisibleActionButton.WBP_InventoryEquipment_InvisibleActionButton_C.BndEvt__WBP_InventoryEquipment_TrashButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_InventoryEquipment_InvisibleActionButton_C_BndEvt__WBP_InventoryEquipment_TrashButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InventoryEquipment_InvisibleActionButton_C_BndEvt__WBP_InventoryEquipment_TrashButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_InventoryEquipment_InvisibleActionButton.WBP_InventoryEquipment_InvisibleActionButton_C.ExecuteUbergraph_WBP_InventoryEquipment_InvisibleActionButton
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_InventoryEquipment_InvisibleActionButton_C_ExecuteUbergraph_WBP_InventoryEquipment_InvisibleActionButton final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InventoryEquipment_InvisibleActionButton_C_ExecuteUbergraph_WBP_InventoryEquipment_InvisibleActionButton;
-
 // Function WBP_InventoryEquipment_InvisibleActionButton.WBP_InventoryEquipment_InvisibleActionButton_C.OnDrop
 // 0x00F8 (0x00F8 - 0x0000)
 struct WBP_InventoryEquipment_InvisibleActionButton_C_OnDrop final
@@ -50,6 +30,26 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_InventoryEquipment_InvisibleActionButton_C_OnDrop;
+
+// Function WBP_InventoryEquipment_InvisibleActionButton.WBP_InventoryEquipment_InvisibleActionButton_C.ExecuteUbergraph_WBP_InventoryEquipment_InvisibleActionButton
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_InventoryEquipment_InvisibleActionButton_C_ExecuteUbergraph_WBP_InventoryEquipment_InvisibleActionButton final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InventoryEquipment_InvisibleActionButton_C_ExecuteUbergraph_WBP_InventoryEquipment_InvisibleActionButton;
+
+// Function WBP_InventoryEquipment_InvisibleActionButton.WBP_InventoryEquipment_InvisibleActionButton_C.BndEvt__WBP_InventoryEquipment_TrashButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_InventoryEquipment_InvisibleActionButton_C_BndEvt__WBP_InventoryEquipment_TrashButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InventoryEquipment_InvisibleActionButton_C_BndEvt__WBP_InventoryEquipment_TrashButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
 
 }
 

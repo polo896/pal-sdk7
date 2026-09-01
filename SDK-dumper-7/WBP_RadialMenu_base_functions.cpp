@@ -17,49 +17,81 @@
 namespace SDK
 {
 
-// Function WBP_RadialMenu_base.WBP_RadialMenu_base_C.Anm_CloseMenu
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_RadialMenu_base_C::Anm_CloseMenu()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RadialMenu_base_C", "Anm_CloseMenu");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_RadialMenu_base.WBP_RadialMenu_base_C.Anm_OpenMenu
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_RadialMenu_base_C::Anm_OpenMenu()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RadialMenu_base_C", "Anm_OpenMenu");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_RadialMenu_base.WBP_RadialMenu_base_C.ExecuteUbergraph_WBP_RadialMenu_base
-// (Final, UbergraphFunction)
+// Function WBP_RadialMenu_base.WBP_RadialMenu_base_C.SetVisibilityCenterBaseImage
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESlateVisibility                        NewVisibility                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_RadialMenu_base_C::ExecuteUbergraph_WBP_RadialMenu_base(int32 EntryPoint)
+void UWBP_RadialMenu_base_C::SetVisibilityCenterBaseImage(ESlateVisibility NewVisibility)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RadialMenu_base_C", "ExecuteUbergraph_WBP_RadialMenu_base");
+		Func = Class->GetFunction("WBP_RadialMenu_base_C", "SetVisibilityCenterBaseImage");
 
-	Params::WBP_RadialMenu_base_C_ExecuteUbergraph_WBP_RadialMenu_base Parms{};
+	Params::WBP_RadialMenu_base_C_SetVisibilityCenterBaseImage Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.NewVisibility = NewVisibility;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_RadialMenu_base.WBP_RadialMenu_base_C.SetVisibilityArrow
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESlateVisibility                        NewVisibility                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_RadialMenu_base_C::SetVisibilityArrow(ESlateVisibility NewVisibility)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RadialMenu_base_C", "SetVisibilityArrow");
+
+	Params::WBP_RadialMenu_base_C_SetVisibilityArrow Parms{};
+
+	Parms.NewVisibility = NewVisibility;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_RadialMenu_base.WBP_RadialMenu_base_C.SetArrowVisible
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESlateVisibility                        Visibility_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_RadialMenu_base_C::SetArrowVisible(ESlateVisibility Visibility_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RadialMenu_base_C", "SetArrowVisible");
+
+	Params::WBP_RadialMenu_base_C_SetArrowVisible Parms{};
+
+	Parms.Visibility_0 = Visibility_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_RadialMenu_base.WBP_RadialMenu_base_C.SetArrowAngle
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  angleDegree                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_RadialMenu_base_C::SetArrowAngle(double angleDegree)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RadialMenu_base_C", "SetArrowAngle");
+
+	Params::WBP_RadialMenu_base_C_SetArrowAngle Parms{};
+
+	Parms.angleDegree = angleDegree;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -86,83 +118,51 @@ void UWBP_RadialMenu_base_C::GetCenterPosition(struct FVector2D* Position)
 }
 
 
-// Function WBP_RadialMenu_base.WBP_RadialMenu_base_C.SetArrowAngle
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_RadialMenu_base.WBP_RadialMenu_base_C.ExecuteUbergraph_WBP_RadialMenu_base
+// (Final, UbergraphFunction)
 // Parameters:
-// double                                  angleDegree                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_RadialMenu_base_C::SetArrowAngle(double angleDegree)
+void UWBP_RadialMenu_base_C::ExecuteUbergraph_WBP_RadialMenu_base(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RadialMenu_base_C", "SetArrowAngle");
+		Func = Class->GetFunction("WBP_RadialMenu_base_C", "ExecuteUbergraph_WBP_RadialMenu_base");
 
-	Params::WBP_RadialMenu_base_C_SetArrowAngle Parms{};
+	Params::WBP_RadialMenu_base_C_ExecuteUbergraph_WBP_RadialMenu_base Parms{};
 
-	Parms.angleDegree = angleDegree;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_RadialMenu_base.WBP_RadialMenu_base_C.SetArrowVisible
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESlateVisibility                        Visibility_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_RadialMenu_base.WBP_RadialMenu_base_C.Anm_OpenMenu
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_RadialMenu_base_C::SetArrowVisible(ESlateVisibility Visibility_0)
+void UWBP_RadialMenu_base_C::Anm_OpenMenu()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RadialMenu_base_C", "SetArrowVisible");
+		Func = Class->GetFunction("WBP_RadialMenu_base_C", "Anm_OpenMenu");
 
-	Params::WBP_RadialMenu_base_C_SetArrowVisible Parms{};
-
-	Parms.Visibility_0 = Visibility_0;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_RadialMenu_base.WBP_RadialMenu_base_C.SetVisibilityArrow
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESlateVisibility                        NewVisibility                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_RadialMenu_base.WBP_RadialMenu_base_C.Anm_CloseMenu
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_RadialMenu_base_C::SetVisibilityArrow(ESlateVisibility NewVisibility)
+void UWBP_RadialMenu_base_C::Anm_CloseMenu()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RadialMenu_base_C", "SetVisibilityArrow");
+		Func = Class->GetFunction("WBP_RadialMenu_base_C", "Anm_CloseMenu");
 
-	Params::WBP_RadialMenu_base_C_SetVisibilityArrow Parms{};
-
-	Parms.NewVisibility = NewVisibility;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_RadialMenu_base.WBP_RadialMenu_base_C.SetVisibilityCenterBaseImage
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESlateVisibility                        NewVisibility                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_RadialMenu_base_C::SetVisibilityCenterBaseImage(ESlateVisibility NewVisibility)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RadialMenu_base_C", "SetVisibilityCenterBaseImage");
-
-	Params::WBP_RadialMenu_base_C_SetVisibilityCenterBaseImage Parms{};
-
-	Parms.NewVisibility = NewVisibility;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

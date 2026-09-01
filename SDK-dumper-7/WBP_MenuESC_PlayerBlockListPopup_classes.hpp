@@ -35,13 +35,13 @@ public:
 	class UWBP_MenuESCPlayerBlockListItem_C*      WBP_MenuESCPlayerBlockItem;                        // 0x04C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_MenuESC_PlayerBlockListPopup_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void CreateBlockList();
-	void ExecuteUbergraph_WBP_MenuESC_PlayerBlockListPopup(int32 EntryPoint);
-	void OnClose();
-	void OnInitialized();
-	void OnSessionMemberUnBlockList(const class FString& UserId);
 	void OnSetup();
+	void OnSessionMemberUnBlockList(const class FString& UserId);
+	void OnInitialized();
+	void OnClose();
+	void ExecuteUbergraph_WBP_MenuESC_PlayerBlockListPopup(int32 EntryPoint);
+	void CreateBlockList();
+	void BndEvt__WBP_MenuESC_PlayerBlockListPopup_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

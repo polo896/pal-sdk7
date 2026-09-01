@@ -25,7 +25,8 @@ class UBP_AIActionCombatHeli_BattleMode_C : public UBP_AIActionCombatHeliBase_C
     class UBP_CombatHeliRpidWeaponComponent_C* CurrentWeaponComponent;                // 0x0208 (size: 0x8)
     FTimerHandle PlayerCheckTimerHandle;                                              // 0x0210 (size: 0x8)
 
-    void CheckPlayerDistanceForBGM();
+    void Is Valid BGMTarget(class AActor* TargetActor, bool& Valid);
+    void Check Player Distance for BGM();
     void RemoveAllPlayerTarget();
     void ChangeAimTarget();
     void Is Valid Current Target(bool& Valid);

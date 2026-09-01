@@ -54,41 +54,6 @@ public:
 };
 DUMPER7_ASSERTS_WBP_IngameSmesTop_C_ExecuteUbergraph_WBP_IngameSmesTop;
 
-// Function WBP_IngameSmesTop.WBP_IngameSmesTop_C.On Player Level Up
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_IngameSmesTop_C_On_Player_Level_Up final
-{
-public:
-	int32                                         DisplayLevel;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameSmesTop_C_On_Player_Level_Up;
-
-// Function WBP_IngameSmesTop.WBP_IngameSmesTop_C.OnUpdateTechnologyPoint
-// 0x00A0 (0x00A0 - 0x0000)
-struct WBP_IngameSmesTop_C_OnUpdateTechnologyPoint final
-{
-public:
-	int32                                         TechnologyPoint;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0010(0x0050)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0060(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0070(0x0018)()
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0088(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_IngameSmesTop_C_OnUpdateTechnologyPoint;
-
-// Function WBP_IngameSmesTop.WBP_IngameSmesTop_C.PlayUnlockedMap
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_IngameSmesTop_C_PlayUnlockedMap final
-{
-public:
-	class FName                                   RegionId;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    unlockMapInfoMsgIdHandle;                          // 0x0008(0x0010)(Edit, BlueprintVisible, NoDestructor)
-	struct FDataTableRowHandle                    unlockMapMsgIdHandle;                              // 0x0018(0x0010)(Edit, BlueprintVisible, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_IngameSmesTop_C_PlayUnlockedMap;
-
 // Function WBP_IngameSmesTop.WBP_IngameSmesTop_C.Setup
 // 0x0038 (0x0038 - 0x0000)
 struct WBP_IngameSmesTop_C_Setup final
@@ -105,6 +70,41 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_IngameSmesTop_C_Setup;
+
+// Function WBP_IngameSmesTop.WBP_IngameSmesTop_C.PlayUnlockedMap
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_IngameSmesTop_C_PlayUnlockedMap final
+{
+public:
+	class FName                                   RegionId;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    unlockMapInfoMsgIdHandle;                          // 0x0008(0x0010)(Edit, BlueprintVisible, NoDestructor)
+	struct FDataTableRowHandle                    unlockMapMsgIdHandle;                              // 0x0018(0x0010)(Edit, BlueprintVisible, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_IngameSmesTop_C_PlayUnlockedMap;
+
+// Function WBP_IngameSmesTop.WBP_IngameSmesTop_C.OnUpdateTechnologyPoint
+// 0x00A0 (0x00A0 - 0x0000)
+struct WBP_IngameSmesTop_C_OnUpdateTechnologyPoint final
+{
+public:
+	int32                                         TechnologyPoint;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0010(0x0050)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0060(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0070(0x0018)()
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0088(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_IngameSmesTop_C_OnUpdateTechnologyPoint;
+
+// Function WBP_IngameSmesTop.WBP_IngameSmesTop_C.On Player Level Up
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_IngameSmesTop_C_On_Player_Level_Up final
+{
+public:
+	int32                                         DisplayLevel;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameSmesTop_C_On_Player_Level_Up;
 
 }
 

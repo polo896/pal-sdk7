@@ -27,9 +27,9 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x02F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_SkyCreatorLightingSphereVolume(int32 EntryPoint);
-	void ReceiveActorBeginOverlap(class AActor* OtherActor);
 	void ReceiveActorEndOverlap(class AActor* OtherActor);
+	void ReceiveActorBeginOverlap(class AActor* OtherActor);
+	void ExecuteUbergraph_BP_SkyCreatorLightingSphereVolume(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

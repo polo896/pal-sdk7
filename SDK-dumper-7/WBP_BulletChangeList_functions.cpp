@@ -17,35 +17,56 @@
 namespace SDK
 {
 
-// Function WBP_BulletChangeList.WBP_BulletChangeList_C.AnmEvent_DetailDisplay
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_BulletChangeList.WBP_BulletChangeList_C.GetBulletItemId
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    bSkipAnimatio                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName*                            ItemId                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_BulletChangeList_C::AnmEvent_DetailDisplay(bool bSkipAnimatio)
+void UWBP_BulletChangeList_C::GetBulletItemId(class FName* ItemId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BulletChangeList_C", "AnmEvent_DetailDisplay");
+		Func = Class->GetFunction("WBP_BulletChangeList_C", "GetBulletItemId");
 
-	Params::WBP_BulletChangeList_C_AnmEvent_DetailDisplay Parms{};
+	Params::WBP_BulletChangeList_C_GetBulletItemId Parms{};
 
-	Parms.bSkipAnimatio = bSkipAnimatio;
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ItemId != nullptr)
+		*ItemId = Parms.ItemId;
+}
+
+
+// Function WBP_BulletChangeList.WBP_BulletChangeList_C.ExecuteUbergraph_WBP_BulletChangeList
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BulletChangeList_C::ExecuteUbergraph_WBP_BulletChangeList(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BulletChangeList_C", "ExecuteUbergraph_WBP_BulletChangeList");
+
+	Params::WBP_BulletChangeList_C_ExecuteUbergraph_WBP_BulletChangeList Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_BulletChangeList.WBP_BulletChangeList_C.AnmEvent_Focus
+// Function WBP_BulletChangeList.WBP_BulletChangeList_C.AnmEvent_Unfocus
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_BulletChangeList_C::AnmEvent_Focus()
+void UWBP_BulletChangeList_C::AnmEvent_Unfocus()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BulletChangeList_C", "AnmEvent_Focus");
+		Func = Class->GetFunction("WBP_BulletChangeList_C", "AnmEvent_Unfocus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,58 +92,37 @@ void UWBP_BulletChangeList_C::AnmEvent_SimpleDisplay(bool bSkipAnimation)
 }
 
 
-// Function WBP_BulletChangeList.WBP_BulletChangeList_C.AnmEvent_Unfocus
+// Function WBP_BulletChangeList.WBP_BulletChangeList_C.AnmEvent_Focus
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_BulletChangeList_C::AnmEvent_Unfocus()
+void UWBP_BulletChangeList_C::AnmEvent_Focus()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BulletChangeList_C", "AnmEvent_Unfocus");
+		Func = Class->GetFunction("WBP_BulletChangeList_C", "AnmEvent_Focus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_BulletChangeList.WBP_BulletChangeList_C.ExecuteUbergraph_WBP_BulletChangeList
-// (Final, UbergraphFunction)
+// Function WBP_BulletChangeList.WBP_BulletChangeList_C.AnmEvent_DetailDisplay
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bSkipAnimatio                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_BulletChangeList_C::ExecuteUbergraph_WBP_BulletChangeList(int32 EntryPoint)
+void UWBP_BulletChangeList_C::AnmEvent_DetailDisplay(bool bSkipAnimatio)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BulletChangeList_C", "ExecuteUbergraph_WBP_BulletChangeList");
+		Func = Class->GetFunction("WBP_BulletChangeList_C", "AnmEvent_DetailDisplay");
 
-	Params::WBP_BulletChangeList_C_ExecuteUbergraph_WBP_BulletChangeList Parms{};
+	Params::WBP_BulletChangeList_C_AnmEvent_DetailDisplay Parms{};
 
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BulletChangeList.WBP_BulletChangeList_C.GetBulletItemId
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class FName*                            ItemId                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BulletChangeList_C::GetBulletItemId(class FName* ItemId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BulletChangeList_C", "GetBulletItemId");
-
-	Params::WBP_BulletChangeList_C_GetBulletItemId Parms{};
+	Parms.bSkipAnimatio = bSkipAnimatio;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (ItemId != nullptr)
-		*ItemId = Parms.ItemId;
 }
 
 

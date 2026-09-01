@@ -53,8 +53,8 @@ struct FHoudiniAssetBlueprintInstanceData : public FActorComponentInstanceData
     FGuid HapiGUID;                                                                   // 0x0098 (size: 0x10)
     bool bRegisteredComponentTemplate;                                                // 0x00A8 (size: 0x1)
     FString SourceName;                                                               // 0x00B0 (size: 0x10)
-    TMap<class FHoudiniOutputObjectIdentifier, class FHoudiniAssetBlueprintOutput> Outputs; // 0x00C0 (size: 0x50)
-    TArray<class UHoudiniInput*> Inputs;                                              // 0x0110 (size: 0x10)
+    TMap<FHoudiniOutputObjectIdentifier, FHoudiniAssetBlueprintOutput> Outputs;       // 0x00C0 (size: 0x50)
+    TArray<UHoudiniInput*> Inputs;                                                    // 0x0110 (size: 0x10)
 
 }; // Size: 0x120
 
@@ -67,7 +67,7 @@ struct FHoudiniAssetBlueprintOutput
 
 struct FHoudiniBakedOutput
 {
-    TMap<class FHoudiniBakedOutputObjectIdentifier, class FHoudiniBakedOutputObject> BakedOutputObjects; // 0x0000 (size: 0x50)
+    TMap<FHoudiniBakedOutputObjectIdentifier, FHoudiniBakedOutputObject> BakedOutputObjects; // 0x0000 (size: 0x50)
 
 }; // Size: 0x50
 
@@ -80,7 +80,7 @@ struct FHoudiniBakedOutputObject
     FString BakedComponent;                                                           // 0x0038 (size: 0x10)
     TArray<FString> InstancedActors;                                                  // 0x0048 (size: 0x10)
     TArray<FString> InstancedComponents;                                              // 0x0058 (size: 0x10)
-    TMap<class FName, class FString> LandscapeLayers;                                 // 0x0068 (size: 0x50)
+    TMap<FName, FString> LandscapeLayers;                                             // 0x0068 (size: 0x50)
     TArray<FVector> FoliageInstancePositions;                                         // 0x00B8 (size: 0x10)
     class UFoliageType* FoliageType;                                                  // 0x00C8 (size: 0x8)
     TArray<FString> LevelInstanceActors;                                              // 0x00D0 (size: 0x10)
@@ -109,7 +109,7 @@ struct FHoudiniBrushInfo
 
 struct FHoudiniClearedEditLayers
 {
-    TMap<class FString, class FHoudiniClearedTargetLayer> EditLayers;                 // 0x0000 (size: 0x50)
+    TMap<FString, FHoudiniClearedTargetLayer> EditLayers;                             // 0x0000 (size: 0x50)
 
 }; // Size: 0x50
 
@@ -246,10 +246,10 @@ struct FHoudiniInputObjectSettings
 
 struct FHoudiniInstancedOutput
 {
-    TSoftObjectPtr<UObject> OriginalObject;                                           // 0x0000 (size: 0x30)
+    TSoftObjectPtr<class UObject> OriginalObject;                                     // 0x0000 (size: 0x30)
     int32 OriginalObjectIndex;                                                        // 0x0030 (size: 0x4)
     TArray<FTransform> OriginalTransforms;                                            // 0x0038 (size: 0x10)
-    TArray<TSoftObjectPtr<UObject>> VariationObjects;                                 // 0x0048 (size: 0x10)
+    TArray<TSoftObjectPtr<class UObject>> VariationObjects;                           // 0x0048 (size: 0x10)
     TArray<FTransform> VariationTransformOffsets;                                     // 0x0058 (size: 0x10)
     TArray<int32> TransformVariationIndices;                                          // 0x0068 (size: 0x10)
     TArray<int32> OriginalInstanceIndices;                                            // 0x0078 (size: 0x10)
@@ -297,8 +297,8 @@ struct FHoudiniObjectInfo
 struct FHoudiniOutputObject
 {
     class UObject* OutputObject;                                                      // 0x0000 (size: 0x8)
-    TArray<class UObject*> OutputComponents;                                          // 0x0008 (size: 0x10)
-    TArray<TSoftObjectPtr<AActor>> OutputActors;                                      // 0x0018 (size: 0x10)
+    TArray<UObject*> OutputComponents;                                                // 0x0008 (size: 0x10)
+    TArray<TSoftObjectPtr<class AActor>> OutputActors;                                // 0x0018 (size: 0x10)
     class UObject* OutputComponent;                                                   // 0x0028 (size: 0x8)
     class UObject* ProxyObject;                                                       // 0x0030 (size: 0x8)
     class UObject* ProxyComponent;                                                    // 0x0038 (size: 0x8)
@@ -309,8 +309,8 @@ struct FHoudiniOutputObject
     FString GeometryCollectionPieceName;                                              // 0x0048 (size: 0x10)
     FString BakeName;                                                                 // 0x0058 (size: 0x10)
     FHoudiniCurveOutputProperties CurveOutputProperty;                                // 0x0068 (size: 0xC)
-    TMap<class FString, class FString> CachedAttributes;                              // 0x0078 (size: 0x50)
-    TMap<class FString, class FString> CachedTokens;                                  // 0x00C8 (size: 0x50)
+    TMap<FString, FString> CachedAttributes;                                          // 0x0078 (size: 0x50)
+    TMap<FString, FString> CachedTokens;                                              // 0x00C8 (size: 0x50)
     class UObject* UserFoliageType;                                                   // 0x0118 (size: 0x8)
     class UFoliageType* FoliageType;                                                  // 0x0120 (size: 0x8)
     class UWorld* World;                                                              // 0x0128 (size: 0x8)
@@ -362,7 +362,7 @@ struct FHoudiniStaticMeshGenerationProperties
     uint8 bGeneratedUseMaximumStreamingTexelRatio;                                    // 0x01BC (size: 0x1)
     float GeneratedStreamingDistanceMultiplier;                                       // 0x01C0 (size: 0x4)
     class UFoliageType_InstancedStaticMesh* GeneratedFoliageDefaultSettings;          // 0x01C8 (size: 0x8)
-    TArray<class UAssetUserData*> GeneratedAssetUserData;                             // 0x01D0 (size: 0x10)
+    TArray<UAssetUserData*> GeneratedAssetUserData;                                   // 0x01D0 (size: 0x10)
 
 }; // Size: 0x1E0
 
@@ -390,7 +390,7 @@ struct FTOPWorkResultObject
     FString FilePath;                                                                 // 0x0018 (size: 0x10)
     EPDGWorkResultState State;                                                        // 0x0028 (size: 0x1)
     int32 WorkItemResultInfoIndex;                                                    // 0x002C (size: 0x4)
-    TArray<class UHoudiniOutput*> ResultOutputs;                                      // 0x0030 (size: 0x10)
+    TArray<UHoudiniOutput*> ResultOutputs;                                            // 0x0030 (size: 0x10)
     bool bAutoBakedSinceLastLoad;                                                     // 0x0040 (size: 0x1)
     FOutputActorOwner OutputActorOwner;                                               // 0x0048 (size: 0x10)
 
@@ -459,8 +459,8 @@ class UHoudiniAssetBlueprintComponent : public UHoudiniAssetComponent
     bool bIsInBlueprintEditor;                                                        // 0x0ADB (size: 0x1)
     bool bCanDeleteHoudiniNodes;                                                      // 0x0ADC (size: 0x1)
     bool bHasRegisteredComponentTemplate;                                             // 0x0ADD (size: 0x1)
-    TMap<class FHoudiniOutputObjectIdentifier, class FGuid> CachedOutputNodes;        // 0x0AE8 (size: 0x50)
-    TMap<class FGuid, class FGuid> CachedInputNodes;                                  // 0x0B38 (size: 0x50)
+    TMap<FHoudiniOutputObjectIdentifier, FGuid> CachedOutputNodes;                    // 0x0AE8 (size: 0x50)
+    TMap<FGuid, FGuid> CachedInputNodes;                                              // 0x0B38 (size: 0x50)
 
     void SetToggleValueAt(FString Name, bool Value, int32 Index);
     void SetFloatParameter(FString Name, float Value, int32 Index);
@@ -513,12 +513,12 @@ class UHoudiniAssetComponent : public UPrimitiveComponent
     bool bParameterDefinitionUpdateNeeded;                                            // 0x0910 (size: 0x1)
     bool bBlueprintStructureModified;                                                 // 0x0911 (size: 0x1)
     bool bBlueprintModified;                                                          // 0x0912 (size: 0x1)
-    TArray<class UHoudiniParameter*> Parameters;                                      // 0x0918 (size: 0x10)
-    TArray<class UHoudiniInput*> Inputs;                                              // 0x0928 (size: 0x10)
-    TArray<class UHoudiniOutput*> Outputs;                                            // 0x0938 (size: 0x10)
+    TArray<UHoudiniParameter*> Parameters;                                            // 0x0918 (size: 0x10)
+    TArray<UHoudiniInput*> Inputs;                                                    // 0x0928 (size: 0x10)
+    TArray<UHoudiniOutput*> Outputs;                                                  // 0x0938 (size: 0x10)
     TArray<FHoudiniBakedOutput> BakedOutputs;                                         // 0x0948 (size: 0x10)
-    TArray<TWeakObjectPtr<AActor>> UntrackedOutputs;                                  // 0x0958 (size: 0x10)
-    TArray<class UHoudiniHandleComponent*> HandleComponents;                          // 0x0968 (size: 0x10)
+    TArray<TWeakObjectPtr<class AActor>> UntrackedOutputs;                            // 0x0958 (size: 0x10)
+    TArray<UHoudiniHandleComponent*> HandleComponents;                                // 0x0968 (size: 0x10)
     bool bHasComponentTransformChanged;                                               // 0x0978 (size: 0x1)
     bool bFullyLoaded;                                                                // 0x0979 (size: 0x1)
     class UHoudiniPDGAssetLink* PDGAssetLink;                                         // 0x0980 (size: 0x8)
@@ -537,7 +537,7 @@ class UHoudiniEngineEditorSettings : public UDeveloperSettings
 
 class UHoudiniHandleComponent : public USceneComponent
 {
-    TArray<class UHoudiniHandleParameter*> XformParms;                                // 0x02A0 (size: 0x10)
+    TArray<UHoudiniHandleParameter*> XformParms;                                      // 0x02A0 (size: 0x10)
     class UHoudiniHandleParameter* RSTParm;                                           // 0x02B0 (size: 0x8)
     class UHoudiniHandleParameter* RotOrderParm;                                      // 0x02B8 (size: 0x8)
     EHoudiniHandleType HandleType;                                                    // 0x02C0 (size: 0x1)
@@ -589,27 +589,27 @@ class UHoudiniInput : public UObject
     bool bCurvePointSelectionUseAbsLocation;                                          // 0x00D2 (size: 0x1)
     bool bCurvePointSelectionUseAbsRotation;                                          // 0x00D3 (size: 0x1)
     bool bCookOnCurveChanged;                                                         // 0x00D4 (size: 0x1)
-    TArray<class UHoudiniInputObject*> GeometryInputObjects;                          // 0x00D8 (size: 0x10)
+    TArray<UHoudiniInputObject*> GeometryInputObjects;                                // 0x00D8 (size: 0x10)
     bool bStaticMeshChanged;                                                          // 0x00E8 (size: 0x1)
-    TArray<class UHoudiniInputObject*> AssetInputObjects;                             // 0x00F0 (size: 0x10)
+    TArray<UHoudiniInputObject*> AssetInputObjects;                                   // 0x00F0 (size: 0x10)
     bool bInputAssetConnectedInHoudini;                                               // 0x0100 (size: 0x1)
-    TArray<class UHoudiniInputObject*> CurveInputObjects;                             // 0x0108 (size: 0x10)
+    TArray<UHoudiniInputObject*> CurveInputObjects;                                   // 0x0108 (size: 0x10)
     float DefaultCurveOffset;                                                         // 0x0118 (size: 0x4)
     bool bAddRotAndScaleAttributesOnCurves;                                           // 0x011C (size: 0x1)
     bool bUseLegacyInputCurves;                                                       // 0x011D (size: 0x1)
-    TArray<class UHoudiniInputObject*> LandscapeInputObjects;                         // 0x0120 (size: 0x10)
+    TArray<UHoudiniInputObject*> LandscapeInputObjects;                               // 0x0120 (size: 0x10)
     bool bLandscapeHasExportTypeChanged;                                              // 0x0130 (size: 0x1)
-    TArray<class UHoudiniInputObject*> WorldInputObjects;                             // 0x0138 (size: 0x10)
-    TArray<class AActor*> WorldInputBoundSelectorObjects;                             // 0x0148 (size: 0x10)
+    TArray<UHoudiniInputObject*> WorldInputObjects;                                   // 0x0138 (size: 0x10)
+    TArray<AActor*> WorldInputBoundSelectorObjects;                                   // 0x0148 (size: 0x10)
     bool bIsWorldInputBoundSelector;                                                  // 0x0158 (size: 0x1)
     bool bWorldInputBoundSelectorAutoUpdate;                                          // 0x0159 (size: 0x1)
     float UnrealSplineResolution;                                                     // 0x015C (size: 0x4)
-    TArray<class UHoudiniInputObject*> SkeletalInputObjects;                          // 0x0160 (size: 0x10)
-    TArray<class UHoudiniInputObject*> GeometryCollectionInputObjects;                // 0x0170 (size: 0x10)
+    TArray<UHoudiniInputObject*> SkeletalInputObjects;                                // 0x0160 (size: 0x10)
+    TArray<UHoudiniInputObject*> GeometryCollectionInputObjects;                      // 0x0170 (size: 0x10)
     TSet<ULandscapeComponent*> LandscapeSelectedComponents;                           // 0x0180 (size: 0x50)
     TSet<int32> InputNodesPendingDelete;                                              // 0x01D0 (size: 0x50)
-    TArray<class UHoudiniInputHoudiniSplineComponent*> LastInsertedInputs;            // 0x0220 (size: 0x10)
-    TArray<class UHoudiniInputObject*> LastUndoDeletedInputs;                         // 0x0230 (size: 0x10)
+    TArray<UHoudiniInputHoudiniSplineComponent*> LastInsertedInputs;                  // 0x0220 (size: 0x10)
+    TArray<UHoudiniInputObject*> LastUndoDeletedInputs;                               // 0x0230 (size: 0x10)
     bool bUpdateInputLandscape;                                                       // 0x0240 (size: 0x1)
     EHoudiniLandscapeExportType LandscapeExportType;                                  // 0x0241 (size: 0x1)
     bool bLandscapeExportSelectionOnly;                                               // 0x0242 (size: 0x1)
@@ -634,8 +634,8 @@ class UHoudiniInputActor : public UHoudiniInputObject
 {
     int32 SplinesMeshObjectNodeId;                                                    // 0x0230 (size: 0x4)
     int32 SplinesMeshNodeId;                                                          // 0x0234 (size: 0x4)
-    TArray<class UHoudiniInputSceneComponent*> ActorComponents;                       // 0x0330 (size: 0x10)
-    TSet<TSoftObjectPtr<UObject>> ActorSceneComponents;                               // 0x0340 (size: 0x50)
+    TArray<UHoudiniInputSceneComponent*> ActorComponents;                             // 0x0330 (size: 0x10)
+    TSet<TSoftObjectPtr<class UObject>> ActorSceneComponents;                         // 0x0340 (size: 0x50)
     int32 LastUpdateNumComponentsAdded;                                               // 0x0390 (size: 0x4)
     int32 LastUpdateNumComponentsRemoved;                                             // 0x0394 (size: 0x4)
     int32 NumSplineMeshComponents;                                                    // 0x0398 (size: 0x4)
@@ -651,8 +651,8 @@ class UHoudiniInputAnimation : public UHoudiniInputObject
 
 class UHoudiniInputBlueprint : public UHoudiniInputObject
 {
-    TArray<class UHoudiniInputSceneComponent*> BPComponents;                          // 0x0230 (size: 0x10)
-    TSet<TSoftObjectPtr<UObject>> BPSceneComponents;                                  // 0x0240 (size: 0x50)
+    TArray<UHoudiniInputSceneComponent*> BPComponents;                                // 0x0230 (size: 0x10)
+    TSet<TSoftObjectPtr<class UObject>> BPSceneComponents;                            // 0x0240 (size: 0x50)
     int32 LastUpdateNumComponentsAdded;                                               // 0x0290 (size: 0x4)
     int32 LastUpdateNumComponentsRemoved;                                             // 0x0294 (size: 0x4)
 
@@ -737,7 +737,7 @@ class UHoudiniInputLandscapeSplinesComponent : public UHoudiniInputSceneComponen
 
 class UHoudiniInputLevelInstance : public UHoudiniInputActor
 {
-    TMap<class TSoftObjectPtr<AActor>, class UHoudiniInputObject*> TrackedActorObjects; // 0x03C0 (size: 0x50)
+    TMap<TSoftObjectPtr<class AActor>, UHoudiniInputObject*> TrackedActorObjects;     // 0x03C0 (size: 0x50)
     int32 NumActorsAddedLastUpdate;                                                   // 0x0410 (size: 0x4)
     int32 NumActorsRemovedLastUpdate;                                                 // 0x0414 (size: 0x4)
 
@@ -745,13 +745,13 @@ class UHoudiniInputLevelInstance : public UHoudiniInputActor
 
 class UHoudiniInputMeshComponent : public UHoudiniInputSceneComponent
 {
-    TSoftObjectPtr<UStaticMesh> StaticMesh;                                           // 0x0298 (size: 0x30)
+    TSoftObjectPtr<class UStaticMesh> StaticMesh;                                     // 0x0298 (size: 0x30)
 
 }; // Size: 0x2D0
 
 class UHoudiniInputObject : public UObject
 {
-    TSoftObjectPtr<UObject> InputObject;                                              // 0x0028 (size: 0x30)
+    TSoftObjectPtr<class UObject> InputObject;                                        // 0x0028 (size: 0x30)
     EHoudiniInputObjectType Type;                                                     // 0x0058 (size: 0x1)
     FGuid Guid;                                                                       // 0x005C (size: 0x10)
     bool bHasChanged;                                                                 // 0x0168 (size: 0x1)
@@ -819,7 +819,7 @@ class UHoudiniInputStaticMesh : public UHoudiniInputObject
 class UHoudiniInstancedActorComponent : public USceneComponent
 {
     class UObject* InstancedObject;                                                   // 0x02A0 (size: 0x8)
-    TArray<class AActor*> InstancedActors;                                            // 0x02A8 (size: 0x10)
+    TArray<AActor*> InstancedActors;                                                  // 0x02A8 (size: 0x10)
 
 }; // Size: 0x2C0
 
@@ -827,14 +827,14 @@ class UHoudiniLandscapeOutput : public UObject
 {
     class ALandscape* Landscape;                                                      // 0x0028 (size: 0x8)
     FString BakedName;                                                                // 0x0030 (size: 0x10)
-    TArray<class UHoudiniLandscapeTargetLayerOutput*> Layers;                         // 0x0040 (size: 0x10)
+    TArray<UHoudiniLandscapeTargetLayerOutput*> Layers;                               // 0x0040 (size: 0x10)
     bool bCreated;                                                                    // 0x0050 (size: 0x1)
 
 }; // Size: 0x58
 
 class UHoudiniLandscapePtr : public UObject
 {
-    TSoftObjectPtr<ALandscapeProxy> LandscapeSoftPtr;                                 // 0x0028 (size: 0x30)
+    TSoftObjectPtr<class ALandscapeProxy> LandscapeSoftPtr;                           // 0x0028 (size: 0x30)
     EHoudiniLandscapeOutputBakeType BakeType;                                         // 0x0058 (size: 0x1)
     FName EditLayerName;                                                              // 0x005C (size: 0x8)
 
@@ -843,7 +843,7 @@ class UHoudiniLandscapePtr : public UObject
 class UHoudiniLandscapeSplineTargetLayerOutput : public UHoudiniLandscapeTargetLayerOutput
 {
     FName AfterEditLayer;                                                             // 0x00D0 (size: 0x8)
-    TArray<class ULandscapeSplineSegment*> Segments;                                  // 0x00D8 (size: 0x10)
+    TArray<ULandscapeSplineSegment*> Segments;                                        // 0x00D8 (size: 0x10)
 
 }; // Size: 0xE8
 
@@ -853,9 +853,9 @@ class UHoudiniLandscapeSplinesOutput : public UObject
     class ALandscapeProxy* LandscapeProxy;                                            // 0x0030 (size: 0x8)
     class ALandscapeSplineActor* LandscapeSplineActor;                                // 0x0038 (size: 0x8)
     class ULandscapeSplinesComponent* LandscapeSplinesComponent;                      // 0x0040 (size: 0x8)
-    TMap<class FName, class UHoudiniLandscapeSplineTargetLayerOutput*> LayerOutputs;  // 0x0048 (size: 0x50)
-    TArray<class ULandscapeSplineSegment*> Segments;                                  // 0x0098 (size: 0x10)
-    TArray<class ULandscapeSplineControlPoint*> ControlPoints;                        // 0x00A8 (size: 0x10)
+    TMap<FName, UHoudiniLandscapeSplineTargetLayerOutput*> LayerOutputs;              // 0x0048 (size: 0x50)
+    TArray<ULandscapeSplineSegment*> Segments;                                        // 0x0098 (size: 0x10)
+    TArray<ULandscapeSplineControlPoint*> ControlPoints;                              // 0x00A8 (size: 0x10)
 
 }; // Size: 0xB8
 
@@ -871,7 +871,7 @@ class UHoudiniLandscapeTargetLayerOutput : public UObject
     bool bCreatedLandscape;                                                           // 0x0079 (size: 0x1)
     bool bCookedLayerRequiresBaking;                                                  // 0x007A (size: 0x1)
     FString BakedLandscapeName;                                                       // 0x0080 (size: 0x10)
-    TArray<class ULandscapeLayerInfoObject*> LayerInfoObjects;                        // 0x0090 (size: 0x10)
+    TArray<ULandscapeLayerInfoObject*> LayerInfoObjects;                              // 0x0090 (size: 0x10)
     FString BakeFolder;                                                               // 0x00A0 (size: 0x10)
     class UMaterialInterface* MaterialInstance;                                       // 0x00B0 (size: 0x8)
     bool bWriteLockedLayers;                                                          // 0x00B8 (size: 0x1)
@@ -882,8 +882,8 @@ class UHoudiniLandscapeTargetLayerOutput : public UObject
 
 class UHoudiniMeshSplitInstancerComponent : public USceneComponent
 {
-    TArray<class UStaticMeshComponent*> Instances;                                    // 0x02A0 (size: 0x10)
-    TArray<class UMaterialInterface*> OverrideMaterials;                              // 0x02B0 (size: 0x10)
+    TArray<UStaticMeshComponent*> Instances;                                          // 0x02A0 (size: 0x10)
+    TArray<UMaterialInterface*> OverrideMaterials;                                    // 0x02B0 (size: 0x10)
     class UStaticMesh* InstancedMesh;                                                 // 0x02C0 (size: 0x8)
 
 }; // Size: 0x2D0
@@ -899,15 +899,15 @@ class UHoudiniOutput : public UObject
 {
     EHoudiniOutputType Type;                                                          // 0x0028 (size: 0x1)
     TArray<FHoudiniGeoPartObject> HoudiniGeoPartObjects;                              // 0x0030 (size: 0x10)
-    TMap<class FHoudiniOutputObjectIdentifier, class FHoudiniOutputObject> OutputObjects; // 0x0040 (size: 0x50)
-    TMap<class FHoudiniOutputObjectIdentifier, class FHoudiniInstancedOutput> InstancedOutputs; // 0x0090 (size: 0x50)
-    TMap<class FString, class UMaterialInterface*> AssignementMaterials;              // 0x00E0 (size: 0x50)
-    TMap<class FHoudiniMaterialIdentifier, class UMaterialInterface*> AssignmentMaterialsById; // 0x0130 (size: 0x50)
-    TMap<class FString, class UMaterialInterface*> ReplacementMaterials;              // 0x0180 (size: 0x50)
-    TMap<class FHoudiniMaterialIdentifier, class UMaterialInterface*> ReplacementMaterialsById; // 0x01D0 (size: 0x50)
+    TMap<FHoudiniOutputObjectIdentifier, FHoudiniOutputObject> OutputObjects;         // 0x0040 (size: 0x50)
+    TMap<FHoudiniOutputObjectIdentifier, FHoudiniInstancedOutput> InstancedOutputs;   // 0x0090 (size: 0x50)
+    TMap<FString, UMaterialInterface*> AssignementMaterials;                          // 0x00E0 (size: 0x50)
+    TMap<FHoudiniMaterialIdentifier, UMaterialInterface*> AssignmentMaterialsById;    // 0x0130 (size: 0x50)
+    TMap<FString, UMaterialInterface*> ReplacementMaterials;                          // 0x0180 (size: 0x50)
+    TMap<FHoudiniMaterialIdentifier, UMaterialInterface*> ReplacementMaterialsById;   // 0x01D0 (size: 0x50)
     bool bLandscapeWorldComposition;                                                  // 0x0224 (size: 0x1)
-    TArray<class AActor*> HoudiniCreatedSocketActors;                                 // 0x0228 (size: 0x10)
-    TArray<class AActor*> HoudiniAttachedSocketActors;                                // 0x0238 (size: 0x10)
+    TArray<AActor*> HoudiniCreatedSocketActors;                                       // 0x0228 (size: 0x10)
+    TArray<AActor*> HoudiniAttachedSocketActors;                                      // 0x0238 (size: 0x10)
     bool bIsEditableNode;                                                             // 0x0248 (size: 0x1)
     bool bHasEditableNodeBuilt;                                                       // 0x0249 (size: 0x1)
     bool bIsUpdating;                                                                 // 0x024A (size: 0x1)
@@ -920,7 +920,7 @@ class UHoudiniPDGAssetLink : public UObject
     FString AssetName;                                                                // 0x0028 (size: 0x10)
     FString AssetNodePath;                                                            // 0x0038 (size: 0x10)
     int32 AssetId;                                                                    // 0x0048 (size: 0x4)
-    TArray<class UTOPNetwork*> AllTOPNetworks;                                        // 0x0050 (size: 0x10)
+    TArray<UTOPNetwork*> AllTOPNetworks;                                              // 0x0050 (size: 0x10)
     int32 SelectedTOPNetworkIndex;                                                    // 0x0060 (size: 0x4)
     EPDGLinkState LinkState;                                                          // 0x0064 (size: 0x1)
     bool bAutoCook;                                                                   // 0x0065 (size: 0x1)
@@ -969,7 +969,7 @@ class UHoudiniParameter : public UObject
     bool bHasExpression;                                                              // 0x0098 (size: 0x1)
     bool bShowExpression;                                                             // 0x0099 (size: 0x1)
     FString ParamExpression;                                                          // 0x00A0 (size: 0x10)
-    TMap<class FString, class FString> Tags;                                          // 0x00B0 (size: 0x50)
+    TMap<FString, FString> Tags;                                                      // 0x00B0 (size: 0x50)
     bool bAutoUpdate;                                                                 // 0x0100 (size: 0x1)
 
 }; // Size: 0x108
@@ -1049,7 +1049,7 @@ class UHoudiniParameterFolderList : public UHoudiniParameter
 {
     bool bIsTabMenu;                                                                  // 0x0108 (size: 0x1)
     bool bIsTabsShown;                                                                // 0x0109 (size: 0x1)
-    TArray<class UHoudiniParameterFolder*> TabFolders;                                // 0x0110 (size: 0x10)
+    TArray<UHoudiniParameterFolder*> TabFolders;                                      // 0x0110 (size: 0x10)
 
 }; // Size: 0x120
 
@@ -1099,14 +1099,14 @@ class UHoudiniParameterOperatorPath : public UHoudiniParameter
 
 class UHoudiniParameterRampColor : public UHoudiniParameterMultiParm
 {
-    TArray<class UHoudiniParameterRampColorPoint*> Points;                            // 0x0150 (size: 0x10)
+    TArray<UHoudiniParameterRampColorPoint*> Points;                                  // 0x0150 (size: 0x10)
     bool bCaching;                                                                    // 0x0160 (size: 0x1)
-    TArray<class UHoudiniParameterRampColorPoint*> CachedPoints;                      // 0x0168 (size: 0x10)
+    TArray<UHoudiniParameterRampColorPoint*> CachedPoints;                            // 0x0168 (size: 0x10)
     TArray<float> DefaultPositions;                                                   // 0x0178 (size: 0x10)
     TArray<FLinearColor> DefaultValues;                                               // 0x0188 (size: 0x10)
     TArray<int32> DefaultChoices;                                                     // 0x0198 (size: 0x10)
     int32 NumDefaultPoints;                                                           // 0x01A8 (size: 0x4)
-    TArray<class UHoudiniParameterRampModificationEvent*> ModificationEvents;         // 0x01B0 (size: 0x10)
+    TArray<UHoudiniParameterRampModificationEvent*> ModificationEvents;               // 0x01B0 (size: 0x10)
 
 }; // Size: 0x1C0
 
@@ -1124,14 +1124,14 @@ class UHoudiniParameterRampColorPoint : public UObject
 
 class UHoudiniParameterRampFloat : public UHoudiniParameterMultiParm
 {
-    TArray<class UHoudiniParameterRampFloatPoint*> Points;                            // 0x0150 (size: 0x10)
-    TArray<class UHoudiniParameterRampFloatPoint*> CachedPoints;                      // 0x0160 (size: 0x10)
+    TArray<UHoudiniParameterRampFloatPoint*> Points;                                  // 0x0150 (size: 0x10)
+    TArray<UHoudiniParameterRampFloatPoint*> CachedPoints;                            // 0x0160 (size: 0x10)
     TArray<float> DefaultPositions;                                                   // 0x0170 (size: 0x10)
     TArray<float> DefaultValues;                                                      // 0x0180 (size: 0x10)
     TArray<int32> DefaultChoices;                                                     // 0x0190 (size: 0x10)
     int32 NumDefaultPoints;                                                           // 0x01A0 (size: 0x4)
     bool bCaching;                                                                    // 0x01A4 (size: 0x1)
-    TArray<class UHoudiniParameterRampModificationEvent*> ModificationEvents;         // 0x01A8 (size: 0x10)
+    TArray<UHoudiniParameterRampModificationEvent*> ModificationEvents;               // 0x01A8 (size: 0x10)
 
 }; // Size: 0x1B8
 
@@ -1167,7 +1167,7 @@ class UHoudiniParameterString : public UHoudiniParameter
 {
     TArray<FString> Values;                                                           // 0x0108 (size: 0x10)
     TArray<FString> DefaultValues;                                                    // 0x0118 (size: 0x10)
-    TArray<class UObject*> ChosenAssets;                                              // 0x0128 (size: 0x10)
+    TArray<UObject*> ChosenAssets;                                                    // 0x0128 (size: 0x10)
     bool bIsAssetRef;                                                                 // 0x0138 (size: 0x1)
 
 }; // Size: 0x140
@@ -1226,7 +1226,7 @@ class UHoudiniRuntimeSettings : public UObject
     uint8 bUseMaximumStreamingTexelRatio;                                             // 0x0274 (size: 0x1)
     float StreamingDistanceMultiplier;                                                // 0x0278 (size: 0x4)
     class UFoliageType_InstancedStaticMesh* FoliageDefaultSettings;                   // 0x0280 (size: 0x8)
-    TArray<class UAssetUserData*> AssetUserData;                                      // 0x0288 (size: 0x10)
+    TArray<UAssetUserData*> AssetUserData;                                            // 0x0288 (size: 0x10)
     bool bUseFullPrecisionUVs;                                                        // 0x0298 (size: 0x1)
     int32 SrcLightmapIndex;                                                           // 0x029C (size: 0x4)
     int32 DstLightmapIndex;                                                           // 0x02A0 (size: 0x4)
@@ -1377,7 +1377,7 @@ class UHoudiniToolData : public UObject
 
 class UHoudiniToolsPackageAsset : public UObject
 {
-    TMap<class FString, class FCategoryRules> Categories;                             // 0x0028 (size: 0x50)
+    TMap<FString, FCategoryRules> Categories;                                         // 0x0028 (size: 0x50)
     FDirectoryPath ExternalPackageDir;                                                // 0x0078 (size: 0x10)
     bool bReimportPackageDescription;                                                 // 0x0088 (size: 0x1)
     bool bExportPackageDescription;                                                   // 0x0089 (size: 0x1)
@@ -1391,7 +1391,7 @@ class UTOPNetwork : public UObject
     int32 NodeID;                                                                     // 0x0028 (size: 0x4)
     FString NodeName;                                                                 // 0x0030 (size: 0x10)
     FString NodePath;                                                                 // 0x0040 (size: 0x10)
-    TArray<class UTOPNode*> AllTOPNodes;                                              // 0x0050 (size: 0x10)
+    TArray<UTOPNode*> AllTOPNodes;                                                    // 0x0050 (size: 0x10)
     int32 SelectedTOPIndex;                                                           // 0x0060 (size: 0x4)
     FString ParentName;                                                               // 0x0068 (size: 0x10)
     bool bShowResults;                                                                // 0x0078 (size: 0x1)
@@ -1416,7 +1416,7 @@ class UTOPNode : public UObject
     TSet<FString> ClearedLandscapeLayers;                                             // 0x0080 (size: 0x50)
     FHoudiniClearedEditLayers ClearedLayers;                                          // 0x00D0 (size: 0x50)
     bool bShow;                                                                       // 0x0120 (size: 0x1)
-    TMap<class FString, class FHoudiniPDGWorkResultObjectBakedOutput> BakedWorkResultObjectOutputs; // 0x0128 (size: 0x50)
+    TMap<FString, FHoudiniPDGWorkResultObjectBakedOutput> BakedWorkResultObjectOutputs; // 0x0128 (size: 0x50)
     FWorkItemTally WorkItemTally;                                                     // 0x0178 (size: 0x238)
     FAggregatedWorkItemTally AggregatedWorkItemTally;                                 // 0x03B0 (size: 0x28)
     bool bHasReceivedCookCompleteEvent;                                               // 0x03D8 (size: 0x1)

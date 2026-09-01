@@ -46,18 +46,18 @@ public:
 	struct FPalUIActionBindData                   BindDataActionNameTopDown;                         // 0x04F8(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void EndSpectate();
-	void ExecuteUbergraph_WBP_PalArenaSpectatorHUD(int32 EntryPoint);
-	void On_Spectate_Next_Player(const class FString& PlayerName, EPalArenaPlayerIndex IndexType);
-	void OnClosed();
-	void OnSetup();
-	void RegisterInputActions();
-	void RequestOpenChat();
-	void SetUILayerVisibility(bool bIsHide, const struct FGameplayTag& LayerTagName);
-	void Spectate_TopDown();
-	void SpectateFreely();
-	void SpectateNextPlayer();
 	void UnRegisterInputActions();
+	void SpectateNextPlayer();
+	void SpectateFreely();
+	void Spectate_TopDown();
+	void SetUILayerVisibility(bool bIsHide, const struct FGameplayTag& LayerTagName);
+	void RequestOpenChat();
+	void RegisterInputActions();
+	void OnSetup();
+	void OnClosed();
+	void On_Spectate_Next_Player(const class FString& PlayerName, EPalArenaPlayerIndex IndexType);
+	void ExecuteUbergraph_WBP_PalArenaSpectatorHUD(int32 EntryPoint);
+	void EndSpectate();
 
 public:
 	static class UClass* StaticClass()

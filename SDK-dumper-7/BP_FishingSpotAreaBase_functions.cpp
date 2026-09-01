@@ -17,17 +17,65 @@
 namespace SDK
 {
 
-// Function BP_FishingSpotAreaBase.BP_FishingSpotAreaBase_C.AdjustActorToWater
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_FishingSpotAreaBase.BP_FishingSpotAreaBase_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_FishingSpotAreaBase_C::AdjustActorToWater()
+void ABP_FishingSpotAreaBase_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FishingSpotAreaBase_C", "AdjustActorToWater");
+		Func = Class->GetFunction("BP_FishingSpotAreaBase_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_FishingSpotAreaBase.BP_FishingSpotAreaBase_C.OnSpawnFish
+// (Event, Protected, BlueprintEvent)
+
+void ABP_FishingSpotAreaBase_C::OnSpawnFish()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_FishingSpotAreaBase_C", "OnSpawnFish");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_FishingSpotAreaBase.BP_FishingSpotAreaBase_C.OnEmptySpot
+// (Event, Protected, BlueprintEvent)
+
+void ABP_FishingSpotAreaBase_C::OnEmptySpot()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_FishingSpotAreaBase_C", "OnEmptySpot");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_FishingSpotAreaBase.BP_FishingSpotAreaBase_C.ExecuteUbergraph_BP_FishingSpotAreaBase
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_FishingSpotAreaBase_C::ExecuteUbergraph_BP_FishingSpotAreaBase(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_FishingSpotAreaBase_C", "ExecuteUbergraph_BP_FishingSpotAreaBase");
+
+	Params::BP_FishingSpotAreaBase_C_ExecuteUbergraph_BP_FishingSpotAreaBase Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -61,63 +109,15 @@ void ABP_FishingSpotAreaBase_C::BndEvt__BP_FishingSpotAreaBase_FishingSpotAttack
 }
 
 
-// Function BP_FishingSpotAreaBase.BP_FishingSpotAreaBase_C.ExecuteUbergraph_BP_FishingSpotAreaBase
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_FishingSpotAreaBase.BP_FishingSpotAreaBase_C.AdjustActorToWater
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_FishingSpotAreaBase_C::ExecuteUbergraph_BP_FishingSpotAreaBase(int32 EntryPoint)
+void ABP_FishingSpotAreaBase_C::AdjustActorToWater()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FishingSpotAreaBase_C", "ExecuteUbergraph_BP_FishingSpotAreaBase");
-
-	Params::BP_FishingSpotAreaBase_C_ExecuteUbergraph_BP_FishingSpotAreaBase Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_FishingSpotAreaBase.BP_FishingSpotAreaBase_C.OnEmptySpot
-// (Event, Protected, BlueprintEvent)
-
-void ABP_FishingSpotAreaBase_C::OnEmptySpot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FishingSpotAreaBase_C", "OnEmptySpot");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_FishingSpotAreaBase.BP_FishingSpotAreaBase_C.OnSpawnFish
-// (Event, Protected, BlueprintEvent)
-
-void ABP_FishingSpotAreaBase_C::OnSpawnFish()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FishingSpotAreaBase_C", "OnSpawnFish");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_FishingSpotAreaBase.BP_FishingSpotAreaBase_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_FishingSpotAreaBase_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FishingSpotAreaBase_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_FishingSpotAreaBase_C", "AdjustActorToWater");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

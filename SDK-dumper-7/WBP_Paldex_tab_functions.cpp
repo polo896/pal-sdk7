@@ -17,37 +17,31 @@
 namespace SDK
 {
 
-// Function WBP_Paldex_tab.WBP_Paldex_tab_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Paldex_tab.WBP_Paldex_tab_C.AnmEvent_Focus
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Paldex_tab_C::OnInitialized()
+void UWBP_Paldex_tab_C::AnmEvent_Focus()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_tab_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_Paldex_tab_C", "AnmEvent_Focus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Paldex_tab.WBP_Paldex_tab_C.ExecuteUbergraph_WBP_Paldex_tab
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Paldex_tab.WBP_Paldex_tab_C.AnmEvent_Unfocus
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Paldex_tab_C::ExecuteUbergraph_WBP_Paldex_tab(int32 EntryPoint)
+void UWBP_Paldex_tab_C::AnmEvent_Unfocus()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_tab_C", "ExecuteUbergraph_WBP_Paldex_tab");
+		Func = Class->GetFunction("WBP_Paldex_tab_C", "AnmEvent_Unfocus");
 
-	Params::WBP_Paldex_tab_C_ExecuteUbergraph_WBP_Paldex_tab Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -71,29 +65,35 @@ void UWBP_Paldex_tab_C::BndEvt__WBP_Paldex_tab_WBP_PalInvisibleButton_K2Node_Com
 }
 
 
-// Function WBP_Paldex_tab.WBP_Paldex_tab_C.AnmEvent_Unfocus
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Paldex_tab.WBP_Paldex_tab_C.ExecuteUbergraph_WBP_Paldex_tab
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Paldex_tab_C::AnmEvent_Unfocus()
+void UWBP_Paldex_tab_C::ExecuteUbergraph_WBP_Paldex_tab(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_tab_C", "AnmEvent_Unfocus");
+		Func = Class->GetFunction("WBP_Paldex_tab_C", "ExecuteUbergraph_WBP_Paldex_tab");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Paldex_tab_C_ExecuteUbergraph_WBP_Paldex_tab Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Paldex_tab.WBP_Paldex_tab_C.AnmEvent_Focus
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Paldex_tab.WBP_Paldex_tab_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Paldex_tab_C::AnmEvent_Focus()
+void UWBP_Paldex_tab_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_tab_C", "AnmEvent_Focus");
+		Func = Class->GetFunction("WBP_Paldex_tab_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

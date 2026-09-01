@@ -24,8 +24,8 @@ public:
 	class UWBP_PalWorkerInfo_C*                   WBP_PalWorkerInfo;                                 // 0x0450(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void CloseSetup();
 	void OpenSetup(class UPalIndividualCharacterHandle* targetHandle);
+	void CloseSetup();
 
 public:
 	static class UClass* StaticClass()

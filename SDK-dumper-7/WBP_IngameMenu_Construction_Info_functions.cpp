@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.DelayDisplay
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  DelayTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_Construction_Info_C::DelayDisplay(double DelayTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Construction_Info_C", "DelayDisplay");
-
-	Params::WBP_IngameMenu_Construction_Info_C_DelayDisplay Parms{};
-
-	Parms.DelayTime = DelayTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.UpdateDetail
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -232,6 +212,26 @@ void UWBP_IngameMenu_Construction_Info_C::Destruct()
 		Func = Class->GetFunction("WBP_IngameMenu_Construction_Info_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.DelayDisplay
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  DelayTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_Construction_Info_C::DelayDisplay(double DelayTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Construction_Info_C", "DelayDisplay");
+
+	Params::WBP_IngameMenu_Construction_Info_C_DelayDisplay Parms{};
+
+	Parms.DelayTime = DelayTime;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

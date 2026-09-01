@@ -17,58 +17,57 @@
 namespace SDK
 {
 
-// Function WBP_IngameQuestBoardListSet.WBP_IngameQuestBoardListSet_C.AddBlockWidget
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalQuestBlock*                   QuestBlock                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function WBP_IngameQuestBoardListSet.WBP_IngameQuestBoardListSet_C.UpdateQuest
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_IngameQuestBoardListSet_C::AddBlockWidget(class UPalQuestBlock* QuestBlock)
+void UWBP_IngameQuestBoardListSet_C::UpdateQuest()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameQuestBoardListSet_C", "AddBlockWidget");
-
-	Params::WBP_IngameQuestBoardListSet_C_AddBlockWidget Parms{};
-
-	Parms.QuestBlock = QuestBlock;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameQuestBoardListSet.WBP_IngameQuestBoardListSet_C.CompleteQuest
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameQuestBoardListSet_C::CompleteQuest()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameQuestBoardListSet_C", "CompleteQuest");
+		Func = Class->GetFunction("WBP_IngameQuestBoardListSet_C", "UpdateQuest");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_IngameQuestBoardListSet.WBP_IngameQuestBoardListSet_C.GetQuestId
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_IngameQuestBoardListSet.WBP_IngameQuestBoardListSet_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName*                            QuestId                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalQuestData*                    QuestData                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameQuestBoardListSet_C::GetQuestId(class FName* QuestId)
+void UWBP_IngameQuestBoardListSet_C::Setup(class UPalQuestData* QuestData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameQuestBoardListSet_C", "GetQuestId");
+		Func = Class->GetFunction("WBP_IngameQuestBoardListSet_C", "Setup");
 
-	Params::WBP_IngameQuestBoardListSet_C_GetQuestId Parms{};
+	Params::WBP_IngameQuestBoardListSet_C_Setup Parms{};
+
+	Parms.QuestData = QuestData;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	if (QuestId != nullptr)
-		*QuestId = Parms.QuestId;
+
+// Function WBP_IngameQuestBoardListSet.WBP_IngameQuestBoardListSet_C.OnEndBlockEndAnim
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_Ingame_QuestBoard_List_C*    Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameQuestBoardListSet_C::OnEndBlockEndAnim(class UWBP_Ingame_QuestBoard_List_C* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameQuestBoardListSet_C", "OnEndBlockEndAnim");
+
+	Params::WBP_IngameQuestBoardListSet_C_OnEndBlockEndAnim Parms{};
+
+	Parms.Widget = Widget;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -93,57 +92,58 @@ void UWBP_IngameQuestBoardListSet_C::GetSortedQuestBlocks(TArray<class UPalQuest
 }
 
 
-// Function WBP_IngameQuestBoardListSet.WBP_IngameQuestBoardListSet_C.OnEndBlockEndAnim
+// Function WBP_IngameQuestBoardListSet.WBP_IngameQuestBoardListSet_C.GetQuestId
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class FName*                            QuestId                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameQuestBoardListSet_C::GetQuestId(class FName* QuestId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameQuestBoardListSet_C", "GetQuestId");
+
+	Params::WBP_IngameQuestBoardListSet_C_GetQuestId Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (QuestId != nullptr)
+		*QuestId = Parms.QuestId;
+}
+
+
+// Function WBP_IngameQuestBoardListSet.WBP_IngameQuestBoardListSet_C.CompleteQuest
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_Ingame_QuestBoard_List_C*    Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameQuestBoardListSet_C::OnEndBlockEndAnim(class UWBP_Ingame_QuestBoard_List_C* Widget)
+void UWBP_IngameQuestBoardListSet_C::CompleteQuest()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameQuestBoardListSet_C", "OnEndBlockEndAnim");
-
-	Params::WBP_IngameQuestBoardListSet_C_OnEndBlockEndAnim Parms{};
-
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameQuestBoardListSet.WBP_IngameQuestBoardListSet_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalQuestData*                    QuestData                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameQuestBoardListSet_C::Setup(class UPalQuestData* QuestData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameQuestBoardListSet_C", "Setup");
-
-	Params::WBP_IngameQuestBoardListSet_C_Setup Parms{};
-
-	Parms.QuestData = QuestData;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameQuestBoardListSet.WBP_IngameQuestBoardListSet_C.UpdateQuest
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameQuestBoardListSet_C::UpdateQuest()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameQuestBoardListSet_C", "UpdateQuest");
+		Func = Class->GetFunction("WBP_IngameQuestBoardListSet_C", "CompleteQuest");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameQuestBoardListSet.WBP_IngameQuestBoardListSet_C.AddBlockWidget
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalQuestBlock*                   QuestBlock                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameQuestBoardListSet_C::AddBlockWidget(class UPalQuestBlock* QuestBlock)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameQuestBoardListSet_C", "AddBlockWidget");
+
+	Params::WBP_IngameQuestBoardListSet_C_AddBlockWidget Parms{};
+
+	Parms.QuestBlock = QuestBlock;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

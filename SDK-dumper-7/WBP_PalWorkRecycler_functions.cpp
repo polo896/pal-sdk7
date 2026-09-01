@@ -17,288 +17,45 @@
 namespace SDK
 {
 
-// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.AnmEvent_BoostOff
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalWorkRecycler_C::AnmEvent_BoostOff()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "AnmEvent_BoostOff");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.AnmEvent_BoostOn
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalWorkRecycler_C::AnmEvent_BoostOn()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "AnmEvent_BoostOn");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.AnmEvent_ForceSimple
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalWorkRecycler_C::AnmEvent_ForceSimple()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "AnmEvent_ForceSimple");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.AnmEvent_Full
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalWorkRecycler_C::AnmEvent_Full()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "AnmEvent_Full");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.AnmEvent_NoRecipe
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalWorkRecycler_C::AnmEvent_NoRecipe()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "AnmEvent_NoRecipe");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.AnmEvent_NotFull
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalWorkRecycler_C::AnmEvent_NotFull()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "AnmEvent_NotFull");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.AnmEvent_ToDetail
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalWorkRecycler_C::AnmEvent_ToDetail()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "AnmEvent_ToDetail");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.AnmEvent_ToSimpleDetail
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalWorkRecycler_C::AnmEvent_ToSimpleDetail()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "AnmEvent_ToSimpleDetail");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PalWorkRecycler_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.ExecuteUbergraph_WBP_PalWorkRecycler
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.UpdateRequireInfo
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalWorkBase*                     Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData>&DisplayData                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_PalWorkRecycler_C::ExecuteUbergraph_WBP_PalWorkRecycler(int32 EntryPoint)
+void UWBP_PalWorkRecycler_C::UpdateRequireInfo(class UPalWorkBase* Work, TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData>& DisplayData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "ExecuteUbergraph_WBP_PalWorkRecycler");
+		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "UpdateRequireInfo");
 
-	Params::WBP_PalWorkRecycler_C_ExecuteUbergraph_WBP_PalWorkRecycler Parms{};
+	Params::WBP_PalWorkRecycler_C_UpdateRequireInfo Parms{};
 
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.IsCharacterAssignedFixedToTargetWork
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UPalCharacterParameterComponent*  TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// const struct FGuid&                     WorkId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-bool UWBP_PalWorkRecycler_C::IsCharacterAssignedFixedToTargetWork(class UPalCharacterParameterComponent* TargetCharacter, const struct FGuid& WorkId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "IsCharacterAssignedFixedToTargetWork");
-
-	Params::WBP_PalWorkRecycler_C_IsCharacterAssignedFixedToTargetWork Parms{};
-
-	Parms.TargetCharacter = TargetCharacter;
-	Parms.WorkId = std::move(WorkId);
+	Parms.Work = Work;
+	Parms.DisplayData = std::move(DisplayData);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	return Parms.ReturnValue;
+	DisplayData = std::move(Parms.DisplayData);
 }
 
 
-// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PalWorkRecycler_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.SetActiveBoost
+// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.SetWorkProgressRate
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bActive                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Rate                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalWorkRecycler_C::SetActiveBoost(bool bActive)
+void UWBP_PalWorkRecycler_C::SetWorkProgressRate(double Rate)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "SetActiveBoost");
+		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "SetWorkProgressRate");
 
-	Params::WBP_PalWorkRecycler_C_SetActiveBoost Parms{};
+	Params::WBP_PalWorkRecycler_C_SetWorkProgressRate Parms{};
 
-	Parms.bActive = bActive;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.SetBoostSpeed
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   SpeedMultiplier                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalWorkRecycler_C::SetBoostSpeed(float SpeedMultiplier)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "SetBoostSpeed");
-
-	Params::WBP_PalWorkRecycler_C_SetBoostSpeed Parms{};
-
-	Parms.SpeedMultiplier = SpeedMultiplier;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.SetFullOutputState
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bFull                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bForce                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalWorkRecycler_C::SetFullOutputState(bool bFull, bool bForce)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "SetFullOutputState");
-
-	Params::WBP_PalWorkRecycler_C_SetFullOutputState Parms{};
-
-	Parms.bFull = bFull;
-	Parms.bForce = bForce;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.SetPowerState
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsOn                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalWorkRecycler_C::SetPowerState(bool bIsOn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "SetPowerState");
-
-	Params::WBP_PalWorkRecycler_C_SetPowerState Parms{};
-
-	Parms.bIsOn = bIsOn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.SetProductItemID
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ItemId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalWorkRecycler_C::SetProductItemID(class FName ItemId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "SetProductItemID");
-
-	Params::WBP_PalWorkRecycler_C_SetProductItemID Parms{};
-
-	Parms.ItemId = ItemId;
+	Parms.Rate = Rate;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -328,47 +85,290 @@ void UWBP_PalWorkRecycler_C::SetWorkerPalSlots(TArray<class UPalIndividualCharac
 }
 
 
-// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.SetWorkProgressRate
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.SetProductItemID
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  Rate                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ItemId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalWorkRecycler_C::SetWorkProgressRate(double Rate)
+void UWBP_PalWorkRecycler_C::SetProductItemID(class FName ItemId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "SetWorkProgressRate");
+		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "SetProductItemID");
 
-	Params::WBP_PalWorkRecycler_C_SetWorkProgressRate Parms{};
+	Params::WBP_PalWorkRecycler_C_SetProductItemID Parms{};
 
-	Parms.Rate = Rate;
+	Parms.ItemId = ItemId;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.UpdateRequireInfo
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.SetPowerState
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPalWorkBase*                     Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData>&DisplayData                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool                                    bIsOn                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalWorkRecycler_C::UpdateRequireInfo(class UPalWorkBase* Work, TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData>& DisplayData)
+void UWBP_PalWorkRecycler_C::SetPowerState(bool bIsOn)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "UpdateRequireInfo");
+		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "SetPowerState");
 
-	Params::WBP_PalWorkRecycler_C_UpdateRequireInfo Parms{};
+	Params::WBP_PalWorkRecycler_C_SetPowerState Parms{};
 
-	Parms.Work = Work;
-	Parms.DisplayData = std::move(DisplayData);
+	Parms.bIsOn = bIsOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.SetFullOutputState
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bFull                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bForce                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWorkRecycler_C::SetFullOutputState(bool bFull, bool bForce)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "SetFullOutputState");
+
+	Params::WBP_PalWorkRecycler_C_SetFullOutputState Parms{};
+
+	Parms.bFull = bFull;
+	Parms.bForce = bForce;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.SetBoostSpeed
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   SpeedMultiplier                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWorkRecycler_C::SetBoostSpeed(float SpeedMultiplier)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "SetBoostSpeed");
+
+	Params::WBP_PalWorkRecycler_C_SetBoostSpeed Parms{};
+
+	Parms.SpeedMultiplier = SpeedMultiplier;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.SetActiveBoost
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bActive                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWorkRecycler_C::SetActiveBoost(bool bActive)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "SetActiveBoost");
+
+	Params::WBP_PalWorkRecycler_C_SetActiveBoost Parms{};
+
+	Parms.bActive = bActive;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_PalWorkRecycler_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.IsCharacterAssignedFixedToTargetWork
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UPalCharacterParameterComponent*  TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     WorkId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UWBP_PalWorkRecycler_C::IsCharacterAssignedFixedToTargetWork(class UPalCharacterParameterComponent* TargetCharacter, const struct FGuid& WorkId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "IsCharacterAssignedFixedToTargetWork");
+
+	Params::WBP_PalWorkRecycler_C_IsCharacterAssignedFixedToTargetWork Parms{};
+
+	Parms.TargetCharacter = TargetCharacter;
+	Parms.WorkId = std::move(WorkId);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	DisplayData = std::move(Parms.DisplayData);
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.ExecuteUbergraph_WBP_PalWorkRecycler
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWorkRecycler_C::ExecuteUbergraph_WBP_PalWorkRecycler(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "ExecuteUbergraph_WBP_PalWorkRecycler");
+
+	Params::WBP_PalWorkRecycler_C_ExecuteUbergraph_WBP_PalWorkRecycler Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_PalWorkRecycler_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.AnmEvent_ToSimpleDetail
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalWorkRecycler_C::AnmEvent_ToSimpleDetail()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "AnmEvent_ToSimpleDetail");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.AnmEvent_ToDetail
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalWorkRecycler_C::AnmEvent_ToDetail()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "AnmEvent_ToDetail");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.AnmEvent_NotFull
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalWorkRecycler_C::AnmEvent_NotFull()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "AnmEvent_NotFull");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.AnmEvent_NoRecipe
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalWorkRecycler_C::AnmEvent_NoRecipe()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "AnmEvent_NoRecipe");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.AnmEvent_Full
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalWorkRecycler_C::AnmEvent_Full()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "AnmEvent_Full");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.AnmEvent_ForceSimple
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalWorkRecycler_C::AnmEvent_ForceSimple()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "AnmEvent_ForceSimple");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.AnmEvent_BoostOn
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalWorkRecycler_C::AnmEvent_BoostOn()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "AnmEvent_BoostOn");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalWorkRecycler.WBP_PalWorkRecycler_C.AnmEvent_BoostOff
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalWorkRecycler_C::AnmEvent_BoostOff()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkRecycler_C", "AnmEvent_BoostOff");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

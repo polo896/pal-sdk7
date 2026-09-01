@@ -54,25 +54,25 @@ public:
 	bool                                          HasEmptySlot_;                                     // 0x0538(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_Trading_Pal_Buy_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
-	void BndEvt__WBP_Trading_Pal_Buy_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void CheckTradeable();
-	void Destruct();
-	void ExecuteUbergraph_WBP_Trading_Pal_Buy(int32 EntryPoint);
-	void On_Character_Container_Update(class UPalIndividualCharacterContainer* CharacterContainer);
-	void OnCancelAction();
-	void OnInitialized();
-	void OnSetup();
-	void OnStoreSlotUpdate(class UPalIndividualCharacterSlot* Slot_0, class UPalIndividualCharacterHandle* LastHandle);
-	void OnTradeComplete(class APalPlayerState* PlayerState);
-	void OnTradeHovered(int32 TradeIndex);
-	void OnTradeSelected(int32 Index_0);
-	void OnTradeUnhovered(int32 TradeIndex);
-	void OnViewDetailInput();
-	void Set_Detail_Enable(bool IsEnable);
-	void Setup();
-	void Switch_Trading_Panel(bool Visible);
 	void UpdateSellList();
+	void Switch_Trading_Panel(bool Visible);
+	void Setup();
+	void Set_Detail_Enable(bool IsEnable);
+	void OnViewDetailInput();
+	void OnTradeUnhovered(int32 TradeIndex);
+	void OnTradeSelected(int32 Index_0);
+	void OnTradeHovered(int32 TradeIndex);
+	void OnTradeComplete(class APalPlayerState* PlayerState);
+	void OnStoreSlotUpdate(class UPalIndividualCharacterSlot* Slot_0, class UPalIndividualCharacterHandle* LastHandle);
+	void OnSetup();
+	void OnInitialized();
+	void OnCancelAction();
+	void On_Character_Container_Update(class UPalIndividualCharacterContainer* CharacterContainer);
+	void ExecuteUbergraph_WBP_Trading_Pal_Buy(int32 EntryPoint);
+	void Destruct();
+	void CheckTradeable();
+	void BndEvt__WBP_Trading_Pal_Buy_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
+	void BndEvt__WBP_Trading_Pal_Buy_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

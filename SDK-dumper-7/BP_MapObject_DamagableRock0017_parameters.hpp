@@ -25,6 +25,15 @@ public:
 };
 DUMPER7_ASSERTS_BP_MapObject_DamagableRock0017_C_ExecuteUbergraph_BP_MapObject_DamagableRock0017;
 
+// Function BP_MapObject_DamagableRock0017.BP_MapObject_DamagableRock0017_C.IsShowOutlineInReticleTargetting
+// 0x0001 (0x0001 - 0x0000)
+struct BP_MapObject_DamagableRock0017_C_IsShowOutlineInReticleTargetting final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_MapObject_DamagableRock0017_C_IsShowOutlineInReticleTargetting;
+
 // Function BP_MapObject_DamagableRock0017.BP_MapObject_DamagableRock0017_C.GetObjectPoolParameter
 // 0x0040 (0x0040 - 0x0000)
 struct BP_MapObject_DamagableRock0017_C_GetObjectPoolParameter final
@@ -34,15 +43,6 @@ public:
 	struct FPalObjectPoolParameter                K2Node_MakeStruct_PalObjectPoolParameter;          // 0x0020(0x0020)(NoDestructor)
 };
 DUMPER7_ASSERTS_BP_MapObject_DamagableRock0017_C_GetObjectPoolParameter;
-
-// Function BP_MapObject_DamagableRock0017.BP_MapObject_DamagableRock0017_C.IsShowOutlineInReticleTargetting
-// 0x0001 (0x0001 - 0x0000)
-struct BP_MapObject_DamagableRock0017_C_IsShowOutlineInReticleTargetting final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_MapObject_DamagableRock0017_C_IsShowOutlineInReticleTargetting;
 
 }
 

@@ -21,12 +21,12 @@ namespace SDK
 class UBP_ActionSleepPlayerBedOnSide_C final : public UBP_ActionSleepPlayerBed_C
 {
 public:
-	void BindInteractEvent(class APalPlayerController* LocalPlayerController);
-	void GetMontageSleepLoop(class UAnimMontage** Montage);
-	void InvokePhotoMode();
-	void OnSleepLoopStart();
-	void RequestStartSleep();
 	void UnbindInteractEvent(class APalPlayerController* LocalPlayerController);
+	void RequestStartSleep();
+	void OnSleepLoopStart();
+	void InvokePhotoMode();
+	void GetMontageSleepLoop(class UAnimMontage** Montage);
+	void BindInteractEvent(class APalPlayerController* LocalPlayerController);
 
 public:
 	static class UClass* StaticClass()

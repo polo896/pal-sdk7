@@ -14,15 +14,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_InventoryEquipment_InventoryTabButton.WBP_InventoryEquipment_InventoryTabButton_C.BndEvt__WBP_InventoryEquipment_InventoryTabButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_InventoryEquipment_InventoryTabButton_C_BndEvt__WBP_InventoryEquipment_InventoryTabButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InventoryEquipment_InventoryTabButton_C_BndEvt__WBP_InventoryEquipment_InventoryTabButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature;
-
 // Function WBP_InventoryEquipment_InventoryTabButton.WBP_InventoryEquipment_InventoryTabButton_C.ExecuteUbergraph_WBP_InventoryEquipment_InventoryTabButton
 // 0x0038 (0x0038 - 0x0000)
 struct WBP_InventoryEquipment_InventoryTabButton_C_ExecuteUbergraph_WBP_InventoryEquipment_InventoryTabButton final
@@ -36,6 +27,15 @@ public:
 	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_InventoryEquipment_InventoryTabButton_C_ExecuteUbergraph_WBP_InventoryEquipment_InventoryTabButton;
+
+// Function WBP_InventoryEquipment_InventoryTabButton.WBP_InventoryEquipment_InventoryTabButton_C.BndEvt__WBP_InventoryEquipment_InventoryTabButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_InventoryEquipment_InventoryTabButton_C_BndEvt__WBP_InventoryEquipment_InventoryTabButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InventoryEquipment_InventoryTabButton_C_BndEvt__WBP_InventoryEquipment_InventoryTabButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature;
 
 }
 

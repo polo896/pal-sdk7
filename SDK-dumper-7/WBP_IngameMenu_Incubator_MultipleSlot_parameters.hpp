@@ -18,25 +18,69 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.BndEvt__WBP_IngameMenu_Incubator_MultipleSlot_WBP_PalInGameMenuItemSlotButton_K2Node_ComponentBoundEvent_0_OnRightClickedButton__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameMenu_Incubator_MultipleSlot_C_BndEvt__WBP_IngameMenu_Incubator_MultipleSlot_WBP_PalInGameMenuItemSlotButton_K2Node_ComponentBoundEvent_0_OnRightClickedButton__DelegateSignature final
+// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.SetupEgg
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_Incubator_MultipleSlot_C_SetupEgg final
 {
 public:
-	class UWBP_PalItemSlotButtonBase_C*           ButtonBase;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalWorkProgress*                       WorkProgress;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Incubator_MultipleSlot_C_BndEvt__WBP_IngameMenu_Incubator_MultipleSlot_WBP_PalInGameMenuItemSlotButton_K2Node_ComponentBoundEvent_0_OnRightClickedButton__DelegateSignature;
+DUMPER7_ASSERTS_WBP_IngameMenu_Incubator_MultipleSlot_C_SetupEgg;
 
-// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.BndEvt__WBP_IngameMenu_Incubator_MultipleSlot_WBP_PalInGameMenuItemSlotButton_K2Node_ComponentBoundEvent_1_OnClickedButton__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameMenu_Incubator_MultipleSlot_C_BndEvt__WBP_IngameMenu_Incubator_MultipleSlot_WBP_PalInGameMenuItemSlotButton_K2Node_ComponentBoundEvent_1_OnClickedButton__DelegateSignature final
+// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.SetSlot
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_Incubator_MultipleSlot_C_SetSlot final
 {
 public:
-	class UWBP_PalItemSlotButtonBase_C*           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalItemSlot*                           TargetSlot_0;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Incubator_MultipleSlot_C_BndEvt__WBP_IngameMenu_Incubator_MultipleSlot_WBP_PalInGameMenuItemSlotButton_K2Node_ComponentBoundEvent_1_OnClickedButton__DelegateSignature;
+DUMPER7_ASSERTS_WBP_IngameMenu_Incubator_MultipleSlot_C_SetSlot;
+
+// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.OnSlotContentUpdate
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_IngameMenu_Incubator_MultipleSlot_C_OnSlotContentUpdate final
+{
+public:
+	class UPalItemSlot*                           Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetItemName_outName;                      // 0x0010(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Incubator_MultipleSlot_C_OnSlotContentUpdate;
+
+// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.On Update Work Amount
+// 0x01A0 (0x01A0 - 0x0000)
+struct WBP_IngameMenu_Incubator_MultipleSlot_C_On_Update_Work_Amount final
+{
+public:
+	class UPalWorkProgress*                       WorkProgress;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsCompleted_ReturnValue;                  // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetRemainWorkPredicateTime_ReturnValue;   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetProgressRate_ReturnValue;              // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Percent_IntInt_ReturnValue_1;             // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Divide_IntInt_ReturnValue;                // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0028(0x0018)()
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x0040(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0058(0x0050)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x00A8(0x0050)(HasGetValueTypeHash)
+	int32                                         CallFunc_Divide_IntInt_ReturnValue_1;              // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_FD[0x3];                                       // 0x00FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue_2;             // 0x0100(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x0118(0x0050)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0168(0x0010)(ReferenceParm)
+	bool                                          Temp_bool_Variable;                                // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_179[0x7];                                      // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0180(0x0018)()
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Incubator_MultipleSlot_C_On_Update_Work_Amount;
 
 // Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.ExecuteUbergraph_WBP_IngameMenu_Incubator_MultipleSlot
 // 0x0090 (0x0090 - 0x0000)
@@ -73,69 +117,25 @@ public:
 };
 DUMPER7_ASSERTS_WBP_IngameMenu_Incubator_MultipleSlot_C_ExecuteUbergraph_WBP_IngameMenu_Incubator_MultipleSlot;
 
-// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.On Update Work Amount
-// 0x01A0 (0x01A0 - 0x0000)
-struct WBP_IngameMenu_Incubator_MultipleSlot_C_On_Update_Work_Amount final
+// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.BndEvt__WBP_IngameMenu_Incubator_MultipleSlot_WBP_PalInGameMenuItemSlotButton_K2Node_ComponentBoundEvent_1_OnClickedButton__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameMenu_Incubator_MultipleSlot_C_BndEvt__WBP_IngameMenu_Incubator_MultipleSlot_WBP_PalInGameMenuItemSlotButton_K2Node_ComponentBoundEvent_1_OnClickedButton__DelegateSignature final
 {
 public:
-	class UPalWorkProgress*                       WorkProgress;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsCompleted_ReturnValue;                  // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetRemainWorkPredicateTime_ReturnValue;   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetProgressRate_ReturnValue;              // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Percent_IntInt_ReturnValue_1;             // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Divide_IntInt_ReturnValue;                // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0028(0x0018)()
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x0040(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0058(0x0050)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x00A8(0x0050)(HasGetValueTypeHash)
-	int32                                         CallFunc_Divide_IntInt_ReturnValue_1;              // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_FD[0x3];                                       // 0x00FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue_2;             // 0x0100(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x0118(0x0050)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0168(0x0010)(ReferenceParm)
-	bool                                          Temp_bool_Variable;                                // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_179[0x7];                                      // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0180(0x0018)()
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalItemSlotButtonBase_C*           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Incubator_MultipleSlot_C_On_Update_Work_Amount;
+DUMPER7_ASSERTS_WBP_IngameMenu_Incubator_MultipleSlot_C_BndEvt__WBP_IngameMenu_Incubator_MultipleSlot_WBP_PalInGameMenuItemSlotButton_K2Node_ComponentBoundEvent_1_OnClickedButton__DelegateSignature;
 
-// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.OnSlotContentUpdate
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_IngameMenu_Incubator_MultipleSlot_C_OnSlotContentUpdate final
+// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.BndEvt__WBP_IngameMenu_Incubator_MultipleSlot_WBP_PalInGameMenuItemSlotButton_K2Node_ComponentBoundEvent_0_OnRightClickedButton__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameMenu_Incubator_MultipleSlot_C_BndEvt__WBP_IngameMenu_Incubator_MultipleSlot_WBP_PalInGameMenuItemSlotButton_K2Node_ComponentBoundEvent_0_OnRightClickedButton__DelegateSignature final
 {
 public:
-	class UPalItemSlot*                           Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetItemName_outName;                      // 0x0010(0x0018)()
+	class UWBP_PalItemSlotButtonBase_C*           ButtonBase;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Incubator_MultipleSlot_C_OnSlotContentUpdate;
-
-// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.SetSlot
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_Incubator_MultipleSlot_C_SetSlot final
-{
-public:
-	class UPalItemSlot*                           TargetSlot_0;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Incubator_MultipleSlot_C_SetSlot;
-
-// Function WBP_IngameMenu_Incubator_MultipleSlot.WBP_IngameMenu_Incubator_MultipleSlot_C.SetupEgg
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_Incubator_MultipleSlot_C_SetupEgg final
-{
-public:
-	class UPalWorkProgress*                       WorkProgress;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Incubator_MultipleSlot_C_SetupEgg;
+DUMPER7_ASSERTS_WBP_IngameMenu_Incubator_MultipleSlot_C_BndEvt__WBP_IngameMenu_Incubator_MultipleSlot_WBP_PalInGameMenuItemSlotButton_K2Node_ComponentBoundEvent_0_OnRightClickedButton__DelegateSignature;
 
 }
 

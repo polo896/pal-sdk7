@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "AIModule_structs.hpp"
-#include "EPal_AI_AlertByKilledFriendState_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
+#include "EPal_AI_AlertByKilledFriendState_structs.hpp"
 
 
 namespace SDK::Params

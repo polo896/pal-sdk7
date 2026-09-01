@@ -17,21 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_WeightNotice.WBP_WeightNotice_C.ExecuteUbergraph_WBP_WeightNotice
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_WeightNotice.WBP_WeightNotice_C.UpdateWeight
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  NowWeight                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  MaxWeight                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_WeightNotice_C::ExecuteUbergraph_WBP_WeightNotice(int32 EntryPoint)
+void UWBP_WeightNotice_C::UpdateWeight(double NowWeight, double MaxWeight)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WeightNotice_C", "ExecuteUbergraph_WBP_WeightNotice");
+		Func = Class->GetFunction("WBP_WeightNotice_C", "UpdateWeight");
 
-	Params::WBP_WeightNotice_C_ExecuteUbergraph_WBP_WeightNotice Parms{};
+	Params::WBP_WeightNotice_C_UpdateWeight Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.NowWeight = NowWeight;
+	Parms.MaxWeight = MaxWeight;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -51,23 +53,21 @@ void UWBP_WeightNotice_C::UpdateVisibility()
 }
 
 
-// Function WBP_WeightNotice.WBP_WeightNotice_C.UpdateWeight
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_WeightNotice.WBP_WeightNotice_C.ExecuteUbergraph_WBP_WeightNotice
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// double                                  NowWeight                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  MaxWeight                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_WeightNotice_C::UpdateWeight(double NowWeight, double MaxWeight)
+void UWBP_WeightNotice_C::ExecuteUbergraph_WBP_WeightNotice(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WeightNotice_C", "UpdateWeight");
+		Func = Class->GetFunction("WBP_WeightNotice_C", "ExecuteUbergraph_WBP_WeightNotice");
 
-	Params::WBP_WeightNotice_C_UpdateWeight Parms{};
+	Params::WBP_WeightNotice_C_ExecuteUbergraph_WBP_WeightNotice Parms{};
 
-	Parms.NowWeight = NowWeight;
-	Parms.MaxWeight = MaxWeight;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

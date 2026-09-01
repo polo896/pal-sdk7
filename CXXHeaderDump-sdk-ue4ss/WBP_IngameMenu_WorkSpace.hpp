@@ -64,8 +64,8 @@ class UWBP_IngameMenu_WorkSpace_C : public UPalUIPaldex
     TArray<EPalItemTypeA> CurrentExcludeItemTypeB;                                    // 0x06D0 (size: 0x10)
     bool bIsFiltered;                                                                 // 0x06E0 (size: 0x1)
     TArray<FName> CachedRecipeIds;                                                    // 0x06E8 (size: 0x10)
-    TMap<class FName, class UWBP_PalConvertItemMenu_RecipeSlotButton_C*> RecipeSlorButtonMap; // 0x06F8 (size: 0x50)
-    TMap<class FName, class UBP_RecipeSlotButtonEntryData_C*> EntryDataMap;           // 0x0748 (size: 0x50)
+    TMap<FName, UWBP_PalConvertItemMenu_RecipeSlotButton_C*> RecipeSlorButtonMap;     // 0x06F8 (size: 0x50)
+    TMap<FName, UBP_RecipeSlotButtonEntryData_C*> EntryDataMap;                       // 0x0748 (size: 0x50)
     class UBP_RecipeSlotButtonEntryData_C* LastHoveredEntryItem;                      // 0x0798 (size: 0x8)
     FName FirstRecipeID;                                                              // 0x07A0 (size: 0x8)
 

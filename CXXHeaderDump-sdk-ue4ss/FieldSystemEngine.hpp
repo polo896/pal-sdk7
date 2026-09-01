@@ -4,8 +4,8 @@
 struct FFieldObjectCommands
 {
     TArray<FName> TargetNames;                                                        // 0x0000 (size: 0x10)
-    TArray<class UFieldNodeBase*> RootNodes;                                          // 0x0010 (size: 0x10)
-    TArray<class UFieldSystemMetaData*> MetaDatas;                                    // 0x0020 (size: 0x10)
+    TArray<UFieldNodeBase*> RootNodes;                                                // 0x0010 (size: 0x10)
+    TArray<UFieldSystemMetaData*> MetaDatas;                                          // 0x0020 (size: 0x10)
 
 }; // Size: 0x30
 
@@ -61,7 +61,7 @@ class UFieldSystemComponent : public UPrimitiveComponent
     class UFieldSystem* FieldSystem;                                                  // 0x0538 (size: 0x8)
     bool bIsWorldField;                                                               // 0x0540 (size: 0x1)
     bool bIsChaosField;                                                               // 0x0541 (size: 0x1)
-    TArray<TSoftObjectPtr<AChaosSolverActor>> SupportedSolvers;                       // 0x0548 (size: 0x10)
+    TArray<TSoftObjectPtr<class AChaosSolverActor>> SupportedSolvers;                 // 0x0548 (size: 0x10)
     FFieldObjectCommands ConstructionCommands;                                        // 0x0558 (size: 0x30)
     FFieldObjectCommands BufferCommands;                                              // 0x0588 (size: 0x30)
 

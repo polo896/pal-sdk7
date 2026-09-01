@@ -16,6 +16,19 @@
 namespace SDK::Params
 {
 
+// Function WBP_Arena_PlayerRank.WBP_Arena_PlayerRank_C.Setup
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_Arena_PlayerRank_C_Setup final
+{
+public:
+	TDelegate<void(class UPalIndividualCharacterParameter* IndividualParameter, int32 NewArenaRankPoint)> K2Node_CreateDelegate_OutputDelegate; // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterParameter*       CallFunc_GetIndividualParameter_ReturnValue;       // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetArenaRankPoint_ReturnValue;            // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Arena_PlayerRank_C_Setup;
+
 // Function WBP_Arena_PlayerRank.WBP_Arena_PlayerRank_C.OnUpdateRankPoint
 // 0x0208 (0x0208 - 0x0000)
 struct WBP_Arena_PlayerRank_C_OnUpdateRankPoint final
@@ -49,19 +62,6 @@ public:
 	TSoftObjectPtr<class UTexture2D>              K2Node_Select_Default_1;                           // 0x01D8(0x0030)(UObjectWrapper, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Arena_PlayerRank_C_OnUpdateRankPoint;
-
-// Function WBP_Arena_PlayerRank.WBP_Arena_PlayerRank_C.Setup
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_Arena_PlayerRank_C_Setup final
-{
-public:
-	TDelegate<void(class UPalIndividualCharacterParameter* IndividualParameter, int32 NewArenaRankPoint)> K2Node_CreateDelegate_OutputDelegate; // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalIndividualCharacterParameter*       CallFunc_GetIndividualParameter_ReturnValue;       // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetArenaRankPoint_ReturnValue;            // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Arena_PlayerRank_C_Setup;
 
 }
 

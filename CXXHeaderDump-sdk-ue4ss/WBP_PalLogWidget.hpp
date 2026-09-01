@@ -10,22 +10,22 @@ class UWBP_PalLogWidget_C : public UPalLogWidget
     class UScrollBox* ScrollBox_NormalLog;                                            // 0x0470 (size: 0x8)
     class UVerticalBox* VerticalBox_KillDeathLog;                                     // 0x0478 (size: 0x8)
     class UBorder* VeryImportantBorder;                                               // 0x0480 (size: 0x8)
-    TArray<class UPalLogWidgetBase*> NormalLogList;                                   // 0x0488 (size: 0x10)
-    TArray<class UPalLogWidgetBase*> ImportantLogList;                                // 0x0498 (size: 0x10)
+    TArray<UPalLogWidgetBase*> NormalLogList;                                         // 0x0488 (size: 0x10)
+    TArray<UPalLogWidgetBase*> ImportantLogList;                                      // 0x0498 (size: 0x10)
     double MoveTime;                                                                  // 0x04A8 (size: 0x8)
     int32 MaxDisplayImportantLog;                                                     // 0x04B0 (size: 0x4)
     FSoftObjectPath Icon Path;                                                        // 0x04B8 (size: 0x20)
-    TMap<class FGuid, class UPalLogWidgetBase*> veryImportantLogMap;                  // 0x04D8 (size: 0x50)
+    TMap<FGuid, UPalLogWidgetBase*> veryImportantLogMap;                              // 0x04D8 (size: 0x50)
     float Normal Log Display Time;                                                    // 0x0528 (size: 0x4)
     float Important Log Display Time;                                                 // 0x052C (size: 0x4)
     FGuid nowDisplayVeryImportantLog;                                                 // 0x0530 (size: 0x10)
     double veryImportantLogDisplayTime;                                               // 0x0540 (size: 0x8)
     double veryImportantLogDisplayTimer;                                              // 0x0548 (size: 0x8)
     TArray<FGuid> veryImportantLogIDArray;                                            // 0x0550 (size: 0x10)
-    TArray<class UWBP_Notice_Deathlog_C*> DeathLogList;                               // 0x0560 (size: 0x10)
+    TArray<UWBP_Notice_Deathlog_C*> DeathLogList;                                     // 0x0560 (size: 0x10)
     float Death Log Short Display Time;                                               // 0x0570 (size: 0x4)
     float Death Log Long Display Time;                                                // 0x0574 (size: 0x4)
-    TArray<class UWBP_Notice_Deathlog_C*> KillLogList;                                // 0x0578 (size: 0x10)
+    TArray<UWBP_Notice_Deathlog_C*> KillLogList;                                      // 0x0578 (size: 0x10)
 
     void CREATEDELEGATE_PROXYFUNCTION_0(const FPalKillLogDisplayData& DeathLogDisplayData);
     void OnKillLogEnd(class UWBP_Notice_Deathlog_C* EndedLog);
@@ -38,7 +38,7 @@ class UWBP_PalLogWidget_C : public UPalLogWidget
     void OnAddedVeryImportantLog(const FGuid& logId, const FText& LogText, const FPalLogAdditionalData& logAdditionalData);
     void CreateLogWidget(TSubclassOf<class UPalLogWidgetBase> logWidgeClass, FText Text, FPalLogAdditionalData AdditionalData, class UPalLogWidgetBase*& createdWidget);
     void CheckImportantLog(bool& IsRemoved);
-    void CheckRemoveLog(const TArray<class UPalLogWidgetBase*>& TargetArray, bool& Removed);
+    void CheckRemoveLog(const TArray<UPalLogWidgetBase*>& TargetArray, bool& Removed);
     void SetupWidgetTranslation(class UPalLogWidgetBase* TargetWidget, class UCanvasPanelSlot* relationSlot);
     void OnAddedImportantLog(const FText& LogText, const FPalLogAdditionalData& logAdditionalData);
     void On Added Normal Log(const FText& LogText, const FPalLogAdditionalData& logAdditionalData);

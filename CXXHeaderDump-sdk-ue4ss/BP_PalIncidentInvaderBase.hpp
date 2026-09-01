@@ -4,7 +4,7 @@
 class UBP_PalIncidentInvaderBase_C : public UPalInvaderIncidentBase
 {
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x02F0 (size: 0x8)
-    TArray<class UPalIndividualCharacterHandle*> IndividualHandleList;                // 0x02F8 (size: 0x10)
+    TArray<UPalIndividualCharacterHandle*> IndividualHandleList;                      // 0x02F8 (size: 0x10)
     FVector MarchStartPoint;                                                          // 0x0308 (size: 0x18)
     int32 MemberCount;                                                                // 0x0320 (size: 0x4)
     int32 SpawnedCount;                                                               // 0x0324 (size: 0x4)
@@ -12,8 +12,8 @@ class UBP_PalIncidentInvaderBase_C : public UPalInvaderIncidentBase
     class ABP_DummyNavigationInvoker_C* DummyNav_Goal;                                // 0x0330 (size: 0x8)
     FVector CashedBaseCampLocation;                                                   // 0x0338 (size: 0x18)
     bool IsBaseCampLocationCashed;                                                    // 0x0350 (size: 0x1)
-    TArray<class UPalIndividualCharacterHandle*> OtomoHandleList;                     // 0x0358 (size: 0x10)
-    TMap<class UPalIndividualCharacterHandle*, class FName> OtomoNameMap;             // 0x0368 (size: 0x50)
+    TArray<UPalIndividualCharacterHandle*> OtomoHandleList;                           // 0x0358 (size: 0x10)
+    TMap<UPalIndividualCharacterHandle*, FName> OtomoNameMap;                         // 0x0368 (size: 0x50)
 
     void ClearInvaderCompassIcon();
     void OnOtomoActivated(class APalCharacter* Otomo, bool IsActive);
@@ -27,7 +27,7 @@ class UBP_PalIncidentInvaderBase_C : public UPalInvaderIncidentBase
     TSubclassOf<class APalAIController> GetNPCAIControllerClass(const FPalInvaderSpawnCharacterParameter& SpawnParameter);
     void IsSquad(bool& Result);
     void GetStartLocation(FVector& StartLocation);
-    void OnAllCharacterSpawned(TArray<class APalAIController*>& MemberController);
+    void OnAllCharacterSpawned(TArray<APalAIController*>& MemberController);
     void OnCharacterSpawned(class APalCharacter* SpawnedCharacter);
     void Get Character Location Type(EPalCharacterLocationType& CharacterLocationType);
     void SpawnMemberCharacters(FVector StartLocation);

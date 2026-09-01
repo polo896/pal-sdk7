@@ -30,7 +30,7 @@ class AStemSpline_BP_C : public AActor
     TArray<FSubStemStarter> subStemStarters;                                          // 0x0358 (size: 0x10)
     int32 currentAddingSubLevel;                                                      // 0x0368 (size: 0x4)
     int32 maxSubStemLevels;                                                           // 0x036C (size: 0x4)
-    TArray<class USplineComponent*> subStemSplines;                                   // 0x0370 (size: 0x10)
+    TArray<USplineComponent*> subStemSplines;                                         // 0x0370 (size: 0x10)
     double subStems_minGrowAlongLength;                                               // 0x0380 (size: 0x8)
     double subStems_maxGrowAlongLength;                                               // 0x0388 (size: 0x8)
     double subStemAngle;                                                              // 0x0390 (size: 0x8)

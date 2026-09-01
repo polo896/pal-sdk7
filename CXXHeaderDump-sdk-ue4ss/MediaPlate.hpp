@@ -21,7 +21,7 @@ class UMediaPlateComponent : public UActorComponent
     bool bIsAspectRatioAuto;                                                          // 0x00B0 (size: 0x1)
     class UMediaSoundComponent* SoundComponent;                                       // 0x00B8 (size: 0x8)
     class UStaticMeshComponent* StaticMeshComponent;                                  // 0x00C0 (size: 0x8)
-    TArray<class UStaticMeshComponent*> Letterboxes;                                  // 0x00C8 (size: 0x10)
+    TArray<UStaticMeshComponent*> Letterboxes;                                        // 0x00C8 (size: 0x10)
     class UMediaPlaylist* MediaPlaylist;                                              // 0x00D8 (size: 0x8)
     int32 PlaylistIndex;                                                              // 0x00E0 (size: 0x4)
     FMediaSourceCacheSettings CacheSettings;                                          // 0x00E4 (size: 0x8)

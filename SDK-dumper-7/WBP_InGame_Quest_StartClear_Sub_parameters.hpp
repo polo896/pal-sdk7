@@ -18,6 +18,44 @@
 namespace SDK::Params
 {
 
+// Function WBP_InGame_Quest_StartClear_Sub.WBP_InGame_Quest_StartClear_Sub_C.SetQuestName
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_InGame_Quest_StartClear_Sub_C_SetQuestName final
+{
+public:
+	class FText                                   InQuestName;                                       // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_InGame_Quest_StartClear_Sub_C_SetQuestName;
+
+// Function WBP_InGame_Quest_StartClear_Sub.WBP_InGame_Quest_StartClear_Sub_C.SetBindData
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_InGame_Quest_StartClear_Sub_C_SetBindData final
+{
+public:
+	struct FPalUIActionBindData                   BindData;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_InGame_Quest_StartClear_Sub_C_SetBindData;
+
+// Function WBP_InGame_Quest_StartClear_Sub.WBP_InGame_Quest_StartClear_Sub_C.GetStartQuestNotifyTime
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_InGame_Quest_StartClear_Sub_C_GetStartQuestNotifyTime final
+{
+public:
+	double                                        NewParam;                                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InGame_Quest_StartClear_Sub_C_GetStartQuestNotifyTime;
+
+// Function WBP_InGame_Quest_StartClear_Sub.WBP_InGame_Quest_StartClear_Sub_C.GetQuestNotifyTime
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_InGame_Quest_StartClear_Sub_C_GetQuestNotifyTime final
+{
+public:
+	double                                        NotifyTime;                                        // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InGame_Quest_StartClear_Sub_C_GetQuestNotifyTime;
+
 // Function WBP_InGame_Quest_StartClear_Sub.WBP_InGame_Quest_StartClear_Sub_C.ExecuteUbergraph_WBP_InGame_Quest_StartClear_Sub
 // 0x00A0 (0x00A0 - 0x0000)
 struct WBP_InGame_Quest_StartClear_Sub_C_ExecuteUbergraph_WBP_InGame_Quest_StartClear_Sub final
@@ -43,44 +81,6 @@ public:
 	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast_2;  // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_InGame_Quest_StartClear_Sub_C_ExecuteUbergraph_WBP_InGame_Quest_StartClear_Sub;
-
-// Function WBP_InGame_Quest_StartClear_Sub.WBP_InGame_Quest_StartClear_Sub_C.GetQuestNotifyTime
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_InGame_Quest_StartClear_Sub_C_GetQuestNotifyTime final
-{
-public:
-	double                                        NotifyTime;                                        // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InGame_Quest_StartClear_Sub_C_GetQuestNotifyTime;
-
-// Function WBP_InGame_Quest_StartClear_Sub.WBP_InGame_Quest_StartClear_Sub_C.GetStartQuestNotifyTime
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_InGame_Quest_StartClear_Sub_C_GetStartQuestNotifyTime final
-{
-public:
-	double                                        NewParam;                                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InGame_Quest_StartClear_Sub_C_GetStartQuestNotifyTime;
-
-// Function WBP_InGame_Quest_StartClear_Sub.WBP_InGame_Quest_StartClear_Sub_C.SetBindData
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_InGame_Quest_StartClear_Sub_C_SetBindData final
-{
-public:
-	struct FPalUIActionBindData                   BindData;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_InGame_Quest_StartClear_Sub_C_SetBindData;
-
-// Function WBP_InGame_Quest_StartClear_Sub.WBP_InGame_Quest_StartClear_Sub_C.SetQuestName
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_InGame_Quest_StartClear_Sub_C_SetQuestName final
-{
-public:
-	class FText                                   InQuestName;                                       // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_InGame_Quest_StartClear_Sub_C_SetQuestName;
 
 }
 

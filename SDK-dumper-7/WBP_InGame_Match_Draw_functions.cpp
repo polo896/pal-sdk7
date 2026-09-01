@@ -37,20 +37,6 @@ void UWBP_InGame_Match_Draw_C::ExecuteUbergraph_WBP_InGame_Match_Draw(int32 Entr
 }
 
 
-// Function WBP_InGame_Match_Draw.WBP_InGame_Match_Draw_C.SequenceEvent
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_InGame_Match_Draw_C::SequenceEvent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Match_Draw_C", "SequenceEvent");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_InGame_Match_Draw.WBP_InGame_Match_Draw_C.SequenceEvent__ENTRYPOINTWBP_InGame_Match_Draw
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -60,6 +46,20 @@ void UWBP_InGame_Match_Draw_C::SequenceEvent__ENTRYPOINTWBP_InGame_Match_Draw()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_InGame_Match_Draw_C", "SequenceEvent__ENTRYPOINTWBP_InGame_Match_Draw");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InGame_Match_Draw.WBP_InGame_Match_Draw_C.SequenceEvent
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_InGame_Match_Draw_C::SequenceEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGame_Match_Draw_C", "SequenceEvent");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

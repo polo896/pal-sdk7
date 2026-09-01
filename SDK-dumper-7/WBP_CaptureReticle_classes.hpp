@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "E_PalCaptureSphereBouncedReason_structs.hpp"
 #include "Engine_structs.hpp"
-#include "EPalCaptureReticleSeqence_structs.hpp"
+#include "E_PalCaptureSphereBouncedReason_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
+#include "EPalCaptureReticleSeqence_structs.hpp"
 #include "EPalSphereCaptureFailedReason_structs.hpp"
 
 
@@ -48,36 +48,36 @@ public:
 	TMap<E_PalCaptureSphereBouncedReason, EPalLogType> BouncedBallLogTypeMap;                        // 0x05B0(0x0050)(Edit, BlueprintVisible)
 
 public:
-	void CalcCaptureSuccessRate(TArray<double>& rateArray, double* successRate);
-	void ChangeSeqence(EPalCaptureReticleSeqence newSeqence);
-	void ConvertTrueRateArrayToDisplayRateArray(TArray<double>& TrueRate, TArray<double>* OutRate);
-	void ConvertTrueRateToDisplayRate(double TrueRate, double* OutRate);
-	void Destruct();
-	void DisplayCaptureFailedLog(class UPalIndividualCharacterHandle* targetHandle);
-	void ExecuteUbergraph_WBP_CaptureReticle(int32 EntryPoint);
-	void FindTargetCharacter(class APalMonsterCharacter** TargetMonster);
-	void GetAimingDisplayPercent(class APalWeaponBase* captureItemActor, class APalMonsterCharacter* TargetMonster, double* Rate, bool* isSneakBonus);
-	void IsBonusEnabled(const struct FVector& BaseLocation, class APalMonsterCharacter* targeActor, bool* Enabled);
-	void On_Change_Weapon(class APalWeaponBase* Weapon);
-	void On_Shake_Ball(class ABP_PalCaptureBodyBase_C* shakedBody);
-	void OnBouncedBall(E_PalCaptureSphereBouncedReason reasonType, class UPalIndividualCharacterHandle* targetHandle);
-	void OnCaptureBodyEndPlay(class AActor* Actor, EEndPlayReason EndPlayReason);
-	void OnFailedCapture(class UPalIndividualCharacterHandle* targetHandle, EPalSphereCaptureFailedReason failedReason);
-	void OnFailedPercentWidgetClear(class UWBP_CaptureFailedPercent_C* SelfWidget);
-	void OnInitialized();
-	void OnPassingJudge(int32 PhaseCount, class UPalIndividualCharacterHandle* targetHandle);
-	void OnSetup_AfterCreatedPlayer();
-	void OnStartedCapture(class AActor* createdBodyActor, class UPalIndividualCharacterHandle* targetHandle, bool bIsSneakBonus, bool bIsCriticalBonus);
-	void OnSuccessedCapture(class UPalIndividualCharacterHandle* targetHandle);
-	void OnThrowCaptureWeapon(class AActor* Bullet);
-	void RegisterWeaponEvent(class APalWeaponBase* NewWeapon);
-	void Set_Display_Capture_Rate(class APalMonsterCharacter* TargetMonster, class APalWeaponBase* WeaponBase);
-	void SetupAfterPlayerSpawned();
-	void ShouldReticleDIsplay(bool* ShouldDisplay);
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void Unregister_Weapon_Event();
-	void UpdateFailedWidgets(double DeltaTime);
 	void UpdateSecondStepWidgetPosition();
+	void UpdateFailedWidgets(double DeltaTime);
+	void Unregister_Weapon_Event();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void ShouldReticleDIsplay(bool* ShouldDisplay);
+	void SetupAfterPlayerSpawned();
+	void Set_Display_Capture_Rate(class APalMonsterCharacter* TargetMonster, class APalWeaponBase* WeaponBase);
+	void RegisterWeaponEvent(class APalWeaponBase* NewWeapon);
+	void OnThrowCaptureWeapon(class AActor* Bullet);
+	void OnSuccessedCapture(class UPalIndividualCharacterHandle* targetHandle);
+	void OnStartedCapture(class AActor* createdBodyActor, class UPalIndividualCharacterHandle* targetHandle, bool bIsSneakBonus, bool bIsCriticalBonus);
+	void OnSetup_AfterCreatedPlayer();
+	void OnPassingJudge(int32 PhaseCount, class UPalIndividualCharacterHandle* targetHandle);
+	void OnInitialized();
+	void OnFailedPercentWidgetClear(class UWBP_CaptureFailedPercent_C* SelfWidget);
+	void OnFailedCapture(class UPalIndividualCharacterHandle* targetHandle, EPalSphereCaptureFailedReason failedReason);
+	void OnCaptureBodyEndPlay(class AActor* Actor, EEndPlayReason EndPlayReason);
+	void OnBouncedBall(E_PalCaptureSphereBouncedReason reasonType, class UPalIndividualCharacterHandle* targetHandle);
+	void On_Shake_Ball(class ABP_PalCaptureBodyBase_C* shakedBody);
+	void On_Change_Weapon(class APalWeaponBase* Weapon);
+	void IsBonusEnabled(const struct FVector& BaseLocation, class APalMonsterCharacter* targeActor, bool* Enabled);
+	void GetAimingDisplayPercent(class APalWeaponBase* captureItemActor, class APalMonsterCharacter* TargetMonster, double* Rate, bool* isSneakBonus);
+	void FindTargetCharacter(class APalMonsterCharacter** TargetMonster);
+	void ExecuteUbergraph_WBP_CaptureReticle(int32 EntryPoint);
+	void DisplayCaptureFailedLog(class UPalIndividualCharacterHandle* targetHandle);
+	void Destruct();
+	void ConvertTrueRateToDisplayRate(double TrueRate, double* OutRate);
+	void ConvertTrueRateArrayToDisplayRateArray(TArray<double>& TrueRate, TArray<double>* OutRate);
+	void ChangeSeqence(EPalCaptureReticleSeqence newSeqence);
+	void CalcCaptureSuccessRate(TArray<double>& rateArray, double* successRate);
 
 public:
 	static class UClass* StaticClass()

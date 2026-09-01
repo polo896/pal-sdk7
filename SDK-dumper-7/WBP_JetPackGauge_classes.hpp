@@ -42,18 +42,18 @@ public:
 	bool                                          bAlreadyDisplay;                                   // 0x04C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Default();
-	void AnmEvent_In();
-	void AnmEvent_Low();
-	void AnmEvent_Out();
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_JetPackGauge(int32 EntryPoint);
-	void SetCurrentJetpackFuelThreshold(double Threshold);
-	void SetFuelItemName(class FName ItemName);
-	void SetFuelRate(double FuelRate);
-	void SetRemainFuelCount(int32 FuelCount);
 	void SetVisibilityFuelThresholdGauge(bool bVisible);
+	void SetRemainFuelCount(int32 FuelCount);
+	void SetFuelRate(double FuelRate);
+	void SetFuelItemName(class FName ItemName);
+	void SetCurrentJetpackFuelThreshold(double Threshold);
+	void ExecuteUbergraph_WBP_JetPackGauge(int32 EntryPoint);
+	void Destruct();
+	void Construct();
+	void AnmEvent_Out();
+	void AnmEvent_Low();
+	void AnmEvent_In();
+	void AnmEvent_Default();
 
 public:
 	static class UClass* StaticClass()

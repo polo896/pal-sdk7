@@ -17,37 +17,129 @@
 namespace SDK
 {
 
-// Function BP_SkillEffect_DoubleTornadoBase.BP_SkillEffect_DoubleTornadoBase_C.CancelShoot
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_SkillEffect_DoubleTornadoBase.BP_SkillEffect_DoubleTornadoBase_C.SpawnRightTornado
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_SkillEffect_DoubleTornadoBase_C::CancelShoot()
+void ABP_SkillEffect_DoubleTornadoBase_C::SpawnRightTornado()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkillEffect_DoubleTornadoBase_C", "CancelShoot");
+		Func = Class->GetFunction("BP_SkillEffect_DoubleTornadoBase_C", "SpawnRightTornado");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_SkillEffect_DoubleTornadoBase.BP_SkillEffect_DoubleTornadoBase_C.ExecuteUbergraph_BP_SkillEffect_DoubleTornadoBase
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_SkillEffect_DoubleTornadoBase.BP_SkillEffect_DoubleTornadoBase_C.SpawnLeftTornado
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_SkillEffect_DoubleTornadoBase_C::ExecuteUbergraph_BP_SkillEffect_DoubleTornadoBase(int32 EntryPoint)
+void ABP_SkillEffect_DoubleTornadoBase_C::SpawnLeftTornado()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkillEffect_DoubleTornadoBase_C", "ExecuteUbergraph_BP_SkillEffect_DoubleTornadoBase");
+		Func = Class->GetFunction("BP_SkillEffect_DoubleTornadoBase_C", "SpawnLeftTornado");
 
-	Params::BP_SkillEffect_DoubleTornadoBase_C_ExecuteUbergraph_BP_SkillEffect_DoubleTornadoBase Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function BP_SkillEffect_DoubleTornadoBase.BP_SkillEffect_DoubleTornadoBase_C.ShootTornado
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsLeft                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APalSkillEffectBase**             SkillEffect                                            (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SkillEffect_DoubleTornadoBase_C::ShootTornado(bool IsLeft, class APalSkillEffectBase** SkillEffect)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SkillEffect_DoubleTornadoBase_C", "ShootTornado");
+
+	Params::BP_SkillEffect_DoubleTornadoBase_C_ShootTornado Parms{};
+
+	Parms.IsLeft = IsLeft;
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (SkillEffect != nullptr)
+		*SkillEffect = Parms.SkillEffect;
+}
+
+
+// Function BP_SkillEffect_DoubleTornadoBase.BP_SkillEffect_DoubleTornadoBase_C.ShootBullet
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FVector&                   TargetLocation                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SkillEffect_DoubleTornadoBase_C::ShootBullet(const struct FVector& TargetLocation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SkillEffect_DoubleTornadoBase_C", "ShootBullet");
+
+	Params::BP_SkillEffect_DoubleTornadoBase_C_ShootBullet Parms{};
+
+	Parms.TargetLocation = std::move(TargetLocation);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SkillEffect_DoubleTornadoBase.BP_SkillEffect_DoubleTornadoBase_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SkillEffect_DoubleTornadoBase_C::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SkillEffect_DoubleTornadoBase_C", "ReceiveTick");
+
+	Params::BP_SkillEffect_DoubleTornadoBase_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SkillEffect_DoubleTornadoBase.BP_SkillEffect_DoubleTornadoBase_C.OnTornadoReady
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APalSkillEffectBase*              SkillEffect                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SkillEffect_DoubleTornadoBase_C::OnTornadoReady(class APalSkillEffectBase* SkillEffect)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SkillEffect_DoubleTornadoBase_C", "OnTornadoReady");
+
+	Params::BP_SkillEffect_DoubleTornadoBase_C_OnTornadoReady Parms{};
+
+	Parms.SkillEffect = SkillEffect;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SkillEffect_DoubleTornadoBase.BP_SkillEffect_DoubleTornadoBase_C.OnInitialize
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_SkillEffect_DoubleTornadoBase_C::OnInitialize()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SkillEffect_DoubleTornadoBase_C", "OnInitialize");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -87,127 +179,35 @@ void ABP_SkillEffect_DoubleTornadoBase_C::MoveToTargetLocation(class APalSkillEf
 }
 
 
-// Function BP_SkillEffect_DoubleTornadoBase.BP_SkillEffect_DoubleTornadoBase_C.OnInitialize
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_SkillEffect_DoubleTornadoBase.BP_SkillEffect_DoubleTornadoBase_C.ExecuteUbergraph_BP_SkillEffect_DoubleTornadoBase
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SkillEffect_DoubleTornadoBase_C::OnInitialize()
+void ABP_SkillEffect_DoubleTornadoBase_C::ExecuteUbergraph_BP_SkillEffect_DoubleTornadoBase(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkillEffect_DoubleTornadoBase_C", "OnInitialize");
+		Func = Class->GetFunction("BP_SkillEffect_DoubleTornadoBase_C", "ExecuteUbergraph_BP_SkillEffect_DoubleTornadoBase");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_SkillEffect_DoubleTornadoBase_C_ExecuteUbergraph_BP_SkillEffect_DoubleTornadoBase Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_SkillEffect_DoubleTornadoBase.BP_SkillEffect_DoubleTornadoBase_C.OnTornadoReady
+// Function BP_SkillEffect_DoubleTornadoBase.BP_SkillEffect_DoubleTornadoBase_C.CancelShoot
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class APalSkillEffectBase*              SkillEffect                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SkillEffect_DoubleTornadoBase_C::OnTornadoReady(class APalSkillEffectBase* SkillEffect)
+void ABP_SkillEffect_DoubleTornadoBase_C::CancelShoot()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkillEffect_DoubleTornadoBase_C", "OnTornadoReady");
-
-	Params::BP_SkillEffect_DoubleTornadoBase_C_OnTornadoReady Parms{};
-
-	Parms.SkillEffect = SkillEffect;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SkillEffect_DoubleTornadoBase.BP_SkillEffect_DoubleTornadoBase_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SkillEffect_DoubleTornadoBase_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkillEffect_DoubleTornadoBase_C", "ReceiveTick");
-
-	Params::BP_SkillEffect_DoubleTornadoBase_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SkillEffect_DoubleTornadoBase.BP_SkillEffect_DoubleTornadoBase_C.ShootBullet
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FVector&                   TargetLocation                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SkillEffect_DoubleTornadoBase_C::ShootBullet(const struct FVector& TargetLocation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkillEffect_DoubleTornadoBase_C", "ShootBullet");
-
-	Params::BP_SkillEffect_DoubleTornadoBase_C_ShootBullet Parms{};
-
-	Parms.TargetLocation = std::move(TargetLocation);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SkillEffect_DoubleTornadoBase.BP_SkillEffect_DoubleTornadoBase_C.ShootTornado
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsLeft                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class APalSkillEffectBase**             SkillEffect                                            (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SkillEffect_DoubleTornadoBase_C::ShootTornado(bool IsLeft, class APalSkillEffectBase** SkillEffect)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkillEffect_DoubleTornadoBase_C", "ShootTornado");
-
-	Params::BP_SkillEffect_DoubleTornadoBase_C_ShootTornado Parms{};
-
-	Parms.IsLeft = IsLeft;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (SkillEffect != nullptr)
-		*SkillEffect = Parms.SkillEffect;
-}
-
-
-// Function BP_SkillEffect_DoubleTornadoBase.BP_SkillEffect_DoubleTornadoBase_C.SpawnLeftTornado
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_SkillEffect_DoubleTornadoBase_C::SpawnLeftTornado()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkillEffect_DoubleTornadoBase_C", "SpawnLeftTornado");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SkillEffect_DoubleTornadoBase.BP_SkillEffect_DoubleTornadoBase_C.SpawnRightTornado
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_SkillEffect_DoubleTornadoBase_C::SpawnRightTornado()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkillEffect_DoubleTornadoBase_C", "SpawnRightTornado");
+		Func = Class->GetFunction("BP_SkillEffect_DoubleTornadoBase_C", "CancelShoot");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

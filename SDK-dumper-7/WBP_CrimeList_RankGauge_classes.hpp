@@ -30,9 +30,9 @@ public:
 	bool                                          bCurrentOn;                                        // 0x02A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Off();
-	void AnmEvent_Rankup();
 	void ExecuteUbergraph_WBP_CrimeList_RankGauge(int32 EntryPoint);
+	void AnmEvent_Rankup();
+	void AnmEvent_Off();
 
 public:
 	static class UClass* StaticClass()

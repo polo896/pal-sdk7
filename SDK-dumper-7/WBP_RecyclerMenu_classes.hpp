@@ -59,27 +59,27 @@ public:
 	class UPalWorkProgress*                       CurrentWorkProgress;                               // 0x0398(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_RecyclerMenu_WBP_Common_Inventory_K2Node_ComponentBoundEvent_6_OnClickedInventorySortButton__DelegateSignature();
-	void BndEvt__WBP_RecyclerMenu_WBP_Common_ToggleSwitch_Power_K2Node_ComponentBoundEvent_1_OnToggleClicked__DelegateSignature();
-	void BndEvt__WBP_RecyclerMenu_WBP_Common_ToggleSwitch_Supply_K2Node_ComponentBoundEvent_4_OnToggleClicked__DelegateSignature();
-	void BndEvt__WBP_RecyclerMenu_WBP_CommonButton_Filter_K2Node_ComponentBoundEvent_7_OnClicked__DelegateSignature();
-	void BndEvt__WBP_RecyclerMenu_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void BndEvt__WBP_RecyclerMenu_WBP_PalInvisibleButton_QuickMove_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_RecyclerMenu_WBP_PalInvisibleButton_Sort_TargetContainer_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void ExecuteUbergraph_WBP_RecyclerMenu(int32 EntryPoint);
-	void OnLeftClickedTargetContainerSlot_Boost(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
-	void OnLeftClickedTargetContainerSlot_Relic(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
-	void OnReflectWorkAmount(class UPalWorkProgress* WorkProgress);
-	void SetBoostState(bool bActive, float RemainingRate, float SpeedMultiplier);
-	void SetBuildObjectName(const class FText& Name_0);
-	void SetCautionVisible(bool bVisible);
-	void SetCurrentRecycleItem(class FName RelicItemId);
-	void SetPowerToggleState(bool bIsOn, bool bImmediate);
-	void SetUIModel(class UPalUIMapObjectRecyclerModel* InUIModel);
-	void SetupBoostSlots(class UPalItemContainer* BoostContainer);
-	void SetupInventory();
-	void SetupRelicSlots(class UPalItemContainer* RelicContainer);
 	void SetupWork(class UPalWorkProgress* WorkProgress);
+	void SetupRelicSlots(class UPalItemContainer* RelicContainer);
+	void SetupInventory();
+	void SetupBoostSlots(class UPalItemContainer* BoostContainer);
+	void SetUIModel(class UPalUIMapObjectRecyclerModel* InUIModel);
+	void SetPowerToggleState(bool bIsOn, bool bImmediate);
+	void SetCurrentRecycleItem(class FName RelicItemId);
+	void SetCautionVisible(bool bVisible);
+	void SetBuildObjectName(const class FText& Name_0);
+	void SetBoostState(bool bActive, float RemainingRate, float SpeedMultiplier);
+	void OnReflectWorkAmount(class UPalWorkProgress* WorkProgress);
+	void OnLeftClickedTargetContainerSlot_Relic(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
+	void OnLeftClickedTargetContainerSlot_Boost(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
+	void ExecuteUbergraph_WBP_RecyclerMenu(int32 EntryPoint);
+	void BndEvt__WBP_RecyclerMenu_WBP_PalInvisibleButton_Sort_TargetContainer_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_RecyclerMenu_WBP_PalInvisibleButton_QuickMove_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_RecyclerMenu_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
+	void BndEvt__WBP_RecyclerMenu_WBP_CommonButton_Filter_K2Node_ComponentBoundEvent_7_OnClicked__DelegateSignature();
+	void BndEvt__WBP_RecyclerMenu_WBP_Common_ToggleSwitch_Supply_K2Node_ComponentBoundEvent_4_OnToggleClicked__DelegateSignature();
+	void BndEvt__WBP_RecyclerMenu_WBP_Common_ToggleSwitch_Power_K2Node_ComponentBoundEvent_1_OnToggleClicked__DelegateSignature();
+	void BndEvt__WBP_RecyclerMenu_WBP_Common_Inventory_K2Node_ComponentBoundEvent_6_OnClickedInventorySortButton__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()

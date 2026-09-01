@@ -62,16 +62,16 @@ public:
 
 public:
 	void CheckWorkSync();
-	void Construct();
-	void Destruct();
-	void DisplayCheck();
-	void ExecuteUbergraph_WBP_LabResearch(int32 EntryPoint);
-	void GetMapObjectLocation(struct FVector* Location);
-	void On_Current_Research_Updated(class UPalMapObjectLabModel* LabModel_0);
-	void On_Updated_Worker_Pal(class UPalWorkBase* Work);
-	void OnSetup();
-	void Setup();
 	void Update_Research_Progress();
+	void Setup();
+	void OnSetup();
+	void On_Updated_Worker_Pal(class UPalWorkBase* Work);
+	void On_Current_Research_Updated(class UPalMapObjectLabModel* LabModel_0);
+	void GetMapObjectLocation(struct FVector* Location);
+	void ExecuteUbergraph_WBP_LabResearch(int32 EntryPoint);
+	void DisplayCheck();
+	void Destruct();
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

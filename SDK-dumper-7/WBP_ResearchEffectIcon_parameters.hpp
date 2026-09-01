@@ -16,6 +16,16 @@
 namespace SDK::Params
 {
 
+// Function WBP_ResearchEffectIcon.WBP_ResearchEffectIcon_C.SetupIcon
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_ResearchEffectIcon_C_SetupIcon final
+{
+public:
+	EPalWorkSuitability                           WorkType;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalLabCategorySubType                        SubType;                                           // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ResearchEffectIcon_C_SetupIcon;
+
 // Function WBP_ResearchEffectIcon.WBP_ResearchEffectIcon_C.ExecuteUbergraph_WBP_ResearchEffectIcon
 // 0x0078 (0x0078 - 0x0000)
 struct WBP_ResearchEffectIcon_C_ExecuteUbergraph_WBP_ResearchEffectIcon final
@@ -33,16 +43,6 @@ public:
 	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_ResearchEffectIcon_C_ExecuteUbergraph_WBP_ResearchEffectIcon;
-
-// Function WBP_ResearchEffectIcon.WBP_ResearchEffectIcon_C.SetupIcon
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_ResearchEffectIcon_C_SetupIcon final
-{
-public:
-	EPalWorkSuitability                           WorkType;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalLabCategorySubType                        SubType;                                           // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ResearchEffectIcon_C_SetupIcon;
 
 }
 

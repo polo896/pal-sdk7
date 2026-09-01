@@ -26,8 +26,8 @@ class UWBP_AssignBoard_WorkList_Common_C : public UWBP_AssignBoard_WorkListBase_
     class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x0368 (size: 0x8)
     bool IsSelectingAnm;                                                              // 0x0370 (size: 0x1)
     bool IsEnableAnm;                                                                 // 0x0371 (size: 0x1)
-    TArray<class UWBP_IconPalWork_C*> WorkIconArray;                                  // 0x0378 (size: 0x10)
-    TArray<class USizeBox*> WorkIconSizeBoxArray;                                     // 0x0388 (size: 0x10)
+    TArray<UWBP_IconPalWork_C*> WorkIconArray;                                        // 0x0378 (size: 0x10)
+    TArray<USizeBox*> WorkIconSizeBoxArray;                                           // 0x0388 (size: 0x10)
     FTimerHandle UpdateAssignedCharacterDetailTimerHandle;                            // 0x0398 (size: 0x8)
     int32 AssignableMaxNum;                                                           // 0x03A0 (size: 0x4)
 

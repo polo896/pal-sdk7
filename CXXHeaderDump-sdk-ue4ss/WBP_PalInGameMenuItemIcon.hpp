@@ -13,7 +13,7 @@ class UWBP_PalInGameMenuItemIcon_C : public UWBP_PalItemIconBase_C
     void StartLoadEvent();
     void LoadedTextureEvent(class UTexture2D* loadedTexture);
     void EmptyEvent();
-    void SetBPIcon(TSoftObjectPtr<UTexture2D> Icon);
+    void SetBPIcon(TSoftObjectPtr<class UTexture2D> Icon);
     void HideBPIcon();
     void ExecuteUbergraph_WBP_PalInGameMenuItemIcon(int32 EntryPoint);
 }; // Size: 0x4D1

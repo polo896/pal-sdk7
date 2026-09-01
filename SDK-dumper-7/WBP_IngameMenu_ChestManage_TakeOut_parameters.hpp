@@ -17,26 +17,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameMenu_ChestManage_TakeOut.WBP_IngameMenu_ChestManage_TakeOut_C.BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_IngameCommonSelectNum_K2Node_ComponentBoundEvent_0_OnUpdateNum__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_ChestManage_TakeOut_C_BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_IngameCommonSelectNum_K2Node_ComponentBoundEvent_0_OnUpdateNum__DelegateSignature final
-{
-public:
-	int64                                         Num;                                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_TakeOut_C_BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_IngameCommonSelectNum_K2Node_ComponentBoundEvent_0_OnUpdateNum__DelegateSignature;
-
-// Function WBP_IngameMenu_ChestManage_TakeOut.WBP_IngameMenu_ChestManage_TakeOut_C.ExecuteUbergraph_WBP_IngameMenu_ChestManage_TakeOut
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameMenu_ChestManage_TakeOut_C_ExecuteUbergraph_WBP_IngameMenu_ChestManage_TakeOut final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	int64                                         K2Node_ComponentBoundEvent_Num;                    // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_TakeOut_C_ExecuteUbergraph_WBP_IngameMenu_ChestManage_TakeOut;
-
 // Function WBP_IngameMenu_ChestManage_TakeOut.WBP_IngameMenu_ChestManage_TakeOut_C.Setup
 // 0x00E8 (0x00E8 - 0x0000)
 struct WBP_IngameMenu_ChestManage_TakeOut_C_Setup final
@@ -53,6 +33,26 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00D0(0x0018)()
 };
 DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_TakeOut_C_Setup;
+
+// Function WBP_IngameMenu_ChestManage_TakeOut.WBP_IngameMenu_ChestManage_TakeOut_C.ExecuteUbergraph_WBP_IngameMenu_ChestManage_TakeOut
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameMenu_ChestManage_TakeOut_C_ExecuteUbergraph_WBP_IngameMenu_ChestManage_TakeOut final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         K2Node_ComponentBoundEvent_Num;                    // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_TakeOut_C_ExecuteUbergraph_WBP_IngameMenu_ChestManage_TakeOut;
+
+// Function WBP_IngameMenu_ChestManage_TakeOut.WBP_IngameMenu_ChestManage_TakeOut_C.BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_IngameCommonSelectNum_K2Node_ComponentBoundEvent_0_OnUpdateNum__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_ChestManage_TakeOut_C_BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_IngameCommonSelectNum_K2Node_ComponentBoundEvent_0_OnUpdateNum__DelegateSignature final
+{
+public:
+	int64                                         Num;                                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_TakeOut_C_BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_IngameCommonSelectNum_K2Node_ComponentBoundEvent_0_OnUpdateNum__DelegateSignature;
 
 }
 

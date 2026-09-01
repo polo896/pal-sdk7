@@ -18,23 +18,56 @@
 namespace SDK::Params
 {
 
-// Function BP_MonoNPCSpawner_Quest.BP_MonoNPCSpawner_Quest_C.BlueprintTick_Spawned
-// 0x0004 (0x0004 - 0x0000)
-struct BP_MonoNPCSpawner_Quest_C_BlueprintTick_Spawned final
+// Function BP_MonoNPCSpawner_Quest.BP_MonoNPCSpawner_Quest_C.SpawnDelegate
+// 0x0050 (0x0050 - 0x0000)
+struct BP_MonoNPCSpawner_Quest_C_SpawnDelegate final
 {
 public:
-	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalInstanceID                         ID;                                                // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_TryGetIndividualActor_ReturnValue;        // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_NPCAIController_C*                  K2Node_DynamicCast_AsBP_NPCAIController;           // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_MonoNPCSpawner_Quest_C_BlueprintTick_Spawned;
+DUMPER7_ASSERTS_BP_MonoNPCSpawner_Quest_C_SpawnDelegate;
 
-// Function BP_MonoNPCSpawner_Quest.BP_MonoNPCSpawner_Quest_C.Despawn
-// 0x0001 (0x0001 - 0x0000)
-struct BP_MonoNPCSpawner_Quest_C_Despawn final
+// Function BP_MonoNPCSpawner_Quest.BP_MonoNPCSpawner_Quest_C.On Dead
+// 0x0058 (0x0058 - 0x0000)
+struct BP_MonoNPCSpawner_Quest_C_On_Dead final
 {
 public:
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalDeadInfo                           DeadInfo;                                          // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_MonoNPCSpawner_Quest_C_Despawn;
+DUMPER7_ASSERTS_BP_MonoNPCSpawner_Quest_C_On_Dead;
+
+// Function BP_MonoNPCSpawner_Quest.BP_MonoNPCSpawner_Quest_C.IsBlockInProgress
+// 0x0070 (0x0070 - 0x0000)
+struct BP_MonoNPCSpawner_Quest_C_IsBlockInProgress final
+{
+public:
+	class UClass*                                 QuestBlock;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   QuestId_0;                                         // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalQuestManager*                       QuestManager;                                      // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalQuestData*                          CallFunc_GetQuestData_ReturnValue;                 // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UPalQuestBlock*>                 CallFunc_GetQuestBlocks_OutBlocks;                 // 0x0030(0x0010)(ReferenceParm)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalQuestBlock*                         CallFunc_Array_Get_Item;                           // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UClass*                                 CallFunc_GetObjectClass_ReturnValue;               // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ClassClass_ReturnValue;        // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_MonoNPCSpawner_Quest_C_IsBlockInProgress;
 
 // Function BP_MonoNPCSpawner_Quest.BP_MonoNPCSpawner_Quest_C.ExecuteUbergraph_BP_MonoNPCSpawner_Quest
 // 0x01F0 (0x01F0 - 0x0000)
@@ -128,56 +161,23 @@ public:
 };
 DUMPER7_ASSERTS_BP_MonoNPCSpawner_Quest_C_ExecuteUbergraph_BP_MonoNPCSpawner_Quest;
 
-// Function BP_MonoNPCSpawner_Quest.BP_MonoNPCSpawner_Quest_C.IsBlockInProgress
-// 0x0070 (0x0070 - 0x0000)
-struct BP_MonoNPCSpawner_Quest_C_IsBlockInProgress final
+// Function BP_MonoNPCSpawner_Quest.BP_MonoNPCSpawner_Quest_C.Despawn
+// 0x0001 (0x0001 - 0x0000)
+struct BP_MonoNPCSpawner_Quest_C_Despawn final
 {
 public:
-	class UClass*                                 QuestBlock;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   QuestId_0;                                         // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalQuestManager*                       QuestManager;                                      // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalQuestData*                          CallFunc_GetQuestData_ReturnValue;                 // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D[0x3];                                       // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UPalQuestBlock*>                 CallFunc_GetQuestBlocks_OutBlocks;                 // 0x0030(0x0010)(ReferenceParm)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalQuestBlock*                         CallFunc_Array_Get_Item;                           // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UClass*                                 CallFunc_GetObjectClass_ReturnValue;               // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ClassClass_ReturnValue;        // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_MonoNPCSpawner_Quest_C_IsBlockInProgress;
+DUMPER7_ASSERTS_BP_MonoNPCSpawner_Quest_C_Despawn;
 
-// Function BP_MonoNPCSpawner_Quest.BP_MonoNPCSpawner_Quest_C.On Dead
-// 0x0058 (0x0058 - 0x0000)
-struct BP_MonoNPCSpawner_Quest_C_On_Dead final
+// Function BP_MonoNPCSpawner_Quest.BP_MonoNPCSpawner_Quest_C.BlueprintTick_Spawned
+// 0x0004 (0x0004 - 0x0000)
+struct BP_MonoNPCSpawner_Quest_C_BlueprintTick_Spawned final
 {
 public:
-	struct FPalDeadInfo                           DeadInfo;                                          // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_MonoNPCSpawner_Quest_C_On_Dead;
-
-// Function BP_MonoNPCSpawner_Quest.BP_MonoNPCSpawner_Quest_C.SpawnDelegate
-// 0x0050 (0x0050 - 0x0000)
-struct BP_MonoNPCSpawner_Quest_C_SpawnDelegate final
-{
-public:
-	struct FPalInstanceID                         ID;                                                // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_TryGetIndividualActor_ReturnValue;        // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_NPCAIController_C*                  K2Node_DynamicCast_AsBP_NPCAIController;           // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_MonoNPCSpawner_Quest_C_SpawnDelegate;
+DUMPER7_ASSERTS_BP_MonoNPCSpawner_Quest_C_BlueprintTick_Spawned;
 
 }
 

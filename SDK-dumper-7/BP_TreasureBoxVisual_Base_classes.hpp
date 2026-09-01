@@ -35,16 +35,16 @@ public:
 	struct FTimerHandle                           AnimationWaitTimer;                                // 0x02F8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_TreasureBoxVisual_Base(int32 EntryPoint);
-	void OnFinishOpenAnimation();
-	void OnPassedOpenAnimationLength();
-	void OnPlayMontageNotifyBegin_BP(class FName NotifyName);
-	void PlayEffectAndSound();
-	void ReceiveBeginPlay();
-	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
-	void SetNoCollisionAllMesh();
-	void StartOpenAnimation();
 	void TriggerOpenAnimation();
+	void StartOpenAnimation();
+	void SetNoCollisionAllMesh();
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void ReceiveBeginPlay();
+	void PlayEffectAndSound();
+	void OnPlayMontageNotifyBegin_BP(class FName NotifyName);
+	void OnPassedOpenAnimationLength();
+	void OnFinishOpenAnimation();
+	void ExecuteUbergraph_BP_TreasureBoxVisual_Base(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

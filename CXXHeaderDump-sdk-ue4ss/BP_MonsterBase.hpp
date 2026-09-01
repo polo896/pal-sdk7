@@ -22,7 +22,7 @@ class ABP_MonsterBase_C : public APalMonsterCharacter
     void OnLanded_Proc(class UPalCharacterMovementComponent* Component, FHitResult Hit);
     void AddEffectivceAttackLog(FPalDeadInfo Info);
     void AddTargetDefeatLog(FPalDeadInfo Info);
-    void GetVisual_ExceptMainMesh_SyncAnyway(TArray<class USceneComponent*>& OutComponent);
+    void GetVisual_ExceptMainMesh_SyncAnyway(TArray<USceneComponent*>& OutComponent);
     void GetJumpEffectSpawnLocation(FVector& Location);
     void GetEffectScale(double& Scale);
     void PlayJumpSound();

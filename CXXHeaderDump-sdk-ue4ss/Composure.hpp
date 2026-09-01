@@ -6,8 +6,8 @@
 struct FCompositingMaterial : public FCompositingParamPayload
 {
     class UMaterialInterface* Material;                                               // 0x00F0 (size: 0x8)
-    TMap<class FName, class FName> ParamPassMappings;                                 // 0x00F8 (size: 0x50)
-    TMap<class FName, class FNamedCompMaterialParam> RequiredMaterialParams;          // 0x0148 (size: 0x50)
+    TMap<FName, FName> ParamPassMappings;                                             // 0x00F8 (size: 0x50)
+    TMap<FName, FNamedCompMaterialParam> RequiredMaterialParams;                      // 0x0148 (size: 0x50)
     class UMaterialInstanceDynamic* CachedMID;                                        // 0x01A0 (size: 0x8)
 
 }; // Size: 0x1A8
@@ -15,8 +15,8 @@ struct FCompositingMaterial : public FCompositingParamPayload
 struct FCompositingParamPayload
 {
     TMap<FName, float> ScalarParamOverrides;                                          // 0x0000 (size: 0x50)
-    TMap<class FName, class FLinearColor> VectorParamOverrides;                       // 0x0050 (size: 0x50)
-    TMap<class FName, class UTexture*> TextureParamOverrides;                         // 0x00A0 (size: 0x50)
+    TMap<FName, FLinearColor> VectorParamOverrides;                                   // 0x0050 (size: 0x50)
+    TMap<FName, UTexture*> TextureParamOverrides;                                     // 0x00A0 (size: 0x50)
 
 }; // Size: 0xF0
 
@@ -85,9 +85,9 @@ class ACompositingElement : public AComposurePipelineBaseActor
 {
     class UComposureCompositingTargetComponent* CompositingTarget;                    // 0x02B0 (size: 0x8)
     class UComposurePostProcessingPassProxy* PostProcessProxy;                        // 0x02B8 (size: 0x8)
-    TArray<class UCompositingElementInput*> Inputs;                                   // 0x02C0 (size: 0x10)
-    TArray<class UCompositingElementTransform*> TransformPasses;                      // 0x02D0 (size: 0x10)
-    TArray<class UCompositingElementOutput*> Outputs;                                 // 0x02E0 (size: 0x10)
+    TArray<UCompositingElementInput*> Inputs;                                         // 0x02C0 (size: 0x10)
+    TArray<UCompositingElementTransform*> TransformPasses;                            // 0x02D0 (size: 0x10)
+    TArray<UCompositingElementOutput*> Outputs;                                       // 0x02E0 (size: 0x10)
     ESceneCameraLinkType CameraSource;                                                // 0x02F0 (size: 0x4)
     TLazyObjectPtr<class ACameraActor> TargetCameraActor;                             // 0x02F4 (size: 0x1C)
     EInheritedSourceType ResolutionSource;                                            // 0x0310 (size: 0x4)
@@ -101,14 +101,14 @@ class ACompositingElement : public AComposurePipelineBaseActor
     void DynamicOnFinalPassRendered(class ACompositingElement* CompElement, class UTexture* Texture);
     FName CompShotIdName;                                                             // 0x0378 (size: 0x8)
     class ACompositingElement* Parent;                                                // 0x0380 (size: 0x8)
-    TArray<class ACompositingElement*> ChildLayers;                                   // 0x0388 (size: 0x10)
+    TArray<ACompositingElement*> ChildLayers;                                         // 0x0388 (size: 0x10)
     float OutputOpacity;                                                              // 0x039C (size: 0x4)
-    TMap<class UCompositingElementInput*, class ECompPassConstructionType> UserConstructedInputs; // 0x03A0 (size: 0x50)
-    TMap<class UCompositingElementTransform*, class ECompPassConstructionType> UserConstructedTransforms; // 0x03F0 (size: 0x50)
-    TMap<class UCompositingElementOutput*, class ECompPassConstructionType> UserConstructedOutputs; // 0x0440 (size: 0x50)
-    TArray<class UCompositingElementInput*> InternalInputs;                           // 0x0490 (size: 0x10)
-    TArray<class UCompositingElementTransform*> InternalTransformPasses;              // 0x04A0 (size: 0x10)
-    TArray<class UCompositingElementOutput*> InternalOutputs;                         // 0x04B0 (size: 0x10)
+    TMap<UCompositingElementInput*, ECompPassConstructionType> UserConstructedInputs; // 0x03A0 (size: 0x50)
+    TMap<UCompositingElementTransform*, ECompPassConstructionType> UserConstructedTransforms; // 0x03F0 (size: 0x50)
+    TMap<UCompositingElementOutput*, ECompPassConstructionType> UserConstructedOutputs; // 0x0440 (size: 0x50)
+    TArray<UCompositingElementInput*> InternalInputs;                                 // 0x0490 (size: 0x10)
+    TArray<UCompositingElementTransform*> InternalTransformPasses;                    // 0x04A0 (size: 0x10)
+    TArray<UCompositingElementOutput*> InternalOutputs;                               // 0x04B0 (size: 0x10)
     class UAlphaTransformPass* InternalAlphaPass;                                     // 0x04C0 (size: 0x8)
 
     void SetTargetCamera(class ACameraActor* NewCameraActor);
@@ -124,16 +124,16 @@ class ACompositingElement : public AComposurePipelineBaseActor
     bool ReleaseOwnedTarget(class UTextureRenderTarget2D* OwnedTarget);
     void RegisterPassResult(FName ReferenceName, class UTexture* PassResult, bool bSetAsLatestRenderResult);
     bool IsSubElement();
-    TArray<class UCompositingElementTransform*> GetTransformsList();
+    TArray<UCompositingElementTransform*> GetTransformsList();
     FIntPoint GetRenderResolution();
     int32 GetRenderPriority();
-    TArray<class UCompositingElementOutput*> GetOutputsList();
+    TArray<UCompositingElementOutput*> GetOutputsList();
     float GetOpacity();
     class UTexture* GetLatestRenderResult();
-    TArray<class UCompositingElementInput*> GetInputsList();
+    TArray<UCompositingElementInput*> GetInputsList();
     class ACompositingElement* GetElementParent();
     FName GetCompElementName();
-    TArray<class ACompositingElement*> GetChildElements();
+    TArray<ACompositingElement*> GetChildElements();
     class UCompositingElementTransform* FindTransformPass(TSubclassOf<class UCompositingElementTransform> TransformType, class UTexture*& PassResult, FName OptionalPassName);
     class ACameraActor* FindTargetCamera();
     class UCompositingElementOutput* FindOutputPass(TSubclassOf<class UCompositingElementOutput> OutputType, FName OptionalPassName);
@@ -299,7 +299,7 @@ class UCompositingPickerAsyncTask : public UBlueprintAsyncActionBase
 class UCompositingPostProcessPass : public UCompositingElementTransform
 {
     float RenderScale;                                                                // 0x0070 (size: 0x4)
-    TArray<class UComposurePostProcessPassPolicy*> PostProcessPasses;                 // 0x0078 (size: 0x10)
+    TArray<UComposurePostProcessPassPolicy*> PostProcessPasses;                       // 0x0078 (size: 0x10)
 
 }; // Size: 0x88
 
@@ -462,7 +462,7 @@ class UMovieSceneComposureExportSection : public UMovieSceneSection
 class UMovieSceneComposureExportTrack : public UMovieSceneTrack
 {
     FMovieSceneComposureExportPass Pass;                                              // 0x00A0 (size: 0x14)
-    TArray<class UMovieSceneSection*> Sections;                                       // 0x00B8 (size: 0x10)
+    TArray<UMovieSceneSection*> Sections;                                             // 0x00B8 (size: 0x10)
 
 }; // Size: 0xC8
 

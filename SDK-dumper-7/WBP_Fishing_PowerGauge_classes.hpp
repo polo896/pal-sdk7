@@ -53,20 +53,20 @@ public:
 	bool                                          IsInitialized;                                     // 0x0360(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_AllStop();
-	void AnmEvent_Bad_Loop(bool IsStart);
-	void AnmEvent_GoodToBad(bool IsStart);
-	void AnmEvent_In();
-	void AnmEvent_Out();
-	void ApplyHandleSize();
-	void ExecuteUbergraph_WBP_Fishing_PowerGauge(int32 EntryPoint);
-	void HideUI();
-	void OnInitialized();
-	void SetBarPosition(double Position);
-	void SetBarSize(double BarSize_0);
-	void SetFishPosition(double Position);
-	void ShowTutorialGuide();
 	void ShowUI();
+	void ShowTutorialGuide();
+	void SetFishPosition(double Position);
+	void SetBarSize(double BarSize_0);
+	void SetBarPosition(double Position);
+	void OnInitialized();
+	void HideUI();
+	void ExecuteUbergraph_WBP_Fishing_PowerGauge(int32 EntryPoint);
+	void ApplyHandleSize();
+	void AnmEvent_Out();
+	void AnmEvent_In();
+	void AnmEvent_GoodToBad(bool IsStart);
+	void AnmEvent_Bad_Loop(bool IsStart);
+	void AnmEvent_AllStop();
 
 public:
 	static class UClass* StaticClass()

@@ -17,61 +17,136 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_1_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_1_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.SetupForPrivateLock
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_SetupForPrivateLock final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectConcreteModelBase*         ConcreteModel;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectPasswordLockModule*        CallFunc_GetPasswordLockModule_ReturnValue;        // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectItemChestModel*            K2Node_DynamicCast_AsPal_Map_Object_Item_Chest_Model; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanPrivateLock_ReturnValue;               // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1B[0x1];                                       // 0x001B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(EUINavigation Navigation)>     K2Node_CreateDelegate_OutputDelegate;              // 0x001C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UPalMapObjectItemChestModel* Self)> K2Node_CreateDelegate_OutputDelegate_1; // 0x002C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_1_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_SetupForPrivateLock;
 
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Guest_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Guest_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.SetupForPassword
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_SetupForPassword final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectConcreteModelBase*         ConcreteModel;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ECheckBoxState                                Temp_byte_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalMapObjectPasswordLockModule*        CallFunc_GetPasswordLockModule_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ECheckBoxState                                Temp_byte_Variable_1;                              // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalMapObjectPasswordLockState                CallFunc_GetLockState_ReturnValue;                 // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECheckBoxState                                K2Node_Select_Default;                             // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Guest_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_SetupForPassword;
 
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.SetupForGuildSecurity
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_SetupForGuildSecurity final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectConcreteModelBase*         ConcreteModel;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectGuildSecurityModule*       GuildSecurityModule;                               // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UPalMapObjectGuildSecurityModule* Module, const TArray<EPalGuildRole>& NewRoles)> K2Node_CreateDelegate_OutputDelegate; // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalMapObjectGuildSecurityModule*       CallFunc_GetGuildSecurityModule_ReturnValue;       // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<EPalGuildRole>                         CallFunc_GetAllowedRoles_ReturnValue;              // 0x0030(0x0010)(ConstParm, ReferenceParm)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_SetupForGuildSecurity;
 
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Member_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.Setup
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Member_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature final
+struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_Setup final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDDispatchParameterBase*           Param_0;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Member_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_Setup;
 
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_SubMaster_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_SubMaster_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_SubMaster_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.Custom Navigation To Bottom
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.RequestApplyGuildSecurityLevel
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_Custom_Navigation_To_Bottom final
+struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_RequestApplyGuildSecurityLevel final
 {
 public:
-	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EPalGuildRole                                 TargetRole;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bCurrentDisplayChecked;                            // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalMapObjectGuildSecurityModule*       CallFunc_GetGuildSecurityModule_ReturnValue;       // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_Custom_Navigation_To_Bottom;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_RequestApplyGuildSecurityLevel;
+
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.OnUpdateItemChestPrivateLock
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_OnUpdateItemChestPrivateLock final
+{
+public:
+	class UPalMapObjectItemChestModel*            ConcreteModel;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsLockedPrivate_ReturnValue;              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECheckBoxState                                Temp_byte_Variable;                                // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECheckBoxState                                Temp_byte_Variable_1;                              // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECheckBoxState                                K2Node_Select_Default;                             // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsLockedPrivateByNotLocalPlayer_ReturnValue; // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_OnUpdateItemChestPrivateLock;
+
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.OnUpdateGuildSecurityAllowedRoles
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_OnUpdateGuildSecurityAllowedRoles final
+{
+public:
+	class UPalMapObjectGuildSecurityModule*       Module;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<EPalGuildRole>                         NewRoles;                                          // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalGuildRole                                 CallFunc_Array_Get_Item;                           // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCheckBox*                              CallFunc_GetRoleCheckBox_CheckBox;                 // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_OnUpdateGuildSecurityAllowedRoles;
+
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.IsCheckedBox
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_IsCheckedBox final
+{
+public:
+	class UCheckBox*                              ターゲット;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECheckBoxState                                CallFunc_GetCheckedState_ReturnValue;              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_IsCheckedBox;
+
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.GetRoleCheckBox
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_GetRoleCheckBox final
+{
+public:
+	EPalGuildRole                                 Role;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCheckBox*                              CheckBox;                                          // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_GetRoleCheckBox;
 
 // Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.ExecuteUbergraph_WBP_IngameMenu_ChestSetting_SecurityBlock
 // 0x0080 (0x0080 - 0x0000)
@@ -116,136 +191,61 @@ public:
 };
 DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_ExecuteUbergraph_WBP_IngameMenu_ChestSetting_SecurityBlock;
 
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.GetRoleCheckBox
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_GetRoleCheckBox final
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.Custom Navigation To Bottom
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_Custom_Navigation_To_Bottom final
 {
 public:
-	EPalGuildRole                                 Role;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCheckBox*                              CheckBox;                                          // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_GetRoleCheckBox;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_Custom_Navigation_To_Bottom;
 
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.IsCheckedBox
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_IsCheckedBox final
-{
-public:
-	class UCheckBox*                              ターゲット;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECheckBoxState                                CallFunc_GetCheckedState_ReturnValue;              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_IsCheckedBox;
-
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.OnUpdateGuildSecurityAllowedRoles
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_OnUpdateGuildSecurityAllowedRoles final
-{
-public:
-	class UPalMapObjectGuildSecurityModule*       Module;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<EPalGuildRole>                         NewRoles;                                          // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalGuildRole                                 CallFunc_Array_Get_Item;                           // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCheckBox*                              CallFunc_GetRoleCheckBox_CheckBox;                 // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_OnUpdateGuildSecurityAllowedRoles;
-
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.OnUpdateItemChestPrivateLock
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_OnUpdateItemChestPrivateLock final
-{
-public:
-	class UPalMapObjectItemChestModel*            ConcreteModel;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsLockedPrivate_ReturnValue;              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECheckBoxState                                Temp_byte_Variable;                                // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECheckBoxState                                Temp_byte_Variable_1;                              // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECheckBoxState                                K2Node_Select_Default;                             // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsLockedPrivateByNotLocalPlayer_ReturnValue; // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_OnUpdateItemChestPrivateLock;
-
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.RequestApplyGuildSecurityLevel
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_RequestApplyGuildSecurityLevel final
-{
-public:
-	EPalGuildRole                                 TargetRole;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bCurrentDisplayChecked;                            // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalMapObjectGuildSecurityModule*       CallFunc_GetGuildSecurityModule_ReturnValue;       // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_RequestApplyGuildSecurityLevel;
-
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.Setup
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_SubMaster_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_Setup final
+struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_SubMaster_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	class UPalHUDDispatchParameterBase*           Param_0;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_Setup;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_SubMaster_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature;
 
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.SetupForGuildSecurity
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_SetupForGuildSecurity final
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Member_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Member_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	class UPalMapObjectConcreteModelBase*         ConcreteModel;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalMapObjectGuildSecurityModule*       GuildSecurityModule;                               // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UPalMapObjectGuildSecurityModule* Module, const TArray<EPalGuildRole>& NewRoles)> K2Node_CreateDelegate_OutputDelegate; // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalMapObjectGuildSecurityModule*       CallFunc_GetGuildSecurityModule_ReturnValue;       // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<EPalGuildRole>                         CallFunc_GetAllowedRoles_ReturnValue;              // 0x0030(0x0010)(ConstParm, ReferenceParm)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_SetupForGuildSecurity;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Member_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature;
 
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.SetupForPassword
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_SetupForPassword final
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	class UPalMapObjectConcreteModelBase*         ConcreteModel;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ECheckBoxState                                Temp_byte_Variable;                                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalMapObjectPasswordLockModule*        CallFunc_GetPasswordLockModule_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ECheckBoxState                                Temp_byte_Variable_1;                              // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalMapObjectPasswordLockState                CallFunc_GetLockState_ReturnValue;                 // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECheckBoxState                                K2Node_Select_Default;                             // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_SetupForPassword;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature;
 
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.SetupForPrivateLock
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_SetupForPrivateLock final
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Guest_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Guest_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	class UPalMapObjectConcreteModelBase*         ConcreteModel;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalMapObjectPasswordLockModule*        CallFunc_GetPasswordLockModule_ReturnValue;        // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalMapObjectItemChestModel*            K2Node_DynamicCast_AsPal_Map_Object_Item_Chest_Model; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CanPrivateLock_ReturnValue;               // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1B[0x1];                                       // 0x001B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EUINavigation Navigation)>     K2Node_CreateDelegate_OutputDelegate;              // 0x001C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UPalMapObjectItemChestModel* Self)> K2Node_CreateDelegate_OutputDelegate_1; // 0x002C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_SetupForPrivateLock;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Guest_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_1_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_1_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_1_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
 
 // Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.BP_GetDesiredFocusTarget
 // 0x0010 (0x0010 - 0x0000)

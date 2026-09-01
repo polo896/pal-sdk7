@@ -17,15 +17,245 @@
 namespace SDK::Params
 {
 
-// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.EndAction
-// 0x0010 (0x0010 - 0x0000)
-struct BP_Action_Unique_PinkCat_CatPunch_C_EndAction final
+// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.TickAction
+// 0x0004 (0x0004 - 0x0000)
+struct BP_Action_Unique_PinkCat_CatPunch_C_TickAction final
 {
 public:
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue;           // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_1;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_EndAction;
+DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_TickAction;
+
+// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.SetMove
+// 0x0068 (0x0068 - 0x0000)
+struct BP_Action_Unique_PinkCat_CatPunch_C_SetMove final
+{
+public:
+	bool                                          EnableMove;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_1;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalCharacterMovementComponent*         CallFunc_GetComponentByClass_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_SelectVector_ReturnValue;                 // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Temp_real_Variable;                                // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Select_Default;                             // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Select_Option_1_ImplicitCast;               // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_SetMove;
+
+// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnNotifyEnd_BF5F18464CE41760481C058932345CA4
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_Unique_PinkCat_CatPunch_C_OnNotifyEnd_BF5F18464CE41760481C058932345CA4 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnNotifyEnd_BF5F18464CE41760481C058932345CA4;
+
+// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnNotifyEnd_7B37005E4C184523A70797A405F21101
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_Unique_PinkCat_CatPunch_C_OnNotifyEnd_7B37005E4C184523A70797A405F21101 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnNotifyEnd_7B37005E4C184523A70797A405F21101;
+
+// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnNotifyEnd_6FCC02CF40A11D28BC681A887E620E6F
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_Unique_PinkCat_CatPunch_C_OnNotifyEnd_6FCC02CF40A11D28BC681A887E620E6F final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnNotifyEnd_6FCC02CF40A11D28BC681A887E620E6F;
+
+// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnNotifyBegin_BF5F18464CE41760481C058932345CA4
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_Unique_PinkCat_CatPunch_C_OnNotifyBegin_BF5F18464CE41760481C058932345CA4 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnNotifyBegin_BF5F18464CE41760481C058932345CA4;
+
+// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnNotifyBegin_7B37005E4C184523A70797A405F21101
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_Unique_PinkCat_CatPunch_C_OnNotifyBegin_7B37005E4C184523A70797A405F21101 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnNotifyBegin_7B37005E4C184523A70797A405F21101;
+
+// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnNotifyBegin_6FCC02CF40A11D28BC681A887E620E6F
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_Unique_PinkCat_CatPunch_C_OnNotifyBegin_6FCC02CF40A11D28BC681A887E620E6F final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnNotifyBegin_6FCC02CF40A11D28BC681A887E620E6F;
+
+// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnInterrupted_BF5F18464CE41760481C058932345CA4
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_Unique_PinkCat_CatPunch_C_OnInterrupted_BF5F18464CE41760481C058932345CA4 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnInterrupted_BF5F18464CE41760481C058932345CA4;
+
+// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnInterrupted_7B37005E4C184523A70797A405F21101
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_Unique_PinkCat_CatPunch_C_OnInterrupted_7B37005E4C184523A70797A405F21101 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnInterrupted_7B37005E4C184523A70797A405F21101;
+
+// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnInterrupted_6FCC02CF40A11D28BC681A887E620E6F
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_Unique_PinkCat_CatPunch_C_OnInterrupted_6FCC02CF40A11D28BC681A887E620E6F final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnInterrupted_6FCC02CF40A11D28BC681A887E620E6F;
+
+// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnCompleted_BF5F18464CE41760481C058932345CA4
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_Unique_PinkCat_CatPunch_C_OnCompleted_BF5F18464CE41760481C058932345CA4 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnCompleted_BF5F18464CE41760481C058932345CA4;
+
+// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnCompleted_7B37005E4C184523A70797A405F21101
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_Unique_PinkCat_CatPunch_C_OnCompleted_7B37005E4C184523A70797A405F21101 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnCompleted_7B37005E4C184523A70797A405F21101;
+
+// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnCompleted_6FCC02CF40A11D28BC681A887E620E6F
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_Unique_PinkCat_CatPunch_C_OnCompleted_6FCC02CF40A11D28BC681A887E620E6F final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnCompleted_6FCC02CF40A11D28BC681A887E620E6F;
+
+// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnBlendOut_BF5F18464CE41760481C058932345CA4
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_Unique_PinkCat_CatPunch_C_OnBlendOut_BF5F18464CE41760481C058932345CA4 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnBlendOut_BF5F18464CE41760481C058932345CA4;
+
+// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnBlendOut_7B37005E4C184523A70797A405F21101
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_Unique_PinkCat_CatPunch_C_OnBlendOut_7B37005E4C184523A70797A405F21101 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnBlendOut_7B37005E4C184523A70797A405F21101;
+
+// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnBlendOut_6FCC02CF40A11D28BC681A887E620E6F
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_Unique_PinkCat_CatPunch_C_OnBlendOut_6FCC02CF40A11D28BC681A887E620E6F final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnBlendOut_6FCC02CF40A11D28BC681A887E620E6F;
+
+// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.MoveToTarget
+// 0x00A8 (0x00A8 - 0x0000)
+struct BP_Action_Unique_PinkCat_CatPunch_C_MoveToTarget final
+{
+public:
+	double                                        DeltaTime;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalCharacterMovementComponent*         CallFunc_GetComponentByClass_ReturnValue;          // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_1;         // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_Get_Target_Rotation_TargetRotation;       // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	double                                        CallFunc_VSize_ReturnValue;                        // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_SetActorRotation_ReturnValue;          // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_Conv_DoubleToVector_ReturnValue;          // 0x0068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_GetActionTarget_ReturnValue;              // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x0088(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_MoveToTarget;
+
+// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.Get Target Rotation
+// 0x01A0 (0x01A0 - 0x0000)
+struct BP_Action_Unique_PinkCat_CatPunch_C_Get_Target_Rotation final
+{
+public:
+	struct FRotator                               TargetRotation;                                    // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Temp_real_Variable;                                // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetTargetLocation_ReturnValue;            // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue;           // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_1;         // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0060(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x0078(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	double                                        CallFunc_Vector_Distance_ReturnValue;              // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_2;         // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue;       // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue_1;        // 0x00A8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_3;         // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_GetActionTarget_ReturnValue;              // 0x00C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetTargetLocation_ReturnValue_1;          // 0x00D0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsApplicableDamage_ReturnValue;           // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDead_ReturnValue;                       // 0x00EA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00EB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_ED[0x3];                                       // 0x00ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_4;         // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue_2;        // 0x0100(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         CallFunc_BreakRotator_Roll;                        // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Pitch;                       // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Yaw;                         // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_124[0x4];                                      // 0x0124(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0128(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_FindLookAtRotation_ReturnValue;           // 0x0140(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         CallFunc_BreakRotator_Roll_1;                      // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Pitch_1;                     // 0x015C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Yaw_1;                       // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_164[0x4];                                      // 0x0164(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0168(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FRotator                               CallFunc_REase_ReturnValue;                        // 0x0180(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         CallFunc_REase_Alpha_ImplicitCast;                 // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_Get_Target_Rotation;
 
 // Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.ExecuteUbergraph_BP_Action_Unique_PinkCat_CatPunch
 // 0x0238 (0x0238 - 0x0000)
@@ -102,245 +332,15 @@ public:
 };
 DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_ExecuteUbergraph_BP_Action_Unique_PinkCat_CatPunch;
 
-// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.Get Target Rotation
-// 0x01A0 (0x01A0 - 0x0000)
-struct BP_Action_Unique_PinkCat_CatPunch_C_Get_Target_Rotation final
+// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.EndAction
+// 0x0010 (0x0010 - 0x0000)
+struct BP_Action_Unique_PinkCat_CatPunch_C_EndAction final
 {
 public:
-	struct FRotator                               TargetRotation;                                    // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        Temp_real_Variable;                                // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetTargetLocation_ReturnValue;            // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue;           // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_1;         // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0060(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue;          // 0x0078(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	double                                        CallFunc_Vector_Distance_ReturnValue;              // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_2;         // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue;       // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue_1;        // 0x00A8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_3;         // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_GetActionTarget_ReturnValue;              // 0x00C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetTargetLocation_ReturnValue_1;          // 0x00D0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsApplicableDamage_ReturnValue;           // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDead_ReturnValue;                       // 0x00EA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00EB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_ED[0x3];                                       // 0x00ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_4;         // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_K2_GetActorRotation_ReturnValue_2;        // 0x0100(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	float                                         CallFunc_BreakRotator_Roll;                        // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Pitch;                       // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Yaw;                         // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_124[0x4];                                      // 0x0124(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0128(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_FindLookAtRotation_ReturnValue;           // 0x0140(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	float                                         CallFunc_BreakRotator_Roll_1;                      // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Pitch_1;                     // 0x015C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Yaw_1;                       // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_164[0x4];                                      // 0x0164(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0168(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FRotator                               CallFunc_REase_ReturnValue;                        // 0x0180(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	float                                         CallFunc_REase_Alpha_ImplicitCast;                 // 0x0198(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue;           // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_1;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_Get_Target_Rotation;
-
-// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.MoveToTarget
-// 0x00A8 (0x00A8 - 0x0000)
-struct BP_Action_Unique_PinkCat_CatPunch_C_MoveToTarget final
-{
-public:
-	double                                        DeltaTime;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalCharacterMovementComponent*         CallFunc_GetComponentByClass_ReturnValue;          // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_1;         // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_Get_Target_Rotation_TargetRotation;       // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	double                                        CallFunc_VSize_ReturnValue;                        // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_SetActorRotation_ReturnValue;          // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_Conv_DoubleToVector_ReturnValue;          // 0x0068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_GetActionTarget_ReturnValue;              // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorVector_ReturnValue;        // 0x0088(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_MoveToTarget;
-
-// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnBlendOut_6FCC02CF40A11D28BC681A887E620E6F
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_Unique_PinkCat_CatPunch_C_OnBlendOut_6FCC02CF40A11D28BC681A887E620E6F final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnBlendOut_6FCC02CF40A11D28BC681A887E620E6F;
-
-// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnBlendOut_7B37005E4C184523A70797A405F21101
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_Unique_PinkCat_CatPunch_C_OnBlendOut_7B37005E4C184523A70797A405F21101 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnBlendOut_7B37005E4C184523A70797A405F21101;
-
-// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnBlendOut_BF5F18464CE41760481C058932345CA4
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_Unique_PinkCat_CatPunch_C_OnBlendOut_BF5F18464CE41760481C058932345CA4 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnBlendOut_BF5F18464CE41760481C058932345CA4;
-
-// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnCompleted_6FCC02CF40A11D28BC681A887E620E6F
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_Unique_PinkCat_CatPunch_C_OnCompleted_6FCC02CF40A11D28BC681A887E620E6F final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnCompleted_6FCC02CF40A11D28BC681A887E620E6F;
-
-// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnCompleted_7B37005E4C184523A70797A405F21101
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_Unique_PinkCat_CatPunch_C_OnCompleted_7B37005E4C184523A70797A405F21101 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnCompleted_7B37005E4C184523A70797A405F21101;
-
-// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnCompleted_BF5F18464CE41760481C058932345CA4
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_Unique_PinkCat_CatPunch_C_OnCompleted_BF5F18464CE41760481C058932345CA4 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnCompleted_BF5F18464CE41760481C058932345CA4;
-
-// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnInterrupted_6FCC02CF40A11D28BC681A887E620E6F
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_Unique_PinkCat_CatPunch_C_OnInterrupted_6FCC02CF40A11D28BC681A887E620E6F final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnInterrupted_6FCC02CF40A11D28BC681A887E620E6F;
-
-// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnInterrupted_7B37005E4C184523A70797A405F21101
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_Unique_PinkCat_CatPunch_C_OnInterrupted_7B37005E4C184523A70797A405F21101 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnInterrupted_7B37005E4C184523A70797A405F21101;
-
-// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnInterrupted_BF5F18464CE41760481C058932345CA4
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_Unique_PinkCat_CatPunch_C_OnInterrupted_BF5F18464CE41760481C058932345CA4 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnInterrupted_BF5F18464CE41760481C058932345CA4;
-
-// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnNotifyBegin_6FCC02CF40A11D28BC681A887E620E6F
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_Unique_PinkCat_CatPunch_C_OnNotifyBegin_6FCC02CF40A11D28BC681A887E620E6F final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnNotifyBegin_6FCC02CF40A11D28BC681A887E620E6F;
-
-// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnNotifyBegin_7B37005E4C184523A70797A405F21101
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_Unique_PinkCat_CatPunch_C_OnNotifyBegin_7B37005E4C184523A70797A405F21101 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnNotifyBegin_7B37005E4C184523A70797A405F21101;
-
-// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnNotifyBegin_BF5F18464CE41760481C058932345CA4
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_Unique_PinkCat_CatPunch_C_OnNotifyBegin_BF5F18464CE41760481C058932345CA4 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnNotifyBegin_BF5F18464CE41760481C058932345CA4;
-
-// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnNotifyEnd_6FCC02CF40A11D28BC681A887E620E6F
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_Unique_PinkCat_CatPunch_C_OnNotifyEnd_6FCC02CF40A11D28BC681A887E620E6F final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnNotifyEnd_6FCC02CF40A11D28BC681A887E620E6F;
-
-// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnNotifyEnd_7B37005E4C184523A70797A405F21101
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_Unique_PinkCat_CatPunch_C_OnNotifyEnd_7B37005E4C184523A70797A405F21101 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnNotifyEnd_7B37005E4C184523A70797A405F21101;
-
-// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.OnNotifyEnd_BF5F18464CE41760481C058932345CA4
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_Unique_PinkCat_CatPunch_C_OnNotifyEnd_BF5F18464CE41760481C058932345CA4 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_OnNotifyEnd_BF5F18464CE41760481C058932345CA4;
-
-// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.SetMove
-// 0x0068 (0x0068 - 0x0000)
-struct BP_Action_Unique_PinkCat_CatPunch_C_SetMove final
-{
-public:
-	bool                                          EnableMove;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue_1;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalCharacterMovementComponent*         CallFunc_GetComponentByClass_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_SelectVector_ReturnValue;                 // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Temp_real_Variable;                                // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Select_Default;                             // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Select_Option_1_ImplicitCast;               // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_SetMove;
-
-// Function BP_Action_Unique_PinkCat_CatPunch.BP_Action_Unique_PinkCat_CatPunch_C.TickAction
-// 0x0004 (0x0004 - 0x0000)
-struct BP_Action_Unique_PinkCat_CatPunch_C_TickAction final
-{
-public:
-	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_TickAction;
+DUMPER7_ASSERTS_BP_Action_Unique_PinkCat_CatPunch_C_EndAction;
 
 }
 

@@ -14,38 +14,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_QuickStackCheckPopup.WBP_QuickStackCheckPopup_C.ExecuteUbergraph_WBP_QuickStackCheckPopup
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_QuickStackCheckPopup_C_ExecuteUbergraph_WBP_QuickStackCheckPopup final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalRightStickScrollSubsystem*          CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UBP_HUDDispatchParameter_QuickStackConfirm_C* K2Node_DynamicCast_AsBP_HUDDispatch_Parameter_Quick_Stack_Confirm; // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_QuickStackCheckPopup_C_ExecuteUbergraph_WBP_QuickStackCheckPopup;
-
-// Function WBP_QuickStackCheckPopup.WBP_QuickStackCheckPopup_C.GetLeftButton
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_QuickStackCheckPopup_C_GetLeftButton final
-{
-public:
-	class UCommonButtonBase*                      rightButton;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_QuickStackCheckPopup_C_GetLeftButton;
-
-// Function WBP_QuickStackCheckPopup.WBP_QuickStackCheckPopup_C.GetRightButton
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_QuickStackCheckPopup_C_GetRightButton final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_QuickStackCheckPopup_C_GetRightButton;
-
 // Function WBP_QuickStackCheckPopup.WBP_QuickStackCheckPopup_C.Setup
 // 0x0048 (0x0048 - 0x0000)
 struct WBP_QuickStackCheckPopup_C_Setup final
@@ -66,6 +34,38 @@ public:
 	class UWrapBoxSlot*                           CallFunc_AddChildToWrapBox_ReturnValue;            // 0x0040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_QuickStackCheckPopup_C_Setup;
+
+// Function WBP_QuickStackCheckPopup.WBP_QuickStackCheckPopup_C.GetRightButton
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_QuickStackCheckPopup_C_GetRightButton final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_QuickStackCheckPopup_C_GetRightButton;
+
+// Function WBP_QuickStackCheckPopup.WBP_QuickStackCheckPopup_C.GetLeftButton
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_QuickStackCheckPopup_C_GetLeftButton final
+{
+public:
+	class UCommonButtonBase*                      rightButton;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_QuickStackCheckPopup_C_GetLeftButton;
+
+// Function WBP_QuickStackCheckPopup.WBP_QuickStackCheckPopup_C.ExecuteUbergraph_WBP_QuickStackCheckPopup
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_QuickStackCheckPopup_C_ExecuteUbergraph_WBP_QuickStackCheckPopup final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalRightStickScrollSubsystem*          CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBP_HUDDispatchParameter_QuickStackConfirm_C* K2Node_DynamicCast_AsBP_HUDDispatch_Parameter_Quick_Stack_Confirm; // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_QuickStackCheckPopup_C_ExecuteUbergraph_WBP_QuickStackCheckPopup;
 
 // Function WBP_QuickStackCheckPopup.WBP_QuickStackCheckPopup_C.BP_GetDesiredFocusTarget
 // 0x0008 (0x0008 - 0x0000)

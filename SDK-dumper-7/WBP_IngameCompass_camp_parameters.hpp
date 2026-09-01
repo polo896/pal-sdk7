@@ -16,15 +16,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameCompass_camp.WBP_IngameCompass_camp_C.ExecuteUbergraph_WBP_IngameCompass_camp
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_IngameCompass_camp_C_ExecuteUbergraph_WBP_IngameCompass_camp final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameCompass_camp_C_ExecuteUbergraph_WBP_IngameCompass_camp;
-
 // Function WBP_IngameCompass_camp.WBP_IngameCompass_camp_C.SetDistanceText
 // 0x00A8 (0x00A8 - 0x0000)
 struct WBP_IngameCompass_camp_C_SetDistanceText final
@@ -39,6 +30,15 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0090(0x0018)()
 };
 DUMPER7_ASSERTS_WBP_IngameCompass_camp_C_SetDistanceText;
+
+// Function WBP_IngameCompass_camp.WBP_IngameCompass_camp_C.ExecuteUbergraph_WBP_IngameCompass_camp
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_IngameCompass_camp_C_ExecuteUbergraph_WBP_IngameCompass_camp final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameCompass_camp_C_ExecuteUbergraph_WBP_IngameCompass_camp;
 
 // Function WBP_IngameCompass_camp.WBP_IngameCompass_camp_C.SetupTexture
 // 0x0030 (0x0030 - 0x0000)

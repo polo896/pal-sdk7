@@ -33,17 +33,17 @@ public:
 	class UClass*                                 VisualActorClass;                                  // 0x04B8(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, RepNotify, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_MapObject_CommonDropItem3D_StaticMesh_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
-	void BP_OnSetConcreteModel(class UPalMapObjectConcreteModelBase* ConcreteModel);
-	void ExecuteUbergraph_BP_MapObject_CommonDropItem3D(int32 EntryPoint);
-	void OnLoaded_857256B349A5E9E377896489F9AD883E(TSubclassOf<class UObject> Loaded);
-	void OnRep_VisualActorClass();
-	void OnSetConcreteModel(class UPalMapObjectConcreteModelBase* Model);
-	void ReceiveBeginPlay();
-	void ReleaseObject(const struct FVector& Direction);
-	void SetItemModelInServer(TSoftClassPtr<class UClass> VisualModel);
-	void SetupStaticMesh(class UStaticMesh* InStaticMesh, const struct FVector& CenterOfMass, TArray<class UMaterialInterface*>& Material);
 	void SetupVisualInServer(class UPalMapObjectConcreteModelBase* ConcreteModel);
+	void SetupStaticMesh(class UStaticMesh* InStaticMesh, const struct FVector& CenterOfMass, TArray<class UMaterialInterface*>& Material);
+	void SetItemModelInServer(TSoftClassPtr<class UClass> VisualModel);
+	void ReleaseObject(const struct FVector& Direction);
+	void ReceiveBeginPlay();
+	void OnSetConcreteModel(class UPalMapObjectConcreteModelBase* Model);
+	void OnRep_VisualActorClass();
+	void OnLoaded_857256B349A5E9E377896489F9AD883E(TSubclassOf<class UObject> Loaded);
+	void ExecuteUbergraph_BP_MapObject_CommonDropItem3D(int32 EntryPoint);
+	void BP_OnSetConcreteModel(class UPalMapObjectConcreteModelBase* ConcreteModel);
+	void BndEvt__BP_MapObject_CommonDropItem3D_StaticMesh_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
 
 public:
 	static class UClass* StaticClass()

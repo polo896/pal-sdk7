@@ -25,14 +25,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_AssignBoard_WorkListBase_C_ExecuteUbergraph_WBP_AssignBoard_WorkListBase;
 
-// Function WBP_AssignBoard_WorkListBase.WBP_AssignBoard_WorkListBase_C.GetAssignInfo
+// Function WBP_AssignBoard_WorkListBase.WBP_AssignBoard_WorkListBase_C.SetAssignInfo
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_AssignBoard_WorkListBase_C_GetAssignInfo final
+struct WBP_AssignBoard_WorkListBase_C_SetAssignInfo final
 {
 public:
-	struct FPalUIBaseCampWorkFixedAssignInfo      AssignInfo;                                        // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+	struct FPalUIBaseCampWorkFixedAssignInfo      AssignInfo;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-DUMPER7_ASSERTS_WBP_AssignBoard_WorkListBase_C_GetAssignInfo;
+DUMPER7_ASSERTS_WBP_AssignBoard_WorkListBase_C_SetAssignInfo;
 
 // Function WBP_AssignBoard_WorkListBase.WBP_AssignBoard_WorkListBase_C.GetFocusTarget
 // 0x0008 (0x0008 - 0x0000)
@@ -43,14 +43,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_AssignBoard_WorkListBase_C_GetFocusTarget;
 
-// Function WBP_AssignBoard_WorkListBase.WBP_AssignBoard_WorkListBase_C.SetAssignInfo
+// Function WBP_AssignBoard_WorkListBase.WBP_AssignBoard_WorkListBase_C.GetAssignInfo
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_AssignBoard_WorkListBase_C_SetAssignInfo final
+struct WBP_AssignBoard_WorkListBase_C_GetAssignInfo final
 {
 public:
-	struct FPalUIBaseCampWorkFixedAssignInfo      AssignInfo;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPalUIBaseCampWorkFixedAssignInfo      AssignInfo;                                        // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-DUMPER7_ASSERTS_WBP_AssignBoard_WorkListBase_C_SetAssignInfo;
+DUMPER7_ASSERTS_WBP_AssignBoard_WorkListBase_C_GetAssignInfo;
 
 }
 

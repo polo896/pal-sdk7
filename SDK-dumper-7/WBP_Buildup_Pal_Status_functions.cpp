@@ -17,209 +17,63 @@
 namespace SDK
 {
 
-// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.BndEvt__WBP_Buildup_Pal_Status_WBP_CommonButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.UpdateRequiredItemSufficiency
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Buildup_Pal_Status_C::BndEvt__WBP_Buildup_Pal_Status_WBP_CommonButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
+void UWBP_Buildup_Pal_Status_C::UpdateRequiredItemSufficiency()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "BndEvt__WBP_Buildup_Pal_Status_WBP_CommonButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "UpdateRequiredItemSufficiency");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.ConfirmDialog
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Confirmed                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.Update Confirm Button State
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Buildup_Pal_Status_C::ConfirmDialog(bool Confirmed)
+void UWBP_Buildup_Pal_Status_C::Update_Confirm_Button_State()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "ConfirmDialog");
-
-	Params::WBP_Buildup_Pal_Status_C_ConfirmDialog Parms{};
-
-	Parms.Confirmed = Confirmed;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Buildup_Pal_Status_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "Construct");
+		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "Update Confirm Button State");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.DoCustomNavigation
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-class UWidget* UWBP_Buildup_Pal_Status_C::DoCustomNavigation(EUINavigation Navigation_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "DoCustomNavigation");
-
-	Params::WBP_Buildup_Pal_Status_C_DoCustomNavigation Parms{};
-
-	Parms.Navigation_0 = Navigation_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.EmptyEvent
+// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.SwitchPanel
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsUpgrade                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Buildup_Pal_Status_C::EmptyEvent(bool bResult)
+void UWBP_Buildup_Pal_Status_C::SwitchPanel(bool IsUpgrade)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "EmptyEvent");
+		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "SwitchPanel");
 
-	Params::WBP_Buildup_Pal_Status_C_EmptyEvent Parms{};
+	Params::WBP_Buildup_Pal_Status_C_SwitchPanel Parms{};
 
-	Parms.bResult = bResult;
+	Parms.IsUpgrade = IsUpgrade;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.ExecuteUbergraph_WBP_Buildup_Pal_Status
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Buildup_Pal_Status_C::ExecuteUbergraph_WBP_Buildup_Pal_Status(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "ExecuteUbergraph_WBP_Buildup_Pal_Status");
-
-	Params::WBP_Buildup_Pal_Status_C_ExecuteUbergraph_WBP_Buildup_Pal_Status Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.GetFocusTarget
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UUserWidget**                     Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Buildup_Pal_Status_C::GetFocusTarget(class UUserWidget** Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "GetFocusTarget");
-
-	Params::WBP_Buildup_Pal_Status_C_GetFocusTarget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Widget != nullptr)
-		*Widget = Parms.Widget;
-}
-
-
-// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.On Money Changed
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int64                                   NewMoney                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Buildup_Pal_Status_C::On_Money_Changed(int64 NewMoney)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "On Money Changed");
-
-	Params::WBP_Buildup_Pal_Status_C_On_Money_Changed Parms{};
-
-	Parms.NewMoney = NewMoney;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.OnInvisible
+// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.ShowResult
 // (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESlateVisibility                        InVisibility                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Buildup_Pal_Status_C::OnInvisible(ESlateVisibility InVisibility)
+void UWBP_Buildup_Pal_Status_C::ShowResult()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "OnInvisible");
-
-	Params::WBP_Buildup_Pal_Status_C_OnInvisible Parms{};
-
-	Parms.InVisibility = InVisibility;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.Predict Status
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalCharacterStatusOperationName        Status_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   TargetRank                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Buildup_Pal_Status_C::Predict_Status(EPalCharacterStatusOperationName Status_0, int32 TargetRank)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "Predict Status");
-
-	Params::WBP_Buildup_Pal_Status_C_Predict_Status Parms{};
-
-	Parms.Status_0 = Status_0;
-	Parms.TargetRank = TargetRank;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.Refresh Info
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Buildup_Pal_Status_C::Refresh_Info()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "Refresh Info");
+		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "ShowResult");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -247,63 +101,209 @@ void UWBP_Buildup_Pal_Status_C::Setup(class UPalIndividualCharacterHandle* Handl
 }
 
 
-// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.ShowResult
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.Refresh Info
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Buildup_Pal_Status_C::ShowResult()
+void UWBP_Buildup_Pal_Status_C::Refresh_Info()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "ShowResult");
+		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "Refresh Info");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.SwitchPanel
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.Predict Status
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsUpgrade                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalCharacterStatusOperationName        Status_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   TargetRank                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Buildup_Pal_Status_C::SwitchPanel(bool IsUpgrade)
+void UWBP_Buildup_Pal_Status_C::Predict_Status(EPalCharacterStatusOperationName Status_0, int32 TargetRank)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "SwitchPanel");
+		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "Predict Status");
 
-	Params::WBP_Buildup_Pal_Status_C_SwitchPanel Parms{};
+	Params::WBP_Buildup_Pal_Status_C_Predict_Status Parms{};
 
-	Parms.IsUpgrade = IsUpgrade;
+	Parms.Status_0 = Status_0;
+	Parms.TargetRank = TargetRank;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.Update Confirm Button State
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.OnInvisible
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESlateVisibility                        InVisibility                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Buildup_Pal_Status_C::Update_Confirm_Button_State()
+void UWBP_Buildup_Pal_Status_C::OnInvisible(ESlateVisibility InVisibility)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "Update Confirm Button State");
+		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "OnInvisible");
+
+	Params::WBP_Buildup_Pal_Status_C_OnInvisible Parms{};
+
+	Parms.InVisibility = InVisibility;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.On Money Changed
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int64                                   NewMoney                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Buildup_Pal_Status_C::On_Money_Changed(int64 NewMoney)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "On Money Changed");
+
+	Params::WBP_Buildup_Pal_Status_C_On_Money_Changed Parms{};
+
+	Parms.NewMoney = NewMoney;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.GetFocusTarget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UUserWidget**                     Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Buildup_Pal_Status_C::GetFocusTarget(class UUserWidget** Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "GetFocusTarget");
+
+	Params::WBP_Buildup_Pal_Status_C_GetFocusTarget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Widget != nullptr)
+		*Widget = Parms.Widget;
+}
+
+
+// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.ExecuteUbergraph_WBP_Buildup_Pal_Status
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Buildup_Pal_Status_C::ExecuteUbergraph_WBP_Buildup_Pal_Status(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "ExecuteUbergraph_WBP_Buildup_Pal_Status");
+
+	Params::WBP_Buildup_Pal_Status_C_ExecuteUbergraph_WBP_Buildup_Pal_Status Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.EmptyEvent
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Buildup_Pal_Status_C::EmptyEvent(bool bResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "EmptyEvent");
+
+	Params::WBP_Buildup_Pal_Status_C_EmptyEvent Parms{};
+
+	Parms.bResult = bResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.DoCustomNavigation
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_Buildup_Pal_Status_C::DoCustomNavigation(EUINavigation Navigation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "DoCustomNavigation");
+
+	Params::WBP_Buildup_Pal_Status_C_DoCustomNavigation Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Buildup_Pal_Status_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.UpdateRequiredItemSufficiency
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.ConfirmDialog
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Confirmed                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Buildup_Pal_Status_C::UpdateRequiredItemSufficiency()
+void UWBP_Buildup_Pal_Status_C::ConfirmDialog(bool Confirmed)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "UpdateRequiredItemSufficiency");
+		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "ConfirmDialog");
+
+	Params::WBP_Buildup_Pal_Status_C_ConfirmDialog Parms{};
+
+	Parms.Confirmed = Confirmed;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Buildup_Pal_Status.WBP_Buildup_Pal_Status_C.BndEvt__WBP_Buildup_Pal_Status_WBP_CommonButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Buildup_Pal_Status_C::BndEvt__WBP_Buildup_Pal_Status_WBP_CommonButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Pal_Status_C", "BndEvt__WBP_Buildup_Pal_Status_WBP_CommonButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

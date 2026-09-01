@@ -33,9 +33,9 @@ public:
 	class USceneComponent*                        Root;                                              // 0x0440(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnSetConcreteModel(class UPalMapObjectConcreteModelBase* ConcreteModel);
-	void ExecuteUbergraph_BP_MapObject_SupplyDrop(int32 EntryPoint);
 	void SetActiveFXInLocal(class UPalMapObjectConcreteModelBase* ConcreteModel);
+	void ExecuteUbergraph_BP_MapObject_SupplyDrop(int32 EntryPoint);
+	void BP_OnSetConcreteModel(class UPalMapObjectConcreteModelBase* ConcreteModel);
 
 public:
 	static class UClass* StaticClass()

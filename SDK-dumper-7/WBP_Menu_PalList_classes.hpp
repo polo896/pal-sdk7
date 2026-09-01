@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "WBP_IndividualParameterBindWidget_classes.hpp"
 #include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
-#include "WBP_IndividualParameterBindWidget_classes.hpp"
 
 
 namespace SDK
@@ -59,12 +59,6 @@ public:
 	void UpdateHunger(double Now, double Max);
 	void UpdateHP(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& nowMaxHP);
 	void UpdateFavorite(int32 NewIndex);
-	void BindFromHandle(class UPalIndividualCharacterHandle* targetHandle);
-	void AnmEvent_Unfocus();
-	void AnmEvent_ResetPush();
-	void AnmEvent_Push();
-	void AnmEvent_Open();
-	void AnmEvent_Focus();
 	void Update_Level(int32 NewLevel);
 	void Unbind();
 	void SetMuteClickEvent(bool IsMute);
@@ -78,6 +72,12 @@ public:
 	void BndEvt__WBP_Menu_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 	void BndEvt__WBP_Menu_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 	void BndEvt__WBP_Menu_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BindFromHandle(class UPalIndividualCharacterHandle* targetHandle);
+	void AnmEvent_Unfocus();
+	void AnmEvent_ResetPush();
+	void AnmEvent_Push();
+	void AnmEvent_Open();
+	void AnmEvent_Focus();
 
 public:
 	static class UClass* StaticClass()

@@ -17,22 +17,159 @@
 namespace SDK
 {
 
-// Function ModActor.ModActor_C.PostBeginPlay
-// (BlueprintCallable, BlueprintEvent)
+// Function ModActor.ModActor_C.RequestBatchAsyncLoad
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const TArray<class FString>&            AssetPaths                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class UObject*                          Requester                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ModActor_2::AModActor_C::PostBeginPlay()
+void ModActor_2::AModActor_C::RequestBatchAsyncLoad(const TArray<class FString>& AssetPaths, class UObject* Requester)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ModActor_C", "PostBeginPlay");
+		Func = Class->GetFunction("ModActor_C", "RequestBatchAsyncLoad");
+
+	Params::ModActor_C_RequestBatchAsyncLoad Parms{};
+
+	Parms.AssetPaths = std::move(AssetPaths);
+	Parms.Requester = Requester;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.ReEnableClicks
+// (BlueprintCallable, BlueprintEvent)
+
+void ModActor_2::AModActor_C::ReEnableClicks()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "ReEnableClicks");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
+// Function ModActor.ModActor_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ModActor_2::AModActor_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.PrintToModLoader
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    Message                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void ModActor_2::AModActor_C::PrintToModLoader(const class FString& Message)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "PrintToModLoader");
+
+	Params::ModActor_C_PrintToModLoader Parms{};
+
+	Parms.Message = std::move(Message);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.OnCompleted_Event
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          Requester                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const TArray<class UObject*>&           LoadedAssets                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void ModActor_2::AModActor_C::OnCompleted_Event(class UObject* Requester, const TArray<class UObject*>& LoadedAssets)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "OnCompleted_Event");
+
+	Params::ModActor_C_OnCompleted_Event Parms{};
+
+	Parms.Requester = Requester;
+	Parms.LoadedAssets = std::move(LoadedAssets);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.OnClicked_Event
+// (BlueprintCallable, BlueprintEvent)
+
+void ModActor_2::AModActor_C::OnClicked_Event()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "OnClicked_Event");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ModActor.ModActor_C.GetAndRemoveLoadedAssets
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class UObject*&                   Requester                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+// TArray<class UObject*>*                 OutAssets                                              (Parm, OutParm)
+
+void ModActor_2::AModActor_C::GetAndRemoveLoadedAssets(const class UObject*& Requester, TArray<class UObject*>* OutAssets)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "GetAndRemoveLoadedAssets");
+
+	Params::ModActor_C_GetAndRemoveLoadedAssets Parms{};
+
+	Parms.Requester = Requester;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutAssets != nullptr)
+		*OutAssets = std::move(Parms.OutAssets);
+}
+
+
+// Function ModActor.ModActor_C.GetAllLoadedAssets
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<class UObject*>*                 OutAssets                                              (Parm, OutParm)
+
+void ModActor_2::AModActor_C::GetAllLoadedAssets(TArray<class UObject*>* OutAssets)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "GetAllLoadedAssets");
+
+	Params::ModActor_C_GetAllLoadedAssets Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutAssets != nullptr)
+		*OutAssets = std::move(Parms.OutAssets);
+}
+
+
 // Function ModActor.ModActor_C.ExecuteUbergraph_ModActor
-// (Final, UbergraphFunction)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -48,6 +185,54 @@ void ModActor_2::AModActor_C::ExecuteUbergraph_ModActor(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ModActor.ModActor_C.BP_PopulateDropdownList_F
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UScrollBox*                       TargetScrollBox                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// TArray<class FString>&                  OptionsList                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void ModActor_2::AModActor_C::BP_PopulateDropdownList_F(class UScrollBox* TargetScrollBox, TArray<class FString>& OptionsList)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "BP_PopulateDropdownList_F");
+
+	Params::ModActor_C_BP_PopulateDropdownList_F Parms{};
+
+	Parms.TargetScrollBox = TargetScrollBox;
+	Parms.OptionsList = std::move(OptionsList);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	OptionsList = std::move(Parms.OptionsList);
+}
+
+
+// Function ModActor.ModActor_C.BP_PopulateDropdownList
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UScrollBox*                       TargetScrollBox                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// TArray<class FString>&                  OptionsList                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void ModActor_2::AModActor_C::BP_PopulateDropdownList(class UScrollBox* TargetScrollBox, TArray<class FString>& OptionsList)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ModActor_C", "BP_PopulateDropdownList");
+
+	Params::ModActor_C_BP_PopulateDropdownList Parms{};
+
+	Parms.TargetScrollBox = TargetScrollBox;
+	Parms.OptionsList = std::move(OptionsList);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	OptionsList = std::move(Parms.OptionsList);
 }
 
 }

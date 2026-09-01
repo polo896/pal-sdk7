@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function BP_DropWeaponPart.BP_DropWeaponPart_C.ExecuteUbergraph_BP_DropWeaponPart
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_DropWeaponPart_C::ExecuteUbergraph_BP_DropWeaponPart(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_DropWeaponPart_C", "ExecuteUbergraph_BP_DropWeaponPart");
+
+	Params::BP_DropWeaponPart_C_ExecuteUbergraph_BP_DropWeaponPart Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_DropWeaponPart.BP_DropWeaponPart_C.CustomBegin
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -36,26 +56,6 @@ void ABP_DropWeaponPart_C::CustomBegin(class UStaticMesh* Mesh, const struct FVe
 	Parms.Mesh = Mesh;
 	Parms.Velocity = std::move(Velocity);
 	Parms.AngularIntensify = AngularIntensify;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_DropWeaponPart.BP_DropWeaponPart_C.ExecuteUbergraph_BP_DropWeaponPart
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_DropWeaponPart_C::ExecuteUbergraph_BP_DropWeaponPart(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DropWeaponPart_C", "ExecuteUbergraph_BP_DropWeaponPart");
-
-	Params::BP_DropWeaponPart_C_ExecuteUbergraph_BP_DropWeaponPart Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

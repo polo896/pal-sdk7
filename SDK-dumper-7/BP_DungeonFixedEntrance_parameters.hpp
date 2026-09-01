@@ -28,16 +28,6 @@ public:
 };
 DUMPER7_ASSERTS_BP_DungeonFixedEntrance_C_GetInteractWidget;
 
-// Function BP_DungeonFixedEntrance.BP_DungeonFixedEntrance_C.GetDeadItemDropPoint
-// 0x00C0 (0x00C0 - 0x0000)
-struct BP_DungeonFixedEntrance_C_GetDeadItemDropPoint final
-{
-public:
-	struct FTransform                             ReturnValue;                                       // 0x0000(0x0060)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0060(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_DungeonFixedEntrance_C_GetDeadItemDropPoint;
-
 // Function BP_DungeonFixedEntrance.BP_DungeonFixedEntrance_C.GetWarpPoint
 // 0x00C0 (0x00C0 - 0x0000)
 struct BP_DungeonFixedEntrance_C_GetWarpPoint final
@@ -47,6 +37,16 @@ public:
 	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0060(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_DungeonFixedEntrance_C_GetWarpPoint;
+
+// Function BP_DungeonFixedEntrance.BP_DungeonFixedEntrance_C.GetDeadItemDropPoint
+// 0x00C0 (0x00C0 - 0x0000)
+struct BP_DungeonFixedEntrance_C_GetDeadItemDropPoint final
+{
+public:
+	struct FTransform                             ReturnValue;                                       // 0x0000(0x0060)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0060(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_DungeonFixedEntrance_C_GetDeadItemDropPoint;
 
 }
 

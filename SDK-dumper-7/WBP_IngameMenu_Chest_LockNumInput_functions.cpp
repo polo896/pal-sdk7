@@ -17,21 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_IngameMenu_Chest_LockNumInput.WBP_IngameMenu_Chest_LockNumInput_C.ExecuteUbergraph_WBP_IngameMenu_Chest_LockNumInput
-// (Final, UbergraphFunction)
+// Function WBP_IngameMenu_Chest_LockNumInput.WBP_IngameMenu_Chest_LockNumInput_C.SetOn
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_Chest_LockNumInput_C::ExecuteUbergraph_WBP_IngameMenu_Chest_LockNumInput(int32 EntryPoint)
+void UWBP_IngameMenu_Chest_LockNumInput_C::SetOn(bool IsOn)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Chest_LockNumInput_C", "ExecuteUbergraph_WBP_IngameMenu_Chest_LockNumInput");
+		Func = Class->GetFunction("WBP_IngameMenu_Chest_LockNumInput_C", "SetOn");
 
-	Params::WBP_IngameMenu_Chest_LockNumInput_C_ExecuteUbergraph_WBP_IngameMenu_Chest_LockNumInput Parms{};
+	Params::WBP_IngameMenu_Chest_LockNumInput_C_SetOn Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.IsOn = IsOn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,21 +57,21 @@ void UWBP_IngameMenu_Chest_LockNumInput_C::PlayAuthAnm(bool PlayPass)
 }
 
 
-// Function WBP_IngameMenu_Chest_LockNumInput.WBP_IngameMenu_Chest_LockNumInput_C.SetOn
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_Chest_LockNumInput.WBP_IngameMenu_Chest_LockNumInput_C.ExecuteUbergraph_WBP_IngameMenu_Chest_LockNumInput
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_Chest_LockNumInput_C::SetOn(bool IsOn)
+void UWBP_IngameMenu_Chest_LockNumInput_C::ExecuteUbergraph_WBP_IngameMenu_Chest_LockNumInput(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Chest_LockNumInput_C", "SetOn");
+		Func = Class->GetFunction("WBP_IngameMenu_Chest_LockNumInput_C", "ExecuteUbergraph_WBP_IngameMenu_Chest_LockNumInput");
 
-	Params::WBP_IngameMenu_Chest_LockNumInput_C_SetOn Parms{};
+	Params::WBP_IngameMenu_Chest_LockNumInput_C_ExecuteUbergraph_WBP_IngameMenu_Chest_LockNumInput Parms{};
 
-	Parms.IsOn = IsOn;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.ExecuteUbergraph_WBP_RaidBossAreaStatusWorldHUD
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_RaidBossAreaStatusWorldHUD_C::ExecuteUbergraph_WBP_RaidBossAreaStatusWorldHUD(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RaidBossAreaStatusWorldHUD_C", "ExecuteUbergraph_WBP_RaidBossAreaStatusWorldHUD");
-
-	Params::WBP_RaidBossAreaStatusWorldHUD_C_ExecuteUbergraph_WBP_RaidBossAreaStatusWorldHUD Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.GetUIModel
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -57,35 +37,91 @@ class UPalUIMapObjectRaidBossAreaStatusModel* UWBP_RaidBossAreaStatusWorldHUD_C:
 }
 
 
-// Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.ExecuteUbergraph_WBP_RaidBossAreaStatusWorldHUD
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_RaidBossAreaStatusWorldHUD_C::OnSetup()
+void UWBP_RaidBossAreaStatusWorldHUD_C::ExecuteUbergraph_WBP_RaidBossAreaStatusWorldHUD(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RaidBossAreaStatusWorldHUD_C", "OnSetup");
+		Func = Class->GetFunction("WBP_RaidBossAreaStatusWorldHUD_C", "ExecuteUbergraph_WBP_RaidBossAreaStatusWorldHUD");
+
+	Params::WBP_RaidBossAreaStatusWorldHUD_C_ExecuteUbergraph_WBP_RaidBossAreaStatusWorldHUD Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_RaidBossAreaStatusWorldHUD_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RaidBossAreaStatusWorldHUD_C", "Tick");
+
+	Params::WBP_RaidBossAreaStatusWorldHUD_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.Setup
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_RaidBossAreaStatusWorldHUD_C::Setup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RaidBossAreaStatusWorldHUD_C", "Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.OnUpdatePhase
+// Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.ReflectCurrentRemaingTime
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalUIMapObjectRaidBossAreaStatusModel*UIModel                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_RaidBossAreaStatusWorldHUD_C::OnUpdatePhase(class UPalUIMapObjectRaidBossAreaStatusModel* UIModel)
+void UWBP_RaidBossAreaStatusWorldHUD_C::ReflectCurrentRemaingTime()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RaidBossAreaStatusWorldHUD_C", "OnUpdatePhase");
+		Func = Class->GetFunction("WBP_RaidBossAreaStatusWorldHUD_C", "ReflectCurrentRemaingTime");
 
-	Params::WBP_RaidBossAreaStatusWorldHUD_C_OnUpdatePhase Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.UIModel = UIModel;
+
+// Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.ReflectCurrentPhase
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalRaidBossAreaPhase                   InPhase                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_RaidBossAreaStatusWorldHUD_C::ReflectCurrentPhase(EPalRaidBossAreaPhase InPhase)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RaidBossAreaStatusWorldHUD_C", "ReflectCurrentPhase");
+
+	Params::WBP_RaidBossAreaStatusWorldHUD_C_ReflectCurrentPhase Parms{};
+
+	Parms.InPhase = InPhase;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -111,73 +147,37 @@ void UWBP_RaidBossAreaStatusWorldHUD_C::OnUpdateRaidBossStaticItemId(class UPalU
 }
 
 
-// Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.ReflectCurrentPhase
+// Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.OnUpdatePhase
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EPalRaidBossAreaPhase                   InPhase                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalUIMapObjectRaidBossAreaStatusModel*UIModel                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_RaidBossAreaStatusWorldHUD_C::ReflectCurrentPhase(EPalRaidBossAreaPhase InPhase)
+void UWBP_RaidBossAreaStatusWorldHUD_C::OnUpdatePhase(class UPalUIMapObjectRaidBossAreaStatusModel* UIModel)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RaidBossAreaStatusWorldHUD_C", "ReflectCurrentPhase");
+		Func = Class->GetFunction("WBP_RaidBossAreaStatusWorldHUD_C", "OnUpdatePhase");
 
-	Params::WBP_RaidBossAreaStatusWorldHUD_C_ReflectCurrentPhase Parms{};
+	Params::WBP_RaidBossAreaStatusWorldHUD_C_OnUpdatePhase Parms{};
 
-	Parms.InPhase = InPhase;
+	Parms.UIModel = UIModel;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.ReflectCurrentRemaingTime
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_RaidBossAreaStatusWorldHUD_C::ReflectCurrentRemaingTime()
+void UWBP_RaidBossAreaStatusWorldHUD_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RaidBossAreaStatusWorldHUD_C", "ReflectCurrentRemaingTime");
+		Func = Class->GetFunction("WBP_RaidBossAreaStatusWorldHUD_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.Setup
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_RaidBossAreaStatusWorldHUD_C::Setup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RaidBossAreaStatusWorldHUD_C", "Setup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_RaidBossAreaStatusWorldHUD_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RaidBossAreaStatusWorldHUD_C", "Tick");
-
-	Params::WBP_RaidBossAreaStatusWorldHUD_C_Tick Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

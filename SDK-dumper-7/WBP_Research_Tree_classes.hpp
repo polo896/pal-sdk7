@@ -49,19 +49,19 @@ public:
 	TArray<class UWBP_Research_TreeLv_C*>         LvBlocks;                                          // 0x0388(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void CalcNodeSpace(const TMap<class FName, struct FTreeNodeData>& TreeNodeMap, class FName CurrentNode, int32* RequireSpace);
-	void CalcParentNodeMaxRank(TMap<class FName, struct FTreeNodeData>& TreeData, class FName NodeID, int32* Rank);
 	class UWBP_Research_TreeIcon_C* CreateNewIcon(const struct FPalUIGuildLabResearchInfo& ResearchInfo);
-	void Draw_Node_Line(class FName NodeID, const struct FTreeNodeData& NodeData);
-	void ExecuteUbergraph_WBP_Research_Tree(int32 EntryPoint);
-	void GetFocusTarget(class UWidget** FocusTarget);
-	struct FEventReply OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent);
-	void OnInitialized();
-	void OnResearchHovered(class FName ResearchId);
-	void OnResearchSelect(class FName ResearchId);
-	void OnResearchUnhovered();
-	void ReleaseCurrentPin();
+	void CalcParentNodeMaxRank(TMap<class FName, struct FTreeNodeData>& TreeData, class FName NodeID, int32* Rank);
+	void CalcNodeSpace(const TMap<class FName, struct FTreeNodeData>& TreeNodeMap, class FName CurrentNode, int32* RequireSpace);
 	void TreeConstruct(const TArray<struct FPalUIGuildLabResearchInfo>& Researchs, EPalWorkSuitability Type);
+	void ReleaseCurrentPin();
+	void OnResearchUnhovered();
+	void OnResearchSelect(class FName ResearchId);
+	void OnResearchHovered(class FName ResearchId);
+	void OnInitialized();
+	struct FEventReply OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent);
+	void GetFocusTarget(class UWidget** FocusTarget);
+	void ExecuteUbergraph_WBP_Research_Tree(int32 EntryPoint);
+	void Draw_Node_Line(class FName NodeID, const struct FTreeNodeData& NodeData);
 
 public:
 	static class UClass* StaticClass()

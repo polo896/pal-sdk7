@@ -16,17 +16,14 @@
 namespace SDK::Params
 {
 
-// Function WBP_Ingame_Exp_Reward.WBP_Ingame_Exp_Reward_C.ExecuteUbergraph_WBP_Ingame_Exp_Reward
+// Function WBP_Ingame_Exp_Reward.WBP_Ingame_Exp_Reward_C.SetTitle
 // 0x0018 (0x0018 - 0x0000)
-struct WBP_Ingame_Exp_Reward_C_ExecuteUbergraph_WBP_Ingame_Exp_Reward final
+struct WBP_Ingame_Exp_Reward_C_SetTitle final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   TitleText;                                         // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-DUMPER7_ASSERTS_WBP_Ingame_Exp_Reward_C_ExecuteUbergraph_WBP_Ingame_Exp_Reward;
+DUMPER7_ASSERTS_WBP_Ingame_Exp_Reward_C_SetTitle;
 
 // Function WBP_Ingame_Exp_Reward.WBP_Ingame_Exp_Reward_C.SetExp
 // 0x0098 (0x0098 - 0x0000)
@@ -42,14 +39,17 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Ingame_Exp_Reward_C_SetExp;
 
-// Function WBP_Ingame_Exp_Reward.WBP_Ingame_Exp_Reward_C.SetTitle
+// Function WBP_Ingame_Exp_Reward.WBP_Ingame_Exp_Reward_C.ExecuteUbergraph_WBP_Ingame_Exp_Reward
 // 0x0018 (0x0018 - 0x0000)
-struct WBP_Ingame_Exp_Reward_C_SetTitle final
+struct WBP_Ingame_Exp_Reward_C_ExecuteUbergraph_WBP_Ingame_Exp_Reward final
 {
 public:
-	class FText                                   TitleText;                                         // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Ingame_Exp_Reward_C_SetTitle;
+DUMPER7_ASSERTS_WBP_Ingame_Exp_Reward_C_ExecuteUbergraph_WBP_Ingame_Exp_Reward;
 
 }
 

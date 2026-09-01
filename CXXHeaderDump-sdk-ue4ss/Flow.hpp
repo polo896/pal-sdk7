@@ -117,13 +117,13 @@ class UFlowAsset : public UObject
 {
     FGuid AssetGuid;                                                                  // 0x0028 (size: 0x10)
     bool bWorldBound;                                                                 // 0x0038 (size: 0x1)
-    TMap<class FGuid, class UFlowNode*> Nodes;                                        // 0x0088 (size: 0x50)
-    TArray<class UFlowAsset*> ActiveInstances;                                        // 0x00D8 (size: 0x10)
+    TMap<FGuid, UFlowNode*> Nodes;                                                    // 0x0088 (size: 0x50)
+    TArray<UFlowAsset*> ActiveInstances;                                              // 0x00D8 (size: 0x10)
     class UFlowAsset* TemplateAsset;                                                  // 0x00E8 (size: 0x8)
     TSet<UFlowNode_CustomInput*> CustomInputNodes;                                    // 0x0150 (size: 0x50)
     TSet<UFlowNode*> PreloadedNodes;                                                  // 0x01A0 (size: 0x50)
-    TArray<class UFlowNode*> ActiveNodes;                                             // 0x01F0 (size: 0x10)
-    TArray<class UFlowNode*> RecordedNodes;                                           // 0x0200 (size: 0x10)
+    TArray<UFlowNode*> ActiveNodes;                                                   // 0x01F0 (size: 0x10)
+    TArray<UFlowNode*> RecordedNodes;                                                 // 0x0200 (size: 0x10)
     UClass* ExpectedOwnerClass;                                                       // 0x0218 (size: 0x8)
 
     class AActor* TryFindActorOwner();
@@ -133,11 +133,11 @@ class UFlowAsset : public UObject
     void LoadInstance(const FFlowAssetSaveData& AssetRecord);
     bool IsBoundToWorld();
     bool IsActive();
-    TArray<class UFlowNode*> GetRecordedNodes();
+    TArray<UFlowNode*> GetRecordedNodes();
     class UObject* GetOwner();
-    TArray<class UFlowNode*> GetNodesInExecutionOrder(class UFlowNode* FirstIteratedNode, const TSubclassOf<class UFlowNode> FlowNodeClass);
+    TArray<UFlowNode*> GetNodesInExecutionOrder(class UFlowNode* FirstIteratedNode, const TSubclassOf<class UFlowNode> FlowNodeClass);
     class UFlowNode* GetDefaultEntryNode();
-    TArray<class UFlowNode*> GetActiveNodes();
+    TArray<UFlowNode*> GetActiveNodes();
 }; // Size: 0x220
 
 class UFlowComponent : public UActorComponent
@@ -200,7 +200,7 @@ class UFlowNode : public UObject
     EFlowSignalMode SignalMode;                                                       // 0x0058 (size: 0x1)
     TArray<FFlowPin> InputPins;                                                       // 0x0060 (size: 0x10)
     TArray<FFlowPin> OutputPins;                                                      // 0x0070 (size: 0x10)
-    TMap<class FName, class FConnectedPin> Connections;                               // 0x0080 (size: 0x50)
+    TMap<FName, FConnectedPin> Connections;                                           // 0x0080 (size: 0x50)
     EFlowNodeState ActivationState;                                                   // 0x00D1 (size: 0x1)
 
     void TriggerOutputPin(const FFlowOutputPinHandle Pin, const bool bFinish, const EFlowPinActivationType ActivationType);
@@ -369,7 +369,7 @@ class UFlowNode_OnNotifyFromActor : public UFlowNode_ComponentObserver
 
 class UFlowNode_PlayLevelSequence : public UFlowNode
 {
-    TSoftObjectPtr<ULevelSequence> Sequence;                                          // 0x00D8 (size: 0x30)
+    TSoftObjectPtr<class ULevelSequence> Sequence;                                    // 0x00D8 (size: 0x30)
     FMovieSceneSequencePlaybackSettings PlaybackSettings;                             // 0x0108 (size: 0x20)
     bool bPlayReverse;                                                                // 0x0128 (size: 0x1)
     FLevelSequenceCameraSettings CameraSettings;                                      // 0x0129 (size: 0x2)
@@ -396,7 +396,7 @@ class UFlowNode_Start : public UFlowNode
 
 class UFlowNode_SubGraph : public UFlowNode
 {
-    TSoftObjectPtr<UFlowAsset> Asset;                                                 // 0x00D8 (size: 0x30)
+    TSoftObjectPtr<class UFlowAsset> Asset;                                           // 0x00D8 (size: 0x30)
     bool bCanInstanceIdenticalAsset;                                                  // 0x0108 (size: 0x1)
     FString SavedAssetInstanceName;                                                   // 0x0110 (size: 0x10)
 
@@ -447,9 +447,9 @@ class UFlowSettings : public UDeveloperSettings
 
 class UFlowSubsystem : public UGameInstanceSubsystem
 {
-    TArray<class UFlowAsset*> InstancedTemplates;                                     // 0x0030 (size: 0x10)
-    TMap<class UFlowAsset*, class TWeakObjectPtr<UObject>> RootInstances;             // 0x0040 (size: 0x50)
-    TMap<class UFlowNode_SubGraph*, class UFlowAsset*> InstancedSubFlows;             // 0x0090 (size: 0x50)
+    TArray<UFlowAsset*> InstancedTemplates;                                           // 0x0030 (size: 0x10)
+    TMap<UFlowAsset*, TWeakObjectPtr<class UObject>> RootInstances;                   // 0x0040 (size: 0x50)
+    TMap<UFlowNode_SubGraph*, UFlowAsset*> InstancedSubFlows;                         // 0x0090 (size: 0x50)
     class UFlowSaveGame* LoadedSaveGame;                                              // 0x00E0 (size: 0x8)
     FFlowSubsystemOnSaveGame OnSaveGame;                                              // 0x00E8 (size: 0x10)
     void SimpleFlowEvent();
@@ -468,16 +468,16 @@ class UFlowSubsystem : public UGameInstanceSubsystem
     void LoadSubFlow(class UFlowNode_SubGraph* SubGraphNode, FString SavedAssetInstanceName);
     void LoadRootFlow(class UObject* Owner, class UFlowAsset* FlowAsset, FString SavedAssetInstanceName);
     TSet<UFlowAsset*> GetRootInstancesByOwner(const class UObject* Owner);
-    TMap<class UObject*, class UFlowAsset*> GetRootInstances();
+    TMap<UObject*, UFlowAsset*> GetRootInstances();
     class UFlowAsset* GetRootFlow(const class UObject* Owner);
     class UFlowSaveGame* GetLoadedSaveGame();
-    TMap<class UFlowNode_SubGraph*, class UFlowAsset*> GetInstancedSubFlows();
+    TMap<UFlowNode_SubGraph*, UFlowAsset*> GetInstancedSubFlows();
     TSet<UFlowComponent*> GetFlowComponentsByTags(const FGameplayTagContainer Tags, const EGameplayContainerMatchType MatchType, const TSubclassOf<class UFlowComponent> ComponentClass, const bool bExactMatch);
     TSet<UFlowComponent*> GetFlowComponentsByTag(const FGameplayTag Tag, const TSubclassOf<class UFlowComponent> ComponentClass, const bool bExactMatch);
     TSet<AActor*> GetFlowActorsByTags(const FGameplayTagContainer Tags, const EGameplayContainerMatchType MatchType, const TSubclassOf<class AActor> actorClass, const bool bExactMatch);
     TSet<AActor*> GetFlowActorsByTag(const FGameplayTag Tag, const TSubclassOf<class AActor> actorClass, const bool bExactMatch);
-    TMap<class AActor*, class UFlowComponent*> GetFlowActorsAndComponentsByTags(const FGameplayTagContainer Tags, const EGameplayContainerMatchType MatchType, const TSubclassOf<class AActor> actorClass, const bool bExactMatch);
-    TMap<class AActor*, class UFlowComponent*> GetFlowActorsAndComponentsByTag(const FGameplayTag Tag, const TSubclassOf<class AActor> actorClass, const bool bExactMatch);
+    TMap<AActor*, UFlowComponent*> GetFlowActorsAndComponentsByTags(const FGameplayTagContainer Tags, const EGameplayContainerMatchType MatchType, const TSubclassOf<class AActor> actorClass, const bool bExactMatch);
+    TMap<AActor*, UFlowComponent*> GetFlowActorsAndComponentsByTag(const FGameplayTag Tag, const TSubclassOf<class AActor> actorClass, const bool bExactMatch);
     void FinishRootFlow(class UObject* Owner, class UFlowAsset* TemplateAsset, const EFlowFinishPolicy FinishPolicy);
     void FinishAllRootFlows(class UObject* Owner, const EFlowFinishPolicy FinishPolicy);
     void AbortActiveFlows();
@@ -498,7 +498,7 @@ class UMovieSceneFlowTrack : public UMovieSceneNameableTrack
     uint8 bFireEventsWhenForwards;                                                    // 0x00A0 (size: 0x1)
     uint8 bFireEventsWhenBackwards;                                                   // 0x00A0 (size: 0x1)
     EFireEventsAtPosition EventPosition;                                              // 0x00A4 (size: 0x1)
-    TArray<class UMovieSceneSection*> Sections;                                       // 0x00A8 (size: 0x10)
+    TArray<UMovieSceneSection*> Sections;                                             // 0x00A8 (size: 0x10)
 
 }; // Size: 0xB8
 

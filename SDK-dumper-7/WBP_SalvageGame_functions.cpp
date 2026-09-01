@@ -17,138 +17,57 @@
 namespace SDK
 {
 
-// Function WBP_SalvageGame.WBP_SalvageGame_C.ExecuteUbergraph_WBP_SalvageGame
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_SalvageGame_C::ExecuteUbergraph_WBP_SalvageGame(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SalvageGame_C", "ExecuteUbergraph_WBP_SalvageGame");
-
-	Params::WBP_SalvageGame_C_ExecuteUbergraph_WBP_SalvageGame Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_SalvageGame.WBP_SalvageGame_C.GetUIModel
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UPalUIMapObjectTreasureBoxSalvageGameModel**Model                                                  (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_SalvageGame_C::GetUIModel(class UPalUIMapObjectTreasureBoxSalvageGameModel** Model)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SalvageGame_C", "GetUIModel");
-
-	Params::WBP_SalvageGame_C_GetUIModel Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Model != nullptr)
-		*Model = Parms.Model;
-}
-
-
-// Function WBP_SalvageGame.WBP_SalvageGame_C.OnActionInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_SalvageGame_C::OnActionInteract()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SalvageGame_C", "OnActionInteract");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_SalvageGame.WBP_SalvageGame_C.OnClose
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_SalvageGame_C::OnClose()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SalvageGame_C", "OnClose");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_SalvageGame.WBP_SalvageGame_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_SalvageGame_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SalvageGame_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_SalvageGame.WBP_SalvageGame_C.PlayResultAnimation
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bSuccess                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_SalvageGame_C::PlayResultAnimation(bool bSuccess)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SalvageGame_C", "PlayResultAnimation");
-
-	Params::WBP_SalvageGame_C_PlayResultAnimation Parms{};
-
-	Parms.bSuccess = bSuccess;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_SalvageGame.WBP_SalvageGame_C.ProceedNeedle
+// Function WBP_SalvageGame.WBP_SalvageGame_C.UpdateRouletteNeedle
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Angle                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_SalvageGame_C::ProceedNeedle(double DeltaTime)
+void UWBP_SalvageGame_C::UpdateRouletteNeedle(double Angle)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SalvageGame_C", "ProceedNeedle");
+		Func = Class->GetFunction("WBP_SalvageGame_C", "UpdateRouletteNeedle");
 
-	Params::WBP_SalvageGame_C_ProceedNeedle Parms{};
+	Params::WBP_SalvageGame_C_UpdateRouletteNeedle Parms{};
 
-	Parms.DeltaTime = DeltaTime;
+	Parms.Angle = Angle;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_SalvageGame.WBP_SalvageGame_C.RequestFinishSalvageGame
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_SalvageGame.WBP_SalvageGame_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_SalvageGame_C::RequestFinishSalvageGame()
+void UWBP_SalvageGame_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SalvageGame_C", "RequestFinishSalvageGame");
+		Func = Class->GetFunction("WBP_SalvageGame_C", "Tick");
+
+	Params::WBP_SalvageGame_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_SalvageGame.WBP_SalvageGame_C.SetupUI
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_SalvageGame_C::SetupUI()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SalvageGame_C", "SetupUI");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -176,57 +95,138 @@ void UWBP_SalvageGame_C::SetupRouletteSetting(double SuccessStartAngle, double S
 }
 
 
-// Function WBP_SalvageGame.WBP_SalvageGame_C.SetupUI
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_SalvageGame.WBP_SalvageGame_C.RequestFinishSalvageGame
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_SalvageGame_C::SetupUI()
+void UWBP_SalvageGame_C::RequestFinishSalvageGame()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SalvageGame_C", "SetupUI");
+		Func = Class->GetFunction("WBP_SalvageGame_C", "RequestFinishSalvageGame");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_SalvageGame.WBP_SalvageGame_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_SalvageGame.WBP_SalvageGame_C.ProceedNeedle
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_SalvageGame_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+void UWBP_SalvageGame_C::ProceedNeedle(double DeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SalvageGame_C", "Tick");
+		Func = Class->GetFunction("WBP_SalvageGame_C", "ProceedNeedle");
 
-	Params::WBP_SalvageGame_C_Tick Parms{};
+	Params::WBP_SalvageGame_C_ProceedNeedle Parms{};
 
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
+	Parms.DeltaTime = DeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_SalvageGame.WBP_SalvageGame_C.UpdateRouletteNeedle
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_SalvageGame.WBP_SalvageGame_C.PlayResultAnimation
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  Angle                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bSuccess                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_SalvageGame_C::UpdateRouletteNeedle(double Angle)
+void UWBP_SalvageGame_C::PlayResultAnimation(bool bSuccess)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SalvageGame_C", "UpdateRouletteNeedle");
+		Func = Class->GetFunction("WBP_SalvageGame_C", "PlayResultAnimation");
 
-	Params::WBP_SalvageGame_C_UpdateRouletteNeedle Parms{};
+	Params::WBP_SalvageGame_C_PlayResultAnimation Parms{};
 
-	Parms.Angle = Angle;
+	Parms.bSuccess = bSuccess;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_SalvageGame.WBP_SalvageGame_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_SalvageGame_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SalvageGame_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_SalvageGame.WBP_SalvageGame_C.OnClose
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_SalvageGame_C::OnClose()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SalvageGame_C", "OnClose");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_SalvageGame.WBP_SalvageGame_C.OnActionInteract
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_SalvageGame_C::OnActionInteract()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SalvageGame_C", "OnActionInteract");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_SalvageGame.WBP_SalvageGame_C.GetUIModel
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UPalUIMapObjectTreasureBoxSalvageGameModel**Model                                                  (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_SalvageGame_C::GetUIModel(class UPalUIMapObjectTreasureBoxSalvageGameModel** Model)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SalvageGame_C", "GetUIModel");
+
+	Params::WBP_SalvageGame_C_GetUIModel Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Model != nullptr)
+		*Model = Parms.Model;
+}
+
+
+// Function WBP_SalvageGame.WBP_SalvageGame_C.ExecuteUbergraph_WBP_SalvageGame
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_SalvageGame_C::ExecuteUbergraph_WBP_SalvageGame(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SalvageGame_C", "ExecuteUbergraph_WBP_SalvageGame");
+
+	Params::WBP_SalvageGame_C_ExecuteUbergraph_WBP_SalvageGame Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

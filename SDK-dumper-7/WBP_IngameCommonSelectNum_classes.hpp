@@ -80,30 +80,30 @@ public:
 	int64                                         MinNum;                                            // 0x05E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AddNum(int64 Num);
-	void BndEvt__WBP_IngameCommonSelectNum_WBP_IngameMenu_WorkSpace_NumArrow_Left_Double_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature(int32 Progress);
-	void BndEvt__WBP_IngameCommonSelectNum_WBP_IngameMenu_WorkSpace_NumArrow_Left_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature(int32 Progress);
-	void BndEvt__WBP_IngameCommonSelectNum_WBP_IngameMenu_WorkSpace_NumArrow_Right_Double_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature(int32 Progress);
-	void BndEvt__WBP_IngameCommonSelectNum_WBP_IngameMenu_WorkSpace_NumArrow_Right_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature(int32 Progress);
-	void BndEvt__WBP_IngameCommonSelectNum_WBP_IngameMenu_WorkSpace_Slider_K2Node_ComponentBoundEvent_5_OnValueChanged__DelegateSignature(int64 NewCount);
-	void Construct();
-	void ExecuteUbergraph_WBP_IngameCommonSelectNum(int32 EntryPoint);
-	void GetNowSelectedNum(int64* Num);
-	void On_Trigger_Right_Arrow_for_Pad();
-	void OnInitialized();
-	void OnInputMethodChangedeVENT(ECommonInputType bNewInputType);
-	void OnTriggerLeftArrow_ForPad();
-	void OnTriggerLeftDoubleArrow_ForPad();
-	void OnTriggerMaxSelect_ForPad();
-	void OnTriggerRightDoubleArrow_ForPad();
-	void OnVisibilityChangedEvent(ESlateVisibility InVisibility);
-	void Set_Min_Max_Num(int64 MaxNum, int64 MinNum_0);
-	void SetMax();
-	void SetNum(int64 NewNum, int32 GroupCount, bool CallDelegate);
-	void SetNumColor(bool ToRed);
-	void SetupInputAction();
-	void UpdateArrowVisibility();
 	void UpdateDigit(int32 DIsplayDigitNum);
+	void UpdateArrowVisibility();
+	void SetupInputAction();
+	void SetNumColor(bool ToRed);
+	void SetNum(int64 NewNum, int32 GroupCount, bool CallDelegate);
+	void SetMax();
+	void Set_Min_Max_Num(int64 MaxNum, int64 MinNum_0);
+	void OnVisibilityChangedEvent(ESlateVisibility InVisibility);
+	void OnTriggerRightDoubleArrow_ForPad();
+	void OnTriggerMaxSelect_ForPad();
+	void OnTriggerLeftDoubleArrow_ForPad();
+	void OnTriggerLeftArrow_ForPad();
+	void OnInputMethodChangedeVENT(ECommonInputType bNewInputType);
+	void OnInitialized();
+	void On_Trigger_Right_Arrow_for_Pad();
+	void GetNowSelectedNum(int64* Num);
+	void ExecuteUbergraph_WBP_IngameCommonSelectNum(int32 EntryPoint);
+	void Construct();
+	void BndEvt__WBP_IngameCommonSelectNum_WBP_IngameMenu_WorkSpace_Slider_K2Node_ComponentBoundEvent_5_OnValueChanged__DelegateSignature(int64 NewCount);
+	void BndEvt__WBP_IngameCommonSelectNum_WBP_IngameMenu_WorkSpace_NumArrow_Right_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature(int32 Progress);
+	void BndEvt__WBP_IngameCommonSelectNum_WBP_IngameMenu_WorkSpace_NumArrow_Right_Double_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature(int32 Progress);
+	void BndEvt__WBP_IngameCommonSelectNum_WBP_IngameMenu_WorkSpace_NumArrow_Left_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature(int32 Progress);
+	void BndEvt__WBP_IngameCommonSelectNum_WBP_IngameMenu_WorkSpace_NumArrow_Left_Double_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature(int32 Progress);
+	void AddNum(int64 Num);
 
 public:
 	static class UClass* StaticClass()

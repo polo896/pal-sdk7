@@ -16,6 +16,24 @@
 namespace SDK::Params
 {
 
+// Function BP_PalBiomeTriggerBox.BP_PalBiomeTriggerBox_C.ReceiveActorEndOverlap
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PalBiomeTriggerBox_C_ReceiveActorEndOverlap final
+{
+public:
+	class AActor*                                 OtherActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBiomeTriggerBox_C_ReceiveActorEndOverlap;
+
+// Function BP_PalBiomeTriggerBox.BP_PalBiomeTriggerBox_C.ReceiveActorBeginOverlap
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PalBiomeTriggerBox_C_ReceiveActorBeginOverlap final
+{
+public:
+	class AActor*                                 OtherActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBiomeTriggerBox_C_ReceiveActorBeginOverlap;
+
 // Function BP_PalBiomeTriggerBox.BP_PalBiomeTriggerBox_C.ExecuteUbergraph_BP_PalBiomeTriggerBox
 // 0x0040 (0x0040 - 0x0000)
 struct BP_PalBiomeTriggerBox_C_ExecuteUbergraph_BP_PalBiomeTriggerBox final
@@ -34,24 +52,6 @@ public:
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_1;    // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_PalBiomeTriggerBox_C_ExecuteUbergraph_BP_PalBiomeTriggerBox;
-
-// Function BP_PalBiomeTriggerBox.BP_PalBiomeTriggerBox_C.ReceiveActorBeginOverlap
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PalBiomeTriggerBox_C_ReceiveActorBeginOverlap final
-{
-public:
-	class AActor*                                 OtherActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBiomeTriggerBox_C_ReceiveActorBeginOverlap;
-
-// Function BP_PalBiomeTriggerBox.BP_PalBiomeTriggerBox_C.ReceiveActorEndOverlap
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PalBiomeTriggerBox_C_ReceiveActorEndOverlap final
-{
-public:
-	class AActor*                                 OtherActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBiomeTriggerBox_C_ReceiveActorEndOverlap;
 
 }
 

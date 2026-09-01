@@ -19,7 +19,7 @@ class UBP_ActionStepBase_C : public UPalActionBase
     double Const_MoveDistance;                                                        // 0x01E0 (size: 0x8)
     double CurrentFallingSpeed;                                                       // 0x01E8 (size: 0x8)
     double Const_FallingAcceleration;                                                 // 0x01F0 (size: 0x8)
-    TArray<class AActor*> IgnoreActors;                                               // 0x01F8 (size: 0x10)
+    TArray<AActor*> IgnoreActors;                                                     // 0x01F8 (size: 0x10)
     double Const_MaxFallingSpeed;                                                     // 0x0208 (size: 0x8)
     double Const_MaxAirborneTime;                                                     // 0x0210 (size: 0x8)
     double CurrentAirboneTime;                                                        // 0x0218 (size: 0x8)

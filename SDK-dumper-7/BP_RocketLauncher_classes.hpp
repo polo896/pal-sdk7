@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "E_PalWeaponAnimationNotify_structs.hpp"
 #include "BP_AssaultRifleBase_classes.hpp"
+#include "E_PalWeaponAnimationNotify_structs.hpp"
 
 
 namespace SDK
@@ -30,34 +30,34 @@ public:
 	class UAnimSequence*                          ReloadAnim;                                        // 0x06E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ChangeTransformForRocketReload(const struct FVector& Location, const struct FRotator& Rotation);
-	void ChangeTransformForRocketWhenReloadIsDone(const struct FVector& Location, const struct FRotator& Lotation);
-	void ExecuteUbergraph_BP_RocketLauncher(int32 EntryPoint);
-	void Get_Right_Hand_Location(struct FVector* RightHandLocation);
-	void GetBackFireLocation(struct FVector* Location, struct FRotator* Rotation);
-	void HiddenWeaponSubPart(bool isHidden);
-	void isUseRightHandAttach(bool* isUse);
-	void OnEndShootAnimation(class UAnimMontage* Montage);
-	void OnNotify(E_PalWeaponAnimationNotify Notify);
-	void OnReload(int32 bulletsNum);
-	void OnStopReload();
-	void PlayFireSound();
-	void PlayReloadSound();
-	void ReceiveBeginPlay();
 	void StopReloadSound();
-	void GetAimingBlurAngle(double* Angle);
-	void GetBlurAngle(double* Angle);
-	void GetInitializeInterval(double* Time);
-	void GetMuzzleEffect(class UNiagaraSystem** NewParam);
-	void GetMuzzleLocation(struct FVector* MuzzleLocation);
-	void GetMuzzleRotator(struct FRotator* Rotator);
-	void GetShootInterval(double* Time);
-	void OnAttachWeapon(class AActor* attachActor);
+	void ReceiveBeginPlay();
+	void PlayReloadSound();
+	void PlayFireSound();
+	void OnStopReload();
+	void OnReload(int32 bulletsNum);
+	void OnNotify(E_PalWeaponAnimationNotify Notify);
+	void OnEndShootAnimation(class UAnimMontage* Montage);
+	void isUseRightHandAttach(bool* isUse);
+	void HiddenWeaponSubPart(bool isHidden);
+	void GetBackFireLocation(struct FVector* Location, struct FRotator* Rotation);
+	void Get_Right_Hand_Location(struct FVector* RightHandLocation);
+	void ExecuteUbergraph_BP_RocketLauncher(int32 EntryPoint);
+	void ChangeTransformForRocketWhenReloadIsDone(const struct FVector& Location, const struct FRotator& Lotation);
+	void ChangeTransformForRocketReload(const struct FVector& Location, const struct FRotator& Rotation);
 	void OnDetachWeapon(class AActor* detachActor);
-	void OnPullTrigger();
-	void OnReloadStart(float InReloadSpeedPlayRate);
-	void OnShoot(class APalBullet* BulletActor);
+	void OnAttachWeapon(class AActor* attachActor);
+	void GetShootInterval(double* Time);
+	void GetMuzzleRotator(struct FRotator* Rotator);
+	void GetMuzzleLocation(struct FVector* MuzzleLocation);
+	void GetMuzzleEffect(class UNiagaraSystem** NewParam);
+	void GetInitializeInterval(double* Time);
+	void GetBlurAngle(double* Angle);
+	void GetAimingBlurAngle(double* Angle);
 	void ShootBullet();
+	void OnShoot(class APalBullet* BulletActor);
+	void OnReloadStart(float InReloadSpeedPlayRate);
+	void OnPullTrigger();
 
 	struct FTransform GetLeftHandTransform() const;
 	bool IsUseLeftHandAttach() const;

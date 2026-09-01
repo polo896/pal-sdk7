@@ -28,7 +28,7 @@ class UWBP_Buildup_Player_StatusContent_C : public UUserWidget
     FWBP_Buildup_Player_StatusContent_COnUnhovered_General OnUnhovered_General;       // 0x0328 (size: 0x10)
     void OnUnhovered_General(class UWBP_Buildup_Player_StatusContent_C* Widget);
     EPalRelicType MyRelicType;                                                        // 0x0338 (size: 0x1)
-    TArray<class UWBP_Buildup_Gauge_C*> GaugeBarWidgets;                              // 0x0340 (size: 0x10)
+    TArray<UWBP_Buildup_Gauge_C*> GaugeBarWidgets;                                    // 0x0340 (size: 0x10)
     int32 CurrentRank;                                                                // 0x0350 (size: 0x4)
     int32 CurrentSimulateAddRank;                                                     // 0x0354 (size: 0x4)
     FWBP_Buildup_Player_StatusContent_COnSimulateChanged OnSimulateChanged;           // 0x0358 (size: 0x10)

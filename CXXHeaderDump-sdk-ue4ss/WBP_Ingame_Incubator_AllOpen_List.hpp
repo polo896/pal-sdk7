@@ -14,7 +14,7 @@ class UWBP_Ingame_Incubator_AllOpen_List_C : public UUserWidget
     class UImage* Image_passive_3;                                                    // 0x02B8 (size: 0x8)
     class UImage* Image_Strong;                                                       // 0x02C0 (size: 0x8)
     class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x02C8 (size: 0x8)
-    TArray<class UImage*> Passives;                                                   // 0x02D0 (size: 0x10)
+    TArray<UImage*> Passives;                                                         // 0x02D0 (size: 0x10)
     int32 Index;                                                                      // 0x02E0 (size: 0x4)
     FWBP_Ingame_Incubator_AllOpen_List_COnHatchedInfoHovered OnHatchedInfoHovered;    // 0x02E8 (size: 0x10)
     void OnHatchedInfoHovered(int32 Index);

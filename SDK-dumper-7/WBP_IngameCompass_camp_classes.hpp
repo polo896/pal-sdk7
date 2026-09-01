@@ -28,9 +28,9 @@ public:
 	class UBP_PalTextBlock_C*                     Text_Length;                                       // 0x04B0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Destruct();
-	void ExecuteUbergraph_WBP_IngameCompass_camp(int32 EntryPoint);
 	void SetDistanceText(double Length);
+	void ExecuteUbergraph_WBP_IngameCompass_camp(int32 EntryPoint);
+	void Destruct();
 	void SetupTexture(TSoftObjectPtr<class UTexture2D> SoftTexture);
 
 public:

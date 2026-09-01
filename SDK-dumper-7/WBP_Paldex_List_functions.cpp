@@ -17,306 +17,41 @@
 namespace SDK
 {
 
-// Function WBP_Paldex_List.WBP_Paldex_List_C.AnmEvent_Focus
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Paldex_List_C::AnmEvent_Focus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_List_C", "AnmEvent_Focus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Paldex_List.WBP_Paldex_List_C.AnmEvent_NotCapture
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Paldex_List_C::AnmEvent_NotCapture()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_List_C", "AnmEvent_NotCapture");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Paldex_List.WBP_Paldex_List_C.AnmEvent_Unfocus
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Paldex_List_C::AnmEvent_Unfocus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_List_C", "AnmEvent_Unfocus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Paldex_List.WBP_Paldex_List_C.BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Paldex_List_C::BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_List_C", "BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_Paldex_List_C_BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Paldex_List.WBP_Paldex_List_C.BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Paldex_List_C::BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_List_C", "BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_Paldex_List_C_BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Paldex_List.WBP_Paldex_List_C.BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Paldex_List_C::BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_List_C", "BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_Paldex_List_C_BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Paldex_List.WBP_Paldex_List_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Paldex_List_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_List_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Paldex_List.WBP_Paldex_List_C.ExecuteUbergraph_WBP_Paldex_List
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Paldex_List_C::ExecuteUbergraph_WBP_Paldex_List(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_List_C", "ExecuteUbergraph_WBP_Paldex_List");
-
-	Params::WBP_Paldex_List_C_ExecuteUbergraph_WBP_Paldex_List Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Paldex_List.WBP_Paldex_List_C.Focus
+// Function WBP_Paldex_List.WBP_Paldex_List_C.SetVisibilityNewMark
 // (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Paldex_List_C::Focus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_List_C", "Focus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Paldex_List.WBP_Paldex_List_C.GetCharacterID
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class FName*                            CharacterID                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESlateVisibility                        NewVisibility                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Paldex_List_C::GetCharacterID(class FName* CharacterID)
+void UWBP_Paldex_List_C::SetVisibilityNewMark(ESlateVisibility NewVisibility)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_List_C", "GetCharacterID");
+		Func = Class->GetFunction("WBP_Paldex_List_C", "SetVisibilityNewMark");
 
-	Params::WBP_Paldex_List_C_GetCharacterID Parms{};
+	Params::WBP_Paldex_List_C_SetVisibilityNewMark Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (CharacterID != nullptr)
-		*CharacterID = Parms.CharacterID;
-}
-
-
-// Function WBP_Paldex_List.WBP_Paldex_List_C.OnClickEvent
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Paldex_List_C::OnClickEvent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_List_C", "OnClickEvent");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Paldex_List.WBP_Paldex_List_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalUIPaldex_DisplayInfo&  DisplayInfo                                            (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_Paldex_List_C::Setup(const struct FPalUIPaldex_DisplayInfo& DisplayInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_List_C", "Setup");
-
-	Params::WBP_Paldex_List_C_Setup Parms{};
-
-	Parms.DisplayInfo = std::move(DisplayInfo);
+	Parms.NewVisibility = NewVisibility;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Paldex_List.WBP_Paldex_List_C.Setup_Captured
+// Function WBP_Paldex_List.WBP_Paldex_List_C.SetupForWorldTreeDragon2
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const struct FPalUIPaldex_DisplayInfo&  DisplayInfo                                            (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_Paldex_List_C::Setup_Captured(const struct FPalUIPaldex_DisplayInfo& DisplayInfo)
+void UWBP_Paldex_List_C::SetupForWorldTreeDragon2(const struct FPalUIPaldex_DisplayInfo& DisplayInfo)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_List_C", "Setup_Captured");
+		Func = Class->GetFunction("WBP_Paldex_List_C", "SetupForWorldTreeDragon2");
 
-	Params::WBP_Paldex_List_C_Setup_Captured Parms{};
+	Params::WBP_Paldex_List_C_SetupForWorldTreeDragon2 Parms{};
 
 	Parms.DisplayInfo = std::move(DisplayInfo);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Paldex_List.WBP_Paldex_List_C.Setup_Encounted
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalUIPaldex_DisplayInfo&  DisplayInfo                                            (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_Paldex_List_C::Setup_Encounted(const struct FPalUIPaldex_DisplayInfo& DisplayInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_List_C", "Setup_Encounted");
-
-	Params::WBP_Paldex_List_C_Setup_Encounted Parms{};
-
-	Parms.DisplayInfo = std::move(DisplayInfo);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Paldex_List.WBP_Paldex_List_C.Setup_NotEncounted
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalUIPaldex_DisplayInfo&  DisplayInfo                                            (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_Paldex_List_C::Setup_NotEncounted(const struct FPalUIPaldex_DisplayInfo& DisplayInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_List_C", "Setup_NotEncounted");
-
-	Params::WBP_Paldex_List_C_Setup_NotEncounted Parms{};
-
-	Parms.DisplayInfo = std::move(DisplayInfo);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Paldex_List.WBP_Paldex_List_C.SetupByCharacterID
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             CharacterID                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Paldex_List_C::SetupByCharacterID(class FName CharacterID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_List_C", "SetupByCharacterID");
-
-	Params::WBP_Paldex_List_C_SetupByCharacterID Parms{};
-
-	Parms.CharacterID = CharacterID;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Paldex_List.WBP_Paldex_List_C.SetupBySimpleText
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_Paldex_List_C::SetupBySimpleText(const class FText& InText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_List_C", "SetupBySimpleText");
-
-	Params::WBP_Paldex_List_C_SetupBySimpleText Parms{};
-
-	Parms.InText = std::move(InText);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -346,19 +81,59 @@ void UWBP_Paldex_List_C::SetupForSkinData(class FName SkinName, TSoftObjectPtr<c
 }
 
 
-// Function WBP_Paldex_List.WBP_Paldex_List_C.SetupForWorldTreeDragon2
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Paldex_List.WBP_Paldex_List_C.SetupBySimpleText
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FPalUIPaldex_DisplayInfo&  DisplayInfo                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_Paldex_List_C::SetupForWorldTreeDragon2(const struct FPalUIPaldex_DisplayInfo& DisplayInfo)
+void UWBP_Paldex_List_C::SetupBySimpleText(const class FText& InText)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_List_C", "SetupForWorldTreeDragon2");
+		Func = Class->GetFunction("WBP_Paldex_List_C", "SetupBySimpleText");
 
-	Params::WBP_Paldex_List_C_SetupForWorldTreeDragon2 Parms{};
+	Params::WBP_Paldex_List_C_SetupBySimpleText Parms{};
+
+	Parms.InText = std::move(InText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Paldex_List.WBP_Paldex_List_C.SetupByCharacterID
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             CharacterID                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Paldex_List_C::SetupByCharacterID(class FName CharacterID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_List_C", "SetupByCharacterID");
+
+	Params::WBP_Paldex_List_C_SetupByCharacterID Parms{};
+
+	Parms.CharacterID = CharacterID;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Paldex_List.WBP_Paldex_List_C.Setup_NotEncounted
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FPalUIPaldex_DisplayInfo&  DisplayInfo                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_Paldex_List_C::Setup_NotEncounted(const struct FPalUIPaldex_DisplayInfo& DisplayInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_List_C", "Setup_NotEncounted");
+
+	Params::WBP_Paldex_List_C_Setup_NotEncounted Parms{};
 
 	Parms.DisplayInfo = std::move(DisplayInfo);
 
@@ -366,23 +141,248 @@ void UWBP_Paldex_List_C::SetupForWorldTreeDragon2(const struct FPalUIPaldex_Disp
 }
 
 
-// Function WBP_Paldex_List.WBP_Paldex_List_C.SetVisibilityNewMark
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Paldex_List.WBP_Paldex_List_C.Setup_Encounted
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ESlateVisibility                        NewVisibility                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FPalUIPaldex_DisplayInfo&  DisplayInfo                                            (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_Paldex_List_C::SetVisibilityNewMark(ESlateVisibility NewVisibility)
+void UWBP_Paldex_List_C::Setup_Encounted(const struct FPalUIPaldex_DisplayInfo& DisplayInfo)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_List_C", "SetVisibilityNewMark");
+		Func = Class->GetFunction("WBP_Paldex_List_C", "Setup_Encounted");
 
-	Params::WBP_Paldex_List_C_SetVisibilityNewMark Parms{};
+	Params::WBP_Paldex_List_C_Setup_Encounted Parms{};
 
-	Parms.NewVisibility = NewVisibility;
+	Parms.DisplayInfo = std::move(DisplayInfo);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Paldex_List.WBP_Paldex_List_C.Setup_Captured
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FPalUIPaldex_DisplayInfo&  DisplayInfo                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_Paldex_List_C::Setup_Captured(const struct FPalUIPaldex_DisplayInfo& DisplayInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_List_C", "Setup_Captured");
+
+	Params::WBP_Paldex_List_C_Setup_Captured Parms{};
+
+	Parms.DisplayInfo = std::move(DisplayInfo);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Paldex_List.WBP_Paldex_List_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FPalUIPaldex_DisplayInfo&  DisplayInfo                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_Paldex_List_C::Setup(const struct FPalUIPaldex_DisplayInfo& DisplayInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_List_C", "Setup");
+
+	Params::WBP_Paldex_List_C_Setup Parms{};
+
+	Parms.DisplayInfo = std::move(DisplayInfo);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Paldex_List.WBP_Paldex_List_C.OnClickEvent
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Paldex_List_C::OnClickEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_List_C", "OnClickEvent");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Paldex_List.WBP_Paldex_List_C.GetCharacterID
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class FName*                            CharacterID                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Paldex_List_C::GetCharacterID(class FName* CharacterID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_List_C", "GetCharacterID");
+
+	Params::WBP_Paldex_List_C_GetCharacterID Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (CharacterID != nullptr)
+		*CharacterID = Parms.CharacterID;
+}
+
+
+// Function WBP_Paldex_List.WBP_Paldex_List_C.Focus
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Paldex_List_C::Focus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_List_C", "Focus");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Paldex_List.WBP_Paldex_List_C.ExecuteUbergraph_WBP_Paldex_List
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Paldex_List_C::ExecuteUbergraph_WBP_Paldex_List(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_List_C", "ExecuteUbergraph_WBP_Paldex_List");
+
+	Params::WBP_Paldex_List_C_ExecuteUbergraph_WBP_Paldex_List Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Paldex_List.WBP_Paldex_List_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Paldex_List_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_List_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Paldex_List.WBP_Paldex_List_C.BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Paldex_List_C::BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_List_C", "BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_Paldex_List_C_BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Paldex_List.WBP_Paldex_List_C.BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Paldex_List_C::BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_List_C", "BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_Paldex_List_C_BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Paldex_List.WBP_Paldex_List_C.BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Paldex_List_C::BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_List_C", "BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_Paldex_List_C_BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Paldex_List.WBP_Paldex_List_C.AnmEvent_Unfocus
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Paldex_List_C::AnmEvent_Unfocus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_List_C", "AnmEvent_Unfocus");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Paldex_List.WBP_Paldex_List_C.AnmEvent_NotCapture
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Paldex_List_C::AnmEvent_NotCapture()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_List_C", "AnmEvent_NotCapture");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Paldex_List.WBP_Paldex_List_C.AnmEvent_Focus
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Paldex_List_C::AnmEvent_Focus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_List_C", "AnmEvent_Focus");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

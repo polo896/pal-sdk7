@@ -27,9 +27,9 @@ public:
 	class UBP_PalTextBlock_C*                     Text_Length;                                       // 0x04A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ChangeBorderColor(const struct FLinearColor& Color);
-	void ChangeBorderDrawType(ESlateBrushDrawType drawType);
 	void SetDistanceText(double Length);
+	void ChangeBorderDrawType(ESlateBrushDrawType drawType);
+	void ChangeBorderColor(const struct FLinearColor& Color);
 	void SetupTexture(TSoftObjectPtr<class UTexture2D> SoftTexture);
 
 public:

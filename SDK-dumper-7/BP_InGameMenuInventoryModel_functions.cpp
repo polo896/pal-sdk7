@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function BP_InGameMenuInventoryModel.BP_InGameMenuInventoryModel_C.Dispose
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBP_InGameMenuInventoryModel_C::Dispose()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InGameMenuInventoryModel_C", "Dispose");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_InGameMenuInventoryModel.BP_InGameMenuInventoryModel_C.Setup
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -40,6 +26,20 @@ void UBP_InGameMenuInventoryModel_C::Setup()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_InGameMenuInventoryModel_C", "Setup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_InGameMenuInventoryModel.BP_InGameMenuInventoryModel_C.Dispose
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBP_InGameMenuInventoryModel_C::Dispose()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_InGameMenuInventoryModel_C", "Dispose");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

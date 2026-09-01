@@ -6,7 +6,7 @@ class UBP_VisualEffect_RarePal_C : public UPalVisualEffectBase
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0070 (size: 0x8)
     class UNiagaraComponent* Effect;                                                  // 0x0078 (size: 0x8)
     double Scale;                                                                     // 0x0080 (size: 0x8)
-    bool isInit;                                                                      // 0x0088 (size: 0x1)
+    bool IsInit;                                                                      // 0x0088 (size: 0x1)
 
     void IsSizeInitialized(bool& IsSizeInitialized);
     void SpawnEffect();

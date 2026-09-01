@@ -14,7 +14,7 @@ class USpreadSheetImpoter : public UObject
     FName AutoUniqueIdColumnName;                                                     // 0x0070 (size: 0x8)
     FName RowNameHashColumnName;                                                      // 0x0078 (size: 0x8)
     TArray<FName> MetaTagText_IgnoreRow;                                              // 0x0080 (size: 0x10)
-    TMap<class FName, class FName> BlueprintName2ObjectPathColumnNameMap;             // 0x0090 (size: 0x50)
+    TMap<FName, FName> BlueprintName2ObjectPathColumnNameMap;                         // 0x0090 (size: 0x50)
     FName BlueprintNamePrefix;                                                        // 0x00E0 (size: 0x8)
     bool bNoticeMessageAtNewRecordImported;                                           // 0x00E8 (size: 0x1)
 

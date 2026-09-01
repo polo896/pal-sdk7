@@ -46,35 +46,35 @@ public:
 	double                                        otomoInteractDistance;                             // 0x0530(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void CanDisplayCoop(bool* CanDisplay);
-	void Construct();
-	void CREATEDELEGATE_PROXYFUNCTION_0(const struct FPalKeyConfigSettings& PrevSettings, const struct FPalKeyConfigSettings& NewSettings);
-	void CreateIndicatorUI();
-	void ExecuteUbergraph_WBP_PalInteractiveObjectIndicatorCanvas(int32 EntryPoint);
-	void GetIndicatorText(TScriptInterface<class IPalInteractiveObjectComponentInterface> InteractiveObject, EPalInteractiveObjectIndicatorType IndicatorType, EPalInteractiveObjectButtonType buttonType, bool CanToggle, class FText* NewParam);
-	void HideIndicators();
-	void HideInteractHUDInterfaceWidget();
-	void HideInteractTargetName();
-	void OnApplicationActivationStateChanged(bool bIsFocused);
-	void OnChangeOtomo();
-	void OnInitialized();
-	void OnKeyConfigChanged(const struct FPalKeyConfigSettings& PreSetting, const struct FPalKeyConfigSettings& NewSetting);
-	void OnRide(class AActor* RideActor);
-	void OnUpdateTargetInteractiveObject(TScriptInterface<class IPalInteractiveObjectComponentInterface> InteractiveObject);
-	void SetupAfterCreatePlayer();
-	void SetupEvent();
-	void SetZOrder(int32 ZOrder_0);
-	void ShowIndicator(EPalInteractiveObjectActionType ActionType, const struct FPalInteractiveObjectActionInfoData& actionInfoData);
-	void ShowIndicators();
-	void ShowInteractHUDInterfaceWidget();
-	void ShowOtomoIndicator(EPalInteractiveObjectActionType ActionType, const struct FPalInteractiveObjectActionInfoData& ActionInfo);
-	void ShowOtomoIndicators();
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void Update_Indicator_UIs();
-	void UpdateIndicatorBoxPosition();
-	void UpdateInteractTargetName();
-	void UpdateOtomoIndicatorPosition();
 	void UpdateOtomoIndicators();
+	void UpdateOtomoIndicatorPosition();
+	void UpdateInteractTargetName();
+	void UpdateIndicatorBoxPosition();
+	void Update_Indicator_UIs();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void ShowOtomoIndicators();
+	void ShowOtomoIndicator(EPalInteractiveObjectActionType ActionType, const struct FPalInteractiveObjectActionInfoData& ActionInfo);
+	void ShowInteractHUDInterfaceWidget();
+	void ShowIndicators();
+	void ShowIndicator(EPalInteractiveObjectActionType ActionType, const struct FPalInteractiveObjectActionInfoData& actionInfoData);
+	void SetZOrder(int32 ZOrder_0);
+	void SetupEvent();
+	void SetupAfterCreatePlayer();
+	void OnUpdateTargetInteractiveObject(TScriptInterface<class IPalInteractiveObjectComponentInterface> InteractiveObject);
+	void OnRide(class AActor* RideActor);
+	void OnKeyConfigChanged(const struct FPalKeyConfigSettings& PreSetting, const struct FPalKeyConfigSettings& NewSetting);
+	void OnInitialized();
+	void OnChangeOtomo();
+	void OnApplicationActivationStateChanged(bool bIsFocused);
+	void HideInteractTargetName();
+	void HideInteractHUDInterfaceWidget();
+	void HideIndicators();
+	void GetIndicatorText(TScriptInterface<class IPalInteractiveObjectComponentInterface> InteractiveObject, EPalInteractiveObjectIndicatorType IndicatorType, EPalInteractiveObjectButtonType buttonType, bool CanToggle, class FText* NewParam);
+	void ExecuteUbergraph_WBP_PalInteractiveObjectIndicatorCanvas(int32 EntryPoint);
+	void CreateIndicatorUI();
+	void CREATEDELEGATE_PROXYFUNCTION_0(const struct FPalKeyConfigSettings& PrevSettings, const struct FPalKeyConfigSettings& NewSettings);
+	void Construct();
+	void CanDisplayCoop(bool* CanDisplay);
 
 public:
 	static class UClass* StaticClass()

@@ -44,16 +44,16 @@ public:
 	TArray<struct FDataTableRowHandle>            WorkHardMsgIds;                                    // 0x0548(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 
 public:
-	void BndEvt__WBP_IngameMenu_Monitoring_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void Construct();
-	void DisplayCurrentWorkHardInfo();
-	void DisplayHoverWorkHardInfo(int32 WorkHardLevel_0);
-	void ExecuteUbergraph_WBP_IngameMenu_Monitoring(int32 EntryPoint);
-	void OnSetup();
-	void OnUpdateWorkHardType(class UPalBaseCampPassiveEffect_WorkHard* EffectWorkHard);
-	void RequestChangeHardWorkLevel(int32 Level);
-	void UpdateWorkHardInfo(int32 WorkHardLevel_0);
 	void UpdateWorkHardInfoPermission();
+	void UpdateWorkHardInfo(int32 WorkHardLevel_0);
+	void RequestChangeHardWorkLevel(int32 Level);
+	void OnUpdateWorkHardType(class UPalBaseCampPassiveEffect_WorkHard* EffectWorkHard);
+	void OnSetup();
+	void ExecuteUbergraph_WBP_IngameMenu_Monitoring(int32 EntryPoint);
+	void DisplayHoverWorkHardInfo(int32 WorkHardLevel_0);
+	void DisplayCurrentWorkHardInfo();
+	void Construct();
+	void BndEvt__WBP_IngameMenu_Monitoring_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

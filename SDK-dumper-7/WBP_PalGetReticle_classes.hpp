@@ -97,37 +97,37 @@ public:
 	double                                        CountupRatePowerExp;                               // 0x04D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Captured(bool isDisplay);
-	void AnmEvent_CloseAndRemoveSecondStep();
-	void AnmEvent_CloseFirstStep();
-	void AnmEvent_CloseSecondStep();
-	void AnmEvent_CountupCriticalBonus();
-	void AnmEvent_FirstToSecond();
-	void AnmEvent_New(bool isDisplay);
-	void AnmEvent_OpenFirstStep();
-	void AnmEvent_OpenSecondStep();
-	void AnmEvent_RandomShake();
-	void AnmEvent_ResetCloseAnim();
-	void AnmEvent_ResetOpenAnim();
-	void AnmEvent_SecondToFirst();
-	void Construct();
-	void Destruct();
-	void DisplayCaptureBonusNum(int32 CaptureBonusCount);
-	void ExecuteUbergraph_WBP_PalGetReticle(int32 EntryPoint);
-	void Finished_EC162AC8447DABC2CF5BD2942C8E3A64();
-	void OnInitialized();
-	void OnTimer_RemoveSelf();
-	void RestartTick();
-	void Set_Bonus_Flags(bool bIsSneakBonus, bool bIsCriticalBonus);
-	void Set_Display_Capture_Rate_Force(double Rate);
-	void SetCaptureRateForce(double CaptureRate);
-	void SetCaptureRateFromListIndex(int32 Index_0);
-	void SetCaptureRateList(TArray<double>& RateList_0);
-	void SetCriticalCaptureRate(TArray<double>& rateArray);
-	void SetWorldLocation(const struct FVector& Location);
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void Update_Display_Rate(double DeltaTime);
 	void Update_Position();
+	void Update_Display_Rate(double DeltaTime);
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void SetWorldLocation(const struct FVector& Location);
+	void SetCriticalCaptureRate(TArray<double>& rateArray);
+	void SetCaptureRateList(TArray<double>& RateList_0);
+	void SetCaptureRateFromListIndex(int32 Index_0);
+	void SetCaptureRateForce(double CaptureRate);
+	void Set_Display_Capture_Rate_Force(double Rate);
+	void Set_Bonus_Flags(bool bIsSneakBonus, bool bIsCriticalBonus);
+	void RestartTick();
+	void OnTimer_RemoveSelf();
+	void OnInitialized();
+	void Finished_EC162AC8447DABC2CF5BD2942C8E3A64();
+	void ExecuteUbergraph_WBP_PalGetReticle(int32 EntryPoint);
+	void DisplayCaptureBonusNum(int32 CaptureBonusCount);
+	void Destruct();
+	void Construct();
+	void AnmEvent_SecondToFirst();
+	void AnmEvent_ResetOpenAnim();
+	void AnmEvent_ResetCloseAnim();
+	void AnmEvent_RandomShake();
+	void AnmEvent_OpenSecondStep();
+	void AnmEvent_OpenFirstStep();
+	void AnmEvent_New(bool isDisplay);
+	void AnmEvent_FirstToSecond();
+	void AnmEvent_CountupCriticalBonus();
+	void AnmEvent_CloseSecondStep();
+	void AnmEvent_CloseFirstStep();
+	void AnmEvent_CloseAndRemoveSecondStep();
+	void AnmEvent_Captured(bool isDisplay);
 
 public:
 	static class UClass* StaticClass()

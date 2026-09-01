@@ -17,7 +17,7 @@ class UBP_Status_CollectItem_C : public UPalStatusCollectItem
     bool IsPaused;                                                                    // 0x0168 (size: 0x1)
     TSubclassOf<class UBP_AIAction_SpawnItemBase_C> BaseCampActionClass;              // 0x0170 (size: 0x8)
     class UPalAIActionBase* AIAction;                                                 // 0x0178 (size: 0x8)
-    TArray<class UDataTable*> LotteryTables;                                          // 0x0180 (size: 0x10)
+    TArray<UDataTable*> LotteryTables;                                                // 0x0180 (size: 0x10)
     bool IsActionPlaying;                                                             // 0x0190 (size: 0x1)
 
     void AddLog_UseSkillInBaseCamp();

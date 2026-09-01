@@ -7,7 +7,7 @@ class UWBP_CommonSelectList_C : public UUserWidget
     class UVerticalBox* VerticalBox_0;                                                // 0x0280 (size: 0x8)
     class UWBP_GuildMemberMenuList_C* WBP_GuildMemberMenuList_2;                      // 0x0288 (size: 0x8)
     class UWBP_GuildMemberMenuList_C* WBP_GuildMemberMenuList_3;                      // 0x0290 (size: 0x8)
-    TMap<class FName, class FName> SelectListMap;                                     // 0x0298 (size: 0x50)
+    TMap<FName, FName> SelectListMap;                                                 // 0x0298 (size: 0x50)
     FWBP_CommonSelectList_COnSelect OnSelect;                                         // 0x02E8 (size: 0x10)
     void OnSelect(FName SelectId);
 

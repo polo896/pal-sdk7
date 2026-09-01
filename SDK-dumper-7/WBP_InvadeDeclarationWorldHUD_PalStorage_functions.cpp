@@ -17,55 +17,15 @@
 namespace SDK
 {
 
-// Function WBP_InvadeDeclarationWorldHUD_PalStorage.WBP_InvadeDeclarationWorldHUD_PalStorage_C.ExecuteUbergraph_WBP_InvadeDeclarationWorldHUD_PalStorage
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_InvadeDeclarationWorldHUD_PalStorage.WBP_InvadeDeclarationWorldHUD_PalStorage_C.カスタムイベント
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_InvadeDeclarationWorldHUD_PalStorage_C::ExecuteUbergraph_WBP_InvadeDeclarationWorldHUD_PalStorage(int32 EntryPoint)
+void UWBP_InvadeDeclarationWorldHUD_PalStorage_C::カスタムイベント()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InvadeDeclarationWorldHUD_PalStorage_C", "ExecuteUbergraph_WBP_InvadeDeclarationWorldHUD_PalStorage");
-
-	Params::WBP_InvadeDeclarationWorldHUD_PalStorage_C_ExecuteUbergraph_WBP_InvadeDeclarationWorldHUD_PalStorage Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_InvadeDeclarationWorldHUD_PalStorage.WBP_InvadeDeclarationWorldHUD_PalStorage_C.OnInvadeDeclaration
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FDateTime&                 StartRealTime                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_InvadeDeclarationWorldHUD_PalStorage_C::OnInvadeDeclaration(const struct FDateTime& StartRealTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InvadeDeclarationWorldHUD_PalStorage_C", "OnInvadeDeclaration");
-
-	Params::WBP_InvadeDeclarationWorldHUD_PalStorage_C_OnInvadeDeclaration Parms{};
-
-	Parms.StartRealTime = std::move(StartRealTime);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_InvadeDeclarationWorldHUD_PalStorage.WBP_InvadeDeclarationWorldHUD_PalStorage_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_InvadeDeclarationWorldHUD_PalStorage_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InvadeDeclarationWorldHUD_PalStorage_C", "OnSetup");
+		Func = Class->GetFunction("WBP_InvadeDeclarationWorldHUD_PalStorage_C", "カスタムイベント");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -93,17 +53,57 @@ void UWBP_InvadeDeclarationWorldHUD_PalStorage_C::Tick(const struct FGeometry& M
 }
 
 
-// Function WBP_InvadeDeclarationWorldHUD_PalStorage.WBP_InvadeDeclarationWorldHUD_PalStorage_C.カスタムイベント
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_InvadeDeclarationWorldHUD_PalStorage.WBP_InvadeDeclarationWorldHUD_PalStorage_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_InvadeDeclarationWorldHUD_PalStorage_C::カスタムイベント()
+void UWBP_InvadeDeclarationWorldHUD_PalStorage_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InvadeDeclarationWorldHUD_PalStorage_C", "カスタムイベント");
+		Func = Class->GetFunction("WBP_InvadeDeclarationWorldHUD_PalStorage_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InvadeDeclarationWorldHUD_PalStorage.WBP_InvadeDeclarationWorldHUD_PalStorage_C.OnInvadeDeclaration
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FDateTime&                 StartRealTime                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_InvadeDeclarationWorldHUD_PalStorage_C::OnInvadeDeclaration(const struct FDateTime& StartRealTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InvadeDeclarationWorldHUD_PalStorage_C", "OnInvadeDeclaration");
+
+	Params::WBP_InvadeDeclarationWorldHUD_PalStorage_C_OnInvadeDeclaration Parms{};
+
+	Parms.StartRealTime = std::move(StartRealTime);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_InvadeDeclarationWorldHUD_PalStorage.WBP_InvadeDeclarationWorldHUD_PalStorage_C.ExecuteUbergraph_WBP_InvadeDeclarationWorldHUD_PalStorage
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_InvadeDeclarationWorldHUD_PalStorage_C::ExecuteUbergraph_WBP_InvadeDeclarationWorldHUD_PalStorage(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InvadeDeclarationWorldHUD_PalStorage_C", "ExecuteUbergraph_WBP_InvadeDeclarationWorldHUD_PalStorage");
+
+	Params::WBP_InvadeDeclarationWorldHUD_PalStorage_C_ExecuteUbergraph_WBP_InvadeDeclarationWorldHUD_PalStorage Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

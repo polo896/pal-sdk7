@@ -17,99 +17,168 @@
 namespace SDK
 {
 
-// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.ApplyUsabilityGrayout
+// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.OnUpdatedSlot
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class APalCharacter*                    TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UWBP_PalItemSlotButtonBase_C*     SlotButton                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_SelectItemInventory_C::ApplyUsabilityGrayout(class APalCharacter* TargetCharacter, class UWBP_PalItemSlotButtonBase_C* SlotButton)
+void UWBP_SelectItemInventory_C::OnUpdatedSlot(class UWBP_PalItemSlotButtonBase_C* SlotButton)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SelectItemInventory_C", "ApplyUsabilityGrayout");
+		Func = Class->GetFunction("WBP_SelectItemInventory_C", "OnUpdatedSlot");
 
-	Params::WBP_SelectItemInventory_C_ApplyUsabilityGrayout Parms{};
+	Params::WBP_SelectItemInventory_C_OnUpdatedSlot Parms{};
 
-	Parms.TargetCharacter = TargetCharacter;
 	Parms.SlotButton = SlotButton;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.ApplyUsabilityGrayoutAll
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class APalCharacter*                    TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_SelectItemInventory_C::ApplyUsabilityGrayoutAll(class APalCharacter* TargetCharacter)
+void UWBP_SelectItemInventory_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SelectItemInventory_C", "ApplyUsabilityGrayoutAll");
+		Func = Class->GetFunction("WBP_SelectItemInventory_C", "OnSetup");
 
-	Params::WBP_SelectItemInventory_C_ApplyUsabilityGrayoutAll Parms{};
-
-	Parms.TargetCharacter = TargetCharacter;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.BindUsabilityGrayout
+// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.OnLeftClicked
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class APalCharacter*                    TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_SelectItemInventory_C::BindUsabilityGrayout(class APalCharacter* TargetCharacter)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SelectItemInventory_C", "BindUsabilityGrayout");
-
-	Params::WBP_SelectItemInventory_C_BindUsabilityGrayout Parms{};
-
-	Parms.TargetCharacter = TargetCharacter;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.BndEvt__WBP_SelectItemInventory_WBP_Common_Inventory_K2Node_ComponentBoundEvent_2_OnLeftClickSlot__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UWBP_PalItemSlotButtonBase_C*     Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UWBP_PalItemSlotButtonBase_C*     ButtonBase                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // EPalItemSlotPressType                   PressType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_SelectItemInventory_C::BndEvt__WBP_SelectItemInventory_WBP_Common_Inventory_K2Node_ComponentBoundEvent_2_OnLeftClickSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType)
+void UWBP_SelectItemInventory_C::OnLeftClicked(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SelectItemInventory_C", "BndEvt__WBP_SelectItemInventory_WBP_Common_Inventory_K2Node_ComponentBoundEvent_2_OnLeftClickSlot__DelegateSignature");
+		Func = Class->GetFunction("WBP_SelectItemInventory_C", "OnLeftClicked");
 
-	Params::WBP_SelectItemInventory_C_BndEvt__WBP_SelectItemInventory_WBP_Common_Inventory_K2Node_ComponentBoundEvent_2_OnLeftClickSlot__DelegateSignature Parms{};
+	Params::WBP_SelectItemInventory_C_OnLeftClicked Parms{};
 
-	Parms.Slot_0 = Slot_0;
+	Parms.ButtonBase = ButtonBase;
 	Parms.PressType = PressType;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.BndEvt__WBP_SelectItemInventory_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.OnFocusedSlot
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_PalItemSlotButtonBase_C*     ButtonBase                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_SelectItemInventory_C::BndEvt__WBP_SelectItemInventory_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
+void UWBP_SelectItemInventory_C::OnFocusedSlot(class UWBP_PalItemSlotButtonBase_C* ButtonBase)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SelectItemInventory_C", "BndEvt__WBP_SelectItemInventory_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_SelectItemInventory_C", "OnFocusedSlot");
+
+	Params::WBP_SelectItemInventory_C_OnFocusedSlot Parms{};
+
+	Parms.ButtonBase = ButtonBase;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.OnComplateSelectNum
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalUISelectNumResult                   resultType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int64                                   selectedNum                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_SelectItemInventory_C::OnComplateSelectNum(EPalUISelectNumResult resultType, int64 selectedNum)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SelectItemInventory_C", "OnComplateSelectNum");
+
+	Params::WBP_SelectItemInventory_C_OnComplateSelectNum Parms{};
+
+	Parms.resultType = resultType;
+	Parms.selectedNum = selectedNum;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.GetTargetCharacter
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class APalCharacter**                   TargetCharacter                                        (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_SelectItemInventory_C::GetTargetCharacter(class APalCharacter** TargetCharacter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SelectItemInventory_C", "GetTargetCharacter");
+
+	Params::WBP_SelectItemInventory_C_GetTargetCharacter Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (TargetCharacter != nullptr)
+		*TargetCharacter = Parms.TargetCharacter;
+}
+
+
+// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.ExecuteUbergraph_WBP_SelectItemInventory
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_SelectItemInventory_C::ExecuteUbergraph_WBP_SelectItemInventory(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SelectItemInventory_C", "ExecuteUbergraph_WBP_SelectItemInventory");
+
+	Params::WBP_SelectItemInventory_C_ExecuteUbergraph_WBP_SelectItemInventory Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.DisplaySelectNumWidget
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_SelectItemInventory_C::DisplaySelectNumWidget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SelectItemInventory_C", "DisplaySelectNumWidget");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_SelectItemInventory_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SelectItemInventory_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -137,167 +206,98 @@ void UWBP_SelectItemInventory_C::ComplateSelect(const struct FPalItemSlotId& Slo
 }
 
 
-// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.BndEvt__WBP_SelectItemInventory_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_SelectItemInventory_C::Destruct()
+void UWBP_SelectItemInventory_C::BndEvt__WBP_SelectItemInventory_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SelectItemInventory_C", "Destruct");
+		Func = Class->GetFunction("WBP_SelectItemInventory_C", "BndEvt__WBP_SelectItemInventory_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.DisplaySelectNumWidget
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_SelectItemInventory_C::DisplaySelectNumWidget()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SelectItemInventory_C", "DisplaySelectNumWidget");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.ExecuteUbergraph_WBP_SelectItemInventory
-// (Final, UbergraphFunction)
+// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.BndEvt__WBP_SelectItemInventory_WBP_Common_Inventory_K2Node_ComponentBoundEvent_2_OnLeftClickSlot__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_SelectItemInventory_C::ExecuteUbergraph_WBP_SelectItemInventory(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SelectItemInventory_C", "ExecuteUbergraph_WBP_SelectItemInventory");
-
-	Params::WBP_SelectItemInventory_C_ExecuteUbergraph_WBP_SelectItemInventory Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.GetTargetCharacter
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class APalCharacter**                   TargetCharacter                                        (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_SelectItemInventory_C::GetTargetCharacter(class APalCharacter** TargetCharacter)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SelectItemInventory_C", "GetTargetCharacter");
-
-	Params::WBP_SelectItemInventory_C_GetTargetCharacter Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (TargetCharacter != nullptr)
-		*TargetCharacter = Parms.TargetCharacter;
-}
-
-
-// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.OnComplateSelectNum
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalUISelectNumResult                   resultType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int64                                   selectedNum                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_SelectItemInventory_C::OnComplateSelectNum(EPalUISelectNumResult resultType, int64 selectedNum)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SelectItemInventory_C", "OnComplateSelectNum");
-
-	Params::WBP_SelectItemInventory_C_OnComplateSelectNum Parms{};
-
-	Parms.resultType = resultType;
-	Parms.selectedNum = selectedNum;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.OnFocusedSlot
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_PalItemSlotButtonBase_C*     ButtonBase                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_SelectItemInventory_C::OnFocusedSlot(class UWBP_PalItemSlotButtonBase_C* ButtonBase)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SelectItemInventory_C", "OnFocusedSlot");
-
-	Params::WBP_SelectItemInventory_C_OnFocusedSlot Parms{};
-
-	Parms.ButtonBase = ButtonBase;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.OnLeftClicked
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_PalItemSlotButtonBase_C*     ButtonBase                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UWBP_PalItemSlotButtonBase_C*     Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // EPalItemSlotPressType                   PressType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_SelectItemInventory_C::OnLeftClicked(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType)
+void UWBP_SelectItemInventory_C::BndEvt__WBP_SelectItemInventory_WBP_Common_Inventory_K2Node_ComponentBoundEvent_2_OnLeftClickSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SelectItemInventory_C", "OnLeftClicked");
+		Func = Class->GetFunction("WBP_SelectItemInventory_C", "BndEvt__WBP_SelectItemInventory_WBP_Common_Inventory_K2Node_ComponentBoundEvent_2_OnLeftClickSlot__DelegateSignature");
 
-	Params::WBP_SelectItemInventory_C_OnLeftClicked Parms{};
+	Params::WBP_SelectItemInventory_C_BndEvt__WBP_SelectItemInventory_WBP_Common_Inventory_K2Node_ComponentBoundEvent_2_OnLeftClickSlot__DelegateSignature Parms{};
 
-	Parms.ButtonBase = ButtonBase;
+	Parms.Slot_0 = Slot_0;
 	Parms.PressType = PressType;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.BindUsabilityGrayout
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APalCharacter*                    TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_SelectItemInventory_C::OnSetup()
+void UWBP_SelectItemInventory_C::BindUsabilityGrayout(class APalCharacter* TargetCharacter)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SelectItemInventory_C", "OnSetup");
+		Func = Class->GetFunction("WBP_SelectItemInventory_C", "BindUsabilityGrayout");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_SelectItemInventory_C_BindUsabilityGrayout Parms{};
+
+	Parms.TargetCharacter = TargetCharacter;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.OnUpdatedSlot
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.ApplyUsabilityGrayoutAll
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWBP_PalItemSlotButtonBase_C*     SlotButton                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class APalCharacter*                    TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_SelectItemInventory_C::OnUpdatedSlot(class UWBP_PalItemSlotButtonBase_C* SlotButton)
+void UWBP_SelectItemInventory_C::ApplyUsabilityGrayoutAll(class APalCharacter* TargetCharacter)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SelectItemInventory_C", "OnUpdatedSlot");
+		Func = Class->GetFunction("WBP_SelectItemInventory_C", "ApplyUsabilityGrayoutAll");
 
-	Params::WBP_SelectItemInventory_C_OnUpdatedSlot Parms{};
+	Params::WBP_SelectItemInventory_C_ApplyUsabilityGrayoutAll Parms{};
 
+	Parms.TargetCharacter = TargetCharacter;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_SelectItemInventory.WBP_SelectItemInventory_C.ApplyUsabilityGrayout
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APalCharacter*                    TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UWBP_PalItemSlotButtonBase_C*     SlotButton                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_SelectItemInventory_C::ApplyUsabilityGrayout(class APalCharacter* TargetCharacter, class UWBP_PalItemSlotButtonBase_C* SlotButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_SelectItemInventory_C", "ApplyUsabilityGrayout");
+
+	Params::WBP_SelectItemInventory_C_ApplyUsabilityGrayout Parms{};
+
+	Parms.TargetCharacter = TargetCharacter;
 	Parms.SlotButton = SlotButton;
 
 	UObject::ProcessEvent(Func, &Parms);

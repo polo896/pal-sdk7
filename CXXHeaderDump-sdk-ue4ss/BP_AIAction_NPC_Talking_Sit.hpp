@@ -9,7 +9,7 @@ class UBP_AIAction_NPC_Talking_Sit_C : public UPalAIActionBase
     class AActor* SelfActor;                                                          // 0x0150 (size: 0x8)
     double Timer;                                                                     // 0x0158 (size: 0x8)
     bool IsTalking;                                                                   // 0x0160 (size: 0x1)
-    TArray<class AActor*> TalkingPlayers;                                             // 0x0168 (size: 0x10)
+    TArray<AActor*> TalkingPlayers;                                                   // 0x0168 (size: 0x10)
     class UPalActionBase* ActionBase;                                                 // 0x0178 (size: 0x8)
     bool IsSetAction;                                                                 // 0x0180 (size: 0x1)
 

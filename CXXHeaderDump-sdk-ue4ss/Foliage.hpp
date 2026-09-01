@@ -85,7 +85,7 @@ class UFoliageEditPresetData : public UObject
     bool bFilterBSP;                                                                  // 0x0036 (size: 0x1)
     bool bFilterFoliage;                                                              // 0x0037 (size: 0x1)
     bool bFilterTranslucent;                                                          // 0x0038 (size: 0x1)
-    TArray<class UFoliageType*> FoliageTypes;                                         // 0x0040 (size: 0x10)
+    TArray<UFoliageType*> FoliageTypes;                                               // 0x0040 (size: 0x10)
 
 }; // Size: 0x50
 
@@ -203,7 +203,7 @@ class UFoliageType : public UObject
     uint8 ReapplyVertexColorMask;                                                     // 0x04A5 (size: 0x1)
     uint8 bEnableDensityScaling;                                                      // 0x04A5 (size: 0x1)
     uint8 bEnableDiscardOnLoad;                                                       // 0x04A6 (size: 0x1)
-    TArray<class URuntimeVirtualTexture*> RuntimeVirtualTextures;                     // 0x04A8 (size: 0x10)
+    TArray<URuntimeVirtualTexture*> RuntimeVirtualTextures;                           // 0x04A8 (size: 0x10)
     int32 VirtualTextureCullMips;                                                     // 0x04B8 (size: 0x4)
     ERuntimeVirtualTextureMainPassType VirtualTextureRenderPassType;                  // 0x04BC (size: 0x1)
 
@@ -221,8 +221,8 @@ class UFoliageType_Actor : public UFoliageType
 class UFoliageType_InstancedStaticMesh : public UFoliageType
 {
     class UStaticMesh* Mesh;                                                          // 0x04C0 (size: 0x8)
-    TArray<class UMaterialInterface*> OverrideMaterials;                              // 0x04C8 (size: 0x10)
-    TArray<class UMaterialInterface*> NaniteOverrideMaterials;                        // 0x04D8 (size: 0x10)
+    TArray<UMaterialInterface*> OverrideMaterials;                                    // 0x04C8 (size: 0x10)
+    TArray<UMaterialInterface*> NaniteOverrideMaterials;                              // 0x04D8 (size: 0x10)
     TSubclassOf<class UFoliageInstancedStaticMeshComponent> ComponentClass;           // 0x04E8 (size: 0x8)
 
 }; // Size: 0x4F0

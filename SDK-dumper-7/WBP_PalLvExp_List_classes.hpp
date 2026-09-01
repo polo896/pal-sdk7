@@ -31,11 +31,11 @@ public:
 	TArray<class UWBP_PalLvExp_C*>                ChildList;                                         // 0x02A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void Anm_Open(int32 Index_0);
-	void Anm_Open_All();
-	void ExecuteUbergraph_WBP_PalLvExp_List(int32 EntryPoint);
-	void OnInitialized();
 	void Setup();
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_PalLvExp_List(int32 EntryPoint);
+	void Anm_Open_All();
+	void Anm_Open(int32 Index_0);
 
 public:
 	static class UClass* StaticClass()

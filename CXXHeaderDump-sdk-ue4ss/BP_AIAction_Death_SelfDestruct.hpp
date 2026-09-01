@@ -3,7 +3,7 @@
 
 class UBP_AIAction_Death_SelfDestruct_C : public UBP_AIAction_Death_C
 {
-    TMap<class EPalWazaID, class TSubclassOf<UBP_ActionDeath_C>> DeathActionMap;      // 0x0148 (size: 0x50)
+    TMap<EPalWazaID, TSubclassOf<class UBP_ActionDeath_C>> DeathActionMap;            // 0x0148 (size: 0x50)
 
     void GetDeathActionClass(TSubclassOf<class UBP_ActionDeath_C>& DeathAction);
 }; // Size: 0x198

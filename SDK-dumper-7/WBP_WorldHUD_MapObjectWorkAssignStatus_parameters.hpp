@@ -16,14 +16,16 @@
 namespace SDK::Params
 {
 
-// Function WBP_WorldHUD_MapObjectWorkAssignStatus.WBP_WorldHUD_MapObjectWorkAssignStatus_C.ExecuteUbergraph_WBP_WorldHUD_MapObjectWorkAssignStatus
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_WorldHUD_MapObjectWorkAssignStatus_C_ExecuteUbergraph_WBP_WorldHUD_MapObjectWorkAssignStatus final
+// Function WBP_WorldHUD_MapObjectWorkAssignStatus.WBP_WorldHUD_MapObjectWorkAssignStatus_C.SetupUI
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_WorldHUD_MapObjectWorkAssignStatus_C_SetupUI final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalWorkSuitability                           CallFunc_GetRequiredWorkSuitability_ReturnValue;   // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetRequiredRank_ReturnValue;              // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_WorldHUD_MapObjectWorkAssignStatus_C_ExecuteUbergraph_WBP_WorldHUD_MapObjectWorkAssignStatus;
+DUMPER7_ASSERTS_WBP_WorldHUD_MapObjectWorkAssignStatus_C_SetupUI;
 
 // Function WBP_WorldHUD_MapObjectWorkAssignStatus.WBP_WorldHUD_MapObjectWorkAssignStatus_C.ReadyUIModel
 // 0x0020 (0x0020 - 0x0000)
@@ -38,16 +40,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_WorldHUD_MapObjectWorkAssignStatus_C_ReadyUIModel;
 
-// Function WBP_WorldHUD_MapObjectWorkAssignStatus.WBP_WorldHUD_MapObjectWorkAssignStatus_C.SetupUI
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_WorldHUD_MapObjectWorkAssignStatus_C_SetupUI final
+// Function WBP_WorldHUD_MapObjectWorkAssignStatus.WBP_WorldHUD_MapObjectWorkAssignStatus_C.ExecuteUbergraph_WBP_WorldHUD_MapObjectWorkAssignStatus
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_WorldHUD_MapObjectWorkAssignStatus_C_ExecuteUbergraph_WBP_WorldHUD_MapObjectWorkAssignStatus final
 {
 public:
-	EPalWorkSuitability                           CallFunc_GetRequiredWorkSuitability_ReturnValue;   // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetRequiredRank_ReturnValue;              // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_WorldHUD_MapObjectWorkAssignStatus_C_SetupUI;
+DUMPER7_ASSERTS_WBP_WorldHUD_MapObjectWorkAssignStatus_C_ExecuteUbergraph_WBP_WorldHUD_MapObjectWorkAssignStatus;
 
 }
 

@@ -59,20 +59,20 @@ public:
 	TArray<class UImage*>                         AdditionalEffectIconArray;                         // 0x0588(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void Construct();
-	void Destruct();
-	void EndAnimEvent();
-	void ExecuteUbergraph_WBP_PalDamageText(int32 EntryPoint);
-	void GetPadding(double* Padding_0);
-	void OnInitialized();
-	void OnRequestClose();
-	void SetAdditionalPassiveDamageRate(double AdditionalPassiveRate);
-	void SetDamageColor(const struct FSlateColor& InColor);
-	void SetDamageTextType(EPalDamageTextType textType_0);
-	void SetDamageValue(int32 InValue);
-	void SetElementEffect(TArray<EPalAdditionalEffectType>& AdditionalEffect);
-	void SetMercyHitDisplay(bool bMercyHit);
 	void UpdatePosition(const struct FVector& targetWorldLocation);
+	void SetMercyHitDisplay(bool bMercyHit);
+	void SetElementEffect(TArray<EPalAdditionalEffectType>& AdditionalEffect);
+	void SetDamageValue(int32 InValue);
+	void SetDamageTextType(EPalDamageTextType textType_0);
+	void SetDamageColor(const struct FSlateColor& InColor);
+	void SetAdditionalPassiveDamageRate(double AdditionalPassiveRate);
+	void OnRequestClose();
+	void OnInitialized();
+	void GetPadding(double* Padding_0);
+	void ExecuteUbergraph_WBP_PalDamageText(int32 EntryPoint);
+	void EndAnimEvent();
+	void Destruct();
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

@@ -33,12 +33,12 @@ public:
 	bool                                          OverrideActionName;                                // 0x0300(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_In();
-	void ExecuteUbergraph_WBP_Ingame_PlayerGauge_KeyGuide(int32 EntryPoint);
 	void OnInitialized();
-	void OverrideUIText(class FName OverrideActionName_0);
-	void ResetUIText();
+	void ExecuteUbergraph_WBP_Ingame_PlayerGauge_KeyGuide(int32 EntryPoint);
+	void AnmEvent_In();
 	void SetTitleText(const class FText& newText);
+	void ResetUIText();
+	void OverrideUIText(class FName OverrideActionName_0);
 
 public:
 	static class UClass* StaticClass()

@@ -41,11 +41,11 @@ public:
 	TMulticastInlineDelegate<void()>              OnHatchedInfoUnhovered;                            // 0x02F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__WBP_Ingame_Incubator_AllOpen_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Ingame_Incubator_AllOpen_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void ExecuteUbergraph_WBP_Ingame_Incubator_AllOpen_List(int32 EntryPoint);
-	void OnInitialized();
 	void Setup(class UPalIndividualCharacterParameter* individualParam);
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_Ingame_Incubator_AllOpen_List(int32 EntryPoint);
+	void BndEvt__WBP_Ingame_Incubator_AllOpen_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Ingame_Incubator_AllOpen_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 
 public:
 	static class UClass* StaticClass()

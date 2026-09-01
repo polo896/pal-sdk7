@@ -24,7 +24,7 @@ class UWBP_Ingame_Incubator_Multiple_C : public UPalUIMapObjectStatusIndicatorBa
     class UPalMapObjectMultiHatchingEggModel* Model;                                  // 0x04E0 (size: 0x8)
     bool isDisplayedDetail;                                                           // 0x04E8 (size: 0x1)
     FTimerHandle DisplayCheckTimer;                                                   // 0x04F0 (size: 0x8)
-    TArray<class UWBP_Ingame_Incubator_MultipleSlot_C*> Slots;                        // 0x04F8 (size: 0x10)
+    TArray<UWBP_Ingame_Incubator_MultipleSlot_C*> Slots;                              // 0x04F8 (size: 0x10)
     int32 LastSimpleSlotIndex;                                                        // 0x0508 (size: 0x4)
     FTimerHandle SimpleSlotUpdateTimer;                                               // 0x0510 (size: 0x8)
     bool NoEgg;                                                                       // 0x0518 (size: 0x1)

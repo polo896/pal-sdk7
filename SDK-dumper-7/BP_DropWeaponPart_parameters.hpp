@@ -16,17 +16,6 @@
 namespace SDK::Params
 {
 
-// Function BP_DropWeaponPart.BP_DropWeaponPart_C.CustomBegin
-// 0x0028 (0x0028 - 0x0000)
-struct BP_DropWeaponPart_C_CustomBegin final
-{
-public:
-	class UStaticMesh*                            Mesh;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Velocity;                                          // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         AngularIntensify;                                  // 0x0020(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_DropWeaponPart_C_CustomBegin;
-
 // Function BP_DropWeaponPart.BP_DropWeaponPart_C.ExecuteUbergraph_BP_DropWeaponPart
 // 0x00E0 (0x00E0 - 0x0000)
 struct BP_DropWeaponPart_C_ExecuteUbergraph_BP_DropWeaponPart final
@@ -49,6 +38,17 @@ public:
 	struct FVector                                CallFunc_GreaterGreater_VectorRotator_ReturnValue_1; // 0x00C8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_DropWeaponPart_C_ExecuteUbergraph_BP_DropWeaponPart;
+
+// Function BP_DropWeaponPart.BP_DropWeaponPart_C.CustomBegin
+// 0x0028 (0x0028 - 0x0000)
+struct BP_DropWeaponPart_C_CustomBegin final
+{
+public:
+	class UStaticMesh*                            Mesh;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Velocity;                                          // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         AngularIntensify;                                  // 0x0020(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_DropWeaponPart_C_CustomBegin;
 
 }
 

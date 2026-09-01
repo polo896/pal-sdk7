@@ -55,7 +55,7 @@ struct FAnimNode_KawaiiPhysics : public FAnimNode_SkeletalControlBase
     bool bEnableWind;                                                                 // 0x0588 (size: 0x1)
     float WindScale;                                                                  // 0x058C (size: 0x4)
     TArray<FInstancedStruct> ExternalForces;                                          // 0x0590 (size: 0x10)
-    TArray<class UKawaiiPhysics_CustomExternalForce*> CustomExternalForces;           // 0x05A0 (size: 0x10)
+    TArray<UKawaiiPhysics_CustomExternalForce*> CustomExternalForces;                 // 0x05A0 (size: 0x10)
     bool bAllowWorldCollision;                                                        // 0x05B0 (size: 0x1)
     bool bOverrideCollisionParams;                                                    // 0x05B1 (size: 0x1)
     FBodyInstance CollisionChannelSettings;                                           // 0x05B8 (size: 0x190)

@@ -14,6 +14,26 @@
 namespace SDK::Params
 {
 
+// Function WBP_MainMenu_Money.WBP_MainMenu_Money_C.WBP_MainMenu_Money_AutoGenFunc
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_MainMenu_Money_C_WBP_MainMenu_Money_AutoGenFunc final
+{
+public:
+	int64                                         NowMoney;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_Int64ToText_ReturnValue;             // 0x0008(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_MainMenu_Money_C_WBP_MainMenu_Money_AutoGenFunc;
+
+// Function WBP_MainMenu_Money.WBP_MainMenu_Money_C.UpdateMoney
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_MainMenu_Money_C_UpdateMoney final
+{
+public:
+	class FString                                 NowMoney;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_MainMenu_Money_C_UpdateMoney;
+
 // Function WBP_MainMenu_Money.WBP_MainMenu_Money_C.ExecuteUbergraph_WBP_MainMenu_Money
 // 0x0048 (0x0048 - 0x0000)
 struct WBP_MainMenu_Money_C_ExecuteUbergraph_WBP_MainMenu_Money final
@@ -31,26 +51,6 @@ public:
 	TDelegate<void(int64 NowMoney)>               K2Node_CreateDelegate_OutputDelegate;              // 0x0034(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_MainMenu_Money_C_ExecuteUbergraph_WBP_MainMenu_Money;
-
-// Function WBP_MainMenu_Money.WBP_MainMenu_Money_C.UpdateMoney
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_MainMenu_Money_C_UpdateMoney final
-{
-public:
-	class FString                                 NowMoney;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_MainMenu_Money_C_UpdateMoney;
-
-// Function WBP_MainMenu_Money.WBP_MainMenu_Money_C.WBP_MainMenu_Money_AutoGenFunc
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_MainMenu_Money_C_WBP_MainMenu_Money_AutoGenFunc final
-{
-public:
-	int64                                         NowMoney;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_Int64ToText_ReturnValue;             // 0x0008(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_MainMenu_Money_C_WBP_MainMenu_Money_AutoGenFunc;
 
 }
 

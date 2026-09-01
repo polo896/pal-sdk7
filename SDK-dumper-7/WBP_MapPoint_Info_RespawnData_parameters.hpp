@@ -14,15 +14,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_MapPoint_Info_RespawnData.WBP_MapPoint_Info_RespawnData_C.SetRank
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_MapPoint_Info_RespawnData_C_SetRank final
-{
-public:
-	int32                                         Rank;                                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MapPoint_Info_RespawnData_C_SetRank;
-
 // Function WBP_MapPoint_Info_RespawnData.WBP_MapPoint_Info_RespawnData_C.ExecuteUbergraph_WBP_MapPoint_Info_RespawnData
 // 0x0080 (0x0080 - 0x0000)
 struct WBP_MapPoint_Info_RespawnData_C_ExecuteUbergraph_WBP_MapPoint_Info_RespawnData final
@@ -52,6 +43,15 @@ public:
 	TArray<class UImage*>                         K2Node_MakeArray_Array;                            // 0x0070(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
 DUMPER7_ASSERTS_WBP_MapPoint_Info_RespawnData_C_ExecuteUbergraph_WBP_MapPoint_Info_RespawnData;
+
+// Function WBP_MapPoint_Info_RespawnData.WBP_MapPoint_Info_RespawnData_C.SetRank
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_MapPoint_Info_RespawnData_C_SetRank final
+{
+public:
+	int32                                         Rank;                                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MapPoint_Info_RespawnData_C_SetRank;
 
 }
 

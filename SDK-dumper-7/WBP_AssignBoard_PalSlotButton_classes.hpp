@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "WBP_PalCharacterSlotButtonBase_classes.hpp"
+#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "UMG_structs.hpp"
 
@@ -29,18 +29,18 @@ public:
 	class UWBP_PalInvisibleButton_C*              WBP_PalInvisibleButton;                            // 0x0530(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void ExecuteUbergraph_WBP_AssignBoard_PalSlotButton(int32 EntryPoint);
-	void OnInitialized();
-	void RegisterButton(class UCommonButtonBase** Button);
-	void RegisterCharacterSlotWidget(class UWBP_PalCharacterSlotBase_C** characterSlotWidget);
-	void Set_Is_Fixed_Assign(bool IsAssign);
-	void SetDisplayGender(bool isDisplay);
-	void SetReferenceWorkId(const struct FGuid& WorkId);
-	void SetReferenceWorkSuitability(TArray<EPalWorkSuitability>& Suitabilities);
-	void SetSelectedCheck(bool IsCheck);
 	void SetSuitability(EPalWorkSuitability Suitability);
+	void SetSelectedCheck(bool IsCheck);
+	void SetReferenceWorkSuitability(TArray<EPalWorkSuitability>& Suitabilities);
+	void SetReferenceWorkId(const struct FGuid& WorkId);
+	void SetDisplayGender(bool isDisplay);
+	void Set_Is_Fixed_Assign(bool IsAssign);
+	void RegisterCharacterSlotWidget(class UWBP_PalCharacterSlotBase_C** characterSlotWidget);
+	void RegisterButton(class UCommonButtonBase** Button);
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_AssignBoard_PalSlotButton(int32 EntryPoint);
+	void BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 
 public:
 	static class UClass* StaticClass()

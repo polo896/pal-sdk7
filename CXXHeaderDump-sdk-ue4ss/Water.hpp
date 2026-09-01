@@ -212,7 +212,7 @@ struct FWaterSplineCurveDefaults
 
 class ABuoyancyManager : public AActor
 {
-    TArray<class UBuoyancyComponent*> BuoyancyComponents;                             // 0x02E0 (size: 0x10)
+    TArray<UBuoyancyComponent*> BuoyancyComponents;                                   // 0x02E0 (size: 0x10)
 
     bool GetBuoyancyComponentManager(const class UObject* WorldContextObject, class ABuoyancyManager*& Manager);
 }; // Size: 0x358
@@ -237,8 +237,8 @@ class AWaterBody : public AActor
     class UWaterBodyComponent* GetWaterBodyComponent();
     class UMaterialInstanceDynamic* GetRiverToOceanTransitionMaterialInstance();
     class UMaterialInstanceDynamic* GetRiverToLakeTransitionMaterialInstance();
-    TArray<class AWaterBodyIsland*> GetIslands();
-    TArray<class AWaterBodyExclusionVolume*> GetExclusionVolumes();
+    TArray<AWaterBodyIsland*> GetIslands();
+    TArray<AWaterBodyExclusionVolume*> GetExclusionVolumes();
     float GetAudioIntensityAtSplineInputKey(float InKey);
 }; // Size: 0x2C0
 
@@ -249,7 +249,7 @@ class AWaterBodyCustom : public AWaterBody
 class AWaterBodyExclusionVolume : public APhysicsVolume
 {
     bool bExcludeAllOverlappingWaterBodies;                                           // 0x02D8 (size: 0x1)
-    TArray<class AWaterBody*> WaterBodiesToExclude;                                   // 0x02E0 (size: 0x10)
+    TArray<AWaterBody*> WaterBodiesToExclude;                                         // 0x02E0 (size: 0x10)
 
 }; // Size: 0x2F0
 
@@ -275,7 +275,7 @@ class AWaterBodyRiver : public AWaterBody
 class AWaterZone : public AActor
 {
     class UTextureRenderTarget2D* WaterInfoTexture;                                   // 0x0290 (size: 0x8)
-    TArray<TWeakObjectPtr<UWaterBodyComponent>> OwnedWaterBodies;                     // 0x0298 (size: 0x10)
+    TArray<TWeakObjectPtr<class UWaterBodyComponent>> OwnedWaterBodies;               // 0x0298 (size: 0x10)
     FIntPoint RenderTargetResolution;                                                 // 0x02A8 (size: 0x8)
     class UWaterMeshComponent* WaterMesh;                                             // 0x02B0 (size: 0x8)
     FVector2D ZoneExtent;                                                             // 0x02B8 (size: 0x10)
@@ -301,7 +301,7 @@ class UBuoyancyComponent : public UActorComponent
     FBuoyancyComponentOnExitedWaterDelegate OnExitedWaterDelegate;                    // 0x00C0 (size: 0x10)
     void OnPontoonExitedWater(const FSphericalPontoon& Pontoon);
     FBuoyancyData BuoyancyData;                                                       // 0x00D0 (size: 0x90)
-    TArray<class UWaterBodyComponent*> CurrentWaterBodyComponents;                    // 0x0160 (size: 0x10)
+    TArray<UWaterBodyComponent*> CurrentWaterBodyComponents;                          // 0x0160 (size: 0x10)
     class UPrimitiveComponent* SimulatingComponent;                                   // 0x0170 (size: 0x8)
 
     void OnPontoonExitedWater(const FSphericalPontoon& Pontoon);
@@ -309,7 +309,7 @@ class UBuoyancyComponent : public UActorComponent
     bool IsOverlappingWaterBody();
     bool IsInWaterBody();
     void GetLastWaterSurfaceInfo(FVector& OutWaterPlaneLocation, FVector& OutWaterPlaneNormal, FVector& OutWaterSurfacePosition, float& OutWaterDepth, int32& OutWaterBodyIdx, FVector& OutWaterVelocity);
-    TArray<class UWaterBodyComponent*> GetCurrentWaterBodyComponents();
+    TArray<UWaterBodyComponent*> GetCurrentWaterBodyComponents();
 }; // Size: 0x208
 
 class UDEPRECATED_CustomMeshGenerator : public UDEPRECATED_WaterBodyGenerator
@@ -328,14 +328,14 @@ class UDEPRECATED_LakeGenerator : public UDEPRECATED_WaterBodyGenerator
 
 class UDEPRECATED_OceanGenerator : public UDEPRECATED_WaterBodyGenerator
 {
-    TArray<class UOceanBoxCollisionComponent*> CollisionBoxes;                        // 0x0028 (size: 0x10)
-    TArray<class UOceanCollisionComponent*> CollisionHullSets;                        // 0x0038 (size: 0x10)
+    TArray<UOceanBoxCollisionComponent*> CollisionBoxes;                              // 0x0028 (size: 0x10)
+    TArray<UOceanCollisionComponent*> CollisionHullSets;                              // 0x0038 (size: 0x10)
 
 }; // Size: 0x48
 
 class UDEPRECATED_RiverGenerator : public UDEPRECATED_WaterBodyGenerator
 {
-    TArray<class USplineMeshComponent*> SplineMeshComponents;                         // 0x0028 (size: 0x10)
+    TArray<USplineMeshComponent*> SplineMeshComponents;                               // 0x0028 (size: 0x10)
 
 }; // Size: 0x38
 
@@ -450,11 +450,11 @@ class UWaterBodyComponent : public UPrimitiveComponent
     class UMaterialInstanceDynamic* WaterLODMID;                                      // 0x0D48 (size: 0x8)
     class UMaterialInstanceDynamic* UnderwaterPostProcessMID;                         // 0x0D50 (size: 0x8)
     class UMaterialInstanceDynamic* WaterInfoMID;                                     // 0x0D58 (size: 0x8)
-    TArray<TSoftObjectPtr<AWaterBodyIsland>> WaterBodyIslands;                        // 0x0D60 (size: 0x10)
-    TArray<TSoftObjectPtr<AWaterBodyExclusionVolume>> WaterBodyExclusionVolumes;      // 0x0D70 (size: 0x10)
+    TArray<TSoftObjectPtr<class AWaterBodyIsland>> WaterBodyIslands;                  // 0x0D60 (size: 0x10)
+    TArray<TSoftObjectPtr<class AWaterBodyExclusionVolume>> WaterBodyExclusionVolumes; // 0x0D70 (size: 0x10)
     TWeakObjectPtr<class ALandscapeProxy> Landscape;                                  // 0x0D80 (size: 0x8)
-    TSoftObjectPtr<AWaterZone> OwningWaterZone;                                       // 0x0D88 (size: 0x30)
-    TSoftObjectPtr<AWaterZone> WaterZoneOverride;                                     // 0x0DB8 (size: 0x30)
+    TSoftObjectPtr<class AWaterZone> OwningWaterZone;                                 // 0x0D88 (size: 0x30)
+    TSoftObjectPtr<class AWaterZone> WaterZoneOverride;                               // 0x0DB8 (size: 0x30)
     FPostProcessSettings CurrentPostProcessSettings;                                  // 0x0DF0 (size: 0x6E0)
     TSubclassOf<class UNavAreaBase> WaterNavAreaClass;                                // 0x14D0 (size: 0x8)
     double FixedWaterDepth;                                                           // 0x1528 (size: 0x8)
@@ -471,13 +471,13 @@ class UWaterBodyComponent : public UPrimitiveComponent
     class UMaterialInstanceDynamic* GetWaterInfoMaterialInstance();
     class AWaterBody* GetWaterBodyActor();
     class UMaterialInstanceDynamic* GetUnderwaterPostProcessMaterialInstance();
-    TArray<class UPrimitiveComponent*> GetStandardRenderableComponents();
+    TArray<UPrimitiveComponent*> GetStandardRenderableComponents();
     class UMaterialInstanceDynamic* GetRiverToOceanTransitionMaterialInstance();
     class UMaterialInstanceDynamic* GetRiverToLakeTransitionMaterialInstance();
     float GetMaxWaveHeight();
-    TArray<class AWaterBodyIsland*> GetIslands();
-    TArray<class AWaterBodyExclusionVolume*> GetExclusionVolumes();
-    TArray<class UPrimitiveComponent*> GetCollisionComponents(bool bInOnlyEnabledComponents);
+    TArray<AWaterBodyIsland*> GetIslands();
+    TArray<AWaterBodyExclusionVolume*> GetExclusionVolumes();
+    TArray<UPrimitiveComponent*> GetCollisionComponents(bool bInOnlyEnabledComponents);
 }; // Size: 0x1530
 
 class UWaterBodyCustomComponent : public UWaterBodyComponent
@@ -499,8 +499,8 @@ class UWaterBodyLakeComponent : public UWaterBodyComponent
 
 class UWaterBodyOceanComponent : public UWaterBodyComponent
 {
-    TArray<class UOceanBoxCollisionComponent*> CollisionBoxes;                        // 0x1530 (size: 0x10)
-    TArray<class UOceanCollisionComponent*> CollisionHullSets;                        // 0x1540 (size: 0x10)
+    TArray<UOceanBoxCollisionComponent*> CollisionBoxes;                              // 0x1530 (size: 0x10)
+    TArray<UOceanCollisionComponent*> CollisionHullSets;                              // 0x1540 (size: 0x10)
     FVector2D VisualExtents;                                                          // 0x1550 (size: 0x10)
     FVector CollisionExtents;                                                         // 0x1560 (size: 0x18)
     float HeightOffset;                                                               // 0x1578 (size: 0x4)
@@ -509,7 +509,7 @@ class UWaterBodyOceanComponent : public UWaterBodyComponent
 
 class UWaterBodyRiverComponent : public UWaterBodyComponent
 {
-    TArray<class USplineMeshComponent*> SplineMeshComponents;                         // 0x1530 (size: 0x10)
+    TArray<USplineMeshComponent*> SplineMeshComponents;                               // 0x1530 (size: 0x10)
     class UMaterialInterface* LakeTransitionMaterial;                                 // 0x1540 (size: 0x8)
     class UMaterialInstanceDynamic* LakeTransitionMID;                                // 0x1548 (size: 0x8)
     class UMaterialInterface* OceanTransitionMaterial;                                // 0x1550 (size: 0x8)
@@ -534,10 +534,10 @@ class UWaterMeshComponent : public UMeshComponent
 class UWaterRuntimeSettings : public UDeveloperSettings
 {
     TEnumAsByte<ECollisionChannel> CollisionChannelForWaterTraces;                    // 0x0038 (size: 0x1)
-    TSoftObjectPtr<UMaterialParameterCollection> MaterialParameterCollection;         // 0x0040 (size: 0x30)
+    TSoftObjectPtr<class UMaterialParameterCollection> MaterialParameterCollection;   // 0x0040 (size: 0x30)
     float WaterBodyIconWorldZOffset;                                                  // 0x0070 (size: 0x4)
     FName DefaultWaterCollisionProfileName;                                           // 0x0074 (size: 0x8)
-    TSoftObjectPtr<UMaterialInterface> DefaultWaterInfoMaterial;                      // 0x0080 (size: 0x30)
+    TSoftObjectPtr<class UMaterialInterface> DefaultWaterInfoMaterial;                // 0x0080 (size: 0x30)
     TSubclassOf<class UWaterBodyRiverComponent> WaterBodyRiverComponentClass;         // 0x00B0 (size: 0x8)
     TSubclassOf<class UWaterBodyLakeComponent> WaterBodyLakeComponentClass;           // 0x00B8 (size: 0x8)
     TSubclassOf<class UWaterBodyOceanComponent> WaterBodyOceanComponentClass;         // 0x00C0 (size: 0x8)

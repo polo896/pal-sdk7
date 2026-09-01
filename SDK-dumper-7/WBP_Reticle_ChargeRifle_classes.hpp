@@ -31,13 +31,13 @@ public:
 	class UMaterialInstanceDynamic*               MainGaugeMaterialR;                                // 0x04D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Reticle_ChargeRifle(int32 EntryPoint);
-	void OnChangedChargeValue(double CurretnChargeValue);
-	void OnInitialized();
-	void OnPullTrigger();
-	void OnReleaseTrigger();
-	void OnReticleActivted(const struct FPalItemId& WeaponItemId);
 	void OnReticleDeactivated();
+	void OnReticleActivted(const struct FPalItemId& WeaponItemId);
+	void OnReleaseTrigger();
+	void OnPullTrigger();
+	void OnInitialized();
+	void OnChangedChargeValue(double CurretnChargeValue);
+	void ExecuteUbergraph_WBP_Reticle_ChargeRifle(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

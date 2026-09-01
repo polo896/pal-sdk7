@@ -20,8 +20,8 @@ class UWBP_PalWork_Infirmary_C : public UPalUIMapObjectStatusIndicatorBase
     FTimerHandle DisplayCheckTimer;                                                   // 0x04C0 (size: 0x8)
     FTimerHandle ChangeCheckTimer;                                                    // 0x04C8 (size: 0x8)
     bool isDisplayedDetail;                                                           // 0x04D0 (size: 0x1)
-    TArray<class UWBP_PalCraftInfo_Pal_C*> Pal Infos;                                 // 0x04D8 (size: 0x10)
-    TArray<class UWBP_PalWorkPowerPlant_Gauge_C*> Gauges;                             // 0x04E8 (size: 0x10)
+    TArray<UWBP_PalCraftInfo_Pal_C*> Pal Infos;                                       // 0x04D8 (size: 0x10)
+    TArray<UWBP_PalWorkPowerPlant_Gauge_C*> Gauges;                                   // 0x04E8 (size: 0x10)
     double PreviousAmout;                                                             // 0x04F8 (size: 0x8)
     double CurrentAmout;                                                              // 0x0500 (size: 0x8)
     int32 CurrentGauge;                                                               // 0x0508 (size: 0x4)
@@ -30,9 +30,9 @@ class UWBP_PalWork_Infirmary_C : public UPalUIMapObjectStatusIndicatorBase
 
     void RefreshProductDisplay();
     void On Updated Worker Pal(class UPalWorkBase* Work);
-    void GetTargetStarLevelStarImages(int32 MaxStarLevel, TArray<class UImage*>& Images);
+    void GetTargetStarLevelStarImages(int32 MaxStarLevel, TArray<UImage*>& Images);
     void GetTargetStarLevelCanvas(int32 MaxStarLevel, class UCanvasPanel*& Canvas);
-    void ShowHygieneStarLevel(class UCanvasPanel* Canvas, TArray<class UImage*>& StarImages, int32 CurrentStarLevel);
+    void ShowHygieneStarLevel(class UCanvasPanel* Canvas, TArray<UImage*>& StarImages, int32 CurrentStarLevel);
     void OnUpdateClinicStatus();
     void Setup();
     void OnSetup();

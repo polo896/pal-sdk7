@@ -14,17 +14,14 @@
 namespace SDK::Params
 {
 
-// Function WBP_PalCommonItemSlot.WBP_PalCommonItemSlot_C.ExecuteUbergraph_WBP_PalCommonItemSlot
-// 0x0034 (0x0034 - 0x0000)
-struct WBP_PalCommonItemSlot_C_ExecuteUbergraph_WBP_PalCommonItemSlot final
+// Function WBP_PalCommonItemSlot.WBP_PalCommonItemSlot_C.RegisterItemIconWidget
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalCommonItemSlot_C_RegisterItemIconWidget final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UPalItemSlot* TargetSlot)> K2Node_CreateDelegate_OutputDelegate;            // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0014(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0024(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalItemIconBase_C*                 IconWidget;                                        // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalCommonItemSlot_C_ExecuteUbergraph_WBP_PalCommonItemSlot;
+DUMPER7_ASSERTS_WBP_PalCommonItemSlot_C_RegisterItemIconWidget;
 
 // Function WBP_PalCommonItemSlot.WBP_PalCommonItemSlot_C.OnUpdateSlot_Binded
 // 0x0028 (0x0028 - 0x0000)
@@ -38,14 +35,17 @@ public:
 };
 DUMPER7_ASSERTS_WBP_PalCommonItemSlot_C_OnUpdateSlot_Binded;
 
-// Function WBP_PalCommonItemSlot.WBP_PalCommonItemSlot_C.RegisterItemIconWidget
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalCommonItemSlot_C_RegisterItemIconWidget final
+// Function WBP_PalCommonItemSlot.WBP_PalCommonItemSlot_C.ExecuteUbergraph_WBP_PalCommonItemSlot
+// 0x0034 (0x0034 - 0x0000)
+struct WBP_PalCommonItemSlot_C_ExecuteUbergraph_WBP_PalCommonItemSlot final
 {
 public:
-	class UWBP_PalItemIconBase_C*                 IconWidget;                                        // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UPalItemSlot* TargetSlot)> K2Node_CreateDelegate_OutputDelegate;            // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0014(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0024(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalCommonItemSlot_C_RegisterItemIconWidget;
+DUMPER7_ASSERTS_WBP_PalCommonItemSlot_C_ExecuteUbergraph_WBP_PalCommonItemSlot;
 
 }
 

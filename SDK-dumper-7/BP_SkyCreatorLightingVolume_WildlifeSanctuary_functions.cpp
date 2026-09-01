@@ -17,23 +17,17 @@
 namespace SDK
 {
 
-// Function BP_SkyCreatorLightingVolume_WildlifeSanctuary.BP_SkyCreatorLightingVolume_WildlifeSanctuary_C.ExecuteUbergraph_BP_SkyCreatorLightingVolume_WildlifeSanctuary
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_SkyCreatorLightingVolume_WildlifeSanctuary.BP_SkyCreatorLightingVolume_WildlifeSanctuary_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_SkyCreatorLightingVolume_WildlifeSanctuary_C::ExecuteUbergraph_BP_SkyCreatorLightingVolume_WildlifeSanctuary(int32 EntryPoint)
+void ABP_SkyCreatorLightingVolume_WildlifeSanctuary_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkyCreatorLightingVolume_WildlifeSanctuary_C", "ExecuteUbergraph_BP_SkyCreatorLightingVolume_WildlifeSanctuary");
+		Func = Class->GetFunction("BP_SkyCreatorLightingVolume_WildlifeSanctuary_C", "ReceiveBeginPlay");
 
-	Params::BP_SkyCreatorLightingVolume_WildlifeSanctuary_C_ExecuteUbergraph_BP_SkyCreatorLightingVolume_WildlifeSanctuary Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -59,17 +53,23 @@ void ABP_SkyCreatorLightingVolume_WildlifeSanctuary_C::OnAlertStateChanged(EPalW
 }
 
 
-// Function BP_SkyCreatorLightingVolume_WildlifeSanctuary.BP_SkyCreatorLightingVolume_WildlifeSanctuary_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_SkyCreatorLightingVolume_WildlifeSanctuary.BP_SkyCreatorLightingVolume_WildlifeSanctuary_C.ExecuteUbergraph_BP_SkyCreatorLightingVolume_WildlifeSanctuary
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SkyCreatorLightingVolume_WildlifeSanctuary_C::ReceiveBeginPlay()
+void ABP_SkyCreatorLightingVolume_WildlifeSanctuary_C::ExecuteUbergraph_BP_SkyCreatorLightingVolume_WildlifeSanctuary(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkyCreatorLightingVolume_WildlifeSanctuary_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_SkyCreatorLightingVolume_WildlifeSanctuary_C", "ExecuteUbergraph_BP_SkyCreatorLightingVolume_WildlifeSanctuary");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_SkyCreatorLightingVolume_WildlifeSanctuary_C_ExecuteUbergraph_BP_SkyCreatorLightingVolume_WildlifeSanctuary Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

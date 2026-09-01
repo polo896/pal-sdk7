@@ -16,30 +16,25 @@
 namespace SDK::Params
 {
 
-// Function WBP_CommonCircularGauge.WBP_CommonCircularGauge_C.ExecuteUbergraph_WBP_CommonCircularGauge
-// 0x0060 (0x0060 - 0x0000)
-struct WBP_CommonCircularGauge_C_ExecuteUbergraph_WBP_CommonCircularGauge final
+// Function WBP_CommonCircularGauge.WBP_CommonCircularGauge_C.Tick
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_CommonCircularGauge_C_Tick final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0008(0x0040)(IsPlainOldData, NoDestructor)
-	float                                         K2Node_Event_InDeltaTime;                          // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CommonCircularGauge_C_ExecuteUbergraph_WBP_CommonCircularGauge;
+DUMPER7_ASSERTS_WBP_CommonCircularGauge_C_Tick;
 
-// Function WBP_CommonCircularGauge.WBP_CommonCircularGauge_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CommonCircularGauge_C_PreConstruct final
+// Function WBP_CommonCircularGauge.WBP_CommonCircularGauge_C.SetTargetValue
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_CommonCircularGauge_C_SetTargetValue final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetGaugeInterpolationTargetValue_TargetValue_ImplicitCast; // 0x0008(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CommonCircularGauge_C_PreConstruct;
+DUMPER7_ASSERTS_WBP_CommonCircularGauge_C_SetTargetValue;
 
 // Function WBP_CommonCircularGauge.WBP_CommonCircularGauge_C.ReflectRateToImage
 // 0x0030 (0x0030 - 0x0000)
@@ -57,25 +52,30 @@ public:
 };
 DUMPER7_ASSERTS_WBP_CommonCircularGauge_C_ReflectRateToImage;
 
-// Function WBP_CommonCircularGauge.WBP_CommonCircularGauge_C.SetTargetValue
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_CommonCircularGauge_C_SetTargetValue final
+// Function WBP_CommonCircularGauge.WBP_CommonCircularGauge_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CommonCircularGauge_C_PreConstruct final
 {
 public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetGaugeInterpolationTargetValue_TargetValue_ImplicitCast; // 0x0008(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CommonCircularGauge_C_SetTargetValue;
+DUMPER7_ASSERTS_WBP_CommonCircularGauge_C_PreConstruct;
 
-// Function WBP_CommonCircularGauge.WBP_CommonCircularGauge_C.Tick
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_CommonCircularGauge_C_Tick final
+// Function WBP_CommonCircularGauge.WBP_CommonCircularGauge_C.ExecuteUbergraph_WBP_CommonCircularGauge
+// 0x0060 (0x0060 - 0x0000)
+struct WBP_CommonCircularGauge_C_ExecuteUbergraph_WBP_CommonCircularGauge final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0008(0x0040)(IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_InDeltaTime;                          // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CommonCircularGauge_C_Tick;
+DUMPER7_ASSERTS_WBP_CommonCircularGauge_C_ExecuteUbergraph_WBP_CommonCircularGauge;
 
 }
 

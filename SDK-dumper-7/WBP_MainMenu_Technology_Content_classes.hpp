@@ -63,25 +63,25 @@ public:
 	struct FDataTableRowHandle                    ItemMsgId;                                         // 0x0590(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void AnmEvent_Focus();
-	void AnmEvent_Unfocus();
-	void AnmEvent_Unlock();
-	void AnmEvent_UpdateDetail();
-	void BndEvt__WBP_MainMenu_Technology_Content_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_MainMenu_Technology_Content_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_MainMenu_Technology_Content_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void Construct();
 	void ExecuteUbergraph_WBP_MainMenu_Technology_Content(int32 EntryPoint);
-	void GetBindedTechnologyName(class FName* technologyName);
-	void GetLabResearchTextId(class FName ResearchId, class FText* Return_Value);
-	void IsUnlockable(bool* IsUnlockable_0);
-	void IsUnlocked(bool* IsUnlocked_0);
-	void OnHovered_Internal();
-	void OnInitialized();
-	void OnUnhovered_Internal();
-	void Set_Should_Mask_Skill_Unlock(TArray<class FName>& ItemRecipes);
-	void Setup(class FName technologyName);
+	void Construct();
+	void BndEvt__WBP_MainMenu_Technology_Content_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MainMenu_Technology_Content_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MainMenu_Technology_Content_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void AnmEvent_UpdateDetail();
+	void AnmEvent_Unlock();
+	void AnmEvent_Unfocus();
+	void AnmEvent_Focus();
 	void Update_Button_Detail();
+	void Setup(class FName technologyName);
+	void Set_Should_Mask_Skill_Unlock(TArray<class FName>& ItemRecipes);
+	void OnUnhovered_Internal();
+	void OnInitialized();
+	void OnHovered_Internal();
+	void IsUnlocked(bool* IsUnlocked_0);
+	void IsUnlockable(bool* IsUnlockable_0);
+	void GetLabResearchTextId(class FName ResearchId, class FText* Return_Value);
+	void GetBindedTechnologyName(class FName* technologyName);
 
 public:
 	static class UClass* StaticClass()

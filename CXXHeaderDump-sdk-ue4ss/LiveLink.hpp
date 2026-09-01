@@ -12,7 +12,7 @@ struct FLiveLinkRoleProjectSetting
     TSubclassOf<class ULiveLinkRole> Role;                                            // 0x0000 (size: 0x8)
     TSubclassOf<class ULiveLinkSubjectSettings> SettingClass;                         // 0x0008 (size: 0x8)
     TSubclassOf<class ULiveLinkFrameInterpolationProcessor> FrameInterpolationProcessor; // 0x0010 (size: 0x8)
-    TArray<class TSubclassOf<ULiveLinkFramePreProcessor>> FramePreProcessors;         // 0x0018 (size: 0x10)
+    TArray<TSubclassOf<class ULiveLinkFramePreProcessor>> FramePreProcessors;         // 0x0018 (size: 0x10)
 
 }; // Size: 0x28
 
@@ -151,7 +151,7 @@ class ULiveLinkSettings : public UObject
 {
     TArray<FLiveLinkRoleProjectSetting> DefaultRoleSettings;                          // 0x0028 (size: 0x10)
     TSubclassOf<class ULiveLinkFrameInterpolationProcessor> FrameInterpolationProcessor; // 0x0038 (size: 0x8)
-    TSoftObjectPtr<ULiveLinkPreset> DefaultLiveLinkPreset;                            // 0x0040 (size: 0x30)
+    TSoftObjectPtr<class ULiveLinkPreset> DefaultLiveLinkPreset;                      // 0x0040 (size: 0x30)
     float ClockOffsetCorrectionStep;                                                  // 0x0070 (size: 0x4)
     ELiveLinkSourceMode DefaultMessageBusSourceMode;                                  // 0x0074 (size: 0x1)
     double MessageBusPingRequestFrequency;                                            // 0x0078 (size: 0x8)

@@ -17,91 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_Altar_Info.WBP_Altar_Info_C.ExecuteUbergraph_WBP_Altar_Info
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Altar_Info_C::ExecuteUbergraph_WBP_Altar_Info(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Altar_Info_C", "ExecuteUbergraph_WBP_Altar_Info");
-
-	Params::WBP_Altar_Info_C_ExecuteUbergraph_WBP_Altar_Info Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Altar_Info.WBP_Altar_Info_C.PlayAnimation_Phase_Battle
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Altar_Info_C::PlayAnimation_Phase_Battle()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Altar_Info_C", "PlayAnimation_Phase_Battle");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Altar_Info.WBP_Altar_Info_C.PlayAnimation_Phase_Preparing
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Altar_Info_C::PlayAnimation_Phase_Preparing()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Altar_Info_C", "PlayAnimation_Phase_Preparing");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Altar_Info.WBP_Altar_Info_C.SetRaidBossInfo
+// Function WBP_Altar_Info.WBP_Altar_Info_C.SetTowerBossInfo
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             StaticItemId                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalBossType                            BossType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             BossId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Altar_Info_C::SetRaidBossInfo(class FName StaticItemId)
+void UWBP_Altar_Info_C::SetTowerBossInfo(EPalBossType BossType, class FName BossId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Altar_Info_C", "SetRaidBossInfo");
+		Func = Class->GetFunction("WBP_Altar_Info_C", "SetTowerBossInfo");
 
-	Params::WBP_Altar_Info_C_SetRaidBossInfo Parms{};
+	Params::WBP_Altar_Info_C_SetTowerBossInfo Parms{};
 
-	Parms.StaticItemId = StaticItemId;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Altar_Info.WBP_Altar_Info_C.SetRemainingTime
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Minutes                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Seconds                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Altar_Info_C::SetRemainingTime(int32 Minutes, int32 Seconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Altar_Info_C", "SetRemainingTime");
-
-	Params::WBP_Altar_Info_C_SetRemainingTime Parms{};
-
-	Parms.Minutes = Minutes;
-	Parms.Seconds = Seconds;
+	Parms.BossType = BossType;
+	Parms.BossId = BossId;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -131,23 +63,91 @@ void UWBP_Altar_Info_C::SetTimeText(class URichTextBlock* TargetText1, class URi
 }
 
 
-// Function WBP_Altar_Info.WBP_Altar_Info_C.SetTowerBossInfo
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Altar_Info.WBP_Altar_Info_C.SetRemainingTime
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EPalBossType                            BossType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             BossId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Minutes                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Seconds                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Altar_Info_C::SetTowerBossInfo(EPalBossType BossType, class FName BossId)
+void UWBP_Altar_Info_C::SetRemainingTime(int32 Minutes, int32 Seconds)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Altar_Info_C", "SetTowerBossInfo");
+		Func = Class->GetFunction("WBP_Altar_Info_C", "SetRemainingTime");
 
-	Params::WBP_Altar_Info_C_SetTowerBossInfo Parms{};
+	Params::WBP_Altar_Info_C_SetRemainingTime Parms{};
 
-	Parms.BossType = BossType;
-	Parms.BossId = BossId;
+	Parms.Minutes = Minutes;
+	Parms.Seconds = Seconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Altar_Info.WBP_Altar_Info_C.SetRaidBossInfo
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             StaticItemId                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Altar_Info_C::SetRaidBossInfo(class FName StaticItemId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Altar_Info_C", "SetRaidBossInfo");
+
+	Params::WBP_Altar_Info_C_SetRaidBossInfo Parms{};
+
+	Parms.StaticItemId = StaticItemId;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Altar_Info.WBP_Altar_Info_C.PlayAnimation_Phase_Preparing
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Altar_Info_C::PlayAnimation_Phase_Preparing()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Altar_Info_C", "PlayAnimation_Phase_Preparing");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Altar_Info.WBP_Altar_Info_C.PlayAnimation_Phase_Battle
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Altar_Info_C::PlayAnimation_Phase_Battle()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Altar_Info_C", "PlayAnimation_Phase_Battle");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Altar_Info.WBP_Altar_Info_C.ExecuteUbergraph_WBP_Altar_Info
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Altar_Info_C::ExecuteUbergraph_WBP_Altar_Info(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Altar_Info_C", "ExecuteUbergraph_WBP_Altar_Info");
+
+	Params::WBP_Altar_Info_C_ExecuteUbergraph_WBP_Altar_Info Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

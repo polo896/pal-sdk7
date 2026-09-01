@@ -36,24 +36,24 @@ public:
 	TArray<class UPalIndividualCharacterHandle*>  Handles;                                           // 0x0660(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void Check_Spawn(double DeltaTime);
-	void DeleteOnePoint(class AActor* Point);
-	void Despawn();
-	void DespawnDelegate(const struct FPalInstanceID& ID);
-	void ExecuteUbergraph_BP_SquadNPCSpawner(int32 EntryPoint);
-	void FindIndividualHandle(const struct FPalInstanceID& ID, class UPalIndividualCharacterHandle** Handle, int32* Index_0);
-	void GetAllSpawnedNPCHandle(TArray<class UPalIndividualCharacterHandle*>* Handles_0);
-	float GetSpawnPointRadius_0();
-	void GetWorldLoadWaitRadius(double* Radius);
-	void OnOtomoSpawnedSquad(class AController* HolderController, class APalCharacter* OtomoPal);
-	void ReceiveBeginPlay();
-	void SetAllNPCLocation();
-	void SetCharaNames();
-	void SetNullHandleWhenDestoryNPC(class AActor* DestroyedActor);
-	void SetNullHandleWhenDestoryOtomoSquad(class AActor* DestroyedActor);
-	void SetupSpawnInfoList();
-	void Spawn();
 	void SpawnDelegate(const struct FPalInstanceID& ID);
+	void Spawn();
+	void SetupSpawnInfoList();
+	void SetNullHandleWhenDestoryOtomoSquad(class AActor* DestroyedActor);
+	void SetNullHandleWhenDestoryNPC(class AActor* DestroyedActor);
+	void SetCharaNames();
+	void SetAllNPCLocation();
+	void ReceiveBeginPlay();
+	void OnOtomoSpawnedSquad(class AController* HolderController, class APalCharacter* OtomoPal);
+	void GetWorldLoadWaitRadius(double* Radius);
+	float GetSpawnPointRadius_0();
+	void GetAllSpawnedNPCHandle(TArray<class UPalIndividualCharacterHandle*>* Handles_0);
+	void FindIndividualHandle(const struct FPalInstanceID& ID, class UPalIndividualCharacterHandle** Handle, int32* Index_0);
+	void ExecuteUbergraph_BP_SquadNPCSpawner(int32 EntryPoint);
+	void DespawnDelegate(const struct FPalInstanceID& ID);
+	void Despawn();
+	void DeleteOnePoint(class AActor* Point);
+	void Check_Spawn(double DeltaTime);
 
 public:
 	static class UClass* StaticClass()

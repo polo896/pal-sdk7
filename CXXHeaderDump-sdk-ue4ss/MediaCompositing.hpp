@@ -55,7 +55,7 @@ class UMovieSceneMediaSection : public UMovieSceneSection
 
 class UMovieSceneMediaTrack : public UMovieSceneNameableTrack
 {
-    TArray<class UMovieSceneSection*> MediaSections;                                  // 0x00A0 (size: 0x10)
+    TArray<UMovieSceneSection*> MediaSections;                                        // 0x00A0 (size: 0x10)
 
 }; // Size: 0xB0
 

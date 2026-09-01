@@ -14,6 +14,15 @@
 namespace SDK::Params
 {
 
+// Function WBP_InGame_Match_Win.WBP_InGame_Match_Win_C.SetWinner
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_InGame_Match_Win_C_SetWinner final
+{
+public:
+	class FText                                   InText;                                            // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_InGame_Match_Win_C_SetWinner;
+
 // Function WBP_InGame_Match_Win.WBP_InGame_Match_Win_C.ExecuteUbergraph_WBP_InGame_Match_Win
 // 0x0028 (0x0028 - 0x0000)
 struct WBP_InGame_Match_Win_C_ExecuteUbergraph_WBP_InGame_Match_Win final
@@ -25,15 +34,6 @@ public:
 	class FText                                   K2Node_CustomEvent_InText;                         // 0x0010(0x0018)()
 };
 DUMPER7_ASSERTS_WBP_InGame_Match_Win_C_ExecuteUbergraph_WBP_InGame_Match_Win;
-
-// Function WBP_InGame_Match_Win.WBP_InGame_Match_Win_C.SetWinner
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_InGame_Match_Win_C_SetWinner final
-{
-public:
-	class FText                                   InText;                                            // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_InGame_Match_Win_C_SetWinner;
 
 }
 

@@ -48,17 +48,17 @@ public:
 	TMulticastInlineDelegate<void(class UWBP_Quest_ListButton_C* Widget)> OnUnhovered;               // 0x0360(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void AnmEvent_Completed();
-	void AnmEvent_Hover();
-	void AnmEvent_Ordered();
-	void AnmEvent_Unhover();
-	void BndEvt__WBP_Quest_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Quest_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Quest_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void Destruct();
-	void ExecuteUbergraph_WBP_Quest_ListButton(int32 EntryPoint);
-	void GetQuestData(class UPalQuestData** QuestData);
 	void Setup(class UPalQuestData* QuestData);
+	void GetQuestData(class UPalQuestData** QuestData);
+	void ExecuteUbergraph_WBP_Quest_ListButton(int32 EntryPoint);
+	void Destruct();
+	void BndEvt__WBP_Quest_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Quest_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Quest_ListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void AnmEvent_Unhover();
+	void AnmEvent_Ordered();
+	void AnmEvent_Hover();
+	void AnmEvent_Completed();
 	void SetVisibility_TrackingDetail(ESlateVisibility InVisibility);
 
 public:

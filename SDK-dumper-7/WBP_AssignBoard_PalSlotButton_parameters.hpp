@@ -18,92 +18,28 @@
 namespace SDK::Params
 {
 
-// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_AssignBoard_PalSlotButton_C_BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.SetSuitability
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_AssignBoard_PalSlotButton_C_SetSuitability final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EPalWorkSuitability                           Suitability;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_AssignBoard_PalSlotButton_C_BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_AssignBoard_PalSlotButton_C_SetSuitability;
 
-// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_AssignBoard_PalSlotButton_C_BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_AssignBoard_PalSlotButton_C_BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.ExecuteUbergraph_WBP_AssignBoard_PalSlotButton
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_AssignBoard_PalSlotButton_C_ExecuteUbergraph_WBP_AssignBoard_PalSlotButton final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_1;               // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_AssignBoard_PalSlotButton_C_ExecuteUbergraph_WBP_AssignBoard_PalSlotButton;
-
-// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.RegisterButton
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_AssignBoard_PalSlotButton_C_RegisterButton final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_AssignBoard_PalSlotButton_C_RegisterButton;
-
-// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.RegisterCharacterSlotWidget
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_AssignBoard_PalSlotButton_C_RegisterCharacterSlotWidget final
-{
-public:
-	class UWBP_PalCharacterSlotBase_C*            characterSlotWidget;                               // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_AssignBoard_PalSlotButton_C_RegisterCharacterSlotWidget;
-
-// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.Set Is Fixed Assign
+// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.SetSelectedCheck
 // 0x0006 (0x0006 - 0x0000)
-struct WBP_AssignBoard_PalSlotButton_C_Set_Is_Fixed_Assign final
+struct WBP_AssignBoard_PalSlotButton_C_SetSelectedCheck final
 {
 public:
-	bool                                          IsAssign;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsCheck;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_AssignBoard_PalSlotButton_C_Set_Is_Fixed_Assign;
-
-// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.SetDisplayGender
-// 0x0006 (0x0006 - 0x0000)
-struct WBP_AssignBoard_PalSlotButton_C_SetDisplayGender final
-{
-public:
-	bool                                          isDisplay;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_AssignBoard_PalSlotButton_C_SetDisplayGender;
-
-// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.SetReferenceWorkId
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_AssignBoard_PalSlotButton_C_SetReferenceWorkId final
-{
-public:
-	struct FGuid                                  WorkId;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_AssignBoard_PalSlotButton_C_SetReferenceWorkId;
+DUMPER7_ASSERTS_WBP_AssignBoard_PalSlotButton_C_SetSelectedCheck;
 
 // Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.SetReferenceWorkSuitability
 // 0x0068 (0x0068 - 0x0000)
@@ -135,28 +71,92 @@ public:
 };
 DUMPER7_ASSERTS_WBP_AssignBoard_PalSlotButton_C_SetReferenceWorkSuitability;
 
-// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.SetSelectedCheck
-// 0x0006 (0x0006 - 0x0000)
-struct WBP_AssignBoard_PalSlotButton_C_SetSelectedCheck final
+// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.SetReferenceWorkId
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_AssignBoard_PalSlotButton_C_SetReferenceWorkId final
 {
 public:
-	bool                                          IsCheck;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  WorkId;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_AssignBoard_PalSlotButton_C_SetReferenceWorkId;
+
+// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.SetDisplayGender
+// 0x0006 (0x0006 - 0x0000)
+struct WBP_AssignBoard_PalSlotButton_C_SetDisplayGender final
+{
+public:
+	bool                                          isDisplay;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_AssignBoard_PalSlotButton_C_SetDisplayGender;
+
+// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.Set Is Fixed Assign
+// 0x0006 (0x0006 - 0x0000)
+struct WBP_AssignBoard_PalSlotButton_C_Set_Is_Fixed_Assign final
+{
+public:
+	bool                                          IsAssign;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_AssignBoard_PalSlotButton_C_SetSelectedCheck;
+DUMPER7_ASSERTS_WBP_AssignBoard_PalSlotButton_C_Set_Is_Fixed_Assign;
 
-// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.SetSuitability
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_AssignBoard_PalSlotButton_C_SetSuitability final
+// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.RegisterCharacterSlotWidget
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_AssignBoard_PalSlotButton_C_RegisterCharacterSlotWidget final
 {
 public:
-	EPalWorkSuitability                           Suitability;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalCharacterSlotBase_C*            characterSlotWidget;                               // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_AssignBoard_PalSlotButton_C_SetSuitability;
+DUMPER7_ASSERTS_WBP_AssignBoard_PalSlotButton_C_RegisterCharacterSlotWidget;
+
+// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.RegisterButton
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_AssignBoard_PalSlotButton_C_RegisterButton final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_AssignBoard_PalSlotButton_C_RegisterButton;
+
+// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.ExecuteUbergraph_WBP_AssignBoard_PalSlotButton
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_AssignBoard_PalSlotButton_C_ExecuteUbergraph_WBP_AssignBoard_PalSlotButton final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_1;               // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_AssignBoard_PalSlotButton_C_ExecuteUbergraph_WBP_AssignBoard_PalSlotButton;
+
+// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_AssignBoard_PalSlotButton_C_BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_AssignBoard_PalSlotButton_C_BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_AssignBoard_PalSlotButton.WBP_AssignBoard_PalSlotButton_C.BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_AssignBoard_PalSlotButton_C_BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_AssignBoard_PalSlotButton_C_BndEvt__WBP_AssignBoard_PalSlotButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
 
 }
 

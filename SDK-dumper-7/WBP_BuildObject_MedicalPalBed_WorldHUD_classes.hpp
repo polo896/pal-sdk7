@@ -28,15 +28,15 @@ public:
 	class UPalUIMapObjectMedicalPalBedModel*      UIModelCached;                                     // 0x0460(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_BuildObject_MedicalPalBed_WorldHUD(int32 EntryPoint);
-	void OnSetup();
-	void ReflectProgressRate();
-	void ReflectRemainingTime();
-	void ReflectResurrectAbility();
-	void Setup();
-	void ShouldDisplay(bool* Return_Value);
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void TickForDisplay();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void ShouldDisplay(bool* Return_Value);
+	void Setup();
+	void ReflectResurrectAbility();
+	void ReflectRemainingTime();
+	void ReflectProgressRate();
+	void OnSetup();
+	void ExecuteUbergraph_WBP_BuildObject_MedicalPalBed_WorldHUD(int32 EntryPoint);
 
 	void GetUIModel(class UPalUIMapObjectMedicalPalBedModel** UIModel) const;
 

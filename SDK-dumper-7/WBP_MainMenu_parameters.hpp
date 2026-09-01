@@ -16,23 +16,94 @@
 namespace SDK::Params
 {
 
-// Function WBP_MainMenu.WBP_MainMenu_C.Anm_focus
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_MainMenu_C_Anm_focus final
+// Function WBP_MainMenu.WBP_MainMenu_C.SelectByMainMenuType
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_MainMenu_C_SelectByMainMenuType final
 {
 public:
 	EPalUIInGameMainMenuTabType                   Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_MainMenu_Tab_C*                    CallFunc_Map_Find_Value;                           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetIndexByWidget_FindedIndex;             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MainMenu_C_Anm_focus;
+DUMPER7_ASSERTS_WBP_MainMenu_C_SelectByMainMenuType;
 
-// Function WBP_MainMenu.WBP_MainMenu_C.Anm_FocusToNormal
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_MainMenu_C_Anm_FocusToNormal final
+// Function WBP_MainMenu.WBP_MainMenu_C.RegisterPanelWidget
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_MainMenu_C_RegisterPanelWidget final
 {
 public:
-	EPalUIInGameMainMenuTabType                   Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPanelWidget*                           PanelWidget;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MainMenu_C_Anm_FocusToNormal;
+DUMPER7_ASSERTS_WBP_MainMenu_C_RegisterPanelWidget;
+
+// Function WBP_MainMenu.WBP_MainMenu_C.OnPrevEvent
+// 0x000C (0x000C - 0x0000)
+struct WBP_MainMenu_C_OnPrevEvent final
+{
+public:
+	int32                                         OldIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewIndex;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_C_OnPrevEvent;
+
+// Function WBP_MainMenu.WBP_MainMenu_C.OnNextEvent
+// 0x000C (0x000C - 0x0000)
+struct WBP_MainMenu_C_OnNextEvent final
+{
+public:
+	int32                                         OldIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewIndex;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_C_OnNextEvent;
+
+// Function WBP_MainMenu.WBP_MainMenu_C.OnClickedTabEvent
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_MainMenu_C_OnClickedTabEvent final
+{
+public:
+	class UWBP_MainMenu_Tab_C*                    TabWidget;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetIndexByWidget_FindedIndex;             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_C_OnClickedTabEvent;
+
+// Function WBP_MainMenu.WBP_MainMenu_C.OnChangedIndexEvent
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_MainMenu_C_OnChangedIndexEvent final
+{
+public:
+	int32                                         OldIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewIndex;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                FocusTargetWidget;                                 // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetPanelChildren_IsValidPanel;            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UWidget*>                        CallFunc_GetPanelChildren_Children;                // 0x0018(0x0010)(ReferenceParm, ContainsInstancedReference)
+	class UWBP_MainMenu_Tab_C*                    K2Node_DynamicCast_AsWBP_Main_Menu_Tab;            // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_MainMenu_Tab_C*                    K2Node_DynamicCast_AsWBP_Main_Menu_Tab_1;          // 0x0040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidIndex_IsValid;                     // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_C_OnChangedIndexEvent;
+
+// Function WBP_MainMenu.WBP_MainMenu_C.GetTabWidgetByMenuType
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_MainMenu_C_GetTabWidgetByMenuType final
+{
+public:
+	EPalUIInGameMainMenuTabType                   MenuType;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_MainMenu_Tab_C*                    TabWidget;                                         // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_MainMenu_Tab_C*                    CallFunc_Map_Find_Value;                           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_C_GetTabWidgetByMenuType;
 
 // Function WBP_MainMenu.WBP_MainMenu_C.ExecuteUbergraph_WBP_MainMenu
 // 0x00F0 (0x00F0 - 0x0000)
@@ -81,94 +152,23 @@ public:
 };
 DUMPER7_ASSERTS_WBP_MainMenu_C_ExecuteUbergraph_WBP_MainMenu;
 
-// Function WBP_MainMenu.WBP_MainMenu_C.GetTabWidgetByMenuType
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_MainMenu_C_GetTabWidgetByMenuType final
-{
-public:
-	EPalUIInGameMainMenuTabType                   MenuType;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_MainMenu_Tab_C*                    TabWidget;                                         // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_MainMenu_Tab_C*                    CallFunc_Map_Find_Value;                           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_C_GetTabWidgetByMenuType;
-
-// Function WBP_MainMenu.WBP_MainMenu_C.OnChangedIndexEvent
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_MainMenu_C_OnChangedIndexEvent final
-{
-public:
-	int32                                         OldIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NewIndex;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                FocusTargetWidget;                                 // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetPanelChildren_IsValidPanel;            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UWidget*>                        CallFunc_GetPanelChildren_Children;                // 0x0018(0x0010)(ReferenceParm, ContainsInstancedReference)
-	class UWBP_MainMenu_Tab_C*                    K2Node_DynamicCast_AsWBP_Main_Menu_Tab;            // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_MainMenu_Tab_C*                    K2Node_DynamicCast_AsWBP_Main_Menu_Tab_1;          // 0x0040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValidIndex_IsValid;                     // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_C_OnChangedIndexEvent;
-
-// Function WBP_MainMenu.WBP_MainMenu_C.OnClickedTabEvent
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_MainMenu_C_OnClickedTabEvent final
-{
-public:
-	class UWBP_MainMenu_Tab_C*                    TabWidget;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetIndexByWidget_FindedIndex;             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_C_OnClickedTabEvent;
-
-// Function WBP_MainMenu.WBP_MainMenu_C.OnNextEvent
-// 0x000C (0x000C - 0x0000)
-struct WBP_MainMenu_C_OnNextEvent final
-{
-public:
-	int32                                         OldIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NewIndex;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_C_OnNextEvent;
-
-// Function WBP_MainMenu.WBP_MainMenu_C.OnPrevEvent
-// 0x000C (0x000C - 0x0000)
-struct WBP_MainMenu_C_OnPrevEvent final
-{
-public:
-	int32                                         OldIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NewIndex;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_C_OnPrevEvent;
-
-// Function WBP_MainMenu.WBP_MainMenu_C.RegisterPanelWidget
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_MainMenu_C_RegisterPanelWidget final
-{
-public:
-	class UPanelWidget*                           PanelWidget;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_C_RegisterPanelWidget;
-
-// Function WBP_MainMenu.WBP_MainMenu_C.SelectByMainMenuType
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_MainMenu_C_SelectByMainMenuType final
+// Function WBP_MainMenu.WBP_MainMenu_C.Anm_FocusToNormal
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_MainMenu_C_Anm_FocusToNormal final
 {
 public:
 	EPalUIInGameMainMenuTabType                   Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_MainMenu_Tab_C*                    CallFunc_Map_Find_Value;                           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetIndexByWidget_FindedIndex;             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MainMenu_C_SelectByMainMenuType;
+DUMPER7_ASSERTS_WBP_MainMenu_C_Anm_FocusToNormal;
+
+// Function WBP_MainMenu.WBP_MainMenu_C.Anm_focus
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_MainMenu_C_Anm_focus final
+{
+public:
+	EPalUIInGameMainMenuTabType                   Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_C_Anm_focus;
 
 }
 

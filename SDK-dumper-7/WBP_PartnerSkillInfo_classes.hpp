@@ -45,33 +45,33 @@ public:
 	struct FDataTableRowHandle                    CancelMSGID;                                       // 0x04C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void AnmEvent_HideShow(bool Hide_0, bool Override);
-	void CanRideCharacter(bool* CanRide);
-	void Change_Ride_Key_Guide(bool Ride);
-	void Check_Partner_Skill_Unlocked_Timer();
-	void Destruct();
-	void EndExecuteAnmTimer();
-	void ExecuteUbergraph_WBP_PartnerSkillInfo(int32 EntryPoint);
-	void Get_Partner_Skill_Name_Text(class FText* SkillNameText);
-	void GetOtomoPalHolder(class UBP_OtomoPalHolderComponent_C** OtomoPalHolder);
-	void GetPartnerSkillParameter(class UPalPartnerSkillParameterComponent** PartnerSkillParameter);
-	void Hide();
-	void OnActivateOtomo();
-	void OnInactiveOtomo();
-	void OnStartCoop();
-	void OnStopCoop();
-	void ReleaseInput();
-	void Setup();
-	void SetupDisplay();
-	void Should_Show_UI(bool* ShouldShow);
-	void Show_Effect_Time();
-	void ShowCoolDownTime();
-	void ShowSkillExecuteAnm(bool IsExcuting);
-	void ToggleCoopText(bool ShowOriginal);
-	void TriggerInput();
-	void TriggerSkillCallAnimation();
-	void Update_Cool_Down_Time(const struct FFixedPoint& Now, const struct FFixedPoint& Max);
 	void Update_Effect_Time(const struct FFixedPoint& Now, const struct FFixedPoint& Max);
+	void Update_Cool_Down_Time(const struct FFixedPoint& Now, const struct FFixedPoint& Max);
+	void TriggerSkillCallAnimation();
+	void TriggerInput();
+	void ToggleCoopText(bool ShowOriginal);
+	void ShowSkillExecuteAnm(bool IsExcuting);
+	void ShowCoolDownTime();
+	void Show_Effect_Time();
+	void Should_Show_UI(bool* ShouldShow);
+	void SetupDisplay();
+	void Setup();
+	void ReleaseInput();
+	void OnStopCoop();
+	void OnStartCoop();
+	void OnInactiveOtomo();
+	void OnActivateOtomo();
+	void Hide();
+	void GetPartnerSkillParameter(class UPalPartnerSkillParameterComponent** PartnerSkillParameter);
+	void GetOtomoPalHolder(class UBP_OtomoPalHolderComponent_C** OtomoPalHolder);
+	void Get_Partner_Skill_Name_Text(class FText* SkillNameText);
+	void ExecuteUbergraph_WBP_PartnerSkillInfo(int32 EntryPoint);
+	void EndExecuteAnmTimer();
+	void Destruct();
+	void Check_Partner_Skill_Unlocked_Timer();
+	void Change_Ride_Key_Guide(bool Ride);
+	void CanRideCharacter(bool* CanRide);
+	void AnmEvent_HideShow(bool Hide_0, bool Override);
 
 public:
 	static class UClass* StaticClass()

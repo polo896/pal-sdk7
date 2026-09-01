@@ -14,17 +14,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameMenuConstruction_LR.WBP_IngameMenuConstruction_LR_C.ExecuteUbergraph_WBP_IngameMenuConstruction_LR
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_IngameMenuConstruction_LR_C_ExecuteUbergraph_WBP_IngameMenuConstruction_LR final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UWBP_PalKeyGuideIcon_C*>         K2Node_MakeArray_Array;                            // 0x0008(0x0010)(ReferenceParm, ContainsInstancedReference)
-};
-DUMPER7_ASSERTS_WBP_IngameMenuConstruction_LR_C_ExecuteUbergraph_WBP_IngameMenuConstruction_LR;
-
 // Function WBP_IngameMenuConstruction_LR.WBP_IngameMenuConstruction_LR_C.SetInputAction
 // 0x0028 (0x0028 - 0x0000)
 struct WBP_IngameMenuConstruction_LR_C_SetInputAction final
@@ -41,6 +30,17 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_IngameMenuConstruction_LR_C_SetInputAction;
+
+// Function WBP_IngameMenuConstruction_LR.WBP_IngameMenuConstruction_LR_C.ExecuteUbergraph_WBP_IngameMenuConstruction_LR
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_IngameMenuConstruction_LR_C_ExecuteUbergraph_WBP_IngameMenuConstruction_LR final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UWBP_PalKeyGuideIcon_C*>         K2Node_MakeArray_Array;                            // 0x0008(0x0010)(ReferenceParm, ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_WBP_IngameMenuConstruction_LR_C_ExecuteUbergraph_WBP_IngameMenuConstruction_LR;
 
 }
 

@@ -14,6 +14,18 @@
 namespace SDK::Params
 {
 
+// Function WBP_WarningEvent_NoticeTimer.WBP_WarningEvent_NoticeTimer_C.SetRemainTime
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_WarningEvent_NoticeTimer_C_SetRemainTime final
+{
+public:
+	double                                        remainTime;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_TimeSecondsToString_ReturnValue;          // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0018(0x0018)()
+	float                                         CallFunc_TimeSecondsToString_InSeconds_ImplicitCast; // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WarningEvent_NoticeTimer_C_SetRemainTime;
+
 // Function WBP_WarningEvent_NoticeTimer.WBP_WarningEvent_NoticeTimer_C.ExecuteUbergraph_WBP_WarningEvent_NoticeTimer
 // 0x0020 (0x0020 - 0x0000)
 struct WBP_WarningEvent_NoticeTimer_C_ExecuteUbergraph_WBP_WarningEvent_NoticeTimer final
@@ -26,18 +38,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_WarningEvent_NoticeTimer_C_ExecuteUbergraph_WBP_WarningEvent_NoticeTimer;
-
-// Function WBP_WarningEvent_NoticeTimer.WBP_WarningEvent_NoticeTimer_C.SetRemainTime
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_WarningEvent_NoticeTimer_C_SetRemainTime final
-{
-public:
-	double                                        remainTime;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_TimeSecondsToString_ReturnValue;          // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0018(0x0018)()
-	float                                         CallFunc_TimeSecondsToString_InSeconds_ImplicitCast; // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WarningEvent_NoticeTimer_C_SetRemainTime;
 
 }
 

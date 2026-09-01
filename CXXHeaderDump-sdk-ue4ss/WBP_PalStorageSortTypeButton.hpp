@@ -15,7 +15,7 @@ class UWBP_PalStorageSortTypeButton_C : public UUserWidget
     EPalCharacterContainerSortType BindSortType;                                      // 0x02C0 (size: 0x1)
     FWBP_PalStorageSortTypeButton_COnClicked OnClicked;                               // 0x02C8 (size: 0x10)
     void OnClicked(class UWBP_PalStorageSortTypeButton_C* Widget);
-    TMap<class EPalCharacterContainerSortType, class FDataTableRowHandle> BoxSortTypeMsgIDMap; // 0x02D8 (size: 0x50)
+    TMap<EPalCharacterContainerSortType, FDataTableRowHandle> BoxSortTypeMsgIDMap;    // 0x02D8 (size: 0x50)
 
     void GetBindedSortType(EPalCharacterContainerSortType& SortType);
     void AnmEvent_Focus();

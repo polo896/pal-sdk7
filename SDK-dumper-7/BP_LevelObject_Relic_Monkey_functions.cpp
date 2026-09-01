@@ -17,23 +17,37 @@
 namespace SDK
 {
 
-// Function BP_LevelObject_Relic_Monkey.BP_LevelObject_Relic_Monkey_C.ExecuteUbergraph_BP_LevelObject_Relic_Monkey
-// (Final, UbergraphFunction)
+// Function BP_LevelObject_Relic_Monkey.BP_LevelObject_Relic_Monkey_C.SetActiveSelf
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APalLevelObjectObtainable*        LevelObject                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LevelObject_Relic_Monkey_C::ExecuteUbergraph_BP_LevelObject_Relic_Monkey(int32 EntryPoint)
+void ABP_LevelObject_Relic_Monkey_C::SetActiveSelf(class APalLevelObjectObtainable* LevelObject)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelObject_Relic_Monkey_C", "ExecuteUbergraph_BP_LevelObject_Relic_Monkey");
+		Func = Class->GetFunction("BP_LevelObject_Relic_Monkey_C", "SetActiveSelf");
 
-	Params::BP_LevelObject_Relic_Monkey_C_ExecuteUbergraph_BP_LevelObject_Relic_Monkey Parms{};
+	Params::BP_LevelObject_Relic_Monkey_C_SetActiveSelf Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.LevelObject = LevelObject;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_LevelObject_Relic_Monkey.BP_LevelObject_Relic_Monkey_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_LevelObject_Relic_Monkey_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LevelObject_Relic_Monkey_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -57,35 +71,21 @@ void ABP_LevelObject_Relic_Monkey_C::OnUpdatePickupStatus(class APalLevelObjectO
 }
 
 
-// Function BP_LevelObject_Relic_Monkey.BP_LevelObject_Relic_Monkey_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_LevelObject_Relic_Monkey_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelObject_Relic_Monkey_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_LevelObject_Relic_Monkey.BP_LevelObject_Relic_Monkey_C.SetActiveSelf
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function BP_LevelObject_Relic_Monkey.BP_LevelObject_Relic_Monkey_C.ExecuteUbergraph_BP_LevelObject_Relic_Monkey
+// (Final, UbergraphFunction)
 // Parameters:
-// class APalLevelObjectObtainable*        LevelObject                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LevelObject_Relic_Monkey_C::SetActiveSelf(class APalLevelObjectObtainable* LevelObject)
+void ABP_LevelObject_Relic_Monkey_C::ExecuteUbergraph_BP_LevelObject_Relic_Monkey(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelObject_Relic_Monkey_C", "SetActiveSelf");
+		Func = Class->GetFunction("BP_LevelObject_Relic_Monkey_C", "ExecuteUbergraph_BP_LevelObject_Relic_Monkey");
 
-	Params::BP_LevelObject_Relic_Monkey_C_SetActiveSelf Parms{};
+	Params::BP_LevelObject_Relic_Monkey_C_ExecuteUbergraph_BP_LevelObject_Relic_Monkey Parms{};
 
-	Parms.LevelObject = LevelObject;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

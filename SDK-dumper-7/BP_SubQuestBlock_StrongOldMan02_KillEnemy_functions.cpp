@@ -17,27 +17,6 @@
 namespace SDK
 {
 
-// Function BP_SubQuestBlock_StrongOldMan02_KillEnemy.BP_SubQuestBlock_StrongOldMan02_KillEnemy_C.GetDescriptionText
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class FText*                            OutText                                                (Parm, OutParm)
-
-void UBP_SubQuestBlock_StrongOldMan02_KillEnemy_C::GetDescriptionText(class FText* OutText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SubQuestBlock_StrongOldMan02_KillEnemy_C", "GetDescriptionText");
-
-	Params::BP_SubQuestBlock_StrongOldMan02_KillEnemy_C_GetDescriptionText Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutText != nullptr)
-		*OutText = std::move(Parms.OutText);
-}
-
-
 // Function BP_SubQuestBlock_StrongOldMan02_KillEnemy.BP_SubQuestBlock_StrongOldMan02_KillEnemy_C.GetProgressText
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -51,6 +30,27 @@ void UBP_SubQuestBlock_StrongOldMan02_KillEnemy_C::GetProgressText(class FText* 
 		Func = Class->GetFunction("BP_SubQuestBlock_StrongOldMan02_KillEnemy_C", "GetProgressText");
 
 	Params::BP_SubQuestBlock_StrongOldMan02_KillEnemy_C_GetProgressText Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutText != nullptr)
+		*OutText = std::move(Parms.OutText);
+}
+
+
+// Function BP_SubQuestBlock_StrongOldMan02_KillEnemy.BP_SubQuestBlock_StrongOldMan02_KillEnemy_C.GetDescriptionText
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class FText*                            OutText                                                (Parm, OutParm)
+
+void UBP_SubQuestBlock_StrongOldMan02_KillEnemy_C::GetDescriptionText(class FText* OutText)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_SubQuestBlock_StrongOldMan02_KillEnemy_C", "GetDescriptionText");
+
+	Params::BP_SubQuestBlock_StrongOldMan02_KillEnemy_C_GetDescriptionText Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 

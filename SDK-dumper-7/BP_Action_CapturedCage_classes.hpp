@@ -25,9 +25,9 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0160(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_BP_Action_CapturedCage(int32 EntryPoint);
-	void OnBeginAction();
 	void OnEndAction();
+	void OnBeginAction();
+	void ExecuteUbergraph_BP_Action_CapturedCage(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -26,11 +26,11 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x01C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
-	void ActionStart(class APawn* ControlledPawn);
-	void ExecuteUbergraph_BP_AIActionBaseCamp_InSpa(int32 EntryPoint);
-	void OnFinishedImpl(class AActor* ControlledPawn);
 	void OnStartImpl(class AActor* ControlledPawn);
+	void OnFinishedImpl(class AActor* ControlledPawn);
+	void ExecuteUbergraph_BP_AIActionBaseCamp_InSpa(int32 EntryPoint);
+	void ActionStart(class APawn* ControlledPawn);
+	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
 
 	float GetUsingTime() const;
 

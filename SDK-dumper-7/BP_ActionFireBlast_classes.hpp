@@ -27,10 +27,10 @@ public:
 	bool                                          IsShooted;                                         // 0x02F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BulletHasShooted(class APalSkillEffectBase* Effect_0);
-	bool CanNextActionCancel();
-	void ExecuteUbergraph_BP_ActionFireBlast(int32 EntryPoint);
 	void OnBeginAction();
+	void ExecuteUbergraph_BP_ActionFireBlast(int32 EntryPoint);
+	bool CanNextActionCancel();
+	void BulletHasShooted(class APalSkillEffectBase* Effect_0);
 
 public:
 	static class UClass* StaticClass()

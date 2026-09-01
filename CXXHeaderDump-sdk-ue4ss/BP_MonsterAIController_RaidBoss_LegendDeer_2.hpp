@@ -3,6 +3,6 @@
 
 class ABP_MonsterAIController_RaidBoss_LegendDeer_2_C : public ABP_MonsterAIController_RaidBoss_LegendDeer_C
 {
-}; // Size: 0x5C0
+}; // Size: 0x5C1
 
 #endif

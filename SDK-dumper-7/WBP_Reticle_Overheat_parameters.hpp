@@ -17,6 +17,32 @@
 namespace SDK::Params
 {
 
+// Function WBP_Reticle_Overheat.WBP_Reticle_Overheat_C.OnReticleActivted
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_Reticle_Overheat_C_OnReticleActivted final
+{
+public:
+	struct FPalItemId                             WeaponItemId;                                      // 0x0000(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Reticle_Overheat_C_OnReticleActivted;
+
+// Function WBP_Reticle_Overheat.WBP_Reticle_Overheat_C.OnChangedHeatValue
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_Reticle_Overheat_C_OnChangedHeatValue final
+{
+public:
+	bool                                          bOverHeated;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        HeatValue;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_DoubleDouble_ReturnValue;      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0020(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Reticle_Overheat_C_OnChangedHeatValue;
+
 // Function WBP_Reticle_Overheat.WBP_Reticle_Overheat_C.ExecuteUbergraph_WBP_Reticle_Overheat
 // 0x00D0 (0x00D0 - 0x0000)
 struct WBP_Reticle_Overheat_C_ExecuteUbergraph_WBP_Reticle_Overheat final
@@ -46,32 +72,6 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_1;         // 0x00C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Reticle_Overheat_C_ExecuteUbergraph_WBP_Reticle_Overheat;
-
-// Function WBP_Reticle_Overheat.WBP_Reticle_Overheat_C.OnChangedHeatValue
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_Reticle_Overheat_C_OnChangedHeatValue final
-{
-public:
-	bool                                          bOverHeated;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        HeatValue;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_DoubleDouble_ReturnValue;      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0020(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Reticle_Overheat_C_OnChangedHeatValue;
-
-// Function WBP_Reticle_Overheat.WBP_Reticle_Overheat_C.OnReticleActivted
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_Reticle_Overheat_C_OnReticleActivted final
-{
-public:
-	struct FPalItemId                             WeaponItemId;                                      // 0x0000(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Reticle_Overheat_C_OnReticleActivted;
 
 }
 

@@ -14,6 +14,15 @@
 namespace SDK::Params
 {
 
+// Function WBP_Crime_Scene.WBP_Crime_Scene_C.SetCrimeSceneEnable
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Crime_Scene_C_SetCrimeSceneEnable final
+{
+public:
+	bool                                          Enable;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Crime_Scene_C_SetCrimeSceneEnable;
+
 // Function WBP_Crime_Scene.WBP_Crime_Scene_C.ExecuteUbergraph_WBP_Crime_Scene
 // 0x00A0 (0x00A0 - 0x0000)
 struct WBP_Crime_Scene_C_ExecuteUbergraph_WBP_Crime_Scene final
@@ -49,15 +58,6 @@ public:
 	float                                         CallFunc_CreatePlayAnimationProxyObject_StartAtTime_ImplicitCast_1; // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Crime_Scene_C_ExecuteUbergraph_WBP_Crime_Scene;
-
-// Function WBP_Crime_Scene.WBP_Crime_Scene_C.SetCrimeSceneEnable
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Crime_Scene_C_SetCrimeSceneEnable final
-{
-public:
-	bool                                          Enable;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Crime_Scene_C_SetCrimeSceneEnable;
 
 }
 

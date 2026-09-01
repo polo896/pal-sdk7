@@ -34,11 +34,11 @@ public:
 
 public:
 	void ExecuteUbergraph_BP_MapObject_DamagableRock0017(int32 EntryPoint);
-	void InitializeFromPool();
 	void ReturnToPool();
+	void InitializeFromPool();
 
-	struct FPalObjectPoolParameter GetObjectPoolParameter() const;
 	bool IsShowOutlineInReticleTargetting() const;
+	struct FPalObjectPoolParameter GetObjectPoolParameter() const;
 
 public:
 	static class UClass* StaticClass()

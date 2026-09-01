@@ -29,8 +29,8 @@ public:
 	struct FVector                                NewVar;                                            // 0x02A8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void CustomBegin(class UStaticMesh* Mesh, const struct FVector& Velocity, float AngularIntensify);
 	void ExecuteUbergraph_BP_DropWeaponPart(int32 EntryPoint);
+	void CustomBegin(class UStaticMesh* Mesh, const struct FVector& Velocity, float AngularIntensify);
 
 public:
 	static class UClass* StaticClass()

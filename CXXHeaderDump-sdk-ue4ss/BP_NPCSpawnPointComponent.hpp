@@ -7,7 +7,7 @@ class UBP_NPCSpawnPointComponent_C : public UStaticMeshComponent
     FPalDataTableRowName_PalHumanData NPCName;                                        // 0x05F8 (size: 0x8)
     TSubclassOf<class UPalAIActionBase> OverrideDefaultAction;                        // 0x0600 (size: 0x8)
     int32 OverrideLevel;                                                              // 0x0608 (size: 0x4)
-    TArray<class UBP_NPCPathWalkPointComponent_1_C*> WalkPointRefarence;              // 0x0610 (size: 0x10)
+    TArray<UBP_NPCPathWalkPointComponent_1_C*> WalkPointRefarence;                    // 0x0610 (size: 0x10)
     FPalDataTableRowName_PalMonsterData OtomoName;                                    // 0x0620 (size: 0x8)
 
     void GetOneSpawnInfo(FF_NPCOnePointSpawnInfo& Info);

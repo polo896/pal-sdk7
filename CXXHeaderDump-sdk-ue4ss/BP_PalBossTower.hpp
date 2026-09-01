@@ -13,7 +13,7 @@ class ABP_PalBossTower_C : public ABP_PalBossTowerBase_C
     class USphereComponent* InsidePlayerCheck_Trigger;                                // 0x03E0 (size: 0x8)
     class UStaticMeshComponent* SM_TowerSphere_tower_sphere_geo;                      // 0x03E8 (size: 0x8)
     class UStaticMeshComponent* SM_TowerSphere_tower_sphereCube_geo;                  // 0x03F0 (size: 0x8)
-    TMap<class UMaterialInterface*, class UTexture*> TextureMap;                      // 0x03F8 (size: 0x50)
+    TMap<UMaterialInterface*, UTexture*> TextureMap;                                  // 0x03F8 (size: 0x50)
     class UMaterialInterface* CachedMaterial;                                         // 0x0448 (size: 0x8)
     bool Debug;                                                                       // 0x0450 (size: 0x1)
 

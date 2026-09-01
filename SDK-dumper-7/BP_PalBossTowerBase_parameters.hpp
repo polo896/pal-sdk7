@@ -18,14 +18,241 @@
 namespace SDK::Params
 {
 
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.BP_PalBossTowerBase_AutoGenFunc
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.UpdateBossBattleState
+// 0x0038 (0x0038 - 0x0000)
+struct BP_PalBossTowerBase_C_UpdateBossBattleState final
+{
+public:
+	EPalBossBattleState                           NewBossBattleState;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          isOpenOld;                                         // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECollisionEnabled                             Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECollisionEnabled                             Temp_byte_Variable_1;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECollisionEnabled                             K2Node_Select_Default;                             // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECollisionEnabled                             Temp_byte_Variable_2;                              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECollisionEnabled                             Temp_byte_Variable_3;                              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UShapeComponent*                        CallFunc_GetInteractableTrigger_InteractableTrigger; // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	ECollisionEnabled                             K2Node_Select_Default_1;                           // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_Guid_ReturnValue;                 // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UShapeComponent*                        CallFunc_GetEntryWaitInfoTrigger_EntryWaitInfoTrigger; // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBossTowerBase_C_UpdateBossBattleState;
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.SetQuestEffectActive
 // 0x0001 (0x0001 - 0x0000)
-struct BP_PalBossTowerBase_C_BP_PalBossTowerBase_AutoGenFunc final
+struct BP_PalBossTowerBase_C_SetQuestEffectActive final
+{
+public:
+	bool                                          IsActive;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBossTowerBase_C_SetQuestEffectActive;
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OpenStartBattleCheckDialog
+// 0x00F8 (0x00F8 - 0x0000)
+struct BP_PalBossTowerBase_C_OpenStartBattleCheckDialog final
+{
+public:
+	class FString                                 DialogTextString;                                  // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0018(0x0018)()
+	TDelegate<void(bool bResult)>                 K2Node_CreateDelegate_OutputDelegate;              // 0x0030(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0060(0x0018)()
+	struct FGuid                                  CallFunc_Dialog_ReturnValue;                       // 0x0078(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalPlayerCharacter*                    CallFunc_Array_Get_Item;                           // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalIndividualCharacterParameter*       CallFunc_GetIndividualCharacterParameterByActor_ReturnValue; // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetNickNameWithOnlineID_OutName;          // 0x00B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x00C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x00E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBossTowerBase_C_OpenStartBattleCheckDialog;
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnOrderedQuestLocal
+// 0x0020 (0x0020 - 0x0000)
+struct BP_PalBossTowerBase_C_OnOrderedQuestLocal final
+{
+public:
+	class FName                                   QuestId;                                           // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    CallFunc_Map_Find_Value;                           // 0x0008(0x0010)(NoDestructor)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBossTowerBase_C_OnOrderedQuestLocal;
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnInteractableTriggerStartOverlap
+// 0x0020 (0x0020 - 0x0000)
+struct BP_PalBossTowerBase_C_OnInteractableTriggerStartOverlap final
+{
+public:
+	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBossTowerBase_C_OnInteractableTriggerStartOverlap;
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnInteractableTriggerEndOverlap
+// 0x0108 (0x0108 - 0x0000)
+struct BP_PalBossTowerBase_C_OnInteractableTriggerEndOverlap final
+{
+public:
+	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             SweepResult;                                       // 0x0020(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_BP_PalBossTowerBase_C_OnInteractableTriggerEndOverlap;
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnEntryWaitInfoTriggerEndOverlap
+// 0x0020 (0x0020 - 0x0000)
+struct BP_PalBossTowerBase_C_OnEntryWaitInfoTriggerEndOverlap final
+{
+public:
+	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBossTowerBase_C_OnEntryWaitInfoTriggerEndOverlap;
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnEntryWaitInfoTriggerBeginOverlap
+// 0x0108 (0x0108 - 0x0000)
+struct BP_PalBossTowerBase_C_OnEntryWaitInfoTriggerBeginOverlap final
+{
+public:
+	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             SweepResult;                                       // 0x0020(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_BP_PalBossTowerBase_C_OnEntryWaitInfoTriggerBeginOverlap;
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnCompleteQuestLocal
+// 0x0020 (0x0020 - 0x0000)
+struct BP_PalBossTowerBase_C_OnCompleteQuestLocal final
+{
+public:
+	class FName                                   QuestId;                                           // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    CallFunc_Map_Find_Value;                           // 0x0008(0x0010)(NoDestructor)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBossTowerBase_C_OnCompleteQuestLocal;
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnClosedLockDialog
+// 0x0020 (0x0020 - 0x0000)
+struct BP_PalBossTowerBase_C_OnClosedLockDialog final
+{
+public:
+	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x0004(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalNetworkTransmitter*                 CallFunc_GetNetworkTransmitter_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalNetworkQuestComponent*              CallFunc_GetQuest_ReturnValue;                     // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBossTowerBase_C_OnClosedLockDialog;
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnChangeBossBattleStateBP
+// 0x0001 (0x0001 - 0x0000)
+struct BP_PalBossTowerBase_C_OnChangeBossBattleStateBP final
+{
+public:
+	EPalBossBattleState                           NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBossTowerBase_C_OnChangeBossBattleStateBP;
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnCancelTriggerEndOverlap
+// 0x0020 (0x0020 - 0x0000)
+struct BP_PalBossTowerBase_C_OnCancelTriggerEndOverlap final
+{
+public:
+	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBossTowerBase_C_OnCancelTriggerEndOverlap;
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.On Close Start Battle Check Dialog
+// 0x0001 (0x0001 - 0x0000)
+struct BP_PalBossTowerBase_C_On_Close_Start_Battle_Check_Dialog final
 {
 public:
 	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalBossTowerBase_C_BP_PalBossTowerBase_AutoGenFunc;
+DUMPER7_ASSERTS_BP_PalBossTowerBase_C_On_Close_Start_Battle_Check_Dialog;
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.Interact
+// 0x0010 (0x0010 - 0x0000)
+struct BP_PalBossTowerBase_C_Interact final
+{
+public:
+	class AActor*                                 Other;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPalInteractiveObjectIndicatorType            IndicatorType;                                     // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBossTowerBase_C_Interact;
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.GetInteractableTrigger
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PalBossTowerBase_C_GetInteractableTrigger final
+{
+public:
+	class UShapeComponent*                        InteractableTrigger;                               // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBossTowerBase_C_GetInteractableTrigger;
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.GetInteractableInterface
+// 0x0010 (0x0010 - 0x0000)
+struct BP_PalBossTowerBase_C_GetInteractableInterface final
+{
+public:
+	TScriptInterface<class IPalInteractiveObjectComponentInterface> Interface;                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBossTowerBase_C_GetInteractableInterface;
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.GetEntryWaitInfoTrigger
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PalBossTowerBase_C_GetEntryWaitInfoTrigger final
+{
+public:
+	class UShapeComponent*                        EntryWaitInfoTrigger;                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBossTowerBase_C_GetEntryWaitInfoTrigger;
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.GetEntryCancelTrigger
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PalBossTowerBase_C_GetEntryCancelTrigger final
+{
+public:
+	class UShapeComponent*                        EntryCancelTrigger;                                // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBossTowerBase_C_GetEntryCancelTrigger;
 
 // Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.ExecuteUbergraph_BP_PalBossTowerBase
 // 0x0498 (0x0498 - 0x0000)
@@ -151,251 +378,24 @@ public:
 };
 DUMPER7_ASSERTS_BP_PalBossTowerBase_C_ExecuteUbergraph_BP_PalBossTowerBase;
 
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.GetEntryCancelTrigger
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PalBossTowerBase_C_GetEntryCancelTrigger final
-{
-public:
-	class UShapeComponent*                        EntryCancelTrigger;                                // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBossTowerBase_C_GetEntryCancelTrigger;
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.GetEntryWaitInfoTrigger
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PalBossTowerBase_C_GetEntryWaitInfoTrigger final
-{
-public:
-	class UShapeComponent*                        EntryWaitInfoTrigger;                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBossTowerBase_C_GetEntryWaitInfoTrigger;
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.GetInteractableInterface
-// 0x0010 (0x0010 - 0x0000)
-struct BP_PalBossTowerBase_C_GetInteractableInterface final
-{
-public:
-	TScriptInterface<class IPalInteractiveObjectComponentInterface> Interface;                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBossTowerBase_C_GetInteractableInterface;
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.GetInteractableTrigger
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PalBossTowerBase_C_GetInteractableTrigger final
-{
-public:
-	class UShapeComponent*                        InteractableTrigger;                               // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBossTowerBase_C_GetInteractableTrigger;
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.Interact
-// 0x0010 (0x0010 - 0x0000)
-struct BP_PalBossTowerBase_C_Interact final
-{
-public:
-	class AActor*                                 Other;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPalInteractiveObjectIndicatorType            IndicatorType;                                     // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBossTowerBase_C_Interact;
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.On Close Start Battle Check Dialog
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.BP_PalBossTowerBase_AutoGenFunc
 // 0x0001 (0x0001 - 0x0000)
-struct BP_PalBossTowerBase_C_On_Close_Start_Battle_Check_Dialog final
+struct BP_PalBossTowerBase_C_BP_PalBossTowerBase_AutoGenFunc final
 {
 public:
 	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalBossTowerBase_C_On_Close_Start_Battle_Check_Dialog;
+DUMPER7_ASSERTS_BP_PalBossTowerBase_C_BP_PalBossTowerBase_AutoGenFunc;
 
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnCancelTriggerEndOverlap
-// 0x0020 (0x0020 - 0x0000)
-struct BP_PalBossTowerBase_C_OnCancelTriggerEndOverlap final
-{
-public:
-	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBossTowerBase_C_OnCancelTriggerEndOverlap;
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnChangeBossBattleStateBP
-// 0x0001 (0x0001 - 0x0000)
-struct BP_PalBossTowerBase_C_OnChangeBossBattleStateBP final
-{
-public:
-	EPalBossBattleState                           NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBossTowerBase_C_OnChangeBossBattleStateBP;
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnClosedLockDialog
-// 0x0020 (0x0020 - 0x0000)
-struct BP_PalBossTowerBase_C_OnClosedLockDialog final
-{
-public:
-	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x0004(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalNetworkTransmitter*                 CallFunc_GetNetworkTransmitter_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalNetworkQuestComponent*              CallFunc_GetQuest_ReturnValue;                     // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBossTowerBase_C_OnClosedLockDialog;
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnCompleteQuestLocal
-// 0x0020 (0x0020 - 0x0000)
-struct BP_PalBossTowerBase_C_OnCompleteQuestLocal final
-{
-public:
-	class FName                                   QuestId;                                           // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    CallFunc_Map_Find_Value;                           // 0x0008(0x0010)(NoDestructor)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBossTowerBase_C_OnCompleteQuestLocal;
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnEntryWaitInfoTriggerBeginOverlap
-// 0x0108 (0x0108 - 0x0000)
-struct BP_PalBossTowerBase_C_OnEntryWaitInfoTriggerBeginOverlap final
-{
-public:
-	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             SweepResult;                                       // 0x0020(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-DUMPER7_ASSERTS_BP_PalBossTowerBase_C_OnEntryWaitInfoTriggerBeginOverlap;
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnEntryWaitInfoTriggerEndOverlap
-// 0x0020 (0x0020 - 0x0000)
-struct BP_PalBossTowerBase_C_OnEntryWaitInfoTriggerEndOverlap final
-{
-public:
-	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBossTowerBase_C_OnEntryWaitInfoTriggerEndOverlap;
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnInteractableTriggerEndOverlap
-// 0x0108 (0x0108 - 0x0000)
-struct BP_PalBossTowerBase_C_OnInteractableTriggerEndOverlap final
-{
-public:
-	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             SweepResult;                                       // 0x0020(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-DUMPER7_ASSERTS_BP_PalBossTowerBase_C_OnInteractableTriggerEndOverlap;
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnInteractableTriggerStartOverlap
-// 0x0020 (0x0020 - 0x0000)
-struct BP_PalBossTowerBase_C_OnInteractableTriggerStartOverlap final
-{
-public:
-	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBossTowerBase_C_OnInteractableTriggerStartOverlap;
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnOrderedQuestLocal
-// 0x0020 (0x0020 - 0x0000)
-struct BP_PalBossTowerBase_C_OnOrderedQuestLocal final
-{
-public:
-	class FName                                   QuestId;                                           // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    CallFunc_Map_Find_Value;                           // 0x0008(0x0010)(NoDestructor)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBossTowerBase_C_OnOrderedQuestLocal;
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OpenStartBattleCheckDialog
-// 0x00F8 (0x00F8 - 0x0000)
-struct BP_PalBossTowerBase_C_OpenStartBattleCheckDialog final
-{
-public:
-	class FString                                 DialogTextString;                                  // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0018(0x0018)()
-	TDelegate<void(bool bResult)>                 K2Node_CreateDelegate_OutputDelegate;              // 0x0030(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0060(0x0018)()
-	struct FGuid                                  CallFunc_Dialog_ReturnValue;                       // 0x0078(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalPlayerCharacter*                    CallFunc_Array_Get_Item;                           // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalIndividualCharacterParameter*       CallFunc_GetIndividualCharacterParameterByActor_ReturnValue; // 0x00A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetNickNameWithOnlineID_OutName;          // 0x00B8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x00C8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_DC[0x4];                                       // 0x00DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x00E0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBossTowerBase_C_OpenStartBattleCheckDialog;
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.SetQuestEffectActive
-// 0x0001 (0x0001 - 0x0000)
-struct BP_PalBossTowerBase_C_SetQuestEffectActive final
-{
-public:
-	bool                                          IsActive;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBossTowerBase_C_SetQuestEffectActive;
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.UpdateBossBattleState
-// 0x0038 (0x0038 - 0x0000)
-struct BP_PalBossTowerBase_C_UpdateBossBattleState final
-{
-public:
-	EPalBossBattleState                           NewBossBattleState;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          isOpenOld;                                         // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECollisionEnabled                             Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECollisionEnabled                             Temp_byte_Variable_1;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECollisionEnabled                             K2Node_Select_Default;                             // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECollisionEnabled                             Temp_byte_Variable_2;                              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECollisionEnabled                             Temp_byte_Variable_3;                              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UShapeComponent*                        CallFunc_GetInteractableTrigger_InteractableTrigger; // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	ECollisionEnabled                             K2Node_Select_Default_1;                           // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_Guid_ReturnValue;                 // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UShapeComponent*                        CallFunc_GetEntryWaitInfoTrigger_EntryWaitInfoTrigger; // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBossTowerBase_C_UpdateBossBattleState;
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.GetDeadItemDropPoint
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.GetTopWarpPoint
 // 0x00C0 (0x00C0 - 0x0000)
-struct BP_PalBossTowerBase_C_GetDeadItemDropPoint final
+struct BP_PalBossTowerBase_C_GetTopWarpPoint final
 {
 public:
 	struct FTransform                             ReturnValue;                                       // 0x0000(0x0060)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0060(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalBossTowerBase_C_GetDeadItemDropPoint;
+DUMPER7_ASSERTS_BP_PalBossTowerBase_C_GetTopWarpPoint;
 
 // Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.GetFrontWarpPoint
 // 0x00C0 (0x00C0 - 0x0000)
@@ -407,15 +407,15 @@ public:
 };
 DUMPER7_ASSERTS_BP_PalBossTowerBase_C_GetFrontWarpPoint;
 
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.GetTopWarpPoint
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.GetDeadItemDropPoint
 // 0x00C0 (0x00C0 - 0x0000)
-struct BP_PalBossTowerBase_C_GetTopWarpPoint final
+struct BP_PalBossTowerBase_C_GetDeadItemDropPoint final
 {
 public:
 	struct FTransform                             ReturnValue;                                       // 0x0000(0x0060)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0060(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalBossTowerBase_C_GetTopWarpPoint;
+DUMPER7_ASSERTS_BP_PalBossTowerBase_C_GetDeadItemDropPoint;
 
 }
 

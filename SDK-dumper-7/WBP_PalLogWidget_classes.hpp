@@ -49,25 +49,25 @@ public:
 	TArray<class UWBP_Notice_Deathlog_C*>         KillLogList;                                       // 0x0578(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void CheckImportantLog(bool* IsRemoved);
-	void CheckRemoveLog(const TArray<class UPalLogWidgetBase*>& TargetArray, bool* Removed);
-	void CheckVeryImportantLog(double DeltaTime);
-	void CREATEDELEGATE_PROXYFUNCTION_0(const struct FPalKillLogDisplayData& DeathLogDisplayData);
-	void CreateLogWidget(class UClass* logWidgeClass, const class FText& Text, const struct FPalLogAdditionalData& AdditionalData, class UPalLogWidgetBase** createdWidget);
-	void Destruct();
-	void DisplayNextVeryImportantLog();
-	void ExecuteUbergraph_WBP_PalLogWidget(int32 EntryPoint);
-	void On_Added_Normal_Log(const class FText& LogText, const struct FPalLogAdditionalData& logAdditionalData);
-	void OnAddedDeathLog(const struct FPalKillLogDisplayData& DeathLogDisplayData);
-	void OnAddedImportantLog(const class FText& LogText, const struct FPalLogAdditionalData& logAdditionalData);
-	void OnAddedKillLog(const struct FPalKillLogDisplayData& KillLogData);
-	void OnAddedVeryImportantLog(const struct FGuid& logId, const class FText& LogText, const struct FPalLogAdditionalData& logAdditionalData);
-	void OnDeathLogEnd(class UWBP_Notice_Deathlog_C* EndedLog);
-	void OnInitialized();
-	void OnKillLogEnd(class UWBP_Notice_Deathlog_C* EndedLog);
-	void OnRemovedVeryImportantLog(const struct FGuid& logId);
-	void SetupWidgetTranslation(class UPalLogWidgetBase* TargetWidget, class UCanvasPanelSlot* relationSlot);
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void SetupWidgetTranslation(class UPalLogWidgetBase* TargetWidget, class UCanvasPanelSlot* relationSlot);
+	void OnRemovedVeryImportantLog(const struct FGuid& logId);
+	void OnKillLogEnd(class UWBP_Notice_Deathlog_C* EndedLog);
+	void OnInitialized();
+	void OnDeathLogEnd(class UWBP_Notice_Deathlog_C* EndedLog);
+	void OnAddedVeryImportantLog(const struct FGuid& logId, const class FText& LogText, const struct FPalLogAdditionalData& logAdditionalData);
+	void OnAddedKillLog(const struct FPalKillLogDisplayData& KillLogData);
+	void OnAddedImportantLog(const class FText& LogText, const struct FPalLogAdditionalData& logAdditionalData);
+	void OnAddedDeathLog(const struct FPalKillLogDisplayData& DeathLogDisplayData);
+	void On_Added_Normal_Log(const class FText& LogText, const struct FPalLogAdditionalData& logAdditionalData);
+	void ExecuteUbergraph_WBP_PalLogWidget(int32 EntryPoint);
+	void DisplayNextVeryImportantLog();
+	void Destruct();
+	void CreateLogWidget(class UClass* logWidgeClass, const class FText& Text, const struct FPalLogAdditionalData& AdditionalData, class UPalLogWidgetBase** createdWidget);
+	void CREATEDELEGATE_PROXYFUNCTION_0(const struct FPalKillLogDisplayData& DeathLogDisplayData);
+	void CheckVeryImportantLog(double DeltaTime);
+	void CheckRemoveLog(const TArray<class UPalLogWidgetBase*>& TargetArray, bool* Removed);
+	void CheckImportantLog(bool* IsRemoved);
 
 public:
 	static class UClass* StaticClass()

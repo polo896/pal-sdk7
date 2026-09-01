@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "WBP_IndividualParameterBindWidget_classes.hpp"
+#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 
 
@@ -35,12 +35,12 @@ public:
 	TArray<class UWBP_MainMenu_Pal_State_C*>      ConditionWidgetArray;                              // 0x06C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void Clear();
-	void ExecuteUbergraph_WBP_IngameMenu_Task_SimpleList(int32 EntryPoint);
-	void OnInitialized();
-	void Setup(class UPalIndividualCharacterSlot* TargetSlot);
-	void UpdateCondition(TArray<EPalUIConditionType>& Conditions);
 	void UpdateNickname(const class FString& NewNickName);
+	void UpdateCondition(TArray<EPalUIConditionType>& Conditions);
+	void Setup(class UPalIndividualCharacterSlot* TargetSlot);
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_IngameMenu_Task_SimpleList(int32 EntryPoint);
+	void Clear();
 
 public:
 	static class UClass* StaticClass()

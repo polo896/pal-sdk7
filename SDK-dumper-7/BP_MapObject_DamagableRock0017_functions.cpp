@@ -37,20 +37,6 @@ void ABP_MapObject_DamagableRock0017_C::ExecuteUbergraph_BP_MapObject_DamagableR
 }
 
 
-// Function BP_MapObject_DamagableRock0017.BP_MapObject_DamagableRock0017_C.InitializeFromPool
-// (Event, Public, BlueprintEvent)
-
-void ABP_MapObject_DamagableRock0017_C::InitializeFromPool()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_DamagableRock0017_C", "InitializeFromPool");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_MapObject_DamagableRock0017.BP_MapObject_DamagableRock0017_C.ReturnToPool
 // (Event, Public, BlueprintEvent)
 
@@ -65,23 +51,17 @@ void ABP_MapObject_DamagableRock0017_C::ReturnToPool()
 }
 
 
-// Function BP_MapObject_DamagableRock0017.BP_MapObject_DamagableRock0017_C.GetObjectPoolParameter
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
-// Parameters:
-// struct FPalObjectPoolParameter          ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor)
+// Function BP_MapObject_DamagableRock0017.BP_MapObject_DamagableRock0017_C.InitializeFromPool
+// (Event, Public, BlueprintEvent)
 
-struct FPalObjectPoolParameter ABP_MapObject_DamagableRock0017_C::GetObjectPoolParameter() const
+void ABP_MapObject_DamagableRock0017_C::InitializeFromPool()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_DamagableRock0017_C", "GetObjectPoolParameter");
+		Func = Class->GetFunction("BP_MapObject_DamagableRock0017_C", "InitializeFromPool");
 
-	Params::BP_MapObject_DamagableRock0017_C_GetObjectPoolParameter Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -98,6 +78,26 @@ bool ABP_MapObject_DamagableRock0017_C::IsShowOutlineInReticleTargetting() const
 		Func = Class->GetFunction("BP_MapObject_DamagableRock0017_C", "IsShowOutlineInReticleTargetting");
 
 	Params::BP_MapObject_DamagableRock0017_C_IsShowOutlineInReticleTargetting Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_MapObject_DamagableRock0017.BP_MapObject_DamagableRock0017_C.GetObjectPoolParameter
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// struct FPalObjectPoolParameter          ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor)
+
+struct FPalObjectPoolParameter ABP_MapObject_DamagableRock0017_C::GetObjectPoolParameter() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MapObject_DamagableRock0017_C", "GetObjectPoolParameter");
+
+	Params::BP_MapObject_DamagableRock0017_C_GetObjectPoolParameter Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 

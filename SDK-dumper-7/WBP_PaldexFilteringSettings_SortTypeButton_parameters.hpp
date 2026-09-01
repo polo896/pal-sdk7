@@ -16,32 +16,14 @@
 namespace SDK::Params
 {
 
-// Function WBP_PaldexFilteringSettings_SortTypeButton.WBP_PaldexFilteringSettings_SortTypeButton_C.BndEvt__WBP_PaldexFilteringSettings_SortTypeButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PaldexFilteringSettings_SortTypeButton_C_BndEvt__WBP_PaldexFilteringSettings_SortTypeButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_PaldexFilteringSettings_SortTypeButton.WBP_PaldexFilteringSettings_SortTypeButton_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_PaldexFilteringSettings_SortTypeButton_C_PreConstruct final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PaldexFilteringSettings_SortTypeButton_C_BndEvt__WBP_PaldexFilteringSettings_SortTypeButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_PaldexFilteringSettings_SortTypeButton.WBP_PaldexFilteringSettings_SortTypeButton_C.BndEvt__WBP_PaldexFilteringSettings_SortTypeButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PaldexFilteringSettings_SortTypeButton_C_BndEvt__WBP_PaldexFilteringSettings_SortTypeButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PaldexFilteringSettings_SortTypeButton_C_BndEvt__WBP_PaldexFilteringSettings_SortTypeButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_PaldexFilteringSettings_SortTypeButton.WBP_PaldexFilteringSettings_SortTypeButton_C.BndEvt__WBP_PaldexFilteringSettings_SortTypeButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PaldexFilteringSettings_SortTypeButton_C_BndEvt__WBP_PaldexFilteringSettings_SortTypeButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PaldexFilteringSettings_SortTypeButton_C_BndEvt__WBP_PaldexFilteringSettings_SortTypeButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_PaldexFilteringSettings_SortTypeButton_C_PreConstruct;
 
 // Function WBP_PaldexFilteringSettings_SortTypeButton.WBP_PaldexFilteringSettings_SortTypeButton_C.ExecuteUbergraph_WBP_PaldexFilteringSettings_SortTypeButton
 // 0x0128 (0x0128 - 0x0000)
@@ -73,14 +55,32 @@ public:
 };
 DUMPER7_ASSERTS_WBP_PaldexFilteringSettings_SortTypeButton_C_ExecuteUbergraph_WBP_PaldexFilteringSettings_SortTypeButton;
 
-// Function WBP_PaldexFilteringSettings_SortTypeButton.WBP_PaldexFilteringSettings_SortTypeButton_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_PaldexFilteringSettings_SortTypeButton_C_PreConstruct final
+// Function WBP_PaldexFilteringSettings_SortTypeButton.WBP_PaldexFilteringSettings_SortTypeButton_C.BndEvt__WBP_PaldexFilteringSettings_SortTypeButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PaldexFilteringSettings_SortTypeButton_C_BndEvt__WBP_PaldexFilteringSettings_SortTypeButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PaldexFilteringSettings_SortTypeButton_C_PreConstruct;
+DUMPER7_ASSERTS_WBP_PaldexFilteringSettings_SortTypeButton_C_BndEvt__WBP_PaldexFilteringSettings_SortTypeButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_PaldexFilteringSettings_SortTypeButton.WBP_PaldexFilteringSettings_SortTypeButton_C.BndEvt__WBP_PaldexFilteringSettings_SortTypeButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PaldexFilteringSettings_SortTypeButton_C_BndEvt__WBP_PaldexFilteringSettings_SortTypeButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PaldexFilteringSettings_SortTypeButton_C_BndEvt__WBP_PaldexFilteringSettings_SortTypeButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_PaldexFilteringSettings_SortTypeButton.WBP_PaldexFilteringSettings_SortTypeButton_C.BndEvt__WBP_PaldexFilteringSettings_SortTypeButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PaldexFilteringSettings_SortTypeButton_C_BndEvt__WBP_PaldexFilteringSettings_SortTypeButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PaldexFilteringSettings_SortTypeButton_C_BndEvt__WBP_PaldexFilteringSettings_SortTypeButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
 
 }
 

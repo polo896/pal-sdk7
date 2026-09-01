@@ -512,8 +512,8 @@ class UNavigationSystemV1 : public UNavigationSystemBase
     TArray<FNavDataConfig> SupportedAgents;                                           // 0x0090 (size: 0x10)
     FNavAgentSelector SupportedAgentsMask;                                            // 0x00A0 (size: 0x4)
     FBox BuildBounds;                                                                 // 0x00A8 (size: 0x38)
-    TArray<class ANavigationData*> NavDataSet;                                        // 0x00E0 (size: 0x10)
-    TArray<class ANavigationData*> NavDataRegistrationQueue;                          // 0x00F0 (size: 0x10)
+    TArray<ANavigationData*> NavDataSet;                                              // 0x00E0 (size: 0x10)
+    TArray<ANavigationData*> NavDataRegistrationQueue;                                // 0x00F0 (size: 0x10)
     FNavigationSystemV1OnNavDataRegisteredEvent OnNavDataRegisteredEvent;             // 0x0110 (size: 0x10)
     void OnNavDataGenericEvent(class ANavigationData* NavData);
     FNavigationSystemV1OnNavigationGenerationFinishedDelegate OnNavigationGenerationFinishedDelegate; // 0x0120 (size: 0x10)

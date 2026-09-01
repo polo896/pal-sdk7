@@ -82,34 +82,34 @@ public:
 	class FName                                   CurrentCurrency;                                   // 0x0440(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Anm_EmptyLoop();
-	void Anm_SetItem();
-	void AnmEvent_GenderPanelDefault();
-	void AnmEvent_GenderReverse();
-	void AnmEvent_PassiveHighlight();
-	void BndEvt__WBP_OperatingTable_TabPage_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
-	void BndEvt__WBP_OperatingTable_TabPage_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void ConfirmPassiveOperate(bool OK);
-	void Construct();
-	void ExecuteUbergraph_WBP_OperatingTable_TabPage(int32 EntryPoint);
-	void GetFocusTarget(class UWidget** Widget);
-	void On_Money_Changed(int64 NewMoney);
-	void On_Update_Local_Player_Inventory();
-	void On_Update_Money(int64 NowMoney);
-	void OnHoveredPassiveSlot(class UWBP_MainMenu_Pal_Skill_Passive_C* SelfWidget);
-	void OnInitialized();
-	void OnSelectPassiveSlot(class UWBP_MainMenu_Pal_Skill_Passive_C* SelfWidget);
-	void OnUnhoveredPassiveSlot(class UWBP_MainMenu_Pal_Skill_Passive_C* SelfWidget);
-	void ReflectGenderChange();
-	void ReflectPassiveChange();
-	void RefreshCurrentPassiveItem();
-	void Set_Gender_Reverse();
-	void Set_Passive_Empty_Item();
-	void Set_Passive_Has_Item(class FName PassiveId);
-	void SwitchPanel(bool ToPassive);
-	void Update_Button_State();
-	void UpdateCurrentConsumeItem(class FName ConsumeItemId);
 	void UpdateNum(class FName UpdateItemNum);
+	void UpdateCurrentConsumeItem(class FName ConsumeItemId);
+	void Update_Button_State();
+	void SwitchPanel(bool ToPassive);
+	void Set_Passive_Has_Item(class FName PassiveId);
+	void Set_Passive_Empty_Item();
+	void Set_Gender_Reverse();
+	void RefreshCurrentPassiveItem();
+	void ReflectPassiveChange();
+	void ReflectGenderChange();
+	void OnUnhoveredPassiveSlot(class UWBP_MainMenu_Pal_Skill_Passive_C* SelfWidget);
+	void OnSelectPassiveSlot(class UWBP_MainMenu_Pal_Skill_Passive_C* SelfWidget);
+	void OnInitialized();
+	void OnHoveredPassiveSlot(class UWBP_MainMenu_Pal_Skill_Passive_C* SelfWidget);
+	void On_Update_Money(int64 NowMoney);
+	void On_Update_Local_Player_Inventory();
+	void On_Money_Changed(int64 NewMoney);
+	void GetFocusTarget(class UWidget** Widget);
+	void ExecuteUbergraph_WBP_OperatingTable_TabPage(int32 EntryPoint);
+	void Construct();
+	void ConfirmPassiveOperate(bool OK);
+	void BndEvt__WBP_OperatingTable_TabPage_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_OperatingTable_TabPage_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
+	void AnmEvent_PassiveHighlight();
+	void AnmEvent_GenderReverse();
+	void AnmEvent_GenderPanelDefault();
+	void Anm_SetItem();
+	void Anm_EmptyLoop();
 
 public:
 	static class UClass* StaticClass()

@@ -16,16 +16,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_Menu_CharacterHungerGauge.WBP_Menu_CharacterHungerGauge_C.ExecuteUbergraph_WBP_Menu_CharacterHungerGauge
-// 0x0014 (0x0014 - 0x0000)
-struct WBP_Menu_CharacterHungerGauge_C_ExecuteUbergraph_WBP_Menu_CharacterHungerGauge final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(double nowHunger, double nowMaxHunger)> K2Node_CreateDelegate_OutputDelegate;     // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Menu_CharacterHungerGauge_C_ExecuteUbergraph_WBP_Menu_CharacterHungerGauge;
-
 // Function WBP_Menu_CharacterHungerGauge.WBP_Menu_CharacterHungerGauge_C.UpdateHunger
 // 0x00D0 (0x00D0 - 0x0000)
 struct WBP_Menu_CharacterHungerGauge_C_UpdateHunger final
@@ -44,6 +34,16 @@ public:
 	float                                         CallFunc_SetPercent_InPercent_ImplicitCast;        // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Menu_CharacterHungerGauge_C_UpdateHunger;
+
+// Function WBP_Menu_CharacterHungerGauge.WBP_Menu_CharacterHungerGauge_C.ExecuteUbergraph_WBP_Menu_CharacterHungerGauge
+// 0x0014 (0x0014 - 0x0000)
+struct WBP_Menu_CharacterHungerGauge_C_ExecuteUbergraph_WBP_Menu_CharacterHungerGauge final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(double nowHunger, double nowMaxHunger)> K2Node_CreateDelegate_OutputDelegate;     // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_CharacterHungerGauge_C_ExecuteUbergraph_WBP_Menu_CharacterHungerGauge;
 
 }
 

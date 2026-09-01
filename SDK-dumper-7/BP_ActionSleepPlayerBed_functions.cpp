@@ -17,33 +17,19 @@
 namespace SDK
 {
 
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.AttachBedCamera
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBP_ActionSleepPlayerBed_C::AttachBedCamera()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "AttachBedCamera");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.BindInteractEvent
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.UnbindInteractEvent
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class APalPlayerController*             LocalPlayerController                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UBP_ActionSleepPlayerBed_C::BindInteractEvent(class APalPlayerController* LocalPlayerController)
+void UBP_ActionSleepPlayerBed_C::UnbindInteractEvent(class APalPlayerController* LocalPlayerController)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "BindInteractEvent");
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "UnbindInteractEvent");
 
-	Params::BP_ActionSleepPlayerBed_C_BindInteractEvent Parms{};
+	Params::BP_ActionSleepPlayerBed_C_UnbindInteractEvent Parms{};
 
 	Parms.LocalPlayerController = LocalPlayerController;
 
@@ -51,53 +37,427 @@ void UBP_ActionSleepPlayerBed_C::BindInteractEvent(class APalPlayerController* L
 }
 
 
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.Detach Bed Camera
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.TriggerGetup
+// (BlueprintCallable, BlueprintEvent)
 
-void UBP_ActionSleepPlayerBed_C::Detach_Bed_Camera()
+void UBP_ActionSleepPlayerBed_C::TriggerGetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "Detach Bed Camera");
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "TriggerGetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.Disable Movement
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.TickAction
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    Disable                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_ActionSleepPlayerBed_C::Disable_Movement(bool Disable)
+void UBP_ActionSleepPlayerBed_C::TickAction(float DeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "Disable Movement");
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "TickAction");
 
-	Params::BP_ActionSleepPlayerBed_C_Disable_Movement Parms{};
+	Params::BP_ActionSleepPlayerBed_C_TickAction Parms{};
 
-	Parms.Disable = Disable;
+	Parms.DeltaTime = DeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.DisableInteract
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Disable                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.SleepStartOtomo
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UBP_ActionSleepPlayerBed_C::DisableInteract(bool Disable)
+void UBP_ActionSleepPlayerBed_C::SleepStartOtomo()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "DisableInteract");
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "SleepStartOtomo");
 
-	Params::BP_ActionSleepPlayerBed_C_DisableInteract Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.SleepEndOtomo
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBP_ActionSleepPlayerBed_C::SleepEndOtomo()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "SleepEndOtomo");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnSleepLoopStart
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBP_ActionSleepPlayerBed_C::OnSleepLoopStart()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnSleepLoopStart");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnSleepLoop
+// (BlueprintCallable, BlueprintEvent)
+
+void UBP_ActionSleepPlayerBed_C::OnSleepLoop()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnSleepLoop");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnSleepEndProcess
+// (BlueprintCallable, BlueprintEvent)
+
+void UBP_ActionSleepPlayerBed_C::OnSleepEndProcess()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnSleepEndProcess");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnPreNightSkip
+// (BlueprintCallable, BlueprintEvent)
+
+void UBP_ActionSleepPlayerBed_C::OnPreNightSkip()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnPreNightSkip");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnNotifyEnd_EE77CE3D437B303B4A7DF5B8A225C124
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_ActionSleepPlayerBed_C::OnNotifyEnd_EE77CE3D437B303B4A7DF5B8A225C124(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnNotifyEnd_EE77CE3D437B303B4A7DF5B8A225C124");
+
+	Params::BP_ActionSleepPlayerBed_C_OnNotifyEnd_EE77CE3D437B303B4A7DF5B8A225C124 Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnNotifyBegin_EE77CE3D437B303B4A7DF5B8A225C124
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_ActionSleepPlayerBed_C::OnNotifyBegin_EE77CE3D437B303B4A7DF5B8A225C124(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnNotifyBegin_EE77CE3D437B303B4A7DF5B8A225C124");
+
+	Params::BP_ActionSleepPlayerBed_C_OnNotifyBegin_EE77CE3D437B303B4A7DF5B8A225C124 Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnInterrupted_EE77CE3D437B303B4A7DF5B8A225C124
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_ActionSleepPlayerBed_C::OnInterrupted_EE77CE3D437B303B4A7DF5B8A225C124(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnInterrupted_EE77CE3D437B303B4A7DF5B8A225C124");
+
+	Params::BP_ActionSleepPlayerBed_C_OnInterrupted_EE77CE3D437B303B4A7DF5B8A225C124 Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnGetupPlayerBedFromModel
+// (Event, Public, BlueprintEvent)
+
+void UBP_ActionSleepPlayerBed_C::OnGetupPlayerBedFromModel()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnGetupPlayerBedFromModel");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnEndSpectate
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UBP_ActionSleepPlayerBed_C::OnEndSpectate()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnEndSpectate");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnEndAction
+// (Event, Public, BlueprintEvent)
+
+void UBP_ActionSleepPlayerBed_C::OnEndAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnEndAction");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnDeath_FadeOut
+// (BlueprintCallable, BlueprintEvent)
+
+void UBP_ActionSleepPlayerBed_C::OnDeath_FadeOut()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnDeath_FadeOut");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnCompleted_EE77CE3D437B303B4A7DF5B8A225C124
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_ActionSleepPlayerBed_C::OnCompleted_EE77CE3D437B303B4A7DF5B8A225C124(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnCompleted_EE77CE3D437B303B4A7DF5B8A225C124");
+
+	Params::BP_ActionSleepPlayerBed_C_OnCompleted_EE77CE3D437B303B4A7DF5B8A225C124 Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnBlendOut_EE77CE3D437B303B4A7DF5B8A225C124
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_ActionSleepPlayerBed_C::OnBlendOut_EE77CE3D437B303B4A7DF5B8A225C124(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnBlendOut_EE77CE3D437B303B4A7DF5B8A225C124");
+
+	Params::BP_ActionSleepPlayerBed_C_OnBlendOut_EE77CE3D437B303B4A7DF5B8A225C124 Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnBeginAction
+// (Event, Public, BlueprintEvent)
+
+void UBP_ActionSleepPlayerBed_C::OnBeginAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnBeginAction");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.Movement Set Active
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_ActionSleepPlayerBed_C::Movement_Set_Active(bool Active)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "Movement Set Active");
+
+	Params::BP_ActionSleepPlayerBed_C_Movement_Set_Active Parms{};
+
+	Parms.Active = Active;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.IsPartyFullRecoverd
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool*                                   Completed                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_ActionSleepPlayerBed_C::IsPartyFullRecoverd(bool* Completed)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "IsPartyFullRecoverd");
+
+	Params::BP_ActionSleepPlayerBed_C_IsPartyFullRecoverd Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Completed != nullptr)
+		*Completed = Parms.Completed;
+}
+
+
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.GetMontageSleepLoop
+// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UAnimMontage**                    Montage                                                (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_ActionSleepPlayerBed_C::GetMontageSleepLoop(class UAnimMontage** Montage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "GetMontageSleepLoop");
+
+	Params::BP_ActionSleepPlayerBed_C_GetMontageSleepLoop Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Montage != nullptr)
+		*Montage = Parms.Montage;
+}
+
+
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.GetMontage
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// EPalGeneralMontageType                  GeneralMontage                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAnimMontage**                    Montage                                                (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_ActionSleepPlayerBed_C::GetMontage(EPalGeneralMontageType GeneralMontage, class UAnimMontage** Montage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "GetMontage");
+
+	Params::BP_ActionSleepPlayerBed_C_GetMontage Parms{};
+
+	Parms.GeneralMontage = GeneralMontage;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Montage != nullptr)
+		*Montage = Parms.Montage;
+}
+
+
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.FullRecoveryHPAll
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UBP_ActionSleepPlayerBed_C::FullRecoveryHPAll()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "FullRecoveryHPAll");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.ExecuteUbergraph_BP_ActionSleepPlayerBed
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_ActionSleepPlayerBed_C::ExecuteUbergraph_BP_ActionSleepPlayerBed(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "ExecuteUbergraph_BP_ActionSleepPlayerBed");
+
+	Params::BP_ActionSleepPlayerBed_C_ExecuteUbergraph_BP_ActionSleepPlayerBed Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.DisableShooter
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Disable                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_ActionSleepPlayerBed_C::DisableShooter(bool Disable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "DisableShooter");
+
+	Params::BP_ActionSleepPlayerBed_C_DisableShooter Parms{};
 
 	Parms.Disable = Disable;
 
@@ -127,19 +487,19 @@ void UBP_ActionSleepPlayerBed_C::DisableLocalPlayerInput(bool Disable, bool Igno
 }
 
 
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.DisableShooter
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.DisableInteract
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    Disable                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_ActionSleepPlayerBed_C::DisableShooter(bool Disable)
+void UBP_ActionSleepPlayerBed_C::DisableInteract(bool Disable)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "DisableShooter");
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "DisableInteract");
 
-	Params::BP_ActionSleepPlayerBed_C_DisableShooter Parms{};
+	Params::BP_ActionSleepPlayerBed_C_DisableInteract Parms{};
 
 	Parms.Disable = Disable;
 
@@ -147,431 +507,71 @@ void UBP_ActionSleepPlayerBed_C::DisableShooter(bool Disable)
 }
 
 
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.ExecuteUbergraph_BP_ActionSleepPlayerBed
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_ActionSleepPlayerBed_C::ExecuteUbergraph_BP_ActionSleepPlayerBed(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "ExecuteUbergraph_BP_ActionSleepPlayerBed");
-
-	Params::BP_ActionSleepPlayerBed_C_ExecuteUbergraph_BP_ActionSleepPlayerBed Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.FullRecoveryHPAll
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UBP_ActionSleepPlayerBed_C::FullRecoveryHPAll()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "FullRecoveryHPAll");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.GetMontage
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// EPalGeneralMontageType                  GeneralMontage                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UAnimMontage**                    Montage                                                (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UBP_ActionSleepPlayerBed_C::GetMontage(EPalGeneralMontageType GeneralMontage, class UAnimMontage** Montage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "GetMontage");
-
-	Params::BP_ActionSleepPlayerBed_C_GetMontage Parms{};
-
-	Parms.GeneralMontage = GeneralMontage;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Montage != nullptr)
-		*Montage = Parms.Montage;
-}
-
-
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.GetMontageSleepLoop
-// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UAnimMontage**                    Montage                                                (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UBP_ActionSleepPlayerBed_C::GetMontageSleepLoop(class UAnimMontage** Montage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "GetMontageSleepLoop");
-
-	Params::BP_ActionSleepPlayerBed_C_GetMontageSleepLoop Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Montage != nullptr)
-		*Montage = Parms.Montage;
-}
-
-
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.IsPartyFullRecoverd
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// bool*                                   Completed                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_ActionSleepPlayerBed_C::IsPartyFullRecoverd(bool* Completed)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "IsPartyFullRecoverd");
-
-	Params::BP_ActionSleepPlayerBed_C_IsPartyFullRecoverd Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Completed != nullptr)
-		*Completed = Parms.Completed;
-}
-
-
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.Movement Set Active
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.Disable Movement
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    Disable                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_ActionSleepPlayerBed_C::Movement_Set_Active(bool Active)
+void UBP_ActionSleepPlayerBed_C::Disable_Movement(bool Disable)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "Movement Set Active");
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "Disable Movement");
 
-	Params::BP_ActionSleepPlayerBed_C_Movement_Set_Active Parms{};
+	Params::BP_ActionSleepPlayerBed_C_Disable_Movement Parms{};
 
-	Parms.Active = Active;
+	Parms.Disable = Disable;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnBeginAction
-// (Event, Public, BlueprintEvent)
-
-void UBP_ActionSleepPlayerBed_C::OnBeginAction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnBeginAction");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnBlendOut_EE77CE3D437B303B4A7DF5B8A225C124
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_ActionSleepPlayerBed_C::OnBlendOut_EE77CE3D437B303B4A7DF5B8A225C124(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnBlendOut_EE77CE3D437B303B4A7DF5B8A225C124");
-
-	Params::BP_ActionSleepPlayerBed_C_OnBlendOut_EE77CE3D437B303B4A7DF5B8A225C124 Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnCompleted_EE77CE3D437B303B4A7DF5B8A225C124
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_ActionSleepPlayerBed_C::OnCompleted_EE77CE3D437B303B4A7DF5B8A225C124(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnCompleted_EE77CE3D437B303B4A7DF5B8A225C124");
-
-	Params::BP_ActionSleepPlayerBed_C_OnCompleted_EE77CE3D437B303B4A7DF5B8A225C124 Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnDeath_FadeOut
-// (BlueprintCallable, BlueprintEvent)
-
-void UBP_ActionSleepPlayerBed_C::OnDeath_FadeOut()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnDeath_FadeOut");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnEndAction
-// (Event, Public, BlueprintEvent)
-
-void UBP_ActionSleepPlayerBed_C::OnEndAction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnEndAction");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnEndSpectate
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UBP_ActionSleepPlayerBed_C::OnEndSpectate()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnEndSpectate");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnGetupPlayerBedFromModel
-// (Event, Public, BlueprintEvent)
-
-void UBP_ActionSleepPlayerBed_C::OnGetupPlayerBedFromModel()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnGetupPlayerBedFromModel");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnInterrupted_EE77CE3D437B303B4A7DF5B8A225C124
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_ActionSleepPlayerBed_C::OnInterrupted_EE77CE3D437B303B4A7DF5B8A225C124(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnInterrupted_EE77CE3D437B303B4A7DF5B8A225C124");
-
-	Params::BP_ActionSleepPlayerBed_C_OnInterrupted_EE77CE3D437B303B4A7DF5B8A225C124 Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnNotifyBegin_EE77CE3D437B303B4A7DF5B8A225C124
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_ActionSleepPlayerBed_C::OnNotifyBegin_EE77CE3D437B303B4A7DF5B8A225C124(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnNotifyBegin_EE77CE3D437B303B4A7DF5B8A225C124");
-
-	Params::BP_ActionSleepPlayerBed_C_OnNotifyBegin_EE77CE3D437B303B4A7DF5B8A225C124 Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnNotifyEnd_EE77CE3D437B303B4A7DF5B8A225C124
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_ActionSleepPlayerBed_C::OnNotifyEnd_EE77CE3D437B303B4A7DF5B8A225C124(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnNotifyEnd_EE77CE3D437B303B4A7DF5B8A225C124");
-
-	Params::BP_ActionSleepPlayerBed_C_OnNotifyEnd_EE77CE3D437B303B4A7DF5B8A225C124 Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnPreNightSkip
-// (BlueprintCallable, BlueprintEvent)
-
-void UBP_ActionSleepPlayerBed_C::OnPreNightSkip()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnPreNightSkip");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnSleepEndProcess
-// (BlueprintCallable, BlueprintEvent)
-
-void UBP_ActionSleepPlayerBed_C::OnSleepEndProcess()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnSleepEndProcess");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnSleepLoop
-// (BlueprintCallable, BlueprintEvent)
-
-void UBP_ActionSleepPlayerBed_C::OnSleepLoop()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnSleepLoop");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.OnSleepLoopStart
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.Detach Bed Camera
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UBP_ActionSleepPlayerBed_C::OnSleepLoopStart()
+void UBP_ActionSleepPlayerBed_C::Detach_Bed_Camera()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "OnSleepLoopStart");
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "Detach Bed Camera");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.SleepEndOtomo
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBP_ActionSleepPlayerBed_C::SleepEndOtomo()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "SleepEndOtomo");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.SleepStartOtomo
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UBP_ActionSleepPlayerBed_C::SleepStartOtomo()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "SleepStartOtomo");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.TickAction
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_ActionSleepPlayerBed_C::TickAction(float DeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "TickAction");
-
-	Params::BP_ActionSleepPlayerBed_C_TickAction Parms{};
-
-	Parms.DeltaTime = DeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.TriggerGetup
-// (BlueprintCallable, BlueprintEvent)
-
-void UBP_ActionSleepPlayerBed_C::TriggerGetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "TriggerGetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.UnbindInteractEvent
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.BindInteractEvent
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class APalPlayerController*             LocalPlayerController                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UBP_ActionSleepPlayerBed_C::UnbindInteractEvent(class APalPlayerController* LocalPlayerController)
+void UBP_ActionSleepPlayerBed_C::BindInteractEvent(class APalPlayerController* LocalPlayerController)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "UnbindInteractEvent");
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "BindInteractEvent");
 
-	Params::BP_ActionSleepPlayerBed_C_UnbindInteractEvent Parms{};
+	Params::BP_ActionSleepPlayerBed_C_BindInteractEvent Parms{};
 
 	Parms.LocalPlayerController = LocalPlayerController;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ActionSleepPlayerBed.BP_ActionSleepPlayerBed_C.AttachBedCamera
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBP_ActionSleepPlayerBed_C::AttachBedCamera()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionSleepPlayerBed_C", "AttachBedCamera");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

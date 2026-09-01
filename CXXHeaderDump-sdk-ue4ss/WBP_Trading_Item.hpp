@@ -39,7 +39,7 @@ class UWBP_Trading_Item_C : public UPalUserWidgetOverlayUI
     class UWBP_Trading_Item_List_C* WBP_Trading_Item_List_4;                          // 0x0580 (size: 0x8)
     class UPalMapObjectItemBoothModel* ItemBoothModel;                                // 0x0588 (size: 0x8)
     class UBP_PalInventoryModel_C* InventoryModel;                                    // 0x0590 (size: 0x8)
-    TArray<class UWBP_Trading_Item_List_C*> TradingList;                              // 0x0598 (size: 0x10)
+    TArray<UWBP_Trading_Item_List_C*> TradingList;                                    // 0x0598 (size: 0x10)
     bool Confirmable;                                                                 // 0x05A8 (size: 0x1)
     FPalItemBoothTradeInfo CurrentTradeInfo;                                          // 0x05AC (size: 0x68)
     FText LastProductNum;                                                             // 0x0618 (size: 0x18)

@@ -28,8 +28,8 @@ public:
 	class UBP_PalTextBlock_C*                     Text_RankPointNum;                                 // 0x0290(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void OnUpdateRankPoint(class UPalIndividualCharacterParameter* individualParam, int32 Point);
 	void Setup();
+	void OnUpdateRankPoint(class UPalIndividualCharacterParameter* individualParam, int32 Point);
 
 public:
 	static class UClass* StaticClass()

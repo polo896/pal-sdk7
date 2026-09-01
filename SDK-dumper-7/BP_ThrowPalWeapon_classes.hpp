@@ -29,14 +29,14 @@ public:
 	double                                        Const_WalkSpeedRate;                               // 0x06C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_ThrowPalWeapon(int32 EntryPoint);
-	class FName GetEquipSocketName();
-	void GetThrowObjectClass(class UClass** ThrowObject);
-	void IsNotEmptyOtomo(bool* NotEmpty);
-	void On_Throw();
-	void OnAttachWeapon(class AActor* attachActor);
-	void OnDetachWeapon(class AActor* detachActor);
 	void Set_Flags(bool Disable, double Speed);
+	void OnDetachWeapon(class AActor* detachActor);
+	void OnAttachWeapon(class AActor* attachActor);
+	void On_Throw();
+	void IsNotEmptyOtomo(bool* NotEmpty);
+	void GetThrowObjectClass(class UClass** ThrowObject);
+	class FName GetEquipSocketName();
+	void ExecuteUbergraph_BP_ThrowPalWeapon(int32 EntryPoint);
 
 	bool IsEmptyMagazine() const;
 

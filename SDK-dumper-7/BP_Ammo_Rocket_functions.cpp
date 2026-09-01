@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function BP_Ammo_Rocket.BP_Ammo_Rocket_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_Ammo_Rocket_C::UserConstructionScript()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Ammo_Rocket_C", "UserConstructionScript");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_Ammo_Rocket.BP_Ammo_Rocket_C.SetTranformForReload
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -35,20 +49,6 @@ void ABP_Ammo_Rocket_C::SetTranformForReload(struct FTransform* AmmoReloadingTra
 
 	if (AmmoReloadingTransform != nullptr)
 		*AmmoReloadingTransform = std::move(Parms.AmmoReloadingTransform);
-}
-
-
-// Function BP_Ammo_Rocket.BP_Ammo_Rocket_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_Ammo_Rocket_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Ammo_Rocket_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

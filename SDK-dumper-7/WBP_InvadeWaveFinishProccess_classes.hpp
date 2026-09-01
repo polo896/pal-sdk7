@@ -25,9 +25,9 @@ public:
 	class UWBP_WarningEvent_WaveFinish_C*         WBP_WarningEvent_WaveFinish;                       // 0x0458(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void PlayAllWaveSuccess();
-	void PlayWaveEndSequence(int32 EndWaveCount, int32 MaxWaveCount);
 	void PlayWaveFailed();
+	void PlayWaveEndSequence(int32 EndWaveCount, int32 MaxWaveCount);
+	void PlayAllWaveSuccess();
 
 public:
 	static class UClass* StaticClass()

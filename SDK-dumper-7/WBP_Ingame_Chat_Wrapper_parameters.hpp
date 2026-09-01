@@ -18,44 +18,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_Ingame_Chat_Wrapper.WBP_Ingame_Chat_Wrapper_C.CanOpenAnyUI
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Ingame_Chat_Wrapper_C_CanOpenAnyUI final
-{
-public:
-	bool                                          bCanOpenAnyUI;                                     // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDead_ReturnValue;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDyingPlayer_ReturnValue;                // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Ingame_Chat_Wrapper_C_CanOpenAnyUI;
-
-// Function WBP_Ingame_Chat_Wrapper.WBP_Ingame_Chat_Wrapper_C.ExecuteUbergraph_WBP_Ingame_Chat_Wrapper
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Ingame_Chat_Wrapper_C_ExecuteUbergraph_WBP_Ingame_Chat_Wrapper final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Ingame_Chat_Wrapper_C_ExecuteUbergraph_WBP_Ingame_Chat_Wrapper;
-
-// Function WBP_Ingame_Chat_Wrapper.WBP_Ingame_Chat_Wrapper_C.On_Image_ForceClose_MouseButtonDown
-// 0x0248 (0x0248 - 0x0000)
-struct WBP_Ingame_Chat_Wrapper_C_On_Image_ForceClose_MouseButtonDown final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0040(0x0098)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00D8(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0190(0x00B8)()
-};
-DUMPER7_ASSERTS_WBP_Ingame_Chat_Wrapper_C_On_Image_ForceClose_MouseButtonDown;
-
 // Function WBP_Ingame_Chat_Wrapper.WBP_Ingame_Chat_Wrapper_C.ShowChat
 // 0x0038 (0x0038 - 0x0000)
 struct WBP_Ingame_Chat_Wrapper_C_ShowChat final
@@ -71,6 +33,44 @@ public:
 	bool                                          CallFunc_Can_Chat_Result;                          // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Ingame_Chat_Wrapper_C_ShowChat;
+
+// Function WBP_Ingame_Chat_Wrapper.WBP_Ingame_Chat_Wrapper_C.On_Image_ForceClose_MouseButtonDown
+// 0x0248 (0x0248 - 0x0000)
+struct WBP_Ingame_Chat_Wrapper_C_On_Image_ForceClose_MouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0040(0x0098)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00D8(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0190(0x00B8)()
+};
+DUMPER7_ASSERTS_WBP_Ingame_Chat_Wrapper_C_On_Image_ForceClose_MouseButtonDown;
+
+// Function WBP_Ingame_Chat_Wrapper.WBP_Ingame_Chat_Wrapper_C.ExecuteUbergraph_WBP_Ingame_Chat_Wrapper
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Ingame_Chat_Wrapper_C_ExecuteUbergraph_WBP_Ingame_Chat_Wrapper final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Ingame_Chat_Wrapper_C_ExecuteUbergraph_WBP_Ingame_Chat_Wrapper;
+
+// Function WBP_Ingame_Chat_Wrapper.WBP_Ingame_Chat_Wrapper_C.CanOpenAnyUI
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Ingame_Chat_Wrapper_C_CanOpenAnyUI final
+{
+public:
+	bool                                          bCanOpenAnyUI;                                     // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDead_ReturnValue;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDyingPlayer_ReturnValue;                // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Ingame_Chat_Wrapper_C_CanOpenAnyUI;
 
 }
 

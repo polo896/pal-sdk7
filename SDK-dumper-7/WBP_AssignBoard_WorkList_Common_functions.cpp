@@ -17,103 +17,247 @@
 namespace SDK
 {
 
-// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.AnmEvent_DIsable
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.SetupWorkSuitability
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_AssignBoard_WorkList_Common_C::AnmEvent_DIsable()
+void UWBP_AssignBoard_WorkList_Common_C::SetupWorkSuitability()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "AnmEvent_DIsable");
+		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "SetupWorkSuitability");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.AnmEvent_Enable
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.SetupWorkStatus
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_AssignBoard_WorkList_Common_C::AnmEvent_Enable()
+void UWBP_AssignBoard_WorkList_Common_C::SetupWorkStatus()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "AnmEvent_Enable");
+		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "SetupWorkStatus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.AnmEvent_Hover
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.SetupWorkNum
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_AssignBoard_WorkList_Common_C::AnmEvent_Hover()
+void UWBP_AssignBoard_WorkList_Common_C::SetupWorkNum()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "AnmEvent_Hover");
+		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "SetupWorkNum");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.AnmEvent_Select
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.SetupTitle
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_AssignBoard_WorkList_Common_C::AnmEvent_Select()
+void UWBP_AssignBoard_WorkList_Common_C::SetupTitle()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "AnmEvent_Select");
+		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "SetupTitle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.AnmEvent_Unhover
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.SetupRecipeDetail
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_AssignBoard_WorkList_Common_C::AnmEvent_Unhover()
+void UWBP_AssignBoard_WorkList_Common_C::SetupRecipeDetail()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "AnmEvent_Unhover");
+		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "SetupRecipeDetail");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.AnmEvent_Unselect
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.SetupAssignTargetName
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_AssignBoard_WorkList_Common_C::AnmEvent_Unselect()
+void UWBP_AssignBoard_WorkList_Common_C::SetupAssignTargetName()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "AnmEvent_Unselect");
+		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "SetupAssignTargetName");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.BndEvt__WBP_AssignBoard_WorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.SetupAssignedCharacterSlot
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_AssignBoard_WorkList_Common_C::SetupAssignedCharacterSlot()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "SetupAssignedCharacterSlot");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.ResetAssignedChaarcterSlotDetail
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_AssignBoard_WorkList_Common_C::ResetAssignedChaarcterSlotDetail()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "ResetAssignedChaarcterSlotDetail");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.OnUpdateWorkState
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalWorkBase*                     Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_AssignBoard_WorkList_Common_C::OnUpdateWorkState(class UPalWorkBase* Work)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "OnUpdateWorkState");
+
+	Params::WBP_AssignBoard_WorkList_Common_C_OnUpdateWorkState Parms{};
+
+	Parms.Work = Work;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.OnUpdateAssignedCharacter
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalWorkBase*                     Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_AssignBoard_WorkList_Common_C::OnUpdateAssignedCharacter(class UPalWorkBase* Work)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "OnUpdateAssignedCharacter");
+
+	Params::WBP_AssignBoard_WorkList_Common_C_OnUpdateAssignedCharacter Parms{};
+
+	Parms.Work = Work;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.OnTimer_UpdateAssignedCharacterDetail
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_AssignBoard_WorkList_Common_C::OnTimer_UpdateAssignedCharacterDetail()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "OnTimer_UpdateAssignedCharacterDetail");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_AssignBoard_WorkList_Common_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.ExecuteUbergraph_WBP_AssignBoard_WorkList_Common
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_AssignBoard_WorkList_Common_C::ExecuteUbergraph_WBP_AssignBoard_WorkList_Common(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "ExecuteUbergraph_WBP_AssignBoard_WorkList_Common");
+
+	Params::WBP_AssignBoard_WorkList_Common_C_ExecuteUbergraph_WBP_AssignBoard_WorkList_Common Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_AssignBoard_WorkList_Common_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_AssignBoard_WorkList_Common_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.BndEvt__WBP_AssignBoard_WorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_AssignBoard_WorkList_Common_C::BndEvt__WBP_AssignBoard_WorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_AssignBoard_WorkList_Common_C::BndEvt__WBP_AssignBoard_WorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "BndEvt__WBP_AssignBoard_WorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "BndEvt__WBP_AssignBoard_WorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_AssignBoard_WorkList_Common_C_BndEvt__WBP_AssignBoard_WorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_AssignBoard_WorkList_Common_C_BndEvt__WBP_AssignBoard_WorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -141,19 +285,19 @@ void UWBP_AssignBoard_WorkList_Common_C::BndEvt__WBP_AssignBoard_WorkList_WBP_Pa
 }
 
 
-// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.BndEvt__WBP_AssignBoard_WorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.BndEvt__WBP_AssignBoard_WorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_AssignBoard_WorkList_Common_C::BndEvt__WBP_AssignBoard_WorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_AssignBoard_WorkList_Common_C::BndEvt__WBP_AssignBoard_WorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "BndEvt__WBP_AssignBoard_WorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "BndEvt__WBP_AssignBoard_WorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_AssignBoard_WorkList_Common_C_BndEvt__WBP_AssignBoard_WorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_AssignBoard_WorkList_Common_C_BndEvt__WBP_AssignBoard_WorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -161,229 +305,113 @@ void UWBP_AssignBoard_WorkList_Common_C::BndEvt__WBP_AssignBoard_WorkList_WBP_Pa
 }
 
 
-// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.AnmEvent_Unselect
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_AssignBoard_WorkList_Common_C::Construct()
+void UWBP_AssignBoard_WorkList_Common_C::AnmEvent_Unselect()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "Construct");
+		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "AnmEvent_Unselect");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.AnmEvent_Unhover
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_AssignBoard_WorkList_Common_C::Destruct()
+void UWBP_AssignBoard_WorkList_Common_C::AnmEvent_Unhover()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "Destruct");
+		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "AnmEvent_Unhover");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.ExecuteUbergraph_WBP_AssignBoard_WorkList_Common
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.AnmEvent_Select
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_AssignBoard_WorkList_Common_C::ExecuteUbergraph_WBP_AssignBoard_WorkList_Common(int32 EntryPoint)
+void UWBP_AssignBoard_WorkList_Common_C::AnmEvent_Select()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "ExecuteUbergraph_WBP_AssignBoard_WorkList_Common");
-
-	Params::WBP_AssignBoard_WorkList_Common_C_ExecuteUbergraph_WBP_AssignBoard_WorkList_Common Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_AssignBoard_WorkList_Common_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "AnmEvent_Select");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.OnTimer_UpdateAssignedCharacterDetail
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.AnmEvent_Hover
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_AssignBoard_WorkList_Common_C::OnTimer_UpdateAssignedCharacterDetail()
+void UWBP_AssignBoard_WorkList_Common_C::AnmEvent_Hover()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "OnTimer_UpdateAssignedCharacterDetail");
+		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "AnmEvent_Hover");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.OnUpdateAssignedCharacter
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalWorkBase*                     Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.AnmEvent_Enable
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_AssignBoard_WorkList_Common_C::OnUpdateAssignedCharacter(class UPalWorkBase* Work)
+void UWBP_AssignBoard_WorkList_Common_C::AnmEvent_Enable()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "OnUpdateAssignedCharacter");
-
-	Params::WBP_AssignBoard_WorkList_Common_C_OnUpdateAssignedCharacter Parms{};
-
-	Parms.Work = Work;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.OnUpdateWorkState
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalWorkBase*                     Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_AssignBoard_WorkList_Common_C::OnUpdateWorkState(class UPalWorkBase* Work)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "OnUpdateWorkState");
-
-	Params::WBP_AssignBoard_WorkList_Common_C_OnUpdateWorkState Parms{};
-
-	Parms.Work = Work;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.ResetAssignedChaarcterSlotDetail
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_AssignBoard_WorkList_Common_C::ResetAssignedChaarcterSlotDetail()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "ResetAssignedChaarcterSlotDetail");
+		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "AnmEvent_Enable");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.SetupAssignedCharacterSlot
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.AnmEvent_DIsable
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_AssignBoard_WorkList_Common_C::SetupAssignedCharacterSlot()
+void UWBP_AssignBoard_WorkList_Common_C::AnmEvent_DIsable()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "SetupAssignedCharacterSlot");
+		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "AnmEvent_DIsable");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.SetupAssignTargetName
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_AssignBoard_WorkList_Common_C::SetupAssignTargetName()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "SetupAssignTargetName");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.SetupRecipeDetail
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_AssignBoard_WorkList_Common_C::SetupRecipeDetail()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "SetupRecipeDetail");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.SetupTitle
+// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.Unbind
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_AssignBoard_WorkList_Common_C::SetupTitle()
+void UWBP_AssignBoard_WorkList_Common_C::Unbind()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "SetupTitle");
+		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "Unbind");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.SetupWorkNum
+// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.Setup
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_AssignBoard_WorkList_Common_C::SetupWorkNum()
+void UWBP_AssignBoard_WorkList_Common_C::Setup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "SetupWorkNum");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.SetupWorkStatus
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_AssignBoard_WorkList_Common_C::SetupWorkStatus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "SetupWorkStatus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.SetupWorkSuitability
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_AssignBoard_WorkList_Common_C::SetupWorkSuitability()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "SetupWorkSuitability");
+		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -407,34 +435,6 @@ void UWBP_AssignBoard_WorkList_Common_C::GetFocusTarget(class UWidget** TargetWi
 
 	if (TargetWidget != nullptr)
 		*TargetWidget = Parms.TargetWidget;
-}
-
-
-// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.Setup
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_AssignBoard_WorkList_Common_C::Setup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "Setup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_AssignBoard_WorkList_Common.WBP_AssignBoard_WorkList_Common_C.Unbind
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_AssignBoard_WorkList_Common_C::Unbind()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AssignBoard_WorkList_Common_C", "Unbind");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

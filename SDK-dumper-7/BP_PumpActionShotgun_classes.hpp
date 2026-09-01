@@ -29,26 +29,26 @@ public:
 	double                                        ReloadSpeedPlayRate;                               // 0x06E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ReceiveBeginPlay();
-	void PlayReloadAnimation();
-	void OnWeaponNotify(EWeaponNotifyType Type);
-	void OnshotInternal(bool* IsShoted);
-	void OnShot();
-	void OnRestartReload();
-	void OnReloadStart(float InReloadSpeedPlayRate);
-	void OnReleaseTrigger(bool bCanShootOnRelease);
-	void OnNotifyEnd_FCB44FF643DA97B49C538D845683A965(class FName NotifyName);
-	void OnNotifyEnd_022E6E364FB50AA73CEBFDBEFEDC6736(class FName NotifyName);
-	void OnNotifyBegin_FCB44FF643DA97B49C538D845683A965(class FName NotifyName);
-	void OnNotifyBegin_022E6E364FB50AA73CEBFDBEFEDC6736(class FName NotifyName);
-	void OnInterrupted_FCB44FF643DA97B49C538D845683A965(class FName NotifyName);
-	void OnInterrupted_022E6E364FB50AA73CEBFDBEFEDC6736(class FName NotifyName);
-	void OnCompleted_FCB44FF643DA97B49C538D845683A965(class FName NotifyName);
-	void OnCompleted_022E6E364FB50AA73CEBFDBEFEDC6736(class FName NotifyName);
-	void OnBlendOut_FCB44FF643DA97B49C538D845683A965(class FName NotifyName);
-	void OnBlendOut_022E6E364FB50AA73CEBFDBEFEDC6736(class FName NotifyName);
-	void ExecuteUbergraph_BP_PumpActionShotgun(int32 EntryPoint);
 	void EjectARound();
+	void ExecuteUbergraph_BP_PumpActionShotgun(int32 EntryPoint);
+	void OnBlendOut_022E6E364FB50AA73CEBFDBEFEDC6736(class FName NotifyName);
+	void OnBlendOut_FCB44FF643DA97B49C538D845683A965(class FName NotifyName);
+	void OnCompleted_022E6E364FB50AA73CEBFDBEFEDC6736(class FName NotifyName);
+	void OnCompleted_FCB44FF643DA97B49C538D845683A965(class FName NotifyName);
+	void OnInterrupted_022E6E364FB50AA73CEBFDBEFEDC6736(class FName NotifyName);
+	void OnInterrupted_FCB44FF643DA97B49C538D845683A965(class FName NotifyName);
+	void OnNotifyBegin_022E6E364FB50AA73CEBFDBEFEDC6736(class FName NotifyName);
+	void OnNotifyBegin_FCB44FF643DA97B49C538D845683A965(class FName NotifyName);
+	void OnNotifyEnd_022E6E364FB50AA73CEBFDBEFEDC6736(class FName NotifyName);
+	void OnNotifyEnd_FCB44FF643DA97B49C538D845683A965(class FName NotifyName);
+	void OnReleaseTrigger(bool bCanShootOnRelease);
+	void OnReloadStart(float InReloadSpeedPlayRate);
+	void OnRestartReload();
+	void OnShot();
+	void OnshotInternal(bool* IsShoted);
+	void OnWeaponNotify(EWeaponNotifyType Type);
+	void PlayReloadAnimation();
+	void ReceiveBeginPlay();
 
 	bool IsUseLeftHandAttach() const;
 

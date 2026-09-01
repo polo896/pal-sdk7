@@ -17,62 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_MainMenu_Technology_Point.WBP_MainMenu_Technology_Point_C.AnmEvent_DIsable
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_MainMenu_Technology_Point_C::AnmEvent_DIsable()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_Point_C", "AnmEvent_DIsable");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu_Technology_Point.WBP_MainMenu_Technology_Point_C.AnmEvent_Enable
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_MainMenu_Technology_Point_C::AnmEvent_Enable()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_Point_C", "AnmEvent_Enable");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu_Technology_Point.WBP_MainMenu_Technology_Point_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_MainMenu_Technology_Point_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_Point_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu_Technology_Point.WBP_MainMenu_Technology_Point_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_MainMenu_Technology_Point_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_Point_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_MainMenu_Technology_Point.WBP_MainMenu_Technology_Point_C.ExecuteUbergraph_WBP_MainMenu_Technology_Point
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -93,6 +37,20 @@ void UWBP_MainMenu_Technology_Point_C::ExecuteUbergraph_WBP_MainMenu_Technology_
 }
 
 
+// Function WBP_MainMenu_Technology_Point.WBP_MainMenu_Technology_Point_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_MainMenu_Technology_Point_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Technology_Point_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_MainMenu_Technology_Point.WBP_MainMenu_Technology_Point_C.OnUpdateTechnologyPoint
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -110,6 +68,48 @@ void UWBP_MainMenu_Technology_Point_C::OnUpdateTechnologyPoint(int32 TechnologyP
 	Parms.TechnologyPoint = TechnologyPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu_Technology_Point.WBP_MainMenu_Technology_Point_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_MainMenu_Technology_Point_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Technology_Point_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MainMenu_Technology_Point.WBP_MainMenu_Technology_Point_C.AnmEvent_Enable
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_MainMenu_Technology_Point_C::AnmEvent_Enable()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Technology_Point_C", "AnmEvent_Enable");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MainMenu_Technology_Point.WBP_MainMenu_Technology_Point_C.AnmEvent_DIsable
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_MainMenu_Technology_Point_C::AnmEvent_DIsable()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Technology_Point_C", "AnmEvent_DIsable");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

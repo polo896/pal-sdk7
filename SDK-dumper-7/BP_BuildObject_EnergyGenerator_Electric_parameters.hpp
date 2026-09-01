@@ -14,15 +14,6 @@
 namespace SDK::Params
 {
 
-// Function BP_BuildObject_EnergyGenerator_Electric.BP_BuildObject_EnergyGenerator_Electric_C.OnEndGenerate
-// 0x0001 (0x0001 - 0x0000)
-struct BP_BuildObject_EnergyGenerator_Electric_C_OnEndGenerate final
-{
-public:
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_BuildObject_EnergyGenerator_Electric_C_OnEndGenerate;
-
 // Function BP_BuildObject_EnergyGenerator_Electric.BP_BuildObject_EnergyGenerator_Electric_C.OnStartGenerate
 // 0x0010 (0x0010 - 0x0000)
 struct BP_BuildObject_EnergyGenerator_Electric_C_OnStartGenerate final
@@ -33,6 +24,15 @@ public:
 	class UNiagaraComponent*                      CallFunc_SpawnSystemAttached_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_BuildObject_EnergyGenerator_Electric_C_OnStartGenerate;
+
+// Function BP_BuildObject_EnergyGenerator_Electric.BP_BuildObject_EnergyGenerator_Electric_C.OnEndGenerate
+// 0x0001 (0x0001 - 0x0000)
+struct BP_BuildObject_EnergyGenerator_Electric_C_OnEndGenerate final
+{
+public:
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BuildObject_EnergyGenerator_Electric_C_OnEndGenerate;
 
 }
 

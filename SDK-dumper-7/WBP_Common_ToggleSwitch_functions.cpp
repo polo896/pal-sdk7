@@ -17,35 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_Common_ToggleSwitch.WBP_Common_ToggleSwitch_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Common_ToggleSwitch_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Common_ToggleSwitch_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Common_ToggleSwitch.WBP_Common_ToggleSwitch_C.ExecuteUbergraph_WBP_Common_ToggleSwitch
-// (Final, UbergraphFunction)
+// Function WBP_Common_ToggleSwitch.WBP_Common_ToggleSwitch_C.SetToggleState
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsOn                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bImmediate                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Common_ToggleSwitch_C::ExecuteUbergraph_WBP_Common_ToggleSwitch(int32 EntryPoint)
+void UWBP_Common_ToggleSwitch_C::SetToggleState(bool bIsOn, bool bImmediate)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Common_ToggleSwitch_C", "ExecuteUbergraph_WBP_Common_ToggleSwitch");
+		Func = Class->GetFunction("WBP_Common_ToggleSwitch_C", "SetToggleState");
 
-	Params::WBP_Common_ToggleSwitch_C_ExecuteUbergraph_WBP_Common_ToggleSwitch Parms{};
+	Params::WBP_Common_ToggleSwitch_C_SetToggleState Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.bIsOn = bIsOn;
+	Parms.bImmediate = bImmediate;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -71,25 +59,37 @@ void UWBP_Common_ToggleSwitch_C::OnButtonBaseClicked_イベント(class UCommonB
 }
 
 
-// Function WBP_Common_ToggleSwitch.WBP_Common_ToggleSwitch_C.SetToggleState
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Common_ToggleSwitch.WBP_Common_ToggleSwitch_C.ExecuteUbergraph_WBP_Common_ToggleSwitch
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    bIsOn                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bImmediate                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Common_ToggleSwitch_C::SetToggleState(bool bIsOn, bool bImmediate)
+void UWBP_Common_ToggleSwitch_C::ExecuteUbergraph_WBP_Common_ToggleSwitch(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Common_ToggleSwitch_C", "SetToggleState");
+		Func = Class->GetFunction("WBP_Common_ToggleSwitch_C", "ExecuteUbergraph_WBP_Common_ToggleSwitch");
 
-	Params::WBP_Common_ToggleSwitch_C_SetToggleState Parms{};
+	Params::WBP_Common_ToggleSwitch_C_ExecuteUbergraph_WBP_Common_ToggleSwitch Parms{};
 
-	Parms.bIsOn = bIsOn;
-	Parms.bImmediate = bImmediate;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Common_ToggleSwitch.WBP_Common_ToggleSwitch_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Common_ToggleSwitch_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Common_ToggleSwitch_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

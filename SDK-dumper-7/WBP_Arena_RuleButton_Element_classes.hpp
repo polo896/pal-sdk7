@@ -31,12 +31,12 @@ public:
 	EPalElementType                               Element_Type;                                      // 0x02A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Enable();
-	void AnmEvent_Restrict();
-	void BndEvt__WBP_Arena_RuleButton_Element_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void ExecuteUbergraph_WBP_Arena_RuleButton_Element(int32 EntryPoint);
-	void SetRestrict(bool IsRestrict);
 	void SetupElement(EPalElementType ElementType);
+	void SetRestrict(bool IsRestrict);
+	void ExecuteUbergraph_WBP_Arena_RuleButton_Element(int32 EntryPoint);
+	void BndEvt__WBP_Arena_RuleButton_Element_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void AnmEvent_Restrict();
+	void AnmEvent_Enable();
 
 public:
 	static class UClass* StaticClass()

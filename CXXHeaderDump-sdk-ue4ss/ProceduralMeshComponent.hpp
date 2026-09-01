@@ -56,7 +56,7 @@ class UProceduralMeshComponent : public UMeshComponent
     TArray<FProcMeshSection> ProcMeshSections;                                        // 0x0588 (size: 0x10)
     TArray<FKConvexElem> CollisionConvexElems;                                        // 0x0598 (size: 0x10)
     FBoxSphereBounds LocalBounds;                                                     // 0x05A8 (size: 0x38)
-    TArray<class UBodySetup*> AsyncBodySetupQueue;                                    // 0x05E0 (size: 0x10)
+    TArray<UBodySetup*> AsyncBodySetupQueue;                                          // 0x05E0 (size: 0x10)
 
     void UpdateMeshSection_LinearColor(int32 SectionIndex, const TArray<FVector>& Vertices, const TArray<FVector>& normals, const TArray<FVector2D>& UV0, const TArray<FVector2D>& UV1, const TArray<FVector2D>& UV2, const TArray<FVector2D>& UV3, const TArray<FLinearColor>& VertexColors, const TArray<FProcMeshTangent>& Tangents, bool bSRGBConversion);
     void UpdateMeshSection(int32 SectionIndex, const TArray<FVector>& Vertices, const TArray<FVector>& normals, const TArray<FVector2D>& UV0, const TArray<FColor>& VertexColors, const TArray<FProcMeshTangent>& Tangents);

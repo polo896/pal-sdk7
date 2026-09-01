@@ -36,11 +36,11 @@ public:
 	struct FTimerHandle                           ThunderTimer;                                      // 0x0490(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_BulletRain(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
-	void SpawnBullet(int32 Count);
 	void Update_Thunder_Spawn();
+	void SpawnBullet(int32 Count);
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_BulletRain(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

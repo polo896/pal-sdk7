@@ -25,7 +25,7 @@ class UMovieSceneTakeSettings : public UObject
 
 class UMovieSceneTakeTrack : public UMovieSceneNameableTrack
 {
-    TArray<class UMovieSceneSection*> Sections;                                       // 0x0098 (size: 0x10)
+    TArray<UMovieSceneSection*> Sections;                                             // 0x0098 (size: 0x10)
 
 }; // Size: 0xA8
 

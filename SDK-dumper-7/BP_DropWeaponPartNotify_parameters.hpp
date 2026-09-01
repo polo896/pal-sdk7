@@ -17,16 +17,6 @@
 namespace SDK::Params
 {
 
-// Function BP_DropWeaponPartNotify.BP_DropWeaponPartNotify_C.BeginWeaponDrop
-// 0x0010 (0x0010 - 0x0000)
-struct BP_DropWeaponPartNotify_C_BeginWeaponDrop final
-{
-public:
-	class ABP_DropWeaponPart_C*                   self2;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Owner;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_DropWeaponPartNotify_C_BeginWeaponDrop;
-
 // Function BP_DropWeaponPartNotify.BP_DropWeaponPartNotify_C.Received_Notify
 // 0x0260 (0x0260 - 0x0000)
 struct BP_DropWeaponPartNotify_C_Received_Notify final
@@ -50,6 +40,16 @@ public:
 	struct FHitResult                             CallFunc_K2_AddLocalRotation_SweepHitResult;       // 0x0170(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
 DUMPER7_ASSERTS_BP_DropWeaponPartNotify_C_Received_Notify;
+
+// Function BP_DropWeaponPartNotify.BP_DropWeaponPartNotify_C.BeginWeaponDrop
+// 0x0010 (0x0010 - 0x0000)
+struct BP_DropWeaponPartNotify_C_BeginWeaponDrop final
+{
+public:
+	class ABP_DropWeaponPart_C*                   self2;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Owner;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_DropWeaponPartNotify_C_BeginWeaponDrop;
 
 }
 

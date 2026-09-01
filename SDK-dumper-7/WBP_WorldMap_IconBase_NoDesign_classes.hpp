@@ -38,25 +38,25 @@ public:
 	class FName                                   GeneralHideFlagName;                               // 0x052C(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UpdateHiddenOnZoom(double NewZoom);
-	void SetupForceVisibility(bool* bChangedVisibility);
-	void Setup_Internal(class UPalLocationPoint* LocationPoint);
-	void Setup(class UPalLocationPoint* LocationPoint, const struct FGuid& LocationId_0);
-	void SetIgnoreMask(bool IsIgnore);
-	void SetGeneralHiding(bool Hiding);
-	void SetFilterState(const TSet<EPalLocationType>& FilterSet);
-	void SetEnable(bool Enable);
-	void OnClicked_Internal();
-	void IsIgnoreMask(bool* IsIgnore);
-	void GetText(class FText* Text);
-	void GetLocationType(EPalLocationType* Type);
-	void GetLocationRotation(struct FQuat* LocationRotation);
-	void GetLocationPosition(struct FVector* LocationPosition);
-	void GetInvisibleButton(class UWidget** Button);
-	void ExecuteUbergraph_WBP_WorldMap_IconBase_NoDesign(int32 EntryPoint);
-	void Destruct();
-	void Construct();
 	void ClickEvent();
+	void Construct();
+	void Destruct();
+	void ExecuteUbergraph_WBP_WorldMap_IconBase_NoDesign(int32 EntryPoint);
+	void GetInvisibleButton(class UWidget** Button);
+	void GetLocationPosition(struct FVector* LocationPosition);
+	void GetLocationRotation(struct FQuat* LocationRotation);
+	void GetLocationType(EPalLocationType* Type);
+	void GetText(class FText* Text);
+	void IsIgnoreMask(bool* IsIgnore);
+	void OnClicked_Internal();
+	void SetEnable(bool Enable);
+	void SetFilterState(const TSet<EPalLocationType>& FilterSet);
+	void SetGeneralHiding(bool Hiding);
+	void SetIgnoreMask(bool IsIgnore);
+	void Setup(class UPalLocationPoint* LocationPoint, const struct FGuid& LocationId_0);
+	void Setup_Internal(class UPalLocationPoint* LocationPoint);
+	void SetupForceVisibility(bool* bChangedVisibility);
+	void UpdateHiddenOnZoom(double NewZoom);
 
 public:
 	static class UClass* StaticClass()

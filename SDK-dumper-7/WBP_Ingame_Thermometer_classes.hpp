@@ -50,15 +50,15 @@ public:
 	double                                        NowTemperatureAnimtTime;                           // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_ChangeTemperature(int32 TargetTenperature);
-	void Calc_Thermomater_Anime_Target_Time(int32 TargetTenperature, double* TargetTime);
-	void Construct();
-	void ExecuteUbergraph_WBP_Ingame_Thermometer(int32 EntryPoint);
-	void OnInitialized();
-	void SetBodyState(EPalBodyTemperatureState NewState);
-	void SetRegistRate(int32 HeatRegist, int32 ColdRegist);
-	void SetTemperature(int32 NewTenperature);
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void SetTemperature(int32 NewTenperature);
+	void SetRegistRate(int32 HeatRegist, int32 ColdRegist);
+	void SetBodyState(EPalBodyTemperatureState NewState);
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_Ingame_Thermometer(int32 EntryPoint);
+	void Construct();
+	void Calc_Thermomater_Anime_Target_Time(int32 TargetTenperature, double* TargetTime);
+	void AnmEvent_ChangeTemperature(int32 TargetTenperature);
 
 public:
 	static class UClass* StaticClass()

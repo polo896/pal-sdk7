@@ -50,17 +50,17 @@ public:
 	class UPalUIMapObjectEnergyStatusIndicatorModel* UIIndicatorModel;                               // 0x0510(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ChangeCheck();
-	void Construct();
-	void Destruct();
-	void DisplayCheck();
-	void ExecuteUbergraph_WBP_PalWorkPowerPlant(int32 EntryPoint);
-	class UWidgetAnimation* GetAnimationDetailToSimple();
-	void On_Updated_Worker_Pal(class UPalWorkBase* Work);
-	void OnSetup();
-	void OnUpdateEnergyStack(class UPalUIMapObjectEnergyStatusIndicatorModel* Model);
-	void SetArrow(bool IsIncrease);
 	void SetupForMapObjectConcreteModel();
+	void SetArrow(bool IsIncrease);
+	void OnUpdateEnergyStack(class UPalUIMapObjectEnergyStatusIndicatorModel* Model);
+	void OnSetup();
+	void On_Updated_Worker_Pal(class UPalWorkBase* Work);
+	class UWidgetAnimation* GetAnimationDetailToSimple();
+	void ExecuteUbergraph_WBP_PalWorkPowerPlant(int32 EntryPoint);
+	void DisplayCheck();
+	void Destruct();
+	void Construct();
+	void ChangeCheck();
 
 public:
 	static class UClass* StaticClass()

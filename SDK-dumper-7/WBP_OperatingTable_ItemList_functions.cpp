@@ -17,19 +17,63 @@
 namespace SDK
 {
 
-// Function WBP_OperatingTable_ItemList.WBP_OperatingTable_ItemList_C.BndEvt__WBP_OperatingTable_ItemList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_OperatingTable_ItemList.WBP_OperatingTable_ItemList_C.Setup
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class FName                             PassiveId_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   IsValid                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_OperatingTable_ItemList_C::BndEvt__WBP_OperatingTable_ItemList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_OperatingTable_ItemList_C::Setup(class FName PassiveId_0, bool* IsValid)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_ItemList_C", "BndEvt__WBP_OperatingTable_ItemList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_OperatingTable_ItemList_C", "Setup");
 
-	Params::WBP_OperatingTable_ItemList_C_BndEvt__WBP_OperatingTable_ItemList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_OperatingTable_ItemList_C_Setup Parms{};
+
+	Parms.PassiveId_0 = PassiveId_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IsValid != nullptr)
+		*IsValid = Parms.IsValid;
+}
+
+
+// Function WBP_OperatingTable_ItemList.WBP_OperatingTable_ItemList_C.ExecuteUbergraph_WBP_OperatingTable_ItemList
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OperatingTable_ItemList_C::ExecuteUbergraph_WBP_OperatingTable_ItemList(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OperatingTable_ItemList_C", "ExecuteUbergraph_WBP_OperatingTable_ItemList");
+
+	Params::WBP_OperatingTable_ItemList_C_ExecuteUbergraph_WBP_OperatingTable_ItemList Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OperatingTable_ItemList.WBP_OperatingTable_ItemList_C.BndEvt__WBP_OperatingTable_ItemList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OperatingTable_ItemList_C::BndEvt__WBP_OperatingTable_ItemList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OperatingTable_ItemList_C", "BndEvt__WBP_OperatingTable_ItemList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_OperatingTable_ItemList_C_BndEvt__WBP_OperatingTable_ItemList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -57,67 +101,23 @@ void UWBP_OperatingTable_ItemList_C::BndEvt__WBP_OperatingTable_ItemList_WBP_Pal
 }
 
 
-// Function WBP_OperatingTable_ItemList.WBP_OperatingTable_ItemList_C.BndEvt__WBP_OperatingTable_ItemList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_OperatingTable_ItemList.WBP_OperatingTable_ItemList_C.BndEvt__WBP_OperatingTable_ItemList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_OperatingTable_ItemList_C::BndEvt__WBP_OperatingTable_ItemList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_OperatingTable_ItemList_C::BndEvt__WBP_OperatingTable_ItemList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_ItemList_C", "BndEvt__WBP_OperatingTable_ItemList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_OperatingTable_ItemList_C", "BndEvt__WBP_OperatingTable_ItemList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_OperatingTable_ItemList_C_BndEvt__WBP_OperatingTable_ItemList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_OperatingTable_ItemList_C_BndEvt__WBP_OperatingTable_ItemList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OperatingTable_ItemList.WBP_OperatingTable_ItemList_C.ExecuteUbergraph_WBP_OperatingTable_ItemList
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OperatingTable_ItemList_C::ExecuteUbergraph_WBP_OperatingTable_ItemList(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_ItemList_C", "ExecuteUbergraph_WBP_OperatingTable_ItemList");
-
-	Params::WBP_OperatingTable_ItemList_C_ExecuteUbergraph_WBP_OperatingTable_ItemList Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OperatingTable_ItemList.WBP_OperatingTable_ItemList_C.Setup
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             PassiveId_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   IsValid                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OperatingTable_ItemList_C::Setup(class FName PassiveId_0, bool* IsValid)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OperatingTable_ItemList_C", "Setup");
-
-	Params::WBP_OperatingTable_ItemList_C_Setup Parms{};
-
-	Parms.PassiveId_0 = PassiveId_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (IsValid != nullptr)
-		*IsValid = Parms.IsValid;
 }
 
 }

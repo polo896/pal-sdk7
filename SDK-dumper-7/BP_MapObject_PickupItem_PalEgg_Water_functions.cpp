@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function BP_MapObject_PickupItem_PalEgg_Water.BP_MapObject_PickupItem_PalEgg_Water_C.ReturnToPool
-// (Event, Public, BlueprintEvent)
-
-void ABP_MapObject_PickupItem_PalEgg_Water_C::ReturnToPool()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_PickupItem_PalEgg_Water_C", "ReturnToPool");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MapObject_PickupItem_PalEgg_Water.BP_MapObject_PickupItem_PalEgg_Water_C.InitializeFromPool
-// (Event, Public, BlueprintEvent)
-
-void ABP_MapObject_PickupItem_PalEgg_Water_C::InitializeFromPool()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_PickupItem_PalEgg_Water_C", "InitializeFromPool");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_MapObject_PickupItem_PalEgg_Water.BP_MapObject_PickupItem_PalEgg_Water_C.ExecuteUbergraph_BP_MapObject_PickupItem_PalEgg_Water
 // (Final, UbergraphFunction)
 // Parameters:
@@ -62,6 +34,34 @@ void ABP_MapObject_PickupItem_PalEgg_Water_C::ExecuteUbergraph_BP_MapObject_Pick
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MapObject_PickupItem_PalEgg_Water.BP_MapObject_PickupItem_PalEgg_Water_C.InitializeFromPool
+// (Event, Public, BlueprintEvent)
+
+void ABP_MapObject_PickupItem_PalEgg_Water_C::InitializeFromPool()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MapObject_PickupItem_PalEgg_Water_C", "InitializeFromPool");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MapObject_PickupItem_PalEgg_Water.BP_MapObject_PickupItem_PalEgg_Water_C.ReturnToPool
+// (Event, Public, BlueprintEvent)
+
+void ABP_MapObject_PickupItem_PalEgg_Water_C::ReturnToPool()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MapObject_PickupItem_PalEgg_Water_C", "ReturnToPool");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

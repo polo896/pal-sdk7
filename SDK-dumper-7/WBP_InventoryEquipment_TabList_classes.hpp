@@ -33,15 +33,15 @@ public:
 	TMulticastInlineDelegate<void()>              OnClickedSortButton;                               // 0x04E8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__WBP_InventoryEquipment_TabList_WBP_InventoryEquipment_InventoryTabButton_Essential_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature(class UWBP_InventoryEquipment_InventoryTabButton_C* Button);
-	void BndEvt__WBP_InventoryEquipment_TabList_WBP_InventoryEquipment_InventoryTabButton_Inventory_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature(class UWBP_InventoryEquipment_InventoryTabButton_C* Button);
-	void BndEvt__WBP_InventoryEquipment_TabList_WBP_PalInvisibleButton_Sort_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void ExecuteUbergraph_WBP_InventoryEquipment_TabList(int32 EntryPoint);
-	void OnChangedIndex_Binded(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
-	void OnInitialized();
-	void OnNext_Binded(int32 OldIndex, int32 NewIndex);
-	void OnPrev_Binded(int32 OldIndex, int32 NewIndex);
 	void RegisterPanelWidget(class UPanelWidget** PanelWidget);
+	void OnPrev_Binded(int32 OldIndex, int32 NewIndex);
+	void OnNext_Binded(int32 OldIndex, int32 NewIndex);
+	void OnInitialized();
+	void OnChangedIndex_Binded(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
+	void ExecuteUbergraph_WBP_InventoryEquipment_TabList(int32 EntryPoint);
+	void BndEvt__WBP_InventoryEquipment_TabList_WBP_PalInvisibleButton_Sort_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_InventoryEquipment_TabList_WBP_InventoryEquipment_InventoryTabButton_Inventory_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature(class UWBP_InventoryEquipment_InventoryTabButton_C* Button);
+	void BndEvt__WBP_InventoryEquipment_TabList_WBP_InventoryEquipment_InventoryTabButton_Essential_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature(class UWBP_InventoryEquipment_InventoryTabButton_C* Button);
 
 public:
 	static class UClass* StaticClass()

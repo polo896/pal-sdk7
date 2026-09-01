@@ -30,14 +30,14 @@ public:
 	int32                                         Target_Material_Index;                             // 0x0680(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_BuildObjectFactoryConveyorComponent(int32 EntryPoint);
-	class UMaterialInstanceDynamic* GetMaterialInstance();
-	void OnReadyOwnerEnergyModule(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module);
-	void OnUpdateBuildObjectVisual(const class UPalMapObjectConcreteModelBase* MapObjectConcreteModel);
-	void OnUpdateCurrentEnergyState(class UPalMapObjectEnergyModule* Module);
-	void OnUpdateRecipe(class UPalMapObjectConvertItemModel* Model);
-	void SetRunningConveyor(bool bOn);
 	void SetupByOwner(class UPalMapObjectConcreteModelBase* ConcreteModel, class UMeshComponent* TargetMeshComponent, int32 TargetMaterialIndex);
+	void SetRunningConveyor(bool bOn);
+	void OnUpdateRecipe(class UPalMapObjectConvertItemModel* Model);
+	void OnUpdateCurrentEnergyState(class UPalMapObjectEnergyModule* Module);
+	void OnUpdateBuildObjectVisual(const class UPalMapObjectConcreteModelBase* MapObjectConcreteModel);
+	void OnReadyOwnerEnergyModule(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module);
+	class UMaterialInstanceDynamic* GetMaterialInstance();
+	void ExecuteUbergraph_BP_BuildObjectFactoryConveyorComponent(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

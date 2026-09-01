@@ -30,12 +30,12 @@ public:
 	bool                                          SaveSuccessForRetryHostLocalWorldSave;             // 0x0BD8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_PalPlayerState(int32 EntryPoint);
-	void HostLocalWorldSave(bool SaveSuccess);
-	void LoadTitleLevel(bool bIsSaveSuccess);
-	void ProcessSaveReturn();
-	void RetryHostLocalWorldSave();
 	void RetryProcessSaveReturn();
+	void RetryHostLocalWorldSave();
+	void ProcessSaveReturn();
+	void LoadTitleLevel(bool bIsSaveSuccess);
+	void HostLocalWorldSave(bool SaveSuccess);
+	void ExecuteUbergraph_BP_PalPlayerState(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

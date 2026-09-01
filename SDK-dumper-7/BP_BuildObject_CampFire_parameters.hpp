@@ -16,15 +16,6 @@
 namespace SDK::Params
 {
 
-// Function BP_BuildObject_CampFire.BP_BuildObject_CampFire_C.ExecuteUbergraph_BP_BuildObject_CampFire
-// 0x0004 (0x0004 - 0x0000)
-struct BP_BuildObject_CampFire_C_ExecuteUbergraph_BP_BuildObject_CampFire final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_BuildObject_CampFire_C_ExecuteUbergraph_BP_BuildObject_CampFire;
-
 // Function BP_BuildObject_CampFire.BP_BuildObject_CampFire_C.SetActive_Internal
 // 0x0005 (0x0005 - 0x0000)
 struct BP_BuildObject_CampFire_C_SetActive_Internal final
@@ -37,6 +28,15 @@ public:
 	ECollisionEnabled                             K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_BuildObject_CampFire_C_SetActive_Internal;
+
+// Function BP_BuildObject_CampFire.BP_BuildObject_CampFire_C.ExecuteUbergraph_BP_BuildObject_CampFire
+// 0x0004 (0x0004 - 0x0000)
+struct BP_BuildObject_CampFire_C_ExecuteUbergraph_BP_BuildObject_CampFire final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BuildObject_CampFire_C_ExecuteUbergraph_BP_BuildObject_CampFire;
 
 }
 

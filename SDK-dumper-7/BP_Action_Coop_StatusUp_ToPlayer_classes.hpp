@@ -26,14 +26,14 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0160(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_BP_Action_Coop_StatusUp_ToPlayer(int32 EntryPoint);
-	void OnBeginAction();
-	void OnBlendOut_ABB535BB4FAAC8D8FB51609FB149C834(class FName NotifyName);
-	void OnCompleted_ABB535BB4FAAC8D8FB51609FB149C834(class FName NotifyName);
-	void OnEndAction();
-	void OnInterrupted_ABB535BB4FAAC8D8FB51609FB149C834(class FName NotifyName);
-	void OnNotifyBegin_ABB535BB4FAAC8D8FB51609FB149C834(class FName NotifyName);
 	void OnNotifyEnd_ABB535BB4FAAC8D8FB51609FB149C834(class FName NotifyName);
+	void OnNotifyBegin_ABB535BB4FAAC8D8FB51609FB149C834(class FName NotifyName);
+	void OnInterrupted_ABB535BB4FAAC8D8FB51609FB149C834(class FName NotifyName);
+	void OnEndAction();
+	void OnCompleted_ABB535BB4FAAC8D8FB51609FB149C834(class FName NotifyName);
+	void OnBlendOut_ABB535BB4FAAC8D8FB51609FB149C834(class FName NotifyName);
+	void OnBeginAction();
+	void ExecuteUbergraph_BP_Action_Coop_StatusUp_ToPlayer(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

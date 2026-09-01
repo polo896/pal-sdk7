@@ -17,41 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_Buildup_Pal_Item.WBP_Buildup_Pal_Item_C.ExecuteUbergraph_WBP_Buildup_Pal_Item
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Buildup_Pal_Item_C::ExecuteUbergraph_WBP_Buildup_Pal_Item(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_Item_C", "ExecuteUbergraph_WBP_Buildup_Pal_Item");
-
-	Params::WBP_Buildup_Pal_Item_C_ExecuteUbergraph_WBP_Buildup_Pal_Item Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Buildup_Pal_Item.WBP_Buildup_Pal_Item_C.SetIcon
+// Function WBP_Buildup_Pal_Item.WBP_Buildup_Pal_Item_C.SetNumRed
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   IconIndex                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsRed                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Buildup_Pal_Item_C::SetIcon(int32 IconIndex)
+void UWBP_Buildup_Pal_Item_C::SetNumRed(bool IsRed)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_Item_C", "SetIcon");
+		Func = Class->GetFunction("WBP_Buildup_Pal_Item_C", "SetNumRed");
 
-	Params::WBP_Buildup_Pal_Item_C_SetIcon Parms{};
+	Params::WBP_Buildup_Pal_Item_C_SetNumRed Parms{};
 
-	Parms.IconIndex = IconIndex;
+	Parms.IsRed = IsRed;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -77,21 +57,41 @@ void UWBP_Buildup_Pal_Item_C::SetNum(int32 Num)
 }
 
 
-// Function WBP_Buildup_Pal_Item.WBP_Buildup_Pal_Item_C.SetNumRed
+// Function WBP_Buildup_Pal_Item.WBP_Buildup_Pal_Item_C.SetIcon
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsRed                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   IconIndex                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Buildup_Pal_Item_C::SetNumRed(bool IsRed)
+void UWBP_Buildup_Pal_Item_C::SetIcon(int32 IconIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_Item_C", "SetNumRed");
+		Func = Class->GetFunction("WBP_Buildup_Pal_Item_C", "SetIcon");
 
-	Params::WBP_Buildup_Pal_Item_C_SetNumRed Parms{};
+	Params::WBP_Buildup_Pal_Item_C_SetIcon Parms{};
 
-	Parms.IsRed = IsRed;
+	Parms.IconIndex = IconIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Buildup_Pal_Item.WBP_Buildup_Pal_Item_C.ExecuteUbergraph_WBP_Buildup_Pal_Item
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Buildup_Pal_Item_C::ExecuteUbergraph_WBP_Buildup_Pal_Item(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Pal_Item_C", "ExecuteUbergraph_WBP_Buildup_Pal_Item");
+
+	Params::WBP_Buildup_Pal_Item_C_ExecuteUbergraph_WBP_Buildup_Pal_Item Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

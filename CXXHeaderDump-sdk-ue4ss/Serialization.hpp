@@ -81,7 +81,7 @@ struct FStructSerializerLWCTypesTest
     float float;                                                                      // 0x02A0 (size: 0x4)
     double Double;                                                                    // 0x02A8 (size: 0x8)
     TArray<FVector> VectorArray;                                                      // 0x02B0 (size: 0x10)
-    TMap<class FString, class FVector> StrToVec;                                      // 0x02C0 (size: 0x50)
+    TMap<FString, FVector> StrToVec;                                                  // 0x02C0 (size: 0x50)
     TSet<FVector> VectorSet;                                                          // 0x0310 (size: 0x50)
 
 }; // Size: 0x360
@@ -89,9 +89,9 @@ struct FStructSerializerLWCTypesTest
 struct FStructSerializerMapTestStruct
 {
     TMap<int32, FString> IntToStr;                                                    // 0x0000 (size: 0x50)
-    TMap<class FString, class FString> StrToStr;                                      // 0x0050 (size: 0x50)
-    TMap<class FString, class FVector> StrToVec;                                      // 0x00A0 (size: 0x50)
-    TMap<class FString, class FStructSerializerBuiltinTestStruct> StrToStruct;        // 0x00F0 (size: 0x50)
+    TMap<FString, FString> StrToStr;                                                  // 0x0050 (size: 0x50)
+    TMap<FString, FVector> StrToVec;                                                  // 0x00A0 (size: 0x50)
+    TMap<FString, FStructSerializerBuiltinTestStruct> StrToStruct;                    // 0x00F0 (size: 0x50)
 
 }; // Size: 0x140
 
@@ -112,7 +112,7 @@ struct FStructSerializerNonLWCTypesTest
     float float;                                                                      // 0x0158 (size: 0x4)
     double Double;                                                                    // 0x0160 (size: 0x8)
     TArray<FVector3f> VectorArray;                                                    // 0x0168 (size: 0x10)
-    TMap<class FString, class FVector3f> StrToVec;                                    // 0x0178 (size: 0x50)
+    TMap<FString, FVector3f> StrToVec;                                                // 0x0178 (size: 0x50)
     TSet<FVector3f> VectorSet;                                                        // 0x01C8 (size: 0x50)
 
 }; // Size: 0x220
@@ -141,7 +141,7 @@ struct FStructSerializerObjectTestStruct
     class UObject* RawObject;                                                         // 0x0048 (size: 0x8)
     class UObject* WrappedObject;                                                     // 0x0050 (size: 0x8)
     TWeakObjectPtr<class UMetadata> WeakObject;                                       // 0x0058 (size: 0x8)
-    TSoftObjectPtr<UMetadata> SoftObject;                                             // 0x0060 (size: 0x30)
+    TSoftObjectPtr<class UMetadata> SoftObject;                                       // 0x0060 (size: 0x30)
     FSoftClassPath ClassPath;                                                         // 0x0090 (size: 0x20)
     FSoftObjectPath ObjectPath;                                                       // 0x00B0 (size: 0x20)
 

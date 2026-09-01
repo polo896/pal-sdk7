@@ -9,7 +9,7 @@ class UWBP_CharaCre_ScrollBoxContent_Body_C : public UWBP_CharaCre_ScrollBoxCont
     class UWBP_Chara_Cre_PartsSizeSlider_C* WBP_PartsSizeSlider_Leg;                  // 0x0488 (size: 0x8)
     class UWBP_Chara_Cre_PartsSizeSlider_C* WBP_PartsSizeSlider_Torso;                // 0x0490 (size: 0x8)
     class UWrapBox* WrapBox_Body;                                                     // 0x0498 (size: 0x8)
-    TMap<class FName, class FPalCharacterCreationMeshPresetDataRow> BodyMeshMap;      // 0x04A0 (size: 0x50)
+    TMap<FName, FPalCharacterCreationMeshPresetDataRow> BodyMeshMap;                  // 0x04A0 (size: 0x50)
     TArray<FLinearColor> PresetColors;                                                // 0x04F0 (size: 0x10)
     FWBP_CharaCre_ScrollBoxContent_Body_COnSelectedSkinColor OnSelectedSkinColor;     // 0x0500 (size: 0x10)
     void OnSelectedSkinColor(FLinearColor Color);

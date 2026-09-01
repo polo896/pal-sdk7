@@ -17,58 +17,17 @@
 namespace SDK
 {
 
-// Function WBP_Ingame_Chat_Wrapper.WBP_Ingame_Chat_Wrapper_C.BndEvt__WBP_Ingame_Chat_Wrapper_WBP_Ingame_Chat_K2Node_ComponentBoundEvent_0_OnCompleteInput__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Ingame_Chat_Wrapper.WBP_Ingame_Chat_Wrapper_C.ShowChat
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Ingame_Chat_Wrapper_C::BndEvt__WBP_Ingame_Chat_Wrapper_WBP_Ingame_Chat_K2Node_ComponentBoundEvent_0_OnCompleteInput__DelegateSignature()
+void UWBP_Ingame_Chat_Wrapper_C::ShowChat()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Chat_Wrapper_C", "BndEvt__WBP_Ingame_Chat_Wrapper_WBP_Ingame_Chat_K2Node_ComponentBoundEvent_0_OnCompleteInput__DelegateSignature");
+		Func = Class->GetFunction("WBP_Ingame_Chat_Wrapper_C", "ShowChat");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Ingame_Chat_Wrapper.WBP_Ingame_Chat_Wrapper_C.CanOpenAnyUI
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   bCanOpenAnyUI                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Ingame_Chat_Wrapper_C::CanOpenAnyUI(bool* bCanOpenAnyUI)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Chat_Wrapper_C", "CanOpenAnyUI");
-
-	Params::WBP_Ingame_Chat_Wrapper_C_CanOpenAnyUI Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (bCanOpenAnyUI != nullptr)
-		*bCanOpenAnyUI = Parms.bCanOpenAnyUI;
-}
-
-
-// Function WBP_Ingame_Chat_Wrapper.WBP_Ingame_Chat_Wrapper_C.ExecuteUbergraph_WBP_Ingame_Chat_Wrapper
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Ingame_Chat_Wrapper_C::ExecuteUbergraph_WBP_Ingame_Chat_Wrapper(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Chat_Wrapper_C", "ExecuteUbergraph_WBP_Ingame_Chat_Wrapper");
-
-	Params::WBP_Ingame_Chat_Wrapper_C_ExecuteUbergraph_WBP_Ingame_Chat_Wrapper Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -97,15 +56,56 @@ struct FEventReply UWBP_Ingame_Chat_Wrapper_C::On_Image_ForceClose_MouseButtonDo
 }
 
 
-// Function WBP_Ingame_Chat_Wrapper.WBP_Ingame_Chat_Wrapper_C.ShowChat
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Ingame_Chat_Wrapper.WBP_Ingame_Chat_Wrapper_C.ExecuteUbergraph_WBP_Ingame_Chat_Wrapper
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Ingame_Chat_Wrapper_C::ShowChat()
+void UWBP_Ingame_Chat_Wrapper_C::ExecuteUbergraph_WBP_Ingame_Chat_Wrapper(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Chat_Wrapper_C", "ShowChat");
+		Func = Class->GetFunction("WBP_Ingame_Chat_Wrapper_C", "ExecuteUbergraph_WBP_Ingame_Chat_Wrapper");
+
+	Params::WBP_Ingame_Chat_Wrapper_C_ExecuteUbergraph_WBP_Ingame_Chat_Wrapper Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Ingame_Chat_Wrapper.WBP_Ingame_Chat_Wrapper_C.CanOpenAnyUI
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   bCanOpenAnyUI                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Ingame_Chat_Wrapper_C::CanOpenAnyUI(bool* bCanOpenAnyUI)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_Chat_Wrapper_C", "CanOpenAnyUI");
+
+	Params::WBP_Ingame_Chat_Wrapper_C_CanOpenAnyUI Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (bCanOpenAnyUI != nullptr)
+		*bCanOpenAnyUI = Parms.bCanOpenAnyUI;
+}
+
+
+// Function WBP_Ingame_Chat_Wrapper.WBP_Ingame_Chat_Wrapper_C.BndEvt__WBP_Ingame_Chat_Wrapper_WBP_Ingame_Chat_K2Node_ComponentBoundEvent_0_OnCompleteInput__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Ingame_Chat_Wrapper_C::BndEvt__WBP_Ingame_Chat_Wrapper_WBP_Ingame_Chat_K2Node_ComponentBoundEvent_0_OnCompleteInput__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_Chat_Wrapper_C", "BndEvt__WBP_Ingame_Chat_Wrapper_WBP_Ingame_Chat_K2Node_ComponentBoundEvent_0_OnCompleteInput__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

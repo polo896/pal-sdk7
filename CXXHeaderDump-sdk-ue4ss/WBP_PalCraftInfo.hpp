@@ -20,7 +20,7 @@ class UWBP_PalCraftInfo_C : public UUserWidget
     class UWBP_PalCraftInfo_Pal_C* WBP_PalCraftInfo_Pal_3;                            // 0x02E8 (size: 0x8)
     class UWBP_PalCraftInfo_Pal_C* WBP_PalCraftInfo_Pal_4;                            // 0x02F0 (size: 0x8)
     class UWBP_RequirePalInfo_C* WBP_RequirePalInfo;                                  // 0x02F8 (size: 0x8)
-    TArray<class UWBP_PalCraftInfo_Pal_C*> workerPalWidgetArray;                      // 0x0300 (size: 0x10)
+    TArray<UWBP_PalCraftInfo_Pal_C*> workerPalWidgetArray;                            // 0x0300 (size: 0x10)
     FDataTableRowHandle InfinityNumMsgId;                                             // 0x0310 (size: 0x10)
     FDataTableRowHandle RequireGenusMSGID;                                            // 0x0320 (size: 0x10)
     FDataTableRowHandle RequireTypeMSGID;                                             // 0x0330 (size: 0x10)
@@ -33,7 +33,7 @@ class UWBP_PalCraftInfo_C : public UUserWidget
     void SetIcon(FName ItemId);
     void SetInfinityProductMode();
     void SetProductNum(int32 nowProductNum, int32 maxProductNum);
-    void SetWorkerPalSlots(TArray<class UPalIndividualCharacterSlot*>& Slots, FGuid WorkId);
+    void SetWorkerPalSlots(TArray<UPalIndividualCharacterSlot*>& Slots, FGuid WorkId);
     void AnmEvent_ToDetail();
     void AnmEvent_ToSimpleDetail();
     void AnmEvent_NoRecipe();

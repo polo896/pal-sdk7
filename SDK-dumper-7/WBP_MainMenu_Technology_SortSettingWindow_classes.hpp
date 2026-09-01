@@ -42,19 +42,19 @@ public:
 	bool                                          CurrentShowUnlocked;                               // 0x0598(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_CommonButton_CheckAll_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
-	void BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
-	void BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_CommonButton_UncheckAll_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature();
-	void BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_PalInvisibleButton_ShowUnlocked_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	class UWidget* Custom_Navigation_Up(EUINavigation Navigation_0);
-	void ExecuteUbergraph_WBP_MainMenu_Technology_SortSettingWindow(int32 EntryPoint);
-	void FocusToConfirm();
-	void OnBuildFilterChanged(EPalBuildObjectTypeA BuildType, bool CheckState);
-	void OnItemFilterChanged(EPalItemTypeA ItemType, bool CheckState);
-	void OnSetup();
-	void SetAll(bool Check);
 	void Setup(const TSet<EPalItemTypeA>& NowItemFilter, const TSet<EPalBuildObjectTypeA>& NowBuildFilter);
+	void SetAll(bool Check);
+	void OnSetup();
+	void OnItemFilterChanged(EPalItemTypeA ItemType, bool CheckState);
+	void OnBuildFilterChanged(EPalBuildObjectTypeA BuildType, bool CheckState);
+	void FocusToConfirm();
+	void ExecuteUbergraph_WBP_MainMenu_Technology_SortSettingWindow(int32 EntryPoint);
+	class UWidget* Custom_Navigation_Up(EUINavigation Navigation_0);
+	void BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_PalInvisibleButton_ShowUnlocked_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
+	void BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_CommonButton_UncheckAll_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature();
+	void BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
+	void BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_CommonButton_CheckAll_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

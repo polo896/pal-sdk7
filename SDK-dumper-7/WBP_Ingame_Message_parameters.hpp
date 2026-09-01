@@ -17,6 +17,76 @@
 namespace SDK::Params
 {
 
+// Function WBP_Ingame_Message.WBP_Ingame_Message_C.ShowMessage
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_Ingame_Message_C_ShowMessage final
+{
+public:
+	struct FF_PalIngameMessageQueData             DisplayQueData;                                    // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x001C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0030(0x0008)(NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Ingame_Message_C_ShowMessage;
+
+// Function WBP_Ingame_Message.WBP_Ingame_Message_C.SetMessageText
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_Ingame_Message_C_SetMessageText final
+{
+public:
+	class FName                                   TextId;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0008(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_Ingame_Message_C_SetMessageText;
+
+// Function WBP_Ingame_Message.WBP_Ingame_Message_C.QueMessage
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_Ingame_Message_C_QueMessage final
+{
+public:
+	struct FF_PalIngameMessageQueData             QueData;                                           // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsProcessingMessage_bProcessing;          // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Ingame_Message_C_QueMessage;
+
+// Function WBP_Ingame_Message.WBP_Ingame_Message_C.PopMessage
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_Ingame_Message_C_PopMessage final
+{
+public:
+	struct FF_PalIngameMessageQueData             NewLocalVar;                                       // 0x0000(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FF_PalIngameMessageQueData             CallFunc_Array_Get_Item;                           // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsEmpty_ReturnValue;                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Ingame_Message_C_PopMessage;
+
+// Function WBP_Ingame_Message.WBP_Ingame_Message_C.OnTimerEvent_PlayEnd
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Ingame_Message_C_OnTimerEvent_PlayEnd final
+{
+public:
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Ingame_Message_C_OnTimerEvent_PlayEnd;
+
+// Function WBP_Ingame_Message.WBP_Ingame_Message_C.IsProcessingMessage
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Ingame_Message_C_IsProcessingMessage final
+{
+public:
+	bool                                          bProcessing;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_IsValidTimerHandle_ReturnValue;        // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_IsValidTimerHandle_ReturnValue_1;      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Ingame_Message_C_IsProcessingMessage;
+
 // Function WBP_Ingame_Message.WBP_Ingame_Message_C.ExecuteUbergraph_WBP_Ingame_Message
 // 0x0040 (0x0040 - 0x0000)
 struct WBP_Ingame_Message_C_ExecuteUbergraph_WBP_Ingame_Message final
@@ -35,76 +105,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_4;              // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Ingame_Message_C_ExecuteUbergraph_WBP_Ingame_Message;
-
-// Function WBP_Ingame_Message.WBP_Ingame_Message_C.IsProcessingMessage
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Ingame_Message_C_IsProcessingMessage final
-{
-public:
-	bool                                          bProcessing;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_IsValidTimerHandle_ReturnValue;        // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_IsValidTimerHandle_ReturnValue_1;      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Ingame_Message_C_IsProcessingMessage;
-
-// Function WBP_Ingame_Message.WBP_Ingame_Message_C.OnTimerEvent_PlayEnd
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Ingame_Message_C_OnTimerEvent_PlayEnd final
-{
-public:
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Ingame_Message_C_OnTimerEvent_PlayEnd;
-
-// Function WBP_Ingame_Message.WBP_Ingame_Message_C.PopMessage
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_Ingame_Message_C_PopMessage final
-{
-public:
-	struct FF_PalIngameMessageQueData             NewLocalVar;                                       // 0x0000(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FF_PalIngameMessageQueData             CallFunc_Array_Get_Item;                           // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsEmpty_ReturnValue;                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Ingame_Message_C_PopMessage;
-
-// Function WBP_Ingame_Message.WBP_Ingame_Message_C.QueMessage
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_Ingame_Message_C_QueMessage final
-{
-public:
-	struct FF_PalIngameMessageQueData             QueData;                                           // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsProcessingMessage_bProcessing;          // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Ingame_Message_C_QueMessage;
-
-// Function WBP_Ingame_Message.WBP_Ingame_Message_C.SetMessageText
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_Ingame_Message_C_SetMessageText final
-{
-public:
-	class FName                                   TextId;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0008(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_Ingame_Message_C_SetMessageText;
-
-// Function WBP_Ingame_Message.WBP_Ingame_Message_C.ShowMessage
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_Ingame_Message_C_ShowMessage final
-{
-public:
-	struct FF_PalIngameMessageQueData             DisplayQueData;                                    // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x001C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0030(0x0008)(NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Ingame_Message_C_ShowMessage;
 
 }
 

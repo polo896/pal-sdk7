@@ -31,17 +31,17 @@ public:
 	class UWBP_CrimeList_C*                       WBP_CrimeList;                                     // 0x02A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void CrimeBeFound(const TArray<class FName>& CrimeIds);
-	void CrimeDroneFound();
-	void End_Wanted();
-	void ExecuteUbergraph_WBP_Crime(int32 EntryPoint);
-	void OnCloseCrimeList();
-	void OnInitialized();
-	void SetAlertGaugePercent(double NewParcent);
-	void SetCrime(bool Crime);
-	void SetEnableAlertTimerGauge(bool bEnableGauge);
-	void SetLostSearchTImer(double LostSrarchTime, double CurrentLostSearchTimer);
 	void SetWantedRank(int32 NewWantedRank);
+	void SetLostSearchTImer(double LostSrarchTime, double CurrentLostSearchTimer);
+	void SetEnableAlertTimerGauge(bool bEnableGauge);
+	void SetCrime(bool Crime);
+	void SetAlertGaugePercent(double NewParcent);
+	void OnInitialized();
+	void OnCloseCrimeList();
+	void ExecuteUbergraph_WBP_Crime(int32 EntryPoint);
+	void End_Wanted();
+	void CrimeDroneFound();
+	void CrimeBeFound(const TArray<class FName>& CrimeIds);
 
 public:
 	static class UClass* StaticClass()

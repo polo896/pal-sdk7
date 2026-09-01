@@ -17,43 +17,105 @@
 namespace SDK
 {
 
-// Function WBP_Map_IconBoss.WBP_Map_IconBoss_C.UpdateBossIconState
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Map_IconBoss.WBP_Map_IconBoss_C.BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Map_IconBoss_C::UpdateBossIconState()
+void UWBP_Map_IconBoss_C::BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconBoss_C", "UpdateBossIconState");
+		Func = Class->GetFunction("WBP_Map_IconBoss_C", "BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Map_IconBoss_C_BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Map_IconBoss.WBP_Map_IconBoss_C.SetOilrig
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Map_IconBoss.WBP_Map_IconBoss_C.BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   Level_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             Character_Id_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FVector&                   Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             MapName                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Map_IconBoss_C::SetOilrig(int32 Level_0, class FName Character_Id_0, const struct FVector& Location, class FName MapName)
+void UWBP_Map_IconBoss_C::BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconBoss_C", "SetOilrig");
+		Func = Class->GetFunction("WBP_Map_IconBoss_C", "BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_Map_IconBoss_C_SetOilrig Parms{};
+	Params::WBP_Map_IconBoss_C_BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature Parms{};
 
-	Parms.Level_0 = Level_0;
-	Parms.Character_Id_0 = Character_Id_0;
-	Parms.Location = std::move(Location);
-	Parms.MapName = MapName;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Map_IconBoss.WBP_Map_IconBoss_C.ExecuteUbergraph_WBP_Map_IconBoss
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Map_IconBoss_C::ExecuteUbergraph_WBP_Map_IconBoss(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Map_IconBoss_C", "ExecuteUbergraph_WBP_Map_IconBoss");
+
+	Params::WBP_Map_IconBoss_C_ExecuteUbergraph_WBP_Map_IconBoss Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Map_IconBoss.WBP_Map_IconBoss_C.GetInvisibleButton
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWidget**                         Button                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Map_IconBoss_C::GetInvisibleButton(class UWidget** Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Map_IconBoss_C", "GetInvisibleButton");
+
+	Params::WBP_Map_IconBoss_C_GetInvisibleButton Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Button != nullptr)
+		*Button = Parms.Button;
+}
+
+
+// Function WBP_Map_IconBoss.WBP_Map_IconBoss_C.IsHiddenLocation
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool*                                   bIsHidden                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Map_IconBoss_C::IsHiddenLocation(bool* bIsHidden)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Map_IconBoss_C", "IsHiddenLocation");
+
+	Params::WBP_Map_IconBoss_C_IsHiddenLocation Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (bIsHidden != nullptr)
+		*bIsHidden = Parms.bIsHidden;
 }
 
 
@@ -89,105 +151,43 @@ void UWBP_Map_IconBoss_C::SetBoss(class FName CharacterID, int32 Level_0, class 
 }
 
 
-// Function WBP_Map_IconBoss.WBP_Map_IconBoss_C.IsHiddenLocation
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_Map_IconBoss.WBP_Map_IconBoss_C.SetOilrig
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   bIsHidden                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Level_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             Character_Id_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             MapName                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Map_IconBoss_C::IsHiddenLocation(bool* bIsHidden)
+void UWBP_Map_IconBoss_C::SetOilrig(int32 Level_0, class FName Character_Id_0, const struct FVector& Location, class FName MapName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconBoss_C", "IsHiddenLocation");
+		Func = Class->GetFunction("WBP_Map_IconBoss_C", "SetOilrig");
 
-	Params::WBP_Map_IconBoss_C_IsHiddenLocation Parms{};
+	Params::WBP_Map_IconBoss_C_SetOilrig Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (bIsHidden != nullptr)
-		*bIsHidden = Parms.bIsHidden;
-}
-
-
-// Function WBP_Map_IconBoss.WBP_Map_IconBoss_C.GetInvisibleButton
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWidget**                         Button                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Map_IconBoss_C::GetInvisibleButton(class UWidget** Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconBoss_C", "GetInvisibleButton");
-
-	Params::WBP_Map_IconBoss_C_GetInvisibleButton Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Button != nullptr)
-		*Button = Parms.Button;
-}
-
-
-// Function WBP_Map_IconBoss.WBP_Map_IconBoss_C.ExecuteUbergraph_WBP_Map_IconBoss
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Map_IconBoss_C::ExecuteUbergraph_WBP_Map_IconBoss(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconBoss_C", "ExecuteUbergraph_WBP_Map_IconBoss");
-
-	Params::WBP_Map_IconBoss_C_ExecuteUbergraph_WBP_Map_IconBoss Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Level_0 = Level_0;
+	Parms.Character_Id_0 = Character_Id_0;
+	Parms.Location = std::move(Location);
+	Parms.MapName = MapName;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Map_IconBoss.WBP_Map_IconBoss_C.BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Map_IconBoss.WBP_Map_IconBoss_C.UpdateBossIconState
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Map_IconBoss_C::BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Map_IconBoss_C::UpdateBossIconState()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconBoss_C", "BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Map_IconBoss_C", "UpdateBossIconState");
 
-	Params::WBP_Map_IconBoss_C_BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Map_IconBoss.WBP_Map_IconBoss_C.BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Map_IconBoss_C::BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconBoss_C", "BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_Map_IconBoss_C_BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

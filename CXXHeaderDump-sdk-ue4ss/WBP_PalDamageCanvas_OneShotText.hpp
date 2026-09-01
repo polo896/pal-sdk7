@@ -13,7 +13,7 @@ class UWBP_PalDamageCanvas_OneShotText_C : public UPalDamageDisplayCanvas
     double DamageTextScale;                                                           // 0x0538 (size: 0x8)
     int32 MaxDisplayNum;                                                              // 0x0540 (size: 0x4)
     bool bPlayerHasMercyHit;                                                          // 0x0544 (size: 0x1)
-    TArray<class UPalUIDamageTextBase*> CurrentDIsplayingDamageText;                  // 0x0548 (size: 0x10)
+    TArray<UPalUIDamageTextBase*> CurrentDIsplayingDamageText;                        // 0x0548 (size: 0x10)
 
     void Get Additional Effect (FPalDamageInfo DamageInfo, TArray<EPalAdditionalEffectType>& AdditionalEffect);
     void RemoveDamageText(class UPalUIDamageTextBase* RemoveWidget);

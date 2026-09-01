@@ -12,7 +12,7 @@ class UWBP_PalInteractiveObjectIndicatorCanvas_C : public UPalUserWidget
     class UVerticalBox* IndicatorVerticalBox;                                         // 0x0480 (size: 0x8)
     class UOverlay* Overlay_CustomName;                                               // 0x0488 (size: 0x8)
     class UBP_PalTextBlock_C* Text_InteractTargetName;                                // 0x0490 (size: 0x8)
-    TMap<class EPalInteractiveObjectActionType, class UWBP_PalInteractiveObjectIndicatorUI_C*> IndicatorUIs; // 0x0498 (size: 0x50)
+    TMap<EPalInteractiveObjectActionType, UWBP_PalInteractiveObjectIndicatorUI_C*> IndicatorUIs; // 0x0498 (size: 0x50)
     int32 ZOrder;                                                                     // 0x04E8 (size: 0x4)
     bool bInteracting;                                                                // 0x04EC (size: 0x1)
     TScriptInterface<class IPalInteractiveObjectComponentInterface> Interactive Object; // 0x04F0 (size: 0x10)

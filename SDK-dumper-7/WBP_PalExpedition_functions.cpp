@@ -17,163 +17,205 @@
 namespace SDK
 {
 
-// Function WBP_PalExpedition.WBP_PalExpedition_C.BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_0_OnClickedStartExcludeSettingsButton__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_PalExpedition_C::BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_0_OnClickedStartExcludeSettingsButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_0_OnClickedStartExcludeSettingsButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalExpedition.WBP_PalExpedition_C.BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_10_OnClickedAllUnassignButton__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_PalExpedition_C::BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_10_OnClickedAllUnassignButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_10_OnClickedAllUnassignButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalExpedition.WBP_PalExpedition_C.BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_11_OnClickedAssignedPalPanel__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_PalExpedition.WBP_PalExpedition_C.UpdateSelectedPalListForClientByInstanceId_Remove
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWBP_Expedition_PalList_C*        Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const struct FPalInstanceID&            InstanceId                                             (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void UWBP_PalExpedition_C::BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_11_OnClickedAssignedPalPanel__DelegateSignature(class UWBP_Expedition_PalList_C* Widget)
+void UWBP_PalExpedition_C::UpdateSelectedPalListForClientByInstanceId_Remove(const struct FPalInstanceID& InstanceId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_11_OnClickedAssignedPalPanel__DelegateSignature");
+		Func = Class->GetFunction("WBP_PalExpedition_C", "UpdateSelectedPalListForClientByInstanceId_Remove");
 
-	Params::WBP_PalExpedition_C_BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_11_OnClickedAssignedPalPanel__DelegateSignature Parms{};
+	Params::WBP_PalExpedition_C_UpdateSelectedPalListForClientByInstanceId_Remove Parms{};
 
-	Parms.Widget = Widget;
+	Parms.InstanceId = std::move(InstanceId);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalExpedition.WBP_PalExpedition_C.BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_12_OnHoveredCharacterSlot__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_PalExpedition.WBP_PalExpedition_C.UpdateSelectedPalListForClientByInstanceId_Add
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const struct FPalInstanceID&            InstanceId                                             (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void UWBP_PalExpedition_C::BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_12_OnHoveredCharacterSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget)
+void UWBP_PalExpedition_C::UpdateSelectedPalListForClientByInstanceId_Add(const struct FPalInstanceID& InstanceId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_12_OnHoveredCharacterSlot__DelegateSignature");
+		Func = Class->GetFunction("WBP_PalExpedition_C", "UpdateSelectedPalListForClientByInstanceId_Add");
 
-	Params::WBP_PalExpedition_C_BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_12_OnHoveredCharacterSlot__DelegateSignature Parms{};
+	Params::WBP_PalExpedition_C_UpdateSelectedPalListForClientByInstanceId_Add Parms{};
 
-	Parms.Widget = Widget;
+	Parms.InstanceId = std::move(InstanceId);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalExpedition.WBP_PalExpedition_C.BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_13_OnUnhoveredCharacterSlot__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_PalExpedition_C::BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_13_OnUnhoveredCharacterSlot__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_13_OnUnhoveredCharacterSlot__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalExpedition.WBP_PalExpedition_C.BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_14_OnClickedStartMissionButton__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_PalExpedition_C::BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_14_OnClickedStartMissionButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_14_OnClickedStartMissionButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalExpedition.WBP_PalExpedition_C.BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_1_OnClickedEndExcludeSettingsButton__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_PalExpedition_C::BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_1_OnClickedEndExcludeSettingsButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_1_OnClickedEndExcludeSettingsButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalExpedition.WBP_PalExpedition_C.BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_2_OnClickedMissionPanel__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_PalExpedition.WBP_PalExpedition_C.UpdateSelectedPalListForClient_Remove
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWBP_Expedition_StageList_C*      Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const struct FPalUIMapObjectCharacterTeamMissionIndividual&AssignInfo                                             (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_PalExpedition_C::BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_2_OnClickedMissionPanel__DelegateSignature(class UWBP_Expedition_StageList_C* Widget)
+void UWBP_PalExpedition_C::UpdateSelectedPalListForClient_Remove(const struct FPalUIMapObjectCharacterTeamMissionIndividual& AssignInfo)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_2_OnClickedMissionPanel__DelegateSignature");
+		Func = Class->GetFunction("WBP_PalExpedition_C", "UpdateSelectedPalListForClient_Remove");
 
-	Params::WBP_PalExpedition_C_BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_2_OnClickedMissionPanel__DelegateSignature Parms{};
+	Params::WBP_PalExpedition_C_UpdateSelectedPalListForClient_Remove Parms{};
 
-	Parms.Widget = Widget;
+	Parms.AssignInfo = std::move(AssignInfo);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalExpedition.WBP_PalExpedition_C.BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_6_OnClickedCloseButton__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_PalExpedition.WBP_PalExpedition_C.UpdateSelectedPalListForClient_Add
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FPalUIMapObjectCharacterTeamMissionIndividual&AssignInfo                                             (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_PalExpedition_C::BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_6_OnClickedCloseButton__DelegateSignature()
+void UWBP_PalExpedition_C::UpdateSelectedPalListForClient_Add(const struct FPalUIMapObjectCharacterTeamMissionIndividual& AssignInfo)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_6_OnClickedCloseButton__DelegateSignature");
+		Func = Class->GetFunction("WBP_PalExpedition_C", "UpdateSelectedPalListForClient_Add");
+
+	Params::WBP_PalExpedition_C_UpdateSelectedPalListForClient_Add Parms{};
+
+	Parms.AssignInfo = std::move(AssignInfo);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalExpedition.WBP_PalExpedition_C.UnregistSlotInputAction
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalExpedition_C::UnregistSlotInputAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalExpedition_C", "UnregistSlotInputAction");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalExpedition.WBP_PalExpedition_C.BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_7_OnClickedCharacterSlot__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_PalExpedition.WBP_PalExpedition_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalExpedition_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalExpedition_C", "Tick");
+
+	Params::WBP_PalExpedition_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalExpedition.WBP_PalExpedition_C.Setup_Internal
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalExpedition_C::Setup_Internal()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalExpedition_C", "Setup_Internal");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalExpedition.WBP_PalExpedition_C.Setup
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalExpedition_C::Setup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalExpedition_C", "Setup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalExpedition.WBP_PalExpedition_C.RegistSlotInputAction
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalExpedition_C::RegistSlotInputAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalExpedition_C", "RegistSlotInputAction");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalExpedition.WBP_PalExpedition_C.OnTab
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalExpedition_C::OnTab()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalExpedition_C", "OnTab");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalExpedition.WBP_PalExpedition_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalExpedition_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalExpedition_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalExpedition.WBP_PalExpedition_C.OnClickedSlot_ExcludeChaarcter
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UWBP_PalCharacterSlotButtonBase_C*SlotButton                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalExpedition_C::BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_7_OnClickedCharacterSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* SlotButton)
+void UWBP_PalExpedition_C::OnClickedSlot_ExcludeChaarcter(class UWBP_PalCharacterSlotButtonBase_C* SlotButton)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_7_OnClickedCharacterSlot__DelegateSignature");
+		Func = Class->GetFunction("WBP_PalExpedition_C", "OnClickedSlot_ExcludeChaarcter");
 
-	Params::WBP_PalExpedition_C_BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_7_OnClickedCharacterSlot__DelegateSignature Parms{};
+	Params::WBP_PalExpedition_C_OnClickedSlot_ExcludeChaarcter Parms{};
 
 	Parms.SlotButton = SlotButton;
 
@@ -181,133 +223,97 @@ void UWBP_PalExpedition_C::BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_Compo
 }
 
 
-// Function WBP_PalExpedition.WBP_PalExpedition_C.BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_8_OnClickedReturnMissionSelectButton__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_PalExpedition_C::BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_8_OnClickedReturnMissionSelectButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_8_OnClickedReturnMissionSelectButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalExpedition.WBP_PalExpedition_C.BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_9_OnClickedAutoSelectButton__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_PalExpedition_C::BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_9_OnClickedAutoSelectButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_9_OnClickedAutoSelectButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalExpedition.WBP_PalExpedition_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PalExpedition_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalExpedition.WBP_PalExpedition_C.ExecuteUbergraph_WBP_PalExpedition
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_PalExpedition.WBP_PalExpedition_C.OnClickedSlot_AssignCharacter
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWBP_PalCharacterSlotButtonBase_C*SlotButton                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalExpedition_C::ExecuteUbergraph_WBP_PalExpedition(int32 EntryPoint)
+void UWBP_PalExpedition_C::OnClickedSlot_AssignCharacter(class UWBP_PalCharacterSlotButtonBase_C* SlotButton)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "ExecuteUbergraph_WBP_PalExpedition");
+		Func = Class->GetFunction("WBP_PalExpedition_C", "OnClickedSlot_AssignCharacter");
 
-	Params::WBP_PalExpedition_C_ExecuteUbergraph_WBP_PalExpedition Parms{};
+	Params::WBP_PalExpedition_C_OnClickedSlot_AssignCharacter Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.SlotButton = SlotButton;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalExpedition.WBP_PalExpedition_C.Finalize
+// Function WBP_PalExpedition.WBP_PalExpedition_C.OnChangedState
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const EPalMapObjectCharacterTeamMissionStateLastState                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const EPalMapObjectCharacterTeamMissionStateCurrentState                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalExpedition_C::OnChangedState(const EPalMapObjectCharacterTeamMissionState LastState, const EPalMapObjectCharacterTeamMissionState CurrentState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalExpedition_C", "OnChangedState");
+
+	Params::WBP_PalExpedition_C_OnChangedState Parms{};
+
+	Parms.LastState = LastState;
+	Parms.CurrentState = CurrentState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalExpedition.WBP_PalExpedition_C.OnChangedMission
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalUIMapObjectCharacterTeamMissionModel*Model                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalExpedition_C::OnChangedMission(class UPalUIMapObjectCharacterTeamMissionModel* Model)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalExpedition_C", "OnChangedMission");
+
+	Params::WBP_PalExpedition_C_OnChangedMission Parms{};
+
+	Parms.Model = Model;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalExpedition.WBP_PalExpedition_C.OnChangedAssignInfo
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalUIMapObjectCharacterTeamMissionModel*Model                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalExpedition_C::OnChangedAssignInfo(class UPalUIMapObjectCharacterTeamMissionModel* Model)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalExpedition_C", "OnChangedAssignInfo");
+
+	Params::WBP_PalExpedition_C_OnChangedAssignInfo Parms{};
+
+	Parms.Model = Model;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalExpedition.WBP_PalExpedition_C.OnCancelAction
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalExpedition_C::Finalize()
+void UWBP_PalExpedition_C::OnCancelAction()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "Finalize");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalExpedition.WBP_PalExpedition_C.GetModel
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UPalUIMapObjectCharacterTeamMissionModel**Model                                                  (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalExpedition_C::GetModel(class UPalUIMapObjectCharacterTeamMissionModel** Model)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "GetModel");
-
-	Params::WBP_PalExpedition_C_GetModel Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Model != nullptr)
-		*Model = Parms.Model;
-}
-
-
-// Function WBP_PalExpedition.WBP_PalExpedition_C.IsMaxAssigned
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// bool*                                   BMax                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalExpedition_C::IsMaxAssigned(bool* BMax)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "IsMaxAssigned");
-
-	Params::WBP_PalExpedition_C_IsMaxAssigned Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (BMax != nullptr)
-		*BMax = Parms.BMax;
-}
-
-
-// Function WBP_PalExpedition.WBP_PalExpedition_C.On Favorite Shortcut
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalExpedition_C::On_Favorite_Shortcut()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "On Favorite Shortcut");
+		Func = Class->GetFunction("WBP_PalExpedition_C", "OnCancelAction");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -338,305 +344,299 @@ struct FEventReply UWBP_PalExpedition_C::OnAnalogValueChanged(const struct FGeom
 }
 
 
-// Function WBP_PalExpedition.WBP_PalExpedition_C.OnCancelAction
+// Function WBP_PalExpedition.WBP_PalExpedition_C.On Favorite Shortcut
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalExpedition_C::OnCancelAction()
+void UWBP_PalExpedition_C::On_Favorite_Shortcut()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "OnCancelAction");
+		Func = Class->GetFunction("WBP_PalExpedition_C", "On Favorite Shortcut");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalExpedition.WBP_PalExpedition_C.OnChangedAssignInfo
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalExpedition.WBP_PalExpedition_C.IsMaxAssigned
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UPalUIMapObjectCharacterTeamMissionModel*Model                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool*                                   BMax                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalExpedition_C::OnChangedAssignInfo(class UPalUIMapObjectCharacterTeamMissionModel* Model)
+void UWBP_PalExpedition_C::IsMaxAssigned(bool* BMax)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "OnChangedAssignInfo");
+		Func = Class->GetFunction("WBP_PalExpedition_C", "IsMaxAssigned");
 
-	Params::WBP_PalExpedition_C_OnChangedAssignInfo Parms{};
-
-	Parms.Model = Model;
+	Params::WBP_PalExpedition_C_IsMaxAssigned Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (BMax != nullptr)
+		*BMax = Parms.BMax;
 }
 
 
-// Function WBP_PalExpedition.WBP_PalExpedition_C.OnChangedMission
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalExpedition.WBP_PalExpedition_C.GetModel
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UPalUIMapObjectCharacterTeamMissionModel*Model                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalUIMapObjectCharacterTeamMissionModel**Model                                                  (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalExpedition_C::OnChangedMission(class UPalUIMapObjectCharacterTeamMissionModel* Model)
+void UWBP_PalExpedition_C::GetModel(class UPalUIMapObjectCharacterTeamMissionModel** Model)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "OnChangedMission");
+		Func = Class->GetFunction("WBP_PalExpedition_C", "GetModel");
 
-	Params::WBP_PalExpedition_C_OnChangedMission Parms{};
-
-	Parms.Model = Model;
+	Params::WBP_PalExpedition_C_GetModel Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (Model != nullptr)
+		*Model = Parms.Model;
 }
 
 
-// Function WBP_PalExpedition.WBP_PalExpedition_C.OnChangedState
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const EPalMapObjectCharacterTeamMissionStateLastState                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const EPalMapObjectCharacterTeamMissionStateCurrentState                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalExpedition_C::OnChangedState(const EPalMapObjectCharacterTeamMissionState LastState, const EPalMapObjectCharacterTeamMissionState CurrentState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "OnChangedState");
-
-	Params::WBP_PalExpedition_C_OnChangedState Parms{};
-
-	Parms.LastState = LastState;
-	Parms.CurrentState = CurrentState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalExpedition.WBP_PalExpedition_C.OnClickedSlot_AssignCharacter
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*SlotButton                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalExpedition_C::OnClickedSlot_AssignCharacter(class UWBP_PalCharacterSlotButtonBase_C* SlotButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "OnClickedSlot_AssignCharacter");
-
-	Params::WBP_PalExpedition_C_OnClickedSlot_AssignCharacter Parms{};
-
-	Parms.SlotButton = SlotButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalExpedition.WBP_PalExpedition_C.OnClickedSlot_ExcludeChaarcter
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*SlotButton                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalExpedition_C::OnClickedSlot_ExcludeChaarcter(class UWBP_PalCharacterSlotButtonBase_C* SlotButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "OnClickedSlot_ExcludeChaarcter");
-
-	Params::WBP_PalExpedition_C_OnClickedSlot_ExcludeChaarcter Parms{};
-
-	Parms.SlotButton = SlotButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalExpedition.WBP_PalExpedition_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalExpedition_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalExpedition.WBP_PalExpedition_C.OnTab
+// Function WBP_PalExpedition.WBP_PalExpedition_C.Finalize
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalExpedition_C::OnTab()
+void UWBP_PalExpedition_C::Finalize()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "OnTab");
+		Func = Class->GetFunction("WBP_PalExpedition_C", "Finalize");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalExpedition.WBP_PalExpedition_C.RegistSlotInputAction
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalExpedition.WBP_PalExpedition_C.ExecuteUbergraph_WBP_PalExpedition
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalExpedition_C::RegistSlotInputAction()
+void UWBP_PalExpedition_C::ExecuteUbergraph_WBP_PalExpedition(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "RegistSlotInputAction");
+		Func = Class->GetFunction("WBP_PalExpedition_C", "ExecuteUbergraph_WBP_PalExpedition");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_PalExpedition_C_ExecuteUbergraph_WBP_PalExpedition Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalExpedition.WBP_PalExpedition_C.Setup
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalExpedition_C::Setup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "Setup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalExpedition.WBP_PalExpedition_C.Setup_Internal
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalExpedition_C::Setup_Internal()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "Setup_Internal");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalExpedition.WBP_PalExpedition_C.Tick
+// Function WBP_PalExpedition.WBP_PalExpedition_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalExpedition_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+void UWBP_PalExpedition_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "Tick");
-
-	Params::WBP_PalExpedition_C_Tick Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalExpedition.WBP_PalExpedition_C.UnregistSlotInputAction
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalExpedition_C::UnregistSlotInputAction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "UnregistSlotInputAction");
+		Func = Class->GetFunction("WBP_PalExpedition_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalExpedition.WBP_PalExpedition_C.UpdateSelectedPalListForClient_Add
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalUIMapObjectCharacterTeamMissionIndividual&AssignInfo                                             (BlueprintVisible, BlueprintReadOnly, Parm)
+// Function WBP_PalExpedition.WBP_PalExpedition_C.BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_9_OnClickedAutoSelectButton__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_PalExpedition_C::UpdateSelectedPalListForClient_Add(const struct FPalUIMapObjectCharacterTeamMissionIndividual& AssignInfo)
+void UWBP_PalExpedition_C::BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_9_OnClickedAutoSelectButton__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "UpdateSelectedPalListForClient_Add");
+		Func = Class->GetFunction("WBP_PalExpedition_C", "BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_9_OnClickedAutoSelectButton__DelegateSignature");
 
-	Params::WBP_PalExpedition_C_UpdateSelectedPalListForClient_Add Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.AssignInfo = std::move(AssignInfo);
+
+// Function WBP_PalExpedition.WBP_PalExpedition_C.BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_8_OnClickedReturnMissionSelectButton__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_PalExpedition_C::BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_8_OnClickedReturnMissionSelectButton__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalExpedition_C", "BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_8_OnClickedReturnMissionSelectButton__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalExpedition.WBP_PalExpedition_C.BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_7_OnClickedCharacterSlot__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UWBP_PalCharacterSlotButtonBase_C*SlotButton                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalExpedition_C::BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_7_OnClickedCharacterSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* SlotButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalExpedition_C", "BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_7_OnClickedCharacterSlot__DelegateSignature");
+
+	Params::WBP_PalExpedition_C_BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_7_OnClickedCharacterSlot__DelegateSignature Parms{};
+
+	Parms.SlotButton = SlotButton;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalExpedition.WBP_PalExpedition_C.UpdateSelectedPalListForClient_Remove
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalUIMapObjectCharacterTeamMissionIndividual&AssignInfo                                             (BlueprintVisible, BlueprintReadOnly, Parm)
+// Function WBP_PalExpedition.WBP_PalExpedition_C.BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_6_OnClickedCloseButton__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_PalExpedition_C::UpdateSelectedPalListForClient_Remove(const struct FPalUIMapObjectCharacterTeamMissionIndividual& AssignInfo)
+void UWBP_PalExpedition_C::BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_6_OnClickedCloseButton__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "UpdateSelectedPalListForClient_Remove");
+		Func = Class->GetFunction("WBP_PalExpedition_C", "BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_6_OnClickedCloseButton__DelegateSignature");
 
-	Params::WBP_PalExpedition_C_UpdateSelectedPalListForClient_Remove Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.AssignInfo = std::move(AssignInfo);
+
+// Function WBP_PalExpedition.WBP_PalExpedition_C.BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_2_OnClickedMissionPanel__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UWBP_Expedition_StageList_C*      Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalExpedition_C::BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_2_OnClickedMissionPanel__DelegateSignature(class UWBP_Expedition_StageList_C* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalExpedition_C", "BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_2_OnClickedMissionPanel__DelegateSignature");
+
+	Params::WBP_PalExpedition_C_BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_2_OnClickedMissionPanel__DelegateSignature Parms{};
+
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalExpedition.WBP_PalExpedition_C.UpdateSelectedPalListForClientByInstanceId_Add
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalInstanceID&            InstanceId                                             (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// Function WBP_PalExpedition.WBP_PalExpedition_C.BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_1_OnClickedEndExcludeSettingsButton__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_PalExpedition_C::UpdateSelectedPalListForClientByInstanceId_Add(const struct FPalInstanceID& InstanceId)
+void UWBP_PalExpedition_C::BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_1_OnClickedEndExcludeSettingsButton__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "UpdateSelectedPalListForClientByInstanceId_Add");
+		Func = Class->GetFunction("WBP_PalExpedition_C", "BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_1_OnClickedEndExcludeSettingsButton__DelegateSignature");
 
-	Params::WBP_PalExpedition_C_UpdateSelectedPalListForClientByInstanceId_Add Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.InstanceId = std::move(InstanceId);
+
+// Function WBP_PalExpedition.WBP_PalExpedition_C.BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_14_OnClickedStartMissionButton__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_PalExpedition_C::BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_14_OnClickedStartMissionButton__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalExpedition_C", "BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_14_OnClickedStartMissionButton__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalExpedition.WBP_PalExpedition_C.BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_13_OnUnhoveredCharacterSlot__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_PalExpedition_C::BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_13_OnUnhoveredCharacterSlot__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalExpedition_C", "BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_13_OnUnhoveredCharacterSlot__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalExpedition.WBP_PalExpedition_C.BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_12_OnHoveredCharacterSlot__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UWBP_PalCharacterSlotButtonBase_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalExpedition_C::BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_12_OnHoveredCharacterSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalExpedition_C", "BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_12_OnHoveredCharacterSlot__DelegateSignature");
+
+	Params::WBP_PalExpedition_C_BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_12_OnHoveredCharacterSlot__DelegateSignature Parms{};
+
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalExpedition.WBP_PalExpedition_C.UpdateSelectedPalListForClientByInstanceId_Remove
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalExpedition.WBP_PalExpedition_C.BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_11_OnClickedAssignedPalPanel__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// const struct FPalInstanceID&            InstanceId                                             (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// class UWBP_Expedition_PalList_C*        Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalExpedition_C::UpdateSelectedPalListForClientByInstanceId_Remove(const struct FPalInstanceID& InstanceId)
+void UWBP_PalExpedition_C::BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_11_OnClickedAssignedPalPanel__DelegateSignature(class UWBP_Expedition_PalList_C* Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalExpedition_C", "UpdateSelectedPalListForClientByInstanceId_Remove");
+		Func = Class->GetFunction("WBP_PalExpedition_C", "BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_11_OnClickedAssignedPalPanel__DelegateSignature");
 
-	Params::WBP_PalExpedition_C_UpdateSelectedPalListForClientByInstanceId_Remove Parms{};
+	Params::WBP_PalExpedition_C_BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_11_OnClickedAssignedPalPanel__DelegateSignature Parms{};
 
-	Parms.InstanceId = std::move(InstanceId);
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalExpedition.WBP_PalExpedition_C.BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_10_OnClickedAllUnassignButton__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_PalExpedition_C::BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_10_OnClickedAllUnassignButton__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalExpedition_C", "BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_10_OnClickedAllUnassignButton__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalExpedition.WBP_PalExpedition_C.BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_0_OnClickedStartExcludeSettingsButton__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_PalExpedition_C::BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_0_OnClickedStartExcludeSettingsButton__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalExpedition_C", "BndEvt__WBP_PalExpedition_WBP_Expedition_K2Node_ComponentBoundEvent_0_OnClickedStartExcludeSettingsButton__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

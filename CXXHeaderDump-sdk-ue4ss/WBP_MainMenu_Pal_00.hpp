@@ -113,21 +113,21 @@ class UWBP_MainMenu_Pal_00_C : public UWBP_IndividualParameterBindWidget_C
     class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Work;                     // 0x09B0 (size: 0x8)
     class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon;                                // 0x09B8 (size: 0x8)
     class UWBP_StatusBuffTimerContainer_C* WBP_StatusBuffTimerContainer;              // 0x09C0 (size: 0x8)
-    TArray<class UWBP_Menu_PalList_C*> PalPanels;                                     // 0x09C8 (size: 0x10)
+    TArray<UWBP_Menu_PalList_C*> PalPanels;                                           // 0x09C8 (size: 0x10)
     FWBP_MainMenu_Pal_00_COnClickedAnyPalPanel OnClickedAnyPalPanel;                  // 0x09D8 (size: 0x10)
     void OnClickedAnyPalPanel(class UPalIndividualCharacterHandle* Handle);
     FWBP_MainMenu_Pal_00_COnHoveredAnyPalPanel OnHoveredAnyPalPanel;                  // 0x09E8 (size: 0x10)
     void OnHoveredAnyPalPanel(class UPalIndividualCharacterHandle* Handle);
     bool isShowStatusWithList;                                                        // 0x09F8 (size: 0x1)
-    TArray<class UWBP_MainMenu_Pal_Skill_Active_C*> ActiveSkillPanelArray;            // 0x0A00 (size: 0x10)
-    TArray<class UWBP_MainMenu_Pal_Skill_Passive_C*> PassiveSkillPanelArray;          // 0x0A10 (size: 0x10)
+    TArray<UWBP_MainMenu_Pal_Skill_Active_C*> ActiveSkillPanelArray;                  // 0x0A00 (size: 0x10)
+    TArray<UWBP_MainMenu_Pal_Skill_Passive_C*> PassiveSkillPanelArray;                // 0x0A10 (size: 0x10)
     FWBP_MainMenu_Pal_00_COnUnhoveredAnyPalPanel OnUnhoveredAnyPalPanel;              // 0x0A20 (size: 0x10)
     void OnUnhoveredAnyPalPanel();
     FWBP_MainMenu_Pal_00_COnCommitedNickName OnCommitedNickName;                      // 0x0A30 (size: 0x10)
     void OnCommitedNickName(FText NewNickName);
     FWBP_MainMenu_Pal_00_COnChangedNickname OnChangedNickname;                        // 0x0A40 (size: 0x10)
     void OnChangedNickname(FText editingNickName);
-    TArray<class UWBP_MainMenu_Pal_State_C*> ConditionWidgetArray;                    // 0x0A50 (size: 0x10)
+    TArray<UWBP_MainMenu_Pal_State_C*> ConditionWidgetArray;                          // 0x0A50 (size: 0x10)
     FDataTableRowHandle HPParameterTitleMsgID;                                        // 0x0A60 (size: 0x10)
     FDataTableRowHandle HPParameterDescMsgID;                                         // 0x0A70 (size: 0x10)
     FDataTableRowHandle HungerParameterTitleMsgID;                                    // 0x0A80 (size: 0x10)
@@ -135,14 +135,14 @@ class UWBP_MainMenu_Pal_00_C : public UWBP_IndividualParameterBindWidget_C
     FDataTableRowHandle SanityParameterTitleMsgID;                                    // 0x0AA0 (size: 0x10)
     FDataTableRowHandle SanityParameterDescMsgID;                                     // 0x0AB0 (size: 0x10)
     FDataTableRowHandle GenusCategoryDescMsgID;                                       // 0x0AC0 (size: 0x10)
-    TArray<class UWBP_MainMenu_Pal_State_C*> SindeInfoConditionWidgetArray;           // 0x0AD0 (size: 0x10)
+    TArray<UWBP_MainMenu_Pal_State_C*> SindeInfoConditionWidgetArray;                 // 0x0AD0 (size: 0x10)
     FDataTableRowHandle NoPalMsgID;                                                   // 0x0AE0 (size: 0x10)
     FWBP_MainMenu_Pal_00_COnSelectedChangeActiveSkill OnSelectedChangeActiveSkill;    // 0x0AF0 (size: 0x10)
     void OnSelectedChangeActiveSkill(class UPalIndividualCharacterHandle* targetHandle, EPalWazaID changeWazaID, EPalWazaID newWazaID);
     FDataTableRowHandle SkillUnlockMsgID;                                             // 0x0B00 (size: 0x10)
     class UPalIndividualCharacterHandle* CachedIndividualHandle;                      // 0x0B10 (size: 0x8)
     class UWBP_MainMenu_Pal_Skill_Active_C* LastSelectedSkillPanel;                   // 0x0B18 (size: 0x8)
-    TArray<class UWBP_MainMenu_PalRarityStar_C*> RarityWidgetArray;                   // 0x0B20 (size: 0x10)
+    TArray<UWBP_MainMenu_PalRarityStar_C*> RarityWidgetArray;                         // 0x0B20 (size: 0x10)
     FDataTableRowHandle PartnerSkillLockMsgID;                                        // 0x0B30 (size: 0x10)
     FDataTableRowHandle DefTitleMsgID;                                                // 0x0B40 (size: 0x10)
     FDataTableRowHandle DefDescMsgID;                                                 // 0x0B50 (size: 0x10)
@@ -164,7 +164,7 @@ class UWBP_MainMenu_Pal_00_C : public UWBP_IndividualParameterBindWidget_C
     FDataTableRowHandle FriendShipMsgID;                                              // 0x0C00 (size: 0x10)
     FDataTableRowHandle FriendShipDescMsgID;                                          // 0x0C10 (size: 0x10)
     FDataTableRowHandle CannotChangeActiveSkillMsgID;                                 // 0x0C20 (size: 0x10)
-    TMap<class EPalWorkSuitability, class UWBP_MainMenu_Pal_WorkIconText_C*> SuitabilityWidgetMap; // 0x0C30 (size: 0x50)
+    TMap<EPalWorkSuitability, UWBP_MainMenu_Pal_WorkIconText_C*> SuitabilityWidgetMap; // 0x0C30 (size: 0x50)
 
     void SetAwakening(bool bAwaked);
     void OnClosedCannotChangeActiveSkillDialog(bool bResult);
@@ -229,7 +229,7 @@ class UWBP_MainMenu_Pal_00_C : public UWBP_IndividualParameterBindWidget_C
     void FocusToSkillPanel();
     void FocusToPalPanel(int32 Index);
     void Setup Status(class UPalIndividualCharacterHandle* Handle);
-    void Set Pal Handles(TArray<class UPalIndividualCharacterHandle*>& Handles);
+    void Set Pal Handles(TArray<UPalIndividualCharacterHandle*>& Handles);
     void OnHoveredActiveSkillButtonEvent(class UWBP_MainMenu_Pal_Skill_Active_C* SelfWidget);
     void Finished_3B3110DC440BFBD5CFED78B55117839E();
     void Finished_F11D370F4605F1875DFE3B9E5A74FBB3();

@@ -20,7 +20,7 @@ class UWBP_Buildup_Pal_Status_C : public UUserWidget
     class UWBP_Buildup_Pal_StatusContent_C* WBP_Buildup_Pal_StatusContent_2;          // 0x02E8 (size: 0x8)
     class UWBP_Buildup_Pal_StatusContent_C* WBP_Buildup_Pal_StatusContent_3;          // 0x02F0 (size: 0x8)
     class UWBP_CommonButton_C* WBP_CommonButton;                                      // 0x02F8 (size: 0x8)
-    TArray<class UWBP_Buildup_Pal_StatusContent_C*> StatusContents;                   // 0x0300 (size: 0x10)
+    TArray<UWBP_Buildup_Pal_StatusContent_C*> StatusContents;                         // 0x0300 (size: 0x10)
     TMap<EPalCharacterStatusOperationName, int32> TargetStatusRankMap;                // 0x0310 (size: 0x50)
     FDataTableRowHandle RankupMsgId;                                                  // 0x0360 (size: 0x10)
     FDataTableRowHandle ResetMsgId;                                                   // 0x0370 (size: 0x10)
@@ -31,7 +31,7 @@ class UWBP_Buildup_Pal_Status_C : public UUserWidget
     void InvokeRankup(TMap<EPalCharacterStatusOperationName, int32> Status);
     bool BlockInvoke;                                                                 // 0x03C0 (size: 0x1)
     bool Is Upgrade;                                                                  // 0x03C1 (size: 0x1)
-    TArray<class UWBP_Buildup_Pal_Item_C*> Upgrade Items;                             // 0x03C8 (size: 0x10)
+    TArray<UWBP_Buildup_Pal_Item_C*> Upgrade Items;                                   // 0x03C8 (size: 0x10)
     int32 RequiredMoney;                                                              // 0x03D8 (size: 0x4)
     FWBP_Buildup_Pal_Status_CInvokeReset InvokeReset;                                 // 0x03E0 (size: 0x10)
     void InvokeReset();

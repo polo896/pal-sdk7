@@ -19,7 +19,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_PalSphere.BP_PalSphere_C
 // 0x0008 (0x06C0 - 0x06B8)
-class ABP_PalSphere_C : public ABP_CapturePrism_C
+class ABP_PalSphere_C final : public ABP_CapturePrism_C
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_PalSphere_C;                     // 0x06B8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

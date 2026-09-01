@@ -28,9 +28,9 @@ public:
 	class UBP_PalTextBlock_C*                     BP_PalTextBlock_PalCount;                          // 0x0290(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Arena_PalSelect_Ready(int32 EntryPoint);
-	void Ready();
 	void SetPalCount(int32 Current, int32 Max);
+	void Ready();
+	void ExecuteUbergraph_WBP_Arena_PalSelect_Ready(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

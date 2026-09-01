@@ -14,6 +14,24 @@
 namespace SDK::Params
 {
 
+// Function WBP_EnemyMark.WBP_EnemyMark_C.カスタムイベント_1
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_EnemyMark_C_カスタムイベント_1 final
+{
+public:
+	class APalCharacter*                          TargetCharacter;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_EnemyMark_C_カスタムイベント_1;
+
+// Function WBP_EnemyMark.WBP_EnemyMark_C.カスタムイベント_0
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_EnemyMark_C_カスタムイベント_0 final
+{
+public:
+	class APalCharacter*                          TargetCharacter;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_EnemyMark_C_カスタムイベント_0;
+
 // Function WBP_EnemyMark.WBP_EnemyMark_C.ExecuteUbergraph_WBP_EnemyMark
 // 0x0150 (0x0150 - 0x0000)
 struct WBP_EnemyMark_C_ExecuteUbergraph_WBP_EnemyMark final
@@ -62,24 +80,6 @@ public:
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_1;                   // 0x0148(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_EnemyMark_C_ExecuteUbergraph_WBP_EnemyMark;
-
-// Function WBP_EnemyMark.WBP_EnemyMark_C.カスタムイベント_0
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_EnemyMark_C_カスタムイベント_0 final
-{
-public:
-	class APalCharacter*                          TargetCharacter;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_EnemyMark_C_カスタムイベント_0;
-
-// Function WBP_EnemyMark.WBP_EnemyMark_C.カスタムイベント_1
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_EnemyMark_C_カスタムイベント_1 final
-{
-public:
-	class APalCharacter*                          TargetCharacter;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_EnemyMark_C_カスタムイベント_1;
 
 }
 

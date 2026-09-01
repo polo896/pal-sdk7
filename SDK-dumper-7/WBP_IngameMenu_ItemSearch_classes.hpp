@@ -30,14 +30,14 @@ public:
 	TArray<class FName>                           LegalItemIds;                                      // 0x04A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void BndEvt__WBP_IngameMenu_ItemSearch_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_1_OnRightClickSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType);
-	void BndEvt__WBP_IngameMenu_ItemSearch_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void CreateItemMap();
-	void ExecuteUbergraph_WBP_IngameMenu_ItemSearch(int32 EntryPoint);
-	void OnCancelAction();
-	void OnInitialized();
-	void OnSetup();
 	void Setup();
+	void OnSetup();
+	void OnInitialized();
+	void OnCancelAction();
+	void ExecuteUbergraph_WBP_IngameMenu_ItemSearch(int32 EntryPoint);
+	void CreateItemMap();
+	void BndEvt__WBP_IngameMenu_ItemSearch_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
+	void BndEvt__WBP_IngameMenu_ItemSearch_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_1_OnRightClickSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType);
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

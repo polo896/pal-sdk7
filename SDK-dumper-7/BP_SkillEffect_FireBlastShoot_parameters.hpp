@@ -14,6 +14,24 @@
 namespace SDK::Params
 {
 
+// Function BP_SkillEffect_FireBlastShoot.BP_SkillEffect_FireBlastShoot_C.OnSystemFinished_イベント_0
+// 0x0008 (0x0008 - 0x0000)
+struct BP_SkillEffect_FireBlastShoot_C_OnSystemFinished_イベント_0 final
+{
+public:
+	class UParticleSystemComponent*               PSystem;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SkillEffect_FireBlastShoot_C_OnSystemFinished_イベント_0;
+
+// Function BP_SkillEffect_FireBlastShoot.BP_SkillEffect_FireBlastShoot_C.OnDestroyed_イベント_0
+// 0x0008 (0x0008 - 0x0000)
+struct BP_SkillEffect_FireBlastShoot_C_OnDestroyed_イベント_0 final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SkillEffect_FireBlastShoot_C_OnDestroyed_イベント_0;
+
 // Function BP_SkillEffect_FireBlastShoot.BP_SkillEffect_FireBlastShoot_C.ExecuteUbergraph_BP_SkillEffect_FireBlastShoot
 // 0x0018 (0x0018 - 0x0000)
 struct BP_SkillEffect_FireBlastShoot_C_ExecuteUbergraph_BP_SkillEffect_FireBlastShoot final
@@ -25,24 +43,6 @@ public:
 	class UParticleSystemComponent*               K2Node_CustomEvent_PSystem;                        // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_SkillEffect_FireBlastShoot_C_ExecuteUbergraph_BP_SkillEffect_FireBlastShoot;
-
-// Function BP_SkillEffect_FireBlastShoot.BP_SkillEffect_FireBlastShoot_C.OnDestroyed_イベント_0
-// 0x0008 (0x0008 - 0x0000)
-struct BP_SkillEffect_FireBlastShoot_C_OnDestroyed_イベント_0 final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_SkillEffect_FireBlastShoot_C_OnDestroyed_イベント_0;
-
-// Function BP_SkillEffect_FireBlastShoot.BP_SkillEffect_FireBlastShoot_C.OnSystemFinished_イベント_0
-// 0x0008 (0x0008 - 0x0000)
-struct BP_SkillEffect_FireBlastShoot_C_OnSystemFinished_イベント_0 final
-{
-public:
-	class UParticleSystemComponent*               PSystem;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_SkillEffect_FireBlastShoot_C_OnSystemFinished_イベント_0;
 
 }
 

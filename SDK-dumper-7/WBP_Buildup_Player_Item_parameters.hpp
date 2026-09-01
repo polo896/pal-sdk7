@@ -16,27 +16,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_Buildup_Player_Item.WBP_Buildup_Player_Item_C.DisplayCurrentRelicCount
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Buildup_Player_Item_C_DisplayCurrentRelicCount final
-{
-public:
-	class UPalPlayerRecordData*                   CallFunc_GetLocalRecordData_ReturnValue;           // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetRelicPossessNumByType_ReturnValue;     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Buildup_Player_Item_C_DisplayCurrentRelicCount;
-
-// Function WBP_Buildup_Player_Item.WBP_Buildup_Player_Item_C.DisplayFIxedRelicCount
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_Buildup_Player_Item_C_DisplayFIxedRelicCount final
-{
-public:
-	int32                                         DisplayCount;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_Buildup_Player_Item_C_DisplayFIxedRelicCount;
-
 // Function WBP_Buildup_Player_Item.WBP_Buildup_Player_Item_C.SetRelicType
 // 0x0030 (0x0030 - 0x0000)
 struct WBP_Buildup_Player_Item_C_SetRelicType final
@@ -53,6 +32,27 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Buildup_Player_Item_C_SetRelicType;
+
+// Function WBP_Buildup_Player_Item.WBP_Buildup_Player_Item_C.DisplayFIxedRelicCount
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_Buildup_Player_Item_C_DisplayFIxedRelicCount final
+{
+public:
+	int32                                         DisplayCount;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_Buildup_Player_Item_C_DisplayFIxedRelicCount;
+
+// Function WBP_Buildup_Player_Item.WBP_Buildup_Player_Item_C.DisplayCurrentRelicCount
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Buildup_Player_Item_C_DisplayCurrentRelicCount final
+{
+public:
+	class UPalPlayerRecordData*                   CallFunc_GetLocalRecordData_ReturnValue;           // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetRelicPossessNumByType_ReturnValue;     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Buildup_Player_Item_C_DisplayCurrentRelicCount;
 
 }
 

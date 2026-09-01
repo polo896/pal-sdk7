@@ -33,37 +33,37 @@ public:
 	bool                                          SwapBlockGlider;                                   // 0x04D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_0_OnClickedItemDrop__DelegateSignature();
-	void BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_10_OnClickedToggleGliderDressing__DelegateSignature();
-	void BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_1_OnClickedItemDestroy__DelegateSignature();
-	void BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_2_OnConfirmStatusPointEdit__DelegateSignature(const TMap<class FName, int32>& PointMap);
-	void BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_3_OnRequestSwapEquipment__DelegateSignature(EPalPlayerEquipItemSlotType EquipType);
-	void BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_4_OnClickedSortButton__DelegateSignature();
-	void BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_5_OnClickedChangePlayerNameButton__DelegateSignature();
-	void BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_6_OnClickQuickStackButton__DelegateSignature(TArray<struct FPalItemSlotId>& SlotIds);
-	void BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_7_OnClickedItemEat__DelegateSignature();
-	void BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_8_OnClickedToggleHeadDressing__DelegateSignature();
-	void BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_9_OnClickedToggleBodyDressing__DelegateSignature();
-	void CancelSimulateStatusPoint();
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_InventoryEquipment_ForDisplay(int32 EntryPoint);
-	void OnCloseChangePlayerNameWindow(class UPalHUDDispatchParameterBase* Param_0);
-	void OnEndGlide();
-	void OnStartGlide();
-	void OnUpdateAnyEquipmentSlot(class UPalItemSlot* itemSlot, EPalPlayerEquipItemSlotType slotType);
-	void OnUpdateInventoryWeight(float NowWeight);
-	void OnUpdateWeaponLoadout(class UPalItemSlot* itemSlot, EPalPlayerInventoryType UpdatedLoadoutType);
-	void OpenNameEditWindow();
-	void PlayChangeEquipmentSound();
-	void PlayUnequipmentSound();
-	void Setup(class UBP_InGameMenuInventoryModel_C* Model_0);
-	void Setup_Static_Input_Action();
-	void ToggleQuickStack();
 	void Try_Start_Simulate_Status_Point();
+	void ToggleQuickStack();
+	void Setup_Static_Input_Action();
+	void Setup(class UBP_InGameMenuInventoryModel_C* Model_0);
+	void PlayUnequipmentSound();
+	void PlayChangeEquipmentSound();
+	void OpenNameEditWindow();
+	void OnUpdateWeaponLoadout(class UPalItemSlot* itemSlot, EPalPlayerInventoryType UpdatedLoadoutType);
+	void OnUpdateInventoryWeight(float NowWeight);
+	void OnUpdateAnyEquipmentSlot(class UPalItemSlot* itemSlot, EPalPlayerEquipItemSlotType slotType);
+	void OnStartGlide();
+	void OnEndGlide();
+	void OnCloseChangePlayerNameWindow(class UPalHUDDispatchParameterBase* Param_0);
+	void ExecuteUbergraph_WBP_InventoryEquipment_ForDisplay(int32 EntryPoint);
+	void Destruct();
+	void Construct();
+	void CancelSimulateStatusPoint();
+	void BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_9_OnClickedToggleBodyDressing__DelegateSignature();
+	void BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_8_OnClickedToggleHeadDressing__DelegateSignature();
+	void BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_7_OnClickedItemEat__DelegateSignature();
+	void BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_6_OnClickQuickStackButton__DelegateSignature(TArray<struct FPalItemSlotId>& SlotIds);
+	void BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_5_OnClickedChangePlayerNameButton__DelegateSignature();
+	void BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_4_OnClickedSortButton__DelegateSignature();
+	void BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_3_OnRequestSwapEquipment__DelegateSignature(EPalPlayerEquipItemSlotType EquipType);
+	void BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_2_OnConfirmStatusPointEdit__DelegateSignature(const TMap<class FName, int32>& PointMap);
+	void BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_1_OnClickedItemDestroy__DelegateSignature();
+	void BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_10_OnClickedToggleGliderDressing__DelegateSignature();
+	void BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_0_OnClickedItemDrop__DelegateSignature();
 
-	class UWidget* BP_GetDesiredFocusTarget() const;
 	void IsSimulatingStatusPoint(bool* IsSimulating) const;
+	class UWidget* BP_GetDesiredFocusTarget() const;
 
 public:
 	static class UClass* StaticClass()

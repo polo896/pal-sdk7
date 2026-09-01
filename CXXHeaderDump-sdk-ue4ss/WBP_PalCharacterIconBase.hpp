@@ -10,10 +10,10 @@ class UWBP_PalCharacterIconBase_C : public UPalUserWidget
     void OnStartLoadTexture();
     FWBP_PalCharacterIconBase_COnSetEmpty OnSetEmpty;                                 // 0x0478 (size: 0x10)
     void OnSetEmpty();
-    TSoftObjectPtr<UPalIndividualCharacterParameter> BindParameter;                   // 0x0488 (size: 0x30)
+    TSoftObjectPtr<class UPalIndividualCharacterParameter> BindParameter;             // 0x0488 (size: 0x30)
 
     void SetupBySaveParameter(FPalIndividualCharacterSaveParameter SaveParam);
-    void SetupBySoftTexture(TSoftObjectPtr<UTexture2D> Texture);
+    void SetupBySoftTexture(TSoftObjectPtr<class UTexture2D> Texture);
     void OnUpdateSkinName(const FName& NewSkinName);
     void UnbindEvent();
     void SetupByParameter(class UPalIndividualCharacterParameter* Parameter);
@@ -21,7 +21,7 @@ class UWBP_PalCharacterIconBase_C : public UPalUserWidget
     void SetEmpty();
     void Setup(FName CharacterID);
     void OnLoaded_2131D8E64037785EDD84EFACA46D7EBC(class UObject* Loaded);
-    void LoadIconEvent_Internal(TSoftObjectPtr<UTexture2D> SoftTexture);
+    void LoadIconEvent_Internal(TSoftObjectPtr<class UTexture2D> SoftTexture);
     void Destruct();
     void ExecuteUbergraph_WBP_PalCharacterIconBase(int32 EntryPoint);
     void OnSetEmpty__DelegateSignature();

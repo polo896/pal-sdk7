@@ -30,9 +30,9 @@ public:
 	double                                        CachedWeightRate;                                  // 0x02A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_WeightNotice(int32 EntryPoint);
-	void UpdateVisibility();
 	void UpdateWeight(double NowWeight, double MaxWeight);
+	void UpdateVisibility();
+	void ExecuteUbergraph_WBP_WeightNotice(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

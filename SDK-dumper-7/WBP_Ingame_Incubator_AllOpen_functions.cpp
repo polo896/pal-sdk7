@@ -17,153 +17,29 @@
 namespace SDK
 {
 
-// Function WBP_Ingame_Incubator_AllOpen.WBP_Ingame_Incubator_AllOpen_C.AnmEvent_Close
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Ingame_Incubator_AllOpen_C::AnmEvent_Close()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_C", "AnmEvent_Close");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Ingame_Incubator_AllOpen.WBP_Ingame_Incubator_AllOpen_C.AnmEvent_Open
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Ingame_Incubator_AllOpen_C::AnmEvent_Open()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_C", "AnmEvent_Open");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Ingame_Incubator_AllOpen.WBP_Ingame_Incubator_AllOpen_C.BndEvt__WBP_Ingame_Incubator_AllOpen_WBP_CommonButton_Close_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Ingame_Incubator_AllOpen_C::BndEvt__WBP_Ingame_Incubator_AllOpen_WBP_CommonButton_Close_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_C", "BndEvt__WBP_Ingame_Incubator_AllOpen_WBP_CommonButton_Close_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Ingame_Incubator_AllOpen.WBP_Ingame_Incubator_AllOpen_C.ExecuteUbergraph_WBP_Ingame_Incubator_AllOpen
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Ingame_Incubator_AllOpen_C::ExecuteUbergraph_WBP_Ingame_Incubator_AllOpen(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_C", "ExecuteUbergraph_WBP_Ingame_Incubator_AllOpen");
-
-	Params::WBP_Ingame_Incubator_AllOpen_C_ExecuteUbergraph_WBP_Ingame_Incubator_AllOpen Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Ingame_Incubator_AllOpen.WBP_Ingame_Incubator_AllOpen_C.Finished_87D9091741F1283AF653F79A16402783
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Ingame_Incubator_AllOpen_C::Finished_87D9091741F1283AF653F79A16402783()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_C", "Finished_87D9091741F1283AF653F79A16402783");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Ingame_Incubator_AllOpen.WBP_Ingame_Incubator_AllOpen_C.OnClose
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_Ingame_Incubator_AllOpen_C::OnClose()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_C", "OnClose");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Ingame_Incubator_AllOpen.WBP_Ingame_Incubator_AllOpen_C.OnHatchedInfoHovered
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Ingame_Incubator_AllOpen_C::OnHatchedInfoHovered(int32 Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_C", "OnHatchedInfoHovered");
-
-	Params::WBP_Ingame_Incubator_AllOpen_C_OnHatchedInfoHovered Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Ingame_Incubator_AllOpen.WBP_Ingame_Incubator_AllOpen_C.OnHatchedInfoUnhovered
+// Function WBP_Ingame_Incubator_AllOpen.WBP_Ingame_Incubator_AllOpen_C.ViewHatchedDetail
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Ingame_Incubator_AllOpen_C::OnHatchedInfoUnhovered()
+void UWBP_Ingame_Incubator_AllOpen_C::ViewHatchedDetail()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_C", "OnHatchedInfoUnhovered");
+		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_C", "ViewHatchedDetail");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Ingame_Incubator_AllOpen.WBP_Ingame_Incubator_AllOpen_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Ingame_Incubator_AllOpen.WBP_Ingame_Incubator_AllOpen_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Ingame_Incubator_AllOpen_C::OnInitialized()
+void UWBP_Ingame_Incubator_AllOpen_C::Setup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Ingame_Incubator_AllOpen.WBP_Ingame_Incubator_AllOpen_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Ingame_Incubator_AllOpen_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_C", "OnSetup");
+		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_C", "Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -191,29 +67,153 @@ void UWBP_Ingame_Incubator_AllOpen_C::OnSyncIndividualParameter(class UPalIndivi
 }
 
 
-// Function WBP_Ingame_Incubator_AllOpen.WBP_Ingame_Incubator_AllOpen_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Ingame_Incubator_AllOpen.WBP_Ingame_Incubator_AllOpen_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Ingame_Incubator_AllOpen_C::Setup()
+void UWBP_Ingame_Incubator_AllOpen_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_C", "Setup");
+		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Ingame_Incubator_AllOpen.WBP_Ingame_Incubator_AllOpen_C.ViewHatchedDetail
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Ingame_Incubator_AllOpen.WBP_Ingame_Incubator_AllOpen_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Ingame_Incubator_AllOpen_C::ViewHatchedDetail()
+void UWBP_Ingame_Incubator_AllOpen_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_C", "ViewHatchedDetail");
+		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Ingame_Incubator_AllOpen.WBP_Ingame_Incubator_AllOpen_C.OnHatchedInfoUnhovered
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Ingame_Incubator_AllOpen_C::OnHatchedInfoUnhovered()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_C", "OnHatchedInfoUnhovered");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Ingame_Incubator_AllOpen.WBP_Ingame_Incubator_AllOpen_C.OnHatchedInfoHovered
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Ingame_Incubator_AllOpen_C::OnHatchedInfoHovered(int32 Index_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_C", "OnHatchedInfoHovered");
+
+	Params::WBP_Ingame_Incubator_AllOpen_C_OnHatchedInfoHovered Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Ingame_Incubator_AllOpen.WBP_Ingame_Incubator_AllOpen_C.OnClose
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_Ingame_Incubator_AllOpen_C::OnClose()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_C", "OnClose");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Ingame_Incubator_AllOpen.WBP_Ingame_Incubator_AllOpen_C.Finished_87D9091741F1283AF653F79A16402783
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Ingame_Incubator_AllOpen_C::Finished_87D9091741F1283AF653F79A16402783()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_C", "Finished_87D9091741F1283AF653F79A16402783");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Ingame_Incubator_AllOpen.WBP_Ingame_Incubator_AllOpen_C.ExecuteUbergraph_WBP_Ingame_Incubator_AllOpen
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Ingame_Incubator_AllOpen_C::ExecuteUbergraph_WBP_Ingame_Incubator_AllOpen(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_C", "ExecuteUbergraph_WBP_Ingame_Incubator_AllOpen");
+
+	Params::WBP_Ingame_Incubator_AllOpen_C_ExecuteUbergraph_WBP_Ingame_Incubator_AllOpen Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Ingame_Incubator_AllOpen.WBP_Ingame_Incubator_AllOpen_C.BndEvt__WBP_Ingame_Incubator_AllOpen_WBP_CommonButton_Close_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Ingame_Incubator_AllOpen_C::BndEvt__WBP_Ingame_Incubator_AllOpen_WBP_CommonButton_Close_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_C", "BndEvt__WBP_Ingame_Incubator_AllOpen_WBP_CommonButton_Close_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Ingame_Incubator_AllOpen.WBP_Ingame_Incubator_AllOpen_C.AnmEvent_Open
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Ingame_Incubator_AllOpen_C::AnmEvent_Open()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_C", "AnmEvent_Open");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Ingame_Incubator_AllOpen.WBP_Ingame_Incubator_AllOpen_C.AnmEvent_Close
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Ingame_Incubator_AllOpen_C::AnmEvent_Close()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_Incubator_AllOpen_C", "AnmEvent_Close");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

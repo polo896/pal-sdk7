@@ -17,29 +17,37 @@
 namespace SDK
 {
 
-// Function WBP_Menu_CharacterHPGauge.WBP_Menu_CharacterHPGauge_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Menu_CharacterHPGauge.WBP_Menu_CharacterHPGauge_C.UpdateHP
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FFixedPoint64&             nowHP                                                  (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// const struct FFixedPoint64&             nowMaxHP                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void UWBP_Menu_CharacterHPGauge_C::Construct()
+void UWBP_Menu_CharacterHPGauge_C::UpdateHP(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& nowMaxHP)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_CharacterHPGauge_C", "Construct");
+		Func = Class->GetFunction("WBP_Menu_CharacterHPGauge_C", "UpdateHP");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Menu_CharacterHPGauge_C_UpdateHP Parms{};
+
+	Parms.nowHP = std::move(nowHP);
+	Parms.nowMaxHP = std::move(nowMaxHP);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Menu_CharacterHPGauge.WBP_Menu_CharacterHPGauge_C.Destruct
+// Function WBP_Menu_CharacterHPGauge.WBP_Menu_CharacterHPGauge_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Menu_CharacterHPGauge_C::Destruct()
+void UWBP_Menu_CharacterHPGauge_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_CharacterHPGauge_C", "Destruct");
+		Func = Class->GetFunction("WBP_Menu_CharacterHPGauge_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -65,39 +73,31 @@ void UWBP_Menu_CharacterHPGauge_C::ExecuteUbergraph_WBP_Menu_CharacterHPGauge(in
 }
 
 
-// Function WBP_Menu_CharacterHPGauge.WBP_Menu_CharacterHPGauge_C.OnInitialized
+// Function WBP_Menu_CharacterHPGauge.WBP_Menu_CharacterHPGauge_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Menu_CharacterHPGauge_C::OnInitialized()
+void UWBP_Menu_CharacterHPGauge_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_CharacterHPGauge_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_Menu_CharacterHPGauge_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Menu_CharacterHPGauge.WBP_Menu_CharacterHPGauge_C.UpdateHP
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FFixedPoint64&             nowHP                                                  (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-// const struct FFixedPoint64&             nowMaxHP                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// Function WBP_Menu_CharacterHPGauge.WBP_Menu_CharacterHPGauge_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Menu_CharacterHPGauge_C::UpdateHP(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& nowMaxHP)
+void UWBP_Menu_CharacterHPGauge_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_CharacterHPGauge_C", "UpdateHP");
+		Func = Class->GetFunction("WBP_Menu_CharacterHPGauge_C", "Construct");
 
-	Params::WBP_Menu_CharacterHPGauge_C_UpdateHP Parms{};
-
-	Parms.nowHP = std::move(nowHP);
-	Parms.nowMaxHP = std::move(nowMaxHP);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

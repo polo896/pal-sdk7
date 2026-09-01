@@ -55,35 +55,35 @@ public:
 	class FText                                   TempEditableTextBox_GuildNameText;                 // 0x03F8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void AddGuildMemberInfo(const struct FGuid& PlayerUId, const struct FPalUIGuildMemberDisplayInfo& DisplayInfo);
-	void AddGuildMemberInfoMap(const TMap<struct FGuid, struct FPalUIGuildMemberDisplayInfo>& DisplayInfoMap);
-	void BndEvt__WBP_Guild_PalEditableTextBox_60_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature(const class FText& Text);
-	void BndEvt__WBP_Guild_PalEditableTextBox_60_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
-	void BndEvt__WBP_Guild_WBP_GuildButton_Leave_K2Node_ComponentBoundEvent_6_OnClicked__DelegateSignature();
-	void BndEvt__WBP_Guild_WBP_GuildButton_Setting_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature();
-	void BndEvt__WBP_Guild_WBP_PalInvisibleButton_Rename_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void ClearMemberList();
-	void Construct();
-	class UWidget* CustomNavi_LastHoveredGuildMember(EUINavigation Navigation_0);
-	class UWidget* CustomNavi_ToGuildNameEdit(EUINavigation Navigation_0);
-	class UWidget* CustomNavi_ToGUildSettingButton(EUINavigation Navigation_0);
-	void Destruct();
-	void EndGuildNameEditMode();
-	void ExecuteUbergraph_WBP_Guild(int32 EntryPoint);
-	void GetFocusTargetByPlayerUId(const struct FGuid& PlayerUId, class UWidget** Widget);
-	void GetTopMemberFocusTarget(class UWidget** TopButton);
-	void IsNameEditMode(bool* IsEditing);
-	void OnClickedGuildMemberButton_Internal(class UWBP_Guild_MemberList_C* Widget);
-	void OnHoveredGuildMemberButton_Internal(class UWBP_Guild_MemberList_C* Widget);
-	void RemoveMemberInfo(const struct FGuid& PlayerUId);
-	void SetEnableGuildExitButton(bool CanExit);
-	void SetEnableGuildNameEditButton(bool IsEnableFlag);
-	void SetFocusToExitGuildButton();
-	void SetGuildLogCategoryOptions(TArray<class FString>& Options);
-	void SetGuildMemberNum(int32 NowMemberNum, int32 MaxMemberNum);
-	void SetGuildName(const class FString& InGuildName, const struct FGuid& AdminPlayerUId);
-	void StartGuildNameMode();
 	void UpdateMemberInfo(const struct FGuid& PlayerUId, const struct FPalUIGuildMemberDisplayInfo& NewDisplayInfo);
+	void StartGuildNameMode();
+	void SetGuildName(const class FString& InGuildName, const struct FGuid& AdminPlayerUId);
+	void SetGuildMemberNum(int32 NowMemberNum, int32 MaxMemberNum);
+	void SetGuildLogCategoryOptions(TArray<class FString>& Options);
+	void SetFocusToExitGuildButton();
+	void SetEnableGuildNameEditButton(bool IsEnableFlag);
+	void SetEnableGuildExitButton(bool CanExit);
+	void RemoveMemberInfo(const struct FGuid& PlayerUId);
+	void OnHoveredGuildMemberButton_Internal(class UWBP_Guild_MemberList_C* Widget);
+	void OnClickedGuildMemberButton_Internal(class UWBP_Guild_MemberList_C* Widget);
+	void IsNameEditMode(bool* IsEditing);
+	void GetTopMemberFocusTarget(class UWidget** TopButton);
+	void GetFocusTargetByPlayerUId(const struct FGuid& PlayerUId, class UWidget** Widget);
+	void ExecuteUbergraph_WBP_Guild(int32 EntryPoint);
+	void EndGuildNameEditMode();
+	void Destruct();
+	class UWidget* CustomNavi_ToGUildSettingButton(EUINavigation Navigation_0);
+	class UWidget* CustomNavi_ToGuildNameEdit(EUINavigation Navigation_0);
+	class UWidget* CustomNavi_LastHoveredGuildMember(EUINavigation Navigation_0);
+	void Construct();
+	void ClearMemberList();
+	void BndEvt__WBP_Guild_WBP_PalInvisibleButton_Rename_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Guild_WBP_GuildButton_Setting_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature();
+	void BndEvt__WBP_Guild_WBP_GuildButton_Leave_K2Node_ComponentBoundEvent_6_OnClicked__DelegateSignature();
+	void BndEvt__WBP_Guild_PalEditableTextBox_60_K2Node_ComponentBoundEvent_1_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
+	void BndEvt__WBP_Guild_PalEditableTextBox_60_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature(const class FText& Text);
+	void AddGuildMemberInfoMap(const TMap<struct FGuid, struct FPalUIGuildMemberDisplayInfo>& DisplayInfoMap);
+	void AddGuildMemberInfo(const struct FGuid& PlayerUId, const struct FPalUIGuildMemberDisplayInfo& DisplayInfo);
 
 public:
 	static class UClass* StaticClass()

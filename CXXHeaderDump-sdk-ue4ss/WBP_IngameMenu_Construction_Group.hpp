@@ -8,7 +8,7 @@ class UWBP_IngameMenu_Construction_Group_C : public UUserWidget
     class UImage* Image_4;                                                            // 0x0288 (size: 0x8)
     class UImage* Image_5;                                                            // 0x0290 (size: 0x8)
     class UBP_PalTextBlock_C* Text_Category;                                          // 0x0298 (size: 0x8)
-    TMap<class EPalBuildObjectTypeForUIDisplay, class FDataTableRowHandle> DisplayNameMap; // 0x02A0 (size: 0x50)
+    TMap<EPalBuildObjectTypeForUIDisplay, FDataTableRowHandle> DisplayNameMap;        // 0x02A0 (size: 0x50)
     FWBP_IngameMenu_Construction_Group_COnSelectedAnyBuildObject OnSelectedAnyBuildObject; // 0x02F0 (size: 0x10)
     void OnSelectedAnyBuildObject(class UWBP_IngameMenu_Construction_Icon_C* Widget);
     FWBP_IngameMenu_Construction_Group_COnHoveredAnyBuildObjectIcon OnHoveredAnyBuildObjectIcon; // 0x0300 (size: 0x10)
@@ -16,12 +16,12 @@ class UWBP_IngameMenu_Construction_Group_C : public UUserWidget
     FWBP_IngameMenu_Construction_Group_COnUnhoveredAnyBuildObjectIcon OnUnhoveredAnyBuildObjectIcon; // 0x0310 (size: 0x10)
     void OnUnhoveredAnyBuildObjectIcon();
     int32 LastHoveredChildIndex;                                                      // 0x0320 (size: 0x4)
-    TSoftObjectPtr<UBP_IngameMenu_Construction_ListFocusCalculator_C> NavigationCalculator; // 0x0328 (size: 0x30)
+    TSoftObjectPtr<class UBP_IngameMenu_Construction_ListFocusCalculator_C> NavigationCalculator; // 0x0328 (size: 0x30)
     int32 MyListNumber;                                                               // 0x0358 (size: 0x4)
     int32 LastHoveredChildColumnIndex;                                                // 0x035C (size: 0x4)
 
     void IsExistNewBuildObject(bool& bExist);
-    void GetVisibleWidgets(TArray<class UWBP_IngameMenu_Construction_Icon_C*>& OutWidgets);
+    void GetVisibleWidgets(TArray<UWBP_IngameMenu_Construction_Icon_C*>& OutWidgets);
     void GetTopWidget(class UWBP_IngameMenu_Construction_Icon_C*& Widget);
     void GetWIdgettByBuildObjectId(FName BuildObjectId, class UWBP_IngameMenu_Construction_Icon_C*& Widget);
     void GetFocusTargetByBuildObjectId(FName BuildObjectId, class UWidget*& Widget);

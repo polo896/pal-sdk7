@@ -18,77 +18,19 @@
 namespace SDK::Params
 {
 
-// Function WBP_Arena_Spectate.WBP_Arena_Spectate_C.CancelAction
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Arena_Spectate_C_CancelAction final
+// Function WBP_Arena_Spectate.WBP_Arena_Spectate_C.ViewRuleAction
+// 0x00A0 (0x00A0 - 0x0000)
+struct WBP_Arena_Spectate_C_ViewRuleAction final
 {
 public:
-	class UPalArenaWorldSubsystem*                CallFunc_GetArenaWorldSubsystem_ReturnValue;       // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDDispatchParameter_ArenaRule*     CallFunc_CreateDispatchParameterForK2Node_ReturnValue; // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  CallFunc_Push_ReturnValue;                         // 0x0008(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalArenaSpectateRoomInfo              CallFunc_Array_Get_Item;                           // 0x0020(0x0078)()
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Arena_Spectate_C_CancelAction;
-
-// Function WBP_Arena_Spectate.WBP_Arena_Spectate_C.ConfirmSpec
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Arena_Spectate_C_ConfirmSpec final
-{
-public:
-	bool                                          IsYes;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Arena_Spectate_C_ConfirmSpec;
-
-// Function WBP_Arena_Spectate.WBP_Arena_Spectate_C.ExecuteUbergraph_WBP_Arena_Spectate
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_Arena_Spectate_C_ExecuteUbergraph_WBP_Arena_Spectate final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalArenaWorldSubsystem*                CallFunc_GetArenaWorldSubsystem_ReturnValue;       // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDDispatchParameter_ArenaMenu*     K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_Arena_Menu; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Arena_Spectate_C_ExecuteUbergraph_WBP_Arena_Spectate;
-
-// Function WBP_Arena_Spectate.WBP_Arena_Spectate_C.OnSpecButtonClicked
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_Arena_Spectate_C_OnSpecButtonClicked final
-{
-public:
-	class UWBP_Arena_Spectate_List_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(bool bResult)>                 K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0018(0x0018)()
-	struct FGuid                                  CallFunc_Dialog_ReturnValue;                       // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Arena_Spectate_C_OnSpecButtonClicked;
-
-// Function WBP_Arena_Spectate.WBP_Arena_Spectate_C.OnSpecButtonHovered
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_Arena_Spectate_C_OnSpecButtonHovered final
-{
-public:
-	class UWBP_Arena_Spectate_List_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetChildIndex_ReturnValue;                // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x000C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x001C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0024(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x0034(0x0004)(NoDestructor)
-	class FName                                   CallFunc_MakeLiteralName_ReturnValue_1;            // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_1;      // 0x0040(0x0004)(NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_Arena_Spectate_C_OnSpecButtonHovered;
-
-// Function WBP_Arena_Spectate.WBP_Arena_Spectate_C.OnSpecButtonUnhovered
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Arena_Spectate_C_OnSpecButtonUnhovered final
-{
-public:
-	class UWBP_Arena_Spectate_List_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Arena_Spectate_C_OnSpecButtonUnhovered;
+DUMPER7_ASSERTS_WBP_Arena_Spectate_C_ViewRuleAction;
 
 // Function WBP_Arena_Spectate.WBP_Arena_Spectate_C.Setup
 // 0x00F8 (0x00F8 - 0x0000)
@@ -119,19 +61,77 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Arena_Spectate_C_Setup;
 
-// Function WBP_Arena_Spectate.WBP_Arena_Spectate_C.ViewRuleAction
-// 0x00A0 (0x00A0 - 0x0000)
-struct WBP_Arena_Spectate_C_ViewRuleAction final
+// Function WBP_Arena_Spectate.WBP_Arena_Spectate_C.OnSpecButtonUnhovered
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Arena_Spectate_C_OnSpecButtonUnhovered final
 {
 public:
-	class UPalHUDDispatchParameter_ArenaRule*     CallFunc_CreateDispatchParameterForK2Node_ReturnValue; // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  CallFunc_Push_ReturnValue;                         // 0x0008(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalArenaSpectateRoomInfo              CallFunc_Array_Get_Item;                           // 0x0020(0x0078)()
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Arena_Spectate_List_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Arena_Spectate_C_ViewRuleAction;
+DUMPER7_ASSERTS_WBP_Arena_Spectate_C_OnSpecButtonUnhovered;
+
+// Function WBP_Arena_Spectate.WBP_Arena_Spectate_C.OnSpecButtonHovered
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_Arena_Spectate_C_OnSpecButtonHovered final
+{
+public:
+	class UWBP_Arena_Spectate_List_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetChildIndex_ReturnValue;                // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x000C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x001C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0024(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x0034(0x0004)(NoDestructor)
+	class FName                                   CallFunc_MakeLiteralName_ReturnValue_1;            // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_1;      // 0x0040(0x0004)(NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_Arena_Spectate_C_OnSpecButtonHovered;
+
+// Function WBP_Arena_Spectate.WBP_Arena_Spectate_C.OnSpecButtonClicked
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_Arena_Spectate_C_OnSpecButtonClicked final
+{
+public:
+	class UWBP_Arena_Spectate_List_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(bool bResult)>                 K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0018(0x0018)()
+	struct FGuid                                  CallFunc_Dialog_ReturnValue;                       // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Arena_Spectate_C_OnSpecButtonClicked;
+
+// Function WBP_Arena_Spectate.WBP_Arena_Spectate_C.ExecuteUbergraph_WBP_Arena_Spectate
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_Arena_Spectate_C_ExecuteUbergraph_WBP_Arena_Spectate final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalArenaWorldSubsystem*                CallFunc_GetArenaWorldSubsystem_ReturnValue;       // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDDispatchParameter_ArenaMenu*     K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_Arena_Menu; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Arena_Spectate_C_ExecuteUbergraph_WBP_Arena_Spectate;
+
+// Function WBP_Arena_Spectate.WBP_Arena_Spectate_C.ConfirmSpec
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Arena_Spectate_C_ConfirmSpec final
+{
+public:
+	bool                                          IsYes;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Arena_Spectate_C_ConfirmSpec;
+
+// Function WBP_Arena_Spectate.WBP_Arena_Spectate_C.CancelAction
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Arena_Spectate_C_CancelAction final
+{
+public:
+	class UPalArenaWorldSubsystem*                CallFunc_GetArenaWorldSubsystem_ReturnValue;       // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Arena_Spectate_C_CancelAction;
 
 // Function WBP_Arena_Spectate.WBP_Arena_Spectate_C.BP_GetDesiredFocusTarget
 // 0x0040 (0x0040 - 0x0000)

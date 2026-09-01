@@ -17,34 +17,94 @@
 namespace SDK::Params
 {
 
-// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.CheckCompleteSynchronize
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_RelicMenu_ForDisplay_C_CheckCompleteSynchronize final
+// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.TryRequestRankup
+// 0x0140 (0x0140 - 0x0000)
+struct WBP_RelicMenu_ForDisplay_C_TryRequestRankup final
 {
 public:
-	class UWidget*                                CallFunc_GetTopFocusTarget_ReturnValue;            // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TMap<EPalRelicType, int32>                    CachedRankupInfo;                                  // 0x0000(0x0050)(Edit, BlueprintVisible)
+	TMap<EPalRelicType, int32>                    K2Node_MakeVariable_MakeVariableOutput;            // 0x0050(0x0050)()
+	bool                                          CallFunc_Map_IsEmpty_ReturnValue;                  // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPalRelicType                                 CallFunc_Array_Get_Item;                           // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalIndividualCharacterParameter*       CallFunc_GetIndividualCharacterParameterByActor_ReturnValue; // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetStatusPointNameByRelicType_ReturnValue; // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetStatusPoint_ReturnValue;               // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EPalRelicType>                         CallFunc_Map_Keys_Keys;                            // 0x00E0(0x0010)(ReferenceParm)
+	TMap<EPalRelicType, int32>                    CallFunc_CollectSimulationInfo_RankupInfo;         // 0x00F0(0x0050)()
 };
-DUMPER7_ASSERTS_WBP_RelicMenu_ForDisplay_C_CheckCompleteSynchronize;
+DUMPER7_ASSERTS_WBP_RelicMenu_ForDisplay_C_TryRequestRankup;
 
-// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.ExecuteUbergraph_WBP_RelicMenu_ForDisplay
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_RelicMenu_ForDisplay_C_ExecuteUbergraph_WBP_RelicMenu_ForDisplay final
+// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.TeardownEventBind
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_RelicMenu_ForDisplay_C_TeardownEventBind final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EPalRelicType Type, int32 NewNum)> K2Node_CreateDelegate_OutputDelegate_1;        // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const EPalCharacterStatusOperationResult Result)> K2Node_CreateDelegate_OutputDelegate_2; // 0x0020(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalNetworkCharacterStatusOperationComponent* CallFunc_NetCharacterStatusOperation_ReturnValue; // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterParameter*       CallFunc_GetIndividualCharacterParameterByActor_ReturnValue; // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalPlayerRecordData*                   CallFunc_GetLocalRecordData_ReturnValue;           // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_RelicMenu_ForDisplay_C_ExecuteUbergraph_WBP_RelicMenu_ForDisplay;
+DUMPER7_ASSERTS_WBP_RelicMenu_ForDisplay_C_TeardownEventBind;
 
-// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.GetLastRequestedRelicType
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_RelicMenu_ForDisplay_C_GetLastRequestedRelicType final
+// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.SetupEventBind
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_RelicMenu_ForDisplay_C_SetupEventBind final
 {
 public:
-	TArray<EPalRelicType>                         OutRelicType;                                      // 0x0000(0x0010)(Parm, OutParm)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EPalRelicType Type, int32 NewNum)> K2Node_CreateDelegate_OutputDelegate_1;        // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalNetworkCharacterStatusOperationComponent* CallFunc_NetCharacterStatusOperation_ReturnValue; // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const EPalCharacterStatusOperationResult Result)> K2Node_CreateDelegate_OutputDelegate_2; // 0x0028(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterParameter*       CallFunc_GetIndividualCharacterParameterByActor_ReturnValue; // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalPlayerRecordData*                   CallFunc_GetLocalRecordData_ReturnValue;           // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_RelicMenu_ForDisplay_C_GetLastRequestedRelicType;
+DUMPER7_ASSERTS_WBP_RelicMenu_ForDisplay_C_SetupEventBind;
+
+// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.SetupCollectedRelics
+// 0x0058 (0x0058 - 0x0000)
+struct WBP_RelicMenu_ForDisplay_C_SetupCollectedRelics final
+{
+public:
+	class UPalPlayerRecordData*                   CallFunc_GetLocalRecordData_ReturnValue;           // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TMap<EPalRelicType, int32>                    CallFunc_GetAllRelicPossessNum_OutMap;             // 0x0008(0x0050)()
+};
+DUMPER7_ASSERTS_WBP_RelicMenu_ForDisplay_C_SetupCollectedRelics;
+
+// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.OnUpdatedRelicNum
+// 0x000C (0x000C - 0x0000)
+struct WBP_RelicMenu_ForDisplay_C_OnUpdatedRelicNum final
+{
+public:
+	EPalRelicType                                 Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         NewNum;                                            // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsEmpty_ReturnValue;                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_RelicMenu_ForDisplay_C_OnUpdatedRelicNum;
+
+// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.OnReceiveResult
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_RelicMenu_ForDisplay_C_OnReceiveResult final
+{
+public:
+	EPalCharacterStatusOperationResult            Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_RelicMenu_ForDisplay_C_OnReceiveResult;
 
 // Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.On Got Status
 // 0x0108 (0x0108 - 0x0000)
@@ -79,94 +139,34 @@ public:
 };
 DUMPER7_ASSERTS_WBP_RelicMenu_ForDisplay_C_On_Got_Status;
 
-// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.OnReceiveResult
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_RelicMenu_ForDisplay_C_OnReceiveResult final
+// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.GetLastRequestedRelicType
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_RelicMenu_ForDisplay_C_GetLastRequestedRelicType final
 {
 public:
-	EPalCharacterStatusOperationResult            Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<EPalRelicType>                         OutRelicType;                                      // 0x0000(0x0010)(Parm, OutParm)
 };
-DUMPER7_ASSERTS_WBP_RelicMenu_ForDisplay_C_OnReceiveResult;
+DUMPER7_ASSERTS_WBP_RelicMenu_ForDisplay_C_GetLastRequestedRelicType;
 
-// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.OnUpdatedRelicNum
-// 0x000C (0x000C - 0x0000)
-struct WBP_RelicMenu_ForDisplay_C_OnUpdatedRelicNum final
+// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.ExecuteUbergraph_WBP_RelicMenu_ForDisplay
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_RelicMenu_ForDisplay_C_ExecuteUbergraph_WBP_RelicMenu_ForDisplay final
 {
 public:
-	EPalRelicType                                 Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         NewNum;                                            // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsEmpty_ReturnValue;                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_RelicMenu_ForDisplay_C_OnUpdatedRelicNum;
+DUMPER7_ASSERTS_WBP_RelicMenu_ForDisplay_C_ExecuteUbergraph_WBP_RelicMenu_ForDisplay;
 
-// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.SetupCollectedRelics
-// 0x0058 (0x0058 - 0x0000)
-struct WBP_RelicMenu_ForDisplay_C_SetupCollectedRelics final
+// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.CheckCompleteSynchronize
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_RelicMenu_ForDisplay_C_CheckCompleteSynchronize final
 {
 public:
-	class UPalPlayerRecordData*                   CallFunc_GetLocalRecordData_ReturnValue;           // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TMap<EPalRelicType, int32>                    CallFunc_GetAllRelicPossessNum_OutMap;             // 0x0008(0x0050)()
+	class UWidget*                                CallFunc_GetTopFocusTarget_ReturnValue;            // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_RelicMenu_ForDisplay_C_SetupCollectedRelics;
-
-// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.SetupEventBind
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_RelicMenu_ForDisplay_C_SetupEventBind final
-{
-public:
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EPalRelicType Type, int32 NewNum)> K2Node_CreateDelegate_OutputDelegate_1;        // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalNetworkCharacterStatusOperationComponent* CallFunc_NetCharacterStatusOperation_ReturnValue; // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const EPalCharacterStatusOperationResult Result)> K2Node_CreateDelegate_OutputDelegate_2; // 0x0028(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalIndividualCharacterParameter*       CallFunc_GetIndividualCharacterParameterByActor_ReturnValue; // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalPlayerRecordData*                   CallFunc_GetLocalRecordData_ReturnValue;           // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_RelicMenu_ForDisplay_C_SetupEventBind;
-
-// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.TeardownEventBind
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_RelicMenu_ForDisplay_C_TeardownEventBind final
-{
-public:
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EPalRelicType Type, int32 NewNum)> K2Node_CreateDelegate_OutputDelegate_1;        // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const EPalCharacterStatusOperationResult Result)> K2Node_CreateDelegate_OutputDelegate_2; // 0x0020(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalNetworkCharacterStatusOperationComponent* CallFunc_NetCharacterStatusOperation_ReturnValue; // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalIndividualCharacterParameter*       CallFunc_GetIndividualCharacterParameterByActor_ReturnValue; // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalPlayerRecordData*                   CallFunc_GetLocalRecordData_ReturnValue;           // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_RelicMenu_ForDisplay_C_TeardownEventBind;
-
-// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.TryRequestRankup
-// 0x0140 (0x0140 - 0x0000)
-struct WBP_RelicMenu_ForDisplay_C_TryRequestRankup final
-{
-public:
-	TMap<EPalRelicType, int32>                    CachedRankupInfo;                                  // 0x0000(0x0050)(Edit, BlueprintVisible)
-	TMap<EPalRelicType, int32>                    K2Node_MakeVariable_MakeVariableOutput;            // 0x0050(0x0050)()
-	bool                                          CallFunc_Map_IsEmpty_ReturnValue;                  // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPalRelicType                                 CallFunc_Array_Get_Item;                           // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalIndividualCharacterParameter*       CallFunc_GetIndividualCharacterParameterByActor_ReturnValue; // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetStatusPointNameByRelicType_ReturnValue; // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetStatusPoint_ReturnValue;               // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EPalRelicType>                         CallFunc_Map_Keys_Keys;                            // 0x00E0(0x0010)(ReferenceParm)
-	TMap<EPalRelicType, int32>                    CallFunc_CollectSimulationInfo_RankupInfo;         // 0x00F0(0x0050)()
-};
-DUMPER7_ASSERTS_WBP_RelicMenu_ForDisplay_C_TryRequestRankup;
+DUMPER7_ASSERTS_WBP_RelicMenu_ForDisplay_C_CheckCompleteSynchronize;
 
 // Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.BP_GetDesiredFocusTarget
 // 0x0010 (0x0010 - 0x0000)

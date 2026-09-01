@@ -12,7 +12,7 @@ class UWwiseAudioLinkComponent : public UAkComponent
 
 class UWwiseAudioLinkSettings : public UAudioLinkSettingsAbstract
 {
-    TSoftObjectPtr<UAkAudioEvent> StartEvent;                                         // 0x0038 (size: 0x30)
+    TSoftObjectPtr<class UAkAudioEvent> StartEvent;                                   // 0x0038 (size: 0x30)
     bool bShouldClearBufferOnReceipt;                                                 // 0x0068 (size: 0x1)
     float ProducerToConsumerBufferRatio;                                              // 0x006C (size: 0x4)
     float InitialSilenceFillRatio;                                                    // 0x0070 (size: 0x4)

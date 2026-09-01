@@ -17,17 +17,15 @@
 namespace SDK::Params
 {
 
-// Function BP_ArenaEntrance.BP_ArenaEntrance_C.BndEvt__BP_ArenaEntrance_EntryCancel_Trigger_K2Node_ComponentBoundEvent_0_ComponentEndOverlapSignature__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct BP_ArenaEntrance_C_BndEvt__BP_ArenaEntrance_EntryCancel_Trigger_K2Node_ComponentBoundEvent_0_ComponentEndOverlapSignature__DelegateSignature final
+// Function BP_ArenaEntrance.BP_ArenaEntrance_C.カスタムイベント
+// 0x0010 (0x0010 - 0x0000)
+struct BP_ArenaEntrance_C_カスタムイベント final
 {
 public:
-	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Other;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPalInteractiveObjectIndicatorType            IndicatorType;                                     // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_ArenaEntrance_C_BndEvt__BP_ArenaEntrance_EntryCancel_Trigger_K2Node_ComponentBoundEvent_0_ComponentEndOverlapSignature__DelegateSignature;
+DUMPER7_ASSERTS_BP_ArenaEntrance_C_カスタムイベント;
 
 // Function BP_ArenaEntrance.BP_ArenaEntrance_C.ExecuteUbergraph_BP_ArenaEntrance
 // 0x00C8 (0x00C8 - 0x0000)
@@ -63,25 +61,17 @@ public:
 };
 DUMPER7_ASSERTS_BP_ArenaEntrance_C_ExecuteUbergraph_BP_ArenaEntrance;
 
-// Function BP_ArenaEntrance.BP_ArenaEntrance_C.カスタムイベント
-// 0x0010 (0x0010 - 0x0000)
-struct BP_ArenaEntrance_C_カスタムイベント final
+// Function BP_ArenaEntrance.BP_ArenaEntrance_C.BndEvt__BP_ArenaEntrance_EntryCancel_Trigger_K2Node_ComponentBoundEvent_0_ComponentEndOverlapSignature__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct BP_ArenaEntrance_C_BndEvt__BP_ArenaEntrance_EntryCancel_Trigger_K2Node_ComponentBoundEvent_0_ComponentEndOverlapSignature__DelegateSignature final
 {
 public:
-	class AActor*                                 Other;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPalInteractiveObjectIndicatorType            IndicatorType;                                     // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_ArenaEntrance_C_カスタムイベント;
-
-// Function BP_ArenaEntrance.BP_ArenaEntrance_C.GetItemDropPoint
-// 0x00C0 (0x00C0 - 0x0000)
-struct BP_ArenaEntrance_C_GetItemDropPoint final
-{
-public:
-	struct FTransform                             ReturnValue;                                       // 0x0000(0x0060)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0060(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ArenaEntrance_C_GetItemDropPoint;
+DUMPER7_ASSERTS_BP_ArenaEntrance_C_BndEvt__BP_ArenaEntrance_EntryCancel_Trigger_K2Node_ComponentBoundEvent_0_ComponentEndOverlapSignature__DelegateSignature;
 
 // Function BP_ArenaEntrance.BP_ArenaEntrance_C.GetWarpPoint
 // 0x00C0 (0x00C0 - 0x0000)
@@ -92,6 +82,16 @@ public:
 	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0060(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_ArenaEntrance_C_GetWarpPoint;
+
+// Function BP_ArenaEntrance.BP_ArenaEntrance_C.GetItemDropPoint
+// 0x00C0 (0x00C0 - 0x0000)
+struct BP_ArenaEntrance_C_GetItemDropPoint final
+{
+public:
+	struct FTransform                             ReturnValue;                                       // 0x0000(0x0060)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0060(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ArenaEntrance_C_GetItemDropPoint;
 
 }
 

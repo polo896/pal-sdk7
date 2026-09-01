@@ -17,6 +17,15 @@
 namespace SDK::Params
 {
 
+// Function BP_CoopSkill_StatusUp_Anubis.BP_CoopSkill_StatusUp_Anubis_C.OnTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_CoopSkill_StatusUp_Anubis_C_OnTick final
+{
+public:
+	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_CoopSkill_StatusUp_Anubis_C_OnTick;
+
 // Function BP_CoopSkill_StatusUp_Anubis.BP_CoopSkill_StatusUp_Anubis_C.ExecuteUbergraph_BP_CoopSkill_StatusUp_Anubis
 // 0x01B8 (0x01B8 - 0x0000)
 struct BP_CoopSkill_StatusUp_Anubis_C_ExecuteUbergraph_BP_CoopSkill_StatusUp_Anubis final
@@ -45,15 +54,6 @@ public:
 	struct FHitResult                             CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult; // 0x00D0(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
 DUMPER7_ASSERTS_BP_CoopSkill_StatusUp_Anubis_C_ExecuteUbergraph_BP_CoopSkill_StatusUp_Anubis;
-
-// Function BP_CoopSkill_StatusUp_Anubis.BP_CoopSkill_StatusUp_Anubis_C.OnTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_CoopSkill_StatusUp_Anubis_C_OnTick final
-{
-public:
-	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_CoopSkill_StatusUp_Anubis_C_OnTick;
 
 }
 

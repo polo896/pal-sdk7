@@ -28,10 +28,10 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x02A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AttachSocket(class USceneComponent* Component, class FName SocketName);
-	void ExecuteUbergraph_BP_GrapplingGun_Bullet(int32 EntryPoint);
-	void ReceiveBeginPlay();
 	void UpdateCable(const struct FVector& Start, const struct FVector& End, bool IsHit, bool IsVisible);
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_GrapplingGun_Bullet(int32 EntryPoint);
+	void AttachSocket(class USceneComponent* Component, class FName SocketName);
 
 public:
 	static class UClass* StaticClass()

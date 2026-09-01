@@ -26,7 +26,7 @@ class UWBP_Fishing_PowerGauge_C : public UUserWidget
     class USlider* Slider_SuitableArea;                                               // 0x0318 (size: 0x8)
     class UWBP_Fishing_TutorialGuide_C* WBP_Fishing_TutorialGuide;                    // 0x0320 (size: 0x8)
     class UWBP_PlayerInputKeyGuideIcon_C* WBP_PlayerInputKeyGuideIcon;                // 0x0328 (size: 0x8)
-    TArray<class UImage*> FishBarImages;                                              // 0x0330 (size: 0x10)
+    TArray<UImage*> FishBarImages;                                                    // 0x0330 (size: 0x10)
     double BarSizeRate;                                                               // 0x0340 (size: 0x8)
     double BarSize;                                                                   // 0x0348 (size: 0x8)
     double DefaultGaugeSize;                                                          // 0x0350 (size: 0x8)

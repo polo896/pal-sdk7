@@ -102,7 +102,7 @@ struct FRigVMMemoryContainer
     TArray<FRigVMRegister> Registers;                                                 // 0x0008 (size: 0x10)
     TArray<FRigVMRegisterOffset> RegisterOffsets;                                     // 0x0018 (size: 0x10)
     TArray<uint8> Data;                                                               // 0x0028 (size: 0x10)
-    TArray<class UScriptStruct*> ScriptStructs;                                       // 0x0038 (size: 0x10)
+    TArray<UScriptStruct*> ScriptStructs;                                             // 0x0038 (size: 0x10)
     TMap<FName, int32> NameMap;                                                       // 0x0048 (size: 0x50)
     bool bEncounteredErrorDuringLoad;                                                 // 0x0098 (size: 0x1)
 

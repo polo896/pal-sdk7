@@ -17,296 +17,53 @@
 namespace SDK
 {
 
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.EjectARound
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_PumpActionShotgun_C::ReceiveBeginPlay()
+void ABP_PumpActionShotgun_C::EjectARound()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PumpActionShotgun_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_PumpActionShotgun_C", "EjectARound");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.PlayReloadAnimation
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_PumpActionShotgun_C::PlayReloadAnimation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PumpActionShotgun_C", "PlayReloadAnimation");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnWeaponNotify
-// (Event, Public, BlueprintEvent)
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.ExecuteUbergraph_BP_PumpActionShotgun
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// EWeaponNotifyType                       Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PumpActionShotgun_C::OnWeaponNotify(EWeaponNotifyType Type)
+void ABP_PumpActionShotgun_C::ExecuteUbergraph_BP_PumpActionShotgun(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnWeaponNotify");
+		Func = Class->GetFunction("BP_PumpActionShotgun_C", "ExecuteUbergraph_BP_PumpActionShotgun");
 
-	Params::BP_PumpActionShotgun_C_OnWeaponNotify Parms{};
+	Params::BP_PumpActionShotgun_C_ExecuteUbergraph_BP_PumpActionShotgun Parms{};
 
-	Parms.Type = Type;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnshotInternal
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   IsShoted                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PumpActionShotgun_C::OnshotInternal(bool* IsShoted)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnshotInternal");
-
-	Params::BP_PumpActionShotgun_C_OnshotInternal Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (IsShoted != nullptr)
-		*IsShoted = Parms.IsShoted;
-}
-
-
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnShot
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_PumpActionShotgun_C::OnShot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnShot");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnRestartReload
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_PumpActionShotgun_C::OnRestartReload()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnRestartReload");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnReloadStart
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   InReloadSpeedPlayRate                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PumpActionShotgun_C::OnReloadStart(float InReloadSpeedPlayRate)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnReloadStart");
-
-	Params::BP_PumpActionShotgun_C_OnReloadStart Parms{};
-
-	Parms.InReloadSpeedPlayRate = InReloadSpeedPlayRate;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnReleaseTrigger
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bCanShootOnRelease                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PumpActionShotgun_C::OnReleaseTrigger(bool bCanShootOnRelease)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnReleaseTrigger");
-
-	Params::BP_PumpActionShotgun_C_OnReleaseTrigger Parms{};
-
-	Parms.bCanShootOnRelease = bCanShootOnRelease;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnNotifyEnd_FCB44FF643DA97B49C538D845683A965
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnBlendOut_022E6E364FB50AA73CEBFDBEFEDC6736
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PumpActionShotgun_C::OnNotifyEnd_FCB44FF643DA97B49C538D845683A965(class FName NotifyName)
+void ABP_PumpActionShotgun_C::OnBlendOut_022E6E364FB50AA73CEBFDBEFEDC6736(class FName NotifyName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnNotifyEnd_FCB44FF643DA97B49C538D845683A965");
+		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnBlendOut_022E6E364FB50AA73CEBFDBEFEDC6736");
 
-	Params::BP_PumpActionShotgun_C_OnNotifyEnd_FCB44FF643DA97B49C538D845683A965 Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnNotifyEnd_022E6E364FB50AA73CEBFDBEFEDC6736
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PumpActionShotgun_C::OnNotifyEnd_022E6E364FB50AA73CEBFDBEFEDC6736(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnNotifyEnd_022E6E364FB50AA73CEBFDBEFEDC6736");
-
-	Params::BP_PumpActionShotgun_C_OnNotifyEnd_022E6E364FB50AA73CEBFDBEFEDC6736 Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnNotifyBegin_FCB44FF643DA97B49C538D845683A965
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PumpActionShotgun_C::OnNotifyBegin_FCB44FF643DA97B49C538D845683A965(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnNotifyBegin_FCB44FF643DA97B49C538D845683A965");
-
-	Params::BP_PumpActionShotgun_C_OnNotifyBegin_FCB44FF643DA97B49C538D845683A965 Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnNotifyBegin_022E6E364FB50AA73CEBFDBEFEDC6736
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PumpActionShotgun_C::OnNotifyBegin_022E6E364FB50AA73CEBFDBEFEDC6736(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnNotifyBegin_022E6E364FB50AA73CEBFDBEFEDC6736");
-
-	Params::BP_PumpActionShotgun_C_OnNotifyBegin_022E6E364FB50AA73CEBFDBEFEDC6736 Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnInterrupted_FCB44FF643DA97B49C538D845683A965
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PumpActionShotgun_C::OnInterrupted_FCB44FF643DA97B49C538D845683A965(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnInterrupted_FCB44FF643DA97B49C538D845683A965");
-
-	Params::BP_PumpActionShotgun_C_OnInterrupted_FCB44FF643DA97B49C538D845683A965 Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnInterrupted_022E6E364FB50AA73CEBFDBEFEDC6736
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PumpActionShotgun_C::OnInterrupted_022E6E364FB50AA73CEBFDBEFEDC6736(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnInterrupted_022E6E364FB50AA73CEBFDBEFEDC6736");
-
-	Params::BP_PumpActionShotgun_C_OnInterrupted_022E6E364FB50AA73CEBFDBEFEDC6736 Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnCompleted_FCB44FF643DA97B49C538D845683A965
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PumpActionShotgun_C::OnCompleted_FCB44FF643DA97B49C538D845683A965(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnCompleted_FCB44FF643DA97B49C538D845683A965");
-
-	Params::BP_PumpActionShotgun_C_OnCompleted_FCB44FF643DA97B49C538D845683A965 Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnCompleted_022E6E364FB50AA73CEBFDBEFEDC6736
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PumpActionShotgun_C::OnCompleted_022E6E364FB50AA73CEBFDBEFEDC6736(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnCompleted_022E6E364FB50AA73CEBFDBEFEDC6736");
-
-	Params::BP_PumpActionShotgun_C_OnCompleted_022E6E364FB50AA73CEBFDBEFEDC6736 Parms{};
+	Params::BP_PumpActionShotgun_C_OnBlendOut_022E6E364FB50AA73CEBFDBEFEDC6736 Parms{};
 
 	Parms.NotifyName = NotifyName;
 
@@ -334,19 +91,19 @@ void ABP_PumpActionShotgun_C::OnBlendOut_FCB44FF643DA97B49C538D845683A965(class 
 }
 
 
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnBlendOut_022E6E364FB50AA73CEBFDBEFEDC6736
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnCompleted_022E6E364FB50AA73CEBFDBEFEDC6736
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PumpActionShotgun_C::OnBlendOut_022E6E364FB50AA73CEBFDBEFEDC6736(class FName NotifyName)
+void ABP_PumpActionShotgun_C::OnCompleted_022E6E364FB50AA73CEBFDBEFEDC6736(class FName NotifyName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnBlendOut_022E6E364FB50AA73CEBFDBEFEDC6736");
+		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnCompleted_022E6E364FB50AA73CEBFDBEFEDC6736");
 
-	Params::BP_PumpActionShotgun_C_OnBlendOut_022E6E364FB50AA73CEBFDBEFEDC6736 Parms{};
+	Params::BP_PumpActionShotgun_C_OnCompleted_022E6E364FB50AA73CEBFDBEFEDC6736 Parms{};
 
 	Parms.NotifyName = NotifyName;
 
@@ -354,35 +111,278 @@ void ABP_PumpActionShotgun_C::OnBlendOut_022E6E364FB50AA73CEBFDBEFEDC6736(class 
 }
 
 
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.ExecuteUbergraph_BP_PumpActionShotgun
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnCompleted_FCB44FF643DA97B49C538D845683A965
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PumpActionShotgun_C::ExecuteUbergraph_BP_PumpActionShotgun(int32 EntryPoint)
+void ABP_PumpActionShotgun_C::OnCompleted_FCB44FF643DA97B49C538D845683A965(class FName NotifyName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PumpActionShotgun_C", "ExecuteUbergraph_BP_PumpActionShotgun");
+		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnCompleted_FCB44FF643DA97B49C538D845683A965");
 
-	Params::BP_PumpActionShotgun_C_ExecuteUbergraph_BP_PumpActionShotgun Parms{};
+	Params::BP_PumpActionShotgun_C_OnCompleted_FCB44FF643DA97B49C538D845683A965 Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.NotifyName = NotifyName;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.EjectARound
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnInterrupted_022E6E364FB50AA73CEBFDBEFEDC6736
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PumpActionShotgun_C::EjectARound()
+void ABP_PumpActionShotgun_C::OnInterrupted_022E6E364FB50AA73CEBFDBEFEDC6736(class FName NotifyName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PumpActionShotgun_C", "EjectARound");
+		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnInterrupted_022E6E364FB50AA73CEBFDBEFEDC6736");
+
+	Params::BP_PumpActionShotgun_C_OnInterrupted_022E6E364FB50AA73CEBFDBEFEDC6736 Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnInterrupted_FCB44FF643DA97B49C538D845683A965
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PumpActionShotgun_C::OnInterrupted_FCB44FF643DA97B49C538D845683A965(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnInterrupted_FCB44FF643DA97B49C538D845683A965");
+
+	Params::BP_PumpActionShotgun_C_OnInterrupted_FCB44FF643DA97B49C538D845683A965 Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnNotifyBegin_022E6E364FB50AA73CEBFDBEFEDC6736
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PumpActionShotgun_C::OnNotifyBegin_022E6E364FB50AA73CEBFDBEFEDC6736(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnNotifyBegin_022E6E364FB50AA73CEBFDBEFEDC6736");
+
+	Params::BP_PumpActionShotgun_C_OnNotifyBegin_022E6E364FB50AA73CEBFDBEFEDC6736 Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnNotifyBegin_FCB44FF643DA97B49C538D845683A965
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PumpActionShotgun_C::OnNotifyBegin_FCB44FF643DA97B49C538D845683A965(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnNotifyBegin_FCB44FF643DA97B49C538D845683A965");
+
+	Params::BP_PumpActionShotgun_C_OnNotifyBegin_FCB44FF643DA97B49C538D845683A965 Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnNotifyEnd_022E6E364FB50AA73CEBFDBEFEDC6736
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PumpActionShotgun_C::OnNotifyEnd_022E6E364FB50AA73CEBFDBEFEDC6736(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnNotifyEnd_022E6E364FB50AA73CEBFDBEFEDC6736");
+
+	Params::BP_PumpActionShotgun_C_OnNotifyEnd_022E6E364FB50AA73CEBFDBEFEDC6736 Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnNotifyEnd_FCB44FF643DA97B49C538D845683A965
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PumpActionShotgun_C::OnNotifyEnd_FCB44FF643DA97B49C538D845683A965(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnNotifyEnd_FCB44FF643DA97B49C538D845683A965");
+
+	Params::BP_PumpActionShotgun_C_OnNotifyEnd_FCB44FF643DA97B49C538D845683A965 Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnReleaseTrigger
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bCanShootOnRelease                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PumpActionShotgun_C::OnReleaseTrigger(bool bCanShootOnRelease)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnReleaseTrigger");
+
+	Params::BP_PumpActionShotgun_C_OnReleaseTrigger Parms{};
+
+	Parms.bCanShootOnRelease = bCanShootOnRelease;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnReloadStart
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   InReloadSpeedPlayRate                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PumpActionShotgun_C::OnReloadStart(float InReloadSpeedPlayRate)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnReloadStart");
+
+	Params::BP_PumpActionShotgun_C_OnReloadStart Parms{};
+
+	Parms.InReloadSpeedPlayRate = InReloadSpeedPlayRate;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnRestartReload
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_PumpActionShotgun_C::OnRestartReload()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnRestartReload");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnShot
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_PumpActionShotgun_C::OnShot()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnShot");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnshotInternal
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   IsShoted                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PumpActionShotgun_C::OnshotInternal(bool* IsShoted)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnshotInternal");
+
+	Params::BP_PumpActionShotgun_C_OnshotInternal Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IsShoted != nullptr)
+		*IsShoted = Parms.IsShoted;
+}
+
+
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnWeaponNotify
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EWeaponNotifyType                       Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PumpActionShotgun_C::OnWeaponNotify(EWeaponNotifyType Type)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PumpActionShotgun_C", "OnWeaponNotify");
+
+	Params::BP_PumpActionShotgun_C_OnWeaponNotify Parms{};
+
+	Parms.Type = Type;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.PlayReloadAnimation
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_PumpActionShotgun_C::PlayReloadAnimation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PumpActionShotgun_C", "PlayReloadAnimation");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_PumpActionShotgun_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PumpActionShotgun_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

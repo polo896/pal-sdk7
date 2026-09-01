@@ -20,7 +20,7 @@ class UWBP_Fishing_SelectBait_C : public UUserWidget
     class UWBP_Fishing_SelectBait_Item_C* WBP_Fishing_SelectBait_Item_9;              // 0x02E8 (size: 0x8)
     class UWBP_PlayerInputKeyGuideIcon_C* WBP_PlayerInputKeyGuideIcon_0;              // 0x02F0 (size: 0x8)
     FName SelectStaticItemId;                                                         // 0x02F8 (size: 0x8)
-    TArray<class UWBP_Fishing_SelectBait_Item_C*> SelectBaitList;                     // 0x0300 (size: 0x10)
+    TArray<UWBP_Fishing_SelectBait_Item_C*> SelectBaitList;                           // 0x0300 (size: 0x10)
     double ItemSize;                                                                  // 0x0310 (size: 0x8)
     double CurrentPosX;                                                               // 0x0318 (size: 0x8)
     double DefaultPosX;                                                               // 0x0320 (size: 0x8)

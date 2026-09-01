@@ -17,154 +17,204 @@
 namespace SDK
 {
 
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.CheckLocationEvent
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalWork_RelicRecycler_C::CheckLocationEvent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "CheckLocationEvent");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.CloseDetail
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.SetupUI
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalWork_RelicRecycler_C::CloseDetail()
+void UWBP_PalWork_RelicRecycler_C::SetupUI()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "CloseDetail");
+		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "SetupUI");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PalWork_RelicRecycler_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PalWork_RelicRecycler_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.DisplayDetail
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.RefreshBoostDisplay
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalWork_RelicRecycler_C::DisplayDetail()
+void UWBP_PalWork_RelicRecycler_C::RefreshBoostDisplay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "DisplayDetail");
+		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "RefreshBoostDisplay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.ExecuteUbergraph_WBP_PalWork_RelicRecycler
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalWork_RelicRecycler_C::ExecuteUbergraph_WBP_PalWork_RelicRecycler(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "ExecuteUbergraph_WBP_PalWork_RelicRecycler");
-
-	Params::WBP_PalWork_RelicRecycler_C_ExecuteUbergraph_WBP_PalWork_RelicRecycler Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnReadyEnergyModule
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnUpdateSwitch
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPalMapObjectConcreteModelBase*   Model                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPalMapObjectConcreteModelModuleBase*Module                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalMapObjectSwitchModule*        Module                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalWork_RelicRecycler_C::OnReadyEnergyModule(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module)
+void UWBP_PalWork_RelicRecycler_C::OnUpdateSwitch(class UPalMapObjectSwitchModule* Module)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "OnReadyEnergyModule");
+		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "OnUpdateSwitch");
 
-	Params::WBP_PalWork_RelicRecycler_C_OnReadyEnergyModule Parms{};
+	Params::WBP_PalWork_RelicRecycler_C_OnUpdateSwitch Parms{};
 
-	Parms.Model = Model;
 	Parms.Module = Module;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnReadyItemContainerModule
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnUpdateRecycleTarget
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPalMapObjectConcreteModelBase*   Model                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPalMapObjectConcreteModelModuleBase*Module                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalUIMapObjectRecyclerStatusIndicatorModel*UIModel                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalWork_RelicRecycler_C::OnReadyItemContainerModule(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module)
+void UWBP_PalWork_RelicRecycler_C::OnUpdateRecycleTarget(class UPalUIMapObjectRecyclerStatusIndicatorModel* UIModel)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "OnReadyItemContainerModule");
+		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "OnUpdateRecycleTarget");
 
-	Params::WBP_PalWork_RelicRecycler_C_OnReadyItemContainerModule Parms{};
+	Params::WBP_PalWork_RelicRecycler_C_OnUpdateRecycleTarget Parms{};
 
-	Parms.Model = Model;
+	Parms.UIModel = UIModel;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnUpdateItemContainerContent_Internal
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalMapObjectItemContainerModule* Module                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInitial                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWork_RelicRecycler_C::OnUpdateItemContainerContent_Internal(class UPalMapObjectItemContainerModule* Module, bool bInitial)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "OnUpdateItemContainerContent_Internal");
+
+	Params::WBP_PalWork_RelicRecycler_C_OnUpdateItemContainerContent_Internal Parms{};
+
+	Parms.Module = Module;
+	Parms.bInitial = bInitial;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnUpdateItemContainerContent
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalMapObjectItemContainerModule* Module                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWork_RelicRecycler_C::OnUpdateItemContainerContent(class UPalMapObjectItemContainerModule* Module)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "OnUpdateItemContainerContent");
+
+	Params::WBP_PalWork_RelicRecycler_C_OnUpdateItemContainerContent Parms{};
+
 	Parms.Module = Module;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnReadySwitchModule
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnUpdatedWorkerPal
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalWorkBase*                     Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWork_RelicRecycler_C::OnUpdatedWorkerPal(class UPalWorkBase* Work)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "OnUpdatedWorkerPal");
+
+	Params::WBP_PalWork_RelicRecycler_C_OnUpdatedWorkerPal Parms{};
+
+	Parms.Work = Work;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnUpdateBoost
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalUIMapObjectRecyclerStatusIndicatorModel*UIModel                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWork_RelicRecycler_C::OnUpdateBoost(class UPalUIMapObjectRecyclerStatusIndicatorModel* UIModel)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "OnUpdateBoost");
+
+	Params::WBP_PalWork_RelicRecycler_C_OnUpdateBoost Parms{};
+
+	Parms.UIModel = UIModel;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalWork_RelicRecycler_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnReflectWorkProgress
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalWorkProgress*                 WorkProgress                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWork_RelicRecycler_C::OnReflectWorkProgress(class UPalWorkProgress* WorkProgress)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "OnReflectWorkProgress");
+
+	Params::WBP_PalWork_RelicRecycler_C_OnReflectWorkProgress Parms{};
+
+	Parms.WorkProgress = WorkProgress;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnReadyWorkeeModule
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UPalMapObjectConcreteModelBase*   Model                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UPalMapObjectConcreteModelModuleBase*Module                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalWork_RelicRecycler_C::OnReadySwitchModule(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module)
+void UWBP_PalWork_RelicRecycler_C::OnReadyWorkeeModule(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "OnReadySwitchModule");
+		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "OnReadyWorkeeModule");
 
-	Params::WBP_PalWork_RelicRecycler_C_OnReadySwitchModule Parms{};
+	Params::WBP_PalWork_RelicRecycler_C_OnReadyWorkeeModule Parms{};
 
 	Parms.Model = Model;
 	Parms.Module = Module;
@@ -195,20 +245,20 @@ void UWBP_PalWork_RelicRecycler_C::OnReadyWork(class UPalMapObjectWorkeeModule* 
 }
 
 
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnReadyWorkeeModule
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnReadySwitchModule
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UPalMapObjectConcreteModelBase*   Model                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UPalMapObjectConcreteModelModuleBase*Module                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalWork_RelicRecycler_C::OnReadyWorkeeModule(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module)
+void UWBP_PalWork_RelicRecycler_C::OnReadySwitchModule(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "OnReadyWorkeeModule");
+		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "OnReadySwitchModule");
 
-	Params::WBP_PalWork_RelicRecycler_C_OnReadyWorkeeModule Parms{};
+	Params::WBP_PalWork_RelicRecycler_C_OnReadySwitchModule Parms{};
 
 	Parms.Model = Model;
 	Parms.Module = Module;
@@ -217,185 +267,135 @@ void UWBP_PalWork_RelicRecycler_C::OnReadyWorkeeModule(class UPalMapObjectConcre
 }
 
 
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnReflectWorkProgress
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnReadyItemContainerModule
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPalWorkProgress*                 WorkProgress                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalMapObjectConcreteModelBase*   Model                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalMapObjectConcreteModelModuleBase*Module                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalWork_RelicRecycler_C::OnReflectWorkProgress(class UPalWorkProgress* WorkProgress)
+void UWBP_PalWork_RelicRecycler_C::OnReadyItemContainerModule(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "OnReflectWorkProgress");
+		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "OnReadyItemContainerModule");
 
-	Params::WBP_PalWork_RelicRecycler_C_OnReflectWorkProgress Parms{};
+	Params::WBP_PalWork_RelicRecycler_C_OnReadyItemContainerModule Parms{};
 
-	Parms.WorkProgress = WorkProgress;
+	Parms.Model = Model;
+	Parms.Module = Module;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnReadyEnergyModule
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalMapObjectConcreteModelBase*   Model                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalMapObjectConcreteModelModuleBase*Module                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalWork_RelicRecycler_C::OnSetup()
+void UWBP_PalWork_RelicRecycler_C::OnReadyEnergyModule(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "OnSetup");
+		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "OnReadyEnergyModule");
+
+	Params::WBP_PalWork_RelicRecycler_C_OnReadyEnergyModule Parms{};
+
+	Parms.Model = Model;
+	Parms.Module = Module;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.ExecuteUbergraph_WBP_PalWork_RelicRecycler
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWork_RelicRecycler_C::ExecuteUbergraph_WBP_PalWork_RelicRecycler(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "ExecuteUbergraph_WBP_PalWork_RelicRecycler");
+
+	Params::WBP_PalWork_RelicRecycler_C_ExecuteUbergraph_WBP_PalWork_RelicRecycler Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.DisplayDetail
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalWork_RelicRecycler_C::DisplayDetail()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "DisplayDetail");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnUpdateBoost
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalUIMapObjectRecyclerStatusIndicatorModel*UIModel                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_PalWork_RelicRecycler_C::OnUpdateBoost(class UPalUIMapObjectRecyclerStatusIndicatorModel* UIModel)
+void UWBP_PalWork_RelicRecycler_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "OnUpdateBoost");
-
-	Params::WBP_PalWork_RelicRecycler_C_OnUpdateBoost Parms{};
-
-	Parms.UIModel = UIModel;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnUpdatedWorkerPal
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalWorkBase*                     Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalWork_RelicRecycler_C::OnUpdatedWorkerPal(class UPalWorkBase* Work)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "OnUpdatedWorkerPal");
-
-	Params::WBP_PalWork_RelicRecycler_C_OnUpdatedWorkerPal Parms{};
-
-	Parms.Work = Work;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnUpdateItemContainerContent
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalMapObjectItemContainerModule* Module                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalWork_RelicRecycler_C::OnUpdateItemContainerContent(class UPalMapObjectItemContainerModule* Module)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "OnUpdateItemContainerContent");
-
-	Params::WBP_PalWork_RelicRecycler_C_OnUpdateItemContainerContent Parms{};
-
-	Parms.Module = Module;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnUpdateItemContainerContent_Internal
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalMapObjectItemContainerModule* Module                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInitial                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalWork_RelicRecycler_C::OnUpdateItemContainerContent_Internal(class UPalMapObjectItemContainerModule* Module, bool bInitial)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "OnUpdateItemContainerContent_Internal");
-
-	Params::WBP_PalWork_RelicRecycler_C_OnUpdateItemContainerContent_Internal Parms{};
-
-	Parms.Module = Module;
-	Parms.bInitial = bInitial;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnUpdateRecycleTarget
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalUIMapObjectRecyclerStatusIndicatorModel*UIModel                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalWork_RelicRecycler_C::OnUpdateRecycleTarget(class UPalUIMapObjectRecyclerStatusIndicatorModel* UIModel)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "OnUpdateRecycleTarget");
-
-	Params::WBP_PalWork_RelicRecycler_C_OnUpdateRecycleTarget Parms{};
-
-	Parms.UIModel = UIModel;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnUpdateSwitch
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalMapObjectSwitchModule*        Module                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalWork_RelicRecycler_C::OnUpdateSwitch(class UPalMapObjectSwitchModule* Module)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "OnUpdateSwitch");
-
-	Params::WBP_PalWork_RelicRecycler_C_OnUpdateSwitch Parms{};
-
-	Parms.Module = Module;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.RefreshBoostDisplay
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalWork_RelicRecycler_C::RefreshBoostDisplay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "RefreshBoostDisplay");
+		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.SetupUI
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_PalWork_RelicRecycler_C::SetupUI()
+void UWBP_PalWork_RelicRecycler_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "SetupUI");
+		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.CloseDetail
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalWork_RelicRecycler_C::CloseDetail()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "CloseDetail");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.CheckLocationEvent
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalWork_RelicRecycler_C::CheckLocationEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWork_RelicRecycler_C", "CheckLocationEvent");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

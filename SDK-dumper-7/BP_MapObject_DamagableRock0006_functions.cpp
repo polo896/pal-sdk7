@@ -17,23 +17,17 @@
 namespace SDK
 {
 
-// Function BP_MapObject_DamagableRock0006.BP_MapObject_DamagableRock0006_C.ExecuteUbergraph_BP_MapObject_DamagableRock0006
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_MapObject_DamagableRock0006.BP_MapObject_DamagableRock0006_C.ReturnToPool
+// (Event, Public, BlueprintEvent)
 
-void ABP_MapObject_DamagableRock0006_C::ExecuteUbergraph_BP_MapObject_DamagableRock0006(int32 EntryPoint)
+void ABP_MapObject_DamagableRock0006_C::ReturnToPool()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_DamagableRock0006_C", "ExecuteUbergraph_BP_MapObject_DamagableRock0006");
+		Func = Class->GetFunction("BP_MapObject_DamagableRock0006_C", "ReturnToPool");
 
-	Params::BP_MapObject_DamagableRock0006_C_ExecuteUbergraph_BP_MapObject_DamagableRock0006 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -51,17 +45,23 @@ void ABP_MapObject_DamagableRock0006_C::InitializeFromPool()
 }
 
 
-// Function BP_MapObject_DamagableRock0006.BP_MapObject_DamagableRock0006_C.ReturnToPool
-// (Event, Public, BlueprintEvent)
+// Function BP_MapObject_DamagableRock0006.BP_MapObject_DamagableRock0006_C.ExecuteUbergraph_BP_MapObject_DamagableRock0006
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MapObject_DamagableRock0006_C::ReturnToPool()
+void ABP_MapObject_DamagableRock0006_C::ExecuteUbergraph_BP_MapObject_DamagableRock0006(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_DamagableRock0006_C", "ReturnToPool");
+		Func = Class->GetFunction("BP_MapObject_DamagableRock0006_C", "ExecuteUbergraph_BP_MapObject_DamagableRock0006");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_MapObject_DamagableRock0006_C_ExecuteUbergraph_BP_MapObject_DamagableRock0006 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

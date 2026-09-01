@@ -14,28 +14,52 @@
 namespace SDK::Params
 {
 
-// Function WBP_PalCraftInfo_Pal.WBP_PalCraftInfo_Pal_C.BindEvent
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_PalCraftInfo_Pal_C_BindEvent final
+// Function WBP_PalCraftInfo_Pal.WBP_PalCraftInfo_Pal_C.UpdateSanity
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_PalCraftInfo_Pal_C_UpdateSanity final
 {
 public:
-	class UPalIndividualCharacterParameter*       paremter;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(float Current, float Last)>    K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(float nowSanity, float oldSanity)> K2Node_CreateDelegate_OutputDelegate_1;        // 0x0018(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         nowSanity;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         oldSanity;                                         // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FTrunc_ReturnValue_1;                     // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_FTrunc_A_ImplicitCast;                    // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_FTrunc_A_ImplicitCast_1;                  // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalCraftInfo_Pal_C_BindEvent;
+DUMPER7_ASSERTS_WBP_PalCraftInfo_Pal_C_UpdateSanity;
 
-// Function WBP_PalCraftInfo_Pal.WBP_PalCraftInfo_Pal_C.ExecuteUbergraph_WBP_PalCraftInfo_Pal
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_PalCraftInfo_Pal_C_ExecuteUbergraph_WBP_PalCraftInfo_Pal final
+// Function WBP_PalCraftInfo_Pal.WBP_PalCraftInfo_Pal_C.UpdateHunger
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_PalCraftInfo_Pal_C_UpdateHunger final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterial*                              K2Node_DynamicCast_AsMaterial;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Current;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Last;                                              // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Divide_DoubleDouble_A_ImplicitCast;       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Divide_DoubleDouble_B_ImplicitCast;       // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetPercent_InPercent_ImplicitCast;        // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalCraftInfo_Pal_C_ExecuteUbergraph_WBP_PalCraftInfo_Pal;
+DUMPER7_ASSERTS_WBP_PalCraftInfo_Pal_C_UpdateHunger;
+
+// Function WBP_PalCraftInfo_Pal.WBP_PalCraftInfo_Pal_C.UnbindEvent
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_PalCraftInfo_Pal_C_UnbindEvent final
+{
+public:
+	TDelegate<void(float Current, float Last)>    K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(float nowSanity, float oldSanity)> K2Node_CreateDelegate_OutputDelegate_1;        // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterHandle*          K2Node_DynamicCast_AsPal_Individual_Character_Handle; // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalIndividualCharacterParameter*       CallFunc_TryGetIndividualParameter_ReturnValue;    // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalCraftInfo_Pal_C_UnbindEvent;
 
 // Function WBP_PalCraftInfo_Pal.WBP_PalCraftInfo_Pal_C.SetTargetPal
 // 0x0070 (0x0070 - 0x0000)
@@ -59,52 +83,28 @@ public:
 };
 DUMPER7_ASSERTS_WBP_PalCraftInfo_Pal_C_SetTargetPal;
 
-// Function WBP_PalCraftInfo_Pal.WBP_PalCraftInfo_Pal_C.UnbindEvent
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_PalCraftInfo_Pal_C_UnbindEvent final
+// Function WBP_PalCraftInfo_Pal.WBP_PalCraftInfo_Pal_C.ExecuteUbergraph_WBP_PalCraftInfo_Pal
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_PalCraftInfo_Pal_C_ExecuteUbergraph_WBP_PalCraftInfo_Pal final
 {
 public:
-	TDelegate<void(float Current, float Last)>    K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(float nowSanity, float oldSanity)> K2Node_CreateDelegate_OutputDelegate_1;        // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalIndividualCharacterHandle*          K2Node_DynamicCast_AsPal_Individual_Character_Handle; // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalIndividualCharacterParameter*       CallFunc_TryGetIndividualParameter_ReturnValue;    // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterial*                              K2Node_DynamicCast_AsMaterial;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalCraftInfo_Pal_C_UnbindEvent;
+DUMPER7_ASSERTS_WBP_PalCraftInfo_Pal_C_ExecuteUbergraph_WBP_PalCraftInfo_Pal;
 
-// Function WBP_PalCraftInfo_Pal.WBP_PalCraftInfo_Pal_C.UpdateHunger
+// Function WBP_PalCraftInfo_Pal.WBP_PalCraftInfo_Pal_C.BindEvent
 // 0x0028 (0x0028 - 0x0000)
-struct WBP_PalCraftInfo_Pal_C_UpdateHunger final
+struct WBP_PalCraftInfo_Pal_C_BindEvent final
 {
 public:
-	float                                         Current;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Last;                                              // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Divide_DoubleDouble_A_ImplicitCast;       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Divide_DoubleDouble_B_ImplicitCast;       // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetPercent_InPercent_ImplicitCast;        // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterParameter*       paremter;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(float Current, float Last)>    K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(float nowSanity, float oldSanity)> K2Node_CreateDelegate_OutputDelegate_1;        // 0x0018(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalCraftInfo_Pal_C_UpdateHunger;
-
-// Function WBP_PalCraftInfo_Pal.WBP_PalCraftInfo_Pal_C.UpdateSanity
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_PalCraftInfo_Pal_C_UpdateSanity final
-{
-public:
-	float                                         nowSanity;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         oldSanity;                                         // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FTrunc_ReturnValue_1;                     // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_FTrunc_A_ImplicitCast;                    // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_FTrunc_A_ImplicitCast_1;                  // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalCraftInfo_Pal_C_UpdateSanity;
+DUMPER7_ASSERTS_WBP_PalCraftInfo_Pal_C_BindEvent;
 
 }
 

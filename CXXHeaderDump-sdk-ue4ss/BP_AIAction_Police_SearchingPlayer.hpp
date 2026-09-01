@@ -36,7 +36,7 @@ class UBP_AIAction_Police_SearchingPlayer_C : public UBP_AIAction_CanCombatBase_
     void ActionResume(class APawn* ControlledPawn);
     void HandleStuck();
     void StartWander();
-    void OnSightCheckAsyncCompleted(bool bIncludedPlayer, bool bIncludedAliveNPC, bool bIncludedEdibleDeadNPC, const TArray<class APalCharacter*>& InSightCharacters);
+    void OnSightCheckAsyncCompleted(bool bIncludedPlayer, bool bIncludedAliveNPC, bool bIncludedEdibleDeadNPC, const TArray<APalCharacter*>& InSightCharacters);
     void ExecuteUbergraph_BP_AIAction_Police_SearchingPlayer(int32 EntryPoint);
     void OnStuck__DelegateSignature();
     void OnArrivedTargetPoint__DelegateSignature();

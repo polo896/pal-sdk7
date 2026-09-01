@@ -17,23 +17,17 @@
 namespace SDK
 {
 
-// Function WBP_Reticle_Bow.WBP_Reticle_Bow_C.ExecuteUbergraph_WBP_Reticle_Bow
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Reticle_Bow.WBP_Reticle_Bow_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Reticle_Bow_C::ExecuteUbergraph_WBP_Reticle_Bow(int32 EntryPoint)
+void UWBP_Reticle_Bow_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Reticle_Bow_C", "ExecuteUbergraph_WBP_Reticle_Bow");
+		Func = Class->GetFunction("WBP_Reticle_Bow_C", "OnInitialized");
 
-	Params::WBP_Reticle_Bow_C_ExecuteUbergraph_WBP_Reticle_Bow Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -59,17 +53,23 @@ void UWBP_Reticle_Bow_C::OnChangeState_Event(bool IsAim, bool IsShoot)
 }
 
 
-// Function WBP_Reticle_Bow.WBP_Reticle_Bow_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Reticle_Bow.WBP_Reticle_Bow_C.ExecuteUbergraph_WBP_Reticle_Bow
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Reticle_Bow_C::OnInitialized()
+void UWBP_Reticle_Bow_C::ExecuteUbergraph_WBP_Reticle_Bow(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Reticle_Bow_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_Reticle_Bow_C", "ExecuteUbergraph_WBP_Reticle_Bow");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Reticle_Bow_C_ExecuteUbergraph_WBP_Reticle_Bow Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

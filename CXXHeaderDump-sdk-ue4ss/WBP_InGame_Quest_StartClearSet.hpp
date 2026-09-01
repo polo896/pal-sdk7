@@ -6,7 +6,7 @@ class UWBP_InGame_Quest_StartClearSet_C : public UPalUserWidget
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0450 (size: 0x8)
     class UWBP_InGame_Quest_StartClear_Main_C* WBP_InGame_Quest_StartClear_Main;      // 0x0458 (size: 0x8)
     class UWBP_InGame_Quest_StartClear_Sub_C* WBP_InGame_Quest_StartClear_Sub;        // 0x0460 (size: 0x8)
-    TMap<class EPalQuestType, class UWBP_InGame_Quest_StartClearBase_C*> WidgetMap;   // 0x0468 (size: 0x50)
+    TMap<EPalQuestType, UWBP_InGame_Quest_StartClearBase_C*> WidgetMap;               // 0x0468 (size: 0x50)
     TArray<FF_PalQuestStartClearNotifyQueData> NotifyQue;                             // 0x04B8 (size: 0x10)
     FName CurrentQuestId;                                                             // 0x04C8 (size: 0x8)
     FWBP_InGame_Quest_StartClearSet_COnStartQuestNotify OnStartQuestNotify;           // 0x04D0 (size: 0x10)

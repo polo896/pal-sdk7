@@ -10,7 +10,7 @@ class UWBP_MainMenu_Pal_State_C : public UUserWidget
     class UCanvasPanel* MainCanvas;                                                   // 0x0298 (size: 0x8)
     class UBP_PalTextBlock_C* Text_StatusName;                                        // 0x02A0 (size: 0x8)
     class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x02A8 (size: 0x8)
-    TArray<class UWidgetAnimation*> animationArray;                                   // 0x02B0 (size: 0x10)
+    TArray<UWidgetAnimation*> animationArray;                                         // 0x02B0 (size: 0x10)
     FWBP_MainMenu_Pal_State_COnHovered OnHovered;                                     // 0x02C0 (size: 0x10)
     void OnHovered(class UWBP_MainMenu_Pal_State_C* StateWidget);
     FWBP_MainMenu_Pal_State_COnUnhovered OnUnhovered;                                 // 0x02D0 (size: 0x10)

@@ -51,11 +51,11 @@ public:
 	struct FVector                                LookAtWorldLocation;                               // 0x11B0(0x0018)(BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AimingOverride(const struct FPoseLink& DefaultPose, const struct FRotator& AimRotator, struct FPoseLink* AimingOverride_0);
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
-	void ExecuteUbergraph_ABP_CatMage_Implementation(int32 EntryPoint);
-	void LookAtOverride(const struct FPoseLink& InPose, const struct FVector& LookAtWorldLocation_0, struct FPoseLink* LookAtOverride_0);
 	void UpperOverride(const struct FPoseLink& NativePose, const struct FPoseLink& ActionPose, struct FPoseLink* UpperOverride_0);
+	void LookAtOverride(const struct FPoseLink& InPose, const struct FVector& LookAtWorldLocation_0, struct FPoseLink* LookAtOverride_0);
+	void ExecuteUbergraph_ABP_CatMage_Implementation(int32 EntryPoint);
+	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void AimingOverride(const struct FPoseLink& DefaultPose, const struct FRotator& AimRotator, struct FPoseLink* AimingOverride_0);
 
 public:
 	static class UClass* StaticClass()

@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "WBP_AssignBoard_WorkListBase_classes.hpp"
 #include "Engine_structs.hpp"
-#include "Pal_structs.hpp"
 #include "UMG_structs.hpp"
+#include "WBP_AssignBoard_WorkListBase_classes.hpp"
+#include "Pal_structs.hpp"
 
 
 namespace SDK
@@ -54,33 +54,33 @@ public:
 	int32                                         AssignableMaxNum;                                  // 0x03A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_DIsable();
-	void AnmEvent_Enable();
-	void AnmEvent_Hover();
-	void AnmEvent_Select();
-	void AnmEvent_Unhover();
-	void AnmEvent_Unselect();
-	void BndEvt__WBP_AssignBoard_WorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_AssignBoard_WorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_AssignBoard_WorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_AssignBoard_WorkList_Common(int32 EntryPoint);
-	void OnInitialized();
-	void OnTimer_UpdateAssignedCharacterDetail();
-	void OnUpdateAssignedCharacter(class UPalWorkBase* Work);
-	void OnUpdateWorkState(class UPalWorkBase* Work);
-	void ResetAssignedChaarcterSlotDetail();
-	void SetupAssignedCharacterSlot();
-	void SetupAssignTargetName();
-	void SetupRecipeDetail();
-	void SetupTitle();
-	void SetupWorkNum();
-	void SetupWorkStatus();
 	void SetupWorkSuitability();
-	void GetFocusTarget(class UWidget** TargetWidget);
-	void Setup();
+	void SetupWorkStatus();
+	void SetupWorkNum();
+	void SetupTitle();
+	void SetupRecipeDetail();
+	void SetupAssignTargetName();
+	void SetupAssignedCharacterSlot();
+	void ResetAssignedChaarcterSlotDetail();
+	void OnUpdateWorkState(class UPalWorkBase* Work);
+	void OnUpdateAssignedCharacter(class UPalWorkBase* Work);
+	void OnTimer_UpdateAssignedCharacterDetail();
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_AssignBoard_WorkList_Common(int32 EntryPoint);
+	void Destruct();
+	void Construct();
+	void BndEvt__WBP_AssignBoard_WorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_AssignBoard_WorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_AssignBoard_WorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void AnmEvent_Unselect();
+	void AnmEvent_Unhover();
+	void AnmEvent_Select();
+	void AnmEvent_Hover();
+	void AnmEvent_Enable();
+	void AnmEvent_DIsable();
 	void Unbind();
+	void Setup();
+	void GetFocusTarget(class UWidget** TargetWidget);
 
 public:
 	static class UClass* StaticClass()

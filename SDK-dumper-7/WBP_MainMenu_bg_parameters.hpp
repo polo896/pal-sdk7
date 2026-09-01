@@ -16,6 +16,24 @@
 namespace SDK::Params
 {
 
+// Function WBP_MainMenu_bg.WBP_MainMenu_bg_C.SetText
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_MainMenu_bg_C_SetText final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_bg_C_SetText;
+
+// Function WBP_MainMenu_bg.WBP_MainMenu_bg_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_MainMenu_bg_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_bg_C_PreConstruct;
+
 // Function WBP_MainMenu_bg.WBP_MainMenu_bg_C.ExecuteUbergraph_WBP_MainMenu_bg
 // 0x0018 (0x0018 - 0x0000)
 struct WBP_MainMenu_bg_C_ExecuteUbergraph_WBP_MainMenu_bg final
@@ -30,24 +48,6 @@ public:
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_MainMenu_bg_C_ExecuteUbergraph_WBP_MainMenu_bg;
-
-// Function WBP_MainMenu_bg.WBP_MainMenu_bg_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_MainMenu_bg_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_bg_C_PreConstruct;
-
-// Function WBP_MainMenu_bg.WBP_MainMenu_bg_C.SetText
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_MainMenu_bg_C_SetText final
-{
-public:
-	class FText                                   Text;                                              // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_bg_C_SetText;
 
 }
 

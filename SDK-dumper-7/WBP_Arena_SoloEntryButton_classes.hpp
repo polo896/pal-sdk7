@@ -48,17 +48,17 @@ public:
 	bool                                          CurrentLock;                                       // 0x0338(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Focus();
-	void AnmEvent_Normal();
-	void BndEvt__WBP_Arena_SoloEntryButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Arena_SoloEntryButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Arena_SoloEntryButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void Construct();
-	void ExecuteUbergraph_WBP_Arena_SoloEntryButton(int32 EntryPoint);
-	void OnInitialized();
-	void SetLock(bool IsLock);
-	void Setup(EPalArenaRank Rank);
 	void ToggleFocusDisplay(bool IsFocus);
+	void Setup(EPalArenaRank Rank);
+	void SetLock(bool IsLock);
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_Arena_SoloEntryButton(int32 EntryPoint);
+	void Construct();
+	void BndEvt__WBP_Arena_SoloEntryButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Arena_SoloEntryButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Arena_SoloEntryButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void AnmEvent_Normal();
+	void AnmEvent_Focus();
 
 public:
 	static class UClass* StaticClass()

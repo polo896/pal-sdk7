@@ -16,7 +16,7 @@ class ABP_Player_ForUI_C : public APalUIDisplayCharacter
     void OnAppliedHairMesh(FLinearColor HairMeshBaseColor);
     bool IsSpawnedGlider;                                                             // 0x02F8 (size: 0x1)
     bool NeedRefreshAnimation;                                                        // 0x02F9 (size: 0x1)
-    TMap<class UMaterialInterface*, class UMaterialInterface*> OverrideMaterialMap;   // 0x0300 (size: 0x50)
+    TMap<UMaterialInterface*, UMaterialInterface*> OverrideMaterialMap;               // 0x0300 (size: 0x50)
 
     void OverrideEquipMaterial(class UPalSkeletalMeshComponent* TargetSkeletalMesh);
     void PlayPlayerAnimation(class UAnimSequence* AnimationSequence);

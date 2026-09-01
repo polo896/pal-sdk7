@@ -41,15 +41,15 @@ public:
 	TMulticastInlineDelegate<void()>              OnUnhovered;                                       // 0x0348(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void AnmEvent_Hover();
-	void AnmEvent_Unhover();
-	void BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void ExecuteUbergraph_WBP_Option_ModMenu_ModList(int32 EntryPoint);
-	void GetModData(struct FPalUIModDisplayData* DisplayData);
-	void GetUniqueId(struct FPalUIModUniqueId* ModUniqueId);
 	void SetModData(const struct FPalUIModDisplayData& ModDisplayData, const struct FPalUIModUniqueId& UniqueId);
+	void GetUniqueId(struct FPalUIModUniqueId* ModUniqueId);
+	void GetModData(struct FPalUIModDisplayData* DisplayData);
+	void ExecuteUbergraph_WBP_Option_ModMenu_ModList(int32 EntryPoint);
+	void BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void AnmEvent_Unhover();
+	void AnmEvent_Hover();
 
 public:
 	static class UClass* StaticClass()

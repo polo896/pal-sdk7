@@ -33,27 +33,27 @@ public:
 	bool                                          bValidTarget;                                      // 0x0480(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void CheckLocationEvent();
-	void CloseDetail();
-	void Construct();
-	void Destruct();
-	void DisplayDetail();
-	void ExecuteUbergraph_WBP_PalWork_RelicRecycler(int32 EntryPoint);
-	void OnReadyEnergyModule(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module);
-	void OnReadyItemContainerModule(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module);
-	void OnReadySwitchModule(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module);
-	void OnReadyWork(class UPalMapObjectWorkeeModule* Module, class UPalWorkBase* Work);
-	void OnReadyWorkeeModule(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module);
-	void OnReflectWorkProgress(class UPalWorkProgress* WorkProgress);
-	void OnSetup();
-	void OnUpdateBoost(class UPalUIMapObjectRecyclerStatusIndicatorModel* UIModel);
-	void OnUpdatedWorkerPal(class UPalWorkBase* Work);
-	void OnUpdateItemContainerContent(class UPalMapObjectItemContainerModule* Module);
-	void OnUpdateItemContainerContent_Internal(class UPalMapObjectItemContainerModule* Module, bool bInitial);
-	void OnUpdateRecycleTarget(class UPalUIMapObjectRecyclerStatusIndicatorModel* UIModel);
-	void OnUpdateSwitch(class UPalMapObjectSwitchModule* Module);
-	void RefreshBoostDisplay();
 	void SetupUI();
+	void RefreshBoostDisplay();
+	void OnUpdateSwitch(class UPalMapObjectSwitchModule* Module);
+	void OnUpdateRecycleTarget(class UPalUIMapObjectRecyclerStatusIndicatorModel* UIModel);
+	void OnUpdateItemContainerContent_Internal(class UPalMapObjectItemContainerModule* Module, bool bInitial);
+	void OnUpdateItemContainerContent(class UPalMapObjectItemContainerModule* Module);
+	void OnUpdatedWorkerPal(class UPalWorkBase* Work);
+	void OnUpdateBoost(class UPalUIMapObjectRecyclerStatusIndicatorModel* UIModel);
+	void OnSetup();
+	void OnReflectWorkProgress(class UPalWorkProgress* WorkProgress);
+	void OnReadyWorkeeModule(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module);
+	void OnReadyWork(class UPalMapObjectWorkeeModule* Module, class UPalWorkBase* Work);
+	void OnReadySwitchModule(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module);
+	void OnReadyItemContainerModule(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module);
+	void OnReadyEnergyModule(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module);
+	void ExecuteUbergraph_WBP_PalWork_RelicRecycler(int32 EntryPoint);
+	void DisplayDetail();
+	void Destruct();
+	void Construct();
+	void CloseDetail();
+	void CheckLocationEvent();
 
 public:
 	static class UClass* StaticClass()

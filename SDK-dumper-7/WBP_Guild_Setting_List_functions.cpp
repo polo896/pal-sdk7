@@ -17,61 +17,81 @@
 namespace SDK
 {
 
-// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.BndEvt__WBP_Guild_Setting_List_WBP_OptionSettings_ListContentSwitch_K2Node_ComponentBoundEvent_1_OnSwitcherChanged__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.SetupOnOff
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsOn                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Guild_Setting_List_C::BndEvt__WBP_Guild_Setting_List_WBP_OptionSettings_ListContentSwitch_K2Node_ComponentBoundEvent_1_OnSwitcherChanged__DelegateSignature(bool IsOn)
+void UWBP_Guild_Setting_List_C::SetupOnOff(bool bIsOn)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_Setting_List_C", "BndEvt__WBP_Guild_Setting_List_WBP_OptionSettings_ListContentSwitch_K2Node_ComponentBoundEvent_1_OnSwitcherChanged__DelegateSignature");
+		Func = Class->GetFunction("WBP_Guild_Setting_List_C", "SetupOnOff");
 
-	Params::WBP_Guild_Setting_List_C_BndEvt__WBP_Guild_Setting_List_WBP_OptionSettings_ListContentSwitch_K2Node_ComponentBoundEvent_1_OnSwitcherChanged__DelegateSignature Parms{};
+	Params::WBP_Guild_Setting_List_C_SetupOnOff Parms{};
 
-	Parms.IsOn = IsOn;
+	Parms.bIsOn = bIsOn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.BndEvt__WBP_Guild_Setting_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.SetText
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_Guild_Setting_List_C::BndEvt__WBP_Guild_Setting_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Guild_Setting_List_C::SetText(const class FText& InText)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_Setting_List_C", "BndEvt__WBP_Guild_Setting_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Guild_Setting_List_C", "SetText");
 
-	Params::WBP_Guild_Setting_List_C_BndEvt__WBP_Guild_Setting_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_Guild_Setting_List_C_SetText Parms{};
 
-	Parms.Button = Button;
+	Parms.InText = std::move(InText);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.ExecuteUbergraph_WBP_Guild_Setting_List
-// (Final, UbergraphFunction)
+// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.SetPermissionType
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalGuildPermission                     PermissionType                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Guild_Setting_List_C::ExecuteUbergraph_WBP_Guild_Setting_List(int32 EntryPoint)
+void UWBP_Guild_Setting_List_C::SetPermissionType(EPalGuildPermission PermissionType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_Setting_List_C", "ExecuteUbergraph_WBP_Guild_Setting_List");
+		Func = Class->GetFunction("WBP_Guild_Setting_List_C", "SetPermissionType");
 
-	Params::WBP_Guild_Setting_List_C_ExecuteUbergraph_WBP_Guild_Setting_List Parms{};
+	Params::WBP_Guild_Setting_List_C_SetPermissionType Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.PermissionType = PermissionType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.SetEnableSetting
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bEnable                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Guild_Setting_List_C::SetEnableSetting(bool bEnable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Guild_Setting_List_C", "SetEnableSetting");
+
+	Params::WBP_Guild_Setting_List_C_SetEnableSetting Parms{};
+
+	Parms.bEnable = bEnable;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -98,81 +118,61 @@ void UWBP_Guild_Setting_List_C::GetPermissionType(EPalGuildPermission* Permissio
 }
 
 
-// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.SetEnableSetting
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.ExecuteUbergraph_WBP_Guild_Setting_List
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    bEnable                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Guild_Setting_List_C::SetEnableSetting(bool bEnable)
+void UWBP_Guild_Setting_List_C::ExecuteUbergraph_WBP_Guild_Setting_List(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_Setting_List_C", "SetEnableSetting");
+		Func = Class->GetFunction("WBP_Guild_Setting_List_C", "ExecuteUbergraph_WBP_Guild_Setting_List");
 
-	Params::WBP_Guild_Setting_List_C_SetEnableSetting Parms{};
+	Params::WBP_Guild_Setting_List_C_ExecuteUbergraph_WBP_Guild_Setting_List Parms{};
 
-	Parms.bEnable = bEnable;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.SetPermissionType
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.BndEvt__WBP_Guild_Setting_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// EPalGuildPermission                     PermissionType                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Guild_Setting_List_C::SetPermissionType(EPalGuildPermission PermissionType)
+void UWBP_Guild_Setting_List_C::BndEvt__WBP_Guild_Setting_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_Setting_List_C", "SetPermissionType");
+		Func = Class->GetFunction("WBP_Guild_Setting_List_C", "BndEvt__WBP_Guild_Setting_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_Guild_Setting_List_C_SetPermissionType Parms{};
+	Params::WBP_Guild_Setting_List_C_BndEvt__WBP_Guild_Setting_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
 
-	Parms.PermissionType = PermissionType;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.SetText
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.BndEvt__WBP_Guild_Setting_List_WBP_OptionSettings_ListContentSwitch_K2Node_ComponentBoundEvent_1_OnSwitcherChanged__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Guild_Setting_List_C::SetText(const class FText& InText)
+void UWBP_Guild_Setting_List_C::BndEvt__WBP_Guild_Setting_List_WBP_OptionSettings_ListContentSwitch_K2Node_ComponentBoundEvent_1_OnSwitcherChanged__DelegateSignature(bool IsOn)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_Setting_List_C", "SetText");
+		Func = Class->GetFunction("WBP_Guild_Setting_List_C", "BndEvt__WBP_Guild_Setting_List_WBP_OptionSettings_ListContentSwitch_K2Node_ComponentBoundEvent_1_OnSwitcherChanged__DelegateSignature");
 
-	Params::WBP_Guild_Setting_List_C_SetText Parms{};
+	Params::WBP_Guild_Setting_List_C_BndEvt__WBP_Guild_Setting_List_WBP_OptionSettings_ListContentSwitch_K2Node_ComponentBoundEvent_1_OnSwitcherChanged__DelegateSignature Parms{};
 
-	Parms.InText = std::move(InText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.SetupOnOff
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsOn                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Guild_Setting_List_C::SetupOnOff(bool bIsOn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Guild_Setting_List_C", "SetupOnOff");
-
-	Params::WBP_Guild_Setting_List_C_SetupOnOff Parms{};
-
-	Parms.bIsOn = bIsOn;
+	Parms.IsOn = IsOn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

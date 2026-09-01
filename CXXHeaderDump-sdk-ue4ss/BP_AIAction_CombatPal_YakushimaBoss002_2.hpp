@@ -3,6 +3,6 @@
 
 class UBP_AIAction_CombatPal_YakushimaBoss002_2_C : public UBP_AIAction_CombatPal_YakushimaBoss002_C
 {
-}; // Size: 0x25C
+}; // Size: 0x26C
 
 #endif

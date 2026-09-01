@@ -18,17 +18,42 @@
 namespace SDK::Params
 {
 
-// Function WBP_RadialMenu_base.WBP_RadialMenu_base_C.ExecuteUbergraph_WBP_RadialMenu_base
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_RadialMenu_base_C_ExecuteUbergraph_WBP_RadialMenu_base final
+// Function WBP_RadialMenu_base.WBP_RadialMenu_base_C.SetVisibilityCenterBaseImage
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_RadialMenu_base_C_SetVisibilityCenterBaseImage final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              NewVisibility;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_RadialMenu_base_C_ExecuteUbergraph_WBP_RadialMenu_base;
+DUMPER7_ASSERTS_WBP_RadialMenu_base_C_SetVisibilityCenterBaseImage;
+
+// Function WBP_RadialMenu_base.WBP_RadialMenu_base_C.SetVisibilityArrow
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_RadialMenu_base_C_SetVisibilityArrow final
+{
+public:
+	ESlateVisibility                              NewVisibility;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_RadialMenu_base_C_SetVisibilityArrow;
+
+// Function WBP_RadialMenu_base.WBP_RadialMenu_base_C.SetArrowVisible
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_RadialMenu_base_C_SetArrowVisible final
+{
+public:
+	ESlateVisibility                              Visibility_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_RadialMenu_base_C_SetArrowVisible;
+
+// Function WBP_RadialMenu_base.WBP_RadialMenu_base_C.SetArrowAngle
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_RadialMenu_base_C_SetArrowAngle final
+{
+public:
+	double                                        angleDegree;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetRenderTransformAngle_Angle_ImplicitCast; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_RadialMenu_base_C_SetArrowAngle;
 
 // Function WBP_RadialMenu_base.WBP_RadialMenu_base_C.GetCenterPosition
 // 0x0090 (0x0090 - 0x0000)
@@ -44,42 +69,17 @@ public:
 };
 DUMPER7_ASSERTS_WBP_RadialMenu_base_C_GetCenterPosition;
 
-// Function WBP_RadialMenu_base.WBP_RadialMenu_base_C.SetArrowAngle
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_RadialMenu_base_C_SetArrowAngle final
+// Function WBP_RadialMenu_base.WBP_RadialMenu_base_C.ExecuteUbergraph_WBP_RadialMenu_base
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_RadialMenu_base_C_ExecuteUbergraph_WBP_RadialMenu_base final
 {
 public:
-	double                                        angleDegree;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetRenderTransformAngle_Angle_ImplicitCast; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_RadialMenu_base_C_SetArrowAngle;
-
-// Function WBP_RadialMenu_base.WBP_RadialMenu_base_C.SetArrowVisible
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_RadialMenu_base_C_SetArrowVisible final
-{
-public:
-	ESlateVisibility                              Visibility_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_RadialMenu_base_C_SetArrowVisible;
-
-// Function WBP_RadialMenu_base.WBP_RadialMenu_base_C.SetVisibilityArrow
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_RadialMenu_base_C_SetVisibilityArrow final
-{
-public:
-	ESlateVisibility                              NewVisibility;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_RadialMenu_base_C_SetVisibilityArrow;
-
-// Function WBP_RadialMenu_base.WBP_RadialMenu_base_C.SetVisibilityCenterBaseImage
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_RadialMenu_base_C_SetVisibilityCenterBaseImage final
-{
-public:
-	ESlateVisibility                              NewVisibility;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_RadialMenu_base_C_SetVisibilityCenterBaseImage;
+DUMPER7_ASSERTS_WBP_RadialMenu_base_C_ExecuteUbergraph_WBP_RadialMenu_base;
 
 }
 

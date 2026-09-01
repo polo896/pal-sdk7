@@ -16,50 +16,6 @@
 namespace SDK::Params
 {
 
-// Function BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C.SpawnWave
-// 0x0058 (0x0058 - 0x0000)
-struct BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C_SpawnWave final
-{
-public:
-	struct FPalBossBattleEventBossRushWave        WaveInfo;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPalBossBattleEventSpawnCharacterInfo  CallFunc_Array_Get_Item;                           // 0x0018(0x0030)(NoDestructor)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C_SpawnWave;
-
-// Function BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C.OnSpawnCharacter
-// 0x0008 (0x0008 - 0x0000)
-struct BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C_OnSpawnCharacter final
-{
-public:
-	class UPalIndividualCharacterHandle*          SpawnHandle;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C_OnSpawnCharacter;
-
-// Function BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C.OnDead
-// 0x0050 (0x0050 - 0x0000)
-struct BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C_OnDead final
-{
-public:
-	struct FPalDeadInfo                           DeadInfo;                                          // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-DUMPER7_ASSERTS_BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C_OnDead;
-
-// Function BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C.GetWaveList
-// 0x0010 (0x0010 - 0x0000)
-struct BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C_GetWaveList final
-{
-public:
-	TArray<struct FPalBossBattleEventBossRushWave> WaveList_0;                                       // 0x0000(0x0010)(Parm, OutParm)
-};
-DUMPER7_ASSERTS_BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C_GetWaveList;
-
 // Function BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C.ExecuteUbergraph_BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal
 // 0x0110 (0x0110 - 0x0000)
 struct BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C_ExecuteUbergraph_BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal final
@@ -100,6 +56,50 @@ public:
 	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C_ExecuteUbergraph_BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal;
+
+// Function BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C.GetWaveList
+// 0x0010 (0x0010 - 0x0000)
+struct BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C_GetWaveList final
+{
+public:
+	TArray<struct FPalBossBattleEventBossRushWave> WaveList_0;                                       // 0x0000(0x0010)(Parm, OutParm)
+};
+DUMPER7_ASSERTS_BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C_GetWaveList;
+
+// Function BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C.OnDead
+// 0x0050 (0x0050 - 0x0000)
+struct BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C_OnDead final
+{
+public:
+	struct FPalDeadInfo                           DeadInfo;                                          // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C_OnDead;
+
+// Function BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C.OnSpawnCharacter
+// 0x0008 (0x0008 - 0x0000)
+struct BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C_OnSpawnCharacter final
+{
+public:
+	class UPalIndividualCharacterHandle*          SpawnHandle;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C_OnSpawnCharacter;
+
+// Function BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C.SpawnWave
+// 0x0058 (0x0058 - 0x0000)
+struct BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C_SpawnWave final
+{
+public:
+	struct FPalBossBattleEventBossRushWave        WaveInfo;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalBossBattleEventSpawnCharacterInfo  CallFunc_Array_Get_Item;                           // 0x0018(0x0030)(NoDestructor)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C_SpawnWave;
 
 // Function BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C.IsBossCleared
 // 0x0001 (0x0001 - 0x0000)

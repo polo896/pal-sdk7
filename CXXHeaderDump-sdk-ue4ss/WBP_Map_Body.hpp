@@ -37,7 +37,7 @@ class UWBP_Map_Body_C : public UPalUserWidget
     void OnUnhoveredAnyIcon(class UWBP_WorldMap_IconBase_NoDesign_C* IconWidget);
     FWBP_Map_Body_COnClickedAnyIcon OnClickedAnyIcon;                                 // 0x0560 (size: 0x10)
     void OnClickedAnyIcon(class UWBP_WorldMap_IconBase_NoDesign_C* IconWidget);
-    TMap<class UWBP_Map_IconPlayer_C*, class APalPlayerState*> PlayerIconMaps;        // 0x0570 (size: 0x50)
+    TMap<UWBP_Map_IconPlayer_C*, APalPlayerState*> PlayerIconMaps;                    // 0x0570 (size: 0x50)
     FTimerHandle PlayerIconUpdateTimer;                                               // 0x05C0 (size: 0x8)
     double CanvasMaskMult;                                                            // 0x05C8 (size: 0x8)
     bool CursorOnMap;                                                                 // 0x05D0 (size: 0x1)
@@ -81,7 +81,7 @@ class UWBP_Map_Body_C : public UPalUserWidget
     void Update Map Icons();
     void AdjustScrollForRespawn();
     void Adjust Scroll Local Player Position();
-    void Setup Player Icon(TArray<class UWBP_Map_IconPlayer_C*>& PlayerIcons);
+    void Setup Player Icon(TArray<UWBP_Map_IconPlayer_C*>& PlayerIcons);
     void Setup();
     void Add Icon By Location(class UWBP_WorldMap_IconBase_NoDesign_C* Widget, FVector WorldLocation, bool IgnoreMask, bool ToPriority, bool& added);
     FEventReply OnMouseButtonDown(FGeometry MyGeometry, const FPointerEvent& MouseEvent);

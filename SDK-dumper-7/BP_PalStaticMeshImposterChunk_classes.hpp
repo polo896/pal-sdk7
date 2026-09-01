@@ -27,9 +27,9 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x02B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Dev_SetChunkVisible(const bool bVisible);
-	void ExecuteUbergraph_BP_PalStaticMeshImposterChunk(int32 EntryPoint);
 	void OnSetChunkGridSize(const int32 NewChunkGridSize);
+	void ExecuteUbergraph_BP_PalStaticMeshImposterChunk(int32 EntryPoint);
+	void Dev_SetChunkVisible(const bool bVisible);
 
 public:
 	static class UClass* StaticClass()

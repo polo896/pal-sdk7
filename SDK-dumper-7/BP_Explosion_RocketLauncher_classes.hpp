@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "BP_ExplosionAttackBase_classes.hpp"
 #include "Pal_structs.hpp"
+#include "BP_ExplosionAttackBase_classes.hpp"
 
 
 namespace SDK
@@ -20,7 +20,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_Explosion_RocketLauncher.BP_Explosion_RocketLauncher_C
 // 0x0010 (0x0328 - 0x0318)
-class ABP_Explosion_RocketLauncher_C : public ABP_ExplosionAttackBase_C
+class ABP_Explosion_RocketLauncher_C final : public ABP_ExplosionAttackBase_C
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_Explosion_RocketLauncher_C;      // 0x0318(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

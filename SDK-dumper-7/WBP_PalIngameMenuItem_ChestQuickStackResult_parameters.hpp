@@ -32,23 +32,6 @@ public:
 };
 DUMPER7_ASSERTS_WBP_PalIngameMenuItem_ChestQuickStackResult_C_ExecuteUbergraph_WBP_PalIngameMenuItem_ChestQuickStackResult;
 
-// Function WBP_PalIngameMenuItem_ChestQuickStackResult.WBP_PalIngameMenuItem_ChestQuickStackResult_C.QueStackItemResult
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_PalIngameMenuItem_ChestQuickStackResult_C_QueStackItemResult final
-{
-public:
-	TArray<struct FPalStaticItemIdAndNum>         StackInfos;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	int32                                         Temp_int_Variable;                                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalIngameMenuItem_ChestQuickStackResult_C_QueStackItemResult;
-
 // Function WBP_PalIngameMenuItem_ChestQuickStackResult.WBP_PalIngameMenuItem_ChestQuickStackResult_C.RefreshQue
 // 0x00B8 (0x00B8 - 0x0000)
 struct WBP_PalIngameMenuItem_ChestQuickStackResult_C_RefreshQue final
@@ -74,6 +57,23 @@ public:
 	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_PalIngameMenuItem_ChestQuickStackResult_C_RefreshQue;
+
+// Function WBP_PalIngameMenuItem_ChestQuickStackResult.WBP_PalIngameMenuItem_ChestQuickStackResult_C.QueStackItemResult
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_PalIngameMenuItem_ChestQuickStackResult_C_QueStackItemResult final
+{
+public:
+	TArray<struct FPalStaticItemIdAndNum>         StackInfos;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	int32                                         Temp_int_Variable;                                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalIngameMenuItem_ChestQuickStackResult_C_QueStackItemResult;
 
 }
 

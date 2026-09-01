@@ -7,22 +7,22 @@ class ABP_PalRandomIncidentNPCSpawner_C : public APalRandomIncidentNPCSpawner
     class USceneComponent* DefaultSceneRoot;                                          // 0x0640 (size: 0x8)
     double ReturnRadius;                                                              // 0x0648 (size: 0x8)
     double WalkRadius;                                                                // 0x0650 (size: 0x8)
-    TMap<class FName, class FF_NPC_PathWalkArray> WalkPathLists;                      // 0x0658 (size: 0x50)
-    TArray<class UPalIndividualCharacterHandle*> IndividualHandleList;                // 0x06A8 (size: 0x10)
-    TMap<class UPalIndividualCharacterHandle*, class FPalRandomIncidentSpawnMonsterData> MonsterSpawnData; // 0x06B8 (size: 0x50)
-    TMap<class UPalIndividualCharacterHandle*, class FPalRandomIncidentSpawnNPCData> NPCSpawnData; // 0x0708 (size: 0x50)
-    TMap<class UPalIndividualCharacterHandle*, class FName> PathNames;                // 0x0758 (size: 0x50)
-    TMap<class UPalIndividualCharacterHandle*, class FName> RowNames;                 // 0x07A8 (size: 0x50)
+    TMap<FName, FF_NPC_PathWalkArray> WalkPathLists;                                  // 0x0658 (size: 0x50)
+    TArray<UPalIndividualCharacterHandle*> IndividualHandleList;                      // 0x06A8 (size: 0x10)
+    TMap<UPalIndividualCharacterHandle*, FPalRandomIncidentSpawnMonsterData> MonsterSpawnData; // 0x06B8 (size: 0x50)
+    TMap<UPalIndividualCharacterHandle*, FPalRandomIncidentSpawnNPCData> NPCSpawnData; // 0x0708 (size: 0x50)
+    TMap<UPalIndividualCharacterHandle*, FName> PathNames;                            // 0x0758 (size: 0x50)
+    TMap<UPalIndividualCharacterHandle*, FName> RowNames;                             // 0x07A8 (size: 0x50)
     FBP_PalRandomIncidentNPCSpawner_CGetWalkPathDelegate GetWalkPathDelegate;         // 0x07F8 (size: 0x10)
     void GetWalkPathDelegate(FName NewParam);
-    TMap<class UPalIndividualCharacterHandle*, class FVector> SpawnedLocation;        // 0x0808 (size: 0x50)
-    TMap<class UPalIndividualCharacterHandle*, class FName> OtomoNames;               // 0x0858 (size: 0x50)
+    TMap<UPalIndividualCharacterHandle*, FVector> SpawnedLocation;                    // 0x0808 (size: 0x50)
+    TMap<UPalIndividualCharacterHandle*, FName> OtomoNames;                           // 0x0858 (size: 0x50)
 
     void OnOtomoSpawned(class AController* HolderController, class APalCharacter* OtomoPal);
     void GetGroupNo(class UPalIndividualCharacterHandle* IndividualHandle, int32& GroupNo);
     void GetSpawnedLocation(class UPalIndividualCharacterHandle* Handle, bool& Found, FVector& SpawnedLocation);
-    void GetSpawnedCharacters(TArray<class AActor*>& SpawnedCharacters);
-    void SetWalkPathList(TMap<class FName, class FF_NPC_PathWalkArray> PathList);
+    void GetSpawnedCharacters(TArray<AActor*>& SpawnedCharacters);
+    void SetWalkPathList(TMap<FName, FF_NPC_PathWalkArray> PathList);
     class APalCharacter* FindCharacterByName(const FName& Name);
     void GetHandleByCharacter(class APalCharacter* Character, class UPalIndividualCharacterHandle*& Handle);
     void Setup Npc Controller(class ABP_NPCAIController_C* NPCController, class APalCharacter* SpawnedChara, FPalInstanceID ID);

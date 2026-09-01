@@ -17,196 +17,19 @@
 namespace SDK
 {
 
-// Function WBP_Map_IconQuest.WBP_Map_IconQuest_C.SetupForceVisibility
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   bChangedVisibility                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Map_IconQuest_C::SetupForceVisibility(bool* bChangedVisibility)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconQuest_C", "SetupForceVisibility");
-
-	Params::WBP_Map_IconQuest_C_SetupForceVisibility Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (bChangedVisibility != nullptr)
-		*bChangedVisibility = Parms.bChangedVisibility;
-}
-
-
-// Function WBP_Map_IconQuest.WBP_Map_IconQuest_C.Setup_Internal
-// (Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalLocationPoint*                LocationPoint                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Map_IconQuest_C::Setup_Internal(class UPalLocationPoint* LocationPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconQuest_C", "Setup_Internal");
-
-	Params::WBP_Map_IconQuest_C_Setup_Internal Parms{};
-
-	Parms.LocationPoint = LocationPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Map_IconQuest.WBP_Map_IconQuest_C.SetTexture
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Map_IconQuest_C::SetTexture(class UTexture2D* Texture)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconQuest_C", "SetTexture");
-
-	Params::WBP_Map_IconQuest_C_SetTexture Parms{};
-
-	Parms.Texture = Texture;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Map_IconQuest.WBP_Map_IconQuest_C.SetAreaRangeWidgetScale
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  InScale                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Map_IconQuest_C::SetAreaRangeWidgetScale(double InScale)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconQuest_C", "SetAreaRangeWidgetScale");
-
-	Params::WBP_Map_IconQuest_C_SetAreaRangeWidgetScale Parms{};
-
-	Parms.InScale = InScale;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Map_IconQuest.WBP_Map_IconQuest_C.OnMainVisibilityChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESlateVisibility                        InVisibility                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Map_IconQuest_C::OnMainVisibilityChanged(ESlateVisibility InVisibility)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconQuest_C", "OnMainVisibilityChanged");
-
-	Params::WBP_Map_IconQuest_C_OnMainVisibilityChanged Parms{};
-
-	Parms.InVisibility = InVisibility;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Map_IconQuest.WBP_Map_IconQuest_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Map_IconQuest_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconQuest_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Map_IconQuest.WBP_Map_IconQuest_C.GetQuestId
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class FName*                            QuestId                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Map_IconQuest_C::GetQuestId(class FName* QuestId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconQuest_C", "GetQuestId");
-
-	Params::WBP_Map_IconQuest_C_GetQuestId Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (QuestId != nullptr)
-		*QuestId = Parms.QuestId;
-}
-
-
-// Function WBP_Map_IconQuest.WBP_Map_IconQuest_C.GetInvisibleButton
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWidget**                         Button                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Map_IconQuest_C::GetInvisibleButton(class UWidget** Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconQuest_C", "GetInvisibleButton");
-
-	Params::WBP_Map_IconQuest_C_GetInvisibleButton Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Button != nullptr)
-		*Button = Parms.Button;
-}
-
-
-// Function WBP_Map_IconQuest.WBP_Map_IconQuest_C.ExecuteUbergraph_WBP_Map_IconQuest
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Map_IconQuest_C::ExecuteUbergraph_WBP_Map_IconQuest(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconQuest_C", "ExecuteUbergraph_WBP_Map_IconQuest");
-
-	Params::WBP_Map_IconQuest_C_ExecuteUbergraph_WBP_Map_IconQuest Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Map_IconQuest.WBP_Map_IconQuest_C.BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_Map_IconQuest.WBP_Map_IconQuest_C.BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Map_IconQuest_C::BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Map_IconQuest_C::BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconQuest_C", "BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Map_IconQuest_C", "BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_Map_IconQuest_C_BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_Map_IconQuest_C_BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -234,23 +57,200 @@ void UWBP_Map_IconQuest_C::BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node
 }
 
 
-// Function WBP_Map_IconQuest.WBP_Map_IconQuest_C.BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_Map_IconQuest.WBP_Map_IconQuest_C.BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Map_IconQuest_C::BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Map_IconQuest_C::BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconQuest_C", "BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Map_IconQuest_C", "BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_Map_IconQuest_C_BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_Map_IconQuest_C_BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Map_IconQuest.WBP_Map_IconQuest_C.ExecuteUbergraph_WBP_Map_IconQuest
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Map_IconQuest_C::ExecuteUbergraph_WBP_Map_IconQuest(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Map_IconQuest_C", "ExecuteUbergraph_WBP_Map_IconQuest");
+
+	Params::WBP_Map_IconQuest_C_ExecuteUbergraph_WBP_Map_IconQuest Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Map_IconQuest.WBP_Map_IconQuest_C.GetInvisibleButton
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWidget**                         Button                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Map_IconQuest_C::GetInvisibleButton(class UWidget** Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Map_IconQuest_C", "GetInvisibleButton");
+
+	Params::WBP_Map_IconQuest_C_GetInvisibleButton Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Button != nullptr)
+		*Button = Parms.Button;
+}
+
+
+// Function WBP_Map_IconQuest.WBP_Map_IconQuest_C.GetQuestId
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class FName*                            QuestId                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Map_IconQuest_C::GetQuestId(class FName* QuestId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Map_IconQuest_C", "GetQuestId");
+
+	Params::WBP_Map_IconQuest_C_GetQuestId Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (QuestId != nullptr)
+		*QuestId = Parms.QuestId;
+}
+
+
+// Function WBP_Map_IconQuest.WBP_Map_IconQuest_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Map_IconQuest_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Map_IconQuest_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Map_IconQuest.WBP_Map_IconQuest_C.OnMainVisibilityChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESlateVisibility                        InVisibility                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Map_IconQuest_C::OnMainVisibilityChanged(ESlateVisibility InVisibility)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Map_IconQuest_C", "OnMainVisibilityChanged");
+
+	Params::WBP_Map_IconQuest_C_OnMainVisibilityChanged Parms{};
+
+	Parms.InVisibility = InVisibility;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Map_IconQuest.WBP_Map_IconQuest_C.SetAreaRangeWidgetScale
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  InScale                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Map_IconQuest_C::SetAreaRangeWidgetScale(double InScale)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Map_IconQuest_C", "SetAreaRangeWidgetScale");
+
+	Params::WBP_Map_IconQuest_C_SetAreaRangeWidgetScale Parms{};
+
+	Parms.InScale = InScale;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Map_IconQuest.WBP_Map_IconQuest_C.SetTexture
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Map_IconQuest_C::SetTexture(class UTexture2D* Texture)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Map_IconQuest_C", "SetTexture");
+
+	Params::WBP_Map_IconQuest_C_SetTexture Parms{};
+
+	Parms.Texture = Texture;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Map_IconQuest.WBP_Map_IconQuest_C.Setup_Internal
+// (Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalLocationPoint*                LocationPoint                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Map_IconQuest_C::Setup_Internal(class UPalLocationPoint* LocationPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Map_IconQuest_C", "Setup_Internal");
+
+	Params::WBP_Map_IconQuest_C_Setup_Internal Parms{};
+
+	Parms.LocationPoint = LocationPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Map_IconQuest.WBP_Map_IconQuest_C.SetupForceVisibility
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   bChangedVisibility                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Map_IconQuest_C::SetupForceVisibility(bool* bChangedVisibility)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Map_IconQuest_C", "SetupForceVisibility");
+
+	Params::WBP_Map_IconQuest_C_SetupForceVisibility Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (bChangedVisibility != nullptr)
+		*bChangedVisibility = Parms.bChangedVisibility;
 }
 
 }

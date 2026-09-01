@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function WBP_PalKeyGuideIconAndText.WBP_PalKeyGuideIconAndText_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_PalKeyGuideIconAndText_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalKeyGuideIconAndText_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_PalKeyGuideIconAndText.WBP_PalKeyGuideIconAndText_C.ExecuteUbergraph_WBP_PalKeyGuideIconAndText
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -34,20 +48,6 @@ void UWBP_PalKeyGuideIconAndText_C::ExecuteUbergraph_WBP_PalKeyGuideIconAndText(
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalKeyGuideIconAndText.WBP_PalKeyGuideIconAndText_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PalKeyGuideIconAndText_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalKeyGuideIconAndText_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

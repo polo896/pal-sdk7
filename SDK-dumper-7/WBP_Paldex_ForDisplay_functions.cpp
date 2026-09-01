@@ -17,293 +17,133 @@
 namespace SDK
 {
 
-// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_0_OnClickedFilteringButton__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Paldex_ForDisplay_C::BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_0_OnClickedFilteringButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_0_OnClickedFilteringButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_1_OnClickedModelTab__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Paldex_ForDisplay_C::BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_1_OnClickedModelTab__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_1_OnClickedModelTab__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_2_OnClickedDistributionTab__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Paldex_ForDisplay_C::BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_2_OnClickedDistributionTab__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_2_OnClickedDistributionTab__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_3_OnClickedAnyPalPanel__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             CharacterID                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Paldex_ForDisplay_C::BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_3_OnClickedAnyPalPanel__DelegateSignature(class FName CharacterID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_3_OnClickedAnyPalPanel__DelegateSignature");
-
-	Params::WBP_Paldex_ForDisplay_C_BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_3_OnClickedAnyPalPanel__DelegateSignature Parms{};
-
-	Parms.CharacterID = CharacterID;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.Change Map Zoom Rate
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Paldex_ForDisplay_C::Change_Map_Zoom_Rate()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "Change Map Zoom Rate");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.ChangeDistributionTime
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Paldex_ForDisplay_C::ChangeDistributionTime()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "ChangeDistributionTime");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Paldex_ForDisplay_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.DelayScrollToCharacterID
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             CharacterID                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Paldex_ForDisplay_C::DelayScrollToCharacterID(class FName CharacterID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "DelayScrollToCharacterID");
-
-	Params::WBP_Paldex_ForDisplay_C_DelayScrollToCharacterID Parms{};
-
-	Parms.CharacterID = CharacterID;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.ExecuteUbergraph_WBP_Paldex_ForDisplay
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Paldex_ForDisplay_C::ExecuteUbergraph_WBP_Paldex_ForDisplay(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "ExecuteUbergraph_WBP_Paldex_ForDisplay");
-
-	Params::WBP_Paldex_ForDisplay_C_ExecuteUbergraph_WBP_Paldex_ForDisplay Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.FilteringInternal
+// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.UpdateNewFlag
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIgnoreFocus                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             CharacterID                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Paldex_ForDisplay_C::FilteringInternal(bool bIgnoreFocus)
+void UWBP_Paldex_ForDisplay_C::UpdateNewFlag(class FName CharacterID)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "FilteringInternal");
+		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "UpdateNewFlag");
 
-	Params::WBP_Paldex_ForDisplay_C_FilteringInternal Parms{};
+	Params::WBP_Paldex_ForDisplay_C_UpdateNewFlag Parms{};
 
-	Parms.bIgnoreFocus = bIgnoreFocus;
+	Parms.CharacterID = CharacterID;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.OnAnalogValueChanged
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.ToModelDisplayMode
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Paldex_ForDisplay_C::ToModelDisplayMode()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "ToModelDisplayMode");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.ToDistributionDisplayMode
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Paldex_ForDisplay_C::ToDistributionDisplayMode()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "ToDistributionDisplayMode");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.SwitchDistributionTime
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// const struct FAnalogInputEvent&         InAnalogInputEvent                                     (BlueprintVisible, BlueprintReadOnly, Parm)
-// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
+// E_PaldexDistributionTimeType            timeType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-struct FEventReply UWBP_Paldex_ForDisplay_C::OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent)
+void UWBP_Paldex_ForDisplay_C::SwitchDistributionTime(E_PaldexDistributionTimeType timeType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "OnAnalogValueChanged");
+		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "SwitchDistributionTime");
 
-	Params::WBP_Paldex_ForDisplay_C_OnAnalogValueChanged Parms{};
+	Params::WBP_Paldex_ForDisplay_C_SwitchDistributionTime Parms{};
 
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InAnalogInputEvent = std::move(InAnalogInputEvent);
+	Parms.timeType = timeType;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 
-// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.OnChangeDistributionInput
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Paldex_ForDisplay_C::OnChangeDistributionInput()
+void UWBP_Paldex_ForDisplay_C::Setup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "OnChangeDistributionInput");
+		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.OnChangeModelInput
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Paldex_ForDisplay_C::OnChangeModelInput()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "OnChangeModelInput");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.OnClosedFilteringSettings
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.SetEnableRandomCryAction
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPalHUDDispatchParameterBase*     Param_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsEnableFlag                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Paldex_ForDisplay_C::OnClosedFilteringSettings(class UPalHUDDispatchParameterBase* Param_0)
+void UWBP_Paldex_ForDisplay_C::SetEnableRandomCryAction(bool IsEnableFlag)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "OnClosedFilteringSettings");
+		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "SetEnableRandomCryAction");
 
-	Params::WBP_Paldex_ForDisplay_C_OnClosedFilteringSettings Parms{};
+	Params::WBP_Paldex_ForDisplay_C_SetEnableRandomCryAction Parms{};
 
-	Parms.Param_0 = Param_0;
+	Parms.IsEnableFlag = IsEnableFlag;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.OnInputAction_ChangeMap
+// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.PlayRandomCry
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Paldex_ForDisplay_C::OnInputAction_ChangeMap()
+void UWBP_Paldex_ForDisplay_C::PlayRandomCry()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "OnInputAction_ChangeMap");
+		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "PlayRandomCry");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.OnInputAction_FIltering
+// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.OpenFilteringWindow
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Paldex_ForDisplay_C::OnInputAction_FIltering()
+void UWBP_Paldex_ForDisplay_C::OpenFilteringWindow()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "OnInputAction_FIltering");
+		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "OpenFilteringWindow");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.OnMouseMove
-// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// const struct FPointerEvent&             MouseEvent                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-struct FEventReply UWBP_Paldex_ForDisplay_C::OnMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "OnMouseMove");
-
-	Params::WBP_Paldex_ForDisplay_C_OnMouseMove Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.MouseEvent = std::move(MouseEvent);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 
@@ -332,133 +172,293 @@ struct FEventReply UWBP_Paldex_ForDisplay_C::OnMouseWheel(const struct FGeometry
 }
 
 
-// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.OpenFilteringWindow
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Paldex_ForDisplay_C::OpenFilteringWindow()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "OpenFilteringWindow");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.PlayRandomCry
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Paldex_ForDisplay_C::PlayRandomCry()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "PlayRandomCry");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.SetEnableRandomCryAction
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.OnMouseMove
+// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsEnableFlag                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
 
-void UWBP_Paldex_ForDisplay_C::SetEnableRandomCryAction(bool IsEnableFlag)
+struct FEventReply UWBP_Paldex_ForDisplay_C::OnMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "SetEnableRandomCryAction");
+		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "OnMouseMove");
 
-	Params::WBP_Paldex_ForDisplay_C_SetEnableRandomCryAction Parms{};
+	Params::WBP_Paldex_ForDisplay_C_OnMouseMove Parms{};
 
-	Parms.IsEnableFlag = IsEnableFlag;
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.MouseEvent = std::move(MouseEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.OnInputAction_FIltering
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Paldex_ForDisplay_C::OnInputAction_FIltering()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "OnInputAction_FIltering");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.OnInputAction_ChangeMap
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Paldex_ForDisplay_C::OnInputAction_ChangeMap()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "OnInputAction_ChangeMap");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.OnClosedFilteringSettings
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalHUDDispatchParameterBase*     Param_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Paldex_ForDisplay_C::OnClosedFilteringSettings(class UPalHUDDispatchParameterBase* Param_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "OnClosedFilteringSettings");
+
+	Params::WBP_Paldex_ForDisplay_C_OnClosedFilteringSettings Parms{};
+
+	Parms.Param_0 = Param_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.OnChangeModelInput
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Paldex_ForDisplay_C::Setup()
+void UWBP_Paldex_ForDisplay_C::OnChangeModelInput()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "Setup");
+		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "OnChangeModelInput");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.SwitchDistributionTime
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// E_PaldexDistributionTimeType            timeType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.OnChangeDistributionInput
+// (Private, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Paldex_ForDisplay_C::SwitchDistributionTime(E_PaldexDistributionTimeType timeType)
+void UWBP_Paldex_ForDisplay_C::OnChangeDistributionInput()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "SwitchDistributionTime");
+		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "OnChangeDistributionInput");
 
-	Params::WBP_Paldex_ForDisplay_C_SwitchDistributionTime Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.timeType = timeType;
+
+// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.OnAnalogValueChanged
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FAnalogInputEvent&         InAnalogInputEvent                                     (BlueprintVisible, BlueprintReadOnly, Parm)
+// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+struct FEventReply UWBP_Paldex_ForDisplay_C::OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "OnAnalogValueChanged");
+
+	Params::WBP_Paldex_ForDisplay_C_OnAnalogValueChanged Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InAnalogInputEvent = std::move(InAnalogInputEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.FilteringInternal
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIgnoreFocus                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Paldex_ForDisplay_C::FilteringInternal(bool bIgnoreFocus)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "FilteringInternal");
+
+	Params::WBP_Paldex_ForDisplay_C_FilteringInternal Parms{};
+
+	Parms.bIgnoreFocus = bIgnoreFocus;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.ToDistributionDisplayMode
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.ExecuteUbergraph_WBP_Paldex_ForDisplay
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Paldex_ForDisplay_C::ToDistributionDisplayMode()
+void UWBP_Paldex_ForDisplay_C::ExecuteUbergraph_WBP_Paldex_ForDisplay(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "ToDistributionDisplayMode");
+		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "ExecuteUbergraph_WBP_Paldex_ForDisplay");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Paldex_ForDisplay_C_ExecuteUbergraph_WBP_Paldex_ForDisplay Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.ToModelDisplayMode
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Paldex_ForDisplay_C::ToModelDisplayMode()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "ToModelDisplayMode");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.UpdateNewFlag
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.DelayScrollToCharacterID
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             CharacterID                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Paldex_ForDisplay_C::UpdateNewFlag(class FName CharacterID)
+void UWBP_Paldex_ForDisplay_C::DelayScrollToCharacterID(class FName CharacterID)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "UpdateNewFlag");
+		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "DelayScrollToCharacterID");
 
-	Params::WBP_Paldex_ForDisplay_C_UpdateNewFlag Parms{};
+	Params::WBP_Paldex_ForDisplay_C_DelayScrollToCharacterID Parms{};
 
 	Parms.CharacterID = CharacterID;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Paldex_ForDisplay_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.ChangeDistributionTime
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Paldex_ForDisplay_C::ChangeDistributionTime()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "ChangeDistributionTime");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.Change Map Zoom Rate
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Paldex_ForDisplay_C::Change_Map_Zoom_Rate()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "Change Map Zoom Rate");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_3_OnClickedAnyPalPanel__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class FName                             CharacterID                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Paldex_ForDisplay_C::BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_3_OnClickedAnyPalPanel__DelegateSignature(class FName CharacterID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_3_OnClickedAnyPalPanel__DelegateSignature");
+
+	Params::WBP_Paldex_ForDisplay_C_BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_3_OnClickedAnyPalPanel__DelegateSignature Parms{};
+
+	Parms.CharacterID = CharacterID;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_2_OnClickedDistributionTab__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Paldex_ForDisplay_C::BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_2_OnClickedDistributionTab__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_2_OnClickedDistributionTab__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_1_OnClickedModelTab__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Paldex_ForDisplay_C::BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_1_OnClickedModelTab__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_1_OnClickedModelTab__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Paldex_ForDisplay.WBP_Paldex_ForDisplay_C.BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_0_OnClickedFilteringButton__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Paldex_ForDisplay_C::BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_0_OnClickedFilteringButton__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_ForDisplay_C", "BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_0_OnClickedFilteringButton__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

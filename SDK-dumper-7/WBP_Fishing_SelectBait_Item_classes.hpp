@@ -31,9 +31,9 @@ public:
 	class FName                                   Static_Item_Id;                                    // 0x02B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Select();
-	void Setup(const struct FPalStaticItemIdAndNum& ItemInfo);
 	void UnSelect();
+	void Setup(const struct FPalStaticItemIdAndNum& ItemInfo);
+	void Select();
 
 public:
 	static class UClass* StaticClass()

@@ -27,13 +27,13 @@ public:
 	class FName                                   DefaultPlayerStartTag;                             // 0x03A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BindFunction_InvaderManager(TDelegate<void(const struct FTransform& Transform)> Spawn_Dummy_Nav_Invoker_Delegate);
-	class AActor* ChoosePlayerStart(class AController* Player);
-	void ExecuteUbergraph_BP_PalGamemode(int32 EntryPoint);
-	void InpActEvt_DebugWindow_K2Node_InputActionEvent_0(const struct FKey& Key);
-	void ReceiveBeginPlay();
-	class AActor* SpawmDummyNavInvoker(const struct FTransform& Transform);
 	void カスタムイベント_0(int32 SoundRadius, const struct FVector& EmitLocation, class AActor* Emitter);
+	class AActor* SpawmDummyNavInvoker(const struct FTransform& Transform);
+	void ReceiveBeginPlay();
+	void InpActEvt_DebugWindow_K2Node_InputActionEvent_0(const struct FKey& Key);
+	void ExecuteUbergraph_BP_PalGamemode(int32 EntryPoint);
+	class AActor* ChoosePlayerStart(class AController* Player);
+	void BindFunction_InvaderManager(TDelegate<void(const struct FTransform& Transform)> Spawn_Dummy_Nav_Invoker_Delegate);
 
 public:
 	static class UClass* StaticClass()

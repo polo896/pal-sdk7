@@ -17,218 +17,95 @@
 namespace SDK
 {
 
-// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.BndEvt__WBP_Trading_Item_Buy_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.Update Sell List
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Trading_Item_Buy_C::BndEvt__WBP_Trading_Item_Buy_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
+void UWBP_Trading_Item_Buy_C::Update_Sell_List()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "BndEvt__WBP_Trading_Item_Buy_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "Update Sell List");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.BndEvt__WBP_Trading_Item_Buy_WBP_IngameCommonSelectNum_K2Node_ComponentBoundEvent_5_OnUpdateNum__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int64                                   Num                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.Update Select Count
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Trading_Item_Buy_C::BndEvt__WBP_Trading_Item_Buy_WBP_IngameCommonSelectNum_K2Node_ComponentBoundEvent_5_OnUpdateNum__DelegateSignature(int64 Num)
+void UWBP_Trading_Item_Buy_C::Update_Select_Count()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "BndEvt__WBP_Trading_Item_Buy_WBP_IngameCommonSelectNum_K2Node_ComponentBoundEvent_5_OnUpdateNum__DelegateSignature");
-
-	Params::WBP_Trading_Item_Buy_C_BndEvt__WBP_Trading_Item_Buy_WBP_IngameCommonSelectNum_K2Node_ComponentBoundEvent_5_OnUpdateNum__DelegateSignature Parms{};
-
-	Parms.Num = Num;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.BndEvt__WBP_Trading_Item_Buy_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Trading_Item_Buy_C::BndEvt__WBP_Trading_Item_Buy_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "BndEvt__WBP_Trading_Item_Buy_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "Update Select Count");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.CalcMaxTradeGroup
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// int32*                                  Count                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Trading_Item_Buy_C::CalcMaxTradeGroup(int32* Count)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "CalcMaxTradeGroup");
-
-	Params::WBP_Trading_Item_Buy_C_CalcMaxTradeGroup Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Count != nullptr)
-		*Count = Parms.Count;
-}
-
-
-// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.CheckTradeable
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Trading_Item_Buy_C::CheckTradeable()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "CheckTradeable");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Trading_Item_Buy_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.ExecuteUbergraph_WBP_Trading_Item_Buy
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Trading_Item_Buy_C::ExecuteUbergraph_WBP_Trading_Item_Buy(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "ExecuteUbergraph_WBP_Trading_Item_Buy");
-
-	Params::WBP_Trading_Item_Buy_C_ExecuteUbergraph_WBP_Trading_Item_Buy Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.On Store Content Updated
+// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.Switch Trading Panel
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPalItemContainer*                ItemContainer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    Visible                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Trading_Item_Buy_C::On_Store_Content_Updated(class UPalItemContainer* ItemContainer)
+void UWBP_Trading_Item_Buy_C::Switch_Trading_Panel(bool Visible)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "On Store Content Updated");
+		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "Switch Trading Panel");
 
-	Params::WBP_Trading_Item_Buy_C_On_Store_Content_Updated Parms{};
+	Params::WBP_Trading_Item_Buy_C_Switch_Trading_Panel Parms{};
 
-	Parms.ItemContainer = ItemContainer;
+	Parms.Visible = Visible;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.OnCancelAction
+// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.Setup
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Trading_Item_Buy_C::OnCancelAction()
+void UWBP_Trading_Item_Buy_C::Setup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "OnCancelAction");
+		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Trading_Item_Buy_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Trading_Item_Buy_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.OnTradeComplete
+// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.SetMax
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class APalPlayerState*                  PlayerState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Trading_Item_Buy_C::OnTradeComplete(class APalPlayerState* PlayerState)
+void UWBP_Trading_Item_Buy_C::SetMax()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "OnTradeComplete");
+		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "SetMax");
 
-	Params::WBP_Trading_Item_Buy_C_OnTradeComplete Parms{};
-
-	Parms.PlayerState = PlayerState;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.OnTradeHovered
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.OnTradeUnhovered
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   TradeIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Trading_Item_Buy_C::OnTradeHovered(int32 TradeIndex)
+void UWBP_Trading_Item_Buy_C::OnTradeUnhovered(int32 TradeIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "OnTradeHovered");
+		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "OnTradeUnhovered");
 
-	Params::WBP_Trading_Item_Buy_C_OnTradeHovered Parms{};
+	Params::WBP_Trading_Item_Buy_C_OnTradeUnhovered Parms{};
 
 	Parms.TradeIndex = TradeIndex;
 
@@ -256,19 +133,19 @@ void UWBP_Trading_Item_Buy_C::OnTradeSelected(int32 Index_0)
 }
 
 
-// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.OnTradeUnhovered
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.OnTradeHovered
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   TradeIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Trading_Item_Buy_C::OnTradeUnhovered(int32 TradeIndex)
+void UWBP_Trading_Item_Buy_C::OnTradeHovered(int32 TradeIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "OnTradeUnhovered");
+		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "OnTradeHovered");
 
-	Params::WBP_Trading_Item_Buy_C_OnTradeUnhovered Parms{};
+	Params::WBP_Trading_Item_Buy_C_OnTradeHovered Parms{};
 
 	Parms.TradeIndex = TradeIndex;
 
@@ -276,77 +153,200 @@ void UWBP_Trading_Item_Buy_C::OnTradeUnhovered(int32 TradeIndex)
 }
 
 
-// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.SetMax
+// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.OnTradeComplete
 // (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Trading_Item_Buy_C::SetMax()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "SetMax");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.Setup
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Trading_Item_Buy_C::Setup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "Setup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.Switch Trading Panel
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Visible                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APalPlayerState*                  PlayerState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Trading_Item_Buy_C::Switch_Trading_Panel(bool Visible)
+void UWBP_Trading_Item_Buy_C::OnTradeComplete(class APalPlayerState* PlayerState)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "Switch Trading Panel");
+		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "OnTradeComplete");
 
-	Params::WBP_Trading_Item_Buy_C_Switch_Trading_Panel Parms{};
+	Params::WBP_Trading_Item_Buy_C_OnTradeComplete Parms{};
 
-	Parms.Visible = Visible;
+	Parms.PlayerState = PlayerState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.Update Select Count
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Trading_Item_Buy_C::Update_Select_Count()
+void UWBP_Trading_Item_Buy_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "Update Select Count");
+		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.Update Sell List
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Trading_Item_Buy_C::Update_Sell_List()
+void UWBP_Trading_Item_Buy_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "Update Sell List");
+		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.OnCancelAction
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Trading_Item_Buy_C::OnCancelAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "OnCancelAction");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.On Store Content Updated
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalItemContainer*                ItemContainer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Trading_Item_Buy_C::On_Store_Content_Updated(class UPalItemContainer* ItemContainer)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "On Store Content Updated");
+
+	Params::WBP_Trading_Item_Buy_C_On_Store_Content_Updated Parms{};
+
+	Parms.ItemContainer = ItemContainer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.ExecuteUbergraph_WBP_Trading_Item_Buy
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Trading_Item_Buy_C::ExecuteUbergraph_WBP_Trading_Item_Buy(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "ExecuteUbergraph_WBP_Trading_Item_Buy");
+
+	Params::WBP_Trading_Item_Buy_C_ExecuteUbergraph_WBP_Trading_Item_Buy Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Trading_Item_Buy_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.CheckTradeable
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Trading_Item_Buy_C::CheckTradeable()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "CheckTradeable");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.CalcMaxTradeGroup
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// int32*                                  Count                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Trading_Item_Buy_C::CalcMaxTradeGroup(int32* Count)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "CalcMaxTradeGroup");
+
+	Params::WBP_Trading_Item_Buy_C_CalcMaxTradeGroup Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Count != nullptr)
+		*Count = Parms.Count;
+}
+
+
+// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.BndEvt__WBP_Trading_Item_Buy_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Trading_Item_Buy_C::BndEvt__WBP_Trading_Item_Buy_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "BndEvt__WBP_Trading_Item_Buy_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.BndEvt__WBP_Trading_Item_Buy_WBP_IngameCommonSelectNum_K2Node_ComponentBoundEvent_5_OnUpdateNum__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int64                                   Num                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Trading_Item_Buy_C::BndEvt__WBP_Trading_Item_Buy_WBP_IngameCommonSelectNum_K2Node_ComponentBoundEvent_5_OnUpdateNum__DelegateSignature(int64 Num)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "BndEvt__WBP_Trading_Item_Buy_WBP_IngameCommonSelectNum_K2Node_ComponentBoundEvent_5_OnUpdateNum__DelegateSignature");
+
+	Params::WBP_Trading_Item_Buy_C_BndEvt__WBP_Trading_Item_Buy_WBP_IngameCommonSelectNum_K2Node_ComponentBoundEvent_5_OnUpdateNum__DelegateSignature Parms{};
+
+	Parms.Num = Num;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Trading_Item_Buy.WBP_Trading_Item_Buy_C.BndEvt__WBP_Trading_Item_Buy_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Trading_Item_Buy_C::BndEvt__WBP_Trading_Item_Buy_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Trading_Item_Buy_C", "BndEvt__WBP_Trading_Item_Buy_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

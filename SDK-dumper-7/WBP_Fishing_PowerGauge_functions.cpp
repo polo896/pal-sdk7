@@ -17,163 +17,47 @@
 namespace SDK
 {
 
-// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.AnmEvent_AllStop
+// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.ShowUI
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Fishing_PowerGauge_C::AnmEvent_AllStop()
+void UWBP_Fishing_PowerGauge_C::ShowUI()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_PowerGauge_C", "AnmEvent_AllStop");
+		Func = Class->GetFunction("WBP_Fishing_PowerGauge_C", "ShowUI");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.AnmEvent_Bad_Loop
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsStart                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.ShowTutorialGuide
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Fishing_PowerGauge_C::AnmEvent_Bad_Loop(bool IsStart)
+void UWBP_Fishing_PowerGauge_C::ShowTutorialGuide()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_PowerGauge_C", "AnmEvent_Bad_Loop");
-
-	Params::WBP_Fishing_PowerGauge_C_AnmEvent_Bad_Loop Parms{};
-
-	Parms.IsStart = IsStart;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.AnmEvent_GoodToBad
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsStart                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Fishing_PowerGauge_C::AnmEvent_GoodToBad(bool IsStart)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_PowerGauge_C", "AnmEvent_GoodToBad");
-
-	Params::WBP_Fishing_PowerGauge_C_AnmEvent_GoodToBad Parms{};
-
-	Parms.IsStart = IsStart;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.AnmEvent_In
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Fishing_PowerGauge_C::AnmEvent_In()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_PowerGauge_C", "AnmEvent_In");
+		Func = Class->GetFunction("WBP_Fishing_PowerGauge_C", "ShowTutorialGuide");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.AnmEvent_Out
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Fishing_PowerGauge_C::AnmEvent_Out()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_PowerGauge_C", "AnmEvent_Out");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.ApplyHandleSize
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Fishing_PowerGauge_C::ApplyHandleSize()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_PowerGauge_C", "ApplyHandleSize");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.ExecuteUbergraph_WBP_Fishing_PowerGauge
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Fishing_PowerGauge_C::ExecuteUbergraph_WBP_Fishing_PowerGauge(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_PowerGauge_C", "ExecuteUbergraph_WBP_Fishing_PowerGauge");
-
-	Params::WBP_Fishing_PowerGauge_C_ExecuteUbergraph_WBP_Fishing_PowerGauge Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.HideUI
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Fishing_PowerGauge_C::HideUI()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_PowerGauge_C", "HideUI");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Fishing_PowerGauge_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_PowerGauge_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.SetBarPosition
+// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.SetFishPosition
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // double                                  Position                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Fishing_PowerGauge_C::SetBarPosition(double Position)
+void UWBP_Fishing_PowerGauge_C::SetFishPosition(double Position)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_PowerGauge_C", "SetBarPosition");
+		Func = Class->GetFunction("WBP_Fishing_PowerGauge_C", "SetFishPosition");
 
-	Params::WBP_Fishing_PowerGauge_C_SetBarPosition Parms{};
+	Params::WBP_Fishing_PowerGauge_C_SetFishPosition Parms{};
 
 	Parms.Position = Position;
 
@@ -201,19 +85,19 @@ void UWBP_Fishing_PowerGauge_C::SetBarSize(double BarSize_0)
 }
 
 
-// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.SetFishPosition
+// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.SetBarPosition
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // double                                  Position                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Fishing_PowerGauge_C::SetFishPosition(double Position)
+void UWBP_Fishing_PowerGauge_C::SetBarPosition(double Position)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_PowerGauge_C", "SetFishPosition");
+		Func = Class->GetFunction("WBP_Fishing_PowerGauge_C", "SetBarPosition");
 
-	Params::WBP_Fishing_PowerGauge_C_SetFishPosition Parms{};
+	Params::WBP_Fishing_PowerGauge_C_SetBarPosition Parms{};
 
 	Parms.Position = Position;
 
@@ -221,29 +105,145 @@ void UWBP_Fishing_PowerGauge_C::SetFishPosition(double Position)
 }
 
 
-// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.ShowTutorialGuide
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Fishing_PowerGauge_C::ShowTutorialGuide()
+void UWBP_Fishing_PowerGauge_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_PowerGauge_C", "ShowTutorialGuide");
+		Func = Class->GetFunction("WBP_Fishing_PowerGauge_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.ShowUI
+// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.HideUI
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Fishing_PowerGauge_C::ShowUI()
+void UWBP_Fishing_PowerGauge_C::HideUI()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_PowerGauge_C", "ShowUI");
+		Func = Class->GetFunction("WBP_Fishing_PowerGauge_C", "HideUI");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.ExecuteUbergraph_WBP_Fishing_PowerGauge
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Fishing_PowerGauge_C::ExecuteUbergraph_WBP_Fishing_PowerGauge(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Fishing_PowerGauge_C", "ExecuteUbergraph_WBP_Fishing_PowerGauge");
+
+	Params::WBP_Fishing_PowerGauge_C_ExecuteUbergraph_WBP_Fishing_PowerGauge Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.ApplyHandleSize
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Fishing_PowerGauge_C::ApplyHandleSize()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Fishing_PowerGauge_C", "ApplyHandleSize");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.AnmEvent_Out
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Fishing_PowerGauge_C::AnmEvent_Out()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Fishing_PowerGauge_C", "AnmEvent_Out");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.AnmEvent_In
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Fishing_PowerGauge_C::AnmEvent_In()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Fishing_PowerGauge_C", "AnmEvent_In");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.AnmEvent_GoodToBad
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsStart                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Fishing_PowerGauge_C::AnmEvent_GoodToBad(bool IsStart)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Fishing_PowerGauge_C", "AnmEvent_GoodToBad");
+
+	Params::WBP_Fishing_PowerGauge_C_AnmEvent_GoodToBad Parms{};
+
+	Parms.IsStart = IsStart;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.AnmEvent_Bad_Loop
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsStart                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Fishing_PowerGauge_C::AnmEvent_Bad_Loop(bool IsStart)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Fishing_PowerGauge_C", "AnmEvent_Bad_Loop");
+
+	Params::WBP_Fishing_PowerGauge_C_AnmEvent_Bad_Loop Parms{};
+
+	Parms.IsStart = IsStart;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Fishing_PowerGauge.WBP_Fishing_PowerGauge_C.AnmEvent_AllStop
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Fishing_PowerGauge_C::AnmEvent_AllStop()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Fishing_PowerGauge_C", "AnmEvent_AllStop");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

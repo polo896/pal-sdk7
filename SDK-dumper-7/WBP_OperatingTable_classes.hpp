@@ -65,35 +65,35 @@ public:
 	struct FTimerHandle                           RefreshTimer;                                      // 0x0570(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_OperatingTable_WBP_Menu_btn_Close_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void BndEvt__WBP_OperatingTable_WBP_Menu_btn_ListClose_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature();
-	void BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_1_OnRequireChangeSelectItem__DelegateSignature();
-	void BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_3_OnHoveredOtomoPassiveSlot__DelegateSignature(class UWBP_MainMenu_Pal_Skill_Passive_C* Widget);
-	void BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_4_OnUnhoveredOtomoPassiveSlot__DelegateSignature();
-	void BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_5_RequestChangeGender__DelegateSignature(class UPalIndividualCharacterParameter* CharacterParam);
-	void BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_6_RequestChangePassiveSkill__DelegateSignature(class FName PassiveId, int32 SlotIndex);
-	void CloseAction();
-	void Destruct();
-	void ExecuteUbergraph_WBP_OperatingTable(int32 EntryPoint);
-	void On_Click_Pal_List(class UPalIndividualCharacterHandle* Handle);
-	void On_Select_Passive_Change(class FName PassiveId, class FName ConsumeItemId);
-	void OnGenderUpdate(EPalGenderType NewGender);
-	void OnHoveredPalPassiveSlot(class UWBP_MainMenu_Pal_Skill_Passive_C* Widget);
-	void OnHoveredPassiveItem(class UWBP_OperatingTable_ItemList_C* Widget);
-	void OnHoverPalList(class UPalIndividualCharacterHandle* Handle);
-	void OnInitialized();
-	void OnOperatingGenderNotifyied(bool Success);
-	void OnOperatingPassiveNotifyied(bool Success);
-	void OnPassiveUpdate(const TArray<class FName>& PassiveIds);
-	void OnSetup();
-	void OnUnhoveredPasssiveItem();
-	void OnUnhoverPalList();
-	void RefreshItemDisplay();
-	void Setup();
-	void SetupPassiveChangeItem();
-	void SwitchGender();
-	void SwitchPassive();
 	void SwitchTab(int32 Tab);
+	void SwitchPassive();
+	void SwitchGender();
+	void SetupPassiveChangeItem();
+	void Setup();
+	void RefreshItemDisplay();
+	void OnUnhoverPalList();
+	void OnUnhoveredPasssiveItem();
+	void OnSetup();
+	void OnPassiveUpdate(const TArray<class FName>& PassiveIds);
+	void OnOperatingPassiveNotifyied(bool Success);
+	void OnOperatingGenderNotifyied(bool Success);
+	void OnInitialized();
+	void OnHoverPalList(class UPalIndividualCharacterHandle* Handle);
+	void OnHoveredPassiveItem(class UWBP_OperatingTable_ItemList_C* Widget);
+	void OnHoveredPalPassiveSlot(class UWBP_MainMenu_Pal_Skill_Passive_C* Widget);
+	void OnGenderUpdate(EPalGenderType NewGender);
+	void On_Select_Passive_Change(class FName PassiveId, class FName ConsumeItemId);
+	void On_Click_Pal_List(class UPalIndividualCharacterHandle* Handle);
+	void ExecuteUbergraph_WBP_OperatingTable(int32 EntryPoint);
+	void Destruct();
+	void CloseAction();
+	void BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_6_RequestChangePassiveSkill__DelegateSignature(class FName PassiveId, int32 SlotIndex);
+	void BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_5_RequestChangeGender__DelegateSignature(class UPalIndividualCharacterParameter* CharacterParam);
+	void BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_4_OnUnhoveredOtomoPassiveSlot__DelegateSignature();
+	void BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_3_OnHoveredOtomoPassiveSlot__DelegateSignature(class UWBP_MainMenu_Pal_Skill_Passive_C* Widget);
+	void BndEvt__WBP_OperatingTable_WBP_OperatingTable_TabPage_K2Node_ComponentBoundEvent_1_OnRequireChangeSelectItem__DelegateSignature();
+	void BndEvt__WBP_OperatingTable_WBP_Menu_btn_ListClose_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature();
+	void BndEvt__WBP_OperatingTable_WBP_Menu_btn_Close_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

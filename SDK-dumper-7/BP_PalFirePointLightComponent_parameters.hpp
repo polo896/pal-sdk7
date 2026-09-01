@@ -14,14 +14,25 @@
 namespace SDK::Params
 {
 
-// Function BP_PalFirePointLightComponent.BP_PalFirePointLightComponent_C.CacheAndClearIntensity
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PalFirePointLightComponent_C_CacheAndClearIntensity final
+// Function BP_PalFirePointLightComponent.BP_PalFirePointLightComponent_C.ResetBlinkDuration
+// 0x0018 (0x0018 - 0x0000)
+struct BP_PalFirePointLightComponent_C_ResetBlinkDuration final
 {
 public:
-	double                                        K2Node_VariableSet_MaxIntensityCache_ImplicitCast; // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_RandomFloatInRange_Min_ImplicitCast;      // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_RandomFloatInRange_Max_ImplicitCast;      // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalFirePointLightComponent_C_CacheAndClearIntensity;
+DUMPER7_ASSERTS_BP_PalFirePointLightComponent_C_ResetBlinkDuration;
+
+// Function BP_PalFirePointLightComponent.BP_PalFirePointLightComponent_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_PalFirePointLightComponent_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalFirePointLightComponent_C_ReceiveTick;
 
 // Function BP_PalFirePointLightComponent.BP_PalFirePointLightComponent_C.ExecuteUbergraph_BP_PalFirePointLightComponent
 // 0x0038 (0x0038 - 0x0000)
@@ -42,25 +53,14 @@ public:
 };
 DUMPER7_ASSERTS_BP_PalFirePointLightComponent_C_ExecuteUbergraph_BP_PalFirePointLightComponent;
 
-// Function BP_PalFirePointLightComponent.BP_PalFirePointLightComponent_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_PalFirePointLightComponent_C_ReceiveTick final
+// Function BP_PalFirePointLightComponent.BP_PalFirePointLightComponent_C.CacheAndClearIntensity
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PalFirePointLightComponent_C_CacheAndClearIntensity final
 {
 public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_MaxIntensityCache_ImplicitCast; // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalFirePointLightComponent_C_ReceiveTick;
-
-// Function BP_PalFirePointLightComponent.BP_PalFirePointLightComponent_C.ResetBlinkDuration
-// 0x0018 (0x0018 - 0x0000)
-struct BP_PalFirePointLightComponent_C_ResetBlinkDuration final
-{
-public:
-	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_RandomFloatInRange_Min_ImplicitCast;      // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_RandomFloatInRange_Max_ImplicitCast;      // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalFirePointLightComponent_C_ResetBlinkDuration;
+DUMPER7_ASSERTS_BP_PalFirePointLightComponent_C_CacheAndClearIntensity;
 
 // Function BP_PalFirePointLightComponent.BP_PalFirePointLightComponent_C.GetCurrentProgressCurveValue
 // 0x0030 (0x0030 - 0x0000)

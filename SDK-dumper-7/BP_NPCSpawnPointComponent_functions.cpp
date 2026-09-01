@@ -17,23 +17,31 @@
 namespace SDK
 {
 
-// Function BP_NPCSpawnPointComponent.BP_NPCSpawnPointComponent_C.ExecuteUbergraph_BP_NPCSpawnPointComponent
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_NPCSpawnPointComponent.BP_NPCSpawnPointComponent_C.Setup Walk Point Ref
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UBP_NPCSpawnPointComponent_C::ExecuteUbergraph_BP_NPCSpawnPointComponent(int32 EntryPoint)
+void UBP_NPCSpawnPointComponent_C::Setup_Walk_Point_Ref()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCSpawnPointComponent_C", "ExecuteUbergraph_BP_NPCSpawnPointComponent");
+		Func = Class->GetFunction("BP_NPCSpawnPointComponent_C", "Setup Walk Point Ref");
 
-	Params::BP_NPCSpawnPointComponent_C_ExecuteUbergraph_BP_NPCSpawnPointComponent Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function BP_NPCSpawnPointComponent.BP_NPCSpawnPointComponent_C.ReceiveBeginPlay
+// (Event, Public, BlueprintEvent)
+
+void UBP_NPCSpawnPointComponent_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCSpawnPointComponent_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -58,31 +66,23 @@ void UBP_NPCSpawnPointComponent_C::GetOneSpawnInfo(struct FF_NPCOnePointSpawnInf
 }
 
 
-// Function BP_NPCSpawnPointComponent.BP_NPCSpawnPointComponent_C.ReceiveBeginPlay
-// (Event, Public, BlueprintEvent)
+// Function BP_NPCSpawnPointComponent.BP_NPCSpawnPointComponent_C.ExecuteUbergraph_BP_NPCSpawnPointComponent
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_NPCSpawnPointComponent_C::ReceiveBeginPlay()
+void UBP_NPCSpawnPointComponent_C::ExecuteUbergraph_BP_NPCSpawnPointComponent(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCSpawnPointComponent_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_NPCSpawnPointComponent_C", "ExecuteUbergraph_BP_NPCSpawnPointComponent");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::BP_NPCSpawnPointComponent_C_ExecuteUbergraph_BP_NPCSpawnPointComponent Parms{};
 
+	Parms.EntryPoint = EntryPoint;
 
-// Function BP_NPCSpawnPointComponent.BP_NPCSpawnPointComponent_C.Setup Walk Point Ref
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UBP_NPCSpawnPointComponent_C::Setup_Walk_Point_Ref()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCSpawnPointComponent_C", "Setup Walk Point Ref");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

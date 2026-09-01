@@ -16,15 +16,6 @@
 namespace SDK::Params
 {
 
-// Function BP_Shotgun_NPC.BP_Shotgun_NPC_C.OnWeaponNotify
-// 0x0001 (0x0001 - 0x0000)
-struct BP_Shotgun_NPC_C_OnWeaponNotify final
-{
-public:
-	EWeaponNotifyType                             Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Shotgun_NPC_C_OnWeaponNotify;
-
 // Function BP_Shotgun_NPC.BP_Shotgun_NPC_C.ExecuteUbergraph_BP_Shotgun_NPC
 // 0x0014 (0x0014 - 0x0000)
 struct BP_Shotgun_NPC_C_ExecuteUbergraph_BP_Shotgun_NPC final
@@ -40,15 +31,14 @@ public:
 };
 DUMPER7_ASSERTS_BP_Shotgun_NPC_C_ExecuteUbergraph_BP_Shotgun_NPC;
 
-// Function BP_Shotgun_NPC.BP_Shotgun_NPC_C.GetWeaponDamage
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Shotgun_NPC_C_GetWeaponDamage final
+// Function BP_Shotgun_NPC.BP_Shotgun_NPC_C.OnWeaponNotify
+// 0x0001 (0x0001 - 0x0000)
+struct BP_Shotgun_NPC_C_OnWeaponNotify final
 {
 public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_CalcNPCWeaponDamage_ReturnValue;          // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EWeaponNotifyType                             Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_Shotgun_NPC_C_GetWeaponDamage;
+DUMPER7_ASSERTS_BP_Shotgun_NPC_C_OnWeaponNotify;
 
 // Function BP_Shotgun_NPC.BP_Shotgun_NPC_C.GetNPCWeaponDamage
 // 0x0004 (0x0004 - 0x0000)
@@ -58,6 +48,16 @@ public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_Shotgun_NPC_C_GetNPCWeaponDamage;
+
+// Function BP_Shotgun_NPC.BP_Shotgun_NPC_C.GetWeaponDamage
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Shotgun_NPC_C_GetWeaponDamage final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_CalcNPCWeaponDamage_ReturnValue;          // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Shotgun_NPC_C_GetWeaponDamage;
 
 }
 

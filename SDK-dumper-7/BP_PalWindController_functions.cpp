@@ -17,23 +17,25 @@
 namespace SDK
 {
 
-// Function BP_PalWindController.BP_PalWindController_C.ExecuteUbergraph_BP_PalWindController
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_PalWindController.BP_PalWindController_C.UpdateNPC
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FPalWindInfo&                    WindInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
-void ABP_PalWindController_C::ExecuteUbergraph_BP_PalWindController(int32 EntryPoint)
+void ABP_PalWindController_C::UpdateNPC(struct FPalWindInfo& WindInfo)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalWindController_C", "ExecuteUbergraph_BP_PalWindController");
+		Func = Class->GetFunction("BP_PalWindController_C", "UpdateNPC");
 
-	Params::BP_PalWindController_C_ExecuteUbergraph_BP_PalWindController Parms{};
+	Params::BP_PalWindController_C_UpdateNPC Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.WindInfo = std::move(WindInfo);
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	WindInfo = std::move(Parms.WindInfo);
 }
 
 
@@ -57,25 +59,23 @@ void ABP_PalWindController_C::UpdateNiagaraParameterCollection(const struct FPal
 }
 
 
-// Function BP_PalWindController.BP_PalWindController_C.UpdateNPC
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function BP_PalWindController.BP_PalWindController_C.ExecuteUbergraph_BP_PalWindController
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// struct FPalWindInfo&                    WindInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalWindController_C::UpdateNPC(struct FPalWindInfo& WindInfo)
+void ABP_PalWindController_C::ExecuteUbergraph_BP_PalWindController(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalWindController_C", "UpdateNPC");
+		Func = Class->GetFunction("BP_PalWindController_C", "ExecuteUbergraph_BP_PalWindController");
 
-	Params::BP_PalWindController_C_UpdateNPC Parms{};
+	Params::BP_PalWindController_C_ExecuteUbergraph_BP_PalWindController Parms{};
 
-	Parms.WindInfo = std::move(WindInfo);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	WindInfo = std::move(Parms.WindInfo);
 }
 
 }

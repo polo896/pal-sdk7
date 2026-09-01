@@ -8,7 +8,7 @@ class ANiagaraUIActor : public AActor
 class UNiagaraSystemWidget : public UWidget
 {
     class UNiagaraSystem* NiagaraSystemReference;                                     // 0x0150 (size: 0x8)
-    TMap<class UMaterialInterface*, class UMaterialInterface*> MaterialRemapList;     // 0x0158 (size: 0x50)
+    TMap<UMaterialInterface*, UMaterialInterface*> MaterialRemapList;                 // 0x0158 (size: 0x50)
     bool AutoActivate;                                                                // 0x01A8 (size: 0x1)
     bool TickWhenPaused;                                                              // 0x01A9 (size: 0x1)
     FVector2D DesiredWidgetSize;                                                      // 0x01B0 (size: 0x10)

@@ -10,7 +10,7 @@ class UWBP_Ingame_PlayerGauge_KeyGuide_C : public UUserWidget
     class UBP_PalTextBlock_C* Text_KeyGuide;                                          // 0x0298 (size: 0x8)
     class UWBP_PlayerInputKeyGuideIcon_C* WBP_PlayerInputKeyGuideIcon_ChangeBallAiming_1; // 0x02A0 (size: 0x8)
     FName bindActionName;                                                             // 0x02A8 (size: 0x8)
-    TMap<class FName, class FDataTableRowHandle> MsgIDMap;                            // 0x02B0 (size: 0x50)
+    TMap<FName, FDataTableRowHandle> MsgIDMap;                                        // 0x02B0 (size: 0x50)
     bool OverrideActionName;                                                          // 0x0300 (size: 0x1)
 
     void SetTitleText(FText newText);

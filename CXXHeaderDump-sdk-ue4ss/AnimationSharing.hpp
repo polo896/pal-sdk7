@@ -61,9 +61,9 @@ class UAnimSharingAdditiveInstance : public UAnimInstance
 
 class UAnimSharingInstance : public UObject
 {
-    TArray<class AActor*> RegisteredActors;                                           // 0x0028 (size: 0x10)
+    TArray<AActor*> RegisteredActors;                                                 // 0x0028 (size: 0x10)
     class UAnimationSharingStateProcessor* StateProcessor;                            // 0x0088 (size: 0x8)
-    TArray<class UAnimSequence*> UsedAnimationSequences;                              // 0x00C8 (size: 0x10)
+    TArray<UAnimSequence*> UsedAnimationSequences;                                    // 0x00C8 (size: 0x10)
     class UEnum* StateEnum;                                                           // 0x00E8 (size: 0x8)
     class AActor* SharingActor;                                                       // 0x00F0 (size: 0x8)
 
@@ -77,7 +77,7 @@ class UAnimSharingStateInstance : public UAnimInstance
     bool bStateBool;                                                                  // 0x0358 (size: 0x1)
     class UAnimSharingInstance* Instance;                                             // 0x0360 (size: 0x8)
 
-    void GetInstancedActors(TArray<class AActor*>& Actors);
+    void GetInstancedActors(TArray<AActor*>& Actors);
 }; // Size: 0x370
 
 class UAnimSharingTransitionInstance : public UAnimInstance
@@ -91,8 +91,8 @@ class UAnimSharingTransitionInstance : public UAnimInstance
 
 class UAnimationSharingManager : public UObject
 {
-    TArray<class USkeleton*> Skeletons;                                               // 0x0028 (size: 0x10)
-    TArray<class UAnimSharingInstance*> PerSkeletonData;                              // 0x0038 (size: 0x10)
+    TArray<USkeleton*> Skeletons;                                                     // 0x0028 (size: 0x10)
+    TArray<UAnimSharingInstance*> PerSkeletonData;                                    // 0x0038 (size: 0x10)
 
     void RegisterActorWithSkeletonBP(class AActor* InActor, const class USkeleton* SharingSkeleton);
     class UAnimationSharingManager* GetAnimationSharingManager(class UObject* WorldContextObject);
@@ -109,7 +109,7 @@ class UAnimationSharingSetup : public UObject
 
 class UAnimationSharingStateProcessor : public UObject
 {
-    TSoftObjectPtr<UEnum> AnimationStateEnum;                                         // 0x0028 (size: 0x30)
+    TSoftObjectPtr<class UEnum> AnimationStateEnum;                                   // 0x0028 (size: 0x30)
 
     void ProcessActorState(int32& OutState, class AActor* InActor, uint8 CurrentState, uint8 OnDemandState, bool& bShouldProcess);
     class UEnum* GetAnimationStateEnum();

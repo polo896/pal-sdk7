@@ -17,6 +17,25 @@
 namespace SDK::Params
 {
 
+// Function BP_FloatingObject.BP_FloatingObject_C.Setup
+// 0x0020 (0x0020 - 0x0000)
+struct BP_FloatingObject_C_Setup final
+{
+public:
+	class USceneComponent*                        InScene;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                InBeginPos;                                        // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FloatingObject_C_Setup;
+
+// Function BP_FloatingObject.BP_FloatingObject_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_FloatingObject_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FloatingObject_C_ReceiveTick;
+
 // Function BP_FloatingObject.BP_FloatingObject_C.ExecuteUbergraph_BP_FloatingObject
 // 0x0140 (0x0140 - 0x0000)
 struct BP_FloatingObject_C_ExecuteUbergraph_BP_FloatingObject final
@@ -33,25 +52,6 @@ public:
 	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x0058(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
 DUMPER7_ASSERTS_BP_FloatingObject_C_ExecuteUbergraph_BP_FloatingObject;
-
-// Function BP_FloatingObject.BP_FloatingObject_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_FloatingObject_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FloatingObject_C_ReceiveTick;
-
-// Function BP_FloatingObject.BP_FloatingObject_C.Setup
-// 0x0020 (0x0020 - 0x0000)
-struct BP_FloatingObject_C_Setup final
-{
-public:
-	class USceneComponent*                        InScene;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                InBeginPos;                                        // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FloatingObject_C_Setup;
 
 }
 

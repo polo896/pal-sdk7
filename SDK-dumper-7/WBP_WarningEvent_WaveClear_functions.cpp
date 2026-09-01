@@ -17,125 +17,29 @@
 namespace SDK
 {
 
-// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.AnmEvent_Clear
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsNext                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WarningEvent_WaveClear_C::AnmEvent_Clear(bool IsNext)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningEvent_WaveClear_C", "AnmEvent_Clear");
-
-	Params::WBP_WarningEvent_WaveClear_C_AnmEvent_Clear Parms{};
-
-	Parms.IsNext = IsNext;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.AnmEvent_ClearToNextWave
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_WarningEvent_WaveClear_C::AnmEvent_ClearToNextWave()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningEvent_WaveClear_C", "AnmEvent_ClearToNextWave");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.AnmEvent_NextWave
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_WarningEvent_WaveClear_C::AnmEvent_NextWave()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningEvent_WaveClear_C", "AnmEvent_NextWave");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.AnmEvent_Out
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_WarningEvent_WaveClear_C::AnmEvent_Out()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningEvent_WaveClear_C", "AnmEvent_Out");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.ExecuteUbergraph_WBP_WarningEvent_WaveClear
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WarningEvent_WaveClear_C::ExecuteUbergraph_WBP_WarningEvent_WaveClear(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningEvent_WaveClear_C", "ExecuteUbergraph_WBP_WarningEvent_WaveClear");
-
-	Params::WBP_WarningEvent_WaveClear_C_ExecuteUbergraph_WBP_WarningEvent_WaveClear Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.OnTimer_Out
+// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.SequenceEvent__ENTRYPOINTWBP_WarningEvent_WaveClear
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_WarningEvent_WaveClear_C::OnTimer_Out()
+void UWBP_WarningEvent_WaveClear_C::SequenceEvent__ENTRYPOINTWBP_WarningEvent_WaveClear()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningEvent_WaveClear_C", "OnTimer_Out");
+		Func = Class->GetFunction("WBP_WarningEvent_WaveClear_C", "SequenceEvent__ENTRYPOINTWBP_WarningEvent_WaveClear");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.OnTimerEvent_CheckMark
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.SequenceEvent
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_WarningEvent_WaveClear_C::OnTimerEvent_CheckMark()
+void UWBP_WarningEvent_WaveClear_C::SequenceEvent()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningEvent_WaveClear_C", "OnTimerEvent_CheckMark");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.Play Next Wave Info
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_WarningEvent_WaveClear_C::Play_Next_Wave_Info()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningEvent_WaveClear_C", "Play Next Wave Info");
+		Func = Class->GetFunction("WBP_WarningEvent_WaveClear_C", "SequenceEvent");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -163,31 +67,127 @@ void UWBP_WarningEvent_WaveClear_C::Play_Wave_Clear_Sequence(int32 ClearWaveCoun
 }
 
 
-// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.SequenceEvent
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.Play Next Wave Info
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_WarningEvent_WaveClear_C::SequenceEvent()
+void UWBP_WarningEvent_WaveClear_C::Play_Next_Wave_Info()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningEvent_WaveClear_C", "SequenceEvent");
+		Func = Class->GetFunction("WBP_WarningEvent_WaveClear_C", "Play Next Wave Info");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.SequenceEvent__ENTRYPOINTWBP_WarningEvent_WaveClear
+// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.OnTimerEvent_CheckMark
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_WarningEvent_WaveClear_C::SequenceEvent__ENTRYPOINTWBP_WarningEvent_WaveClear()
+void UWBP_WarningEvent_WaveClear_C::OnTimerEvent_CheckMark()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningEvent_WaveClear_C", "SequenceEvent__ENTRYPOINTWBP_WarningEvent_WaveClear");
+		Func = Class->GetFunction("WBP_WarningEvent_WaveClear_C", "OnTimerEvent_CheckMark");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.OnTimer_Out
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_WarningEvent_WaveClear_C::OnTimer_Out()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WarningEvent_WaveClear_C", "OnTimer_Out");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.ExecuteUbergraph_WBP_WarningEvent_WaveClear
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WarningEvent_WaveClear_C::ExecuteUbergraph_WBP_WarningEvent_WaveClear(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WarningEvent_WaveClear_C", "ExecuteUbergraph_WBP_WarningEvent_WaveClear");
+
+	Params::WBP_WarningEvent_WaveClear_C_ExecuteUbergraph_WBP_WarningEvent_WaveClear Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.AnmEvent_Out
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_WarningEvent_WaveClear_C::AnmEvent_Out()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WarningEvent_WaveClear_C", "AnmEvent_Out");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.AnmEvent_NextWave
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_WarningEvent_WaveClear_C::AnmEvent_NextWave()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WarningEvent_WaveClear_C", "AnmEvent_NextWave");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.AnmEvent_ClearToNextWave
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_WarningEvent_WaveClear_C::AnmEvent_ClearToNextWave()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WarningEvent_WaveClear_C", "AnmEvent_ClearToNextWave");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WarningEvent_WaveClear.WBP_WarningEvent_WaveClear_C.AnmEvent_Clear
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsNext                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WarningEvent_WaveClear_C::AnmEvent_Clear(bool IsNext)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WarningEvent_WaveClear_C", "AnmEvent_Clear");
+
+	Params::WBP_WarningEvent_WaveClear_C_AnmEvent_Clear Parms{};
+
+	Parms.IsNext = IsNext;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

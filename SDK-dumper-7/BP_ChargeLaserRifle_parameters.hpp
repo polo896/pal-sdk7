@@ -18,38 +18,343 @@
 namespace SDK::Params
 {
 
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.CanShoot
-// 0x0020 (0x0020 - 0x0000)
-struct BP_ChargeLaserRifle_C_CanShoot final
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.ShootBullet
+// 0x0250 (0x0250 - 0x0000)
+struct BP_ChargeLaserRifle_C_ShootBullet final
 {
 public:
-	bool                                          can;                                               // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalShooterComponent*                   CallFunc_GetComponentByClass_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CanShoot_ReturnValue;                     // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                MuzzleLocation;                                    // 0x0000(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEmptyMagazine_ReturnValue;              // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetPvPPlayerToGuildPalDamageRate_ReturnValue; // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetPvPBuildingDamageRate_ReturnValue;     // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetBulletDeleteTime_ReturnValue;          // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TSubclassOf<class APalBullet>                 CallFunc_GetCurrentBulletClass_ReturnValue;        // 0x0028(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetMuzzleTransform_TF;                    // 0x0030(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0090(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x00A8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x00C0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue;        // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetTargetLocation_TargetPosition;         // 0x00E0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x00F8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetWeaponDamage_ReturnValue;              // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRotator                               CallFunc_MakeRotFromX_ReturnValue;                 // 0x0118(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FTransform                             CallFunc_GetMuzzleTransform_TF_1;                  // 0x0130(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0190(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakTransform_Location_1;                // 0x01F0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation_1;                // 0x0208(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale_1;                   // 0x0220(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalBulletCreator*                      CallFunc_GetBulletCreator_ReturnValue;             // 0x0238(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_DecrementBullet_ReturnValue;              // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_241[0x7];                                      // 0x0241(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalBullet*                             CallFunc_CreateBullet_ReturnValue;                 // 0x0248(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_CanShoot;
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_ShootBullet;
 
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.ChangeChargeValue
-// 0x0040 (0x0040 - 0x0000)
-struct BP_ChargeLaserRifle_C_ChangeChargeValue final
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_ChargeLaserRifle_C_ReceiveTick final
 {
 public:
-	double                                        PreCharge;                                         // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      CallFunc_SpawnSystemAttached_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_DoubleDouble_ReturnValue;      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_DoubleDouble_ReturnValue;            // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_FClamp_ReturnValue;                       // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_ChangeChargeValue;
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_ReceiveTick;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnWeaponNotify
+// 0x0001 (0x0001 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnWeaponNotify final
+{
+public:
+	EWeaponNotifyType                             Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnWeaponNotify;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnReloadStart
+// 0x0004 (0x0004 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnReloadStart final
+{
+public:
+	float                                         InReloadSpeedPlayRate;                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnReloadStart;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnReleaseTrigger
+// 0x0001 (0x0001 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnReleaseTrigger final
+{
+public:
+	bool                                          bCanShootOnRelease;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnReleaseTrigger;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyEnd_F04017F8494C2F37C78E51B48EBD2A1C
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnNotifyEnd_F04017F8494C2F37C78E51B48EBD2A1C final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnNotifyEnd_F04017F8494C2F37C78E51B48EBD2A1C;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyEnd_B8C41D4B4A5B4B1CCDEF6198D3783FEF
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnNotifyEnd_B8C41D4B4A5B4B1CCDEF6198D3783FEF final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnNotifyEnd_B8C41D4B4A5B4B1CCDEF6198D3783FEF;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyEnd_7D3D1A57488DAA75B92021BFFA4E3435
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnNotifyEnd_7D3D1A57488DAA75B92021BFFA4E3435 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnNotifyEnd_7D3D1A57488DAA75B92021BFFA4E3435;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyEnd_6868AA2F41E676FCD1C891B7E8A7B79A
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnNotifyEnd_6868AA2F41E676FCD1C891B7E8A7B79A final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnNotifyEnd_6868AA2F41E676FCD1C891B7E8A7B79A;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyEnd_1A67CE1042B43EF42A4334AFA2181CEE
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnNotifyEnd_1A67CE1042B43EF42A4334AFA2181CEE final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnNotifyEnd_1A67CE1042B43EF42A4334AFA2181CEE;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyBegin_F04017F8494C2F37C78E51B48EBD2A1C
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnNotifyBegin_F04017F8494C2F37C78E51B48EBD2A1C final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnNotifyBegin_F04017F8494C2F37C78E51B48EBD2A1C;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyBegin_B8C41D4B4A5B4B1CCDEF6198D3783FEF
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnNotifyBegin_B8C41D4B4A5B4B1CCDEF6198D3783FEF final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnNotifyBegin_B8C41D4B4A5B4B1CCDEF6198D3783FEF;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyBegin_7D3D1A57488DAA75B92021BFFA4E3435
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnNotifyBegin_7D3D1A57488DAA75B92021BFFA4E3435 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnNotifyBegin_7D3D1A57488DAA75B92021BFFA4E3435;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyBegin_6868AA2F41E676FCD1C891B7E8A7B79A
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnNotifyBegin_6868AA2F41E676FCD1C891B7E8A7B79A final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnNotifyBegin_6868AA2F41E676FCD1C891B7E8A7B79A;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyBegin_1A67CE1042B43EF42A4334AFA2181CEE
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnNotifyBegin_1A67CE1042B43EF42A4334AFA2181CEE final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnNotifyBegin_1A67CE1042B43EF42A4334AFA2181CEE;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnInterrupted_F04017F8494C2F37C78E51B48EBD2A1C
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnInterrupted_F04017F8494C2F37C78E51B48EBD2A1C final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnInterrupted_F04017F8494C2F37C78E51B48EBD2A1C;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnInterrupted_B8C41D4B4A5B4B1CCDEF6198D3783FEF
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnInterrupted_B8C41D4B4A5B4B1CCDEF6198D3783FEF final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnInterrupted_B8C41D4B4A5B4B1CCDEF6198D3783FEF;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnInterrupted_7D3D1A57488DAA75B92021BFFA4E3435
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnInterrupted_7D3D1A57488DAA75B92021BFFA4E3435 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnInterrupted_7D3D1A57488DAA75B92021BFFA4E3435;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnInterrupted_6868AA2F41E676FCD1C891B7E8A7B79A
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnInterrupted_6868AA2F41E676FCD1C891B7E8A7B79A final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnInterrupted_6868AA2F41E676FCD1C891B7E8A7B79A;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnInterrupted_1A67CE1042B43EF42A4334AFA2181CEE
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnInterrupted_1A67CE1042B43EF42A4334AFA2181CEE final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnInterrupted_1A67CE1042B43EF42A4334AFA2181CEE;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnCompleted_F04017F8494C2F37C78E51B48EBD2A1C
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnCompleted_F04017F8494C2F37C78E51B48EBD2A1C final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnCompleted_F04017F8494C2F37C78E51B48EBD2A1C;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnCompleted_B8C41D4B4A5B4B1CCDEF6198D3783FEF
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnCompleted_B8C41D4B4A5B4B1CCDEF6198D3783FEF final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnCompleted_B8C41D4B4A5B4B1CCDEF6198D3783FEF;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnCompleted_7D3D1A57488DAA75B92021BFFA4E3435
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnCompleted_7D3D1A57488DAA75B92021BFFA4E3435 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnCompleted_7D3D1A57488DAA75B92021BFFA4E3435;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnCompleted_6868AA2F41E676FCD1C891B7E8A7B79A
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnCompleted_6868AA2F41E676FCD1C891B7E8A7B79A final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnCompleted_6868AA2F41E676FCD1C891B7E8A7B79A;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnCompleted_1A67CE1042B43EF42A4334AFA2181CEE
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnCompleted_1A67CE1042B43EF42A4334AFA2181CEE final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnCompleted_1A67CE1042B43EF42A4334AFA2181CEE;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnBlendOut_F04017F8494C2F37C78E51B48EBD2A1C
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnBlendOut_F04017F8494C2F37C78E51B48EBD2A1C final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnBlendOut_F04017F8494C2F37C78E51B48EBD2A1C;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnBlendOut_B8C41D4B4A5B4B1CCDEF6198D3783FEF
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnBlendOut_B8C41D4B4A5B4B1CCDEF6198D3783FEF final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnBlendOut_B8C41D4B4A5B4B1CCDEF6198D3783FEF;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnBlendOut_7D3D1A57488DAA75B92021BFFA4E3435
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnBlendOut_7D3D1A57488DAA75B92021BFFA4E3435 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnBlendOut_7D3D1A57488DAA75B92021BFFA4E3435;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnBlendOut_6868AA2F41E676FCD1C891B7E8A7B79A
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnBlendOut_6868AA2F41E676FCD1C891B7E8A7B79A final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnBlendOut_6868AA2F41E676FCD1C891B7E8A7B79A;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnBlendOut_1A67CE1042B43EF42A4334AFA2181CEE
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnBlendOut_1A67CE1042B43EF42A4334AFA2181CEE final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnBlendOut_1A67CE1042B43EF42A4334AFA2181CEE;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnAttachWeapon
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ChargeLaserRifle_C_OnAttachWeapon final
+{
+public:
+	class AActor*                                 attachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnAttachWeapon;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.GetTargetLocation
+// 0x0048 (0x0048 - 0x0000)
+struct BP_ChargeLaserRifle_C_GetTargetLocation final
+{
+public:
+	struct FVector                                targetPosition;                                    // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_GetOwnerCharacter_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetOverrideTargetLocation_ConsiderRide_ReturnValue; // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_GetTargetLocation;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.GetMuzzleTransform
+// 0x00C0 (0x00C0 - 0x0000)
+struct BP_ChargeLaserRifle_C_GetMuzzleTransform final
+{
+public:
+	struct FTransform                             TF;                                                // 0x0000(0x0060)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetSocketTransform_ReturnValue;           // 0x0060(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_GetMuzzleTransform;
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.GetCurrentChargeValue
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ChargeLaserRifle_C_GetCurrentChargeValue final
+{
+public:
+	double                                        ChargeValue_0;                                     // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_GetCurrentChargeValue;
 
 // Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.ExecuteUbergraph_BP_ChargeLaserRifle
 // 0x09C8 (0x09C8 - 0x0000)
@@ -176,343 +481,47 @@ public:
 };
 DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_ExecuteUbergraph_BP_ChargeLaserRifle;
 
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.GetCurrentChargeValue
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ChargeLaserRifle_C_GetCurrentChargeValue final
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.ChangeChargeValue
+// 0x0040 (0x0040 - 0x0000)
+struct BP_ChargeLaserRifle_C_ChangeChargeValue final
 {
 public:
-	double                                        ChargeValue_0;                                     // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        PreCharge;                                         // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      CallFunc_SpawnSystemAttached_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_DoubleDouble_ReturnValue;      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_DoubleDouble_ReturnValue;            // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_FClamp_ReturnValue;                       // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_GetCurrentChargeValue;
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_ChangeChargeValue;
 
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.GetMuzzleTransform
-// 0x00C0 (0x00C0 - 0x0000)
-struct BP_ChargeLaserRifle_C_GetMuzzleTransform final
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.CanShoot
+// 0x0020 (0x0020 - 0x0000)
+struct BP_ChargeLaserRifle_C_CanShoot final
 {
 public:
-	struct FTransform                             TF;                                                // 0x0000(0x0060)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_GetSocketTransform_ReturnValue;           // 0x0060(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          can;                                               // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalShooterComponent*                   CallFunc_GetComponentByClass_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanShoot_ReturnValue;                     // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_GetMuzzleTransform;
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_CanShoot;
 
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.GetTargetLocation
-// 0x0048 (0x0048 - 0x0000)
-struct BP_ChargeLaserRifle_C_GetTargetLocation final
-{
-public:
-	struct FVector                                targetPosition;                                    // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_GetOwnerCharacter_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalCharacterParameterComponent*        CallFunc_GetComponentByClass_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetOverrideTargetLocation_ConsiderRide_ReturnValue; // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_GetTargetLocation;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnAttachWeapon
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnAttachWeapon final
-{
-public:
-	class AActor*                                 attachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnAttachWeapon;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnBlendOut_1A67CE1042B43EF42A4334AFA2181CEE
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnBlendOut_1A67CE1042B43EF42A4334AFA2181CEE final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnBlendOut_1A67CE1042B43EF42A4334AFA2181CEE;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnBlendOut_6868AA2F41E676FCD1C891B7E8A7B79A
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnBlendOut_6868AA2F41E676FCD1C891B7E8A7B79A final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnBlendOut_6868AA2F41E676FCD1C891B7E8A7B79A;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnBlendOut_7D3D1A57488DAA75B92021BFFA4E3435
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnBlendOut_7D3D1A57488DAA75B92021BFFA4E3435 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnBlendOut_7D3D1A57488DAA75B92021BFFA4E3435;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnBlendOut_B8C41D4B4A5B4B1CCDEF6198D3783FEF
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnBlendOut_B8C41D4B4A5B4B1CCDEF6198D3783FEF final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnBlendOut_B8C41D4B4A5B4B1CCDEF6198D3783FEF;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnBlendOut_F04017F8494C2F37C78E51B48EBD2A1C
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnBlendOut_F04017F8494C2F37C78E51B48EBD2A1C final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnBlendOut_F04017F8494C2F37C78E51B48EBD2A1C;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnCompleted_1A67CE1042B43EF42A4334AFA2181CEE
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnCompleted_1A67CE1042B43EF42A4334AFA2181CEE final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnCompleted_1A67CE1042B43EF42A4334AFA2181CEE;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnCompleted_6868AA2F41E676FCD1C891B7E8A7B79A
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnCompleted_6868AA2F41E676FCD1C891B7E8A7B79A final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnCompleted_6868AA2F41E676FCD1C891B7E8A7B79A;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnCompleted_7D3D1A57488DAA75B92021BFFA4E3435
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnCompleted_7D3D1A57488DAA75B92021BFFA4E3435 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnCompleted_7D3D1A57488DAA75B92021BFFA4E3435;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnCompleted_B8C41D4B4A5B4B1CCDEF6198D3783FEF
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnCompleted_B8C41D4B4A5B4B1CCDEF6198D3783FEF final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnCompleted_B8C41D4B4A5B4B1CCDEF6198D3783FEF;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnCompleted_F04017F8494C2F37C78E51B48EBD2A1C
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnCompleted_F04017F8494C2F37C78E51B48EBD2A1C final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnCompleted_F04017F8494C2F37C78E51B48EBD2A1C;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnInterrupted_1A67CE1042B43EF42A4334AFA2181CEE
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnInterrupted_1A67CE1042B43EF42A4334AFA2181CEE final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnInterrupted_1A67CE1042B43EF42A4334AFA2181CEE;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnInterrupted_6868AA2F41E676FCD1C891B7E8A7B79A
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnInterrupted_6868AA2F41E676FCD1C891B7E8A7B79A final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnInterrupted_6868AA2F41E676FCD1C891B7E8A7B79A;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnInterrupted_7D3D1A57488DAA75B92021BFFA4E3435
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnInterrupted_7D3D1A57488DAA75B92021BFFA4E3435 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnInterrupted_7D3D1A57488DAA75B92021BFFA4E3435;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnInterrupted_B8C41D4B4A5B4B1CCDEF6198D3783FEF
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnInterrupted_B8C41D4B4A5B4B1CCDEF6198D3783FEF final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnInterrupted_B8C41D4B4A5B4B1CCDEF6198D3783FEF;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnInterrupted_F04017F8494C2F37C78E51B48EBD2A1C
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnInterrupted_F04017F8494C2F37C78E51B48EBD2A1C final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnInterrupted_F04017F8494C2F37C78E51B48EBD2A1C;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyBegin_1A67CE1042B43EF42A4334AFA2181CEE
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnNotifyBegin_1A67CE1042B43EF42A4334AFA2181CEE final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnNotifyBegin_1A67CE1042B43EF42A4334AFA2181CEE;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyBegin_6868AA2F41E676FCD1C891B7E8A7B79A
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnNotifyBegin_6868AA2F41E676FCD1C891B7E8A7B79A final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnNotifyBegin_6868AA2F41E676FCD1C891B7E8A7B79A;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyBegin_7D3D1A57488DAA75B92021BFFA4E3435
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnNotifyBegin_7D3D1A57488DAA75B92021BFFA4E3435 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnNotifyBegin_7D3D1A57488DAA75B92021BFFA4E3435;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyBegin_B8C41D4B4A5B4B1CCDEF6198D3783FEF
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnNotifyBegin_B8C41D4B4A5B4B1CCDEF6198D3783FEF final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnNotifyBegin_B8C41D4B4A5B4B1CCDEF6198D3783FEF;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyBegin_F04017F8494C2F37C78E51B48EBD2A1C
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnNotifyBegin_F04017F8494C2F37C78E51B48EBD2A1C final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnNotifyBegin_F04017F8494C2F37C78E51B48EBD2A1C;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyEnd_1A67CE1042B43EF42A4334AFA2181CEE
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnNotifyEnd_1A67CE1042B43EF42A4334AFA2181CEE final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnNotifyEnd_1A67CE1042B43EF42A4334AFA2181CEE;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyEnd_6868AA2F41E676FCD1C891B7E8A7B79A
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnNotifyEnd_6868AA2F41E676FCD1C891B7E8A7B79A final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnNotifyEnd_6868AA2F41E676FCD1C891B7E8A7B79A;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyEnd_7D3D1A57488DAA75B92021BFFA4E3435
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnNotifyEnd_7D3D1A57488DAA75B92021BFFA4E3435 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnNotifyEnd_7D3D1A57488DAA75B92021BFFA4E3435;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyEnd_B8C41D4B4A5B4B1CCDEF6198D3783FEF
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnNotifyEnd_B8C41D4B4A5B4B1CCDEF6198D3783FEF final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnNotifyEnd_B8C41D4B4A5B4B1CCDEF6198D3783FEF;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyEnd_F04017F8494C2F37C78E51B48EBD2A1C
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnNotifyEnd_F04017F8494C2F37C78E51B48EBD2A1C final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnNotifyEnd_F04017F8494C2F37C78E51B48EBD2A1C;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnReleaseTrigger
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.IsUseLeftHandAttach
 // 0x0001 (0x0001 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnReleaseTrigger final
+struct BP_ChargeLaserRifle_C_IsUseLeftHandAttach final
 {
 public:
-	bool                                          bCanShootOnRelease;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnReleaseTrigger;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnReloadStart
-// 0x0004 (0x0004 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnReloadStart final
-{
-public:
-	float                                         InReloadSpeedPlayRate;                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnReloadStart;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnWeaponNotify
-// 0x0001 (0x0001 - 0x0000)
-struct BP_ChargeLaserRifle_C_OnWeaponNotify final
-{
-public:
-	EWeaponNotifyType                             Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_OnWeaponNotify;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_ChargeLaserRifle_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_ReceiveTick;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.ShootBullet
-// 0x0250 (0x0250 - 0x0000)
-struct BP_ChargeLaserRifle_C_ShootBullet final
-{
-public:
-	struct FVector                                MuzzleLocation;                                    // 0x0000(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsEmptyMagazine_ReturnValue;              // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetPvPPlayerToGuildPalDamageRate_ReturnValue; // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetPvPBuildingDamageRate_ReturnValue;     // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetBulletDeleteTime_ReturnValue;          // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TSubclassOf<class APalBullet>                 CallFunc_GetCurrentBulletClass_ReturnValue;        // 0x0028(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_GetMuzzleTransform_TF;                    // 0x0030(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0090(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x00A8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x00C0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue;        // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetTargetLocation_TargetPosition;         // 0x00E0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x00F8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetWeaponDamage_ReturnValue;              // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_MakeRotFromX_ReturnValue;                 // 0x0118(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FTransform                             CallFunc_GetMuzzleTransform_TF_1;                  // 0x0130(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0190(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakTransform_Location_1;                // 0x01F0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation_1;                // 0x0208(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale_1;                   // 0x0220(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalBulletCreator*                      CallFunc_GetBulletCreator_ReturnValue;             // 0x0238(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_DecrementBullet_ReturnValue;              // 0x0240(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_241[0x7];                                      // 0x0241(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalBullet*                             CallFunc_CreateBullet_ReturnValue;                 // 0x0248(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_ShootBullet;
+DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_IsUseLeftHandAttach;
 
 // Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.GetLeftHandTransform
 // 0x00C0 (0x00C0 - 0x0000)
@@ -523,15 +532,6 @@ public:
 	struct FTransform                             CallFunc_GetSocketTransform_ReturnValue;           // 0x0060(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_GetLeftHandTransform;
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.IsUseLeftHandAttach
-// 0x0001 (0x0001 - 0x0000)
-struct BP_ChargeLaserRifle_C_IsUseLeftHandAttach final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ChargeLaserRifle_C_IsUseLeftHandAttach;
 
 }
 

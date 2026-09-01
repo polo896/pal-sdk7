@@ -31,7 +31,7 @@ struct FCommonInputActionDataBase : public FTableRowBase
     int32 NavBarPriority;                                                             // 0x0038 (size: 0x4)
     FCommonInputTypeInfo KeyboardInputTypeInfo;                                       // 0x0040 (size: 0xF0)
     FCommonInputTypeInfo DefaultGamepadInputTypeInfo;                                 // 0x0130 (size: 0xF0)
-    TMap<class FName, class FCommonInputTypeInfo> GamepadInputOverrides;              // 0x0220 (size: 0x50)
+    TMap<FName, FCommonInputTypeInfo> GamepadInputOverrides;                          // 0x0220 (size: 0x50)
     FCommonInputTypeInfo TouchInputTypeInfo;                                          // 0x0270 (size: 0xF0)
 
 }; // Size: 0x360
@@ -75,7 +75,7 @@ struct FCommonRegisteredTabInfo
 struct FRichTextIconData : public FTableRowBase
 {
     FText DisplayName;                                                                // 0x0008 (size: 0x18)
-    TSoftObjectPtr<UObject> ResourceObject;                                           // 0x0020 (size: 0x30)
+    TSoftObjectPtr<class UObject> ResourceObject;                                     // 0x0020 (size: 0x30)
     FVector2D ImageSize;                                                              // 0x0050 (size: 0x10)
 
 }; // Size: 0x60
@@ -153,13 +153,13 @@ class UCommonActivatableWidget : public UCommonUserWidget
     bool bIsModal;                                                                    // 0x02A4 (size: 0x1)
     bool bAutoRestoreFocus;                                                           // 0x02A5 (size: 0x1)
     bool bOverrideActionDomain;                                                       // 0x02A6 (size: 0x1)
-    TSoftObjectPtr<UCommonInputActionDomain> ActionDomainOverride;                    // 0x02A8 (size: 0x30)
+    TSoftObjectPtr<class UCommonInputActionDomain> ActionDomainOverride;              // 0x02A8 (size: 0x30)
     FCommonActivatableWidgetBP_OnWidgetActivated BP_OnWidgetActivated;                // 0x02D8 (size: 0x10)
     void OnWidgetActivationChanged();
     FCommonActivatableWidgetBP_OnWidgetDeactivated BP_OnWidgetDeactivated;            // 0x02E8 (size: 0x10)
     void OnWidgetActivationChanged();
     bool bIsActive;                                                                   // 0x02F8 (size: 0x1)
-    TArray<TWeakObjectPtr<UCommonActivatableWidget>> VisibilityBoundWidgets;          // 0x0300 (size: 0x10)
+    TArray<TWeakObjectPtr<class UCommonActivatableWidget>> VisibilityBoundWidgets;    // 0x0300 (size: 0x10)
     bool bSetVisibilityOnActivated;                                                   // 0x03C0 (size: 0x1)
     ESlateVisibility ActivatedVisibility;                                             // 0x03C1 (size: 0x1)
     bool bSetVisibilityOnDeactivated;                                                 // 0x03C2 (size: 0x1)
@@ -182,7 +182,7 @@ class UCommonActivatableWidgetContainerBase : public UWidget
     ECommonSwitcherTransition TransitionType;                                         // 0x0168 (size: 0x1)
     ETransitionCurve TransitionCurveType;                                             // 0x0169 (size: 0x1)
     float TransitionDuration;                                                         // 0x016C (size: 0x4)
-    TArray<class UCommonActivatableWidget*> WidgetList;                               // 0x0170 (size: 0x10)
+    TArray<UCommonActivatableWidget*> WidgetList;                                     // 0x0170 (size: 0x10)
     class UCommonActivatableWidget* DisplayedWidget;                                  // 0x0180 (size: 0x8)
     FUserWidgetPool GeneratedWidgetsPool;                                             // 0x0188 (size: 0x88)
 
@@ -511,9 +511,9 @@ class UCommonLazyImage : public UImage
     void OnLoadGuardStateChangedDynamic(bool bIsLoading);
 
     void SetMaterialTextureParamName(FName TextureParamName);
-    void SetBrushFromLazyTexture(const TSoftObjectPtr<UTexture2D>& LazyTexture, bool bMatchSize);
-    void SetBrushFromLazyMaterial(const TSoftObjectPtr<UMaterialInterface>& LazyMaterial);
-    void SetBrushFromLazyDisplayAsset(const TSoftObjectPtr<UObject>& LazyObject, bool bMatchTextureSize);
+    void SetBrushFromLazyTexture(const TSoftObjectPtr<class UTexture2D>& LazyTexture, bool bMatchSize);
+    void SetBrushFromLazyMaterial(const TSoftObjectPtr<class UMaterialInterface>& LazyMaterial);
+    void SetBrushFromLazyDisplayAsset(const TSoftObjectPtr<class UObject>& LazyObject, bool bMatchTextureSize);
     bool IsLoading();
 }; // Size: 0x3C0
 
@@ -550,7 +550,7 @@ class UCommonLoadGuard : public UContentWidget
     void SetIsLoading(bool bInIsLoading);
     void OnAssetLoaded__DelegateSignature(class UObject* Object);
     bool IsLoading();
-    void BP_GuardAndLoadAsset(const TSoftObjectPtr<UObject>& InLazyAsset, const FBP_GuardAndLoadAssetOnAssetLoaded& OnAssetLoaded);
+    void BP_GuardAndLoadAsset(const TSoftObjectPtr<class UObject>& InLazyAsset, const FBP_GuardAndLoadAssetOnAssetLoaded& OnAssetLoaded);
 }; // Size: 0x2D0
 
 class UCommonNumericTextBlock : public UCommonTextBlock
@@ -615,8 +615,8 @@ class UCommonRotator : public UCommonButtonBase
 
 class UCommonStyleSheet : public UDataAsset
 {
-    TArray<class UCommonStyleSheetTypeBase*> Properties;                              // 0x0030 (size: 0x10)
-    TArray<class UCommonStyleSheet*> ImportedStyleSheets;                             // 0x0040 (size: 0x10)
+    TArray<UCommonStyleSheetTypeBase*> Properties;                                    // 0x0030 (size: 0x10)
+    TArray<UCommonStyleSheet*> ImportedStyleSheets;                                   // 0x0040 (size: 0x10)
 
 }; // Size: 0x58
 
@@ -702,7 +702,7 @@ class UCommonTabListWidgetBase : public UCommonUserWidget
     bool bDeferRebuildingTabList;                                                     // 0x0301 (size: 0x1)
     TWeakObjectPtr<class UCommonAnimatedSwitcher> LinkedSwitcher;                     // 0x0304 (size: 0x8)
     class UCommonButtonGroupBase* TabButtonGroup;                                     // 0x0310 (size: 0x8)
-    TMap<class FName, class FCommonRegisteredTabInfo> RegisteredTabsByID;             // 0x0320 (size: 0x50)
+    TMap<FName, FCommonRegisteredTabInfo> RegisteredTabsByID;                         // 0x0320 (size: 0x50)
 
     void SetTabVisibility(FName TabNameID, ESlateVisibility NewVisibility);
     void SetTabInteractionEnabled(FName TabNameID, bool bEnable);
@@ -828,8 +828,8 @@ class UCommonUIRichTextData : public UObject
 class UCommonUISettings : public UObject
 {
     bool bAutoLoadData;                                                               // 0x0028 (size: 0x1)
-    TSoftObjectPtr<UObject> DefaultImageResourceObject;                               // 0x0030 (size: 0x30)
-    TSoftObjectPtr<UMaterialInterface> DefaultThrobberMaterial;                       // 0x0060 (size: 0x30)
+    TSoftObjectPtr<class UObject> DefaultImageResourceObject;                         // 0x0030 (size: 0x30)
+    TSoftObjectPtr<class UMaterialInterface> DefaultThrobberMaterial;                 // 0x0060 (size: 0x30)
     TSoftClassPtr<UCommonUIRichTextData> DefaultRichTextDataClass;                    // 0x0090 (size: 0x30)
     TArray<FGameplayTag> PlatformTraits;                                              // 0x00C0 (size: 0x10)
     class UObject* DefaultImageResourceObjectInstance;                                // 0x00F8 (size: 0x8)
@@ -917,7 +917,7 @@ class UCommonWidgetCarouselNavBar : public UWidget
     FMargin ButtonPadding;                                                            // 0x0158 (size: 0x10)
     class UCommonWidgetCarousel* LinkedCarousel;                                      // 0x0178 (size: 0x8)
     class UCommonButtonGroupBase* ButtonGroup;                                        // 0x0180 (size: 0x8)
-    TArray<class UCommonButtonBase*> Buttons;                                         // 0x0188 (size: 0x10)
+    TArray<UCommonButtonBase*> Buttons;                                               // 0x0188 (size: 0x10)
 
     void SetLinkedCarousel(class UCommonWidgetCarousel* CommonCarousel);
     void HandlePageChanged(class UCommonWidgetCarousel* CommonCarousel, int32 pageIndex);
@@ -934,7 +934,7 @@ class UCommonWidgetGroupBase : public UObject
 
 class UDEPRECATED_UCommonVisibilityWidgetBase : public UCommonBorder
 {
-    TMap<class FName, class bool> VisibilityControls;                                 // 0x0328 (size: 0x50)
+    TMap<FName, bool> VisibilityControls;                                             // 0x0328 (size: 0x50)
     bool bShowForGamepad;                                                             // 0x0378 (size: 0x1)
     bool bShowForMouseAndKeyboard;                                                    // 0x0379 (size: 0x1)
     bool bShowForTouch;                                                               // 0x037A (size: 0x1)

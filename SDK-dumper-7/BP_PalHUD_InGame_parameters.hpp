@@ -18,15 +18,6 @@
 namespace SDK::Params
 {
 
-// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.AsyncLoadAndCreateWidget
-// 0x0030 (0x0030 - 0x0000)
-struct BP_PalHUD_InGame_C_AsyncLoadAndCreateWidget final
-{
-public:
-	TSoftClassPtr<class UClass>                   WidgetClass;                                       // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalHUD_InGame_C_AsyncLoadAndCreateWidget;
-
 // Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.CREATEDELEGATE_PROXYFUNCTION_0
 // 0x0040 (0x0040 - 0x0000)
 struct BP_PalHUD_InGame_C_CREATEDELEGATE_PROXYFUNCTION_0 final
@@ -37,9 +28,138 @@ public:
 };
 DUMPER7_ASSERTS_BP_PalHUD_InGame_C_CREATEDELEGATE_PROXYFUNCTION_0;
 
-// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.DisplayHUD_Respawn
+// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.AsyncLoadAndCreateWidget
+// 0x0030 (0x0030 - 0x0000)
+struct BP_PalHUD_InGame_C_AsyncLoadAndCreateWidget final
+{
+public:
+	TSoftClassPtr<class UClass>                   WidgetClass;                                       // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalHUD_InGame_C_AsyncLoadAndCreateWidget;
+
+// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.ShowLiftItemDisplay
+// 0x0010 (0x0010 - 0x0000)
+struct BP_PalHUD_InGame_C_ShowLiftItemDisplay final
+{
+public:
+	struct FPalItemData                           LiftItemData;                                      // 0x0000(0x0010)(Edit, BlueprintVisible, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_PalHUD_InGame_C_ShowLiftItemDisplay;
+
+// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.SetupHUD_Internal
+// 0x0002 (0x0002 - 0x0000)
+struct BP_PalHUD_InGame_C_SetupHUD_Internal final
+{
+public:
+	bool                                          CallFunc_IsEditorBuild_ReturnValue;                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalHUD_InGame_C_SetupHUD_Internal;
+
+// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.Setup Lift Item Event
+// 0x0010 (0x0010 - 0x0000)
+struct BP_PalHUD_InGame_C_Setup_Lift_Item_Event final
+{
+public:
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalHUD_InGame_C_Setup_Lift_Item_Event;
+
+// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_PalHUD_InGame_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalHUD_InGame_C_ReceiveTick;
+
+// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.ReceiveEndPlay
+// 0x0001 (0x0001 - 0x0000)
+struct BP_PalHUD_InGame_C_ReceiveEndPlay final
+{
+public:
+	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalHUD_InGame_C_ReceiveEndPlay;
+
+// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.ReceiveDrawHUD
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PalHUD_InGame_C_ReceiveDrawHUD final
+{
+public:
+	int32                                         SizeX;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         SizeY;                                             // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalHUD_InGame_C_ReceiveDrawHUD;
+
+// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.OnUpdateLiftSlot
+// 0x0001 (0x0001 - 0x0000)
+struct BP_PalHUD_InGame_C_OnUpdateLiftSlot final
+{
+public:
+	bool                                          CallFunc_IsLift_ReturnValue;                       // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalHUD_InGame_C_OnUpdateLiftSlot;
+
+// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.OnRespawnPlayer
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PalHUD_InGame_C_OnRespawnPlayer final
+{
+public:
+	class APalPlayerCharacter*                    Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalHUD_InGame_C_OnRespawnPlayer;
+
+// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.OnLoaded_EF35A3894C280426B58FA0A0D5280930
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PalHUD_InGame_C_OnLoaded_EF35A3894C280426B58FA0A0D5280930 final
+{
+public:
+	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalHUD_InGame_C_OnLoaded_EF35A3894C280426B58FA0A0D5280930;
+
+// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.OnLoaded_39EEADC54AE57646EA72A79D911211B6
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PalHUD_InGame_C_OnLoaded_39EEADC54AE57646EA72A79D911211B6 final
+{
+public:
+	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalHUD_InGame_C_OnLoaded_39EEADC54AE57646EA72A79D911211B6;
+
+// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.OnLoaded_01D7FBF3483366434C8293A197BFD965
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PalHUD_InGame_C_OnLoaded_01D7FBF3483366434C8293A197BFD965 final
+{
+public:
+	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalHUD_InGame_C_OnLoaded_01D7FBF3483366434C8293A197BFD965;
+
+// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.OnDyingEnd
+// 0x0040 (0x0040 - 0x0000)
+struct BP_PalHUD_InGame_C_OnDyingEnd final
+{
+public:
+	class APalPlayerCharacter*                    PlayerCharacter;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalDyingEndInfo                       DyingEndInfo;                                      // 0x0008(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_BP_PalHUD_InGame_C_OnDyingEnd;
+
+// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.HideLiftItemDisplay
+// 0x0001 (0x0001 - 0x0000)
+struct BP_PalHUD_InGame_C_HideLiftItemDisplay final
+{
+public:
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalHUD_InGame_C_HideLiftItemDisplay;
+
+// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.HideHUD_ForDeath
 // 0x0048 (0x0048 - 0x0000)
-struct BP_PalHUD_InGame_C_DisplayHUD_Respawn final
+struct BP_PalHUD_InGame_C_HideHUD_ForDeath final
 {
 public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -56,7 +176,7 @@ public:
 	class UPalUserWidget*                         CallFunc_Map_Find_Value;                           // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalHUD_InGame_C_DisplayHUD_Respawn;
+DUMPER7_ASSERTS_BP_PalHUD_InGame_C_HideHUD_ForDeath;
 
 // Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.ExecuteUbergraph_BP_PalHUD_InGame
 // 0x0200 (0x0200 - 0x0000)
@@ -131,9 +251,9 @@ public:
 };
 DUMPER7_ASSERTS_BP_PalHUD_InGame_C_ExecuteUbergraph_BP_PalHUD_InGame;
 
-// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.HideHUD_ForDeath
+// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.DisplayHUD_Respawn
 // 0x0048 (0x0048 - 0x0000)
-struct BP_PalHUD_InGame_C_HideHUD_ForDeath final
+struct BP_PalHUD_InGame_C_DisplayHUD_Respawn final
 {
 public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -150,127 +270,7 @@ public:
 	class UPalUserWidget*                         CallFunc_Map_Find_Value;                           // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalHUD_InGame_C_HideHUD_ForDeath;
-
-// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.HideLiftItemDisplay
-// 0x0001 (0x0001 - 0x0000)
-struct BP_PalHUD_InGame_C_HideLiftItemDisplay final
-{
-public:
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalHUD_InGame_C_HideLiftItemDisplay;
-
-// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.OnDyingEnd
-// 0x0040 (0x0040 - 0x0000)
-struct BP_PalHUD_InGame_C_OnDyingEnd final
-{
-public:
-	class APalPlayerCharacter*                    PlayerCharacter;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalDyingEndInfo                       DyingEndInfo;                                      // 0x0008(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_BP_PalHUD_InGame_C_OnDyingEnd;
-
-// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.OnLoaded_01D7FBF3483366434C8293A197BFD965
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PalHUD_InGame_C_OnLoaded_01D7FBF3483366434C8293A197BFD965 final
-{
-public:
-	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalHUD_InGame_C_OnLoaded_01D7FBF3483366434C8293A197BFD965;
-
-// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.OnLoaded_39EEADC54AE57646EA72A79D911211B6
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PalHUD_InGame_C_OnLoaded_39EEADC54AE57646EA72A79D911211B6 final
-{
-public:
-	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalHUD_InGame_C_OnLoaded_39EEADC54AE57646EA72A79D911211B6;
-
-// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.OnLoaded_EF35A3894C280426B58FA0A0D5280930
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PalHUD_InGame_C_OnLoaded_EF35A3894C280426B58FA0A0D5280930 final
-{
-public:
-	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalHUD_InGame_C_OnLoaded_EF35A3894C280426B58FA0A0D5280930;
-
-// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.OnRespawnPlayer
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PalHUD_InGame_C_OnRespawnPlayer final
-{
-public:
-	class APalPlayerCharacter*                    Player;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalHUD_InGame_C_OnRespawnPlayer;
-
-// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.OnUpdateLiftSlot
-// 0x0001 (0x0001 - 0x0000)
-struct BP_PalHUD_InGame_C_OnUpdateLiftSlot final
-{
-public:
-	bool                                          CallFunc_IsLift_ReturnValue;                       // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalHUD_InGame_C_OnUpdateLiftSlot;
-
-// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.ReceiveDrawHUD
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PalHUD_InGame_C_ReceiveDrawHUD final
-{
-public:
-	int32                                         SizeX;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         SizeY;                                             // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalHUD_InGame_C_ReceiveDrawHUD;
-
-// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.ReceiveEndPlay
-// 0x0001 (0x0001 - 0x0000)
-struct BP_PalHUD_InGame_C_ReceiveEndPlay final
-{
-public:
-	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalHUD_InGame_C_ReceiveEndPlay;
-
-// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_PalHUD_InGame_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalHUD_InGame_C_ReceiveTick;
-
-// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.Setup Lift Item Event
-// 0x0010 (0x0010 - 0x0000)
-struct BP_PalHUD_InGame_C_Setup_Lift_Item_Event final
-{
-public:
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalHUD_InGame_C_Setup_Lift_Item_Event;
-
-// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.SetupHUD_Internal
-// 0x0002 (0x0002 - 0x0000)
-struct BP_PalHUD_InGame_C_SetupHUD_Internal final
-{
-public:
-	bool                                          CallFunc_IsEditorBuild_ReturnValue;                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalHUD_InGame_C_SetupHUD_Internal;
-
-// Function BP_PalHUD_InGame.BP_PalHUD_InGame_C.ShowLiftItemDisplay
-// 0x0010 (0x0010 - 0x0000)
-struct BP_PalHUD_InGame_C_ShowLiftItemDisplay final
-{
-public:
-	struct FPalItemData                           LiftItemData;                                      // 0x0000(0x0010)(Edit, BlueprintVisible, NoDestructor)
-};
-DUMPER7_ASSERTS_BP_PalHUD_InGame_C_ShowLiftItemDisplay;
+DUMPER7_ASSERTS_BP_PalHUD_InGame_C_DisplayHUD_Respawn;
 
 }
 

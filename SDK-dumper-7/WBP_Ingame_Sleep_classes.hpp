@@ -32,13 +32,13 @@ public:
 	class UBP_PalTextBlock_C*                     Text_Num;                                          // 0x02A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void CloseMenu();
 	void ExecuteUbergraph_WBP_Ingame_Sleep(int32 EntryPoint);
-	bool IsActionSleepOnSide(class UClass* Class_0);
-	void OnChangeSleepingPlayerNum(class UPalTimeManager* Manager);
-	void SetSleepCount(int32 Count);
-	void SetupKeyGuide();
+	void CloseMenu();
 	void SetupMenu();
+	void SetupKeyGuide();
+	void SetSleepCount(int32 Count);
+	void OnChangeSleepingPlayerNum(class UPalTimeManager* Manager);
+	bool IsActionSleepOnSide(class UClass* Class_0);
 
 public:
 	static class UClass* StaticClass()

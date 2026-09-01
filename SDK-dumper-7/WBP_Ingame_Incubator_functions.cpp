@@ -17,157 +17,55 @@
 namespace SDK
 {
 
-// Function WBP_Ingame_Incubator.WBP_Ingame_Incubator_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Ingame_Incubator_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Ingame_Incubator.WBP_Ingame_Incubator_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Ingame_Incubator_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Ingame_Incubator.WBP_Ingame_Incubator_C.DisplayCheck
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Ingame_Incubator_C::DisplayCheck()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_C", "DisplayCheck");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Ingame_Incubator.WBP_Ingame_Incubator_C.ExecuteUbergraph_WBP_Ingame_Incubator
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Ingame_Incubator_C::ExecuteUbergraph_WBP_Ingame_Incubator(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_C", "ExecuteUbergraph_WBP_Ingame_Incubator");
-
-	Params::WBP_Ingame_Incubator_C_ExecuteUbergraph_WBP_Ingame_Incubator Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Ingame_Incubator.WBP_Ingame_Incubator_C.On Update Work Amount
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalWorkProgress*                 WorkProgress                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Ingame_Incubator_C::On_Update_Work_Amount(class UPalWorkProgress* WorkProgress)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_C", "On Update Work Amount");
-
-	Params::WBP_Ingame_Incubator_C_On_Update_Work_Amount Parms{};
-
-	Parms.WorkProgress = WorkProgress;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Ingame_Incubator.WBP_Ingame_Incubator_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Ingame_Incubator_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Ingame_Incubator.WBP_Ingame_Incubator_C.OnUpdateHatchedCharacter
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalMapObjectHatchingEggModel*    Model_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Ingame_Incubator_C::OnUpdateHatchedCharacter(class UPalMapObjectHatchingEggModel* Model_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_C", "OnUpdateHatchedCharacter");
-
-	Params::WBP_Ingame_Incubator_C_OnUpdateHatchedCharacter Parms{};
-
-	Parms.Model_0 = Model_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Ingame_Incubator.WBP_Ingame_Incubator_C.OnUpdateHatchTemperature
+// Function WBP_Ingame_Incubator.WBP_Ingame_Incubator_C.UpdatePowerSuffcient
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   TempDiff                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalMapObjectEnergyModule*        Module                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Ingame_Incubator_C::OnUpdateHatchTemperature(int32 TempDiff)
+void UWBP_Ingame_Incubator_C::UpdatePowerSuffcient(class UPalMapObjectEnergyModule* Module)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_C", "OnUpdateHatchTemperature");
+		Func = Class->GetFunction("WBP_Ingame_Incubator_C", "UpdatePowerSuffcient");
 
-	Params::WBP_Ingame_Incubator_C_OnUpdateHatchTemperature Parms{};
+	Params::WBP_Ingame_Incubator_C_UpdatePowerSuffcient Parms{};
 
-	Parms.TempDiff = TempDiff;
+	Parms.Module = Module;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Ingame_Incubator.WBP_Ingame_Incubator_C.OnUpdateItemContainer
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalItemContainer*                Container                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Ingame_Incubator.WBP_Ingame_Incubator_C.UpdateEggDisplay
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Ingame_Incubator_C::OnUpdateItemContainer(class UPalItemContainer* Container)
+void UWBP_Ingame_Incubator_C::UpdateEggDisplay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_C", "OnUpdateItemContainer");
+		Func = Class->GetFunction("WBP_Ingame_Incubator_C", "UpdateEggDisplay");
 
-	Params::WBP_Ingame_Incubator_C_OnUpdateItemContainer Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Container = Container;
+
+// Function WBP_Ingame_Incubator.WBP_Ingame_Incubator_C.Set Second
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   RemainingSecond                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Ingame_Incubator_C::Set_Second(int32 RemainingSecond)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_Incubator_C", "Set Second");
+
+	Params::WBP_Ingame_Incubator_C_Set_Second Parms{};
+
+	Parms.RemainingSecond = RemainingSecond;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -197,57 +95,159 @@ void UWBP_Ingame_Incubator_C::RatioToPersentOffsetText(double Ratio, class FText
 }
 
 
-// Function WBP_Ingame_Incubator.WBP_Ingame_Incubator_C.Set Second
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Ingame_Incubator.WBP_Ingame_Incubator_C.OnUpdateItemContainer
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   RemainingSecond                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalItemContainer*                Container                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Ingame_Incubator_C::Set_Second(int32 RemainingSecond)
+void UWBP_Ingame_Incubator_C::OnUpdateItemContainer(class UPalItemContainer* Container)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_C", "Set Second");
+		Func = Class->GetFunction("WBP_Ingame_Incubator_C", "OnUpdateItemContainer");
 
-	Params::WBP_Ingame_Incubator_C_Set_Second Parms{};
+	Params::WBP_Ingame_Incubator_C_OnUpdateItemContainer Parms{};
 
-	Parms.RemainingSecond = RemainingSecond;
+	Parms.Container = Container;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Ingame_Incubator.WBP_Ingame_Incubator_C.UpdateEggDisplay
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Ingame_Incubator.WBP_Ingame_Incubator_C.OnUpdateHatchTemperature
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   TempDiff                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Ingame_Incubator_C::UpdateEggDisplay()
+void UWBP_Ingame_Incubator_C::OnUpdateHatchTemperature(int32 TempDiff)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_C", "UpdateEggDisplay");
+		Func = Class->GetFunction("WBP_Ingame_Incubator_C", "OnUpdateHatchTemperature");
+
+	Params::WBP_Ingame_Incubator_C_OnUpdateHatchTemperature Parms{};
+
+	Parms.TempDiff = TempDiff;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Ingame_Incubator.WBP_Ingame_Incubator_C.OnUpdateHatchedCharacter
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalMapObjectHatchingEggModel*    Model_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Ingame_Incubator_C::OnUpdateHatchedCharacter(class UPalMapObjectHatchingEggModel* Model_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_Incubator_C", "OnUpdateHatchedCharacter");
+
+	Params::WBP_Ingame_Incubator_C_OnUpdateHatchedCharacter Parms{};
+
+	Parms.Model_0 = Model_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Ingame_Incubator.WBP_Ingame_Incubator_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Ingame_Incubator_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_Incubator_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Ingame_Incubator.WBP_Ingame_Incubator_C.UpdatePowerSuffcient
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Ingame_Incubator.WBP_Ingame_Incubator_C.On Update Work Amount
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPalMapObjectEnergyModule*        Module                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalWorkProgress*                 WorkProgress                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Ingame_Incubator_C::UpdatePowerSuffcient(class UPalMapObjectEnergyModule* Module)
+void UWBP_Ingame_Incubator_C::On_Update_Work_Amount(class UPalWorkProgress* WorkProgress)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_C", "UpdatePowerSuffcient");
+		Func = Class->GetFunction("WBP_Ingame_Incubator_C", "On Update Work Amount");
 
-	Params::WBP_Ingame_Incubator_C_UpdatePowerSuffcient Parms{};
+	Params::WBP_Ingame_Incubator_C_On_Update_Work_Amount Parms{};
 
-	Parms.Module = Module;
+	Parms.WorkProgress = WorkProgress;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Ingame_Incubator.WBP_Ingame_Incubator_C.ExecuteUbergraph_WBP_Ingame_Incubator
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Ingame_Incubator_C::ExecuteUbergraph_WBP_Ingame_Incubator(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_Incubator_C", "ExecuteUbergraph_WBP_Ingame_Incubator");
+
+	Params::WBP_Ingame_Incubator_C_ExecuteUbergraph_WBP_Ingame_Incubator Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Ingame_Incubator.WBP_Ingame_Incubator_C.DisplayCheck
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Ingame_Incubator_C::DisplayCheck()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_Incubator_C", "DisplayCheck");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Ingame_Incubator.WBP_Ingame_Incubator_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Ingame_Incubator_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_Incubator_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Ingame_Incubator.WBP_Ingame_Incubator_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Ingame_Incubator_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_Incubator_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

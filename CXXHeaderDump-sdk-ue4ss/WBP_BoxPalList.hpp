@@ -26,7 +26,7 @@ class UWBP_BoxPalList_C : public UPalUIPalBoxBase
     void OnSorted();
     FWBP_BoxPalList_COnUpdateSlot OnUpdateSlot;                                       // 0x0548 (size: 0x10)
     void OnUpdateSlot(class UWBP_PalCharacterSlotButtonBase_C* SlotButton);
-    TSoftObjectPtr<UWBP_PalCharacterSlotButtonBase_C> LastHoveredSlot;                // 0x0558 (size: 0x30)
+    TSoftObjectPtr<class UWBP_PalCharacterSlotButtonBase_C> LastHoveredSlot;          // 0x0558 (size: 0x30)
     bool bDisplayBanMarkInExpedition;                                                 // 0x0588 (size: 0x1)
     FWBP_BoxPalList_COnSyncedSlot OnSyncedSlot;                                       // 0x0590 (size: 0x10)
     void OnSyncedSlot(class UWBP_PalCharacterSlotButtonBase_C* SlotButton);
@@ -39,11 +39,11 @@ class UWBP_BoxPalList_C : public UPalUIPalBoxBase
     void OnClosedSearchWindow(class UPalHUDDispatchParameterBase* Param);
     void OnClosedSortWindow(class UPalHUDDispatchParameterBase* Param);
     void Set Enable Page Control Action(bool bIsEnableAction);
-    void GetCurrentBoxSlots(TArray<class UWBP_PalCommonCharacterSlotButton_C*>& Slots);
+    void GetCurrentBoxSlots(TArray<UWBP_PalCommonCharacterSlotButton_C*>& Slots);
     void FindWidgetBySlot(class UPalIndividualCharacterSlot* Slot, class UWBP_PalCharacterSlotButtonBase_C*& Widget);
     void Setup();
     void Construct();
-    void OnUpdatePagePalBoxList(int32 NowPage, const TArray<class UPalIndividualCharacterSlot*>& SlotList);
+    void OnUpdatePagePalBoxList(int32 NowPage, const TArray<UPalIndividualCharacterSlot*>& SlotList);
     void BndEvt__WBP_BoxPalList_WBP_BoxPalListBase_K2Node_ComponentBoundEvent_2_OnUpdatedPage__DelegateSignature(int32 NowPage);
     void BndEvt__WBP_BoxPalList_WBP_BoxPalListBase_K2Node_ComponentBoundEvent_3_OnClickedSortButton__DelegateSignature();
     void BndEvt__WBP_BoxPalList_WBP_BoxPalListBase_K2Node_ComponentBoundEvent_4_OnCreatedNewSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* NewSlot);

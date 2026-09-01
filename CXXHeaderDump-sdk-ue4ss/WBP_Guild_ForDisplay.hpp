@@ -19,7 +19,7 @@ class UWBP_Guild_ForDisplay_C : public UPalUIGuildMenu
     bool IsSelectingMemberMenu;                                                       // 0x0580 (size: 0x1)
     FDataTableRowHandle BanPlayerDialogMsgID;                                         // 0x0588 (size: 0x10)
     FDataTableRowHandle ChangeRoleDialogMsgID;                                        // 0x0598 (size: 0x10)
-    TSoftObjectPtr<UWBP_Guild_MemberList_C> SelectionPlayerWidget;                    // 0x05A8 (size: 0x30)
+    TSoftObjectPtr<class UWBP_Guild_MemberList_C> SelectionPlayerWidget;              // 0x05A8 (size: 0x30)
     FTimerHandle CheckBanPlayerTimerHandle;                                           // 0x05D8 (size: 0x8)
     FTimerHandle CheckbanPlayerTimeoutTimerHandle;                                    // 0x05E0 (size: 0x8)
     FGuid BanPlayerUId;                                                               // 0x05E8 (size: 0x10)

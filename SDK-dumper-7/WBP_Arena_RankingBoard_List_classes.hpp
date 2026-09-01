@@ -36,9 +36,9 @@ public:
 	TMulticastInlineDelegate<void(class UWidget* Widget)> OnListHovered;                             // 0x02C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__WBP_Arena_RankingBoard_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void ExecuteUbergraph_WBP_Arena_RankingBoard_List(int32 EntryPoint);
 	void Setup(const struct FPalArenaWorldRankingRecord& RankingInfo);
+	void ExecuteUbergraph_WBP_Arena_RankingBoard_List(int32 EntryPoint);
+	void BndEvt__WBP_Arena_RankingBoard_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 
 public:
 	static class UClass* StaticClass()

@@ -52,25 +52,25 @@ public:
 	double                                        DoorFinishAngle;                                   // 0x03A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Disable_Lock_Mesh_Outline(class AActor* Other, TScriptInterface<class IPalInteractiveObjectComponentInterface> Component);
-	void DoorOpenAnimeLoop();
-	void Enable_Lock_Mesh_Outline(class AActor* Other, TScriptInterface<class IPalInteractiveObjectComponentInterface> Component);
-	void ExecuteUbergraph_BP_PalCapturedCage(int32 EntryPoint);
-	void FullOpenDoor();
-	void OnFinishRescue(class AActor* Player, EPalInteractiveObjectIndicatorType NewParam);
-	void OnSuccessOpenDoor_Client(class APalPlayerCharacter* Player);
-	void OpenDoor();
-	void OpenDoor_BP(bool bIsAnimSkip);
-	void PlayDoorOpenAnime();
-	void ReceiveBeginPlay();
-	void ResetCageByOutside_BP();
-	void SetupSpawnPal();
-	void StartCaptureEffect_ServerBP(class APalPlayerCharacter* Player);
-	void StartPlayerAnime(class AActor* Player, EPalInteractiveObjectIndicatorType NewParam);
 	void StopPlayerAnime(class AActor* Player, EPalInteractiveObjectIndicatorType NewParam);
+	void StartPlayerAnime(class AActor* Player, EPalInteractiveObjectIndicatorType NewParam);
+	void StartCaptureEffect_ServerBP(class APalPlayerCharacter* Player);
+	void SetupSpawnPal();
+	void ResetCageByOutside_BP();
+	void ReceiveBeginPlay();
+	void PlayDoorOpenAnime();
+	void OpenDoor_BP(bool bIsAnimSkip);
+	void OpenDoor();
+	void OnSuccessOpenDoor_Client(class APalPlayerCharacter* Player);
+	void OnFinishRescue(class AActor* Player, EPalInteractiveObjectIndicatorType NewParam);
+	void FullOpenDoor();
+	void ExecuteUbergraph_BP_PalCapturedCage(int32 EntryPoint);
+	void Enable_Lock_Mesh_Outline(class AActor* Other, TScriptInterface<class IPalInteractiveObjectComponentInterface> Component);
+	void DoorOpenAnimeLoop();
+	void Disable_Lock_Mesh_Outline(class AActor* Other, TScriptInterface<class IPalInteractiveObjectComponentInterface> Component);
 
-	class FName GetCampSpawnerName() const;
 	EPalInteractiveObjectIndicatorType GetIndicatorType() const;
+	class FName GetCampSpawnerName() const;
 
 public:
 	static class UClass* StaticClass()

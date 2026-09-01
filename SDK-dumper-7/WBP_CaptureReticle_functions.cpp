@@ -17,129 +17,186 @@
 namespace SDK
 {
 
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.CalcCaptureSuccessRate
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// TArray<double>&                         rateArray                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// double*                                 successRate                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.UpdateSecondStepWidgetPosition
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_CaptureReticle_C::CalcCaptureSuccessRate(TArray<double>& rateArray, double* successRate)
+void UWBP_CaptureReticle_C::UpdateSecondStepWidgetPosition()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "CalcCaptureSuccessRate");
-
-	Params::WBP_CaptureReticle_C_CalcCaptureSuccessRate Parms{};
-
-	Parms.rateArray = std::move(rateArray);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	rateArray = std::move(Parms.rateArray);
-
-	if (successRate != nullptr)
-		*successRate = Parms.successRate;
-}
-
-
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.ChangeSeqence
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalCaptureReticleSeqence               newSeqence                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CaptureReticle_C::ChangeSeqence(EPalCaptureReticleSeqence newSeqence)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "ChangeSeqence");
-
-	Params::WBP_CaptureReticle_C_ChangeSeqence Parms{};
-
-	Parms.newSeqence = newSeqence;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.ConvertTrueRateArrayToDisplayRateArray
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// TArray<double>&                         TrueRate                                               (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// TArray<double>*                         OutRate                                                (Parm, OutParm)
-
-void UWBP_CaptureReticle_C::ConvertTrueRateArrayToDisplayRateArray(TArray<double>& TrueRate, TArray<double>* OutRate)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "ConvertTrueRateArrayToDisplayRateArray");
-
-	Params::WBP_CaptureReticle_C_ConvertTrueRateArrayToDisplayRateArray Parms{};
-
-	Parms.TrueRate = std::move(TrueRate);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	TrueRate = std::move(Parms.TrueRate);
-
-	if (OutRate != nullptr)
-		*OutRate = std::move(Parms.OutRate);
-}
-
-
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.ConvertTrueRateToDisplayRate
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// double                                  TrueRate                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double*                                 OutRate                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CaptureReticle_C::ConvertTrueRateToDisplayRate(double TrueRate, double* OutRate)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "ConvertTrueRateToDisplayRate");
-
-	Params::WBP_CaptureReticle_C_ConvertTrueRateToDisplayRate Parms{};
-
-	Parms.TrueRate = TrueRate;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutRate != nullptr)
-		*OutRate = Parms.OutRate;
-}
-
-
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_CaptureReticle_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "Destruct");
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "UpdateSecondStepWidgetPosition");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.DisplayCaptureFailedLog
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.UpdateFailedWidgets
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPalIndividualCharacterHandle*    targetHandle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CaptureReticle_C::DisplayCaptureFailedLog(class UPalIndividualCharacterHandle* targetHandle)
+void UWBP_CaptureReticle_C::UpdateFailedWidgets(double DeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "DisplayCaptureFailedLog");
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "UpdateFailedWidgets");
 
-	Params::WBP_CaptureReticle_C_DisplayCaptureFailedLog Parms{};
+	Params::WBP_CaptureReticle_C_UpdateFailedWidgets Parms{};
+
+	Parms.DeltaTime = DeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.Unregister Weapon Event
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_CaptureReticle_C::Unregister_Weapon_Event()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "Unregister Weapon Event");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CaptureReticle_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "Tick");
+
+	Params::WBP_CaptureReticle_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.ShouldReticleDIsplay
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool*                                   ShouldDisplay                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CaptureReticle_C::ShouldReticleDIsplay(bool* ShouldDisplay)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "ShouldReticleDIsplay");
+
+	Params::WBP_CaptureReticle_C_ShouldReticleDIsplay Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ShouldDisplay != nullptr)
+		*ShouldDisplay = Parms.ShouldDisplay;
+}
+
+
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.SetupAfterPlayerSpawned
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_CaptureReticle_C::SetupAfterPlayerSpawned()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "SetupAfterPlayerSpawned");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.Set Display Capture Rate
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APalMonsterCharacter*             TargetMonster                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class APalWeaponBase*                   WeaponBase                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CaptureReticle_C::Set_Display_Capture_Rate(class APalMonsterCharacter* TargetMonster, class APalWeaponBase* WeaponBase)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "Set Display Capture Rate");
+
+	Params::WBP_CaptureReticle_C_Set_Display_Capture_Rate Parms{};
+
+	Parms.TargetMonster = TargetMonster;
+	Parms.WeaponBase = WeaponBase;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.RegisterWeaponEvent
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APalWeaponBase*                   NewWeapon                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CaptureReticle_C::RegisterWeaponEvent(class APalWeaponBase* NewWeapon)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "RegisterWeaponEvent");
+
+	Params::WBP_CaptureReticle_C_RegisterWeaponEvent Parms{};
+
+	Parms.NewWeapon = NewWeapon;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.OnThrowCaptureWeapon
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Bullet                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CaptureReticle_C::OnThrowCaptureWeapon(class AActor* Bullet)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "OnThrowCaptureWeapon");
+
+	Params::WBP_CaptureReticle_C_OnThrowCaptureWeapon Parms{};
+
+	Parms.Bullet = Bullet;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.OnSuccessedCapture
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalIndividualCharacterHandle*    targetHandle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CaptureReticle_C::OnSuccessedCapture(class UPalIndividualCharacterHandle* targetHandle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "OnSuccessedCapture");
+
+	Params::WBP_CaptureReticle_C_OnSuccessedCapture Parms{};
 
 	Parms.targetHandle = targetHandle;
 
@@ -147,44 +204,231 @@ void UWBP_CaptureReticle_C::DisplayCaptureFailedLog(class UPalIndividualCharacte
 }
 
 
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.ExecuteUbergraph_WBP_CaptureReticle
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.OnStartedCapture
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           createdBodyActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalIndividualCharacterHandle*    targetHandle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsSneakBonus                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsCriticalBonus                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CaptureReticle_C::ExecuteUbergraph_WBP_CaptureReticle(int32 EntryPoint)
+void UWBP_CaptureReticle_C::OnStartedCapture(class AActor* createdBodyActor, class UPalIndividualCharacterHandle* targetHandle, bool bIsSneakBonus, bool bIsCriticalBonus)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "ExecuteUbergraph_WBP_CaptureReticle");
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "OnStartedCapture");
 
-	Params::WBP_CaptureReticle_C_ExecuteUbergraph_WBP_CaptureReticle Parms{};
+	Params::WBP_CaptureReticle_C_OnStartedCapture Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.createdBodyActor = createdBodyActor;
+	Parms.targetHandle = targetHandle;
+	Parms.bIsSneakBonus = bIsSneakBonus;
+	Parms.bIsCriticalBonus = bIsCriticalBonus;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.FindTargetCharacter
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class APalMonsterCharacter**            TargetMonster                                          (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.OnSetup_AfterCreatedPlayer
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_CaptureReticle_C::FindTargetCharacter(class APalMonsterCharacter** TargetMonster)
+void UWBP_CaptureReticle_C::OnSetup_AfterCreatedPlayer()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "FindTargetCharacter");
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "OnSetup_AfterCreatedPlayer");
 
-	Params::WBP_CaptureReticle_C_FindTargetCharacter Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.OnPassingJudge
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   PhaseCount                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalIndividualCharacterHandle*    targetHandle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CaptureReticle_C::OnPassingJudge(int32 PhaseCount, class UPalIndividualCharacterHandle* targetHandle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "OnPassingJudge");
+
+	Params::WBP_CaptureReticle_C_OnPassingJudge Parms{};
+
+	Parms.PhaseCount = PhaseCount;
+	Parms.targetHandle = targetHandle;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_CaptureReticle_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.OnFailedPercentWidgetClear
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_CaptureFailedPercent_C*      SelfWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CaptureReticle_C::OnFailedPercentWidgetClear(class UWBP_CaptureFailedPercent_C* SelfWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "OnFailedPercentWidgetClear");
+
+	Params::WBP_CaptureReticle_C_OnFailedPercentWidgetClear Parms{};
+
+	Parms.SelfWidget = SelfWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.OnFailedCapture
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalIndividualCharacterHandle*    targetHandle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// EPalSphereCaptureFailedReason           failedReason                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CaptureReticle_C::OnFailedCapture(class UPalIndividualCharacterHandle* targetHandle, EPalSphereCaptureFailedReason failedReason)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "OnFailedCapture");
+
+	Params::WBP_CaptureReticle_C_OnFailedCapture Parms{};
+
+	Parms.targetHandle = targetHandle;
+	Parms.failedReason = failedReason;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.OnCaptureBodyEndPlay
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CaptureReticle_C::OnCaptureBodyEndPlay(class AActor* Actor, EEndPlayReason EndPlayReason)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "OnCaptureBodyEndPlay");
+
+	Params::WBP_CaptureReticle_C_OnCaptureBodyEndPlay Parms{};
+
+	Parms.Actor = Actor;
+	Parms.EndPlayReason = EndPlayReason;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.OnBouncedBall
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// E_PalCaptureSphereBouncedReason         reasonType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalIndividualCharacterHandle*    targetHandle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CaptureReticle_C::OnBouncedBall(E_PalCaptureSphereBouncedReason reasonType, class UPalIndividualCharacterHandle* targetHandle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "OnBouncedBall");
+
+	Params::WBP_CaptureReticle_C_OnBouncedBall Parms{};
+
+	Parms.reasonType = reasonType;
+	Parms.targetHandle = targetHandle;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.On Shake Ball
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ABP_PalCaptureBodyBase_C*         shakedBody                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CaptureReticle_C::On_Shake_Ball(class ABP_PalCaptureBodyBase_C* shakedBody)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "On Shake Ball");
+
+	Params::WBP_CaptureReticle_C_On_Shake_Ball Parms{};
+
+	Parms.shakedBody = shakedBody;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.On Change Weapon
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APalWeaponBase*                   Weapon                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CaptureReticle_C::On_Change_Weapon(class APalWeaponBase* Weapon)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "On Change Weapon");
+
+	Params::WBP_CaptureReticle_C_On_Change_Weapon Parms{};
+
+	Parms.Weapon = Weapon;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.IsBonusEnabled
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// const struct FVector&                   BaseLocation                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APalMonsterCharacter*             targeActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Enabled                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CaptureReticle_C::IsBonusEnabled(const struct FVector& BaseLocation, class APalMonsterCharacter* targeActor, bool* Enabled)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "IsBonusEnabled");
+
+	Params::WBP_CaptureReticle_C_IsBonusEnabled Parms{};
+
+	Parms.BaseLocation = std::move(BaseLocation);
+	Parms.targeActor = targeActor;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (TargetMonster != nullptr)
-		*TargetMonster = Parms.TargetMonster;
+	if (Enabled != nullptr)
+		*Enabled = Parms.Enabled;
 }
 
 
@@ -218,418 +462,174 @@ void UWBP_CaptureReticle_C::GetAimingDisplayPercent(class APalWeaponBase* captur
 }
 
 
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.IsBonusEnabled
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.FindTargetCharacter
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FVector&                   BaseLocation                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class APalMonsterCharacter*             targeActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Enabled                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APalMonsterCharacter**            TargetMonster                                          (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CaptureReticle_C::IsBonusEnabled(const struct FVector& BaseLocation, class APalMonsterCharacter* targeActor, bool* Enabled)
+void UWBP_CaptureReticle_C::FindTargetCharacter(class APalMonsterCharacter** TargetMonster)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "IsBonusEnabled");
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "FindTargetCharacter");
 
-	Params::WBP_CaptureReticle_C_IsBonusEnabled Parms{};
-
-	Parms.BaseLocation = std::move(BaseLocation);
-	Parms.targeActor = targeActor;
+	Params::WBP_CaptureReticle_C_FindTargetCharacter Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Enabled != nullptr)
-		*Enabled = Parms.Enabled;
+	if (TargetMonster != nullptr)
+		*TargetMonster = Parms.TargetMonster;
 }
 
 
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.On Change Weapon
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.ExecuteUbergraph_WBP_CaptureReticle
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class APalWeaponBase*                   Weapon                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CaptureReticle_C::On_Change_Weapon(class APalWeaponBase* Weapon)
+void UWBP_CaptureReticle_C::ExecuteUbergraph_WBP_CaptureReticle(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "On Change Weapon");
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "ExecuteUbergraph_WBP_CaptureReticle");
 
-	Params::WBP_CaptureReticle_C_On_Change_Weapon Parms{};
+	Params::WBP_CaptureReticle_C_ExecuteUbergraph_WBP_CaptureReticle Parms{};
 
-	Parms.Weapon = Weapon;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.On Shake Ball
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.DisplayCaptureFailedLog
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class ABP_PalCaptureBodyBase_C*         shakedBody                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CaptureReticle_C::On_Shake_Ball(class ABP_PalCaptureBodyBase_C* shakedBody)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "On Shake Ball");
-
-	Params::WBP_CaptureReticle_C_On_Shake_Ball Parms{};
-
-	Parms.shakedBody = shakedBody;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.OnBouncedBall
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// E_PalCaptureSphereBouncedReason         reasonType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UPalIndividualCharacterHandle*    targetHandle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CaptureReticle_C::OnBouncedBall(E_PalCaptureSphereBouncedReason reasonType, class UPalIndividualCharacterHandle* targetHandle)
+void UWBP_CaptureReticle_C::DisplayCaptureFailedLog(class UPalIndividualCharacterHandle* targetHandle)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "OnBouncedBall");
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "DisplayCaptureFailedLog");
 
-	Params::WBP_CaptureReticle_C_OnBouncedBall Parms{};
+	Params::WBP_CaptureReticle_C_DisplayCaptureFailedLog Parms{};
 
-	Parms.reasonType = reasonType;
 	Parms.targetHandle = targetHandle;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.OnCaptureBodyEndPlay
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CaptureReticle_C::OnCaptureBodyEndPlay(class AActor* Actor, EEndPlayReason EndPlayReason)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "OnCaptureBodyEndPlay");
-
-	Params::WBP_CaptureReticle_C_OnCaptureBodyEndPlay Parms{};
-
-	Parms.Actor = Actor;
-	Parms.EndPlayReason = EndPlayReason;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.OnFailedCapture
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalIndividualCharacterHandle*    targetHandle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// EPalSphereCaptureFailedReason           failedReason                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CaptureReticle_C::OnFailedCapture(class UPalIndividualCharacterHandle* targetHandle, EPalSphereCaptureFailedReason failedReason)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "OnFailedCapture");
-
-	Params::WBP_CaptureReticle_C_OnFailedCapture Parms{};
-
-	Parms.targetHandle = targetHandle;
-	Parms.failedReason = failedReason;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.OnFailedPercentWidgetClear
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_CaptureFailedPercent_C*      SelfWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CaptureReticle_C::OnFailedPercentWidgetClear(class UWBP_CaptureFailedPercent_C* SelfWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "OnFailedPercentWidgetClear");
-
-	Params::WBP_CaptureReticle_C_OnFailedPercentWidgetClear Parms{};
-
-	Parms.SelfWidget = SelfWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.OnInitialized
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_CaptureReticle_C::OnInitialized()
+void UWBP_CaptureReticle_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.OnPassingJudge
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   PhaseCount                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPalIndividualCharacterHandle*    targetHandle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CaptureReticle_C::OnPassingJudge(int32 PhaseCount, class UPalIndividualCharacterHandle* targetHandle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "OnPassingJudge");
-
-	Params::WBP_CaptureReticle_C_OnPassingJudge Parms{};
-
-	Parms.PhaseCount = PhaseCount;
-	Parms.targetHandle = targetHandle;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.OnSetup_AfterCreatedPlayer
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_CaptureReticle_C::OnSetup_AfterCreatedPlayer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "OnSetup_AfterCreatedPlayer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.OnStartedCapture
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           createdBodyActor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPalIndividualCharacterHandle*    targetHandle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsSneakBonus                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsCriticalBonus                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CaptureReticle_C::OnStartedCapture(class AActor* createdBodyActor, class UPalIndividualCharacterHandle* targetHandle, bool bIsSneakBonus, bool bIsCriticalBonus)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "OnStartedCapture");
-
-	Params::WBP_CaptureReticle_C_OnStartedCapture Parms{};
-
-	Parms.createdBodyActor = createdBodyActor;
-	Parms.targetHandle = targetHandle;
-	Parms.bIsSneakBonus = bIsSneakBonus;
-	Parms.bIsCriticalBonus = bIsCriticalBonus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.OnSuccessedCapture
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalIndividualCharacterHandle*    targetHandle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CaptureReticle_C::OnSuccessedCapture(class UPalIndividualCharacterHandle* targetHandle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "OnSuccessedCapture");
-
-	Params::WBP_CaptureReticle_C_OnSuccessedCapture Parms{};
-
-	Parms.targetHandle = targetHandle;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.OnThrowCaptureWeapon
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Bullet                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CaptureReticle_C::OnThrowCaptureWeapon(class AActor* Bullet)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "OnThrowCaptureWeapon");
-
-	Params::WBP_CaptureReticle_C_OnThrowCaptureWeapon Parms{};
-
-	Parms.Bullet = Bullet;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.RegisterWeaponEvent
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class APalWeaponBase*                   NewWeapon                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CaptureReticle_C::RegisterWeaponEvent(class APalWeaponBase* NewWeapon)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "RegisterWeaponEvent");
-
-	Params::WBP_CaptureReticle_C_RegisterWeaponEvent Parms{};
-
-	Parms.NewWeapon = NewWeapon;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.Set Display Capture Rate
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class APalMonsterCharacter*             TargetMonster                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class APalWeaponBase*                   WeaponBase                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CaptureReticle_C::Set_Display_Capture_Rate(class APalMonsterCharacter* TargetMonster, class APalWeaponBase* WeaponBase)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "Set Display Capture Rate");
-
-	Params::WBP_CaptureReticle_C_Set_Display_Capture_Rate Parms{};
-
-	Parms.TargetMonster = TargetMonster;
-	Parms.WeaponBase = WeaponBase;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.SetupAfterPlayerSpawned
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_CaptureReticle_C::SetupAfterPlayerSpawned()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "SetupAfterPlayerSpawned");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.ShouldReticleDIsplay
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.ConvertTrueRateToDisplayRate
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool*                                   ShouldDisplay                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  TrueRate                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double*                                 OutRate                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CaptureReticle_C::ShouldReticleDIsplay(bool* ShouldDisplay)
+void UWBP_CaptureReticle_C::ConvertTrueRateToDisplayRate(double TrueRate, double* OutRate)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "ShouldReticleDIsplay");
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "ConvertTrueRateToDisplayRate");
 
-	Params::WBP_CaptureReticle_C_ShouldReticleDIsplay Parms{};
+	Params::WBP_CaptureReticle_C_ConvertTrueRateToDisplayRate Parms{};
+
+	Parms.TrueRate = TrueRate;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (ShouldDisplay != nullptr)
-		*ShouldDisplay = Parms.ShouldDisplay;
+	if (OutRate != nullptr)
+		*OutRate = Parms.OutRate;
 }
 
 
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.ConvertTrueRateArrayToDisplayRateArray
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<double>&                         TrueRate                                               (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// TArray<double>*                         OutRate                                                (Parm, OutParm)
 
-void UWBP_CaptureReticle_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+void UWBP_CaptureReticle_C::ConvertTrueRateArrayToDisplayRateArray(TArray<double>& TrueRate, TArray<double>* OutRate)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "Tick");
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "ConvertTrueRateArrayToDisplayRateArray");
 
-	Params::WBP_CaptureReticle_C_Tick Parms{};
+	Params::WBP_CaptureReticle_C_ConvertTrueRateArrayToDisplayRateArray Parms{};
 
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
+	Parms.TrueRate = std::move(TrueRate);
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	TrueRate = std::move(Parms.TrueRate);
+
+	if (OutRate != nullptr)
+		*OutRate = std::move(Parms.OutRate);
 }
 
 
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.Unregister Weapon Event
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.ChangeSeqence
 // (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_CaptureReticle_C::Unregister_Weapon_Event()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "Unregister Weapon Event");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.UpdateFailedWidgets
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalCaptureReticleSeqence               newSeqence                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CaptureReticle_C::UpdateFailedWidgets(double DeltaTime)
+void UWBP_CaptureReticle_C::ChangeSeqence(EPalCaptureReticleSeqence newSeqence)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "UpdateFailedWidgets");
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "ChangeSeqence");
 
-	Params::WBP_CaptureReticle_C_UpdateFailedWidgets Parms{};
+	Params::WBP_CaptureReticle_C_ChangeSeqence Parms{};
 
-	Parms.DeltaTime = DeltaTime;
+	Parms.newSeqence = newSeqence;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CaptureReticle.WBP_CaptureReticle_C.UpdateSecondStepWidgetPosition
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_CaptureReticle.WBP_CaptureReticle_C.CalcCaptureSuccessRate
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// TArray<double>&                         rateArray                                              (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// double*                                 successRate                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CaptureReticle_C::UpdateSecondStepWidgetPosition()
+void UWBP_CaptureReticle_C::CalcCaptureSuccessRate(TArray<double>& rateArray, double* successRate)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CaptureReticle_C", "UpdateSecondStepWidgetPosition");
+		Func = Class->GetFunction("WBP_CaptureReticle_C", "CalcCaptureSuccessRate");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_CaptureReticle_C_CalcCaptureSuccessRate Parms{};
+
+	Parms.rateArray = std::move(rateArray);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	rateArray = std::move(Parms.rateArray);
+
+	if (successRate != nullptr)
+		*successRate = Parms.successRate;
 }
 
 }

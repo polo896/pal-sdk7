@@ -34,13 +34,13 @@ public:
 	int64                                         Current;                                           // 0x02C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_IngameMenu_WorkSpace_Slider_Slider_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature(float Value);
-	void Construct();
-	void ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Slider(int32 EntryPoint);
-	float GetPercent();
-	void On_Input_Method_Changed(ECommonInputType Selection);
-	void SetCurrentValue(int64 Current_0);
 	void SetupRange(int64 Min, int64 Max);
+	void SetCurrentValue(int64 Current_0);
+	void On_Input_Method_Changed(ECommonInputType Selection);
+	float GetPercent();
+	void ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Slider(int32 EntryPoint);
+	void Construct();
+	void BndEvt__WBP_IngameMenu_WorkSpace_Slider_Slider_K2Node_ComponentBoundEvent_1_OnFloatValueChangedEvent__DelegateSignature(float Value);
 
 public:
 	static class UClass* StaticClass()

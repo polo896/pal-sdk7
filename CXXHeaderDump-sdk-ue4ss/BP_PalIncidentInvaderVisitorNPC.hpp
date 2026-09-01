@@ -13,7 +13,7 @@ class UBP_PalIncidentInvaderVisitorNPC_C : public UBP_PalIncidentInvaderBase_C
     TSubclassOf<class APalAIController> GetNPCAIControllerClass(const FPalInvaderSpawnCharacterParameter& SpawnParameter);
     void IsSquad(bool& Result);
     void Get Chosen Row Data(FPalVisitorNPCDatabaseRow& ChosenRowData);
-    void OnAllCharacterSpawned(TArray<class APalAIController*>& MemberController);
+    void OnAllCharacterSpawned(TArray<APalAIController*>& MemberController);
     void Get Character Location Type(EPalCharacterLocationType& CharacterLocationType);
     bool GetInvaderStartPoint(FVector& Result);
     void EndProc();

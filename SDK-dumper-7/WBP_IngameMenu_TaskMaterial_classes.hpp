@@ -30,9 +30,9 @@ public:
 	bool                                          Is_Hide_when_Zero;                                 // 0x02A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetHIdeWhenZeroFlag(bool isHideWhenZero);
-	void SetItemNum(int64 itemNum, int64 gaugeMaxBorderNum);
 	void SetupTexture(class FName StaticItemId);
+	void SetItemNum(int64 itemNum, int64 gaugeMaxBorderNum);
+	void SetHIdeWhenZeroFlag(bool isHideWhenZero);
 
 public:
 	static class UClass* StaticClass()

@@ -19,8 +19,8 @@ struct FFunctionCaller
 
 struct FVariantDependency
 {
-    TSoftObjectPtr<UVariantSet> VariantSet;                                           // 0x0000 (size: 0x30)
-    TSoftObjectPtr<UVariant> Variant;                                                 // 0x0030 (size: 0x30)
+    TSoftObjectPtr<class UVariantSet> VariantSet;                                     // 0x0000 (size: 0x30)
+    TSoftObjectPtr<class UVariant> Variant;                                           // 0x0030 (size: 0x30)
     bool bEnabled;                                                                    // 0x0060 (size: 0x1)
 
 }; // Size: 0x68
@@ -28,7 +28,7 @@ struct FVariantDependency
 class ALevelVariantSetsActor : public AActor
 {
     FSoftObjectPath LevelVariantSets;                                                 // 0x0290 (size: 0x20)
-    TMap<UClass*, class ULevelVariantSetsFunctionDirector*> DirectorInstances;        // 0x02B0 (size: 0x50)
+    TMap<UClass*, ULevelVariantSetsFunctionDirector*> DirectorInstances;              // 0x02B0 (size: 0x50)
 
     bool SwitchOnVariantByName(FString VariantSetName, FString VariantName);
     bool SwitchOnVariantByIndex(int32 VariantSetIndex, int32 VariantIndex);
@@ -43,13 +43,13 @@ class ASwitchActor : public AActor
 
     void SelectOption(int32 OptionIndex);
     int32 GetSelectedOption();
-    TArray<class AActor*> GetOptions();
+    TArray<AActor*> GetOptions();
 }; // Size: 0x2B8
 
 class ULevelVariantSets : public UObject
 {
     UClass* DirectorClass;                                                            // 0x0028 (size: 0x8)
-    TArray<class UVariantSet*> VariantSets;                                           // 0x0030 (size: 0x10)
+    TArray<UVariantSet*> VariantSets;                                                 // 0x0030 (size: 0x10)
 
     class UVariantSet* GetVariantSetByName(FString VariantSetName);
     class UVariantSet* GetVariantSet(int32 VariantSetIndex);
@@ -67,7 +67,7 @@ class UPropertyValue : public UObject
     TArray<FCapturedPropSegment> CapturedPropSegments;                                // 0x00A8 (size: 0x10)
     FString FullDisplayString;                                                        // 0x00B8 (size: 0x10)
     FName PropertySetterName;                                                         // 0x00C8 (size: 0x8)
-    TMap<class FString, class FString> PropertySetterParameterDefaults;               // 0x00D0 (size: 0x50)
+    TMap<FString, FString> PropertySetterParameterDefaults;                           // 0x00D0 (size: 0x50)
     bool bHasRecordedData;                                                            // 0x0120 (size: 0x1)
     UClass* LeafPropertyClass;                                                        // 0x0128 (size: 0x8)
     TArray<uint8> ValueBytes;                                                         // 0x0138 (size: 0x10)
@@ -106,7 +106,7 @@ class UVariant : public UObject
 {
     TArray<FVariantDependency> Dependencies;                                          // 0x0028 (size: 0x10)
     FText DisplayText;                                                                // 0x0038 (size: 0x18)
-    TArray<class UVariantObjectBinding*> ObjectBindings;                              // 0x0068 (size: 0x10)
+    TArray<UVariantObjectBinding*> ObjectBindings;                                    // 0x0068 (size: 0x10)
     class UTexture2D* Thumbnail;                                                      // 0x0078 (size: 0x8)
 
     void SwitchOn();
@@ -122,7 +122,7 @@ class UVariant : public UObject
     int32 GetNumDependencies();
     int32 GetNumActors();
     FText GetDisplayText();
-    TArray<class UVariant*> GetDependents(class ULevelVariantSets* LevelVariantSets, bool bOnlyEnabledDependencies);
+    TArray<UVariant*> GetDependents(class ULevelVariantSets* LevelVariantSets, bool bOnlyEnabledDependencies);
     FVariantDependency GetDependency(int32 Index);
     class AActor* GetActor(int32 ActorIndex);
     void DeleteDependency(int32 Index);
@@ -134,7 +134,7 @@ class UVariantObjectBinding : public UObject
     FString CachedActorLabel;                                                         // 0x0028 (size: 0x10)
     FSoftObjectPath ObjectPtr;                                                        // 0x0038 (size: 0x20)
     TLazyObjectPtr<class UObject> LazyObjectPtr;                                      // 0x0058 (size: 0x1C)
-    TArray<class UPropertyValue*> CapturedProperties;                                 // 0x0078 (size: 0x10)
+    TArray<UPropertyValue*> CapturedProperties;                                       // 0x0078 (size: 0x10)
     TArray<FFunctionCaller> FunctionCallers;                                          // 0x0088 (size: 0x10)
 
 }; // Size: 0x98
@@ -143,7 +143,7 @@ class UVariantSet : public UObject
 {
     FText DisplayText;                                                                // 0x0028 (size: 0x18)
     bool bExpanded;                                                                   // 0x0058 (size: 0x1)
-    TArray<class UVariant*> Variants;                                                 // 0x0060 (size: 0x10)
+    TArray<UVariant*> Variants;                                                       // 0x0060 (size: 0x10)
     class UTexture2D* Thumbnail;                                                      // 0x0070 (size: 0x8)
 
     void SetThumbnailFromTexture(class UTexture2D* NewThumbnail);

@@ -17,16 +17,6 @@
 namespace SDK::Params
 {
 
-// Function BP_Action_Emote_8.BP_Action_Emote_8_C.ExecuteUbergraph_BP_Action_Emote_8
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_Emote_8_C_ExecuteUbergraph_BP_Action_Emote_8 final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Emote_8_C_ExecuteUbergraph_BP_Action_Emote_8;
-
 // Function BP_Action_Emote_8.BP_Action_Emote_8_C.OnNotify
 // 0x0190 (0x0190 - 0x0000)
 struct BP_Action_Emote_8_C_OnNotify final
@@ -47,6 +37,16 @@ public:
 	class ABP_Action_Emote_KickCollision_C*       CallFunc_FinishSpawningActor_ReturnValue;          // 0x0188(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_Action_Emote_8_C_OnNotify;
+
+// Function BP_Action_Emote_8.BP_Action_Emote_8_C.ExecuteUbergraph_BP_Action_Emote_8
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_Emote_8_C_ExecuteUbergraph_BP_Action_Emote_8 final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Emote_8_C_ExecuteUbergraph_BP_Action_Emote_8;
 
 }
 

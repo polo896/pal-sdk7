@@ -16,15 +16,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameMenu_Monitoring_WorkInfo.WBP_IngameMenu_Monitoring_WorkInfo_C.ChangeLevelText
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_IngameMenu_Monitoring_WorkInfo_C_ChangeLevelText final
-{
-public:
-	int32                                         NewLevel;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Monitoring_WorkInfo_C_ChangeLevelText;
-
 // Function WBP_IngameMenu_Monitoring_WorkInfo.WBP_IngameMenu_Monitoring_WorkInfo_C.ExecuteUbergraph_WBP_IngameMenu_Monitoring_WorkInfo
 // 0x00F0 (0x00F0 - 0x0000)
 struct WBP_IngameMenu_Monitoring_WorkInfo_C_ExecuteUbergraph_WBP_IngameMenu_Monitoring_WorkInfo final
@@ -63,6 +54,15 @@ public:
 	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text_2;        // 0x00D8(0x0018)()
 };
 DUMPER7_ASSERTS_WBP_IngameMenu_Monitoring_WorkInfo_C_ExecuteUbergraph_WBP_IngameMenu_Monitoring_WorkInfo;
+
+// Function WBP_IngameMenu_Monitoring_WorkInfo.WBP_IngameMenu_Monitoring_WorkInfo_C.ChangeLevelText
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_IngameMenu_Monitoring_WorkInfo_C_ChangeLevelText final
+{
+public:
+	int32                                         NewLevel;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Monitoring_WorkInfo_C_ChangeLevelText;
 
 }
 

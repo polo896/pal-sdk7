@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "WBP_IndividualParameterBindWidget_classes.hpp"
 #include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
-#include "WBP_IndividualParameterBindWidget_classes.hpp"
 
 
 namespace SDK
@@ -75,37 +75,37 @@ public:
 	double                                        CloseDelay_FriendshipRankup;                       // 0x07C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Close_UI();
-	void AnmEvent_Favorite();
-	void AnmEvent_FriendshipRankup();
-	void AnmEvent_Levelup();
-	void AnmEvent_NewMove(EPalWazaID newWazaID);
-	void AnmEvent_Open_UI();
-	void BindFromHandle(class UPalIndividualCharacterHandle* targetHandle);
-	void BindFromSlot(class UPalIndividualCharacterSlot* TargetSlot);
-	void ClearAnimeTimer();
-	void ExecuteUbergraph_WBP_PalLvExp(int32 EntryPoint);
-	void Finished_EED6AA174DCF2B88C18A45B749A443BD();
-	void On_Changed_Friendship_Rank_Binded(int32 NewRank, int32 OldRank, bool FavoriteChanged);
-	void On_Update_Exp_Binded(int64 addExp, int64 oldExp, double nowExpRate);
-	void On_Update_Level_Binded(int32 NewLevel);
-	void OnInitialized();
-	void OnTriggerCloseAnime();
-	void OnTriggerFavoriteAnime();
-	void OnTriggerFriendshipRankupAnime();
-	void OnTriggerLevelUpAnime();
-	void OnTriggerNewMoveAnime();
-	void OnUpdateSlot(class UPalIndividualCharacterSlot* Slot_0, class UPalIndividualCharacterHandle* LastHandle);
-	void Reset();
-	void Set_Add_Exp(int64 addExp);
-	void Set_Exp_Percent(double Percent);
-	void Set_Level(int32 Level);
-	void SetupCloseAnimeTimer(double CloseDelay);
-	void SetupFavoriteAnimeTimer();
-	void SetupFriendshipRankupAnimeTimer();
-	void SetupLevelUpAnimeTimer();
-	void SetupNewMoveAnimeTimer();
 	void Unbind();
+	void SetupNewMoveAnimeTimer();
+	void SetupLevelUpAnimeTimer();
+	void SetupFriendshipRankupAnimeTimer();
+	void SetupFavoriteAnimeTimer();
+	void SetupCloseAnimeTimer(double CloseDelay);
+	void Set_Level(int32 Level);
+	void Set_Exp_Percent(double Percent);
+	void Set_Add_Exp(int64 addExp);
+	void Reset();
+	void OnUpdateSlot(class UPalIndividualCharacterSlot* Slot_0, class UPalIndividualCharacterHandle* LastHandle);
+	void OnTriggerNewMoveAnime();
+	void OnTriggerLevelUpAnime();
+	void OnTriggerFriendshipRankupAnime();
+	void OnTriggerFavoriteAnime();
+	void OnTriggerCloseAnime();
+	void OnInitialized();
+	void On_Update_Level_Binded(int32 NewLevel);
+	void On_Update_Exp_Binded(int64 addExp, int64 oldExp, double nowExpRate);
+	void On_Changed_Friendship_Rank_Binded(int32 NewRank, int32 OldRank, bool FavoriteChanged);
+	void Finished_EED6AA174DCF2B88C18A45B749A443BD();
+	void ExecuteUbergraph_WBP_PalLvExp(int32 EntryPoint);
+	void ClearAnimeTimer();
+	void BindFromSlot(class UPalIndividualCharacterSlot* TargetSlot);
+	void BindFromHandle(class UPalIndividualCharacterHandle* targetHandle);
+	void AnmEvent_Open_UI();
+	void AnmEvent_NewMove(EPalWazaID newWazaID);
+	void AnmEvent_Levelup();
+	void AnmEvent_FriendshipRankup();
+	void AnmEvent_Favorite();
+	void AnmEvent_Close_UI();
 
 public:
 	static class UClass* StaticClass()

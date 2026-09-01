@@ -53,37 +53,37 @@ public:
 	struct FDataTableRowHandle                    CannotDropPalMsgID;                                // 0x0528(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void BackToList();
-	void BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_0_OnClickedAnyPalPanel__DelegateSignature(class UPalIndividualCharacterHandle* Handle);
-	void BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_1_OnHoveredAnyPalPanel__DelegateSignature(class UPalIndividualCharacterHandle* Handle);
-	void BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_2_OnUnhoveredAnyPalPanel__DelegateSignature();
-	void BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_3_OnCommitedNickName__DelegateSignature(const class FText& NewNickName);
-	void BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_4_OnRequestedRemoveWaza__DelegateSignature(EPalWazaID WazaID, class UPalIndividualCharacterHandle* targetHandle);
-	void BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_5_OnSelectedChangeActiveSkill__DelegateSignature(class UPalIndividualCharacterHandle* targetHandle, EPalWazaID changeWazaID, EPalWazaID newWazaID);
-	void BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_6_OnToggleFavoritePal__DelegateSignature(class UPalIndividualCharacterHandle* CharacterHandle);
-	void ClampInputNickName(const class FText& InText, class FText* clampedNickName);
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_PalStatus(int32 EntryPoint);
-	void Get_Panel_Index_from_Handle(class UPalIndividualCharacterHandle* Handle, int32* Index_0, bool* IsValid);
-	void HoveredAnyPalPanel_Internal(class UPalIndividualCharacterHandle* Handle);
-	void Is_Editing_Nick_Name(bool* IsEditing);
-	void NickNameFinalCheck(const class FText& InText, ETextCommit textCommit, class FText* finalNickName);
-	void OnClosedCannotDropPalDialog(bool bResult);
-	void OnClosedDropPalDialog(bool bResult);
-	void OnCompletedCaptureActorSetup();
-	void OnTriggerDropPal();
-	void Setup(TArray<class UPalIndividualCharacterHandle*>& Handles);
-	void Setup_Input_Action();
-	void Setup_One_Pal(class UPalIndividualCharacterHandle* CharacterHandle, bool Editable);
-	void Setup_MultiPal();
-	void Setup_NothingPal();
-	void ShouldBackList(bool* shouldBack);
-	void Toggle_Favorite_Pal_by_Action();
-	void ToParameterDetail();
-	void ToSkillDetail();
-	void UnbindInputAction();
 	void UnhoveredAnyPalPanel_Internal();
+	void UnbindInputAction();
+	void ToSkillDetail();
+	void ToParameterDetail();
+	void Toggle_Favorite_Pal_by_Action();
+	void ShouldBackList(bool* shouldBack);
+	void Setup_NothingPal();
+	void Setup_MultiPal();
+	void Setup_One_Pal(class UPalIndividualCharacterHandle* CharacterHandle, bool Editable);
+	void Setup_Input_Action();
+	void Setup(TArray<class UPalIndividualCharacterHandle*>& Handles);
+	void OnTriggerDropPal();
+	void OnCompletedCaptureActorSetup();
+	void OnClosedDropPalDialog(bool bResult);
+	void OnClosedCannotDropPalDialog(bool bResult);
+	void NickNameFinalCheck(const class FText& InText, ETextCommit textCommit, class FText* finalNickName);
+	void Is_Editing_Nick_Name(bool* IsEditing);
+	void HoveredAnyPalPanel_Internal(class UPalIndividualCharacterHandle* Handle);
+	void Get_Panel_Index_from_Handle(class UPalIndividualCharacterHandle* Handle, int32* Index_0, bool* IsValid);
+	void ExecuteUbergraph_WBP_PalStatus(int32 EntryPoint);
+	void Destruct();
+	void Construct();
+	void ClampInputNickName(const class FText& InText, class FText* clampedNickName);
+	void BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_6_OnToggleFavoritePal__DelegateSignature(class UPalIndividualCharacterHandle* CharacterHandle);
+	void BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_5_OnSelectedChangeActiveSkill__DelegateSignature(class UPalIndividualCharacterHandle* targetHandle, EPalWazaID changeWazaID, EPalWazaID newWazaID);
+	void BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_4_OnRequestedRemoveWaza__DelegateSignature(EPalWazaID WazaID, class UPalIndividualCharacterHandle* targetHandle);
+	void BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_3_OnCommitedNickName__DelegateSignature(const class FText& NewNickName);
+	void BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_2_OnUnhoveredAnyPalPanel__DelegateSignature();
+	void BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_1_OnHoveredAnyPalPanel__DelegateSignature(class UPalIndividualCharacterHandle* Handle);
+	void BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_0_OnClickedAnyPalPanel__DelegateSignature(class UPalIndividualCharacterHandle* Handle);
+	void BackToList();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

@@ -18,39 +18,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_QuestTrackingIconCanvas.WBP_QuestTrackingIconCanvas_C.OnAddLocation
-// 0x00A0 (0x00A0 - 0x0000)
-struct WBP_QuestTrackingIconCanvas_C_OnAddLocation final
-{
-public:
-	struct FGuid                                  LocationId;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalLocationBase*                       Location;                                          // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FAnchors                               K2Node_MakeStruct_Anchors;                         // 0x0018(0x0020)(NoDestructor)
-	class UPalLocationPoint_QuestBase*            K2Node_DynamicCast_AsPal_Location_Point_Quest_Base; // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0044(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class UPalLocationPoint_QuestBase> CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue; // 0x0058(0x0030)(UObjectWrapper, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWBP_PalQuestTrackingIcon_C*            CallFunc_Create_ReturnValue;                       // 0x0090(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UCanvasPanelSlot*                       CallFunc_AddChildToCanvas_ReturnValue;             // 0x0098(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_QuestTrackingIconCanvas_C_OnAddLocation;
-
-// Function WBP_QuestTrackingIconCanvas.WBP_QuestTrackingIconCanvas_C.OnRemoveLocation
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_QuestTrackingIconCanvas_C_OnRemoveLocation final
-{
-public:
-	struct FGuid                                  LocationId;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalLocationBase*                       Location;                                          // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWBP_PalQuestTrackingIcon_C*            CallFunc_Map_Find_Value;                           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Remove_ReturnValue;                   // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_QuestTrackingIconCanvas_C_OnRemoveLocation;
-
 // Function WBP_QuestTrackingIconCanvas.WBP_QuestTrackingIconCanvas_C.Setup
 // 0x00C0 (0x00C0 - 0x0000)
 struct WBP_QuestTrackingIconCanvas_C_Setup final
@@ -74,6 +41,39 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_QuestTrackingIconCanvas_C_Setup;
+
+// Function WBP_QuestTrackingIconCanvas.WBP_QuestTrackingIconCanvas_C.OnRemoveLocation
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_QuestTrackingIconCanvas_C_OnRemoveLocation final
+{
+public:
+	struct FGuid                                  LocationId;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalLocationBase*                       Location;                                          // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalQuestTrackingIcon_C*            CallFunc_Map_Find_Value;                           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Remove_ReturnValue;                   // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_QuestTrackingIconCanvas_C_OnRemoveLocation;
+
+// Function WBP_QuestTrackingIconCanvas.WBP_QuestTrackingIconCanvas_C.OnAddLocation
+// 0x00A0 (0x00A0 - 0x0000)
+struct WBP_QuestTrackingIconCanvas_C_OnAddLocation final
+{
+public:
+	struct FGuid                                  LocationId;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalLocationBase*                       Location;                                          // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FAnchors                               K2Node_MakeStruct_Anchors;                         // 0x0018(0x0020)(NoDestructor)
+	class UPalLocationPoint_QuestBase*            K2Node_DynamicCast_AsPal_Location_Point_Quest_Base; // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0044(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UPalLocationPoint_QuestBase> CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue; // 0x0058(0x0030)(UObjectWrapper, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalQuestTrackingIcon_C*            CallFunc_Create_ReturnValue;                       // 0x0090(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UCanvasPanelSlot*                       CallFunc_AddChildToCanvas_ReturnValue;             // 0x0098(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_QuestTrackingIconCanvas_C_OnAddLocation;
 
 }
 

@@ -67,22 +67,22 @@ public:
 	struct FDataTableRowHandle                    RankupMsgId_ImportedPal;                           // 0x04D8(0x0010)(Edit, BlueprintVisible, NoDestructor)
 
 public:
-	void BndEvt__WBP_Buildup_Pal_Status_WBP_CommonButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
-	void ConfirmDialog(bool Confirmed);
-	void Construct();
-	class UWidget* DoCustomNavigation(EUINavigation Navigation_0);
-	void EmptyEvent(bool bResult);
-	void ExecuteUbergraph_WBP_Buildup_Pal_Status(int32 EntryPoint);
-	void GetFocusTarget(class UUserWidget** Widget);
-	void On_Money_Changed(int64 NewMoney);
-	void OnInvisible(ESlateVisibility InVisibility);
-	void Predict_Status(EPalCharacterStatusOperationName Status_0, int32 TargetRank);
-	void Refresh_Info();
-	void Setup(class UPalIndividualCharacterHandle* Handle, const TArray<class FName>& ItemIds);
-	void ShowResult();
-	void SwitchPanel(bool IsUpgrade);
-	void Update_Confirm_Button_State();
 	void UpdateRequiredItemSufficiency();
+	void Update_Confirm_Button_State();
+	void SwitchPanel(bool IsUpgrade);
+	void ShowResult();
+	void Setup(class UPalIndividualCharacterHandle* Handle, const TArray<class FName>& ItemIds);
+	void Refresh_Info();
+	void Predict_Status(EPalCharacterStatusOperationName Status_0, int32 TargetRank);
+	void OnInvisible(ESlateVisibility InVisibility);
+	void On_Money_Changed(int64 NewMoney);
+	void GetFocusTarget(class UUserWidget** Widget);
+	void ExecuteUbergraph_WBP_Buildup_Pal_Status(int32 EntryPoint);
+	void EmptyEvent(bool bResult);
+	class UWidget* DoCustomNavigation(EUINavigation Navigation_0);
+	void Construct();
+	void ConfirmDialog(bool Confirmed);
+	void BndEvt__WBP_Buildup_Pal_Status_WBP_CommonButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()

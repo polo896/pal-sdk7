@@ -17,41 +17,75 @@
 namespace SDK
 {
 
-// Function WBP_Arena_PalIcon.WBP_Arena_PalIcon_C.BindFromHandle
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Arena_PalIcon.WBP_Arena_PalIcon_C.SetBan
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPalIndividualCharacterHandle*    targetHandle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsBaned                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_PalIcon_C::BindFromHandle(class UPalIndividualCharacterHandle* targetHandle)
+void UWBP_Arena_PalIcon_C::SetBan(bool IsBaned)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalIcon_C", "BindFromHandle");
+		Func = Class->GetFunction("WBP_Arena_PalIcon_C", "SetBan");
 
-	Params::WBP_Arena_PalIcon_C_BindFromHandle Parms{};
+	Params::WBP_Arena_PalIcon_C_SetBan Parms{};
 
-	Parms.targetHandle = targetHandle;
+	Parms.IsBaned = IsBaned;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Arena_PalIcon.WBP_Arena_PalIcon_C.BndEvt__WBP_Arena_PalIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Arena_PalIcon.WBP_Arena_PalIcon_C.OnLevelUpdate
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewLevel                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_PalIcon_C::BndEvt__WBP_Arena_PalIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Arena_PalIcon_C::OnLevelUpdate(int32 NewLevel)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalIcon_C", "BndEvt__WBP_Arena_PalIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Arena_PalIcon_C", "OnLevelUpdate");
 
-	Params::WBP_Arena_PalIcon_C_BndEvt__WBP_Arena_PalIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_Arena_PalIcon_C_OnLevelUpdate Parms{};
 
-	Parms.Button = Button;
+	Parms.NewLevel = NewLevel;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_PalIcon.WBP_Arena_PalIcon_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Arena_PalIcon_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_PalIcon_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_PalIcon.WBP_Arena_PalIcon_C.ExecuteUbergraph_WBP_Arena_PalIcon
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_PalIcon_C::ExecuteUbergraph_WBP_Arena_PalIcon(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_PalIcon_C", "ExecuteUbergraph_WBP_Arena_PalIcon");
+
+	Params::WBP_Arena_PalIcon_C_ExecuteUbergraph_WBP_Arena_PalIcon Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -77,75 +111,41 @@ void UWBP_Arena_PalIcon_C::BndEvt__WBP_Arena_PalIcon_WBP_PalInvisibleButton_K2No
 }
 
 
-// Function WBP_Arena_PalIcon.WBP_Arena_PalIcon_C.ExecuteUbergraph_WBP_Arena_PalIcon
-// (Final, UbergraphFunction)
+// Function WBP_Arena_PalIcon.WBP_Arena_PalIcon_C.BndEvt__WBP_Arena_PalIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_PalIcon_C::ExecuteUbergraph_WBP_Arena_PalIcon(int32 EntryPoint)
+void UWBP_Arena_PalIcon_C::BndEvt__WBP_Arena_PalIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalIcon_C", "ExecuteUbergraph_WBP_Arena_PalIcon");
+		Func = Class->GetFunction("WBP_Arena_PalIcon_C", "BndEvt__WBP_Arena_PalIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_Arena_PalIcon_C_ExecuteUbergraph_WBP_Arena_PalIcon Parms{};
+	Params::WBP_Arena_PalIcon_C_BndEvt__WBP_Arena_PalIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Arena_PalIcon.WBP_Arena_PalIcon_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Arena_PalIcon_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalIcon_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_PalIcon.WBP_Arena_PalIcon_C.OnLevelUpdate
+// Function WBP_Arena_PalIcon.WBP_Arena_PalIcon_C.BindFromHandle
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   NewLevel                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalIndividualCharacterHandle*    targetHandle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_PalIcon_C::OnLevelUpdate(int32 NewLevel)
+void UWBP_Arena_PalIcon_C::BindFromHandle(class UPalIndividualCharacterHandle* targetHandle)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalIcon_C", "OnLevelUpdate");
+		Func = Class->GetFunction("WBP_Arena_PalIcon_C", "BindFromHandle");
 
-	Params::WBP_Arena_PalIcon_C_OnLevelUpdate Parms{};
+	Params::WBP_Arena_PalIcon_C_BindFromHandle Parms{};
 
-	Parms.NewLevel = NewLevel;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Arena_PalIcon.WBP_Arena_PalIcon_C.SetBan
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsBaned                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Arena_PalIcon_C::SetBan(bool IsBaned)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalIcon_C", "SetBan");
-
-	Params::WBP_Arena_PalIcon_C_SetBan Parms{};
-
-	Parms.IsBaned = IsBaned;
+	Parms.targetHandle = targetHandle;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

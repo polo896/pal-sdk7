@@ -17,62 +17,84 @@
 namespace SDK
 {
 
-// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.ExecuteUbergraph_BP_BuildObjectFactoryConveyorComponent
-// (Final, UbergraphFunction)
+// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.SetupByOwner
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalMapObjectConcreteModelBase*   ConcreteModel                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UMeshComponent*                   TargetMeshComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   TargetMaterialIndex                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_BuildObjectFactoryConveyorComponent_C::ExecuteUbergraph_BP_BuildObjectFactoryConveyorComponent(int32 EntryPoint)
+void UBP_BuildObjectFactoryConveyorComponent_C::SetupByOwner(class UPalMapObjectConcreteModelBase* ConcreteModel, class UMeshComponent* TargetMeshComponent, int32 TargetMaterialIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BuildObjectFactoryConveyorComponent_C", "ExecuteUbergraph_BP_BuildObjectFactoryConveyorComponent");
+		Func = Class->GetFunction("BP_BuildObjectFactoryConveyorComponent_C", "SetupByOwner");
 
-	Params::BP_BuildObjectFactoryConveyorComponent_C_ExecuteUbergraph_BP_BuildObjectFactoryConveyorComponent Parms{};
+	Params::BP_BuildObjectFactoryConveyorComponent_C_SetupByOwner Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.ConcreteModel = ConcreteModel;
+	Parms.TargetMeshComponent = TargetMeshComponent;
+	Parms.TargetMaterialIndex = TargetMaterialIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.GetMaterialInstance
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.SetRunningConveyor
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UMaterialInstanceDynamic*         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
+// bool                                    bOn                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class UMaterialInstanceDynamic* UBP_BuildObjectFactoryConveyorComponent_C::GetMaterialInstance()
+void UBP_BuildObjectFactoryConveyorComponent_C::SetRunningConveyor(bool bOn)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BuildObjectFactoryConveyorComponent_C", "GetMaterialInstance");
+		Func = Class->GetFunction("BP_BuildObjectFactoryConveyorComponent_C", "SetRunningConveyor");
 
-	Params::BP_BuildObjectFactoryConveyorComponent_C_GetMaterialInstance Parms{};
+	Params::BP_BuildObjectFactoryConveyorComponent_C_SetRunningConveyor Parms{};
+
+	Parms.bOn = bOn;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 
-// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.OnReadyOwnerEnergyModule
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.OnUpdateRecipe
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPalMapObjectConcreteModelBase*   Model                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPalMapObjectConcreteModelModuleBase*Module                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalMapObjectConvertItemModel*    Model                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UBP_BuildObjectFactoryConveyorComponent_C::OnReadyOwnerEnergyModule(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module)
+void UBP_BuildObjectFactoryConveyorComponent_C::OnUpdateRecipe(class UPalMapObjectConvertItemModel* Model)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BuildObjectFactoryConveyorComponent_C", "OnReadyOwnerEnergyModule");
+		Func = Class->GetFunction("BP_BuildObjectFactoryConveyorComponent_C", "OnUpdateRecipe");
 
-	Params::BP_BuildObjectFactoryConveyorComponent_C_OnReadyOwnerEnergyModule Parms{};
+	Params::BP_BuildObjectFactoryConveyorComponent_C_OnUpdateRecipe Parms{};
 
 	Parms.Model = Model;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.OnUpdateCurrentEnergyState
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalMapObjectEnergyModule*        Module                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_BuildObjectFactoryConveyorComponent_C::OnUpdateCurrentEnergyState(class UPalMapObjectEnergyModule* Module)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BuildObjectFactoryConveyorComponent_C", "OnUpdateCurrentEnergyState");
+
+	Params::BP_BuildObjectFactoryConveyorComponent_C_OnUpdateCurrentEnergyState Parms{};
+
 	Parms.Module = Module;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -99,85 +121,63 @@ void UBP_BuildObjectFactoryConveyorComponent_C::OnUpdateBuildObjectVisual(const 
 }
 
 
-// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.OnUpdateCurrentEnergyState
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.OnReadyOwnerEnergyModule
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPalMapObjectEnergyModule*        Module                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalMapObjectConcreteModelBase*   Model                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalMapObjectConcreteModelModuleBase*Module                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UBP_BuildObjectFactoryConveyorComponent_C::OnUpdateCurrentEnergyState(class UPalMapObjectEnergyModule* Module)
+void UBP_BuildObjectFactoryConveyorComponent_C::OnReadyOwnerEnergyModule(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BuildObjectFactoryConveyorComponent_C", "OnUpdateCurrentEnergyState");
+		Func = Class->GetFunction("BP_BuildObjectFactoryConveyorComponent_C", "OnReadyOwnerEnergyModule");
 
-	Params::BP_BuildObjectFactoryConveyorComponent_C_OnUpdateCurrentEnergyState Parms{};
+	Params::BP_BuildObjectFactoryConveyorComponent_C_OnReadyOwnerEnergyModule Parms{};
 
+	Parms.Model = Model;
 	Parms.Module = Module;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.OnUpdateRecipe
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.GetMaterialInstance
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UPalMapObjectConvertItemModel*    Model                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UMaterialInstanceDynamic*         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
 
-void UBP_BuildObjectFactoryConveyorComponent_C::OnUpdateRecipe(class UPalMapObjectConvertItemModel* Model)
+class UMaterialInstanceDynamic* UBP_BuildObjectFactoryConveyorComponent_C::GetMaterialInstance()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BuildObjectFactoryConveyorComponent_C", "OnUpdateRecipe");
+		Func = Class->GetFunction("BP_BuildObjectFactoryConveyorComponent_C", "GetMaterialInstance");
 
-	Params::BP_BuildObjectFactoryConveyorComponent_C_OnUpdateRecipe Parms{};
-
-	Parms.Model = Model;
+	Params::BP_BuildObjectFactoryConveyorComponent_C_GetMaterialInstance Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 
-// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.SetRunningConveyor
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.ExecuteUbergraph_BP_BuildObjectFactoryConveyorComponent
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    bOn                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_BuildObjectFactoryConveyorComponent_C::SetRunningConveyor(bool bOn)
+void UBP_BuildObjectFactoryConveyorComponent_C::ExecuteUbergraph_BP_BuildObjectFactoryConveyorComponent(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BuildObjectFactoryConveyorComponent_C", "SetRunningConveyor");
+		Func = Class->GetFunction("BP_BuildObjectFactoryConveyorComponent_C", "ExecuteUbergraph_BP_BuildObjectFactoryConveyorComponent");
 
-	Params::BP_BuildObjectFactoryConveyorComponent_C_SetRunningConveyor Parms{};
+	Params::BP_BuildObjectFactoryConveyorComponent_C_ExecuteUbergraph_BP_BuildObjectFactoryConveyorComponent Parms{};
 
-	Parms.bOn = bOn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.SetupByOwner
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalMapObjectConcreteModelBase*   ConcreteModel                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UMeshComponent*                   TargetMeshComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   TargetMaterialIndex                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_BuildObjectFactoryConveyorComponent_C::SetupByOwner(class UPalMapObjectConcreteModelBase* ConcreteModel, class UMeshComponent* TargetMeshComponent, int32 TargetMaterialIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BuildObjectFactoryConveyorComponent_C", "SetupByOwner");
-
-	Params::BP_BuildObjectFactoryConveyorComponent_C_SetupByOwner Parms{};
-
-	Parms.ConcreteModel = ConcreteModel;
-	Parms.TargetMeshComponent = TargetMeshComponent;
-	Parms.TargetMaterialIndex = TargetMaterialIndex;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

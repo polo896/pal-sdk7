@@ -31,63 +31,83 @@ void UWBP_LabResearch_C::CheckWorkSync()
 }
 
 
-// Function WBP_LabResearch.WBP_LabResearch_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_LabResearch.WBP_LabResearch_C.Update Research Progress
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_LabResearch_C::Construct()
+void UWBP_LabResearch_C::Update_Research_Progress()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LabResearch_C", "Construct");
+		Func = Class->GetFunction("WBP_LabResearch_C", "Update Research Progress");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_LabResearch.WBP_LabResearch_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_LabResearch.WBP_LabResearch_C.Setup
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_LabResearch_C::Destruct()
+void UWBP_LabResearch_C::Setup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LabResearch_C", "Destruct");
+		Func = Class->GetFunction("WBP_LabResearch_C", "Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_LabResearch.WBP_LabResearch_C.DisplayCheck
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_LabResearch.WBP_LabResearch_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_LabResearch_C::DisplayCheck()
+void UWBP_LabResearch_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LabResearch_C", "DisplayCheck");
+		Func = Class->GetFunction("WBP_LabResearch_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_LabResearch.WBP_LabResearch_C.ExecuteUbergraph_WBP_LabResearch
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_LabResearch.WBP_LabResearch_C.On Updated Worker Pal
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalWorkBase*                     Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_LabResearch_C::ExecuteUbergraph_WBP_LabResearch(int32 EntryPoint)
+void UWBP_LabResearch_C::On_Updated_Worker_Pal(class UPalWorkBase* Work)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LabResearch_C", "ExecuteUbergraph_WBP_LabResearch");
+		Func = Class->GetFunction("WBP_LabResearch_C", "On Updated Worker Pal");
 
-	Params::WBP_LabResearch_C_ExecuteUbergraph_WBP_LabResearch Parms{};
+	Params::WBP_LabResearch_C_On_Updated_Worker_Pal Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Work = Work;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_LabResearch.WBP_LabResearch_C.On Current Research Updated
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalMapObjectLabModel*            LabModel_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_LabResearch_C::On_Current_Research_Updated(class UPalMapObjectLabModel* LabModel_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_LabResearch_C", "On Current Research Updated");
+
+	Params::WBP_LabResearch_C_On_Current_Research_Updated Parms{};
+
+	Parms.LabModel_0 = LabModel_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -114,83 +134,63 @@ void UWBP_LabResearch_C::GetMapObjectLocation(struct FVector* Location)
 }
 
 
-// Function WBP_LabResearch.WBP_LabResearch_C.On Current Research Updated
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_LabResearch.WBP_LabResearch_C.ExecuteUbergraph_WBP_LabResearch
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class UPalMapObjectLabModel*            LabModel_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_LabResearch_C::On_Current_Research_Updated(class UPalMapObjectLabModel* LabModel_0)
+void UWBP_LabResearch_C::ExecuteUbergraph_WBP_LabResearch(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LabResearch_C", "On Current Research Updated");
+		Func = Class->GetFunction("WBP_LabResearch_C", "ExecuteUbergraph_WBP_LabResearch");
 
-	Params::WBP_LabResearch_C_On_Current_Research_Updated Parms{};
+	Params::WBP_LabResearch_C_ExecuteUbergraph_WBP_LabResearch Parms{};
 
-	Parms.LabModel_0 = LabModel_0;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_LabResearch.WBP_LabResearch_C.On Updated Worker Pal
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalWorkBase*                     Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function WBP_LabResearch.WBP_LabResearch_C.DisplayCheck
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_LabResearch_C::On_Updated_Worker_Pal(class UPalWorkBase* Work)
+void UWBP_LabResearch_C::DisplayCheck()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LabResearch_C", "On Updated Worker Pal");
-
-	Params::WBP_LabResearch_C_On_Updated_Worker_Pal Parms{};
-
-	Parms.Work = Work;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_LabResearch.WBP_LabResearch_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_LabResearch_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LabResearch_C", "OnSetup");
+		Func = Class->GetFunction("WBP_LabResearch_C", "DisplayCheck");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_LabResearch.WBP_LabResearch_C.Setup
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_LabResearch.WBP_LabResearch_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_LabResearch_C::Setup()
+void UWBP_LabResearch_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LabResearch_C", "Setup");
+		Func = Class->GetFunction("WBP_LabResearch_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_LabResearch.WBP_LabResearch_C.Update Research Progress
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_LabResearch.WBP_LabResearch_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_LabResearch_C::Update_Research_Progress()
+void UWBP_LabResearch_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LabResearch_C", "Update Research Progress");
+		Func = Class->GetFunction("WBP_LabResearch_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

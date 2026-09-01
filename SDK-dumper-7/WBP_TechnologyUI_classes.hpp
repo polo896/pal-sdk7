@@ -12,10 +12,10 @@
 
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "EPalUIInGameMainMenuTabType_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
 #include "Slate_structs.hpp"
-#include "EPalUIInGameMainMenuTabType_structs.hpp"
 
 
 namespace SDK
@@ -44,28 +44,28 @@ public:
 	struct FPalUIActionBindData                   ShortcutCloseActionHandle;                         // 0x05A0(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_1_OnNameFilterApplied__DelegateSignature(const class FText& newText);
-	void BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_2_OnFilterButtonClicked__DelegateSignature();
-	void BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_3_OnClickedTchnology__DelegateSignature(class UWBP_MainMenu_Technology_Content_C* Widget);
-	void BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_4_OnHoveredTechnology__DelegateSignature(class UWBP_MainMenu_Technology_Content_C* Widget);
-	void BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_5_OnUnhoveredTechnology__DelegateSignature(class UWBP_MainMenu_Technology_Content_C* Widget);
-	void CanClose(bool* CanCloseFlag);
-	void Construct();
-	void DelayDisplay();
-	void Destruct();
-	void ExecuteUbergraph_WBP_TechnologyUI(int32 EntryPoint);
-	void On_Category_Filter_Applied(const TSet<EPalItemTypeA>& ItemTypes, const TSet<EPalBuildObjectTypeA>& BuildTypes, bool ShowUnlocked);
-	void On_Close_Dialog(bool bResult);
-	void On_Unlocked_Any_Technology();
-	void OnClickedTechnology(class UWBP_MainMenu_Technology_Content_C* Widget);
-	void OnHoveredTechnology(class UWBP_MainMenu_Technology_Content_C* Widget);
-	void OnInputAction_ShortcutClose();
-	struct FEventReply OnMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	void OnUnhoveredTechnology(class UWBP_MainMenu_Technology_Content_C* Widget);
-	void RegisterShortcutCloseInputAction();
-	void SetTechnologyFilter();
-	void Setup();
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void Setup();
+	void SetTechnologyFilter();
+	void RegisterShortcutCloseInputAction();
+	void OnUnhoveredTechnology(class UWBP_MainMenu_Technology_Content_C* Widget);
+	struct FEventReply OnMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnInputAction_ShortcutClose();
+	void OnHoveredTechnology(class UWBP_MainMenu_Technology_Content_C* Widget);
+	void OnClickedTechnology(class UWBP_MainMenu_Technology_Content_C* Widget);
+	void On_Unlocked_Any_Technology();
+	void On_Close_Dialog(bool bResult);
+	void On_Category_Filter_Applied(const TSet<EPalItemTypeA>& ItemTypes, const TSet<EPalBuildObjectTypeA>& BuildTypes, bool ShowUnlocked);
+	void ExecuteUbergraph_WBP_TechnologyUI(int32 EntryPoint);
+	void Destruct();
+	void DelayDisplay();
+	void Construct();
+	void CanClose(bool* CanCloseFlag);
+	void BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_5_OnUnhoveredTechnology__DelegateSignature(class UWBP_MainMenu_Technology_Content_C* Widget);
+	void BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_4_OnHoveredTechnology__DelegateSignature(class UWBP_MainMenu_Technology_Content_C* Widget);
+	void BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_3_OnClickedTchnology__DelegateSignature(class UWBP_MainMenu_Technology_Content_C* Widget);
+	void BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_2_OnFilterButtonClicked__DelegateSignature();
+	void BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_1_OnNameFilterApplied__DelegateSignature(const class FText& newText);
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

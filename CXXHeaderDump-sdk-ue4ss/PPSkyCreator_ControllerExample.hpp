@@ -17,7 +17,7 @@ class APPSkyCreator_ControllerExample_C : public AActor
     class UPPSkyCreatorWeatherPreset* StartWeatherPreset;                             // 0x02E8 (size: 0x8)
     double InterpolateDurationTimeMin;                                                // 0x02F0 (size: 0x8)
     double InterpolateDurationTimeMax;                                                // 0x02F8 (size: 0x8)
-    TArray<class UPPSkyCreatorWeatherPreset*> RandomWeatherPresets;                   // 0x0300 (size: 0x10)
+    TArray<UPPSkyCreatorWeatherPreset*> RandomWeatherPresets;                         // 0x0300 (size: 0x10)
     bool DrawDebugMessages;                                                           // 0x0310 (size: 0x1)
     class USoundCue* Rain;                                                            // 0x0318 (size: 0x8)
     class UPPSkyCreatorWeatherPreset* NextWeatherPreset;                              // 0x0320 (size: 0x8)

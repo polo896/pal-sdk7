@@ -17,70 +17,29 @@
 namespace SDK
 {
 
-// Function ABP_Anubis_Implementation.ABP_Anubis_Implementation_C.AimingOverride
+// Function ABP_Anubis_Implementation.ABP_Anubis_Implementation_C.UpperOverride
 // (HasOutParams, BlueprintCallable)
 // Parameters:
-// const struct FPoseLink&                 DefaultPose                                            (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-// const struct FRotator&                  AimRotator                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FPoseLink*                       AimingOverride_0                                       (Parm, OutParm, NoDestructor)
+// const struct FPoseLink&                 NativePose                                             (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// const struct FPoseLink&                 ActionPose                                             (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FPoseLink*                       UpperOverride_0                                        (Parm, OutParm, NoDestructor)
 
-void UABP_Anubis_Implementation_C::AimingOverride(const struct FPoseLink& DefaultPose, const struct FRotator& AimRotator, struct FPoseLink* AimingOverride_0)
+void UABP_Anubis_Implementation_C::UpperOverride(const struct FPoseLink& NativePose, const struct FPoseLink& ActionPose, struct FPoseLink* UpperOverride_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_Anubis_Implementation_C", "AimingOverride");
+		Func = Class->GetFunction("ABP_Anubis_Implementation_C", "UpperOverride");
 
-	Params::ABP_Anubis_Implementation_C_AimingOverride Parms{};
+	Params::ABP_Anubis_Implementation_C_UpperOverride Parms{};
 
-	Parms.DefaultPose = std::move(DefaultPose);
-	Parms.AimRotator = std::move(AimRotator);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (AimingOverride_0 != nullptr)
-		*AimingOverride_0 = std::move(Parms.AimingOverride_0);
-}
-
-
-// Function ABP_Anubis_Implementation.ABP_Anubis_Implementation_C.AnimGraph
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
-
-void UABP_Anubis_Implementation_C::AnimGraph(struct FPoseLink* AnimGraph_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_Anubis_Implementation_C", "AnimGraph");
-
-	Params::ABP_Anubis_Implementation_C_AnimGraph Parms{};
+	Parms.NativePose = std::move(NativePose);
+	Parms.ActionPose = std::move(ActionPose);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (AnimGraph_0 != nullptr)
-		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
-}
-
-
-// Function ABP_Anubis_Implementation.ABP_Anubis_Implementation_C.ExecuteUbergraph_ABP_Anubis_Implementation
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UABP_Anubis_Implementation_C::ExecuteUbergraph_ABP_Anubis_Implementation(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_Anubis_Implementation_C", "ExecuteUbergraph_ABP_Anubis_Implementation");
-
-	Params::ABP_Anubis_Implementation_C_ExecuteUbergraph_ABP_Anubis_Implementation Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	if (UpperOverride_0 != nullptr)
+		*UpperOverride_0 = std::move(Parms.UpperOverride_0);
 }
 
 
@@ -110,29 +69,70 @@ void UABP_Anubis_Implementation_C::LookAtOverride(const struct FPoseLink& InPose
 }
 
 
-// Function ABP_Anubis_Implementation.ABP_Anubis_Implementation_C.UpperOverride
-// (HasOutParams, BlueprintCallable)
+// Function ABP_Anubis_Implementation.ABP_Anubis_Implementation_C.ExecuteUbergraph_ABP_Anubis_Implementation
+// (Final, UbergraphFunction)
 // Parameters:
-// const struct FPoseLink&                 NativePose                                             (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-// const struct FPoseLink&                 ActionPose                                             (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-// struct FPoseLink*                       UpperOverride_0                                        (Parm, OutParm, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UABP_Anubis_Implementation_C::UpperOverride(const struct FPoseLink& NativePose, const struct FPoseLink& ActionPose, struct FPoseLink* UpperOverride_0)
+void UABP_Anubis_Implementation_C::ExecuteUbergraph_ABP_Anubis_Implementation(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_Anubis_Implementation_C", "UpperOverride");
+		Func = Class->GetFunction("ABP_Anubis_Implementation_C", "ExecuteUbergraph_ABP_Anubis_Implementation");
 
-	Params::ABP_Anubis_Implementation_C_UpperOverride Parms{};
+	Params::ABP_Anubis_Implementation_C_ExecuteUbergraph_ABP_Anubis_Implementation Parms{};
 
-	Parms.NativePose = std::move(NativePose);
-	Parms.ActionPose = std::move(ActionPose);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ABP_Anubis_Implementation.ABP_Anubis_Implementation_C.AnimGraph
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
+
+void UABP_Anubis_Implementation_C::AnimGraph(struct FPoseLink* AnimGraph_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ABP_Anubis_Implementation_C", "AnimGraph");
+
+	Params::ABP_Anubis_Implementation_C_AnimGraph Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (UpperOverride_0 != nullptr)
-		*UpperOverride_0 = std::move(Parms.UpperOverride_0);
+	if (AnimGraph_0 != nullptr)
+		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
+}
+
+
+// Function ABP_Anubis_Implementation.ABP_Anubis_Implementation_C.AimingOverride
+// (HasOutParams, BlueprintCallable)
+// Parameters:
+// const struct FPoseLink&                 DefaultPose                                            (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// const struct FRotator&                  AimRotator                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FPoseLink*                       AimingOverride_0                                       (Parm, OutParm, NoDestructor)
+
+void UABP_Anubis_Implementation_C::AimingOverride(const struct FPoseLink& DefaultPose, const struct FRotator& AimRotator, struct FPoseLink* AimingOverride_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ABP_Anubis_Implementation_C", "AimingOverride");
+
+	Params::ABP_Anubis_Implementation_C_AimingOverride Parms{};
+
+	Parms.DefaultPose = std::move(DefaultPose);
+	Parms.AimRotator = std::move(AimRotator);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (AimingOverride_0 != nullptr)
+		*AimingOverride_0 = std::move(Parms.AimingOverride_0);
 }
 
 }

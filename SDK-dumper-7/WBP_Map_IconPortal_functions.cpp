@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function WBP_Map_IconPortal.WBP_Map_IconPortal_C.Setup_Internal
+// (Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalLocationPoint*                LocationPoint                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Map_IconPortal_C::Setup_Internal(class UPalLocationPoint* LocationPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Map_IconPortal_C", "Setup_Internal");
+
+	Params::WBP_Map_IconPortal_C_Setup_Internal Parms{};
+
+	Parms.LocationPoint = LocationPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Map_IconPortal.WBP_Map_IconPortal_C.SetupForceVisibility
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -35,26 +55,6 @@ void UWBP_Map_IconPortal_C::SetupForceVisibility(bool* bChangedVisibility)
 
 	if (bChangedVisibility != nullptr)
 		*bChangedVisibility = Parms.bChangedVisibility;
-}
-
-
-// Function WBP_Map_IconPortal.WBP_Map_IconPortal_C.Setup_Internal
-// (Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalLocationPoint*                LocationPoint                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Map_IconPortal_C::Setup_Internal(class UPalLocationPoint* LocationPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconPortal_C", "Setup_Internal");
-
-	Params::WBP_Map_IconPortal_C_Setup_Internal Parms{};
-
-	Parms.LocationPoint = LocationPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

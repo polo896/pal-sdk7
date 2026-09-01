@@ -18,36 +18,45 @@
 namespace SDK::Params
 {
 
-// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.Display
-// 0x0270 (0x0270 - 0x0000)
-struct WBP_Notice_DeathAnnounce_C_Display final
+// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.カスタムイベント_0
+// 0x0068 (0x0068 - 0x0000)
+struct WBP_Notice_DeathAnnounce_C_カスタムイベント_0 final
 {
 public:
-	bool                                          bSuccess;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   TmpDisplayText;                                    // 0x0008(0x0018)(Edit, BlueprintVisible)
-	struct FPalKillLogDisplayData                 TmpDisplayData;                                    // 0x0020(0x0068)(Edit, BlueprintVisible)
-	EPalKillLogDisplayType                        Temp_byte_Variable;                                // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    Temp_struct_Variable;                              // 0x0090(0x0010)(NoDestructor)
-	struct FDataTableRowHandle                    Temp_struct_Variable_1;                            // 0x00A0(0x0010)(NoDestructor)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x00B0(0x0018)()
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x00C8(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00E0(0x0050)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0130(0x0050)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0180(0x0010)(ReferenceParm)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0190(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x01A0(0x0018)()
-	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x01B8(0x0018)()
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D1[0x7];                                      // 0x01D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    K2Node_Select_Default;                             // 0x01D8(0x0010)(NoDestructor)
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x01E8(0x0018)()
-	struct FPalKillLogDisplayData                 CallFunc_Array_Get_Item;                           // 0x0200(0x0068)()
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0268(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x026C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalKillLogDisplayData                 DeathLogDisplayData;                               // 0x0000(0x0068)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-DUMPER7_ASSERTS_WBP_Notice_DeathAnnounce_C_Display;
+DUMPER7_ASSERTS_WBP_Notice_DeathAnnounce_C_カスタムイベント_0;
+
+// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.カスタムイベント
+// 0x0068 (0x0068 - 0x0000)
+struct WBP_Notice_DeathAnnounce_C_カスタムイベント final
+{
+public:
+	struct FPalKillLogDisplayData                 DeathLogDisplayData;                               // 0x0000(0x0068)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_Notice_DeathAnnounce_C_カスタムイベント;
+
+// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.Tick
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_Notice_DeathAnnounce_C_Tick final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Notice_DeathAnnounce_C_Tick;
+
+// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.OnAddedDeathLog
+// 0x0070 (0x0070 - 0x0000)
+struct WBP_Notice_DeathAnnounce_C_OnAddedDeathLog final
+{
+public:
+	struct FPalKillLogDisplayData                 DeathLogDisplayData;                               // 0x0000(0x0068)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	bool                                          CallFunc_Display_bSuccess;                         // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Notice_DeathAnnounce_C_OnAddedDeathLog;
 
 // Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.ExecuteUbergraph_WBP_Notice_DeathAnnounce
 // 0x01B0 (0x01B0 - 0x0000)
@@ -81,45 +90,36 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Notice_DeathAnnounce_C_ExecuteUbergraph_WBP_Notice_DeathAnnounce;
 
-// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.OnAddedDeathLog
-// 0x0070 (0x0070 - 0x0000)
-struct WBP_Notice_DeathAnnounce_C_OnAddedDeathLog final
+// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.Display
+// 0x0270 (0x0270 - 0x0000)
+struct WBP_Notice_DeathAnnounce_C_Display final
 {
 public:
-	struct FPalKillLogDisplayData                 DeathLogDisplayData;                               // 0x0000(0x0068)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	bool                                          CallFunc_Display_bSuccess;                         // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bSuccess;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   TmpDisplayText;                                    // 0x0008(0x0018)(Edit, BlueprintVisible)
+	struct FPalKillLogDisplayData                 TmpDisplayData;                                    // 0x0020(0x0068)(Edit, BlueprintVisible)
+	EPalKillLogDisplayType                        Temp_byte_Variable;                                // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDataTableRowHandle                    Temp_struct_Variable;                              // 0x0090(0x0010)(NoDestructor)
+	struct FDataTableRowHandle                    Temp_struct_Variable_1;                            // 0x00A0(0x0010)(NoDestructor)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x00B0(0x0018)()
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x00C8(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00E0(0x0050)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0130(0x0050)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0180(0x0010)(ReferenceParm)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0190(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x01A0(0x0018)()
+	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x01B8(0x0018)()
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D1[0x7];                                      // 0x01D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDataTableRowHandle                    K2Node_Select_Default;                             // 0x01D8(0x0010)(NoDestructor)
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x01E8(0x0018)()
+	struct FPalKillLogDisplayData                 CallFunc_Array_Get_Item;                           // 0x0200(0x0068)()
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0268(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x026C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Notice_DeathAnnounce_C_OnAddedDeathLog;
-
-// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.Tick
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_Notice_DeathAnnounce_C_Tick final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Notice_DeathAnnounce_C_Tick;
-
-// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.カスタムイベント
-// 0x0068 (0x0068 - 0x0000)
-struct WBP_Notice_DeathAnnounce_C_カスタムイベント final
-{
-public:
-	struct FPalKillLogDisplayData                 DeathLogDisplayData;                               // 0x0000(0x0068)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_Notice_DeathAnnounce_C_カスタムイベント;
-
-// Function WBP_Notice_DeathAnnounce.WBP_Notice_DeathAnnounce_C.カスタムイベント_0
-// 0x0068 (0x0068 - 0x0000)
-struct WBP_Notice_DeathAnnounce_C_カスタムイベント_0 final
-{
-public:
-	struct FPalKillLogDisplayData                 DeathLogDisplayData;                               // 0x0000(0x0068)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_Notice_DeathAnnounce_C_カスタムイベント_0;
+DUMPER7_ASSERTS_WBP_Notice_DeathAnnounce_C_Display;
 
 }
 

@@ -66,33 +66,33 @@ public:
 	bool                                          IsSpectator;                                       // 0x05E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_In();
-	void BndEvt__WBP_Arena_PalSelect_WBP_CommonButton_2_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
-	void Cancel_Spect();
-	void CancelSoloMatch();
-	void CloseDetail();
-	void ClosePanel();
-	void ConfirmParty(bool Confirmed);
-	void Display_Detail(class UPalIndividualCharacterHandle* CharacterHandle);
-	void EmptyConfirm(bool IsConfirm);
-	void EmptyEvent();
-	void ExecuteUbergraph_WBP_Arena_PalSelect(int32 EntryPoint);
-	void Finished_6CCB6F4C49947D6ED3DAE8939CE96337();
-	void IsRestrictedSelect(const struct FPalArenaRule& Rule, class UPalIndividualCharacterParameter* individualParam, bool* IsRestricted);
-	void On_Party_Updated(EPalArenaPlayerIndex PlayerIndex, const struct FPalArenaPlayerParty& Party);
-	void On_Timer_Updated(double Time);
-	void OnInitialized();
-	void OnSetup();
-	void OnUpdateSequence(class UPalArenaSequencer* Sequencer, EPalArenaSequenceType PrevType, EPalArenaSequenceType AfterType);
-	void Setup(bool IsSoloMode);
-	void SetupCharacterName();
-	void SetupPalList(const TArray<class UPalIndividualCharacterParameter*>& PalList, bool IsRival);
-	void ShowArenaRule();
-	void Toggle_Select_Party(class UPalIndividualCharacterHandle* CharacterHandle);
-	void ToggleDetailVisibility();
-	void Update_Local_Party_Slot();
-	void Update_Party_Count_UI(const struct FPalArenaPlayerParty& CurrentParty_0, bool IsRival);
 	void Update_Rival_Party_Slot(const struct FPalArenaPlayerParty& Party);
+	void Update_Party_Count_UI(const struct FPalArenaPlayerParty& CurrentParty_0, bool IsRival);
+	void Update_Local_Party_Slot();
+	void ToggleDetailVisibility();
+	void Toggle_Select_Party(class UPalIndividualCharacterHandle* CharacterHandle);
+	void ShowArenaRule();
+	void SetupPalList(const TArray<class UPalIndividualCharacterParameter*>& PalList, bool IsRival);
+	void SetupCharacterName();
+	void Setup(bool IsSoloMode);
+	void OnUpdateSequence(class UPalArenaSequencer* Sequencer, EPalArenaSequenceType PrevType, EPalArenaSequenceType AfterType);
+	void OnSetup();
+	void OnInitialized();
+	void On_Timer_Updated(double Time);
+	void On_Party_Updated(EPalArenaPlayerIndex PlayerIndex, const struct FPalArenaPlayerParty& Party);
+	void IsRestrictedSelect(const struct FPalArenaRule& Rule, class UPalIndividualCharacterParameter* individualParam, bool* IsRestricted);
+	void Finished_6CCB6F4C49947D6ED3DAE8939CE96337();
+	void ExecuteUbergraph_WBP_Arena_PalSelect(int32 EntryPoint);
+	void EmptyEvent();
+	void EmptyConfirm(bool IsConfirm);
+	void Display_Detail(class UPalIndividualCharacterHandle* CharacterHandle);
+	void ConfirmParty(bool Confirmed);
+	void ClosePanel();
+	void CloseDetail();
+	void CancelSoloMatch();
+	void Cancel_Spect();
+	void BndEvt__WBP_Arena_PalSelect_WBP_CommonButton_2_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
+	void AnmEvent_In();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

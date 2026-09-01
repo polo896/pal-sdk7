@@ -16,56 +16,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_PalGet_s.WBP_PalGet_s_C.DisplayCaptureMessage
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_PalGet_s_C_DisplayCaptureMessage final
-{
-public:
-	bool                                          isFirstCapture;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0008(0x0018)()
-	class FText                                   CallFunc_GetLocalizedText_ReturnValue_1;           // 0x0020(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_PalGet_s_C_DisplayCaptureMessage;
-
-// Function WBP_PalGet_s.WBP_PalGet_s_C.ExecuteUbergraph_WBP_PalGet_s
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_PalGet_s_C_ExecuteUbergraph_WBP_PalGet_s final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalGet_s_C_ExecuteUbergraph_WBP_PalGet_s;
-
-// Function WBP_PalGet_s.WBP_PalGet_s_C.SetAdditionalText
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_PalGet_s_C_SetAdditionalText final
-{
-public:
-	class FText                                   Text;                                              // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_PalGet_s_C_SetAdditionalText;
-
-// Function WBP_PalGet_s.WBP_PalGet_s_C.SetupByCaptureInfo
-// 0x0090 (0x0090 - 0x0000)
-struct WBP_PalGet_s_C_SetupByCaptureInfo final
-{
-public:
-	struct FPalUIPalCaptureInfo                   CaptureInfo;                                       // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm)
-	bool                                          Temp_bool_Variable;                                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalDatabaseCharacterParameter*         CallFunc_GetDatabaseCharacterParameter_ReturnValue; // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetLocalizedUniqueNPCName_OutText;        // 0x0048(0x0018)()
-	class FText                                   CallFunc_GetLocalizedCharacterName_OutText;        // 0x0060(0x0018)()
-	class FText                                   K2Node_Select_Default;                             // 0x0078(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_PalGet_s_C_SetupByCaptureInfo;
-
 // Function WBP_PalGet_s.WBP_PalGet_s_C.SetupByTargetHandle
 // 0x0050 (0x0050 - 0x0000)
 struct WBP_PalGet_s_C_SetupByTargetHandle final
@@ -84,6 +34,56 @@ public:
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0038(0x0018)()
 };
 DUMPER7_ASSERTS_WBP_PalGet_s_C_SetupByTargetHandle;
+
+// Function WBP_PalGet_s.WBP_PalGet_s_C.SetupByCaptureInfo
+// 0x0090 (0x0090 - 0x0000)
+struct WBP_PalGet_s_C_SetupByCaptureInfo final
+{
+public:
+	struct FPalUIPalCaptureInfo                   CaptureInfo;                                       // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm)
+	bool                                          Temp_bool_Variable;                                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalDatabaseCharacterParameter*         CallFunc_GetDatabaseCharacterParameter_ReturnValue; // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetLocalizedUniqueNPCName_OutText;        // 0x0048(0x0018)()
+	class FText                                   CallFunc_GetLocalizedCharacterName_OutText;        // 0x0060(0x0018)()
+	class FText                                   K2Node_Select_Default;                             // 0x0078(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_PalGet_s_C_SetupByCaptureInfo;
+
+// Function WBP_PalGet_s.WBP_PalGet_s_C.SetAdditionalText
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_PalGet_s_C_SetAdditionalText final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_PalGet_s_C_SetAdditionalText;
+
+// Function WBP_PalGet_s.WBP_PalGet_s_C.ExecuteUbergraph_WBP_PalGet_s
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_PalGet_s_C_ExecuteUbergraph_WBP_PalGet_s final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalGet_s_C_ExecuteUbergraph_WBP_PalGet_s;
+
+// Function WBP_PalGet_s.WBP_PalGet_s_C.DisplayCaptureMessage
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_PalGet_s_C_DisplayCaptureMessage final
+{
+public:
+	bool                                          isFirstCapture;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0008(0x0018)()
+	class FText                                   CallFunc_GetLocalizedText_ReturnValue_1;           // 0x0020(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_PalGet_s_C_DisplayCaptureMessage;
 
 }
 

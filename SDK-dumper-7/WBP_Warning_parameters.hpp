@@ -14,14 +14,23 @@
 namespace SDK::Params
 {
 
-// Function WBP_Warning.WBP_Warning_C.AnmEvent_Open
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Warning_C_AnmEvent_Open final
+// Function WBP_Warning.WBP_Warning_C.SetTitleText
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Warning_C_SetTitleText final
 {
 public:
-	double                                        DisplayTime;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Text;                                              // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-DUMPER7_ASSERTS_WBP_Warning_C_AnmEvent_Open;
+DUMPER7_ASSERTS_WBP_Warning_C_SetTitleText;
+
+// Function WBP_Warning.WBP_Warning_C.SetInfoText
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Warning_C_SetInfoText final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_Warning_C_SetInfoText;
 
 // Function WBP_Warning.WBP_Warning_C.ExecuteUbergraph_WBP_Warning
 // 0x0028 (0x0028 - 0x0000)
@@ -37,23 +46,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Warning_C_ExecuteUbergraph_WBP_Warning;
 
-// Function WBP_Warning.WBP_Warning_C.SetInfoText
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Warning_C_SetInfoText final
+// Function WBP_Warning.WBP_Warning_C.AnmEvent_Open
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Warning_C_AnmEvent_Open final
 {
 public:
-	class FText                                   Text;                                              // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	double                                        DisplayTime;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Warning_C_SetInfoText;
-
-// Function WBP_Warning.WBP_Warning_C.SetTitleText
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Warning_C_SetTitleText final
-{
-public:
-	class FText                                   Text;                                              // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_Warning_C_SetTitleText;
+DUMPER7_ASSERTS_WBP_Warning_C_AnmEvent_Open;
 
 }
 

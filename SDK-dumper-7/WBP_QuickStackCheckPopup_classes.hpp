@@ -35,15 +35,15 @@ public:
 	class UBP_HUDDispatchParameter_QuickStackConfirm_C* HUDDispatchParam;                            // 0x04D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_CommonPopupWindow_WBP_CommonButton_L_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
-	void BndEvt__WBP_CommonPopupWindow_WBP_CommonButton_R_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_QuickStackCheckPopup(int32 EntryPoint);
-	void GetLeftButton(class UCommonButtonBase** rightButton);
-	void GetRightButton(class UCommonButtonBase** Button);
-	void OnSetup();
 	void Setup();
+	void OnSetup();
+	void GetRightButton(class UCommonButtonBase** Button);
+	void GetLeftButton(class UCommonButtonBase** rightButton);
+	void ExecuteUbergraph_WBP_QuickStackCheckPopup(int32 EntryPoint);
+	void Destruct();
+	void Construct();
+	void BndEvt__WBP_CommonPopupWindow_WBP_CommonButton_R_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
+	void BndEvt__WBP_CommonPopupWindow_WBP_CommonButton_L_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

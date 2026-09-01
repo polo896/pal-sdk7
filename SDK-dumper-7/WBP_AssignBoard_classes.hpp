@@ -62,40 +62,40 @@ public:
 	TMulticastInlineDelegate<void()>              OnClickedCloseButton;                              // 0x0638(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void AnmEvent_SelectWork(class UWBP_AssignBoard_WorkListBase_C* SelectWidget);
-	void AnmEvent_UnselectWork();
-	void BndEvt__WBP_AssignBoard_WBP_Menu_btn_K2Node_ComponentBoundEvent_6_OnButtonClicked__DelegateSignature();
-	void BndEvt__WBP_AssignBoard_WBP_PalCharacterScrollList_Worker_K2Node_ComponentBoundEvent_0_OnCreatedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* createdSlot);
-	void BndEvt__WBP_AssignBoard_WBP_PalCharacterScrollList_Worker_K2Node_ComponentBoundEvent_1_OnHoveredSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget);
-	void BndEvt__WBP_AssignBoard_WBP_PalCharacterScrollList_Worker_K2Node_ComponentBoundEvent_2_OnLeftClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
-	void BndEvt__WBP_AssignBoard_WBP_PalCharacterScrollList_Worker_K2Node_ComponentBoundEvent_3_OnUnhoveredSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget);
-	void BndEvt__WBP_AssignBoard_WBP_PalCharacterScrollList_Worker_K2Node_ComponentBoundEvent_4_OnRightClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget);
-	void BndEvt__WBP_AssignBoard_WBP_PalInvisibleButton_Sort_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void CreateWorkListWidget(const struct FPalUIBaseCampWorkFixedAssignInfo& AssignInfo, class UWBP_AssignBoard_WorkListBase_C** createdWidget);
-	void Destruct();
-	void EndSelectWorker();
-	void ExecuteUbergraph_WBP_AssignBoard(int32 EntryPoint);
-	void GetWorkerTopButton(class UWidget** Widget);
-	void GetWorkListTopButton(class UWidget** Widget);
-	void IsExistWorkListWidget(class UWBP_AssignBoard_WorkListBase_C* Widget, bool* IsExist);
-	void IsSelectiongWorkerMode(bool* IsSelecting);
-	void OnClickedWorkerButton_Internal(class UWBP_PalCharacterSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
-	void OnHoveredWork_Internal(class UWBP_AssignBoard_WorkListBase_C* Widget);
-	void OnHoveredWorkerButton_Internal(class UWBP_PalCharacterSlotButtonBase_C* Widget);
-	void OnSelectedWork_Internal(class UWBP_AssignBoard_WorkListBase_C* Widget);
-	void OnTriggerRemoveAssignShortcut_Internal();
-	void OnUnhoveredWork_Internal(class UWBP_AssignBoard_WorkListBase_C* Widget);
-	void OnUnhoveredWorkerButton_Internal(class UWBP_PalCharacterSlotButtonBase_C* Widget);
-	void OnUpdateAssignInfo(class UPalUIBaseCampWorkFixedAssignManageModel* Model);
-	void OnUpdateWorkerSlots_Internal(class UPalIndividualCharacterContainer* Container);
-	void RegisterAction_RemoveAssignShortcut();
-	void ResetWorkerContainerEvent();
-	void Set_Sort_Name(const class FText& SortNameText);
-	void SetAssignInfo(TArray<struct FPalUIBaseCampWorkFixedAssignInfo>& AssignInfo, bool ForceRefresh);
-	void Setup();
-	void SetupWorkerContainerEvent(class UPalIndividualCharacterContainer* Container);
-	void SetWorkerCharacterContainer(class UPalIndividualCharacterContainer* Container);
 	void StartSelectWorker(class UWBP_AssignBoard_WorkListBase_C* TargetWorkWIdget);
+	void SetWorkerCharacterContainer(class UPalIndividualCharacterContainer* Container);
+	void SetupWorkerContainerEvent(class UPalIndividualCharacterContainer* Container);
+	void Setup();
+	void SetAssignInfo(TArray<struct FPalUIBaseCampWorkFixedAssignInfo>& AssignInfo, bool ForceRefresh);
+	void Set_Sort_Name(const class FText& SortNameText);
+	void ResetWorkerContainerEvent();
+	void RegisterAction_RemoveAssignShortcut();
+	void OnUpdateWorkerSlots_Internal(class UPalIndividualCharacterContainer* Container);
+	void OnUpdateAssignInfo(class UPalUIBaseCampWorkFixedAssignManageModel* Model);
+	void OnUnhoveredWorkerButton_Internal(class UWBP_PalCharacterSlotButtonBase_C* Widget);
+	void OnUnhoveredWork_Internal(class UWBP_AssignBoard_WorkListBase_C* Widget);
+	void OnTriggerRemoveAssignShortcut_Internal();
+	void OnSelectedWork_Internal(class UWBP_AssignBoard_WorkListBase_C* Widget);
+	void OnHoveredWorkerButton_Internal(class UWBP_PalCharacterSlotButtonBase_C* Widget);
+	void OnHoveredWork_Internal(class UWBP_AssignBoard_WorkListBase_C* Widget);
+	void OnClickedWorkerButton_Internal(class UWBP_PalCharacterSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
+	void IsSelectiongWorkerMode(bool* IsSelecting);
+	void IsExistWorkListWidget(class UWBP_AssignBoard_WorkListBase_C* Widget, bool* IsExist);
+	void GetWorkListTopButton(class UWidget** Widget);
+	void GetWorkerTopButton(class UWidget** Widget);
+	void ExecuteUbergraph_WBP_AssignBoard(int32 EntryPoint);
+	void EndSelectWorker();
+	void Destruct();
+	void CreateWorkListWidget(const struct FPalUIBaseCampWorkFixedAssignInfo& AssignInfo, class UWBP_AssignBoard_WorkListBase_C** createdWidget);
+	void BndEvt__WBP_AssignBoard_WBP_PalInvisibleButton_Sort_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_AssignBoard_WBP_PalCharacterScrollList_Worker_K2Node_ComponentBoundEvent_4_OnRightClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget);
+	void BndEvt__WBP_AssignBoard_WBP_PalCharacterScrollList_Worker_K2Node_ComponentBoundEvent_3_OnUnhoveredSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget);
+	void BndEvt__WBP_AssignBoard_WBP_PalCharacterScrollList_Worker_K2Node_ComponentBoundEvent_2_OnLeftClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
+	void BndEvt__WBP_AssignBoard_WBP_PalCharacterScrollList_Worker_K2Node_ComponentBoundEvent_1_OnHoveredSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget);
+	void BndEvt__WBP_AssignBoard_WBP_PalCharacterScrollList_Worker_K2Node_ComponentBoundEvent_0_OnCreatedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* createdSlot);
+	void BndEvt__WBP_AssignBoard_WBP_Menu_btn_K2Node_ComponentBoundEvent_6_OnButtonClicked__DelegateSignature();
+	void AnmEvent_UnselectWork();
+	void AnmEvent_SelectWork(class UWBP_AssignBoard_WorkListBase_C* SelectWidget);
 
 public:
 	static class UClass* StaticClass()

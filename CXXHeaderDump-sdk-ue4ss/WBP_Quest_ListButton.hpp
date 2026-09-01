@@ -22,7 +22,7 @@ class UWBP_Quest_ListButton_C : public UUserWidget
     class UBP_PalRichTextBlock_C* RichText_QuestTitle;                                // 0x02F8 (size: 0x8)
     class UBP_PalTextBlock_C* Text_Distance;                                          // 0x0300 (size: 0x8)
     class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x0308 (size: 0x8)
-    TSoftObjectPtr<UPalQuestData> SoftQuestData;                                      // 0x0310 (size: 0x30)
+    TSoftObjectPtr<class UPalQuestData> SoftQuestData;                                // 0x0310 (size: 0x30)
     FWBP_Quest_ListButton_COnClicked OnClicked;                                       // 0x0340 (size: 0x10)
     void OnClicked(class UWBP_Quest_ListButton_C* Widget);
     FWBP_Quest_ListButton_COnHovered OnHovered;                                       // 0x0350 (size: 0x10)

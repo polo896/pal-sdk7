@@ -37,8 +37,8 @@ class UWBP_Ingame_PalSkillGauge_C : public UUserWidget
     class UWBP_Ingame_PalSkill_Flight_C* WBP_Ingame_PalSkill_Flight_UP;               // 0x0370 (size: 0x8)
     class UWBP_PlayerInputKeyGuideIcon_C* WBP_PlayerInputKeyGuideIcon;                // 0x0378 (size: 0x8)
     bool IsCoolDown;                                                                  // 0x0380 (size: 0x1)
-    TArray<class UMaterialInstanceDynamic*> skillGaugeMaterials;                      // 0x0388 (size: 0x10)
-    TArray<class UMaterialInstanceDynamic*> coolDownGaugeMaterials;                   // 0x0398 (size: 0x10)
+    TArray<UMaterialInstanceDynamic*> skillGaugeMaterials;                            // 0x0388 (size: 0x10)
+    TArray<UMaterialInstanceDynamic*> coolDownGaugeMaterials;                         // 0x0398 (size: 0x10)
 
     void ShowFlyKeyGuide(bool Show);
     void Set Skill Name Locked();

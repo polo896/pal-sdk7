@@ -36,17 +36,17 @@ public:
 	bool                                          CurrentHidding;                                    // 0x02D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Ban();
-	void AnmEvent_Enable();
-	void AnmEvent_Focus();
-	void AnmEvent_NoFocus();
-	void BndEvt__WBP_Arena_RuleSetting_PalListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Arena_RuleSetting_PalListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Arena_RuleSetting_PalListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void Construct();
-	void ExecuteUbergraph_WBP_Arena_RuleSetting_PalListButton(int32 EntryPoint);
-	void SetHide(bool ShouldHide);
 	void Setup(class FName CharacterID);
+	void SetHide(bool ShouldHide);
+	void ExecuteUbergraph_WBP_Arena_RuleSetting_PalListButton(int32 EntryPoint);
+	void Construct();
+	void BndEvt__WBP_Arena_RuleSetting_PalListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Arena_RuleSetting_PalListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Arena_RuleSetting_PalListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void AnmEvent_NoFocus();
+	void AnmEvent_Focus();
+	void AnmEvent_Enable();
+	void AnmEvent_Ban();
 
 public:
 	static class UClass* StaticClass()

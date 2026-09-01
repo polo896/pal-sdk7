@@ -6,7 +6,7 @@
 struct FMoviePipelinePostProcessPass
 {
     bool bEnabled;                                                                    // 0x0000 (size: 0x1)
-    TSoftObjectPtr<UMaterialInterface> Material;                                      // 0x0008 (size: 0x30)
+    TSoftObjectPtr<class UMaterialInterface> Material;                                // 0x0008 (size: 0x30)
 
 }; // Size: 0x38
 
@@ -20,7 +20,7 @@ class UMoviePipelineDeferredPassBase : public UMoviePipelineImagePassBase
     bool bAddDefaultLayer;                                                            // 0x0191 (size: 0x1)
     TArray<FActorLayer> ActorLayers;                                                  // 0x0198 (size: 0x10)
     TArray<FSoftObjectPath> DataLayers;                                               // 0x01B8 (size: 0x10)
-    TArray<class UMaterialInterface*> ActivePostProcessMaterials;                     // 0x01C8 (size: 0x10)
+    TArray<UMaterialInterface*> ActivePostProcessMaterials;                           // 0x01C8 (size: 0x10)
     class UMaterialInterface* StencilLayerMaterial;                                   // 0x01D8 (size: 0x8)
 
 }; // Size: 0x228

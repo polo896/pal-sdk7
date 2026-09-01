@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "E_PaldexDistributionTimeType_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
 #include "CoreUObject_structs.hpp"
+#include "E_PaldexDistributionTimeType_structs.hpp"
 
 
 namespace SDK
@@ -59,32 +59,32 @@ public:
 	struct FPalDataTableRowName_UIInputAction     FinteringAction;                                   // 0x05B4(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_0_OnClickedFilteringButton__DelegateSignature();
-	void BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_1_OnClickedModelTab__DelegateSignature();
-	void BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_2_OnClickedDistributionTab__DelegateSignature();
-	void BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_3_OnClickedAnyPalPanel__DelegateSignature(class FName CharacterID);
-	void Change_Map_Zoom_Rate();
-	void ChangeDistributionTime();
-	void Construct();
-	void DelayScrollToCharacterID(class FName CharacterID);
-	void ExecuteUbergraph_WBP_Paldex_ForDisplay(int32 EntryPoint);
-	void FilteringInternal(bool bIgnoreFocus);
-	struct FEventReply OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent);
-	void OnChangeDistributionInput();
-	void OnChangeModelInput();
-	void OnClosedFilteringSettings(class UPalHUDDispatchParameterBase* Param_0);
-	void OnInputAction_ChangeMap();
-	void OnInputAction_FIltering();
-	struct FEventReply OnMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	struct FEventReply OnMouseWheel(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	void OpenFilteringWindow();
-	void PlayRandomCry();
-	void SetEnableRandomCryAction(bool IsEnableFlag);
-	void Setup();
-	void SwitchDistributionTime(E_PaldexDistributionTimeType timeType);
-	void ToDistributionDisplayMode();
-	void ToModelDisplayMode();
 	void UpdateNewFlag(class FName CharacterID);
+	void ToModelDisplayMode();
+	void ToDistributionDisplayMode();
+	void SwitchDistributionTime(E_PaldexDistributionTimeType timeType);
+	void Setup();
+	void SetEnableRandomCryAction(bool IsEnableFlag);
+	void PlayRandomCry();
+	void OpenFilteringWindow();
+	struct FEventReply OnMouseWheel(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	struct FEventReply OnMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnInputAction_FIltering();
+	void OnInputAction_ChangeMap();
+	void OnClosedFilteringSettings(class UPalHUDDispatchParameterBase* Param_0);
+	void OnChangeModelInput();
+	void OnChangeDistributionInput();
+	struct FEventReply OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent);
+	void FilteringInternal(bool bIgnoreFocus);
+	void ExecuteUbergraph_WBP_Paldex_ForDisplay(int32 EntryPoint);
+	void DelayScrollToCharacterID(class FName CharacterID);
+	void Construct();
+	void ChangeDistributionTime();
+	void Change_Map_Zoom_Rate();
+	void BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_3_OnClickedAnyPalPanel__DelegateSignature(class FName CharacterID);
+	void BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_2_OnClickedDistributionTab__DelegateSignature();
+	void BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_1_OnClickedModelTab__DelegateSignature();
+	void BndEvt__WBP_Paldex_ForDisplay_WBP_Paldex_K2Node_ComponentBoundEvent_0_OnClickedFilteringButton__DelegateSignature();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

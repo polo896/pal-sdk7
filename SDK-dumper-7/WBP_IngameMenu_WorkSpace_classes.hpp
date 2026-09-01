@@ -96,45 +96,45 @@ public:
 	class FName                                   FirstRecipeID;                                     // 0x07A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_InGameMainMenu_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void BndEvt__WBP_IngameMenu_WorkSpace_CommonTileView_146_K2Node_ComponentBoundEvent_6_OnListEntryInitializedDynamic__DelegateSignature(class UObject* Item, class UUserWidget* Widget);
-	void BndEvt__WBP_IngameMenu_WorkSpace_CommonTileView_146_K2Node_ComponentBoundEvent_9_OnListEntryReleasedDynamic__DelegateSignature(class UUserWidget* Widget);
-	void BndEvt__WBP_IngameMenu_WorkSpace_PalEditableTextBox_Search_K2Node_ComponentBoundEvent_4_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
-	void BndEvt__WBP_IngameMenu_WorkSpace_WBP_IngameCommonSelectNum_K2Node_ComponentBoundEvent_5_OnUpdateNum__DelegateSignature(int64 Num);
-	void BndEvt__WBP_IngameMenu_WorkSpace_WBP_IngameMenu_StartButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
-	void BndEvt__WBP_IngameMenu_WorkSpace_WBP_IngameMenu_WorkSpace_TabSet_K2Node_ComponentBoundEvent_1_OnChangedFocusIndex__DelegateSignature(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
-	void BndEvt__WBP_IngameMenu_WorkSpace_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_IngameMenu_WorkSpace_WBP_PalInvisibleButton_TransportCheck_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_IngameMenu_WorkSpace(int32 EntryPoint);
-	void FilteringRecipe(TArray<class FName>& RecipeIDArray, TArray<class FName>* FilteredArray);
-	void FilterSkillUnlocker(TArray<class FName>& Recipes, class FName WorkBenchId, TArray<class FName>* FilteredRecipes);
-	void Initialize_Entry_Data(TArray<class FName>& RecipeIds);
-	void InputMethodChanged(ECommonInputType InputType);
-	void IsMatchItemName(class FName ItemId, bool* bIsMatch);
-	void IsSelectingProductNum(bool* IsSelecting);
-	void OnCancelInput();
-	void OnChangedCategory(class UWBP_IngameMenu_WorkSpace_Category_C* TabWidget);
-	void OnClickedRecipeSlot(class UWBP_PalConvertItemMenu_RecipeSlotButton_C* Slot_0);
-	void OnHoveredRecipeSlot(class UWBP_PalConvertItemMenu_RecipeSlotButton_C* Slot_0);
-	void OnInputAction_NextCategory();
-	void OnInputAction_PrevCategory();
-	void OnSetup();
-	void OnUnhoveredRecipeSlot(class UWBP_PalConvertItemMenu_RecipeSlotButton_C* Slot_0);
-	void OnUpdateCanTransportOut(bool bOn);
-	void RefleshFIltering();
-	void RegisterChangeCategoryInputAction();
-	void SetMaxProductCount();
-	void Setup();
-	void StartProduce();
-	void ToggleCanTransportOut();
-	void Update_Recipe_Detail();
 	void WBP_IngameMenu_WorkSpace_AutoGenFunc();
+	void Update_Recipe_Detail();
+	void ToggleCanTransportOut();
+	void StartProduce();
+	void Setup();
+	void SetMaxProductCount();
+	void RegisterChangeCategoryInputAction();
+	void RefleshFIltering();
+	void OnUpdateCanTransportOut(bool bOn);
+	void OnUnhoveredRecipeSlot(class UWBP_PalConvertItemMenu_RecipeSlotButton_C* Slot_0);
+	void OnSetup();
+	void OnInputAction_PrevCategory();
+	void OnInputAction_NextCategory();
+	void OnHoveredRecipeSlot(class UWBP_PalConvertItemMenu_RecipeSlotButton_C* Slot_0);
+	void OnClickedRecipeSlot(class UWBP_PalConvertItemMenu_RecipeSlotButton_C* Slot_0);
+	void OnChangedCategory(class UWBP_IngameMenu_WorkSpace_Category_C* TabWidget);
+	void OnCancelInput();
+	void IsSelectingProductNum(bool* IsSelecting);
+	void IsMatchItemName(class FName ItemId, bool* bIsMatch);
+	void InputMethodChanged(ECommonInputType InputType);
+	void Initialize_Entry_Data(TArray<class FName>& RecipeIds);
+	void FilterSkillUnlocker(TArray<class FName>& Recipes, class FName WorkBenchId, TArray<class FName>* FilteredRecipes);
+	void FilteringRecipe(TArray<class FName>& RecipeIDArray, TArray<class FName>* FilteredArray);
+	void ExecuteUbergraph_WBP_IngameMenu_WorkSpace(int32 EntryPoint);
+	void Destruct();
+	void Construct();
+	void BndEvt__WBP_IngameMenu_WorkSpace_WBP_PalInvisibleButton_TransportCheck_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_IngameMenu_WorkSpace_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_IngameMenu_WorkSpace_WBP_IngameMenu_WorkSpace_TabSet_K2Node_ComponentBoundEvent_1_OnChangedFocusIndex__DelegateSignature(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
+	void BndEvt__WBP_IngameMenu_WorkSpace_WBP_IngameMenu_StartButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
+	void BndEvt__WBP_IngameMenu_WorkSpace_WBP_IngameCommonSelectNum_K2Node_ComponentBoundEvent_5_OnUpdateNum__DelegateSignature(int64 Num);
+	void BndEvt__WBP_IngameMenu_WorkSpace_PalEditableTextBox_Search_K2Node_ComponentBoundEvent_4_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
+	void BndEvt__WBP_IngameMenu_WorkSpace_CommonTileView_146_K2Node_ComponentBoundEvent_9_OnListEntryReleasedDynamic__DelegateSignature(class UUserWidget* Widget);
+	void BndEvt__WBP_IngameMenu_WorkSpace_CommonTileView_146_K2Node_ComponentBoundEvent_6_OnListEntryInitializedDynamic__DelegateSignature(class UObject* Item, class UUserWidget* Widget);
+	void BndEvt__WBP_InGameMainMenu_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
 
-	class UWidget* BP_GetDesiredFocusTarget() const;
-	void EntryToWidget(class UObject* EntryObject, class UWBP_PalConvertItemMenu_RecipeSlotButton_C** Widget) const;
 	void GetLastHoveredFocusTarget(class UWidget** Widget) const;
+	void EntryToWidget(class UObject* EntryObject, class UWBP_PalConvertItemMenu_RecipeSlotButton_C** Widget) const;
+	class UWidget* BP_GetDesiredFocusTarget() const;
 
 public:
 	static class UClass* StaticClass()

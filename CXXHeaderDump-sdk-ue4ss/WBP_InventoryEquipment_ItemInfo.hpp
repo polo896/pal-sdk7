@@ -78,8 +78,8 @@ class UWBP_InventoryEquipment_ItemInfo_C : public UPalUserWidget
     class UWBP_ShopSellPrice_C* WBP_ShopSellPrice;                                    // 0x0690 (size: 0x8)
     TEnumAsByte<E_PalUIItemInfoWindowDIsplayType::Type> NowDisplayType;               // 0x0698 (size: 0x1)
     TEnumAsByte<E_PalUIItemInfoWindowDIsplayType::Type> DefaultDisplayType;           // 0x0699 (size: 0x1)
-    TMap<class EPalItemTypeA, class FDataTableRowHandle> MainParamMsgIDMap;           // 0x06A0 (size: 0x50)
-    TMap<class EPalItemTypeA, class FDataTableRowHandle> SubParamMsgIDMap;            // 0x06F0 (size: 0x50)
+    TMap<EPalItemTypeA, FDataTableRowHandle> MainParamMsgIDMap;                       // 0x06A0 (size: 0x50)
+    TMap<EPalItemTypeA, FDataTableRowHandle> SubParamMsgIDMap;                        // 0x06F0 (size: 0x50)
     FDataTableRowHandle MainParamShieldOverrideMsgID;                                 // 0x0740 (size: 0x10)
     FPalDataTableRowName_UIInputAction UseItem;                                       // 0x0750 (size: 0x8)
     FPalUICommonItemInfoDisplayData CachedDisplayInfo;                                // 0x0758 (size: 0xC8)
@@ -93,13 +93,13 @@ class UWBP_InventoryEquipment_ItemInfo_C : public UPalUserWidget
     TArray<FDataTableRowHandle> RarityMsgIDs;                                         // 0x0890 (size: 0x10)
     bool IsBossTechPoint;                                                             // 0x08A0 (size: 0x1)
     FDataTableRowHandle NormalMsgId;                                                  // 0x08A8 (size: 0x10)
-    TArray<class UWBP_InventoryEquipment_ItemInfo_addeffect_C*> AdditionalInfoArray;  // 0x08B8 (size: 0x10)
+    TArray<UWBP_InventoryEquipment_ItemInfo_addeffect_C*> AdditionalInfoArray;        // 0x08B8 (size: 0x10)
     FWBP_InventoryEquipment_ItemInfo_COnDisplaySlotEmpty OnDisplaySlotEmpty;          // 0x08C8 (size: 0x10)
     void OnDisplaySlotEmpty();
     FDataTableRowHandle DefaultMsgID_Use;                                             // 0x08D8 (size: 0x10)
-    TMap<class EPalItemTypeA, class FDataTableRowHandle> UseMsgIDMap_TypeA;           // 0x08E8 (size: 0x50)
-    TMap<class EPalItemTypeB, class FDataTableRowHandle> UseMsgIDMap_TypeB;           // 0x0938 (size: 0x50)
-    TMap<class FPalDataTableRowName_ItemData, class FDataTableRowHandle> UseMsgIDMap_StaticItemID; // 0x0988 (size: 0x50)
+    TMap<EPalItemTypeA, FDataTableRowHandle> UseMsgIDMap_TypeA;                       // 0x08E8 (size: 0x50)
+    TMap<EPalItemTypeB, FDataTableRowHandle> UseMsgIDMap_TypeB;                       // 0x0938 (size: 0x50)
+    TMap<FPalDataTableRowName_ItemData, FDataTableRowHandle> UseMsgIDMap_StaticItemID; // 0x0988 (size: 0x50)
 
     void SetupQuickMoveKeyGuide();
     void GetItemUseText(FName StaticItemId, FText& OutItemUseText);

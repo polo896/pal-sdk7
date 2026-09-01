@@ -56,17 +56,17 @@ public:
 	int32                                         Time_Limit;                                        // 0x0388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Focus();
-	void AnmEvent_Normal();
-	void BndEvt__WBP_Arena_Spectate_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Arena_Spectate_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Arena_Spectate_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_Arena_Spectate_List(int32 EntryPoint);
-	void OnInitialized();
-	void Setup(const struct FPalArenaSpectateRoomInfo& RoomInfo);
 	void UpdateTimer();
+	void Setup(const struct FPalArenaSpectateRoomInfo& RoomInfo);
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_Arena_Spectate_List(int32 EntryPoint);
+	void Destruct();
+	void Construct();
+	void BndEvt__WBP_Arena_Spectate_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Arena_Spectate_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Arena_Spectate_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void AnmEvent_Normal();
+	void AnmEvent_Focus();
 
 public:
 	static class UClass* StaticClass()

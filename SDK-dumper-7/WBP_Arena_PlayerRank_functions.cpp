@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function WBP_Arena_PlayerRank.WBP_Arena_PlayerRank_C.Setup
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Arena_PlayerRank_C::Setup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_PlayerRank_C", "Setup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_Arena_PlayerRank.WBP_Arena_PlayerRank_C.OnUpdateRankPoint
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -36,20 +50,6 @@ void UWBP_Arena_PlayerRank_C::OnUpdateRankPoint(class UPalIndividualCharacterPar
 	Parms.Point = Point;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Arena_PlayerRank.WBP_Arena_PlayerRank_C.Setup
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_PlayerRank_C::Setup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PlayerRank_C", "Setup");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

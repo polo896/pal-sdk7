@@ -26,10 +26,10 @@ public:
 	class UNiagaraComponent*                      Effect;                                            // 0x0058(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_CoopSkill_StatusUp_Anubis(int32 EntryPoint);
-	void OnSkillOverheat();
-	void OnStartSkill();
 	void OnTick(float DeltaTime);
+	void OnStartSkill();
+	void OnSkillOverheat();
+	void ExecuteUbergraph_BP_CoopSkill_StatusUp_Anubis(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -33,12 +33,12 @@ public:
 	TMulticastInlineDelegate<void(class UWBP_InventoryEquipment_InventoryTabButton_C* Button)> OnClicked; // 0x02C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void AnmEvent_Focus();
-	void AnmEvent_Normal();
-	void BndEvt__WBP_InventoryEquipment_InventoryTabButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void Construct();
-	void ExecuteUbergraph_WBP_InventoryEquipment_InventoryTabButton(int32 EntryPoint);
 	void OnInitialized();
+	void ExecuteUbergraph_WBP_InventoryEquipment_InventoryTabButton(int32 EntryPoint);
+	void Construct();
+	void BndEvt__WBP_InventoryEquipment_InventoryTabButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void AnmEvent_Normal();
+	void AnmEvent_Focus();
 
 public:
 	static class UClass* StaticClass()

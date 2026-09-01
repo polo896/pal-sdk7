@@ -20,83 +20,91 @@
 namespace SDK::Params
 {
 
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.DecreaseSpectateMoveSpeed
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.SpectatePrevPlayer
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_PalSpectatorHUD_C_DecreaseSpectateMoveSpeed final
+struct WBP_PalSpectatorHUD_C_SpectatePrevPlayer final
 {
 public:
 	class APalPlayerController*                   CallFunc_GetLocalPalPlayerController_ReturnValue;  // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalSpectatorHUD_C_DecreaseSpectateMoveSpeed;
+DUMPER7_ASSERTS_WBP_PalSpectatorHUD_C_SpectatePrevPlayer;
 
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.EndSpectate
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.SpectateNextPlayer
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_PalSpectatorHUD_C_EndSpectate final
+struct WBP_PalSpectatorHUD_C_SpectateNextPlayer final
 {
 public:
 	class APalPlayerController*                   CallFunc_GetLocalPalPlayerController_ReturnValue;  // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalSpectatorHUD_C_EndSpectate;
+DUMPER7_ASSERTS_WBP_PalSpectatorHUD_C_SpectateNextPlayer;
 
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.ExecuteUbergraph_WBP_PalSpectatorHUD
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_PalSpectatorHUD_C_ExecuteUbergraph_WBP_PalSpectatorHUD final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0020(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_1;        // 0x0030(0x0008)(NoDestructor, HasGetValueTypeHash)
-	class APalPlayerController*                   CallFunc_GetLocalPalPlayerController_ReturnValue;  // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const class FString& PlayerName, const class FString& NickName, const class FString& PlayerUId, const class FString& UserId)> K2Node_CreateDelegate_OutputDelegate_2; // 0x0040(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalSpectatorHUD_C_ExecuteUbergraph_WBP_PalSpectatorHUD;
-
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.IncreaseSpectateMoveSpeed
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.SpectateFreely
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_PalSpectatorHUD_C_IncreaseSpectateMoveSpeed final
+struct WBP_PalSpectatorHUD_C_SpectateFreely final
 {
 public:
 	class APalPlayerController*                   CallFunc_GetLocalPalPlayerController_ReturnValue;  // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalSpectatorHUD_C_IncreaseSpectateMoveSpeed;
+DUMPER7_ASSERTS_WBP_PalSpectatorHUD_C_SpectateFreely;
 
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.OnSpectateNextPlayer
-// 0x00B8 (0x00B8 - 0x0000)
-struct WBP_PalSpectatorHUD_C_OnSpectateNextPlayer final
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.SetViewportWidgetsVisiblity
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_PalSpectatorHUD_C_SetViewportWidgetsVisiblity final
 {
 public:
-	class FString                                 PlayerName;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 NickName;                                          // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 PlayerUId;                                         // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 UserId;                                            // 0x0030(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0060(0x0018)()
-	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0080(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x0090(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x00A0(0x0018)()
+	ESlateVisibility                              Visibility_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UUserWidget*>                    CallFunc_GetAllWidgetsOfClass_FoundWidgets;        // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUserWidget*                            CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ObjectIsA_ReturnValue;                    // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalSpectatorHUD_C_OnSpectateNextPlayer;
+DUMPER7_ASSERTS_WBP_PalSpectatorHUD_C_SetViewportWidgetsVisiblity;
 
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.OpenMenu
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_PalSpectatorHUD_C_OpenMenu final
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.SetUILayerVisibility
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_PalSpectatorHUD_C_SetUILayerVisibility final
 {
 public:
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBP_InGameMainMenuParameter_C*          CallFunc_SpawnObject_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  CallFunc_Push_ReturnValue;                         // 0x0010(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsHide;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTag                           LayerTagName;                                      // 0x0004(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 CallFunc_GetObjectClass_ReturnValue;               // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetClassDisplayName_ReturnValue;          // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalSpectatorHUD_C_OpenMenu;
+DUMPER7_ASSERTS_WBP_PalSpectatorHUD_C_SetUILayerVisibility;
+
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.SetHUDVisible
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_PalSpectatorHUD_C_SetHUDVisible final
+{
+public:
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalSpectatorHUD_C_SetHUDVisible;
+
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.RequestOpenChat
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PalSpectatorHUD_C_RequestOpenChat final
+{
+public:
+	class APalPlayerController*                   CallFunc_GetLocalPalPlayerController_ReturnValue;  // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalSpectatorHUD_C_RequestOpenChat;
 
 // Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.RegisterInputActions
 // 0x0100 (0x0100 - 0x0000)
@@ -136,91 +144,83 @@ public:
 };
 DUMPER7_ASSERTS_WBP_PalSpectatorHUD_C_RegisterInputActions;
 
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.RequestOpenChat
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.OpenMenu
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_PalSpectatorHUD_C_OpenMenu final
+{
+public:
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UBP_InGameMainMenuParameter_C*          CallFunc_SpawnObject_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  CallFunc_Push_ReturnValue;                         // 0x0010(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalSpectatorHUD_C_OpenMenu;
+
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.OnSpectateNextPlayer
+// 0x00B8 (0x00B8 - 0x0000)
+struct WBP_PalSpectatorHUD_C_OnSpectateNextPlayer final
+{
+public:
+	class FString                                 PlayerName;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 NickName;                                          // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 PlayerUId;                                         // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 UserId;                                            // 0x0030(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0060(0x0018)()
+	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0080(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x0090(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x00A0(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_PalSpectatorHUD_C_OnSpectateNextPlayer;
+
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.IncreaseSpectateMoveSpeed
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_PalSpectatorHUD_C_RequestOpenChat final
+struct WBP_PalSpectatorHUD_C_IncreaseSpectateMoveSpeed final
 {
 public:
 	class APalPlayerController*                   CallFunc_GetLocalPalPlayerController_ReturnValue;  // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalSpectatorHUD_C_RequestOpenChat;
+DUMPER7_ASSERTS_WBP_PalSpectatorHUD_C_IncreaseSpectateMoveSpeed;
 
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.SetHUDVisible
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_PalSpectatorHUD_C_SetHUDVisible final
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.ExecuteUbergraph_WBP_PalSpectatorHUD
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_PalSpectatorHUD_C_ExecuteUbergraph_WBP_PalSpectatorHUD final
 {
 public:
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0020(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_1;        // 0x0030(0x0008)(NoDestructor, HasGetValueTypeHash)
+	class APalPlayerController*                   CallFunc_GetLocalPalPlayerController_ReturnValue;  // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const class FString& PlayerName, const class FString& NickName, const class FString& PlayerUId, const class FString& UserId)> K2Node_CreateDelegate_OutputDelegate_2; // 0x0040(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalSpectatorHUD_C_SetHUDVisible;
+DUMPER7_ASSERTS_WBP_PalSpectatorHUD_C_ExecuteUbergraph_WBP_PalSpectatorHUD;
 
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.SetUILayerVisibility
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_PalSpectatorHUD_C_SetUILayerVisibility final
-{
-public:
-	bool                                          bIsHide;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTag                           LayerTagName;                                      // 0x0004(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 CallFunc_GetObjectClass_ReturnValue;               // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetClassDisplayName_ReturnValue;          // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalSpectatorHUD_C_SetUILayerVisibility;
-
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.SetViewportWidgetsVisiblity
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_PalSpectatorHUD_C_SetViewportWidgetsVisiblity final
-{
-public:
-	ESlateVisibility                              Visibility_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UUserWidget*>                    CallFunc_GetAllWidgetsOfClass_FoundWidgets;        // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUserWidget*                            CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ObjectIsA_ReturnValue;                    // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalSpectatorHUD_C_SetViewportWidgetsVisiblity;
-
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.SpectateFreely
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.EndSpectate
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_PalSpectatorHUD_C_SpectateFreely final
+struct WBP_PalSpectatorHUD_C_EndSpectate final
 {
 public:
 	class APalPlayerController*                   CallFunc_GetLocalPalPlayerController_ReturnValue;  // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalSpectatorHUD_C_SpectateFreely;
+DUMPER7_ASSERTS_WBP_PalSpectatorHUD_C_EndSpectate;
 
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.SpectateNextPlayer
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.DecreaseSpectateMoveSpeed
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_PalSpectatorHUD_C_SpectateNextPlayer final
+struct WBP_PalSpectatorHUD_C_DecreaseSpectateMoveSpeed final
 {
 public:
 	class APalPlayerController*                   CallFunc_GetLocalPalPlayerController_ReturnValue;  // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalSpectatorHUD_C_SpectateNextPlayer;
-
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.SpectatePrevPlayer
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PalSpectatorHUD_C_SpectatePrevPlayer final
-{
-public:
-	class APalPlayerController*                   CallFunc_GetLocalPalPlayerController_ReturnValue;  // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalSpectatorHUD_C_SpectatePrevPlayer;
+DUMPER7_ASSERTS_WBP_PalSpectatorHUD_C_DecreaseSpectateMoveSpeed;
 
 }
 

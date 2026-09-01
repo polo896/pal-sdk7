@@ -3,6 +3,6 @@
 
 class ABP_PalSkyCreator_C : public APalSkyCreator
 {
-}; // Size: 0x1188
+}; // Size: 0x1198
 
 #endif

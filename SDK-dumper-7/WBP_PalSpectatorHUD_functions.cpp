@@ -17,119 +17,169 @@
 namespace SDK
 {
 
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.DecreaseSpectateMoveSpeed
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalSpectatorHUD_C::DecreaseSpectateMoveSpeed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "DecreaseSpectateMoveSpeed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.DelayedSetup
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.UpdateViewPortWidgetsVisibility
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalSpectatorHUD_C::DelayedSetup()
+void UWBP_PalSpectatorHUD_C::UpdateViewPortWidgetsVisibility()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "DelayedSetup");
+		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "UpdateViewPortWidgetsVisibility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.DoNothing
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.UnRegisterInputActions
 // (Private, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalSpectatorHUD_C::DoNothing()
+void UWBP_PalSpectatorHUD_C::UnRegisterInputActions()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "DoNothing");
+		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "UnRegisterInputActions");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.EndSpectate
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.SpectatePrevPlayer
 // (Private, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalSpectatorHUD_C::EndSpectate()
+void UWBP_PalSpectatorHUD_C::SpectatePrevPlayer()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "EndSpectate");
+		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "SpectatePrevPlayer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.ExecuteUbergraph_WBP_PalSpectatorHUD
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.SpectateNextPlayer
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalSpectatorHUD_C::SpectateNextPlayer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "SpectateNextPlayer");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.SpectateFreely
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalSpectatorHUD_C::SpectateFreely()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "SpectateFreely");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.SetViewportWidgetsVisiblity
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESlateVisibility                        Visibility_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalSpectatorHUD_C::ExecuteUbergraph_WBP_PalSpectatorHUD(int32 EntryPoint)
+void UWBP_PalSpectatorHUD_C::SetViewportWidgetsVisiblity(ESlateVisibility Visibility_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "ExecuteUbergraph_WBP_PalSpectatorHUD");
+		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "SetViewportWidgetsVisiblity");
 
-	Params::WBP_PalSpectatorHUD_C_ExecuteUbergraph_WBP_PalSpectatorHUD Parms{};
+	Params::WBP_PalSpectatorHUD_C_SetViewportWidgetsVisiblity Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Visibility_0 = Visibility_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.IncreaseSpectateMoveSpeed
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.SetUILayerVisibility
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsHide                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              LayerTagName                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalSpectatorHUD_C::SetUILayerVisibility(bool bIsHide, const struct FGameplayTag& LayerTagName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "SetUILayerVisibility");
+
+	Params::WBP_PalSpectatorHUD_C_SetUILayerVisibility Parms{};
+
+	Parms.bIsHide = bIsHide;
+	Parms.LayerTagName = std::move(LayerTagName);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.SetHUDVisible
 // (Private, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalSpectatorHUD_C::IncreaseSpectateMoveSpeed()
+void UWBP_PalSpectatorHUD_C::SetHUDVisible()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "IncreaseSpectateMoveSpeed");
+		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "SetHUDVisible");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.OnClosed
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.RequestOpenChat
+// (Private, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalSpectatorHUD_C::OnClosed()
+void UWBP_PalSpectatorHUD_C::RequestOpenChat()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "OnClosed");
+		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "RequestOpenChat");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.RegisterInputActions
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalSpectatorHUD_C::OnSetup()
+void UWBP_PalSpectatorHUD_C::RegisterInputActions()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "OnSetup");
+		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "RegisterInputActions");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.OpenMenu
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalSpectatorHUD_C::OpenMenu()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "OpenMenu");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -161,169 +211,119 @@ void UWBP_PalSpectatorHUD_C::OnSpectateNextPlayer(const class FString& PlayerNam
 }
 
 
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.OpenMenu
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalSpectatorHUD_C::OpenMenu()
+void UWBP_PalSpectatorHUD_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "OpenMenu");
+		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.RegisterInputActions
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.OnClosed
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalSpectatorHUD_C::RegisterInputActions()
+void UWBP_PalSpectatorHUD_C::OnClosed()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "RegisterInputActions");
+		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "OnClosed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.RequestOpenChat
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.IncreaseSpectateMoveSpeed
 // (Private, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalSpectatorHUD_C::RequestOpenChat()
+void UWBP_PalSpectatorHUD_C::IncreaseSpectateMoveSpeed()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "RequestOpenChat");
+		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "IncreaseSpectateMoveSpeed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.SetHUDVisible
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalSpectatorHUD_C::SetHUDVisible()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "SetHUDVisible");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.SetUILayerVisibility
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.ExecuteUbergraph_WBP_PalSpectatorHUD
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// bool                                    bIsHide                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayTag&              LayerTagName                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalSpectatorHUD_C::SetUILayerVisibility(bool bIsHide, const struct FGameplayTag& LayerTagName)
+void UWBP_PalSpectatorHUD_C::ExecuteUbergraph_WBP_PalSpectatorHUD(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "SetUILayerVisibility");
+		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "ExecuteUbergraph_WBP_PalSpectatorHUD");
 
-	Params::WBP_PalSpectatorHUD_C_SetUILayerVisibility Parms{};
+	Params::WBP_PalSpectatorHUD_C_ExecuteUbergraph_WBP_PalSpectatorHUD Parms{};
 
-	Parms.bIsHide = bIsHide;
-	Parms.LayerTagName = std::move(LayerTagName);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.SetViewportWidgetsVisiblity
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESlateVisibility                        Visibility_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalSpectatorHUD_C::SetViewportWidgetsVisiblity(ESlateVisibility Visibility_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "SetViewportWidgetsVisiblity");
-
-	Params::WBP_PalSpectatorHUD_C_SetViewportWidgetsVisiblity Parms{};
-
-	Parms.Visibility_0 = Visibility_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.SpectateFreely
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.EndSpectate
 // (Private, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalSpectatorHUD_C::SpectateFreely()
+void UWBP_PalSpectatorHUD_C::EndSpectate()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "SpectateFreely");
+		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "EndSpectate");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.SpectateNextPlayer
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.DoNothing
 // (Private, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalSpectatorHUD_C::SpectateNextPlayer()
+void UWBP_PalSpectatorHUD_C::DoNothing()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "SpectateNextPlayer");
+		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "DoNothing");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.SpectatePrevPlayer
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalSpectatorHUD_C::SpectatePrevPlayer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "SpectatePrevPlayer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.UnRegisterInputActions
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalSpectatorHUD_C::UnRegisterInputActions()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "UnRegisterInputActions");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.UpdateViewPortWidgetsVisibility
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.DelayedSetup
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalSpectatorHUD_C::UpdateViewPortWidgetsVisibility()
+void UWBP_PalSpectatorHUD_C::DelayedSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "UpdateViewPortWidgetsVisibility");
+		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "DelayedSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalSpectatorHUD.WBP_PalSpectatorHUD_C.DecreaseSpectateMoveSpeed
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalSpectatorHUD_C::DecreaseSpectateMoveSpeed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalSpectatorHUD_C", "DecreaseSpectateMoveSpeed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

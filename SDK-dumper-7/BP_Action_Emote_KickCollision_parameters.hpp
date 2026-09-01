@@ -17,19 +17,6 @@
 namespace SDK::Params
 {
 
-// Function BP_Action_Emote_KickCollision.BP_Action_Emote_KickCollision_C.BndEvt__BP_Action_Emote_KickCollision_Sphere_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature
-// 0x0118 (0x0118 - 0x0000)
-struct BP_Action_Emote_KickCollision_C_BndEvt__BP_Action_Emote_KickCollision_Sphere_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature final
-{
-public:
-	class UPrimitiveComponent*                    HitComponent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                NormalImpulse;                                     // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Hit_0;                                             // 0x0030(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-DUMPER7_ASSERTS_BP_Action_Emote_KickCollision_C_BndEvt__BP_Action_Emote_KickCollision_Sphere_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature;
-
 // Function BP_Action_Emote_KickCollision.BP_Action_Emote_KickCollision_C.ExecuteUbergraph_BP_Action_Emote_KickCollision
 // 0x04E0 (0x04E0 - 0x0000)
 struct BP_Action_Emote_KickCollision_C_ExecuteUbergraph_BP_Action_Emote_KickCollision final
@@ -141,6 +128,19 @@ public:
 	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue;        // 0x04D8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_Action_Emote_KickCollision_C_ExecuteUbergraph_BP_Action_Emote_KickCollision;
+
+// Function BP_Action_Emote_KickCollision.BP_Action_Emote_KickCollision_C.BndEvt__BP_Action_Emote_KickCollision_Sphere_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature
+// 0x0118 (0x0118 - 0x0000)
+struct BP_Action_Emote_KickCollision_C_BndEvt__BP_Action_Emote_KickCollision_Sphere_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature final
+{
+public:
+	class UPrimitiveComponent*                    HitComponent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                NormalImpulse;                                     // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Hit_0;                                             // 0x0030(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_BP_Action_Emote_KickCollision_C_BndEvt__BP_Action_Emote_KickCollision_Sphere_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature;
 
 }
 

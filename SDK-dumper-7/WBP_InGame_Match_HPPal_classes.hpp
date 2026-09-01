@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "WBP_IndividualParameterBindWidget_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -34,12 +34,12 @@ public:
 
 public:
 	void BindFromHandle(class UPalIndividualCharacterHandle* targetHandle);
-	void CheckState(double HPPercent, bool IsDead);
-	void ExecuteUbergraph_WBP_InGame_Match_HPPal(int32 EntryPoint);
-	void On_Update_HP_Binded(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& nowMaxHP);
-	void OnInitialized();
-	void SetIsRival(bool IsRival);
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void SetIsRival(bool IsRival);
+	void OnInitialized();
+	void On_Update_HP_Binded(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& nowMaxHP);
+	void ExecuteUbergraph_WBP_InGame_Match_HPPal(int32 EntryPoint);
+	void CheckState(double HPPercent, bool IsDead);
 
 public:
 	static class UClass* StaticClass()

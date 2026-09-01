@@ -37,17 +37,17 @@ public:
 	class UCurveLinearColor*                      ColorCurve;                                        // 0x02E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_AllStop();
-	void AnmEvent_Fail();
-	void AnmEvent_In();
-	void AnmEvent_Loop();
-	void AnmEvent_Out();
-	void ExecuteUbergraph_WBP_Fishing_ProgressGauge(int32 EntryPoint);
-	void Finished_93F8C31949571C5C977F44ADBF602673();
-	void OnInitialized();
-	void SetProgressRate(double CurrentRate);
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void UpdateDisplayRate(double DeltaTime);
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void SetProgressRate(double CurrentRate);
+	void OnInitialized();
+	void Finished_93F8C31949571C5C977F44ADBF602673();
+	void ExecuteUbergraph_WBP_Fishing_ProgressGauge(int32 EntryPoint);
+	void AnmEvent_Out();
+	void AnmEvent_Loop();
+	void AnmEvent_In();
+	void AnmEvent_Fail();
+	void AnmEvent_AllStop();
 
 public:
 	static class UClass* StaticClass()

@@ -30,13 +30,13 @@ public:
 	class FName                                   Respawn_Point_ID;                                  // 0x0560(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Setup_Internal(class UPalLocationPoint* LocationPoint);
-	void OnInitialized();
-	void GetInvisibleButton(class UWidget** Button);
-	void ExecuteUbergraph_WBP_WorldMap_Icon_Respawn(int32 EntryPoint);
-	void BndEvt__WBP_WorldMap_Icon_Respawn_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_WorldMap_Icon_Respawn_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 	void BndEvt__WBP_WorldMap_Icon_Respawn_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_WorldMap_Icon_Respawn_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_WorldMap_Icon_Respawn_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void ExecuteUbergraph_WBP_WorldMap_Icon_Respawn(int32 EntryPoint);
+	void GetInvisibleButton(class UWidget** Button);
+	void OnInitialized();
+	void Setup_Internal(class UPalLocationPoint* LocationPoint);
 
 public:
 	static class UClass* StaticClass()

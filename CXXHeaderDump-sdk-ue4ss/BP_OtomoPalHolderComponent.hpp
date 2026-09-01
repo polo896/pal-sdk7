@@ -15,7 +15,7 @@ class UBP_OtomoPalHolderComponent_C : public UPalOtomoHolderComponentBase
     FBP_OtomoPalHolderComponent_COnInactiveOtomoEvent OnInactiveOtomoEvent;           // 0x02D8 (size: 0x10)
     void OnInactiveOtomoEvent();
     class UPalIndividualCharacterHandle* ActivatedHandle;                             // 0x02E8 (size: 0x8)
-    TArray<class APalCharacter*> ReservePalLocationList;                              // 0x02F0 (size: 0x10)
+    TArray<APalCharacter*> ReservePalLocationList;                                    // 0x02F0 (size: 0x10)
     bool OtomoDespawnable;                                                            // 0x0300 (size: 0x1)
     bool DisableOtomoCollision;                                                       // 0x0301 (size: 0x1)
     int32 NewVar;                                                                     // 0x0304 (size: 0x4)

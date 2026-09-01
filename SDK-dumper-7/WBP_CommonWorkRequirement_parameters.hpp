@@ -16,6 +16,18 @@
 namespace SDK::Params
 {
 
+// Function WBP_CommonWorkRequirement.WBP_CommonWorkRequirement_C.On Updated Worker Pal
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_CommonWorkRequirement_C_On_Updated_Worker_Pal final
+{
+public:
+	class UPalWorkBase*                           Work;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          HasAssign;                                         // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData> CallFunc_GetWorkSuitabilityDisplayData_OutDisplayData; // 0x0010(0x0010)(ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_CommonWorkRequirement_C_On_Updated_Worker_Pal;
+
 // Function WBP_CommonWorkRequirement.WBP_CommonWorkRequirement_C.ExecuteUbergraph_WBP_CommonWorkRequirement
 // 0x0080 (0x0080 - 0x0000)
 struct WBP_CommonWorkRequirement_C_ExecuteUbergraph_WBP_CommonWorkRequirement final
@@ -43,18 +55,6 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_CommonWorkRequirement_C_ExecuteUbergraph_WBP_CommonWorkRequirement;
-
-// Function WBP_CommonWorkRequirement.WBP_CommonWorkRequirement_C.On Updated Worker Pal
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_CommonWorkRequirement_C_On_Updated_Worker_Pal final
-{
-public:
-	class UPalWorkBase*                           Work;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          HasAssign;                                         // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData> CallFunc_GetWorkSuitabilityDisplayData_OutDisplayData; // 0x0010(0x0010)(ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_CommonWorkRequirement_C_On_Updated_Worker_Pal;
 
 }
 

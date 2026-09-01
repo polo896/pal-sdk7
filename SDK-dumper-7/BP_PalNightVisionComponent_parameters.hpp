@@ -14,6 +14,15 @@
 namespace SDK::Params
 {
 
+// Function BP_PalNightVisionComponent.BP_PalNightVisionComponent_C.SetNightVisionEnabled_ForServer
+// 0x0001 (0x0001 - 0x0000)
+struct BP_PalNightVisionComponent_C_SetNightVisionEnabled_ForServer final
+{
+public:
+	bool                                          bEnable;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalNightVisionComponent_C_SetNightVisionEnabled_ForServer;
+
 // Function BP_PalNightVisionComponent.BP_PalNightVisionComponent_C.ExecuteUbergraph_BP_PalNightVisionComponent
 // 0x0040 (0x0040 - 0x0000)
 struct BP_PalNightVisionComponent_C_ExecuteUbergraph_BP_PalNightVisionComponent final
@@ -31,15 +40,6 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_PalNightVisionComponent_C_ExecuteUbergraph_BP_PalNightVisionComponent;
-
-// Function BP_PalNightVisionComponent.BP_PalNightVisionComponent_C.SetNightVisionEnabled_ForServer
-// 0x0001 (0x0001 - 0x0000)
-struct BP_PalNightVisionComponent_C_SetNightVisionEnabled_ForServer final
-{
-public:
-	bool                                          bEnable;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalNightVisionComponent_C_SetNightVisionEnabled_ForServer;
 
 }
 

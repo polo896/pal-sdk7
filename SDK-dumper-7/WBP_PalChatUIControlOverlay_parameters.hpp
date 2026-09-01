@@ -17,14 +17,28 @@
 namespace SDK::Params
 {
 
-// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.ChangeChatCategory
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_PalChatUIControlOverlay_C_ChangeChatCategory final
+// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.SendChat
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_PalChatUIControlOverlay_C_SendChat final
 {
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0008(0x0018)()
 };
-DUMPER7_ASSERTS_WBP_PalChatUIControlOverlay_C_ChangeChatCategory;
+DUMPER7_ASSERTS_WBP_PalChatUIControlOverlay_C_SendChat;
+
+// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.OnCancel_ForPad
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PalChatUIControlOverlay_C_OnCancel_ForPad final
+{
+public:
+	class UCommonInputSubsystem*                  CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalChatUIControlOverlay_C_OnCancel_ForPad;
 
 // Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.ExecuteUbergraph_WBP_PalChatUIControlOverlay
 // 0x00A8 (0x00A8 - 0x0000)
@@ -56,28 +70,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_PalChatUIControlOverlay_C_ExecuteUbergraph_WBP_PalChatUIControlOverlay;
 
-// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.OnCancel_ForPad
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PalChatUIControlOverlay_C_OnCancel_ForPad final
-{
-public:
-	class UCommonInputSubsystem*                  CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalChatUIControlOverlay_C_OnCancel_ForPad;
-
-// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.SendChat
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_PalChatUIControlOverlay_C_SendChat final
+// Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.ChangeChatCategory
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_PalChatUIControlOverlay_C_ChangeChatCategory final
 {
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0008(0x0018)()
 };
-DUMPER7_ASSERTS_WBP_PalChatUIControlOverlay_C_SendChat;
+DUMPER7_ASSERTS_WBP_PalChatUIControlOverlay_C_ChangeChatCategory;
 
 // Function WBP_PalChatUIControlOverlay.WBP_PalChatUIControlOverlay_C.BP_GetDesiredFocusTarget
 // 0x0010 (0x0010 - 0x0000)

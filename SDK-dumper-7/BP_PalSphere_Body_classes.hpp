@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "EPalCaptureSphereState_structs.hpp"
-#include "BP_PalCaptureBodyBase_classes.hpp"
 #include "E_PalCaptureSphereBouncedReason_structs.hpp"
-#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
+#include "BP_PalCaptureBodyBase_classes.hpp"
 
 
 namespace SDK
@@ -60,41 +60,41 @@ public:
 	class UNiagaraSystem*                         CriticalEffect;                                    // 0x0480(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BallShakeTick(double DeltaTime);
-	void BounceBallEvent();
-	void CalculateCaptureRate(int32 CaptureLevel_0, bool SneakBonus, TArray<double>* rateArray);
-	void CaptureSuccessEvent();
-	void CheckBouncedReason(E_PalCaptureSphereBouncedReason* reasonType);
-	void DelayPassingPhase(int32 Phase, double DelayTime);
-	void DelayPassingPhase_WithEffect(int32 Phase, double DelayTime);
-	void ExecuteUbergraph_BP_PalSphere_Body(int32 EntryPoint);
-	void FailedCapture_OutOfBall();
-	void FindOwnerPlayer(class APalPlayerCharacter** Player);
-	void FlyToSkyEvent(double Delay);
+	void SetParameterCaptureAbsorbToBallEffectBySize(class UNiagaraComponent* Effect);
+	void SetCaptureState(EPalCaptureSphereState NewState);
+	void ReceiveTick(float DeltaSeconds);
+	void ReceiveBeginPlay();
+	void PrevIndexFullPercentage(int32 Index_0, bool* IsFull);
+	void PlaySoundShake();
+	void PlayOpenSphereEffect();
+	void PlayCaptureEffectEvent();
+	void PlayCaptureAbsorbToBallEffect();
+	void PlayBallCenterEffect();
+	void OverwriteJudge_ForFullRelease(TArray<bool>& OriginalJudgeFlagArray, double JudgeRate, class UPalIndividualCharacterParameter* IndividualParameter, TArray<bool>* outJudgeFlagArray);
+	void OnShakeBodyToALL();
+	void OnPassingCapturePhase_イベント_0(int32 PhaseCount, class UPalIndividualCharacterHandle* targetHandle_0);
+	void OnCompleteCaptureEmissiveEffect(class UPalVisualEffectBase* VisualEffect);
+	void Judging(double DeltaTime);
+	void JudgeProcess(int32 JudgeIndex, bool* Result);
+	void IsSkipFirstJudge(class UPalCharacterParameterComponent* Parameter, TArray<double>& RateList, bool* isSkip);
 	void IntoBall(const struct FVector& GoolLocation);
 	void IntoBallEvent();
-	void IsSkipFirstJudge(class UPalCharacterParameterComponent* Parameter, TArray<double>& RateList, bool* isSkip);
-	void JudgeProcess(int32 JudgeIndex, bool* Result);
-	void Judging(double DeltaTime);
-	void OnCompleteCaptureEmissiveEffect(class UPalVisualEffectBase* VisualEffect);
-	void OnPassingCapturePhase_イベント_0(int32 PhaseCount, class UPalIndividualCharacterHandle* targetHandle_0);
-	void OnShakeBodyToALL();
-	void OverwriteJudge_ForFullRelease(TArray<bool>& OriginalJudgeFlagArray, double JudgeRate, class UPalIndividualCharacterParameter* IndividualParameter, TArray<bool>* outJudgeFlagArray);
-	void PlayBallCenterEffect();
-	void PlayCaptureAbsorbToBallEffect();
-	void PlayCaptureEffectEvent();
-	void PlayOpenSphereEffect();
-	void PlaySoundShake();
-	void PrevIndexFullPercentage(int32 Index_0, bool* IsFull);
-	void ReceiveBeginPlay();
-	void ReceiveTick(float DeltaSeconds);
-	void SetCaptureState(EPalCaptureSphereState NewState);
-	void SetParameterCaptureAbsorbToBallEffectBySize(class UNiagaraComponent* Effect);
-	void SetupInServer(class APalCharacter* TargetCharacter);
-	void StopTargetPal();
-	void SynchronizeJudgeParameter(const TArray<bool>& JudgeFlagArray, const TArray<double>& OriginalJudgeRateArray, const TArray<double>& CriticalJudgeRateArray);
-	void TickMovement_HitedBall(double DeltaTime);
+	void FlyToSkyEvent(double Delay);
+	void FindOwnerPlayer(class APalPlayerCharacter** Player);
+	void FailedCapture_OutOfBall();
+	void ExecuteUbergraph_BP_PalSphere_Body(int32 EntryPoint);
+	void DelayPassingPhase_WithEffect(int32 Phase, double DelayTime);
+	void DelayPassingPhase(int32 Phase, double DelayTime);
+	void CheckBouncedReason(E_PalCaptureSphereBouncedReason* reasonType);
+	void CaptureSuccessEvent();
+	void CalculateCaptureRate(int32 CaptureLevel_0, bool SneakBonus, TArray<double>* rateArray);
+	void BounceBallEvent();
+	void BallShakeTick(double DeltaTime);
 	void TickMovement_MoveToSky(double DeltaTime);
+	void TickMovement_HitedBall(double DeltaTime);
+	void SynchronizeJudgeParameter(const TArray<bool>& JudgeFlagArray, const TArray<double>& OriginalJudgeRateArray, const TArray<double>& CriticalJudgeRateArray);
+	void StopTargetPal();
+	void SetupInServer(class APalCharacter* TargetCharacter);
 
 public:
 	static class UClass* StaticClass()

@@ -33,11 +33,11 @@ public:
 	struct FFixedPoint64                          CachedShieldHP;                                    // 0x02A8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_Menu_PlayerGauge_Shield(int32 EntryPoint);
-	void UpdateShield(const struct FFixedPoint64& nowShieldMaxHP, const struct FFixedPoint64& nowShieldHP);
 	void UpdateShieldMaxHP(const struct FFixedPoint64& nowShieldMaxHP);
+	void UpdateShield(const struct FFixedPoint64& nowShieldMaxHP, const struct FFixedPoint64& nowShieldHP);
+	void ExecuteUbergraph_WBP_Menu_PlayerGauge_Shield(int32 EntryPoint);
+	void Destruct();
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

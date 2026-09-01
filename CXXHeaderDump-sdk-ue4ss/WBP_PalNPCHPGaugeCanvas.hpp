@@ -7,18 +7,18 @@ class UWBP_PalNPCHPGaugeCanvas_C : public UPalUINPCHPGaugeCanvasBase
     class UWidgetAnimation* Default_In;                                               // 0x0458 (size: 0x8)
     class UCanvasPanel* Canvas_Root;                                                  // 0x0460 (size: 0x8)
     class UWrapBox* WrapBox;                                                          // 0x0468 (size: 0x8)
-    TMap<class APalCharacter*, class UWBP_PalNPCHPGauge_C*> DisplayedPalGaugeMap;     // 0x0470 (size: 0x50)
-    TMap<class APalCharacter*, class UPalUICharacterHPGaugeBase*> DisplayedBossUGaugeMap; // 0x04C0 (size: 0x50)
-    TMap<class APalCharacter*, class UWBP_PlayerHPGauge_C*> DisplayedPlayerGaugeMap;  // 0x0510 (size: 0x50)
+    TMap<APalCharacter*, UWBP_PalNPCHPGauge_C*> DisplayedPalGaugeMap;                 // 0x0470 (size: 0x50)
+    TMap<APalCharacter*, UPalUICharacterHPGaugeBase*> DisplayedBossUGaugeMap;         // 0x04C0 (size: 0x50)
+    TMap<APalCharacter*, UWBP_PlayerHPGauge_C*> DisplayedPlayerGaugeMap;              // 0x0510 (size: 0x50)
     double DisplayGaugeDistance;                                                      // 0x0560 (size: 0x8)
     double HideTimer;                                                                 // 0x0568 (size: 0x8)
     double HideTime;                                                                  // 0x0570 (size: 0x8)
     double DisplayGaugeRange_Sight;                                                   // 0x0578 (size: 0x8)
     bool IsOverHideTime;                                                              // 0x0580 (size: 0x1)
     bool IsConflicted;                                                                // 0x0581 (size: 0x1)
-    TArray<class UBP_UIIndividualParameterInitializeWaiter_C*> InitializeWaiters;     // 0x0588 (size: 0x10)
+    TArray<UBP_UIIndividualParameterInitializeWaiter_C*> InitializeWaiters;           // 0x0588 (size: 0x10)
     FTimerHandle UpdateTimerHandle;                                                   // 0x0598 (size: 0x8)
-    TArray<class UWidget*> DelayCloseGauges;                                          // 0x05A0 (size: 0x10)
+    TArray<UWidget*> DelayCloseGauges;                                                // 0x05A0 (size: 0x10)
     float DisplayGaugeDistance_SameGuildPlayer;                                       // 0x05B0 (size: 0x4)
     bool CachedEnableTalentCheck;                                                     // 0x05B4 (size: 0x1)
     float OtherOtomoPVPDisplayDistance_Sight;                                         // 0x05B8 (size: 0x4)
@@ -29,7 +29,7 @@ class UWBP_PalNPCHPGaugeCanvas_C : public UPalUINPCHPGaugeCanvasBase
 
     void CREATEDELEGATE_PROXYFUNCTION_0(const FPalDamageInfo& DamageInfo, class AActor* Defender);
     void Get Sight Display Require Distance(class APalCharacter* TargetCharacter, double& Distance);
-    void Add Target Characters HPGauge(TArray<class APalCharacter*>& Characters);
+    void Add Target Characters HPGauge(TArray<APalCharacter*>& Characters);
     void Remove Target Character HPGauge(class APalCharacter* TargetCharacter);
     void IsMimicry(class APalCharacter* Character, bool& IsMimicryMode);
     void OnChangedEquipment(class UPalItemSlot* itemSlot, EPalPlayerEquipItemSlotType slotType);

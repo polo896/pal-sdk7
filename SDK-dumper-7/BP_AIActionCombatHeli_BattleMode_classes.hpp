@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Pal_structs.hpp"
-#include "Engine_structs.hpp"
 #include "BP_AIActionCombatHeliBase_classes.hpp"
+#include "Engine_structs.hpp"
 #include "AIModule_structs.hpp"
 
 

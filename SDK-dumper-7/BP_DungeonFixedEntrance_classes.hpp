@@ -30,8 +30,8 @@ public:
 public:
 	void GetInteractWidget(class UPalUserWidget** createdWidget);
 
-	struct FTransform GetDeadItemDropPoint() const;
 	struct FTransform GetWarpPoint() const;
+	struct FTransform GetDeadItemDropPoint() const;
 
 public:
 	static class UClass* StaticClass()

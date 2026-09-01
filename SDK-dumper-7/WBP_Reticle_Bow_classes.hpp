@@ -27,9 +27,9 @@ public:
 	class UWBP_Reticle_KeyGuide_C*                WBP_Reticle_KeyGuide_Cancel;                       // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Reticle_Bow(int32 EntryPoint);
-	void OnChangeState_Event(bool IsAim, bool IsShoot);
 	void OnInitialized();
+	void OnChangeState_Event(bool IsAim, bool IsShoot);
+	void ExecuteUbergraph_WBP_Reticle_Bow(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

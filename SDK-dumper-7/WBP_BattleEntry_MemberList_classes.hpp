@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "WBP_IndividualParameterBindWidget_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -30,14 +30,14 @@ public:
 	class UBP_PalTextBlock_C*                     Text_LvTitle;                                      // 0x0680(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void ExecuteUbergraph_WBP_BattleEntry_MemberList(int32 EntryPoint);
-	void OnInitialized();
-	void OnUpdateLevel_Binded(int32 NewLevel);
-	void OnUpdateNickName_Binded(const class FString& NewNickName);
-	void SetPlayerInfo(const class FString& PlayerName, int32 PlayLv, bool IsHost, class UPalIndividualCharacterHandle* targetHandle);
-	void SetValidation(bool IsValid);
 	void UpdatePlayerName();
+	void SetValidation(bool IsValid);
+	void SetPlayerInfo(const class FString& PlayerName, int32 PlayLv, bool IsHost, class UPalIndividualCharacterHandle* targetHandle);
+	void OnUpdateNickName_Binded(const class FString& NewNickName);
+	void OnUpdateLevel_Binded(int32 NewLevel);
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_BattleEntry_MemberList(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

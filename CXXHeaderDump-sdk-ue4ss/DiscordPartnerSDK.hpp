@@ -35,7 +35,7 @@ class UDiscordActivity : public UObject
     FDiscordUniqueID ParentApplicationId();
     FString Name();
     void Init();
-    TArray<class UDiscordActivityButton*> GetButtons();
+    TArray<UDiscordActivityButton*> GetButtons();
     bool Equals(class UDiscordActivity* Other);
     void Drop();
     FString DetailsUrl();
@@ -320,9 +320,9 @@ class UDiscordClient : public UObject
     void SetActivityJoinCallback(const FSetActivityJoinCallbackCb& cb);
     void SetActivityInviteUpdatedCallback(const FSetActivityInviteUpdatedCallbackCb& cb);
     void SetActivityInviteCreatedCallback(const FSetActivityInviteCreatedCallbackCb& cb);
-    void SendUserMessageWithMetadata(FDiscordUniqueID RecipientId, const FString& Content, const TMap<class FString, class FString>& Metadata, const FSendUserMessageWithMetadataCb& cb);
+    void SendUserMessageWithMetadata(FDiscordUniqueID RecipientId, const FString& Content, const TMap<FString, FString>& Metadata, const FSendUserMessageWithMetadataCb& cb);
     void SendUserMessage(FDiscordUniqueID RecipientId, const FString& Content, const FSendUserMessageCb& cb);
-    void SendLobbyMessageWithMetadata(FDiscordUniqueID LobbyId, const FString& Content, const TMap<class FString, class FString>& Metadata, const FSendLobbyMessageWithMetadataCb& cb);
+    void SendLobbyMessageWithMetadata(FDiscordUniqueID LobbyId, const FString& Content, const TMap<FString, FString>& Metadata, const FSendLobbyMessageWithMetadataCb& cb);
     void SendLobbyMessage(FDiscordUniqueID LobbyId, const FString& Content, const FSendLobbyMessageCb& cb);
     void SendGameFriendRequestById(FDiscordUniqueID UserId, const FSendGameFriendRequestByIdCb& cb);
     void SendGameFriendRequest(const FString& Username, const FSendGameFriendRequestCb& cb);
@@ -331,7 +331,7 @@ class UDiscordClient : public UObject
     void SendActivityJoinRequestReply(class UDiscordActivityInvite* Invite, const FSendActivityJoinRequestReplyCb& cb);
     void SendActivityJoinRequest(FDiscordUniqueID UserId, const FSendActivityJoinRequestCb& cb);
     void SendActivityInvite(FDiscordUniqueID UserId, const FString& Content, const FSendActivityInviteCb& cb);
-    TArray<class UDiscordUserHandle*> SearchFriendsByUsername(const FString& searchStr);
+    TArray<UDiscordUserHandle*> SearchFriendsByUsername(const FString& searchStr);
     void RevokeToken(FDiscordUniqueID ApplicationId, const FString& Token, const FRevokeTokenCallback& Callback);
     void RemoveGameFriend(FDiscordUniqueID UserId, const FRemoveGameFriendCb& cb);
     void RemoveDiscordAndGameFriend(FDiscordUniqueID UserId, const FRemoveDiscordAndGameFriendCb& cb);
@@ -369,8 +369,8 @@ class UDiscordClient : public UObject
     EDiscordClientStatus GetStatus();
     bool GetSelfMuteAll();
     bool GetSelfDeafAll();
-    TArray<class UDiscordRelationshipHandle*> GetRelationshipsByGroup(EDiscordRelationshipGroupType GroupType);
-    TArray<class UDiscordRelationshipHandle*> GetRelationships();
+    TArray<UDiscordRelationshipHandle*> GetRelationshipsByGroup(EDiscordRelationshipGroupType GroupType);
+    TArray<UDiscordRelationshipHandle*> GetRelationships();
     class UDiscordRelationshipHandle* GetRelationshipHandle(FDiscordUniqueID UserId);
     void GetProvisionalToken(FDiscordUniqueID ApplicationId, EDiscordAuthenticationExternalAuthType externalAuthType, const FString& externalAuthToken, const FGetProvisionalTokenCallback& Callback);
     float GetOutputVolume();
@@ -391,7 +391,7 @@ class UDiscordClient : public UObject
     void GetCurrentOutputDevice(const FGetCurrentOutputDeviceCb& cb);
     void GetCurrentInputDevice(const FGetCurrentInputDeviceCb& cb);
     class UDiscordChannelHandle* GetChannelHandle(FDiscordUniqueID ChannelId);
-    TArray<class UDiscordCall*> GetCalls();
+    TArray<UDiscordCall*> GetCalls();
     class UDiscordCall* GetCall(FDiscordUniqueID ChannelId);
     FDiscordUniqueID GetApplicationId();
     void FetchCurrentUser(EDiscordAuthorizationTokenType tokenType, const FString& Token, const FFetchCurrentUserCallback& Callback);
@@ -403,7 +403,7 @@ class UDiscordClient : public UObject
     void Drop();
     void Disconnect();
     void DeleteUserMessage(FDiscordUniqueID RecipientId, FDiscordUniqueID MessageId, const FDeleteUserMessageCb& cb);
-    void CreateOrJoinLobbyWithMetadata(const FString& secret, const TMap<class FString, class FString>& lobbyMetadata, const TMap<class FString, class FString>& memberMetadata, const FCreateOrJoinLobbyWithMetadataCallback& Callback);
+    void CreateOrJoinLobbyWithMetadata(const FString& secret, const TMap<FString, FString>& lobbyMetadata, const TMap<FString, FString>& memberMetadata, const FCreateOrJoinLobbyWithMetadataCallback& Callback);
     void CreateOrJoinLobby(const FString& secret, const FCreateOrJoinLobbyCallback& Callback);
     class UDiscordAuthorizationCodeVerifier* CreateAuthorizationCodeVerifier();
     void Connect();
@@ -532,8 +532,8 @@ class UDiscordLinkedLobby : public UObject
 class UDiscordLobbyHandle : public UObject
 {
 
-    TMap<class FString, class FString> Metadata();
-    TArray<class UDiscordLobbyMemberHandle*> LobbyMembers();
+    TMap<FString, FString> Metadata();
+    TArray<UDiscordLobbyMemberHandle*> LobbyMembers();
     TArray<FDiscordUniqueID> LobbyMemberIds();
     class UDiscordLinkedChannel* LinkedChannel();
     FDiscordUniqueID ID();
@@ -546,7 +546,7 @@ class UDiscordLobbyMemberHandle : public UObject
 {
 
     class UDiscordUserHandle* User();
-    TMap<class FString, class FString> Metadata();
+    TMap<FString, FString> Metadata();
     FDiscordUniqueID ID();
     void Drop();
     bool Connected();
@@ -601,8 +601,8 @@ class UDiscordMessageHandle : public UObject
     FDiscordUniqueID RecipientId();
     class UDiscordUserHandle* Recipient();
     FString RawContent();
-    TMap<class FString, class FString> ModerationMetadata();
-    TMap<class FString, class FString> Metadata();
+    TMap<FString, FString> ModerationMetadata();
+    TMap<FString, FString> Metadata();
     class UDiscordLobbyHandle* Lobby();
     FDiscordUniqueID ID();
     FDiscordUniqueID EditedTimestamp();
@@ -662,7 +662,7 @@ class UDiscordUserHandle : public UObject
 {
 
     FString Username();
-    TArray<class UDiscordUserApplicationProfileHandle*> UserApplicationProfiles();
+    TArray<UDiscordUserApplicationProfileHandle*> UserApplicationProfiles();
     EDiscordStatusType Status();
     class UDiscordRelationshipHandle* Relationship();
     bool IsProvisional();

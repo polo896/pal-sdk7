@@ -14,26 +14,14 @@
 namespace SDK::Params
 {
 
-// Function BP_TreasureBoxVisual_ElementalLock_Base.BP_TreasureBoxVisual_ElementalLock_Base_C.ChangeToElementalUnlock
-// 0x0001 (0x0001 - 0x0000)
-struct BP_TreasureBoxVisual_ElementalLock_Base_C_ChangeToElementalUnlock final
+// Function BP_TreasureBoxVisual_ElementalLock_Base.BP_TreasureBoxVisual_ElementalLock_Base_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_TreasureBoxVisual_ElementalLock_Base_C_ReceiveTick final
 {
 public:
-	bool                                          isSkipAnim;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_TreasureBoxVisual_ElementalLock_Base_C_ChangeToElementalUnlock;
-
-// Function BP_TreasureBoxVisual_ElementalLock_Base.BP_TreasureBoxVisual_ElementalLock_Base_C.ElementalUnlockAnimation
-// 0x0020 (0x0020 - 0x0000)
-struct BP_TreasureBoxVisual_ElementalLock_Base_C_ElementalUnlockAnimation final
-{
-public:
-	double                                        ElapsedTime;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_FMin_ReturnValue;                         // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_TreasureBoxVisual_ElementalLock_Base_C_ElementalUnlockAnimation;
+DUMPER7_ASSERTS_BP_TreasureBoxVisual_ElementalLock_Base_C_ReceiveTick;
 
 // Function BP_TreasureBoxVisual_ElementalLock_Base.BP_TreasureBoxVisual_ElementalLock_Base_C.ExecuteUbergraph_BP_TreasureBoxVisual_ElementalLock_Base
 // 0x0040 (0x0040 - 0x0000)
@@ -54,14 +42,26 @@ public:
 };
 DUMPER7_ASSERTS_BP_TreasureBoxVisual_ElementalLock_Base_C_ExecuteUbergraph_BP_TreasureBoxVisual_ElementalLock_Base;
 
-// Function BP_TreasureBoxVisual_ElementalLock_Base.BP_TreasureBoxVisual_ElementalLock_Base_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_TreasureBoxVisual_ElementalLock_Base_C_ReceiveTick final
+// Function BP_TreasureBoxVisual_ElementalLock_Base.BP_TreasureBoxVisual_ElementalLock_Base_C.ElementalUnlockAnimation
+// 0x0020 (0x0020 - 0x0000)
+struct BP_TreasureBoxVisual_ElementalLock_Base_C_ElementalUnlockAnimation final
 {
 public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        ElapsedTime;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_FMin_ReturnValue;                         // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_TreasureBoxVisual_ElementalLock_Base_C_ReceiveTick;
+DUMPER7_ASSERTS_BP_TreasureBoxVisual_ElementalLock_Base_C_ElementalUnlockAnimation;
+
+// Function BP_TreasureBoxVisual_ElementalLock_Base.BP_TreasureBoxVisual_ElementalLock_Base_C.ChangeToElementalUnlock
+// 0x0001 (0x0001 - 0x0000)
+struct BP_TreasureBoxVisual_ElementalLock_Base_C_ChangeToElementalUnlock final
+{
+public:
+	bool                                          isSkipAnim;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_TreasureBoxVisual_ElementalLock_Base_C_ChangeToElementalUnlock;
 
 }
 

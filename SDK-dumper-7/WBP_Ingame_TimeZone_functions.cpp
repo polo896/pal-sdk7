@@ -17,23 +17,17 @@
 namespace SDK
 {
 
-// Function WBP_Ingame_TimeZone.WBP_Ingame_TimeZone_C.ExecuteUbergraph_WBP_Ingame_TimeZone
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Ingame_TimeZone.WBP_Ingame_TimeZone_C.UpdateTime
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Ingame_TimeZone_C::ExecuteUbergraph_WBP_Ingame_TimeZone(int32 EntryPoint)
+void UWBP_Ingame_TimeZone_C::UpdateTime()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_TimeZone_C", "ExecuteUbergraph_WBP_Ingame_TimeZone");
+		Func = Class->GetFunction("WBP_Ingame_TimeZone_C", "UpdateTime");
 
-	Params::WBP_Ingame_TimeZone_C_ExecuteUbergraph_WBP_Ingame_TimeZone Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -51,17 +45,23 @@ void UWBP_Ingame_TimeZone_C::OnInitialized()
 }
 
 
-// Function WBP_Ingame_TimeZone.WBP_Ingame_TimeZone_C.UpdateTime
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Ingame_TimeZone.WBP_Ingame_TimeZone_C.ExecuteUbergraph_WBP_Ingame_TimeZone
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Ingame_TimeZone_C::UpdateTime()
+void UWBP_Ingame_TimeZone_C::ExecuteUbergraph_WBP_Ingame_TimeZone(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_TimeZone_C", "UpdateTime");
+		Func = Class->GetFunction("WBP_Ingame_TimeZone_C", "ExecuteUbergraph_WBP_Ingame_TimeZone");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Ingame_TimeZone_C_ExecuteUbergraph_WBP_Ingame_TimeZone Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

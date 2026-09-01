@@ -17,37 +17,23 @@
 namespace SDK
 {
 
-// Function BP_BuildObject_Spa.BP_BuildObject_Spa_C.ExecuteUbergraph_BP_BuildObject_Spa
-// (Final, UbergraphFunction)
+// Function BP_BuildObject_Spa.BP_BuildObject_Spa_C.SetActive_Internal
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bOn                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BuildObject_Spa_C::ExecuteUbergraph_BP_BuildObject_Spa(int32 EntryPoint)
+void ABP_BuildObject_Spa_C::SetActive_Internal(bool bOn)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BuildObject_Spa_C", "ExecuteUbergraph_BP_BuildObject_Spa");
+		Func = Class->GetFunction("BP_BuildObject_Spa_C", "SetActive_Internal");
 
-	Params::BP_BuildObject_Spa_C_ExecuteUbergraph_BP_BuildObject_Spa Parms{};
+	Params::BP_BuildObject_Spa_C_SetActive_Internal Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.bOn = bOn;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BuildObject_Spa.BP_BuildObject_Spa_C.OnAvailable_BlueprintImpl
-// (Event, Protected, BlueprintEvent)
-
-void ABP_BuildObject_Spa_C::OnAvailable_BlueprintImpl()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BuildObject_Spa_C", "OnAvailable_BlueprintImpl");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -65,21 +51,35 @@ void ABP_BuildObject_Spa_C::ReceiveBeginPlay()
 }
 
 
-// Function BP_BuildObject_Spa.BP_BuildObject_Spa_C.SetActive_Internal
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bOn                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_BuildObject_Spa.BP_BuildObject_Spa_C.OnAvailable_BlueprintImpl
+// (Event, Protected, BlueprintEvent)
 
-void ABP_BuildObject_Spa_C::SetActive_Internal(bool bOn)
+void ABP_BuildObject_Spa_C::OnAvailable_BlueprintImpl()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BuildObject_Spa_C", "SetActive_Internal");
+		Func = Class->GetFunction("BP_BuildObject_Spa_C", "OnAvailable_BlueprintImpl");
 
-	Params::BP_BuildObject_Spa_C_SetActive_Internal Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.bOn = bOn;
+
+// Function BP_BuildObject_Spa.BP_BuildObject_Spa_C.ExecuteUbergraph_BP_BuildObject_Spa
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BuildObject_Spa_C::ExecuteUbergraph_BP_BuildObject_Spa(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BuildObject_Spa_C", "ExecuteUbergraph_BP_BuildObject_Spa");
+
+	Params::BP_BuildObject_Spa_C_ExecuteUbergraph_BP_BuildObject_Spa Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

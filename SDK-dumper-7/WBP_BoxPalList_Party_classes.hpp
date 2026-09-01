@@ -42,25 +42,25 @@ public:
 	struct FPalDataTableRowName_UIInputAction     OverrideRightPageInputAction;                      // 0x0330(0x0008)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_0_OnLeftClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
-	void BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_1_OnHoveredSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget);
-	void BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_2_OnUnhoveredSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget);
-	void BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_3_OnCreatedNewSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* NewSlot);
-	void BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_4_OnRightClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget);
-	void BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_5_OnUpdatedPage__DelegateSignature(int32 NowPage);
-	void ExecuteUbergraph_WBP_BoxPalList_Party(int32 EntryPoint);
-	void GetFirstFocusPartyButton(class UWidget** Widget);
-	void GetLastFocusBoxSlot(class UWidget** TargetWidget);
-	void GetPartySlots(TArray<class UWBP_PalCommonCharacterSlotButton_C*>* PartySlots_0);
-	void OnClickSlot_Internal(class UWBP_PalCharacterSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType);
-	void OnHoverSlot_Internal(class UWBP_PalCharacterSlotButtonBase_C* Slot_0);
-	void OnInitialized();
-	void OnUnhoverSlot_Internal(class UWBP_PalCharacterSlotButtonBase_C* Slot_0);
-	void PreConstruct(bool IsDesignTime);
-	void SelectSlot(class UPalIndividualCharacterSlot* Slot_0, EPalItemSlotPressType PressType);
-	void Setup_Party_Slot();
-	void ToggleFavorite(class UPalIndividualCharacterSlot* TargetSlot);
 	void TryMoveToBox(class UPalIndividualCharacterSlot* Slot_0);
+	void ToggleFavorite(class UPalIndividualCharacterSlot* TargetSlot);
+	void Setup_Party_Slot();
+	void SelectSlot(class UPalIndividualCharacterSlot* Slot_0, EPalItemSlotPressType PressType);
+	void PreConstruct(bool IsDesignTime);
+	void OnUnhoverSlot_Internal(class UWBP_PalCharacterSlotButtonBase_C* Slot_0);
+	void OnInitialized();
+	void OnHoverSlot_Internal(class UWBP_PalCharacterSlotButtonBase_C* Slot_0);
+	void OnClickSlot_Internal(class UWBP_PalCharacterSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType);
+	void GetPartySlots(TArray<class UWBP_PalCommonCharacterSlotButton_C*>* PartySlots_0);
+	void GetLastFocusBoxSlot(class UWidget** TargetWidget);
+	void GetFirstFocusPartyButton(class UWidget** Widget);
+	void ExecuteUbergraph_WBP_BoxPalList_Party(int32 EntryPoint);
+	void BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_5_OnUpdatedPage__DelegateSignature(int32 NowPage);
+	void BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_4_OnRightClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget);
+	void BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_3_OnCreatedNewSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* NewSlot);
+	void BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_2_OnUnhoveredSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget);
+	void BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_1_OnHoveredSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget);
+	void BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_0_OnLeftClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
 
 public:
 	static class UClass* StaticClass()

@@ -17,115 +17,212 @@
 namespace SDK
 {
 
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_1_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.SetupForPrivateLock
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UPalMapObjectConcreteModelBase*   ConcreteModel                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_1_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::SetupForPrivateLock(class UPalMapObjectConcreteModelBase* ConcreteModel)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_1_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "SetupForPrivateLock");
 
-	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_1_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_SetupForPrivateLock Parms{};
 
-	Parms.Button = Button;
+	Parms.ConcreteModel = ConcreteModel;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Guest_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.SetupForPassword
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UPalMapObjectConcreteModelBase*   ConcreteModel                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Guest_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::SetupForPassword(class UPalMapObjectConcreteModelBase* ConcreteModel)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Guest_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "SetupForPassword");
 
-	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Guest_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_SetupForPassword Parms{};
 
-	Parms.Button = Button;
+	Parms.ConcreteModel = ConcreteModel;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.SetupForGuildSecurity
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UPalMapObjectConcreteModelBase*   ConcreteModel                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::SetupForGuildSecurity(class UPalMapObjectConcreteModelBase* ConcreteModel)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "SetupForGuildSecurity");
 
-	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_SetupForGuildSecurity Parms{};
 
-	Parms.Button = Button;
+	Parms.ConcreteModel = ConcreteModel;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Member_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.Setup
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UPalHUDDispatchParameterBase*     Param_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Member_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::Setup(class UPalHUDDispatchParameterBase* Param_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Member_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "Setup");
 
-	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Member_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_Setup Parms{};
 
-	Parms.Button = Button;
+	Parms.Param_0 = Param_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_SubMaster_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.RequestApplyGuildSecurityLevel
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// EPalGuildRole                           TargetRole                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bCurrentDisplayChecked                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_SubMaster_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::RequestApplyGuildSecurityLevel(EPalGuildRole TargetRole, bool bCurrentDisplayChecked)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_SubMaster_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "RequestApplyGuildSecurityLevel");
 
-	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_SubMaster_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_RequestApplyGuildSecurityLevel Parms{};
 
-	Parms.Button = Button;
+	Parms.TargetRole = TargetRole;
+	Parms.bCurrentDisplayChecked = bCurrentDisplayChecked;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.OnUpdateItemChestPrivateLock
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalMapObjectItemChestModel*      ConcreteModel                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::OnUpdateItemChestPrivateLock(class UPalMapObjectItemChestModel* ConcreteModel)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "OnUpdateItemChestPrivateLock");
+
+	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_OnUpdateItemChestPrivateLock Parms{};
+
+	Parms.ConcreteModel = ConcreteModel;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.OnUpdateGuildSecurityAllowedRoles
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalMapObjectGuildSecurityModule* Module                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const TArray<EPalGuildRole>&            NewRoles                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::OnUpdateGuildSecurityAllowedRoles(class UPalMapObjectGuildSecurityModule* Module, const TArray<EPalGuildRole>& NewRoles)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "OnUpdateGuildSecurityAllowedRoles");
+
+	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_OnUpdateGuildSecurityAllowedRoles Parms{};
+
+	Parms.Module = Module;
+	Parms.NewRoles = std::move(NewRoles);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.IsCheckedBox
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UCheckBox*                        ターゲット                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UWBP_IngameMenu_ChestSetting_SecurityBlock_C::IsCheckedBox(class UCheckBox* ターゲット)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "IsCheckedBox");
+
+	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_IsCheckedBox Parms{};
+
+	Parms.ターゲット = ターゲット;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.GetRoleCheckBox
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// EPalGuildRole                           Role                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCheckBox**                       CheckBox                                               (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::GetRoleCheckBox(EPalGuildRole Role, class UCheckBox** CheckBox)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "GetRoleCheckBox");
+
+	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_GetRoleCheckBox Parms{};
+
+	Parms.Role = Role;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (CheckBox != nullptr)
+		*CheckBox = Parms.CheckBox;
+}
+
+
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.ExecuteUbergraph_WBP_IngameMenu_ChestSetting_SecurityBlock
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::ExecuteUbergraph_WBP_IngameMenu_ChestSetting_SecurityBlock(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "ExecuteUbergraph_WBP_IngameMenu_ChestSetting_SecurityBlock");
+
+	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_ExecuteUbergraph_WBP_IngameMenu_ChestSetting_SecurityBlock Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -154,214 +251,117 @@ class UWidget* UWBP_IngameMenu_ChestSetting_SecurityBlock_C::Custom_Navigation_T
 }
 
 
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.ExecuteUbergraph_WBP_IngameMenu_ChestSetting_SecurityBlock
-// (Final, UbergraphFunction)
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_SubMaster_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::ExecuteUbergraph_WBP_IngameMenu_ChestSetting_SecurityBlock(int32 EntryPoint)
+void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_SubMaster_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "ExecuteUbergraph_WBP_IngameMenu_ChestSetting_SecurityBlock");
+		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_SubMaster_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_ExecuteUbergraph_WBP_IngameMenu_ChestSetting_SecurityBlock Parms{};
+	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_SubMaster_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.GetRoleCheckBox
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Member_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// EPalGuildRole                           Role                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCheckBox**                       CheckBox                                               (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::GetRoleCheckBox(EPalGuildRole Role, class UCheckBox** CheckBox)
+void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Member_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "GetRoleCheckBox");
+		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Member_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_GetRoleCheckBox Parms{};
+	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Member_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature Parms{};
 
-	Parms.Role = Role;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (CheckBox != nullptr)
-		*CheckBox = Parms.CheckBox;
-}
-
-
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.IsCheckedBox
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UCheckBox*                        ターゲット                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-bool UWBP_IngameMenu_ChestSetting_SecurityBlock_C::IsCheckedBox(class UCheckBox* ターゲット)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "IsCheckedBox");
-
-	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_IsCheckedBox Parms{};
-
-	Parms.ターゲット = ターゲット;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.OnUpdateGuildSecurityAllowedRoles
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalMapObjectGuildSecurityModule* Module                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const TArray<EPalGuildRole>&            NewRoles                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::OnUpdateGuildSecurityAllowedRoles(class UPalMapObjectGuildSecurityModule* Module, const TArray<EPalGuildRole>& NewRoles)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "OnUpdateGuildSecurityAllowedRoles");
-
-	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_OnUpdateGuildSecurityAllowedRoles Parms{};
-
-	Parms.Module = Module;
-	Parms.NewRoles = std::move(NewRoles);
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.OnUpdateItemChestPrivateLock
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class UPalMapObjectItemChestModel*      ConcreteModel                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::OnUpdateItemChestPrivateLock(class UPalMapObjectItemChestModel* ConcreteModel)
+void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "OnUpdateItemChestPrivateLock");
+		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_OnUpdateItemChestPrivateLock Parms{};
+	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature Parms{};
 
-	Parms.ConcreteModel = ConcreteModel;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.RequestApplyGuildSecurityLevel
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Guest_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// EPalGuildRole                           TargetRole                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bCurrentDisplayChecked                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::RequestApplyGuildSecurityLevel(EPalGuildRole TargetRole, bool bCurrentDisplayChecked)
+void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Guest_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "RequestApplyGuildSecurityLevel");
+		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Guest_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_RequestApplyGuildSecurityLevel Parms{};
+	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Guest_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature Parms{};
 
-	Parms.TargetRole = TargetRole;
-	Parms.bCurrentDisplayChecked = bCurrentDisplayChecked;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.Setup
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_1_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class UPalHUDDispatchParameterBase*     Param_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::Setup(class UPalHUDDispatchParameterBase* Param_0)
+void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_1_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "Setup");
+		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_1_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_Setup Parms{};
+	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_1_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
 
-	Parms.Param_0 = Param_0;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.SetupForGuildSecurity
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalMapObjectConcreteModelBase*   ConcreteModel                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::SetupForGuildSecurity(class UPalMapObjectConcreteModelBase* ConcreteModel)
+void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "SetupForGuildSecurity");
+		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
 
-	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_SetupForGuildSecurity Parms{};
-
-	Parms.ConcreteModel = ConcreteModel;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.SetupForPassword
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalMapObjectConcreteModelBase*   ConcreteModel                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::SetupForPassword(class UPalMapObjectConcreteModelBase* ConcreteModel)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "SetupForPassword");
-
-	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_SetupForPassword Parms{};
-
-	Parms.ConcreteModel = ConcreteModel;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_ChestSetting_SecurityBlock.WBP_IngameMenu_ChestSetting_SecurityBlock_C.SetupForPrivateLock
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalMapObjectConcreteModelBase*   ConcreteModel                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_ChestSetting_SecurityBlock_C::SetupForPrivateLock(class UPalMapObjectConcreteModelBase* ConcreteModel)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_ChestSetting_SecurityBlock_C", "SetupForPrivateLock");
-
-	Params::WBP_IngameMenu_ChestSetting_SecurityBlock_C_SetupForPrivateLock Parms{};
-
-	Parms.ConcreteModel = ConcreteModel;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

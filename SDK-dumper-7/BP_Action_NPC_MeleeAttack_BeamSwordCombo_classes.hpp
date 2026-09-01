@@ -26,13 +26,13 @@ public:
 	class UAnimMontage*                           AttackAnime;                                       // 0x0168(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_Action_NPC_MeleeAttack_BeamSwordCombo(int32 EntryPoint);
-	void OnBeginAction();
-	void OnBlendOut_9FDC0D23432EA95FAA7D548694C20C3D(class FName NotifyName);
-	void OnCompleted_9FDC0D23432EA95FAA7D548694C20C3D(class FName NotifyName);
-	void OnInterrupted_9FDC0D23432EA95FAA7D548694C20C3D(class FName NotifyName);
-	void OnNotifyBegin_9FDC0D23432EA95FAA7D548694C20C3D(class FName NotifyName);
 	void OnNotifyEnd_9FDC0D23432EA95FAA7D548694C20C3D(class FName NotifyName);
+	void OnNotifyBegin_9FDC0D23432EA95FAA7D548694C20C3D(class FName NotifyName);
+	void OnInterrupted_9FDC0D23432EA95FAA7D548694C20C3D(class FName NotifyName);
+	void OnCompleted_9FDC0D23432EA95FAA7D548694C20C3D(class FName NotifyName);
+	void OnBlendOut_9FDC0D23432EA95FAA7D548694C20C3D(class FName NotifyName);
+	void OnBeginAction();
+	void ExecuteUbergraph_BP_Action_NPC_MeleeAttack_BeamSwordCombo(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

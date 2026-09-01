@@ -31,9 +31,9 @@ public:
 	class UBP_PalTextBlock_C*                     Text_ReviveTimer;                                  // 0x02A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void SetProgressRate(double Rate);
-	void SetRemainingTime(double RemainingSeconds);
 	void SetResurrectAbility(double ResurrectSpeedMultiplier);
+	void SetRemainingTime(double RemainingSeconds);
+	void SetProgressRate(double Rate);
 
 public:
 	static class UClass* StaticClass()

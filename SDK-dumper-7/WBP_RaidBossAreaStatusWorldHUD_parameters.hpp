@@ -17,21 +17,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.ExecuteUbergraph_WBP_RaidBossAreaStatusWorldHUD
-// 0x0060 (0x0060 - 0x0000)
-struct WBP_RaidBossAreaStatusWorldHUD_C_ExecuteUbergraph_WBP_RaidBossAreaStatusWorldHUD final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0008(0x0040)(IsPlainOldData, NoDestructor)
-	float                                         K2Node_Event_InDeltaTime;                          // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalUIMapObjectRaidBossAreaStatusModel* CallFunc_GetUIModel_ReturnValue;                   // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsExistBoundInstanceModel_ReturnValue;    // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_RaidBossAreaStatusWorldHUD_C_ExecuteUbergraph_WBP_RaidBossAreaStatusWorldHUD;
-
 // Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.GetUIModel
 // 0x0030 (0x0030 - 0x0000)
 struct WBP_RaidBossAreaStatusWorldHUD_C_GetUIModel final
@@ -48,51 +33,30 @@ public:
 };
 DUMPER7_ASSERTS_WBP_RaidBossAreaStatusWorldHUD_C_GetUIModel;
 
-// Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.OnUpdatePhase
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_RaidBossAreaStatusWorldHUD_C_OnUpdatePhase final
+// Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.ExecuteUbergraph_WBP_RaidBossAreaStatusWorldHUD
+// 0x0060 (0x0060 - 0x0000)
+struct WBP_RaidBossAreaStatusWorldHUD_C_ExecuteUbergraph_WBP_RaidBossAreaStatusWorldHUD final
 {
 public:
-	class UPalUIMapObjectRaidBossAreaStatusModel* UIModel;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPalRaidBossAreaPhase                         CallFunc_GetCurrentPhase_ReturnValue;              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0008(0x0040)(IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_InDeltaTime;                          // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalUIMapObjectRaidBossAreaStatusModel* CallFunc_GetUIModel_ReturnValue;                   // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsExistBoundInstanceModel_ReturnValue;    // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_RaidBossAreaStatusWorldHUD_C_OnUpdatePhase;
+DUMPER7_ASSERTS_WBP_RaidBossAreaStatusWorldHUD_C_ExecuteUbergraph_WBP_RaidBossAreaStatusWorldHUD;
 
-// Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.OnUpdateRaidBossStaticItemId
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_RaidBossAreaStatusWorldHUD_C_OnUpdateRaidBossStaticItemId final
+// Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.Tick
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_RaidBossAreaStatusWorldHUD_C_Tick final
 {
 public:
-	class UPalUIMapObjectRaidBossAreaStatusModel* UIModel;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetRaidBossStaticItemId_ReturnValue;      // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_RaidBossAreaStatusWorldHUD_C_OnUpdateRaidBossStaticItemId;
-
-// Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.ReflectCurrentPhase
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_RaidBossAreaStatusWorldHUD_C_ReflectCurrentPhase final
-{
-public:
-	EPalRaidBossAreaPhase                         InPhase;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_RaidBossAreaStatusWorldHUD_C_ReflectCurrentPhase;
-
-// Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.ReflectCurrentRemaingTime
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_RaidBossAreaStatusWorldHUD_C_ReflectCurrentRemaingTime final
-{
-public:
-	int32                                         RemainingTotalSeconds;                             // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Divide_IntInt_ReturnValue;                // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalUIMapObjectRaidBossAreaStatusModel* CallFunc_GetUIModel_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetPhaseRemainingTime_ReturnValue;        // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_FTrunc_A_ImplicitCast;                    // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_RaidBossAreaStatusWorldHUD_C_ReflectCurrentRemaingTime;
+DUMPER7_ASSERTS_WBP_RaidBossAreaStatusWorldHUD_C_Tick;
 
 // Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.Setup
 // 0x0048 (0x0048 - 0x0000)
@@ -112,15 +76,51 @@ public:
 };
 DUMPER7_ASSERTS_WBP_RaidBossAreaStatusWorldHUD_C_Setup;
 
-// Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.Tick
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_RaidBossAreaStatusWorldHUD_C_Tick final
+// Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.ReflectCurrentRemaingTime
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_RaidBossAreaStatusWorldHUD_C_ReflectCurrentRemaingTime final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         RemainingTotalSeconds;                             // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Divide_IntInt_ReturnValue;                // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalUIMapObjectRaidBossAreaStatusModel* CallFunc_GetUIModel_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetPhaseRemainingTime_ReturnValue;        // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_FTrunc_A_ImplicitCast;                    // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_RaidBossAreaStatusWorldHUD_C_Tick;
+DUMPER7_ASSERTS_WBP_RaidBossAreaStatusWorldHUD_C_ReflectCurrentRemaingTime;
+
+// Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.ReflectCurrentPhase
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_RaidBossAreaStatusWorldHUD_C_ReflectCurrentPhase final
+{
+public:
+	EPalRaidBossAreaPhase                         InPhase;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_RaidBossAreaStatusWorldHUD_C_ReflectCurrentPhase;
+
+// Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.OnUpdateRaidBossStaticItemId
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_RaidBossAreaStatusWorldHUD_C_OnUpdateRaidBossStaticItemId final
+{
+public:
+	class UPalUIMapObjectRaidBossAreaStatusModel* UIModel;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetRaidBossStaticItemId_ReturnValue;      // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_RaidBossAreaStatusWorldHUD_C_OnUpdateRaidBossStaticItemId;
+
+// Function WBP_RaidBossAreaStatusWorldHUD.WBP_RaidBossAreaStatusWorldHUD_C.OnUpdatePhase
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_RaidBossAreaStatusWorldHUD_C_OnUpdatePhase final
+{
+public:
+	class UPalUIMapObjectRaidBossAreaStatusModel* UIModel;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPalRaidBossAreaPhase                         CallFunc_GetCurrentPhase_ReturnValue;              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_RaidBossAreaStatusWorldHUD_C_OnUpdatePhase;
 
 }
 

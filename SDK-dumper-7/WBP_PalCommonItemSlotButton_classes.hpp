@@ -38,21 +38,21 @@ public:
 	class UWBP_PalInvisibleButton_C*              WBP_PalInvisibleButton;                            // 0x0670(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Focus();
-	void AnmEvent_Lock();
-	void AnmEvent_Push();
-	void AnmEvent_Unfocus();
-	void AnmEvent_Unlock();
-	void DraggedEvent(class UWBP_PalItemSlotButtonBase_C* Widget);
-	void ExecuteUbergraph_WBP_PalCommonItemSlotButton(int32 EntryPoint);
-	void LiftedEvent(int32 LiftNum, class UWBP_PalItemSlotButtonBase_C* Widget);
-	void OnInitialized();
-	void PlayDropAnim(class UWBP_PalItemSlotButtonBase_C* Widget);
-	void PlayFocusAnim(class UWBP_PalItemSlotButtonBase_C* Widget);
-	void PlayPushAnim(class UWBP_PalItemSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
-	void PlayUnfocusAnim(class UWBP_PalItemSlotButtonBase_C* Widget);
-	void RegisterButton(class UCommonButtonBase** Button);
 	void RegisterItemSlotWidget(class UWBP_PalItemSlotBase_C** itemSlotWidget);
+	void RegisterButton(class UCommonButtonBase** Button);
+	void PlayUnfocusAnim(class UWBP_PalItemSlotButtonBase_C* Widget);
+	void PlayPushAnim(class UWBP_PalItemSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
+	void PlayFocusAnim(class UWBP_PalItemSlotButtonBase_C* Widget);
+	void PlayDropAnim(class UWBP_PalItemSlotButtonBase_C* Widget);
+	void OnInitialized();
+	void LiftedEvent(int32 LiftNum, class UWBP_PalItemSlotButtonBase_C* Widget);
+	void ExecuteUbergraph_WBP_PalCommonItemSlotButton(int32 EntryPoint);
+	void DraggedEvent(class UWBP_PalItemSlotButtonBase_C* Widget);
+	void AnmEvent_Unlock();
+	void AnmEvent_Unfocus();
+	void AnmEvent_Push();
+	void AnmEvent_Lock();
+	void AnmEvent_Focus();
 
 public:
 	static class UClass* StaticClass()

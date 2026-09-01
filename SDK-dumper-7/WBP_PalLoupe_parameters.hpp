@@ -16,26 +16,16 @@
 namespace SDK::Params
 {
 
-// Function WBP_PalLoupe.WBP_PalLoupe_C.ExecuteUbergraph_WBP_PalLoupe
-// 0x0024 (0x0024 - 0x0000)
-struct WBP_PalLoupe_C_ExecuteUbergraph_WBP_PalLoupe final
+// Function WBP_PalLoupe.WBP_PalLoupe_C.UpdateHunger
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_PalLoupe_C_UpdateHunger final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(double nowHunger, double nowMaxHunger)> K2Node_CreateDelegate_OutputDelegate;     // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& nowMaxHP)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0014(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        nowHunger;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        nowMaxHunger;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalLoupe_C_ExecuteUbergraph_WBP_PalLoupe;
-
-// Function WBP_PalLoupe.WBP_PalLoupe_C.SetTargetPal
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PalLoupe_C_SetTargetPal final
-{
-public:
-	class UPalIndividualCharacterSlot*            TargetSlot;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalLoupe_C_SetTargetPal;
+DUMPER7_ASSERTS_WBP_PalLoupe_C_UpdateHunger;
 
 // Function WBP_PalLoupe.WBP_PalLoupe_C.UpdateHP
 // 0x0028 (0x0028 - 0x0000)
@@ -51,16 +41,26 @@ public:
 };
 DUMPER7_ASSERTS_WBP_PalLoupe_C_UpdateHP;
 
-// Function WBP_PalLoupe.WBP_PalLoupe_C.UpdateHunger
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_PalLoupe_C_UpdateHunger final
+// Function WBP_PalLoupe.WBP_PalLoupe_C.SetTargetPal
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PalLoupe_C_SetTargetPal final
 {
 public:
-	double                                        nowHunger;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        nowMaxHunger;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterSlot*            TargetSlot;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalLoupe_C_UpdateHunger;
+DUMPER7_ASSERTS_WBP_PalLoupe_C_SetTargetPal;
+
+// Function WBP_PalLoupe.WBP_PalLoupe_C.ExecuteUbergraph_WBP_PalLoupe
+// 0x0024 (0x0024 - 0x0000)
+struct WBP_PalLoupe_C_ExecuteUbergraph_WBP_PalLoupe final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(double nowHunger, double nowMaxHunger)> K2Node_CreateDelegate_OutputDelegate;     // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& nowMaxHP)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0014(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalLoupe_C_ExecuteUbergraph_WBP_PalLoupe;
 
 }
 

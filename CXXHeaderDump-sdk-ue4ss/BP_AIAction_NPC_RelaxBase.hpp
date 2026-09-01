@@ -35,7 +35,7 @@ class UBP_AIAction_NPC_RelaxBase_C : public UBP_AIAction_CanCombatBase_C
     void SetSightSkipFlag();
     void ActionPostTick(class APawn* ControlledPawn, float DeltaSeconds);
     void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
-    void OnSightCheckAsyncCompleted(bool bIncludedPlayer, bool bIncludedAliveNPC, bool bIncludedEdibleDeadNPC, const TArray<class APalCharacter*>& InSightCharacters);
+    void OnSightCheckAsyncCompleted(bool bIncludedPlayer, bool bIncludedAliveNPC, bool bIncludedEdibleDeadNPC, const TArray<APalCharacter*>& InSightCharacters);
     void ExecuteUbergraph_BP_AIAction_NPC_RelaxBase(int32 EntryPoint);
 }; // Size: 0x21A
 

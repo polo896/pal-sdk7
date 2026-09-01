@@ -25,8 +25,8 @@ class UWBP_Arena_Spectate_List_C : public UUserWidget
     class UWBP_Arena_PalIcon_C* WBP_Arena_PalIcon_13;                                 // 0x0310 (size: 0x8)
     class UWBP_Arena_PalIcon_C* WBP_Arena_PalIcon_14;                                 // 0x0318 (size: 0x8)
     class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x0320 (size: 0x8)
-    TArray<class UWBP_Arena_PalIcon_C*> Player1Otomos;                                // 0x0328 (size: 0x10)
-    TArray<class UWBP_Arena_PalIcon_C*> Player2Otomos;                                // 0x0338 (size: 0x10)
+    TArray<UWBP_Arena_PalIcon_C*> Player1Otomos;                                      // 0x0328 (size: 0x10)
+    TArray<UWBP_Arena_PalIcon_C*> Player2Otomos;                                      // 0x0338 (size: 0x10)
     FWBP_Arena_Spectate_List_COnSpecClicked OnSpecClicked;                            // 0x0348 (size: 0x10)
     void OnSpecClicked(class UWBP_Arena_Spectate_List_C* ListUI);
     FWBP_Arena_Spectate_List_COnSpecHovered OnSpecHovered;                            // 0x0358 (size: 0x10)

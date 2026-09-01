@@ -17,17 +17,101 @@
 namespace SDK
 {
 
-// Function WBP_WorkSuitabilityPreference.WBP_WorkSuitabilityPreference_C.BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_0_OnClickedCloseButton__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_WorkSuitabilityPreference.WBP_WorkSuitabilityPreference_C.Setup
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_WorkSuitabilityPreference_C::BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_0_OnClickedCloseButton__DelegateSignature()
+void UWBP_WorkSuitabilityPreference_C::Setup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorkSuitabilityPreference_C", "BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_0_OnClickedCloseButton__DelegateSignature");
+		Func = Class->GetFunction("WBP_WorkSuitabilityPreference_C", "Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WorkSuitabilityPreference.WBP_WorkSuitabilityPreference_C.OnTrigger_ToggleDetail
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_WorkSuitabilityPreference_C::OnTrigger_ToggleDetail()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorkSuitabilityPreference_C", "OnTrigger_ToggleDetail");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WorkSuitabilityPreference.WBP_WorkSuitabilityPreference_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_WorkSuitabilityPreference_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorkSuitabilityPreference_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WorkSuitabilityPreference.WBP_WorkSuitabilityPreference_C.ExecuteUbergraph_WBP_WorkSuitabilityPreference
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WorkSuitabilityPreference_C::ExecuteUbergraph_WBP_WorkSuitabilityPreference(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorkSuitabilityPreference_C", "ExecuteUbergraph_WBP_WorkSuitabilityPreference");
+
+	Params::WBP_WorkSuitabilityPreference_C_ExecuteUbergraph_WBP_WorkSuitabilityPreference Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WorkSuitabilityPreference.WBP_WorkSuitabilityPreference_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_WorkSuitabilityPreference_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorkSuitabilityPreference_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WorkSuitabilityPreference.WBP_WorkSuitabilityPreference_C.BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_2_OnChangedBattleModeSetting__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// bool                                    CanBattle                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalIndividualCharacterSlot*      Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WorkSuitabilityPreference_C::BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_2_OnChangedBattleModeSetting__DelegateSignature(bool CanBattle, class UPalIndividualCharacterSlot* Slot_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorkSuitabilityPreference_C", "BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_2_OnChangedBattleModeSetting__DelegateSignature");
+
+	Params::WBP_WorkSuitabilityPreference_C_BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_2_OnChangedBattleModeSetting__DelegateSignature Parms{};
+
+	Parms.CanBattle = CanBattle;
+	Parms.Slot_0 = Slot_0;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -55,99 +139,15 @@ void UWBP_WorkSuitabilityPreference_C::BndEvt__WBP_WorkSuitabilityPreference_WBP
 }
 
 
-// Function WBP_WorkSuitabilityPreference.WBP_WorkSuitabilityPreference_C.BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_2_OnChangedBattleModeSetting__DelegateSignature
+// Function WBP_WorkSuitabilityPreference.WBP_WorkSuitabilityPreference_C.BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_0_OnClickedCloseButton__DelegateSignature
 // (BlueprintEvent)
-// Parameters:
-// bool                                    CanBattle                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPalIndividualCharacterSlot*      Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_WorkSuitabilityPreference_C::BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_2_OnChangedBattleModeSetting__DelegateSignature(bool CanBattle, class UPalIndividualCharacterSlot* Slot_0)
+void UWBP_WorkSuitabilityPreference_C::BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_0_OnClickedCloseButton__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorkSuitabilityPreference_C", "BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_2_OnChangedBattleModeSetting__DelegateSignature");
-
-	Params::WBP_WorkSuitabilityPreference_C_BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_2_OnChangedBattleModeSetting__DelegateSignature Parms{};
-
-	Parms.CanBattle = CanBattle;
-	Parms.Slot_0 = Slot_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WorkSuitabilityPreference.WBP_WorkSuitabilityPreference_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_WorkSuitabilityPreference_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorkSuitabilityPreference_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WorkSuitabilityPreference.WBP_WorkSuitabilityPreference_C.ExecuteUbergraph_WBP_WorkSuitabilityPreference
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WorkSuitabilityPreference_C::ExecuteUbergraph_WBP_WorkSuitabilityPreference(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorkSuitabilityPreference_C", "ExecuteUbergraph_WBP_WorkSuitabilityPreference");
-
-	Params::WBP_WorkSuitabilityPreference_C_ExecuteUbergraph_WBP_WorkSuitabilityPreference Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WorkSuitabilityPreference.WBP_WorkSuitabilityPreference_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_WorkSuitabilityPreference_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorkSuitabilityPreference_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WorkSuitabilityPreference.WBP_WorkSuitabilityPreference_C.OnTrigger_ToggleDetail
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_WorkSuitabilityPreference_C::OnTrigger_ToggleDetail()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorkSuitabilityPreference_C", "OnTrigger_ToggleDetail");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WorkSuitabilityPreference.WBP_WorkSuitabilityPreference_C.Setup
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_WorkSuitabilityPreference_C::Setup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorkSuitabilityPreference_C", "Setup");
+		Func = Class->GetFunction("WBP_WorkSuitabilityPreference_C", "BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_0_OnClickedCloseButton__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

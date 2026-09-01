@@ -17,21 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_IngameCompass_arrow.WBP_IngameCompass_arrow_C.ChangeBorderColor
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameCompass_arrow.WBP_IngameCompass_arrow_C.SetDistanceText
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FLinearColor&              Color                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Length                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameCompass_arrow_C::ChangeBorderColor(const struct FLinearColor& Color)
+void UWBP_IngameCompass_arrow_C::SetDistanceText(double Length)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameCompass_arrow_C", "ChangeBorderColor");
+		Func = Class->GetFunction("WBP_IngameCompass_arrow_C", "SetDistanceText");
 
-	Params::WBP_IngameCompass_arrow_C_ChangeBorderColor Parms{};
+	Params::WBP_IngameCompass_arrow_C_SetDistanceText Parms{};
 
-	Parms.Color = std::move(Color);
+	Parms.Length = Length;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,21 +57,21 @@ void UWBP_IngameCompass_arrow_C::ChangeBorderDrawType(ESlateBrushDrawType drawTy
 }
 
 
-// Function WBP_IngameCompass_arrow.WBP_IngameCompass_arrow_C.SetDistanceText
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameCompass_arrow.WBP_IngameCompass_arrow_C.ChangeBorderColor
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  Length                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              Color                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameCompass_arrow_C::SetDistanceText(double Length)
+void UWBP_IngameCompass_arrow_C::ChangeBorderColor(const struct FLinearColor& Color)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameCompass_arrow_C", "SetDistanceText");
+		Func = Class->GetFunction("WBP_IngameCompass_arrow_C", "ChangeBorderColor");
 
-	Params::WBP_IngameCompass_arrow_C_SetDistanceText Parms{};
+	Params::WBP_IngameCompass_arrow_C_ChangeBorderColor Parms{};
 
-	Parms.Length = Length;
+	Parms.Color = std::move(Color);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

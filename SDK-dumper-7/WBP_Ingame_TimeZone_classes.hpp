@@ -31,9 +31,9 @@ public:
 	class UImage*                                 IconNight;                                         // 0x0298(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Ingame_TimeZone(int32 EntryPoint);
-	void OnInitialized();
 	void UpdateTime();
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_Ingame_TimeZone(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

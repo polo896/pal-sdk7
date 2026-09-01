@@ -16,6 +16,24 @@
 namespace SDK::Params
 {
 
+// Function BP_LevelGimmick_AreaBarrier_Volume.BP_LevelGimmick_AreaBarrier_Volume_C.ReceiveActorEndOverlap
+// 0x0008 (0x0008 - 0x0000)
+struct BP_LevelGimmick_AreaBarrier_Volume_C_ReceiveActorEndOverlap final
+{
+public:
+	class AActor*                                 OtherActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_Volume_C_ReceiveActorEndOverlap;
+
+// Function BP_LevelGimmick_AreaBarrier_Volume.BP_LevelGimmick_AreaBarrier_Volume_C.ReceiveActorBeginOverlap
+// 0x0008 (0x0008 - 0x0000)
+struct BP_LevelGimmick_AreaBarrier_Volume_C_ReceiveActorBeginOverlap final
+{
+public:
+	class AActor*                                 OtherActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_Volume_C_ReceiveActorBeginOverlap;
+
 // Function BP_LevelGimmick_AreaBarrier_Volume.BP_LevelGimmick_AreaBarrier_Volume_C.ExecuteUbergraph_BP_LevelGimmick_AreaBarrier_Volume
 // 0x0040 (0x0040 - 0x0000)
 struct BP_LevelGimmick_AreaBarrier_Volume_C_ExecuteUbergraph_BP_LevelGimmick_AreaBarrier_Volume final
@@ -33,24 +51,6 @@ public:
 	class ABP_LevelGimmick_AreaBarrier_Info_C*    CallFunc_GetActorOfClass_ReturnValue_1;            // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_Volume_C_ExecuteUbergraph_BP_LevelGimmick_AreaBarrier_Volume;
-
-// Function BP_LevelGimmick_AreaBarrier_Volume.BP_LevelGimmick_AreaBarrier_Volume_C.ReceiveActorBeginOverlap
-// 0x0008 (0x0008 - 0x0000)
-struct BP_LevelGimmick_AreaBarrier_Volume_C_ReceiveActorBeginOverlap final
-{
-public:
-	class AActor*                                 OtherActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_Volume_C_ReceiveActorBeginOverlap;
-
-// Function BP_LevelGimmick_AreaBarrier_Volume.BP_LevelGimmick_AreaBarrier_Volume_C.ReceiveActorEndOverlap
-// 0x0008 (0x0008 - 0x0000)
-struct BP_LevelGimmick_AreaBarrier_Volume_C_ReceiveActorEndOverlap final
-{
-public:
-	class AActor*                                 OtherActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_LevelGimmick_AreaBarrier_Volume_C_ReceiveActorEndOverlap;
 
 }
 

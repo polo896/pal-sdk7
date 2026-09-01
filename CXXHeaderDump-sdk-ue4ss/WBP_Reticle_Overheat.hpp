@@ -9,7 +9,7 @@ class UWBP_Reticle_Overheat_C : public UPalUIAimReticleBase
     class UImage* Image;                                                              // 0x0498 (size: 0x8)
     class UImage* Image_45;                                                           // 0x04A0 (size: 0x8)
     class UOverlay* Overlay_Gauge;                                                    // 0x04A8 (size: 0x8)
-    TSoftObjectPtr<ABP_OverheatRifle_C> SoftWeaponActor;                              // 0x04B0 (size: 0x30)
+    TSoftObjectPtr<class ABP_OverheatRifle_C> SoftWeaponActor;                        // 0x04B0 (size: 0x30)
     class UMaterialInstanceDynamic* GaugeMaterialL;                                   // 0x04E0 (size: 0x8)
     class UMaterialInstanceDynamic* GaugeMaterialR;                                   // 0x04E8 (size: 0x8)
 

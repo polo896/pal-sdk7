@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function ABP_Weapon_AssaultRifle_011.ABP_Weapon_AssaultRifle_011_C.ExecuteUbergraph_ABP_Weapon_AssaultRifle_011
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UABP_Weapon_AssaultRifle_011_C::ExecuteUbergraph_ABP_Weapon_AssaultRifle_011(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ABP_Weapon_AssaultRifle_011_C", "ExecuteUbergraph_ABP_Weapon_AssaultRifle_011");
+
+	Params::ABP_Weapon_AssaultRifle_011_C_ExecuteUbergraph_ABP_Weapon_AssaultRifle_011 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function ABP_Weapon_AssaultRifle_011.ABP_Weapon_AssaultRifle_011_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -38,26 +58,6 @@ void UABP_Weapon_AssaultRifle_011_C::AnimGraph(const struct FPoseLink& InPose, s
 
 	if (AnimGraph_0 != nullptr)
 		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
-}
-
-
-// Function ABP_Weapon_AssaultRifle_011.ABP_Weapon_AssaultRifle_011_C.ExecuteUbergraph_ABP_Weapon_AssaultRifle_011
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UABP_Weapon_AssaultRifle_011_C::ExecuteUbergraph_ABP_Weapon_AssaultRifle_011(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_Weapon_AssaultRifle_011_C", "ExecuteUbergraph_ABP_Weapon_AssaultRifle_011");
-
-	Params::ABP_Weapon_AssaultRifle_011_C_ExecuteUbergraph_ABP_Weapon_AssaultRifle_011 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

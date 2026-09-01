@@ -17,19 +17,19 @@
 namespace SDK
 {
 
-// Function BP_MapObject_SupplyDrop.BP_MapObject_SupplyDrop_C.BP_OnSetConcreteModel
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function BP_MapObject_SupplyDrop.BP_MapObject_SupplyDrop_C.SetActiveFXInLocal
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UPalMapObjectConcreteModelBase*   ConcreteModel                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MapObject_SupplyDrop_C::BP_OnSetConcreteModel(class UPalMapObjectConcreteModelBase* ConcreteModel)
+void ABP_MapObject_SupplyDrop_C::SetActiveFXInLocal(class UPalMapObjectConcreteModelBase* ConcreteModel)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_SupplyDrop_C", "BP_OnSetConcreteModel");
+		Func = Class->GetFunction("BP_MapObject_SupplyDrop_C", "SetActiveFXInLocal");
 
-	Params::BP_MapObject_SupplyDrop_C_BP_OnSetConcreteModel Parms{};
+	Params::BP_MapObject_SupplyDrop_C_SetActiveFXInLocal Parms{};
 
 	Parms.ConcreteModel = ConcreteModel;
 
@@ -57,19 +57,19 @@ void ABP_MapObject_SupplyDrop_C::ExecuteUbergraph_BP_MapObject_SupplyDrop(int32 
 }
 
 
-// Function BP_MapObject_SupplyDrop.BP_MapObject_SupplyDrop_C.SetActiveFXInLocal
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function BP_MapObject_SupplyDrop.BP_MapObject_SupplyDrop_C.BP_OnSetConcreteModel
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UPalMapObjectConcreteModelBase*   ConcreteModel                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MapObject_SupplyDrop_C::SetActiveFXInLocal(class UPalMapObjectConcreteModelBase* ConcreteModel)
+void ABP_MapObject_SupplyDrop_C::BP_OnSetConcreteModel(class UPalMapObjectConcreteModelBase* ConcreteModel)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_SupplyDrop_C", "SetActiveFXInLocal");
+		Func = Class->GetFunction("BP_MapObject_SupplyDrop_C", "BP_OnSetConcreteModel");
 
-	Params::BP_MapObject_SupplyDrop_C_SetActiveFXInLocal Parms{};
+	Params::BP_MapObject_SupplyDrop_C_BP_OnSetConcreteModel Parms{};
 
 	Parms.ConcreteModel = ConcreteModel;
 

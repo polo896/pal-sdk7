@@ -15,7 +15,7 @@ class UWBP_IngameMenu_PalBox_Preset_C : public UPalUIOtomoLoadoutBase
     FPalUIActionBindData RightClickDisplayAction;                                     // 0x04C8 (size: 0x4)
     class UWBP_IngameMenu_PalBox_PresetList_C* LastViewDetailLoadoutGroup;            // 0x04D0 (size: 0x8)
     TArray<FPalInstanceID> ReplicatedInstanceIds;                                     // 0x04D8 (size: 0x10)
-    TMap<class FPalInstanceID, class UPalIndividualCharacterHandle*> ReplicateCharacterParameterMap; // 0x04E8 (size: 0x50)
+    TMap<FPalInstanceID, UPalIndividualCharacterHandle*> ReplicateCharacterParameterMap; // 0x04E8 (size: 0x50)
     FPalInstanceID CurrentWaitSyncInstanceId;                                         // 0x0538 (size: 0x30)
 
     void HideCharacterDetail();

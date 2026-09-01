@@ -6,9 +6,9 @@ class ABP_SphereLauncher_C : public ABP_RocketLauncher_C
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x06F0 (size: 0x8)
     double ScatteredAngle;                                                            // 0x06F8 (size: 0x8)
     TArray<FName> ItemNameList;                                                       // 0x0700 (size: 0x10)
-    TArray<class TSubclassOf<ABP_PalSphere_ThrowObject_C>> BulletClass;               // 0x0710 (size: 0x10)
+    TArray<TSubclassOf<class ABP_PalSphere_ThrowObject_C>> BulletClass;               // 0x0710 (size: 0x10)
     int32 CurrentBallIndex;                                                           // 0x0720 (size: 0x4)
-    TMap<class FName, class EPalCaptureSphereLevelType> ItemName_LevelTypeMap;        // 0x0728 (size: 0x50)
+    TMap<FName, EPalCaptureSphereLevelType> ItemName_LevelTypeMap;                    // 0x0728 (size: 0x50)
     FBP_SphereLauncher_COnLaunchPalSphere OnLaunchPalSphere;                          // 0x0778 (size: 0x10)
     void OnLaunchPalSphere(class AActor* Bullet);
     double Const_BulletSpeed;                                                         // 0x0788 (size: 0x8)
@@ -32,6 +32,7 @@ class ABP_SphereLauncher_C : public ABP_RocketLauncher_C
     void CustomEvent(int32 bulletsNum);
     void OnPalSphereChangeSelectedIndex(EPalPlayerInventoryType inventoryType, int32 Index);
     void ReceiveEndPlay(TEnumAsByte<EEndPlayReason::Type> EndPlayReason);
+    void OnPullTrigger();
     void ExecuteUbergraph_BP_SphereLauncher(int32 EntryPoint);
     void OnLaunchPalSphere__DelegateSignature(class AActor* Bullet);
 }; // Size: 0x7A8

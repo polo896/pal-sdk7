@@ -30,10 +30,10 @@ public:
 	TMulticastInlineDelegate<void()>              OnAllBuffPanelClose;                               // 0x0298(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__WBP_Research_AllBuff_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void ExecuteUbergraph_WBP_Research_AllBuff(int32 EntryPoint);
-	struct FEventReply OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent);
 	void Setup(const TArray<struct FPalUIGuildLabPassiveEffectInfo>& Effects);
+	struct FEventReply OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent);
+	void ExecuteUbergraph_WBP_Research_AllBuff(int32 EntryPoint);
+	void BndEvt__WBP_Research_AllBuff_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()

@@ -110,7 +110,7 @@ class UClothSharedConfigCommon : public UClothConfigCommon
 class UClothingAssetCommon : public UClothingAssetBase
 {
     class UPhysicsAsset* PhysicsAsset;                                                // 0x0048 (size: 0x8)
-    TMap<class FName, class UClothConfigBase*> ClothConfigs;                          // 0x0050 (size: 0x50)
+    TMap<FName, UClothConfigBase*> ClothConfigs;                                      // 0x0050 (size: 0x50)
     TArray<FClothLODDataCommon> LODData;                                              // 0x00A0 (size: 0x10)
     TArray<int32> LodMap;                                                             // 0x00B0 (size: 0x10)
     TArray<FName> UsedBoneNames;                                                      // 0x00C0 (size: 0x10)

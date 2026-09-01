@@ -155,7 +155,7 @@ class UGameUIPolicy : public UObject
 
 class UPrimaryGameLayout : public UCommonUserWidget
 {
-    TMap<class FGameplayTag, class UCommonActivatableWidgetContainerBase*> Layers;    // 0x02B8 (size: 0x50)
+    TMap<FGameplayTag, UCommonActivatableWidgetContainerBase*> Layers;                // 0x02B8 (size: 0x50)
 
     void RegisterLayer(FGameplayTag LayerTag, class UCommonActivatableWidgetContainerBase* LayerWidget);
 }; // Size: 0x308

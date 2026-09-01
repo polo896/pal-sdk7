@@ -16,51 +16,14 @@
 namespace SDK::Params
 {
 
-// Function WBP_ItemChest_Preference.WBP_ItemChest_Preference_C.BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_4_OnEditedCustomName__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_ItemChest_Preference_C_BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_4_OnEditedCustomName__DelegateSignature final
+// Function WBP_ItemChest_Preference.WBP_ItemChest_Preference_C.WBP_ItemChest_Preference_AutoGenFunc
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_ItemChest_Preference_C_WBP_ItemChest_Preference_AutoGenFunc final
 {
 public:
-	class FString                                 NewCustomName;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEditingCustomName_bEditing;             // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ItemChest_Preference_C_BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_4_OnEditedCustomName__DelegateSignature;
-
-// Function WBP_ItemChest_Preference.WBP_ItemChest_Preference_C.ExecuteUbergraph_WBP_ItemChest_Preference
-// 0x0080 (0x0080 - 0x0000)
-struct WBP_ItemChest_Preference_C_ExecuteUbergraph_WBP_ItemChest_Preference final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FString                                 K2Node_ComponentBoundEvent_NewCustomName;          // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class APalNetworkTransmitter*                 CallFunc_GetNetworkTransmitter_ReturnValue;        // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalNetworkMapObjectComponent*          CallFunc_GetMapObject_ReturnValue;                 // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalHUDDispatchParameter_MapObject*     K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_Map_Object; // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGuid                                  CallFunc_GetModelInstanceId_ReturnValue;           // 0x005C(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x006C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ItemChest_Preference_C_ExecuteUbergraph_WBP_ItemChest_Preference;
-
-// Function WBP_ItemChest_Preference.WBP_ItemChest_Preference_C.OnClickedCheck
-// 0x000C (0x000C - 0x0000)
-struct WBP_ItemChest_Preference_C_OnClickedCheck final
-{
-public:
-	class FName                                   FilterId;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bChecked;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ItemChest_Preference_C_OnClickedCheck;
+DUMPER7_ASSERTS_WBP_ItemChest_Preference_C_WBP_ItemChest_Preference_AutoGenFunc;
 
 // Function WBP_ItemChest_Preference.WBP_ItemChest_Preference_C.Setup
 // 0x0110 (0x0110 - 0x0000)
@@ -102,14 +65,51 @@ public:
 };
 DUMPER7_ASSERTS_WBP_ItemChest_Preference_C_Setup;
 
-// Function WBP_ItemChest_Preference.WBP_ItemChest_Preference_C.WBP_ItemChest_Preference_AutoGenFunc
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_ItemChest_Preference_C_WBP_ItemChest_Preference_AutoGenFunc final
+// Function WBP_ItemChest_Preference.WBP_ItemChest_Preference_C.OnClickedCheck
+// 0x000C (0x000C - 0x0000)
+struct WBP_ItemChest_Preference_C_OnClickedCheck final
 {
 public:
-	bool                                          CallFunc_IsEditingCustomName_bEditing;             // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   FilterId;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bChecked;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ItemChest_Preference_C_WBP_ItemChest_Preference_AutoGenFunc;
+DUMPER7_ASSERTS_WBP_ItemChest_Preference_C_OnClickedCheck;
+
+// Function WBP_ItemChest_Preference.WBP_ItemChest_Preference_C.ExecuteUbergraph_WBP_ItemChest_Preference
+// 0x0080 (0x0080 - 0x0000)
+struct WBP_ItemChest_Preference_C_ExecuteUbergraph_WBP_ItemChest_Preference final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FString                                 K2Node_ComponentBoundEvent_NewCustomName;          // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class APalNetworkTransmitter*                 CallFunc_GetNetworkTransmitter_ReturnValue;        // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalNetworkMapObjectComponent*          CallFunc_GetMapObject_ReturnValue;                 // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalHUDDispatchParameter_MapObject*     K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_Map_Object; // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGuid                                  CallFunc_GetModelInstanceId_ReturnValue;           // 0x005C(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x006C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ItemChest_Preference_C_ExecuteUbergraph_WBP_ItemChest_Preference;
+
+// Function WBP_ItemChest_Preference.WBP_ItemChest_Preference_C.BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_4_OnEditedCustomName__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_ItemChest_Preference_C_BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_4_OnEditedCustomName__DelegateSignature final
+{
+public:
+	class FString                                 NewCustomName;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ItemChest_Preference_C_BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_4_OnEditedCustomName__DelegateSignature;
 
 // Function WBP_ItemChest_Preference.WBP_ItemChest_Preference_C.BP_GetDesiredFocusTarget
 // 0x0010 (0x0010 - 0x0000)

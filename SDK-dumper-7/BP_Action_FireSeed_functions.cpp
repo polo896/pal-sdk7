@@ -17,37 +17,23 @@
 namespace SDK
 {
 
-// Function BP_Action_FireSeed.BP_Action_FireSeed_C.ExecuteUbergraph_BP_Action_FireSeed
-// (Final, UbergraphFunction)
+// Function BP_Action_FireSeed.BP_Action_FireSeed_C.TickAction
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_Action_FireSeed_C::ExecuteUbergraph_BP_Action_FireSeed(int32 EntryPoint)
+void UBP_Action_FireSeed_C::TickAction(float DeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Action_FireSeed_C", "ExecuteUbergraph_BP_Action_FireSeed");
+		Func = Class->GetFunction("BP_Action_FireSeed_C", "TickAction");
 
-	Params::BP_Action_FireSeed_C_ExecuteUbergraph_BP_Action_FireSeed Parms{};
+	Params::BP_Action_FireSeed_C_TickAction Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.DeltaTime = DeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Action_FireSeed.BP_Action_FireSeed_C.OnBeginAction
-// (Event, Public, BlueprintEvent)
-
-void UBP_Action_FireSeed_C::OnBeginAction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Action_FireSeed_C", "OnBeginAction");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -71,21 +57,35 @@ void UBP_Action_FireSeed_C::OnSpawnEffect(class APalSkillEffectBase* Effect_0)
 }
 
 
-// Function BP_Action_FireSeed.BP_Action_FireSeed_C.TickAction
+// Function BP_Action_FireSeed.BP_Action_FireSeed_C.OnBeginAction
 // (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_Action_FireSeed_C::TickAction(float DeltaTime)
+void UBP_Action_FireSeed_C::OnBeginAction()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Action_FireSeed_C", "TickAction");
+		Func = Class->GetFunction("BP_Action_FireSeed_C", "OnBeginAction");
 
-	Params::BP_Action_FireSeed_C_TickAction Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.DeltaTime = DeltaTime;
+
+// Function BP_Action_FireSeed.BP_Action_FireSeed_C.ExecuteUbergraph_BP_Action_FireSeed
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_Action_FireSeed_C::ExecuteUbergraph_BP_Action_FireSeed(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Action_FireSeed_C", "ExecuteUbergraph_BP_Action_FireSeed");
+
+	Params::BP_Action_FireSeed_C_ExecuteUbergraph_BP_Action_FireSeed Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

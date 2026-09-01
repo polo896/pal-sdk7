@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function BP_Action_JumpFromJumpSpot.BP_Action_JumpFromJumpSpot_C.CanNextActionCancel
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-bool UBP_Action_JumpFromJumpSpot_C::CanNextActionCancel()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Action_JumpFromJumpSpot_C", "CanNextActionCancel");
-
-	Params::BP_Action_JumpFromJumpSpot_C_CanNextActionCancel Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
 // Function BP_Action_JumpFromJumpSpot.BP_Action_JumpFromJumpSpot_C.CanStepCancel
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -50,6 +30,26 @@ bool UBP_Action_JumpFromJumpSpot_C::CanStepCancel()
 		Func = Class->GetFunction("BP_Action_JumpFromJumpSpot_C", "CanStepCancel");
 
 	Params::BP_Action_JumpFromJumpSpot_C_CanStepCancel Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_Action_JumpFromJumpSpot.BP_Action_JumpFromJumpSpot_C.CanNextActionCancel
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UBP_Action_JumpFromJumpSpot_C::CanNextActionCancel()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Action_JumpFromJumpSpot_C", "CanNextActionCancel");
+
+	Params::BP_Action_JumpFromJumpSpot_C_CanNextActionCancel Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 

@@ -16,19 +16,15 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameHungerGauge.WBP_IngameHungerGauge_C.ExecuteUbergraph_WBP_IngameHungerGauge
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_IngameHungerGauge_C_ExecuteUbergraph_WBP_IngameHungerGauge final
+// Function WBP_IngameHungerGauge.WBP_IngameHungerGauge_C.SetHunger_ByRate
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameHungerGauge_C_SetHunger_ByRate final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_3;              // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        Rate;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetPercent_InPercent_ImplicitCast;        // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameHungerGauge_C_ExecuteUbergraph_WBP_IngameHungerGauge;
+DUMPER7_ASSERTS_WBP_IngameHungerGauge_C_SetHunger_ByRate;
 
 // Function WBP_IngameHungerGauge.WBP_IngameHungerGauge_C.SetHunger
 // 0x0010 (0x0010 - 0x0000)
@@ -42,15 +38,19 @@ public:
 };
 DUMPER7_ASSERTS_WBP_IngameHungerGauge_C_SetHunger;
 
-// Function WBP_IngameHungerGauge.WBP_IngameHungerGauge_C.SetHunger_ByRate
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameHungerGauge_C_SetHunger_ByRate final
+// Function WBP_IngameHungerGauge.WBP_IngameHungerGauge_C.ExecuteUbergraph_WBP_IngameHungerGauge
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_IngameHungerGauge_C_ExecuteUbergraph_WBP_IngameHungerGauge final
 {
 public:
-	double                                        Rate;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetPercent_InPercent_ImplicitCast;        // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_3;              // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameHungerGauge_C_SetHunger_ByRate;
+DUMPER7_ASSERTS_WBP_IngameHungerGauge_C_ExecuteUbergraph_WBP_IngameHungerGauge;
 
 }
 

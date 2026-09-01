@@ -73,7 +73,7 @@ struct FPartyRepData : public FOnlinePartyRepDataBase
 struct FSocialChatChannelConfig
 {
     class USocialUser* SocialUser;                                                    // 0x0000 (size: 0x8)
-    TArray<class USocialChatChannel*> ListenChannels;                                 // 0x0018 (size: 0x10)
+    TArray<USocialChatChannel*> ListenChannels;                                       // 0x0018 (size: 0x10)
 
 }; // Size: 0x40
 
@@ -114,11 +114,11 @@ class USocialChatChannel : public UObject
 
 class USocialChatManager : public UObject
 {
-    TMap<class TWeakObjectPtr<USocialUser>, class USocialPrivateMessageChannel*> DirectChannelsByTargetUser; // 0x0078 (size: 0x50)
-    TMap<class FString, class USocialChatRoom*> ChatRoomsById;                        // 0x00C8 (size: 0x50)
-    TMap<class FString, class USocialReadOnlyChatChannel*> ReadOnlyChannelsByDisplayName; // 0x0118 (size: 0x50)
+    TMap<TWeakObjectPtr<class USocialUser>, USocialPrivateMessageChannel*> DirectChannelsByTargetUser; // 0x0078 (size: 0x50)
+    TMap<FString, USocialChatRoom*> ChatRoomsById;                                    // 0x00C8 (size: 0x50)
+    TMap<FString, USocialReadOnlyChatChannel*> ReadOnlyChannelsByDisplayName;         // 0x0118 (size: 0x50)
     bool bEnableChatSlashCommands;                                                    // 0x0168 (size: 0x1)
-    TMap<class FUniqueNetIdRepl, class USocialGroupChannel*> GroupChannels;           // 0x0170 (size: 0x50)
+    TMap<FUniqueNetIdRepl, USocialGroupChannel*> GroupChannels;                       // 0x0170 (size: 0x50)
 
 }; // Size: 0x220
 
@@ -135,13 +135,13 @@ class USocialGroupChannel : public UObject
     class USocialUser* SocialUser;                                                    // 0x0028 (size: 0x8)
     FUniqueNetIdRepl GroupId;                                                         // 0x0030 (size: 0x30)
     FText DisplayName;                                                                // 0x0060 (size: 0x18)
-    TArray<class USocialUser*> Members;                                               // 0x0078 (size: 0x10)
+    TArray<USocialUser*> Members;                                                     // 0x0078 (size: 0x10)
 
 }; // Size: 0x98
 
 class USocialManager : public UObject
 {
-    TArray<class USocialToolkit*> SocialToolkits;                                     // 0x0050 (size: 0x10)
+    TArray<USocialToolkit*> SocialToolkits;                                           // 0x0050 (size: 0x10)
     class USocialDebugTools* SocialDebugTools;                                        // 0x0060 (size: 0x8)
 
 }; // Size: 0x1A8
@@ -152,7 +152,7 @@ class USocialParty : public UObject
     TSubclassOf<class ASpectatorBeaconClient> SpectatorBeaconClientClass;             // 0x0068 (size: 0x8)
     FUniqueNetIdRepl OwningLocalUserId;                                               // 0x0080 (size: 0x30)
     FUniqueNetIdRepl CurrentLeaderId;                                                 // 0x00B0 (size: 0x30)
-    TMap<class FUniqueNetIdRepl, class UPartyMember*> PartyMembersById;               // 0x00E0 (size: 0x50)
+    TMap<FUniqueNetIdRepl, UPartyMember*> PartyMembersById;                           // 0x00E0 (size: 0x50)
     bool bEnableAutomaticPartyRejoin;                                                 // 0x0130 (size: 0x1)
     double PlatformUserInviteCooldown;                                                // 0x0188 (size: 0x8)
     double PrimaryUserInviteCooldown;                                                 // 0x0190 (size: 0x8)
@@ -196,7 +196,7 @@ class USocialSettings : public UObject
 class USocialToolkit : public UObject
 {
     class USocialUser* LocalUser;                                                     // 0x0068 (size: 0x8)
-    TArray<class USocialUser*> AllUsers;                                              // 0x0070 (size: 0x10)
+    TArray<USocialUser*> AllUsers;                                                    // 0x0070 (size: 0x10)
     TWeakObjectPtr<class ULocalPlayer> LocalPlayerOwner;                              // 0x00D0 (size: 0x8)
     class USocialChatManager* SocialChatManager;                                      // 0x00D8 (size: 0x8)
 

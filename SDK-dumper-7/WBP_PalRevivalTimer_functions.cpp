@@ -17,21 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_PalRevivalTimer.WBP_PalRevivalTimer_C.SetProgressRate
+// Function WBP_PalRevivalTimer.WBP_PalRevivalTimer_C.SetResurrectAbility
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  Rate                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  ResurrectSpeedMultiplier                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalRevivalTimer_C::SetProgressRate(double Rate)
+void UWBP_PalRevivalTimer_C::SetResurrectAbility(double ResurrectSpeedMultiplier)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalRevivalTimer_C", "SetProgressRate");
+		Func = Class->GetFunction("WBP_PalRevivalTimer_C", "SetResurrectAbility");
 
-	Params::WBP_PalRevivalTimer_C_SetProgressRate Parms{};
+	Params::WBP_PalRevivalTimer_C_SetResurrectAbility Parms{};
 
-	Parms.Rate = Rate;
+	Parms.ResurrectSpeedMultiplier = ResurrectSpeedMultiplier;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,21 +57,21 @@ void UWBP_PalRevivalTimer_C::SetRemainingTime(double RemainingSeconds)
 }
 
 
-// Function WBP_PalRevivalTimer.WBP_PalRevivalTimer_C.SetResurrectAbility
+// Function WBP_PalRevivalTimer.WBP_PalRevivalTimer_C.SetProgressRate
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  ResurrectSpeedMultiplier                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Rate                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalRevivalTimer_C::SetResurrectAbility(double ResurrectSpeedMultiplier)
+void UWBP_PalRevivalTimer_C::SetProgressRate(double Rate)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalRevivalTimer_C", "SetResurrectAbility");
+		Func = Class->GetFunction("WBP_PalRevivalTimer_C", "SetProgressRate");
 
-	Params::WBP_PalRevivalTimer_C_SetResurrectAbility Parms{};
+	Params::WBP_PalRevivalTimer_C_SetProgressRate Parms{};
 
-	Parms.ResurrectSpeedMultiplier = ResurrectSpeedMultiplier;
+	Parms.Rate = Rate;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

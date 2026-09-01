@@ -16,21 +16,26 @@
 namespace SDK::Params
 {
 
-// Function BP_ActionPoisonShot.BP_ActionPoisonShot_C.ExecuteUbergraph_BP_ActionPoisonShot
-// 0x0020 (0x0020 - 0x0000)
-struct BP_ActionPoisonShot_C_ExecuteUbergraph_BP_ActionPoisonShot final
+// Function BP_ActionPoisonShot.BP_ActionPoisonShot_C.TickAction
+// 0x0004 (0x0004 - 0x0000)
+struct BP_ActionPoisonShot_C_TickAction final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         K2Node_Event_DeltaTime;                            // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsPlayerControlled_ReturnValue;           // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_ActionPoisonShot_C_ExecuteUbergraph_BP_ActionPoisonShot;
+DUMPER7_ASSERTS_BP_ActionPoisonShot_C_TickAction;
+
+// Function BP_ActionPoisonShot.BP_ActionPoisonShot_C.SetPredictedTarget_0
+// 0x0080 (0x0080 - 0x0000)
+struct BP_ActionPoisonShot_C_SetPredictedTarget_0 final
+{
+public:
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0000(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_GetActionTarget_ReturnValue;              // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue;          // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ActionPoisonShot_C_SetPredictedTarget_0;
 
 // Function BP_ActionPoisonShot.BP_ActionPoisonShot_C.OnSpawnEffect
 // 0x00C8 (0x00C8 - 0x0000)
@@ -56,26 +61,21 @@ public:
 };
 DUMPER7_ASSERTS_BP_ActionPoisonShot_C_OnSpawnEffect;
 
-// Function BP_ActionPoisonShot.BP_ActionPoisonShot_C.SetPredictedTarget_0
-// 0x0080 (0x0080 - 0x0000)
-struct BP_ActionPoisonShot_C_SetPredictedTarget_0 final
+// Function BP_ActionPoisonShot.BP_ActionPoisonShot_C.ExecuteUbergraph_BP_ActionPoisonShot
+// 0x0020 (0x0020 - 0x0000)
+struct BP_ActionPoisonShot_C_ExecuteUbergraph_BP_ActionPoisonShot final
 {
 public:
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0000(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_GetActionTarget_ReturnValue;              // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_FinishSpawningActor_ReturnValue;          // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         K2Node_Event_DeltaTime;                            // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_GetActionCharacter_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsPlayerControlled_ReturnValue;           // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_ActionPoisonShot_C_SetPredictedTarget_0;
-
-// Function BP_ActionPoisonShot.BP_ActionPoisonShot_C.TickAction
-// 0x0004 (0x0004 - 0x0000)
-struct BP_ActionPoisonShot_C_TickAction final
-{
-public:
-	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ActionPoisonShot_C_TickAction;
+DUMPER7_ASSERTS_BP_ActionPoisonShot_C_ExecuteUbergraph_BP_ActionPoisonShot;
 
 }
 

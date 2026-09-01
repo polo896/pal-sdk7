@@ -20,7 +20,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_AnimNotify_PlaySound.BP_AnimNotify_PlaySound_C
 // 0x0050 (0x0088 - 0x0038)
-class UBP_AnimNotify_PlaySound_C final : public UAnimNotify
+class UBP_AnimNotify_PlaySound_C : public UAnimNotify
 {
 public:
 	bool                                          Mute;                                              // 0x0038(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -32,9 +32,9 @@ public:
 	EPhysicalSurface                              DebugPhysicsMaterial;                              // 0x0080(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void PlaySound(class UMeshComponent* MeshComp) const;
-	void PlaySoundEditor(class UMeshComponent* MeshComp) const;
 	bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, const struct FAnimNotifyEventReference& EventReference) const;
+	void PlaySoundEditor(class UMeshComponent* MeshComp) const;
+	void PlaySound(class UMeshComponent* MeshComp) const;
 
 public:
 	static class UClass* StaticClass()

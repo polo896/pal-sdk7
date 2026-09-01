@@ -17,61 +17,21 @@
 namespace SDK
 {
 
-// Function BP_NPCAIController_Quest.BP_NPCAIController_Quest_C.EnableTickTurn
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsEnableTickTurn                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_NPCAIController_Quest_C::EnableTickTurn(bool IsEnableTickTurn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAIController_Quest_C", "EnableTickTurn");
-
-	Params::BP_NPCAIController_Quest_C_EnableTickTurn Parms{};
-
-	Parms.IsEnableTickTurn = IsEnableTickTurn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_NPCAIController_Quest.BP_NPCAIController_Quest_C.ExecuteUbergraph_BP_NPCAIController_Quest
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_NPCAIController_Quest_C::ExecuteUbergraph_BP_NPCAIController_Quest(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAIController_Quest_C", "ExecuteUbergraph_BP_NPCAIController_Quest");
-
-	Params::BP_NPCAIController_Quest_C_ExecuteUbergraph_BP_NPCAIController_Quest Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_NPCAIController_Quest.BP_NPCAIController_Quest_C.NotifyTalkStart
+// Function BP_NPCAIController_Quest.BP_NPCAIController_Quest_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// class APalPlayerCharacter*              TalkPlayer                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_NPCAIController_Quest_C::NotifyTalkStart(class APalPlayerCharacter* TalkPlayer)
+void ABP_NPCAIController_Quest_C::ReceiveTick(float DeltaSeconds)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAIController_Quest_C", "NotifyTalkStart");
+		Func = Class->GetFunction("BP_NPCAIController_Quest_C", "ReceiveTick");
 
-	Params::BP_NPCAIController_Quest_C_NotifyTalkStart Parms{};
+	Params::BP_NPCAIController_Quest_C_ReceiveTick Parms{};
 
-	Parms.TalkPlayer = TalkPlayer;
+	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -101,21 +61,61 @@ void ABP_NPCAIController_Quest_C::OnNpcTalkIncidentNotify(class UPalIncidentNoti
 }
 
 
-// Function BP_NPCAIController_Quest.BP_NPCAIController_Quest_C.ReceiveTick
+// Function BP_NPCAIController_Quest.BP_NPCAIController_Quest_C.NotifyTalkStart
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APalPlayerCharacter*              TalkPlayer                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_NPCAIController_Quest_C::ReceiveTick(float DeltaSeconds)
+void ABP_NPCAIController_Quest_C::NotifyTalkStart(class APalPlayerCharacter* TalkPlayer)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAIController_Quest_C", "ReceiveTick");
+		Func = Class->GetFunction("BP_NPCAIController_Quest_C", "NotifyTalkStart");
 
-	Params::BP_NPCAIController_Quest_C_ReceiveTick Parms{};
+	Params::BP_NPCAIController_Quest_C_NotifyTalkStart Parms{};
 
-	Parms.DeltaSeconds = DeltaSeconds;
+	Parms.TalkPlayer = TalkPlayer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_NPCAIController_Quest.BP_NPCAIController_Quest_C.ExecuteUbergraph_BP_NPCAIController_Quest
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_NPCAIController_Quest_C::ExecuteUbergraph_BP_NPCAIController_Quest(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAIController_Quest_C", "ExecuteUbergraph_BP_NPCAIController_Quest");
+
+	Params::BP_NPCAIController_Quest_C_ExecuteUbergraph_BP_NPCAIController_Quest Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_NPCAIController_Quest.BP_NPCAIController_Quest_C.EnableTickTurn
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsEnableTickTurn                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_NPCAIController_Quest_C::EnableTickTurn(bool IsEnableTickTurn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAIController_Quest_C", "EnableTickTurn");
+
+	Params::BP_NPCAIController_Quest_C_EnableTickTurn Parms{};
+
+	Parms.IsEnableTickTurn = IsEnableTickTurn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -17,98 +17,61 @@
 namespace SDK
 {
 
-// Function WBP_Map_IconPlayer.WBP_Map_IconPlayer_C.UpdatePvPItemCount
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Map_IconPlayer_C::UpdatePvPItemCount()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconPlayer_C", "UpdatePvPItemCount");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Map_IconPlayer.WBP_Map_IconPlayer_C.UpdateMapInfo
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Map_IconPlayer.WBP_Map_IconPlayer_C.BndEvt__WBP_Map_IconPlayer_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// const struct FPalPlayerInfoForMap&      mapInfo                                                (BlueprintVisible, BlueprintReadOnly, Parm)
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Map_IconPlayer_C::UpdateMapInfo(const struct FPalPlayerInfoForMap& mapInfo)
+void UWBP_Map_IconPlayer_C::BndEvt__WBP_Map_IconPlayer_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconPlayer_C", "UpdateMapInfo");
+		Func = Class->GetFunction("WBP_Map_IconPlayer_C", "BndEvt__WBP_Map_IconPlayer_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_Map_IconPlayer_C_UpdateMapInfo Parms{};
+	Params::WBP_Map_IconPlayer_C_BndEvt__WBP_Map_IconPlayer_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
 
-	Parms.mapInfo = std::move(mapInfo);
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Map_IconPlayer.WBP_Map_IconPlayer_C.SetupLocalPlayer
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Map_IconPlayer.WBP_Map_IconPlayer_C.BndEvt__WBP_Map_IconPlayer_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool                                    IsLocal                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Map_IconPlayer_C::SetupLocalPlayer(bool IsLocal)
+void UWBP_Map_IconPlayer_C::BndEvt__WBP_Map_IconPlayer_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconPlayer_C", "SetupLocalPlayer");
+		Func = Class->GetFunction("WBP_Map_IconPlayer_C", "BndEvt__WBP_Map_IconPlayer_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_Map_IconPlayer_C_SetupLocalPlayer Parms{};
+	Params::WBP_Map_IconPlayer_C_BndEvt__WBP_Map_IconPlayer_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature Parms{};
 
-	Parms.IsLocal = IsLocal;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Map_IconPlayer.WBP_Map_IconPlayer_C.SetupForceVisibility
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Map_IconPlayer.WBP_Map_IconPlayer_C.ExecuteUbergraph_WBP_Map_IconPlayer
+// (Final, UbergraphFunction)
 // Parameters:
-// bool*                                   bChangedVisibility                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Map_IconPlayer_C::SetupForceVisibility(bool* bChangedVisibility)
+void UWBP_Map_IconPlayer_C::ExecuteUbergraph_WBP_Map_IconPlayer(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconPlayer_C", "SetupForceVisibility");
+		Func = Class->GetFunction("WBP_Map_IconPlayer_C", "ExecuteUbergraph_WBP_Map_IconPlayer");
 
-	Params::WBP_Map_IconPlayer_C_SetupForceVisibility Parms{};
+	Params::WBP_Map_IconPlayer_C_ExecuteUbergraph_WBP_Map_IconPlayer Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (bChangedVisibility != nullptr)
-		*bChangedVisibility = Parms.bChangedVisibility;
-}
-
-
-// Function WBP_Map_IconPlayer.WBP_Map_IconPlayer_C.SetPlayerStateMapInfo
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalPlayerInfoForMap&      mapInfo                                                (BlueprintVisible, BlueprintReadOnly, Parm)
-// bool                                    bIsLocalPlayer                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Map_IconPlayer_C::SetPlayerStateMapInfo(const struct FPalPlayerInfoForMap& mapInfo, bool bIsLocalPlayer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconPlayer_C", "SetPlayerStateMapInfo");
-
-	Params::WBP_Map_IconPlayer_C_SetPlayerStateMapInfo Parms{};
-
-	Parms.mapInfo = std::move(mapInfo);
-	Parms.bIsLocalPlayer = bIsLocalPlayer;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -135,63 +98,100 @@ void UWBP_Map_IconPlayer_C::GetLocationPosition(struct FVector* LocationPosition
 }
 
 
-// Function WBP_Map_IconPlayer.WBP_Map_IconPlayer_C.ExecuteUbergraph_WBP_Map_IconPlayer
-// (Final, UbergraphFunction)
+// Function WBP_Map_IconPlayer.WBP_Map_IconPlayer_C.SetPlayerStateMapInfo
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FPalPlayerInfoForMap&      mapInfo                                                (BlueprintVisible, BlueprintReadOnly, Parm)
+// bool                                    bIsLocalPlayer                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Map_IconPlayer_C::ExecuteUbergraph_WBP_Map_IconPlayer(int32 EntryPoint)
+void UWBP_Map_IconPlayer_C::SetPlayerStateMapInfo(const struct FPalPlayerInfoForMap& mapInfo, bool bIsLocalPlayer)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconPlayer_C", "ExecuteUbergraph_WBP_Map_IconPlayer");
+		Func = Class->GetFunction("WBP_Map_IconPlayer_C", "SetPlayerStateMapInfo");
 
-	Params::WBP_Map_IconPlayer_C_ExecuteUbergraph_WBP_Map_IconPlayer Parms{};
+	Params::WBP_Map_IconPlayer_C_SetPlayerStateMapInfo Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.mapInfo = std::move(mapInfo);
+	Parms.bIsLocalPlayer = bIsLocalPlayer;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Map_IconPlayer.WBP_Map_IconPlayer_C.BndEvt__WBP_Map_IconPlayer_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Map_IconPlayer.WBP_Map_IconPlayer_C.SetupForceVisibility
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool*                                   bChangedVisibility                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Map_IconPlayer_C::BndEvt__WBP_Map_IconPlayer_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Map_IconPlayer_C::SetupForceVisibility(bool* bChangedVisibility)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconPlayer_C", "BndEvt__WBP_Map_IconPlayer_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Map_IconPlayer_C", "SetupForceVisibility");
 
-	Params::WBP_Map_IconPlayer_C_BndEvt__WBP_Map_IconPlayer_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_Map_IconPlayer_C_SetupForceVisibility Parms{};
 
-	Parms.Button = Button;
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (bChangedVisibility != nullptr)
+		*bChangedVisibility = Parms.bChangedVisibility;
+}
+
+
+// Function WBP_Map_IconPlayer.WBP_Map_IconPlayer_C.SetupLocalPlayer
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsLocal                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Map_IconPlayer_C::SetupLocalPlayer(bool IsLocal)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Map_IconPlayer_C", "SetupLocalPlayer");
+
+	Params::WBP_Map_IconPlayer_C_SetupLocalPlayer Parms{};
+
+	Parms.IsLocal = IsLocal;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Map_IconPlayer.WBP_Map_IconPlayer_C.BndEvt__WBP_Map_IconPlayer_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Map_IconPlayer.WBP_Map_IconPlayer_C.UpdateMapInfo
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const struct FPalPlayerInfoForMap&      mapInfo                                                (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_Map_IconPlayer_C::BndEvt__WBP_Map_IconPlayer_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Map_IconPlayer_C::UpdateMapInfo(const struct FPalPlayerInfoForMap& mapInfo)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_IconPlayer_C", "BndEvt__WBP_Map_IconPlayer_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Map_IconPlayer_C", "UpdateMapInfo");
 
-	Params::WBP_Map_IconPlayer_C_BndEvt__WBP_Map_IconPlayer_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_Map_IconPlayer_C_UpdateMapInfo Parms{};
 
-	Parms.Button = Button;
+	Parms.mapInfo = std::move(mapInfo);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Map_IconPlayer.WBP_Map_IconPlayer_C.UpdatePvPItemCount
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Map_IconPlayer_C::UpdatePvPItemCount()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Map_IconPlayer_C", "UpdatePvPItemCount");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

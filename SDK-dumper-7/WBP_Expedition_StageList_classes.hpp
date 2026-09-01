@@ -42,20 +42,20 @@ public:
 	TMulticastInlineDelegate<void(class UWBP_Expedition_StageList_C* Widget)> OnUnhovered;           // 0x03E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void AnmEvent_Focus();
-	void AnmEvent_Normal();
-	void BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void ExecuteUbergraph_WBP_Expedition_StageList(int32 EntryPoint);
-	void GetMissionID(class FName* MissionId);
-	void GetMissionInfo(struct FPalCharacterTeamMissionInfo* MissionInfo);
-	void Setup(const struct FPalCharacterTeamMissionInfo& MissionInfo);
-	void SetupDifficulty();
-	void SetupDisabledMissionInfo();
-	void SetupDungeonTexture();
-	void SetupMissionName();
 	void SetVisibilityRecruiting(bool bIsVisible);
+	void SetupMissionName();
+	void SetupDungeonTexture();
+	void SetupDisabledMissionInfo();
+	void SetupDifficulty();
+	void Setup(const struct FPalCharacterTeamMissionInfo& MissionInfo);
+	void GetMissionInfo(struct FPalCharacterTeamMissionInfo* MissionInfo);
+	void GetMissionID(class FName* MissionId);
+	void ExecuteUbergraph_WBP_Expedition_StageList(int32 EntryPoint);
+	void BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void AnmEvent_Normal();
+	void AnmEvent_Focus();
 
 public:
 	static class UClass* StaticClass()

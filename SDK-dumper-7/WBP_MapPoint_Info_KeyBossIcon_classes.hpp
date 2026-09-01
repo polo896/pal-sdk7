@@ -26,8 +26,8 @@ public:
 	class UWBP_PalCommonCharacterIcon_C*          WBP_PalCommonCharacterIcon;                        // 0x0288(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Setup_Hidden();
 	void Setup(class FName CharacterID);
+	void Setup_Hidden();
 
 public:
 	static class UClass* StaticClass()

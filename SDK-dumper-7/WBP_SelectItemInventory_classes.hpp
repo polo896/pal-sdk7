@@ -33,21 +33,21 @@ public:
 	struct FDataTableRowHandle                    BgMsgID;                                           // 0x04A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void ApplyUsabilityGrayout(class APalCharacter* TargetCharacter, class UWBP_PalItemSlotButtonBase_C* SlotButton);
-	void ApplyUsabilityGrayoutAll(class APalCharacter* TargetCharacter);
-	void BindUsabilityGrayout(class APalCharacter* TargetCharacter);
-	void BndEvt__WBP_SelectItemInventory_WBP_Common_Inventory_K2Node_ComponentBoundEvent_2_OnLeftClickSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType);
-	void BndEvt__WBP_SelectItemInventory_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void ComplateSelect(const struct FPalItemSlotId& SlotId, int32 selectNum);
-	void Destruct();
-	void DisplaySelectNumWidget();
-	void ExecuteUbergraph_WBP_SelectItemInventory(int32 EntryPoint);
-	void GetTargetCharacter(class APalCharacter** TargetCharacter);
-	void OnComplateSelectNum(EPalUISelectNumResult resultType, int64 selectedNum);
-	void OnFocusedSlot(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
-	void OnLeftClicked(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
-	void OnSetup();
 	void OnUpdatedSlot(class UWBP_PalItemSlotButtonBase_C* SlotButton);
+	void OnSetup();
+	void OnLeftClicked(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
+	void OnFocusedSlot(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
+	void OnComplateSelectNum(EPalUISelectNumResult resultType, int64 selectedNum);
+	void GetTargetCharacter(class APalCharacter** TargetCharacter);
+	void ExecuteUbergraph_WBP_SelectItemInventory(int32 EntryPoint);
+	void DisplaySelectNumWidget();
+	void Destruct();
+	void ComplateSelect(const struct FPalItemSlotId& SlotId, int32 selectNum);
+	void BndEvt__WBP_SelectItemInventory_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
+	void BndEvt__WBP_SelectItemInventory_WBP_Common_Inventory_K2Node_ComponentBoundEvent_2_OnLeftClickSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType);
+	void BindUsabilityGrayout(class APalCharacter* TargetCharacter);
+	void ApplyUsabilityGrayoutAll(class APalCharacter* TargetCharacter);
+	void ApplyUsabilityGrayout(class APalCharacter* TargetCharacter, class UWBP_PalItemSlotButtonBase_C* SlotButton);
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

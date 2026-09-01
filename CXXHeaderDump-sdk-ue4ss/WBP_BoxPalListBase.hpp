@@ -33,7 +33,7 @@ class UWBP_BoxPalListBase_C : public UPalUserWidget
     int32 LastSelectedPageNum;                                                        // 0x0528 (size: 0x4)
     int32 MaxPageNum;                                                                 // 0x052C (size: 0x4)
     FDataTableRowHandle PageNameMsgID;                                                // 0x0530 (size: 0x10)
-    TMap<class UPalIndividualCharacterSlot*, class UWBP_PalCommonCharacterSlotButton_C*> CurrentPalBoxSlotMap; // 0x0540 (size: 0x50)
+    TMap<UPalIndividualCharacterSlot*, UWBP_PalCommonCharacterSlotButton_C*> CurrentPalBoxSlotMap; // 0x0540 (size: 0x50)
     FWBP_BoxPalListBase_COnNextPageInput OnNextPageInput;                             // 0x0590 (size: 0x10)
     void OnNextPageInput();
     FWBP_BoxPalListBase_COnPrevPageInput OnPrevPageInput;                             // 0x05A0 (size: 0x10)
@@ -69,14 +69,14 @@ class UWBP_BoxPalListBase_C : public UPalUserWidget
     void GetTopFocusTarget(class UWidget*& Widget);
     void GetCurrentPage(int32& CurrentPageNum);
     void RemovePageControlAction();
-    void GetCurrentDisplaySlotWidgets(TArray<class UWBP_PalCommonCharacterSlotButton_C*>& SlotWidgets);
+    void GetCurrentDisplaySlotWidgets(TArray<UWBP_PalCommonCharacterSlotButton_C*>& SlotWidgets);
     void FindWidgetBySlot(class UPalIndividualCharacterSlot* Slot, class UWBP_PalCharacterSlotButtonBase_C*& FindWidget);
     void OnReleasedPrevPageInputInternal();
     void OnPressedPrevPageInputInternal();
     void OnReleasedNextPageInputInternal();
     void OnPressedNextPageInputInternal();
     void SetPageControlAction(FPalDataTableRowName_UIInputAction NextPageAction, FPalDataTableRowName_UIInputAction PrevPageAction);
-    void SetCharacterSlots(TArray<class UPalIndividualCharacterSlot*>& DisplaySlots);
+    void SetCharacterSlots(TArray<UPalIndividualCharacterSlot*>& DisplaySlots);
     void SetCurrentPage(int32 CurrentPage);
     void ClearPageSettings();
     void SetMaxPageNum(int32 MaxPage);

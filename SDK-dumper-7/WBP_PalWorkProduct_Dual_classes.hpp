@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "FPalUIWorkProductDualWidgetSet_structs.hpp"
 #include "Engine_structs.hpp"
-#include "Pal_structs.hpp"
 #include "UMG_classes.hpp"
 #include "CoreUObject_structs.hpp"
+#include "FPalUIWorkProductDualWidgetSet_structs.hpp"
+#include "Pal_structs.hpp"
 
 
 namespace SDK
@@ -62,34 +62,34 @@ public:
 	TMap<EPalWorkSuitability, struct FLinearColor> BaseColorWorkSuitability;                         // 0x03F0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void AnmEvent_ForceSimple();
-	void AnmEvent_NoRecipe();
-	void AnmEvent_ToDetail();
-	void AnmEvent_ToSimpleDetail();
-	void Construct();
-	void CreateWidgetSets();
-	void ExecuteUbergraph_WBP_PalWorkProduct_Dual(int32 EntryPoint);
-	void GetTargetWorkSuitabilityByWork(bool bLeft, class UPalWorkProgress* Work);
-	bool IsCharacterAssignedFixedToTargetWork(class UPalCharacterParameterComponent* TargetCharacter, const struct FGuid& WorkId);
-	void OnInitialized();
-	void OnUpdateProgress_ForTarget(class UPalWorkProgressMultiType* Work, EPalWorkSuitability WorkSuitability, class UImage* WidgetImage_Progress);
-	void ReflectWorkProgressRate(class UPalWorkProgressMultiType* WorkProgress);
-	void ReflectWorkProgressRateForTargetSlot(class UPalWorkProgressMultiType* WorkProgress, int32 WidgetIndex);
-	void RefreshWorkPalSlot(class UPalWorkProgressMultiType* Work, const int32 WidgetIndex);
-	void RefreshWorkPalSlots(class UPalWorkProgressMultiType* Work);
-	void Set_Invalid_Recipe_Detail();
-	void SetIcon(class FName ItemId);
-	void SetInfinityProductMode();
-	void SetProductItemID(class FName ItemId);
-	void SetProductNum(int32 nowProductNum, int32 maxProductNum);
-	void SetupUI(class UPalWorkProgressMultiType* WorkProgressMulti);
-	void SetupUI_ForWorkSlot(class UPalWorkProgressMultiType* Work, int32 Index_0);
-	void SetWorkSuitability(EPalWorkSuitability WorkSuitability);
 	void UpdateRequireInfo(class UPalWorkBase* Work, TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData>& DisplayData);
+	void SetWorkSuitability(EPalWorkSuitability WorkSuitability);
+	void SetupUI_ForWorkSlot(class UPalWorkProgressMultiType* Work, int32 Index_0);
+	void SetupUI(class UPalWorkProgressMultiType* WorkProgressMulti);
+	void SetProductNum(int32 nowProductNum, int32 maxProductNum);
+	void SetProductItemID(class FName ItemId);
+	void SetInfinityProductMode();
+	void SetIcon(class FName ItemId);
+	void Set_Invalid_Recipe_Detail();
+	void RefreshWorkPalSlots(class UPalWorkProgressMultiType* Work);
+	void RefreshWorkPalSlot(class UPalWorkProgressMultiType* Work, const int32 WidgetIndex);
+	void ReflectWorkProgressRateForTargetSlot(class UPalWorkProgressMultiType* WorkProgress, int32 WidgetIndex);
+	void ReflectWorkProgressRate(class UPalWorkProgressMultiType* WorkProgress);
+	void OnUpdateProgress_ForTarget(class UPalWorkProgressMultiType* Work, EPalWorkSuitability WorkSuitability, class UImage* WidgetImage_Progress);
+	void OnInitialized();
+	bool IsCharacterAssignedFixedToTargetWork(class UPalCharacterParameterComponent* TargetCharacter, const struct FGuid& WorkId);
+	void GetTargetWorkSuitabilityByWork(bool bLeft, class UPalWorkProgress* Work);
+	void ExecuteUbergraph_WBP_PalWorkProduct_Dual(int32 EntryPoint);
+	void CreateWidgetSets();
+	void Construct();
+	void AnmEvent_ToSimpleDetail();
+	void AnmEvent_ToDetail();
+	void AnmEvent_NoRecipe();
+	void AnmEvent_ForceSimple();
 
-	struct FFPalUIWorkProductDualWidgetSet GetWidgetSetByIndex(int32 Index_0) const;
-	TArray<class UWBP_PalCraftInfo_Pal_C*> GetWorkerPalWidgetArray() const;
 	struct FLinearColor GetWorkSuitabilityColor(EPalWorkSuitability Target) const;
+	TArray<class UWBP_PalCraftInfo_Pal_C*> GetWorkerPalWidgetArray() const;
+	struct FFPalUIWorkProductDualWidgetSet GetWidgetSetByIndex(int32 Index_0) const;
 
 public:
 	static class UClass* StaticClass()

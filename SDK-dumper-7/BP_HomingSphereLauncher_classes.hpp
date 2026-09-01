@@ -31,30 +31,30 @@ public:
 	struct FVector                                SphereScale;                                       // 0x0768(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ChangeTransformForRocketReload(const struct FVector& Location, const struct FRotator& Rotation);
-	void ChangeTransformForRocketWhenReloadIsDone(const struct FVector& Location, const struct FRotator& Lotation);
-	void ClearAttackTarget();
-	void CustomEvent(int32 bulletsNum);
-	void ExecuteUbergraph_BP_HomingSphereLauncher(int32 EntryPoint);
-	void GetAttackTarget(class APalCharacter** Target);
-	void GetMuzzleTransform(struct FTransform* Transform);
-	void GetShootTransformList(double BaseAnglePitch, double BaseAngleYaw, double BlurAngle, TArray<struct FTransform>* ShootTransformList);
-	void OnPalSphereChangeSelectedIndex(EPalPlayerInventoryType inventoryType, int32 Index_0);
-	void ReceiveBeginPlay();
 	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
-	void GetAimingBlurAngle(double* Angle);
-	void GetBlurAngle(double* Angle);
-	void GetBulletClass(class UClass** NewParam);
-	void GetMuzzleLocation(struct FVector* MuzzleLocation);
-	void GetMuzzleRotator(struct FRotator* Rotator);
+	void ReceiveBeginPlay();
+	void OnPalSphereChangeSelectedIndex(EPalPlayerInventoryType inventoryType, int32 Index_0);
+	void GetShootTransformList(double BaseAnglePitch, double BaseAngleYaw, double BlurAngle, TArray<struct FTransform>* ShootTransformList);
+	void GetMuzzleTransform(struct FTransform* Transform);
+	void GetAttackTarget(class APalCharacter** Target);
+	void ExecuteUbergraph_BP_HomingSphereLauncher(int32 EntryPoint);
+	void CustomEvent(int32 bulletsNum);
+	void ClearAttackTarget();
+	void ChangeTransformForRocketWhenReloadIsDone(const struct FVector& Location, const struct FRotator& Lotation);
+	void ChangeTransformForRocketReload(const struct FVector& Location, const struct FRotator& Rotation);
 	void GetShootInterval(double* Time);
-	void OnPullTrigger();
-	void OnReleaseTrigger(bool bCanShootOnRelease);
-	void OnShoot(class APalBullet* BulletActor);
+	void GetMuzzleRotator(struct FRotator* Rotator);
+	void GetMuzzleLocation(struct FVector* MuzzleLocation);
+	void GetBulletClass(class UClass** NewParam);
+	void GetBlurAngle(double* Angle);
+	void GetAimingBlurAngle(double* Angle);
 	void ShootBullet();
+	void OnShoot(class APalBullet* BulletActor);
+	void OnReleaseTrigger(bool bCanShootOnRelease);
+	void OnPullTrigger();
 
-	int32 GetRemainBulletCount() const;
 	bool IsEnableAutoAim() const;
+	int32 GetRemainBulletCount() const;
 
 public:
 	static class UClass* StaticClass()

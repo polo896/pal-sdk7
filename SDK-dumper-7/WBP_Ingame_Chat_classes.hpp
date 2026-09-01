@@ -61,31 +61,31 @@ public:
 	bool                                          IsInsideFlushCallback;                             // 0x0558(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AddChatMessage(const struct FPalChatMessage& Message);
-	void BndEvt__WBP_Ingame_Chat_PalMultiLineEditableTextBox_220_K2Node_ComponentBoundEvent_5_OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
-	void Can_Chat(bool* Result);
-	void ChangeCategory();
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_Ingame_Chat(int32 EntryPoint);
-	void GetGlobalChatColor(const struct FPalChatMessage& ChatMessage, struct FLinearColor* OutColor);
-	void Hide_Chat_Log_UI();
-	void HideChatInputUI();
-	void LoadChatMessages();
-	void On_Recived_Chat(const struct FPalChatMessage& Message);
-	struct FEventReply OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent);
-	void OnChangedInputType(ECommonInputType bNewInputType);
-	void OnFinishCutscene(bool IsSkipped_);
-	void OnFlushTick();
-	void OnPlayCutsceneStart();
-	struct FEventReply OnPreviewKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
-	void OnTextCommittedInternal(const class FText& InText, ETextCommit InTextCommit);
-	void OpenChatUI();
-	void ResetFocus();
-	void ScrollEndNextTick();
-	void ShouldLoadChatMessage(const struct FPalChatMessage& ChatMessage, bool* bShouldLoad);
-	void ShowChatInputUI();
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void ShowChatInputUI();
+	void ShouldLoadChatMessage(const struct FPalChatMessage& ChatMessage, bool* bShouldLoad);
+	void ScrollEndNextTick();
+	void ResetFocus();
+	void OpenChatUI();
+	void OnTextCommittedInternal(const class FText& InText, ETextCommit InTextCommit);
+	struct FEventReply OnPreviewKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
+	void OnPlayCutsceneStart();
+	void OnFlushTick();
+	void OnFinishCutscene(bool IsSkipped_);
+	void OnChangedInputType(ECommonInputType bNewInputType);
+	struct FEventReply OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent);
+	void On_Recived_Chat(const struct FPalChatMessage& Message);
+	void LoadChatMessages();
+	void HideChatInputUI();
+	void Hide_Chat_Log_UI();
+	void GetGlobalChatColor(const struct FPalChatMessage& ChatMessage, struct FLinearColor* OutColor);
+	void ExecuteUbergraph_WBP_Ingame_Chat(int32 EntryPoint);
+	void Destruct();
+	void Construct();
+	void ChangeCategory();
+	void Can_Chat(bool* Result);
+	void BndEvt__WBP_Ingame_Chat_PalMultiLineEditableTextBox_220_K2Node_ComponentBoundEvent_5_OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
+	void AddChatMessage(const struct FPalChatMessage& Message);
 
 public:
 	static class UClass* StaticClass()

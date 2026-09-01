@@ -17,27 +17,24 @@
 namespace SDK
 {
 
-// Function WBP_EquipmentSelectListBlock.WBP_EquipmentSelectListBlock_C.EditCreatedSlotWidget
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_EquipmentSelectListBlock.WBP_EquipmentSelectListBlock_C.GetFocusTarget
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UWBP_PalItemSlotButtonBase_C*     createdSlotWidget                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class UWidget**                         editedWidget                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UWidget**                         NewParam                                               (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_EquipmentSelectListBlock_C::EditCreatedSlotWidget(class UWBP_PalItemSlotButtonBase_C* createdSlotWidget, class UWidget** editedWidget)
+void UWBP_EquipmentSelectListBlock_C::GetFocusTarget(class UWidget** NewParam)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EquipmentSelectListBlock_C", "EditCreatedSlotWidget");
+		Func = Class->GetFunction("WBP_EquipmentSelectListBlock_C", "GetFocusTarget");
 
-	Params::WBP_EquipmentSelectListBlock_C_EditCreatedSlotWidget Parms{};
-
-	Parms.createdSlotWidget = createdSlotWidget;
+	Params::WBP_EquipmentSelectListBlock_C_GetFocusTarget Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (editedWidget != nullptr)
-		*editedWidget = Parms.editedWidget;
+	if (NewParam != nullptr)
+		*NewParam = Parms.NewParam;
 }
 
 
@@ -62,24 +59,27 @@ void UWBP_EquipmentSelectListBlock_C::GetAllItemSlotButtons(TArray<class UWBP_Pa
 }
 
 
-// Function WBP_EquipmentSelectListBlock.WBP_EquipmentSelectListBlock_C.GetFocusTarget
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_EquipmentSelectListBlock.WBP_EquipmentSelectListBlock_C.EditCreatedSlotWidget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWidget**                         NewParam                                               (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UWBP_PalItemSlotButtonBase_C*     createdSlotWidget                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UWidget**                         editedWidget                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_EquipmentSelectListBlock_C::GetFocusTarget(class UWidget** NewParam)
+void UWBP_EquipmentSelectListBlock_C::EditCreatedSlotWidget(class UWBP_PalItemSlotButtonBase_C* createdSlotWidget, class UWidget** editedWidget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EquipmentSelectListBlock_C", "GetFocusTarget");
+		Func = Class->GetFunction("WBP_EquipmentSelectListBlock_C", "EditCreatedSlotWidget");
 
-	Params::WBP_EquipmentSelectListBlock_C_GetFocusTarget Parms{};
+	Params::WBP_EquipmentSelectListBlock_C_EditCreatedSlotWidget Parms{};
+
+	Parms.createdSlotWidget = createdSlotWidget;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (NewParam != nullptr)
-		*NewParam = Parms.NewParam;
+	if (editedWidget != nullptr)
+		*editedWidget = Parms.editedWidget;
 }
 
 }

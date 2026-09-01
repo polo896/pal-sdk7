@@ -29,10 +29,10 @@ public:
 	class UNiagaraComponent*                      Current_Particle_System;                           // 0x00B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_PalBiomeEffectController(int32 EntryPoint);
-	void On_Biome_Enter(EPalBiomeType Biome_Type);
-	void On_Biome_Exit();
 	void ReceiveTick(float DeltaSeconds);
+	void On_Biome_Exit();
+	void On_Biome_Enter(EPalBiomeType Biome_Type);
+	void ExecuteUbergraph_BP_PalBiomeEffectController(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -18,15 +18,103 @@
 namespace SDK::Params
 {
 
-// Function BP_OverheatRifle.BP_OverheatRifle_C.CanShoot
-// 0x0002 (0x0002 - 0x0000)
-struct BP_OverheatRifle_C_CanShoot final
+// Function BP_OverheatRifle.BP_OverheatRifle_C.TickCoolDown
+// 0x0038 (0x0038 - 0x0000)
+struct BP_OverheatRifle_C_TickCoolDown final
 {
 public:
-	bool                                          can;                                               // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CanShoot_can;                             // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        DeltaTime;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_FClamp_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_DoubleToString_ReturnValue;          // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_OverheatRifle_C_CanShoot;
+DUMPER7_ASSERTS_BP_OverheatRifle_C_TickCoolDown;
+
+// Function BP_OverheatRifle.BP_OverheatRifle_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_OverheatRifle_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_OverheatRifle_C_ReceiveTick;
+
+// Function BP_OverheatRifle.BP_OverheatRifle_C.ReceiveEndPlay
+// 0x0001 (0x0001 - 0x0000)
+struct BP_OverheatRifle_C_ReceiveEndPlay final
+{
+public:
+	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_OverheatRifle_C_ReceiveEndPlay;
+
+// Function BP_OverheatRifle.BP_OverheatRifle_C.OnWeaponNotify
+// 0x0001 (0x0001 - 0x0000)
+struct BP_OverheatRifle_C_OnWeaponNotify final
+{
+public:
+	EWeaponNotifyType                             Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_OverheatRifle_C_OnWeaponNotify;
+
+// Function BP_OverheatRifle.BP_OverheatRifle_C.OnChangedHeatValue_Event
+// 0x0010 (0x0010 - 0x0000)
+struct BP_OverheatRifle_C_OnChangedHeatValue_Event final
+{
+public:
+	bool                                          bOverHeated;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        HeatValue_0;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_OverheatRifle_C_OnChangedHeatValue_Event;
+
+// Function BP_OverheatRifle.BP_OverheatRifle_C.IsOverHeated
+// 0x0001 (0x0001 - 0x0000)
+struct BP_OverheatRifle_C_IsOverHeated final
+{
+public:
+	bool                                          bOverHeated;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_OverheatRifle_C_IsOverHeated;
+
+// Function BP_OverheatRifle.BP_OverheatRifle_C.GetMuzzleEffectAttached
+// 0x0008 (0x0008 - 0x0000)
+struct BP_OverheatRifle_C_GetMuzzleEffectAttached final
+{
+public:
+	class UNiagaraSystem*                         Effect;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_OverheatRifle_C_GetMuzzleEffectAttached;
+
+// Function BP_OverheatRifle.BP_OverheatRifle_C.GetMuzzleEffect
+// 0x0008 (0x0008 - 0x0000)
+struct BP_OverheatRifle_C_GetMuzzleEffect final
+{
+public:
+	class UNiagaraSystem*                         NewParam;                                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_OverheatRifle_C_GetMuzzleEffect;
+
+// Function BP_OverheatRifle.BP_OverheatRifle_C.GetHeatValue
+// 0x0008 (0x0008 - 0x0000)
+struct BP_OverheatRifle_C_GetHeatValue final
+{
+public:
+	double                                        CurrentHeatValue;                                  // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_OverheatRifle_C_GetHeatValue;
+
+// Function BP_OverheatRifle.BP_OverheatRifle_C.GetAmmoClass
+// 0x0008 (0x0008 - 0x0000)
+struct BP_OverheatRifle_C_GetAmmoClass final
+{
+public:
+	class UClass*                                 AmmoClass;                                         // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_OverheatRifle_C_GetAmmoClass;
 
 // Function BP_OverheatRifle.BP_OverheatRifle_C.ExecuteUbergraph_BP_OverheatRifle
 // 0x00B0 (0x00B0 - 0x0000)
@@ -67,149 +155,15 @@ public:
 };
 DUMPER7_ASSERTS_BP_OverheatRifle_C_ExecuteUbergraph_BP_OverheatRifle;
 
-// Function BP_OverheatRifle.BP_OverheatRifle_C.GetAmmoClass
-// 0x0008 (0x0008 - 0x0000)
-struct BP_OverheatRifle_C_GetAmmoClass final
+// Function BP_OverheatRifle.BP_OverheatRifle_C.CanShoot
+// 0x0002 (0x0002 - 0x0000)
+struct BP_OverheatRifle_C_CanShoot final
 {
 public:
-	class UClass*                                 AmmoClass;                                         // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          can;                                               // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanShoot_can;                             // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_OverheatRifle_C_GetAmmoClass;
-
-// Function BP_OverheatRifle.BP_OverheatRifle_C.GetHeatValue
-// 0x0008 (0x0008 - 0x0000)
-struct BP_OverheatRifle_C_GetHeatValue final
-{
-public:
-	double                                        CurrentHeatValue;                                  // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_OverheatRifle_C_GetHeatValue;
-
-// Function BP_OverheatRifle.BP_OverheatRifle_C.GetMuzzleEffect
-// 0x0008 (0x0008 - 0x0000)
-struct BP_OverheatRifle_C_GetMuzzleEffect final
-{
-public:
-	class UNiagaraSystem*                         NewParam;                                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_OverheatRifle_C_GetMuzzleEffect;
-
-// Function BP_OverheatRifle.BP_OverheatRifle_C.GetMuzzleEffectAttached
-// 0x0008 (0x0008 - 0x0000)
-struct BP_OverheatRifle_C_GetMuzzleEffectAttached final
-{
-public:
-	class UNiagaraSystem*                         Effect;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_OverheatRifle_C_GetMuzzleEffectAttached;
-
-// Function BP_OverheatRifle.BP_OverheatRifle_C.IsOverHeated
-// 0x0001 (0x0001 - 0x0000)
-struct BP_OverheatRifle_C_IsOverHeated final
-{
-public:
-	bool                                          bOverHeated;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_OverheatRifle_C_IsOverHeated;
-
-// Function BP_OverheatRifle.BP_OverheatRifle_C.OnChangedHeatValue_Event
-// 0x0010 (0x0010 - 0x0000)
-struct BP_OverheatRifle_C_OnChangedHeatValue_Event final
-{
-public:
-	bool                                          bOverHeated;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        HeatValue_0;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_OverheatRifle_C_OnChangedHeatValue_Event;
-
-// Function BP_OverheatRifle.BP_OverheatRifle_C.OnWeaponNotify
-// 0x0001 (0x0001 - 0x0000)
-struct BP_OverheatRifle_C_OnWeaponNotify final
-{
-public:
-	EWeaponNotifyType                             Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_OverheatRifle_C_OnWeaponNotify;
-
-// Function BP_OverheatRifle.BP_OverheatRifle_C.ReceiveEndPlay
-// 0x0001 (0x0001 - 0x0000)
-struct BP_OverheatRifle_C_ReceiveEndPlay final
-{
-public:
-	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_OverheatRifle_C_ReceiveEndPlay;
-
-// Function BP_OverheatRifle.BP_OverheatRifle_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_OverheatRifle_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_OverheatRifle_C_ReceiveTick;
-
-// Function BP_OverheatRifle.BP_OverheatRifle_C.TickCoolDown
-// 0x0038 (0x0038 - 0x0000)
-struct BP_OverheatRifle_C_TickCoolDown final
-{
-public:
-	double                                        DeltaTime;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_FClamp_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_DoubleToString_ReturnValue;          // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_OverheatRifle_C_TickCoolDown;
-
-// Function BP_OverheatRifle.BP_OverheatRifle_C.GetMuzzleLocation
-// 0x0030 (0x0030 - 0x0000)
-struct BP_OverheatRifle_C_GetMuzzleLocation final
-{
-public:
-	struct FVector                                MuzzleLocation;                                    // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_OverheatRifle_C_GetMuzzleLocation;
-
-// Function BP_OverheatRifle.BP_OverheatRifle_C.OnAttachWeapon
-// 0x0008 (0x0008 - 0x0000)
-struct BP_OverheatRifle_C_OnAttachWeapon final
-{
-public:
-	class AActor*                                 attachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_OverheatRifle_C_OnAttachWeapon;
-
-// Function BP_OverheatRifle.BP_OverheatRifle_C.OnDetachWeapon
-// 0x0008 (0x0008 - 0x0000)
-struct BP_OverheatRifle_C_OnDetachWeapon final
-{
-public:
-	class AActor*                                 detachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_OverheatRifle_C_OnDetachWeapon;
-
-// Function BP_OverheatRifle.BP_OverheatRifle_C.OnReleaseTrigger
-// 0x0001 (0x0001 - 0x0000)
-struct BP_OverheatRifle_C_OnReleaseTrigger final
-{
-public:
-	bool                                          bCanShootOnRelease;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_OverheatRifle_C_OnReleaseTrigger;
-
-// Function BP_OverheatRifle.BP_OverheatRifle_C.OnReloadStart
-// 0x0004 (0x0004 - 0x0000)
-struct BP_OverheatRifle_C_OnReloadStart final
-{
-public:
-	float                                         InReloadSpeedPlayRate;                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_OverheatRifle_C_OnReloadStart;
+DUMPER7_ASSERTS_BP_OverheatRifle_C_CanShoot;
 
 // Function BP_OverheatRifle.BP_OverheatRifle_C.OnShoot
 // 0x0038 (0x0038 - 0x0000)
@@ -225,6 +179,52 @@ public:
 	float                                         CallFunc_SetRTPCValue_Value_ImplicitCast;          // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_OverheatRifle_C_OnShoot;
+
+// Function BP_OverheatRifle.BP_OverheatRifle_C.OnReloadStart
+// 0x0004 (0x0004 - 0x0000)
+struct BP_OverheatRifle_C_OnReloadStart final
+{
+public:
+	float                                         InReloadSpeedPlayRate;                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_OverheatRifle_C_OnReloadStart;
+
+// Function BP_OverheatRifle.BP_OverheatRifle_C.OnReleaseTrigger
+// 0x0001 (0x0001 - 0x0000)
+struct BP_OverheatRifle_C_OnReleaseTrigger final
+{
+public:
+	bool                                          bCanShootOnRelease;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_OverheatRifle_C_OnReleaseTrigger;
+
+// Function BP_OverheatRifle.BP_OverheatRifle_C.OnDetachWeapon
+// 0x0008 (0x0008 - 0x0000)
+struct BP_OverheatRifle_C_OnDetachWeapon final
+{
+public:
+	class AActor*                                 detachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_OverheatRifle_C_OnDetachWeapon;
+
+// Function BP_OverheatRifle.BP_OverheatRifle_C.OnAttachWeapon
+// 0x0008 (0x0008 - 0x0000)
+struct BP_OverheatRifle_C_OnAttachWeapon final
+{
+public:
+	class AActor*                                 attachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_OverheatRifle_C_OnAttachWeapon;
+
+// Function BP_OverheatRifle.BP_OverheatRifle_C.GetMuzzleLocation
+// 0x0030 (0x0030 - 0x0000)
+struct BP_OverheatRifle_C_GetMuzzleLocation final
+{
+public:
+	struct FVector                                MuzzleLocation;                                    // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_OverheatRifle_C_GetMuzzleLocation;
 
 // Function BP_OverheatRifle.BP_OverheatRifle_C.GetRemainBulletCount
 // 0x0020 (0x0020 - 0x0000)

@@ -17,118 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_AttackWarningLoupe.WBP_AttackWarningLoupe_C.CalcScreenPosition
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_AttackWarningLoupe_C::CalcScreenPosition()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AttackWarningLoupe_C", "CalcScreenPosition");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_AttackWarningLoupe.WBP_AttackWarningLoupe_C.GetLoupeWidgetSize
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FVector2D*                       widgetSize_0                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_AttackWarningLoupe_C::GetLoupeWidgetSize(struct FVector2D* widgetSize_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AttackWarningLoupe_C", "GetLoupeWidgetSize");
-
-	Params::WBP_AttackWarningLoupe_C_GetLoupeWidgetSize Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (widgetSize_0 != nullptr)
-		*widgetSize_0 = std::move(Parms.widgetSize_0);
-}
-
-
-// Function WBP_AttackWarningLoupe.WBP_AttackWarningLoupe_C.GetTargetWidgetSize
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FVector2D*                       outVector                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_AttackWarningLoupe_C::GetTargetWidgetSize(struct FVector2D* outVector)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AttackWarningLoupe_C", "GetTargetWidgetSize");
-
-	Params::WBP_AttackWarningLoupe_C_GetTargetWidgetSize Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (outVector != nullptr)
-		*outVector = std::move(Parms.outVector);
-}
-
-
-// Function WBP_AttackWarningLoupe.WBP_AttackWarningLoupe_C.GetTargetWorldLocation
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FVector*                         outVector                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_AttackWarningLoupe_C::GetTargetWorldLocation(struct FVector* outVector)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AttackWarningLoupe_C", "GetTargetWorldLocation");
-
-	Params::WBP_AttackWarningLoupe_C_GetTargetWorldLocation Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (outVector != nullptr)
-		*outVector = std::move(Parms.outVector);
-}
-
-
-// Function WBP_AttackWarningLoupe.WBP_AttackWarningLoupe_C.IsEnableLoupe
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-bool UWBP_AttackWarningLoupe_C::IsEnableLoupe()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AttackWarningLoupe_C", "IsEnableLoupe");
-
-	Params::WBP_AttackWarningLoupe_C_IsEnableLoupe Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_AttackWarningLoupe.WBP_AttackWarningLoupe_C.SetFinalWidgetOpacity
+// Function WBP_AttackWarningLoupe.WBP_AttackWarningLoupe_C.UpdateArrowImageAngle
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  calcedOpacity                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  newAngle                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_AttackWarningLoupe_C::SetFinalWidgetOpacity(double calcedOpacity)
+void UWBP_AttackWarningLoupe_C::UpdateArrowImageAngle(double newAngle)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AttackWarningLoupe_C", "SetFinalWidgetOpacity");
+		Func = Class->GetFunction("WBP_AttackWarningLoupe_C", "UpdateArrowImageAngle");
 
-	Params::WBP_AttackWarningLoupe_C_SetFinalWidgetOpacity Parms{};
+	Params::WBP_AttackWarningLoupe_C_UpdateArrowImageAngle Parms{};
 
-	Parms.calcedOpacity = calcedOpacity;
+	Parms.newAngle = newAngle;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -154,23 +57,120 @@ void UWBP_AttackWarningLoupe_C::Setup(const struct FVector& TargetLocation_0)
 }
 
 
-// Function WBP_AttackWarningLoupe.WBP_AttackWarningLoupe_C.UpdateArrowImageAngle
+// Function WBP_AttackWarningLoupe.WBP_AttackWarningLoupe_C.SetFinalWidgetOpacity
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  newAngle                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  calcedOpacity                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_AttackWarningLoupe_C::UpdateArrowImageAngle(double newAngle)
+void UWBP_AttackWarningLoupe_C::SetFinalWidgetOpacity(double calcedOpacity)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AttackWarningLoupe_C", "UpdateArrowImageAngle");
+		Func = Class->GetFunction("WBP_AttackWarningLoupe_C", "SetFinalWidgetOpacity");
 
-	Params::WBP_AttackWarningLoupe_C_UpdateArrowImageAngle Parms{};
+	Params::WBP_AttackWarningLoupe_C_SetFinalWidgetOpacity Parms{};
 
-	Parms.newAngle = newAngle;
+	Parms.calcedOpacity = calcedOpacity;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_AttackWarningLoupe.WBP_AttackWarningLoupe_C.IsEnableLoupe
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UWBP_AttackWarningLoupe_C::IsEnableLoupe()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AttackWarningLoupe_C", "IsEnableLoupe");
+
+	Params::WBP_AttackWarningLoupe_C_IsEnableLoupe Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_AttackWarningLoupe.WBP_AttackWarningLoupe_C.GetTargetWorldLocation
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FVector*                         outVector                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_AttackWarningLoupe_C::GetTargetWorldLocation(struct FVector* outVector)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AttackWarningLoupe_C", "GetTargetWorldLocation");
+
+	Params::WBP_AttackWarningLoupe_C_GetTargetWorldLocation Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (outVector != nullptr)
+		*outVector = std::move(Parms.outVector);
+}
+
+
+// Function WBP_AttackWarningLoupe.WBP_AttackWarningLoupe_C.GetTargetWidgetSize
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FVector2D*                       outVector                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_AttackWarningLoupe_C::GetTargetWidgetSize(struct FVector2D* outVector)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AttackWarningLoupe_C", "GetTargetWidgetSize");
+
+	Params::WBP_AttackWarningLoupe_C_GetTargetWidgetSize Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (outVector != nullptr)
+		*outVector = std::move(Parms.outVector);
+}
+
+
+// Function WBP_AttackWarningLoupe.WBP_AttackWarningLoupe_C.GetLoupeWidgetSize
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FVector2D*                       widgetSize_0                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_AttackWarningLoupe_C::GetLoupeWidgetSize(struct FVector2D* widgetSize_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AttackWarningLoupe_C", "GetLoupeWidgetSize");
+
+	Params::WBP_AttackWarningLoupe_C_GetLoupeWidgetSize Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (widgetSize_0 != nullptr)
+		*widgetSize_0 = std::move(Parms.widgetSize_0);
+}
+
+
+// Function WBP_AttackWarningLoupe.WBP_AttackWarningLoupe_C.CalcScreenPosition
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_AttackWarningLoupe_C::CalcScreenPosition()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AttackWarningLoupe_C", "CalcScreenPosition");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "WBP_IndividualParameterBindWidget_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -29,11 +29,11 @@ public:
 	class UBP_PalTextBlock_C*                     Text_NowHP;                                        // 0x0678(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_Menu_CharacterHPGauge(int32 EntryPoint);
-	void OnInitialized();
 	void UpdateHP(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& nowMaxHP);
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_Menu_CharacterHPGauge(int32 EntryPoint);
+	void Destruct();
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

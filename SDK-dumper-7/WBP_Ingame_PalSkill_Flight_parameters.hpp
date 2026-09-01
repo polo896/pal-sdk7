@@ -17,6 +17,15 @@
 namespace SDK::Params
 {
 
+// Function WBP_Ingame_PalSkill_Flight.WBP_Ingame_PalSkill_Flight_C.OnDownInputMethodChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Ingame_PalSkill_Flight_C_OnDownInputMethodChanged final
+{
+public:
+	ECommonInputType                              bNewInputType;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Ingame_PalSkill_Flight_C_OnDownInputMethodChanged;
+
 // Function WBP_Ingame_PalSkill_Flight.WBP_Ingame_PalSkill_Flight_C.ExecuteUbergraph_WBP_Ingame_PalSkill_Flight
 // 0x0100 (0x0100 - 0x0000)
 struct WBP_Ingame_PalSkill_Flight_C_ExecuteUbergraph_WBP_Ingame_PalSkill_Flight final
@@ -59,15 +68,6 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_4;            // 0x00F0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Ingame_PalSkill_Flight_C_ExecuteUbergraph_WBP_Ingame_PalSkill_Flight;
-
-// Function WBP_Ingame_PalSkill_Flight.WBP_Ingame_PalSkill_Flight_C.OnDownInputMethodChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Ingame_PalSkill_Flight_C_OnDownInputMethodChanged final
-{
-public:
-	ECommonInputType                              bNewInputType;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Ingame_PalSkill_Flight_C_OnDownInputMethodChanged;
 
 }
 

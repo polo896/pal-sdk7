@@ -12,7 +12,7 @@ class UWBP_PalBuildObjectList_ForDisplay_C : public UPalUserWidgetOverlayUI
     FPalDataTableRowName_UIInputAction NextTabInputAction;                            // 0x04A8 (size: 0x8)
     FPalDataTableRowName_UIInputAction PrevTabInputAction;                            // 0x04B0 (size: 0x8)
     FPalUIActionBindData FavoriteInoutActionHandle;                                   // 0x04B8 (size: 0x4)
-    TSoftObjectPtr<UWBP_IngameMenu_Construction_Icon_C> LastHoveredBuildObjectWidget; // 0x04C0 (size: 0x30)
+    TSoftObjectPtr<class UWBP_IngameMenu_Construction_Icon_C> LastHoveredBuildObjectWidget; // 0x04C0 (size: 0x30)
     FPalDataTableRowName_UIInputAction PaintModeInputAction;                          // 0x04F0 (size: 0x8)
     bool bLaunchBuilderMode;                                                          // 0x04F8 (size: 0x1)
     bool bEnableMouseWheelCategoryChange;                                             // 0x04F9 (size: 0x1)

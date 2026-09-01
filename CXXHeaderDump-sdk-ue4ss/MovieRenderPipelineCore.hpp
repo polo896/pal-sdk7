@@ -18,8 +18,8 @@ struct FMoviePipelineFilenameResolveParams
     int32 ZeroPadFrameNumberCount;                                                    // 0x0030 (size: 0x4)
     bool bForceRelativeFrameNumbers;                                                  // 0x0034 (size: 0x1)
     FString FileNameOverride;                                                         // 0x0038 (size: 0x10)
-    TMap<class FString, class FString> FileNameFormatOverrides;                       // 0x0048 (size: 0x50)
-    TMap<class FString, class FString> FileMetadata;                                  // 0x0098 (size: 0x50)
+    TMap<FString, FString> FileNameFormatOverrides;                                   // 0x0048 (size: 0x50)
+    TMap<FString, FString> FileMetadata;                                              // 0x0098 (size: 0x50)
     FDateTime InitializationTime;                                                     // 0x00E8 (size: 0x8)
     int32 InitializationVersion;                                                      // 0x00F0 (size: 0x4)
     class UMoviePipelineExecutorJob* Job;                                             // 0x00F8 (size: 0x8)
@@ -30,8 +30,8 @@ struct FMoviePipelineFilenameResolveParams
 
 struct FMoviePipelineFormatArgs
 {
-    TMap<class FString, class FString> FilenameArguments;                             // 0x0000 (size: 0x50)
-    TMap<class FString, class FString> FileMetadata;                                  // 0x0050 (size: 0x50)
+    TMap<FString, FString> FilenameArguments;                                         // 0x0000 (size: 0x50)
+    TMap<FString, FString> FileMetadata;                                              // 0x0050 (size: 0x50)
     class UMoviePipelineExecutorJob* InJob;                                           // 0x00A0 (size: 0x8)
 
 }; // Size: 0xA8
@@ -73,7 +73,7 @@ struct FMoviePipelineSegmentWorkMetrics
 struct FMoviePipelineShotOutputData
 {
     TWeakObjectPtr<class UMoviePipelineExecutorShot> Shot;                            // 0x0000 (size: 0x8)
-    TMap<class FMoviePipelinePassIdentifier, class FMoviePipelineRenderPassOutputData> RenderPassData; // 0x0008 (size: 0x50)
+    TMap<FMoviePipelinePassIdentifier, FMoviePipelineRenderPassOutputData> RenderPassData; // 0x0008 (size: 0x50)
 
 }; // Size: 0x58
 
@@ -210,11 +210,11 @@ class UMoviePipelineCommandLineEncoderSettings : public UDeveloperSettings
 class UMoviePipelineConfigBase : public UObject
 {
     FString DisplayName;                                                              // 0x0028 (size: 0x10)
-    TArray<class UMoviePipelineSetting*> Settings;                                    // 0x0038 (size: 0x10)
+    TArray<UMoviePipelineSetting*> Settings;                                          // 0x0038 (size: 0x10)
 
     void RemoveSetting(class UMoviePipelineSetting* InSetting);
-    TArray<class UMoviePipelineSetting*> GetUserSettings();
-    TArray<class UMoviePipelineSetting*> FindSettingsByClass(TSubclassOf<class UMoviePipelineSetting> InClass, const bool bIncludeDisabledSettings);
+    TArray<UMoviePipelineSetting*> GetUserSettings();
+    TArray<UMoviePipelineSetting*> FindSettingsByClass(TSubclassOf<class UMoviePipelineSetting> InClass, const bool bIncludeDisabledSettings);
     class UMoviePipelineSetting* FindSettingByClass(TSubclassOf<class UMoviePipelineSetting> InClass, const bool bIncludeDisabledSettings);
     class UMoviePipelineSetting* FindOrAddSettingByClass(TSubclassOf<class UMoviePipelineSetting> InClass, const bool bIncludeDisabledSettings);
     void CopyFrom(class UMoviePipelineConfigBase* InConfig);
@@ -251,7 +251,7 @@ class UMoviePipelineExecutorBase : public UObject
     void SetStatusMessage(FString InStatus);
     void SetMoviePipelineClass(UClass* InPipelineClass);
     bool SendSocketMessage(FString InMessage);
-    int32 SendHTTPRequest(FString InURL, FString InVerb, FString InMessage, const TMap<class FString, class FString>& InHeaders);
+    int32 SendHTTPRequest(FString InURL, FString InVerb, FString InMessage, const TMap<FString, FString>& InHeaders);
     void OnExecutorFinishedImpl();
     void OnExecutorErroredImpl(class UMoviePipeline* ErroredPipeline, bool bFatal, FText ErrorReason);
     void OnBeginFrame();
@@ -273,13 +273,13 @@ class UMoviePipelineExecutorJob : public UObject
     FSoftObjectPath Map;                                                              // 0x0058 (size: 0x20)
     FString Author;                                                                   // 0x0078 (size: 0x10)
     FString Comment;                                                                  // 0x0088 (size: 0x10)
-    TArray<class UMoviePipelineExecutorShot*> ShotInfo;                               // 0x0098 (size: 0x10)
+    TArray<UMoviePipelineExecutorShot*> ShotInfo;                                     // 0x0098 (size: 0x10)
     FString UserData;                                                                 // 0x00A8 (size: 0x10)
     FString StatusMessage;                                                            // 0x00B8 (size: 0x10)
     float StatusProgress;                                                             // 0x00C8 (size: 0x4)
     bool bIsConsumed;                                                                 // 0x00CC (size: 0x1)
     class UMoviePipelineMasterConfig* Configuration;                                  // 0x00D0 (size: 0x8)
-    TSoftObjectPtr<UMoviePipelineMasterConfig> PresetOrigin;                          // 0x00D8 (size: 0x30)
+    TSoftObjectPtr<class UMoviePipelineMasterConfig> PresetOrigin;                    // 0x00D8 (size: 0x30)
     bool bEnabled;                                                                    // 0x0108 (size: 0x1)
 
     void SetStatusProgress(const float InProgress);
@@ -307,7 +307,7 @@ class UMoviePipelineExecutorShot : public UObject
     float Progress;                                                                   // 0x0108 (size: 0x4)
     FString StatusMessage;                                                            // 0x0110 (size: 0x10)
     class UMoviePipelineShotConfig* ShotOverrideConfig;                               // 0x0120 (size: 0x8)
-    TSoftObjectPtr<UMoviePipelineShotConfig> ShotOverridePresetOrigin;                // 0x0128 (size: 0x30)
+    TSoftObjectPtr<class UMoviePipelineShotConfig> ShotOverridePresetOrigin;          // 0x0128 (size: 0x30)
 
     bool ShouldRender();
     void SetStatusProgress(const float InProgress);
@@ -383,14 +383,14 @@ class UMoviePipelineLinearExecutorBase : public UMoviePipelineExecutorBase
 
 class UMoviePipelineMasterConfig : public UMoviePipelineConfigBase
 {
-    TMap<class FString, class UMoviePipelineShotConfig*> PerShotConfigMapping;        // 0x0050 (size: 0x50)
+    TMap<FString, UMoviePipelineShotConfig*> PerShotConfigMapping;                    // 0x0050 (size: 0x50)
     class UMoviePipelineOutputSetting* OutputSetting;                                 // 0x00A0 (size: 0x8)
-    TArray<class UMoviePipelineSetting*> TransientSettings;                           // 0x00A8 (size: 0x10)
+    TArray<UMoviePipelineSetting*> TransientSettings;                                 // 0x00A8 (size: 0x10)
 
     void InitializeTransientSettings();
-    TArray<class UMoviePipelineSetting*> GetTransientSettings();
+    TArray<UMoviePipelineSetting*> GetTransientSettings();
     FFrameRate GetEffectiveFrameRate(const class ULevelSequence* InSequence);
-    TArray<class UMoviePipelineSetting*> GetAllSettings(const bool bIncludeDisabledSettings, const bool bIncludeTransientSettings);
+    TArray<UMoviePipelineSetting*> GetAllSettings(const bool bIncludeDisabledSettings, const bool bIncludeTransientSettings);
 }; // Size: 0xB8
 
 class UMoviePipelineOutputBase : public UMoviePipelineSetting
@@ -431,10 +431,10 @@ class UMoviePipelinePythonHostExecutor : public UMoviePipelineExecutorBase
 
 class UMoviePipelineQueue : public UObject
 {
-    TArray<class UMoviePipelineExecutorJob*> Jobs;                                    // 0x0028 (size: 0x10)
+    TArray<UMoviePipelineExecutorJob*> Jobs;                                          // 0x0028 (size: 0x10)
 
     void SetJobIndex(class UMoviePipelineExecutorJob* InJob, int32 Index);
-    TArray<class UMoviePipelineExecutorJob*> GetJobs();
+    TArray<UMoviePipelineExecutorJob*> GetJobs();
     class UMoviePipelineExecutorJob* DuplicateJob(class UMoviePipelineExecutorJob* InJob);
     void DeleteJob(class UMoviePipelineExecutorJob* InJob);
     void DeleteAllJobs();

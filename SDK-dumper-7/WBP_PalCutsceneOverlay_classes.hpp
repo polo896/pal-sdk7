@@ -34,18 +34,18 @@ public:
 	bool                                          isDisplaying;                                      // 0x04B4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Destruct();
-	void Display();
-	void ExecuteUbergraph_WBP_PalCutsceneOverlay(int32 EntryPoint);
-	void Hide();
-	struct FEventReply OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent);
-	void OnClose();
-	struct FEventReply OnPreviewKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
-	struct FEventReply OnPreviewMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	void OnSetup();
-	void OnSkipCountUpdatedDelegate_イベント(int32 SkipCount, int32 TotalCount);
-	void Skip();
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void Skip();
+	void OnSkipCountUpdatedDelegate_イベント(int32 SkipCount, int32 TotalCount);
+	void OnSetup();
+	struct FEventReply OnPreviewMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	struct FEventReply OnPreviewKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
+	void OnClose();
+	struct FEventReply OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent);
+	void Hide();
+	void ExecuteUbergraph_WBP_PalCutsceneOverlay(int32 EntryPoint);
+	void Display();
+	void Destruct();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

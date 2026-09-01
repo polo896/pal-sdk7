@@ -27,8 +27,8 @@ public:
 	class UStaticMeshComponent*                   BarrierMesh;                                       // 0x0318(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_LevelObject_TowerLockBarrier(int32 EntryPoint);
 	void OnDataChanged();
+	void ExecuteUbergraph_BP_LevelObject_TowerLockBarrier(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

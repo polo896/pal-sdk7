@@ -38,18 +38,18 @@ public:
 	class UWBP_Arena_SoloEntryButton_C*           LastHoveredEntry;                                  // 0x04D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void CancelAction();
-	void Construct();
-	void ExecuteUbergraph_WBP_Arena_SoloEntry(int32 EntryPoint);
-	void Finished_6E03AF144B8AC540362D31A1A74FC2B5();
-	void Finished_A8F632BC4656B439BE29FC9AA565281B();
-	void OnConfirmSolo(bool IsYes);
-	void OnEntryHovered(class UWBP_Arena_SoloEntryButton_C* Button);
-	void OnEntryUnhovered(class UWBP_Arena_SoloEntryButton_C* Button);
-	void OnInitialized();
-	void OnSelectSoloEntry(EPalArenaRank ArenaRank);
-	void OnSetup();
 	void Setup();
+	void OnSetup();
+	void OnSelectSoloEntry(EPalArenaRank ArenaRank);
+	void OnInitialized();
+	void OnEntryUnhovered(class UWBP_Arena_SoloEntryButton_C* Button);
+	void OnEntryHovered(class UWBP_Arena_SoloEntryButton_C* Button);
+	void OnConfirmSolo(bool IsYes);
+	void Finished_A8F632BC4656B439BE29FC9AA565281B();
+	void Finished_6E03AF144B8AC540362D31A1A74FC2B5();
+	void ExecuteUbergraph_WBP_Arena_SoloEntry(int32 EntryPoint);
+	void Construct();
+	void CancelAction();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

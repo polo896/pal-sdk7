@@ -34,18 +34,27 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Reticle_Pal_C_ExecuteUbergraph_WBP_Reticle_Pal;
 
-// Function WBP_Reticle_Pal.WBP_Reticle_Pal_C.SetAssignableDetail
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_Reticle_Pal_C_SetAssignableDetail final
+// Function WBP_Reticle_Pal.WBP_Reticle_Pal_C.SetVisibilityAssignableDetail
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Reticle_Pal_C_SetVisibilityAssignableDetail final
 {
 public:
-	struct FPalUIAimReticleMapObjectAssignableData assignableData;                                   // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    msgIdHandle;                                       // 0x0010(0x0010)(Edit, BlueprintVisible, NoDestructor)
-	class FText                                   CallFunc_GetMapObjectName_outName;                 // 0x0020(0x0018)()
-	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0038(0x0018)()
+	ESlateVisibility                              NewVisibility;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Reticle_Pal_C_SetAssignableDetail;
+DUMPER7_ASSERTS_WBP_Reticle_Pal_C_SetVisibilityAssignableDetail;
+
+// Function WBP_Reticle_Pal.WBP_Reticle_Pal_C.SetThrowableableDetail
+// 0x0060 (0x0060 - 0x0000)
+struct WBP_Reticle_Pal_C_SetThrowableableDetail final
+{
+public:
+	struct FPalUIAimReticleMapObjectThrowableData throwableData;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FDataTableRowHandle                    msgIdHandle;                                       // 0x0010(0x0010)(Edit, BlueprintVisible, NoDestructor)
+	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue; // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetMapObjectName_outName;                 // 0x0030(0x0018)()
+	class FText                                   CallFunc_EnumToLocalizedText_ReturnValue;          // 0x0048(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_Reticle_Pal_C_SetThrowableableDetail;
 
 // Function WBP_Reticle_Pal.WBP_Reticle_Pal_C.SetOtomoDeadDetail
 // 0x00E0 (0x00E0 - 0x0000)
@@ -71,27 +80,18 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Reticle_Pal_C_SetOtomoDeadDetail;
 
-// Function WBP_Reticle_Pal.WBP_Reticle_Pal_C.SetThrowableableDetail
-// 0x0060 (0x0060 - 0x0000)
-struct WBP_Reticle_Pal_C_SetThrowableableDetail final
+// Function WBP_Reticle_Pal.WBP_Reticle_Pal_C.SetAssignableDetail
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_Reticle_Pal_C_SetAssignableDetail final
 {
 public:
-	struct FPalUIAimReticleMapObjectThrowableData throwableData;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPalUIAimReticleMapObjectAssignableData assignableData;                                   // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDataTableRowHandle                    msgIdHandle;                                       // 0x0010(0x0010)(Edit, BlueprintVisible, NoDestructor)
-	class FString                                 CallFunc_GetEnumeratorUserFriendlyName_ReturnValue; // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetMapObjectName_outName;                 // 0x0030(0x0018)()
-	class FText                                   CallFunc_EnumToLocalizedText_ReturnValue;          // 0x0048(0x0018)()
+	class FText                                   CallFunc_GetMapObjectName_outName;                 // 0x0020(0x0018)()
+	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0038(0x0018)()
 };
-DUMPER7_ASSERTS_WBP_Reticle_Pal_C_SetThrowableableDetail;
-
-// Function WBP_Reticle_Pal.WBP_Reticle_Pal_C.SetVisibilityAssignableDetail
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Reticle_Pal_C_SetVisibilityAssignableDetail final
-{
-public:
-	ESlateVisibility                              NewVisibility;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Reticle_Pal_C_SetVisibilityAssignableDetail;
+DUMPER7_ASSERTS_WBP_Reticle_Pal_C_SetAssignableDetail;
 
 }
 

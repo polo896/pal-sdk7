@@ -29,8 +29,8 @@ public:
 	float                                         Angular_Intensify;                                 // 0x0078(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BeginWeaponDrop(class ABP_DropWeaponPart_C* self2, class AActor* Owner) const;
 	bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, const struct FAnimNotifyEventReference& EventReference) const;
+	void BeginWeaponDrop(class ABP_DropWeaponPart_C* self2, class AActor* Owner) const;
 
 public:
 	static class UClass* StaticClass()

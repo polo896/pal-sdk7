@@ -32,14 +32,14 @@ public:
 	class FName                                   Fast_Travel_Point_ID;                              // 0x055C(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Setup_Internal(class UPalLocationPoint* LocationPoint);
-	void SetEnable(bool Enable);
-	void GetInvisibleButton(class UWidget** Button);
-	void ExecuteUbergraph_WBP_Map_IconFTTower(int32 EntryPoint);
-	void ClickEvent();
-	void BndEvt__WBP_Map_IconFTTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Map_IconFTTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 	void BndEvt__WBP_Map_IconFTTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Map_IconFTTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Map_IconFTTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void ClickEvent();
+	void ExecuteUbergraph_WBP_Map_IconFTTower(int32 EntryPoint);
+	void GetInvisibleButton(class UWidget** Button);
+	void SetEnable(bool Enable);
+	void Setup_Internal(class UPalLocationPoint* LocationPoint);
 
 public:
 	static class UClass* StaticClass()

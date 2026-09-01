@@ -17,241 +17,43 @@
 namespace SDK
 {
 
-// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.BndEvt__WBP_Buildup_Pal_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.UpdateItemInfo
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Buildup_Pal_C::BndEvt__WBP_Buildup_Pal_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
+void UWBP_Buildup_Pal_C::UpdateItemInfo()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_C", "BndEvt__WBP_Buildup_Pal_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Buildup_Pal_C", "UpdateItemInfo");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.CloseAction
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Buildup_Pal_C::CloseAction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_C", "CloseAction");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Buildup_Pal_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.ExecuteUbergraph_WBP_Buildup_Pal
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Buildup_Pal_C::ExecuteUbergraph_WBP_Buildup_Pal(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_C", "ExecuteUbergraph_WBP_Buildup_Pal");
-
-	Params::WBP_Buildup_Pal_C_ExecuteUbergraph_WBP_Buildup_Pal Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.Invoke Rankup
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const TMap<EPalCharacterStatusOperationName, int32>&StatusMap                                              (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_Buildup_Pal_C::Invoke_Rankup(const TMap<EPalCharacterStatusOperationName, int32>& StatusMap)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_C", "Invoke Rankup");
-
-	Params::WBP_Buildup_Pal_C_Invoke_Rankup Parms{};
-
-	Parms.StatusMap = std::move(StatusMap);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.InvokeReset
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Buildup_Pal_C::InvokeReset()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_C", "InvokeReset");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.On Click Pal List
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalIndividualCharacterHandle*    Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Buildup_Pal_C::On_Click_Pal_List(class UPalIndividualCharacterHandle* Handle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_C", "On Click Pal List");
-
-	Params::WBP_Buildup_Pal_C_On_Click_Pal_List Parms{};
-
-	Parms.Handle = Handle;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.OnHoverPalList
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalIndividualCharacterHandle*    Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Buildup_Pal_C::OnHoverPalList(class UPalIndividualCharacterHandle* Handle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_C", "OnHoverPalList");
-
-	Params::WBP_Buildup_Pal_C_OnHoverPalList Parms{};
-
-	Parms.Handle = Handle;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Buildup_Pal_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.OnUnhoverPalList
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Buildup_Pal_C::OnUnhoverPalList()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_C", "OnUnhoverPalList");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.ReciveResult
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalCharacterStatusOperationResult      Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Buildup_Pal_C::ReciveResult(EPalCharacterStatusOperationResult Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_C", "ReciveResult");
-
-	Params::WBP_Buildup_Pal_C_ReciveResult Parms{};
-
-	Parms.Result = Result;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.Refresh Info
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Buildup_Pal_C::Refresh_Info()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_C", "Refresh Info");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.Replicated_Status
+// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.SynchroCheck
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Buildup_Pal_C::Replicated_Status()
+void UWBP_Buildup_Pal_C::SynchroCheck()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_C", "Replicated_Status");
+		Func = Class->GetFunction("WBP_Buildup_Pal_C", "SynchroCheck");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.Setup
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Buildup_Pal_C::Setup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_C", "Setup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.SwitchReset
+// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.SwitchUpgrade
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Buildup_Pal_C::SwitchReset()
+void UWBP_Buildup_Pal_C::SwitchUpgrade()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_C", "SwitchReset");
+		Func = Class->GetFunction("WBP_Buildup_Pal_C", "SwitchUpgrade");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -277,43 +79,241 @@ void UWBP_Buildup_Pal_C::SwitchTab(int32 Tab)
 }
 
 
-// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.SwitchUpgrade
+// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.SwitchReset
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Buildup_Pal_C::SwitchUpgrade()
+void UWBP_Buildup_Pal_C::SwitchReset()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_C", "SwitchUpgrade");
+		Func = Class->GetFunction("WBP_Buildup_Pal_C", "SwitchReset");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.SynchroCheck
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.Setup
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Buildup_Pal_C::SynchroCheck()
+void UWBP_Buildup_Pal_C::Setup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_C", "SynchroCheck");
+		Func = Class->GetFunction("WBP_Buildup_Pal_C", "Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.UpdateItemInfo
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.Replicated_Status
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Buildup_Pal_C::UpdateItemInfo()
+void UWBP_Buildup_Pal_C::Replicated_Status()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Pal_C", "UpdateItemInfo");
+		Func = Class->GetFunction("WBP_Buildup_Pal_C", "Replicated_Status");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.Refresh Info
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Buildup_Pal_C::Refresh_Info()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Pal_C", "Refresh Info");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.ReciveResult
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalCharacterStatusOperationResult      Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Buildup_Pal_C::ReciveResult(EPalCharacterStatusOperationResult Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Pal_C", "ReciveResult");
+
+	Params::WBP_Buildup_Pal_C_ReciveResult Parms{};
+
+	Parms.Result = Result;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.OnUnhoverPalList
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Buildup_Pal_C::OnUnhoverPalList()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Pal_C", "OnUnhoverPalList");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Buildup_Pal_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Pal_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.OnHoverPalList
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalIndividualCharacterHandle*    Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Buildup_Pal_C::OnHoverPalList(class UPalIndividualCharacterHandle* Handle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Pal_C", "OnHoverPalList");
+
+	Params::WBP_Buildup_Pal_C_OnHoverPalList Parms{};
+
+	Parms.Handle = Handle;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.On Click Pal List
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalIndividualCharacterHandle*    Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Buildup_Pal_C::On_Click_Pal_List(class UPalIndividualCharacterHandle* Handle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Pal_C", "On Click Pal List");
+
+	Params::WBP_Buildup_Pal_C_On_Click_Pal_List Parms{};
+
+	Parms.Handle = Handle;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.InvokeReset
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Buildup_Pal_C::InvokeReset()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Pal_C", "InvokeReset");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.Invoke Rankup
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const TMap<EPalCharacterStatusOperationName, int32>&StatusMap                                              (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_Buildup_Pal_C::Invoke_Rankup(const TMap<EPalCharacterStatusOperationName, int32>& StatusMap)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Pal_C", "Invoke Rankup");
+
+	Params::WBP_Buildup_Pal_C_Invoke_Rankup Parms{};
+
+	Parms.StatusMap = std::move(StatusMap);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.ExecuteUbergraph_WBP_Buildup_Pal
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Buildup_Pal_C::ExecuteUbergraph_WBP_Buildup_Pal(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Pal_C", "ExecuteUbergraph_WBP_Buildup_Pal");
+
+	Params::WBP_Buildup_Pal_C_ExecuteUbergraph_WBP_Buildup_Pal Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Buildup_Pal_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Pal_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.CloseAction
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Buildup_Pal_C::CloseAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Pal_C", "CloseAction");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Buildup_Pal.WBP_Buildup_Pal_C.BndEvt__WBP_Buildup_Pal_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Buildup_Pal_C::BndEvt__WBP_Buildup_Pal_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Pal_C", "BndEvt__WBP_Buildup_Pal_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

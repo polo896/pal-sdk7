@@ -27,13 +27,13 @@ public:
 	class FName                                   MyQuestId;                                         // 0x0520(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void CalcScreenPosition();
-	void GetLoupeWidgetSize(struct FVector2D* widgetSize_0);
-	void GetTargetWidgetSize(struct FVector2D* outVector);
-	void GetTargetWorldLocation(struct FVector* outVector);
-	bool IsEnableLoupe();
-	void SetFinalWidgetOpacity(double calcedOpacity);
 	void Setup(TSoftObjectPtr<class UPalLocationPoint_QuestBase> SoftQuestLocation);
+	void SetFinalWidgetOpacity(double calcedOpacity);
+	bool IsEnableLoupe();
+	void GetTargetWorldLocation(struct FVector* outVector);
+	void GetTargetWidgetSize(struct FVector2D* outVector);
+	void GetLoupeWidgetSize(struct FVector2D* widgetSize_0);
+	void CalcScreenPosition();
 
 public:
 	static class UClass* StaticClass()

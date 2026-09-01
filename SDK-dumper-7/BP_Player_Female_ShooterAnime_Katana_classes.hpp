@@ -18,7 +18,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_Player_Female_ShooterAnime_Katana.BP_Player_Female_ShooterAnime_Katana_C
 // 0x0000 (0x0328 - 0x0328)
-class UBP_Player_Female_ShooterAnime_Katana_C final : public UBP_Player_Female_ShooterAnime_Base_C
+class UBP_Player_Female_ShooterAnime_Katana_C : public UBP_Player_Female_ShooterAnime_Base_C
 {
 public:
 	static class UClass* StaticClass()

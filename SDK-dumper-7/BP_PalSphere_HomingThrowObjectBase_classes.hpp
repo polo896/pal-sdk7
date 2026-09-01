@@ -40,17 +40,17 @@ public:
 	double                                        CachedHomingMagnitude;                             // 0x0660(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_PalSphere_HomingThrowObjectBase(int32 EntryPoint);
-	void Rotate_Self(double DeltaTime);
-	void SetAttackTarget(class APalCharacter* Target);
-	void SetCaptureLevelType(EPalCaptureSphereLevelType LevelType);
 	void SetMaterialByType(EPalCaptureSphereLevelType CaptureLevelType_0);
-	void BndEvt__BP_CaptureDrone_ThrowObject_ProjectileMovement_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity);
-	void GetBodyClass(class UClass** bodyClass);
-	void ReceiveBeginPlay();
-	void ReceiveTick(float DeltaSeconds);
-	void Setup_Horming();
+	void SetCaptureLevelType(EPalCaptureSphereLevelType LevelType);
+	void SetAttackTarget(class APalCharacter* Target);
+	void Rotate_Self(double DeltaTime);
+	void ExecuteUbergraph_BP_PalSphere_HomingThrowObjectBase(int32 EntryPoint);
 	void UpdateHoming();
+	void Setup_Horming();
+	void ReceiveTick(float DeltaSeconds);
+	void ReceiveBeginPlay();
+	void GetBodyClass(class UClass** bodyClass);
+	void BndEvt__BP_CaptureDrone_ThrowObject_ProjectileMovement_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity);
 
 public:
 	static class UClass* StaticClass()

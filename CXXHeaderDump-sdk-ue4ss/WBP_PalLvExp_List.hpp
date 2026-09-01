@@ -9,7 +9,7 @@ class UWBP_PalLvExp_List_C : public UUserWidget
     class UWBP_PalLvExp_C* WBP_PalLvExp_2;                                            // 0x0290 (size: 0x8)
     class UWBP_PalLvExp_C* WBP_PalLvExp_3;                                            // 0x0298 (size: 0x8)
     class UWBP_PalLvExp_C* WBP_PalLvExp_4;                                            // 0x02A0 (size: 0x8)
-    TArray<class UWBP_PalLvExp_C*> ChildList;                                         // 0x02A8 (size: 0x10)
+    TArray<UWBP_PalLvExp_C*> ChildList;                                               // 0x02A8 (size: 0x10)
 
     void Setup();
     void Anm_Open_All();

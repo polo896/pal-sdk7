@@ -33,16 +33,9 @@ public:
 	class UTextBlock*                             TextBlock_313;                                     // 0x0410(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UVerticalBox*                           VerticalBox;                                       // 0x0418(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UObject*                                MyModActor;                                        // 0x0420(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ModActor_4::AModActor_C*                ModActorRef;                                       // 0x0428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ModActor_0::AModActor_C*                ModActorRef;                                       // 0x0428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Create_Keybind_Row(const class FText& Label, const class FText& Description, const struct FInputChord& InSelectedKey, class UWBP_SettingsRow_Keybind_C** Output);
-	void Construct();
-	void BuildSettingsRows();
-	void BuildKeyMapping(class UWBP_SettingsRow_Keybind_C* Row, class FName ActionName, struct FInputActionKeyMapping* Output);
-	void BndEvt__WBT_MinimapSettings_btnReset_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature();
-	void BndEvt__WBP_MinimapSettings_btnSave_K2Node_ComponentBoundEvent_2_OnButtonPressedEvent__DelegateSignature();
-	void BndEvt__WBP_MinimapSettings_btnCancel_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature();
 	void SaveSettingsRows();
 	void ResetSettingsRows();
 	void PrintToModLoader(const class FString& Message);
@@ -50,6 +43,13 @@ public:
 	void CreateToggleRow(const class FText& Label, const class FText& Description, bool bIsOn, class UWBP_SettingsRow_Toggle_C** Output);
 	void CreateSliderRow(const class FText& Reference, const class FText& Description, float MinValue, float MaxValue, float Value, float Step_Size, class UWBP_SettingsRow_Slider_C** Output);
 	void CreateHeaderRow(const class FText& Label, class UWBP_SettingsRow_Header_C** Output);
+	void Create_Keybind_Row(const class FText& Label, const class FText& Description, const struct FInputChord& InSelectedKey, class UWBP_SettingsRow_Keybind_C** Output);
+	void Construct();
+	void BuildSettingsRows();
+	void BuildKeyMapping(class UWBP_SettingsRow_Keybind_C* Row, class FName ActionName, struct FInputActionKeyMapping* Output);
+	void BndEvt__WBT_MinimapSettings_btnReset_K2Node_ComponentBoundEvent_0_OnButtonPressedEvent__DelegateSignature();
+	void BndEvt__WBP_MinimapSettings_btnSave_K2Node_ComponentBoundEvent_2_OnButtonPressedEvent__DelegateSignature();
+	void BndEvt__WBP_MinimapSettings_btnCancel_K2Node_ComponentBoundEvent_1_OnButtonPressedEvent__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()

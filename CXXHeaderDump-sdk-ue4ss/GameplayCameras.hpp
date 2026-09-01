@@ -94,7 +94,7 @@ class UCameraAnimationCameraModifier : public UCameraModifier
 
 class UCompositeCameraShakePattern : public UCameraShakePattern
 {
-    TArray<class UCameraShakePattern*> ChildPatterns;                                 // 0x0028 (size: 0x10)
+    TArray<UCameraShakePattern*> ChildPatterns;                                       // 0x0028 (size: 0x10)
 
 }; // Size: 0x48
 

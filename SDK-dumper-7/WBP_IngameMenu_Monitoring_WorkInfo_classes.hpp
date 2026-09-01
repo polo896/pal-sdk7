@@ -32,9 +32,9 @@ public:
 	TArray<struct FDataTableRowHandle>            EffectLevelMsgIDs;                                 // 0x02B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ChangeLevelText(int32 NewLevel);
-	void Construct();
 	void ExecuteUbergraph_WBP_IngameMenu_Monitoring_WorkInfo(int32 EntryPoint);
+	void Construct();
+	void ChangeLevelText(int32 NewLevel);
 
 public:
 	static class UClass* StaticClass()

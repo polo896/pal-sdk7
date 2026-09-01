@@ -28,10 +28,10 @@ public:
 	TMap<E_PalUIPlayerDebuffNoticeType, class UWBP_DebuffNotice_C*> DisplayingDebuffWidget;          // 0x0460(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void AddDebuffNotice(E_PalUIPlayerDebuffNoticeType DebuffType);
-	void Destruct();
-	void ExecuteUbergraph_WBP_PalPlayerDebuffNoticeBox(int32 EntryPoint);
 	void RemoveDebuffNotice(E_PalUIPlayerDebuffNoticeType DebuffType);
+	void ExecuteUbergraph_WBP_PalPlayerDebuffNoticeBox(int32 EntryPoint);
+	void Destruct();
+	void AddDebuffNotice(E_PalUIPlayerDebuffNoticeType DebuffType);
 
 public:
 	static class UClass* StaticClass()

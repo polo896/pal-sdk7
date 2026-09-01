@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "WBP_IndividualParameterBindWidget_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -30,11 +30,11 @@ public:
 	class UBP_PalTextBlock_C*                     Text_NowLevelNum;                                  // 0x0680(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Destruct();
-	void ExecuteUbergraph_WBP_Menu_CharacterExpGauge(int32 EntryPoint);
-	void OnInitialized();
-	void UpdateExp(int64 addExp, int64 oldExp, double nowExpRate);
 	void UpdateLevel(int32 NewLevel);
+	void UpdateExp(int64 addExp, int64 oldExp, double nowExpRate);
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_Menu_CharacterExpGauge(int32 EntryPoint);
+	void Destruct();
 
 public:
 	static class UClass* StaticClass()

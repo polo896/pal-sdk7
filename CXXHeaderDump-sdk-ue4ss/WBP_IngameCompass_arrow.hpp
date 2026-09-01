@@ -9,7 +9,7 @@ class UWBP_IngameCompass_arrow_C : public UWBP_CompassIconBase_C
 
     void ChangeBorderDrawType(TEnumAsByte<ESlateBrushDrawType::Type> drawType);
     void ChangeBorderColor(FLinearColor Color);
-    void SetupTexture(TSoftObjectPtr<UTexture2D> SoftTexture);
+    void SetupTexture(TSoftObjectPtr<class UTexture2D> SoftTexture);
     void SetDistanceText(double Length);
 }; // Size: 0x4B0
 

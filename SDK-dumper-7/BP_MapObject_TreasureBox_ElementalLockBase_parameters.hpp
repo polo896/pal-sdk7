@@ -14,15 +14,6 @@
 namespace SDK::Params
 {
 
-// Function BP_MapObject_TreasureBox_ElementalLockBase.BP_MapObject_TreasureBox_ElementalLockBase_C.BP_OnSetConcreteModel
-// 0x0008 (0x0008 - 0x0000)
-struct BP_MapObject_TreasureBox_ElementalLockBase_C_BP_OnSetConcreteModel final
-{
-public:
-	class UPalMapObjectConcreteModelBase*         ConcreteModel;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_MapObject_TreasureBox_ElementalLockBase_C_BP_OnSetConcreteModel;
-
 // Function BP_MapObject_TreasureBox_ElementalLockBase.BP_MapObject_TreasureBox_ElementalLockBase_C.ExecuteUbergraph_BP_MapObject_TreasureBox_ElementalLockBase
 // 0x0080 (0x0080 - 0x0000)
 struct BP_MapObject_TreasureBox_ElementalLockBase_C_ExecuteUbergraph_BP_MapObject_TreasureBox_ElementalLockBase final
@@ -54,6 +45,15 @@ public:
 	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_MapObject_TreasureBox_ElementalLockBase_C_ExecuteUbergraph_BP_MapObject_TreasureBox_ElementalLockBase;
+
+// Function BP_MapObject_TreasureBox_ElementalLockBase.BP_MapObject_TreasureBox_ElementalLockBase_C.BP_OnSetConcreteModel
+// 0x0008 (0x0008 - 0x0000)
+struct BP_MapObject_TreasureBox_ElementalLockBase_C_BP_OnSetConcreteModel final
+{
+public:
+	class UPalMapObjectConcreteModelBase*         ConcreteModel;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_MapObject_TreasureBox_ElementalLockBase_C_BP_OnSetConcreteModel;
 
 }
 

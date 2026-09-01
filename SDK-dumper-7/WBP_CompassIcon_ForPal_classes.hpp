@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "WBP_IngameCompass_arrow_classes.hpp"
 #include "Engine_structs.hpp"
+#include "WBP_IngameCompass_arrow_classes.hpp"
 #include "Pal_structs.hpp"
 
 
@@ -26,8 +26,8 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_WBP_CompassIcon_ForPal_C;           // 0x04B0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_WBP_CompassIcon_ForPal(int32 EntryPoint);
 	void OnInitialized();
+	void ExecuteUbergraph_WBP_CompassIcon_ForPal(int32 EntryPoint);
 	void SetupTexture(TSoftObjectPtr<class UTexture2D> SoftTexture);
 
 public:

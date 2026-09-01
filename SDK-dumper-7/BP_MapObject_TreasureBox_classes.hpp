@@ -32,13 +32,13 @@ public:
 	TMap<EPalMapObjectTreasureGradeType, class UClass*> VisualMap;                                   // 0x0478(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void BP_OnSetConcreteModel(class UPalMapObjectConcreteModelBase* ConcreteModel);
-	void ExecuteUbergraph_BP_MapObject_TreasureBox(int32 EntryPoint);
-	void OnFinishOpenVisual();
-	void OnNotifiedStartOpen();
-	void ReceiveBeginPlay();
-	void SetupVisual(class UPalMapObjectConcreteModelBase* ConcreteModel);
 	void TriggerOpen();
+	void SetupVisual(class UPalMapObjectConcreteModelBase* ConcreteModel);
+	void ReceiveBeginPlay();
+	void OnNotifiedStartOpen();
+	void OnFinishOpenVisual();
+	void ExecuteUbergraph_BP_MapObject_TreasureBox(int32 EntryPoint);
+	void BP_OnSetConcreteModel(class UPalMapObjectConcreteModelBase* ConcreteModel);
 
 public:
 	static class UClass* StaticClass()

@@ -16,45 +16,24 @@
 namespace SDK::Params
 {
 
-// Function WBP_Crime.WBP_Crime_C.CrimeBeFound
+// Function WBP_Crime.WBP_Crime_C.SetWantedRank
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Crime_C_SetWantedRank final
+{
+public:
+	int32                                         NewWantedRank;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Crime_C_SetWantedRank;
+
+// Function WBP_Crime.WBP_Crime_C.SetLostSearchTImer
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_Crime_C_CrimeBeFound final
+struct WBP_Crime_C_SetLostSearchTImer final
 {
 public:
-	TArray<class FName>                           CrimeIds;                                          // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	double                                        LostSrarchTime;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CurrentLostSearchTimer;                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Crime_C_CrimeBeFound;
-
-// Function WBP_Crime.WBP_Crime_C.ExecuteUbergraph_WBP_Crime
-// 0x0014 (0x0014 - 0x0000)
-struct WBP_Crime_C_ExecuteUbergraph_WBP_Crime final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Crime_C_ExecuteUbergraph_WBP_Crime;
-
-// Function WBP_Crime.WBP_Crime_C.SetAlertGaugePercent
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Crime_C_SetAlertGaugePercent final
-{
-public:
-	double                                        NewParcent;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_DoubleDouble_ReturnValue;      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Crime_C_SetAlertGaugePercent;
-
-// Function WBP_Crime.WBP_Crime_C.SetCrime
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Crime_C_SetCrime final
-{
-public:
-	bool                                          Crime;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Crime_C_SetCrime;
+DUMPER7_ASSERTS_WBP_Crime_C_SetLostSearchTImer;
 
 // Function WBP_Crime.WBP_Crime_C.SetEnableAlertTimerGauge
 // 0x0005 (0x0005 - 0x0000)
@@ -69,24 +48,45 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Crime_C_SetEnableAlertTimerGauge;
 
-// Function WBP_Crime.WBP_Crime_C.SetLostSearchTImer
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Crime_C_SetLostSearchTImer final
+// Function WBP_Crime.WBP_Crime_C.SetCrime
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Crime_C_SetCrime final
 {
 public:
-	double                                        LostSrarchTime;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CurrentLostSearchTimer;                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Crime;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Crime_C_SetLostSearchTImer;
+DUMPER7_ASSERTS_WBP_Crime_C_SetCrime;
 
-// Function WBP_Crime.WBP_Crime_C.SetWantedRank
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Crime_C_SetWantedRank final
+// Function WBP_Crime.WBP_Crime_C.SetAlertGaugePercent
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Crime_C_SetAlertGaugePercent final
 {
 public:
-	int32                                         NewWantedRank;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        NewParcent;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_DoubleDouble_ReturnValue;      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Crime_C_SetWantedRank;
+DUMPER7_ASSERTS_WBP_Crime_C_SetAlertGaugePercent;
+
+// Function WBP_Crime.WBP_Crime_C.ExecuteUbergraph_WBP_Crime
+// 0x0014 (0x0014 - 0x0000)
+struct WBP_Crime_C_ExecuteUbergraph_WBP_Crime final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Crime_C_ExecuteUbergraph_WBP_Crime;
+
+// Function WBP_Crime.WBP_Crime_C.CrimeBeFound
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Crime_C_CrimeBeFound final
+{
+public:
+	TArray<class FName>                           CrimeIds;                                          // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_Crime_C_CrimeBeFound;
 
 }
 

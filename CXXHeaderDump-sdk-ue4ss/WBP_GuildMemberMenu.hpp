@@ -30,7 +30,7 @@ class UWBP_GuildMemberMenu_C : public UUserWidget
     void OnClickedChangeMember();
     FWBP_GuildMemberMenu_COnClickedChangeGuest OnClickedChangeGuest;                  // 0x0368 (size: 0x10)
     void OnClickedChangeGuest();
-    TMap<class UWBP_GuildMemberMenuList_C*, class bool> ValidPermissionMap;           // 0x0378 (size: 0x50)
+    TMap<UWBP_GuildMemberMenuList_C*, bool> ValidPermissionMap;                       // 0x0378 (size: 0x50)
 
     void CanBan(EPalGuildRole SelfRole, EPalGuildRole TargetRole, bool bHasPermission, bool& bCanChangeRole);
     void CanChangeRoleInternal(EPalGuildRole SelfRole, EPalGuildRole TargetRole, EPalGuildRole ChangeRole, bool bHasPermission, bool& bCanChangeRole);

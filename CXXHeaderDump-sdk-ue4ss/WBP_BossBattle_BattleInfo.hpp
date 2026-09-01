@@ -11,7 +11,7 @@ class UWBP_BossBattle_BattleInfo_C : public UPalUserWidget
     class APalBossTower* CurrentBossTower;                                            // 0x0478 (size: 0x8)
     FTimerHandle CurrentTimer;                                                        // 0x0480 (size: 0x8)
     class UBP_PalRaidBossComponent_C* CurrentRaid;                                    // 0x0488 (size: 0x8)
-    TArray<class UBP_PalRaidBossComponent_C*> CachedRaids;                            // 0x0490 (size: 0x10)
+    TArray<UBP_PalRaidBossComponent_C*> CachedRaids;                                  // 0x0490 (size: 0x10)
     class UPalUIMapObjectRaidBossAreaStatusModel* RaidBossAreaUIModel;                // 0x04A0 (size: 0x8)
     FTimerHandle RaidBossAreaTimer;                                                   // 0x04A8 (size: 0x8)
     double RemainWaveTime;                                                            // 0x04B0 (size: 0x8)

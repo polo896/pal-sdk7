@@ -32,14 +32,14 @@ struct FMovieSceneBinding
 {
     FGuid ObjectGuid;                                                                 // 0x0000 (size: 0x10)
     FString BindingName;                                                              // 0x0010 (size: 0x10)
-    TArray<class UMovieSceneTrack*> Tracks;                                           // 0x0020 (size: 0x10)
+    TArray<UMovieSceneTrack*> Tracks;                                                 // 0x0020 (size: 0x10)
 
 }; // Size: 0x30
 
 struct FMovieSceneBindingOverrideData
 {
     FMovieSceneObjectBindingID ObjectBindingID;                                       // 0x0000 (size: 0x18)
-    TSoftObjectPtr<UObject> Object;                                                   // 0x0018 (size: 0x30)
+    TSoftObjectPtr<class UObject> Object;                                             // 0x0018 (size: 0x30)
     bool bOverridesDefault;                                                           // 0x0048 (size: 0x1)
 
 }; // Size: 0x50
@@ -127,7 +127,7 @@ struct FMovieSceneEasingSettings
 
 struct FMovieSceneEditorData
 {
-    TMap<class FString, class FMovieSceneExpansionState> ExpansionStates;             // 0x0000 (size: 0x50)
+    TMap<FString, FMovieSceneExpansionState> ExpansionStates;                         // 0x0000 (size: 0x50)
     TArray<FString> PinnedNodes;                                                      // 0x0050 (size: 0x10)
     double ViewStart;                                                                 // 0x0060 (size: 0x8)
     double ViewEnd;                                                                   // 0x0068 (size: 0x8)
@@ -300,7 +300,7 @@ struct FMovieSceneEvaluationOperand
 
 struct FMovieSceneEvaluationTemplate
 {
-    TMap<class FMovieSceneTrackIdentifier, class FMovieSceneEvaluationTrack> Tracks;  // 0x0000 (size: 0x50)
+    TMap<FMovieSceneTrackIdentifier, FMovieSceneEvaluationTrack> Tracks;              // 0x0000 (size: 0x50)
     FGuid SequenceSignature;                                                          // 0x00A0 (size: 0x10)
     FMovieSceneEvaluationTemplateSerialNumber TemplateSerialNumber;                   // 0x00B0 (size: 0x4)
     FMovieSceneTemplateGenerationLedger TemplateLedger;                               // 0x00B8 (size: 0xA8)
@@ -439,7 +439,7 @@ struct FMovieSceneObjectPathChannel : public FMovieSceneChannel
 
 struct FMovieSceneObjectPathChannelKeyValue
 {
-    TSoftObjectPtr<UObject> SoftPtr;                                                  // 0x0000 (size: 0x30)
+    TSoftObjectPtr<class UObject> SoftPtr;                                            // 0x0000 (size: 0x30)
     class UObject* HardPtr;                                                           // 0x0030 (size: 0x8)
 
 }; // Size: 0x38
@@ -488,7 +488,7 @@ struct FMovieSceneRootEvaluationTemplateInstance
     TWeakObjectPtr<class UMovieSceneSequence> WeakRootSequence;                       // 0x0000 (size: 0x8)
     class UMovieSceneCompiledDataManager* CompiledDataManager;                        // 0x0008 (size: 0x8)
     class UMovieSceneEntitySystemLinker* EntitySystemLinker;                          // 0x0028 (size: 0x8)
-    TMap<class FMovieSceneSequenceID, class UObject*> DirectorInstances;              // 0x0030 (size: 0x50)
+    TMap<FMovieSceneSequenceID, UObject*> DirectorInstances;                          // 0x0030 (size: 0x50)
 
 }; // Size: 0x88
 
@@ -501,7 +501,7 @@ struct FMovieSceneSectionEvalOptions
 
 struct FMovieSceneSectionGroup
 {
-    TArray<TWeakObjectPtr<UMovieSceneSection>> Sections;                              // 0x0000 (size: 0x10)
+    TArray<TWeakObjectPtr<class UMovieSceneSection>> Sections;                        // 0x0000 (size: 0x10)
 
 }; // Size: 0x10
 
@@ -542,8 +542,8 @@ struct FMovieSceneSequenceHierarchy
 {
     FMovieSceneSequenceHierarchyNode RootNode;                                        // 0x0000 (size: 0x18)
     FMovieSceneSubSequenceTree Tree;                                                  // 0x0018 (size: 0x60)
-    TMap<class FMovieSceneSequenceID, class FMovieSceneSubSequenceData> SubSequences; // 0x0078 (size: 0x50)
-    TMap<class FMovieSceneSequenceID, class FMovieSceneSequenceHierarchyNode> Hierarchy; // 0x00C8 (size: 0x50)
+    TMap<FMovieSceneSequenceID, FMovieSceneSubSequenceData> SubSequences;             // 0x0078 (size: 0x50)
+    TMap<FMovieSceneSequenceID, FMovieSceneSequenceHierarchyNode> Hierarchy;          // 0x00C8 (size: 0x50)
 
 }; // Size: 0x118
 
@@ -703,8 +703,8 @@ struct FMovieSceneTangentData
 struct FMovieSceneTemplateGenerationLedger
 {
     FMovieSceneTrackIdentifier LastTrackIdentifier;                                   // 0x0000 (size: 0x4)
-    TMap<class FGuid, class FMovieSceneTrackIdentifier> TrackSignatureToTrackIdentifier; // 0x0008 (size: 0x50)
-    TMap<class FGuid, class FMovieSceneFrameRange> SubSectionRanges;                  // 0x0058 (size: 0x50)
+    TMap<FGuid, FMovieSceneTrackIdentifier> TrackSignatureToTrackIdentifier;          // 0x0008 (size: 0x50)
+    TMap<FGuid, FMovieSceneFrameRange> SubSectionRanges;                              // 0x0058 (size: 0x50)
 
 }; // Size: 0xA8
 
@@ -904,8 +904,8 @@ class UMovieScene : public UMovieSceneSignedObject
     TArray<FMovieSceneSpawnable> Spawnables;                                          // 0x0060 (size: 0x10)
     TArray<FMovieScenePossessable> Possessables;                                      // 0x0070 (size: 0x10)
     TArray<FMovieSceneBinding> ObjectBindings;                                        // 0x0080 (size: 0x10)
-    TMap<class FName, class FMovieSceneObjectBindingIDs> BindingGroups;               // 0x0090 (size: 0x50)
-    TArray<class UMovieSceneTrack*> MasterTracks;                                     // 0x00E0 (size: 0x10)
+    TMap<FName, FMovieSceneObjectBindingIDs> BindingGroups;                           // 0x0090 (size: 0x50)
+    TArray<UMovieSceneTrack*> MasterTracks;                                           // 0x00E0 (size: 0x10)
     class UMovieSceneTrack* CameraCutTrack;                                           // 0x00F0 (size: 0x8)
     FMovieSceneFrameRange SelectionRange;                                             // 0x00F8 (size: 0x10)
     FMovieSceneFrameRange PlaybackRange;                                              // 0x0108 (size: 0x10)
@@ -1005,15 +1005,15 @@ class UMovieSceneEvalTimeSystem : public UMovieSceneEntitySystem
 
 class UMovieSceneEvaluationHookSystem : public UMovieSceneEntitySystem
 {
-    TMap<class FMovieSceneEvaluationInstanceKey, class FMovieSceneEvaluationHookEventContainer> PendingEventsByRootInstance; // 0x0040 (size: 0x50)
+    TMap<FMovieSceneEvaluationInstanceKey, FMovieSceneEvaluationHookEventContainer> PendingEventsByRootInstance; // 0x0040 (size: 0x50)
 
 }; // Size: 0x90
 
 class UMovieSceneFolder : public UObject
 {
     FName FolderName;                                                                 // 0x002C (size: 0x8)
-    TArray<class UMovieSceneFolder*> ChildFolders;                                    // 0x0038 (size: 0x10)
-    TArray<class UMovieSceneTrack*> ChildMasterTracks;                                // 0x0048 (size: 0x10)
+    TArray<UMovieSceneFolder*> ChildFolders;                                          // 0x0038 (size: 0x10)
+    TArray<UMovieSceneTrack*> ChildMasterTracks;                                      // 0x0048 (size: 0x10)
     TArray<FString> ChildObjectBindingStrings;                                        // 0x0058 (size: 0x10)
 
 }; // Size: 0x78
@@ -1088,7 +1088,7 @@ class UMovieSceneSection : public UMovieSceneSignedObject
 
 class UMovieSceneSectionChannelOverrideRegistry : public UObject
 {
-    TMap<class FName, class UMovieSceneChannelOverrideContainer*> Overrides;          // 0x0028 (size: 0x50)
+    TMap<FName, UMovieSceneChannelOverrideContainer*> Overrides;                      // 0x0028 (size: 0x50)
 
 }; // Size: 0x78
 
@@ -1173,7 +1173,7 @@ class UMovieSceneSequencePlayer : public UObject
     FQualifiedFrameTime GetDuration();
     bool GetDisableCameraCuts();
     FQualifiedFrameTime GetCurrentTime();
-    TArray<class UObject*> GetBoundObjects(FMovieSceneObjectBindingID ObjectBinding);
+    TArray<UObject*> GetBoundObjects(FMovieSceneObjectBindingID ObjectBinding);
     void ChangePlaybackDirection();
 }; // Size: 0x4A8
 
@@ -1193,7 +1193,7 @@ class UMovieSceneSpawnSection : public UMovieSceneBoolSection
 
 class UMovieSceneSpawnTrack : public UMovieSceneTrack
 {
-    TArray<class UMovieSceneSection*> Sections;                                       // 0x0098 (size: 0x10)
+    TArray<UMovieSceneSection*> Sections;                                             // 0x0098 (size: 0x10)
     FGuid ObjectGuid;                                                                 // 0x00A8 (size: 0x10)
 
 }; // Size: 0xB8
@@ -1217,7 +1217,7 @@ class UMovieSceneSubSection : public UMovieSceneSection
 
 class UMovieSceneSubTrack : public UMovieSceneNameableTrack
 {
-    TArray<class UMovieSceneSection*> Sections;                                       // 0x0098 (size: 0x10)
+    TArray<UMovieSceneSection*> Sections;                                             // 0x0098 (size: 0x10)
 
 }; // Size: 0xA8
 
@@ -1256,7 +1256,7 @@ class UTestMovieSceneEvalHookSection : public UMovieSceneHookSection
 
 class UTestMovieSceneEvalHookTrack : public UMovieSceneTrack
 {
-    TArray<class UMovieSceneSection*> SectionArray;                                   // 0x0098 (size: 0x10)
+    TArray<UMovieSceneSection*> SectionArray;                                         // 0x0098 (size: 0x10)
 
 }; // Size: 0xA8
 
@@ -1276,14 +1276,14 @@ class UTestMovieSceneSubSection : public UMovieSceneSubSection
 
 class UTestMovieSceneSubTrack : public UMovieSceneSubTrack
 {
-    TArray<class UMovieSceneSection*> SectionArray;                                   // 0x00A8 (size: 0x10)
+    TArray<UMovieSceneSection*> SectionArray;                                         // 0x00A8 (size: 0x10)
 
 }; // Size: 0xB8
 
 class UTestMovieSceneTrack : public UMovieSceneTrack
 {
     bool bHighPassFilter;                                                             // 0x00A0 (size: 0x1)
-    TArray<class UMovieSceneSection*> SectionArray;                                   // 0x00A8 (size: 0x10)
+    TArray<UMovieSceneSection*> SectionArray;                                         // 0x00A8 (size: 0x10)
 
 }; // Size: 0xB8
 

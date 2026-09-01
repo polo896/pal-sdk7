@@ -19,6 +19,74 @@
 namespace SDK::Params
 {
 
+// Function WBP_ExpeditionStatusWorldHUD.WBP_ExpeditionStatusWorldHUD_C.Tick
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_ExpeditionStatusWorldHUD_C_Tick final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ExpeditionStatusWorldHUD_C_Tick;
+
+// Function WBP_ExpeditionStatusWorldHUD.WBP_ExpeditionStatusWorldHUD_C.Setup
+// 0x00C8 (0x00C8 - 0x0000)
+struct WBP_ExpeditionStatusWorldHUD_C_Setup final
+{
+public:
+	TDelegate<void(const EPalMapObjectCharacterTeamMissionState LastState, const EPalMapObjectCharacterTeamMissionState CurrentState)> K2Node_CreateDelegate_OutputDelegate; // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalUIMapObjectStatusIndicatorParameter_TeamMission* K2Node_DynamicCast_AsPal_UIMap_Object_Status_Indicator_Parameter_Team_Mission; // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalMapObjectConcreteModelBase*         CallFunc_GetConcreteModel_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalUIMapObjectCharacterTeamMissionModel* CallFunc_GetUIModel_ReturnValue;                 // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalCharacterTeamMissionInfo           CallFunc_GetCurrentMissionInfo_OutInfo;            // 0x0048(0x0060)()
+	EPalMapObjectCharacterTeamMissionState        CallFunc_GetCurrentState_ReturnValue;              // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetTeamMissionName_OutMissionName;        // 0x00B0(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_ExpeditionStatusWorldHUD_C_Setup;
+
+// Function WBP_ExpeditionStatusWorldHUD.WBP_ExpeditionStatusWorldHUD_C.OnTimer_LocationCheck
+// 0x0068 (0x0068 - 0x0000)
+struct WBP_ExpeditionStatusWorldHUD_C_OnTimer_LocationCheck final
+{
+public:
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetMapObjectLocation_outVector;           // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalGameSetting*                        CallFunc_GetGameSetting_ReturnValue;               // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Vector_Distance_ReturnValue;              // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_DoubleDouble_ReturnValue;            // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Less_DoubleDouble_B_ImplicitCast;         // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ExpeditionStatusWorldHUD_C_OnTimer_LocationCheck;
+
+// Function WBP_ExpeditionStatusWorldHUD.WBP_ExpeditionStatusWorldHUD_C.OnChangedMissionState
+// 0x0080 (0x0080 - 0x0000)
+struct WBP_ExpeditionStatusWorldHUD_C_OnChangedMissionState final
+{
+public:
+	EPalMapObjectCharacterTeamMissionState        LastState;                                         // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalMapObjectCharacterTeamMissionState        CurrentState;                                      // 0x0001(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalCharacterTeamMissionInfo           CallFunc_GetCurrentMissionInfo_OutInfo;            // 0x0008(0x0060)()
+	class FText                                   CallFunc_GetTeamMissionName_OutMissionName;        // 0x0068(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_ExpeditionStatusWorldHUD_C_OnChangedMissionState;
+
 // Function WBP_ExpeditionStatusWorldHUD.WBP_ExpeditionStatusWorldHUD_C.ExecuteUbergraph_WBP_ExpeditionStatusWorldHUD
 // 0x00C8 (0x00C8 - 0x0000)
 struct WBP_ExpeditionStatusWorldHUD_C_ExecuteUbergraph_WBP_ExpeditionStatusWorldHUD final
@@ -50,74 +118,6 @@ public:
 	double                                        CallFunc_Divide_DoubleDouble_B_ImplicitCast;       // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_ExpeditionStatusWorldHUD_C_ExecuteUbergraph_WBP_ExpeditionStatusWorldHUD;
-
-// Function WBP_ExpeditionStatusWorldHUD.WBP_ExpeditionStatusWorldHUD_C.OnChangedMissionState
-// 0x0080 (0x0080 - 0x0000)
-struct WBP_ExpeditionStatusWorldHUD_C_OnChangedMissionState final
-{
-public:
-	EPalMapObjectCharacterTeamMissionState        LastState;                                         // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalMapObjectCharacterTeamMissionState        CurrentState;                                      // 0x0001(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalCharacterTeamMissionInfo           CallFunc_GetCurrentMissionInfo_OutInfo;            // 0x0008(0x0060)()
-	class FText                                   CallFunc_GetTeamMissionName_OutMissionName;        // 0x0068(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_ExpeditionStatusWorldHUD_C_OnChangedMissionState;
-
-// Function WBP_ExpeditionStatusWorldHUD.WBP_ExpeditionStatusWorldHUD_C.OnTimer_LocationCheck
-// 0x0068 (0x0068 - 0x0000)
-struct WBP_ExpeditionStatusWorldHUD_C_OnTimer_LocationCheck final
-{
-public:
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetMapObjectLocation_outVector;           // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalGameSetting*                        CallFunc_GetGameSetting_ReturnValue;               // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Vector_Distance_ReturnValue;              // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_DoubleDouble_ReturnValue;            // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Less_DoubleDouble_B_ImplicitCast;         // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ExpeditionStatusWorldHUD_C_OnTimer_LocationCheck;
-
-// Function WBP_ExpeditionStatusWorldHUD.WBP_ExpeditionStatusWorldHUD_C.Setup
-// 0x00C8 (0x00C8 - 0x0000)
-struct WBP_ExpeditionStatusWorldHUD_C_Setup final
-{
-public:
-	TDelegate<void(const EPalMapObjectCharacterTeamMissionState LastState, const EPalMapObjectCharacterTeamMissionState CurrentState)> K2Node_CreateDelegate_OutputDelegate; // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalUIMapObjectStatusIndicatorParameter_TeamMission* K2Node_DynamicCast_AsPal_UIMap_Object_Status_Indicator_Parameter_Team_Mission; // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalMapObjectConcreteModelBase*         CallFunc_GetConcreteModel_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalUIMapObjectCharacterTeamMissionModel* CallFunc_GetUIModel_ReturnValue;                 // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalCharacterTeamMissionInfo           CallFunc_GetCurrentMissionInfo_OutInfo;            // 0x0048(0x0060)()
-	EPalMapObjectCharacterTeamMissionState        CallFunc_GetCurrentState_ReturnValue;              // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetTeamMissionName_OutMissionName;        // 0x00B0(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_ExpeditionStatusWorldHUD_C_Setup;
-
-// Function WBP_ExpeditionStatusWorldHUD.WBP_ExpeditionStatusWorldHUD_C.Tick
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_ExpeditionStatusWorldHUD_C_Tick final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ExpeditionStatusWorldHUD_C_Tick;
 
 }
 

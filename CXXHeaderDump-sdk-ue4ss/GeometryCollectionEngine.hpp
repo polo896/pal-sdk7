@@ -111,7 +111,7 @@ struct FGeomComponentCacheParameters
 struct FGeometryCollectionAutoInstanceMesh
 {
     FSoftObjectPath StaticMesh;                                                       // 0x0000 (size: 0x20)
-    TArray<class UMaterialInterface*> Materials;                                      // 0x0020 (size: 0x10)
+    TArray<UMaterialInterface*> Materials;                                            // 0x0020 (size: 0x10)
 
 }; // Size: 0x30
 
@@ -187,7 +187,7 @@ struct FGeometryCollectionSource
 {
     FSoftObjectPath SourceGeometryObject;                                             // 0x0000 (size: 0x20)
     FTransform LocalTransform;                                                        // 0x0020 (size: 0x60)
-    TArray<class UMaterialInterface*> SourceMaterial;                                 // 0x0080 (size: 0x10)
+    TArray<UMaterialInterface*> SourceMaterial;                                       // 0x0080 (size: 0x10)
     bool bAddInternalMaterials;                                                       // 0x0090 (size: 0x1)
     bool bSplitComponents;                                                            // 0x0091 (size: 0x1)
 
@@ -335,7 +335,7 @@ class UGeometryCollection : public UObject
     FGeometryCollectionDamagePropagationData DamagePropagationData;                   // 0x0054 (size: 0xC)
     EClusterConnectionTypeEnum ClusterConnectionType;                                 // 0x0060 (size: 0x1)
     float ConnectionGraphBoundsFilteringMargin;                                       // 0x0064 (size: 0x4)
-    TArray<class UMaterialInterface*> Materials;                                      // 0x0068 (size: 0x10)
+    TArray<UMaterialInterface*> Materials;                                            // 0x0068 (size: 0x10)
     TArray<FGeometryCollectionEmbeddedExemplar> EmbeddedGeometryExemplar;             // 0x0078 (size: 0x10)
     bool bUseFullPrecisionUVs;                                                        // 0x0088 (size: 0x1)
     TArray<FGeometryCollectionAutoInstanceMesh> AutoInstanceMeshes;                   // 0x0090 (size: 0x10)
@@ -353,7 +353,7 @@ class UGeometryCollection : public UObject
     float SlowMovingVelocityThreshold;                                                // 0x00F4 (size: 0x4)
     TArray<FGeometryCollectionSizeSpecificData> SizeSpecificData;                     // 0x00F8 (size: 0x10)
     bool EnableRemovePiecesOnFracture;                                                // 0x0108 (size: 0x1)
-    TArray<class UMaterialInterface*> RemoveOnFractureMaterials;                      // 0x0110 (size: 0x10)
+    TArray<UMaterialInterface*> RemoveOnFractureMaterials;                            // 0x0110 (size: 0x10)
     class UDataflow* Dataflow;                                                        // 0x0120 (size: 0x8)
     FGuid PersistentGuid;                                                             // 0x0128 (size: 0x10)
     FGuid StateGuid;                                                                  // 0x0138 (size: 0x10)
@@ -373,7 +373,7 @@ class UGeometryCollectionComponent : public UMeshComponent
 {
     class AChaosSolverActor* ChaosSolverActor;                                        // 0x0578 (size: 0x8)
     class UGeometryCollection* RestCollection;                                        // 0x0668 (size: 0x8)
-    TArray<class AFieldSystemActor*> InitializationFields;                            // 0x0670 (size: 0x10)
+    TArray<AFieldSystemActor*> InitializationFields;                                  // 0x0670 (size: 0x10)
     bool Simulating;                                                                  // 0x0680 (size: 0x1)
     EObjectStateTypeEnum ObjectType;                                                  // 0x0688 (size: 0x1)
     bool bForceMotionBlur;                                                            // 0x0689 (size: 0x1)
@@ -426,7 +426,7 @@ class UGeometryCollectionComponent : public UMeshComponent
     int32 ReplicationAbandonAfterLevel;                                               // 0x0814 (size: 0x4)
     FGeometryCollectionRepData RepData;                                               // 0x0818 (size: 0x28)
     class UBodySetup* DummyBodySetup;                                                 // 0x0AC8 (size: 0x8)
-    TArray<class UInstancedStaticMeshComponent*> EmbeddedGeometryComponents;          // 0x0AD8 (size: 0x10)
+    TArray<UInstancedStaticMeshComponent*> EmbeddedGeometryComponents;                // 0x0AD8 (size: 0x10)
 
     void SetRestCollection(const class UGeometryCollection* RestCollectionIn);
     void SetNotifyRemovals(bool bNewNotifyRemovals);

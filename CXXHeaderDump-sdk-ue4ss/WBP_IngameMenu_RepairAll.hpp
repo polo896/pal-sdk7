@@ -15,7 +15,7 @@ class UWBP_IngameMenu_RepairAll_C : public UUserWidget
 
     FEventReply OnAnalogValueChanged(FGeometry MyGeometry, FAnalogInputEvent InAnalogInputEvent);
     void GetFocusTarget(class UWidget*& FocusTarget);
-    void Setup(TArray<class UPalItemSlot*>& TargetItemSlots, TArray<FPalStaticItemIdAndNum>& RequireMaterials);
+    void Setup(TArray<UPalItemSlot*>& TargetItemSlots, TArray<FPalStaticItemIdAndNum>& RequireMaterials);
     void Construct();
     void Destruct();
     void BndEvt__WBP_IngameMenu_RepairAll_WBP_CommonButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();

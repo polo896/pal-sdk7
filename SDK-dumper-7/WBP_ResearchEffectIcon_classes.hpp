@@ -29,8 +29,8 @@ public:
 	TMap<EPalLabCategorySubType, TSoftObjectPtr<class UTexture2D>> SubTypeIcons;                     // 0x02D8(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_WBP_ResearchEffectIcon(int32 EntryPoint);
 	void SetupIcon(EPalWorkSuitability WorkType, EPalLabCategorySubType SubType);
+	void ExecuteUbergraph_WBP_ResearchEffectIcon(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

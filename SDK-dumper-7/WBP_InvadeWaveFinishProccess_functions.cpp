@@ -17,15 +17,15 @@
 namespace SDK
 {
 
-// Function WBP_InvadeWaveFinishProccess.WBP_InvadeWaveFinishProccess_C.PlayAllWaveSuccess
+// Function WBP_InvadeWaveFinishProccess.WBP_InvadeWaveFinishProccess_C.PlayWaveFailed
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_InvadeWaveFinishProccess_C::PlayAllWaveSuccess()
+void UWBP_InvadeWaveFinishProccess_C::PlayWaveFailed()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InvadeWaveFinishProccess_C", "PlayAllWaveSuccess");
+		Func = Class->GetFunction("WBP_InvadeWaveFinishProccess_C", "PlayWaveFailed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -53,15 +53,15 @@ void UWBP_InvadeWaveFinishProccess_C::PlayWaveEndSequence(int32 EndWaveCount, in
 }
 
 
-// Function WBP_InvadeWaveFinishProccess.WBP_InvadeWaveFinishProccess_C.PlayWaveFailed
+// Function WBP_InvadeWaveFinishProccess.WBP_InvadeWaveFinishProccess_C.PlayAllWaveSuccess
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_InvadeWaveFinishProccess_C::PlayWaveFailed()
+void UWBP_InvadeWaveFinishProccess_C::PlayAllWaveSuccess()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InvadeWaveFinishProccess_C", "PlayWaveFailed");
+		Func = Class->GetFunction("WBP_InvadeWaveFinishProccess_C", "PlayAllWaveSuccess");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

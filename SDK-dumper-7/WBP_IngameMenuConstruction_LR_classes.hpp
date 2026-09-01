@@ -31,9 +31,9 @@ public:
 	TArray<class UWBP_PalKeyGuideIcon_C*>         Icons;                                             // 0x02A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void ExecuteUbergraph_WBP_IngameMenuConstruction_LR(int32 EntryPoint);
-	void OnInitialized();
 	void SetInputAction(int32 Index_0, class FName ActionName);
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_IngameMenuConstruction_LR(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -11,7 +11,7 @@ class UWBP_IngameMenu_ItemSearchList_C : public UPalUserWidget
     class UBP_PalTextBlock_C* Text_TargetContainerName;                               // 0x0478 (size: 0x8)
     class UWBP_CommonButton_1_C* WBP_CommonButton_Filter;                             // 0x0480 (size: 0x8)
     class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_SerchName;                // 0x0488 (size: 0x8)
-    TMap<class FName, class UWBP_PalInGameMenuItemSlotButton_C*> CurrentViewingItemInfoMap; // 0x0490 (size: 0x50)
+    TMap<FName, UWBP_PalInGameMenuItemSlotButton_C*> CurrentViewingItemInfoMap;       // 0x0490 (size: 0x50)
     FWBP_IngameMenu_ItemSearchList_COnRightClickSlot OnRightClickSlot;                // 0x04E0 (size: 0x10)
     void OnRightClickSlot(class UWBP_PalItemSlotButtonBase_C* Slot, EPalItemSlotPressType PressType);
     TArray<FName> Current Filter;                                                     // 0x04F0 (size: 0x10)
@@ -19,7 +19,7 @@ class UWBP_IngameMenu_ItemSearchList_C : public UPalUserWidget
     class UWBP_PalItemSlotButtonBase_C* LastHoverSlot;                                // 0x0518 (size: 0x8)
     FWBP_IngameMenu_ItemSearchList_COnSlotHovered OnSlotHovered;                      // 0x0520 (size: 0x10)
     void OnSlotHovered();
-    TMap<class FName, class UBP_ItemSlotEntryData_C*> CurrentItemMap;                 // 0x0530 (size: 0x50)
+    TMap<FName, UBP_ItemSlotEntryData_C*> CurrentItemMap;                             // 0x0530 (size: 0x50)
     bool Remove Essential;                                                            // 0x0580 (size: 0x1)
     bool bCanSearchByItemId;                                                          // 0x0581 (size: 0x1)
 

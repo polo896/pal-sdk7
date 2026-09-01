@@ -16,6 +16,15 @@
 namespace SDK::Params
 {
 
+// Function WBP_Reticle_KeyGuide.WBP_Reticle_KeyGuide_C.SetKeyGuideInfo
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Reticle_KeyGuide_C_SetKeyGuideInfo final
+{
+public:
+	Enum_ReticleCancel_DisplayType                DisplayType;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Reticle_KeyGuide_C_SetKeyGuideInfo;
+
 // Function WBP_Reticle_KeyGuide.WBP_Reticle_KeyGuide_C.ExecuteUbergraph_WBP_Reticle_KeyGuide
 // 0x00A8 (0x00A8 - 0x0000)
 struct WBP_Reticle_KeyGuide_C_ExecuteUbergraph_WBP_Reticle_KeyGuide final
@@ -45,15 +54,6 @@ public:
 	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0090(0x0018)()
 };
 DUMPER7_ASSERTS_WBP_Reticle_KeyGuide_C_ExecuteUbergraph_WBP_Reticle_KeyGuide;
-
-// Function WBP_Reticle_KeyGuide.WBP_Reticle_KeyGuide_C.SetKeyGuideInfo
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Reticle_KeyGuide_C_SetKeyGuideInfo final
-{
-public:
-	Enum_ReticleCancel_DisplayType                DisplayType;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Reticle_KeyGuide_C_SetKeyGuideInfo;
 
 }
 

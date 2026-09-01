@@ -40,19 +40,19 @@ public:
 	struct FTimerHandle                           TimerHandle_HideMessage;                           // 0x02E8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Blue();
-	void AnmEvent_Green();
-	void AnmEvent_In();
-	void AnmEvent_Out();
-	void AnmEvent_Red();
-	void ExecuteUbergraph_WBP_Ingame_Message(int32 EntryPoint);
-	void IsProcessingMessage(bool* bProcessing);
-	void OnTimerEvent_HideMessage();
-	void OnTimerEvent_PlayEnd();
-	void PopMessage();
-	void QueMessage(const struct FF_PalIngameMessageQueData& QueData);
-	void SetMessageText(class FName TextId);
 	void ShowMessage(const struct FF_PalIngameMessageQueData& DisplayQueData);
+	void SetMessageText(class FName TextId);
+	void QueMessage(const struct FF_PalIngameMessageQueData& QueData);
+	void PopMessage();
+	void OnTimerEvent_PlayEnd();
+	void OnTimerEvent_HideMessage();
+	void IsProcessingMessage(bool* bProcessing);
+	void ExecuteUbergraph_WBP_Ingame_Message(int32 EntryPoint);
+	void AnmEvent_Red();
+	void AnmEvent_Out();
+	void AnmEvent_In();
+	void AnmEvent_Green();
+	void AnmEvent_Blue();
 
 public:
 	static class UClass* StaticClass()

@@ -55,16 +55,16 @@ public:
 	bool                                          HideNextState;                                     // 0x0579(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void CREATEDELEGATE_PROXYFUNCTION_0(float NewValue);
-	void Destruct();
-	void DisplayCheck();
-	void ExecuteUbergraph_WBP_PalWorkFarm(int32 EntryPoint);
-	void On_Updated_Worker_Pal(class UPalWorkBase* Work);
-	void OnSetup();
-	void OnUpdateProgress(double Progress);
-	void OnUpdateState(EPalFarmCropState LastState, EPalFarmCropState NextState);
 	void SetFarmCropInfo(class UPalMapObjectFarmBlockV2Model* Model_0);
+	void OnUpdateState(EPalFarmCropState LastState, EPalFarmCropState NextState);
+	void OnUpdateProgress(double Progress);
+	void OnSetup();
+	void On_Updated_Worker_Pal(class UPalWorkBase* Work);
+	void ExecuteUbergraph_WBP_PalWorkFarm(int32 EntryPoint);
+	void DisplayCheck();
+	void Destruct();
+	void CREATEDELEGATE_PROXYFUNCTION_0(float NewValue);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

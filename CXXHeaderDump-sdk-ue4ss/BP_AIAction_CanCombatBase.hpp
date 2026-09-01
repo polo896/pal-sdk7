@@ -37,7 +37,7 @@ class UBP_AIAction_CanCombatBase_C : public UPalAIActionBase
     void ActionPause(class APawn* ControlledPawn);
     void ActionFinished(class APawn* ControlledPawn, TEnumAsByte<EPawnActionResult::Type> WithResult);
     void ActionAbort(class APawn* ControlledPawn);
-    void OnSightCheckAsyncCompleted(bool bIncludedPlayer, bool bIncludedAliveNPC, bool bIncludedEdibleDeadNPC, const TArray<class APalCharacter*>& InSightCharacters);
+    void OnSightCheckAsyncCompleted(bool bIncludedPlayer, bool bIncludedAliveNPC, bool bIncludedEdibleDeadNPC, const TArray<APalCharacter*>& InSightCharacters);
     void ExecuteUbergraph_BP_AIAction_CanCombatBase(int32 EntryPoint);
 }; // Size: 0x178
 

@@ -61,18 +61,18 @@ public:
 	bool                                          IsWarning;                                         // 0x0380(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void ExecuteUbergraph_WBP_Ingame_PlayerStamina_Circle(int32 EntryPoint);
-	void Finished_06A641D34FCE57CEABA661947727700A();
-	void Finished_A235210E4CFA5CD880150D987765704F();
-	void GetChachedSPPercent(double* Percent);
-	void HideNotEnoughStamina();
-	void OnInitialized();
-	void ResetDelayGauge();
-	void SetOtomoMarkVisible(bool IsVisible_0);
-	void SetPercent(double Percent, bool IsOverHeated);
-	void ShowNotEnoughStamina();
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void ShowNotEnoughStamina();
+	void SetPercent(double Percent, bool IsOverHeated);
+	void SetOtomoMarkVisible(bool IsVisible_0);
+	void ResetDelayGauge();
+	void OnInitialized();
+	void HideNotEnoughStamina();
+	void GetChachedSPPercent(double* Percent);
+	void Finished_A235210E4CFA5CD880150D987765704F();
+	void Finished_06A641D34FCE57CEABA661947727700A();
+	void ExecuteUbergraph_WBP_Ingame_PlayerStamina_Circle(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

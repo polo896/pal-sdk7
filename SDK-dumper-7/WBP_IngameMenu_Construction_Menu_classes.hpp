@@ -92,6 +92,7 @@ public:
 	void Finished_42D60B3E48EEA59101ED07B1E3AA6CAC();
 	void ExecuteUbergraph_WBP_IngameMenu_Construction_Menu(int32 EntryPoint);
 	void Destruct();
+	void Construct();
 	void CacheControllableItemInfo();
 	void BndEvt__WBP_IngameMenu_Construction_Menu_WBP_PalInvisibleButton_Paint_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 	void BndEvt__WBP_IngameMenu_Construction_Menu_WBP_PalInvisibleButton_Dismantle_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
@@ -100,7 +101,6 @@ public:
 	void BndEvt__WBP_IngameMenu_Construction_Menu_WBP_IngameMenu_Construction_TabSet_K2Node_ComponentBoundEvent_3_OnHoveredTab__DelegateSignature(class UWBP_IngameMenu_Construction_Tab_C* TabWidget);
 	void BndEvt__WBP_IngameMenu_Construction_Menu_WBP_IngameMenu_Construction_TabSet_K2Node_ComponentBoundEvent_2_OnChangedFocusIndex__DelegateSignature(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
 	void AnmEvent_Open();
-	void Construct();
 
 public:
 	static class UClass* StaticClass()

@@ -17,55 +17,56 @@
 namespace SDK
 {
 
-// Function BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C.SpawnWave
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C.ExecuteUbergraph_BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const struct FPalBossBattleEventBossRushWave&WaveInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C::SpawnWave(const struct FPalBossBattleEventBossRushWave& WaveInfo)
+void ABP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C::ExecuteUbergraph_BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C", "SpawnWave");
+		Func = Class->GetFunction("BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C", "ExecuteUbergraph_BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal");
 
-	Params::BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C_SpawnWave Parms{};
+	Params::BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C_ExecuteUbergraph_BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal Parms{};
 
-	Parms.WaveInfo = std::move(WaveInfo);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C.OnSpawnCharacter
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C.GetWaveList
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UPalIndividualCharacterHandle*    SpawnHandle                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// TArray<struct FPalBossBattleEventBossRushWave>*WaveList_0                                             (Parm, OutParm)
 
-void ABP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C::OnSpawnCharacter(class UPalIndividualCharacterHandle* SpawnHandle)
+void ABP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C::GetWaveList(TArray<struct FPalBossBattleEventBossRushWave>* WaveList_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C", "OnSpawnCharacter");
+		Func = Class->GetFunction("BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C", "GetWaveList");
 
-	Params::BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C_OnSpawnCharacter Parms{};
-
-	Parms.SpawnHandle = SpawnHandle;
+	Params::BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C_GetWaveList Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (WaveList_0 != nullptr)
+		*WaveList_0 = std::move(Parms.WaveList_0);
 }
 
 
-// Function BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C.OnInitialize
+// Function BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C.OnCombatStart
 // (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void ABP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C::OnInitialize()
+void ABP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C::OnCombatStart()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C", "OnInitialize");
+		Func = Class->GetFunction("BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C", "OnCombatStart");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -91,56 +92,55 @@ void ABP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C::OnDead(const struct FPal
 }
 
 
-// Function BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C.OnCombatStart
+// Function BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C.OnInitialize
 // (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void ABP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C::OnCombatStart()
+void ABP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C::OnInitialize()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C", "OnCombatStart");
+		Func = Class->GetFunction("BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C", "OnInitialize");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C.GetWaveList
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C.OnSpawnCharacter
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FPalBossBattleEventBossRushWave>*WaveList_0                                             (Parm, OutParm)
+// class UPalIndividualCharacterHandle*    SpawnHandle                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C::GetWaveList(TArray<struct FPalBossBattleEventBossRushWave>* WaveList_0)
+void ABP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C::OnSpawnCharacter(class UPalIndividualCharacterHandle* SpawnHandle)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C", "GetWaveList");
+		Func = Class->GetFunction("BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C", "OnSpawnCharacter");
 
-	Params::BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C_GetWaveList Parms{};
+	Params::BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C_OnSpawnCharacter Parms{};
+
+	Parms.SpawnHandle = SpawnHandle;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (WaveList_0 != nullptr)
-		*WaveList_0 = std::move(Parms.WaveList_0);
 }
 
 
-// Function BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C.ExecuteUbergraph_BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal.BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C.SpawnWave
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FPalBossBattleEventBossRushWave&WaveInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void ABP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C::ExecuteUbergraph_BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal(int32 EntryPoint)
+void ABP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C::SpawnWave(const struct FPalBossBattleEventBossRushWave& WaveInfo)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C", "ExecuteUbergraph_BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal");
+		Func = Class->GetFunction("BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C", "SpawnWave");
 
-	Params::BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C_ExecuteUbergraph_BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal Parms{};
+	Params::BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal_C_SpawnWave Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.WaveInfo = std::move(WaveInfo);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

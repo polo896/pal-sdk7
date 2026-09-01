@@ -15,7 +15,7 @@ class UWBP_Research_Tree_C : public UUserWidget
     class UWBP_Research_TreeLv_C* WBP_Research_TreeLv_6;                              // 0x02C0 (size: 0x8)
     class UWBP_Research_TreeLv_C* WBP_Research_TreeLv_7;                              // 0x02C8 (size: 0x8)
     int32 MinBlockSize;                                                               // 0x02D0 (size: 0x4)
-    TMap<class FName, class UWBP_Research_TreeIcon_C*> TreeIconMap;                   // 0x02D8 (size: 0x50)
+    TMap<FName, UWBP_Research_TreeIcon_C*> TreeIconMap;                               // 0x02D8 (size: 0x50)
     EPalWorkSuitability ResearchType;                                                 // 0x0328 (size: 0x1)
     FWBP_Research_Tree_COnResearchSelectDelegate OnResearchSelectDelegate;            // 0x0330 (size: 0x10)
     void OnResearchSelectDelegate(FName ResearchId);
@@ -28,9 +28,9 @@ class UWBP_Research_Tree_C : public UUserWidget
     FWBP_Research_Tree_COnTreeLineDrawed OnTreeLineDrawed;                            // 0x0370 (size: 0x10)
     void OnTreeLineDrawed(class UImage* Image, bool RelyParent, FName ResearchId);
     FName CurrentPinedResearch;                                                       // 0x0380 (size: 0x8)
-    TArray<class UWBP_Research_TreeLv_C*> LvBlocks;                                   // 0x0388 (size: 0x10)
+    TArray<UWBP_Research_TreeLv_C*> LvBlocks;                                         // 0x0388 (size: 0x10)
 
-    void CalcParentNodeMaxRank(TMap<class FName, class FTreeNodeData>& TreeData, FName NodeID, int32& Rank);
+    void CalcParentNodeMaxRank(TMap<FName, FTreeNodeData>& TreeData, FName NodeID, int32& Rank);
     FEventReply OnAnalogValueChanged(FGeometry MyGeometry, FAnalogInputEvent InAnalogInputEvent);
     void ReleaseCurrentPin();
     void GetFocusTarget(class UWidget*& FocusTarget);
@@ -38,7 +38,7 @@ class UWBP_Research_Tree_C : public UUserWidget
     void OnResearchHovered(FName ResearchId);
     void OnResearchSelect(FName ResearchId);
     void Draw Node Line(FName NodeID, FTreeNodeData NodeData);
-    void CalcNodeSpace(TMap<class FName, class FTreeNodeData> TreeNodeMap, FName CurrentNode, int32& RequireSpace);
+    void CalcNodeSpace(TMap<FName, FTreeNodeData> TreeNodeMap, FName CurrentNode, int32& RequireSpace);
     void TreeConstruct(const TArray<FPalUIGuildLabResearchInfo>& Researchs, EPalWorkSuitability Type);
     class UWBP_Research_TreeIcon_C* CreateNewIcon(FPalUIGuildLabResearchInfo ResearchInfo);
     void OnInitialized();

@@ -19,67 +19,236 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.BndEvt__WBP_IngameMenu_ChestManage_WBP_Common_Inventory_K2Node_ComponentBoundEvent_0_OnRightClickSlot__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameMenu_ChestManage_C_BndEvt__WBP_IngameMenu_ChestManage_WBP_Common_Inventory_K2Node_ComponentBoundEvent_0_OnRightClickSlot__DelegateSignature final
+// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.UpdateInventorySlot
+// 0x0090 (0x0090 - 0x0000)
+struct WBP_IngameMenu_ChestManage_C_UpdateInventorySlot final
 {
 public:
 	class UWBP_PalItemSlotButtonBase_C*           Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                           ItemList;                                          // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class UPalItemIDManager*                      CallFunc_GetItemIDManager_ReturnValue;             // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalItemSlot*                           CallFunc_GetTargetSlot_targetSlot;                 // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalItemSlotId                         CallFunc_GetSlotId_ReturnValue;                    // 0x0034(0x0014)(NoDestructor, HasGetValueTypeHash)
+	struct FPalItemId                             CallFunc_GetItemId_ReturnValue;                    // 0x0048(0x0028)(ConstParm, NoDestructor, HasGetValueTypeHash)
+	struct FPalItemData                           CallFunc_GetItemData_ReturnValue;                  // 0x0070(0x0010)(ConstParm, NoDestructor)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_81[0x3];                                       // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x008A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x008B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_BndEvt__WBP_IngameMenu_ChestManage_WBP_Common_Inventory_K2Node_ComponentBoundEvent_0_OnRightClickSlot__DelegateSignature;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_UpdateInventorySlot;
 
-// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.BndEvt__WBP_IngameMenu_ChestManage_WBP_Common_Inventory_K2Node_ComponentBoundEvent_5_OnHoveredInventorySlot__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_ChestManage_C_BndEvt__WBP_IngameMenu_ChestManage_WBP_Common_Inventory_K2Node_ComponentBoundEvent_5_OnHoveredInventorySlot__DelegateSignature final
-{
-public:
-	class UWBP_PalItemSlotButtonBase_C*           SlotButton;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_BndEvt__WBP_IngameMenu_ChestManage_WBP_Common_Inventory_K2Node_ComponentBoundEvent_5_OnHoveredInventorySlot__DelegateSignature;
-
-// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.BndEvt__WBP_IngameMenu_ChestManage_WBP_IngameMenu_ChestManage_TakeOut_K2Node_ComponentBoundEvent_3_OnTakeOutConfirmed__DelegateSignature
+// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.UpdateInventoryGreyout
 // 0x0030 (0x0030 - 0x0000)
-struct WBP_IngameMenu_ChestManage_C_BndEvt__WBP_IngameMenu_ChestManage_WBP_IngameMenu_ChestManage_TakeOut_K2Node_ComponentBoundEvent_3_OnTakeOutConfirmed__DelegateSignature final
+struct WBP_IngameMenu_ChestManage_C_UpdateInventoryGreyout final
 {
 public:
-	struct FPalItemId                             TakeOutId;                                         // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-	int64                                         TakeOutCount;                                      // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalItemSlot*                           Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class UWBP_PalItemSlotButtonBase_C*>   CallFunc_GetAllItemSlotButton_Slots;               // 0x0008(0x0010)(ReferenceParm, ContainsInstancedReference)
+	class UWBP_PalItemSlotButtonBase_C*           CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                           CallFunc_Map_Keys_Keys;                            // 0x0020(0x0010)(ReferenceParm)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_BndEvt__WBP_IngameMenu_ChestManage_WBP_IngameMenu_ChestManage_TakeOut_K2Node_ComponentBoundEvent_3_OnTakeOutConfirmed__DelegateSignature;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_UpdateInventoryGreyout;
 
-// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.BndEvt__WBP_IngameMenu_ChestManage_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_1_OnRightClickSlot__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameMenu_ChestManage_C_BndEvt__WBP_IngameMenu_ChestManage_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_1_OnRightClickSlot__DelegateSignature final
+// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.Unbind
+// 0x0014 (0x0014 - 0x0000)
+struct WBP_IngameMenu_ChestManage_C_Unbind final
 {
 public:
-	class UWBP_PalItemSlotButtonBase_C*           Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UPalUIBaseCampItemDispenserModel* Self)> K2Node_CreateDelegate_OutputDelegate; // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_BndEvt__WBP_IngameMenu_ChestManage_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_1_OnRightClickSlot__DelegateSignature;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_Unbind;
 
-// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.CustomNavi_ToCloseButton
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameMenu_ChestManage_C_CustomNavi_ToCloseButton final
+// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.Setup Take Out
+// 0x002C (0x002C - 0x0000)
+struct WBP_IngameMenu_ChestManage_C_Setup_Take_Out final
 {
 public:
-	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalItemAndNum                         ItemAndNum;                                        // 0x0000(0x002C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_Setup_Take_Out;
+
+// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.Setup
+// 0x00F8 (0x00F8 - 0x0000)
+struct WBP_IngameMenu_ChestManage_C_Setup final
+{
+public:
+	class UBP_PalInventoryModel_C*                InventoryModel_0;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalUIBaseCampItemDispenserModel*       DispenserModel_0;                                  // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_16[0x2];                                       // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0020(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x0030(0x0004)(NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0034(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0048(0x0008)(NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UPalItemSlot* Slot)>     K2Node_CreateDelegate_OutputDelegate_2;            // 0x0050(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EUINavigation Navigation)>     K2Node_CreateDelegate_OutputDelegate_3;            // 0x0060(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_4;            // 0x0070(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_MakeLiteralName_ReturnValue_1;            // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_1;      // 0x0088(0x0004)(NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_5;            // 0x008C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UPalUIBaseCampItemDispenserModel* Self)> K2Node_CreateDelegate_OutputDelegate_6; // 0x009C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EPalPlayerInventoryType>               K2Node_MakeArray_Array;                            // 0x00B8(0x0010)(ReferenceParm)
+	TArray<class UWBP_PalItemSlotButtonBase_C*>   CallFunc_GetAllItemSlotButton_Slots;               // 0x00C8(0x0010)(ReferenceParm, ContainsInstancedReference)
+	class UWBP_PalItemSlotButtonBase_C*           CallFunc_Array_Get_Item;                           // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalItemSlot*                           CallFunc_GetTargetSlot_targetSlot;                 // 0x00E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_Setup;
+
+// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.Reset Focus
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_IngameMenu_ChestManage_C_Reset_Focus final
+{
+public:
+	bool                                          TryFocusItemList;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetInventoryTopFocustTarget_FocusTarget;  // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetLastFocusSlot_Slot;                    // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_CustomNavi_ToCloseButton;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_Reset_Focus;
 
-// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.CustomNavi_ToInventorySlot
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_IngameMenu_ChestManage_C_CustomNavi_ToInventorySlot final
+// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.Refill
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_IngameMenu_ChestManage_C_Refill final
 {
 public:
-	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_GetInventoryTopFocustTarget_FocusTarget;  // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_CustomNavi_ToInventorySlot;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_Refill;
+
+// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.OnTakeOutClose
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_IngameMenu_ChestManage_C_OnTakeOutClose final
+{
+public:
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_GetLastFocusSlot_Slot;                    // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetInventoryTopFocustTarget_FocusTarget;  // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalUIActionBindData                   CallFunc_Array_Get_Item;                           // 0x0024(0x0004)(NoDestructor)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_OnTakeOutClose;
+
+// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.OnRemovedFromFocusPath
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_ChestManage_C_OnRemovedFromFocusPath final
+{
+public:
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_OnRemovedFromFocusPath;
+
+// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.OnCancelAction
+// 0x0003 (0x0003 - 0x0000)
+struct WBP_IngameMenu_ChestManage_C_OnCancelAction final
+{
+public:
+	bool                                          CallFunc_HasAnyUserFocus_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_OnCancelAction;
+
+// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.OnAddedToFocusPath
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_ChestManage_C_OnAddedToFocusPath final
+{
+public:
+	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_OnAddedToFocusPath;
+
+// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.On Camp Item Stack Info Update
+// 0x0068 (0x0068 - 0x0000)
+struct WBP_IngameMenu_ChestManage_C_On_Camp_Item_Stack_Info_Update final
+{
+public:
+	class UPalUIBaseCampItemDispenserModel*       Model;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FPalItemAndNum>                 CallFunc_CollectItemStackInfo_OutArray;            // 0x0008(0x0010)(ReferenceParm)
+	TArray<class FName>                           CallFunc_CollectItemStackInfo_OutIdArray;          // 0x0018(0x0010)(ReferenceParm)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UWBP_PalItemSlotButtonBase_C*>   CallFunc_GetAllItemSlotButton_Slots;               // 0x0038(0x0010)(ReferenceParm, ContainsInstancedReference)
+	class UWBP_PalItemSlotButtonBase_C*           CallFunc_Array_Get_Item;                           // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                           CallFunc_Map_Keys_Keys;                            // 0x0050(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Update_Item_Stack_Info_SlotUpdated;       // 0x0065(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_On_Camp_Item_Stack_Info_Update;
+
+// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.InputMethodChanged
+// 0x0007 (0x0007 - 0x0000)
+struct WBP_IngameMenu_ChestManage_C_InputMethodChanged final
+{
+public:
+	ECommonInputType                              InputType;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalSlateNavigationSetting             K2Node_MakeStruct_PalSlateNavigationSetting;       // 0x0002(0x0005)(NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_InputMethodChanged;
+
+// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.GetItemCount64InBaseCamp
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_IngameMenu_ChestManage_C_GetItemCount64InBaseCamp final
+{
+public:
+	struct FPalItemAndNum                         ItemAndNum;                                        // 0x0000(0x002C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         Num;                                               // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         CallFunc_GetItemStackCount64_ReturnValue;          // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_GetItemCount64InBaseCamp;
+
+// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.GetInventoryTopFocustTarget
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameMenu_ChestManage_C_GetInventoryTopFocustTarget final
+{
+public:
+	class UWidget*                                FocusTarget;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetInventoryTopFocustTarget_FocusTarget;  // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_GetInventoryTopFocustTarget;
+
+// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.GetInventoryLastHoveredFocusTarget
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameMenu_ChestManage_C_GetInventoryLastHoveredFocusTarget final
+{
+public:
+	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetInventoryLastHoveredFocusTarget_Widget; // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_GetInventoryLastHoveredFocusTarget;
 
 // Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.ExecuteUbergraph_WBP_IngameMenu_ChestManage
 // 0x0168 (0x0168 - 0x0000)
@@ -124,236 +293,67 @@ public:
 };
 DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_ExecuteUbergraph_WBP_IngameMenu_ChestManage;
 
-// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.GetInventoryLastHoveredFocusTarget
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameMenu_ChestManage_C_GetInventoryLastHoveredFocusTarget final
+// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.CustomNavi_ToInventorySlot
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_IngameMenu_ChestManage_C_CustomNavi_ToInventorySlot final
 {
 public:
-	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_GetInventoryLastHoveredFocusTarget_Widget; // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_GetInventoryLastHoveredFocusTarget;
-
-// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.GetInventoryTopFocustTarget
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameMenu_ChestManage_C_GetInventoryTopFocustTarget final
-{
-public:
-	class UWidget*                                FocusTarget;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_GetInventoryTopFocustTarget_FocusTarget;  // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_GetInventoryTopFocustTarget;
-
-// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.GetItemCount64InBaseCamp
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_IngameMenu_ChestManage_C_GetItemCount64InBaseCamp final
-{
-public:
-	struct FPalItemAndNum                         ItemAndNum;                                        // 0x0000(0x002C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	int64                                         Num;                                               // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int64                                         CallFunc_GetItemStackCount64_ReturnValue;          // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_GetItemCount64InBaseCamp;
-
-// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.InputMethodChanged
-// 0x0007 (0x0007 - 0x0000)
-struct WBP_IngameMenu_ChestManage_C_InputMethodChanged final
-{
-public:
-	ECommonInputType                              InputType;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPalSlateNavigationSetting             K2Node_MakeStruct_PalSlateNavigationSetting;       // 0x0002(0x0005)(NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_InputMethodChanged;
-
-// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.On Camp Item Stack Info Update
-// 0x0068 (0x0068 - 0x0000)
-struct WBP_IngameMenu_ChestManage_C_On_Camp_Item_Stack_Info_Update final
-{
-public:
-	class UPalUIBaseCampItemDispenserModel*       Model;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FPalItemAndNum>                 CallFunc_CollectItemStackInfo_OutArray;            // 0x0008(0x0010)(ReferenceParm)
-	TArray<class FName>                           CallFunc_CollectItemStackInfo_OutIdArray;          // 0x0018(0x0010)(ReferenceParm)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UWBP_PalItemSlotButtonBase_C*>   CallFunc_GetAllItemSlotButton_Slots;               // 0x0038(0x0010)(ReferenceParm, ContainsInstancedReference)
-	class UWBP_PalItemSlotButtonBase_C*           CallFunc_Array_Get_Item;                           // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                           CallFunc_Map_Keys_Keys;                            // 0x0050(0x0010)(ReferenceParm)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Update_Item_Stack_Info_SlotUpdated;       // 0x0065(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_On_Camp_Item_Stack_Info_Update;
-
-// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.OnAddedToFocusPath
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_ChestManage_C_OnAddedToFocusPath final
-{
-public:
-	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_OnAddedToFocusPath;
-
-// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.OnCancelAction
-// 0x0003 (0x0003 - 0x0000)
-struct WBP_IngameMenu_ChestManage_C_OnCancelAction final
-{
-public:
-	bool                                          CallFunc_HasAnyUserFocus_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_OnCancelAction;
-
-// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.OnRemovedFromFocusPath
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_ChestManage_C_OnRemovedFromFocusPath final
-{
-public:
-	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_OnRemovedFromFocusPath;
-
-// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.OnTakeOutClose
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_IngameMenu_ChestManage_C_OnTakeOutClose final
-{
-public:
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                CallFunc_GetLastFocusSlot_Slot;                    // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_GetInventoryTopFocustTarget_FocusTarget;  // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalUIActionBindData                   CallFunc_Array_Get_Item;                           // 0x0024(0x0004)(NoDestructor)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_OnTakeOutClose;
-
-// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.Refill
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_IngameMenu_ChestManage_C_Refill final
-{
-public:
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_Refill;
-
-// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.Reset Focus
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_IngameMenu_ChestManage_C_Reset_Focus final
-{
-public:
-	bool                                          TryFocusItemList;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                CallFunc_GetInventoryTopFocustTarget_FocusTarget;  // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_GetLastFocusSlot_Slot;                    // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetInventoryTopFocustTarget_FocusTarget;  // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_Reset_Focus;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_CustomNavi_ToInventorySlot;
 
-// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.Setup
-// 0x00F8 (0x00F8 - 0x0000)
-struct WBP_IngameMenu_ChestManage_C_Setup final
+// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.CustomNavi_ToCloseButton
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameMenu_ChestManage_C_CustomNavi_ToCloseButton final
 {
 public:
-	class UBP_PalInventoryModel_C*                InventoryModel_0;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalUIBaseCampItemDispenserModel*       DispenserModel_0;                                  // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16[0x2];                                       // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0020(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x0030(0x0004)(NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0034(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0048(0x0008)(NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UPalItemSlot* Slot)>     K2Node_CreateDelegate_OutputDelegate_2;            // 0x0050(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EUINavigation Navigation)>     K2Node_CreateDelegate_OutputDelegate_3;            // 0x0060(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_4;            // 0x0070(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_MakeLiteralName_ReturnValue_1;            // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_1;      // 0x0088(0x0004)(NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_5;            // 0x008C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UPalUIBaseCampItemDispenserModel* Self)> K2Node_CreateDelegate_OutputDelegate_6; // 0x009C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B4[0x4];                                       // 0x00B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EPalPlayerInventoryType>               K2Node_MakeArray_Array;                            // 0x00B8(0x0010)(ReferenceParm)
-	TArray<class UWBP_PalItemSlotButtonBase_C*>   CallFunc_GetAllItemSlotButton_Slots;               // 0x00C8(0x0010)(ReferenceParm, ContainsInstancedReference)
-	class UWBP_PalItemSlotButtonBase_C*           CallFunc_Array_Get_Item;                           // 0x00D8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalItemSlot*                           CallFunc_GetTargetSlot_targetSlot;                 // 0x00E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_Setup;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_CustomNavi_ToCloseButton;
 
-// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.Setup Take Out
-// 0x002C (0x002C - 0x0000)
-struct WBP_IngameMenu_ChestManage_C_Setup_Take_Out final
-{
-public:
-	struct FPalItemAndNum                         ItemAndNum;                                        // 0x0000(0x002C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_Setup_Take_Out;
-
-// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.Unbind
-// 0x0014 (0x0014 - 0x0000)
-struct WBP_IngameMenu_ChestManage_C_Unbind final
-{
-public:
-	TDelegate<void(class UPalUIBaseCampItemDispenserModel* Self)> K2Node_CreateDelegate_OutputDelegate; // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_Unbind;
-
-// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.UpdateInventoryGreyout
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_IngameMenu_ChestManage_C_UpdateInventoryGreyout final
-{
-public:
-	class UPalItemSlot*                           Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class UWBP_PalItemSlotButtonBase_C*>   CallFunc_GetAllItemSlotButton_Slots;               // 0x0008(0x0010)(ReferenceParm, ContainsInstancedReference)
-	class UWBP_PalItemSlotButtonBase_C*           CallFunc_Array_Get_Item;                           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                           CallFunc_Map_Keys_Keys;                            // 0x0020(0x0010)(ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_UpdateInventoryGreyout;
-
-// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.UpdateInventorySlot
-// 0x0090 (0x0090 - 0x0000)
-struct WBP_IngameMenu_ChestManage_C_UpdateInventorySlot final
+// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.BndEvt__WBP_IngameMenu_ChestManage_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_1_OnRightClickSlot__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameMenu_ChestManage_C_BndEvt__WBP_IngameMenu_ChestManage_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_1_OnRightClickSlot__DelegateSignature final
 {
 public:
 	class UWBP_PalItemSlotButtonBase_C*           Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                           ItemList;                                          // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	class UPalItemIDManager*                      CallFunc_GetItemIDManager_ReturnValue;             // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalItemSlot*                           CallFunc_GetTargetSlot_targetSlot;                 // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalItemSlotId                         CallFunc_GetSlotId_ReturnValue;                    // 0x0034(0x0014)(NoDestructor, HasGetValueTypeHash)
-	struct FPalItemId                             CallFunc_GetItemId_ReturnValue;                    // 0x0048(0x0028)(ConstParm, NoDestructor, HasGetValueTypeHash)
-	struct FPalItemData                           CallFunc_GetItemData_ReturnValue;                  // 0x0070(0x0010)(ConstParm, NoDestructor)
-	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_81[0x3];                                       // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x008A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x008B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_UpdateInventorySlot;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_BndEvt__WBP_IngameMenu_ChestManage_WBP_IngameMenu_ItemSearchList_K2Node_ComponentBoundEvent_1_OnRightClickSlot__DelegateSignature;
+
+// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.BndEvt__WBP_IngameMenu_ChestManage_WBP_IngameMenu_ChestManage_TakeOut_K2Node_ComponentBoundEvent_3_OnTakeOutConfirmed__DelegateSignature
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_IngameMenu_ChestManage_C_BndEvt__WBP_IngameMenu_ChestManage_WBP_IngameMenu_ChestManage_TakeOut_K2Node_ComponentBoundEvent_3_OnTakeOutConfirmed__DelegateSignature final
+{
+public:
+	struct FPalItemId                             TakeOutId;                                         // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	int64                                         TakeOutCount;                                      // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_BndEvt__WBP_IngameMenu_ChestManage_WBP_IngameMenu_ChestManage_TakeOut_K2Node_ComponentBoundEvent_3_OnTakeOutConfirmed__DelegateSignature;
+
+// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.BndEvt__WBP_IngameMenu_ChestManage_WBP_Common_Inventory_K2Node_ComponentBoundEvent_5_OnHoveredInventorySlot__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_ChestManage_C_BndEvt__WBP_IngameMenu_ChestManage_WBP_Common_Inventory_K2Node_ComponentBoundEvent_5_OnHoveredInventorySlot__DelegateSignature final
+{
+public:
+	class UWBP_PalItemSlotButtonBase_C*           SlotButton;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_BndEvt__WBP_IngameMenu_ChestManage_WBP_Common_Inventory_K2Node_ComponentBoundEvent_5_OnHoveredInventorySlot__DelegateSignature;
+
+// Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.BndEvt__WBP_IngameMenu_ChestManage_WBP_Common_Inventory_K2Node_ComponentBoundEvent_0_OnRightClickSlot__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameMenu_ChestManage_C_BndEvt__WBP_IngameMenu_ChestManage_WBP_Common_Inventory_K2Node_ComponentBoundEvent_0_OnRightClickSlot__DelegateSignature final
+{
+public:
+	class UWBP_PalItemSlotButtonBase_C*           Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestManage_C_BndEvt__WBP_IngameMenu_ChestManage_WBP_Common_Inventory_K2Node_ComponentBoundEvent_0_OnRightClickSlot__DelegateSignature;
 
 // Function WBP_IngameMenu_ChestManage.WBP_IngameMenu_ChestManage_C.BP_GetDesiredFocusTarget
 // 0x0020 (0x0020 - 0x0000)

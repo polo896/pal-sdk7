@@ -59,7 +59,7 @@ class UOpenColorIOConfiguration : public UObject
     FFilePath ConfigurationFile;                                                      // 0x0028 (size: 0x10)
     TArray<FOpenColorIOColorSpace> DesiredColorSpaces;                                // 0x0038 (size: 0x10)
     TArray<FOpenColorIODisplayView> DesiredDisplayViews;                              // 0x0048 (size: 0x10)
-    TArray<class UOpenColorIOColorTransform*> ColorTransforms;                        // 0x0058 (size: 0x10)
+    TArray<UOpenColorIOColorTransform*> ColorTransforms;                              // 0x0058 (size: 0x10)
 
 }; // Size: 0x90
 

@@ -32,10 +32,10 @@ class UWBP_RequirePalInfo_C : public UUserWidget
     bool isDisplayedDetail;                                                           // 0x0362 (size: 0x1)
     class APalMapObject* OwnerMapObject;                                              // 0x0368 (size: 0x8)
     FTimerHandle TimerUpdateDisplayPeriodically;                                      // 0x0370 (size: 0x8)
-    TSoftObjectPtr<UPalBaseCampWorkerDirector> WeakWorkerDirector;                    // 0x0378 (size: 0x30)
+    TSoftObjectPtr<class UPalBaseCampWorkerDirector> WeakWorkerDirector;              // 0x0378 (size: 0x30)
     TArray<FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData> Suitability Display Data; // 0x03A8 (size: 0x10)
 
-    void GetWorkIcons(TArray<class UWBP_MainMenu_Pal_WorkIcon_C*>& ReturnValues);
+    void GetWorkIcons(TArray<UWBP_MainMenu_Pal_WorkIcon_C*>& ReturnValues);
     void UpdateDisplayIsExistsRequiredWorker();
     void IsValidWorkSuitabilityData(TArray<FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData>& NewParam, bool& bValidData);
     void Play Path Animation(bool bToDetails, bool bFinishImmediately);

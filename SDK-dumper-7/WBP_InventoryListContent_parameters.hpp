@@ -14,6 +14,25 @@
 namespace SDK::Params
 {
 
+// Function WBP_InventoryListContent.WBP_InventoryListContent_C.SetCategoryName
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_InventoryListContent_C_SetCategoryName final
+{
+public:
+	class FText                                   CategoryName;                                      // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_InventoryListContent_C_SetCategoryName;
+
+// Function WBP_InventoryListContent.WBP_InventoryListContent_C.GetAllContents
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_InventoryListContent_C_GetAllContents final
+{
+public:
+	TArray<class UWidget*>                        Contents;                                          // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
+	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_WBP_InventoryListContent_C_GetAllContents;
+
 // Function WBP_InventoryListContent.WBP_InventoryListContent_C.AddWidget
 // 0x0020 (0x0020 - 0x0000)
 struct WBP_InventoryListContent_C_AddWidget final
@@ -26,25 +45,6 @@ public:
 	int32                                         CallFunc_GetChildIndex_ReturnValue;                // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_InventoryListContent_C_AddWidget;
-
-// Function WBP_InventoryListContent.WBP_InventoryListContent_C.GetAllContents
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_InventoryListContent_C_GetAllContents final
-{
-public:
-	TArray<class UWidget*>                        Contents;                                          // 0x0000(0x0010)(Parm, OutParm, ContainsInstancedReference)
-	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
-};
-DUMPER7_ASSERTS_WBP_InventoryListContent_C_GetAllContents;
-
-// Function WBP_InventoryListContent.WBP_InventoryListContent_C.SetCategoryName
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_InventoryListContent_C_SetCategoryName final
-{
-public:
-	class FText                                   CategoryName;                                      // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_InventoryListContent_C_SetCategoryName;
 
 }
 

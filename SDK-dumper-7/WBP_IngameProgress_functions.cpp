@@ -17,103 +17,43 @@
 namespace SDK
 {
 
-// Function WBP_IngameProgress.WBP_IngameProgress_C.AnmEvent_DisplayWorker
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameProgress_C::AnmEvent_DisplayWorker()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameProgress_C", "AnmEvent_DisplayWorker");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameProgress.WBP_IngameProgress_C.AnmEvent_NonWorker
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameProgress_C::AnmEvent_NonWorker()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameProgress_C", "AnmEvent_NonWorker");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameProgress.WBP_IngameProgress_C.Change Non Worker Mode
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameProgress.WBP_IngameProgress_C.SetWorkerPal
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    isNonWorker                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class UPalIndividualCharacterSlot*>&Slots                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_IngameProgress_C::Change_Non_Worker_Mode(bool isNonWorker)
+void UWBP_IngameProgress_C::SetWorkerPal(TArray<class UPalIndividualCharacterSlot*>& Slots)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameProgress_C", "Change Non Worker Mode");
+		Func = Class->GetFunction("WBP_IngameProgress_C", "SetWorkerPal");
 
-	Params::WBP_IngameProgress_C_Change_Non_Worker_Mode Parms{};
+	Params::WBP_IngameProgress_C_SetWorkerPal Parms{};
 
-	Parms.isNonWorker = isNonWorker;
+	Parms.Slots = std::move(Slots);
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	Slots = std::move(Parms.Slots);
 }
 
 
-// Function WBP_IngameProgress.WBP_IngameProgress_C.ExecuteUbergraph_WBP_IngameProgress
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_IngameProgress.WBP_IngameProgress_C.Set Work Amount
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  WorkAmount                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameProgress_C::ExecuteUbergraph_WBP_IngameProgress(int32 EntryPoint)
+void UWBP_IngameProgress_C::Set_Work_Amount(double WorkAmount)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameProgress_C", "ExecuteUbergraph_WBP_IngameProgress");
+		Func = Class->GetFunction("WBP_IngameProgress_C", "Set Work Amount");
 
-	Params::WBP_IngameProgress_C_ExecuteUbergraph_WBP_IngameProgress Parms{};
+	Params::WBP_IngameProgress_C_Set_Work_Amount Parms{};
 
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameProgress.WBP_IngameProgress_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_IngameProgress_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameProgress_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameProgress.WBP_IngameProgress_C.Set Second
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   RemainingSecond                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameProgress_C::Set_Second(int32 RemainingSecond)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameProgress_C", "Set Second");
-
-	Params::WBP_IngameProgress_C_Set_Second Parms{};
-
-	Parms.RemainingSecond = RemainingSecond;
+	Parms.WorkAmount = WorkAmount;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -139,45 +79,105 @@ void UWBP_IngameProgress_C::Set_Visible_Number(ESlateVisibility NewVisibility)
 }
 
 
-// Function WBP_IngameProgress.WBP_IngameProgress_C.Set Work Amount
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameProgress.WBP_IngameProgress_C.Set Second
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  WorkAmount                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   RemainingSecond                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameProgress_C::Set_Work_Amount(double WorkAmount)
+void UWBP_IngameProgress_C::Set_Second(int32 RemainingSecond)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameProgress_C", "Set Work Amount");
+		Func = Class->GetFunction("WBP_IngameProgress_C", "Set Second");
 
-	Params::WBP_IngameProgress_C_Set_Work_Amount Parms{};
+	Params::WBP_IngameProgress_C_Set_Second Parms{};
 
-	Parms.WorkAmount = WorkAmount;
+	Parms.RemainingSecond = RemainingSecond;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameProgress.WBP_IngameProgress_C.SetWorkerPal
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<class UPalIndividualCharacterSlot*>&Slots                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// Function WBP_IngameProgress.WBP_IngameProgress_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_IngameProgress_C::SetWorkerPal(TArray<class UPalIndividualCharacterSlot*>& Slots)
+void UWBP_IngameProgress_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameProgress_C", "SetWorkerPal");
+		Func = Class->GetFunction("WBP_IngameProgress_C", "OnInitialized");
 
-	Params::WBP_IngameProgress_C_SetWorkerPal Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Slots = std::move(Slots);
+
+// Function WBP_IngameProgress.WBP_IngameProgress_C.ExecuteUbergraph_WBP_IngameProgress
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameProgress_C::ExecuteUbergraph_WBP_IngameProgress(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameProgress_C", "ExecuteUbergraph_WBP_IngameProgress");
+
+	Params::WBP_IngameProgress_C_ExecuteUbergraph_WBP_IngameProgress Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	Slots = std::move(Parms.Slots);
+
+// Function WBP_IngameProgress.WBP_IngameProgress_C.Change Non Worker Mode
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    isNonWorker                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameProgress_C::Change_Non_Worker_Mode(bool isNonWorker)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameProgress_C", "Change Non Worker Mode");
+
+	Params::WBP_IngameProgress_C_Change_Non_Worker_Mode Parms{};
+
+	Parms.isNonWorker = isNonWorker;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameProgress.WBP_IngameProgress_C.AnmEvent_NonWorker
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngameProgress_C::AnmEvent_NonWorker()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameProgress_C", "AnmEvent_NonWorker");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameProgress.WBP_IngameProgress_C.AnmEvent_DisplayWorker
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngameProgress_C::AnmEvent_DisplayWorker()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameProgress_C", "AnmEvent_DisplayWorker");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

@@ -6,7 +6,7 @@ class UWBP_EnemyMark_C : public UPalUserWidget
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0450 (size: 0x8)
     class UWidgetAnimation* Default_In;                                               // 0x0458 (size: 0x8)
     class UCanvasPanel* CanvasPanel_85;                                               // 0x0460 (size: 0x8)
-    TArray<TSoftObjectPtr<UWBP_EnemyQuestionMarkIcon_C>> QuMarkList;                  // 0x0468 (size: 0x10)
+    TArray<TSoftObjectPtr<class UWBP_EnemyQuestionMarkIcon_C>> QuMarkList;            // 0x0468 (size: 0x10)
 
     void Construct();
     void カスタムイベント_0(class APalCharacter* TargetCharacter);

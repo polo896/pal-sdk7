@@ -36,14 +36,14 @@ public:
 	bool                                          bEnableButton;                                     // 0x02C1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_Guild_Setting_List_WBP_OptionSettings_ListContentSwitch_K2Node_ComponentBoundEvent_1_OnSwitcherChanged__DelegateSignature(bool IsOn);
-	void BndEvt__WBP_Guild_Setting_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void ExecuteUbergraph_WBP_Guild_Setting_List(int32 EntryPoint);
-	void GetPermissionType(EPalGuildPermission* PermissionType);
-	void SetEnableSetting(bool bEnable);
-	void SetPermissionType(EPalGuildPermission PermissionType);
-	void SetText(const class FText& InText);
 	void SetupOnOff(bool bIsOn);
+	void SetText(const class FText& InText);
+	void SetPermissionType(EPalGuildPermission PermissionType);
+	void SetEnableSetting(bool bEnable);
+	void GetPermissionType(EPalGuildPermission* PermissionType);
+	void ExecuteUbergraph_WBP_Guild_Setting_List(int32 EntryPoint);
+	void BndEvt__WBP_Guild_Setting_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Guild_Setting_List_WBP_OptionSettings_ListContentSwitch_K2Node_ComponentBoundEvent_1_OnSwitcherChanged__DelegateSignature(bool IsOn);
 
 public:
 	static class UClass* StaticClass()

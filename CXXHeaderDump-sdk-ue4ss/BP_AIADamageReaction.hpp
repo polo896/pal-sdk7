@@ -4,10 +4,10 @@
 class UBP_AIADamageReaction_C : public UPalAIDamageReactionComponent
 {
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x00A8 (size: 0x8)
-    TSoftObjectPtr<UPalAIActionComponent> PalAIActionComponent;                       // 0x00B0 (size: 0x30)
-    TSoftObjectPtr<UPalDamageReactionComponent> DamageReactionComponent;              // 0x00E0 (size: 0x30)
+    TSoftObjectPtr<class UPalAIActionComponent> PalAIActionComponent;                 // 0x00B0 (size: 0x30)
+    TSoftObjectPtr<class UPalDamageReactionComponent> DamageReactionComponent;        // 0x00E0 (size: 0x30)
     class UPalDamageReactionComponent* LocalDamageReactionComponent;                  // 0x0110 (size: 0x8)
-    TArray<class TSubclassOf<UPalAIActionBase>> OnDamageIgnoreAIActionArray;          // 0x0118 (size: 0x10)
+    TArray<TSubclassOf<class UPalAIActionBase>> OnDamageIgnoreAIActionArray;          // 0x0118 (size: 0x10)
     double StepPercentage;                                                            // 0x0128 (size: 0x8)
     class APalCharacter* DefaultPawn;                                                 // 0x0130 (size: 0x8)
     bool IsWaitStepCoolTime;                                                          // 0x0138 (size: 0x1)

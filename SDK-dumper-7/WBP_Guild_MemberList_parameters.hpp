@@ -19,120 +19,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_Guild_MemberList.WBP_Guild_MemberList_C.BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Guild_MemberList_C_BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Guild_MemberList_C_BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_Guild_MemberList.WBP_Guild_MemberList_C.BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Guild_MemberList_C_BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Guild_MemberList_C_BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_Guild_MemberList.WBP_Guild_MemberList_C.BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Guild_MemberList_C_BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Guild_MemberList_C_BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_Guild_MemberList.WBP_Guild_MemberList_C.ExecuteUbergraph_WBP_Guild_MemberList
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_Guild_MemberList_C_ExecuteUbergraph_WBP_Guild_MemberList final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_2;               // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_1;               // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  CallFunc_GetLocalPlayerUID_ReturnValue;            // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_GuidGuid_ReturnValue;          // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Guild_MemberList_C_ExecuteUbergraph_WBP_Guild_MemberList;
-
-// Function WBP_Guild_MemberList.WBP_Guild_MemberList_C.GetDisplayInfo
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_Guild_MemberList_C_GetDisplayInfo final
-{
-public:
-	struct FPalUIGuildMemberDisplayInfo           DisplayInfo;                                       // 0x0000(0x0030)(Parm, OutParm)
-};
-DUMPER7_ASSERTS_WBP_Guild_MemberList_C_GetDisplayInfo;
-
-// Function WBP_Guild_MemberList.WBP_Guild_MemberList_C.GetFocusTarget
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Guild_MemberList_C_GetFocusTarget final
-{
-public:
-	class UWidget*                                TargetWidget;                                      // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Guild_MemberList_C_GetFocusTarget;
-
-// Function WBP_Guild_MemberList.WBP_Guild_MemberList_C.SetIsAdmin
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_Guild_MemberList_C_SetIsAdmin final
-{
-public:
-	bool                                          IsAdmin;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0014(0x0014)()
-};
-DUMPER7_ASSERTS_WBP_Guild_MemberList_C_SetIsAdmin;
-
-// Function WBP_Guild_MemberList.WBP_Guild_MemberList_C.SetIsOnline
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_Guild_MemberList_C_SetIsOnline final
-{
-public:
-	bool                                          IsOnline;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0014(0x0014)()
-	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalGroupGuildBase*                     CallFunc_GetLocalPlayerGuild_ReturnValue;          // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_FormatLastOnlineTime_ReturnValue;         // 0x0038(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_Guild_MemberList_C_SetIsOnline;
-
-// Function WBP_Guild_MemberList.WBP_Guild_MemberList_C.SetPlayerName
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_Guild_MemberList_C_SetPlayerName final
-{
-public:
-	class FString                                 PlayerName;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_Guild_MemberList_C_SetPlayerName;
-
-// Function WBP_Guild_MemberList.WBP_Guild_MemberList_C.SetRole
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_Guild_MemberList_C_SetRole final
-{
-public:
-	EPalGuildRole                                 Role;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetGuildRoleName_NameText;                // 0x0008(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_Guild_MemberList_C_SetRole;
-
 // Function WBP_Guild_MemberList.WBP_Guild_MemberList_C.Setup
 // 0x00A8 (0x00A8 - 0x0000)
 struct WBP_Guild_MemberList_C_Setup final
@@ -158,6 +44,120 @@ public:
 	class FString                                 CallFunc_WithOnlineId_OutName;                     // 0x0098(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Guild_MemberList_C_Setup;
+
+// Function WBP_Guild_MemberList.WBP_Guild_MemberList_C.SetRole
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_Guild_MemberList_C_SetRole final
+{
+public:
+	EPalGuildRole                                 Role;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetGuildRoleName_NameText;                // 0x0008(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_Guild_MemberList_C_SetRole;
+
+// Function WBP_Guild_MemberList.WBP_Guild_MemberList_C.SetPlayerName
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_Guild_MemberList_C_SetPlayerName final
+{
+public:
+	class FString                                 PlayerName;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_Guild_MemberList_C_SetPlayerName;
+
+// Function WBP_Guild_MemberList.WBP_Guild_MemberList_C.SetIsOnline
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_Guild_MemberList_C_SetIsOnline final
+{
+public:
+	bool                                          IsOnline;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0014(0x0014)()
+	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalGroupGuildBase*                     CallFunc_GetLocalPlayerGuild_ReturnValue;          // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_FormatLastOnlineTime_ReturnValue;         // 0x0038(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_Guild_MemberList_C_SetIsOnline;
+
+// Function WBP_Guild_MemberList.WBP_Guild_MemberList_C.SetIsAdmin
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_Guild_MemberList_C_SetIsAdmin final
+{
+public:
+	bool                                          IsAdmin;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0014(0x0014)()
+};
+DUMPER7_ASSERTS_WBP_Guild_MemberList_C_SetIsAdmin;
+
+// Function WBP_Guild_MemberList.WBP_Guild_MemberList_C.GetFocusTarget
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Guild_MemberList_C_GetFocusTarget final
+{
+public:
+	class UWidget*                                TargetWidget;                                      // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Guild_MemberList_C_GetFocusTarget;
+
+// Function WBP_Guild_MemberList.WBP_Guild_MemberList_C.GetDisplayInfo
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_Guild_MemberList_C_GetDisplayInfo final
+{
+public:
+	struct FPalUIGuildMemberDisplayInfo           DisplayInfo;                                       // 0x0000(0x0030)(Parm, OutParm)
+};
+DUMPER7_ASSERTS_WBP_Guild_MemberList_C_GetDisplayInfo;
+
+// Function WBP_Guild_MemberList.WBP_Guild_MemberList_C.ExecuteUbergraph_WBP_Guild_MemberList
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_Guild_MemberList_C_ExecuteUbergraph_WBP_Guild_MemberList final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_2;               // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_1;               // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  CallFunc_GetLocalPlayerUID_ReturnValue;            // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_GuidGuid_ReturnValue;          // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Guild_MemberList_C_ExecuteUbergraph_WBP_Guild_MemberList;
+
+// Function WBP_Guild_MemberList.WBP_Guild_MemberList_C.BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Guild_MemberList_C_BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Guild_MemberList_C_BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_Guild_MemberList.WBP_Guild_MemberList_C.BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Guild_MemberList_C_BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Guild_MemberList_C_BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_Guild_MemberList.WBP_Guild_MemberList_C.BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Guild_MemberList_C_BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Guild_MemberList_C_BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
 
 }
 

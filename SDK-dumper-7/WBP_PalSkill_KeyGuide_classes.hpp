@@ -43,19 +43,19 @@ public:
 	bool                                          HasAdditionalRidingSkill;                          // 0x0560(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Destruct();
-	void EndAim();
-	void ExecuteUbergraph_WBP_PalSkill_KeyGuide(int32 EntryPoint);
-	void GetRideCharacterParameter(class UPalIndividualCharacterParameter** IndividualParameter);
-	void Hide();
-	void OnGetOff(class AActor* RideActor);
-	void OnInitialized();
-	void OnPlaySkillFail();
-	void OnRide(class AActor* RideActor);
-	void OnUpdateEquipWaza(class UPalIndividualCharacterParameter* IndividualParameter);
-	void Setup();
-	void StartAim();
 	void UpdateSkillInfo();
+	void StartAim();
+	void Setup();
+	void OnUpdateEquipWaza(class UPalIndividualCharacterParameter* IndividualParameter);
+	void OnRide(class AActor* RideActor);
+	void OnPlaySkillFail();
+	void OnInitialized();
+	void OnGetOff(class AActor* RideActor);
+	void Hide();
+	void GetRideCharacterParameter(class UPalIndividualCharacterParameter** IndividualParameter);
+	void ExecuteUbergraph_WBP_PalSkill_KeyGuide(int32 EntryPoint);
+	void EndAim();
+	void Destruct();
 
 public:
 	static class UClass* StaticClass()

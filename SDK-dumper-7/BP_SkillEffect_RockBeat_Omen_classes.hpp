@@ -29,11 +29,11 @@ public:
 	double                                        CameraShakeRadius;                                 // 0x0450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void CalcLocationOnFloor(const struct FVector& BaesLocation, struct FVector* Location);
-	void CustomEvent();
-	void ExecuteUbergraph_BP_SkillEffect_RockBeat_Omen(int32 EntryPoint);
-	void ReceiveBeginPlay();
 	void SpawnRock();
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_SkillEffect_RockBeat_Omen(int32 EntryPoint);
+	void CustomEvent();
+	void CalcLocationOnFloor(const struct FVector& BaesLocation, struct FVector* Location);
 
 public:
 	static class UClass* StaticClass()

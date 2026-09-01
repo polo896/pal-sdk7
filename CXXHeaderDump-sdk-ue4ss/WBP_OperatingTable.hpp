@@ -24,7 +24,7 @@ class UWBP_OperatingTable_C : public UPalUserWidgetOverlayUI
     class UWBP_PalCommonScrollList_C* WBP_PalCommonScrollList_Item;                   // 0x0508 (size: 0x8)
     class UWBP_PalCommonWindow_C* WBP_PalCommonWindow;                                // 0x0510 (size: 0x8)
     class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon_1;                              // 0x0518 (size: 0x8)
-    TArray<class UWBP_Menu_PalList_C*> PalList;                                       // 0x0520 (size: 0x10)
+    TArray<UWBP_Menu_PalList_C*> PalList;                                             // 0x0520 (size: 0x10)
     class UPalMapObjectOperatingTableModel* OperatingTableModel;                      // 0x0530 (size: 0x8)
     bool Hovering;                                                                    // 0x0538 (size: 0x1)
     class UPalIndividualCharacterHandle* CurrentHandle;                               // 0x0540 (size: 0x8)

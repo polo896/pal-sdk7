@@ -29,16 +29,16 @@ class UWBP_Guild_Setting_C : public UPalUserWidget
     FWBP_Guild_Setting_COnChangeRoleSetting OnChangeRoleSetting;                      // 0x0538 (size: 0x10)
     void OnChangeRoleSetting(EPalGuildRole Role, EPalGuildPermission RolePermission, bool bEnable);
     bool bRoleSettingMode;                                                            // 0x0548 (size: 0x1)
-    TMap<class EPalGuildPermission, class FDataTableRowHandle> PermissionSettingMsgIDMap; // 0x0550 (size: 0x50)
-    TMap<class EPalGuildRole, class UWBP_Title_WorldSelectButton_C*> RoleButtonMap;   // 0x05A0 (size: 0x50)
+    TMap<EPalGuildPermission, FDataTableRowHandle> PermissionSettingMsgIDMap;         // 0x0550 (size: 0x50)
+    TMap<EPalGuildRole, UWBP_Title_WorldSelectButton_C*> RoleButtonMap;               // 0x05A0 (size: 0x50)
     FWBP_Guild_Setting_COnChangedNoticeSetting OnChangedNoticeSetting;                // 0x05F0 (size: 0x10)
     void OnChangedNoticeSetting(EPalGuildNotificationType NotificationType, bool bEnableNotice);
-    TMap<class EPalGuildNotificationType, class UWBP_Guild_Setting_List_C*> NoticeSettingButtonMap; // 0x0600 (size: 0x50)
+    TMap<EPalGuildNotificationType, UWBP_Guild_Setting_List_C*> NoticeSettingButtonMap; // 0x0600 (size: 0x50)
 
     void ToPrevTab();
     void ToNextTab();
     void GetRoleSettingTopFocusTarget(class UWidget*& Widget);
-    void SetGuildNoticeSettings(TMap<class EPalGuildNotificationType, class bool> SettingMap);
+    void SetGuildNoticeSettings(TMap<EPalGuildNotificationType, bool> SettingMap);
     void UpdateGuildNoticeSetting();
     void IsEditableRoleSettingForLocalPlayer(EPalGuildRole TargetRole, bool& bEditable);
     void OnChangedPermissionInternal(bool bIsOn, EPalGuildPermission Permission);

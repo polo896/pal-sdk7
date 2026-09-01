@@ -18,7 +18,7 @@ class UWBP_PalInfo_C : public UUserWidget
     class UWBP_PalGet_s_C* WBP_PalGet_s;                                              // 0x02D8 (size: 0x8)
     bool isDisplaying;                                                                // 0x02E0 (size: 0x1)
     TArray<FName> stackedCharacterId;                                                 // 0x02E8 (size: 0x10)
-    TArray<class UWBP_MainMenu_Pal_Skill_Passive_C*> PassiveSkillWidgetArray;         // 0x02F8 (size: 0x10)
+    TArray<UWBP_MainMenu_Pal_Skill_Passive_C*> PassiveSkillWidgetArray;               // 0x02F8 (size: 0x10)
     TArray<FFPalUIPalInfoDisplayData> stackedGetInfo;                                 // 0x0308 (size: 0x10)
     TMap<TEnumAsByte<EPalUIPalInfoType::Type>, double> displayTimeMap;                // 0x0318 (size: 0x50)
     FTimerHandle CloseTimerHandle;                                                    // 0x0368 (size: 0x8)

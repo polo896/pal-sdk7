@@ -14,6 +14,15 @@
 namespace SDK::Params
 {
 
+// Function BP_SkillEffect_GrassTornado.BP_SkillEffect_GrassTornado_C.OnTornadoReady
+// 0x0008 (0x0008 - 0x0000)
+struct BP_SkillEffect_GrassTornado_C_OnTornadoReady final
+{
+public:
+	class APalSkillEffectBase*                    SkillEffect;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SkillEffect_GrassTornado_C_OnTornadoReady;
+
 // Function BP_SkillEffect_GrassTornado.BP_SkillEffect_GrassTornado_C.ExecuteUbergraph_BP_SkillEffect_GrassTornado
 // 0x0010 (0x0010 - 0x0000)
 struct BP_SkillEffect_GrassTornado_C_ExecuteUbergraph_BP_SkillEffect_GrassTornado final
@@ -24,15 +33,6 @@ public:
 	class APalSkillEffectBase*                    K2Node_Event_SkillEffect;                          // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_SkillEffect_GrassTornado_C_ExecuteUbergraph_BP_SkillEffect_GrassTornado;
-
-// Function BP_SkillEffect_GrassTornado.BP_SkillEffect_GrassTornado_C.OnTornadoReady
-// 0x0008 (0x0008 - 0x0000)
-struct BP_SkillEffect_GrassTornado_C_OnTornadoReady final
-{
-public:
-	class APalSkillEffectBase*                    SkillEffect;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_SkillEffect_GrassTornado_C_OnTornadoReady;
 
 }
 

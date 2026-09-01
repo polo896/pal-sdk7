@@ -27,32 +27,562 @@ public:
 };
 DUMPER7_ASSERTS_BP_FishingRodBase_C_CanFishing;
 
-// Function BP_FishingRodBase.BP_FishingRodBase_C.CanFishingMovementMode
-// 0x0048 (0x0048 - 0x0000)
-struct BP_FishingRodBase_C_CanFishingMovementMode final
+// Function BP_FishingRodBase.BP_FishingRodBase_C.UpdateVisibleReticle
+// 0x0020 (0x0020 - 0x0000)
+struct BP_FishingRodBase_C_UpdateVisibleReticle final
 {
 public:
-	bool                                          CanFishing_0;                                      // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          CallFunc_CanHitFishingTarget_ReturnValue;          // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsFishingAction_ReturnValue;              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          CallFunc_FindOwnerPalCharacter_ReturnValue;        // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalCharacterMovementComponent*         CallFunc_GetComponentByClass_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class APalPlayerCharacter*                    K2Node_DynamicCast_AsPal_Player_Character;         // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_GetRidePal_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalCharacterMovementComponent*         CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue_1;          // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0043(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0046(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalShooterComponent*                   CallFunc_GetComponentByClass_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsAiming_ReturnValue;                     // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanShoot_ReturnValue;                     // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_FishingRodBase_C_CanFishingMovementMode;
+DUMPER7_ASSERTS_BP_FishingRodBase_C_UpdateVisibleReticle;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.UpdateFloatRotation
+// 0x0088 (0x0088 - 0x0000)
+struct BP_FishingRodBase_C_UpdateFloatRotation final
+{
+public:
+	class APalCharacter*                          CallFunc_FindOwnerPalCharacter_ReturnValue;        // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_FindLookAtRotation_ReturnValue;           // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         CallFunc_BreakRotator_Roll;                        // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Pitch;                       // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakRotator_Yaw;                         // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_K2_SetActorRotation_ReturnValue;          // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_UpdateFloatRotation;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.UpdateControlFloat
+// 0x0490 (0x0490 - 0x0000)
+struct BP_FishingRodBase_C_UpdateControlFloat final
+{
+public:
+	double                                        DeltaTime;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalFishingRodState                           RodState;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                FloatLocation;                                     // 0x0010(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                SocketRodLocation;                                 // 0x0028(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_FindOwnerPalCharacter_ReturnValue;        // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsPalmi_ReturnValue;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Vector_Distance2D_ReturnValue;            // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetThrowingFloatLocation_Location;        // 0x0068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult;       // 0x0088(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_K2_SetActorLocation_ReturnValue;          // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_171[0x7];                                      // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0178(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult_1;     // 0x0190(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_K2_SetActorLocation_ReturnValue_1;        // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_279[0x7];                                      // 0x0279(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0280(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_VInterpTo_ReturnValue;                    // 0x0298(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult_2;     // 0x02B0(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_K2_SetActorLocation_ReturnValue_2;        // 0x0398(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_399[0x7];                                      // 0x0399(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult_3;     // 0x03A0(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_K2_SetActorLocation_ReturnValue_3;        // 0x0488(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_489[0x3];                                      // 0x0489(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_VInterpTo_DeltaTime_ImplicitCast;         // 0x048C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_UpdateControlFloat;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.StopRodAnim
+// 0x0010 (0x0010 - 0x0000)
+struct BP_FishingRodBase_C_StopRodAnim final
+{
+public:
+	class USkeletalMeshComponent*                 CallFunc_GetRodMesh_RodMesh;                       // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_StopRodAnim;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.SetVisibleOriginCable
+// 0x0018 (0x0018 - 0x0000)
+struct BP_FishingRodBase_C_SetVisibleOriginCable final
+{
+public:
+	bool                                          IsVisible;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USkeletalMeshComponent*                 CallFunc_GetRodMesh_RodMesh;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USkeletalMeshComponent*                 CallFunc_GetRodMesh_RodMesh_1;                     // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_SetVisibleOriginCable;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.SetDisableRodBlendWeight
+// 0x0028 (0x0028 - 0x0000)
+struct BP_FishingRodBase_C_SetDisableRodBlendWeight final
+{
+public:
+	bool                                          isDisable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USkeletalMeshComponent*                 CallFunc_GetRodMesh_RodMesh;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UABP_FishingRod001_C*                   K2Node_DynamicCast_AsABP_Fishing_Rod_001;          // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_SetDisableRodBlendWeight;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_FishingRodBase_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_ReceiveTick;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.ReceiveEndPlay
+// 0x0001 (0x0001 - 0x0000)
+struct BP_FishingRodBase_C_ReceiveEndPlay final
+{
+public:
+	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_ReceiveEndPlay;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnSalvageActionStart
+// 0x0018 (0x0018 - 0x0000)
+struct BP_FishingRodBase_C_OnSalvageActionStart final
+{
+public:
+	struct FVector                                ThrowLocation;                                     // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnSalvageActionStart;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyEnd_C1679D56478319DA3570CDA55F1BE8A6
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnNotifyEnd_C1679D56478319DA3570CDA55F1BE8A6 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyEnd_C1679D56478319DA3570CDA55F1BE8A6;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyEnd_8975802841C43EE2A1F948ADE4D156AB
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnNotifyEnd_8975802841C43EE2A1F948ADE4D156AB final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyEnd_8975802841C43EE2A1F948ADE4D156AB;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyEnd_7C0E2E41480FCAC6A0A9A9B76404C255
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnNotifyEnd_7C0E2E41480FCAC6A0A9A9B76404C255 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyEnd_7C0E2E41480FCAC6A0A9A9B76404C255;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyEnd_5E0720484076569D4BB7A58DD6FDE9EE
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnNotifyEnd_5E0720484076569D4BB7A58DD6FDE9EE final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyEnd_5E0720484076569D4BB7A58DD6FDE9EE;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyEnd_31D5E87748BC91EF8B5EDEB9E89B1526
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnNotifyEnd_31D5E87748BC91EF8B5EDEB9E89B1526 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyEnd_31D5E87748BC91EF8B5EDEB9E89B1526;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyEnd_27BDBBAB47C0F417FA30C2AAFE582134
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnNotifyEnd_27BDBBAB47C0F417FA30C2AAFE582134 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyEnd_27BDBBAB47C0F417FA30C2AAFE582134;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyEnd_000B5A644387C56A731515997A93622F
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnNotifyEnd_000B5A644387C56A731515997A93622F final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyEnd_000B5A644387C56A731515997A93622F;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyBegin_C1679D56478319DA3570CDA55F1BE8A6
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnNotifyBegin_C1679D56478319DA3570CDA55F1BE8A6 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyBegin_C1679D56478319DA3570CDA55F1BE8A6;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyBegin_8975802841C43EE2A1F948ADE4D156AB
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnNotifyBegin_8975802841C43EE2A1F948ADE4D156AB final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyBegin_8975802841C43EE2A1F948ADE4D156AB;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyBegin_7C0E2E41480FCAC6A0A9A9B76404C255
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnNotifyBegin_7C0E2E41480FCAC6A0A9A9B76404C255 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyBegin_7C0E2E41480FCAC6A0A9A9B76404C255;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyBegin_5E0720484076569D4BB7A58DD6FDE9EE
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnNotifyBegin_5E0720484076569D4BB7A58DD6FDE9EE final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyBegin_5E0720484076569D4BB7A58DD6FDE9EE;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyBegin_31D5E87748BC91EF8B5EDEB9E89B1526
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnNotifyBegin_31D5E87748BC91EF8B5EDEB9E89B1526 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyBegin_31D5E87748BC91EF8B5EDEB9E89B1526;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyBegin_27BDBBAB47C0F417FA30C2AAFE582134
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnNotifyBegin_27BDBBAB47C0F417FA30C2AAFE582134 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyBegin_27BDBBAB47C0F417FA30C2AAFE582134;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyBegin_000B5A644387C56A731515997A93622F
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnNotifyBegin_000B5A644387C56A731515997A93622F final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyBegin_000B5A644387C56A731515997A93622F;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnInterrupted_C1679D56478319DA3570CDA55F1BE8A6
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnInterrupted_C1679D56478319DA3570CDA55F1BE8A6 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnInterrupted_C1679D56478319DA3570CDA55F1BE8A6;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnInterrupted_8975802841C43EE2A1F948ADE4D156AB
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnInterrupted_8975802841C43EE2A1F948ADE4D156AB final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnInterrupted_8975802841C43EE2A1F948ADE4D156AB;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnInterrupted_7C0E2E41480FCAC6A0A9A9B76404C255
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnInterrupted_7C0E2E41480FCAC6A0A9A9B76404C255 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnInterrupted_7C0E2E41480FCAC6A0A9A9B76404C255;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnInterrupted_5E0720484076569D4BB7A58DD6FDE9EE
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnInterrupted_5E0720484076569D4BB7A58DD6FDE9EE final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnInterrupted_5E0720484076569D4BB7A58DD6FDE9EE;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnInterrupted_31D5E87748BC91EF8B5EDEB9E89B1526
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnInterrupted_31D5E87748BC91EF8B5EDEB9E89B1526 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnInterrupted_31D5E87748BC91EF8B5EDEB9E89B1526;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnInterrupted_27BDBBAB47C0F417FA30C2AAFE582134
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnInterrupted_27BDBBAB47C0F417FA30C2AAFE582134 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnInterrupted_27BDBBAB47C0F417FA30C2AAFE582134;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnInterrupted_000B5A644387C56A731515997A93622F
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnInterrupted_000B5A644387C56A731515997A93622F final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnInterrupted_000B5A644387C56A731515997A93622F;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnStartShowCutscene
+// 0x00D8 (0x00D8 - 0x0000)
+struct BP_FishingRodBase_C_OnStartShowCutscene final
+{
+public:
+	struct FPalFishingCutsceneInfo                CutsceneInfo;                                      // 0x0000(0x00D8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnStartShowCutscene;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnDetachWeapon
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnDetachWeapon final
+{
+public:
+	class AActor*                                 detachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnDetachWeapon;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnDecreaseDurability
+// 0x0004 (0x0004 - 0x0000)
+struct BP_FishingRodBase_C_OnDecreaseDurability final
+{
+public:
+	float                                         DecreaseValue;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnDecreaseDurability;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnCompleted_C1679D56478319DA3570CDA55F1BE8A6
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnCompleted_C1679D56478319DA3570CDA55F1BE8A6 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnCompleted_C1679D56478319DA3570CDA55F1BE8A6;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnCompleted_8975802841C43EE2A1F948ADE4D156AB
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnCompleted_8975802841C43EE2A1F948ADE4D156AB final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnCompleted_8975802841C43EE2A1F948ADE4D156AB;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnCompleted_7C0E2E41480FCAC6A0A9A9B76404C255
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnCompleted_7C0E2E41480FCAC6A0A9A9B76404C255 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnCompleted_7C0E2E41480FCAC6A0A9A9B76404C255;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnCompleted_5E0720484076569D4BB7A58DD6FDE9EE
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnCompleted_5E0720484076569D4BB7A58DD6FDE9EE final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnCompleted_5E0720484076569D4BB7A58DD6FDE9EE;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnCompleted_31D5E87748BC91EF8B5EDEB9E89B1526
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnCompleted_31D5E87748BC91EF8B5EDEB9E89B1526 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnCompleted_31D5E87748BC91EF8B5EDEB9E89B1526;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnCompleted_27BDBBAB47C0F417FA30C2AAFE582134
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnCompleted_27BDBBAB47C0F417FA30C2AAFE582134 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnCompleted_27BDBBAB47C0F417FA30C2AAFE582134;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnCompleted_000B5A644387C56A731515997A93622F
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnCompleted_000B5A644387C56A731515997A93622F final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnCompleted_000B5A644387C56A731515997A93622F;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnChangeRodState
+// 0x0001 (0x0001 - 0x0000)
+struct BP_FishingRodBase_C_OnChangeRodState final
+{
+public:
+	EPalFishingRodState                           RodState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnChangeRodState;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnBlendOut_C1679D56478319DA3570CDA55F1BE8A6
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnBlendOut_C1679D56478319DA3570CDA55F1BE8A6 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnBlendOut_C1679D56478319DA3570CDA55F1BE8A6;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnBlendOut_8975802841C43EE2A1F948ADE4D156AB
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnBlendOut_8975802841C43EE2A1F948ADE4D156AB final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnBlendOut_8975802841C43EE2A1F948ADE4D156AB;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnBlendOut_7C0E2E41480FCAC6A0A9A9B76404C255
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnBlendOut_7C0E2E41480FCAC6A0A9A9B76404C255 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnBlendOut_7C0E2E41480FCAC6A0A9A9B76404C255;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnBlendOut_5E0720484076569D4BB7A58DD6FDE9EE
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnBlendOut_5E0720484076569D4BB7A58DD6FDE9EE final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnBlendOut_5E0720484076569D4BB7A58DD6FDE9EE;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnBlendOut_31D5E87748BC91EF8B5EDEB9E89B1526
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnBlendOut_31D5E87748BC91EF8B5EDEB9E89B1526 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnBlendOut_31D5E87748BC91EF8B5EDEB9E89B1526;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnBlendOut_27BDBBAB47C0F417FA30C2AAFE582134
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnBlendOut_27BDBBAB47C0F417FA30C2AAFE582134 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnBlendOut_27BDBBAB47C0F417FA30C2AAFE582134;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnBlendOut_000B5A644387C56A731515997A93622F
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnBlendOut_000B5A644387C56A731515997A93622F final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnBlendOut_000B5A644387C56A731515997A93622F;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.OnAttachWeapon
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_OnAttachWeapon final
+{
+public:
+	class AActor*                                 attachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_OnAttachWeapon;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.GetThrowingFloatLocation
+// 0x0118 (0x0118 - 0x0000)
+struct BP_FishingRodBase_C_GetThrowingFloatLocation final
+{
+public:
+	double                                        DeltaTime;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                StartLocation;                                     // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                TargetLocation;                                    // 0x0020(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Location;                                          // 0x0038(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Ease_ReturnValue;                         // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_GetPI_ReturnValue;                        // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Sin_ReturnValue;                          // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_X;                            // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Y;                            // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Z;                            // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0098(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_2;      // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_VLerp_ReturnValue;                        // 0x00B8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_X_1;                          // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Y_1;                          // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Z_1;                          // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue_1;           // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue_1;                 // 0x00F8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VLerp_Alpha_ImplicitCast;                 // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_GetThrowingFloatLocation;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.GetTargetFishShadowMouthLocation
+// 0x0048 (0x0048 - 0x0000)
+struct BP_FishingRodBase_C_GetTargetFishShadowMouthLocation final
+{
+public:
+	struct FVector                                Location;                                          // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APalFishShadow*                         CallFunc_GetTargetFishShadow_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_Fishing_FishShadowBase_C*           K2Node_DynamicCast_AsBP_Fishing_Fish_Shadow_Base;  // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetSocketMouthLocation_MouthLocation;     // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_GetTargetFishShadowMouthLocation;
+
+// Function BP_FishingRodBase.BP_FishingRodBase_C.GetRodMesh
+// 0x0008 (0x0008 - 0x0000)
+struct BP_FishingRodBase_C_GetRodMesh final
+{
+public:
+	class USkeletalMeshComponent*                 RodMesh;                                           // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FishingRodBase_C_GetRodMesh;
 
 // Function BP_FishingRodBase.BP_FishingRodBase_C.ExecuteUbergraph_BP_FishingRodBase
 // 0x07B0 (0x07B0 - 0x0000)
@@ -246,562 +776,32 @@ public:
 };
 DUMPER7_ASSERTS_BP_FishingRodBase_C_ExecuteUbergraph_BP_FishingRodBase;
 
-// Function BP_FishingRodBase.BP_FishingRodBase_C.GetRodMesh
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_GetRodMesh final
-{
-public:
-	class USkeletalMeshComponent*                 RodMesh;                                           // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_GetRodMesh;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.GetTargetFishShadowMouthLocation
+// Function BP_FishingRodBase.BP_FishingRodBase_C.CanFishingMovementMode
 // 0x0048 (0x0048 - 0x0000)
-struct BP_FishingRodBase_C_GetTargetFishShadowMouthLocation final
+struct BP_FishingRodBase_C_CanFishingMovementMode final
 {
 public:
-	struct FVector                                Location;                                          // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APalFishShadow*                         CallFunc_GetTargetFishShadow_ReturnValue;          // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_Fishing_FishShadowBase_C*           K2Node_DynamicCast_AsBP_Fishing_Fish_Shadow_Base;  // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetSocketMouthLocation_MouthLocation;     // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_GetTargetFishShadowMouthLocation;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.GetThrowingFloatLocation
-// 0x0118 (0x0118 - 0x0000)
-struct BP_FishingRodBase_C_GetThrowingFloatLocation final
-{
-public:
-	double                                        DeltaTime;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                StartLocation;                                     // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                TargetLocation;                                    // 0x0020(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Location;                                          // 0x0038(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Ease_ReturnValue;                         // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_GetPI_ReturnValue;                        // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Sin_ReturnValue;                          // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_1;      // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_X;                            // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Y;                            // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Z;                            // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0098(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue_2;      // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_VLerp_ReturnValue;                        // 0x00B8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_X_1;                          // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Y_1;                          // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Z_1;                          // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue_1;           // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue_1;                 // 0x00F8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VLerp_Alpha_ImplicitCast;                 // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_GetThrowingFloatLocation;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnAttachWeapon
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnAttachWeapon final
-{
-public:
-	class AActor*                                 attachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnAttachWeapon;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnBlendOut_000B5A644387C56A731515997A93622F
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnBlendOut_000B5A644387C56A731515997A93622F final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnBlendOut_000B5A644387C56A731515997A93622F;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnBlendOut_27BDBBAB47C0F417FA30C2AAFE582134
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnBlendOut_27BDBBAB47C0F417FA30C2AAFE582134 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnBlendOut_27BDBBAB47C0F417FA30C2AAFE582134;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnBlendOut_31D5E87748BC91EF8B5EDEB9E89B1526
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnBlendOut_31D5E87748BC91EF8B5EDEB9E89B1526 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnBlendOut_31D5E87748BC91EF8B5EDEB9E89B1526;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnBlendOut_5E0720484076569D4BB7A58DD6FDE9EE
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnBlendOut_5E0720484076569D4BB7A58DD6FDE9EE final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnBlendOut_5E0720484076569D4BB7A58DD6FDE9EE;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnBlendOut_7C0E2E41480FCAC6A0A9A9B76404C255
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnBlendOut_7C0E2E41480FCAC6A0A9A9B76404C255 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnBlendOut_7C0E2E41480FCAC6A0A9A9B76404C255;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnBlendOut_8975802841C43EE2A1F948ADE4D156AB
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnBlendOut_8975802841C43EE2A1F948ADE4D156AB final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnBlendOut_8975802841C43EE2A1F948ADE4D156AB;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnBlendOut_C1679D56478319DA3570CDA55F1BE8A6
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnBlendOut_C1679D56478319DA3570CDA55F1BE8A6 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnBlendOut_C1679D56478319DA3570CDA55F1BE8A6;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnChangeRodState
-// 0x0001 (0x0001 - 0x0000)
-struct BP_FishingRodBase_C_OnChangeRodState final
-{
-public:
-	EPalFishingRodState                           RodState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnChangeRodState;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnCompleted_000B5A644387C56A731515997A93622F
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnCompleted_000B5A644387C56A731515997A93622F final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnCompleted_000B5A644387C56A731515997A93622F;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnCompleted_27BDBBAB47C0F417FA30C2AAFE582134
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnCompleted_27BDBBAB47C0F417FA30C2AAFE582134 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnCompleted_27BDBBAB47C0F417FA30C2AAFE582134;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnCompleted_31D5E87748BC91EF8B5EDEB9E89B1526
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnCompleted_31D5E87748BC91EF8B5EDEB9E89B1526 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnCompleted_31D5E87748BC91EF8B5EDEB9E89B1526;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnCompleted_5E0720484076569D4BB7A58DD6FDE9EE
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnCompleted_5E0720484076569D4BB7A58DD6FDE9EE final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnCompleted_5E0720484076569D4BB7A58DD6FDE9EE;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnCompleted_7C0E2E41480FCAC6A0A9A9B76404C255
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnCompleted_7C0E2E41480FCAC6A0A9A9B76404C255 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnCompleted_7C0E2E41480FCAC6A0A9A9B76404C255;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnCompleted_8975802841C43EE2A1F948ADE4D156AB
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnCompleted_8975802841C43EE2A1F948ADE4D156AB final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnCompleted_8975802841C43EE2A1F948ADE4D156AB;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnCompleted_C1679D56478319DA3570CDA55F1BE8A6
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnCompleted_C1679D56478319DA3570CDA55F1BE8A6 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnCompleted_C1679D56478319DA3570CDA55F1BE8A6;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnDecreaseDurability
-// 0x0004 (0x0004 - 0x0000)
-struct BP_FishingRodBase_C_OnDecreaseDurability final
-{
-public:
-	float                                         DecreaseValue;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnDecreaseDurability;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnDetachWeapon
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnDetachWeapon final
-{
-public:
-	class AActor*                                 detachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnDetachWeapon;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnInterrupted_000B5A644387C56A731515997A93622F
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnInterrupted_000B5A644387C56A731515997A93622F final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnInterrupted_000B5A644387C56A731515997A93622F;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnInterrupted_27BDBBAB47C0F417FA30C2AAFE582134
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnInterrupted_27BDBBAB47C0F417FA30C2AAFE582134 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnInterrupted_27BDBBAB47C0F417FA30C2AAFE582134;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnInterrupted_31D5E87748BC91EF8B5EDEB9E89B1526
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnInterrupted_31D5E87748BC91EF8B5EDEB9E89B1526 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnInterrupted_31D5E87748BC91EF8B5EDEB9E89B1526;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnInterrupted_5E0720484076569D4BB7A58DD6FDE9EE
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnInterrupted_5E0720484076569D4BB7A58DD6FDE9EE final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnInterrupted_5E0720484076569D4BB7A58DD6FDE9EE;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnInterrupted_7C0E2E41480FCAC6A0A9A9B76404C255
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnInterrupted_7C0E2E41480FCAC6A0A9A9B76404C255 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnInterrupted_7C0E2E41480FCAC6A0A9A9B76404C255;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnInterrupted_8975802841C43EE2A1F948ADE4D156AB
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnInterrupted_8975802841C43EE2A1F948ADE4D156AB final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnInterrupted_8975802841C43EE2A1F948ADE4D156AB;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnInterrupted_C1679D56478319DA3570CDA55F1BE8A6
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnInterrupted_C1679D56478319DA3570CDA55F1BE8A6 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnInterrupted_C1679D56478319DA3570CDA55F1BE8A6;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyBegin_000B5A644387C56A731515997A93622F
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnNotifyBegin_000B5A644387C56A731515997A93622F final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyBegin_000B5A644387C56A731515997A93622F;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyBegin_27BDBBAB47C0F417FA30C2AAFE582134
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnNotifyBegin_27BDBBAB47C0F417FA30C2AAFE582134 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyBegin_27BDBBAB47C0F417FA30C2AAFE582134;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyBegin_31D5E87748BC91EF8B5EDEB9E89B1526
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnNotifyBegin_31D5E87748BC91EF8B5EDEB9E89B1526 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyBegin_31D5E87748BC91EF8B5EDEB9E89B1526;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyBegin_5E0720484076569D4BB7A58DD6FDE9EE
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnNotifyBegin_5E0720484076569D4BB7A58DD6FDE9EE final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyBegin_5E0720484076569D4BB7A58DD6FDE9EE;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyBegin_7C0E2E41480FCAC6A0A9A9B76404C255
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnNotifyBegin_7C0E2E41480FCAC6A0A9A9B76404C255 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyBegin_7C0E2E41480FCAC6A0A9A9B76404C255;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyBegin_8975802841C43EE2A1F948ADE4D156AB
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnNotifyBegin_8975802841C43EE2A1F948ADE4D156AB final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyBegin_8975802841C43EE2A1F948ADE4D156AB;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyBegin_C1679D56478319DA3570CDA55F1BE8A6
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnNotifyBegin_C1679D56478319DA3570CDA55F1BE8A6 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyBegin_C1679D56478319DA3570CDA55F1BE8A6;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyEnd_000B5A644387C56A731515997A93622F
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnNotifyEnd_000B5A644387C56A731515997A93622F final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyEnd_000B5A644387C56A731515997A93622F;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyEnd_27BDBBAB47C0F417FA30C2AAFE582134
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnNotifyEnd_27BDBBAB47C0F417FA30C2AAFE582134 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyEnd_27BDBBAB47C0F417FA30C2AAFE582134;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyEnd_31D5E87748BC91EF8B5EDEB9E89B1526
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnNotifyEnd_31D5E87748BC91EF8B5EDEB9E89B1526 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyEnd_31D5E87748BC91EF8B5EDEB9E89B1526;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyEnd_5E0720484076569D4BB7A58DD6FDE9EE
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnNotifyEnd_5E0720484076569D4BB7A58DD6FDE9EE final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyEnd_5E0720484076569D4BB7A58DD6FDE9EE;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyEnd_7C0E2E41480FCAC6A0A9A9B76404C255
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnNotifyEnd_7C0E2E41480FCAC6A0A9A9B76404C255 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyEnd_7C0E2E41480FCAC6A0A9A9B76404C255;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyEnd_8975802841C43EE2A1F948ADE4D156AB
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnNotifyEnd_8975802841C43EE2A1F948ADE4D156AB final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyEnd_8975802841C43EE2A1F948ADE4D156AB;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnNotifyEnd_C1679D56478319DA3570CDA55F1BE8A6
-// 0x0008 (0x0008 - 0x0000)
-struct BP_FishingRodBase_C_OnNotifyEnd_C1679D56478319DA3570CDA55F1BE8A6 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnNotifyEnd_C1679D56478319DA3570CDA55F1BE8A6;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnSalvageActionStart
-// 0x0018 (0x0018 - 0x0000)
-struct BP_FishingRodBase_C_OnSalvageActionStart final
-{
-public:
-	struct FVector                                ThrowLocation;                                     // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnSalvageActionStart;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.OnStartShowCutscene
-// 0x00D8 (0x00D8 - 0x0000)
-struct BP_FishingRodBase_C_OnStartShowCutscene final
-{
-public:
-	struct FPalFishingCutsceneInfo                CutsceneInfo;                                      // 0x0000(0x00D8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_OnStartShowCutscene;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.ReceiveEndPlay
-// 0x0001 (0x0001 - 0x0000)
-struct BP_FishingRodBase_C_ReceiveEndPlay final
-{
-public:
-	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_ReceiveEndPlay;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_FishingRodBase_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_ReceiveTick;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.SetDisableRodBlendWeight
-// 0x0028 (0x0028 - 0x0000)
-struct BP_FishingRodBase_C_SetDisableRodBlendWeight final
-{
-public:
-	bool                                          isDisable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CanFishing_0;                                      // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USkeletalMeshComponent*                 CallFunc_GetRodMesh_RodMesh;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UABP_FishingRod001_C*                   K2Node_DynamicCast_AsABP_Fishing_Rod_001;          // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_SetDisableRodBlendWeight;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.SetVisibleOriginCable
-// 0x0018 (0x0018 - 0x0000)
-struct BP_FishingRodBase_C_SetVisibleOriginCable final
-{
-public:
-	bool                                          IsVisible;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USkeletalMeshComponent*                 CallFunc_GetRodMesh_RodMesh;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USkeletalMeshComponent*                 CallFunc_GetRodMesh_RodMesh_1;                     // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_SetVisibleOriginCable;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.StopRodAnim
-// 0x0010 (0x0010 - 0x0000)
-struct BP_FishingRodBase_C_StopRodAnim final
-{
-public:
-	class USkeletalMeshComponent*                 CallFunc_GetRodMesh_RodMesh;                       // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_StopRodAnim;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.UpdateControlFloat
-// 0x0490 (0x0490 - 0x0000)
-struct BP_FishingRodBase_C_UpdateControlFloat final
-{
-public:
-	double                                        DeltaTime;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalFishingRodState                           RodState;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                FloatLocation;                                     // 0x0010(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                SocketRodLocation;                                 // 0x0028(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_FindOwnerPalCharacter_ReturnValue;        // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsPalmi_ReturnValue;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Vector_Distance2D_ReturnValue;            // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetThrowingFloatLocation_Location;        // 0x0068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult;       // 0x0088(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_K2_SetActorLocation_ReturnValue;          // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_171[0x7];                                      // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0178(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult_1;     // 0x0190(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_K2_SetActorLocation_ReturnValue_1;        // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_279[0x7];                                      // 0x0279(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0280(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_VInterpTo_ReturnValue;                    // 0x0298(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult_2;     // 0x02B0(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_K2_SetActorLocation_ReturnValue_2;        // 0x0398(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_399[0x7];                                      // 0x0399(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult_3;     // 0x03A0(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_K2_SetActorLocation_ReturnValue_3;        // 0x0488(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_489[0x3];                                      // 0x0489(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_VInterpTo_DeltaTime_ImplicitCast;         // 0x048C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_UpdateControlFloat;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.UpdateFloatRotation
-// 0x0088 (0x0088 - 0x0000)
-struct BP_FishingRodBase_C_UpdateFloatRotation final
-{
-public:
-	class APalCharacter*                          CallFunc_FindOwnerPalCharacter_ReturnValue;        // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_FindLookAtRotation_ReturnValue;           // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	float                                         CallFunc_BreakRotator_Roll;                        // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Pitch;                       // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakRotator_Yaw;                         // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_K2_SetActorRotation_ReturnValue;          // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_FishingRodBase_C_UpdateFloatRotation;
-
-// Function BP_FishingRodBase.BP_FishingRodBase_C.UpdateVisibleReticle
-// 0x0020 (0x0020 - 0x0000)
-struct BP_FishingRodBase_C_UpdateVisibleReticle final
-{
-public:
-	bool                                          CallFunc_CanHitFishingTarget_ReturnValue;          // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsFishingAction_ReturnValue;              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalCharacter*                          CallFunc_FindOwnerPalCharacter_ReturnValue;        // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalShooterComponent*                   CallFunc_GetComponentByClass_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsAiming_ReturnValue;                     // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CanShoot_ReturnValue;                     // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalCharacterMovementComponent*         CallFunc_GetComponentByClass_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class APalPlayerCharacter*                    K2Node_DynamicCast_AsPal_Player_Character;         // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_GetRidePal_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalCharacterMovementComponent*         CallFunc_GetComponentByClass_ReturnValue_1;        // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue_1;          // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0043(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0046(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_FishingRodBase_C_UpdateVisibleReticle;
+DUMPER7_ASSERTS_BP_FishingRodBase_C_CanFishingMovementMode;
 
 // Function BP_FishingRodBase.BP_FishingRodBase_C.CanDealDamageWeapon
 // 0x0001 (0x0001 - 0x0000)
@@ -812,15 +812,14 @@ public:
 };
 DUMPER7_ASSERTS_BP_FishingRodBase_C_CanDealDamageWeapon;
 
-// Function BP_FishingRodBase.BP_FishingRodBase_C.GetLeftHandTransform
-// 0x00C0 (0x00C0 - 0x0000)
-struct BP_FishingRodBase_C_GetLeftHandTransform final
+// Function BP_FishingRodBase.BP_FishingRodBase_C.IsUseLeftHandAttach
+// 0x0001 (0x0001 - 0x0000)
+struct BP_FishingRodBase_C_IsUseLeftHandAttach final
 {
 public:
-	struct FTransform                             ReturnValue;                                       // 0x0000(0x0060)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_GetSocketTransform_ReturnValue;           // 0x0060(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_FishingRodBase_C_GetLeftHandTransform;
+DUMPER7_ASSERTS_BP_FishingRodBase_C_IsUseLeftHandAttach;
 
 // Function BP_FishingRodBase.BP_FishingRodBase_C.IsShowReticle
 // 0x0001 (0x0001 - 0x0000)
@@ -831,14 +830,15 @@ public:
 };
 DUMPER7_ASSERTS_BP_FishingRodBase_C_IsShowReticle;
 
-// Function BP_FishingRodBase.BP_FishingRodBase_C.IsUseLeftHandAttach
-// 0x0001 (0x0001 - 0x0000)
-struct BP_FishingRodBase_C_IsUseLeftHandAttach final
+// Function BP_FishingRodBase.BP_FishingRodBase_C.GetLeftHandTransform
+// 0x00C0 (0x00C0 - 0x0000)
+struct BP_FishingRodBase_C_GetLeftHandTransform final
 {
 public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             ReturnValue;                                       // 0x0000(0x0060)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetSocketTransform_ReturnValue;           // 0x0060(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_FishingRodBase_C_IsUseLeftHandAttach;
+DUMPER7_ASSERTS_BP_FishingRodBase_C_GetLeftHandTransform;
 
 }
 

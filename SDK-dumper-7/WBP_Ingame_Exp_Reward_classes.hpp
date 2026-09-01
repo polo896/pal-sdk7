@@ -32,11 +32,11 @@ public:
 	class UBP_PalTextBlock_C*                     Text_Title;                                        // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_In();
-	void AnmEvent_Out();
-	void ExecuteUbergraph_WBP_Ingame_Exp_Reward(int32 EntryPoint);
-	void SetExp(int32 InExp);
 	void SetTitle(const class FText& TitleText);
+	void SetExp(int32 InExp);
+	void ExecuteUbergraph_WBP_Ingame_Exp_Reward(int32 EntryPoint);
+	void AnmEvent_Out();
+	void AnmEvent_In();
 
 public:
 	static class UClass* StaticClass()

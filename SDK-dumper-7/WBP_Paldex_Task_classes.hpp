@@ -50,14 +50,14 @@ public:
 	int32                                         CachedBonusCount;                                  // 0x0360(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Activate(bool AlreadyCompletedBonus);
-	void AnmEvent_Flash();
-	void ExecuteUbergraph_WBP_Paldex_Task(int32 EntryPoint);
-	void GetBonusExpMsg(int32 CaptureCount, class FText* Text);
-	void OnInitialized();
-	void PreSetup(class FName CharacterID, int32 BonusCount, int32 DisplayExp);
-	void SetupBonusCountText(int32 BonusCount);
 	void SetupForMenu(int32 BonusCount);
+	void SetupBonusCountText(int32 BonusCount);
+	void PreSetup(class FName CharacterID, int32 BonusCount, int32 DisplayExp);
+	void OnInitialized();
+	void GetBonusExpMsg(int32 CaptureCount, class FText* Text);
+	void ExecuteUbergraph_WBP_Paldex_Task(int32 EntryPoint);
+	void AnmEvent_Flash();
+	void AnmEvent_Activate(bool AlreadyCompletedBonus);
 
 public:
 	static class UClass* StaticClass()

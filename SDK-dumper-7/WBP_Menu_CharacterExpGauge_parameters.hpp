@@ -14,16 +14,17 @@
 namespace SDK::Params
 {
 
-// Function WBP_Menu_CharacterExpGauge.WBP_Menu_CharacterExpGauge_C.ExecuteUbergraph_WBP_Menu_CharacterExpGauge
-// 0x0024 (0x0024 - 0x0000)
-struct WBP_Menu_CharacterExpGauge_C_ExecuteUbergraph_WBP_Menu_CharacterExpGauge final
+// Function WBP_Menu_CharacterExpGauge.WBP_Menu_CharacterExpGauge_C.UpdateLevel
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_Menu_CharacterExpGauge_C_UpdateLevel final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(int32 NewLevel)>               K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(int64 addExp, int64 oldExp, double nowExpRate)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0014(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewLevel;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0018)()
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Menu_CharacterExpGauge_C_ExecuteUbergraph_WBP_Menu_CharacterExpGauge;
+DUMPER7_ASSERTS_WBP_Menu_CharacterExpGauge_C_UpdateLevel;
 
 // Function WBP_Menu_CharacterExpGauge.WBP_Menu_CharacterExpGauge_C.UpdateExp
 // 0x0078 (0x0078 - 0x0000)
@@ -48,17 +49,16 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Menu_CharacterExpGauge_C_UpdateExp;
 
-// Function WBP_Menu_CharacterExpGauge.WBP_Menu_CharacterExpGauge_C.UpdateLevel
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_Menu_CharacterExpGauge_C_UpdateLevel final
+// Function WBP_Menu_CharacterExpGauge.WBP_Menu_CharacterExpGauge_C.ExecuteUbergraph_WBP_Menu_CharacterExpGauge
+// 0x0024 (0x0024 - 0x0000)
+struct WBP_Menu_CharacterExpGauge_C_ExecuteUbergraph_WBP_Menu_CharacterExpGauge final
 {
 public:
-	int32                                         NewLevel;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0018)()
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(int32 NewLevel)>               K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(int64 addExp, int64 oldExp, double nowExpRate)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0014(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Menu_CharacterExpGauge_C_UpdateLevel;
+DUMPER7_ASSERTS_WBP_Menu_CharacterExpGauge_C_ExecuteUbergraph_WBP_Menu_CharacterExpGauge;
 
 }
 

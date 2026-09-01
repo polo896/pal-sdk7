@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "WBP_IndividualParameterBindWidget_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -30,11 +30,11 @@ public:
 	class UBP_PalTextBlock_C*                     TextHunger;                                        // 0x0680(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_Menu_CharacterHungerGauge(int32 EntryPoint);
-	void OnInitialized();
 	void UpdateHunger(double nowHunger, double nowMaxHunger);
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_Menu_CharacterHungerGauge(int32 EntryPoint);
+	void Destruct();
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

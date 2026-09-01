@@ -27,10 +27,10 @@ public:
 	class UPalInteractableSphereComponentNative*  InteractableTrigger;                               // 0x03C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void GetEntryCancelTrigger(class UShapeComponent** EntryCancelTrigger_0);
-	void GetEntryWaitInfoTrigger(class UShapeComponent** EntryWaitInfoTrigger);
-	void GetInteractableInterface(TScriptInterface<class IPalInteractiveObjectComponentInterface>* Interface);
 	void GetInteractableTrigger(class UShapeComponent** InteractableTrigger_0);
+	void GetInteractableInterface(TScriptInterface<class IPalInteractiveObjectComponentInterface>* Interface);
+	void GetEntryWaitInfoTrigger(class UShapeComponent** EntryWaitInfoTrigger);
+	void GetEntryCancelTrigger(class UShapeComponent** EntryCancelTrigger_0);
 
 public:
 	static class UClass* StaticClass()

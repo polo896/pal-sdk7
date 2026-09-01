@@ -16,14 +16,30 @@
 namespace SDK::Params
 {
 
-// Function WBP_CaptureFailedPercent.WBP_CaptureFailedPercent_C.ExecuteUbergraph_WBP_CaptureFailedPercent
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_CaptureFailedPercent_C_ExecuteUbergraph_WBP_CaptureFailedPercent final
+// Function WBP_CaptureFailedPercent.WBP_CaptureFailedPercent_C.UpdatePercent
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_CaptureFailedPercent_C_UpdatePercent final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NearlyEqual_FloatFloat_ReturnValue;       // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CaptureFailedPercent_C_ExecuteUbergraph_WBP_CaptureFailedPercent;
+DUMPER7_ASSERTS_WBP_CaptureFailedPercent_C_UpdatePercent;
+
+// Function WBP_CaptureFailedPercent.WBP_CaptureFailedPercent_C.Setup
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_CaptureFailedPercent_C_Setup final
+{
+public:
+	double                                        DisplayPercent;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalGameSetting*                        CallFunc_GetGameSetting_ReturnValue;               // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CaptureFailedPercent_C_Setup;
 
 // Function WBP_CaptureFailedPercent.WBP_CaptureFailedPercent_C.Set Percent
 // 0x00D8 (0x00D8 - 0x0000)
@@ -60,30 +76,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_CaptureFailedPercent_C_Set_Percent;
 
-// Function WBP_CaptureFailedPercent.WBP_CaptureFailedPercent_C.Setup
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_CaptureFailedPercent_C_Setup final
+// Function WBP_CaptureFailedPercent.WBP_CaptureFailedPercent_C.ExecuteUbergraph_WBP_CaptureFailedPercent
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_CaptureFailedPercent_C_ExecuteUbergraph_WBP_CaptureFailedPercent final
 {
 public:
-	double                                        DisplayPercent;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalGameSetting*                        CallFunc_GetGameSetting_ReturnValue;               // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CaptureFailedPercent_C_Setup;
-
-// Function WBP_CaptureFailedPercent.WBP_CaptureFailedPercent_C.UpdatePercent
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_CaptureFailedPercent_C_UpdatePercent final
-{
-public:
-	bool                                          CallFunc_NearlyEqual_FloatFloat_ReturnValue;       // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CaptureFailedPercent_C_UpdatePercent;
+DUMPER7_ASSERTS_WBP_CaptureFailedPercent_C_ExecuteUbergraph_WBP_CaptureFailedPercent;
 
 }
 

@@ -29,8 +29,8 @@ public:
 	class UBP_PalTextBlock_C*                     Text_EntryNum;                                     // 0x0290(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_BattleEntry_Info(int32 EntryPoint);
 	void Finished_DCF333D941FA61FD2550718E81C65E72();
+	void ExecuteUbergraph_WBP_BattleEntry_Info(int32 EntryPoint);
 	void SetEntryInfo(class FName BossType, EPalBossBattleDifficulty Difficulty, const TArray<class APalPlayerCharacter*>& EntryPlayers, bool ShouldMask);
 
 public:

@@ -30,15 +30,15 @@ public:
 	struct FPalDataTableRowName_UIInputAction     DecideMenuAction;                                  // 0x0498(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void CancelEvent();
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_WorkerRadialMenu_Overlay(int32 EntryPoint);
-	void OnAnyUIPushed(const struct FGuid& pushedWidgetID);
-	void OnClosed();
-	void OnInitialized();
-	void OnSelectedEvent(EPalWorkerRadialMenuResult Result);
 	void OnSetup();
+	void OnSelectedEvent(EPalWorkerRadialMenuResult Result);
+	void OnInitialized();
+	void OnClosed();
+	void OnAnyUIPushed(const struct FGuid& pushedWidgetID);
+	void ExecuteUbergraph_WBP_WorkerRadialMenu_Overlay(int32 EntryPoint);
+	void Destruct();
+	void Construct();
+	void CancelEvent();
 
 public:
 	static class UClass* StaticClass()

@@ -16,6 +16,34 @@
 namespace SDK::Params
 {
 
+// Function WBP_Option_NoteContent.WBP_Option_NoteContent_C.SetText
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Option_NoteContent_C_SetText final
+{
+public:
+	class FText                                   InText;                                            // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_Option_NoteContent_C_SetText;
+
+// Function WBP_Option_NoteContent.WBP_Option_NoteContent_C.SetNoteContent
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_Option_NoteContent_C_SetNoteContent final
+{
+public:
+	class UPalNoteData*                           NoteData;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Desc;                                              // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_Option_NoteContent_C_SetNoteContent;
+
+// Function WBP_Option_NoteContent.WBP_Option_NoteContent_C.SetImage
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_Option_NoteContent_C_SetImage final
+{
+public:
+	TSoftObjectPtr<class UTexture2D>              SoftTexture;                                       // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Option_NoteContent_C_SetImage;
+
 // Function WBP_Option_NoteContent.WBP_Option_NoteContent_C.ExecuteUbergraph_WBP_Option_NoteContent
 // 0x0038 (0x0038 - 0x0000)
 struct WBP_Option_NoteContent_C_ExecuteUbergraph_WBP_Option_NoteContent final
@@ -33,34 +61,6 @@ public:
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0033(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Option_NoteContent_C_ExecuteUbergraph_WBP_Option_NoteContent;
-
-// Function WBP_Option_NoteContent.WBP_Option_NoteContent_C.SetImage
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_Option_NoteContent_C_SetImage final
-{
-public:
-	TSoftObjectPtr<class UTexture2D>              SoftTexture;                                       // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Option_NoteContent_C_SetImage;
-
-// Function WBP_Option_NoteContent.WBP_Option_NoteContent_C.SetNoteContent
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_Option_NoteContent_C_SetNoteContent final
-{
-public:
-	class UPalNoteData*                           NoteData;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   Desc;                                              // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_Option_NoteContent_C_SetNoteContent;
-
-// Function WBP_Option_NoteContent.WBP_Option_NoteContent_C.SetText
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Option_NoteContent_C_SetText final
-{
-public:
-	class FText                                   InText;                                            // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_Option_NoteContent_C_SetText;
 
 }
 

@@ -31,8 +31,8 @@ public:
 	int32                                         OverrideLevel;                                     // 0x02C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Get_Spawn_One_Info(struct FF_NPCOnePointSpawnInfo* OneInfo);
 	void GetOneSpawnInfo(struct FF_NPCOnePointSpawnInfo* Info);
+	void Get_Spawn_One_Info(struct FF_NPCOnePointSpawnInfo* OneInfo);
 
 public:
 	static class UClass* StaticClass()

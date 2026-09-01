@@ -17,265 +17,87 @@
 namespace SDK
 {
 
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.BP_PalBossTowerBase_AutoGenFunc
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.UpdateBossBattleState
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalBossBattleState                     NewBossBattleState                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalBossTowerBase_C::BP_PalBossTowerBase_AutoGenFunc(bool bResult)
+void ABP_PalBossTowerBase_C::UpdateBossBattleState(EPalBossBattleState NewBossBattleState)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTowerBase_C", "BP_PalBossTowerBase_AutoGenFunc");
+		Func = Class->GetFunction("BP_PalBossTowerBase_C", "UpdateBossBattleState");
 
-	Params::BP_PalBossTowerBase_C_BP_PalBossTowerBase_AutoGenFunc Parms{};
+	Params::BP_PalBossTowerBase_C_UpdateBossBattleState Parms{};
 
-	Parms.bResult = bResult;
+	Parms.NewBossBattleState = NewBossBattleState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.ExecuteUbergraph_BP_PalBossTowerBase
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.SetQuestEffectActive
+// (Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsActive                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalBossTowerBase_C::ExecuteUbergraph_BP_PalBossTowerBase(int32 EntryPoint)
+void ABP_PalBossTowerBase_C::SetQuestEffectActive(bool IsActive)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTowerBase_C", "ExecuteUbergraph_BP_PalBossTowerBase");
+		Func = Class->GetFunction("BP_PalBossTowerBase_C", "SetQuestEffectActive");
 
-	Params::BP_PalBossTowerBase_C_ExecuteUbergraph_BP_PalBossTowerBase Parms{};
+	Params::BP_PalBossTowerBase_C_SetQuestEffectActive Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.IsActive = IsActive;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.GetEntryCancelTrigger
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UShapeComponent**                 EntryCancelTrigger                                     (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_PalBossTowerBase_C::GetEntryCancelTrigger(class UShapeComponent** EntryCancelTrigger)
+void ABP_PalBossTowerBase_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTowerBase_C", "GetEntryCancelTrigger");
-
-	Params::BP_PalBossTowerBase_C_GetEntryCancelTrigger Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (EntryCancelTrigger != nullptr)
-		*EntryCancelTrigger = Parms.EntryCancelTrigger;
-}
-
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.GetEntryWaitInfoTrigger
-// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UShapeComponent**                 EntryWaitInfoTrigger                                   (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalBossTowerBase_C::GetEntryWaitInfoTrigger(class UShapeComponent** EntryWaitInfoTrigger)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTowerBase_C", "GetEntryWaitInfoTrigger");
-
-	Params::BP_PalBossTowerBase_C_GetEntryWaitInfoTrigger Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (EntryWaitInfoTrigger != nullptr)
-		*EntryWaitInfoTrigger = Parms.EntryWaitInfoTrigger;
-}
-
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.GetInteractableInterface
-// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// TScriptInterface<class IPalInteractiveObjectComponentInterface>*Interface                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalBossTowerBase_C::GetInteractableInterface(TScriptInterface<class IPalInteractiveObjectComponentInterface>* Interface)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTowerBase_C", "GetInteractableInterface");
-
-	Params::BP_PalBossTowerBase_C_GetInteractableInterface Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Interface != nullptr)
-		*Interface = Parms.Interface;
-}
-
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.GetInteractableTrigger
-// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UShapeComponent**                 InteractableTrigger                                    (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalBossTowerBase_C::GetInteractableTrigger(class UShapeComponent** InteractableTrigger)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTowerBase_C", "GetInteractableTrigger");
-
-	Params::BP_PalBossTowerBase_C_GetInteractableTrigger Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (InteractableTrigger != nullptr)
-		*InteractableTrigger = Parms.InteractableTrigger;
-}
-
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.Interact
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           Other                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// EPalInteractiveObjectIndicatorType      IndicatorType                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalBossTowerBase_C::Interact(class AActor* Other, EPalInteractiveObjectIndicatorType IndicatorType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTowerBase_C", "Interact");
-
-	Params::BP_PalBossTowerBase_C_Interact Parms{};
-
-	Parms.Other = Other;
-	Parms.IndicatorType = IndicatorType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.IntializeQuestManagerEvent
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_PalBossTowerBase_C::IntializeQuestManagerEvent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTowerBase_C", "IntializeQuestManagerEvent");
+		Func = Class->GetFunction("BP_PalBossTowerBase_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.On Close Start Battle Check Dialog
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OpenStartBattleCheckDialog
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_PalBossTowerBase_C::On_Close_Start_Battle_Check_Dialog(bool bResult)
+void ABP_PalBossTowerBase_C::OpenStartBattleCheckDialog()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTowerBase_C", "On Close Start Battle Check Dialog");
+		Func = Class->GetFunction("BP_PalBossTowerBase_C", "OpenStartBattleCheckDialog");
 
-	Params::BP_PalBossTowerBase_C_On_Close_Start_Battle_Check_Dialog Parms{};
-
-	Parms.bResult = bResult;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnCancelTriggerEndOverlap
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalBossTowerBase_C::OnCancelTriggerEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTowerBase_C", "OnCancelTriggerEndOverlap");
-
-	Params::BP_PalBossTowerBase_C_OnCancelTriggerEndOverlap Parms{};
-
-	Parms.OverlappedComponent = OverlappedComponent;
-	Parms.OtherActor = OtherActor;
-	Parms.OtherComp = OtherComp;
-	Parms.OtherBodyIndex = OtherBodyIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnChangeBossBattleStateBP
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// EPalBossBattleState                     NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalBossTowerBase_C::OnChangeBossBattleStateBP(EPalBossBattleState NewState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTowerBase_C", "OnChangeBossBattleStateBP");
-
-	Params::BP_PalBossTowerBase_C_OnChangeBossBattleStateBP Parms{};
-
-	Parms.NewState = NewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnClosedLockDialog
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalBossTowerBase_C::OnClosedLockDialog(bool bResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTowerBase_C", "OnClosedLockDialog");
-
-	Params::BP_PalBossTowerBase_C_OnClosedLockDialog Parms{};
-
-	Parms.bResult = bResult;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnCompleteQuestLocal
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnOrderedQuestLocal
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const class FName&                      QuestId                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalBossTowerBase_C::OnCompleteQuestLocal(const class FName& QuestId)
+void ABP_PalBossTowerBase_C::OnOrderedQuestLocal(const class FName& QuestId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTowerBase_C", "OnCompleteQuestLocal");
+		Func = Class->GetFunction("BP_PalBossTowerBase_C", "OnOrderedQuestLocal");
 
-	Params::BP_PalBossTowerBase_C_OnCompleteQuestLocal Parms{};
+	Params::BP_PalBossTowerBase_C_OnOrderedQuestLocal Parms{};
 
 	Parms.QuestId = QuestId;
 
@@ -283,37 +105,7 @@ void ABP_PalBossTowerBase_C::OnCompleteQuestLocal(const class FName& QuestId)
 }
 
 
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnEntryWaitInfoTriggerBeginOverlap
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bFromSweep                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FHitResult&                SweepResult                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-
-void ABP_PalBossTowerBase_C::OnEntryWaitInfoTriggerBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTowerBase_C", "OnEntryWaitInfoTriggerBeginOverlap");
-
-	Params::BP_PalBossTowerBase_C_OnEntryWaitInfoTriggerBeginOverlap Parms{};
-
-	Parms.OverlappedComponent = OverlappedComponent;
-	Parms.OtherActor = OtherActor;
-	Parms.OtherComp = OtherComp;
-	Parms.OtherBodyIndex = OtherBodyIndex;
-	Parms.bFromSweep = bFromSweep;
-	Parms.SweepResult = std::move(SweepResult);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnEntryWaitInfoTriggerEndOverlap
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnInteractableTriggerStartOverlap
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -321,14 +113,14 @@ void ABP_PalBossTowerBase_C::OnEntryWaitInfoTriggerBeginOverlap(class UPrimitive
 // class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalBossTowerBase_C::OnEntryWaitInfoTriggerEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+void ABP_PalBossTowerBase_C::OnInteractableTriggerStartOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTowerBase_C", "OnEntryWaitInfoTriggerEndOverlap");
+		Func = Class->GetFunction("BP_PalBossTowerBase_C", "OnInteractableTriggerStartOverlap");
 
-	Params::BP_PalBossTowerBase_C_OnEntryWaitInfoTriggerEndOverlap Parms{};
+	Params::BP_PalBossTowerBase_C_OnInteractableTriggerStartOverlap Parms{};
 
 	Parms.OverlappedComponent = OverlappedComponent;
 	Parms.OtherActor = OtherActor;
@@ -369,7 +161,7 @@ void ABP_PalBossTowerBase_C::OnInteractableTriggerEndOverlap(class UPrimitiveCom
 }
 
 
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnInteractableTriggerStartOverlap
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnEntryWaitInfoTriggerEndOverlap
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -377,14 +169,14 @@ void ABP_PalBossTowerBase_C::OnInteractableTriggerEndOverlap(class UPrimitiveCom
 // class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalBossTowerBase_C::OnInteractableTriggerStartOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+void ABP_PalBossTowerBase_C::OnEntryWaitInfoTriggerEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTowerBase_C", "OnInteractableTriggerStartOverlap");
+		Func = Class->GetFunction("BP_PalBossTowerBase_C", "OnEntryWaitInfoTriggerEndOverlap");
 
-	Params::BP_PalBossTowerBase_C_OnInteractableTriggerStartOverlap Parms{};
+	Params::BP_PalBossTowerBase_C_OnEntryWaitInfoTriggerEndOverlap Parms{};
 
 	Parms.OverlappedComponent = OverlappedComponent;
 	Parms.OtherActor = OtherActor;
@@ -395,19 +187,49 @@ void ABP_PalBossTowerBase_C::OnInteractableTriggerStartOverlap(class UPrimitiveC
 }
 
 
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnOrderedQuestLocal
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnEntryWaitInfoTriggerBeginOverlap
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FName&                      QuestId                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bFromSweep                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FHitResult&                SweepResult                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void ABP_PalBossTowerBase_C::OnOrderedQuestLocal(const class FName& QuestId)
+void ABP_PalBossTowerBase_C::OnEntryWaitInfoTriggerBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTowerBase_C", "OnOrderedQuestLocal");
+		Func = Class->GetFunction("BP_PalBossTowerBase_C", "OnEntryWaitInfoTriggerBeginOverlap");
 
-	Params::BP_PalBossTowerBase_C_OnOrderedQuestLocal Parms{};
+	Params::BP_PalBossTowerBase_C_OnEntryWaitInfoTriggerBeginOverlap Parms{};
+
+	Parms.OverlappedComponent = OverlappedComponent;
+	Parms.OtherActor = OtherActor;
+	Parms.OtherComp = OtherComp;
+	Parms.OtherBodyIndex = OtherBodyIndex;
+	Parms.bFromSweep = bFromSweep;
+	Parms.SweepResult = std::move(SweepResult);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnCompleteQuestLocal
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FName&                      QuestId                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalBossTowerBase_C::OnCompleteQuestLocal(const class FName& QuestId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalBossTowerBase_C", "OnCompleteQuestLocal");
+
+	Params::BP_PalBossTowerBase_C_OnCompleteQuestLocal Parms{};
 
 	Parms.QuestId = QuestId;
 
@@ -415,87 +237,265 @@ void ABP_PalBossTowerBase_C::OnOrderedQuestLocal(const class FName& QuestId)
 }
 
 
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OpenStartBattleCheckDialog
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_PalBossTowerBase_C::OpenStartBattleCheckDialog()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTowerBase_C", "OpenStartBattleCheckDialog");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_PalBossTowerBase_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTowerBase_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.SetQuestEffectActive
-// (Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsActive                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalBossTowerBase_C::SetQuestEffectActive(bool IsActive)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTowerBase_C", "SetQuestEffectActive");
-
-	Params::BP_PalBossTowerBase_C_SetQuestEffectActive Parms{};
-
-	Parms.IsActive = IsActive;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.UpdateBossBattleState
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnClosedLockDialog
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EPalBossBattleState                     NewBossBattleState                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalBossTowerBase_C::UpdateBossBattleState(EPalBossBattleState NewBossBattleState)
+void ABP_PalBossTowerBase_C::OnClosedLockDialog(bool bResult)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTowerBase_C", "UpdateBossBattleState");
+		Func = Class->GetFunction("BP_PalBossTowerBase_C", "OnClosedLockDialog");
 
-	Params::BP_PalBossTowerBase_C_UpdateBossBattleState Parms{};
+	Params::BP_PalBossTowerBase_C_OnClosedLockDialog Parms{};
 
-	Parms.NewBossBattleState = NewBossBattleState;
+	Parms.bResult = bResult;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.GetDeadItemDropPoint
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnChangeBossBattleStateBP
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// EPalBossBattleState                     NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalBossTowerBase_C::OnChangeBossBattleStateBP(EPalBossBattleState NewState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalBossTowerBase_C", "OnChangeBossBattleStateBP");
+
+	Params::BP_PalBossTowerBase_C_OnChangeBossBattleStateBP Parms{};
+
+	Parms.NewState = NewState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.OnCancelTriggerEndOverlap
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalBossTowerBase_C::OnCancelTriggerEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalBossTowerBase_C", "OnCancelTriggerEndOverlap");
+
+	Params::BP_PalBossTowerBase_C_OnCancelTriggerEndOverlap Parms{};
+
+	Parms.OverlappedComponent = OverlappedComponent;
+	Parms.OtherActor = OtherActor;
+	Parms.OtherComp = OtherComp;
+	Parms.OtherBodyIndex = OtherBodyIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.On Close Start Battle Check Dialog
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalBossTowerBase_C::On_Close_Start_Battle_Check_Dialog(bool bResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalBossTowerBase_C", "On Close Start Battle Check Dialog");
+
+	Params::BP_PalBossTowerBase_C_On_Close_Start_Battle_Check_Dialog Parms{};
+
+	Parms.bResult = bResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.IntializeQuestManagerEvent
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_PalBossTowerBase_C::IntializeQuestManagerEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalBossTowerBase_C", "IntializeQuestManagerEvent");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.Interact
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Other                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// EPalInteractiveObjectIndicatorType      IndicatorType                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalBossTowerBase_C::Interact(class AActor* Other, EPalInteractiveObjectIndicatorType IndicatorType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalBossTowerBase_C", "Interact");
+
+	Params::BP_PalBossTowerBase_C_Interact Parms{};
+
+	Parms.Other = Other;
+	Parms.IndicatorType = IndicatorType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.GetInteractableTrigger
+// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UShapeComponent**                 InteractableTrigger                                    (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalBossTowerBase_C::GetInteractableTrigger(class UShapeComponent** InteractableTrigger)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalBossTowerBase_C", "GetInteractableTrigger");
+
+	Params::BP_PalBossTowerBase_C_GetInteractableTrigger Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (InteractableTrigger != nullptr)
+		*InteractableTrigger = Parms.InteractableTrigger;
+}
+
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.GetInteractableInterface
+// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// TScriptInterface<class IPalInteractiveObjectComponentInterface>*Interface                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalBossTowerBase_C::GetInteractableInterface(TScriptInterface<class IPalInteractiveObjectComponentInterface>* Interface)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalBossTowerBase_C", "GetInteractableInterface");
+
+	Params::BP_PalBossTowerBase_C_GetInteractableInterface Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Interface != nullptr)
+		*Interface = Parms.Interface;
+}
+
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.GetEntryWaitInfoTrigger
+// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UShapeComponent**                 EntryWaitInfoTrigger                                   (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalBossTowerBase_C::GetEntryWaitInfoTrigger(class UShapeComponent** EntryWaitInfoTrigger)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalBossTowerBase_C", "GetEntryWaitInfoTrigger");
+
+	Params::BP_PalBossTowerBase_C_GetEntryWaitInfoTrigger Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (EntryWaitInfoTrigger != nullptr)
+		*EntryWaitInfoTrigger = Parms.EntryWaitInfoTrigger;
+}
+
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.GetEntryCancelTrigger
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UShapeComponent**                 EntryCancelTrigger                                     (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalBossTowerBase_C::GetEntryCancelTrigger(class UShapeComponent** EntryCancelTrigger)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalBossTowerBase_C", "GetEntryCancelTrigger");
+
+	Params::BP_PalBossTowerBase_C_GetEntryCancelTrigger Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (EntryCancelTrigger != nullptr)
+		*EntryCancelTrigger = Parms.EntryCancelTrigger;
+}
+
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.ExecuteUbergraph_BP_PalBossTowerBase
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalBossTowerBase_C::ExecuteUbergraph_BP_PalBossTowerBase(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalBossTowerBase_C", "ExecuteUbergraph_BP_PalBossTowerBase");
+
+	Params::BP_PalBossTowerBase_C_ExecuteUbergraph_BP_PalBossTowerBase Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.BP_PalBossTowerBase_AutoGenFunc
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalBossTowerBase_C::BP_PalBossTowerBase_AutoGenFunc(bool bResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalBossTowerBase_C", "BP_PalBossTowerBase_AutoGenFunc");
+
+	Params::BP_PalBossTowerBase_C_BP_PalBossTowerBase_AutoGenFunc Parms{};
+
+	Parms.bResult = bResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.GetTopWarpPoint
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // struct FTransform                       ReturnValue                                            (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-struct FTransform ABP_PalBossTowerBase_C::GetDeadItemDropPoint() const
+struct FTransform ABP_PalBossTowerBase_C::GetTopWarpPoint() const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTowerBase_C", "GetDeadItemDropPoint");
+		Func = Class->GetFunction("BP_PalBossTowerBase_C", "GetTopWarpPoint");
 
-	Params::BP_PalBossTowerBase_C_GetDeadItemDropPoint Parms{};
+	Params::BP_PalBossTowerBase_C_GetTopWarpPoint Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -523,19 +523,19 @@ struct FTransform ABP_PalBossTowerBase_C::GetFrontWarpPoint() const
 }
 
 
-// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.GetTopWarpPoint
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function BP_PalBossTowerBase.BP_PalBossTowerBase_C.GetDeadItemDropPoint
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
 // struct FTransform                       ReturnValue                                            (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-struct FTransform ABP_PalBossTowerBase_C::GetTopWarpPoint() const
+struct FTransform ABP_PalBossTowerBase_C::GetDeadItemDropPoint() const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTowerBase_C", "GetTopWarpPoint");
+		Func = Class->GetFunction("BP_PalBossTowerBase_C", "GetDeadItemDropPoint");
 
-	Params::BP_PalBossTowerBase_C_GetTopWarpPoint Parms{};
+	Params::BP_PalBossTowerBase_C_GetDeadItemDropPoint Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 

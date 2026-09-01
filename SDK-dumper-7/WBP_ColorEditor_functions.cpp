@@ -17,91 +17,85 @@
 namespace SDK
 {
 
-// Function WBP_ColorEditor.WBP_ColorEditor_C.BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_0_OnClickCloseButton__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_ColorEditor.WBP_ColorEditor_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_ColorEditor_C::BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_0_OnClickCloseButton__DelegateSignature()
+void UWBP_ColorEditor_C::Setup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ColorEditor_C", "BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_0_OnClickCloseButton__DelegateSignature");
+		Func = Class->GetFunction("WBP_ColorEditor_C", "Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ColorEditor.WBP_ColorEditor_C.BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_1_OnClickSubmitButton__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// const struct FLinearColor&              Color                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ColorEditor_C::BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_1_OnClickSubmitButton__DelegateSignature(const struct FLinearColor& Color)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ColorEditor_C", "BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_1_OnClickSubmitButton__DelegateSignature");
-
-	Params::WBP_ColorEditor_C_BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_1_OnClickSubmitButton__DelegateSignature Parms{};
-
-	Parms.Color = std::move(Color);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ColorEditor.WBP_ColorEditor_C.BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_2_OnClickCopyButton__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_ColorEditor_C::BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_2_OnClickCopyButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ColorEditor_C", "BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_2_OnClickCopyButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ColorEditor.WBP_ColorEditor_C.BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_3_OnClickPasteButton__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_ColorEditor_C::BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_3_OnClickPasteButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ColorEditor_C", "BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_3_OnClickPasteButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ColorEditor.WBP_ColorEditor_C.BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_4_OnClickResetButton__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_ColorEditor_C::BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_4_OnClickResetButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ColorEditor_C", "BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_4_OnClickResetButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ColorEditor.WBP_ColorEditor_C.EmptyFunction
+// Function WBP_ColorEditor.WBP_ColorEditor_C.ResetColor
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_ColorEditor_C::EmptyFunction()
+void UWBP_ColorEditor_C::ResetColor()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ColorEditor_C", "EmptyFunction");
+		Func = Class->GetFunction("WBP_ColorEditor_C", "ResetColor");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ColorEditor.WBP_ColorEditor_C.PasteClipboard
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ColorEditor_C::PasteClipboard()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ColorEditor_C", "PasteClipboard");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ColorEditor.WBP_ColorEditor_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ColorEditor_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ColorEditor_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ColorEditor.WBP_ColorEditor_C.OnClickCopyButton
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ColorEditor_C::OnClickCopyButton()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ColorEditor_C", "OnClickCopyButton");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ColorEditor.WBP_ColorEditor_C.OnCancelAction
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ColorEditor_C::OnCancelAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ColorEditor_C", "OnCancelAction");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -127,85 +121,91 @@ void UWBP_ColorEditor_C::ExecuteUbergraph_WBP_ColorEditor(int32 EntryPoint)
 }
 
 
-// Function WBP_ColorEditor.WBP_ColorEditor_C.OnCancelAction
+// Function WBP_ColorEditor.WBP_ColorEditor_C.EmptyFunction
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_ColorEditor_C::OnCancelAction()
+void UWBP_ColorEditor_C::EmptyFunction()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ColorEditor_C", "OnCancelAction");
+		Func = Class->GetFunction("WBP_ColorEditor_C", "EmptyFunction");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ColorEditor.WBP_ColorEditor_C.OnClickCopyButton
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_ColorEditor.WBP_ColorEditor_C.BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_4_OnClickResetButton__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_ColorEditor_C::OnClickCopyButton()
+void UWBP_ColorEditor_C::BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_4_OnClickResetButton__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ColorEditor_C", "OnClickCopyButton");
+		Func = Class->GetFunction("WBP_ColorEditor_C", "BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_4_OnClickResetButton__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ColorEditor.WBP_ColorEditor_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function WBP_ColorEditor.WBP_ColorEditor_C.BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_3_OnClickPasteButton__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_ColorEditor_C::OnSetup()
+void UWBP_ColorEditor_C::BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_3_OnClickPasteButton__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ColorEditor_C", "OnSetup");
+		Func = Class->GetFunction("WBP_ColorEditor_C", "BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_3_OnClickPasteButton__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ColorEditor.WBP_ColorEditor_C.PasteClipboard
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_ColorEditor.WBP_ColorEditor_C.BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_2_OnClickCopyButton__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_ColorEditor_C::PasteClipboard()
+void UWBP_ColorEditor_C::BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_2_OnClickCopyButton__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ColorEditor_C", "PasteClipboard");
+		Func = Class->GetFunction("WBP_ColorEditor_C", "BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_2_OnClickCopyButton__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ColorEditor.WBP_ColorEditor_C.ResetColor
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_ColorEditor.WBP_ColorEditor_C.BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_1_OnClickSubmitButton__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// const struct FLinearColor&              Color                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ColorEditor_C::ResetColor()
+void UWBP_ColorEditor_C::BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_1_OnClickSubmitButton__DelegateSignature(const struct FLinearColor& Color)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ColorEditor_C", "ResetColor");
+		Func = Class->GetFunction("WBP_ColorEditor_C", "BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_1_OnClickSubmitButton__DelegateSignature");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_ColorEditor_C_BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_1_OnClickSubmitButton__DelegateSignature Parms{};
+
+	Parms.Color = std::move(Color);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ColorEditor.WBP_ColorEditor_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_ColorEditor.WBP_ColorEditor_C.BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_0_OnClickCloseButton__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_ColorEditor_C::Setup()
+void UWBP_ColorEditor_C::BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_0_OnClickCloseButton__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ColorEditor_C", "Setup");
+		Func = Class->GetFunction("WBP_ColorEditor_C", "BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_0_OnClickCloseButton__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

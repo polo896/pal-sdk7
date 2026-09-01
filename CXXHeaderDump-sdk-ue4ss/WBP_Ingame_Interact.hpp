@@ -21,9 +21,9 @@ class UWBP_Ingame_Interact_C : public UUserWidget
     class UImage* InteractBase;                                                       // 0x02F0 (size: 0x8)
     class UWBP_PalKeyGuideIcon_C* KeyGuide;                                           // 0x02F8 (size: 0x8)
     class URetainerBox* RetainerBox_111;                                              // 0x0300 (size: 0x8)
-    TMap<class EPalInteractiveObjectActionType, class TSoftObjectPtr<UTexture2D>> IconMap; // 0x0308 (size: 0x50)
+    TMap<EPalInteractiveObjectActionType, TSoftObjectPtr<class UTexture2D>> IconMap;  // 0x0308 (size: 0x50)
     double rightPadding;                                                              // 0x0358 (size: 0x8)
-    TMap<class EPalInteractiveObjectActionType, class FDataTableRowHandle> actionInputMap; // 0x0360 (size: 0x50)
+    TMap<EPalInteractiveObjectActionType, FDataTableRowHandle> actionInputMap;        // 0x0360 (size: 0x50)
 
     void SetIsValidInteract(bool IsValidFlag);
     void SetVisibilityLongPushParts(ESlateVisibility NewVisibility);

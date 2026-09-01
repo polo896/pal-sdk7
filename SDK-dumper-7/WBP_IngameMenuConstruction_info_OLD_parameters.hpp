@@ -16,22 +16,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameMenuConstruction_info_OLD.WBP_IngameMenuConstruction_info_OLD_C.Set Build Object Data
-// 0x0100 (0x0100 - 0x0000)
-struct WBP_IngameMenuConstruction_info_OLD_C_Set_Build_Object_Data final
-{
-public:
-	struct FPalBuildObjectData                    BuildObjectData;                                   // 0x0000(0x0098)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FString                                 NewLocalVar_0;                                     // 0x0098(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
-	float                                         CallFunc_WorkAmountToManMonth_ReturnValue;         // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_DoubleToText_ReturnValue;            // 0x00B0(0x0018)()
-	class FText                                   CallFunc_GetBuildObjectDesc_outDesc;               // 0x00C8(0x0018)()
-	class FText                                   CallFunc_GetMapObjectName_outName;                 // 0x00E0(0x0018)()
-	double                                        CallFunc_Conv_DoubleToText_Value_ImplicitCast;     // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenuConstruction_info_OLD_C_Set_Build_Object_Data;
-
 // Function WBP_IngameMenuConstruction_info_OLD.WBP_IngameMenuConstruction_info_OLD_C.SetMaterialInfo
 // 0x0020 (0x0020 - 0x0000)
 struct WBP_IngameMenuConstruction_info_OLD_C_SetMaterialInfo final
@@ -48,6 +32,22 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_IngameMenuConstruction_info_OLD_C_SetMaterialInfo;
+
+// Function WBP_IngameMenuConstruction_info_OLD.WBP_IngameMenuConstruction_info_OLD_C.Set Build Object Data
+// 0x0100 (0x0100 - 0x0000)
+struct WBP_IngameMenuConstruction_info_OLD_C_Set_Build_Object_Data final
+{
+public:
+	struct FPalBuildObjectData                    BuildObjectData;                                   // 0x0000(0x0098)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FString                                 NewLocalVar_0;                                     // 0x0098(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
+	float                                         CallFunc_WorkAmountToManMonth_ReturnValue;         // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_AC[0x4];                                       // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_DoubleToText_ReturnValue;            // 0x00B0(0x0018)()
+	class FText                                   CallFunc_GetBuildObjectDesc_outDesc;               // 0x00C8(0x0018)()
+	class FText                                   CallFunc_GetMapObjectName_outName;                 // 0x00E0(0x0018)()
+	double                                        CallFunc_Conv_DoubleToText_Value_ImplicitCast;     // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenuConstruction_info_OLD_C_Set_Build_Object_Data;
 
 // Function WBP_IngameMenuConstruction_info_OLD.WBP_IngameMenuConstruction_info_OLD_C.Get Useable Material Item Num
 // 0x0048 (0x0048 - 0x0000)

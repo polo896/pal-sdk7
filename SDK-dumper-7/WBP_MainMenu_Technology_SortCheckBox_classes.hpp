@@ -35,11 +35,11 @@ public:
 	TMulticastInlineDelegate<void(EPalBuildObjectTypeA BuildType, bool Enabled)> OnBuildFilterChanged; // 0x02B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__WBP_MainMenu_Technology_SortCheckBox_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void ExecuteUbergraph_WBP_MainMenu_Technology_SortCheckBox(int32 EntryPoint);
-	void SetCheckState(bool Check);
-	void SetupAsBuild(EPalBuildObjectTypeA BuildType, bool CheckState);
 	void SetupAsItem(EPalItemTypeA ItemType, bool CheckState);
+	void SetupAsBuild(EPalBuildObjectTypeA BuildType, bool CheckState);
+	void SetCheckState(bool Check);
+	void ExecuteUbergraph_WBP_MainMenu_Technology_SortCheckBox(int32 EntryPoint);
+	void BndEvt__WBP_MainMenu_Technology_SortCheckBox_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 
 public:
 	static class UClass* StaticClass()

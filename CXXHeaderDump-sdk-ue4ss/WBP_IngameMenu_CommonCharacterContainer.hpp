@@ -10,7 +10,7 @@ class UWBP_IngameMenu_CommonCharacterContainer_C : public UPalUserWidgetOverlayU
     class UWBP_IngameMenu_PalBox_PalDetail_C* WBP_IngameMenu_PalBox_PalDetail;        // 0x0498 (size: 0x8)
     class UWBP_Menu_btn_C* WBP_Menu_btn;                                              // 0x04A0 (size: 0x8)
     class UPalMapObjectConcreteModelBase* Model;                                      // 0x04A8 (size: 0x8)
-    TArray<class UWBP_PalCommonCharacterSlotButton_C*> PartyPalSlots;                 // 0x04B0 (size: 0x10)
+    TArray<UWBP_PalCommonCharacterSlotButton_C*> PartyPalSlots;                       // 0x04B0 (size: 0x10)
     FPalUIActionBindData SendSlotInputHandle;                                         // 0x04C0 (size: 0x4)
     FPalUIActionBindData ViewDetailInputHandle;                                       // 0x04C4 (size: 0x4)
     FPalDataTableRowName_UIInputAction SendSlotInput;                                 // 0x04C8 (size: 0x8)

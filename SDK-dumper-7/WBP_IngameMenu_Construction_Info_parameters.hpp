@@ -18,18 +18,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.DelayDisplay
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_IngameMenu_Construction_Info_C_DelayDisplay final
-{
-public:
-	double                                        DelayTime;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Info_C_DelayDisplay;
-
 // Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.UpdateDetail
 // 0x0208 (0x0208 - 0x0000)
 struct WBP_IngameMenu_Construction_Info_C_UpdateDetail final
@@ -166,6 +154,18 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Info_C_ExecuteUbergraph_WBP_IngameMenu_Construction_Info;
+
+// Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.DelayDisplay
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_IngameMenu_Construction_Info_C_DelayDisplay final
+{
+public:
+	double                                        DelayTime;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Construction_Info_C_DelayDisplay;
 
 // Function WBP_IngameMenu_Construction_Info.WBP_IngameMenu_Construction_Info_C.Get Useable Material Item Num
 // 0x0048 (0x0048 - 0x0000)

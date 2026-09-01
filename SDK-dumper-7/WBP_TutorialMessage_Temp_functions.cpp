@@ -41,104 +41,29 @@ void UWBP_TutorialMessage_Temp_C::CreateGuideText(const class FText& InText, cla
 }
 
 
-// Function WBP_TutorialMessage_Temp.WBP_TutorialMessage_Temp_C.ExecuteUbergraph_WBP_TutorialMessage_Temp
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_TutorialMessage_Temp_C::ExecuteUbergraph_WBP_TutorialMessage_Temp(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TutorialMessage_Temp_C", "ExecuteUbergraph_WBP_TutorialMessage_Temp");
-
-	Params::WBP_TutorialMessage_Temp_C_ExecuteUbergraph_WBP_TutorialMessage_Temp Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_TutorialMessage_Temp.WBP_TutorialMessage_Temp_C.Finished_5267E3844738D65023A58CBEE7C11FAC
+// Function WBP_TutorialMessage_Temp.WBP_TutorialMessage_Temp_C.SkipToNextMessage
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_TutorialMessage_Temp_C::Finished_5267E3844738D65023A58CBEE7C11FAC()
+void UWBP_TutorialMessage_Temp_C::SkipToNextMessage()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TutorialMessage_Temp_C", "Finished_5267E3844738D65023A58CBEE7C11FAC");
+		Func = Class->GetFunction("WBP_TutorialMessage_Temp_C", "SkipToNextMessage");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_TutorialMessage_Temp.WBP_TutorialMessage_Temp_C.Finished_D8B6F6C240191DC6DD60BAADB6596025
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_TutorialMessage_Temp.WBP_TutorialMessage_Temp_C.Setup
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_TutorialMessage_Temp_C::Finished_D8B6F6C240191DC6DD60BAADB6596025()
+void UWBP_TutorialMessage_Temp_C::Setup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TutorialMessage_Temp_C", "Finished_D8B6F6C240191DC6DD60BAADB6596025");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_TutorialMessage_Temp.WBP_TutorialMessage_Temp_C.GetCurrentMsgId
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FDataTableRowHandle*             MsgID                                                  (Parm, OutParm, NoDestructor)
-
-void UWBP_TutorialMessage_Temp_C::GetCurrentMsgId(struct FDataTableRowHandle* MsgID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TutorialMessage_Temp_C", "GetCurrentMsgId");
-
-	Params::WBP_TutorialMessage_Temp_C_GetCurrentMsgId Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (MsgID != nullptr)
-		*MsgID = std::move(Parms.MsgID);
-}
-
-
-// Function WBP_TutorialMessage_Temp.WBP_TutorialMessage_Temp_C.On Input Method Changed
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ECommonInputType                        InputType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_TutorialMessage_Temp_C::On_Input_Method_Changed(ECommonInputType InputType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TutorialMessage_Temp_C", "On Input Method Changed");
-
-	Params::WBP_TutorialMessage_Temp_C_On_Input_Method_Changed Parms{};
-
-	Parms.InputType = InputType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_TutorialMessage_Temp.WBP_TutorialMessage_Temp_C.PresentMessage
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_TutorialMessage_Temp_C::PresentMessage()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TutorialMessage_Temp_C", "PresentMessage");
+		Func = Class->GetFunction("WBP_TutorialMessage_Temp_C", "Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -164,31 +89,106 @@ void UWBP_TutorialMessage_Temp_C::QueueTutorial(const struct FDataTableRowHandle
 }
 
 
-// Function WBP_TutorialMessage_Temp.WBP_TutorialMessage_Temp_C.Setup
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_TutorialMessage_Temp.WBP_TutorialMessage_Temp_C.PresentMessage
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_TutorialMessage_Temp_C::Setup()
+void UWBP_TutorialMessage_Temp_C::PresentMessage()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TutorialMessage_Temp_C", "Setup");
+		Func = Class->GetFunction("WBP_TutorialMessage_Temp_C", "PresentMessage");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_TutorialMessage_Temp.WBP_TutorialMessage_Temp_C.SkipToNextMessage
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_TutorialMessage_Temp.WBP_TutorialMessage_Temp_C.On Input Method Changed
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ECommonInputType                        InputType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_TutorialMessage_Temp_C::SkipToNextMessage()
+void UWBP_TutorialMessage_Temp_C::On_Input_Method_Changed(ECommonInputType InputType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TutorialMessage_Temp_C", "SkipToNextMessage");
+		Func = Class->GetFunction("WBP_TutorialMessage_Temp_C", "On Input Method Changed");
+
+	Params::WBP_TutorialMessage_Temp_C_On_Input_Method_Changed Parms{};
+
+	Parms.InputType = InputType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_TutorialMessage_Temp.WBP_TutorialMessage_Temp_C.GetCurrentMsgId
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FDataTableRowHandle*             MsgID                                                  (Parm, OutParm, NoDestructor)
+
+void UWBP_TutorialMessage_Temp_C::GetCurrentMsgId(struct FDataTableRowHandle* MsgID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_TutorialMessage_Temp_C", "GetCurrentMsgId");
+
+	Params::WBP_TutorialMessage_Temp_C_GetCurrentMsgId Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (MsgID != nullptr)
+		*MsgID = std::move(Parms.MsgID);
+}
+
+
+// Function WBP_TutorialMessage_Temp.WBP_TutorialMessage_Temp_C.Finished_D8B6F6C240191DC6DD60BAADB6596025
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_TutorialMessage_Temp_C::Finished_D8B6F6C240191DC6DD60BAADB6596025()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_TutorialMessage_Temp_C", "Finished_D8B6F6C240191DC6DD60BAADB6596025");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_TutorialMessage_Temp.WBP_TutorialMessage_Temp_C.Finished_5267E3844738D65023A58CBEE7C11FAC
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_TutorialMessage_Temp_C::Finished_5267E3844738D65023A58CBEE7C11FAC()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_TutorialMessage_Temp_C", "Finished_5267E3844738D65023A58CBEE7C11FAC");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_TutorialMessage_Temp.WBP_TutorialMessage_Temp_C.ExecuteUbergraph_WBP_TutorialMessage_Temp
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_TutorialMessage_Temp_C::ExecuteUbergraph_WBP_TutorialMessage_Temp(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_TutorialMessage_Temp_C", "ExecuteUbergraph_WBP_TutorialMessage_Temp");
+
+	Params::WBP_TutorialMessage_Temp_C_ExecuteUbergraph_WBP_TutorialMessage_Temp Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

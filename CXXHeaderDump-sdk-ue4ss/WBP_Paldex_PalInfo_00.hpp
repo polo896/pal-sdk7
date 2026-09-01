@@ -21,7 +21,7 @@ class UWBP_Paldex_PalInfo_00_C : public UUserWidget
     class UWBP_Paldex_DropItem_C* WBP_Paldex_DropItem_3;                              // 0x02F0 (size: 0x8)
     class UWBP_Paldex_DropItem_C* WBP_Paldex_DropItem_4;                              // 0x02F8 (size: 0x8)
     class UWBP_Paldex_Task_C* WBP_Paldex_Task;                                        // 0x0300 (size: 0x8)
-    TArray<class UWBP_Paldex_DropItem_C*> DropItemWidgetArray;                        // 0x0308 (size: 0x10)
+    TArray<UWBP_Paldex_DropItem_C*> DropItemWidgetArray;                              // 0x0308 (size: 0x10)
     double New Offset;                                                                // 0x0318 (size: 0x8)
 
     void ChangePalInfoScrollOffset(double Offset);

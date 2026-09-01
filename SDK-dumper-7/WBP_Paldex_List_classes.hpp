@@ -56,26 +56,26 @@ public:
 	class FName                                   BindedSkinName;                                    // 0x035C(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Focus();
-	void AnmEvent_NotCapture();
-	void AnmEvent_Unfocus();
-	void BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void Construct();
-	void ExecuteUbergraph_WBP_Paldex_List(int32 EntryPoint);
-	void Focus();
-	void GetCharacterID(class FName* CharacterID);
-	void OnClickEvent();
-	void Setup(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
-	void Setup_Captured(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
-	void Setup_Encounted(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
-	void Setup_NotEncounted(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
-	void SetupByCharacterID(class FName CharacterID);
-	void SetupBySimpleText(const class FText& InText);
-	void SetupForSkinData(class FName SkinName, TSoftObjectPtr<class UTexture2D> Texture, const class FText& LocalizedSkinNameText);
-	void SetupForWorldTreeDragon2(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
 	void SetVisibilityNewMark(ESlateVisibility NewVisibility);
+	void SetupForWorldTreeDragon2(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
+	void SetupForSkinData(class FName SkinName, TSoftObjectPtr<class UTexture2D> Texture, const class FText& LocalizedSkinNameText);
+	void SetupBySimpleText(const class FText& InText);
+	void SetupByCharacterID(class FName CharacterID);
+	void Setup_NotEncounted(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
+	void Setup_Encounted(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
+	void Setup_Captured(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
+	void Setup(const struct FPalUIPaldex_DisplayInfo& DisplayInfo);
+	void OnClickEvent();
+	void GetCharacterID(class FName* CharacterID);
+	void Focus();
+	void ExecuteUbergraph_WBP_Paldex_List(int32 EntryPoint);
+	void Construct();
+	void BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void AnmEvent_Unfocus();
+	void AnmEvent_NotCapture();
+	void AnmEvent_Focus();
 
 public:
 	static class UClass* StaticClass()

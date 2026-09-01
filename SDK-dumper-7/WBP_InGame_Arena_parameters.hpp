@@ -17,6 +17,67 @@
 namespace SDK::Params
 {
 
+// Function WBP_InGame_Arena.WBP_InGame_Arena_C.WinUI
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_InGame_Arena_C_WinUI final
+{
+public:
+	class FString                                 WinnerName;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InGame_Arena_C_WinUI;
+
+// Function WBP_InGame_Arena.WBP_InGame_Arena_C.SetResult
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_InGame_Arena_C_SetResult final
+{
+public:
+	struct FPalArenaRankPointChangeResult         CallFunc_GetLocalBattleResult_Result;              // 0x0000(0x001C)(NoDestructor)
+	bool                                          CallFunc_GetLocalBattleResult_Finded;              // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWBP_InGame_Match_ArenaResult_C*        CallFunc_Create_ReturnValue;                       // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InGame_Arena_C_SetResult;
+
+// Function WBP_InGame_Arena.WBP_InGame_Arena_C.OnSequenceStageChanged
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_InGame_Arena_C_OnSequenceStageChanged final
+{
+public:
+	class UPalArenaSequencer*                     Sequencer;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPalArenaSequenceType                         PrevType;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalArenaSequenceType                         AfterType;                                         // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InGame_Arena_C_OnSequenceStageChanged;
+
+// Function WBP_InGame_Arena.WBP_InGame_Arena_C.OnArenaSequenceStart
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_InGame_Arena_C_OnArenaSequenceStart final
+{
+public:
+	class UPalArenaSequencer*                     ArenaSequence;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InGame_Arena_C_OnArenaSequenceStart;
+
+// Function WBP_InGame_Arena.WBP_InGame_Arena_C.GetLocalBattleResult
+// 0x0060 (0x0060 - 0x0000)
+struct WBP_InGame_Arena_C_GetLocalBattleResult final
+{
+public:
+	struct FPalArenaRankPointChangeResult         Result;                                            // 0x0000(0x001C)(Parm, OutParm, NoDestructor)
+	bool                                          Finded;                                            // 0x001C(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  CallFunc_GetLocalPlayerUID_ReturnValue;            // 0x002C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalArenaRankPointChangeResult         CallFunc_Array_Get_Item;                           // 0x0040(0x001C)(NoDestructor)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_GuidGuid_ReturnValue;          // 0x005D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InGame_Arena_C_GetLocalBattleResult;
+
 // Function WBP_InGame_Arena.WBP_InGame_Arena_C.ExecuteUbergraph_WBP_InGame_Arena
 // 0x02A0 (0x02A0 - 0x0000)
 struct WBP_InGame_Arena_C_ExecuteUbergraph_WBP_InGame_Arena final
@@ -94,67 +155,6 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_13;           // 0x028C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_InGame_Arena_C_ExecuteUbergraph_WBP_InGame_Arena;
-
-// Function WBP_InGame_Arena.WBP_InGame_Arena_C.GetLocalBattleResult
-// 0x0060 (0x0060 - 0x0000)
-struct WBP_InGame_Arena_C_GetLocalBattleResult final
-{
-public:
-	struct FPalArenaRankPointChangeResult         Result;                                            // 0x0000(0x001C)(Parm, OutParm, NoDestructor)
-	bool                                          Finded;                                            // 0x001C(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  CallFunc_GetLocalPlayerUID_ReturnValue;            // 0x002C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FPalArenaRankPointChangeResult         CallFunc_Array_Get_Item;                           // 0x0040(0x001C)(NoDestructor)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_GuidGuid_ReturnValue;          // 0x005D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InGame_Arena_C_GetLocalBattleResult;
-
-// Function WBP_InGame_Arena.WBP_InGame_Arena_C.OnArenaSequenceStart
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_InGame_Arena_C_OnArenaSequenceStart final
-{
-public:
-	class UPalArenaSequencer*                     ArenaSequence;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InGame_Arena_C_OnArenaSequenceStart;
-
-// Function WBP_InGame_Arena.WBP_InGame_Arena_C.OnSequenceStageChanged
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_InGame_Arena_C_OnSequenceStageChanged final
-{
-public:
-	class UPalArenaSequencer*                     Sequencer;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPalArenaSequenceType                         PrevType;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalArenaSequenceType                         AfterType;                                         // 0x0009(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InGame_Arena_C_OnSequenceStageChanged;
-
-// Function WBP_InGame_Arena.WBP_InGame_Arena_C.SetResult
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_InGame_Arena_C_SetResult final
-{
-public:
-	struct FPalArenaRankPointChangeResult         CallFunc_GetLocalBattleResult_Result;              // 0x0000(0x001C)(NoDestructor)
-	bool                                          CallFunc_GetLocalBattleResult_Finded;              // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWBP_InGame_Match_ArenaResult_C*        CallFunc_Create_ReturnValue;                       // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InGame_Arena_C_SetResult;
-
-// Function WBP_InGame_Arena.WBP_InGame_Arena_C.WinUI
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_InGame_Arena_C_WinUI final
-{
-public:
-	class FString                                 WinnerName;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InGame_Arena_C_WinUI;
 
 }
 

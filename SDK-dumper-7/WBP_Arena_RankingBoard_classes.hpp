@@ -31,17 +31,17 @@ public:
 	int32                                         LastHoveredIndex;                                  // 0x04A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_Arena_RankingBoard_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void CloseAnm();
-	void Construct();
-	class UWidget* Do_Custom_Navigation_Left(EUINavigation Navigation_0);
-	class UWidget* DoCustomNavigation_Right(EUINavigation Navigation_0);
-	void ExecuteUbergraph_WBP_Arena_RankingBoard(int32 EntryPoint);
-	void Finished_0CE00FEB491F3446724290B53E54505B();
-	void OnListHovered(class UWidget* Widget);
-	void OnLocalPlayerInfoReplicated(const struct FPalArenaWorldRankingRecord& RankingInfo);
-	void OnSetup();
 	void Setup();
+	void OnSetup();
+	void OnLocalPlayerInfoReplicated(const struct FPalArenaWorldRankingRecord& RankingInfo);
+	void OnListHovered(class UWidget* Widget);
+	void Finished_0CE00FEB491F3446724290B53E54505B();
+	void ExecuteUbergraph_WBP_Arena_RankingBoard(int32 EntryPoint);
+	class UWidget* DoCustomNavigation_Right(EUINavigation Navigation_0);
+	class UWidget* Do_Custom_Navigation_Left(EUINavigation Navigation_0);
+	void Construct();
+	void CloseAnm();
+	void BndEvt__WBP_Arena_RankingBoard_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

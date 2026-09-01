@@ -13,7 +13,7 @@ class ABP_WantedPolice_SpawnerRouter_C : public AActor
     void SpawnSpawnerActor();
     void ReceiveBeginPlay();
     void OnSpawnPolices(const FPalWorldSecurityWantedPoliceSettingData PoliceData);
-    void OnDespawnPolices(const TArray<class UPalIndividualCharacterHandle*>& DespawnHandles);
+    void OnDespawnPolices(const TArray<UPalIndividualCharacterHandle*>& DespawnHandles);
     void OnReleaseWanted();
     void ReceiveTick(float DeltaSeconds);
     void ExecuteUbergraph_BP_WantedPolice_SpawnerRouter(int32 EntryPoint);

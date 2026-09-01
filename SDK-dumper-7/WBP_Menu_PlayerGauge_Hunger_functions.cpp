@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_Menu_PlayerGauge_Hunger.WBP_Menu_PlayerGauge_Hunger_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Menu_PlayerGauge_Hunger_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_PlayerGauge_Hunger_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_Menu_PlayerGauge_Hunger.WBP_Menu_PlayerGauge_Hunger_C.ExecuteUbergraph_WBP_Menu_PlayerGauge_Hunger
 // (Final, UbergraphFunction)
 // Parameters:
@@ -48,6 +34,20 @@ void UWBP_Menu_PlayerGauge_Hunger_C::ExecuteUbergraph_WBP_Menu_PlayerGauge_Hunge
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Menu_PlayerGauge_Hunger.WBP_Menu_PlayerGauge_Hunger_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Menu_PlayerGauge_Hunger_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Menu_PlayerGauge_Hunger_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

@@ -64,19 +64,19 @@ public:
 	bool                                          Can_Confirm;                                       // 0x03B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SwitchMarkerType(bool ToGuild);
-	void SetUnconfirmable(bool CanConfirm);
-	void SetLockType(bool NewLock);
-	void SetEdittingIcon(class UWBP_Map_IconCustom_C* CustomIcon);
-	void OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent);
-	void OnConfirmClickButton();
-	void ExecuteUbergraph_WBP_MapMarker_Win(int32 EntryPoint);
-	class UWidget* DoCustomNavigation(EUINavigation Navigation_0);
-	void Construct();
-	void ChangeIconType(int32 Index_0);
-	void BndEvt__WBP_MapMarker_Win_WBP_tab_Guild_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
-	void BndEvt__WBP_MapMarker_Win_WBP_tab_Custom_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
 	void AnmEvent_WarnMarkerOverLimit();
+	void BndEvt__WBP_MapMarker_Win_WBP_tab_Custom_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
+	void BndEvt__WBP_MapMarker_Win_WBP_tab_Guild_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
+	void ChangeIconType(int32 Index_0);
+	void Construct();
+	class UWidget* DoCustomNavigation(EUINavigation Navigation_0);
+	void ExecuteUbergraph_WBP_MapMarker_Win(int32 EntryPoint);
+	void OnConfirmClickButton();
+	void OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent);
+	void SetEdittingIcon(class UWBP_Map_IconCustom_C* CustomIcon);
+	void SetLockType(bool NewLock);
+	void SetUnconfirmable(bool CanConfirm);
+	void SwitchMarkerType(bool ToGuild);
 
 public:
 	static class UClass* StaticClass()

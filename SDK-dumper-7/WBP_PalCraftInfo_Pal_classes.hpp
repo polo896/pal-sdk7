@@ -35,14 +35,14 @@ public:
 	float                                         savedMaxHunger;                                    // 0x02EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BindEvent(class UPalIndividualCharacterParameter* paremter);
-	void Clear();
-	void ExecuteUbergraph_WBP_PalCraftInfo_Pal(int32 EntryPoint);
-	void OnInitialized();
-	void SetTargetPal(class UPalIndividualCharacterSlot* TargetSlot, bool IsFixedAssign);
-	void UnbindEvent();
-	void UpdateHunger(float Current, float Last);
 	void UpdateSanity(float nowSanity, float oldSanity);
+	void UpdateHunger(float Current, float Last);
+	void UnbindEvent();
+	void SetTargetPal(class UPalIndividualCharacterSlot* TargetSlot, bool IsFixedAssign);
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_PalCraftInfo_Pal(int32 EntryPoint);
+	void Clear();
+	void BindEvent(class UPalIndividualCharacterParameter* paremter);
 
 public:
 	static class UClass* StaticClass()

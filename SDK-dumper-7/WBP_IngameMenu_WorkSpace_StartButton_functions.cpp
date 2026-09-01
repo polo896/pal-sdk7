@@ -17,21 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_IngameMenu_WorkSpace_StartButton.WBP_IngameMenu_WorkSpace_StartButton_C.BndEvt__WBP_IngameMenu_WorkSpace_StartButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_IngameMenu_WorkSpace_StartButton.WBP_IngameMenu_WorkSpace_StartButton_C.SetEnable
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    Enable                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_WorkSpace_StartButton_C::BndEvt__WBP_IngameMenu_WorkSpace_StartButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_IngameMenu_WorkSpace_StartButton_C::SetEnable(bool Enable)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_StartButton_C", "BndEvt__WBP_IngameMenu_WorkSpace_StartButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_StartButton_C", "SetEnable");
 
-	Params::WBP_IngameMenu_WorkSpace_StartButton_C_BndEvt__WBP_IngameMenu_WorkSpace_StartButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_IngameMenu_WorkSpace_StartButton_C_SetEnable Parms{};
 
-	Parms.Button = Button;
+	Parms.Enable = Enable;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,21 +57,21 @@ void UWBP_IngameMenu_WorkSpace_StartButton_C::ExecuteUbergraph_WBP_IngameMenu_Wo
 }
 
 
-// Function WBP_IngameMenu_WorkSpace_StartButton.WBP_IngameMenu_WorkSpace_StartButton_C.SetEnable
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_WorkSpace_StartButton.WBP_IngameMenu_WorkSpace_StartButton_C.BndEvt__WBP_IngameMenu_WorkSpace_StartButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool                                    Enable                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_WorkSpace_StartButton_C::SetEnable(bool Enable)
+void UWBP_IngameMenu_WorkSpace_StartButton_C::BndEvt__WBP_IngameMenu_WorkSpace_StartButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_StartButton_C", "SetEnable");
+		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_StartButton_C", "BndEvt__WBP_IngameMenu_WorkSpace_StartButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_IngameMenu_WorkSpace_StartButton_C_SetEnable Parms{};
+	Params::WBP_IngameMenu_WorkSpace_StartButton_C_BndEvt__WBP_IngameMenu_WorkSpace_StartButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
 
-	Parms.Enable = Enable;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

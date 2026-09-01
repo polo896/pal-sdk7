@@ -34,11 +34,11 @@ public:
 	bool                                          bFirstAnimation;                                   // 0x02B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_ForceSimpleDetail();
-	void AnmEvent_NormalToSimple();
-	void AnmEvent_SimpleToNormal();
-	void ExecuteUbergraph_WBP_WarningEvent_NoticeTimer(int32 EntryPoint);
 	void SetRemainTime(double remainTime);
+	void ExecuteUbergraph_WBP_WarningEvent_NoticeTimer(int32 EntryPoint);
+	void AnmEvent_SimpleToNormal();
+	void AnmEvent_NormalToSimple();
+	void AnmEvent_ForceSimpleDetail();
 
 public:
 	static class UClass* StaticClass()

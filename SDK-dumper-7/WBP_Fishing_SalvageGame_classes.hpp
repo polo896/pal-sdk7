@@ -69,11 +69,11 @@ public:
 	class UWBP_PalKeyGuideIcon_C*                 WBP_PalKeyGuideIcon_Interact;                      // 0x03D0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Fishing_SalvageGame(int32 EntryPoint);
-	void HideAnimation();
-	void PlayFailedAnimation();
-	void PlayInAnimation();
 	void PlaySuccessAnimation();
+	void PlayInAnimation();
+	void PlayFailedAnimation();
+	void HideAnimation();
+	void ExecuteUbergraph_WBP_Fishing_SalvageGame(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

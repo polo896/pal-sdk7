@@ -13,8 +13,8 @@
 #include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "WBP_WorldMap_IconBase_NoDesign_classes.hpp"
 #include "Pal_structs.hpp"
+#include "WBP_WorldMap_IconBase_NoDesign_classes.hpp"
 
 
 namespace SDK
@@ -40,14 +40,14 @@ public:
 	int32                                         Level;                                             // 0x05A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Update_Boss_Icon_State();
-	void Setup_Internal(class UPalLocationPoint* LocationPoint);
-	void SetBoss(EPalBossType BossType, const struct FVector& Location, class FName BossBattleRowName_0);
-	void GetInvisibleButton(class UWidget** Button);
-	void ExecuteUbergraph_WBP_Map_StandAloneBossIcon(int32 EntryPoint);
-	void CreateBossList(EPalBossType BossType);
-	void BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 	void BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void CreateBossList(EPalBossType BossType);
+	void ExecuteUbergraph_WBP_Map_StandAloneBossIcon(int32 EntryPoint);
+	void GetInvisibleButton(class UWidget** Button);
+	void SetBoss(EPalBossType BossType, const struct FVector& Location, class FName BossBattleRowName_0);
+	void Setup_Internal(class UPalLocationPoint* LocationPoint);
+	void Update_Boss_Icon_State();
 
 	bool GetLocationOnLandscape(struct FVector* OutLocation) const;
 

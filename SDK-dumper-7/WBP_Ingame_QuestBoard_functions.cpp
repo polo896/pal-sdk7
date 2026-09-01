@@ -17,21 +17,81 @@
 namespace SDK
 {
 
-// Function WBP_Ingame_QuestBoard.WBP_Ingame_QuestBoard_C.CompleteQuest
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Ingame_QuestBoard.WBP_Ingame_QuestBoard_C.UpdateTrackingQuestDetail
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             QuestId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIgnoreAlreadyCreatedWidget                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Ingame_QuestBoard_C::CompleteQuest(class FName QuestId)
+void UWBP_Ingame_QuestBoard_C::UpdateTrackingQuestDetail(bool bIgnoreAlreadyCreatedWidget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_QuestBoard_C", "CompleteQuest");
+		Func = Class->GetFunction("WBP_Ingame_QuestBoard_C", "UpdateTrackingQuestDetail");
 
-	Params::WBP_Ingame_QuestBoard_C_CompleteQuest Parms{};
+	Params::WBP_Ingame_QuestBoard_C_UpdateTrackingQuestDetail Parms{};
+
+	Parms.bIgnoreAlreadyCreatedWidget = bIgnoreAlreadyCreatedWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Ingame_QuestBoard.WBP_Ingame_QuestBoard_C.UpdateQuestName
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             QuestId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Ingame_QuestBoard_C::UpdateQuestName(class FName QuestId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_QuestBoard_C", "UpdateQuestName");
+
+	Params::WBP_Ingame_QuestBoard_C_UpdateQuestName Parms{};
 
 	Parms.QuestId = QuestId;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Ingame_QuestBoard.WBP_Ingame_QuestBoard_C.UpdateQuestDetail
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             QuestId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Ingame_QuestBoard_C::UpdateQuestDetail(class FName QuestId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_QuestBoard_C", "UpdateQuestDetail");
+
+	Params::WBP_Ingame_QuestBoard_C_UpdateQuestDetail Parms{};
+
+	Parms.QuestId = QuestId;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Ingame_QuestBoard.WBP_Ingame_QuestBoard_C.OnClosedQuestWidget
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_IngameQuestBoardListSet_C*   Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Ingame_QuestBoard_C::OnClosedQuestWidget(class UWBP_IngameQuestBoardListSet_C* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_QuestBoard_C", "OnClosedQuestWidget");
+
+	Params::WBP_Ingame_QuestBoard_C_OnClosedQuestWidget Parms{};
+
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -58,81 +118,21 @@ void UWBP_Ingame_QuestBoard_C::GetNowDisplayQuestWidgetNum(int32* Num)
 }
 
 
-// Function WBP_Ingame_QuestBoard.WBP_Ingame_QuestBoard_C.OnClosedQuestWidget
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_IngameQuestBoardListSet_C*   Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Ingame_QuestBoard_C::OnClosedQuestWidget(class UWBP_IngameQuestBoardListSet_C* Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_QuestBoard_C", "OnClosedQuestWidget");
-
-	Params::WBP_Ingame_QuestBoard_C_OnClosedQuestWidget Parms{};
-
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Ingame_QuestBoard.WBP_Ingame_QuestBoard_C.UpdateQuestDetail
+// Function WBP_Ingame_QuestBoard.WBP_Ingame_QuestBoard_C.CompleteQuest
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             QuestId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Ingame_QuestBoard_C::UpdateQuestDetail(class FName QuestId)
+void UWBP_Ingame_QuestBoard_C::CompleteQuest(class FName QuestId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_QuestBoard_C", "UpdateQuestDetail");
+		Func = Class->GetFunction("WBP_Ingame_QuestBoard_C", "CompleteQuest");
 
-	Params::WBP_Ingame_QuestBoard_C_UpdateQuestDetail Parms{};
+	Params::WBP_Ingame_QuestBoard_C_CompleteQuest Parms{};
 
 	Parms.QuestId = QuestId;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Ingame_QuestBoard.WBP_Ingame_QuestBoard_C.UpdateQuestName
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             QuestId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Ingame_QuestBoard_C::UpdateQuestName(class FName QuestId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_QuestBoard_C", "UpdateQuestName");
-
-	Params::WBP_Ingame_QuestBoard_C_UpdateQuestName Parms{};
-
-	Parms.QuestId = QuestId;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Ingame_QuestBoard.WBP_Ingame_QuestBoard_C.UpdateTrackingQuestDetail
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIgnoreAlreadyCreatedWidget                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Ingame_QuestBoard_C::UpdateTrackingQuestDetail(bool bIgnoreAlreadyCreatedWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_QuestBoard_C", "UpdateTrackingQuestDetail");
-
-	Params::WBP_Ingame_QuestBoard_C_UpdateTrackingQuestDetail Parms{};
-
-	Parms.bIgnoreAlreadyCreatedWidget = bIgnoreAlreadyCreatedWidget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

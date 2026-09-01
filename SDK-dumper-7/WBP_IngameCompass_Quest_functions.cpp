@@ -37,26 +37,6 @@ void UWBP_IngameCompass_Quest_C::SetDistanceText(double Length)
 }
 
 
-// Function WBP_IngameCompass_Quest.WBP_IngameCompass_Quest_C.SetupTexture
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TSoftObjectPtr<class UTexture2D>        SoftTexture                                            (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void UWBP_IngameCompass_Quest_C::SetupTexture(TSoftObjectPtr<class UTexture2D> SoftTexture)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameCompass_Quest_C", "SetupTexture");
-
-	Params::WBP_IngameCompass_Quest_C_SetupTexture Parms{};
-
-	Parms.SoftTexture = SoftTexture;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_IngameCompass_Quest.WBP_IngameCompass_Quest_C.ShouldForceHide
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -75,6 +55,26 @@ void UWBP_IngameCompass_Quest_C::ShouldForceHide(bool* bForceHide)
 
 	if (bForceHide != nullptr)
 		*bForceHide = Parms.bForceHide;
+}
+
+
+// Function WBP_IngameCompass_Quest.WBP_IngameCompass_Quest_C.SetupTexture
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TSoftObjectPtr<class UTexture2D>        SoftTexture                                            (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+
+void UWBP_IngameCompass_Quest_C::SetupTexture(TSoftObjectPtr<class UTexture2D> SoftTexture)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameCompass_Quest_C", "SetupTexture");
+
+	Params::WBP_IngameCompass_Quest_C_SetupTexture Parms{};
+
+	Parms.SoftTexture = SoftTexture;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

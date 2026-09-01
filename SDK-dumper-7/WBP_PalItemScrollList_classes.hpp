@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "WBP_PalCommonScrollList_classes.hpp"
 #include "Pal_structs.hpp"
+#include "WBP_PalCommonScrollList_classes.hpp"
 
 
 namespace SDK
@@ -46,37 +46,37 @@ public:
 	class UPalItemContainer*                      Target_Container;                                  // 0x0560(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AddItemContainer(class UPalItemContainer* TargetContainer, const class FText& DisplayName, bool IgnoreEmptySlot, class UWBP_PalItemListBlock_C** createdBlock);
-	void AddItemSlotArray(TArray<class UPalItemSlot*>& ItemSlotArray, const class FText& DisplayName, bool IgnoreEmptySlot, class UWBP_PalItemListBlock_C** createdBlock);
-	void ClearAllChildren();
-	void Construct();
-	void CreateBlock(class UPalItemContainer* TargetContainer, const class FText& DisplayName, bool IgnoreEmptySlot, class UWBP_PalItemListBlock_C** createdBlock);
-	void CreateBlockByItemSlotArray(TArray<class UPalItemSlot*>& ItemSlotArray, const class FText& DisplayName, bool IgnoreEmptySlot, class UWBP_PalItemListBlock_C** createdBlock);
-	void CreateEmptyBlock(class UWBP_PalItemListBlock_C** createdBlock);
-	void Destruct();
-	void ExecuteUbergraph_WBP_PalItemScrollList(int32 EntryPoint);
-	void FilteringBySellableItemDataMap(const TMap<class FName, double>& SellableItemDataMap);
-	void Focus();
-	void GetAllItemSlotButton(TArray<class UWBP_PalItemSlotButtonBase_C*>* Slots);
-	void GetFocusTarget(class UWidget** Target);
-	void GetLastHoveredSlotButton(class UWBP_PalItemSlotButtonBase_C** SlotButton);
-	TArray<struct FPalContainerId> GetQuickMoveTargetContainerIds();
-	void HiddenEmptySlot();
-	void InitializeArrowVisibility();
-	void OnDragDetected_Internal(class UWBP_PalItemSlotButtonBase_C* Widget);
-	void OnEndHovered_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
-	void OnFocused_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
-	void OnHovered_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
-	void OnInitialized();
-	void OnLeftClicked_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
-	void OnMiddleClicked_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
-	void OnRequestUseItem_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
 	void OnRightClicked_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
-	void OnUnfocused_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
-	void ResetTargetContainerDisplay(class UWBP_PalItemListBlock_C* BlockWidget, class UPalItemContainer* TargetContainer, bool IgnoreEmptySlot);
-	void SetDisplayContainerSlotNumDefault(int32 DisplayContainerSlotNumDefault_0);
-	void SetQuickMoveTargetContainer(class UPalItemContainer* TargetContainer);
+	void OnRequestUseItem_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
+	void OnMiddleClicked_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
+	void OnLeftClicked_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
+	void OnInitialized();
+	void OnHovered_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
+	void OnFocused_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
+	void OnEndHovered_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
+	void OnDragDetected_Internal(class UWBP_PalItemSlotButtonBase_C* Widget);
+	void InitializeArrowVisibility();
+	void HiddenEmptySlot();
+	TArray<struct FPalContainerId> GetQuickMoveTargetContainerIds();
+	void GetLastHoveredSlotButton(class UWBP_PalItemSlotButtonBase_C** SlotButton);
+	void GetFocusTarget(class UWidget** Target);
+	void GetAllItemSlotButton(TArray<class UWBP_PalItemSlotButtonBase_C*>* Slots);
+	void Focus();
+	void FilteringBySellableItemDataMap(const TMap<class FName, double>& SellableItemDataMap);
+	void ExecuteUbergraph_WBP_PalItemScrollList(int32 EntryPoint);
+	void Destruct();
+	void CreateEmptyBlock(class UWBP_PalItemListBlock_C** createdBlock);
+	void CreateBlockByItemSlotArray(TArray<class UPalItemSlot*>& ItemSlotArray, const class FText& DisplayName, bool IgnoreEmptySlot, class UWBP_PalItemListBlock_C** createdBlock);
+	void CreateBlock(class UPalItemContainer* TargetContainer, const class FText& DisplayName, bool IgnoreEmptySlot, class UWBP_PalItemListBlock_C** createdBlock);
+	void Construct();
+	void ClearAllChildren();
+	void AddItemSlotArray(TArray<class UPalItemSlot*>& ItemSlotArray, const class FText& DisplayName, bool IgnoreEmptySlot, class UWBP_PalItemListBlock_C** createdBlock);
+	void AddItemContainer(class UPalItemContainer* TargetContainer, const class FText& DisplayName, bool IgnoreEmptySlot, class UWBP_PalItemListBlock_C** createdBlock);
 	void SetQuickMoveTargetContainers(TArray<class UPalItemContainer*>& TargetContainer);
+	void SetQuickMoveTargetContainer(class UPalItemContainer* TargetContainer);
+	void SetDisplayContainerSlotNumDefault(int32 DisplayContainerSlotNumDefault_0);
+	void ResetTargetContainerDisplay(class UWBP_PalItemListBlock_C* BlockWidget, class UPalItemContainer* TargetContainer, bool IgnoreEmptySlot);
+	void OnUnfocused_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
 
 public:
 	static class UClass* StaticClass()

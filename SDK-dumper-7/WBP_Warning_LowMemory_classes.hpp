@@ -28,9 +28,9 @@ public:
 	class UImage*                                 Image_Base;                                        // 0x0288(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void ExecuteUbergraph_WBP_Warning_LowMemory(int32 EntryPoint);
 	void OnMemoryWarning(bool bIsOver);
+	void ExecuteUbergraph_WBP_Warning_LowMemory(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

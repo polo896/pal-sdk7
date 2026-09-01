@@ -11,7 +11,7 @@ class UWBP_PalCraftInfo_Pal_C : public UUserWidget
     class UBP_PalTextBlock_C* Text_NowSanity;                                         // 0x02A0 (size: 0x8)
     class UWBP_PalCommonCharacterSlot_C* WBP_PalCommonCharacterSlot;                  // 0x02A8 (size: 0x8)
     class UMaterial* defaultFontMaterial;                                             // 0x02B0 (size: 0x8)
-    TSoftObjectPtr<UPalIndividualCharacterHandle> bindedHandle;                       // 0x02B8 (size: 0x30)
+    TSoftObjectPtr<class UPalIndividualCharacterHandle> bindedHandle;                 // 0x02B8 (size: 0x30)
     float savedMaxSanity;                                                             // 0x02E8 (size: 0x4)
     float savedMaxHunger;                                                             // 0x02EC (size: 0x4)
 

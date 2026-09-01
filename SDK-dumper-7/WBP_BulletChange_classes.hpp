@@ -38,20 +38,20 @@ public:
 	struct FPalUIActionBindData                   ChangeBulletPrevActionHandle;                      // 0x04F4(0x0004)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void ClearFadeoutTImer();
-	void Destruct();
-	void ExecuteUbergraph_WBP_BulletChange(int32 EntryPoint);
-	void OnInputAction_ChangeNextBullet();
-	void OnInputAction_ChangePrevBullet();
-	void OnTimerEvent_Fadeout();
-	void RegisterChangeBulletAction();
-	void ResetFadeoutTimer();
-	void ScrollToBullet(class FName TargetBulletId);
-	void SelectBullet(class FName BulletItemId);
-	void SetBulletList(TArray<class FName>& BulletItemIdList);
-	void ToListDisplay();
-	void ToSimpleDisplay(class FName CurrentBulletId, bool bPlayFadeAnimation);
 	void UnregisterChangeBulletAction();
+	void ToSimpleDisplay(class FName CurrentBulletId, bool bPlayFadeAnimation);
+	void ToListDisplay();
+	void SetBulletList(TArray<class FName>& BulletItemIdList);
+	void SelectBullet(class FName BulletItemId);
+	void ScrollToBullet(class FName TargetBulletId);
+	void ResetFadeoutTimer();
+	void RegisterChangeBulletAction();
+	void OnTimerEvent_Fadeout();
+	void OnInputAction_ChangePrevBullet();
+	void OnInputAction_ChangeNextBullet();
+	void ExecuteUbergraph_WBP_BulletChange(int32 EntryPoint);
+	void Destruct();
+	void ClearFadeoutTImer();
 
 public:
 	static class UClass* StaticClass()

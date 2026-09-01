@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Pal_structs.hpp"
 #include "WBP_WorldMap_IconBase_NoDesign_classes.hpp"
+#include "Pal_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -35,15 +35,15 @@ public:
 	bool                                          Is_Local;                                          // 0x05F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UpdatePvPItemCount();
-	void UpdateMapInfo(const struct FPalPlayerInfoForMap& mapInfo);
-	void SetupLocalPlayer(bool IsLocal);
-	void SetupForceVisibility(bool* bChangedVisibility);
-	void SetPlayerStateMapInfo(const struct FPalPlayerInfoForMap& mapInfo, bool bIsLocalPlayer);
-	void GetLocationPosition(struct FVector* LocationPosition);
-	void ExecuteUbergraph_WBP_Map_IconPlayer(int32 EntryPoint);
-	void BndEvt__WBP_Map_IconPlayer_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 	void BndEvt__WBP_Map_IconPlayer_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Map_IconPlayer_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void ExecuteUbergraph_WBP_Map_IconPlayer(int32 EntryPoint);
+	void GetLocationPosition(struct FVector* LocationPosition);
+	void SetPlayerStateMapInfo(const struct FPalPlayerInfoForMap& mapInfo, bool bIsLocalPlayer);
+	void SetupForceVisibility(bool* bChangedVisibility);
+	void SetupLocalPlayer(bool IsLocal);
+	void UpdateMapInfo(const struct FPalPlayerInfoForMap& mapInfo);
+	void UpdatePvPItemCount();
 
 public:
 	static class UClass* StaticClass()

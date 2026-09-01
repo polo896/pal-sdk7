@@ -29,11 +29,11 @@ public:
 	class AActor*                                 Talk_Player;                                       // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void EnableTickTurn(bool IsEnableTickTurn);
-	void ExecuteUbergraph_BP_NPCAIController_Quest(int32 EntryPoint);
-	void NotifyTalkStart(class APalPlayerCharacter* TalkPlayer);
-	void OnNpcTalkIncidentNotify(class UPalIncidentNotifyListener* Listener, EPalIncidentState IncidentState, const struct FPalIncidentNotifyParameter& Parameter);
 	void ReceiveTick(float DeltaSeconds);
+	void OnNpcTalkIncidentNotify(class UPalIncidentNotifyListener* Listener, EPalIncidentState IncidentState, const struct FPalIncidentNotifyParameter& Parameter);
+	void NotifyTalkStart(class APalPlayerCharacter* TalkPlayer);
+	void ExecuteUbergraph_BP_NPCAIController_Quest(int32 EntryPoint);
+	void EnableTickTurn(bool IsEnableTickTurn);
 
 public:
 	static class UClass* StaticClass()

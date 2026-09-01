@@ -17,62 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_Notice.WBP_Notice_C.AnmEvent_Close_Negative
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Notice_C::AnmEvent_Close_Negative()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Notice_C", "AnmEvent_Close_Negative");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Notice.WBP_Notice_C.AnmEvent_Close_Positive
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Notice_C::AnmEvent_Close_Positive()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Notice_C", "AnmEvent_Close_Positive");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Notice.WBP_Notice_C.AnmEvent_Open_Negative
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Notice_C::AnmEvent_Open_Negative()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Notice_C", "AnmEvent_Open_Negative");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Notice.WBP_Notice_C.AnmEvent_Open_Positive
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Notice_C::AnmEvent_Open_Positive()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Notice_C", "AnmEvent_Open_Positive");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_Notice.WBP_Notice_C.ExecuteUbergraph_WBP_Notice
 // (Final, UbergraphFunction)
 // Parameters:
@@ -93,73 +37,79 @@ void UWBP_Notice_C::ExecuteUbergraph_WBP_Notice(int32 EntryPoint)
 }
 
 
-// Function WBP_Notice.WBP_Notice_C.Finished_1C35836941B88D2824102B8E8EC65295
+// Function WBP_Notice.WBP_Notice_C.AnmEvent_Open_Positive
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Notice_C::Finished_1C35836941B88D2824102B8E8EC65295()
+void UWBP_Notice_C::AnmEvent_Open_Positive()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Notice_C", "Finished_1C35836941B88D2824102B8E8EC65295");
+		Func = Class->GetFunction("WBP_Notice_C", "AnmEvent_Open_Positive");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Notice.WBP_Notice_C.Finished_6DE1EEED4A47BC160DDFEBA700165427
+// Function WBP_Notice.WBP_Notice_C.AnmEvent_Open_Negative
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Notice_C::Finished_6DE1EEED4A47BC160DDFEBA700165427()
+void UWBP_Notice_C::AnmEvent_Open_Negative()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Notice_C", "Finished_6DE1EEED4A47BC160DDFEBA700165427");
+		Func = Class->GetFunction("WBP_Notice_C", "AnmEvent_Open_Negative");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Notice.WBP_Notice_C.Finished_6F0CFBFE4FFC647FC29A08AD10869738
+// Function WBP_Notice.WBP_Notice_C.AnmEvent_Close_Positive
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Notice_C::Finished_6F0CFBFE4FFC647FC29A08AD10869738()
+void UWBP_Notice_C::AnmEvent_Close_Positive()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Notice_C", "Finished_6F0CFBFE4FFC647FC29A08AD10869738");
+		Func = Class->GetFunction("WBP_Notice_C", "AnmEvent_Close_Positive");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Notice.WBP_Notice_C.Finished_77B22E4B4836BC8AB8B4A08F2691F416
+// Function WBP_Notice.WBP_Notice_C.AnmEvent_Close_Negative
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Notice_C::Finished_77B22E4B4836BC8AB8B4A08F2691F416()
+void UWBP_Notice_C::AnmEvent_Close_Negative()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Notice_C", "Finished_77B22E4B4836BC8AB8B4A08F2691F416");
+		Func = Class->GetFunction("WBP_Notice_C", "AnmEvent_Close_Negative");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Notice.WBP_Notice_C.HideIcon
+// Function WBP_Notice.WBP_Notice_C.SetText
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_Notice_C::HideIcon()
+void UWBP_Notice_C::SetText(const class FText& Text)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Notice_C", "HideIcon");
+		Func = Class->GetFunction("WBP_Notice_C", "SetText");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Notice_C_SetText Parms{};
+
+	Parms.Text = std::move(Text);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -183,23 +133,73 @@ void UWBP_Notice_C::SetIconTexture(class UTexture2D* Texture)
 }
 
 
-// Function WBP_Notice.WBP_Notice_C.SetText
+// Function WBP_Notice.WBP_Notice_C.HideIcon
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_Notice_C::SetText(const class FText& Text)
+void UWBP_Notice_C::HideIcon()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Notice_C", "SetText");
+		Func = Class->GetFunction("WBP_Notice_C", "HideIcon");
 
-	Params::WBP_Notice_C_SetText Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Text = std::move(Text);
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function WBP_Notice.WBP_Notice_C.Finished_77B22E4B4836BC8AB8B4A08F2691F416
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Notice_C::Finished_77B22E4B4836BC8AB8B4A08F2691F416()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Notice_C", "Finished_77B22E4B4836BC8AB8B4A08F2691F416");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Notice.WBP_Notice_C.Finished_6F0CFBFE4FFC647FC29A08AD10869738
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Notice_C::Finished_6F0CFBFE4FFC647FC29A08AD10869738()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Notice_C", "Finished_6F0CFBFE4FFC647FC29A08AD10869738");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Notice.WBP_Notice_C.Finished_6DE1EEED4A47BC160DDFEBA700165427
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Notice_C::Finished_6DE1EEED4A47BC160DDFEBA700165427()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Notice_C", "Finished_6DE1EEED4A47BC160DDFEBA700165427");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Notice.WBP_Notice_C.Finished_1C35836941B88D2824102B8E8EC65295
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Notice_C::Finished_1C35836941B88D2824102B8E8EC65295()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Notice_C", "Finished_1C35836941B88D2824102B8E8EC65295");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

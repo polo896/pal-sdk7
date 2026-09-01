@@ -17,199 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_Arena_RuleListContent_1.WBP_Arena_RuleListContent_1_C.AnmEvent_Focus
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_RuleListContent_1_C::AnmEvent_Focus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleListContent_1_C", "AnmEvent_Focus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_RuleListContent_1.WBP_Arena_RuleListContent_1_C.AnmEvent_Normal
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_RuleListContent_1_C::AnmEvent_Normal()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleListContent_1_C", "AnmEvent_Normal");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_RuleListContent_1.WBP_Arena_RuleListContent_1_C.BndEvt__WBP_Arena_RuleListContent_1_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Arena_RuleListContent_1_C::BndEvt__WBP_Arena_RuleListContent_1_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleListContent_1_C", "BndEvt__WBP_Arena_RuleListContent_1_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_Arena_RuleListContent_1_C_BndEvt__WBP_Arena_RuleListContent_1_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Arena_RuleListContent_1.WBP_Arena_RuleListContent_1_C.BndEvt__WBP_Arena_RuleListContent_1_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Arena_RuleListContent_1_C::BndEvt__WBP_Arena_RuleListContent_1_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleListContent_1_C", "BndEvt__WBP_Arena_RuleListContent_1_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_Arena_RuleListContent_1_C_BndEvt__WBP_Arena_RuleListContent_1_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Arena_RuleListContent_1.WBP_Arena_RuleListContent_1_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Arena_RuleListContent_1_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleListContent_1_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_RuleListContent_1.WBP_Arena_RuleListContent_1_C.CustomNavigation_ToContent
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-class UWidget* UWBP_Arena_RuleListContent_1_C::CustomNavigation_ToContent(EUINavigation Navigation_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleListContent_1_C", "CustomNavigation_ToContent");
-
-	Params::WBP_Arena_RuleListContent_1_C_CustomNavigation_ToContent Parms{};
-
-	Parms.Navigation_0 = Navigation_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_Arena_RuleListContent_1.WBP_Arena_RuleListContent_1_C.CustomNavigation_ToElementButton
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-class UWidget* UWBP_Arena_RuleListContent_1_C::CustomNavigation_ToElementButton(EUINavigation Navigation_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleListContent_1_C", "CustomNavigation_ToElementButton");
-
-	Params::WBP_Arena_RuleListContent_1_C_CustomNavigation_ToElementButton Parms{};
-
-	Parms.Navigation_0 = Navigation_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_Arena_RuleListContent_1.WBP_Arena_RuleListContent_1_C.ExecuteUbergraph_WBP_Arena_RuleListContent_1
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Arena_RuleListContent_1_C::ExecuteUbergraph_WBP_Arena_RuleListContent_1(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleListContent_1_C", "ExecuteUbergraph_WBP_Arena_RuleListContent_1");
-
-	Params::WBP_Arena_RuleListContent_1_C_ExecuteUbergraph_WBP_Arena_RuleListContent_1 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Arena_RuleListContent_1.WBP_Arena_RuleListContent_1_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Arena_RuleListContent_1_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleListContent_1_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_RuleListContent_1.WBP_Arena_RuleListContent_1_C.SetChangeable
+// Function WBP_Arena_RuleListContent_1.WBP_Arena_RuleListContent_1_C.Toggle Element Restrict
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsChangeable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalElementType                         ElementType                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_RuleListContent_1_C::SetChangeable(bool IsChangeable)
+void UWBP_Arena_RuleListContent_1_C::Toggle_Element_Restrict(EPalElementType ElementType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleListContent_1_C", "SetChangeable");
+		Func = Class->GetFunction("WBP_Arena_RuleListContent_1_C", "Toggle Element Restrict");
 
-	Params::WBP_Arena_RuleListContent_1_C_SetChangeable Parms{};
+	Params::WBP_Arena_RuleListContent_1_C_Toggle_Element_Restrict Parms{};
 
-	Parms.IsChangeable = IsChangeable;
+	Parms.ElementType = ElementType;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Arena_RuleListContent_1.WBP_Arena_RuleListContent_1_C.SetChangedFlag
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_RuleListContent_1_C::SetChangedFlag()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleListContent_1_C", "SetChangedFlag");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -237,23 +61,199 @@ void UWBP_Arena_RuleListContent_1_C::Setup(TArray<EPalElementType>& ElementRestr
 }
 
 
-// Function WBP_Arena_RuleListContent_1.WBP_Arena_RuleListContent_1_C.Toggle Element Restrict
+// Function WBP_Arena_RuleListContent_1.WBP_Arena_RuleListContent_1_C.SetChangedFlag
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalElementType                         ElementType                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_RuleListContent_1_C::Toggle_Element_Restrict(EPalElementType ElementType)
+void UWBP_Arena_RuleListContent_1_C::SetChangedFlag()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleListContent_1_C", "Toggle Element Restrict");
+		Func = Class->GetFunction("WBP_Arena_RuleListContent_1_C", "SetChangedFlag");
 
-	Params::WBP_Arena_RuleListContent_1_C_Toggle_Element_Restrict Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.ElementType = ElementType;
+
+// Function WBP_Arena_RuleListContent_1.WBP_Arena_RuleListContent_1_C.SetChangeable
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsChangeable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_RuleListContent_1_C::SetChangeable(bool IsChangeable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_RuleListContent_1_C", "SetChangeable");
+
+	Params::WBP_Arena_RuleListContent_1_C_SetChangeable Parms{};
+
+	Parms.IsChangeable = IsChangeable;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_RuleListContent_1.WBP_Arena_RuleListContent_1_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Arena_RuleListContent_1_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_RuleListContent_1_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_RuleListContent_1.WBP_Arena_RuleListContent_1_C.ExecuteUbergraph_WBP_Arena_RuleListContent_1
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_RuleListContent_1_C::ExecuteUbergraph_WBP_Arena_RuleListContent_1(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_RuleListContent_1_C", "ExecuteUbergraph_WBP_Arena_RuleListContent_1");
+
+	Params::WBP_Arena_RuleListContent_1_C_ExecuteUbergraph_WBP_Arena_RuleListContent_1 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_RuleListContent_1.WBP_Arena_RuleListContent_1_C.CustomNavigation_ToElementButton
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_Arena_RuleListContent_1_C::CustomNavigation_ToElementButton(EUINavigation Navigation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_RuleListContent_1_C", "CustomNavigation_ToElementButton");
+
+	Params::WBP_Arena_RuleListContent_1_C_CustomNavigation_ToElementButton Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_Arena_RuleListContent_1.WBP_Arena_RuleListContent_1_C.CustomNavigation_ToContent
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_Arena_RuleListContent_1_C::CustomNavigation_ToContent(EUINavigation Navigation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_RuleListContent_1_C", "CustomNavigation_ToContent");
+
+	Params::WBP_Arena_RuleListContent_1_C_CustomNavigation_ToContent Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_Arena_RuleListContent_1.WBP_Arena_RuleListContent_1_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Arena_RuleListContent_1_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_RuleListContent_1_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_RuleListContent_1.WBP_Arena_RuleListContent_1_C.BndEvt__WBP_Arena_RuleListContent_1_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_RuleListContent_1_C::BndEvt__WBP_Arena_RuleListContent_1_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_RuleListContent_1_C", "BndEvt__WBP_Arena_RuleListContent_1_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_Arena_RuleListContent_1_C_BndEvt__WBP_Arena_RuleListContent_1_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_RuleListContent_1.WBP_Arena_RuleListContent_1_C.BndEvt__WBP_Arena_RuleListContent_1_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_RuleListContent_1_C::BndEvt__WBP_Arena_RuleListContent_1_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_RuleListContent_1_C", "BndEvt__WBP_Arena_RuleListContent_1_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_Arena_RuleListContent_1_C_BndEvt__WBP_Arena_RuleListContent_1_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_RuleListContent_1.WBP_Arena_RuleListContent_1_C.AnmEvent_Normal
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Arena_RuleListContent_1_C::AnmEvent_Normal()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_RuleListContent_1_C", "AnmEvent_Normal");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_RuleListContent_1.WBP_Arena_RuleListContent_1_C.AnmEvent_Focus
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Arena_RuleListContent_1_C::AnmEvent_Focus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_RuleListContent_1_C", "AnmEvent_Focus");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

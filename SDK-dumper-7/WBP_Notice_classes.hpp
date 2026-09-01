@@ -40,18 +40,18 @@ public:
 	TMulticastInlineDelegate<void()>              OnClosed;                                          // 0x02F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void AnmEvent_Close_Negative();
-	void AnmEvent_Close_Positive();
-	void AnmEvent_Open_Negative();
-	void AnmEvent_Open_Positive();
 	void ExecuteUbergraph_WBP_Notice(int32 EntryPoint);
-	void Finished_1C35836941B88D2824102B8E8EC65295();
-	void Finished_6DE1EEED4A47BC160DDFEBA700165427();
-	void Finished_6F0CFBFE4FFC647FC29A08AD10869738();
-	void Finished_77B22E4B4836BC8AB8B4A08F2691F416();
-	void HideIcon();
-	void SetIconTexture(class UTexture2D* Texture);
+	void AnmEvent_Open_Positive();
+	void AnmEvent_Open_Negative();
+	void AnmEvent_Close_Positive();
+	void AnmEvent_Close_Negative();
 	void SetText(const class FText& Text);
+	void SetIconTexture(class UTexture2D* Texture);
+	void HideIcon();
+	void Finished_77B22E4B4836BC8AB8B4A08F2691F416();
+	void Finished_6F0CFBFE4FFC647FC29A08AD10869738();
+	void Finished_6DE1EEED4A47BC160DDFEBA700165427();
+	void Finished_1C35836941B88D2824102B8E8EC65295();
 
 public:
 	static class UClass* StaticClass()

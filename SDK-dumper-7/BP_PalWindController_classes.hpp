@@ -25,9 +25,9 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B60(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_BP_PalWindController(int32 EntryPoint);
-	void UpdateNiagaraParameterCollection(const struct FPalWindInfo& WindInfo);
 	void UpdateNPC(struct FPalWindInfo& WindInfo);
+	void UpdateNiagaraParameterCollection(const struct FPalWindInfo& WindInfo);
+	void ExecuteUbergraph_BP_PalWindController(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

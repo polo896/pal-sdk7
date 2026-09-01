@@ -15,7 +15,7 @@ class UWBP_PalPlayerInframeRender_C : public UPalUserWidget
     double CaptureInterval;                                                           // 0x0490 (size: 0x8)
     FTimerHandle CaptureSceneTimerHandle;                                             // 0x0498 (size: 0x8)
     class UMaterialInstanceDynamic* RenderTargetMaterial;                             // 0x04A0 (size: 0x8)
-    TMap<class TSoftClassPtr<UPalShooterAnimeAssetBase>, class UPalShooterAnimeAssetBase*> IdleAnimationCache; // 0x04A8 (size: 0x50)
+    TMap<TSoftClassPtr<UPalShooterAnimeAssetBase>, UPalShooterAnimeAssetBase*> IdleAnimationCache; // 0x04A8 (size: 0x50)
 
     void PlayIdleAnimation by Animation Asset(class UPalShooterAnimeAssetBase* AnimationAsset);
     void ClearAnimationCache();

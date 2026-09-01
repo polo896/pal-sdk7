@@ -17,61 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_MainMenu_Technology_SortCheckBox.WBP_MainMenu_Technology_SortCheckBox_C.BndEvt__WBP_MainMenu_Technology_SortCheckBox_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MainMenu_Technology_SortCheckBox_C::BndEvt__WBP_MainMenu_Technology_SortCheckBox_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_SortCheckBox_C", "BndEvt__WBP_MainMenu_Technology_SortCheckBox_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_MainMenu_Technology_SortCheckBox_C_BndEvt__WBP_MainMenu_Technology_SortCheckBox_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MainMenu_Technology_SortCheckBox.WBP_MainMenu_Technology_SortCheckBox_C.ExecuteUbergraph_WBP_MainMenu_Technology_SortCheckBox
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MainMenu_Technology_SortCheckBox_C::ExecuteUbergraph_WBP_MainMenu_Technology_SortCheckBox(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_SortCheckBox_C", "ExecuteUbergraph_WBP_MainMenu_Technology_SortCheckBox");
-
-	Params::WBP_MainMenu_Technology_SortCheckBox_C_ExecuteUbergraph_WBP_MainMenu_Technology_SortCheckBox Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MainMenu_Technology_SortCheckBox.WBP_MainMenu_Technology_SortCheckBox_C.SetCheckState
+// Function WBP_MainMenu_Technology_SortCheckBox.WBP_MainMenu_Technology_SortCheckBox_C.SetupAsItem
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Check                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalItemTypeA                           ItemType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    CheckState                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_Technology_SortCheckBox_C::SetCheckState(bool Check)
+void UWBP_MainMenu_Technology_SortCheckBox_C::SetupAsItem(EPalItemTypeA ItemType, bool CheckState)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_SortCheckBox_C", "SetCheckState");
+		Func = Class->GetFunction("WBP_MainMenu_Technology_SortCheckBox_C", "SetupAsItem");
 
-	Params::WBP_MainMenu_Technology_SortCheckBox_C_SetCheckState Parms{};
+	Params::WBP_MainMenu_Technology_SortCheckBox_C_SetupAsItem Parms{};
 
-	Parms.Check = Check;
+	Parms.ItemType = ItemType;
+	Parms.CheckState = CheckState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -99,23 +61,61 @@ void UWBP_MainMenu_Technology_SortCheckBox_C::SetupAsBuild(EPalBuildObjectTypeA 
 }
 
 
-// Function WBP_MainMenu_Technology_SortCheckBox.WBP_MainMenu_Technology_SortCheckBox_C.SetupAsItem
+// Function WBP_MainMenu_Technology_SortCheckBox.WBP_MainMenu_Technology_SortCheckBox_C.SetCheckState
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EPalItemTypeA                           ItemType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    CheckState                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    Check                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_Technology_SortCheckBox_C::SetupAsItem(EPalItemTypeA ItemType, bool CheckState)
+void UWBP_MainMenu_Technology_SortCheckBox_C::SetCheckState(bool Check)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_SortCheckBox_C", "SetupAsItem");
+		Func = Class->GetFunction("WBP_MainMenu_Technology_SortCheckBox_C", "SetCheckState");
 
-	Params::WBP_MainMenu_Technology_SortCheckBox_C_SetupAsItem Parms{};
+	Params::WBP_MainMenu_Technology_SortCheckBox_C_SetCheckState Parms{};
 
-	Parms.ItemType = ItemType;
-	Parms.CheckState = CheckState;
+	Parms.Check = Check;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu_Technology_SortCheckBox.WBP_MainMenu_Technology_SortCheckBox_C.ExecuteUbergraph_WBP_MainMenu_Technology_SortCheckBox
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_Technology_SortCheckBox_C::ExecuteUbergraph_WBP_MainMenu_Technology_SortCheckBox(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Technology_SortCheckBox_C", "ExecuteUbergraph_WBP_MainMenu_Technology_SortCheckBox");
+
+	Params::WBP_MainMenu_Technology_SortCheckBox_C_ExecuteUbergraph_WBP_MainMenu_Technology_SortCheckBox Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu_Technology_SortCheckBox.WBP_MainMenu_Technology_SortCheckBox_C.BndEvt__WBP_MainMenu_Technology_SortCheckBox_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_Technology_SortCheckBox_C::BndEvt__WBP_MainMenu_Technology_SortCheckBox_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Technology_SortCheckBox_C", "BndEvt__WBP_MainMenu_Technology_SortCheckBox_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_MainMenu_Technology_SortCheckBox_C_BndEvt__WBP_MainMenu_Technology_SortCheckBox_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

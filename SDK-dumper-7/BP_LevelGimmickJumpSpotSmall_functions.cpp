@@ -17,23 +17,31 @@
 namespace SDK
 {
 
-// Function BP_LevelGimmickJumpSpotSmall.BP_LevelGimmickJumpSpotSmall_C.EventOnGetAkOwnerComponent
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USceneComponent*                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function BP_LevelGimmickJumpSpotSmall.BP_LevelGimmickJumpSpotSmall_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-class USceneComponent* ABP_LevelGimmickJumpSpotSmall_C::EventOnGetAkOwnerComponent()
+void ABP_LevelGimmickJumpSpotSmall_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelGimmickJumpSpotSmall_C", "EventOnGetAkOwnerComponent");
+		Func = Class->GetFunction("BP_LevelGimmickJumpSpotSmall_C", "ReceiveBeginPlay");
 
-	Params::BP_LevelGimmickJumpSpotSmall_C_EventOnGetAkOwnerComponent Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	UObject::ProcessEvent(Func, &Parms);
 
-	return Parms.ReturnValue;
+// Function BP_LevelGimmickJumpSpotSmall.BP_LevelGimmickJumpSpotSmall_C.OnLaunchCharacter
+// (Event, Protected, BlueprintEvent)
+
+void ABP_LevelGimmickJumpSpotSmall_C::OnLaunchCharacter()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LevelGimmickJumpSpotSmall_C", "OnLaunchCharacter");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -57,31 +65,23 @@ void ABP_LevelGimmickJumpSpotSmall_C::ExecuteUbergraph_BP_LevelGimmickJumpSpotSm
 }
 
 
-// Function BP_LevelGimmickJumpSpotSmall.BP_LevelGimmickJumpSpotSmall_C.OnLaunchCharacter
-// (Event, Protected, BlueprintEvent)
+// Function BP_LevelGimmickJumpSpotSmall.BP_LevelGimmickJumpSpotSmall_C.EventOnGetAkOwnerComponent
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USceneComponent*                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LevelGimmickJumpSpotSmall_C::OnLaunchCharacter()
+class USceneComponent* ABP_LevelGimmickJumpSpotSmall_C::EventOnGetAkOwnerComponent()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelGimmickJumpSpotSmall_C", "OnLaunchCharacter");
+		Func = Class->GetFunction("BP_LevelGimmickJumpSpotSmall_C", "EventOnGetAkOwnerComponent");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::BP_LevelGimmickJumpSpotSmall_C_EventOnGetAkOwnerComponent Parms{};
 
+	UObject::ProcessEvent(Func, &Parms);
 
-// Function BP_LevelGimmickJumpSpotSmall.BP_LevelGimmickJumpSpotSmall_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_LevelGimmickJumpSpotSmall_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelGimmickJumpSpotSmall_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
+	return Parms.ReturnValue;
 }
 
 }

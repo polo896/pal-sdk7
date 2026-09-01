@@ -17,111 +17,15 @@
 namespace SDK
 {
 
-// Function WBP_WorkerRadialMenu_Overlay.WBP_WorkerRadialMenu_Overlay_C.CancelEvent
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_WorkerRadialMenu_Overlay_C::CancelEvent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorkerRadialMenu_Overlay_C", "CancelEvent");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WorkerRadialMenu_Overlay.WBP_WorkerRadialMenu_Overlay_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_WorkerRadialMenu_Overlay_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorkerRadialMenu_Overlay_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WorkerRadialMenu_Overlay.WBP_WorkerRadialMenu_Overlay_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_WorkerRadialMenu_Overlay_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorkerRadialMenu_Overlay_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WorkerRadialMenu_Overlay.WBP_WorkerRadialMenu_Overlay_C.ExecuteUbergraph_WBP_WorkerRadialMenu_Overlay
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WorkerRadialMenu_Overlay_C::ExecuteUbergraph_WBP_WorkerRadialMenu_Overlay(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorkerRadialMenu_Overlay_C", "ExecuteUbergraph_WBP_WorkerRadialMenu_Overlay");
-
-	Params::WBP_WorkerRadialMenu_Overlay_C_ExecuteUbergraph_WBP_WorkerRadialMenu_Overlay Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WorkerRadialMenu_Overlay.WBP_WorkerRadialMenu_Overlay_C.OnAnyUIPushed
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGuid&                     pushedWidgetID                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_WorkerRadialMenu_Overlay_C::OnAnyUIPushed(const struct FGuid& pushedWidgetID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorkerRadialMenu_Overlay_C", "OnAnyUIPushed");
-
-	Params::WBP_WorkerRadialMenu_Overlay_C_OnAnyUIPushed Parms{};
-
-	Parms.pushedWidgetID = std::move(pushedWidgetID);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WorkerRadialMenu_Overlay.WBP_WorkerRadialMenu_Overlay_C.OnClosed
+// Function WBP_WorkerRadialMenu_Overlay.WBP_WorkerRadialMenu_Overlay_C.OnSetup
 // (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_WorkerRadialMenu_Overlay_C::OnClosed()
+void UWBP_WorkerRadialMenu_Overlay_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorkerRadialMenu_Overlay_C", "OnClosed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WorkerRadialMenu_Overlay.WBP_WorkerRadialMenu_Overlay_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_WorkerRadialMenu_Overlay_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorkerRadialMenu_Overlay_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_WorkerRadialMenu_Overlay_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -147,15 +51,111 @@ void UWBP_WorkerRadialMenu_Overlay_C::OnSelectedEvent(EPalWorkerRadialMenuResult
 }
 
 
-// Function WBP_WorkerRadialMenu_Overlay.WBP_WorkerRadialMenu_Overlay_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function WBP_WorkerRadialMenu_Overlay.WBP_WorkerRadialMenu_Overlay_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_WorkerRadialMenu_Overlay_C::OnSetup()
+void UWBP_WorkerRadialMenu_Overlay_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorkerRadialMenu_Overlay_C", "OnSetup");
+		Func = Class->GetFunction("WBP_WorkerRadialMenu_Overlay_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WorkerRadialMenu_Overlay.WBP_WorkerRadialMenu_Overlay_C.OnClosed
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_WorkerRadialMenu_Overlay_C::OnClosed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorkerRadialMenu_Overlay_C", "OnClosed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WorkerRadialMenu_Overlay.WBP_WorkerRadialMenu_Overlay_C.OnAnyUIPushed
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGuid&                     pushedWidgetID                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WorkerRadialMenu_Overlay_C::OnAnyUIPushed(const struct FGuid& pushedWidgetID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorkerRadialMenu_Overlay_C", "OnAnyUIPushed");
+
+	Params::WBP_WorkerRadialMenu_Overlay_C_OnAnyUIPushed Parms{};
+
+	Parms.pushedWidgetID = std::move(pushedWidgetID);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WorkerRadialMenu_Overlay.WBP_WorkerRadialMenu_Overlay_C.ExecuteUbergraph_WBP_WorkerRadialMenu_Overlay
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WorkerRadialMenu_Overlay_C::ExecuteUbergraph_WBP_WorkerRadialMenu_Overlay(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorkerRadialMenu_Overlay_C", "ExecuteUbergraph_WBP_WorkerRadialMenu_Overlay");
+
+	Params::WBP_WorkerRadialMenu_Overlay_C_ExecuteUbergraph_WBP_WorkerRadialMenu_Overlay Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WorkerRadialMenu_Overlay.WBP_WorkerRadialMenu_Overlay_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_WorkerRadialMenu_Overlay_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorkerRadialMenu_Overlay_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WorkerRadialMenu_Overlay.WBP_WorkerRadialMenu_Overlay_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_WorkerRadialMenu_Overlay_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorkerRadialMenu_Overlay_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WorkerRadialMenu_Overlay.WBP_WorkerRadialMenu_Overlay_C.CancelEvent
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_WorkerRadialMenu_Overlay_C::CancelEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorkerRadialMenu_Overlay_C", "CancelEvent");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

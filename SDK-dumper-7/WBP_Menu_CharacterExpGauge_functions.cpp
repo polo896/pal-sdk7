@@ -17,51 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_Menu_CharacterExpGauge.WBP_Menu_CharacterExpGauge_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Menu_CharacterExpGauge_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_CharacterExpGauge_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Menu_CharacterExpGauge.WBP_Menu_CharacterExpGauge_C.ExecuteUbergraph_WBP_Menu_CharacterExpGauge
-// (Final, UbergraphFunction)
+// Function WBP_Menu_CharacterExpGauge.WBP_Menu_CharacterExpGauge_C.UpdateLevel
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewLevel                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Menu_CharacterExpGauge_C::ExecuteUbergraph_WBP_Menu_CharacterExpGauge(int32 EntryPoint)
+void UWBP_Menu_CharacterExpGauge_C::UpdateLevel(int32 NewLevel)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_CharacterExpGauge_C", "ExecuteUbergraph_WBP_Menu_CharacterExpGauge");
+		Func = Class->GetFunction("WBP_Menu_CharacterExpGauge_C", "UpdateLevel");
 
-	Params::WBP_Menu_CharacterExpGauge_C_ExecuteUbergraph_WBP_Menu_CharacterExpGauge Parms{};
+	Params::WBP_Menu_CharacterExpGauge_C_UpdateLevel Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.NewLevel = NewLevel;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Menu_CharacterExpGauge.WBP_Menu_CharacterExpGauge_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Menu_CharacterExpGauge_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_CharacterExpGauge_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -89,23 +61,51 @@ void UWBP_Menu_CharacterExpGauge_C::UpdateExp(int64 addExp, int64 oldExp, double
 }
 
 
-// Function WBP_Menu_CharacterExpGauge.WBP_Menu_CharacterExpGauge_C.UpdateLevel
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   NewLevel                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Menu_CharacterExpGauge.WBP_Menu_CharacterExpGauge_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Menu_CharacterExpGauge_C::UpdateLevel(int32 NewLevel)
+void UWBP_Menu_CharacterExpGauge_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_CharacterExpGauge_C", "UpdateLevel");
+		Func = Class->GetFunction("WBP_Menu_CharacterExpGauge_C", "OnInitialized");
 
-	Params::WBP_Menu_CharacterExpGauge_C_UpdateLevel Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.NewLevel = NewLevel;
+
+// Function WBP_Menu_CharacterExpGauge.WBP_Menu_CharacterExpGauge_C.ExecuteUbergraph_WBP_Menu_CharacterExpGauge
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Menu_CharacterExpGauge_C::ExecuteUbergraph_WBP_Menu_CharacterExpGauge(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Menu_CharacterExpGauge_C", "ExecuteUbergraph_WBP_Menu_CharacterExpGauge");
+
+	Params::WBP_Menu_CharacterExpGauge_C_ExecuteUbergraph_WBP_Menu_CharacterExpGauge Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Menu_CharacterExpGauge.WBP_Menu_CharacterExpGauge_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Menu_CharacterExpGauge_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Menu_CharacterExpGauge_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

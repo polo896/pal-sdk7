@@ -10,7 +10,7 @@ class ABP_UniqueSkillEffect_LegendDeer_WarpPillarBurst_PillarManager_C : public 
     float PillarInterval;                                                             // 0x0450 (size: 0x4)
     double Range_Raid;                                                                // 0x0458 (size: 0x8)
     double Range_Otomo;                                                               // 0x0460 (size: 0x8)
-    TArray<class ABP_UniqueSkillEffect_LegendDeer_WarpPillarBurst_ReadyPillar_C*> Pillars; // 0x0468 (size: 0x10)
+    TArray<ABP_UniqueSkillEffect_LegendDeer_WarpPillarBurst_ReadyPillar_C*> Pillars;  // 0x0468 (size: 0x10)
     TArray<int32> PillarDistribute_Raid;                                              // 0x0478 (size: 0x10)
     int32 DistCount;                                                                  // 0x0488 (size: 0x4)
     TArray<int32> PillarDistribute_Otomo;                                             // 0x0490 (size: 0x10)

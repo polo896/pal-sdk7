@@ -24,7 +24,7 @@ class UWBP_Arena_RuleSetting_C : public UPalUserWidgetOverlayUI
     class UWBP_Menu_btn_C* WBP_Menu_btn;                                              // 0x0508 (size: 0x8)
     class UPalHUDDispatchParameter_ArenaRule* ArenaRuleParamter;                      // 0x0510 (size: 0x8)
     FPalArenaRule CurrentRule;                                                        // 0x0518 (size: 0x38)
-    TArray<class UWBP_Arena_PalIcon_C*> OtomoPalIcons;                                // 0x0550 (size: 0x10)
+    TArray<UWBP_Arena_PalIcon_C*> OtomoPalIcons;                                      // 0x0550 (size: 0x10)
     FPalUIActionBindData SaveRuleAction;                                              // 0x0560 (size: 0x4)
     FPalUIActionBindData DefaultRuleAction;                                           // 0x0564 (size: 0x4)
 

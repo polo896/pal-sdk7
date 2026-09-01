@@ -1,0 +1,26 @@
+#ifndef UE4SS_SDK_BP_BuildObject_Shelf03_Iron_HPP
+#define UE4SS_SDK_BP_BuildObject_Shelf03_Iron_HPP
+
+class ABP_BuildObject_Shelf03_Iron_C : public APalBuildObject
+{
+    class UBP_BuildObjectSimulateArrowComponent_C* BP_BuildObjectSimulateArrowComponent; // 0x0750 (size: 0x8)
+    class UPalMapObjectItemChestParameterComponent* PalMapObjectItemChestParameter;   // 0x0758 (size: 0x8)
+    class UStaticMeshComponent* SM_Metal_Wardrobe;                                    // 0x0760 (size: 0x8)
+    class UBillboardComponent* Billboard2;                                            // 0x0768 (size: 0x8)
+    class UArrowComponent* Arrow2;                                                    // 0x0770 (size: 0x8)
+    class UDecalComponent* Decal2;                                                    // 0x0778 (size: 0x8)
+    class UBillboardComponent* Billboard1;                                            // 0x0780 (size: 0x8)
+    class UArrowComponent* Arrow1;                                                    // 0x0788 (size: 0x8)
+    class UDecalComponent* Decal1;                                                    // 0x0790 (size: 0x8)
+    class UBillboardComponent* Billboard;                                             // 0x0798 (size: 0x8)
+    class UArrowComponent* Arrow;                                                     // 0x07A0 (size: 0x8)
+    class UDecalComponent* Decal;                                                     // 0x07A8 (size: 0x8)
+    class USceneComponent* Meshs;                                                     // 0x07B0 (size: 0x8)
+    class UBP_InteractableBox_C* BP_InteractableBox;                                  // 0x07B8 (size: 0x8)
+    class UBoxComponent* BuildWorkableBounds;                                         // 0x07C0 (size: 0x8)
+    class UBoxComponent* CheckOverlapCollision;                                       // 0x07C8 (size: 0x8)
+    class USceneComponent* DefaultSceneRoot;                                          // 0x07D0 (size: 0x8)
+
+}; // Size: 0x7D8
+
+#endif

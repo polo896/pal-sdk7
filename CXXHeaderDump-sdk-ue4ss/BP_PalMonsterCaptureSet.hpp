@@ -26,14 +26,14 @@ class ABP_PalMonsterCaptureSet_C : public APalUIInframeRenderer
     FName LoadingPalID;                                                               // 0x0350 (size: 0x8)
     bool IsLoading;                                                                   // 0x0358 (size: 0x1)
     double RotateInterpolationRate;                                                   // 0x0360 (size: 0x8)
-    TMap<class UMaterialInterface*, class UMaterialInterface*> OverrideMaterialMap;   // 0x0368 (size: 0x50)
+    TMap<UMaterialInterface*, UMaterialInterface*> OverrideMaterialMap;               // 0x0368 (size: 0x50)
     FName NowDisplayingPalID;                                                         // 0x03B8 (size: 0x8)
-    TMap<class FName, class USkeletalMesh*> WeaponSkeletonMeshMap;                    // 0x03C0 (size: 0x50)
+    TMap<FName, USkeletalMesh*> WeaponSkeletonMeshMap;                                // 0x03C0 (size: 0x50)
     TSubclassOf<class APalCharacter> LoadedCharacterClass;                            // 0x0410 (size: 0x8)
     FName LoadingOriginalPalID;                                                       // 0x0418 (size: 0x8)
-    TMap<class FName, class TSoftClassPtr<AActor>> UniqueCaptureActorMap;             // 0x0420 (size: 0x50)
+    TMap<FName, TSoftClassPtr<AActor>> UniqueCaptureActorMap;                         // 0x0420 (size: 0x50)
     class AActor* UniqueCaptureActor;                                                 // 0x0470 (size: 0x8)
-    TMap<class TSoftClassPtr<AActor>, class TSoftClassPtr<AActor>> UniqueCaptureActorMap_FromSkin; // 0x0478 (size: 0x50)
+    TMap<TSoftClassPtr<AActor>, TSoftClassPtr<AActor>> UniqueCaptureActorMap_FromSkin; // 0x0478 (size: 0x50)
 
     void PlayAnimation(const TSubclassOf<class AActor>& TargetActorClass);
     void Request Capture from PalSkin(FName PalRowName, TSoftClassPtr<APalCharacter> SkinClass);

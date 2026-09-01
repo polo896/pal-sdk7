@@ -18,104 +18,14 @@
 namespace SDK::Params
 {
 
-// Function WBP_PalTarget.WBP_PalTarget_C.CalcScreenPosition
-// 0x00A0 (0x00A0 - 0x0000)
-struct WBP_PalTarget_C_CalcScreenPosition final
-{
-public:
-	struct FVector                                CallFunc_GetTargetWorldLocation_outVector;         // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_GetCameraRotation_ReturnValue;            // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0050(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x0068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x0080(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Dot_VectorVector_ReturnValue;             // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalTarget_C_CalcScreenPosition;
-
-// Function WBP_PalTarget.WBP_PalTarget_C.ExecuteUbergraph_WBP_PalTarget
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PalTarget_C_ExecuteUbergraph_WBP_PalTarget final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalTarget_C_ExecuteUbergraph_WBP_PalTarget;
-
-// Function WBP_PalTarget.WBP_PalTarget_C.GetLoupeWidgetSize
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PalTarget_C_GetLoupeWidgetSize final
-{
-public:
-	struct FVector2D                              widgetSize_0;                                      // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalTarget_C_GetLoupeWidgetSize;
-
-// Function WBP_PalTarget.WBP_PalTarget_C.GetTargetWidgetSize
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_PalTarget_C_GetTargetWidgetSize final
-{
-public:
-	struct FVector2D                              outVector;                                         // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_GetLoupeWidgetSize_widgetSize;            // 0x0010(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalTarget_C_GetTargetWidgetSize;
-
-// Function WBP_PalTarget.WBP_PalTarget_C.GetTargetWorldLocation
-// 0x0058 (0x0058 - 0x0000)
-struct WBP_PalTarget_C_GetTargetWorldLocation final
-{
-public:
-	struct FVector                                outVector;                                         // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          K2Node_DynamicCast_AsPal_Character;                // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalSkeletalMeshComponent*              CallFunc_GetMainMesh_ReturnValue;                  // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalTarget_C_GetTargetWorldLocation;
-
-// Function WBP_PalTarget.WBP_PalTarget_C.GetTranslationTarget
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalTarget_C_GetTranslationTarget final
-{
-public:
-	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalTarget_C_GetTranslationTarget;
-
-// Function WBP_PalTarget.WBP_PalTarget_C.IsEnableLoupe
+// Function WBP_PalTarget.WBP_PalTarget_C.ValidCheck
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_PalTarget_C_IsEnableLoupe final
+struct WBP_PalTarget_C_ValidCheck final
 {
 public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalTarget_C_IsEnableLoupe;
-
-// Function WBP_PalTarget.WBP_PalTarget_C.OnDeadTarget
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_PalTarget_C_OnDeadTarget final
-{
-public:
-	struct FPalDeadInfo                           DeadInfo;                                          // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_PalTarget_C_OnDeadTarget;
-
-// Function WBP_PalTarget.WBP_PalTarget_C.SetFinalWidgetOpacity
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalTarget_C_SetFinalWidgetOpacity final
-{
-public:
-	double                                        calcedOpacity;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalTarget_C_SetFinalWidgetOpacity;
+DUMPER7_ASSERTS_WBP_PalTarget_C_ValidCheck;
 
 // Function WBP_PalTarget.WBP_PalTarget_C.Setup
 // 0x00D8 (0x00D8 - 0x0000)
@@ -143,14 +53,104 @@ public:
 };
 DUMPER7_ASSERTS_WBP_PalTarget_C_Setup;
 
-// Function WBP_PalTarget.WBP_PalTarget_C.ValidCheck
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_PalTarget_C_ValidCheck final
+// Function WBP_PalTarget.WBP_PalTarget_C.SetFinalWidgetOpacity
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalTarget_C_SetFinalWidgetOpacity final
 {
 public:
-	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        calcedOpacity;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalTarget_C_ValidCheck;
+DUMPER7_ASSERTS_WBP_PalTarget_C_SetFinalWidgetOpacity;
+
+// Function WBP_PalTarget.WBP_PalTarget_C.OnDeadTarget
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_PalTarget_C_OnDeadTarget final
+{
+public:
+	struct FPalDeadInfo                           DeadInfo;                                          // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_PalTarget_C_OnDeadTarget;
+
+// Function WBP_PalTarget.WBP_PalTarget_C.IsEnableLoupe
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_PalTarget_C_IsEnableLoupe final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalTarget_C_IsEnableLoupe;
+
+// Function WBP_PalTarget.WBP_PalTarget_C.GetTranslationTarget
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalTarget_C_GetTranslationTarget final
+{
+public:
+	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalTarget_C_GetTranslationTarget;
+
+// Function WBP_PalTarget.WBP_PalTarget_C.GetTargetWorldLocation
+// 0x0058 (0x0058 - 0x0000)
+struct WBP_PalTarget_C_GetTargetWorldLocation final
+{
+public:
+	struct FVector                                outVector;                                         // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          K2Node_DynamicCast_AsPal_Character;                // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalSkeletalMeshComponent*              CallFunc_GetMainMesh_ReturnValue;                  // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalTarget_C_GetTargetWorldLocation;
+
+// Function WBP_PalTarget.WBP_PalTarget_C.GetTargetWidgetSize
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_PalTarget_C_GetTargetWidgetSize final
+{
+public:
+	struct FVector2D                              outVector;                                         // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_GetLoupeWidgetSize_widgetSize;            // 0x0010(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalTarget_C_GetTargetWidgetSize;
+
+// Function WBP_PalTarget.WBP_PalTarget_C.GetLoupeWidgetSize
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PalTarget_C_GetLoupeWidgetSize final
+{
+public:
+	struct FVector2D                              widgetSize_0;                                      // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalTarget_C_GetLoupeWidgetSize;
+
+// Function WBP_PalTarget.WBP_PalTarget_C.ExecuteUbergraph_WBP_PalTarget
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PalTarget_C_ExecuteUbergraph_WBP_PalTarget final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalTarget_C_ExecuteUbergraph_WBP_PalTarget;
+
+// Function WBP_PalTarget.WBP_PalTarget_C.CalcScreenPosition
+// 0x00A0 (0x00A0 - 0x0000)
+struct WBP_PalTarget_C_CalcScreenPosition final
+{
+public:
+	struct FVector                                CallFunc_GetTargetWorldLocation_outVector;         // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_GetCameraRotation_ReturnValue;            // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0050(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x0068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x0080(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Dot_VectorVector_ReturnValue;             // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalTarget_C_CalcScreenPosition;
 
 }
 

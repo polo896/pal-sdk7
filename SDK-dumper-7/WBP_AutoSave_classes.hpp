@@ -50,6 +50,9 @@ public:
 	double                                        FailedSaveNoticeDIsplayTime;                       // 0x0380(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void Construct();
+	void AnmEvent_Stop();
+	void AnmEvent_Loop();
 	void StartSaving(class FName SavingKey);
 	void OnStartWorldSaving();
 	void OnStartLocalSaving();
@@ -64,9 +67,6 @@ public:
 	void DisplayFailedSaveNotice();
 	void Display();
 	void Destruct();
-	void Construct();
-	void AnmEvent_Stop();
-	void AnmEvent_Loop();
 
 public:
 	static class UClass* StaticClass()

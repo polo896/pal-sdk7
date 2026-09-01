@@ -7,7 +7,7 @@ class UBP_PalRideMarkerSit_C : public UPalRideMarkerComponent
     double MaterialTimer;                                                             // 0x0668 (size: 0x8)
     double MaterialTime;                                                              // 0x0670 (size: 0x8)
     class UCurveFloat* MaterialCurve;                                                 // 0x0678 (size: 0x8)
-    TArray<class UMaterialInstanceDynamic*> DynamicMaterials;                         // 0x0680 (size: 0x10)
+    TArray<UMaterialInstanceDynamic*> DynamicMaterials;                               // 0x0680 (size: 0x10)
     bool isMaterialComplete;                                                          // 0x0690 (size: 0x1)
 
     void ResetMaterial();

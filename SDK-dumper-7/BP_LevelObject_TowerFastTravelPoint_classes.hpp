@@ -39,14 +39,14 @@ public:
 	TArray<int32>                                 EmissionMaterialIndexArray;                        // 0x03E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void CheckUnuseFastTravel();
-	void ExecuteUbergraph_BP_LevelObject_TowerFastTravelPoint(int32 EntryPoint);
-	class UAkAudioEvent* GetUnlockAkAudioEvent();
-	void OnChangeWorldSettings(const struct FPalOptionWorldSettings& PrevSettings, const struct FPalOptionWorldSettings& NewSettings);
-	class USceneComponent* OnGetAkComponent();
-	void OnUpdateUnlockState(class APalLevelObjectUnlockableFastTravelPoint* Object);
-	void OnUpdateUnlockState_Internal(bool IsUnlocked_0, bool IsSpawnUnlockefFlashEffect);
 	void ReceiveBeginPlay();
+	void OnUpdateUnlockState_Internal(bool IsUnlocked_0, bool IsSpawnUnlockefFlashEffect);
+	void OnUpdateUnlockState(class APalLevelObjectUnlockableFastTravelPoint* Object);
+	class USceneComponent* OnGetAkComponent();
+	void OnChangeWorldSettings(const struct FPalOptionWorldSettings& PrevSettings, const struct FPalOptionWorldSettings& NewSettings);
+	class UAkAudioEvent* GetUnlockAkAudioEvent();
+	void ExecuteUbergraph_BP_LevelObject_TowerFastTravelPoint(int32 EntryPoint);
+	void CheckUnuseFastTravel();
 
 public:
 	static class UClass* StaticClass()

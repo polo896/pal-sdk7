@@ -16,7 +16,7 @@ class UWBP_OptionSettingsOverLayWindow_C : public UPalUserWidgetOverlayUI
     FTimerHandle ResetTextTimer;                                                      // 0x04F8 (size: 0x8)
     class UBP_HUDDispatchParameter_KeyConfig_C* KeyConfigParam;                       // 0x0500 (size: 0x8)
     TArray<FName> FilterActionKeys;                                                   // 0x0508 (size: 0x10)
-    TMap<class FPalKeyAction, class FName> ReverseAxisMap;                            // 0x0518 (size: 0x50)
+    TMap<FPalKeyAction, FName> ReverseAxisMap;                                        // 0x0518 (size: 0x50)
     FName BackActionName;                                                             // 0x0568 (size: 0x8)
 
     FEventReply OnMouseButtonDown(FGeometry MyGeometry, const FPointerEvent& MouseEvent);

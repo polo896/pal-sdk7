@@ -34,11 +34,11 @@ public:
 	double                                        SimpleDistanceSquared;                             // 0x0498(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_InvadeDeclarationWorldHUD_PalStorage(int32 EntryPoint);
-	void OnInvadeDeclaration(const struct FDateTime& StartRealTime);
-	void OnSetup();
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void カスタムイベント();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void OnSetup();
+	void OnInvadeDeclaration(const struct FDateTime& StartRealTime);
+	void ExecuteUbergraph_WBP_InvadeDeclarationWorldHUD_PalStorage(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

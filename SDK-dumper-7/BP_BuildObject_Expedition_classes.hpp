@@ -40,9 +40,9 @@ public:
 	class UBP_VisualSkeletalMeshComponent_C*      CharacterVisual;                                   // 0x0898(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_BuildObject_Expedition(int32 EntryPoint);
-	void OnAvailable_BlueprintImpl();
 	void OnCreateAndInitTransformNewVisualEvent(class UPalCharacterVisualSkeletalMeshComponent* NewVisualComponent);
+	void OnAvailable_BlueprintImpl();
+	void ExecuteUbergraph_BP_BuildObject_Expedition(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

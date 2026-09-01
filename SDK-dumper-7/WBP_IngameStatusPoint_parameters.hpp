@@ -16,16 +16,23 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameStatusPoint.WBP_IngameStatusPoint_C.ExecuteUbergraph_WBP_IngameStatusPoint
-// 0x000C (0x000C - 0x0000)
-struct WBP_IngameStatusPoint_C_ExecuteUbergraph_WBP_IngameStatusPoint final
+// Function WBP_IngameStatusPoint.WBP_IngameStatusPoint_C.UpdateUnusedStatusPoint
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_IngameStatusPoint_C_UpdateUnusedStatusPoint final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_UnusedPoint;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_TechnologyPoint;                // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         UnusedPoint;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameStatusPoint_C_ExecuteUbergraph_WBP_IngameStatusPoint;
+DUMPER7_ASSERTS_WBP_IngameStatusPoint_C_UpdateUnusedStatusPoint;
+
+// Function WBP_IngameStatusPoint.WBP_IngameStatusPoint_C.UpdatedTechnologyPoint
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_IngameStatusPoint_C_UpdatedTechnologyPoint final
+{
+public:
+	int32                                         TechnologyPoint;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameStatusPoint_C_UpdatedTechnologyPoint;
 
 // Function WBP_IngameStatusPoint.WBP_IngameStatusPoint_C.SetupStatusPointAttention
 // 0x0040 (0x0040 - 0x0000)
@@ -56,23 +63,16 @@ public:
 };
 DUMPER7_ASSERTS_WBP_IngameStatusPoint_C_SetupStatusPointAttention;
 
-// Function WBP_IngameStatusPoint.WBP_IngameStatusPoint_C.UpdatedTechnologyPoint
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_IngameStatusPoint_C_UpdatedTechnologyPoint final
+// Function WBP_IngameStatusPoint.WBP_IngameStatusPoint_C.ExecuteUbergraph_WBP_IngameStatusPoint
+// 0x000C (0x000C - 0x0000)
+struct WBP_IngameStatusPoint_C_ExecuteUbergraph_WBP_IngameStatusPoint final
 {
 public:
-	int32                                         TechnologyPoint;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_UnusedPoint;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_TechnologyPoint;                // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameStatusPoint_C_UpdatedTechnologyPoint;
-
-// Function WBP_IngameStatusPoint.WBP_IngameStatusPoint_C.UpdateUnusedStatusPoint
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_IngameStatusPoint_C_UpdateUnusedStatusPoint final
-{
-public:
-	int32                                         UnusedPoint;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameStatusPoint_C_UpdateUnusedStatusPoint;
+DUMPER7_ASSERTS_WBP_IngameStatusPoint_C_ExecuteUbergraph_WBP_IngameStatusPoint;
 
 }
 

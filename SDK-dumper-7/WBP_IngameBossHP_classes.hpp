@@ -57,18 +57,18 @@ public:
 	EPalStatusID                                  LastDisplayedStatusID;                             // 0x0352(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_IngameBossHP(int32 EntryPoint);
-	void OnInitialized();
-	void Set_Enable_Talent_Detail(bool IsEnable, class UPalIndividualCharacterParameter* Parameter);
-	void Set_Status_Effect(EPalStatusID statusID);
-	void SetBossGaugeDisplayMode(ENum_BossGaugeDisplayMode IsShortMode);
-	void SetBossName(const class FText& InText);
-	void SetBossPrefix(const class FText& Text);
-	void SetElement(EPalElementType type1, EPalElementType type2);
-	void SetHP(int32 nowHP, int32 MaxHP);
-	void SetLevel(int32 Level);
-	void SetLevelVisibility(bool Visible);
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void SetLevelVisibility(bool Visible);
+	void SetLevel(int32 Level);
+	void SetHP(int32 nowHP, int32 MaxHP);
+	void SetElement(EPalElementType type1, EPalElementType type2);
+	void SetBossPrefix(const class FText& Text);
+	void SetBossName(const class FText& InText);
+	void SetBossGaugeDisplayMode(ENum_BossGaugeDisplayMode IsShortMode);
+	void Set_Status_Effect(EPalStatusID statusID);
+	void Set_Enable_Talent_Detail(bool IsEnable, class UPalIndividualCharacterParameter* Parameter);
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_IngameBossHP(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -42,16 +42,16 @@ public:
 	TMulticastInlineDelegate<void(EPalWorkSuitability WorkType)> OnResearchEntryUnhovered;           // 0x02F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void AnmEvent_Focus();
-	void AnmEvent_Normal();
-	void AnmEvent_Selected();
-	void AnmEvent_Unselected();
-	void BndEvt__WBP_Research_PalWorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Research_PalWorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Research_PalWorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void Construct();
-	void ExecuteUbergraph_WBP_Research_PalWorkList(int32 EntryPoint);
 	void Setup(EPalWorkSuitability WorkType, int32 Level, int32 Total, bool Progressing);
+	void ExecuteUbergraph_WBP_Research_PalWorkList(int32 EntryPoint);
+	void Construct();
+	void BndEvt__WBP_Research_PalWorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Research_PalWorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Research_PalWorkList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void AnmEvent_Unselected();
+	void AnmEvent_Selected();
+	void AnmEvent_Normal();
+	void AnmEvent_Focus();
 
 public:
 	static class UClass* StaticClass()

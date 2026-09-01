@@ -17,69 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_Option_NoteContent.WBP_Option_NoteContent_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Option_NoteContent_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_NoteContent_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Option_NoteContent.WBP_Option_NoteContent_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Option_NoteContent_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_NoteContent_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Option_NoteContent.WBP_Option_NoteContent_C.ExecuteUbergraph_WBP_Option_NoteContent
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Option_NoteContent_C::ExecuteUbergraph_WBP_Option_NoteContent(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_NoteContent_C", "ExecuteUbergraph_WBP_Option_NoteContent");
-
-	Params::WBP_Option_NoteContent_C_ExecuteUbergraph_WBP_Option_NoteContent Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Option_NoteContent.WBP_Option_NoteContent_C.SetImage
+// Function WBP_Option_NoteContent.WBP_Option_NoteContent_C.SetText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TSoftObjectPtr<class UTexture2D>        SoftTexture                                            (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_Option_NoteContent_C::SetImage(TSoftObjectPtr<class UTexture2D> SoftTexture)
+void UWBP_Option_NoteContent_C::SetText(const class FText& InText)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_NoteContent_C", "SetImage");
+		Func = Class->GetFunction("WBP_Option_NoteContent_C", "SetText");
 
-	Params::WBP_Option_NoteContent_C_SetImage Parms{};
+	Params::WBP_Option_NoteContent_C_SetText Parms{};
 
-	Parms.SoftTexture = SoftTexture;
+	Parms.InText = std::move(InText);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -107,23 +59,71 @@ void UWBP_Option_NoteContent_C::SetNoteContent(class UPalNoteData* NoteData, con
 }
 
 
-// Function WBP_Option_NoteContent.WBP_Option_NoteContent_C.SetText
+// Function WBP_Option_NoteContent.WBP_Option_NoteContent_C.SetImage
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+// TSoftObjectPtr<class UTexture2D>        SoftTexture                                            (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void UWBP_Option_NoteContent_C::SetText(const class FText& InText)
+void UWBP_Option_NoteContent_C::SetImage(TSoftObjectPtr<class UTexture2D> SoftTexture)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_NoteContent_C", "SetText");
+		Func = Class->GetFunction("WBP_Option_NoteContent_C", "SetImage");
 
-	Params::WBP_Option_NoteContent_C_SetText Parms{};
+	Params::WBP_Option_NoteContent_C_SetImage Parms{};
 
-	Parms.InText = std::move(InText);
+	Parms.SoftTexture = SoftTexture;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Option_NoteContent.WBP_Option_NoteContent_C.ExecuteUbergraph_WBP_Option_NoteContent
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Option_NoteContent_C::ExecuteUbergraph_WBP_Option_NoteContent(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_NoteContent_C", "ExecuteUbergraph_WBP_Option_NoteContent");
+
+	Params::WBP_Option_NoteContent_C_ExecuteUbergraph_WBP_Option_NoteContent Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Option_NoteContent.WBP_Option_NoteContent_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Option_NoteContent_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_NoteContent_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Option_NoteContent.WBP_Option_NoteContent_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Option_NoteContent_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_NoteContent_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

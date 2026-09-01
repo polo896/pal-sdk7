@@ -17,14 +17,15 @@
 namespace SDK::Params
 {
 
-// Function WBP_PalWorkPowerPlant_Gauge.WBP_PalWorkPowerPlant_Gauge_C.AnmEvent_Changing
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_PalWorkPowerPlant_Gauge_C_AnmEvent_Changing final
+// Function WBP_PalWorkPowerPlant_Gauge.WBP_PalWorkPowerPlant_Gauge_C.SetState
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_PalWorkPowerPlant_Gauge_C_SetState final
 {
 public:
-	bool                                          IsChanging;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsLow;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Show;                                              // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalWorkPowerPlant_Gauge_C_AnmEvent_Changing;
+DUMPER7_ASSERTS_WBP_PalWorkPowerPlant_Gauge_C_SetState;
 
 // Function WBP_PalWorkPowerPlant_Gauge.WBP_PalWorkPowerPlant_Gauge_C.ExecuteUbergraph_WBP_PalWorkPowerPlant_Gauge
 // 0x0038 (0x0038 - 0x0000)
@@ -51,15 +52,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_PalWorkPowerPlant_Gauge_C_ExecuteUbergraph_WBP_PalWorkPowerPlant_Gauge;
 
-// Function WBP_PalWorkPowerPlant_Gauge.WBP_PalWorkPowerPlant_Gauge_C.SetState
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_PalWorkPowerPlant_Gauge_C_SetState final
+// Function WBP_PalWorkPowerPlant_Gauge.WBP_PalWorkPowerPlant_Gauge_C.AnmEvent_Changing
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_PalWorkPowerPlant_Gauge_C_AnmEvent_Changing final
 {
 public:
-	bool                                          IsLow;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Show;                                              // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsChanging;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalWorkPowerPlant_Gauge_C_SetState;
+DUMPER7_ASSERTS_WBP_PalWorkPowerPlant_Gauge_C_AnmEvent_Changing;
 
 }
 

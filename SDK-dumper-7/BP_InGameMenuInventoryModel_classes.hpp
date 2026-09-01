@@ -24,8 +24,8 @@ public:
 	class UBP_PalInventoryModel_C*                InventoryModel;                                    // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 
 public:
-	void Dispose();
 	void Setup();
+	void Dispose();
 
 public:
 	static class UClass* StaticClass()

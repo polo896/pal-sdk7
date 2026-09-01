@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_PumpActionShotgun_classes.hpp"
+#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 
 
@@ -27,12 +27,12 @@ public:
 	int32                                         ReloadCount;                                       // 0x06F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void OnWeaponNotify(EWeaponNotifyType Type);
-	void ExecuteUbergraph_BP_Shotgun_NPC(int32 EntryPoint);
 	void BPI_OnReload();
+	void ExecuteUbergraph_BP_Shotgun_NPC(int32 EntryPoint);
+	void OnWeaponNotify(EWeaponNotifyType Type);
 
-	int32 GetWeaponDamage() const;
 	int32 GetNPCWeaponDamage() const;
+	int32 GetWeaponDamage() const;
 
 public:
 	static class UClass* StaticClass()

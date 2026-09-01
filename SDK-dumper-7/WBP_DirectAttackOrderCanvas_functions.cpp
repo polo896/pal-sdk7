@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function WBP_DirectAttackOrderCanvas.WBP_DirectAttackOrderCanvas_C.OnMissingTarget
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_DirectAttackOrderCanvas_C::OnMissingTarget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DirectAttackOrderCanvas_C", "OnMissingTarget");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_DirectAttackOrderCanvas.WBP_DirectAttackOrderCanvas_C.OnChangedDirectOrderTarget
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -37,15 +51,15 @@ void UWBP_DirectAttackOrderCanvas_C::OnChangedDirectOrderTarget(class APalCharac
 }
 
 
-// Function WBP_DirectAttackOrderCanvas.WBP_DirectAttackOrderCanvas_C.OnMissingTarget
+// Function WBP_DirectAttackOrderCanvas.WBP_DirectAttackOrderCanvas_C.Setup
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_DirectAttackOrderCanvas_C::OnMissingTarget()
+void UWBP_DirectAttackOrderCanvas_C::Setup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DirectAttackOrderCanvas_C", "OnMissingTarget");
+		Func = Class->GetFunction("WBP_DirectAttackOrderCanvas_C", "Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -60,20 +74,6 @@ void UWBP_DirectAttackOrderCanvas_C::PlayTargetSound()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_DirectAttackOrderCanvas_C", "PlayTargetSound");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_DirectAttackOrderCanvas.WBP_DirectAttackOrderCanvas_C.Setup
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_DirectAttackOrderCanvas_C::Setup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DirectAttackOrderCanvas_C", "Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

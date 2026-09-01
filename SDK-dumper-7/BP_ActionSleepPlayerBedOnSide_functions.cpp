@@ -17,23 +17,65 @@
 namespace SDK
 {
 
-// Function BP_ActionSleepPlayerBedOnSide.BP_ActionSleepPlayerBedOnSide_C.BindInteractEvent
+// Function BP_ActionSleepPlayerBedOnSide.BP_ActionSleepPlayerBedOnSide_C.UnbindInteractEvent
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class APalPlayerController*             LocalPlayerController                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UBP_ActionSleepPlayerBedOnSide_C::BindInteractEvent(class APalPlayerController* LocalPlayerController)
+void UBP_ActionSleepPlayerBedOnSide_C::UnbindInteractEvent(class APalPlayerController* LocalPlayerController)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBedOnSide_C", "BindInteractEvent");
+		Func = Class->GetFunction("BP_ActionSleepPlayerBedOnSide_C", "UnbindInteractEvent");
 
-	Params::BP_ActionSleepPlayerBedOnSide_C_BindInteractEvent Parms{};
+	Params::BP_ActionSleepPlayerBedOnSide_C_UnbindInteractEvent Parms{};
 
 	Parms.LocalPlayerController = LocalPlayerController;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ActionSleepPlayerBedOnSide.BP_ActionSleepPlayerBedOnSide_C.RequestStartSleep
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBP_ActionSleepPlayerBedOnSide_C::RequestStartSleep()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionSleepPlayerBedOnSide_C", "RequestStartSleep");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ActionSleepPlayerBedOnSide.BP_ActionSleepPlayerBedOnSide_C.OnSleepLoopStart
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBP_ActionSleepPlayerBedOnSide_C::OnSleepLoopStart()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionSleepPlayerBedOnSide_C", "OnSleepLoopStart");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ActionSleepPlayerBedOnSide.BP_ActionSleepPlayerBedOnSide_C.InvokePhotoMode
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UBP_ActionSleepPlayerBedOnSide_C::InvokePhotoMode()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionSleepPlayerBedOnSide_C", "InvokePhotoMode");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -58,61 +100,19 @@ void UBP_ActionSleepPlayerBedOnSide_C::GetMontageSleepLoop(class UAnimMontage** 
 }
 
 
-// Function BP_ActionSleepPlayerBedOnSide.BP_ActionSleepPlayerBedOnSide_C.InvokePhotoMode
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBP_ActionSleepPlayerBedOnSide_C::InvokePhotoMode()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBedOnSide_C", "InvokePhotoMode");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ActionSleepPlayerBedOnSide.BP_ActionSleepPlayerBedOnSide_C.OnSleepLoopStart
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBP_ActionSleepPlayerBedOnSide_C::OnSleepLoopStart()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBedOnSide_C", "OnSleepLoopStart");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ActionSleepPlayerBedOnSide.BP_ActionSleepPlayerBedOnSide_C.RequestStartSleep
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UBP_ActionSleepPlayerBedOnSide_C::RequestStartSleep()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBedOnSide_C", "RequestStartSleep");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ActionSleepPlayerBedOnSide.BP_ActionSleepPlayerBedOnSide_C.UnbindInteractEvent
+// Function BP_ActionSleepPlayerBedOnSide.BP_ActionSleepPlayerBedOnSide_C.BindInteractEvent
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class APalPlayerController*             LocalPlayerController                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UBP_ActionSleepPlayerBedOnSide_C::UnbindInteractEvent(class APalPlayerController* LocalPlayerController)
+void UBP_ActionSleepPlayerBedOnSide_C::BindInteractEvent(class APalPlayerController* LocalPlayerController)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionSleepPlayerBedOnSide_C", "UnbindInteractEvent");
+		Func = Class->GetFunction("BP_ActionSleepPlayerBedOnSide_C", "BindInteractEvent");
 
-	Params::BP_ActionSleepPlayerBedOnSide_C_UnbindInteractEvent Parms{};
+	Params::BP_ActionSleepPlayerBedOnSide_C_BindInteractEvent Parms{};
 
 	Parms.LocalPlayerController = LocalPlayerController;
 

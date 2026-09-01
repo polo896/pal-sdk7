@@ -17,17 +17,60 @@
 namespace SDK::Params
 {
 
-// Function BP_PalBossTower_KingWhale.BP_PalBossTower_KingWhale_C.ExecuteUbergraph_BP_PalBossTower_KingWhale
-// 0x0018 (0x0018 - 0x0000)
-struct BP_PalBossTower_KingWhale_C_ExecuteUbergraph_BP_PalBossTower_KingWhale final
+// Function BP_PalBossTower_KingWhale.BP_PalBossTower_KingWhale_C.OnClosedLockDialog
+// 0x0001 (0x0001 - 0x0000)
+struct BP_PalBossTower_KingWhale_C_OnClosedLockDialog final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 K2Node_Event_Other;                                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPalInteractiveObjectIndicatorType            K2Node_Event_IndicatorType;                        // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalBossTower_KingWhale_C_ExecuteUbergraph_BP_PalBossTower_KingWhale;
+DUMPER7_ASSERTS_BP_PalBossTower_KingWhale_C_OnClosedLockDialog;
+
+// Function BP_PalBossTower_KingWhale.BP_PalBossTower_KingWhale_C.Interact
+// 0x0010 (0x0010 - 0x0000)
+struct BP_PalBossTower_KingWhale_C_Interact final
+{
+public:
+	class AActor*                                 Other;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPalInteractiveObjectIndicatorType            IndicatorType;                                     // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBossTower_KingWhale_C_Interact;
+
+// Function BP_PalBossTower_KingWhale.BP_PalBossTower_KingWhale_C.GetInteractableTrigger
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PalBossTower_KingWhale_C_GetInteractableTrigger final
+{
+public:
+	class UShapeComponent*                        InteractableTrigger_0;                             // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBossTower_KingWhale_C_GetInteractableTrigger;
+
+// Function BP_PalBossTower_KingWhale.BP_PalBossTower_KingWhale_C.GetInteractableInterface
+// 0x0010 (0x0010 - 0x0000)
+struct BP_PalBossTower_KingWhale_C_GetInteractableInterface final
+{
+public:
+	TScriptInterface<class IPalInteractiveObjectComponentInterface> Interface;                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBossTower_KingWhale_C_GetInteractableInterface;
+
+// Function BP_PalBossTower_KingWhale.BP_PalBossTower_KingWhale_C.GetEntryWaitInfoTrigger
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PalBossTower_KingWhale_C_GetEntryWaitInfoTrigger final
+{
+public:
+	class UShapeComponent*                        EntryWaitInfoTrigger;                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBossTower_KingWhale_C_GetEntryWaitInfoTrigger;
+
+// Function BP_PalBossTower_KingWhale.BP_PalBossTower_KingWhale_C.GetEntryCancelTrigger
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PalBossTower_KingWhale_C_GetEntryCancelTrigger final
+{
+public:
+	class UShapeComponent*                        EntryCancelTrigger_0;                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBossTower_KingWhale_C_GetEntryCancelTrigger;
 
 // Function BP_PalBossTower_KingWhale.BP_PalBossTower_KingWhale_C.ProgressQuest
 // 0x0088 (0x0088 - 0x0000)
@@ -57,60 +100,17 @@ public:
 };
 DUMPER7_ASSERTS_BP_PalBossTower_KingWhale_C_ProgressQuest;
 
-// Function BP_PalBossTower_KingWhale.BP_PalBossTower_KingWhale_C.GetEntryCancelTrigger
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PalBossTower_KingWhale_C_GetEntryCancelTrigger final
+// Function BP_PalBossTower_KingWhale.BP_PalBossTower_KingWhale_C.ExecuteUbergraph_BP_PalBossTower_KingWhale
+// 0x0018 (0x0018 - 0x0000)
+struct BP_PalBossTower_KingWhale_C_ExecuteUbergraph_BP_PalBossTower_KingWhale final
 {
 public:
-	class UShapeComponent*                        EntryCancelTrigger_0;                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 K2Node_Event_Other;                                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPalInteractiveObjectIndicatorType            K2Node_Event_IndicatorType;                        // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalBossTower_KingWhale_C_GetEntryCancelTrigger;
-
-// Function BP_PalBossTower_KingWhale.BP_PalBossTower_KingWhale_C.GetEntryWaitInfoTrigger
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PalBossTower_KingWhale_C_GetEntryWaitInfoTrigger final
-{
-public:
-	class UShapeComponent*                        EntryWaitInfoTrigger;                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBossTower_KingWhale_C_GetEntryWaitInfoTrigger;
-
-// Function BP_PalBossTower_KingWhale.BP_PalBossTower_KingWhale_C.GetInteractableInterface
-// 0x0010 (0x0010 - 0x0000)
-struct BP_PalBossTower_KingWhale_C_GetInteractableInterface final
-{
-public:
-	TScriptInterface<class IPalInteractiveObjectComponentInterface> Interface;                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBossTower_KingWhale_C_GetInteractableInterface;
-
-// Function BP_PalBossTower_KingWhale.BP_PalBossTower_KingWhale_C.GetInteractableTrigger
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PalBossTower_KingWhale_C_GetInteractableTrigger final
-{
-public:
-	class UShapeComponent*                        InteractableTrigger_0;                             // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBossTower_KingWhale_C_GetInteractableTrigger;
-
-// Function BP_PalBossTower_KingWhale.BP_PalBossTower_KingWhale_C.Interact
-// 0x0010 (0x0010 - 0x0000)
-struct BP_PalBossTower_KingWhale_C_Interact final
-{
-public:
-	class AActor*                                 Other;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPalInteractiveObjectIndicatorType            IndicatorType;                                     // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBossTower_KingWhale_C_Interact;
-
-// Function BP_PalBossTower_KingWhale.BP_PalBossTower_KingWhale_C.OnClosedLockDialog
-// 0x0001 (0x0001 - 0x0000)
-struct BP_PalBossTower_KingWhale_C_OnClosedLockDialog final
-{
-public:
-	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBossTower_KingWhale_C_OnClosedLockDialog;
+DUMPER7_ASSERTS_BP_PalBossTower_KingWhale_C_ExecuteUbergraph_BP_PalBossTower_KingWhale;
 
 }
 

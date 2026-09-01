@@ -12,7 +12,7 @@ class ABP_PalBossTowerBase_C : public APalBossTower
     FGuid DialogUId;                                                                  // 0x0330 (size: 0x10)
     FDataTableRowHandle DialogMsgID;                                                  // 0x0340 (size: 0x10)
     FTimerHandle QuestManagerInitializeTimerHandle;                                   // 0x0350 (size: 0x8)
-    TMap<class EPalBossType, class FDataTableRowHandle> BossTypeAndQuestIdMap;        // 0x0358 (size: 0x50)
+    TMap<EPalBossType, FDataTableRowHandle> BossTypeAndQuestIdMap;                    // 0x0358 (size: 0x50)
 
     void OnClosedLockDialog(bool bResult);
     FTransform GetTopWarpPoint();

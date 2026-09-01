@@ -32,8 +32,8 @@ public:
 	struct FAnimNode_Slot                         AnimGraphNode_Slot;                                // 0x0450(0x0048)()
 
 public:
-	void AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph_0);
 	void ExecuteUbergraph_ABP_Weapon_AssaultRifle_011(int32 EntryPoint);
+	void AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph_0);
 
 public:
 	static class UClass* StaticClass()

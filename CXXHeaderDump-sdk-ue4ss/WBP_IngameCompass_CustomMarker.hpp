@@ -5,7 +5,7 @@ class UWBP_IngameCompass_CustomMarker_C : public UWBP_CompassIconBase_C
 {
     class UImage* Image_Icon;                                                         // 0x0498 (size: 0x8)
     class UBP_PalTextBlock_C* Text_Length;                                            // 0x04A0 (size: 0x8)
-    TArray<class UTexture2D*> Textures;                                               // 0x04A8 (size: 0x10)
+    TArray<UTexture2D*> Textures;                                                     // 0x04A8 (size: 0x10)
 
     void SetColorType(bool IsCustomMarker);
     void UpdateDistance();

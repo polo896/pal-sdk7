@@ -53,14 +53,14 @@ public:
 	double                                        MoveAlpha;                                         // 0x0350(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_In();
-	void ChangeSelect(int32 NewIndex);
-	void ExecuteUbergraph_WBP_Fishing_SelectBait(int32 EntryPoint);
-	void OnInitialized();
-	void OnSelected();
-	void Setup(TArray<struct FPalStaticItemIdAndNum>& ItemArray, int32 SelectIndex);
-	void SetVisibleItems(bool IsVisible_0);
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void SetVisibleItems(bool IsVisible_0);
+	void Setup(TArray<struct FPalStaticItemIdAndNum>& ItemArray, int32 SelectIndex);
+	void OnSelected();
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_Fishing_SelectBait(int32 EntryPoint);
+	void ChangeSelect(int32 NewIndex);
+	void AnmEvent_In();
 
 public:
 	static class UClass* StaticClass()

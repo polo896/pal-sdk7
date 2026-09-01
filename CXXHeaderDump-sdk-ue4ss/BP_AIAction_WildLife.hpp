@@ -65,7 +65,7 @@ class UBP_AIAction_WildLife_C : public UBP_AIAction_CanCombatBase_C
     void ActionAbort(class APawn* ControlledPawn);
     void Event_StopFalse();
     void ActionPostTick(class APawn* ControlledPawn, float DeltaSeconds);
-    void OnSightCheckAsyncCompleted(bool bIncludedPlayer, bool bIncludedAliveNPC, bool bIncludedEdibleDeadNPC, const TArray<class APalCharacter*>& InSightCharacters);
+    void OnSightCheckAsyncCompleted(bool bIncludedPlayer, bool bIncludedAliveNPC, bool bIncludedEdibleDeadNPC, const TArray<APalCharacter*>& InSightCharacters);
     void ExecuteUbergraph_BP_AIAction_WildLife(int32 EntryPoint);
 }; // Size: 0x2A0
 

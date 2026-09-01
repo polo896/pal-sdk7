@@ -32,6 +32,22 @@ public:
 };
 DUMPER7_ASSERTS_WBP_IngameCompass_Quest_C_SetDistanceText;
 
+// Function WBP_IngameCompass_Quest.WBP_IngameCompass_Quest_C.ShouldForceHide
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_IngameCompass_Quest_C_ShouldForceHide final
+{
+public:
+	bool                                          bForceHide;                                        // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalWorldMapUIData*                     CallFunc_GetLocalWorldMapData_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetMapNameByWorldLocation_ReturnValue;    // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_GetCurrentPlayMapName_ReturnValue;        // 0x001C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_NameName_ReturnValue;            // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameCompass_Quest_C_ShouldForceHide;
+
 // Function WBP_IngameCompass_Quest.WBP_IngameCompass_Quest_C.SetupTexture
 // 0x0198 (0x0198 - 0x0000)
 struct WBP_IngameCompass_Quest_C_SetupTexture final
@@ -56,22 +72,6 @@ public:
 	TSoftObjectPtr<class UTexture2D>              K2Node_Select_Default;                             // 0x0168(0x0030)(UObjectWrapper, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_IngameCompass_Quest_C_SetupTexture;
-
-// Function WBP_IngameCompass_Quest.WBP_IngameCompass_Quest_C.ShouldForceHide
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_IngameCompass_Quest_C_ShouldForceHide final
-{
-public:
-	bool                                          bForceHide;                                        // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalWorldMapUIData*                     CallFunc_GetLocalWorldMapData_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetMapNameByWorldLocation_ReturnValue;    // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_GetCurrentPlayMapName_ReturnValue;        // 0x001C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_NameName_ReturnValue;            // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameCompass_Quest_C_ShouldForceHide;
 
 }
 

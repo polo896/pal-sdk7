@@ -17,187 +17,69 @@
 namespace SDK
 {
 
-// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_0_OnClickClosedButton__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_RelicRecyclerMenu_C::BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_0_OnClickClosedButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_0_OnClickClosedButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_2_OnClickedTargetContainerSortButton__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_RelicRecyclerMenu_C::BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_2_OnClickedTargetContainerSortButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_2_OnClickedTargetContainerSortButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_3_OnHoveredTargetContainerSlot__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_RelicRecyclerMenu_C::BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_3_OnHoveredTargetContainerSlot__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_3_OnHoveredTargetContainerSlot__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.Cleanup UIModel
+// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.SetupRelicChestEventBind
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_RelicRecyclerMenu_C::Cleanup_UIModel()
+void UWBP_RelicRecyclerMenu_C::SetupRelicChestEventBind()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "Cleanup UIModel");
+		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "SetupRelicChestEventBind");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.CleanupRelicChestEventBind
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.SetupRelicChestDisplay
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_RelicRecyclerMenu_C::CleanupRelicChestEventBind()
+void UWBP_RelicRecyclerMenu_C::SetupRelicChestDisplay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "CleanupRelicChestEventBind");
+		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "SetupRelicChestDisplay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.ExecuteUbergraph_WBP_RelicRecyclerMenu
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_RelicRecyclerMenu_C::ExecuteUbergraph_WBP_RelicRecyclerMenu(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "ExecuteUbergraph_WBP_RelicRecyclerMenu");
-
-	Params::WBP_RelicRecyclerMenu_C_ExecuteUbergraph_WBP_RelicRecyclerMenu Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.OnReadyWorkeeModule
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalMapObjectConcreteModelBase*   Model                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPalMapObjectConcreteModelModuleBase*Module                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_RelicRecyclerMenu_C::OnReadyWorkeeModule(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "OnReadyWorkeeModule");
-
-	Params::WBP_RelicRecyclerMenu_C_OnReadyWorkeeModule Parms{};
-
-	Parms.Model = Model;
-	Parms.Module = Module;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.OnReadyWorkProgress
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalMapObjectWorkeeModule*        Module                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPalWorkBase*                     Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_RelicRecyclerMenu_C::OnReadyWorkProgress(class UPalMapObjectWorkeeModule* Module, class UPalWorkBase* Work)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "OnReadyWorkProgress");
-
-	Params::WBP_RelicRecyclerMenu_C_OnReadyWorkProgress Parms{};
-
-	Parms.Module = Module;
-	Parms.Work = Work;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_RelicRecyclerMenu_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.OnUpdatCurrentRecycleItem
+// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.OnUpdateSwitch_Internal
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const class UPalUIMapObjectRecyclerModel*UIModel_0                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInitial                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_RelicRecyclerMenu_C::OnUpdatCurrentRecycleItem(const class UPalUIMapObjectRecyclerModel* UIModel_0)
+void UWBP_RelicRecyclerMenu_C::OnUpdateSwitch_Internal(const class UPalUIMapObjectRecyclerModel* UIModel_0, bool bInitial)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "OnUpdatCurrentRecycleItem");
+		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "OnUpdateSwitch_Internal");
 
-	Params::WBP_RelicRecyclerMenu_C_OnUpdatCurrentRecycleItem Parms{};
+	Params::WBP_RelicRecyclerMenu_C_OnUpdateSwitch_Internal Parms{};
 
 	Parms.UIModel_0 = UIModel_0;
+	Parms.bInitial = bInitial;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.OnUpdateBoost
+// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.OnUpdateSwitch
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const class UPalUIMapObjectRecyclerModel*UIModel_0                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_RelicRecyclerMenu_C::OnUpdateBoost(const class UPalUIMapObjectRecyclerModel* UIModel_0)
+void UWBP_RelicRecyclerMenu_C::OnUpdateSwitch(const class UPalUIMapObjectRecyclerModel* UIModel_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "OnUpdateBoost");
+		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "OnUpdateSwitch");
 
-	Params::WBP_RelicRecyclerMenu_C_OnUpdateBoost Parms{};
+	Params::WBP_RelicRecyclerMenu_C_OnUpdateSwitch Parms{};
 
 	Parms.UIModel_0 = UIModel_0;
 
@@ -225,19 +107,19 @@ void UWBP_RelicRecyclerMenu_C::OnUpdateOutputContainerCaution(const class UPalUI
 }
 
 
-// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.OnUpdateSwitch
+// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.OnUpdateBoost
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const class UPalUIMapObjectRecyclerModel*UIModel_0                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_RelicRecyclerMenu_C::OnUpdateSwitch(const class UPalUIMapObjectRecyclerModel* UIModel_0)
+void UWBP_RelicRecyclerMenu_C::OnUpdateBoost(const class UPalUIMapObjectRecyclerModel* UIModel_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "OnUpdateSwitch");
+		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "OnUpdateBoost");
 
-	Params::WBP_RelicRecyclerMenu_C_OnUpdateSwitch Parms{};
+	Params::WBP_RelicRecyclerMenu_C_OnUpdateBoost Parms{};
 
 	Parms.UIModel_0 = UIModel_0;
 
@@ -245,51 +127,169 @@ void UWBP_RelicRecyclerMenu_C::OnUpdateSwitch(const class UPalUIMapObjectRecycle
 }
 
 
-// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.OnUpdateSwitch_Internal
+// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.OnUpdatCurrentRecycleItem
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const class UPalUIMapObjectRecyclerModel*UIModel_0                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInitial                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_RelicRecyclerMenu_C::OnUpdateSwitch_Internal(const class UPalUIMapObjectRecyclerModel* UIModel_0, bool bInitial)
+void UWBP_RelicRecyclerMenu_C::OnUpdatCurrentRecycleItem(const class UPalUIMapObjectRecyclerModel* UIModel_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "OnUpdateSwitch_Internal");
+		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "OnUpdatCurrentRecycleItem");
 
-	Params::WBP_RelicRecyclerMenu_C_OnUpdateSwitch_Internal Parms{};
+	Params::WBP_RelicRecyclerMenu_C_OnUpdatCurrentRecycleItem Parms{};
 
 	Parms.UIModel_0 = UIModel_0;
-	Parms.bInitial = bInitial;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.SetupRelicChestDisplay
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_RelicRecyclerMenu_C::SetupRelicChestDisplay()
+void UWBP_RelicRecyclerMenu_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "SetupRelicChestDisplay");
+		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.SetupRelicChestEventBind
+// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.OnReadyWorkProgress
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalMapObjectWorkeeModule*        Module                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalWorkBase*                     Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_RelicRecyclerMenu_C::SetupRelicChestEventBind()
+void UWBP_RelicRecyclerMenu_C::OnReadyWorkProgress(class UPalMapObjectWorkeeModule* Module, class UPalWorkBase* Work)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "SetupRelicChestEventBind");
+		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "OnReadyWorkProgress");
+
+	Params::WBP_RelicRecyclerMenu_C_OnReadyWorkProgress Parms{};
+
+	Parms.Module = Module;
+	Parms.Work = Work;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.OnReadyWorkeeModule
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalMapObjectConcreteModelBase*   Model                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalMapObjectConcreteModelModuleBase*Module                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_RelicRecyclerMenu_C::OnReadyWorkeeModule(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "OnReadyWorkeeModule");
+
+	Params::WBP_RelicRecyclerMenu_C_OnReadyWorkeeModule Parms{};
+
+	Parms.Model = Model;
+	Parms.Module = Module;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.ExecuteUbergraph_WBP_RelicRecyclerMenu
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_RelicRecyclerMenu_C::ExecuteUbergraph_WBP_RelicRecyclerMenu(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "ExecuteUbergraph_WBP_RelicRecyclerMenu");
+
+	Params::WBP_RelicRecyclerMenu_C_ExecuteUbergraph_WBP_RelicRecyclerMenu Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.CleanupRelicChestEventBind
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_RelicRecyclerMenu_C::CleanupRelicChestEventBind()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "CleanupRelicChestEventBind");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.Cleanup UIModel
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_RelicRecyclerMenu_C::Cleanup_UIModel()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "Cleanup UIModel");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_3_OnHoveredTargetContainerSlot__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_RelicRecyclerMenu_C::BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_3_OnHoveredTargetContainerSlot__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_3_OnHoveredTargetContainerSlot__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_2_OnClickedTargetContainerSortButton__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_RelicRecyclerMenu_C::BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_2_OnClickedTargetContainerSortButton__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_2_OnClickedTargetContainerSortButton__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_RelicRecyclerMenu.WBP_RelicRecyclerMenu_C.BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_0_OnClickClosedButton__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_RelicRecyclerMenu_C::BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_0_OnClickClosedButton__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RelicRecyclerMenu_C", "BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_0_OnClickClosedButton__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

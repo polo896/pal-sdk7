@@ -38,20 +38,44 @@ public:
 };
 DUMPER7_ASSERTS_WBP_InGame_Match_HPPal_C_BindFromHandle;
 
-// Function WBP_InGame_Match_HPPal.WBP_InGame_Match_HPPal_C.CheckState
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_InGame_Match_HPPal_C_CheckState final
+// Function WBP_InGame_Match_HPPal.WBP_InGame_Match_HPPal_C.Tick
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_InGame_Match_HPPal_C_Tick final
 {
 public:
-	double                                        HPPercent;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsDead;                                            // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue;       // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_InGame_Match_HPPal_C_CheckState;
+DUMPER7_ASSERTS_WBP_InGame_Match_HPPal_C_Tick;
+
+// Function WBP_InGame_Match_HPPal.WBP_InGame_Match_HPPal_C.SetIsRival
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_InGame_Match_HPPal_C_SetIsRival final
+{
+public:
+	bool                                          IsRival;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InGame_Match_HPPal_C_SetIsRival;
+
+// Function WBP_InGame_Match_HPPal.WBP_InGame_Match_HPPal_C.On Update HP Binded
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_InGame_Match_HPPal_C_On_Update_HP_Binded final
+{
+public:
+	struct FFixedPoint64                          nowHP;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FFixedPoint64                          nowMaxHP;                                          // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	class UPalIndividualCharacterHandle*          CallFunc_GetBindedHandle_targetHandle;             // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FFixedPoint64                          CallFunc_Divide_FixedPoint64FixedPoint64_ReturnValue; // 0x0018(0x0008)(NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_Convert_FixedPoint64ToFloat_ReturnValue;  // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterParameter*       CallFunc_TryGetIndividualParameter_ReturnValue;    // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDead_ReturnValue;                       // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_CheckState_HPPercent_ImplicitCast;        // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InGame_Match_HPPal_C_On_Update_HP_Binded;
 
 // Function WBP_InGame_Match_HPPal.WBP_InGame_Match_HPPal_C.ExecuteUbergraph_WBP_InGame_Match_HPPal
 // 0x00A0 (0x00A0 - 0x0000)
@@ -74,44 +98,20 @@ public:
 };
 DUMPER7_ASSERTS_WBP_InGame_Match_HPPal_C_ExecuteUbergraph_WBP_InGame_Match_HPPal;
 
-// Function WBP_InGame_Match_HPPal.WBP_InGame_Match_HPPal_C.On Update HP Binded
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_InGame_Match_HPPal_C_On_Update_HP_Binded final
+// Function WBP_InGame_Match_HPPal.WBP_InGame_Match_HPPal_C.CheckState
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_InGame_Match_HPPal_C_CheckState final
 {
 public:
-	struct FFixedPoint64                          nowHP;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FFixedPoint64                          nowMaxHP;                                          // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	class UPalIndividualCharacterHandle*          CallFunc_GetBindedHandle_targetHandle;             // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FFixedPoint64                          CallFunc_Divide_FixedPoint64FixedPoint64_ReturnValue; // 0x0018(0x0008)(NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_Convert_FixedPoint64ToFloat_ReturnValue;  // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalIndividualCharacterParameter*       CallFunc_TryGetIndividualParameter_ReturnValue;    // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDead_ReturnValue;                       // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_CheckState_HPPercent_ImplicitCast;        // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        HPPercent;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDead;                                            // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue;       // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_InGame_Match_HPPal_C_On_Update_HP_Binded;
-
-// Function WBP_InGame_Match_HPPal.WBP_InGame_Match_HPPal_C.SetIsRival
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_InGame_Match_HPPal_C_SetIsRival final
-{
-public:
-	bool                                          IsRival;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InGame_Match_HPPal_C_SetIsRival;
-
-// Function WBP_InGame_Match_HPPal.WBP_InGame_Match_HPPal_C.Tick
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_InGame_Match_HPPal_C_Tick final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InGame_Match_HPPal_C_Tick;
+DUMPER7_ASSERTS_WBP_InGame_Match_HPPal_C_CheckState;
 
 }
 

@@ -17,14 +17,115 @@
 namespace SDK::Params
 {
 
-// Function WBP_Ingame_PalSkillGauge.WBP_Ingame_PalSkillGauge_C.AnmEvent_UsingSkill
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Ingame_PalSkillGauge_C_AnmEvent_UsingSkill final
+// Function WBP_Ingame_PalSkillGauge.WBP_Ingame_PalSkillGauge_C.ShowFlyKeyGuide
+// 0x0005 (0x0005 - 0x0000)
+struct WBP_Ingame_PalSkillGauge_C_ShowFlyKeyGuide final
 {
 public:
-	bool                                          TogglePlay;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Show;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Ingame_PalSkillGauge_C_AnmEvent_UsingSkill;
+DUMPER7_ASSERTS_WBP_Ingame_PalSkillGauge_C_ShowFlyKeyGuide;
+
+// Function WBP_Ingame_PalSkillGauge.WBP_Ingame_PalSkillGauge_C.Setup Icon Texture
+// 0x0120 (0x0120 - 0x0000)
+struct WBP_Ingame_PalSkillGauge_C_Setup_Icon_Texture final
+{
+public:
+	TMap<class FName, TSoftObjectPtr<class UTexture2D>> softTextureMap;                              // 0x0000(0x0050)(Edit, BlueprintVisible)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0053(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class FName, TSoftObjectPtr<class UTexture2D>> K2Node_MakeVariable_MakeVariableOutput;      // 0x0058(0x0050)()
+	bool                                          Temp_bool_Variable_1;                              // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalOtomoHolderComponentBase*           CallFunc_GetOtomoHolderComponent_ReturnValue;      // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UBP_OtomoPalHolderComponent_C*          K2Node_DynamicCast_AsBP_Otomo_Pal_Holder_Component; // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_Try_Get_Current_Active_Pal_Actor_Otomo;   // 0x00D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D9[0x3];                                       // 0x00D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_GetCharacterIDFromCharacter_ReturnValue;  // 0x00DC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UTexture2D>              CallFunc_GetPartnerSkillIcon_SoftIconTexture;      // 0x00E8(0x0030)(HasGetValueTypeHash)
+	bool                                          CallFunc_GetPartnerSkillIcon_IsSquare;             // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0119(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x011A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Ingame_PalSkillGauge_C_Setup_Icon_Texture;
+
+// Function WBP_Ingame_PalSkillGauge.WBP_Ingame_PalSkillGauge_C.Set Skill Name Locked
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Ingame_PalSkillGauge_C_Set_Skill_Name_Locked final
+{
+public:
+	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0000(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_Ingame_PalSkillGauge_C_Set_Skill_Name_Locked;
+
+// Function WBP_Ingame_PalSkillGauge.WBP_Ingame_PalSkillGauge_C.Set Skill Name
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Ingame_PalSkillGauge_C_Set_Skill_Name final
+{
+public:
+	class FText                                   SkillNameText;                                     // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_Ingame_PalSkillGauge_C_Set_Skill_Name;
+
+// Function WBP_Ingame_PalSkillGauge.WBP_Ingame_PalSkillGauge_C.Set Skill Gauge Percent
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Ingame_PalSkillGauge_C_Set_Skill_Gauge_Percent final
+{
+public:
+	double                                        Percent;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetPercent_InPercent_ImplicitCast;        // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Ingame_PalSkillGauge_C_Set_Skill_Gauge_Percent;
+
+// Function WBP_Ingame_PalSkillGauge.WBP_Ingame_PalSkillGauge_C.Set Cool Down Gauge Percent
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_Ingame_PalSkillGauge_C_Set_Cool_Down_Gauge_Percent final
+{
+public:
+	double                                        Now;                                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Max;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_DoubleToText_ReturnValue;            // 0x0018(0x0018)()
+	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetPercent_InPercent_ImplicitCast;        // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Ingame_PalSkillGauge_C_Set_Cool_Down_Gauge_Percent;
+
+// Function WBP_Ingame_PalSkillGauge.WBP_Ingame_PalSkillGauge_C.OnInputMethodChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Ingame_PalSkillGauge_C_OnInputMethodChanged final
+{
+public:
+	ECommonInputType                              bNewInputType;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Ingame_PalSkillGauge_C_OnInputMethodChanged;
+
+// Function WBP_Ingame_PalSkillGauge.WBP_Ingame_PalSkillGauge_C.Hide Key Guide
+// 0x0005 (0x0005 - 0x0000)
+struct WBP_Ingame_PalSkillGauge_C_Hide_Key_Guide final
+{
+public:
+	bool                                          Hide;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Ingame_PalSkillGauge_C_Hide_Key_Guide;
 
 // Function WBP_Ingame_PalSkillGauge.WBP_Ingame_PalSkillGauge_C.ExecuteUbergraph_WBP_Ingame_PalSkillGauge
 // 0x0150 (0x0150 - 0x0000)
@@ -71,115 +172,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Ingame_PalSkillGauge_C_ExecuteUbergraph_WBP_Ingame_PalSkillGauge;
 
-// Function WBP_Ingame_PalSkillGauge.WBP_Ingame_PalSkillGauge_C.Hide Key Guide
-// 0x0005 (0x0005 - 0x0000)
-struct WBP_Ingame_PalSkillGauge_C_Hide_Key_Guide final
-{
-public:
-	bool                                          Hide;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Ingame_PalSkillGauge_C_Hide_Key_Guide;
-
-// Function WBP_Ingame_PalSkillGauge.WBP_Ingame_PalSkillGauge_C.OnInputMethodChanged
+// Function WBP_Ingame_PalSkillGauge.WBP_Ingame_PalSkillGauge_C.AnmEvent_UsingSkill
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_Ingame_PalSkillGauge_C_OnInputMethodChanged final
+struct WBP_Ingame_PalSkillGauge_C_AnmEvent_UsingSkill final
 {
 public:
-	ECommonInputType                              bNewInputType;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          TogglePlay;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Ingame_PalSkillGauge_C_OnInputMethodChanged;
-
-// Function WBP_Ingame_PalSkillGauge.WBP_Ingame_PalSkillGauge_C.Set Cool Down Gauge Percent
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_Ingame_PalSkillGauge_C_Set_Cool_Down_Gauge_Percent final
-{
-public:
-	double                                        Now;                                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        Max;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_DoubleToText_ReturnValue;            // 0x0018(0x0018)()
-	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetPercent_InPercent_ImplicitCast;        // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Ingame_PalSkillGauge_C_Set_Cool_Down_Gauge_Percent;
-
-// Function WBP_Ingame_PalSkillGauge.WBP_Ingame_PalSkillGauge_C.Set Skill Gauge Percent
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Ingame_PalSkillGauge_C_Set_Skill_Gauge_Percent final
-{
-public:
-	double                                        Percent;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetPercent_InPercent_ImplicitCast;        // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Ingame_PalSkillGauge_C_Set_Skill_Gauge_Percent;
-
-// Function WBP_Ingame_PalSkillGauge.WBP_Ingame_PalSkillGauge_C.Set Skill Name
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Ingame_PalSkillGauge_C_Set_Skill_Name final
-{
-public:
-	class FText                                   SkillNameText;                                     // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_Ingame_PalSkillGauge_C_Set_Skill_Name;
-
-// Function WBP_Ingame_PalSkillGauge.WBP_Ingame_PalSkillGauge_C.Set Skill Name Locked
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Ingame_PalSkillGauge_C_Set_Skill_Name_Locked final
-{
-public:
-	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0000(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_Ingame_PalSkillGauge_C_Set_Skill_Name_Locked;
-
-// Function WBP_Ingame_PalSkillGauge.WBP_Ingame_PalSkillGauge_C.Setup Icon Texture
-// 0x0120 (0x0120 - 0x0000)
-struct WBP_Ingame_PalSkillGauge_C_Setup_Icon_Texture final
-{
-public:
-	TMap<class FName, TSoftObjectPtr<class UTexture2D>> softTextureMap;                              // 0x0000(0x0050)(Edit, BlueprintVisible)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0053(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class FName, TSoftObjectPtr<class UTexture2D>> K2Node_MakeVariable_MakeVariableOutput;      // 0x0058(0x0050)()
-	bool                                          Temp_bool_Variable_1;                              // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalOtomoHolderComponentBase*           CallFunc_GetOtomoHolderComponent_ReturnValue;      // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBP_OtomoPalHolderComponent_C*          K2Node_DynamicCast_AsBP_Otomo_Pal_Holder_Component; // 0x00C0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_Try_Get_Current_Active_Pal_Actor_Otomo;   // 0x00D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D9[0x3];                                       // 0x00D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_GetCharacterIDFromCharacter_ReturnValue;  // 0x00DC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class UTexture2D>              CallFunc_GetPartnerSkillIcon_SoftIconTexture;      // 0x00E8(0x0030)(HasGetValueTypeHash)
-	bool                                          CallFunc_GetPartnerSkillIcon_IsSquare;             // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0119(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x011A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Ingame_PalSkillGauge_C_Setup_Icon_Texture;
-
-// Function WBP_Ingame_PalSkillGauge.WBP_Ingame_PalSkillGauge_C.ShowFlyKeyGuide
-// 0x0005 (0x0005 - 0x0000)
-struct WBP_Ingame_PalSkillGauge_C_ShowFlyKeyGuide final
-{
-public:
-	bool                                          Show;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Ingame_PalSkillGauge_C_ShowFlyKeyGuide;
+DUMPER7_ASSERTS_WBP_Ingame_PalSkillGauge_C_AnmEvent_UsingSkill;
 
 }
 

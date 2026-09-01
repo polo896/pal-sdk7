@@ -17,19 +17,273 @@
 namespace SDK
 {
 
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.BallShakeTick
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.SetParameterCaptureAbsorbToBallEffectBySize
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UNiagaraComponent*                Effect                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalSphere_Body_C::BallShakeTick(double DeltaTime)
+void ABP_PalSphere_Body_C::SetParameterCaptureAbsorbToBallEffectBySize(class UNiagaraComponent* Effect)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "BallShakeTick");
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "SetParameterCaptureAbsorbToBallEffectBySize");
 
-	Params::BP_PalSphere_Body_C_BallShakeTick Parms{};
+	Params::BP_PalSphere_Body_C_SetParameterCaptureAbsorbToBallEffectBySize Parms{};
+
+	Parms.Effect = Effect;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.SetCaptureState
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalCaptureSphereState                  NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalSphere_Body_C::SetCaptureState(EPalCaptureSphereState NewState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "SetCaptureState");
+
+	Params::BP_PalSphere_Body_C_SetCaptureState Parms{};
+
+	Parms.NewState = NewState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalSphere_Body_C::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "ReceiveTick");
+
+	Params::BP_PalSphere_Body_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_PalSphere_Body_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.PrevIndexFullPercentage
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   IsFull                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalSphere_Body_C::PrevIndexFullPercentage(int32 Index_0, bool* IsFull)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "PrevIndexFullPercentage");
+
+	Params::BP_PalSphere_Body_C_PrevIndexFullPercentage Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IsFull != nullptr)
+		*IsFull = Parms.IsFull;
+}
+
+
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.PlaySoundShake
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_PalSphere_Body_C::PlaySoundShake()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "PlaySoundShake");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.PlayOpenSphereEffect
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_PalSphere_Body_C::PlayOpenSphereEffect()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "PlayOpenSphereEffect");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.PlayCaptureEffectEvent
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_PalSphere_Body_C::PlayCaptureEffectEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "PlayCaptureEffectEvent");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.PlayCaptureAbsorbToBallEffect
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_PalSphere_Body_C::PlayCaptureAbsorbToBallEffect()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "PlayCaptureAbsorbToBallEffect");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.PlayBallCenterEffect
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_PalSphere_Body_C::PlayBallCenterEffect()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "PlayBallCenterEffect");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.OverwriteJudge_ForFullRelease
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<bool>&                           OriginalJudgeFlagArray                                 (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// double                                  JudgeRate                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalIndividualCharacterParameter* IndividualParameter                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// TArray<bool>*                           outJudgeFlagArray                                      (Parm, OutParm)
+
+void ABP_PalSphere_Body_C::OverwriteJudge_ForFullRelease(TArray<bool>& OriginalJudgeFlagArray, double JudgeRate, class UPalIndividualCharacterParameter* IndividualParameter, TArray<bool>* outJudgeFlagArray)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "OverwriteJudge_ForFullRelease");
+
+	Params::BP_PalSphere_Body_C_OverwriteJudge_ForFullRelease Parms{};
+
+	Parms.OriginalJudgeFlagArray = std::move(OriginalJudgeFlagArray);
+	Parms.JudgeRate = JudgeRate;
+	Parms.IndividualParameter = IndividualParameter;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	OriginalJudgeFlagArray = std::move(Parms.OriginalJudgeFlagArray);
+
+	if (outJudgeFlagArray != nullptr)
+		*outJudgeFlagArray = std::move(Parms.outJudgeFlagArray);
+}
+
+
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.OnShakeBodyToALL
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
+
+void ABP_PalSphere_Body_C::OnShakeBodyToALL()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "OnShakeBodyToALL");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.OnPassingCapturePhase_イベント_0
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   PhaseCount                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalIndividualCharacterHandle*    targetHandle_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalSphere_Body_C::OnPassingCapturePhase_イベント_0(int32 PhaseCount, class UPalIndividualCharacterHandle* targetHandle_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "OnPassingCapturePhase_イベント_0");
+
+	Params::BP_PalSphere_Body_C_OnPassingCapturePhase_イベント_0 Parms{};
+
+	Parms.PhaseCount = PhaseCount;
+	Parms.targetHandle_0 = targetHandle_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.OnCompleteCaptureEmissiveEffect
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalVisualEffectBase*             VisualEffect                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalSphere_Body_C::OnCompleteCaptureEmissiveEffect(class UPalVisualEffectBase* VisualEffect)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "OnCompleteCaptureEmissiveEffect");
+
+	Params::BP_PalSphere_Body_C_OnCompleteCaptureEmissiveEffect Parms{};
+
+	Parms.VisualEffect = VisualEffect;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.Judging
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalSphere_Body_C::Judging(double DeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "Judging");
+
+	Params::BP_PalSphere_Body_C_Judging Parms{};
 
 	Parms.DeltaTime = DeltaTime;
 
@@ -37,197 +291,55 @@ void ABP_PalSphere_Body_C::BallShakeTick(double DeltaTime)
 }
 
 
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.BounceBallEvent
-// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.JudgeProcess
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   JudgeIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalSphere_Body_C::BounceBallEvent()
+void ABP_PalSphere_Body_C::JudgeProcess(int32 JudgeIndex, bool* Result)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "BounceBallEvent");
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "JudgeProcess");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_PalSphere_Body_C_JudgeProcess Parms{};
+
+	Parms.JudgeIndex = JudgeIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
 }
 
 
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.CalculateCaptureRate
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.IsSkipFirstJudge
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   CaptureLevel_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    SneakBonus                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<double>*                         rateArray                                              (Parm, OutParm)
+// class UPalCharacterParameterComponent*  Parameter                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// TArray<double>&                         RateList                                               (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool*                                   isSkip                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalSphere_Body_C::CalculateCaptureRate(int32 CaptureLevel_0, bool SneakBonus, TArray<double>* rateArray)
+void ABP_PalSphere_Body_C::IsSkipFirstJudge(class UPalCharacterParameterComponent* Parameter, TArray<double>& RateList, bool* isSkip)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "CalculateCaptureRate");
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "IsSkipFirstJudge");
 
-	Params::BP_PalSphere_Body_C_CalculateCaptureRate Parms{};
+	Params::BP_PalSphere_Body_C_IsSkipFirstJudge Parms{};
 
-	Parms.CaptureLevel_0 = CaptureLevel_0;
-	Parms.SneakBonus = SneakBonus;
+	Parms.Parameter = Parameter;
+	Parms.RateList = std::move(RateList);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (rateArray != nullptr)
-		*rateArray = std::move(Parms.rateArray);
-}
+	RateList = std::move(Parms.RateList);
 
-
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.CaptureSuccessEvent
-// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
-
-void ABP_PalSphere_Body_C::CaptureSuccessEvent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "CaptureSuccessEvent");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.CheckBouncedReason
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// E_PalCaptureSphereBouncedReason*        reasonType                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalSphere_Body_C::CheckBouncedReason(E_PalCaptureSphereBouncedReason* reasonType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "CheckBouncedReason");
-
-	Params::BP_PalSphere_Body_C_CheckBouncedReason Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (reasonType != nullptr)
-		*reasonType = Parms.reasonType;
-}
-
-
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.DelayPassingPhase
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Phase                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  DelayTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalSphere_Body_C::DelayPassingPhase(int32 Phase, double DelayTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "DelayPassingPhase");
-
-	Params::BP_PalSphere_Body_C_DelayPassingPhase Parms{};
-
-	Parms.Phase = Phase;
-	Parms.DelayTime = DelayTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.DelayPassingPhase_WithEffect
-// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Phase                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  DelayTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalSphere_Body_C::DelayPassingPhase_WithEffect(int32 Phase, double DelayTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "DelayPassingPhase_WithEffect");
-
-	Params::BP_PalSphere_Body_C_DelayPassingPhase_WithEffect Parms{};
-
-	Parms.Phase = Phase;
-	Parms.DelayTime = DelayTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.ExecuteUbergraph_BP_PalSphere_Body
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalSphere_Body_C::ExecuteUbergraph_BP_PalSphere_Body(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "ExecuteUbergraph_BP_PalSphere_Body");
-
-	Params::BP_PalSphere_Body_C_ExecuteUbergraph_BP_PalSphere_Body Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.FailedCapture_OutOfBall
-// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
-
-void ABP_PalSphere_Body_C::FailedCapture_OutOfBall()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "FailedCapture_OutOfBall");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.FindOwnerPlayer
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class APalPlayerCharacter**             Player                                                 (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalSphere_Body_C::FindOwnerPlayer(class APalPlayerCharacter** Player)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "FindOwnerPlayer");
-
-	Params::BP_PalSphere_Body_C_FindOwnerPlayer Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Player != nullptr)
-		*Player = Parms.Player;
-}
-
-
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.FlyToSkyEvent
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Delay                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalSphere_Body_C::FlyToSkyEvent(double Delay)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "FlyToSkyEvent");
-
-	Params::BP_PalSphere_Body_C_FlyToSkyEvent Parms{};
-
-	Parms.Delay = Delay;
-
-	UObject::ProcessEvent(Func, &Parms);
+	if (isSkip != nullptr)
+		*isSkip = Parms.isSkip;
 }
 
 
@@ -265,71 +377,213 @@ void ABP_PalSphere_Body_C::IntoBallEvent()
 }
 
 
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.IsSkipFirstJudge
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.FlyToSkyEvent
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Delay                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalSphere_Body_C::FlyToSkyEvent(double Delay)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "FlyToSkyEvent");
+
+	Params::BP_PalSphere_Body_C_FlyToSkyEvent Parms{};
+
+	Parms.Delay = Delay;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.FindOwnerPlayer
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class APalPlayerCharacter**             Player                                                 (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalSphere_Body_C::FindOwnerPlayer(class APalPlayerCharacter** Player)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "FindOwnerPlayer");
+
+	Params::BP_PalSphere_Body_C_FindOwnerPlayer Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Player != nullptr)
+		*Player = Parms.Player;
+}
+
+
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.FailedCapture_OutOfBall
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
+
+void ABP_PalSphere_Body_C::FailedCapture_OutOfBall()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "FailedCapture_OutOfBall");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.ExecuteUbergraph_BP_PalSphere_Body
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalSphere_Body_C::ExecuteUbergraph_BP_PalSphere_Body(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "ExecuteUbergraph_BP_PalSphere_Body");
+
+	Params::BP_PalSphere_Body_C_ExecuteUbergraph_BP_PalSphere_Body Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.DelayPassingPhase_WithEffect
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Phase                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  DelayTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalSphere_Body_C::DelayPassingPhase_WithEffect(int32 Phase, double DelayTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "DelayPassingPhase_WithEffect");
+
+	Params::BP_PalSphere_Body_C_DelayPassingPhase_WithEffect Parms{};
+
+	Parms.Phase = Phase;
+	Parms.DelayTime = DelayTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.DelayPassingPhase
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Phase                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  DelayTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalSphere_Body_C::DelayPassingPhase(int32 Phase, double DelayTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "DelayPassingPhase");
+
+	Params::BP_PalSphere_Body_C_DelayPassingPhase Parms{};
+
+	Parms.Phase = Phase;
+	Parms.DelayTime = DelayTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.CheckBouncedReason
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UPalCharacterParameterComponent*  Parameter                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// TArray<double>&                         RateList                                               (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// bool*                                   isSkip                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// E_PalCaptureSphereBouncedReason*        reasonType                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalSphere_Body_C::IsSkipFirstJudge(class UPalCharacterParameterComponent* Parameter, TArray<double>& RateList, bool* isSkip)
+void ABP_PalSphere_Body_C::CheckBouncedReason(E_PalCaptureSphereBouncedReason* reasonType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "IsSkipFirstJudge");
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "CheckBouncedReason");
 
-	Params::BP_PalSphere_Body_C_IsSkipFirstJudge Parms{};
-
-	Parms.Parameter = Parameter;
-	Parms.RateList = std::move(RateList);
+	Params::BP_PalSphere_Body_C_CheckBouncedReason Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	RateList = std::move(Parms.RateList);
-
-	if (isSkip != nullptr)
-		*isSkip = Parms.isSkip;
+	if (reasonType != nullptr)
+		*reasonType = Parms.reasonType;
 }
 
 
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.JudgeProcess
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.CaptureSuccessEvent
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
+
+void ABP_PalSphere_Body_C::CaptureSuccessEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "CaptureSuccessEvent");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.CalculateCaptureRate
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   JudgeIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   CaptureLevel_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    SneakBonus                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<double>*                         rateArray                                              (Parm, OutParm)
 
-void ABP_PalSphere_Body_C::JudgeProcess(int32 JudgeIndex, bool* Result)
+void ABP_PalSphere_Body_C::CalculateCaptureRate(int32 CaptureLevel_0, bool SneakBonus, TArray<double>* rateArray)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "JudgeProcess");
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "CalculateCaptureRate");
 
-	Params::BP_PalSphere_Body_C_JudgeProcess Parms{};
+	Params::BP_PalSphere_Body_C_CalculateCaptureRate Parms{};
 
-	Parms.JudgeIndex = JudgeIndex;
+	Parms.CaptureLevel_0 = CaptureLevel_0;
+	Parms.SneakBonus = SneakBonus;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Result != nullptr)
-		*Result = Parms.Result;
+	if (rateArray != nullptr)
+		*rateArray = std::move(Parms.rateArray);
 }
 
 
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.Judging
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.BounceBallEvent
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
+
+void ABP_PalSphere_Body_C::BounceBallEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "BounceBallEvent");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.BallShakeTick
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalSphere_Body_C::Judging(double DeltaTime)
+void ABP_PalSphere_Body_C::BallShakeTick(double DeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "Judging");
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "BallShakeTick");
 
-	Params::BP_PalSphere_Body_C_Judging Parms{};
+	Params::BP_PalSphere_Body_C_BallShakeTick Parms{};
 
 	Parms.DeltaTime = DeltaTime;
 
@@ -337,291 +591,43 @@ void ABP_PalSphere_Body_C::Judging(double DeltaTime)
 }
 
 
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.OnCompleteCaptureEmissiveEffect
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalVisualEffectBase*             VisualEffect                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalSphere_Body_C::OnCompleteCaptureEmissiveEffect(class UPalVisualEffectBase* VisualEffect)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "OnCompleteCaptureEmissiveEffect");
-
-	Params::BP_PalSphere_Body_C_OnCompleteCaptureEmissiveEffect Parms{};
-
-	Parms.VisualEffect = VisualEffect;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.OnPassingCapturePhase_イベント_0
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   PhaseCount                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPalIndividualCharacterHandle*    targetHandle_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalSphere_Body_C::OnPassingCapturePhase_イベント_0(int32 PhaseCount, class UPalIndividualCharacterHandle* targetHandle_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "OnPassingCapturePhase_イベント_0");
-
-	Params::BP_PalSphere_Body_C_OnPassingCapturePhase_イベント_0 Parms{};
-
-	Parms.PhaseCount = PhaseCount;
-	Parms.targetHandle_0 = targetHandle_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.OnShakeBodyToALL
-// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
-
-void ABP_PalSphere_Body_C::OnShakeBodyToALL()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "OnShakeBodyToALL");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.OverwriteJudge_ForFullRelease
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<bool>&                           OriginalJudgeFlagArray                                 (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// double                                  JudgeRate                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPalIndividualCharacterParameter* IndividualParameter                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// TArray<bool>*                           outJudgeFlagArray                                      (Parm, OutParm)
-
-void ABP_PalSphere_Body_C::OverwriteJudge_ForFullRelease(TArray<bool>& OriginalJudgeFlagArray, double JudgeRate, class UPalIndividualCharacterParameter* IndividualParameter, TArray<bool>* outJudgeFlagArray)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "OverwriteJudge_ForFullRelease");
-
-	Params::BP_PalSphere_Body_C_OverwriteJudge_ForFullRelease Parms{};
-
-	Parms.OriginalJudgeFlagArray = std::move(OriginalJudgeFlagArray);
-	Parms.JudgeRate = JudgeRate;
-	Parms.IndividualParameter = IndividualParameter;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	OriginalJudgeFlagArray = std::move(Parms.OriginalJudgeFlagArray);
-
-	if (outJudgeFlagArray != nullptr)
-		*outJudgeFlagArray = std::move(Parms.outJudgeFlagArray);
-}
-
-
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.PlayBallCenterEffect
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_PalSphere_Body_C::PlayBallCenterEffect()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "PlayBallCenterEffect");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.PlayCaptureAbsorbToBallEffect
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.TickMovement_MoveToSky
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_PalSphere_Body_C::PlayCaptureAbsorbToBallEffect()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "PlayCaptureAbsorbToBallEffect");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.PlayCaptureEffectEvent
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_PalSphere_Body_C::PlayCaptureEffectEvent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "PlayCaptureEffectEvent");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.PlayOpenSphereEffect
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_PalSphere_Body_C::PlayOpenSphereEffect()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "PlayOpenSphereEffect");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.PlaySoundShake
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_PalSphere_Body_C::PlaySoundShake()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "PlaySoundShake");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.PrevIndexFullPercentage
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   IsFull                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalSphere_Body_C::PrevIndexFullPercentage(int32 Index_0, bool* IsFull)
+void ABP_PalSphere_Body_C::TickMovement_MoveToSky(double DeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "PrevIndexFullPercentage");
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "TickMovement_MoveToSky");
 
-	Params::BP_PalSphere_Body_C_PrevIndexFullPercentage Parms{};
+	Params::BP_PalSphere_Body_C_TickMovement_MoveToSky Parms{};
 
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (IsFull != nullptr)
-		*IsFull = Parms.IsFull;
-}
-
-
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_PalSphere_Body_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalSphere_Body_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "ReceiveTick");
-
-	Params::BP_PalSphere_Body_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
+	Parms.DeltaTime = DeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.SetCaptureState
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.TickMovement_HitedBall
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EPalCaptureSphereState                  NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalSphere_Body_C::SetCaptureState(EPalCaptureSphereState NewState)
+void ABP_PalSphere_Body_C::TickMovement_HitedBall(double DeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "SetCaptureState");
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "TickMovement_HitedBall");
 
-	Params::BP_PalSphere_Body_C_SetCaptureState Parms{};
+	Params::BP_PalSphere_Body_C_TickMovement_HitedBall Parms{};
 
-	Parms.NewState = NewState;
+	Parms.DeltaTime = DeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.SetParameterCaptureAbsorbToBallEffectBySize
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UNiagaraComponent*                Effect                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalSphere_Body_C::SetParameterCaptureAbsorbToBallEffectBySize(class UNiagaraComponent* Effect)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "SetParameterCaptureAbsorbToBallEffectBySize");
-
-	Params::BP_PalSphere_Body_C_SetParameterCaptureAbsorbToBallEffectBySize Parms{};
-
-	Parms.Effect = Effect;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.SetupInServer
-// (Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class APalCharacter*                    TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalSphere_Body_C::SetupInServer(class APalCharacter* TargetCharacter)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "SetupInServer");
-
-	Params::BP_PalSphere_Body_C_SetupInServer Parms{};
-
-	Parms.TargetCharacter = TargetCharacter;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.StopTargetPal
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_PalSphere_Body_C::StopTargetPal()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "StopTargetPal");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -649,41 +655,35 @@ void ABP_PalSphere_Body_C::SynchronizeJudgeParameter(const TArray<bool>& JudgeFl
 }
 
 
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.TickMovement_HitedBall
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.StopTargetPal
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_PalSphere_Body_C::TickMovement_HitedBall(double DeltaTime)
+void ABP_PalSphere_Body_C::StopTargetPal()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "TickMovement_HitedBall");
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "StopTargetPal");
 
-	Params::BP_PalSphere_Body_C_TickMovement_HitedBall Parms{};
-
-	Parms.DeltaTime = DeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_PalSphere_Body.BP_PalSphere_Body_C.TickMovement_MoveToSky
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_PalSphere_Body.BP_PalSphere_Body_C.SetupInServer
+// (Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APalCharacter*                    TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalSphere_Body_C::TickMovement_MoveToSky(double DeltaTime)
+void ABP_PalSphere_Body_C::SetupInServer(class APalCharacter* TargetCharacter)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalSphere_Body_C", "TickMovement_MoveToSky");
+		Func = Class->GetFunction("BP_PalSphere_Body_C", "SetupInServer");
 
-	Params::BP_PalSphere_Body_C_TickMovement_MoveToSky Parms{};
+	Params::BP_PalSphere_Body_C_SetupInServer Parms{};
 
-	Parms.DeltaTime = DeltaTime;
+	Parms.TargetCharacter = TargetCharacter;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

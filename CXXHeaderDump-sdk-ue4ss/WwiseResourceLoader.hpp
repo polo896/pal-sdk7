@@ -82,7 +82,7 @@ struct FWwiseLanguageId
 
 struct FWwiseLocalizedAuxBusCookedData
 {
-    TMap<class FWwiseLanguageCookedData, class FWwiseAuxBusCookedData> AuxBusLanguageMap; // 0x0000 (size: 0x50)
+    TMap<FWwiseLanguageCookedData, FWwiseAuxBusCookedData> AuxBusLanguageMap;         // 0x0000 (size: 0x50)
     FName DebugName;                                                                  // 0x0050 (size: 0x8)
     int32 AuxBusId;                                                                   // 0x0058 (size: 0x4)
 
@@ -90,7 +90,7 @@ struct FWwiseLocalizedAuxBusCookedData
 
 struct FWwiseLocalizedEventCookedData
 {
-    TMap<class FWwiseLanguageCookedData, class FWwiseEventCookedData> EventLanguageMap; // 0x0000 (size: 0x50)
+    TMap<FWwiseLanguageCookedData, FWwiseEventCookedData> EventLanguageMap;           // 0x0000 (size: 0x50)
     FName DebugName;                                                                  // 0x0050 (size: 0x8)
     int32 EventId;                                                                    // 0x0058 (size: 0x4)
 
@@ -98,7 +98,7 @@ struct FWwiseLocalizedEventCookedData
 
 struct FWwiseLocalizedShareSetCookedData
 {
-    TMap<class FWwiseLanguageCookedData, class FWwiseShareSetCookedData> ShareSetLanguageMap; // 0x0000 (size: 0x50)
+    TMap<FWwiseLanguageCookedData, FWwiseShareSetCookedData> ShareSetLanguageMap;     // 0x0000 (size: 0x50)
     FName DebugName;                                                                  // 0x0050 (size: 0x8)
     int32 ShareSetId;                                                                 // 0x0058 (size: 0x4)
 
@@ -106,7 +106,7 @@ struct FWwiseLocalizedShareSetCookedData
 
 struct FWwiseLocalizedSoundBankCookedData
 {
-    TMap<class FWwiseLanguageCookedData, class FWwiseSoundBankCookedData> SoundBankLanguageMap; // 0x0000 (size: 0x50)
+    TMap<FWwiseLanguageCookedData, FWwiseSoundBankCookedData> SoundBankLanguageMap;   // 0x0000 (size: 0x50)
     FName DebugName;                                                                  // 0x0050 (size: 0x8)
     int32 SoundBankId;                                                                // 0x0058 (size: 0x4)
 

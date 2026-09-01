@@ -19,25 +19,73 @@
 namespace SDK::Params
 {
 
-// Function WBP_RepairEquipment.WBP_RepairEquipment_C.BndEvt__WBP_RepairEquipment_WBP_IngameMenu_Repair_K2Node_ComponentBoundEvent_1_OnClickedAnyItemSlot__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_RepairEquipment_C_BndEvt__WBP_RepairEquipment_WBP_IngameMenu_Repair_K2Node_ComponentBoundEvent_1_OnClickedAnyItemSlot__DelegateSignature final
+// Function WBP_RepairEquipment.WBP_RepairEquipment_C.StartRepair
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_RepairEquipment_C_StartRepair final
 {
 public:
-	class UPalItemSlot*                           itemSlot;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsEmpty_ReturnValue;                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_RepairEquipment_C_BndEvt__WBP_RepairEquipment_WBP_IngameMenu_Repair_K2Node_ComponentBoundEvent_1_OnClickedAnyItemSlot__DelegateSignature;
+DUMPER7_ASSERTS_WBP_RepairEquipment_C_StartRepair;
 
-// Function WBP_RepairEquipment.WBP_RepairEquipment_C.EndRepair
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_RepairEquipment_C_EndRepair final
+// Function WBP_RepairEquipment.WBP_RepairEquipment_C.Setup
+// 0x0014 (0x0014 - 0x0000)
+struct WBP_RepairEquipment_C_Setup final
+{
+public:
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x0010(0x0004)(NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_RepairEquipment_C_Setup;
+
+// Function WBP_RepairEquipment.WBP_RepairEquipment_C.RefreshRepairable
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_RepairEquipment_C_RefreshRepairable final
+{
+public:
+	TArray<struct FPalStaticItemIdAndNum>         CallFunc_CollectRepairInfo_OutRequiredMaterials;   // 0x0000(0x0010)(ReferenceParm)
+	bool                                          CallFunc_CollectRepairInfo_OutCanRepair;           // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UPalItemSlot*>                   CallFunc_CollectRepairableSlot_OutRepairableSlots; // 0x0018(0x0010)(ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_RepairEquipment_C_RefreshRepairable;
+
+// Function WBP_RepairEquipment.WBP_RepairEquipment_C.OpenRepairAllWindow
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_RepairEquipment_C_OpenRepairAllWindow final
+{
+public:
+	TDelegate<void(class UPalHUDDispatchParameterBase* Param)> K2Node_CreateDelegate_OutputDelegate; // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue_1;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBP_RepairAllWindowDispatchParameter_C* CallFunc_SpawnObject_ReturnValue;                  // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  CallFunc_Push_ReturnValue;                         // 0x0028(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_RepairEquipment_C_OpenRepairAllWindow;
+
+// Function WBP_RepairEquipment.WBP_RepairEquipment_C.OnRecievedRepairResult
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_RepairEquipment_C_OnRecievedRepairResult final
 {
 public:
 	bool                                          IsSuccess;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                CallFunc_GetDefaultFocusTarget_TargetWidget;       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_RepairEquipment_C_EndRepair;
+DUMPER7_ASSERTS_WBP_RepairEquipment_C_OnRecievedRepairResult;
+
+// Function WBP_RepairEquipment.WBP_RepairEquipment_C.OnClosedRepairAllWindow
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_RepairEquipment_C_OnClosedRepairAllWindow final
+{
+public:
+	class UPalHUDDispatchParameterBase*           Param_0;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBP_RepairAllWindowDispatchParameter_C* K2Node_DynamicCast_AsBP_Repair_All_Window_Dispatch_Parameter; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_RepairEquipment_C_OnClosedRepairAllWindow;
 
 // Function WBP_RepairEquipment.WBP_RepairEquipment_C.ExecuteUbergraph_WBP_RepairEquipment
 // 0x0118 (0x0118 - 0x0000)
@@ -72,73 +120,25 @@ public:
 };
 DUMPER7_ASSERTS_WBP_RepairEquipment_C_ExecuteUbergraph_WBP_RepairEquipment;
 
-// Function WBP_RepairEquipment.WBP_RepairEquipment_C.OnClosedRepairAllWindow
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_RepairEquipment_C_OnClosedRepairAllWindow final
-{
-public:
-	class UPalHUDDispatchParameterBase*           Param_0;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UBP_RepairAllWindowDispatchParameter_C* K2Node_DynamicCast_AsBP_Repair_All_Window_Dispatch_Parameter; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_RepairEquipment_C_OnClosedRepairAllWindow;
-
-// Function WBP_RepairEquipment.WBP_RepairEquipment_C.OnRecievedRepairResult
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_RepairEquipment_C_OnRecievedRepairResult final
+// Function WBP_RepairEquipment.WBP_RepairEquipment_C.EndRepair
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_RepairEquipment_C_EndRepair final
 {
 public:
 	bool                                          IsSuccess;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_GetDefaultFocusTarget_TargetWidget;       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_RepairEquipment_C_OnRecievedRepairResult;
+DUMPER7_ASSERTS_WBP_RepairEquipment_C_EndRepair;
 
-// Function WBP_RepairEquipment.WBP_RepairEquipment_C.OpenRepairAllWindow
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_RepairEquipment_C_OpenRepairAllWindow final
+// Function WBP_RepairEquipment.WBP_RepairEquipment_C.BndEvt__WBP_RepairEquipment_WBP_IngameMenu_Repair_K2Node_ComponentBoundEvent_1_OnClickedAnyItemSlot__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_RepairEquipment_C_BndEvt__WBP_RepairEquipment_WBP_IngameMenu_Repair_K2Node_ComponentBoundEvent_1_OnClickedAnyItemSlot__DelegateSignature final
 {
 public:
-	TDelegate<void(class UPalHUDDispatchParameterBase* Param)> K2Node_CreateDelegate_OutputDelegate; // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue_1;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UBP_RepairAllWindowDispatchParameter_C* CallFunc_SpawnObject_ReturnValue;                  // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  CallFunc_Push_ReturnValue;                         // 0x0028(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalItemSlot*                           itemSlot;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_RepairEquipment_C_OpenRepairAllWindow;
-
-// Function WBP_RepairEquipment.WBP_RepairEquipment_C.RefreshRepairable
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_RepairEquipment_C_RefreshRepairable final
-{
-public:
-	TArray<struct FPalStaticItemIdAndNum>         CallFunc_CollectRepairInfo_OutRequiredMaterials;   // 0x0000(0x0010)(ReferenceParm)
-	bool                                          CallFunc_CollectRepairInfo_OutCanRepair;           // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UPalItemSlot*>                   CallFunc_CollectRepairableSlot_OutRepairableSlots; // 0x0018(0x0010)(ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_RepairEquipment_C_RefreshRepairable;
-
-// Function WBP_RepairEquipment.WBP_RepairEquipment_C.Setup
-// 0x0014 (0x0014 - 0x0000)
-struct WBP_RepairEquipment_C_Setup final
-{
-public:
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x0010(0x0004)(NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_RepairEquipment_C_Setup;
-
-// Function WBP_RepairEquipment.WBP_RepairEquipment_C.StartRepair
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_RepairEquipment_C_StartRepair final
-{
-public:
-	bool                                          CallFunc_Array_IsEmpty_ReturnValue;                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_RepairEquipment_C_StartRepair;
+DUMPER7_ASSERTS_WBP_RepairEquipment_C_BndEvt__WBP_RepairEquipment_WBP_IngameMenu_Repair_K2Node_ComponentBoundEvent_1_OnClickedAnyItemSlot__DelegateSignature;
 
 // Function WBP_RepairEquipment.WBP_RepairEquipment_C.BP_GetDesiredFocusTarget
 // 0x0010 (0x0010 - 0x0000)

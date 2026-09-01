@@ -13,7 +13,7 @@ class ABP_CaptureWire_C : public AActor
     double MovableRange;                                                              // 0x02C8 (size: 0x8)
     TArray<FVector> AnchorGoalPoint;                                                  // 0x02D0 (size: 0x10)
     TArray<TEnumAsByte<EObjectTypeQuery>> LayHitObjectTypes;                          // 0x02E0 (size: 0x10)
-    TArray<class UStaticMeshComponent*> WireMesh;                                     // 0x02F0 (size: 0x10)
+    TArray<UStaticMeshComponent*> WireMesh;                                           // 0x02F0 (size: 0x10)
     bool isFixMode;                                                                   // 0x0300 (size: 0x1)
     bool isAnchorReach;                                                               // 0x0301 (size: 0x1)
     FVector AnchorCenterPos;                                                          // 0x0308 (size: 0x18)

@@ -78,25 +78,25 @@ public:
 	bool                                          CollapseLastPal;                                   // 0x0598(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AddItemInfo(bool isHideWhenZero, class FName ItemId, int64 itemNum, int64 gaugeMaxNumBorder);
-	void AddTaskDetailText(const class FText& Text, int32 nowNum, int32 requireNum, int32 TaskIndex);
-	void ExecuteUbergraph_WBP_IngameMenu_Task_Simple(int32 EntryPoint);
-	void OnInitialized();
-	void OnUISettingaChanged(const struct FPalOptionUISettings& PrevSettings, const struct FPalOptionUISettings& NewSettings);
-	void RemoveAllItemDetail();
-	void RemoveTaskDetailText();
-	void Set_Camp_Name(const class FText& BaseCampName);
-	void Set_Camp_Pal_and_Bed_Num(int32 nowPalNum, int32 maxPalNum, int32 BedNum);
-	void Set_Pal_Slots(TArray<class UPalIndividualCharacterSlot*>& Slots, int32 maxPalNum, int32 Palbed);
-	void Set_Task_List(const struct FPalBaseCampTaskCheckedData& taskCheckedData, const struct FPalBaseCampTaskDataSet& TaskData);
-	void SetActiveSimpleInfoMode(bool bActiveSimpleInfo);
-	void SetEnableWorkerBattleTypeInfo(bool IsEnable);
-	void SetEnableWorkHardInfo(bool IsEnable);
-	void SetRemainDIsplayPalNum(int32 Num);
-	void SetRemainTimer(double remainTime);
-	void SetVisibilityTaskDetail(ESlateVisibility NewVisibility);
-	void SetWorkerBattleType(EPalBaseCampWorkerDirectionBattleType BattleType);
 	void SetWorkHardType(EPalBaseCampPassiveEffectWorkHardType WorkHardType);
+	void SetWorkerBattleType(EPalBaseCampWorkerDirectionBattleType BattleType);
+	void SetVisibilityTaskDetail(ESlateVisibility NewVisibility);
+	void SetRemainTimer(double remainTime);
+	void SetRemainDIsplayPalNum(int32 Num);
+	void SetEnableWorkHardInfo(bool IsEnable);
+	void SetEnableWorkerBattleTypeInfo(bool IsEnable);
+	void SetActiveSimpleInfoMode(bool bActiveSimpleInfo);
+	void Set_Task_List(const struct FPalBaseCampTaskCheckedData& taskCheckedData, const struct FPalBaseCampTaskDataSet& TaskData);
+	void Set_Pal_Slots(TArray<class UPalIndividualCharacterSlot*>& Slots, int32 maxPalNum, int32 Palbed);
+	void Set_Camp_Pal_and_Bed_Num(int32 nowPalNum, int32 maxPalNum, int32 BedNum);
+	void Set_Camp_Name(const class FText& BaseCampName);
+	void RemoveTaskDetailText();
+	void RemoveAllItemDetail();
+	void OnUISettingaChanged(const struct FPalOptionUISettings& PrevSettings, const struct FPalOptionUISettings& NewSettings);
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_IngameMenu_Task_Simple(int32 EntryPoint);
+	void AddTaskDetailText(const class FText& Text, int32 nowNum, int32 requireNum, int32 TaskIndex);
+	void AddItemInfo(bool isHideWhenZero, class FName ItemId, int64 itemNum, int64 gaugeMaxNumBorder);
 
 public:
 	static class UClass* StaticClass()

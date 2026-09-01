@@ -32,8 +32,8 @@ public:
 	class USceneComponent*                        IndicatorOrigin;                                   // 0x0488(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_MapObject_TreasureBox_FishingJunkSpot_Junk_Rank1(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_MapObject_TreasureBox_FishingJunkSpot_Junk_Rank1(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

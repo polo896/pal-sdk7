@@ -34,15 +34,15 @@ public:
 	float                                         EffectDuration;                                    // 0x0480(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_SkillEffect_GrassTornadoBullet_AttackFilter_K2Node_ComponentBoundEvent_0_OnAttackDelegate__DelegateSignature(class AActor* Defencer, const struct FPalDamageInfo& DamageInfo, int32 HitCount, class UPrimitiveComponent* AttackerComponent);
-	void CancelShoot();
-	void EndProcess();
-	void ExecuteUbergraph_BP_SkillEffect_GrassTornadoBullet(int32 EntryPoint);
-	void FadeOutEffect(double DeltaSecond);
-	void MoveToTargetLocation(double DeltaTime);
-	void ReceiveBeginPlay();
-	void SetRandomValueIntoNiagaraVariable(class UNiagaraComponent* NiagaraComp);
 	void ShootBullet(const struct FVector& TargetLocation);
+	void SetRandomValueIntoNiagaraVariable(class UNiagaraComponent* NiagaraComp);
+	void ReceiveBeginPlay();
+	void MoveToTargetLocation(double DeltaTime);
+	void FadeOutEffect(double DeltaSecond);
+	void ExecuteUbergraph_BP_SkillEffect_GrassTornadoBullet(int32 EntryPoint);
+	void EndProcess();
+	void CancelShoot();
+	void BndEvt__BP_SkillEffect_GrassTornadoBullet_AttackFilter_K2Node_ComponentBoundEvent_0_OnAttackDelegate__DelegateSignature(class AActor* Defencer, const struct FPalDamageInfo& DamageInfo, int32 HitCount, class UPrimitiveComponent* AttackerComponent);
 
 public:
 	static class UClass* StaticClass()

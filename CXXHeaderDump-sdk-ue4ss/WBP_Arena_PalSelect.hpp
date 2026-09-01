@@ -33,8 +33,8 @@ class UWBP_Arena_PalSelect_C : public UPalUserWidgetOverlayUI
     class UPalHUDDispatchParameter_ArenaPalSelect* As Pal HUDDispatch Parameter Arena Pal Select; // 0x0550 (size: 0x8)
     FWBP_Arena_PalSelect_COnPartySet OnPartySet;                                      // 0x0558 (size: 0x10)
     void OnPartySet(FPalArenaPlayerParty NewParty);
-    TArray<class UWBP_Menu_PalList_C*> SelfPalList;                                   // 0x0568 (size: 0x10)
-    TArray<class UWBP_Menu_PalList_C*> RivalPalList;                                  // 0x0578 (size: 0x10)
+    TArray<UWBP_Menu_PalList_C*> SelfPalList;                                         // 0x0568 (size: 0x10)
+    TArray<UWBP_Menu_PalList_C*> RivalPalList;                                        // 0x0578 (size: 0x10)
     class UPalArenaSequencer* Arena Sequencer;                                        // 0x0588 (size: 0x8)
     bool EnableDetailPanel;                                                           // 0x0590 (size: 0x1)
     FPalArenaPlayerParty CurrentParty;                                                // 0x0598 (size: 0x20)
@@ -57,7 +57,7 @@ class UWBP_Arena_PalSelect_C : public UPalUserWidgetOverlayUI
     void Toggle Select Party(class UPalIndividualCharacterHandle* CharacterHandle);
     void Display Detail(class UPalIndividualCharacterHandle* CharacterHandle);
     void CloseDetail();
-    void SetupPalList(const TArray<class UPalIndividualCharacterParameter*>& PalList, bool IsRival);
+    void SetupPalList(const TArray<UPalIndividualCharacterParameter*>& PalList, bool IsRival);
     void SetupCharacterName();
     void Setup(bool IsSoloMode);
     void Finished_6CCB6F4C49947D6ED3DAE8939CE96337();

@@ -17,89 +17,105 @@
 namespace SDK
 {
 
-// Function WBP_PalWork_Infirmary.WBP_PalWork_Infirmary_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PalWork_Infirmary_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_Infirmary_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWork_Infirmary.WBP_PalWork_Infirmary_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PalWork_Infirmary_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_Infirmary_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWork_Infirmary.WBP_PalWork_Infirmary_C.DisplayCheck
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalWork_Infirmary_C::DisplayCheck()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_Infirmary_C", "DisplayCheck");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWork_Infirmary.WBP_PalWork_Infirmary_C.ExecuteUbergraph_WBP_PalWork_Infirmary
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_PalWork_Infirmary.WBP_PalWork_Infirmary_C.ShowHygieneStarLevel
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCanvasPanel*                     Canvas                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// TArray<class UImage*>&                  StarImages                                             (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+// int32                                   CurrentStarLevel                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalWork_Infirmary_C::ExecuteUbergraph_WBP_PalWork_Infirmary(int32 EntryPoint)
+void UWBP_PalWork_Infirmary_C::ShowHygieneStarLevel(class UCanvasPanel* Canvas, TArray<class UImage*>& StarImages, int32 CurrentStarLevel)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_Infirmary_C", "ExecuteUbergraph_WBP_PalWork_Infirmary");
+		Func = Class->GetFunction("WBP_PalWork_Infirmary_C", "ShowHygieneStarLevel");
 
-	Params::WBP_PalWork_Infirmary_C_ExecuteUbergraph_WBP_PalWork_Infirmary Parms{};
+	Params::WBP_PalWork_Infirmary_C_ShowHygieneStarLevel Parms{};
 
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWork_Infirmary.WBP_PalWork_Infirmary_C.GetTargetStarLevelCanvas
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// int32                                   MaxStarLevel                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCanvasPanel**                    Canvas                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalWork_Infirmary_C::GetTargetStarLevelCanvas(int32 MaxStarLevel, class UCanvasPanel** Canvas)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_Infirmary_C", "GetTargetStarLevelCanvas");
-
-	Params::WBP_PalWork_Infirmary_C_GetTargetStarLevelCanvas Parms{};
-
-	Parms.MaxStarLevel = MaxStarLevel;
+	Parms.Canvas = Canvas;
+	Parms.StarImages = std::move(StarImages);
+	Parms.CurrentStarLevel = CurrentStarLevel;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Canvas != nullptr)
-		*Canvas = Parms.Canvas;
+	StarImages = std::move(Parms.StarImages);
+}
+
+
+// Function WBP_PalWork_Infirmary.WBP_PalWork_Infirmary_C.Setup
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalWork_Infirmary_C::Setup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWork_Infirmary_C", "Setup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalWork_Infirmary.WBP_PalWork_Infirmary_C.RefreshProductDisplay
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalWork_Infirmary_C::RefreshProductDisplay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWork_Infirmary_C", "RefreshProductDisplay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalWork_Infirmary.WBP_PalWork_Infirmary_C.OnUpdateClinicStatus
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalWork_Infirmary_C::OnUpdateClinicStatus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWork_Infirmary_C", "OnUpdateClinicStatus");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalWork_Infirmary.WBP_PalWork_Infirmary_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalWork_Infirmary_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWork_Infirmary_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalWork_Infirmary.WBP_PalWork_Infirmary_C.On Updated Worker Pal
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalWorkBase*                     Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWork_Infirmary_C::On_Updated_Worker_Pal(class UPalWorkBase* Work)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWork_Infirmary_C", "On Updated Worker Pal");
+
+	Params::WBP_PalWork_Infirmary_C_On_Updated_Worker_Pal Parms{};
+
+	Parms.Work = Work;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -127,105 +143,89 @@ void UWBP_PalWork_Infirmary_C::GetTargetStarLevelStarImages(int32 MaxStarLevel, 
 }
 
 
-// Function WBP_PalWork_Infirmary.WBP_PalWork_Infirmary_C.On Updated Worker Pal
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalWork_Infirmary.WBP_PalWork_Infirmary_C.GetTargetStarLevelCanvas
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UPalWorkBase*                     Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   MaxStarLevel                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCanvasPanel**                    Canvas                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalWork_Infirmary_C::On_Updated_Worker_Pal(class UPalWorkBase* Work)
+void UWBP_PalWork_Infirmary_C::GetTargetStarLevelCanvas(int32 MaxStarLevel, class UCanvasPanel** Canvas)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_Infirmary_C", "On Updated Worker Pal");
+		Func = Class->GetFunction("WBP_PalWork_Infirmary_C", "GetTargetStarLevelCanvas");
 
-	Params::WBP_PalWork_Infirmary_C_On_Updated_Worker_Pal Parms{};
+	Params::WBP_PalWork_Infirmary_C_GetTargetStarLevelCanvas Parms{};
 
-	Parms.Work = Work;
+	Parms.MaxStarLevel = MaxStarLevel;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Canvas != nullptr)
+		*Canvas = Parms.Canvas;
+}
+
+
+// Function WBP_PalWork_Infirmary.WBP_PalWork_Infirmary_C.ExecuteUbergraph_WBP_PalWork_Infirmary
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWork_Infirmary_C::ExecuteUbergraph_WBP_PalWork_Infirmary(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWork_Infirmary_C", "ExecuteUbergraph_WBP_PalWork_Infirmary");
+
+	Params::WBP_PalWork_Infirmary_C_ExecuteUbergraph_WBP_PalWork_Infirmary Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalWork_Infirmary.WBP_PalWork_Infirmary_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalWork_Infirmary.WBP_PalWork_Infirmary_C.DisplayCheck
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalWork_Infirmary_C::OnSetup()
+void UWBP_PalWork_Infirmary_C::DisplayCheck()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_Infirmary_C", "OnSetup");
+		Func = Class->GetFunction("WBP_PalWork_Infirmary_C", "DisplayCheck");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalWork_Infirmary.WBP_PalWork_Infirmary_C.OnUpdateClinicStatus
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalWork_Infirmary.WBP_PalWork_Infirmary_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_PalWork_Infirmary_C::OnUpdateClinicStatus()
+void UWBP_PalWork_Infirmary_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_Infirmary_C", "OnUpdateClinicStatus");
+		Func = Class->GetFunction("WBP_PalWork_Infirmary_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalWork_Infirmary.WBP_PalWork_Infirmary_C.RefreshProductDisplay
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalWork_Infirmary.WBP_PalWork_Infirmary_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_PalWork_Infirmary_C::RefreshProductDisplay()
+void UWBP_PalWork_Infirmary_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_Infirmary_C", "RefreshProductDisplay");
+		Func = Class->GetFunction("WBP_PalWork_Infirmary_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWork_Infirmary.WBP_PalWork_Infirmary_C.Setup
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalWork_Infirmary_C::Setup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_Infirmary_C", "Setup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWork_Infirmary.WBP_PalWork_Infirmary_C.ShowHygieneStarLevel
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UCanvasPanel*                     Canvas                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// TArray<class UImage*>&                  StarImages                                             (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-// int32                                   CurrentStarLevel                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalWork_Infirmary_C::ShowHygieneStarLevel(class UCanvasPanel* Canvas, TArray<class UImage*>& StarImages, int32 CurrentStarLevel)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWork_Infirmary_C", "ShowHygieneStarLevel");
-
-	Params::WBP_PalWork_Infirmary_C_ShowHygieneStarLevel Parms{};
-
-	Parms.Canvas = Canvas;
-	Parms.StarImages = std::move(StarImages);
-	Parms.CurrentStarLevel = CurrentStarLevel;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	StarImages = std::move(Parms.StarImages);
 }
 
 }

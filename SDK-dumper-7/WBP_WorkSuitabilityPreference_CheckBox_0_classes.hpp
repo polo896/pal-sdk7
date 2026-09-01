@@ -38,19 +38,19 @@ public:
 	bool                                          bEnableOperation;                                  // 0x02C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_WorkSuitabilityPreference_CheckBox_0_PalCheckBox_K2Node_ComponentBoundEvent_1_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
-	void BndEvt__WBP_WorkSuitabilityPreference_CheckBox_0_WBP_PalInvisibleButton_0_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_WorkSuitabilityPreference_CheckBox_0_WBP_PalInvisibleButton_0_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void ExecuteUbergraph_WBP_WorkSuitabilityPreference_CheckBox_0(int32 EntryPoint);
-	void GetBindedSuitability(EPalWorkSuitability* Suitability);
-	void IsBattleSettingCheckBox(bool* IsBattleSetting);
-	void OnInitialized();
-	void SetCheckedState(bool IsChecked);
-	void SetEnableClick(bool IsEnable);
-	void SetOperationPermission(bool InbEnableOperation);
-	void Setup(EPalWorkSuitability BindSuitability);
-	void Setup_ForBattleSetting();
 	void UpdateOperationPermission();
+	void Setup_ForBattleSetting();
+	void Setup(EPalWorkSuitability BindSuitability);
+	void SetOperationPermission(bool InbEnableOperation);
+	void SetEnableClick(bool IsEnable);
+	void SetCheckedState(bool IsChecked);
+	void OnInitialized();
+	void IsBattleSettingCheckBox(bool* IsBattleSetting);
+	void GetBindedSuitability(EPalWorkSuitability* Suitability);
+	void ExecuteUbergraph_WBP_WorkSuitabilityPreference_CheckBox_0(int32 EntryPoint);
+	void BndEvt__WBP_WorkSuitabilityPreference_CheckBox_0_WBP_PalInvisibleButton_0_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_WorkSuitabilityPreference_CheckBox_0_WBP_PalInvisibleButton_0_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_WorkSuitabilityPreference_CheckBox_0_PalCheckBox_K2Node_ComponentBoundEvent_1_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
 
 public:
 	static class UClass* StaticClass()

@@ -19,6 +19,24 @@
 namespace SDK::Params
 {
 
+// Function BP_PalBiomeEffectController.BP_PalBiomeEffectController_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_PalBiomeEffectController_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBiomeEffectController_C_ReceiveTick;
+
+// Function BP_PalBiomeEffectController.BP_PalBiomeEffectController_C.On Biome Enter
+// 0x0001 (0x0001 - 0x0000)
+struct BP_PalBiomeEffectController_C_On_Biome_Enter final
+{
+public:
+	EPalBiomeType                                 Biome_Type;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBiomeEffectController_C_On_Biome_Enter;
+
 // Function BP_PalBiomeEffectController.BP_PalBiomeEffectController_C.ExecuteUbergraph_BP_PalBiomeEffectController
 // 0x01C0 (0x01C0 - 0x0000)
 struct BP_PalBiomeEffectController_C_ExecuteUbergraph_BP_PalBiomeEffectController final
@@ -45,24 +63,6 @@ public:
 	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue;        // 0x01B8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_PalBiomeEffectController_C_ExecuteUbergraph_BP_PalBiomeEffectController;
-
-// Function BP_PalBiomeEffectController.BP_PalBiomeEffectController_C.On Biome Enter
-// 0x0001 (0x0001 - 0x0000)
-struct BP_PalBiomeEffectController_C_On_Biome_Enter final
-{
-public:
-	EPalBiomeType                                 Biome_Type;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBiomeEffectController_C_On_Biome_Enter;
-
-// Function BP_PalBiomeEffectController.BP_PalBiomeEffectController_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_PalBiomeEffectController_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBiomeEffectController_C_ReceiveTick;
 
 }
 

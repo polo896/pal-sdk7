@@ -17,23 +17,14 @@
 namespace SDK::Params
 {
 
-// Function WBP_Ingame_Incubator_AllOpen_List.WBP_Ingame_Incubator_AllOpen_List_C.BndEvt__WBP_Ingame_Incubator_AllOpen_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_Ingame_Incubator_AllOpen_List.WBP_Ingame_Incubator_AllOpen_List_C.Setup
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_Ingame_Incubator_AllOpen_List_C_BndEvt__WBP_Ingame_Incubator_AllOpen_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+struct WBP_Ingame_Incubator_AllOpen_List_C_Setup final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterParameter*       individualParam;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Ingame_Incubator_AllOpen_List_C_BndEvt__WBP_Ingame_Incubator_AllOpen_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_Ingame_Incubator_AllOpen_List.WBP_Ingame_Incubator_AllOpen_List_C.BndEvt__WBP_Ingame_Incubator_AllOpen_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Ingame_Incubator_AllOpen_List_C_BndEvt__WBP_Ingame_Incubator_AllOpen_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Ingame_Incubator_AllOpen_List_C_BndEvt__WBP_Ingame_Incubator_AllOpen_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_Ingame_Incubator_AllOpen_List_C_Setup;
 
 // Function WBP_Ingame_Incubator_AllOpen_List.WBP_Ingame_Incubator_AllOpen_List_C.ExecuteUbergraph_WBP_Ingame_Incubator_AllOpen_List
 // 0x01B8 (0x01B8 - 0x0000)
@@ -91,14 +82,23 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Ingame_Incubator_AllOpen_List_C_ExecuteUbergraph_WBP_Ingame_Incubator_AllOpen_List;
 
-// Function WBP_Ingame_Incubator_AllOpen_List.WBP_Ingame_Incubator_AllOpen_List_C.Setup
+// Function WBP_Ingame_Incubator_AllOpen_List.WBP_Ingame_Incubator_AllOpen_List_C.BndEvt__WBP_Ingame_Incubator_AllOpen_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_Ingame_Incubator_AllOpen_List_C_Setup final
+struct WBP_Ingame_Incubator_AllOpen_List_C_BndEvt__WBP_Ingame_Incubator_AllOpen_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	class UPalIndividualCharacterParameter*       individualParam;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Ingame_Incubator_AllOpen_List_C_Setup;
+DUMPER7_ASSERTS_WBP_Ingame_Incubator_AllOpen_List_C_BndEvt__WBP_Ingame_Incubator_AllOpen_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_Ingame_Incubator_AllOpen_List.WBP_Ingame_Incubator_AllOpen_List_C.BndEvt__WBP_Ingame_Incubator_AllOpen_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Ingame_Incubator_AllOpen_List_C_BndEvt__WBP_Ingame_Incubator_AllOpen_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Ingame_Incubator_AllOpen_List_C_BndEvt__WBP_Ingame_Incubator_AllOpen_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
 
 }
 

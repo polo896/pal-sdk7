@@ -16,149 +16,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.ExecuteUbergraph_WBP_Arena_Rule_ListGroup
-// 0x00A0 (0x00A0 - 0x0000)
-struct WBP_Arena_Rule_ListGroup_C_ExecuteUbergraph_WBP_Arena_Rule_ListGroup final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                K2Node_CustomEvent_Button;                         // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TArray<class UWBP_Arena_RuleListContent_0_C*> K2Node_MakeArray_Array;                            // 0x0028(0x0010)(ReferenceParm, ContainsInstancedReference)
-	class UWBP_Arena_RuleListContent_1_C*         K2Node_DynamicCast_AsWBP_Arena_Rule_List_Content_1; // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Arena_RuleListContent_0_C*         K2Node_DynamicCast_AsWBP_Arena_Rule_List_Content_0; // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UWidget* Button)>        K2Node_CreateDelegate_OutputDelegate_1;            // 0x0054(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0064(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_Arena_RuleListContent_0_C*         CallFunc_Array_Get_Item;                           // 0x0078(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_81[0x3];                                       // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_89[0x3];                                       // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UWidget* Button)>        K2Node_CreateDelegate_OutputDelegate_3;            // 0x008C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Arena_Rule_ListGroup_C_ExecuteUbergraph_WBP_Arena_Rule_ListGroup;
-
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.GetDesiredFocusTarget
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Arena_Rule_ListGroup_C_GetDesiredFocusTarget final
-{
-public:
-	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Arena_Rule_ListGroup_C_GetDesiredFocusTarget;
-
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnBossRestrictChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Arena_Rule_ListGroup_C_OnBossRestrictChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Arena_Rule_ListGroup_C_OnBossRestrictChanged;
-
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnContentHovered
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Arena_Rule_ListGroup_C_OnContentHovered final
-{
-public:
-	class UWidget*                                Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Arena_Rule_ListGroup_C_OnContentHovered;
-
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnDuplicateRestrictChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Arena_Rule_ListGroup_C_OnDuplicateRestrictChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Arena_Rule_ListGroup_C_OnDuplicateRestrictChanged;
-
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnElementRestrictChanged
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Arena_Rule_ListGroup_C_OnElementRestrictChanged final
-{
-public:
-	TArray<EPalElementType>                       Elements;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_Arena_Rule_ListGroup_C_OnElementRestrictChanged;
-
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnHumanRestrictChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Arena_Rule_ListGroup_C_OnHumanRestrictChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Arena_Rule_ListGroup_C_OnHumanRestrictChanged;
-
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnLegendRestrictChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Arena_Rule_ListGroup_C_OnLegendRestrictChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Arena_Rule_ListGroup_C_OnLegendRestrictChanged;
-
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnLevelSyncChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Arena_Rule_ListGroup_C_OnLevelSyncChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Arena_Rule_ListGroup_C_OnLevelSyncChanged;
-
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnPalDamageChanged
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Arena_Rule_ListGroup_C_OnPalDamageChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_SetFieldsInStruct_PalDamageRate_ImplicitCast; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Arena_Rule_ListGroup_C_OnPalDamageChanged;
-
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnPlayerDamageChanged
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Arena_Rule_ListGroup_C_OnPlayerDamageChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_SetFieldsInStruct_PlayerDamageRate_ImplicitCast; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Arena_Rule_ListGroup_C_OnPlayerDamageChanged;
-
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnRideRestrictChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Arena_Rule_ListGroup_C_OnRideRestrictChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Arena_Rule_ListGroup_C_OnRideRestrictChanged;
-
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnTimeLimitDamageChanged
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Arena_Rule_ListGroup_C_OnTimeLimitDamageChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Round_ReturnValue;                        // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Arena_Rule_ListGroup_C_OnTimeLimitDamageChanged;
-
 // Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.Setup
 // 0x0130 (0x0130 - 0x0000)
 struct WBP_Arena_Rule_ListGroup_C_Setup final
@@ -190,6 +47,149 @@ public:
 	double                                        CallFunc_SetupSlider_Value_ImplicitCast_1;         // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Arena_Rule_ListGroup_C_Setup;
+
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnTimeLimitDamageChanged
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Arena_Rule_ListGroup_C_OnTimeLimitDamageChanged final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Round_ReturnValue;                        // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Arena_Rule_ListGroup_C_OnTimeLimitDamageChanged;
+
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnRideRestrictChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Arena_Rule_ListGroup_C_OnRideRestrictChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Arena_Rule_ListGroup_C_OnRideRestrictChanged;
+
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnPlayerDamageChanged
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Arena_Rule_ListGroup_C_OnPlayerDamageChanged final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_SetFieldsInStruct_PlayerDamageRate_ImplicitCast; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Arena_Rule_ListGroup_C_OnPlayerDamageChanged;
+
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnPalDamageChanged
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Arena_Rule_ListGroup_C_OnPalDamageChanged final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_SetFieldsInStruct_PalDamageRate_ImplicitCast; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Arena_Rule_ListGroup_C_OnPalDamageChanged;
+
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnLevelSyncChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Arena_Rule_ListGroup_C_OnLevelSyncChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Arena_Rule_ListGroup_C_OnLevelSyncChanged;
+
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnLegendRestrictChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Arena_Rule_ListGroup_C_OnLegendRestrictChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Arena_Rule_ListGroup_C_OnLegendRestrictChanged;
+
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnHumanRestrictChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Arena_Rule_ListGroup_C_OnHumanRestrictChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Arena_Rule_ListGroup_C_OnHumanRestrictChanged;
+
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnElementRestrictChanged
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Arena_Rule_ListGroup_C_OnElementRestrictChanged final
+{
+public:
+	TArray<EPalElementType>                       Elements;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_Arena_Rule_ListGroup_C_OnElementRestrictChanged;
+
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnDuplicateRestrictChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Arena_Rule_ListGroup_C_OnDuplicateRestrictChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Arena_Rule_ListGroup_C_OnDuplicateRestrictChanged;
+
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnContentHovered
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Arena_Rule_ListGroup_C_OnContentHovered final
+{
+public:
+	class UWidget*                                Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Arena_Rule_ListGroup_C_OnContentHovered;
+
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnBossRestrictChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Arena_Rule_ListGroup_C_OnBossRestrictChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Arena_Rule_ListGroup_C_OnBossRestrictChanged;
+
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.GetDesiredFocusTarget
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Arena_Rule_ListGroup_C_GetDesiredFocusTarget final
+{
+public:
+	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Arena_Rule_ListGroup_C_GetDesiredFocusTarget;
+
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.ExecuteUbergraph_WBP_Arena_Rule_ListGroup
+// 0x00A0 (0x00A0 - 0x0000)
+struct WBP_Arena_Rule_ListGroup_C_ExecuteUbergraph_WBP_Arena_Rule_ListGroup final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                K2Node_CustomEvent_Button;                         // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TArray<class UWBP_Arena_RuleListContent_0_C*> K2Node_MakeArray_Array;                            // 0x0028(0x0010)(ReferenceParm, ContainsInstancedReference)
+	class UWBP_Arena_RuleListContent_1_C*         K2Node_DynamicCast_AsWBP_Arena_Rule_List_Content_1; // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Arena_RuleListContent_0_C*         K2Node_DynamicCast_AsWBP_Arena_Rule_List_Content_0; // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UWidget* Button)>        K2Node_CreateDelegate_OutputDelegate_1;            // 0x0054(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0064(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_Arena_RuleListContent_0_C*         CallFunc_Array_Get_Item;                           // 0x0078(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_81[0x3];                                       // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_89[0x3];                                       // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class UWidget* Button)>        K2Node_CreateDelegate_OutputDelegate_3;            // 0x008C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Arena_Rule_ListGroup_C_ExecuteUbergraph_WBP_Arena_Rule_ListGroup;
 
 }
 

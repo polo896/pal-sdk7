@@ -30,7 +30,7 @@ class UMovieSceneLiveLinkSection : public UMovieSceneSection
 {
     FLiveLinkSubjectPreset SubjectPreset;                                             // 0x00F0 (size: 0x38)
     TArray<bool> ChannelMask;                                                         // 0x0128 (size: 0x10)
-    TArray<class UMovieSceneLiveLinkSubSection*> SubSections;                         // 0x0138 (size: 0x10)
+    TArray<UMovieSceneLiveLinkSubSection*> SubSections;                               // 0x0138 (size: 0x10)
     FName SubjectName;                                                                // 0x0158 (size: 0x8)
     FLiveLinkFrameData TemplateToPush;                                                // 0x0160 (size: 0x90)
     FLiveLinkRefSkeleton RefSkeleton;                                                 // 0x01F0 (size: 0x20)

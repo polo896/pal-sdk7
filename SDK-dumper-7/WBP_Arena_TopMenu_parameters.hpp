@@ -18,46 +18,37 @@
 namespace SDK::Params
 {
 
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.CancelAction
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Arena_TopMenu_C_CancelAction final
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.Top Menu Action
+// 0x0003 (0x0003 - 0x0000)
+struct WBP_Arena_TopMenu_C_Top_Menu_Action final
 {
 public:
-	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalArenaMenuActionType                       ActionType;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Arena_TopMenu_C_CancelAction;
+DUMPER7_ASSERTS_WBP_Arena_TopMenu_C_Top_Menu_Action;
 
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.ChangeInfo
-// 0x0058 (0x0058 - 0x0000)
-struct WBP_Arena_TopMenu_C_ChangeInfo final
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.Setup
+// 0x0014 (0x0014 - 0x0000)
+struct WBP_Arena_TopMenu_C_Setup final
 {
 public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsEnable;                                          // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable;                                 // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable;                                // 0x000C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_1;                              // 0x0014(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_2;                              // 0x001C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   K2Node_Select_Default;                             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0038(0x0018)()
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsMultiplayer_ReturnValue;                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Arena_TopMenu_C_ChangeInfo;
+DUMPER7_ASSERTS_WBP_Arena_TopMenu_C_Setup;
 
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.EmptyEvent
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.RrequestEnterArena
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_Arena_TopMenu_C_EmptyEvent final
+struct WBP_Arena_TopMenu_C_RrequestEnterArena final
 {
 public:
-	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          JoinMatch;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Arena_TopMenu_C_EmptyEvent;
+DUMPER7_ASSERTS_WBP_Arena_TopMenu_C_RrequestEnterArena;
 
 // Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.ExecuteUbergraph_WBP_Arena_TopMenu
 // 0x0180 (0x0180 - 0x0000)
@@ -112,37 +103,46 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Arena_TopMenu_C_ExecuteUbergraph_WBP_Arena_TopMenu;
 
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.RrequestEnterArena
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.EmptyEvent
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_Arena_TopMenu_C_RrequestEnterArena final
+struct WBP_Arena_TopMenu_C_EmptyEvent final
 {
 public:
-	bool                                          JoinMatch;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Arena_TopMenu_C_RrequestEnterArena;
+DUMPER7_ASSERTS_WBP_Arena_TopMenu_C_EmptyEvent;
 
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.Setup
-// 0x0014 (0x0014 - 0x0000)
-struct WBP_Arena_TopMenu_C_Setup final
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.ChangeInfo
+// 0x0058 (0x0058 - 0x0000)
+struct WBP_Arena_TopMenu_C_ChangeInfo final
 {
 public:
-	bool                                          CallFunc_IsMultiplayer_ReturnValue;                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsEnable;                                          // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Temp_name_Variable;                                // 0x000C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Temp_name_Variable_1;                              // 0x0014(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Temp_name_Variable_2;                              // 0x001C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   K2Node_Select_Default;                             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0038(0x0018)()
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Arena_TopMenu_C_Setup;
+DUMPER7_ASSERTS_WBP_Arena_TopMenu_C_ChangeInfo;
 
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.Top Menu Action
-// 0x0003 (0x0003 - 0x0000)
-struct WBP_Arena_TopMenu_C_Top_Menu_Action final
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.CancelAction
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Arena_TopMenu_C_CancelAction final
 {
 public:
-	EPalArenaMenuActionType                       ActionType;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Arena_TopMenu_C_Top_Menu_Action;
+DUMPER7_ASSERTS_WBP_Arena_TopMenu_C_CancelAction;
 
 // Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.BP_GetDesiredFocusTarget
 // 0x0010 (0x0010 - 0x0000)

@@ -53,26 +53,26 @@ public:
 	bool                                          bLastFullOutput;                                   // 0x0370(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_BoostOff();
-	void AnmEvent_BoostOn();
-	void AnmEvent_ForceSimple();
-	void AnmEvent_Full();
-	void AnmEvent_NoRecipe();
-	void AnmEvent_NotFull();
-	void AnmEvent_ToDetail();
-	void AnmEvent_ToSimpleDetail();
-	void Construct();
-	void ExecuteUbergraph_WBP_PalWorkRecycler(int32 EntryPoint);
-	bool IsCharacterAssignedFixedToTargetWork(class UPalCharacterParameterComponent* TargetCharacter, const struct FGuid& WorkId);
-	void OnInitialized();
-	void SetActiveBoost(bool bActive);
-	void SetBoostSpeed(float SpeedMultiplier);
-	void SetFullOutputState(bool bFull, bool bForce);
-	void SetPowerState(bool bIsOn);
-	void SetProductItemID(class FName ItemId);
-	void SetWorkerPalSlots(TArray<class UPalIndividualCharacterSlot*>& Slots, const struct FGuid& WorkId);
-	void SetWorkProgressRate(double Rate);
 	void UpdateRequireInfo(class UPalWorkBase* Work, TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData>& DisplayData);
+	void SetWorkProgressRate(double Rate);
+	void SetWorkerPalSlots(TArray<class UPalIndividualCharacterSlot*>& Slots, const struct FGuid& WorkId);
+	void SetProductItemID(class FName ItemId);
+	void SetPowerState(bool bIsOn);
+	void SetFullOutputState(bool bFull, bool bForce);
+	void SetBoostSpeed(float SpeedMultiplier);
+	void SetActiveBoost(bool bActive);
+	void OnInitialized();
+	bool IsCharacterAssignedFixedToTargetWork(class UPalCharacterParameterComponent* TargetCharacter, const struct FGuid& WorkId);
+	void ExecuteUbergraph_WBP_PalWorkRecycler(int32 EntryPoint);
+	void Construct();
+	void AnmEvent_ToSimpleDetail();
+	void AnmEvent_ToDetail();
+	void AnmEvent_NotFull();
+	void AnmEvent_NoRecipe();
+	void AnmEvent_Full();
+	void AnmEvent_ForceSimple();
+	void AnmEvent_BoostOn();
+	void AnmEvent_BoostOff();
 
 public:
 	static class UClass* StaticClass()

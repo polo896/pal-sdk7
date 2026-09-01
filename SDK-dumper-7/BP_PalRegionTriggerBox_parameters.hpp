@@ -14,6 +14,15 @@
 namespace SDK::Params
 {
 
+// Function BP_PalRegionTriggerBox.BP_PalRegionTriggerBox_C.ReceiveActorBeginOverlap
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PalRegionTriggerBox_C_ReceiveActorBeginOverlap final
+{
+public:
+	class AActor*                                 OtherActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalRegionTriggerBox_C_ReceiveActorBeginOverlap;
+
 // Function BP_PalRegionTriggerBox.BP_PalRegionTriggerBox_C.ExecuteUbergraph_BP_PalRegionTriggerBox
 // 0x0010 (0x0010 - 0x0000)
 struct BP_PalRegionTriggerBox_C_ExecuteUbergraph_BP_PalRegionTriggerBox final
@@ -24,15 +33,6 @@ public:
 	class AActor*                                 K2Node_Event_OtherActor;                           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_PalRegionTriggerBox_C_ExecuteUbergraph_BP_PalRegionTriggerBox;
-
-// Function BP_PalRegionTriggerBox.BP_PalRegionTriggerBox_C.ReceiveActorBeginOverlap
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PalRegionTriggerBox_C_ReceiveActorBeginOverlap final
-{
-public:
-	class AActor*                                 OtherActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalRegionTriggerBox_C_ReceiveActorBeginOverlap;
 
 }
 

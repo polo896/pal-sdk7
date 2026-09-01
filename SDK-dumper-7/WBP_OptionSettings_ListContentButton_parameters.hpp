@@ -20,15 +20,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_OptionSettings_ListContentButton.WBP_OptionSettings_ListContentButton_C.EnableWarning
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_OptionSettings_ListContentButton_C_EnableWarning final
-{
-public:
-	bool                                          IsEnable;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_OptionSettings_ListContentButton_C_EnableWarning;
-
 // Function WBP_OptionSettings_ListContentButton.WBP_OptionSettings_ListContentButton_C.ExecuteUbergraph_WBP_OptionSettings_ListContentButton
 // 0x0210 (0x0210 - 0x0000)
 struct WBP_OptionSettings_ListContentButton_C_ExecuteUbergraph_WBP_OptionSettings_ListContentButton final
@@ -63,6 +54,15 @@ public:
 	struct FPalOptionUISettings                   CallFunc_GetUISettings_ReturnValue;                // 0x01EC(0x001C)(ConstParm, NoDestructor)
 };
 DUMPER7_ASSERTS_WBP_OptionSettings_ListContentButton_C_ExecuteUbergraph_WBP_OptionSettings_ListContentButton;
+
+// Function WBP_OptionSettings_ListContentButton.WBP_OptionSettings_ListContentButton_C.EnableWarning
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_OptionSettings_ListContentButton_C_EnableWarning final
+{
+public:
+	bool                                          IsEnable;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_OptionSettings_ListContentButton_C_EnableWarning;
 
 // Function WBP_OptionSettings_ListContentButton.WBP_OptionSettings_ListContentButton_C.GetCurrentIcon
 // 0x01B0 (0x01B0 - 0x0000)

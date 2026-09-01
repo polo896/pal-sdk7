@@ -17,46 +17,6 @@
 namespace SDK
 {
 
-// Function BP_AnimNotify_PlaySound.BP_AnimNotify_PlaySound_C.PlaySound
-// (Public, BlueprintCallable, BlueprintEvent, Const)
-// Parameters:
-// class UMeshComponent*                   MeshComp                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AnimNotify_PlaySound_C::PlaySound(class UMeshComponent* MeshComp) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AnimNotify_PlaySound_C", "PlaySound");
-
-	Params::BP_AnimNotify_PlaySound_C_PlaySound Parms{};
-
-	Parms.MeshComp = MeshComp;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_AnimNotify_PlaySound.BP_AnimNotify_PlaySound_C.PlaySoundEditor
-// (Public, BlueprintCallable, BlueprintEvent, Const)
-// Parameters:
-// class UMeshComponent*                   MeshComp                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AnimNotify_PlaySound_C::PlaySoundEditor(class UMeshComponent* MeshComp) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AnimNotify_PlaySound_C", "PlaySoundEditor");
-
-	Params::BP_AnimNotify_PlaySound_C_PlaySoundEditor Parms{};
-
-	Parms.MeshComp = MeshComp;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_AnimNotify_PlaySound.BP_AnimNotify_PlaySound_C.Received_Notify
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
@@ -81,6 +41,46 @@ bool UBP_AnimNotify_PlaySound_C::Received_Notify(class USkeletalMeshComponent* M
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
+}
+
+
+// Function BP_AnimNotify_PlaySound.BP_AnimNotify_PlaySound_C.PlaySoundEditor
+// (Public, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// class UMeshComponent*                   MeshComp                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AnimNotify_PlaySound_C::PlaySoundEditor(class UMeshComponent* MeshComp) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AnimNotify_PlaySound_C", "PlaySoundEditor");
+
+	Params::BP_AnimNotify_PlaySound_C_PlaySoundEditor Parms{};
+
+	Parms.MeshComp = MeshComp;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_AnimNotify_PlaySound.BP_AnimNotify_PlaySound_C.PlaySound
+// (Public, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// class UMeshComponent*                   MeshComp                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AnimNotify_PlaySound_C::PlaySound(class UMeshComponent* MeshComp) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AnimNotify_PlaySound_C", "PlaySound");
+
+	Params::BP_AnimNotify_PlaySound_C_PlaySound Parms{};
+
+	Parms.MeshComp = MeshComp;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

@@ -20,7 +20,7 @@ class UWBP_MainMenu_Pal_WorkIconText_C : public UUserWidget
     class UWBP_MainMenu_Pal_WorkGauge_C* WBP_MainMenu_Pal_WorkGauge_8;                // 0x02E8 (size: 0x8)
     class UWBP_MainMenu_Pal_WorkGauge_C* WBP_MainMenu_Pal_WorkGauge_9;                // 0x02F0 (size: 0x8)
     class UWBP_MainMenu_Pal_WorkIcon_C* WBP_MainMenu_Pal_WorkIcon;                    // 0x02F8 (size: 0x8)
-    TArray<class UWBP_MainMenu_Pal_WorkGauge_C*> Gauge_Array;                         // 0x0300 (size: 0x10)
+    TArray<UWBP_MainMenu_Pal_WorkGauge_C*> Gauge_Array;                               // 0x0300 (size: 0x10)
     class UWBP_MainMenu_Pal_FoodAmountIcon_C* NewVar;                                 // 0x0310 (size: 0x8)
     EPalWorkSuitability Suitability;                                                  // 0x0318 (size: 0x1)
 

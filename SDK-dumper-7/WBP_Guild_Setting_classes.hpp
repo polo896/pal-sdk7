@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "E_PalUIGuildSettingCategory_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
 #include "Engine_structs.hpp"
+#include "E_PalUIGuildSettingCategory_structs.hpp"
 
 
 namespace SDK
@@ -58,32 +58,32 @@ public:
 	TMap<EPalGuildNotificationType, class UWBP_Guild_Setting_List_C*> NoticeSettingButtonMap;        // 0x0600(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void BndEvt__WBP_Guild_Setting_WBP_GuestRoleButton_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature();
-	void BndEvt__WBP_Guild_Setting_WBP_Guild_Setting_List_JoinMemberNotice_K2Node_ComponentBoundEvent_5_OnChangedOnOff__DelegateSignature(bool bIsOn, EPalGuildPermission Permission);
-	void BndEvt__WBP_Guild_Setting_WBP_Guild_Setting_List_LeaveMemberNotice_K2Node_ComponentBoundEvent_6_OnChangedOnOff__DelegateSignature(bool bIsOn, EPalGuildPermission Permission);
-	void BndEvt__WBP_Guild_Setting_WBP_Guild_Setting_List_LoginMemberNotice_K2Node_ComponentBoundEvent_7_OnChangedOnOff__DelegateSignature(bool bIsOn, EPalGuildPermission Permission);
-	void BndEvt__WBP_Guild_Setting_WBP_Guild_Setting_List_LogoutMemberNotice_K2Node_ComponentBoundEvent_8_OnChangedOnOff__DelegateSignature(bool bIsOn, EPalGuildPermission Permission);
-	void BndEvt__WBP_Guild_Setting_WBP_Guild_Setting_TabSet_K2Node_ComponentBoundEvent_0_OnChangedFocusIndex__DelegateSignature(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
-	void BndEvt__WBP_Guild_Setting_WBP_MasterRoleButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
-	void BndEvt__WBP_Guild_Setting_WBP_MemberButton_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature();
-	void BndEvt__WBP_Guild_Setting_WBP_SubMasterRoleButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
-	void Construct();
-	void Destruct();
-	void EndRoleSetting();
-	void ExecuteUbergraph_WBP_Guild_Setting(int32 EntryPoint);
-	void GetCurrentCategoryFocusTarget(class UWidget** Widget);
-	void GetRoleSettingTopFocusTarget(class UWidget** Widget);
-	void IsEditableRoleSettingForLocalPlayer(EPalGuildRole TargetRole, bool* bEditable);
-	void IsRoleSettingMode(bool* bInMode);
-	void OnChangedPermissionInternal(bool bIsOn, EPalGuildPermission Permission);
-	void OnChangedTabIndex(int32 NewTabIndex);
-	void OnInitialized();
-	void OnSelectedRoleInternal(EPalGuildRole Role);
-	void SelectByCategory(E_PalUIGuildSettingCategory InCategory);
-	void SetGuildNoticeSettings(const TMap<EPalGuildNotificationType, bool>& SettingMap);
-	void ToNextTab();
-	void ToPrevTab();
 	void UpdateGuildNoticeSetting();
+	void ToPrevTab();
+	void ToNextTab();
+	void SetGuildNoticeSettings(const TMap<EPalGuildNotificationType, bool>& SettingMap);
+	void SelectByCategory(E_PalUIGuildSettingCategory InCategory);
+	void OnSelectedRoleInternal(EPalGuildRole Role);
+	void OnInitialized();
+	void OnChangedTabIndex(int32 NewTabIndex);
+	void OnChangedPermissionInternal(bool bIsOn, EPalGuildPermission Permission);
+	void IsRoleSettingMode(bool* bInMode);
+	void IsEditableRoleSettingForLocalPlayer(EPalGuildRole TargetRole, bool* bEditable);
+	void GetRoleSettingTopFocusTarget(class UWidget** Widget);
+	void GetCurrentCategoryFocusTarget(class UWidget** Widget);
+	void ExecuteUbergraph_WBP_Guild_Setting(int32 EntryPoint);
+	void EndRoleSetting();
+	void Destruct();
+	void Construct();
+	void BndEvt__WBP_Guild_Setting_WBP_SubMasterRoleButton_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
+	void BndEvt__WBP_Guild_Setting_WBP_MemberButton_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature();
+	void BndEvt__WBP_Guild_Setting_WBP_MasterRoleButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
+	void BndEvt__WBP_Guild_Setting_WBP_Guild_Setting_TabSet_K2Node_ComponentBoundEvent_0_OnChangedFocusIndex__DelegateSignature(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
+	void BndEvt__WBP_Guild_Setting_WBP_Guild_Setting_List_LogoutMemberNotice_K2Node_ComponentBoundEvent_8_OnChangedOnOff__DelegateSignature(bool bIsOn, EPalGuildPermission Permission);
+	void BndEvt__WBP_Guild_Setting_WBP_Guild_Setting_List_LoginMemberNotice_K2Node_ComponentBoundEvent_7_OnChangedOnOff__DelegateSignature(bool bIsOn, EPalGuildPermission Permission);
+	void BndEvt__WBP_Guild_Setting_WBP_Guild_Setting_List_LeaveMemberNotice_K2Node_ComponentBoundEvent_6_OnChangedOnOff__DelegateSignature(bool bIsOn, EPalGuildPermission Permission);
+	void BndEvt__WBP_Guild_Setting_WBP_Guild_Setting_List_JoinMemberNotice_K2Node_ComponentBoundEvent_5_OnChangedOnOff__DelegateSignature(bool bIsOn, EPalGuildPermission Permission);
+	void BndEvt__WBP_Guild_Setting_WBP_GuestRoleButton_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()

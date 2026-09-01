@@ -16,64 +16,6 @@
 namespace SDK::Params
 {
 
-// Function BP_LevelObject_TowerFastTravelPoint.BP_LevelObject_TowerFastTravelPoint_C.ExecuteUbergraph_BP_LevelObject_TowerFastTravelPoint
-// 0x0660 (0x0660 - 0x0000)
-struct BP_LevelObject_TowerFastTravelPoint_C_ExecuteUbergraph_BP_LevelObject_TowerFastTravelPoint final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class APalLevelObjectUnlockableFastTravelPoint* Self)> K2Node_CreateDelegate_OutputDelegate; // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalOptionSubsystem*                    CallFunc_GetOptionSubsystem_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FPalOptionWorldSettings& PrevSettings, const struct FPalOptionWorldSettings& NewSettings)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0024(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalOptionWorldSettings                K2Node_CustomEvent_PrevSettings;                   // 0x0038(0x0208)(ConstParm)
-	struct FPalOptionWorldSettings                K2Node_CustomEvent_NewSettings;                    // 0x0240(0x0208)(ConstParm)
-	struct FPalOptionWorldSettings                CallFunc_GetOptionWorldSettings_ReturnValue;       // 0x0448(0x0208)(ConstParm)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0650(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_LevelObject_TowerFastTravelPoint_C_ExecuteUbergraph_BP_LevelObject_TowerFastTravelPoint;
-
-// Function BP_LevelObject_TowerFastTravelPoint.BP_LevelObject_TowerFastTravelPoint_C.GetUnlockAkAudioEvent
-// 0x0008 (0x0008 - 0x0000)
-struct BP_LevelObject_TowerFastTravelPoint_C_GetUnlockAkAudioEvent final
-{
-public:
-	class UAkAudioEvent*                          ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_LevelObject_TowerFastTravelPoint_C_GetUnlockAkAudioEvent;
-
-// Function BP_LevelObject_TowerFastTravelPoint.BP_LevelObject_TowerFastTravelPoint_C.OnChangeWorldSettings
-// 0x0410 (0x0410 - 0x0000)
-struct BP_LevelObject_TowerFastTravelPoint_C_OnChangeWorldSettings final
-{
-public:
-	struct FPalOptionWorldSettings                PrevSettings;                                      // 0x0000(0x0208)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FPalOptionWorldSettings                NewSettings;                                       // 0x0208(0x0208)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_BP_LevelObject_TowerFastTravelPoint_C_OnChangeWorldSettings;
-
-// Function BP_LevelObject_TowerFastTravelPoint.BP_LevelObject_TowerFastTravelPoint_C.OnGetAkComponent
-// 0x0008 (0x0008 - 0x0000)
-struct BP_LevelObject_TowerFastTravelPoint_C_OnGetAkComponent final
-{
-public:
-	class USceneComponent*                        ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_LevelObject_TowerFastTravelPoint_C_OnGetAkComponent;
-
-// Function BP_LevelObject_TowerFastTravelPoint.BP_LevelObject_TowerFastTravelPoint_C.OnUpdateUnlockState
-// 0x0010 (0x0010 - 0x0000)
-struct BP_LevelObject_TowerFastTravelPoint_C_OnUpdateUnlockState final
-{
-public:
-	class APalLevelObjectUnlockableFastTravelPoint* Object;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsUnlocked_ReturnValue;                   // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_LevelObject_TowerFastTravelPoint_C_OnUpdateUnlockState;
-
 // Function BP_LevelObject_TowerFastTravelPoint.BP_LevelObject_TowerFastTravelPoint_C.OnUpdateUnlockState_Internal
 // 0x0040 (0x0040 - 0x0000)
 struct BP_LevelObject_TowerFastTravelPoint_C_OnUpdateUnlockState_Internal final
@@ -95,6 +37,64 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_LevelObject_TowerFastTravelPoint_C_OnUpdateUnlockState_Internal;
+
+// Function BP_LevelObject_TowerFastTravelPoint.BP_LevelObject_TowerFastTravelPoint_C.OnUpdateUnlockState
+// 0x0010 (0x0010 - 0x0000)
+struct BP_LevelObject_TowerFastTravelPoint_C_OnUpdateUnlockState final
+{
+public:
+	class APalLevelObjectUnlockableFastTravelPoint* Object;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsUnlocked_ReturnValue;                   // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LevelObject_TowerFastTravelPoint_C_OnUpdateUnlockState;
+
+// Function BP_LevelObject_TowerFastTravelPoint.BP_LevelObject_TowerFastTravelPoint_C.OnGetAkComponent
+// 0x0008 (0x0008 - 0x0000)
+struct BP_LevelObject_TowerFastTravelPoint_C_OnGetAkComponent final
+{
+public:
+	class USceneComponent*                        ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LevelObject_TowerFastTravelPoint_C_OnGetAkComponent;
+
+// Function BP_LevelObject_TowerFastTravelPoint.BP_LevelObject_TowerFastTravelPoint_C.OnChangeWorldSettings
+// 0x0410 (0x0410 - 0x0000)
+struct BP_LevelObject_TowerFastTravelPoint_C_OnChangeWorldSettings final
+{
+public:
+	struct FPalOptionWorldSettings                PrevSettings;                                      // 0x0000(0x0208)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FPalOptionWorldSettings                NewSettings;                                       // 0x0208(0x0208)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_BP_LevelObject_TowerFastTravelPoint_C_OnChangeWorldSettings;
+
+// Function BP_LevelObject_TowerFastTravelPoint.BP_LevelObject_TowerFastTravelPoint_C.GetUnlockAkAudioEvent
+// 0x0008 (0x0008 - 0x0000)
+struct BP_LevelObject_TowerFastTravelPoint_C_GetUnlockAkAudioEvent final
+{
+public:
+	class UAkAudioEvent*                          ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LevelObject_TowerFastTravelPoint_C_GetUnlockAkAudioEvent;
+
+// Function BP_LevelObject_TowerFastTravelPoint.BP_LevelObject_TowerFastTravelPoint_C.ExecuteUbergraph_BP_LevelObject_TowerFastTravelPoint
+// 0x0660 (0x0660 - 0x0000)
+struct BP_LevelObject_TowerFastTravelPoint_C_ExecuteUbergraph_BP_LevelObject_TowerFastTravelPoint final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class APalLevelObjectUnlockableFastTravelPoint* Self)> K2Node_CreateDelegate_OutputDelegate; // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalOptionSubsystem*                    CallFunc_GetOptionSubsystem_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(const struct FPalOptionWorldSettings& PrevSettings, const struct FPalOptionWorldSettings& NewSettings)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0024(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalOptionWorldSettings                K2Node_CustomEvent_PrevSettings;                   // 0x0038(0x0208)(ConstParm)
+	struct FPalOptionWorldSettings                K2Node_CustomEvent_NewSettings;                    // 0x0240(0x0208)(ConstParm)
+	struct FPalOptionWorldSettings                CallFunc_GetOptionWorldSettings_ReturnValue;       // 0x0448(0x0208)(ConstParm)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0650(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LevelObject_TowerFastTravelPoint_C_ExecuteUbergraph_BP_LevelObject_TowerFastTravelPoint;
 
 }
 

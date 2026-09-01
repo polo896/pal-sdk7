@@ -124,7 +124,7 @@ class UDestructibleFractureSettings : public UObject
     int32 RandomSeed;                                                                 // 0x0070 (size: 0x4)
     TArray<FVector> VoronoiSites;                                                     // 0x0078 (size: 0x10)
     int32 OriginalSubmeshCount;                                                       // 0x0088 (size: 0x4)
-    TArray<class UMaterialInterface*> Materials;                                      // 0x0090 (size: 0x10)
+    TArray<UMaterialInterface*> Materials;                                            // 0x0090 (size: 0x10)
     TArray<FDestructibleChunkParameters> ChunkParameters;                             // 0x00A0 (size: 0x10)
 
 }; // Size: 0xB0

@@ -26,7 +26,7 @@ class UWBP_PalWorkRecycler_C : public UUserWidget
     class UWBP_PalCraftInfo_Pal_C* WBP_PalCraftInfo_Pal_3;                            // 0x0318 (size: 0x8)
     class UWBP_PalCraftInfo_Pal_C* WBP_PalCraftInfo_Pal_4;                            // 0x0320 (size: 0x8)
     class UWBP_RequirePalInfo_C* WBP_RequirePalInfo;                                  // 0x0328 (size: 0x8)
-    TArray<class UWBP_PalCraftInfo_Pal_C*> workerPalWidgetArray;                      // 0x0330 (size: 0x10)
+    TArray<UWBP_PalCraftInfo_Pal_C*> workerPalWidgetArray;                            // 0x0330 (size: 0x10)
     FDataTableRowHandle InfinityNumMsgId;                                             // 0x0340 (size: 0x10)
     FDataTableRowHandle RequireGenusMSGID;                                            // 0x0350 (size: 0x10)
     FDataTableRowHandle RequireTypeMSGID;                                             // 0x0360 (size: 0x10)
@@ -40,7 +40,7 @@ class UWBP_PalWorkRecycler_C : public UUserWidget
     bool IsCharacterAssignedFixedToTargetWork(class UPalCharacterParameterComponent* TargetCharacter, FGuid WorkId);
     void SetProductItemID(FName ItemId);
     void SetWorkProgressRate(double Rate);
-    void SetWorkerPalSlots(TArray<class UPalIndividualCharacterSlot*>& Slots, FGuid WorkId);
+    void SetWorkerPalSlots(TArray<UPalIndividualCharacterSlot*>& Slots, FGuid WorkId);
     void AnmEvent_ToDetail();
     void AnmEvent_ToSimpleDetail();
     void AnmEvent_NoRecipe();

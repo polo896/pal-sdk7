@@ -37,14 +37,14 @@ public:
 	bool                                          Debug;                                             // 0x0450(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_PalBossTower(int32 EntryPoint);
-	void OnChangeLocalBossDefeatStateBP(bool bDefeated);
-	void ReceiveTick(float DeltaSeconds);
-	void GetEntryCancelTrigger(class UShapeComponent** EntryCancelTrigger);
-	void GetEntryWaitInfoTrigger(class UShapeComponent** EntryWaitInfoTrigger_0);
-	void GetInteractableInterface(TScriptInterface<class IPalInteractiveObjectComponentInterface>* Interface);
-	void GetInteractableTrigger(class UShapeComponent** InteractableTrigger);
 	void ReceiveBeginPlay();
+	void GetInteractableTrigger(class UShapeComponent** InteractableTrigger);
+	void GetInteractableInterface(TScriptInterface<class IPalInteractiveObjectComponentInterface>* Interface);
+	void GetEntryWaitInfoTrigger(class UShapeComponent** EntryWaitInfoTrigger_0);
+	void GetEntryCancelTrigger(class UShapeComponent** EntryCancelTrigger);
+	void ReceiveTick(float DeltaSeconds);
+	void OnChangeLocalBossDefeatStateBP(bool bDefeated);
+	void ExecuteUbergraph_BP_PalBossTower(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

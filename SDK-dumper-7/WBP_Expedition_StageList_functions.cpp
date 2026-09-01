@@ -17,47 +17,177 @@
 namespace SDK
 {
 
-// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.AnmEvent_Focus
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.SetVisibilityRecruiting
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsVisible                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Expedition_StageList_C::AnmEvent_Focus()
+void UWBP_Expedition_StageList_C::SetVisibilityRecruiting(bool bIsVisible)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Expedition_StageList_C", "AnmEvent_Focus");
+		Func = Class->GetFunction("WBP_Expedition_StageList_C", "SetVisibilityRecruiting");
+
+	Params::WBP_Expedition_StageList_C_SetVisibilityRecruiting Parms{};
+
+	Parms.bIsVisible = bIsVisible;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.SetupMissionName
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Expedition_StageList_C::SetupMissionName()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Expedition_StageList_C", "SetupMissionName");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.AnmEvent_Normal
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.SetupDungeonTexture
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Expedition_StageList_C::AnmEvent_Normal()
+void UWBP_Expedition_StageList_C::SetupDungeonTexture()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Expedition_StageList_C", "AnmEvent_Normal");
+		Func = Class->GetFunction("WBP_Expedition_StageList_C", "SetupDungeonTexture");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.SetupDisabledMissionInfo
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Expedition_StageList_C::SetupDisabledMissionInfo()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Expedition_StageList_C", "SetupDisabledMissionInfo");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.SetupDifficulty
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Expedition_StageList_C::SetupDifficulty()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Expedition_StageList_C", "SetupDifficulty");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.Setup
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FPalCharacterTeamMissionInfo&MissionInfo                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_Expedition_StageList_C::Setup(const struct FPalCharacterTeamMissionInfo& MissionInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Expedition_StageList_C", "Setup");
+
+	Params::WBP_Expedition_StageList_C_Setup Parms{};
+
+	Parms.MissionInfo = std::move(MissionInfo);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.GetMissionInfo
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FPalCharacterTeamMissionInfo*    MissionInfo                                            (Parm, OutParm)
+
+void UWBP_Expedition_StageList_C::GetMissionInfo(struct FPalCharacterTeamMissionInfo* MissionInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Expedition_StageList_C", "GetMissionInfo");
+
+	Params::WBP_Expedition_StageList_C_GetMissionInfo Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (MissionInfo != nullptr)
+		*MissionInfo = std::move(Parms.MissionInfo);
+}
+
+
+// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.GetMissionID
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class FName*                            MissionId                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Expedition_StageList_C::GetMissionID(class FName* MissionId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Expedition_StageList_C", "GetMissionID");
+
+	Params::WBP_Expedition_StageList_C_GetMissionID Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (MissionId != nullptr)
+		*MissionId = Parms.MissionId;
+}
+
+
+// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.ExecuteUbergraph_WBP_Expedition_StageList
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Expedition_StageList_C::ExecuteUbergraph_WBP_Expedition_StageList(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Expedition_StageList_C", "ExecuteUbergraph_WBP_Expedition_StageList");
+
+	Params::WBP_Expedition_StageList_C_ExecuteUbergraph_WBP_Expedition_StageList Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Expedition_StageList_C::BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Expedition_StageList_C::BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Expedition_StageList_C", "BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Expedition_StageList_C", "BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_Expedition_StageList_C_BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_Expedition_StageList_C_BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -85,19 +215,19 @@ void UWBP_Expedition_StageList_C::BndEvt__WBP_Expedition_StageList_WBP_PalInvisi
 }
 
 
-// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Expedition_StageList_C::BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Expedition_StageList_C::BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Expedition_StageList_C", "BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Expedition_StageList_C", "BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_Expedition_StageList_C_BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_Expedition_StageList_C_BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -105,161 +235,31 @@ void UWBP_Expedition_StageList_C::BndEvt__WBP_Expedition_StageList_WBP_PalInvisi
 }
 
 
-// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.ExecuteUbergraph_WBP_Expedition_StageList
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.AnmEvent_Normal
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Expedition_StageList_C::ExecuteUbergraph_WBP_Expedition_StageList(int32 EntryPoint)
+void UWBP_Expedition_StageList_C::AnmEvent_Normal()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Expedition_StageList_C", "ExecuteUbergraph_WBP_Expedition_StageList");
-
-	Params::WBP_Expedition_StageList_C_ExecuteUbergraph_WBP_Expedition_StageList Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.GetMissionID
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class FName*                            MissionId                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Expedition_StageList_C::GetMissionID(class FName* MissionId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Expedition_StageList_C", "GetMissionID");
-
-	Params::WBP_Expedition_StageList_C_GetMissionID Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (MissionId != nullptr)
-		*MissionId = Parms.MissionId;
-}
-
-
-// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.GetMissionInfo
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FPalCharacterTeamMissionInfo*    MissionInfo                                            (Parm, OutParm)
-
-void UWBP_Expedition_StageList_C::GetMissionInfo(struct FPalCharacterTeamMissionInfo* MissionInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Expedition_StageList_C", "GetMissionInfo");
-
-	Params::WBP_Expedition_StageList_C_GetMissionInfo Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (MissionInfo != nullptr)
-		*MissionInfo = std::move(Parms.MissionInfo);
-}
-
-
-// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.Setup
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalCharacterTeamMissionInfo&MissionInfo                                            (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_Expedition_StageList_C::Setup(const struct FPalCharacterTeamMissionInfo& MissionInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Expedition_StageList_C", "Setup");
-
-	Params::WBP_Expedition_StageList_C_Setup Parms{};
-
-	Parms.MissionInfo = std::move(MissionInfo);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.SetupDifficulty
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Expedition_StageList_C::SetupDifficulty()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Expedition_StageList_C", "SetupDifficulty");
+		Func = Class->GetFunction("WBP_Expedition_StageList_C", "AnmEvent_Normal");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.SetupDisabledMissionInfo
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.AnmEvent_Focus
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Expedition_StageList_C::SetupDisabledMissionInfo()
+void UWBP_Expedition_StageList_C::AnmEvent_Focus()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Expedition_StageList_C", "SetupDisabledMissionInfo");
+		Func = Class->GetFunction("WBP_Expedition_StageList_C", "AnmEvent_Focus");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.SetupDungeonTexture
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Expedition_StageList_C::SetupDungeonTexture()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Expedition_StageList_C", "SetupDungeonTexture");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.SetupMissionName
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Expedition_StageList_C::SetupMissionName()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Expedition_StageList_C", "SetupMissionName");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.SetVisibilityRecruiting
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsVisible                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Expedition_StageList_C::SetVisibilityRecruiting(bool bIsVisible)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Expedition_StageList_C", "SetVisibilityRecruiting");
-
-	Params::WBP_Expedition_StageList_C_SetVisibilityRecruiting Parms{};
-
-	Parms.bIsVisible = bIsVisible;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

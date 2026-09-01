@@ -33,17 +33,17 @@ public:
 	int32                                         State;                                             // 0x04A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_SimpleLog(int32 EntryPoint);
-	void OnFinishClose();
-	void OnFinishOpen();
-	void OnInitialized();
-	void OnLoaded_E9D9449849BBF69D84DD6485CBEECF9A(class UObject* Loaded);
-	void OverrideBgColor(EPalLogContentToneType ToneType);
-	void RequestInAnime();
-	void RequestLoadIconTexture(const TSoftObjectPtr<class UTexture2D>& softTexturePtr);
-	void RequestOutAnime();
-	void SetAdditionalData(const struct FPalLogAdditionalData& inAdditionalData);
 	void SetLogText(const class FText& InText);
+	void SetAdditionalData(const struct FPalLogAdditionalData& inAdditionalData);
+	void RequestOutAnime();
+	void RequestLoadIconTexture(const TSoftObjectPtr<class UTexture2D>& softTexturePtr);
+	void RequestInAnime();
+	void OverrideBgColor(EPalLogContentToneType ToneType);
+	void OnLoaded_E9D9449849BBF69D84DD6485CBEECF9A(class UObject* Loaded);
+	void OnInitialized();
+	void OnFinishOpen();
+	void OnFinishClose();
+	void ExecuteUbergraph_WBP_SimpleLog(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

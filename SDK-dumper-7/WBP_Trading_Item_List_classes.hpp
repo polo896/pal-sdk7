@@ -47,19 +47,19 @@ public:
 	bool                                          NowSoldOut;                                        // 0x0338(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Normal();
-	void AnmEvent_SoldOut();
-	void BndEvt__WBP_Trading_Item_List_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void BndEvt__WBP_Trading_Item_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Trading_Item_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Trading_Item_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void Construct();
-	void ExecuteUbergraph_WBP_Trading_Item_List(int32 EntryPoint);
-	void SetEmpty();
-	void Setup_Item_Trade_Info(const struct FPalItemBoothTradeInfo& TradeInfo, bool RemoveButtonVisible);
-	void Setup_Pal_Trade_Info(const struct FPalPalBoothTradeInfo& TradeInfo, bool RemoveButtonVisible, class FName CharacterID);
-	void ToggleSelect(bool Selected);
 	void UpdateStock(int32 StockCount);
+	void ToggleSelect(bool Selected);
+	void Setup_Pal_Trade_Info(const struct FPalPalBoothTradeInfo& TradeInfo, bool RemoveButtonVisible, class FName CharacterID);
+	void Setup_Item_Trade_Info(const struct FPalItemBoothTradeInfo& TradeInfo, bool RemoveButtonVisible);
+	void SetEmpty();
+	void ExecuteUbergraph_WBP_Trading_Item_List(int32 EntryPoint);
+	void Construct();
+	void BndEvt__WBP_Trading_Item_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Trading_Item_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Trading_Item_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Trading_Item_List_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
+	void AnmEvent_SoldOut();
+	void AnmEvent_Normal();
 
 public:
 	static class UClass* StaticClass()

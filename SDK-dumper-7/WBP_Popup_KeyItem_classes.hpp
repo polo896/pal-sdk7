@@ -31,11 +31,11 @@ public:
 	struct FTimerHandle                           TimerHandle_WaitIn;                                // 0x02A8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_In();
-	void AnmEvent_Out();
-	void ExecuteUbergraph_WBP_Popup_KeyItem(int32 EntryPoint);
-	void OnTimerEvent_EndIn();
 	void Play(class FName ItemId);
+	void OnTimerEvent_EndIn();
+	void ExecuteUbergraph_WBP_Popup_KeyItem(int32 EntryPoint);
+	void AnmEvent_Out();
+	void AnmEvent_In();
 
 public:
 	static class UClass* StaticClass()

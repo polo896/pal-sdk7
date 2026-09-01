@@ -21,7 +21,7 @@ struct FPaperFlipbookKeyFrame
 
 struct FPaperSpriteAtlasSlot
 {
-    TSoftObjectPtr<UPaperSprite> SpriteRef;                                           // 0x0000 (size: 0x30)
+    TSoftObjectPtr<class UPaperSprite> SpriteRef;                                     // 0x0000 (size: 0x30)
     int32 AtlasIndex;                                                                 // 0x0030 (size: 0x4)
     int32 X;                                                                          // 0x0034 (size: 0x4)
     int32 Y;                                                                          // 0x0038 (size: 0x4)
@@ -40,7 +40,7 @@ struct FPaperSpriteSocket
 struct FPaperTerrainMaterialRule
 {
     class UPaperSprite* StartCap;                                                     // 0x0000 (size: 0x8)
-    TArray<class UPaperSprite*> Body;                                                 // 0x0008 (size: 0x10)
+    TArray<UPaperSprite*> Body;                                                       // 0x0008 (size: 0x10)
     class UPaperSprite* EndCap;                                                       // 0x0018 (size: 0x8)
     float MinimumAngle;                                                               // 0x0020 (size: 0x4)
     float MaximumAngle;                                                               // 0x0024 (size: 0x4)
@@ -222,7 +222,7 @@ class UPaperFlipbookComponent : public UMeshComponent
 
 class UPaperGroupedSpriteComponent : public UMeshComponent
 {
-    TArray<class UMaterialInterface*> InstanceMaterials;                              // 0x0570 (size: 0x10)
+    TArray<UMaterialInterface*> InstanceMaterials;                                    // 0x0570 (size: 0x10)
     TArray<FSpriteInstanceData> PerInstanceSpriteData;                                // 0x0580 (size: 0x10)
 
     bool UpdateInstanceTransform(int32 InstanceIndex, const FTransform& NewInstanceTransform, bool bWorldSpace, bool bMarkRenderStateDirty, bool bTeleport);
@@ -245,7 +245,7 @@ class UPaperRuntimeSettings : public UObject
 
 class UPaperSprite : public UObject
 {
-    TArray<class UTexture*> AdditionalSourceTextures;                                 // 0x0038 (size: 0x10)
+    TArray<UTexture*> AdditionalSourceTextures;                                       // 0x0038 (size: 0x10)
     FVector2D BakedSourceUV;                                                          // 0x0048 (size: 0x10)
     FVector2D BakedSourceDimension;                                                   // 0x0058 (size: 0x10)
     class UTexture2D* BakedSourceTexture;                                             // 0x0068 (size: 0x8)
@@ -339,9 +339,9 @@ class UPaperTileMap : public UObject
     float SeparationPerTileX;                                                         // 0x003C (size: 0x4)
     float SeparationPerTileY;                                                         // 0x0040 (size: 0x4)
     float SeparationPerLayer;                                                         // 0x0044 (size: 0x4)
-    TSoftObjectPtr<UPaperTileSet> SelectedTileSet;                                    // 0x0048 (size: 0x30)
+    TSoftObjectPtr<class UPaperTileSet> SelectedTileSet;                              // 0x0048 (size: 0x30)
     class UMaterialInterface* Material;                                               // 0x0078 (size: 0x8)
-    TArray<class UPaperTileLayer*> TileLayers;                                        // 0x0080 (size: 0x10)
+    TArray<UPaperTileLayer*> TileLayers;                                              // 0x0080 (size: 0x10)
     float CollisionThickness;                                                         // 0x0090 (size: 0x4)
     TEnumAsByte<ESpriteCollisionMode::Type> SpriteCollisionDomain;                    // 0x0094 (size: 0x1)
     TEnumAsByte<ETileMapProjectionMode::Type> ProjectionMode;                         // 0x0095 (size: 0x1)
@@ -359,7 +359,7 @@ class UPaperTileMapComponent : public UMeshComponent
     int32 TileHeight;                                                                 // 0x057C (size: 0x4)
     class UPaperTileSet* DefaultLayerTileSet;                                         // 0x0580 (size: 0x8)
     class UMaterialInterface* Material;                                               // 0x0588 (size: 0x8)
-    TArray<class UPaperTileLayer*> TileLayers;                                        // 0x0590 (size: 0x10)
+    TArray<UPaperTileLayer*> TileLayers;                                              // 0x0590 (size: 0x10)
     FLinearColor TileMapColor;                                                        // 0x05A0 (size: 0x10)
     int32 UseSingleLayerIndex;                                                        // 0x05B0 (size: 0x4)
     bool bUseSingleLayer;                                                             // 0x05B4 (size: 0x1)
@@ -390,7 +390,7 @@ class UPaperTileSet : public UObject
 {
     FIntPoint TileSize;                                                               // 0x0028 (size: 0x8)
     class UTexture2D* TileSheet;                                                      // 0x0030 (size: 0x8)
-    TArray<class UTexture*> AdditionalSourceTextures;                                 // 0x0038 (size: 0x10)
+    TArray<UTexture*> AdditionalSourceTextures;                                       // 0x0038 (size: 0x10)
     FIntMargin BorderMargin;                                                          // 0x0048 (size: 0x10)
     FIntPoint PerTileSpacing;                                                         // 0x0058 (size: 0x8)
     FIntPoint DrawingOffset;                                                          // 0x0060 (size: 0x8)

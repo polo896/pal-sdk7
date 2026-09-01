@@ -17,35 +17,15 @@
 namespace SDK
 {
 
-// Function WBP_WorldHUD_MapObjectWorkAssignStatus.WBP_WorldHUD_MapObjectWorkAssignStatus_C.ExecuteUbergraph_WBP_WorldHUD_MapObjectWorkAssignStatus
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_WorldHUD_MapObjectWorkAssignStatus.WBP_WorldHUD_MapObjectWorkAssignStatus_C.SetupUI
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_WorldHUD_MapObjectWorkAssignStatus_C::ExecuteUbergraph_WBP_WorldHUD_MapObjectWorkAssignStatus(int32 EntryPoint)
+void UWBP_WorldHUD_MapObjectWorkAssignStatus_C::SetupUI()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorldHUD_MapObjectWorkAssignStatus_C", "ExecuteUbergraph_WBP_WorldHUD_MapObjectWorkAssignStatus");
-
-	Params::WBP_WorldHUD_MapObjectWorkAssignStatus_C_ExecuteUbergraph_WBP_WorldHUD_MapObjectWorkAssignStatus Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_WorldHUD_MapObjectWorkAssignStatus.WBP_WorldHUD_MapObjectWorkAssignStatus_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_WorldHUD_MapObjectWorkAssignStatus_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorldHUD_MapObjectWorkAssignStatus_C", "OnSetup");
+		Func = Class->GetFunction("WBP_WorldHUD_MapObjectWorkAssignStatus_C", "SetupUI");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -65,17 +45,37 @@ void UWBP_WorldHUD_MapObjectWorkAssignStatus_C::ReadyUIModel()
 }
 
 
-// Function WBP_WorldHUD_MapObjectWorkAssignStatus.WBP_WorldHUD_MapObjectWorkAssignStatus_C.SetupUI
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_WorldHUD_MapObjectWorkAssignStatus.WBP_WorldHUD_MapObjectWorkAssignStatus_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_WorldHUD_MapObjectWorkAssignStatus_C::SetupUI()
+void UWBP_WorldHUD_MapObjectWorkAssignStatus_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorldHUD_MapObjectWorkAssignStatus_C", "SetupUI");
+		Func = Class->GetFunction("WBP_WorldHUD_MapObjectWorkAssignStatus_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WorldHUD_MapObjectWorkAssignStatus.WBP_WorldHUD_MapObjectWorkAssignStatus_C.ExecuteUbergraph_WBP_WorldHUD_MapObjectWorkAssignStatus
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_WorldHUD_MapObjectWorkAssignStatus_C::ExecuteUbergraph_WBP_WorldHUD_MapObjectWorkAssignStatus(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorldHUD_MapObjectWorkAssignStatus_C", "ExecuteUbergraph_WBP_WorldHUD_MapObjectWorkAssignStatus");
+
+	Params::WBP_WorldHUD_MapObjectWorkAssignStatus_C_ExecuteUbergraph_WBP_WorldHUD_MapObjectWorkAssignStatus Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

@@ -16,14 +16,26 @@
 namespace SDK::Params
 {
 
-// Function WBP_Fishing_AreaRank.WBP_Fishing_AreaRank_C.AnmEvent_Rank
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Fishing_AreaRank_C_AnmEvent_Rank final
+// Function WBP_Fishing_AreaRank.WBP_Fishing_AreaRank_C.SetDifficulty
+// 0x0060 (0x0060 - 0x0000)
+struct WBP_Fishing_AreaRank_C_SetDifficulty final
 {
 public:
-	EPalFishingSpotDifficultyType                 Difficulty;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalFishingSpotDifficultyType                 DifficultyType;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalFishingSpotDifficultyType                 Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   Temp_name_Variable;                                // 0x0004(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Temp_name_Variable_1;                              // 0x000C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Temp_name_Variable_2;                              // 0x0014(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Temp_name_Variable_3;                              // 0x001C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Temp_name_Variable_4;                              // 0x0024(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Temp_name_Variable_5;                              // 0x002C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Temp_name_Variable_6;                              // 0x0034(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_Select_Default;                             // 0x003C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0048(0x0018)()
 };
-DUMPER7_ASSERTS_WBP_Fishing_AreaRank_C_AnmEvent_Rank;
+DUMPER7_ASSERTS_WBP_Fishing_AreaRank_C_SetDifficulty;
 
 // Function WBP_Fishing_AreaRank.WBP_Fishing_AreaRank_C.ExecuteUbergraph_WBP_Fishing_AreaRank
 // 0x0078 (0x0078 - 0x0000)
@@ -53,26 +65,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Fishing_AreaRank_C_ExecuteUbergraph_WBP_Fishing_AreaRank;
 
-// Function WBP_Fishing_AreaRank.WBP_Fishing_AreaRank_C.SetDifficulty
-// 0x0060 (0x0060 - 0x0000)
-struct WBP_Fishing_AreaRank_C_SetDifficulty final
+// Function WBP_Fishing_AreaRank.WBP_Fishing_AreaRank_C.AnmEvent_Rank
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Fishing_AreaRank_C_AnmEvent_Rank final
 {
 public:
-	EPalFishingSpotDifficultyType                 DifficultyType;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalFishingSpotDifficultyType                 Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   Temp_name_Variable;                                // 0x0004(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_1;                              // 0x000C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_2;                              // 0x0014(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_3;                              // 0x001C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_4;                              // 0x0024(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_5;                              // 0x002C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_6;                              // 0x0034(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_Select_Default;                             // 0x003C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0048(0x0018)()
+	EPalFishingSpotDifficultyType                 Difficulty;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Fishing_AreaRank_C_SetDifficulty;
+DUMPER7_ASSERTS_WBP_Fishing_AreaRank_C_AnmEvent_Rank;
 
 }
 

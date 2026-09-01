@@ -26,11 +26,11 @@ public:
 	class UBP_PalTextBlock_C*                     Text_Money;                                        // 0x0280(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_MainMenu_Money(int32 EntryPoint);
-	void UpdateMoney(const class FString& NowMoney);
 	void WBP_MainMenu_Money_AutoGenFunc(int64 NowMoney);
+	void UpdateMoney(const class FString& NowMoney);
+	void ExecuteUbergraph_WBP_MainMenu_Money(int32 EntryPoint);
+	void Destruct();
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

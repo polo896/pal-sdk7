@@ -73,32 +73,32 @@ public:
 	bool                                          bIsParentRequesting;                               // 0x06C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Rankup(const TArray<EPalRelicType>& RelicTypeArray);
-	void BndEvt__WBP_Buildup_Player_1_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
-	void BndEvt__WBP_Buildup_Player_1_WBP_Menu_btn_Close_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature();
-	void CollectSimulationInfo(TMap<EPalRelicType, int32>* RankupInfo);
-	void Construct();
-	void Destruct();
 	class UWidget* DoCustomNavigation_ToCloseButton(EUINavigation Navigation_0);
-	class UWidget* DoCustomNavigation_ToConfirmButton(EUINavigation Navigation_0);
-	class UWidget* DoCustomNavigation_ToListBottom(EUINavigation Navigation_0);
-	class UWidget* DoCustomNavigation_ToListTop(EUINavigation Navigation_0);
-	void ExecuteUbergraph_WBP_Buildup_Player_1(int32 EntryPoint);
-	void GetRestoreFocusTarget(class UWidget** Widget);
-	class UWidget* GetTopFocusTarget();
-	void OnHoveredRelicPanel(class UWBP_Buildup_Player_StatusContent_C* Widget);
-	void OnInputAction_QuckConfirm();
-	void OnSimulationChanged(EPalRelicType RelicType, int32 OriginalRank, int32 CurrentSimulationRank);
-	void OnUnhoveredRelicPanel(class UWBP_Buildup_Player_StatusContent_C* Widget);
-	void ResetSimulationAndUpdateAll();
-	void SetAllOperationWidgetAcceptInput(bool NewAcceptInput);
-	void SetCurrentRelicCountMap(const TMap<EPalRelicType, int32>& RelicCountMap);
-	void SetEnableQuickConfirmAction(bool bEnableAction);
-	void SetIsParentRequesting(bool NewIsParentRequesting);
-	void SetNothingRelic(bool bNothingRelic);
-	void UpdateConfirmButton();
-	void UpdateCurrentRelicCount();
+	void Destruct();
+	void Construct();
+	void CollectSimulationInfo(TMap<EPalRelicType, int32>* RankupInfo);
+	void BndEvt__WBP_Buildup_Player_1_WBP_Menu_btn_Close_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature();
+	void BndEvt__WBP_Buildup_Player_1_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
+	void AnmEvent_Rankup(const TArray<EPalRelicType>& RelicTypeArray);
 	void UpdateRequireRelicCount();
+	void UpdateCurrentRelicCount();
+	void UpdateConfirmButton();
+	void SetNothingRelic(bool bNothingRelic);
+	void SetIsParentRequesting(bool NewIsParentRequesting);
+	void SetEnableQuickConfirmAction(bool bEnableAction);
+	void SetCurrentRelicCountMap(const TMap<EPalRelicType, int32>& RelicCountMap);
+	void SetAllOperationWidgetAcceptInput(bool NewAcceptInput);
+	void ResetSimulationAndUpdateAll();
+	void OnUnhoveredRelicPanel(class UWBP_Buildup_Player_StatusContent_C* Widget);
+	void OnSimulationChanged(EPalRelicType RelicType, int32 OriginalRank, int32 CurrentSimulationRank);
+	void OnInputAction_QuckConfirm();
+	void OnHoveredRelicPanel(class UWBP_Buildup_Player_StatusContent_C* Widget);
+	class UWidget* GetTopFocusTarget();
+	void GetRestoreFocusTarget(class UWidget** Widget);
+	void ExecuteUbergraph_WBP_Buildup_Player_1(int32 EntryPoint);
+	class UWidget* DoCustomNavigation_ToListTop(EUINavigation Navigation_0);
+	class UWidget* DoCustomNavigation_ToListBottom(EUINavigation Navigation_0);
+	class UWidget* DoCustomNavigation_ToConfirmButton(EUINavigation Navigation_0);
 
 public:
 	static class UClass* StaticClass()

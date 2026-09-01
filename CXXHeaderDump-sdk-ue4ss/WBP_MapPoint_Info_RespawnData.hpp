@@ -11,7 +11,7 @@ class UWBP_MapPoint_Info_RespawnData_C : public UUserWidget
     class UImage* Image_Map_Mark_3;                                                   // 0x02A0 (size: 0x8)
     class UImage* Image_Map_Mark_4;                                                   // 0x02A8 (size: 0x8)
     FDataTableRowHandle MsgID;                                                        // 0x02B0 (size: 0x10)
-    TArray<class UImage*> Stars;                                                      // 0x02C0 (size: 0x10)
+    TArray<UImage*> Stars;                                                            // 0x02C0 (size: 0x10)
 
     void Construct();
     void SetRank(int32 Rank);

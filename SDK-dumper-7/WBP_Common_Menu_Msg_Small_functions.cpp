@@ -17,15 +17,15 @@
 namespace SDK
 {
 
-// Function WBP_Common_Menu_Msg_Small.WBP_Common_Menu_Msg_Small_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Common_Menu_Msg_Small.WBP_Common_Menu_Msg_Small_C.PlayPopupAnimation
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Common_Menu_Msg_Small_C::Construct()
+void UWBP_Common_Menu_Msg_Small_C::PlayPopupAnimation()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Common_Menu_Msg_Small_C", "Construct");
+		Func = Class->GetFunction("WBP_Common_Menu_Msg_Small_C", "PlayPopupAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,15 +51,15 @@ void UWBP_Common_Menu_Msg_Small_C::ExecuteUbergraph_WBP_Common_Menu_Msg_Small(in
 }
 
 
-// Function WBP_Common_Menu_Msg_Small.WBP_Common_Menu_Msg_Small_C.PlayPopupAnimation
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Common_Menu_Msg_Small.WBP_Common_Menu_Msg_Small_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Common_Menu_Msg_Small_C::PlayPopupAnimation()
+void UWBP_Common_Menu_Msg_Small_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Common_Menu_Msg_Small_C", "PlayPopupAnimation");
+		Func = Class->GetFunction("WBP_Common_Menu_Msg_Small_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

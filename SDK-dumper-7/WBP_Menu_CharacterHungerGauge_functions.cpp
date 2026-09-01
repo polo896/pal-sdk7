@@ -17,29 +17,37 @@
 namespace SDK
 {
 
-// Function WBP_Menu_CharacterHungerGauge.WBP_Menu_CharacterHungerGauge_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Menu_CharacterHungerGauge.WBP_Menu_CharacterHungerGauge_C.UpdateHunger
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  nowHunger                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  nowMaxHunger                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Menu_CharacterHungerGauge_C::Construct()
+void UWBP_Menu_CharacterHungerGauge_C::UpdateHunger(double nowHunger, double nowMaxHunger)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_CharacterHungerGauge_C", "Construct");
+		Func = Class->GetFunction("WBP_Menu_CharacterHungerGauge_C", "UpdateHunger");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Menu_CharacterHungerGauge_C_UpdateHunger Parms{};
+
+	Parms.nowHunger = nowHunger;
+	Parms.nowMaxHunger = nowMaxHunger;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Menu_CharacterHungerGauge.WBP_Menu_CharacterHungerGauge_C.Destruct
+// Function WBP_Menu_CharacterHungerGauge.WBP_Menu_CharacterHungerGauge_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Menu_CharacterHungerGauge_C::Destruct()
+void UWBP_Menu_CharacterHungerGauge_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_CharacterHungerGauge_C", "Destruct");
+		Func = Class->GetFunction("WBP_Menu_CharacterHungerGauge_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -65,39 +73,31 @@ void UWBP_Menu_CharacterHungerGauge_C::ExecuteUbergraph_WBP_Menu_CharacterHunger
 }
 
 
-// Function WBP_Menu_CharacterHungerGauge.WBP_Menu_CharacterHungerGauge_C.OnInitialized
+// Function WBP_Menu_CharacterHungerGauge.WBP_Menu_CharacterHungerGauge_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Menu_CharacterHungerGauge_C::OnInitialized()
+void UWBP_Menu_CharacterHungerGauge_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_CharacterHungerGauge_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_Menu_CharacterHungerGauge_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Menu_CharacterHungerGauge.WBP_Menu_CharacterHungerGauge_C.UpdateHunger
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  nowHunger                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  nowMaxHunger                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Menu_CharacterHungerGauge.WBP_Menu_CharacterHungerGauge_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Menu_CharacterHungerGauge_C::UpdateHunger(double nowHunger, double nowMaxHunger)
+void UWBP_Menu_CharacterHungerGauge_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_CharacterHungerGauge_C", "UpdateHunger");
+		Func = Class->GetFunction("WBP_Menu_CharacterHungerGauge_C", "Construct");
 
-	Params::WBP_Menu_CharacterHungerGauge_C_UpdateHunger Parms{};
-
-	Parms.nowHunger = nowHunger;
-	Parms.nowMaxHunger = nowMaxHunger;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

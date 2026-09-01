@@ -9,8 +9,8 @@ struct FDataRegistrySourceToAdd
     int32 AssetPriority;                                                              // 0x0008 (size: 0x4)
     uint8 bClientSource;                                                              // 0x000C (size: 0x1)
     uint8 bServerSource;                                                              // 0x000C (size: 0x1)
-    TSoftObjectPtr<UDataTable> DataTableToAdd;                                        // 0x0010 (size: 0x30)
-    TSoftObjectPtr<UCurveTable> CurveTableToAdd;                                      // 0x0040 (size: 0x30)
+    TSoftObjectPtr<class UDataTable> DataTableToAdd;                                  // 0x0010 (size: 0x30)
+    TSoftObjectPtr<class UCurveTable> CurveTableToAdd;                                // 0x0040 (size: 0x30)
 
 }; // Size: 0x70
 
@@ -53,7 +53,7 @@ class UGameFeatureAction_AddCheats : public UGameFeatureAction
 {
     TArray<TSoftClassPtr<UCheatManagerExtension>> CheatManagers;                      // 0x0028 (size: 0x10)
     bool bLoadCheatManagersAsync;                                                     // 0x0038 (size: 0x1)
-    TArray<TWeakObjectPtr<UCheatManagerExtension>> SpawnedCheatManagers;              // 0x0048 (size: 0x10)
+    TArray<TWeakObjectPtr<class UCheatManagerExtension>> SpawnedCheatManagers;        // 0x0048 (size: 0x10)
 
 }; // Size: 0x60
 
@@ -71,7 +71,7 @@ class UGameFeatureAction_AddWPContent : public UGameFeatureAction
 
 class UGameFeatureAction_DataRegistry : public UGameFeatureAction
 {
-    TArray<TSoftObjectPtr<UDataRegistry>> RegistriesToAdd;                            // 0x0028 (size: 0x10)
+    TArray<TSoftObjectPtr<class UDataRegistry>> RegistriesToAdd;                      // 0x0028 (size: 0x10)
     bool bPreloadInEditor;                                                            // 0x0038 (size: 0x1)
 
 }; // Size: 0x40
@@ -85,7 +85,7 @@ class UGameFeatureAction_DataRegistrySource : public UGameFeatureAction
 
 class UGameFeatureData : public UPrimaryDataAsset
 {
-    TArray<class UGameFeatureAction*> Actions;                                        // 0x0030 (size: 0x10)
+    TArray<UGameFeatureAction*> Actions;                                              // 0x0030 (size: 0x10)
     TArray<FPrimaryAssetTypeInfo> PrimaryAssetTypesToScan;                            // 0x0040 (size: 0x10)
 
 }; // Size: 0x50
@@ -102,9 +102,9 @@ class UGameFeaturesProjectPolicies : public UObject
 
 class UGameFeaturesSubsystem : public UEngineSubsystem
 {
-    TMap<class FGameFeaturePluginIdentifier, class UGameFeaturePluginStateMachine*> GameFeaturePluginStateMachines; // 0x0030 (size: 0x50)
-    TArray<class UGameFeaturePluginStateMachine*> TerminalGameFeaturePluginStateMachines; // 0x0080 (size: 0x10)
-    TArray<class UObject*> Observers;                                                 // 0x00E0 (size: 0x10)
+    TMap<FGameFeaturePluginIdentifier, UGameFeaturePluginStateMachine*> GameFeaturePluginStateMachines; // 0x0030 (size: 0x50)
+    TArray<UGameFeaturePluginStateMachine*> TerminalGameFeaturePluginStateMachines;   // 0x0080 (size: 0x10)
+    TArray<UObject*> Observers;                                                       // 0x00E0 (size: 0x10)
     class UGameFeaturesProjectPolicies* GameSpecificPolicies;                         // 0x00F0 (size: 0x8)
 
 }; // Size: 0x100

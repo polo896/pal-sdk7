@@ -29,8 +29,8 @@ public:
 	class UWBP_PalKeyGuideIcon_C*                 WBP_PalKeyGuideIcon;                               // 0x0498(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Destruct();
 	void ExecuteUbergraph_WBP_MenuESC_Pause(int32 EntryPoint);
+	void Destruct();
 
 public:
 	static class UClass* StaticClass()

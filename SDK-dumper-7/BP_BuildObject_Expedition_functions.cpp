@@ -17,21 +17,21 @@
 namespace SDK
 {
 
-// Function BP_BuildObject_Expedition.BP_BuildObject_Expedition_C.ExecuteUbergraph_BP_BuildObject_Expedition
-// (Final, UbergraphFunction)
+// Function BP_BuildObject_Expedition.BP_BuildObject_Expedition_C.OnCreateAndInitTransformNewVisualEvent
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalCharacterVisualSkeletalMeshComponent*NewVisualComponent                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BuildObject_Expedition_C::ExecuteUbergraph_BP_BuildObject_Expedition(int32 EntryPoint)
+void ABP_BuildObject_Expedition_C::OnCreateAndInitTransformNewVisualEvent(class UPalCharacterVisualSkeletalMeshComponent* NewVisualComponent)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BuildObject_Expedition_C", "ExecuteUbergraph_BP_BuildObject_Expedition");
+		Func = Class->GetFunction("BP_BuildObject_Expedition_C", "OnCreateAndInitTransformNewVisualEvent");
 
-	Params::BP_BuildObject_Expedition_C_ExecuteUbergraph_BP_BuildObject_Expedition Parms{};
+	Params::BP_BuildObject_Expedition_C_OnCreateAndInitTransformNewVisualEvent Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.NewVisualComponent = NewVisualComponent;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -51,21 +51,21 @@ void ABP_BuildObject_Expedition_C::OnAvailable_BlueprintImpl()
 }
 
 
-// Function BP_BuildObject_Expedition.BP_BuildObject_Expedition_C.OnCreateAndInitTransformNewVisualEvent
-// (Event, Protected, BlueprintEvent)
+// Function BP_BuildObject_Expedition.BP_BuildObject_Expedition_C.ExecuteUbergraph_BP_BuildObject_Expedition
+// (Final, UbergraphFunction)
 // Parameters:
-// class UPalCharacterVisualSkeletalMeshComponent*NewVisualComponent                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BuildObject_Expedition_C::OnCreateAndInitTransformNewVisualEvent(class UPalCharacterVisualSkeletalMeshComponent* NewVisualComponent)
+void ABP_BuildObject_Expedition_C::ExecuteUbergraph_BP_BuildObject_Expedition(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BuildObject_Expedition_C", "OnCreateAndInitTransformNewVisualEvent");
+		Func = Class->GetFunction("BP_BuildObject_Expedition_C", "ExecuteUbergraph_BP_BuildObject_Expedition");
 
-	Params::BP_BuildObject_Expedition_C_OnCreateAndInitTransformNewVisualEvent Parms{};
+	Params::BP_BuildObject_Expedition_C_ExecuteUbergraph_BP_BuildObject_Expedition Parms{};
 
-	Parms.NewVisualComponent = NewVisualComponent;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -14,13 +14,13 @@ class UWBP_WorkSuitabilityPreferenceMenu_C : public UUserWidget
     class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon;                                // 0x02B8 (size: 0x8)
     FWBP_WorkSuitabilityPreferenceMenu_COnClickedCloseButton OnClickedCloseButton;    // 0x02C0 (size: 0x10)
     void OnClickedCloseButton();
-    TArray<class UWBP_IconPalWork_C*> SuitabilityIconArray;                           // 0x02D0 (size: 0x10)
-    TSoftObjectPtr<UPalIndividualCharacterContainer> SoftTargetContainer;             // 0x02E0 (size: 0x30)
+    TArray<UWBP_IconPalWork_C*> SuitabilityIconArray;                                 // 0x02D0 (size: 0x10)
+    TSoftObjectPtr<class UPalIndividualCharacterContainer> SoftTargetContainer;       // 0x02E0 (size: 0x30)
     FWBP_WorkSuitabilityPreferenceMenu_COnChangedSuitabilitySetting OnChangedSuitabilitySetting; // 0x0310 (size: 0x10)
     void OnChangedSuitabilitySetting(bool IsOn, EPalWorkSuitability Suitability, class UPalIndividualCharacterSlot* TargetSlot);
     FWBP_WorkSuitabilityPreferenceMenu_COnChangedBattleModeSetting OnChangedBattleModeSetting; // 0x0320 (size: 0x10)
     void OnChangedBattleModeSetting(bool CanBattle, class UPalIndividualCharacterSlot* Slot);
-    TSoftObjectPtr<UPalIndividualCharacterHandle> NowDisplayingCharacterHandle;       // 0x0330 (size: 0x30)
+    TSoftObjectPtr<class UPalIndividualCharacterHandle> NowDisplayingCharacterHandle; // 0x0330 (size: 0x30)
     class UWBP_WorlSuitabilityPreference_PalList_C* LastHoveredListWidget;            // 0x0360 (size: 0x8)
     bool bEnableOperation;                                                            // 0x0368 (size: 0x1)
 

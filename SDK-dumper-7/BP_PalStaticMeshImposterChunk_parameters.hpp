@@ -16,14 +16,14 @@
 namespace SDK::Params
 {
 
-// Function BP_PalStaticMeshImposterChunk.BP_PalStaticMeshImposterChunk_C.Dev_SetChunkVisible
-// 0x0001 (0x0001 - 0x0000)
-struct BP_PalStaticMeshImposterChunk_C_Dev_SetChunkVisible final
+// Function BP_PalStaticMeshImposterChunk.BP_PalStaticMeshImposterChunk_C.OnSetChunkGridSize
+// 0x0004 (0x0004 - 0x0000)
+struct BP_PalStaticMeshImposterChunk_C_OnSetChunkGridSize final
 {
 public:
-	bool                                          bVisible;                                          // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewChunkGridSize;                                  // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalStaticMeshImposterChunk_C_Dev_SetChunkVisible;
+DUMPER7_ASSERTS_BP_PalStaticMeshImposterChunk_C_OnSetChunkGridSize;
 
 // Function BP_PalStaticMeshImposterChunk.BP_PalStaticMeshImposterChunk_C.ExecuteUbergraph_BP_PalStaticMeshImposterChunk
 // 0x0038 (0x0038 - 0x0000)
@@ -43,14 +43,14 @@ public:
 };
 DUMPER7_ASSERTS_BP_PalStaticMeshImposterChunk_C_ExecuteUbergraph_BP_PalStaticMeshImposterChunk;
 
-// Function BP_PalStaticMeshImposterChunk.BP_PalStaticMeshImposterChunk_C.OnSetChunkGridSize
-// 0x0004 (0x0004 - 0x0000)
-struct BP_PalStaticMeshImposterChunk_C_OnSetChunkGridSize final
+// Function BP_PalStaticMeshImposterChunk.BP_PalStaticMeshImposterChunk_C.Dev_SetChunkVisible
+// 0x0001 (0x0001 - 0x0000)
+struct BP_PalStaticMeshImposterChunk_C_Dev_SetChunkVisible final
 {
 public:
-	int32                                         NewChunkGridSize;                                  // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bVisible;                                          // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalStaticMeshImposterChunk_C_OnSetChunkGridSize;
+DUMPER7_ASSERTS_BP_PalStaticMeshImposterChunk_C_Dev_SetChunkVisible;
 
 }
 

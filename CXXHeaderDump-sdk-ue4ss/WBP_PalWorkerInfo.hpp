@@ -25,9 +25,9 @@ class UWBP_PalWorkerInfo_C : public UWBP_IndividualParameterBindWidget_C
     class UWBP_MainMenu_Pal_State_C* WBP_MainMenu_Pal_State_1;                        // 0x06F0 (size: 0x8)
     class UWBP_MainMenu_Pal_State_C* WBP_MainMenu_Pal_State_2;                        // 0x06F8 (size: 0x8)
     class UMaterial* defaultSanityTextMaterial;                                       // 0x0700 (size: 0x8)
-    TArray<class UWBP_MainMenu_Pal_State_C*> ConditionWidgetArray;                    // 0x0708 (size: 0x10)
-    TArray<class UWBP_MainMenu_Pal_Skill_Passive_C*> PassiveSkillWidget;              // 0x0718 (size: 0x10)
-    TMap<class EPalWorkSuitability, class UWBP_MainMenu_Pal_WorkIcon_C*> WorkSuitabilityWidgetMap; // 0x0728 (size: 0x50)
+    TArray<UWBP_MainMenu_Pal_State_C*> ConditionWidgetArray;                          // 0x0708 (size: 0x10)
+    TArray<UWBP_MainMenu_Pal_Skill_Passive_C*> PassiveSkillWidget;                    // 0x0718 (size: 0x10)
+    TMap<EPalWorkSuitability, UWBP_MainMenu_Pal_WorkIcon_C*> WorkSuitabilityWidgetMap; // 0x0728 (size: 0x50)
 
     void OnUpdateCondition_Binded();
     void SetPassiveSkill(TArray<FName>& PassiveSkills);

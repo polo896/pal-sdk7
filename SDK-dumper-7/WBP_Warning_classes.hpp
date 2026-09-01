@@ -40,11 +40,11 @@ public:
 	class UImage*                                 SubLineFlare_R;                                    // 0x02F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Close();
-	void AnmEvent_Open(double DisplayTime);
-	void ExecuteUbergraph_WBP_Warning(int32 EntryPoint);
-	void SetInfoText(const class FText& Text);
 	void SetTitleText(const class FText& Text);
+	void SetInfoText(const class FText& Text);
+	void ExecuteUbergraph_WBP_Warning(int32 EntryPoint);
+	void AnmEvent_Open(double DisplayTime);
+	void AnmEvent_Close();
 
 public:
 	static class UClass* StaticClass()

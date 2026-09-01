@@ -1,0 +1,94 @@
+---@meta
+
+---@class UWBP_IngameConstruction_Paint_EditColor_C : UUserWidget
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field BP_PalTextBlock_C_77 UBP_PalTextBlock_C
+---@field Canvas_ColorCode UCanvasPanel
+---@field Image_Color_After UImage
+---@field Image_Color_Before UImage
+---@field Image_Frame UImage
+---@field Image_GuideBase UImage
+---@field Image_GuideFrame UImage
+---@field Overlay_ColorCode_CopyButton UOverlay
+---@field Overlay_ColorCode_PasteButton UOverlay
+---@field PalEditableTextBox_ColorCode UPalEditableTextBox
+---@field SizeBox_Reset USizeBox
+---@field WBP_ColorSlider UWBP_ColorSlider_C
+---@field WBP_Common_Menu_Msg_Small UWBP_Common_Menu_Msg_Small_C
+---@field WBP_CommonButton_OK UWBP_CommonButton_2_C
+---@field WBP_CommonButton_Reset UWBP_CommonButton_1_C
+---@field WBP_IngameConstruction_Paint_ColorPreset UWBP_IngameConstruction_Paint_ColorPreset_C
+---@field WBP_IngameConstruction_Paint_ColorPreset_1 UWBP_IngameConstruction_Paint_ColorPreset_C
+---@field WBP_IngameConstruction_Paint_ColorPreset_2 UWBP_IngameConstruction_Paint_ColorPreset_C
+---@field WBP_IngameConstruction_Paint_ColorPreset_3 UWBP_IngameConstruction_Paint_ColorPreset_C
+---@field WBP_IngameConstruction_Paint_ColorPreset_4 UWBP_IngameConstruction_Paint_ColorPreset_C
+---@field WBP_IngameConstruction_Paint_ColorPreset_5 UWBP_IngameConstruction_Paint_ColorPreset_C
+---@field WBP_IngameConstruction_Paint_ColorPreset_6 UWBP_IngameConstruction_Paint_ColorPreset_C
+---@field WBP_IngameConstruction_Paint_ColorPreset_7 UWBP_IngameConstruction_Paint_ColorPreset_C
+---@field WBP_IngameConstruction_Paint_ColorPreset_8 UWBP_IngameConstruction_Paint_ColorPreset_C
+---@field WBP_IngameConstruction_Paint_ColorPreset_9 UWBP_IngameConstruction_Paint_ColorPreset_C
+---@field WBP_IngameConstruction_Paint_ColorPreset_10 UWBP_IngameConstruction_Paint_ColorPreset_C
+---@field WBP_IngameConstruction_Paint_ColorPreset_11 UWBP_IngameConstruction_Paint_ColorPreset_C
+---@field WBP_IngameConstruction_Paint_ColorPreset_12 UWBP_IngameConstruction_Paint_ColorPreset_C
+---@field WBP_IngameConstruction_Paint_ColorPreset_13 UWBP_IngameConstruction_Paint_ColorPreset_C
+---@field WBP_IngameConstruction_Paint_ColorPreset_14 UWBP_IngameConstruction_Paint_ColorPreset_C
+---@field WBP_Menu_btn UWBP_Menu_btn_C
+---@field WBP_PalInvisibleButton_CopyCode UWBP_PalInvisibleButton_C
+---@field WBP_PalInvisibleButton_PasteCode UWBP_PalInvisibleButton_C
+---@field WBP_PalKeyGuideIcon_Paste UWBP_PalKeyGuideIcon_C
+---@field OnClickCloseButton FWBP_IngameConstruction_Paint_EditColor_COnClickCloseButton
+---@field OnClickSubmitButton FWBP_IngameConstruction_Paint_EditColor_COnClickSubmitButton
+---@field SubmitColor FLinearColor
+---@field OnClickCopyButton FWBP_IngameConstruction_Paint_EditColor_COnClickCopyButton
+---@field OnClickPasteButton FWBP_IngameConstruction_Paint_EditColor_COnClickPasteButton
+---@field OnClickResetButton FWBP_IngameConstruction_Paint_EditColor_COnClickResetButton
+local UWBP_IngameConstruction_Paint_EditColor_C = {}
+
+function UWBP_IngameConstruction_Paint_EditColor_C:ActivateResetButton() end
+---@param Navigation EUINavigation
+---@return UWidget
+function UWBP_IngameConstruction_Paint_EditColor_C:DoCustomNavigation_ToCopyButton(Navigation) end
+---@param Navigation EUINavigation
+---@return UWidget
+function UWBP_IngameConstruction_Paint_EditColor_C:DoCustomNavigation_CloseButton(Navigation) end
+---@param Navigation EUINavigation
+---@return UWidget
+function UWBP_IngameConstruction_Paint_EditColor_C:DoCustomNavigation_To_SubmitButton(Navigation) end
+---@param Navigation EUINavigation
+---@return UWidget
+function UWBP_IngameConstruction_Paint_EditColor_C:DoCustomNavigation_To_SliderV(Navigation) end
+---@param Color FLinearColor
+function UWBP_IngameConstruction_Paint_EditColor_C:OnClickPresetColorButton(Color) end
+---@return TArray<UWBP_IngameConstruction_Paint_ColorPreset_C>
+function UWBP_IngameConstruction_Paint_EditColor_C:GetColorPresetWidgets() end
+---@param HexString FString
+function UWBP_IngameConstruction_Paint_EditColor_C:ReflectColorFromString(HexString) end
+---@param EditColor FLinearColor
+---@param bShouldApplySider boolean
+function UWBP_IngameConstruction_Paint_EditColor_C:ReflectEditColor(EditColor, bShouldApplySider) end
+---@param CurrentColor FLinearColor
+---@param InPresetColors TArray<FLinearColor>
+---@param bShowResetButton boolean
+function UWBP_IngameConstruction_Paint_EditColor_C:Setup(CurrentColor, InPresetColors, bShowResetButton) end
+function UWBP_IngameConstruction_Paint_EditColor_C:BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature() end
+function UWBP_IngameConstruction_Paint_EditColor_C:BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_CommonButton_OK_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature() end
+---@param Text FText
+---@param CommitMethod ETextCommit::Type
+function UWBP_IngameConstruction_Paint_EditColor_C:BndEvt__WBP_IngameConstruction_Paint_EditColor_PalEditableTextBox_ColorCode_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature(Text, CommitMethod) end
+---@param HSV FLinearColor
+function UWBP_IngameConstruction_Paint_EditColor_C:BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_ColorSlider_K2Node_ComponentBoundEvent_3_OnColorChanged__DelegateSignature(HSV) end
+---@param Button UCommonButtonBase
+function UWBP_IngameConstruction_Paint_EditColor_C:BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_PalInvisibleButton_CopyCode_K2Node_ComponentBoundEvent_4_OnButtonReleased__DelegateSignature(Button) end
+---@param Button UCommonButtonBase
+function UWBP_IngameConstruction_Paint_EditColor_C:BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_PalInvisibleButton_PasteCode_K2Node_ComponentBoundEvent_5_OnButtonReleased__DelegateSignature(Button) end
+function UWBP_IngameConstruction_Paint_EditColor_C:BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_CommonButton_Reset_K2Node_ComponentBoundEvent_6_OnClicked__DelegateSignature() end
+---@param EntryPoint int32
+function UWBP_IngameConstruction_Paint_EditColor_C:ExecuteUbergraph_WBP_IngameConstruction_Paint_EditColor(EntryPoint) end
+function UWBP_IngameConstruction_Paint_EditColor_C:OnClickResetButton__DelegateSignature() end
+function UWBP_IngameConstruction_Paint_EditColor_C:OnClickPasteButton__DelegateSignature() end
+function UWBP_IngameConstruction_Paint_EditColor_C:OnClickCopyButton__DelegateSignature() end
+---@param Color FLinearColor
+function UWBP_IngameConstruction_Paint_EditColor_C:OnClickSubmitButton__DelegateSignature(Color) end
+function UWBP_IngameConstruction_Paint_EditColor_C:OnClickCloseButton__DelegateSignature() end
+
+

@@ -17,131 +17,164 @@
 namespace SDK
 {
 
-// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.SetPlayerName
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWBP_GuildMemberMenuList_C*       Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    DisplayName                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void UWBP_GuildMemberMenu_C::BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature(class UWBP_GuildMemberMenuList_C* Button)
+void UWBP_GuildMemberMenu_C::SetPlayerName(const class FString& DisplayName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "SetPlayerName");
 
-	Params::WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature Parms{};
+	Params::WBP_GuildMemberMenu_C_SetPlayerName Parms{};
 
-	Parms.Button = Button;
+	Parms.DisplayName = std::move(DisplayName);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeGuest_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UWBP_GuildMemberMenuList_C*       Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_GuildMemberMenu_C::BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeGuest_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature(class UWBP_GuildMemberMenuList_C* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeGuest_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature");
-
-	Params::WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeGuest_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeMember_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UWBP_GuildMemberMenuList_C*       Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_GuildMemberMenu_C::BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeMember_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature(class UWBP_GuildMemberMenuList_C* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeMember_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature");
-
-	Params::WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeMember_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeSubMaster_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UWBP_GuildMemberMenuList_C*       Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_GuildMemberMenu_C::BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeSubMaster_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature(class UWBP_GuildMemberMenuList_C* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeSubMaster_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature");
-
-	Params::WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeSubMaster_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UWBP_GuildMemberMenuList_C*       Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_GuildMemberMenu_C::BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature(class UWBP_GuildMemberMenuList_C* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
-
-	Params::WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.CanBan
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.SetGuildPermission
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EPalGuildRole                           SelfRole                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // EPalGuildRole                           TargetRole                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bHasPermission                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   bCanChangeRole                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bCanBan                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bCanRoleAssignment                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_GuildMemberMenu_C::CanBan(EPalGuildRole SelfRole, EPalGuildRole TargetRole, bool bHasPermission, bool* bCanChangeRole)
+void UWBP_GuildMemberMenu_C::SetGuildPermission(EPalGuildRole SelfRole, EPalGuildRole TargetRole, bool bCanBan, bool bCanRoleAssignment)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "CanBan");
+		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "SetGuildPermission");
 
-	Params::WBP_GuildMemberMenu_C_CanBan Parms{};
+	Params::WBP_GuildMemberMenu_C_SetGuildPermission Parms{};
 
 	Parms.SelfRole = SelfRole;
 	Parms.TargetRole = TargetRole;
-	Parms.bHasPermission = bHasPermission;
+	Parms.bCanBan = bCanBan;
+	Parms.bCanRoleAssignment = bCanRoleAssignment;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.SetButtonEnableInternal
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_GuildMemberMenuList_C*       ListWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bEnableButton                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_GuildMemberMenu_C::SetButtonEnableInternal(class UWBP_GuildMemberMenuList_C* ListWidget, bool bEnableButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "SetButtonEnableInternal");
+
+	Params::WBP_GuildMemberMenu_C_SetButtonEnableInternal Parms{};
+
+	Parms.ListWidget = ListWidget;
+	Parms.bEnableButton = bEnableButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_GuildMemberMenu_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.isEnableButton
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWBP_GuildMemberMenuList_C*       Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool*                                   bIsEnable                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_GuildMemberMenu_C::isEnableButton(class UWBP_GuildMemberMenuList_C* Widget, bool* bIsEnable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "isEnableButton");
+
+	Params::WBP_GuildMemberMenu_C_isEnableButton Parms{};
+
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (bCanChangeRole != nullptr)
-		*bCanChangeRole = Parms.bCanChangeRole;
+	if (bIsEnable != nullptr)
+		*bIsEnable = Parms.bIsEnable;
+}
+
+
+// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.GetTopFocusTarget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWidget**                         TargetWidget                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_GuildMemberMenu_C::GetTopFocusTarget(class UWidget** TargetWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "GetTopFocusTarget");
+
+	Params::WBP_GuildMemberMenu_C_GetTopFocusTarget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (TargetWidget != nullptr)
+		*TargetWidget = Parms.TargetWidget;
+}
+
+
+// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.ExecuteUbergraph_WBP_GuildMemberMenu
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_GuildMemberMenu_C::ExecuteUbergraph_WBP_GuildMemberMenu(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "ExecuteUbergraph_WBP_GuildMemberMenu");
+
+	Params::WBP_GuildMemberMenu_C_ExecuteUbergraph_WBP_GuildMemberMenu Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_GuildMemberMenu_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -175,162 +208,129 @@ void UWBP_GuildMemberMenu_C::CanChangeRoleInternal(EPalGuildRole SelfRole, EPalG
 }
 
 
-// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_GuildMemberMenu_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.ExecuteUbergraph_WBP_GuildMemberMenu
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_GuildMemberMenu_C::ExecuteUbergraph_WBP_GuildMemberMenu(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "ExecuteUbergraph_WBP_GuildMemberMenu");
-
-	Params::WBP_GuildMemberMenu_C_ExecuteUbergraph_WBP_GuildMemberMenu Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.GetTopFocusTarget
+// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.CanBan
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWidget**                         TargetWidget                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_GuildMemberMenu_C::GetTopFocusTarget(class UWidget** TargetWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "GetTopFocusTarget");
-
-	Params::WBP_GuildMemberMenu_C_GetTopFocusTarget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (TargetWidget != nullptr)
-		*TargetWidget = Parms.TargetWidget;
-}
-
-
-// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.isEnableButton
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWBP_GuildMemberMenuList_C*       Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool*                                   bIsEnable                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_GuildMemberMenu_C::isEnableButton(class UWBP_GuildMemberMenuList_C* Widget, bool* bIsEnable)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "isEnableButton");
-
-	Params::WBP_GuildMemberMenu_C_isEnableButton Parms{};
-
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (bIsEnable != nullptr)
-		*bIsEnable = Parms.bIsEnable;
-}
-
-
-// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_GuildMemberMenu_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.SetButtonEnableInternal
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_GuildMemberMenuList_C*       ListWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bEnableButton                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_GuildMemberMenu_C::SetButtonEnableInternal(class UWBP_GuildMemberMenuList_C* ListWidget, bool bEnableButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "SetButtonEnableInternal");
-
-	Params::WBP_GuildMemberMenu_C_SetButtonEnableInternal Parms{};
-
-	Parms.ListWidget = ListWidget;
-	Parms.bEnableButton = bEnableButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.SetGuildPermission
-// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EPalGuildRole                           SelfRole                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // EPalGuildRole                           TargetRole                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bCanBan                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bCanRoleAssignment                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bHasPermission                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   bCanChangeRole                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_GuildMemberMenu_C::SetGuildPermission(EPalGuildRole SelfRole, EPalGuildRole TargetRole, bool bCanBan, bool bCanRoleAssignment)
+void UWBP_GuildMemberMenu_C::CanBan(EPalGuildRole SelfRole, EPalGuildRole TargetRole, bool bHasPermission, bool* bCanChangeRole)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "SetGuildPermission");
+		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "CanBan");
 
-	Params::WBP_GuildMemberMenu_C_SetGuildPermission Parms{};
+	Params::WBP_GuildMemberMenu_C_CanBan Parms{};
 
 	Parms.SelfRole = SelfRole;
 	Parms.TargetRole = TargetRole;
-	Parms.bCanBan = bCanBan;
-	Parms.bCanRoleAssignment = bCanRoleAssignment;
+	Parms.bHasPermission = bHasPermission;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (bCanChangeRole != nullptr)
+		*bCanChangeRole = Parms.bCanChangeRole;
+}
+
+
+// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UWBP_GuildMemberMenuList_C*       Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_GuildMemberMenu_C::BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature(class UWBP_GuildMemberMenuList_C* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
+
+	Params::WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.SetPlayerName
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeSubMaster_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// const class FString&                    DisplayName                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// class UWBP_GuildMemberMenuList_C*       Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_GuildMemberMenu_C::SetPlayerName(const class FString& DisplayName)
+void UWBP_GuildMemberMenu_C::BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeSubMaster_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature(class UWBP_GuildMemberMenuList_C* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "SetPlayerName");
+		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeSubMaster_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature");
 
-	Params::WBP_GuildMemberMenu_C_SetPlayerName Parms{};
+	Params::WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeSubMaster_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature Parms{};
 
-	Parms.DisplayName = std::move(DisplayName);
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeMember_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UWBP_GuildMemberMenuList_C*       Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_GuildMemberMenu_C::BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeMember_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature(class UWBP_GuildMemberMenuList_C* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeMember_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature");
+
+	Params::WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeMember_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeGuest_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UWBP_GuildMemberMenuList_C*       Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_GuildMemberMenu_C::BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeGuest_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature(class UWBP_GuildMemberMenuList_C* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeGuest_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature");
+
+	Params::WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeGuest_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UWBP_GuildMemberMenuList_C*       Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_GuildMemberMenu_C::BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature(class UWBP_GuildMemberMenuList_C* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_GuildMemberMenu_C", "BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
+
+	Params::WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

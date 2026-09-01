@@ -30,9 +30,9 @@ public:
 	class FName                                   Character_Id;                                      // 0x0298(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Arena_PalSelect_PalSlot(int32 EntryPoint);
-	void SetNowSetting(bool IsSetting);
 	void SetPalIcon(class UPalIndividualCharacterParameter* CharacterParameter);
+	void SetNowSetting(bool IsSetting);
+	void ExecuteUbergraph_WBP_Arena_PalSelect_PalSlot(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

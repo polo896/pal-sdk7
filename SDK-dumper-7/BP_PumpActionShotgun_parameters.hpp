@@ -17,132 +17,16 @@
 namespace SDK::Params
 {
 
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnWeaponNotify
-// 0x0001 (0x0001 - 0x0000)
-struct BP_PumpActionShotgun_C_OnWeaponNotify final
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.EjectARound
+// 0x0070 (0x0070 - 0x0000)
+struct BP_PumpActionShotgun_C_EjectARound final
 {
 public:
-	EWeaponNotifyType                             Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetEjectionPort_EjectionTransform;        // 0x0000(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ShotgunAmmo_C*                      CallFunc_FinishSpawningActor_ReturnValue;          // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnWeaponNotify;
-
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnshotInternal
-// 0x0002 (0x0002 - 0x0000)
-struct BP_PumpActionShotgun_C_OnshotInternal final
-{
-public:
-	bool                                          IsShoted;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_OnshotInternal_IsShoted;                  // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnshotInternal;
-
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnReloadStart
-// 0x0004 (0x0004 - 0x0000)
-struct BP_PumpActionShotgun_C_OnReloadStart final
-{
-public:
-	float                                         InReloadSpeedPlayRate;                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnReloadStart;
-
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnReleaseTrigger
-// 0x0001 (0x0001 - 0x0000)
-struct BP_PumpActionShotgun_C_OnReleaseTrigger final
-{
-public:
-	bool                                          bCanShootOnRelease;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnReleaseTrigger;
-
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnNotifyEnd_FCB44FF643DA97B49C538D845683A965
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PumpActionShotgun_C_OnNotifyEnd_FCB44FF643DA97B49C538D845683A965 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnNotifyEnd_FCB44FF643DA97B49C538D845683A965;
-
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnNotifyEnd_022E6E364FB50AA73CEBFDBEFEDC6736
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PumpActionShotgun_C_OnNotifyEnd_022E6E364FB50AA73CEBFDBEFEDC6736 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnNotifyEnd_022E6E364FB50AA73CEBFDBEFEDC6736;
-
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnNotifyBegin_FCB44FF643DA97B49C538D845683A965
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PumpActionShotgun_C_OnNotifyBegin_FCB44FF643DA97B49C538D845683A965 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnNotifyBegin_FCB44FF643DA97B49C538D845683A965;
-
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnNotifyBegin_022E6E364FB50AA73CEBFDBEFEDC6736
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PumpActionShotgun_C_OnNotifyBegin_022E6E364FB50AA73CEBFDBEFEDC6736 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnNotifyBegin_022E6E364FB50AA73CEBFDBEFEDC6736;
-
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnInterrupted_FCB44FF643DA97B49C538D845683A965
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PumpActionShotgun_C_OnInterrupted_FCB44FF643DA97B49C538D845683A965 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnInterrupted_FCB44FF643DA97B49C538D845683A965;
-
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnInterrupted_022E6E364FB50AA73CEBFDBEFEDC6736
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PumpActionShotgun_C_OnInterrupted_022E6E364FB50AA73CEBFDBEFEDC6736 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnInterrupted_022E6E364FB50AA73CEBFDBEFEDC6736;
-
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnCompleted_FCB44FF643DA97B49C538D845683A965
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PumpActionShotgun_C_OnCompleted_FCB44FF643DA97B49C538D845683A965 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnCompleted_FCB44FF643DA97B49C538D845683A965;
-
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnCompleted_022E6E364FB50AA73CEBFDBEFEDC6736
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PumpActionShotgun_C_OnCompleted_022E6E364FB50AA73CEBFDBEFEDC6736 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnCompleted_022E6E364FB50AA73CEBFDBEFEDC6736;
-
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnBlendOut_FCB44FF643DA97B49C538D845683A965
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PumpActionShotgun_C_OnBlendOut_FCB44FF643DA97B49C538D845683A965 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnBlendOut_FCB44FF643DA97B49C538D845683A965;
-
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnBlendOut_022E6E364FB50AA73CEBFDBEFEDC6736
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PumpActionShotgun_C_OnBlendOut_022E6E364FB50AA73CEBFDBEFEDC6736 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnBlendOut_022E6E364FB50AA73CEBFDBEFEDC6736;
+DUMPER7_ASSERTS_BP_PumpActionShotgun_C_EjectARound;
 
 // Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.ExecuteUbergraph_BP_PumpActionShotgun
 // 0x07A0 (0x07A0 - 0x0000)
@@ -211,16 +95,132 @@ public:
 };
 DUMPER7_ASSERTS_BP_PumpActionShotgun_C_ExecuteUbergraph_BP_PumpActionShotgun;
 
-// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.EjectARound
-// 0x0070 (0x0070 - 0x0000)
-struct BP_PumpActionShotgun_C_EjectARound final
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnBlendOut_022E6E364FB50AA73CEBFDBEFEDC6736
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PumpActionShotgun_C_OnBlendOut_022E6E364FB50AA73CEBFDBEFEDC6736 final
 {
 public:
-	struct FTransform                             CallFunc_GetEjectionPort_EjectionTransform;        // 0x0000(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ShotgunAmmo_C*                      CallFunc_FinishSpawningActor_ReturnValue;          // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PumpActionShotgun_C_EjectARound;
+DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnBlendOut_022E6E364FB50AA73CEBFDBEFEDC6736;
+
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnBlendOut_FCB44FF643DA97B49C538D845683A965
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PumpActionShotgun_C_OnBlendOut_FCB44FF643DA97B49C538D845683A965 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnBlendOut_FCB44FF643DA97B49C538D845683A965;
+
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnCompleted_022E6E364FB50AA73CEBFDBEFEDC6736
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PumpActionShotgun_C_OnCompleted_022E6E364FB50AA73CEBFDBEFEDC6736 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnCompleted_022E6E364FB50AA73CEBFDBEFEDC6736;
+
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnCompleted_FCB44FF643DA97B49C538D845683A965
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PumpActionShotgun_C_OnCompleted_FCB44FF643DA97B49C538D845683A965 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnCompleted_FCB44FF643DA97B49C538D845683A965;
+
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnInterrupted_022E6E364FB50AA73CEBFDBEFEDC6736
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PumpActionShotgun_C_OnInterrupted_022E6E364FB50AA73CEBFDBEFEDC6736 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnInterrupted_022E6E364FB50AA73CEBFDBEFEDC6736;
+
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnInterrupted_FCB44FF643DA97B49C538D845683A965
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PumpActionShotgun_C_OnInterrupted_FCB44FF643DA97B49C538D845683A965 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnInterrupted_FCB44FF643DA97B49C538D845683A965;
+
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnNotifyBegin_022E6E364FB50AA73CEBFDBEFEDC6736
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PumpActionShotgun_C_OnNotifyBegin_022E6E364FB50AA73CEBFDBEFEDC6736 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnNotifyBegin_022E6E364FB50AA73CEBFDBEFEDC6736;
+
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnNotifyBegin_FCB44FF643DA97B49C538D845683A965
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PumpActionShotgun_C_OnNotifyBegin_FCB44FF643DA97B49C538D845683A965 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnNotifyBegin_FCB44FF643DA97B49C538D845683A965;
+
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnNotifyEnd_022E6E364FB50AA73CEBFDBEFEDC6736
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PumpActionShotgun_C_OnNotifyEnd_022E6E364FB50AA73CEBFDBEFEDC6736 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnNotifyEnd_022E6E364FB50AA73CEBFDBEFEDC6736;
+
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnNotifyEnd_FCB44FF643DA97B49C538D845683A965
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PumpActionShotgun_C_OnNotifyEnd_FCB44FF643DA97B49C538D845683A965 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnNotifyEnd_FCB44FF643DA97B49C538D845683A965;
+
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnReleaseTrigger
+// 0x0001 (0x0001 - 0x0000)
+struct BP_PumpActionShotgun_C_OnReleaseTrigger final
+{
+public:
+	bool                                          bCanShootOnRelease;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnReleaseTrigger;
+
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnReloadStart
+// 0x0004 (0x0004 - 0x0000)
+struct BP_PumpActionShotgun_C_OnReloadStart final
+{
+public:
+	float                                         InReloadSpeedPlayRate;                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnReloadStart;
+
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnshotInternal
+// 0x0002 (0x0002 - 0x0000)
+struct BP_PumpActionShotgun_C_OnshotInternal final
+{
+public:
+	bool                                          IsShoted;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_OnshotInternal_IsShoted;                  // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnshotInternal;
+
+// Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.OnWeaponNotify
+// 0x0001 (0x0001 - 0x0000)
+struct BP_PumpActionShotgun_C_OnWeaponNotify final
+{
+public:
+	EWeaponNotifyType                             Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PumpActionShotgun_C_OnWeaponNotify;
 
 // Function BP_PumpActionShotgun.BP_PumpActionShotgun_C.IsUseLeftHandAttach
 // 0x0001 (0x0001 - 0x0000)

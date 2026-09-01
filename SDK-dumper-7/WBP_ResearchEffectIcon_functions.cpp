@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_ResearchEffectIcon.WBP_ResearchEffectIcon_C.ExecuteUbergraph_WBP_ResearchEffectIcon
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ResearchEffectIcon_C::ExecuteUbergraph_WBP_ResearchEffectIcon(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ResearchEffectIcon_C", "ExecuteUbergraph_WBP_ResearchEffectIcon");
-
-	Params::WBP_ResearchEffectIcon_C_ExecuteUbergraph_WBP_ResearchEffectIcon Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_ResearchEffectIcon.WBP_ResearchEffectIcon_C.SetupIcon
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -54,6 +34,26 @@ void UWBP_ResearchEffectIcon_C::SetupIcon(EPalWorkSuitability WorkType, EPalLabC
 
 	Parms.WorkType = WorkType;
 	Parms.SubType = SubType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ResearchEffectIcon.WBP_ResearchEffectIcon_C.ExecuteUbergraph_WBP_ResearchEffectIcon
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ResearchEffectIcon_C::ExecuteUbergraph_WBP_ResearchEffectIcon(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ResearchEffectIcon_C", "ExecuteUbergraph_WBP_ResearchEffectIcon");
+
+	Params::WBP_ResearchEffectIcon_C_ExecuteUbergraph_WBP_ResearchEffectIcon Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

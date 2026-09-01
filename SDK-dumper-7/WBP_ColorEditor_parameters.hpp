@@ -17,48 +17,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_ColorEditor.WBP_ColorEditor_C.BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_1_OnClickSubmitButton__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_ColorEditor_C_BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_1_OnClickSubmitButton__DelegateSignature final
-{
-public:
-	struct FLinearColor                           Color;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ColorEditor_C_BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_1_OnClickSubmitButton__DelegateSignature;
-
-// Function WBP_ColorEditor.WBP_ColorEditor_C.ExecuteUbergraph_WBP_ColorEditor
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_ColorEditor_C_ExecuteUbergraph_WBP_ColorEditor final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_ComponentBoundEvent_Color;                  // 0x0008(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ColorEditor_C_ExecuteUbergraph_WBP_ColorEditor;
-
-// Function WBP_ColorEditor.WBP_ColorEditor_C.OnClickCopyButton
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_ColorEditor_C_OnClickCopyButton final
-{
-public:
-	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0000(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ClipboardCopy_ReturnValue;                // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ColorEditor_C_OnClickCopyButton;
-
-// Function WBP_ColorEditor.WBP_ColorEditor_C.PasteClipboard
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_ColorEditor_C_PasteClipboard final
-{
-public:
-	class FString                                 CallFunc_GetClipboard_String;                      // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetClipboard_ReturnValue;                 // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ColorEditor_C_PasteClipboard;
-
 // Function WBP_ColorEditor.WBP_ColorEditor_C.Setup
 // 0x0060 (0x0060 - 0x0000)
 struct WBP_ColorEditor_C_Setup final
@@ -77,6 +35,48 @@ public:
 	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_2;      // 0x005C(0x0004)(NoDestructor)
 };
 DUMPER7_ASSERTS_WBP_ColorEditor_C_Setup;
+
+// Function WBP_ColorEditor.WBP_ColorEditor_C.PasteClipboard
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_ColorEditor_C_PasteClipboard final
+{
+public:
+	class FString                                 CallFunc_GetClipboard_String;                      // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetClipboard_ReturnValue;                 // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ColorEditor_C_PasteClipboard;
+
+// Function WBP_ColorEditor.WBP_ColorEditor_C.OnClickCopyButton
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_ColorEditor_C_OnClickCopyButton final
+{
+public:
+	class FText                                   CallFunc_GetText_ReturnValue;                      // 0x0000(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ClipboardCopy_ReturnValue;                // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ColorEditor_C_OnClickCopyButton;
+
+// Function WBP_ColorEditor.WBP_ColorEditor_C.ExecuteUbergraph_WBP_ColorEditor
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_ColorEditor_C_ExecuteUbergraph_WBP_ColorEditor final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           K2Node_ComponentBoundEvent_Color;                  // 0x0008(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ColorEditor_C_ExecuteUbergraph_WBP_ColorEditor;
+
+// Function WBP_ColorEditor.WBP_ColorEditor_C.BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_1_OnClickSubmitButton__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_ColorEditor_C_BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_1_OnClickSubmitButton__DelegateSignature final
+{
+public:
+	struct FLinearColor                           Color;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ColorEditor_C_BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_1_OnClickSubmitButton__DelegateSignature;
 
 // Function WBP_ColorEditor.WBP_ColorEditor_C.BP_GetDesiredFocusTarget
 // 0x0008 (0x0008 - 0x0000)

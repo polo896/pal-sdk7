@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function WBP_CompassIcon_ForLevelObject.WBP_CompassIcon_ForLevelObject_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_CompassIcon_ForLevelObject_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CompassIcon_ForLevelObject_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_CompassIcon_ForLevelObject.WBP_CompassIcon_ForLevelObject_C.ExecuteUbergraph_WBP_CompassIcon_ForLevelObject
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -34,20 +48,6 @@ void UWBP_CompassIcon_ForLevelObject_C::ExecuteUbergraph_WBP_CompassIcon_ForLeve
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CompassIcon_ForLevelObject.WBP_CompassIcon_ForLevelObject_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_CompassIcon_ForLevelObject_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CompassIcon_ForLevelObject_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

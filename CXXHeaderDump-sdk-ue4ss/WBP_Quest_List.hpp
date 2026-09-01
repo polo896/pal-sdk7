@@ -14,12 +14,12 @@ class UWBP_Quest_List_C : public UUserWidget
     void OnHoveredQuestButton(class UWBP_Quest_ListButton_C* Widget);
     FWBP_Quest_List_COnUnhoveredQuestButton OnUnhoveredQuestButton;                   // 0x02C0 (size: 0x10)
     void OnUnhoveredQuestButton(class UWBP_Quest_ListButton_C* Widget);
-    TArray<class UPalQuestData*> CompletedQuestDataArray;                             // 0x02D0 (size: 0x10)
+    TArray<UPalQuestData*> CompletedQuestDataArray;                                   // 0x02D0 (size: 0x10)
 
-    void GetAllQuestWidget(TArray<class UWBP_Quest_ListButton_C*>& NewParam);
+    void GetAllQuestWidget(TArray<UWBP_Quest_ListButton_C*>& NewParam);
     void GetTopQuestWidget(class UWBP_Quest_ListButton_C*& Widget);
-    void GetCompletedQuestWidgetByType(EPalQuestType QuestType, TArray<class UWBP_Quest_ListButton_C*>& widgets);
-    void GetOrderedQuestWidgetByType(EPalQuestType QuestType, TArray<class UWBP_Quest_ListButton_C*>& widgets);
+    void GetCompletedQuestWidgetByType(EPalQuestType QuestType, TArray<UWBP_Quest_ListButton_C*>& widgets);
+    void GetOrderedQuestWidgetByType(EPalQuestType QuestType, TArray<UWBP_Quest_ListButton_C*>& widgets);
     void GetTopQuestData(class UPalQuestData*& QuestData);
     void GetTopFocusTarget(class UWidget*& Widget);
     void FilteringInternal(EPalQuestType QuestType);
@@ -27,14 +27,14 @@ class UWBP_Quest_List_C : public UUserWidget
     void GetTopFocusTarget_OrderedQuest(class UWidget*& Widget);
     void FIlteringSubQuest();
     void FilteringMainQuest();
-    void GetCompletedQuestWidget(TArray<class UWBP_Quest_ListButton_C*>& widgets);
-    void GetOrderedQuestWidget(TArray<class UWBP_Quest_ListButton_C*>& widgets);
+    void GetCompletedQuestWidget(TArray<UWBP_Quest_ListButton_C*>& widgets);
+    void GetOrderedQuestWidget(TArray<UWBP_Quest_ListButton_C*>& widgets);
     void SetTrackingQuestId(FName QuestId);
     void AddCompletedQuestId(TArray<FName>& QuestIdArray);
     void OnUnhoveredQuestButton_Binded(class UWBP_Quest_ListButton_C* Widget);
     void OnHoveredQuestButton_Binded(class UWBP_Quest_ListButton_C* Widget);
     void OnClickedQuestButton_Binded(class UWBP_Quest_ListButton_C* Widget);
-    void AddOrderedQuest(TArray<class UPalQuestData*>& QuestDataArray);
+    void AddOrderedQuest(TArray<UPalQuestData*>& QuestDataArray);
     void Construct();
     void Destruct();
     void ExecuteUbergraph_WBP_Quest_List(int32 EntryPoint);

@@ -17,111 +17,184 @@
 namespace SDK
 {
 
-// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.BndEvt__WBP_CommonSelectNum_Button_318_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.UpdateText
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_CommonSelectNum_C::BndEvt__WBP_CommonSelectNum_Button_318_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature()
+void UWBP_CommonSelectNum_C::UpdateText()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonSelectNum_C", "BndEvt__WBP_CommonSelectNum_Button_318_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature");
+		Func = Class->GetFunction("WBP_CommonSelectNum_C", "UpdateText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.BndEvt__WBP_CommonSelectNum_EditableTextBox_0_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature
-// (HasOutParams, BlueprintEvent)
+// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.Setup
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// ETextCommit                             CommitMethod                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int64                                   inMaxCount                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int64                                   defaultCount                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CommonSelectNum_C::BndEvt__WBP_CommonSelectNum_EditableTextBox_0_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod)
+void UWBP_CommonSelectNum_C::Setup(int64 inMaxCount, int64 defaultCount)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonSelectNum_C", "BndEvt__WBP_CommonSelectNum_EditableTextBox_0_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature");
+		Func = Class->GetFunction("WBP_CommonSelectNum_C", "Setup");
 
-	Params::WBP_CommonSelectNum_C_BndEvt__WBP_CommonSelectNum_EditableTextBox_0_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature Parms{};
+	Params::WBP_CommonSelectNum_C_Setup Parms{};
 
-	Parms.Text = std::move(Text);
-	Parms.CommitMethod = CommitMethod;
+	Parms.inMaxCount = inMaxCount;
+	Parms.defaultCount = defaultCount;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.BndEvt__WBP_CommonSelectNum_EditableTextBox_0_K2Node_ComponentBoundEvent_3_OnEditableTextBoxChangedEvent__DelegateSignature
-// (HasOutParams, BlueprintEvent)
+// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.OnTextChanged
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const class FString&                    NewString                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void UWBP_CommonSelectNum_C::BndEvt__WBP_CommonSelectNum_EditableTextBox_0_K2Node_ComponentBoundEvent_3_OnEditableTextBoxChangedEvent__DelegateSignature(const class FText& Text)
+void UWBP_CommonSelectNum_C::OnTextChanged(const class FString& NewString)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonSelectNum_C", "BndEvt__WBP_CommonSelectNum_EditableTextBox_0_K2Node_ComponentBoundEvent_3_OnEditableTextBoxChangedEvent__DelegateSignature");
+		Func = Class->GetFunction("WBP_CommonSelectNum_C", "OnTextChanged");
 
-	Params::WBP_CommonSelectNum_C_BndEvt__WBP_CommonSelectNum_EditableTextBox_0_K2Node_ComponentBoundEvent_3_OnEditableTextBoxChangedEvent__DelegateSignature Parms{};
+	Params::WBP_CommonSelectNum_C_OnTextChanged Parms{};
 
-	Parms.Text = std::move(Text);
+	Parms.NewString = std::move(NewString);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.BndEvt__WBP_CommonSelectNum_LeftButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_CommonSelectNum_C::BndEvt__WBP_CommonSelectNum_LeftButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
+void UWBP_CommonSelectNum_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonSelectNum_C", "BndEvt__WBP_CommonSelectNum_LeftButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
+		Func = Class->GetFunction("WBP_CommonSelectNum_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.BndEvt__WBP_CommonSelectNum_RightButton_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.OnEscape
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_CommonSelectNum_C::BndEvt__WBP_CommonSelectNum_RightButton_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature()
+void UWBP_CommonSelectNum_C::OnEscape()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonSelectNum_C", "BndEvt__WBP_CommonSelectNum_RightButton_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature");
+		Func = Class->GetFunction("WBP_CommonSelectNum_C", "OnEscape");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.Check Numeric
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FString&                    checkString                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// class FString*                          OutString                                              (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
+// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.OnClickedR
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_CommonSelectNum_C::Check_Numeric(const class FString& checkString, class FString* OutString)
+void UWBP_CommonSelectNum_C::OnClickedR()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonSelectNum_C", "Check Numeric");
+		Func = Class->GetFunction("WBP_CommonSelectNum_C", "OnClickedR");
 
-	Params::WBP_CommonSelectNum_C_Check_Numeric Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.checkString = std::move(checkString);
+
+// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.OnClickedL
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_CommonSelectNum_C::OnClickedL()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CommonSelectNum_C", "OnClickedL");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.Increment
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_CommonSelectNum_C::Increment()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CommonSelectNum_C", "Increment");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.GetNowCount
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// int32*                                  Count                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CommonSelectNum_C::GetNowCount(int32* Count)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CommonSelectNum_C", "GetNowCount");
+
+	Params::WBP_CommonSelectNum_C_GetNowCount Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (OutString != nullptr)
-		*OutString = std::move(Parms.OutString);
+	if (Count != nullptr)
+		*Count = Parms.Count;
+}
+
+
+// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.ExecuteUbergraph_WBP_CommonSelectNum
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CommonSelectNum_C::ExecuteUbergraph_WBP_CommonSelectNum(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CommonSelectNum_C", "ExecuteUbergraph_WBP_CommonSelectNum");
+
+	Params::WBP_CommonSelectNum_C_ExecuteUbergraph_WBP_CommonSelectNum Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.Decrement
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_CommonSelectNum_C::Decrement()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CommonSelectNum_C", "Decrement");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -149,182 +222,109 @@ void UWBP_CommonSelectNum_C::CheckMaxCount(const class FString& InString, class 
 }
 
 
-// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.Decrement
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.Check Numeric
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    checkString                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// class FString*                          OutString                                              (Parm, OutParm, ZeroConstructor, HasGetValueTypeHash)
 
-void UWBP_CommonSelectNum_C::Decrement()
+void UWBP_CommonSelectNum_C::Check_Numeric(const class FString& checkString, class FString* OutString)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonSelectNum_C", "Decrement");
+		Func = Class->GetFunction("WBP_CommonSelectNum_C", "Check Numeric");
+
+	Params::WBP_CommonSelectNum_C_Check_Numeric Parms{};
+
+	Parms.checkString = std::move(checkString);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutString != nullptr)
+		*OutString = std::move(Parms.OutString);
+}
+
+
+// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.BndEvt__WBP_CommonSelectNum_RightButton_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_CommonSelectNum_C::BndEvt__WBP_CommonSelectNum_RightButton_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CommonSelectNum_C", "BndEvt__WBP_CommonSelectNum_RightButton_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.ExecuteUbergraph_WBP_CommonSelectNum
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.BndEvt__WBP_CommonSelectNum_LeftButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_CommonSelectNum_C::ExecuteUbergraph_WBP_CommonSelectNum(int32 EntryPoint)
+void UWBP_CommonSelectNum_C::BndEvt__WBP_CommonSelectNum_LeftButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonSelectNum_C", "ExecuteUbergraph_WBP_CommonSelectNum");
+		Func = Class->GetFunction("WBP_CommonSelectNum_C", "BndEvt__WBP_CommonSelectNum_LeftButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
 
-	Params::WBP_CommonSelectNum_C_ExecuteUbergraph_WBP_CommonSelectNum Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.BndEvt__WBP_CommonSelectNum_EditableTextBox_0_K2Node_ComponentBoundEvent_3_OnEditableTextBoxChangedEvent__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_CommonSelectNum_C::BndEvt__WBP_CommonSelectNum_EditableTextBox_0_K2Node_ComponentBoundEvent_3_OnEditableTextBoxChangedEvent__DelegateSignature(const class FText& Text)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CommonSelectNum_C", "BndEvt__WBP_CommonSelectNum_EditableTextBox_0_K2Node_ComponentBoundEvent_3_OnEditableTextBoxChangedEvent__DelegateSignature");
+
+	Params::WBP_CommonSelectNum_C_BndEvt__WBP_CommonSelectNum_EditableTextBox_0_K2Node_ComponentBoundEvent_3_OnEditableTextBoxChangedEvent__DelegateSignature Parms{};
+
+	Parms.Text = std::move(Text);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.GetNowCount
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.BndEvt__WBP_CommonSelectNum_EditableTextBox_0_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature
+// (HasOutParams, BlueprintEvent)
 // Parameters:
-// int32*                                  Count                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// ETextCommit                             CommitMethod                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CommonSelectNum_C::GetNowCount(int32* Count)
+void UWBP_CommonSelectNum_C::BndEvt__WBP_CommonSelectNum_EditableTextBox_0_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonSelectNum_C", "GetNowCount");
+		Func = Class->GetFunction("WBP_CommonSelectNum_C", "BndEvt__WBP_CommonSelectNum_EditableTextBox_0_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature");
 
-	Params::WBP_CommonSelectNum_C_GetNowCount Parms{};
+	Params::WBP_CommonSelectNum_C_BndEvt__WBP_CommonSelectNum_EditableTextBox_0_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Count != nullptr)
-		*Count = Parms.Count;
-}
-
-
-// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.Increment
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_CommonSelectNum_C::Increment()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonSelectNum_C", "Increment");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.OnClickedL
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_CommonSelectNum_C::OnClickedL()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonSelectNum_C", "OnClickedL");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.OnClickedR
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_CommonSelectNum_C::OnClickedR()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonSelectNum_C", "OnClickedR");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.OnEscape
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_CommonSelectNum_C::OnEscape()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonSelectNum_C", "OnEscape");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_CommonSelectNum_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonSelectNum_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.OnTextChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FString&                    NewString                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void UWBP_CommonSelectNum_C::OnTextChanged(const class FString& NewString)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonSelectNum_C", "OnTextChanged");
-
-	Params::WBP_CommonSelectNum_C_OnTextChanged Parms{};
-
-	Parms.NewString = std::move(NewString);
+	Parms.Text = std::move(Text);
+	Parms.CommitMethod = CommitMethod;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.Setup
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int64                                   inMaxCount                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int64                                   defaultCount                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.BndEvt__WBP_CommonSelectNum_Button_318_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_CommonSelectNum_C::Setup(int64 inMaxCount, int64 defaultCount)
+void UWBP_CommonSelectNum_C::BndEvt__WBP_CommonSelectNum_Button_318_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonSelectNum_C", "Setup");
-
-	Params::WBP_CommonSelectNum_C_Setup Parms{};
-
-	Parms.inMaxCount = inMaxCount;
-	Parms.defaultCount = defaultCount;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CommonSelectNum.WBP_CommonSelectNum_C.UpdateText
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_CommonSelectNum_C::UpdateText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonSelectNum_C", "UpdateText");
+		Func = Class->GetFunction("WBP_CommonSelectNum_C", "BndEvt__WBP_CommonSelectNum_Button_318_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

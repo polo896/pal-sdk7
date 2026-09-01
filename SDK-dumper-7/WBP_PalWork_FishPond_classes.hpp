@@ -56,20 +56,20 @@ public:
 	int32                                         LastNum;                                           // 0x0574(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void Destruct();
-	void DisplayCheck();
-	void ExecuteUbergraph_WBP_PalWork_FishPond(int32 EntryPoint);
-	class UPalUIMapObjectFishPondStatusIndicatorModel* GetIndicatorModel();
-	void GetMapObjectLocation(struct FVector* Location);
-	class UPalMapObjectConcreteModelBase* GetOwnerConcreteModel();
-	void On_Updated_Worker_Pal(class UPalWorkBase* Work);
-	void OnSetup();
-	void OnUpdateProductNumInfo(class UPalUIMapObjectFishPondStatusIndicatorModel* UIModel);
-	void OnUpdateProgress(class UPalWorkProgress* Progress);
-	void OnUpdateSelectedTarget(class UPalUIMapObjectFishPondStatusIndicatorModel* UIModel);
-	void SetRemainTime(int32 RemainingSecond);
 	void Setup();
+	void SetRemainTime(int32 RemainingSecond);
+	void OnUpdateSelectedTarget(class UPalUIMapObjectFishPondStatusIndicatorModel* UIModel);
+	void OnUpdateProgress(class UPalWorkProgress* Progress);
+	void OnUpdateProductNumInfo(class UPalUIMapObjectFishPondStatusIndicatorModel* UIModel);
+	void OnSetup();
+	void On_Updated_Worker_Pal(class UPalWorkBase* Work);
+	class UPalMapObjectConcreteModelBase* GetOwnerConcreteModel();
+	void GetMapObjectLocation(struct FVector* Location);
+	class UPalUIMapObjectFishPondStatusIndicatorModel* GetIndicatorModel();
+	void ExecuteUbergraph_WBP_PalWork_FishPond(int32 EntryPoint);
+	void DisplayCheck();
+	void Destruct();
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

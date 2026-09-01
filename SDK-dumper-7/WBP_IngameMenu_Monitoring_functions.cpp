@@ -17,117 +17,35 @@
 namespace SDK
 {
 
-// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.BndEvt__WBP_IngameMenu_Monitoring_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_IngameMenu_Monitoring_C::BndEvt__WBP_IngameMenu_Monitoring_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Monitoring_C", "BndEvt__WBP_IngameMenu_Monitoring_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_IngameMenu_Monitoring_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Monitoring_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.DisplayCurrentWorkHardInfo
+// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.UpdateWorkHardInfoPermission
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_IngameMenu_Monitoring_C::DisplayCurrentWorkHardInfo()
+void UWBP_IngameMenu_Monitoring_C::UpdateWorkHardInfoPermission()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Monitoring_C", "DisplayCurrentWorkHardInfo");
+		Func = Class->GetFunction("WBP_IngameMenu_Monitoring_C", "UpdateWorkHardInfoPermission");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.DisplayHoverWorkHardInfo
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.UpdateWorkHardInfo
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   WorkHardLevel_0                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_Monitoring_C::DisplayHoverWorkHardInfo(int32 WorkHardLevel_0)
+void UWBP_IngameMenu_Monitoring_C::UpdateWorkHardInfo(int32 WorkHardLevel_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Monitoring_C", "DisplayHoverWorkHardInfo");
+		Func = Class->GetFunction("WBP_IngameMenu_Monitoring_C", "UpdateWorkHardInfo");
 
-	Params::WBP_IngameMenu_Monitoring_C_DisplayHoverWorkHardInfo Parms{};
+	Params::WBP_IngameMenu_Monitoring_C_UpdateWorkHardInfo Parms{};
 
 	Parms.WorkHardLevel_0 = WorkHardLevel_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.ExecuteUbergraph_WBP_IngameMenu_Monitoring
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_Monitoring_C::ExecuteUbergraph_WBP_IngameMenu_Monitoring(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Monitoring_C", "ExecuteUbergraph_WBP_IngameMenu_Monitoring");
-
-	Params::WBP_IngameMenu_Monitoring_C_ExecuteUbergraph_WBP_IngameMenu_Monitoring Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameMenu_Monitoring_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Monitoring_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.OnUpdateWorkHardType
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalBaseCampPassiveEffect_WorkHard*EffectWorkHard                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_Monitoring_C::OnUpdateWorkHardType(class UPalBaseCampPassiveEffect_WorkHard* EffectWorkHard)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Monitoring_C", "OnUpdateWorkHardType");
-
-	Params::WBP_IngameMenu_Monitoring_C_OnUpdateWorkHardType Parms{};
-
-	Parms.EffectWorkHard = EffectWorkHard;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -153,19 +71,73 @@ void UWBP_IngameMenu_Monitoring_C::RequestChangeHardWorkLevel(int32 Level)
 }
 
 
-// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.UpdateWorkHardInfo
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.OnUpdateWorkHardType
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   WorkHardLevel_0                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalBaseCampPassiveEffect_WorkHard*EffectWorkHard                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_Monitoring_C::UpdateWorkHardInfo(int32 WorkHardLevel_0)
+void UWBP_IngameMenu_Monitoring_C::OnUpdateWorkHardType(class UPalBaseCampPassiveEffect_WorkHard* EffectWorkHard)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Monitoring_C", "UpdateWorkHardInfo");
+		Func = Class->GetFunction("WBP_IngameMenu_Monitoring_C", "OnUpdateWorkHardType");
 
-	Params::WBP_IngameMenu_Monitoring_C_UpdateWorkHardInfo Parms{};
+	Params::WBP_IngameMenu_Monitoring_C_OnUpdateWorkHardType Parms{};
+
+	Parms.EffectWorkHard = EffectWorkHard;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngameMenu_Monitoring_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Monitoring_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.ExecuteUbergraph_WBP_IngameMenu_Monitoring
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_Monitoring_C::ExecuteUbergraph_WBP_IngameMenu_Monitoring(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Monitoring_C", "ExecuteUbergraph_WBP_IngameMenu_Monitoring");
+
+	Params::WBP_IngameMenu_Monitoring_C_ExecuteUbergraph_WBP_IngameMenu_Monitoring Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.DisplayHoverWorkHardInfo
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   WorkHardLevel_0                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_Monitoring_C::DisplayHoverWorkHardInfo(int32 WorkHardLevel_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Monitoring_C", "DisplayHoverWorkHardInfo");
+
+	Params::WBP_IngameMenu_Monitoring_C_DisplayHoverWorkHardInfo Parms{};
 
 	Parms.WorkHardLevel_0 = WorkHardLevel_0;
 
@@ -173,15 +145,43 @@ void UWBP_IngameMenu_Monitoring_C::UpdateWorkHardInfo(int32 WorkHardLevel_0)
 }
 
 
-// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.UpdateWorkHardInfoPermission
+// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.DisplayCurrentWorkHardInfo
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_IngameMenu_Monitoring_C::UpdateWorkHardInfoPermission()
+void UWBP_IngameMenu_Monitoring_C::DisplayCurrentWorkHardInfo()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Monitoring_C", "UpdateWorkHardInfoPermission");
+		Func = Class->GetFunction("WBP_IngameMenu_Monitoring_C", "DisplayCurrentWorkHardInfo");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_IngameMenu_Monitoring_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Monitoring_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.BndEvt__WBP_IngameMenu_Monitoring_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_IngameMenu_Monitoring_C::BndEvt__WBP_IngameMenu_Monitoring_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Monitoring_C", "BndEvt__WBP_IngameMenu_Monitoring_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

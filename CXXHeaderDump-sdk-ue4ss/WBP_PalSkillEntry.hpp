@@ -10,7 +10,7 @@ class UWBP_PalSkillEntry_C : public UUserWidget
     class UProgressBar* CoolDownProgress;                                             // 0x0298 (size: 0x8)
     class UBP_PalTextBlock_C* Text_WazaName;                                          // 0x02A0 (size: 0x8)
     class UWBP_PlayerInputKeyGuideIcon_C* WBP_PlayerInputKeyGuideIcon_Skill;          // 0x02A8 (size: 0x8)
-    TArray<class UBP_PalTextBlock_C*> WazaNametextArray;                              // 0x02B0 (size: 0x10)
+    TArray<UBP_PalTextBlock_C*> WazaNametextArray;                                    // 0x02B0 (size: 0x10)
     FName InputActionName;                                                            // 0x02C0 (size: 0x8)
     FName OverridePadActionName;                                                      // 0x02C8 (size: 0x8)
     FName OverridePadActionName_Additional;                                           // 0x02D0 (size: 0x8)

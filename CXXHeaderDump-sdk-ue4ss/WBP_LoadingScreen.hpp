@@ -11,7 +11,7 @@ class UWBP_LoadingScreen_C : public UPalLoadingScreenWidgetBase
     class UWBP_Common_LoadingIcon_C* WBP_Common_LoadingIcon;                          // 0x0478 (size: 0x8)
     class UWBP_PalFlipbookWidget_C* WBP_PalFlipbookWidget;                            // 0x0480 (size: 0x8)
     int32 MaxTipCount;                                                                // 0x0488 (size: 0x4)
-    TArray<class UPaperFlipbook*> FlipbookArray;                                      // 0x0490 (size: 0x10)
+    TArray<UPaperFlipbook*> FlipbookArray;                                            // 0x0490 (size: 0x10)
 
     void GetIconIndex(int32& IconIndex);
     void GetTipsNumber(int32& TipsNumber);

@@ -18,6 +18,78 @@
 namespace SDK::Params
 {
 
+// Function BP_NormalRifle.BP_NormalRifle_C.カスタムイベント_0
+// 0x0001 (0x0001 - 0x0000)
+struct BP_NormalRifle_C_カスタムイベント_0 final
+{
+public:
+	EWeaponNotifyType                             NotifyType;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_NormalRifle_C_カスタムイベント_0;
+
+// Function BP_NormalRifle.BP_NormalRifle_C.StopFireSound
+// 0x0008 (0x0008 - 0x0000)
+struct BP_NormalRifle_C_StopFireSound final
+{
+public:
+	struct FPalDataTableRowName_SoundID           K2Node_MakeStruct_PalDataTableRowName_SoundID;     // 0x0000(0x0008)(NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_NormalRifle_C_StopFireSound;
+
+// Function BP_NormalRifle.BP_NormalRifle_C.ReceiveEndPlay
+// 0x0001 (0x0001 - 0x0000)
+struct BP_NormalRifle_C_ReceiveEndPlay final
+{
+public:
+	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_NormalRifle_C_ReceiveEndPlay;
+
+// Function BP_NormalRifle.BP_NormalRifle_C.PlayFireSound
+// 0x0014 (0x0014 - 0x0000)
+struct BP_NormalRifle_C_PlayFireSound final
+{
+public:
+	bool                                          CallFunc_IsEmptyMagazine_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalSoundOptions                       K2Node_MakeStruct_PalSoundOptions;                 // 0x0004(0x0004)(NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalDataTableRowName_SoundID           K2Node_MakeStruct_PalDataTableRowName_SoundID;     // 0x000C(0x0008)(NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_NormalRifle_C_PlayFireSound;
+
+// Function BP_NormalRifle.BP_NormalRifle_C.PlayEndFireSound_Callback
+// 0x0010 (0x0010 - 0x0000)
+struct BP_NormalRifle_C_PlayEndFireSound_Callback final
+{
+public:
+	bool                                          IsPlaying;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalSoundOptions                       K2Node_MakeStruct_PalSoundOptions;                 // 0x0004(0x0004)(NoDestructor)
+	struct FPalDataTableRowName_SoundID           K2Node_MakeStruct_PalDataTableRowName_SoundID;     // 0x0008(0x0008)(NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_NormalRifle_C_PlayEndFireSound_Callback;
+
+// Function BP_NormalRifle.BP_NormalRifle_C.PlayEndFireSound
+// 0x0018 (0x0018 - 0x0000)
+struct BP_NormalRifle_C_PlayEndFireSound final
+{
+public:
+	TDelegate<void(bool IsPlaying)>               K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalDataTableRowName_SoundID           K2Node_MakeStruct_PalDataTableRowName_SoundID;     // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_NormalRifle_C_PlayEndFireSound;
+
+// Function BP_NormalRifle.BP_NormalRifle_C.GetMuzzleEffectAttached
+// 0x0008 (0x0008 - 0x0000)
+struct BP_NormalRifle_C_GetMuzzleEffectAttached final
+{
+public:
+	class UNiagaraSystem*                         Effect;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_NormalRifle_C_GetMuzzleEffectAttached;
+
 // Function BP_NormalRifle.BP_NormalRifle_C.ExecuteUbergraph_BP_NormalRifle
 // 0x0058 (0x0058 - 0x0000)
 struct BP_NormalRifle_C_ExecuteUbergraph_BP_NormalRifle final
@@ -46,133 +118,59 @@ public:
 };
 DUMPER7_ASSERTS_BP_NormalRifle_C_ExecuteUbergraph_BP_NormalRifle;
 
-// Function BP_NormalRifle.BP_NormalRifle_C.GetMuzzleEffectAttached
-// 0x0008 (0x0008 - 0x0000)
-struct BP_NormalRifle_C_GetMuzzleEffectAttached final
-{
-public:
-	class UNiagaraSystem*                         Effect;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_NormalRifle_C_GetMuzzleEffectAttached;
-
-// Function BP_NormalRifle.BP_NormalRifle_C.PlayEndFireSound
-// 0x0018 (0x0018 - 0x0000)
-struct BP_NormalRifle_C_PlayEndFireSound final
-{
-public:
-	TDelegate<void(bool IsPlaying)>               K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalDataTableRowName_SoundID           K2Node_MakeStruct_PalDataTableRowName_SoundID;     // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_NormalRifle_C_PlayEndFireSound;
-
-// Function BP_NormalRifle.BP_NormalRifle_C.PlayEndFireSound_Callback
-// 0x0010 (0x0010 - 0x0000)
-struct BP_NormalRifle_C_PlayEndFireSound_Callback final
-{
-public:
-	bool                                          IsPlaying;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalSoundOptions                       K2Node_MakeStruct_PalSoundOptions;                 // 0x0004(0x0004)(NoDestructor)
-	struct FPalDataTableRowName_SoundID           K2Node_MakeStruct_PalDataTableRowName_SoundID;     // 0x0008(0x0008)(NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_NormalRifle_C_PlayEndFireSound_Callback;
-
-// Function BP_NormalRifle.BP_NormalRifle_C.PlayFireSound
-// 0x0014 (0x0014 - 0x0000)
-struct BP_NormalRifle_C_PlayFireSound final
-{
-public:
-	bool                                          CallFunc_IsEmptyMagazine_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalSoundOptions                       K2Node_MakeStruct_PalSoundOptions;                 // 0x0004(0x0004)(NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalDataTableRowName_SoundID           K2Node_MakeStruct_PalDataTableRowName_SoundID;     // 0x000C(0x0008)(NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_NormalRifle_C_PlayFireSound;
-
-// Function BP_NormalRifle.BP_NormalRifle_C.ReceiveEndPlay
+// Function BP_NormalRifle.BP_NormalRifle_C.PlayReloadAnimation
 // 0x0001 (0x0001 - 0x0000)
-struct BP_NormalRifle_C_ReceiveEndPlay final
-{
-public:
-	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_NormalRifle_C_ReceiveEndPlay;
-
-// Function BP_NormalRifle.BP_NormalRifle_C.StopFireSound
-// 0x0008 (0x0008 - 0x0000)
-struct BP_NormalRifle_C_StopFireSound final
-{
-public:
-	struct FPalDataTableRowName_SoundID           K2Node_MakeStruct_PalDataTableRowName_SoundID;     // 0x0000(0x0008)(NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_NormalRifle_C_StopFireSound;
-
-// Function BP_NormalRifle.BP_NormalRifle_C.カスタムイベント_0
-// 0x0001 (0x0001 - 0x0000)
-struct BP_NormalRifle_C_カスタムイベント_0 final
-{
-public:
-	EWeaponNotifyType                             NotifyType;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_NormalRifle_C_カスタムイベント_0;
-
-// Function BP_NormalRifle.BP_NormalRifle_C.GetAimingBlurAngle
-// 0x0008 (0x0008 - 0x0000)
-struct BP_NormalRifle_C_GetAimingBlurAngle final
-{
-public:
-	double                                        Angle;                                             // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_NormalRifle_C_GetAimingBlurAngle;
-
-// Function BP_NormalRifle.BP_NormalRifle_C.GetEquipSocketName
-// 0x0008 (0x0008 - 0x0000)
-struct BP_NormalRifle_C_GetEquipSocketName final
-{
-public:
-	class FName                                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_NormalRifle_C_GetEquipSocketName;
-
-// Function BP_NormalRifle.BP_NormalRifle_C.GetMuzzleLocation
-// 0x0030 (0x0030 - 0x0000)
-struct BP_NormalRifle_C_GetMuzzleLocation final
-{
-public:
-	struct FVector                                MuzzleLocation;                                    // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_NormalRifle_C_GetMuzzleLocation;
-
-// Function BP_NormalRifle.BP_NormalRifle_C.GetMuzzleRotator
-// 0x0030 (0x0030 - 0x0000)
-struct BP_NormalRifle_C_GetMuzzleRotator final
-{
-public:
-	struct FRotator                               Rotator;                                           // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FRotator                               CallFunc_GetSocketRotation_ReturnValue;            // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_BP_NormalRifle_C_GetMuzzleRotator;
-
-// Function BP_NormalRifle.BP_NormalRifle_C.GetShootInterval
-// 0x0008 (0x0008 - 0x0000)
-struct BP_NormalRifle_C_GetShootInterval final
-{
-public:
-	double                                        Time;                                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_NormalRifle_C_GetShootInterval;
-
-// Function BP_NormalRifle.BP_NormalRifle_C.GetShotAnimation
-// 0x0001 (0x0001 - 0x0000)
-struct BP_NormalRifle_C_GetShotAnimation final
+struct BP_NormalRifle_C_PlayReloadAnimation final
 {
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_NormalRifle_C_GetShotAnimation;
+DUMPER7_ASSERTS_BP_NormalRifle_C_PlayReloadAnimation;
+
+// Function BP_NormalRifle.BP_NormalRifle_C.OnShoot
+// 0x0008 (0x0008 - 0x0000)
+struct BP_NormalRifle_C_OnShoot final
+{
+public:
+	class APalBullet*                             BulletActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_NormalRifle_C_OnShoot;
+
+// Function BP_NormalRifle.BP_NormalRifle_C.OnReleaseTrigger
+// 0x0001 (0x0001 - 0x0000)
+struct BP_NormalRifle_C_OnReleaseTrigger final
+{
+public:
+	bool                                          bCanShootOnRelease;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_NormalRifle_C_OnReleaseTrigger;
+
+// Function BP_NormalRifle.BP_NormalRifle_C.OnDetachWeapon
+// 0x0008 (0x0008 - 0x0000)
+struct BP_NormalRifle_C_OnDetachWeapon final
+{
+public:
+	class AActor*                                 detachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_NormalRifle_C_OnDetachWeapon;
+
+// Function BP_NormalRifle.BP_NormalRifle_C.OnAttachWeapon
+// 0x0008 (0x0008 - 0x0000)
+struct BP_NormalRifle_C_OnAttachWeapon final
+{
+public:
+	class AActor*                                 attachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_NormalRifle_C_OnAttachWeapon;
+
+// Function BP_NormalRifle.BP_NormalRifle_C.Is UseEjectionPort
+// 0x0001 (0x0001 - 0x0000)
+struct BP_NormalRifle_C_Is_UseEjectionPort final
+{
+public:
+	bool                                          isUse;                                             // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_NormalRifle_C_Is_UseEjectionPort;
 
 // Function BP_NormalRifle.BP_NormalRifle_C.GeyEjectionPortTransform
 // 0x00C0 (0x00C0 - 0x0000)
@@ -184,68 +182,61 @@ public:
 };
 DUMPER7_ASSERTS_BP_NormalRifle_C_GeyEjectionPortTransform;
 
-// Function BP_NormalRifle.BP_NormalRifle_C.Is UseEjectionPort
+// Function BP_NormalRifle.BP_NormalRifle_C.GetShotAnimation
 // 0x0001 (0x0001 - 0x0000)
-struct BP_NormalRifle_C_Is_UseEjectionPort final
-{
-public:
-	bool                                          isUse;                                             // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_NormalRifle_C_Is_UseEjectionPort;
-
-// Function BP_NormalRifle.BP_NormalRifle_C.OnAttachWeapon
-// 0x0008 (0x0008 - 0x0000)
-struct BP_NormalRifle_C_OnAttachWeapon final
-{
-public:
-	class AActor*                                 attachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_NormalRifle_C_OnAttachWeapon;
-
-// Function BP_NormalRifle.BP_NormalRifle_C.OnDetachWeapon
-// 0x0008 (0x0008 - 0x0000)
-struct BP_NormalRifle_C_OnDetachWeapon final
-{
-public:
-	class AActor*                                 detachActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_NormalRifle_C_OnDetachWeapon;
-
-// Function BP_NormalRifle.BP_NormalRifle_C.OnReleaseTrigger
-// 0x0001 (0x0001 - 0x0000)
-struct BP_NormalRifle_C_OnReleaseTrigger final
-{
-public:
-	bool                                          bCanShootOnRelease;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_NormalRifle_C_OnReleaseTrigger;
-
-// Function BP_NormalRifle.BP_NormalRifle_C.OnShoot
-// 0x0008 (0x0008 - 0x0000)
-struct BP_NormalRifle_C_OnShoot final
-{
-public:
-	class APalBullet*                             BulletActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_NormalRifle_C_OnShoot;
-
-// Function BP_NormalRifle.BP_NormalRifle_C.PlayReloadAnimation
-// 0x0001 (0x0001 - 0x0000)
-struct BP_NormalRifle_C_PlayReloadAnimation final
+struct BP_NormalRifle_C_GetShotAnimation final
 {
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_NormalRifle_C_PlayReloadAnimation;
+DUMPER7_ASSERTS_BP_NormalRifle_C_GetShotAnimation;
 
-// Function BP_NormalRifle.BP_NormalRifle_C.GetDefaultBlurAngle
-// 0x0004 (0x0004 - 0x0000)
-struct BP_NormalRifle_C_GetDefaultBlurAngle final
+// Function BP_NormalRifle.BP_NormalRifle_C.GetShootInterval
+// 0x0008 (0x0008 - 0x0000)
+struct BP_NormalRifle_C_GetShootInterval final
 {
 public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Time;                                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_NormalRifle_C_GetDefaultBlurAngle;
+DUMPER7_ASSERTS_BP_NormalRifle_C_GetShootInterval;
+
+// Function BP_NormalRifle.BP_NormalRifle_C.GetMuzzleRotator
+// 0x0030 (0x0030 - 0x0000)
+struct BP_NormalRifle_C_GetMuzzleRotator final
+{
+public:
+	struct FRotator                               Rotator;                                           // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FRotator                               CallFunc_GetSocketRotation_ReturnValue;            // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_NormalRifle_C_GetMuzzleRotator;
+
+// Function BP_NormalRifle.BP_NormalRifle_C.GetMuzzleLocation
+// 0x0030 (0x0030 - 0x0000)
+struct BP_NormalRifle_C_GetMuzzleLocation final
+{
+public:
+	struct FVector                                MuzzleLocation;                                    // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_NormalRifle_C_GetMuzzleLocation;
+
+// Function BP_NormalRifle.BP_NormalRifle_C.GetEquipSocketName
+// 0x0008 (0x0008 - 0x0000)
+struct BP_NormalRifle_C_GetEquipSocketName final
+{
+public:
+	class FName                                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_NormalRifle_C_GetEquipSocketName;
+
+// Function BP_NormalRifle.BP_NormalRifle_C.GetAimingBlurAngle
+// 0x0008 (0x0008 - 0x0000)
+struct BP_NormalRifle_C_GetAimingBlurAngle final
+{
+public:
+	double                                        Angle;                                             // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_NormalRifle_C_GetAimingBlurAngle;
 
 // Function BP_NormalRifle.BP_NormalRifle_C.GetLeftHandTransform
 // 0x00C0 (0x00C0 - 0x0000)
@@ -256,6 +247,15 @@ public:
 	struct FTransform                             CallFunc_GetSocketTransform_ReturnValue;           // 0x0060(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_NormalRifle_C_GetLeftHandTransform;
+
+// Function BP_NormalRifle.BP_NormalRifle_C.GetDefaultBlurAngle
+// 0x0004 (0x0004 - 0x0000)
+struct BP_NormalRifle_C_GetDefaultBlurAngle final
+{
+public:
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_NormalRifle_C_GetDefaultBlurAngle;
 
 // Function BP_NormalRifle.BP_NormalRifle_C.IsUseLeftHandAttach
 // 0x0001 (0x0001 - 0x0000)

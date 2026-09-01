@@ -18,42 +18,73 @@
 namespace SDK::Params
 {
 
-// Function WBP_ConvertItemStatusIndicator.WBP_ConvertItemStatusIndicator_C.DisplayDetail
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_ConvertItemStatusIndicator_C_DisplayDetail final
+// Function WBP_ConvertItemStatusIndicator.WBP_ConvertItemStatusIndicator_C.UpdateProductNum
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_ConvertItemStatusIndicator_C_UpdateProductNum final
 {
 public:
-	class UPalMapObjectWorkeeModule*              CallFunc_GetWorkeeModule_ReturnValue;              // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalWorkProgress*                       CallFunc_GetWorkProgress_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectConvertItemModel*          Model_0;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalItemSlot*                           CallFunc_GetProductSlot_ReturnValue;               // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ConvertItemStatusIndicator_C_DisplayDetail;
+DUMPER7_ASSERTS_WBP_ConvertItemStatusIndicator_C_UpdateProductNum;
 
-// Function WBP_ConvertItemStatusIndicator.WBP_ConvertItemStatusIndicator_C.ExecuteUbergraph_WBP_ConvertItemStatusIndicator
-// 0x0080 (0x0080 - 0x0000)
-struct WBP_ConvertItemStatusIndicator_C_ExecuteUbergraph_WBP_ConvertItemStatusIndicator final
+// Function WBP_ConvertItemStatusIndicator.WBP_ConvertItemStatusIndicator_C.OnUpdateRecipe
+// 0x0120 (0x0120 - 0x0000)
+struct WBP_ConvertItemStatusIndicator_C_OnUpdateRecipe final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetMapObjectLocation_outVector;           // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Vector_Distance_ReturnValue;              // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalGameSetting*                        CallFunc_GetGameSetting_ReturnValue;               // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_DoubleDouble_ReturnValue;            // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x005C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6D[0x3];                                       // 0x006D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0070(0x0008)(NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Less_DoubleDouble_B_ImplicitCast;         // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectConvertItemModel*          Model_0;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalItemRecipe                         CurrentRecipe;                                     // 0x0008(0x0088)(Edit, BlueprintVisible)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0090(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0091(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_92[0x6];                                       // 0x0092(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalItemRecipe                         CallFunc_GetCurrentRecipe_ReturnValue;             // 0x0098(0x0088)()
 };
-DUMPER7_ASSERTS_WBP_ConvertItemStatusIndicator_C_ExecuteUbergraph_WBP_ConvertItemStatusIndicator;
+DUMPER7_ASSERTS_WBP_ConvertItemStatusIndicator_C_OnUpdateRecipe;
+
+// Function WBP_ConvertItemStatusIndicator.WBP_ConvertItemStatusIndicator_C.OnUpdateProductSlot
+// 0x00B8 (0x00B8 - 0x0000)
+struct WBP_ConvertItemStatusIndicator_C_OnUpdateProductSlot final
+{
+public:
+	class UPalItemSlot*                           Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         RemainCreateNum;                                   // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ProductStackCount;                                 // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetRemainCreateNum_ReturnValue;           // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalItemRecipe                         CallFunc_GetCurrentRecipe_ReturnValue;             // 0x0018(0x0088)()
+	int32                                         CallFunc_GetRemainCreateNum_ReturnValue_1;         // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Multiply_IntInt_ReturnValue;              // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsProductNumInfinite_ReturnValue;         // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A9[0x3];                                       // 0x00A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetStackCount_ReturnValue;                // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ConvertItemStatusIndicator_C_OnUpdateProductSlot;
+
+// Function WBP_ConvertItemStatusIndicator.WBP_ConvertItemStatusIndicator_C.OnUpdatedWorkerPal
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_ConvertItemStatusIndicator_C_OnUpdatedWorkerPal final
+{
+public:
+	class UPalWorkBase*                           Work;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData> CallFunc_GetWorkSuitabilityDisplayData_OutDisplayData; // 0x0008(0x0010)(ReferenceParm)
+	struct FGuid                                  CallFunc_GetWorkId_ReturnValue;                    // 0x0018(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UPalIndividualCharacterSlot*>    CallFunc_GetAssignedCharacters_IndividualSlots;    // 0x0028(0x0010)(ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_ConvertItemStatusIndicator_C_OnUpdatedWorkerPal;
+
+// Function WBP_ConvertItemStatusIndicator.WBP_ConvertItemStatusIndicator_C.OnReflectWorkProgress
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_ConvertItemStatusIndicator_C_OnReflectWorkProgress final
+{
+public:
+	class UPalWorkProgress*                       WorkProgress;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetProgressRate_ReturnValue;              // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_SetWorkProgressRate_rate_ImplicitCast;    // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ConvertItemStatusIndicator_C_OnReflectWorkProgress;
 
 // Function WBP_ConvertItemStatusIndicator.WBP_ConvertItemStatusIndicator_C.Initialize
 // 0x00D8 (0x00D8 - 0x0000)
@@ -88,73 +119,42 @@ public:
 };
 DUMPER7_ASSERTS_WBP_ConvertItemStatusIndicator_C_Initialize;
 
-// Function WBP_ConvertItemStatusIndicator.WBP_ConvertItemStatusIndicator_C.OnReflectWorkProgress
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_ConvertItemStatusIndicator_C_OnReflectWorkProgress final
+// Function WBP_ConvertItemStatusIndicator.WBP_ConvertItemStatusIndicator_C.ExecuteUbergraph_WBP_ConvertItemStatusIndicator
+// 0x0080 (0x0080 - 0x0000)
+struct WBP_ConvertItemStatusIndicator_C_ExecuteUbergraph_WBP_ConvertItemStatusIndicator final
 {
 public:
-	class UPalWorkProgress*                       WorkProgress;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetProgressRate_ReturnValue;              // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_SetWorkProgressRate_rate_ImplicitCast;    // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetMapObjectLocation_outVector;           // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Vector_Distance_ReturnValue;              // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalGameSetting*                        CallFunc_GetGameSetting_ReturnValue;               // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_DoubleDouble_ReturnValue;            // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x005C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6D[0x3];                                       // 0x006D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0070(0x0008)(NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Less_DoubleDouble_B_ImplicitCast;         // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ConvertItemStatusIndicator_C_OnReflectWorkProgress;
+DUMPER7_ASSERTS_WBP_ConvertItemStatusIndicator_C_ExecuteUbergraph_WBP_ConvertItemStatusIndicator;
 
-// Function WBP_ConvertItemStatusIndicator.WBP_ConvertItemStatusIndicator_C.OnUpdatedWorkerPal
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_ConvertItemStatusIndicator_C_OnUpdatedWorkerPal final
+// Function WBP_ConvertItemStatusIndicator.WBP_ConvertItemStatusIndicator_C.DisplayDetail
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_ConvertItemStatusIndicator_C_DisplayDetail final
 {
 public:
-	class UPalWorkBase*                           Work;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData> CallFunc_GetWorkSuitabilityDisplayData_OutDisplayData; // 0x0008(0x0010)(ReferenceParm)
-	struct FGuid                                  CallFunc_GetWorkId_ReturnValue;                    // 0x0018(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UPalIndividualCharacterSlot*>    CallFunc_GetAssignedCharacters_IndividualSlots;    // 0x0028(0x0010)(ReferenceParm)
+	class UPalMapObjectWorkeeModule*              CallFunc_GetWorkeeModule_ReturnValue;              // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalWorkProgress*                       CallFunc_GetWorkProgress_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ConvertItemStatusIndicator_C_OnUpdatedWorkerPal;
-
-// Function WBP_ConvertItemStatusIndicator.WBP_ConvertItemStatusIndicator_C.OnUpdateProductSlot
-// 0x00B8 (0x00B8 - 0x0000)
-struct WBP_ConvertItemStatusIndicator_C_OnUpdateProductSlot final
-{
-public:
-	class UPalItemSlot*                           Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         RemainCreateNum;                                   // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         ProductStackCount;                                 // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetRemainCreateNum_ReturnValue;           // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalItemRecipe                         CallFunc_GetCurrentRecipe_ReturnValue;             // 0x0018(0x0088)()
-	int32                                         CallFunc_GetRemainCreateNum_ReturnValue_1;         // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Multiply_IntInt_ReturnValue;              // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsProductNumInfinite_ReturnValue;         // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A9[0x3];                                       // 0x00A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetStackCount_ReturnValue;                // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ConvertItemStatusIndicator_C_OnUpdateProductSlot;
-
-// Function WBP_ConvertItemStatusIndicator.WBP_ConvertItemStatusIndicator_C.OnUpdateRecipe
-// 0x0120 (0x0120 - 0x0000)
-struct WBP_ConvertItemStatusIndicator_C_OnUpdateRecipe final
-{
-public:
-	class UPalMapObjectConvertItemModel*          Model_0;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalItemRecipe                         CurrentRecipe;                                     // 0x0008(0x0088)(Edit, BlueprintVisible)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0090(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0091(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_92[0x6];                                       // 0x0092(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalItemRecipe                         CallFunc_GetCurrentRecipe_ReturnValue;             // 0x0098(0x0088)()
-};
-DUMPER7_ASSERTS_WBP_ConvertItemStatusIndicator_C_OnUpdateRecipe;
-
-// Function WBP_ConvertItemStatusIndicator.WBP_ConvertItemStatusIndicator_C.UpdateProductNum
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_ConvertItemStatusIndicator_C_UpdateProductNum final
-{
-public:
-	class UPalMapObjectConvertItemModel*          Model_0;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalItemSlot*                           CallFunc_GetProductSlot_ReturnValue;               // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ConvertItemStatusIndicator_C_UpdateProductNum;
+DUMPER7_ASSERTS_WBP_ConvertItemStatusIndicator_C_DisplayDetail;
 
 }
 

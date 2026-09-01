@@ -31,12 +31,12 @@ public:
 	struct FTimerHandle                           DelayTimerHandle;                                  // 0x02C0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void DelayedSetVisibilityTrue();
-	void ExecuteUbergraph_BP_PalEnvironmentVisbleSwitcher(int32 EntryPoint);
-	void ReceiveActorBeginOverlap(class AActor* OtherActor);
-	void ReceiveActorEndOverlap(class AActor* OtherActor);
-	void ReceiveBeginPlay();
 	void SetVisibilityAll(bool IsVisibility);
+	void ReceiveBeginPlay();
+	void ReceiveActorEndOverlap(class AActor* OtherActor);
+	void ReceiveActorBeginOverlap(class AActor* OtherActor);
+	void ExecuteUbergraph_BP_PalEnvironmentVisbleSwitcher(int32 EntryPoint);
+	void DelayedSetVisibilityTrue();
 
 public:
 	static class UClass* StaticClass()

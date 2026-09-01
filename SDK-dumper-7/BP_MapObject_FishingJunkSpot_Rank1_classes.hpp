@@ -26,8 +26,8 @@ public:
 	class UStaticMeshComponent*                   LocationBenchmark1;                                // 0x0340(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_MapObject_FishingJunkSpot_Rank1(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_MapObject_FishingJunkSpot_Rank1(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

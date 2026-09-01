@@ -16,6 +16,33 @@
 namespace SDK::Params
 {
 
+// Function BP_ThrowWeapon_GrenadeBase.BP_ThrowWeapon_GrenadeBase_C.GetThrowObjectClass
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ThrowWeapon_GrenadeBase_C_GetThrowObjectClass final
+{
+public:
+	class UClass*                                 ThrowObject;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ThrowWeapon_GrenadeBase_C_GetThrowObjectClass;
+
+// Function BP_ThrowWeapon_GrenadeBase.BP_ThrowWeapon_GrenadeBase_C.GetShootPitch
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ThrowWeapon_GrenadeBase_C_GetShootPitch final
+{
+public:
+	double                                        Pitch;                                             // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ThrowWeapon_GrenadeBase_C_GetShootPitch;
+
+// Function BP_ThrowWeapon_GrenadeBase.BP_ThrowWeapon_GrenadeBase_C.GetEquipSocketName
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ThrowWeapon_GrenadeBase_C_GetEquipSocketName final
+{
+public:
+	class FName                                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ThrowWeapon_GrenadeBase_C_GetEquipSocketName;
+
 // Function BP_ThrowWeapon_GrenadeBase.BP_ThrowWeapon_GrenadeBase_C.GetBulletShootRotation
 // 0x0080 (0x0080 - 0x0000)
 struct BP_ThrowWeapon_GrenadeBase_C_GetBulletShootRotation final
@@ -36,32 +63,14 @@ public:
 };
 DUMPER7_ASSERTS_BP_ThrowWeapon_GrenadeBase_C_GetBulletShootRotation;
 
-// Function BP_ThrowWeapon_GrenadeBase.BP_ThrowWeapon_GrenadeBase_C.GetEquipSocketName
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ThrowWeapon_GrenadeBase_C_GetEquipSocketName final
+// Function BP_ThrowWeapon_GrenadeBase.BP_ThrowWeapon_GrenadeBase_C.IsEnableAutoAim
+// 0x0001 (0x0001 - 0x0000)
+struct BP_ThrowWeapon_GrenadeBase_C_IsEnableAutoAim final
 {
 public:
-	class FName                                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_ThrowWeapon_GrenadeBase_C_GetEquipSocketName;
-
-// Function BP_ThrowWeapon_GrenadeBase.BP_ThrowWeapon_GrenadeBase_C.GetShootPitch
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ThrowWeapon_GrenadeBase_C_GetShootPitch final
-{
-public:
-	double                                        Pitch;                                             // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ThrowWeapon_GrenadeBase_C_GetShootPitch;
-
-// Function BP_ThrowWeapon_GrenadeBase.BP_ThrowWeapon_GrenadeBase_C.GetThrowObjectClass
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ThrowWeapon_GrenadeBase_C_GetThrowObjectClass final
-{
-public:
-	class UClass*                                 ThrowObject;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ThrowWeapon_GrenadeBase_C_GetThrowObjectClass;
+DUMPER7_ASSERTS_BP_ThrowWeapon_GrenadeBase_C_IsEnableAutoAim;
 
 // Function BP_ThrowWeapon_GrenadeBase.BP_ThrowWeapon_GrenadeBase_C.GetRemainBulletCount
 // 0x0038 (0x0038 - 0x0000)
@@ -80,15 +89,6 @@ public:
 	int32                                         CallFunc_GetStackCount_ReturnValue;                // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_ThrowWeapon_GrenadeBase_C_GetRemainBulletCount;
-
-// Function BP_ThrowWeapon_GrenadeBase.BP_ThrowWeapon_GrenadeBase_C.IsEnableAutoAim
-// 0x0001 (0x0001 - 0x0000)
-struct BP_ThrowWeapon_GrenadeBase_C_IsEnableAutoAim final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_ThrowWeapon_GrenadeBase_C_IsEnableAutoAim;
 
 }
 

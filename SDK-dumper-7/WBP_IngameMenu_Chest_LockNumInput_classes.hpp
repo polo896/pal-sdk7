@@ -30,9 +30,9 @@ public:
 	class UImage*                                 On;                                                // 0x0298(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_IngameMenu_Chest_LockNumInput(int32 EntryPoint);
-	void PlayAuthAnm(bool PlayPass);
 	void SetOn(bool IsOn);
+	void PlayAuthAnm(bool PlayPass);
+	void ExecuteUbergraph_WBP_IngameMenu_Chest_LockNumInput(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

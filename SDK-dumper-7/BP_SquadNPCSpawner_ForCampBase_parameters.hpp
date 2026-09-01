@@ -17,38 +17,6 @@
 namespace SDK::Params
 {
 
-// Function BP_SquadNPCSpawner_ForCampBase.BP_SquadNPCSpawner_ForCampBase_C.AdjustFloor
-// 0x0128 (0x0128 - 0x0000)
-struct BP_SquadNPCSpawner_ForCampBase_C_AdjustFloor final
-{
-public:
-	class AActor*                                 SpaenedChara;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult;       // 0x0038(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	bool                                          CallFunc_K2_SetActorLocation_ReturnValue;          // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_SquadNPCSpawner_ForCampBase_C_AdjustFloor;
-
-// Function BP_SquadNPCSpawner_ForCampBase.BP_SquadNPCSpawner_ForCampBase_C.DeleteOnePoint
-// 0x0010 (0x0010 - 0x0000)
-struct BP_SquadNPCSpawner_ForCampBase_C_DeleteOnePoint final
-{
-public:
-	class AActor*                                 Point;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   CallFunc_GetComponentByClass_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_SquadNPCSpawner_ForCampBase_C_DeleteOnePoint;
-
-// Function BP_SquadNPCSpawner_ForCampBase.BP_SquadNPCSpawner_ForCampBase_C.ExecuteUbergraph_BP_SquadNPCSpawner_ForCampBase
-// 0x0004 (0x0004 - 0x0000)
-struct BP_SquadNPCSpawner_ForCampBase_C_ExecuteUbergraph_BP_SquadNPCSpawner_ForCampBase final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_SquadNPCSpawner_ForCampBase_C_ExecuteUbergraph_BP_SquadNPCSpawner_ForCampBase;
-
 // Function BP_SquadNPCSpawner_ForCampBase.BP_SquadNPCSpawner_ForCampBase_C.RayAdjustFloor
 // 0x0330 (0x0330 - 0x0000)
 struct BP_SquadNPCSpawner_ForCampBase_C_RayAdjustFloor final
@@ -95,6 +63,38 @@ public:
 	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x0248(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
 DUMPER7_ASSERTS_BP_SquadNPCSpawner_ForCampBase_C_RayAdjustFloor;
+
+// Function BP_SquadNPCSpawner_ForCampBase.BP_SquadNPCSpawner_ForCampBase_C.ExecuteUbergraph_BP_SquadNPCSpawner_ForCampBase
+// 0x0004 (0x0004 - 0x0000)
+struct BP_SquadNPCSpawner_ForCampBase_C_ExecuteUbergraph_BP_SquadNPCSpawner_ForCampBase final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SquadNPCSpawner_ForCampBase_C_ExecuteUbergraph_BP_SquadNPCSpawner_ForCampBase;
+
+// Function BP_SquadNPCSpawner_ForCampBase.BP_SquadNPCSpawner_ForCampBase_C.DeleteOnePoint
+// 0x0010 (0x0010 - 0x0000)
+struct BP_SquadNPCSpawner_ForCampBase_C_DeleteOnePoint final
+{
+public:
+	class AActor*                                 Point;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   CallFunc_GetComponentByClass_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SquadNPCSpawner_ForCampBase_C_DeleteOnePoint;
+
+// Function BP_SquadNPCSpawner_ForCampBase.BP_SquadNPCSpawner_ForCampBase_C.AdjustFloor
+// 0x0128 (0x0128 - 0x0000)
+struct BP_SquadNPCSpawner_ForCampBase_C_AdjustFloor final
+{
+public:
+	class AActor*                                 SpaenedChara;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult;       // 0x0038(0x00E8)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          CallFunc_K2_SetActorLocation_ReturnValue;          // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SquadNPCSpawner_ForCampBase_C_AdjustFloor;
 
 }
 

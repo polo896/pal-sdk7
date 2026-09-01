@@ -17,29 +17,15 @@
 namespace SDK
 {
 
-// Function WBP_ModDisclaimerDialog.WBP_ModDisclaimerDialog_C.BndEvt__WBP_ModDisclaimerDialog_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_ModDisclaimerDialog.WBP_ModDisclaimerDialog_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_ModDisclaimerDialog_C::BndEvt__WBP_ModDisclaimerDialog_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
+void UWBP_ModDisclaimerDialog_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModDisclaimerDialog_C", "BndEvt__WBP_ModDisclaimerDialog_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ModDisclaimerDialog.WBP_ModDisclaimerDialog_C.BndEvt__WBP_ModDisclaimerDialog_WBP_CommonButton_Terms_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_ModDisclaimerDialog_C::BndEvt__WBP_ModDisclaimerDialog_WBP_CommonButton_Terms_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModDisclaimerDialog_C", "BndEvt__WBP_ModDisclaimerDialog_WBP_CommonButton_Terms_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_ModDisclaimerDialog_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -65,15 +51,29 @@ void UWBP_ModDisclaimerDialog_C::ExecuteUbergraph_WBP_ModDisclaimerDialog(int32 
 }
 
 
-// Function WBP_ModDisclaimerDialog.WBP_ModDisclaimerDialog_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function WBP_ModDisclaimerDialog.WBP_ModDisclaimerDialog_C.BndEvt__WBP_ModDisclaimerDialog_WBP_CommonButton_Terms_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_ModDisclaimerDialog_C::OnSetup()
+void UWBP_ModDisclaimerDialog_C::BndEvt__WBP_ModDisclaimerDialog_WBP_CommonButton_Terms_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ModDisclaimerDialog_C", "OnSetup");
+		Func = Class->GetFunction("WBP_ModDisclaimerDialog_C", "BndEvt__WBP_ModDisclaimerDialog_WBP_CommonButton_Terms_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ModDisclaimerDialog.WBP_ModDisclaimerDialog_C.BndEvt__WBP_ModDisclaimerDialog_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_ModDisclaimerDialog_C::BndEvt__WBP_ModDisclaimerDialog_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ModDisclaimerDialog_C", "BndEvt__WBP_ModDisclaimerDialog_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

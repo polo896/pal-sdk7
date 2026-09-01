@@ -38,31 +38,31 @@ public:
 	class UWBP_MainMenu_Technology_Content_C*     BossTech;                                          // 0x02F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Lock();
-	void AnmEvent_Unlock();
-	void BP_OnEntryReleased();
-	void BP_OnItemExpansionChanged(bool bIsExpanded);
-	void BP_OnItemSelectionChanged(bool bIsSelected);
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_MainMenu_Technology_List(int32 EntryPoint);
-	void Get_Top_Focus_Target(class UWidget** Target);
-	void GetButtonIndex(class UWBP_MainMenu_Technology_Content_C* ButtonWidget, int32* Index_0);
-	void GetButtonNum(int32* Num);
-	void GetFocusTargetByIndex(int32 ButtonIndex, class UWidget** Widget);
-	void OnClickedTechnology_Internal(class UWBP_MainMenu_Technology_Content_C* Widget);
-	void OnHoveredTechnology_Internal(class UWBP_MainMenu_Technology_Content_C* Widget);
-	void OnListItemObjectSet(class UObject* ListItemObject);
-	void OnUnhoveredTechnology_Internal(class UWBP_MainMenu_Technology_Content_C* Widget);
-	void OnUpdatePlayerLevel(int32 addLevel, int32 nowLevel);
-	void RegisterButtonEvent(class UWBP_MainMenu_Technology_Content_C* TechnologyContentWidget);
-	void RegisterPlayerEvent();
-	void Set_Technology_Data(const struct FF_PalUITechnologyDataMapContent& DisplayTechnologyData);
-	void Set_Technology_Level(int32 Level);
-	void UnregisterAllButtonEvent();
-	void UnregisterPlayerEvent();
-	void Update_List_Active();
 	void UpdateAllButtonDetail();
+	void Update_List_Active();
+	void UnregisterPlayerEvent();
+	void UnregisterAllButtonEvent();
+	void Set_Technology_Level(int32 Level);
+	void Set_Technology_Data(const struct FF_PalUITechnologyDataMapContent& DisplayTechnologyData);
+	void RegisterPlayerEvent();
+	void RegisterButtonEvent(class UWBP_MainMenu_Technology_Content_C* TechnologyContentWidget);
+	void OnUpdatePlayerLevel(int32 addLevel, int32 nowLevel);
+	void OnUnhoveredTechnology_Internal(class UWBP_MainMenu_Technology_Content_C* Widget);
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void OnHoveredTechnology_Internal(class UWBP_MainMenu_Technology_Content_C* Widget);
+	void OnClickedTechnology_Internal(class UWBP_MainMenu_Technology_Content_C* Widget);
+	void GetFocusTargetByIndex(int32 ButtonIndex, class UWidget** Widget);
+	void GetButtonNum(int32* Num);
+	void GetButtonIndex(class UWBP_MainMenu_Technology_Content_C* ButtonWidget, int32* Index_0);
+	void Get_Top_Focus_Target(class UWidget** Target);
+	void ExecuteUbergraph_WBP_MainMenu_Technology_List(int32 EntryPoint);
+	void Destruct();
+	void Construct();
+	void BP_OnItemSelectionChanged(bool bIsSelected);
+	void BP_OnItemExpansionChanged(bool bIsExpanded);
+	void BP_OnEntryReleased();
+	void AnmEvent_Unlock();
+	void AnmEvent_Lock();
 
 public:
 	static class UClass* StaticClass()

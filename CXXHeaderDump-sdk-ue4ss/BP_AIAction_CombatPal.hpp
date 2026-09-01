@@ -38,7 +38,10 @@ class UBP_AIAction_CombatPal_C : public UPalAIActionBase
     int32 NextCoolSlot;                                                               // 0x0220 (size: 0x4)
     bool Ray Passed;                                                                  // 0x0224 (size: 0x1)
     bool RangePassed;                                                                 // 0x0225 (size: 0x1)
+    double Const_MaxTurnTime;                                                         // 0x0228 (size: 0x8)
+    double TurnTimer;                                                                 // 0x0230 (size: 0x8)
 
+    void ProcessTurnTimer(double DeltaTime);
     void ResetTryMoveAngle();
     void ProcSideMove();
     void UpdateNoActionTimer();
@@ -85,6 +88,6 @@ class UBP_AIAction_CombatPal_C : public UPalAIActionBase
     void ActionFinished(class APawn* ControlledPawn, TEnumAsByte<EPawnActionResult::Type> WithResult);
     void OnChildActionFinished(class UPawnAction* action, TEnumAsByte<EPawnActionResult::Type> WithResult);
     void ExecuteUbergraph_BP_AIAction_CombatPal(int32 EntryPoint);
-}; // Size: 0x226
+}; // Size: 0x238
 
 #endif

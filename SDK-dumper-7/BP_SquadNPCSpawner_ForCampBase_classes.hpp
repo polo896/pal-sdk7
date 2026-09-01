@@ -26,11 +26,11 @@ public:
 	bool                                          IgnoreRayAdjustFloor;                              // 0x0678(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AdjustFloor(class AActor* SpaenedChara);
-	void DeleteOnePoint(class AActor* Point);
-	void ExecuteUbergraph_BP_SquadNPCSpawner_ForCampBase(int32 EntryPoint);
-	void RayAdjustFloor();
 	void ReceiveBeginPlay();
+	void RayAdjustFloor();
+	void ExecuteUbergraph_BP_SquadNPCSpawner_ForCampBase(int32 EntryPoint);
+	void DeleteOnePoint(class AActor* Point);
+	void AdjustFloor(class AActor* SpaenedChara);
 
 public:
 	static class UClass* StaticClass()

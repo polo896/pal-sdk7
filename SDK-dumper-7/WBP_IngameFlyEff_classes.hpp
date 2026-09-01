@@ -37,9 +37,9 @@ public:
 	double                                        CachedVelocity;                                    // 0x02C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void EnableEff(bool IsEnable, class APalCharacter* Character_0);
-	void ExecuteUbergraph_WBP_IngameFlyEff(int32 EntryPoint);
 	void UpdateEff();
+	void ExecuteUbergraph_WBP_IngameFlyEff(int32 EntryPoint);
+	void EnableEff(bool IsEnable, class APalCharacter* Character_0);
 
 public:
 	static class UClass* StaticClass()

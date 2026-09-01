@@ -27,8 +27,8 @@ public:
 	class USceneComponent*                        Root;                                              // 0x0798(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void GetStaticMeshComponents(TArray<class UStaticMeshComponent*>* OutComponents) const;
 	void GetStaticMeshInfos(TArray<struct FPalStaticMeshImposterStaticMeshInfo>* OutStaticMeshInfo) const;
+	void GetStaticMeshComponents(TArray<class UStaticMeshComponent*>* OutComponents) const;
 
 public:
 	static class UClass* StaticClass()

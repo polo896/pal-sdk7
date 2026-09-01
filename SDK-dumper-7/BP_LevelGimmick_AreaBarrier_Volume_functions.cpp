@@ -17,21 +17,21 @@
 namespace SDK
 {
 
-// Function BP_LevelGimmick_AreaBarrier_Volume.BP_LevelGimmick_AreaBarrier_Volume_C.ExecuteUbergraph_BP_LevelGimmick_AreaBarrier_Volume
-// (Final, UbergraphFunction)
+// Function BP_LevelGimmick_AreaBarrier_Volume.BP_LevelGimmick_AreaBarrier_Volume_C.ReceiveActorEndOverlap
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LevelGimmick_AreaBarrier_Volume_C::ExecuteUbergraph_BP_LevelGimmick_AreaBarrier_Volume(int32 EntryPoint)
+void ABP_LevelGimmick_AreaBarrier_Volume_C::ReceiveActorEndOverlap(class AActor* OtherActor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_Volume_C", "ExecuteUbergraph_BP_LevelGimmick_AreaBarrier_Volume");
+		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_Volume_C", "ReceiveActorEndOverlap");
 
-	Params::BP_LevelGimmick_AreaBarrier_Volume_C_ExecuteUbergraph_BP_LevelGimmick_AreaBarrier_Volume Parms{};
+	Params::BP_LevelGimmick_AreaBarrier_Volume_C_ReceiveActorEndOverlap Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.OtherActor = OtherActor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,21 +57,21 @@ void ABP_LevelGimmick_AreaBarrier_Volume_C::ReceiveActorBeginOverlap(class AActo
 }
 
 
-// Function BP_LevelGimmick_AreaBarrier_Volume.BP_LevelGimmick_AreaBarrier_Volume_C.ReceiveActorEndOverlap
-// (Event, Public, BlueprintEvent)
+// Function BP_LevelGimmick_AreaBarrier_Volume.BP_LevelGimmick_AreaBarrier_Volume_C.ExecuteUbergraph_BP_LevelGimmick_AreaBarrier_Volume
+// (Final, UbergraphFunction)
 // Parameters:
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LevelGimmick_AreaBarrier_Volume_C::ReceiveActorEndOverlap(class AActor* OtherActor)
+void ABP_LevelGimmick_AreaBarrier_Volume_C::ExecuteUbergraph_BP_LevelGimmick_AreaBarrier_Volume(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_Volume_C", "ReceiveActorEndOverlap");
+		Func = Class->GetFunction("BP_LevelGimmick_AreaBarrier_Volume_C", "ExecuteUbergraph_BP_LevelGimmick_AreaBarrier_Volume");
 
-	Params::BP_LevelGimmick_AreaBarrier_Volume_C_ReceiveActorEndOverlap Parms{};
+	Params::BP_LevelGimmick_AreaBarrier_Volume_C_ExecuteUbergraph_BP_LevelGimmick_AreaBarrier_Volume Parms{};
 
-	Parms.OtherActor = OtherActor;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

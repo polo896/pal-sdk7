@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_Arena_PalDetail.WBP_Arena_PalDetail_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Arena_PalDetail_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_PalDetail_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_Arena_PalDetail.WBP_Arena_PalDetail_C.ExecuteUbergraph_WBP_Arena_PalDetail
 // (Final, UbergraphFunction)
 // Parameters:
@@ -48,6 +34,20 @@ void UWBP_Arena_PalDetail_C::ExecuteUbergraph_WBP_Arena_PalDetail(int32 EntryPoi
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_PalDetail.WBP_Arena_PalDetail_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Arena_PalDetail_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_PalDetail_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

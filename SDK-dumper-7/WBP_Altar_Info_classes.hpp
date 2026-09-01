@@ -60,13 +60,13 @@ public:
 	class UWBP_PalCommonItemIcon_C*               WBP_PalCommonItemIcon;                             // 0x0380(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Altar_Info(int32 EntryPoint);
-	void PlayAnimation_Phase_Battle();
-	void PlayAnimation_Phase_Preparing();
-	void SetRaidBossInfo(class FName StaticItemId);
-	void SetRemainingTime(int32 Minutes, int32 Seconds);
-	void SetTimeText(class URichTextBlock* TargetText1, class URichTextBlock* TargetText2, int32 TimeInteger);
 	void SetTowerBossInfo(EPalBossType BossType, class FName BossId);
+	void SetTimeText(class URichTextBlock* TargetText1, class URichTextBlock* TargetText2, int32 TimeInteger);
+	void SetRemainingTime(int32 Minutes, int32 Seconds);
+	void SetRaidBossInfo(class FName StaticItemId);
+	void PlayAnimation_Phase_Preparing();
+	void PlayAnimation_Phase_Battle();
+	void ExecuteUbergraph_WBP_Altar_Info(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

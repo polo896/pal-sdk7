@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function BP_PalRegionTriggerBox.BP_PalRegionTriggerBox_C.ExecuteUbergraph_BP_PalRegionTriggerBox
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalRegionTriggerBox_C::ExecuteUbergraph_BP_PalRegionTriggerBox(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalRegionTriggerBox_C", "ExecuteUbergraph_BP_PalRegionTriggerBox");
-
-	Params::BP_PalRegionTriggerBox_C_ExecuteUbergraph_BP_PalRegionTriggerBox Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_PalRegionTriggerBox.BP_PalRegionTriggerBox_C.ReceiveActorBeginOverlap
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -52,6 +32,26 @@ void ABP_PalRegionTriggerBox_C::ReceiveActorBeginOverlap(class AActor* OtherActo
 	Params::BP_PalRegionTriggerBox_C_ReceiveActorBeginOverlap Parms{};
 
 	Parms.OtherActor = OtherActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PalRegionTriggerBox.BP_PalRegionTriggerBox_C.ExecuteUbergraph_BP_PalRegionTriggerBox
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalRegionTriggerBox_C::ExecuteUbergraph_BP_PalRegionTriggerBox(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalRegionTriggerBox_C", "ExecuteUbergraph_BP_PalRegionTriggerBox");
+
+	Params::BP_PalRegionTriggerBox_C_ExecuteUbergraph_BP_PalRegionTriggerBox Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

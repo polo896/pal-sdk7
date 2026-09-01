@@ -6,8 +6,8 @@ class ABP_PalHUD_InGame_C : public APalHUDInGame
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x07F8 (size: 0x8)
     class USceneComponent* DefaultSceneRoot;                                          // 0x0800 (size: 0x8)
     class UWBP_PalLiftItem_C* UMG_LiftItem;                                           // 0x0808 (size: 0x8)
-    TMap<class TSubclassOf<UPalUserWidget>, class EPalHUDWidgetPriority> PriorityMap; // 0x0810 (size: 0x50)
-    TMap<class TSubclassOf<UPalUserWidget>, class UPalUserWidget*> CreatedWidgetMap;  // 0x0860 (size: 0x50)
+    TMap<TSubclassOf<class UPalUserWidget>, EPalHUDWidgetPriority> PriorityMap;       // 0x0810 (size: 0x50)
+    TMap<TSubclassOf<class UPalUserWidget>, UPalUserWidget*> CreatedWidgetMap;        // 0x0860 (size: 0x50)
     bool GameOverUIBinded;                                                            // 0x08B0 (size: 0x1)
 
     void CREATEDELEGATE_PROXYFUNCTION_0(class APalPlayerCharacter* PlayerCharacter, const FPalDyingEndInfo& DyingEndInfo);

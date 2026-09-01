@@ -14,7 +14,7 @@ class ABP_MapObject_CommonDropItem3D_C : public APalMapObjectCommonDropItem3D
 
     void OnRep_VisualActorClass();
     void ReleaseObject(FVector Direction);
-    void SetupStaticMesh(class UStaticMesh* InStaticMesh, FVector CenterOfMass, TArray<class UMaterialInterface*>& Material);
+    void SetupStaticMesh(class UStaticMesh* InStaticMesh, FVector CenterOfMass, TArray<UMaterialInterface*>& Material);
     void SetupVisualInServer(class UPalMapObjectConcreteModelBase* ConcreteModel);
     void OnLoaded_857256B349A5E9E377896489F9AD883E(UClass* Loaded);
     void ReceiveBeginPlay();

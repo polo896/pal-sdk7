@@ -23,8 +23,8 @@ struct FAnimNode_ControlRig : public FAnimNode_ControlRigBase
     FInputAlphaBoolBlend AlphaBoolBlend;                                              // 0x0290 (size: 0x48)
     FName AlphaCurveName;                                                             // 0x02D8 (size: 0x8)
     FInputScaleBiasClamp AlphaScaleBiasClamp;                                         // 0x02E0 (size: 0x30)
-    TMap<class FName, class FName> InputMapping;                                      // 0x0310 (size: 0x50)
-    TMap<class FName, class FName> OutputMapping;                                     // 0x0360 (size: 0x50)
+    TMap<FName, FName> InputMapping;                                                  // 0x0310 (size: 0x50)
+    TMap<FName, FName> OutputMapping;                                                 // 0x0360 (size: 0x50)
     int32 LODThreshold;                                                               // 0x0460 (size: 0x4)
 
 }; // Size: 0x470
@@ -310,14 +310,14 @@ struct FControlRigSequenceObjectReferences
 
 struct FControlRigSettingsPerPinBool
 {
-    TMap<class FString, class bool> Values;                                           // 0x0000 (size: 0x50)
+    TMap<FString, bool> Values;                                                       // 0x0000 (size: 0x50)
 
 }; // Size: 0x50
 
 struct FControlRigShapeDefinition
 {
     FName ShapeName;                                                                  // 0x0000 (size: 0x8)
-    TSoftObjectPtr<UStaticMesh> StaticMesh;                                           // 0x0008 (size: 0x30)
+    TSoftObjectPtr<class UStaticMesh> StaticMesh;                                     // 0x0008 (size: 0x30)
     FTransform Transform;                                                             // 0x0040 (size: 0x60)
 
 }; // Size: 0xB0
@@ -7067,11 +7067,11 @@ class AControlRigControlActor : public AActor
     FString ColorParameter;                                                           // 0x02B0 (size: 0x10)
     bool bCastShadows;                                                                // 0x02C0 (size: 0x1)
     class USceneComponent* ActorRootComponent;                                        // 0x02C8 (size: 0x8)
-    TSoftObjectPtr<UControlRig> ControlRig;                                           // 0x02D0 (size: 0x30)
+    TSoftObjectPtr<class UControlRig> ControlRig;                                     // 0x02D0 (size: 0x30)
     TArray<FName> ControlNames;                                                       // 0x0300 (size: 0x10)
     TArray<FTransform> ShapeTransforms;                                               // 0x0310 (size: 0x10)
-    TArray<class UStaticMeshComponent*> Components;                                   // 0x0320 (size: 0x10)
-    TArray<class UMaterialInstanceDynamic*> Materials;                                // 0x0330 (size: 0x10)
+    TArray<UStaticMeshComponent*> Components;                                         // 0x0320 (size: 0x10)
+    TArray<UMaterialInstanceDynamic*> Materials;                                      // 0x0330 (size: 0x10)
     FName ColorParameterName;                                                         // 0x0340 (size: 0x8)
 
     void ResetControlActor();
@@ -7116,21 +7116,21 @@ class UControlRig : public UObject
     ERigExecutionType ExecutionType;                                                  // 0x0046 (size: 0x1)
     FRigHierarchySettings HierarchySettings;                                          // 0x0048 (size: 0x4)
     FRigVMRuntimeSettings VMRuntimeSettings;                                          // 0x0050 (size: 0x18)
-    TMap<class FRigElementKey, class FRigControlElementCustomization> ControlCustomizations; // 0x0068 (size: 0x50)
+    TMap<FRigElementKey, FRigControlElementCustomization> ControlCustomizations;      // 0x0068 (size: 0x50)
     class URigVM* VM;                                                                 // 0x00B8 (size: 0x8)
     TMap<uint32, URigVM*> InitializedVMSnapshots;                                     // 0x00C0 (size: 0x50)
     class URigHierarchy* DynamicHierarchy;                                            // 0x0118 (size: 0x8)
-    TSoftObjectPtr<UControlRigShapeLibrary> GizmoLibrary;                             // 0x0120 (size: 0x30)
-    TArray<TSoftObjectPtr<UControlRigShapeLibrary>> ShapeLibraries;                   // 0x0150 (size: 0x10)
-    TMap<class FName, class FCachedPropertyPath> InputProperties;                     // 0x0170 (size: 0x50)
-    TMap<class FName, class FCachedPropertyPath> OutputProperties;                    // 0x01C0 (size: 0x50)
+    TSoftObjectPtr<class UControlRigShapeLibrary> GizmoLibrary;                       // 0x0120 (size: 0x30)
+    TArray<TSoftObjectPtr<class UControlRigShapeLibrary>> ShapeLibraries;             // 0x0150 (size: 0x10)
+    TMap<FName, FCachedPropertyPath> InputProperties;                                 // 0x0170 (size: 0x50)
+    TMap<FName, FCachedPropertyPath> OutputProperties;                                // 0x01C0 (size: 0x50)
     FControlRigDrawContainer DrawContainer;                                           // 0x02B8 (size: 0x18)
     class UAnimationDataSourceRegistry* DataSourceRegistry;                           // 0x02E8 (size: 0x8)
     TArray<FName> EventQueue;                                                         // 0x02F0 (size: 0x10)
     FRigInfluenceMapPerEvent Influences;                                              // 0x03D0 (size: 0x60)
     class UControlRig* InteractionRig;                                                // 0x0430 (size: 0x8)
     TSubclassOf<class UControlRig> InteractionRigClass;                               // 0x0438 (size: 0x8)
-    TArray<class UAssetUserData*> AssetUserData;                                      // 0x0440 (size: 0x10)
+    TArray<UAssetUserData*> AssetUserData;                                            // 0x0440 (size: 0x10)
     FControlRigOnControlSelected_BP OnControlSelected_BP;                             // 0x0518 (size: 0x1)
     void OnControlSelectedBP(class UControlRig* Rig, const FRigControlElement& Control, bool bSelected);
 
@@ -7159,7 +7159,7 @@ class UControlRig : public UObject
     TArray<FName> GetEvents();
     float GetCurrentFramesPerSecond();
     float GetAbsoluteTime();
-    TArray<class UControlRig*> FindControlRigs(class UObject* Outer, TSubclassOf<class UControlRig> OptionalClass);
+    TArray<UControlRig*> FindControlRigs(class UObject* Outer, TSubclassOf<class UControlRig> OptionalClass);
     bool ExecuteEvent(const FName& InEventName);
     bool Execute(const EControlRigState State, const FName& InEventName);
     TArray<FName> CurrentControlSelection();
@@ -7280,7 +7280,7 @@ class UControlRigNumericalValidationPass : public UControlRigValidationPass
 
 class UControlRigObjectHolder : public UObject
 {
-    TArray<class UObject*> Objects;                                                   // 0x0028 (size: 0x10)
+    TArray<UObject*> Objects;                                                         // 0x0028 (size: 0x10)
 
 }; // Size: 0x38
 
@@ -7314,8 +7314,8 @@ class UControlRigPoseProjectSettings : public UObject
 
 class UControlRigSequence : public ULevelSequence
 {
-    TSoftObjectPtr<UAnimSequence> LastExportedToAnimationSequence;                    // 0x0220 (size: 0x30)
-    TSoftObjectPtr<USkeletalMesh> LastExportedUsingSkeletalMesh;                      // 0x0250 (size: 0x30)
+    TSoftObjectPtr<class UAnimSequence> LastExportedToAnimationSequence;              // 0x0220 (size: 0x30)
+    TSoftObjectPtr<class USkeletalMesh> LastExportedUsingSkeletalMesh;                // 0x0250 (size: 0x30)
     float LastExportedFrameRate;                                                      // 0x0280 (size: 0x4)
 
 }; // Size: 0x288
@@ -7327,8 +7327,8 @@ class UControlRigSettings : public UDeveloperSettings
 class UControlRigShapeLibrary : public UObject
 {
     FControlRigShapeDefinition DefaultShape;                                          // 0x0030 (size: 0xB0)
-    TSoftObjectPtr<UMaterial> DefaultMaterial;                                        // 0x00E0 (size: 0x30)
-    TSoftObjectPtr<UMaterial> XRayMaterial;                                           // 0x0110 (size: 0x30)
+    TSoftObjectPtr<class UMaterial> DefaultMaterial;                                  // 0x00E0 (size: 0x30)
+    TSoftObjectPtr<class UMaterial> XRayMaterial;                                     // 0x0110 (size: 0x30)
     FName MaterialColorParameter;                                                     // 0x0140 (size: 0x8)
     TArray<FControlRigShapeDefinition> Shapes;                                        // 0x0148 (size: 0x10)
 
@@ -7356,7 +7356,7 @@ class UControlRigValidationPass : public UObject
 
 class UControlRigValidator : public UObject
 {
-    TArray<class UControlRigValidationPass*> Passes;                                  // 0x0028 (size: 0x10)
+    TArray<UControlRigValidationPass*> Passes;                                        // 0x0028 (size: 0x10)
 
 }; // Size: 0x68
 
@@ -7386,7 +7386,7 @@ class UMovieSceneControlRigParameterSection : public UMovieSceneParameterSection
     TArray<bool> ControlsMask;                                                        // 0x01A8 (size: 0x10)
     FMovieSceneTransformMask TransformMask;                                           // 0x01B8 (size: 0x4)
     FMovieSceneFloatChannel Weight;                                                   // 0x01C0 (size: 0x110)
-    TMap<class FName, class FChannelMapInfo> ControlChannelMap;                       // 0x02D0 (size: 0x50)
+    TMap<FName, FChannelMapInfo> ControlChannelMap;                                   // 0x02D0 (size: 0x50)
     TArray<FEnumParameterNameAndCurve> EnumParameterNamesAndCurves;                   // 0x0320 (size: 0x10)
     TArray<FIntegerParameterNameAndCurve> IntegerParameterNamesAndCurves;             // 0x0330 (size: 0x10)
     TArray<FSpaceControlNameAndChannel> SpaceChannels;                                // 0x0340 (size: 0x10)
@@ -7398,7 +7398,7 @@ class UMovieSceneControlRigParameterTrack : public UMovieSceneNameableTrack
 {
     class UControlRig* ControlRig;                                                    // 0x00D8 (size: 0x8)
     class UMovieSceneSection* SectionToKey;                                           // 0x00E0 (size: 0x8)
-    TArray<class UMovieSceneSection*> Sections;                                       // 0x00E8 (size: 0x10)
+    TArray<UMovieSceneSection*> Sections;                                             // 0x00E8 (size: 0x10)
     FName TrackName;                                                                  // 0x00F8 (size: 0x8)
 
 }; // Size: 0x100
@@ -7411,7 +7411,7 @@ class URigHierarchy : public UObject
     bool bEnableDirtyPropagation;                                                     // 0x008E (size: 0x1)
     int32 TransformStackIndex;                                                        // 0x0100 (size: 0x4)
     class URigHierarchyController* HierarchyController;                               // 0x0178 (size: 0x8)
-    TMap<class FRigElementKey, class FRigElementKey> PreviousNameMap;                 // 0x01D8 (size: 0x50)
+    TMap<FRigElementKey, FRigElementKey> PreviousNameMap;                             // 0x01D8 (size: 0x50)
     class URigHierarchy* HierarchyForCacheValidation;                                 // 0x02A8 (size: 0x8)
 
     void UnsetCurveValueByIndex(int32 InElementIndex, bool bSetupUndo);
@@ -7604,7 +7604,7 @@ class URigHierarchyController : public UObject
 
 class UTransformableControlHandle : public UTransformableHandle
 {
-    TSoftObjectPtr<UControlRig> ControlRig;                                           // 0x0058 (size: 0x30)
+    TSoftObjectPtr<class UControlRig> ControlRig;                                     // 0x0058 (size: 0x30)
     FName ControlName;                                                                // 0x0088 (size: 0x8)
 
 }; // Size: 0x90

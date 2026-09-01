@@ -17,21 +17,119 @@
 namespace SDK
 {
 
-// Function BP_PalBossTower.BP_PalBossTower_C.ExecuteUbergraph_BP_PalBossTower
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_PalBossTower.BP_PalBossTower_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_PalBossTower_C::ExecuteUbergraph_BP_PalBossTower(int32 EntryPoint)
+void ABP_PalBossTower_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTower_C", "ExecuteUbergraph_BP_PalBossTower");
+		Func = Class->GetFunction("BP_PalBossTower_C", "ReceiveBeginPlay");
 
-	Params::BP_PalBossTower_C_ExecuteUbergraph_BP_PalBossTower Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function BP_PalBossTower.BP_PalBossTower_C.GetInteractableTrigger
+// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UShapeComponent**                 InteractableTrigger                                    (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalBossTower_C::GetInteractableTrigger(class UShapeComponent** InteractableTrigger)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalBossTower_C", "GetInteractableTrigger");
+
+	Params::BP_PalBossTower_C_GetInteractableTrigger Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (InteractableTrigger != nullptr)
+		*InteractableTrigger = Parms.InteractableTrigger;
+}
+
+
+// Function BP_PalBossTower.BP_PalBossTower_C.GetInteractableInterface
+// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// TScriptInterface<class IPalInteractiveObjectComponentInterface>*Interface                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalBossTower_C::GetInteractableInterface(TScriptInterface<class IPalInteractiveObjectComponentInterface>* Interface)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalBossTower_C", "GetInteractableInterface");
+
+	Params::BP_PalBossTower_C_GetInteractableInterface Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Interface != nullptr)
+		*Interface = Parms.Interface;
+}
+
+
+// Function BP_PalBossTower.BP_PalBossTower_C.GetEntryWaitInfoTrigger
+// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UShapeComponent**                 EntryWaitInfoTrigger_0                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalBossTower_C::GetEntryWaitInfoTrigger(class UShapeComponent** EntryWaitInfoTrigger_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalBossTower_C", "GetEntryWaitInfoTrigger");
+
+	Params::BP_PalBossTower_C_GetEntryWaitInfoTrigger Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (EntryWaitInfoTrigger_0 != nullptr)
+		*EntryWaitInfoTrigger_0 = Parms.EntryWaitInfoTrigger_0;
+}
+
+
+// Function BP_PalBossTower.BP_PalBossTower_C.GetEntryCancelTrigger
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UShapeComponent**                 EntryCancelTrigger                                     (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalBossTower_C::GetEntryCancelTrigger(class UShapeComponent** EntryCancelTrigger)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalBossTower_C", "GetEntryCancelTrigger");
+
+	Params::BP_PalBossTower_C_GetEntryCancelTrigger Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (EntryCancelTrigger != nullptr)
+		*EntryCancelTrigger = Parms.EntryCancelTrigger;
+}
+
+
+// Function BP_PalBossTower.BP_PalBossTower_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalBossTower_C::ReceiveTick(float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalBossTower_C", "ReceiveTick");
+
+	Params::BP_PalBossTower_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,121 +155,23 @@ void ABP_PalBossTower_C::OnChangeLocalBossDefeatStateBP(bool bDefeated)
 }
 
 
-// Function BP_PalBossTower.BP_PalBossTower_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
+// Function BP_PalBossTower.BP_PalBossTower_C.ExecuteUbergraph_BP_PalBossTower
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalBossTower_C::ReceiveTick(float DeltaSeconds)
+void ABP_PalBossTower_C::ExecuteUbergraph_BP_PalBossTower(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTower_C", "ReceiveTick");
+		Func = Class->GetFunction("BP_PalBossTower_C", "ExecuteUbergraph_BP_PalBossTower");
 
-	Params::BP_PalBossTower_C_ReceiveTick Parms{};
+	Params::BP_PalBossTower_C_ExecuteUbergraph_BP_PalBossTower Parms{};
 
-	Parms.DeltaSeconds = DeltaSeconds;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PalBossTower.BP_PalBossTower_C.GetEntryCancelTrigger
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UShapeComponent**                 EntryCancelTrigger                                     (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalBossTower_C::GetEntryCancelTrigger(class UShapeComponent** EntryCancelTrigger)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTower_C", "GetEntryCancelTrigger");
-
-	Params::BP_PalBossTower_C_GetEntryCancelTrigger Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (EntryCancelTrigger != nullptr)
-		*EntryCancelTrigger = Parms.EntryCancelTrigger;
-}
-
-
-// Function BP_PalBossTower.BP_PalBossTower_C.GetEntryWaitInfoTrigger
-// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UShapeComponent**                 EntryWaitInfoTrigger_0                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalBossTower_C::GetEntryWaitInfoTrigger(class UShapeComponent** EntryWaitInfoTrigger_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTower_C", "GetEntryWaitInfoTrigger");
-
-	Params::BP_PalBossTower_C_GetEntryWaitInfoTrigger Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (EntryWaitInfoTrigger_0 != nullptr)
-		*EntryWaitInfoTrigger_0 = Parms.EntryWaitInfoTrigger_0;
-}
-
-
-// Function BP_PalBossTower.BP_PalBossTower_C.GetInteractableInterface
-// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// TScriptInterface<class IPalInteractiveObjectComponentInterface>*Interface                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalBossTower_C::GetInteractableInterface(TScriptInterface<class IPalInteractiveObjectComponentInterface>* Interface)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTower_C", "GetInteractableInterface");
-
-	Params::BP_PalBossTower_C_GetInteractableInterface Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Interface != nullptr)
-		*Interface = Parms.Interface;
-}
-
-
-// Function BP_PalBossTower.BP_PalBossTower_C.GetInteractableTrigger
-// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UShapeComponent**                 InteractableTrigger                                    (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalBossTower_C::GetInteractableTrigger(class UShapeComponent** InteractableTrigger)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTower_C", "GetInteractableTrigger");
-
-	Params::BP_PalBossTower_C_GetInteractableTrigger Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (InteractableTrigger != nullptr)
-		*InteractableTrigger = Parms.InteractableTrigger;
-}
-
-
-// Function BP_PalBossTower.BP_PalBossTower_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_PalBossTower_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBossTower_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

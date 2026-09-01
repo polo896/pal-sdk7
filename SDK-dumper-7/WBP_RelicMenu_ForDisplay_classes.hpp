@@ -36,22 +36,22 @@ public:
 	TMap<class FName, int32>                      PreRankupStatusMap;                                // 0x04B8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void BndEvt__WBP_RelicMenu_ForDisplay_WBP_Buildup_Player_1_K2Node_ComponentBoundEvent_0_OnClickedConfirm__DelegateSignature();
-	void BndEvt__WBP_RelicMenu_ForDisplay_WBP_Buildup_Player_1_K2Node_ComponentBoundEvent_1_OnClickedCloseButton__DelegateSignature();
-	void CheckCompleteSynchronize();
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_RelicMenu_ForDisplay(int32 EntryPoint);
-	void GetLastRequestedRelicType(TArray<EPalRelicType>* OutRelicType);
-	void On_Got_Status();
-	void OnReceiveResult(EPalCharacterStatusOperationResult Result);
-	void OnSetup();
-	void OnUpdatedRelicNum(EPalRelicType Type, int32 NewNum);
-	void Reset();
-	void SetupCollectedRelics();
-	void SetupEventBind();
-	void TeardownEventBind();
 	void TryRequestRankup();
+	void TeardownEventBind();
+	void SetupEventBind();
+	void SetupCollectedRelics();
+	void Reset();
+	void OnUpdatedRelicNum(EPalRelicType Type, int32 NewNum);
+	void OnSetup();
+	void OnReceiveResult(EPalCharacterStatusOperationResult Result);
+	void On_Got_Status();
+	void GetLastRequestedRelicType(TArray<EPalRelicType>* OutRelicType);
+	void ExecuteUbergraph_WBP_RelicMenu_ForDisplay(int32 EntryPoint);
+	void Destruct();
+	void Construct();
+	void CheckCompleteSynchronize();
+	void BndEvt__WBP_RelicMenu_ForDisplay_WBP_Buildup_Player_1_K2Node_ComponentBoundEvent_1_OnClickedCloseButton__DelegateSignature();
+	void BndEvt__WBP_RelicMenu_ForDisplay_WBP_Buildup_Player_1_K2Node_ComponentBoundEvent_0_OnClickedConfirm__DelegateSignature();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

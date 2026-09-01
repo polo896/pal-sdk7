@@ -17,17 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_Reticle_KeyGuide.WBP_Reticle_KeyGuide_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Reticle_KeyGuide.WBP_Reticle_KeyGuide_C.SetKeyGuideInfo
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// Enum_ReticleCancel_DisplayType          DisplayType                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Reticle_KeyGuide_C::Construct()
+void UWBP_Reticle_KeyGuide_C::SetKeyGuideInfo(Enum_ReticleCancel_DisplayType DisplayType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Reticle_KeyGuide_C", "Construct");
+		Func = Class->GetFunction("WBP_Reticle_KeyGuide_C", "SetKeyGuideInfo");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Reticle_KeyGuide_C_SetKeyGuideInfo Parms{};
+
+	Parms.DisplayType = DisplayType;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -51,23 +57,17 @@ void UWBP_Reticle_KeyGuide_C::ExecuteUbergraph_WBP_Reticle_KeyGuide(int32 EntryP
 }
 
 
-// Function WBP_Reticle_KeyGuide.WBP_Reticle_KeyGuide_C.SetKeyGuideInfo
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// Enum_ReticleCancel_DisplayType          DisplayType                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Reticle_KeyGuide.WBP_Reticle_KeyGuide_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Reticle_KeyGuide_C::SetKeyGuideInfo(Enum_ReticleCancel_DisplayType DisplayType)
+void UWBP_Reticle_KeyGuide_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Reticle_KeyGuide_C", "SetKeyGuideInfo");
+		Func = Class->GetFunction("WBP_Reticle_KeyGuide_C", "Construct");
 
-	Params::WBP_Reticle_KeyGuide_C_SetKeyGuideInfo Parms{};
-
-	Parms.DisplayType = DisplayType;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

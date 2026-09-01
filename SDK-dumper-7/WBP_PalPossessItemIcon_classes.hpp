@@ -37,11 +37,11 @@ public:
 	TMulticastInlineDelegate<void()>              OnFinishedClose;                                   // 0x02D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void AnmEvent_Close();
-	void AnmEvent_Open();
-	void ExecuteUbergraph_WBP_PalPossessItemIcon(int32 EntryPoint);
-	void Finished_8EA3005E48EF792C3516879160C3F958();
 	void Finished_D25F024E49DE41380A3843A691EA22D3();
+	void Finished_8EA3005E48EF792C3516879160C3F958();
+	void ExecuteUbergraph_WBP_PalPossessItemIcon(int32 EntryPoint);
+	void AnmEvent_Open();
+	void AnmEvent_Close();
 
 public:
 	static class UClass* StaticClass()

@@ -16,27 +16,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_Common_ToggleSwitch.WBP_Common_ToggleSwitch_C.ExecuteUbergraph_WBP_Common_ToggleSwitch
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_Common_ToggleSwitch_C_ExecuteUbergraph_WBP_Common_ToggleSwitch final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UCommonButtonBase* Button)> K2Node_CreateDelegate_OutputDelegate;           // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButtonBase*                      K2Node_CustomEvent_Button;                         // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Common_ToggleSwitch_C_ExecuteUbergraph_WBP_Common_ToggleSwitch;
-
-// Function WBP_Common_ToggleSwitch.WBP_Common_ToggleSwitch_C.OnButtonBaseClicked_イベント
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Common_ToggleSwitch_C_OnButtonBaseClicked_イベント final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Common_ToggleSwitch_C_OnButtonBaseClicked_イベント;
-
 // Function WBP_Common_ToggleSwitch.WBP_Common_ToggleSwitch_C.SetToggleState
 // 0x0030 (0x0030 - 0x0000)
 struct WBP_Common_ToggleSwitch_C_SetToggleState final
@@ -58,6 +37,27 @@ public:
 	float                                         CallFunc_PlayAnimation_StartAtTime_ImplicitCast;   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Common_ToggleSwitch_C_SetToggleState;
+
+// Function WBP_Common_ToggleSwitch.WBP_Common_ToggleSwitch_C.OnButtonBaseClicked_イベント
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Common_ToggleSwitch_C_OnButtonBaseClicked_イベント final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Common_ToggleSwitch_C_OnButtonBaseClicked_イベント;
+
+// Function WBP_Common_ToggleSwitch.WBP_Common_ToggleSwitch_C.ExecuteUbergraph_WBP_Common_ToggleSwitch
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_Common_ToggleSwitch_C_ExecuteUbergraph_WBP_Common_ToggleSwitch final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UCommonButtonBase* Button)> K2Node_CreateDelegate_OutputDelegate;           // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonButtonBase*                      K2Node_CustomEvent_Button;                         // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Common_ToggleSwitch_C_ExecuteUbergraph_WBP_Common_ToggleSwitch;
 
 }
 

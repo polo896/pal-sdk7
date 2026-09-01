@@ -30,12 +30,12 @@ public:
 	class AActor*                                 PredictedTarget_0;                                 // 0x0300(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_ActionMudShot(int32 EntryPoint);
-	void OnBeginAction();
-	void OnEndAction();
-	void OnSpawnEffect(class APalSkillEffectBase* Effect_0);
-	void SetPredictedTarget_0();
 	void TickAction(float DeltaTime);
+	void SetPredictedTarget_0();
+	void OnSpawnEffect(class APalSkillEffectBase* Effect_0);
+	void OnEndAction();
+	void OnBeginAction();
+	void ExecuteUbergraph_BP_ActionMudShot(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

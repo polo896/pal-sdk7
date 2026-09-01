@@ -67,16 +67,16 @@ public:
 	class UImage*                                 Image_Dark;                                        // 0x03C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Failed();
-	void AnmEvent_Out();
-	void AnmEvent_Success();
-	void Clear();
-	void ExecuteUbergraph_WBP_WarningEvent_WaveFinish(int32 EntryPoint);
-	void Failure();
-	void PlayFailedSequence();
-	void PlaySuccessSequence();
-	void SequenceEvent__ENTRYPOINTWBP_WarningEvent_WaveFinish();
 	void SequenceEvent__ENTRYPOINTWBP_WarningEvent_WaveFinish_0();
+	void SequenceEvent__ENTRYPOINTWBP_WarningEvent_WaveFinish();
+	void PlaySuccessSequence();
+	void PlayFailedSequence();
+	void Failure();
+	void ExecuteUbergraph_WBP_WarningEvent_WaveFinish(int32 EntryPoint);
+	void Clear();
+	void AnmEvent_Success();
+	void AnmEvent_Out();
+	void AnmEvent_Failed();
 
 public:
 	static class UClass* StaticClass()

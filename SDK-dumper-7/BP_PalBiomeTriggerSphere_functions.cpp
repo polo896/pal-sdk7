@@ -17,21 +17,35 @@
 namespace SDK
 {
 
-// Function BP_PalBiomeTriggerSphere.BP_PalBiomeTriggerSphere_C.ExecuteUbergraph_BP_PalBiomeTriggerSphere
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_PalBiomeTriggerSphere.BP_PalBiomeTriggerSphere_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_PalBiomeTriggerSphere_C::ExecuteUbergraph_BP_PalBiomeTriggerSphere(int32 EntryPoint)
+void ABP_PalBiomeTriggerSphere_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBiomeTriggerSphere_C", "ExecuteUbergraph_BP_PalBiomeTriggerSphere");
+		Func = Class->GetFunction("BP_PalBiomeTriggerSphere_C", "ReceiveBeginPlay");
 
-	Params::BP_PalBiomeTriggerSphere_C_ExecuteUbergraph_BP_PalBiomeTriggerSphere Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function BP_PalBiomeTriggerSphere.BP_PalBiomeTriggerSphere_C.ReceiveActorEndOverlap
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalBiomeTriggerSphere_C::ReceiveActorEndOverlap(class AActor* OtherActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalBiomeTriggerSphere_C", "ReceiveActorEndOverlap");
+
+	Params::BP_PalBiomeTriggerSphere_C_ReceiveActorEndOverlap Parms{};
+
+	Parms.OtherActor = OtherActor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,37 +71,23 @@ void ABP_PalBiomeTriggerSphere_C::ReceiveActorBeginOverlap(class AActor* OtherAc
 }
 
 
-// Function BP_PalBiomeTriggerSphere.BP_PalBiomeTriggerSphere_C.ReceiveActorEndOverlap
-// (Event, Public, BlueprintEvent)
+// Function BP_PalBiomeTriggerSphere.BP_PalBiomeTriggerSphere_C.ExecuteUbergraph_BP_PalBiomeTriggerSphere
+// (Final, UbergraphFunction)
 // Parameters:
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PalBiomeTriggerSphere_C::ReceiveActorEndOverlap(class AActor* OtherActor)
+void ABP_PalBiomeTriggerSphere_C::ExecuteUbergraph_BP_PalBiomeTriggerSphere(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBiomeTriggerSphere_C", "ReceiveActorEndOverlap");
+		Func = Class->GetFunction("BP_PalBiomeTriggerSphere_C", "ExecuteUbergraph_BP_PalBiomeTriggerSphere");
 
-	Params::BP_PalBiomeTriggerSphere_C_ReceiveActorEndOverlap Parms{};
+	Params::BP_PalBiomeTriggerSphere_C_ExecuteUbergraph_BP_PalBiomeTriggerSphere Parms{};
 
-	Parms.OtherActor = OtherActor;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PalBiomeTriggerSphere.BP_PalBiomeTriggerSphere_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_PalBiomeTriggerSphere_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalBiomeTriggerSphere_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

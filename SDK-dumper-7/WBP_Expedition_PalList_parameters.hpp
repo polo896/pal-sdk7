@@ -17,45 +17,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_Expedition_PalList.WBP_Expedition_PalList_C.BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Expedition_PalList_C_BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Expedition_PalList_C_BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_Expedition_PalList.WBP_Expedition_PalList_C.BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Expedition_PalList_C_BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Expedition_PalList_C_BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_Expedition_PalList.WBP_Expedition_PalList_C.ExecuteUbergraph_WBP_Expedition_PalList
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Expedition_PalList_C_ExecuteUbergraph_WBP_Expedition_PalList final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_1;               // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Expedition_PalList_C_ExecuteUbergraph_WBP_Expedition_PalList;
-
-// Function WBP_Expedition_PalList.WBP_Expedition_PalList_C.GetAssignInfo
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_Expedition_PalList_C_GetAssignInfo final
-{
-public:
-	struct FPalUIMapObjectCharacterTeamMissionIndividual AssignInfo;                                 // 0x0000(0x0050)(Parm, OutParm)
-};
-DUMPER7_ASSERTS_WBP_Expedition_PalList_C_GetAssignInfo;
-
 // Function WBP_Expedition_PalList.WBP_Expedition_PalList_C.Setup
 // 0x04B0 (0x04B0 - 0x0000)
 struct WBP_Expedition_PalList_C_Setup final
@@ -84,6 +45,45 @@ public:
 	TSoftObjectPtr<class UTexture2D>              CallFunc_GetCharacterIconTexture_ReturnValue;      // 0x0480(0x0030)(UObjectWrapper, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Expedition_PalList_C_Setup;
+
+// Function WBP_Expedition_PalList.WBP_Expedition_PalList_C.GetAssignInfo
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_Expedition_PalList_C_GetAssignInfo final
+{
+public:
+	struct FPalUIMapObjectCharacterTeamMissionIndividual AssignInfo;                                 // 0x0000(0x0050)(Parm, OutParm)
+};
+DUMPER7_ASSERTS_WBP_Expedition_PalList_C_GetAssignInfo;
+
+// Function WBP_Expedition_PalList.WBP_Expedition_PalList_C.ExecuteUbergraph_WBP_Expedition_PalList
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Expedition_PalList_C_ExecuteUbergraph_WBP_Expedition_PalList final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_1;               // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Expedition_PalList_C_ExecuteUbergraph_WBP_Expedition_PalList;
+
+// Function WBP_Expedition_PalList.WBP_Expedition_PalList_C.BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Expedition_PalList_C_BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Expedition_PalList_C_BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_Expedition_PalList.WBP_Expedition_PalList_C.BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Expedition_PalList_C_BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Expedition_PalList_C_BndEvt__WBP_Expedition_PalList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
 
 }
 

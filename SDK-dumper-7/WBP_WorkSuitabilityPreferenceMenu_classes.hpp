@@ -44,27 +44,27 @@ public:
 	bool                                          bEnableOperation;                                  // 0x0368(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ArrangeHorizontalBoxSlot_ForSuitabilityIcon(class UHorizontalBoxSlot* Slot_0);
-	void BndEvt__WBP_WorkSuitabilityPreferenceMenu_WBP_Menu_btn_Close_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void Construct();
-	class UWidget* CustomNavi_DownList(EUINavigation Navigation_0);
-	class UWidget* CustomNavi_UpList(EUINavigation Navigation_0);
-	void Destruct();
-	void ExecuteUbergraph_WBP_WorkSuitabilityPreferenceMenu(int32 EntryPoint);
-	class UWidget* GetNextListFocusTarget(int32 TargetListDistance);
-	void GetTopFocusTarget(class UWidget** TargetWidget);
-	void GetTopFocusTarget_PalList(class UWidget** Target);
-	void OnChangedBattleModeCheck_Internal(bool IsChecked, class UPalIndividualCharacterSlot* TargetSlot);
-	void OnChangedSuitabilityCheck_Internal(bool IsChecked, EPalWorkSuitability Suitability, class UPalIndividualCharacterSlot* TargetSlot);
-	void OnHoveredAnyCheckBox_Internal(class UWBP_WorlSuitabilityPreference_PalList_C* SelfWidget);
-	void OnInitialized();
-	void OnUpdateSlotHandle(class UPalIndividualCharacterSlot* Slot_0, class UPalIndividualCharacterHandle* LastHandle);
-	void SetEnableWorkerInfo(bool IsEnableInfo);
-	void SetOperationPermission(bool bEnableOperation_0);
-	void SetTargetContainer(class UPalIndividualCharacterContainer* Container);
-	void SetupSuitabilityIcon();
-	void UpdateOperationPermission();
 	void UpdateWorkerNum();
+	void UpdateOperationPermission();
+	void SetupSuitabilityIcon();
+	void SetTargetContainer(class UPalIndividualCharacterContainer* Container);
+	void SetOperationPermission(bool bEnableOperation_0);
+	void SetEnableWorkerInfo(bool IsEnableInfo);
+	void OnUpdateSlotHandle(class UPalIndividualCharacterSlot* Slot_0, class UPalIndividualCharacterHandle* LastHandle);
+	void OnInitialized();
+	void OnHoveredAnyCheckBox_Internal(class UWBP_WorlSuitabilityPreference_PalList_C* SelfWidget);
+	void OnChangedSuitabilityCheck_Internal(bool IsChecked, EPalWorkSuitability Suitability, class UPalIndividualCharacterSlot* TargetSlot);
+	void OnChangedBattleModeCheck_Internal(bool IsChecked, class UPalIndividualCharacterSlot* TargetSlot);
+	void GetTopFocusTarget_PalList(class UWidget** Target);
+	void GetTopFocusTarget(class UWidget** TargetWidget);
+	class UWidget* GetNextListFocusTarget(int32 TargetListDistance);
+	void ExecuteUbergraph_WBP_WorkSuitabilityPreferenceMenu(int32 EntryPoint);
+	void Destruct();
+	class UWidget* CustomNavi_UpList(EUINavigation Navigation_0);
+	class UWidget* CustomNavi_DownList(EUINavigation Navigation_0);
+	void Construct();
+	void BndEvt__WBP_WorkSuitabilityPreferenceMenu_WBP_Menu_btn_Close_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
+	void ArrangeHorizontalBoxSlot_ForSuitabilityIcon(class UHorizontalBoxSlot* Slot_0);
 
 public:
 	static class UClass* StaticClass()

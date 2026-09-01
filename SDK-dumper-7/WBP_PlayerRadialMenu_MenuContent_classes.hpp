@@ -27,9 +27,9 @@ public:
 	class UPalRetainerBox*                        PalRetainerBox_51;                                 // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void SetHightlight();
-	void SetText(const class FText& InText);
 	void SetTextColor(const struct FSlateColor& NewColor);
+	void SetText(const class FText& InText);
+	void SetHightlight();
 
 public:
 	static class UClass* StaticClass()

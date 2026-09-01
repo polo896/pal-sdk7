@@ -9,7 +9,7 @@ class ABP_BossBattle_BossCharacterSpawner_C : public AActor
     int32 StartPlayerNum;                                                             // 0x02A8 (size: 0x4)
     FBP_BossBattle_BossCharacterSpawner_COnOtherSpawned OnOtherSpawned;               // 0x02B0 (size: 0x10)
     void OnOtherSpawned(class UPalIndividualCharacterHandle* SpawnCharacterHandle);
-    TArray<class UPalIndividualCharacterHandle*> OtherCharacterHandles;               // 0x02C0 (size: 0x10)
+    TArray<UPalIndividualCharacterHandle*> OtherCharacterHandles;                     // 0x02C0 (size: 0x10)
     bool ShouldBossLocationNoAdjust;                                                  // 0x02D0 (size: 0x1)
     FName flagName;                                                                   // 0x02D4 (size: 0x8)
     TSubclassOf<class AAIController> BossAIControllerCache;                           // 0x02E0 (size: 0x8)

@@ -28,8 +28,8 @@ public:
 	class UPalMapObjectPickupItemParameterComponent* PalMapObjectPickupItemParameter;                // 0x0448(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_MapObject_PickupItem_Log(int32 EntryPoint);
 	void InitializeFromPool();
+	void ExecuteUbergraph_BP_MapObject_PickupItem_Log(int32 EntryPoint);
 	void ReturnToPool();
 
 	struct FPalObjectPoolParameter GetObjectPoolParameter() const;

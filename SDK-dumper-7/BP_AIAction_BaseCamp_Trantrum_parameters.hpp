@@ -17,35 +17,6 @@
 namespace SDK::Params
 {
 
-// Function BP_AIAction_BaseCamp_Trantrum.BP_AIAction_BaseCamp_Trantrum_C.ActionFinished
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AIAction_BaseCamp_Trantrum_C_ActionFinished final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIAction_BaseCamp_Trantrum_C_ActionFinished;
-
-// Function BP_AIAction_BaseCamp_Trantrum.BP_AIAction_BaseCamp_Trantrum_C.ActionStart
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_BaseCamp_Trantrum_C_ActionStart final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIAction_BaseCamp_Trantrum_C_ActionStart;
-
-// Function BP_AIAction_BaseCamp_Trantrum.BP_AIAction_BaseCamp_Trantrum_C.ActionTick
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AIAction_BaseCamp_Trantrum_C_ActionTick final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         DeltaSeconds;                                      // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_AIAction_BaseCamp_Trantrum_C_ActionTick;
-
 // Function BP_AIAction_BaseCamp_Trantrum.BP_AIAction_BaseCamp_Trantrum_C.ExecuteUbergraph_BP_AIAction_BaseCamp_Trantrum
 // 0x0068 (0x0068 - 0x0000)
 struct BP_AIAction_BaseCamp_Trantrum_C_ExecuteUbergraph_BP_AIAction_BaseCamp_Trantrum final
@@ -69,6 +40,35 @@ public:
 	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue_1;      // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_AIAction_BaseCamp_Trantrum_C_ExecuteUbergraph_BP_AIAction_BaseCamp_Trantrum;
+
+// Function BP_AIAction_BaseCamp_Trantrum.BP_AIAction_BaseCamp_Trantrum_C.ActionTick
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AIAction_BaseCamp_Trantrum_C_ActionTick final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         DeltaSeconds;                                      // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIAction_BaseCamp_Trantrum_C_ActionTick;
+
+// Function BP_AIAction_BaseCamp_Trantrum.BP_AIAction_BaseCamp_Trantrum_C.ActionStart
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_BaseCamp_Trantrum_C_ActionStart final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIAction_BaseCamp_Trantrum_C_ActionStart;
+
+// Function BP_AIAction_BaseCamp_Trantrum.BP_AIAction_BaseCamp_Trantrum_C.ActionFinished
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AIAction_BaseCamp_Trantrum_C_ActionFinished final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AIAction_BaseCamp_Trantrum_C_ActionFinished;
 
 }
 

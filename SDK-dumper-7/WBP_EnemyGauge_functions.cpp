@@ -17,599 +17,137 @@
 namespace SDK
 {
 
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.AnmEvent_BgChange_Enemy
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_EnemyGauge_C::AnmEvent_BgChange_Enemy()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "AnmEvent_BgChange_Enemy");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.AnmEvent_BgChange_Party
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_EnemyGauge_C::AnmEvent_BgChange_Party()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "AnmEvent_BgChange_Party");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.AnmEvent_Damage
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_EnemyGauge_C::AnmEvent_Damage()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "AnmEvent_Damage");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.AnmEvent_LowHealth
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    isDisplay                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EnemyGauge_C::AnmEvent_LowHealth(bool isDisplay)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "AnmEvent_LowHealth");
-
-	Params::WBP_EnemyGauge_C_AnmEvent_LowHealth Parms{};
-
-	Parms.isDisplay = isDisplay;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.AnmEvent_StartBattleLoop
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_EnemyGauge_C::AnmEvent_StartBattleLoop()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "AnmEvent_StartBattleLoop");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.AnmEvent_Starvation
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_EnemyGauge_C::AnmEvent_Starvation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "AnmEvent_Starvation");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.AnmEvent_StopBattleLoop
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_EnemyGauge_C::AnmEvent_StopBattleLoop()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "AnmEvent_StopBattleLoop");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.AnmEvent_StopStarvation
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_EnemyGauge_C::AnmEvent_StopStarvation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "AnmEvent_StopStarvation");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.AnmEvent_StopWorkLoop
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_EnemyGauge_C::AnmEvent_StopWorkLoop()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "AnmEvent_StopWorkLoop");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.AnmEvent_WorkLoop
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_EnemyGauge_C::AnmEvent_WorkLoop()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "AnmEvent_WorkLoop");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.Change Enemy Mode
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.UpdateForTick
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsNeutral                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_EnemyGauge_C::Change_Enemy_Mode(bool IsNeutral)
+void UWBP_EnemyGauge_C::UpdateForTick(double DeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "Change Enemy Mode");
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "UpdateForTick");
 
-	Params::WBP_EnemyGauge_C_Change_Enemy_Mode Parms{};
+	Params::WBP_EnemyGauge_C_UpdateForTick Parms{};
 
-	Parms.IsNeutral = IsNeutral;
+	Parms.DeltaTime = DeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.ChangeFriendMode
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.TryDisplayLowHealthNotice
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  nowPercent                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_EnemyGauge_C::ChangeFriendMode()
+void UWBP_EnemyGauge_C::TryDisplayLowHealthNotice(double nowPercent)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "ChangeFriendMode");
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "TryDisplayLowHealthNotice");
+
+	Params::WBP_EnemyGauge_C_TryDisplayLowHealthNotice Parms{};
+
+	Parms.nowPercent = nowPercent;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.Trigger Damage Animation
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_EnemyGauge_C::Trigger_Damage_Animation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "Trigger Damage Animation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.ChangeRarePalMark
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_EnemyGauge_C::ChangeRarePalMark()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "ChangeRarePalMark");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.ChangeStrongPalMark
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_EnemyGauge_C::ChangeStrongPalMark()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "ChangeStrongPalMark");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.ExecuteUbergraph_WBP_EnemyGauge
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EnemyGauge_C::ExecuteUbergraph_WBP_EnemyGauge(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "ExecuteUbergraph_WBP_EnemyGauge");
-
-	Params::WBP_EnemyGauge_C_ExecuteUbergraph_WBP_EnemyGauge Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.Finished_3A40E20A4EEEDB096D18D9BCA7FB77D2
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_EnemyGauge_C::Finished_3A40E20A4EEEDB096D18D9BCA7FB77D2()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "Finished_3A40E20A4EEEDB096D18D9BCA7FB77D2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.Finished_5FBBBD124EDCCC07BA9CB28F5BB90BA8
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_EnemyGauge_C::Finished_5FBBBD124EDCCC07BA9CB28F5BB90BA8()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "Finished_5FBBBD124EDCCC07BA9CB28F5BB90BA8");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_EnemyGauge_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.RetainCommonDetail
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_EnemyGauge_C::RetainCommonDetail()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "RetainCommonDetail");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.Set Battle Mode
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsBattleMode                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EnemyGauge_C::Set_Battle_Mode(bool IsBattleMode)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "Set Battle Mode");
-
-	Params::WBP_EnemyGauge_C_Set_Battle_Mode Parms{};
-
-	Parms.IsBattleMode = IsBattleMode;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.Set Enable Talent Detail
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPalIndividualCharacterParameter* Parameter                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EnemyGauge_C::Set_Enable_Talent_Detail(bool IsEnable, class UPalIndividualCharacterParameter* Parameter)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "Set Enable Talent Detail");
-
-	Params::WBP_EnemyGauge_C_Set_Enable_Talent_Detail Parms{};
-
-	Parms.IsEnable = IsEnable;
-	Parms.Parameter = Parameter;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.Set Level
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Level                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    GetLevelPenalty                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EnemyGauge_C::Set_Level(int32 Level, bool GetLevelPenalty)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "Set Level");
-
-	Params::WBP_EnemyGauge_C_Set_Level Parms{};
-
-	Parms.Level = Level;
-	Parms.GetLevelPenalty = GetLevelPenalty;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.Set Work Event Info
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalIndividualCharacterHandle*    Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    NotBattle                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EnemyGauge_C::Set_Work_Event_Info(class UPalIndividualCharacterHandle* Handle, bool NotBattle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "Set Work Event Info");
-
-	Params::WBP_EnemyGauge_C_Set_Work_Event_Info Parms{};
-
-	Parms.Handle = Handle;
-	Parms.NotBattle = NotBattle;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetElement
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalElementType                         type1                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPalElementType                         type2                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EnemyGauge_C::SetElement(EPalElementType type1, EPalElementType type2)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetElement");
-
-	Params::WBP_EnemyGauge_C_SetElement Parms{};
-
-	Parms.type1 = type1;
-	Parms.type2 = type2;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetForParts
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsParts_0                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EnemyGauge_C::SetForParts(bool IsParts_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetForParts");
-
-	Params::WBP_EnemyGauge_C_SetForParts Parms{};
-
-	Parms.IsParts_0 = IsParts_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetGender
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalGenderType                          GenderType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EnemyGauge_C::SetGender(EPalGenderType GenderType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetGender");
-
-	Params::WBP_EnemyGauge_C_SetGender Parms{};
-
-	Parms.GenderType = GenderType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetGuildName
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FString&                    NewGuildName                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// const struct FGuid&                     AdminPlayerUId                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EnemyGauge_C::SetGuildName(const class FString& NewGuildName, const struct FGuid& AdminPlayerUId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetGuildName");
-
-	Params::WBP_EnemyGauge_C_SetGuildName Parms{};
-
-	Parms.NewGuildName = std::move(NewGuildName);
-	Parms.AdminPlayerUId = std::move(AdminPlayerUId);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetHPPercent
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Percent                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EnemyGauge_C::SetHPPercent(double Percent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetHPPercent");
-
-	Params::WBP_EnemyGauge_C_SetHPPercent Parms{};
-
-	Parms.Percent = Percent;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetHPPercent_Force
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Percent                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EnemyGauge_C::SetHPPercent_Force(double Percent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetHPPercent_Force");
-
-	Params::WBP_EnemyGauge_C_SetHPPercent_Force Parms{};
-
-	Parms.Percent = Percent;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetHungryCondition
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetWorkSuitability
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<EPalUIConditionType>&            Conditions                                             (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// TArray<EPalWorkSuitability>&            Suitability                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_EnemyGauge_C::SetHungryCondition(TArray<EPalUIConditionType>& Conditions)
+void UWBP_EnemyGauge_C::SetWorkSuitability(TArray<EPalWorkSuitability>& Suitability)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetHungryCondition");
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetWorkSuitability");
 
-	Params::WBP_EnemyGauge_C_SetHungryCondition Parms{};
+	Params::WBP_EnemyGauge_C_SetWorkSuitability Parms{};
 
-	Parms.Conditions = std::move(Conditions);
+	Parms.Suitability = std::move(Suitability);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	Conditions = std::move(Parms.Conditions);
+	Suitability = std::move(Parms.Suitability);
 }
 
 
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetLowHealthNoticeDisplayFlag
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetVisibilityStrongRareMark
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    isDisplay                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESlateVisibility                        Visibility_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_EnemyGauge_C::SetLowHealthNoticeDisplayFlag(bool isDisplay)
+void UWBP_EnemyGauge_C::SetVisibilityStrongRareMark(ESlateVisibility Visibility_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetLowHealthNoticeDisplayFlag");
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetVisibilityStrongRareMark");
 
-	Params::WBP_EnemyGauge_C_SetLowHealthNoticeDisplayFlag Parms{};
+	Params::WBP_EnemyGauge_C_SetVisibilityStrongRareMark Parms{};
 
-	Parms.isDisplay = isDisplay;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetSanityValue
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  NowSanityValue                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  MaxSanityValue                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_EnemyGauge_C::SetSanityValue(double NowSanityValue, double MaxSanityValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetSanityValue");
-
-	Params::WBP_EnemyGauge_C_SetSanityValue Parms{};
-
-	Parms.NowSanityValue = NowSanityValue;
-	Parms.MaxSanityValue = MaxSanityValue;
+	Parms.Visibility_0 = Visibility_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetStatusEffect
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetVisibilitySanityGauge
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EPalStatusID                            statusID                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESlateVisibility                        Visibility_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_EnemyGauge_C::SetStatusEffect(EPalStatusID statusID)
+void UWBP_EnemyGauge_C::SetVisibilitySanityGauge(ESlateVisibility Visibility_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetStatusEffect");
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetVisibilitySanityGauge");
 
-	Params::WBP_EnemyGauge_C_SetStatusEffect Parms{};
+	Params::WBP_EnemyGauge_C_SetVisibilitySanityGauge Parms{};
 
-	Parms.statusID = statusID;
+	Parms.Visibility_0 = Visibility_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetTargetName
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetVisibilityBattleIcon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FText&                      Name_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+// ESlateVisibility                        Visibiliy                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_EnemyGauge_C::SetTargetName(const class FText& Name_0)
+void UWBP_EnemyGauge_C::SetVisibilityBattleIcon(ESlateVisibility Visibiliy)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetTargetName");
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetVisibilityBattleIcon");
 
-	Params::WBP_EnemyGauge_C_SetTargetName Parms{};
+	Params::WBP_EnemyGauge_C_SetVisibilityBattleIcon Parms{};
 
-	Parms.Name_0 = std::move(Name_0);
+	Parms.Visibiliy = Visibiliy;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -637,139 +175,601 @@ void UWBP_EnemyGauge_C::SetupCompleteCaptureBonusMark(bool bVisibleMark, bool bC
 }
 
 
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetVisibilityBattleIcon
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetTargetName
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ESlateVisibility                        Visibiliy                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      Name_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_EnemyGauge_C::SetVisibilityBattleIcon(ESlateVisibility Visibiliy)
+void UWBP_EnemyGauge_C::SetTargetName(const class FText& Name_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetVisibilityBattleIcon");
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetTargetName");
 
-	Params::WBP_EnemyGauge_C_SetVisibilityBattleIcon Parms{};
+	Params::WBP_EnemyGauge_C_SetTargetName Parms{};
 
-	Parms.Visibiliy = Visibiliy;
+	Parms.Name_0 = std::move(Name_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetVisibilitySanityGauge
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetStatusEffect
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ESlateVisibility                        Visibility_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalStatusID                            statusID                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_EnemyGauge_C::SetVisibilitySanityGauge(ESlateVisibility Visibility_0)
+void UWBP_EnemyGauge_C::SetStatusEffect(EPalStatusID statusID)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetVisibilitySanityGauge");
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetStatusEffect");
 
-	Params::WBP_EnemyGauge_C_SetVisibilitySanityGauge Parms{};
+	Params::WBP_EnemyGauge_C_SetStatusEffect Parms{};
 
-	Parms.Visibility_0 = Visibility_0;
+	Parms.statusID = statusID;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetVisibilityStrongRareMark
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetSanityValue
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ESlateVisibility                        Visibility_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  NowSanityValue                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  MaxSanityValue                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_EnemyGauge_C::SetVisibilityStrongRareMark(ESlateVisibility Visibility_0)
+void UWBP_EnemyGauge_C::SetSanityValue(double NowSanityValue, double MaxSanityValue)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetVisibilityStrongRareMark");
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetSanityValue");
 
-	Params::WBP_EnemyGauge_C_SetVisibilityStrongRareMark Parms{};
+	Params::WBP_EnemyGauge_C_SetSanityValue Parms{};
 
-	Parms.Visibility_0 = Visibility_0;
+	Parms.NowSanityValue = NowSanityValue;
+	Parms.MaxSanityValue = MaxSanityValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetWorkSuitability
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetLowHealthNoticeDisplayFlag
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    isDisplay                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EnemyGauge_C::SetLowHealthNoticeDisplayFlag(bool isDisplay)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetLowHealthNoticeDisplayFlag");
+
+	Params::WBP_EnemyGauge_C_SetLowHealthNoticeDisplayFlag Parms{};
+
+	Parms.isDisplay = isDisplay;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetHungryCondition
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<EPalWorkSuitability>&            Suitability                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// TArray<EPalUIConditionType>&            Conditions                                             (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_EnemyGauge_C::SetWorkSuitability(TArray<EPalWorkSuitability>& Suitability)
+void UWBP_EnemyGauge_C::SetHungryCondition(TArray<EPalUIConditionType>& Conditions)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetWorkSuitability");
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetHungryCondition");
 
-	Params::WBP_EnemyGauge_C_SetWorkSuitability Parms{};
+	Params::WBP_EnemyGauge_C_SetHungryCondition Parms{};
 
-	Parms.Suitability = std::move(Suitability);
+	Parms.Conditions = std::move(Conditions);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	Suitability = std::move(Parms.Suitability);
+	Conditions = std::move(Parms.Conditions);
 }
 
 
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.Trigger Damage Animation
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetHPPercent_Force
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Percent                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_EnemyGauge_C::Trigger_Damage_Animation()
+void UWBP_EnemyGauge_C::SetHPPercent_Force(double Percent)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "Trigger Damage Animation");
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetHPPercent_Force");
+
+	Params::WBP_EnemyGauge_C_SetHPPercent_Force Parms{};
+
+	Parms.Percent = Percent;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetHPPercent
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Percent                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EnemyGauge_C::SetHPPercent(double Percent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetHPPercent");
+
+	Params::WBP_EnemyGauge_C_SetHPPercent Parms{};
+
+	Parms.Percent = Percent;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetGuildName
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    NewGuildName                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const struct FGuid&                     AdminPlayerUId                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EnemyGauge_C::SetGuildName(const class FString& NewGuildName, const struct FGuid& AdminPlayerUId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetGuildName");
+
+	Params::WBP_EnemyGauge_C_SetGuildName Parms{};
+
+	Parms.NewGuildName = std::move(NewGuildName);
+	Parms.AdminPlayerUId = std::move(AdminPlayerUId);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetGender
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalGenderType                          GenderType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EnemyGauge_C::SetGender(EPalGenderType GenderType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetGender");
+
+	Params::WBP_EnemyGauge_C_SetGender Parms{};
+
+	Parms.GenderType = GenderType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetForParts
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsParts_0                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EnemyGauge_C::SetForParts(bool IsParts_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetForParts");
+
+	Params::WBP_EnemyGauge_C_SetForParts Parms{};
+
+	Parms.IsParts_0 = IsParts_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.SetElement
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalElementType                         type1                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalElementType                         type2                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EnemyGauge_C::SetElement(EPalElementType type1, EPalElementType type2)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "SetElement");
+
+	Params::WBP_EnemyGauge_C_SetElement Parms{};
+
+	Parms.type1 = type1;
+	Parms.type2 = type2;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.Set Work Event Info
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalIndividualCharacterHandle*    Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    NotBattle                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EnemyGauge_C::Set_Work_Event_Info(class UPalIndividualCharacterHandle* Handle, bool NotBattle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "Set Work Event Info");
+
+	Params::WBP_EnemyGauge_C_Set_Work_Event_Info Parms{};
+
+	Parms.Handle = Handle;
+	Parms.NotBattle = NotBattle;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.Set Level
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Level                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    GetLevelPenalty                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EnemyGauge_C::Set_Level(int32 Level, bool GetLevelPenalty)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "Set Level");
+
+	Params::WBP_EnemyGauge_C_Set_Level Parms{};
+
+	Parms.Level = Level;
+	Parms.GetLevelPenalty = GetLevelPenalty;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.Set Enable Talent Detail
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalIndividualCharacterParameter* Parameter                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EnemyGauge_C::Set_Enable_Talent_Detail(bool IsEnable, class UPalIndividualCharacterParameter* Parameter)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "Set Enable Talent Detail");
+
+	Params::WBP_EnemyGauge_C_Set_Enable_Talent_Detail Parms{};
+
+	Parms.IsEnable = IsEnable;
+	Parms.Parameter = Parameter;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.Set Battle Mode
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsBattleMode                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EnemyGauge_C::Set_Battle_Mode(bool IsBattleMode)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "Set Battle Mode");
+
+	Params::WBP_EnemyGauge_C_Set_Battle_Mode Parms{};
+
+	Parms.IsBattleMode = IsBattleMode;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.RetainCommonDetail
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_EnemyGauge_C::RetainCommonDetail()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "RetainCommonDetail");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.TryDisplayLowHealthNotice
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  nowPercent                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_EnemyGauge_C::TryDisplayLowHealthNotice(double nowPercent)
+void UWBP_EnemyGauge_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "TryDisplayLowHealthNotice");
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "OnInitialized");
 
-	Params::WBP_EnemyGauge_C_TryDisplayLowHealthNotice Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.nowPercent = nowPercent;
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.Finished_5FBBBD124EDCCC07BA9CB28F5BB90BA8
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_EnemyGauge_C::Finished_5FBBBD124EDCCC07BA9CB28F5BB90BA8()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "Finished_5FBBBD124EDCCC07BA9CB28F5BB90BA8");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.Finished_3A40E20A4EEEDB096D18D9BCA7FB77D2
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_EnemyGauge_C::Finished_3A40E20A4EEEDB096D18D9BCA7FB77D2()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "Finished_3A40E20A4EEEDB096D18D9BCA7FB77D2");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.ExecuteUbergraph_WBP_EnemyGauge
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EnemyGauge_C::ExecuteUbergraph_WBP_EnemyGauge(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "ExecuteUbergraph_WBP_EnemyGauge");
+
+	Params::WBP_EnemyGauge_C_ExecuteUbergraph_WBP_EnemyGauge Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_EnemyGauge.WBP_EnemyGauge_C.UpdateForTick
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.ChangeStrongPalMark
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_EnemyGauge_C::UpdateForTick(double DeltaTime)
+void UWBP_EnemyGauge_C::ChangeStrongPalMark()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_EnemyGauge_C", "UpdateForTick");
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "ChangeStrongPalMark");
 
-	Params::WBP_EnemyGauge_C_UpdateForTick Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.DeltaTime = DeltaTime;
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.ChangeRarePalMark
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_EnemyGauge_C::ChangeRarePalMark()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "ChangeRarePalMark");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.ChangeFriendMode
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_EnemyGauge_C::ChangeFriendMode()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "ChangeFriendMode");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.Change Enemy Mode
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsNeutral                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EnemyGauge_C::Change_Enemy_Mode(bool IsNeutral)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "Change Enemy Mode");
+
+	Params::WBP_EnemyGauge_C_Change_Enemy_Mode Parms{};
+
+	Parms.IsNeutral = IsNeutral;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.AnmEvent_WorkLoop
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_EnemyGauge_C::AnmEvent_WorkLoop()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "AnmEvent_WorkLoop");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.AnmEvent_StopWorkLoop
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_EnemyGauge_C::AnmEvent_StopWorkLoop()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "AnmEvent_StopWorkLoop");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.AnmEvent_StopStarvation
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_EnemyGauge_C::AnmEvent_StopStarvation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "AnmEvent_StopStarvation");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.AnmEvent_StopBattleLoop
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_EnemyGauge_C::AnmEvent_StopBattleLoop()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "AnmEvent_StopBattleLoop");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.AnmEvent_Starvation
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_EnemyGauge_C::AnmEvent_Starvation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "AnmEvent_Starvation");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.AnmEvent_StartBattleLoop
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_EnemyGauge_C::AnmEvent_StartBattleLoop()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "AnmEvent_StartBattleLoop");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.AnmEvent_LowHealth
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    isDisplay                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_EnemyGauge_C::AnmEvent_LowHealth(bool isDisplay)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "AnmEvent_LowHealth");
+
+	Params::WBP_EnemyGauge_C_AnmEvent_LowHealth Parms{};
+
+	Parms.isDisplay = isDisplay;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.AnmEvent_Damage
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_EnemyGauge_C::AnmEvent_Damage()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "AnmEvent_Damage");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.AnmEvent_BgChange_Party
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_EnemyGauge_C::AnmEvent_BgChange_Party()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "AnmEvent_BgChange_Party");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_EnemyGauge.WBP_EnemyGauge_C.AnmEvent_BgChange_Enemy
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_EnemyGauge_C::AnmEvent_BgChange_Enemy()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_EnemyGauge_C", "AnmEvent_BgChange_Enemy");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

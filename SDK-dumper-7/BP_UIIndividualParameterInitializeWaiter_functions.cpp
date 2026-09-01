@@ -17,17 +17,23 @@
 namespace SDK
 {
 
-// Function BP_UIIndividualParameterInitializeWaiter.BP_UIIndividualParameterInitializeWaiter_C.CheckIndividual
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_UIIndividualParameterInitializeWaiter.BP_UIIndividualParameterInitializeWaiter_C.Register
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APalCharacter*                    TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UBP_UIIndividualParameterInitializeWaiter_C::CheckIndividual()
+void UBP_UIIndividualParameterInitializeWaiter_C::Register(class APalCharacter* TargetCharacter)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UIIndividualParameterInitializeWaiter_C", "CheckIndividual");
+		Func = Class->GetFunction("BP_UIIndividualParameterInitializeWaiter_C", "Register");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_UIIndividualParameterInitializeWaiter_C_Register Parms{};
+
+	Parms.TargetCharacter = TargetCharacter;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -51,23 +57,17 @@ void UBP_UIIndividualParameterInitializeWaiter_C::OnCompleteInitiaize(class APal
 }
 
 
-// Function BP_UIIndividualParameterInitializeWaiter.BP_UIIndividualParameterInitializeWaiter_C.Register
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class APalCharacter*                    TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function BP_UIIndividualParameterInitializeWaiter.BP_UIIndividualParameterInitializeWaiter_C.CheckIndividual
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UBP_UIIndividualParameterInitializeWaiter_C::Register(class APalCharacter* TargetCharacter)
+void UBP_UIIndividualParameterInitializeWaiter_C::CheckIndividual()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UIIndividualParameterInitializeWaiter_C", "Register");
+		Func = Class->GetFunction("BP_UIIndividualParameterInitializeWaiter_C", "CheckIndividual");
 
-	Params::BP_UIIndividualParameterInitializeWaiter_C_Register Parms{};
-
-	Parms.TargetCharacter = TargetCharacter;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

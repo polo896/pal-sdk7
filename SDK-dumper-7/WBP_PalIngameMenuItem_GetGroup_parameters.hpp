@@ -18,28 +18,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_PalIngameMenuItem_GetGroup.WBP_PalIngameMenuItem_GetGroup_C.ExecuteUbergraph_WBP_PalIngameMenuItem_GetGroup
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_PalIngameMenuItem_GetGroup_C_ExecuteUbergraph_WBP_PalIngameMenuItem_GetGroup final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalIngameMenuItem_GetGroup_C_ExecuteUbergraph_WBP_PalIngameMenuItem_GetGroup;
-
-// Function WBP_PalIngameMenuItem_GetGroup.WBP_PalIngameMenuItem_GetGroup_C.QueRewardData
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_PalIngameMenuItem_GetGroup_C_QueRewardData final
-{
-public:
-	struct FPalUICommonItemRewardData             RewardData;                                        // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalIngameMenuItem_GetGroup_C_QueRewardData;
-
 // Function WBP_PalIngameMenuItem_GetGroup.WBP_PalIngameMenuItem_GetGroup_C.TryPopRewardData
 // 0x0110 (0x0110 - 0x0000)
 struct WBP_PalIngameMenuItem_GetGroup_C_TryPopRewardData final
@@ -77,6 +55,28 @@ public:
 	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_PalIngameMenuItem_GetGroup_C_TryPopRewardData;
+
+// Function WBP_PalIngameMenuItem_GetGroup.WBP_PalIngameMenuItem_GetGroup_C.QueRewardData
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_PalIngameMenuItem_GetGroup_C_QueRewardData final
+{
+public:
+	struct FPalUICommonItemRewardData             RewardData;                                        // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalIngameMenuItem_GetGroup_C_QueRewardData;
+
+// Function WBP_PalIngameMenuItem_GetGroup.WBP_PalIngameMenuItem_GetGroup_C.ExecuteUbergraph_WBP_PalIngameMenuItem_GetGroup
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_PalIngameMenuItem_GetGroup_C_ExecuteUbergraph_WBP_PalIngameMenuItem_GetGroup final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalIngameMenuItem_GetGroup_C_ExecuteUbergraph_WBP_PalIngameMenuItem_GetGroup;
 
 }
 

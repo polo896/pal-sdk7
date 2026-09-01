@@ -84,7 +84,7 @@ class UTypedElementSelectionSet : public UObject
     bool HasSelectedElements(const TSubclassOf<class UInterface> InBaseInterfaceType);
     class UObject* GetTopSelectedObject(const UClass* InRequiredClass);
     FScriptTypedElementHandle GetSelectionElement(const FScriptTypedElementHandle& InElementHandle, const ETypedElementSelectionMethod InSelectionMethod);
-    TArray<class UObject*> GetSelectedObjects(const UClass* InRequiredClass);
+    TArray<UObject*> GetSelectedObjects(const UClass* InRequiredClass);
     int32 GetNumSelectedElements();
     FTypedElementSelectionSetState GetCurrentSelectionState();
     class UObject* GetBottomSelectedObject(const UClass* InRequiredClass);

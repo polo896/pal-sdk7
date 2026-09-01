@@ -9,8 +9,8 @@ class UBP_VisualEffect_Status_Freeze_C : public UPalVisualEffectBase
     double FadeOutTimer;                                                              // 0x0088 (size: 0x8)
     class UCurveFloat* FadeOutCurve;                                                  // 0x0090 (size: 0x8)
     double FadeOutTime01;                                                             // 0x0098 (size: 0x8)
-    TMap<class EPalSizeType, class UNiagaraSystem*> EffectAsset_Cube;                 // 0x00A0 (size: 0x50)
-    TMap<class EPalSizeType, class UNiagaraSystem*> EffectAsset_End;                  // 0x00F0 (size: 0x50)
+    TMap<EPalSizeType, UNiagaraSystem*> EffectAsset_Cube;                             // 0x00A0 (size: 0x50)
+    TMap<EPalSizeType, UNiagaraSystem*> EffectAsset_End;                              // 0x00F0 (size: 0x50)
     double RaidBossEffectSizeRate;                                                    // 0x0140 (size: 0x8)
 
     void Set Frostbite(double Value);

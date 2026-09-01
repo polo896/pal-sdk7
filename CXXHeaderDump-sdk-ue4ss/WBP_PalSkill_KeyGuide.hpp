@@ -13,13 +13,13 @@ class UWBP_PalSkill_KeyGuide_C : public UPalUserWidget
     class UWBP_PalSkillEntry_C* WBP_PalSkillEntry_3;                                  // 0x0488 (size: 0x8)
     class UWBP_PalSkillEntry_C* WBP_PalSkillEntry_Aim;                                // 0x0490 (size: 0x8)
     class UWBP_PalSkillEntry_C* WBP_PalSkillEntry_RideSkill;                          // 0x0498 (size: 0x8)
-    TArray<class UWBP_PalSkillEntry_C*> SkillEntryArray;                              // 0x04A0 (size: 0x10)
+    TArray<UWBP_PalSkillEntry_C*> SkillEntryArray;                                    // 0x04A0 (size: 0x10)
     class UPalShooterComponent* CurrentShooter;                                       // 0x04B0 (size: 0x8)
     FDataTableRowHandle ShootMsgID;                                                   // 0x04B8 (size: 0x10)
     FDataTableRowHandle FlyMsgID;                                                     // 0x04C8 (size: 0x10)
     TMap<int32, UPalActiveSkill*> CurrentSkillMap;                                    // 0x04D8 (size: 0x50)
     class APalCharacter* As Pal Character;                                            // 0x0528 (size: 0x8)
-    TSoftObjectPtr<APalCharacter> SoftRideCharacter;                                  // 0x0530 (size: 0x30)
+    TSoftObjectPtr<class APalCharacter> SoftRideCharacter;                            // 0x0530 (size: 0x30)
     bool HasAdditionalRidingSkill;                                                    // 0x0560 (size: 0x1)
 
     void OnPlaySkillFail();

@@ -16,14 +16,23 @@
 namespace SDK::Params
 {
 
-// Function WBP_Arena_RuleButton_Element.WBP_Arena_RuleButton_Element_C.BndEvt__WBP_Arena_RuleButton_Element_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Arena_RuleButton_Element_C_BndEvt__WBP_Arena_RuleButton_Element_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_Arena_RuleButton_Element.WBP_Arena_RuleButton_Element_C.SetupElement
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Arena_RuleButton_Element_C_SetupElement final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EPalElementType                               ElementType;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Arena_RuleButton_Element_C_BndEvt__WBP_Arena_RuleButton_Element_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_Arena_RuleButton_Element_C_SetupElement;
+
+// Function WBP_Arena_RuleButton_Element.WBP_Arena_RuleButton_Element_C.SetRestrict
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Arena_RuleButton_Element_C_SetRestrict final
+{
+public:
+	bool                                          IsRestrict;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Arena_RuleButton_Element_C_SetRestrict;
 
 // Function WBP_Arena_RuleButton_Element.WBP_Arena_RuleButton_Element_C.ExecuteUbergraph_WBP_Arena_RuleButton_Element
 // 0x0030 (0x0030 - 0x0000)
@@ -42,23 +51,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Arena_RuleButton_Element_C_ExecuteUbergraph_WBP_Arena_RuleButton_Element;
 
-// Function WBP_Arena_RuleButton_Element.WBP_Arena_RuleButton_Element_C.SetRestrict
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Arena_RuleButton_Element_C_SetRestrict final
+// Function WBP_Arena_RuleButton_Element.WBP_Arena_RuleButton_Element_C.BndEvt__WBP_Arena_RuleButton_Element_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Arena_RuleButton_Element_C_BndEvt__WBP_Arena_RuleButton_Element_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	bool                                          IsRestrict;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Arena_RuleButton_Element_C_SetRestrict;
-
-// Function WBP_Arena_RuleButton_Element.WBP_Arena_RuleButton_Element_C.SetupElement
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Arena_RuleButton_Element_C_SetupElement final
-{
-public:
-	EPalElementType                               ElementType;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Arena_RuleButton_Element_C_SetupElement;
+DUMPER7_ASSERTS_WBP_Arena_RuleButton_Element_C_BndEvt__WBP_Arena_RuleButton_Element_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
 
 }
 

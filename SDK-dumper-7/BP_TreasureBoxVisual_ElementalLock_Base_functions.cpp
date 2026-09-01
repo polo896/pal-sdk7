@@ -17,55 +17,35 @@
 namespace SDK
 {
 
-// Function BP_TreasureBoxVisual_ElementalLock_Base.BP_TreasureBoxVisual_ElementalLock_Base_C.ChangeToElementalUnlock
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_TreasureBoxVisual_ElementalLock_Base.BP_TreasureBoxVisual_ElementalLock_Base_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    isSkipAnim                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_TreasureBoxVisual_ElementalLock_Base_C::ChangeToElementalUnlock(bool isSkipAnim)
+void ABP_TreasureBoxVisual_ElementalLock_Base_C::ReceiveTick(float DeltaSeconds)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TreasureBoxVisual_ElementalLock_Base_C", "ChangeToElementalUnlock");
+		Func = Class->GetFunction("BP_TreasureBoxVisual_ElementalLock_Base_C", "ReceiveTick");
 
-	Params::BP_TreasureBoxVisual_ElementalLock_Base_C_ChangeToElementalUnlock Parms{};
+	Params::BP_TreasureBoxVisual_ElementalLock_Base_C_ReceiveTick Parms{};
 
-	Parms.isSkipAnim = isSkipAnim;
+	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_TreasureBoxVisual_ElementalLock_Base.BP_TreasureBoxVisual_ElementalLock_Base_C.ElementalUnlockAnimation
-// (Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  ElapsedTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_TreasureBoxVisual_ElementalLock_Base.BP_TreasureBoxVisual_ElementalLock_Base_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_TreasureBoxVisual_ElementalLock_Base_C::ElementalUnlockAnimation(double ElapsedTime)
+void ABP_TreasureBoxVisual_ElementalLock_Base_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TreasureBoxVisual_ElementalLock_Base_C", "ElementalUnlockAnimation");
-
-	Params::BP_TreasureBoxVisual_ElementalLock_Base_C_ElementalUnlockAnimation Parms{};
-
-	Parms.ElapsedTime = ElapsedTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_TreasureBoxVisual_ElementalLock_Base.BP_TreasureBoxVisual_ElementalLock_Base_C.EnableTicks
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_TreasureBoxVisual_ElementalLock_Base_C::EnableTicks()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TreasureBoxVisual_ElementalLock_Base_C", "EnableTicks");
+		Func = Class->GetFunction("BP_TreasureBoxVisual_ElementalLock_Base_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -91,35 +71,55 @@ void ABP_TreasureBoxVisual_ElementalLock_Base_C::ExecuteUbergraph_BP_TreasureBox
 }
 
 
-// Function BP_TreasureBoxVisual_ElementalLock_Base.BP_TreasureBoxVisual_ElementalLock_Base_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_TreasureBoxVisual_ElementalLock_Base.BP_TreasureBoxVisual_ElementalLock_Base_C.EnableTicks
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_TreasureBoxVisual_ElementalLock_Base_C::ReceiveBeginPlay()
+void ABP_TreasureBoxVisual_ElementalLock_Base_C::EnableTicks()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TreasureBoxVisual_ElementalLock_Base_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_TreasureBoxVisual_ElementalLock_Base_C", "EnableTicks");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_TreasureBoxVisual_ElementalLock_Base.BP_TreasureBoxVisual_ElementalLock_Base_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
+// Function BP_TreasureBoxVisual_ElementalLock_Base.BP_TreasureBoxVisual_ElementalLock_Base_C.ElementalUnlockAnimation
+// (Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  ElapsedTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_TreasureBoxVisual_ElementalLock_Base_C::ReceiveTick(float DeltaSeconds)
+void ABP_TreasureBoxVisual_ElementalLock_Base_C::ElementalUnlockAnimation(double ElapsedTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TreasureBoxVisual_ElementalLock_Base_C", "ReceiveTick");
+		Func = Class->GetFunction("BP_TreasureBoxVisual_ElementalLock_Base_C", "ElementalUnlockAnimation");
 
-	Params::BP_TreasureBoxVisual_ElementalLock_Base_C_ReceiveTick Parms{};
+	Params::BP_TreasureBoxVisual_ElementalLock_Base_C_ElementalUnlockAnimation Parms{};
 
-	Parms.DeltaSeconds = DeltaSeconds;
+	Parms.ElapsedTime = ElapsedTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_TreasureBoxVisual_ElementalLock_Base.BP_TreasureBoxVisual_ElementalLock_Base_C.ChangeToElementalUnlock
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    isSkipAnim                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_TreasureBoxVisual_ElementalLock_Base_C::ChangeToElementalUnlock(bool isSkipAnim)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_TreasureBoxVisual_ElementalLock_Base_C", "ChangeToElementalUnlock");
+
+	Params::BP_TreasureBoxVisual_ElementalLock_Base_C_ChangeToElementalUnlock Parms{};
+
+	Parms.isSkipAnim = isSkipAnim;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -26,10 +26,10 @@ public:
 	bool                                          IsOpened;                                          // 0x04D0(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_MapObject_TreasureBox_OilrigGoal(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void SetupVisual(class UPalMapObjectConcreteModelBase* ConcreteModel);
 	void TriggerOpen();
+	void SetupVisual(class UPalMapObjectConcreteModelBase* ConcreteModel);
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_MapObject_TreasureBox_OilrigGoal(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

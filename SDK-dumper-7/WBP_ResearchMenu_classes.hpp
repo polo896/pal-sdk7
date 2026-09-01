@@ -62,30 +62,30 @@ public:
 	struct FTimerHandle                           ProgressUpdateTimer;                               // 0x05A8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_ResearchMenu_WBP_CommonButton_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature();
-	void BndEvt__WBP_ResearchMenu_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void BndEvt__WBP_ResearchMenu_WBP_Research_AllBuff_K2Node_ComponentBoundEvent_6_OnAllBuffPanelClose__DelegateSignature();
-	void BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_1_OnResearchSelectDelegate__DelegateSignature(class FName ResearchId);
-	void BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_2_OnResearchHoveredDelegate__DelegateSignature(class FName ResearchId);
-	void BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_3_OnResearchUnhoveredDelegate__DelegateSignature();
-	void BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_5_OnTreeNodeCreate__DelegateSignature(class UWBP_Research_TreeIcon_C* NewNode);
-	void Check_Research_Require_Satisfy(TArray<struct FPalStaticItemIdAndNum>& Materials, bool* IsSatisfy);
-	void Destruct();
-	void ExecuteUbergraph_WBP_ResearchMenu(int32 EntryPoint);
-	void GetResearchCompleteCount(TArray<struct FPalUIGuildLabResearchInfo>& ResearchInfo, int32* Count);
-	void OnCancelAction();
-	void OnConfirmChangeResearch(bool bResult);
-	void OnCurrentResearchChanged();
-	void OnResearchEntryClicked(EPalWorkSuitability WorkType);
-	void OnResearchEntryHovered(EPalWorkSuitability WorkType);
-	void OnResearchEntryUnhovered(EPalWorkSuitability WorkType);
-	void OnSetup();
-	void Setup();
-	void Setup_Research_Overview(EPalWorkSuitability ResearchType);
-	void SetupResearchDetail(class FName ResearchId);
-	void ShowAllBuff();
-	void Switch_Right_Panel(bool ToDetail);
 	void UpdateCurrentResearchProgress();
+	void Switch_Right_Panel(bool ToDetail);
+	void ShowAllBuff();
+	void SetupResearchDetail(class FName ResearchId);
+	void Setup_Research_Overview(EPalWorkSuitability ResearchType);
+	void Setup();
+	void OnSetup();
+	void OnResearchEntryUnhovered(EPalWorkSuitability WorkType);
+	void OnResearchEntryHovered(EPalWorkSuitability WorkType);
+	void OnResearchEntryClicked(EPalWorkSuitability WorkType);
+	void OnCurrentResearchChanged();
+	void OnConfirmChangeResearch(bool bResult);
+	void OnCancelAction();
+	void GetResearchCompleteCount(TArray<struct FPalUIGuildLabResearchInfo>& ResearchInfo, int32* Count);
+	void ExecuteUbergraph_WBP_ResearchMenu(int32 EntryPoint);
+	void Destruct();
+	void Check_Research_Require_Satisfy(TArray<struct FPalStaticItemIdAndNum>& Materials, bool* IsSatisfy);
+	void BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_5_OnTreeNodeCreate__DelegateSignature(class UWBP_Research_TreeIcon_C* NewNode);
+	void BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_3_OnResearchUnhoveredDelegate__DelegateSignature();
+	void BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_2_OnResearchHoveredDelegate__DelegateSignature(class FName ResearchId);
+	void BndEvt__WBP_ResearchMenu_WBP_Research_Tree_K2Node_ComponentBoundEvent_1_OnResearchSelectDelegate__DelegateSignature(class FName ResearchId);
+	void BndEvt__WBP_ResearchMenu_WBP_Research_AllBuff_K2Node_ComponentBoundEvent_6_OnAllBuffPanelClose__DelegateSignature();
+	void BndEvt__WBP_ResearchMenu_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
+	void BndEvt__WBP_ResearchMenu_WBP_CommonButton_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

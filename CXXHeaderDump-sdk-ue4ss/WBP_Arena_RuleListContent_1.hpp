@@ -16,7 +16,7 @@ class UWBP_Arena_RuleListContent_1_C : public UUserWidget
     class UWBP_Arena_RuleButton_Element_C* WBP_Arena_RuleButton_Element_7;            // 0x02C8 (size: 0x8)
     class UWBP_Arena_RuleButton_Element_C* WBP_Arena_RuleButton_Element_8;            // 0x02D0 (size: 0x8)
     class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x02D8 (size: 0x8)
-    TArray<class UWBP_Arena_RuleButton_Element_C*> ElementButtons;                    // 0x02E0 (size: 0x10)
+    TArray<UWBP_Arena_RuleButton_Element_C*> ElementButtons;                          // 0x02E0 (size: 0x10)
     TArray<EPalElementType> CurrentRestriction;                                       // 0x02F0 (size: 0x10)
     FWBP_Arena_RuleListContent_1_COnElementRestrictionUpdate OnElementRestrictionUpdate; // 0x0300 (size: 0x10)
     void OnElementRestrictionUpdate(TArray<EPalElementType>& RestrictElements);

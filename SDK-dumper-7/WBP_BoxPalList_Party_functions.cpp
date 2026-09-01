@@ -17,61 +17,294 @@
 namespace SDK
 {
 
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_0_OnLeftClickedSlot__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.TryMoveToBox
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// EPalItemSlotPressType                   PressType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalIndividualCharacterSlot*      Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_BoxPalList_Party_C::BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_0_OnLeftClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget, EPalItemSlotPressType PressType)
+void UWBP_BoxPalList_Party_C::TryMoveToBox(class UPalIndividualCharacterSlot* Slot_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_0_OnLeftClickedSlot__DelegateSignature");
+		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "TryMoveToBox");
 
-	Params::WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_0_OnLeftClickedSlot__DelegateSignature Parms{};
+	Params::WBP_BoxPalList_Party_C_TryMoveToBox Parms{};
 
-	Parms.Widget = Widget;
+	Parms.Slot_0 = Slot_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.ToggleFavorite
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalIndividualCharacterSlot*      TargetSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BoxPalList_Party_C::ToggleFavorite(class UPalIndividualCharacterSlot* TargetSlot)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "ToggleFavorite");
+
+	Params::WBP_BoxPalList_Party_C_ToggleFavorite Parms{};
+
+	Parms.TargetSlot = TargetSlot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.Setup Party Slot
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_BoxPalList_Party_C::Setup_Party_Slot()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "Setup Party Slot");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.SelectSlot
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalIndividualCharacterSlot*      Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// EPalItemSlotPressType                   PressType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BoxPalList_Party_C::SelectSlot(class UPalIndividualCharacterSlot* Slot_0, EPalItemSlotPressType PressType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "SelectSlot");
+
+	Params::WBP_BoxPalList_Party_C_SelectSlot Parms{};
+
+	Parms.Slot_0 = Slot_0;
 	Parms.PressType = PressType;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_1_OnHoveredSlot__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_BoxPalList_Party_C::BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_1_OnHoveredSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget)
+void UWBP_BoxPalList_Party_C::PreConstruct(bool IsDesignTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_1_OnHoveredSlot__DelegateSignature");
+		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "PreConstruct");
 
-	Params::WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_1_OnHoveredSlot__DelegateSignature Parms{};
+	Params::WBP_BoxPalList_Party_C_PreConstruct Parms{};
 
-	Parms.Widget = Widget;
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_2_OnUnhoveredSlot__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.OnUnhoverSlot_Internal
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_BoxPalList_Party_C::BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_2_OnUnhoveredSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget)
+void UWBP_BoxPalList_Party_C::OnUnhoverSlot_Internal(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_2_OnUnhoveredSlot__DelegateSignature");
+		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "OnUnhoverSlot_Internal");
 
-	Params::WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_2_OnUnhoveredSlot__DelegateSignature Parms{};
+	Params::WBP_BoxPalList_Party_C_OnUnhoverSlot_Internal Parms{};
+
+	Parms.Slot_0 = Slot_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_BoxPalList_Party_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.OnHoverSlot_Internal
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BoxPalList_Party_C::OnHoverSlot_Internal(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "OnHoverSlot_Internal");
+
+	Params::WBP_BoxPalList_Party_C_OnHoverSlot_Internal Parms{};
+
+	Parms.Slot_0 = Slot_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.OnClickSlot_Internal
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// EPalItemSlotPressType                   PressType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BoxPalList_Party_C::OnClickSlot_Internal(class UWBP_PalCharacterSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "OnClickSlot_Internal");
+
+	Params::WBP_BoxPalList_Party_C_OnClickSlot_Internal Parms{};
+
+	Parms.Slot_0 = Slot_0;
+	Parms.PressType = PressType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.GetPartySlots
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// TArray<class UWBP_PalCommonCharacterSlotButton_C*>*PartySlots_0                                           (Parm, OutParm, ContainsInstancedReference)
+
+void UWBP_BoxPalList_Party_C::GetPartySlots(TArray<class UWBP_PalCommonCharacterSlotButton_C*>* PartySlots_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "GetPartySlots");
+
+	Params::WBP_BoxPalList_Party_C_GetPartySlots Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (PartySlots_0 != nullptr)
+		*PartySlots_0 = std::move(Parms.PartySlots_0);
+}
+
+
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.GetLastFocusBoxSlot
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWidget**                         TargetWidget                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BoxPalList_Party_C::GetLastFocusBoxSlot(class UWidget** TargetWidget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "GetLastFocusBoxSlot");
+
+	Params::WBP_BoxPalList_Party_C_GetLastFocusBoxSlot Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (TargetWidget != nullptr)
+		*TargetWidget = Parms.TargetWidget;
+}
+
+
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.GetFirstFocusPartyButton
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWidget**                         Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BoxPalList_Party_C::GetFirstFocusPartyButton(class UWidget** Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "GetFirstFocusPartyButton");
+
+	Params::WBP_BoxPalList_Party_C_GetFirstFocusPartyButton Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Widget != nullptr)
+		*Widget = Parms.Widget;
+}
+
+
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.ExecuteUbergraph_WBP_BoxPalList_Party
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BoxPalList_Party_C::ExecuteUbergraph_WBP_BoxPalList_Party(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "ExecuteUbergraph_WBP_BoxPalList_Party");
+
+	Params::WBP_BoxPalList_Party_C_ExecuteUbergraph_WBP_BoxPalList_Party Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_5_OnUpdatedPage__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   NowPage                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BoxPalList_Party_C::BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_5_OnUpdatedPage__DelegateSignature(int32 NowPage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_5_OnUpdatedPage__DelegateSignature");
+
+	Params::WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_5_OnUpdatedPage__DelegateSignature Parms{};
+
+	Parms.NowPage = NowPage;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_4_OnRightClickedSlot__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UWBP_PalCharacterSlotButtonBase_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BoxPalList_Party_C::BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_4_OnRightClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_4_OnRightClickedSlot__DelegateSignature");
+
+	Params::WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_4_OnRightClickedSlot__DelegateSignature Parms{};
 
 	Parms.Widget = Widget;
 
@@ -99,19 +332,19 @@ void UWBP_BoxPalList_Party_C::BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node
 }
 
 
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_4_OnRightClickedSlot__DelegateSignature
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_2_OnUnhoveredSlot__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class UWBP_PalCharacterSlotButtonBase_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_BoxPalList_Party_C::BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_4_OnRightClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget)
+void UWBP_BoxPalList_Party_C::BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_2_OnUnhoveredSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_4_OnRightClickedSlot__DelegateSignature");
+		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_2_OnUnhoveredSlot__DelegateSignature");
 
-	Params::WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_4_OnRightClickedSlot__DelegateSignature Parms{};
+	Params::WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_2_OnUnhoveredSlot__DelegateSignature Parms{};
 
 	Parms.Widget = Widget;
 
@@ -119,276 +352,43 @@ void UWBP_BoxPalList_Party_C::BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node
 }
 
 
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_5_OnUpdatedPage__DelegateSignature
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_1_OnHoveredSlot__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// int32                                   NowPage                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWBP_PalCharacterSlotButtonBase_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_BoxPalList_Party_C::BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_5_OnUpdatedPage__DelegateSignature(int32 NowPage)
+void UWBP_BoxPalList_Party_C::BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_1_OnHoveredSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_5_OnUpdatedPage__DelegateSignature");
+		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_1_OnHoveredSlot__DelegateSignature");
 
-	Params::WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_5_OnUpdatedPage__DelegateSignature Parms{};
+	Params::WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_1_OnHoveredSlot__DelegateSignature Parms{};
 
-	Parms.NowPage = NowPage;
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.ExecuteUbergraph_WBP_BoxPalList_Party
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_0_OnLeftClickedSlot__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BoxPalList_Party_C::ExecuteUbergraph_WBP_BoxPalList_Party(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "ExecuteUbergraph_WBP_BoxPalList_Party");
-
-	Params::WBP_BoxPalList_Party_C_ExecuteUbergraph_WBP_BoxPalList_Party Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.GetFirstFocusPartyButton
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWidget**                         Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BoxPalList_Party_C::GetFirstFocusPartyButton(class UWidget** Widget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "GetFirstFocusPartyButton");
-
-	Params::WBP_BoxPalList_Party_C_GetFirstFocusPartyButton Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Widget != nullptr)
-		*Widget = Parms.Widget;
-}
-
-
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.GetLastFocusBoxSlot
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWidget**                         TargetWidget                                           (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BoxPalList_Party_C::GetLastFocusBoxSlot(class UWidget** TargetWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "GetLastFocusBoxSlot");
-
-	Params::WBP_BoxPalList_Party_C_GetLastFocusBoxSlot Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (TargetWidget != nullptr)
-		*TargetWidget = Parms.TargetWidget;
-}
-
-
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.GetPartySlots
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// TArray<class UWBP_PalCommonCharacterSlotButton_C*>*PartySlots_0                                           (Parm, OutParm, ContainsInstancedReference)
-
-void UWBP_BoxPalList_Party_C::GetPartySlots(TArray<class UWBP_PalCommonCharacterSlotButton_C*>* PartySlots_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "GetPartySlots");
-
-	Params::WBP_BoxPalList_Party_C_GetPartySlots Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (PartySlots_0 != nullptr)
-		*PartySlots_0 = std::move(Parms.PartySlots_0);
-}
-
-
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.OnClickSlot_Internal
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UWBP_PalCharacterSlotButtonBase_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // EPalItemSlotPressType                   PressType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_BoxPalList_Party_C::OnClickSlot_Internal(class UWBP_PalCharacterSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType)
+void UWBP_BoxPalList_Party_C::BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_0_OnLeftClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget, EPalItemSlotPressType PressType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "OnClickSlot_Internal");
+		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_0_OnLeftClickedSlot__DelegateSignature");
 
-	Params::WBP_BoxPalList_Party_C_OnClickSlot_Internal Parms{};
+	Params::WBP_BoxPalList_Party_C_BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_0_OnLeftClickedSlot__DelegateSignature Parms{};
 
-	Parms.Slot_0 = Slot_0;
+	Parms.Widget = Widget;
 	Parms.PressType = PressType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.OnHoverSlot_Internal
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BoxPalList_Party_C::OnHoverSlot_Internal(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "OnHoverSlot_Internal");
-
-	Params::WBP_BoxPalList_Party_C_OnHoverSlot_Internal Parms{};
-
-	Parms.Slot_0 = Slot_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_BoxPalList_Party_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.OnUnhoverSlot_Internal
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_PalCharacterSlotButtonBase_C*Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BoxPalList_Party_C::OnUnhoverSlot_Internal(class UWBP_PalCharacterSlotButtonBase_C* Slot_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "OnUnhoverSlot_Internal");
-
-	Params::WBP_BoxPalList_Party_C_OnUnhoverSlot_Internal Parms{};
-
-	Parms.Slot_0 = Slot_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BoxPalList_Party_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "PreConstruct");
-
-	Params::WBP_BoxPalList_Party_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.SelectSlot
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalIndividualCharacterSlot*      Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// EPalItemSlotPressType                   PressType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BoxPalList_Party_C::SelectSlot(class UPalIndividualCharacterSlot* Slot_0, EPalItemSlotPressType PressType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "SelectSlot");
-
-	Params::WBP_BoxPalList_Party_C_SelectSlot Parms{};
-
-	Parms.Slot_0 = Slot_0;
-	Parms.PressType = PressType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.Setup Party Slot
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_BoxPalList_Party_C::Setup_Party_Slot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "Setup Party Slot");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.ToggleFavorite
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalIndividualCharacterSlot*      TargetSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BoxPalList_Party_C::ToggleFavorite(class UPalIndividualCharacterSlot* TargetSlot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "ToggleFavorite");
-
-	Params::WBP_BoxPalList_Party_C_ToggleFavorite Parms{};
-
-	Parms.TargetSlot = TargetSlot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BoxPalList_Party.WBP_BoxPalList_Party_C.TryMoveToBox
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalIndividualCharacterSlot*      Slot_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BoxPalList_Party_C::TryMoveToBox(class UPalIndividualCharacterSlot* Slot_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BoxPalList_Party_C", "TryMoveToBox");
-
-	Params::WBP_BoxPalList_Party_C_TryMoveToBox Parms{};
-
-	Parms.Slot_0 = Slot_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

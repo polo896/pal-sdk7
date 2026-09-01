@@ -20,7 +20,7 @@ class UWBP_IngameMenu_Mission_C : public UPalUIBaseCampTaskBase
     class UWBP_PalInGameMenuItemSlotButton_C* WBP_PalInGameMenuItemSlotButton_1;      // 0x0510 (size: 0x8)
     class UWBP_PalInGameMenuItemSlotButton_C* WBP_PalInGameMenuItemSlotButton_2;      // 0x0518 (size: 0x8)
     class UWBP_PalInGameMenuItemSlotButton_C* WBP_PalInGameMenuItemSlotButton_3;      // 0x0520 (size: 0x8)
-    TArray<class UWBP_IngameMenu_MissionList_C*> MissionList;                         // 0x0528 (size: 0x10)
+    TArray<UWBP_IngameMenu_MissionList_C*> MissionList;                               // 0x0528 (size: 0x10)
     FPalBaseCampTaskCheckedData ChedckedData;                                         // 0x0538 (size: 0x60)
     FPalBaseCampTaskDataSet TaskData;                                                 // 0x0598 (size: 0x28)
     FDataTableRowHandle BuildOBjectNumTaskInfoMsgID;                                  // 0x05C0 (size: 0x10)

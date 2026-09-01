@@ -1,0 +1,57 @@
+---@meta
+
+---@class UWBP_BaseCampWorkFixedAssignManage_C : UPalUserWidgetOverlayUI
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field Default_In UWidgetAnimation
+---@field WBP_AssignBoard UWBP_AssignBoard_C
+---@field LastSelectedWorkListContentWidget TSoftObjectPtr<UWBP_AssignBoard_WorkListBase_C>
+---@field LastHoveredWorkListContentWidget TSoftObjectPtr<UWBP_AssignBoard_WorkListBase_C>
+---@field NowSortType EPalUIFixedAssignManageListSortType
+---@field SortTypeOrder TArray<EPalUIFixedAssignManageListSortType>
+---@field SortTypeNameMap TMap<EPalUIFixedAssignManageListSortType, FDataTableRowHandle>
+---@field SortInputAction FPalDataTableRowName_UIInputAction
+local UWBP_BaseCampWorkFixedAssignManage_C = {}
+
+---@param ForceReferesh boolean
+function UWBP_BaseCampWorkFixedAssignManage_C:UpdateWidgetList(ForceReferesh) end
+function UWBP_BaseCampWorkFixedAssignManage_C:OnTriggerSort() end
+---@param TargetWidget UWidget
+function UWBP_BaseCampWorkFixedAssignManage_C:GetRestoreFocusTarget_WorkList(TargetWidget) end
+---@param Model UPalUIBaseCampWorkFixedAssignManageModel
+function UWBP_BaseCampWorkFixedAssignManage_C:OnUpdateAssignInfo(Model) end
+---@param AssignInfo FPalUIBaseCampWorkFixedAssignInfo
+function UWBP_BaseCampWorkFixedAssignManage_C:RemoveAssign(AssignInfo) end
+---@param AssignInfo FPalUIBaseCampWorkFixedAssignInfo
+---@param Slot UPalIndividualCharacterSlot
+function UWBP_BaseCampWorkFixedAssignManage_C:ProccessAssign(AssignInfo, Slot) end
+---@param AssignInfo FPalUIBaseCampWorkFixedAssignInfo
+---@param TargetSlot UPalIndividualCharacterSlot
+---@param IsAlreadyFixedAssign boolean
+function UWBP_BaseCampWorkFixedAssignManage_C:AlreadyFixedAssign(AssignInfo, TargetSlot, IsAlreadyFixedAssign) end
+---@param AssignInfo FPalUIBaseCampWorkFixedAssignInfo
+---@param TargetSlot UPalIndividualCharacterSlot
+---@param CanAssign boolean
+function UWBP_BaseCampWorkFixedAssignManage_C:CanAssign(AssignInfo, TargetSlot, CanAssign) end
+function UWBP_BaseCampWorkFixedAssignManage_C:OnCancelAction() end
+---@param Model UPalUIBaseCampWorkFixedAssignManageModel
+function UWBP_BaseCampWorkFixedAssignManage_C:GetModel(Model) end
+---@return UWidget
+function UWBP_BaseCampWorkFixedAssignManage_C:BP_GetDesiredFocusTarget() end
+---@param SlotButtonBase UWBP_PalCharacterSlotButtonBase_C
+function UWBP_BaseCampWorkFixedAssignManage_C:BndEvt__WBP_BaseCampWorkFixedAssignManage_WBP_AssignBoard_K2Node_ComponentBoundEvent_0_OnClickedWorkerSlot__DelegateSignature(SlotButtonBase) end
+function UWBP_BaseCampWorkFixedAssignManage_C:OnSetup() end
+---@param Widget UWBP_AssignBoard_WorkListBase_C
+function UWBP_BaseCampWorkFixedAssignManage_C:BndEvt__WBP_BaseCampWorkFixedAssignManage_WBP_AssignBoard_K2Node_ComponentBoundEvent_1_OnClickedWork__DelegateSignature(Widget) end
+function UWBP_BaseCampWorkFixedAssignManage_C:Destruct() end
+function UWBP_BaseCampWorkFixedAssignManage_C:OnClose() end
+function UWBP_BaseCampWorkFixedAssignManage_C:BndEvt__WBP_BaseCampWorkFixedAssignManage_WBP_AssignBoard_K2Node_ComponentBoundEvent_2_OnTriggerRemoveAssignShortcut__DelegateSignature() end
+---@param Widget UWBP_AssignBoard_WorkListBase_C
+function UWBP_BaseCampWorkFixedAssignManage_C:BndEvt__WBP_BaseCampWorkFixedAssignManage_WBP_AssignBoard_K2Node_ComponentBoundEvent_3_OnHoveredWork__DelegateSignature(Widget) end
+---@param Widget UWBP_AssignBoard_WorkListBase_C
+function UWBP_BaseCampWorkFixedAssignManage_C:BndEvt__WBP_BaseCampWorkFixedAssignManage_WBP_AssignBoard_K2Node_ComponentBoundEvent_4_OnUnhoveredWork__DelegateSignature(Widget) end
+function UWBP_BaseCampWorkFixedAssignManage_C:BndEvt__WBP_BaseCampWorkFixedAssignManage_WBP_AssignBoard_K2Node_ComponentBoundEvent_6_OnClickedSortButton__DelegateSignature() end
+function UWBP_BaseCampWorkFixedAssignManage_C:BndEvt__WBP_BaseCampWorkFixedAssignManage_WBP_AssignBoard_K2Node_ComponentBoundEvent_5_OnClickedCloseButton__DelegateSignature() end
+---@param EntryPoint int32
+function UWBP_BaseCampWorkFixedAssignManage_C:ExecuteUbergraph_WBP_BaseCampWorkFixedAssignManage(EntryPoint) end
+
+

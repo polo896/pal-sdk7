@@ -17,62 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_PalIngameMenuItem_ChestQuickStackResult.WBP_PalIngameMenuItem_ChestQuickStackResult_C.AnmEvent_In
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalIngameMenuItem_ChestQuickStackResult_C::AnmEvent_In()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalIngameMenuItem_ChestQuickStackResult_C", "AnmEvent_In");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalIngameMenuItem_ChestQuickStackResult.WBP_PalIngameMenuItem_ChestQuickStackResult_C.AnmEvent_Out
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalIngameMenuItem_ChestQuickStackResult_C::AnmEvent_Out()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalIngameMenuItem_ChestQuickStackResult_C", "AnmEvent_Out");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalIngameMenuItem_ChestQuickStackResult.WBP_PalIngameMenuItem_ChestQuickStackResult_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PalIngameMenuItem_ChestQuickStackResult_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalIngameMenuItem_ChestQuickStackResult_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalIngameMenuItem_ChestQuickStackResult.WBP_PalIngameMenuItem_ChestQuickStackResult_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PalIngameMenuItem_ChestQuickStackResult_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalIngameMenuItem_ChestQuickStackResult_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_PalIngameMenuItem_ChestQuickStackResult.WBP_PalIngameMenuItem_ChestQuickStackResult_C.ExecuteUbergraph_WBP_PalIngameMenuItem_ChestQuickStackResult
 // (Final, UbergraphFunction)
 // Parameters:
@@ -93,29 +37,71 @@ void UWBP_PalIngameMenuItem_ChestQuickStackResult_C::ExecuteUbergraph_WBP_PalIng
 }
 
 
-// Function WBP_PalIngameMenuItem_ChestQuickStackResult.WBP_PalIngameMenuItem_ChestQuickStackResult_C.Finished_BF11856C4A86E6F362DC7F8358D52602
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_PalIngameMenuItem_ChestQuickStackResult.WBP_PalIngameMenuItem_ChestQuickStackResult_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_PalIngameMenuItem_ChestQuickStackResult_C::Finished_BF11856C4A86E6F362DC7F8358D52602()
+void UWBP_PalIngameMenuItem_ChestQuickStackResult_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalIngameMenuItem_ChestQuickStackResult_C", "Finished_BF11856C4A86E6F362DC7F8358D52602");
+		Func = Class->GetFunction("WBP_PalIngameMenuItem_ChestQuickStackResult_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalIngameMenuItem_ChestQuickStackResult.WBP_PalIngameMenuItem_ChestQuickStackResult_C.OnTimerEvent_Out
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalIngameMenuItem_ChestQuickStackResult.WBP_PalIngameMenuItem_ChestQuickStackResult_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_PalIngameMenuItem_ChestQuickStackResult_C::OnTimerEvent_Out()
+void UWBP_PalIngameMenuItem_ChestQuickStackResult_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalIngameMenuItem_ChestQuickStackResult_C", "OnTimerEvent_Out");
+		Func = Class->GetFunction("WBP_PalIngameMenuItem_ChestQuickStackResult_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalIngameMenuItem_ChestQuickStackResult.WBP_PalIngameMenuItem_ChestQuickStackResult_C.AnmEvent_Out
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalIngameMenuItem_ChestQuickStackResult_C::AnmEvent_Out()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalIngameMenuItem_ChestQuickStackResult_C", "AnmEvent_Out");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalIngameMenuItem_ChestQuickStackResult.WBP_PalIngameMenuItem_ChestQuickStackResult_C.AnmEvent_In
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalIngameMenuItem_ChestQuickStackResult_C::AnmEvent_In()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalIngameMenuItem_ChestQuickStackResult_C", "AnmEvent_In");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalIngameMenuItem_ChestQuickStackResult.WBP_PalIngameMenuItem_ChestQuickStackResult_C.RefreshQue
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalIngameMenuItem_ChestQuickStackResult_C::RefreshQue()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalIngameMenuItem_ChestQuickStackResult_C", "RefreshQue");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -143,15 +129,29 @@ void UWBP_PalIngameMenuItem_ChestQuickStackResult_C::QueStackItemResult(TArray<s
 }
 
 
-// Function WBP_PalIngameMenuItem_ChestQuickStackResult.WBP_PalIngameMenuItem_ChestQuickStackResult_C.RefreshQue
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalIngameMenuItem_ChestQuickStackResult.WBP_PalIngameMenuItem_ChestQuickStackResult_C.OnTimerEvent_Out
+// (Private, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalIngameMenuItem_ChestQuickStackResult_C::RefreshQue()
+void UWBP_PalIngameMenuItem_ChestQuickStackResult_C::OnTimerEvent_Out()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalIngameMenuItem_ChestQuickStackResult_C", "RefreshQue");
+		Func = Class->GetFunction("WBP_PalIngameMenuItem_ChestQuickStackResult_C", "OnTimerEvent_Out");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalIngameMenuItem_ChestQuickStackResult.WBP_PalIngameMenuItem_ChestQuickStackResult_C.Finished_BF11856C4A86E6F362DC7F8358D52602
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalIngameMenuItem_ChestQuickStackResult_C::Finished_BF11856C4A86E6F362DC7F8358D52602()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalIngameMenuItem_ChestQuickStackResult_C", "Finished_BF11856C4A86E6F362DC7F8358D52602");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

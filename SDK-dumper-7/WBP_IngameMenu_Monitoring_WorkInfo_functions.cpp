@@ -17,21 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_IngameMenu_Monitoring_WorkInfo.WBP_IngameMenu_Monitoring_WorkInfo_C.ChangeLevelText
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_Monitoring_WorkInfo.WBP_IngameMenu_Monitoring_WorkInfo_C.ExecuteUbergraph_WBP_IngameMenu_Monitoring_WorkInfo
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// int32                                   NewLevel                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_Monitoring_WorkInfo_C::ChangeLevelText(int32 NewLevel)
+void UWBP_IngameMenu_Monitoring_WorkInfo_C::ExecuteUbergraph_WBP_IngameMenu_Monitoring_WorkInfo(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Monitoring_WorkInfo_C", "ChangeLevelText");
+		Func = Class->GetFunction("WBP_IngameMenu_Monitoring_WorkInfo_C", "ExecuteUbergraph_WBP_IngameMenu_Monitoring_WorkInfo");
 
-	Params::WBP_IngameMenu_Monitoring_WorkInfo_C_ChangeLevelText Parms{};
+	Params::WBP_IngameMenu_Monitoring_WorkInfo_C_ExecuteUbergraph_WBP_IngameMenu_Monitoring_WorkInfo Parms{};
 
-	Parms.NewLevel = NewLevel;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -51,21 +51,21 @@ void UWBP_IngameMenu_Monitoring_WorkInfo_C::Construct()
 }
 
 
-// Function WBP_IngameMenu_Monitoring_WorkInfo.WBP_IngameMenu_Monitoring_WorkInfo_C.ExecuteUbergraph_WBP_IngameMenu_Monitoring_WorkInfo
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_IngameMenu_Monitoring_WorkInfo.WBP_IngameMenu_Monitoring_WorkInfo_C.ChangeLevelText
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewLevel                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_Monitoring_WorkInfo_C::ExecuteUbergraph_WBP_IngameMenu_Monitoring_WorkInfo(int32 EntryPoint)
+void UWBP_IngameMenu_Monitoring_WorkInfo_C::ChangeLevelText(int32 NewLevel)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Monitoring_WorkInfo_C", "ExecuteUbergraph_WBP_IngameMenu_Monitoring_WorkInfo");
+		Func = Class->GetFunction("WBP_IngameMenu_Monitoring_WorkInfo_C", "ChangeLevelText");
 
-	Params::WBP_IngameMenu_Monitoring_WorkInfo_C_ExecuteUbergraph_WBP_IngameMenu_Monitoring_WorkInfo Parms{};
+	Params::WBP_IngameMenu_Monitoring_WorkInfo_C_ChangeLevelText Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.NewLevel = NewLevel;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

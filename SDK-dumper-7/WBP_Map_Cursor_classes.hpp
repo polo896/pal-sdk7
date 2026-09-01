@@ -27,12 +27,12 @@ public:
 	class UWidgetAnimation*                       Anm_Loop;                                          // 0x0288(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Map_Cursor(int32 EntryPoint);
-	void Construct();
-	void AnmEvent_Unfocus();
-	void AnmEvent_Reset();
-	void AnmEvent_Loop();
 	void AnmEvent_Focus();
+	void AnmEvent_Loop();
+	void AnmEvent_Reset();
+	void AnmEvent_Unfocus();
+	void Construct();
+	void ExecuteUbergraph_WBP_Map_Cursor(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

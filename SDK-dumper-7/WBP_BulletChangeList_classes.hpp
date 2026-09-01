@@ -35,12 +35,12 @@ public:
 	class FName                                   MyBulletItemId;                                    // 0x02C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_DetailDisplay(bool bSkipAnimatio);
-	void AnmEvent_Focus();
-	void AnmEvent_SimpleDisplay(bool bSkipAnimation);
-	void AnmEvent_Unfocus();
-	void ExecuteUbergraph_WBP_BulletChangeList(int32 EntryPoint);
 	void GetBulletItemId(class FName* ItemId);
+	void ExecuteUbergraph_WBP_BulletChangeList(int32 EntryPoint);
+	void AnmEvent_Unfocus();
+	void AnmEvent_SimpleDisplay(bool bSkipAnimation);
+	void AnmEvent_Focus();
+	void AnmEvent_DetailDisplay(bool bSkipAnimatio);
 	void Setup(class FName BulletItemId);
 
 public:

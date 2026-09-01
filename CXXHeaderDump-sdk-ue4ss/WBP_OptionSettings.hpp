@@ -39,7 +39,9 @@ class UWBP_OptionSettings_C : public UPalUserWidgetOverlayUI
     class UWidget* LastFocus;                                                         // 0x0588 (size: 0x8)
     FDataTableRowHandle ConflictMsgId;                                                // 0x0590 (size: 0x10)
     FDataTableRowHandle ConflictMsgIdPS5;                                             // 0x05A0 (size: 0x10)
+    bool bIsInitiallyConflicted;                                                      // 0x05B0 (size: 0x1)
 
+    void ResetInnerSettingWidgets();
     void OnClosedKeyConflictWarning(bool bResult);
     void OpenKeyConflictWarning();
     void IsConflictAnyKey(bool& bConflicted);
@@ -81,6 +83,6 @@ class UWBP_OptionSettings_C : public UPalUserWidgetOverlayUI
     void BndEvt__WBP_OptionSettings_WBP_OptionSettings_MenuButton_S_EULA_K2Node_ComponentBoundEvent_9_OnClicked__DelegateSignature();
     void BndEvt__WBP_OptionSettings_WBP_OptionSettings_MenuButton_S_Form_K2Node_ComponentBoundEvent_10_OnClicked__DelegateSignature();
     void ExecuteUbergraph_WBP_OptionSettings(int32 EntryPoint);
-}; // Size: 0x5B0
+}; // Size: 0x5B1
 
 #endif

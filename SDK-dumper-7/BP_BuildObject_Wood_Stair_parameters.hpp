@@ -16,6 +16,15 @@
 namespace SDK::Params
 {
 
+// Function BP_BuildObject_Wood_Stair.BP_BuildObject_Wood_Stair_C.GetStaticMeshInfos
+// 0x0010 (0x0010 - 0x0000)
+struct BP_BuildObject_Wood_Stair_C_GetStaticMeshInfos final
+{
+public:
+	TArray<struct FPalStaticMeshImposterStaticMeshInfo> OutStaticMeshInfo;                           // 0x0000(0x0010)(Parm, OutParm)
+};
+DUMPER7_ASSERTS_BP_BuildObject_Wood_Stair_C_GetStaticMeshInfos;
+
 // Function BP_BuildObject_Wood_Stair.BP_BuildObject_Wood_Stair_C.GetStaticMeshComponents
 // 0x0020 (0x0020 - 0x0000)
 struct BP_BuildObject_Wood_Stair_C_GetStaticMeshComponents final
@@ -25,15 +34,6 @@ public:
 	TArray<class UStaticMeshComponent*>           K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
 DUMPER7_ASSERTS_BP_BuildObject_Wood_Stair_C_GetStaticMeshComponents;
-
-// Function BP_BuildObject_Wood_Stair.BP_BuildObject_Wood_Stair_C.GetStaticMeshInfos
-// 0x0010 (0x0010 - 0x0000)
-struct BP_BuildObject_Wood_Stair_C_GetStaticMeshInfos final
-{
-public:
-	TArray<struct FPalStaticMeshImposterStaticMeshInfo> OutStaticMeshInfo;                           // 0x0000(0x0010)(Parm, OutParm)
-};
-DUMPER7_ASSERTS_BP_BuildObject_Wood_Stair_C_GetStaticMeshInfos;
 
 }
 

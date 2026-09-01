@@ -10,7 +10,7 @@ class ABP_PalSpawner_Standard_C : public APalNPCSpawnerBase
     class USceneComponent* DefaultSceneRoot;                                          // 0x0548 (size: 0x8)
     bool NotSleepFlag;                                                                // 0x0550 (size: 0x1)
     class ABP_MonsterBase_C* tempSpawnedMonster;                                      // 0x0558 (size: 0x8)
-    TArray<class UPalIndividualCharacterHandle*> IndividualHandleList;                // 0x0560 (size: 0x10)
+    TArray<UPalIndividualCharacterHandle*> IndividualHandleList;                      // 0x0560 (size: 0x10)
     double ReturnTerritoryRadius;                                                     // 0x0570 (size: 0x8)
     double WanderingRadius;                                                           // 0x0578 (size: 0x8)
     TEnumAsByte<ELeashType::Type> Leash Type;                                         // 0x0580 (size: 0x1)
@@ -44,7 +44,7 @@ class ABP_PalSpawner_Standard_C : public APalNPCSpawnerBase
     FName GetSpawnerName();
     TArray<FPalSpawnerGroupInfo> GetOriginalSpawnGroupList();
     TArray<FPalSpawnerGroupInfo> GetSpawnGroupList(class UObject* WorldContextObject);
-    void GetAllSpawnedNPCHandle(TArray<class UPalIndividualCharacterHandle*>& Handles);
+    void GetAllSpawnedNPCHandle(TArray<UPalIndividualCharacterHandle*>& Handles);
     bool IsSuppressedByRandomIncident();
     float GetSpawnPointRadius();
     void BlueprintTick_Despawning(float DeltaTime);

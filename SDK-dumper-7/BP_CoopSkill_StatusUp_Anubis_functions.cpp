@@ -17,37 +17,23 @@
 namespace SDK
 {
 
-// Function BP_CoopSkill_StatusUp_Anubis.BP_CoopSkill_StatusUp_Anubis_C.ExecuteUbergraph_BP_CoopSkill_StatusUp_Anubis
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_CoopSkill_StatusUp_Anubis.BP_CoopSkill_StatusUp_Anubis_C.OnTick
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_CoopSkill_StatusUp_Anubis_C::ExecuteUbergraph_BP_CoopSkill_StatusUp_Anubis(int32 EntryPoint)
+void UBP_CoopSkill_StatusUp_Anubis_C::OnTick(float DeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CoopSkill_StatusUp_Anubis_C", "ExecuteUbergraph_BP_CoopSkill_StatusUp_Anubis");
+		Func = Class->GetFunction("BP_CoopSkill_StatusUp_Anubis_C", "OnTick");
 
-	Params::BP_CoopSkill_StatusUp_Anubis_C_ExecuteUbergraph_BP_CoopSkill_StatusUp_Anubis Parms{};
+	Params::BP_CoopSkill_StatusUp_Anubis_C_OnTick Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.DeltaTime = DeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_CoopSkill_StatusUp_Anubis.BP_CoopSkill_StatusUp_Anubis_C.OnSkillOverheat
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UBP_CoopSkill_StatusUp_Anubis_C::OnSkillOverheat()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CoopSkill_StatusUp_Anubis_C", "OnSkillOverheat");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -65,21 +51,35 @@ void UBP_CoopSkill_StatusUp_Anubis_C::OnStartSkill()
 }
 
 
-// Function BP_CoopSkill_StatusUp_Anubis.BP_CoopSkill_StatusUp_Anubis_C.OnTick
+// Function BP_CoopSkill_StatusUp_Anubis.BP_CoopSkill_StatusUp_Anubis_C.OnSkillOverheat
 // (Event, Protected, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_CoopSkill_StatusUp_Anubis_C::OnTick(float DeltaTime)
+void UBP_CoopSkill_StatusUp_Anubis_C::OnSkillOverheat()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CoopSkill_StatusUp_Anubis_C", "OnTick");
+		Func = Class->GetFunction("BP_CoopSkill_StatusUp_Anubis_C", "OnSkillOverheat");
 
-	Params::BP_CoopSkill_StatusUp_Anubis_C_OnTick Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.DeltaTime = DeltaTime;
+
+// Function BP_CoopSkill_StatusUp_Anubis.BP_CoopSkill_StatusUp_Anubis_C.ExecuteUbergraph_BP_CoopSkill_StatusUp_Anubis
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_CoopSkill_StatusUp_Anubis_C::ExecuteUbergraph_BP_CoopSkill_StatusUp_Anubis(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_CoopSkill_StatusUp_Anubis_C", "ExecuteUbergraph_BP_CoopSkill_StatusUp_Anubis");
+
+	Params::BP_CoopSkill_StatusUp_Anubis_C_ExecuteUbergraph_BP_CoopSkill_StatusUp_Anubis Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

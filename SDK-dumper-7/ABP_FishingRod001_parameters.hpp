@@ -16,25 +16,6 @@
 namespace SDK::Params
 {
 
-// Function ABP_FishingRod001.ABP_FishingRod001_C.AnimGraph
-// 0x0020 (0x0020 - 0x0000)
-struct ABP_FishingRod001_C_AnimGraph final
-{
-public:
-	struct FPoseLink                              InPose;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              AnimGraph_0;                                       // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
-};
-DUMPER7_ASSERTS_ABP_FishingRod001_C_AnimGraph;
-
-// Function ABP_FishingRod001.ABP_FishingRod001_C.ExecuteUbergraph_ABP_FishingRod001
-// 0x0004 (0x0004 - 0x0000)
-struct ABP_FishingRod001_C_ExecuteUbergraph_ABP_FishingRod001 final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_ABP_FishingRod001_C_ExecuteUbergraph_ABP_FishingRod001;
-
 // Function ABP_FishingRod001.ABP_FishingRod001_C.SetDisableRigidBodyBlend
 // 0x0010 (0x0010 - 0x0000)
 struct ABP_FishingRod001_C_SetDisableRigidBodyBlend final
@@ -45,6 +26,25 @@ public:
 	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_ABP_FishingRod001_C_SetDisableRigidBodyBlend;
+
+// Function ABP_FishingRod001.ABP_FishingRod001_C.ExecuteUbergraph_ABP_FishingRod001
+// 0x0004 (0x0004 - 0x0000)
+struct ABP_FishingRod001_C_ExecuteUbergraph_ABP_FishingRod001 final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_ABP_FishingRod001_C_ExecuteUbergraph_ABP_FishingRod001;
+
+// Function ABP_FishingRod001.ABP_FishingRod001_C.AnimGraph
+// 0x0020 (0x0020 - 0x0000)
+struct ABP_FishingRod001_C_AnimGraph final
+{
+public:
+	struct FPoseLink                              InPose;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FPoseLink                              AnimGraph_0;                                       // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
+};
+DUMPER7_ASSERTS_ABP_FishingRod001_C_AnimGraph;
 
 }
 

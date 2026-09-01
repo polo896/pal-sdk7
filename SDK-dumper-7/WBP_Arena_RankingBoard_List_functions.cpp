@@ -17,21 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_Arena_RankingBoard_List.WBP_Arena_RankingBoard_List_C.BndEvt__WBP_Arena_RankingBoard_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Arena_RankingBoard_List.WBP_Arena_RankingBoard_List_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const struct FPalArenaWorldRankingRecord&RankingInfo                                            (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_Arena_RankingBoard_List_C::BndEvt__WBP_Arena_RankingBoard_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Arena_RankingBoard_List_C::Setup(const struct FPalArenaWorldRankingRecord& RankingInfo)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RankingBoard_List_C", "BndEvt__WBP_Arena_RankingBoard_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Arena_RankingBoard_List_C", "Setup");
 
-	Params::WBP_Arena_RankingBoard_List_C_BndEvt__WBP_Arena_RankingBoard_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_Arena_RankingBoard_List_C_Setup Parms{};
 
-	Parms.Button = Button;
+	Parms.RankingInfo = std::move(RankingInfo);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,21 +57,21 @@ void UWBP_Arena_RankingBoard_List_C::ExecuteUbergraph_WBP_Arena_RankingBoard_Lis
 }
 
 
-// Function WBP_Arena_RankingBoard_List.WBP_Arena_RankingBoard_List_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Arena_RankingBoard_List.WBP_Arena_RankingBoard_List_C.BndEvt__WBP_Arena_RankingBoard_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// const struct FPalArenaWorldRankingRecord&RankingInfo                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_RankingBoard_List_C::Setup(const struct FPalArenaWorldRankingRecord& RankingInfo)
+void UWBP_Arena_RankingBoard_List_C::BndEvt__WBP_Arena_RankingBoard_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RankingBoard_List_C", "Setup");
+		Func = Class->GetFunction("WBP_Arena_RankingBoard_List_C", "BndEvt__WBP_Arena_RankingBoard_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_Arena_RankingBoard_List_C_Setup Parms{};
+	Params::WBP_Arena_RankingBoard_List_C_BndEvt__WBP_Arena_RankingBoard_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
 
-	Parms.RankingInfo = std::move(RankingInfo);
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

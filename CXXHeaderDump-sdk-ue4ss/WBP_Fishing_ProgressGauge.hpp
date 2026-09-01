@@ -13,7 +13,7 @@ class UWBP_Fishing_ProgressGauge_C : public UUserWidget
     class UImage* Image_gauge_Eff_Fail;                                               // 0x02B0 (size: 0x8)
     class UImage* Image_Icon;                                                         // 0x02B8 (size: 0x8)
     class UImage* Image_Shadow;                                                       // 0x02C0 (size: 0x8)
-    TArray<class UMaterialInstanceDynamic*> GaugeMaterials;                           // 0x02C8 (size: 0x10)
+    TArray<UMaterialInstanceDynamic*> GaugeMaterials;                                 // 0x02C8 (size: 0x10)
     double ProgressRate;                                                              // 0x02D8 (size: 0x8)
     class UCurveLinearColor* ColorCurve;                                              // 0x02E0 (size: 0x8)
 

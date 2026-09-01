@@ -34,10 +34,10 @@ public:
 	struct FDataTableRowHandle                    PowerOfflineMSGID;                                 // 0x0498(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void ExecuteUbergraph_WBP_BuildObjectIndicator_PowerSufficiency(int32 EntryPoint);
-	void OnSetup();
-	void OnUpdateEnergyModuleState(class UPalMapObjectEnergyModule* Module);
 	void SetupUI();
+	void OnUpdateEnergyModuleState(class UPalMapObjectEnergyModule* Module);
+	void OnSetup();
+	void ExecuteUbergraph_WBP_BuildObjectIndicator_PowerSufficiency(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

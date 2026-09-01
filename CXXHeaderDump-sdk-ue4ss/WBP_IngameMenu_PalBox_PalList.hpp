@@ -27,7 +27,7 @@ class UWBP_IngameMenu_PalBox_PalList_C : public UWBP_IndividualParameterBindWidg
     class UBP_PalTextBlock_C* Text_MaxHP;                                             // 0x0700 (size: 0x8)
     class UBP_PalTextBlock_C* Text_NickName;                                          // 0x0708 (size: 0x8)
     class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x0710 (size: 0x8)
-    TSoftObjectPtr<UPalIndividualCharacterParameter> lastBindedIndividualParam;       // 0x0718 (size: 0x30)
+    TSoftObjectPtr<class UPalIndividualCharacterParameter> lastBindedIndividualParam; // 0x0718 (size: 0x30)
     FWBP_IngameMenu_PalBox_PalList_COnClicked OnClicked;                              // 0x0748 (size: 0x10)
     void OnClicked(class UPalIndividualCharacterSlot* TargetSlot);
     FWBP_IngameMenu_PalBox_PalList_COnHovered OnHovered;                              // 0x0758 (size: 0x10)

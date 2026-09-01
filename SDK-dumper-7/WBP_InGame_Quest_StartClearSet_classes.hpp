@@ -34,14 +34,14 @@ public:
 	class UWBP_InGame_Quest_StartClearBase_C*     CurrentWidget;                                     // 0x04E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void CompleteQuest(class FName QuestId);
 	void ExecuteUbergraph_WBP_InGame_Quest_StartClearSet(int32 EntryPoint);
-	void GetCurrentQuestNotifyTime(double* NotifyTime);
-	void OnEndWidgetSequence();
-	void OnInitialized();
-	void SetActionBindData(const struct FPalUIActionBindData& BindData);
-	void StartQuest(class FName QuestId);
+	void CompleteQuest(class FName QuestId);
 	void TryNextNotify();
+	void StartQuest(class FName QuestId);
+	void SetActionBindData(const struct FPalUIActionBindData& BindData);
+	void OnInitialized();
+	void OnEndWidgetSequence();
+	void GetCurrentQuestNotifyTime(double* NotifyTime);
 
 public:
 	static class UClass* StaticClass()

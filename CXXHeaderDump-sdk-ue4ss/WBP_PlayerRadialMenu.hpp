@@ -37,7 +37,7 @@ class UWBP_PlayerRadialMenu_C : public UPalUIPlayerRadialMenuBase
     void OnRequestOpenChat();
     FDataTableRowHandle OpenChatMsgID;                                                // 0x05D0 (size: 0x10)
     TArray<FName> RadialIgnoreTribeList;                                              // 0x05E0 (size: 0x10)
-    TMap<class EPalOtomoPalOrderType, class UWBP_PlayerRadialMenu_MenuContent_C*> OtomoInstructionWidgetMap; // 0x05F0 (size: 0x50)
+    TMap<EPalOtomoPalOrderType, UWBP_PlayerRadialMenu_MenuContent_C*> OtomoInstructionWidgetMap; // 0x05F0 (size: 0x50)
 
     void HiglightCurrentOrderWidget();
     void OpenBuildObjectList();

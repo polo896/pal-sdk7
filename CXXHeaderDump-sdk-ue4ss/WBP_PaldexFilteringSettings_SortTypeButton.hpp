@@ -13,7 +13,7 @@ class UWBP_PaldexFilteringSettings_SortTypeButton_C : public UPalUserWidget
     class UBP_PalTextBlock_C* Text_SortType;                                          // 0x0488 (size: 0x8)
     class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x0490 (size: 0x8)
     EPalUIPaldexSortType BindSortType;                                                // 0x0498 (size: 0x1)
-    TMap<class EPalUIPaldexSortType, class FDataTableRowHandle> SortTypeMsgIDMap;     // 0x04A0 (size: 0x50)
+    TMap<EPalUIPaldexSortType, FDataTableRowHandle> SortTypeMsgIDMap;                 // 0x04A0 (size: 0x50)
     FWBP_PaldexFilteringSettings_SortTypeButton_COnClicked OnClicked;                 // 0x04F0 (size: 0x10)
     void OnClicked(class UWBP_PaldexFilteringSettings_SortTypeButton_C* Widget);
 

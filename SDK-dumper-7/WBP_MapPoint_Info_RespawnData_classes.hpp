@@ -33,9 +33,9 @@ public:
 	TArray<class UImage*>                         Stars;                                             // 0x02C0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void SetRank(int32 Rank);
-	void ExecuteUbergraph_WBP_MapPoint_Info_RespawnData(int32 EntryPoint);
 	void Construct();
+	void ExecuteUbergraph_WBP_MapPoint_Info_RespawnData(int32 EntryPoint);
+	void SetRank(int32 Rank);
 
 public:
 	static class UClass* StaticClass()

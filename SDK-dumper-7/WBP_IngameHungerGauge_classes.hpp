@@ -44,12 +44,12 @@ public:
 	class UProgressBar*                           ProgressBar_219;                                   // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Debuff();
-	void AnmEvent_Normal();
-	void Construct();
-	void ExecuteUbergraph_WBP_IngameHungerGauge(int32 EntryPoint);
-	void SetHunger(const struct FFixedPoint& nowHunger, const struct FFixedPoint& maxHunger);
 	void SetHunger_ByRate(double Rate);
+	void SetHunger(const struct FFixedPoint& nowHunger, const struct FFixedPoint& maxHunger);
+	void ExecuteUbergraph_WBP_IngameHungerGauge(int32 EntryPoint);
+	void Construct();
+	void AnmEvent_Normal();
+	void AnmEvent_Debuff();
 
 public:
 	static class UClass* StaticClass()

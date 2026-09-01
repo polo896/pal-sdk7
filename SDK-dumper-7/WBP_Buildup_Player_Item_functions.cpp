@@ -17,17 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_Buildup_Player_Item.WBP_Buildup_Player_Item_C.DisplayCurrentRelicCount
+// Function WBP_Buildup_Player_Item.WBP_Buildup_Player_Item_C.SetRelicType
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalRelicType                           RelicType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Buildup_Player_Item_C::DisplayCurrentRelicCount()
+void UWBP_Buildup_Player_Item_C::SetRelicType(EPalRelicType RelicType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_Item_C", "DisplayCurrentRelicCount");
+		Func = Class->GetFunction("WBP_Buildup_Player_Item_C", "SetRelicType");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Buildup_Player_Item_C_SetRelicType Parms{};
+
+	Parms.RelicType = RelicType;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -51,23 +57,17 @@ void UWBP_Buildup_Player_Item_C::DisplayFIxedRelicCount(int32 DisplayCount)
 }
 
 
-// Function WBP_Buildup_Player_Item.WBP_Buildup_Player_Item_C.SetRelicType
+// Function WBP_Buildup_Player_Item.WBP_Buildup_Player_Item_C.DisplayCurrentRelicCount
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalRelicType                           RelicType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Buildup_Player_Item_C::SetRelicType(EPalRelicType RelicType)
+void UWBP_Buildup_Player_Item_C::DisplayCurrentRelicCount()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Player_Item_C", "SetRelicType");
+		Func = Class->GetFunction("WBP_Buildup_Player_Item_C", "DisplayCurrentRelicCount");
 
-	Params::WBP_Buildup_Player_Item_C_SetRelicType Parms{};
-
-	Parms.RelicType = RelicType;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

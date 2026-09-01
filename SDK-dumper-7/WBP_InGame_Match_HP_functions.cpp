@@ -17,37 +17,83 @@
 namespace SDK
 {
 
-// Function WBP_InGame_Match_HP.WBP_InGame_Match_HP_C.ExecuteUbergraph_WBP_InGame_Match_HP
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_InGame_Match_HP.WBP_InGame_Match_HP_C.UpdatePlayerHP
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FFixedPoint64&             nowHP                                                  (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// const struct FFixedPoint64&             MaxHP                                                  (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void UWBP_InGame_Match_HP_C::ExecuteUbergraph_WBP_InGame_Match_HP(int32 EntryPoint)
+void UWBP_InGame_Match_HP_C::UpdatePlayerHP(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& MaxHP)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Match_HP_C", "ExecuteUbergraph_WBP_InGame_Match_HP");
+		Func = Class->GetFunction("WBP_InGame_Match_HP_C", "UpdatePlayerHP");
 
-	Params::WBP_InGame_Match_HP_C_ExecuteUbergraph_WBP_InGame_Match_HP Parms{};
+	Params::WBP_InGame_Match_HP_C_UpdatePlayerHP Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.nowHP = std::move(nowHP);
+	Parms.MaxHP = std::move(MaxHP);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_InGame_Match_HP.WBP_InGame_Match_HP_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_InGame_Match_HP.WBP_InGame_Match_HP_C.Update Rival HP
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FFixedPoint64&             nowHP                                                  (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// const struct FFixedPoint64&             MaxHP                                                  (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void UWBP_InGame_Match_HP_C::OnInitialized()
+void UWBP_InGame_Match_HP_C::Update_Rival_HP(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& MaxHP)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Match_HP_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_InGame_Match_HP_C", "Update Rival HP");
+
+	Params::WBP_InGame_Match_HP_C_Update_Rival_HP Parms{};
+
+	Parms.nowHP = std::move(nowHP);
+	Parms.MaxHP = std::move(MaxHP);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_InGame_Match_HP.WBP_InGame_Match_HP_C.Unbind
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_InGame_Match_HP_C::Unbind()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGame_Match_HP_C", "Unbind");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InGame_Match_HP.WBP_InGame_Match_HP_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_InGame_Match_HP_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGame_Match_HP_C", "Tick");
+
+	Params::WBP_InGame_Match_HP_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -75,81 +121,35 @@ void UWBP_InGame_Match_HP_C::Setup(EPalArenaPlayerIndex LocalPlayerIndex, const 
 }
 
 
-// Function WBP_InGame_Match_HP.WBP_InGame_Match_HP_C.Tick
+// Function WBP_InGame_Match_HP.WBP_InGame_Match_HP_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_InGame_Match_HP_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+void UWBP_InGame_Match_HP_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Match_HP_C", "Tick");
-
-	Params::WBP_InGame_Match_HP_C_Tick Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_InGame_Match_HP.WBP_InGame_Match_HP_C.Unbind
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_InGame_Match_HP_C::Unbind()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Match_HP_C", "Unbind");
+		Func = Class->GetFunction("WBP_InGame_Match_HP_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_InGame_Match_HP.WBP_InGame_Match_HP_C.Update Rival HP
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_InGame_Match_HP.WBP_InGame_Match_HP_C.ExecuteUbergraph_WBP_InGame_Match_HP
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const struct FFixedPoint64&             nowHP                                                  (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-// const struct FFixedPoint64&             MaxHP                                                  (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_InGame_Match_HP_C::Update_Rival_HP(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& MaxHP)
+void UWBP_InGame_Match_HP_C::ExecuteUbergraph_WBP_InGame_Match_HP(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Match_HP_C", "Update Rival HP");
+		Func = Class->GetFunction("WBP_InGame_Match_HP_C", "ExecuteUbergraph_WBP_InGame_Match_HP");
 
-	Params::WBP_InGame_Match_HP_C_Update_Rival_HP Parms{};
+	Params::WBP_InGame_Match_HP_C_ExecuteUbergraph_WBP_InGame_Match_HP Parms{};
 
-	Parms.nowHP = std::move(nowHP);
-	Parms.MaxHP = std::move(MaxHP);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_InGame_Match_HP.WBP_InGame_Match_HP_C.UpdatePlayerHP
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FFixedPoint64&             nowHP                                                  (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-// const struct FFixedPoint64&             MaxHP                                                  (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void UWBP_InGame_Match_HP_C::UpdatePlayerHP(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& MaxHP)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Match_HP_C", "UpdatePlayerHP");
-
-	Params::WBP_InGame_Match_HP_C_UpdatePlayerHP Parms{};
-
-	Parms.nowHP = std::move(nowHP);
-	Parms.MaxHP = std::move(MaxHP);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -45,18 +45,18 @@ public:
 	bool                                          bRefreshPending;                                   // 0x0570(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_In();
-	void AnmEvent_Out();
-	void ExecuteUbergraph_WBP_Ingame_WeaponChange(int32 EntryPoint);
-	void OnInputAction_NextWeapon();
-	void OnInputAction_PrevWeapon();
-	void OnWeaponLoadoutContaierUpdated(class UPalItemContainer* Container);
-	void RefreshWeaponList();
-	void RegisterWeaponChangeAction();
-	void SelectWeapon(class APalWeaponBase* WeaponActor);
-	void Setup_Weapon_List();
-	void UnregisterWeaponChangeAction();
 	void UpdateAllBulletCount();
+	void UnregisterWeaponChangeAction();
+	void Setup_Weapon_List();
+	void SelectWeapon(class APalWeaponBase* WeaponActor);
+	void RegisterWeaponChangeAction();
+	void RefreshWeaponList();
+	void OnWeaponLoadoutContaierUpdated(class UPalItemContainer* Container);
+	void OnInputAction_PrevWeapon();
+	void OnInputAction_NextWeapon();
+	void ExecuteUbergraph_WBP_Ingame_WeaponChange(int32 EntryPoint);
+	void AnmEvent_Out();
+	void AnmEvent_In();
 
 public:
 	static class UClass* StaticClass()

@@ -17,35 +17,15 @@
 namespace SDK
 {
 
-// Function BP_MapObject_TreasureBox_OilrigGoal.BP_MapObject_TreasureBox_OilrigGoal_C.ExecuteUbergraph_BP_MapObject_TreasureBox_OilrigGoal
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MapObject_TreasureBox_OilrigGoal_C::ExecuteUbergraph_BP_MapObject_TreasureBox_OilrigGoal(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_TreasureBox_OilrigGoal_C", "ExecuteUbergraph_BP_MapObject_TreasureBox_OilrigGoal");
-
-	Params::BP_MapObject_TreasureBox_OilrigGoal_C_ExecuteUbergraph_BP_MapObject_TreasureBox_OilrigGoal Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MapObject_TreasureBox_OilrigGoal.BP_MapObject_TreasureBox_OilrigGoal_C.ReceiveBeginPlay
+// Function BP_MapObject_TreasureBox_OilrigGoal.BP_MapObject_TreasureBox_OilrigGoal_C.TriggerOpen
 // (Event, Protected, BlueprintEvent)
 
-void ABP_MapObject_TreasureBox_OilrigGoal_C::ReceiveBeginPlay()
+void ABP_MapObject_TreasureBox_OilrigGoal_C::TriggerOpen()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_TreasureBox_OilrigGoal_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_MapObject_TreasureBox_OilrigGoal_C", "TriggerOpen");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,17 +51,37 @@ void ABP_MapObject_TreasureBox_OilrigGoal_C::SetupVisual(class UPalMapObjectConc
 }
 
 
-// Function BP_MapObject_TreasureBox_OilrigGoal.BP_MapObject_TreasureBox_OilrigGoal_C.TriggerOpen
+// Function BP_MapObject_TreasureBox_OilrigGoal.BP_MapObject_TreasureBox_OilrigGoal_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 
-void ABP_MapObject_TreasureBox_OilrigGoal_C::TriggerOpen()
+void ABP_MapObject_TreasureBox_OilrigGoal_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_TreasureBox_OilrigGoal_C", "TriggerOpen");
+		Func = Class->GetFunction("BP_MapObject_TreasureBox_OilrigGoal_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MapObject_TreasureBox_OilrigGoal.BP_MapObject_TreasureBox_OilrigGoal_C.ExecuteUbergraph_BP_MapObject_TreasureBox_OilrigGoal
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MapObject_TreasureBox_OilrigGoal_C::ExecuteUbergraph_BP_MapObject_TreasureBox_OilrigGoal(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MapObject_TreasureBox_OilrigGoal_C", "ExecuteUbergraph_BP_MapObject_TreasureBox_OilrigGoal");
+
+	Params::BP_MapObject_TreasureBox_OilrigGoal_C_ExecuteUbergraph_BP_MapObject_TreasureBox_OilrigGoal Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

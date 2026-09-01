@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Enum_ReticleCancel_DisplayType_structs.hpp"
 #include "UMG_classes.hpp"
+#include "Enum_ReticleCancel_DisplayType_structs.hpp"
 
 
 namespace SDK
@@ -32,9 +32,9 @@ public:
 	class FName                                   PlayerInputActionName;                             // 0x02A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void ExecuteUbergraph_WBP_Reticle_KeyGuide(int32 EntryPoint);
 	void SetKeyGuideInfo(Enum_ReticleCancel_DisplayType DisplayType);
+	void ExecuteUbergraph_WBP_Reticle_KeyGuide(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

@@ -17,17 +17,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_DebuffNotice.WBP_DebuffNotice_C.ExecuteUbergraph_WBP_DebuffNotice
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_DebuffNotice_C_ExecuteUbergraph_WBP_DebuffNotice final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_DebuffNotice_C_ExecuteUbergraph_WBP_DebuffNotice;
-
 // Function WBP_DebuffNotice.WBP_DebuffNotice_C.Setup
 // 0x00E8 (0x00E8 - 0x0000)
 struct WBP_DebuffNotice_C_Setup final
@@ -47,6 +36,17 @@ public:
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00D8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_DebuffNotice_C_Setup;
+
+// Function WBP_DebuffNotice.WBP_DebuffNotice_C.ExecuteUbergraph_WBP_DebuffNotice
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_DebuffNotice_C_ExecuteUbergraph_WBP_DebuffNotice final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_DebuffNotice_C_ExecuteUbergraph_WBP_DebuffNotice;
 
 }
 

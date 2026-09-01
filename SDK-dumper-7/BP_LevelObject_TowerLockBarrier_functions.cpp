@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function BP_LevelObject_TowerLockBarrier.BP_LevelObject_TowerLockBarrier_C.OnDataChanged
+// (Event, Protected, BlueprintEvent)
+
+void ABP_LevelObject_TowerLockBarrier_C::OnDataChanged()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_LevelObject_TowerLockBarrier_C", "OnDataChanged");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_LevelObject_TowerLockBarrier.BP_LevelObject_TowerLockBarrier_C.ExecuteUbergraph_BP_LevelObject_TowerLockBarrier
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -34,20 +48,6 @@ void ABP_LevelObject_TowerLockBarrier_C::ExecuteUbergraph_BP_LevelObject_TowerLo
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LevelObject_TowerLockBarrier.BP_LevelObject_TowerLockBarrier_C.OnDataChanged
-// (Event, Protected, BlueprintEvent)
-
-void ABP_LevelObject_TowerLockBarrier_C::OnDataChanged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LevelObject_TowerLockBarrier_C", "OnDataChanged");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

@@ -365,7 +365,7 @@ struct FAnimNode_LinkedAnimGraph : public FAnimNode_CustomProperty
 
 struct FAnimNode_LinkedAnimLayer : public FAnimNode_LinkedAnimGraph
 {
-    TSubclassOf<class UAnimLayerInterface> Interface;                                 // 0x00B8 (size: 0x8)
+    TSubclassOf<class IAnimLayerInterface> Interface;                                 // 0x00B8 (size: 0x8)
     FName Layer;                                                                      // 0x00C0 (size: 0x8)
 
 }; // Size: 0xC8
@@ -500,7 +500,7 @@ struct FAnimNotifyEventReference
 struct FAnimNotifyQueue
 {
     TArray<FAnimNotifyEventReference> AnimNotifies;                                   // 0x0010 (size: 0x10)
-    TMap<class FName, class FAnimNotifyArray> UnfilteredMontageAnimNotifies;          // 0x0020 (size: 0x50)
+    TMap<FName, FAnimNotifyArray> UnfilteredMontageAnimNotifies;                      // 0x0020 (size: 0x50)
 
 }; // Size: 0x70
 
@@ -584,7 +584,7 @@ struct FAnimSubsystem_Base : public FAnimSubsystem
 
 struct FAnimSubsystem_BlendSpaceGraph : public FAnimSubsystem
 {
-    TArray<class UBlendSpace*> BlendSpaces;                                           // 0x0008 (size: 0x10)
+    TArray<UBlendSpace*> BlendSpaces;                                                 // 0x0008 (size: 0x10)
 
 }; // Size: 0x18
 
@@ -896,7 +896,7 @@ struct FAudioReverbEffect : public FAudioEffectParameters
 struct FAudioVolumeSubmixOverrideSettings
 {
     class USoundSubmix* Submix;                                                       // 0x0000 (size: 0x8)
-    TArray<class USoundEffectSubmixPreset*> SubmixEffectChain;                        // 0x0008 (size: 0x10)
+    TArray<USoundEffectSubmixPreset*> SubmixEffectChain;                              // 0x0008 (size: 0x10)
     float CrossfadeTime;                                                              // 0x0018 (size: 0x4)
 
 }; // Size: 0x20
@@ -934,7 +934,7 @@ struct FBPEditorBookmarkNode
 struct FBPInterfaceDescription
 {
     TSubclassOf<class UInterface> Interface;                                          // 0x0000 (size: 0x8)
-    TArray<class UEdGraph*> Graphs;                                                   // 0x0008 (size: 0x10)
+    TArray<UEdGraph*> Graphs;                                                         // 0x0008 (size: 0x10)
 
 }; // Size: 0x18
 
@@ -1977,7 +1977,7 @@ struct FCompositeSection : public FAnimLinkableElement
     FName SectionName;                                                                // 0x0030 (size: 0x8)
     float StartTime;                                                                  // 0x0038 (size: 0x4)
     FName NextSectionName;                                                            // 0x003C (size: 0x8)
-    TArray<class UAnimMetaData*> Metadata;                                            // 0x0048 (size: 0x10)
+    TArray<UAnimMetaData*> Metadata;                                                  // 0x0048 (size: 0x10)
 
 }; // Size: 0x58
 
@@ -2419,7 +2419,7 @@ struct FDepthFieldGlowInfo
 struct FDialogueContext
 {
     class UDialogueVoice* Speaker;                                                    // 0x0000 (size: 0x8)
-    TArray<class UDialogueVoice*> Targets;                                            // 0x0008 (size: 0x10)
+    TArray<UDialogueVoice*> Targets;                                                  // 0x0008 (size: 0x10)
 
 }; // Size: 0x18
 
@@ -2721,7 +2721,7 @@ struct FFXSystemSpawnParameters
 
 struct FFieldCookedMetaDataStore
 {
-    TMap<class FName, class FString> FieldMetaData;                                   // 0x0000 (size: 0x50)
+    TMap<FName, FString> FieldMetaData;                                               // 0x0000 (size: 0x50)
 
 }; // Size: 0x50
 
@@ -2894,7 +2894,7 @@ struct FFullyLoadedPackagesInfo
     TEnumAsByte<EFullyLoadPackageType> FullyLoadType;                                 // 0x0000 (size: 0x1)
     FString Tag;                                                                      // 0x0008 (size: 0x10)
     TArray<FName> PackagesToLoad;                                                     // 0x0018 (size: 0x10)
-    TArray<class UObject*> LoadedObjects;                                             // 0x0028 (size: 0x10)
+    TArray<UObject*> LoadedObjects;                                                   // 0x0028 (size: 0x10)
 
 }; // Size: 0x38
 
@@ -2919,7 +2919,7 @@ struct FGPUSpriteEmitterInfo
     class UParticleModuleRequired* RequiredModule;                                    // 0x0000 (size: 0x8)
     class UParticleModuleSpawn* SpawnModule;                                          // 0x0008 (size: 0x8)
     class UParticleModuleSpawnPerUnit* SpawnPerUnitModule;                            // 0x0010 (size: 0x8)
-    TArray<class UParticleModule*> SpawnModules;                                      // 0x0018 (size: 0x10)
+    TArray<UParticleModule*> SpawnModules;                                            // 0x0018 (size: 0x10)
     FGPUSpriteLocalVectorFieldInfo LocalVectorField;                                  // 0x0030 (size: 0xD0)
     FFloatDistribution VectorFieldScale;                                              // 0x0100 (size: 0x20)
     FFloatDistribution DragCoefficient;                                               // 0x0120 (size: 0x20)
@@ -3377,7 +3377,7 @@ struct FInstanceCacheDataBase
     TArray<uint8> SavedProperties;                                                    // 0x0008 (size: 0x10)
     FDataCacheDuplicatedObjectData UniqueTransientPackage;                            // 0x0018 (size: 0x10)
     TArray<FDataCacheDuplicatedObjectData> DuplicatedObjects;                         // 0x0028 (size: 0x10)
-    TArray<class UObject*> ReferencedObjects;                                         // 0x0038 (size: 0x10)
+    TArray<UObject*> ReferencedObjects;                                               // 0x0038 (size: 0x10)
     TArray<FName> ReferencedNames;                                                    // 0x0048 (size: 0x10)
 
 }; // Size: 0x58
@@ -3863,14 +3863,14 @@ struct FMaterialCachedExpressionData
     TArray<float> ScalarValues;                                                       // 0x0200 (size: 0x10)
     TArray<FLinearColor> VectorValues;                                                // 0x0210 (size: 0x10)
     TArray<FVector4d> DoubleVectorValues;                                             // 0x0220 (size: 0x10)
-    TArray<TSoftObjectPtr<UTexture>> TextureValues;                                   // 0x0230 (size: 0x10)
-    TArray<TSoftObjectPtr<UFont>> FontValues;                                         // 0x0240 (size: 0x10)
+    TArray<TSoftObjectPtr<class UTexture>> TextureValues;                             // 0x0230 (size: 0x10)
+    TArray<TSoftObjectPtr<class UFont>> FontValues;                                   // 0x0240 (size: 0x10)
     TArray<int32> FontPageValues;                                                     // 0x0250 (size: 0x10)
-    TArray<TSoftObjectPtr<URuntimeVirtualTexture>> RuntimeVirtualTextureValues;       // 0x0260 (size: 0x10)
-    TArray<class UObject*> ReferencedTextures;                                        // 0x0270 (size: 0x10)
+    TArray<TSoftObjectPtr<class URuntimeVirtualTexture>> RuntimeVirtualTextureValues; // 0x0260 (size: 0x10)
+    TArray<UObject*> ReferencedTextures;                                              // 0x0270 (size: 0x10)
     TArray<FMaterialFunctionInfo> FunctionInfos;                                      // 0x0280 (size: 0x10)
     TArray<FMaterialParameterCollectionInfo> ParameterCollectionInfos;                // 0x0290 (size: 0x10)
-    TArray<class ULandscapeGrassType*> GrassTypes;                                    // 0x02A0 (size: 0x10)
+    TArray<ULandscapeGrassType*> GrassTypes;                                          // 0x02A0 (size: 0x10)
     FMaterialLayersFunctionsRuntimeData MaterialLayers;                               // 0x02B0 (size: 0x20)
     TArray<FName> DynamicParameterNames;                                              // 0x02D0 (size: 0x10)
     TArray<bool> QualityLevelsUsed;                                                   // 0x02E0 (size: 0x10)
@@ -3891,8 +3891,8 @@ struct FMaterialCachedExpressionEditorOnlyData
     TArray<bool> StaticSwitchValues;                                                  // 0x0120 (size: 0x10)
     TArray<FStaticComponentMaskValue> StaticComponentMaskValues;                      // 0x0130 (size: 0x10)
     TArray<FVector2D> ScalarMinMaxValues;                                             // 0x0140 (size: 0x10)
-    TArray<TSoftObjectPtr<UCurveLinearColor>> ScalarCurveValues;                      // 0x0150 (size: 0x10)
-    TArray<TSoftObjectPtr<UCurveLinearColorAtlas>> ScalarCurveAtlasValues;            // 0x0160 (size: 0x10)
+    TArray<TSoftObjectPtr<class UCurveLinearColor>> ScalarCurveValues;                // 0x0150 (size: 0x10)
+    TArray<TSoftObjectPtr<class UCurveLinearColorAtlas>> ScalarCurveAtlasValues;      // 0x0160 (size: 0x10)
     TArray<FParameterChannelNames> VectorChannelNameValues;                           // 0x0170 (size: 0x10)
     TArray<bool> VectorUsedAsChannelMaskValues;                                       // 0x0180 (size: 0x10)
     TArray<FParameterChannelNames> TextureChannelNameValues;                          // 0x0190 (size: 0x10)
@@ -3934,8 +3934,8 @@ struct FMaterialEditorPromotionSettings
 
 struct FMaterialExpressionCollection
 {
-    TArray<class UMaterialExpression*> Expressions;                                   // 0x0000 (size: 0x10)
-    TArray<class UMaterialExpressionComment*> EditorComments;                         // 0x0010 (size: 0x10)
+    TArray<UMaterialExpression*> Expressions;                                         // 0x0000 (size: 0x10)
+    TArray<UMaterialExpressionComment*> EditorComments;                               // 0x0010 (size: 0x10)
     class UMaterialExpressionExecBegin* ExpressionExecBegin;                          // 0x0020 (size: 0x8)
     class UMaterialExpressionExecEnd* ExpressionExecEnd;                              // 0x0028 (size: 0x8)
 
@@ -4013,14 +4013,14 @@ struct FMaterialLayersFunctionsEditorOnlyData
 
 struct FMaterialLayersFunctionsRuntimeData
 {
-    TArray<class UMaterialFunctionInterface*> Layers;                                 // 0x0000 (size: 0x10)
-    TArray<class UMaterialFunctionInterface*> Blends;                                 // 0x0010 (size: 0x10)
+    TArray<UMaterialFunctionInterface*> Layers;                                       // 0x0000 (size: 0x10)
+    TArray<UMaterialFunctionInterface*> Blends;                                       // 0x0010 (size: 0x10)
 
 }; // Size: 0x20
 
 struct FMaterialOverrideNanite
 {
-    TSoftObjectPtr<UMaterialInterface> OverrideMaterialRef;                           // 0x0000 (size: 0x30)
+    TSoftObjectPtr<class UMaterialInterface> OverrideMaterialRef;                     // 0x0000 (size: 0x30)
     bool bEnableOverride;                                                             // 0x0030 (size: 0x1)
     class UMaterialInterface* OverrideMaterial;                                       // 0x0038 (size: 0x8)
 
@@ -4693,7 +4693,7 @@ struct FNonBlendableVectorAnimationAttribute : public FVectorAnimationAttribute
 
 struct FObjectCookedMetaDataStore
 {
-    TMap<class FName, class FString> ObjectMetaData;                                  // 0x0000 (size: 0x50)
+    TMap<FName, FString> ObjectMetaData;                                              // 0x0000 (size: 0x50)
 
 }; // Size: 0x50
 
@@ -4810,7 +4810,7 @@ struct FParticleEvent_GenerateInfo
     uint8 UseReflectedImpactVector;                                                   // 0x000C (size: 0x1)
     uint8 bUseOrbitOffset;                                                            // 0x000C (size: 0x1)
     FName CustomName;                                                                 // 0x0010 (size: 0x8)
-    TArray<class UParticleModuleEventSendToGame*> ParticleModuleEventsToSendToGame;   // 0x0018 (size: 0x10)
+    TArray<UParticleModuleEventSendToGame*> ParticleModuleEventsToSendToGame;         // 0x0018 (size: 0x10)
 
 }; // Size: 0x28
 
@@ -4996,7 +4996,7 @@ struct FPointerToUberGraphFrame
 
 struct FPooledCameraShakes
 {
-    TArray<class UCameraShakeBase*> PooledShakes;                                     // 0x0000 (size: 0x10)
+    TArray<UCameraShakeBase*> PooledShakes;                                           // 0x0000 (size: 0x10)
 
 }; // Size: 0x10
 
@@ -5505,7 +5505,7 @@ struct FPredictProjectilePathParams
     bool bTraceWithChannel;                                                           // 0x003C (size: 0x1)
     TEnumAsByte<ECollisionChannel> TraceChannel;                                      // 0x003D (size: 0x1)
     TArray<TEnumAsByte<EObjectTypeQuery>> ObjectTypes;                                // 0x0040 (size: 0x10)
-    TArray<class AActor*> ActorsToIgnore;                                             // 0x0050 (size: 0x10)
+    TArray<AActor*> ActorsToIgnore;                                                   // 0x0050 (size: 0x10)
     float SimFrequency;                                                               // 0x0060 (size: 0x4)
     float OverrideGravityZ;                                                           // 0x0064 (size: 0x4)
     TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType;                                 // 0x0068 (size: 0x1)
@@ -5538,7 +5538,7 @@ struct FPreviewAssetAttachContainer
 
 struct FPreviewAttachedObjectPair
 {
-    TSoftObjectPtr<UObject> AttachedObject;                                           // 0x0000 (size: 0x30)
+    TSoftObjectPtr<class UObject> AttachedObject;                                     // 0x0000 (size: 0x30)
     class UObject* Object;                                                            // 0x0030 (size: 0x8)
     FName AttachedTo;                                                                 // 0x0038 (size: 0x8)
 
@@ -5546,8 +5546,8 @@ struct FPreviewAttachedObjectPair
 
 struct FPreviewMeshCollectionEntry
 {
-    TSoftObjectPtr<USkeletalMesh> SkeletalMesh;                                       // 0x0000 (size: 0x30)
-    TSoftObjectPtr<UAnimBlueprint> AnimBlueprint;                                     // 0x0030 (size: 0x30)
+    TSoftObjectPtr<class USkeletalMesh> SkeletalMesh;                                 // 0x0000 (size: 0x30)
+    TSoftObjectPtr<class UAnimBlueprint> AnimBlueprint;                               // 0x0030 (size: 0x30)
 
 }; // Size: 0x60
 
@@ -5983,7 +5983,7 @@ struct FRigidBodyState
 struct FRollbackNetStartupActorInfo
 {
     class UObject* Archetype;                                                         // 0x0008 (size: 0x8)
-    TArray<class UObject*> ObjReferences;                                             // 0x00C0 (size: 0x10)
+    TArray<UObject*> ObjReferences;                                                   // 0x00C0 (size: 0x10)
 
 }; // Size: 0xD0
 
@@ -6151,8 +6151,8 @@ struct FScalarMaterialInput : public FMaterialInput
 struct FScalarParameterAtlasInstanceData
 {
     bool bIsUsedAsAtlasPosition;                                                      // 0x0000 (size: 0x1)
-    TSoftObjectPtr<UCurveLinearColor> Curve;                                          // 0x0008 (size: 0x30)
-    TSoftObjectPtr<UCurveLinearColorAtlas> Atlas;                                     // 0x0038 (size: 0x30)
+    TSoftObjectPtr<class UCurveLinearColor> Curve;                                    // 0x0008 (size: 0x30)
+    TSoftObjectPtr<class UCurveLinearColorAtlas> Atlas;                               // 0x0038 (size: 0x30)
 
 }; // Size: 0x68
 
@@ -6173,7 +6173,7 @@ struct FScaleTrack
 
 struct FSceneComponentInstanceData : public FActorComponentInstanceData
 {
-    TMap<class USceneComponent*, class FTransform> AttachedInstanceComponents;        // 0x0068 (size: 0x50)
+    TMap<USceneComponent*, FTransform> AttachedInstanceComponents;                    // 0x0068 (size: 0x50)
 
 }; // Size: 0xB8
 
@@ -6322,7 +6322,7 @@ struct FSkeletalMeshClothBuildParams
     int32 LODIndex;                                                                   // 0x0020 (size: 0x4)
     int32 SourceSection;                                                              // 0x0024 (size: 0x4)
     bool bRemoveFromMesh;                                                             // 0x0028 (size: 0x1)
-    TSoftObjectPtr<UPhysicsAsset> PhysicsAsset;                                       // 0x0030 (size: 0x30)
+    TSoftObjectPtr<class UPhysicsAsset> PhysicsAsset;                                 // 0x0030 (size: 0x30)
 
 }; // Size: 0x60
 
@@ -6505,7 +6505,7 @@ struct FSocketReference
 
 struct FSoftComponentReference : public FBaseComponentReference
 {
-    TSoftObjectPtr<AActor> OtherActor;                                                // 0x0020 (size: 0x30)
+    TSoftObjectPtr<class AActor> OtherActor;                                          // 0x0020 (size: 0x30)
 
 }; // Size: 0x50
 
@@ -6522,10 +6522,10 @@ struct FSolverIterations
 
 struct FSoundAttenuationPluginSettings
 {
-    TArray<class USpatializationPluginSourceSettingsBase*> SpatializationPluginSettingsArray; // 0x0000 (size: 0x10)
-    TArray<class UOcclusionPluginSourceSettingsBase*> OcclusionPluginSettingsArray;   // 0x0010 (size: 0x10)
-    TArray<class UReverbPluginSourceSettingsBase*> ReverbPluginSettingsArray;         // 0x0020 (size: 0x10)
-    TArray<class USourceDataOverridePluginSourceSettingsBase*> SourceDataOverridePluginSettingsArray; // 0x0030 (size: 0x10)
+    TArray<USpatializationPluginSourceSettingsBase*> SpatializationPluginSettingsArray; // 0x0000 (size: 0x10)
+    TArray<UOcclusionPluginSourceSettingsBase*> OcclusionPluginSettingsArray;         // 0x0010 (size: 0x10)
+    TArray<UReverbPluginSourceSettingsBase*> ReverbPluginSettingsArray;               // 0x0020 (size: 0x10)
+    TArray<USourceDataOverridePluginSourceSettingsBase*> SourceDataOverridePluginSettingsArray; // 0x0030 (size: 0x10)
 
 }; // Size: 0x40
 
@@ -6835,7 +6835,7 @@ struct FSpatialHashStreamingGrid
 
 struct FSpatialHashStreamingGridLayerCell
 {
-    TArray<class UWorldPartitionRuntimeSpatialHashCell*> GridCells;                   // 0x0000 (size: 0x10)
+    TArray<UWorldPartitionRuntimeSpatialHashCell*> GridCells;                         // 0x0000 (size: 0x10)
 
 }; // Size: 0x10
 
@@ -7064,7 +7064,7 @@ struct FStrataMaterialInfo
     uint16 ShadingModelField;                                                         // 0x0000 (size: 0x2)
     uint8 bHasShadingModelFromExpression;                                             // 0x0002 (size: 0x1)
     uint32 ConnectedProperties;                                                       // 0x0004 (size: 0x4)
-    TArray<class USubsurfaceProfile*> SubsurfaceProfiles;                             // 0x0008 (size: 0x10)
+    TArray<USubsurfaceProfile*> SubsurfaceProfiles;                                   // 0x0008 (size: 0x10)
 
 }; // Size: 0x18
 
@@ -7086,7 +7086,7 @@ struct FStreamedAudioPlatformData
 
 struct FStreamingLevelsToConsider
 {
-    TArray<class ULevelStreaming*> StreamingLevels;                                   // 0x0000 (size: 0x10)
+    TArray<ULevelStreaming*> StreamingLevels;                                         // 0x0000 (size: 0x10)
 
 }; // Size: 0x28
 
@@ -7143,7 +7143,7 @@ struct FStringCurveKey
 struct FStructCookedMetaDataStore
 {
     FObjectCookedMetaDataStore ObjectMetaData;                                        // 0x0000 (size: 0x50)
-    TMap<class FName, class FFieldCookedMetaDataStore> PropertiesMetaData;            // 0x0050 (size: 0x50)
+    TMap<FName, FFieldCookedMetaDataStore> PropertiesMetaData;                        // 0x0050 (size: 0x50)
 
 }; // Size: 0xA0
 
@@ -7769,8 +7769,8 @@ struct FWorldContext
     FURL LastRemoteURL;                                                               // 0x0128 (size: 0x68)
     class UPendingNetGame* PendingNetGame;                                            // 0x0190 (size: 0x8)
     TArray<FFullyLoadedPackagesInfo> PackagesToFullyLoad;                             // 0x0198 (size: 0x10)
-    TArray<class ULevel*> LoadedLevelsForPendingMapChange;                            // 0x01B8 (size: 0x10)
-    TArray<class UObjectReferencer*> ObjectReferencers;                               // 0x01E0 (size: 0x10)
+    TArray<ULevel*> LoadedLevelsForPendingMapChange;                                  // 0x01B8 (size: 0x10)
+    TArray<UObjectReferencer*> ObjectReferencers;                                     // 0x01E0 (size: 0x10)
     TArray<FLevelStreamingStatus> PendingLevelStreamingStatusUpdates;                 // 0x01F0 (size: 0x10)
     class UGameViewportClient* GameViewport;                                          // 0x0200 (size: 0x8)
     class UGameInstance* OwningGameInstance;                                          // 0x0208 (size: 0x8)
@@ -7780,7 +7780,7 @@ struct FWorldContext
 
 struct FWorldPSCPool
 {
-    TMap<class UParticleSystem*, class FPSCPool> WorldParticleSystemPools;            // 0x0000 (size: 0x50)
+    TMap<UParticleSystem*, FPSCPool> WorldParticleSystemPools;                        // 0x0000 (size: 0x50)
 
 }; // Size: 0x58
 
@@ -7887,7 +7887,7 @@ class AActor : public UObject
     float MinNetUpdateFrequency;                                                      // 0x0174 (size: 0x4)
     float NetPriority;                                                                // 0x0178 (size: 0x4)
     class APawn* Instigator;                                                          // 0x0180 (size: 0x8)
-    TArray<class AActor*> Children;                                                   // 0x0188 (size: 0x10)
+    TArray<AActor*> Children;                                                         // 0x0188 (size: 0x10)
     class USceneComponent* RootComponent;                                             // 0x0198 (size: 0x8)
     TArray<FName> Layers;                                                             // 0x01A8 (size: 0x10)
     TWeakObjectPtr<class UChildActorComponent> ParentComponent;                       // 0x01B8 (size: 0x8)
@@ -7924,8 +7924,8 @@ class AActor : public UObject
     void ActorDestroyedSignature(class AActor* DestroyedActor);
     FActorOnEndPlay OnEndPlay;                                                        // 0x01DF (size: 0x1)
     void ActorEndPlaySignature(class AActor* Actor, TEnumAsByte<EEndPlayReason::Type> EndPlayReason);
-    TArray<class UActorComponent*> InstanceComponents;                                // 0x0260 (size: 0x10)
-    TArray<class UActorComponent*> BlueprintCreatedComponents;                        // 0x0270 (size: 0x10)
+    TArray<UActorComponent*> InstanceComponents;                                      // 0x0260 (size: 0x10)
+    TArray<UActorComponent*> BlueprintCreatedComponents;                              // 0x0270 (size: 0x10)
 
     bool WasRecentlyRendered(float Tolerance);
     void UserConstructionScript();
@@ -7985,7 +7985,7 @@ class AActor : public UObject
     void K2_OnEndViewTarget(class APlayerController* PC);
     void K2_OnBecomeViewTarget(class APlayerController* PC);
     class USceneComponent* K2_GetRootComponent();
-    TArray<class UActorComponent*> K2_GetComponentsByClass(TSubclassOf<class UActorComponent> ComponentClass);
+    TArray<UActorComponent*> K2_GetComponentsByClass(TSubclassOf<class UActorComponent> ComponentClass);
     FRotator K2_GetActorRotation();
     FVector K2_GetActorLocation();
     void K2_DetachFromActor(EDetachmentRule LocationRule, EDetachmentRule RotationRule, EDetachmentRule ScaleRule);
@@ -8017,8 +8017,8 @@ class AActor : public UObject
     class UChildActorComponent* GetParentComponent();
     class AActor* GetParentActor();
     class AActor* GetOwner();
-    void GetOverlappingComponents(TArray<class UPrimitiveComponent*>& OverlappingComponents);
-    void GetOverlappingActors(TArray<class AActor*>& OverlappingActors, TSubclassOf<class AActor> ClassFilter);
+    void GetOverlappingComponents(TArray<UPrimitiveComponent*>& OverlappingComponents);
+    void GetOverlappingActors(TArray<AActor*>& OverlappingActors, TSubclassOf<class AActor> ClassFilter);
     TEnumAsByte<ENetRole> GetLocalRole();
     float GetLifeSpan();
     FTransform GetLevelTransform();
@@ -8033,13 +8033,13 @@ class AActor : public UObject
     float GetGameTimeSinceCreation();
     float GetDotProductTo(const class AActor* OtherActor);
     float GetDistanceTo(const class AActor* OtherActor);
-    TArray<class UActorComponent*> GetComponentsByTag(TSubclassOf<class UActorComponent> ComponentClass, FName Tag);
-    TArray<class UActorComponent*> GetComponentsByInterface(TSubclassOf<class UInterface> Interface);
+    TArray<UActorComponent*> GetComponentsByTag(TSubclassOf<class UActorComponent> ComponentClass, FName Tag);
+    TArray<UActorComponent*> GetComponentsByInterface(TSubclassOf<class UInterface> Interface);
     class UActorComponent* GetComponentByClass(TSubclassOf<class UActorComponent> ComponentClass);
     FName GetAttachParentSocketName();
     class AActor* GetAttachParentActor();
-    void GetAttachedActors(TArray<class AActor*>& OutActors, bool bResetArray, bool bRecursivelyIncludeAttachedActors);
-    void GetAllChildActors(TArray<class AActor*>& ChildActors, bool bIncludeDescendants);
+    void GetAttachedActors(TArray<AActor*>& OutActors, bool bResetArray, bool bRecursivelyIncludeAttachedActors);
+    void GetAllChildActors(TArray<AActor*>& ChildActors, bool bIncludeDescendants);
     FVector GetActorUpVector();
     float GetActorTimeDilation();
     float GetActorTickInterval();
@@ -8415,7 +8415,7 @@ class AEmitterCameraLensEffectBase : public AEmitter
     float BaseFov;                                                                    // 0x0360 (size: 0x4)
     uint8 bAllowMultipleInstances;                                                    // 0x0364 (size: 0x1)
     uint8 bResetWhenRetriggered;                                                      // 0x0364 (size: 0x1)
-    TArray<class TSubclassOf<AActor>> EmittersToTreatAsSame;                          // 0x0368 (size: 0x10)
+    TArray<TSubclassOf<class AActor>> EmittersToTreatAsSame;                          // 0x0368 (size: 0x10)
     float DistFromCamera;                                                             // 0x0378 (size: 0x4)
 
 }; // Size: 0x380
@@ -8438,7 +8438,7 @@ class AGameMode : public AGameModeBase
     float MinRespawnDelay;                                                            // 0x0348 (size: 0x4)
     int32 NumTravellingPlayers;                                                       // 0x034C (size: 0x4)
     TSubclassOf<class ULocalMessage> EngineMessageClass;                              // 0x0350 (size: 0x8)
-    TArray<class APlayerState*> InactivePlayerArray;                                  // 0x0358 (size: 0x10)
+    TArray<APlayerState*> InactivePlayerArray;                                        // 0x0358 (size: 0x10)
     float InactivePlayerStateLifeSpan;                                                // 0x0368 (size: 0x4)
     int32 MaxInactivePlayers;                                                         // 0x036C (size: 0x4)
     bool bHandleDedicatedServerReplays;                                               // 0x0370 (size: 0x1)
@@ -8581,7 +8581,7 @@ class AGameStateBase : public AInfo
     TSubclassOf<class AGameModeBase> GameModeClass;                                   // 0x0290 (size: 0x8)
     class AGameModeBase* AuthorityGameMode;                                           // 0x0298 (size: 0x8)
     TSubclassOf<class ASpectatorPawn> SpectatorClass;                                 // 0x02A0 (size: 0x8)
-    TArray<class APlayerState*> PlayerArray;                                          // 0x02A8 (size: 0x10)
+    TArray<APlayerState*> PlayerArray;                                                // 0x02A8 (size: 0x10)
     bool bReplicatedHasBegunPlay;                                                     // 0x02B8 (size: 0x1)
     float ReplicatedWorldTimeSeconds;                                                 // 0x02BC (size: 0x4)
     float ServerWorldTimeSecondsDelta;                                                // 0x02C0 (size: 0x4)
@@ -8613,7 +8613,7 @@ class AHUD : public AActor
     uint8 bShowHitBoxDebugInfo;                                                       // 0x02A0 (size: 0x1)
     uint8 bShowOverlays;                                                              // 0x02A0 (size: 0x1)
     uint8 bEnableDebugTextShadow;                                                     // 0x02A0 (size: 0x1)
-    TArray<class AActor*> PostRenderedActors;                                         // 0x02A8 (size: 0x10)
+    TArray<AActor*> PostRenderedActors;                                               // 0x02A8 (size: 0x10)
     TArray<FName> DebugDisplay;                                                       // 0x02C0 (size: 0x10)
     TArray<FName> ToggledDebugCategories;                                             // 0x02D0 (size: 0x10)
     class UCanvas* Canvas;                                                            // 0x02E0 (size: 0x8)
@@ -8639,7 +8639,7 @@ class AHUD : public AActor
     void GetTextSize(FString Text, float& OutWidth, float& OutHeight, class UFont* Font, float Scale);
     class APlayerController* GetOwningPlayerController();
     class APawn* GetOwningPawn();
-    void GetActorsInSelectionRectangle(TSubclassOf<class AActor> ClassFilter, const FVector2D& FirstPoint, const FVector2D& SecondPoint, TArray<class AActor*>& OutActors, bool bIncludeNonCollidingComponents, bool bActorMustBeFullyEnclosed);
+    void GetActorsInSelectionRectangle(TSubclassOf<class AActor> ClassFilter, const FVector2D& FirstPoint, const FVector2D& SecondPoint, TArray<AActor*>& OutActors, bool bIncludeNonCollidingComponents, bool bActorMustBeFullyEnclosed);
     void DrawTextureSimple(class UTexture* Texture, float ScreenX, float ScreenY, float Scale, bool bScalePosition);
     void DrawTexture(class UTexture* Texture, float ScreenX, float ScreenY, float ScreenW, float ScreenH, float TextureU, float TextureV, float TextureUWidth, float TextureVHeight, FLinearColor TintColor, TEnumAsByte<EBlendMode> BlendMode, float Scale, bool bScalePosition, float Rotation, FVector2D RotPivot);
     void DrawText(FString Text, FLinearColor TextColor, float ScreenX, float ScreenY, class UFont* Font, float Scale, bool bScalePosition);
@@ -8672,12 +8672,12 @@ class AKillZVolume : public APhysicsVolume
 class ALODActor : public AActor
 {
     class UStaticMeshComponent* StaticMeshComponent;                                  // 0x0290 (size: 0x8)
-    TMap<class FHLODInstancingKey, class UInstancedStaticMeshComponent*> InstancedStaticMeshComponents; // 0x0298 (size: 0x50)
+    TMap<FHLODInstancingKey, UInstancedStaticMeshComponent*> InstancedStaticMeshComponents; // 0x0298 (size: 0x50)
     class UHLODProxy* Proxy;                                                          // 0x02E8 (size: 0x8)
     FName Key;                                                                        // 0x02F0 (size: 0x8)
     float LODDrawDistance;                                                            // 0x02F8 (size: 0x4)
     int32 LODLevel;                                                                   // 0x02FC (size: 0x4)
-    TArray<class AActor*> SubActors;                                                  // 0x0300 (size: 0x10)
+    TArray<AActor*> SubActors;                                                        // 0x0300 (size: 0x10)
     uint8 CachedNumHLODLevels;                                                        // 0x0310 (size: 0x1)
 
     void OnSubActorEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason::Type> Reason);
@@ -8692,7 +8692,7 @@ class ALevelBounds : public AActor
 
 class ALevelInstance : public AActor
 {
-    TSoftObjectPtr<UWorld> CookedWorldAsset;                                          // 0x0298 (size: 0x30)
+    TSoftObjectPtr<class UWorld> CookedWorldAsset;                                    // 0x0298 (size: 0x30)
     FGuid LevelInstanceSpawnGuid;                                                     // 0x02C8 (size: 0x10)
 
     void OnRep_LevelInstanceSpawnGuid();
@@ -8758,7 +8758,7 @@ class ALightWeightInstanceManager : public AActor
 
 class ALightWeightInstanceStaticMeshManager : public ALightWeightInstanceManager
 {
-    TSoftObjectPtr<UStaticMesh> StaticMesh;                                           // 0x0338 (size: 0x30)
+    TSoftObjectPtr<class UStaticMesh> StaticMesh;                                     // 0x0338 (size: 0x30)
     class UHierarchicalInstancedStaticMeshComponent* InstancedStaticMeshComponent;    // 0x0368 (size: 0x8)
     TArray<int32> RenderingIndicesToDataIndices;                                      // 0x0370 (size: 0x10)
     TArray<int32> DataIndicesToRenderingIndices;                                      // 0x0380 (size: 0x10)
@@ -8792,7 +8792,7 @@ class ALocationVolume : public AVolume
 
 class AMaterialInstanceActor : public AActor
 {
-    TArray<class AActor*> TargetActors;                                               // 0x0290 (size: 0x10)
+    TArray<AActor*> TargetActors;                                                     // 0x0290 (size: 0x10)
 
 }; // Size: 0x2A0
 
@@ -8802,7 +8802,7 @@ class AMeshMergeCullingVolume : public AVolume
 
 class ANavigationDataChunkActor : public APartitionActor
 {
-    TArray<class UNavigationDataChunk*> NavDataChunks;                                // 0x0290 (size: 0x10)
+    TArray<UNavigationDataChunk*> NavDataChunks;                                      // 0x0290 (size: 0x10)
     FBox DataChunkActorBounds;                                                        // 0x02A0 (size: 0x38)
 
 }; // Size: 0x2D8
@@ -8952,14 +8952,14 @@ class APlayerCameraManager : public AActor
     FTViewTarget PendingViewTarget;                                                   // 0x1AA0 (size: 0x7E0)
     FCameraCacheEntry CameraCachePrivate;                                             // 0x22B0 (size: 0x7D0)
     FCameraCacheEntry LastFrameCameraCachePrivate;                                    // 0x2A80 (size: 0x7D0)
-    TArray<class UCameraModifier*> ModifierList;                                      // 0x3250 (size: 0x10)
-    TArray<class TSubclassOf<UCameraModifier>> DefaultModifiers;                      // 0x3260 (size: 0x10)
+    TArray<UCameraModifier*> ModifierList;                                            // 0x3250 (size: 0x10)
+    TArray<TSubclassOf<class UCameraModifier>> DefaultModifiers;                      // 0x3260 (size: 0x10)
     float FreeCamDistance;                                                            // 0x3270 (size: 0x4)
     FVector FreeCamOffset;                                                            // 0x3278 (size: 0x18)
     FVector ViewTargetOffset;                                                         // 0x3290 (size: 0x18)
     FPlayerCameraManagerOnAudioFadeChangeEvent OnAudioFadeChangeEvent;                // 0x32A8 (size: 0x10)
     void OnAudioFadeChangeSignature(bool bFadeOut, float FadeTime);
-    TArray<TScriptInterface<ICameraLensEffectInterface>> CameraLensEffects;           // 0x32D0 (size: 0x10)
+    TArray<TScriptInterface<class ICameraLensEffectInterface>> CameraLensEffects;     // 0x32D0 (size: 0x10)
     class UCameraModifier_CameraShake* CachedCameraShakeMod;                          // 0x32E0 (size: 0x8)
     TArray<FPostProcessSettings> PostProcessBlendCache;                               // 0x32E8 (size: 0x10)
     class ACameraActor* AnimCameraActor;                                              // 0x3308 (size: 0x8)
@@ -9018,8 +9018,8 @@ class APlayerController : public AController
     bool bAutoManageActiveCameraTarget;                                               // 0x0358 (size: 0x1)
     FRotator TargetViewRotation;                                                      // 0x0360 (size: 0x18)
     float SmoothTargetViewRotationSpeed;                                              // 0x0390 (size: 0x4)
-    TArray<class AActor*> HiddenActors;                                               // 0x0398 (size: 0x10)
-    TArray<TWeakObjectPtr<UPrimitiveComponent>> HiddenPrimitiveComponents;            // 0x03A8 (size: 0x10)
+    TArray<AActor*> HiddenActors;                                                     // 0x0398 (size: 0x10)
+    TArray<TWeakObjectPtr<class UPrimitiveComponent>> HiddenPrimitiveComponents;      // 0x03A8 (size: 0x10)
     float LastSpectatorStateSynchTime;                                                // 0x03BC (size: 0x4)
     FVector LastSpectatorSyncLocation;                                                // 0x03C0 (size: 0x18)
     FRotator LastSpectatorSyncRotation;                                               // 0x03D8 (size: 0x18)
@@ -9304,8 +9304,8 @@ class APostProcessVolume : public AVolume
 
 class APrecomputedVisibilityOverrideVolume : public AVolume
 {
-    TArray<class AActor*> OverrideVisibleActors;                                      // 0x02C8 (size: 0x10)
-    TArray<class AActor*> OverrideInvisibleActors;                                    // 0x02D8 (size: 0x10)
+    TArray<AActor*> OverrideVisibleActors;                                            // 0x02C8 (size: 0x10)
+    TArray<AActor*> OverrideInvisibleActors;                                          // 0x02D8 (size: 0x10)
     TArray<FName> OverrideInvisibleLevels;                                            // 0x02E8 (size: 0x10)
 
 }; // Size: 0x2F8
@@ -9561,7 +9561,7 @@ class AWindDirectionalSource : public AInfo
 class AWorldDataLayers : public AInfo
 {
     TSet<UDataLayerInstance*> DataLayerInstances;                                     // 0x0330 (size: 0x50)
-    TMap<class FName, class TWeakObjectPtr<UDataLayerInstance>> DeprecatedDataLayerNameToDataLayerInstance; // 0x0380 (size: 0x50)
+    TMap<FName, TWeakObjectPtr<class UDataLayerInstance>> DeprecatedDataLayerNameToDataLayerInstance; // 0x0380 (size: 0x50)
     TSet<UDEPRECATED_DataLayer*> WorldDataLayers;                                     // 0x03D0 (size: 0x50)
     TArray<FName> RepActiveDataLayerNames;                                            // 0x0420 (size: 0x10)
     TArray<FName> RepLoadedDataLayerNames;                                            // 0x0430 (size: 0x10)
@@ -9579,7 +9579,7 @@ class AWorldPartitionHLOD : public AActor
 {
     uint32 LODLevel;                                                                  // 0x0290 (size: 0x4)
     bool bRequireWarmup;                                                              // 0x0294 (size: 0x1)
-    TSoftObjectPtr<UWorldPartitionRuntimeCell> SourceCell;                            // 0x0298 (size: 0x30)
+    TSoftObjectPtr<class UWorldPartitionRuntimeCell> SourceCell;                      // 0x0298 (size: 0x30)
     FName SourceCellName;                                                             // 0x02C8 (size: 0x8)
 
 }; // Size: 0x2D0
@@ -9633,7 +9633,7 @@ class AWorldSettings : public AInfo
     class UNavigationSystemConfig* NavigationSystemConfig;                            // 0x02E8 (size: 0x8)
     class UNavigationSystemConfig* NavigationSystemConfigOverride;                    // 0x02F0 (size: 0x8)
     class UWorldPartition* WorldPartition;                                            // 0x02F8 (size: 0x8)
-    TArray<class UDataLayerAsset*> BaseNavmeshDataLayers;                             // 0x0300 (size: 0x10)
+    TArray<UDataLayerAsset*> BaseNavmeshDataLayers;                                   // 0x0300 (size: 0x10)
     float WorldToMeters;                                                              // 0x0310 (size: 0x4)
     float KillZ;                                                                      // 0x0314 (size: 0x4)
     TSubclassOf<class UDamageType> KillZDamageType;                                   // 0x0318 (size: 0x8)
@@ -9660,11 +9660,11 @@ class AWorldSettings : public AInfo
     float MaxUndilatedFrameTime;                                                      // 0x03E0 (size: 0x4)
     FBroadphaseSettings BroadphaseSettings;                                           // 0x03E8 (size: 0x80)
     TArray<FNetViewer> ReplicationViewers;                                            // 0x0468 (size: 0x10)
-    TArray<class UAssetUserData*> AssetUserData;                                      // 0x0478 (size: 0x10)
+    TArray<UAssetUserData*> AssetUserData;                                            // 0x0478 (size: 0x10)
     class APlayerState* PauserPlayerState;                                            // 0x0488 (size: 0x8)
     int32 MaxNumberOfBookmarks;                                                       // 0x0490 (size: 0x4)
     TSubclassOf<class UBookmarkBase> DefaultBookmarkClass;                            // 0x0498 (size: 0x8)
-    TArray<class UBookmarkBase*> BookmarkArray;                                       // 0x04A0 (size: 0x10)
+    TArray<UBookmarkBase*> BookmarkArray;                                             // 0x04A0 (size: 0x10)
     TSubclassOf<class UBookmarkBase> LastBookmarkClass;                               // 0x04B0 (size: 0x8)
 
     void OnRep_WorldGravityZ();
@@ -9748,7 +9748,7 @@ class ICameraLensEffectInterface : public IInterface
 {
 
     class UFXSystemComponent* GetPrimaryParticleComponent();
-    TArray<class UFXSystemComponent*> GetParticleComponents();
+    TArray<UFXSystemComponent*> GetParticleComponents();
 }; // Size: 0x28
 
 class ICurveSourceInterface : public IInterface
@@ -9934,7 +9934,7 @@ class UAISystemBase : public UObject
 class UActorChannel : public UChannel
 {
     class AActor* Actor;                                                              // 0x0068 (size: 0x8)
-    TArray<class UObject*> CreateSubObjects;                                          // 0x0158 (size: 0x10)
+    TArray<UObject*> CreateSubObjects;                                                // 0x0158 (size: 0x10)
 
 }; // Size: 0x290
 
@@ -9942,7 +9942,7 @@ class UActorComponent : public UObject
 {
     FActorComponentTickFunction PrimaryComponentTick;                                 // 0x0030 (size: 0x30)
     TArray<FName> ComponentTags;                                                      // 0x0060 (size: 0x10)
-    TArray<class UAssetUserData*> AssetUserData;                                      // 0x0070 (size: 0x10)
+    TArray<UAssetUserData*> AssetUserData;                                            // 0x0070 (size: 0x10)
     int32 UCSSerializationIndex;                                                      // 0x0084 (size: 0x4)
     uint8 bNetAddressable;                                                            // 0x0088 (size: 0x1)
     uint8 bReplicateUsingRegisteredSubObjectList;                                     // 0x0088 (size: 0x1)
@@ -9993,7 +9993,7 @@ class UActorComponentInstanceDataTransientOuter : public UObject
 
 class UActorContainer : public UObject
 {
-    TMap<class FName, class AActor*> Actors;                                          // 0x0028 (size: 0x50)
+    TMap<FName, AActor*> Actors;                                                      // 0x0028 (size: 0x50)
 
 }; // Size: 0x78
 
@@ -10080,12 +10080,12 @@ class UAnimBlueprintGeneratedClass : public UBlueprintGeneratedClass
     TArray<FBakedAnimationStateMachine> BakedStateMachines;                           // 0x0388 (size: 0x10)
     class USkeleton* TargetSkeleton;                                                  // 0x0398 (size: 0x8)
     TArray<FAnimNotifyEvent> AnimNotifies;                                            // 0x03A0 (size: 0x10)
-    TMap<class FName, class FCachedPoseIndices> OrderedSavedPoseIndicesMap;           // 0x03B0 (size: 0x50)
+    TMap<FName, FCachedPoseIndices> OrderedSavedPoseIndicesMap;                       // 0x03B0 (size: 0x50)
     TArray<FName> SyncGroupNames;                                                     // 0x0480 (size: 0x10)
-    TMap<class FName, class FGraphAssetPlayerInformation> GraphAssetPlayerInformation; // 0x0490 (size: 0x50)
-    TMap<class FName, class FAnimGraphBlendOptions> GraphBlendOptions;                // 0x04E0 (size: 0x50)
+    TMap<FName, FGraphAssetPlayerInformation> GraphAssetPlayerInformation;            // 0x0490 (size: 0x50)
+    TMap<FName, FAnimGraphBlendOptions> GraphBlendOptions;                            // 0x04E0 (size: 0x50)
     TArray<FAnimNodeData> AnimNodeData;                                               // 0x0530 (size: 0x10)
-    TMap<class UScriptStruct*, class FAnimNodeStructData> NodeTypeMap;                // 0x0540 (size: 0x50)
+    TMap<UScriptStruct*, FAnimNodeStructData> NodeTypeMap;                            // 0x0540 (size: 0x50)
 
 }; // Size: 0x5E8
 
@@ -10101,7 +10101,7 @@ class UAnimBoneCompressionCodec : public UObject
 
 class UAnimBoneCompressionSettings : public UObject
 {
-    TArray<class UAnimBoneCompressionCodec*> Codecs;                                  // 0x0028 (size: 0x10)
+    TArray<UAnimBoneCompressionCodec*> Codecs;                                        // 0x0028 (size: 0x10)
 
 }; // Size: 0x38
 
@@ -10110,7 +10110,7 @@ class UAnimClassData : public UObject
     TArray<FBakedAnimationStateMachine> BakedStateMachines;                           // 0x0030 (size: 0x10)
     class USkeleton* TargetSkeleton;                                                  // 0x0040 (size: 0x8)
     TArray<FAnimNotifyEvent> AnimNotifies;                                            // 0x0048 (size: 0x10)
-    TMap<class FName, class FCachedPoseIndices> OrderedSavedPoseIndicesMap;           // 0x0058 (size: 0x50)
+    TMap<FName, FCachedPoseIndices> OrderedSavedPoseIndicesMap;                       // 0x0058 (size: 0x50)
     TArray<FAnimBlueprintFunction> AnimBlueprintFunctions;                            // 0x00A8 (size: 0x10)
     TArray<FAnimBlueprintFunctionData> AnimBlueprintFunctionData;                     // 0x00B8 (size: 0x10)
     TArray<TFieldPath<FStructProperty>> AnimNodeProperties;                           // 0x00C8 (size: 0x10)
@@ -10120,9 +10120,9 @@ class UAnimClassData : public UObject
     TArray<TFieldPath<FStructProperty>> DynamicResetNodeProperties;                   // 0x0148 (size: 0x10)
     TArray<TFieldPath<FStructProperty>> StateMachineNodeProperties;                   // 0x0168 (size: 0x10)
     TArray<TFieldPath<FStructProperty>> InitializationNodeProperties;                 // 0x0188 (size: 0x10)
-    TMap<class FName, class FGraphAssetPlayerInformation> GraphNameAssetPlayers;      // 0x01A8 (size: 0x50)
+    TMap<FName, FGraphAssetPlayerInformation> GraphNameAssetPlayers;                  // 0x01A8 (size: 0x50)
     TArray<FName> SyncGroupNames;                                                     // 0x01F8 (size: 0x10)
-    TMap<class FName, class FAnimGraphBlendOptions> GraphBlendOptions;                // 0x0208 (size: 0x50)
+    TMap<FName, FAnimGraphBlendOptions> GraphBlendOptions;                            // 0x0208 (size: 0x50)
 
 }; // Size: 0x258
 
@@ -10353,11 +10353,11 @@ class UAnimInstance : public UObject
     bool GetPropagateNotifiesToLinkedInstances();
     class USkeletalMeshComponent* GetOwningComponent();
     class AActor* GetOwningActor();
-    void GetLinkedAnimLayerInstancesByGroup(FName InGroup, TArray<class UAnimInstance*>& OutLinkedInstances);
+    void GetLinkedAnimLayerInstancesByGroup(FName InGroup, TArray<UAnimInstance*>& OutLinkedInstances);
     class UAnimInstance* GetLinkedAnimLayerInstanceByGroupAndClass(FName InGroup, TSubclassOf<class UAnimInstance> InClass);
     class UAnimInstance* GetLinkedAnimLayerInstanceByGroup(FName InGroup);
     class UAnimInstance* GetLinkedAnimLayerInstanceByClass(TSubclassOf<class UAnimInstance> InClass);
-    void GetLinkedAnimGraphInstancesByTag(FName InTag, TArray<class UAnimInstance*>& OutLinkedInstances);
+    void GetLinkedAnimGraphInstancesByTag(FName InTag, TArray<UAnimInstance*>& OutLinkedInstances);
     class UAnimInstance* GetLinkedAnimGraphInstanceByTag(FName InTag);
     float GetInstanceTransitionTimeElapsedFraction(int32 MachineIndex, int32 TransitionIndex);
     float GetInstanceTransitionTimeElapsed(int32 MachineIndex, int32 TransitionIndex);
@@ -10550,7 +10550,7 @@ class UAnimSequence : public UAnimSequenceBase
     bool bRootMotionSettingsCopiedFromMontage;                                        // 0x015D (size: 0x1)
     TArray<FAnimSyncMarker> AuthoredSyncMarkers;                                      // 0x0160 (size: 0x10)
     FFrameRate TargetFrameRate;                                                       // 0x0180 (size: 0x8)
-    TMap<class FAnimationAttributeIdentifier, class FAttributeCurve> AttributeCurves; // 0x0188 (size: 0x50)
+    TMap<FAnimationAttributeIdentifier, FAttributeCurve> AttributeCurves;             // 0x0188 (size: 0x50)
 
 }; // Size: 0x1D8
 
@@ -10622,8 +10622,8 @@ class UAnimStreamable : public UAnimSequenceBase
 class UAnimationAsset : public UObject
 {
     class USkeleton* Skeleton;                                                        // 0x0038 (size: 0x8)
-    TArray<class UAnimMetaData*> Metadata;                                            // 0x0060 (size: 0x10)
-    TArray<class UAssetUserData*> AssetUserData;                                      // 0x0070 (size: 0x10)
+    TArray<UAnimMetaData*> Metadata;                                                  // 0x0060 (size: 0x10)
+    TArray<UAssetUserData*> AssetUserData;                                            // 0x0070 (size: 0x10)
 
     float GetPlayLength();
 }; // Size: 0x80
@@ -10664,10 +10664,10 @@ class UAnimationSettings : public UDeveloperSettings
     FTimecodeCustomAttributeNameSettings BoneTimecodeCustomAttributeNameSettings;     // 0x0058 (size: 0x38)
     TArray<FCustomAttributeSetting> BoneCustomAttributesNames;                        // 0x0090 (size: 0x10)
     TArray<FString> BoneNamesWithCustomAttributes;                                    // 0x00A0 (size: 0x10)
-    TMap<class FName, class ECustomAttributeBlendType> AttributeBlendModes;           // 0x00B0 (size: 0x50)
+    TMap<FName, ECustomAttributeBlendType> AttributeBlendModes;                       // 0x00B0 (size: 0x50)
     ECustomAttributeBlendType DefaultAttributeBlendMode;                              // 0x0100 (size: 0x1)
     TArray<FString> TransformAttributeNames;                                          // 0x0108 (size: 0x10)
-    TArray<TSoftObjectPtr<UUserDefinedStruct>> UserDefinedStructAttributes;           // 0x0118 (size: 0x10)
+    TArray<TSoftObjectPtr<class UUserDefinedStruct>> UserDefinedStructAttributes;     // 0x0118 (size: 0x10)
     TArray<FMirrorFindReplaceExpression> MirrorFindReplaceExpressions;                // 0x0128 (size: 0x10)
 
     TArray<FString> GetBoneCustomAttributeNamesToImport();
@@ -10720,7 +10720,7 @@ class UAssetExportTask : public UObject
     bool bAutomated;                                                                  // 0x004B (size: 0x1)
     bool bUseFileArchive;                                                             // 0x004C (size: 0x1)
     bool bWriteEmptyFiles;                                                            // 0x004D (size: 0x1)
-    TArray<class UObject*> IgnoreObjectList;                                          // 0x0050 (size: 0x10)
+    TArray<UObject*> IgnoreObjectList;                                                // 0x0050 (size: 0x10)
     class UObject* Options;                                                           // 0x0060 (size: 0x8)
     TArray<FString> Errors;                                                           // 0x0068 (size: 0x10)
 
@@ -10732,7 +10732,7 @@ class UAssetImportData : public UObject
 
 class UAssetManager : public UObject
 {
-    TArray<class UObject*> ObjectReferenceList;                                       // 0x0330 (size: 0x10)
+    TArray<UObject*> ObjectReferenceList;                                             // 0x0330 (size: 0x10)
     bool bIsGlobalAsyncScanEnvironment;                                               // 0x0340 (size: 0x1)
     bool bShouldGuessTypeAndName;                                                     // 0x0341 (size: 0x1)
     bool bShouldUseSynchronousLoad;                                                   // 0x0342 (size: 0x1)
@@ -10819,7 +10819,7 @@ class UAsyncActionLoadPrimaryAssetClass : public UAsyncActionLoadPrimaryAssetBas
 class UAsyncActionLoadPrimaryAssetClassList : public UAsyncActionLoadPrimaryAssetBase
 {
     FAsyncActionLoadPrimaryAssetClassListCompleted Completed;                         // 0x0078 (size: 0x10)
-    void OnPrimaryAssetClassListLoaded(const TArray<class UClass*>& Loaded);
+    void OnPrimaryAssetClassListLoaded(const TArray<UClass*>& Loaded);
 
     class UAsyncActionLoadPrimaryAssetClassList* AsyncLoadPrimaryAssetClassList(class UObject* WorldContextObject, const TArray<FPrimaryAssetId>& PrimaryAssetList, const TArray<FName>& LoadBundles);
 }; // Size: 0x88
@@ -10827,7 +10827,7 @@ class UAsyncActionLoadPrimaryAssetClassList : public UAsyncActionLoadPrimaryAsse
 class UAsyncActionLoadPrimaryAssetList : public UAsyncActionLoadPrimaryAssetBase
 {
     FAsyncActionLoadPrimaryAssetListCompleted Completed;                              // 0x0078 (size: 0x10)
-    void OnPrimaryAssetListLoaded(const TArray<class UObject*>& Loaded);
+    void OnPrimaryAssetListLoaded(const TArray<UObject*>& Loaded);
 
     class UAsyncActionLoadPrimaryAssetList* AsyncLoadPrimaryAssetList(class UObject* WorldContextObject, const TArray<FPrimaryAssetId>& PrimaryAssetList, const TArray<FName>& LoadBundles);
 }; // Size: 0x88
@@ -10842,7 +10842,7 @@ class UAsyncPhysicsData : public UObject
 class UAsyncPhysicsInputComponent : public UActorComponent
 {
     TSubclassOf<class UAsyncPhysicsData> DataClass;                                   // 0x00A0 (size: 0x8)
-    TArray<class UAsyncPhysicsData*> BufferedData;                                    // 0x00A8 (size: 0x10)
+    TArray<UAsyncPhysicsData*> BufferedData;                                          // 0x00A8 (size: 0x10)
     class UAsyncPhysicsData* DataToConsume;                                           // 0x00B8 (size: 0x8)
     class UAsyncPhysicsData* DataToWrite;                                             // 0x00C0 (size: 0x8)
 
@@ -10979,7 +10979,7 @@ class UAudioParameterConversionStatics : public UBlueprintFunctionLibrary
     FAudioParameter StringToAudioParameter(FName Name, FString String);
     FAudioParameter StringArrayToAudioParameter(FName Name, TArray<FString> Strings);
     FAudioParameter ObjectToAudioParameter(FName Name, class UObject* Object);
-    FAudioParameter ObjectArrayToAudioParameter(FName Name, TArray<class UObject*> Objects);
+    FAudioParameter ObjectArrayToAudioParameter(FName Name, TArray<UObject*> Objects);
     FAudioParameter IntegerToAudioParameter(FName Name, int32 Integer);
     FAudioParameter IntegerArrayToAudioParameter(FName Name, TArray<int32> Integers);
     FAudioParameter FloatToAudioParameter(FName Name, float float);
@@ -11031,7 +11031,7 @@ class UAudioWidgetSubsystem : public UEngineSubsystem
 
 class UAutoDestroySubsystem : public UTickableWorldSubsystem
 {
-    TArray<class AActor*> ActorsToPoll;                                               // 0x0040 (size: 0x10)
+    TArray<AActor*> ActorsToPoll;                                                     // 0x0040 (size: 0x10)
 
     void OnActorEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason::Type> EndPlayReason);
 }; // Size: 0x50
@@ -11140,8 +11140,8 @@ class UBlueprint : public UBlueprintCore
     uint8 bIsRegeneratingOnLoad;                                                      // 0x0061 (size: 0x1)
     int32 BlueprintSystemVersion;                                                     // 0x0064 (size: 0x4)
     class USimpleConstructionScript* SimpleConstructionScript;                        // 0x0068 (size: 0x8)
-    TArray<class UActorComponent*> ComponentTemplates;                                // 0x0070 (size: 0x10)
-    TArray<class UTimelineTemplate*> Timelines;                                       // 0x0080 (size: 0x10)
+    TArray<UActorComponent*> ComponentTemplates;                                      // 0x0070 (size: 0x10)
+    TArray<UTimelineTemplate*> Timelines;                                             // 0x0080 (size: 0x10)
     TArray<FBPComponentClassOverride> ComponentClassOverrides;                        // 0x0090 (size: 0x10)
     class UInheritableComponentHandler* InheritableComponentHandler;                  // 0x00A0 (size: 0x8)
 
@@ -11175,16 +11175,16 @@ class UBlueprintGeneratedClass : public UClass
     int32 NumReplicatedProperties;                                                    // 0x0238 (size: 0x4)
     uint8 bHasNativizedParent;                                                        // 0x023C (size: 0x1)
     uint8 bHasCookedComponentInstancingData;                                          // 0x023C (size: 0x1)
-    TArray<class UDynamicBlueprintBinding*> DynamicBindingObjects;                    // 0x0240 (size: 0x10)
-    TArray<class UActorComponent*> ComponentTemplates;                                // 0x0250 (size: 0x10)
-    TArray<class UTimelineTemplate*> Timelines;                                       // 0x0260 (size: 0x10)
+    TArray<UDynamicBlueprintBinding*> DynamicBindingObjects;                          // 0x0240 (size: 0x10)
+    TArray<UActorComponent*> ComponentTemplates;                                      // 0x0250 (size: 0x10)
+    TArray<UTimelineTemplate*> Timelines;                                             // 0x0260 (size: 0x10)
     TArray<FBPComponentClassOverride> ComponentClassOverrides;                        // 0x0270 (size: 0x10)
     class USimpleConstructionScript* SimpleConstructionScript;                        // 0x0280 (size: 0x8)
     class UInheritableComponentHandler* InheritableComponentHandler;                  // 0x0288 (size: 0x8)
     class UStructProperty* UberGraphFramePointerProperty;                             // 0x0290 (size: 0x8)
     class UFunction* UberGraphFunction;                                               // 0x02A0 (size: 0x8)
-    TMap<class FName, class FGuid> CookedPropertyGuids;                               // 0x02A8 (size: 0x50)
-    TMap<class FName, class FBlueprintCookedComponentInstancingData> CookedComponentInstancingData; // 0x02F8 (size: 0x50)
+    TMap<FName, FGuid> CookedPropertyGuids;                                           // 0x02A8 (size: 0x50)
+    TMap<FName, FBlueprintCookedComponentInstancingData> CookedComponentInstancingData; // 0x02F8 (size: 0x50)
 
 }; // Size: 0x380
 
@@ -11398,7 +11398,7 @@ class UBookmarkBase : public UObject
 
 class UBoundsCopyComponent : public UActorComponent
 {
-    TSoftObjectPtr<AActor> BoundsSourceActor;                                         // 0x00A0 (size: 0x30)
+    TSoftObjectPtr<class AActor> BoundsSourceActor;                                   // 0x00A0 (size: 0x30)
     bool bUseCollidingComponentsForSourceBounds;                                      // 0x00D0 (size: 0x1)
     bool bKeepOwnBoundsScale;                                                         // 0x00D1 (size: 0x1)
     bool bUseCollidingComponentsForOwnBounds;                                         // 0x00D2 (size: 0x1)
@@ -11526,7 +11526,7 @@ class UCameraModifier : public UObject
 class UCameraModifier_CameraShake : public UCameraModifier
 {
     TArray<FActiveCameraShakeInfo> ActiveShakes;                                      // 0x0048 (size: 0x10)
-    TMap<class TSubclassOf<UCameraShakeBase>, class FPooledCameraShakes> ExpiredPooledShakesMap; // 0x0058 (size: 0x50)
+    TMap<TSubclassOf<class UCameraShakeBase>, FPooledCameraShakes> ExpiredPooledShakesMap; // 0x0058 (size: 0x50)
     float SplitScreenShakeScale;                                                      // 0x00A8 (size: 0x4)
 
 }; // Size: 0xB0
@@ -11847,7 +11847,7 @@ class UCheatManager : public UObject
 {
     class ADebugCameraController* DebugCameraControllerRef;                           // 0x0028 (size: 0x8)
     TSubclassOf<class ADebugCameraController> DebugCameraControllerClass;             // 0x0030 (size: 0x8)
-    TArray<class UCheatManagerExtension*> CheatManagerExtensions;                     // 0x0078 (size: 0x10)
+    TArray<UCheatManagerExtension*> CheatManagerExtensions;                           // 0x0078 (size: 0x10)
 
     void Walk();
     void ViewSelf();
@@ -11943,7 +11943,7 @@ class UChildConnection : public UNetConnection
 class UClassCookedMetaData : public UObject
 {
     FStructCookedMetaDataStore ClassMetaData;                                         // 0x0028 (size: 0xA0)
-    TMap<class FName, class FStructCookedMetaDataStore> FunctionsMetaData;            // 0x00C8 (size: 0x50)
+    TMap<FName, FStructCookedMetaDataStore> FunctionsMetaData;                        // 0x00C8 (size: 0x50)
 
 }; // Size: 0x118
 
@@ -12008,15 +12008,15 @@ class UComponentElementWorldInterface : public UObject
 
 class UCompositeCurveTable : public UCurveTable
 {
-    TArray<class UCurveTable*> ParentTables;                                          // 0x00A0 (size: 0x10)
-    TArray<class UCurveTable*> OldParentTables;                                       // 0x00B0 (size: 0x10)
+    TArray<UCurveTable*> ParentTables;                                                // 0x00A0 (size: 0x10)
+    TArray<UCurveTable*> OldParentTables;                                             // 0x00B0 (size: 0x10)
 
 }; // Size: 0xC8
 
 class UCompositeDataTable : public UDataTable
 {
-    TArray<class UDataTable*> ParentTables;                                           // 0x00B0 (size: 0x10)
-    TArray<class UDataTable*> OldParentTables;                                        // 0x00C0 (size: 0x10)
+    TArray<UDataTable*> ParentTables;                                                 // 0x00B0 (size: 0x10)
+    TArray<UDataTable*> OldParentTables;                                              // 0x00C0 (size: 0x10)
 
 }; // Size: 0xD8
 
@@ -12152,7 +12152,7 @@ class UCurveLinearColorAtlas : public UTexture2D
     uint32 TextureSize;                                                               // 0x02A8 (size: 0x4)
     uint8 bSquareResolution;                                                          // 0x02AC (size: 0x1)
     uint32 TextureHeight;                                                             // 0x02B0 (size: 0x4)
-    TArray<class UCurveLinearColor*> GradientCurves;                                  // 0x02B8 (size: 0x10)
+    TArray<UCurveLinearColor*> GradientCurves;                                        // 0x02B8 (size: 0x10)
 
     bool GetCurvePosition(class UCurveLinearColor* InCurve, float& Position);
 }; // Size: 0x2D0
@@ -12183,7 +12183,7 @@ class UDEPRECATED_DataLayer : public UObject
     EDataLayerRuntimeState InitialRuntimeState;                                       // 0x0034 (size: 0x1)
     FColor DebugColor;                                                                // 0x0038 (size: 0x4)
     class UDEPRECATED_DataLayer* Parent;                                              // 0x0040 (size: 0x8)
-    TArray<class UDEPRECATED_DataLayer*> Children;                                    // 0x0048 (size: 0x10)
+    TArray<UDEPRECATED_DataLayer*> Children;                                          // 0x0048 (size: 0x10)
 
     bool IsVisible();
     bool IsRuntime();
@@ -12247,7 +12247,7 @@ class UDataLayerInstance : public UObject
 {
     EDataLayerRuntimeState InitialRuntimeState;                                       // 0x0028 (size: 0x1)
     class UDataLayerInstance* Parent;                                                 // 0x0030 (size: 0x8)
-    TArray<class UDataLayerInstance*> Children;                                       // 0x0038 (size: 0x10)
+    TArray<UDataLayerInstance*> Children;                                             // 0x0038 (size: 0x10)
 
     bool IsVisible();
     bool IsRuntime();
@@ -12367,10 +12367,10 @@ class UDemoNetConnection : public UNetConnection
 
 class UDemoNetDriver : public UNetDriver
 {
-    TMap<class FString, class FRollbackNetStartupActorInfo> RollbackNetStartupActors; // 0x07C8 (size: 0x50)
+    TMap<FString, FRollbackNetStartupActorInfo> RollbackNetStartupActors;             // 0x07C8 (size: 0x50)
     float CheckpointSaveMaxMSPerFrame;                                                // 0x08F4 (size: 0x4)
     TArray<FMulticastRecordOptions> MulticastRecordOptions;                           // 0x0910 (size: 0x10)
-    TArray<class APlayerController*> SpectatorControllers;                            // 0x0920 (size: 0x10)
+    TArray<APlayerController*> SpectatorControllers;                                  // 0x0920 (size: 0x10)
 
 }; // Size: 0x1430
 
@@ -12406,8 +12406,8 @@ class UDeviceProfileFragment : public UObject
 
 class UDeviceProfileManager : public UObject
 {
-    TArray<class UDeviceProfile*> Profiles;                                           // 0x0028 (size: 0x10)
-    TArray<class UDeviceProfile*> BackupProfiles;                                     // 0x0038 (size: 0x10)
+    TArray<UDeviceProfile*> Profiles;                                                 // 0x0028 (size: 0x10)
+    TArray<UDeviceProfile*> BackupProfiles;                                           // 0x0038 (size: 0x10)
 
 }; // Size: 0x90
 
@@ -12636,7 +12636,7 @@ class UDynamicSubsystem : public USubsystem
 class UEdGraph : public UObject
 {
     TSubclassOf<class UEdGraphSchema> Schema;                                         // 0x0028 (size: 0x8)
-    TArray<class UEdGraphNode*> Nodes;                                                // 0x0030 (size: 0x10)
+    TArray<UEdGraphNode*> Nodes;                                                      // 0x0030 (size: 0x10)
     uint8 bEditable;                                                                  // 0x0040 (size: 0x1)
     uint8 bAllowDeletion;                                                             // 0x0040 (size: 0x1)
     uint8 bAllowRenaming;                                                             // 0x0040 (size: 0x1)
@@ -12645,7 +12645,7 @@ class UEdGraph : public UObject
 
 class UEdGraphNode : public UObject
 {
-    TArray<class UEdGraphPin_Deprecated*> DeprecatedPins;                             // 0x0038 (size: 0x10)
+    TArray<UEdGraphPin_Deprecated*> DeprecatedPins;                                   // 0x0038 (size: 0x10)
     int32 NodePosX;                                                                   // 0x0048 (size: 0x4)
     int32 NodePosY;                                                                   // 0x004C (size: 0x4)
     int32 NodeWidth;                                                                  // 0x0050 (size: 0x4)
@@ -12680,8 +12680,8 @@ class UEdGraphPin_Deprecated : public UObject
     FString AutogeneratedDefaultValue;                                                // 0x00B8 (size: 0x10)
     class UObject* DefaultObject;                                                     // 0x00C8 (size: 0x8)
     FText DefaultTextValue;                                                           // 0x00D0 (size: 0x18)
-    TArray<class UEdGraphPin_Deprecated*> LinkedTo;                                   // 0x00E8 (size: 0x10)
-    TArray<class UEdGraphPin_Deprecated*> SubPins;                                    // 0x00F8 (size: 0x10)
+    TArray<UEdGraphPin_Deprecated*> LinkedTo;                                         // 0x00E8 (size: 0x10)
+    TArray<UEdGraphPin_Deprecated*> SubPins;                                          // 0x00F8 (size: 0x10)
     class UEdGraphPin_Deprecated* ParentPin;                                          // 0x0108 (size: 0x8)
     class UEdGraphPin_Deprecated* ReferencePassThroughConnection;                     // 0x0110 (size: 0x8)
 
@@ -12711,7 +12711,7 @@ class UEngine : public UObject
     FSoftObjectPath LargeFontName;                                                    // 0x00B0 (size: 0x20)
     class UFont* SubtitleFont;                                                        // 0x00D0 (size: 0x8)
     FSoftObjectPath SubtitleFontName;                                                 // 0x00D8 (size: 0x20)
-    TArray<class UFont*> AdditionalFonts;                                             // 0x00F8 (size: 0x10)
+    TArray<UFont*> AdditionalFonts;                                                   // 0x00F8 (size: 0x10)
     TArray<FString> AdditionalFontNames;                                              // 0x0108 (size: 0x10)
     TSubclassOf<class UConsole> ConsoleClass;                                         // 0x0118 (size: 0x8)
     FSoftClassPath ConsoleClassName;                                                  // 0x0120 (size: 0x20)
@@ -13046,7 +13046,7 @@ class UExporter : public UObject
     class UAssetExportTask* ExportTask;                                               // 0x0068 (size: 0x8)
 
     bool ScriptRunAssetExportTask(class UAssetExportTask* Task);
-    bool RunAssetExportTasks(const TArray<class UAssetExportTask*>& ExportTasks);
+    bool RunAssetExportTasks(const TArray<UAssetExportTask*>& ExportTasks);
     bool RunAssetExportTask(class UAssetExportTask* Task);
 }; // Size: 0x78
 
@@ -13087,7 +13087,7 @@ class UFont : public UObject
 {
     EFontCacheType FontCacheType;                                                     // 0x0030 (size: 0x1)
     TArray<FFontCharacter> Characters;                                                // 0x0038 (size: 0x10)
-    TArray<class UTexture2D*> Textures;                                               // 0x0048 (size: 0x10)
+    TArray<UTexture2D*> Textures;                                                     // 0x0048 (size: 0x10)
     int32 IsRemapped;                                                                 // 0x0058 (size: 0x4)
     float EmScale;                                                                    // 0x005C (size: 0x4)
     float Ascent;                                                                     // 0x0060 (size: 0x4)
@@ -13164,9 +13164,9 @@ class UGameEngine : public UEngine
 
 class UGameInstance : public UObject
 {
-    TArray<class ULocalPlayer*> LocalPlayers;                                         // 0x0038 (size: 0x10)
+    TArray<ULocalPlayer*> LocalPlayers;                                               // 0x0038 (size: 0x10)
     class UOnlineSession* OnlineSession;                                              // 0x0048 (size: 0x8)
-    TArray<class UObject*> ReferencedObjects;                                         // 0x0050 (size: 0x10)
+    TArray<UObject*> ReferencedObjects;                                               // 0x0050 (size: 0x10)
     FGameInstanceOnPawnControllerChangedDelegates OnPawnControllerChangedDelegates;   // 0x0078 (size: 0x10)
     void OnPawnControllerChanged(class APawn* Pawn, class AController* Controller);
     FGameInstanceOnInputDeviceConnectionChange OnInputDeviceConnectionChange;         // 0x00A0 (size: 0x10)
@@ -13313,7 +13313,7 @@ class UGameplayStatics : public UBlueprintFunctionLibrary
 {
 
     void UnRetainAllSoundsInSoundClass(class USoundClass* InSoundClass);
-    void UnloadStreamLevelBySoftObjectPtr(const class UObject* WorldContextObject, const TSoftObjectPtr<UWorld> Level, FLatentActionInfo LatentInfo, bool bShouldBlockOnUnload);
+    void UnloadStreamLevelBySoftObjectPtr(const class UObject* WorldContextObject, const TSoftObjectPtr<class UWorld> Level, FLatentActionInfo LatentInfo, bool bShouldBlockOnUnload);
     void UnloadStreamLevel(const class UObject* WorldContextObject, FName LevelName, FLatentActionInfo LatentInfo, bool bShouldBlockOnUnload);
     bool SuggestProjectileVelocity_CustomArc(const class UObject* WorldContextObject, FVector& OutLaunchVelocity, FVector StartPos, FVector EndPos, float OverrideGravityZ, float ArcParam);
     class UAudioComponent* SpawnSoundAttached(class USoundBase* Sound, class USceneComponent* AttachToComponent, FName AttachPointName, FVector Location, FRotator Rotation, TEnumAsByte<EAttachLocation::Type> LocationType, bool bStopWhenAttachedToDestroyed, float VolumeMultiplier, float PitchMultiplier, float StartTime, class USoundAttenuation* AttenuationSettings, class USoundConcurrency* ConcurrencySettings, bool bAutoDestroy);
@@ -13360,11 +13360,11 @@ class UGameplayStatics : public UBlueprintFunctionLibrary
     void PlayDialogueAtLocation(const class UObject* WorldContextObject, class UDialogueWave* Dialogue, const FDialogueContext& Context, FVector Location, FRotator Rotation, float VolumeMultiplier, float PitchMultiplier, float StartTime, class USoundAttenuation* AttenuationSettings);
     void PlayDialogue2D(const class UObject* WorldContextObject, class UDialogueWave* Dialogue, const FDialogueContext& Context, float VolumeMultiplier, float PitchMultiplier, float StartTime);
     FString ParseOption(FString Options, FString Key);
-    void OpenLevelBySoftObjectPtr(const class UObject* WorldContextObject, const TSoftObjectPtr<UWorld> Level, bool bAbsolute, FString Options);
+    void OpenLevelBySoftObjectPtr(const class UObject* WorldContextObject, const TSoftObjectPtr<class UWorld> Level, bool bAbsolute, FString Options);
     void OpenLevel(const class UObject* WorldContextObject, FName LevelName, bool bAbsolute, FString Options);
     bool ObjectIsA(const class UObject* Object, UClass* ObjectClass);
     FHitResult MakeHitResult(bool bBlockingHit, bool bInitialOverlap, float Time, float Distance, FVector Location, FVector ImpactPoint, FVector Normal, FVector ImpactNormal, class UPhysicalMaterial* PhysMat, class AActor* HitActor, class UPrimitiveComponent* HitComponent, FName HitBoneName, FName BoneName, int32 HitItem, int32 ElementIndex, int32 FaceIndex, FVector TraceStart, FVector TraceEnd);
-    void LoadStreamLevelBySoftObjectPtr(const class UObject* WorldContextObject, const TSoftObjectPtr<UWorld> Level, bool bMakeVisibleAfterLoad, bool bShouldBlockOnLoad, FLatentActionInfo LatentInfo);
+    void LoadStreamLevelBySoftObjectPtr(const class UObject* WorldContextObject, const TSoftObjectPtr<class UWorld> Level, bool bMakeVisibleAfterLoad, bool bShouldBlockOnLoad, FLatentActionInfo LatentInfo);
     void LoadStreamLevel(const class UObject* WorldContextObject, FName LevelName, bool bMakeVisibleAfterLoad, bool bShouldBlockOnLoad, FLatentActionInfo LatentInfo);
     class USaveGame* LoadGameFromSlot(FString SlotName, const int32 UserIndex);
     bool IsSplitscreenForceDisabled(const class UObject* WorldContextObject);
@@ -13408,18 +13408,18 @@ class UGameplayStatics : public UBlueprintFunctionLibrary
     bool GetClosestListenerLocation(const class UObject* WorldContextObject, const FVector& Location, float MaximumRange, const bool bAllowAttenuationOverride, FVector& ListenerPosition);
     TArray<FName> GetAvailableSpatialPluginNames(const class UObject* WorldContextObject);
     double GetAudioTimeSeconds(const class UObject* WorldContextObject);
-    void GetAllActorsWithTag(const class UObject* WorldContextObject, FName Tag, TArray<class AActor*>& OutActors);
-    void GetAllActorsWithInterface(const class UObject* WorldContextObject, TSubclassOf<class UInterface> Interface, TArray<class AActor*>& OutActors);
-    void GetAllActorsOfClassWithTag(const class UObject* WorldContextObject, TSubclassOf<class AActor> actorClass, FName Tag, TArray<class AActor*>& OutActors);
-    void GetAllActorsOfClass(const class UObject* WorldContextObject, TSubclassOf<class AActor> actorClass, TArray<class AActor*>& OutActors);
+    void GetAllActorsWithTag(const class UObject* WorldContextObject, FName Tag, TArray<AActor*>& OutActors);
+    void GetAllActorsWithInterface(const class UObject* WorldContextObject, TSubclassOf<class UInterface> Interface, TArray<AActor*>& OutActors);
+    void GetAllActorsOfClassWithTag(const class UObject* WorldContextObject, TSubclassOf<class AActor> actorClass, FName Tag, TArray<AActor*>& OutActors);
+    void GetAllActorsOfClass(const class UObject* WorldContextObject, TSubclassOf<class AActor> actorClass, TArray<AActor*>& OutActors);
     class AActor* GetActorOfClass(const class UObject* WorldContextObject, TSubclassOf<class AActor> actorClass);
-    void GetActorArrayBounds(const TArray<class AActor*>& Actors, bool bOnlyCollidingComponents, FVector& Center, FVector& BoxExtent);
-    FVector GetActorArrayAverageLocation(const TArray<class AActor*>& Actors);
+    void GetActorArrayBounds(const TArray<AActor*>& Actors, bool bOnlyCollidingComponents, FVector& Center, FVector& BoxExtent);
+    FVector GetActorArrayAverageLocation(const TArray<AActor*>& Actors);
     FName GetActiveSpatialPluginName(const class UObject* WorldContextObject);
     void GetAccurateRealTime(int32& Seconds, double& PartialSeconds);
     void FlushLevelStreaming(const class UObject* WorldContextObject);
     class AActor* FinishSpawningActor(class AActor* Actor, const FTransform& SpawnTransform);
-    class AActor* FindNearestActor(FVector Origin, const TArray<class AActor*>& ActorsToCheck, float& Distance);
+    class AActor* FindNearestActor(FVector Origin, const TArray<AActor*>& ActorsToCheck, float& Distance);
     bool FindCollisionUV(const FHitResult& Hit, int32 UVChannel, FVector2D& UV);
     void EnableLiveStreaming(bool Enable);
     bool DoesSaveGameExist(FString SlotName, const int32 UserIndex);
@@ -13436,15 +13436,15 @@ class UGameplayStatics : public UBlueprintFunctionLibrary
     void CancelAsyncLoading();
     void BreakHitResult(const FHitResult& Hit, bool& bBlockingHit, bool& bInitialOverlap, float& Time, float& Distance, FVector& Location, FVector& ImpactPoint, FVector& Normal, FVector& ImpactNormal, class UPhysicalMaterial*& PhysMat, class AActor*& HitActor, class UPrimitiveComponent*& HitComponent, FName& HitBoneName, FName& BoneName, int32& HitItem, int32& ElementIndex, int32& FaceIndex, FVector& TraceStart, FVector& TraceEnd);
     bool BlueprintSuggestProjectileVelocity(const class UObject* WorldContextObject, FVector& TossVelocity, FVector StartLocation, FVector EndLocation, float LaunchSpeed, float OverrideGravityZ, TEnumAsByte<ESuggestProjVelocityTraceOption::Type> TraceOption, float CollisionRadius, bool bFavorHighArc, bool bDrawDebug);
-    bool Blueprint_PredictProjectilePath_ByTraceChannel(const class UObject* WorldContextObject, FHitResult& OutHit, TArray<FVector>& OutPathPositions, FVector& OutLastTraceDestination, FVector StartPos, FVector LaunchVelocity, bool bTracePath, float ProjectileRadius, TEnumAsByte<ECollisionChannel> TraceChannel, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, float DrawDebugTime, float SimFrequency, float MaxSimTime, float OverrideGravityZ);
-    bool Blueprint_PredictProjectilePath_ByObjectType(const class UObject* WorldContextObject, FHitResult& OutHit, TArray<FVector>& OutPathPositions, FVector& OutLastTraceDestination, FVector StartPos, FVector LaunchVelocity, bool bTracePath, float ProjectileRadius, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, float DrawDebugTime, float SimFrequency, float MaxSimTime, float OverrideGravityZ);
+    bool Blueprint_PredictProjectilePath_ByTraceChannel(const class UObject* WorldContextObject, FHitResult& OutHit, TArray<FVector>& OutPathPositions, FVector& OutLastTraceDestination, FVector StartPos, FVector LaunchVelocity, bool bTracePath, float ProjectileRadius, TEnumAsByte<ECollisionChannel> TraceChannel, bool bTraceComplex, const TArray<AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, float DrawDebugTime, float SimFrequency, float MaxSimTime, float OverrideGravityZ);
+    bool Blueprint_PredictProjectilePath_ByObjectType(const class UObject* WorldContextObject, FHitResult& OutHit, TArray<FVector>& OutPathPositions, FVector& OutLastTraceDestination, FVector StartPos, FVector LaunchVelocity, bool bTracePath, float ProjectileRadius, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, bool bTraceComplex, const TArray<AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, float DrawDebugTime, float SimFrequency, float MaxSimTime, float OverrideGravityZ);
     bool Blueprint_PredictProjectilePath_Advanced(const class UObject* WorldContextObject, const FPredictProjectilePathParams& PredictParams, FPredictProjectilePathResult& PredictResult);
     class AActor* BeginSpawningActorFromBlueprint(const class UObject* WorldContextObject, const class UBlueprint* Blueprint, const FTransform& SpawnTransform, bool bNoCollisionFail);
     class AActor* BeginDeferredActorSpawnFromClass(const class UObject* WorldContextObject, TSubclassOf<class AActor> actorClass, const FTransform& SpawnTransform, ESpawnActorCollisionHandlingMethod collisionHandlingOverride, class AActor* Owner);
     bool AreSubtitlesEnabled();
     bool AreAnyListenersWithinRange(const class UObject* WorldContextObject, const FVector& Location, float MaximumRange);
-    bool ApplyRadialDamageWithFalloff(const class UObject* WorldContextObject, float BaseDamage, float MinimumDamage, const FVector& Origin, float DamageInnerRadius, float DamageOuterRadius, float DamageFalloff, TSubclassOf<class UDamageType> DamageTypeClass, const TArray<class AActor*>& IgnoreActors, class AActor* DamageCauser, class AController* InstigatedByController, TEnumAsByte<ECollisionChannel> DamagePreventionChannel);
-    bool ApplyRadialDamage(const class UObject* WorldContextObject, float BaseDamage, const FVector& Origin, float DamageRadius, TSubclassOf<class UDamageType> DamageTypeClass, const TArray<class AActor*>& IgnoreActors, class AActor* DamageCauser, class AController* InstigatedByController, bool bDoFullDamage, TEnumAsByte<ECollisionChannel> DamagePreventionChannel);
+    bool ApplyRadialDamageWithFalloff(const class UObject* WorldContextObject, float BaseDamage, float MinimumDamage, const FVector& Origin, float DamageInnerRadius, float DamageOuterRadius, float DamageFalloff, TSubclassOf<class UDamageType> DamageTypeClass, const TArray<AActor*>& IgnoreActors, class AActor* DamageCauser, class AController* InstigatedByController, TEnumAsByte<ECollisionChannel> DamagePreventionChannel);
+    bool ApplyRadialDamage(const class UObject* WorldContextObject, float BaseDamage, const FVector& Origin, float DamageRadius, TSubclassOf<class UDamageType> DamageTypeClass, const TArray<AActor*>& IgnoreActors, class AActor* DamageCauser, class AController* InstigatedByController, bool bDoFullDamage, TEnumAsByte<ECollisionChannel> DamagePreventionChannel);
     float ApplyPointDamage(class AActor* DamagedActor, float BaseDamage, const FVector& HitFromDirection, const FHitResult& HitInfo, class AController* EventInstigator, class AActor* DamageCauser, TSubclassOf<class UDamageType> DamageTypeClass);
     float ApplyDamage(class AActor* DamagedActor, float BaseDamage, class AController* EventInstigator, class AActor* DamageCauser, TSubclassOf<class UDamageType> DamageTypeClass);
     void AnnounceAccessibleString(FString AnnouncementString);
@@ -13504,14 +13504,14 @@ class UHLODLayer : public UObject
     uint8 bIsSpatiallyLoaded;                                                         // 0x0040 (size: 0x1)
     int32 CellSize;                                                                   // 0x0044 (size: 0x4)
     double LoadingRange;                                                              // 0x0048 (size: 0x8)
-    TSoftObjectPtr<UHLODLayer> ParentLayer;                                           // 0x0050 (size: 0x30)
+    TSoftObjectPtr<class UHLODLayer> ParentLayer;                                     // 0x0050 (size: 0x30)
 
 }; // Size: 0x80
 
 class UHLODProxy : public UObject
 {
     TArray<FHLODProxyMesh> ProxyMeshes;                                               // 0x0028 (size: 0x10)
-    TMap<class UHLODProxyDesc*, class FHLODProxyMesh> HLODActors;                     // 0x0038 (size: 0x50)
+    TMap<UHLODProxyDesc*, FHLODProxyMesh> HLODActors;                                 // 0x0038 (size: 0x50)
 
 }; // Size: 0x88
 
@@ -13521,7 +13521,7 @@ class UHLODProxyDesc : public UObject
 
 class UHLODSubsystem : public UWorldSubsystem
 {
-    TMap<class AWorldPartitionHLOD*, class UWorldPartitionRuntimeCell*> LoadedHLODCellMap; // 0x00A8 (size: 0x50)
+    TMap<AWorldPartitionHLOD*, UWorldPartitionRuntimeCell*> LoadedHLODCellMap;        // 0x00A8 (size: 0x50)
 
 }; // Size: 0xF8
 
@@ -13577,7 +13577,7 @@ class UHierarchicalInstancedStaticMeshComponent : public UInstancedStaticMeshCom
 class UHierarchicalLODSetup : public UObject
 {
     TArray<FHierarchicalSimplification> HierarchicalLODSetup;                         // 0x0028 (size: 0x10)
-    TSoftObjectPtr<UMaterialInterface> OverrideBaseMaterial;                          // 0x0038 (size: 0x30)
+    TSoftObjectPtr<class UMaterialInterface> OverrideBaseMaterial;                    // 0x0038 (size: 0x30)
 
 }; // Size: 0x68
 
@@ -13606,7 +13606,7 @@ class UInGameAdManager : public UPlatformInterfaceBase
 class UInheritableComponentHandler : public UObject
 {
     TArray<FComponentOverrideRecord> Records;                                         // 0x0028 (size: 0x10)
-    TArray<class UActorComponent*> UnnecessaryComponents;                             // 0x0038 (size: 0x10)
+    TArray<UActorComponent*> UnnecessaryComponents;                                   // 0x0038 (size: 0x10)
 
 }; // Size: 0x48
 
@@ -13813,7 +13813,7 @@ class UKismetArrayLibrary : public UBlueprintFunctionLibrary
 {
 
     void SetArrayPropertyByName(class UObject* Object, FName PropertyName, const TArray<int32>& Value);
-    void FilterArray(const TArray<class AActor*>& TargetArray, TSubclassOf<class AActor> FilterClass, TArray<class AActor*>& FilteredArray);
+    void FilterArray(const TArray<AActor*>& TargetArray, TSubclassOf<class AActor> FilterClass, TArray<AActor*>& FilteredArray);
     void Array_Swap(const TArray<int32>& TargetArray, int32 FirstIndex, int32 SecondIndex);
     void Array_Shuffle(const TArray<int32>& TargetArray);
     void Array_Set(const TArray<int32>& TargetArray, int32 Index, const int32& Item, bool bSizeToFit);
@@ -14810,14 +14810,14 @@ class UKismetSystemLibrary : public UBlueprintFunctionLibrary
     void UnloadPrimaryAsset(FPrimaryAssetId PrimaryAssetId);
     void TransactObject(class UObject* Object);
     void StackTrace();
-    bool SphereTraceSingleForObjects(const class UObject* WorldContextObject, const FVector Start, const FVector End, float Radius, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, FHitResult& OutHit, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
-    bool SphereTraceSingleByProfile(const class UObject* WorldContextObject, const FVector Start, const FVector End, float Radius, FName ProfileName, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, FHitResult& OutHit, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
-    bool SphereTraceSingle(const class UObject* WorldContextObject, const FVector Start, const FVector End, float Radius, TEnumAsByte<ETraceTypeQuery> TraceChannel, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, FHitResult& OutHit, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
-    bool SphereTraceMultiForObjects(const class UObject* WorldContextObject, const FVector Start, const FVector End, float Radius, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, TArray<FHitResult>& OutHits, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
-    bool SphereTraceMultiByProfile(const class UObject* WorldContextObject, const FVector Start, const FVector End, float Radius, FName ProfileName, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, TArray<FHitResult>& OutHits, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
-    bool SphereTraceMulti(const class UObject* WorldContextObject, const FVector Start, const FVector End, float Radius, TEnumAsByte<ETraceTypeQuery> TraceChannel, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, TArray<FHitResult>& OutHits, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
-    bool SphereOverlapComponents(const class UObject* WorldContextObject, const FVector SpherePos, float SphereRadius, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, UClass* ComponentClassFilter, const TArray<class AActor*>& ActorsToIgnore, TArray<class UPrimitiveComponent*>& OutComponents);
-    bool SphereOverlapActors(const class UObject* WorldContextObject, const FVector SpherePos, float SphereRadius, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, UClass* ActorClassFilter, const TArray<class AActor*>& ActorsToIgnore, TArray<class AActor*>& OutActors);
+    bool SphereTraceSingleForObjects(const class UObject* WorldContextObject, const FVector Start, const FVector End, float Radius, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, bool bTraceComplex, const TArray<AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, FHitResult& OutHit, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
+    bool SphereTraceSingleByProfile(const class UObject* WorldContextObject, const FVector Start, const FVector End, float Radius, FName ProfileName, bool bTraceComplex, const TArray<AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, FHitResult& OutHit, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
+    bool SphereTraceSingle(const class UObject* WorldContextObject, const FVector Start, const FVector End, float Radius, TEnumAsByte<ETraceTypeQuery> TraceChannel, bool bTraceComplex, const TArray<AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, FHitResult& OutHit, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
+    bool SphereTraceMultiForObjects(const class UObject* WorldContextObject, const FVector Start, const FVector End, float Radius, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, bool bTraceComplex, const TArray<AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, TArray<FHitResult>& OutHits, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
+    bool SphereTraceMultiByProfile(const class UObject* WorldContextObject, const FVector Start, const FVector End, float Radius, FName ProfileName, bool bTraceComplex, const TArray<AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, TArray<FHitResult>& OutHits, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
+    bool SphereTraceMulti(const class UObject* WorldContextObject, const FVector Start, const FVector End, float Radius, TEnumAsByte<ETraceTypeQuery> TraceChannel, bool bTraceComplex, const TArray<AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, TArray<FHitResult>& OutHits, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
+    bool SphereOverlapComponents(const class UObject* WorldContextObject, const FVector SpherePos, float SphereRadius, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, UClass* ComponentClassFilter, const TArray<AActor*>& ActorsToIgnore, TArray<UPrimitiveComponent*>& OutComponents);
+    bool SphereOverlapActors(const class UObject* WorldContextObject, const FVector SpherePos, float SphereRadius, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, UClass* ActorClassFilter, const TArray<AActor*>& ActorsToIgnore, TArray<AActor*>& OutActors);
     void SnapshotObject(class UObject* Object);
     void ShowPlatformSpecificLeaderboardScreen(FString CategoryName);
     void ShowPlatformSpecificAchievementsScreen(const class APlayerController* SpecificPlayer);
@@ -14833,7 +14833,7 @@ class UKismetSystemLibrary : public UBlueprintFunctionLibrary
     void SetSuppressViewportTransitionMessage(const class UObject* WorldContextObject, bool bState);
     void SetStructurePropertyByName(class UObject* Object, FName PropertyName, const FGenericStruct& Value);
     void SetStringPropertyByName(class UObject* Object, FName PropertyName, FString Value);
-    void SetSoftObjectPropertyByName(class UObject* Object, FName PropertyName, const TSoftObjectPtr<UObject>& Value);
+    void SetSoftObjectPropertyByName(class UObject* Object, FName PropertyName, const TSoftObjectPtr<class UObject>& Value);
     void SetSoftClassPropertyByName(class UObject* Object, FName PropertyName, const TSoftClassPtr<UObject>& Value);
     void SetRotatorPropertyByName(class UObject* Object, FName PropertyName, const FRotator& Value);
     void SetObjectPropertyByName(class UObject* Object, FName PropertyName, class UObject* Value);
@@ -14860,10 +14860,10 @@ class UKismetSystemLibrary : public UBlueprintFunctionLibrary
     void PrintString(const class UObject* WorldContextObject, FString InString, bool bPrintToScreen, bool bPrintToLog, FLinearColor TextColor, float Duration, const FName Key);
     bool ParseParamValue(FString InString, FString InParam, FString& OutValue);
     bool ParseParam(FString InString, FString InParam);
-    void ParseCommandLine(FString InCmdLine, TArray<FString>& OutTokens, TArray<FString>& OutSwitches, TMap<class FString, class FString>& OutParams);
+    void ParseCommandLine(FString InCmdLine, TArray<FString>& OutTokens, TArray<FString>& OutSwitches, TMap<FString, FString>& OutParams);
     void OnAssetLoaded__DelegateSignature(class UObject* Loaded);
     void OnAssetClassLoaded__DelegateSignature(UClass* Loaded);
-    bool NotEqual_SoftObjectReference(const TSoftObjectPtr<UObject>& A, const TSoftObjectPtr<UObject>& B);
+    bool NotEqual_SoftObjectReference(const TSoftObjectPtr<class UObject>& A, const TSoftObjectPtr<class UObject>& B);
     bool NotEqual_SoftClassReference(const TSoftClassPtr<UObject>& A, const TSoftClassPtr<UObject>& B);
     bool NotEqual_PrimaryAssetType(FPrimaryAssetType A, FPrimaryAssetType B);
     bool NotEqual_PrimaryAssetId(FPrimaryAssetId A, FPrimaryAssetId B);
@@ -14884,14 +14884,14 @@ class UKismetSystemLibrary : public UBlueprintFunctionLibrary
     void LoadInterstitialAd(int32 AdIdIndex);
     UClass* LoadClassAsset_Blocking(TSoftClassPtr<UObject> AssetClass);
     void LoadAssetClass(const class UObject* WorldContextObject, TSoftClassPtr<UObject> AssetClass, FLoadAssetClassOnLoaded OnLoaded, FLatentActionInfo LatentInfo);
-    class UObject* LoadAsset_Blocking(TSoftObjectPtr<UObject> Asset);
-    void LoadAsset(const class UObject* WorldContextObject, TSoftObjectPtr<UObject> Asset, FLoadAssetOnLoaded OnLoaded, FLatentActionInfo LatentInfo);
-    bool LineTraceSingleForObjects(const class UObject* WorldContextObject, const FVector Start, const FVector End, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, FHitResult& OutHit, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
-    bool LineTraceSingleByProfile(const class UObject* WorldContextObject, const FVector Start, const FVector End, FName ProfileName, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, FHitResult& OutHit, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
-    bool LineTraceSingle(const class UObject* WorldContextObject, const FVector Start, const FVector End, TEnumAsByte<ETraceTypeQuery> TraceChannel, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, FHitResult& OutHit, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
-    bool LineTraceMultiForObjects(const class UObject* WorldContextObject, const FVector Start, const FVector End, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, TArray<FHitResult>& OutHits, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
-    bool LineTraceMultiByProfile(const class UObject* WorldContextObject, const FVector Start, const FVector End, FName ProfileName, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, TArray<FHitResult>& OutHits, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
-    bool LineTraceMulti(const class UObject* WorldContextObject, const FVector Start, const FVector End, TEnumAsByte<ETraceTypeQuery> TraceChannel, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, TArray<FHitResult>& OutHits, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
+    class UObject* LoadAsset_Blocking(TSoftObjectPtr<class UObject> Asset);
+    void LoadAsset(const class UObject* WorldContextObject, TSoftObjectPtr<class UObject> Asset, FLoadAssetOnLoaded OnLoaded, FLatentActionInfo LatentInfo);
+    bool LineTraceSingleForObjects(const class UObject* WorldContextObject, const FVector Start, const FVector End, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, bool bTraceComplex, const TArray<AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, FHitResult& OutHit, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
+    bool LineTraceSingleByProfile(const class UObject* WorldContextObject, const FVector Start, const FVector End, FName ProfileName, bool bTraceComplex, const TArray<AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, FHitResult& OutHit, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
+    bool LineTraceSingle(const class UObject* WorldContextObject, const FVector Start, const FVector End, TEnumAsByte<ETraceTypeQuery> TraceChannel, bool bTraceComplex, const TArray<AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, FHitResult& OutHit, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
+    bool LineTraceMultiForObjects(const class UObject* WorldContextObject, const FVector Start, const FVector End, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, bool bTraceComplex, const TArray<AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, TArray<FHitResult>& OutHits, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
+    bool LineTraceMultiByProfile(const class UObject* WorldContextObject, const FVector Start, const FVector End, FName ProfileName, bool bTraceComplex, const TArray<AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, TArray<FHitResult>& OutHits, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
+    bool LineTraceMulti(const class UObject* WorldContextObject, const FVector Start, const FVector End, TEnumAsByte<ETraceTypeQuery> TraceChannel, bool bTraceComplex, const TArray<AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, TArray<FHitResult>& OutHits, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
     void LaunchURL(FString URL);
     void K2_UnPauseTimerHandle(const class UObject* WorldContextObject, FTimerHandle Handle);
     void K2_UnPauseTimerDelegate(FK2_UnPauseTimerDelegateDelegate Delegate);
@@ -14924,7 +14924,7 @@ class UKismetSystemLibrary : public UBlueprintFunctionLibrary
     void K2_ClearTimerDelegate(FK2_ClearTimerDelegateDelegate Delegate);
     void K2_ClearTimer(class UObject* Object, FString FunctionName);
     void K2_ClearAndInvalidateTimerHandle(const class UObject* WorldContextObject, FTimerHandle& Handle);
-    bool IsValidSoftObjectReference(const TSoftObjectPtr<UObject>& SoftObjectReference);
+    bool IsValidSoftObjectReference(const TSoftObjectPtr<class UObject>& SoftObjectReference);
     bool IsValidSoftClassReference(const TSoftClassPtr<UObject>& SoftClassReference);
     bool IsValidPrimaryAssetType(FPrimaryAssetType PrimaryAssetType);
     bool IsValidPrimaryAssetId(FPrimaryAssetId PrimaryAssetId);
@@ -14947,7 +14947,7 @@ class UKismetSystemLibrary : public UBlueprintFunctionLibrary
     FString GetUniqueDeviceId();
     FString GetSystemPath(const class UObject* Object);
     bool GetSupportedFullscreenResolutions(TArray<FIntPoint>& Resolutions);
-    TSoftObjectPtr<UObject> GetSoftObjectReferenceFromPrimaryAssetId(FPrimaryAssetId PrimaryAssetId);
+    TSoftObjectPtr<class UObject> GetSoftObjectReferenceFromPrimaryAssetId(FPrimaryAssetId PrimaryAssetId);
     FSoftObjectPath GetSoftObjectPath(const class UObject* Object);
     TSoftClassPtr<UObject> GetSoftClassReferenceFromPrimaryAssetId(FPrimaryAssetId PrimaryAssetId);
     FSoftClassPath GetSoftClassPath(const UClass* Class);
@@ -14958,7 +14958,7 @@ class UKismetSystemLibrary : public UBlueprintFunctionLibrary
     FString GetProjectContentDirectory();
     void GetPrimaryAssetsWithBundleState(const TArray<FName>& RequiredBundles, const TArray<FName>& ExcludedBundles, const TArray<FPrimaryAssetType>& ValidTypes, bool bForceCurrentState, TArray<FPrimaryAssetId>& OutPrimaryAssetIdList);
     void GetPrimaryAssetIdList(FPrimaryAssetType PrimaryAssetType, TArray<FPrimaryAssetId>& OutPrimaryAssetIdList);
-    FPrimaryAssetId GetPrimaryAssetIdFromSoftObjectReference(TSoftObjectPtr<UObject> SoftObjectReference);
+    FPrimaryAssetId GetPrimaryAssetIdFromSoftObjectReference(TSoftObjectPtr<class UObject> SoftObjectReference);
     FPrimaryAssetId GetPrimaryAssetIdFromSoftClassReference(TSoftClassPtr<UObject> SoftClassReference);
     FPrimaryAssetId GetPrimaryAssetIdFromObject(class UObject* Object);
     FPrimaryAssetId GetPrimaryAssetIdFromClass(UClass* Class);
@@ -14996,13 +14996,13 @@ class UKismetSystemLibrary : public UBlueprintFunctionLibrary
     FString GetBuildVersion();
     FString GetBuildConfiguration();
     int32 GetAdIDCount();
-    void GetActorListFromComponentList(const TArray<class UPrimitiveComponent*>& ComponentList, UClass* ActorClassFilter, TArray<class AActor*>& OutActorList);
+    void GetActorListFromComponentList(const TArray<UPrimitiveComponent*>& ComponentList, UClass* ActorClassFilter, TArray<AActor*>& OutActorList);
     void GetActorBounds(const class AActor* Actor, FVector& Origin, FVector& BoxExtent);
     void ForceCloseAdBanner();
     void FlushPersistentDebugLines(const class UObject* WorldContextObject);
     void FlushDebugStrings(const class UObject* WorldContextObject);
     void ExecuteConsoleCommand(const class UObject* WorldContextObject, FString Command, class APlayerController* SpecificPlayer);
-    bool EqualEqual_SoftObjectReference(const TSoftObjectPtr<UObject>& A, const TSoftObjectPtr<UObject>& B);
+    bool EqualEqual_SoftObjectReference(const TSoftObjectPtr<class UObject>& A, const TSoftObjectPtr<class UObject>& B);
     bool EqualEqual_SoftClassReference(const TSoftClassPtr<UObject>& A, const TSoftClassPtr<UObject>& B);
     bool EqualEqual_PrimaryAssetType(FPrimaryAssetType A, FPrimaryAssetType B);
     bool EqualEqual_PrimaryAssetId(FPrimaryAssetId A, FPrimaryAssetId B);
@@ -15030,45 +15030,45 @@ class UKismetSystemLibrary : public UBlueprintFunctionLibrary
     void CreateCopyForUndoBuffer(class UObject* ObjectToModify);
     FString ConvertToRelativePath(FString Filename);
     FString ConvertToAbsolutePath(FString Filename);
-    FSoftObjectPath Conv_SoftObjRefToSoftObjPath(TSoftObjectPtr<UObject> SoftObjectReference);
+    FSoftObjectPath Conv_SoftObjRefToSoftObjPath(TSoftObjectPtr<class UObject> SoftObjectReference);
     FSoftClassPath Conv_SoftObjRefToSoftClassPath(TSoftClassPtr<UObject> SoftClassReference);
-    TSoftObjectPtr<UObject> Conv_SoftObjPathToSoftObjRef(const FSoftObjectPath& SoftObjectPath);
-    FString Conv_SoftObjectReferenceToString(const TSoftObjectPtr<UObject>& SoftObjectReference);
-    class UObject* Conv_SoftObjectReferenceToObject(const TSoftObjectPtr<UObject>& SoftObject);
+    TSoftObjectPtr<class UObject> Conv_SoftObjPathToSoftObjRef(const FSoftObjectPath& SoftObjectPath);
+    FString Conv_SoftObjectReferenceToString(const TSoftObjectPtr<class UObject>& SoftObjectReference);
+    class UObject* Conv_SoftObjectReferenceToObject(const TSoftObjectPtr<class UObject>& SoftObject);
     FString Conv_SoftClassReferenceToString(const TSoftClassPtr<UObject>& SoftClassReference);
     UClass* Conv_SoftClassReferenceToClass(const TSoftClassPtr<UObject>& SoftClass);
     TSoftClassPtr<UObject> Conv_SoftClassPathToSoftClassRef(const FSoftClassPath& SoftClassPath);
     FString Conv_PrimaryAssetTypeToString(FPrimaryAssetType PrimaryAssetType);
     FString Conv_PrimaryAssetIdToString(FPrimaryAssetId PrimaryAssetId);
-    TSoftObjectPtr<UObject> Conv_ObjectToSoftObjectReference(class UObject* Object);
+    TSoftObjectPtr<class UObject> Conv_ObjectToSoftObjectReference(class UObject* Object);
     UClass* Conv_ObjectToClass(class UObject* Object, UClass* Class);
     class UObject* Conv_InterfaceToObject(const FScriptInterface& Interface);
     TSoftClassPtr<UObject> Conv_ClassToSoftClassReference(const UClass*& Class);
     void ControlScreensaver(bool bAllowScreenSaver);
-    bool ComponentOverlapComponents(class UPrimitiveComponent* Component, const FTransform& ComponentTransform, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, UClass* ComponentClassFilter, const TArray<class AActor*>& ActorsToIgnore, TArray<class UPrimitiveComponent*>& OutComponents);
-    bool ComponentOverlapActors(class UPrimitiveComponent* Component, const FTransform& ComponentTransform, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, UClass* ActorClassFilter, const TArray<class AActor*>& ActorsToIgnore, TArray<class AActor*>& OutActors);
+    bool ComponentOverlapComponents(class UPrimitiveComponent* Component, const FTransform& ComponentTransform, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, UClass* ComponentClassFilter, const TArray<AActor*>& ActorsToIgnore, TArray<UPrimitiveComponent*>& OutComponents);
+    bool ComponentOverlapActors(class UPrimitiveComponent* Component, const FTransform& ComponentTransform, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, UClass* ActorClassFilter, const TArray<AActor*>& ActorsToIgnore, TArray<AActor*>& OutActors);
     void CollectGarbage();
-    bool CapsuleTraceSingleForObjects(const class UObject* WorldContextObject, const FVector Start, const FVector End, float Radius, float HalfHeight, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, FHitResult& OutHit, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
-    bool CapsuleTraceSingleByProfile(const class UObject* WorldContextObject, const FVector Start, const FVector End, float Radius, float HalfHeight, FName ProfileName, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, FHitResult& OutHit, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
-    bool CapsuleTraceSingle(const class UObject* WorldContextObject, const FVector Start, const FVector End, float Radius, float HalfHeight, TEnumAsByte<ETraceTypeQuery> TraceChannel, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, FHitResult& OutHit, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
-    bool CapsuleTraceMultiForObjects(const class UObject* WorldContextObject, const FVector Start, const FVector End, float Radius, float HalfHeight, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, TArray<FHitResult>& OutHits, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
-    bool CapsuleTraceMultiByProfile(const class UObject* WorldContextObject, const FVector Start, const FVector End, float Radius, float HalfHeight, FName ProfileName, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, TArray<FHitResult>& OutHits, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
-    bool CapsuleTraceMulti(const class UObject* WorldContextObject, const FVector Start, const FVector End, float Radius, float HalfHeight, TEnumAsByte<ETraceTypeQuery> TraceChannel, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, TArray<FHitResult>& OutHits, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
-    bool CapsuleOverlapComponents(const class UObject* WorldContextObject, const FVector CapsulePos, float Radius, float HalfHeight, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, UClass* ComponentClassFilter, const TArray<class AActor*>& ActorsToIgnore, TArray<class UPrimitiveComponent*>& OutComponents);
-    bool CapsuleOverlapActors(const class UObject* WorldContextObject, const FVector CapsulePos, float Radius, float HalfHeight, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, UClass* ActorClassFilter, const TArray<class AActor*>& ActorsToIgnore, TArray<class AActor*>& OutActors);
+    bool CapsuleTraceSingleForObjects(const class UObject* WorldContextObject, const FVector Start, const FVector End, float Radius, float HalfHeight, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, bool bTraceComplex, const TArray<AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, FHitResult& OutHit, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
+    bool CapsuleTraceSingleByProfile(const class UObject* WorldContextObject, const FVector Start, const FVector End, float Radius, float HalfHeight, FName ProfileName, bool bTraceComplex, const TArray<AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, FHitResult& OutHit, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
+    bool CapsuleTraceSingle(const class UObject* WorldContextObject, const FVector Start, const FVector End, float Radius, float HalfHeight, TEnumAsByte<ETraceTypeQuery> TraceChannel, bool bTraceComplex, const TArray<AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, FHitResult& OutHit, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
+    bool CapsuleTraceMultiForObjects(const class UObject* WorldContextObject, const FVector Start, const FVector End, float Radius, float HalfHeight, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, bool bTraceComplex, const TArray<AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, TArray<FHitResult>& OutHits, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
+    bool CapsuleTraceMultiByProfile(const class UObject* WorldContextObject, const FVector Start, const FVector End, float Radius, float HalfHeight, FName ProfileName, bool bTraceComplex, const TArray<AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, TArray<FHitResult>& OutHits, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
+    bool CapsuleTraceMulti(const class UObject* WorldContextObject, const FVector Start, const FVector End, float Radius, float HalfHeight, TEnumAsByte<ETraceTypeQuery> TraceChannel, bool bTraceComplex, const TArray<AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, TArray<FHitResult>& OutHits, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
+    bool CapsuleOverlapComponents(const class UObject* WorldContextObject, const FVector CapsulePos, float Radius, float HalfHeight, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, UClass* ComponentClassFilter, const TArray<AActor*>& ActorsToIgnore, TArray<UPrimitiveComponent*>& OutComponents);
+    bool CapsuleOverlapActors(const class UObject* WorldContextObject, const FVector CapsulePos, float Radius, float HalfHeight, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, UClass* ActorClassFilter, const TArray<AActor*>& ActorsToIgnore, TArray<AActor*>& OutActors);
     bool CanLaunchURL(FString URL);
     void CancelTransaction(const int32 Index);
     void BreakSoftObjectPath(FSoftObjectPath InSoftObjectPath, FString& PathString);
     void BreakSoftClassPath(FSoftClassPath InSoftClassPath, FString& PathString);
     void BreakARFilter(FARFilter InARFilter, TArray<FName>& PackageNames, TArray<FName>& PackagePaths, TArray<FSoftObjectPath>& SoftObjectPaths, TArray<FTopLevelAssetPath>& ClassPaths, TSet<FTopLevelAssetPath>& RecursiveClassPathsExclusionSet, TArray<FName>& ClassNames, TSet<FName>& RecursiveClassesExclusionSet, bool& bRecursivePaths, bool& bRecursiveClasses, bool& bIncludeOnlyOnDiskAssets);
-    bool BoxTraceSingleForObjects(const class UObject* WorldContextObject, const FVector Start, const FVector End, const FVector HalfSize, const FRotator Orientation, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, FHitResult& OutHit, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
-    bool BoxTraceSingleByProfile(const class UObject* WorldContextObject, const FVector Start, const FVector End, const FVector HalfSize, const FRotator Orientation, FName ProfileName, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, FHitResult& OutHit, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
-    bool BoxTraceSingle(const class UObject* WorldContextObject, const FVector Start, const FVector End, const FVector HalfSize, const FRotator Orientation, TEnumAsByte<ETraceTypeQuery> TraceChannel, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, FHitResult& OutHit, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
-    bool BoxTraceMultiForObjects(const class UObject* WorldContextObject, const FVector Start, const FVector End, const FVector HalfSize, const FRotator Orientation, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, TArray<FHitResult>& OutHits, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
-    bool BoxTraceMultiByProfile(const class UObject* WorldContextObject, const FVector Start, const FVector End, FVector HalfSize, const FRotator Orientation, FName ProfileName, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, TArray<FHitResult>& OutHits, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
-    bool BoxTraceMulti(const class UObject* WorldContextObject, const FVector Start, const FVector End, FVector HalfSize, const FRotator Orientation, TEnumAsByte<ETraceTypeQuery> TraceChannel, bool bTraceComplex, const TArray<class AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, TArray<FHitResult>& OutHits, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
-    bool BoxOverlapComponents(const class UObject* WorldContextObject, const FVector BoxPos, FVector Extent, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, UClass* ComponentClassFilter, const TArray<class AActor*>& ActorsToIgnore, TArray<class UPrimitiveComponent*>& OutComponents);
-    bool BoxOverlapActors(const class UObject* WorldContextObject, const FVector BoxPos, FVector BoxExtent, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, UClass* ActorClassFilter, const TArray<class AActor*>& ActorsToIgnore, TArray<class AActor*>& OutActors);
+    bool BoxTraceSingleForObjects(const class UObject* WorldContextObject, const FVector Start, const FVector End, const FVector HalfSize, const FRotator Orientation, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, bool bTraceComplex, const TArray<AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, FHitResult& OutHit, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
+    bool BoxTraceSingleByProfile(const class UObject* WorldContextObject, const FVector Start, const FVector End, const FVector HalfSize, const FRotator Orientation, FName ProfileName, bool bTraceComplex, const TArray<AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, FHitResult& OutHit, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
+    bool BoxTraceSingle(const class UObject* WorldContextObject, const FVector Start, const FVector End, const FVector HalfSize, const FRotator Orientation, TEnumAsByte<ETraceTypeQuery> TraceChannel, bool bTraceComplex, const TArray<AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, FHitResult& OutHit, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
+    bool BoxTraceMultiForObjects(const class UObject* WorldContextObject, const FVector Start, const FVector End, const FVector HalfSize, const FRotator Orientation, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, bool bTraceComplex, const TArray<AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, TArray<FHitResult>& OutHits, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
+    bool BoxTraceMultiByProfile(const class UObject* WorldContextObject, const FVector Start, const FVector End, FVector HalfSize, const FRotator Orientation, FName ProfileName, bool bTraceComplex, const TArray<AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, TArray<FHitResult>& OutHits, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
+    bool BoxTraceMulti(const class UObject* WorldContextObject, const FVector Start, const FVector End, FVector HalfSize, const FRotator Orientation, TEnumAsByte<ETraceTypeQuery> TraceChannel, bool bTraceComplex, const TArray<AActor*>& ActorsToIgnore, TEnumAsByte<EDrawDebugTrace::Type> DrawDebugType, TArray<FHitResult>& OutHits, bool bIgnoreSelf, FLinearColor TraceColor, FLinearColor TraceHitColor, float DrawTime);
+    bool BoxOverlapComponents(const class UObject* WorldContextObject, const FVector BoxPos, FVector Extent, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, UClass* ComponentClassFilter, const TArray<AActor*>& ActorsToIgnore, TArray<UPrimitiveComponent*>& OutComponents);
+    bool BoxOverlapActors(const class UObject* WorldContextObject, const FVector BoxPos, FVector BoxExtent, const TArray<TEnumAsByte<EObjectTypeQuery>>& ObjectTypes, UClass* ActorClassFilter, const TArray<AActor*>& ActorsToIgnore, TArray<AActor*>& OutActors);
     int32 BeginTransaction(FString Context, FText Description, class UObject* PrimaryObject);
     FDebugFloatHistory AddFloatHistorySample(float Value, const FDebugFloatHistory& FloatHistory);
 }; // Size: 0x28
@@ -15129,11 +15129,11 @@ class ULODSyncComponent : public UActorComponent
     int32 ForcedLOD;                                                                  // 0x00A4 (size: 0x4)
     int32 MinLOD;                                                                     // 0x00A8 (size: 0x4)
     TArray<FComponentSync> ComponentsToSync;                                          // 0x00B0 (size: 0x10)
-    TMap<class FName, class FLODMappingData> CustomLODMapping;                        // 0x00C0 (size: 0x50)
+    TMap<FName, FLODMappingData> CustomLODMapping;                                    // 0x00C0 (size: 0x50)
     int32 CurrentLOD;                                                                 // 0x0110 (size: 0x4)
     int32 CurrentNumLODs;                                                             // 0x0114 (size: 0x4)
-    TArray<class UPrimitiveComponent*> DriveComponents;                               // 0x0118 (size: 0x10)
-    TArray<class UPrimitiveComponent*> SubComponents;                                 // 0x0128 (size: 0x10)
+    TArray<UPrimitiveComponent*> DriveComponents;                                     // 0x0118 (size: 0x10)
+    TArray<UPrimitiveComponent*> SubComponents;                                       // 0x0128 (size: 0x10)
 
     FString GetLODSyncDebugText();
 }; // Size: 0x138
@@ -15150,14 +15150,14 @@ class ULevel : public UObject
 {
     class UWorld* OwningWorld;                                                        // 0x00B8 (size: 0x8)
     class UModel* Model;                                                              // 0x00C0 (size: 0x8)
-    TArray<class UModelComponent*> ModelComponents;                                   // 0x00C8 (size: 0x10)
+    TArray<UModelComponent*> ModelComponents;                                         // 0x00C8 (size: 0x10)
     class ULevelActorContainer* ActorCluster;                                         // 0x00D8 (size: 0x8)
     int32 NumTextureStreamingUnbuiltComponents;                                       // 0x00E0 (size: 0x4)
     int32 NumTextureStreamingDirtyResources;                                          // 0x00E4 (size: 0x4)
     class ALevelScriptActor* LevelScriptActor;                                        // 0x00E8 (size: 0x8)
     class ANavigationObjectBase* NavListStart;                                        // 0x00F0 (size: 0x8)
     class ANavigationObjectBase* NavListEnd;                                          // 0x00F8 (size: 0x8)
-    TArray<class UNavigationDataChunk*> NavDataChunks;                                // 0x0100 (size: 0x10)
+    TArray<UNavigationDataChunk*> NavDataChunks;                                      // 0x0100 (size: 0x10)
     float LightmapTotalSize;                                                          // 0x0110 (size: 0x4)
     float ShadowmapTotalSize;                                                         // 0x0114 (size: 0x4)
     TArray<FVector> StaticNavigableGeometry;                                          // 0x0118 (size: 0x10)
@@ -15174,15 +15174,15 @@ class ULevel : public UObject
     uint8 bIsPartitioned;                                                             // 0x0236 (size: 0x1)
     class AWorldSettings* WorldSettings;                                              // 0x0298 (size: 0x8)
     class AWorldDataLayers* WorldDataLayers;                                          // 0x02A0 (size: 0x8)
-    TSoftObjectPtr<UWorldPartitionRuntimeCell> WorldPartitionRuntimeCell;             // 0x02A8 (size: 0x30)
-    TArray<class UAssetUserData*> AssetUserData;                                      // 0x02E0 (size: 0x10)
+    TSoftObjectPtr<class UWorldPartitionRuntimeCell> WorldPartitionRuntimeCell;       // 0x02A8 (size: 0x30)
+    TArray<UAssetUserData*> AssetUserData;                                            // 0x02E0 (size: 0x10)
     TArray<FReplicatedStaticActorDestructionInfo> DestroyedReplicatedStaticActors;    // 0x0300 (size: 0x10)
 
 }; // Size: 0x318
 
 class ULevelActorContainer : public UObject
 {
-    TArray<class AActor*> Actors;                                                     // 0x0028 (size: 0x10)
+    TArray<AActor*> Actors;                                                           // 0x0028 (size: 0x10)
 
 }; // Size: 0x38
 
@@ -15204,7 +15204,7 @@ class ULevelScriptBlueprint : public UBlueprint
 
 class ULevelStreaming : public UObject
 {
-    TSoftObjectPtr<UWorld> WorldAsset;                                                // 0x0028 (size: 0x30)
+    TSoftObjectPtr<class UWorld> WorldAsset;                                          // 0x0028 (size: 0x30)
     int32 StreamingPriority;                                                          // 0x0058 (size: 0x4)
     FName PackageNameToLoad;                                                          // 0x005C (size: 0x8)
     TArray<FName> LODPackageNames;                                                    // 0x0068 (size: 0x10)
@@ -15220,7 +15220,7 @@ class ULevelStreaming : public UObject
     uint8 bDisableDistanceStreaming;                                                  // 0x00FB (size: 0x1)
     uint8 bDrawOnLevelStatusMap;                                                      // 0x00FB (size: 0x1)
     FLinearColor LevelColor;                                                          // 0x00FC (size: 0x10)
-    TArray<class ALevelStreamingVolume*> EditorStreamingVolumes;                      // 0x0110 (size: 0x10)
+    TArray<ALevelStreamingVolume*> EditorStreamingVolumes;                            // 0x0110 (size: 0x10)
     float MinTimeBetweenVolumeUnloadRequests;                                         // 0x0120 (size: 0x4)
     FLevelStreamingOnLevelLoaded OnLevelLoaded;                                       // 0x0128 (size: 0x10)
     void LevelStreamingLoadedStatus();
@@ -15258,7 +15258,7 @@ class ULevelStreamingDynamic : public ULevelStreaming
     uint8 bInitiallyLoaded;                                                           // 0x01A8 (size: 0x1)
     uint8 bInitiallyVisible;                                                          // 0x01A8 (size: 0x1)
 
-    class ULevelStreamingDynamic* LoadLevelInstanceBySoftObjectPtr(class UObject* WorldContextObject, TSoftObjectPtr<UWorld> Level, FVector Location, FRotator Rotation, bool& bOutSuccess, FString OptionalLevelNameOverride, TSubclassOf<class ULevelStreamingDynamic> OptionalLevelStreamingClass, bool bLoadAsTempPackage);
+    class ULevelStreamingDynamic* LoadLevelInstanceBySoftObjectPtr(class UObject* WorldContextObject, TSoftObjectPtr<class UWorld> Level, FVector Location, FRotator Rotation, bool& bOutSuccess, FString OptionalLevelNameOverride, TSubclassOf<class ULevelStreamingDynamic> OptionalLevelStreamingClass, bool bLoadAsTempPackage);
     class ULevelStreamingDynamic* LoadLevelInstance(class UObject* WorldContextObject, FString LevelName, FVector Location, FRotator Rotation, bool& bOutSuccess, FString OptionalLevelNameOverride, TSubclassOf<class ULevelStreamingDynamic> OptionalLevelStreamingClass, bool bLoadAsTempPackage);
 }; // Size: 0x1B0
 
@@ -15459,7 +15459,7 @@ class UMaterial : public UMaterialInterface
     class UPhysicalMaterial* PhysMaterial;                                            // 0x0098 (size: 0x8)
     class UPhysicalMaterialMask* PhysMaterialMask;                                    // 0x00A0 (size: 0x8)
     class UPhysicalMaterial* PhysicalMaterialMap;                                     // 0x00A8 (size: 0x40)
-    TArray<class UPhysicalMaterial*> RenderTracePhysicalMaterialOutputs;              // 0x00E8 (size: 0x10)
+    TArray<UPhysicalMaterial*> RenderTracePhysicalMaterialOutputs;                    // 0x00E8 (size: 0x10)
     TEnumAsByte<EMaterialDomain> MaterialDomain;                                      // 0x00F8 (size: 0x1)
     TEnumAsByte<EBlendMode> BlendMode;                                                // 0x00F9 (size: 0x1)
     TEnumAsByte<EStrataBlendMode> StrataBlendMode;                                    // 0x00FA (size: 0x1)
@@ -16333,9 +16333,9 @@ class UMaterialExpressionMaterialAttributeLayers : public UMaterialExpression
 {
     FMaterialAttributesInput Input;                                                   // 0x00B0 (size: 0x30)
     FMaterialLayersFunctions DefaultLayers;                                           // 0x00E0 (size: 0x100)
-    TArray<class UMaterialExpressionMaterialFunctionCall*> LayerCallers;              // 0x01E0 (size: 0x10)
+    TArray<UMaterialExpressionMaterialFunctionCall*> LayerCallers;                    // 0x01E0 (size: 0x10)
     int32 NumActiveLayerCallers;                                                      // 0x01F0 (size: 0x4)
-    TArray<class UMaterialExpressionMaterialFunctionCall*> BlendCallers;              // 0x01F8 (size: 0x10)
+    TArray<UMaterialExpressionMaterialFunctionCall*> BlendCallers;                    // 0x01F8 (size: 0x10)
     int32 NumActiveBlendCallers;                                                      // 0x0208 (size: 0x4)
     bool bIsLayerGraphBuilt;                                                          // 0x020C (size: 0x1)
 
@@ -17607,7 +17607,7 @@ class UMaterialInterface : public UObject
     class USubsurfaceProfile* SubsurfaceProfile;                                      // 0x0038 (size: 0x8)
     FLightmassMaterialInterfaceSettings LightmassSettings;                            // 0x0050 (size: 0x10)
     TArray<FMaterialTextureInfo> TextureStreamingData;                                // 0x0060 (size: 0x10)
-    TArray<class UAssetUserData*> AssetUserData;                                      // 0x0070 (size: 0x10)
+    TArray<UAssetUserData*> AssetUserData;                                            // 0x0070 (size: 0x10)
 
     void SetForceMipLevelsToBeResident(bool OverrideForceMiplevelsToBeResident, bool bForceMiplevelsToBeResidentValue, float ForceDuration, int32 CinematicTextureGroups, bool bFastResponse);
     class UPhysicalMaterialMask* GetPhysicalMaterialMask();
@@ -17642,7 +17642,7 @@ class UMaterialParameterCollectionInstance : public UObject
 
 class UMeshComponent : public UPrimitiveComponent
 {
-    TArray<class UMaterialInterface*> OverrideMaterials;                              // 0x0538 (size: 0x10)
+    TArray<UMaterialInterface*> OverrideMaterials;                                    // 0x0538 (size: 0x10)
     class UMaterialInterface* OverlayMaterial;                                        // 0x0548 (size: 0x8)
     float OverlayMaterialMaxDrawDistance;                                             // 0x0550 (size: 0x4)
     uint8 bEnableMaterialParameterCaching;                                            // 0x0568 (size: 0x1)
@@ -17655,7 +17655,7 @@ class UMeshComponent : public UPrimitiveComponent
     bool IsMaterialSlotNameValid(FName MaterialSlotName);
     class UMaterialInterface* GetOverlayMaterial();
     TArray<FName> GetMaterialSlotNames();
-    TArray<class UMaterialInterface*> GetMaterials();
+    TArray<UMaterialInterface*> GetMaterials();
     int32 GetMaterialIndex(FName MaterialSlotName);
 }; // Size: 0x570
 
@@ -17814,12 +17814,12 @@ class UNavigationSystemConfig : public UObject
 
 class UNetConnection : public UPlayer
 {
-    TArray<class UChildConnection*> Children;                                         // 0x0048 (size: 0x10)
+    TArray<UChildConnection*> Children;                                               // 0x0048 (size: 0x10)
     class UNetDriver* Driver;                                                         // 0x0058 (size: 0x8)
     TSubclassOf<class UPackageMap> PackageMapClass;                                   // 0x0060 (size: 0x8)
     class UPackageMap* PackageMap;                                                    // 0x0068 (size: 0x8)
-    TArray<class UChannel*> OpenChannels;                                             // 0x0070 (size: 0x10)
-    TArray<class AActor*> SentTemporaries;                                            // 0x0080 (size: 0x10)
+    TArray<UChannel*> OpenChannels;                                                   // 0x0070 (size: 0x10)
+    TArray<AActor*> SentTemporaries;                                                  // 0x0080 (size: 0x10)
     class AActor* ViewTarget;                                                         // 0x0090 (size: 0x8)
     class AActor* OwningActor;                                                        // 0x0098 (size: 0x8)
     int32 MaxPacket;                                                                  // 0x00A0 (size: 0x4)
@@ -17827,7 +17827,7 @@ class UNetConnection : public UPlayer
     FUniqueNetIdRepl PlayerId;                                                        // 0x0160 (size: 0x30)
     double LastReceiveTime;                                                           // 0x01D8 (size: 0x8)
     int32 DefaultMaxChannelSize;                                                      // 0x13C0 (size: 0x4)
-    TArray<class UChannel*> ChannelsToTick;                                           // 0x1648 (size: 0x10)
+    TArray<UChannel*> ChannelsToTick;                                                 // 0x1648 (size: 0x10)
 
 }; // Size: 0x3310
 
@@ -17850,7 +17850,7 @@ class UNetDriver : public UObject
     float ConnectionTimeout;                                                          // 0x008C (size: 0x4)
     float TimeoutMultiplierForUnoptimizedBuilds;                                      // 0x0090 (size: 0x4)
     class UNetConnection* ServerConnection;                                           // 0x0098 (size: 0x8)
-    TArray<class UNetConnection*> ClientConnections;                                  // 0x00A0 (size: 0x10)
+    TArray<UNetConnection*> ClientConnections;                                        // 0x00A0 (size: 0x10)
     int32 RecentlyDisconnectedTrackingTime;                                           // 0x0110 (size: 0x4)
     class UWorld* World;                                                              // 0x0150 (size: 0x8)
     class UPackage* WorldPackage;                                                     // 0x0158 (size: 0x8)
@@ -17859,8 +17859,8 @@ class UNetDriver : public UObject
     UClass* ReplicationBridgeClass;                                                   // 0x0190 (size: 0x8)
     FName NetDriverName;                                                              // 0x01A8 (size: 0x8)
     TArray<FChannelDefinition> ChannelDefinitions;                                    // 0x01B0 (size: 0x10)
-    TMap<class FName, class FChannelDefinition> ChannelDefinitionMap;                 // 0x01C0 (size: 0x50)
-    TArray<class UChannel*> ActorChannelPool;                                         // 0x0210 (size: 0x10)
+    TMap<FName, FChannelDefinition> ChannelDefinitionMap;                             // 0x01C0 (size: 0x50)
+    TArray<UChannel*> ActorChannelPool;                                               // 0x0210 (size: 0x10)
     uint8 bNoTimeouts;                                                                // 0x0241 (size: 0x1)
     uint8 bNeverApplyNetworkEmulationSettings;                                        // 0x0241 (size: 0x1)
     class UReplicationDriver* ReplicationDriver;                                      // 0x0720 (size: 0x8)
@@ -17892,11 +17892,11 @@ class UNetworkSubsystem : public UWorldSubsystem
 
 class UNodeMappingContainer : public UObject
 {
-    TMap<class FName, class FNodeItem> SourceItems;                                   // 0x0028 (size: 0x50)
-    TMap<class FName, class FNodeItem> TargetItems;                                   // 0x0078 (size: 0x50)
-    TMap<class FName, class FName> SourceToTarget;                                    // 0x00C8 (size: 0x50)
-    TSoftObjectPtr<UObject> SourceAsset;                                              // 0x0118 (size: 0x30)
-    TSoftObjectPtr<UObject> TargetAsset;                                              // 0x0148 (size: 0x30)
+    TMap<FName, FNodeItem> SourceItems;                                               // 0x0028 (size: 0x50)
+    TMap<FName, FNodeItem> TargetItems;                                               // 0x0078 (size: 0x50)
+    TMap<FName, FName> SourceToTarget;                                                // 0x00C8 (size: 0x50)
+    TSoftObjectPtr<class UObject> SourceAsset;                                        // 0x0118 (size: 0x30)
+    TSoftObjectPtr<class UObject> TargetAsset;                                        // 0x0148 (size: 0x30)
 
 }; // Size: 0x178
 
@@ -17928,8 +17928,8 @@ class UObjectLibrary : public UObject
 {
     UClass* ObjectBaseClass;                                                          // 0x0028 (size: 0x8)
     bool bHasBlueprintClasses;                                                        // 0x0030 (size: 0x1)
-    TArray<class UObject*> Objects;                                                   // 0x0038 (size: 0x10)
-    TArray<TWeakObjectPtr<UObject>> WeakObjects;                                      // 0x0048 (size: 0x10)
+    TArray<UObject*> Objects;                                                         // 0x0038 (size: 0x10)
+    TArray<TWeakObjectPtr<class UObject>> WeakObjects;                                // 0x0048 (size: 0x10)
     bool bUseWeakReferences;                                                          // 0x0058 (size: 0x1)
     bool bIsFullyLoaded;                                                              // 0x0059 (size: 0x1)
 
@@ -17937,7 +17937,7 @@ class UObjectLibrary : public UObject
 
 class UObjectReferencer : public UObject
 {
-    TArray<class UObject*> ReferencedObjects;                                         // 0x0028 (size: 0x10)
+    TArray<UObject*> ReferencedObjects;                                               // 0x0028 (size: 0x10)
 
 }; // Size: 0x38
 
@@ -17973,7 +17973,7 @@ class UParticleEmitter : public UObject
     uint8 bCookedOut;                                                                 // 0x0037 (size: 0x1)
     uint8 bDisabledLODsKeepEmitterAlive;                                              // 0x0037 (size: 0x1)
     uint8 bDisableWhenInsignficant;                                                   // 0x0038 (size: 0x1)
-    TArray<class UParticleLODLevel*> LODLevels;                                       // 0x0040 (size: 0x10)
+    TArray<UParticleLODLevel*> LODLevels;                                             // 0x0040 (size: 0x10)
     int32 PeakActiveParticles;                                                        // 0x0050 (size: 0x4)
     int32 InitialAllocationCount;                                                     // 0x0054 (size: 0x4)
     float QualityLevelSpawnRateScale;                                                 // 0x0058 (size: 0x4)
@@ -17986,15 +17986,15 @@ class UParticleLODLevel : public UObject
     int32 Level;                                                                      // 0x0028 (size: 0x4)
     uint8 bEnabled;                                                                   // 0x002C (size: 0x1)
     class UParticleModuleRequired* RequiredModule;                                    // 0x0030 (size: 0x8)
-    TArray<class UParticleModule*> Modules;                                           // 0x0038 (size: 0x10)
+    TArray<UParticleModule*> Modules;                                                 // 0x0038 (size: 0x10)
     class UParticleModuleTypeDataBase* TypeDataModule;                                // 0x0048 (size: 0x8)
     class UParticleModuleSpawn* SpawnModule;                                          // 0x0050 (size: 0x8)
     class UParticleModuleEventGenerator* EventGenerator;                              // 0x0058 (size: 0x8)
-    TArray<class UParticleModuleSpawnBase*> SpawningModules;                          // 0x0060 (size: 0x10)
-    TArray<class UParticleModule*> SpawnModules;                                      // 0x0070 (size: 0x10)
-    TArray<class UParticleModule*> UpdateModules;                                     // 0x0080 (size: 0x10)
-    TArray<class UParticleModuleOrbit*> OrbitModules;                                 // 0x0090 (size: 0x10)
-    TArray<class UParticleModuleEventReceiverBase*> EventReceiverModules;             // 0x00A0 (size: 0x10)
+    TArray<UParticleModuleSpawnBase*> SpawningModules;                                // 0x0060 (size: 0x10)
+    TArray<UParticleModule*> SpawnModules;                                            // 0x0070 (size: 0x10)
+    TArray<UParticleModule*> UpdateModules;                                           // 0x0080 (size: 0x10)
+    TArray<UParticleModuleOrbit*> OrbitModules;                                       // 0x0090 (size: 0x10)
+    TArray<UParticleModuleEventReceiverBase*> EventReceiverModules;                   // 0x00A0 (size: 0x10)
     uint8 ConvertedModules;                                                           // 0x00B0 (size: 0x1)
     int32 PeakActiveParticles;                                                        // 0x00B4 (size: 0x4)
 
@@ -18300,7 +18300,7 @@ class UParticleModuleEventReceiverSpawn : public UParticleModuleEventReceiverBas
     uint8 bUsePSysLocation;                                                           // 0x0070 (size: 0x1)
     uint8 bInheritVelocity;                                                           // 0x0070 (size: 0x1)
     FRawDistributionVector InheritVelocityScale;                                      // 0x0078 (size: 0x60)
-    TArray<class UPhysicalMaterial*> PhysicalMaterials;                               // 0x00D8 (size: 0x10)
+    TArray<UPhysicalMaterial*> PhysicalMaterials;                                     // 0x00D8 (size: 0x10)
     uint8 bBanPhysicalMaterials;                                                      // 0x00E8 (size: 0x1)
 
 }; // Size: 0xF0
@@ -18524,7 +18524,7 @@ class UParticleModuleMaterialBase : public UParticleModule
 
 class UParticleModuleMeshMaterial : public UParticleModuleMaterialBase
 {
-    TArray<class UMaterialInterface*> MeshMaterials;                                  // 0x0030 (size: 0x10)
+    TArray<UMaterialInterface*> MeshMaterials;                                        // 0x0030 (size: 0x10)
 
 }; // Size: 0x40
 
@@ -19030,7 +19030,7 @@ class UParticleSystem : public UFXSystemAsset
     float UpdateTime_Delta;                                                           // 0x0034 (size: 0x4)
     float WarmupTime;                                                                 // 0x0038 (size: 0x4)
     float WarmupTickRate;                                                             // 0x003C (size: 0x4)
-    TArray<class UParticleEmitter*> Emitters;                                         // 0x0040 (size: 0x10)
+    TArray<UParticleEmitter*> Emitters;                                               // 0x0040 (size: 0x10)
     class UParticleSystemComponent* PreviewComponent;                                 // 0x0050 (size: 0x8)
     class UInterpCurveEdSetup* CurveEdSetup;                                          // 0x0058 (size: 0x8)
     float LODDistanceCheckTime;                                                       // 0x0060 (size: 0x4)
@@ -19069,8 +19069,8 @@ class UParticleSystem : public UFXSystemAsset
 class UParticleSystemComponent : public UFXSystemComponent
 {
     class UParticleSystem* Template;                                                  // 0x0538 (size: 0x8)
-    TArray<class UMaterialInterface*> EmitterMaterials;                               // 0x0540 (size: 0x10)
-    TArray<class USkeletalMeshComponent*> SkelMeshComponents;                         // 0x0550 (size: 0x10)
+    TArray<UMaterialInterface*> EmitterMaterials;                                     // 0x0540 (size: 0x10)
+    TArray<USkeletalMeshComponent*> SkelMeshComponents;                               // 0x0550 (size: 0x10)
     uint8 bResetOnDetach;                                                             // 0x0561 (size: 0x1)
     uint8 bUpdateOnDedicatedServer;                                                   // 0x0561 (size: 0x1)
     uint8 bAllowRecycling;                                                            // 0x0561 (size: 0x1)
@@ -19097,7 +19097,7 @@ class UParticleSystemComponent : public UFXSystemComponent
     float WarmupTickRate;                                                             // 0x05FC (size: 0x4)
     float SecondsBeforeInactive;                                                      // 0x0604 (size: 0x4)
     float MaxTimeBeforeForceUpdateTransform;                                          // 0x060C (size: 0x4)
-    TArray<class UParticleSystemReplay*> ReplayClips;                                 // 0x0630 (size: 0x10)
+    TArray<UParticleSystemReplay*> ReplayClips;                                       // 0x0630 (size: 0x10)
     float CustomTimeDilation;                                                         // 0x0648 (size: 0x4)
     TWeakObjectPtr<class USceneComponent> AutoAttachParent;                           // 0x06A0 (size: 0x8)
     FName AutoAttachSocketName;                                                       // 0x06A8 (size: 0x8)
@@ -19195,14 +19195,14 @@ class UPhysicalMaterialMask : public UObject
 class UPhysicsAsset : public UObject
 {
     TArray<int32> BoundsBodies;                                                       // 0x0030 (size: 0x10)
-    TArray<class USkeletalBodySetup*> SkeletalBodySetups;                             // 0x0040 (size: 0x10)
-    TArray<class UPhysicsConstraintTemplate*> ConstraintSetup;                        // 0x0050 (size: 0x10)
+    TArray<USkeletalBodySetup*> SkeletalBodySetups;                                   // 0x0040 (size: 0x10)
+    TArray<UPhysicsConstraintTemplate*> ConstraintSetup;                              // 0x0050 (size: 0x10)
     FPhysicsAssetSolverSettings SolverSettings;                                       // 0x0060 (size: 0x1C)
     FSolverIterations SolverIterations;                                               // 0x007C (size: 0x18)
     EPhysicsAssetSolverType SolverType;                                               // 0x0094 (size: 0x1)
     uint8 bNotForDedicatedServer;                                                     // 0x0095 (size: 0x1)
     class UThumbnailInfo* ThumbnailInfo;                                              // 0x0138 (size: 0x8)
-    TArray<class UBodySetup*> BodySetup;                                              // 0x0140 (size: 0x10)
+    TArray<UBodySetup*> BodySetup;                                                    // 0x0140 (size: 0x10)
 
 }; // Size: 0x150
 
@@ -19606,7 +19606,7 @@ class UPrimaryAssetLabel : public UPrimaryDataAsset
     FPrimaryAssetRules Rules;                                                         // 0x0030 (size: 0xC)
     uint8 bLabelAssetsInMyDirectory;                                                  // 0x003C (size: 0x1)
     uint8 bIsRuntimeLabel;                                                            // 0x003C (size: 0x1)
-    TArray<TSoftObjectPtr<UObject>> ExplicitAssets;                                   // 0x0040 (size: 0x10)
+    TArray<TSoftObjectPtr<class UObject>> ExplicitAssets;                             // 0x0040 (size: 0x10)
     TArray<TSoftClassPtr<UObject>> ExplicitBlueprints;                                // 0x0050 (size: 0x10)
     FCollectionReference AssetCollection;                                             // 0x0060 (size: 0x8)
 
@@ -19691,14 +19691,14 @@ class UPrimitiveComponent : public USceneComponent
     FCustomPrimitiveData CustomPrimitiveDataInternal;                                 // 0x02E8 (size: 0x10)
     int32 TranslucencySortPriority;                                                   // 0x0300 (size: 0x4)
     float TranslucencySortDistanceOffset;                                             // 0x0304 (size: 0x4)
-    TArray<class URuntimeVirtualTexture*> RuntimeVirtualTextures;                     // 0x0308 (size: 0x10)
+    TArray<URuntimeVirtualTexture*> RuntimeVirtualTextures;                           // 0x0308 (size: 0x10)
     int8 VirtualTextureLodBias;                                                       // 0x0318 (size: 0x1)
     int8 VirtualTextureCullMips;                                                      // 0x0319 (size: 0x1)
     int8 VirtualTextureMinCoverage;                                                   // 0x031A (size: 0x1)
     ERuntimeVirtualTextureMainPassType VirtualTextureRenderPassType;                  // 0x031B (size: 0x1)
     float BoundsScale;                                                                // 0x032C (size: 0x4)
-    TArray<class AActor*> MoveIgnoreActors;                                           // 0x0340 (size: 0x10)
-    TArray<class UPrimitiveComponent*> MoveIgnoreComponents;                          // 0x0350 (size: 0x10)
+    TArray<AActor*> MoveIgnoreActors;                                                 // 0x0340 (size: 0x10)
+    TArray<UPrimitiveComponent*> MoveIgnoreComponents;                                // 0x0350 (size: 0x10)
     FBodyInstance BodyInstance;                                                       // 0x0370 (size: 0x190)
     FPrimitiveComponentOnComponentHit OnComponentHit;                                 // 0x0500 (size: 0x1)
     void ComponentHitSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
@@ -19822,8 +19822,8 @@ class UPrimitiveComponent : public USceneComponent
     FVector GetPhysicsLinearVelocity(FName BoneName);
     FVector GetPhysicsAngularVelocityInRadians(FName BoneName);
     FVector GetPhysicsAngularVelocityInDegrees(FName BoneName);
-    void GetOverlappingComponents(TArray<class UPrimitiveComponent*>& OutOverlappingComponents);
-    void GetOverlappingActors(TArray<class AActor*>& OverlappingActors, TSubclassOf<class AActor> ClassFilter);
+    void GetOverlappingComponents(TArray<UPrimitiveComponent*>& OutOverlappingComponents);
+    void GetOverlappingActors(TArray<AActor*>& OverlappingActors, TSubclassOf<class AActor> ClassFilter);
     int32 GetNumMaterials();
     class UMaterialInterface* GetMaterialFromCollisionFaceIndex(int32 FaceIndex, int32& SectionIndex);
     class UMaterialInterface* GetMaterial(int32 ElementIndex);
@@ -19845,8 +19845,8 @@ class UPrimitiveComponent : public USceneComponent
     class UMaterialInstanceDynamic* CreateDynamicMaterialInstance(int32 ElementIndex, class UMaterialInterface* SourceMaterial, FName OptionalName);
     class UMaterialInstanceDynamic* CreateAndSetMaterialInstanceDynamicFromMaterial(int32 ElementIndex, class UMaterialInterface* Parent);
     class UMaterialInstanceDynamic* CreateAndSetMaterialInstanceDynamic(int32 ElementIndex);
-    TArray<class UPrimitiveComponent*> CopyArrayOfMoveIgnoreComponents();
-    TArray<class AActor*> CopyArrayOfMoveIgnoreActors();
+    TArray<UPrimitiveComponent*> CopyArrayOfMoveIgnoreComponents();
+    TArray<AActor*> CopyArrayOfMoveIgnoreActors();
     void ClearMoveIgnoreComponents();
     void ClearMoveIgnoreActors();
     bool CanCharacterStepUp(class APawn* Pawn);
@@ -20203,8 +20203,8 @@ class URotatingMovementComponent : public UMovementComponent
 
 class URuntimeHashExternalStreamingObjectBase : public UObject
 {
-    TSoftObjectPtr<UWorld> OwningWorld;                                               // 0x0030 (size: 0x30)
-    TSoftObjectPtr<UWorld> OuterWorld;                                                // 0x0060 (size: 0x30)
+    TSoftObjectPtr<class UWorld> OwningWorld;                                         // 0x0030 (size: 0x30)
+    TSoftObjectPtr<class UWorld> OuterWorld;                                          // 0x0060 (size: 0x30)
 
 }; // Size: 0x90
 
@@ -20215,7 +20215,7 @@ class URuntimeOptionsBase : public UObject
 class URuntimeSpatialHashExternalStreamingObject : public URuntimeHashExternalStreamingObjectBase
 {
     TArray<FSpatialHashStreamingGrid> StreamingGrids;                                 // 0x0090 (size: 0x10)
-    TMap<class FName, class FName> CellToLevelStreamingPackage;                       // 0x00A0 (size: 0x50)
+    TMap<FName, FName> CellToLevelStreamingPackage;                                   // 0x00A0 (size: 0x50)
 
 }; // Size: 0xF0
 
@@ -20246,7 +20246,7 @@ class URuntimeVirtualTexture : public UObject
 
 class URuntimeVirtualTextureComponent : public USceneComponent
 {
-    TSoftObjectPtr<AActor> BoundsAlignActor;                                          // 0x02A0 (size: 0x30)
+    TSoftObjectPtr<class AActor> BoundsAlignActor;                                    // 0x02A0 (size: 0x30)
     bool bSetBoundsButton;                                                            // 0x02D0 (size: 0x1)
     bool bSnapBoundsToLandscape;                                                      // 0x02D1 (size: 0x1)
     class URuntimeVirtualTexture* VirtualTexture;                                     // 0x02D8 (size: 0x8)
@@ -20276,7 +20276,7 @@ class USCS_Node : public UObject
     FName ParentComponentOrVariableName;                                              // 0x0088 (size: 0x8)
     FName ParentComponentOwnerClassName;                                              // 0x0090 (size: 0x8)
     bool bIsParentComponentNative;                                                    // 0x0098 (size: 0x1)
-    TArray<class USCS_Node*> ChildNodes;                                              // 0x00A0 (size: 0x10)
+    TArray<USCS_Node*> ChildNodes;                                                    // 0x00A0 (size: 0x10)
     TArray<FBPVariableMetaDataEntry> MetaDataArray;                                   // 0x00B0 (size: 0x10)
     FGuid VariableGuid;                                                               // 0x00C0 (size: 0x10)
     FName InternalVariableName;                                                       // 0x00D0 (size: 0x8)
@@ -20318,10 +20318,10 @@ class USceneCaptureComponent : public USceneComponent
     uint8 bCaptureEveryFrame;                                                         // 0x02A2 (size: 0x1)
     uint8 bCaptureOnMovement;                                                         // 0x02A2 (size: 0x1)
     bool bAlwaysPersistRenderingState;                                                // 0x02A3 (size: 0x1)
-    TArray<TWeakObjectPtr<UPrimitiveComponent>> HiddenComponents;                     // 0x02A8 (size: 0x10)
-    TArray<class AActor*> HiddenActors;                                               // 0x02B8 (size: 0x10)
-    TArray<TWeakObjectPtr<UPrimitiveComponent>> ShowOnlyComponents;                   // 0x02C8 (size: 0x10)
-    TArray<class AActor*> ShowOnlyActors;                                             // 0x02D8 (size: 0x10)
+    TArray<TWeakObjectPtr<class UPrimitiveComponent>> HiddenComponents;               // 0x02A8 (size: 0x10)
+    TArray<AActor*> HiddenActors;                                                     // 0x02B8 (size: 0x10)
+    TArray<TWeakObjectPtr<class UPrimitiveComponent>> ShowOnlyComponents;             // 0x02C8 (size: 0x10)
+    TArray<AActor*> ShowOnlyActors;                                                   // 0x02D8 (size: 0x10)
     float LODDistanceFactor;                                                          // 0x02E8 (size: 0x4)
     float MaxViewDistanceOverride;                                                    // 0x02EC (size: 0x4)
     int32 CaptureSortPriority;                                                        // 0x02F0 (size: 0x4)
@@ -20381,8 +20381,8 @@ class USceneComponent : public UActorComponent
     TWeakObjectPtr<class APhysicsVolume> PhysicsVolume;                               // 0x00A8 (size: 0x8)
     class USceneComponent* AttachParent;                                              // 0x00B0 (size: 0x8)
     FName AttachSocketName;                                                           // 0x00B8 (size: 0x8)
-    TArray<class USceneComponent*> AttachChildren;                                    // 0x00C0 (size: 0x10)
-    TArray<class USceneComponent*> ClientAttachedChildren;                            // 0x00D0 (size: 0x10)
+    TArray<USceneComponent*> AttachChildren;                                          // 0x00C0 (size: 0x10)
+    TArray<USceneComponent*> ClientAttachedChildren;                                  // 0x00D0 (size: 0x10)
     FVector RelativeLocation;                                                         // 0x0128 (size: 0x18)
     FRotator RelativeRotation;                                                        // 0x0140 (size: 0x18)
     FVector RelativeScale3D;                                                          // 0x0158 (size: 0x18)
@@ -20459,11 +20459,11 @@ class USceneComponent : public UActorComponent
     FVector GetRightVector();
     FTransform GetRelativeTransform();
     class APhysicsVolume* GetPhysicsVolume();
-    void GetParentComponents(TArray<class USceneComponent*>& Parents);
+    void GetParentComponents(TArray<USceneComponent*>& Parents);
     int32 GetNumChildrenComponents();
     FVector GetForwardVector();
     FVector GetComponentVelocity();
-    void GetChildrenComponents(bool bIncludeAllDescendants, TArray<class USceneComponent*>& Children);
+    void GetChildrenComponents(bool bIncludeAllDescendants, TArray<USceneComponent*>& Children);
     class USceneComponent* GetChildComponent(int32 ChildIndex);
     FName GetAttachSocketName();
     class USceneComponent* GetAttachParent();
@@ -20496,8 +20496,8 @@ class UShapeComponent : public UPrimitiveComponent
 
 class USimpleConstructionScript : public UObject
 {
-    TArray<class USCS_Node*> RootNodes;                                               // 0x0028 (size: 0x10)
-    TArray<class USCS_Node*> AllNodes;                                                // 0x0038 (size: 0x10)
+    TArray<USCS_Node*> RootNodes;                                                     // 0x0028 (size: 0x10)
+    TArray<USCS_Node*> AllNodes;                                                      // 0x0038 (size: 0x10)
     class USCS_Node* DefaultSceneRootNode;                                            // 0x0048 (size: 0x8)
 
 }; // Size: 0xA0
@@ -20536,26 +20536,26 @@ class USkeletalMesh : public USkinnedAsset
     class UBodySetup* BodySetup;                                                      // 0x0290 (size: 0x8)
     class UPhysicsAsset* PhysicsAsset;                                                // 0x0298 (size: 0x8)
     class UPhysicsAsset* ShadowPhysicsAsset;                                          // 0x02A0 (size: 0x8)
-    TArray<class UNodeMappingContainer*> NodeMappingData;                             // 0x02A8 (size: 0x10)
+    TArray<UNodeMappingContainer*> NodeMappingData;                                   // 0x02A8 (size: 0x10)
     uint8 bSupportRayTracing;                                                         // 0x02B8 (size: 0x1)
     int32 RayTracingMinLOD;                                                           // 0x02BC (size: 0x4)
     EClothLODBiasMode ClothLODBiasMode;                                               // 0x02C0 (size: 0x1)
-    TArray<class UMorphTarget*> MorphTargets;                                         // 0x02C8 (size: 0x10)
+    TArray<UMorphTarget*> MorphTargets;                                               // 0x02C8 (size: 0x10)
     TSubclassOf<class UAnimInstance> PostProcessAnimBlueprint;                        // 0x0450 (size: 0x8)
-    TArray<class UClothingAssetBase*> MeshClothingAssets;                             // 0x0458 (size: 0x10)
+    TArray<UClothingAssetBase*> MeshClothingAssets;                                   // 0x0458 (size: 0x10)
     FSkeletalMeshSamplingInfo SamplingInfo;                                           // 0x0468 (size: 0x30)
-    TArray<class UAssetUserData*> AssetUserData;                                      // 0x0498 (size: 0x10)
-    TArray<class USkeletalMeshSocket*> Sockets;                                       // 0x04A8 (size: 0x10)
+    TArray<UAssetUserData*> AssetUserData;                                            // 0x0498 (size: 0x10)
+    TArray<USkeletalMeshSocket*> Sockets;                                             // 0x04A8 (size: 0x10)
     TArray<FSkinWeightProfileInfo> SkinWeightProfiles;                                // 0x04C8 (size: 0x10)
     class UMeshDeformer* DefaultMeshDeformer;                                         // 0x04D8 (size: 0x8)
 
     void SetSkeleton(class USkeleton* InSkeleton);
-    void SetMorphTargets(const TArray<class UMorphTarget*>& InMorphTargets);
+    void SetMorphTargets(const TArray<UMorphTarget*>& InMorphTargets);
     void SetMinLODForQualityLevels(const TMap<EPerQualityLevels, int32>& QualityLevelMinimumLODs, int32 Default);
-    void SetMeshClothingAssets(const TArray<class UClothingAssetBase*>& InMeshClothingAssets);
+    void SetMeshClothingAssets(const TArray<UClothingAssetBase*>& InMeshClothingAssets);
     void SetMaterials(const TArray<FSkeletalMaterial>& InMaterials);
     void SetLODSettings(class USkeletalMeshLODSettings* InLODSettings);
-    void SetDefaultAnimatingRig(TSoftObjectPtr<UObject> InAnimatingRig);
+    void SetDefaultAnimatingRig(TSoftObjectPtr<class UObject> InAnimatingRig);
     int32 NumSockets();
     TArray<FString> K2_GetAllMorphTargetNames();
     bool IsSectionUsingCloth(int32 InSectionIndex, bool bCheckCorrespondingSections);
@@ -20563,15 +20563,15 @@ class USkeletalMesh : public USkinnedAsset
     class USkeleton* GetSkeleton();
     class UPhysicsAsset* GetShadowPhysicsAsset();
     class UPhysicsAsset* GetPhysicsAsset();
-    TArray<class UNodeMappingContainer*> GetNodeMappingData();
+    TArray<UNodeMappingContainer*> GetNodeMappingData();
     class UNodeMappingContainer* GetNodeMappingContainer(class UBlueprint* SourceAsset);
-    TArray<class UMorphTarget*> GetMorphTargetsPtrConv();
+    TArray<UMorphTarget*> GetMorphTargetsPtrConv();
     void GetMinLODForQualityLevels(TMap<EPerQualityLevels, int32>& QualityLevelMinimumLODs, int32& Default);
-    TArray<class UClothingAssetBase*> GetMeshClothingAssets();
+    TArray<UClothingAssetBase*> GetMeshClothingAssets();
     TArray<FSkeletalMaterial> GetMaterials();
     class USkeletalMeshLODSettings* GetLODSettings();
     FBoxSphereBounds GetImportedBounds();
-    TSoftObjectPtr<UObject> GetDefaultAnimatingRig();
+    TSoftObjectPtr<class UObject> GetDefaultAnimatingRig();
     FBoxSphereBounds GetBounds();
     class USkeletalMeshSocket* FindSocketAndIndex(FName InSocketName, int32& OutIndex);
 }; // Size: 0x4E0
@@ -20585,7 +20585,7 @@ class USkeletalMeshComponent : public USkinnedMeshComponent
     FSingleAnimationPlayData AnimationData;                                           // 0x08C0 (size: 0x18)
     FVector RootBoneTranslation;                                                      // 0x08E8 (size: 0x18)
     FVector LineCheckBoundsScale;                                                     // 0x0900 (size: 0x18)
-    TArray<class UAnimInstance*> LinkedInstances;                                     // 0x0948 (size: 0x10)
+    TArray<UAnimInstance*> LinkedInstances;                                           // 0x0948 (size: 0x10)
     TArray<FTransform> CachedBoneSpaceTransforms;                                     // 0x0958 (size: 0x10)
     TArray<FTransform> CachedComponentSpaceTransforms;                                // 0x0968 (size: 0x10)
     float GlobalAnimRateScale;                                                        // 0x0A28 (size: 0x4)
@@ -20717,7 +20717,7 @@ class USkeletalMeshComponent : public USkinnedMeshComponent
     float GetMorphTarget(FName MorphTargetName);
     class UAnimInstance* GetLinkedAnimLayerInstanceByGroup(FName InGroup);
     class UAnimInstance* GetLinkedAnimLayerInstanceByClass(TSubclassOf<class UAnimInstance> InClass);
-    void GetLinkedAnimGraphInstancesByTag(FName InTag, TArray<class UAnimInstance*>& OutLinkedInstances);
+    void GetLinkedAnimGraphInstancesByTag(FName InTag, TArray<UAnimInstance*>& OutLinkedInstances);
     class UAnimInstance* GetLinkedAnimGraphInstanceByTag(FName InTag);
     bool GetIntegerAttribute_Ref(const FName& BoneName, const FName& AttributeName, int32& OutValue, ECustomBoneAttributeLookup LookupType);
     bool GetIntegerAttribute(const FName& BoneName, const FName& AttributeName, int32 DefaultValue, int32& OutValue, ECustomBoneAttributeLookup LookupType);
@@ -20793,12 +20793,12 @@ class USkeleton : public UObject
     TArray<FTransform> RefLocalPoses;                                                 // 0x0048 (size: 0x10)
     FGuid VirtualBoneGuid;                                                            // 0x0170 (size: 0x10)
     TArray<FVirtualBone> VirtualBones;                                                // 0x0180 (size: 0x10)
-    TArray<TSoftObjectPtr<USkeleton>> CompatibleSkeletons;                            // 0x0190 (size: 0x10)
-    TArray<class USkeletalMeshSocket*> Sockets;                                       // 0x01A0 (size: 0x10)
+    TArray<TSoftObjectPtr<class USkeleton>> CompatibleSkeletons;                      // 0x0190 (size: 0x10)
+    TArray<USkeletalMeshSocket*> Sockets;                                             // 0x01A0 (size: 0x10)
     FSmartNameContainer SmartNames;                                                   // 0x0200 (size: 0x50)
-    TArray<class UBlendProfile*> BlendProfiles;                                       // 0x0280 (size: 0x10)
+    TArray<UBlendProfile*> BlendProfiles;                                             // 0x0280 (size: 0x10)
     TArray<FAnimSlotGroup> SlotGroups;                                                // 0x0290 (size: 0x10)
-    TArray<class UAssetUserData*> AssetUserData;                                      // 0x04B8 (size: 0x10)
+    TArray<UAssetUserData*> AssetUserData;                                            // 0x04B8 (size: 0x10)
 
     class UBlendProfile* GetBlendProfile(const FName& InProfileName);
     void AddCompatibleSkeleton(const class USkeleton* SourceSkeleton);
@@ -21029,14 +21029,14 @@ class USoundBase : public UObject
     class USoundEffectSourcePresetChain* SourceEffectChain;                           // 0x0130 (size: 0x8)
     TArray<FSoundSourceBusSendInfo> BusSends;                                         // 0x0138 (size: 0x10)
     TArray<FSoundSourceBusSendInfo> PreEffectBusSends;                                // 0x0148 (size: 0x10)
-    TArray<class UAssetUserData*> AssetUserData;                                      // 0x0158 (size: 0x10)
+    TArray<UAssetUserData*> AssetUserData;                                            // 0x0158 (size: 0x10)
 
 }; // Size: 0x168
 
 class USoundClass : public UObject
 {
     FSoundClassProperties Properties;                                                 // 0x0028 (size: 0x1B8)
-    TArray<class USoundClass*> ChildClasses;                                          // 0x01E0 (size: 0x10)
+    TArray<USoundClass*> ChildClasses;                                                // 0x01E0 (size: 0x10)
     TArray<FPassiveSoundMixModifier> PassiveSoundMixModifiers;                        // 0x01F0 (size: 0x10)
     class USoundClass* ParentClass;                                                   // 0x0200 (size: 0x8)
 
@@ -21103,7 +21103,7 @@ class USoundMix : public UObject
 
 class USoundNode : public UObject
 {
-    TArray<class USoundNode*> ChildNodes;                                             // 0x0028 (size: 0x10)
+    TArray<USoundNode*> ChildNodes;                                                   // 0x0028 (size: 0x10)
 
 }; // Size: 0x48
 
@@ -21276,7 +21276,7 @@ class USoundNodeWaveParam : public USoundNode
 
 class USoundNodeWavePlayer : public USoundNodeAssetReferencer
 {
-    TSoftObjectPtr<USoundWave> SoundWaveAssetPtr;                                     // 0x0048 (size: 0x30)
+    TSoftObjectPtr<class USoundWave> SoundWaveAssetPtr;                               // 0x0048 (size: 0x30)
     class USoundWave* SoundWave;                                                      // 0x0078 (size: 0x8)
     uint8 bLooping;                                                                   // 0x0080 (size: 0x1)
 
@@ -21294,7 +21294,7 @@ class USoundSourceBus : public USoundWave
 class USoundSubmix : public USoundSubmixWithParentBase
 {
     uint8 bMuteWhenBackgrounded;                                                      // 0x0048 (size: 0x1)
-    TArray<class USoundEffectSubmixPreset*> SubmixEffectChain;                        // 0x0050 (size: 0x10)
+    TArray<USoundEffectSubmixPreset*> SubmixEffectChain;                              // 0x0050 (size: 0x10)
     class USoundfieldEncodingSettingsBase* AmbisonicsPluginSettings;                  // 0x0060 (size: 0x8)
     int32 EnvelopeFollowerAttackTime;                                                 // 0x0068 (size: 0x4)
     int32 EnvelopeFollowerReleaseTime;                                                // 0x006C (size: 0x4)
@@ -21327,7 +21327,7 @@ class USoundSubmixBase : public UObject
 {
     bool bAutoDisable;                                                                // 0x0028 (size: 0x1)
     float AutoDisableTime;                                                            // 0x002C (size: 0x4)
-    TArray<class USoundSubmixBase*> ChildSubmixes;                                    // 0x0030 (size: 0x10)
+    TArray<USoundSubmixBase*> ChildSubmixes;                                          // 0x0030 (size: 0x10)
 
 }; // Size: 0x40
 
@@ -21384,7 +21384,7 @@ class USoundfieldEndpointSubmix : public USoundSubmixBase
     class USoundfieldEndpointSettingsBase* EndpointSettings;                          // 0x0050 (size: 0x8)
     TSubclassOf<class USoundfieldEncodingSettingsBase> EncodingSettingsClass;         // 0x0058 (size: 0x8)
     class USoundfieldEncodingSettingsBase* EncodingSettings;                          // 0x0060 (size: 0x8)
-    TArray<class USoundfieldEffectBase*> SoundfieldEffectChain;                       // 0x0068 (size: 0x10)
+    TArray<USoundfieldEffectBase*> SoundfieldEffectChain;                             // 0x0068 (size: 0x10)
 
 }; // Size: 0x78
 
@@ -21392,7 +21392,7 @@ class USoundfieldSubmix : public USoundSubmixWithParentBase
 {
     FName SoundfieldEncodingFormat;                                                   // 0x0048 (size: 0x8)
     class USoundfieldEncodingSettingsBase* EncodingSettings;                          // 0x0050 (size: 0x8)
-    TArray<class USoundfieldEffectBase*> SoundfieldEffectChain;                       // 0x0058 (size: 0x10)
+    TArray<USoundfieldEffectBase*> SoundfieldEffectChain;                             // 0x0058 (size: 0x10)
     TSubclassOf<class USoundfieldEncodingSettingsBase> EncodingSettingsClass;         // 0x0068 (size: 0x8)
 
 }; // Size: 0x70
@@ -21654,12 +21654,12 @@ class UStaticMesh : public UStreamableRenderAsset
     uint8 bIsBuiltAtRuntime;                                                          // 0x018C (size: 0x1)
     uint8 bAllowCPUAccess;                                                            // 0x018D (size: 0x1)
     uint8 bSupportGpuUniformlyDistributedSampling;                                    // 0x018D (size: 0x1)
-    TArray<class UStaticMeshSocket*> Sockets;                                         // 0x01B0 (size: 0x10)
+    TArray<UStaticMeshSocket*> Sockets;                                               // 0x01B0 (size: 0x10)
     FVector PositiveBoundsExtension;                                                  // 0x01D0 (size: 0x18)
     FVector NegativeBoundsExtension;                                                  // 0x01E8 (size: 0x18)
     FBoxSphereBounds ExtendedBounds;                                                  // 0x0200 (size: 0x38)
     int32 ElementToIgnoreForTexFactor;                                                // 0x0238 (size: 0x4)
-    TArray<class UAssetUserData*> AssetUserData;                                      // 0x0240 (size: 0x10)
+    TArray<UAssetUserData*> AssetUserData;                                            // 0x0240 (size: 0x10)
     class UNavCollisionBase* NavCollision;                                            // 0x0250 (size: 0x8)
 
     void SetStaticMaterials(const TArray<FStaticMaterial>& InStaticMaterials);
@@ -21669,7 +21669,7 @@ class UStaticMesh : public UStreamableRenderAsset
     void RemoveSocket(class UStaticMeshSocket* Socket);
     class UStaticMeshDescription* GetStaticMeshDescription(int32 LODIndex);
     TArray<FStaticMaterial> GetStaticMaterials();
-    TArray<class UStaticMeshSocket*> GetSocketsByTag(FString InSocketTag);
+    TArray<UStaticMeshSocket*> GetSocketsByTag(FString InSocketTag);
     int32 GetNumTriangles(int32 LODIndex);
     int32 GetNumSections(int32 InLOD);
     int32 GetNumLODs();
@@ -21684,7 +21684,7 @@ class UStaticMesh : public UStreamableRenderAsset
     FBox GetBoundingBox();
     class UStaticMeshSocket* FindSocket(FName InSocketName);
     class UStaticMeshDescription* CreateStaticMeshDescription(class UObject* Outer);
-    void BuildFromStaticMeshDescriptions(const TArray<class UStaticMeshDescription*>& StaticMeshDescriptions, bool bBuildSimpleCollision, bool bFastBuild);
+    void BuildFromStaticMeshDescriptions(const TArray<UStaticMeshDescription*>& StaticMeshDescriptions, bool bBuildSimpleCollision, bool bFastBuild);
     void AddSocket(class UStaticMeshSocket* Socket);
     FName AddMaterial(class UMaterialInterface* Material);
 }; // Size: 0x258
@@ -21969,7 +21969,7 @@ class UTexture : public UStreamableRenderAsset
     uint8 CompressionYCoCg;                                                           // 0x0101 (size: 0x1)
     uint8 bNotOfflineProcessed;                                                       // 0x0101 (size: 0x1)
     uint8 bAsyncResourceReleaseHasBeenStarted;                                        // 0x0101 (size: 0x1)
-    TArray<class UAssetUserData*> AssetUserData;                                      // 0x0108 (size: 0x10)
+    TArray<UAssetUserData*> AssetUserData;                                            // 0x0108 (size: 0x10)
 
     int64 Blueprint_GetMemorySize();
 }; // Size: 0x1F0
@@ -22203,10 +22203,10 @@ class UTransactionDiffingTestObject : public UObject
 {
     TArray<FName> NamesArray;                                                         // 0x0028 (size: 0x10)
     FName AdditionalName;                                                             // 0x0038 (size: 0x8)
-    TArray<class UObject*> ObjectsArray;                                              // 0x0040 (size: 0x10)
+    TArray<UObject*> ObjectsArray;                                                    // 0x0040 (size: 0x10)
     class UObject* AdditionalObject;                                                  // 0x0050 (size: 0x8)
-    TArray<TSoftObjectPtr<UObject>> SoftObjectsArray;                                 // 0x0058 (size: 0x10)
-    TSoftObjectPtr<UObject> AdditionalSoftObject;                                     // 0x0068 (size: 0x30)
+    TArray<TSoftObjectPtr<class UObject>> SoftObjectsArray;                           // 0x0058 (size: 0x10)
+    TSoftObjectPtr<class UObject> AdditionalSoftObject;                               // 0x0068 (size: 0x30)
     int32 PropertyData;                                                               // 0x0098 (size: 0x4)
 
 }; // Size: 0xA0
@@ -22234,7 +22234,7 @@ class UTypedElementCommonActions : public UObject
 
 class UUserDefinedEnum : public UEnum
 {
-    TMap<class FName, class FText> DisplayNameMap;                                    // 0x0070 (size: 0x50)
+    TMap<FName, FText> DisplayNameMap;                                                // 0x0070 (size: 0x50)
 
 }; // Size: 0xC0
 
@@ -22264,7 +22264,7 @@ class UUserInterfaceSettings : public UDeveloperSettings
     bool bAllowHighDPIInGameMode;                                                     // 0x0270 (size: 0x1)
     FIntPoint DesignScreenSize;                                                       // 0x0274 (size: 0x8)
     bool bLoadWidgetsOnDedicatedServer;                                               // 0x027C (size: 0x1)
-    TArray<class UObject*> CursorClasses;                                             // 0x0280 (size: 0x10)
+    TArray<UObject*> CursorClasses;                                                   // 0x0280 (size: 0x10)
     UClass* CustomScalingRuleClassInstance;                                           // 0x0290 (size: 0x8)
     class UDPICustomScalingRule* CustomScalingRule;                                   // 0x0298 (size: 0x8)
 
@@ -22462,9 +22462,9 @@ class UWorld : public UObject
     class ULineBatchComponent* ForegroundLineBatcher;                                 // 0x0050 (size: 0x8)
     class AGameNetworkManager* NetworkManager;                                        // 0x0058 (size: 0x8)
     class UPhysicsCollisionHandler* PhysicsCollisionHandler;                          // 0x0060 (size: 0x8)
-    TArray<class UObject*> ExtraReferencedObjects;                                    // 0x0068 (size: 0x10)
-    TArray<class UObject*> PerModuleDataObjects;                                      // 0x0078 (size: 0x10)
-    TArray<class ULevelStreaming*> StreamingLevels;                                   // 0x0088 (size: 0x10)
+    TArray<UObject*> ExtraReferencedObjects;                                          // 0x0068 (size: 0x10)
+    TArray<UObject*> PerModuleDataObjects;                                            // 0x0078 (size: 0x10)
+    TArray<ULevelStreaming*> StreamingLevels;                                         // 0x0088 (size: 0x10)
     FStreamingLevelsToConsider StreamingLevelsToConsider;                             // 0x0098 (size: 0x28)
     class AServerStreamingLevelsVisibility* ServerStreamingLevelsVisibility;          // 0x00C0 (size: 0x8)
     FString StreamingLevelsPrefix;                                                    // 0x00C8 (size: 0x10)
@@ -22479,17 +22479,17 @@ class UWorld : public UObject
     class AGameStateBase* GameState;                                                  // 0x0158 (size: 0x8)
     class UAISystemBase* AISystem;                                                    // 0x0160 (size: 0x8)
     class UAvoidanceManager* AvoidanceManager;                                        // 0x0168 (size: 0x8)
-    TArray<class ULevel*> Levels;                                                     // 0x0170 (size: 0x10)
+    TArray<ULevel*> Levels;                                                           // 0x0170 (size: 0x10)
     TArray<FLevelCollection> LevelCollections;                                        // 0x0180 (size: 0x10)
     class UGameInstance* OwningGameInstance;                                          // 0x01B8 (size: 0x8)
-    TArray<class UMaterialParameterCollectionInstance*> ParameterCollectionInstances; // 0x01C0 (size: 0x10)
+    TArray<UMaterialParameterCollectionInstance*> ParameterCollectionInstances;       // 0x01C0 (size: 0x10)
     class UCanvas* CanvasForRenderingToTarget;                                        // 0x01D0 (size: 0x8)
     class UCanvas* CanvasForDrawMaterialToRenderTarget;                               // 0x01D8 (size: 0x8)
     class UPhysicsFieldComponent* PhysicsField;                                       // 0x0250 (size: 0x8)
     uint32 LWILastAssignedUID;                                                        // 0x0258 (size: 0x4)
     TSet<UActorComponent*> ComponentsThatNeedPreEndOfFrameSync;                       // 0x0260 (size: 0x50)
-    TArray<class UActorComponent*> ComponentsThatNeedEndOfFrameUpdate;                // 0x02B0 (size: 0x10)
-    TArray<class UActorComponent*> ComponentsThatNeedEndOfFrameUpdate_OnGameThread;   // 0x02C0 (size: 0x10)
+    TArray<UActorComponent*> ComponentsThatNeedEndOfFrameUpdate;                      // 0x02B0 (size: 0x10)
+    TArray<UActorComponent*> ComponentsThatNeedEndOfFrameUpdate_OnGameThread;         // 0x02C0 (size: 0x10)
     class UWorldComposition* WorldComposition;                                        // 0x06C8 (size: 0x8)
     class UContentBundleManager* ContentBundleManager;                                // 0x06D0 (size: 0x8)
     FWorldPSCPool PSCPool;                                                            // 0x0780 (size: 0x58)
@@ -22500,7 +22500,7 @@ class UWorld : public UObject
 
 class UWorldComposition : public UObject
 {
-    TArray<class ULevelStreaming*> TilesStreaming;                                    // 0x0048 (size: 0x10)
+    TArray<ULevelStreaming*> TilesStreaming;                                          // 0x0048 (size: 0x10)
     double TilesStreamingTimeThreshold;                                               // 0x0058 (size: 0x8)
     bool bLoadAllTilesDuringCinematic;                                                // 0x0060 (size: 0x1)
     bool bRebaseOriginIn3DSpace;                                                      // 0x0061 (size: 0x1)
@@ -22557,7 +22557,7 @@ class UWorldPartitionLevelStreamingDynamic : public ULevelStreamingDynamic
 
 class UWorldPartitionLevelStreamingPolicy : public UWorldPartitionStreamingPolicy
 {
-    TMap<class FName, class FName> SubObjectsToCellRemapping;                         // 0x0358 (size: 0x50)
+    TMap<FName, FName> SubObjectsToCellRemapping;                                     // 0x0358 (size: 0x50)
 
 }; // Size: 0x3A8
 
@@ -22593,7 +22593,7 @@ class UWorldPartitionRuntimeSpatialHash : public UWorldPartitionRuntimeHash
     bool bEnableZSeaLevelCulling;                                                     // 0x0031 (size: 0x1)
     double SeaLevelZ;                                                                 // 0x0038 (size: 0x8)
     TArray<FSpatialHashStreamingGrid> StreamingGrids;                                 // 0x0040 (size: 0x10)
-    TArray<TWeakObjectPtr<URuntimeSpatialHashExternalStreamingObject>> ExternalStreamingObjects; // 0x00A8 (size: 0x10)
+    TArray<TWeakObjectPtr<class URuntimeSpatialHashExternalStreamingObject>> ExternalStreamingObjects; // 0x00A8 (size: 0x10)
 
 }; // Size: 0xB8
 

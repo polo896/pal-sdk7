@@ -7,7 +7,7 @@ class UWBP_PalKeyGuideIcon_C : public UPalUserWidget
     class UPalUIActionWidgetBase* PalUIActionWidgetBase_24;                           // 0x0458 (size: 0x8)
     class USizeBox* SizeBox_0;                                                        // 0x0460 (size: 0x8)
     FPalDataTableRowName_UIInputAction bindActionName;                                // 0x0468 (size: 0x8)
-    TMap<class ECommonInputType, class FSlateBrush> OverrideImageMap;                 // 0x0470 (size: 0x50)
+    TMap<ECommonInputType, FSlateBrush> OverrideImageMap;                             // 0x0470 (size: 0x50)
     bool EnableOverrideImage;                                                         // 0x04C0 (size: 0x1)
 
     void OnUISettingChanged(const FPalOptionUISettings& PrevSettings, const FPalOptionUISettings& NewSettings);

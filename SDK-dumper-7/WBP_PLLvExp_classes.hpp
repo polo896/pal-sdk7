@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "WBP_IndividualParameterBindWidget_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -40,17 +40,17 @@ public:
 	double                                        CloseTimer;                                        // 0x06C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Close_UI();
-	void AnmEvent_Open_UI();
-	void ExecuteUbergraph_WBP_PLLvExp(int32 EntryPoint);
-	void Finished_45DAD3564BCF5FB025F120A933EEC011();
-	void Finished_D0ED7FF7495A5D9266FC3DB1824EA6F6();
-	void OnInitialized();
-	void SetAddExpText(int64 Value);
-	void Setup();
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void UpdateExp(int64 addExp, int64 oldExp, double nowExpRate);
 	void UpdateLevel(int32 NewLevel);
+	void UpdateExp(int64 addExp, int64 oldExp, double nowExpRate);
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void Setup();
+	void SetAddExpText(int64 Value);
+	void OnInitialized();
+	void Finished_D0ED7FF7495A5D9266FC3DB1824EA6F6();
+	void Finished_45DAD3564BCF5FB025F120A933EEC011();
+	void ExecuteUbergraph_WBP_PLLvExp(int32 EntryPoint);
+	void AnmEvent_Open_UI();
+	void AnmEvent_Close_UI();
 
 public:
 	static class UClass* StaticClass()

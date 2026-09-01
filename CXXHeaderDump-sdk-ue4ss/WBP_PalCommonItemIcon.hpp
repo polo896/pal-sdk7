@@ -5,7 +5,7 @@ class UWBP_PalCommonItemIcon_C : public UWBP_PalItemIconBase_C
 {
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x04B0 (size: 0x8)
     class UCircularThrobber* CircularThrobber_96;                                     // 0x04B8 (size: 0x8)
-    class UImage* IconImage;                                                          // 0x04C0 (size: 0x8)
+    class UImage* iconImage;                                                          // 0x04C0 (size: 0x8)
     class UMaterialInstanceDynamic* dynamicMaterial;                                  // 0x04C8 (size: 0x8)
 
     void OnEmpty();

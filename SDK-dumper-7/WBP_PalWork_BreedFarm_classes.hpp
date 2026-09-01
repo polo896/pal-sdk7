@@ -46,16 +46,16 @@ public:
 	class UPalUIMapObjectBreedStatusIndicatorModel* BreedUIModel;                                    // 0x0500(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void Destruct();
-	void DisplayCheck();
-	void ExecuteUbergraph_WBP_PalWork_BreedFarm(int32 EntryPoint);
-	void On_Updated_Worker_Pal(class UPalWorkBase* Work);
-	void OnReadyItemContainerEvent(TScriptInterface<class IPalMapObjectItemContainerAccessInterface> AccessInterface);
-	void OnSetup();
-	void OnUpdateContainer(class UPalItemContainer* Container);
-	void OnUpdateProgress(class UPalUIMapObjectBreedStatusIndicatorModel* UIModel);
 	void ReflectExistsBreedItem();
+	void OnUpdateProgress(class UPalUIMapObjectBreedStatusIndicatorModel* UIModel);
+	void OnUpdateContainer(class UPalItemContainer* Container);
+	void OnSetup();
+	void OnReadyItemContainerEvent(TScriptInterface<class IPalMapObjectItemContainerAccessInterface> AccessInterface);
+	void On_Updated_Worker_Pal(class UPalWorkBase* Work);
+	void ExecuteUbergraph_WBP_PalWork_BreedFarm(int32 EntryPoint);
+	void DisplayCheck();
+	void Destruct();
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

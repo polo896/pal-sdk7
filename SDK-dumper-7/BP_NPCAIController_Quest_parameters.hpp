@@ -16,14 +16,35 @@
 namespace SDK::Params
 {
 
-// Function BP_NPCAIController_Quest.BP_NPCAIController_Quest_C.EnableTickTurn
-// 0x0001 (0x0001 - 0x0000)
-struct BP_NPCAIController_Quest_C_EnableTickTurn final
+// Function BP_NPCAIController_Quest.BP_NPCAIController_Quest_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_NPCAIController_Quest_C_ReceiveTick final
 {
 public:
-	bool                                          IsEnableTickTurn;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_NPCAIController_Quest_C_EnableTickTurn;
+DUMPER7_ASSERTS_BP_NPCAIController_Quest_C_ReceiveTick;
+
+// Function BP_NPCAIController_Quest.BP_NPCAIController_Quest_C.OnNpcTalkIncidentNotify
+// 0x0038 (0x0038 - 0x0000)
+struct BP_NPCAIController_Quest_C_OnNpcTalkIncidentNotify final
+{
+public:
+	class UPalIncidentNotifyListener*             Listener;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPalIncidentState                             IncidentState;                                     // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalIncidentNotifyParameter            Parameter;                                         // 0x0010(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_NPCAIController_Quest_C_OnNpcTalkIncidentNotify;
+
+// Function BP_NPCAIController_Quest.BP_NPCAIController_Quest_C.NotifyTalkStart
+// 0x0008 (0x0008 - 0x0000)
+struct BP_NPCAIController_Quest_C_NotifyTalkStart final
+{
+public:
+	class APalPlayerCharacter*                    TalkPlayer;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_NPCAIController_Quest_C_NotifyTalkStart;
 
 // Function BP_NPCAIController_Quest.BP_NPCAIController_Quest_C.ExecuteUbergraph_BP_NPCAIController_Quest
 // 0x0070 (0x0070 - 0x0000)
@@ -48,35 +69,14 @@ public:
 };
 DUMPER7_ASSERTS_BP_NPCAIController_Quest_C_ExecuteUbergraph_BP_NPCAIController_Quest;
 
-// Function BP_NPCAIController_Quest.BP_NPCAIController_Quest_C.NotifyTalkStart
-// 0x0008 (0x0008 - 0x0000)
-struct BP_NPCAIController_Quest_C_NotifyTalkStart final
+// Function BP_NPCAIController_Quest.BP_NPCAIController_Quest_C.EnableTickTurn
+// 0x0001 (0x0001 - 0x0000)
+struct BP_NPCAIController_Quest_C_EnableTickTurn final
 {
 public:
-	class APalPlayerCharacter*                    TalkPlayer;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsEnableTickTurn;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_NPCAIController_Quest_C_NotifyTalkStart;
-
-// Function BP_NPCAIController_Quest.BP_NPCAIController_Quest_C.OnNpcTalkIncidentNotify
-// 0x0038 (0x0038 - 0x0000)
-struct BP_NPCAIController_Quest_C_OnNpcTalkIncidentNotify final
-{
-public:
-	class UPalIncidentNotifyListener*             Listener;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPalIncidentState                             IncidentState;                                     // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalIncidentNotifyParameter            Parameter;                                         // 0x0010(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
-};
-DUMPER7_ASSERTS_BP_NPCAIController_Quest_C_OnNpcTalkIncidentNotify;
-
-// Function BP_NPCAIController_Quest.BP_NPCAIController_Quest_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_NPCAIController_Quest_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_NPCAIController_Quest_C_ReceiveTick;
+DUMPER7_ASSERTS_BP_NPCAIController_Quest_C_EnableTickTurn;
 
 }
 

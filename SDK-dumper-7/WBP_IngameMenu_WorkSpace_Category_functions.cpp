@@ -17,112 +17,17 @@
 namespace SDK
 {
 
-// Function WBP_IngameMenu_WorkSpace_Category.WBP_IngameMenu_WorkSpace_Category_C.AnmEvent_Active
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsActive                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_IngameMenu_WorkSpace_Category.WBP_IngameMenu_WorkSpace_Category_C.Setup
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_IngameMenu_WorkSpace_Category_C::AnmEvent_Active(bool bIsActive)
+void UWBP_IngameMenu_WorkSpace_Category_C::Setup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Category_C", "AnmEvent_Active");
-
-	Params::WBP_IngameMenu_WorkSpace_Category_C_AnmEvent_Active Parms{};
-
-	Parms.bIsActive = bIsActive;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_WorkSpace_Category.WBP_IngameMenu_WorkSpace_Category_C.BndEvt__WBP_IngameMenu_WorkSpace_Category_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_WorkSpace_Category_C::BndEvt__WBP_IngameMenu_WorkSpace_Category_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Category_C", "BndEvt__WBP_IngameMenu_WorkSpace_Category_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_IngameMenu_WorkSpace_Category_C_BndEvt__WBP_IngameMenu_WorkSpace_Category_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_WorkSpace_Category.WBP_IngameMenu_WorkSpace_Category_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_IngameMenu_WorkSpace_Category_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Category_C", "Construct");
+		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Category_C", "Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_WorkSpace_Category.WBP_IngameMenu_WorkSpace_Category_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_IngameMenu_WorkSpace_Category_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Category_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_WorkSpace_Category.WBP_IngameMenu_WorkSpace_Category_C.ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Category
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_WorkSpace_Category_C::ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Category(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Category_C", "ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Category");
-
-	Params::WBP_IngameMenu_WorkSpace_Category_C_ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Category Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_WorkSpace_Category.WBP_IngameMenu_WorkSpace_Category_C.GetBindCategory
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// E_PalUIWorkSpaceDisplayCategory*        OutCategory                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_WorkSpace_Category_C::GetBindCategory(E_PalUIWorkSpaceDisplayCategory* OutCategory)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Category_C", "GetBindCategory");
-
-	Params::WBP_IngameMenu_WorkSpace_Category_C_GetBindCategory Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutCategory != nullptr)
-		*OutCategory = Parms.OutCategory;
 }
 
 
@@ -151,17 +56,112 @@ void UWBP_IngameMenu_WorkSpace_Category_C::GetTargetItemTypes(TArray<EPalItemTyp
 }
 
 
-// Function WBP_IngameMenu_WorkSpace_Category.WBP_IngameMenu_WorkSpace_Category_C.Setup
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_WorkSpace_Category.WBP_IngameMenu_WorkSpace_Category_C.GetBindCategory
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// E_PalUIWorkSpaceDisplayCategory*        OutCategory                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_WorkSpace_Category_C::Setup()
+void UWBP_IngameMenu_WorkSpace_Category_C::GetBindCategory(E_PalUIWorkSpaceDisplayCategory* OutCategory)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Category_C", "Setup");
+		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Category_C", "GetBindCategory");
+
+	Params::WBP_IngameMenu_WorkSpace_Category_C_GetBindCategory Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutCategory != nullptr)
+		*OutCategory = Parms.OutCategory;
+}
+
+
+// Function WBP_IngameMenu_WorkSpace_Category.WBP_IngameMenu_WorkSpace_Category_C.ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Category
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_WorkSpace_Category_C::ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Category(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Category_C", "ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Category");
+
+	Params::WBP_IngameMenu_WorkSpace_Category_C_ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Category Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_WorkSpace_Category.WBP_IngameMenu_WorkSpace_Category_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_IngameMenu_WorkSpace_Category_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Category_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenu_WorkSpace_Category.WBP_IngameMenu_WorkSpace_Category_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_IngameMenu_WorkSpace_Category_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Category_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenu_WorkSpace_Category.WBP_IngameMenu_WorkSpace_Category_C.BndEvt__WBP_IngameMenu_WorkSpace_Category_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_WorkSpace_Category_C::BndEvt__WBP_IngameMenu_WorkSpace_Category_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Category_C", "BndEvt__WBP_IngameMenu_WorkSpace_Category_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_IngameMenu_WorkSpace_Category_C_BndEvt__WBP_IngameMenu_WorkSpace_Category_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_WorkSpace_Category.WBP_IngameMenu_WorkSpace_Category_C.AnmEvent_Active
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsActive                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_WorkSpace_Category_C::AnmEvent_Active(bool bIsActive)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_WorkSpace_Category_C", "AnmEvent_Active");
+
+	Params::WBP_IngameMenu_WorkSpace_Category_C_AnmEvent_Active Parms{};
+
+	Parms.bIsActive = bIsActive;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

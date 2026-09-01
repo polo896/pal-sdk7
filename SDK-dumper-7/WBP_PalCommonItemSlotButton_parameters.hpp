@@ -16,14 +16,71 @@
 namespace SDK::Params
 {
 
-// Function WBP_PalCommonItemSlotButton.WBP_PalCommonItemSlotButton_C.DraggedEvent
+// Function WBP_PalCommonItemSlotButton.WBP_PalCommonItemSlotButton_C.RegisterItemSlotWidget
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_PalCommonItemSlotButton_C_DraggedEvent final
+struct WBP_PalCommonItemSlotButton_C_RegisterItemSlotWidget final
+{
+public:
+	class UWBP_PalItemSlotBase_C*                 itemSlotWidget;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalCommonItemSlotButton_C_RegisterItemSlotWidget;
+
+// Function WBP_PalCommonItemSlotButton.WBP_PalCommonItemSlotButton_C.RegisterButton
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalCommonItemSlotButton_C_RegisterButton final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalCommonItemSlotButton_C_RegisterButton;
+
+// Function WBP_PalCommonItemSlotButton.WBP_PalCommonItemSlotButton_C.PlayUnfocusAnim
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalCommonItemSlotButton_C_PlayUnfocusAnim final
 {
 public:
 	class UWBP_PalItemSlotButtonBase_C*           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalCommonItemSlotButton_C_DraggedEvent;
+DUMPER7_ASSERTS_WBP_PalCommonItemSlotButton_C_PlayUnfocusAnim;
+
+// Function WBP_PalCommonItemSlotButton.WBP_PalCommonItemSlotButton_C.PlayPushAnim
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PalCommonItemSlotButton_C_PlayPushAnim final
+{
+public:
+	class UWBP_PalItemSlotButtonBase_C*           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalCommonItemSlotButton_C_PlayPushAnim;
+
+// Function WBP_PalCommonItemSlotButton.WBP_PalCommonItemSlotButton_C.PlayFocusAnim
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalCommonItemSlotButton_C_PlayFocusAnim final
+{
+public:
+	class UWBP_PalItemSlotButtonBase_C*           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalCommonItemSlotButton_C_PlayFocusAnim;
+
+// Function WBP_PalCommonItemSlotButton.WBP_PalCommonItemSlotButton_C.PlayDropAnim
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalCommonItemSlotButton_C_PlayDropAnim final
+{
+public:
+	class UWBP_PalItemSlotButtonBase_C*           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalCommonItemSlotButton_C_PlayDropAnim;
+
+// Function WBP_PalCommonItemSlotButton.WBP_PalCommonItemSlotButton_C.LiftedEvent
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PalCommonItemSlotButton_C_LiftedEvent final
+{
+public:
+	int32                                         LiftNum;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_PalItemSlotButtonBase_C*           Widget;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalCommonItemSlotButton_C_LiftedEvent;
 
 // Function WBP_PalCommonItemSlotButton.WBP_PalCommonItemSlotButton_C.ExecuteUbergraph_WBP_PalCommonItemSlotButton
 // 0x00E0 (0x00E0 - 0x0000)
@@ -60,71 +117,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_PalCommonItemSlotButton_C_ExecuteUbergraph_WBP_PalCommonItemSlotButton;
 
-// Function WBP_PalCommonItemSlotButton.WBP_PalCommonItemSlotButton_C.LiftedEvent
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PalCommonItemSlotButton_C_LiftedEvent final
-{
-public:
-	int32                                         LiftNum;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_PalItemSlotButtonBase_C*           Widget;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalCommonItemSlotButton_C_LiftedEvent;
-
-// Function WBP_PalCommonItemSlotButton.WBP_PalCommonItemSlotButton_C.PlayDropAnim
+// Function WBP_PalCommonItemSlotButton.WBP_PalCommonItemSlotButton_C.DraggedEvent
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_PalCommonItemSlotButton_C_PlayDropAnim final
+struct WBP_PalCommonItemSlotButton_C_DraggedEvent final
 {
 public:
 	class UWBP_PalItemSlotButtonBase_C*           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalCommonItemSlotButton_C_PlayDropAnim;
-
-// Function WBP_PalCommonItemSlotButton.WBP_PalCommonItemSlotButton_C.PlayFocusAnim
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalCommonItemSlotButton_C_PlayFocusAnim final
-{
-public:
-	class UWBP_PalItemSlotButtonBase_C*           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalCommonItemSlotButton_C_PlayFocusAnim;
-
-// Function WBP_PalCommonItemSlotButton.WBP_PalCommonItemSlotButton_C.PlayPushAnim
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PalCommonItemSlotButton_C_PlayPushAnim final
-{
-public:
-	class UWBP_PalItemSlotButtonBase_C*           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalCommonItemSlotButton_C_PlayPushAnim;
-
-// Function WBP_PalCommonItemSlotButton.WBP_PalCommonItemSlotButton_C.PlayUnfocusAnim
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalCommonItemSlotButton_C_PlayUnfocusAnim final
-{
-public:
-	class UWBP_PalItemSlotButtonBase_C*           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalCommonItemSlotButton_C_PlayUnfocusAnim;
-
-// Function WBP_PalCommonItemSlotButton.WBP_PalCommonItemSlotButton_C.RegisterButton
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalCommonItemSlotButton_C_RegisterButton final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalCommonItemSlotButton_C_RegisterButton;
-
-// Function WBP_PalCommonItemSlotButton.WBP_PalCommonItemSlotButton_C.RegisterItemSlotWidget
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalCommonItemSlotButton_C_RegisterItemSlotWidget final
-{
-public:
-	class UWBP_PalItemSlotBase_C*                 itemSlotWidget;                                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalCommonItemSlotButton_C_RegisterItemSlotWidget;
+DUMPER7_ASSERTS_WBP_PalCommonItemSlotButton_C_DraggedEvent;
 
 }
 

@@ -37,18 +37,18 @@ public:
 	int32                                         LastHoveredIndex;                                  // 0x04C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_Arena_Spectate_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void CancelAction();
-	void ConfirmSpec(bool IsYes);
-	void ExecuteUbergraph_WBP_Arena_Spectate(int32 EntryPoint);
-	void OnInitialized();
-	void OnSetup();
-	void OnSpecButtonClicked(class UWBP_Arena_Spectate_List_C* Button);
-	void OnSpecButtonHovered(class UWBP_Arena_Spectate_List_C* Button);
-	void OnSpecButtonUnhovered(class UWBP_Arena_Spectate_List_C* Button);
-	void Setup();
-	void StartSpecAction();
 	void ViewRuleAction();
+	void StartSpecAction();
+	void Setup();
+	void OnSpecButtonUnhovered(class UWBP_Arena_Spectate_List_C* Button);
+	void OnSpecButtonHovered(class UWBP_Arena_Spectate_List_C* Button);
+	void OnSpecButtonClicked(class UWBP_Arena_Spectate_List_C* Button);
+	void OnSetup();
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_Arena_Spectate(int32 EntryPoint);
+	void ConfirmSpec(bool IsYes);
+	void CancelAction();
+	void BndEvt__WBP_Arena_Spectate_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

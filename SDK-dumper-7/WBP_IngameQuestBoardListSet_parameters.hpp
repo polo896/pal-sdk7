@@ -16,91 +16,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameQuestBoardListSet.WBP_IngameQuestBoardListSet_C.AddBlockWidget
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_IngameQuestBoardListSet_C_AddBlockWidget final
-{
-public:
-	class UPalQuestBlock*                         QuestBlock;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UWBP_Ingame_QuestBoard_List_C* Widget)> K2Node_CreateDelegate_OutputDelegate; // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Ingame_QuestBoard_List_C*          CallFunc_Create_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameQuestBoardListSet_C_AddBlockWidget;
-
-// Function WBP_IngameQuestBoardListSet.WBP_IngameQuestBoardListSet_C.CompleteQuest
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_IngameQuestBoardListSet_C_CompleteQuest final
-{
-public:
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Ingame_QuestBoard_List_C*          CallFunc_Array_Get_Item;                           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameQuestBoardListSet_C_CompleteQuest;
-
-// Function WBP_IngameQuestBoardListSet.WBP_IngameQuestBoardListSet_C.GetQuestId
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameQuestBoardListSet_C_GetQuestId final
-{
-public:
-	class FName                                   QuestId;                                           // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetQuestId_ReturnValue;                   // 0x0008(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameQuestBoardListSet_C_GetQuestId;
-
-// Function WBP_IngameQuestBoardListSet.WBP_IngameQuestBoardListSet_C.GetSortedQuestBlocks
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_IngameQuestBoardListSet_C_GetSortedQuestBlocks final
-{
-public:
-	TArray<class UPalQuestBlock*>                 Blocks;                                            // 0x0000(0x0010)(Parm, OutParm)
-	TArray<class UPalQuestBlock*>                 CallFunc_GetSortedQuestBlocksForUI_OutBlocks;      // 0x0010(0x0010)(ReferenceParm)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameQuestBoardListSet_C_GetSortedQuestBlocks;
-
-// Function WBP_IngameQuestBoardListSet.WBP_IngameQuestBoardListSet_C.OnEndBlockEndAnim
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameQuestBoardListSet_C_OnEndBlockEndAnim final
-{
-public:
-	class UWBP_Ingame_QuestBoard_List_C*          Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameQuestBoardListSet_C_OnEndBlockEndAnim;
-
-// Function WBP_IngameQuestBoardListSet.WBP_IngameQuestBoardListSet_C.Setup
-// 0x00C0 (0x00C0 - 0x0000)
-struct WBP_IngameQuestBoardListSet_C_Setup final
-{
-public:
-	class UPalQuestData*                          QuestData;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetQuestId_ReturnValue;                   // 0x000C(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalQuestDataSetRow                    CallFunc_GetDataTableRowFromName_OutRow;           // 0x0018(0x0048)()
-	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_62[0x6];                                       // 0x0062(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSoftObjectPtr<class UTexture2D>              CallFunc_GetQuestTypeIcon_IconTexture;             // 0x0068(0x0030)(HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UPalQuestBlock*>                 CallFunc_GetSortedQuestBlocks_Blocks;              // 0x00A0(0x0010)(ReferenceParm)
-	class UPalQuestBlock*                         CallFunc_Array_Get_Item;                           // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameQuestBoardListSet_C_Setup;
-
 // Function WBP_IngameQuestBoardListSet.WBP_IngameQuestBoardListSet_C.UpdateQuest
 // 0x0110 (0x0110 - 0x0000)
 struct WBP_IngameQuestBoardListSet_C_UpdateQuest final
@@ -163,6 +78,91 @@ public:
 	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_IngameQuestBoardListSet_C_UpdateQuest;
+
+// Function WBP_IngameQuestBoardListSet.WBP_IngameQuestBoardListSet_C.Setup
+// 0x00C0 (0x00C0 - 0x0000)
+struct WBP_IngameQuestBoardListSet_C_Setup final
+{
+public:
+	class UPalQuestData*                          QuestData;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetQuestId_ReturnValue;                   // 0x000C(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalQuestDataSetRow                    CallFunc_GetDataTableRowFromName_OutRow;           // 0x0018(0x0048)()
+	bool                                          CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_62[0x6];                                       // 0x0062(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSoftObjectPtr<class UTexture2D>              CallFunc_GetQuestTypeIcon_IconTexture;             // 0x0068(0x0030)(HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UPalQuestBlock*>                 CallFunc_GetSortedQuestBlocks_Blocks;              // 0x00A0(0x0010)(ReferenceParm)
+	class UPalQuestBlock*                         CallFunc_Array_Get_Item;                           // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameQuestBoardListSet_C_Setup;
+
+// Function WBP_IngameQuestBoardListSet.WBP_IngameQuestBoardListSet_C.OnEndBlockEndAnim
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameQuestBoardListSet_C_OnEndBlockEndAnim final
+{
+public:
+	class UWBP_Ingame_QuestBoard_List_C*          Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameQuestBoardListSet_C_OnEndBlockEndAnim;
+
+// Function WBP_IngameQuestBoardListSet.WBP_IngameQuestBoardListSet_C.GetSortedQuestBlocks
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_IngameQuestBoardListSet_C_GetSortedQuestBlocks final
+{
+public:
+	TArray<class UPalQuestBlock*>                 Blocks;                                            // 0x0000(0x0010)(Parm, OutParm)
+	TArray<class UPalQuestBlock*>                 CallFunc_GetSortedQuestBlocksForUI_OutBlocks;      // 0x0010(0x0010)(ReferenceParm)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameQuestBoardListSet_C_GetSortedQuestBlocks;
+
+// Function WBP_IngameQuestBoardListSet.WBP_IngameQuestBoardListSet_C.GetQuestId
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameQuestBoardListSet_C_GetQuestId final
+{
+public:
+	class FName                                   QuestId;                                           // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetQuestId_ReturnValue;                   // 0x0008(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameQuestBoardListSet_C_GetQuestId;
+
+// Function WBP_IngameQuestBoardListSet.WBP_IngameQuestBoardListSet_C.CompleteQuest
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_IngameQuestBoardListSet_C_CompleteQuest final
+{
+public:
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Ingame_QuestBoard_List_C*          CallFunc_Array_Get_Item;                           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameQuestBoardListSet_C_CompleteQuest;
+
+// Function WBP_IngameQuestBoardListSet.WBP_IngameQuestBoardListSet_C.AddBlockWidget
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_IngameQuestBoardListSet_C_AddBlockWidget final
+{
+public:
+	class UPalQuestBlock*                         QuestBlock;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UWBP_Ingame_QuestBoard_List_C* Widget)> K2Node_CreateDelegate_OutputDelegate; // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Ingame_QuestBoard_List_C*          CallFunc_Create_ReturnValue;                       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UVerticalBoxSlot*                       CallFunc_AddChildToVerticalBox_ReturnValue;        // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameQuestBoardListSet_C_AddBlockWidget;
 
 }
 

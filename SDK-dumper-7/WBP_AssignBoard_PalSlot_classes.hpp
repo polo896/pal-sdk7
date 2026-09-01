@@ -13,8 +13,8 @@
 #include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "WBP_PalCharacterSlotBase_classes.hpp"
 #include "Pal_structs.hpp"
+#include "WBP_PalCharacterSlotBase_classes.hpp"
 
 
 namespace SDK
@@ -39,21 +39,21 @@ public:
 	struct FGuid                                  ReferemceWorkId;                                   // 0x09A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Destruct();
-	void ExecuteUbergraph_WBP_AssignBoard_PalSlot(int32 EntryPoint);
-	void OnInitialized();
-	void OnSetEmpty_Binded();
-	void OnSetIconEmpty_Binded();
-	void OnSetValidSlot_Binded();
-	void OnUpdateHP_Binded(int64 nowHP, int64 nowMaxHP);
-	void OnUpdateWorkId_Binded(const struct FGuid& WorkId, bool IsFixedAssign);
-	void RegisterCharacterIconWidget(class UWBP_PalCharacterIconBase_C** IconWidget);
-	void Set_Suitability(EPalWorkSuitability Suitability);
-	void Set_Visibility_Focus_Frame(ESlateVisibility NewVisibility);
-	void SetReferenceWorkId(const struct FGuid& WorkId);
-	void SetVisibilityCheck(ESlateVisibility NewVisibility);
-	void SetVisibilityFixedAssignFrame(ESlateVisibility NewVisibility);
 	void SetVisibilityGenderIcon(ESlateVisibility NewVisibility);
+	void SetVisibilityFixedAssignFrame(ESlateVisibility NewVisibility);
+	void SetVisibilityCheck(ESlateVisibility NewVisibility);
+	void SetReferenceWorkId(const struct FGuid& WorkId);
+	void Set_Visibility_Focus_Frame(ESlateVisibility NewVisibility);
+	void Set_Suitability(EPalWorkSuitability Suitability);
+	void RegisterCharacterIconWidget(class UWBP_PalCharacterIconBase_C** IconWidget);
+	void OnUpdateWorkId_Binded(const struct FGuid& WorkId, bool IsFixedAssign);
+	void OnUpdateHP_Binded(int64 nowHP, int64 nowMaxHP);
+	void OnSetValidSlot_Binded();
+	void OnSetIconEmpty_Binded();
+	void OnSetEmpty_Binded();
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_AssignBoard_PalSlot(int32 EntryPoint);
+	void Destruct();
 
 public:
 	static class UClass* StaticClass()

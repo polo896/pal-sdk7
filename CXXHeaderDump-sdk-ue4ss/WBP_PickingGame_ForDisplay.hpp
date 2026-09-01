@@ -41,7 +41,7 @@ class UWBP_PickingGame_ForDisplay_C : public UPalUIPickingGame
     bool IsClear;                                                                     // 0x0578 (size: 0x1)
     double AnalogValue;                                                               // 0x0580 (size: 0x8)
     class UForceFeedbackComponent* KeyTurnStopForceFeedback;                          // 0x0588 (size: 0x8)
-    TMap<class EPalPickingGameDifficultyType, class TSoftObjectPtr<UTexture2D>> KeyHoleTextureMap; // 0x0590 (size: 0x50)
+    TMap<EPalPickingGameDifficultyType, TSoftObjectPtr<class UTexture2D>> KeyHoleTextureMap; // 0x0590 (size: 0x50)
     float CachedFinalAKETriggerToolPosition;                                          // 0x05E0 (size: 0x4)
     FTimerHandle BlockAKETriggerTImer;                                                // 0x05E8 (size: 0x8)
     bool bIsBlockPickAKE;                                                             // 0x05F0 (size: 0x1)

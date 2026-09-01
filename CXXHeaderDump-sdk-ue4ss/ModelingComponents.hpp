@@ -12,8 +12,8 @@ struct FCreateMeshObjectParams
     class UWorld* TargetWorld;                                                        // 0x0020 (size: 0x8)
     FTransform Transform;                                                             // 0x0030 (size: 0x60)
     FString BaseName;                                                                 // 0x0090 (size: 0x10)
-    TArray<class UMaterialInterface*> Materials;                                      // 0x00A0 (size: 0x10)
-    TArray<class UMaterialInterface*> AssetMaterials;                                 // 0x00B0 (size: 0x10)
+    TArray<UMaterialInterface*> Materials;                                            // 0x00A0 (size: 0x10)
+    TArray<UMaterialInterface*> AssetMaterials;                                       // 0x00B0 (size: 0x10)
     bool bEnableCollision;                                                            // 0x00C0 (size: 0x1)
     TEnumAsByte<ECollisionTraceFlag> CollisionMode;                                   // 0x00C1 (size: 0x1)
     bool bEnableRaytracingSupport;                                                    // 0x00C2 (size: 0x1)
@@ -115,8 +115,8 @@ class UBaseCreateFromSelectedTool : public UMultiSelectionMeshEditingTool
     class UCreateMeshObjectTypeProperties* OutputTypeProperties;                      // 0x00C8 (size: 0x8)
     class UBaseCreateFromSelectedHandleSourceProperties* HandleSourcesProperties;     // 0x00D0 (size: 0x8)
     class UMeshOpPreviewWithBackgroundCompute* Preview;                               // 0x00D8 (size: 0x8)
-    TArray<class UTransformProxy*> TransformProxies;                                  // 0x00E0 (size: 0x10)
-    TArray<class UCombinedTransformGizmo*> TransformGizmos;                           // 0x00F0 (size: 0x10)
+    TArray<UTransformProxy*> TransformProxies;                                        // 0x00E0 (size: 0x10)
+    TArray<UCombinedTransformGizmo*> TransformGizmos;                                 // 0x00F0 (size: 0x10)
 
 }; // Size: 0x100
 
@@ -262,7 +262,7 @@ class UMeshElementsVisualizerProperties : public UInteractiveToolPropertySet
 class UMeshOpPreviewWithBackgroundCompute : public UObject
 {
     class UPreviewMesh* PreviewMesh;                                                  // 0x0058 (size: 0x8)
-    TArray<class UMaterialInterface*> StandardMaterials;                              // 0x0060 (size: 0x10)
+    TArray<UMaterialInterface*> StandardMaterials;                                    // 0x0060 (size: 0x10)
     class UMaterialInterface* OverrideMaterial;                                       // 0x0070 (size: 0x8)
     class UMaterialInterface* WorkingMaterial;                                        // 0x0078 (size: 0x8)
     class UMaterialInterface* SecondaryMaterial;                                      // 0x0080 (size: 0x8)
@@ -437,8 +437,8 @@ class UPolygroupLayersProperties : public UInteractiveToolPropertySet
 class UPreviewGeometry : public UObject
 {
     class APreviewGeometryActor* ParentActor;                                         // 0x0028 (size: 0x8)
-    TMap<class FString, class ULineSetComponent*> LineSets;                           // 0x0030 (size: 0x50)
-    TMap<class FString, class UPointSetComponent*> PointSets;                         // 0x0080 (size: 0x50)
+    TMap<FString, ULineSetComponent*> LineSets;                                       // 0x0030 (size: 0x50)
+    TMap<FString, UPointSetComponent*> PointSets;                                     // 0x0080 (size: 0x50)
 
     bool SetPointSetVisibility(FString PointSetIdentifier, bool bVisible);
     bool SetPointSetMaterial(FString PointSetIdentifier, class UMaterialInterface* NewMaterial);

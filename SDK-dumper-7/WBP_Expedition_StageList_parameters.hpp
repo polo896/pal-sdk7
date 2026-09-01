@@ -19,84 +19,36 @@
 namespace SDK::Params
 {
 
-// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Expedition_StageList_C_BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.SetVisibilityRecruiting
+// 0x0005 (0x0005 - 0x0000)
+struct WBP_Expedition_StageList_C_SetVisibilityRecruiting final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Expedition_StageList_C_BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_Expedition_StageList_C_SetVisibilityRecruiting;
 
-// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Expedition_StageList_C_BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.SetupMissionName
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Expedition_StageList_C_SetupMissionName final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetTeamMissionName_OutMissionName;        // 0x0000(0x0018)()
 };
-DUMPER7_ASSERTS_WBP_Expedition_StageList_C_BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_Expedition_StageList_C_SetupMissionName;
 
-// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Expedition_StageList_C_BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Expedition_StageList_C_BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.ExecuteUbergraph_WBP_Expedition_StageList
+// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.SetupDungeonTexture
 // 0x0030 (0x0030 - 0x0000)
-struct WBP_Expedition_StageList_C_ExecuteUbergraph_WBP_Expedition_StageList final
+struct WBP_Expedition_StageList_C_SetupDungeonTexture final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_2;               // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_1;               // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TSoftObjectPtr<class UTexture2D>              CallFunc_GetTeamMissionDungeonTexture_SoftTexture; // 0x0000(0x0030)(HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Expedition_StageList_C_ExecuteUbergraph_WBP_Expedition_StageList;
-
-// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.GetMissionID
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Expedition_StageList_C_GetMissionID final
-{
-public:
-	class FName                                   MissionId;                                         // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Expedition_StageList_C_GetMissionID;
-
-// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.GetMissionInfo
-// 0x0060 (0x0060 - 0x0000)
-struct WBP_Expedition_StageList_C_GetMissionInfo final
-{
-public:
-	struct FPalCharacterTeamMissionInfo           MissionInfo;                                       // 0x0000(0x0060)(Parm, OutParm)
-};
-DUMPER7_ASSERTS_WBP_Expedition_StageList_C_GetMissionInfo;
-
-// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.Setup
-// 0x0060 (0x0060 - 0x0000)
-struct WBP_Expedition_StageList_C_Setup final
-{
-public:
-	struct FPalCharacterTeamMissionInfo           MissionInfo;                                       // 0x0000(0x0060)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_Expedition_StageList_C_Setup;
-
-// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.SetupDifficulty
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_Expedition_StageList_C_SetupDifficulty final
-{
-public:
-	class FText                                   CallFunc_Get_Team_Mission_Difficulty_Text_DifficultyText; // 0x0000(0x0018)()
-	struct FSlateColor                            CallFunc_GetTeamMissionDifficultyColor_DifficultyColor; // 0x0018(0x0014)()
-};
-DUMPER7_ASSERTS_WBP_Expedition_StageList_C_SetupDifficulty;
+DUMPER7_ASSERTS_WBP_Expedition_StageList_C_SetupDungeonTexture;
 
 // Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.SetupDisabledMissionInfo
 // 0x02E8 (0x02E8 - 0x0000)
@@ -136,36 +88,84 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Expedition_StageList_C_SetupDisabledMissionInfo;
 
-// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.SetupDungeonTexture
+// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.SetupDifficulty
 // 0x0030 (0x0030 - 0x0000)
-struct WBP_Expedition_StageList_C_SetupDungeonTexture final
+struct WBP_Expedition_StageList_C_SetupDifficulty final
 {
 public:
-	TSoftObjectPtr<class UTexture2D>              CallFunc_GetTeamMissionDungeonTexture_SoftTexture; // 0x0000(0x0030)(HasGetValueTypeHash)
+	class FText                                   CallFunc_Get_Team_Mission_Difficulty_Text_DifficultyText; // 0x0000(0x0018)()
+	struct FSlateColor                            CallFunc_GetTeamMissionDifficultyColor_DifficultyColor; // 0x0018(0x0014)()
 };
-DUMPER7_ASSERTS_WBP_Expedition_StageList_C_SetupDungeonTexture;
+DUMPER7_ASSERTS_WBP_Expedition_StageList_C_SetupDifficulty;
 
-// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.SetupMissionName
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Expedition_StageList_C_SetupMissionName final
+// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.Setup
+// 0x0060 (0x0060 - 0x0000)
+struct WBP_Expedition_StageList_C_Setup final
 {
 public:
-	class FText                                   CallFunc_GetTeamMissionName_OutMissionName;        // 0x0000(0x0018)()
+	struct FPalCharacterTeamMissionInfo           MissionInfo;                                       // 0x0000(0x0060)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-DUMPER7_ASSERTS_WBP_Expedition_StageList_C_SetupMissionName;
+DUMPER7_ASSERTS_WBP_Expedition_StageList_C_Setup;
 
-// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.SetVisibilityRecruiting
-// 0x0005 (0x0005 - 0x0000)
-struct WBP_Expedition_StageList_C_SetVisibilityRecruiting final
+// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.GetMissionInfo
+// 0x0060 (0x0060 - 0x0000)
+struct WBP_Expedition_StageList_C_GetMissionInfo final
 {
 public:
-	bool                                          bIsVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalCharacterTeamMissionInfo           MissionInfo;                                       // 0x0000(0x0060)(Parm, OutParm)
 };
-DUMPER7_ASSERTS_WBP_Expedition_StageList_C_SetVisibilityRecruiting;
+DUMPER7_ASSERTS_WBP_Expedition_StageList_C_GetMissionInfo;
+
+// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.GetMissionID
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Expedition_StageList_C_GetMissionID final
+{
+public:
+	class FName                                   MissionId;                                         // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Expedition_StageList_C_GetMissionID;
+
+// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.ExecuteUbergraph_WBP_Expedition_StageList
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_Expedition_StageList_C_ExecuteUbergraph_WBP_Expedition_StageList final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_2;               // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_1;               // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Expedition_StageList_C_ExecuteUbergraph_WBP_Expedition_StageList;
+
+// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Expedition_StageList_C_BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Expedition_StageList_C_BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Expedition_StageList_C_BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Expedition_StageList_C_BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_Expedition_StageList.WBP_Expedition_StageList_C.BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Expedition_StageList_C_BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Expedition_StageList_C_BndEvt__WBP_Expedition_StageList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
 
 }
 

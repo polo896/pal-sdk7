@@ -28,9 +28,9 @@ public:
 	class USkeletalMeshComponent*                 NewLocalVar;                                       // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_Action_Emote_KickCollision_Sphere_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit_0);
-	void ExecuteUbergraph_BP_Action_Emote_KickCollision(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_Action_Emote_KickCollision(int32 EntryPoint);
+	void BndEvt__BP_Action_Emote_KickCollision_Sphere_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit_0);
 
 public:
 	static class UClass* StaticClass()

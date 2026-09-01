@@ -32,8 +32,8 @@ public:
 	int32                                         TempItemCount;                                     // 0x02A4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Item(int32 EntryPoint);
 	void Setup(class FName ItemStaticId, int32 requireNum);
+	void ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Item(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

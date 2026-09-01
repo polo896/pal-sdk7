@@ -16,6 +16,51 @@
 namespace SDK::Params
 {
 
+// Function BP_Action_Coop_StatusUp_ToPlayer.BP_Action_Coop_StatusUp_ToPlayer_C.OnNotifyEnd_ABB535BB4FAAC8D8FB51609FB149C834
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_Coop_StatusUp_ToPlayer_C_OnNotifyEnd_ABB535BB4FAAC8D8FB51609FB149C834 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Coop_StatusUp_ToPlayer_C_OnNotifyEnd_ABB535BB4FAAC8D8FB51609FB149C834;
+
+// Function BP_Action_Coop_StatusUp_ToPlayer.BP_Action_Coop_StatusUp_ToPlayer_C.OnNotifyBegin_ABB535BB4FAAC8D8FB51609FB149C834
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_Coop_StatusUp_ToPlayer_C_OnNotifyBegin_ABB535BB4FAAC8D8FB51609FB149C834 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Coop_StatusUp_ToPlayer_C_OnNotifyBegin_ABB535BB4FAAC8D8FB51609FB149C834;
+
+// Function BP_Action_Coop_StatusUp_ToPlayer.BP_Action_Coop_StatusUp_ToPlayer_C.OnInterrupted_ABB535BB4FAAC8D8FB51609FB149C834
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_Coop_StatusUp_ToPlayer_C_OnInterrupted_ABB535BB4FAAC8D8FB51609FB149C834 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Coop_StatusUp_ToPlayer_C_OnInterrupted_ABB535BB4FAAC8D8FB51609FB149C834;
+
+// Function BP_Action_Coop_StatusUp_ToPlayer.BP_Action_Coop_StatusUp_ToPlayer_C.OnCompleted_ABB535BB4FAAC8D8FB51609FB149C834
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_Coop_StatusUp_ToPlayer_C_OnCompleted_ABB535BB4FAAC8D8FB51609FB149C834 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Coop_StatusUp_ToPlayer_C_OnCompleted_ABB535BB4FAAC8D8FB51609FB149C834;
+
+// Function BP_Action_Coop_StatusUp_ToPlayer.BP_Action_Coop_StatusUp_ToPlayer_C.OnBlendOut_ABB535BB4FAAC8D8FB51609FB149C834
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_Coop_StatusUp_ToPlayer_C_OnBlendOut_ABB535BB4FAAC8D8FB51609FB149C834 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_Coop_StatusUp_ToPlayer_C_OnBlendOut_ABB535BB4FAAC8D8FB51609FB149C834;
+
 // Function BP_Action_Coop_StatusUp_ToPlayer.BP_Action_Coop_StatusUp_ToPlayer_C.ExecuteUbergraph_BP_Action_Coop_StatusUp_ToPlayer
 // 0x00C8 (0x00C8 - 0x0000)
 struct BP_Action_Coop_StatusUp_ToPlayer_C_ExecuteUbergraph_BP_Action_Coop_StatusUp_ToPlayer final
@@ -46,51 +91,6 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_Action_Coop_StatusUp_ToPlayer_C_ExecuteUbergraph_BP_Action_Coop_StatusUp_ToPlayer;
-
-// Function BP_Action_Coop_StatusUp_ToPlayer.BP_Action_Coop_StatusUp_ToPlayer_C.OnBlendOut_ABB535BB4FAAC8D8FB51609FB149C834
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_Coop_StatusUp_ToPlayer_C_OnBlendOut_ABB535BB4FAAC8D8FB51609FB149C834 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Coop_StatusUp_ToPlayer_C_OnBlendOut_ABB535BB4FAAC8D8FB51609FB149C834;
-
-// Function BP_Action_Coop_StatusUp_ToPlayer.BP_Action_Coop_StatusUp_ToPlayer_C.OnCompleted_ABB535BB4FAAC8D8FB51609FB149C834
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_Coop_StatusUp_ToPlayer_C_OnCompleted_ABB535BB4FAAC8D8FB51609FB149C834 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Coop_StatusUp_ToPlayer_C_OnCompleted_ABB535BB4FAAC8D8FB51609FB149C834;
-
-// Function BP_Action_Coop_StatusUp_ToPlayer.BP_Action_Coop_StatusUp_ToPlayer_C.OnInterrupted_ABB535BB4FAAC8D8FB51609FB149C834
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_Coop_StatusUp_ToPlayer_C_OnInterrupted_ABB535BB4FAAC8D8FB51609FB149C834 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Coop_StatusUp_ToPlayer_C_OnInterrupted_ABB535BB4FAAC8D8FB51609FB149C834;
-
-// Function BP_Action_Coop_StatusUp_ToPlayer.BP_Action_Coop_StatusUp_ToPlayer_C.OnNotifyBegin_ABB535BB4FAAC8D8FB51609FB149C834
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_Coop_StatusUp_ToPlayer_C_OnNotifyBegin_ABB535BB4FAAC8D8FB51609FB149C834 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Coop_StatusUp_ToPlayer_C_OnNotifyBegin_ABB535BB4FAAC8D8FB51609FB149C834;
-
-// Function BP_Action_Coop_StatusUp_ToPlayer.BP_Action_Coop_StatusUp_ToPlayer_C.OnNotifyEnd_ABB535BB4FAAC8D8FB51609FB149C834
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_Coop_StatusUp_ToPlayer_C_OnNotifyEnd_ABB535BB4FAAC8D8FB51609FB149C834 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_Coop_StatusUp_ToPlayer_C_OnNotifyEnd_ABB535BB4FAAC8D8FB51609FB149C834;
 
 }
 

@@ -14,6 +14,15 @@
 namespace SDK::Params
 {
 
+// Function BP_BuildObject_Expedition.BP_BuildObject_Expedition_C.OnCreateAndInitTransformNewVisualEvent
+// 0x0008 (0x0008 - 0x0000)
+struct BP_BuildObject_Expedition_C_OnCreateAndInitTransformNewVisualEvent final
+{
+public:
+	class UPalCharacterVisualSkeletalMeshComponent* NewVisualComponent;                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BuildObject_Expedition_C_OnCreateAndInitTransformNewVisualEvent;
+
 // Function BP_BuildObject_Expedition.BP_BuildObject_Expedition_C.ExecuteUbergraph_BP_BuildObject_Expedition
 // 0x0018 (0x0018 - 0x0000)
 struct BP_BuildObject_Expedition_C_ExecuteUbergraph_BP_BuildObject_Expedition final
@@ -25,15 +34,6 @@ public:
 	class UNiagaraComponent*                      CallFunc_SpawnSystemAttached_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_BuildObject_Expedition_C_ExecuteUbergraph_BP_BuildObject_Expedition;
-
-// Function BP_BuildObject_Expedition.BP_BuildObject_Expedition_C.OnCreateAndInitTransformNewVisualEvent
-// 0x0008 (0x0008 - 0x0000)
-struct BP_BuildObject_Expedition_C_OnCreateAndInitTransformNewVisualEvent final
-{
-public:
-	class UPalCharacterVisualSkeletalMeshComponent* NewVisualComponent;                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_BuildObject_Expedition_C_OnCreateAndInitTransformNewVisualEvent;
 
 }
 

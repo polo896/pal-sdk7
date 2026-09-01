@@ -11,8 +11,8 @@ class UWBP_IngameMenu_Task_SimpleList_C : public UWBP_IndividualParameterBindWid
     class UWBP_MainMenu_Pal_State_C* WBP_MainMenu_Pal_State_1;                        // 0x0680 (size: 0x8)
     class UWBP_MainMenu_Pal_State_C* WBP_MainMenu_Pal_State_2;                        // 0x0688 (size: 0x8)
     class UWBP_PalCommonCharacterSlot_C* WBP_PalCommonCharacterSlot;                  // 0x0690 (size: 0x8)
-    TSoftObjectPtr<UPalIndividualCharacterSlot> bindedSlot;                           // 0x0698 (size: 0x30)
-    TArray<class UWBP_MainMenu_Pal_State_C*> ConditionWidgetArray;                    // 0x06C8 (size: 0x10)
+    TSoftObjectPtr<class UPalIndividualCharacterSlot> bindedSlot;                     // 0x0698 (size: 0x30)
+    TArray<UWBP_MainMenu_Pal_State_C*> ConditionWidgetArray;                          // 0x06C8 (size: 0x10)
 
     void UpdateNickname(FString NewNickName);
     void Setup(class UPalIndividualCharacterSlot* TargetSlot);

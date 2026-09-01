@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "EPlayerRadialMenuOpenType_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
 
@@ -62,45 +62,45 @@ public:
 	TMap<EPalOtomoPalOrderType, class UWBP_PlayerRadialMenu_MenuContent_C*> OtomoInstructionWidgetMap; // 0x05F0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void BindOpenPlayerActionMenu();
-	void BindPlayerActionMenuEvent();
-	void Can_Open_Player_Action_Menu(bool* Result);
-	void CloseConstructionMenu();
-	void CloseMenu();
-	void CloseSetup();
-	void CreateConstructionMenu(class UWBP_IngameMenuConstruction_Radial_C** createdWidget);
-	void CreateEmoteMenu();
-	void CreateInstructionsAdditionalWidget(const class FText& InText, class UWBP_PlayerRadialMenu_MenuContent_C** createdWidget);
-	void CreatePlayerActionMenu();
-	void EmptyFunction();
-	void ExecuteUbergraph_WBP_PlayerRadialMenu(int32 EntryPoint);
-	void HiglightCurrentOrderWidget();
-	void IsAnyMenuOpened(bool* IsOpened);
-	void On_Decided_Instruction_Care(bool* ShouldClose);
-	void OnDamagedPlayer(const struct FPalDamageResult& DamageResult);
-	void OnDecidedEmoteMenu(int32 Index_0);
-	void OnDecidedInstruction_Feed(bool* ShouldClose);
-	void OnDecidedPlayerActionMenu(int32 Index_0);
-	void OnOtomoChanged_Activated();
-	void OnOtomoChanged_Inactivated();
-	void OnPlayerRideOn(class AActor* RideActor);
-	void OnPressConstructionMenuButton();
-	void OnPushedAnyWidget(const struct FGuid& pushedWidgetID);
-	void Open_Emote_Menu();
-	void OpenBuildObjectList();
-	void OpenConstructionMenu(class FName SelectMapObjectId, int32 SelectedIndex);
-	void OpenMenu();
-	void OpenPlayerActionMenu();
-	void OpenSetup();
-	void SetInteractEnable(bool IsInteractEnable);
-	void SetupEvent();
-	void ShouldDisplayOpenChatPanel(bool* bShouldDisplay);
-	void UnbindOpenPlayerActionMenu();
 	void UnbindPlayerActionMenuEvent();
+	void UnbindOpenPlayerActionMenu();
+	void ShouldDisplayOpenChatPanel(bool* bShouldDisplay);
+	void SetupEvent();
+	void SetInteractEnable(bool IsInteractEnable);
+	void OpenSetup();
+	void OpenPlayerActionMenu();
+	void OpenMenu();
+	void OpenConstructionMenu(class FName SelectMapObjectId, int32 SelectedIndex);
+	void OpenBuildObjectList();
+	void Open_Emote_Menu();
+	void OnPushedAnyWidget(const struct FGuid& pushedWidgetID);
+	void OnPressConstructionMenuButton();
+	void OnPlayerRideOn(class AActor* RideActor);
+	void OnOtomoChanged_Inactivated();
+	void OnOtomoChanged_Activated();
+	void OnDecidedPlayerActionMenu(int32 Index_0);
+	void OnDecidedInstruction_Feed(bool* ShouldClose);
+	void OnDecidedEmoteMenu(int32 Index_0);
+	void OnDamagedPlayer(const struct FPalDamageResult& DamageResult);
+	void On_Decided_Instruction_Care(bool* ShouldClose);
+	void IsAnyMenuOpened(bool* IsOpened);
+	void HiglightCurrentOrderWidget();
+	void ExecuteUbergraph_WBP_PlayerRadialMenu(int32 EntryPoint);
+	void EmptyFunction();
+	void CreatePlayerActionMenu();
+	void CreateInstructionsAdditionalWidget(const class FText& InText, class UWBP_PlayerRadialMenu_MenuContent_C** createdWidget);
+	void CreateEmoteMenu();
+	void CreateConstructionMenu(class UWBP_IngameMenuConstruction_Radial_C** createdWidget);
+	void CloseSetup();
+	void CloseMenu();
+	void CloseConstructionMenu();
+	void Can_Open_Player_Action_Menu(bool* Result);
+	void BindPlayerActionMenuEvent();
+	void BindOpenPlayerActionMenu();
 
-	void HasConstructionMenu(bool* HasMenu) const;
-	void IsPlayerDying(bool* IsDying) const;
 	void IsPlayerRiding(bool* IsRiding) const;
+	void IsPlayerDying(bool* IsDying) const;
+	void HasConstructionMenu(bool* HasMenu) const;
 
 public:
 	static class UClass* StaticClass()

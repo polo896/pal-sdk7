@@ -18,27 +18,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameCompass_arrow.WBP_IngameCompass_arrow_C.ChangeBorderColor
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameCompass_arrow_C_ChangeBorderColor final
-{
-public:
-	struct FLinearColor                           Color;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameCompass_arrow_C_ChangeBorderColor;
-
-// Function WBP_IngameCompass_arrow.WBP_IngameCompass_arrow_C.ChangeBorderDrawType
-// 0x01B0 (0x01B0 - 0x0000)
-struct WBP_IngameCompass_arrow_C_ChangeBorderDrawType final
-{
-public:
-	ESlateBrushDrawType                           drawType;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0xF];                                        // 0x0001(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSlateBrush                            K2Node_Copy_ReturnValue;                           // 0x0010(0x00D0)()
-	struct FSlateBrush                            K2Node_SetFieldsInStruct_StructOut;                // 0x00E0(0x00D0)()
-};
-DUMPER7_ASSERTS_WBP_IngameCompass_arrow_C_ChangeBorderDrawType;
-
 // Function WBP_IngameCompass_arrow.WBP_IngameCompass_arrow_C.SetDistanceText
 // 0x00A8 (0x00A8 - 0x0000)
 struct WBP_IngameCompass_arrow_C_SetDistanceText final
@@ -53,6 +32,27 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0090(0x0018)()
 };
 DUMPER7_ASSERTS_WBP_IngameCompass_arrow_C_SetDistanceText;
+
+// Function WBP_IngameCompass_arrow.WBP_IngameCompass_arrow_C.ChangeBorderDrawType
+// 0x01B0 (0x01B0 - 0x0000)
+struct WBP_IngameCompass_arrow_C_ChangeBorderDrawType final
+{
+public:
+	ESlateBrushDrawType                           drawType;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0xF];                                        // 0x0001(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSlateBrush                            K2Node_Copy_ReturnValue;                           // 0x0010(0x00D0)()
+	struct FSlateBrush                            K2Node_SetFieldsInStruct_StructOut;                // 0x00E0(0x00D0)()
+};
+DUMPER7_ASSERTS_WBP_IngameCompass_arrow_C_ChangeBorderDrawType;
+
+// Function WBP_IngameCompass_arrow.WBP_IngameCompass_arrow_C.ChangeBorderColor
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameCompass_arrow_C_ChangeBorderColor final
+{
+public:
+	struct FLinearColor                           Color;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameCompass_arrow_C_ChangeBorderColor;
 
 // Function WBP_IngameCompass_arrow.WBP_IngameCompass_arrow_C.SetupTexture
 // 0x0030 (0x0030 - 0x0000)

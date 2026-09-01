@@ -31,9 +31,9 @@ public:
 	TMap<E_PalUIPlayerDebuffNoticeType, struct FDataTableRowHandle> MsgIDMap;                        // 0x02A0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void AnmEvent_Flash();
-	void ExecuteUbergraph_WBP_DebuffNotice(int32 EntryPoint);
 	void Setup(E_PalUIPlayerDebuffNoticeType DebuffType);
+	void ExecuteUbergraph_WBP_DebuffNotice(int32 EntryPoint);
+	void AnmEvent_Flash();
 
 public:
 	static class UClass* StaticClass()

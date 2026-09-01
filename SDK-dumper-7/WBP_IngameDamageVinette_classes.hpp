@@ -30,9 +30,9 @@ public:
 	class UImage*                                 DamageVinette_1;                                   // 0x02A0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_End();
-	void AnmEvent_Start();
 	void ExecuteUbergraph_WBP_IngameDamageVinette(int32 EntryPoint);
+	void AnmEvent_Start();
+	void AnmEvent_End();
 
 public:
 	static class UClass* StaticClass()

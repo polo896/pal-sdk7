@@ -59,33 +59,33 @@ public:
 	bool                                          AcceptInput;                                       // 0x0380(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Focus();
-	void AnmEvent_Normal();
-	void AnmEvent_Rankup();
-	void BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Fill_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Fill_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_7_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BuildEffectValueText(int32 Rank, class FText* Text);
-	void CanSimulateRankupToNext(bool* bCanRankup);
-	void DisplayCurrentRank();
-	void ExecuteUbergraph_WBP_Buildup_Player_StatusContent(int32 EntryPoint);
-	void GetBindedRelicType(EPalRelicType* RelicType);
-	void GetSImulatedRank(int32* ToRank);
-	void IsMaxRank(bool* bIsMaxRank);
-	void IsSimulating(bool* bIsSimulating);
-	void ResetSimulation();
-	void SetAcceptInput(bool NewAcceptInput);
-	void SetRelicType(EPalRelicType RelicType);
-	void SetupRankGauge();
-	void SimlationPlus();
-	void SimulationMinus();
-	void UpdateSimulate();
 	void UpdateSimulationButton();
+	void UpdateSimulate();
+	void SimulationMinus();
+	void SimlationPlus();
+	void SetupRankGauge();
+	void SetRelicType(EPalRelicType RelicType);
+	void SetAcceptInput(bool NewAcceptInput);
+	void ResetSimulation();
+	void IsSimulating(bool* bIsSimulating);
+	void IsMaxRank(bool* bIsMaxRank);
+	void GetSImulatedRank(int32* ToRank);
+	void GetBindedRelicType(EPalRelicType* RelicType);
+	void ExecuteUbergraph_WBP_Buildup_Player_StatusContent(int32 EntryPoint);
+	void DisplayCurrentRank();
+	void CanSimulateRankupToNext(bool* bCanRankup);
+	void BuildEffectValueText(int32 Rank, class FText* Text);
+	void BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_7_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Plus_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Minus_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Fill_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Buildup_Player_StatusContent_WBP_PalInvisibleButton_Fill_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void AnmEvent_Rankup();
+	void AnmEvent_Normal();
+	void AnmEvent_Focus();
 
 public:
 	static class UClass* StaticClass()

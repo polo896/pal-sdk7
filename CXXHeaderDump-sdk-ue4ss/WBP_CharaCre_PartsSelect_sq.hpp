@@ -15,7 +15,7 @@ class UWBP_CharaCre_PartsSelect_sq_C : public UUserWidget
     void OnClicked(class UWBP_CharaCre_PartsSelect_sq_C* Widget);
     FName Bind Name;                                                                  // 0x02C8 (size: 0x8)
 
-    void Setup(FName BindName, TSoftObjectPtr<UTexture2D> SoftTexture);
+    void Setup(FName BindName, TSoftObjectPtr<class UTexture2D> SoftTexture);
     void GetBindedPresetName(FName& PresetName);
     void SetupByMeshPresetData(FPalCharacterCreationMeshPresetDataRow MeshData, FName BindName);
     void AnmEvent_Normal();

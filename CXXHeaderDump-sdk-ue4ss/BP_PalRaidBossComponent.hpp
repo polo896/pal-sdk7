@@ -5,7 +5,7 @@ class UBP_PalRaidBossComponent_C : public UPalRaidBossComponent
 {
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0180 (size: 0x8)
     class AActor* VolumeActor;                                                        // 0x0188 (size: 0x8)
-    TArray<class UPalIndividualCharacterHandle*> ServantActors;                       // 0x0190 (size: 0x10)
+    TArray<UPalIndividualCharacterHandle*> ServantActors;                             // 0x0190 (size: 0x10)
     TSubclassOf<class UPalAIActionBase> EnterAIActionClass;                           // 0x01A0 (size: 0x8)
     TSubclassOf<class AActor> VolumeClass;                                            // 0x01A8 (size: 0x8)
 

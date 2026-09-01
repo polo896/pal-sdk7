@@ -21,8 +21,8 @@ namespace SDK
 class UBP_SubQuestBlock_StrongOldMan02_KillEnemy_C final : public UPalQuestBlock_CountKillEnemy
 {
 public:
-	void GetDescriptionText(class FText* OutText);
 	void GetProgressText(class FText* OutText);
+	void GetDescriptionText(class FText* OutText);
 
 public:
 	static class UClass* StaticClass()

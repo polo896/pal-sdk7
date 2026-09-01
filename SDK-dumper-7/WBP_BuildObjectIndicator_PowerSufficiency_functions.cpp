@@ -17,35 +17,15 @@
 namespace SDK
 {
 
-// Function WBP_BuildObjectIndicator_PowerSufficiency.WBP_BuildObjectIndicator_PowerSufficiency_C.ExecuteUbergraph_WBP_BuildObjectIndicator_PowerSufficiency
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_BuildObjectIndicator_PowerSufficiency.WBP_BuildObjectIndicator_PowerSufficiency_C.SetupUI
+// (Private, BlueprintCallable, BlueprintEvent)
 
-void UWBP_BuildObjectIndicator_PowerSufficiency_C::ExecuteUbergraph_WBP_BuildObjectIndicator_PowerSufficiency(int32 EntryPoint)
+void UWBP_BuildObjectIndicator_PowerSufficiency_C::SetupUI()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BuildObjectIndicator_PowerSufficiency_C", "ExecuteUbergraph_WBP_BuildObjectIndicator_PowerSufficiency");
-
-	Params::WBP_BuildObjectIndicator_PowerSufficiency_C_ExecuteUbergraph_WBP_BuildObjectIndicator_PowerSufficiency Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BuildObjectIndicator_PowerSufficiency.WBP_BuildObjectIndicator_PowerSufficiency_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_BuildObjectIndicator_PowerSufficiency_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BuildObjectIndicator_PowerSufficiency_C", "OnSetup");
+		Func = Class->GetFunction("WBP_BuildObjectIndicator_PowerSufficiency_C", "SetupUI");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,17 +51,37 @@ void UWBP_BuildObjectIndicator_PowerSufficiency_C::OnUpdateEnergyModuleState(cla
 }
 
 
-// Function WBP_BuildObjectIndicator_PowerSufficiency.WBP_BuildObjectIndicator_PowerSufficiency_C.SetupUI
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_BuildObjectIndicator_PowerSufficiency.WBP_BuildObjectIndicator_PowerSufficiency_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_BuildObjectIndicator_PowerSufficiency_C::SetupUI()
+void UWBP_BuildObjectIndicator_PowerSufficiency_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BuildObjectIndicator_PowerSufficiency_C", "SetupUI");
+		Func = Class->GetFunction("WBP_BuildObjectIndicator_PowerSufficiency_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_BuildObjectIndicator_PowerSufficiency.WBP_BuildObjectIndicator_PowerSufficiency_C.ExecuteUbergraph_WBP_BuildObjectIndicator_PowerSufficiency
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BuildObjectIndicator_PowerSufficiency_C::ExecuteUbergraph_WBP_BuildObjectIndicator_PowerSufficiency(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BuildObjectIndicator_PowerSufficiency_C", "ExecuteUbergraph_WBP_BuildObjectIndicator_PowerSufficiency");
+
+	Params::WBP_BuildObjectIndicator_PowerSufficiency_C_ExecuteUbergraph_WBP_BuildObjectIndicator_PowerSufficiency Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

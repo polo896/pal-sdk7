@@ -30,12 +30,12 @@ public:
 	struct FDataTableRowHandle                    MsgID;                                             // 0x02A8(0x0010)(Edit, BlueprintVisible, NoDestructor)
 
 public:
-	void AnmEvent_Focus();
-	void AnmEvent_Unfocus();
-	void BndEvt__WBP_Title_WorldSelectButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void Construct();
-	void ExecuteUbergraph_WBP_Title_WorldSelectButton(int32 EntryPoint);
 	void OnInitialized();
+	void ExecuteUbergraph_WBP_Title_WorldSelectButton(int32 EntryPoint);
+	void Construct();
+	void BndEvt__WBP_Title_WorldSelectButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void AnmEvent_Unfocus();
+	void AnmEvent_Focus();
 
 public:
 	static class UClass* StaticClass()

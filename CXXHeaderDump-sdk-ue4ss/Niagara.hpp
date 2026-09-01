@@ -202,7 +202,7 @@ struct FNiagaraComponentPropertyBinding
     FName PropertyName;                                                               // 0x0058 (size: 0x8)
     FNiagaraTypeDefinition PropertyType;                                              // 0x0060 (size: 0x10)
     FName MetadataSetterName;                                                         // 0x0070 (size: 0x8)
-    TMap<class FString, class FString> PropertySetterParameterDefaults;               // 0x0078 (size: 0x50)
+    TMap<FString, FString> PropertySetterParameterDefaults;                           // 0x0078 (size: 0x50)
 
 }; // Size: 0xC8
 
@@ -525,7 +525,7 @@ struct FNiagaraFunctionSignature
     uint8 bHidden;                                                                    // 0x0031 (size: 0x1)
     int32 ModuleUsageBitmask;                                                         // 0x0034 (size: 0x4)
     int32 ContextStageIndex;                                                          // 0x0038 (size: 0x4)
-    TMap<class FName, class FName> FunctionSpecifiers;                                // 0x0040 (size: 0x50)
+    TMap<FName, FName> FunctionSpecifiers;                                            // 0x0040 (size: 0x50)
 
 }; // Size: 0x90
 
@@ -677,7 +677,7 @@ struct FNiagaraOutlinerCaptureSettings
 
 struct FNiagaraOutlinerData
 {
-    TMap<class FString, class FNiagaraOutlinerWorldData> WorldData;                   // 0x0000 (size: 0x50)
+    TMap<FString, FNiagaraOutlinerWorldData> WorldData;                               // 0x0000 (size: 0x50)
 
 }; // Size: 0x50
 
@@ -734,7 +734,7 @@ struct FNiagaraOutlinerTimingData
 
 struct FNiagaraOutlinerWorldData
 {
-    TMap<class FString, class FNiagaraOutlinerSystemData> Systems;                    // 0x0000 (size: 0x50)
+    TMap<FString, FNiagaraOutlinerSystemData> Systems;                                // 0x0000 (size: 0x50)
     bool bHasBegunPlay;                                                               // 0x0050 (size: 0x1)
     uint8 WorldType;                                                                  // 0x0051 (size: 0x1)
     uint8 NetMode;                                                                    // 0x0052 (size: 0x1)
@@ -766,8 +766,8 @@ struct FNiagaraParameterStore
     TWeakObjectPtr<class UObject> Owner;                                              // 0x0008 (size: 0x8)
     TArray<FNiagaraVariableWithOffset> SortedParameterOffsets;                        // 0x0010 (size: 0x10)
     TArray<uint8> ParameterData;                                                      // 0x0020 (size: 0x10)
-    TArray<class UNiagaraDataInterface*> DataInterfaces;                              // 0x0030 (size: 0x10)
-    TArray<class UObject*> UObjects;                                                  // 0x0040 (size: 0x10)
+    TArray<UNiagaraDataInterface*> DataInterfaces;                                    // 0x0030 (size: 0x10)
+    TArray<UObject*> UObjects;                                                        // 0x0040 (size: 0x10)
     TArray<FNiagaraPositionSource> OriginalPositionData;                              // 0x0050 (size: 0x10)
 
 }; // Size: 0x88
@@ -914,7 +914,7 @@ struct FNiagaraRibbonUVSettings
 struct FNiagaraScalabilityManager
 {
     class UNiagaraEffectType* EffectType;                                             // 0x0000 (size: 0x8)
-    TArray<class UNiagaraComponent*> ManagedComponents;                               // 0x0008 (size: 0x10)
+    TArray<UNiagaraComponent*> ManagedComponents;                                     // 0x0008 (size: 0x10)
 
 }; // Size: 0xD8
 
@@ -1119,7 +1119,7 @@ struct FNiagaraStructConversionStep
 
 struct FNiagaraSystemCompileRequest
 {
-    TArray<class UObject*> RootObjects;                                               // 0x0008 (size: 0x10)
+    TArray<UObject*> RootObjects;                                                     // 0x0008 (size: 0x10)
 
 }; // Size: 0x30
 
@@ -1198,11 +1198,11 @@ struct FNiagaraSystemSimCacheCaptureRequest
 
 struct FNiagaraSystemUpdateContext
 {
-    TArray<class UNiagaraComponent*> ComponentsToReset;                               // 0x0000 (size: 0x10)
-    TArray<class UNiagaraComponent*> ComponentsToReInit;                              // 0x0010 (size: 0x10)
-    TArray<class UNiagaraComponent*> ComponentsToNotifySimDestroy;                    // 0x0020 (size: 0x10)
-    TArray<class UNiagaraSystem*> SystemSimsToDestroy;                                // 0x0030 (size: 0x10)
-    TArray<class UNiagaraSystem*> SystemSimsToRecache;                                // 0x0040 (size: 0x10)
+    TArray<UNiagaraComponent*> ComponentsToReset;                                     // 0x0000 (size: 0x10)
+    TArray<UNiagaraComponent*> ComponentsToReInit;                                    // 0x0010 (size: 0x10)
+    TArray<UNiagaraComponent*> ComponentsToNotifySimDestroy;                          // 0x0020 (size: 0x10)
+    TArray<UNiagaraSystem*> SystemSimsToDestroy;                                      // 0x0030 (size: 0x10)
+    TArray<UNiagaraSystem*> SystemSimsToRecache;                                      // 0x0040 (size: 0x10)
 
 }; // Size: 0x78
 
@@ -1256,7 +1256,7 @@ struct FNiagaraUserParameterBinding
 
 struct FNiagaraUserRedirectionParameterStore : public FNiagaraParameterStore
 {
-    TMap<class FNiagaraVariable, class FNiagaraVariable> UserParameterRedirects;      // 0x0088 (size: 0x50)
+    TMap<FNiagaraVariable, FNiagaraVariable> UserParameterRedirects;                  // 0x0088 (size: 0x50)
 
 }; // Size: 0xD8
 
@@ -1369,7 +1369,7 @@ struct FNiagaraVariableMetaData
     bool bInlineEditConditionToggle;                                                  // 0x0094 (size: 0x1)
     FNiagaraInputConditionMetadata EditCondition;                                     // 0x0098 (size: 0x18)
     FNiagaraInputConditionMetadata VisibleCondition;                                  // 0x00B0 (size: 0x18)
-    TMap<class FName, class FString> PropertyMetaData;                                // 0x00C8 (size: 0x50)
+    TMap<FName, FString> PropertyMetaData;                                            // 0x00C8 (size: 0x50)
     FName ParentAttribute;                                                            // 0x0118 (size: 0x8)
     TArray<FName> AlternateAliases;                                                   // 0x0120 (size: 0x10)
     FGuid VariableGuid;                                                               // 0x0130 (size: 0x10)
@@ -1459,8 +1459,8 @@ struct FVersionedNiagaraEmitterData
     FNiagaraEmitterScriptProperties UpdateScriptProps;                                // 0x0138 (size: 0x28)
     FNiagaraEmitterScriptProperties SpawnScriptProps;                                 // 0x0160 (size: 0x28)
     FNiagaraParameterStore RendererBindings;                                          // 0x0188 (size: 0x88)
-    TArray<class UNiagaraRendererProperties*> RendererProperties;                     // 0x0210 (size: 0x10)
-    TArray<class UNiagaraSimulationStageBase*> SimulationStages;                      // 0x0220 (size: 0x10)
+    TArray<UNiagaraRendererProperties*> RendererProperties;                           // 0x0210 (size: 0x10)
+    TArray<UNiagaraSimulationStageBase*> SimulationStages;                            // 0x0220 (size: 0x10)
     class UNiagaraScript* GPUComputeScript;                                           // 0x0230 (size: 0x8)
     TArray<FName> SharedEventGeneratorIds;                                            // 0x0238 (size: 0x10)
     FNiagaraEmitterScalabilitySettings CurrentScalabilitySettings;                    // 0x0248 (size: 0x38)
@@ -1486,7 +1486,7 @@ class ANiagaraLensEffectBase : public ANiagaraActor
     float BaseAuthoredFOV;                                                            // 0x0310 (size: 0x4)
     uint8 bAllowMultipleInstances;                                                    // 0x0314 (size: 0x1)
     uint8 bResetWhenRetriggered;                                                      // 0x0314 (size: 0x1)
-    TArray<class TSubclassOf<AActor>> EmittersToTreatAsSame;                          // 0x0318 (size: 0x10)
+    TArray<TSubclassOf<class AActor>> EmittersToTreatAsSame;                          // 0x0318 (size: 0x10)
     class APlayerCameraManager* OwningCameraManager;                                  // 0x0328 (size: 0x8)
 
 }; // Size: 0x330
@@ -1516,10 +1516,10 @@ class ANiagaraPreviewGrid : public AActor
     float SpacingY;                                                                   // 0x02BC (size: 0x4)
     int32 NumX;                                                                       // 0x02C0 (size: 0x4)
     int32 NumY;                                                                       // 0x02C4 (size: 0x4)
-    TArray<class UChildActorComponent*> PreviewComponents;                            // 0x02C8 (size: 0x10)
+    TArray<UChildActorComponent*> PreviewComponents;                                  // 0x02C8 (size: 0x10)
 
     void SetPaused(bool bPaused);
-    void GetPreviews(TArray<class UNiagaraComponent*>& OutPreviews);
+    void GetPreviews(TArray<UNiagaraComponent*>& OutPreviews);
     void DeactivatePreviews();
     void ActivatePreviews(bool bReset);
 }; // Size: 0x2E0
@@ -1590,7 +1590,7 @@ class UMovieSceneNiagaraSystemTrack : public UMovieSceneNiagaraTrack
 
 class UMovieSceneNiagaraTrack : public UMovieSceneNameableTrack
 {
-    TArray<class UMovieSceneSection*> Sections;                                       // 0x0098 (size: 0x10)
+    TArray<UMovieSceneSection*> Sections;                                             // 0x0098 (size: 0x10)
 
 }; // Size: 0xA8
 
@@ -1650,7 +1650,7 @@ class UNiagaraBakerSettings : public UObject
     int32 FramesPerSecond;                                                            // 0x0030 (size: 0x4)
     uint8 bPreviewLooping;                                                            // 0x0034 (size: 0x1)
     FIntPoint FramesPerDimension;                                                     // 0x0038 (size: 0x8)
-    TArray<class UNiagaraBakerOutput*> Outputs;                                       // 0x0040 (size: 0x10)
+    TArray<UNiagaraBakerOutput*> Outputs;                                             // 0x0040 (size: 0x10)
     TArray<FNiagaraBakerCameraSettings> CameraSettings;                               // 0x0050 (size: 0x10)
     int32 CurrentCameraIndex;                                                         // 0x0060 (size: 0x4)
     FName BakeQualityLevel;                                                           // 0x0064 (size: 0x8)
@@ -1672,7 +1672,7 @@ class UNiagaraBaselineController : public UObject
     float TestDuration;                                                               // 0x0028 (size: 0x4)
     class UNiagaraEffectType* EffectType;                                             // 0x0030 (size: 0x8)
     class ANiagaraPerfBaselineActor* Owner;                                           // 0x0038 (size: 0x8)
-    TSoftObjectPtr<UNiagaraSystem> System;                                            // 0x0040 (size: 0x30)
+    TSoftObjectPtr<class UNiagaraSystem> System;                                      // 0x0040 (size: 0x30)
 
     bool OnTickTest();
     void OnOwnerTick(float DeltaTime);
@@ -1684,7 +1684,7 @@ class UNiagaraBaselineController : public UObject
 class UNiagaraBaselineController_Basic : public UNiagaraBaselineController
 {
     int32 NumInstances;                                                               // 0x0070 (size: 0x4)
-    TArray<class UNiagaraComponent*> SpawnedComponents;                               // 0x0078 (size: 0x10)
+    TArray<UNiagaraComponent*> SpawnedComponents;                                     // 0x0078 (size: 0x10)
 
 }; // Size: 0x88
 
@@ -1796,7 +1796,7 @@ class UNiagaraComponent : public UFXSystemComponent
 
 class UNiagaraComponentPool : public UObject
 {
-    TMap<class UNiagaraSystem*, class FNCPool> WorldParticleSystemPools;              // 0x0028 (size: 0x50)
+    TMap<UNiagaraSystem*, FNCPool> WorldParticleSystemPools;                          // 0x0028 (size: 0x50)
 
 }; // Size: 0x80
 
@@ -1838,7 +1838,7 @@ class UNiagaraCullProxyComponent : public UNiagaraComponent
 class UNiagaraDIRigidMeshCollisionFunctionLibrary : public UBlueprintFunctionLibrary
 {
 
-    void SetSourceActors(class UNiagaraComponent* NiagaraSystem, FName OverrideName, const TArray<class AActor*>& SourceActors);
+    void SetSourceActors(class UNiagaraComponent* NiagaraSystem, FName OverrideName, const TArray<AActor*>& SourceActors);
 }; // Size: 0x28
 
 class UNiagaraDataInterface : public UNiagaraDataInterfaceBase
@@ -2175,7 +2175,7 @@ class UNiagaraDataInterfaceLandscape : public UNiagaraDataInterface
 {
     class AActor* SourceLandscape;                                                    // 0x0038 (size: 0x8)
     ENDILandscape_SourceMode SourceMode;                                              // 0x0040 (size: 0x1)
-    TArray<class UPhysicalMaterial*> PhysicalMaterials;                               // 0x0048 (size: 0x10)
+    TArray<UPhysicalMaterial*> PhysicalMaterials;                                     // 0x0048 (size: 0x10)
 
 }; // Size: 0x58
 
@@ -2204,7 +2204,7 @@ class UNiagaraDataInterfaceParticleRead : public UNiagaraDataInterfaceRWBase
 class UNiagaraDataInterfacePhysicsAsset : public UNiagaraDataInterface
 {
     class UPhysicsAsset* DefaultSource;                                               // 0x0038 (size: 0x8)
-    TSoftObjectPtr<AActor> SoftSourceActor;                                           // 0x0040 (size: 0x30)
+    TSoftObjectPtr<class AActor> SoftSourceActor;                                     // 0x0040 (size: 0x30)
     FNiagaraUserParameterBinding MeshUserParameter;                                   // 0x0070 (size: 0x20)
 
 }; // Size: 0xB0
@@ -2277,7 +2277,7 @@ class UNiagaraDataInterfaceRigidMeshCollisionQuery : public UNiagaraDataInterfac
 {
     TArray<FName> ActorTags;                                                          // 0x0038 (size: 0x10)
     TArray<FName> ComponentTags;                                                      // 0x0048 (size: 0x10)
-    TArray<TSoftObjectPtr<AActor>> SourceActors;                                      // 0x0058 (size: 0x10)
+    TArray<TSoftObjectPtr<class AActor>> SourceActors;                                // 0x0058 (size: 0x10)
     bool OnlyUseMoveable;                                                             // 0x0068 (size: 0x1)
     bool GlobalSearchAllowed;                                                         // 0x0069 (size: 0x1)
     bool GlobalSearchForced;                                                          // 0x006A (size: 0x1)
@@ -2304,7 +2304,7 @@ class UNiagaraDataInterfaceSimpleCounter : public UNiagaraDataInterface
 class UNiagaraDataInterfaceSkeletalMesh : public UNiagaraDataInterface
 {
     ENDISkeletalMesh_SourceMode SourceMode;                                           // 0x0038 (size: 0x1)
-    TSoftObjectPtr<AActor> SoftSourceActor;                                           // 0x0040 (size: 0x30)
+    TSoftObjectPtr<class AActor> SoftSourceActor;                                     // 0x0040 (size: 0x30)
     TArray<FName> ComponentTags;                                                      // 0x0070 (size: 0x10)
     class USkeletalMeshComponent* SourceComponent;                                    // 0x0080 (size: 0x8)
     FNiagaraUserParameterBinding MeshUserParameter;                                   // 0x0088 (size: 0x20)
@@ -2340,7 +2340,7 @@ class UNiagaraDataInterfaceStaticMesh : public UNiagaraDataInterface
 {
     ENDIStaticMesh_SourceMode SourceMode;                                             // 0x0038 (size: 0x1)
     class UStaticMesh* DefaultMesh;                                                   // 0x0040 (size: 0x8)
-    TSoftObjectPtr<AActor> SoftSourceActor;                                           // 0x0048 (size: 0x30)
+    TSoftObjectPtr<class AActor> SoftSourceActor;                                     // 0x0048 (size: 0x30)
     class UStaticMeshComponent* SourceComponent;                                      // 0x0078 (size: 0x8)
     FNDIStaticMeshSectionFilter SectionFilter;                                        // 0x0080 (size: 0x10)
     bool bUsePhysicsBodyVelocity;                                                     // 0x0090 (size: 0x1)
@@ -2360,7 +2360,7 @@ class UNiagaraDataInterfaceUObjectPropertyReader : public UNiagaraDataInterface
 {
     FNiagaraUserParameterBinding UObjectParameterBinding;                             // 0x0038 (size: 0x20)
     TArray<FNiagaraUObjectPropertyReaderRemap> PropertyRemap;                         // 0x0058 (size: 0x10)
-    TSoftObjectPtr<AActor> SourceActor;                                               // 0x0068 (size: 0x30)
+    TSoftObjectPtr<class AActor> SourceActor;                                         // 0x0068 (size: 0x30)
     UClass* SourceActorComponentClass;                                                // 0x0098 (size: 0x8)
 
     void SetUObjectReaderPropertyRemap(class UNiagaraComponent* NiagaraComponent, FName UserParameterName, FName GraphName, FName RemapName);
@@ -2442,7 +2442,7 @@ class UNiagaraEffectType : public UObject
     TArray<FNiagaraSystemScalabilitySettings> DetailLevelScalabilitySettings;         // 0x0040 (size: 0x10)
     FNiagaraSystemScalabilitySettingsArray SystemScalabilitySettings;                 // 0x0050 (size: 0x10)
     FNiagaraEmitterScalabilitySettingsArray EmitterScalabilitySettings;               // 0x0060 (size: 0x10)
-    TArray<class UNiagaraValidationRule*> ValidationRules;                            // 0x0070 (size: 0x10)
+    TArray<UNiagaraValidationRule*> ValidationRules;                                  // 0x0070 (size: 0x10)
     class UNiagaraBaselineController* PerformanceBaselineController;                  // 0x0088 (size: 0x8)
     FNiagaraPerfBaselineStats PerfBaselineStats;                                      // 0x0090 (size: 0x10)
     FGuid PerfBaselineVersion;                                                        // 0x00A0 (size: 0x10)
@@ -2455,9 +2455,9 @@ class UNiagaraEmitter : public UObject
     bool bVersioningEnabled;                                                          // 0x0040 (size: 0x1)
     TArray<FVersionedNiagaraEmitterData> VersionData;                                 // 0x0048 (size: 0x10)
     FString UniqueEmitterName;                                                        // 0x0060 (size: 0x10)
-    TArray<class UNiagaraRendererProperties*> RendererProperties;                     // 0x0070 (size: 0x10)
+    TArray<UNiagaraRendererProperties*> RendererProperties;                           // 0x0070 (size: 0x10)
     TArray<FNiagaraEventScriptProperties> EventHandlerScriptProps;                    // 0x0080 (size: 0x10)
-    TArray<class UNiagaraSimulationStageBase*> SimulationStages;                      // 0x0090 (size: 0x10)
+    TArray<UNiagaraSimulationStageBase*> SimulationStages;                            // 0x0090 (size: 0x10)
     class UNiagaraScript* GPUComputeScript;                                           // 0x00A0 (size: 0x8)
     TArray<FName> SharedEventGeneratorIds;                                            // 0x00A8 (size: 0x10)
 
@@ -2611,7 +2611,7 @@ class UNiagaraParameterDefinitionsBase : public UObject
 
 class UNiagaraPrecompileContainer : public UObject
 {
-    TArray<class UNiagaraScript*> Scripts;                                            // 0x0028 (size: 0x10)
+    TArray<UNiagaraScript*> Scripts;                                                  // 0x0028 (size: 0x10)
     class UNiagaraSystem* System;                                                     // 0x0038 (size: 0x8)
 
 }; // Size: 0x40
@@ -2747,7 +2747,7 @@ class UNiagaraScript : public UNiagaraScriptBase
     TArray<FNiagaraBoundParameter> ScriptExecutionBoundParameters;                    // 0x0178 (size: 0x10)
     FNiagaraVMExecutableDataId CachedScriptVMId;                                      // 0x0188 (size: 0x58)
     FNiagaraVMExecutableData CachedScriptVM;                                          // 0x01F0 (size: 0x190)
-    TArray<class UNiagaraParameterCollection*> CachedParameterCollectionReferences;   // 0x0380 (size: 0x10)
+    TArray<UNiagaraParameterCollection*> CachedParameterCollectionReferences;         // 0x0380 (size: 0x10)
     TArray<FNiagaraScriptDataInterfaceInfo> CachedDefaultDataInterfaces;              // 0x0390 (size: 0x10)
 
     void RaiseOnGPUCompilationComplete();
@@ -2765,7 +2765,7 @@ class UNiagaraSettings : public UDeveloperSettings
     FSoftObjectPath DefaultEffectType;                                                // 0x0040 (size: 0x20)
     FLinearColor PositionPinTypeColor;                                                // 0x0060 (size: 0x10)
     TArray<FText> QualityLevels;                                                      // 0x0070 (size: 0x10)
-    TMap<class FString, class FText> ComponentRendererWarningsPerClass;               // 0x0080 (size: 0x50)
+    TMap<FString, FText> ComponentRendererWarningsPerClass;                           // 0x0080 (size: 0x50)
     TEnumAsByte<ETextureRenderTargetFormat> DefaultRenderTargetFormat;                // 0x00D0 (size: 0x1)
     ENiagaraGpuBufferFormat DefaultGridFormat;                                        // 0x00D1 (size: 0x1)
     ENiagaraDefaultRendererMotionVectorSetting DefaultRendererMotionVectorSetting;    // 0x00D4 (size: 0x4)
@@ -2796,14 +2796,14 @@ class UNiagaraSignificanceHandlerDistance : public UNiagaraSignificanceHandler
 
 class UNiagaraSimCache : public UObject
 {
-    TSoftObjectPtr<UNiagaraSystem> SoftNiagaraSystem;                                 // 0x0028 (size: 0x30)
+    TSoftObjectPtr<class UNiagaraSystem> SoftNiagaraSystem;                           // 0x0028 (size: 0x30)
     float StartSeconds;                                                               // 0x0058 (size: 0x4)
     float DurationSeconds;                                                            // 0x005C (size: 0x4)
     FNiagaraSimCacheCreateParameters CreateParameters;                                // 0x0060 (size: 0x38)
     bool bNeedsReadComponentMappingRecache;                                           // 0x0098 (size: 0x1)
     FNiagaraSimCacheLayout CacheLayout;                                               // 0x00A0 (size: 0x78)
     TArray<FNiagaraSimCacheFrame> CacheFrames;                                        // 0x0118 (size: 0x10)
-    TMap<class FNiagaraVariableBase, class UObject*> DataInterfaceStorage;            // 0x0128 (size: 0x50)
+    TMap<FNiagaraVariableBase, UObject*> DataInterfaceStorage;                        // 0x0128 (size: 0x50)
 
     void ReadVectorAttribute(TArray<FVector>& OutValues, FName AttributeName, FName EmitterName, int32 FrameIndex);
     void ReadVector4Attribute(TArray<FVector4>& OutValues, FName AttributeName, FName EmitterName, int32 FrameIndex);
@@ -2949,7 +2949,7 @@ class UNiagaraSystem : public UFXSystemAsset
     TArray<FNiagaraSystemScalabilityOverride> ScalabilityOverrides;                   // 0x0058 (size: 0x10)
     FNiagaraSystemScalabilityOverrides SystemScalabilityOverrides;                    // 0x0068 (size: 0x10)
     TArray<FNiagaraEmitterHandle> EmitterHandles;                                     // 0x0078 (size: 0x10)
-    TArray<class UNiagaraParameterCollectionInstance*> ParameterCollectionOverrides;  // 0x0088 (size: 0x10)
+    TArray<UNiagaraParameterCollectionInstance*> ParameterCollectionOverrides;        // 0x0088 (size: 0x10)
     class UNiagaraScript* SystemSpawnScript;                                          // 0x0098 (size: 0x8)
     class UNiagaraScript* SystemUpdateScript;                                         // 0x00A0 (size: 0x8)
     FNiagaraSystemCompiledData SystemCompiledData;                                    // 0x00B8 (size: 0x228)

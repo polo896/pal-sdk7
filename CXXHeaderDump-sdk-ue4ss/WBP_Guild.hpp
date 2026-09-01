@@ -27,14 +27,14 @@ class UWBP_Guild_C : public UUserWidget
     void OnChangedGuildLogCategory(FString SelectedCategoryName);
     FWBP_Guild_COnClickedGuildMemberButton OnClickedGuildMemberButton;                // 0x0328 (size: 0x10)
     void OnClickedGuildMemberButton(class UWBP_Guild_MemberList_C* Widget);
-    TSoftObjectPtr<UWBP_Guild_MemberList_C> LastHoveredSoftGuildButton;               // 0x0338 (size: 0x30)
+    TSoftObjectPtr<class UWBP_Guild_MemberList_C> LastHoveredSoftGuildButton;         // 0x0338 (size: 0x30)
     FWBP_Guild_COnClickedLeaveButton OnClickedLeaveButton;                            // 0x0368 (size: 0x10)
     void OnClickedLeaveButton();
     FWBP_Guild_COnClickedGuildSettingButton OnClickedGuildSettingButton;              // 0x0378 (size: 0x10)
     void OnClickedGuildSettingButton();
     FWBP_Guild_COnCommiedGuildName OnCommiedGuildName;                                // 0x0388 (size: 0x10)
     void OnCommiedGuildName(FString NewName);
-    TMap<class FGuid, class UWBP_Guild_MemberList_C*> DisplayWidgetMap;               // 0x0398 (size: 0x50)
+    TMap<FGuid, UWBP_Guild_MemberList_C*> DisplayWidgetMap;                           // 0x0398 (size: 0x50)
     FString OriginalGuildName;                                                        // 0x03E8 (size: 0x10)
     FText TempEditableTextBox_GuildNameText;                                          // 0x03F8 (size: 0x18)
 
@@ -57,7 +57,7 @@ class UWBP_Guild_C : public UUserWidget
     void ClearMemberList();
     void UpdateMemberInfo(FGuid PlayerUId, FPalUIGuildMemberDisplayInfo NewDisplayInfo);
     void AddGuildMemberInfo(FGuid PlayerUId, FPalUIGuildMemberDisplayInfo DisplayInfo);
-    void AddGuildMemberInfoMap(TMap<class FGuid, class FPalUIGuildMemberDisplayInfo> DisplayInfoMap);
+    void AddGuildMemberInfoMap(TMap<FGuid, FPalUIGuildMemberDisplayInfo> DisplayInfoMap);
     void SetGuildName(FString InGuildName, FGuid AdminPlayerUId);
     void Construct();
     void BndEvt__WBP_Guild_WBP_GuildButton_Leave_K2Node_ComponentBoundEvent_6_OnClicked__DelegateSignature();

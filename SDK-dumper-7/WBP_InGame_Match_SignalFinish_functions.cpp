@@ -17,23 +17,17 @@
 namespace SDK
 {
 
-// Function WBP_InGame_Match_SignalFinish.WBP_InGame_Match_SignalFinish_C.ExecuteUbergraph_WBP_InGame_Match_SignalFinish
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_InGame_Match_SignalFinish.WBP_InGame_Match_SignalFinish_C.SequenceEvent__ENTRYPOINTWBP_InGame_Match_SignalFinish
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_InGame_Match_SignalFinish_C::ExecuteUbergraph_WBP_InGame_Match_SignalFinish(int32 EntryPoint)
+void UWBP_InGame_Match_SignalFinish_C::SequenceEvent__ENTRYPOINTWBP_InGame_Match_SignalFinish()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Match_SignalFinish_C", "ExecuteUbergraph_WBP_InGame_Match_SignalFinish");
+		Func = Class->GetFunction("WBP_InGame_Match_SignalFinish_C", "SequenceEvent__ENTRYPOINTWBP_InGame_Match_SignalFinish");
 
-	Params::WBP_InGame_Match_SignalFinish_C_ExecuteUbergraph_WBP_InGame_Match_SignalFinish Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -51,17 +45,23 @@ void UWBP_InGame_Match_SignalFinish_C::SequenceEvent()
 }
 
 
-// Function WBP_InGame_Match_SignalFinish.WBP_InGame_Match_SignalFinish_C.SequenceEvent__ENTRYPOINTWBP_InGame_Match_SignalFinish
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_InGame_Match_SignalFinish.WBP_InGame_Match_SignalFinish_C.ExecuteUbergraph_WBP_InGame_Match_SignalFinish
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_InGame_Match_SignalFinish_C::SequenceEvent__ENTRYPOINTWBP_InGame_Match_SignalFinish()
+void UWBP_InGame_Match_SignalFinish_C::ExecuteUbergraph_WBP_InGame_Match_SignalFinish(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Match_SignalFinish_C", "SequenceEvent__ENTRYPOINTWBP_InGame_Match_SignalFinish");
+		Func = Class->GetFunction("WBP_InGame_Match_SignalFinish_C", "ExecuteUbergraph_WBP_InGame_Match_SignalFinish");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_InGame_Match_SignalFinish_C_ExecuteUbergraph_WBP_InGame_Match_SignalFinish Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

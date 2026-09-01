@@ -17,25 +17,6 @@
 namespace SDK::Params
 {
 
-// Function BP_LevelObject_Note.BP_LevelObject_Note_C.ExecuteUbergraph_BP_LevelObject_Note
-// 0x0014 (0x0014 - 0x0000)
-struct BP_LevelObject_Note_C_ExecuteUbergraph_BP_LevelObject_Note final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class APalLevelObjectObtainable* Self)> K2Node_CreateDelegate_OutputDelegate;     // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_LevelObject_Note_C_ExecuteUbergraph_BP_LevelObject_Note;
-
-// Function BP_LevelObject_Note.BP_LevelObject_Note_C.OnUpdatePickupStatus
-// 0x0008 (0x0008 - 0x0000)
-struct BP_LevelObject_Note_C_OnUpdatePickupStatus final
-{
-public:
-	class APalLevelObjectObtainable*              LevelObject;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_LevelObject_Note_C_OnUpdatePickupStatus;
-
 // Function BP_LevelObject_Note.BP_LevelObject_Note_C.SetActiveSelf
 // 0x0010 (0x0010 - 0x0000)
 struct BP_LevelObject_Note_C_SetActiveSelf final
@@ -50,6 +31,25 @@ public:
 	ECollisionEnabled                             K2Node_Select_Default;                             // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_LevelObject_Note_C_SetActiveSelf;
+
+// Function BP_LevelObject_Note.BP_LevelObject_Note_C.OnUpdatePickupStatus
+// 0x0008 (0x0008 - 0x0000)
+struct BP_LevelObject_Note_C_OnUpdatePickupStatus final
+{
+public:
+	class APalLevelObjectObtainable*              LevelObject;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LevelObject_Note_C_OnUpdatePickupStatus;
+
+// Function BP_LevelObject_Note.BP_LevelObject_Note_C.ExecuteUbergraph_BP_LevelObject_Note
+// 0x0014 (0x0014 - 0x0000)
+struct BP_LevelObject_Note_C_ExecuteUbergraph_BP_LevelObject_Note final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class APalLevelObjectObtainable* Self)> K2Node_CreateDelegate_OutputDelegate;     // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LevelObject_Note_C_ExecuteUbergraph_BP_LevelObject_Note;
 
 // Function BP_LevelObject_Note.BP_LevelObject_Note_C.GetObtainFXLocation
 // 0x0030 (0x0030 - 0x0000)

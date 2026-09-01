@@ -17,114 +17,17 @@
 namespace SDK
 {
 
-// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.ExecuteUbergraph_WBP_BuildObject_MedicalPalBed_WorldHUD
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BuildObject_MedicalPalBed_WorldHUD_C::ExecuteUbergraph_WBP_BuildObject_MedicalPalBed_WorldHUD(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BuildObject_MedicalPalBed_WorldHUD_C", "ExecuteUbergraph_WBP_BuildObject_MedicalPalBed_WorldHUD");
-
-	Params::WBP_BuildObject_MedicalPalBed_WorldHUD_C_ExecuteUbergraph_WBP_BuildObject_MedicalPalBed_WorldHUD Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_BuildObject_MedicalPalBed_WorldHUD_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BuildObject_MedicalPalBed_WorldHUD_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.ReflectProgressRate
+// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.TickForDisplay
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_BuildObject_MedicalPalBed_WorldHUD_C::ReflectProgressRate()
+void UWBP_BuildObject_MedicalPalBed_WorldHUD_C::TickForDisplay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BuildObject_MedicalPalBed_WorldHUD_C", "ReflectProgressRate");
+		Func = Class->GetFunction("WBP_BuildObject_MedicalPalBed_WorldHUD_C", "TickForDisplay");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.ReflectRemainingTime
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_BuildObject_MedicalPalBed_WorldHUD_C::ReflectRemainingTime()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BuildObject_MedicalPalBed_WorldHUD_C", "ReflectRemainingTime");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.ReflectResurrectAbility
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_BuildObject_MedicalPalBed_WorldHUD_C::ReflectResurrectAbility()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BuildObject_MedicalPalBed_WorldHUD_C", "ReflectResurrectAbility");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.Setup
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_BuildObject_MedicalPalBed_WorldHUD_C::Setup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BuildObject_MedicalPalBed_WorldHUD_C", "Setup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.ShouldDisplay
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BuildObject_MedicalPalBed_WorldHUD_C::ShouldDisplay(bool* Return_Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BuildObject_MedicalPalBed_WorldHUD_C", "ShouldDisplay");
-
-	Params::WBP_BuildObject_MedicalPalBed_WorldHUD_C_ShouldDisplay Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
 }
 
 
@@ -150,17 +53,114 @@ void UWBP_BuildObject_MedicalPalBed_WorldHUD_C::Tick(const struct FGeometry& MyG
 }
 
 
-// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.TickForDisplay
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.ShouldDisplay
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool*                                   Return_Value                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_BuildObject_MedicalPalBed_WorldHUD_C::TickForDisplay()
+void UWBP_BuildObject_MedicalPalBed_WorldHUD_C::ShouldDisplay(bool* Return_Value)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BuildObject_MedicalPalBed_WorldHUD_C", "TickForDisplay");
+		Func = Class->GetFunction("WBP_BuildObject_MedicalPalBed_WorldHUD_C", "ShouldDisplay");
+
+	Params::WBP_BuildObject_MedicalPalBed_WorldHUD_C_ShouldDisplay Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Return_Value != nullptr)
+		*Return_Value = Parms.Return_Value;
+}
+
+
+// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.Setup
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_BuildObject_MedicalPalBed_WorldHUD_C::Setup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BuildObject_MedicalPalBed_WorldHUD_C", "Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.ReflectResurrectAbility
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_BuildObject_MedicalPalBed_WorldHUD_C::ReflectResurrectAbility()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BuildObject_MedicalPalBed_WorldHUD_C", "ReflectResurrectAbility");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.ReflectRemainingTime
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_BuildObject_MedicalPalBed_WorldHUD_C::ReflectRemainingTime()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BuildObject_MedicalPalBed_WorldHUD_C", "ReflectRemainingTime");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.ReflectProgressRate
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_BuildObject_MedicalPalBed_WorldHUD_C::ReflectProgressRate()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BuildObject_MedicalPalBed_WorldHUD_C", "ReflectProgressRate");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_BuildObject_MedicalPalBed_WorldHUD_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BuildObject_MedicalPalBed_WorldHUD_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_BuildObject_MedicalPalBed_WorldHUD.WBP_BuildObject_MedicalPalBed_WorldHUD_C.ExecuteUbergraph_WBP_BuildObject_MedicalPalBed_WorldHUD
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BuildObject_MedicalPalBed_WorldHUD_C::ExecuteUbergraph_WBP_BuildObject_MedicalPalBed_WorldHUD(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BuildObject_MedicalPalBed_WorldHUD_C", "ExecuteUbergraph_WBP_BuildObject_MedicalPalBed_WorldHUD");
+
+	Params::WBP_BuildObject_MedicalPalBed_WorldHUD_C_ExecuteUbergraph_WBP_BuildObject_MedicalPalBed_WorldHUD Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

@@ -40,11 +40,11 @@ public:
 	bool                                          IsShow;                                            // 0x02E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_In();
-	void AnmEvent_Out();
-	void AnmEvent_Rank(EPalFishingSpotDifficultyType Difficulty);
-	void ExecuteUbergraph_WBP_Fishing_AreaRank(int32 EntryPoint);
 	void SetDifficulty(EPalFishingSpotDifficultyType DifficultyType);
+	void ExecuteUbergraph_WBP_Fishing_AreaRank(int32 EntryPoint);
+	void AnmEvent_Rank(EPalFishingSpotDifficultyType Difficulty);
+	void AnmEvent_Out();
+	void AnmEvent_In();
 
 public:
 	static class UClass* StaticClass()

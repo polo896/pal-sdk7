@@ -8,7 +8,7 @@ class UWBP_CharaCre_ScrollBoxContent_Face_C : public UWBP_CharaCre_ScrollBoxCont
     class UWBP_CharaCre_ColorSelect_sq_C* WBP_CharaCre_ColorSelect_sq_Eye;            // 0x0480 (size: 0x8)
     class UWBP_CharaCre_PartsSelectPanel_C* WBP_PartsSelectPanel_Eye;                 // 0x0488 (size: 0x8)
     class UWBP_CharaCre_PartsSelectPanel_C* WBP_PartsSelectPanel_Head;                // 0x0490 (size: 0x8)
-    TMap<class FName, class FPalCharacterCreationMeshPresetDataRow> HeadMeshMap;      // 0x0498 (size: 0x50)
+    TMap<FName, FPalCharacterCreationMeshPresetDataRow> HeadMeshMap;                  // 0x0498 (size: 0x50)
     TArray<FLinearColor> BrowColorPreset;                                             // 0x04E8 (size: 0x10)
     TArray<FLinearColor> EyeColorPreset;                                              // 0x04F8 (size: 0x10)
     FWBP_CharaCre_ScrollBoxContent_Face_COnSelectedEyeColor OnSelectedEyeColor;       // 0x0508 (size: 0x10)

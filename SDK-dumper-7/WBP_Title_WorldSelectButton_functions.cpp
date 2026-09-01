@@ -17,63 +17,15 @@
 namespace SDK
 {
 
-// Function WBP_Title_WorldSelectButton.WBP_Title_WorldSelectButton_C.AnmEvent_Focus
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Title_WorldSelectButton_C::AnmEvent_Focus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelectButton_C", "AnmEvent_Focus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Title_WorldSelectButton.WBP_Title_WorldSelectButton_C.AnmEvent_Unfocus
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Title_WorldSelectButton_C::AnmEvent_Unfocus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelectButton_C", "AnmEvent_Unfocus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Title_WorldSelectButton.WBP_Title_WorldSelectButton_C.BndEvt__WBP_Title_WorldSelectButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Title_WorldSelectButton_C::BndEvt__WBP_Title_WorldSelectButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelectButton_C", "BndEvt__WBP_Title_WorldSelectButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_Title_WorldSelectButton_C_BndEvt__WBP_Title_WorldSelectButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Title_WorldSelectButton.WBP_Title_WorldSelectButton_C.Construct
+// Function WBP_Title_WorldSelectButton.WBP_Title_WorldSelectButton_C.OnInitialized
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Title_WorldSelectButton_C::Construct()
+void UWBP_Title_WorldSelectButton_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelectButton_C", "Construct");
+		Func = Class->GetFunction("WBP_Title_WorldSelectButton_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,15 +51,63 @@ void UWBP_Title_WorldSelectButton_C::ExecuteUbergraph_WBP_Title_WorldSelectButto
 }
 
 
-// Function WBP_Title_WorldSelectButton.WBP_Title_WorldSelectButton_C.OnInitialized
+// Function WBP_Title_WorldSelectButton.WBP_Title_WorldSelectButton_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Title_WorldSelectButton_C::OnInitialized()
+void UWBP_Title_WorldSelectButton_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Title_WorldSelectButton_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_Title_WorldSelectButton_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Title_WorldSelectButton.WBP_Title_WorldSelectButton_C.BndEvt__WBP_Title_WorldSelectButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Title_WorldSelectButton_C::BndEvt__WBP_Title_WorldSelectButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelectButton_C", "BndEvt__WBP_Title_WorldSelectButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_Title_WorldSelectButton_C_BndEvt__WBP_Title_WorldSelectButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Title_WorldSelectButton.WBP_Title_WorldSelectButton_C.AnmEvent_Unfocus
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Title_WorldSelectButton_C::AnmEvent_Unfocus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelectButton_C", "AnmEvent_Unfocus");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Title_WorldSelectButton.WBP_Title_WorldSelectButton_C.AnmEvent_Focus
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Title_WorldSelectButton_C::AnmEvent_Focus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Title_WorldSelectButton_C", "AnmEvent_Focus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -5,7 +5,7 @@
 
 struct FConstraintAndActiveChannel
 {
-    TSoftObjectPtr<UTickableConstraint> Constraint;                                   // 0x0000 (size: 0x30)
+    TSoftObjectPtr<class UTickableConstraint> Constraint;                             // 0x0000 (size: 0x30)
     FMovieSceneConstraintChannel ActiveChannel;                                       // 0x0030 (size: 0x100)
     class UTickableConstraint* ConstraintCopyToSpawn;                                 // 0x0130 (size: 0x8)
 
@@ -31,7 +31,7 @@ class UConstraintsManager : public UObject
     void OnConstraintAdded(class UConstraintsManager* Mananger, class UTickableConstraint* Constraint);
     FConstraintsManagerOnConstraintRemoved_BP OnConstraintRemoved_BP;                 // 0x0029 (size: 0x1)
     void OnConstraintRemoved(class UConstraintsManager* Mananger, class UTickableConstraint* Constraint, bool bDoNotCompensate);
-    TArray<class UTickableConstraint*> Constraints;                                   // 0x0038 (size: 0x10)
+    TArray<UTickableConstraint*> Constraints;                                         // 0x0038 (size: 0x10)
 
 }; // Size: 0x48
 

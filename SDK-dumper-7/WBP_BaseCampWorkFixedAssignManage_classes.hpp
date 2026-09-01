@@ -35,29 +35,29 @@ public:
 	struct FPalDataTableRowName_UIInputAction     SortInputAction;                                   // 0x0558(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AlreadyFixedAssign(const struct FPalUIBaseCampWorkFixedAssignInfo& AssignInfo, class UPalIndividualCharacterSlot* TargetSlot, bool* IsAlreadyFixedAssign);
-	void BndEvt__WBP_BaseCampWorkFixedAssignManage_WBP_AssignBoard_K2Node_ComponentBoundEvent_0_OnClickedWorkerSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* SlotButtonBase);
-	void BndEvt__WBP_BaseCampWorkFixedAssignManage_WBP_AssignBoard_K2Node_ComponentBoundEvent_1_OnClickedWork__DelegateSignature(class UWBP_AssignBoard_WorkListBase_C* Widget);
-	void BndEvt__WBP_BaseCampWorkFixedAssignManage_WBP_AssignBoard_K2Node_ComponentBoundEvent_2_OnTriggerRemoveAssignShortcut__DelegateSignature();
-	void BndEvt__WBP_BaseCampWorkFixedAssignManage_WBP_AssignBoard_K2Node_ComponentBoundEvent_3_OnHoveredWork__DelegateSignature(class UWBP_AssignBoard_WorkListBase_C* Widget);
-	void BndEvt__WBP_BaseCampWorkFixedAssignManage_WBP_AssignBoard_K2Node_ComponentBoundEvent_4_OnUnhoveredWork__DelegateSignature(class UWBP_AssignBoard_WorkListBase_C* Widget);
-	void BndEvt__WBP_BaseCampWorkFixedAssignManage_WBP_AssignBoard_K2Node_ComponentBoundEvent_5_OnClickedCloseButton__DelegateSignature();
-	void BndEvt__WBP_BaseCampWorkFixedAssignManage_WBP_AssignBoard_K2Node_ComponentBoundEvent_6_OnClickedSortButton__DelegateSignature();
-	void CanAssign(const struct FPalUIBaseCampWorkFixedAssignInfo& AssignInfo, class UPalIndividualCharacterSlot* TargetSlot, bool* CanAssign_0);
-	void Destruct();
-	void ExecuteUbergraph_WBP_BaseCampWorkFixedAssignManage(int32 EntryPoint);
-	void GetModel(class UPalUIBaseCampWorkFixedAssignManageModel** Model);
-	void OnCancelAction();
-	void OnClose();
-	void OnSetup();
-	void OnTriggerSort();
-	void OnUpdateAssignInfo(class UPalUIBaseCampWorkFixedAssignManageModel* Model);
-	void ProccessAssign(const struct FPalUIBaseCampWorkFixedAssignInfo& AssignInfo, class UPalIndividualCharacterSlot* Slot_0);
-	void RemoveAssign(const struct FPalUIBaseCampWorkFixedAssignInfo& AssignInfo);
 	void UpdateWidgetList(bool ForceReferesh);
+	void RemoveAssign(const struct FPalUIBaseCampWorkFixedAssignInfo& AssignInfo);
+	void ProccessAssign(const struct FPalUIBaseCampWorkFixedAssignInfo& AssignInfo, class UPalIndividualCharacterSlot* Slot_0);
+	void OnUpdateAssignInfo(class UPalUIBaseCampWorkFixedAssignManageModel* Model);
+	void OnTriggerSort();
+	void OnSetup();
+	void OnClose();
+	void OnCancelAction();
+	void GetModel(class UPalUIBaseCampWorkFixedAssignManageModel** Model);
+	void ExecuteUbergraph_WBP_BaseCampWorkFixedAssignManage(int32 EntryPoint);
+	void Destruct();
+	void CanAssign(const struct FPalUIBaseCampWorkFixedAssignInfo& AssignInfo, class UPalIndividualCharacterSlot* TargetSlot, bool* CanAssign_0);
+	void BndEvt__WBP_BaseCampWorkFixedAssignManage_WBP_AssignBoard_K2Node_ComponentBoundEvent_6_OnClickedSortButton__DelegateSignature();
+	void BndEvt__WBP_BaseCampWorkFixedAssignManage_WBP_AssignBoard_K2Node_ComponentBoundEvent_5_OnClickedCloseButton__DelegateSignature();
+	void BndEvt__WBP_BaseCampWorkFixedAssignManage_WBP_AssignBoard_K2Node_ComponentBoundEvent_4_OnUnhoveredWork__DelegateSignature(class UWBP_AssignBoard_WorkListBase_C* Widget);
+	void BndEvt__WBP_BaseCampWorkFixedAssignManage_WBP_AssignBoard_K2Node_ComponentBoundEvent_3_OnHoveredWork__DelegateSignature(class UWBP_AssignBoard_WorkListBase_C* Widget);
+	void BndEvt__WBP_BaseCampWorkFixedAssignManage_WBP_AssignBoard_K2Node_ComponentBoundEvent_2_OnTriggerRemoveAssignShortcut__DelegateSignature();
+	void BndEvt__WBP_BaseCampWorkFixedAssignManage_WBP_AssignBoard_K2Node_ComponentBoundEvent_1_OnClickedWork__DelegateSignature(class UWBP_AssignBoard_WorkListBase_C* Widget);
+	void BndEvt__WBP_BaseCampWorkFixedAssignManage_WBP_AssignBoard_K2Node_ComponentBoundEvent_0_OnClickedWorkerSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* SlotButtonBase);
+	void AlreadyFixedAssign(const struct FPalUIBaseCampWorkFixedAssignInfo& AssignInfo, class UPalIndividualCharacterSlot* TargetSlot, bool* IsAlreadyFixedAssign);
 
-	class UWidget* BP_GetDesiredFocusTarget() const;
 	void GetRestoreFocusTarget_WorkList(class UWidget** TargetWidget) const;
+	class UWidget* BP_GetDesiredFocusTarget() const;
 
 public:
 	static class UClass* StaticClass()

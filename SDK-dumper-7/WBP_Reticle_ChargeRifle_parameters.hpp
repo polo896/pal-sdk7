@@ -16,6 +16,29 @@
 namespace SDK::Params
 {
 
+// Function WBP_Reticle_ChargeRifle.WBP_Reticle_ChargeRifle_C.OnReticleActivted
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_Reticle_ChargeRifle_C_OnReticleActivted final
+{
+public:
+	struct FPalItemId                             WeaponItemId;                                      // 0x0000(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Reticle_ChargeRifle_C_OnReticleActivted;
+
+// Function WBP_Reticle_ChargeRifle.WBP_Reticle_ChargeRifle_C.OnChangedChargeValue
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_Reticle_ChargeRifle_C_OnChangedChargeValue final
+{
+public:
+	double                                        CurretnChargeValue;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_DoubleDouble_ReturnValue;      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Reticle_ChargeRifle_C_OnChangedChargeValue;
+
 // Function WBP_Reticle_ChargeRifle.WBP_Reticle_ChargeRifle_C.ExecuteUbergraph_WBP_Reticle_ChargeRifle
 // 0x0128 (0x0128 - 0x0000)
 struct WBP_Reticle_ChargeRifle_C_ExecuteUbergraph_WBP_Reticle_ChargeRifle final
@@ -52,29 +75,6 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_5;            // 0x0118(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Reticle_ChargeRifle_C_ExecuteUbergraph_WBP_Reticle_ChargeRifle;
-
-// Function WBP_Reticle_ChargeRifle.WBP_Reticle_ChargeRifle_C.OnChangedChargeValue
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_Reticle_ChargeRifle_C_OnChangedChargeValue final
-{
-public:
-	double                                        CurretnChargeValue;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_DoubleDouble_ReturnValue;      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Reticle_ChargeRifle_C_OnChangedChargeValue;
-
-// Function WBP_Reticle_ChargeRifle.WBP_Reticle_ChargeRifle_C.OnReticleActivted
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_Reticle_ChargeRifle_C_OnReticleActivted final
-{
-public:
-	struct FPalItemId                             WeaponItemId;                                      // 0x0000(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Reticle_ChargeRifle_C_OnReticleActivted;
 
 }
 

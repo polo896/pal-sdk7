@@ -16,6 +16,24 @@
 namespace SDK::Params
 {
 
+// Function WBP_Arena_PalSelect_PalSlot.WBP_Arena_PalSelect_PalSlot_C.SetPalIcon
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Arena_PalSelect_PalSlot_C_SetPalIcon final
+{
+public:
+	class UPalIndividualCharacterParameter*       CharacterParameter;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Arena_PalSelect_PalSlot_C_SetPalIcon;
+
+// Function WBP_Arena_PalSelect_PalSlot.WBP_Arena_PalSelect_PalSlot_C.SetNowSetting
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Arena_PalSelect_PalSlot_C_SetNowSetting final
+{
+public:
+	bool                                          IsSetting;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Arena_PalSelect_PalSlot_C_SetNowSetting;
+
 // Function WBP_Arena_PalSelect_PalSlot.WBP_Arena_PalSelect_PalSlot_C.ExecuteUbergraph_WBP_Arena_PalSelect_PalSlot
 // 0x0030 (0x0030 - 0x0000)
 struct WBP_Arena_PalSelect_PalSlot_C_ExecuteUbergraph_WBP_Arena_PalSelect_PalSlot final
@@ -37,24 +55,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Arena_PalSelect_PalSlot_C_ExecuteUbergraph_WBP_Arena_PalSelect_PalSlot;
-
-// Function WBP_Arena_PalSelect_PalSlot.WBP_Arena_PalSelect_PalSlot_C.SetNowSetting
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Arena_PalSelect_PalSlot_C_SetNowSetting final
-{
-public:
-	bool                                          IsSetting;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Arena_PalSelect_PalSlot_C_SetNowSetting;
-
-// Function WBP_Arena_PalSelect_PalSlot.WBP_Arena_PalSelect_PalSlot_C.SetPalIcon
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Arena_PalSelect_PalSlot_C_SetPalIcon final
-{
-public:
-	class UPalIndividualCharacterParameter*       CharacterParameter;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Arena_PalSelect_PalSlot_C_SetPalIcon;
 
 }
 

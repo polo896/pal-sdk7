@@ -36,10 +36,10 @@ class UWBP_IngameMenu_Repair_C : public UUserWidget
     class UWBP_PalPlayerInventoryScrollList_C* WBP_PalPlayerInventoryScrollList;      // 0x0368 (size: 0x8)
     FWBP_IngameMenu_Repair_COnClickedCloseButton OnClickedCloseButton;                // 0x0370 (size: 0x10)
     void OnClickedCloseButton();
-    TArray<class UWBP_PalInGameMenuItemSlotButton_C*> WeaponSlotArray;                // 0x0380 (size: 0x10)
+    TArray<UWBP_PalInGameMenuItemSlotButton_C*> WeaponSlotArray;                      // 0x0380 (size: 0x10)
     FWBP_IngameMenu_Repair_COnClickedAnyItemSlot OnClickedAnyItemSlot;                // 0x0390 (size: 0x10)
     void OnClickedAnyItemSlot(class UPalItemSlot* itemSlot);
-    TArray<class UWBP_IngameMenuConstruction_InfoItem_C*> MaterialInfoArray;          // 0x03A0 (size: 0x10)
+    TArray<UWBP_IngameMenuConstruction_InfoItem_C*> MaterialInfoArray;                // 0x03A0 (size: 0x10)
     FWBP_IngameMenu_Repair_COnClickedRepairButton OnClickedRepairButton;              // 0x03B0 (size: 0x10)
     void OnClickedRepairButton();
     FWBP_IngameMenu_Repair_COnClickedRepairAllButton OnClickedRepairAllButton;        // 0x03C0 (size: 0x10)

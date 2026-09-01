@@ -20,7 +20,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_NPCCampSpawnerBase.BP_NPCCampSpawnerBase_C
 // 0x0078 (0x0330 - 0x02B8)
-class ABP_NPCCampSpawnerBase_C : public APalNPCCampSpawnerBase
+class ABP_NPCCampSpawnerBase_C final : public APalNPCCampSpawnerBase
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02B8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
@@ -39,28 +39,28 @@ public:
 	bool                                          LoadCamp;                                          // 0x0328(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void CheckWorldLoadComplete(bool* Loaded);
-	void CREATEDELEGATE_PROXYFUNCTION_0(class UPalIndividualCharacterHandle* NewParam);
-	void DespawnCamp();
-	void EnemyCampClearSetting(const struct FPalEnemyCampStatus& EnemyCampStatus);
-	void ExecuteUbergraph_BP_NPCCampSpawnerBase(int32 EntryPoint);
-	class FName GetRewardName();
-	void IsNearPlayerCamp(bool* IsNear);
-	void IsProbabilitySuccess(bool* Success);
-	void OnEnemyDead(const struct FPalDeadInfo& DeadInfo);
-	void OnEnemySpawned(class UPalIndividualCharacterHandle*& SpawnHandle);
-	void OnOpenMainTreasureBox();
-	void OnReceivedReward();
-	void PlayerCheck(bool* RespawnOK);
-	void RandomLottery(class UClass** ResultClass, int32* SelectedIndex);
-	void ReceiveBeginPlay();
-	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
-	void ReceiveTick(float DeltaSeconds);
-	void SetRespawnAble();
-	void SetupCampStatus();
-	void StartDespawnTimer(double DespawnTime);
-	void StartRespawnTimer(double RespawnTime);
 	void TryCampSpawn();
+	void StartRespawnTimer(double RespawnTime);
+	void StartDespawnTimer(double DespawnTime);
+	void SetupCampStatus();
+	void SetRespawnAble();
+	void ReceiveTick(float DeltaSeconds);
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void ReceiveBeginPlay();
+	void RandomLottery(class UClass** ResultClass, int32* SelectedIndex);
+	void PlayerCheck(bool* RespawnOK);
+	void OnReceivedReward();
+	void OnOpenMainTreasureBox();
+	void OnEnemySpawned(class UPalIndividualCharacterHandle*& SpawnHandle);
+	void OnEnemyDead(const struct FPalDeadInfo& DeadInfo);
+	void IsProbabilitySuccess(bool* Success);
+	void IsNearPlayerCamp(bool* IsNear);
+	class FName GetRewardName();
+	void ExecuteUbergraph_BP_NPCCampSpawnerBase(int32 EntryPoint);
+	void EnemyCampClearSetting(const struct FPalEnemyCampStatus& EnemyCampStatus);
+	void DespawnCamp();
+	void CREATEDELEGATE_PROXYFUNCTION_0(class UPalIndividualCharacterHandle* NewParam);
+	void CheckWorldLoadComplete(bool* Loaded);
 
 public:
 	static class UClass* StaticClass()

@@ -28,8 +28,8 @@ public:
 	class UWBP_ResearchEffectIcon_C*              WBP_ResearchEffectIcon;                            // 0x0288(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Research_Buff(int32 EntryPoint);
 	void Setup(EPalWorkSuitability MainType, EPalLabCategorySubType SubType, const class FText& Effect);
+	void ExecuteUbergraph_WBP_Research_Buff(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

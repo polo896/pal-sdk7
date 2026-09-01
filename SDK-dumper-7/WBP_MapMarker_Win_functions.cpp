@@ -17,137 +17,79 @@
 namespace SDK
 {
 
-// Function WBP_MapMarker_Win.WBP_MapMarker_Win_C.SwitchMarkerType
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    ToGuild                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_MapMarker_Win.WBP_MapMarker_Win_C.AnmEvent_WarnMarkerOverLimit
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_MapMarker_Win_C::SwitchMarkerType(bool ToGuild)
+void UWBP_MapMarker_Win_C::AnmEvent_WarnMarkerOverLimit()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapMarker_Win_C", "SwitchMarkerType");
-
-	Params::WBP_MapMarker_Win_C_SwitchMarkerType Parms{};
-
-	Parms.ToGuild = ToGuild;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MapMarker_Win.WBP_MapMarker_Win_C.SetUnconfirmable
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    CanConfirm                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MapMarker_Win_C::SetUnconfirmable(bool CanConfirm)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapMarker_Win_C", "SetUnconfirmable");
-
-	Params::WBP_MapMarker_Win_C_SetUnconfirmable Parms{};
-
-	Parms.CanConfirm = CanConfirm;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MapMarker_Win.WBP_MapMarker_Win_C.SetLockType
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    NewLock                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MapMarker_Win_C::SetLockType(bool NewLock)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapMarker_Win_C", "SetLockType");
-
-	Params::WBP_MapMarker_Win_C_SetLockType Parms{};
-
-	Parms.NewLock = NewLock;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MapMarker_Win.WBP_MapMarker_Win_C.SetEdittingIcon
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_Map_IconCustom_C*            CustomIcon                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MapMarker_Win_C::SetEdittingIcon(class UWBP_Map_IconCustom_C* CustomIcon)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapMarker_Win_C", "SetEdittingIcon");
-
-	Params::WBP_MapMarker_Win_C_SetEdittingIcon Parms{};
-
-	Parms.CustomIcon = CustomIcon;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MapMarker_Win.WBP_MapMarker_Win_C.OnRemovedFromFocusPath
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FFocusEvent&               InFocusEvent                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void UWBP_MapMarker_Win_C::OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapMarker_Win_C", "OnRemovedFromFocusPath");
-
-	Params::WBP_MapMarker_Win_C_OnRemovedFromFocusPath Parms{};
-
-	Parms.InFocusEvent = std::move(InFocusEvent);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MapMarker_Win.WBP_MapMarker_Win_C.OnConfirmClickButton
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_MapMarker_Win_C::OnConfirmClickButton()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapMarker_Win_C", "OnConfirmClickButton");
+		Func = Class->GetFunction("WBP_MapMarker_Win_C", "AnmEvent_WarnMarkerOverLimit");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_MapMarker_Win.WBP_MapMarker_Win_C.ExecuteUbergraph_WBP_MapMarker_Win
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_MapMarker_Win.WBP_MapMarker_Win_C.BndEvt__WBP_MapMarker_Win_WBP_tab_Custom_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_MapMarker_Win_C::ExecuteUbergraph_WBP_MapMarker_Win(int32 EntryPoint)
+void UWBP_MapMarker_Win_C::BndEvt__WBP_MapMarker_Win_WBP_tab_Custom_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapMarker_Win_C", "ExecuteUbergraph_WBP_MapMarker_Win");
+		Func = Class->GetFunction("WBP_MapMarker_Win_C", "BndEvt__WBP_MapMarker_Win_WBP_tab_Custom_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
 
-	Params::WBP_MapMarker_Win_C_ExecuteUbergraph_WBP_MapMarker_Win Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function WBP_MapMarker_Win.WBP_MapMarker_Win_C.BndEvt__WBP_MapMarker_Win_WBP_tab_Guild_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_MapMarker_Win_C::BndEvt__WBP_MapMarker_Win_WBP_tab_Guild_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MapMarker_Win_C", "BndEvt__WBP_MapMarker_Win_WBP_tab_Guild_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MapMarker_Win.WBP_MapMarker_Win_C.ChangeIconType
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MapMarker_Win_C::ChangeIconType(int32 Index_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MapMarker_Win_C", "ChangeIconType");
+
+	Params::WBP_MapMarker_Win_C_ChangeIconType Parms{};
+
+	Parms.Index_0 = Index_0;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MapMarker_Win.WBP_MapMarker_Win_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_MapMarker_Win_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MapMarker_Win_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -174,79 +116,137 @@ class UWidget* UWBP_MapMarker_Win_C::DoCustomNavigation(EUINavigation Navigation
 }
 
 
-// Function WBP_MapMarker_Win.WBP_MapMarker_Win_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_MapMarker_Win_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapMarker_Win_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MapMarker_Win.WBP_MapMarker_Win_C.ChangeIconType
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_MapMarker_Win.WBP_MapMarker_Win_C.ExecuteUbergraph_WBP_MapMarker_Win
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MapMarker_Win_C::ChangeIconType(int32 Index_0)
+void UWBP_MapMarker_Win_C::ExecuteUbergraph_WBP_MapMarker_Win(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapMarker_Win_C", "ChangeIconType");
+		Func = Class->GetFunction("WBP_MapMarker_Win_C", "ExecuteUbergraph_WBP_MapMarker_Win");
 
-	Params::WBP_MapMarker_Win_C_ChangeIconType Parms{};
+	Params::WBP_MapMarker_Win_C_ExecuteUbergraph_WBP_MapMarker_Win Parms{};
 
-	Parms.Index_0 = Index_0;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_MapMarker_Win.WBP_MapMarker_Win_C.BndEvt__WBP_MapMarker_Win_WBP_tab_Guild_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_MapMarker_Win.WBP_MapMarker_Win_C.OnConfirmClickButton
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_MapMarker_Win_C::BndEvt__WBP_MapMarker_Win_WBP_tab_Guild_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
+void UWBP_MapMarker_Win_C::OnConfirmClickButton()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapMarker_Win_C", "BndEvt__WBP_MapMarker_Win_WBP_tab_Guild_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_MapMarker_Win_C", "OnConfirmClickButton");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_MapMarker_Win.WBP_MapMarker_Win_C.BndEvt__WBP_MapMarker_Win_WBP_tab_Custom_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_MapMarker_Win.WBP_MapMarker_Win_C.OnRemovedFromFocusPath
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FFocusEvent&               InFocusEvent                                           (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void UWBP_MapMarker_Win_C::BndEvt__WBP_MapMarker_Win_WBP_tab_Custom_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
+void UWBP_MapMarker_Win_C::OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapMarker_Win_C", "BndEvt__WBP_MapMarker_Win_WBP_tab_Custom_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_MapMarker_Win_C", "OnRemovedFromFocusPath");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_MapMarker_Win_C_OnRemovedFromFocusPath Parms{};
+
+	Parms.InFocusEvent = std::move(InFocusEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_MapMarker_Win.WBP_MapMarker_Win_C.AnmEvent_WarnMarkerOverLimit
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_MapMarker_Win.WBP_MapMarker_Win_C.SetEdittingIcon
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_Map_IconCustom_C*            CustomIcon                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MapMarker_Win_C::AnmEvent_WarnMarkerOverLimit()
+void UWBP_MapMarker_Win_C::SetEdittingIcon(class UWBP_Map_IconCustom_C* CustomIcon)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapMarker_Win_C", "AnmEvent_WarnMarkerOverLimit");
+		Func = Class->GetFunction("WBP_MapMarker_Win_C", "SetEdittingIcon");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_MapMarker_Win_C_SetEdittingIcon Parms{};
+
+	Parms.CustomIcon = CustomIcon;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MapMarker_Win.WBP_MapMarker_Win_C.SetLockType
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    NewLock                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MapMarker_Win_C::SetLockType(bool NewLock)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MapMarker_Win_C", "SetLockType");
+
+	Params::WBP_MapMarker_Win_C_SetLockType Parms{};
+
+	Parms.NewLock = NewLock;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MapMarker_Win.WBP_MapMarker_Win_C.SetUnconfirmable
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    CanConfirm                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MapMarker_Win_C::SetUnconfirmable(bool CanConfirm)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MapMarker_Win_C", "SetUnconfirmable");
+
+	Params::WBP_MapMarker_Win_C_SetUnconfirmable Parms{};
+
+	Parms.CanConfirm = CanConfirm;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MapMarker_Win.WBP_MapMarker_Win_C.SwitchMarkerType
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ToGuild                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MapMarker_Win_C::SwitchMarkerType(bool ToGuild)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MapMarker_Win_C", "SwitchMarkerType");
+
+	Params::WBP_MapMarker_Win_C_SwitchMarkerType Parms{};
+
+	Parms.ToGuild = ToGuild;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

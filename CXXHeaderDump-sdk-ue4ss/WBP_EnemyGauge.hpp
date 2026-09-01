@@ -73,7 +73,7 @@ class UWBP_EnemyGauge_C : public UUserWidget
     class UWidgetAnimation* CurrentIconAnm;                                           // 0x04B0 (size: 0x8)
     FDataTableRowHandle SleepMsgId;                                                   // 0x04B8 (size: 0x10)
     bool IsParts;                                                                     // 0x04C8 (size: 0x1)
-    TMap<class EPalStatusID, class UTexture2D*> StatusEffectIconMap;                  // 0x04D0 (size: 0x50)
+    TMap<EPalStatusID, UTexture2D*> StatusEffectIconMap;                              // 0x04D0 (size: 0x50)
     EPalStatusID LastDisplayedStatusID;                                               // 0x0520 (size: 0x1)
 
     void SetStatusEffect(EPalStatusID statusID);

@@ -28,10 +28,10 @@ public:
 	TArray<TSoftObjectPtr<class UWBP_EnemyQuestionMarkIcon_C>> QuMarkList;                           // 0x0468(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void Construct();
-	void ExecuteUbergraph_WBP_EnemyMark(int32 EntryPoint);
-	void カスタムイベント_0(class APalCharacter* TargetCharacter);
 	void カスタムイベント_1(class APalCharacter* TargetCharacter);
+	void カスタムイベント_0(class APalCharacter* TargetCharacter);
+	void ExecuteUbergraph_WBP_EnemyMark(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

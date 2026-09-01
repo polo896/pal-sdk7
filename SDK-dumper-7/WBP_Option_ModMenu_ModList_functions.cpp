@@ -17,47 +17,103 @@
 namespace SDK
 {
 
-// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.AnmEvent_Hover
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.SetModData
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FPalUIModDisplayData&      ModDisplayData                                         (BlueprintVisible, BlueprintReadOnly, Parm)
+// const struct FPalUIModUniqueId&         UniqueId                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void UWBP_Option_ModMenu_ModList_C::AnmEvent_Hover()
+void UWBP_Option_ModMenu_ModList_C::SetModData(const struct FPalUIModDisplayData& ModDisplayData, const struct FPalUIModUniqueId& UniqueId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_ModList_C", "AnmEvent_Hover");
+		Func = Class->GetFunction("WBP_Option_ModMenu_ModList_C", "SetModData");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Option_ModMenu_ModList_C_SetModData Parms{};
+
+	Parms.ModDisplayData = std::move(ModDisplayData);
+	Parms.UniqueId = std::move(UniqueId);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.AnmEvent_Unhover
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.GetUniqueId
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FPalUIModUniqueId*               ModUniqueId                                            (Parm, OutParm, HasGetValueTypeHash)
 
-void UWBP_Option_ModMenu_ModList_C::AnmEvent_Unhover()
+void UWBP_Option_ModMenu_ModList_C::GetUniqueId(struct FPalUIModUniqueId* ModUniqueId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_ModList_C", "AnmEvent_Unhover");
+		Func = Class->GetFunction("WBP_Option_ModMenu_ModList_C", "GetUniqueId");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Option_ModMenu_ModList_C_GetUniqueId Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ModUniqueId != nullptr)
+		*ModUniqueId = std::move(Parms.ModUniqueId);
 }
 
 
-// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.GetModData
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FPalUIModDisplayData*            DisplayData                                            (Parm, OutParm)
+
+void UWBP_Option_ModMenu_ModList_C::GetModData(struct FPalUIModDisplayData* DisplayData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_ModMenu_ModList_C", "GetModData");
+
+	Params::WBP_Option_ModMenu_ModList_C_GetModData Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (DisplayData != nullptr)
+		*DisplayData = std::move(Parms.DisplayData);
+}
+
+
+// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.ExecuteUbergraph_WBP_Option_ModMenu_ModList
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Option_ModMenu_ModList_C::ExecuteUbergraph_WBP_Option_ModMenu_ModList(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_ModMenu_ModList_C", "ExecuteUbergraph_WBP_Option_ModMenu_ModList");
+
+	Params::WBP_Option_ModMenu_ModList_C_ExecuteUbergraph_WBP_Option_ModMenu_ModList Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Option_ModMenu_ModList_C::BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Option_ModMenu_ModList_C::BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_ModList_C", "BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Option_ModMenu_ModList_C", "BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_Option_ModMenu_ModList_C_BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_Option_ModMenu_ModList_C_BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -85,19 +141,19 @@ void UWBP_Option_ModMenu_ModList_C::BndEvt__WBP_Option_ModMenu_ModList_WBP_PalIn
 }
 
 
-// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Option_ModMenu_ModList_C::BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Option_ModMenu_ModList_C::BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_ModList_C", "BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Option_ModMenu_ModList_C", "BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_Option_ModMenu_ModList_C_BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_Option_ModMenu_ModList_C_BndEvt__WBP_Option_ModMenu_ModList_WBP_PalInvisibleButton_Check_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -105,87 +161,31 @@ void UWBP_Option_ModMenu_ModList_C::BndEvt__WBP_Option_ModMenu_ModList_WBP_PalIn
 }
 
 
-// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.ExecuteUbergraph_WBP_Option_ModMenu_ModList
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.AnmEvent_Unhover
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Option_ModMenu_ModList_C::ExecuteUbergraph_WBP_Option_ModMenu_ModList(int32 EntryPoint)
+void UWBP_Option_ModMenu_ModList_C::AnmEvent_Unhover()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_ModList_C", "ExecuteUbergraph_WBP_Option_ModMenu_ModList");
+		Func = Class->GetFunction("WBP_Option_ModMenu_ModList_C", "AnmEvent_Unhover");
 
-	Params::WBP_Option_ModMenu_ModList_C_ExecuteUbergraph_WBP_Option_ModMenu_ModList Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.GetModData
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FPalUIModDisplayData*            DisplayData                                            (Parm, OutParm)
+// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.AnmEvent_Hover
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Option_ModMenu_ModList_C::GetModData(struct FPalUIModDisplayData* DisplayData)
+void UWBP_Option_ModMenu_ModList_C::AnmEvent_Hover()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_ModList_C", "GetModData");
+		Func = Class->GetFunction("WBP_Option_ModMenu_ModList_C", "AnmEvent_Hover");
 
-	Params::WBP_Option_ModMenu_ModList_C_GetModData Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (DisplayData != nullptr)
-		*DisplayData = std::move(Parms.DisplayData);
-}
-
-
-// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.GetUniqueId
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FPalUIModUniqueId*               ModUniqueId                                            (Parm, OutParm, HasGetValueTypeHash)
-
-void UWBP_Option_ModMenu_ModList_C::GetUniqueId(struct FPalUIModUniqueId* ModUniqueId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_ModList_C", "GetUniqueId");
-
-	Params::WBP_Option_ModMenu_ModList_C_GetUniqueId Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (ModUniqueId != nullptr)
-		*ModUniqueId = std::move(Parms.ModUniqueId);
-}
-
-
-// Function WBP_Option_ModMenu_ModList.WBP_Option_ModMenu_ModList_C.SetModData
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalUIModDisplayData&      ModDisplayData                                         (BlueprintVisible, BlueprintReadOnly, Parm)
-// const struct FPalUIModUniqueId&         UniqueId                                               (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void UWBP_Option_ModMenu_ModList_C::SetModData(const struct FPalUIModDisplayData& ModDisplayData, const struct FPalUIModUniqueId& UniqueId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_ModMenu_ModList_C", "SetModData");
-
-	Params::WBP_Option_ModMenu_ModList_C_SetModData Parms{};
-
-	Parms.ModDisplayData = std::move(ModDisplayData);
-	Parms.UniqueId = std::move(UniqueId);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

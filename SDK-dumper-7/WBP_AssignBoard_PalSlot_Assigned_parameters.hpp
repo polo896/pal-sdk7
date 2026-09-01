@@ -17,14 +17,14 @@
 namespace SDK::Params
 {
 
-// Function WBP_AssignBoard_PalSlot_Assigned.WBP_AssignBoard_PalSlot_Assigned_C.ExecuteUbergraph_WBP_AssignBoard_PalSlot_Assigned
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_AssignBoard_PalSlot_Assigned_C_ExecuteUbergraph_WBP_AssignBoard_PalSlot_Assigned final
+// Function WBP_AssignBoard_PalSlot_Assigned.WBP_AssignBoard_PalSlot_Assigned_C.SetSuitability
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_AssignBoard_PalSlot_Assigned_C_SetSuitability final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalWorkSuitability                           Suitability;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_AssignBoard_PalSlot_Assigned_C_ExecuteUbergraph_WBP_AssignBoard_PalSlot_Assigned;
+DUMPER7_ASSERTS_WBP_AssignBoard_PalSlot_Assigned_C_SetSuitability;
 
 // Function WBP_AssignBoard_PalSlot_Assigned.WBP_AssignBoard_PalSlot_Assigned_C.SetIndividualParameter
 // 0x0020 (0x0020 - 0x0000)
@@ -44,14 +44,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_AssignBoard_PalSlot_Assigned_C_SetIndividualParameter;
 
-// Function WBP_AssignBoard_PalSlot_Assigned.WBP_AssignBoard_PalSlot_Assigned_C.SetSuitability
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_AssignBoard_PalSlot_Assigned_C_SetSuitability final
+// Function WBP_AssignBoard_PalSlot_Assigned.WBP_AssignBoard_PalSlot_Assigned_C.ExecuteUbergraph_WBP_AssignBoard_PalSlot_Assigned
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_AssignBoard_PalSlot_Assigned_C_ExecuteUbergraph_WBP_AssignBoard_PalSlot_Assigned final
 {
 public:
-	EPalWorkSuitability                           Suitability;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_AssignBoard_PalSlot_Assigned_C_SetSuitability;
+DUMPER7_ASSERTS_WBP_AssignBoard_PalSlot_Assigned_C_ExecuteUbergraph_WBP_AssignBoard_PalSlot_Assigned;
 
 }
 

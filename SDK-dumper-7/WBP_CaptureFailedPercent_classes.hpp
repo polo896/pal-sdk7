@@ -37,12 +37,12 @@ public:
 	double                                        NowDisplayPercent;                                 // 0x04B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void ExecuteUbergraph_WBP_CaptureFailedPercent(int32 EntryPoint);
-	void NotifyClearSelf();
-	void Set_Percent(double Percent);
-	void Setup(double DisplayPercent);
 	void UpdatePercent();
+	void Setup(double DisplayPercent);
+	void Set_Percent(double Percent);
+	void NotifyClearSelf();
+	void ExecuteUbergraph_WBP_CaptureFailedPercent(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

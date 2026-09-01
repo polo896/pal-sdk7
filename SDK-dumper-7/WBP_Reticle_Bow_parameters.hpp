@@ -16,6 +16,16 @@
 namespace SDK::Params
 {
 
+// Function WBP_Reticle_Bow.WBP_Reticle_Bow_C.OnChangeState_Event
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_Reticle_Bow_C_OnChangeState_Event final
+{
+public:
+	bool                                          IsAim;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsShoot;                                           // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Reticle_Bow_C_OnChangeState_Event;
+
 // Function WBP_Reticle_Bow.WBP_Reticle_Bow_C.ExecuteUbergraph_WBP_Reticle_Bow
 // 0x0040 (0x0040 - 0x0000)
 struct WBP_Reticle_Bow_C_ExecuteUbergraph_WBP_Reticle_Bow final
@@ -38,16 +48,6 @@ public:
 	class UPalShooterComponent*                   CallFunc_GetComponentByClass_ReturnValue;          // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Reticle_Bow_C_ExecuteUbergraph_WBP_Reticle_Bow;
-
-// Function WBP_Reticle_Bow.WBP_Reticle_Bow_C.OnChangeState_Event
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_Reticle_Bow_C_OnChangeState_Event final
-{
-public:
-	bool                                          IsAim;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsShoot;                                           // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Reticle_Bow_C_OnChangeState_Event;
 
 }
 

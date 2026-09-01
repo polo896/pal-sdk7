@@ -135,7 +135,7 @@ struct FMovieSceneBoolPropertySectionTemplate : public FMovieScenePropertySectio
 
 struct FMovieSceneCVarOverrides
 {
-    TMap<class FString, class FString> ValuesByCVar;                                  // 0x0000 (size: 0x50)
+    TMap<FString, FString> ValuesByCVar;                                              // 0x0000 (size: 0x50)
 
 }; // Size: 0x50
 
@@ -542,7 +542,7 @@ class UMovieScene3DConstraintSection : public UMovieSceneSection
 
 class UMovieScene3DConstraintTrack : public UMovieSceneTrack
 {
-    TArray<class UMovieSceneSection*> ConstraintSections;                             // 0x0098 (size: 0x10)
+    TArray<UMovieSceneSection*> ConstraintSections;                                   // 0x0098 (size: 0x10)
 
 }; // Size: 0xA8
 
@@ -625,11 +625,11 @@ class UMovieSceneAudioSection : public UMovieSceneSection
     float AudioVolume;                                                                // 0x0108 (size: 0x4)
     FMovieSceneFloatChannel SoundVolume;                                              // 0x0110 (size: 0x110)
     FMovieSceneFloatChannel PitchMultiplier;                                          // 0x0220 (size: 0x110)
-    TMap<class FName, class FMovieSceneFloatChannel> Inputs_Float;                    // 0x0330 (size: 0x50)
-    TMap<class FName, class FMovieSceneStringChannel> Inputs_String;                  // 0x0380 (size: 0x50)
-    TMap<class FName, class FMovieSceneBoolChannel> Inputs_Bool;                      // 0x03D0 (size: 0x50)
-    TMap<class FName, class FMovieSceneIntegerChannel> Inputs_Int;                    // 0x0420 (size: 0x50)
-    TMap<class FName, class FMovieSceneAudioTriggerChannel> Inputs_Trigger;           // 0x0470 (size: 0x50)
+    TMap<FName, FMovieSceneFloatChannel> Inputs_Float;                                // 0x0330 (size: 0x50)
+    TMap<FName, FMovieSceneStringChannel> Inputs_String;                              // 0x0380 (size: 0x50)
+    TMap<FName, FMovieSceneBoolChannel> Inputs_Bool;                                  // 0x03D0 (size: 0x50)
+    TMap<FName, FMovieSceneIntegerChannel> Inputs_Int;                                // 0x0420 (size: 0x50)
+    TMap<FName, FMovieSceneAudioTriggerChannel> Inputs_Trigger;                       // 0x0470 (size: 0x50)
     FMovieSceneActorReferenceData AttachActorData;                                    // 0x04C0 (size: 0x120)
     bool bLooping;                                                                    // 0x05E0 (size: 0x1)
     bool bSuppressSubtitles;                                                          // 0x05E1 (size: 0x1)
@@ -650,7 +650,7 @@ class UMovieSceneAudioSection : public UMovieSceneSection
 
 class UMovieSceneAudioTrack : public UMovieSceneNameableTrack
 {
-    TArray<class UMovieSceneSection*> AudioSections;                                  // 0x00A0 (size: 0x10)
+    TArray<UMovieSceneSection*> AudioSections;                                        // 0x00A0 (size: 0x10)
 
 }; // Size: 0xB0
 
@@ -696,7 +696,7 @@ class UMovieSceneCVarSection : public UMovieSceneSection
 
 class UMovieSceneCVarTrack : public UMovieSceneNameableTrack
 {
-    TArray<class UMovieSceneSection*> Sections;                                       // 0x0098 (size: 0x10)
+    TArray<UMovieSceneSection*> Sections;                                             // 0x0098 (size: 0x10)
 
 }; // Size: 0xA8
 
@@ -719,7 +719,7 @@ class UMovieSceneCameraCutSection : public UMovieSceneSection
 class UMovieSceneCameraCutTrack : public UMovieSceneNameableTrack
 {
     bool bCanBlend;                                                                   // 0x0098 (size: 0x1)
-    TArray<class UMovieSceneSection*> Sections;                                       // 0x00A0 (size: 0x10)
+    TArray<UMovieSceneSection*> Sections;                                             // 0x00A0 (size: 0x10)
 
 }; // Size: 0xB0
 
@@ -749,7 +749,7 @@ class UMovieSceneCameraShakeSourceShakeSection : public UMovieSceneSection
 
 class UMovieSceneCameraShakeSourceShakeTrack : public UMovieSceneNameableTrack
 {
-    TArray<class UMovieSceneSection*> CameraShakeSections;                            // 0x00A0 (size: 0x10)
+    TArray<UMovieSceneSection*> CameraShakeSections;                                  // 0x00A0 (size: 0x10)
 
 }; // Size: 0xB0
 
@@ -761,13 +761,13 @@ class UMovieSceneCameraShakeSourceTriggerSection : public UMovieSceneSection
 
 class UMovieSceneCameraShakeSourceTriggerTrack : public UMovieSceneTrack
 {
-    TArray<class UMovieSceneSection*> Sections;                                       // 0x00A0 (size: 0x10)
+    TArray<UMovieSceneSection*> Sections;                                             // 0x00A0 (size: 0x10)
 
 }; // Size: 0xB0
 
 class UMovieSceneCameraShakeTrack : public UMovieSceneNameableTrack
 {
-    TArray<class UMovieSceneSection*> CameraShakeSections;                            // 0x00A0 (size: 0x10)
+    TArray<UMovieSceneSection*> CameraShakeSections;                                  // 0x00A0 (size: 0x10)
 
 }; // Size: 0xB0
 
@@ -836,7 +836,7 @@ class UMovieSceneConstraintSystem : public UMovieSceneEntitySystem
 class UMovieSceneDataLayerSection : public UMovieSceneSection
 {
     TArray<FActorDataLayer> DataLayers;                                               // 0x00F8 (size: 0x10)
-    TArray<class UDataLayerAsset*> DataLayerAssets;                                   // 0x0108 (size: 0x10)
+    TArray<UDataLayerAsset*> DataLayerAssets;                                         // 0x0108 (size: 0x10)
     EDataLayerRuntimeState DesiredState;                                              // 0x0118 (size: 0x1)
     EDataLayerRuntimeState PrerollState;                                              // 0x0119 (size: 0x1)
     bool bFlushOnUnload;                                                              // 0x011A (size: 0x1)
@@ -845,12 +845,12 @@ class UMovieSceneDataLayerSection : public UMovieSceneSection
     void SetFlushOnUnload(bool bFlushOnUnload);
     void SetDesiredState(EDataLayerRuntimeState InDesiredState);
     void SetDataLayers(const TArray<FActorDataLayer>& InDataLayers);
-    void SetDataLayerAssets(const TArray<class UDataLayerAsset*>& InDataLayerAssets);
+    void SetDataLayerAssets(const TArray<UDataLayerAsset*>& InDataLayerAssets);
     EDataLayerRuntimeState GetPrerollState();
     bool GetFlushOnUnload();
     EDataLayerRuntimeState GetDesiredState();
     TArray<FActorDataLayer> GetDataLayers();
-    TArray<class UDataLayerAsset*> GetDataLayerAssets();
+    TArray<UDataLayerAsset*> GetDataLayerAssets();
 }; // Size: 0x120
 
 class UMovieSceneDataLayerSystem : public UMovieSceneEntitySystem
@@ -859,7 +859,7 @@ class UMovieSceneDataLayerSystem : public UMovieSceneEntitySystem
 
 class UMovieSceneDataLayerTrack : public UMovieSceneNameableTrack
 {
-    TArray<class UMovieSceneSection*> Sections;                                       // 0x0098 (size: 0x10)
+    TArray<UMovieSceneSection*> Sections;                                             // 0x0098 (size: 0x10)
 
 }; // Size: 0xA8
 
@@ -954,7 +954,7 @@ class UMovieSceneEventTrack : public UMovieSceneNameableTrack
     uint8 bFireEventsWhenForwards;                                                    // 0x00A8 (size: 0x1)
     uint8 bFireEventsWhenBackwards;                                                   // 0x00A8 (size: 0x1)
     EFireEventsAtPosition EventPosition;                                              // 0x00AC (size: 0x1)
-    TArray<class UMovieSceneSection*> Sections;                                       // 0x00B0 (size: 0x10)
+    TArray<UMovieSceneSection*> Sections;                                             // 0x00B0 (size: 0x10)
 
 }; // Size: 0xC0
 
@@ -1061,7 +1061,7 @@ class UMovieSceneLevelVisibilitySystem : public UMovieSceneEntitySystem
 
 class UMovieSceneLevelVisibilityTrack : public UMovieSceneNameableTrack
 {
-    TArray<class UMovieSceneSection*> Sections;                                       // 0x0098 (size: 0x10)
+    TArray<UMovieSceneSection*> Sections;                                             // 0x0098 (size: 0x10)
 
 }; // Size: 0xA8
 
@@ -1083,7 +1083,7 @@ class UMovieSceneMaterialParameterSystem : public UMovieSceneEntitySystem
 
 class UMovieSceneMaterialTrack : public UMovieSceneNameableTrack
 {
-    TArray<class UMovieSceneSection*> Sections;                                       // 0x0098 (size: 0x10)
+    TArray<UMovieSceneSection*> Sections;                                             // 0x0098 (size: 0x10)
 
 }; // Size: 0xA8
 
@@ -1129,7 +1129,7 @@ class UMovieSceneParameterSection : public UMovieSceneSection
 
 class UMovieSceneParticleParameterTrack : public UMovieSceneNameableTrack
 {
-    TArray<class UMovieSceneSection*> Sections;                                       // 0x00A0 (size: 0x10)
+    TArray<UMovieSceneSection*> Sections;                                             // 0x00A0 (size: 0x10)
 
 }; // Size: 0xB0
 
@@ -1141,7 +1141,7 @@ class UMovieSceneParticleSection : public UMovieSceneSection
 
 class UMovieSceneParticleTrack : public UMovieSceneNameableTrack
 {
-    TArray<class UMovieSceneSection*> ParticleSections;                               // 0x00A0 (size: 0x10)
+    TArray<UMovieSceneSection*> ParticleSections;                                     // 0x00A0 (size: 0x10)
 
 }; // Size: 0xB0
 
@@ -1179,8 +1179,8 @@ class UMovieScenePreSpawnEventSystem : public UMovieSceneEventSystem
 
 class UMovieScenePredictionSystem : public UMovieSceneEntitySystem
 {
-    TArray<class UMovieSceneAsyncAction_SequencePrediction*> PendingPredictions;      // 0x00D0 (size: 0x10)
-    TArray<class UMovieSceneAsyncAction_SequencePrediction*> ProcessingPredictions;   // 0x00E0 (size: 0x10)
+    TArray<UMovieSceneAsyncAction_SequencePrediction*> PendingPredictions;            // 0x00D0 (size: 0x10)
+    TArray<UMovieSceneAsyncAction_SequencePrediction*> ProcessingPredictions;         // 0x00E0 (size: 0x10)
 
 }; // Size: 0xF0
 
@@ -1210,7 +1210,7 @@ class UMovieScenePropertyTrack : public UMovieSceneNameableTrack
 {
     class UMovieSceneSection* SectionToKey;                                           // 0x0098 (size: 0x8)
     FMovieScenePropertyBinding PropertyBinding;                                       // 0x00A0 (size: 0x14)
-    TArray<class UMovieSceneSection*> Sections;                                       // 0x00B8 (size: 0x10)
+    TArray<UMovieSceneSection*> Sections;                                             // 0x00B8 (size: 0x10)
 
 }; // Size: 0xC8
 
@@ -1244,7 +1244,7 @@ class UMovieSceneSkeletalAnimationSection : public UMovieSceneSection
 
 class UMovieSceneSkeletalAnimationTrack : public UMovieSceneNameableTrack
 {
-    TArray<class UMovieSceneSection*> AnimationSections;                              // 0x00A0 (size: 0x10)
+    TArray<UMovieSceneSection*> AnimationSections;                                    // 0x00A0 (size: 0x10)
     bool bUseLegacySectionIndexBlend;                                                 // 0x00B0 (size: 0x1)
     FMovieSceneSkeletalAnimRootMotionTrackParams RootMotionParams;                    // 0x00B8 (size: 0x30)
     bool bBlendFirstChildOfRoot;                                                      // 0x00E8 (size: 0x1)

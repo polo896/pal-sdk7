@@ -32,16 +32,16 @@ public:
 	double                                        DestroyDelay;                                      // 0x0480(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnSetConcreteModel(class UPalMapObjectConcreteModelBase* ConcreteModel);
-	void ExecuteUbergraph_BP_MapObject_TreasureBox_ElementalLockBase(int32 EntryPoint);
-	void OnFinishOpenVisual();
-	void OnFinishUnlockPerformance();
-	void OnNotifiedStartOpen();
-	void OnProceedUnlockPerformance();
-	void OnStartUnlockPerformance();
-	void ReceiveBeginPlay();
-	void TriggerOpen();
 	void TriggerUnlockElemental();
+	void TriggerOpen();
+	void ReceiveBeginPlay();
+	void OnStartUnlockPerformance();
+	void OnProceedUnlockPerformance();
+	void OnNotifiedStartOpen();
+	void OnFinishUnlockPerformance();
+	void OnFinishOpenVisual();
+	void ExecuteUbergraph_BP_MapObject_TreasureBox_ElementalLockBase(int32 EntryPoint);
+	void BP_OnSetConcreteModel(class UPalMapObjectConcreteModelBase* ConcreteModel);
 
 public:
 	static class UClass* StaticClass()

@@ -13,9 +13,9 @@ class UBP_ActionSleep_C : public UPalAction_Sleep
     class UPalFacialComponent* FacialComp;                                            // 0x0198 (size: 0x8)
     bool StartMontageNotifyExist;                                                     // 0x01A0 (size: 0x1)
     bool LoopMontageNotifyExist;                                                      // 0x01A1 (size: 0x1)
-    TSoftObjectPtr<UAkAudioEvent> SmallSleepSound;                                    // 0x01A8 (size: 0x30)
-    TSoftObjectPtr<UAkAudioEvent> MiddleSleepSound;                                   // 0x01D8 (size: 0x30)
-    TSoftObjectPtr<UAkAudioEvent> BigSleepSound;                                      // 0x0208 (size: 0x30)
+    TSoftObjectPtr<class UAkAudioEvent> SmallSleepSound;                              // 0x01A8 (size: 0x30)
+    TSoftObjectPtr<class UAkAudioEvent> MiddleSleepSound;                             // 0x01D8 (size: 0x30)
+    TSoftObjectPtr<class UAkAudioEvent> BigSleepSound;                                // 0x0208 (size: 0x30)
     bool bFadingBySleepLoop;                                                          // 0x0238 (size: 0x1)
 
     void UnregisterSleepLoopEffect(class APalCharacter* Character);

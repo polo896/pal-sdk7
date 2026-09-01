@@ -48,18 +48,18 @@ public:
 	class UPalUIMapObjectProductItemStatusIndicatorModel* Product_Item_Model;                        // 0x0538(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void Destruct();
-	void DisplayCheck();
-	void ExecuteUbergraph_WBP_PalWorkProduct(int32 EntryPoint);
-	void GetMapObjectLocation(struct FVector* Location);
-	void On_Updated_Worker_Pal(class UPalWorkBase* Work);
-	void OnSetup();
-	void OnUpdateContainer(class UPalItemContainer* Container);
-	void OnUpdateProductIdDelegate_イベント(class UPalUIMapObjectProductItemStatusIndicatorModel* UIModel);
-	void OnUpdateProgress(class UPalWorkProgress* Progress);
-	void RefreshProductDisplay();
 	void Setup();
+	void RefreshProductDisplay();
+	void OnUpdateProgress(class UPalWorkProgress* Progress);
+	void OnUpdateProductIdDelegate_イベント(class UPalUIMapObjectProductItemStatusIndicatorModel* UIModel);
+	void OnUpdateContainer(class UPalItemContainer* Container);
+	void OnSetup();
+	void On_Updated_Worker_Pal(class UPalWorkBase* Work);
+	void GetMapObjectLocation(struct FVector* Location);
+	void ExecuteUbergraph_WBP_PalWorkProduct(int32 EntryPoint);
+	void DisplayCheck();
+	void Destruct();
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

@@ -27,9 +27,9 @@ public:
 	class UWBP_IngameMenu_RepairAll_C*            WBP_IngameMenu_RepairAll;                          // 0x0488(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_RepairAllWindow_WBP_IngameMenu_RepairAll_K2Node_ComponentBoundEvent_0_OnClickedButton__DelegateSignature(bool IsYes);
-	void ExecuteUbergraph_WBP_RepairAllWindow(int32 EntryPoint);
 	void OnSetup();
+	void ExecuteUbergraph_WBP_RepairAllWindow(int32 EntryPoint);
+	void BndEvt__WBP_RepairAllWindow_WBP_IngameMenu_RepairAll_K2Node_ComponentBoundEvent_0_OnClickedButton__DelegateSignature(bool IsYes);
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

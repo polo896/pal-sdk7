@@ -27,11 +27,11 @@ public:
 	class UCanvasPanel*                           WorldHUDCanvas;                                    // 0x03D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void AddHUD(class UPalUserWidget* Widget, const int32 ZOrder);
-	void AddWorldHUD(class UPalUserWidgetWorldHUD* Widget);
-	void ExecuteUbergraph_WBP_PalHUDLayout(int32 EntryPoint);
-	void RemoveHUD(class UPalUserWidget* Widget);
 	void RemoveWorldHUD(class UPalUserWidgetWorldHUD* Widget);
+	void RemoveHUD(class UPalUserWidget* Widget);
+	void ExecuteUbergraph_WBP_PalHUDLayout(int32 EntryPoint);
+	void AddWorldHUD(class UPalUserWidgetWorldHUD* Widget);
+	void AddHUD(class UPalUserWidget* Widget, const int32 ZOrder);
 
 public:
 	static class UClass* StaticClass()

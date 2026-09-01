@@ -49,19 +49,19 @@ public:
 	struct FDataTableRowHandle                    UnBlockPlayerDialogMsgID;                          // 0x03A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void ExecuteUbergraph_WBP_MenuESCPlayerBlockListItem(int32 EntryPoint);
-	void GetDisplayInfo(struct FPalUIGuildMemberDisplayInfo* DisplayInfo);
-	void GetFocusTarget(class UWidget** TargetWidget);
-	void On_Right_Clicked_Internal();
-	void OnClosePlayerUnBlockDialog(bool bResult);
-	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	void OpenPlayerBlockDialog();
-	void SetPlayerName(const class FString& PlayerName);
-	void Setup(const class FString& PlayerName, const class FString& PlayerUId, const class FString& UserId, const class FString& NickName, EPalPlayerPlatform PlayerPlatform, bool bMute);
 	void カスタムイベント(bool bResult);
+	void Setup(const class FString& PlayerName, const class FString& PlayerUId, const class FString& UserId, const class FString& NickName, EPalPlayerPlatform PlayerPlatform, bool bMute);
+	void SetPlayerName(const class FString& PlayerName);
+	void OpenPlayerBlockDialog();
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnClosePlayerUnBlockDialog(bool bResult);
+	void On_Right_Clicked_Internal();
+	void GetFocusTarget(class UWidget** TargetWidget);
+	void GetDisplayInfo(struct FPalUIGuildMemberDisplayInfo* DisplayInfo);
+	void ExecuteUbergraph_WBP_MenuESCPlayerBlockListItem(int32 EntryPoint);
+	void BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Guild_MemberList_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 
 public:
 	static class UClass* StaticClass()

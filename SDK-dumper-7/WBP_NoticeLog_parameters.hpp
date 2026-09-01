@@ -25,6 +25,51 @@ public:
 };
 DUMPER7_ASSERTS_WBP_NoticeLog_C_Close_Internal;
 
+// Function WBP_NoticeLog.WBP_NoticeLog_C.SetLogText
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_NoticeLog_C_SetLogText final
+{
+public:
+	class FText                                   InText;                                            // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_NoticeLog_C_SetLogText;
+
+// Function WBP_NoticeLog.WBP_NoticeLog_C.SetAdditionalData
+// 0x0070 (0x0070 - 0x0000)
+struct WBP_NoticeLog_C_SetAdditionalData final
+{
+public:
+	struct FPalLogAdditionalData                  inAdditionalData;                                  // 0x0000(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_NoticeLog_C_SetAdditionalData;
+
+// Function WBP_NoticeLog.WBP_NoticeLog_C.RequestLoadIconTexture
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_NoticeLog_C_RequestLoadIconTexture final
+{
+public:
+	TSoftObjectPtr<class UTexture2D>              softTexturePtr;                                    // 0x0000(0x0030)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, UObjectWrapper, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NoticeLog_C_RequestLoadIconTexture;
+
+// Function WBP_NoticeLog.WBP_NoticeLog_C.Open_Internal
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_NoticeLog_C_Open_Internal final
+{
+public:
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NoticeLog_C_Open_Internal;
+
+// Function WBP_NoticeLog.WBP_NoticeLog_C.OnLoaded_19AB6838498B19451FE6AEAD31DEA803
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_NoticeLog_C_OnLoaded_19AB6838498B19451FE6AEAD31DEA803 final
+{
+public:
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_NoticeLog_C_OnLoaded_19AB6838498B19451FE6AEAD31DEA803;
+
 // Function WBP_NoticeLog.WBP_NoticeLog_C.ExecuteUbergraph_WBP_NoticeLog
 // 0x0150 (0x0150 - 0x0000)
 struct WBP_NoticeLog_C_ExecuteUbergraph_WBP_NoticeLog final
@@ -52,51 +97,6 @@ public:
 	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_2;            // 0x0140(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_NoticeLog_C_ExecuteUbergraph_WBP_NoticeLog;
-
-// Function WBP_NoticeLog.WBP_NoticeLog_C.OnLoaded_19AB6838498B19451FE6AEAD31DEA803
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_NoticeLog_C_OnLoaded_19AB6838498B19451FE6AEAD31DEA803 final
-{
-public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_NoticeLog_C_OnLoaded_19AB6838498B19451FE6AEAD31DEA803;
-
-// Function WBP_NoticeLog.WBP_NoticeLog_C.Open_Internal
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_NoticeLog_C_Open_Internal final
-{
-public:
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_NoticeLog_C_Open_Internal;
-
-// Function WBP_NoticeLog.WBP_NoticeLog_C.RequestLoadIconTexture
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_NoticeLog_C_RequestLoadIconTexture final
-{
-public:
-	TSoftObjectPtr<class UTexture2D>              softTexturePtr;                                    // 0x0000(0x0030)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, UObjectWrapper, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_NoticeLog_C_RequestLoadIconTexture;
-
-// Function WBP_NoticeLog.WBP_NoticeLog_C.SetAdditionalData
-// 0x0070 (0x0070 - 0x0000)
-struct WBP_NoticeLog_C_SetAdditionalData final
-{
-public:
-	struct FPalLogAdditionalData                  inAdditionalData;                                  // 0x0000(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_NoticeLog_C_SetAdditionalData;
-
-// Function WBP_NoticeLog.WBP_NoticeLog_C.SetLogText
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_NoticeLog_C_SetLogText final
-{
-public:
-	class FText                                   InText;                                            // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_NoticeLog_C_SetLogText;
 
 }
 

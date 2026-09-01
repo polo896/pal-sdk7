@@ -14,7 +14,7 @@ class UWBP_Quest_ForDisplay_C : public UPalUserWidgetOverlayUI
     FPalDataTableRowName_UIInputAction NextTabAction;                                 // 0x04B0 (size: 0x8)
     FPalDataTableRowName_UIInputAction PrevTabAction;                                 // 0x04B8 (size: 0x8)
 
-    void GetTopMainQuest(TArray<class UPalQuestData*>& QuestDataArray, class UPalQuestData*& DisplayQuest);
+    void GetTopMainQuest(TArray<UPalQuestData*>& QuestDataArray, class UPalQuestData*& DisplayQuest);
     void OnInputAction_PrevTab();
     void OnInputAction_NextTab();
     void OnInputAction_ShowMap();

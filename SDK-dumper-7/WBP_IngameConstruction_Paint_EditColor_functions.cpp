@@ -17,160 +17,107 @@
 namespace SDK
 {
 
-// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.ActivateResetButton
+// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.Setup
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FLinearColor&              CurrentColor                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<struct FLinearColor>&            InPresetColors                                         (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool                                    bShowResetButton                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameConstruction_Paint_EditColor_C::Setup(const struct FLinearColor& CurrentColor, TArray<struct FLinearColor>& InPresetColors, bool bShowResetButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "Setup");
+
+	Params::WBP_IngameConstruction_Paint_EditColor_C_Setup Parms{};
+
+	Parms.CurrentColor = std::move(CurrentColor);
+	Parms.InPresetColors = std::move(InPresetColors);
+	Parms.bShowResetButton = bShowResetButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	InPresetColors = std::move(Parms.InPresetColors);
+}
+
+
+// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.ReflectEditColor
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FLinearColor&              EditColor                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bShouldApplySider                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameConstruction_Paint_EditColor_C::ReflectEditColor(const struct FLinearColor& EditColor, bool bShouldApplySider)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "ReflectEditColor");
+
+	Params::WBP_IngameConstruction_Paint_EditColor_C_ReflectEditColor Parms{};
+
+	Parms.EditColor = std::move(EditColor);
+	Parms.bShouldApplySider = bShouldApplySider;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.ReflectColorFromString
 // (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameConstruction_Paint_EditColor_C::ActivateResetButton()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "ActivateResetButton");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.BndEvt__WBP_IngameConstruction_Paint_EditColor_PalEditableTextBox_ColorCode_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature
-// (HasOutParams, BlueprintEvent)
 // Parameters:
-// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// ETextCommit                             CommitMethod                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    HexString                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void UWBP_IngameConstruction_Paint_EditColor_C::BndEvt__WBP_IngameConstruction_Paint_EditColor_PalEditableTextBox_ColorCode_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod)
+void UWBP_IngameConstruction_Paint_EditColor_C::ReflectColorFromString(const class FString& HexString)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "BndEvt__WBP_IngameConstruction_Paint_EditColor_PalEditableTextBox_ColorCode_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature");
+		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "ReflectColorFromString");
 
-	Params::WBP_IngameConstruction_Paint_EditColor_C_BndEvt__WBP_IngameConstruction_Paint_EditColor_PalEditableTextBox_ColorCode_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature Parms{};
+	Params::WBP_IngameConstruction_Paint_EditColor_C_ReflectColorFromString Parms{};
 
-	Parms.Text = std::move(Text);
-	Parms.CommitMethod = CommitMethod;
+	Parms.HexString = std::move(HexString);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_ColorSlider_K2Node_ComponentBoundEvent_3_OnColorChanged__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.OnClickPresetColorButton
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FLinearColor&              HSV                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              Color                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameConstruction_Paint_EditColor_C::BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_ColorSlider_K2Node_ComponentBoundEvent_3_OnColorChanged__DelegateSignature(const struct FLinearColor& HSV)
+void UWBP_IngameConstruction_Paint_EditColor_C::OnClickPresetColorButton(const struct FLinearColor& Color)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_ColorSlider_K2Node_ComponentBoundEvent_3_OnColorChanged__DelegateSignature");
+		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "OnClickPresetColorButton");
 
-	Params::WBP_IngameConstruction_Paint_EditColor_C_BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_ColorSlider_K2Node_ComponentBoundEvent_3_OnColorChanged__DelegateSignature Parms{};
+	Params::WBP_IngameConstruction_Paint_EditColor_C_OnClickPresetColorButton Parms{};
 
-	Parms.HSV = std::move(HSV);
+	Parms.Color = std::move(Color);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_CommonButton_OK_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_IngameConstruction_Paint_EditColor_C::BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_CommonButton_OK_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_CommonButton_OK_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_CommonButton_Reset_K2Node_ComponentBoundEvent_6_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_IngameConstruction_Paint_EditColor_C::BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_CommonButton_Reset_K2Node_ComponentBoundEvent_6_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_CommonButton_Reset_K2Node_ComponentBoundEvent_6_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_IngameConstruction_Paint_EditColor_C::BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_PalInvisibleButton_CopyCode_K2Node_ComponentBoundEvent_4_OnButtonReleased__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.GetColorPresetWidgets
+// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// TArray<class UWBP_IngameConstruction_Paint_ColorPreset_C*>ReturnValue                                            (Parm, OutParm, ReturnParm, ContainsInstancedReference)
 
-void UWBP_IngameConstruction_Paint_EditColor_C::BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_PalInvisibleButton_CopyCode_K2Node_ComponentBoundEvent_4_OnButtonReleased__DelegateSignature(class UCommonButtonBase* Button)
+TArray<class UWBP_IngameConstruction_Paint_ColorPreset_C*> UWBP_IngameConstruction_Paint_EditColor_C::GetColorPresetWidgets()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_PalInvisibleButton_CopyCode_K2Node_ComponentBoundEvent_4_OnButtonReleased__DelegateSignature");
+		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "GetColorPresetWidgets");
 
-	Params::WBP_IngameConstruction_Paint_EditColor_C_BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_PalInvisibleButton_CopyCode_K2Node_ComponentBoundEvent_4_OnButtonReleased__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_PalInvisibleButton_PasteCode_K2Node_ComponentBoundEvent_5_OnButtonReleased__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameConstruction_Paint_EditColor_C::BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_PalInvisibleButton_PasteCode_K2Node_ComponentBoundEvent_5_OnButtonReleased__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_PalInvisibleButton_PasteCode_K2Node_ComponentBoundEvent_5_OnButtonReleased__DelegateSignature");
-
-	Params::WBP_IngameConstruction_Paint_EditColor_C_BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_PalInvisibleButton_PasteCode_K2Node_ComponentBoundEvent_5_OnButtonReleased__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.DoCustomNavigation_CloseButton
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-class UWidget* UWBP_IngameConstruction_Paint_EditColor_C::DoCustomNavigation_CloseButton(EUINavigation Navigation_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "DoCustomNavigation_CloseButton");
-
-	Params::WBP_IngameConstruction_Paint_EditColor_C_DoCustomNavigation_CloseButton Parms{};
-
-	Parms.Navigation_0 = Navigation_0;
+	Params::WBP_IngameConstruction_Paint_EditColor_C_GetColorPresetWidgets Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -178,20 +125,40 @@ class UWidget* UWBP_IngameConstruction_Paint_EditColor_C::DoCustomNavigation_Clo
 }
 
 
-// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.DoCustomNavigation_To_SliderV
+// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.ExecuteUbergraph_WBP_IngameConstruction_Paint_EditColor
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameConstruction_Paint_EditColor_C::ExecuteUbergraph_WBP_IngameConstruction_Paint_EditColor(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "ExecuteUbergraph_WBP_IngameConstruction_Paint_EditColor");
+
+	Params::WBP_IngameConstruction_Paint_EditColor_C_ExecuteUbergraph_WBP_IngameConstruction_Paint_EditColor Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.DoCustomNavigation_ToCopyButton
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-class UWidget* UWBP_IngameConstruction_Paint_EditColor_C::DoCustomNavigation_To_SliderV(EUINavigation Navigation_0)
+class UWidget* UWBP_IngameConstruction_Paint_EditColor_C::DoCustomNavigation_ToCopyButton(EUINavigation Navigation_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "DoCustomNavigation_To_SliderV");
+		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "DoCustomNavigation_ToCopyButton");
 
-	Params::WBP_IngameConstruction_Paint_EditColor_C_DoCustomNavigation_To_SliderV Parms{};
+	Params::WBP_IngameConstruction_Paint_EditColor_C_DoCustomNavigation_ToCopyButton Parms{};
 
 	Parms.Navigation_0 = Navigation_0;
 
@@ -224,20 +191,20 @@ class UWidget* UWBP_IngameConstruction_Paint_EditColor_C::DoCustomNavigation_To_
 }
 
 
-// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.DoCustomNavigation_ToCopyButton
+// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.DoCustomNavigation_To_SliderV
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-class UWidget* UWBP_IngameConstruction_Paint_EditColor_C::DoCustomNavigation_ToCopyButton(EUINavigation Navigation_0)
+class UWidget* UWBP_IngameConstruction_Paint_EditColor_C::DoCustomNavigation_To_SliderV(EUINavigation Navigation_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "DoCustomNavigation_ToCopyButton");
+		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "DoCustomNavigation_To_SliderV");
 
-	Params::WBP_IngameConstruction_Paint_EditColor_C_DoCustomNavigation_ToCopyButton Parms{};
+	Params::WBP_IngameConstruction_Paint_EditColor_C_DoCustomNavigation_To_SliderV Parms{};
 
 	Parms.Navigation_0 = Navigation_0;
 
@@ -247,39 +214,22 @@ class UWidget* UWBP_IngameConstruction_Paint_EditColor_C::DoCustomNavigation_ToC
 }
 
 
-// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.ExecuteUbergraph_WBP_IngameConstruction_Paint_EditColor
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.DoCustomNavigation_CloseButton
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameConstruction_Paint_EditColor_C::ExecuteUbergraph_WBP_IngameConstruction_Paint_EditColor(int32 EntryPoint)
+class UWidget* UWBP_IngameConstruction_Paint_EditColor_C::DoCustomNavigation_CloseButton(EUINavigation Navigation_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "ExecuteUbergraph_WBP_IngameConstruction_Paint_EditColor");
+		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "DoCustomNavigation_CloseButton");
 
-	Params::WBP_IngameConstruction_Paint_EditColor_C_ExecuteUbergraph_WBP_IngameConstruction_Paint_EditColor Parms{};
+	Params::WBP_IngameConstruction_Paint_EditColor_C_DoCustomNavigation_CloseButton Parms{};
 
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.GetColorPresetWidgets
-// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// TArray<class UWBP_IngameConstruction_Paint_ColorPreset_C*>ReturnValue                                            (Parm, OutParm, ReturnParm, ContainsInstancedReference)
-
-TArray<class UWBP_IngameConstruction_Paint_ColorPreset_C*> UWBP_IngameConstruction_Paint_EditColor_C::GetColorPresetWidgets()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "GetColorPresetWidgets");
-
-	Params::WBP_IngameConstruction_Paint_EditColor_C_GetColorPresetWidgets Parms{};
+	Parms.Navigation_0 = Navigation_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -287,91 +237,141 @@ TArray<class UWBP_IngameConstruction_Paint_ColorPreset_C*> UWBP_IngameConstructi
 }
 
 
-// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.OnClickPresetColorButton
+// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_PalInvisibleButton_PasteCode_K2Node_ComponentBoundEvent_5_OnButtonReleased__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameConstruction_Paint_EditColor_C::BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_PalInvisibleButton_PasteCode_K2Node_ComponentBoundEvent_5_OnButtonReleased__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_PalInvisibleButton_PasteCode_K2Node_ComponentBoundEvent_5_OnButtonReleased__DelegateSignature");
+
+	Params::WBP_IngameConstruction_Paint_EditColor_C_BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_PalInvisibleButton_PasteCode_K2Node_ComponentBoundEvent_5_OnButtonReleased__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_PalInvisibleButton_CopyCode_K2Node_ComponentBoundEvent_4_OnButtonReleased__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameConstruction_Paint_EditColor_C::BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_PalInvisibleButton_CopyCode_K2Node_ComponentBoundEvent_4_OnButtonReleased__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_PalInvisibleButton_CopyCode_K2Node_ComponentBoundEvent_4_OnButtonReleased__DelegateSignature");
+
+	Params::WBP_IngameConstruction_Paint_EditColor_C_BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_PalInvisibleButton_CopyCode_K2Node_ComponentBoundEvent_4_OnButtonReleased__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_IngameConstruction_Paint_EditColor_C::BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_CommonButton_Reset_K2Node_ComponentBoundEvent_6_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_IngameConstruction_Paint_EditColor_C::BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_CommonButton_Reset_K2Node_ComponentBoundEvent_6_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_CommonButton_Reset_K2Node_ComponentBoundEvent_6_OnClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_CommonButton_OK_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_IngameConstruction_Paint_EditColor_C::BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_CommonButton_OK_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_CommonButton_OK_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_ColorSlider_K2Node_ComponentBoundEvent_3_OnColorChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// const struct FLinearColor&              HSV                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameConstruction_Paint_EditColor_C::BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_ColorSlider_K2Node_ComponentBoundEvent_3_OnColorChanged__DelegateSignature(const struct FLinearColor& HSV)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_ColorSlider_K2Node_ComponentBoundEvent_3_OnColorChanged__DelegateSignature");
+
+	Params::WBP_IngameConstruction_Paint_EditColor_C_BndEvt__WBP_IngameConstruction_Paint_EditColor_WBP_ColorSlider_K2Node_ComponentBoundEvent_3_OnColorChanged__DelegateSignature Parms{};
+
+	Parms.HSV = std::move(HSV);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.BndEvt__WBP_IngameConstruction_Paint_EditColor_PalEditableTextBox_ColorCode_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// ETextCommit                             CommitMethod                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameConstruction_Paint_EditColor_C::BndEvt__WBP_IngameConstruction_Paint_EditColor_PalEditableTextBox_ColorCode_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "BndEvt__WBP_IngameConstruction_Paint_EditColor_PalEditableTextBox_ColorCode_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature");
+
+	Params::WBP_IngameConstruction_Paint_EditColor_C_BndEvt__WBP_IngameConstruction_Paint_EditColor_PalEditableTextBox_ColorCode_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature Parms{};
+
+	Parms.Text = std::move(Text);
+	Parms.CommitMethod = CommitMethod;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.ActivateResetButton
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FLinearColor&              Color                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameConstruction_Paint_EditColor_C::OnClickPresetColorButton(const struct FLinearColor& Color)
+void UWBP_IngameConstruction_Paint_EditColor_C::ActivateResetButton()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "OnClickPresetColorButton");
+		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "ActivateResetButton");
 
-	Params::WBP_IngameConstruction_Paint_EditColor_C_OnClickPresetColorButton Parms{};
-
-	Parms.Color = std::move(Color);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.ReflectColorFromString
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FString&                    HexString                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void UWBP_IngameConstruction_Paint_EditColor_C::ReflectColorFromString(const class FString& HexString)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "ReflectColorFromString");
-
-	Params::WBP_IngameConstruction_Paint_EditColor_C_ReflectColorFromString Parms{};
-
-	Parms.HexString = std::move(HexString);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.ReflectEditColor
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FLinearColor&              EditColor                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bShouldApplySider                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameConstruction_Paint_EditColor_C::ReflectEditColor(const struct FLinearColor& EditColor, bool bShouldApplySider)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "ReflectEditColor");
-
-	Params::WBP_IngameConstruction_Paint_EditColor_C_ReflectEditColor Parms{};
-
-	Parms.EditColor = std::move(EditColor);
-	Parms.bShouldApplySider = bShouldApplySider;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameConstruction_Paint_EditColor.WBP_IngameConstruction_Paint_EditColor_C.Setup
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FLinearColor&              CurrentColor                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FLinearColor>&            InPresetColors                                         (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// bool                                    bShowResetButton                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameConstruction_Paint_EditColor_C::Setup(const struct FLinearColor& CurrentColor, TArray<struct FLinearColor>& InPresetColors, bool bShowResetButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameConstruction_Paint_EditColor_C", "Setup");
-
-	Params::WBP_IngameConstruction_Paint_EditColor_C_Setup Parms{};
-
-	Parms.CurrentColor = std::move(CurrentColor);
-	Parms.InPresetColors = std::move(InPresetColors);
-	Parms.bShowResetButton = bShowResetButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	InPresetColors = std::move(Parms.InPresetColors);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

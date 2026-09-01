@@ -28,11 +28,11 @@ public:
 	class UMaterialInstanceDynamic*               dynamicMaterial;                                   // 0x04C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_PalCommonItemIcon(int32 EntryPoint);
-	void OnEmpty();
-	void OnInitialized();
-	void OnLoaded(class UTexture2D* loadedTexture);
 	void OnStartLoad();
+	void OnLoaded(class UTexture2D* loadedTexture);
+	void OnInitialized();
+	void OnEmpty();
+	void ExecuteUbergraph_WBP_PalCommonItemIcon(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

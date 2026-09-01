@@ -37,15 +37,15 @@ public:
 	class UWBP_PalKeyGuideIcon_C*                 WBP_PalKeyGuideIcon_78;                            // 0x0508(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_86_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void Construct();
-	void ExecuteUbergraph_WBP_IngameMenu_WorkSpace_TabSet(int32 EntryPoint);
-	void GetTabWidgetByIndex(int32 Index_0, class UWBP_IngameMenu_WorkSpace_Category_C** TabWidget);
-	void OnChandeFocusIndex(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
-	void OnClickedCategoryButton(class UWBP_IngameMenu_WorkSpace_Category_C* Widget);
-	void OnInitialized();
 	void RegisterPanelWidget(class UPanelWidget** PanelWidget);
+	void OnInitialized();
+	void OnClickedCategoryButton(class UWBP_IngameMenu_WorkSpace_Category_C* Widget);
+	void OnChandeFocusIndex(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
+	void GetTabWidgetByIndex(int32 Index_0, class UWBP_IngameMenu_WorkSpace_Category_C** TabWidget);
+	void ExecuteUbergraph_WBP_IngameMenu_WorkSpace_TabSet(int32 EntryPoint);
+	void Construct();
+	void BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_86_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 
 public:
 	static class UClass* StaticClass()

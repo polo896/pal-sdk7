@@ -8,9 +8,9 @@ class ABP_UniqueSkillEffect_LegendDeer_RadiantPurge_Purge_C : public ABP_SkillEf
     class USphereComponent* Sphere;                                                   // 0x0440 (size: 0x8)
     class UNiagaraComponent* Niagara;                                                 // 0x0448 (size: 0x8)
     FTimerHandle SearchTimer;                                                         // 0x0450 (size: 0x8)
-    TArray<class AActor*> AttackedTargets;                                            // 0x0458 (size: 0x10)
+    TArray<AActor*> AttackedTargets;                                                  // 0x0458 (size: 0x10)
     float PurgeDuration;                                                              // 0x0468 (size: 0x4)
-    TMap<class AActor*, class UPrimitiveComponent*> CurrentHitableActorMap;           // 0x0470 (size: 0x50)
+    TMap<AActor*, UPrimitiveComponent*> CurrentHitableActorMap;                       // 0x0470 (size: 0x50)
     FTimerHandle ExtraTimer;                                                          // 0x04C0 (size: 0x8)
 
     void CrateFlash();

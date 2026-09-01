@@ -1,0 +1,120 @@
+---@meta
+
+---@class UWBP_IngameMenu_Chest_C : UUserWidget
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field Anm_OFF UWidgetAnimation
+---@field Anm_ON UWidgetAnimation
+---@field Canvas_Setting UCanvasPanel
+---@field Canvas_SortButton_TargetContainer UCanvasPanel
+---@field Canvas_TargetContainer UCanvasPanel
+---@field Horizontal_Text_On UHorizontalBox
+---@field Overlay_Supply_Off UOverlay
+---@field Overlay_Supply_On UOverlay
+---@field Text_TargetContainerName UBP_PalTextBlock_C
+---@field WBP_Common_Inventory UWBP_Common_Inventory_C
+---@field WBP_CommonButton_Activation_ChestSetting UWBP_CommonButton_Activation_C
+---@field WBP_InventoryEquipment_ChestBack UWBP_InventoryEquipment_InvisibleActionButton_C
+---@field WBP_InventoryEquipment_InvisibleDropButton UWBP_InventoryEquipment_InvisibleActionButton_C
+---@field WBP_Menu_btn UWBP_Menu_btn_C
+---@field WBP_PalInvisibleButton_QuickMove UWBP_PalInvisibleButton_C
+---@field WBP_PalInvisibleButton_Sort_TargetContainer UWBP_PalInvisibleButton_C
+---@field WBP_PalItemScrollList UWBP_PalItemScrollList_C
+---@field WBP_PalKeyGuideIcon UWBP_PalKeyGuideIcon_C
+---@field Model UBP_PalInventoryModel_C
+---@field OnClickedInventorySortButton FWBP_IngameMenu_Chest_COnClickedInventorySortButton
+---@field OnClickedQuickMoveButton FWBP_IngameMenu_Chest_COnClickedQuickMoveButton
+---@field OnClickedTargetContainerSortButton FWBP_IngameMenu_Chest_COnClickedTargetContainerSortButton
+---@field OnHoveredInventorySlot FWBP_IngameMenu_Chest_COnHoveredInventorySlot
+---@field OnUnhoveredInventorySlot FWBP_IngameMenu_Chest_COnUnhoveredInventorySlot
+---@field OnHoveredTargetContainerSlot FWBP_IngameMenu_Chest_COnHoveredTargetContainerSlot
+---@field OnUnhoveredTargetContainerSlot FWBP_IngameMenu_Chest_COnUnhoveredTargetContainerSlot
+---@field OnClickedCloseButton FWBP_IngameMenu_Chest_COnClickedCloseButton
+---@field OnClickedPreferenceButton FWBP_IngameMenu_Chest_COnClickedPreferenceButton
+---@field OnChestBackClicked FWBP_IngameMenu_Chest_COnChestBackClicked
+---@field TargetContainer UPalItemContainer
+---@field ['Display Slot Num Default'] int32
+---@field CanFilterSetting boolean
+---@field OnClickFilterSettingButton FWBP_IngameMenu_Chest_COnClickFilterSettingButton
+local UWBP_IngameMenu_Chest_C = {}
+
+---@param bEnable boolean
+function UWBP_IngameMenu_Chest_C:SetEnableSortButton(bEnable) end
+---@param TargetContainer UPalItemContainer
+function UWBP_IngameMenu_Chest_C:OnContainerFilterChanged(TargetContainer) end
+---@param CanSetting boolean
+function UWBP_IngameMenu_Chest_C:SetCanChestSetting(CanSetting) end
+function UWBP_IngameMenu_Chest_C:PlayItemMoveSound() end
+---@param Navigation EUINavigation
+---@return UWidget
+function UWBP_IngameMenu_Chest_C:CustomNavi_ToTargetContainerTop(Navigation) end
+---@param Navigation EUINavigation
+---@return UWidget
+function UWBP_IngameMenu_Chest_C:CustomNavi_ToPreferenceOrCloseButton(Navigation) end
+---@param Widget UWidget
+function UWBP_IngameMenu_Chest_C:GetTargetContainerLastHoveredFocusTarget(Widget) end
+---@param Widget UWidget
+function UWBP_IngameMenu_Chest_C:GetInventoryLastHoveredFocusTarget(Widget) end
+---@param Navigation EUINavigation
+---@return UWidget
+function UWBP_IngameMenu_Chest_C:CustomNavi_ToTargetContainerSortButton(Navigation) end
+---@param Navigation EUINavigation
+---@return UWidget
+function UWBP_IngameMenu_Chest_C:CustomNavi_ToCloseButton(Navigation) end
+---@param FocusTarget UWidget
+function UWBP_IngameMenu_Chest_C:GetTargetContainerTopFocustTarget(FocusTarget) end
+---@param FocusTarget UWidget
+UWBP_IngameMenu_Chest_C['Get Inventory Top Focust Target'] = function(self, FocusTarget) end
+---@param ButtonBase UWBP_PalItemSlotButtonBase_C
+---@param PressType EPalItemSlotPressType
+function UWBP_IngameMenu_Chest_C:OnLeftClickedTargetContainerSlot(ButtonBase, PressType) end
+---@param Model UBP_PalInventoryModel_C
+---@param TargetContainer UPalItemContainer
+---@param DisplaySlotNumDefault int32
+function UWBP_IngameMenu_Chest_C:Setup(Model, TargetContainer, DisplaySlotNumDefault) end
+---@param TargetContainerName FText
+function UWBP_IngameMenu_Chest_C:SetTagetContainerDisplayName(TargetContainerName) end
+---@param TargetContainer UPalItemContainer
+UWBP_IngameMenu_Chest_C['Setup Target Item Container'] = function(self, TargetContainer) end
+---@param inventoryType TArray<EPalPlayerInventoryType>
+UWBP_IngameMenu_Chest_C['Filtering Inventory by Inventory Type'] = function(self, inventoryType) end
+function UWBP_IngameMenu_Chest_C:Construct() end
+---@param Button UCommonButtonBase
+function UWBP_IngameMenu_Chest_C:BndEvt__WBP_IngameMenu_Chest_WBP_PalInvisibleButton_QuickMove_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(Button) end
+---@param Button UCommonButtonBase
+function UWBP_IngameMenu_Chest_C:BndEvt__WBP_IngameMenu_Chest_WBP_PalInvisibleButton_Sort_TargetContainer_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(Button) end
+---@param ButtonBase UWBP_PalItemSlotButtonBase_C
+function UWBP_IngameMenu_Chest_C:BndEvt__WBP_IngameMenu_Chest_WBP_PalItemScrollList_K2Node_ComponentBoundEvent_3_OnHoveredSlot__DelegateSignature(ButtonBase) end
+---@param ButtonBase UWBP_PalItemSlotButtonBase_C
+function UWBP_IngameMenu_Chest_C:BndEvt__WBP_IngameMenu_Chest_WBP_PalItemScrollList_K2Node_ComponentBoundEvent_6_OnEndHoveredSlot__DelegateSignature(ButtonBase) end
+function UWBP_IngameMenu_Chest_C:BndEvt__WBP_IngameMenu_Chest_WBP_Menu_btn_K2Node_ComponentBoundEvent_7_OnButtonClicked__DelegateSignature() end
+---@param SlotButton UWBP_PalItemSlotButtonBase_C
+function UWBP_IngameMenu_Chest_C:BndEvt__WBP_IngameMenu_Chest_WBP_Common_Inventory_K2Node_ComponentBoundEvent_8_OnHoveredInventorySlot__DelegateSignature(SlotButton) end
+function UWBP_IngameMenu_Chest_C:BndEvt__WBP_IngameMenu_Chest_WBP_Common_Inventory_K2Node_ComponentBoundEvent_9_OnUnhoveredInventorySlot__DelegateSignature() end
+function UWBP_IngameMenu_Chest_C:BndEvt__WBP_IngameMenu_Chest_WBP_Common_Inventory_K2Node_ComponentBoundEvent_10_OnClickedInventorySortButton__DelegateSignature() end
+function UWBP_IngameMenu_Chest_C:BndEvt__WBP_IngameMenu_Chest_WBP_InventoryEquipment_InvisibleDropButton_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature() end
+---@param ButtonBase UWBP_PalItemSlotButtonBase_C
+---@param PressType EPalItemSlotPressType
+function UWBP_IngameMenu_Chest_C:BndEvt__WBP_IngameMenu_Chest_WBP_PalItemScrollList_K2Node_ComponentBoundEvent_5_OnLeftClickedSlot__DelegateSignature(ButtonBase, PressType) end
+---@param Slot UWBP_PalItemSlotButtonBase_C
+---@param PressType EPalItemSlotPressType
+function UWBP_IngameMenu_Chest_C:BndEvt__WBP_IngameMenu_Chest_WBP_Common_Inventory_K2Node_ComponentBoundEvent_11_OnLeftClickSlot__DelegateSignature(Slot, PressType) end
+function UWBP_IngameMenu_Chest_C:Destruct() end
+function UWBP_IngameMenu_Chest_C:BndEvt__WBP_IngameMenu_Chest_WBP_InventoryEquipment_InvisibleDropButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature() end
+function UWBP_IngameMenu_Chest_C:BndEvt__WBP_IngameMenu_Chest_WBP_CommonButton_Activation_ChestSetting_K2Node_ComponentBoundEvent_12_OnClicked__DelegateSignature() end
+---@param EntryPoint int32
+function UWBP_IngameMenu_Chest_C:ExecuteUbergraph_WBP_IngameMenu_Chest(EntryPoint) end
+function UWBP_IngameMenu_Chest_C:OnClickFilterSettingButton__DelegateSignature() end
+function UWBP_IngameMenu_Chest_C:OnChestBackClicked__DelegateSignature() end
+function UWBP_IngameMenu_Chest_C:OnClickedPreferenceButton__DelegateSignature() end
+function UWBP_IngameMenu_Chest_C:OnClickedCloseButton__DelegateSignature() end
+function UWBP_IngameMenu_Chest_C:OnUnhoveredTargetContainerSlot__DelegateSignature() end
+---@param SlotButton UWBP_PalItemSlotButtonBase_C
+function UWBP_IngameMenu_Chest_C:OnHoveredTargetContainerSlot__DelegateSignature(SlotButton) end
+function UWBP_IngameMenu_Chest_C:OnUnhoveredInventorySlot__DelegateSignature() end
+---@param SlotButton UWBP_PalItemSlotButtonBase_C
+function UWBP_IngameMenu_Chest_C:OnHoveredInventorySlot__DelegateSignature(SlotButton) end
+function UWBP_IngameMenu_Chest_C:OnClickedTargetContainerSortButton__DelegateSignature() end
+function UWBP_IngameMenu_Chest_C:OnClickedQuickMoveButton__DelegateSignature() end
+function UWBP_IngameMenu_Chest_C:OnClickedInventorySortButton__DelegateSignature() end
+
+

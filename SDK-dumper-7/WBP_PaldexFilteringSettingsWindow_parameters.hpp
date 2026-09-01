@@ -17,175 +17,69 @@
 namespace SDK::Params
 {
 
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.ApplyCachedSortInfo
-// 0x0080 (0x0080 - 0x0000)
-struct WBP_PaldexFilteringSettingsWindow_C_ApplyCachedSortInfo final
-{
-public:
-	ECheckBoxState                                Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECheckBoxState                                Temp_byte_Variable_1;                              // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UWBP_PalStorageSortWorkSuitabilityFilterCheckBox_C*> CallFunc_Map_Values_Values;    // 0x0028(0x0010)(ReferenceParm, ContainsInstancedReference)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_PalStorageSortWorkSuitabilityFilterCheckBox_C* CallFunc_Array_Get_Item;               // 0x0040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UWBP_PalStorageSortElementFilterCheckBox_C*> CallFunc_Map_Values_Values_1;          // 0x0050(0x0010)(ReferenceParm, ContainsInstancedReference)
-	class UWBP_PalStorageSortElementFilterCheckBox_C* CallFunc_Array_Get_Item_1;                     // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_PaldexFilteringSettings_SortTypeButton_C* CallFunc_Array_Get_Item_2;                  // 0x0068(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x007A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x007B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_Contains_ReturnValue_1;             // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECheckBoxState                                K2Node_Select_Default;                             // 0x007D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_ApplyCachedSortInfo;
-
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_PalInvisibleButton_ExcludeReceivedBonus_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.SaveSettingAndClose
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_PaldexFilteringSettingsWindow_C_BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_PalInvisibleButton_ExcludeReceivedBonus_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
+struct WBP_PaldexFilteringSettingsWindow_C_SaveSettingAndClose final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_PalInvisibleButton_ExcludeReceivedBonus_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_SaveSettingAndClose;
 
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.CacheSortInfo
-// 0x0070 (0x0070 - 0x0000)
-struct WBP_PaldexFilteringSettingsWindow_C_CacheSortInfo final
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.OnInputAction_ResetSetting
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PaldexFilteringSettingsWindow_C_OnInputAction_ResetSetting final
 {
 public:
-	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsChecked_ReturnValue;                    // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBP_HUDDispatchParameter_PaldeckFilterSettings_C* K2Node_DynamicCast_AsBP_HUDDispatch_Parameter_Paldeck_Filter_Settings; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EPalWorkSuitability>                   CallFunc_CollectFilteringSuitability_SuitabilityArray; // 0x0020(0x0010)(ReferenceParm)
-	TArray<EPalElementType>                       CallFunc_CollectFilteringElementType_ElementTypeArray; // 0x0030(0x0010)(ReferenceParm)
-	struct FPalUIPaldexFilterInfo                 K2Node_MakeStruct_PalUIPaldexFilterInfo;           // 0x0040(0x0030)()
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_CacheSortInfo;
+DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_OnInputAction_ResetSetting;
 
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.CollectFilteringElementType
-// 0x0058 (0x0058 - 0x0000)
-struct WBP_PaldexFilteringSettingsWindow_C_CollectFilteringElementType final
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.OnInputAction_Confirm
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PaldexFilteringSettingsWindow_C_OnInputAction_Confirm final
 {
 public:
-	TArray<EPalElementType>                       ElementTypeArray;                                  // 0x0000(0x0010)(Parm, OutParm)
-	TArray<EPalElementType>                       TmpElementTypeArray;                               // 0x0010(0x0010)(Edit, BlueprintVisible)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UWBP_PalStorageSortElementFilterCheckBox_C*> CallFunc_Map_Values_Values;            // 0x0030(0x0010)(ReferenceParm, ContainsInstancedReference)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_PalStorageSortElementFilterCheckBox_C* CallFunc_Array_Get_Item;                       // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsChecked_ReturnValue;                    // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_52[0x2];                                       // 0x0052(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_CollectFilteringElementType;
+DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_OnInputAction_Confirm;
 
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.CollectFilteringSuitability
-// 0x0060 (0x0060 - 0x0000)
-struct WBP_PaldexFilteringSettingsWindow_C_CollectFilteringSuitability final
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.OnClickedWorlSutabilityCheckBox
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_PaldexFilteringSettingsWindow_C_OnClickedWorlSutabilityCheckBox final
 {
 public:
-	TArray<EPalWorkSuitability>                   SuitabilityArray;                                  // 0x0000(0x0010)(Parm, OutParm)
-	TArray<EPalWorkSuitability>                   TmpSuitabilityArray;                               // 0x0010(0x0010)(Edit, BlueprintVisible)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UWBP_PalStorageSortWorkSuitabilityFilterCheckBox_C*> CallFunc_Map_Values_Values;    // 0x0030(0x0010)(ReferenceParm, ContainsInstancedReference)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_PalStorageSortWorkSuitabilityFilterCheckBox_C* CallFunc_Array_Get_Item;               // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsChecked_ReturnValue;                    // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bChecked;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalWorkSuitability                           WorkSuitbility;                                    // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_CollectFilteringSuitability;
+DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_OnClickedWorlSutabilityCheckBox;
 
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.DoCustomNavi_ToCloseButton
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PaldexFilteringSettingsWindow_C_DoCustomNavi_ToCloseButton final
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.OnClickedSortTypeButton
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_PaldexFilteringSettingsWindow_C_OnClickedSortTypeButton final
 {
 public:
-	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PaldexFilteringSettings_SortTypeButton_C* Widget;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PaldexFilteringSettings_SortTypeButton_C* CallFunc_Array_Get_Item;                    // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E[0x2];                                       // 0x001E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_DoCustomNavi_ToCloseButton;
+DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_OnClickedSortTypeButton;
 
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.DoCustomNavi_ToConfirmButton
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PaldexFilteringSettingsWindow_C_DoCustomNavi_ToConfirmButton final
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.OnClickedElementTypeCheckBox
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_PaldexFilteringSettingsWindow_C_OnClickedElementTypeCheckBox final
 {
 public:
-	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bChecked;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalElementType                               ElementType;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_DoCustomNavi_ToConfirmButton;
-
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.DoCustomNavi_ToExcludeReceivedBonusButton
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PaldexFilteringSettingsWindow_C_DoCustomNavi_ToExcludeReceivedBonusButton final
-{
-public:
-	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_DoCustomNavi_ToExcludeReceivedBonusButton;
-
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.DoCustomNavi_ToSortButtonTopLeft
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PaldexFilteringSettingsWindow_C_DoCustomNavi_ToSortButtonTopLeft final
-{
-public:
-	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_DoCustomNavi_ToSortButtonTopLeft;
-
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.ExecuteUbergraph_WBP_PaldexFilteringSettingsWindow
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_PaldexFilteringSettingsWindow_C_ExecuteUbergraph_WBP_PaldexFilteringSettingsWindow final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x0020(0x0004)(NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0024(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_1;      // 0x0040(0x0004)(NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_ExecuteUbergraph_WBP_PaldexFilteringSettingsWindow;
+DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_OnClickedElementTypeCheckBox;
 
 // Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.Initialize
 // 0x01C0 (0x01C0 - 0x0000)
@@ -288,69 +182,175 @@ public:
 };
 DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_Initialize;
 
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.OnClickedElementTypeCheckBox
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_PaldexFilteringSettingsWindow_C_OnClickedElementTypeCheckBox final
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.ExecuteUbergraph_WBP_PaldexFilteringSettingsWindow
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_PaldexFilteringSettingsWindow_C_ExecuteUbergraph_WBP_PaldexFilteringSettingsWindow final
 {
 public:
-	bool                                          bChecked;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalElementType                               ElementType;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x0020(0x0004)(NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0024(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_34[0x4];                                       // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_1;      // 0x0040(0x0004)(NoDestructor)
 };
-DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_OnClickedElementTypeCheckBox;
+DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_ExecuteUbergraph_WBP_PaldexFilteringSettingsWindow;
 
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.OnClickedSortTypeButton
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_PaldexFilteringSettingsWindow_C_OnClickedSortTypeButton final
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.DoCustomNavi_ToSortButtonTopLeft
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PaldexFilteringSettingsWindow_C_DoCustomNavi_ToSortButtonTopLeft final
 {
 public:
-	class UWBP_PaldexFilteringSettings_SortTypeButton_C* Widget;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_PaldexFilteringSettings_SortTypeButton_C* CallFunc_Array_Get_Item;                    // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1E[0x2];                                       // 0x001E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_OnClickedSortTypeButton;
+DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_DoCustomNavi_ToSortButtonTopLeft;
 
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.OnClickedWorlSutabilityCheckBox
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_PaldexFilteringSettingsWindow_C_OnClickedWorlSutabilityCheckBox final
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.DoCustomNavi_ToExcludeReceivedBonusButton
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PaldexFilteringSettingsWindow_C_DoCustomNavi_ToExcludeReceivedBonusButton final
 {
 public:
-	bool                                          bChecked;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalWorkSuitability                           WorkSuitbility;                                    // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_OnClickedWorlSutabilityCheckBox;
+DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_DoCustomNavi_ToExcludeReceivedBonusButton;
 
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.OnInputAction_Confirm
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.DoCustomNavi_ToCloseButton
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PaldexFilteringSettingsWindow_C_DoCustomNavi_ToCloseButton final
+{
+public:
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_DoCustomNavi_ToCloseButton;
+
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.DoCustomNavi_ToConfirmButton
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PaldexFilteringSettingsWindow_C_DoCustomNavi_ToConfirmButton final
+{
+public:
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_DoCustomNavi_ToConfirmButton;
+
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.CollectFilteringSuitability
+// 0x0060 (0x0060 - 0x0000)
+struct WBP_PaldexFilteringSettingsWindow_C_CollectFilteringSuitability final
+{
+public:
+	TArray<EPalWorkSuitability>                   SuitabilityArray;                                  // 0x0000(0x0010)(Parm, OutParm)
+	TArray<EPalWorkSuitability>                   TmpSuitabilityArray;                               // 0x0010(0x0010)(Edit, BlueprintVisible)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UWBP_PalStorageSortWorkSuitabilityFilterCheckBox_C*> CallFunc_Map_Values_Values;    // 0x0030(0x0010)(ReferenceParm, ContainsInstancedReference)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_PalStorageSortWorkSuitabilityFilterCheckBox_C* CallFunc_Array_Get_Item;               // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsChecked_ReturnValue;                    // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_CollectFilteringSuitability;
+
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.CacheSortInfo
+// 0x0070 (0x0070 - 0x0000)
+struct WBP_PaldexFilteringSettingsWindow_C_CacheSortInfo final
+{
+public:
+	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsChecked_ReturnValue;                    // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UBP_HUDDispatchParameter_PaldeckFilterSettings_C* K2Node_DynamicCast_AsBP_HUDDispatch_Parameter_Paldeck_Filter_Settings; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EPalWorkSuitability>                   CallFunc_CollectFilteringSuitability_SuitabilityArray; // 0x0020(0x0010)(ReferenceParm)
+	TArray<EPalElementType>                       CallFunc_CollectFilteringElementType_ElementTypeArray; // 0x0030(0x0010)(ReferenceParm)
+	struct FPalUIPaldexFilterInfo                 K2Node_MakeStruct_PalUIPaldexFilterInfo;           // 0x0040(0x0030)()
+};
+DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_CacheSortInfo;
+
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.CollectFilteringElementType
+// 0x0058 (0x0058 - 0x0000)
+struct WBP_PaldexFilteringSettingsWindow_C_CollectFilteringElementType final
+{
+public:
+	TArray<EPalElementType>                       ElementTypeArray;                                  // 0x0000(0x0010)(Parm, OutParm)
+	TArray<EPalElementType>                       TmpElementTypeArray;                               // 0x0010(0x0010)(Edit, BlueprintVisible)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UWBP_PalStorageSortElementFilterCheckBox_C*> CallFunc_Map_Values_Values;            // 0x0030(0x0010)(ReferenceParm, ContainsInstancedReference)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_PalStorageSortElementFilterCheckBox_C* CallFunc_Array_Get_Item;                       // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsChecked_ReturnValue;                    // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_52[0x2];                                       // 0x0052(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_CollectFilteringElementType;
+
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_PalInvisibleButton_ExcludeReceivedBonus_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_PaldexFilteringSettingsWindow_C_OnInputAction_Confirm final
+struct WBP_PaldexFilteringSettingsWindow_C_BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_PalInvisibleButton_ExcludeReceivedBonus_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_OnInputAction_Confirm;
+DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_PalInvisibleButton_ExcludeReceivedBonus_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
 
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.OnInputAction_ResetSetting
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PaldexFilteringSettingsWindow_C_OnInputAction_ResetSetting final
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.ApplyCachedSortInfo
+// 0x0080 (0x0080 - 0x0000)
+struct WBP_PaldexFilteringSettingsWindow_C_ApplyCachedSortInfo final
 {
 public:
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ECheckBoxState                                Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECheckBoxState                                Temp_byte_Variable_1;                              // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UWBP_PalStorageSortWorkSuitabilityFilterCheckBox_C*> CallFunc_Map_Values_Values;    // 0x0028(0x0010)(ReferenceParm, ContainsInstancedReference)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_PalStorageSortWorkSuitabilityFilterCheckBox_C* CallFunc_Array_Get_Item;               // 0x0040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UWBP_PalStorageSortElementFilterCheckBox_C*> CallFunc_Map_Values_Values_1;          // 0x0050(0x0010)(ReferenceParm, ContainsInstancedReference)
+	class UWBP_PalStorageSortElementFilterCheckBox_C* CallFunc_Array_Get_Item_1;                     // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PaldexFilteringSettings_SortTypeButton_C* CallFunc_Array_Get_Item_2;                  // 0x0068(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x007A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x007B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_Contains_ReturnValue_1;             // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECheckBoxState                                K2Node_Select_Default;                             // 0x007D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_OnInputAction_ResetSetting;
-
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.SaveSettingAndClose
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PaldexFilteringSettingsWindow_C_SaveSettingAndClose final
-{
-public:
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_SaveSettingAndClose;
+DUMPER7_ASSERTS_WBP_PaldexFilteringSettingsWindow_C_ApplyCachedSortInfo;
 
 // Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.BP_GetDesiredFocusTarget
 // 0x0008 (0x0008 - 0x0000)

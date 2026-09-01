@@ -28,10 +28,10 @@ public:
 	class UImage*                                 Select;                                            // 0x0288(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Buildup_Gauge(int32 EntryPoint);
-	void SetEmpty();
-	void SetFill(bool IsFill);
 	void SetSelect();
+	void SetFill(bool IsFill);
+	void SetEmpty();
+	void ExecuteUbergraph_WBP_Buildup_Gauge(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

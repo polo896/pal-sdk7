@@ -9,7 +9,7 @@ class UWBP_BattleEntry_Info_C : public UUserWidget
     class UBP_PalTextBlock_C* Text_EntryNum;                                          // 0x0290 (size: 0x8)
 
     void Finished_DCF333D941FA61FD2550718E81C65E72();
-    void SetEntryInfo(FName BossType, EPalBossBattleDifficulty Difficulty, const TArray<class APalPlayerCharacter*>& EntryPlayers, bool ShouldMask);
+    void SetEntryInfo(FName BossType, EPalBossBattleDifficulty Difficulty, const TArray<APalPlayerCharacter*>& EntryPlayers, bool ShouldMask);
     void ExecuteUbergraph_WBP_BattleEntry_Info(int32 EntryPoint);
 }; // Size: 0x298
 

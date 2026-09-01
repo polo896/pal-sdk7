@@ -51,18 +51,18 @@ public:
 	class UPalUIMapObjectStatusIndicatorParameter_Clinic* UIIndicatorParam;                          // 0x0518(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void Destruct();
-	void DisplayCheck();
-	void ExecuteUbergraph_WBP_PalWork_Infirmary(int32 EntryPoint);
-	void GetTargetStarLevelCanvas(int32 MaxStarLevel, class UCanvasPanel** Canvas);
-	void GetTargetStarLevelStarImages(int32 MaxStarLevel, TArray<class UImage*>* Images);
-	void On_Updated_Worker_Pal(class UPalWorkBase* Work);
-	void OnSetup();
-	void OnUpdateClinicStatus();
-	void RefreshProductDisplay();
-	void Setup();
 	void ShowHygieneStarLevel(class UCanvasPanel* Canvas, TArray<class UImage*>& StarImages, int32 CurrentStarLevel);
+	void Setup();
+	void RefreshProductDisplay();
+	void OnUpdateClinicStatus();
+	void OnSetup();
+	void On_Updated_Worker_Pal(class UPalWorkBase* Work);
+	void GetTargetStarLevelStarImages(int32 MaxStarLevel, TArray<class UImage*>* Images);
+	void GetTargetStarLevelCanvas(int32 MaxStarLevel, class UCanvasPanel** Canvas);
+	void ExecuteUbergraph_WBP_PalWork_Infirmary(int32 EntryPoint);
+	void DisplayCheck();
+	void Destruct();
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

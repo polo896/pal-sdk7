@@ -10,8 +10,10 @@ class UWBP_PlayerSideInfo_Separated_C : public UWBP_IndividualParameterBindWidge
     FTimerHandle TimerHandle_CheckBulletChangeTutorial;                               // 0x0678 (size: 0x8)
     bool bDisableSummonGuide;                                                         // 0x0680 (size: 0x1)
     bool bIsRiding;                                                                   // 0x0681 (size: 0x1)
+    FTimerHandle UpdateBuffIconTimer;                                                 // 0x0688 (size: 0x8)
 
     void CREATEDELEGATE_PROXYFUNCTION_0(const class APalWeaponBase* WeaponActor, const FName& BulletItemId);
+    void OnTimerEvent_UpdateBuffIcon();
     void OnChangedUISettings(const FPalOptionUISettings& PrevSettings, const FPalOptionUISettings& NewSettings);
     void BindOtomoPassiveSkillEvents(class APalCharacter* Character);
     void UnbindOtomoPassiveKillEvents(class APalCharacter* Character);
@@ -53,6 +55,6 @@ class UWBP_PlayerSideInfo_Separated_C : public UWBP_IndividualParameterBindWidge
     void UpdateHunger_Binded(double nowHunger, double nowMaxHunger);
     void UpdatePlayerBuff();
     void ExecuteUbergraph_WBP_PlayerSideInfo_Separated(int32 EntryPoint);
-}; // Size: 0x682
+}; // Size: 0x690
 
 #endif

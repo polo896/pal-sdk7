@@ -17,597 +17,155 @@
 namespace SDK
 {
 
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.CanShoot
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// bool*                                   can                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.ShootBullet
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_ChargeLaserRifle_C::CanShoot(bool* can)
+void ABP_ChargeLaserRifle_C::ShootBullet()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "CanShoot");
-
-	Params::BP_ChargeLaserRifle_C_CanShoot Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (can != nullptr)
-		*can = Parms.can;
-}
-
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.ChangeChargeValue
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_ChargeLaserRifle_C::ChangeChargeValue()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "ChangeChargeValue");
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "ShootBullet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.ExecuteUbergraph_BP_ChargeLaserRifle
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ChargeLaserRifle_C::ExecuteUbergraph_BP_ChargeLaserRifle(int32 EntryPoint)
+void ABP_ChargeLaserRifle_C::ReceiveTick(float DeltaSeconds)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "ExecuteUbergraph_BP_ChargeLaserRifle");
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "ReceiveTick");
 
-	Params::BP_ChargeLaserRifle_C_ExecuteUbergraph_BP_ChargeLaserRifle Parms{};
+	Params::BP_ChargeLaserRifle_C_ReceiveTick Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.GetCurrentChargeValue
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// double*                                 ChargeValue_0                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_ChargeLaserRifle_C::GetCurrentChargeValue(double* ChargeValue_0)
+void ABP_ChargeLaserRifle_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "GetCurrentChargeValue");
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "ReceiveBeginPlay");
 
-	Params::BP_ChargeLaserRifle_C_GetCurrentChargeValue Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (ChargeValue_0 != nullptr)
-		*ChargeValue_0 = Parms.ChargeValue_0;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.GetMuzzleTransform
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnWeaponNotify
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// struct FTransform*                      TF                                                     (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EWeaponNotifyType                       Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ChargeLaserRifle_C::GetMuzzleTransform(struct FTransform* TF)
+void ABP_ChargeLaserRifle_C::OnWeaponNotify(EWeaponNotifyType Type)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "GetMuzzleTransform");
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnWeaponNotify");
 
-	Params::BP_ChargeLaserRifle_C_GetMuzzleTransform Parms{};
+	Params::BP_ChargeLaserRifle_C_OnWeaponNotify Parms{};
+
+	Parms.Type = Type;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (TF != nullptr)
-		*TF = std::move(Parms.TF);
 }
 
 
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.GetTargetLocation
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FVector*                         targetPosition                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnRestartReload
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_ChargeLaserRifle_C::GetTargetLocation(struct FVector* targetPosition)
+void ABP_ChargeLaserRifle_C::OnRestartReload()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "GetTargetLocation");
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnRestartReload");
 
-	Params::BP_ChargeLaserRifle_C_GetTargetLocation Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (targetPosition != nullptr)
-		*targetPosition = std::move(Parms.targetPosition);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnAttachWeapon
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnReloadStart
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   InReloadSpeedPlayRate                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ChargeLaserRifle_C::OnReloadStart(float InReloadSpeedPlayRate)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnReloadStart");
+
+	Params::BP_ChargeLaserRifle_C_OnReloadStart Parms{};
+
+	Parms.InReloadSpeedPlayRate = InReloadSpeedPlayRate;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnReleaseTrigger
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                           attachActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bCanShootOnRelease                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ChargeLaserRifle_C::OnAttachWeapon(class AActor* attachActor)
+void ABP_ChargeLaserRifle_C::OnReleaseTrigger(bool bCanShootOnRelease)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnAttachWeapon");
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnReleaseTrigger");
 
-	Params::BP_ChargeLaserRifle_C_OnAttachWeapon Parms{};
+	Params::BP_ChargeLaserRifle_C_OnReleaseTrigger Parms{};
 
-	Parms.attachActor = attachActor;
+	Parms.bCanShootOnRelease = bCanShootOnRelease;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnBlendOut_1A67CE1042B43EF42A4334AFA2181CEE
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnPullTrigger
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_ChargeLaserRifle_C::OnBlendOut_1A67CE1042B43EF42A4334AFA2181CEE(class FName NotifyName)
+void ABP_ChargeLaserRifle_C::OnPullTrigger()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnBlendOut_1A67CE1042B43EF42A4334AFA2181CEE");
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnPullTrigger");
 
-	Params::BP_ChargeLaserRifle_C_OnBlendOut_1A67CE1042B43EF42A4334AFA2181CEE Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnBlendOut_6868AA2F41E676FCD1C891B7E8A7B79A
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyEnd_F04017F8494C2F37C78E51B48EBD2A1C
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ChargeLaserRifle_C::OnBlendOut_6868AA2F41E676FCD1C891B7E8A7B79A(class FName NotifyName)
+void ABP_ChargeLaserRifle_C::OnNotifyEnd_F04017F8494C2F37C78E51B48EBD2A1C(class FName NotifyName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnBlendOut_6868AA2F41E676FCD1C891B7E8A7B79A");
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnNotifyEnd_F04017F8494C2F37C78E51B48EBD2A1C");
 
-	Params::BP_ChargeLaserRifle_C_OnBlendOut_6868AA2F41E676FCD1C891B7E8A7B79A Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnBlendOut_7D3D1A57488DAA75B92021BFFA4E3435
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ChargeLaserRifle_C::OnBlendOut_7D3D1A57488DAA75B92021BFFA4E3435(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnBlendOut_7D3D1A57488DAA75B92021BFFA4E3435");
-
-	Params::BP_ChargeLaserRifle_C_OnBlendOut_7D3D1A57488DAA75B92021BFFA4E3435 Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnBlendOut_B8C41D4B4A5B4B1CCDEF6198D3783FEF
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ChargeLaserRifle_C::OnBlendOut_B8C41D4B4A5B4B1CCDEF6198D3783FEF(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnBlendOut_B8C41D4B4A5B4B1CCDEF6198D3783FEF");
-
-	Params::BP_ChargeLaserRifle_C_OnBlendOut_B8C41D4B4A5B4B1CCDEF6198D3783FEF Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnBlendOut_F04017F8494C2F37C78E51B48EBD2A1C
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ChargeLaserRifle_C::OnBlendOut_F04017F8494C2F37C78E51B48EBD2A1C(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnBlendOut_F04017F8494C2F37C78E51B48EBD2A1C");
-
-	Params::BP_ChargeLaserRifle_C_OnBlendOut_F04017F8494C2F37C78E51B48EBD2A1C Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnCompleted_1A67CE1042B43EF42A4334AFA2181CEE
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ChargeLaserRifle_C::OnCompleted_1A67CE1042B43EF42A4334AFA2181CEE(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnCompleted_1A67CE1042B43EF42A4334AFA2181CEE");
-
-	Params::BP_ChargeLaserRifle_C_OnCompleted_1A67CE1042B43EF42A4334AFA2181CEE Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnCompleted_6868AA2F41E676FCD1C891B7E8A7B79A
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ChargeLaserRifle_C::OnCompleted_6868AA2F41E676FCD1C891B7E8A7B79A(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnCompleted_6868AA2F41E676FCD1C891B7E8A7B79A");
-
-	Params::BP_ChargeLaserRifle_C_OnCompleted_6868AA2F41E676FCD1C891B7E8A7B79A Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnCompleted_7D3D1A57488DAA75B92021BFFA4E3435
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ChargeLaserRifle_C::OnCompleted_7D3D1A57488DAA75B92021BFFA4E3435(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnCompleted_7D3D1A57488DAA75B92021BFFA4E3435");
-
-	Params::BP_ChargeLaserRifle_C_OnCompleted_7D3D1A57488DAA75B92021BFFA4E3435 Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnCompleted_B8C41D4B4A5B4B1CCDEF6198D3783FEF
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ChargeLaserRifle_C::OnCompleted_B8C41D4B4A5B4B1CCDEF6198D3783FEF(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnCompleted_B8C41D4B4A5B4B1CCDEF6198D3783FEF");
-
-	Params::BP_ChargeLaserRifle_C_OnCompleted_B8C41D4B4A5B4B1CCDEF6198D3783FEF Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnCompleted_F04017F8494C2F37C78E51B48EBD2A1C
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ChargeLaserRifle_C::OnCompleted_F04017F8494C2F37C78E51B48EBD2A1C(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnCompleted_F04017F8494C2F37C78E51B48EBD2A1C");
-
-	Params::BP_ChargeLaserRifle_C_OnCompleted_F04017F8494C2F37C78E51B48EBD2A1C Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnInterrupted_1A67CE1042B43EF42A4334AFA2181CEE
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ChargeLaserRifle_C::OnInterrupted_1A67CE1042B43EF42A4334AFA2181CEE(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnInterrupted_1A67CE1042B43EF42A4334AFA2181CEE");
-
-	Params::BP_ChargeLaserRifle_C_OnInterrupted_1A67CE1042B43EF42A4334AFA2181CEE Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnInterrupted_6868AA2F41E676FCD1C891B7E8A7B79A
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ChargeLaserRifle_C::OnInterrupted_6868AA2F41E676FCD1C891B7E8A7B79A(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnInterrupted_6868AA2F41E676FCD1C891B7E8A7B79A");
-
-	Params::BP_ChargeLaserRifle_C_OnInterrupted_6868AA2F41E676FCD1C891B7E8A7B79A Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnInterrupted_7D3D1A57488DAA75B92021BFFA4E3435
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ChargeLaserRifle_C::OnInterrupted_7D3D1A57488DAA75B92021BFFA4E3435(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnInterrupted_7D3D1A57488DAA75B92021BFFA4E3435");
-
-	Params::BP_ChargeLaserRifle_C_OnInterrupted_7D3D1A57488DAA75B92021BFFA4E3435 Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnInterrupted_B8C41D4B4A5B4B1CCDEF6198D3783FEF
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ChargeLaserRifle_C::OnInterrupted_B8C41D4B4A5B4B1CCDEF6198D3783FEF(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnInterrupted_B8C41D4B4A5B4B1CCDEF6198D3783FEF");
-
-	Params::BP_ChargeLaserRifle_C_OnInterrupted_B8C41D4B4A5B4B1CCDEF6198D3783FEF Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnInterrupted_F04017F8494C2F37C78E51B48EBD2A1C
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ChargeLaserRifle_C::OnInterrupted_F04017F8494C2F37C78E51B48EBD2A1C(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnInterrupted_F04017F8494C2F37C78E51B48EBD2A1C");
-
-	Params::BP_ChargeLaserRifle_C_OnInterrupted_F04017F8494C2F37C78E51B48EBD2A1C Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyBegin_1A67CE1042B43EF42A4334AFA2181CEE
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ChargeLaserRifle_C::OnNotifyBegin_1A67CE1042B43EF42A4334AFA2181CEE(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnNotifyBegin_1A67CE1042B43EF42A4334AFA2181CEE");
-
-	Params::BP_ChargeLaserRifle_C_OnNotifyBegin_1A67CE1042B43EF42A4334AFA2181CEE Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyBegin_6868AA2F41E676FCD1C891B7E8A7B79A
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ChargeLaserRifle_C::OnNotifyBegin_6868AA2F41E676FCD1C891B7E8A7B79A(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnNotifyBegin_6868AA2F41E676FCD1C891B7E8A7B79A");
-
-	Params::BP_ChargeLaserRifle_C_OnNotifyBegin_6868AA2F41E676FCD1C891B7E8A7B79A Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyBegin_7D3D1A57488DAA75B92021BFFA4E3435
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ChargeLaserRifle_C::OnNotifyBegin_7D3D1A57488DAA75B92021BFFA4E3435(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnNotifyBegin_7D3D1A57488DAA75B92021BFFA4E3435");
-
-	Params::BP_ChargeLaserRifle_C_OnNotifyBegin_7D3D1A57488DAA75B92021BFFA4E3435 Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyBegin_B8C41D4B4A5B4B1CCDEF6198D3783FEF
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ChargeLaserRifle_C::OnNotifyBegin_B8C41D4B4A5B4B1CCDEF6198D3783FEF(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnNotifyBegin_B8C41D4B4A5B4B1CCDEF6198D3783FEF");
-
-	Params::BP_ChargeLaserRifle_C_OnNotifyBegin_B8C41D4B4A5B4B1CCDEF6198D3783FEF Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyBegin_F04017F8494C2F37C78E51B48EBD2A1C
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ChargeLaserRifle_C::OnNotifyBegin_F04017F8494C2F37C78E51B48EBD2A1C(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnNotifyBegin_F04017F8494C2F37C78E51B48EBD2A1C");
-
-	Params::BP_ChargeLaserRifle_C_OnNotifyBegin_F04017F8494C2F37C78E51B48EBD2A1C Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyEnd_1A67CE1042B43EF42A4334AFA2181CEE
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ChargeLaserRifle_C::OnNotifyEnd_1A67CE1042B43EF42A4334AFA2181CEE(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnNotifyEnd_1A67CE1042B43EF42A4334AFA2181CEE");
-
-	Params::BP_ChargeLaserRifle_C_OnNotifyEnd_1A67CE1042B43EF42A4334AFA2181CEE Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyEnd_6868AA2F41E676FCD1C891B7E8A7B79A
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ChargeLaserRifle_C::OnNotifyEnd_6868AA2F41E676FCD1C891B7E8A7B79A(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnNotifyEnd_6868AA2F41E676FCD1C891B7E8A7B79A");
-
-	Params::BP_ChargeLaserRifle_C_OnNotifyEnd_6868AA2F41E676FCD1C891B7E8A7B79A Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyEnd_7D3D1A57488DAA75B92021BFFA4E3435
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ChargeLaserRifle_C::OnNotifyEnd_7D3D1A57488DAA75B92021BFFA4E3435(class FName NotifyName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnNotifyEnd_7D3D1A57488DAA75B92021BFFA4E3435");
-
-	Params::BP_ChargeLaserRifle_C_OnNotifyEnd_7D3D1A57488DAA75B92021BFFA4E3435 Parms{};
+	Params::BP_ChargeLaserRifle_C_OnNotifyEnd_F04017F8494C2F37C78E51B48EBD2A1C Parms{};
 
 	Parms.NotifyName = NotifyName;
 
@@ -635,19 +193,19 @@ void ABP_ChargeLaserRifle_C::OnNotifyEnd_B8C41D4B4A5B4B1CCDEF6198D3783FEF(class 
 }
 
 
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyEnd_F04017F8494C2F37C78E51B48EBD2A1C
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyEnd_7D3D1A57488DAA75B92021BFFA4E3435
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ChargeLaserRifle_C::OnNotifyEnd_F04017F8494C2F37C78E51B48EBD2A1C(class FName NotifyName)
+void ABP_ChargeLaserRifle_C::OnNotifyEnd_7D3D1A57488DAA75B92021BFFA4E3435(class FName NotifyName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnNotifyEnd_F04017F8494C2F37C78E51B48EBD2A1C");
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnNotifyEnd_7D3D1A57488DAA75B92021BFFA4E3435");
 
-	Params::BP_ChargeLaserRifle_C_OnNotifyEnd_F04017F8494C2F37C78E51B48EBD2A1C Parms{};
+	Params::BP_ChargeLaserRifle_C_OnNotifyEnd_7D3D1A57488DAA75B92021BFFA4E3435 Parms{};
 
 	Parms.NotifyName = NotifyName;
 
@@ -655,159 +213,581 @@ void ABP_ChargeLaserRifle_C::OnNotifyEnd_F04017F8494C2F37C78E51B48EBD2A1C(class 
 }
 
 
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnPullTrigger
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_ChargeLaserRifle_C::OnPullTrigger()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnPullTrigger");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnReleaseTrigger
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyEnd_6868AA2F41E676FCD1C891B7E8A7B79A
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bCanShootOnRelease                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ChargeLaserRifle_C::OnReleaseTrigger(bool bCanShootOnRelease)
+void ABP_ChargeLaserRifle_C::OnNotifyEnd_6868AA2F41E676FCD1C891B7E8A7B79A(class FName NotifyName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnReleaseTrigger");
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnNotifyEnd_6868AA2F41E676FCD1C891B7E8A7B79A");
 
-	Params::BP_ChargeLaserRifle_C_OnReleaseTrigger Parms{};
+	Params::BP_ChargeLaserRifle_C_OnNotifyEnd_6868AA2F41E676FCD1C891B7E8A7B79A Parms{};
 
-	Parms.bCanShootOnRelease = bCanShootOnRelease;
+	Parms.NotifyName = NotifyName;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnReloadStart
-// (Event, Public, BlueprintEvent)
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyEnd_1A67CE1042B43EF42A4334AFA2181CEE
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   InReloadSpeedPlayRate                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ChargeLaserRifle_C::OnReloadStart(float InReloadSpeedPlayRate)
+void ABP_ChargeLaserRifle_C::OnNotifyEnd_1A67CE1042B43EF42A4334AFA2181CEE(class FName NotifyName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnReloadStart");
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnNotifyEnd_1A67CE1042B43EF42A4334AFA2181CEE");
 
-	Params::BP_ChargeLaserRifle_C_OnReloadStart Parms{};
+	Params::BP_ChargeLaserRifle_C_OnNotifyEnd_1A67CE1042B43EF42A4334AFA2181CEE Parms{};
 
-	Parms.InReloadSpeedPlayRate = InReloadSpeedPlayRate;
+	Parms.NotifyName = NotifyName;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnRestartReload
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyBegin_F04017F8494C2F37C78E51B48EBD2A1C
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ChargeLaserRifle_C::OnNotifyBegin_F04017F8494C2F37C78E51B48EBD2A1C(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnNotifyBegin_F04017F8494C2F37C78E51B48EBD2A1C");
+
+	Params::BP_ChargeLaserRifle_C_OnNotifyBegin_F04017F8494C2F37C78E51B48EBD2A1C Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyBegin_B8C41D4B4A5B4B1CCDEF6198D3783FEF
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ChargeLaserRifle_C::OnNotifyBegin_B8C41D4B4A5B4B1CCDEF6198D3783FEF(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnNotifyBegin_B8C41D4B4A5B4B1CCDEF6198D3783FEF");
+
+	Params::BP_ChargeLaserRifle_C_OnNotifyBegin_B8C41D4B4A5B4B1CCDEF6198D3783FEF Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyBegin_7D3D1A57488DAA75B92021BFFA4E3435
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ChargeLaserRifle_C::OnNotifyBegin_7D3D1A57488DAA75B92021BFFA4E3435(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnNotifyBegin_7D3D1A57488DAA75B92021BFFA4E3435");
+
+	Params::BP_ChargeLaserRifle_C_OnNotifyBegin_7D3D1A57488DAA75B92021BFFA4E3435 Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyBegin_6868AA2F41E676FCD1C891B7E8A7B79A
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ChargeLaserRifle_C::OnNotifyBegin_6868AA2F41E676FCD1C891B7E8A7B79A(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnNotifyBegin_6868AA2F41E676FCD1C891B7E8A7B79A");
+
+	Params::BP_ChargeLaserRifle_C_OnNotifyBegin_6868AA2F41E676FCD1C891B7E8A7B79A Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnNotifyBegin_1A67CE1042B43EF42A4334AFA2181CEE
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ChargeLaserRifle_C::OnNotifyBegin_1A67CE1042B43EF42A4334AFA2181CEE(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnNotifyBegin_1A67CE1042B43EF42A4334AFA2181CEE");
+
+	Params::BP_ChargeLaserRifle_C_OnNotifyBegin_1A67CE1042B43EF42A4334AFA2181CEE Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnInterrupted_F04017F8494C2F37C78E51B48EBD2A1C
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ChargeLaserRifle_C::OnInterrupted_F04017F8494C2F37C78E51B48EBD2A1C(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnInterrupted_F04017F8494C2F37C78E51B48EBD2A1C");
+
+	Params::BP_ChargeLaserRifle_C_OnInterrupted_F04017F8494C2F37C78E51B48EBD2A1C Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnInterrupted_B8C41D4B4A5B4B1CCDEF6198D3783FEF
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ChargeLaserRifle_C::OnInterrupted_B8C41D4B4A5B4B1CCDEF6198D3783FEF(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnInterrupted_B8C41D4B4A5B4B1CCDEF6198D3783FEF");
+
+	Params::BP_ChargeLaserRifle_C_OnInterrupted_B8C41D4B4A5B4B1CCDEF6198D3783FEF Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnInterrupted_7D3D1A57488DAA75B92021BFFA4E3435
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ChargeLaserRifle_C::OnInterrupted_7D3D1A57488DAA75B92021BFFA4E3435(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnInterrupted_7D3D1A57488DAA75B92021BFFA4E3435");
+
+	Params::BP_ChargeLaserRifle_C_OnInterrupted_7D3D1A57488DAA75B92021BFFA4E3435 Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnInterrupted_6868AA2F41E676FCD1C891B7E8A7B79A
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ChargeLaserRifle_C::OnInterrupted_6868AA2F41E676FCD1C891B7E8A7B79A(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnInterrupted_6868AA2F41E676FCD1C891B7E8A7B79A");
+
+	Params::BP_ChargeLaserRifle_C_OnInterrupted_6868AA2F41E676FCD1C891B7E8A7B79A Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnInterrupted_1A67CE1042B43EF42A4334AFA2181CEE
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ChargeLaserRifle_C::OnInterrupted_1A67CE1042B43EF42A4334AFA2181CEE(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnInterrupted_1A67CE1042B43EF42A4334AFA2181CEE");
+
+	Params::BP_ChargeLaserRifle_C_OnInterrupted_1A67CE1042B43EF42A4334AFA2181CEE Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnCompleted_F04017F8494C2F37C78E51B48EBD2A1C
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ChargeLaserRifle_C::OnCompleted_F04017F8494C2F37C78E51B48EBD2A1C(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnCompleted_F04017F8494C2F37C78E51B48EBD2A1C");
+
+	Params::BP_ChargeLaserRifle_C_OnCompleted_F04017F8494C2F37C78E51B48EBD2A1C Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnCompleted_B8C41D4B4A5B4B1CCDEF6198D3783FEF
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ChargeLaserRifle_C::OnCompleted_B8C41D4B4A5B4B1CCDEF6198D3783FEF(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnCompleted_B8C41D4B4A5B4B1CCDEF6198D3783FEF");
+
+	Params::BP_ChargeLaserRifle_C_OnCompleted_B8C41D4B4A5B4B1CCDEF6198D3783FEF Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnCompleted_7D3D1A57488DAA75B92021BFFA4E3435
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ChargeLaserRifle_C::OnCompleted_7D3D1A57488DAA75B92021BFFA4E3435(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnCompleted_7D3D1A57488DAA75B92021BFFA4E3435");
+
+	Params::BP_ChargeLaserRifle_C_OnCompleted_7D3D1A57488DAA75B92021BFFA4E3435 Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnCompleted_6868AA2F41E676FCD1C891B7E8A7B79A
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ChargeLaserRifle_C::OnCompleted_6868AA2F41E676FCD1C891B7E8A7B79A(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnCompleted_6868AA2F41E676FCD1C891B7E8A7B79A");
+
+	Params::BP_ChargeLaserRifle_C_OnCompleted_6868AA2F41E676FCD1C891B7E8A7B79A Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnCompleted_1A67CE1042B43EF42A4334AFA2181CEE
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ChargeLaserRifle_C::OnCompleted_1A67CE1042B43EF42A4334AFA2181CEE(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnCompleted_1A67CE1042B43EF42A4334AFA2181CEE");
+
+	Params::BP_ChargeLaserRifle_C_OnCompleted_1A67CE1042B43EF42A4334AFA2181CEE Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnBlendOut_F04017F8494C2F37C78E51B48EBD2A1C
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ChargeLaserRifle_C::OnBlendOut_F04017F8494C2F37C78E51B48EBD2A1C(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnBlendOut_F04017F8494C2F37C78E51B48EBD2A1C");
+
+	Params::BP_ChargeLaserRifle_C_OnBlendOut_F04017F8494C2F37C78E51B48EBD2A1C Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnBlendOut_B8C41D4B4A5B4B1CCDEF6198D3783FEF
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ChargeLaserRifle_C::OnBlendOut_B8C41D4B4A5B4B1CCDEF6198D3783FEF(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnBlendOut_B8C41D4B4A5B4B1CCDEF6198D3783FEF");
+
+	Params::BP_ChargeLaserRifle_C_OnBlendOut_B8C41D4B4A5B4B1CCDEF6198D3783FEF Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnBlendOut_7D3D1A57488DAA75B92021BFFA4E3435
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ChargeLaserRifle_C::OnBlendOut_7D3D1A57488DAA75B92021BFFA4E3435(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnBlendOut_7D3D1A57488DAA75B92021BFFA4E3435");
+
+	Params::BP_ChargeLaserRifle_C_OnBlendOut_7D3D1A57488DAA75B92021BFFA4E3435 Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnBlendOut_6868AA2F41E676FCD1C891B7E8A7B79A
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ChargeLaserRifle_C::OnBlendOut_6868AA2F41E676FCD1C891B7E8A7B79A(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnBlendOut_6868AA2F41E676FCD1C891B7E8A7B79A");
+
+	Params::BP_ChargeLaserRifle_C_OnBlendOut_6868AA2F41E676FCD1C891B7E8A7B79A Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnBlendOut_1A67CE1042B43EF42A4334AFA2181CEE
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ChargeLaserRifle_C::OnBlendOut_1A67CE1042B43EF42A4334AFA2181CEE(class FName NotifyName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnBlendOut_1A67CE1042B43EF42A4334AFA2181CEE");
+
+	Params::BP_ChargeLaserRifle_C_OnBlendOut_1A67CE1042B43EF42A4334AFA2181CEE Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnAttachWeapon
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           attachActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ChargeLaserRifle_C::OnAttachWeapon(class AActor* attachActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnAttachWeapon");
+
+	Params::BP_ChargeLaserRifle_C_OnAttachWeapon Parms{};
+
+	Parms.attachActor = attachActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.GetTargetLocation
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FVector*                         targetPosition                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ChargeLaserRifle_C::GetTargetLocation(struct FVector* targetPosition)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "GetTargetLocation");
+
+	Params::BP_ChargeLaserRifle_C_GetTargetLocation Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (targetPosition != nullptr)
+		*targetPosition = std::move(Parms.targetPosition);
+}
+
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.GetMuzzleTransform
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FTransform*                      TF                                                     (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ChargeLaserRifle_C::GetMuzzleTransform(struct FTransform* TF)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "GetMuzzleTransform");
+
+	Params::BP_ChargeLaserRifle_C_GetMuzzleTransform Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (TF != nullptr)
+		*TF = std::move(Parms.TF);
+}
+
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.GetCurrentChargeValue
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// double*                                 ChargeValue_0                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ChargeLaserRifle_C::GetCurrentChargeValue(double* ChargeValue_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "GetCurrentChargeValue");
+
+	Params::BP_ChargeLaserRifle_C_GetCurrentChargeValue Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ChargeValue_0 != nullptr)
+		*ChargeValue_0 = Parms.ChargeValue_0;
+}
+
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.ExecuteUbergraph_BP_ChargeLaserRifle
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ChargeLaserRifle_C::ExecuteUbergraph_BP_ChargeLaserRifle(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "ExecuteUbergraph_BP_ChargeLaserRifle");
+
+	Params::BP_ChargeLaserRifle_C_ExecuteUbergraph_BP_ChargeLaserRifle Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.ChangeChargeValue
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_ChargeLaserRifle_C::OnRestartReload()
+void ABP_ChargeLaserRifle_C::ChangeChargeValue()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnRestartReload");
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "ChangeChargeValue");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.OnWeaponNotify
-// (Event, Public, BlueprintEvent)
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.CanShoot
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// EWeaponNotifyType                       Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   can                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ChargeLaserRifle_C::OnWeaponNotify(EWeaponNotifyType Type)
+void ABP_ChargeLaserRifle_C::CanShoot(bool* can)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "OnWeaponNotify");
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "CanShoot");
 
-	Params::BP_ChargeLaserRifle_C_OnWeaponNotify Parms{};
-
-	Parms.Type = Type;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_ChargeLaserRifle_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ChargeLaserRifle_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "ReceiveTick");
-
-	Params::BP_ChargeLaserRifle_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.ShootBullet
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_ChargeLaserRifle_C::ShootBullet()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "ShootBullet");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.GetLeftHandTransform
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
-// Parameters:
-// struct FTransform                       ReturnValue                                            (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-struct FTransform ABP_ChargeLaserRifle_C::GetLeftHandTransform() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "GetLeftHandTransform");
-
-	Params::BP_ChargeLaserRifle_C_GetLeftHandTransform Parms{};
+	Params::BP_ChargeLaserRifle_C_CanShoot Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	return Parms.ReturnValue;
+	if (can != nullptr)
+		*can = Parms.can;
 }
 
 
@@ -824,6 +804,26 @@ bool ABP_ChargeLaserRifle_C::IsUseLeftHandAttach() const
 		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "IsUseLeftHandAttach");
 
 	Params::BP_ChargeLaserRifle_C_IsUseLeftHandAttach Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_ChargeLaserRifle.BP_ChargeLaserRifle_C.GetLeftHandTransform
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// struct FTransform                       ReturnValue                                            (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+struct FTransform ABP_ChargeLaserRifle_C::GetLeftHandTransform() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ChargeLaserRifle_C", "GetLeftHandTransform");
+
+	Params::BP_ChargeLaserRifle_C_GetLeftHandTransform Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 

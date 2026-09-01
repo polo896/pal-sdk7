@@ -16,15 +16,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_WorkerRadialMenuContent.WBP_WorkerRadialMenuContent_C.SetText
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_WorkerRadialMenuContent_C_SetText final
-{
-public:
-	class FText                                   Text;                                              // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_WorkerRadialMenuContent_C_SetText;
-
 // Function WBP_WorkerRadialMenuContent.WBP_WorkerRadialMenuContent_C.SetTextColor
 // 0x0014 (0x0014 - 0x0000)
 struct WBP_WorkerRadialMenuContent_C_SetTextColor final
@@ -33,6 +24,15 @@ public:
 	struct FSlateColor                            NewColor;                                          // 0x0000(0x0014)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 DUMPER7_ASSERTS_WBP_WorkerRadialMenuContent_C_SetTextColor;
+
+// Function WBP_WorkerRadialMenuContent.WBP_WorkerRadialMenuContent_C.SetText
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_WorkerRadialMenuContent_C_SetText final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_WorkerRadialMenuContent_C_SetText;
 
 }
 

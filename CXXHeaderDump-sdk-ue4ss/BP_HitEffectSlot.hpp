@@ -4,11 +4,11 @@
 class UBP_HitEffectSlot_C : public UPalHitEffectSlot
 {
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0028 (size: 0x8)
-    TArray<TSoftObjectPtr<UNiagaraSystem>> PreLoadList;                               // 0x0030 (size: 0x10)
-    TArray<class UNiagaraSystem*> LoadCache;                                          // 0x0040 (size: 0x10)
+    TArray<TSoftObjectPtr<class UNiagaraSystem>> PreLoadList;                         // 0x0030 (size: 0x10)
+    TArray<UNiagaraSystem*> LoadCache;                                                // 0x0040 (size: 0x10)
     bool IsCrying;                                                                    // 0x0050 (size: 0x1)
-    TArray<class TSubclassOf<APalMapObject>> RockBPList;                              // 0x0058 (size: 0x10)
-    TArray<class TSubclassOf<APalMapObject>> TreeBPList;                              // 0x0068 (size: 0x10)
+    TArray<TSubclassOf<class APalMapObject>> RockBPList;                              // 0x0058 (size: 0x10)
+    TArray<TSubclassOf<class APalMapObject>> TreeBPList;                              // 0x0068 (size: 0x10)
     bool NewVar_0;                                                                    // 0x0078 (size: 0x1)
     FString RockBPName;                                                               // 0x0080 (size: 0x10)
     FString MeteorBPName;                                                             // 0x0090 (size: 0x10)
@@ -21,9 +21,9 @@ class UBP_HitEffectSlot_C : public UPalHitEffectSlot
     void SpawnSneakAttackEffect(FVector Location);
     void SpawnElementalHitEffectBullet(EPalElementType Element, FVector Location, double EffectScale);
     void SpawnElementalHitEffectNear(EPalElementType Element, FVector Location, double EffectScale);
-    void Spawn Elemental Hit Effect Far(EPalElementType Element, FVector Location, double EffectScale, bool IsPoison, TSoftObjectPtr<UNiagaraSystem> OverrideEffect);
+    void Spawn Elemental Hit Effect Far(EPalElementType Element, FVector Location, double EffectScale, bool IsPoison, TSoftObjectPtr<class UNiagaraSystem> OverrideEffect);
     void OnLoaded_D5A0C82B4BA3C329BE0E728CCA761919(class UObject* Loaded);
-    void LoadAndPlayEffect(TSoftObjectPtr<UNiagaraSystem> EffectPath, FTransform Transform);
+    void LoadAndPlayEffect(TSoftObjectPtr<class UNiagaraSystem> EffectPath, FTransform Transform);
     void Initialize();
     void PlayHitEffect(const FPalDamageInfo& Info);
     void CryCoolTime(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo);

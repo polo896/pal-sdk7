@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "WBP_IndividualParameterBindWidget_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -32,12 +32,12 @@ public:
 	class UPalIndividualCharacterHandle*          targetHandle;                                      // 0x0690(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Clear();
-	void ExecuteUbergraph_WBP_PalLoupe(int32 EntryPoint);
-	void OnInitialized();
-	void SetTargetPal(class UPalIndividualCharacterSlot* TargetSlot);
-	void UpdateHP(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& nowMaxHP);
 	void UpdateHunger(double nowHunger, double nowMaxHunger);
+	void UpdateHP(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& nowMaxHP);
+	void SetTargetPal(class UPalIndividualCharacterSlot* TargetSlot);
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_PalLoupe(int32 EntryPoint);
+	void Clear();
 
 public:
 	static class UClass* StaticClass()

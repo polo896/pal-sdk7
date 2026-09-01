@@ -33,16 +33,16 @@ public:
 	struct FPalDataTableRowName_UIInputAction     ResetFocusActionName;                              // 0x04A8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ChangeChatCategory();
-	void Destruct();
-	void ExecuteUbergraph_WBP_PalChatUIControlOverlay(int32 EntryPoint);
-	void On_Cancel_Force_Close();
-	void OnCancel_ForPad();
-	void OnClose();
-	void OnCompletedChatInput();
-	void OnResetFocus();
-	void OnSetup();
 	void SendChat();
+	void OnSetup();
+	void OnResetFocus();
+	void OnCompletedChatInput();
+	void OnClose();
+	void OnCancel_ForPad();
+	void On_Cancel_Force_Close();
+	void ExecuteUbergraph_WBP_PalChatUIControlOverlay(int32 EntryPoint);
+	void Destruct();
+	void ChangeChatCategory();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

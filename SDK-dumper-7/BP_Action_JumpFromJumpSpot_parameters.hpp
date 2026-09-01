@@ -14,15 +14,6 @@
 namespace SDK::Params
 {
 
-// Function BP_Action_JumpFromJumpSpot.BP_Action_JumpFromJumpSpot_C.CanNextActionCancel
-// 0x0001 (0x0001 - 0x0000)
-struct BP_Action_JumpFromJumpSpot_C_CanNextActionCancel final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Action_JumpFromJumpSpot_C_CanNextActionCancel;
-
 // Function BP_Action_JumpFromJumpSpot.BP_Action_JumpFromJumpSpot_C.CanStepCancel
 // 0x0001 (0x0001 - 0x0000)
 struct BP_Action_JumpFromJumpSpot_C_CanStepCancel final
@@ -31,6 +22,15 @@ public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_Action_JumpFromJumpSpot_C_CanStepCancel;
+
+// Function BP_Action_JumpFromJumpSpot.BP_Action_JumpFromJumpSpot_C.CanNextActionCancel
+// 0x0001 (0x0001 - 0x0000)
+struct BP_Action_JumpFromJumpSpot_C_CanNextActionCancel final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Action_JumpFromJumpSpot_C_CanNextActionCancel;
 
 }
 

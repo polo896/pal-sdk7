@@ -17,14 +17,15 @@
 namespace SDK::Params
 {
 
-// Function WBP_MapFilter_Win.WBP_MapFilter_Win_C.ForceFTEnable
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_MapFilter_Win_C_ForceFTEnable final
+// Function WBP_MapFilter_Win.WBP_MapFilter_Win_C.ChangeFilter
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_MapFilter_Win_C_ChangeFilter final
 {
 public:
-	bool                                          IsEnable;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalLocationType                              LocationType;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsEnable;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MapFilter_Win_C_ForceFTEnable;
+DUMPER7_ASSERTS_WBP_MapFilter_Win_C_ChangeFilter;
 
 // Function WBP_MapFilter_Win.WBP_MapFilter_Win_C.ExecuteUbergraph_WBP_MapFilter_Win
 // 0x00B0 (0x00B0 - 0x0000)
@@ -69,15 +70,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_MapFilter_Win_C_ExecuteUbergraph_WBP_MapFilter_Win;
 
-// Function WBP_MapFilter_Win.WBP_MapFilter_Win_C.ChangeFilter
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_MapFilter_Win_C_ChangeFilter final
+// Function WBP_MapFilter_Win.WBP_MapFilter_Win_C.ForceFTEnable
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_MapFilter_Win_C_ForceFTEnable final
 {
 public:
-	EPalLocationType                              LocationType;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsEnable;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsEnable;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_MapFilter_Win_C_ChangeFilter;
+DUMPER7_ASSERTS_WBP_MapFilter_Win_C_ForceFTEnable;
 
 }
 

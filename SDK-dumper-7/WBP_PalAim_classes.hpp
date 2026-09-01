@@ -47,26 +47,26 @@ public:
 	class UPalUIAimReticleBase*                   CurrentAdditionalWidget;                           // 0x0610(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ActivateAdditionalWidget(const struct FPalItemId& WeaponItemId, bool* bActivated);
-	void DisplayOutlineTarget(struct FHitResult& HitResult);
-	void EndThrowPalMode();
-	void ExecuteUbergraph_WBP_PalAim(int32 EntryPoint);
-	void Get_Reticle_Hit_Result(struct FHitResult* HitResult);
-	void GetNowSelectedOtomoParameter(class UPalCharacterParameterComponent** Parameter);
-	void InitializeReticleMap();
-	void On_Changed_UISettings(const struct FPalOptionUISettings& PrevSettings, const struct FPalOptionUISettings& NewSettings);
-	void On_Dead_Detail();
-	void OnChangedWeaon(class APalWeaponBase* Weapon);
-	void OnEndLiftCampPal();
-	void OnLiftCampPal(class APalCharacter* TargetCharacter);
-	void Raycast_Reticle_Direction_Body();
-	void SetGrapplingReticleVisible(bool IsVisible_0);
-	void Setup_AfterCreatedPlayer();
-	void Show_Assignable_Throwing_Pal(struct FHitResult& HitResult);
-	void StartThrowPalMode();
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void UpdateFishingReticle();
 	void UpdateGrapplingReticle();
+	void UpdateFishingReticle();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void StartThrowPalMode();
+	void Show_Assignable_Throwing_Pal(struct FHitResult& HitResult);
+	void Setup_AfterCreatedPlayer();
+	void SetGrapplingReticleVisible(bool IsVisible_0);
+	void Raycast_Reticle_Direction_Body();
+	void OnLiftCampPal(class APalCharacter* TargetCharacter);
+	void OnEndLiftCampPal();
+	void OnChangedWeaon(class APalWeaponBase* Weapon);
+	void On_Dead_Detail();
+	void On_Changed_UISettings(const struct FPalOptionUISettings& PrevSettings, const struct FPalOptionUISettings& NewSettings);
+	void InitializeReticleMap();
+	void GetNowSelectedOtomoParameter(class UPalCharacterParameterComponent** Parameter);
+	void Get_Reticle_Hit_Result(struct FHitResult* HitResult);
+	void ExecuteUbergraph_WBP_PalAim(int32 EntryPoint);
+	void EndThrowPalMode();
+	void DisplayOutlineTarget(struct FHitResult& HitResult);
+	void ActivateAdditionalWidget(const struct FPalItemId& WeaponItemId, bool* bActivated);
 
 public:
 	static class UClass* StaticClass()

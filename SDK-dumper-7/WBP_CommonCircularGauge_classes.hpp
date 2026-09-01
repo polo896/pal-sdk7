@@ -30,12 +30,12 @@ public:
 	double                                        DisplayRateMax;                                    // 0x0298(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void ExecuteUbergraph_WBP_CommonCircularGauge(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime);
-	void ReflectRateToImage();
-	void SetTargetValue(double Value);
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void SetTargetValue(double Value);
+	void ReflectRateToImage();
+	void PreConstruct(bool IsDesignTime);
+	void ExecuteUbergraph_WBP_CommonCircularGauge(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

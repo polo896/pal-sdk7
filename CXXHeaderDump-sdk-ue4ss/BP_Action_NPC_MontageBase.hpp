@@ -4,7 +4,7 @@
 class UBP_Action_NPC_MontageBase_C : public UPalActionBase
 {
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0160 (size: 0x8)
-    TSoftObjectPtr<UAnimMontage> Montage;                                             // 0x0168 (size: 0x30)
+    TSoftObjectPtr<class UAnimMontage> Montage;                                       // 0x0168 (size: 0x30)
     class UAnimMontage* As Anim Montage;                                              // 0x0198 (size: 0x8)
     TSubclassOf<class ABP_Prop_Base_C> Prop;                                          // 0x01A0 (size: 0x8)
     FName PropAttachSocket;                                                           // 0x01A8 (size: 0x8)

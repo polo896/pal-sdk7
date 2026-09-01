@@ -59,7 +59,7 @@ class UCSGMeshesTool : public UBaseCreateFromSelectedTool
 {
     class UCSGMeshesToolProperties* CSGProperties;                                    // 0x0100 (size: 0x8)
     class UTrimMeshesToolProperties* TrimProperties;                                  // 0x0108 (size: 0x8)
-    TArray<class UPreviewMesh*> OriginalMeshPreviews;                                 // 0x0120 (size: 0x10)
+    TArray<UPreviewMesh*> OriginalMeshPreviews;                                       // 0x0120 (size: 0x10)
     class UMaterialInstanceDynamic* PreviewsGhostMaterial;                            // 0x0130 (size: 0x8)
     class ULineSetComponent* DrawnLineSet;                                            // 0x0138 (size: 0x8)
 
@@ -702,8 +702,8 @@ class UUVLayoutTool : public UMultiSelectionMeshEditingTool
     class UMeshUVChannelProperties* UVChannelProperties;                              // 0x00B8 (size: 0x8)
     class UUVLayoutProperties* BasicProperties;                                       // 0x00C0 (size: 0x8)
     class UExistingMeshMaterialProperties* MaterialSettings;                          // 0x00C8 (size: 0x8)
-    TArray<class UMeshOpPreviewWithBackgroundCompute*> Previews;                      // 0x00D0 (size: 0x10)
-    TArray<class UUVLayoutOperatorFactory*> Factories;                                // 0x00E0 (size: 0x10)
+    TArray<UMeshOpPreviewWithBackgroundCompute*> Previews;                            // 0x00D0 (size: 0x10)
+    TArray<UUVLayoutOperatorFactory*> Factories;                                      // 0x00E0 (size: 0x10)
     class UUVLayoutPreview* UVLayoutView;                                             // 0x0150 (size: 0x8)
 
 }; // Size: 0x160

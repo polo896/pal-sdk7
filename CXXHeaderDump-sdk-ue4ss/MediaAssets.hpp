@@ -168,7 +168,7 @@ class UMediaPlayer : public UObject
 
 class UMediaPlaylist : public UObject
 {
-    TArray<class UMediaSource*> Items;                                                // 0x0028 (size: 0x10)
+    TArray<UMediaSource*> Items;                                                      // 0x0028 (size: 0x10)
 
     bool Replace(int32 Index, class UMediaSource* Replacement);
     bool RemoveAt(int32 Index);

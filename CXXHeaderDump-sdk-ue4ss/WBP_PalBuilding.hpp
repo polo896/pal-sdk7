@@ -13,7 +13,7 @@ class UWBP_PalBuilding_C : public UPalUIBuilding
     class UWBP_IngameConstruction_C* WBP_IngameConstruction;                          // 0x04A0 (size: 0x8)
     class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon;                                // 0x04A8 (size: 0x8)
     class UBP_PalUIBuildingModel_C* Model;                                            // 0x04B0 (size: 0x8)
-    TMap<class EPalMapObjectOperationResult, class FDataTableRowHandle> FailedMessageMap; // 0x04B8 (size: 0x50)
+    TMap<EPalMapObjectOperationResult, FDataTableRowHandle> FailedMessageMap;         // 0x04B8 (size: 0x50)
     FDataTableRowHandle FailedMessageOther;                                           // 0x0508 (size: 0x10)
     class UPalBuilderComponent* BuilderComponent;                                     // 0x0518 (size: 0x8)
     EPalMapObjectOperationResult lastWarningType;                                     // 0x0520 (size: 0x1)

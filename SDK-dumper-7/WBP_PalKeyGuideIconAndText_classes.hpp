@@ -29,8 +29,8 @@ public:
 	struct FPalDataTableRowName_UIInputAction     BindingActionName;                                 // 0x0468(0x0008)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_PalKeyGuideIconAndText(int32 EntryPoint);
 	void OnInitialized();
+	void ExecuteUbergraph_WBP_PalKeyGuideIconAndText(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

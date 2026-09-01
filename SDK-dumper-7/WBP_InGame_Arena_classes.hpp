@@ -34,20 +34,20 @@ public:
 	bool                                          UISet;                                             // 0x02B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void DrawUI();
-	void ExecuteUbergraph_WBP_InGame_Arena(int32 EntryPoint);
-	void Finished_768F02F4466EDA7C23960580EBC813FD();
-	void Finished_7F5F79824D29F484AC06A58453CB091A();
-	void Finished_C631FD5D4353912F9F507C91C9B4CBB7();
-	void Finished_F607615543D9F7F46B1668A5448DE853();
-	void GetLocalBattleResult(struct FPalArenaRankPointChangeResult* Result, bool* Finded);
-	void OnArenaSequenceStart(class UPalArenaSequencer* ArenaSequence);
-	void OnExitArena();
-	void OnSequenceStageChanged(class UPalArenaSequencer* Sequencer, EPalArenaSequenceType PrevType, EPalArenaSequenceType AfterType);
-	void ReadyUI();
-	void SetResult();
-	void SetUIOnce();
 	void WinUI(const class FString& WinnerName);
+	void SetUIOnce();
+	void SetResult();
+	void ReadyUI();
+	void OnSequenceStageChanged(class UPalArenaSequencer* Sequencer, EPalArenaSequenceType PrevType, EPalArenaSequenceType AfterType);
+	void OnExitArena();
+	void OnArenaSequenceStart(class UPalArenaSequencer* ArenaSequence);
+	void GetLocalBattleResult(struct FPalArenaRankPointChangeResult* Result, bool* Finded);
+	void Finished_F607615543D9F7F46B1668A5448DE853();
+	void Finished_C631FD5D4353912F9F507C91C9B4CBB7();
+	void Finished_7F5F79824D29F484AC06A58453CB091A();
+	void Finished_768F02F4466EDA7C23960580EBC813FD();
+	void ExecuteUbergraph_WBP_InGame_Arena(int32 EntryPoint);
+	void DrawUI();
 
 public:
 	static class UClass* StaticClass()

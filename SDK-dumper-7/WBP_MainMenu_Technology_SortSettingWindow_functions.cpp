@@ -17,77 +17,135 @@
 namespace SDK
 {
 
-// Function WBP_MainMenu_Technology_SortSettingWindow.WBP_MainMenu_Technology_SortSettingWindow_C.BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_CommonButton_CheckAll_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_MainMenu_Technology_SortSettingWindow_C::BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_CommonButton_CheckAll_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_SortSettingWindow_C", "BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_CommonButton_CheckAll_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu_Technology_SortSettingWindow.WBP_MainMenu_Technology_SortSettingWindow_C.BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_MainMenu_Technology_SortSettingWindow_C::BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_SortSettingWindow_C", "BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu_Technology_SortSettingWindow.WBP_MainMenu_Technology_SortSettingWindow_C.BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_CommonButton_UncheckAll_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_MainMenu_Technology_SortSettingWindow_C::BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_CommonButton_UncheckAll_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_SortSettingWindow_C", "BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_CommonButton_UncheckAll_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu_Technology_SortSettingWindow.WBP_MainMenu_Technology_SortSettingWindow_C.BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_MainMenu_Technology_SortSettingWindow_C::BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_SortSettingWindow_C", "BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MainMenu_Technology_SortSettingWindow.WBP_MainMenu_Technology_SortSettingWindow_C.BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_PalInvisibleButton_ShowUnlocked_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_MainMenu_Technology_SortSettingWindow.WBP_MainMenu_Technology_SortSettingWindow_C.Setup
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const TSet<EPalItemTypeA>&              NowItemFilter                                          (BlueprintVisible, BlueprintReadOnly, Parm)
+// const TSet<EPalBuildObjectTypeA>&       NowBuildFilter                                         (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_MainMenu_Technology_SortSettingWindow_C::BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_PalInvisibleButton_ShowUnlocked_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_MainMenu_Technology_SortSettingWindow_C::Setup(const TSet<EPalItemTypeA>& NowItemFilter, const TSet<EPalBuildObjectTypeA>& NowBuildFilter)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_SortSettingWindow_C", "BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_PalInvisibleButton_ShowUnlocked_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_MainMenu_Technology_SortSettingWindow_C", "Setup");
 
-	Params::WBP_MainMenu_Technology_SortSettingWindow_C_BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_PalInvisibleButton_ShowUnlocked_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_MainMenu_Technology_SortSettingWindow_C_Setup Parms{};
 
-	Parms.Button = Button;
+	Parms.NowItemFilter = std::move(NowItemFilter);
+	Parms.NowBuildFilter = std::move(NowBuildFilter);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu_Technology_SortSettingWindow.WBP_MainMenu_Technology_SortSettingWindow_C.SetAll
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Check                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_Technology_SortSettingWindow_C::SetAll(bool Check)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Technology_SortSettingWindow_C", "SetAll");
+
+	Params::WBP_MainMenu_Technology_SortSettingWindow_C_SetAll Parms{};
+
+	Parms.Check = Check;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu_Technology_SortSettingWindow.WBP_MainMenu_Technology_SortSettingWindow_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_MainMenu_Technology_SortSettingWindow_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Technology_SortSettingWindow_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MainMenu_Technology_SortSettingWindow.WBP_MainMenu_Technology_SortSettingWindow_C.OnItemFilterChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalItemTypeA                           ItemType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    CheckState                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_Technology_SortSettingWindow_C::OnItemFilterChanged(EPalItemTypeA ItemType, bool CheckState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Technology_SortSettingWindow_C", "OnItemFilterChanged");
+
+	Params::WBP_MainMenu_Technology_SortSettingWindow_C_OnItemFilterChanged Parms{};
+
+	Parms.ItemType = ItemType;
+	Parms.CheckState = CheckState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu_Technology_SortSettingWindow.WBP_MainMenu_Technology_SortSettingWindow_C.OnBuildFilterChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalBuildObjectTypeA                    BuildType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    CheckState                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_Technology_SortSettingWindow_C::OnBuildFilterChanged(EPalBuildObjectTypeA BuildType, bool CheckState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Technology_SortSettingWindow_C", "OnBuildFilterChanged");
+
+	Params::WBP_MainMenu_Technology_SortSettingWindow_C_OnBuildFilterChanged Parms{};
+
+	Parms.BuildType = BuildType;
+	Parms.CheckState = CheckState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MainMenu_Technology_SortSettingWindow.WBP_MainMenu_Technology_SortSettingWindow_C.FocusToConfirm
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_MainMenu_Technology_SortSettingWindow_C::FocusToConfirm()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Technology_SortSettingWindow_C", "FocusToConfirm");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MainMenu_Technology_SortSettingWindow.WBP_MainMenu_Technology_SortSettingWindow_C.ExecuteUbergraph_WBP_MainMenu_Technology_SortSettingWindow
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MainMenu_Technology_SortSettingWindow_C::ExecuteUbergraph_WBP_MainMenu_Technology_SortSettingWindow(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Technology_SortSettingWindow_C", "ExecuteUbergraph_WBP_MainMenu_Technology_SortSettingWindow");
+
+	Params::WBP_MainMenu_Technology_SortSettingWindow_C_ExecuteUbergraph_WBP_MainMenu_Technology_SortSettingWindow Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -116,137 +174,79 @@ class UWidget* UWBP_MainMenu_Technology_SortSettingWindow_C::Custom_Navigation_U
 }
 
 
-// Function WBP_MainMenu_Technology_SortSettingWindow.WBP_MainMenu_Technology_SortSettingWindow_C.ExecuteUbergraph_WBP_MainMenu_Technology_SortSettingWindow
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_MainMenu_Technology_SortSettingWindow.WBP_MainMenu_Technology_SortSettingWindow_C.BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_PalInvisibleButton_ShowUnlocked_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MainMenu_Technology_SortSettingWindow_C::ExecuteUbergraph_WBP_MainMenu_Technology_SortSettingWindow(int32 EntryPoint)
+void UWBP_MainMenu_Technology_SortSettingWindow_C::BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_PalInvisibleButton_ShowUnlocked_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_SortSettingWindow_C", "ExecuteUbergraph_WBP_MainMenu_Technology_SortSettingWindow");
+		Func = Class->GetFunction("WBP_MainMenu_Technology_SortSettingWindow_C", "BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_PalInvisibleButton_ShowUnlocked_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_MainMenu_Technology_SortSettingWindow_C_ExecuteUbergraph_WBP_MainMenu_Technology_SortSettingWindow Parms{};
+	Params::WBP_MainMenu_Technology_SortSettingWindow_C_BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_PalInvisibleButton_ShowUnlocked_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_MainMenu_Technology_SortSettingWindow.WBP_MainMenu_Technology_SortSettingWindow_C.FocusToConfirm
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_MainMenu_Technology_SortSettingWindow.WBP_MainMenu_Technology_SortSettingWindow_C.BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_MainMenu_Technology_SortSettingWindow_C::FocusToConfirm()
+void UWBP_MainMenu_Technology_SortSettingWindow_C::BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_SortSettingWindow_C", "FocusToConfirm");
+		Func = Class->GetFunction("WBP_MainMenu_Technology_SortSettingWindow_C", "BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_MainMenu_Technology_SortSettingWindow.WBP_MainMenu_Technology_SortSettingWindow_C.OnBuildFilterChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalBuildObjectTypeA                    BuildType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    CheckState                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_MainMenu_Technology_SortSettingWindow.WBP_MainMenu_Technology_SortSettingWindow_C.BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_CommonButton_UncheckAll_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_MainMenu_Technology_SortSettingWindow_C::OnBuildFilterChanged(EPalBuildObjectTypeA BuildType, bool CheckState)
+void UWBP_MainMenu_Technology_SortSettingWindow_C::BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_CommonButton_UncheckAll_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_SortSettingWindow_C", "OnBuildFilterChanged");
-
-	Params::WBP_MainMenu_Technology_SortSettingWindow_C_OnBuildFilterChanged Parms{};
-
-	Parms.BuildType = BuildType;
-	Parms.CheckState = CheckState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MainMenu_Technology_SortSettingWindow.WBP_MainMenu_Technology_SortSettingWindow_C.OnItemFilterChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalItemTypeA                           ItemType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    CheckState                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MainMenu_Technology_SortSettingWindow_C::OnItemFilterChanged(EPalItemTypeA ItemType, bool CheckState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_SortSettingWindow_C", "OnItemFilterChanged");
-
-	Params::WBP_MainMenu_Technology_SortSettingWindow_C_OnItemFilterChanged Parms{};
-
-	Parms.ItemType = ItemType;
-	Parms.CheckState = CheckState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MainMenu_Technology_SortSettingWindow.WBP_MainMenu_Technology_SortSettingWindow_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_MainMenu_Technology_SortSettingWindow_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_SortSettingWindow_C", "OnSetup");
+		Func = Class->GetFunction("WBP_MainMenu_Technology_SortSettingWindow_C", "BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_CommonButton_UncheckAll_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_MainMenu_Technology_SortSettingWindow.WBP_MainMenu_Technology_SortSettingWindow_C.SetAll
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Check                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_MainMenu_Technology_SortSettingWindow.WBP_MainMenu_Technology_SortSettingWindow_C.BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_MainMenu_Technology_SortSettingWindow_C::SetAll(bool Check)
+void UWBP_MainMenu_Technology_SortSettingWindow_C::BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_SortSettingWindow_C", "SetAll");
+		Func = Class->GetFunction("WBP_MainMenu_Technology_SortSettingWindow_C", "BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
 
-	Params::WBP_MainMenu_Technology_SortSettingWindow_C_SetAll Parms{};
-
-	Parms.Check = Check;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_MainMenu_Technology_SortSettingWindow.WBP_MainMenu_Technology_SortSettingWindow_C.Setup
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const TSet<EPalItemTypeA>&              NowItemFilter                                          (BlueprintVisible, BlueprintReadOnly, Parm)
-// const TSet<EPalBuildObjectTypeA>&       NowBuildFilter                                         (BlueprintVisible, BlueprintReadOnly, Parm)
+// Function WBP_MainMenu_Technology_SortSettingWindow.WBP_MainMenu_Technology_SortSettingWindow_C.BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_CommonButton_CheckAll_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_MainMenu_Technology_SortSettingWindow_C::Setup(const TSet<EPalItemTypeA>& NowItemFilter, const TSet<EPalBuildObjectTypeA>& NowBuildFilter)
+void UWBP_MainMenu_Technology_SortSettingWindow_C::BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_CommonButton_CheckAll_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_Technology_SortSettingWindow_C", "Setup");
+		Func = Class->GetFunction("WBP_MainMenu_Technology_SortSettingWindow_C", "BndEvt__WBP_MainMenu_Technology_SortSettingWindow_WBP_CommonButton_CheckAll_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature");
 
-	Params::WBP_MainMenu_Technology_SortSettingWindow_C_Setup Parms{};
-
-	Parms.NowItemFilter = std::move(NowItemFilter);
-	Parms.NowBuildFilter = std::move(NowBuildFilter);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

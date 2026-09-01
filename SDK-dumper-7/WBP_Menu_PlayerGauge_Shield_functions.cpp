@@ -17,49 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_Menu_PlayerGauge_Shield.WBP_Menu_PlayerGauge_Shield_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Menu_PlayerGauge_Shield_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_PlayerGauge_Shield_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Menu_PlayerGauge_Shield.WBP_Menu_PlayerGauge_Shield_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Menu_PlayerGauge_Shield_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_PlayerGauge_Shield_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Menu_PlayerGauge_Shield.WBP_Menu_PlayerGauge_Shield_C.ExecuteUbergraph_WBP_Menu_PlayerGauge_Shield
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_Menu_PlayerGauge_Shield.WBP_Menu_PlayerGauge_Shield_C.UpdateShieldMaxHP
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FFixedPoint64&             nowShieldMaxHP                                         (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void UWBP_Menu_PlayerGauge_Shield_C::ExecuteUbergraph_WBP_Menu_PlayerGauge_Shield(int32 EntryPoint)
+void UWBP_Menu_PlayerGauge_Shield_C::UpdateShieldMaxHP(const struct FFixedPoint64& nowShieldMaxHP)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_PlayerGauge_Shield_C", "ExecuteUbergraph_WBP_Menu_PlayerGauge_Shield");
+		Func = Class->GetFunction("WBP_Menu_PlayerGauge_Shield_C", "UpdateShieldMaxHP");
 
-	Params::WBP_Menu_PlayerGauge_Shield_C_ExecuteUbergraph_WBP_Menu_PlayerGauge_Shield Parms{};
+	Params::WBP_Menu_PlayerGauge_Shield_C_UpdateShieldMaxHP Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.nowShieldMaxHP = std::move(nowShieldMaxHP);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -87,23 +59,51 @@ void UWBP_Menu_PlayerGauge_Shield_C::UpdateShield(const struct FFixedPoint64& no
 }
 
 
-// Function WBP_Menu_PlayerGauge_Shield.WBP_Menu_PlayerGauge_Shield_C.UpdateShieldMaxHP
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Menu_PlayerGauge_Shield.WBP_Menu_PlayerGauge_Shield_C.ExecuteUbergraph_WBP_Menu_PlayerGauge_Shield
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const struct FFixedPoint64&             nowShieldMaxHP                                         (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Menu_PlayerGauge_Shield_C::UpdateShieldMaxHP(const struct FFixedPoint64& nowShieldMaxHP)
+void UWBP_Menu_PlayerGauge_Shield_C::ExecuteUbergraph_WBP_Menu_PlayerGauge_Shield(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_PlayerGauge_Shield_C", "UpdateShieldMaxHP");
+		Func = Class->GetFunction("WBP_Menu_PlayerGauge_Shield_C", "ExecuteUbergraph_WBP_Menu_PlayerGauge_Shield");
 
-	Params::WBP_Menu_PlayerGauge_Shield_C_UpdateShieldMaxHP Parms{};
+	Params::WBP_Menu_PlayerGauge_Shield_C_ExecuteUbergraph_WBP_Menu_PlayerGauge_Shield Parms{};
 
-	Parms.nowShieldMaxHP = std::move(nowShieldMaxHP);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Menu_PlayerGauge_Shield.WBP_Menu_PlayerGauge_Shield_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Menu_PlayerGauge_Shield_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Menu_PlayerGauge_Shield_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Menu_PlayerGauge_Shield.WBP_Menu_PlayerGauge_Shield_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Menu_PlayerGauge_Shield_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Menu_PlayerGauge_Shield_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

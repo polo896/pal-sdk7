@@ -26,9 +26,9 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_SkyCreatorLightingVolume_WildlifeSanctuary_C; // 0x02F8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_BP_SkyCreatorLightingVolume_WildlifeSanctuary(int32 EntryPoint);
-	void OnAlertStateChanged(EPalWildlifeSanctuaryAlertState NewState, class APalPlayerCharacter* DetectedPlayer);
 	void ReceiveBeginPlay();
+	void OnAlertStateChanged(EPalWildlifeSanctuaryAlertState NewState, class APalPlayerCharacter* DetectedPlayer);
+	void ExecuteUbergraph_BP_SkyCreatorLightingVolume_WildlifeSanctuary(int32 EntryPoint);
 
 	bool ShouldMaintainAlertWhilePresent() const;
 

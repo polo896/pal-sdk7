@@ -17,23 +17,17 @@
 namespace SDK
 {
 
-// Function WBP_MapPoint_Info_RespawnData.WBP_MapPoint_Info_RespawnData_C.SetRank
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Rank                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_MapPoint_Info_RespawnData.WBP_MapPoint_Info_RespawnData_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_MapPoint_Info_RespawnData_C::SetRank(int32 Rank)
+void UWBP_MapPoint_Info_RespawnData_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapPoint_Info_RespawnData_C", "SetRank");
+		Func = Class->GetFunction("WBP_MapPoint_Info_RespawnData_C", "Construct");
 
-	Params::WBP_MapPoint_Info_RespawnData_C_SetRank Parms{};
-
-	Parms.Rank = Rank;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -57,17 +51,23 @@ void UWBP_MapPoint_Info_RespawnData_C::ExecuteUbergraph_WBP_MapPoint_Info_Respaw
 }
 
 
-// Function WBP_MapPoint_Info_RespawnData.WBP_MapPoint_Info_RespawnData_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_MapPoint_Info_RespawnData.WBP_MapPoint_Info_RespawnData_C.SetRank
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Rank                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MapPoint_Info_RespawnData_C::Construct()
+void UWBP_MapPoint_Info_RespawnData_C::SetRank(int32 Rank)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapPoint_Info_RespawnData_C", "Construct");
+		Func = Class->GetFunction("WBP_MapPoint_Info_RespawnData_C", "SetRank");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_MapPoint_Info_RespawnData_C_SetRank Parms{};
+
+	Parms.Rank = Rank;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

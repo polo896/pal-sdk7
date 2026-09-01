@@ -33,8 +33,8 @@ class UWBP_PalDamageText_C : public UPalUIDamageTextBase
     FWBP_PalDamageText_COnEndOutAnim OnEndOutAnim;                                    // 0x0560 (size: 0x10)
     void OnEndOutAnim(class UWBP_PalDamageText_C* Widget);
     FTimerHandle WaitEndAnimTimerhandle;                                              // 0x0570 (size: 0x8)
-    TArray<class USizeBox*> AdditionalEffetcSizeBoxArray;                             // 0x0578 (size: 0x10)
-    TArray<class UImage*> AdditionalEffectIconArray;                                  // 0x0588 (size: 0x10)
+    TArray<USizeBox*> AdditionalEffetcSizeBoxArray;                                   // 0x0578 (size: 0x10)
+    TArray<UImage*> AdditionalEffectIconArray;                                        // 0x0588 (size: 0x10)
 
     void SetAdditionalPassiveDamageRate(double AdditionalPassiveRate);
     void SetElementEffect(TArray<EPalAdditionalEffectType>& AdditionalEffect);

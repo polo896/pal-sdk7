@@ -17,105 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_IngameMenuConstruction_ItemSlot.WBP_IngameMenuConstruction_ItemSlot_C.AnmEvent_CannotBuild_NoBlueprint
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameMenuConstruction_ItemSlot_C::AnmEvent_CannotBuild_NoBlueprint()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenuConstruction_ItemSlot_C", "AnmEvent_CannotBuild_NoBlueprint");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenuConstruction_ItemSlot.WBP_IngameMenuConstruction_ItemSlot_C.AnmEvent_CannotBuild_NotEnoughMaterials
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameMenuConstruction_ItemSlot_C::AnmEvent_CannotBuild_NotEnoughMaterials()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenuConstruction_ItemSlot_C", "AnmEvent_CannotBuild_NotEnoughMaterials");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenuConstruction_ItemSlot.WBP_IngameMenuConstruction_ItemSlot_C.AnmEvent_CannotBuild_NoText
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameMenuConstruction_ItemSlot_C::AnmEvent_CannotBuild_NoText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenuConstruction_ItemSlot_C", "AnmEvent_CannotBuild_NoText");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenuConstruction_ItemSlot.WBP_IngameMenuConstruction_ItemSlot_C.AnmEvent_Small
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameMenuConstruction_ItemSlot_C::AnmEvent_Small()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenuConstruction_ItemSlot_C", "AnmEvent_Small");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenuConstruction_ItemSlot.WBP_IngameMenuConstruction_ItemSlot_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_IngameMenuConstruction_ItemSlot_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenuConstruction_ItemSlot_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenuConstruction_ItemSlot.WBP_IngameMenuConstruction_ItemSlot_C.DisableTextForDeck
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameMenuConstruction_ItemSlot_C::DisableTextForDeck()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenuConstruction_ItemSlot_C", "DisableTextForDeck");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenuConstruction_ItemSlot.WBP_IngameMenuConstruction_ItemSlot_C.ExecuteUbergraph_WBP_IngameMenuConstruction_ItemSlot
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_IngameMenuConstruction_ItemSlot.WBP_IngameMenuConstruction_ItemSlot_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FPalBuildObjectData&       BuildObjectData_0                                      (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_IngameMenuConstruction_ItemSlot_C::ExecuteUbergraph_WBP_IngameMenuConstruction_ItemSlot(int32 EntryPoint)
+void UWBP_IngameMenuConstruction_ItemSlot_C::Setup(const struct FPalBuildObjectData& BuildObjectData_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenuConstruction_ItemSlot_C", "ExecuteUbergraph_WBP_IngameMenuConstruction_ItemSlot");
+		Func = Class->GetFunction("WBP_IngameMenuConstruction_ItemSlot_C", "Setup");
 
-	Params::WBP_IngameMenuConstruction_ItemSlot_C_ExecuteUbergraph_WBP_IngameMenuConstruction_ItemSlot Parms{};
+	Params::WBP_IngameMenuConstruction_ItemSlot_C_Setup Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.BuildObjectData_0 = std::move(BuildObjectData_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -141,23 +57,107 @@ void UWBP_IngameMenuConstruction_ItemSlot_C::SetNewIconVisibility(bool Visable)
 }
 
 
-// Function WBP_IngameMenuConstruction_ItemSlot.WBP_IngameMenuConstruction_ItemSlot_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenuConstruction_ItemSlot.WBP_IngameMenuConstruction_ItemSlot_C.ExecuteUbergraph_WBP_IngameMenuConstruction_ItemSlot
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const struct FPalBuildObjectData&       BuildObjectData_0                                      (BlueprintVisible, BlueprintReadOnly, Parm)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenuConstruction_ItemSlot_C::Setup(const struct FPalBuildObjectData& BuildObjectData_0)
+void UWBP_IngameMenuConstruction_ItemSlot_C::ExecuteUbergraph_WBP_IngameMenuConstruction_ItemSlot(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenuConstruction_ItemSlot_C", "Setup");
+		Func = Class->GetFunction("WBP_IngameMenuConstruction_ItemSlot_C", "ExecuteUbergraph_WBP_IngameMenuConstruction_ItemSlot");
 
-	Params::WBP_IngameMenuConstruction_ItemSlot_C_Setup Parms{};
+	Params::WBP_IngameMenuConstruction_ItemSlot_C_ExecuteUbergraph_WBP_IngameMenuConstruction_ItemSlot Parms{};
 
-	Parms.BuildObjectData_0 = std::move(BuildObjectData_0);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenuConstruction_ItemSlot.WBP_IngameMenuConstruction_ItemSlot_C.DisableTextForDeck
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngameMenuConstruction_ItemSlot_C::DisableTextForDeck()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenuConstruction_ItemSlot_C", "DisableTextForDeck");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenuConstruction_ItemSlot.WBP_IngameMenuConstruction_ItemSlot_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_IngameMenuConstruction_ItemSlot_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenuConstruction_ItemSlot_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenuConstruction_ItemSlot.WBP_IngameMenuConstruction_ItemSlot_C.AnmEvent_Small
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngameMenuConstruction_ItemSlot_C::AnmEvent_Small()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenuConstruction_ItemSlot_C", "AnmEvent_Small");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenuConstruction_ItemSlot.WBP_IngameMenuConstruction_ItemSlot_C.AnmEvent_CannotBuild_NoText
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngameMenuConstruction_ItemSlot_C::AnmEvent_CannotBuild_NoText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenuConstruction_ItemSlot_C", "AnmEvent_CannotBuild_NoText");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenuConstruction_ItemSlot.WBP_IngameMenuConstruction_ItemSlot_C.AnmEvent_CannotBuild_NotEnoughMaterials
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngameMenuConstruction_ItemSlot_C::AnmEvent_CannotBuild_NotEnoughMaterials()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenuConstruction_ItemSlot_C", "AnmEvent_CannotBuild_NotEnoughMaterials");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenuConstruction_ItemSlot.WBP_IngameMenuConstruction_ItemSlot_C.AnmEvent_CannotBuild_NoBlueprint
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngameMenuConstruction_ItemSlot_C::AnmEvent_CannotBuild_NoBlueprint()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenuConstruction_ItemSlot_C", "AnmEvent_CannotBuild_NoBlueprint");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

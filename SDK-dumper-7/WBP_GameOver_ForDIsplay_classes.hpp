@@ -35,24 +35,24 @@ public:
 	struct FDataTableRowHandle                    ResetCharacterDialogMsgID;                         // 0x04B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void BndEvt__WBP_GameOver_ForDIsplay_WBP_GameOver_Defeat_K2Node_ComponentBoundEvent_0_OnClickResetCharacter__DelegateSignature();
-	void ConfirmRespawn();
-	void ConfirmSurrenderRaidBossArea();
-	void Destruct();
-	void ExecuteUbergraph_WBP_GameOver_ForDIsplay(int32 EntryPoint);
-	void HideWaiting();
-	bool IsHardcoreView();
-	void OnCancelAction();
-	void OnClickedRespawnButton();
-	void OnClosedCheckResetChaarcetrDialog(bool bResult);
-	void OnEndedRespawnBlockTime();
-	void OnFinishedClose();
-	void OnFinishedOpen();
-	void OnInitialized();
-	void OnReceivedConfirmSurrenderRaidBossArea(bool bResult);
-	void OnSetup();
-	void ShowWaiting();
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void ShowWaiting();
+	void OnSetup();
+	void OnReceivedConfirmSurrenderRaidBossArea(bool bResult);
+	void OnInitialized();
+	void OnFinishedOpen();
+	void OnFinishedClose();
+	void OnEndedRespawnBlockTime();
+	void OnClosedCheckResetChaarcetrDialog(bool bResult);
+	void OnClickedRespawnButton();
+	void OnCancelAction();
+	bool IsHardcoreView();
+	void HideWaiting();
+	void ExecuteUbergraph_WBP_GameOver_ForDIsplay(int32 EntryPoint);
+	void Destruct();
+	void ConfirmSurrenderRaidBossArea();
+	void ConfirmRespawn();
+	void BndEvt__WBP_GameOver_ForDIsplay_WBP_GameOver_Defeat_K2Node_ComponentBoundEvent_0_OnClickResetCharacter__DelegateSignature();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

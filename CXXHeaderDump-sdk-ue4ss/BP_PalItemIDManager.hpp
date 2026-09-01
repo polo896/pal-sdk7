@@ -3,7 +3,7 @@
 
 class UBP_PalItemIDManager_C : public UPalItemIDManager
 {
-    TMap<class EPalElementType, class FPalItemPalEggDataHandle> PalEggStaticItemIdMap; // 0x0168 (size: 0x50)
+    TMap<EPalElementType, FPalItemPalEggDataHandle> PalEggStaticItemIdMap;            // 0x0168 (size: 0x50)
     FDataTableRowHandle DefaultPalEggStaticItemId;                                    // 0x01B8 (size: 0x10)
     FPalItemPalEggDataHandle WorldTreePalEggStaticItemIds;                            // 0x01C8 (size: 0x10)
     FPalItemPalEggDataHandle MutationPalEggStaticItemIds;                             // 0x01D8 (size: 0x10)

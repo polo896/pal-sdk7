@@ -45,13 +45,13 @@ public:
 	struct FTimerHandle                           DelayCloseExpTimer;                                // 0x0318(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_End();
-	void AnmEvent_Start();
-	void Construct();
-	void DelayClose_Exp();
-	void Display_Region(class FName RegionNameID);
-	void ExecuteUbergraph_WBP_IngamePlaceName(int32 EntryPoint);
 	void OnCloseTimerEnd();
+	void ExecuteUbergraph_WBP_IngamePlaceName(int32 EntryPoint);
+	void Display_Region(class FName RegionNameID);
+	void DelayClose_Exp();
+	void Construct();
+	void AnmEvent_Start();
+	void AnmEvent_End();
 
 public:
 	static class UClass* StaticClass()

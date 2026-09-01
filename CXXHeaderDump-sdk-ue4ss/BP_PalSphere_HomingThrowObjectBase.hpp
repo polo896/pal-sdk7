@@ -11,8 +11,8 @@ class ABP_PalSphere_HomingThrowObjectBase_C : public ABP_PalSphere_ThrowObject_C
     FVector InitVelocity;                                                             // 0x0580 (size: 0x18)
     FVector HomingFowerd;                                                             // 0x0598 (size: 0x18)
     double ZVelocity;                                                                 // 0x05B0 (size: 0x8)
-    TMap<class EPalCaptureSphereLevelType, class UMaterialInstance*> MaterialMap;     // 0x05B8 (size: 0x50)
-    TMap<class EPalCaptureSphereLevelType, class TSubclassOf<ABP_PalCaptureBodyBase_C>> BodyClassMap; // 0x0608 (size: 0x50)
+    TMap<EPalCaptureSphereLevelType, UMaterialInstance*> MaterialMap;                 // 0x05B8 (size: 0x50)
+    TMap<EPalCaptureSphereLevelType, TSubclassOf<class ABP_PalCaptureBodyBase_C>> BodyClassMap; // 0x0608 (size: 0x50)
     EPalCaptureSphereLevelType CaptureLevelType;                                      // 0x0658 (size: 0x1)
     double CachedHomingMagnitude;                                                     // 0x0660 (size: 0x8)
 

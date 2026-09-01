@@ -9,7 +9,7 @@ class ABP_BuildObject_Wood_Foundation_C : public APalBuildObjectBasicBase
     class UBoxComponent* CheckOverlapCollision;                                       // 0x0798 (size: 0x8)
     class USceneComponent* Root;                                                      // 0x07A0 (size: 0x8)
 
-    void GetStaticMeshComponents(TArray<class UStaticMeshComponent*>& OutComponents);
+    void GetStaticMeshComponents(TArray<UStaticMeshComponent*>& OutComponents);
     void GetStaticMeshInfos(TArray<FPalStaticMeshImposterStaticMeshInfo>& OutStaticMeshInfo);
 }; // Size: 0x7A8
 

@@ -17,79 +17,82 @@
 namespace SDK
 {
 
-// Function WBP_Paldex_tabset.WBP_Paldex_tabset_C.BndEvt__WBP_Paldex_tabset_WBP_Main_Menu_Tab_Key_L_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Paldex_tabset_C::BndEvt__WBP_Paldex_tabset_WBP_Main_Menu_Tab_Key_L_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_tabset_C", "BndEvt__WBP_Paldex_tabset_WBP_Main_Menu_Tab_Key_L_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Paldex_tabset.WBP_Paldex_tabset_C.BndEvt__WBP_Paldex_tabset_WBP_Main_Menu_Tab_Key_R_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Paldex_tabset_C::BndEvt__WBP_Paldex_tabset_WBP_Main_Menu_Tab_Key_R_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_tabset_C", "BndEvt__WBP_Paldex_tabset_WBP_Main_Menu_Tab_Key_R_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Paldex_tabset.WBP_Paldex_tabset_C.BndEvt__WBP_Paldex_tabset_WBP_Paldex_tab_Distribution_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Paldex_tabset_C::BndEvt__WBP_Paldex_tabset_WBP_Paldex_tab_Distribution_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_tabset_C", "BndEvt__WBP_Paldex_tabset_WBP_Paldex_tab_Distribution_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Paldex_tabset.WBP_Paldex_tabset_C.BndEvt__WBP_Paldex_tabset_WBP_Paldex_tab_Model_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Paldex_tabset_C::BndEvt__WBP_Paldex_tabset_WBP_Paldex_tab_Model_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_tabset_C", "BndEvt__WBP_Paldex_tabset_WBP_Paldex_tab_Model_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Paldex_tabset.WBP_Paldex_tabset_C.ExecuteUbergraph_WBP_Paldex_tabset
-// (Final, UbergraphFunction)
+// Function WBP_Paldex_tabset.WBP_Paldex_tabset_C.RegisterPanelWidget
+// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPanelWidget**                    PanelWidget                                            (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Paldex_tabset_C::ExecuteUbergraph_WBP_Paldex_tabset(int32 EntryPoint)
+void UWBP_Paldex_tabset_C::RegisterPanelWidget(class UPanelWidget** PanelWidget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_tabset_C", "ExecuteUbergraph_WBP_Paldex_tabset");
+		Func = Class->GetFunction("WBP_Paldex_tabset_C", "RegisterPanelWidget");
 
-	Params::WBP_Paldex_tabset_C_ExecuteUbergraph_WBP_Paldex_tabset Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Params::WBP_Paldex_tabset_C_RegisterPanelWidget Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (PanelWidget != nullptr)
+		*PanelWidget = Parms.PanelWidget;
+}
+
+
+// Function WBP_Paldex_tabset.WBP_Paldex_tabset_C.OnPrevEvent
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   OldIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Paldex_tabset_C::OnPrevEvent(int32 OldIndex, int32 NewIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_tabset_C", "OnPrevEvent");
+
+	Params::WBP_Paldex_tabset_C_OnPrevEvent Parms{};
+
+	Parms.OldIndex = OldIndex;
+	Parms.NewIndex = NewIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Paldex_tabset.WBP_Paldex_tabset_C.OnNextEvent
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   OldIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Paldex_tabset_C::OnNextEvent(int32 OldIndex, int32 NewIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_tabset_C", "OnNextEvent");
+
+	Params::WBP_Paldex_tabset_C_OnNextEvent Parms{};
+
+	Parms.OldIndex = OldIndex;
+	Parms.NewIndex = NewIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Paldex_tabset.WBP_Paldex_tabset_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Paldex_tabset_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_tabset_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -117,82 +120,79 @@ void UWBP_Paldex_tabset_C::OnChangedIndexEvent(int32 OldIndex, int32 NewIndex, c
 }
 
 
-// Function WBP_Paldex_tabset.WBP_Paldex_tabset_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Paldex_tabset.WBP_Paldex_tabset_C.ExecuteUbergraph_WBP_Paldex_tabset
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Paldex_tabset_C::OnInitialized()
+void UWBP_Paldex_tabset_C::ExecuteUbergraph_WBP_Paldex_tabset(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_tabset_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_Paldex_tabset_C", "ExecuteUbergraph_WBP_Paldex_tabset");
+
+	Params::WBP_Paldex_tabset_C_ExecuteUbergraph_WBP_Paldex_tabset Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Paldex_tabset.WBP_Paldex_tabset_C.BndEvt__WBP_Paldex_tabset_WBP_Paldex_tab_Model_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Paldex_tabset_C::BndEvt__WBP_Paldex_tabset_WBP_Paldex_tab_Model_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Paldex_tabset_C", "BndEvt__WBP_Paldex_tabset_WBP_Paldex_tab_Model_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Paldex_tabset.WBP_Paldex_tabset_C.OnNextEvent
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   OldIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Paldex_tabset.WBP_Paldex_tabset_C.BndEvt__WBP_Paldex_tabset_WBP_Paldex_tab_Distribution_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_Paldex_tabset_C::OnNextEvent(int32 OldIndex, int32 NewIndex)
+void UWBP_Paldex_tabset_C::BndEvt__WBP_Paldex_tabset_WBP_Paldex_tab_Distribution_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_tabset_C", "OnNextEvent");
+		Func = Class->GetFunction("WBP_Paldex_tabset_C", "BndEvt__WBP_Paldex_tabset_WBP_Paldex_tab_Distribution_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
 
-	Params::WBP_Paldex_tabset_C_OnNextEvent Parms{};
-
-	Parms.OldIndex = OldIndex;
-	Parms.NewIndex = NewIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Paldex_tabset.WBP_Paldex_tabset_C.OnPrevEvent
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   OldIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Paldex_tabset.WBP_Paldex_tabset_C.BndEvt__WBP_Paldex_tabset_WBP_Main_Menu_Tab_Key_R_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_Paldex_tabset_C::OnPrevEvent(int32 OldIndex, int32 NewIndex)
+void UWBP_Paldex_tabset_C::BndEvt__WBP_Paldex_tabset_WBP_Main_Menu_Tab_Key_R_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_tabset_C", "OnPrevEvent");
+		Func = Class->GetFunction("WBP_Paldex_tabset_C", "BndEvt__WBP_Paldex_tabset_WBP_Main_Menu_Tab_Key_R_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature");
 
-	Params::WBP_Paldex_tabset_C_OnPrevEvent Parms{};
-
-	Parms.OldIndex = OldIndex;
-	Parms.NewIndex = NewIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Paldex_tabset.WBP_Paldex_tabset_C.RegisterPanelWidget
-// (Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPanelWidget**                    PanelWidget                                            (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Paldex_tabset.WBP_Paldex_tabset_C.BndEvt__WBP_Paldex_tabset_WBP_Main_Menu_Tab_Key_L_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_Paldex_tabset_C::RegisterPanelWidget(class UPanelWidget** PanelWidget)
+void UWBP_Paldex_tabset_C::BndEvt__WBP_Paldex_tabset_WBP_Main_Menu_Tab_Key_L_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Paldex_tabset_C", "RegisterPanelWidget");
+		Func = Class->GetFunction("WBP_Paldex_tabset_C", "BndEvt__WBP_Paldex_tabset_WBP_Main_Menu_Tab_Key_L_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature");
 
-	Params::WBP_Paldex_tabset_C_RegisterPanelWidget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (PanelWidget != nullptr)
-		*PanelWidget = Parms.PanelWidget;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

@@ -17,23 +17,17 @@
 namespace SDK
 {
 
-// Function BP_Shotgun_NPC.BP_Shotgun_NPC_C.OnWeaponNotify
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// EWeaponNotifyType                       Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Shotgun_NPC.BP_Shotgun_NPC_C.BPI_OnReload
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Shotgun_NPC_C::OnWeaponNotify(EWeaponNotifyType Type)
+void ABP_Shotgun_NPC_C::BPI_OnReload()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Shotgun_NPC_C", "OnWeaponNotify");
+		Func = Class->GetFunction("BP_Shotgun_NPC_C", "BPI_OnReload");
 
-	Params::BP_Shotgun_NPC_C_OnWeaponNotify Parms{};
-
-	Parms.Type = Type;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -57,37 +51,23 @@ void ABP_Shotgun_NPC_C::ExecuteUbergraph_BP_Shotgun_NPC(int32 EntryPoint)
 }
 
 
-// Function BP_Shotgun_NPC.BP_Shotgun_NPC_C.BPI_OnReload
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_Shotgun_NPC_C::BPI_OnReload()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Shotgun_NPC_C", "BPI_OnReload");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Shotgun_NPC.BP_Shotgun_NPC_C.GetWeaponDamage
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function BP_Shotgun_NPC.BP_Shotgun_NPC_C.OnWeaponNotify
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EWeaponNotifyType                       Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-int32 ABP_Shotgun_NPC_C::GetWeaponDamage() const
+void ABP_Shotgun_NPC_C::OnWeaponNotify(EWeaponNotifyType Type)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Shotgun_NPC_C", "GetWeaponDamage");
+		Func = Class->GetFunction("BP_Shotgun_NPC_C", "OnWeaponNotify");
 
-	Params::BP_Shotgun_NPC_C_GetWeaponDamage Parms{};
+	Params::BP_Shotgun_NPC_C_OnWeaponNotify Parms{};
+
+	Parms.Type = Type;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 
@@ -104,6 +84,26 @@ int32 ABP_Shotgun_NPC_C::GetNPCWeaponDamage() const
 		Func = Class->GetFunction("BP_Shotgun_NPC_C", "GetNPCWeaponDamage");
 
 	Params::BP_Shotgun_NPC_C_GetNPCWeaponDamage Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_Shotgun_NPC.BP_Shotgun_NPC_C.GetWeaponDamage
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+int32 ABP_Shotgun_NPC_C::GetWeaponDamage() const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Shotgun_NPC_C", "GetWeaponDamage");
+
+	Params::BP_Shotgun_NPC_C_GetWeaponDamage Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 

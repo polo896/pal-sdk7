@@ -32,14 +32,14 @@ public:
 	double                                        DisplayTime;                                       // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void CheckEnd(bool* IsEnd);
-	void Construct();
-	void ExecuteUbergraph_WBP_EnemyQuestionMarkIcon(int32 EntryPoint);
-	void Finished_65824A4344E87236A81F99B8C42BE19D();
-	void Finished_AAA80C6F4C0998EEE3398EA3A4904D66();
-	void OnInitialized();
-	void Setup(class APalCharacter* TargetPal);
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void Setup(class APalCharacter* TargetPal);
+	void OnInitialized();
+	void Finished_AAA80C6F4C0998EEE3398EA3A4904D66();
+	void Finished_65824A4344E87236A81F99B8C42BE19D();
+	void ExecuteUbergraph_WBP_EnemyQuestionMarkIcon(int32 EntryPoint);
+	void Construct();
+	void CheckEnd(bool* IsEnd);
 
 public:
 	static class UClass* StaticClass()

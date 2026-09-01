@@ -9,7 +9,7 @@ class UWBP_IngameMenuConstruction_LR_C : public UUserWidget
     class UImage* ArrowImage;                                                         // 0x0290 (size: 0x8)
     class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon;                                // 0x0298 (size: 0x8)
     class UWBP_PalKeyGuideIcon_C* WBP_PalKeyGuideIcon_1;                              // 0x02A0 (size: 0x8)
-    TArray<class UWBP_PalKeyGuideIcon_C*> Icons;                                      // 0x02A8 (size: 0x10)
+    TArray<UWBP_PalKeyGuideIcon_C*> Icons;                                            // 0x02A8 (size: 0x10)
 
     void SetInputAction(int32 Index, FName ActionName);
     void OnInitialized();

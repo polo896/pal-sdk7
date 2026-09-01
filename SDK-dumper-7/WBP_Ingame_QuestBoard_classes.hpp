@@ -27,12 +27,12 @@ public:
 	TMap<class FName, class UWBP_IngameQuestBoardListSet_C*> CreatedWidgetMap;                       // 0x0290(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void CompleteQuest(class FName QuestId);
-	void GetNowDisplayQuestWidgetNum(int32* Num);
-	void OnClosedQuestWidget(class UWBP_IngameQuestBoardListSet_C* Widget);
-	void UpdateQuestDetail(class FName QuestId);
-	void UpdateQuestName(class FName QuestId);
 	void UpdateTrackingQuestDetail(bool bIgnoreAlreadyCreatedWidget);
+	void UpdateQuestName(class FName QuestId);
+	void UpdateQuestDetail(class FName QuestId);
+	void OnClosedQuestWidget(class UWBP_IngameQuestBoardListSet_C* Widget);
+	void GetNowDisplayQuestWidgetNum(int32* Num);
+	void CompleteQuest(class FName QuestId);
 
 public:
 	static class UClass* StaticClass()

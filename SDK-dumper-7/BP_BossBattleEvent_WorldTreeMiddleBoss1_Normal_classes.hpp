@@ -34,13 +34,13 @@ public:
 	double                                        SpawnInterval;                                     // 0x0310(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SpawnWave(const struct FPalBossBattleEventBossRushWave& WaveInfo);
-	void OnSpawnCharacter(class UPalIndividualCharacterHandle* SpawnHandle);
-	void OnInitialize();
-	void OnDead(const struct FPalDeadInfo& DeadInfo);
-	void OnCombatStart();
-	void GetWaveList(TArray<struct FPalBossBattleEventBossRushWave>* WaveList_0);
 	void ExecuteUbergraph_BP_BossBattleEvent_WorldTreeMiddleBoss1_Normal(int32 EntryPoint);
+	void GetWaveList(TArray<struct FPalBossBattleEventBossRushWave>* WaveList_0);
+	void OnCombatStart();
+	void OnDead(const struct FPalDeadInfo& DeadInfo);
+	void OnInitialize();
+	void OnSpawnCharacter(class UPalIndividualCharacterHandle* SpawnHandle);
+	void SpawnWave(const struct FPalBossBattleEventBossRushWave& WaveInfo);
 
 	bool IsBossCleared() const;
 

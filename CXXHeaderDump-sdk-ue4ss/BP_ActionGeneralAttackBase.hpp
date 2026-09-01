@@ -9,7 +9,7 @@ class UBP_ActionGeneralAttackBase_C : public UPalActionWazaBase
     bool IsStartMovement;                                                             // 0x01A8 (size: 0x1)
     bool IsTerminatingAction;                                                         // 0x01A9 (size: 0x1)
     TArray<FTimerHandle> TimerHandles;                                                // 0x01B0 (size: 0x10)
-    TArray<TSoftObjectPtr<APalSkillEffectBase>> SpawnedEffects;                       // 0x01C0 (size: 0x10)
+    TArray<TSoftObjectPtr<class APalSkillEffectBase>> SpawnedEffects;                 // 0x01C0 (size: 0x10)
     double ReadyAnimationTime;                                                        // 0x01D0 (size: 0x8)
     double ProcessAnimationTime;                                                      // 0x01D8 (size: 0x8)
     double AfterAnimationTime;                                                        // 0x01E0 (size: 0x8)

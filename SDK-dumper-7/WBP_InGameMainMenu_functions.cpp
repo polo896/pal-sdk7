@@ -17,97 +17,381 @@
 namespace SDK
 {
 
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.AddChildToContentBody
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.SetupBgText
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPalUserWidget*                   Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// EPalUIInGameMainMenuTabType             Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_InGameMainMenu_C::AddChildToContentBody(class UPalUserWidget* Widget)
+void UWBP_InGameMainMenu_C::SetupBgText(EPalUIInGameMainMenuTabType Type)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "AddChildToContentBody");
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "SetupBgText");
 
-	Params::WBP_InGameMainMenu_C_AddChildToContentBody Parms{};
+	Params::WBP_InGameMainMenu_C_SetupBgText Parms{};
 
-	Parms.Widget = Widget;
+	Parms.Type = Type;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.AnmEvent_AllOpen
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.SetupAllAttentionDot
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_InGameMainMenu_C::AnmEvent_AllOpen()
+void UWBP_InGameMainMenu_C::SetupAllAttentionDot()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "AnmEvent_AllOpen");
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "SetupAllAttentionDot");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.BndEvt__WBP_InGameMainMenu_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.Setup Input Action
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_InGameMainMenu_C::BndEvt__WBP_InGameMainMenu_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
+void UWBP_InGameMainMenu_C::Setup_Input_Action()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "BndEvt__WBP_InGameMainMenu_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "Setup Input Action");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_InGameMainMenu_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_InGameMainMenu_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.ExecuteUbergraph_WBP_InGameMainMenu
-// (Final, UbergraphFunction)
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.Setup Attention Dot
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalUIInGameMainMenuTabType             Tab                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_InGameMainMenu_C::ExecuteUbergraph_WBP_InGameMainMenu(int32 EntryPoint)
+void UWBP_InGameMainMenu_C::Setup_Attention_Dot(EPalUIInGameMainMenuTabType Tab)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "ExecuteUbergraph_WBP_InGameMainMenu");
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "Setup Attention Dot");
 
-	Params::WBP_InGameMainMenu_C_ExecuteUbergraph_WBP_InGameMainMenu Parms{};
+	Params::WBP_InGameMainMenu_C_Setup_Attention_Dot Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Tab = Tab;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.SelectTechnologyTab
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_InGameMainMenu_C::SelectTechnologyTab()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "SelectTechnologyTab");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.SelectQuestTab
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_InGameMainMenu_C::SelectQuestTab()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "SelectQuestTab");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.SelectPalTab
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_InGameMainMenu_C::SelectPalTab()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "SelectPalTab");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.SelectPaldexTab
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_InGameMainMenu_C::SelectPaldexTab()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "SelectPaldexTab");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.SelectInventoryEquipmentTab
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_InGameMainMenu_C::SelectInventoryEquipmentTab()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "SelectInventoryEquipmentTab");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.SelectGuildTab
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_InGameMainMenu_C::SelectGuildTab()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "SelectGuildTab");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.Select Tab
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalUIInGameMainMenuTabType             TabType                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_InGameMainMenu_C::Select_Tab(EPalUIInGameMainMenuTabType TabType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "Select Tab");
+
+	Params::WBP_InGameMainMenu_C_Select_Tab Parms{};
+
+	Parms.TabType = TabType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.Select Option Tab
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_InGameMainMenu_C::Select_Option_Tab()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "Select Option Tab");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.OnTryClose_Status
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_InGameMainMenu_C::OnTryClose_Status()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "OnTryClose_Status");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.OnTryClose_Inventory
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_InGameMainMenu_C::OnTryClose_Inventory()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "OnTryClose_Inventory");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_InGameMainMenu_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.OnReturnEsmMenuFromGuideMenu
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_InGameMainMenu_C::OnReturnEsmMenuFromGuideMenu()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "OnReturnEsmMenuFromGuideMenu");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.OnRequestShowMap
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             QuestId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_InGameMainMenu_C::OnRequestShowMap(class FName QuestId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "OnRequestShowMap");
+
+	Params::WBP_InGameMainMenu_C_OnRequestShowMap Parms{};
+
+	Parms.QuestId = QuestId;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.OnPrevTabAction
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_InGameMainMenu_C::OnPrevTabAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "OnPrevTabAction");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.OnOpenHelpGuideMenu
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_InGameMainMenu_C::OnOpenHelpGuideMenu()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "OnOpenHelpGuideMenu");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.OnNextTabAction
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_InGameMainMenu_C::OnNextTabAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "OnNextTabAction");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_InGameMainMenu_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.OnCancelAction
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_InGameMainMenu_C::OnCancelAction()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "OnCancelAction");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.OnAllNewFlagCleared_PalDex
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_InGameMainMenu_C::OnAllNewFlagCleared_PalDex()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "OnAllNewFlagCleared_PalDex");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.On Update Player Status Point
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_InGameMainMenu_C::On_Update_Player_Status_Point()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "On Update Player Status Point");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.On Unused Status Points Changed
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   UnusedPoint                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_InGameMainMenu_C::On_Unused_Status_Points_Changed(int32 UnusedPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "On Unused Status Points Changed");
+
+	Params::WBP_InGameMainMenu_C_On_Unused_Status_Points_Changed Parms{};
+
+	Parms.UnusedPoint = UnusedPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -137,381 +421,97 @@ void UWBP_InGameMainMenu_C::On_Changed_Tab_Index_Event(int32 OldIndex, int32 New
 }
 
 
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.On Unused Status Points Changed
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.ExecuteUbergraph_WBP_InGameMainMenu
+// (Final, UbergraphFunction)
 // Parameters:
-// int32                                   UnusedPoint                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_InGameMainMenu_C::On_Unused_Status_Points_Changed(int32 UnusedPoint)
+void UWBP_InGameMainMenu_C::ExecuteUbergraph_WBP_InGameMainMenu(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "On Unused Status Points Changed");
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "ExecuteUbergraph_WBP_InGameMainMenu");
 
-	Params::WBP_InGameMainMenu_C_On_Unused_Status_Points_Changed Parms{};
+	Params::WBP_InGameMainMenu_C_ExecuteUbergraph_WBP_InGameMainMenu Parms{};
 
-	Parms.UnusedPoint = UnusedPoint;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.On Update Player Status Point
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_InGameMainMenu_C::On_Update_Player_Status_Point()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "On Update Player Status Point");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.OnAllNewFlagCleared_PalDex
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_InGameMainMenu_C::OnAllNewFlagCleared_PalDex()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "OnAllNewFlagCleared_PalDex");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.OnCancelAction
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_InGameMainMenu_C::OnCancelAction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "OnCancelAction");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.OnInitialized
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_InGameMainMenu_C::OnInitialized()
+void UWBP_InGameMainMenu_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.OnNextTabAction
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_InGameMainMenu_C::OnNextTabAction()
+void UWBP_InGameMainMenu_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "OnNextTabAction");
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.OnOpenHelpGuideMenu
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.BndEvt__WBP_InGameMainMenu_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_InGameMainMenu_C::OnOpenHelpGuideMenu()
+void UWBP_InGameMainMenu_C::BndEvt__WBP_InGameMainMenu_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "OnOpenHelpGuideMenu");
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "BndEvt__WBP_InGameMainMenu_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.OnPrevTabAction
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.AnmEvent_AllOpen
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_InGameMainMenu_C::OnPrevTabAction()
+void UWBP_InGameMainMenu_C::AnmEvent_AllOpen()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "OnPrevTabAction");
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "AnmEvent_AllOpen");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.OnRequestShowMap
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             QuestId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_InGameMainMenu_C::OnRequestShowMap(class FName QuestId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "OnRequestShowMap");
-
-	Params::WBP_InGameMainMenu_C_OnRequestShowMap Parms{};
-
-	Parms.QuestId = QuestId;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.OnReturnEsmMenuFromGuideMenu
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_InGameMainMenu_C::OnReturnEsmMenuFromGuideMenu()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "OnReturnEsmMenuFromGuideMenu");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_InGameMainMenu_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.OnTryClose_Inventory
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_InGameMainMenu_C::OnTryClose_Inventory()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "OnTryClose_Inventory");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.OnTryClose_Status
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_InGameMainMenu_C::OnTryClose_Status()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "OnTryClose_Status");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.Select Option Tab
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_InGameMainMenu_C::Select_Option_Tab()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "Select Option Tab");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.Select Tab
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalUIInGameMainMenuTabType             TabType                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_InGameMainMenu_C::Select_Tab(EPalUIInGameMainMenuTabType TabType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "Select Tab");
-
-	Params::WBP_InGameMainMenu_C_Select_Tab Parms{};
-
-	Parms.TabType = TabType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.SelectGuildTab
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_InGameMainMenu_C::SelectGuildTab()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "SelectGuildTab");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.SelectInventoryEquipmentTab
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_InGameMainMenu_C::SelectInventoryEquipmentTab()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "SelectInventoryEquipmentTab");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.SelectPaldexTab
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_InGameMainMenu_C::SelectPaldexTab()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "SelectPaldexTab");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.SelectPalTab
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_InGameMainMenu_C::SelectPalTab()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "SelectPalTab");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.SelectQuestTab
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_InGameMainMenu_C::SelectQuestTab()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "SelectQuestTab");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.SelectTechnologyTab
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_InGameMainMenu_C::SelectTechnologyTab()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "SelectTechnologyTab");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.Setup Attention Dot
+// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.AddChildToContentBody
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EPalUIInGameMainMenuTabType             Tab                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalUserWidget*                   Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_InGameMainMenu_C::Setup_Attention_Dot(EPalUIInGameMainMenuTabType Tab)
+void UWBP_InGameMainMenu_C::AddChildToContentBody(class UPalUserWidget* Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "Setup Attention Dot");
+		Func = Class->GetFunction("WBP_InGameMainMenu_C", "AddChildToContentBody");
 
-	Params::WBP_InGameMainMenu_C_Setup_Attention_Dot Parms{};
+	Params::WBP_InGameMainMenu_C_AddChildToContentBody Parms{};
 
-	Parms.Tab = Tab;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.Setup Input Action
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_InGameMainMenu_C::Setup_Input_Action()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "Setup Input Action");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.SetupAllAttentionDot
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_InGameMainMenu_C::SetupAllAttentionDot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "SetupAllAttentionDot");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_InGameMainMenu.WBP_InGameMainMenu_C.SetupBgText
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalUIInGameMainMenuTabType             Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_InGameMainMenu_C::SetupBgText(EPalUIInGameMainMenuTabType Type)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGameMainMenu_C", "SetupBgText");
-
-	Params::WBP_InGameMainMenu_C_SetupBgText Parms{};
-
-	Parms.Type = Type;
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

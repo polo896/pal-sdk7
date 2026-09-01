@@ -24,7 +24,7 @@ class ABP_QuestTargetNPCSpawner_Breeder03_C : public APalNPCSpawnerBase
     bool IsLoading;                                                                   // 0x05C0 (size: 0x1)
     bool IsWorldLoadComplete;                                                         // 0x05C1 (size: 0x1)
     bool Debug_Disable;                                                               // 0x05C2 (size: 0x1)
-    TArray<class ABP_NPC_WalkPathPoint_1_C*> WalkPointRefarence;                      // 0x05C8 (size: 0x10)
+    TArray<ABP_NPC_WalkPathPoint_1_C*> WalkPointRefarence;                            // 0x05C8 (size: 0x10)
     class UPalIndividualCharacterHandle* OtomoHandle;                                 // 0x05D8 (size: 0x8)
     int32 DespawnWaitCounter;                                                         // 0x05E0 (size: 0x4)
     bool IsBossSpawner;                                                               // 0x05E4 (size: 0x1)
@@ -39,7 +39,7 @@ class ABP_QuestTargetNPCSpawner_Breeder03_C : public APalNPCSpawnerBase
     void On Capture(class APalCharacter* SelfCharacter, class APalCharacter* Attacker);
     void SetNullHandleWhenDestoryOtomo(class AActor* DestroyedActor);
     void OnOtomoSpawned(class AController* HolderController, class APalCharacter* OtomoPal);
-    void GetAllSpawnedNPCHandle(TArray<class UPalIndividualCharacterHandle*>& Handles);
+    void GetAllSpawnedNPCHandle(TArray<UPalIndividualCharacterHandle*>& Handles);
     float GetSpawnPointRadius();
     void BlueprintTick_Despawning(float DeltaTime);
     void BlueprintTick_Spawning(float DeltaTime);

@@ -46,7 +46,7 @@ public:
 	uint8                                         Pad_10B[0x5];                                      // 0x010B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPaperSpriteComponent*                  RenderComponent;                                   // 0x0110(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class USpringArmComponent*                    SpringArm;                                         // 0x0118(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class ModActor_4::AModActor_C*                OwningModActor;                                    // 0x0120(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ModActor_0::AModActor_C*                OwningModActor;                                    // 0x0120(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void SetIconTexture(class UTexture2D* IconTexture);

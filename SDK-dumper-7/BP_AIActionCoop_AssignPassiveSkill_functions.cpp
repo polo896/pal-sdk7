@@ -17,43 +17,17 @@
 namespace SDK
 {
 
-// Function BP_AIActionCoop_AssignPassiveSkill.BP_AIActionCoop_AssignPassiveSkill_C.ActionStart
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function BP_AIActionCoop_AssignPassiveSkill.BP_AIActionCoop_AssignPassiveSkill_C.StartSkill
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UBP_AIActionCoop_AssignPassiveSkill_C::ActionStart(class APawn* ControlledPawn)
+void UBP_AIActionCoop_AssignPassiveSkill_C::StartSkill()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIActionCoop_AssignPassiveSkill_C", "ActionStart");
+		Func = Class->GetFunction("BP_AIActionCoop_AssignPassiveSkill_C", "StartSkill");
 
-	Params::BP_AIActionCoop_AssignPassiveSkill_C_ActionStart Parms{};
-
-	Parms.ControlledPawn = ControlledPawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_AIActionCoop_AssignPassiveSkill.BP_AIActionCoop_AssignPassiveSkill_C.ExecuteUbergraph_BP_AIActionCoop_AssignPassiveSkill
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIActionCoop_AssignPassiveSkill_C::ExecuteUbergraph_BP_AIActionCoop_AssignPassiveSkill(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIActionCoop_AssignPassiveSkill_C", "ExecuteUbergraph_BP_AIActionCoop_AssignPassiveSkill");
-
-	Params::BP_AIActionCoop_AssignPassiveSkill_C_ExecuteUbergraph_BP_AIActionCoop_AssignPassiveSkill Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -79,17 +53,43 @@ void UBP_AIActionCoop_AssignPassiveSkill_C::OnActionNotify(const class UPalActio
 }
 
 
-// Function BP_AIActionCoop_AssignPassiveSkill.BP_AIActionCoop_AssignPassiveSkill_C.StartSkill
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_AIActionCoop_AssignPassiveSkill.BP_AIActionCoop_AssignPassiveSkill_C.ExecuteUbergraph_BP_AIActionCoop_AssignPassiveSkill
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_AIActionCoop_AssignPassiveSkill_C::StartSkill()
+void UBP_AIActionCoop_AssignPassiveSkill_C::ExecuteUbergraph_BP_AIActionCoop_AssignPassiveSkill(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIActionCoop_AssignPassiveSkill_C", "StartSkill");
+		Func = Class->GetFunction("BP_AIActionCoop_AssignPassiveSkill_C", "ExecuteUbergraph_BP_AIActionCoop_AssignPassiveSkill");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_AIActionCoop_AssignPassiveSkill_C_ExecuteUbergraph_BP_AIActionCoop_AssignPassiveSkill Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_AIActionCoop_AssignPassiveSkill.BP_AIActionCoop_AssignPassiveSkill_C.ActionStart
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIActionCoop_AssignPassiveSkill_C::ActionStart(class APawn* ControlledPawn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIActionCoop_AssignPassiveSkill_C", "ActionStart");
+
+	Params::BP_AIActionCoop_AssignPassiveSkill_C_ActionStart Parms{};
+
+	Parms.ControlledPawn = ControlledPawn;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

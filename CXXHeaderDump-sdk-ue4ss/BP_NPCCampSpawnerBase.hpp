@@ -14,7 +14,7 @@ class ABP_NPCCampSpawnerBase_C : public APalNPCCampSpawnerBase
     double RespawnDistance_FromPlayer;                                                // 0x02F8 (size: 0x8)
     double DisableDistance_FromBaseCamp;                                              // 0x0300 (size: 0x8)
     TArray<FF_NPCCampPreset> PresetList;                                              // 0x0308 (size: 0x10)
-    TArray<class UPalIndividualCharacterHandle*> CampEnemys;                          // 0x0318 (size: 0x10)
+    TArray<UPalIndividualCharacterHandle*> CampEnemys;                                // 0x0318 (size: 0x10)
     bool LoadCamp;                                                                    // 0x0328 (size: 0x1)
 
     void CREATEDELEGATE_PROXYFUNCTION_0(class UPalIndividualCharacterHandle* NewParam);

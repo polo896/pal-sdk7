@@ -17,125 +17,79 @@
 namespace SDK
 {
 
-// Function WBP_PlayerInventoryWeightInfo.WBP_PlayerInventoryWeightInfo_C.AnmEvent_ForceFull
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PlayerInventoryWeightInfo_C::AnmEvent_ForceFull()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerInventoryWeightInfo_C", "AnmEvent_ForceFull");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerInventoryWeightInfo.WBP_PlayerInventoryWeightInfo_C.AnmEvent_ForceNormal
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PlayerInventoryWeightInfo_C::AnmEvent_ForceNormal()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerInventoryWeightInfo_C", "AnmEvent_ForceNormal");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerInventoryWeightInfo.WBP_PlayerInventoryWeightInfo_C.AnmEvent_FullToNormal
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PlayerInventoryWeightInfo_C::AnmEvent_FullToNormal()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerInventoryWeightInfo_C", "AnmEvent_FullToNormal");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerInventoryWeightInfo.WBP_PlayerInventoryWeightInfo_C.AnmEvent_NormalToFull
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PlayerInventoryWeightInfo_C::AnmEvent_NormalToFull()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerInventoryWeightInfo_C", "AnmEvent_NormalToFull");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerInventoryWeightInfo.WBP_PlayerInventoryWeightInfo_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PlayerInventoryWeightInfo_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerInventoryWeightInfo_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PlayerInventoryWeightInfo.WBP_PlayerInventoryWeightInfo_C.CREATEDELEGATE_PROXYFUNCTION_0
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_PlayerInventoryWeightInfo.WBP_PlayerInventoryWeightInfo_C.UpdateWeight_Internal
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   ChangedWeight                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  NowWeight                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  MaxWeight                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ForceSkipAnim                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PlayerInventoryWeightInfo_C::CREATEDELEGATE_PROXYFUNCTION_0(float ChangedWeight)
+void UWBP_PlayerInventoryWeightInfo_C::UpdateWeight_Internal(double NowWeight, double MaxWeight, bool ForceSkipAnim)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerInventoryWeightInfo_C", "CREATEDELEGATE_PROXYFUNCTION_0");
+		Func = Class->GetFunction("WBP_PlayerInventoryWeightInfo_C", "UpdateWeight_Internal");
 
-	Params::WBP_PlayerInventoryWeightInfo_C_CREATEDELEGATE_PROXYFUNCTION_0 Parms{};
+	Params::WBP_PlayerInventoryWeightInfo_C_UpdateWeight_Internal Parms{};
 
-	Parms.ChangedWeight = ChangedWeight;
+	Parms.NowWeight = NowWeight;
+	Parms.MaxWeight = MaxWeight;
+	Parms.ForceSkipAnim = ForceSkipAnim;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PlayerInventoryWeightInfo.WBP_PlayerInventoryWeightInfo_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_PlayerInventoryWeightInfo.WBP_PlayerInventoryWeightInfo_C.OnUpdateWeight
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   NowWeight                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PlayerInventoryWeightInfo_C::Destruct()
+void UWBP_PlayerInventoryWeightInfo_C::OnUpdateWeight(float NowWeight)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerInventoryWeightInfo_C", "Destruct");
+		Func = Class->GetFunction("WBP_PlayerInventoryWeightInfo_C", "OnUpdateWeight");
+
+	Params::WBP_PlayerInventoryWeightInfo_C_OnUpdateWeight Parms{};
+
+	Parms.NowWeight = NowWeight;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PlayerInventoryWeightInfo.WBP_PlayerInventoryWeightInfo_C.OnUpdateMaxWeightBuff
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PlayerInventoryWeightInfo_C::OnUpdateMaxWeightBuff()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerInventoryWeightInfo_C", "OnUpdateMaxWeightBuff");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PlayerInventoryWeightInfo.WBP_PlayerInventoryWeightInfo_C.ExecuteUbergraph_WBP_PlayerInventoryWeightInfo
-// (Final, UbergraphFunction)
+// Function WBP_PlayerInventoryWeightInfo.WBP_PlayerInventoryWeightInfo_C.OnUpdateMaxWeight
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   MaxWeight                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PlayerInventoryWeightInfo_C::ExecuteUbergraph_WBP_PlayerInventoryWeightInfo(int32 EntryPoint)
+void UWBP_PlayerInventoryWeightInfo_C::OnUpdateMaxWeight(float MaxWeight)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerInventoryWeightInfo_C", "ExecuteUbergraph_WBP_PlayerInventoryWeightInfo");
+		Func = Class->GetFunction("WBP_PlayerInventoryWeightInfo_C", "OnUpdateMaxWeight");
 
-	Params::WBP_PlayerInventoryWeightInfo_C_ExecuteUbergraph_WBP_PlayerInventoryWeightInfo Parms{};
+	Params::WBP_PlayerInventoryWeightInfo_C_OnUpdateMaxWeight Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.MaxWeight = MaxWeight;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -161,81 +115,127 @@ void UWBP_PlayerInventoryWeightInfo_C::OnUpdateCurrentWeightBuff(double ChangedC
 }
 
 
-// Function WBP_PlayerInventoryWeightInfo.WBP_PlayerInventoryWeightInfo_C.OnUpdateMaxWeight
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_PlayerInventoryWeightInfo.WBP_PlayerInventoryWeightInfo_C.ExecuteUbergraph_WBP_PlayerInventoryWeightInfo
+// (Final, UbergraphFunction)
 // Parameters:
-// float                                   MaxWeight                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PlayerInventoryWeightInfo_C::OnUpdateMaxWeight(float MaxWeight)
+void UWBP_PlayerInventoryWeightInfo_C::ExecuteUbergraph_WBP_PlayerInventoryWeightInfo(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerInventoryWeightInfo_C", "OnUpdateMaxWeight");
+		Func = Class->GetFunction("WBP_PlayerInventoryWeightInfo_C", "ExecuteUbergraph_WBP_PlayerInventoryWeightInfo");
 
-	Params::WBP_PlayerInventoryWeightInfo_C_OnUpdateMaxWeight Parms{};
+	Params::WBP_PlayerInventoryWeightInfo_C_ExecuteUbergraph_WBP_PlayerInventoryWeightInfo Parms{};
 
-	Parms.MaxWeight = MaxWeight;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PlayerInventoryWeightInfo.WBP_PlayerInventoryWeightInfo_C.OnUpdateMaxWeightBuff
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_PlayerInventoryWeightInfo.WBP_PlayerInventoryWeightInfo_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_PlayerInventoryWeightInfo_C::OnUpdateMaxWeightBuff()
+void UWBP_PlayerInventoryWeightInfo_C::Destruct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerInventoryWeightInfo_C", "OnUpdateMaxWeightBuff");
+		Func = Class->GetFunction("WBP_PlayerInventoryWeightInfo_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PlayerInventoryWeightInfo.WBP_PlayerInventoryWeightInfo_C.OnUpdateWeight
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_PlayerInventoryWeightInfo.WBP_PlayerInventoryWeightInfo_C.CREATEDELEGATE_PROXYFUNCTION_0
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   NowWeight                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   ChangedWeight                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PlayerInventoryWeightInfo_C::OnUpdateWeight(float NowWeight)
+void UWBP_PlayerInventoryWeightInfo_C::CREATEDELEGATE_PROXYFUNCTION_0(float ChangedWeight)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerInventoryWeightInfo_C", "OnUpdateWeight");
+		Func = Class->GetFunction("WBP_PlayerInventoryWeightInfo_C", "CREATEDELEGATE_PROXYFUNCTION_0");
 
-	Params::WBP_PlayerInventoryWeightInfo_C_OnUpdateWeight Parms{};
+	Params::WBP_PlayerInventoryWeightInfo_C_CREATEDELEGATE_PROXYFUNCTION_0 Parms{};
 
-	Parms.NowWeight = NowWeight;
+	Parms.ChangedWeight = ChangedWeight;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PlayerInventoryWeightInfo.WBP_PlayerInventoryWeightInfo_C.UpdateWeight_Internal
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  NowWeight                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  MaxWeight                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    ForceSkipAnim                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_PlayerInventoryWeightInfo.WBP_PlayerInventoryWeightInfo_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_PlayerInventoryWeightInfo_C::UpdateWeight_Internal(double NowWeight, double MaxWeight, bool ForceSkipAnim)
+void UWBP_PlayerInventoryWeightInfo_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PlayerInventoryWeightInfo_C", "UpdateWeight_Internal");
+		Func = Class->GetFunction("WBP_PlayerInventoryWeightInfo_C", "Construct");
 
-	Params::WBP_PlayerInventoryWeightInfo_C_UpdateWeight_Internal Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.NowWeight = NowWeight;
-	Parms.MaxWeight = MaxWeight;
-	Parms.ForceSkipAnim = ForceSkipAnim;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function WBP_PlayerInventoryWeightInfo.WBP_PlayerInventoryWeightInfo_C.AnmEvent_NormalToFull
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PlayerInventoryWeightInfo_C::AnmEvent_NormalToFull()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerInventoryWeightInfo_C", "AnmEvent_NormalToFull");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PlayerInventoryWeightInfo.WBP_PlayerInventoryWeightInfo_C.AnmEvent_FullToNormal
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PlayerInventoryWeightInfo_C::AnmEvent_FullToNormal()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerInventoryWeightInfo_C", "AnmEvent_FullToNormal");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PlayerInventoryWeightInfo.WBP_PlayerInventoryWeightInfo_C.AnmEvent_ForceNormal
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PlayerInventoryWeightInfo_C::AnmEvent_ForceNormal()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerInventoryWeightInfo_C", "AnmEvent_ForceNormal");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PlayerInventoryWeightInfo.WBP_PlayerInventoryWeightInfo_C.AnmEvent_ForceFull
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PlayerInventoryWeightInfo_C::AnmEvent_ForceFull()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PlayerInventoryWeightInfo_C", "AnmEvent_ForceFull");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

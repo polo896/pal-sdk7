@@ -2214,7 +2214,7 @@ DUMPER7_ASSERTS_UPalActionMovementMode_JetpackGlider;
 
 // Class Pal.PalLevelObjectItemProvider
 // 0x0008 (0x02B8 - 0x02B0)
-class APalLevelObjectItemProvider : public APalLevelObjectActor
+class APalLevelObjectItemProvider final : public APalLevelObjectActor
 {
 public:
 	struct FPalDataTableRowName_ItemData          ProvidableStaticItemId;                            // 0x02B0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -6872,7 +6872,7 @@ DUMPER7_ASSERTS_APalWeaponBase;
 
 // Class Pal.PalUniqueRideWeaponBase
 // 0x0030 (0x06B8 - 0x0688)
-class APalUniqueRideWeaponBase : public APalWeaponBase
+class APalUniqueRideWeaponBase final : public APalWeaponBase
 {
 public:
 	TMulticastInlineDelegate<void(const struct FPalWeaponBulletHijackInfo& HijackInfo)> OnShootHijackBullet; // 0x0688(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -9132,7 +9132,7 @@ DUMPER7_ASSERTS_UPalCoopSkillSearchCharacter;
 
 // Class Pal.PalOilrigLightComponent
 // 0x0008 (0x00A8 - 0x00A0)
-class UPalOilrigLightComponent final : public UActorComponent
+class UPalOilrigLightComponent : public UActorComponent
 {
 public:
 	uint8                                         Pad_A0[0x8];                                       // 0x00A0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -15862,7 +15862,7 @@ DUMPER7_ASSERTS_UPalRaidBossComponent;
 
 // Class Pal.PalAntiAirMissileLauncher
 // 0x00B8 (0x0348 - 0x0290)
-class APalAntiAirMissileLauncher : public AActor
+class APalAntiAirMissileLauncher final : public AActor
 {
 public:
 	uint8                                         Pad_290[0x8];                                      // 0x0290(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -17048,7 +17048,7 @@ DUMPER7_ASSERTS_UPalArenaInstanceModel;
 
 // Class Pal.PalMapObjectSpawnerMultiItemLocationComponent
 // 0x0000 (0x05F0 - 0x05F0)
-class UPalMapObjectSpawnerMultiItemLocationComponent : public UStaticMeshComponent
+class UPalMapObjectSpawnerMultiItemLocationComponent final : public UStaticMeshComponent
 {
 public:
 	static class UClass* StaticClass()
@@ -17973,7 +17973,7 @@ DUMPER7_ASSERTS_UPalArenaSpectateComponent;
 
 // Class Pal.PalLevelWeaponSpawnerComponent
 // 0x0030 (0x0620 - 0x05F0)
-class UPalLevelWeaponSpawnerComponent : public UStaticMeshComponent
+class UPalLevelWeaponSpawnerComponent final : public UStaticMeshComponent
 {
 public:
 	TSubclassOf<class APalAntiAirMissileLauncher> LauncherClass;                                     // 0x05F0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -20624,7 +20624,7 @@ DUMPER7_ASSERTS_UPalBaseCampGroupedWorkFarm;
 
 // Class Pal.PalBuildObjectFishPond
 // 0x0030 (0x0780 - 0x0750)
-class APalBuildObjectFishPond : public APalBuildObject
+class APalBuildObjectFishPond final : public APalBuildObject
 {
 public:
 	struct FComponentReference                    ChestInteractRef;                                  // 0x0750(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
@@ -25190,7 +25190,7 @@ DUMPER7_ASSERTS_UPalMapObjectPickupItemPalEggParameterComponent;
 
 // Class Pal.PalBuildObjectClinic
 // 0x0030 (0x0780 - 0x0750)
-class APalBuildObjectClinic final : public APalBuildObject
+class APalBuildObjectClinic : public APalBuildObject
 {
 public:
 	struct FComponentReference                    WalkAroundVolumeRef;                               // 0x0750(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
@@ -25214,7 +25214,7 @@ DUMPER7_ASSERTS_APalBuildObjectClinic;
 
 // Class Pal.PalBuildObjectConvertCharacterToItem
 // 0x0020 (0x0770 - 0x0750)
-class APalBuildObjectConvertCharacterToItem : public APalBuildObject
+class APalBuildObjectConvertCharacterToItem final : public APalBuildObject
 {
 public:
 	class UPalMapObjectConvertCharacterToItemParameterComponent* ConvertCharacterToItemParameter;    // 0x0750(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -25284,7 +25284,7 @@ DUMPER7_ASSERTS_IPalMapObjectItemContainerAccessInterface;
 
 // Class Pal.PalFirePointLightComponent
 // 0x0000 (0x0420 - 0x0420)
-class UPalFirePointLightComponent final : public UPointLightComponent
+class UPalFirePointLightComponent : public UPointLightComponent
 {
 public:
 	static class UClass* StaticClass()
@@ -26456,7 +26456,7 @@ DUMPER7_ASSERTS_UPalMapObjectModelConnectorPillar;
 
 // Class Pal.PalBuildObjectInstallStrategyPlaceOnItemProvider
 // 0x0010 (0x0060 - 0x0050)
-class UPalBuildObjectInstallStrategyPlaceOnItemProvider : public UPalBuildObjectInstallStrategyNormal
+class UPalBuildObjectInstallStrategyPlaceOnItemProvider final : public UPalBuildObjectInstallStrategyNormal
 {
 public:
 	struct FPalDataTableRowName_ItemData          TargetStaticItemId;                                // 0x0050(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -28218,7 +28218,7 @@ DUMPER7_ASSERTS_UPalMapObjectDoorParameterComponent;
 
 // Class Pal.PalBuildObjectLabResearchSpace
 // 0x0008 (0x0298 - 0x0290)
-class APalBuildObjectLabResearchSpace : public AActor
+class APalBuildObjectLabResearchSpace final : public AActor
 {
 public:
 	uint8                                         Pad_290[0x8];                                      // 0x0290(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -28467,7 +28467,7 @@ DUMPER7_ASSERTS_UPalDungeonDefines;
 
 // Class Pal.PalBuildObjectMonsterFarm
 // 0x0030 (0x0780 - 0x0750)
-class APalBuildObjectMonsterFarm : public APalBuildObject
+class APalBuildObjectMonsterFarm final : public APalBuildObject
 {
 public:
 	struct FComponentReference                    WalkAroundVolumeRef;                               // 0x0750(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
@@ -28738,7 +28738,7 @@ DUMPER7_ASSERTS_UPalReplaceSetting;
 
 // Class Pal.PalBuildObjectRaidBossSummon
 // 0x0000 (0x0750 - 0x0750)
-class APalBuildObjectRaidBossSummon : public APalBuildObject
+class APalBuildObjectRaidBossSummon final : public APalBuildObject
 {
 public:
 	void BP_PlayPerform();
@@ -29210,7 +29210,7 @@ DUMPER7_ASSERTS_UPalCutsceneFishingBindParameter;
 
 // Class Pal.PalCannonDamageReactionComponent
 // 0x0050 (0x00F0 - 0x00A0)
-class UPalCannonDamageReactionComponent : public UActorComponent
+class UPalCannonDamageReactionComponent final : public UActorComponent
 {
 public:
 	uint8                                         Pad_A0[0x8];                                       // 0x00A0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -31344,7 +31344,7 @@ DUMPER7_ASSERTS_UPalResidentSkillPoseidonOrca_SpearBase;
 
 // Class Pal.PalCoopSkillNightVisionBase
 // 0x0000 (0x0028 - 0x0028)
-class UPalCoopSkillNightVisionBase : public UObject
+class UPalCoopSkillNightVisionBase final : public UObject
 {
 public:
 	void Terminate();
@@ -31968,7 +31968,7 @@ DUMPER7_ASSERTS_UPalDamageDisplayCanvas;
 
 // Class Pal.PalDamageExplodeComponent
 // 0x0028 (0x00C8 - 0x00A0)
-class UPalDamageExplodeComponent final : public UActorComponent
+class UPalDamageExplodeComponent : public UActorComponent
 {
 public:
 	uint8                                         Pad_A0[0x8];                                       // 0x00A0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -35296,7 +35296,7 @@ DUMPER7_ASSERTS_UPalEnemyCampObjectSpawnMapObjectComponent;
 
 // Class Pal.PalEnemyCampTreasureBoxSpawnerComponent
 // 0x0040 (0x0330 - 0x02F0)
-class UPalEnemyCampTreasureBoxSpawnerComponent : public UChildActorComponent
+class UPalEnemyCampTreasureBoxSpawnerComponent final : public UChildActorComponent
 {
 public:
 	TMulticastInlineDelegate<void(class UPalEnemyCampTreasureBoxSpawnerComponent* SelfComponent)> OnOpenTreasureBoxDelegate; // 0x02E8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
@@ -46037,7 +46037,7 @@ DUMPER7_ASSERTS_APalLevelObjectWarpPointToLocation;
 
 // Class Pal.PalMapObjectCharacterMakeModel
 // 0x0018 (0x0238 - 0x0220)
-class UPalMapObjectCharacterMakeModel final : public UPalMapObjectConcreteModelBase
+class UPalMapObjectCharacterMakeModel : public UPalMapObjectConcreteModelBase
 {
 public:
 	TSubclassOf<class UPalUserWidgetOverlayUI>    CharacterMakeWidget;                               // 0x0220(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -46456,7 +46456,7 @@ DUMPER7_ASSERTS_UPalRCONSubsystem;
 
 // Class Pal.PalLevelObject_Talkable
 // 0x0020 (0x02D0 - 0x02B0)
-class APalLevelObject_Talkable : public APalLevelObjectActor
+class APalLevelObject_Talkable final : public APalLevelObjectActor
 {
 public:
 	uint8                                         Pad_2B0[0x10];                                     // 0x02B0(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
@@ -46560,7 +46560,7 @@ DUMPER7_ASSERTS_APalLightingVolumeController;
 
 // Class Pal.PalMapObjectRankUpCharacterModel
 // 0x0028 (0x0248 - 0x0220)
-class UPalMapObjectRankUpCharacterModel : public UPalMapObjectConcreteModelBase
+class UPalMapObjectRankUpCharacterModel final : public UPalMapObjectConcreteModelBase
 {
 public:
 	TMulticastInlineDelegate<void(const EPalMapObjectRankUpCharacterResult Result)> OnReceiveRequestResultDelegate; // 0x0220(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -46785,7 +46785,7 @@ DUMPER7_ASSERTS_UPalLocalPlayer;
 
 // Class Pal.PalQuestBlock_DeliveryItem
 // 0x0058 (0x0178 - 0x0120)
-class UPalQuestBlock_DeliveryItem : public UPalQuestBlock
+class UPalQuestBlock_DeliveryItem final : public UPalQuestBlock
 {
 public:
 	TMap<struct FPalDataTableRowName_ItemData, int32> RequireItemMap;                                // 0x0120(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
@@ -50900,7 +50900,7 @@ DUMPER7_ASSERTS_UPalMapObjectFoliageModel;
 
 // Class Pal.PalUIPalCharacterRankUpModel
 // 0x0060 (0x0088 - 0x0028)
-class UPalUIPalCharacterRankUpModel : public UObject
+class UPalUIPalCharacterRankUpModel final : public UObject
 {
 public:
 	TMulticastInlineDelegate<void(class UPalUIPalCharacterRankUpModel* Model)> OnUpdateTargetSlotDelegate; // 0x0028(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -52366,7 +52366,7 @@ DUMPER7_ASSERTS_UPalMapObjectModelInitializeExtraParameterTreasureBox;
 
 // Class Pal.PalUICharacterDressing
 // 0x0008 (0x0480 - 0x0478)
-class UPalUICharacterDressing final : public UPalUserWidgetOverlayUI
+class UPalUICharacterDressing : public UPalUserWidgetOverlayUI
 {
 public:
 	uint8                                         Pad_478[0x8];                                      // 0x0478(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -54022,7 +54022,7 @@ DUMPER7_ASSERTS_UPalUIDialogBase;
 
 // Class Pal.PalMapObjectSpawnerMultiItem
 // 0x0060 (0x0348 - 0x02E8)
-class APalMapObjectSpawnerMultiItem : public APalMapObjectSpawnerBase
+class APalMapObjectSpawnerMultiItem final : public APalMapObjectSpawnerBase
 {
 public:
 	uint8                                         Pad_2E8[0x50];                                     // 0x02E8(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
@@ -56028,7 +56028,7 @@ DUMPER7_ASSERTS_UPalMiniGamePack_Test;
 
 // Class Pal.PalMissileLauncher_Destroyed
 // 0x0000 (0x0290 - 0x0290)
-class APalMissileLauncher_Destroyed : public AActor
+class APalMissileLauncher_Destroyed final : public AActor
 {
 public:
 	static class UClass* StaticClass()
@@ -57867,7 +57867,7 @@ DUMPER7_ASSERTS_UPalSearchLightRotationStrategy_ReturnToInitial;
 
 // Class Pal.PalOilrigExplosiveObject
 // 0x0010 (0x02C0 - 0x02B0)
-class APalOilrigExplosiveObject final : public APalLevelObjectActor
+class APalOilrigExplosiveObject : public APalLevelObjectActor
 {
 public:
 	uint8                                         Pad_2B0[0x8];                                      // 0x02B0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -58267,7 +58267,7 @@ DUMPER7_ASSERTS_UPalOilrigManager;
 
 // Class Pal.PalOilrigNPCSpawnerBase
 // 0x0020 (0x02D0 - 0x02B0)
-class APalOilrigNPCSpawnerBase final : public APalLevelObjectActor
+class APalOilrigNPCSpawnerBase : public APalLevelObjectActor
 {
 public:
 	uint8                                         Pad_2B0[0x8];                                      // 0x02B0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -59247,7 +59247,7 @@ DUMPER7_ASSERTS_UPalPassiveSkillExtraParameterTribeIDList;
 
 // Class Pal.PalQuestBlock_HasItem
 // 0x0058 (0x0178 - 0x0120)
-class UPalQuestBlock_HasItem : public UPalQuestBlock
+class UPalQuestBlock_HasItem final : public UPalQuestBlock
 {
 public:
 	TMap<struct FPalDataTableRowName_ItemData, int32> RequireItemMap;                                // 0x0120(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
@@ -61518,7 +61518,7 @@ DUMPER7_ASSERTS_UPalQuestBlock_CountKillEnemy;
 
 // Class Pal.PalQuestBlock_DeliveryPal
 // 0x0040 (0x0160 - 0x0120)
-class UPalQuestBlock_DeliveryPal : public UPalQuestBlock
+class UPalQuestBlock_DeliveryPal final : public UPalQuestBlock
 {
 public:
 	TArray<struct FPalDataTableRowName_PalMonsterData> RequirePalIdArray_OR;                         // 0x0120(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
@@ -63022,7 +63022,7 @@ DUMPER7_ASSERTS_UPalSkillDamageReactionComponent;
 
 // Class Pal.PalSkillModule_HorseTackle
 // 0x0070 (0x0350 - 0x02E0)
-class UPalSkillModule_HorseTackle : public UPalSkillModule_Tackle
+class UPalSkillModule_HorseTackle final : public UPalSkillModule_Tackle
 {
 public:
 	uint8                                         Pad_2E0[0x37];                                     // 0x02E0(0x0037)(Fixing Size After Last Property [ Dumper-7 ])
@@ -64071,7 +64071,7 @@ DUMPER7_ASSERTS_IPalGameSystemNeedSync;
 
 // Class Pal.PalTalkWindowWidgetBase
 // 0x0028 (0x04A0 - 0x0478)
-class UPalTalkWindowWidgetBase final : public UPalUserWidgetOverlayUI
+class UPalTalkWindowWidgetBase : public UPalUserWidgetOverlayUI
 {
 public:
 	TMulticastInlineDelegate<void(class UPalTalkWindowWidgetBase* SelfWidget)> OnEndTextDelegate;    // 0x0478(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
@@ -65714,7 +65714,7 @@ DUMPER7_ASSERTS_UPalUIPaldex;
 
 // Class Pal.PalUIPalStorageModel
 // 0x0020 (0x0048 - 0x0028)
-class UPalUIPalStorageModel : public UObject
+class UPalUIPalStorageModel final : public UObject
 {
 public:
 	TMulticastInlineDelegate<void(class UPalUIPalStorageModel* Model)> OnUpdatePageDelegate;         // 0x0028(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)

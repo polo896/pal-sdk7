@@ -41,29 +41,29 @@ public:
 
 public:
 	void Add_New_Damage_Text(const struct FPalDamageInfo& DamageInfo, class AActor* Defender);
-	void AddDamageTextEvent(const struct FPalDamageInfo& DamageInfo, class AActor* Defender);
-	void CalcDamageTextType(const struct FPalDamageInfo& DamageInfo, class AActor* Defender, double DamageRate, int32 weakCount, int32 DisplayDamage, const struct FPalCalculatedDamageInfo& CalculatedDamageInfo, EPalDamageTextType* textType, bool* bMercyHit);
-	void CalcLengthToPlayer(const struct FVector& HitLocation, double* Length);
-	void CalcTargetLocation(const struct FPalDamageInfo& DamageInfo, class AActor* Defender, struct FVector* Location);
-	void CreateOrPopDamageWidget(class UPalUIDamageTextBase** createdWdiget);
-	void Destruct();
-	void ExecuteUbergraph_WBP_PalDamageCanvas_OneShotText(int32 EntryPoint);
-	void Get_Additional_Effect_(const struct FPalDamageInfo& DamageInfo, TArray<EPalAdditionalEffectType>* AdditionalEffect);
-	void HasMercyHit(class AActor* CheckCharacter, bool* bHasMercyHit);
-	void IsEquipAttacker(class AActor* Attacker, bool* IsEquip);
-	void IsKillShot(class AActor* Defender, int32 DisplayDamage, bool* bKill);
-	void IsMuteki(class AActor* Defender, bool* bMuteki);
-	void OnChangedUISettings(const struct FPalOptionUISettings& PrevSettings, const struct FPalOptionUISettings& NewSettings);
-	void OnEndDamageTextOutAnim(class UWBP_PalDamageText_C* Widget);
-	void OnEndPlayerPassiveSkillEffect(EPalPassiveSkillEffectType EffectType);
-	void OnInitialized();
-	void OnSetup();
-	void OnSetup_AfterCreatedPlayer();
-	void OnStartPlayerPassiveSkill(EPalPassiveSkillEffectType EffectType, float Value);
-	void OnUpdatePlayerEquipment(class UPalItemSlot* itemSlot, EPalPlayerEquipItemSlotType slotType);
-	void ReceiveDamageEntries(const TArray<struct FPalDamageDisplayEntry>& Entries);
-	void RegisterMarcyHitCheckEvent();
 	void RemoveDamageText(class UPalUIDamageTextBase* RemoveWidget);
+	void RegisterMarcyHitCheckEvent();
+	void ReceiveDamageEntries(const TArray<struct FPalDamageDisplayEntry>& Entries);
+	void OnUpdatePlayerEquipment(class UPalItemSlot* itemSlot, EPalPlayerEquipItemSlotType slotType);
+	void OnStartPlayerPassiveSkill(EPalPassiveSkillEffectType EffectType, float Value);
+	void OnSetup_AfterCreatedPlayer();
+	void OnSetup();
+	void OnInitialized();
+	void OnEndPlayerPassiveSkillEffect(EPalPassiveSkillEffectType EffectType);
+	void OnEndDamageTextOutAnim(class UWBP_PalDamageText_C* Widget);
+	void OnChangedUISettings(const struct FPalOptionUISettings& PrevSettings, const struct FPalOptionUISettings& NewSettings);
+	void IsMuteki(class AActor* Defender, bool* bMuteki);
+	void IsKillShot(class AActor* Defender, int32 DisplayDamage, bool* bKill);
+	void IsEquipAttacker(class AActor* Attacker, bool* IsEquip);
+	void HasMercyHit(class AActor* CheckCharacter, bool* bHasMercyHit);
+	void Get_Additional_Effect_(const struct FPalDamageInfo& DamageInfo, TArray<EPalAdditionalEffectType>* AdditionalEffect);
+	void ExecuteUbergraph_WBP_PalDamageCanvas_OneShotText(int32 EntryPoint);
+	void Destruct();
+	void CreateOrPopDamageWidget(class UPalUIDamageTextBase** createdWdiget);
+	void CalcTargetLocation(const struct FPalDamageInfo& DamageInfo, class AActor* Defender, struct FVector* Location);
+	void CalcLengthToPlayer(const struct FVector& HitLocation, double* Length);
+	void CalcDamageTextType(const struct FPalDamageInfo& DamageInfo, class AActor* Defender, double DamageRate, int32 weakCount, int32 DisplayDamage, const struct FPalCalculatedDamageInfo& CalculatedDamageInfo, EPalDamageTextType* textType, bool* bMercyHit);
+	void AddDamageTextEvent(const struct FPalDamageInfo& DamageInfo, class AActor* Defender);
 
 public:
 	static class UClass* StaticClass()

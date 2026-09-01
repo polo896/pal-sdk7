@@ -17,49 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_Ingame_Exp_Reward.WBP_Ingame_Exp_Reward_C.AnmEvent_In
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Ingame_Exp_Reward_C::AnmEvent_In()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Exp_Reward_C", "AnmEvent_In");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Ingame_Exp_Reward.WBP_Ingame_Exp_Reward_C.AnmEvent_Out
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Ingame_Exp_Reward_C::AnmEvent_Out()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Exp_Reward_C", "AnmEvent_Out");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Ingame_Exp_Reward.WBP_Ingame_Exp_Reward_C.ExecuteUbergraph_WBP_Ingame_Exp_Reward
-// (Final, UbergraphFunction)
+// Function WBP_Ingame_Exp_Reward.WBP_Ingame_Exp_Reward_C.SetTitle
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      TitleText                                              (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_Ingame_Exp_Reward_C::ExecuteUbergraph_WBP_Ingame_Exp_Reward(int32 EntryPoint)
+void UWBP_Ingame_Exp_Reward_C::SetTitle(const class FText& TitleText)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Exp_Reward_C", "ExecuteUbergraph_WBP_Ingame_Exp_Reward");
+		Func = Class->GetFunction("WBP_Ingame_Exp_Reward_C", "SetTitle");
 
-	Params::WBP_Ingame_Exp_Reward_C_ExecuteUbergraph_WBP_Ingame_Exp_Reward Parms{};
+	Params::WBP_Ingame_Exp_Reward_C_SetTitle Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.TitleText = std::move(TitleText);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -85,23 +57,51 @@ void UWBP_Ingame_Exp_Reward_C::SetExp(int32 InExp)
 }
 
 
-// Function WBP_Ingame_Exp_Reward.WBP_Ingame_Exp_Reward_C.SetTitle
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Ingame_Exp_Reward.WBP_Ingame_Exp_Reward_C.ExecuteUbergraph_WBP_Ingame_Exp_Reward
+// (Final, UbergraphFunction)
 // Parameters:
-// const class FText&                      TitleText                                              (BlueprintVisible, BlueprintReadOnly, Parm)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Ingame_Exp_Reward_C::SetTitle(const class FText& TitleText)
+void UWBP_Ingame_Exp_Reward_C::ExecuteUbergraph_WBP_Ingame_Exp_Reward(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Exp_Reward_C", "SetTitle");
+		Func = Class->GetFunction("WBP_Ingame_Exp_Reward_C", "ExecuteUbergraph_WBP_Ingame_Exp_Reward");
 
-	Params::WBP_Ingame_Exp_Reward_C_SetTitle Parms{};
+	Params::WBP_Ingame_Exp_Reward_C_ExecuteUbergraph_WBP_Ingame_Exp_Reward Parms{};
 
-	Parms.TitleText = std::move(TitleText);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Ingame_Exp_Reward.WBP_Ingame_Exp_Reward_C.AnmEvent_Out
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Ingame_Exp_Reward_C::AnmEvent_Out()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_Exp_Reward_C", "AnmEvent_Out");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Ingame_Exp_Reward.WBP_Ingame_Exp_Reward_C.AnmEvent_In
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Ingame_Exp_Reward_C::AnmEvent_In()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_Exp_Reward_C", "AnmEvent_In");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

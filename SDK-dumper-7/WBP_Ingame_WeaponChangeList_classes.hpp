@@ -33,12 +33,12 @@ public:
 	struct FDataTableRowHandle                    NoWeaponMsgId;                                     // 0x02B8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void AnmEvent_Focus();
-	void AnmEvent_Unfocus();
-	void ExecuteUbergraph_WBP_Ingame_WeaponChangeList(int32 EntryPoint);
-	void GetDisplayBulletCount(class UPalItemSlot* WeaponSlot, int32* BulletCount);
-	void SetWeaponSlot(class UPalItemSlot* WeaponSlot);
 	void UpdateDisplayBulletCount(class UPalItemSlot* WeaponSlot);
+	void SetWeaponSlot(class UPalItemSlot* WeaponSlot);
+	void GetDisplayBulletCount(class UPalItemSlot* WeaponSlot, int32* BulletCount);
+	void ExecuteUbergraph_WBP_Ingame_WeaponChangeList(int32 EntryPoint);
+	void AnmEvent_Unfocus();
+	void AnmEvent_Focus();
 
 public:
 	static class UClass* StaticClass()

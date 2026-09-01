@@ -17,39 +17,29 @@
 namespace SDK
 {
 
-// Function BP_SkillEffect_RockBeat_Omen.BP_SkillEffect_RockBeat_Omen_C.CalcLocationOnFloor
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// const struct FVector&                   BaesLocation                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector*                         Location                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_SkillEffect_RockBeat_Omen.BP_SkillEffect_RockBeat_Omen_C.SpawnRock
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_SkillEffect_RockBeat_Omen_C::CalcLocationOnFloor(const struct FVector& BaesLocation, struct FVector* Location)
+void ABP_SkillEffect_RockBeat_Omen_C::SpawnRock()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkillEffect_RockBeat_Omen_C", "CalcLocationOnFloor");
+		Func = Class->GetFunction("BP_SkillEffect_RockBeat_Omen_C", "SpawnRock");
 
-	Params::BP_SkillEffect_RockBeat_Omen_C_CalcLocationOnFloor Parms{};
-
-	Parms.BaesLocation = std::move(BaesLocation);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Location != nullptr)
-		*Location = std::move(Parms.Location);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_SkillEffect_RockBeat_Omen.BP_SkillEffect_RockBeat_Omen_C.CustomEvent
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_SkillEffect_RockBeat_Omen.BP_SkillEffect_RockBeat_Omen_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_SkillEffect_RockBeat_Omen_C::CustomEvent()
+void ABP_SkillEffect_RockBeat_Omen_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkillEffect_RockBeat_Omen_C", "CustomEvent");
+		Func = Class->GetFunction("BP_SkillEffect_RockBeat_Omen_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,31 +65,41 @@ void ABP_SkillEffect_RockBeat_Omen_C::ExecuteUbergraph_BP_SkillEffect_RockBeat_O
 }
 
 
-// Function BP_SkillEffect_RockBeat_Omen.BP_SkillEffect_RockBeat_Omen_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_SkillEffect_RockBeat_Omen.BP_SkillEffect_RockBeat_Omen_C.CustomEvent
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_SkillEffect_RockBeat_Omen_C::ReceiveBeginPlay()
+void ABP_SkillEffect_RockBeat_Omen_C::CustomEvent()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkillEffect_RockBeat_Omen_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_SkillEffect_RockBeat_Omen_C", "CustomEvent");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_SkillEffect_RockBeat_Omen.BP_SkillEffect_RockBeat_Omen_C.SpawnRock
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_SkillEffect_RockBeat_Omen.BP_SkillEffect_RockBeat_Omen_C.CalcLocationOnFloor
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// const struct FVector&                   BaesLocation                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector*                         Location                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SkillEffect_RockBeat_Omen_C::SpawnRock()
+void ABP_SkillEffect_RockBeat_Omen_C::CalcLocationOnFloor(const struct FVector& BaesLocation, struct FVector* Location)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkillEffect_RockBeat_Omen_C", "SpawnRock");
+		Func = Class->GetFunction("BP_SkillEffect_RockBeat_Omen_C", "CalcLocationOnFloor");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_SkillEffect_RockBeat_Omen_C_CalcLocationOnFloor Parms{};
+
+	Parms.BaesLocation = std::move(BaesLocation);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Location != nullptr)
+		*Location = std::move(Parms.Location);
 }
 
 }

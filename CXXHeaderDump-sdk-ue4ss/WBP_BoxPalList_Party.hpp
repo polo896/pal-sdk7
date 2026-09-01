@@ -11,7 +11,7 @@ class UWBP_BoxPalList_Party_C : public UUserWidget
     class UWBP_PalCommonCharacterSlotButton_C* WBP_PalCommonCharacterSlotButton_2;    // 0x02A0 (size: 0x8)
     class UWBP_PalCommonCharacterSlotButton_C* WBP_PalCommonCharacterSlotButton_3;    // 0x02A8 (size: 0x8)
     class UWBP_PalCommonCharacterSlotButton_C* WBP_PalCommonCharacterSlotButton_4;    // 0x02B0 (size: 0x8)
-    TArray<class UWBP_PalCommonCharacterSlotButton_C*> PartySlots;                    // 0x02B8 (size: 0x10)
+    TArray<UWBP_PalCommonCharacterSlotButton_C*> PartySlots;                          // 0x02B8 (size: 0x10)
     FWBP_BoxPalList_Party_COnLeftClickedSlot OnLeftClickedSlot;                       // 0x02C8 (size: 0x10)
     void OnLeftClickedSlot(class UWBP_PalCharacterSlotButtonBase_C* Slot, EPalItemSlotPressType PressType);
     FWBP_BoxPalList_Party_COnRightClickedSlot OnRightClickedSlot;                     // 0x02D8 (size: 0x10)
@@ -36,7 +36,7 @@ class UWBP_BoxPalList_Party_C : public UUserWidget
     void SelectSlot(class UPalIndividualCharacterSlot* Slot, EPalItemSlotPressType PressType);
     void TryMoveToBox(class UPalIndividualCharacterSlot* Slot);
     void GetFirstFocusPartyButton(class UWidget*& Widget);
-    void GetPartySlots(TArray<class UWBP_PalCommonCharacterSlotButton_C*>& PartySlots);
+    void GetPartySlots(TArray<UWBP_PalCommonCharacterSlotButton_C*>& PartySlots);
     void OnInitialized();
     void BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_0_OnLeftClickedSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
     void BndEvt__WBP_BoxPalList_Party_WBP_BoxPalList_K2Node_ComponentBoundEvent_1_OnHoveredSlot__DelegateSignature(class UWBP_PalCharacterSlotButtonBase_C* Widget);

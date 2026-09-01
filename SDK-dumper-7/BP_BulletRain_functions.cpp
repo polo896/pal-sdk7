@@ -17,57 +17,17 @@
 namespace SDK
 {
 
-// Function BP_BulletRain.BP_BulletRain_C.ExecuteUbergraph_BP_BulletRain
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_BulletRain.BP_BulletRain_C.Update Thunder Spawn
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_BulletRain_C::ExecuteUbergraph_BP_BulletRain(int32 EntryPoint)
+void ABP_BulletRain_C::Update_Thunder_Spawn()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BulletRain_C", "ExecuteUbergraph_BP_BulletRain");
-
-	Params::BP_BulletRain_C_ExecuteUbergraph_BP_BulletRain Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BulletRain.BP_BulletRain_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_BulletRain_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BulletRain_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_BulletRain_C", "Update Thunder Spawn");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_BulletRain.BP_BulletRain_C.ReceiveEndPlay
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BulletRain_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BulletRain_C", "ReceiveEndPlay");
-
-	Params::BP_BulletRain_C_ReceiveEndPlay Parms{};
-
-	Parms.EndPlayReason = EndPlayReason;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -91,17 +51,57 @@ void ABP_BulletRain_C::SpawnBullet(int32 Count)
 }
 
 
-// Function BP_BulletRain.BP_BulletRain_C.Update Thunder Spawn
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_BulletRain.BP_BulletRain_C.ReceiveEndPlay
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BulletRain_C::Update_Thunder_Spawn()
+void ABP_BulletRain_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BulletRain_C", "Update Thunder Spawn");
+		Func = Class->GetFunction("BP_BulletRain_C", "ReceiveEndPlay");
+
+	Params::BP_BulletRain_C_ReceiveEndPlay Parms{};
+
+	Parms.EndPlayReason = EndPlayReason;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BulletRain.BP_BulletRain_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_BulletRain_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BulletRain_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BulletRain.BP_BulletRain_C.ExecuteUbergraph_BP_BulletRain
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BulletRain_C::ExecuteUbergraph_BP_BulletRain(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BulletRain_C", "ExecuteUbergraph_BP_BulletRain");
+
+	Params::BP_BulletRain_C_ExecuteUbergraph_BP_BulletRain Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

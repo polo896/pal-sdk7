@@ -14,6 +14,15 @@
 namespace SDK::Params
 {
 
+// Function WBP_Paldex_tab.WBP_Paldex_tab_C.BndEvt__WBP_Paldex_tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Paldex_tab_C_BndEvt__WBP_Paldex_tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Paldex_tab_C_BndEvt__WBP_Paldex_tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
+
 // Function WBP_Paldex_tab.WBP_Paldex_tab_C.ExecuteUbergraph_WBP_Paldex_tab
 // 0x0038 (0x0038 - 0x0000)
 struct WBP_Paldex_tab_C_ExecuteUbergraph_WBP_Paldex_tab final
@@ -27,15 +36,6 @@ public:
 	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0020(0x0018)()
 };
 DUMPER7_ASSERTS_WBP_Paldex_tab_C_ExecuteUbergraph_WBP_Paldex_tab;
-
-// Function WBP_Paldex_tab.WBP_Paldex_tab_C.BndEvt__WBP_Paldex_tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Paldex_tab_C_BndEvt__WBP_Paldex_tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Paldex_tab_C_BndEvt__WBP_Paldex_tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
 
 }
 

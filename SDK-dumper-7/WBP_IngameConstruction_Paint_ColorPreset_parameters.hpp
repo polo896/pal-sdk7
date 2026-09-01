@@ -16,14 +16,14 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameConstruction_Paint_ColorPreset.WBP_IngameConstruction_Paint_ColorPreset_C.BndEvt__WBP_IngameConstruction_Paint_ColorPreset_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_OnButtonReleased__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameConstruction_Paint_ColorPreset_C_BndEvt__WBP_IngameConstruction_Paint_ColorPreset_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_OnButtonReleased__DelegateSignature final
+// Function WBP_IngameConstruction_Paint_ColorPreset.WBP_IngameConstruction_Paint_ColorPreset_C.SetColor
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameConstruction_Paint_ColorPreset_C_SetColor final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           InColor;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameConstruction_Paint_ColorPreset_C_BndEvt__WBP_IngameConstruction_Paint_ColorPreset_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_OnButtonReleased__DelegateSignature;
+DUMPER7_ASSERTS_WBP_IngameConstruction_Paint_ColorPreset_C_SetColor;
 
 // Function WBP_IngameConstruction_Paint_ColorPreset.WBP_IngameConstruction_Paint_ColorPreset_C.ExecuteUbergraph_WBP_IngameConstruction_Paint_ColorPreset
 // 0x0010 (0x0010 - 0x0000)
@@ -36,14 +36,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_IngameConstruction_Paint_ColorPreset_C_ExecuteUbergraph_WBP_IngameConstruction_Paint_ColorPreset;
 
-// Function WBP_IngameConstruction_Paint_ColorPreset.WBP_IngameConstruction_Paint_ColorPreset_C.SetColor
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameConstruction_Paint_ColorPreset_C_SetColor final
+// Function WBP_IngameConstruction_Paint_ColorPreset.WBP_IngameConstruction_Paint_ColorPreset_C.BndEvt__WBP_IngameConstruction_Paint_ColorPreset_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_OnButtonReleased__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameConstruction_Paint_ColorPreset_C_BndEvt__WBP_IngameConstruction_Paint_ColorPreset_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_OnButtonReleased__DelegateSignature final
 {
 public:
-	struct FLinearColor                           InColor;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameConstruction_Paint_ColorPreset_C_SetColor;
+DUMPER7_ASSERTS_WBP_IngameConstruction_Paint_ColorPreset_C_BndEvt__WBP_IngameConstruction_Paint_ColorPreset_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_OnButtonReleased__DelegateSignature;
 
 }
 

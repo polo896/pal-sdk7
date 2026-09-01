@@ -26,7 +26,7 @@ struct FCommonInputPlatformBaseData
     bool bCanChangeGamepadType;                                                       // 0x0014 (size: 0x1)
     bool bSupportsTouch;                                                              // 0x0015 (size: 0x1)
     TArray<TSoftClassPtr<UCommonInputBaseControllerData>> ControllerData;             // 0x0018 (size: 0x10)
-    TArray<class TSubclassOf<UCommonInputBaseControllerData>> ControllerDataClasses;  // 0x0028 (size: 0x10)
+    TArray<TSubclassOf<class UCommonInputBaseControllerData>> ControllerDataClasses;  // 0x0028 (size: 0x10)
 
 }; // Size: 0x38
 
@@ -49,7 +49,7 @@ class UCommonInputActionDomain : public UDataAsset
 
 class UCommonInputActionDomainTable : public UDataAsset
 {
-    TArray<class UCommonInputActionDomain*> ActionDomains;                            // 0x0030 (size: 0x10)
+    TArray<UCommonInputActionDomain*> ActionDomains;                                  // 0x0030 (size: 0x10)
     ECommonInputMode InputMode;                                                       // 0x0040 (size: 0x1)
     EMouseCaptureMode MouseCaptureMode;                                               // 0x0041 (size: 0x1)
 
@@ -63,8 +63,8 @@ class UCommonInputBaseControllerData : public UObject
     FText GamepadCategory;                                                            // 0x0050 (size: 0x18)
     FText GamepadPlatformName;                                                        // 0x0068 (size: 0x18)
     TArray<FInputDeviceIdentifierPair> GamepadHardwareIdMapping;                      // 0x0080 (size: 0x10)
-    TSoftObjectPtr<UTexture2D> ControllerTexture;                                     // 0x0090 (size: 0x30)
-    TSoftObjectPtr<UTexture2D> ControllerButtonMaskTexture;                           // 0x00C0 (size: 0x30)
+    TSoftObjectPtr<class UTexture2D> ControllerTexture;                               // 0x0090 (size: 0x30)
+    TSoftObjectPtr<class UTexture2D> ControllerButtonMaskTexture;                     // 0x00C0 (size: 0x30)
     TArray<FCommonInputKeyBrushConfiguration> InputBrushDataMap;                      // 0x00F0 (size: 0x10)
     TArray<FCommonInputKeySetBrushConfiguration> InputBrushKeySets;                   // 0x0100 (size: 0x10)
 
@@ -80,7 +80,7 @@ class UCommonInputPlatformSettings : public UPlatformSettings
     FName DefaultGamepadName;                                                         // 0x0044 (size: 0x8)
     bool bCanChangeGamepadType;                                                       // 0x004C (size: 0x1)
     TArray<TSoftClassPtr<UCommonInputBaseControllerData>> ControllerData;             // 0x0050 (size: 0x10)
-    TArray<class TSubclassOf<UCommonInputBaseControllerData>> ControllerDataClasses;  // 0x0060 (size: 0x10)
+    TArray<TSubclassOf<class UCommonInputBaseControllerData>> ControllerDataClasses;  // 0x0060 (size: 0x10)
 
 }; // Size: 0x70
 
@@ -88,14 +88,14 @@ class UCommonInputSettings : public UDeveloperSettings
 {
     TSoftClassPtr<UCommonUIInputData> InputData;                                      // 0x0038 (size: 0x30)
     FPerPlatformSettings PlatformInput;                                               // 0x0068 (size: 0x10)
-    TMap<class FName, class FCommonInputPlatformBaseData> CommonInputPlatformData;    // 0x0078 (size: 0x50)
+    TMap<FName, FCommonInputPlatformBaseData> CommonInputPlatformData;                // 0x0078 (size: 0x50)
     bool bEnableInputMethodThrashingProtection;                                       // 0x00C8 (size: 0x1)
     int32 InputMethodThrashingLimit;                                                  // 0x00CC (size: 0x4)
     double InputMethodThrashingWindowInSeconds;                                       // 0x00D0 (size: 0x8)
     double InputMethodThrashingCooldownInSeconds;                                     // 0x00D8 (size: 0x8)
     bool bAllowOutOfFocusDeviceInput;                                                 // 0x00E0 (size: 0x1)
     bool bEnableDefaultInputConfig;                                                   // 0x00E1 (size: 0x1)
-    TSoftObjectPtr<UCommonInputActionDomainTable> ActionDomainTable;                  // 0x00E8 (size: 0x30)
+    TSoftObjectPtr<class UCommonInputActionDomainTable> ActionDomainTable;            // 0x00E8 (size: 0x30)
     TSubclassOf<class UCommonUIInputData> InputDataClass;                             // 0x0120 (size: 0x8)
     class UCommonInputActionDomainTable* ActionDomainTablePtr;                        // 0x0128 (size: 0x8)
 
@@ -111,7 +111,7 @@ class UCommonInputSubsystem : public ULocalPlayerSubsystem
     ECommonInputType LastInputType;                                                   // 0x0080 (size: 0x1)
     ECommonInputType CurrentInputType;                                                // 0x0081 (size: 0x1)
     FName GamepadInputType;                                                           // 0x0084 (size: 0x8)
-    TMap<class FName, class ECommonInputType> CurrentInputLocks;                      // 0x0090 (size: 0x50)
+    TMap<FName, ECommonInputType> CurrentInputLocks;                                  // 0x0090 (size: 0x50)
     class UCommonInputActionDomainTable* ActionDomainTable;                           // 0x00F8 (size: 0x8)
     bool bIsGamepadSimulatedClick;                                                    // 0x0100 (size: 0x1)
 

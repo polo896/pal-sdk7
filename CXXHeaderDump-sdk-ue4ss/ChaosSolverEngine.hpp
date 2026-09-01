@@ -117,10 +117,10 @@ class UChaosEventListenerComponent : public UActorComponent
 
 class UChaosGameplayEventDispatcher : public UChaosEventListenerComponent
 {
-    TMap<class UPrimitiveComponent*, class FChaosHandlerSet> CollisionEventRegistrations; // 0x01B8 (size: 0x50)
-    TMap<class UPrimitiveComponent*, class FBreakEventCallbackWrapper> BreakEventRegistrations; // 0x0208 (size: 0x50)
-    TMap<class UPrimitiveComponent*, class FRemovalEventCallbackWrapper> RemovalEventRegistrations; // 0x0258 (size: 0x50)
-    TMap<class UPrimitiveComponent*, class FCrumblingEventCallbackWrapper> CrumblingEventRegistrations; // 0x02A8 (size: 0x50)
+    TMap<UPrimitiveComponent*, FChaosHandlerSet> CollisionEventRegistrations;         // 0x01B8 (size: 0x50)
+    TMap<UPrimitiveComponent*, FBreakEventCallbackWrapper> BreakEventRegistrations;   // 0x0208 (size: 0x50)
+    TMap<UPrimitiveComponent*, FRemovalEventCallbackWrapper> RemovalEventRegistrations; // 0x0258 (size: 0x50)
+    TMap<UPrimitiveComponent*, FCrumblingEventCallbackWrapper> CrumblingEventRegistrations; // 0x02A8 (size: 0x50)
 
 }; // Size: 0x308
 

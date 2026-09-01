@@ -35,7 +35,7 @@ class UWBP_PalItemListBlock_C : public UPalUserWidget
     void On Drag Detected Internal(class UWBP_PalItemSlotButtonBase_C* Widget);
     void OnRequestUse_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
     void IsAllSlotEmpty(bool& IsALLEmpty);
-    void GetAllItemSlotButtons(TArray<class UWBP_PalItemSlotButtonBase_C*>& slotButtons);
+    void GetAllItemSlotButtons(TArray<UWBP_PalItemSlotButtonBase_C*>& slotButtons);
     void EditCreatedSlotWidget(class UWBP_PalItemSlotButtonBase_C* createdSlotWidget, class UWidget*& editedWidget);
     void GetFocusTarget(class UWidget*& NewParam);
     void ClearFiltering();

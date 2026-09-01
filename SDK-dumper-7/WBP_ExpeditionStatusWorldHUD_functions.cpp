@@ -17,51 +17,67 @@
 namespace SDK
 {
 
-// Function WBP_ExpeditionStatusWorldHUD.WBP_ExpeditionStatusWorldHUD_C.Construct
+// Function WBP_ExpeditionStatusWorldHUD.WBP_ExpeditionStatusWorldHUD_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_ExpeditionStatusWorldHUD_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ExpeditionStatusWorldHUD_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ExpeditionStatusWorldHUD.WBP_ExpeditionStatusWorldHUD_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_ExpeditionStatusWorldHUD_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ExpeditionStatusWorldHUD_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ExpeditionStatusWorldHUD.WBP_ExpeditionStatusWorldHUD_C.ExecuteUbergraph_WBP_ExpeditionStatusWorldHUD
-// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ExpeditionStatusWorldHUD_C::ExecuteUbergraph_WBP_ExpeditionStatusWorldHUD(int32 EntryPoint)
+void UWBP_ExpeditionStatusWorldHUD_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ExpeditionStatusWorldHUD_C", "ExecuteUbergraph_WBP_ExpeditionStatusWorldHUD");
+		Func = Class->GetFunction("WBP_ExpeditionStatusWorldHUD_C", "Tick");
 
-	Params::WBP_ExpeditionStatusWorldHUD_C_ExecuteUbergraph_WBP_ExpeditionStatusWorldHUD Parms{};
+	Params::WBP_ExpeditionStatusWorldHUD_C_Tick Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ExpeditionStatusWorldHUD.WBP_ExpeditionStatusWorldHUD_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ExpeditionStatusWorldHUD_C::Setup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ExpeditionStatusWorldHUD_C", "Setup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ExpeditionStatusWorldHUD.WBP_ExpeditionStatusWorldHUD_C.OnTimer_LocationCheck
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ExpeditionStatusWorldHUD_C::OnTimer_LocationCheck()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ExpeditionStatusWorldHUD_C", "OnTimer_LocationCheck");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ExpeditionStatusWorldHUD.WBP_ExpeditionStatusWorldHUD_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_ExpeditionStatusWorldHUD_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ExpeditionStatusWorldHUD_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -87,67 +103,51 @@ void UWBP_ExpeditionStatusWorldHUD_C::OnChangedMissionState(const EPalMapObjectC
 }
 
 
-// Function WBP_ExpeditionStatusWorldHUD.WBP_ExpeditionStatusWorldHUD_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ExpeditionStatusWorldHUD_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ExpeditionStatusWorldHUD_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ExpeditionStatusWorldHUD.WBP_ExpeditionStatusWorldHUD_C.OnTimer_LocationCheck
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ExpeditionStatusWorldHUD_C::OnTimer_LocationCheck()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ExpeditionStatusWorldHUD_C", "OnTimer_LocationCheck");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ExpeditionStatusWorldHUD.WBP_ExpeditionStatusWorldHUD_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ExpeditionStatusWorldHUD_C::Setup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ExpeditionStatusWorldHUD_C", "Setup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ExpeditionStatusWorldHUD.WBP_ExpeditionStatusWorldHUD_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_ExpeditionStatusWorldHUD.WBP_ExpeditionStatusWorldHUD_C.ExecuteUbergraph_WBP_ExpeditionStatusWorldHUD
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ExpeditionStatusWorldHUD_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+void UWBP_ExpeditionStatusWorldHUD_C::ExecuteUbergraph_WBP_ExpeditionStatusWorldHUD(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ExpeditionStatusWorldHUD_C", "Tick");
+		Func = Class->GetFunction("WBP_ExpeditionStatusWorldHUD_C", "ExecuteUbergraph_WBP_ExpeditionStatusWorldHUD");
 
-	Params::WBP_ExpeditionStatusWorldHUD_C_Tick Parms{};
+	Params::WBP_ExpeditionStatusWorldHUD_C_ExecuteUbergraph_WBP_ExpeditionStatusWorldHUD Parms{};
 
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ExpeditionStatusWorldHUD.WBP_ExpeditionStatusWorldHUD_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_ExpeditionStatusWorldHUD_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ExpeditionStatusWorldHUD_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ExpeditionStatusWorldHUD.WBP_ExpeditionStatusWorldHUD_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_ExpeditionStatusWorldHUD_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ExpeditionStatusWorldHUD_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

@@ -17,209 +17,180 @@
 namespace SDK
 {
 
-// Function BP_ShotgunBase.BP_ShotgunBase_C.StopReloadWhenRoll
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_ShotgunBase.BP_ShotgunBase_C.CalcAccuracy
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class UPalActionBase*             action                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ShotgunBase_C::StopReloadWhenRoll(const class UPalActionBase* action)
+float ABP_ShotgunBase_C::CalcAccuracy()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShotgunBase_C", "StopReloadWhenRoll");
+		Func = Class->GetFunction("BP_ShotgunBase_C", "CalcAccuracy");
 
-	Params::BP_ShotgunBase_C_StopReloadWhenRoll Parms{};
-
-	Parms.action = action;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ShotgunBase.BP_ShotgunBase_C.ShootIntervalEvent
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_ShotgunBase_C::ShootIntervalEvent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShotgunBase_C", "ShootIntervalEvent");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ShotgunBase.BP_ShotgunBase_C.PlayShootAnim
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_ShotgunBase_C::PlayShootAnim()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShotgunBase_C", "PlayShootAnim");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ShotgunBase.BP_ShotgunBase_C.PlayFireSound
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_ShotgunBase_C::PlayFireSound()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShotgunBase_C", "PlayFireSound");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ShotgunBase.BP_ShotgunBase_C.PlayEquipAnim
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_ShotgunBase_C::PlayEquipAnim()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShotgunBase_C", "PlayEquipAnim");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ShotgunBase.BP_ShotgunBase_C.OnshotInternal
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   IsShoted                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ShotgunBase_C::OnshotInternal(bool* IsShoted)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShotgunBase_C", "OnshotInternal");
-
-	Params::BP_ShotgunBase_C_OnshotInternal Parms{};
+	Params::BP_ShotgunBase_C_CalcAccuracy Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (IsShoted != nullptr)
-		*IsShoted = Parms.IsShoted;
+	return Parms.ReturnValue;
 }
 
 
-// Function BP_ShotgunBase.BP_ShotgunBase_C.OnShot
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_ShotgunBase_C::OnShot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShotgunBase_C", "OnShot");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ShotgunBase.BP_ShotgunBase_C.OnReleaseTrigger
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_ShotgunBase.BP_ShotgunBase_C.CalcDPS
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bCanShootOnRelease                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ShotgunBase_C::OnReleaseTrigger(bool bCanShootOnRelease)
+float ABP_ShotgunBase_C::CalcDPS()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShotgunBase_C", "OnReleaseTrigger");
+		Func = Class->GetFunction("BP_ShotgunBase_C", "CalcDPS");
 
-	Params::BP_ShotgunBase_C_OnReleaseTrigger Parms{};
-
-	Parms.bCanShootOnRelease = bCanShootOnRelease;
+	Params::BP_ShotgunBase_C_CalcDPS Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 
-// Function BP_ShotgunBase.BP_ShotgunBase_C.OnPullTrigger
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_ShotgunBase_C::OnPullTrigger()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShotgunBase_C", "OnPullTrigger");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ShotgunBase.BP_ShotgunBase_C.OnDetachWeapon
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_ShotgunBase.BP_ShotgunBase_C.CalcRange
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                           detachActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ShotgunBase_C::OnDetachWeapon(class AActor* detachActor)
+float ABP_ShotgunBase_C::CalcRange()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShotgunBase_C", "OnDetachWeapon");
+		Func = Class->GetFunction("BP_ShotgunBase_C", "CalcRange");
 
-	Params::BP_ShotgunBase_C_OnDetachWeapon Parms{};
-
-	Parms.detachActor = detachActor;
+	Params::BP_ShotgunBase_C_CalcRange Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 
-// Function BP_ShotgunBase.BP_ShotgunBase_C.OnAttachWeapon
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           attachActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ShotgunBase_C::OnAttachWeapon(class AActor* attachActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShotgunBase_C", "OnAttachWeapon");
-
-	Params::BP_ShotgunBase_C_OnAttachWeapon Parms{};
-
-	Parms.attachActor = attachActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ShotgunBase.BP_ShotgunBase_C.GetTargetPosition
+// Function BP_ShotgunBase.BP_ShotgunBase_C.CanShoot
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FVector*                         TargetLocation                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   can                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ShotgunBase_C::GetTargetPosition(struct FVector* TargetLocation)
+void ABP_ShotgunBase_C::CanShoot(bool* can)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShotgunBase_C", "GetTargetPosition");
+		Func = Class->GetFunction("BP_ShotgunBase_C", "CanShoot");
 
-	Params::BP_ShotgunBase_C_GetTargetPosition Parms{};
+	Params::BP_ShotgunBase_C_CanShoot Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (TargetLocation != nullptr)
-		*TargetLocation = std::move(Parms.TargetLocation);
+	if (can != nullptr)
+		*can = Parms.can;
+}
+
+
+// Function BP_ShotgunBase.BP_ShotgunBase_C.CountShotInterval
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_ShotgunBase_C::CountShotInterval()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ShotgunBase_C", "CountShotInterval");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ShotgunBase.BP_ShotgunBase_C.ExecuteUbergraph_BP_ShotgunBase
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ShotgunBase_C::ExecuteUbergraph_BP_ShotgunBase(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ShotgunBase_C", "ExecuteUbergraph_BP_ShotgunBase");
+
+	Params::BP_ShotgunBase_C_ExecuteUbergraph_BP_ShotgunBase Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ShotgunBase.BP_ShotgunBase_C.GetEjectionPort
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FTransform*                      EjectionTransform                                      (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ShotgunBase_C::GetEjectionPort(struct FTransform* EjectionTransform)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ShotgunBase_C", "GetEjectionPort");
+
+	Params::BP_ShotgunBase_C_GetEjectionPort Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (EjectionTransform != nullptr)
+		*EjectionTransform = std::move(Parms.EjectionTransform);
+}
+
+
+// Function BP_ShotgunBase.BP_ShotgunBase_C.GetEquipSocketName
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class FName                             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class FName ABP_ShotgunBase_C::GetEquipSocketName()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ShotgunBase_C", "GetEquipSocketName");
+
+	Params::BP_ShotgunBase_C_GetEquipSocketName Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_ShotgunBase.BP_ShotgunBase_C.GetMuzzleTransform
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FTransform*                      Transform                                              (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ShotgunBase_C::GetMuzzleTransform(struct FTransform* Transform)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ShotgunBase_C", "GetMuzzleTransform");
+
+	Params::BP_ShotgunBase_C_GetMuzzleTransform Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Transform != nullptr)
+		*Transform = std::move(Parms.Transform);
 }
 
 
@@ -251,196 +222,225 @@ void ABP_ShotgunBase_C::GetShootTransformList(double BaseAngle, double BlurAngle
 }
 
 
-// Function BP_ShotgunBase.BP_ShotgunBase_C.GetMuzzleTransform
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function BP_ShotgunBase.BP_ShotgunBase_C.GetTargetPosition
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FTransform*                      Transform                                              (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector*                         TargetLocation                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ShotgunBase_C::GetMuzzleTransform(struct FTransform* Transform)
+void ABP_ShotgunBase_C::GetTargetPosition(struct FVector* TargetLocation)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShotgunBase_C", "GetMuzzleTransform");
+		Func = Class->GetFunction("BP_ShotgunBase_C", "GetTargetPosition");
 
-	Params::BP_ShotgunBase_C_GetMuzzleTransform Parms{};
+	Params::BP_ShotgunBase_C_GetTargetPosition Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Transform != nullptr)
-		*Transform = std::move(Parms.Transform);
+	if (TargetLocation != nullptr)
+		*TargetLocation = std::move(Parms.TargetLocation);
 }
 
 
-// Function BP_ShotgunBase.BP_ShotgunBase_C.GetEquipSocketName
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function BP_ShotgunBase.BP_ShotgunBase_C.OnAttachWeapon
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           attachActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-class FName ABP_ShotgunBase_C::GetEquipSocketName()
+void ABP_ShotgunBase_C::OnAttachWeapon(class AActor* attachActor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShotgunBase_C", "GetEquipSocketName");
+		Func = Class->GetFunction("BP_ShotgunBase_C", "OnAttachWeapon");
 
-	Params::BP_ShotgunBase_C_GetEquipSocketName Parms{};
+	Params::BP_ShotgunBase_C_OnAttachWeapon Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function BP_ShotgunBase.BP_ShotgunBase_C.GetEjectionPort
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FTransform*                      EjectionTransform                                      (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ShotgunBase_C::GetEjectionPort(struct FTransform* EjectionTransform)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShotgunBase_C", "GetEjectionPort");
-
-	Params::BP_ShotgunBase_C_GetEjectionPort Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (EjectionTransform != nullptr)
-		*EjectionTransform = std::move(Parms.EjectionTransform);
-}
-
-
-// Function BP_ShotgunBase.BP_ShotgunBase_C.ExecuteUbergraph_BP_ShotgunBase
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ShotgunBase_C::ExecuteUbergraph_BP_ShotgunBase(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShotgunBase_C", "ExecuteUbergraph_BP_ShotgunBase");
-
-	Params::BP_ShotgunBase_C_ExecuteUbergraph_BP_ShotgunBase Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.attachActor = attachActor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_ShotgunBase.BP_ShotgunBase_C.CountShotInterval
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_ShotgunBase.BP_ShotgunBase_C.OnDetachWeapon
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           detachActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ShotgunBase_C::CountShotInterval()
+void ABP_ShotgunBase_C::OnDetachWeapon(class AActor* detachActor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShotgunBase_C", "CountShotInterval");
+		Func = Class->GetFunction("BP_ShotgunBase_C", "OnDetachWeapon");
+
+	Params::BP_ShotgunBase_C_OnDetachWeapon Parms{};
+
+	Parms.detachActor = detachActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ShotgunBase.BP_ShotgunBase_C.OnPullTrigger
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_ShotgunBase_C::OnPullTrigger()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ShotgunBase_C", "OnPullTrigger");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ShotgunBase.BP_ShotgunBase_C.CanShoot
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function BP_ShotgunBase.BP_ShotgunBase_C.OnReleaseTrigger
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   can                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bCanShootOnRelease                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ShotgunBase_C::CanShoot(bool* can)
+void ABP_ShotgunBase_C::OnReleaseTrigger(bool bCanShootOnRelease)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShotgunBase_C", "CanShoot");
+		Func = Class->GetFunction("BP_ShotgunBase_C", "OnReleaseTrigger");
 
-	Params::BP_ShotgunBase_C_CanShoot Parms{};
+	Params::BP_ShotgunBase_C_OnReleaseTrigger Parms{};
+
+	Parms.bCanShootOnRelease = bCanShootOnRelease;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (can != nullptr)
-		*can = Parms.can;
 }
 
 
-// Function BP_ShotgunBase.BP_ShotgunBase_C.CalcRange
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ShotgunBase.BP_ShotgunBase_C.OnShot
+// (Public, BlueprintCallable, BlueprintEvent)
 
-float ABP_ShotgunBase_C::CalcRange()
+void ABP_ShotgunBase_C::OnShot()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShotgunBase_C", "CalcRange");
+		Func = Class->GetFunction("BP_ShotgunBase_C", "OnShot");
 
-	Params::BP_ShotgunBase_C_CalcRange Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ShotgunBase.BP_ShotgunBase_C.CalcDPS
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_ShotgunBase.BP_ShotgunBase_C.OnshotInternal
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   IsShoted                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-float ABP_ShotgunBase_C::CalcDPS()
+void ABP_ShotgunBase_C::OnshotInternal(bool* IsShoted)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShotgunBase_C", "CalcDPS");
+		Func = Class->GetFunction("BP_ShotgunBase_C", "OnshotInternal");
 
-	Params::BP_ShotgunBase_C_CalcDPS Parms{};
+	Params::BP_ShotgunBase_C_OnshotInternal Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	return Parms.ReturnValue;
+	if (IsShoted != nullptr)
+		*IsShoted = Parms.IsShoted;
 }
 
 
-// Function BP_ShotgunBase.BP_ShotgunBase_C.CalcAccuracy
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ShotgunBase.BP_ShotgunBase_C.PlayEquipAnim
+// (Public, BlueprintCallable, BlueprintEvent)
 
-float ABP_ShotgunBase_C::CalcAccuracy()
+void ABP_ShotgunBase_C::PlayEquipAnim()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShotgunBase_C", "CalcAccuracy");
+		Func = Class->GetFunction("BP_ShotgunBase_C", "PlayEquipAnim");
 
-	Params::BP_ShotgunBase_C_CalcAccuracy Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ShotgunBase.BP_ShotgunBase_C.IsUseLeftHandAttach
+// Function BP_ShotgunBase.BP_ShotgunBase_C.PlayFireSound
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_ShotgunBase_C::PlayFireSound()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ShotgunBase_C", "PlayFireSound");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ShotgunBase.BP_ShotgunBase_C.PlayShootAnim
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_ShotgunBase_C::PlayShootAnim()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ShotgunBase_C", "PlayShootAnim");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ShotgunBase.BP_ShotgunBase_C.ShootIntervalEvent
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_ShotgunBase_C::ShootIntervalEvent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ShotgunBase_C", "ShootIntervalEvent");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ShotgunBase.BP_ShotgunBase_C.StopReloadWhenRoll
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class UPalActionBase*             action                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ShotgunBase_C::StopReloadWhenRoll(const class UPalActionBase* action)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ShotgunBase_C", "StopReloadWhenRoll");
+
+	Params::BP_ShotgunBase_C_StopReloadWhenRoll Parms{};
+
+	Parms.action = action;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ShotgunBase.BP_ShotgunBase_C.GetDefaultBlurAngle
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-bool ABP_ShotgunBase_C::IsUseLeftHandAttach() const
+float ABP_ShotgunBase_C::GetDefaultBlurAngle() const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShotgunBase_C", "IsUseLeftHandAttach");
+		Func = Class->GetFunction("BP_ShotgunBase_C", "GetDefaultBlurAngle");
 
-	Params::BP_ShotgunBase_C_IsUseLeftHandAttach Parms{};
+	Params::BP_ShotgunBase_C_GetDefaultBlurAngle Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -468,19 +468,19 @@ struct FTransform ABP_ShotgunBase_C::GetLeftHandTransform() const
 }
 
 
-// Function BP_ShotgunBase.BP_ShotgunBase_C.GetDefaultBlurAngle
+// Function BP_ShotgunBase.BP_ShotgunBase_C.IsUseLeftHandAttach
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-float ABP_ShotgunBase_C::GetDefaultBlurAngle() const
+bool ABP_ShotgunBase_C::IsUseLeftHandAttach() const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShotgunBase_C", "GetDefaultBlurAngle");
+		Func = Class->GetFunction("BP_ShotgunBase_C", "IsUseLeftHandAttach");
 
-	Params::BP_ShotgunBase_C_GetDefaultBlurAngle Parms{};
+	Params::BP_ShotgunBase_C_IsUseLeftHandAttach Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 

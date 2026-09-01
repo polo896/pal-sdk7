@@ -25,7 +25,7 @@ class UBP_PalClimbingComponent_C : public UPalClimbingComponent
 
     void IsDisableClimbingArea(bool& Disable);
     void UpdateClimbBuff();
-    void FindLadder(bool& IsHit, TArray<class AActor*>& OutActors);
+    void FindLadder(bool& IsHit, TArray<AActor*>& OutActors);
     void CanClimbingStart(bool& Result);
     bool TryClimbAfterGrappling();
     void RayCollisionCheckEndExtrusion();

@@ -16,6 +16,15 @@
 namespace SDK::Params
 {
 
+// Function BP_Ammo_Rocket.BP_Ammo_Rocket_C.UserConstructionScript
+// 0x0060 (0x0060 - 0x0000)
+struct BP_Ammo_Rocket_C_UserConstructionScript final
+{
+public:
+	struct FTransform                             CallFunc_SetTranformForReload_AmmoReloadingTransform; // 0x0000(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Ammo_Rocket_C_UserConstructionScript;
+
 // Function BP_Ammo_Rocket.BP_Ammo_Rocket_C.SetTranformForReload
 // 0x00C0 (0x00C0 - 0x0000)
 struct BP_Ammo_Rocket_C_SetTranformForReload final
@@ -25,15 +34,6 @@ public:
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0060(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_Ammo_Rocket_C_SetTranformForReload;
-
-// Function BP_Ammo_Rocket.BP_Ammo_Rocket_C.UserConstructionScript
-// 0x0060 (0x0060 - 0x0000)
-struct BP_Ammo_Rocket_C_UserConstructionScript final
-{
-public:
-	struct FTransform                             CallFunc_SetTranformForReload_AmmoReloadingTransform; // 0x0000(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_Ammo_Rocket_C_UserConstructionScript;
 
 }
 

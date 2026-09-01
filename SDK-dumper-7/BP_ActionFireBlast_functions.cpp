@@ -17,21 +17,35 @@
 namespace SDK
 {
 
-// Function BP_ActionFireBlast.BP_ActionFireBlast_C.BulletHasShooted
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class APalSkillEffectBase*              Effect_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function BP_ActionFireBlast.BP_ActionFireBlast_C.OnBeginAction
+// (Event, Public, BlueprintEvent)
 
-void UBP_ActionFireBlast_C::BulletHasShooted(class APalSkillEffectBase* Effect_0)
+void UBP_ActionFireBlast_C::OnBeginAction()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionFireBlast_C", "BulletHasShooted");
+		Func = Class->GetFunction("BP_ActionFireBlast_C", "OnBeginAction");
 
-	Params::BP_ActionFireBlast_C_BulletHasShooted Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Effect_0 = Effect_0;
+
+// Function BP_ActionFireBlast.BP_ActionFireBlast_C.ExecuteUbergraph_BP_ActionFireBlast
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_ActionFireBlast_C::ExecuteUbergraph_BP_ActionFireBlast(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_ActionFireBlast_C", "ExecuteUbergraph_BP_ActionFireBlast");
+
+	Params::BP_ActionFireBlast_C_ExecuteUbergraph_BP_ActionFireBlast Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,37 +71,23 @@ bool UBP_ActionFireBlast_C::CanNextActionCancel()
 }
 
 
-// Function BP_ActionFireBlast.BP_ActionFireBlast_C.ExecuteUbergraph_BP_ActionFireBlast
-// (Final, UbergraphFunction)
+// Function BP_ActionFireBlast.BP_ActionFireBlast_C.BulletHasShooted
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APalSkillEffectBase*              Effect_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UBP_ActionFireBlast_C::ExecuteUbergraph_BP_ActionFireBlast(int32 EntryPoint)
+void UBP_ActionFireBlast_C::BulletHasShooted(class APalSkillEffectBase* Effect_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionFireBlast_C", "ExecuteUbergraph_BP_ActionFireBlast");
+		Func = Class->GetFunction("BP_ActionFireBlast_C", "BulletHasShooted");
 
-	Params::BP_ActionFireBlast_C_ExecuteUbergraph_BP_ActionFireBlast Parms{};
+	Params::BP_ActionFireBlast_C_BulletHasShooted Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Effect_0 = Effect_0;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ActionFireBlast.BP_ActionFireBlast_C.OnBeginAction
-// (Event, Public, BlueprintEvent)
-
-void UBP_ActionFireBlast_C::OnBeginAction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ActionFireBlast_C", "OnBeginAction");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

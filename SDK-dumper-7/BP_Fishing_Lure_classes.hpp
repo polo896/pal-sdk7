@@ -50,28 +50,28 @@ public:
 	class ABP_Fishing_FishShadowBase_C*           TargetFish;                                        // 0x0350(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void DisableAll();
-	void ExecuteUbergraph_BP_Fishing_Lure(int32 EntryPoint);
-	void FailedPick();
-	void OnChangeFloatMoveState(bool IsMove);
-	void OnChangeRodState(EPalFishingRodState RodState_0);
-	void ReceiveBeginPlay();
-	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
-	void ReceiveTick(float DeltaSeconds);
-	void SetFloatMesh(class USkeletalMesh* Mesh);
-	void SetTargetFishShadow(class ABP_Fishing_FishShadowBase_C* TargetFish_0);
-	void SetThrowLocation(const struct FVector& ThrowLocation);
-	void SetVisibleBattleSplashEffect(bool IsVisible);
-	void SetVisibleEffect(class UNiagaraComponent* Effect, bool IsVisible);
-	void SetVisibleEffectForLoop(class UNiagaraComponent* Effect, bool IsVisible, bool IsAdjustWaterPlane);
-	void SetVisibleFloat(bool IsVisible);
-	void SetVisibleInWaterEffect(bool IsVisible);
-	void SetVisibleLandingPointEffect(bool IsVisible, bool CanFishing);
-	void SetVisibleOnWaterSplashEffect(bool IsVisible);
-	void SetVisibleSinkSplashEffect(bool IsVisible);
-	void SetVisibleSuccessSplashEffect(bool IsVisible);
-	void StartPick();
 	void SuccessPick();
+	void StartPick();
+	void SetVisibleSuccessSplashEffect(bool IsVisible);
+	void SetVisibleSinkSplashEffect(bool IsVisible);
+	void SetVisibleOnWaterSplashEffect(bool IsVisible);
+	void SetVisibleLandingPointEffect(bool IsVisible, bool CanFishing);
+	void SetVisibleInWaterEffect(bool IsVisible);
+	void SetVisibleFloat(bool IsVisible);
+	void SetVisibleEffectForLoop(class UNiagaraComponent* Effect, bool IsVisible, bool IsAdjustWaterPlane);
+	void SetVisibleEffect(class UNiagaraComponent* Effect, bool IsVisible);
+	void SetVisibleBattleSplashEffect(bool IsVisible);
+	void SetThrowLocation(const struct FVector& ThrowLocation);
+	void SetTargetFishShadow(class ABP_Fishing_FishShadowBase_C* TargetFish_0);
+	void SetFloatMesh(class USkeletalMesh* Mesh);
+	void ReceiveTick(float DeltaSeconds);
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void ReceiveBeginPlay();
+	void OnChangeRodState(EPalFishingRodState RodState_0);
+	void OnChangeFloatMoveState(bool IsMove);
+	void FailedPick();
+	void ExecuteUbergraph_BP_Fishing_Lure(int32 EntryPoint);
+	void DisableAll();
 
 public:
 	static class UClass* StaticClass()

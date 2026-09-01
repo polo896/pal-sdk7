@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "E_PalUIStatusDIsplayParameter_structs.hpp"
-#include "Engine_structs.hpp"
-#include "Pal_structs.hpp"
 #include "WBP_IndividualParameterBindWidget_classes.hpp"
+#include "Engine_structs.hpp"
+#include "E_PalUIStatusDIsplayParameter_structs.hpp"
+#include "Pal_structs.hpp"
 #include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
 
@@ -151,105 +151,105 @@ public:
 	class UWBP_PalItemSlotButtonBase_C*           LastHoveredButton;                                 // 0x0C90(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AddExceptItem(class FName ItemId);
-	void BndEvt__WBP_InventoryEquipment_CommonTileView_K2Node_ComponentBoundEvent_16_OnListEntryInitializedDynamic__DelegateSignature(class UObject* Item, class UUserWidget* Widget);
-	void BndEvt__WBP_InventoryEquipment_CommonTileView_K2Node_ComponentBoundEvent_17_OnListEntryReleasedDynamic__DelegateSignature(class UUserWidget* Widget);
-	void BndEvt__WBP_InventoryEquipment_CommonTileView_K2Node_ComponentBoundEvent_8_OnListItemSelectionChangedDynamic__DelegateSignature(class UObject* Item, bool bIsSelected);
-	void BndEvt__WBP_InventoryEquipment_WBP_CommonButton_K2Node_ComponentBoundEvent_18_OnClicked__DelegateSignature();
-	void BndEvt__WBP_InventoryEquipment_WBP_CommonButton_NameEdit_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature();
-	void BndEvt__WBP_InventoryEquipment_WBP_InventoryEquipment_DropButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
-	void BndEvt__WBP_InventoryEquipment_WBP_InventoryEquipment_InvisibleActionButton_K2Node_ComponentBoundEvent_12_OnClicked__DelegateSignature();
-	void BndEvt__WBP_InventoryEquipment_WBP_InventoryEquipment_InvisibleEatButton_K2Node_ComponentBoundEvent_14_OnClicked__DelegateSignature();
-	void BndEvt__WBP_InventoryEquipment_WBP_InventoryEquipment_InvisibleExeptButton_K2Node_ComponentBoundEvent_19_OnClicked__DelegateSignature();
-	void BndEvt__WBP_InventoryEquipment_WBP_InventoryEquipment_StatusUpButton_K2Node_ComponentBoundEvent_7_OnClicked__DelegateSignature();
-	void BndEvt__WBP_InventoryEquipment_WBP_InventoryEquipment_TabList_K2Node_ComponentBoundEvent_1_OnClickedSortButton__DelegateSignature();
-	void BndEvt__WBP_InventoryEquipment_WBP_InventoryEquipment_TabList_K2Node_ComponentBoundEvent_2_OnChangedFocusIndex__DelegateSignature(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
-	void BndEvt__WBP_InventoryEquipment_WBP_InventoryEquipment_TrashButton_1_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature();
-	void BndEvt__WBP_InventoryEquipment_WBP_PalInvisibleButton_1_K2Node_ComponentBoundEvent_9_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_InventoryEquipment_WBP_PalInvisibleButton_2_K2Node_ComponentBoundEvent_11_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_InventoryEquipment_WBP_PalInvisibleButton_3_K2Node_ComponentBoundEvent_13_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_InventoryEquipment_WBP_PalInvisibleButton_StatusPointCancel_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_InventoryEquipment_WBP_PalInvisibleButton_StatusPointConfirm_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_InventoryEquipment_WBP_PalInvisibleButton_ToggleQSPop_K2Node_ComponentBoundEvent_15_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_InventoryEquipment_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_10_OnTriedEquipSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* SlotButton);
-	void BndEvt__WBP_InventoryEquipment_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_20_OnHoveredSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
-	void Change_to_Edit_Status_Point_Mode(bool IsEditable);
-	void ConfirmStatusPoint();
-	void Construct();
-	class UWidget* CustomNavi_ToAccessorySlot2(EUINavigation Navigation_0);
-	class UWidget* CustomNavi_ToAccessorySlot4(EUINavigation Navigation_0);
-	class UWidget* CustomNavi_ToBodySlot(EUINavigation Navigation_0);
-	class UWidget* CustomNavi_ToFoodSlot2(EUINavigation Navigation_0);
-	class UWidget* CustomNavi_ToFoodSlotLeft(EUINavigation Navigation_0);
-	class UWidget* CustomNavi_ToFoodSlotRight(EUINavigation Navigation_0);
-	class UWidget* CustomNavi_ToGliderSlot(EUINavigation Navigation_0);
-	class UWidget* CustomNavi_ToSphereModuleSlot(EUINavigation Navigation_0);
-	class UWidget* CustomNavi_ToStatusOrToggleBody(EUINavigation Navigation_0);
-	class UWidget* CustomNavi_ToStatusOrToggleGlider(EUINavigation Navigation_0);
-	class UWidget* CustomNavi_ToStatusOrToggleHead(EUINavigation Navigation_0);
-	class UWidget* CustomNavi_ToStatusUp(EUINavigation Navigation_0);
-	void Destruct();
-	void DisplaySameAccessoryNotice(class UWBP_PalItemSlotButtonBase_C* RelativeSlotButton);
-	void EmptyEvent(bool IsConfirm);
-	void End_Edit_Status_Point_Mode(bool IsCancel);
-	void ExecuteUbergraph_WBP_InventoryEquipment(int32 EntryPoint);
-	void FinishReplicateQuickStackItemStackInfo();
-	void Get_Inventory_Last_Focus_Target(class UWidget** TargetWidget);
-	void GetStatusPointTopFocusTarget(class UWidget** TargetWidget);
-	void On_Clicked_Drop_Slot(class UWBP_PalItemSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
-	void On_Dressing_Visibility_Changed(const struct FPalPlayerDataCharacterMakeInfo& MakeInfo);
-	void On_Update_Player_Buff();
-	void On_Update_Player_Level(int32 NewLevel);
-	void On_Update_Player_Status_Point();
-	void OnArmorSlotUpdate(class UPalItemSlot* Slot_0, EPalPlayerEquipItemSlotType slotType);
-	void OnClickedArmorSlot(class UWBP_PalItemSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
-	void OnClickedFoodSlot(class UWBP_PalItemSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
-	void OnClickedStatusPointDecrementButton(class UWBP_InventoryEquipment_StatusPointButton_C* Button);
-	void OnClickedStatusPointIncrementButton(class UWBP_InventoryEquipment_StatusPointButton_C* Button);
-	void OnClickedWeaponLoadout(class UWBP_PalItemSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
-	void OnClosedAnyUseItemWindow(class UPalHUDDispatchParameterBase* Param_0);
-	void OnClosedDummy(bool bResult);
-	void OnConfirmQuickStack(bool IsConfirm);
-	void OnHoveredAccessorySlot(class UWBP_PalItemSlotButtonBase_C* Widget);
-	void OnHoveredWeaponSlot(class UWBP_PalItemSlotButtonBase_C* Widget);
 	void OnHoverFoodSlot(class UWBP_PalItemSlotButtonBase_C* Button);
-	void OnHoverStatusButton(class UWBP_InventoryEquipment_StatusPointButton_C* Button);
-	void OnInitialized();
-	void OnQuickStackItemStackInfoReady(class UPalBaseCampModel* Model_0, class UPalBaseCampFunctionModuleBase* Module);
-	void OnQuickStackItemStackInfoUpdate(class UPalBaseCampModuleItemStackInfo* ItemStackInfoModule);
-	void OnRequestUseFoodSlot(class UWBP_PalItemSlotButtonBase_C* Button);
-	void OnRightClickInventorySlot_QS(class UWBP_PalItemSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType);
-	void OnRightClickQSSlot(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
-	void OnTimer_HideSameAccessoryNotice();
-	void OnUddateMaxWeight(float MaxWeight);
-	void OnUnhoveredAccessorySlot(class UWBP_PalItemSlotButtonBase_C* Widget);
-	void OnUnhoveredWeaponSlot(class UWBP_PalItemSlotButtonBase_C* Widget);
-	void OnUnHoverFoodSlot(class UWBP_PalItemSlotButtonBase_C* Button);
-	void OnUnhoverStatusButton(class UWBP_InventoryEquipment_StatusPointButton_C* Button);
-	void OnUpdateNickName_Binded(const class FString& NewNickName);
-	void Open_Item_Use_Window(class UPalItemSlot* CurrentItemSlot);
-	void OpenOverlayItemSlotWindow(class UWidget* RelativeWidget, const struct FVector2D& AnchorPosition, const struct FVector2D& overrideInfoWidgetAlignment, const class FText& Title, const class FText& Info, const class FText& SubInfo);
-	void OpenOverlayStatusInfo(class UWidget* RelativeWidget, const struct FVector2D& AnchorPosition, const struct FVector2D& overrideInfoWidgetAlignment, const class FText& Title, const class FText& Desc, E_PalUIStatusDIsplayParameter Status);
-	void PrepareReplicateQuickStackItemStackInfo();
-	void QuickStackButtonAct();
-	void SetCurrentSlot(class UWBP_PalItemSlotButtonBase_C* Button);
-	void SetEnableGliderSlot(bool IsEnable);
-	void SetInventoryWeight(double NowWeight, double MaxWeight);
-	void Setup(class UBP_InGameMenuInventoryModel_C* Model_0);
-	void Setup_Equipment_Slot();
-	void SetupCharacterName();
-	void SetupDropSlot();
-	void SetupFoodEquipSlot();
-	void SetupStatusPointButtons();
-	void ToggleQuickStackPanel();
-	void ToQuickStackButton();
-	void UnsetCurrentSlot(class UWBP_PalItemSlotButtonBase_C* Button);
-	void Update_Inventory_Greyout(class UPalItemSlot* Slot_0);
-	void Update_Player_Status();
-	void Update_Unused_Status_Point();
-	void UpdateLanternEquipDetail();
-	void UpdateQuickStackableInventorySlot(bool Editing);
+	void OnHoveredWeaponSlot(class UWBP_PalItemSlotButtonBase_C* Widget);
+	void OnHoveredAccessorySlot(class UWBP_PalItemSlotButtonBase_C* Widget);
+	void OnConfirmQuickStack(bool IsConfirm);
+	void OnClosedDummy(bool bResult);
+	void OnClosedAnyUseItemWindow(class UPalHUDDispatchParameterBase* Param_0);
+	void OnClickedWeaponLoadout(class UWBP_PalItemSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
+	void OnClickedStatusPointIncrementButton(class UWBP_InventoryEquipment_StatusPointButton_C* Button);
+	void OnClickedStatusPointDecrementButton(class UWBP_InventoryEquipment_StatusPointButton_C* Button);
+	void OnClickedFoodSlot(class UWBP_PalItemSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
+	void OnClickedArmorSlot(class UWBP_PalItemSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
+	void OnArmorSlotUpdate(class UPalItemSlot* Slot_0, EPalPlayerEquipItemSlotType slotType);
+	void On_Update_Player_Status_Point();
+	void On_Update_Player_Level(int32 NewLevel);
+	void On_Update_Player_Buff();
+	void On_Dressing_Visibility_Changed(const struct FPalPlayerDataCharacterMakeInfo& MakeInfo);
+	void On_Clicked_Drop_Slot(class UWBP_PalItemSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
+	void GetStatusPointTopFocusTarget(class UWidget** TargetWidget);
+	void Get_Inventory_Last_Focus_Target(class UWidget** TargetWidget);
+	void FinishReplicateQuickStackItemStackInfo();
+	void ExecuteUbergraph_WBP_InventoryEquipment(int32 EntryPoint);
+	void End_Edit_Status_Point_Mode(bool IsCancel);
+	void EmptyEvent(bool IsConfirm);
+	void DisplaySameAccessoryNotice(class UWBP_PalItemSlotButtonBase_C* RelativeSlotButton);
+	void Destruct();
+	class UWidget* CustomNavi_ToStatusUp(EUINavigation Navigation_0);
+	class UWidget* CustomNavi_ToStatusOrToggleHead(EUINavigation Navigation_0);
+	class UWidget* CustomNavi_ToStatusOrToggleGlider(EUINavigation Navigation_0);
+	class UWidget* CustomNavi_ToStatusOrToggleBody(EUINavigation Navigation_0);
+	class UWidget* CustomNavi_ToSphereModuleSlot(EUINavigation Navigation_0);
+	class UWidget* CustomNavi_ToGliderSlot(EUINavigation Navigation_0);
+	class UWidget* CustomNavi_ToFoodSlotRight(EUINavigation Navigation_0);
+	class UWidget* CustomNavi_ToFoodSlotLeft(EUINavigation Navigation_0);
+	class UWidget* CustomNavi_ToFoodSlot2(EUINavigation Navigation_0);
+	class UWidget* CustomNavi_ToBodySlot(EUINavigation Navigation_0);
+	class UWidget* CustomNavi_ToAccessorySlot4(EUINavigation Navigation_0);
+	class UWidget* CustomNavi_ToAccessorySlot2(EUINavigation Navigation_0);
+	void Construct();
+	void ConfirmStatusPoint();
+	void Change_to_Edit_Status_Point_Mode(bool IsEditable);
+	void BndEvt__WBP_InventoryEquipment_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_20_OnHoveredSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
+	void BndEvt__WBP_InventoryEquipment_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_10_OnTriedEquipSlot__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* SlotButton);
+	void BndEvt__WBP_InventoryEquipment_WBP_PalInvisibleButton_ToggleQSPop_K2Node_ComponentBoundEvent_15_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_InventoryEquipment_WBP_PalInvisibleButton_StatusPointConfirm_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_InventoryEquipment_WBP_PalInvisibleButton_StatusPointCancel_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_InventoryEquipment_WBP_PalInvisibleButton_3_K2Node_ComponentBoundEvent_13_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_InventoryEquipment_WBP_PalInvisibleButton_2_K2Node_ComponentBoundEvent_11_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_InventoryEquipment_WBP_PalInvisibleButton_1_K2Node_ComponentBoundEvent_9_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_InventoryEquipment_WBP_InventoryEquipment_TrashButton_1_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature();
+	void BndEvt__WBP_InventoryEquipment_WBP_InventoryEquipment_TabList_K2Node_ComponentBoundEvent_2_OnChangedFocusIndex__DelegateSignature(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
+	void BndEvt__WBP_InventoryEquipment_WBP_InventoryEquipment_TabList_K2Node_ComponentBoundEvent_1_OnClickedSortButton__DelegateSignature();
+	void BndEvt__WBP_InventoryEquipment_WBP_InventoryEquipment_StatusUpButton_K2Node_ComponentBoundEvent_7_OnClicked__DelegateSignature();
+	void BndEvt__WBP_InventoryEquipment_WBP_InventoryEquipment_InvisibleExeptButton_K2Node_ComponentBoundEvent_19_OnClicked__DelegateSignature();
+	void BndEvt__WBP_InventoryEquipment_WBP_InventoryEquipment_InvisibleEatButton_K2Node_ComponentBoundEvent_14_OnClicked__DelegateSignature();
+	void BndEvt__WBP_InventoryEquipment_WBP_InventoryEquipment_InvisibleActionButton_K2Node_ComponentBoundEvent_12_OnClicked__DelegateSignature();
+	void BndEvt__WBP_InventoryEquipment_WBP_InventoryEquipment_DropButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
+	void BndEvt__WBP_InventoryEquipment_WBP_CommonButton_NameEdit_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature();
+	void BndEvt__WBP_InventoryEquipment_WBP_CommonButton_K2Node_ComponentBoundEvent_18_OnClicked__DelegateSignature();
+	void BndEvt__WBP_InventoryEquipment_CommonTileView_K2Node_ComponentBoundEvent_8_OnListItemSelectionChangedDynamic__DelegateSignature(class UObject* Item, bool bIsSelected);
+	void BndEvt__WBP_InventoryEquipment_CommonTileView_K2Node_ComponentBoundEvent_17_OnListEntryReleasedDynamic__DelegateSignature(class UUserWidget* Widget);
+	void BndEvt__WBP_InventoryEquipment_CommonTileView_K2Node_ComponentBoundEvent_16_OnListEntryInitializedDynamic__DelegateSignature(class UObject* Item, class UUserWidget* Widget);
+	void AddExceptItem(class FName ItemId);
 	void UpdateStatusParameterButton();
+	void UpdateQuickStackableInventorySlot(bool Editing);
+	void UpdateLanternEquipDetail();
+	void Update_Unused_Status_Point();
+	void Update_Player_Status();
+	void Update_Inventory_Greyout(class UPalItemSlot* Slot_0);
+	void UnsetCurrentSlot(class UWBP_PalItemSlotButtonBase_C* Button);
+	void ToQuickStackButton();
+	void ToggleQuickStackPanel();
+	void SetupStatusPointButtons();
+	void SetupFoodEquipSlot();
+	void SetupDropSlot();
+	void SetupCharacterName();
+	void Setup_Equipment_Slot();
+	void Setup(class UBP_InGameMenuInventoryModel_C* Model_0);
+	void SetInventoryWeight(double NowWeight, double MaxWeight);
+	void SetEnableGliderSlot(bool IsEnable);
+	void SetCurrentSlot(class UWBP_PalItemSlotButtonBase_C* Button);
+	void QuickStackButtonAct();
+	void PrepareReplicateQuickStackItemStackInfo();
+	void OpenOverlayStatusInfo(class UWidget* RelativeWidget, const struct FVector2D& AnchorPosition, const struct FVector2D& overrideInfoWidgetAlignment, const class FText& Title, const class FText& Desc, E_PalUIStatusDIsplayParameter Status);
+	void OpenOverlayItemSlotWindow(class UWidget* RelativeWidget, const struct FVector2D& AnchorPosition, const struct FVector2D& overrideInfoWidgetAlignment, const class FText& Title, const class FText& Info, const class FText& SubInfo);
+	void Open_Item_Use_Window(class UPalItemSlot* CurrentItemSlot);
+	void OnUpdateNickName_Binded(const class FString& NewNickName);
+	void OnUnhoverStatusButton(class UWBP_InventoryEquipment_StatusPointButton_C* Button);
+	void OnUnHoverFoodSlot(class UWBP_PalItemSlotButtonBase_C* Button);
+	void OnUnhoveredWeaponSlot(class UWBP_PalItemSlotButtonBase_C* Widget);
+	void OnUnhoveredAccessorySlot(class UWBP_PalItemSlotButtonBase_C* Widget);
+	void OnUddateMaxWeight(float MaxWeight);
+	void OnTimer_HideSameAccessoryNotice();
+	void OnRightClickQSSlot(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
+	void OnRightClickInventorySlot_QS(class UWBP_PalItemSlotButtonBase_C* Slot_0, EPalItemSlotPressType PressType);
+	void OnRequestUseFoodSlot(class UWBP_PalItemSlotButtonBase_C* Button);
+	void OnQuickStackItemStackInfoUpdate(class UPalBaseCampModuleItemStackInfo* ItemStackInfoModule);
+	void OnQuickStackItemStackInfoReady(class UPalBaseCampModel* Model_0, class UPalBaseCampFunctionModuleBase* Module);
+	void OnInitialized();
+	void OnHoverStatusButton(class UWBP_InventoryEquipment_StatusPointButton_C* Button);
 
 public:
 	static class UClass* StaticClass()

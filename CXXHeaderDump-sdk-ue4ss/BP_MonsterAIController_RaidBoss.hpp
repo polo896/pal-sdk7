@@ -8,18 +8,19 @@ class ABP_MonsterAIController_RaidBoss_C : public ABP_MonsterAIControllerBase_C
     bool IsNotFreeAIMode;                                                             // 0x05A0 (size: 0x1)
     FGuid TargetBaseCampID;                                                           // 0x05A4 (size: 0x10)
     TSubclassOf<class UPalAIActionBase> CombatAIActionClass;                          // 0x05B8 (size: 0x8)
+    bool UseInitialHPLock;                                                            // 0x05C0 (size: 0x1)
 
     void GetMyBB(class UBP_PalAIBlackboard_Common_C*& PalBrackboard);
     void GetLeaderBB(class UBP_PalAIBlackboard_Common_C*& LeaderPalBrackboard);
     FGuid GetTargetBaseCampIDForRaidBoss();
     void GetTargetCampID(FGuid& campID);
     void SetTargetCampID(FGuid campID);
-    void Force Battle Startto Target For Raid Boss(class APalPlayerCharacter* Player, TArray<class APalPlayerCharacter*>& AllPlayer);
+    void Force Battle Startto Target For Raid Boss(class APalPlayerCharacter* Player, TArray<APalPlayerCharacter*>& AllPlayer);
     void ReceivePossess(class APawn* PossessedPawn);
     void カスタムイベント_1(class APalCharacter* InCharacter);
     void DeleteDeadBody(FPalDeadInfo DeadInfo);
     void カスタムイベント(FPalInstanceID ID);
     void ExecuteUbergraph_BP_MonsterAIController_RaidBoss(int32 EntryPoint);
-}; // Size: 0x5C0
+}; // Size: 0x5C1
 
 #endif

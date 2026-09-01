@@ -8,7 +8,7 @@ class ABP_SkillEffectBase_C : public APalSkillEffectBase
     class USphereComponent* MovementSphereRoot;                                       // 0x0360 (size: 0x8)
     bool SpanwHitGroundEffect;                                                        // 0x0368 (size: 0x1)
     EPalWazaID Waza;                                                                  // 0x036A (size: 0x2)
-    TArray<class UNiagaraSystem*> Load Cache;                                         // 0x0370 (size: 0x10)
+    TArray<UNiagaraSystem*> Load Cache;                                               // 0x0370 (size: 0x10)
     TArray<int32> Foliage Index;                                                      // 0x0380 (size: 0x10)
     bool Is Poison;                                                                   // 0x0390 (size: 0x1)
     bool DoDestroyOnHitGround;                                                        // 0x0391 (size: 0x1)
@@ -23,7 +23,7 @@ class ABP_SkillEffectBase_C : public APalSkillEffectBase
     class UPrimitiveComponent* Other Hit Component;                                   // 0x03D8 (size: 0x8)
     FShooterSpringCameraParameter CurrentCameraOffset;                                // 0x03E0 (size: 0x28)
     bool NowCameraOffseting;                                                          // 0x0408 (size: 0x1)
-    TArray<class UPalShooterSpringArmComponent*> RegistedCameraOffsetComponents;      // 0x0410 (size: 0x10)
+    TArray<UPalShooterSpringArmComponent*> RegistedCameraOffsetComponents;            // 0x0410 (size: 0x10)
     FName Flag Name;                                                                  // 0x0420 (size: 0x8)
     bool IsExplosionDamage_Override;                                                  // 0x0428 (size: 0x1)
 
@@ -50,7 +50,7 @@ class ABP_SkillEffectBase_C : public APalSkillEffectBase
     void ReceiveBeginPlay();
     void ReceiveTick(float DeltaSeconds);
     void OnHitDelegate_イベント(class UPrimitiveComponent* MyHitComponent, class AActor* OtherHitActor, class UPrimitiveComponent* OtherHitComponent, const TArray<int32>& FoliageIndex, FVector HitLocation, int32 HitCount);
-    void LoadAndPlayEffect(TSoftObjectPtr<UNiagaraSystem> Niagara System, FTransform Transform);
+    void LoadAndPlayEffect(TSoftObjectPtr<class UNiagaraSystem> Niagara System, FTransform Transform);
     void FadeOutEffect(double DeltaSecond);
     void OnHitGround();
     void OnHitCustomRange(class UPrimitiveComponent* MyHitComponent, class AActor* OtherHitActor, class UPrimitiveComponent* OtherHitComponent, const TArray<int32>& FoliageIndex, FVector HitLocation, int32 HitCount);

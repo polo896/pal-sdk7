@@ -17,25 +17,17 @@
 namespace SDK
 {
 
-// Function WBP_IngameFlyEff.WBP_IngameFlyEff_C.EnableEff
+// Function WBP_IngameFlyEff.WBP_IngameFlyEff_C.UpdateEff
 // (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class APalCharacter*                    Character_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameFlyEff_C::EnableEff(bool IsEnable, class APalCharacter* Character_0)
+void UWBP_IngameFlyEff_C::UpdateEff()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameFlyEff_C", "EnableEff");
+		Func = Class->GetFunction("WBP_IngameFlyEff_C", "UpdateEff");
 
-	Params::WBP_IngameFlyEff_C_EnableEff Parms{};
-
-	Parms.IsEnable = IsEnable;
-	Parms.Character_0 = Character_0;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -59,17 +51,25 @@ void UWBP_IngameFlyEff_C::ExecuteUbergraph_WBP_IngameFlyEff(int32 EntryPoint)
 }
 
 
-// Function WBP_IngameFlyEff.WBP_IngameFlyEff_C.UpdateEff
+// Function WBP_IngameFlyEff.WBP_IngameFlyEff_C.EnableEff
 // (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APalCharacter*                    Character_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameFlyEff_C::UpdateEff()
+void UWBP_IngameFlyEff_C::EnableEff(bool IsEnable, class APalCharacter* Character_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameFlyEff_C", "UpdateEff");
+		Func = Class->GetFunction("WBP_IngameFlyEff_C", "EnableEff");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_IngameFlyEff_C_EnableEff Parms{};
+
+	Parms.IsEnable = IsEnable;
+	Parms.Character_0 = Character_0;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

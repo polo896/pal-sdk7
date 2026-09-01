@@ -42,31 +42,31 @@ public:
 	EPalArenaMenuActionType                       LastAction;                                        // 0x04E5(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_In();
-	void AnmEvent_MenuIn();
-	void AnmEvent_MenuOut();
-	void AnmEvent_Out();
-	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_1_OnArenaButtonClicked__DelegateSignature();
-	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_5_OnArenaButtonHovered__DelegateSignature();
-	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_6_OnArenaButtonUnhovered__DelegateSignature();
-	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_0_OnArenaButtonClicked__DelegateSignature();
-	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_3_OnArenaButtonHovered__DelegateSignature();
-	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_4_OnArenaButtonUnhovered__DelegateSignature();
-	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_2_OnArenaButtonClicked__DelegateSignature();
-	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_7_OnArenaButtonHovered__DelegateSignature();
-	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_8_OnArenaButtonUnhovered__DelegateSignature();
-	void CancelAction();
-	void ChangeInfo(int32 Index_0, bool IsEnable);
-	void Construct();
-	void EmptyEvent(bool bResult);
-	void ExecuteUbergraph_WBP_Arena_TopMenu(int32 EntryPoint);
-	void Finished_55E66A6745B17F175A5608B05FCBDDC7();
-	void OnClosed();
-	void OnInitialized();
-	void OnSetup();
-	void RrequestEnterArena(bool JoinMatch);
-	void Setup();
 	void Top_Menu_Action(EPalArenaMenuActionType ActionType);
+	void Setup();
+	void RrequestEnterArena(bool JoinMatch);
+	void OnSetup();
+	void OnInitialized();
+	void OnClosed();
+	void Finished_55E66A6745B17F175A5608B05FCBDDC7();
+	void ExecuteUbergraph_WBP_Arena_TopMenu(int32 EntryPoint);
+	void EmptyEvent(bool bResult);
+	void Construct();
+	void ChangeInfo(int32 Index_0, bool IsEnable);
+	void CancelAction();
+	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_8_OnArenaButtonUnhovered__DelegateSignature();
+	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_7_OnArenaButtonHovered__DelegateSignature();
+	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_2_OnArenaButtonClicked__DelegateSignature();
+	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_4_OnArenaButtonUnhovered__DelegateSignature();
+	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_3_OnArenaButtonHovered__DelegateSignature();
+	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_0_OnArenaButtonClicked__DelegateSignature();
+	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_6_OnArenaButtonUnhovered__DelegateSignature();
+	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_5_OnArenaButtonHovered__DelegateSignature();
+	void BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_1_OnArenaButtonClicked__DelegateSignature();
+	void AnmEvent_Out();
+	void AnmEvent_MenuOut();
+	void AnmEvent_MenuIn();
+	void AnmEvent_In();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

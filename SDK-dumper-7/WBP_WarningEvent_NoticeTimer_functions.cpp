@@ -17,45 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_WarningEvent_NoticeTimer.WBP_WarningEvent_NoticeTimer_C.AnmEvent_ForceSimpleDetail
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_WarningEvent_NoticeTimer.WBP_WarningEvent_NoticeTimer_C.SetRemainTime
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  remainTime                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_WarningEvent_NoticeTimer_C::AnmEvent_ForceSimpleDetail()
+void UWBP_WarningEvent_NoticeTimer_C::SetRemainTime(double remainTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningEvent_NoticeTimer_C", "AnmEvent_ForceSimpleDetail");
+		Func = Class->GetFunction("WBP_WarningEvent_NoticeTimer_C", "SetRemainTime");
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::WBP_WarningEvent_NoticeTimer_C_SetRemainTime Parms{};
 
+	Parms.remainTime = remainTime;
 
-// Function WBP_WarningEvent_NoticeTimer.WBP_WarningEvent_NoticeTimer_C.AnmEvent_NormalToSimple
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_WarningEvent_NoticeTimer_C::AnmEvent_NormalToSimple()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningEvent_NoticeTimer_C", "AnmEvent_NormalToSimple");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_WarningEvent_NoticeTimer.WBP_WarningEvent_NoticeTimer_C.AnmEvent_SimpleToNormal
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_WarningEvent_NoticeTimer_C::AnmEvent_SimpleToNormal()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningEvent_NoticeTimer_C", "AnmEvent_SimpleToNormal");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -79,23 +57,45 @@ void UWBP_WarningEvent_NoticeTimer_C::ExecuteUbergraph_WBP_WarningEvent_NoticeTi
 }
 
 
-// Function WBP_WarningEvent_NoticeTimer.WBP_WarningEvent_NoticeTimer_C.SetRemainTime
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  remainTime                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_WarningEvent_NoticeTimer.WBP_WarningEvent_NoticeTimer_C.AnmEvent_SimpleToNormal
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_WarningEvent_NoticeTimer_C::SetRemainTime(double remainTime)
+void UWBP_WarningEvent_NoticeTimer_C::AnmEvent_SimpleToNormal()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WarningEvent_NoticeTimer_C", "SetRemainTime");
+		Func = Class->GetFunction("WBP_WarningEvent_NoticeTimer_C", "AnmEvent_SimpleToNormal");
 
-	Params::WBP_WarningEvent_NoticeTimer_C_SetRemainTime Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.remainTime = remainTime;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function WBP_WarningEvent_NoticeTimer.WBP_WarningEvent_NoticeTimer_C.AnmEvent_NormalToSimple
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_WarningEvent_NoticeTimer_C::AnmEvent_NormalToSimple()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WarningEvent_NoticeTimer_C", "AnmEvent_NormalToSimple");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_WarningEvent_NoticeTimer.WBP_WarningEvent_NoticeTimer_C.AnmEvent_ForceSimpleDetail
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_WarningEvent_NoticeTimer_C::AnmEvent_ForceSimpleDetail()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WarningEvent_NoticeTimer_C", "AnmEvent_ForceSimpleDetail");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

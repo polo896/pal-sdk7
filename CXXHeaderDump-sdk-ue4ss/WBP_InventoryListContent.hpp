@@ -11,7 +11,7 @@ class UWBP_InventoryListContent_C : public UUserWidget
     class UImage* InventoryListLine_R;                                                // 0x02A0 (size: 0x8)
     class UWrapBox* WrapBox_92;                                                       // 0x02A8 (size: 0x8)
 
-    void GetAllContents(TArray<class UWidget*>& Contents);
+    void GetAllContents(TArray<UWidget*>& Contents);
     void AddWidget(class UWidget* inWidgett, int32& Index);
     void SetCategoryName(FText CategoryName);
 }; // Size: 0x2B0

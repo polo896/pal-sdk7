@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.UpdateCursor
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalOverallUILayout_C::UpdateCursor()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalOverallUILayout_C", "UpdateCursor");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -446,20 +460,6 @@ void UWBP_PalOverallUILayout_C::CheckPause()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_PalOverallUILayout_C", "CheckPause");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalOverallUILayout.WBP_PalOverallUILayout_C.UpdateCursor
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalOverallUILayout_C::UpdateCursor()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalOverallUILayout_C", "UpdateCursor");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

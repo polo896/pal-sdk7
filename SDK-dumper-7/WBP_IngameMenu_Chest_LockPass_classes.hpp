@@ -53,16 +53,16 @@ public:
 	bool                                          Is_Authentication;                                 // 0x0588(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_IngameMenu_Chest_LockPass_WBP_CommonButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
-	void CloseAction();
-	void Destruct();
-	void ExecuteUbergraph_WBP_IngameMenu_Chest_LockPass(int32 EntryPoint);
-	class FString GetInputNumberStr();
-	void NotifyAuthenticationResult(bool passed);
-	void OnInitialized();
-	void OnNumpadClicked(int32 ClickedNum);
-	void OnSetup();
 	void ResetInput();
+	void OnSetup();
+	void OnNumpadClicked(int32 ClickedNum);
+	void OnInitialized();
+	void NotifyAuthenticationResult(bool passed);
+	class FString GetInputNumberStr();
+	void ExecuteUbergraph_WBP_IngameMenu_Chest_LockPass(int32 EntryPoint);
+	void Destruct();
+	void CloseAction();
+	void BndEvt__WBP_IngameMenu_Chest_LockPass_WBP_CommonButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

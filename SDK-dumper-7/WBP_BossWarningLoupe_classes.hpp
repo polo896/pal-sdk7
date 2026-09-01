@@ -32,18 +32,18 @@ public:
 	bool                                          AlwaysDisplay;                                     // 0x0538(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Warning();
-	void CalcScreenPosition();
-	void CallWarning(bool AlwaysDisplay_0);
-	void ExecuteUbergraph_WBP_BossWarningLoupe(int32 EntryPoint);
-	void GetLoupeWidgetSize(struct FVector2D* widgetSize_0);
-	void GetTargetWidgetSize(struct FVector2D* outVector);
-	void GetTargetWorldLocation(struct FVector* outVector);
-	bool IsEnableLoupe();
-	void SetFinalWidgetOpacity(double calcedOpacity);
-	void Setup(class UPalIndividualCharacterHandle* targetHandle_0);
-	void UpdateArrowImageAngle(double newAngle);
 	void UpdatePositionAndVisibility(double Dot, const struct FVector& rootLocation, const struct FVector& TargetLocation);
+	void UpdateArrowImageAngle(double newAngle);
+	void Setup(class UPalIndividualCharacterHandle* targetHandle_0);
+	void SetFinalWidgetOpacity(double calcedOpacity);
+	bool IsEnableLoupe();
+	void GetTargetWorldLocation(struct FVector* outVector);
+	void GetTargetWidgetSize(struct FVector2D* outVector);
+	void GetLoupeWidgetSize(struct FVector2D* widgetSize_0);
+	void ExecuteUbergraph_WBP_BossWarningLoupe(int32 EntryPoint);
+	void CallWarning(bool AlwaysDisplay_0);
+	void CalcScreenPosition();
+	void AnmEvent_Warning();
 
 public:
 	static class UClass* StaticClass()

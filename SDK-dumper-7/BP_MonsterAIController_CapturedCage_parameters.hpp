@@ -14,6 +14,15 @@
 namespace SDK::Params
 {
 
+// Function BP_MonsterAIController_CapturedCage.BP_MonsterAIController_CapturedCage_C.ReceivePossess
+// 0x0008 (0x0008 - 0x0000)
+struct BP_MonsterAIController_CapturedCage_C_ReceivePossess final
+{
+public:
+	class APawn*                                  PossessedPawn;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_MonsterAIController_CapturedCage_C_ReceivePossess;
+
 // Function BP_MonsterAIController_CapturedCage.BP_MonsterAIController_CapturedCage_C.ExecuteUbergraph_BP_MonsterAIController_CapturedCage
 // 0x0020 (0x0020 - 0x0000)
 struct BP_MonsterAIController_CapturedCage_C_ExecuteUbergraph_BP_MonsterAIController_CapturedCage final
@@ -26,15 +35,6 @@ public:
 	class UPalActionBase*                         CallFunc_PlayAction_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_MonsterAIController_CapturedCage_C_ExecuteUbergraph_BP_MonsterAIController_CapturedCage;
-
-// Function BP_MonsterAIController_CapturedCage.BP_MonsterAIController_CapturedCage_C.ReceivePossess
-// 0x0008 (0x0008 - 0x0000)
-struct BP_MonsterAIController_CapturedCage_C_ReceivePossess final
-{
-public:
-	class APawn*                                  PossessedPawn;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_MonsterAIController_CapturedCage_C_ReceivePossess;
 
 }
 

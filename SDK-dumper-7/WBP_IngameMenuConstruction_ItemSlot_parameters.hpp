@@ -18,6 +18,33 @@
 namespace SDK::Params
 {
 
+// Function WBP_IngameMenuConstruction_ItemSlot.WBP_IngameMenuConstruction_ItemSlot_C.Setup
+// 0x00F8 (0x00F8 - 0x0000)
+struct WBP_IngameMenuConstruction_ItemSlot_C_Setup final
+{
+public:
+	struct FPalBuildObjectData                    BuildObjectData_0;                                 // 0x0000(0x0098)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class UPalMasterDataTableAccess_BuildObjectIconData* CallFunc_GetBuildObjectIconDataTableAccess_ReturnValue; // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BP_FindRow_bResult;                       // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalBuildObjectIconData                CallFunc_BP_FindRow_ReturnValue;                   // 0x00A8(0x0038)()
+	class FText                                   CallFunc_GetMapObjectName_outName;                 // 0x00E0(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_IngameMenuConstruction_ItemSlot_C_Setup;
+
+// Function WBP_IngameMenuConstruction_ItemSlot.WBP_IngameMenuConstruction_ItemSlot_C.SetNewIconVisibility
+// 0x0005 (0x0005 - 0x0000)
+struct WBP_IngameMenuConstruction_ItemSlot_C_SetNewIconVisibility final
+{
+public:
+	bool                                          Visable;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenuConstruction_ItemSlot_C_SetNewIconVisibility;
+
 // Function WBP_IngameMenuConstruction_ItemSlot.WBP_IngameMenuConstruction_ItemSlot_C.ExecuteUbergraph_WBP_IngameMenuConstruction_ItemSlot
 // 0x0058 (0x0058 - 0x0000)
 struct WBP_IngameMenuConstruction_ItemSlot_C_ExecuteUbergraph_WBP_IngameMenuConstruction_ItemSlot final
@@ -37,33 +64,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_IngameMenuConstruction_ItemSlot_C_ExecuteUbergraph_WBP_IngameMenuConstruction_ItemSlot;
-
-// Function WBP_IngameMenuConstruction_ItemSlot.WBP_IngameMenuConstruction_ItemSlot_C.SetNewIconVisibility
-// 0x0005 (0x0005 - 0x0000)
-struct WBP_IngameMenuConstruction_ItemSlot_C_SetNewIconVisibility final
-{
-public:
-	bool                                          Visable;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenuConstruction_ItemSlot_C_SetNewIconVisibility;
-
-// Function WBP_IngameMenuConstruction_ItemSlot.WBP_IngameMenuConstruction_ItemSlot_C.Setup
-// 0x00F8 (0x00F8 - 0x0000)
-struct WBP_IngameMenuConstruction_ItemSlot_C_Setup final
-{
-public:
-	struct FPalBuildObjectData                    BuildObjectData_0;                                 // 0x0000(0x0098)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class UPalMasterDataTableAccess_BuildObjectIconData* CallFunc_GetBuildObjectIconDataTableAccess_ReturnValue; // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BP_FindRow_bResult;                       // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalBuildObjectIconData                CallFunc_BP_FindRow_ReturnValue;                   // 0x00A8(0x0038)()
-	class FText                                   CallFunc_GetMapObjectName_outName;                 // 0x00E0(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_IngameMenuConstruction_ItemSlot_C_Setup;
 
 // Function WBP_IngameMenuConstruction_ItemSlot.WBP_IngameMenuConstruction_ItemSlot_C.GetCanvasSize
 // 0x0030 (0x0030 - 0x0000)

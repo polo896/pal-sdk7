@@ -49,34 +49,34 @@ public:
 	struct FTransform                             CachedCameraTransform;                             // 0x0690(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Add_Custom_Marker(const struct FPalLocationUIData& PalLocationUIData, const struct FPalCustomMarkerSaveData& PalCustomMarkerSaveData, const struct FGuid& LocationId);
-	void CREATEDELEGATE_PROXYFUNCTION_0(const struct FGuid& MarkerID);
-	void CREATEDELEGATE_PROXYFUNCTION_1(class UPalGroupGuildBase* Guild, const struct FGuid& MarkerID, const struct FPalGuildMarkerData& MarkerData);
-	void CREATEDELEGATE_PROXYFUNCTION_2(class UPalGroupGuildBase* Guild, const struct FGuid& MarkerID, const struct FPalGuildMarkerData& MarkerData);
-	void CREATEDELEGATE_PROXYFUNCTION_3(class UPalGroupGuildBase* Guild, const struct FGuid& MarkerID);
-	void CREATEDELEGATE_PROXYFUNCTION_4(class UPalGroupGuildBase* Guild, const struct FGuid& MarkerID, const struct FPalGuildMarkerData& MarkerData);
-	void CREATEDELEGATE_PROXYFUNCTION_5(class UPalGroupGuildBase* Guild, const struct FGuid& MarkerID, const struct FPalGuildMarkerData& MarkerData);
-	void CREATEDELEGATE_PROXYFUNCTION_6(class UPalGroupGuildBase* Guild, const struct FGuid& MarkerID);
-	void Destruct();
-	void ExecuteUbergraph_WBP_Ingame_Compass(int32 EntryPoint);
-	void GetVisibleIcons();
-	void On_Added_Location(const struct FGuid& LocationId, class UPalLocationBase* Location);
-	void OnAddGuildMarker(class UPalGroupGuildBase* Guild, const struct FGuid& MarkerID, const struct FPalGuildMarkerData& MarkerData);
-	void OnChangeGuildMarker(class UPalGroupGuildBase* Guild, const struct FGuid& MarkerID, const struct FPalGuildMarkerData& MarkerData);
-	void OnCustomMarkerChanged(const struct FGuid& MarkerID);
-	void OnGuildChanged(const struct FGuid& NewGroupId);
-	void OnInitialized();
-	void OnRemovedLocation(const struct FGuid& LocationId, class UPalLocationBase* Location);
-	void OnRemoveGuildMarker(class UPalGroupGuildBase* Guild, const struct FGuid& MarkerID);
-	void Refresh_Death_Mark(const TMap<struct FGuid, class UPalLocationBase*>& LocationMap);
-	void Setup();
-	void Setup_Created_Icon_Widget(class UWBP_CompassIconBase_C* createdWidget, const struct FGuid& LocationId, const struct FPalLocationUIData& LocationUIData);
-	void Setup_Custom_Marker();
-	void SetupGuildMarker();
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void Update_Icon();
-	void Update_Rotation_From_Pawn(class APawn* targetPawn);
 	void WaitGuildChange_Timer();
+	void Update_Rotation_From_Pawn(class APawn* targetPawn);
+	void Update_Icon();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void SetupGuildMarker();
+	void Setup_Custom_Marker();
+	void Setup_Created_Icon_Widget(class UWBP_CompassIconBase_C* createdWidget, const struct FGuid& LocationId, const struct FPalLocationUIData& LocationUIData);
+	void Setup();
+	void Refresh_Death_Mark(const TMap<struct FGuid, class UPalLocationBase*>& LocationMap);
+	void OnRemoveGuildMarker(class UPalGroupGuildBase* Guild, const struct FGuid& MarkerID);
+	void OnRemovedLocation(const struct FGuid& LocationId, class UPalLocationBase* Location);
+	void OnInitialized();
+	void OnGuildChanged(const struct FGuid& NewGroupId);
+	void OnCustomMarkerChanged(const struct FGuid& MarkerID);
+	void OnChangeGuildMarker(class UPalGroupGuildBase* Guild, const struct FGuid& MarkerID, const struct FPalGuildMarkerData& MarkerData);
+	void OnAddGuildMarker(class UPalGroupGuildBase* Guild, const struct FGuid& MarkerID, const struct FPalGuildMarkerData& MarkerData);
+	void On_Added_Location(const struct FGuid& LocationId, class UPalLocationBase* Location);
+	void GetVisibleIcons();
+	void ExecuteUbergraph_WBP_Ingame_Compass(int32 EntryPoint);
+	void Destruct();
+	void CREATEDELEGATE_PROXYFUNCTION_6(class UPalGroupGuildBase* Guild, const struct FGuid& MarkerID);
+	void CREATEDELEGATE_PROXYFUNCTION_5(class UPalGroupGuildBase* Guild, const struct FGuid& MarkerID, const struct FPalGuildMarkerData& MarkerData);
+	void CREATEDELEGATE_PROXYFUNCTION_4(class UPalGroupGuildBase* Guild, const struct FGuid& MarkerID, const struct FPalGuildMarkerData& MarkerData);
+	void CREATEDELEGATE_PROXYFUNCTION_3(class UPalGroupGuildBase* Guild, const struct FGuid& MarkerID);
+	void CREATEDELEGATE_PROXYFUNCTION_2(class UPalGroupGuildBase* Guild, const struct FGuid& MarkerID, const struct FPalGuildMarkerData& MarkerData);
+	void CREATEDELEGATE_PROXYFUNCTION_1(class UPalGroupGuildBase* Guild, const struct FGuid& MarkerID, const struct FPalGuildMarkerData& MarkerData);
+	void CREATEDELEGATE_PROXYFUNCTION_0(const struct FGuid& MarkerID);
+	void Add_Custom_Marker(const struct FPalLocationUIData& PalLocationUIData, const struct FPalCustomMarkerSaveData& PalCustomMarkerSaveData, const struct FGuid& LocationId);
 
 public:
 	static class UClass* StaticClass()

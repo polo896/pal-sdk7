@@ -40,24 +40,24 @@ public:
 	class UPalUISelectNumParameter*               Parameter;                                         // 0x04F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_CommonSelectNum_Button_318_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature();
-	void BndEvt__WBP_CommonSelectNum_EditableTextBox_0_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
-	void BndEvt__WBP_CommonSelectNum_EditableTextBox_0_K2Node_ComponentBoundEvent_3_OnEditableTextBoxChangedEvent__DelegateSignature(const class FText& Text);
-	void BndEvt__WBP_CommonSelectNum_LeftButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
-	void BndEvt__WBP_CommonSelectNum_RightButton_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature();
-	void Check_Numeric(const class FString& checkString, class FString* OutString);
-	void CheckMaxCount(const class FString& InString, class FString* OutString);
-	void Decrement();
-	void ExecuteUbergraph_WBP_CommonSelectNum(int32 EntryPoint);
-	void GetNowCount(int32* Count);
-	void Increment();
-	void OnClickedL();
-	void OnClickedR();
-	void OnEscape();
-	void OnSetup();
-	void OnTextChanged(const class FString& NewString);
-	void Setup(int64 inMaxCount, int64 defaultCount);
 	void UpdateText();
+	void Setup(int64 inMaxCount, int64 defaultCount);
+	void OnTextChanged(const class FString& NewString);
+	void OnSetup();
+	void OnEscape();
+	void OnClickedR();
+	void OnClickedL();
+	void Increment();
+	void GetNowCount(int32* Count);
+	void ExecuteUbergraph_WBP_CommonSelectNum(int32 EntryPoint);
+	void Decrement();
+	void CheckMaxCount(const class FString& InString, class FString* OutString);
+	void Check_Numeric(const class FString& checkString, class FString* OutString);
+	void BndEvt__WBP_CommonSelectNum_RightButton_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature();
+	void BndEvt__WBP_CommonSelectNum_LeftButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
+	void BndEvt__WBP_CommonSelectNum_EditableTextBox_0_K2Node_ComponentBoundEvent_3_OnEditableTextBoxChangedEvent__DelegateSignature(const class FText& Text);
+	void BndEvt__WBP_CommonSelectNum_EditableTextBox_0_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
+	void BndEvt__WBP_CommonSelectNum_Button_318_K2Node_ComponentBoundEvent_4_OnButtonClickedEvent__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()

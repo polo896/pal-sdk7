@@ -18,145 +18,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.UpdateHiddenOnZoom
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_WorldMap_IconBase_NoDesign_C_UpdateHiddenOnZoom final
-{
-public:
-	double                                        NewZoom;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue;       // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_UpdateHiddenOnZoom;
-
-// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.SetupForceVisibility
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_WorldMap_IconBase_NoDesign_C_SetupForceVisibility final
-{
-public:
-	bool                                          bChangedVisibility;                                // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_SetupForceVisibility;
-
-// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.Setup_Internal
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_WorldMap_IconBase_NoDesign_C_Setup_Internal final
-{
-public:
-	class UPalLocationPoint*                      LocationPoint;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_Setup_Internal;
-
-// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.Setup
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_WorldMap_IconBase_NoDesign_C_Setup final
-{
-public:
-	class UPalLocationPoint*                      LocationPoint;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  LocationId_0;                                      // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_Setup;
-
-// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.SetIgnoreMask
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_WorldMap_IconBase_NoDesign_C_SetIgnoreMask final
-{
-public:
-	bool                                          IsIgnore;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_SetIgnoreMask;
-
-// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.SetGeneralHiding
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_WorldMap_IconBase_NoDesign_C_SetGeneralHiding final
-{
-public:
-	bool                                          Hiding;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_SetGeneralHiding;
-
-// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.SetFilterState
-// 0x0058 (0x0058 - 0x0000)
-struct WBP_WorldMap_IconBase_NoDesign_C_SetFilterState final
-{
-public:
-	TSet<EPalLocationType>                        FilterSet;                                         // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm)
-	EPalLocationType                              CallFunc_GetLocationType_Type;                     // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Set_Contains_ReturnValue;                 // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_SetFilterState;
-
-// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.SetEnable
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_WorldMap_IconBase_NoDesign_C_SetEnable final
-{
-public:
-	bool                                          Enable;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_SetEnable;
-
-// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.IsIgnoreMask
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_WorldMap_IconBase_NoDesign_C_IsIgnoreMask final
-{
-public:
-	bool                                          IsIgnore;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_IsIgnoreMask;
-
-// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.GetText
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_WorldMap_IconBase_NoDesign_C_GetText final
-{
-public:
-	class FText                                   Text;                                              // 0x0000(0x0018)(Parm, OutParm)
-};
-DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_GetText;
-
-// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.GetLocationType
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_WorldMap_IconBase_NoDesign_C_GetLocationType final
-{
-public:
-	EPalLocationType                              Type;                                              // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_GetLocationType;
-
-// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.GetLocationRotation
-// 0x0080 (0x0080 - 0x0000)
-struct WBP_WorldMap_IconBase_NoDesign_C_GetLocationRotation final
-{
-public:
-	struct FQuat                                  LocationRotation;                                  // 0x0000(0x0020)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalLocationPoint*                      CallFunc_GetLocationPoint_ReturnValue;             // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FQuat                                  CallFunc_Quat_Identity_ReturnValue;                // 0x0030(0x0020)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_51[0xF];                                       // 0x0051(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FQuat                                  CallFunc_GetRotation_ReturnValue;                  // 0x0060(0x0020)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_GetLocationRotation;
-
-// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.GetLocationPosition
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_WorldMap_IconBase_NoDesign_C_GetLocationPosition final
-{
-public:
-	struct FVector                                LocationPosition;                                  // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetLocationOnLandscape_OutLocation;       // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetLocationOnLandscape_ReturnValue;       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_GetLocationPosition;
-
-// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.GetInvisibleButton
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_WorldMap_IconBase_NoDesign_C_GetInvisibleButton final
-{
-public:
-	class UWidget*                                Button;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_GetInvisibleButton;
-
 // Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.ExecuteUbergraph_WBP_WorldMap_IconBase_NoDesign
 // 0x0060 (0x0060 - 0x0000)
 struct WBP_WorldMap_IconBase_NoDesign_C_ExecuteUbergraph_WBP_WorldMap_IconBase_NoDesign final
@@ -174,6 +35,145 @@ public:
 	struct FAnchors                               K2Node_MakeStruct_Anchors;                         // 0x0040(0x0020)(NoDestructor)
 };
 DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_ExecuteUbergraph_WBP_WorldMap_IconBase_NoDesign;
+
+// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.GetInvisibleButton
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_WorldMap_IconBase_NoDesign_C_GetInvisibleButton final
+{
+public:
+	class UWidget*                                Button;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_GetInvisibleButton;
+
+// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.GetLocationPosition
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_WorldMap_IconBase_NoDesign_C_GetLocationPosition final
+{
+public:
+	struct FVector                                LocationPosition;                                  // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetLocationOnLandscape_OutLocation;       // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetLocationOnLandscape_ReturnValue;       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_GetLocationPosition;
+
+// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.GetLocationRotation
+// 0x0080 (0x0080 - 0x0000)
+struct WBP_WorldMap_IconBase_NoDesign_C_GetLocationRotation final
+{
+public:
+	struct FQuat                                  LocationRotation;                                  // 0x0000(0x0020)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalLocationPoint*                      CallFunc_GetLocationPoint_ReturnValue;             // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FQuat                                  CallFunc_Quat_Identity_ReturnValue;                // 0x0030(0x0020)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_51[0xF];                                       // 0x0051(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FQuat                                  CallFunc_GetRotation_ReturnValue;                  // 0x0060(0x0020)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_GetLocationRotation;
+
+// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.GetLocationType
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_WorldMap_IconBase_NoDesign_C_GetLocationType final
+{
+public:
+	EPalLocationType                              Type;                                              // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_GetLocationType;
+
+// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.GetText
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_WorldMap_IconBase_NoDesign_C_GetText final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0018)(Parm, OutParm)
+};
+DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_GetText;
+
+// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.IsIgnoreMask
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_WorldMap_IconBase_NoDesign_C_IsIgnoreMask final
+{
+public:
+	bool                                          IsIgnore;                                          // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_IsIgnoreMask;
+
+// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.SetEnable
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_WorldMap_IconBase_NoDesign_C_SetEnable final
+{
+public:
+	bool                                          Enable;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_SetEnable;
+
+// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.SetFilterState
+// 0x0058 (0x0058 - 0x0000)
+struct WBP_WorldMap_IconBase_NoDesign_C_SetFilterState final
+{
+public:
+	TSet<EPalLocationType>                        FilterSet;                                         // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm)
+	EPalLocationType                              CallFunc_GetLocationType_Type;                     // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Set_Contains_ReturnValue;                 // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_SetFilterState;
+
+// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.SetGeneralHiding
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_WorldMap_IconBase_NoDesign_C_SetGeneralHiding final
+{
+public:
+	bool                                          Hiding;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_SetGeneralHiding;
+
+// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.SetIgnoreMask
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_WorldMap_IconBase_NoDesign_C_SetIgnoreMask final
+{
+public:
+	bool                                          IsIgnore;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_SetIgnoreMask;
+
+// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.Setup
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_WorldMap_IconBase_NoDesign_C_Setup final
+{
+public:
+	class UPalLocationPoint*                      LocationPoint;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  LocationId_0;                                      // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_Setup;
+
+// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.Setup_Internal
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_WorldMap_IconBase_NoDesign_C_Setup_Internal final
+{
+public:
+	class UPalLocationPoint*                      LocationPoint;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_Setup_Internal;
+
+// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.SetupForceVisibility
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_WorldMap_IconBase_NoDesign_C_SetupForceVisibility final
+{
+public:
+	bool                                          bChangedVisibility;                                // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_SetupForceVisibility;
+
+// Function WBP_WorldMap_IconBase_NoDesign.WBP_WorldMap_IconBase_NoDesign_C.UpdateHiddenOnZoom
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_WorldMap_IconBase_NoDesign_C_UpdateHiddenOnZoom final
+{
+public:
+	double                                        NewZoom;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_DoubleDouble_ReturnValue;       // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WorldMap_IconBase_NoDesign_C_UpdateHiddenOnZoom;
 
 }
 

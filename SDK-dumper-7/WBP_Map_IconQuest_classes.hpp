@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "WBP_WorldMap_IconBase_NoDesign_classes.hpp"
 #include "Pal_structs.hpp"
+#include "WBP_WorldMap_IconBase_NoDesign_classes.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -33,18 +33,18 @@ public:
 	float                                         TargetAreaRange;                                   // 0x0568(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetupForceVisibility(bool* bChangedVisibility);
-	void Setup_Internal(class UPalLocationPoint* LocationPoint);
-	void SetTexture(class UTexture2D* Texture);
-	void SetAreaRangeWidgetScale(double InScale);
-	void OnMainVisibilityChanged(ESlateVisibility InVisibility);
-	void OnInitialized();
-	void GetQuestId(class FName* QuestId);
-	void GetInvisibleButton(class UWidget** Button);
-	void ExecuteUbergraph_WBP_Map_IconQuest(int32 EntryPoint);
-	void BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 	void BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Map_IconCustom_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void ExecuteUbergraph_WBP_Map_IconQuest(int32 EntryPoint);
+	void GetInvisibleButton(class UWidget** Button);
+	void GetQuestId(class FName* QuestId);
+	void OnInitialized();
+	void OnMainVisibilityChanged(ESlateVisibility InVisibility);
+	void SetAreaRangeWidgetScale(double InScale);
+	void SetTexture(class UTexture2D* Texture);
+	void Setup_Internal(class UPalLocationPoint* LocationPoint);
+	void SetupForceVisibility(bool* bChangedVisibility);
 
 public:
 	static class UClass* StaticClass()

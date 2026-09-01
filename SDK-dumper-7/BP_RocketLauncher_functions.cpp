@@ -17,88 +17,174 @@
 namespace SDK
 {
 
-// Function BP_RocketLauncher.BP_RocketLauncher_C.ChangeTransformForRocketReload
+// Function BP_RocketLauncher.BP_RocketLauncher_C.StopReloadSound
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FVector&                   Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FRotator&                  Rotation                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_RocketLauncher_C::ChangeTransformForRocketReload(const struct FVector& Location, const struct FRotator& Rotation)
+void ABP_RocketLauncher_C::StopReloadSound()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RocketLauncher_C", "ChangeTransformForRocketReload");
+		Func = Class->GetFunction("BP_RocketLauncher_C", "StopReloadSound");
 
-	Params::BP_RocketLauncher_C_ChangeTransformForRocketReload Parms{};
-
-	Parms.Location = std::move(Location);
-	Parms.Rotation = std::move(Rotation);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_RocketLauncher.BP_RocketLauncher_C.ChangeTransformForRocketWhenReloadIsDone
+// Function BP_RocketLauncher.BP_RocketLauncher_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_RocketLauncher_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RocketLauncher_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_RocketLauncher.BP_RocketLauncher_C.PlayReloadSound
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FVector&                   Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FRotator&                  Lotation                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_RocketLauncher_C::ChangeTransformForRocketWhenReloadIsDone(const struct FVector& Location, const struct FRotator& Lotation)
+void ABP_RocketLauncher_C::PlayReloadSound()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RocketLauncher_C", "ChangeTransformForRocketWhenReloadIsDone");
+		Func = Class->GetFunction("BP_RocketLauncher_C", "PlayReloadSound");
 
-	Params::BP_RocketLauncher_C_ChangeTransformForRocketWhenReloadIsDone Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Location = std::move(Location);
-	Parms.Lotation = std::move(Lotation);
+
+// Function BP_RocketLauncher.BP_RocketLauncher_C.PlayFireSound
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_RocketLauncher_C::PlayFireSound()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RocketLauncher_C", "PlayFireSound");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_RocketLauncher.BP_RocketLauncher_C.OnStopReload
+// (Event, Public, BlueprintEvent)
+
+void ABP_RocketLauncher_C::OnStopReload()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RocketLauncher_C", "OnStopReload");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_RocketLauncher.BP_RocketLauncher_C.OnReload
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   bulletsNum                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_RocketLauncher_C::OnReload(int32 bulletsNum)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RocketLauncher_C", "OnReload");
+
+	Params::BP_RocketLauncher_C_OnReload Parms{};
+
+	Parms.bulletsNum = bulletsNum;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_RocketLauncher.BP_RocketLauncher_C.ExecuteUbergraph_BP_RocketLauncher
-// (Final, UbergraphFunction)
+// Function BP_RocketLauncher.BP_RocketLauncher_C.OnNotify
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// E_PalWeaponAnimationNotify              Notify                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_RocketLauncher_C::ExecuteUbergraph_BP_RocketLauncher(int32 EntryPoint)
+void ABP_RocketLauncher_C::OnNotify(E_PalWeaponAnimationNotify Notify)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RocketLauncher_C", "ExecuteUbergraph_BP_RocketLauncher");
+		Func = Class->GetFunction("BP_RocketLauncher_C", "OnNotify");
 
-	Params::BP_RocketLauncher_C_ExecuteUbergraph_BP_RocketLauncher Parms{};
+	Params::BP_RocketLauncher_C_OnNotify Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Notify = Notify;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_RocketLauncher.BP_RocketLauncher_C.Get Right Hand Location
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function BP_RocketLauncher.BP_RocketLauncher_C.OnEndShootAnimation
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector*                         RightHandLocation                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAnimMontage*                     Montage                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_RocketLauncher_C::Get_Right_Hand_Location(struct FVector* RightHandLocation)
+void ABP_RocketLauncher_C::OnEndShootAnimation(class UAnimMontage* Montage)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RocketLauncher_C", "Get Right Hand Location");
+		Func = Class->GetFunction("BP_RocketLauncher_C", "OnEndShootAnimation");
 
-	Params::BP_RocketLauncher_C_Get_Right_Hand_Location Parms{};
+	Params::BP_RocketLauncher_C_OnEndShootAnimation Parms{};
+
+	Parms.Montage = Montage;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_RocketLauncher.BP_RocketLauncher_C.isUseRightHandAttach
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   isUse                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_RocketLauncher_C::isUseRightHandAttach(bool* isUse)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RocketLauncher_C", "isUseRightHandAttach");
+
+	Params::BP_RocketLauncher_C_isUseRightHandAttach Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (RightHandLocation != nullptr)
-		*RightHandLocation = std::move(Parms.RightHandLocation);
+	if (isUse != nullptr)
+		*isUse = Parms.isUse;
+}
+
+
+// Function BP_RocketLauncher.BP_RocketLauncher_C.HiddenWeaponSubPart
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    isHidden                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_RocketLauncher_C::HiddenWeaponSubPart(bool isHidden)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RocketLauncher_C", "HiddenWeaponSubPart");
+
+	Params::BP_RocketLauncher_C_HiddenWeaponSubPart Parms{};
+
+	Parms.isHidden = isHidden;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -127,339 +213,86 @@ void ABP_RocketLauncher_C::GetBackFireLocation(struct FVector* Location, struct 
 }
 
 
-// Function BP_RocketLauncher.BP_RocketLauncher_C.HiddenWeaponSubPart
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_RocketLauncher.BP_RocketLauncher_C.Get Right Hand Location
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    isHidden                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector*                         RightHandLocation                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_RocketLauncher_C::HiddenWeaponSubPart(bool isHidden)
+void ABP_RocketLauncher_C::Get_Right_Hand_Location(struct FVector* RightHandLocation)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RocketLauncher_C", "HiddenWeaponSubPart");
+		Func = Class->GetFunction("BP_RocketLauncher_C", "Get Right Hand Location");
 
-	Params::BP_RocketLauncher_C_HiddenWeaponSubPart Parms{};
+	Params::BP_RocketLauncher_C_Get_Right_Hand_Location Parms{};
 
-	Parms.isHidden = isHidden;
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (RightHandLocation != nullptr)
+		*RightHandLocation = std::move(Parms.RightHandLocation);
+}
+
+
+// Function BP_RocketLauncher.BP_RocketLauncher_C.ExecuteUbergraph_BP_RocketLauncher
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_RocketLauncher_C::ExecuteUbergraph_BP_RocketLauncher(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RocketLauncher_C", "ExecuteUbergraph_BP_RocketLauncher");
+
+	Params::BP_RocketLauncher_C_ExecuteUbergraph_BP_RocketLauncher Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_RocketLauncher.BP_RocketLauncher_C.isUseRightHandAttach
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   isUse                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_RocketLauncher_C::isUseRightHandAttach(bool* isUse)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RocketLauncher_C", "isUseRightHandAttach");
-
-	Params::BP_RocketLauncher_C_isUseRightHandAttach Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (isUse != nullptr)
-		*isUse = Parms.isUse;
-}
-
-
-// Function BP_RocketLauncher.BP_RocketLauncher_C.OnEndShootAnimation
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UAnimMontage*                     Montage                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_RocketLauncher_C::OnEndShootAnimation(class UAnimMontage* Montage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RocketLauncher_C", "OnEndShootAnimation");
-
-	Params::BP_RocketLauncher_C_OnEndShootAnimation Parms{};
-
-	Parms.Montage = Montage;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_RocketLauncher.BP_RocketLauncher_C.OnNotify
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// E_PalWeaponAnimationNotify              Notify                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_RocketLauncher_C::OnNotify(E_PalWeaponAnimationNotify Notify)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RocketLauncher_C", "OnNotify");
-
-	Params::BP_RocketLauncher_C_OnNotify Parms{};
-
-	Parms.Notify = Notify;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_RocketLauncher.BP_RocketLauncher_C.OnReload
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   bulletsNum                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_RocketLauncher_C::OnReload(int32 bulletsNum)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RocketLauncher_C", "OnReload");
-
-	Params::BP_RocketLauncher_C_OnReload Parms{};
-
-	Parms.bulletsNum = bulletsNum;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_RocketLauncher.BP_RocketLauncher_C.OnStopReload
-// (Event, Public, BlueprintEvent)
-
-void ABP_RocketLauncher_C::OnStopReload()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RocketLauncher_C", "OnStopReload");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_RocketLauncher.BP_RocketLauncher_C.PlayFireSound
+// Function BP_RocketLauncher.BP_RocketLauncher_C.ChangeTransformForRocketWhenReloadIsDone
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FVector&                   Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FRotator&                  Lotation                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_RocketLauncher_C::PlayFireSound()
+void ABP_RocketLauncher_C::ChangeTransformForRocketWhenReloadIsDone(const struct FVector& Location, const struct FRotator& Lotation)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RocketLauncher_C", "PlayFireSound");
+		Func = Class->GetFunction("BP_RocketLauncher_C", "ChangeTransformForRocketWhenReloadIsDone");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_RocketLauncher_C_ChangeTransformForRocketWhenReloadIsDone Parms{};
+
+	Parms.Location = std::move(Location);
+	Parms.Lotation = std::move(Lotation);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_RocketLauncher.BP_RocketLauncher_C.PlayReloadSound
+// Function BP_RocketLauncher.BP_RocketLauncher_C.ChangeTransformForRocketReload
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_RocketLauncher_C::PlayReloadSound()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RocketLauncher_C", "PlayReloadSound");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_RocketLauncher.BP_RocketLauncher_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_RocketLauncher_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RocketLauncher_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_RocketLauncher.BP_RocketLauncher_C.StopReloadSound
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_RocketLauncher_C::StopReloadSound()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RocketLauncher_C", "StopReloadSound");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_RocketLauncher.BP_RocketLauncher_C.GetAimingBlurAngle
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// double*                                 Angle                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FRotator&                  Rotation                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ABP_RocketLauncher_C::GetAimingBlurAngle(double* Angle)
+void ABP_RocketLauncher_C::ChangeTransformForRocketReload(const struct FVector& Location, const struct FRotator& Rotation)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RocketLauncher_C", "GetAimingBlurAngle");
+		Func = Class->GetFunction("BP_RocketLauncher_C", "ChangeTransformForRocketReload");
 
-	Params::BP_RocketLauncher_C_GetAimingBlurAngle Parms{};
+	Params::BP_RocketLauncher_C_ChangeTransformForRocketReload Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Angle != nullptr)
-		*Angle = Parms.Angle;
-}
-
-
-// Function BP_RocketLauncher.BP_RocketLauncher_C.GetBlurAngle
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// double*                                 Angle                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_RocketLauncher_C::GetBlurAngle(double* Angle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RocketLauncher_C", "GetBlurAngle");
-
-	Params::BP_RocketLauncher_C_GetBlurAngle Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Angle != nullptr)
-		*Angle = Parms.Angle;
-}
-
-
-// Function BP_RocketLauncher.BP_RocketLauncher_C.GetInitializeInterval
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// double*                                 Time                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_RocketLauncher_C::GetInitializeInterval(double* Time)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RocketLauncher_C", "GetInitializeInterval");
-
-	Params::BP_RocketLauncher_C_GetInitializeInterval Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Time != nullptr)
-		*Time = Parms.Time;
-}
-
-
-// Function BP_RocketLauncher.BP_RocketLauncher_C.GetMuzzleEffect
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UNiagaraSystem**                  NewParam                                               (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_RocketLauncher_C::GetMuzzleEffect(class UNiagaraSystem** NewParam)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RocketLauncher_C", "GetMuzzleEffect");
-
-	Params::BP_RocketLauncher_C_GetMuzzleEffect Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (NewParam != nullptr)
-		*NewParam = Parms.NewParam;
-}
-
-
-// Function BP_RocketLauncher.BP_RocketLauncher_C.GetMuzzleLocation
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FVector*                         MuzzleLocation                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_RocketLauncher_C::GetMuzzleLocation(struct FVector* MuzzleLocation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RocketLauncher_C", "GetMuzzleLocation");
-
-	Params::BP_RocketLauncher_C_GetMuzzleLocation Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (MuzzleLocation != nullptr)
-		*MuzzleLocation = std::move(Parms.MuzzleLocation);
-}
-
-
-// Function BP_RocketLauncher.BP_RocketLauncher_C.GetMuzzleRotator
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FRotator*                        Rotator                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void ABP_RocketLauncher_C::GetMuzzleRotator(struct FRotator* Rotator)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RocketLauncher_C", "GetMuzzleRotator");
-
-	Params::BP_RocketLauncher_C_GetMuzzleRotator Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Rotator != nullptr)
-		*Rotator = std::move(Parms.Rotator);
-}
-
-
-// Function BP_RocketLauncher.BP_RocketLauncher_C.GetShootInterval
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// double*                                 Time                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_RocketLauncher_C::GetShootInterval(double* Time)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RocketLauncher_C", "GetShootInterval");
-
-	Params::BP_RocketLauncher_C_GetShootInterval Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Time != nullptr)
-		*Time = Parms.Time;
-}
-
-
-// Function BP_RocketLauncher.BP_RocketLauncher_C.OnAttachWeapon
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           attachActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_RocketLauncher_C::OnAttachWeapon(class AActor* attachActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RocketLauncher_C", "OnAttachWeapon");
-
-	Params::BP_RocketLauncher_C_OnAttachWeapon Parms{};
-
-	Parms.attachActor = attachActor;
+	Parms.Location = std::move(Location);
+	Parms.Rotation = std::move(Rotation);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -485,37 +318,184 @@ void ABP_RocketLauncher_C::OnDetachWeapon(class AActor* detachActor)
 }
 
 
-// Function BP_RocketLauncher.BP_RocketLauncher_C.OnPullTrigger
+// Function BP_RocketLauncher.BP_RocketLauncher_C.OnAttachWeapon
 // (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           attachActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_RocketLauncher_C::OnPullTrigger()
+void ABP_RocketLauncher_C::OnAttachWeapon(class AActor* attachActor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RocketLauncher_C", "OnPullTrigger");
+		Func = Class->GetFunction("BP_RocketLauncher_C", "OnAttachWeapon");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::BP_RocketLauncher_C_OnAttachWeapon Parms{};
+
+	Parms.attachActor = attachActor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_RocketLauncher.BP_RocketLauncher_C.OnReloadStart
-// (Event, Public, BlueprintEvent)
+// Function BP_RocketLauncher.BP_RocketLauncher_C.GetShootInterval
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// float                                   InReloadSpeedPlayRate                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double*                                 Time                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_RocketLauncher_C::OnReloadStart(float InReloadSpeedPlayRate)
+void ABP_RocketLauncher_C::GetShootInterval(double* Time)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RocketLauncher_C", "OnReloadStart");
+		Func = Class->GetFunction("BP_RocketLauncher_C", "GetShootInterval");
 
-	Params::BP_RocketLauncher_C_OnReloadStart Parms{};
-
-	Parms.InReloadSpeedPlayRate = InReloadSpeedPlayRate;
+	Params::BP_RocketLauncher_C_GetShootInterval Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (Time != nullptr)
+		*Time = Parms.Time;
+}
+
+
+// Function BP_RocketLauncher.BP_RocketLauncher_C.GetMuzzleRotator
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FRotator*                        Rotator                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void ABP_RocketLauncher_C::GetMuzzleRotator(struct FRotator* Rotator)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RocketLauncher_C", "GetMuzzleRotator");
+
+	Params::BP_RocketLauncher_C_GetMuzzleRotator Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Rotator != nullptr)
+		*Rotator = std::move(Parms.Rotator);
+}
+
+
+// Function BP_RocketLauncher.BP_RocketLauncher_C.GetMuzzleLocation
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FVector*                         MuzzleLocation                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_RocketLauncher_C::GetMuzzleLocation(struct FVector* MuzzleLocation)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RocketLauncher_C", "GetMuzzleLocation");
+
+	Params::BP_RocketLauncher_C_GetMuzzleLocation Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (MuzzleLocation != nullptr)
+		*MuzzleLocation = std::move(Parms.MuzzleLocation);
+}
+
+
+// Function BP_RocketLauncher.BP_RocketLauncher_C.GetMuzzleEffect
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UNiagaraSystem**                  NewParam                                               (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_RocketLauncher_C::GetMuzzleEffect(class UNiagaraSystem** NewParam)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RocketLauncher_C", "GetMuzzleEffect");
+
+	Params::BP_RocketLauncher_C_GetMuzzleEffect Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (NewParam != nullptr)
+		*NewParam = Parms.NewParam;
+}
+
+
+// Function BP_RocketLauncher.BP_RocketLauncher_C.GetInitializeInterval
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// double*                                 Time                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_RocketLauncher_C::GetInitializeInterval(double* Time)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RocketLauncher_C", "GetInitializeInterval");
+
+	Params::BP_RocketLauncher_C_GetInitializeInterval Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Time != nullptr)
+		*Time = Parms.Time;
+}
+
+
+// Function BP_RocketLauncher.BP_RocketLauncher_C.GetBlurAngle
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// double*                                 Angle                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_RocketLauncher_C::GetBlurAngle(double* Angle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RocketLauncher_C", "GetBlurAngle");
+
+	Params::BP_RocketLauncher_C_GetBlurAngle Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Angle != nullptr)
+		*Angle = Parms.Angle;
+}
+
+
+// Function BP_RocketLauncher.BP_RocketLauncher_C.GetAimingBlurAngle
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// double*                                 Angle                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_RocketLauncher_C::GetAimingBlurAngle(double* Angle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RocketLauncher_C", "GetAimingBlurAngle");
+
+	Params::BP_RocketLauncher_C_GetAimingBlurAngle Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Angle != nullptr)
+		*Angle = Parms.Angle;
+}
+
+
+// Function BP_RocketLauncher.BP_RocketLauncher_C.ShootBullet
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_RocketLauncher_C::ShootBullet()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RocketLauncher_C", "ShootBullet");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -539,15 +519,35 @@ void ABP_RocketLauncher_C::OnShoot(class APalBullet* BulletActor)
 }
 
 
-// Function BP_RocketLauncher.BP_RocketLauncher_C.ShootBullet
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_RocketLauncher.BP_RocketLauncher_C.OnReloadStart
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   InReloadSpeedPlayRate                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_RocketLauncher_C::ShootBullet()
+void ABP_RocketLauncher_C::OnReloadStart(float InReloadSpeedPlayRate)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RocketLauncher_C", "ShootBullet");
+		Func = Class->GetFunction("BP_RocketLauncher_C", "OnReloadStart");
+
+	Params::BP_RocketLauncher_C_OnReloadStart Parms{};
+
+	Parms.InReloadSpeedPlayRate = InReloadSpeedPlayRate;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_RocketLauncher.BP_RocketLauncher_C.OnPullTrigger
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_RocketLauncher_C::OnPullTrigger()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_RocketLauncher_C", "OnPullTrigger");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

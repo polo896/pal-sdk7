@@ -42,14 +42,14 @@ public:
 	struct FTimerHandle                           DelayInAnmTimerHandle;                             // 0x0300(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_In();
-	void AnmEvent_Out();
-	void AnmEvent_Rarity(int32 RarityIndex);
-	void Destruct();
-	void ExecuteUbergraph_WBP_PalIngameMenuItem_Get(int32 EntryPoint);
-	void OnTimerEvent_InAnm();
-	void SetDelayInAnmTimer(double StartDelay);
 	void Setup(const struct FPalItemAndNum& ItemData);
+	void SetDelayInAnmTimer(double StartDelay);
+	void OnTimerEvent_InAnm();
+	void ExecuteUbergraph_WBP_PalIngameMenuItem_Get(int32 EntryPoint);
+	void Destruct();
+	void AnmEvent_Rarity(int32 RarityIndex);
+	void AnmEvent_Out();
+	void AnmEvent_In();
 
 public:
 	static class UClass* StaticClass()

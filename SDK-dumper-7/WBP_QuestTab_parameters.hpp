@@ -14,39 +14,14 @@
 namespace SDK::Params
 {
 
-// Function WBP_QuestTab.WBP_QuestTab_C.BndEvt__WBP_QuestTab_WBP_TabButton_Main_K2Node_ComponentBoundEvent_0_SwitchTabTo__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_QuestTab_C_BndEvt__WBP_QuestTab_WBP_TabButton_Main_K2Node_ComponentBoundEvent_0_SwitchTabTo__DelegateSignature final
+// Function WBP_QuestTab.WBP_QuestTab_C.RegisterPanelWidget
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_QuestTab_C_RegisterPanelWidget final
 {
 public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPanelWidget*                           PanelWidget;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_QuestTab_C_BndEvt__WBP_QuestTab_WBP_TabButton_Main_K2Node_ComponentBoundEvent_0_SwitchTabTo__DelegateSignature;
-
-// Function WBP_QuestTab.WBP_QuestTab_C.BndEvt__WBP_QuestTab_WBP_TabButton_Sub_K2Node_ComponentBoundEvent_1_SwitchTabTo__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_QuestTab_C_BndEvt__WBP_QuestTab_WBP_TabButton_Sub_K2Node_ComponentBoundEvent_1_SwitchTabTo__DelegateSignature final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_QuestTab_C_BndEvt__WBP_QuestTab_WBP_TabButton_Sub_K2Node_ComponentBoundEvent_1_SwitchTabTo__DelegateSignature;
-
-// Function WBP_QuestTab.WBP_QuestTab_C.ExecuteUbergraph_WBP_QuestTab
-// 0x0068 (0x0068 - 0x0000)
-struct WBP_QuestTab_C_ExecuteUbergraph_WBP_QuestTab final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0008(0x0018)()
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text_1;        // 0x0020(0x0018)()
-	TDelegate<void(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget)> K2Node_CreateDelegate_OutputDelegate; // 0x0038(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_ComponentBoundEvent_Index_1;                // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_ComponentBoundEvent_Index;                  // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text_2;        // 0x0050(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_QuestTab_C_ExecuteUbergraph_WBP_QuestTab;
+DUMPER7_ASSERTS_WBP_QuestTab_C_RegisterPanelWidget;
 
 // Function WBP_QuestTab.WBP_QuestTab_C.OnChangedTabIndex_Internal
 // 0x0050 (0x0050 - 0x0000)
@@ -69,14 +44,39 @@ public:
 };
 DUMPER7_ASSERTS_WBP_QuestTab_C_OnChangedTabIndex_Internal;
 
-// Function WBP_QuestTab.WBP_QuestTab_C.RegisterPanelWidget
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_QuestTab_C_RegisterPanelWidget final
+// Function WBP_QuestTab.WBP_QuestTab_C.ExecuteUbergraph_WBP_QuestTab
+// 0x0068 (0x0068 - 0x0000)
+struct WBP_QuestTab_C_ExecuteUbergraph_WBP_QuestTab final
 {
 public:
-	class UPanelWidget*                           PanelWidget;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0008(0x0018)()
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text_1;        // 0x0020(0x0018)()
+	TDelegate<void(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget)> K2Node_CreateDelegate_OutputDelegate; // 0x0038(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_ComponentBoundEvent_Index_1;                // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_ComponentBoundEvent_Index;                  // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text_2;        // 0x0050(0x0018)()
 };
-DUMPER7_ASSERTS_WBP_QuestTab_C_RegisterPanelWidget;
+DUMPER7_ASSERTS_WBP_QuestTab_C_ExecuteUbergraph_WBP_QuestTab;
+
+// Function WBP_QuestTab.WBP_QuestTab_C.BndEvt__WBP_QuestTab_WBP_TabButton_Sub_K2Node_ComponentBoundEvent_1_SwitchTabTo__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_QuestTab_C_BndEvt__WBP_QuestTab_WBP_TabButton_Sub_K2Node_ComponentBoundEvent_1_SwitchTabTo__DelegateSignature final
+{
+public:
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_QuestTab_C_BndEvt__WBP_QuestTab_WBP_TabButton_Sub_K2Node_ComponentBoundEvent_1_SwitchTabTo__DelegateSignature;
+
+// Function WBP_QuestTab.WBP_QuestTab_C.BndEvt__WBP_QuestTab_WBP_TabButton_Main_K2Node_ComponentBoundEvent_0_SwitchTabTo__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_QuestTab_C_BndEvt__WBP_QuestTab_WBP_TabButton_Main_K2Node_ComponentBoundEvent_0_SwitchTabTo__DelegateSignature final
+{
+public:
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_QuestTab_C_BndEvt__WBP_QuestTab_WBP_TabButton_Main_K2Node_ComponentBoundEvent_0_SwitchTabTo__DelegateSignature;
 
 }
 

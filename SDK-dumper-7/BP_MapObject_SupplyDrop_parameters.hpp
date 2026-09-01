@@ -14,14 +14,17 @@
 namespace SDK::Params
 {
 
-// Function BP_MapObject_SupplyDrop.BP_MapObject_SupplyDrop_C.BP_OnSetConcreteModel
-// 0x0008 (0x0008 - 0x0000)
-struct BP_MapObject_SupplyDrop_C_BP_OnSetConcreteModel final
+// Function BP_MapObject_SupplyDrop.BP_MapObject_SupplyDrop_C.SetActiveFXInLocal
+// 0x0018 (0x0018 - 0x0000)
+struct BP_MapObject_SupplyDrop_C_SetActiveFXInLocal final
 {
 public:
 	class UPalMapObjectConcreteModelBase*         ConcreteModel;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectDeathPenaltyStorageModel*  K2Node_DynamicCast_AsPal_Map_Object_Death_Penalty_Storage_Model; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsSameGuildInLocalPlayer_ReturnValue;     // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_MapObject_SupplyDrop_C_BP_OnSetConcreteModel;
+DUMPER7_ASSERTS_BP_MapObject_SupplyDrop_C_SetActiveFXInLocal;
 
 // Function BP_MapObject_SupplyDrop.BP_MapObject_SupplyDrop_C.ExecuteUbergraph_BP_MapObject_SupplyDrop
 // 0x0010 (0x0010 - 0x0000)
@@ -34,17 +37,14 @@ public:
 };
 DUMPER7_ASSERTS_BP_MapObject_SupplyDrop_C_ExecuteUbergraph_BP_MapObject_SupplyDrop;
 
-// Function BP_MapObject_SupplyDrop.BP_MapObject_SupplyDrop_C.SetActiveFXInLocal
-// 0x0018 (0x0018 - 0x0000)
-struct BP_MapObject_SupplyDrop_C_SetActiveFXInLocal final
+// Function BP_MapObject_SupplyDrop.BP_MapObject_SupplyDrop_C.BP_OnSetConcreteModel
+// 0x0008 (0x0008 - 0x0000)
+struct BP_MapObject_SupplyDrop_C_BP_OnSetConcreteModel final
 {
 public:
 	class UPalMapObjectConcreteModelBase*         ConcreteModel;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalMapObjectDeathPenaltyStorageModel*  K2Node_DynamicCast_AsPal_Map_Object_Death_Penalty_Storage_Model; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsSameGuildInLocalPlayer_ReturnValue;     // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_MapObject_SupplyDrop_C_SetActiveFXInLocal;
+DUMPER7_ASSERTS_BP_MapObject_SupplyDrop_C_BP_OnSetConcreteModel;
 
 }
 

@@ -17,21 +17,55 @@
 namespace SDK
 {
 
-// Function BP_BuildObject_BuildableGoddessStatue.BP_BuildObject_BuildableGoddessStatue_C.BP_OnSetConcreteModel
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function BP_BuildObject_BuildableGoddessStatue.BP_BuildObject_BuildableGoddessStatue_C.SetActive_Internal
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPalMapObjectConcreteModelBase*   ConcreteModel                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bOn                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BuildObject_BuildableGoddessStatue_C::BP_OnSetConcreteModel(class UPalMapObjectConcreteModelBase* ConcreteModel)
+void ABP_BuildObject_BuildableGoddessStatue_C::SetActive_Internal(bool bOn)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BuildObject_BuildableGoddessStatue_C", "BP_OnSetConcreteModel");
+		Func = Class->GetFunction("BP_BuildObject_BuildableGoddessStatue_C", "SetActive_Internal");
 
-	Params::BP_BuildObject_BuildableGoddessStatue_C_BP_OnSetConcreteModel Parms{};
+	Params::BP_BuildObject_BuildableGoddessStatue_C_SetActive_Internal Parms{};
 
-	Parms.ConcreteModel = ConcreteModel;
+	Parms.bOn = bOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BuildObject_BuildableGoddessStatue.BP_BuildObject_BuildableGoddessStatue_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_BuildObject_BuildableGoddessStatue_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BuildObject_BuildableGoddessStatue_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BuildObject_BuildableGoddessStatue.BP_BuildObject_BuildableGoddessStatue_C.ExecuteUbergraph_BP_BuildObject_BuildableGoddessStatue
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BuildObject_BuildableGoddessStatue_C::ExecuteUbergraph_BP_BuildObject_BuildableGoddessStatue(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_BuildObject_BuildableGoddessStatue_C", "ExecuteUbergraph_BP_BuildObject_BuildableGoddessStatue");
+
+	Params::BP_BuildObject_BuildableGoddessStatue_C_ExecuteUbergraph_BP_BuildObject_BuildableGoddessStatue Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,55 +91,21 @@ void ABP_BuildObject_BuildableGoddessStatue_C::CustomEvent(class UPalMapObjectCo
 }
 
 
-// Function BP_BuildObject_BuildableGoddessStatue.BP_BuildObject_BuildableGoddessStatue_C.ExecuteUbergraph_BP_BuildObject_BuildableGoddessStatue
-// (Final, UbergraphFunction)
+// Function BP_BuildObject_BuildableGoddessStatue.BP_BuildObject_BuildableGoddessStatue_C.BP_OnSetConcreteModel
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalMapObjectConcreteModelBase*   ConcreteModel                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BuildObject_BuildableGoddessStatue_C::ExecuteUbergraph_BP_BuildObject_BuildableGoddessStatue(int32 EntryPoint)
+void ABP_BuildObject_BuildableGoddessStatue_C::BP_OnSetConcreteModel(class UPalMapObjectConcreteModelBase* ConcreteModel)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BuildObject_BuildableGoddessStatue_C", "ExecuteUbergraph_BP_BuildObject_BuildableGoddessStatue");
+		Func = Class->GetFunction("BP_BuildObject_BuildableGoddessStatue_C", "BP_OnSetConcreteModel");
 
-	Params::BP_BuildObject_BuildableGoddessStatue_C_ExecuteUbergraph_BP_BuildObject_BuildableGoddessStatue Parms{};
+	Params::BP_BuildObject_BuildableGoddessStatue_C_BP_OnSetConcreteModel Parms{};
 
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BuildObject_BuildableGoddessStatue.BP_BuildObject_BuildableGoddessStatue_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_BuildObject_BuildableGoddessStatue_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BuildObject_BuildableGoddessStatue_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_BuildObject_BuildableGoddessStatue.BP_BuildObject_BuildableGoddessStatue_C.SetActive_Internal
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bOn                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BuildObject_BuildableGoddessStatue_C::SetActive_Internal(bool bOn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BuildObject_BuildableGoddessStatue_C", "SetActive_Internal");
-
-	Params::BP_BuildObject_BuildableGoddessStatue_C_SetActive_Internal Parms{};
-
-	Parms.bOn = bOn;
+	Parms.ConcreteModel = ConcreteModel;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

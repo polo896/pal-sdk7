@@ -27,10 +27,10 @@ public:
 	TSubclassOf<class UPalCoopSkillModuleBase>    Skill_Module_Class;                                // 0x0148(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 
 public:
-	void ActionStart(class APawn* ControlledPawn);
-	void ExecuteUbergraph_BP_AIActionCoop_AssignPassiveSkill(int32 EntryPoint);
-	void OnActionNotify(const class UPalActionBase* action, class FName NotifyName);
 	void StartSkill();
+	void OnActionNotify(const class UPalActionBase* action, class FName NotifyName);
+	void ExecuteUbergraph_BP_AIActionCoop_AssignPassiveSkill(int32 EntryPoint);
+	void ActionStart(class APawn* ControlledPawn);
 
 public:
 	static class UClass* StaticClass()

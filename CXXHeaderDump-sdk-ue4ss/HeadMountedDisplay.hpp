@@ -131,7 +131,7 @@ class UMotionControllerComponent : public UPrimitiveComponent
     bool bDisplayDeviceModel;                                                         // 0x054D (size: 0x1)
     FName DisplayModelSource;                                                         // 0x0550 (size: 0x8)
     class UStaticMesh* CustomDisplayMesh;                                             // 0x0558 (size: 0x8)
-    TArray<class UMaterialInterface*> DisplayMeshMaterialOverrides;                   // 0x0560 (size: 0x10)
+    TArray<UMaterialInterface*> DisplayMeshMaterialOverrides;                         // 0x0560 (size: 0x10)
     class UPrimitiveComponent* DisplayComponent;                                      // 0x0648 (size: 0x8)
 
     void SetTrackingSource(const EControllerHand NewSource);

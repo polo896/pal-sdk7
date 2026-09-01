@@ -31,7 +31,7 @@ class UAudioAnalyzerSettings : public UAudioAnalyzerAssetBase
 
 class UAudioAnalyzerSubsystem : public UEngineSubsystem
 {
-    TArray<class UAudioAnalyzer*> AudioAnalyzers;                                     // 0x0030 (size: 0x10)
+    TArray<UAudioAnalyzer*> AudioAnalyzers;                                           // 0x0030 (size: 0x10)
 
 }; // Size: 0x50
 

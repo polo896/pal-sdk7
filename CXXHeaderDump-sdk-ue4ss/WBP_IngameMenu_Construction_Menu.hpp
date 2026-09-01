@@ -42,13 +42,13 @@ class UWBP_IngameMenu_Construction_Menu_C : public UUserWidget
     TMap<FName, int32> CachedControllableItemNumMap;                                  // 0x03A0 (size: 0x50)
     FWBP_IngameMenu_Construction_Menu_COnClickPaintingModeButton OnClickPaintingModeButton; // 0x03F0 (size: 0x10)
     void OnClickPaintingModeButton();
-    TMap<class EPalBuildObjectTypeForUIDisplay, class FPalBuildObjectDataSetTypeUIDisplay> CachedDataMap; // 0x0400 (size: 0x50)
+    TMap<EPalBuildObjectTypeForUIDisplay, FPalBuildObjectDataSetTypeUIDisplay> CachedDataMap; // 0x0400 (size: 0x50)
     FWBP_IngameMenu_Construction_Menu_COnHoveredCategoryTab OnHoveredCategoryTab;     // 0x0450 (size: 0x10)
     void OnHoveredCategoryTab(class UWBP_IngameMenu_Construction_Tab_C* TabWidget);
     FWBP_IngameMenu_Construction_Menu_COnUnhoveredCategoryTab OnUnhoveredCategoryTab; // 0x0460 (size: 0x10)
     void OnUnhoveredCategoryTab();
     bool bOpenAnimFinished;                                                           // 0x0470 (size: 0x1)
-    TSoftObjectPtr<UWBP_IngameMenu_Construction_Icon_C> LastHoveredIcon;              // 0x0478 (size: 0x30)
+    TSoftObjectPtr<class UWBP_IngameMenu_Construction_Icon_C> LastHoveredIcon;        // 0x0478 (size: 0x30)
     FTimerHandle DelaySnapOverlayInfoTimerHandle;                                     // 0x04A8 (size: 0x8)
     TMap<EPalBuildObjectTypeForUIDisplay, int32> DisplayTypePriorityMap;              // 0x04B0 (size: 0x50)
 
@@ -73,7 +73,7 @@ class UWBP_IngameMenu_Construction_Menu_C : public UUserWidget
     void ToNextTab();
     void OnSelectedBuildObject_Binded(class UWBP_IngameMenu_Construction_Icon_C* Widget);
     void GetTopFocusTarget(class UWidget*& Widget);
-    void SetBuildObjectDataMap(TMap<class EPalBuildObjectTypeForUIDisplay, class FPalBuildObjectDataSetTypeUIDisplay> DataMap);
+    void SetBuildObjectDataMap(TMap<EPalBuildObjectTypeForUIDisplay, FPalBuildObjectDataSetTypeUIDisplay> DataMap);
     void SelectCategoryByTypeA(EPalBuildObjectTypeA TypeA);
     void OnHoveredAnyBuildObject_Binded(class UWBP_IngameMenu_Construction_Icon_C* Widget);
     void Finished_42D60B3E48EEA59101ED07B1E3AA6CAC();

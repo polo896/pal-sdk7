@@ -18,18 +18,177 @@
 namespace SDK::Params
 {
 
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.DisplayDetail
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_PalWork_RelicRecycler_C_DisplayDetail final
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.SetupUI
+// 0x0080 (0x0080 - 0x0000)
+struct WBP_PalWork_RelicRecycler_C_SetupUI final
 {
 public:
-	class UPalMapObjectRecyclerModel*             CallFunc_GetRecyclerModel_ReturnValue;             // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalMapObjectWorkeeModule*              CallFunc_GetWorkeeModule_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalWorkProgress*                       CallFunc_GetWorkProgress_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module)> K2Node_CreateDelegate_OutputDelegate; // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectRecyclerModel*             CallFunc_GetRecyclerModel_ReturnValue;             // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectRecyclerModel*             CallFunc_GetRecyclerModel_ReturnValue_1;           // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module)> K2Node_CreateDelegate_OutputDelegate_2; // 0x0030(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module)> K2Node_CreateDelegate_OutputDelegate_3; // 0x0040(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectRecyclerModel*             CallFunc_GetRecyclerModel_ReturnValue_2;           // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectRecyclerModel*             CallFunc_GetRecyclerModel_ReturnValue_3;           // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UPalUIMapObjectRecyclerStatusIndicatorModel* UIModel)> K2Node_CreateDelegate_OutputDelegate_4; // 0x0060(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UPalUIMapObjectRecyclerStatusIndicatorModel* UIModel)> K2Node_CreateDelegate_OutputDelegate_5; // 0x0070(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_DisplayDetail;
+DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_SetupUI;
+
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.RefreshBoostDisplay
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalWork_RelicRecycler_C_RefreshBoostDisplay final
+{
+public:
+	float                                         CallFunc_GetCurrentSpeedMultiplier_ReturnValue;    // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsSwitchOn_ReturnValue;                   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_RefreshBoostDisplay;
+
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnUpdateSwitch
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PalWork_RelicRecycler_C_OnUpdateSwitch final
+{
+public:
+	class UPalMapObjectSwitchModule*              Module;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPalMapObjectSwitchState                      CallFunc_GetSwitchState_ReturnValue;               // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsInProgressRecycleBoost_ReturnValue;     // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_OnUpdateSwitch;
+
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnUpdateRecycleTarget
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_PalWork_RelicRecycler_C_OnUpdateRecycleTarget final
+{
+public:
+	class UPalUIMapObjectRecyclerStatusIndicatorModel* UIModel;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetCurrentRecycleItemId_ReturnValue;      // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_NameName_ReturnValue;            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_OnUpdateRecycleTarget;
+
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnUpdateItemContainerContent_Internal
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PalWork_RelicRecycler_C_OnUpdateItemContainerContent_Internal final
+{
+public:
+	class UPalMapObjectItemContainerModule*       Module;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInitial;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsFullOutputContainer_ReturnValue;        // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_OnUpdateItemContainerContent_Internal;
+
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnUpdateItemContainerContent
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalWork_RelicRecycler_C_OnUpdateItemContainerContent final
+{
+public:
+	class UPalMapObjectItemContainerModule*       Module;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_OnUpdateItemContainerContent;
+
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnUpdatedWorkerPal
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_PalWork_RelicRecycler_C_OnUpdatedWorkerPal final
+{
+public:
+	class UPalWorkBase*                           Work;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData> CallFunc_GetWorkSuitabilityDisplayData_OutDisplayData; // 0x0008(0x0010)(ReferenceParm)
+	struct FGuid                                  CallFunc_GetWorkId_ReturnValue;                    // 0x0018(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UPalIndividualCharacterSlot*>    CallFunc_GetAssignedCharacters_IndividualSlots;    // 0x0028(0x0010)(ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_OnUpdatedWorkerPal;
+
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnUpdateBoost
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PalWork_RelicRecycler_C_OnUpdateBoost final
+{
+public:
+	class UPalUIMapObjectRecyclerStatusIndicatorModel* UIModel;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsInProgressRecycleBoost_ReturnValue;     // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetCurrentSpeedMultiplier_ReturnValue;    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_OnUpdateBoost;
+
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnReflectWorkProgress
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_PalWork_RelicRecycler_C_OnReflectWorkProgress final
+{
+public:
+	class UPalWorkProgress*                       WorkProgress;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetProgressRate_ReturnValue;              // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_SetWorkProgressRate_rate_ImplicitCast;    // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_OnReflectWorkProgress;
+
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnReadyWorkeeModule
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_PalWork_RelicRecycler_C_OnReadyWorkeeModule final
+{
+public:
+	class UPalMapObjectConcreteModelBase*         Model;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectConcreteModelModuleBase*   Module;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UPalMapObjectWorkeeModule* Module, class UPalWorkBase* Work)> K2Node_CreateDelegate_OutputDelegate; // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectWorkeeModule*              K2Node_DynamicCast_AsPal_Map_Object_Workee_Module; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_OnReadyWorkeeModule;
+
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnReadyWork
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_PalWork_RelicRecycler_C_OnReadyWork final
+{
+public:
+	class UPalMapObjectWorkeeModule*              Module;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalWorkBase*                           Work;                                              // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UPalWorkProgress* WorkProgress)> K2Node_CreateDelegate_OutputDelegate;      // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UPalWorkBase* Work)>     K2Node_CreateDelegate_OutputDelegate_1;            // 0x0020(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalWorkProgress*                       K2Node_DynamicCast_AsPal_Work_Progress;            // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_OnReadyWork;
+
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnReadySwitchModule
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_PalWork_RelicRecycler_C_OnReadySwitchModule final
+{
+public:
+	class UPalMapObjectConcreteModelBase*         Model;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectConcreteModelModuleBase*   Module;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UPalMapObjectSwitchModule* Module)> K2Node_CreateDelegate_OutputDelegate;   // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectSwitchModule*              K2Node_DynamicCast_AsPal_Map_Object_Switch_Module; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_OnReadySwitchModule;
+
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnReadyItemContainerModule
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_PalWork_RelicRecycler_C_OnReadyItemContainerModule final
+{
+public:
+	class UPalMapObjectConcreteModelBase*         Model;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectConcreteModelModuleBase*   Module;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UPalMapObjectItemContainerModule* Module)> K2Node_CreateDelegate_OutputDelegate; // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectItemContainerModule*       K2Node_DynamicCast_AsPal_Map_Object_Item_Container_Module; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_OnReadyItemContainerModule;
+
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnReadyEnergyModule
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_PalWork_RelicRecycler_C_OnReadyEnergyModule final
+{
+public:
+	class UPalMapObjectConcreteModelBase*         Model;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectConcreteModelModuleBase*   Module;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectEnergyModule*              CallFunc_GetEnergyModule_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_OnReadyEnergyModule;
 
 // Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.ExecuteUbergraph_WBP_PalWork_RelicRecycler
 // 0x00A8 (0x00A8 - 0x0000)
@@ -60,177 +219,18 @@ public:
 };
 DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_ExecuteUbergraph_WBP_PalWork_RelicRecycler;
 
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnReadyEnergyModule
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_PalWork_RelicRecycler_C_OnReadyEnergyModule final
+// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.DisplayDetail
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_PalWork_RelicRecycler_C_DisplayDetail final
 {
 public:
-	class UPalMapObjectConcreteModelBase*         Model;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalMapObjectConcreteModelModuleBase*   Module;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalMapObjectEnergyModule*              CallFunc_GetEnergyModule_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectRecyclerModel*             CallFunc_GetRecyclerModel_ReturnValue;             // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectWorkeeModule*              CallFunc_GetWorkeeModule_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalWorkProgress*                       CallFunc_GetWorkProgress_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_OnReadyEnergyModule;
-
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnReadyItemContainerModule
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_PalWork_RelicRecycler_C_OnReadyItemContainerModule final
-{
-public:
-	class UPalMapObjectConcreteModelBase*         Model;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalMapObjectConcreteModelModuleBase*   Module;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UPalMapObjectItemContainerModule* Module)> K2Node_CreateDelegate_OutputDelegate; // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalMapObjectItemContainerModule*       K2Node_DynamicCast_AsPal_Map_Object_Item_Container_Module; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_OnReadyItemContainerModule;
-
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnReadySwitchModule
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_PalWork_RelicRecycler_C_OnReadySwitchModule final
-{
-public:
-	class UPalMapObjectConcreteModelBase*         Model;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalMapObjectConcreteModelModuleBase*   Module;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UPalMapObjectSwitchModule* Module)> K2Node_CreateDelegate_OutputDelegate;   // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalMapObjectSwitchModule*              K2Node_DynamicCast_AsPal_Map_Object_Switch_Module; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_OnReadySwitchModule;
-
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnReadyWork
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_PalWork_RelicRecycler_C_OnReadyWork final
-{
-public:
-	class UPalMapObjectWorkeeModule*              Module;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalWorkBase*                           Work;                                              // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UPalWorkProgress* WorkProgress)> K2Node_CreateDelegate_OutputDelegate;      // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UPalWorkBase* Work)>     K2Node_CreateDelegate_OutputDelegate_1;            // 0x0020(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalWorkProgress*                       K2Node_DynamicCast_AsPal_Work_Progress;            // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_OnReadyWork;
-
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnReadyWorkeeModule
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_PalWork_RelicRecycler_C_OnReadyWorkeeModule final
-{
-public:
-	class UPalMapObjectConcreteModelBase*         Model;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalMapObjectConcreteModelModuleBase*   Module;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UPalMapObjectWorkeeModule* Module, class UPalWorkBase* Work)> K2Node_CreateDelegate_OutputDelegate; // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalMapObjectWorkeeModule*              K2Node_DynamicCast_AsPal_Map_Object_Workee_Module; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_OnReadyWorkeeModule;
-
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnReflectWorkProgress
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_PalWork_RelicRecycler_C_OnReflectWorkProgress final
-{
-public:
-	class UPalWorkProgress*                       WorkProgress;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetProgressRate_ReturnValue;              // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_SetWorkProgressRate_rate_ImplicitCast;    // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_OnReflectWorkProgress;
-
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnUpdateBoost
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PalWork_RelicRecycler_C_OnUpdateBoost final
-{
-public:
-	class UPalUIMapObjectRecyclerStatusIndicatorModel* UIModel;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsInProgressRecycleBoost_ReturnValue;     // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetCurrentSpeedMultiplier_ReturnValue;    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_OnUpdateBoost;
-
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnUpdatedWorkerPal
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_PalWork_RelicRecycler_C_OnUpdatedWorkerPal final
-{
-public:
-	class UPalWorkBase*                           Work;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData> CallFunc_GetWorkSuitabilityDisplayData_OutDisplayData; // 0x0008(0x0010)(ReferenceParm)
-	struct FGuid                                  CallFunc_GetWorkId_ReturnValue;                    // 0x0018(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UPalIndividualCharacterSlot*>    CallFunc_GetAssignedCharacters_IndividualSlots;    // 0x0028(0x0010)(ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_OnUpdatedWorkerPal;
-
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnUpdateItemContainerContent
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalWork_RelicRecycler_C_OnUpdateItemContainerContent final
-{
-public:
-	class UPalMapObjectItemContainerModule*       Module;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_OnUpdateItemContainerContent;
-
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnUpdateItemContainerContent_Internal
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PalWork_RelicRecycler_C_OnUpdateItemContainerContent_Internal final
-{
-public:
-	class UPalMapObjectItemContainerModule*       Module;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInitial;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsFullOutputContainer_ReturnValue;        // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_OnUpdateItemContainerContent_Internal;
-
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnUpdateRecycleTarget
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_PalWork_RelicRecycler_C_OnUpdateRecycleTarget final
-{
-public:
-	class UPalUIMapObjectRecyclerStatusIndicatorModel* UIModel;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetCurrentRecycleItemId_ReturnValue;      // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_NameName_ReturnValue;            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_OnUpdateRecycleTarget;
-
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.OnUpdateSwitch
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PalWork_RelicRecycler_C_OnUpdateSwitch final
-{
-public:
-	class UPalMapObjectSwitchModule*              Module;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPalMapObjectSwitchState                      CallFunc_GetSwitchState_ReturnValue;               // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsInProgressRecycleBoost_ReturnValue;     // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_OnUpdateSwitch;
-
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.RefreshBoostDisplay
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalWork_RelicRecycler_C_RefreshBoostDisplay final
-{
-public:
-	float                                         CallFunc_GetCurrentSpeedMultiplier_ReturnValue;    // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsSwitchOn_ReturnValue;                   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_RefreshBoostDisplay;
-
-// Function WBP_PalWork_RelicRecycler.WBP_PalWork_RelicRecycler_C.SetupUI
-// 0x0080 (0x0080 - 0x0000)
-struct WBP_PalWork_RelicRecycler_C_SetupUI final
-{
-public:
-	TDelegate<void(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module)> K2Node_CreateDelegate_OutputDelegate; // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalMapObjectRecyclerModel*             CallFunc_GetRecyclerModel_ReturnValue;             // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalMapObjectRecyclerModel*             CallFunc_GetRecyclerModel_ReturnValue_1;           // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module)> K2Node_CreateDelegate_OutputDelegate_2; // 0x0030(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module)> K2Node_CreateDelegate_OutputDelegate_3; // 0x0040(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalMapObjectRecyclerModel*             CallFunc_GetRecyclerModel_ReturnValue_2;           // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalMapObjectRecyclerModel*             CallFunc_GetRecyclerModel_ReturnValue_3;           // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UPalUIMapObjectRecyclerStatusIndicatorModel* UIModel)> K2Node_CreateDelegate_OutputDelegate_4; // 0x0060(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UPalUIMapObjectRecyclerStatusIndicatorModel* UIModel)> K2Node_CreateDelegate_OutputDelegate_5; // 0x0070(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_SetupUI;
+DUMPER7_ASSERTS_WBP_PalWork_RelicRecycler_C_DisplayDetail;
 
 }
 

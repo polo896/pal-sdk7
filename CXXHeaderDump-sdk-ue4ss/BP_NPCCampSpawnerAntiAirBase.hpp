@@ -15,7 +15,7 @@ class ABP_NPCCampSpawnerAntiAirBase_C : public APalNPCCampSpawnerBase
     double RespawnDistance_FromPlayer;                                                // 0x0300 (size: 0x8)
     double DisableDistance_FromBaseCamp;                                              // 0x0308 (size: 0x8)
     FF_NPCCampPreset Preset;                                                          // 0x0310 (size: 0x10)
-    TArray<class UPalIndividualCharacterHandle*> CampEnemys;                          // 0x0320 (size: 0x10)
+    TArray<UPalIndividualCharacterHandle*> CampEnemys;                                // 0x0320 (size: 0x10)
     bool LoadCamp;                                                                    // 0x0330 (size: 0x1)
     TSubclassOf<class ABP_NPCCampPresetBase_C> PresetClass;                           // 0x0338 (size: 0x8)
     TSubclassOf<class ABP_NPCCampPresetBase_C> OverridePresetClass;                   // 0x0340 (size: 0x8)

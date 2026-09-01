@@ -14,6 +14,15 @@
 namespace SDK::Params
 {
 
+// Function WBP_IngameMenu_CampLevelUp.WBP_IngameMenu_CampLevelUp_C.ShowLevelUp
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_IngameMenu_CampLevelUp_C_ShowLevelUp final
+{
+public:
+	int32                                         Level;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_CampLevelUp_C_ShowLevelUp;
+
 // Function WBP_IngameMenu_CampLevelUp.WBP_IngameMenu_CampLevelUp_C.ExecuteUbergraph_WBP_IngameMenu_CampLevelUp
 // 0x0060 (0x0060 - 0x0000)
 struct WBP_IngameMenu_CampLevelUp_C_ExecuteUbergraph_WBP_IngameMenu_CampLevelUp final
@@ -32,15 +41,6 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_IngameMenu_CampLevelUp_C_ExecuteUbergraph_WBP_IngameMenu_CampLevelUp;
-
-// Function WBP_IngameMenu_CampLevelUp.WBP_IngameMenu_CampLevelUp_C.ShowLevelUp
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_IngameMenu_CampLevelUp_C_ShowLevelUp final
-{
-public:
-	int32                                         Level;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_CampLevelUp_C_ShowLevelUp;
 
 }
 

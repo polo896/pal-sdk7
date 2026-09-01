@@ -18,92 +18,25 @@
 namespace SDK::Params
 {
 
-// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.ChangeTransformForRocketReload
-// 0x0030 (0x0030 - 0x0000)
-struct BP_HomingSphereLauncher_C_ChangeTransformForRocketReload final
+// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.ReceiveEndPlay
+// 0x0001 (0x0001 - 0x0000)
+struct BP_HomingSphereLauncher_C_ReceiveEndPlay final
 {
 public:
-	struct FVector                                Location;                                          // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               Rotation;                                          // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_ChangeTransformForRocketReload;
+DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_ReceiveEndPlay;
 
-// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.ChangeTransformForRocketWhenReloadIsDone
-// 0x0030 (0x0030 - 0x0000)
-struct BP_HomingSphereLauncher_C_ChangeTransformForRocketWhenReloadIsDone final
+// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.OnPalSphereChangeSelectedIndex
+// 0x0008 (0x0008 - 0x0000)
+struct BP_HomingSphereLauncher_C_OnPalSphereChangeSelectedIndex final
 {
 public:
-	struct FVector                                Location;                                          // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               Lotation;                                          // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	EPalPlayerInventoryType                       inventoryType;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Index_0;                                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_ChangeTransformForRocketWhenReloadIsDone;
-
-// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.CustomEvent
-// 0x0004 (0x0004 - 0x0000)
-struct BP_HomingSphereLauncher_C_CustomEvent final
-{
-public:
-	int32                                         bulletsNum;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_CustomEvent;
-
-// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.ExecuteUbergraph_BP_HomingSphereLauncher
-// 0x0070 (0x0070 - 0x0000)
-struct BP_HomingSphereLauncher_C_ExecuteUbergraph_BP_HomingSphereLauncher final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EPalPlayerInventoryType inventoryType, int32 Index)> K2Node_CreateDelegate_OutputDelegate; // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_CustomEvent_bulletsNum;                     // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bCanShootOnRelease;                   // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_GetOwnerCharacter_ReturnValue;            // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPalPlayerInventoryType                       K2Node_CustomEvent_inventoryType;                  // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         K2Node_CustomEvent_Index;                          // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APalPlayerCharacter*                    K2Node_DynamicCast_AsPal_Player_Character;         // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetRemainBulletCount_ReturnValue;         // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_GetOwnerCharacter_ReturnValue_1;          // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalPlayerCharacter*                    K2Node_DynamicCast_AsPal_Player_Character_1;       // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(int32 bulletsNum)>             K2Node_CreateDelegate_OutputDelegate_1;            // 0x005C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EEndPlayReason                                K2Node_Event_EndPlayReason;                        // 0x006D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_ExecuteUbergraph_BP_HomingSphereLauncher;
-
-// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.GetAttackTarget
-// 0x0058 (0x0058 - 0x0000)
-struct BP_HomingSphereLauncher_C_GetAttackTarget final
-{
-public:
-	class APalCharacter*                          Target;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalFindEnemyOption                    K2Node_MakeStruct_PalFindEnemyOption;              // 0x0010(0x0020)()
-	class APalPlayerCharacter*                    K2Node_DynamicCast_AsPal_Player_Character;         // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_FindHomingTarget_ForPlayer_ReturnValue;   // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          K2Node_DynamicCast_AsPal_Character;                // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_GetAttackTarget;
-
-// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.GetMuzzleTransform
-// 0x00C0 (0x00C0 - 0x0000)
-struct BP_HomingSphereLauncher_C_GetMuzzleTransform final
-{
-public:
-	struct FTransform                             Transform;                                         // 0x0000(0x0060)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_GetSocketTransform_ReturnValue;           // 0x0060(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_GetMuzzleTransform;
+DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_OnPalSphereChangeSelectedIndex;
 
 // Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.GetShootTransformList
 // 0x03B0 (0x03B0 - 0x0000)
@@ -159,62 +92,101 @@ public:
 };
 DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_GetShootTransformList;
 
-// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.OnPalSphereChangeSelectedIndex
-// 0x0008 (0x0008 - 0x0000)
-struct BP_HomingSphereLauncher_C_OnPalSphereChangeSelectedIndex final
+// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.GetMuzzleTransform
+// 0x00C0 (0x00C0 - 0x0000)
+struct BP_HomingSphereLauncher_C_GetMuzzleTransform final
 {
 public:
-	EPalPlayerInventoryType                       inventoryType;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Index_0;                                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             Transform;                                         // 0x0000(0x0060)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetSocketTransform_ReturnValue;           // 0x0060(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_OnPalSphereChangeSelectedIndex;
+DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_GetMuzzleTransform;
 
-// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.ReceiveEndPlay
-// 0x0001 (0x0001 - 0x0000)
-struct BP_HomingSphereLauncher_C_ReceiveEndPlay final
+// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.GetAttackTarget
+// 0x0058 (0x0058 - 0x0000)
+struct BP_HomingSphereLauncher_C_GetAttackTarget final
 {
 public:
-	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          Target;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalFindEnemyOption                    K2Node_MakeStruct_PalFindEnemyOption;              // 0x0010(0x0020)()
+	class APalPlayerCharacter*                    K2Node_DynamicCast_AsPal_Player_Character;         // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_FindHomingTarget_ForPlayer_ReturnValue;   // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          K2Node_DynamicCast_AsPal_Character;                // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_ReceiveEndPlay;
+DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_GetAttackTarget;
 
-// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.GetAimingBlurAngle
-// 0x0008 (0x0008 - 0x0000)
-struct BP_HomingSphereLauncher_C_GetAimingBlurAngle final
+// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.ExecuteUbergraph_BP_HomingSphereLauncher
+// 0x0070 (0x0070 - 0x0000)
+struct BP_HomingSphereLauncher_C_ExecuteUbergraph_BP_HomingSphereLauncher final
 {
 public:
-	double                                        Angle;                                             // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EPalPlayerInventoryType inventoryType, int32 Index)> K2Node_CreateDelegate_OutputDelegate; // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_CustomEvent_bulletsNum;                     // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bCanShootOnRelease;                   // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1A[0x6];                                       // 0x001A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_GetOwnerCharacter_ReturnValue;            // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPalPlayerInventoryType                       K2Node_CustomEvent_inventoryType;                  // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_CustomEvent_Index;                          // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APalPlayerCharacter*                    K2Node_DynamicCast_AsPal_Player_Character;         // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetRemainBulletCount_ReturnValue;         // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_GetOwnerCharacter_ReturnValue_1;          // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APalPlayerCharacter*                    K2Node_DynamicCast_AsPal_Player_Character_1;       // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(int32 bulletsNum)>             K2Node_CreateDelegate_OutputDelegate_1;            // 0x005C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EEndPlayReason                                K2Node_Event_EndPlayReason;                        // 0x006D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_GetAimingBlurAngle;
+DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_ExecuteUbergraph_BP_HomingSphereLauncher;
 
-// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.GetBlurAngle
-// 0x0008 (0x0008 - 0x0000)
-struct BP_HomingSphereLauncher_C_GetBlurAngle final
+// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.CustomEvent
+// 0x0004 (0x0004 - 0x0000)
+struct BP_HomingSphereLauncher_C_CustomEvent final
 {
 public:
-	double                                        Angle;                                             // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         bulletsNum;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_GetBlurAngle;
+DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_CustomEvent;
 
-// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.GetBulletClass
-// 0x0008 (0x0008 - 0x0000)
-struct BP_HomingSphereLauncher_C_GetBulletClass final
-{
-public:
-	class UClass*                                 NewParam;                                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_GetBulletClass;
-
-// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.GetMuzzleLocation
+// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.ChangeTransformForRocketWhenReloadIsDone
 // 0x0030 (0x0030 - 0x0000)
-struct BP_HomingSphereLauncher_C_GetMuzzleLocation final
+struct BP_HomingSphereLauncher_C_ChangeTransformForRocketWhenReloadIsDone final
 {
 public:
-	struct FVector                                MuzzleLocation;                                    // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetMuzzleLocation_MuzzleLocation;         // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Location;                                          // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               Lotation;                                          // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_GetMuzzleLocation;
+DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_ChangeTransformForRocketWhenReloadIsDone;
+
+// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.ChangeTransformForRocketReload
+// 0x0030 (0x0030 - 0x0000)
+struct BP_HomingSphereLauncher_C_ChangeTransformForRocketReload final
+{
+public:
+	struct FVector                                Location;                                          // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               Rotation;                                          // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_ChangeTransformForRocketReload;
+
+// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.GetShootInterval
+// 0x0008 (0x0008 - 0x0000)
+struct BP_HomingSphereLauncher_C_GetShootInterval final
+{
+public:
+	double                                        Time;                                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_GetShootInterval;
 
 // Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.GetMuzzleRotator
 // 0x0030 (0x0030 - 0x0000)
@@ -226,32 +198,42 @@ public:
 };
 DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_GetMuzzleRotator;
 
-// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.GetShootInterval
-// 0x0008 (0x0008 - 0x0000)
-struct BP_HomingSphereLauncher_C_GetShootInterval final
+// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.GetMuzzleLocation
+// 0x0030 (0x0030 - 0x0000)
+struct BP_HomingSphereLauncher_C_GetMuzzleLocation final
 {
 public:
-	double                                        Time;                                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                MuzzleLocation;                                    // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetMuzzleLocation_MuzzleLocation;         // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_GetShootInterval;
+DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_GetMuzzleLocation;
 
-// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.OnReleaseTrigger
-// 0x0001 (0x0001 - 0x0000)
-struct BP_HomingSphereLauncher_C_OnReleaseTrigger final
-{
-public:
-	bool                                          bCanShootOnRelease;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_OnReleaseTrigger;
-
-// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.OnShoot
+// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.GetBulletClass
 // 0x0008 (0x0008 - 0x0000)
-struct BP_HomingSphereLauncher_C_OnShoot final
+struct BP_HomingSphereLauncher_C_GetBulletClass final
 {
 public:
-	class APalBullet*                             BulletActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 NewParam;                                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_OnShoot;
+DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_GetBulletClass;
+
+// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.GetBlurAngle
+// 0x0008 (0x0008 - 0x0000)
+struct BP_HomingSphereLauncher_C_GetBlurAngle final
+{
+public:
+	double                                        Angle;                                             // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_GetBlurAngle;
+
+// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.GetAimingBlurAngle
+// 0x0008 (0x0008 - 0x0000)
+struct BP_HomingSphereLauncher_C_GetAimingBlurAngle final
+{
+public:
+	double                                        Angle;                                             // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_GetAimingBlurAngle;
 
 // Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.ShootBullet
 // 0x02A0 (0x02A0 - 0x0000)
@@ -302,15 +284,23 @@ public:
 };
 DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_ShootBullet;
 
-// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.GetRemainBulletCount
+// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.OnShoot
 // 0x0008 (0x0008 - 0x0000)
-struct BP_HomingSphereLauncher_C_GetRemainBulletCount final
+struct BP_HomingSphereLauncher_C_OnShoot final
 {
 public:
-	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetRemainingCurrentSelectPalSphere_ReturnValue; // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APalBullet*                             BulletActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_GetRemainBulletCount;
+DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_OnShoot;
+
+// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.OnReleaseTrigger
+// 0x0001 (0x0001 - 0x0000)
+struct BP_HomingSphereLauncher_C_OnReleaseTrigger final
+{
+public:
+	bool                                          bCanShootOnRelease;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_OnReleaseTrigger;
 
 // Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.IsEnableAutoAim
 // 0x0001 (0x0001 - 0x0000)
@@ -320,6 +310,16 @@ public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_IsEnableAutoAim;
+
+// Function BP_HomingSphereLauncher.BP_HomingSphereLauncher_C.GetRemainBulletCount
+// 0x0008 (0x0008 - 0x0000)
+struct BP_HomingSphereLauncher_C_GetRemainBulletCount final
+{
+public:
+	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetRemainingCurrentSelectPalSphere_ReturnValue; // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_HomingSphereLauncher_C_GetRemainBulletCount;
 
 }
 

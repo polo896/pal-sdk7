@@ -19,32 +19,32 @@
 namespace SDK::Params
 {
 
-// Function WBP_Research_TreeIcon.WBP_Research_TreeIcon_C.BndEvt__WBP_Research_TreeIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Research_TreeIcon_C_BndEvt__WBP_Research_TreeIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_Research_TreeIcon.WBP_Research_TreeIcon_C.SwitchPin
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Research_TreeIcon_C_SwitchPin final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsPined;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Research_TreeIcon_C_BndEvt__WBP_Research_TreeIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_Research_TreeIcon_C_SwitchPin;
 
-// Function WBP_Research_TreeIcon.WBP_Research_TreeIcon_C.BndEvt__WBP_Research_TreeIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Research_TreeIcon_C_BndEvt__WBP_Research_TreeIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_Research_TreeIcon.WBP_Research_TreeIcon_C.Setup
+// 0x00B8 (0x00B8 - 0x0000)
+struct WBP_Research_TreeIcon_C_Setup final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIGuildLabResearchInfo             ResearchInfo;                                      // 0x0000(0x00B8)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-DUMPER7_ASSERTS_WBP_Research_TreeIcon_C_BndEvt__WBP_Research_TreeIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_Research_TreeIcon_C_Setup;
 
-// Function WBP_Research_TreeIcon.WBP_Research_TreeIcon_C.BndEvt__WBP_Research_TreeIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Research_TreeIcon_C_BndEvt__WBP_Research_TreeIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_Research_TreeIcon.WBP_Research_TreeIcon_C.SetDisplayType
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Research_TreeIcon_C_SetDisplayType final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	ETreeNodeDisplayType                          DisplayType;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Research_TreeIcon_C_BndEvt__WBP_Research_TreeIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_Research_TreeIcon_C_SetDisplayType;
 
 // Function WBP_Research_TreeIcon.WBP_Research_TreeIcon_C.ExecuteUbergraph_WBP_Research_TreeIcon
 // 0x01B8 (0x01B8 - 0x0000)
@@ -94,32 +94,32 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Research_TreeIcon_C_ExecuteUbergraph_WBP_Research_TreeIcon;
 
-// Function WBP_Research_TreeIcon.WBP_Research_TreeIcon_C.SetDisplayType
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Research_TreeIcon_C_SetDisplayType final
+// Function WBP_Research_TreeIcon.WBP_Research_TreeIcon_C.BndEvt__WBP_Research_TreeIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Research_TreeIcon_C_BndEvt__WBP_Research_TreeIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	ETreeNodeDisplayType                          DisplayType;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Research_TreeIcon_C_SetDisplayType;
+DUMPER7_ASSERTS_WBP_Research_TreeIcon_C_BndEvt__WBP_Research_TreeIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
 
-// Function WBP_Research_TreeIcon.WBP_Research_TreeIcon_C.Setup
-// 0x00B8 (0x00B8 - 0x0000)
-struct WBP_Research_TreeIcon_C_Setup final
+// Function WBP_Research_TreeIcon.WBP_Research_TreeIcon_C.BndEvt__WBP_Research_TreeIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Research_TreeIcon_C_BndEvt__WBP_Research_TreeIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	struct FPalUIGuildLabResearchInfo             ResearchInfo;                                      // 0x0000(0x00B8)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Research_TreeIcon_C_Setup;
+DUMPER7_ASSERTS_WBP_Research_TreeIcon_C_BndEvt__WBP_Research_TreeIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
 
-// Function WBP_Research_TreeIcon.WBP_Research_TreeIcon_C.SwitchPin
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Research_TreeIcon_C_SwitchPin final
+// Function WBP_Research_TreeIcon.WBP_Research_TreeIcon_C.BndEvt__WBP_Research_TreeIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Research_TreeIcon_C_BndEvt__WBP_Research_TreeIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	bool                                          IsPined;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Research_TreeIcon_C_SwitchPin;
+DUMPER7_ASSERTS_WBP_Research_TreeIcon_C_BndEvt__WBP_Research_TreeIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
 
 }
 

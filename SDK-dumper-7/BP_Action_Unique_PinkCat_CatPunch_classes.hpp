@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "EAction_PinkCat_CatPunch_structs.hpp"
 #include "Engine_structs.hpp"
 #include "BP_ActionUniqueAttackBase_classes.hpp"
-#include "EAction_PinkCat_CatPunch_structs.hpp"
 
 
 namespace SDK
@@ -35,32 +35,32 @@ public:
 	struct FTimerHandle                           TimerHandle2;                                      // 0x02D0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void EndAction();
-	void EndAttack();
-	void ExecuteUbergraph_BP_Action_Unique_PinkCat_CatPunch(int32 EntryPoint);
-	void Get_Target_Rotation(struct FRotator* TargetRotation);
-	void MoveToTarget(double DeltaTime);
-	void OnBeginAction();
-	void OnBlendOut_6FCC02CF40A11D28BC681A887E620E6F(class FName NotifyName);
-	void OnBlendOut_7B37005E4C184523A70797A405F21101(class FName NotifyName);
-	void OnBlendOut_BF5F18464CE41760481C058932345CA4(class FName NotifyName);
-	void OnBreakAction();
-	void OnCompleted_6FCC02CF40A11D28BC681A887E620E6F(class FName NotifyName);
-	void OnCompleted_7B37005E4C184523A70797A405F21101(class FName NotifyName);
-	void OnCompleted_BF5F18464CE41760481C058932345CA4(class FName NotifyName);
-	void OnEndAction();
-	void OnInterrupted_6FCC02CF40A11D28BC681A887E620E6F(class FName NotifyName);
-	void OnInterrupted_7B37005E4C184523A70797A405F21101(class FName NotifyName);
-	void OnInterrupted_BF5F18464CE41760481C058932345CA4(class FName NotifyName);
-	void OnNotifyBegin_6FCC02CF40A11D28BC681A887E620E6F(class FName NotifyName);
-	void OnNotifyBegin_7B37005E4C184523A70797A405F21101(class FName NotifyName);
-	void OnNotifyBegin_BF5F18464CE41760481C058932345CA4(class FName NotifyName);
-	void OnNotifyEnd_6FCC02CF40A11D28BC681A887E620E6F(class FName NotifyName);
-	void OnNotifyEnd_7B37005E4C184523A70797A405F21101(class FName NotifyName);
-	void OnNotifyEnd_BF5F18464CE41760481C058932345CA4(class FName NotifyName);
-	void SetMove(bool EnableMove);
-	void TickAction(float DeltaTime);
 	void カスタムイベント_0();
+	void TickAction(float DeltaTime);
+	void SetMove(bool EnableMove);
+	void OnNotifyEnd_BF5F18464CE41760481C058932345CA4(class FName NotifyName);
+	void OnNotifyEnd_7B37005E4C184523A70797A405F21101(class FName NotifyName);
+	void OnNotifyEnd_6FCC02CF40A11D28BC681A887E620E6F(class FName NotifyName);
+	void OnNotifyBegin_BF5F18464CE41760481C058932345CA4(class FName NotifyName);
+	void OnNotifyBegin_7B37005E4C184523A70797A405F21101(class FName NotifyName);
+	void OnNotifyBegin_6FCC02CF40A11D28BC681A887E620E6F(class FName NotifyName);
+	void OnInterrupted_BF5F18464CE41760481C058932345CA4(class FName NotifyName);
+	void OnInterrupted_7B37005E4C184523A70797A405F21101(class FName NotifyName);
+	void OnInterrupted_6FCC02CF40A11D28BC681A887E620E6F(class FName NotifyName);
+	void OnEndAction();
+	void OnCompleted_BF5F18464CE41760481C058932345CA4(class FName NotifyName);
+	void OnCompleted_7B37005E4C184523A70797A405F21101(class FName NotifyName);
+	void OnCompleted_6FCC02CF40A11D28BC681A887E620E6F(class FName NotifyName);
+	void OnBreakAction();
+	void OnBlendOut_BF5F18464CE41760481C058932345CA4(class FName NotifyName);
+	void OnBlendOut_7B37005E4C184523A70797A405F21101(class FName NotifyName);
+	void OnBlendOut_6FCC02CF40A11D28BC681A887E620E6F(class FName NotifyName);
+	void OnBeginAction();
+	void MoveToTarget(double DeltaTime);
+	void Get_Target_Rotation(struct FRotator* TargetRotation);
+	void ExecuteUbergraph_BP_Action_Unique_PinkCat_CatPunch(int32 EntryPoint);
+	void EndAttack();
+	void EndAction();
 
 public:
 	static class UClass* StaticClass()

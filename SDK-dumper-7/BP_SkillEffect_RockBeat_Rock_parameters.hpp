@@ -17,18 +17,23 @@
 namespace SDK::Params
 {
 
-// Function BP_SkillEffect_RockBeat_Rock.BP_SkillEffect_RockBeat_Rock_C.BndEvt__BP_SkillEffect_RockBeat_Rock_MovementSphereRoot_K2Node_ComponentBoundEvent_2_ComponentHitSignature__DelegateSignature
-// 0x0118 (0x0118 - 0x0000)
-struct BP_SkillEffect_RockBeat_Rock_C_BndEvt__BP_SkillEffect_RockBeat_Rock_MovementSphereRoot_K2Node_ComponentBoundEvent_2_ComponentHitSignature__DelegateSignature final
+// Function BP_SkillEffect_RockBeat_Rock.BP_SkillEffect_RockBeat_Rock_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_SkillEffect_RockBeat_Rock_C_ReceiveTick final
 {
 public:
-	class UPrimitiveComponent*                    HitComponent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                NormalImpulse;                                     // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Hit;                                               // 0x0030(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_SkillEffect_RockBeat_Rock_C_BndEvt__BP_SkillEffect_RockBeat_Rock_MovementSphereRoot_K2Node_ComponentBoundEvent_2_ComponentHitSignature__DelegateSignature;
+DUMPER7_ASSERTS_BP_SkillEffect_RockBeat_Rock_C_ReceiveTick;
+
+// Function BP_SkillEffect_RockBeat_Rock.BP_SkillEffect_RockBeat_Rock_C.FadeOutEffect
+// 0x0008 (0x0008 - 0x0000)
+struct BP_SkillEffect_RockBeat_Rock_C_FadeOutEffect final
+{
+public:
+	double                                        DeltaSecond;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SkillEffect_RockBeat_Rock_C_FadeOutEffect;
 
 // Function BP_SkillEffect_RockBeat_Rock.BP_SkillEffect_RockBeat_Rock_C.ExecuteUbergraph_BP_SkillEffect_RockBeat_Rock
 // 0x05E0 (0x05E0 - 0x0000)
@@ -130,23 +135,18 @@ public:
 };
 DUMPER7_ASSERTS_BP_SkillEffect_RockBeat_Rock_C_ExecuteUbergraph_BP_SkillEffect_RockBeat_Rock;
 
-// Function BP_SkillEffect_RockBeat_Rock.BP_SkillEffect_RockBeat_Rock_C.FadeOutEffect
-// 0x0008 (0x0008 - 0x0000)
-struct BP_SkillEffect_RockBeat_Rock_C_FadeOutEffect final
+// Function BP_SkillEffect_RockBeat_Rock.BP_SkillEffect_RockBeat_Rock_C.BndEvt__BP_SkillEffect_RockBeat_Rock_MovementSphereRoot_K2Node_ComponentBoundEvent_2_ComponentHitSignature__DelegateSignature
+// 0x0118 (0x0118 - 0x0000)
+struct BP_SkillEffect_RockBeat_Rock_C_BndEvt__BP_SkillEffect_RockBeat_Rock_MovementSphereRoot_K2Node_ComponentBoundEvent_2_ComponentHitSignature__DelegateSignature final
 {
 public:
-	double                                        DeltaSecond;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    HitComponent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                NormalImpulse;                                     // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Hit;                                               // 0x0030(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-DUMPER7_ASSERTS_BP_SkillEffect_RockBeat_Rock_C_FadeOutEffect;
-
-// Function BP_SkillEffect_RockBeat_Rock.BP_SkillEffect_RockBeat_Rock_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_SkillEffect_RockBeat_Rock_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_SkillEffect_RockBeat_Rock_C_ReceiveTick;
+DUMPER7_ASSERTS_BP_SkillEffect_RockBeat_Rock_C_BndEvt__BP_SkillEffect_RockBeat_Rock_MovementSphereRoot_K2Node_ComponentBoundEvent_2_ComponentHitSignature__DelegateSignature;
 
 }
 

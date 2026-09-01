@@ -17,160 +17,71 @@
 namespace SDK
 {
 
-// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.BndEvt__WBP_RelicMenu_ForDisplay_WBP_Buildup_Player_1_K2Node_ComponentBoundEvent_0_OnClickedConfirm__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_RelicMenu_ForDisplay_C::BndEvt__WBP_RelicMenu_ForDisplay_WBP_Buildup_Player_1_K2Node_ComponentBoundEvent_0_OnClickedConfirm__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "BndEvt__WBP_RelicMenu_ForDisplay_WBP_Buildup_Player_1_K2Node_ComponentBoundEvent_0_OnClickedConfirm__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.BndEvt__WBP_RelicMenu_ForDisplay_WBP_Buildup_Player_1_K2Node_ComponentBoundEvent_1_OnClickedCloseButton__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_RelicMenu_ForDisplay_C::BndEvt__WBP_RelicMenu_ForDisplay_WBP_Buildup_Player_1_K2Node_ComponentBoundEvent_1_OnClickedCloseButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "BndEvt__WBP_RelicMenu_ForDisplay_WBP_Buildup_Player_1_K2Node_ComponentBoundEvent_1_OnClickedCloseButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.CheckCompleteSynchronize
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_RelicMenu_ForDisplay_C::CheckCompleteSynchronize()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "CheckCompleteSynchronize");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_RelicMenu_ForDisplay_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_RelicMenu_ForDisplay_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.ExecuteUbergraph_WBP_RelicMenu_ForDisplay
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_RelicMenu_ForDisplay_C::ExecuteUbergraph_WBP_RelicMenu_ForDisplay(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "ExecuteUbergraph_WBP_RelicMenu_ForDisplay");
-
-	Params::WBP_RelicMenu_ForDisplay_C_ExecuteUbergraph_WBP_RelicMenu_ForDisplay Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.GetLastRequestedRelicType
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// TArray<EPalRelicType>*                  OutRelicType                                           (Parm, OutParm)
-
-void UWBP_RelicMenu_ForDisplay_C::GetLastRequestedRelicType(TArray<EPalRelicType>* OutRelicType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "GetLastRequestedRelicType");
-
-	Params::WBP_RelicMenu_ForDisplay_C_GetLastRequestedRelicType Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutRelicType != nullptr)
-		*OutRelicType = std::move(Parms.OutRelicType);
-}
-
-
-// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.On Got Status
+// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.TryRequestRankup
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_RelicMenu_ForDisplay_C::On_Got_Status()
+void UWBP_RelicMenu_ForDisplay_C::TryRequestRankup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "On Got Status");
+		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "TryRequestRankup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.OnReceiveResult
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalCharacterStatusOperationResult      Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.TeardownEventBind
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_RelicMenu_ForDisplay_C::OnReceiveResult(EPalCharacterStatusOperationResult Result)
+void UWBP_RelicMenu_ForDisplay_C::TeardownEventBind()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "OnReceiveResult");
+		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "TeardownEventBind");
 
-	Params::WBP_RelicMenu_ForDisplay_C_OnReceiveResult Parms{};
-
-	Parms.Result = Result;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.SetupEventBind
+// (Private, BlueprintCallable, BlueprintEvent)
 
-void UWBP_RelicMenu_ForDisplay_C::OnSetup()
+void UWBP_RelicMenu_ForDisplay_C::SetupEventBind()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "OnSetup");
+		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "SetupEventBind");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.SetupCollectedRelics
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_RelicMenu_ForDisplay_C::SetupCollectedRelics()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "SetupCollectedRelics");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.Reset
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_RelicMenu_ForDisplay_C::Reset()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "Reset");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -198,71 +109,160 @@ void UWBP_RelicMenu_ForDisplay_C::OnUpdatedRelicNum(EPalRelicType Type, int32 Ne
 }
 
 
-// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.Reset
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_RelicMenu_ForDisplay_C::Reset()
+void UWBP_RelicMenu_ForDisplay_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "Reset");
+		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.SetupCollectedRelics
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_RelicMenu_ForDisplay_C::SetupCollectedRelics()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "SetupCollectedRelics");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.SetupEventBind
+// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.OnReceiveResult
 // (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalCharacterStatusOperationResult      Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_RelicMenu_ForDisplay_C::SetupEventBind()
+void UWBP_RelicMenu_ForDisplay_C::OnReceiveResult(EPalCharacterStatusOperationResult Result)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "SetupEventBind");
+		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "OnReceiveResult");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_RelicMenu_ForDisplay_C_OnReceiveResult Parms{};
+
+	Parms.Result = Result;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.TeardownEventBind
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_RelicMenu_ForDisplay_C::TeardownEventBind()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "TeardownEventBind");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.TryRequestRankup
+// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.On Got Status
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_RelicMenu_ForDisplay_C::TryRequestRankup()
+void UWBP_RelicMenu_ForDisplay_C::On_Got_Status()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "TryRequestRankup");
+		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "On Got Status");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.GetLastRequestedRelicType
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// TArray<EPalRelicType>*                  OutRelicType                                           (Parm, OutParm)
+
+void UWBP_RelicMenu_ForDisplay_C::GetLastRequestedRelicType(TArray<EPalRelicType>* OutRelicType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "GetLastRequestedRelicType");
+
+	Params::WBP_RelicMenu_ForDisplay_C_GetLastRequestedRelicType Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutRelicType != nullptr)
+		*OutRelicType = std::move(Parms.OutRelicType);
+}
+
+
+// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.ExecuteUbergraph_WBP_RelicMenu_ForDisplay
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_RelicMenu_ForDisplay_C::ExecuteUbergraph_WBP_RelicMenu_ForDisplay(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "ExecuteUbergraph_WBP_RelicMenu_ForDisplay");
+
+	Params::WBP_RelicMenu_ForDisplay_C_ExecuteUbergraph_WBP_RelicMenu_ForDisplay Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_RelicMenu_ForDisplay_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_RelicMenu_ForDisplay_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.CheckCompleteSynchronize
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_RelicMenu_ForDisplay_C::CheckCompleteSynchronize()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "CheckCompleteSynchronize");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.BndEvt__WBP_RelicMenu_ForDisplay_WBP_Buildup_Player_1_K2Node_ComponentBoundEvent_1_OnClickedCloseButton__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_RelicMenu_ForDisplay_C::BndEvt__WBP_RelicMenu_ForDisplay_WBP_Buildup_Player_1_K2Node_ComponentBoundEvent_1_OnClickedCloseButton__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "BndEvt__WBP_RelicMenu_ForDisplay_WBP_Buildup_Player_1_K2Node_ComponentBoundEvent_1_OnClickedCloseButton__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_RelicMenu_ForDisplay.WBP_RelicMenu_ForDisplay_C.BndEvt__WBP_RelicMenu_ForDisplay_WBP_Buildup_Player_1_K2Node_ComponentBoundEvent_0_OnClickedConfirm__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_RelicMenu_ForDisplay_C::BndEvt__WBP_RelicMenu_ForDisplay_WBP_Buildup_Player_1_K2Node_ComponentBoundEvent_0_OnClickedConfirm__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_RelicMenu_ForDisplay_C", "BndEvt__WBP_RelicMenu_ForDisplay_WBP_Buildup_Player_1_K2Node_ComponentBoundEvent_0_OnClickedConfirm__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

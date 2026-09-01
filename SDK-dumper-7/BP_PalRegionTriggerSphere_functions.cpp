@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function BP_PalRegionTriggerSphere.BP_PalRegionTriggerSphere_C.ExecuteUbergraph_BP_PalRegionTriggerSphere
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PalRegionTriggerSphere_C::ExecuteUbergraph_BP_PalRegionTriggerSphere(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PalRegionTriggerSphere_C", "ExecuteUbergraph_BP_PalRegionTriggerSphere");
-
-	Params::BP_PalRegionTriggerSphere_C_ExecuteUbergraph_BP_PalRegionTriggerSphere Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_PalRegionTriggerSphere.BP_PalRegionTriggerSphere_C.ReceiveActorBeginOverlap
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -52,6 +32,26 @@ void ABP_PalRegionTriggerSphere_C::ReceiveActorBeginOverlap(class AActor* OtherA
 	Params::BP_PalRegionTriggerSphere_C_ReceiveActorBeginOverlap Parms{};
 
 	Parms.OtherActor = OtherActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PalRegionTriggerSphere.BP_PalRegionTriggerSphere_C.ExecuteUbergraph_BP_PalRegionTriggerSphere
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PalRegionTriggerSphere_C::ExecuteUbergraph_BP_PalRegionTriggerSphere(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_PalRegionTriggerSphere_C", "ExecuteUbergraph_BP_PalRegionTriggerSphere");
+
+	Params::BP_PalRegionTriggerSphere_C_ExecuteUbergraph_BP_PalRegionTriggerSphere Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

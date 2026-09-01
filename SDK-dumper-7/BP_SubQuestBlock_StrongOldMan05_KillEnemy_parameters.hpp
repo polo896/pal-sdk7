@@ -16,6 +16,21 @@
 namespace SDK::Params
 {
 
+// Function BP_SubQuestBlock_StrongOldMan05_KillEnemy.BP_SubQuestBlock_StrongOldMan05_KillEnemy_C.GetProgressText
+// 0x00F0 (0x00F0 - 0x0000)
+struct BP_SubQuestBlock_StrongOldMan05_KillEnemy_C_GetProgressText final
+{
+public:
+	class FText                                   OutText;                                           // 0x0000(0x0018)(Parm, OutParm)
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_1;            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0028(0x0050)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0078(0x0050)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00C8(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00D8(0x0018)()
+};
+DUMPER7_ASSERTS_BP_SubQuestBlock_StrongOldMan05_KillEnemy_C_GetProgressText;
+
 // Function BP_SubQuestBlock_StrongOldMan05_KillEnemy.BP_SubQuestBlock_StrongOldMan05_KillEnemy_C.GetDescriptionText
 // 0x00C8 (0x00C8 - 0x0000)
 struct BP_SubQuestBlock_StrongOldMan05_KillEnemy_C_GetDescriptionText final
@@ -32,21 +47,6 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00B0(0x0018)()
 };
 DUMPER7_ASSERTS_BP_SubQuestBlock_StrongOldMan05_KillEnemy_C_GetDescriptionText;
-
-// Function BP_SubQuestBlock_StrongOldMan05_KillEnemy.BP_SubQuestBlock_StrongOldMan05_KillEnemy_C.GetProgressText
-// 0x00F0 (0x00F0 - 0x0000)
-struct BP_SubQuestBlock_StrongOldMan05_KillEnemy_C_GetProgressText final
-{
-public:
-	class FText                                   OutText;                                           // 0x0000(0x0018)(Parm, OutParm)
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue_1;            // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0028(0x0050)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0078(0x0050)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00C8(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00D8(0x0018)()
-};
-DUMPER7_ASSERTS_BP_SubQuestBlock_StrongOldMan05_KillEnemy_C_GetProgressText;
 
 }
 

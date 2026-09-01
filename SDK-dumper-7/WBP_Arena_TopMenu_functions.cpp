@@ -17,197 +17,165 @@
 namespace SDK
 {
 
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.AnmEvent_In
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.Top Menu Action
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalArenaMenuActionType                 ActionType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_TopMenu_C::AnmEvent_In()
+void UWBP_Arena_TopMenu_C::Top_Menu_Action(EPalArenaMenuActionType ActionType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "AnmEvent_In");
+		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "Top Menu Action");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Arena_TopMenu_C_Top_Menu_Action Parms{};
+
+	Parms.ActionType = ActionType;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.AnmEvent_MenuIn
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_TopMenu_C::AnmEvent_MenuIn()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "AnmEvent_MenuIn");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.AnmEvent_MenuOut
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_TopMenu_C::AnmEvent_MenuOut()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "AnmEvent_MenuOut");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.AnmEvent_Out
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_TopMenu_C::AnmEvent_Out()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "AnmEvent_Out");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_1_OnArenaButtonClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Arena_TopMenu_C::BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_1_OnArenaButtonClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_1_OnArenaButtonClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_5_OnArenaButtonHovered__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Arena_TopMenu_C::BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_5_OnArenaButtonHovered__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_5_OnArenaButtonHovered__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_6_OnArenaButtonUnhovered__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Arena_TopMenu_C::BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_6_OnArenaButtonUnhovered__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_6_OnArenaButtonUnhovered__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_0_OnArenaButtonClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Arena_TopMenu_C::BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_0_OnArenaButtonClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_0_OnArenaButtonClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_3_OnArenaButtonHovered__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Arena_TopMenu_C::BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_3_OnArenaButtonHovered__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_3_OnArenaButtonHovered__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_4_OnArenaButtonUnhovered__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Arena_TopMenu_C::BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_4_OnArenaButtonUnhovered__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_4_OnArenaButtonUnhovered__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_2_OnArenaButtonClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Arena_TopMenu_C::BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_2_OnArenaButtonClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_2_OnArenaButtonClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_7_OnArenaButtonHovered__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Arena_TopMenu_C::BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_7_OnArenaButtonHovered__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_7_OnArenaButtonHovered__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_8_OnArenaButtonUnhovered__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Arena_TopMenu_C::BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_8_OnArenaButtonUnhovered__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_8_OnArenaButtonUnhovered__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.CancelAction
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.Setup
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Arena_TopMenu_C::CancelAction()
+void UWBP_Arena_TopMenu_C::Setup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "CancelAction");
+		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "Setup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.RrequestEnterArena
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    JoinMatch                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_TopMenu_C::RrequestEnterArena(bool JoinMatch)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "RrequestEnterArena");
+
+	Params::WBP_Arena_TopMenu_C_RrequestEnterArena Parms{};
+
+	Parms.JoinMatch = JoinMatch;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Arena_TopMenu_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Arena_TopMenu_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.OnClosed
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Arena_TopMenu_C::OnClosed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "OnClosed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.Finished_55E66A6745B17F175A5608B05FCBDDC7
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Arena_TopMenu_C::Finished_55E66A6745B17F175A5608B05FCBDDC7()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "Finished_55E66A6745B17F175A5608B05FCBDDC7");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.ExecuteUbergraph_WBP_Arena_TopMenu
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_TopMenu_C::ExecuteUbergraph_WBP_Arena_TopMenu(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "ExecuteUbergraph_WBP_Arena_TopMenu");
+
+	Params::WBP_Arena_TopMenu_C_ExecuteUbergraph_WBP_Arena_TopMenu Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.EmptyEvent
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_TopMenu_C::EmptyEvent(bool bResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "EmptyEvent");
+
+	Params::WBP_Arena_TopMenu_C_EmptyEvent Parms{};
+
+	Parms.bResult = bResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Arena_TopMenu_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -235,167 +203,199 @@ void UWBP_Arena_TopMenu_C::ChangeInfo(int32 Index_0, bool IsEnable)
 }
 
 
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Arena_TopMenu_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.EmptyEvent
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Arena_TopMenu_C::EmptyEvent(bool bResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "EmptyEvent");
-
-	Params::WBP_Arena_TopMenu_C_EmptyEvent Parms{};
-
-	Parms.bResult = bResult;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.ExecuteUbergraph_WBP_Arena_TopMenu
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Arena_TopMenu_C::ExecuteUbergraph_WBP_Arena_TopMenu(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "ExecuteUbergraph_WBP_Arena_TopMenu");
-
-	Params::WBP_Arena_TopMenu_C_ExecuteUbergraph_WBP_Arena_TopMenu Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.Finished_55E66A6745B17F175A5608B05FCBDDC7
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_TopMenu_C::Finished_55E66A6745B17F175A5608B05FCBDDC7()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "Finished_55E66A6745B17F175A5608B05FCBDDC7");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.OnClosed
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_TopMenu_C::OnClosed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "OnClosed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Arena_TopMenu_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_TopMenu_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.RrequestEnterArena
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    JoinMatch                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Arena_TopMenu_C::RrequestEnterArena(bool JoinMatch)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "RrequestEnterArena");
-
-	Params::WBP_Arena_TopMenu_C_RrequestEnterArena Parms{};
-
-	Parms.JoinMatch = JoinMatch;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.Setup
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.CancelAction
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Arena_TopMenu_C::Setup()
+void UWBP_Arena_TopMenu_C::CancelAction()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "Setup");
+		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "CancelAction");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.Top Menu Action
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalArenaMenuActionType                 ActionType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_8_OnArenaButtonUnhovered__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_Arena_TopMenu_C::Top_Menu_Action(EPalArenaMenuActionType ActionType)
+void UWBP_Arena_TopMenu_C::BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_8_OnArenaButtonUnhovered__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "Top Menu Action");
+		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_8_OnArenaButtonUnhovered__DelegateSignature");
 
-	Params::WBP_Arena_TopMenu_C_Top_Menu_Action Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.ActionType = ActionType;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_7_OnArenaButtonHovered__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Arena_TopMenu_C::BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_7_OnArenaButtonHovered__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_7_OnArenaButtonHovered__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_2_OnArenaButtonClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Arena_TopMenu_C::BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_2_OnArenaButtonClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Spectate_K2Node_ComponentBoundEvent_2_OnArenaButtonClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_4_OnArenaButtonUnhovered__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Arena_TopMenu_C::BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_4_OnArenaButtonUnhovered__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_4_OnArenaButtonUnhovered__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_3_OnArenaButtonHovered__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Arena_TopMenu_C::BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_3_OnArenaButtonHovered__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_3_OnArenaButtonHovered__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_0_OnArenaButtonClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Arena_TopMenu_C::BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_0_OnArenaButtonClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_Solo_K2Node_ComponentBoundEvent_0_OnArenaButtonClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_6_OnArenaButtonUnhovered__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Arena_TopMenu_C::BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_6_OnArenaButtonUnhovered__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_6_OnArenaButtonUnhovered__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_5_OnArenaButtonHovered__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Arena_TopMenu_C::BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_5_OnArenaButtonHovered__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_5_OnArenaButtonHovered__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_1_OnArenaButtonClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_Arena_TopMenu_C::BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_1_OnArenaButtonClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "BndEvt__WBP_Arena_TopMenu_WBP_Arena_TopMenuButton_PvP_K2Node_ComponentBoundEvent_1_OnArenaButtonClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.AnmEvent_Out
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Arena_TopMenu_C::AnmEvent_Out()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "AnmEvent_Out");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.AnmEvent_MenuOut
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Arena_TopMenu_C::AnmEvent_MenuOut()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "AnmEvent_MenuOut");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.AnmEvent_MenuIn
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Arena_TopMenu_C::AnmEvent_MenuIn()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "AnmEvent_MenuIn");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_TopMenu.WBP_Arena_TopMenu_C.AnmEvent_In
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Arena_TopMenu_C::AnmEvent_In()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_TopMenu_C", "AnmEvent_In");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

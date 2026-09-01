@@ -26,12 +26,12 @@ public:
 	class UWBP_PalPossessItemIcon_C*              WBP_PalPossessItemIcon;                            // 0x0458(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_PalHud_PossessItem(int32 EntryPoint);
-	void OnInitialized();
-	void OnRequestRemove();
-	void OnSetup();
-	void RemoveSelf_In();
 	void SetupUI();
+	void RemoveSelf_In();
+	void OnSetup();
+	void OnRequestRemove();
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_PalHud_PossessItem(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

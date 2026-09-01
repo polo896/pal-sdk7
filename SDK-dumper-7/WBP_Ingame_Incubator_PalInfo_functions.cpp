@@ -17,40 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_Ingame_Incubator_PalInfo.WBP_Ingame_Incubator_PalInfo_C.ExecuteUbergraph_WBP_Ingame_Incubator_PalInfo
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Ingame_Incubator_PalInfo_C::ExecuteUbergraph_WBP_Ingame_Incubator_PalInfo(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_PalInfo_C", "ExecuteUbergraph_WBP_Ingame_Incubator_PalInfo");
-
-	Params::WBP_Ingame_Incubator_PalInfo_C_ExecuteUbergraph_WBP_Ingame_Incubator_PalInfo Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Ingame_Incubator_PalInfo.WBP_Ingame_Incubator_PalInfo_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Ingame_Incubator_PalInfo_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Ingame_Incubator_PalInfo_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_Ingame_Incubator_PalInfo.WBP_Ingame_Incubator_PalInfo_C.Setup
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -70,6 +36,40 @@ void UWBP_Ingame_Incubator_PalInfo_C::Setup(TArray<class FName>& passiveList)
 	UObject::ProcessEvent(Func, &Parms);
 
 	passiveList = std::move(Parms.passiveList);
+}
+
+
+// Function WBP_Ingame_Incubator_PalInfo.WBP_Ingame_Incubator_PalInfo_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Ingame_Incubator_PalInfo_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_Incubator_PalInfo_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Ingame_Incubator_PalInfo.WBP_Ingame_Incubator_PalInfo_C.ExecuteUbergraph_WBP_Ingame_Incubator_PalInfo
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Ingame_Incubator_PalInfo_C::ExecuteUbergraph_WBP_Ingame_Incubator_PalInfo(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Ingame_Incubator_PalInfo_C", "ExecuteUbergraph_WBP_Ingame_Incubator_PalInfo");
+
+	Params::WBP_Ingame_Incubator_PalInfo_C_ExecuteUbergraph_WBP_Ingame_Incubator_PalInfo Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

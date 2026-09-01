@@ -61,19 +61,19 @@ public:
 	bool                                          LackPower;                                         // 0x055A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void Destruct();
-	void DisplayCheck();
-	void ExecuteUbergraph_WBP_Ingame_Incubator(int32 EntryPoint);
-	void On_Update_Work_Amount(class UPalWorkProgress* WorkProgress);
-	void OnSetup();
-	void OnUpdateHatchedCharacter(class UPalMapObjectHatchingEggModel* Model_0);
-	void OnUpdateHatchTemperature(int32 TempDiff);
-	void OnUpdateItemContainer(class UPalItemContainer* Container);
-	void RatioToPersentOffsetText(double Ratio, class FText* Persent);
-	void Set_Second(int32 RemainingSecond);
-	void UpdateEggDisplay();
 	void UpdatePowerSuffcient(class UPalMapObjectEnergyModule* Module);
+	void UpdateEggDisplay();
+	void Set_Second(int32 RemainingSecond);
+	void RatioToPersentOffsetText(double Ratio, class FText* Persent);
+	void OnUpdateItemContainer(class UPalItemContainer* Container);
+	void OnUpdateHatchTemperature(int32 TempDiff);
+	void OnUpdateHatchedCharacter(class UPalMapObjectHatchingEggModel* Model_0);
+	void OnSetup();
+	void On_Update_Work_Amount(class UPalWorkProgress* WorkProgress);
+	void ExecuteUbergraph_WBP_Ingame_Incubator(int32 EntryPoint);
+	void DisplayCheck();
+	void Destruct();
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

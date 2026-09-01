@@ -36,14 +36,14 @@ public:
 	class UImage*                                 Shadow;                                            // 0x02C8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Anm_CloseMenu();
-	void Anm_OpenMenu();
-	void ExecuteUbergraph_WBP_RadialMenu_base(int32 EntryPoint);
-	void GetCenterPosition(struct FVector2D* Position);
-	void SetArrowAngle(double angleDegree);
-	void SetArrowVisible(ESlateVisibility Visibility_0);
-	void SetVisibilityArrow(ESlateVisibility NewVisibility);
 	void SetVisibilityCenterBaseImage(ESlateVisibility NewVisibility);
+	void SetVisibilityArrow(ESlateVisibility NewVisibility);
+	void SetArrowVisible(ESlateVisibility Visibility_0);
+	void SetArrowAngle(double angleDegree);
+	void GetCenterPosition(struct FVector2D* Position);
+	void ExecuteUbergraph_WBP_RadialMenu_base(int32 EntryPoint);
+	void Anm_OpenMenu();
+	void Anm_CloseMenu();
 
 public:
 	static class UClass* StaticClass()

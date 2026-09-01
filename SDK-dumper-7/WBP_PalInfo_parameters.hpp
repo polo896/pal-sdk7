@@ -19,24 +19,16 @@
 namespace SDK::Params
 {
 
-// Function WBP_PalInfo.WBP_PalInfo_C.AnmEvent_DescToBonus
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_PalInfo_C_AnmEvent_DescToBonus final
+// Function WBP_PalInfo.WBP_PalInfo_C.DisplayFirstActivatedInfo
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_PalInfo_C_DisplayFirstActivatedInfo final
 {
 public:
-	bool                                          AlreadyBonusCompleted;                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalInstanceID                         CallFunc_GetIndividualIDByActor_ReturnValue;       // 0x0008(0x0030)(HasGetValueTypeHash)
+	class FText                                   CallFunc_GetFormatedFirstActivatedInfoText_outFormatedText; // 0x0038(0x0018)()
 };
-DUMPER7_ASSERTS_WBP_PalInfo_C_AnmEvent_DescToBonus;
-
-// Function WBP_PalInfo.WBP_PalInfo_C.AnmEvent_OpenAndSetTimer
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_PalInfo_C_AnmEvent_OpenAndSetTimer final
-{
-public:
-	EPalUIPalInfoType                             infoType;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          AlreadyBonusCompleted;                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalInfo_C_AnmEvent_OpenAndSetTimer;
+DUMPER7_ASSERTS_WBP_PalInfo_C_DisplayFirstActivatedInfo;
 
 // Function WBP_PalInfo.WBP_PalInfo_C.Create Default Get Info
 // 0x00F0 (0x00F0 - 0x0000)
@@ -58,35 +50,91 @@ public:
 };
 DUMPER7_ASSERTS_WBP_PalInfo_C_Create_Default_Get_Info;
 
-// Function WBP_PalInfo.WBP_PalInfo_C.DisplayFirstActivatedInfo
+// Function WBP_PalInfo.WBP_PalInfo_C.AnmEvent_OpenAndSetTimer
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_PalInfo_C_AnmEvent_OpenAndSetTimer final
+{
+public:
+	EPalUIPalInfoType                             infoType;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          AlreadyBonusCompleted;                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalInfo_C_AnmEvent_OpenAndSetTimer;
+
+// Function WBP_PalInfo.WBP_PalInfo_C.AnmEvent_DescToBonus
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_PalInfo_C_AnmEvent_DescToBonus final
+{
+public:
+	bool                                          AlreadyBonusCompleted;                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalInfo_C_AnmEvent_DescToBonus;
+
+// Function WBP_PalInfo.WBP_PalInfo_C.TryDIsplayStackedCharacter
 // 0x0050 (0x0050 - 0x0000)
-struct WBP_PalInfo_C_DisplayFirstActivatedInfo final
+struct WBP_PalInfo_C_TryDIsplayStackedCharacter final
 {
 public:
-	class APalCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalInstanceID                         CallFunc_GetIndividualIDByActor_ReturnValue;       // 0x0008(0x0030)(HasGetValueTypeHash)
-	class FText                                   CallFunc_GetFormatedFirstActivatedInfoText_outFormatedText; // 0x0038(0x0018)()
+	bool                                          displayed;                                         // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFPalUIPalInfoDisplayData              CallFunc_Array_Get_Item;                           // 0x0008(0x0040)(HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalInfo_C_DisplayFirstActivatedInfo;
+DUMPER7_ASSERTS_WBP_PalInfo_C_TryDIsplayStackedCharacter;
 
-// Function WBP_PalInfo.WBP_PalInfo_C.DisplayPassiveSkill
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PalInfo_C_DisplayPassiveSkill final
+// Function WBP_PalInfo.WBP_PalInfo_C.SetupFirstActivatedPalInfo
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalInfo_C_SetupFirstActivatedPalInfo final
 {
 public:
-	TArray<class FName>                           passiveList;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class UPalIndividualCharacterHandle*          Handle;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalInfo_C_DisplayPassiveSkill;
+DUMPER7_ASSERTS_WBP_PalInfo_C_SetupFirstActivatedPalInfo;
 
-// Function WBP_PalInfo.WBP_PalInfo_C.DisplayShorDesc
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_PalInfo_C_DisplayShorDesc final
+// Function WBP_PalInfo.WBP_PalInfo_C.SetupCapturePalInfo
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_PalInfo_C_SetupCapturePalInfo final
 {
 public:
-	class FName                                   CharacterID;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetPalLongDescription_outName;            // 0x0008(0x0018)()
+	struct FPalUIPalCaptureInfo                   CaptureInfo;                                       // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-DUMPER7_ASSERTS_WBP_PalInfo_C_DisplayShorDesc;
+DUMPER7_ASSERTS_WBP_PalInfo_C_SetupCapturePalInfo;
+
+// Function WBP_PalInfo.WBP_PalInfo_C.Setup
+// 0x01C8 (0x01C8 - 0x0000)
+struct WBP_PalInfo_C_Setup final
+{
+public:
+	struct FFPalUIPalInfoDisplayData              getInfo;                                           // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	EPalUIPalInfoType                             infoType;                                          // 0x0040(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0043(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalCharacter*                          CallFunc_TryGetIndividualActor_ReturnValue;        // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalIndividualCharacterParameter*       CallFunc_TryGetIndividualParameter_ReturnValue;    // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetRank_ReturnValue;                      // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetCharacterID_ReturnValue;               // 0x0064(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetPartnerSkillName_OutText;              // 0x0078(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0090(0x0050)(HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x00E0(0x0050)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0130(0x0010)(ReferenceParm)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0140(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0150(0x0008)(NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_159[0x7];                                      // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0160(0x0018)()
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0178(0x0018)()
+	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_191[0x7];                                      // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0198(0x0018)()
+	class FText                                   CallFunc_GetLocalizedText_ReturnValue_1;           // 0x01B0(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_PalInfo_C_Setup;
 
 // Function WBP_PalInfo.WBP_PalInfo_C.ExecuteUbergraph_WBP_PalInfo
 // 0x01B0 (0x01B0 - 0x0000)
@@ -140,72 +188,24 @@ public:
 };
 DUMPER7_ASSERTS_WBP_PalInfo_C_ExecuteUbergraph_WBP_PalInfo;
 
-// Function WBP_PalInfo.WBP_PalInfo_C.Setup
-// 0x01C8 (0x01C8 - 0x0000)
-struct WBP_PalInfo_C_Setup final
+// Function WBP_PalInfo.WBP_PalInfo_C.DisplayShorDesc
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_PalInfo_C_DisplayShorDesc final
 {
 public:
-	struct FFPalUIPalInfoDisplayData              getInfo;                                           // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	EPalUIPalInfoType                             infoType;                                          // 0x0040(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0043(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalCharacter*                          CallFunc_TryGetIndividualActor_ReturnValue;        // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalIndividualCharacterParameter*       CallFunc_TryGetIndividualParameter_ReturnValue;    // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetRank_ReturnValue;                      // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetCharacterID_ReturnValue;               // 0x0064(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetPartnerSkillName_OutText;              // 0x0078(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0090(0x0050)(HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x00E0(0x0050)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0130(0x0010)(ReferenceParm)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0140(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0150(0x0008)(NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_159[0x7];                                      // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0160(0x0018)()
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0178(0x0018)()
-	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_191[0x7];                                      // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0198(0x0018)()
-	class FText                                   CallFunc_GetLocalizedText_ReturnValue_1;           // 0x01B0(0x0018)()
+	class FName                                   CharacterID;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetPalLongDescription_outName;            // 0x0008(0x0018)()
 };
-DUMPER7_ASSERTS_WBP_PalInfo_C_Setup;
+DUMPER7_ASSERTS_WBP_PalInfo_C_DisplayShorDesc;
 
-// Function WBP_PalInfo.WBP_PalInfo_C.SetupCapturePalInfo
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_PalInfo_C_SetupCapturePalInfo final
+// Function WBP_PalInfo.WBP_PalInfo_C.DisplayPassiveSkill
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PalInfo_C_DisplayPassiveSkill final
 {
 public:
-	struct FPalUIPalCaptureInfo                   CaptureInfo;                                       // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm)
+	TArray<class FName>                           passiveList;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-DUMPER7_ASSERTS_WBP_PalInfo_C_SetupCapturePalInfo;
-
-// Function WBP_PalInfo.WBP_PalInfo_C.SetupFirstActivatedPalInfo
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalInfo_C_SetupFirstActivatedPalInfo final
-{
-public:
-	class UPalIndividualCharacterHandle*          Handle;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalInfo_C_SetupFirstActivatedPalInfo;
-
-// Function WBP_PalInfo.WBP_PalInfo_C.TryDIsplayStackedCharacter
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_PalInfo_C_TryDIsplayStackedCharacter final
-{
-public:
-	bool                                          displayed;                                         // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFPalUIPalInfoDisplayData              CallFunc_Array_Get_Item;                           // 0x0008(0x0040)(HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalInfo_C_TryDIsplayStackedCharacter;
+DUMPER7_ASSERTS_WBP_PalInfo_C_DisplayPassiveSkill;
 
 }
 

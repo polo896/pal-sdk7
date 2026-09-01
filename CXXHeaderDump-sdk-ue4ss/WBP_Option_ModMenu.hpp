@@ -24,7 +24,7 @@ class UWBP_Option_ModMenu_C : public UUserWidget
     class UWBP_Title_MenuBG_C* WBP_Title_MenuBG;                                      // 0x0308 (size: 0x8)
     FWBP_Option_ModMenu_COnClickedAnyMod OnClickedAnyMod;                             // 0x0310 (size: 0x10)
     void OnClickedAnyMod(class UWBP_Option_ModMenu_ModList_C* Widget);
-    TMap<class FPalUIModUniqueId, class FPalUIModDisplayData> CachedDataMap;          // 0x0320 (size: 0x50)
+    TMap<FPalUIModUniqueId, FPalUIModDisplayData> CachedDataMap;                      // 0x0320 (size: 0x50)
     FWBP_Option_ModMenu_COnChangedModSupportIngame OnChangedModSupportIngame;         // 0x0370 (size: 0x10)
     void OnChangedModSupportIngame(bool bNewFlag);
     FDataTableRowHandle SearchTextBoxHintMsgID;                                       // 0x0380 (size: 0x10)
@@ -32,7 +32,7 @@ class UWBP_Option_ModMenu_C : public UUserWidget
     void OnConfirm();
     FWBP_Option_ModMenu_COnRequestOpenSteamWorkshop OnRequestOpenSteamWorkshop;       // 0x03A0 (size: 0x10)
     void OnRequestOpenSteamWorkshop();
-    TSoftObjectPtr<UWidget> RestoreFocusTarget;                                       // 0x03B0 (size: 0x30)
+    TSoftObjectPtr<class UWidget> RestoreFocusTarget;                                 // 0x03B0 (size: 0x30)
     FWBP_Option_ModMenu_COnCancel OnCancel;                                           // 0x03E0 (size: 0x10)
     void OnCancel();
 
@@ -50,7 +50,7 @@ class UWBP_Option_ModMenu_C : public UUserWidget
     void SetModSupportIngameFlag(bool bSupportIngame);
     void Filtering(FString FilteringString);
     void OnClickedModPanel_Internal(class UWBP_Option_ModMenu_ModList_C* Widget);
-    void SetModDisplayDataMap(TMap<class FPalUIModUniqueId, class FPalUIModDisplayData> DataMap, TArray<FPalUIModUniqueId>& Keys);
+    void SetModDisplayDataMap(TMap<FPalUIModUniqueId, FPalUIModDisplayData> DataMap, TArray<FPalUIModUniqueId>& Keys);
     void Construct();
     void BndEvt__WBP_Option_ModMenu_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
     void BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Apply_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();

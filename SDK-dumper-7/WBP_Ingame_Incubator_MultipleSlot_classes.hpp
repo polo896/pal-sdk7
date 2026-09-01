@@ -33,11 +33,11 @@ public:
 	class UPalItemSlot*                           TargetSlot;                                        // 0x02B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Ingame_Incubator_MultipleSlot(int32 EntryPoint);
-	void On_Update_Work_Amount(class UPalWorkProgress* WorkProgress);
-	void SetSlot(class UPalItemSlot* Slot_0);
-	void Unbind();
 	void UpdateSlotProgress(class UPalWorkProgress* Work_Progress_0);
+	void Unbind();
+	void SetSlot(class UPalItemSlot* Slot_0);
+	void On_Update_Work_Amount(class UPalWorkProgress* WorkProgress);
+	void ExecuteUbergraph_WBP_Ingame_Incubator_MultipleSlot(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

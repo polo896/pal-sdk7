@@ -7,7 +7,7 @@ class UBP_PalSupplyIncidentAction_C : public UBP_PalIncidentRandomActionBase_C
     bool IsAllNpcSpawned;                                                             // 0x0058 (size: 0x1)
 
     void GetNPCSpawner(bool bIsPalSpawner, class APalRandomIncidentNPCSpawner*& Result);
-    void CollectChangeHateTargets(TArray<class APalCharacter*>& SourceCharacters, TArray<class APalCharacter*>& TargetCharacters);
+    void CollectChangeHateTargets(TArray<APalCharacter*>& SourceCharacters, TArray<APalCharacter*>& TargetCharacters);
     void GetSpawner(class APalRandomIncidentNPCSpawner*& Spawmer);
     void ExistsAliveCharacter(bool NPCSpawner, bool& IsAlive);
     void GetSpawnedLocation(class APalAIController* Controller, bool& Found, FVector& Location);
@@ -16,7 +16,7 @@ class UBP_PalSupplyIncidentAction_C : public UBP_PalIncidentRandomActionBase_C
     void ResetAIController_Monster(class ABP_MonsterAIControllerBase_C* Controller);
     void ResetAIController_NPC(class ABP_NPCAIController_C* Controller);
     void ResetAIController(bool NPCSpawner);
-    void Set Hate To Targets(class APalCharacter* Character, TArray<class APalCharacter*>& Targets);
+    void Set Hate To Targets(class APalCharacter* Character, TArray<APalCharacter*>& Targets);
     void SetHate();
     void OnAllNpcSpawned();
     void OnInitialized();

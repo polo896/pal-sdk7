@@ -42,7 +42,7 @@ class UWBP_OperatingTable_TabPage_C : public UUserWidget
     class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x0398 (size: 0x8)
     FWBP_OperatingTable_TabPage_COnRequireChangeSelectItem OnRequireChangeSelectItem; // 0x03A0 (size: 0x10)
     void OnRequireChangeSelectItem();
-    TArray<class UWBP_MainMenu_Pal_Skill_Passive_C*> Passives;                        // 0x03B0 (size: 0x10)
+    TArray<UWBP_MainMenu_Pal_Skill_Passive_C*> Passives;                              // 0x03B0 (size: 0x10)
     class UPalIndividualCharacterParameter* CachedCharacter;                          // 0x03C0 (size: 0x8)
     FWBP_OperatingTable_TabPage_COnSelectedPassiveIndex OnSelectedPassiveIndex;       // 0x03C8 (size: 0x10)
     void OnSelectedPassiveIndex(int32 Index);

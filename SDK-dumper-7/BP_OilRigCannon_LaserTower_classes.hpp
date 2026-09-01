@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "BP_OilRigCannonBase_classes.hpp"
 #include "Engine_structs.hpp"
+#include "BP_OilRigCannonBase_classes.hpp"
 
 
 namespace SDK
@@ -38,21 +38,21 @@ public:
 	class UNiagaraComponent*                      tempSmokeEffect;                                   // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_OilRigCannon_AATower_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
-	void BndEvt__BP_OilRigCannon_AATower_Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
-	void ChangeDefaultMesh();
-	void ChangeDefaultVisual_BP();
-	void Damage_Ray_Cast();
-	void ExecuteUbergraph_BP_OilRigCannon_LaserTower(int32 EntryPoint);
-	void OnDestroyedWeapon_ForBP();
-	void PullTrigger_BP();
-	void ReceiveBeginPlay();
-	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
-	void ReceiveTick(float DeltaSeconds);
 	void SetActiveHeadMesh(bool IsActive);
+	void ReceiveTick(float DeltaSeconds);
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void ReceiveBeginPlay();
+	void PullTrigger_BP();
+	void OnDestroyedWeapon_ForBP();
+	void ExecuteUbergraph_BP_OilRigCannon_LaserTower(int32 EntryPoint);
+	void Damage_Ray_Cast();
+	void ChangeDefaultVisual_BP();
+	void ChangeDefaultMesh();
+	void BndEvt__BP_OilRigCannon_AATower_Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+	void BndEvt__BP_OilRigCannon_AATower_Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 
-	class USceneComponent* GetPitchMesh() const;
 	class USceneComponent* GetYawMesh() const;
+	class USceneComponent* GetPitchMesh() const;
 
 public:
 	static class UClass* StaticClass()

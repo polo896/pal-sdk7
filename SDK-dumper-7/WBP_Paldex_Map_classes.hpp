@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "E_PaldexDistributionTimeType_structs.hpp"
 #include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
 #include "CoreUObject_structs.hpp"
+#include "E_PaldexDistributionTimeType_structs.hpp"
 
 
 namespace SDK
@@ -57,28 +57,28 @@ public:
 	class UMaterialInstanceDynamic*               MapMaskMaterial;                                   // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AddOffset(const struct FVector2D& Offset);
-	void addZoomRate(double addZoomRate_0);
-	void AnmEvent_AllTime();
-	void AnmEvent_DayTime();
-	void AnmEvent_NightTime();
-	void BndEvt__WBP_Paldex_Map_WBP_PalInvisibleButton_Day_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Paldex_Map_WBP_PalInvisibleButton_Night_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void ChangeMap(class FName MapName);
-	void ChangeNextMap();
-	void ClearDistributionCircle();
-	void Construct();
-	void ExecuteUbergraph_WBP_Paldex_Map(int32 EntryPoint);
-	void GetNextMapName(class FName* NextMapName);
-	void IsZoomMax(bool* IsMax);
-	void OnInitialized();
-	void ResetOffset();
-	void ResetZoom();
-	void SetDistributionLocations(const struct FPalUIPaldexDistributionLocationStruct& dayTimeLocationStruct, const struct FPalUIPaldexDistributionLocationStruct& nightTimeLocationStruct, E_PaldexDistributionTimeType timeType, bool* isNoDistribution);
-	void SetupCircleWidget(class UClass* Class_0, const struct FVector& WorldLocation, double realSpawnSize, bool* bDisplayed);
-	void SetupSelectableMapInfo();
-	void SetVisibilityMap(bool IsVisible_0);
 	void SetZoomRate(double Rate);
+	void SetVisibilityMap(bool IsVisible_0);
+	void SetupSelectableMapInfo();
+	void SetupCircleWidget(class UClass* Class_0, const struct FVector& WorldLocation, double realSpawnSize, bool* bDisplayed);
+	void SetDistributionLocations(const struct FPalUIPaldexDistributionLocationStruct& dayTimeLocationStruct, const struct FPalUIPaldexDistributionLocationStruct& nightTimeLocationStruct, E_PaldexDistributionTimeType timeType, bool* isNoDistribution);
+	void ResetZoom();
+	void ResetOffset();
+	void OnInitialized();
+	void IsZoomMax(bool* IsMax);
+	void GetNextMapName(class FName* NextMapName);
+	void ExecuteUbergraph_WBP_Paldex_Map(int32 EntryPoint);
+	void Construct();
+	void ClearDistributionCircle();
+	void ChangeNextMap();
+	void ChangeMap(class FName MapName);
+	void BndEvt__WBP_Paldex_Map_WBP_PalInvisibleButton_Night_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Paldex_Map_WBP_PalInvisibleButton_Day_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void AnmEvent_NightTime();
+	void AnmEvent_DayTime();
+	void AnmEvent_AllTime();
+	void addZoomRate(double addZoomRate_0);
+	void AddOffset(const struct FVector2D& Offset);
 
 public:
 	static class UClass* StaticClass()

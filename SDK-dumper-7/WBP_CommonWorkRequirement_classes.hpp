@@ -27,9 +27,9 @@ public:
 	class UPalMapObjectConcreteModelBase*         Model;                                             // 0x0460(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_CommonWorkRequirement(int32 EntryPoint);
-	void On_Updated_Worker_Pal(class UPalWorkBase* Work);
 	void OnSetup();
+	void On_Updated_Worker_Pal(class UPalWorkBase* Work);
+	void ExecuteUbergraph_WBP_CommonWorkRequirement(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

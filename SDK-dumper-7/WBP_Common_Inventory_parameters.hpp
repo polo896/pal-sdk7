@@ -16,109 +16,27 @@
 namespace SDK::Params
 {
 
-// Function WBP_Common_Inventory.WBP_Common_Inventory_C.BndEvt__WBP_Common_Inventory_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_1_OnRightClickedSlot__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Common_Inventory_C_BndEvt__WBP_Common_Inventory_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_1_OnRightClickedSlot__DelegateSignature final
+// Function WBP_Common_Inventory.WBP_Common_Inventory_C.Setup
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Common_Inventory_C_Setup final
+{
+public:
+	class UBP_PalInventoryModel_C*                Model_0;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Common_Inventory_C_Setup;
+
+// Function WBP_Common_Inventory.WBP_Common_Inventory_C.OnLeftClickedTargetContainerSlot
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_Common_Inventory_C_OnLeftClickedTargetContainerSlot final
 {
 public:
 	class UWBP_PalItemSlotButtonBase_C*           ButtonBase;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalItemSlot*                           CallFunc_GetTargetSlot_targetSlot;                 // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalItemSlotId                         CallFunc_GetSlotId_ReturnValue;                    // 0x0018(0x0014)(NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Common_Inventory_C_BndEvt__WBP_Common_Inventory_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_1_OnRightClickedSlot__DelegateSignature;
-
-// Function WBP_Common_Inventory.WBP_Common_Inventory_C.BndEvt__WBP_Common_Inventory_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_8_OnLeftClickedSlot__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Common_Inventory_C_BndEvt__WBP_Common_Inventory_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_8_OnLeftClickedSlot__DelegateSignature final
-{
-public:
-	class UWBP_PalItemSlotButtonBase_C*           ButtonBase;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Common_Inventory_C_BndEvt__WBP_Common_Inventory_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_8_OnLeftClickedSlot__DelegateSignature;
-
-// Function WBP_Common_Inventory.WBP_Common_Inventory_C.BndEvt__WBP_IngameMenu_Chest_WBP_PalInvisibleButton_Sort_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Common_Inventory_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalInvisibleButton_Sort_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Common_Inventory_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalInvisibleButton_Sort_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_Common_Inventory.WBP_Common_Inventory_C.BndEvt__WBP_IngameMenu_Chest_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_4_OnHoveredSlot__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Common_Inventory_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_4_OnHoveredSlot__DelegateSignature final
-{
-public:
-	class UWBP_PalItemSlotButtonBase_C*           ButtonBase;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Common_Inventory_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_4_OnHoveredSlot__DelegateSignature;
-
-// Function WBP_Common_Inventory.WBP_Common_Inventory_C.BndEvt__WBP_IngameMenu_Chest_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_5_OnEndHoveredSlot__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Common_Inventory_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_5_OnEndHoveredSlot__DelegateSignature final
-{
-public:
-	class UWBP_PalItemSlotButtonBase_C*           ButtonBase;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Common_Inventory_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_5_OnEndHoveredSlot__DelegateSignature;
-
-// Function WBP_Common_Inventory.WBP_Common_Inventory_C.ExecuteUbergraph_WBP_Common_Inventory
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_Common_Inventory_C_ExecuteUbergraph_WBP_Common_Inventory final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_PalItemSlotButtonBase_C*           K2Node_ComponentBoundEvent_buttonBase_3;           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_PalItemSlotButtonBase_C*           K2Node_ComponentBoundEvent_buttonBase_2;           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_PalItemSlotButtonBase_C*           K2Node_ComponentBoundEvent_buttonBase_1;           // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EPalItemSlotPressType                         K2Node_ComponentBoundEvent_pressType_1;            // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_PalItemSlotButtonBase_C*           K2Node_ComponentBoundEvent_buttonBase;             // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	EPalItemSlotPressType                         K2Node_ComponentBoundEvent_pressType;              // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Common_Inventory_C_ExecuteUbergraph_WBP_Common_Inventory;
-
-// Function WBP_Common_Inventory.WBP_Common_Inventory_C.FilteringInventoryByInventoryType
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Common_Inventory_C_FilteringInventoryByInventoryType final
-{
-public:
-	TArray<EPalPlayerInventoryType>               inventoryType;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	bool                                          CallFunc_FilteringFromInventoryType_IsEmptyDisplaySlot; // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Common_Inventory_C_FilteringInventoryByInventoryType;
-
-// Function WBP_Common_Inventory.WBP_Common_Inventory_C.FilteringInventoryByInventoryTypeA
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Common_Inventory_C_FilteringInventoryByInventoryTypeA final
-{
-public:
-	TArray<EPalItemTypeA>                         displayTypesA;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_Common_Inventory_C_FilteringInventoryByInventoryTypeA;
-
-// Function WBP_Common_Inventory.WBP_Common_Inventory_C.FilteringInventoryByInventoryTypeB
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Common_Inventory_C_FilteringInventoryByInventoryTypeB final
-{
-public:
-	TArray<EPalItemTypeB>                         displayTypesB;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_Common_Inventory_C_FilteringInventoryByInventoryTypeB;
-
-// Function WBP_Common_Inventory.WBP_Common_Inventory_C.GetInventoryLastHoveredFocusTarget
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Common_Inventory_C_GetInventoryLastHoveredFocusTarget final
-{
-public:
-	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_PalItemSlotButtonBase_C*           CallFunc_GetLastHoveredSlotButton_SlotButton;      // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Common_Inventory_C_GetInventoryLastHoveredFocusTarget;
+DUMPER7_ASSERTS_WBP_Common_Inventory_C_OnLeftClickedTargetContainerSlot;
 
 // Function WBP_Common_Inventory.WBP_Common_Inventory_C.GetInventoryTopFocustTarget
 // 0x0060 (0x0060 - 0x0000)
@@ -145,27 +63,109 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Common_Inventory_C_GetInventoryTopFocustTarget;
 
-// Function WBP_Common_Inventory.WBP_Common_Inventory_C.OnLeftClickedTargetContainerSlot
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_Common_Inventory_C_OnLeftClickedTargetContainerSlot final
+// Function WBP_Common_Inventory.WBP_Common_Inventory_C.GetInventoryLastHoveredFocusTarget
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Common_Inventory_C_GetInventoryLastHoveredFocusTarget final
+{
+public:
+	class UWidget*                                Widget;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalItemSlotButtonBase_C*           CallFunc_GetLastHoveredSlotButton_SlotButton;      // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Common_Inventory_C_GetInventoryLastHoveredFocusTarget;
+
+// Function WBP_Common_Inventory.WBP_Common_Inventory_C.FilteringInventoryByInventoryTypeB
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Common_Inventory_C_FilteringInventoryByInventoryTypeB final
+{
+public:
+	TArray<EPalItemTypeB>                         displayTypesB;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_Common_Inventory_C_FilteringInventoryByInventoryTypeB;
+
+// Function WBP_Common_Inventory.WBP_Common_Inventory_C.FilteringInventoryByInventoryTypeA
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Common_Inventory_C_FilteringInventoryByInventoryTypeA final
+{
+public:
+	TArray<EPalItemTypeA>                         displayTypesA;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_Common_Inventory_C_FilteringInventoryByInventoryTypeA;
+
+// Function WBP_Common_Inventory.WBP_Common_Inventory_C.FilteringInventoryByInventoryType
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Common_Inventory_C_FilteringInventoryByInventoryType final
+{
+public:
+	TArray<EPalPlayerInventoryType>               inventoryType;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	bool                                          CallFunc_FilteringFromInventoryType_IsEmptyDisplaySlot; // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Common_Inventory_C_FilteringInventoryByInventoryType;
+
+// Function WBP_Common_Inventory.WBP_Common_Inventory_C.ExecuteUbergraph_WBP_Common_Inventory
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_Common_Inventory_C_ExecuteUbergraph_WBP_Common_Inventory final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalItemSlotButtonBase_C*           K2Node_ComponentBoundEvent_buttonBase_3;           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalItemSlotButtonBase_C*           K2Node_ComponentBoundEvent_buttonBase_2;           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalItemSlotButtonBase_C*           K2Node_ComponentBoundEvent_buttonBase_1;           // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EPalItemSlotPressType                         K2Node_ComponentBoundEvent_pressType_1;            // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_PalItemSlotButtonBase_C*           K2Node_ComponentBoundEvent_buttonBase;             // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EPalItemSlotPressType                         K2Node_ComponentBoundEvent_pressType;              // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Common_Inventory_C_ExecuteUbergraph_WBP_Common_Inventory;
+
+// Function WBP_Common_Inventory.WBP_Common_Inventory_C.BndEvt__WBP_IngameMenu_Chest_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_5_OnEndHoveredSlot__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Common_Inventory_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_5_OnEndHoveredSlot__DelegateSignature final
+{
+public:
+	class UWBP_PalItemSlotButtonBase_C*           ButtonBase;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Common_Inventory_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_5_OnEndHoveredSlot__DelegateSignature;
+
+// Function WBP_Common_Inventory.WBP_Common_Inventory_C.BndEvt__WBP_IngameMenu_Chest_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_4_OnHoveredSlot__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Common_Inventory_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_4_OnHoveredSlot__DelegateSignature final
+{
+public:
+	class UWBP_PalItemSlotButtonBase_C*           ButtonBase;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Common_Inventory_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_4_OnHoveredSlot__DelegateSignature;
+
+// Function WBP_Common_Inventory.WBP_Common_Inventory_C.BndEvt__WBP_IngameMenu_Chest_WBP_PalInvisibleButton_Sort_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Common_Inventory_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalInvisibleButton_Sort_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Common_Inventory_C_BndEvt__WBP_IngameMenu_Chest_WBP_PalInvisibleButton_Sort_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_Common_Inventory.WBP_Common_Inventory_C.BndEvt__WBP_Common_Inventory_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_8_OnLeftClickedSlot__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Common_Inventory_C_BndEvt__WBP_Common_Inventory_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_8_OnLeftClickedSlot__DelegateSignature final
 {
 public:
 	class UWBP_PalItemSlotButtonBase_C*           ButtonBase;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalItemSlot*                           CallFunc_GetTargetSlot_targetSlot;                 // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalItemSlotId                         CallFunc_GetSlotId_ReturnValue;                    // 0x0018(0x0014)(NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Common_Inventory_C_OnLeftClickedTargetContainerSlot;
+DUMPER7_ASSERTS_WBP_Common_Inventory_C_BndEvt__WBP_Common_Inventory_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_8_OnLeftClickedSlot__DelegateSignature;
 
-// Function WBP_Common_Inventory.WBP_Common_Inventory_C.Setup
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Common_Inventory_C_Setup final
+// Function WBP_Common_Inventory.WBP_Common_Inventory_C.BndEvt__WBP_Common_Inventory_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_1_OnRightClickedSlot__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Common_Inventory_C_BndEvt__WBP_Common_Inventory_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_1_OnRightClickedSlot__DelegateSignature final
 {
 public:
-	class UBP_PalInventoryModel_C*                Model_0;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalItemSlotButtonBase_C*           ButtonBase;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EPalItemSlotPressType                         PressType;                                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Common_Inventory_C_Setup;
+DUMPER7_ASSERTS_WBP_Common_Inventory_C_BndEvt__WBP_Common_Inventory_WBP_PalPlayerInventoryScrollList_K2Node_ComponentBoundEvent_1_OnRightClickedSlot__DelegateSignature;
 
 }
 

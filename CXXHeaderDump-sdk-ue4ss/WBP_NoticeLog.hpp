@@ -11,7 +11,7 @@ class UWBP_NoticeLog_C : public UPalLogWidgetBase
     void Close_Internal();
     void Open_Internal();
     void OnLoaded_19AB6838498B19451FE6AEAD31DEA803(class UObject* Loaded);
-    void RequestLoadIconTexture(const TSoftObjectPtr<UTexture2D>& softTexturePtr);
+    void RequestLoadIconTexture(const TSoftObjectPtr<class UTexture2D>& softTexturePtr);
     void SetLogText(const FText& InText);
     void RequestInAnime();
     void OnFinished();

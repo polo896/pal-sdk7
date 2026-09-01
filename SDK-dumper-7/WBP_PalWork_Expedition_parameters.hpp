@@ -14,14 +14,41 @@
 namespace SDK::Params
 {
 
-// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.ChangeToExpandDetail
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalWork_Expedition_C_ChangeToExpandDetail final
+// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.SetTitle
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_PalWork_Expedition_C_SetTitle final
 {
 public:
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   TitleText;                                         // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-DUMPER7_ASSERTS_WBP_PalWork_Expedition_C_ChangeToExpandDetail;
+DUMPER7_ASSERTS_WBP_PalWork_Expedition_C_SetTitle;
+
+// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.SetRemainSeconds
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalWork_Expedition_C_SetRemainSeconds final
+{
+public:
+	int64                                         Seconds;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalWork_Expedition_C_SetRemainSeconds;
+
+// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.SetGaugeRate
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalWork_Expedition_C_SetGaugeRate final
+{
+public:
+	double                                        Rate;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalWork_Expedition_C_SetGaugeRate;
+
+// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.ExecuteUbergraph_WBP_PalWork_Expedition
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_PalWork_Expedition_C_ExecuteUbergraph_WBP_PalWork_Expedition final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalWork_Expedition_C_ExecuteUbergraph_WBP_PalWork_Expedition;
 
 // Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.ChangeToSimpleDetail
 // 0x0018 (0x0018 - 0x0000)
@@ -35,41 +62,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_PalWork_Expedition_C_ChangeToSimpleDetail;
 
-// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.ExecuteUbergraph_WBP_PalWork_Expedition
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_PalWork_Expedition_C_ExecuteUbergraph_WBP_PalWork_Expedition final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalWork_Expedition_C_ExecuteUbergraph_WBP_PalWork_Expedition;
-
-// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.SetGaugeRate
+// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.ChangeToExpandDetail
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_PalWork_Expedition_C_SetGaugeRate final
+struct WBP_PalWork_Expedition_C_ChangeToExpandDetail final
 {
 public:
-	double                                        Rate;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalWork_Expedition_C_SetGaugeRate;
-
-// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.SetRemainSeconds
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalWork_Expedition_C_SetRemainSeconds final
-{
-public:
-	int64                                         Seconds;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalWork_Expedition_C_SetRemainSeconds;
-
-// Function WBP_PalWork_Expedition.WBP_PalWork_Expedition_C.SetTitle
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_PalWork_Expedition_C_SetTitle final
-{
-public:
-	class FText                                   TitleText;                                         // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_PalWork_Expedition_C_SetTitle;
+DUMPER7_ASSERTS_WBP_PalWork_Expedition_C_ChangeToExpandDetail;
 
 }
 

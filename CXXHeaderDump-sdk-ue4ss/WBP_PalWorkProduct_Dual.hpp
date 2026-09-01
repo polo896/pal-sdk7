@@ -37,12 +37,12 @@ class UWBP_PalWorkProduct_Dual_C : public UUserWidget
     FDataTableRowHandle InfinityNumMsgId;                                             // 0x03C0 (size: 0x10)
     FDataTableRowHandle RequireGenusMSGID;                                            // 0x03D0 (size: 0x10)
     FDataTableRowHandle RequireTypeMSGID;                                             // 0x03E0 (size: 0x10)
-    TMap<class EPalWorkSuitability, class FLinearColor> BaseColorWorkSuitability;     // 0x03F0 (size: 0x50)
+    TMap<EPalWorkSuitability, FLinearColor> BaseColorWorkSuitability;                 // 0x03F0 (size: 0x50)
 
     FLinearColor GetWorkSuitabilityColor(EPalWorkSuitability Target);
     FFPalUIWorkProductDualWidgetSet GetWidgetSetByIndex(int32 Index);
     void RefreshWorkPalSlot(class UPalWorkProgressMultiType* Work, const int32 WidgetIndex);
-    TArray<class UWBP_PalCraftInfo_Pal_C*> GetWorkerPalWidgetArray();
+    TArray<UWBP_PalCraftInfo_Pal_C*> GetWorkerPalWidgetArray();
     void SetWorkSuitability(EPalWorkSuitability WorkSuitability);
     void UpdateRequireInfo(class UPalWorkBase* Work, TArray<FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData>& DisplayData);
     bool IsCharacterAssignedFixedToTargetWork(class UPalCharacterParameterComponent* TargetCharacter, FGuid WorkId);

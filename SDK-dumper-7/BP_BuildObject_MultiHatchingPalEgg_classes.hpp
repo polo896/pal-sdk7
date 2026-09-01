@@ -47,23 +47,23 @@ public:
 	TArray<bool>                                  EggHatchedStates;                                  // 0x08A8(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnInstance, RepNotify)
 
 public:
-	void ExecuteUbergraph_BP_BuildObject_MultiHatchingPalEgg(int32 EntryPoint);
-	void LoadEggMeshModel();
-	void On_Hatched_Character(class UPalMapObjectHatchingEggModelBase* Model);
-	void On_Update_Pal_Eggs();
-	void OnAvailable_BlueprintImpl();
-	void OnLoaded_CD3DA1EB46D59E3CC662D7AE910EDD81(TSubclassOf<class UObject> Loaded);
-	void OnRep_EggActorClasses();
-	void OnRep_EggHatchedStates();
-	void OnSetConcreteModelAvailable(class UPalMapObjectConcreteModelBase* Model);
-	void OnSetConcreteModelAvailableInternal(class UPalMapObjectConcreteModelBase* ConcreteModel);
-	void OnUpdateWorkable(bool Workable);
-	void ResetHatchingSpeed();
-	void ResetPalEggActorMap();
-	void SetupHatchedEffects(TArray<bool>& HatchedStates);
-	void SetupPalEggModel();
-	void SpawnGetPalEffect();
 	void UpdateHatchingSpeed();
+	void SpawnGetPalEffect();
+	void SetupPalEggModel();
+	void SetupHatchedEffects(TArray<bool>& HatchedStates);
+	void ResetPalEggActorMap();
+	void ResetHatchingSpeed();
+	void OnUpdateWorkable(bool Workable);
+	void OnSetConcreteModelAvailableInternal(class UPalMapObjectConcreteModelBase* ConcreteModel);
+	void OnSetConcreteModelAvailable(class UPalMapObjectConcreteModelBase* Model);
+	void OnRep_EggHatchedStates();
+	void OnRep_EggActorClasses();
+	void OnLoaded_CD3DA1EB46D59E3CC662D7AE910EDD81(TSubclassOf<class UObject> Loaded);
+	void OnAvailable_BlueprintImpl();
+	void On_Update_Pal_Eggs();
+	void On_Hatched_Character(class UPalMapObjectHatchingEggModelBase* Model);
+	void LoadEggMeshModel();
+	void ExecuteUbergraph_BP_BuildObject_MultiHatchingPalEgg(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -17,83 +17,15 @@
 namespace SDK
 {
 
-// Function WBP_Reticle_ChargeRifle.WBP_Reticle_ChargeRifle_C.ExecuteUbergraph_WBP_Reticle_ChargeRifle
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Reticle_ChargeRifle.WBP_Reticle_ChargeRifle_C.OnReticleDeactivated
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_Reticle_ChargeRifle_C::ExecuteUbergraph_WBP_Reticle_ChargeRifle(int32 EntryPoint)
+void UWBP_Reticle_ChargeRifle_C::OnReticleDeactivated()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Reticle_ChargeRifle_C", "ExecuteUbergraph_WBP_Reticle_ChargeRifle");
-
-	Params::WBP_Reticle_ChargeRifle_C_ExecuteUbergraph_WBP_Reticle_ChargeRifle Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Reticle_ChargeRifle.WBP_Reticle_ChargeRifle_C.OnChangedChargeValue
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  CurretnChargeValue                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Reticle_ChargeRifle_C::OnChangedChargeValue(double CurretnChargeValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Reticle_ChargeRifle_C", "OnChangedChargeValue");
-
-	Params::WBP_Reticle_ChargeRifle_C_OnChangedChargeValue Parms{};
-
-	Parms.CurretnChargeValue = CurretnChargeValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Reticle_ChargeRifle.WBP_Reticle_ChargeRifle_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Reticle_ChargeRifle_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Reticle_ChargeRifle_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Reticle_ChargeRifle.WBP_Reticle_ChargeRifle_C.OnPullTrigger
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Reticle_ChargeRifle_C::OnPullTrigger()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Reticle_ChargeRifle_C", "OnPullTrigger");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Reticle_ChargeRifle.WBP_Reticle_ChargeRifle_C.OnReleaseTrigger
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Reticle_ChargeRifle_C::OnReleaseTrigger()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Reticle_ChargeRifle_C", "OnReleaseTrigger");
+		Func = Class->GetFunction("WBP_Reticle_ChargeRifle_C", "OnReticleDeactivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -119,17 +51,85 @@ void UWBP_Reticle_ChargeRifle_C::OnReticleActivted(const struct FPalItemId& Weap
 }
 
 
-// Function WBP_Reticle_ChargeRifle.WBP_Reticle_ChargeRifle_C.OnReticleDeactivated
-// (Event, Protected, BlueprintEvent)
+// Function WBP_Reticle_ChargeRifle.WBP_Reticle_ChargeRifle_C.OnReleaseTrigger
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Reticle_ChargeRifle_C::OnReticleDeactivated()
+void UWBP_Reticle_ChargeRifle_C::OnReleaseTrigger()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Reticle_ChargeRifle_C", "OnReticleDeactivated");
+		Func = Class->GetFunction("WBP_Reticle_ChargeRifle_C", "OnReleaseTrigger");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Reticle_ChargeRifle.WBP_Reticle_ChargeRifle_C.OnPullTrigger
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Reticle_ChargeRifle_C::OnPullTrigger()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Reticle_ChargeRifle_C", "OnPullTrigger");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Reticle_ChargeRifle.WBP_Reticle_ChargeRifle_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Reticle_ChargeRifle_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Reticle_ChargeRifle_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Reticle_ChargeRifle.WBP_Reticle_ChargeRifle_C.OnChangedChargeValue
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  CurretnChargeValue                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Reticle_ChargeRifle_C::OnChangedChargeValue(double CurretnChargeValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Reticle_ChargeRifle_C", "OnChangedChargeValue");
+
+	Params::WBP_Reticle_ChargeRifle_C_OnChangedChargeValue Parms{};
+
+	Parms.CurretnChargeValue = CurretnChargeValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Reticle_ChargeRifle.WBP_Reticle_ChargeRifle_C.ExecuteUbergraph_WBP_Reticle_ChargeRifle
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Reticle_ChargeRifle_C::ExecuteUbergraph_WBP_Reticle_ChargeRifle(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Reticle_ChargeRifle_C", "ExecuteUbergraph_WBP_Reticle_ChargeRifle");
+
+	Params::WBP_Reticle_ChargeRifle_C_ExecuteUbergraph_WBP_Reticle_ChargeRifle Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

@@ -26,9 +26,9 @@ public:
 	class ABP_Action_Emote_KickCollision_C*       NewVar_0;                                          // 0x0188(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_Action_Emote_8(int32 EntryPoint);
-	void OnEndAction();
 	void OnNotify(class FName Value);
+	void OnEndAction();
+	void ExecuteUbergraph_BP_Action_Emote_8(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -30,11 +30,11 @@ class UWBP_MapMarker_Win_C : public UUserWidget
     class UWBP_MapMarker_Content_C* WBP_MapMarker_Content_15;                         // 0x0338 (size: 0x8)
     class UWBP_Paldex_tab_C* WBP_tab_Custom;                                          // 0x0340 (size: 0x8)
     class UWBP_Paldex_tab_C* WBP_tab_Guild;                                           // 0x0348 (size: 0x8)
-    TArray<class UWBP_MapMarker_Content_C*> Markers;                                  // 0x0350 (size: 0x10)
+    TArray<UWBP_MapMarker_Content_C*> Markers;                                        // 0x0350 (size: 0x10)
     class UWBP_Map_IconCustom_C* CurrentEdittingIcon;                                 // 0x0360 (size: 0x8)
     FWBP_MapMarker_Win_CRemoveCustomIcon RemoveCustomIcon;                            // 0x0368 (size: 0x10)
     void RemoveCustomIcon(class UWBP_Map_IconCustom_C* Icon);
-    TArray<class UTexture2D*> Textures;                                               // 0x0378 (size: 0x10)
+    TArray<UTexture2D*> Textures;                                                     // 0x0378 (size: 0x10)
     FWBP_MapMarker_Win_CChangeCustomIcon ChangeCustomIcon;                            // 0x0388 (size: 0x10)
     void ChangeCustomIcon(class UWBP_Map_IconCustom_C* Icon, int32 Index);
     int32 CurrentIndex;                                                               // 0x0398 (size: 0x4)

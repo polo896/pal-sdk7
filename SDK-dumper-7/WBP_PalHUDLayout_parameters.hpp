@@ -17,24 +17,23 @@
 namespace SDK::Params
 {
 
-// Function WBP_PalHUDLayout.WBP_PalHUDLayout_C.AddHUD
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PalHUDLayout_C_AddHUD final
-{
-public:
-	class UPalUserWidget*                         Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         ZOrder;                                            // 0x0008(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalHUDLayout_C_AddHUD;
-
-// Function WBP_PalHUDLayout.WBP_PalHUDLayout_C.AddWorldHUD
+// Function WBP_PalHUDLayout.WBP_PalHUDLayout_C.RemoveWorldHUD
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_PalHUDLayout_C_AddWorldHUD final
+struct WBP_PalHUDLayout_C_RemoveWorldHUD final
 {
 public:
 	class UPalUserWidgetWorldHUD*                 Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalHUDLayout_C_AddWorldHUD;
+DUMPER7_ASSERTS_WBP_PalHUDLayout_C_RemoveWorldHUD;
+
+// Function WBP_PalHUDLayout.WBP_PalHUDLayout_C.RemoveHUD
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalHUDLayout_C_RemoveHUD final
+{
+public:
+	class UPalUserWidget*                         Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalHUDLayout_C_RemoveHUD;
 
 // Function WBP_PalHUDLayout.WBP_PalHUDLayout_C.ExecuteUbergraph_WBP_PalHUDLayout
 // 0x00A0 (0x00A0 - 0x0000)
@@ -58,23 +57,24 @@ public:
 };
 DUMPER7_ASSERTS_WBP_PalHUDLayout_C_ExecuteUbergraph_WBP_PalHUDLayout;
 
-// Function WBP_PalHUDLayout.WBP_PalHUDLayout_C.RemoveHUD
+// Function WBP_PalHUDLayout.WBP_PalHUDLayout_C.AddWorldHUD
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_PalHUDLayout_C_RemoveHUD final
-{
-public:
-	class UPalUserWidget*                         Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalHUDLayout_C_RemoveHUD;
-
-// Function WBP_PalHUDLayout.WBP_PalHUDLayout_C.RemoveWorldHUD
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalHUDLayout_C_RemoveWorldHUD final
+struct WBP_PalHUDLayout_C_AddWorldHUD final
 {
 public:
 	class UPalUserWidgetWorldHUD*                 Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalHUDLayout_C_RemoveWorldHUD;
+DUMPER7_ASSERTS_WBP_PalHUDLayout_C_AddWorldHUD;
+
+// Function WBP_PalHUDLayout.WBP_PalHUDLayout_C.AddHUD
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PalHUDLayout_C_AddHUD final
+{
+public:
+	class UPalUserWidget*                         Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         ZOrder;                                            // 0x0008(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalHUDLayout_C_AddHUD;
 
 }
 

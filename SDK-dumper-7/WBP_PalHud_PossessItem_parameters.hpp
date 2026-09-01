@@ -16,16 +16,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_PalHud_PossessItem.WBP_PalHud_PossessItem_C.ExecuteUbergraph_WBP_PalHud_PossessItem
-// 0x0014 (0x0014 - 0x0000)
-struct WBP_PalHud_PossessItem_C_ExecuteUbergraph_WBP_PalHud_PossessItem final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalHud_PossessItem_C_ExecuteUbergraph_WBP_PalHud_PossessItem;
-
 // Function WBP_PalHud_PossessItem.WBP_PalHud_PossessItem_C.SetupUI
 // 0x00E0 (0x00E0 - 0x0000)
 struct WBP_PalHud_PossessItem_C_SetupUI final
@@ -50,6 +40,16 @@ public:
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00D0(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_PalHud_PossessItem_C_SetupUI;
+
+// Function WBP_PalHud_PossessItem.WBP_PalHud_PossessItem_C.ExecuteUbergraph_WBP_PalHud_PossessItem
+// 0x0014 (0x0014 - 0x0000)
+struct WBP_PalHud_PossessItem_C_ExecuteUbergraph_WBP_PalHud_PossessItem final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalHud_PossessItem_C_ExecuteUbergraph_WBP_PalHud_PossessItem;
 
 }
 

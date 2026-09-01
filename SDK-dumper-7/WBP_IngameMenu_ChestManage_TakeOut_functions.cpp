@@ -17,15 +17,57 @@
 namespace SDK
 {
 
-// Function WBP_IngameMenu_ChestManage_TakeOut.WBP_IngameMenu_ChestManage_TakeOut_C.BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_IngameMenu_ChestManage_TakeOut.WBP_IngameMenu_ChestManage_TakeOut_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FPalItemAndNum&            ItemAndNum                                             (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// int64                                   MaxNum                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_ChestManage_TakeOut_C::BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature()
+void UWBP_IngameMenu_ChestManage_TakeOut_C::Setup(const struct FPalItemAndNum& ItemAndNum, int64 MaxNum)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_ChestManage_TakeOut_C", "BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_IngameMenu_ChestManage_TakeOut_C", "Setup");
+
+	Params::WBP_IngameMenu_ChestManage_TakeOut_C_Setup Parms{};
+
+	Parms.ItemAndNum = std::move(ItemAndNum);
+	Parms.MaxNum = MaxNum;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_ChestManage_TakeOut.WBP_IngameMenu_ChestManage_TakeOut_C.ExecuteUbergraph_WBP_IngameMenu_ChestManage_TakeOut
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_ChestManage_TakeOut_C::ExecuteUbergraph_WBP_IngameMenu_ChestManage_TakeOut(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_ChestManage_TakeOut_C", "ExecuteUbergraph_WBP_IngameMenu_ChestManage_TakeOut");
+
+	Params::WBP_IngameMenu_ChestManage_TakeOut_C_ExecuteUbergraph_WBP_IngameMenu_ChestManage_TakeOut Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_ChestManage_TakeOut.WBP_IngameMenu_ChestManage_TakeOut_C.BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_Menu_btn_K2Node_ComponentBoundEvent_5_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_IngameMenu_ChestManage_TakeOut_C::BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_Menu_btn_K2Node_ComponentBoundEvent_5_OnButtonClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_ChestManage_TakeOut_C", "BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_Menu_btn_K2Node_ComponentBoundEvent_5_OnButtonClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,59 +93,17 @@ void UWBP_IngameMenu_ChestManage_TakeOut_C::BndEvt__WBP_IngameMenu_ChestManage_T
 }
 
 
-// Function WBP_IngameMenu_ChestManage_TakeOut.WBP_IngameMenu_ChestManage_TakeOut_C.BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_Menu_btn_K2Node_ComponentBoundEvent_5_OnButtonClicked__DelegateSignature
+// Function WBP_IngameMenu_ChestManage_TakeOut.WBP_IngameMenu_ChestManage_TakeOut_C.BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature
 // (BlueprintEvent)
 
-void UWBP_IngameMenu_ChestManage_TakeOut_C::BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_Menu_btn_K2Node_ComponentBoundEvent_5_OnButtonClicked__DelegateSignature()
+void UWBP_IngameMenu_ChestManage_TakeOut_C::BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_ChestManage_TakeOut_C", "BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_Menu_btn_K2Node_ComponentBoundEvent_5_OnButtonClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_IngameMenu_ChestManage_TakeOut_C", "BndEvt__WBP_IngameMenu_ChestManage_TakeOut_WBP_CommonButton_Confirm_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_ChestManage_TakeOut.WBP_IngameMenu_ChestManage_TakeOut_C.ExecuteUbergraph_WBP_IngameMenu_ChestManage_TakeOut
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_ChestManage_TakeOut_C::ExecuteUbergraph_WBP_IngameMenu_ChestManage_TakeOut(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_ChestManage_TakeOut_C", "ExecuteUbergraph_WBP_IngameMenu_ChestManage_TakeOut");
-
-	Params::WBP_IngameMenu_ChestManage_TakeOut_C_ExecuteUbergraph_WBP_IngameMenu_ChestManage_TakeOut Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_ChestManage_TakeOut.WBP_IngameMenu_ChestManage_TakeOut_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalItemAndNum&            ItemAndNum                                             (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-// int64                                   MaxNum                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_ChestManage_TakeOut_C::Setup(const struct FPalItemAndNum& ItemAndNum, int64 MaxNum)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_ChestManage_TakeOut_C", "Setup");
-
-	Params::WBP_IngameMenu_ChestManage_TakeOut_C_Setup Parms{};
-
-	Parms.ItemAndNum = std::move(ItemAndNum);
-	Parms.MaxNum = MaxNum;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

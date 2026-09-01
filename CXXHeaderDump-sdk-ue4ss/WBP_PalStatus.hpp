@@ -11,7 +11,7 @@ class UWBP_PalStatus_C : public UPalUICharacterStatus
     class UBP_PalTextBlock_C* Text_NothingPal;                                        // 0x04A0 (size: 0x8)
     class UWBP_MainMenu_Pal_00_C* WBP_MainMenu_Pal_00;                                // 0x04A8 (size: 0x8)
     class UWBP_PalMonsterInframeRender_C* WBP_PalInframeRender;                       // 0x04B0 (size: 0x8)
-    TArray<class UPalIndividualCharacterHandle*> displayHandles;                      // 0x04B8 (size: 0x10)
+    TArray<UPalIndividualCharacterHandle*> displayHandles;                            // 0x04B8 (size: 0x10)
     class UTextureRenderTarget2D* Render Target;                                      // 0x04C8 (size: 0x8)
     int32 lastShowHandleIndex;                                                        // 0x04D0 (size: 0x4)
     int32 lastShowRenderPalIndex;                                                     // 0x04D4 (size: 0x4)
@@ -46,7 +46,7 @@ class UWBP_PalStatus_C : public UPalUICharacterStatus
     void Get Panel Index from Handle(class UPalIndividualCharacterHandle* Handle, int32& Index, bool& IsValid);
     void Setup_MultiPal();
     void Setup_NothingPal();
-    void Setup(TArray<class UPalIndividualCharacterHandle*>& Handles);
+    void Setup(TArray<UPalIndividualCharacterHandle*>& Handles);
     void ClampInputNickName(FText InText, FText& clampedNickName);
     void NickNameFinalCheck(FText InText, TEnumAsByte<ETextCommit::Type> textCommit, FText& finalNickName);
     void Construct();

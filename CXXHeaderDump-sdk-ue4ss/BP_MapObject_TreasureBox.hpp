@@ -8,7 +8,7 @@ class ABP_MapObject_TreasureBox_C : public APalMapObjectTreasureBox
     class UChildActorComponent* VisualActor;                                          // 0x0460 (size: 0x8)
     class UPalInteractableSphereComponentNative* BP_InteractableSphere;               // 0x0468 (size: 0x8)
     class USceneComponent* IndicatorOrigin;                                           // 0x0470 (size: 0x8)
-    TMap<class EPalMapObjectTreasureGradeType, class TSubclassOf<AActor>> VisualMap;  // 0x0478 (size: 0x50)
+    TMap<EPalMapObjectTreasureGradeType, TSubclassOf<class AActor>> VisualMap;        // 0x0478 (size: 0x50)
 
     void SetupVisual(class UPalMapObjectConcreteModelBase* ConcreteModel);
     void TriggerOpen();

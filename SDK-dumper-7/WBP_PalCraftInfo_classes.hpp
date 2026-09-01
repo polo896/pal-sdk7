@@ -45,22 +45,22 @@ public:
 	struct FDataTableRowHandle                    RequireTypeMSGID;                                  // 0x0330(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void AnmEvent_ForceSimple();
-	void AnmEvent_NoRecipe();
-	void AnmEvent_ToDetail();
-	void AnmEvent_ToSimpleDetail();
-	void Construct();
-	void ExecuteUbergraph_WBP_PalCraftInfo(int32 EntryPoint);
-	bool IsCharacterAssignedFixedToTargetWork(class UPalCharacterParameterComponent* TargetCharacter, const struct FGuid& WorkId);
-	void OnInitialized();
-	void Set_Invalid_Recipe_Detail();
-	void SetIcon(class FName ItemId);
-	void SetInfinityProductMode();
-	void SetProductItemID(class FName ItemId);
-	void SetProductNum(int32 nowProductNum, int32 maxProductNum);
-	void SetWorkerPalSlots(TArray<class UPalIndividualCharacterSlot*>& Slots, const struct FGuid& WorkId);
-	void SetWorkProgressRate(double Rate);
 	void UpdateRequireInfo(class UPalWorkBase* Work, TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData>& DisplayData);
+	void SetWorkProgressRate(double Rate);
+	void SetWorkerPalSlots(TArray<class UPalIndividualCharacterSlot*>& Slots, const struct FGuid& WorkId);
+	void SetProductNum(int32 nowProductNum, int32 maxProductNum);
+	void SetProductItemID(class FName ItemId);
+	void SetInfinityProductMode();
+	void SetIcon(class FName ItemId);
+	void Set_Invalid_Recipe_Detail();
+	void OnInitialized();
+	bool IsCharacterAssignedFixedToTargetWork(class UPalCharacterParameterComponent* TargetCharacter, const struct FGuid& WorkId);
+	void ExecuteUbergraph_WBP_PalCraftInfo(int32 EntryPoint);
+	void Construct();
+	void AnmEvent_ToSimpleDetail();
+	void AnmEvent_ToDetail();
+	void AnmEvent_NoRecipe();
+	void AnmEvent_ForceSimple();
 
 public:
 	static class UClass* StaticClass()

@@ -17,181 +17,183 @@
 namespace SDK
 {
 
-// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.AddItemInfo
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    isHideWhenZero                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             ItemId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int64                                   itemNum                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int64                                   gaugeMaxNumBorder                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_Task_Simple_C::AddItemInfo(bool isHideWhenZero, class FName ItemId, int64 itemNum, int64 gaugeMaxNumBorder)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "AddItemInfo");
-
-	Params::WBP_IngameMenu_Task_Simple_C_AddItemInfo Parms{};
-
-	Parms.isHideWhenZero = isHideWhenZero;
-	Parms.ItemId = ItemId;
-	Parms.itemNum = itemNum;
-	Parms.gaugeMaxNumBorder = gaugeMaxNumBorder;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.AddTaskDetailText
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
-// int32                                   nowNum                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   requireNum                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   TaskIndex                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_Task_Simple_C::AddTaskDetailText(const class FText& Text, int32 nowNum, int32 requireNum, int32 TaskIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "AddTaskDetailText");
-
-	Params::WBP_IngameMenu_Task_Simple_C_AddTaskDetailText Parms{};
-
-	Parms.Text = std::move(Text);
-	Parms.nowNum = nowNum;
-	Parms.requireNum = requireNum;
-	Parms.TaskIndex = TaskIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.ExecuteUbergraph_WBP_IngameMenu_Task_Simple
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_Task_Simple_C::ExecuteUbergraph_WBP_IngameMenu_Task_Simple(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "ExecuteUbergraph_WBP_IngameMenu_Task_Simple");
-
-	Params::WBP_IngameMenu_Task_Simple_C_ExecuteUbergraph_WBP_IngameMenu_Task_Simple Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_IngameMenu_Task_Simple_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.OnUISettingaChanged
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalOptionUISettings&      PrevSettings                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
-// const struct FPalOptionUISettings&      NewSettings                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
-
-void UWBP_IngameMenu_Task_Simple_C::OnUISettingaChanged(const struct FPalOptionUISettings& PrevSettings, const struct FPalOptionUISettings& NewSettings)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "OnUISettingaChanged");
-
-	Params::WBP_IngameMenu_Task_Simple_C_OnUISettingaChanged Parms{};
-
-	Parms.PrevSettings = std::move(PrevSettings);
-	Parms.NewSettings = std::move(NewSettings);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.RemoveAllItemDetail
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameMenu_Task_Simple_C::RemoveAllItemDetail()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "RemoveAllItemDetail");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.RemoveTaskDetailText
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameMenu_Task_Simple_C::RemoveTaskDetailText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "RemoveTaskDetailText");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.Set Camp Name
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      BaseCampName                                           (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_IngameMenu_Task_Simple_C::Set_Camp_Name(const class FText& BaseCampName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "Set Camp Name");
-
-	Params::WBP_IngameMenu_Task_Simple_C_Set_Camp_Name Parms{};
-
-	Parms.BaseCampName = std::move(BaseCampName);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.Set Camp Pal and Bed Num
+// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.SetWorkHardType
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   nowPalNum                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   maxPalNum                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   BedNum                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalBaseCampPassiveEffectWorkHardType   WorkHardType                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_Task_Simple_C::Set_Camp_Pal_and_Bed_Num(int32 nowPalNum, int32 maxPalNum, int32 BedNum)
+void UWBP_IngameMenu_Task_Simple_C::SetWorkHardType(EPalBaseCampPassiveEffectWorkHardType WorkHardType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "Set Camp Pal and Bed Num");
+		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "SetWorkHardType");
 
-	Params::WBP_IngameMenu_Task_Simple_C_Set_Camp_Pal_and_Bed_Num Parms{};
+	Params::WBP_IngameMenu_Task_Simple_C_SetWorkHardType Parms{};
 
-	Parms.nowPalNum = nowPalNum;
-	Parms.maxPalNum = maxPalNum;
-	Parms.BedNum = BedNum;
+	Parms.WorkHardType = WorkHardType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.SetWorkerBattleType
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalBaseCampWorkerDirectionBattleType   BattleType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_Task_Simple_C::SetWorkerBattleType(EPalBaseCampWorkerDirectionBattleType BattleType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "SetWorkerBattleType");
+
+	Params::WBP_IngameMenu_Task_Simple_C_SetWorkerBattleType Parms{};
+
+	Parms.BattleType = BattleType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.SetVisibilityTaskDetail
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESlateVisibility                        NewVisibility                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_Task_Simple_C::SetVisibilityTaskDetail(ESlateVisibility NewVisibility)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "SetVisibilityTaskDetail");
+
+	Params::WBP_IngameMenu_Task_Simple_C_SetVisibilityTaskDetail Parms{};
+
+	Parms.NewVisibility = NewVisibility;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.SetRemainTimer
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  remainTime                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_Task_Simple_C::SetRemainTimer(double remainTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "SetRemainTimer");
+
+	Params::WBP_IngameMenu_Task_Simple_C_SetRemainTimer Parms{};
+
+	Parms.remainTime = remainTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.SetRemainDIsplayPalNum
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Num                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_Task_Simple_C::SetRemainDIsplayPalNum(int32 Num)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "SetRemainDIsplayPalNum");
+
+	Params::WBP_IngameMenu_Task_Simple_C_SetRemainDIsplayPalNum Parms{};
+
+	Parms.Num = Num;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.SetEnableWorkHardInfo
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_Task_Simple_C::SetEnableWorkHardInfo(bool IsEnable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "SetEnableWorkHardInfo");
+
+	Params::WBP_IngameMenu_Task_Simple_C_SetEnableWorkHardInfo Parms{};
+
+	Parms.IsEnable = IsEnable;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.SetEnableWorkerBattleTypeInfo
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_Task_Simple_C::SetEnableWorkerBattleTypeInfo(bool IsEnable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "SetEnableWorkerBattleTypeInfo");
+
+	Params::WBP_IngameMenu_Task_Simple_C_SetEnableWorkerBattleTypeInfo Parms{};
+
+	Parms.IsEnable = IsEnable;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.SetActiveSimpleInfoMode
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bActiveSimpleInfo                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_Task_Simple_C::SetActiveSimpleInfoMode(bool bActiveSimpleInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "SetActiveSimpleInfoMode");
+
+	Params::WBP_IngameMenu_Task_Simple_C_SetActiveSimpleInfoMode Parms{};
+
+	Parms.bActiveSimpleInfo = bActiveSimpleInfo;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.Set Task List
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FPalBaseCampTaskCheckedData&taskCheckedData                                        (BlueprintVisible, BlueprintReadOnly, Parm)
+// const struct FPalBaseCampTaskDataSet&   TaskData                                               (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_IngameMenu_Task_Simple_C::Set_Task_List(const struct FPalBaseCampTaskCheckedData& taskCheckedData, const struct FPalBaseCampTaskDataSet& TaskData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "Set Task List");
+
+	Params::WBP_IngameMenu_Task_Simple_C_Set_Task_List Parms{};
+
+	Parms.taskCheckedData = std::move(taskCheckedData);
+	Parms.TaskData = std::move(TaskData);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -223,183 +225,181 @@ void UWBP_IngameMenu_Task_Simple_C::Set_Pal_Slots(TArray<class UPalIndividualCha
 }
 
 
-// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.Set Task List
+// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.Set Camp Pal and Bed Num
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FPalBaseCampTaskCheckedData&taskCheckedData                                        (BlueprintVisible, BlueprintReadOnly, Parm)
-// const struct FPalBaseCampTaskDataSet&   TaskData                                               (BlueprintVisible, BlueprintReadOnly, Parm)
+// int32                                   nowPalNum                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   maxPalNum                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   BedNum                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_Task_Simple_C::Set_Task_List(const struct FPalBaseCampTaskCheckedData& taskCheckedData, const struct FPalBaseCampTaskDataSet& TaskData)
+void UWBP_IngameMenu_Task_Simple_C::Set_Camp_Pal_and_Bed_Num(int32 nowPalNum, int32 maxPalNum, int32 BedNum)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "Set Task List");
+		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "Set Camp Pal and Bed Num");
 
-	Params::WBP_IngameMenu_Task_Simple_C_Set_Task_List Parms{};
+	Params::WBP_IngameMenu_Task_Simple_C_Set_Camp_Pal_and_Bed_Num Parms{};
 
-	Parms.taskCheckedData = std::move(taskCheckedData);
-	Parms.TaskData = std::move(TaskData);
+	Parms.nowPalNum = nowPalNum;
+	Parms.maxPalNum = maxPalNum;
+	Parms.BedNum = BedNum;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.SetActiveSimpleInfoMode
+// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.Set Camp Name
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bActiveSimpleInfo                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      BaseCampName                                           (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_IngameMenu_Task_Simple_C::SetActiveSimpleInfoMode(bool bActiveSimpleInfo)
+void UWBP_IngameMenu_Task_Simple_C::Set_Camp_Name(const class FText& BaseCampName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "SetActiveSimpleInfoMode");
+		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "Set Camp Name");
 
-	Params::WBP_IngameMenu_Task_Simple_C_SetActiveSimpleInfoMode Parms{};
+	Params::WBP_IngameMenu_Task_Simple_C_Set_Camp_Name Parms{};
 
-	Parms.bActiveSimpleInfo = bActiveSimpleInfo;
+	Parms.BaseCampName = std::move(BaseCampName);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.SetEnableWorkerBattleTypeInfo
+// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.RemoveTaskDetailText
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngameMenu_Task_Simple_C::RemoveTaskDetailText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "RemoveTaskDetailText");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.RemoveAllItemDetail
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngameMenu_Task_Simple_C::RemoveAllItemDetail()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "RemoveAllItemDetail");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.OnUISettingaChanged
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FPalOptionUISettings&      PrevSettings                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// const struct FPalOptionUISettings&      NewSettings                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+
+void UWBP_IngameMenu_Task_Simple_C::OnUISettingaChanged(const struct FPalOptionUISettings& PrevSettings, const struct FPalOptionUISettings& NewSettings)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "OnUISettingaChanged");
+
+	Params::WBP_IngameMenu_Task_Simple_C_OnUISettingaChanged Parms{};
+
+	Parms.PrevSettings = std::move(PrevSettings);
+	Parms.NewSettings = std::move(NewSettings);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_IngameMenu_Task_Simple_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.ExecuteUbergraph_WBP_IngameMenu_Task_Simple
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_Task_Simple_C::ExecuteUbergraph_WBP_IngameMenu_Task_Simple(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "ExecuteUbergraph_WBP_IngameMenu_Task_Simple");
+
+	Params::WBP_IngameMenu_Task_Simple_C_ExecuteUbergraph_WBP_IngameMenu_Task_Simple Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.AddTaskDetailText
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
+// int32                                   nowNum                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   requireNum                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   TaskIndex                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_Task_Simple_C::AddTaskDetailText(const class FText& Text, int32 nowNum, int32 requireNum, int32 TaskIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "AddTaskDetailText");
+
+	Params::WBP_IngameMenu_Task_Simple_C_AddTaskDetailText Parms{};
+
+	Parms.Text = std::move(Text);
+	Parms.nowNum = nowNum;
+	Parms.requireNum = requireNum;
+	Parms.TaskIndex = TaskIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.AddItemInfo
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    isHideWhenZero                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ItemId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int64                                   itemNum                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int64                                   gaugeMaxNumBorder                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_Task_Simple_C::SetEnableWorkerBattleTypeInfo(bool IsEnable)
+void UWBP_IngameMenu_Task_Simple_C::AddItemInfo(bool isHideWhenZero, class FName ItemId, int64 itemNum, int64 gaugeMaxNumBorder)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "SetEnableWorkerBattleTypeInfo");
+		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "AddItemInfo");
 
-	Params::WBP_IngameMenu_Task_Simple_C_SetEnableWorkerBattleTypeInfo Parms{};
+	Params::WBP_IngameMenu_Task_Simple_C_AddItemInfo Parms{};
 
-	Parms.IsEnable = IsEnable;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.SetEnableWorkHardInfo
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_Task_Simple_C::SetEnableWorkHardInfo(bool IsEnable)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "SetEnableWorkHardInfo");
-
-	Params::WBP_IngameMenu_Task_Simple_C_SetEnableWorkHardInfo Parms{};
-
-	Parms.IsEnable = IsEnable;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.SetRemainDIsplayPalNum
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Num                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_Task_Simple_C::SetRemainDIsplayPalNum(int32 Num)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "SetRemainDIsplayPalNum");
-
-	Params::WBP_IngameMenu_Task_Simple_C_SetRemainDIsplayPalNum Parms{};
-
-	Parms.Num = Num;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.SetRemainTimer
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  remainTime                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_Task_Simple_C::SetRemainTimer(double remainTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "SetRemainTimer");
-
-	Params::WBP_IngameMenu_Task_Simple_C_SetRemainTimer Parms{};
-
-	Parms.remainTime = remainTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.SetVisibilityTaskDetail
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESlateVisibility                        NewVisibility                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_Task_Simple_C::SetVisibilityTaskDetail(ESlateVisibility NewVisibility)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "SetVisibilityTaskDetail");
-
-	Params::WBP_IngameMenu_Task_Simple_C_SetVisibilityTaskDetail Parms{};
-
-	Parms.NewVisibility = NewVisibility;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.SetWorkerBattleType
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalBaseCampWorkerDirectionBattleType   BattleType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_Task_Simple_C::SetWorkerBattleType(EPalBaseCampWorkerDirectionBattleType BattleType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "SetWorkerBattleType");
-
-	Params::WBP_IngameMenu_Task_Simple_C_SetWorkerBattleType Parms{};
-
-	Parms.BattleType = BattleType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Task_Simple.WBP_IngameMenu_Task_Simple_C.SetWorkHardType
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalBaseCampPassiveEffectWorkHardType   WorkHardType                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_Task_Simple_C::SetWorkHardType(EPalBaseCampPassiveEffectWorkHardType WorkHardType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Task_Simple_C", "SetWorkHardType");
-
-	Params::WBP_IngameMenu_Task_Simple_C_SetWorkHardType Parms{};
-
-	Parms.WorkHardType = WorkHardType;
+	Parms.isHideWhenZero = isHideWhenZero;
+	Parms.ItemId = ItemId;
+	Parms.itemNum = itemNum;
+	Parms.gaugeMaxNumBorder = gaugeMaxNumBorder;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

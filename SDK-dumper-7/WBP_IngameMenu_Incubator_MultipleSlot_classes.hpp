@@ -38,16 +38,16 @@ public:
 	TMulticastInlineDelegate<void(class UPalItemSlot* TargetSlot)> OnLeftClickEggSlot;               // 0x02D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__WBP_IngameMenu_Incubator_MultipleSlot_WBP_PalInGameMenuItemSlotButton_K2Node_ComponentBoundEvent_0_OnRightClickedButton__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
-	void BndEvt__WBP_IngameMenu_Incubator_MultipleSlot_WBP_PalInGameMenuItemSlotButton_K2Node_ComponentBoundEvent_1_OnClickedButton__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
-	void Construct();
-	void ExecuteUbergraph_WBP_IngameMenu_Incubator_MultipleSlot(int32 EntryPoint);
-	void On_Update_Work_Amount(class UPalWorkProgress* WorkProgress);
-	void OnSlotContentUpdate(class UPalItemSlot* Slot_0);
-	void SetEmpty();
-	void SetSlot(class UPalItemSlot* TargetSlot_0);
-	void SetupEgg(class UPalWorkProgress* WorkProgress);
 	void Unbind();
+	void SetupEgg(class UPalWorkProgress* WorkProgress);
+	void SetSlot(class UPalItemSlot* TargetSlot_0);
+	void SetEmpty();
+	void OnSlotContentUpdate(class UPalItemSlot* Slot_0);
+	void On_Update_Work_Amount(class UPalWorkProgress* WorkProgress);
+	void ExecuteUbergraph_WBP_IngameMenu_Incubator_MultipleSlot(int32 EntryPoint);
+	void Construct();
+	void BndEvt__WBP_IngameMenu_Incubator_MultipleSlot_WBP_PalInGameMenuItemSlotButton_K2Node_ComponentBoundEvent_1_OnClickedButton__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* Widget, EPalItemSlotPressType PressType);
+	void BndEvt__WBP_IngameMenu_Incubator_MultipleSlot_WBP_PalInGameMenuItemSlotButton_K2Node_ComponentBoundEvent_0_OnRightClickedButton__DelegateSignature(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
 
 public:
 	static class UClass* StaticClass()

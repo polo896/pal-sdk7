@@ -27,8 +27,8 @@ public:
 	class UOverlay*                               Overlay_Direction;                                 // 0x0550(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void SetupForceVisibility(bool* bChangedVisibility);
 	void Setup_Internal(class UPalLocationPoint* LocationPoint);
+	void SetupForceVisibility(bool* bChangedVisibility);
 
 public:
 	static class UClass* StaticClass()

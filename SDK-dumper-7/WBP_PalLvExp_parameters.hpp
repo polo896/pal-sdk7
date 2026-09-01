@@ -17,41 +17,186 @@
 namespace SDK::Params
 {
 
-// Function WBP_PalLvExp.WBP_PalLvExp_C.AnmEvent_NewMove
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_PalLvExp_C_AnmEvent_NewMove final
-{
-public:
-	EPalWazaID                                    newWazaID;                                         // 0x0000(0x0002)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalLvExp_C_AnmEvent_NewMove;
-
-// Function WBP_PalLvExp.WBP_PalLvExp_C.BindFromHandle
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_PalLvExp_C_BindFromHandle final
-{
-public:
-	class UPalIndividualCharacterHandle*          targetHandle;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalIndividualCharacterParameter*       CallFunc_TryGetIndividualParameter_ReturnValue;    // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_GetCharacterID_ReturnValue;               // 0x001C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetLevel_ReturnValue;                     // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalLvExp_C_BindFromHandle;
-
-// Function WBP_PalLvExp.WBP_PalLvExp_C.BindFromSlot
+// Function WBP_PalLvExp.WBP_PalLvExp_C.SetupNewMoveAnimeTimer
 // 0x0020 (0x0020 - 0x0000)
-struct WBP_PalLvExp_C_BindFromSlot final
+struct WBP_PalLvExp_C_SetupNewMoveAnimeTimer final
 {
 public:
-	class UPalIndividualCharacterSlot*            TargetSlot;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UPalIndividualCharacterSlot* Slot, class UPalIndividualCharacterHandle* LastHandle)> K2Node_CreateDelegate_OutputDelegate; // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalLvExp_C_BindFromSlot;
+DUMPER7_ASSERTS_WBP_PalLvExp_C_SetupNewMoveAnimeTimer;
+
+// Function WBP_PalLvExp.WBP_PalLvExp_C.SetupLevelUpAnimeTimer
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_PalLvExp_C_SetupLevelUpAnimeTimer final
+{
+public:
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalLvExp_C_SetupLevelUpAnimeTimer;
+
+// Function WBP_PalLvExp.WBP_PalLvExp_C.SetupFriendshipRankupAnimeTimer
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_PalLvExp_C_SetupFriendshipRankupAnimeTimer final
+{
+public:
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalLvExp_C_SetupFriendshipRankupAnimeTimer;
+
+// Function WBP_PalLvExp.WBP_PalLvExp_C.SetupFavoriteAnimeTimer
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_PalLvExp_C_SetupFavoriteAnimeTimer final
+{
+public:
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalLvExp_C_SetupFavoriteAnimeTimer;
+
+// Function WBP_PalLvExp.WBP_PalLvExp_C.SetupCloseAnimeTimer
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_PalLvExp_C_SetupCloseAnimeTimer final
+{
+public:
+	double                                        CloseDelay;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalLvExp_C_SetupCloseAnimeTimer;
+
+// Function WBP_PalLvExp.WBP_PalLvExp_C.Set Level
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_PalLvExp_C_Set_Level final
+{
+public:
+	int32                                         Level;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalIndividualCharacterHandle*          CallFunc_GetBindedHandle_targetHandle;             // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterParameter*       CallFunc_TryGetIndividualParameter_ReturnValue;    // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetLevel_ReturnValue;                     // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalLvExp_C_Set_Level;
+
+// Function WBP_PalLvExp.WBP_PalLvExp_C.Set Exp Percent
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PalLvExp_C_Set_Exp_Percent final
+{
+public:
+	double                                        Percent;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetPercent_InPercent_ImplicitCast;        // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalLvExp_C_Set_Exp_Percent;
+
+// Function WBP_PalLvExp.WBP_PalLvExp_C.Set Add Exp
+// 0x0080 (0x0080 - 0x0000)
+struct WBP_PalLvExp_C_Set_Add_Exp final
+{
+public:
+	int64                                         addExp;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0008(0x0050)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0058(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0068(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_PalLvExp_C_Set_Add_Exp;
+
+// Function WBP_PalLvExp.WBP_PalLvExp_C.OnUpdateSlot
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PalLvExp_C_OnUpdateSlot final
+{
+public:
+	class UPalIndividualCharacterSlot*            Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterHandle*          LastHandle;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalLvExp_C_OnUpdateSlot;
+
+// Function WBP_PalLvExp.WBP_PalLvExp_C.OnTriggerNewMoveAnime
+// 0x0014 (0x0014 - 0x0000)
+struct WBP_PalLvExp_C_OnTriggerNewMoveAnime final
+{
+public:
+	EPalWazaID                                    CallFunc_Array_Get_Item;                           // 0x0000(0x0002)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalLvExp_C_OnTriggerNewMoveAnime;
+
+// Function WBP_PalLvExp.WBP_PalLvExp_C.OnTriggerLevelUpAnime
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalLvExp_C_OnTriggerLevelUpAnime final
+{
+public:
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalLvExp_C_OnTriggerLevelUpAnime;
+
+// Function WBP_PalLvExp.WBP_PalLvExp_C.OnTriggerFriendshipRankupAnime
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_PalLvExp_C_OnTriggerFriendshipRankupAnime final
+{
+public:
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0000(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_PalLvExp_C_OnTriggerFriendshipRankupAnime;
+
+// Function WBP_PalLvExp.WBP_PalLvExp_C.On Update Level Binded
+// 0x0080 (0x0080 - 0x0000)
+struct WBP_PalLvExp_C_On_Update_Level_Binded final
+{
+public:
+	int32                                         NewLevel;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalWazaDatabase*                       CallFunc_GetWazaDatabase_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<EPalWazaID, int32>                       CallFunc_GetMasterrableWaza_BetweenLevel_OutMap;   // 0x0018(0x0050)()
+	TArray<EPalWazaID>                            CallFunc_Map_Keys_Keys;                            // 0x0068(0x0010)(ReferenceParm)
+	bool                                          CallFunc_IsExistMasterrableWaza_BetweenLevel_ReturnValue; // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalLvExp_C_On_Update_Level_Binded;
+
+// Function WBP_PalLvExp.WBP_PalLvExp_C.On Update Exp Binded
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_PalLvExp_C_On_Update_Exp_Binded final
+{
+public:
+	int64                                         addExp;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         oldExp;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        nowExpRate;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_Int64Int64_ReturnValue;           // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	int64                                         CallFunc_Add_Int64Int64_ReturnValue;               // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalLvExp_C_On_Update_Exp_Binded;
+
+// Function WBP_PalLvExp.WBP_PalLvExp_C.On Changed Friendship Rank Binded
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_PalLvExp_C_On_Changed_Friendship_Rank_Binded final
+{
+public:
+	int32                                         NewRank;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         OldRank;                                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          FavoriteChanged;                                   // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalLvExp_C_On_Changed_Friendship_Rank_Binded;
 
 // Function WBP_PalLvExp.WBP_PalLvExp_C.ExecuteUbergraph_WBP_PalLvExp
 // 0x0178 (0x0178 - 0x0000)
@@ -89,186 +234,41 @@ public:
 };
 DUMPER7_ASSERTS_WBP_PalLvExp_C_ExecuteUbergraph_WBP_PalLvExp;
 
-// Function WBP_PalLvExp.WBP_PalLvExp_C.On Changed Friendship Rank Binded
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_PalLvExp_C_On_Changed_Friendship_Rank_Binded final
-{
-public:
-	int32                                         NewRank;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         OldRank;                                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          FavoriteChanged;                                   // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalLvExp_C_On_Changed_Friendship_Rank_Binded;
-
-// Function WBP_PalLvExp.WBP_PalLvExp_C.On Update Exp Binded
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_PalLvExp_C_On_Update_Exp_Binded final
-{
-public:
-	int64                                         addExp;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int64                                         oldExp;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        nowExpRate;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_Int64Int64_ReturnValue;           // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	int64                                         CallFunc_Add_Int64Int64_ReturnValue;               // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalLvExp_C_On_Update_Exp_Binded;
-
-// Function WBP_PalLvExp.WBP_PalLvExp_C.On Update Level Binded
-// 0x0080 (0x0080 - 0x0000)
-struct WBP_PalLvExp_C_On_Update_Level_Binded final
-{
-public:
-	int32                                         NewLevel;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalWazaDatabase*                       CallFunc_GetWazaDatabase_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<EPalWazaID, int32>                       CallFunc_GetMasterrableWaza_BetweenLevel_OutMap;   // 0x0018(0x0050)()
-	TArray<EPalWazaID>                            CallFunc_Map_Keys_Keys;                            // 0x0068(0x0010)(ReferenceParm)
-	bool                                          CallFunc_IsExistMasterrableWaza_BetweenLevel_ReturnValue; // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalLvExp_C_On_Update_Level_Binded;
-
-// Function WBP_PalLvExp.WBP_PalLvExp_C.OnTriggerFriendshipRankupAnime
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_PalLvExp_C_OnTriggerFriendshipRankupAnime final
-{
-public:
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0000(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_PalLvExp_C_OnTriggerFriendshipRankupAnime;
-
-// Function WBP_PalLvExp.WBP_PalLvExp_C.OnTriggerLevelUpAnime
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalLvExp_C_OnTriggerLevelUpAnime final
-{
-public:
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalLvExp_C_OnTriggerLevelUpAnime;
-
-// Function WBP_PalLvExp.WBP_PalLvExp_C.OnTriggerNewMoveAnime
-// 0x0014 (0x0014 - 0x0000)
-struct WBP_PalLvExp_C_OnTriggerNewMoveAnime final
-{
-public:
-	EPalWazaID                                    CallFunc_Array_Get_Item;                           // 0x0000(0x0002)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalLvExp_C_OnTriggerNewMoveAnime;
-
-// Function WBP_PalLvExp.WBP_PalLvExp_C.OnUpdateSlot
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PalLvExp_C_OnUpdateSlot final
-{
-public:
-	class UPalIndividualCharacterSlot*            Slot_0;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalIndividualCharacterHandle*          LastHandle;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalLvExp_C_OnUpdateSlot;
-
-// Function WBP_PalLvExp.WBP_PalLvExp_C.Set Add Exp
-// 0x0080 (0x0080 - 0x0000)
-struct WBP_PalLvExp_C_Set_Add_Exp final
-{
-public:
-	int64                                         addExp;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0008(0x0050)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0058(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0068(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_PalLvExp_C_Set_Add_Exp;
-
-// Function WBP_PalLvExp.WBP_PalLvExp_C.Set Exp Percent
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PalLvExp_C_Set_Exp_Percent final
-{
-public:
-	double                                        Percent;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetPercent_InPercent_ImplicitCast;        // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalLvExp_C_Set_Exp_Percent;
-
-// Function WBP_PalLvExp.WBP_PalLvExp_C.Set Level
+// Function WBP_PalLvExp.WBP_PalLvExp_C.BindFromSlot
 // 0x0020 (0x0020 - 0x0000)
-struct WBP_PalLvExp_C_Set_Level final
+struct WBP_PalLvExp_C_BindFromSlot final
 {
 public:
-	int32                                         Level;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalIndividualCharacterHandle*          CallFunc_GetBindedHandle_targetHandle;             // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalIndividualCharacterParameter*       CallFunc_TryGetIndividualParameter_ReturnValue;    // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetLevel_ReturnValue;                     // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterSlot*            TargetSlot;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UPalIndividualCharacterSlot* Slot, class UPalIndividualCharacterHandle* LastHandle)> K2Node_CreateDelegate_OutputDelegate; // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalLvExp_C_Set_Level;
+DUMPER7_ASSERTS_WBP_PalLvExp_C_BindFromSlot;
 
-// Function WBP_PalLvExp.WBP_PalLvExp_C.SetupCloseAnimeTimer
+// Function WBP_PalLvExp.WBP_PalLvExp_C.BindFromHandle
 // 0x0028 (0x0028 - 0x0000)
-struct WBP_PalLvExp_C_SetupCloseAnimeTimer final
+struct WBP_PalLvExp_C_BindFromHandle final
 {
 public:
-	double                                        CloseDelay;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterHandle*          targetHandle;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalIndividualCharacterParameter*       CallFunc_TryGetIndividualParameter_ReturnValue;    // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_GetCharacterID_ReturnValue;               // 0x001C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetLevel_ReturnValue;                     // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalLvExp_C_SetupCloseAnimeTimer;
+DUMPER7_ASSERTS_WBP_PalLvExp_C_BindFromHandle;
 
-// Function WBP_PalLvExp.WBP_PalLvExp_C.SetupFavoriteAnimeTimer
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_PalLvExp_C_SetupFavoriteAnimeTimer final
+// Function WBP_PalLvExp.WBP_PalLvExp_C.AnmEvent_NewMove
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_PalLvExp_C_AnmEvent_NewMove final
 {
 public:
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalWazaID                                    newWazaID;                                         // 0x0000(0x0002)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalLvExp_C_SetupFavoriteAnimeTimer;
-
-// Function WBP_PalLvExp.WBP_PalLvExp_C.SetupFriendshipRankupAnimeTimer
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_PalLvExp_C_SetupFriendshipRankupAnimeTimer final
-{
-public:
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalLvExp_C_SetupFriendshipRankupAnimeTimer;
-
-// Function WBP_PalLvExp.WBP_PalLvExp_C.SetupLevelUpAnimeTimer
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_PalLvExp_C_SetupLevelUpAnimeTimer final
-{
-public:
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalLvExp_C_SetupLevelUpAnimeTimer;
-
-// Function WBP_PalLvExp.WBP_PalLvExp_C.SetupNewMoveAnimeTimer
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_PalLvExp_C_SetupNewMoveAnimeTimer final
-{
-public:
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalLvExp_C_SetupNewMoveAnimeTimer;
+DUMPER7_ASSERTS_WBP_PalLvExp_C_AnmEvent_NewMove;
 
 }
 

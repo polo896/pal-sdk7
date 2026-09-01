@@ -28,22 +28,22 @@ class UWBP_IngameConstruction_Paint_C : public UUserWidget
     class UWBP_IngameConstruction_Paint_Color_C* WBP_IngameConstruction_Paint_Color_3; // 0x0328 (size: 0x8)
     class UWBP_IngameConstruction_Paint_Color_C* WBP_IngameConstruction_Paint_Color_4; // 0x0330 (size: 0x8)
     class UWBP_PlayerInputKeyGuideIcon_C* WBP_PlayerInputKeyGuideIcon_0;              // 0x0338 (size: 0x8)
-    TArray<class UWBP_IngameConstruction_Num_C*> ItemNums;                            // 0x0340 (size: 0x10)
+    TArray<UWBP_IngameConstruction_Num_C*> ItemNums;                                  // 0x0340 (size: 0x10)
     FDataTableRowHandle keyGuideMsgHandle_PaintColor;                                 // 0x0350 (size: 0x10)
     FDataTableRowHandle keyGuideMsgHandle_RemoveColor;                                // 0x0360 (size: 0x10)
     FDataTableRowHandle keyGuideMsgHandle_Cancel;                                     // 0x0370 (size: 0x10)
     FDataTableRowHandle keyGuideMsgHandle_Close;                                      // 0x0380 (size: 0x10)
     FDataTableRowHandle keyGuideMsgHandle_PickColor;                                  // 0x0390 (size: 0x10)
     FDataTableRowHandle keyGuideMsgHandle_EditColor;                                  // 0x03A0 (size: 0x10)
-    TArray<class UWBP_PalCommonItemIcon_C*> ItemIconArray;                            // 0x03B0 (size: 0x10)
+    TArray<UWBP_PalCommonItemIcon_C*> ItemIconArray;                                  // 0x03B0 (size: 0x10)
     FDataTableRowHandle keyGuideMsgHandle_RotateRight;                                // 0x03C0 (size: 0x10)
     FDataTableRowHandle keyGuideMsgHandle_RotateLeft;                                 // 0x03D0 (size: 0x10)
     class UPalUIBuildingModel* CachedModel;                                           // 0x03E0 (size: 0x8)
 
     void FindPageDotWidget(int32 Index, class UWBP_Common_PagingDot_C*& Output);
-    void GetPageDotWidgets(TArray<class UWBP_Common_PagingDot_C*>& Return Value);
+    void GetPageDotWidgets(TArray<UWBP_Common_PagingDot_C*>& Return Value);
     void FindSlotWidget(int32 SlotIndex, class UWBP_IngameConstruction_Paint_Color_C*& Output);
-    void GetSlotWidgets(TArray<class UWBP_IngameConstruction_Paint_Color_C*>& Return Value);
+    void GetSlotWidgets(TArray<UWBP_IngameConstruction_Paint_Color_C*>& Return Value);
     void NotifyUpdatePaletteColor(int32 SlotIndex, FFPalUIPaintPaletteInfo PaletteInfo);
     void ReflectAllSlotPaletteInfo(TArray<FFPalUIPaintPaletteInfo>& PaletteInfos);
     void NotifyUpdateSelectedSlotIndex(int32 NewSlotIndex);

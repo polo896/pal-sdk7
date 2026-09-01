@@ -44,21 +44,21 @@ public:
 	TMulticastInlineDelegate<void()>              OnContentUnhovered;                                // 0x0300(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void AnmEvent_Focus();
-	void AnmEvent_Normal();
-	void BndEvt__WBP_Arena_RuleListContent_0_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Arena_RuleListContent_0_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Arena_RuleListContent_0_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void Construct();
-	class UWidget* Custom_Navigation_ToLeft(EUINavigation Navigation_0);
-	class UWidget* Custom_Navigation_ToRight(EUINavigation Navigation_0);
-	void ExecuteUbergraph_WBP_Arena_RuleListContent_0(int32 EntryPoint);
-	void SetChangeable(bool IsChangeable);
-	void SetChangedFlag();
-	void SetupButton(const TDelegate<void()>& OnClickEvent, const class FText& ButtonText);
-	void SetupSlider(double Value, double Min, double Max, const TDelegate<void(double Value)>& Event, double ChangeValue);
-	void SetupSlider_Int(int32 Value, int32 Min, int32 Max, const TDelegate<void(double Value)>& Event, double ChangeValue);
 	void SetupSwitch(bool IsTure, const TDelegate<void(bool IsOn)>& OnSwitchEvent);
+	void SetupSlider_Int(int32 Value, int32 Min, int32 Max, const TDelegate<void(double Value)>& Event, double ChangeValue);
+	void SetupSlider(double Value, double Min, double Max, const TDelegate<void(double Value)>& Event, double ChangeValue);
+	void SetupButton(const TDelegate<void()>& OnClickEvent, const class FText& ButtonText);
+	void SetChangedFlag();
+	void SetChangeable(bool IsChangeable);
+	void ExecuteUbergraph_WBP_Arena_RuleListContent_0(int32 EntryPoint);
+	class UWidget* Custom_Navigation_ToRight(EUINavigation Navigation_0);
+	class UWidget* Custom_Navigation_ToLeft(EUINavigation Navigation_0);
+	void Construct();
+	void BndEvt__WBP_Arena_RuleListContent_0_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Arena_RuleListContent_0_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Arena_RuleListContent_0_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void AnmEvent_Normal();
+	void AnmEvent_Focus();
 
 public:
 	static class UClass* StaticClass()

@@ -21,7 +21,7 @@ class UWBP_Arena_Rule_ListGroup_C : public UUserWidget
     void OnRuleUpdated(FPalArenaRule NewRule);
     FWBP_Arena_Rule_ListGroup_COnRestrictPalClicked OnRestrictPalClicked;             // 0x0328 (size: 0x10)
     void OnRestrictPalClicked();
-    TArray<class UWBP_Arena_RuleListContent_0_C*> SettingContents;                    // 0x0338 (size: 0x10)
+    TArray<UWBP_Arena_RuleListContent_0_C*> SettingContents;                          // 0x0338 (size: 0x10)
     class UCommonButtonBase* LastHoveredConten;                                       // 0x0348 (size: 0x8)
     FWBP_Arena_Rule_ListGroup_CToggleLevelSyncInfo ToggleLevelSyncInfo;               // 0x0350 (size: 0x10)
     void ToggleLevelSyncInfo(bool Show);

@@ -17,6 +17,38 @@
 namespace SDK::Params
 {
 
+// Function WBP_InvadeDeclarationWorldHUD_PalStorage.WBP_InvadeDeclarationWorldHUD_PalStorage_C.Tick
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_InvadeDeclarationWorldHUD_PalStorage_C_Tick final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InvadeDeclarationWorldHUD_PalStorage_C_Tick;
+
+// Function WBP_InvadeDeclarationWorldHUD_PalStorage.WBP_InvadeDeclarationWorldHUD_PalStorage_C.OnInvadeDeclaration
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_InvadeDeclarationWorldHUD_PalStorage_C_OnInvadeDeclaration final
+{
+public:
+	struct FDateTime                              StartRealTime;                                     // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+	class UPalInvaderManager*                     CallFunc_GetInvaderManager_ReturnValue;            // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APalInvaderInfo*                        CallFunc_GetInvaderInfo_ReturnValue;               // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_GetRemainInvadeStartRealTimeSeconds_ReturnValue; // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGuid                                  CallFunc_GetBaseCampId_ReturnValue;                // 0x002C(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_GuidGuid_ReturnValue;          // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Greater_DoubleDouble_A_ImplicitCast;      // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InvadeDeclarationWorldHUD_PalStorage_C_OnInvadeDeclaration;
+
 // Function WBP_InvadeDeclarationWorldHUD_PalStorage.WBP_InvadeDeclarationWorldHUD_PalStorage_C.ExecuteUbergraph_WBP_InvadeDeclarationWorldHUD_PalStorage
 // 0x0138 (0x0138 - 0x0000)
 struct WBP_InvadeDeclarationWorldHUD_PalStorage_C_ExecuteUbergraph_WBP_InvadeDeclarationWorldHUD_PalStorage final
@@ -61,38 +93,6 @@ public:
 	double                                        CallFunc_LessEqual_DoubleDouble_A_ImplicitCast;    // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_InvadeDeclarationWorldHUD_PalStorage_C_ExecuteUbergraph_WBP_InvadeDeclarationWorldHUD_PalStorage;
-
-// Function WBP_InvadeDeclarationWorldHUD_PalStorage.WBP_InvadeDeclarationWorldHUD_PalStorage_C.OnInvadeDeclaration
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_InvadeDeclarationWorldHUD_PalStorage_C_OnInvadeDeclaration final
-{
-public:
-	struct FDateTime                              StartRealTime;                                     // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
-	class UPalInvaderManager*                     CallFunc_GetInvaderManager_ReturnValue;            // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APalInvaderInfo*                        CallFunc_GetInvaderInfo_ReturnValue;               // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_GetRemainInvadeStartRealTimeSeconds_ReturnValue; // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGuid                                  CallFunc_GetBaseCampId_ReturnValue;                // 0x002C(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_GuidGuid_ReturnValue;          // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Greater_DoubleDouble_A_ImplicitCast;      // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InvadeDeclarationWorldHUD_PalStorage_C_OnInvadeDeclaration;
-
-// Function WBP_InvadeDeclarationWorldHUD_PalStorage.WBP_InvadeDeclarationWorldHUD_PalStorage_C.Tick
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_InvadeDeclarationWorldHUD_PalStorage_C_Tick final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InvadeDeclarationWorldHUD_PalStorage_C_Tick;
 
 }
 

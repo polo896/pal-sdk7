@@ -22,7 +22,7 @@ class UWBP_AutoSave_C : public UUserWidget
     class UImage* Image_IconPart_5;                                                   // 0x02F8 (size: 0x8)
     bool IsForceDisplayngTime;                                                        // 0x0300 (size: 0x1)
     FTimerHandle ForceDisplayTimerHandle;                                             // 0x0308 (size: 0x8)
-    TMap<class FName, class bool> SavingFlagMap;                                      // 0x0310 (size: 0x50)
+    TMap<FName, bool> SavingFlagMap;                                                  // 0x0310 (size: 0x50)
     FName WorldSavingKey;                                                             // 0x0360 (size: 0x8)
     FName LocalSavingKey;                                                             // 0x0368 (size: 0x8)
     double ForceDisplayTime;                                                          // 0x0370 (size: 0x8)

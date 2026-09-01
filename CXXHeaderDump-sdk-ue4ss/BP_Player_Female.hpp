@@ -29,7 +29,7 @@ class ABP_Player_Female_C : public ABP_PlayerBase_C
     class UNiagaraSystem* DoubleJumpNiagara;                                          // 0x1260 (size: 0x8)
 
     class USkeletalMeshComponent* GetHeadMesh();
-    void GetVisual_ExceptMainMesh_SyncAnyway(TArray<class USceneComponent*>& OutComponent);
+    void GetVisual_ExceptMainMesh_SyncAnyway(TArray<USceneComponent*>& OutComponent);
     class USkeletalMeshComponent* GetOverrideFaceMesh();
     void OnUpdateSliding();
     void OnSlidingEnd();

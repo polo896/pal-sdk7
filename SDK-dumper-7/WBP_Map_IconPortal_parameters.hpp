@@ -16,20 +16,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_Map_IconPortal.WBP_Map_IconPortal_C.SetupForceVisibility
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_Map_IconPortal_C_SetupForceVisibility final
-{
-public:
-	bool                                          bChangedVisibility;                                // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalLocationBase*                       CallFunc_GetLocationBase_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalLocationPointStaticWarpPoint*       K2Node_DynamicCast_AsPal_Location_Point_Static_Warp_Point; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsUnlocked_ReturnValue;                   // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Map_IconPortal_C_SetupForceVisibility;
-
 // Function WBP_Map_IconPortal.WBP_Map_IconPortal_C.Setup_Internal
 // 0x0130 (0x0130 - 0x0000)
 struct WBP_Map_IconPortal_C_Setup_Internal final
@@ -53,6 +39,20 @@ public:
 	float                                         CallFunc_SetRenderTransformAngle_Angle_ImplicitCast; // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Map_IconPortal_C_Setup_Internal;
+
+// Function WBP_Map_IconPortal.WBP_Map_IconPortal_C.SetupForceVisibility
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_Map_IconPortal_C_SetupForceVisibility final
+{
+public:
+	bool                                          bChangedVisibility;                                // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalLocationBase*                       CallFunc_GetLocationBase_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalLocationPointStaticWarpPoint*       K2Node_DynamicCast_AsPal_Location_Point_Static_Warp_Point; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsUnlocked_ReturnValue;                   // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Map_IconPortal_C_SetupForceVisibility;
 
 }
 

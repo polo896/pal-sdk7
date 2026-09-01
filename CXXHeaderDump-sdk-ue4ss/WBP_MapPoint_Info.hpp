@@ -27,7 +27,7 @@ class UWBP_MapPoint_Info_C : public UUserWidget
     class UVerticalBox* Vertical_KeyBoss;                                             // 0x0320 (size: 0x8)
     class UVerticalBox* Vertical_Quest;                                               // 0x0328 (size: 0x8)
     class UWBP_MapPoint_Info_SubName_C* WBP_MapPoint_Info_SubName_Quest;              // 0x0330 (size: 0x8)
-    TMap<class EPalBossType, class UTexture2D*> BossBannerImages;                     // 0x0338 (size: 0x50)
+    TMap<EPalBossType, UTexture2D*> BossBannerImages;                                 // 0x0338 (size: 0x50)
     FDataTableRowHandle BaseCampMsgId;                                                // 0x0388 (size: 0x10)
     float LocalRemainInvadeTimer;                                                     // 0x0398 (size: 0x4)
 

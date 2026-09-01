@@ -17,85 +17,45 @@
 namespace SDK
 {
 
-// Function WBP_Fishing_SelectBait.WBP_Fishing_SelectBait_C.AnmEvent_In
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Fishing_SelectBait.WBP_Fishing_SelectBait_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Fishing_SelectBait_C::AnmEvent_In()
+void UWBP_Fishing_SelectBait_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_SelectBait_C", "AnmEvent_In");
+		Func = Class->GetFunction("WBP_Fishing_SelectBait_C", "Tick");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Fishing_SelectBait_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Fishing_SelectBait.WBP_Fishing_SelectBait_C.ChangeSelect
+// Function WBP_Fishing_SelectBait.WBP_Fishing_SelectBait_C.SetVisibleItems
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsVisible_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Fishing_SelectBait_C::ChangeSelect(int32 NewIndex)
+void UWBP_Fishing_SelectBait_C::SetVisibleItems(bool IsVisible_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_SelectBait_C", "ChangeSelect");
+		Func = Class->GetFunction("WBP_Fishing_SelectBait_C", "SetVisibleItems");
 
-	Params::WBP_Fishing_SelectBait_C_ChangeSelect Parms{};
+	Params::WBP_Fishing_SelectBait_C_SetVisibleItems Parms{};
 
-	Parms.NewIndex = NewIndex;
+	Parms.IsVisible_0 = IsVisible_0;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Fishing_SelectBait.WBP_Fishing_SelectBait_C.ExecuteUbergraph_WBP_Fishing_SelectBait
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Fishing_SelectBait_C::ExecuteUbergraph_WBP_Fishing_SelectBait(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_SelectBait_C", "ExecuteUbergraph_WBP_Fishing_SelectBait");
-
-	Params::WBP_Fishing_SelectBait_C_ExecuteUbergraph_WBP_Fishing_SelectBait Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Fishing_SelectBait.WBP_Fishing_SelectBait_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Fishing_SelectBait_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_SelectBait_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Fishing_SelectBait.WBP_Fishing_SelectBait_C.OnSelected
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Fishing_SelectBait_C::OnSelected()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_SelectBait_C", "OnSelected");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -123,45 +83,85 @@ void UWBP_Fishing_SelectBait_C::Setup(TArray<struct FPalStaticItemIdAndNum>& Ite
 }
 
 
-// Function WBP_Fishing_SelectBait.WBP_Fishing_SelectBait_C.SetVisibleItems
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsVisible_0                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Fishing_SelectBait.WBP_Fishing_SelectBait_C.OnSelected
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Fishing_SelectBait_C::SetVisibleItems(bool IsVisible_0)
+void UWBP_Fishing_SelectBait_C::OnSelected()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_SelectBait_C", "SetVisibleItems");
+		Func = Class->GetFunction("WBP_Fishing_SelectBait_C", "OnSelected");
 
-	Params::WBP_Fishing_SelectBait_C_SetVisibleItems Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.IsVisible_0 = IsVisible_0;
+
+// Function WBP_Fishing_SelectBait.WBP_Fishing_SelectBait_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Fishing_SelectBait_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Fishing_SelectBait_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Fishing_SelectBait.WBP_Fishing_SelectBait_C.ExecuteUbergraph_WBP_Fishing_SelectBait
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Fishing_SelectBait_C::ExecuteUbergraph_WBP_Fishing_SelectBait(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Fishing_SelectBait_C", "ExecuteUbergraph_WBP_Fishing_SelectBait");
+
+	Params::WBP_Fishing_SelectBait_C_ExecuteUbergraph_WBP_Fishing_SelectBait Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Fishing_SelectBait.WBP_Fishing_SelectBait_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Fishing_SelectBait.WBP_Fishing_SelectBait_C.ChangeSelect
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Fishing_SelectBait_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+void UWBP_Fishing_SelectBait_C::ChangeSelect(int32 NewIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Fishing_SelectBait_C", "Tick");
+		Func = Class->GetFunction("WBP_Fishing_SelectBait_C", "ChangeSelect");
 
-	Params::WBP_Fishing_SelectBait_C_Tick Parms{};
+	Params::WBP_Fishing_SelectBait_C_ChangeSelect Parms{};
 
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
+	Parms.NewIndex = NewIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Fishing_SelectBait.WBP_Fishing_SelectBait_C.AnmEvent_In
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Fishing_SelectBait_C::AnmEvent_In()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Fishing_SelectBait_C", "AnmEvent_In");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

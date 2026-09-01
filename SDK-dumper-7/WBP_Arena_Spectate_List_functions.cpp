@@ -17,47 +17,115 @@
 namespace SDK
 {
 
-// Function WBP_Arena_Spectate_List.WBP_Arena_Spectate_List_C.AnmEvent_Focus
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Arena_Spectate_List.WBP_Arena_Spectate_List_C.UpdateTimer
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Arena_Spectate_List_C::AnmEvent_Focus()
+void UWBP_Arena_Spectate_List_C::UpdateTimer()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_Spectate_List_C", "AnmEvent_Focus");
+		Func = Class->GetFunction("WBP_Arena_Spectate_List_C", "UpdateTimer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Arena_Spectate_List.WBP_Arena_Spectate_List_C.AnmEvent_Normal
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Arena_Spectate_List.WBP_Arena_Spectate_List_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FPalArenaSpectateRoomInfo& RoomInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_Arena_Spectate_List_C::AnmEvent_Normal()
+void UWBP_Arena_Spectate_List_C::Setup(const struct FPalArenaSpectateRoomInfo& RoomInfo)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_Spectate_List_C", "AnmEvent_Normal");
+		Func = Class->GetFunction("WBP_Arena_Spectate_List_C", "Setup");
+
+	Params::WBP_Arena_Spectate_List_C_Setup Parms{};
+
+	Parms.RoomInfo = std::move(RoomInfo);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_Spectate_List.WBP_Arena_Spectate_List_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Arena_Spectate_List_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_Spectate_List_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Arena_Spectate_List.WBP_Arena_Spectate_List_C.BndEvt__WBP_Arena_Spectate_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_Arena_Spectate_List.WBP_Arena_Spectate_List_C.ExecuteUbergraph_WBP_Arena_Spectate_List
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_Spectate_List_C::ExecuteUbergraph_WBP_Arena_Spectate_List(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_Spectate_List_C", "ExecuteUbergraph_WBP_Arena_Spectate_List");
+
+	Params::WBP_Arena_Spectate_List_C_ExecuteUbergraph_WBP_Arena_Spectate_List Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_Spectate_List.WBP_Arena_Spectate_List_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Arena_Spectate_List_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_Spectate_List_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_Spectate_List.WBP_Arena_Spectate_List_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Arena_Spectate_List_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_Spectate_List_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_Spectate_List.WBP_Arena_Spectate_List_C.BndEvt__WBP_Arena_Spectate_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_Spectate_List_C::BndEvt__WBP_Arena_Spectate_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Arena_Spectate_List_C::BndEvt__WBP_Arena_Spectate_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_Spectate_List_C", "BndEvt__WBP_Arena_Spectate_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Arena_Spectate_List_C", "BndEvt__WBP_Arena_Spectate_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_Arena_Spectate_List_C_BndEvt__WBP_Arena_Spectate_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_Arena_Spectate_List_C_BndEvt__WBP_Arena_Spectate_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -85,19 +153,19 @@ void UWBP_Arena_Spectate_List_C::BndEvt__WBP_Arena_Spectate_List_WBP_PalInvisibl
 }
 
 
-// Function WBP_Arena_Spectate_List.WBP_Arena_Spectate_List_C.BndEvt__WBP_Arena_Spectate_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_Arena_Spectate_List.WBP_Arena_Spectate_List_C.BndEvt__WBP_Arena_Spectate_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_Spectate_List_C::BndEvt__WBP_Arena_Spectate_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Arena_Spectate_List_C::BndEvt__WBP_Arena_Spectate_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_Spectate_List_C", "BndEvt__WBP_Arena_Spectate_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Arena_Spectate_List_C", "BndEvt__WBP_Arena_Spectate_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_Arena_Spectate_List_C_BndEvt__WBP_Arena_Spectate_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_Arena_Spectate_List_C_BndEvt__WBP_Arena_Spectate_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -105,97 +173,29 @@ void UWBP_Arena_Spectate_List_C::BndEvt__WBP_Arena_Spectate_List_WBP_PalInvisibl
 }
 
 
-// Function WBP_Arena_Spectate_List.WBP_Arena_Spectate_List_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Arena_Spectate_List.WBP_Arena_Spectate_List_C.AnmEvent_Normal
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Arena_Spectate_List_C::Construct()
+void UWBP_Arena_Spectate_List_C::AnmEvent_Normal()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_Spectate_List_C", "Construct");
+		Func = Class->GetFunction("WBP_Arena_Spectate_List_C", "AnmEvent_Normal");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Arena_Spectate_List.WBP_Arena_Spectate_List_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Arena_Spectate_List.WBP_Arena_Spectate_List_C.AnmEvent_Focus
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Arena_Spectate_List_C::Destruct()
+void UWBP_Arena_Spectate_List_C::AnmEvent_Focus()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_Spectate_List_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_Spectate_List.WBP_Arena_Spectate_List_C.ExecuteUbergraph_WBP_Arena_Spectate_List
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Arena_Spectate_List_C::ExecuteUbergraph_WBP_Arena_Spectate_List(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_Spectate_List_C", "ExecuteUbergraph_WBP_Arena_Spectate_List");
-
-	Params::WBP_Arena_Spectate_List_C_ExecuteUbergraph_WBP_Arena_Spectate_List Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Arena_Spectate_List.WBP_Arena_Spectate_List_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_Arena_Spectate_List_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_Spectate_List_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_Spectate_List.WBP_Arena_Spectate_List_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalArenaSpectateRoomInfo& RoomInfo                                               (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_Arena_Spectate_List_C::Setup(const struct FPalArenaSpectateRoomInfo& RoomInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_Spectate_List_C", "Setup");
-
-	Params::WBP_Arena_Spectate_List_C_Setup Parms{};
-
-	Parms.RoomInfo = std::move(RoomInfo);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Arena_Spectate_List.WBP_Arena_Spectate_List_C.UpdateTimer
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_Spectate_List_C::UpdateTimer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_Spectate_List_C", "UpdateTimer");
+		Func = Class->GetFunction("WBP_Arena_Spectate_List_C", "AnmEvent_Focus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

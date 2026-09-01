@@ -17,21 +17,21 @@
 namespace SDK
 {
 
-// Function BP_SkyCreatorLightingSphereVolume.BP_SkyCreatorLightingSphereVolume_C.ExecuteUbergraph_BP_SkyCreatorLightingSphereVolume
-// (Final, UbergraphFunction)
+// Function BP_SkyCreatorLightingSphereVolume.BP_SkyCreatorLightingSphereVolume_C.ReceiveActorEndOverlap
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SkyCreatorLightingSphereVolume_C::ExecuteUbergraph_BP_SkyCreatorLightingSphereVolume(int32 EntryPoint)
+void ABP_SkyCreatorLightingSphereVolume_C::ReceiveActorEndOverlap(class AActor* OtherActor)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkyCreatorLightingSphereVolume_C", "ExecuteUbergraph_BP_SkyCreatorLightingSphereVolume");
+		Func = Class->GetFunction("BP_SkyCreatorLightingSphereVolume_C", "ReceiveActorEndOverlap");
 
-	Params::BP_SkyCreatorLightingSphereVolume_C_ExecuteUbergraph_BP_SkyCreatorLightingSphereVolume Parms{};
+	Params::BP_SkyCreatorLightingSphereVolume_C_ReceiveActorEndOverlap Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.OtherActor = OtherActor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,21 +57,21 @@ void ABP_SkyCreatorLightingSphereVolume_C::ReceiveActorBeginOverlap(class AActor
 }
 
 
-// Function BP_SkyCreatorLightingSphereVolume.BP_SkyCreatorLightingSphereVolume_C.ReceiveActorEndOverlap
-// (Event, Public, BlueprintEvent)
+// Function BP_SkyCreatorLightingSphereVolume.BP_SkyCreatorLightingSphereVolume_C.ExecuteUbergraph_BP_SkyCreatorLightingSphereVolume
+// (Final, UbergraphFunction)
 // Parameters:
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SkyCreatorLightingSphereVolume_C::ReceiveActorEndOverlap(class AActor* OtherActor)
+void ABP_SkyCreatorLightingSphereVolume_C::ExecuteUbergraph_BP_SkyCreatorLightingSphereVolume(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SkyCreatorLightingSphereVolume_C", "ReceiveActorEndOverlap");
+		Func = Class->GetFunction("BP_SkyCreatorLightingSphereVolume_C", "ExecuteUbergraph_BP_SkyCreatorLightingSphereVolume");
 
-	Params::BP_SkyCreatorLightingSphereVolume_C_ReceiveActorEndOverlap Parms{};
+	Params::BP_SkyCreatorLightingSphereVolume_C_ExecuteUbergraph_BP_SkyCreatorLightingSphereVolume Parms{};
 
-	Parms.OtherActor = OtherActor;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

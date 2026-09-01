@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "E_PalFoodStatusForStatusBuffTimer_structs.hpp"
 #include "Pal_structs.hpp"
 #include "UMG_classes.hpp"
-#include "E_PalFoodStatusForStatusBuffTimer_structs.hpp"
 
 
 namespace SDK

@@ -28,11 +28,11 @@ public:
 	class UWBP_AssignBoard_PalSlot_C*             WBP_AssignBoard_PalSlot;                           // 0x0280(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void ExecuteUbergraph_WBP_AssignBoard_PalSlot_Assigned(int32 EntryPoint);
-	void SetEmpty();
-	void SetIndividualParameter(class UPalIndividualCharacterParameter* Parameter);
 	void SetSuitability(EPalWorkSuitability Suitability);
+	void SetIndividualParameter(class UPalIndividualCharacterParameter* Parameter);
+	void SetEmpty();
+	void ExecuteUbergraph_WBP_AssignBoard_PalSlot_Assigned(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

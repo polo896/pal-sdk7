@@ -28,17 +28,17 @@ public:
 	class UPalUIItemChestFilterModel*             PreferenceModel;                                   // 0x0490(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_0_OnClickedAllCheckButton__DelegateSignature();
-	void BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_1_OnClickedCloseButton__DelegateSignature();
-	void BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_2_OnClickedAllUncheckButton__DelegateSignature();
-	void BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_3_OnClickedCustomNameEditButton__DelegateSignature();
-	void BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_4_OnEditedCustomName__DelegateSignature(const class FString& NewCustomName);
-	void Construct();
-	void ExecuteUbergraph_WBP_ItemChest_Preference(int32 EntryPoint);
-	void OnClickedCheck(class FName FilterId, bool bChecked);
-	void OnSetup();
-	void Setup();
 	void WBP_ItemChest_Preference_AutoGenFunc();
+	void Setup();
+	void OnSetup();
+	void OnClickedCheck(class FName FilterId, bool bChecked);
+	void ExecuteUbergraph_WBP_ItemChest_Preference(int32 EntryPoint);
+	void Construct();
+	void BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_4_OnEditedCustomName__DelegateSignature(const class FString& NewCustomName);
+	void BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_3_OnClickedCustomNameEditButton__DelegateSignature();
+	void BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_2_OnClickedAllUncheckButton__DelegateSignature();
+	void BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_1_OnClickedCloseButton__DelegateSignature();
+	void BndEvt__WBP_ItemChest_Preference_WBP_IngameMenu_Chest_Filter_K2Node_ComponentBoundEvent_0_OnClickedAllCheckButton__DelegateSignature();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

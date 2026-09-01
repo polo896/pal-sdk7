@@ -15,8 +15,8 @@ class UWBP_Expedition_StageList_C : public UUserWidget
     FWBP_Expedition_StageList_COnClicked OnClicked;                                   // 0x02C0 (size: 0x10)
     void OnClicked(class UWBP_Expedition_StageList_C* Widget);
     FPalCharacterTeamMissionInfo MyMissionInfo;                                       // 0x02D0 (size: 0x60)
-    TMap<class EPalCharacterTeamMissionDifficulty, class FDataTableRowHandle> DifficultyMsgIDMap; // 0x0330 (size: 0x50)
-    TMap<class EPalCharacterTeamMissionDifficulty, class FSlateColor> DifficultyTextColorMap; // 0x0380 (size: 0x50)
+    TMap<EPalCharacterTeamMissionDifficulty, FDataTableRowHandle> DifficultyMsgIDMap; // 0x0330 (size: 0x50)
+    TMap<EPalCharacterTeamMissionDifficulty, FSlateColor> DifficultyTextColorMap;     // 0x0380 (size: 0x50)
     FWBP_Expedition_StageList_COnHovered OnHovered;                                   // 0x03D0 (size: 0x10)
     void OnHovered(class UWBP_Expedition_StageList_C* Widget);
     FWBP_Expedition_StageList_COnUnhovered OnUnhovered;                               // 0x03E0 (size: 0x10)

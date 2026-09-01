@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_OptionSettings_ListContent_ReticlePreview.WBP_OptionSettings_ListContent_ReticlePreview_C.ExecuteUbergraph_WBP_OptionSettings_ListContent_ReticlePreview
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OptionSettings_ListContent_ReticlePreview_C::ExecuteUbergraph_WBP_OptionSettings_ListContent_ReticlePreview(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContent_ReticlePreview_C", "ExecuteUbergraph_WBP_OptionSettings_ListContent_ReticlePreview");
-
-	Params::WBP_OptionSettings_ListContent_ReticlePreview_C_ExecuteUbergraph_WBP_OptionSettings_ListContent_ReticlePreview Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_OptionSettings_ListContent_ReticlePreview.WBP_OptionSettings_ListContent_ReticlePreview_C.SetOutline
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -52,6 +32,26 @@ void UWBP_OptionSettings_ListContent_ReticlePreview_C::SetOutline(double Outline
 	Params::WBP_OptionSettings_ListContent_ReticlePreview_C_SetOutline Parms{};
 
 	Parms.OutlineOpacity = OutlineOpacity;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OptionSettings_ListContent_ReticlePreview.WBP_OptionSettings_ListContent_ReticlePreview_C.ExecuteUbergraph_WBP_OptionSettings_ListContent_ReticlePreview
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OptionSettings_ListContent_ReticlePreview_C::ExecuteUbergraph_WBP_OptionSettings_ListContent_ReticlePreview(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContent_ReticlePreview_C", "ExecuteUbergraph_WBP_OptionSettings_ListContent_ReticlePreview");
+
+	Params::WBP_OptionSettings_ListContent_ReticlePreview_C_ExecuteUbergraph_WBP_OptionSettings_ListContent_ReticlePreview Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

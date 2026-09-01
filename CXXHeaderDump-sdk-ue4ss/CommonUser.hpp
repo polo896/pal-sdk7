@@ -61,8 +61,8 @@ class UCommonSession_HostSessionRequest : public UObject
     bool bUseLobbies;                                                                 // 0x0029 (size: 0x1)
     FString ModeNameForAdvertisement;                                                 // 0x0030 (size: 0x10)
     FPrimaryAssetId MapID;                                                            // 0x0040 (size: 0x10)
-    TSoftObjectPtr<UWorld> Map;                                                       // 0x0050 (size: 0x30)
-    TMap<class FString, class FString> ExtraArgs;                                     // 0x0080 (size: 0x50)
+    TSoftObjectPtr<class UWorld> Map;                                                 // 0x0050 (size: 0x30)
+    TMap<FString, FString> ExtraArgs;                                                 // 0x0080 (size: 0x50)
     int32 MaxPlayerCount;                                                             // 0x00D0 (size: 0x4)
 
 }; // Size: 0xD8
@@ -83,7 +83,7 @@ class UCommonSession_SearchSessionRequest : public UObject
 {
     ECommonSessionOnlineMode OnlineMode;                                              // 0x0028 (size: 0x1)
     bool bUseLobbies;                                                                 // 0x0029 (size: 0x1)
-    TArray<class UCommonSession_SearchResult*> Results;                               // 0x0030 (size: 0x10)
+    TArray<UCommonSession_SearchResult*> Results;                                     // 0x0030 (size: 0x10)
     FCommonSession_SearchSessionRequestK2_OnSearchFinished K2_OnSearchFinished;       // 0x0058 (size: 0x10)
     void CommonSession_FindSessionsFinishedDynamic(bool bSucceeded, FText ErrorMessage);
 

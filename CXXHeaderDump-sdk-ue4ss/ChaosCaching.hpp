@@ -98,7 +98,7 @@ struct FParticleTransformTrack
 struct FPerParticleCacheData
 {
     FParticleTransformTrack TransformData;                                            // 0x0000 (size: 0x48)
-    TMap<class FName, class FRichCurve> CurveData;                                    // 0x0048 (size: 0x50)
+    TMap<FName, FRichCurve> CurveData;                                                // 0x0048 (size: 0x50)
 
 }; // Size: 0x98
 
@@ -145,9 +145,9 @@ class UChaosCache : public UObject
     uint32 NumRecordedFrames;                                                         // 0x002C (size: 0x4)
     TArray<int32> TrackToParticle;                                                    // 0x0030 (size: 0x10)
     TArray<FPerParticleCacheData> ParticleTracks;                                     // 0x0040 (size: 0x10)
-    TMap<class FName, class FRichCurves> ChannelsTracks;                              // 0x0050 (size: 0x50)
-    TMap<class FName, class FRichCurve> CurveData;                                    // 0x00A0 (size: 0x50)
-    TMap<class FName, class FCacheEventTrack> EventTracks;                            // 0x00F0 (size: 0x50)
+    TMap<FName, FRichCurves> ChannelsTracks;                                          // 0x0050 (size: 0x50)
+    TMap<FName, FRichCurve> CurveData;                                                // 0x00A0 (size: 0x50)
+    TMap<FName, FCacheEventTrack> EventTracks;                                        // 0x00F0 (size: 0x50)
     FCacheSpawnableTemplate Spawnable;                                                // 0x0140 (size: 0xD0)
     FGuid AdapterGuid;                                                                // 0x0210 (size: 0x10)
     int32 Version;                                                                    // 0x0220 (size: 0x4)
@@ -156,7 +156,7 @@ class UChaosCache : public UObject
 
 class UChaosCacheCollection : public UObject
 {
-    TArray<class UChaosCache*> Caches;                                                // 0x0028 (size: 0x10)
+    TArray<UChaosCache*> Caches;                                                      // 0x0028 (size: 0x10)
 
 }; // Size: 0x38
 
@@ -168,7 +168,7 @@ class UMovieSceneChaosCacheSection : public UMovieSceneBaseCacheSection
 
 class UMovieSceneChaosCacheTrack : public UMovieSceneNameableTrack
 {
-    TArray<class UMovieSceneSection*> AnimationSections;                              // 0x00A0 (size: 0x10)
+    TArray<UMovieSceneSection*> AnimationSections;                                    // 0x00A0 (size: 0x10)
 
 }; // Size: 0xB0
 

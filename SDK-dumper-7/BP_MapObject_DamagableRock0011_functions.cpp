@@ -37,20 +37,6 @@ void ABP_MapObject_DamagableRock0011_C::ExecuteUbergraph_BP_MapObject_DamagableR
 }
 
 
-// Function BP_MapObject_DamagableRock0011.BP_MapObject_DamagableRock0011_C.InitializeFromPool
-// (Event, Public, BlueprintEvent)
-
-void ABP_MapObject_DamagableRock0011_C::InitializeFromPool()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MapObject_DamagableRock0011_C", "InitializeFromPool");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_MapObject_DamagableRock0011.BP_MapObject_DamagableRock0011_C.ReturnToPool
 // (Event, Public, BlueprintEvent)
 
@@ -60,6 +46,20 @@ void ABP_MapObject_DamagableRock0011_C::ReturnToPool()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_MapObject_DamagableRock0011_C", "ReturnToPool");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MapObject_DamagableRock0011.BP_MapObject_DamagableRock0011_C.InitializeFromPool
+// (Event, Public, BlueprintEvent)
+
+void ABP_MapObject_DamagableRock0011_C::InitializeFromPool()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_MapObject_DamagableRock0011_C", "InitializeFromPool");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -17,150 +17,63 @@
 namespace SDK
 {
 
-// Function WBP_InGame_Arena.WBP_InGame_Arena_C.DrawUI
+// Function WBP_InGame_Arena.WBP_InGame_Arena_C.WinUI
 // (BlueprintCallable, BlueprintEvent)
-
-void UWBP_InGame_Arena_C::DrawUI()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Arena_C", "DrawUI");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_InGame_Arena.WBP_InGame_Arena_C.ExecuteUbergraph_WBP_InGame_Arena
-// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    WinnerName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void UWBP_InGame_Arena_C::ExecuteUbergraph_WBP_InGame_Arena(int32 EntryPoint)
+void UWBP_InGame_Arena_C::WinUI(const class FString& WinnerName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Arena_C", "ExecuteUbergraph_WBP_InGame_Arena");
+		Func = Class->GetFunction("WBP_InGame_Arena_C", "WinUI");
 
-	Params::WBP_InGame_Arena_C_ExecuteUbergraph_WBP_InGame_Arena Parms{};
+	Params::WBP_InGame_Arena_C_WinUI Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.WinnerName = std::move(WinnerName);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_InGame_Arena.WBP_InGame_Arena_C.Finished_768F02F4466EDA7C23960580EBC813FD
+// Function WBP_InGame_Arena.WBP_InGame_Arena_C.SetUIOnce
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_InGame_Arena_C::Finished_768F02F4466EDA7C23960580EBC813FD()
+void UWBP_InGame_Arena_C::SetUIOnce()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Arena_C", "Finished_768F02F4466EDA7C23960580EBC813FD");
+		Func = Class->GetFunction("WBP_InGame_Arena_C", "SetUIOnce");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_InGame_Arena.WBP_InGame_Arena_C.Finished_7F5F79824D29F484AC06A58453CB091A
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_InGame_Arena.WBP_InGame_Arena_C.SetResult
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_InGame_Arena_C::Finished_7F5F79824D29F484AC06A58453CB091A()
+void UWBP_InGame_Arena_C::SetResult()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Arena_C", "Finished_7F5F79824D29F484AC06A58453CB091A");
+		Func = Class->GetFunction("WBP_InGame_Arena_C", "SetResult");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_InGame_Arena.WBP_InGame_Arena_C.Finished_C631FD5D4353912F9F507C91C9B4CBB7
+// Function WBP_InGame_Arena.WBP_InGame_Arena_C.ReadyUI
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_InGame_Arena_C::Finished_C631FD5D4353912F9F507C91C9B4CBB7()
+void UWBP_InGame_Arena_C::ReadyUI()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Arena_C", "Finished_C631FD5D4353912F9F507C91C9B4CBB7");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_InGame_Arena.WBP_InGame_Arena_C.Finished_F607615543D9F7F46B1668A5448DE853
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_InGame_Arena_C::Finished_F607615543D9F7F46B1668A5448DE853()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Arena_C", "Finished_F607615543D9F7F46B1668A5448DE853");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_InGame_Arena.WBP_InGame_Arena_C.GetLocalBattleResult
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FPalArenaRankPointChangeResult*  Result                                                 (Parm, OutParm, NoDestructor)
-// bool*                                   Finded                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_InGame_Arena_C::GetLocalBattleResult(struct FPalArenaRankPointChangeResult* Result, bool* Finded)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Arena_C", "GetLocalBattleResult");
-
-	Params::WBP_InGame_Arena_C_GetLocalBattleResult Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = std::move(Parms.Result);
-
-	if (Finded != nullptr)
-		*Finded = Parms.Finded;
-}
-
-
-// Function WBP_InGame_Arena.WBP_InGame_Arena_C.OnArenaSequenceStart
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalArenaSequencer*               ArenaSequence                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_InGame_Arena_C::OnArenaSequenceStart(class UPalArenaSequencer* ArenaSequence)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Arena_C", "OnArenaSequenceStart");
-
-	Params::WBP_InGame_Arena_C_OnArenaSequenceStart Parms{};
-
-	Parms.ArenaSequence = ArenaSequence;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_InGame_Arena.WBP_InGame_Arena_C.OnExitArena
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_InGame_Arena_C::OnExitArena()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Arena_C", "OnExitArena");
+		Func = Class->GetFunction("WBP_InGame_Arena_C", "ReadyUI");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -190,65 +103,152 @@ void UWBP_InGame_Arena_C::OnSequenceStageChanged(class UPalArenaSequencer* Seque
 }
 
 
-// Function WBP_InGame_Arena.WBP_InGame_Arena_C.ReadyUI
+// Function WBP_InGame_Arena.WBP_InGame_Arena_C.OnExitArena
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_InGame_Arena_C::ReadyUI()
+void UWBP_InGame_Arena_C::OnExitArena()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Arena_C", "ReadyUI");
+		Func = Class->GetFunction("WBP_InGame_Arena_C", "OnExitArena");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_InGame_Arena.WBP_InGame_Arena_C.SetResult
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_InGame_Arena_C::SetResult()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Arena_C", "SetResult");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_InGame_Arena.WBP_InGame_Arena_C.SetUIOnce
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_InGame_Arena_C::SetUIOnce()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Arena_C", "SetUIOnce");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_InGame_Arena.WBP_InGame_Arena_C.WinUI
+// Function WBP_InGame_Arena.WBP_InGame_Arena_C.OnArenaSequenceStart
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FString&                    WinnerName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// class UPalArenaSequencer*               ArenaSequence                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_InGame_Arena_C::WinUI(const class FString& WinnerName)
+void UWBP_InGame_Arena_C::OnArenaSequenceStart(class UPalArenaSequencer* ArenaSequence)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InGame_Arena_C", "WinUI");
+		Func = Class->GetFunction("WBP_InGame_Arena_C", "OnArenaSequenceStart");
 
-	Params::WBP_InGame_Arena_C_WinUI Parms{};
+	Params::WBP_InGame_Arena_C_OnArenaSequenceStart Parms{};
 
-	Parms.WinnerName = std::move(WinnerName);
+	Parms.ArenaSequence = ArenaSequence;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_InGame_Arena.WBP_InGame_Arena_C.GetLocalBattleResult
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FPalArenaRankPointChangeResult*  Result                                                 (Parm, OutParm, NoDestructor)
+// bool*                                   Finded                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_InGame_Arena_C::GetLocalBattleResult(struct FPalArenaRankPointChangeResult* Result, bool* Finded)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGame_Arena_C", "GetLocalBattleResult");
+
+	Params::WBP_InGame_Arena_C_GetLocalBattleResult Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = std::move(Parms.Result);
+
+	if (Finded != nullptr)
+		*Finded = Parms.Finded;
+}
+
+
+// Function WBP_InGame_Arena.WBP_InGame_Arena_C.Finished_F607615543D9F7F46B1668A5448DE853
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_InGame_Arena_C::Finished_F607615543D9F7F46B1668A5448DE853()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGame_Arena_C", "Finished_F607615543D9F7F46B1668A5448DE853");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InGame_Arena.WBP_InGame_Arena_C.Finished_C631FD5D4353912F9F507C91C9B4CBB7
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_InGame_Arena_C::Finished_C631FD5D4353912F9F507C91C9B4CBB7()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGame_Arena_C", "Finished_C631FD5D4353912F9F507C91C9B4CBB7");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InGame_Arena.WBP_InGame_Arena_C.Finished_7F5F79824D29F484AC06A58453CB091A
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_InGame_Arena_C::Finished_7F5F79824D29F484AC06A58453CB091A()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGame_Arena_C", "Finished_7F5F79824D29F484AC06A58453CB091A");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InGame_Arena.WBP_InGame_Arena_C.Finished_768F02F4466EDA7C23960580EBC813FD
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_InGame_Arena_C::Finished_768F02F4466EDA7C23960580EBC813FD()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGame_Arena_C", "Finished_768F02F4466EDA7C23960580EBC813FD");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_InGame_Arena.WBP_InGame_Arena_C.ExecuteUbergraph_WBP_InGame_Arena
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_InGame_Arena_C::ExecuteUbergraph_WBP_InGame_Arena(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGame_Arena_C", "ExecuteUbergraph_WBP_InGame_Arena");
+
+	Params::WBP_InGame_Arena_C_ExecuteUbergraph_WBP_InGame_Arena Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_InGame_Arena.WBP_InGame_Arena_C.DrawUI
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_InGame_Arena_C::DrawUI()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_InGame_Arena_C", "DrawUI");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

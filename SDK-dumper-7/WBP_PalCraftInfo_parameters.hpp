@@ -18,92 +18,24 @@
 namespace SDK::Params
 {
 
-// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.ExecuteUbergraph_WBP_PalCraftInfo
-// 0x0058 (0x0058 - 0x0000)
-struct WBP_PalCraftInfo_C_ExecuteUbergraph_WBP_PalCraftInfo final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_PalCraftInfo_Pal_C*                CallFunc_Array_Get_Item;                           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetEndTime_ReturnValue;                   // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_3;              // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class UWBP_PalCraftInfo_Pal_C*>        K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm, ContainsInstancedReference)
-};
-DUMPER7_ASSERTS_WBP_PalCraftInfo_C_ExecuteUbergraph_WBP_PalCraftInfo;
-
-// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.IsCharacterAssignedFixedToTargetWork
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_PalCraftInfo_C_IsCharacterAssignedFixedToTargetWork final
-{
-public:
-	class UPalCharacterParameterComponent*        TargetCharacter;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  WorkId;                                            // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalWorkAssign*                         WorkAssign;                                        // 0x0020(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsFixed_ReturnValue;                      // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A[0x2];                                       // 0x002A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGuid                                  CallFunc_GetWorkId_ReturnValue;                    // 0x002C(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalWorkAssign*                         CallFunc_GetWorkAssign_ReturnValue;                // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_GuidGuid_ReturnValue;          // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalCraftInfo_C_IsCharacterAssignedFixedToTargetWork;
-
-// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.SetIcon
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalCraftInfo_C_SetIcon final
-{
-public:
-	class FName                                   ItemId;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalCraftInfo_C_SetIcon;
-
-// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.SetInfinityProductMode
+// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.UpdateRequireInfo
 // 0x0018 (0x0018 - 0x0000)
-struct WBP_PalCraftInfo_C_SetInfinityProductMode final
+struct WBP_PalCraftInfo_C_UpdateRequireInfo final
 {
 public:
-	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0000(0x0018)()
+	class UPalWorkBase*                           Work;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData> DisplayData;             // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-DUMPER7_ASSERTS_WBP_PalCraftInfo_C_SetInfinityProductMode;
+DUMPER7_ASSERTS_WBP_PalCraftInfo_C_UpdateRequireInfo;
 
-// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.SetProductItemID
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_PalCraftInfo_C_SetProductItemID final
+// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.SetWorkProgressRate
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalCraftInfo_C_SetWorkProgressRate final
 {
 public:
-	class FName                                   ItemId;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetItemName_outName;                      // 0x0008(0x0018)()
+	double                                        Rate;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalCraftInfo_C_SetProductItemID;
-
-// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.SetProductNum
-// 0x00A0 (0x00A0 - 0x0000)
-struct WBP_PalCraftInfo_C_SetProductNum final
-{
-public:
-	int32                                         nowProductNum;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         maxProductNum;                                     // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0010(0x0050)(HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0060(0x0018)()
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0078(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0088(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_PalCraftInfo_C_SetProductNum;
+DUMPER7_ASSERTS_WBP_PalCraftInfo_C_SetWorkProgressRate;
 
 // Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.SetWorkerPalSlots
 // 0x0098 (0x0098 - 0x0000)
@@ -145,24 +77,92 @@ public:
 };
 DUMPER7_ASSERTS_WBP_PalCraftInfo_C_SetWorkerPalSlots;
 
-// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.SetWorkProgressRate
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalCraftInfo_C_SetWorkProgressRate final
+// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.SetProductNum
+// 0x00A0 (0x00A0 - 0x0000)
+struct WBP_PalCraftInfo_C_SetProductNum final
 {
 public:
-	double                                        Rate;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         nowProductNum;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         maxProductNum;                                     // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int64                                         CallFunc_Conv_IntToInt64_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0010(0x0050)(HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0060(0x0018)()
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0078(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0088(0x0018)()
 };
-DUMPER7_ASSERTS_WBP_PalCraftInfo_C_SetWorkProgressRate;
+DUMPER7_ASSERTS_WBP_PalCraftInfo_C_SetProductNum;
 
-// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.UpdateRequireInfo
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_PalCraftInfo_C_UpdateRequireInfo final
+// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.SetProductItemID
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_PalCraftInfo_C_SetProductItemID final
 {
 public:
-	class UPalWorkBase*                           Work;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData> DisplayData;             // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class FName                                   ItemId;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetItemName_outName;                      // 0x0008(0x0018)()
 };
-DUMPER7_ASSERTS_WBP_PalCraftInfo_C_UpdateRequireInfo;
+DUMPER7_ASSERTS_WBP_PalCraftInfo_C_SetProductItemID;
+
+// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.SetInfinityProductMode
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_PalCraftInfo_C_SetInfinityProductMode final
+{
+public:
+	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0000(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_PalCraftInfo_C_SetInfinityProductMode;
+
+// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.SetIcon
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalCraftInfo_C_SetIcon final
+{
+public:
+	class FName                                   ItemId;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalCraftInfo_C_SetIcon;
+
+// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.IsCharacterAssignedFixedToTargetWork
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_PalCraftInfo_C_IsCharacterAssignedFixedToTargetWork final
+{
+public:
+	class UPalCharacterParameterComponent*        TargetCharacter;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  WorkId;                                            // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalWorkAssign*                         WorkAssign;                                        // 0x0020(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsFixed_ReturnValue;                      // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2A[0x2];                                       // 0x002A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGuid                                  CallFunc_GetWorkId_ReturnValue;                    // 0x002C(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalWorkAssign*                         CallFunc_GetWorkAssign_ReturnValue;                // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_GuidGuid_ReturnValue;          // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalCraftInfo_C_IsCharacterAssignedFixedToTargetWork;
+
+// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.ExecuteUbergraph_WBP_PalCraftInfo
+// 0x0058 (0x0058 - 0x0000)
+struct WBP_PalCraftInfo_C_ExecuteUbergraph_WBP_PalCraftInfo final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_PalCraftInfo_Pal_C*                CallFunc_Array_Get_Item;                           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetEndTime_ReturnValue;                   // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_3;              // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class UWBP_PalCraftInfo_Pal_C*>        K2Node_MakeArray_Array;                            // 0x0048(0x0010)(ReferenceParm, ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_WBP_PalCraftInfo_C_ExecuteUbergraph_WBP_PalCraftInfo;
 
 }
 

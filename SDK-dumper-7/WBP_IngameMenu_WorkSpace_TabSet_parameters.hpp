@@ -14,23 +14,58 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_86_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.RegisterPanelWidget
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_WorkSpace_TabSet_C_BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_86_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
+struct WBP_IngameMenu_WorkSpace_TabSet_C_RegisterPanelWidget final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPanelWidget*                           PanelWidget;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_TabSet_C_BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_86_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_TabSet_C_RegisterPanelWidget;
 
-// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_WorkSpace_TabSet_C_BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.OnClickedCategoryButton
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameMenu_WorkSpace_TabSet_C_OnClickedCategoryButton final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_IngameMenu_WorkSpace_Category_C*   Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetChildIndex_ReturnValue;                // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_TabSet_C_BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_TabSet_C_OnClickedCategoryButton;
+
+// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.OnChandeFocusIndex
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_IngameMenu_WorkSpace_TabSet_C_OnChandeFocusIndex final
+{
+public:
+	int32                                         OldIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewIndex;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                FocusTargetWidget;                                 // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_IngameMenu_WorkSpace_Category_C*   CallFunc_GetTabWidgetByIndex_TabWidget;            // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_IngameMenu_WorkSpace_Category_C*   CallFunc_GetTabWidgetByIndex_TabWidget_1;          // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_TabSet_C_OnChandeFocusIndex;
+
+// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.GetTabWidgetByIndex
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_IngameMenu_WorkSpace_TabSet_C_GetTabWidgetByIndex final
+{
+public:
+	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_IngameMenu_WorkSpace_Category_C*   TabWidget;                                         // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_IngameMenu_WorkSpace_Category_C*   K2Node_DynamicCast_AsWBP_Ingame_Menu_Work_Space_Category; // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_TabSet_C_GetTabWidgetByIndex;
 
 // Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.ExecuteUbergraph_WBP_IngameMenu_WorkSpace_TabSet
 // 0x0078 (0x0078 - 0x0000)
@@ -57,58 +92,23 @@ public:
 };
 DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_TabSet_C_ExecuteUbergraph_WBP_IngameMenu_WorkSpace_TabSet;
 
-// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.GetTabWidgetByIndex
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_IngameMenu_WorkSpace_TabSet_C_GetTabWidgetByIndex final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_IngameMenu_WorkSpace_Category_C*   TabWidget;                                         // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TArray<class UWidget*>                        CallFunc_GetAllChildren_ReturnValue;               // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_IngameMenu_WorkSpace_Category_C*   K2Node_DynamicCast_AsWBP_Ingame_Menu_Work_Space_Category; // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_TabSet_C_GetTabWidgetByIndex;
-
-// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.OnChandeFocusIndex
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_IngameMenu_WorkSpace_TabSet_C_OnChandeFocusIndex final
-{
-public:
-	int32                                         OldIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NewIndex;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                FocusTargetWidget;                                 // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_IngameMenu_WorkSpace_Category_C*   CallFunc_GetTabWidgetByIndex_TabWidget;            // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_IngameMenu_WorkSpace_Category_C*   CallFunc_GetTabWidgetByIndex_TabWidget_1;          // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_TabSet_C_OnChandeFocusIndex;
-
-// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.OnClickedCategoryButton
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameMenu_WorkSpace_TabSet_C_OnClickedCategoryButton final
-{
-public:
-	class UWBP_IngameMenu_WorkSpace_Category_C*   Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetChildIndex_ReturnValue;                // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_TabSet_C_OnClickedCategoryButton;
-
-// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.RegisterPanelWidget
+// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_WorkSpace_TabSet_C_RegisterPanelWidget final
+struct WBP_IngameMenu_WorkSpace_TabSet_C_BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	class UPanelWidget*                           PanelWidget;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_TabSet_C_RegisterPanelWidget;
+DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_TabSet_C_BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_IngameMenu_WorkSpace_TabSet.WBP_IngameMenu_WorkSpace_TabSet_C.BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_86_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_WorkSpace_TabSet_C_BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_86_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_TabSet_C_BndEvt__WBP_IngameMenu_WorkSpace_TabSet_WBP_PalInvisibleButton_86_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
 
 }
 

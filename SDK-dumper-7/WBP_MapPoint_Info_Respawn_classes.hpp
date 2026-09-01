@@ -35,10 +35,10 @@ public:
 	struct FDataTableRowHandle                    SpawnMsgId;                                        // 0x02C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void ToggleDisplay(bool ShouldDisplay);
-	void SetPointInfo(class FName PointId, bool IsInitSelect);
-	void ExecuteUbergraph_WBP_MapPoint_Info_Respawn(int32 EntryPoint);
 	void AdjustSide(const struct FGeometry& TargetGeometry);
+	void ExecuteUbergraph_WBP_MapPoint_Info_Respawn(int32 EntryPoint);
+	void SetPointInfo(class FName PointId, bool IsInitSelect);
+	void ToggleDisplay(bool ShouldDisplay);
 
 public:
 	static class UClass* StaticClass()

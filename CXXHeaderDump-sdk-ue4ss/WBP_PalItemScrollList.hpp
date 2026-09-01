@@ -27,7 +27,7 @@ class UWBP_PalItemScrollList_C : public UWBP_PalCommonScrollList_C
     class UWBP_PalItemSlotButtonBase_C* CachedNowHoveringSlotButton;                  // 0x0528 (size: 0x8)
     FWBP_PalItemScrollList_COnRequestUseItem OnRequestUseItem;                        // 0x0530 (size: 0x10)
     void OnRequestUseItem(class UWBP_PalItemSlotButtonBase_C* Button);
-    TArray<class UPalItemContainer*> QuickMoveTargetContainers;                       // 0x0540 (size: 0x10)
+    TArray<UPalItemContainer*> QuickMoveTargetContainers;                             // 0x0540 (size: 0x10)
     int32 DisplayContainerSlotNumDefault;                                             // 0x0550 (size: 0x4)
     class UWBP_PalItemListBlock_C* Created Block;                                     // 0x0558 (size: 0x8)
     class UPalItemContainer* Target Container;                                        // 0x0560 (size: 0x8)
@@ -35,9 +35,9 @@ class UWBP_PalItemScrollList_C : public UWBP_PalCommonScrollList_C
     void ResetTargetContainerDisplay(class UWBP_PalItemListBlock_C* BlockWidget, class UPalItemContainer* TargetContainer, bool IgnoreEmptySlot);
     void SetDisplayContainerSlotNumDefault(int32 DisplayContainerSlotNumDefault);
     TArray<FPalContainerId> GetQuickMoveTargetContainerIds();
-    void CreateBlockByItemSlotArray(TArray<class UPalItemSlot*>& ItemSlotArray, FText DisplayName, bool IgnoreEmptySlot, class UWBP_PalItemListBlock_C*& createdBlock);
-    void GetAllItemSlotButton(TArray<class UWBP_PalItemSlotButtonBase_C*>& Slots);
-    void SetQuickMoveTargetContainers(TArray<class UPalItemContainer*>& TargetContainer);
+    void CreateBlockByItemSlotArray(TArray<UPalItemSlot*>& ItemSlotArray, FText DisplayName, bool IgnoreEmptySlot, class UWBP_PalItemListBlock_C*& createdBlock);
+    void GetAllItemSlotButton(TArray<UWBP_PalItemSlotButtonBase_C*>& Slots);
+    void SetQuickMoveTargetContainers(TArray<UPalItemContainer*>& TargetContainer);
     void SetQuickMoveTargetContainer(class UPalItemContainer* TargetContainer);
     void GetLastHoveredSlotButton(class UWBP_PalItemSlotButtonBase_C*& SlotButton);
     void ClearAllChildren();
@@ -51,7 +51,7 @@ class UWBP_PalItemScrollList_C : public UWBP_PalCommonScrollList_C
     void OnFocused_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
     void InitializeArrowVisibility();
     void Focus();
-    void AddItemSlotArray(TArray<class UPalItemSlot*>& ItemSlotArray, FText DisplayName, bool IgnoreEmptySlot, class UWBP_PalItemListBlock_C*& createdBlock);
+    void AddItemSlotArray(TArray<UPalItemSlot*>& ItemSlotArray, FText DisplayName, bool IgnoreEmptySlot, class UWBP_PalItemListBlock_C*& createdBlock);
     void OnEndHovered_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
     void OnHovered_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase);
     void OnRightClicked_Internal(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);

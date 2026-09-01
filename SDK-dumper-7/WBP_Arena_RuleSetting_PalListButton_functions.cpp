@@ -17,75 +17,93 @@
 namespace SDK
 {
 
-// Function WBP_Arena_RuleSetting_PalListButton.WBP_Arena_RuleSetting_PalListButton_C.AnmEvent_Ban
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Arena_RuleSetting_PalListButton.WBP_Arena_RuleSetting_PalListButton_C.Setup
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             CharacterID                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_RuleSetting_PalListButton_C::AnmEvent_Ban()
+void UWBP_Arena_RuleSetting_PalListButton_C::Setup(class FName CharacterID)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleSetting_PalListButton_C", "AnmEvent_Ban");
+		Func = Class->GetFunction("WBP_Arena_RuleSetting_PalListButton_C", "Setup");
+
+	Params::WBP_Arena_RuleSetting_PalListButton_C_Setup Parms{};
+
+	Parms.CharacterID = CharacterID;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_RuleSetting_PalListButton.WBP_Arena_RuleSetting_PalListButton_C.SetHide
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ShouldHide                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_RuleSetting_PalListButton_C::SetHide(bool ShouldHide)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_RuleSetting_PalListButton_C", "SetHide");
+
+	Params::WBP_Arena_RuleSetting_PalListButton_C_SetHide Parms{};
+
+	Parms.ShouldHide = ShouldHide;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_RuleSetting_PalListButton.WBP_Arena_RuleSetting_PalListButton_C.ExecuteUbergraph_WBP_Arena_RuleSetting_PalListButton
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_RuleSetting_PalListButton_C::ExecuteUbergraph_WBP_Arena_RuleSetting_PalListButton(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_RuleSetting_PalListButton_C", "ExecuteUbergraph_WBP_Arena_RuleSetting_PalListButton");
+
+	Params::WBP_Arena_RuleSetting_PalListButton_C_ExecuteUbergraph_WBP_Arena_RuleSetting_PalListButton Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_RuleSetting_PalListButton.WBP_Arena_RuleSetting_PalListButton_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Arena_RuleSetting_PalListButton_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_RuleSetting_PalListButton_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Arena_RuleSetting_PalListButton.WBP_Arena_RuleSetting_PalListButton_C.AnmEvent_Enable
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_RuleSetting_PalListButton_C::AnmEvent_Enable()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleSetting_PalListButton_C", "AnmEvent_Enable");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_RuleSetting_PalListButton.WBP_Arena_RuleSetting_PalListButton_C.AnmEvent_Focus
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_RuleSetting_PalListButton_C::AnmEvent_Focus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleSetting_PalListButton_C", "AnmEvent_Focus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_RuleSetting_PalListButton.WBP_Arena_RuleSetting_PalListButton_C.AnmEvent_NoFocus
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_RuleSetting_PalListButton_C::AnmEvent_NoFocus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleSetting_PalListButton_C", "AnmEvent_NoFocus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_RuleSetting_PalListButton.WBP_Arena_RuleSetting_PalListButton_C.BndEvt__WBP_Arena_RuleSetting_PalListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_Arena_RuleSetting_PalListButton.WBP_Arena_RuleSetting_PalListButton_C.BndEvt__WBP_Arena_RuleSetting_PalListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_RuleSetting_PalListButton_C::BndEvt__WBP_Arena_RuleSetting_PalListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Arena_RuleSetting_PalListButton_C::BndEvt__WBP_Arena_RuleSetting_PalListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleSetting_PalListButton_C", "BndEvt__WBP_Arena_RuleSetting_PalListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Arena_RuleSetting_PalListButton_C", "BndEvt__WBP_Arena_RuleSetting_PalListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_Arena_RuleSetting_PalListButton_C_BndEvt__WBP_Arena_RuleSetting_PalListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_Arena_RuleSetting_PalListButton_C_BndEvt__WBP_Arena_RuleSetting_PalListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -113,19 +131,19 @@ void UWBP_Arena_RuleSetting_PalListButton_C::BndEvt__WBP_Arena_RuleSetting_PalLi
 }
 
 
-// Function WBP_Arena_RuleSetting_PalListButton.WBP_Arena_RuleSetting_PalListButton_C.BndEvt__WBP_Arena_RuleSetting_PalListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_Arena_RuleSetting_PalListButton.WBP_Arena_RuleSetting_PalListButton_C.BndEvt__WBP_Arena_RuleSetting_PalListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_RuleSetting_PalListButton_C::BndEvt__WBP_Arena_RuleSetting_PalListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_Arena_RuleSetting_PalListButton_C::BndEvt__WBP_Arena_RuleSetting_PalListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleSetting_PalListButton_C", "BndEvt__WBP_Arena_RuleSetting_PalListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_Arena_RuleSetting_PalListButton_C", "BndEvt__WBP_Arena_RuleSetting_PalListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_Arena_RuleSetting_PalListButton_C_BndEvt__WBP_Arena_RuleSetting_PalListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_Arena_RuleSetting_PalListButton_C_BndEvt__WBP_Arena_RuleSetting_PalListButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -133,77 +151,59 @@ void UWBP_Arena_RuleSetting_PalListButton_C::BndEvt__WBP_Arena_RuleSetting_PalLi
 }
 
 
-// Function WBP_Arena_RuleSetting_PalListButton.WBP_Arena_RuleSetting_PalListButton_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Arena_RuleSetting_PalListButton.WBP_Arena_RuleSetting_PalListButton_C.AnmEvent_NoFocus
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Arena_RuleSetting_PalListButton_C::Construct()
+void UWBP_Arena_RuleSetting_PalListButton_C::AnmEvent_NoFocus()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleSetting_PalListButton_C", "Construct");
+		Func = Class->GetFunction("WBP_Arena_RuleSetting_PalListButton_C", "AnmEvent_NoFocus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Arena_RuleSetting_PalListButton.WBP_Arena_RuleSetting_PalListButton_C.ExecuteUbergraph_WBP_Arena_RuleSetting_PalListButton
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Arena_RuleSetting_PalListButton.WBP_Arena_RuleSetting_PalListButton_C.AnmEvent_Focus
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Arena_RuleSetting_PalListButton_C::ExecuteUbergraph_WBP_Arena_RuleSetting_PalListButton(int32 EntryPoint)
+void UWBP_Arena_RuleSetting_PalListButton_C::AnmEvent_Focus()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleSetting_PalListButton_C", "ExecuteUbergraph_WBP_Arena_RuleSetting_PalListButton");
+		Func = Class->GetFunction("WBP_Arena_RuleSetting_PalListButton_C", "AnmEvent_Focus");
 
-	Params::WBP_Arena_RuleSetting_PalListButton_C_ExecuteUbergraph_WBP_Arena_RuleSetting_PalListButton Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Arena_RuleSetting_PalListButton.WBP_Arena_RuleSetting_PalListButton_C.SetHide
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    ShouldHide                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Arena_RuleSetting_PalListButton.WBP_Arena_RuleSetting_PalListButton_C.AnmEvent_Enable
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Arena_RuleSetting_PalListButton_C::SetHide(bool ShouldHide)
+void UWBP_Arena_RuleSetting_PalListButton_C::AnmEvent_Enable()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleSetting_PalListButton_C", "SetHide");
+		Func = Class->GetFunction("WBP_Arena_RuleSetting_PalListButton_C", "AnmEvent_Enable");
 
-	Params::WBP_Arena_RuleSetting_PalListButton_C_SetHide Parms{};
-
-	Parms.ShouldHide = ShouldHide;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Arena_RuleSetting_PalListButton.WBP_Arena_RuleSetting_PalListButton_C.Setup
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             CharacterID                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Arena_RuleSetting_PalListButton.WBP_Arena_RuleSetting_PalListButton_C.AnmEvent_Ban
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Arena_RuleSetting_PalListButton_C::Setup(class FName CharacterID)
+void UWBP_Arena_RuleSetting_PalListButton_C::AnmEvent_Ban()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_RuleSetting_PalListButton_C", "Setup");
+		Func = Class->GetFunction("WBP_Arena_RuleSetting_PalListButton_C", "AnmEvent_Ban");
 
-	Params::WBP_Arena_RuleSetting_PalListButton_C_Setup Parms{};
-
-	Parms.CharacterID = CharacterID;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

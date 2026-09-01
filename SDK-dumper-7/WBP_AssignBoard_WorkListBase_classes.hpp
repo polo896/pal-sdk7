@@ -31,17 +31,17 @@ public:
 	bool                                          IsFirstSetup;                                      // 0x02C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_DIsable();
-	void AnmEvent_Enable();
-	void AnmEvent_Select();
-	void AnmEvent_Unselect();
 	void ExecuteUbergraph_WBP_AssignBoard_WorkListBase(int32 EntryPoint);
-	void GetAssignInfo(struct FPalUIBaseCampWorkFixedAssignInfo* AssignInfo);
-	void GetFocusTarget(class UWidget** TargetWidget);
-	void NotifySelect();
-	void SetAssignInfo(const struct FPalUIBaseCampWorkFixedAssignInfo& AssignInfo);
-	void Setup();
+	void AnmEvent_Unselect();
+	void AnmEvent_Select();
+	void AnmEvent_Enable();
+	void AnmEvent_DIsable();
 	void Unbind();
+	void Setup();
+	void SetAssignInfo(const struct FPalUIBaseCampWorkFixedAssignInfo& AssignInfo);
+	void NotifySelect();
+	void GetFocusTarget(class UWidget** TargetWidget);
+	void GetAssignInfo(struct FPalUIBaseCampWorkFixedAssignInfo* AssignInfo);
 
 public:
 	static class UClass* StaticClass()

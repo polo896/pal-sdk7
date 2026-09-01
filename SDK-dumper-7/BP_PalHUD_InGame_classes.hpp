@@ -31,28 +31,28 @@ public:
 	bool                                          GameOverUIBinded;                                  // 0x08B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AsyncLoadAndCreateWidget(TSoftClassPtr<class UClass> WidgetClass);
-	void AsyncSetupHUDEvent();
-	void BindGameOverUI();
 	void CREATEDELEGATE_PROXYFUNCTION_0(class APalPlayerCharacter* PlayerCharacter, const struct FPalDyingEndInfo& DyingEndInfo);
-	void DisplayHUD_Respawn();
-	void ExecuteUbergraph_BP_PalHUD_InGame(int32 EntryPoint);
-	void HideHUD_ForDeath();
-	void HideLiftItemDisplay();
-	void Initialize();
-	void OnDyingEnd(class APalPlayerCharacter* PlayerCharacter, const struct FPalDyingEndInfo& DyingEndInfo);
-	void OnLoaded_01D7FBF3483366434C8293A197BFD965(TSubclassOf<class UObject> Loaded);
-	void OnLoaded_39EEADC54AE57646EA72A79D911211B6(TSubclassOf<class UObject> Loaded);
-	void OnLoaded_EF35A3894C280426B58FA0A0D5280930(TSubclassOf<class UObject> Loaded);
-	void OnRespawnPlayer(class APalPlayerCharacter* Player);
-	void OnUpdateLiftSlot();
-	void ReceiveDrawHUD(int32 SizeX, int32 SizeY);
-	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
-	void ReceiveTick(float DeltaSeconds);
-	void Setup_Lift_Item_Event();
-	void SetupHUD_Internal();
-	void ShowLiftItemDisplay();
+	void BindGameOverUI();
+	void AsyncSetupHUDEvent();
+	void AsyncLoadAndCreateWidget(TSoftClassPtr<class UClass> WidgetClass);
 	void UpdateWorldHUDs();
+	void ShowLiftItemDisplay();
+	void SetupHUD_Internal();
+	void Setup_Lift_Item_Event();
+	void ReceiveTick(float DeltaSeconds);
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void ReceiveDrawHUD(int32 SizeX, int32 SizeY);
+	void OnUpdateLiftSlot();
+	void OnRespawnPlayer(class APalPlayerCharacter* Player);
+	void OnLoaded_EF35A3894C280426B58FA0A0D5280930(TSubclassOf<class UObject> Loaded);
+	void OnLoaded_39EEADC54AE57646EA72A79D911211B6(TSubclassOf<class UObject> Loaded);
+	void OnLoaded_01D7FBF3483366434C8293A197BFD965(TSubclassOf<class UObject> Loaded);
+	void OnDyingEnd(class APalPlayerCharacter* PlayerCharacter, const struct FPalDyingEndInfo& DyingEndInfo);
+	void Initialize();
+	void HideLiftItemDisplay();
+	void HideHUD_ForDeath();
+	void ExecuteUbergraph_BP_PalHUD_InGame(int32 EntryPoint);
+	void DisplayHUD_Respawn();
 
 public:
 	static class UClass* StaticClass()

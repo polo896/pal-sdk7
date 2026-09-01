@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_WorkerSimpleDetail.WBP_WorkerSimpleDetail_C.CloseSetup
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_WorkerSimpleDetail_C::CloseSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_WorkerSimpleDetail_C", "CloseSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_WorkerSimpleDetail.WBP_WorkerSimpleDetail_C.OpenSetup
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -48,6 +34,20 @@ void UWBP_WorkerSimpleDetail_C::OpenSetup(class UPalIndividualCharacterHandle* t
 	Parms.targetHandle = targetHandle;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_WorkerSimpleDetail.WBP_WorkerSimpleDetail_C.CloseSetup
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_WorkerSimpleDetail_C::CloseSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_WorkerSimpleDetail_C", "CloseSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

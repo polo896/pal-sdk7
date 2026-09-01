@@ -18,14 +18,89 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameMenu_ChestSetting.WBP_IngameMenu_ChestSetting_C.BndEvt__WBP_IngameMenu_ChestSetting_WBP_IngameMenu_ChestSetting_FilterBlock_K2Node_ComponentBoundEvent_4_OnEditedCustomName__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_C_BndEvt__WBP_IngameMenu_ChestSetting_WBP_IngameMenu_ChestSetting_FilterBlock_K2Node_ComponentBoundEvent_4_OnEditedCustomName__DelegateSignature final
+// Function WBP_IngameMenu_ChestSetting.WBP_IngameMenu_ChestSetting_C.WBP_IngameMenu_ChestSetting_AutoGenFunc
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_IngameMenu_ChestSetting_C_WBP_IngameMenu_ChestSetting_AutoGenFunc final
 {
 public:
-	class FString                                 NewCustomName;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEditingCustomName_bEditing;             // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_C_BndEvt__WBP_IngameMenu_ChestSetting_WBP_IngameMenu_ChestSetting_FilterBlock_K2Node_ComponentBoundEvent_4_OnEditedCustomName__DelegateSignature;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_C_WBP_IngameMenu_ChestSetting_AutoGenFunc;
+
+// Function WBP_IngameMenu_ChestSetting.WBP_IngameMenu_ChestSetting_C.SWITCH
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_IngameMenu_ChestSetting_C_SWITCH final
+{
+public:
+	bool                                          ToFilter;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetDesiredFocusTarget_ReturnValue;        // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_BoolBool_ReturnValue;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_C_SWITCH;
+
+// Function WBP_IngameMenu_ChestSetting.WBP_IngameMenu_ChestSetting_C.SetupNameEdit
+// 0x0070 (0x0070 - 0x0000)
+struct WBP_IngameMenu_ChestSetting_C_SetupNameEdit final
+{
+public:
+	class UPalMapObjectManager*                   CallFunc_GetMapObjectManager_ReturnValue;          // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalHUDDispatchParameter_ChestSetting*  K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_Chest_Setting; // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGuid                                  CallFunc_GetModelInstanceId_ReturnValue;           // 0x0024(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalMapObjectModel*                     CallFunc_FindModel_ReturnValue;                    // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetCustomName_ReturnValue;                // 0x0048(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	struct FGuid                                  CallFunc_GetBaseCampIdBelongTo_ReturnValue;        // 0x0058(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_Guid_ReturnValue;                 // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_C_SetupNameEdit;
+
+// Function WBP_IngameMenu_ChestSetting.WBP_IngameMenu_ChestSetting_C.SetupFilter
+// 0x00C0 (0x00C0 - 0x0000)
+struct WBP_IngameMenu_ChestSetting_C_SetupFilter final
+{
+public:
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class FName FilterId, bool bChecked)> K2Node_CreateDelegate_OutputDelegate;       // 0x000C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalUIItemChestFilterModel*             CallFunc_SpawnObject_ReturnValue;                  // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TMap<class FName, class FName>                CallFunc_GetFilterIdAndDisplayTextId_ReturnValue;  // 0x0028(0x0050)()
+	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                           CallFunc_Map_Keys_Keys;                            // 0x0080(0x0010)(ReferenceParm)
+	class UPalHUDDispatchParameter_MapObject*     K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_Map_Object; // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_Array_Get_Item;                           // 0x009C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Map_Find_Value;                           // 0x00A4(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_AD[0x3];                                       // 0x00AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_IngameMenu_Chest_FilterContent_C*  CallFunc_AddContentItem_ReturnValue;               // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_C_SetupFilter;
+
+// Function WBP_IngameMenu_ChestSetting.WBP_IngameMenu_ChestSetting_C.OnClickedCheck
+// 0x000C (0x000C - 0x0000)
+struct WBP_IngameMenu_ChestSetting_C_OnClickedCheck final
+{
+public:
+	class FName                                   FilterId;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bChecked;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_C_OnClickedCheck;
 
 // Function WBP_IngameMenu_ChestSetting.WBP_IngameMenu_ChestSetting_C.ExecuteUbergraph_WBP_IngameMenu_ChestSetting
 // 0x00E0 (0x00E0 - 0x0000)
@@ -73,89 +148,14 @@ public:
 };
 DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_C_ExecuteUbergraph_WBP_IngameMenu_ChestSetting;
 
-// Function WBP_IngameMenu_ChestSetting.WBP_IngameMenu_ChestSetting_C.OnClickedCheck
-// 0x000C (0x000C - 0x0000)
-struct WBP_IngameMenu_ChestSetting_C_OnClickedCheck final
+// Function WBP_IngameMenu_ChestSetting.WBP_IngameMenu_ChestSetting_C.BndEvt__WBP_IngameMenu_ChestSetting_WBP_IngameMenu_ChestSetting_FilterBlock_K2Node_ComponentBoundEvent_4_OnEditedCustomName__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameMenu_ChestSetting_C_BndEvt__WBP_IngameMenu_ChestSetting_WBP_IngameMenu_ChestSetting_FilterBlock_K2Node_ComponentBoundEvent_4_OnEditedCustomName__DelegateSignature final
 {
 public:
-	class FName                                   FilterId;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bChecked;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 NewCustomName;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_C_OnClickedCheck;
-
-// Function WBP_IngameMenu_ChestSetting.WBP_IngameMenu_ChestSetting_C.SetupFilter
-// 0x00C0 (0x00C0 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_C_SetupFilter final
-{
-public:
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class FName FilterId, bool bChecked)> K2Node_CreateDelegate_OutputDelegate;       // 0x000C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalUIItemChestFilterModel*             CallFunc_SpawnObject_ReturnValue;                  // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TMap<class FName, class FName>                CallFunc_GetFilterIdAndDisplayTextId_ReturnValue;  // 0x0028(0x0050)()
-	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class FName>                           CallFunc_Map_Keys_Keys;                            // 0x0080(0x0010)(ReferenceParm)
-	class UPalHUDDispatchParameter_MapObject*     K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_Map_Object; // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_Array_Get_Item;                           // 0x009C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Map_Find_Value;                           // 0x00A4(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_AD[0x3];                                       // 0x00AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_IngameMenu_Chest_FilterContent_C*  CallFunc_AddContentItem_ReturnValue;               // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_C_SetupFilter;
-
-// Function WBP_IngameMenu_ChestSetting.WBP_IngameMenu_ChestSetting_C.SetupNameEdit
-// 0x0070 (0x0070 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_C_SetupNameEdit final
-{
-public:
-	class UPalMapObjectManager*                   CallFunc_GetMapObjectManager_ReturnValue;          // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalHUDDispatchParameter_ChestSetting*  K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_Chest_Setting; // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGuid                                  CallFunc_GetModelInstanceId_ReturnValue;           // 0x0024(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalMapObjectModel*                     CallFunc_FindModel_ReturnValue;                    // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetCustomName_ReturnValue;                // 0x0048(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	struct FGuid                                  CallFunc_GetBaseCampIdBelongTo_ReturnValue;        // 0x0058(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_Guid_ReturnValue;                 // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_C_SetupNameEdit;
-
-// Function WBP_IngameMenu_ChestSetting.WBP_IngameMenu_ChestSetting_C.SWITCH
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_C_SWITCH final
-{
-public:
-	bool                                          ToFilter;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_GetDesiredFocusTarget_ReturnValue;        // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_BoolBool_ReturnValue;          // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_C_SWITCH;
-
-// Function WBP_IngameMenu_ChestSetting.WBP_IngameMenu_ChestSetting_C.WBP_IngameMenu_ChestSetting_AutoGenFunc
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_IngameMenu_ChestSetting_C_WBP_IngameMenu_ChestSetting_AutoGenFunc final
-{
-public:
-	bool                                          CallFunc_IsEditingCustomName_bEditing;             // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_C_WBP_IngameMenu_ChestSetting_AutoGenFunc;
+DUMPER7_ASSERTS_WBP_IngameMenu_ChestSetting_C_BndEvt__WBP_IngameMenu_ChestSetting_WBP_IngameMenu_ChestSetting_FilterBlock_K2Node_ComponentBoundEvent_4_OnEditedCustomName__DelegateSignature;
 
 // Function WBP_IngameMenu_ChestSetting.WBP_IngameMenu_ChestSetting_C.BP_GetDesiredFocusTarget
 // 0x0020 (0x0020 - 0x0000)

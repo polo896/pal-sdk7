@@ -17,17 +17,55 @@
 namespace SDK::Params
 {
 
-// Function WBP_Altar_Info.WBP_Altar_Info_C.ExecuteUbergraph_WBP_Altar_Info
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Altar_Info_C_ExecuteUbergraph_WBP_Altar_Info final
+// Function WBP_Altar_Info.WBP_Altar_Info_C.SetTowerBossInfo
+// 0x0178 (0x0178 - 0x0000)
+struct WBP_Altar_Info_C_SetTowerBossInfo final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPalBossType                                  BossType;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   BossId;                                            // 0x0004(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalRaidBossSpawnInfo                  SpawnInfo;                                         // 0x0010(0x0060)(Edit, BlueprintVisible)
+	struct FPalRaidBossDataRow                    RaidBossData;                                      // 0x0070(0x00B8)(Edit, BlueprintVisible)
+	class UPalDatabaseCharacterParameter*         CallFunc_GetDatabaseCharacterParameter_ReturnValue; // 0x0128(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetPrefixNameMsgId_OutMsgID;              // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_139[0x7];                                      // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0140(0x0018)()
+	class UPalDatabaseCharacterParameter*         CallFunc_GetDatabaseCharacterParameter_ReturnValue_1; // 0x0158(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetLocalizedCharacterName_OutText;        // 0x0160(0x0018)()
 };
-DUMPER7_ASSERTS_WBP_Altar_Info_C_ExecuteUbergraph_WBP_Altar_Info;
+DUMPER7_ASSERTS_WBP_Altar_Info_C_SetTowerBossInfo;
+
+// Function WBP_Altar_Info.WBP_Altar_Info_C.SetTimeText
+// 0x0080 (0x0080 - 0x0000)
+struct WBP_Altar_Info_C_SetTimeText final
+{
+public:
+	class URichTextBlock*                         TargetText1;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class URichTextBlock*                         TargetText2;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         TimeInteger;                                       // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Divide_IntInt_ReturnValue;                // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0020(0x0018)()
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x0038(0x0018)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0050(0x0018)()
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x0068(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_Altar_Info_C_SetTimeText;
+
+// Function WBP_Altar_Info.WBP_Altar_Info_C.SetRemainingTime
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Altar_Info_C_SetRemainingTime final
+{
+public:
+	int32                                         Minutes;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Seconds;                                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Altar_Info_C_SetRemainingTime;
 
 // Function WBP_Altar_Info.WBP_Altar_Info_C.SetRaidBossInfo
 // 0x02A0 (0x02A0 - 0x0000)
@@ -58,55 +96,17 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Altar_Info_C_SetRaidBossInfo;
 
-// Function WBP_Altar_Info.WBP_Altar_Info_C.SetRemainingTime
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Altar_Info_C_SetRemainingTime final
+// Function WBP_Altar_Info.WBP_Altar_Info_C.ExecuteUbergraph_WBP_Altar_Info
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Altar_Info_C_ExecuteUbergraph_WBP_Altar_Info final
 {
 public:
-	int32                                         Minutes;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Seconds;                                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Altar_Info_C_SetRemainingTime;
-
-// Function WBP_Altar_Info.WBP_Altar_Info_C.SetTimeText
-// 0x0080 (0x0080 - 0x0000)
-struct WBP_Altar_Info_C_SetTimeText final
-{
-public:
-	class URichTextBlock*                         TargetText1;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class URichTextBlock*                         TargetText2;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         TimeInteger;                                       // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Divide_IntInt_ReturnValue;                // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0020(0x0018)()
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x0038(0x0018)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0050(0x0018)()
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue_1;            // 0x0068(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_Altar_Info_C_SetTimeText;
-
-// Function WBP_Altar_Info.WBP_Altar_Info_C.SetTowerBossInfo
-// 0x0178 (0x0178 - 0x0000)
-struct WBP_Altar_Info_C_SetTowerBossInfo final
-{
-public:
-	EPalBossType                                  BossType;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   BossId;                                            // 0x0004(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalRaidBossSpawnInfo                  SpawnInfo;                                         // 0x0010(0x0060)(Edit, BlueprintVisible)
-	struct FPalRaidBossDataRow                    RaidBossData;                                      // 0x0070(0x00B8)(Edit, BlueprintVisible)
-	class UPalDatabaseCharacterParameter*         CallFunc_GetDatabaseCharacterParameter_ReturnValue; // 0x0128(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetPrefixNameMsgId_OutMsgID;              // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_139[0x7];                                      // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0140(0x0018)()
-	class UPalDatabaseCharacterParameter*         CallFunc_GetDatabaseCharacterParameter_ReturnValue_1; // 0x0158(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetLocalizedCharacterName_OutText;        // 0x0160(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_Altar_Info_C_SetTowerBossInfo;
+DUMPER7_ASSERTS_WBP_Altar_Info_C_ExecuteUbergraph_WBP_Altar_Info;
 
 }
 

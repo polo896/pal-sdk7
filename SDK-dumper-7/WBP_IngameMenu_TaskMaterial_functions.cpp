@@ -17,21 +17,21 @@
 namespace SDK
 {
 
-// Function WBP_IngameMenu_TaskMaterial.WBP_IngameMenu_TaskMaterial_C.SetHIdeWhenZeroFlag
+// Function WBP_IngameMenu_TaskMaterial.WBP_IngameMenu_TaskMaterial_C.SetupTexture
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    isHideWhenZero                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             StaticItemId                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_TaskMaterial_C::SetHIdeWhenZeroFlag(bool isHideWhenZero)
+void UWBP_IngameMenu_TaskMaterial_C::SetupTexture(class FName StaticItemId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_TaskMaterial_C", "SetHIdeWhenZeroFlag");
+		Func = Class->GetFunction("WBP_IngameMenu_TaskMaterial_C", "SetupTexture");
 
-	Params::WBP_IngameMenu_TaskMaterial_C_SetHIdeWhenZeroFlag Parms{};
+	Params::WBP_IngameMenu_TaskMaterial_C_SetupTexture Parms{};
 
-	Parms.isHideWhenZero = isHideWhenZero;
+	Parms.StaticItemId = StaticItemId;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -59,21 +59,21 @@ void UWBP_IngameMenu_TaskMaterial_C::SetItemNum(int64 itemNum, int64 gaugeMaxBor
 }
 
 
-// Function WBP_IngameMenu_TaskMaterial.WBP_IngameMenu_TaskMaterial_C.SetupTexture
+// Function WBP_IngameMenu_TaskMaterial.WBP_IngameMenu_TaskMaterial_C.SetHIdeWhenZeroFlag
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             StaticItemId                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    isHideWhenZero                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_TaskMaterial_C::SetupTexture(class FName StaticItemId)
+void UWBP_IngameMenu_TaskMaterial_C::SetHIdeWhenZeroFlag(bool isHideWhenZero)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_TaskMaterial_C", "SetupTexture");
+		Func = Class->GetFunction("WBP_IngameMenu_TaskMaterial_C", "SetHIdeWhenZeroFlag");
 
-	Params::WBP_IngameMenu_TaskMaterial_C_SetupTexture Parms{};
+	Params::WBP_IngameMenu_TaskMaterial_C_SetHIdeWhenZeroFlag Parms{};
 
-	Parms.StaticItemId = StaticItemId;
+	Parms.isHideWhenZero = isHideWhenZero;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

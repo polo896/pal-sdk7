@@ -28,11 +28,11 @@ public:
 	class UWBP_Ingame_Chat_C*                     WBP_Ingame_Chat;                                   // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_Ingame_Chat_Wrapper_WBP_Ingame_Chat_K2Node_ComponentBoundEvent_0_OnCompleteInput__DelegateSignature();
-	void CanOpenAnyUI(bool* bCanOpenAnyUI);
-	void ExecuteUbergraph_WBP_Ingame_Chat_Wrapper(int32 EntryPoint);
-	struct FEventReply On_Image_ForceClose_MouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 	void ShowChat();
+	struct FEventReply On_Image_ForceClose_MouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void ExecuteUbergraph_WBP_Ingame_Chat_Wrapper(int32 EntryPoint);
+	void CanOpenAnyUI(bool* bCanOpenAnyUI);
+	void BndEvt__WBP_Ingame_Chat_Wrapper_WBP_Ingame_Chat_K2Node_ComponentBoundEvent_0_OnCompleteInput__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()

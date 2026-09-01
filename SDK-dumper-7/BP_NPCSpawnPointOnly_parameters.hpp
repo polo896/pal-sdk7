@@ -10,14 +10,24 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "F_NPCOnePointSpawnInfo_structs.hpp"
 #include "F_NPC_PathWalkPoint_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "F_NPC_PathWalkArray_structs.hpp"
 
 
 namespace SDK::Params
 {
+
+// Function BP_NPCSpawnPointOnly.BP_NPCSpawnPointOnly_C.GetOneSpawnInfo
+// 0x0140 (0x0140 - 0x0000)
+struct BP_NPCSpawnPointOnly_C_GetOneSpawnInfo final
+{
+public:
+	struct FF_NPCOnePointSpawnInfo                Info;                                              // 0x0000(0x00A0)(Parm, OutParm, HasGetValueTypeHash)
+	struct FF_NPCOnePointSpawnInfo                CallFunc_Get_Spawn_One_Info_OneInfo;               // 0x00A0(0x00A0)(HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_NPCSpawnPointOnly_C_GetOneSpawnInfo;
 
 // Function BP_NPCSpawnPointOnly.BP_NPCSpawnPointOnly_C.Get Spawn One Info
 // 0x02F0 (0x02F0 - 0x0000)
@@ -68,16 +78,6 @@ public:
 	double                                        K2Node_MakeStruct_Yaw_13_9634CB3043B1505237E811853806822B_ImplicitCast; // 0x02E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_NPCSpawnPointOnly_C_Get_Spawn_One_Info;
-
-// Function BP_NPCSpawnPointOnly.BP_NPCSpawnPointOnly_C.GetOneSpawnInfo
-// 0x0140 (0x0140 - 0x0000)
-struct BP_NPCSpawnPointOnly_C_GetOneSpawnInfo final
-{
-public:
-	struct FF_NPCOnePointSpawnInfo                Info;                                              // 0x0000(0x00A0)(Parm, OutParm, HasGetValueTypeHash)
-	struct FF_NPCOnePointSpawnInfo                CallFunc_Get_Spawn_One_Info_OneInfo;               // 0x00A0(0x00A0)(HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_NPCSpawnPointOnly_C_GetOneSpawnInfo;
 
 }
 

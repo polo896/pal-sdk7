@@ -1,0 +1,75 @@
+---@meta
+
+---@class ABP_NPCCamp_Hunter_01_02_C : ABP_NPCCampPresetBase_C
+---@field SK104_EnemyCamp_Hunter_Flag_1 UPalSkeletalMeshComponent
+---@field ISM_SM_Fence_Iron UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_Pillar_Iron UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_Roof_Iron UHierarchicalInstancedStaticMeshComponent
+---@field VirtualShapeBox108_EnemyCamp_Metal_WindowWall_1 UBoxComponent
+---@field VirtualShapeBox107_EnemyCamp_Metal_WindowWall_1 UBoxComponent
+---@field VirtualShapeBox106_EnemyCamp_Metal_WindowWall_1 UBoxComponent
+---@field VirtualShapeBox105_EnemyCamp_Metal_WindowWall_1 UBoxComponent
+---@field ISM_SM_WallWindow_Iron UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_Wall_Iron UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_Stair_Iron UHierarchicalInstancedStaticMeshComponent
+---@field Spawner049_EnemyCamp_Metal_DoorWall_2 UPalMapObjectSpawnComponent
+---@field Spawner048_EnemyCamp_Metal_DoorWall_2 UPalMapObjectSpawnComponent
+---@field Spawner047_EnemyCamp_Metal_DoorWall_2 UPalMapObjectSpawnComponent
+---@field Spawner046_EnemyCamp_Metal_DoorWall_2 UPalMapObjectSpawnComponent
+---@field Spawner045_EnemyCamp_Metal_DoorWall_2 UPalMapObjectSpawnComponent
+---@field EditorOnly_ISM_SM_Door_Iron UHierarchicalInstancedStaticMeshComponent
+---@field EditorOnly_ISM_SM_Doorbase_Iron UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_Floor_Iron UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_PalGlobalBox UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_WallTryangle_Iron UHierarchicalInstancedStaticMeshComponent
+---@field SK030_EnemyCamp_ManualElectricGenerator_0 UPalMapObjectSkeletalMeshComponent
+---@field Spawner029_EnemyCamp_Desk01_Stone_9 UPalMapObjectSpawnComponent
+---@field EditorOnly_ISM_SM_papers_floor_02 UHierarchicalInstancedStaticMeshComponent
+---@field EditorOnly_ISM_SM_Clock_Small UHierarchicalInstancedStaticMeshComponent
+---@field EditorOnly_ISM_SM_Chair01 UHierarchicalInstancedStaticMeshComponent
+---@field EditorOnly_ISM_SM_pen UHierarchicalInstancedStaticMeshComponent
+---@field EditorOnly_ISM_SM_papers_floor_01 UHierarchicalInstancedStaticMeshComponent
+---@field EditorOnly_ISM_SM_Table_1_comb UHierarchicalInstancedStaticMeshComponent
+---@field EditorOnly_ISM_SM_box_desk UHierarchicalInstancedStaticMeshComponent
+---@field EditorOnly_ISM_SM_book_open UHierarchicalInstancedStaticMeshComponent
+---@field EditorOnly_ISM_SM_Night_lamp_3 UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_EnergyStorage UHierarchicalInstancedStaticMeshComponent
+---@field Spawner026_EnemyCamp_Glass_DoorWall_2 UPalMapObjectSpawnComponent
+---@field EditorOnly_ISM_SM_Door_Glass UHierarchicalInstancedStaticMeshComponent
+---@field EditorOnly_ISM_SM_Doorbase_Glass UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_cup_board_props UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_cup_board_01 UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_cask_01 UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_PalCage UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_Wall_Glass UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_DamagedScarecrow UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_stool UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_circular_table UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_FriedEggsSet UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_CircularTable_onProp UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_garbageBag_set UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_WorkBenchMedieval UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_PalSphereFactoryMedieval UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_Box2 UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_WeaponFactoryMedieval UHierarchicalInstancedStaticMeshComponent
+---@field SK005_EnemyCamp_DefenseMachinegun_2 USkeletalMeshComponent
+---@field ISM_SM_Step UHierarchicalInstancedStaticMeshComponent
+---@field ISM_DefenseFacilityMedieval_Sand UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_RoofB_Iron UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_GroupBanner_00 UHierarchicalInstancedStaticMeshComponent
+---@field PalLimitVolumeBox UPalLimitVolumeBoxComponent
+---@field PalFoliageRemoveVolumeBox UPalFoliageRemoveVolumeBoxComponent
+---@field BP_SquadNPCSpawner_ForCamp_Hunter_01_02_3F_Main UChildActorComponent
+---@field BP_SquadNPCSpawner_ForCamp_Hunter_01_02_1F_Outside_Cabin UChildActorComponent
+---@field BP_SquadNPCSpawner_ForCamp_Hunter_01_02_2F_Main UChildActorComponent
+---@field BP_EnemyCampTreasureBoxSpawnerComponent2 UBP_EnemyCampTreasureBoxSpawnerComponent_C
+---@field BP_SquadNPCSpawner_ForCamp_Hunter_01_02_1F_Main UChildActorComponent
+---@field BP_EnemyCampTreasureBoxSpawnerComponent1 UBP_EnemyCampTreasureBoxSpawnerComponent_C
+---@field BP_EnemyCampTreasureBoxSpawnerComponent_Goal UBP_EnemyCampTreasureBoxSpawnerComponent_C
+---@field BP_PalCapturedCage UChildActorComponent
+---@field BP_EnemyCampTreasureBoxSpawnerComponent UBP_EnemyCampTreasureBoxSpawnerComponent_C
+---@field BuildObjectRoot USceneComponent
+local ABP_NPCCamp_Hunter_01_02_C = {}
+
+
+

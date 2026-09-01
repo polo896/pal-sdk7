@@ -63,28 +63,28 @@ public:
 	TArray<class UMaterialInstanceDynamic*>       coolDownGaugeMaterials;                            // 0x0398(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void AnmEvent_CoolDown();
-	void AnmEvent_CoolDownComplated();
-	void AnmEvent_InputHold();
-	void AnmEvent_InputRelease();
-	void AnmEvent_Lock();
-	void AnmEvent_SkillCall();
-	void AnmEvent_SkillEnable();
-	void AnmEvent_StartSkill();
-	void AnmEvent_Unlock();
-	void AnmEvent_UsingSkill(bool TogglePlay);
-	void ClearIcon();
-	void Construct();
-	void ExecuteUbergraph_WBP_Ingame_PalSkillGauge(int32 EntryPoint);
-	void Finished_1B5CFD894135B19FA456D2BA4B93AE99();
-	void Hide_Key_Guide(bool Hide);
-	void OnInputMethodChanged(ECommonInputType bNewInputType);
-	void Set_Cool_Down_Gauge_Percent(double Now, double Max);
-	void Set_Skill_Gauge_Percent(double Percent);
-	void Set_Skill_Name(const class FText& SkillNameText);
-	void Set_Skill_Name_Locked();
-	void Setup_Icon_Texture();
 	void ShowFlyKeyGuide(bool Show);
+	void Setup_Icon_Texture();
+	void Set_Skill_Name_Locked();
+	void Set_Skill_Name(const class FText& SkillNameText);
+	void Set_Skill_Gauge_Percent(double Percent);
+	void Set_Cool_Down_Gauge_Percent(double Now, double Max);
+	void OnInputMethodChanged(ECommonInputType bNewInputType);
+	void Hide_Key_Guide(bool Hide);
+	void Finished_1B5CFD894135B19FA456D2BA4B93AE99();
+	void ExecuteUbergraph_WBP_Ingame_PalSkillGauge(int32 EntryPoint);
+	void Construct();
+	void ClearIcon();
+	void AnmEvent_UsingSkill(bool TogglePlay);
+	void AnmEvent_Unlock();
+	void AnmEvent_StartSkill();
+	void AnmEvent_SkillEnable();
+	void AnmEvent_SkillCall();
+	void AnmEvent_Lock();
+	void AnmEvent_InputRelease();
+	void AnmEvent_InputHold();
+	void AnmEvent_CoolDownComplated();
+	void AnmEvent_CoolDown();
 
 public:
 	static class UClass* StaticClass()

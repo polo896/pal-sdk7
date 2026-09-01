@@ -17,6 +17,48 @@
 namespace SDK
 {
 
+// Function WBP_AutoSave.WBP_AutoSave_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_AutoSave_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AutoSave_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_AutoSave.WBP_AutoSave_C.AnmEvent_Stop
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_AutoSave_C::AnmEvent_Stop()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AutoSave_C", "AnmEvent_Stop");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_AutoSave.WBP_AutoSave_C.AnmEvent_Loop
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_AutoSave_C::AnmEvent_Loop()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_AutoSave_C", "AnmEvent_Loop");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_AutoSave.WBP_AutoSave_C.StartSaving
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -245,48 +287,6 @@ void UWBP_AutoSave_C::Destruct()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_AutoSave_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_AutoSave.WBP_AutoSave_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_AutoSave_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AutoSave_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_AutoSave.WBP_AutoSave_C.AnmEvent_Stop
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_AutoSave_C::AnmEvent_Stop()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AutoSave_C", "AnmEvent_Stop");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_AutoSave.WBP_AutoSave_C.AnmEvent_Loop
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_AutoSave_C::AnmEvent_Loop()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AutoSave_C", "AnmEvent_Loop");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -10,9 +10,9 @@ class UBP_PalIncidentInvaderEnemy_C : public UBP_PalIncidentInvaderBase_C
     class APalInvaderInfo* NewVar;                                                    // 0x04E0 (size: 0x8)
 
     void OnDeadEnemy(FPalDeadInfo DeadInfo);
-    TArray<class APalPlayerCharacter*> GetAttackerPlayers();
+    TArray<APalPlayerCharacter*> GetAttackerPlayers();
     void ReturnToSpawnedPoint();
-    void OnAllCharacterSpawned(TArray<class APalAIController*>& MemberController);
+    void OnAllCharacterSpawned(TArray<APalAIController*>& MemberController);
     void OnCharacterSpawned(class APalCharacter* SpawnedCharacter);
     void Get Character Location Type(EPalCharacterLocationType& CharacterLocationType);
     bool GetInvaderStartPoint(FVector& Result);

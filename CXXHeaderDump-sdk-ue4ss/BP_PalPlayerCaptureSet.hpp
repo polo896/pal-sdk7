@@ -19,7 +19,7 @@ class ABP_PalPlayerCaptureSet_C : public APalUIInframeRenderer
     FRotator TargetRotation;                                                          // 0x0308 (size: 0x18)
     FVector DefaultCameraPosition;                                                    // 0x0320 (size: 0x18)
     double RotateInterpolationRate;                                                   // 0x0338 (size: 0x8)
-    TMap<class UMaterialInstance*, class UMaterialInstance*> ArmorMaterialOverrideMap; // 0x0340 (size: 0x50)
+    TMap<UMaterialInstance*, UMaterialInstance*> ArmorMaterialOverrideMap;            // 0x0340 (size: 0x50)
 
     void ResetCameraLocation();
     void UpdateShowOnlyActors();

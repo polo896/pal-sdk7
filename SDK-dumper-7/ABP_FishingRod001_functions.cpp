@@ -17,27 +17,23 @@
 namespace SDK
 {
 
-// Function ABP_FishingRod001.ABP_FishingRod001_C.AnimGraph
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function ABP_FishingRod001.ABP_FishingRod001_C.SetDisableRigidBodyBlend
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FPoseLink&                 InPose                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
+// bool                                    isDisable                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UABP_FishingRod001_C::AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph_0)
+void UABP_FishingRod001_C::SetDisableRigidBodyBlend(bool isDisable)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_FishingRod001_C", "AnimGraph");
+		Func = Class->GetFunction("ABP_FishingRod001_C", "SetDisableRigidBodyBlend");
 
-	Params::ABP_FishingRod001_C_AnimGraph Parms{};
+	Params::ABP_FishingRod001_C_SetDisableRigidBodyBlend Parms{};
 
-	Parms.InPose = std::move(InPose);
+	Parms.isDisable = isDisable;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (AnimGraph_0 != nullptr)
-		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
 }
 
 
@@ -61,23 +57,27 @@ void UABP_FishingRod001_C::ExecuteUbergraph_ABP_FishingRod001(int32 EntryPoint)
 }
 
 
-// Function ABP_FishingRod001.ABP_FishingRod001_C.SetDisableRigidBodyBlend
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function ABP_FishingRod001.ABP_FishingRod001_C.AnimGraph
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    isDisable                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FPoseLink&                 InPose                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
 
-void UABP_FishingRod001_C::SetDisableRigidBodyBlend(bool isDisable)
+void UABP_FishingRod001_C::AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_FishingRod001_C", "SetDisableRigidBodyBlend");
+		Func = Class->GetFunction("ABP_FishingRod001_C", "AnimGraph");
 
-	Params::ABP_FishingRod001_C_SetDisableRigidBodyBlend Parms{};
+	Params::ABP_FishingRod001_C_AnimGraph Parms{};
 
-	Parms.isDisable = isDisable;
+	Parms.InPose = std::move(InPose);
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (AnimGraph_0 != nullptr)
+		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
 }
 
 }

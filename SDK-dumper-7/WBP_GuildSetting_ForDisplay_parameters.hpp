@@ -16,6 +16,16 @@
 namespace SDK::Params
 {
 
+// Function WBP_GuildSetting_ForDisplay.WBP_GuildSetting_ForDisplay_C.BndEvt__WBP_GuildSetting_ForDisplay_WBP_Guild_Setting_K2Node_ComponentBoundEvent_1_OnChangedNoticeSetting__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_GuildSetting_ForDisplay_C_BndEvt__WBP_GuildSetting_ForDisplay_WBP_Guild_Setting_K2Node_ComponentBoundEvent_1_OnChangedNoticeSetting__DelegateSignature final
+{
+public:
+	EPalGuildNotificationType                     NotificationType;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bEnableNotice;                                     // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_GuildSetting_ForDisplay_C_BndEvt__WBP_GuildSetting_ForDisplay_WBP_Guild_Setting_K2Node_ComponentBoundEvent_1_OnChangedNoticeSetting__DelegateSignature;
+
 // Function WBP_GuildSetting_ForDisplay.WBP_GuildSetting_ForDisplay_C.BndEvt__WBP_GuildSetting_ForDisplay_WBP_Guild_Setting_K2Node_ComponentBoundEvent_0_OnChangeRoleSetting__DelegateSignature
 // 0x0003 (0x0003 - 0x0000)
 struct WBP_GuildSetting_ForDisplay_C_BndEvt__WBP_GuildSetting_ForDisplay_WBP_Guild_Setting_K2Node_ComponentBoundEvent_0_OnChangeRoleSetting__DelegateSignature final
@@ -27,15 +37,31 @@ public:
 };
 DUMPER7_ASSERTS_WBP_GuildSetting_ForDisplay_C_BndEvt__WBP_GuildSetting_ForDisplay_WBP_Guild_Setting_K2Node_ComponentBoundEvent_0_OnChangeRoleSetting__DelegateSignature;
 
-// Function WBP_GuildSetting_ForDisplay.WBP_GuildSetting_ForDisplay_C.BndEvt__WBP_GuildSetting_ForDisplay_WBP_Guild_Setting_K2Node_ComponentBoundEvent_1_OnChangedNoticeSetting__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_GuildSetting_ForDisplay_C_BndEvt__WBP_GuildSetting_ForDisplay_WBP_Guild_Setting_K2Node_ComponentBoundEvent_1_OnChangedNoticeSetting__DelegateSignature final
+// Function WBP_GuildSetting_ForDisplay.WBP_GuildSetting_ForDisplay_C.SetupNoticeSetting
+// 0x0058 (0x0058 - 0x0000)
+struct WBP_GuildSetting_ForDisplay_C_SetupNoticeSetting final
 {
 public:
-	EPalGuildNotificationType                     NotificationType;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bEnableNotice;                                     // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TMap<EPalGuildNotificationType, bool>         NewLocalVar;                                       // 0x0000(0x0050)(Edit, BlueprintVisible)
+	EPalGuildNotificationType                     Temp_byte_Variable;                                // 0x0050(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalGuildNotificationType                     Temp_byte_Variable_1;                              // 0x0051(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalGuildNotificationType                     Temp_byte_Variable_2;                              // 0x0052(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalGuildNotificationType                     Temp_byte_Variable_3;                              // 0x0053(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetGuildNotificationEnabled_ReturnValue;  // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetGuildNotificationEnabled_ReturnValue_1; // 0x0055(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetGuildNotificationEnabled_ReturnValue_2; // 0x0056(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetGuildNotificationEnabled_ReturnValue_3; // 0x0057(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_GuildSetting_ForDisplay_C_BndEvt__WBP_GuildSetting_ForDisplay_WBP_Guild_Setting_K2Node_ComponentBoundEvent_1_OnChangedNoticeSetting__DelegateSignature;
+DUMPER7_ASSERTS_WBP_GuildSetting_ForDisplay_C_SetupNoticeSetting;
+
+// Function WBP_GuildSetting_ForDisplay.WBP_GuildSetting_ForDisplay_C.OverrideCancelAction_Common
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_GuildSetting_ForDisplay_C_OverrideCancelAction_Common final
+{
+public:
+	bool                                          CallFunc_IsRoleSettingMode_bInMode;                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_GuildSetting_ForDisplay_C_OverrideCancelAction_Common;
 
 // Function WBP_GuildSetting_ForDisplay.WBP_GuildSetting_ForDisplay_C.ExecuteUbergraph_WBP_GuildSetting_ForDisplay
 // 0x0044 (0x0044 - 0x0000)
@@ -56,32 +82,6 @@ public:
 	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_1;      // 0x0040(0x0004)(NoDestructor)
 };
 DUMPER7_ASSERTS_WBP_GuildSetting_ForDisplay_C_ExecuteUbergraph_WBP_GuildSetting_ForDisplay;
-
-// Function WBP_GuildSetting_ForDisplay.WBP_GuildSetting_ForDisplay_C.OverrideCancelAction_Common
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_GuildSetting_ForDisplay_C_OverrideCancelAction_Common final
-{
-public:
-	bool                                          CallFunc_IsRoleSettingMode_bInMode;                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_GuildSetting_ForDisplay_C_OverrideCancelAction_Common;
-
-// Function WBP_GuildSetting_ForDisplay.WBP_GuildSetting_ForDisplay_C.SetupNoticeSetting
-// 0x0058 (0x0058 - 0x0000)
-struct WBP_GuildSetting_ForDisplay_C_SetupNoticeSetting final
-{
-public:
-	TMap<EPalGuildNotificationType, bool>         NewLocalVar;                                       // 0x0000(0x0050)(Edit, BlueprintVisible)
-	EPalGuildNotificationType                     Temp_byte_Variable;                                // 0x0050(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalGuildNotificationType                     Temp_byte_Variable_1;                              // 0x0051(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalGuildNotificationType                     Temp_byte_Variable_2;                              // 0x0052(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalGuildNotificationType                     Temp_byte_Variable_3;                              // 0x0053(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetGuildNotificationEnabled_ReturnValue;  // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetGuildNotificationEnabled_ReturnValue_1; // 0x0055(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetGuildNotificationEnabled_ReturnValue_2; // 0x0056(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetGuildNotificationEnabled_ReturnValue_3; // 0x0057(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_GuildSetting_ForDisplay_C_SetupNoticeSetting;
 
 // Function WBP_GuildSetting_ForDisplay.WBP_GuildSetting_ForDisplay_C.BP_GetDesiredFocusTarget
 // 0x0010 (0x0010 - 0x0000)

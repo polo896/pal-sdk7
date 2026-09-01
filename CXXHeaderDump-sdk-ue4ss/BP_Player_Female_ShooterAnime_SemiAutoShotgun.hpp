@@ -1,0 +1,8 @@
+#ifndef UE4SS_SDK_BP_Player_Female_ShooterAnime_SemiAutoShotgun_HPP
+#define UE4SS_SDK_BP_Player_Female_ShooterAnime_SemiAutoShotgun_HPP
+
+class UBP_Player_Female_ShooterAnime_SemiAutoShotgun_C : public UBP_Player_Female_ShooterAnime_AssaultRifle_C
+{
+}; // Size: 0x328
+
+#endif

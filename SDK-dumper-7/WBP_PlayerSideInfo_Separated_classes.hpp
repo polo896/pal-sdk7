@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "WBP_IndividualParameterBindWidget_classes.hpp"
+#include "Engine_structs.hpp"
 #include "CommonInput_structs.hpp"
 #include "UMG_structs.hpp"
 #include "Pal_structs.hpp"
@@ -36,49 +36,49 @@ public:
 	struct FTimerHandle                           UpdateBuffIconTimer;                               // 0x0688(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BindOtomoPassiveSkillEvents(class APalCharacter* Character);
-	void CREATEDELEGATE_PROXYFUNCTION_0(const class APalWeaponBase* WeaponActor, const class FName& BulletItemId);
-	void Destruct();
-	void DisableFirstSummonPalGuide();
-	void EnableFirstSummonPalGuide();
-	void ExecuteUbergraph_WBP_PlayerSideInfo_Separated(int32 EntryPoint);
-	void On_Update_Otomo(int32 SlotIndex, class UPalIndividualCharacterHandle* LastHandle);
-	void OnAddStatusOtomo(const class UPalStatusComponent* StatusComponent, EPalStatusID statusID, class UPalStatusBase* Status);
-	void OnAim();
-	void OnChangedBodyTenperatureState(EPalBodyTemperatureState BodyState);
-	void OnChangedBullet(const class APalWeaponBase*& WeaponActor, const class FName& BulletItemId);
-	void OnChangedInputMethod(ECommonInputType bNewInputType);
-	void OnChangedLoadoutIndex(EPalPlayerInventoryType inventoryType, int32 Index_0);
-	void OnChangedTemperature(int32 NextTemperature);
-	void OnChangedTenperatureRegistRate(int32 NextResistHeat, int32 NextResistCold);
-	void OnChangedUISettings(const struct FPalOptionUISettings& PrevSettings, const struct FPalOptionUISettings& NewSettings);
-	void OnChangeOtomoIndex();
-	void OnDamagePlayer(const struct FPalDamageResult& DamageResult);
-	void OnEndAim();
-	void OnEndJetpack();
-	void OnEndPassiveSkill(EPalPassiveSkillEffectType EffectType);
-	void OnGetOff(class AActor* RideActor);
-	void OnInitialized();
-	void OnInitializedOtomo(class APalCharacter* Character);
-	void OnRemoveStatusOtomo(const class UPalStatusComponent* StatusComponent, EPalStatusID statusID);
-	void OnRideon(class AActor* RideActor);
-	void OnStartJetpack();
-	void OnStartPassiveSkill(EPalPassiveSkillEffectType EffectType, float Value);
-	void OnTimer_CheckActivationOtomo();
-	void OnTimer_CheckCaptureCount();
-	void OnTimerEvent_CheckBulletChangeTutorial();
-	void OnTimerEvent_UpdateBuffIcon();
-	void OnUpdatePlayerEquipment(class UPalItemSlot* itemSlot, EPalPlayerEquipItemSlotType slotType);
-	void OnUpdatePlayerInventory(class UPalItemContainer* Container);
-	void OnUpdateUsableHandFlag(bool CanUseLeftHandFlag, bool CanUseRightHandFlag);
-	void Setup();
-	void SetupFirstPalThrowGuide();
-	void SetVisibilityRightInfo(bool bVisible);
-	void ShouldShowDirectOrderKeyGuide(bool* bShouldShow);
-	void UnbindOtomoPassiveKillEvents(class APalCharacter* Character);
-	void UpdateHunger_Binded(double nowHunger, double nowMaxHunger);
-	void UpdateOtomoPassiveInfo();
 	void UpdatePlayerBuff();
+	void UpdateOtomoPassiveInfo();
+	void UpdateHunger_Binded(double nowHunger, double nowMaxHunger);
+	void UnbindOtomoPassiveKillEvents(class APalCharacter* Character);
+	void ShouldShowDirectOrderKeyGuide(bool* bShouldShow);
+	void SetVisibilityRightInfo(bool bVisible);
+	void SetupFirstPalThrowGuide();
+	void Setup();
+	void OnUpdateUsableHandFlag(bool CanUseLeftHandFlag, bool CanUseRightHandFlag);
+	void OnUpdatePlayerInventory(class UPalItemContainer* Container);
+	void OnUpdatePlayerEquipment(class UPalItemSlot* itemSlot, EPalPlayerEquipItemSlotType slotType);
+	void OnTimerEvent_UpdateBuffIcon();
+	void OnTimerEvent_CheckBulletChangeTutorial();
+	void OnTimer_CheckCaptureCount();
+	void OnTimer_CheckActivationOtomo();
+	void OnStartPassiveSkill(EPalPassiveSkillEffectType EffectType, float Value);
+	void OnStartJetpack();
+	void OnRideon(class AActor* RideActor);
+	void OnRemoveStatusOtomo(const class UPalStatusComponent* StatusComponent, EPalStatusID statusID);
+	void OnInitializedOtomo(class APalCharacter* Character);
+	void OnInitialized();
+	void OnGetOff(class AActor* RideActor);
+	void OnEndPassiveSkill(EPalPassiveSkillEffectType EffectType);
+	void OnEndJetpack();
+	void OnEndAim();
+	void OnDamagePlayer(const struct FPalDamageResult& DamageResult);
+	void OnChangeOtomoIndex();
+	void OnChangedUISettings(const struct FPalOptionUISettings& PrevSettings, const struct FPalOptionUISettings& NewSettings);
+	void OnChangedTenperatureRegistRate(int32 NextResistHeat, int32 NextResistCold);
+	void OnChangedTemperature(int32 NextTemperature);
+	void OnChangedLoadoutIndex(EPalPlayerInventoryType inventoryType, int32 Index_0);
+	void OnChangedInputMethod(ECommonInputType bNewInputType);
+	void OnChangedBullet(const class APalWeaponBase*& WeaponActor, const class FName& BulletItemId);
+	void OnChangedBodyTenperatureState(EPalBodyTemperatureState BodyState);
+	void OnAim();
+	void OnAddStatusOtomo(const class UPalStatusComponent* StatusComponent, EPalStatusID statusID, class UPalStatusBase* Status);
+	void On_Update_Otomo(int32 SlotIndex, class UPalIndividualCharacterHandle* LastHandle);
+	void ExecuteUbergraph_WBP_PlayerSideInfo_Separated(int32 EntryPoint);
+	void EnableFirstSummonPalGuide();
+	void DisableFirstSummonPalGuide();
+	void Destruct();
+	void CREATEDELEGATE_PROXYFUNCTION_0(const class APalWeaponBase* WeaponActor, const class FName& BulletItemId);
+	void BindOtomoPassiveSkillEvents(class APalCharacter* Character);
 
 public:
 	static class UClass* StaticClass()

@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_OptionSettings_ListContentButton.WBP_OptionSettings_ListContentButton_C.EnableWarning
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OptionSettings_ListContentButton_C::EnableWarning(bool IsEnable)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContentButton_C", "EnableWarning");
-
-	Params::WBP_OptionSettings_ListContentButton_C_EnableWarning Parms{};
-
-	Parms.IsEnable = IsEnable;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_OptionSettings_ListContentButton.WBP_OptionSettings_ListContentButton_C.ExecuteUbergraph_WBP_OptionSettings_ListContentButton
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -52,6 +32,26 @@ void UWBP_OptionSettings_ListContentButton_C::ExecuteUbergraph_WBP_OptionSetting
 	Params::WBP_OptionSettings_ListContentButton_C_ExecuteUbergraph_WBP_OptionSettings_ListContentButton Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_OptionSettings_ListContentButton.WBP_OptionSettings_ListContentButton_C.EnableWarning
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OptionSettings_ListContentButton_C::EnableWarning(bool IsEnable)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContentButton_C", "EnableWarning");
+
+	Params::WBP_OptionSettings_ListContentButton_C_EnableWarning Parms{};
+
+	Parms.IsEnable = IsEnable;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

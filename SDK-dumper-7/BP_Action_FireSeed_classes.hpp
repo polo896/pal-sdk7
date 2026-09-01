@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "BP_ActionGeneralAttackFarBase_classes.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 namespace SDK
@@ -28,10 +28,10 @@ public:
 	struct FRandomStream                          Rand;                                              // 0x02F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor)
 
 public:
-	void ExecuteUbergraph_BP_Action_FireSeed(int32 EntryPoint);
-	void OnBeginAction();
-	void OnSpawnEffect(class APalSkillEffectBase* Effect_0);
 	void TickAction(float DeltaTime);
+	void OnSpawnEffect(class APalSkillEffectBase* Effect_0);
+	void OnBeginAction();
+	void ExecuteUbergraph_BP_Action_FireSeed(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

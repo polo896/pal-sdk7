@@ -42,25 +42,25 @@ public:
 	struct FPalDataTableRowName_UIInputAction     CancelActionHandle_Tab;                            // 0x050C(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_RepairEquipment_WBP_IngameMenu_Repair_K2Node_ComponentBoundEvent_0_OnClickedCloseButton__DelegateSignature();
-	void BndEvt__WBP_RepairEquipment_WBP_IngameMenu_Repair_K2Node_ComponentBoundEvent_1_OnClickedAnyItemSlot__DelegateSignature(class UPalItemSlot* itemSlot);
-	void BndEvt__WBP_RepairEquipment_WBP_IngameMenu_Repair_K2Node_ComponentBoundEvent_2_OnClickedRepairButton__DelegateSignature();
-	void BndEvt__WBP_RepairEquipment_WBP_IngameMenu_Repair_K2Node_ComponentBoundEvent_3_OnClickedRepairAllButton__DelegateSignature();
-	void CloseAction();
-	void Construct();
-	void Destruct();
-	void EndRepair(bool IsSuccess);
-	void ExecuteUbergraph_WBP_RepairEquipment(int32 EntryPoint);
-	void OnClosedRepairAllWindow(class UPalHUDDispatchParameterBase* Param_0);
-	void OnRecievedRepairResult(bool IsSuccess);
-	void OnSetup();
-	void OnTimer_TimeoutRepair();
-	void OpenRepairAllWindow();
-	void RefreshRepairable();
-	void RepairShortcut();
-	void Setup();
-	void StartRepair();
 	void TryRepairAll();
+	void StartRepair();
+	void Setup();
+	void RepairShortcut();
+	void RefreshRepairable();
+	void OpenRepairAllWindow();
+	void OnTimer_TimeoutRepair();
+	void OnSetup();
+	void OnRecievedRepairResult(bool IsSuccess);
+	void OnClosedRepairAllWindow(class UPalHUDDispatchParameterBase* Param_0);
+	void ExecuteUbergraph_WBP_RepairEquipment(int32 EntryPoint);
+	void EndRepair(bool IsSuccess);
+	void Destruct();
+	void Construct();
+	void CloseAction();
+	void BndEvt__WBP_RepairEquipment_WBP_IngameMenu_Repair_K2Node_ComponentBoundEvent_3_OnClickedRepairAllButton__DelegateSignature();
+	void BndEvt__WBP_RepairEquipment_WBP_IngameMenu_Repair_K2Node_ComponentBoundEvent_2_OnClickedRepairButton__DelegateSignature();
+	void BndEvt__WBP_RepairEquipment_WBP_IngameMenu_Repair_K2Node_ComponentBoundEvent_1_OnClickedAnyItemSlot__DelegateSignature(class UPalItemSlot* itemSlot);
+	void BndEvt__WBP_RepairEquipment_WBP_IngameMenu_Repair_K2Node_ComponentBoundEvent_0_OnClickedCloseButton__DelegateSignature();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

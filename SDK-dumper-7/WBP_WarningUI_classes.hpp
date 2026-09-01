@@ -27,16 +27,16 @@ public:
 	class UWBP_Warning_C*                         WBP_Warning;                                       // 0x0458(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Display_Supply(const struct FPalSupplyInfo& SupplyInfo);
-	void DisplayServerNotice(const class FString& NoticeMessage);
-	void DisplayStartInvaderWarning(class UPalBaseCampModel* TargetBaseCamp, const struct FPalInvaderDatabaseRow& ChosenInvaderData);
-	void ExecuteUbergraph_WBP_WarningUI(int32 EntryPoint);
-	void OnInitialized();
-	void OnInvaderStart(const struct FPalIncidentBroadcastParameter& Parameter);
-	void OnReceivedServerNotice(const class FString& NoticeMessage);
-	void OnSupplyStart(const struct FPalSupplyInfo& SupplyInfo);
-	void Play(const class FText& TitleText, const class FText& infoText, double DisplayTime);
 	void RegisterEvents();
+	void Play(const class FText& TitleText, const class FText& infoText, double DisplayTime);
+	void OnSupplyStart(const struct FPalSupplyInfo& SupplyInfo);
+	void OnReceivedServerNotice(const class FString& NoticeMessage);
+	void OnInvaderStart(const struct FPalIncidentBroadcastParameter& Parameter);
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_WarningUI(int32 EntryPoint);
+	void DisplayStartInvaderWarning(class UPalBaseCampModel* TargetBaseCamp, const struct FPalInvaderDatabaseRow& ChosenInvaderData);
+	void DisplayServerNotice(const class FString& NoticeMessage);
+	void Display_Supply(const struct FPalSupplyInfo& SupplyInfo);
 
 public:
 	static class UClass* StaticClass()

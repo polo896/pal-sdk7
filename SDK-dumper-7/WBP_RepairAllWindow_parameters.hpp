@@ -14,15 +14,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_RepairAllWindow.WBP_RepairAllWindow_C.BndEvt__WBP_RepairAllWindow_WBP_IngameMenu_RepairAll_K2Node_ComponentBoundEvent_0_OnClickedButton__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_RepairAllWindow_C_BndEvt__WBP_RepairAllWindow_WBP_IngameMenu_RepairAll_K2Node_ComponentBoundEvent_0_OnClickedButton__DelegateSignature final
-{
-public:
-	bool                                          IsYes;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_RepairAllWindow_C_BndEvt__WBP_RepairAllWindow_WBP_IngameMenu_RepairAll_K2Node_ComponentBoundEvent_0_OnClickedButton__DelegateSignature;
-
 // Function WBP_RepairAllWindow.WBP_RepairAllWindow_C.ExecuteUbergraph_WBP_RepairAllWindow
 // 0x0040 (0x0040 - 0x0000)
 struct WBP_RepairAllWindow_C_ExecuteUbergraph_WBP_RepairAllWindow final
@@ -42,6 +33,15 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_RepairAllWindow_C_ExecuteUbergraph_WBP_RepairAllWindow;
+
+// Function WBP_RepairAllWindow.WBP_RepairAllWindow_C.BndEvt__WBP_RepairAllWindow_WBP_IngameMenu_RepairAll_K2Node_ComponentBoundEvent_0_OnClickedButton__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_RepairAllWindow_C_BndEvt__WBP_RepairAllWindow_WBP_IngameMenu_RepairAll_K2Node_ComponentBoundEvent_0_OnClickedButton__DelegateSignature final
+{
+public:
+	bool                                          IsYes;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_RepairAllWindow_C_BndEvt__WBP_RepairAllWindow_WBP_IngameMenu_RepairAll_K2Node_ComponentBoundEvent_0_OnClickedButton__DelegateSignature;
 
 // Function WBP_RepairAllWindow.WBP_RepairAllWindow_C.BP_GetDesiredFocusTarget
 // 0x0010 (0x0010 - 0x0000)

@@ -15,16 +15,16 @@ class ABP_WantedPolice_PalSpawner_C : public APalNPCSpawnerBase
     TSubclassOf<class APalAIController> ControllerClass;                              // 0x0570 (size: 0x8)
     TSubclassOf<class UPalAIActionBase> DefaultActionClass;                           // 0x0578 (size: 0x8)
     class UBP_WorldSecurityPoliceSpawner_C* PoliceSpawnerModel;                       // 0x0580 (size: 0x8)
-    TArray<class UPalIndividualCharacterHandle*> OwnedHandles;                        // 0x0588 (size: 0x10)
+    TArray<UPalIndividualCharacterHandle*> OwnedHandles;                              // 0x0588 (size: 0x10)
 
     void CreateGroup();
     void SetPoliceSpawnerModel(class UBP_WorldSecurityPoliceSpawner_C* Model);
     void DespawnDelegateMono(FPalInstanceID ID);
-    void Despawn(TArray<class UPalIndividualCharacterHandle*>& DespawnHandle);
+    void Despawn(TArray<UPalIndividualCharacterHandle*>& DespawnHandle);
     void SpawnDelegate(FPalInstanceID ID);
     void Spawn();
     void OnReleaseWanted();
-    void OnDespawnPolices(const TArray<class UPalIndividualCharacterHandle*>& DespawnHandles);
+    void OnDespawnPolices(const TArray<UPalIndividualCharacterHandle*>& DespawnHandles);
     void OnSpawnPolices(const FPalWorldSecurityWantedPoliceSettingData PoliceData);
     void ExecuteUbergraph_BP_WantedPolice_PalSpawner(int32 EntryPoint);
 }; // Size: 0x598

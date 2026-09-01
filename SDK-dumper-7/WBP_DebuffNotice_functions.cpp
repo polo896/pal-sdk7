@@ -17,17 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_DebuffNotice.WBP_DebuffNotice_C.AnmEvent_Flash
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_DebuffNotice.WBP_DebuffNotice_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// E_PalUIPlayerDebuffNoticeType           DebuffType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_DebuffNotice_C::AnmEvent_Flash()
+void UWBP_DebuffNotice_C::Setup(E_PalUIPlayerDebuffNoticeType DebuffType)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DebuffNotice_C", "AnmEvent_Flash");
+		Func = Class->GetFunction("WBP_DebuffNotice_C", "Setup");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_DebuffNotice_C_Setup Parms{};
+
+	Parms.DebuffType = DebuffType;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -51,23 +57,17 @@ void UWBP_DebuffNotice_C::ExecuteUbergraph_WBP_DebuffNotice(int32 EntryPoint)
 }
 
 
-// Function WBP_DebuffNotice.WBP_DebuffNotice_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// E_PalUIPlayerDebuffNoticeType           DebuffType                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_DebuffNotice.WBP_DebuffNotice_C.AnmEvent_Flash
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_DebuffNotice_C::Setup(E_PalUIPlayerDebuffNoticeType DebuffType)
+void UWBP_DebuffNotice_C::AnmEvent_Flash()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DebuffNotice_C", "Setup");
+		Func = Class->GetFunction("WBP_DebuffNotice_C", "AnmEvent_Flash");
 
-	Params::WBP_DebuffNotice_C_Setup Parms{};
-
-	Parms.DebuffType = DebuffType;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

@@ -17,6 +17,40 @@
 namespace SDK
 {
 
+// Function BP_Action_Emote_KickCollision.BP_Action_Emote_KickCollision_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Action_Emote_KickCollision_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Action_Emote_KickCollision_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Action_Emote_KickCollision.BP_Action_Emote_KickCollision_C.ExecuteUbergraph_BP_Action_Emote_KickCollision
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Action_Emote_KickCollision_C::ExecuteUbergraph_BP_Action_Emote_KickCollision(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_Action_Emote_KickCollision_C", "ExecuteUbergraph_BP_Action_Emote_KickCollision");
+
+	Params::BP_Action_Emote_KickCollision_C_ExecuteUbergraph_BP_Action_Emote_KickCollision Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_Action_Emote_KickCollision.BP_Action_Emote_KickCollision_C.BndEvt__BP_Action_Emote_KickCollision_Sphere_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -42,40 +76,6 @@ void ABP_Action_Emote_KickCollision_C::BndEvt__BP_Action_Emote_KickCollision_Sph
 	Parms.Hit_0 = std::move(Hit_0);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Action_Emote_KickCollision.BP_Action_Emote_KickCollision_C.ExecuteUbergraph_BP_Action_Emote_KickCollision
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Action_Emote_KickCollision_C::ExecuteUbergraph_BP_Action_Emote_KickCollision(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Action_Emote_KickCollision_C", "ExecuteUbergraph_BP_Action_Emote_KickCollision");
-
-	Params::BP_Action_Emote_KickCollision_C_ExecuteUbergraph_BP_Action_Emote_KickCollision Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Action_Emote_KickCollision.BP_Action_Emote_KickCollision_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Action_Emote_KickCollision_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Action_Emote_KickCollision_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

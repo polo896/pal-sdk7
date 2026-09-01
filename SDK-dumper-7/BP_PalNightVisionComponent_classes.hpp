@@ -25,9 +25,9 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x00B8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_BP_PalNightVisionComponent(int32 EntryPoint);
-	void OnInactive();
 	void SetNightVisionEnabled_ForServer(bool bEnable);
+	void OnInactive();
+	void ExecuteUbergraph_BP_PalNightVisionComponent(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

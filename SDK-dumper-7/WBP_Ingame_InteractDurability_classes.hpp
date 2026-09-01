@@ -49,24 +49,24 @@ public:
 	class FString                                 Cache_Guild_Name;                                  // 0x04F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
-	void CollapsePanel();
-	void ExecuteUbergraph_WBP_Ingame_InteractDurability(int32 EntryPoint);
-	void GetBlockPlayerUIdByUserId(const class FString& InUserId, bool* OutResult, struct FGuid* OutPlayerUId);
-	void GetMutePlayerUIdByUserId(const class FString& InUserId, bool* OutResult, struct FGuid* OutPlayerUId);
-	void GetPlayerUId(struct FGuid* OutPlayerUId);
-	void On_Get_User_Info_Completed(bool bSuccess, const struct FGuid& PlayerUId, const class FString& PlayerName, const struct FGuid& GroupId, const class FString& GuildName);
-	void On_Player_Nick_Name_Updated(const struct FGuid& PlayerUId, const class FString& NewNickName, const struct FGuid& GroupId, const class FString& GuildName);
-	void OnCannonHPUpdate(float CurrentHP_0, float MaxHP);
-	void OnClosed();
-	void OnSessionMemberChange(const class FString& UserId, const EPalSessionMemberChange ChangeType);
-	void OnSetup();
-	void OnUpdateSignboardText(const class FString& TextValue);
-	void Set_Hidden_Building_Info();
-	void ShowHP(class APalMapObject* MapObject, EPalHUDDisplayType DisplayType);
-	void Update_HP_Internal(double CurrentHP_0, double MaxHP);
-	void UpdateHP(class UPalMapObjectModel* Model_0);
-	void UpdateName(class UPalMapObjectModel* Model_0);
 	void UpdateNameInternal(const struct FGuid& PlayerUId);
+	void UpdateName(class UPalMapObjectModel* Model_0);
+	void UpdateHP(class UPalMapObjectModel* Model_0);
+	void Update_HP_Internal(double CurrentHP_0, double MaxHP);
+	void ShowHP(class APalMapObject* MapObject, EPalHUDDisplayType DisplayType);
+	void Set_Hidden_Building_Info();
+	void OnUpdateSignboardText(const class FString& TextValue);
+	void OnSetup();
+	void OnSessionMemberChange(const class FString& UserId, const EPalSessionMemberChange ChangeType);
+	void OnClosed();
+	void OnCannonHPUpdate(float CurrentHP_0, float MaxHP);
+	void On_Player_Nick_Name_Updated(const struct FGuid& PlayerUId, const class FString& NewNickName, const struct FGuid& GroupId, const class FString& GuildName);
+	void On_Get_User_Info_Completed(bool bSuccess, const struct FGuid& PlayerUId, const class FString& PlayerName, const struct FGuid& GroupId, const class FString& GuildName);
+	void GetPlayerUId(struct FGuid* OutPlayerUId);
+	void GetMutePlayerUIdByUserId(const class FString& InUserId, bool* OutResult, struct FGuid* OutPlayerUId);
+	void GetBlockPlayerUIdByUserId(const class FString& InUserId, bool* OutResult, struct FGuid* OutPlayerUId);
+	void ExecuteUbergraph_WBP_Ingame_InteractDurability(int32 EntryPoint);
+	void CollapsePanel();
 
 public:
 	static class UClass* StaticClass()

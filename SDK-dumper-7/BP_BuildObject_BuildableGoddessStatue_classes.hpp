@@ -33,11 +33,11 @@ public:
 	class USceneComponent*                        Root;                                              // 0x0790(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnSetConcreteModel(class UPalMapObjectConcreteModelBase* ConcreteModel);
-	void CustomEvent(class UPalMapObjectConcreteModelBase* Model);
-	void ExecuteUbergraph_BP_BuildObject_BuildableGoddessStatue(int32 EntryPoint);
-	void ReceiveBeginPlay();
 	void SetActive_Internal(bool bOn);
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_BuildObject_BuildableGoddessStatue(int32 EntryPoint);
+	void CustomEvent(class UPalMapObjectConcreteModelBase* Model);
+	void BP_OnSetConcreteModel(class UPalMapObjectConcreteModelBase* ConcreteModel);
 
 public:
 	static class UClass* StaticClass()

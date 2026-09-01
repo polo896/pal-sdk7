@@ -30,7 +30,7 @@ class ABP_ReturnPalEffect_C : public AActor
     void OnLoaded_C8768D9B48C9921C96A17987152DB6B7(class UObject* Loaded);
     void ReceiveBeginPlay();
     void ReceiveTick(float DeltaSeconds);
-    void LoadAndSpawnEffect(TSoftObjectPtr<UNiagaraSystem> EffectPath, FTransform SpawnTransform);
+    void LoadAndSpawnEffect(TSoftObjectPtr<class UNiagaraSystem> EffectPath, FTransform SpawnTransform);
     void StartReturn_ForNetwork(class APalCharacter* OtomoPal, class APalCharacter* Player);
     void ExecuteUbergraph_BP_ReturnPalEffect(int32 EntryPoint);
 }; // Size: 0x329

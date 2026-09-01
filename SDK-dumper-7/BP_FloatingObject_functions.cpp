@@ -17,21 +17,23 @@
 namespace SDK
 {
 
-// Function BP_FloatingObject.BP_FloatingObject_C.ExecuteUbergraph_BP_FloatingObject
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_FloatingObject.BP_FloatingObject_C.Setup
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USceneComponent*                  InScene                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   InBeginPos                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_FloatingObject_C::ExecuteUbergraph_BP_FloatingObject(int32 EntryPoint)
+void UBP_FloatingObject_C::Setup(class USceneComponent* InScene, const struct FVector& InBeginPos)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FloatingObject_C", "ExecuteUbergraph_BP_FloatingObject");
+		Func = Class->GetFunction("BP_FloatingObject_C", "Setup");
 
-	Params::BP_FloatingObject_C_ExecuteUbergraph_BP_FloatingObject Parms{};
+	Params::BP_FloatingObject_C_Setup Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.InScene = InScene;
+	Parms.InBeginPos = std::move(InBeginPos);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,23 +59,21 @@ void UBP_FloatingObject_C::ReceiveTick(float DeltaSeconds)
 }
 
 
-// Function BP_FloatingObject.BP_FloatingObject_C.Setup
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_FloatingObject.BP_FloatingObject_C.ExecuteUbergraph_BP_FloatingObject
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class USceneComponent*                  InScene                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// const struct FVector&                   InBeginPos                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_FloatingObject_C::Setup(class USceneComponent* InScene, const struct FVector& InBeginPos)
+void UBP_FloatingObject_C::ExecuteUbergraph_BP_FloatingObject(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FloatingObject_C", "Setup");
+		Func = Class->GetFunction("BP_FloatingObject_C", "ExecuteUbergraph_BP_FloatingObject");
 
-	Params::BP_FloatingObject_C_Setup Parms{};
+	Params::BP_FloatingObject_C_ExecuteUbergraph_BP_FloatingObject Parms{};
 
-	Parms.InScene = InScene;
-	Parms.InBeginPos = std::move(InBeginPos);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

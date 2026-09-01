@@ -29,8 +29,8 @@ public:
 	struct FTransform                             Ammo_Reloading_Transform;                          // 0x02B0(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetTranformForReload(struct FTransform* AmmoReloadingTransform);
 	void UserConstructionScript();
+	void SetTranformForReload(struct FTransform* AmmoReloadingTransform);
 
 public:
 	static class UClass* StaticClass()

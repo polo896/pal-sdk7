@@ -27,8 +27,8 @@ public:
 	class UBP_PalTextBlock_C*                     Text_Win_Name;                                     // 0x0288(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_InGame_Match_Win(int32 EntryPoint);
 	void SetWinner(const class FText& InText);
+	void ExecuteUbergraph_WBP_InGame_Match_Win(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

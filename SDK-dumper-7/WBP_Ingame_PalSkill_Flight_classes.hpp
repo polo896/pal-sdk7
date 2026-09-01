@@ -33,11 +33,11 @@ public:
 	struct FDataTableRowHandle                    DownMsgId;                                         // 0x02B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void AnmEvent_EndInteract();
-	void AnmEvent_StartInteract();
-	void Construct();
-	void ExecuteUbergraph_WBP_Ingame_PalSkill_Flight(int32 EntryPoint);
 	void OnDownInputMethodChanged(ECommonInputType bNewInputType);
+	void ExecuteUbergraph_WBP_Ingame_PalSkill_Flight(int32 EntryPoint);
+	void Construct();
+	void AnmEvent_StartInteract();
+	void AnmEvent_EndInteract();
 
 public:
 	static class UClass* StaticClass()

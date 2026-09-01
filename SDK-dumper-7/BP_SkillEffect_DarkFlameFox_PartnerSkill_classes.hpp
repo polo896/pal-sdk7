@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "MultiHitFoliageIndexArrayStruct_structs.hpp"
 #include "Engine_structs.hpp"
 #include "BP_PassiveAttackBase_classes.hpp"
-#include "MultiHitFoliageIndexArrayStruct_structs.hpp"
 #include "Pal_structs.hpp"
 
 

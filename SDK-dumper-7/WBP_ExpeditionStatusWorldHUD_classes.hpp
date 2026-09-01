@@ -31,14 +31,14 @@ public:
 	bool                                          bAlreadySetup;                                     // 0x0478(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_ExpeditionStatusWorldHUD(int32 EntryPoint);
-	void OnChangedMissionState(const EPalMapObjectCharacterTeamMissionState LastState, const EPalMapObjectCharacterTeamMissionState CurrentState);
-	void OnSetup();
-	void OnTimer_LocationCheck();
-	void Setup();
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void Setup();
+	void OnTimer_LocationCheck();
+	void OnSetup();
+	void OnChangedMissionState(const EPalMapObjectCharacterTeamMissionState LastState, const EPalMapObjectCharacterTeamMissionState CurrentState);
+	void ExecuteUbergraph_WBP_ExpeditionStatusWorldHUD(int32 EntryPoint);
+	void Destruct();
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

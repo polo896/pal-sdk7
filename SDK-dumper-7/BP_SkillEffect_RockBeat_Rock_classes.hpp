@@ -37,13 +37,13 @@ public:
 	class ABP_SkillEffectBase_C*                  DownCollision;                                     // 0x0498(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_SkillEffect_RockBeat_Rock_MovementSphereRoot_K2Node_ComponentBoundEvent_2_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
-	void ExecuteUbergraph_BP_SkillEffect_RockBeat_Rock(int32 EntryPoint);
-	void FadeOutEffect(double DeltaSecond);
-	void OnSpawned();
-	void ReceiveBeginPlay();
-	void ReceiveTick(float DeltaSeconds);
 	void SetFade();
+	void ReceiveTick(float DeltaSeconds);
+	void ReceiveBeginPlay();
+	void OnSpawned();
+	void FadeOutEffect(double DeltaSecond);
+	void ExecuteUbergraph_BP_SkillEffect_RockBeat_Rock(int32 EntryPoint);
+	void BndEvt__BP_SkillEffect_RockBeat_Rock_MovementSphereRoot_K2Node_ComponentBoundEvent_2_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
 
 public:
 	static class UClass* StaticClass()

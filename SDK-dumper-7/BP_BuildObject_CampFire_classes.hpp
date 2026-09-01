@@ -36,10 +36,10 @@ public:
 	class USceneComponent*                        Root;                                              // 0x07A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_BuildObject_CampFire(int32 EntryPoint);
-	void OnAvailable_BlueprintImpl();
-	void ReceiveBeginPlay();
 	void SetActive_Internal(bool bOn);
+	void ReceiveBeginPlay();
+	void OnAvailable_BlueprintImpl();
+	void ExecuteUbergraph_BP_BuildObject_CampFire(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

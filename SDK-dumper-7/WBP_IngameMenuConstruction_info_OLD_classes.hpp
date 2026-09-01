@@ -40,8 +40,8 @@ public:
 	class UWBP_IngameMenuConstruction_InfoItem_C* WBP_IngameMenuConstruction_InfoItem_3;             // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Set_Build_Object_Data(const struct FPalBuildObjectData& BuildObjectData);
 	void SetMaterialInfo(class UWBP_IngameMenuConstruction_InfoItem_C* Widget, class FName ID, int32 NeedNum);
+	void Set_Build_Object_Data(const struct FPalBuildObjectData& BuildObjectData);
 
 	void Get_Useable_Material_Item_Num(class FName ItemId, int32* Num) const;
 

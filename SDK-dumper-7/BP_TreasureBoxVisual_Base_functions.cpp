@@ -17,97 +17,43 @@
 namespace SDK
 {
 
-// Function BP_TreasureBoxVisual_Base.BP_TreasureBoxVisual_Base_C.ExecuteUbergraph_BP_TreasureBoxVisual_Base
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_TreasureBoxVisual_Base_C::ExecuteUbergraph_BP_TreasureBoxVisual_Base(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TreasureBoxVisual_Base_C", "ExecuteUbergraph_BP_TreasureBoxVisual_Base");
-
-	Params::BP_TreasureBoxVisual_Base_C_ExecuteUbergraph_BP_TreasureBoxVisual_Base Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_TreasureBoxVisual_Base.BP_TreasureBoxVisual_Base_C.OnFinishOpenAnimation
+// Function BP_TreasureBoxVisual_Base.BP_TreasureBoxVisual_Base_C.TriggerOpenAnimation
 // (BlueprintCallable, BlueprintEvent)
 
-void ABP_TreasureBoxVisual_Base_C::OnFinishOpenAnimation()
+void ABP_TreasureBoxVisual_Base_C::TriggerOpenAnimation()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TreasureBoxVisual_Base_C", "OnFinishOpenAnimation");
+		Func = Class->GetFunction("BP_TreasureBoxVisual_Base_C", "TriggerOpenAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_TreasureBoxVisual_Base.BP_TreasureBoxVisual_Base_C.OnPassedOpenAnimationLength
+// Function BP_TreasureBoxVisual_Base.BP_TreasureBoxVisual_Base_C.StartOpenAnimation
 // (BlueprintCallable, BlueprintEvent)
 
-void ABP_TreasureBoxVisual_Base_C::OnPassedOpenAnimationLength()
+void ABP_TreasureBoxVisual_Base_C::StartOpenAnimation()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TreasureBoxVisual_Base_C", "OnPassedOpenAnimationLength");
+		Func = Class->GetFunction("BP_TreasureBoxVisual_Base_C", "StartOpenAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_TreasureBoxVisual_Base.BP_TreasureBoxVisual_Base_C.OnPlayMontageNotifyBegin_BP
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_TreasureBoxVisual_Base.BP_TreasureBoxVisual_Base_C.SetNoCollisionAllMesh
+// (Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_TreasureBoxVisual_Base_C::OnPlayMontageNotifyBegin_BP(class FName NotifyName)
+void ABP_TreasureBoxVisual_Base_C::SetNoCollisionAllMesh()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TreasureBoxVisual_Base_C", "OnPlayMontageNotifyBegin_BP");
-
-	Params::BP_TreasureBoxVisual_Base_C_OnPlayMontageNotifyBegin_BP Parms{};
-
-	Parms.NotifyName = NotifyName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_TreasureBoxVisual_Base.BP_TreasureBoxVisual_Base_C.PlayEffectAndSound
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void ABP_TreasureBoxVisual_Base_C::PlayEffectAndSound()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TreasureBoxVisual_Base_C", "PlayEffectAndSound");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_TreasureBoxVisual_Base.BP_TreasureBoxVisual_Base_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_TreasureBoxVisual_Base_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TreasureBoxVisual_Base_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("BP_TreasureBoxVisual_Base_C", "SetNoCollisionAllMesh");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -133,45 +79,99 @@ void ABP_TreasureBoxVisual_Base_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 }
 
 
-// Function BP_TreasureBoxVisual_Base.BP_TreasureBoxVisual_Base_C.SetNoCollisionAllMesh
-// (Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_TreasureBoxVisual_Base.BP_TreasureBoxVisual_Base_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_TreasureBoxVisual_Base_C::SetNoCollisionAllMesh()
+void ABP_TreasureBoxVisual_Base_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TreasureBoxVisual_Base_C", "SetNoCollisionAllMesh");
+		Func = Class->GetFunction("BP_TreasureBoxVisual_Base_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_TreasureBoxVisual_Base.BP_TreasureBoxVisual_Base_C.StartOpenAnimation
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_TreasureBoxVisual_Base.BP_TreasureBoxVisual_Base_C.PlayEffectAndSound
+// (Private, BlueprintCallable, BlueprintEvent)
 
-void ABP_TreasureBoxVisual_Base_C::StartOpenAnimation()
+void ABP_TreasureBoxVisual_Base_C::PlayEffectAndSound()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TreasureBoxVisual_Base_C", "StartOpenAnimation");
+		Func = Class->GetFunction("BP_TreasureBoxVisual_Base_C", "PlayEffectAndSound");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_TreasureBoxVisual_Base.BP_TreasureBoxVisual_Base_C.TriggerOpenAnimation
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_TreasureBoxVisual_Base.BP_TreasureBoxVisual_Base_C.OnPlayMontageNotifyBegin_BP
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class FName                             NotifyName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_TreasureBoxVisual_Base_C::TriggerOpenAnimation()
+void ABP_TreasureBoxVisual_Base_C::OnPlayMontageNotifyBegin_BP(class FName NotifyName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TreasureBoxVisual_Base_C", "TriggerOpenAnimation");
+		Func = Class->GetFunction("BP_TreasureBoxVisual_Base_C", "OnPlayMontageNotifyBegin_BP");
+
+	Params::BP_TreasureBoxVisual_Base_C_OnPlayMontageNotifyBegin_BP Parms{};
+
+	Parms.NotifyName = NotifyName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_TreasureBoxVisual_Base.BP_TreasureBoxVisual_Base_C.OnPassedOpenAnimationLength
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_TreasureBoxVisual_Base_C::OnPassedOpenAnimationLength()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_TreasureBoxVisual_Base_C", "OnPassedOpenAnimationLength");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_TreasureBoxVisual_Base.BP_TreasureBoxVisual_Base_C.OnFinishOpenAnimation
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_TreasureBoxVisual_Base_C::OnFinishOpenAnimation()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_TreasureBoxVisual_Base_C", "OnFinishOpenAnimation");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_TreasureBoxVisual_Base.BP_TreasureBoxVisual_Base_C.ExecuteUbergraph_BP_TreasureBoxVisual_Base
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_TreasureBoxVisual_Base_C::ExecuteUbergraph_BP_TreasureBoxVisual_Base(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_TreasureBoxVisual_Base_C", "ExecuteUbergraph_BP_TreasureBoxVisual_Base");
+
+	Params::BP_TreasureBoxVisual_Base_C_ExecuteUbergraph_BP_TreasureBoxVisual_Base Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

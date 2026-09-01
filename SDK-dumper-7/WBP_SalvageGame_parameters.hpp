@@ -18,86 +18,25 @@
 namespace SDK::Params
 {
 
-// Function WBP_SalvageGame.WBP_SalvageGame_C.ExecuteUbergraph_WBP_SalvageGame
-// 0x0060 (0x0060 - 0x0000)
-struct WBP_SalvageGame_C_ExecuteUbergraph_WBP_SalvageGame final
+// Function WBP_SalvageGame.WBP_SalvageGame_C.UpdateRouletteNeedle
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_SalvageGame_C_UpdateRouletteNeedle final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalUIMapObjectTreasureBoxSalvageGameModel* CallFunc_GetUIModel_Model;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0010(0x0040)(IsPlainOldData, NoDestructor)
-	float                                         K2Node_Event_InDeltaTime;                          // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_bSuccess;                       // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_ProceedNeedle_DeltaTime_ImplicitCast;     // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Angle;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetRenderTransformAngle_Angle_ImplicitCast; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_SalvageGame_C_ExecuteUbergraph_WBP_SalvageGame;
+DUMPER7_ASSERTS_WBP_SalvageGame_C_UpdateRouletteNeedle;
 
-// Function WBP_SalvageGame.WBP_SalvageGame_C.GetUIModel
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_SalvageGame_C_GetUIModel final
+// Function WBP_SalvageGame.WBP_SalvageGame_C.Tick
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_SalvageGame_C_Tick final
 {
 public:
-	class UPalUIMapObjectTreasureBoxSalvageGameModel* Model;                                         // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalHUDDispatchParameter_TreasureBoxSalvageGame* K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_Treasure_Box_Salvage_Game; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_SalvageGame_C_GetUIModel;
-
-// Function WBP_SalvageGame.WBP_SalvageGame_C.OnActionInteract
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_SalvageGame_C_OnActionInteract final
-{
-public:
-	bool                                          bSuccess;                                          // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalUIMapObjectTreasureBoxSalvageGameModel* CallFunc_GetUIModel_Model;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_InRange_FloatFloat_ReturnValue;           // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_InRange_FloatFloat_Min_ImplicitCast;      // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_InRange_FloatFloat_Max_ImplicitCast;      // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_SalvageGame_C_OnActionInteract;
-
-// Function WBP_SalvageGame.WBP_SalvageGame_C.PlayResultAnimation
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_SalvageGame_C_PlayResultAnimation final
-{
-public:
-	bool                                          bSuccess;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_SalvageGame_C_PlayResultAnimation;
-
-// Function WBP_SalvageGame.WBP_SalvageGame_C.ProceedNeedle
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_SalvageGame_C_ProceedNeedle final
-{
-public:
-	double                                        DeltaTime;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Percent_FloatFloat_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_SalvageGame_C_ProceedNeedle;
-
-// Function WBP_SalvageGame.WBP_SalvageGame_C.SetupRouletteSetting
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_SalvageGame_C_SetupRouletteSetting final
-{
-public:
-	double                                        SuccessStartAngle;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        SuccessEndAngle;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        SuccessRangeAngle;                                 // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               GaugeAreaDynamicMaterial;                          // 0x0018(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetRenderTransformAngle_Angle_ImplicitCast; // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_SalvageGame_C_SetupRouletteSetting;
+DUMPER7_ASSERTS_WBP_SalvageGame_C_Tick;
 
 // Function WBP_SalvageGame.WBP_SalvageGame_C.SetupUI
 // 0x0058 (0x0058 - 0x0000)
@@ -119,25 +58,86 @@ public:
 };
 DUMPER7_ASSERTS_WBP_SalvageGame_C_SetupUI;
 
-// Function WBP_SalvageGame.WBP_SalvageGame_C.Tick
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_SalvageGame_C_Tick final
+// Function WBP_SalvageGame.WBP_SalvageGame_C.SetupRouletteSetting
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_SalvageGame_C_SetupRouletteSetting final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        SuccessStartAngle;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        SuccessEndAngle;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        SuccessRangeAngle;                                 // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               GaugeAreaDynamicMaterial;                          // 0x0018(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetRenderTransformAngle_Angle_ImplicitCast; // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_SalvageGame_C_Tick;
+DUMPER7_ASSERTS_WBP_SalvageGame_C_SetupRouletteSetting;
 
-// Function WBP_SalvageGame.WBP_SalvageGame_C.UpdateRouletteNeedle
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_SalvageGame_C_UpdateRouletteNeedle final
+// Function WBP_SalvageGame.WBP_SalvageGame_C.ProceedNeedle
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_SalvageGame_C_ProceedNeedle final
 {
 public:
-	double                                        Angle;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetRenderTransformAngle_Angle_ImplicitCast; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        DeltaTime;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Percent_FloatFloat_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_SalvageGame_C_UpdateRouletteNeedle;
+DUMPER7_ASSERTS_WBP_SalvageGame_C_ProceedNeedle;
+
+// Function WBP_SalvageGame.WBP_SalvageGame_C.PlayResultAnimation
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_SalvageGame_C_PlayResultAnimation final
+{
+public:
+	bool                                          bSuccess;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_SalvageGame_C_PlayResultAnimation;
+
+// Function WBP_SalvageGame.WBP_SalvageGame_C.OnActionInteract
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_SalvageGame_C_OnActionInteract final
+{
+public:
+	bool                                          bSuccess;                                          // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalUIMapObjectTreasureBoxSalvageGameModel* CallFunc_GetUIModel_Model;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_InRange_FloatFloat_ReturnValue;           // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_InRange_FloatFloat_Min_ImplicitCast;      // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_InRange_FloatFloat_Max_ImplicitCast;      // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_SalvageGame_C_OnActionInteract;
+
+// Function WBP_SalvageGame.WBP_SalvageGame_C.GetUIModel
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_SalvageGame_C_GetUIModel final
+{
+public:
+	class UPalUIMapObjectTreasureBoxSalvageGameModel* Model;                                         // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalHUDDispatchParameter_TreasureBoxSalvageGame* K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_Treasure_Box_Salvage_Game; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_SalvageGame_C_GetUIModel;
+
+// Function WBP_SalvageGame.WBP_SalvageGame_C.ExecuteUbergraph_WBP_SalvageGame
+// 0x0060 (0x0060 - 0x0000)
+struct WBP_SalvageGame_C_ExecuteUbergraph_WBP_SalvageGame final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalUIMapObjectTreasureBoxSalvageGameModel* CallFunc_GetUIModel_Model;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0010(0x0040)(IsPlainOldData, NoDestructor)
+	float                                         K2Node_Event_InDeltaTime;                          // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_bSuccess;                       // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_55[0x3];                                       // 0x0055(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_ProceedNeedle_DeltaTime_ImplicitCast;     // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_SalvageGame_C_ExecuteUbergraph_WBP_SalvageGame;
 
 }
 

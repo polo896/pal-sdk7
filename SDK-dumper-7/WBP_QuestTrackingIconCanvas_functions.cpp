@@ -17,25 +17,17 @@
 namespace SDK
 {
 
-// Function WBP_QuestTrackingIconCanvas.WBP_QuestTrackingIconCanvas_C.OnAddLocation
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGuid&                     LocationId                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPalLocationBase*                 Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function WBP_QuestTrackingIconCanvas.WBP_QuestTrackingIconCanvas_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_QuestTrackingIconCanvas_C::OnAddLocation(const struct FGuid& LocationId, class UPalLocationBase* Location)
+void UWBP_QuestTrackingIconCanvas_C::Setup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuestTrackingIconCanvas_C", "OnAddLocation");
+		Func = Class->GetFunction("WBP_QuestTrackingIconCanvas_C", "Setup");
 
-	Params::WBP_QuestTrackingIconCanvas_C_OnAddLocation Parms{};
-
-	Parms.LocationId = std::move(LocationId);
-	Parms.Location = Location;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -61,17 +53,25 @@ void UWBP_QuestTrackingIconCanvas_C::OnRemoveLocation(const struct FGuid& Locati
 }
 
 
-// Function WBP_QuestTrackingIconCanvas.WBP_QuestTrackingIconCanvas_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_QuestTrackingIconCanvas.WBP_QuestTrackingIconCanvas_C.OnAddLocation
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGuid&                     LocationId                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalLocationBase*                 Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_QuestTrackingIconCanvas_C::Setup()
+void UWBP_QuestTrackingIconCanvas_C::OnAddLocation(const struct FGuid& LocationId, class UPalLocationBase* Location)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QuestTrackingIconCanvas_C", "Setup");
+		Func = Class->GetFunction("WBP_QuestTrackingIconCanvas_C", "OnAddLocation");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_QuestTrackingIconCanvas_C_OnAddLocation Parms{};
+
+	Parms.LocationId = std::move(LocationId);
+	Parms.Location = Location;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

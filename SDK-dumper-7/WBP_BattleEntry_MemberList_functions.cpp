@@ -17,89 +17,35 @@
 namespace SDK
 {
 
-// Function WBP_BattleEntry_MemberList.WBP_BattleEntry_MemberList_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_BattleEntry_MemberList_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BattleEntry_MemberList_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_BattleEntry_MemberList.WBP_BattleEntry_MemberList_C.ExecuteUbergraph_WBP_BattleEntry_MemberList
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_BattleEntry_MemberList_C::ExecuteUbergraph_WBP_BattleEntry_MemberList(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BattleEntry_MemberList_C", "ExecuteUbergraph_WBP_BattleEntry_MemberList");
-
-	Params::WBP_BattleEntry_MemberList_C_ExecuteUbergraph_WBP_BattleEntry_MemberList Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BattleEntry_MemberList.WBP_BattleEntry_MemberList_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_BattleEntry_MemberList_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BattleEntry_MemberList_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_BattleEntry_MemberList.WBP_BattleEntry_MemberList_C.OnUpdateLevel_Binded
+// Function WBP_BattleEntry_MemberList.WBP_BattleEntry_MemberList_C.UpdatePlayerName
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   NewLevel                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_BattleEntry_MemberList_C::OnUpdateLevel_Binded(int32 NewLevel)
+void UWBP_BattleEntry_MemberList_C::UpdatePlayerName()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BattleEntry_MemberList_C", "OnUpdateLevel_Binded");
+		Func = Class->GetFunction("WBP_BattleEntry_MemberList_C", "UpdatePlayerName");
 
-	Params::WBP_BattleEntry_MemberList_C_OnUpdateLevel_Binded Parms{};
-
-	Parms.NewLevel = NewLevel;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_BattleEntry_MemberList.WBP_BattleEntry_MemberList_C.OnUpdateNickName_Binded
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_BattleEntry_MemberList.WBP_BattleEntry_MemberList_C.SetValidation
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FString&                    NewNickName                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// bool                                    IsValid                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_BattleEntry_MemberList_C::OnUpdateNickName_Binded(const class FString& NewNickName)
+void UWBP_BattleEntry_MemberList_C::SetValidation(bool IsValid)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BattleEntry_MemberList_C", "OnUpdateNickName_Binded");
+		Func = Class->GetFunction("WBP_BattleEntry_MemberList_C", "SetValidation");
 
-	Params::WBP_BattleEntry_MemberList_C_OnUpdateNickName_Binded Parms{};
+	Params::WBP_BattleEntry_MemberList_C_SetValidation Parms{};
 
-	Parms.NewNickName = std::move(NewNickName);
+	Parms.IsValid = IsValid;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -131,35 +77,89 @@ void UWBP_BattleEntry_MemberList_C::SetPlayerInfo(const class FString& PlayerNam
 }
 
 
-// Function WBP_BattleEntry_MemberList.WBP_BattleEntry_MemberList_C.SetValidation
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_BattleEntry_MemberList.WBP_BattleEntry_MemberList_C.OnUpdateNickName_Binded
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsValid                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    NewNickName                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void UWBP_BattleEntry_MemberList_C::SetValidation(bool IsValid)
+void UWBP_BattleEntry_MemberList_C::OnUpdateNickName_Binded(const class FString& NewNickName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BattleEntry_MemberList_C", "SetValidation");
+		Func = Class->GetFunction("WBP_BattleEntry_MemberList_C", "OnUpdateNickName_Binded");
 
-	Params::WBP_BattleEntry_MemberList_C_SetValidation Parms{};
+	Params::WBP_BattleEntry_MemberList_C_OnUpdateNickName_Binded Parms{};
 
-	Parms.IsValid = IsValid;
+	Parms.NewNickName = std::move(NewNickName);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_BattleEntry_MemberList.WBP_BattleEntry_MemberList_C.UpdatePlayerName
+// Function WBP_BattleEntry_MemberList.WBP_BattleEntry_MemberList_C.OnUpdateLevel_Binded
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   NewLevel                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_BattleEntry_MemberList_C::UpdatePlayerName()
+void UWBP_BattleEntry_MemberList_C::OnUpdateLevel_Binded(int32 NewLevel)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BattleEntry_MemberList_C", "UpdatePlayerName");
+		Func = Class->GetFunction("WBP_BattleEntry_MemberList_C", "OnUpdateLevel_Binded");
+
+	Params::WBP_BattleEntry_MemberList_C_OnUpdateLevel_Binded Parms{};
+
+	Parms.NewLevel = NewLevel;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BattleEntry_MemberList.WBP_BattleEntry_MemberList_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_BattleEntry_MemberList_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BattleEntry_MemberList_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_BattleEntry_MemberList.WBP_BattleEntry_MemberList_C.ExecuteUbergraph_WBP_BattleEntry_MemberList
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BattleEntry_MemberList_C::ExecuteUbergraph_WBP_BattleEntry_MemberList(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BattleEntry_MemberList_C", "ExecuteUbergraph_WBP_BattleEntry_MemberList");
+
+	Params::WBP_BattleEntry_MemberList_C_ExecuteUbergraph_WBP_BattleEntry_MemberList Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BattleEntry_MemberList.WBP_BattleEntry_MemberList_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_BattleEntry_MemberList_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BattleEntry_MemberList_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

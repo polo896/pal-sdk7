@@ -31,12 +31,12 @@ public:
 	bool                                          IsAnimationUpdate;                                 // 0x0329(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ChangeToElementalUnlock(bool isSkipAnim);
-	void ElementalUnlockAnimation(double ElapsedTime);
-	void EnableTicks();
-	void ExecuteUbergraph_BP_TreasureBoxVisual_ElementalLock_Base(int32 EntryPoint);
-	void ReceiveBeginPlay();
 	void ReceiveTick(float DeltaSeconds);
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_TreasureBoxVisual_ElementalLock_Base(int32 EntryPoint);
+	void EnableTicks();
+	void ElementalUnlockAnimation(double ElapsedTime);
+	void ChangeToElementalUnlock(bool isSkipAnim);
 
 public:
 	static class UClass* StaticClass()

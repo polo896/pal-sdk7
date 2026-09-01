@@ -19,8 +19,8 @@ class UWBP_InventoryEquipment_StatusPointButton_C : public UPalUserWidget
     class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x04B8 (size: 0x8)
     class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Decrement;                // 0x04C0 (size: 0x8)
     class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton_Increment;                // 0x04C8 (size: 0x8)
-    TMap<class FName, class FDataTableRowHandle> MagIDMap;                            // 0x04D0 (size: 0x50)
-    TMap<class FName, class UTexture2D*> TextureMap;                                  // 0x0520 (size: 0x50)
+    TMap<FName, FDataTableRowHandle> MagIDMap;                                        // 0x04D0 (size: 0x50)
+    TMap<FName, UTexture2D*> TextureMap;                                              // 0x0520 (size: 0x50)
     FName BindStatusPointName;                                                        // 0x0570 (size: 0x8)
     FWBP_InventoryEquipment_StatusPointButton_COnClickedIncrement OnClickedIncrement; // 0x0578 (size: 0x10)
     void OnClickedIncrement(class UWBP_InventoryEquipment_StatusPointButton_C* Button);

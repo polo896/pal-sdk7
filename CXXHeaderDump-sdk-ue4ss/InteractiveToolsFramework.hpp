@@ -359,9 +359,9 @@ class UCombinedTransformGizmo : public UInteractiveGizmo
     bool bSnapToWorldRotGrid;                                                         // 0x0080 (size: 0x1)
     bool bUseContextCoordinateSystem;                                                 // 0x0081 (size: 0x1)
     EToolContextCoordinateSystem CurrentCoordinateSystem;                             // 0x0084 (size: 0x4)
-    TArray<class UPrimitiveComponent*> ActiveComponents;                              // 0x0150 (size: 0x10)
-    TArray<class UPrimitiveComponent*> NonuniformScaleComponents;                     // 0x0160 (size: 0x10)
-    TArray<class UInteractiveGizmo*> ActiveGizmos;                                    // 0x0170 (size: 0x10)
+    TArray<UPrimitiveComponent*> ActiveComponents;                                    // 0x0150 (size: 0x10)
+    TArray<UPrimitiveComponent*> NonuniformScaleComponents;                           // 0x0160 (size: 0x10)
+    TArray<UInteractiveGizmo*> ActiveGizmos;                                          // 0x0170 (size: 0x10)
     class UGizmoConstantFrameAxisSource* CameraAxisSource;                            // 0x0190 (size: 0x8)
     class UGizmoComponentAxisSource* AxisXSource;                                     // 0x0198 (size: 0x8)
     class UGizmoComponentAxisSource* AxisYSource;                                     // 0x01A0 (size: 0x8)
@@ -383,7 +383,7 @@ class UCombinedTransformGizmoContextObject : public UObject
 
 class UContextObjectStore : public UObject
 {
-    TArray<class UObject*> ContextObjects;                                            // 0x0028 (size: 0x10)
+    TArray<UObject*> ContextObjects;                                                  // 0x0028 (size: 0x10)
 
 }; // Size: 0x38
 
@@ -630,7 +630,7 @@ class UGizmoElementGroup : public UGizmoElementLineBase
 {
     bool bConstantScale;                                                              // 0x0158 (size: 0x1)
     bool bHitOwner;                                                                   // 0x0159 (size: 0x1)
-    TArray<class UGizmoElementBase*> Elements;                                        // 0x0160 (size: 0x10)
+    TArray<UGizmoElementBase*> Elements;                                              // 0x0160 (size: 0x10)
 
 }; // Size: 0x170
 
@@ -864,14 +864,14 @@ class UInteractiveGizmoBuilder : public UObject
 class UInteractiveGizmoManager : public UObject
 {
     TArray<FActiveGizmo> ActiveGizmos;                                                // 0x0030 (size: 0x10)
-    TMap<class FString, class UInteractiveGizmoBuilder*> GizmoBuilders;               // 0x0058 (size: 0x50)
+    TMap<FString, UInteractiveGizmoBuilder*> GizmoBuilders;                           // 0x0058 (size: 0x50)
 
 }; // Size: 0xC0
 
 class UInteractiveTool : public UObject
 {
     class UInputBehaviorSet* InputBehaviors;                                          // 0x0060 (size: 0x8)
-    TArray<class UObject*> ToolPropertyObjects;                                       // 0x0068 (size: 0x10)
+    TArray<UObject*> ToolPropertyObjects;                                             // 0x0068 (size: 0x10)
 
 }; // Size: 0x98
 
@@ -883,13 +883,13 @@ class UInteractiveToolManager : public UObject
 {
     class UInteractiveTool* ActiveLeftTool;                                           // 0x0040 (size: 0x8)
     class UInteractiveTool* ActiveRightTool;                                          // 0x0048 (size: 0x8)
-    TMap<class FString, class UInteractiveToolBuilder*> ToolBuilders;                 // 0x00D0 (size: 0x50)
+    TMap<FString, UInteractiveToolBuilder*> ToolBuilders;                             // 0x00D0 (size: 0x50)
 
 }; // Size: 0x180
 
 class UInteractiveToolPropertySet : public UObject
 {
-    TMap<class FString, class UInteractiveToolPropertySet*> CachedPropertiesMap;      // 0x0038 (size: 0x50)
+    TMap<FString, UInteractiveToolPropertySet*> CachedPropertiesMap;                  // 0x0038 (size: 0x50)
     bool bIsPropertySetEnabled;                                                       // 0x0088 (size: 0x1)
 
 }; // Size: 0xA8
@@ -913,8 +913,8 @@ class UIntervalGizmo : public UInteractiveGizmo
 {
     class UGizmoTransformChangeStateTarget* StateTarget;                              // 0x0038 (size: 0x8)
     class UTransformProxy* TransformProxy;                                            // 0x0098 (size: 0x8)
-    TArray<class UPrimitiveComponent*> ActiveComponents;                              // 0x00A0 (size: 0x10)
-    TArray<class UInteractiveGizmo*> ActiveGizmos;                                    // 0x00B0 (size: 0x10)
+    TArray<UPrimitiveComponent*> ActiveComponents;                                    // 0x00A0 (size: 0x10)
+    TArray<UInteractiveGizmo*> ActiveGizmos;                                          // 0x00B0 (size: 0x10)
     class UGizmoComponentAxisSource* AxisYSource;                                     // 0x00D8 (size: 0x8)
     class UGizmoComponentAxisSource* AxisZSource;                                     // 0x00E0 (size: 0x8)
 
@@ -977,7 +977,7 @@ class UMultiClickSequenceInputBehavior : public UAnyButtonInputBehavior
 
 class UMultiSelectionTool : public UInteractiveTool
 {
-    TArray<class UToolTarget*> Targets;                                               // 0x00A0 (size: 0x10)
+    TArray<UToolTarget*> Targets;                                                     // 0x00A0 (size: 0x10)
 
 }; // Size: 0xB0
 
@@ -1098,7 +1098,7 @@ class UToolTargetFactory : public UObject
 
 class UToolTargetManager : public UObject
 {
-    TArray<class UToolTargetFactory*> Factories;                                      // 0x0030 (size: 0x10)
+    TArray<UToolTargetFactory*> Factories;                                            // 0x0030 (size: 0x10)
 
 }; // Size: 0x40
 

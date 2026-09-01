@@ -53,17 +53,17 @@ public:
 	bool                                          HasPower;                                          // 0x0519(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void Destruct();
-	void DisplayCheck();
-	void ExecuteUbergraph_WBP_Ingame_Incubator_Multiple(int32 EntryPoint);
-	void OnEggArrayUpdated();
-	void OnInitialized();
-	void OnSetup();
-	void Setup();
-	void Update_Power_Suffcient(class UPalMapObjectEnergyModule* Module);
-	void Update_Slots(class UPalItemContainer* ItemContainer);
 	void UpdateSimpleSlot();
+	void Update_Slots(class UPalItemContainer* ItemContainer);
+	void Update_Power_Suffcient(class UPalMapObjectEnergyModule* Module);
+	void Setup();
+	void OnSetup();
+	void OnInitialized();
+	void OnEggArrayUpdated();
+	void ExecuteUbergraph_WBP_Ingame_Incubator_Multiple(int32 EntryPoint);
+	void DisplayCheck();
+	void Destruct();
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

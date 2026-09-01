@@ -17,57 +17,100 @@
 namespace SDK::Params
 {
 
-// Function WBP_Paldex_List.WBP_Paldex_List_C.BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Paldex_List_C_BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_Paldex_List.WBP_Paldex_List_C.SetVisibilityNewMark
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Paldex_List_C_SetVisibilityNewMark final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              NewVisibility;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Paldex_List_C_BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_Paldex_List_C_SetVisibilityNewMark;
 
-// Function WBP_Paldex_List.WBP_Paldex_List_C.BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Paldex_List_C_BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_Paldex_List.WBP_Paldex_List_C.SetupForWorldTreeDragon2
+// 0x00A8 (0x00A8 - 0x0000)
+struct WBP_Paldex_List_C_SetupForWorldTreeDragon2 final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIPaldex_DisplayInfo               DisplayInfo;                                       // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FName                                   CallFunc_GetCharacterIDFromTribeID_ReturnValue;    // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetCharacterIDFromTribeID_ReturnValue_1;  // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Divide_IntInt_ReturnValue;                // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Divide_IntInt_ReturnValue_1;              // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Percent_IntInt_ReturnValue_1;             // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalDatabaseCharacterParameter*         CallFunc_GetDatabaseCharacterParameter_ReturnValue; // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<int32>                                 K2Node_MakeArray_Array;                            // 0x0060(0x0010)(ConstParm, ReferenceParm)
+	class FText                                   CallFunc_GetLocalizedCharacterName_OutText;        // 0x0070(0x0018)()
+	class UPalDatabaseCharacterParameter*         CallFunc_GetDatabaseCharacterParameter_ReturnValue_1; // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class UPalTextBlockBase*>              K2Node_MakeArray_Array_1;                          // 0x0090(0x0010)(ReferenceParm, ContainsInstancedReference)
+	EPalElementType                               CallFunc_GetElementType_Element1;                  // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalElementType                               CallFunc_GetElementType_Element2;                  // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Paldex_List_C_BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_Paldex_List_C_SetupForWorldTreeDragon2;
 
-// Function WBP_Paldex_List.WBP_Paldex_List_C.BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Paldex_List_C_BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_Paldex_List.WBP_Paldex_List_C.SetupForSkinData
+// 0x0088 (0x0088 - 0x0000)
+struct WBP_Paldex_List_C_SetupForSkinData final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FName                                   SkinName;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TSoftObjectPtr<class UTexture2D>              Texture;                                           // 0x0008(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	class FText                                   LocalizedSkinNameText;                             // 0x0038(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class UPalDatabaseCharacterParameter*         CallFunc_GetDatabaseCharacterParameter_ReturnValue; // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TSoftObjectPtr<class UTexture2D>              CallFunc_GetCharacterIconTextureBySkinName_ReturnValue; // 0x0058(0x0030)(UObjectWrapper, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Paldex_List_C_BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_Paldex_List_C_SetupForSkinData;
 
-// Function WBP_Paldex_List.WBP_Paldex_List_C.ExecuteUbergraph_WBP_Paldex_List
+// Function WBP_Paldex_List.WBP_Paldex_List_C.SetupBySimpleText
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Paldex_List_C_SetupBySimpleText final
+{
+public:
+	class FText                                   InText;                                            // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_Paldex_List_C_SetupBySimpleText;
+
+// Function WBP_Paldex_List.WBP_Paldex_List_C.SetupByCharacterID
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_Paldex_List_C_SetupByCharacterID final
+{
+public:
+	class FName                                   CharacterID;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalDatabaseCharacterParameter*         CallFunc_GetDatabaseCharacterParameter_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetLocalizedCharacterName_OutText;        // 0x0010(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_Paldex_List_C_SetupByCharacterID;
+
+// Function WBP_Paldex_List.WBP_Paldex_List_C.Setup_NotEncounted
 // 0x0038 (0x0038 - 0x0000)
-struct WBP_Paldex_List_C_ExecuteUbergraph_WBP_Paldex_List final
+struct WBP_Paldex_List_C_Setup_NotEncounted final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_2;               // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_1;               // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIPaldex_DisplayInfo               DisplayInfo;                                       // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-DUMPER7_ASSERTS_WBP_Paldex_List_C_ExecuteUbergraph_WBP_Paldex_List;
+DUMPER7_ASSERTS_WBP_Paldex_List_C_Setup_NotEncounted;
 
-// Function WBP_Paldex_List.WBP_Paldex_List_C.GetCharacterID
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Paldex_List_C_GetCharacterID final
+// Function WBP_Paldex_List.WBP_Paldex_List_C.Setup_Encounted
+// 0x0058 (0x0058 - 0x0000)
+struct WBP_Paldex_List_C_Setup_Encounted final
 {
 public:
-	class FName                                   CharacterID;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIPaldex_DisplayInfo               DisplayInfo;                                       // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class UPalDatabaseCharacterParameter*         CallFunc_GetDatabaseCharacterParameter_ReturnValue; // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetLocalizedCharacterName_OutText;        // 0x0040(0x0018)()
 };
-DUMPER7_ASSERTS_WBP_Paldex_List_C_GetCharacterID;
+DUMPER7_ASSERTS_WBP_Paldex_List_C_Setup_Encounted;
+
+// Function WBP_Paldex_List.WBP_Paldex_List_C.Setup_Captured
+// 0x0058 (0x0058 - 0x0000)
+struct WBP_Paldex_List_C_Setup_Captured final
+{
+public:
+	struct FPalUIPaldex_DisplayInfo               DisplayInfo;                                       // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class UPalDatabaseCharacterParameter*         CallFunc_GetDatabaseCharacterParameter_ReturnValue; // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetLocalizedCharacterName_OutText;        // 0x0040(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_Paldex_List_C_Setup_Captured;
 
 // Function WBP_Paldex_List.WBP_Paldex_List_C.Setup
 // 0x00D8 (0x00D8 - 0x0000)
@@ -113,100 +156,57 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Paldex_List_C_Setup;
 
-// Function WBP_Paldex_List.WBP_Paldex_List_C.Setup_Captured
-// 0x0058 (0x0058 - 0x0000)
-struct WBP_Paldex_List_C_Setup_Captured final
+// Function WBP_Paldex_List.WBP_Paldex_List_C.GetCharacterID
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Paldex_List_C_GetCharacterID final
 {
 public:
-	struct FPalUIPaldex_DisplayInfo               DisplayInfo;                                       // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class UPalDatabaseCharacterParameter*         CallFunc_GetDatabaseCharacterParameter_ReturnValue; // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetLocalizedCharacterName_OutText;        // 0x0040(0x0018)()
+	class FName                                   CharacterID;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Paldex_List_C_Setup_Captured;
+DUMPER7_ASSERTS_WBP_Paldex_List_C_GetCharacterID;
 
-// Function WBP_Paldex_List.WBP_Paldex_List_C.Setup_Encounted
-// 0x0058 (0x0058 - 0x0000)
-struct WBP_Paldex_List_C_Setup_Encounted final
-{
-public:
-	struct FPalUIPaldex_DisplayInfo               DisplayInfo;                                       // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class UPalDatabaseCharacterParameter*         CallFunc_GetDatabaseCharacterParameter_ReturnValue; // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetLocalizedCharacterName_OutText;        // 0x0040(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_Paldex_List_C_Setup_Encounted;
-
-// Function WBP_Paldex_List.WBP_Paldex_List_C.Setup_NotEncounted
+// Function WBP_Paldex_List.WBP_Paldex_List_C.ExecuteUbergraph_WBP_Paldex_List
 // 0x0038 (0x0038 - 0x0000)
-struct WBP_Paldex_List_C_Setup_NotEncounted final
+struct WBP_Paldex_List_C_ExecuteUbergraph_WBP_Paldex_List final
 {
 public:
-	struct FPalUIPaldex_DisplayInfo               DisplayInfo;                                       // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_2;               // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button_1;               // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Paldex_List_C_Setup_NotEncounted;
+DUMPER7_ASSERTS_WBP_Paldex_List_C_ExecuteUbergraph_WBP_Paldex_List;
 
-// Function WBP_Paldex_List.WBP_Paldex_List_C.SetupByCharacterID
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_Paldex_List_C_SetupByCharacterID final
+// Function WBP_Paldex_List.WBP_Paldex_List_C.BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Paldex_List_C_BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	class FName                                   CharacterID;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalDatabaseCharacterParameter*         CallFunc_GetDatabaseCharacterParameter_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetLocalizedCharacterName_OutText;        // 0x0010(0x0018)()
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Paldex_List_C_SetupByCharacterID;
+DUMPER7_ASSERTS_WBP_Paldex_List_C_BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature;
 
-// Function WBP_Paldex_List.WBP_Paldex_List_C.SetupBySimpleText
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Paldex_List_C_SetupBySimpleText final
+// Function WBP_Paldex_List.WBP_Paldex_List_C.BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Paldex_List_C_BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	class FText                                   InText;                                            // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Paldex_List_C_SetupBySimpleText;
+DUMPER7_ASSERTS_WBP_Paldex_List_C_BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
 
-// Function WBP_Paldex_List.WBP_Paldex_List_C.SetupForSkinData
-// 0x0088 (0x0088 - 0x0000)
-struct WBP_Paldex_List_C_SetupForSkinData final
+// Function WBP_Paldex_List.WBP_Paldex_List_C.BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Paldex_List_C_BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	class FName                                   SkinName;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TSoftObjectPtr<class UTexture2D>              Texture;                                           // 0x0008(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	class FText                                   LocalizedSkinNameText;                             // 0x0038(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class UPalDatabaseCharacterParameter*         CallFunc_GetDatabaseCharacterParameter_ReturnValue; // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TSoftObjectPtr<class UTexture2D>              CallFunc_GetCharacterIconTextureBySkinName_ReturnValue; // 0x0058(0x0030)(UObjectWrapper, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Paldex_List_C_SetupForSkinData;
-
-// Function WBP_Paldex_List.WBP_Paldex_List_C.SetupForWorldTreeDragon2
-// 0x00A8 (0x00A8 - 0x0000)
-struct WBP_Paldex_List_C_SetupForWorldTreeDragon2 final
-{
-public:
-	struct FPalUIPaldex_DisplayInfo               DisplayInfo;                                       // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FName                                   CallFunc_GetCharacterIDFromTribeID_ReturnValue;    // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetCharacterIDFromTribeID_ReturnValue_1;  // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Divide_IntInt_ReturnValue;                // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Divide_IntInt_ReturnValue_1;              // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Percent_IntInt_ReturnValue_1;             // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalDatabaseCharacterParameter*         CallFunc_GetDatabaseCharacterParameter_ReturnValue; // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<int32>                                 K2Node_MakeArray_Array;                            // 0x0060(0x0010)(ConstParm, ReferenceParm)
-	class FText                                   CallFunc_GetLocalizedCharacterName_OutText;        // 0x0070(0x0018)()
-	class UPalDatabaseCharacterParameter*         CallFunc_GetDatabaseCharacterParameter_ReturnValue_1; // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class UPalTextBlockBase*>              K2Node_MakeArray_Array_1;                          // 0x0090(0x0010)(ReferenceParm, ContainsInstancedReference)
-	EPalElementType                               CallFunc_GetElementType_Element1;                  // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalElementType                               CallFunc_GetElementType_Element2;                  // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Paldex_List_C_SetupForWorldTreeDragon2;
-
-// Function WBP_Paldex_List.WBP_Paldex_List_C.SetVisibilityNewMark
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Paldex_List_C_SetVisibilityNewMark final
-{
-public:
-	ESlateVisibility                              NewVisibility;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Paldex_List_C_SetVisibilityNewMark;
+DUMPER7_ASSERTS_WBP_Paldex_List_C_BndEvt__WBP_Paldex_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
 
 }
 

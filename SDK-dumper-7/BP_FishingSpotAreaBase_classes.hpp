@@ -41,12 +41,12 @@ public:
 	ECollisionEnabled                             AttackBlockCollisionType;                          // 0x0488(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AdjustActorToWater();
-	void BndEvt__BP_FishingSpotAreaBase_FishingSpotAttackBlock_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
-	void ExecuteUbergraph_BP_FishingSpotAreaBase(int32 EntryPoint);
-	void OnEmptySpot();
-	void OnSpawnFish();
 	void ReceiveBeginPlay();
+	void OnSpawnFish();
+	void OnEmptySpot();
+	void ExecuteUbergraph_BP_FishingSpotAreaBase(int32 EntryPoint);
+	void BndEvt__BP_FishingSpotAreaBase_FishingSpotAttackBlock_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+	void AdjustActorToWater();
 
 public:
 	static class UClass* StaticClass()

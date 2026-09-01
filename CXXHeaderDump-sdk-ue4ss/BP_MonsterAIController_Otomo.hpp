@@ -5,7 +5,7 @@ class ABP_MonsterAIController_Otomo_C : public ABP_MonsterAIControllerBase_C
 {
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0590 (size: 0x8)
     int32 OtomoSlotIndex;                                                             // 0x0598 (size: 0x4)
-    TMap<class EPalAIActionType, class UPalAIActionBase*> PlayingAIActionMap;         // 0x05A0 (size: 0x50)
+    TMap<EPalAIActionType, UPalAIActionBase*> PlayingAIActionMap;                     // 0x05A0 (size: 0x50)
     FTimerHandle RegeneTimer;                                                         // 0x05F0 (size: 0x8)
     FVector FollowInterpolatedPos;                                                    // 0x05F8 (size: 0x18)
     double FollowSpeed;                                                               // 0x0610 (size: 0x8)

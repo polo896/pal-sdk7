@@ -32,11 +32,11 @@ public:
 	struct FDataTableRowHandle                    EnterMsgId;                                        // 0x04A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void Count_Down();
-	void ExecuteUbergraph_WBP_BattleEntry_Wait(int32 EntryPoint);
 	void OnRequestRemove();
-	void OnSetup();
+	void ExecuteUbergraph_WBP_BattleEntry_Wait(int32 EntryPoint);
+	void Count_Down();
 	void UpdateCountDown();
+	void OnSetup();
 
 public:
 	static class UClass* StaticClass()

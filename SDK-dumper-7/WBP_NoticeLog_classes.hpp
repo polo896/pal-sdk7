@@ -30,17 +30,17 @@ public:
 
 public:
 	void Close_Internal();
-	void ExecuteUbergraph_WBP_NoticeLog(int32 EntryPoint);
-	void OnFinished();
-	void OnFinishedClose();
-	void OnInitialized();
-	void OnLoaded_19AB6838498B19451FE6AEAD31DEA803(class UObject* Loaded);
-	void Open_Internal();
-	void RequestInAnime();
-	void RequestLoadIconTexture(const TSoftObjectPtr<class UTexture2D>& softTexturePtr);
-	void RequestOutAnime();
-	void SetAdditionalData(const struct FPalLogAdditionalData& inAdditionalData);
 	void SetLogText(const class FText& InText);
+	void SetAdditionalData(const struct FPalLogAdditionalData& inAdditionalData);
+	void RequestOutAnime();
+	void RequestLoadIconTexture(const TSoftObjectPtr<class UTexture2D>& softTexturePtr);
+	void RequestInAnime();
+	void Open_Internal();
+	void OnLoaded_19AB6838498B19451FE6AEAD31DEA803(class UObject* Loaded);
+	void OnInitialized();
+	void OnFinishedClose();
+	void OnFinished();
+	void ExecuteUbergraph_WBP_NoticeLog(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -18,78 +18,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.Do Custom Navigation_Left
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_Arena_RankingBoard_C_Do_Custom_Navigation_Left final
-{
-public:
-	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Max_ReturnValue;                          // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Arena_RankingBoard_List_C*         K2Node_DynamicCast_AsWBP_Arena_Ranking_Board_List; // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Arena_RankingBoard_C_Do_Custom_Navigation_Left;
-
-// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.DoCustomNavigation_Right
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_Arena_RankingBoard_C_DoCustomNavigation_Right final
-{
-public:
-	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Min_ReturnValue;                          // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_Arena_RankingBoard_List_C*         K2Node_DynamicCast_AsWBP_Arena_Ranking_Board_List; // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Arena_RankingBoard_C_DoCustomNavigation_Right;
-
-// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.ExecuteUbergraph_WBP_Arena_RankingBoard
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_Arena_RankingBoard_C_ExecuteUbergraph_WBP_Arena_RankingBoard final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result;    // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue; // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Arena_RankingBoard_C_ExecuteUbergraph_WBP_Arena_RankingBoard;
-
-// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.OnListHovered
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Arena_RankingBoard_C_OnListHovered final
-{
-public:
-	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetChildIndex_ReturnValue;                // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Arena_RankingBoard_C_OnListHovered;
-
-// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.OnLocalPlayerInfoReplicated
-// 0x00A0 (0x00A0 - 0x0000)
-struct WBP_Arena_RankingBoard_C_OnLocalPlayerInfoReplicated final
-{
-public:
-	struct FPalArenaWorldRankingRecord            RankingInfo;                                       // 0x0000(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm)
-	TDelegate<void(const struct FPalArenaWorldRankingRecord& RankingInfo)> K2Node_CreateDelegate_OutputDelegate; // 0x0088(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalArenaWorldSubsystem*                CallFunc_GetArenaWorldSubsystem_ReturnValue;       // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Arena_RankingBoard_C_OnLocalPlayerInfoReplicated;
-
 // Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.Setup
 // 0x0130 (0x0130 - 0x0000)
 struct WBP_Arena_RankingBoard_C_Setup final
@@ -120,6 +48,78 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Arena_RankingBoard_C_Setup;
+
+// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.OnLocalPlayerInfoReplicated
+// 0x00A0 (0x00A0 - 0x0000)
+struct WBP_Arena_RankingBoard_C_OnLocalPlayerInfoReplicated final
+{
+public:
+	struct FPalArenaWorldRankingRecord            RankingInfo;                                       // 0x0000(0x0088)(BlueprintVisible, BlueprintReadOnly, Parm)
+	TDelegate<void(const struct FPalArenaWorldRankingRecord& RankingInfo)> K2Node_CreateDelegate_OutputDelegate; // 0x0088(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalArenaWorldSubsystem*                CallFunc_GetArenaWorldSubsystem_ReturnValue;       // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Arena_RankingBoard_C_OnLocalPlayerInfoReplicated;
+
+// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.OnListHovered
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Arena_RankingBoard_C_OnListHovered final
+{
+public:
+	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetChildIndex_ReturnValue;                // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Arena_RankingBoard_C_OnListHovered;
+
+// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.ExecuteUbergraph_WBP_Arena_RankingBoard
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_Arena_RankingBoard_C_ExecuteUbergraph_WBP_Arena_RankingBoard final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_CreatePlayAnimationProxyObject_Result;    // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimationPlayCallbackProxy*      CallFunc_CreatePlayAnimationProxyObject_ReturnValue; // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Arena_RankingBoard_C_ExecuteUbergraph_WBP_Arena_RankingBoard;
+
+// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.DoCustomNavigation_Right
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_Arena_RankingBoard_C_DoCustomNavigation_Right final
+{
+public:
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Min_ReturnValue;                          // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Arena_RankingBoard_List_C*         K2Node_DynamicCast_AsWBP_Arena_Ranking_Board_List; // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Arena_RankingBoard_C_DoCustomNavigation_Right;
+
+// Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.Do Custom Navigation_Left
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_Arena_RankingBoard_C_Do_Custom_Navigation_Left final
+{
+public:
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Max_ReturnValue;                          // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_Arena_RankingBoard_List_C*         K2Node_DynamicCast_AsWBP_Arena_Ranking_Board_List; // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Arena_RankingBoard_C_Do_Custom_Navigation_Left;
 
 // Function WBP_Arena_RankingBoard.WBP_Arena_RankingBoard_C.BP_GetDesiredFocusTarget
 // 0x0020 (0x0020 - 0x0000)

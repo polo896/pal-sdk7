@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "WBP_IndividualParameterBindWidget_classes.hpp"
 #include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "WBP_IndividualParameterBindWidget_classes.hpp"
 #include "Pal_structs.hpp"
 
 
@@ -46,38 +46,38 @@ public:
 
 public:
 	void BindFromHandle(class UPalIndividualCharacterHandle* targetHandle);
-	void CheckFriendOrAlly(bool* bFriendOrAlly);
-	void Construct();
-	void DelayClose();
-	void Destruct();
-	void ExecuteUbergraph_WBP_PalNPCHPGauge(int32 EntryPoint);
-	void InitializeDetail();
-	void IsDead(bool* IsDead_0);
-	void IsFriend(bool* IsFriend_0);
-	void IsOtomo(bool* IsOtomo_0);
-	void On_UISettinga_Changed(const struct FPalOptionUISettings& PrevSettings, const struct FPalOptionUISettings& NewSettings);
-	void On_Update_Level_Binded(int32 NewLevel);
-	void On_Update_Sanity_Binded(double nowSanity, double nowMaxSanity);
-	void OnBattleModeChanged(bool bIsBattleMode);
-	void OnDead(const struct FPalDeadInfo& DeadInfo);
-	void OnInitialized();
-	void OnTakeDamage(const struct FPalDamageResult& DamageResult);
-	void OnTimer_CheckActor();
-	void OnUpdateCondition_Binded();
-	void OnUpdateHP_Binded(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& nowMaxHP);
-	void OnUpdateNickName_Binded(const class FString& NewNickName);
-	void OnUpdateTalent_Binded();
-	void Set_Work_Suitability(const TMap<EPalWorkSuitability, int32>& WorkSuitabilities);
-	void SetElementType(EPalElementType type1, EPalElementType type2);
-	void SetGender(EPalGenderType GenderType);
-	void SetupByActor();
-	void TimerEvent_UpdateDetail();
-	void Unbind();
-	void Update_Gauge_Type();
-	void UpdateCompleteCaptureBonus();
-	void UpdateForTick(double DeltaTime);
-	void UpdateStatusEffectDetail();
 	void UpdateWidgetPosition();
+	void UpdateStatusEffectDetail();
+	void UpdateForTick(double DeltaTime);
+	void UpdateCompleteCaptureBonus();
+	void Update_Gauge_Type();
+	void Unbind();
+	void TimerEvent_UpdateDetail();
+	void SetupByActor();
+	void SetGender(EPalGenderType GenderType);
+	void SetElementType(EPalElementType type1, EPalElementType type2);
+	void Set_Work_Suitability(const TMap<EPalWorkSuitability, int32>& WorkSuitabilities);
+	void OnUpdateTalent_Binded();
+	void OnUpdateNickName_Binded(const class FString& NewNickName);
+	void OnUpdateHP_Binded(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& nowMaxHP);
+	void OnUpdateCondition_Binded();
+	void OnTimer_CheckActor();
+	void OnTakeDamage(const struct FPalDamageResult& DamageResult);
+	void OnInitialized();
+	void OnDead(const struct FPalDeadInfo& DeadInfo);
+	void OnBattleModeChanged(bool bIsBattleMode);
+	void On_Update_Sanity_Binded(double nowSanity, double nowMaxSanity);
+	void On_Update_Level_Binded(int32 NewLevel);
+	void On_UISettinga_Changed(const struct FPalOptionUISettings& PrevSettings, const struct FPalOptionUISettings& NewSettings);
+	void IsOtomo(bool* IsOtomo_0);
+	void IsFriend(bool* IsFriend_0);
+	void IsDead(bool* IsDead_0);
+	void InitializeDetail();
+	void ExecuteUbergraph_WBP_PalNPCHPGauge(int32 EntryPoint);
+	void Destruct();
+	void DelayClose();
+	void Construct();
+	void CheckFriendOrAlly(bool* bFriendOrAlly);
 
 public:
 	static class UClass* StaticClass()

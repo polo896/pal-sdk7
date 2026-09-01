@@ -17,32 +17,148 @@
 namespace SDK::Params
 {
 
-// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_2_OnConfirmStatusPointEdit__DelegateSignature
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_InventoryEquipment_ForDisplay_C_BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_2_OnConfirmStatusPointEdit__DelegateSignature final
+// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.Try Start Simulate Status Point
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_InventoryEquipment_ForDisplay_C_Try_Start_Simulate_Status_Point final
 {
 public:
-	TMap<class FName, int32>                      PointMap;                                          // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalCharacterParameterComponent*        CallFunc_GetCharacterParameterComponent_ReturnValue; // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsSimulatingStatusPoint_IsSimulating;     // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalIndividualCharacterParameter*       CallFunc_TryGetIndividualParameter_ReturnValue;    // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsStatusPointAllMax_ReturnValue;          // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetUnusedStatusPoint_ReturnValue;         // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_2_OnConfirmStatusPointEdit__DelegateSignature;
+DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_Try_Start_Simulate_Status_Point;
 
-// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_3_OnRequestSwapEquipment__DelegateSignature
+// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.ToggleQuickStack
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_InventoryEquipment_ForDisplay_C_BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_3_OnRequestSwapEquipment__DelegateSignature final
+struct WBP_InventoryEquipment_ForDisplay_C_ToggleQuickStack final
 {
 public:
-	EPalPlayerEquipItemSlotType                   EquipType;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsSimulatingStatusPoint_IsSimulating;     // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_3_OnRequestSwapEquipment__DelegateSignature;
+DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_ToggleQuickStack;
 
-// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_6_OnClickQuickStackButton__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_InventoryEquipment_ForDisplay_C_BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_6_OnClickQuickStackButton__DelegateSignature final
+// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.Setup Static Input Action
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_InventoryEquipment_ForDisplay_C_Setup_Static_Input_Action final
 {
 public:
-	TArray<struct FPalItemSlotId>                 SlotIds;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x0020(0x0004)(NoDestructor)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_1;      // 0x0024(0x0004)(NoDestructor)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0028(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x0038(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_2;      // 0x0048(0x0004)(NoDestructor)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_3;      // 0x004C(0x0004)(NoDestructor)
 };
-DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_6_OnClickQuickStackButton__DelegateSignature;
+DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_Setup_Static_Input_Action;
+
+// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.Setup
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_InventoryEquipment_ForDisplay_C_Setup final
+{
+public:
+	class UBP_InGameMenuInventoryModel_C*         Model_0;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_Setup;
+
+// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.PlayUnequipmentSound
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_InventoryEquipment_ForDisplay_C_PlayUnequipmentSound final
+{
+public:
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_PlayUnequipmentSound;
+
+// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.PlayChangeEquipmentSound
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_InventoryEquipment_ForDisplay_C_PlayChangeEquipmentSound final
+{
+public:
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_PlayChangeEquipmentSound;
+
+// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.OpenNameEditWindow
+// 0x0078 (0x0078 - 0x0000)
+struct WBP_InventoryEquipment_ForDisplay_C_OpenNameEditWindow final
+{
+public:
+	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UPalHUDDispatchParameterBase* Param)> K2Node_CreateDelegate_OutputDelegate; // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalIndividualCharacterParameter*       CallFunc_GetIndividualCharacterParameterByActor_ReturnValue; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetNickName_OutName;                      // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0040(0x0018)()
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UBP_CharaCreNameEditWindowDispatchParameter_C* CallFunc_SpawnObject_ReturnValue;           // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                  CallFunc_Push_ReturnValue;                         // 0x0068(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_OpenNameEditWindow;
+
+// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.OnUpdateWeaponLoadout
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_InventoryEquipment_ForDisplay_C_OnUpdateWeaponLoadout final
+{
+public:
+	class UPalItemSlot*                           itemSlot;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPalPlayerInventoryType                       UpdatedLoadoutType;                                // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_OnUpdateWeaponLoadout;
+
+// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.OnUpdateInventoryWeight
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_InventoryEquipment_ForDisplay_C_OnUpdateInventoryWeight final
+{
+public:
+	float                                         NowWeight;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalPlayerInventoryData*                CallFunc_GetLocalInventoryData_ReturnValue;        // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetInventoryWeight_NowWeight_ImplicitCast; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetInventoryWeight_MaxWeight_ImplicitCast; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_OnUpdateInventoryWeight;
+
+// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.OnUpdateAnyEquipmentSlot
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_InventoryEquipment_ForDisplay_C_OnUpdateAnyEquipmentSlot final
+{
+public:
+	class UPalItemSlot*                           itemSlot;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPalPlayerEquipItemSlotType                   slotType;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_OnUpdateAnyEquipmentSlot;
+
+// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.OnCloseChangePlayerNameWindow
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_InventoryEquipment_ForDisplay_C_OnCloseChangePlayerNameWindow final
+{
+public:
+	class UPalHUDDispatchParameterBase*           Param_0;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UBP_CharaCreNameEditWindowDispatchParameter_C* K2Node_DynamicCast_AsBP_Chara_Cre_Name_Edit_Window_Dispatch_Parameter; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_OnCloseChangePlayerNameWindow;
 
 // Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.ExecuteUbergraph_WBP_InventoryEquipment_ForDisplay
 // 0x0278 (0x0278 - 0x0000)
@@ -133,148 +249,41 @@ public:
 };
 DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_ExecuteUbergraph_WBP_InventoryEquipment_ForDisplay;
 
-// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.OnCloseChangePlayerNameWindow
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_InventoryEquipment_ForDisplay_C_OnCloseChangePlayerNameWindow final
-{
-public:
-	class UPalHUDDispatchParameterBase*           Param_0;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UBP_CharaCreNameEditWindowDispatchParameter_C* K2Node_DynamicCast_AsBP_Chara_Cre_Name_Edit_Window_Dispatch_Parameter; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_OnCloseChangePlayerNameWindow;
-
-// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.OnUpdateAnyEquipmentSlot
+// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_6_OnClickQuickStackButton__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_InventoryEquipment_ForDisplay_C_OnUpdateAnyEquipmentSlot final
+struct WBP_InventoryEquipment_ForDisplay_C_BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_6_OnClickQuickStackButton__DelegateSignature final
 {
 public:
-	class UPalItemSlot*                           itemSlot;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPalPlayerEquipItemSlotType                   slotType;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FPalItemSlotId>                 SlotIds;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_OnUpdateAnyEquipmentSlot;
+DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_6_OnClickQuickStackButton__DelegateSignature;
 
-// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.OnUpdateInventoryWeight
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_InventoryEquipment_ForDisplay_C_OnUpdateInventoryWeight final
-{
-public:
-	float                                         NowWeight;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalPlayerInventoryData*                CallFunc_GetLocalInventoryData_ReturnValue;        // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetInventoryWeight_NowWeight_ImplicitCast; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetInventoryWeight_MaxWeight_ImplicitCast; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_OnUpdateInventoryWeight;
-
-// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.OnUpdateWeaponLoadout
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_InventoryEquipment_ForDisplay_C_OnUpdateWeaponLoadout final
-{
-public:
-	class UPalItemSlot*                           itemSlot;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPalPlayerInventoryType                       UpdatedLoadoutType;                                // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsEmpty_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_OnUpdateWeaponLoadout;
-
-// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.OpenNameEditWindow
-// 0x0078 (0x0078 - 0x0000)
-struct WBP_InventoryEquipment_ForDisplay_C_OpenNameEditWindow final
-{
-public:
-	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UPalHUDDispatchParameterBase* Param)> K2Node_CreateDelegate_OutputDelegate; // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalIndividualCharacterParameter*       CallFunc_GetIndividualCharacterParameterByActor_ReturnValue; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetNickName_OutName;                      // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0040(0x0018)()
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UBP_CharaCreNameEditWindowDispatchParameter_C* CallFunc_SpawnObject_ReturnValue;           // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                  CallFunc_Push_ReturnValue;                         // 0x0068(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_OpenNameEditWindow;
-
-// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.PlayChangeEquipmentSound
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_InventoryEquipment_ForDisplay_C_PlayChangeEquipmentSound final
-{
-public:
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_PlayChangeEquipmentSound;
-
-// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.PlayUnequipmentSound
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_InventoryEquipment_ForDisplay_C_PlayUnequipmentSound final
-{
-public:
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_PlayUnequipmentSound;
-
-// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.Setup
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_InventoryEquipment_ForDisplay_C_Setup final
-{
-public:
-	class UBP_InGameMenuInventoryModel_C*         Model_0;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_Setup;
-
-// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.Setup Static Input Action
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_InventoryEquipment_ForDisplay_C_Setup_Static_Input_Action final
-{
-public:
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x0020(0x0004)(NoDestructor)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_1;      // 0x0024(0x0004)(NoDestructor)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0028(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x0038(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_2;      // 0x0048(0x0004)(NoDestructor)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue_3;      // 0x004C(0x0004)(NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_Setup_Static_Input_Action;
-
-// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.ToggleQuickStack
+// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_3_OnRequestSwapEquipment__DelegateSignature
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_InventoryEquipment_ForDisplay_C_ToggleQuickStack final
+struct WBP_InventoryEquipment_ForDisplay_C_BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_3_OnRequestSwapEquipment__DelegateSignature final
 {
 public:
-	bool                                          CallFunc_IsSimulatingStatusPoint_IsSimulating;     // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalPlayerEquipItemSlotType                   EquipType;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_ToggleQuickStack;
+DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_3_OnRequestSwapEquipment__DelegateSignature;
 
-// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.Try Start Simulate Status Point
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_InventoryEquipment_ForDisplay_C_Try_Start_Simulate_Status_Point final
+// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_2_OnConfirmStatusPointEdit__DelegateSignature
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_InventoryEquipment_ForDisplay_C_BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_2_OnConfirmStatusPointEdit__DelegateSignature final
 {
 public:
-	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalCharacterParameterComponent*        CallFunc_GetCharacterParameterComponent_ReturnValue; // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsSimulatingStatusPoint_IsSimulating;     // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalIndividualCharacterParameter*       CallFunc_TryGetIndividualParameter_ReturnValue;    // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsStatusPointAllMax_ReturnValue;          // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetUnusedStatusPoint_ReturnValue;         // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TMap<class FName, int32>                      PointMap;                                          // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_Try_Start_Simulate_Status_Point;
+DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_BndEvt__WBP_InventoryEquipment_ForDisplay_WBP_InventoryEquipment_K2Node_ComponentBoundEvent_2_OnConfirmStatusPointEdit__DelegateSignature;
+
+// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.IsSimulatingStatusPoint
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_InventoryEquipment_ForDisplay_C_IsSimulatingStatusPoint final
+{
+public:
+	bool                                          IsSimulating;                                      // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_IsSimulatingStatusPoint;
 
 // Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.BP_GetDesiredFocusTarget
 // 0x0020 (0x0020 - 0x0000)
@@ -288,15 +297,6 @@ public:
 	class UWidget*                                CallFunc_Get_Inventory_Last_Focus_Target_TargetWidget; // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_BP_GetDesiredFocusTarget;
-
-// Function WBP_InventoryEquipment_ForDisplay.WBP_InventoryEquipment_ForDisplay_C.IsSimulatingStatusPoint
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_InventoryEquipment_ForDisplay_C_IsSimulatingStatusPoint final
-{
-public:
-	bool                                          IsSimulating;                                      // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InventoryEquipment_ForDisplay_C_IsSimulatingStatusPoint;
 
 }
 

@@ -80,13 +80,6 @@ public:
 	class USoundBase*                             Lightnings;                                        // 0x0CF0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Finish_WeatherInterpolation();
-	void Finish_WeatherChangeInterval();
-	void Finish_SnowDry();
-	void Finish_SnowAccumulate();
-	void Finish_PuddlesDry();
-	void Finish_PuddlesAccumulation();
-	void ExecuteUbergraph_PPSkyCreator_ControllerExample(int32 EntryPoint);
 	void WeatherMaterialFX_Interpolation();
 	void UserConstructionScript();
 	void Start_WetnessDry();
@@ -103,6 +96,13 @@ public:
 	void LightningStrike(const struct FVector& LightningPosition);
 	void Finish_WetnessDry();
 	void Finish_WetnessAccumulation();
+	void Finish_WeatherInterpolation();
+	void Finish_WeatherChangeInterval();
+	void Finish_SnowDry();
+	void Finish_SnowAccumulate();
+	void Finish_PuddlesDry();
+	void Finish_PuddlesAccumulation();
+	void ExecuteUbergraph_PPSkyCreator_ControllerExample(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

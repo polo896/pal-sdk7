@@ -28,9 +28,9 @@ public:
 	class UNiagaraSystem*                         HitEffect;                                         // 0x0438(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ReceiveBeginPlay();
-	void OnDestroy(class UPrimitiveComponent* HitComp, class AActor* OtherCharacter, class UPrimitiveComponent* OtherComp, const struct FHitResult& Hit);
 	void ExecuteUbergraph_BP_ShotgunBullet(int32 EntryPoint);
+	void OnDestroy(class UPrimitiveComponent* HitComp, class AActor* OtherCharacter, class UPrimitiveComponent* OtherComp, const struct FHitResult& Hit);
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

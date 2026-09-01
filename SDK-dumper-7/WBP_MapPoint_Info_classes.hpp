@@ -53,18 +53,18 @@ public:
 	float                                         LocalRemainInvadeTimer;                            // 0x0398(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ToggleDisplay(bool ShouldDisplay);
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void SetTowerBossInfo(class APalBossTower* BossTower, bool CanTeleport);
-	void SetStandaloneBossInfo(bool IsDefeated, const TArray<class FName>& CharacterIds, int32 Level, class FName BossBattleRow);
-	void SetQuestInfo(class FName QuestId);
-	void SetFTInfo(class FName FTID, bool CanTeleport);
-	void SetCampInfo(bool CanTeleport, const struct FGuid& BaseCampId);
-	void SetBossInfo(bool IsDefeated, const class FName& CharacterID, int32 Level, class FName SpawnerID, bool bHiddenLocation, class FName OriginalSpawnerID);
-	void ExecuteUbergraph_WBP_MapPoint_Info(int32 EntryPoint);
-	void AppendQuestInfo(class FName QuestId);
-	void AllReset();
 	void AdjustSide(const struct FGeometry& TargetGeometry);
+	void AllReset();
+	void AppendQuestInfo(class FName QuestId);
+	void ExecuteUbergraph_WBP_MapPoint_Info(int32 EntryPoint);
+	void SetBossInfo(bool IsDefeated, const class FName& CharacterID, int32 Level, class FName SpawnerID, bool bHiddenLocation, class FName OriginalSpawnerID);
+	void SetCampInfo(bool CanTeleport, const struct FGuid& BaseCampId);
+	void SetFTInfo(class FName FTID, bool CanTeleport);
+	void SetQuestInfo(class FName QuestId);
+	void SetStandaloneBossInfo(bool IsDefeated, const TArray<class FName>& CharacterIds, int32 Level, class FName BossBattleRow);
+	void SetTowerBossInfo(class APalBossTower* BossTower, bool CanTeleport);
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void ToggleDisplay(bool ShouldDisplay);
 
 public:
 	static class UClass* StaticClass()

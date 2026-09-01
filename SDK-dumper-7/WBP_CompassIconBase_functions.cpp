@@ -17,137 +17,99 @@
 namespace SDK
 {
 
-// Function WBP_CompassIconBase.WBP_CompassIconBase_C.ExecuteUbergraph_WBP_CompassIconBase
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_CompassIconBase.WBP_CompassIconBase_C.UpdateVisibility
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   InDistance                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CompassIconBase_C::ExecuteUbergraph_WBP_CompassIconBase(int32 EntryPoint)
+void UWBP_CompassIconBase_C::UpdateVisibility(bool* InDistance)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CompassIconBase_C", "ExecuteUbergraph_WBP_CompassIconBase");
+		Func = Class->GetFunction("WBP_CompassIconBase_C", "UpdateVisibility");
 
-	Params::WBP_CompassIconBase_C_ExecuteUbergraph_WBP_CompassIconBase Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CompassIconBase.WBP_CompassIconBase_C.Get Offset Value
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// double*                                 offSetValue                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CompassIconBase_C::Get_Offset_Value(double* offSetValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CompassIconBase_C", "Get Offset Value");
-
-	Params::WBP_CompassIconBase_C_Get_Offset_Value Parms{};
+	Params::WBP_CompassIconBase_C_UpdateVisibility Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (offSetValue != nullptr)
-		*offSetValue = Parms.offSetValue;
+	if (InDistance != nullptr)
+		*InDistance = Parms.InDistance;
 }
 
 
-// Function WBP_CompassIconBase.WBP_CompassIconBase_C.GetLocation
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UPalLocationBase**                Location                                               (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CompassIconBase_C::GetLocation(class UPalLocationBase** Location)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CompassIconBase_C", "GetLocation");
-
-	Params::WBP_CompassIconBase_C_GetLocation Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Location != nullptr)
-		*Location = Parms.Location;
-}
-
-
-// Function WBP_CompassIconBase.WBP_CompassIconBase_C.PostSetup
+// Function WBP_CompassIconBase.WBP_CompassIconBase_C.UpdateDistance
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_CompassIconBase_C::PostSetup()
+void UWBP_CompassIconBase_C::UpdateDistance()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CompassIconBase_C", "PostSetup");
+		Func = Class->GetFunction("WBP_CompassIconBase_C", "UpdateDistance");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_CompassIconBase.WBP_CompassIconBase_C.SetDisplayDistance
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_CompassIconBase.WBP_CompassIconBase_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// double                                  Length                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CompassIconBase_C::SetDisplayDistance(double Length)
+void UWBP_CompassIconBase_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CompassIconBase_C", "SetDisplayDistance");
+		Func = Class->GetFunction("WBP_CompassIconBase_C", "Tick");
 
-	Params::WBP_CompassIconBase_C_SetDisplayDistance Parms{};
+	Params::WBP_CompassIconBase_C_Tick Parms{};
 
-	Parms.Length = Length;
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CompassIconBase.WBP_CompassIconBase_C.SetDistanceText
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_CompassIconBase.WBP_CompassIconBase_C.ShouldForceHide
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// double                                  Length                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   bForceHide                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CompassIconBase_C::SetDistanceText(double Length)
+void UWBP_CompassIconBase_C::ShouldForceHide(bool* bForceHide)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CompassIconBase_C", "SetDistanceText");
+		Func = Class->GetFunction("WBP_CompassIconBase_C", "ShouldForceHide");
 
-	Params::WBP_CompassIconBase_C_SetDistanceText Parms{};
-
-	Parms.Length = Length;
+	Params::WBP_CompassIconBase_C_ShouldForceHide Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (bForceHide != nullptr)
+		*bForceHide = Parms.bForceHide;
 }
 
 
-// Function WBP_CompassIconBase.WBP_CompassIconBase_C.SetLocationId
+// Function WBP_CompassIconBase.WBP_CompassIconBase_C.SetupTexture
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FGuid&                     LocationId                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TSoftObjectPtr<class UTexture2D>        SoftTexture                                            (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void UWBP_CompassIconBase_C::SetLocationId(const struct FGuid& LocationId)
+void UWBP_CompassIconBase_C::SetupTexture(TSoftObjectPtr<class UTexture2D> SoftTexture)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CompassIconBase_C", "SetLocationId");
+		Func = Class->GetFunction("WBP_CompassIconBase_C", "SetupTexture");
 
-	Params::WBP_CompassIconBase_C_SetLocationId Parms{};
+	Params::WBP_CompassIconBase_C_SetupTexture Parms{};
 
-	Parms.LocationId = std::move(LocationId);
+	Parms.SoftTexture = SoftTexture;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -175,101 +137,139 @@ void UWBP_CompassIconBase_C::SetTargetLocation(const struct FVector& TargetLocat
 }
 
 
-// Function WBP_CompassIconBase.WBP_CompassIconBase_C.SetupTexture
+// Function WBP_CompassIconBase.WBP_CompassIconBase_C.SetLocationId
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TSoftObjectPtr<class UTexture2D>        SoftTexture                                            (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// const struct FGuid&                     LocationId                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CompassIconBase_C::SetupTexture(TSoftObjectPtr<class UTexture2D> SoftTexture)
+void UWBP_CompassIconBase_C::SetLocationId(const struct FGuid& LocationId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CompassIconBase_C", "SetupTexture");
+		Func = Class->GetFunction("WBP_CompassIconBase_C", "SetLocationId");
 
-	Params::WBP_CompassIconBase_C_SetupTexture Parms{};
+	Params::WBP_CompassIconBase_C_SetLocationId Parms{};
 
-	Parms.SoftTexture = SoftTexture;
+	Parms.LocationId = std::move(LocationId);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CompassIconBase.WBP_CompassIconBase_C.ShouldForceHide
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_CompassIconBase.WBP_CompassIconBase_C.SetDistanceText
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool*                                   bForceHide                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Length                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CompassIconBase_C::ShouldForceHide(bool* bForceHide)
+void UWBP_CompassIconBase_C::SetDistanceText(double Length)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CompassIconBase_C", "ShouldForceHide");
+		Func = Class->GetFunction("WBP_CompassIconBase_C", "SetDistanceText");
 
-	Params::WBP_CompassIconBase_C_ShouldForceHide Parms{};
+	Params::WBP_CompassIconBase_C_SetDistanceText Parms{};
+
+	Parms.Length = Length;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (bForceHide != nullptr)
-		*bForceHide = Parms.bForceHide;
 }
 
 
-// Function WBP_CompassIconBase.WBP_CompassIconBase_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_CompassIconBase.WBP_CompassIconBase_C.SetDisplayDistance
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Length                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CompassIconBase_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+void UWBP_CompassIconBase_C::SetDisplayDistance(double Length)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CompassIconBase_C", "Tick");
+		Func = Class->GetFunction("WBP_CompassIconBase_C", "SetDisplayDistance");
 
-	Params::WBP_CompassIconBase_C_Tick Parms{};
+	Params::WBP_CompassIconBase_C_SetDisplayDistance Parms{};
 
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
+	Parms.Length = Length;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CompassIconBase.WBP_CompassIconBase_C.UpdateDistance
+// Function WBP_CompassIconBase.WBP_CompassIconBase_C.PostSetup
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_CompassIconBase_C::UpdateDistance()
+void UWBP_CompassIconBase_C::PostSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CompassIconBase_C", "UpdateDistance");
+		Func = Class->GetFunction("WBP_CompassIconBase_C", "PostSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_CompassIconBase.WBP_CompassIconBase_C.UpdateVisibility
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_CompassIconBase.WBP_CompassIconBase_C.GetLocation
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool*                                   InDistance                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalLocationBase**                Location                                               (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CompassIconBase_C::UpdateVisibility(bool* InDistance)
+void UWBP_CompassIconBase_C::GetLocation(class UPalLocationBase** Location)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CompassIconBase_C", "UpdateVisibility");
+		Func = Class->GetFunction("WBP_CompassIconBase_C", "GetLocation");
 
-	Params::WBP_CompassIconBase_C_UpdateVisibility Parms{};
+	Params::WBP_CompassIconBase_C_GetLocation Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (InDistance != nullptr)
-		*InDistance = Parms.InDistance;
+	if (Location != nullptr)
+		*Location = Parms.Location;
+}
+
+
+// Function WBP_CompassIconBase.WBP_CompassIconBase_C.Get Offset Value
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// double*                                 offSetValue                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CompassIconBase_C::Get_Offset_Value(double* offSetValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CompassIconBase_C", "Get Offset Value");
+
+	Params::WBP_CompassIconBase_C_Get_Offset_Value Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (offSetValue != nullptr)
+		*offSetValue = Parms.offSetValue;
+}
+
+
+// Function WBP_CompassIconBase.WBP_CompassIconBase_C.ExecuteUbergraph_WBP_CompassIconBase
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CompassIconBase_C::ExecuteUbergraph_WBP_CompassIconBase(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CompassIconBase_C", "ExecuteUbergraph_WBP_CompassIconBase");
+
+	Params::WBP_CompassIconBase_C_ExecuteUbergraph_WBP_CompassIconBase Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

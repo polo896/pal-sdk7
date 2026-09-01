@@ -16,6 +16,24 @@
 namespace SDK::Params
 {
 
+// Function WBP_IngameMenu_Chest_LockNumInput.WBP_IngameMenu_Chest_LockNumInput_C.SetOn
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_IngameMenu_Chest_LockNumInput_C_SetOn final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_LockNumInput_C_SetOn;
+
+// Function WBP_IngameMenu_Chest_LockNumInput.WBP_IngameMenu_Chest_LockNumInput_C.PlayAuthAnm
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_IngameMenu_Chest_LockNumInput_C_PlayAuthAnm final
+{
+public:
+	bool                                          PlayPass;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Chest_LockNumInput_C_PlayAuthAnm;
+
 // Function WBP_IngameMenu_Chest_LockNumInput.WBP_IngameMenu_Chest_LockNumInput_C.ExecuteUbergraph_WBP_IngameMenu_Chest_LockNumInput
 // 0x0020 (0x0020 - 0x0000)
 struct WBP_IngameMenu_Chest_LockNumInput_C_ExecuteUbergraph_WBP_IngameMenu_Chest_LockNumInput final
@@ -34,24 +52,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_IngameMenu_Chest_LockNumInput_C_ExecuteUbergraph_WBP_IngameMenu_Chest_LockNumInput;
-
-// Function WBP_IngameMenu_Chest_LockNumInput.WBP_IngameMenu_Chest_LockNumInput_C.PlayAuthAnm
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_IngameMenu_Chest_LockNumInput_C_PlayAuthAnm final
-{
-public:
-	bool                                          PlayPass;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_LockNumInput_C_PlayAuthAnm;
-
-// Function WBP_IngameMenu_Chest_LockNumInput.WBP_IngameMenu_Chest_LockNumInput_C.SetOn
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_IngameMenu_Chest_LockNumInput_C_SetOn final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Chest_LockNumInput_C_SetOn;
 
 }
 

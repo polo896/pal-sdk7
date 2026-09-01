@@ -19,7 +19,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_Ammo.BP_Ammo_C
 // 0x0018 (0x02A8 - 0x0290)
-class ABP_Ammo_C : public AActor
+class ABP_Ammo_C final : public AActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0290(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
@@ -27,8 +27,8 @@ public:
 	class USceneComponent*                        Scene;                                             // 0x02A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_Ammo(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_Ammo(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

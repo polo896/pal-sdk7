@@ -17,6 +17,28 @@
 namespace SDK::Params
 {
 
+// Function WBP_PalPlayerDebuffNoticeBox.WBP_PalPlayerDebuffNoticeBox_C.RemoveDebuffNotice
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_PalPlayerDebuffNoticeBox_C_RemoveDebuffNotice final
+{
+public:
+	E_PalUIPlayerDebuffNoticeType                 DebuffType;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Remove_ReturnValue;                   // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_DebuffNotice_C*                    CallFunc_Map_Find_Value;                           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalPlayerDebuffNoticeBox_C_RemoveDebuffNotice;
+
+// Function WBP_PalPlayerDebuffNoticeBox.WBP_PalPlayerDebuffNoticeBox_C.ExecuteUbergraph_WBP_PalPlayerDebuffNoticeBox
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_PalPlayerDebuffNoticeBox_C_ExecuteUbergraph_WBP_PalPlayerDebuffNoticeBox final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalPlayerDebuffNoticeBox_C_ExecuteUbergraph_WBP_PalPlayerDebuffNoticeBox;
+
 // Function WBP_PalPlayerDebuffNoticeBox.WBP_PalPlayerDebuffNoticeBox_C.AddDebuffNotice
 // 0x0038 (0x0038 - 0x0000)
 struct WBP_PalPlayerDebuffNoticeBox_C_AddDebuffNotice final
@@ -33,28 +55,6 @@ public:
 	class UHorizontalBoxSlot*                     CallFunc_AddChildToHorizontalBox_ReturnValue;      // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_PalPlayerDebuffNoticeBox_C_AddDebuffNotice;
-
-// Function WBP_PalPlayerDebuffNoticeBox.WBP_PalPlayerDebuffNoticeBox_C.ExecuteUbergraph_WBP_PalPlayerDebuffNoticeBox
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_PalPlayerDebuffNoticeBox_C_ExecuteUbergraph_WBP_PalPlayerDebuffNoticeBox final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalPlayerDebuffNoticeBox_C_ExecuteUbergraph_WBP_PalPlayerDebuffNoticeBox;
-
-// Function WBP_PalPlayerDebuffNoticeBox.WBP_PalPlayerDebuffNoticeBox_C.RemoveDebuffNotice
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_PalPlayerDebuffNoticeBox_C_RemoveDebuffNotice final
-{
-public:
-	E_PalUIPlayerDebuffNoticeType                 DebuffType;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Remove_ReturnValue;                   // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_DebuffNotice_C*                    CallFunc_Map_Find_Value;                           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalPlayerDebuffNoticeBox_C_RemoveDebuffNotice;
 
 }
 

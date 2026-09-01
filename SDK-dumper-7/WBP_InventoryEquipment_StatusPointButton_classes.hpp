@@ -50,25 +50,25 @@ public:
 	TMulticastInlineDelegate<void(class UWBP_InventoryEquipment_StatusPointButton_C* Button)> OnUnhovered; // 0x05B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void AddSimulatePoint(int32 SimulatePoint);
-	void AnmEvent_StatusUp();
-	void BndEvt__WBP_InventoryEquipment_StatusPointButton_WBP_PalInvisibleButton_Decrement_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_InventoryEquipment_StatusPointButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_InventoryEquipment_StatusPointButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_InventoryEquipment_StatusPointButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void CanEnhanceStat(bool* bCanEnhance);
-	void Construct();
-	void ExecuteUbergraph_WBP_InventoryEquipment_StatusPointButton(int32 EntryPoint);
-	void Get_Base_Parameter(bool ShowBaseValue, double* Parameter);
-	void GetBonusRate(int32 Point, double* Bonus);
-	void GetPlayerPassiveMaxHP(class APalPlayerCharacter* Player, int32* PassiveHP);
-	void OnInitialized();
-	void ResetSimulate();
-	void Set_Enable_Simulate_Button(bool IsEnable, bool IsEditable);
-	void SetMaxDisplay(bool CanDisplay);
-	void Update_Binded_Status_Detail(bool ShowBaseValue);
-	void UpdateDecrementButtonDetail();
 	void UpdateStatusBuffState();
+	void UpdateDecrementButtonDetail();
+	void Update_Binded_Status_Detail(bool ShowBaseValue);
+	void SetMaxDisplay(bool CanDisplay);
+	void Set_Enable_Simulate_Button(bool IsEnable, bool IsEditable);
+	void ResetSimulate();
+	void OnInitialized();
+	void GetPlayerPassiveMaxHP(class APalPlayerCharacter* Player, int32* PassiveHP);
+	void GetBonusRate(int32 Point, double* Bonus);
+	void Get_Base_Parameter(bool ShowBaseValue, double* Parameter);
+	void ExecuteUbergraph_WBP_InventoryEquipment_StatusPointButton(int32 EntryPoint);
+	void Construct();
+	void CanEnhanceStat(bool* bCanEnhance);
+	void BndEvt__WBP_InventoryEquipment_StatusPointButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_InventoryEquipment_StatusPointButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_InventoryEquipment_StatusPointButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_InventoryEquipment_StatusPointButton_WBP_PalInvisibleButton_Decrement_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void AnmEvent_StatusUp();
+	void AddSimulatePoint(int32 SimulatePoint);
 
 public:
 	static class UClass* StaticClass()

@@ -32,14 +32,14 @@ public:
 	TMulticastInlineDelegate<void(bool IsYes)>    OnClickedButton;                                   // 0x02B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__WBP_IngameMenu_RepairAll_WBP_CommonButton_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
-	void BndEvt__WBP_IngameMenu_RepairAll_WBP_CommonButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_IngameMenu_RepairAll(int32 EntryPoint);
-	void GetFocusTarget(class UWidget** FocusTarget);
-	struct FEventReply OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent);
 	void Setup(TArray<class UPalItemSlot*>& TargetItemSlots, TArray<struct FPalStaticItemIdAndNum>& RequireMaterials);
+	struct FEventReply OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent);
+	void GetFocusTarget(class UWidget** FocusTarget);
+	void ExecuteUbergraph_WBP_IngameMenu_RepairAll(int32 EntryPoint);
+	void Destruct();
+	void Construct();
+	void BndEvt__WBP_IngameMenu_RepairAll_WBP_CommonButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
+	void BndEvt__WBP_IngameMenu_RepairAll_WBP_CommonButton_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()

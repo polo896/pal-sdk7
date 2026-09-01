@@ -14,23 +14,14 @@
 namespace SDK::Params
 {
 
-// Function BP_PalBossTower_MiddleBoss.BP_PalBossTower_MiddleBoss_C.GetEntryCancelTrigger
+// Function BP_PalBossTower_MiddleBoss.BP_PalBossTower_MiddleBoss_C.GetInteractableTrigger
 // 0x0008 (0x0008 - 0x0000)
-struct BP_PalBossTower_MiddleBoss_C_GetEntryCancelTrigger final
+struct BP_PalBossTower_MiddleBoss_C_GetInteractableTrigger final
 {
 public:
-	class UShapeComponent*                        EntryCancelTrigger_0;                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UShapeComponent*                        InteractableTrigger_0;                             // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalBossTower_MiddleBoss_C_GetEntryCancelTrigger;
-
-// Function BP_PalBossTower_MiddleBoss.BP_PalBossTower_MiddleBoss_C.GetEntryWaitInfoTrigger
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PalBossTower_MiddleBoss_C_GetEntryWaitInfoTrigger final
-{
-public:
-	class UShapeComponent*                        EntryWaitInfoTrigger;                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBossTower_MiddleBoss_C_GetEntryWaitInfoTrigger;
+DUMPER7_ASSERTS_BP_PalBossTower_MiddleBoss_C_GetInteractableTrigger;
 
 // Function BP_PalBossTower_MiddleBoss.BP_PalBossTower_MiddleBoss_C.GetInteractableInterface
 // 0x0010 (0x0010 - 0x0000)
@@ -41,14 +32,23 @@ public:
 };
 DUMPER7_ASSERTS_BP_PalBossTower_MiddleBoss_C_GetInteractableInterface;
 
-// Function BP_PalBossTower_MiddleBoss.BP_PalBossTower_MiddleBoss_C.GetInteractableTrigger
+// Function BP_PalBossTower_MiddleBoss.BP_PalBossTower_MiddleBoss_C.GetEntryWaitInfoTrigger
 // 0x0008 (0x0008 - 0x0000)
-struct BP_PalBossTower_MiddleBoss_C_GetInteractableTrigger final
+struct BP_PalBossTower_MiddleBoss_C_GetEntryWaitInfoTrigger final
 {
 public:
-	class UShapeComponent*                        InteractableTrigger_0;                             // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UShapeComponent*                        EntryWaitInfoTrigger;                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_PalBossTower_MiddleBoss_C_GetInteractableTrigger;
+DUMPER7_ASSERTS_BP_PalBossTower_MiddleBoss_C_GetEntryWaitInfoTrigger;
+
+// Function BP_PalBossTower_MiddleBoss.BP_PalBossTower_MiddleBoss_C.GetEntryCancelTrigger
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PalBossTower_MiddleBoss_C_GetEntryCancelTrigger final
+{
+public:
+	class UShapeComponent*                        EntryCancelTrigger_0;                              // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBossTower_MiddleBoss_C_GetEntryCancelTrigger;
 
 }
 

@@ -27,7 +27,7 @@ class UWBP_Trading_Item_Buy_C : public UPalUserWidgetOverlayUI
     class UWBP_Trading_Item_List_C* WBP_Trading_Item_List_2;                          // 0x0520 (size: 0x8)
     class UWBP_Trading_Item_List_C* WBP_Trading_Item_List_3;                          // 0x0528 (size: 0x8)
     class UWBP_Trading_Item_List_C* WBP_Trading_Item_List_4;                          // 0x0530 (size: 0x8)
-    TArray<class UWBP_Trading_Item_List_C*> TradeList;                                // 0x0538 (size: 0x10)
+    TArray<UWBP_Trading_Item_List_C*> TradeList;                                      // 0x0538 (size: 0x10)
     class UPalMapObjectItemBoothModel*  ItemBoothModel;                               // 0x0548 (size: 0x8)
     int32 CurrentSelectIndex;                                                         // 0x0550 (size: 0x4)
     TArray<FPalUIActionBindData> TakeOutBindedActions;                                // 0x0558 (size: 0x10)

@@ -16,83 +16,46 @@
 namespace SDK::Params
 {
 
-// Function WBP_BossWarningLoupe.WBP_BossWarningLoupe_C.CalcScreenPosition
-// 0x00A8 (0x00A8 - 0x0000)
-struct WBP_BossWarningLoupe_C_CalcScreenPosition final
+// Function WBP_BossWarningLoupe.WBP_BossWarningLoupe_C.UpdatePositionAndVisibility
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_BossWarningLoupe_C_UpdatePositionAndVisibility final
 {
 public:
-	struct FVector                                CallFunc_GetTargetWorldLocation_outVector;         // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_GetCameraRotation_ReturnValue;            // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0058(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0070(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x0088(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Dot_VectorVector_ReturnValue;             // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Dot;                                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                rootLocation;                                      // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                TargetLocation;                                    // 0x0020(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BossWarningLoupe_C_CalcScreenPosition;
+DUMPER7_ASSERTS_WBP_BossWarningLoupe_C_UpdatePositionAndVisibility;
 
-// Function WBP_BossWarningLoupe.WBP_BossWarningLoupe_C.CallWarning
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_BossWarningLoupe_C_CallWarning final
-{
-public:
-	bool                                          AlwaysDisplay_0;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BossWarningLoupe_C_CallWarning;
-
-// Function WBP_BossWarningLoupe.WBP_BossWarningLoupe_C.ExecuteUbergraph_WBP_BossWarningLoupe
+// Function WBP_BossWarningLoupe.WBP_BossWarningLoupe_C.UpdateArrowImageAngle
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_BossWarningLoupe_C_ExecuteUbergraph_WBP_BossWarningLoupe final
+struct WBP_BossWarningLoupe_C_UpdateArrowImageAngle final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        newAngle;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetRenderTransformAngle_Angle_ImplicitCast; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BossWarningLoupe_C_ExecuteUbergraph_WBP_BossWarningLoupe;
+DUMPER7_ASSERTS_WBP_BossWarningLoupe_C_UpdateArrowImageAngle;
 
-// Function WBP_BossWarningLoupe.WBP_BossWarningLoupe_C.GetLoupeWidgetSize
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_BossWarningLoupe_C_GetLoupeWidgetSize final
+// Function WBP_BossWarningLoupe.WBP_BossWarningLoupe_C.Setup
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_BossWarningLoupe_C_Setup final
 {
 public:
-	struct FVector2D                              widgetSize_0;                                      // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_GetSize_ReturnValue;                      // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterHandle*          targetHandle_0;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BossWarningLoupe_C_GetLoupeWidgetSize;
+DUMPER7_ASSERTS_WBP_BossWarningLoupe_C_Setup;
 
-// Function WBP_BossWarningLoupe.WBP_BossWarningLoupe_C.GetTargetWidgetSize
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_BossWarningLoupe_C_GetTargetWidgetSize final
+// Function WBP_BossWarningLoupe.WBP_BossWarningLoupe_C.SetFinalWidgetOpacity
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_BossWarningLoupe_C_SetFinalWidgetOpacity final
 {
 public:
-	struct FVector2D                              outVector;                                         // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              CallFunc_GetSize_ReturnValue;                      // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        calcedOpacity;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BossWarningLoupe_C_GetTargetWidgetSize;
-
-// Function WBP_BossWarningLoupe.WBP_BossWarningLoupe_C.GetTargetWorldLocation
-// 0x0090 (0x0090 - 0x0000)
-struct WBP_BossWarningLoupe_C_GetTargetWorldLocation final
-{
-public:
-	struct FVector                                outVector;                                         // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APalCharacter*                          CallFunc_TryGetIndividualActor_ReturnValue;        // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0058(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0070(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_MakeVector_Z_ImplicitCast;                // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BossWarningLoupe_C_GetTargetWorldLocation;
+DUMPER7_ASSERTS_WBP_BossWarningLoupe_C_SetFinalWidgetOpacity;
 
 // Function WBP_BossWarningLoupe.WBP_BossWarningLoupe_C.IsEnableLoupe
 // 0x0078 (0x0078 - 0x0000)
@@ -123,46 +86,83 @@ public:
 };
 DUMPER7_ASSERTS_WBP_BossWarningLoupe_C_IsEnableLoupe;
 
-// Function WBP_BossWarningLoupe.WBP_BossWarningLoupe_C.SetFinalWidgetOpacity
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_BossWarningLoupe_C_SetFinalWidgetOpacity final
+// Function WBP_BossWarningLoupe.WBP_BossWarningLoupe_C.GetTargetWorldLocation
+// 0x0090 (0x0090 - 0x0000)
+struct WBP_BossWarningLoupe_C_GetTargetWorldLocation final
 {
 public:
-	double                                        calcedOpacity;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SelectFloat_ReturnValue;                  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetRenderOpacity_InOpacity_ImplicitCast;  // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                outVector;                                         // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APalCharacter*                          CallFunc_TryGetIndividualActor_ReturnValue;        // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_22[0x6];                                       // 0x0022(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0058(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0070(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_MakeVector_Z_ImplicitCast;                // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BossWarningLoupe_C_SetFinalWidgetOpacity;
+DUMPER7_ASSERTS_WBP_BossWarningLoupe_C_GetTargetWorldLocation;
 
-// Function WBP_BossWarningLoupe.WBP_BossWarningLoupe_C.Setup
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_BossWarningLoupe_C_Setup final
+// Function WBP_BossWarningLoupe.WBP_BossWarningLoupe_C.GetTargetWidgetSize
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_BossWarningLoupe_C_GetTargetWidgetSize final
 {
 public:
-	class UPalIndividualCharacterHandle*          targetHandle_0;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              outVector;                                         // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_GetSize_ReturnValue;                      // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BossWarningLoupe_C_Setup;
+DUMPER7_ASSERTS_WBP_BossWarningLoupe_C_GetTargetWidgetSize;
 
-// Function WBP_BossWarningLoupe.WBP_BossWarningLoupe_C.UpdateArrowImageAngle
+// Function WBP_BossWarningLoupe.WBP_BossWarningLoupe_C.GetLoupeWidgetSize
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_BossWarningLoupe_C_GetLoupeWidgetSize final
+{
+public:
+	struct FVector2D                              widgetSize_0;                                      // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCanvasPanelSlot*                       CallFunc_SlotAsCanvasSlot_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              CallFunc_GetSize_ReturnValue;                      // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BossWarningLoupe_C_GetLoupeWidgetSize;
+
+// Function WBP_BossWarningLoupe.WBP_BossWarningLoupe_C.ExecuteUbergraph_WBP_BossWarningLoupe
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_BossWarningLoupe_C_UpdateArrowImageAngle final
+struct WBP_BossWarningLoupe_C_ExecuteUbergraph_WBP_BossWarningLoupe final
 {
 public:
-	double                                        newAngle;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetRenderTransformAngle_Angle_ImplicitCast; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BossWarningLoupe_C_UpdateArrowImageAngle;
+DUMPER7_ASSERTS_WBP_BossWarningLoupe_C_ExecuteUbergraph_WBP_BossWarningLoupe;
 
-// Function WBP_BossWarningLoupe.WBP_BossWarningLoupe_C.UpdatePositionAndVisibility
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_BossWarningLoupe_C_UpdatePositionAndVisibility final
+// Function WBP_BossWarningLoupe.WBP_BossWarningLoupe_C.CallWarning
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_BossWarningLoupe_C_CallWarning final
 {
 public:
-	double                                        Dot;                                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                rootLocation;                                      // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                TargetLocation;                                    // 0x0020(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          AlwaysDisplay_0;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BossWarningLoupe_C_UpdatePositionAndVisibility;
+DUMPER7_ASSERTS_WBP_BossWarningLoupe_C_CallWarning;
+
+// Function WBP_BossWarningLoupe.WBP_BossWarningLoupe_C.CalcScreenPosition
+// 0x00A8 (0x00A8 - 0x0000)
+struct WBP_BossWarningLoupe_C_CalcScreenPosition final
+{
+public:
+	struct FVector                                CallFunc_GetTargetWorldLocation_outVector;         // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRotator                               CallFunc_GetCameraRotation_ReturnValue;            // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_GetForwardVector_ReturnValue;             // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0058(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0070(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Normal_ReturnValue;                       // 0x0088(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Dot_VectorVector_ReturnValue;             // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BossWarningLoupe_C_CalcScreenPosition;
 
 }
 

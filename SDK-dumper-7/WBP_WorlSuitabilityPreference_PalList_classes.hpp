@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "WBP_IndividualParameterBindWidget_classes.hpp"
 #include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
-#include "WBP_IndividualParameterBindWidget_classes.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -57,32 +57,32 @@ public:
 	bool                                          bEnableOperation;                                  // 0x07E4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ArrangeHorizontalSlot_ForCheckBox(class UHorizontalBoxSlot* Slot_0);
 	void BindFromSlot(class UPalIndividualCharacterSlot* TargetSlot);
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_WorlSuitabilityPreference_PalList(int32 EntryPoint);
-	void GetFocusTargetByCheckBoxIndex(int32 Index_0, class UWidget** TargetWidget);
-	void GetLastHoveredCheckBoxIndex(int32* Index_0);
-	void GetTopFocusTarget(class UWidget** Target);
-	void OnChangedBattleModeCheckState_Internal(bool IsChecked, EPalWorkSuitability Suitability);
-	void OnChangedSuitabilityCheckState_Internal(bool IsChecked, EPalWorkSuitability Suitability);
-	void OnHoveredCheckBox_Internal(class UWBP_WorkSuitabilityPreference_CheckBox_0_C* CheckBox);
-	void OnInitialized();
-	void OnUpdateCondition_Binded();
-	void OnUpdateLevel_Binded(int32 NewLevel);
-	void OnUpdateNickName_Binded(const class FString& NewNickName);
-	void OnUpdateSanity_Binded(double nowSanity, double nowMaxSanity);
-	void OnUpdateSlotHandle(class UPalIndividualCharacterSlot* Slot_0, class UPalIndividualCharacterHandle* LastHandle);
-	void OnUpdateWorkSuitabilityOption_Binded(const struct FPalWorkSuitabilityPreferenceInfo& Info);
-	void Set_Work_Suitability(const TMap<EPalWorkSuitability, int32>& WorkSuitabilities);
-	void SetEnableTaskDetail(bool IsEnable);
-	void SetFixedAssignMode(bool IsFixedAssign);
-	void SetOperationPermission(bool bEnableOperation_0);
-	void SetupCheckBox();
-	void Unbind();
-	void UpdateOperationPermission();
+	void ArrangeHorizontalSlot_ForCheckBox(class UHorizontalBoxSlot* Slot_0);
 	void UpdateWorkDetail_Timer();
+	void UpdateOperationPermission();
+	void Unbind();
+	void SetupCheckBox();
+	void SetOperationPermission(bool bEnableOperation_0);
+	void SetFixedAssignMode(bool IsFixedAssign);
+	void SetEnableTaskDetail(bool IsEnable);
+	void Set_Work_Suitability(const TMap<EPalWorkSuitability, int32>& WorkSuitabilities);
+	void OnUpdateWorkSuitabilityOption_Binded(const struct FPalWorkSuitabilityPreferenceInfo& Info);
+	void OnUpdateSlotHandle(class UPalIndividualCharacterSlot* Slot_0, class UPalIndividualCharacterHandle* LastHandle);
+	void OnUpdateSanity_Binded(double nowSanity, double nowMaxSanity);
+	void OnUpdateNickName_Binded(const class FString& NewNickName);
+	void OnUpdateLevel_Binded(int32 NewLevel);
+	void OnUpdateCondition_Binded();
+	void OnInitialized();
+	void OnHoveredCheckBox_Internal(class UWBP_WorkSuitabilityPreference_CheckBox_0_C* CheckBox);
+	void OnChangedSuitabilityCheckState_Internal(bool IsChecked, EPalWorkSuitability Suitability);
+	void OnChangedBattleModeCheckState_Internal(bool IsChecked, EPalWorkSuitability Suitability);
+	void GetTopFocusTarget(class UWidget** Target);
+	void GetLastHoveredCheckBoxIndex(int32* Index_0);
+	void GetFocusTargetByCheckBoxIndex(int32 Index_0, class UWidget** TargetWidget);
+	void ExecuteUbergraph_WBP_WorlSuitabilityPreference_PalList(int32 EntryPoint);
+	void Destruct();
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

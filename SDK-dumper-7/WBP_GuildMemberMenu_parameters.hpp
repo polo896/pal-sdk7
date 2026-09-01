@@ -16,82 +16,75 @@
 namespace SDK::Params
 {
 
-// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature final
+// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.SetPlayerName
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_GuildMemberMenu_C_SetPlayerName final
 {
 public:
-	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FString                                 DisplayName;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0018)()
 };
-DUMPER7_ASSERTS_WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_GuildMemberMenu_C_SetPlayerName;
 
-// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeGuest_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeGuest_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature final
-{
-public:
-	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeGuest_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature;
-
-// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeMember_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeMember_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature final
-{
-public:
-	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeMember_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature;
-
-// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeSubMaster_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeSubMaster_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature final
-{
-public:
-	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeSubMaster_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature;
-
-// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature final
-{
-public:
-	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature;
-
-// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.CanBan
+// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.SetGuildPermission
 // 0x0009 (0x0009 - 0x0000)
-struct WBP_GuildMemberMenu_C_CanBan final
+struct WBP_GuildMemberMenu_C_SetGuildPermission final
 {
 public:
 	EPalGuildRole                                 SelfRole;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPalGuildRole                                 TargetRole;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bHasPermission;                                    // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bCanChangeRole;                                    // 0x0003(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_2;                    // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_3;                    // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bCanBan;                                           // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bCanRoleAssignment;                                // 0x0003(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanChangeRoleInternal_bCanChangeRole;     // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanChangeRoleInternal_bCanChangeRole_1;   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanChangeRoleInternal_bCanChangeRole_2;   // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanBan_bCanChangeRole;                    // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_GuildMemberMenu_C_CanBan;
+DUMPER7_ASSERTS_WBP_GuildMemberMenu_C_SetGuildPermission;
 
-// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.CanChangeRoleInternal
-// 0x0007 (0x0007 - 0x0000)
-struct WBP_GuildMemberMenu_C_CanChangeRoleInternal final
+// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.SetButtonEnableInternal
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_GuildMemberMenu_C_SetButtonEnableInternal final
 {
 public:
-	EPalGuildRole                                 SelfRole;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalGuildRole                                 TargetRole;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalGuildRole                                 ChangeRole;                                        // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bHasPermission;                                    // 0x0003(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bCanChangeRole;                                    // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CanChangeRole_ReturnValue;                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_GuildMemberMenuList_C*             ListWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bEnableButton;                                     // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Temp_real_Variable;                                // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_real_Variable_1;                              // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          Temp_object_Variable;                              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Select_Default;                             // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          Temp_object_Variable_1;                            // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          K2Node_Select_Default_1;                           // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_GuildMemberMenu_C_CanChangeRoleInternal;
+DUMPER7_ASSERTS_WBP_GuildMemberMenu_C_SetButtonEnableInternal;
+
+// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.isEnableButton
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_GuildMemberMenu_C_isEnableButton final
+{
+public:
+	class UWBP_GuildMemberMenuList_C*             Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnable;                                         // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_Value;                           // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_GuildMemberMenu_C_isEnableButton;
+
+// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.GetTopFocusTarget
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_GuildMemberMenu_C_GetTopFocusTarget final
+{
+public:
+	class UWidget*                                TargetWidget;                                      // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_GuildMemberMenu_C_GetTopFocusTarget;
 
 // Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.ExecuteUbergraph_WBP_GuildMemberMenu
 // 0x00D0 (0x00D0 - 0x0000)
@@ -122,75 +115,82 @@ public:
 };
 DUMPER7_ASSERTS_WBP_GuildMemberMenu_C_ExecuteUbergraph_WBP_GuildMemberMenu;
 
-// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.GetTopFocusTarget
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_GuildMemberMenu_C_GetTopFocusTarget final
-{
-public:
-	class UWidget*                                TargetWidget;                                      // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_GuildMemberMenu_C_GetTopFocusTarget;
-
-// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.isEnableButton
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_GuildMemberMenu_C_isEnableButton final
-{
-public:
-	class UWBP_GuildMemberMenuList_C*             Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnable;                                         // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_Value;                           // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_GuildMemberMenu_C_isEnableButton;
-
-// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.SetButtonEnableInternal
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_GuildMemberMenu_C_SetButtonEnableInternal final
-{
-public:
-	class UWBP_GuildMemberMenuList_C*             ListWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bEnableButton;                                     // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Temp_real_Variable;                                // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Temp_real_Variable_1;                              // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          Temp_object_Variable;                              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Select_Default;                             // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          Temp_object_Variable_1;                            // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          K2Node_Select_Default_1;                           // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_GuildMemberMenu_C_SetButtonEnableInternal;
-
-// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.SetGuildPermission
-// 0x0009 (0x0009 - 0x0000)
-struct WBP_GuildMemberMenu_C_SetGuildPermission final
+// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.CanChangeRoleInternal
+// 0x0007 (0x0007 - 0x0000)
+struct WBP_GuildMemberMenu_C_CanChangeRoleInternal final
 {
 public:
 	EPalGuildRole                                 SelfRole;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPalGuildRole                                 TargetRole;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bCanBan;                                           // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bCanRoleAssignment;                                // 0x0003(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CanChangeRoleInternal_bCanChangeRole;     // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CanChangeRoleInternal_bCanChangeRole_1;   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CanChangeRoleInternal_bCanChangeRole_2;   // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_CanBan_bCanChangeRole;                    // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalGuildRole                                 ChangeRole;                                        // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bHasPermission;                                    // 0x0003(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bCanChangeRole;                                    // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_CanChangeRole_ReturnValue;                // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_GuildMemberMenu_C_SetGuildPermission;
+DUMPER7_ASSERTS_WBP_GuildMemberMenu_C_CanChangeRoleInternal;
 
-// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.SetPlayerName
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_GuildMemberMenu_C_SetPlayerName final
+// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.CanBan
+// 0x0009 (0x0009 - 0x0000)
+struct WBP_GuildMemberMenu_C_CanBan final
 {
 public:
-	class FString                                 DisplayName;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0018)()
+	EPalGuildRole                                 SelfRole;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalGuildRole                                 TargetRole;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bHasPermission;                                    // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bCanChangeRole;                                    // 0x0003(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_2;                    // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_3;                    // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_GuildMemberMenu_C_SetPlayerName;
+DUMPER7_ASSERTS_WBP_GuildMemberMenu_C_CanBan;
+
+// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature final
+{
+public:
+	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature;
+
+// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeSubMaster_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeSubMaster_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature final
+{
+public:
+	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeSubMaster_K2Node_ComponentBoundEvent_3_OnClicked__DelegateSignature;
+
+// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeMember_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeMember_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature final
+{
+public:
+	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeMember_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature;
+
+// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeGuest_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeGuest_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature final
+{
+public:
+	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_ChangeGuest_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature;
+
+// Function WBP_GuildMemberMenu.WBP_GuildMemberMenu_C.BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature final
+{
+public:
+	class UWBP_GuildMemberMenuList_C*             Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_GuildMemberMenu_C_BndEvt__WBP_GuildMemberMenu_WBP_GuildMemberMenuList_1_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature;
 
 }
 

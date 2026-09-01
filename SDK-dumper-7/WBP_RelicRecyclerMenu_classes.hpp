@@ -27,22 +27,22 @@ public:
 	class UPalUIMapObjectRecyclerModel*           UIModel;                                           // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_0_OnClickClosedButton__DelegateSignature();
-	void BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_2_OnClickedTargetContainerSortButton__DelegateSignature();
-	void BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_3_OnHoveredTargetContainerSlot__DelegateSignature();
-	void Cleanup_UIModel();
-	void CleanupRelicChestEventBind();
-	void ExecuteUbergraph_WBP_RelicRecyclerMenu(int32 EntryPoint);
-	void OnReadyWorkeeModule(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module);
-	void OnReadyWorkProgress(class UPalMapObjectWorkeeModule* Module, class UPalWorkBase* Work);
-	void OnSetup();
-	void OnUpdatCurrentRecycleItem(const class UPalUIMapObjectRecyclerModel* UIModel_0);
-	void OnUpdateBoost(const class UPalUIMapObjectRecyclerModel* UIModel_0);
-	void OnUpdateOutputContainerCaution(const class UPalUIMapObjectRecyclerModel* UIModel_0);
-	void OnUpdateSwitch(const class UPalUIMapObjectRecyclerModel* UIModel_0);
-	void OnUpdateSwitch_Internal(const class UPalUIMapObjectRecyclerModel* UIModel_0, bool bInitial);
-	void SetupRelicChestDisplay();
 	void SetupRelicChestEventBind();
+	void SetupRelicChestDisplay();
+	void OnUpdateSwitch_Internal(const class UPalUIMapObjectRecyclerModel* UIModel_0, bool bInitial);
+	void OnUpdateSwitch(const class UPalUIMapObjectRecyclerModel* UIModel_0);
+	void OnUpdateOutputContainerCaution(const class UPalUIMapObjectRecyclerModel* UIModel_0);
+	void OnUpdateBoost(const class UPalUIMapObjectRecyclerModel* UIModel_0);
+	void OnUpdatCurrentRecycleItem(const class UPalUIMapObjectRecyclerModel* UIModel_0);
+	void OnSetup();
+	void OnReadyWorkProgress(class UPalMapObjectWorkeeModule* Module, class UPalWorkBase* Work);
+	void OnReadyWorkeeModule(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module);
+	void ExecuteUbergraph_WBP_RelicRecyclerMenu(int32 EntryPoint);
+	void CleanupRelicChestEventBind();
+	void Cleanup_UIModel();
+	void BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_3_OnHoveredTargetContainerSlot__DelegateSignature();
+	void BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_2_OnClickedTargetContainerSortButton__DelegateSignature();
+	void BndEvt__WBP_RelicRecyclerMenu_WBP_RecyclerMenu_K2Node_ComponentBoundEvent_0_OnClickClosedButton__DelegateSignature();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

@@ -21,7 +21,7 @@ class UWBP_Arena_SoloEntryButton_C : public UUserWidget
     EPalArenaRank ArenaRank;                                                          // 0x02F0 (size: 0x1)
     FWBP_Arena_SoloEntryButton_COnArenaSoloButtonClicked OnArenaSoloButtonClicked;    // 0x02F8 (size: 0x10)
     void OnArenaSoloButtonClicked(EPalArenaRank ArenaRank);
-    TArray<class UWBP_PalInGameMenuItemSlotButton_C*> RewardItemSlots;                // 0x0308 (size: 0x10)
+    TArray<UWBP_PalInGameMenuItemSlotButton_C*> RewardItemSlots;                      // 0x0308 (size: 0x10)
     FWBP_Arena_SoloEntryButton_COnArenaSoloButtonHovered OnArenaSoloButtonHovered;    // 0x0318 (size: 0x10)
     void OnArenaSoloButtonHovered(class UWBP_Arena_SoloEntryButton_C* Button);
     FWBP_Arena_SoloEntryButton_COnArenaSoloButtonUnhovered OnArenaSoloButtonUnhovered; // 0x0328 (size: 0x10)

@@ -55,29 +55,29 @@ public:
 	TMulticastInlineDelegate<void()>              OnCancel;                                          // 0x03E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__WBP_Option_ModMenu_PalEditableTextBox_Search_K2Node_ComponentBoundEvent_3_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
-	void BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Apply_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
-	void BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Cancel_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature();
-	void BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Workshop_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
-	void BndEvt__WBP_Option_ModMenu_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void Construct();
-	void Destruct();
-	void DisplayLoading();
-	class UWidget* DoCustomNavigation_ToTextBox(EUINavigation Navigation_0);
-	void ExecuteUbergraph_WBP_Option_ModMenu(int32 EntryPoint);
-	void Filtering(const class FString& FilteringString);
-	void FocusToCancelButton();
-	void GetRestoreFocusTarget(class UWidget** Widget);
-	void GetTopFocusTarget(class UWidget** Widget);
-	void HideLoading();
-	void IsEditingText(bool* bEditing);
-	void OnChangedModSupportIngame_Binded(bool IsOn);
-	void OnClickedModPanel_Internal(class UWBP_Option_ModMenu_ModList_C* Widget);
-	void OnHoveredModPanel_Internal(class UWBP_Option_ModMenu_ModList_C* Widget);
-	void SetModDisplayDataMap(const TMap<struct FPalUIModUniqueId, struct FPalUIModDisplayData>& DataMap, TArray<struct FPalUIModUniqueId>& Keys);
-	void SetModSupportIngameFlag(bool bSupportIngame);
-	void SetSaveButtonActive(bool bActive);
 	void UpdateModListActive();
+	void SetSaveButtonActive(bool bActive);
+	void SetModSupportIngameFlag(bool bSupportIngame);
+	void SetModDisplayDataMap(const TMap<struct FPalUIModUniqueId, struct FPalUIModDisplayData>& DataMap, TArray<struct FPalUIModUniqueId>& Keys);
+	void OnHoveredModPanel_Internal(class UWBP_Option_ModMenu_ModList_C* Widget);
+	void OnClickedModPanel_Internal(class UWBP_Option_ModMenu_ModList_C* Widget);
+	void OnChangedModSupportIngame_Binded(bool IsOn);
+	void IsEditingText(bool* bEditing);
+	void HideLoading();
+	void GetTopFocusTarget(class UWidget** Widget);
+	void GetRestoreFocusTarget(class UWidget** Widget);
+	void FocusToCancelButton();
+	void Filtering(const class FString& FilteringString);
+	void ExecuteUbergraph_WBP_Option_ModMenu(int32 EntryPoint);
+	class UWidget* DoCustomNavigation_ToTextBox(EUINavigation Navigation_0);
+	void DisplayLoading();
+	void Destruct();
+	void Construct();
+	void BndEvt__WBP_Option_ModMenu_WBP_PalInvisibleButton_SerchName_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Workshop_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
+	void BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Cancel_K2Node_ComponentBoundEvent_4_OnClicked__DelegateSignature();
+	void BndEvt__WBP_Option_ModMenu_WBP_CommonButton_Apply_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
+	void BndEvt__WBP_Option_ModMenu_PalEditableTextBox_Search_K2Node_ComponentBoundEvent_3_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod);
 
 public:
 	static class UClass* StaticClass()

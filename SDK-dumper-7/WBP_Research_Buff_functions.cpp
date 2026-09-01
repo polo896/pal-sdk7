@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_Research_Buff.WBP_Research_Buff_C.ExecuteUbergraph_WBP_Research_Buff
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Research_Buff_C::ExecuteUbergraph_WBP_Research_Buff(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Research_Buff_C", "ExecuteUbergraph_WBP_Research_Buff");
-
-	Params::WBP_Research_Buff_C_ExecuteUbergraph_WBP_Research_Buff Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_Research_Buff.WBP_Research_Buff_C.Setup
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -56,6 +36,26 @@ void UWBP_Research_Buff_C::Setup(EPalWorkSuitability MainType, EPalLabCategorySu
 	Parms.MainType = MainType;
 	Parms.SubType = SubType;
 	Parms.Effect = std::move(Effect);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Research_Buff.WBP_Research_Buff_C.ExecuteUbergraph_WBP_Research_Buff
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Research_Buff_C::ExecuteUbergraph_WBP_Research_Buff(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Research_Buff_C", "ExecuteUbergraph_WBP_Research_Buff");
+
+	Params::WBP_Research_Buff_C_ExecuteUbergraph_WBP_Research_Buff Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

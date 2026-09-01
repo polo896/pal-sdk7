@@ -14,25 +14,32 @@
 namespace SDK::Params
 {
 
-// Function WBP_WorldMap_Icon_Respawn.WBP_WorldMap_Icon_Respawn_C.Setup_Internal
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_WorldMap_Icon_Respawn_C_Setup_Internal final
-{
-public:
-	class UPalLocationPoint*                      LocationPoint;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalLocationPoint_Respawn*              K2Node_DynamicCast_AsPal_Location_Point_Respawn;   // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WorldMap_Icon_Respawn_C_Setup_Internal;
-
-// Function WBP_WorldMap_Icon_Respawn.WBP_WorldMap_Icon_Respawn_C.GetInvisibleButton
+// Function WBP_WorldMap_Icon_Respawn.WBP_WorldMap_Icon_Respawn_C.BndEvt__WBP_WorldMap_Icon_Respawn_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_WorldMap_Icon_Respawn_C_GetInvisibleButton final
+struct WBP_WorldMap_Icon_Respawn_C_BndEvt__WBP_WorldMap_Icon_Respawn_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	class UWidget*                                Button;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_WorldMap_Icon_Respawn_C_GetInvisibleButton;
+DUMPER7_ASSERTS_WBP_WorldMap_Icon_Respawn_C_BndEvt__WBP_WorldMap_Icon_Respawn_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_WorldMap_Icon_Respawn.WBP_WorldMap_Icon_Respawn_C.BndEvt__WBP_WorldMap_Icon_Respawn_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_WorldMap_Icon_Respawn_C_BndEvt__WBP_WorldMap_Icon_Respawn_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WorldMap_Icon_Respawn_C_BndEvt__WBP_WorldMap_Icon_Respawn_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_WorldMap_Icon_Respawn.WBP_WorldMap_Icon_Respawn_C.BndEvt__WBP_WorldMap_Icon_Respawn_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_WorldMap_Icon_Respawn_C_BndEvt__WBP_WorldMap_Icon_Respawn_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WorldMap_Icon_Respawn_C_BndEvt__WBP_WorldMap_Icon_Respawn_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
 
 // Function WBP_WorldMap_Icon_Respawn.WBP_WorldMap_Icon_Respawn_C.ExecuteUbergraph_WBP_WorldMap_Icon_Respawn
 // 0x0028 (0x0028 - 0x0000)
@@ -48,32 +55,25 @@ public:
 };
 DUMPER7_ASSERTS_WBP_WorldMap_Icon_Respawn_C_ExecuteUbergraph_WBP_WorldMap_Icon_Respawn;
 
-// Function WBP_WorldMap_Icon_Respawn.WBP_WorldMap_Icon_Respawn_C.BndEvt__WBP_WorldMap_Icon_Respawn_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// Function WBP_WorldMap_Icon_Respawn.WBP_WorldMap_Icon_Respawn_C.GetInvisibleButton
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_WorldMap_Icon_Respawn_C_BndEvt__WBP_WorldMap_Icon_Respawn_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature final
+struct WBP_WorldMap_Icon_Respawn_C_GetInvisibleButton final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                Button;                                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_WorldMap_Icon_Respawn_C_BndEvt__WBP_WorldMap_Icon_Respawn_WBP_PalCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_WorldMap_Icon_Respawn_C_GetInvisibleButton;
 
-// Function WBP_WorldMap_Icon_Respawn.WBP_WorldMap_Icon_Respawn_C.BndEvt__WBP_WorldMap_Icon_Respawn_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_WorldMap_Icon_Respawn_C_BndEvt__WBP_WorldMap_Icon_Respawn_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature final
+// Function WBP_WorldMap_Icon_Respawn.WBP_WorldMap_Icon_Respawn_C.Setup_Internal
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_WorldMap_Icon_Respawn_C_Setup_Internal final
 {
 public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPalLocationPoint*                      LocationPoint;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalLocationPoint_Respawn*              K2Node_DynamicCast_AsPal_Location_Point_Respawn;   // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_WorldMap_Icon_Respawn_C_BndEvt__WBP_WorldMap_Icon_Respawn_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_WorldMap_Icon_Respawn.WBP_WorldMap_Icon_Respawn_C.BndEvt__WBP_WorldMap_Icon_Respawn_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_WorldMap_Icon_Respawn_C_BndEvt__WBP_WorldMap_Icon_Respawn_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WorldMap_Icon_Respawn_C_BndEvt__WBP_WorldMap_Icon_Respawn_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
+DUMPER7_ASSERTS_WBP_WorldMap_Icon_Respawn_C_Setup_Internal;
 
 }
 

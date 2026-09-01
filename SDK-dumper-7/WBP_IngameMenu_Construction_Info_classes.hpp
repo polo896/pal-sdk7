@@ -56,7 +56,6 @@ public:
 	TArray<class FName>                           IgnoreAssignDetailMapObjectId;                     // 0x0410(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void DelayDisplay(double DelayTime);
 	void UpdateDetail();
 	void SetMaterialInfo(class UWBP_IngameMenuConstruction_InfoItem_C* Widget, class FName ID, int32 NeedNum);
 	void SetBuildObjectData(const struct FPalBuildObjectData& BuildObjectData);
@@ -68,6 +67,7 @@ public:
 	void Hide();
 	void ExecuteUbergraph_WBP_IngameMenu_Construction_Info(int32 EntryPoint);
 	void Destruct();
+	void DelayDisplay(double DelayTime);
 
 	void Get_Useable_Material_Item_Num(class FName ItemId, int32* Num) const;
 

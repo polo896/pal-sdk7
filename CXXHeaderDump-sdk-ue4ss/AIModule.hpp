@@ -148,7 +148,7 @@ struct FBTCompositeChild
 {
     class UBTCompositeNode* ChildComposite;                                           // 0x0000 (size: 0x8)
     class UBTTaskNode* ChildTask;                                                     // 0x0008 (size: 0x8)
-    TArray<class UBTDecorator*> Decorators;                                           // 0x0010 (size: 0x10)
+    TArray<UBTDecorator*> Decorators;                                                 // 0x0010 (size: 0x10)
     TArray<FBTDecoratorLogic> DecoratorOps;                                           // 0x0020 (size: 0x10)
 
 }; // Size: 0x30
@@ -177,7 +177,7 @@ struct FBlackboardEntry
 
 struct FBlackboardKeySelector
 {
-    TArray<class UBlackboardKeyType*> AllowedTypes;                                   // 0x0000 (size: 0x10)
+    TArray<UBlackboardKeyType*> AllowedTypes;                                         // 0x0000 (size: 0x10)
     FName SelectedKeyName;                                                            // 0x0010 (size: 0x8)
     TSubclassOf<class UBlackboardKeyType> SelectedKeyType;                            // 0x0018 (size: 0x8)
     uint8 SelectedKeyID;                                                              // 0x0020 (size: 0x1)
@@ -530,11 +530,11 @@ class UAIHotSpotManager : public UObject
 
 class UAIPerceptionComponent : public UActorComponent
 {
-    TArray<class UAISenseConfig*> SensesConfig;                                       // 0x00A0 (size: 0x10)
+    TArray<UAISenseConfig*> SensesConfig;                                             // 0x00A0 (size: 0x10)
     TSubclassOf<class UAISense> DominantSense;                                        // 0x00B0 (size: 0x8)
     class AAIController* AIOwner;                                                     // 0x00C8 (size: 0x8)
     FAIPerceptionComponentOnPerceptionUpdated OnPerceptionUpdated;                    // 0x0150 (size: 0x10)
-    void PerceptionUpdatedDelegate(const TArray<class AActor*>& UpdatedActors);
+    void PerceptionUpdatedDelegate(const TArray<AActor*>& UpdatedActors);
     FAIPerceptionComponentOnTargetPerceptionUpdated OnTargetPerceptionUpdated;        // 0x0160 (size: 0x10)
     void ActorPerceptionUpdatedDelegate(class AActor* Actor, FAIStimulus Stimulus);
     FAIPerceptionComponentOnTargetPerceptionInfoUpdated OnTargetPerceptionInfoUpdated; // 0x0170 (size: 0x10)
@@ -543,11 +543,11 @@ class UAIPerceptionComponent : public UActorComponent
     void SetSenseEnabled(TSubclassOf<class UAISense> SenseClass, const bool bEnable);
     void RequestStimuliListenerUpdate();
     void OnOwnerEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason::Type> EndPlayReason);
-    void GetPerceivedHostileActorsBySense(const TSubclassOf<class UAISense> SenseToUse, TArray<class AActor*>& OutActors);
-    void GetPerceivedHostileActors(TArray<class AActor*>& OutActors);
-    void GetPerceivedActors(TSubclassOf<class UAISense> SenseToUse, TArray<class AActor*>& OutActors);
-    void GetKnownPerceivedActors(TSubclassOf<class UAISense> SenseToUse, TArray<class AActor*>& OutActors);
-    void GetCurrentlyPerceivedActors(TSubclassOf<class UAISense> SenseToUse, TArray<class AActor*>& OutActors);
+    void GetPerceivedHostileActorsBySense(const TSubclassOf<class UAISense> SenseToUse, TArray<AActor*>& OutActors);
+    void GetPerceivedHostileActors(TArray<AActor*>& OutActors);
+    void GetPerceivedActors(TSubclassOf<class UAISense> SenseToUse, TArray<AActor*>& OutActors);
+    void GetKnownPerceivedActors(TSubclassOf<class UAISense> SenseToUse, TArray<AActor*>& OutActors);
+    void GetCurrentlyPerceivedActors(TSubclassOf<class UAISense> SenseToUse, TArray<AActor*>& OutActors);
     bool GetActorsPerception(class AActor* Actor, FActorPerceptionBlueprintInfo& Info);
     void ForgetAll();
 }; // Size: 0x180
@@ -555,7 +555,7 @@ class UAIPerceptionComponent : public UActorComponent
 class UAIPerceptionStimuliSourceComponent : public UActorComponent
 {
     uint8 bAutoRegisterAsSource;                                                      // 0x00A0 (size: 0x1)
-    TArray<class TSubclassOf<UAISense>> RegisterAsSourceForSenses;                    // 0x00A8 (size: 0x10)
+    TArray<TSubclassOf<class UAISense>> RegisterAsSourceForSenses;                    // 0x00A8 (size: 0x10)
 
     void UnregisterFromSense(TSubclassOf<class UAISense> SenseClass);
     void UnregisterFromPerceptionSystem();
@@ -565,7 +565,7 @@ class UAIPerceptionStimuliSourceComponent : public UActorComponent
 
 class UAIPerceptionSystem : public UAISubsystem
 {
-    TArray<class UAISense*> Senses;                                                   // 0x0088 (size: 0x10)
+    TArray<UAISense*> Senses;                                                         // 0x0088 (size: 0x10)
     float PerceptionAgingRate;                                                        // 0x0098 (size: 0x4)
 
     void ReportPerceptionEvent(class UObject* WorldContextObject, class UAISenseEvent* PerceptionEvent);
@@ -671,16 +671,16 @@ class UAISenseEvent_Hearing : public UAISenseEvent
 class UAISense_Blueprint : public UAISense
 {
     TSubclassOf<class UUserDefinedStruct> ListenerDataType;                           // 0x0080 (size: 0x8)
-    TArray<class UAIPerceptionComponent*> ListenerContainer;                          // 0x0088 (size: 0x10)
-    TArray<class UAISenseEvent*> UnprocessedEvents;                                   // 0x0098 (size: 0x10)
+    TArray<UAIPerceptionComponent*> ListenerContainer;                                // 0x0088 (size: 0x10)
+    TArray<UAISenseEvent*> UnprocessedEvents;                                         // 0x0098 (size: 0x10)
 
-    float OnUpdate(const TArray<class UAISenseEvent*>& EventsToProcess);
+    float OnUpdate(const TArray<UAISenseEvent*>& EventsToProcess);
     void OnListenerUpdated(class AActor* ActorListener, class UAIPerceptionComponent* PerceptionComponent);
     void OnListenerUnregistered(class AActor* ActorListener, class UAIPerceptionComponent* PerceptionComponent);
     void OnListenerRegistered(class AActor* ActorListener, class UAIPerceptionComponent* PerceptionComponent);
     void K2_OnNewPawn(class APawn* NewPawn);
-    void GetAllListenerComponents(TArray<class UAIPerceptionComponent*>& ListenerComponents);
-    void GetAllListenerActors(TArray<class AActor*>& ListenerActors);
+    void GetAllListenerComponents(TArray<UAIPerceptionComponent*>& ListenerComponents);
+    void GetAllListenerActors(TArray<AActor*>& ListenerActors);
 }; // Size: 0xA8
 
 class UAISense_Damage : public UAISense
@@ -757,7 +757,7 @@ class UAISystem : public UAISystemBase
     class UBehaviorTreeManager* BehaviorTreeManager;                                  // 0x00D8 (size: 0x8)
     class UEnvQueryManager* EnvironmentQueryManager;                                  // 0x00E0 (size: 0x8)
     class UAIPerceptionSystem* PerceptionSystem;                                      // 0x00E8 (size: 0x8)
-    TArray<class UAIAsyncTaskBlueprintProxy*> AllProxyObjects;                        // 0x00F0 (size: 0x10)
+    TArray<UAIAsyncTaskBlueprintProxy*> AllProxyObjects;                              // 0x00F0 (size: 0x10)
     class UAIHotSpotManager* HotSpotManager;                                          // 0x0100 (size: 0x8)
     class UNavLocalGridManager* NavLocalGrids;                                        // 0x0108 (size: 0x8)
 
@@ -799,7 +799,7 @@ class UBTAuxiliaryNode : public UBTNode
 class UBTCompositeNode : public UBTNode
 {
     TArray<FBTCompositeChild> Children;                                               // 0x0058 (size: 0x10)
-    TArray<class UBTService*> Services;                                               // 0x0068 (size: 0x10)
+    TArray<UBTService*> Services;                                                     // 0x0068 (size: 0x10)
     uint8 bApplyDecoratorScope;                                                       // 0x0088 (size: 0x1)
 
 }; // Size: 0x90
@@ -1067,7 +1067,7 @@ class UBTService_RunEQS : public UBTService_BlackboardBase
 
 class UBTTaskNode : public UBTNode
 {
-    TArray<class UBTService*> Services;                                               // 0x0058 (size: 0x10)
+    TArray<UBTService*> Services;                                                     // 0x0058 (size: 0x10)
     uint8 bIgnoreRestartSelf;                                                         // 0x0068 (size: 0x1)
 
 }; // Size: 0x70
@@ -1226,14 +1226,14 @@ class UBehaviorTree : public UObject
 {
     class UBTCompositeNode* RootNode;                                                 // 0x0030 (size: 0x8)
     class UBlackboardData* BlackboardAsset;                                           // 0x0038 (size: 0x8)
-    TArray<class UBTDecorator*> RootDecorators;                                       // 0x0040 (size: 0x10)
+    TArray<UBTDecorator*> RootDecorators;                                             // 0x0040 (size: 0x10)
     TArray<FBTDecoratorLogic> RootDecoratorOps;                                       // 0x0050 (size: 0x10)
 
 }; // Size: 0x68
 
 class UBehaviorTreeComponent : public UBrainComponent
 {
-    TArray<class UBTNode*> NodeInstances;                                             // 0x0118 (size: 0x10)
+    TArray<UBTNode*> NodeInstances;                                                   // 0x0118 (size: 0x10)
     class UBehaviorTree* DefaultBehaviorTreeAsset;                                    // 0x0270 (size: 0x8)
 
     void SetDynamicSubtree(FGameplayTag InjectTag, class UBehaviorTree* BehaviorAsset);
@@ -1245,7 +1245,7 @@ class UBehaviorTreeManager : public UObject
 {
     int32 MaxDebuggerSteps;                                                           // 0x0028 (size: 0x4)
     TArray<FBehaviorTreeTemplateInfo> LoadedTemplates;                                // 0x0030 (size: 0x10)
-    TArray<class UBehaviorTreeComponent*> ActiveComponents;                           // 0x0040 (size: 0x10)
+    TArray<UBehaviorTreeComponent*> ActiveComponents;                                 // 0x0040 (size: 0x10)
 
 }; // Size: 0x50
 
@@ -1258,7 +1258,7 @@ class UBlackboardComponent : public UActorComponent
     class UBrainComponent* BrainComp;                                                 // 0x00A0 (size: 0x8)
     class UBlackboardData* DefaultBlackboardAsset;                                    // 0x00A8 (size: 0x8)
     class UBlackboardData* BlackboardAsset;                                           // 0x00B0 (size: 0x8)
-    TArray<class UBlackboardKeyType*> KeyInstances;                                   // 0x00D8 (size: 0x10)
+    TArray<UBlackboardKeyType*> KeyInstances;                                         // 0x00D8 (size: 0x10)
 
     void SetValueAsVector(const FName& KeyName, FVector VectorValue);
     void SetValueAsString(const FName& KeyName, FString StringValue);
@@ -1398,7 +1398,7 @@ class UEQSRenderingComponent : public UDebugDrawComponent
 class UEnvQuery : public UDataAsset
 {
     FName QueryName;                                                                  // 0x0030 (size: 0x8)
-    TArray<class UEnvQueryOption*> Options;                                           // 0x0038 (size: 0x10)
+    TArray<UEnvQueryOption*> Options;                                                 // 0x0038 (size: 0x10)
 
 }; // Size: 0x48
 
@@ -1412,7 +1412,7 @@ class UEnvQueryContext_BlueprintBase : public UEnvQueryContext
     void ProvideSingleLocation(class UObject* QuerierObject, class AActor* QuerierActor, FVector& ResultingLocation);
     void ProvideSingleActor(class UObject* QuerierObject, class AActor* QuerierActor, class AActor*& ResultingActor);
     void ProvideLocationsSet(class UObject* QuerierObject, class AActor* QuerierActor, TArray<FVector>& ResultingLocationSet);
-    void ProvideActorsSet(class UObject* QuerierObject, class AActor* QuerierActor, TArray<class AActor*>& ResultingActorsSet);
+    void ProvideActorsSet(class UObject* QuerierObject, class AActor* QuerierActor, TArray<AActor*>& ResultingActorsSet);
 }; // Size: 0x30
 
 class UEnvQueryContext_Item : public UEnvQueryContext
@@ -1451,7 +1451,7 @@ class UEnvQueryGenerator_BlueprintBase : public UEnvQueryGenerator
     TSubclassOf<class UEnvQueryItemType> GeneratedItemType;                           // 0x0070 (size: 0x8)
 
     class UObject* GetQuerier();
-    void DoItemGenerationFromActors(const TArray<class AActor*>& ContextActors);
+    void DoItemGenerationFromActors(const TArray<AActor*>& ContextActors);
     void DoItemGeneration(const TArray<FVector>& ContextLocations);
     void AddGeneratedVector(FVector GeneratedVector);
     void AddGeneratedActor(class AActor* GeneratedActor);
@@ -1459,7 +1459,7 @@ class UEnvQueryGenerator_BlueprintBase : public UEnvQueryGenerator
 
 class UEnvQueryGenerator_Composite : public UEnvQueryGenerator
 {
-    TArray<class UEnvQueryGenerator*> Generators;                                     // 0x0050 (size: 0x10)
+    TArray<UEnvQueryGenerator*> Generators;                                           // 0x0050 (size: 0x10)
     uint8 bAllowDifferentItemTypes;                                                   // 0x0060 (size: 0x1)
     uint8 bHasMatchingItemType;                                                       // 0x0060 (size: 0x1)
     TSubclassOf<class UEnvQueryItemType> ForcedItemType;                              // 0x0068 (size: 0x8)
@@ -1556,9 +1556,9 @@ class UEnvQueryInstanceBlueprintWrapper : public UObject
 
     void SetNamedParam(FName ParamName, float Value);
     TArray<FVector> GetResultsAsLocations();
-    TArray<class AActor*> GetResultsAsActors();
+    TArray<AActor*> GetResultsAsActors();
     bool GetQueryResultsAsLocations(TArray<FVector>& ResultLocations);
-    bool GetQueryResultsAsActors(TArray<class AActor*>& ResultActors);
+    bool GetQueryResultsAsActors(TArray<AActor*>& ResultActors);
     float GetItemScore(int32 ItemIndex);
     void EQSQueryDoneSignature__DelegateSignature(class UEnvQueryInstanceBlueprintWrapper* QueryInstance, TEnumAsByte<EEnvQueryStatus::Type> QueryStatus);
 }; // Size: 0x78
@@ -1590,8 +1590,8 @@ class UEnvQueryItemType_VectorBase : public UEnvQueryItemType
 class UEnvQueryManager : public UAISubsystem
 {
     TArray<FEnvQueryInstanceCache> InstanceCache;                                     // 0x00A8 (size: 0x10)
-    TArray<class UEnvQueryContext*> LocalContexts;                                    // 0x00B8 (size: 0x10)
-    TArray<class UEnvQueryInstanceBlueprintWrapper*> GCShieldedWrappers;              // 0x00C8 (size: 0x10)
+    TArray<UEnvQueryContext*> LocalContexts;                                          // 0x00B8 (size: 0x10)
+    TArray<UEnvQueryInstanceBlueprintWrapper*> GCShieldedWrappers;                    // 0x00C8 (size: 0x10)
     float MaxAllowedTestingTime;                                                      // 0x012C (size: 0x4)
     bool bTestQueriesUsingBreadth;                                                    // 0x0130 (size: 0x1)
     int32 QueryCountWarningThreshold;                                                 // 0x0134 (size: 0x4)
@@ -1612,7 +1612,7 @@ class UEnvQueryNode : public UObject
 class UEnvQueryOption : public UObject
 {
     class UEnvQueryGenerator* Generator;                                              // 0x0028 (size: 0x8)
-    TArray<class UEnvQueryTest*> Tests;                                               // 0x0030 (size: 0x10)
+    TArray<UEnvQueryTest*> Tests;                                                     // 0x0030 (size: 0x10)
 
 }; // Size: 0x40
 
@@ -1813,7 +1813,7 @@ class UPawnAction_Repeat : public UPawnAction
 
 class UPawnAction_Sequence : public UPawnAction
 {
-    TArray<class UPawnAction*> ActionSequence;                                        // 0x0090 (size: 0x10)
+    TArray<UPawnAction*> ActionSequence;                                              // 0x0090 (size: 0x10)
     TEnumAsByte<EPawnActionFailHandling::Type> ChildFailureHandlingMode;              // 0x00A0 (size: 0x1)
     class UPawnAction* RecentActionCopy;                                              // 0x00A8 (size: 0x8)
 

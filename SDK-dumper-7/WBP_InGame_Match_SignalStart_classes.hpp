@@ -31,11 +31,11 @@ public:
 	class UBP_PalTextBlock_C*                     Text_Ready;                                        // 0x02A8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_InGame_Match_SignalStart(int32 EntryPoint);
-	void SequenceEvent();
-	void SequenceEvent_0();
-	void SequenceEvent__ENTRYPOINTWBP_InGame_Match_SignalStart();
 	void SequenceEvent__ENTRYPOINTWBP_InGame_Match_SignalStart_0();
+	void SequenceEvent__ENTRYPOINTWBP_InGame_Match_SignalStart();
+	void SequenceEvent_0();
+	void SequenceEvent();
+	void ExecuteUbergraph_WBP_InGame_Match_SignalStart(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

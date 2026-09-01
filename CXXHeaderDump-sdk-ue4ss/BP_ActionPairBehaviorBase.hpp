@@ -23,7 +23,7 @@ class UBP_ActionPairBehaviorBase_C : public UPalActionBase
     bool IsJumpCancel;                                                                // 0x0238 (size: 0x1)
     EPalActionType MonsterActionMontageType;                                          // 0x0239 (size: 0x1)
     EPalFacialEyeType FacialType;                                                     // 0x023A (size: 0x1)
-    TSoftObjectPtr<UObject> HeadEffectAsset;                                          // 0x0240 (size: 0x30)
+    TSoftObjectPtr<class UObject> HeadEffectAsset;                                    // 0x0240 (size: 0x30)
     EPalActionType EndActionType;                                                     // 0x0270 (size: 0x1)
     double PalAnimationSpeed;                                                         // 0x0278 (size: 0x8)
     class UAnimMontage* PlayingAnimMontage;                                           // 0x0280 (size: 0x8)

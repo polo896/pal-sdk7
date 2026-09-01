@@ -16,7 +16,7 @@ class UWBP_PanelWidgetChildrenSelectorBase_C : public UPalUserWidget
     void OnChangeEnableChild(int32 Index, class UWidget* ChildWidget, bool IsEnable);
 
     void GetChildrenNum(int32& ChildrenNum);
-    void GetPanelChildren(bool& IsValidPanel, TArray<class UWidget*>& Children);
+    void GetPanelChildren(bool& IsValidPanel, TArray<UWidget*>& Children);
     void GetIndexByWidget(class UWidget* Widget, int32& findedIndex);
     void IsValidIndex(int32 Index, bool& IsValid);
     void SetEnableAllChildren(bool IsEnable);

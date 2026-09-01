@@ -19,7 +19,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_GrapplingGun.BP_GrapplingGun_C
 // 0x0060 (0x06E8 - 0x0688)
-class ABP_GrapplingGun_C : public APalWeaponBase
+class ABP_GrapplingGun_C final : public APalWeaponBase
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0688(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
@@ -38,20 +38,20 @@ public:
 	class UPalGrapplingGunModule*                 GrapplingGunModule;                                // 0x06E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_GrapplingGun(int32 EntryPoint);
-	void OnAttachWeapon(class AActor* attachActor);
-	void OnDetachWeapon(class AActor* detachActor);
-	void OnGrapplingActionEnd();
-	void OnGrapplingActionStart(const struct FVector& HitLocation, double CoolTimeRate);
-	void OnPullTrigger();
-	void ReceiveBeginPlay();
-	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
-	void ReceiveTick(float DeltaSeconds);
-	void UpdateBulletLocation();
 	void UpdateVisibleReticle();
+	void UpdateBulletLocation();
+	void ReceiveTick(float DeltaSeconds);
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void ReceiveBeginPlay();
+	void OnPullTrigger();
+	void OnGrapplingActionStart(const struct FVector& HitLocation, double CoolTimeRate);
+	void OnGrapplingActionEnd();
+	void OnDetachWeapon(class AActor* detachActor);
+	void OnAttachWeapon(class AActor* attachActor);
+	void ExecuteUbergraph_BP_GrapplingGun(int32 EntryPoint);
 
-	bool CanDealDamageWeapon() const;
 	void IsShowReticle(bool* IsShow) const;
+	bool CanDealDamageWeapon() const;
 
 public:
 	static class UClass* StaticClass()

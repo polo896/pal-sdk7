@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "WBP_IndividualParameterBindWidget_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -39,18 +39,18 @@ public:
 	bool                                          IsOpened;                                          // 0x06C9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Levelup();
-	void AnmEvent_UpdateTechnologyPoint();
 	void ExecuteUbergraph_WBP_IngameSmesTop(int32 EntryPoint);
-	void Finished_1CC36CF5434F95CC47067C9022BCAAAA();
-	void Finished_5BC595C649AA650883AA559F46C6DEC4();
-	void Finished_619BCE1746569C3505CAB3B66FD0832F();
-	void Finished_A1B7BD03455E913C4335A7BF7BD61956();
-	void On_Player_Level_Up(int32 DisplayLevel);
-	void OnInitialized();
-	void OnUpdateTechnologyPoint(int32 TechnologyPoint);
-	void PlayUnlockedMap(class FName RegionId);
+	void AnmEvent_UpdateTechnologyPoint();
+	void AnmEvent_Levelup();
 	void Setup();
+	void PlayUnlockedMap(class FName RegionId);
+	void OnUpdateTechnologyPoint(int32 TechnologyPoint);
+	void OnInitialized();
+	void On_Player_Level_Up(int32 DisplayLevel);
+	void Finished_A1B7BD03455E913C4335A7BF7BD61956();
+	void Finished_619BCE1746569C3505CAB3B66FD0832F();
+	void Finished_5BC595C649AA650883AA559F46C6DEC4();
+	void Finished_1CC36CF5434F95CC47067C9022BCAAAA();
 
 public:
 	static class UClass* StaticClass()

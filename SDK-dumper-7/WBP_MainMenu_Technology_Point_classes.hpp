@@ -38,12 +38,12 @@ public:
 	struct FDataTableRowHandle                    BossMsgId;                                         // 0x02E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void AnmEvent_DIsable();
-	void AnmEvent_Enable();
-	void Construct();
-	void Destruct();
 	void ExecuteUbergraph_WBP_MainMenu_Technology_Point(int32 EntryPoint);
+	void Destruct();
 	void OnUpdateTechnologyPoint(int32 TechnologyPoint);
+	void Construct();
+	void AnmEvent_Enable();
+	void AnmEvent_DIsable();
 
 public:
 	static class UClass* StaticClass()

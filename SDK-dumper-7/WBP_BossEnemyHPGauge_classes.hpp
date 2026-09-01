@@ -34,21 +34,21 @@ public:
 	struct FTimerHandle                           UpdateDetailTimer;                                 // 0x0490(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Close();
-	void Destruct();
-	void ExecuteUbergraph_WBP_BossEnemyHPGauge(int32 EntryPoint);
-	void Finished_10F7592E48B01E3F065E49BC1224338C();
-	void On_Update_Level(int32 addLevel, int32 nowLevel);
-	void OnRequestClose();
-	void OnTimerEvent_UpdateDetail();
-	void OnUpdateElement(EPalElementType type1, EPalElementType type2);
-	void OnUpdateHP(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& nowMaxHP);
-	void SetTargetCharacter(class APalCharacter* TargetCharacter_0);
-	void SetupEvents();
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void UpdateStatusEffect();
-	void UpdateText();
 	void UpdateVisibility();
+	void UpdateText();
+	void UpdateStatusEffect();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void SetupEvents();
+	void SetTargetCharacter(class APalCharacter* TargetCharacter_0);
+	void OnUpdateHP(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& nowMaxHP);
+	void OnUpdateElement(EPalElementType type1, EPalElementType type2);
+	void OnTimerEvent_UpdateDetail();
+	void OnRequestClose();
+	void On_Update_Level(int32 addLevel, int32 nowLevel);
+	void Finished_10F7592E48B01E3F065E49BC1224338C();
+	void ExecuteUbergraph_WBP_BossEnemyHPGauge(int32 EntryPoint);
+	void Destruct();
+	void AnmEvent_Close();
 
 public:
 	static class UClass* StaticClass()

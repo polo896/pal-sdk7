@@ -19,7 +19,7 @@ class UWBP_Ingame_WeaponChange_C : public UPalUserWidget
     TMap<int32, UWBP_Ingame_WeaponChangeList_C*> WeaponListWidgetMap;                 // 0x04B0 (size: 0x50)
     class UWBP_Ingame_WeaponChangeList_C* NonWeaponWidget;                            // 0x0500 (size: 0x8)
     class UWBP_Ingame_WeaponChangeList_C* CachedSelectedWeaponListWidget;             // 0x0508 (size: 0x8)
-    TMap<class UWBP_Ingame_WeaponChangeList_C*, class UPalItemSlot*> WeaponListToSlotMap; // 0x0510 (size: 0x50)
+    TMap<UWBP_Ingame_WeaponChangeList_C*, UPalItemSlot*> WeaponListToSlotMap;         // 0x0510 (size: 0x50)
     class UPalItemContainer* BoundLoadoutConatiner;                                   // 0x0560 (size: 0x8)
     class APalWeaponBase* LastSelectedWeaponActor;                                    // 0x0568 (size: 0x8)
     bool bRefreshPending;                                                             // 0x0570 (size: 0x1)

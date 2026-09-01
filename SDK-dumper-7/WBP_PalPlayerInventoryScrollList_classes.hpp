@@ -37,19 +37,19 @@ public:
 	TMulticastInlineDelegate<void(class UWBP_PalItemSlotButtonBase_C* SlotButton)> OnTriedEquipSlot; // 0x05F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void Add_Player_Inventory_Block(EPalPlayerInventoryType inventoryType, class UWBP_PalItemListBlock_C** createdBlock);
-	void ClearFiltering();
-	void Construct();
-	void ExecuteUbergraph_WBP_PalPlayerInventoryScrollList(int32 EntryPoint);
-	void FilteringFromInventoryType(TArray<EPalPlayerInventoryType>& displayTypes, bool* IsEmptyDisplaySlot);
-	void FilteringFromItemTypeA(TArray<EPalItemTypeA>& displayTypesA, bool isEmptySlotDIsplay);
-	void FilteringFromItemTypeB(TArray<EPalItemTypeB>& displayTypesB, bool isEmptySlotDIsplay);
-	void GetItemSlotButtons(EPalPlayerInventoryType inventoryType, TArray<class UWBP_PalItemSlotButtonBase_C*>* OutSlotButtonArray);
-	void OnLeftCllicked(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
-	void OnTriedEquipSlot_Internal(class UWBP_PalItemSlotButtonBase_C* Widget);
-	void Open_Use_Item_Panel(class UWBP_PalItemSlotButtonBase_C* Button);
-	void ScrollToCategoryTop(EPalPlayerInventoryType TargetType, class UWidget** TopFocusTarget);
 	void Setup(class UPalUIInventoryModel* useModel);
+	void ScrollToCategoryTop(EPalPlayerInventoryType TargetType, class UWidget** TopFocusTarget);
+	void Open_Use_Item_Panel(class UWBP_PalItemSlotButtonBase_C* Button);
+	void OnTriedEquipSlot_Internal(class UWBP_PalItemSlotButtonBase_C* Widget);
+	void OnLeftCllicked(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
+	void GetItemSlotButtons(EPalPlayerInventoryType inventoryType, TArray<class UWBP_PalItemSlotButtonBase_C*>* OutSlotButtonArray);
+	void FilteringFromItemTypeB(TArray<EPalItemTypeB>& displayTypesB, bool isEmptySlotDIsplay);
+	void FilteringFromItemTypeA(TArray<EPalItemTypeA>& displayTypesA, bool isEmptySlotDIsplay);
+	void FilteringFromInventoryType(TArray<EPalPlayerInventoryType>& displayTypes, bool* IsEmptyDisplaySlot);
+	void ExecuteUbergraph_WBP_PalPlayerInventoryScrollList(int32 EntryPoint);
+	void Construct();
+	void ClearFiltering();
+	void Add_Player_Inventory_Block(EPalPlayerInventoryType inventoryType, class UWBP_PalItemListBlock_C** createdBlock);
 
 public:
 	static class UClass* StaticClass()

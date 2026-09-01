@@ -17,77 +17,15 @@
 namespace SDK
 {
 
-// Function WBP_PalIngameMenuItem_GetGroup.WBP_PalIngameMenuItem_GetGroup_C.AnmEvent_In
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_PalIngameMenuItem_GetGroup.WBP_PalIngameMenuItem_GetGroup_C.TryPopRewardData
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalIngameMenuItem_GetGroup_C::AnmEvent_In()
+void UWBP_PalIngameMenuItem_GetGroup_C::TryPopRewardData()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalIngameMenuItem_GetGroup_C", "AnmEvent_In");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalIngameMenuItem_GetGroup.WBP_PalIngameMenuItem_GetGroup_C.AnmEvent_Out
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalIngameMenuItem_GetGroup_C::AnmEvent_Out()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalIngameMenuItem_GetGroup_C", "AnmEvent_Out");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalIngameMenuItem_GetGroup.WBP_PalIngameMenuItem_GetGroup_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PalIngameMenuItem_GetGroup_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalIngameMenuItem_GetGroup_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalIngameMenuItem_GetGroup.WBP_PalIngameMenuItem_GetGroup_C.ExecuteUbergraph_WBP_PalIngameMenuItem_GetGroup
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalIngameMenuItem_GetGroup_C::ExecuteUbergraph_WBP_PalIngameMenuItem_GetGroup(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalIngameMenuItem_GetGroup_C", "ExecuteUbergraph_WBP_PalIngameMenuItem_GetGroup");
-
-	Params::WBP_PalIngameMenuItem_GetGroup_C_ExecuteUbergraph_WBP_PalIngameMenuItem_GetGroup Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalIngameMenuItem_GetGroup.WBP_PalIngameMenuItem_GetGroup_C.OnTimerEvent_Out
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalIngameMenuItem_GetGroup_C::OnTimerEvent_Out()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalIngameMenuItem_GetGroup_C", "OnTimerEvent_Out");
+		Func = Class->GetFunction("WBP_PalIngameMenuItem_GetGroup_C", "TryPopRewardData");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -113,15 +51,77 @@ void UWBP_PalIngameMenuItem_GetGroup_C::QueRewardData(const struct FPalUICommonI
 }
 
 
-// Function WBP_PalIngameMenuItem_GetGroup.WBP_PalIngameMenuItem_GetGroup_C.TryPopRewardData
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalIngameMenuItem_GetGroup.WBP_PalIngameMenuItem_GetGroup_C.OnTimerEvent_Out
+// (Private, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalIngameMenuItem_GetGroup_C::TryPopRewardData()
+void UWBP_PalIngameMenuItem_GetGroup_C::OnTimerEvent_Out()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalIngameMenuItem_GetGroup_C", "TryPopRewardData");
+		Func = Class->GetFunction("WBP_PalIngameMenuItem_GetGroup_C", "OnTimerEvent_Out");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalIngameMenuItem_GetGroup.WBP_PalIngameMenuItem_GetGroup_C.ExecuteUbergraph_WBP_PalIngameMenuItem_GetGroup
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalIngameMenuItem_GetGroup_C::ExecuteUbergraph_WBP_PalIngameMenuItem_GetGroup(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalIngameMenuItem_GetGroup_C", "ExecuteUbergraph_WBP_PalIngameMenuItem_GetGroup");
+
+	Params::WBP_PalIngameMenuItem_GetGroup_C_ExecuteUbergraph_WBP_PalIngameMenuItem_GetGroup Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalIngameMenuItem_GetGroup.WBP_PalIngameMenuItem_GetGroup_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_PalIngameMenuItem_GetGroup_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalIngameMenuItem_GetGroup_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalIngameMenuItem_GetGroup.WBP_PalIngameMenuItem_GetGroup_C.AnmEvent_Out
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalIngameMenuItem_GetGroup_C::AnmEvent_Out()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalIngameMenuItem_GetGroup_C", "AnmEvent_Out");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalIngameMenuItem_GetGroup.WBP_PalIngameMenuItem_GetGroup_C.AnmEvent_In
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalIngameMenuItem_GetGroup_C::AnmEvent_In()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalIngameMenuItem_GetGroup_C", "AnmEvent_In");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

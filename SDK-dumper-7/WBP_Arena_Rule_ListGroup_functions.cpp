@@ -17,60 +17,61 @@
 namespace SDK
 {
 
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.ExecuteUbergraph_WBP_Arena_Rule_ListGroup
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FPalArenaRule&             ArenaRule                                              (BlueprintVisible, BlueprintReadOnly, Parm)
+// bool                                    RuleEditable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_Rule_ListGroup_C::ExecuteUbergraph_WBP_Arena_Rule_ListGroup(int32 EntryPoint)
+void UWBP_Arena_Rule_ListGroup_C::Setup(const struct FPalArenaRule& ArenaRule, bool RuleEditable)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "ExecuteUbergraph_WBP_Arena_Rule_ListGroup");
+		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "Setup");
 
-	Params::WBP_Arena_Rule_ListGroup_C_ExecuteUbergraph_WBP_Arena_Rule_ListGroup Parms{};
+	Params::WBP_Arena_Rule_ListGroup_C_Setup Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.ArenaRule = std::move(ArenaRule);
+	Parms.RuleEditable = RuleEditable;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.GetDesiredFocusTarget
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnTimeLimitDamageChanged
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWidget**                         Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_Rule_ListGroup_C::GetDesiredFocusTarget(class UWidget** Widget)
+void UWBP_Arena_Rule_ListGroup_C::OnTimeLimitDamageChanged(double Value)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "GetDesiredFocusTarget");
+		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "OnTimeLimitDamageChanged");
 
-	Params::WBP_Arena_Rule_ListGroup_C_GetDesiredFocusTarget Parms{};
+	Params::WBP_Arena_Rule_ListGroup_C_OnTimeLimitDamageChanged Parms{};
+
+	Parms.Value = Value;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (Widget != nullptr)
-		*Widget = Parms.Widget;
 }
 
 
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnBossRestrictChanged
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnRideRestrictChanged
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_Rule_ListGroup_C::OnBossRestrictChanged(bool IsOn)
+void UWBP_Arena_Rule_ListGroup_C::OnRideRestrictChanged(bool IsOn)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "OnBossRestrictChanged");
+		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "OnRideRestrictChanged");
 
-	Params::WBP_Arena_Rule_ListGroup_C_OnBossRestrictChanged Parms{};
+	Params::WBP_Arena_Rule_ListGroup_C_OnRideRestrictChanged Parms{};
 
 	Parms.IsOn = IsOn;
 
@@ -78,53 +79,127 @@ void UWBP_Arena_Rule_ListGroup_C::OnBossRestrictChanged(bool IsOn)
 }
 
 
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnContentHovered
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnPlayerDamageChanged
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWidget*                          Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_Rule_ListGroup_C::OnContentHovered(class UWidget* Button)
+void UWBP_Arena_Rule_ListGroup_C::OnPlayerDamageChanged(double Value)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "OnContentHovered");
+		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "OnPlayerDamageChanged");
 
-	Params::WBP_Arena_Rule_ListGroup_C_OnContentHovered Parms{};
+	Params::WBP_Arena_Rule_ListGroup_C_OnPlayerDamageChanged Parms{};
 
-	Parms.Button = Button;
+	Parms.Value = Value;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnContentUnhovered
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnPalRestrictClicked
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Arena_Rule_ListGroup_C::OnContentUnhovered()
+void UWBP_Arena_Rule_ListGroup_C::OnPalRestrictClicked()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "OnContentUnhovered");
+		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "OnPalRestrictClicked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnDuplicateRestrictChanged
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnPalDamageChanged
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_Rule_ListGroup_C::OnDuplicateRestrictChanged(bool IsOn)
+void UWBP_Arena_Rule_ListGroup_C::OnPalDamageChanged(double Value)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "OnDuplicateRestrictChanged");
+		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "OnPalDamageChanged");
 
-	Params::WBP_Arena_Rule_ListGroup_C_OnDuplicateRestrictChanged Parms{};
+	Params::WBP_Arena_Rule_ListGroup_C_OnPalDamageChanged Parms{};
+
+	Parms.Value = Value;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnLevelSyncChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_Rule_ListGroup_C::OnLevelSyncChanged(bool IsOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "OnLevelSyncChanged");
+
+	Params::WBP_Arena_Rule_ListGroup_C_OnLevelSyncChanged Parms{};
+
+	Parms.IsOn = IsOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnLegendRestrictChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_Rule_ListGroup_C::OnLegendRestrictChanged(bool IsOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "OnLegendRestrictChanged");
+
+	Params::WBP_Arena_Rule_ListGroup_C_OnLegendRestrictChanged Parms{};
+
+	Parms.IsOn = IsOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Arena_Rule_ListGroup_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnHumanRestrictChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_Rule_ListGroup_C::OnHumanRestrictChanged(bool IsOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "OnHumanRestrictChanged");
+
+	Params::WBP_Arena_Rule_ListGroup_C_OnHumanRestrictChanged Parms{};
 
 	Parms.IsOn = IsOn;
 
@@ -154,19 +229,19 @@ void UWBP_Arena_Rule_ListGroup_C::OnElementRestrictChanged(TArray<EPalElementTyp
 }
 
 
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnHumanRestrictChanged
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnDuplicateRestrictChanged
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_Rule_ListGroup_C::OnHumanRestrictChanged(bool IsOn)
+void UWBP_Arena_Rule_ListGroup_C::OnDuplicateRestrictChanged(bool IsOn)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "OnHumanRestrictChanged");
+		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "OnDuplicateRestrictChanged");
 
-	Params::WBP_Arena_Rule_ListGroup_C_OnHumanRestrictChanged Parms{};
+	Params::WBP_Arena_Rule_ListGroup_C_OnDuplicateRestrictChanged Parms{};
 
 	Parms.IsOn = IsOn;
 
@@ -174,33 +249,53 @@ void UWBP_Arena_Rule_ListGroup_C::OnHumanRestrictChanged(bool IsOn)
 }
 
 
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnContentUnhovered
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Arena_Rule_ListGroup_C::OnInitialized()
+void UWBP_Arena_Rule_ListGroup_C::OnContentUnhovered()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "OnContentUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnLegendRestrictChanged
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnContentHovered
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_Rule_ListGroup_C::OnLegendRestrictChanged(bool IsOn)
+void UWBP_Arena_Rule_ListGroup_C::OnContentHovered(class UWidget* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "OnLegendRestrictChanged");
+		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "OnContentHovered");
 
-	Params::WBP_Arena_Rule_ListGroup_C_OnLegendRestrictChanged Parms{};
+	Params::WBP_Arena_Rule_ListGroup_C_OnContentHovered Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnBossRestrictChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Arena_Rule_ListGroup_C::OnBossRestrictChanged(bool IsOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "OnBossRestrictChanged");
+
+	Params::WBP_Arena_Rule_ListGroup_C_OnBossRestrictChanged Parms{};
 
 	Parms.IsOn = IsOn;
 
@@ -208,137 +303,42 @@ void UWBP_Arena_Rule_ListGroup_C::OnLegendRestrictChanged(bool IsOn)
 }
 
 
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnLevelSyncChanged
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.GetDesiredFocusTarget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget**                         Widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_Rule_ListGroup_C::OnLevelSyncChanged(bool IsOn)
+void UWBP_Arena_Rule_ListGroup_C::GetDesiredFocusTarget(class UWidget** Widget)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "OnLevelSyncChanged");
+		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "GetDesiredFocusTarget");
 
-	Params::WBP_Arena_Rule_ListGroup_C_OnLevelSyncChanged Parms{};
-
-	Parms.IsOn = IsOn;
+	Params::WBP_Arena_Rule_ListGroup_C_GetDesiredFocusTarget Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (Widget != nullptr)
+		*Widget = Parms.Widget;
 }
 
 
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnPalDamageChanged
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.ExecuteUbergraph_WBP_Arena_Rule_ListGroup
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Arena_Rule_ListGroup_C::OnPalDamageChanged(double Value)
+void UWBP_Arena_Rule_ListGroup_C::ExecuteUbergraph_WBP_Arena_Rule_ListGroup(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "OnPalDamageChanged");
+		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "ExecuteUbergraph_WBP_Arena_Rule_ListGroup");
 
-	Params::WBP_Arena_Rule_ListGroup_C_OnPalDamageChanged Parms{};
+	Params::WBP_Arena_Rule_ListGroup_C_ExecuteUbergraph_WBP_Arena_Rule_ListGroup Parms{};
 
-	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnPalRestrictClicked
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Arena_Rule_ListGroup_C::OnPalRestrictClicked()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "OnPalRestrictClicked");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnPlayerDamageChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Arena_Rule_ListGroup_C::OnPlayerDamageChanged(double Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "OnPlayerDamageChanged");
-
-	Params::WBP_Arena_Rule_ListGroup_C_OnPlayerDamageChanged Parms{};
-
-	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnRideRestrictChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Arena_Rule_ListGroup_C::OnRideRestrictChanged(bool IsOn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "OnRideRestrictChanged");
-
-	Params::WBP_Arena_Rule_ListGroup_C_OnRideRestrictChanged Parms{};
-
-	Parms.IsOn = IsOn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.OnTimeLimitDamageChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Arena_Rule_ListGroup_C::OnTimeLimitDamageChanged(double Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "OnTimeLimitDamageChanged");
-
-	Params::WBP_Arena_Rule_ListGroup_C_OnTimeLimitDamageChanged Parms{};
-
-	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Arena_Rule_ListGroup.WBP_Arena_Rule_ListGroup_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalArenaRule&             ArenaRule                                              (BlueprintVisible, BlueprintReadOnly, Parm)
-// bool                                    RuleEditable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Arena_Rule_ListGroup_C::Setup(const struct FPalArenaRule& ArenaRule, bool RuleEditable)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Arena_Rule_ListGroup_C", "Setup");
-
-	Params::WBP_Arena_Rule_ListGroup_C_Setup Parms{};
-
-	Parms.ArenaRule = std::move(ArenaRule);
-	Parms.RuleEditable = RuleEditable;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

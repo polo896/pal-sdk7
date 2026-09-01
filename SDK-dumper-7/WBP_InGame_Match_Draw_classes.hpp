@@ -27,8 +27,8 @@ public:
 
 public:
 	void ExecuteUbergraph_WBP_InGame_Match_Draw(int32 EntryPoint);
-	void SequenceEvent();
 	void SequenceEvent__ENTRYPOINTWBP_InGame_Match_Draw();
+	void SequenceEvent();
 
 public:
 	static class UClass* StaticClass()

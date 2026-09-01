@@ -17,59 +17,63 @@
 namespace SDK
 {
 
-// Function WBP_PalQuestTrackingIcon.WBP_PalQuestTrackingIcon_C.CalcScreenPosition
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalQuestTrackingIcon_C::CalcScreenPosition()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalQuestTrackingIcon_C", "CalcScreenPosition");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalQuestTrackingIcon.WBP_PalQuestTrackingIcon_C.GetLoupeWidgetSize
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_PalQuestTrackingIcon.WBP_PalQuestTrackingIcon_C.Setup
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector2D*                       widgetSize_0                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TSoftObjectPtr<class UPalLocationPoint_QuestBase>SoftQuestLocation                                      (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void UWBP_PalQuestTrackingIcon_C::GetLoupeWidgetSize(struct FVector2D* widgetSize_0)
+void UWBP_PalQuestTrackingIcon_C::Setup(TSoftObjectPtr<class UPalLocationPoint_QuestBase> SoftQuestLocation)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalQuestTrackingIcon_C", "GetLoupeWidgetSize");
+		Func = Class->GetFunction("WBP_PalQuestTrackingIcon_C", "Setup");
 
-	Params::WBP_PalQuestTrackingIcon_C_GetLoupeWidgetSize Parms{};
+	Params::WBP_PalQuestTrackingIcon_C_Setup Parms{};
+
+	Parms.SoftQuestLocation = SoftQuestLocation;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (widgetSize_0 != nullptr)
-		*widgetSize_0 = std::move(Parms.widgetSize_0);
 }
 
 
-// Function WBP_PalQuestTrackingIcon.WBP_PalQuestTrackingIcon_C.GetTargetWidgetSize
+// Function WBP_PalQuestTrackingIcon.WBP_PalQuestTrackingIcon_C.SetFinalWidgetOpacity
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  calcedOpacity                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalQuestTrackingIcon_C::SetFinalWidgetOpacity(double calcedOpacity)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalQuestTrackingIcon_C", "SetFinalWidgetOpacity");
+
+	Params::WBP_PalQuestTrackingIcon_C_SetFinalWidgetOpacity Parms{};
+
+	Parms.calcedOpacity = calcedOpacity;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalQuestTrackingIcon.WBP_PalQuestTrackingIcon_C.IsEnableLoupe
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector2D*                       outVector                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalQuestTrackingIcon_C::GetTargetWidgetSize(struct FVector2D* outVector)
+bool UWBP_PalQuestTrackingIcon_C::IsEnableLoupe()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalQuestTrackingIcon_C", "GetTargetWidgetSize");
+		Func = Class->GetFunction("WBP_PalQuestTrackingIcon_C", "IsEnableLoupe");
 
-	Params::WBP_PalQuestTrackingIcon_C_GetTargetWidgetSize Parms{};
+	Params::WBP_PalQuestTrackingIcon_C_IsEnableLoupe Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (outVector != nullptr)
-		*outVector = std::move(Parms.outVector);
+	return Parms.ReturnValue;
 }
 
 
@@ -94,63 +98,59 @@ void UWBP_PalQuestTrackingIcon_C::GetTargetWorldLocation(struct FVector* outVect
 }
 
 
-// Function WBP_PalQuestTrackingIcon.WBP_PalQuestTrackingIcon_C.IsEnableLoupe
+// Function WBP_PalQuestTrackingIcon.WBP_PalQuestTrackingIcon_C.GetTargetWidgetSize
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D*                       outVector                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-bool UWBP_PalQuestTrackingIcon_C::IsEnableLoupe()
+void UWBP_PalQuestTrackingIcon_C::GetTargetWidgetSize(struct FVector2D* outVector)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalQuestTrackingIcon_C", "IsEnableLoupe");
+		Func = Class->GetFunction("WBP_PalQuestTrackingIcon_C", "GetTargetWidgetSize");
 
-	Params::WBP_PalQuestTrackingIcon_C_IsEnableLoupe Parms{};
+	Params::WBP_PalQuestTrackingIcon_C_GetTargetWidgetSize Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	return Parms.ReturnValue;
+	if (outVector != nullptr)
+		*outVector = std::move(Parms.outVector);
 }
 
 
-// Function WBP_PalQuestTrackingIcon.WBP_PalQuestTrackingIcon_C.SetFinalWidgetOpacity
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalQuestTrackingIcon.WBP_PalQuestTrackingIcon_C.GetLoupeWidgetSize
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// double                                  calcedOpacity                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D*                       widgetSize_0                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalQuestTrackingIcon_C::SetFinalWidgetOpacity(double calcedOpacity)
+void UWBP_PalQuestTrackingIcon_C::GetLoupeWidgetSize(struct FVector2D* widgetSize_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalQuestTrackingIcon_C", "SetFinalWidgetOpacity");
+		Func = Class->GetFunction("WBP_PalQuestTrackingIcon_C", "GetLoupeWidgetSize");
 
-	Params::WBP_PalQuestTrackingIcon_C_SetFinalWidgetOpacity Parms{};
-
-	Parms.calcedOpacity = calcedOpacity;
+	Params::WBP_PalQuestTrackingIcon_C_GetLoupeWidgetSize Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (widgetSize_0 != nullptr)
+		*widgetSize_0 = std::move(Parms.widgetSize_0);
 }
 
 
-// Function WBP_PalQuestTrackingIcon.WBP_PalQuestTrackingIcon_C.Setup
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TSoftObjectPtr<class UPalLocationPoint_QuestBase>SoftQuestLocation                                      (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// Function WBP_PalQuestTrackingIcon.WBP_PalQuestTrackingIcon_C.CalcScreenPosition
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalQuestTrackingIcon_C::Setup(TSoftObjectPtr<class UPalLocationPoint_QuestBase> SoftQuestLocation)
+void UWBP_PalQuestTrackingIcon_C::CalcScreenPosition()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalQuestTrackingIcon_C", "Setup");
+		Func = Class->GetFunction("WBP_PalQuestTrackingIcon_C", "CalcScreenPosition");
 
-	Params::WBP_PalQuestTrackingIcon_C_Setup Parms{};
-
-	Parms.SoftQuestLocation = SoftQuestLocation;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

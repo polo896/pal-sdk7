@@ -34,18 +34,18 @@ public:
 	bool                                          bFinishedGame;                                     // 0x04AC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_SalvageGame(int32 EntryPoint);
-	void GetUIModel(class UPalUIMapObjectTreasureBoxSalvageGameModel** Model);
-	void OnActionInteract();
-	void OnClose();
-	void OnSetup();
-	void PlayResultAnimation(bool bSuccess);
-	void ProceedNeedle(double DeltaTime);
-	void RequestFinishSalvageGame();
-	void SetupRouletteSetting(double SuccessStartAngle, double SuccessEndAngle);
-	void SetupUI();
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void UpdateRouletteNeedle(double Angle);
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void SetupUI();
+	void SetupRouletteSetting(double SuccessStartAngle, double SuccessEndAngle);
+	void RequestFinishSalvageGame();
+	void ProceedNeedle(double DeltaTime);
+	void PlayResultAnimation(bool bSuccess);
+	void OnSetup();
+	void OnClose();
+	void OnActionInteract();
+	void GetUIModel(class UPalUIMapObjectTreasureBoxSalvageGameModel** Model);
+	void ExecuteUbergraph_WBP_SalvageGame(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

@@ -72,7 +72,7 @@ class UMotionWarpingComponent : public UActorComponent
     FMotionWarpingComponentOnPreUpdate OnPreUpdate;                                   // 0x00A8 (size: 0x10)
     void MotionWarpingPreUpdate(class UMotionWarpingComponent* MotionWarpingComp);
     TWeakObjectPtr<class ACharacter> CharacterOwner;                                  // 0x00B8 (size: 0x8)
-    TArray<class URootMotionModifier*> Modifiers;                                     // 0x00C0 (size: 0x10)
+    TArray<URootMotionModifier*> Modifiers;                                           // 0x00C0 (size: 0x10)
     TArray<FMotionWarpingTarget> WarpTargets;                                         // 0x00D0 (size: 0x10)
 
     int32 RemoveWarpTarget(FName WarpTargetName);

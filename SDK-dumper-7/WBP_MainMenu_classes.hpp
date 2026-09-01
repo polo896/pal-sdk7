@@ -39,20 +39,20 @@ public:
 	TMap<EPalUIInGameMainMenuTabType, class UWBP_MainMenu_Tab_C*> TabWidgetMap;                      // 0x0510(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void Anm_focus(EPalUIInGameMainMenuTabType Type);
-	void Anm_FocusToNormal(EPalUIInGameMainMenuTabType Type);
-	void Anm_Open();
-	void BndEvt__WBP_MainMenu_WBP_Tab_Key_L_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
-	void BndEvt__WBP_MainMenu_WBP_Tab_Key_R_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
-	void ExecuteUbergraph_WBP_MainMenu(int32 EntryPoint);
-	void GetTabWidgetByMenuType(EPalUIInGameMainMenuTabType MenuType, class UWBP_MainMenu_Tab_C** TabWidget);
-	void OnChangedIndexEvent(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
-	void OnClickedTabEvent(class UWBP_MainMenu_Tab_C* TabWidget);
-	void OnInitialized();
-	void OnNextEvent(int32 OldIndex, int32 NewIndex);
-	void OnPrevEvent(int32 OldIndex, int32 NewIndex);
-	void RegisterPanelWidget(class UPanelWidget** PanelWidget);
 	void SelectByMainMenuType(EPalUIInGameMainMenuTabType Type);
+	void RegisterPanelWidget(class UPanelWidget** PanelWidget);
+	void OnPrevEvent(int32 OldIndex, int32 NewIndex);
+	void OnNextEvent(int32 OldIndex, int32 NewIndex);
+	void OnInitialized();
+	void OnClickedTabEvent(class UWBP_MainMenu_Tab_C* TabWidget);
+	void OnChangedIndexEvent(int32 OldIndex, int32 NewIndex, class UWidget* FocusTargetWidget);
+	void GetTabWidgetByMenuType(EPalUIInGameMainMenuTabType MenuType, class UWBP_MainMenu_Tab_C** TabWidget);
+	void ExecuteUbergraph_WBP_MainMenu(int32 EntryPoint);
+	void BndEvt__WBP_MainMenu_WBP_Tab_Key_R_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
+	void BndEvt__WBP_MainMenu_WBP_Tab_Key_L_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
+	void Anm_Open();
+	void Anm_FocusToNormal(EPalUIInGameMainMenuTabType Type);
+	void Anm_focus(EPalUIInGameMainMenuTabType Type);
 
 public:
 	static class UClass* StaticClass()

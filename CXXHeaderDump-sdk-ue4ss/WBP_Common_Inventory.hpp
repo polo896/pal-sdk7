@@ -22,7 +22,7 @@ class UWBP_Common_Inventory_C : public UUserWidget
 
     void GetInventoryLastHoveredFocusTarget(class UWidget*& Widget);
     void GetInventoryTopFocustTarget(class UWidget*& FocusTarget);
-    void OnLeftClickedTargetContainerSLot(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
+    void OnLeftClickedTargetContainerSlot(class UWBP_PalItemSlotButtonBase_C* ButtonBase, EPalItemSlotPressType PressType);
     void Setup(class UBP_PalInventoryModel_C* Model);
     void FilteringInventoryByInventoryTypeB(TArray<EPalItemTypeB>& displayTypesB);
     void FilteringInventoryByInventoryTypeA(TArray<EPalItemTypeA>& displayTypesA);

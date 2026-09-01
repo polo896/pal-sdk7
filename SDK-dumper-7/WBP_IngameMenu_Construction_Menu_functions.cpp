@@ -515,6 +515,20 @@ void UWBP_IngameMenu_Construction_Menu_C::Destruct()
 }
 
 
+// Function WBP_IngameMenu_Construction_Menu.WBP_IngameMenu_Construction_Menu_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_IngameMenu_Construction_Menu_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Construction_Menu_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_IngameMenu_Construction_Menu.WBP_IngameMenu_Construction_Menu_C.CacheControllableItemInfo
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -650,20 +664,6 @@ void UWBP_IngameMenu_Construction_Menu_C::AnmEvent_Open()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_IngameMenu_Construction_Menu_C", "AnmEvent_Open");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_Construction_Menu.WBP_IngameMenu_Construction_Menu_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_IngameMenu_Construction_Menu_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Construction_Menu_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

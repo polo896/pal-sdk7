@@ -167,7 +167,7 @@ struct FMetasoundFrontendLiteral
     TArray<int32> AsInteger;                                                          // 0x0018 (size: 0x10)
     TArray<float> AsFloat;                                                            // 0x0028 (size: 0x10)
     TArray<FString> AsString;                                                         // 0x0038 (size: 0x10)
-    TArray<class UObject*> AsUObject;                                                 // 0x0048 (size: 0x10)
+    TArray<UObject*> AsUObject;                                                       // 0x0048 (size: 0x10)
 
 }; // Size: 0x58
 

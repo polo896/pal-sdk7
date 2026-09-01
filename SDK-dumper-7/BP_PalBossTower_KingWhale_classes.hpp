@@ -29,14 +29,14 @@ public:
 	class UPalInteractableSphereComponentNative*  InteractableTrigger;                               // 0x03C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_PalBossTower_KingWhale(int32 EntryPoint);
-	void ProgressQuest(class UClass* ConditionQuestBlock);
-	void GetEntryCancelTrigger(class UShapeComponent** EntryCancelTrigger_0);
-	void GetEntryWaitInfoTrigger(class UShapeComponent** EntryWaitInfoTrigger);
-	void GetInteractableInterface(TScriptInterface<class IPalInteractiveObjectComponentInterface>* Interface);
-	void GetInteractableTrigger(class UShapeComponent** InteractableTrigger_0);
-	void Interact(class AActor* Other, EPalInteractiveObjectIndicatorType IndicatorType);
 	void OnClosedLockDialog(bool bResult);
+	void Interact(class AActor* Other, EPalInteractiveObjectIndicatorType IndicatorType);
+	void GetInteractableTrigger(class UShapeComponent** InteractableTrigger_0);
+	void GetInteractableInterface(TScriptInterface<class IPalInteractiveObjectComponentInterface>* Interface);
+	void GetEntryWaitInfoTrigger(class UShapeComponent** EntryWaitInfoTrigger);
+	void GetEntryCancelTrigger(class UShapeComponent** EntryCancelTrigger_0);
+	void ProgressQuest(class UClass* ConditionQuestBlock);
+	void ExecuteUbergraph_BP_PalBossTower_KingWhale(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

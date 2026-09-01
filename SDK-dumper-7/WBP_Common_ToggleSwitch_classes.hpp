@@ -33,10 +33,10 @@ public:
 	TMulticastInlineDelegate<void()>              OnToggleClicked;                                   // 0x02B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void Construct();
-	void ExecuteUbergraph_WBP_Common_ToggleSwitch(int32 EntryPoint);
-	void OnButtonBaseClicked_イベント(class UCommonButtonBase* Button);
 	void SetToggleState(bool bIsOn, bool bImmediate);
+	void OnButtonBaseClicked_イベント(class UCommonButtonBase* Button);
+	void ExecuteUbergraph_WBP_Common_ToggleSwitch(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

@@ -7,7 +7,7 @@ class UWBP_MainMenu_Pal_StatusElement_C : public UUserWidget
     class UImage* Image_Element;                                                      // 0x0280 (size: 0x8)
     class UBP_PalTextBlock_C* Text_ElementTypeName;                                   // 0x0288 (size: 0x8)
     class UWBP_PalInvisibleButton_C* WBP_PalInvisibleButton;                          // 0x0290 (size: 0x8)
-    TMap<class EPalElementType, class TSoftObjectPtr<UTexture2D>> TextureMap;         // 0x0298 (size: 0x50)
+    TMap<EPalElementType, TSoftObjectPtr<class UTexture2D>> TextureMap;               // 0x0298 (size: 0x50)
     bool IsHoverable;                                                                 // 0x02E8 (size: 0x1)
     FWBP_MainMenu_Pal_StatusElement_COnHovered OnHovered;                             // 0x02F0 (size: 0x10)
     void OnHovered(class UWidget* SelfWidget);

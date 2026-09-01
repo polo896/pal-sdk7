@@ -41,7 +41,7 @@ class UGLTFExportOptions : public UObject
     EGLTFMaterialBakeSizePOT DefaultMaterialBakeSize;                                 // 0x0035 (size: 0x1)
     TEnumAsByte<TextureFilter> DefaultMaterialBakeFilter;                             // 0x0036 (size: 0x1)
     TEnumAsByte<TextureAddress> DefaultMaterialBakeTiling;                            // 0x0037 (size: 0x1)
-    TMap<class EGLTFMaterialPropertyGroup, class FGLTFOverrideMaterialBakeSettings> DefaultInputBakeSettings; // 0x0038 (size: 0x50)
+    TMap<EGLTFMaterialPropertyGroup, FGLTFOverrideMaterialBakeSettings> DefaultInputBakeSettings; // 0x0038 (size: 0x50)
     int32 DefaultLevelOfDetail;                                                       // 0x0088 (size: 0x4)
     bool bExportVertexColors;                                                         // 0x008C (size: 0x1)
     bool bExportVertexSkinWeights;                                                    // 0x008D (size: 0x1)
@@ -91,7 +91,7 @@ class UGLTFMaterialExportOptions : public UAssetUserData
 {
     class UMaterialInterface* Proxy;                                                  // 0x0028 (size: 0x8)
     FGLTFOverrideMaterialBakeSettings Default;                                        // 0x0030 (size: 0x6)
-    TMap<class EGLTFMaterialPropertyGroup, class FGLTFOverrideMaterialBakeSettings> Inputs; // 0x0038 (size: 0x50)
+    TMap<EGLTFMaterialPropertyGroup, FGLTFOverrideMaterialBakeSettings> Inputs;       // 0x0038 (size: 0x50)
 
 }; // Size: 0x88
 
@@ -107,7 +107,7 @@ class UGLTFProxyOptions : public UObject
     EGLTFMaterialBakeSizePOT DefaultMaterialBakeSize;                                 // 0x0029 (size: 0x1)
     TEnumAsByte<TextureFilter> DefaultMaterialBakeFilter;                             // 0x002A (size: 0x1)
     TEnumAsByte<TextureAddress> DefaultMaterialBakeTiling;                            // 0x002B (size: 0x1)
-    TMap<class EGLTFMaterialPropertyGroup, class FGLTFOverrideMaterialBakeSettings> DefaultInputBakeSettings; // 0x0030 (size: 0x50)
+    TMap<EGLTFMaterialPropertyGroup, FGLTFOverrideMaterialBakeSettings> DefaultInputBakeSettings; // 0x0030 (size: 0x50)
 
     void ResetToDefault();
 }; // Size: 0x80

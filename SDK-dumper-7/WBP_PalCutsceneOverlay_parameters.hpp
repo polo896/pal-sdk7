@@ -19,17 +19,75 @@
 namespace SDK::Params
 {
 
-// Function WBP_PalCutsceneOverlay.WBP_PalCutsceneOverlay_C.Display
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_PalCutsceneOverlay_C_Display final
+// Function WBP_PalCutsceneOverlay.WBP_PalCutsceneOverlay_C.Tick
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_PalCutsceneOverlay_C_Tick final
 {
 public:
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0018(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x0028(0x0004)(NoDestructor)
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_PalCutsceneOverlay_C_Display;
+DUMPER7_ASSERTS_WBP_PalCutsceneOverlay_C_Tick;
+
+// Function WBP_PalCutsceneOverlay.WBP_PalCutsceneOverlay_C.Skip
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_PalCutsceneOverlay_C_Skip final
+{
+public:
+	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalHUDDispatchParameter_CutsceneOverlay* K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_Cutscene_Overlay; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalCutsceneOverlay_C_Skip;
+
+// Function WBP_PalCutsceneOverlay.WBP_PalCutsceneOverlay_C.OnSkipCountUpdatedDelegate_イベント
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_PalCutsceneOverlay_C_OnSkipCountUpdatedDelegate_イベント final
+{
+public:
+	int32                                         SkipCount;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         TotalCount;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PalCutsceneOverlay_C_OnSkipCountUpdatedDelegate_イベント;
+
+// Function WBP_PalCutsceneOverlay.WBP_PalCutsceneOverlay_C.OnPreviewMouseButtonDown
+// 0x0248 (0x0248 - 0x0000)
+struct WBP_PalCutsceneOverlay_C_OnPreviewMouseButtonDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0040(0x0098)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00D8(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0190(0x00B8)()
+};
+DUMPER7_ASSERTS_WBP_PalCutsceneOverlay_C_OnPreviewMouseButtonDown;
+
+// Function WBP_PalCutsceneOverlay.WBP_PalCutsceneOverlay_C.OnPreviewKeyDown
+// 0x01F0 (0x01F0 - 0x0000)
+struct WBP_PalCutsceneOverlay_C_OnPreviewKeyDown final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FKeyEvent                              InKeyEvent;                                        // 0x0040(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FEventReply                            ReturnValue;                                       // 0x0080(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0138(0x00B8)()
+};
+DUMPER7_ASSERTS_WBP_PalCutsceneOverlay_C_OnPreviewKeyDown;
+
+// Function WBP_PalCutsceneOverlay.WBP_PalCutsceneOverlay_C.OnAnalogValueChanged
+// 0x01F8 (0x01F8 - 0x0000)
+struct WBP_PalCutsceneOverlay_C_OnAnalogValueChanged final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FAnalogInputEvent                      InAnalogInputEvent;                                // 0x0040(0x0048)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FEventReply                            ReturnValue;                                       // 0x0088(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0140(0x00B8)()
+};
+DUMPER7_ASSERTS_WBP_PalCutsceneOverlay_C_OnAnalogValueChanged;
 
 // Function WBP_PalCutsceneOverlay.WBP_PalCutsceneOverlay_C.ExecuteUbergraph_WBP_PalCutsceneOverlay
 // 0x00C8 (0x00C8 - 0x0000)
@@ -58,75 +116,17 @@ public:
 };
 DUMPER7_ASSERTS_WBP_PalCutsceneOverlay_C_ExecuteUbergraph_WBP_PalCutsceneOverlay;
 
-// Function WBP_PalCutsceneOverlay.WBP_PalCutsceneOverlay_C.OnAnalogValueChanged
-// 0x01F8 (0x01F8 - 0x0000)
-struct WBP_PalCutsceneOverlay_C_OnAnalogValueChanged final
+// Function WBP_PalCutsceneOverlay.WBP_PalCutsceneOverlay_C.Display
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_PalCutsceneOverlay_C_Display final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FAnalogInputEvent                      InAnalogInputEvent;                                // 0x0040(0x0048)(BlueprintVisible, BlueprintReadOnly, Parm)
-	struct FEventReply                            ReturnValue;                                       // 0x0088(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0140(0x00B8)()
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0018(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x0028(0x0004)(NoDestructor)
 };
-DUMPER7_ASSERTS_WBP_PalCutsceneOverlay_C_OnAnalogValueChanged;
-
-// Function WBP_PalCutsceneOverlay.WBP_PalCutsceneOverlay_C.OnPreviewKeyDown
-// 0x01F0 (0x01F0 - 0x0000)
-struct WBP_PalCutsceneOverlay_C_OnPreviewKeyDown final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FKeyEvent                              InKeyEvent;                                        // 0x0040(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm)
-	struct FEventReply                            ReturnValue;                                       // 0x0080(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0138(0x00B8)()
-};
-DUMPER7_ASSERTS_WBP_PalCutsceneOverlay_C_OnPreviewKeyDown;
-
-// Function WBP_PalCutsceneOverlay.WBP_PalCutsceneOverlay_C.OnPreviewMouseButtonDown
-// 0x0248 (0x0248 - 0x0000)
-struct WBP_PalCutsceneOverlay_C_OnPreviewMouseButtonDown final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0040(0x0098)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00D8(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0190(0x00B8)()
-};
-DUMPER7_ASSERTS_WBP_PalCutsceneOverlay_C_OnPreviewMouseButtonDown;
-
-// Function WBP_PalCutsceneOverlay.WBP_PalCutsceneOverlay_C.OnSkipCountUpdatedDelegate_イベント
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_PalCutsceneOverlay_C_OnSkipCountUpdatedDelegate_イベント final
-{
-public:
-	int32                                         SkipCount;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         TotalCount;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalCutsceneOverlay_C_OnSkipCountUpdatedDelegate_イベント;
-
-// Function WBP_PalCutsceneOverlay.WBP_PalCutsceneOverlay_C.Skip
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_PalCutsceneOverlay_C_Skip final
-{
-public:
-	class UPalHUDDispatchParameterBase*           CallFunc_GetParam_ReturnValue;                     // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalHUDDispatchParameter_CutsceneOverlay* K2Node_DynamicCast_AsPal_HUDDispatch_Parameter_Cutscene_Overlay; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalCutsceneOverlay_C_Skip;
-
-// Function WBP_PalCutsceneOverlay.WBP_PalCutsceneOverlay_C.Tick
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_PalCutsceneOverlay_C_Tick final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_PalCutsceneOverlay_C_Tick;
+DUMPER7_ASSERTS_WBP_PalCutsceneOverlay_C_Display;
 
 // Function WBP_PalCutsceneOverlay.WBP_PalCutsceneOverlay_C.BP_GetDesiredFocusTarget
 // 0x0008 (0x0008 - 0x0000)

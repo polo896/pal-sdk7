@@ -6,7 +6,7 @@ class UBP_ActionSleepPlayerBed_C : public UPalAction_SleepPlayerBed
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0170 (size: 0x8)
     FTransform PlayerInitTF;                                                          // 0x0180 (size: 0x60)
     bool AutoCancelAble;                                                              // 0x01E0 (size: 0x1)
-    TArray<class UPalIndividualCharacterHandle*> SleepOtomoList;                      // 0x01E8 (size: 0x10)
+    TArray<UPalIndividualCharacterHandle*> SleepOtomoList;                            // 0x01E8 (size: 0x10)
     class UAkAudioEvent* FadeOutSound;                                                // 0x01F8 (size: 0x8)
     class UAkAudioEvent* FadeInSound;                                                 // 0x0200 (size: 0x8)
     double FadeInterval;                                                              // 0x0208 (size: 0x8)

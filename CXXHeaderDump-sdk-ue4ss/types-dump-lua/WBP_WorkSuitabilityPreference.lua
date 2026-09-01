@@ -1,0 +1,28 @@
+---@meta
+
+---@class UWBP_WorkSuitabilityPreference_C : UPalUIWorkSuitabilitySelect
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field Default_In UWidgetAnimation
+---@field WBP_WorkSuitabilityPreferenceMenu UWBP_WorkSuitabilityPreferenceMenu_C
+---@field ToggleWorkerDetailInputAction FPalDataTableRowName_UIInputAction
+---@field IsDisplayDetail boolean
+local UWBP_WorkSuitabilityPreference_C = {}
+
+function UWBP_WorkSuitabilityPreference_C:OnTrigger_ToggleDetail() end
+function UWBP_WorkSuitabilityPreference_C:Setup() end
+---@return UWidget
+function UWBP_WorkSuitabilityPreference_C:BP_GetDesiredFocusTarget() end
+function UWBP_WorkSuitabilityPreference_C:OnSetup() end
+function UWBP_WorkSuitabilityPreference_C:BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_0_OnClickedCloseButton__DelegateSignature() end
+function UWBP_WorkSuitabilityPreference_C:Destruct() end
+---@param IsOn boolean
+---@param Suitability EPalWorkSuitability
+---@param TargetSlot UPalIndividualCharacterSlot
+function UWBP_WorkSuitabilityPreference_C:BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_1_OnChangedSuitabilitySetting__DelegateSignature(IsOn, Suitability, TargetSlot) end
+---@param CanBattle boolean
+---@param Slot UPalIndividualCharacterSlot
+function UWBP_WorkSuitabilityPreference_C:BndEvt__WBP_WorkSuitabilityPreference_WBP_WorkSuitabilityPreferenceMenu_K2Node_ComponentBoundEvent_2_OnChangedBattleModeSetting__DelegateSignature(CanBattle, Slot) end
+---@param EntryPoint int32
+function UWBP_WorkSuitabilityPreference_C:ExecuteUbergraph_WBP_WorkSuitabilityPreference(EntryPoint) end
+
+

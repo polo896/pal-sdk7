@@ -16,15 +16,14 @@
 namespace SDK::Params
 {
 
-// Function BP_Action_FireSeed.BP_Action_FireSeed_C.ExecuteUbergraph_BP_Action_FireSeed
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Action_FireSeed_C_ExecuteUbergraph_BP_Action_FireSeed final
+// Function BP_Action_FireSeed.BP_Action_FireSeed_C.TickAction
+// 0x0004 (0x0004 - 0x0000)
+struct BP_Action_FireSeed_C_TickAction final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaTime;                            // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_Action_FireSeed_C_ExecuteUbergraph_BP_Action_FireSeed;
+DUMPER7_ASSERTS_BP_Action_FireSeed_C_TickAction;
 
 // Function BP_Action_FireSeed.BP_Action_FireSeed_C.OnSpawnEffect
 // 0x00D8 (0x00D8 - 0x0000)
@@ -52,14 +51,15 @@ public:
 };
 DUMPER7_ASSERTS_BP_Action_FireSeed_C_OnSpawnEffect;
 
-// Function BP_Action_FireSeed.BP_Action_FireSeed_C.TickAction
-// 0x0004 (0x0004 - 0x0000)
-struct BP_Action_FireSeed_C_TickAction final
+// Function BP_Action_FireSeed.BP_Action_FireSeed_C.ExecuteUbergraph_BP_Action_FireSeed
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Action_FireSeed_C_ExecuteUbergraph_BP_Action_FireSeed final
 {
 public:
-	float                                         DeltaTime;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DeltaTime;                            // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_Action_FireSeed_C_TickAction;
+DUMPER7_ASSERTS_BP_Action_FireSeed_C_ExecuteUbergraph_BP_Action_FireSeed;
 
 }
 

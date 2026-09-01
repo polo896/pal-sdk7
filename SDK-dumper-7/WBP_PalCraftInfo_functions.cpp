@@ -17,220 +17,45 @@
 namespace SDK
 {
 
-// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.AnmEvent_ForceSimple
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalCraftInfo_C::AnmEvent_ForceSimple()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalCraftInfo_C", "AnmEvent_ForceSimple");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.AnmEvent_NoRecipe
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalCraftInfo_C::AnmEvent_NoRecipe()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalCraftInfo_C", "AnmEvent_NoRecipe");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.AnmEvent_ToDetail
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalCraftInfo_C::AnmEvent_ToDetail()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalCraftInfo_C", "AnmEvent_ToDetail");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.AnmEvent_ToSimpleDetail
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalCraftInfo_C::AnmEvent_ToSimpleDetail()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalCraftInfo_C", "AnmEvent_ToSimpleDetail");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PalCraftInfo_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalCraftInfo_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.ExecuteUbergraph_WBP_PalCraftInfo
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.UpdateRequireInfo
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalWorkBase*                     Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData>&DisplayData                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_PalCraftInfo_C::ExecuteUbergraph_WBP_PalCraftInfo(int32 EntryPoint)
+void UWBP_PalCraftInfo_C::UpdateRequireInfo(class UPalWorkBase* Work, TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData>& DisplayData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalCraftInfo_C", "ExecuteUbergraph_WBP_PalCraftInfo");
+		Func = Class->GetFunction("WBP_PalCraftInfo_C", "UpdateRequireInfo");
 
-	Params::WBP_PalCraftInfo_C_ExecuteUbergraph_WBP_PalCraftInfo Parms{};
+	Params::WBP_PalCraftInfo_C_UpdateRequireInfo Parms{};
 
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.IsCharacterAssignedFixedToTargetWork
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UPalCharacterParameterComponent*  TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// const struct FGuid&                     WorkId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-bool UWBP_PalCraftInfo_C::IsCharacterAssignedFixedToTargetWork(class UPalCharacterParameterComponent* TargetCharacter, const struct FGuid& WorkId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalCraftInfo_C", "IsCharacterAssignedFixedToTargetWork");
-
-	Params::WBP_PalCraftInfo_C_IsCharacterAssignedFixedToTargetWork Parms{};
-
-	Parms.TargetCharacter = TargetCharacter;
-	Parms.WorkId = std::move(WorkId);
+	Parms.Work = Work;
+	Parms.DisplayData = std::move(DisplayData);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	return Parms.ReturnValue;
+	DisplayData = std::move(Parms.DisplayData);
 }
 
 
-// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PalCraftInfo_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalCraftInfo_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.Set Invalid Recipe Detail
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalCraftInfo_C::Set_Invalid_Recipe_Detail()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalCraftInfo_C", "Set Invalid Recipe Detail");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.SetIcon
+// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.SetWorkProgressRate
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             ItemId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Rate                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalCraftInfo_C::SetIcon(class FName ItemId)
+void UWBP_PalCraftInfo_C::SetWorkProgressRate(double Rate)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalCraftInfo_C", "SetIcon");
+		Func = Class->GetFunction("WBP_PalCraftInfo_C", "SetWorkProgressRate");
 
-	Params::WBP_PalCraftInfo_C_SetIcon Parms{};
+	Params::WBP_PalCraftInfo_C_SetWorkProgressRate Parms{};
 
-	Parms.ItemId = ItemId;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.SetInfinityProductMode
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalCraftInfo_C::SetInfinityProductMode()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalCraftInfo_C", "SetInfinityProductMode");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.SetProductItemID
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ItemId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalCraftInfo_C::SetProductItemID(class FName ItemId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalCraftInfo_C", "SetProductItemID");
-
-	Params::WBP_PalCraftInfo_C_SetProductItemID Parms{};
-
-	Parms.ItemId = ItemId;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.SetProductNum
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   nowProductNum                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   maxProductNum                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalCraftInfo_C::SetProductNum(int32 nowProductNum, int32 maxProductNum)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalCraftInfo_C", "SetProductNum");
-
-	Params::WBP_PalCraftInfo_C_SetProductNum Parms{};
-
-	Parms.nowProductNum = nowProductNum;
-	Parms.maxProductNum = maxProductNum;
+	Parms.Rate = Rate;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -260,47 +85,222 @@ void UWBP_PalCraftInfo_C::SetWorkerPalSlots(TArray<class UPalIndividualCharacter
 }
 
 
-// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.SetWorkProgressRate
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.SetProductNum
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  Rate                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   nowProductNum                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   maxProductNum                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalCraftInfo_C::SetWorkProgressRate(double Rate)
+void UWBP_PalCraftInfo_C::SetProductNum(int32 nowProductNum, int32 maxProductNum)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalCraftInfo_C", "SetWorkProgressRate");
+		Func = Class->GetFunction("WBP_PalCraftInfo_C", "SetProductNum");
 
-	Params::WBP_PalCraftInfo_C_SetWorkProgressRate Parms{};
+	Params::WBP_PalCraftInfo_C_SetProductNum Parms{};
 
-	Parms.Rate = Rate;
+	Parms.nowProductNum = nowProductNum;
+	Parms.maxProductNum = maxProductNum;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.UpdateRequireInfo
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.SetProductItemID
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPalWorkBase*                     Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData>&DisplayData                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class FName                             ItemId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalCraftInfo_C::UpdateRequireInfo(class UPalWorkBase* Work, TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData>& DisplayData)
+void UWBP_PalCraftInfo_C::SetProductItemID(class FName ItemId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalCraftInfo_C", "UpdateRequireInfo");
+		Func = Class->GetFunction("WBP_PalCraftInfo_C", "SetProductItemID");
 
-	Params::WBP_PalCraftInfo_C_UpdateRequireInfo Parms{};
+	Params::WBP_PalCraftInfo_C_SetProductItemID Parms{};
 
-	Parms.Work = Work;
-	Parms.DisplayData = std::move(DisplayData);
+	Parms.ItemId = ItemId;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.SetInfinityProductMode
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalCraftInfo_C::SetInfinityProductMode()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCraftInfo_C", "SetInfinityProductMode");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.SetIcon
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ItemId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalCraftInfo_C::SetIcon(class FName ItemId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCraftInfo_C", "SetIcon");
+
+	Params::WBP_PalCraftInfo_C_SetIcon Parms{};
+
+	Parms.ItemId = ItemId;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.Set Invalid Recipe Detail
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalCraftInfo_C::Set_Invalid_Recipe_Detail()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCraftInfo_C", "Set Invalid Recipe Detail");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_PalCraftInfo_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCraftInfo_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.IsCharacterAssignedFixedToTargetWork
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UPalCharacterParameterComponent*  TargetCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     WorkId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UWBP_PalCraftInfo_C::IsCharacterAssignedFixedToTargetWork(class UPalCharacterParameterComponent* TargetCharacter, const struct FGuid& WorkId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCraftInfo_C", "IsCharacterAssignedFixedToTargetWork");
+
+	Params::WBP_PalCraftInfo_C_IsCharacterAssignedFixedToTargetWork Parms{};
+
+	Parms.TargetCharacter = TargetCharacter;
+	Parms.WorkId = std::move(WorkId);
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	DisplayData = std::move(Parms.DisplayData);
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.ExecuteUbergraph_WBP_PalCraftInfo
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalCraftInfo_C::ExecuteUbergraph_WBP_PalCraftInfo(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCraftInfo_C", "ExecuteUbergraph_WBP_PalCraftInfo");
+
+	Params::WBP_PalCraftInfo_C_ExecuteUbergraph_WBP_PalCraftInfo Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_PalCraftInfo_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCraftInfo_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.AnmEvent_ToSimpleDetail
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalCraftInfo_C::AnmEvent_ToSimpleDetail()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCraftInfo_C", "AnmEvent_ToSimpleDetail");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.AnmEvent_ToDetail
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalCraftInfo_C::AnmEvent_ToDetail()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCraftInfo_C", "AnmEvent_ToDetail");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.AnmEvent_NoRecipe
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalCraftInfo_C::AnmEvent_NoRecipe()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCraftInfo_C", "AnmEvent_NoRecipe");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalCraftInfo.WBP_PalCraftInfo_C.AnmEvent_ForceSimple
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalCraftInfo_C::AnmEvent_ForceSimple()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalCraftInfo_C", "AnmEvent_ForceSimple");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

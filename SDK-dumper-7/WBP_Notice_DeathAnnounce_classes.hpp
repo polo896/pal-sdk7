@@ -43,17 +43,17 @@ public:
 	bool                                          NewVar;                                            // 0x0310(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_End_ByTimer();
-	void AnmEvent_In_WithEndTimer();
-	void Construct();
-	void Display(bool* bSuccess);
-	void ExecuteUbergraph_WBP_Notice_DeathAnnounce(int32 EntryPoint);
-	void OnAddedDeathLog(const struct FPalKillLogDisplayData& DeathLogDisplayData);
-	void OnEndCloseAnim();
-	void OnInitialized();
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void カスタムイベント(const struct FPalKillLogDisplayData& DeathLogDisplayData);
 	void カスタムイベント_0(const struct FPalKillLogDisplayData& DeathLogDisplayData);
+	void カスタムイベント(const struct FPalKillLogDisplayData& DeathLogDisplayData);
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void OnInitialized();
+	void OnEndCloseAnim();
+	void OnAddedDeathLog(const struct FPalKillLogDisplayData& DeathLogDisplayData);
+	void ExecuteUbergraph_WBP_Notice_DeathAnnounce(int32 EntryPoint);
+	void Display(bool* bSuccess);
+	void Construct();
+	void AnmEvent_In_WithEndTimer();
+	void AnmEvent_End_ByTimer();
 
 public:
 	static class UClass* StaticClass()

@@ -16,6 +16,42 @@
 namespace SDK::Params
 {
 
+// Function WBP_BuildProgress.WBP_BuildProgress_C.ShowProgress
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_BuildProgress_C_ShowProgress final
+{
+public:
+	EPalHUDDisplayType                            DisplayType;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BuildProgress_C_ShowProgress;
+
+// Function WBP_BuildProgress.WBP_BuildProgress_C.SetProgress
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_BuildProgress_C_SetProgress final
+{
+public:
+	class UPalWorkProgress*                       Work;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BuildProgress_C_SetProgress;
+
+// Function WBP_BuildProgress.WBP_BuildProgress_C.OnUpdatedAssignCharacter
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_BuildProgress_C_OnUpdatedAssignCharacter final
+{
+public:
+	class UPalWorkBase*                           TargetWork;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BuildProgress_C_OnUpdatedAssignCharacter;
+
+// Function WBP_BuildProgress.WBP_BuildProgress_C.OnRequestClose
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_BuildProgress_C_OnRequestClose final
+{
+public:
+	class UPalBuildProcess*                       Process;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BuildProgress_C_OnRequestClose;
+
 // Function WBP_BuildProgress.WBP_BuildProgress_C.ExecuteUbergraph_WBP_BuildProgress
 // 0x00E8 (0x00E8 - 0x0000)
 struct WBP_BuildProgress_C_ExecuteUbergraph_WBP_BuildProgress final
@@ -65,42 +101,6 @@ public:
 	double                                        CallFunc_Set_Work_Amount_workAmount_ImplicitCast;  // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_BuildProgress_C_ExecuteUbergraph_WBP_BuildProgress;
-
-// Function WBP_BuildProgress.WBP_BuildProgress_C.OnRequestClose
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_BuildProgress_C_OnRequestClose final
-{
-public:
-	class UPalBuildProcess*                       Process;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BuildProgress_C_OnRequestClose;
-
-// Function WBP_BuildProgress.WBP_BuildProgress_C.OnUpdatedAssignCharacter
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_BuildProgress_C_OnUpdatedAssignCharacter final
-{
-public:
-	class UPalWorkBase*                           TargetWork;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BuildProgress_C_OnUpdatedAssignCharacter;
-
-// Function WBP_BuildProgress.WBP_BuildProgress_C.SetProgress
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_BuildProgress_C_SetProgress final
-{
-public:
-	class UPalWorkProgress*                       Work;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BuildProgress_C_SetProgress;
-
-// Function WBP_BuildProgress.WBP_BuildProgress_C.ShowProgress
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_BuildProgress_C_ShowProgress final
-{
-public:
-	EPalHUDDisplayType                            DisplayType;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BuildProgress_C_ShowProgress;
 
 }
 

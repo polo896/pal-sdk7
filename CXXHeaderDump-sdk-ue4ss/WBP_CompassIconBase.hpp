@@ -14,7 +14,7 @@ class UWBP_CompassIconBase_C : public UPalUICompassIconBase
     void GetLocation(class UPalLocationBase*& Location);
     void PostSetup();
     void UpdateDistance();
-    void SetupTexture(TSoftObjectPtr<UTexture2D> SoftTexture);
+    void SetupTexture(TSoftObjectPtr<class UTexture2D> SoftTexture);
     void SetDistanceText(double Length);
     void UpdateVisibility(bool& InDistance);
     void SetLocationId(FGuid LocationId);

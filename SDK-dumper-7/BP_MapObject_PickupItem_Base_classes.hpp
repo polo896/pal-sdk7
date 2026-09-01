@@ -27,8 +27,8 @@ public:
 	class USphereComponent*                       Sphere;                                            // 0x0428(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_MapObject_PickupItem_Base(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_MapObject_PickupItem_Base(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

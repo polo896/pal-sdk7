@@ -46,38 +46,38 @@ public:
 	bool                                          IsEquipFishingRod;                                 // 0x04C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void CheckRodBroken(bool* IsBroken);
-	void EndFishing(bool IsSuccess);
-	void EndRequest(bool IsSuccess);
-	void EquipFishingRod();
-	void ExecuteUbergraph_WBP_FishingMain(int32 EntryPoint);
-	void GetHitIconLocation(struct FVector* Location);
-	void OnChangeBait(int32 SelectIndex);
-	void OnChangeTargetSpot(EPalFishingSpotDifficultyType DifficultyType);
-	void OnChangeWeapon(class APalWeaponBase* Weapon);
-	void OnContinueFailed();
-	void OnEndAim();
-	void OnEndFishing();
-	void OnFailedFight();
-	void OnFailedFishing();
-	void OnFirstFishing();
-	void OnInitialized();
-	void OnPickFish(const struct FVector& FloatLocation);
-	void OnStartAim(const TArray<struct FPalStaticItemIdAndNum>& BaitItemInfoList, int32 SelectedIndex);
-	void OnStartCatchBattle();
-	void OnStartFishing();
-	void OnSuccessFight();
-	void OnSuccessFishing();
-	void PlayFeedBack();
-	void SetBarSize(double BarSize);
-	void SetFishingProgress_Rate(double Rate);
-	void SetupAfterCreatePlayer();
-	void StopFeedback(bool ForceStop);
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void UnEquipFishingRod();
-	void UpdatePosition(double FishPosX, double PlayerInput);
-	void UpdateProgress();
 	void UpdateVisible();
+	void UpdateProgress();
+	void UpdatePosition(double FishPosX, double PlayerInput);
+	void UnEquipFishingRod();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void StopFeedback(bool ForceStop);
+	void SetupAfterCreatePlayer();
+	void SetFishingProgress_Rate(double Rate);
+	void SetBarSize(double BarSize);
+	void PlayFeedBack();
+	void OnSuccessFishing();
+	void OnSuccessFight();
+	void OnStartFishing();
+	void OnStartCatchBattle();
+	void OnStartAim(const TArray<struct FPalStaticItemIdAndNum>& BaitItemInfoList, int32 SelectedIndex);
+	void OnPickFish(const struct FVector& FloatLocation);
+	void OnInitialized();
+	void OnFirstFishing();
+	void OnFailedFishing();
+	void OnFailedFight();
+	void OnEndFishing();
+	void OnEndAim();
+	void OnContinueFailed();
+	void OnChangeWeapon(class APalWeaponBase* Weapon);
+	void OnChangeTargetSpot(EPalFishingSpotDifficultyType DifficultyType);
+	void OnChangeBait(int32 SelectIndex);
+	void GetHitIconLocation(struct FVector* Location);
+	void ExecuteUbergraph_WBP_FishingMain(int32 EntryPoint);
+	void EquipFishingRod();
+	void EndRequest(bool IsSuccess);
+	void EndFishing(bool IsSuccess);
+	void CheckRodBroken(bool* IsBroken);
 
 public:
 	static class UClass* StaticClass()

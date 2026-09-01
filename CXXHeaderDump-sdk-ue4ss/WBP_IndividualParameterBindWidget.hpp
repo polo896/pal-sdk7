@@ -4,7 +4,7 @@
 class UWBP_IndividualParameterBindWidget_C : public UPalUserWidget
 {
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0450 (size: 0x8)
-    TSoftObjectPtr<UPalIndividualCharacterHandle> bindedHandle;                       // 0x0458 (size: 0x30)
+    TSoftObjectPtr<class UPalIndividualCharacterHandle> bindedHandle;                 // 0x0458 (size: 0x30)
     bool IsBindHP;                                                                    // 0x0488 (size: 0x1)
     bool IsBindSP;                                                                    // 0x0489 (size: 0x1)
     bool IsBindHunger;                                                                // 0x048A (size: 0x1)

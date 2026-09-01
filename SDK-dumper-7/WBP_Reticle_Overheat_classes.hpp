@@ -33,12 +33,12 @@ public:
 	class UMaterialInstanceDynamic*               GaugeMaterialR;                                    // 0x04E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Destruct();
-	void ExecuteUbergraph_WBP_Reticle_Overheat(int32 EntryPoint);
-	void OnChangedHeatValue(bool bOverHeated, double HeatValue);
-	void OnInitialized();
-	void OnReticleActivted(const struct FPalItemId& WeaponItemId);
 	void OnReticleDeactivated();
+	void OnReticleActivted(const struct FPalItemId& WeaponItemId);
+	void OnInitialized();
+	void OnChangedHeatValue(bool bOverHeated, double HeatValue);
+	void ExecuteUbergraph_WBP_Reticle_Overheat(int32 EntryPoint);
+	void Destruct();
 
 public:
 	static class UClass* StaticClass()

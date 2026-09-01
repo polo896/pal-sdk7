@@ -14,6 +14,65 @@
 namespace SDK::Params
 {
 
+// Function WBP_BattleEntry_MemberList.WBP_BattleEntry_MemberList_C.UpdatePlayerName
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_BattleEntry_MemberList_C_UpdatePlayerName final
+{
+public:
+	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalIndividualCharacterHandle*          K2Node_DynamicCast_AsPal_Individual_Character_Handle; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalIndividualCharacterParameter*       CallFunc_TryGetIndividualParameter_ReturnValue;    // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetNickNameWithOnlineID_OutName;          // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0038(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_BattleEntry_MemberList_C_UpdatePlayerName;
+
+// Function WBP_BattleEntry_MemberList.WBP_BattleEntry_MemberList_C.SetValidation
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_BattleEntry_MemberList_C_SetValidation final
+{
+public:
+	bool                                          IsValid;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BattleEntry_MemberList_C_SetValidation;
+
+// Function WBP_BattleEntry_MemberList.WBP_BattleEntry_MemberList_C.SetPlayerInfo
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_BattleEntry_MemberList_C_SetPlayerInfo final
+{
+public:
+	class FString                                 PlayerName;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	int32                                         PlayLv;                                            // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsHost;                                            // 0x0014(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalIndividualCharacterHandle*          targetHandle;                                      // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BattleEntry_MemberList_C_SetPlayerInfo;
+
+// Function WBP_BattleEntry_MemberList.WBP_BattleEntry_MemberList_C.OnUpdateNickName_Binded
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_BattleEntry_MemberList_C_OnUpdateNickName_Binded final
+{
+public:
+	class FString                                 NewNickName;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BattleEntry_MemberList_C_OnUpdateNickName_Binded;
+
+// Function WBP_BattleEntry_MemberList.WBP_BattleEntry_MemberList_C.OnUpdateLevel_Binded
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_BattleEntry_MemberList_C_OnUpdateLevel_Binded final
+{
+public:
+	int32                                         NewLevel;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0018)()
+};
+DUMPER7_ASSERTS_WBP_BattleEntry_MemberList_C_OnUpdateLevel_Binded;
+
 // Function WBP_BattleEntry_MemberList.WBP_BattleEntry_MemberList_C.ExecuteUbergraph_WBP_BattleEntry_MemberList
 // 0x0068 (0x0068 - 0x0000)
 struct WBP_BattleEntry_MemberList_C_ExecuteUbergraph_WBP_BattleEntry_MemberList final
@@ -33,65 +92,6 @@ public:
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0050(0x0018)()
 };
 DUMPER7_ASSERTS_WBP_BattleEntry_MemberList_C_ExecuteUbergraph_WBP_BattleEntry_MemberList;
-
-// Function WBP_BattleEntry_MemberList.WBP_BattleEntry_MemberList_C.OnUpdateLevel_Binded
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_BattleEntry_MemberList_C_OnUpdateLevel_Binded final
-{
-public:
-	int32                                         NewLevel;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_BattleEntry_MemberList_C_OnUpdateLevel_Binded;
-
-// Function WBP_BattleEntry_MemberList.WBP_BattleEntry_MemberList_C.OnUpdateNickName_Binded
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_BattleEntry_MemberList_C_OnUpdateNickName_Binded final
-{
-public:
-	class FString                                 NewNickName;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BattleEntry_MemberList_C_OnUpdateNickName_Binded;
-
-// Function WBP_BattleEntry_MemberList.WBP_BattleEntry_MemberList_C.SetPlayerInfo
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_BattleEntry_MemberList_C_SetPlayerInfo final
-{
-public:
-	class FString                                 PlayerName;                                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	int32                                         PlayLv;                                            // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsHost;                                            // 0x0014(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalIndividualCharacterHandle*          targetHandle;                                      // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BattleEntry_MemberList_C_SetPlayerInfo;
-
-// Function WBP_BattleEntry_MemberList.WBP_BattleEntry_MemberList_C.SetValidation
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_BattleEntry_MemberList_C_SetValidation final
-{
-public:
-	bool                                          IsValid;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BattleEntry_MemberList_C_SetValidation;
-
-// Function WBP_BattleEntry_MemberList.WBP_BattleEntry_MemberList_C.UpdatePlayerName
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_BattleEntry_MemberList_C_UpdatePlayerName final
-{
-public:
-	class UObject*                                CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue; // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalIndividualCharacterHandle*          K2Node_DynamicCast_AsPal_Individual_Character_Handle; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalIndividualCharacterParameter*       CallFunc_TryGetIndividualParameter_ReturnValue;    // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetNickNameWithOnlineID_OutName;          // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0038(0x0018)()
-};
-DUMPER7_ASSERTS_WBP_BattleEntry_MemberList_C_UpdatePlayerName;
 
 }
 

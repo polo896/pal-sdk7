@@ -13,7 +13,7 @@ class ABP_PalPlayerController_C : public APalPlayerController
     TArray<FName> DebugHoldOtomoName;                                                 // 0x1088 (size: 0x10)
     FTimerHandle RegeneTimerHandle;                                                   // 0x1098 (size: 0x8)
     class UPalIndividualCharacterHandle* SupportPalHandle;                            // 0x10A0 (size: 0x8)
-    TArray<TSoftObjectPtr<UNiagaraSystem>> AsyncLoadAsset;                            // 0x10A8 (size: 0x10)
+    TArray<TSoftObjectPtr<class UNiagaraSystem>> AsyncLoadAsset;                      // 0x10A8 (size: 0x10)
     FBP_PalPlayerController_COnIncrementedOtomo OnIncrementedOtomo;                   // 0x10B8 (size: 0x10)
     void OnIncrementedOtomo();
     FBP_PalPlayerController_COnDecrementedOtomo OnDecrementedOtomo;                   // 0x10C8 (size: 0x10)
@@ -102,7 +102,7 @@ class ABP_PalPlayerController_C : public APalPlayerController
     void OnSpawnAndRideSupportPal();
     void OnGetOffAndDespawnSupportPal();
     void InactiveOtomo();
-    void LoadAndSpawnEffect(TSoftObjectPtr<UNiagaraSystem> EffectPath, FTransform SpawnTransform);
+    void LoadAndSpawnEffect(TSoftObjectPtr<class UNiagaraSystem> EffectPath, FTransform SpawnTransform);
     void SetOtomoSlot(int32 SlotId);
     void ActivateCurrentOtomoNearThePlayer();
     void SetupDamageReaction(class APawn* Pawn);

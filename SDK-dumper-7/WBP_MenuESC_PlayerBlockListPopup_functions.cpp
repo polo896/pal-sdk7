@@ -17,77 +17,15 @@
 namespace SDK
 {
 
-// Function WBP_MenuESC_PlayerBlockListPopup.WBP_MenuESC_PlayerBlockListPopup_C.BndEvt__WBP_MenuESC_PlayerBlockListPopup_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_MenuESC_PlayerBlockListPopup.WBP_MenuESC_PlayerBlockListPopup_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_MenuESC_PlayerBlockListPopup_C::BndEvt__WBP_MenuESC_PlayerBlockListPopup_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
+void UWBP_MenuESC_PlayerBlockListPopup_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MenuESC_PlayerBlockListPopup_C", "BndEvt__WBP_MenuESC_PlayerBlockListPopup_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MenuESC_PlayerBlockListPopup.WBP_MenuESC_PlayerBlockListPopup_C.CreateBlockList
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_MenuESC_PlayerBlockListPopup_C::CreateBlockList()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MenuESC_PlayerBlockListPopup_C", "CreateBlockList");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MenuESC_PlayerBlockListPopup.WBP_MenuESC_PlayerBlockListPopup_C.ExecuteUbergraph_WBP_MenuESC_PlayerBlockListPopup
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MenuESC_PlayerBlockListPopup_C::ExecuteUbergraph_WBP_MenuESC_PlayerBlockListPopup(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MenuESC_PlayerBlockListPopup_C", "ExecuteUbergraph_WBP_MenuESC_PlayerBlockListPopup");
-
-	Params::WBP_MenuESC_PlayerBlockListPopup_C_ExecuteUbergraph_WBP_MenuESC_PlayerBlockListPopup Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MenuESC_PlayerBlockListPopup.WBP_MenuESC_PlayerBlockListPopup_C.OnClose
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_MenuESC_PlayerBlockListPopup_C::OnClose()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MenuESC_PlayerBlockListPopup_C", "OnClose");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MenuESC_PlayerBlockListPopup.WBP_MenuESC_PlayerBlockListPopup_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_MenuESC_PlayerBlockListPopup_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MenuESC_PlayerBlockListPopup_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_MenuESC_PlayerBlockListPopup_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -113,15 +51,77 @@ void UWBP_MenuESC_PlayerBlockListPopup_C::OnSessionMemberUnBlockList(const class
 }
 
 
-// Function WBP_MenuESC_PlayerBlockListPopup.WBP_MenuESC_PlayerBlockListPopup_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function WBP_MenuESC_PlayerBlockListPopup.WBP_MenuESC_PlayerBlockListPopup_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_MenuESC_PlayerBlockListPopup_C::OnSetup()
+void UWBP_MenuESC_PlayerBlockListPopup_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MenuESC_PlayerBlockListPopup_C", "OnSetup");
+		Func = Class->GetFunction("WBP_MenuESC_PlayerBlockListPopup_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MenuESC_PlayerBlockListPopup.WBP_MenuESC_PlayerBlockListPopup_C.OnClose
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_MenuESC_PlayerBlockListPopup_C::OnClose()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MenuESC_PlayerBlockListPopup_C", "OnClose");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MenuESC_PlayerBlockListPopup.WBP_MenuESC_PlayerBlockListPopup_C.ExecuteUbergraph_WBP_MenuESC_PlayerBlockListPopup
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MenuESC_PlayerBlockListPopup_C::ExecuteUbergraph_WBP_MenuESC_PlayerBlockListPopup(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MenuESC_PlayerBlockListPopup_C", "ExecuteUbergraph_WBP_MenuESC_PlayerBlockListPopup");
+
+	Params::WBP_MenuESC_PlayerBlockListPopup_C_ExecuteUbergraph_WBP_MenuESC_PlayerBlockListPopup Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MenuESC_PlayerBlockListPopup.WBP_MenuESC_PlayerBlockListPopup_C.CreateBlockList
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_MenuESC_PlayerBlockListPopup_C::CreateBlockList()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MenuESC_PlayerBlockListPopup_C", "CreateBlockList");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MenuESC_PlayerBlockListPopup.WBP_MenuESC_PlayerBlockListPopup_C.BndEvt__WBP_MenuESC_PlayerBlockListPopup_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_MenuESC_PlayerBlockListPopup_C::BndEvt__WBP_MenuESC_PlayerBlockListPopup_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MenuESC_PlayerBlockListPopup_C", "BndEvt__WBP_MenuESC_PlayerBlockListPopup_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

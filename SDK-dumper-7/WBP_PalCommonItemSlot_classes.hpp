@@ -32,12 +32,12 @@ public:
 	TMulticastInlineDelegate<void()>              OnAfterUpdateSlot;                                 // 0x0528(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void ExecuteUbergraph_WBP_PalCommonItemSlot(int32 EntryPoint);
-	void OnInitialized();
-	void OnSetEmpty_Binded();
-	void OnSetValidSlot_Binded();
-	void OnUpdateSlot_Binded(class UPalItemSlot* TargetSlot_0);
 	void RegisterItemIconWidget(class UWBP_PalItemIconBase_C** IconWidget);
+	void OnUpdateSlot_Binded(class UPalItemSlot* TargetSlot_0);
+	void OnSetValidSlot_Binded();
+	void OnSetEmpty_Binded();
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_PalCommonItemSlot(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

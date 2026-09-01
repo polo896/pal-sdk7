@@ -30,14 +30,14 @@ public:
 	bool                                          IsCallDestroyed_Local;                             // 0x0331(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 
 public:
-	void ChangeDefaultVisual_BP();
-	void ExecuteUbergraph_BP_OilRigCannonBase(int32 EntryPoint);
-	void Interact_Completed(class AActor* Other, EPalInteractiveObjectIndicatorType IndicatorType);
-	void OnDestroyedWeapon_ForBP();
-	void ReceiveBeginPlay();
-	void ReceiveTick(float DeltaSeconds);
-	void Start_Animation(class AActor* Other, EPalInteractiveObjectIndicatorType IndicatorType);
 	void Stop_Animation(class AActor* Other, EPalInteractiveObjectIndicatorType IndicatorType);
+	void Start_Animation(class AActor* Other, EPalInteractiveObjectIndicatorType IndicatorType);
+	void ReceiveTick(float DeltaSeconds);
+	void ReceiveBeginPlay();
+	void OnDestroyedWeapon_ForBP();
+	void Interact_Completed(class AActor* Other, EPalInteractiveObjectIndicatorType IndicatorType);
+	void ExecuteUbergraph_BP_OilRigCannonBase(int32 EntryPoint);
+	void ChangeDefaultVisual_BP();
 
 	EPalInteractiveObjectIndicatorType GetIndicatorType() const;
 

@@ -17,265 +17,133 @@
 namespace SDK
 {
 
-// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_Common_Inventory_K2Node_ComponentBoundEvent_3_OnClickedInventorySortButton__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_IngameMenu_Incubator_Multiple_C::BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_Common_Inventory_K2Node_ComponentBoundEvent_3_OnClickedInventorySortButton__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_Common_Inventory_K2Node_ComponentBoundEvent_3_OnClickedInventorySortButton__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_CommonButton_OpenAll_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_IngameMenu_Incubator_Multiple_C::BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_CommonButton_OpenAll_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_CommonButton_OpenAll_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_CommonButton_SetAll_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_IngameMenu_Incubator_Multiple_C::BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_CommonButton_SetAll_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_CommonButton_SetAll_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_IngameMenu_Incubator_Multiple_C::BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.Check Get All Enable
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalMapObjectHatchingEggModelBase*Model                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_Incubator_Multiple_C::Check_Get_All_Enable(class UPalMapObjectHatchingEggModelBase* Model)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "Check Get All Enable");
-
-	Params::WBP_IngameMenu_Incubator_Multiple_C_Check_Get_All_Enable Parms{};
-
-	Parms.Model = Model;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_IngameMenu_Incubator_Multiple_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.DoCustomNavigation_ToSetAll
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-class UWidget* UWBP_IngameMenu_Incubator_Multiple_C::DoCustomNavigation_ToSetAll(EUINavigation Navigation_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "DoCustomNavigation_ToSetAll");
-
-	Params::WBP_IngameMenu_Incubator_Multiple_C_DoCustomNavigation_ToSetAll Parms{};
-
-	Parms.Navigation_0 = Navigation_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.DoCustomNavigation_ToSlot8
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-class UWidget* UWBP_IngameMenu_Incubator_Multiple_C::DoCustomNavigation_ToSlot8(EUINavigation Navigation_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "DoCustomNavigation_ToSlot8");
-
-	Params::WBP_IngameMenu_Incubator_Multiple_C_DoCustomNavigation_ToSlot8 Parms{};
-
-	Parms.Navigation_0 = Navigation_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.Empty
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_Incubator_Multiple_C::Empty(bool bResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "Empty");
-
-	Params::WBP_IngameMenu_Incubator_Multiple_C_Empty Parms{};
-
-	Parms.bResult = bResult;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.ExecuteUbergraph_WBP_IngameMenu_Incubator_Multiple
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_IngameMenu_Incubator_Multiple_C::ExecuteUbergraph_WBP_IngameMenu_Incubator_Multiple(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "ExecuteUbergraph_WBP_IngameMenu_Incubator_Multiple");
-
-	Params::WBP_IngameMenu_Incubator_Multiple_C_ExecuteUbergraph_WBP_IngameMenu_Incubator_Multiple Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.FocusLeft
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameMenu_Incubator_Multiple_C::FocusLeft()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "FocusLeft");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.FocusRight
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameMenu_Incubator_Multiple_C::FocusRight()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "FocusRight");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.OnEggArrayUpdated
+// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.UpdateSlots
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalItemContainer*                ItemContainer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_Incubator_Multiple_C::OnEggArrayUpdated()
+void UWBP_IngameMenu_Incubator_Multiple_C::UpdateSlots(class UPalItemContainer* ItemContainer)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "OnEggArrayUpdated");
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "UpdateSlots");
+
+	Params::WBP_IngameMenu_Incubator_Multiple_C_UpdateSlots Parms{};
+
+	Parms.ItemContainer = ItemContainer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.Update Power Suffcient
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalMapObjectEnergyModule*        Module                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_Incubator_Multiple_C::Update_Power_Suffcient(class UPalMapObjectEnergyModule* Module)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "Update Power Suffcient");
+
+	Params::WBP_IngameMenu_Incubator_Multiple_C_Update_Power_Suffcient Parms{};
+
+	Parms.Module = Module;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.SetupHatch
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngameMenu_Incubator_Multiple_C::SetupHatch()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "SetupHatch");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.OnHatchFailed
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.RatioToPersentOffsetText
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// double                                  Ratio                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText*                            Persent                                                (Parm, OutParm)
 
-void UWBP_IngameMenu_Incubator_Multiple_C::OnHatchFailed()
+void UWBP_IngameMenu_Incubator_Multiple_C::RatioToPersentOffsetText(double Ratio, class FText* Persent)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "OnHatchFailed");
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "RatioToPersentOffsetText");
+
+	Params::WBP_IngameMenu_Incubator_Multiple_C_RatioToPersentOffsetText Parms{};
+
+	Parms.Ratio = Ratio;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Persent != nullptr)
+		*Persent = std::move(Parms.Persent);
+}
+
+
+// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.OnWorkSynced
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalMapObjectWorkeeModule*        WorkeeModule                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalWorkBase*                     WorkProgress                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_Incubator_Multiple_C::OnWorkSynced(class UPalMapObjectWorkeeModule* WorkeeModule, class UPalWorkBase* WorkProgress)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "OnWorkSynced");
+
+	Params::WBP_IngameMenu_Incubator_Multiple_C_OnWorkSynced Parms{};
+
+	Parms.WorkeeModule = WorkeeModule;
+	Parms.WorkProgress = WorkProgress;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngameMenu_Incubator_Multiple_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_IngameMenu_Incubator_Multiple_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.OnLeftClickEggSlot
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.OnRightClickEggSlot
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UPalItemSlot*                     TargetSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_Incubator_Multiple_C::OnLeftClickEggSlot(class UPalItemSlot* TargetSlot)
+void UWBP_IngameMenu_Incubator_Multiple_C::OnRightClickEggSlot(class UPalItemSlot* TargetSlot)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "OnLeftClickEggSlot");
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "OnRightClickEggSlot");
 
-	Params::WBP_IngameMenu_Incubator_Multiple_C_OnLeftClickEggSlot Parms{};
+	Params::WBP_IngameMenu_Incubator_Multiple_C_OnRightClickEggSlot Parms{};
 
 	Parms.TargetSlot = TargetSlot;
 
@@ -305,19 +173,19 @@ void UWBP_IngameMenu_Incubator_Multiple_C::OnMultiHatchComplete(TArray<struct FP
 }
 
 
-// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.OnRightClickEggSlot
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.OnLeftClickEggSlot
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UPalItemSlot*                     TargetSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_Incubator_Multiple_C::OnRightClickEggSlot(class UPalItemSlot* TargetSlot)
+void UWBP_IngameMenu_Incubator_Multiple_C::OnLeftClickEggSlot(class UPalItemSlot* TargetSlot)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "OnRightClickEggSlot");
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "OnLeftClickEggSlot");
 
-	Params::WBP_IngameMenu_Incubator_Multiple_C_OnRightClickEggSlot Parms{};
+	Params::WBP_IngameMenu_Incubator_Multiple_C_OnLeftClickEggSlot Parms{};
 
 	Parms.TargetSlot = TargetSlot;
 
@@ -325,117 +193,249 @@ void UWBP_IngameMenu_Incubator_Multiple_C::OnRightClickEggSlot(class UPalItemSlo
 }
 
 
-// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_IngameMenu_Incubator_Multiple_C::OnSetup()
+void UWBP_IngameMenu_Incubator_Multiple_C::OnInitialized()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "OnSetup");
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.OnWorkSynced
+// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.OnHatchFailed
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngameMenu_Incubator_Multiple_C::OnHatchFailed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "OnHatchFailed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.OnEggArrayUpdated
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalMapObjectWorkeeModule*        WorkeeModule                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPalWorkBase*                     WorkProgress                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_Incubator_Multiple_C::OnWorkSynced(class UPalMapObjectWorkeeModule* WorkeeModule, class UPalWorkBase* WorkProgress)
+void UWBP_IngameMenu_Incubator_Multiple_C::OnEggArrayUpdated()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "OnWorkSynced");
-
-	Params::WBP_IngameMenu_Incubator_Multiple_C_OnWorkSynced Parms{};
-
-	Parms.WorkeeModule = WorkeeModule;
-	Parms.WorkProgress = WorkProgress;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.RatioToPersentOffsetText
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// double                                  Ratio                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText*                            Persent                                                (Parm, OutParm)
-
-void UWBP_IngameMenu_Incubator_Multiple_C::RatioToPersentOffsetText(double Ratio, class FText* Persent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "RatioToPersentOffsetText");
-
-	Params::WBP_IngameMenu_Incubator_Multiple_C_RatioToPersentOffsetText Parms{};
-
-	Parms.Ratio = Ratio;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Persent != nullptr)
-		*Persent = std::move(Parms.Persent);
-}
-
-
-// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.SetupHatch
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_IngameMenu_Incubator_Multiple_C::SetupHatch()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "SetupHatch");
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "OnEggArrayUpdated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.Update Power Suffcient
+// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.FocusRight
 // (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalMapObjectEnergyModule*        Module                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_Incubator_Multiple_C::Update_Power_Suffcient(class UPalMapObjectEnergyModule* Module)
+void UWBP_IngameMenu_Incubator_Multiple_C::FocusRight()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "Update Power Suffcient");
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "FocusRight");
 
-	Params::WBP_IngameMenu_Incubator_Multiple_C_Update_Power_Suffcient Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Module = Module;
+
+// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.FocusLeft
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_IngameMenu_Incubator_Multiple_C::FocusLeft()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "FocusLeft");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.ExecuteUbergraph_WBP_IngameMenu_Incubator_Multiple
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_Incubator_Multiple_C::ExecuteUbergraph_WBP_IngameMenu_Incubator_Multiple(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "ExecuteUbergraph_WBP_IngameMenu_Incubator_Multiple");
+
+	Params::WBP_IngameMenu_Incubator_Multiple_C_ExecuteUbergraph_WBP_IngameMenu_Incubator_Multiple Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.UpdateSlots
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.Empty
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPalItemContainer*                ItemContainer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_IngameMenu_Incubator_Multiple_C::UpdateSlots(class UPalItemContainer* ItemContainer)
+void UWBP_IngameMenu_Incubator_Multiple_C::Empty(bool bResult)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "UpdateSlots");
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "Empty");
 
-	Params::WBP_IngameMenu_Incubator_Multiple_C_UpdateSlots Parms{};
+	Params::WBP_IngameMenu_Incubator_Multiple_C_Empty Parms{};
 
-	Parms.ItemContainer = ItemContainer;
+	Parms.bResult = bResult;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.DoCustomNavigation_ToSlot8
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_IngameMenu_Incubator_Multiple_C::DoCustomNavigation_ToSlot8(EUINavigation Navigation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "DoCustomNavigation_ToSlot8");
+
+	Params::WBP_IngameMenu_Incubator_Multiple_C_DoCustomNavigation_ToSlot8 Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.DoCustomNavigation_ToSetAll
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UWBP_IngameMenu_Incubator_Multiple_C::DoCustomNavigation_ToSetAll(EUINavigation Navigation_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "DoCustomNavigation_ToSetAll");
+
+	Params::WBP_IngameMenu_Incubator_Multiple_C_DoCustomNavigation_ToSetAll Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_IngameMenu_Incubator_Multiple_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.Check Get All Enable
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalMapObjectHatchingEggModelBase*Model                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_IngameMenu_Incubator_Multiple_C::Check_Get_All_Enable(class UPalMapObjectHatchingEggModelBase* Model)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "Check Get All Enable");
+
+	Params::WBP_IngameMenu_Incubator_Multiple_C_Check_Get_All_Enable Parms{};
+
+	Parms.Model = Model;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_IngameMenu_Incubator_Multiple_C::BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_CommonButton_SetAll_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_IngameMenu_Incubator_Multiple_C::BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_CommonButton_SetAll_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_CommonButton_SetAll_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_CommonButton_OpenAll_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_IngameMenu_Incubator_Multiple_C::BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_CommonButton_OpenAll_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_CommonButton_OpenAll_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_IngameMenu_Incubator_Multiple.WBP_IngameMenu_Incubator_Multiple_C.BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_Common_Inventory_K2Node_ComponentBoundEvent_3_OnClickedInventorySortButton__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_IngameMenu_Incubator_Multiple_C::BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_Common_Inventory_K2Node_ComponentBoundEvent_3_OnClickedInventorySortButton__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_IngameMenu_Incubator_Multiple_C", "BndEvt__WBP_IngameMenu_Incubator_Multiple_WBP_Common_Inventory_K2Node_ComponentBoundEvent_3_OnClickedInventorySortButton__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

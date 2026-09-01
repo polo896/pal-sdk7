@@ -36,21 +36,21 @@ public:
 	double                                        Light_Affect_Emissive_Max_0;                       // 0x0350(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BeginOverlapPalLit(class UMaterialInstanceDynamic* Material, bool materialSrc);
-	void EndOverlapPalLit(class UMaterialInstanceDynamic* Material);
-	void ExecuteUbergraph_BP_PalCharacterMaterialVolume(int32 EntryPoint);
-	void Force_Init();
-	void Force_Off();
-	void Force_On();
-	void Force_Update();
-	void ForceInit();
-	void ForceOff();
-	void ForceOn();
-	void ForceUpdate();
-	void ReceiveBeginPlay();
-	void ReceiveTick(float DeltaSeconds);
-	void SetParameters(class UMaterialInstanceDynamic* Material, double Light_Affect_Emissive_Intensity_0, double Light_Affect_Emissive_Min_0, double Light_Affect_Emissive_Max_0, double Base_Emissive_Intensity_0, double Base_Color_Intensity_0);
 	void UpdateParameters();
+	void SetParameters(class UMaterialInstanceDynamic* Material, double Light_Affect_Emissive_Intensity_0, double Light_Affect_Emissive_Min_0, double Light_Affect_Emissive_Max_0, double Base_Emissive_Intensity_0, double Base_Color_Intensity_0);
+	void ReceiveTick(float DeltaSeconds);
+	void ReceiveBeginPlay();
+	void ForceUpdate();
+	void ForceOn();
+	void ForceOff();
+	void ForceInit();
+	void Force_Update();
+	void Force_On();
+	void Force_Off();
+	void Force_Init();
+	void ExecuteUbergraph_BP_PalCharacterMaterialVolume(int32 EntryPoint);
+	void EndOverlapPalLit(class UMaterialInstanceDynamic* Material);
+	void BeginOverlapPalLit(class UMaterialInstanceDynamic* Material, bool materialSrc);
 
 public:
 	static class UClass* StaticClass()

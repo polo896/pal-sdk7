@@ -16,6 +16,60 @@
 namespace SDK::Params
 {
 
+// Function BP_PalBossTower.BP_PalBossTower_C.GetInteractableTrigger
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PalBossTower_C_GetInteractableTrigger final
+{
+public:
+	class UShapeComponent*                        InteractableTrigger;                               // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBossTower_C_GetInteractableTrigger;
+
+// Function BP_PalBossTower.BP_PalBossTower_C.GetInteractableInterface
+// 0x0010 (0x0010 - 0x0000)
+struct BP_PalBossTower_C_GetInteractableInterface final
+{
+public:
+	TScriptInterface<class IPalInteractiveObjectComponentInterface> Interface;                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBossTower_C_GetInteractableInterface;
+
+// Function BP_PalBossTower.BP_PalBossTower_C.GetEntryWaitInfoTrigger
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PalBossTower_C_GetEntryWaitInfoTrigger final
+{
+public:
+	class UShapeComponent*                        EntryWaitInfoTrigger_0;                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBossTower_C_GetEntryWaitInfoTrigger;
+
+// Function BP_PalBossTower.BP_PalBossTower_C.GetEntryCancelTrigger
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PalBossTower_C_GetEntryCancelTrigger final
+{
+public:
+	class UShapeComponent*                        EntryCancelTrigger;                                // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBossTower_C_GetEntryCancelTrigger;
+
+// Function BP_PalBossTower.BP_PalBossTower_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_PalBossTower_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBossTower_C_ReceiveTick;
+
+// Function BP_PalBossTower.BP_PalBossTower_C.OnChangeLocalBossDefeatStateBP
+// 0x0001 (0x0001 - 0x0000)
+struct BP_PalBossTower_C_OnChangeLocalBossDefeatStateBP final
+{
+public:
+	bool                                          bDefeated;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PalBossTower_C_OnChangeLocalBossDefeatStateBP;
+
 // Function BP_PalBossTower.BP_PalBossTower_C.ExecuteUbergraph_BP_PalBossTower
 // 0x0218 (0x0218 - 0x0000)
 struct BP_PalBossTower_C_ExecuteUbergraph_BP_PalBossTower final
@@ -41,60 +95,6 @@ public:
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0214(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_PalBossTower_C_ExecuteUbergraph_BP_PalBossTower;
-
-// Function BP_PalBossTower.BP_PalBossTower_C.OnChangeLocalBossDefeatStateBP
-// 0x0001 (0x0001 - 0x0000)
-struct BP_PalBossTower_C_OnChangeLocalBossDefeatStateBP final
-{
-public:
-	bool                                          bDefeated;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBossTower_C_OnChangeLocalBossDefeatStateBP;
-
-// Function BP_PalBossTower.BP_PalBossTower_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_PalBossTower_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBossTower_C_ReceiveTick;
-
-// Function BP_PalBossTower.BP_PalBossTower_C.GetEntryCancelTrigger
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PalBossTower_C_GetEntryCancelTrigger final
-{
-public:
-	class UShapeComponent*                        EntryCancelTrigger;                                // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBossTower_C_GetEntryCancelTrigger;
-
-// Function BP_PalBossTower.BP_PalBossTower_C.GetEntryWaitInfoTrigger
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PalBossTower_C_GetEntryWaitInfoTrigger final
-{
-public:
-	class UShapeComponent*                        EntryWaitInfoTrigger_0;                            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBossTower_C_GetEntryWaitInfoTrigger;
-
-// Function BP_PalBossTower.BP_PalBossTower_C.GetInteractableInterface
-// 0x0010 (0x0010 - 0x0000)
-struct BP_PalBossTower_C_GetInteractableInterface final
-{
-public:
-	TScriptInterface<class IPalInteractiveObjectComponentInterface> Interface;                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBossTower_C_GetInteractableInterface;
-
-// Function BP_PalBossTower.BP_PalBossTower_C.GetInteractableTrigger
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PalBossTower_C_GetInteractableTrigger final
-{
-public:
-	class UShapeComponent*                        InteractableTrigger;                               // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_PalBossTower_C_GetInteractableTrigger;
 
 }
 

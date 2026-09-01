@@ -27,6 +27,63 @@ public:
 };
 DUMPER7_ASSERTS_WBP_TutorialMessage_Temp_C_CreateGuideText;
 
+// Function WBP_TutorialMessage_Temp.WBP_TutorialMessage_Temp_C.Setup
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_TutorialMessage_Temp_C_Setup final
+{
+public:
+	TDelegate<void(ECommonInputType bNewInputType)> K2Node_CreateDelegate_OutputDelegate;            // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(const struct FDataTableRowHandle& TutorialMsg)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UCommonInputSubsystem*                  CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalTutorialManager*                    CallFunc_GetTutorialManager_ReturnValue;           // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_TutorialMessage_Temp_C_Setup;
+
+// Function WBP_TutorialMessage_Temp.WBP_TutorialMessage_Temp_C.QueueTutorial
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_TutorialMessage_Temp_C_QueueTutorial final
+{
+public:
+	struct FDataTableRowHandle                    TutorialMsgID;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_TutorialMessage_Temp_C_QueueTutorial;
+
+// Function WBP_TutorialMessage_Temp.WBP_TutorialMessage_Temp_C.On Input Method Changed
+// 0x0050 (0x0050 - 0x0000)
+struct WBP_TutorialMessage_Temp_C_On_Input_Method_Changed final
+{
+public:
+	ECommonInputType                              InputType;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FDataTableRowHandle                    CallFunc_GetCurrentMsgId_MsgId;                    // 0x0008(0x0010)(NoDestructor)
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0018(0x0018)()
+	class FText                                   CallFunc_CreateGuideText_OutText;                  // 0x0030(0x0018)()
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_TutorialMessage_Temp_C_On_Input_Method_Changed;
+
+// Function WBP_TutorialMessage_Temp.WBP_TutorialMessage_Temp_C.GetCurrentMsgId
+// 0x0090 (0x0090 - 0x0000)
+struct WBP_TutorialMessage_Temp_C_GetCurrentMsgId final
+{
+public:
+	struct FDataTableRowHandle                    MsgID;                                             // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+	struct FDataTableRowHandle                    NewLocalVar;                                       // 0x0010(0x0010)(Edit, BlueprintVisible, NoDestructor)
+	class UCommonInputSubsystem*                  CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0060(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0078(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_StrStr_ReturnValue;            // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_TutorialMessage_Temp_C_GetCurrentMsgId;
+
 // Function WBP_TutorialMessage_Temp.WBP_TutorialMessage_Temp_C.ExecuteUbergraph_WBP_TutorialMessage_Temp
 // 0x0158 (0x0158 - 0x0000)
 struct WBP_TutorialMessage_Temp_C_ExecuteUbergraph_WBP_TutorialMessage_Temp final
@@ -73,63 +130,6 @@ public:
 	float                                         CallFunc_RetriggerableDelay_Duration_ImplicitCast; // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_TutorialMessage_Temp_C_ExecuteUbergraph_WBP_TutorialMessage_Temp;
-
-// Function WBP_TutorialMessage_Temp.WBP_TutorialMessage_Temp_C.GetCurrentMsgId
-// 0x0090 (0x0090 - 0x0000)
-struct WBP_TutorialMessage_Temp_C_GetCurrentMsgId final
-{
-public:
-	struct FDataTableRowHandle                    MsgID;                                             // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
-	struct FDataTableRowHandle                    NewLocalVar;                                       // 0x0010(0x0010)(Edit, BlueprintVisible, NoDestructor)
-	class UCommonInputSubsystem*                  CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ECommonInputType                              CallFunc_GetCurrentInputType_ReturnValue;          // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_NameToString_ReturnValue;            // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_Conv_StringToName_ReturnValue;            // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0060(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0078(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_StrStr_ReturnValue;            // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_TutorialMessage_Temp_C_GetCurrentMsgId;
-
-// Function WBP_TutorialMessage_Temp.WBP_TutorialMessage_Temp_C.On Input Method Changed
-// 0x0050 (0x0050 - 0x0000)
-struct WBP_TutorialMessage_Temp_C_On_Input_Method_Changed final
-{
-public:
-	ECommonInputType                              InputType;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FDataTableRowHandle                    CallFunc_GetCurrentMsgId_MsgId;                    // 0x0008(0x0010)(NoDestructor)
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0018(0x0018)()
-	class FText                                   CallFunc_CreateGuideText_OutText;                  // 0x0030(0x0018)()
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_TutorialMessage_Temp_C_On_Input_Method_Changed;
-
-// Function WBP_TutorialMessage_Temp.WBP_TutorialMessage_Temp_C.QueueTutorial
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_TutorialMessage_Temp_C_QueueTutorial final
-{
-public:
-	struct FDataTableRowHandle                    TutorialMsgID;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_TutorialMessage_Temp_C_QueueTutorial;
-
-// Function WBP_TutorialMessage_Temp.WBP_TutorialMessage_Temp_C.Setup
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_TutorialMessage_Temp_C_Setup final
-{
-public:
-	TDelegate<void(ECommonInputType bNewInputType)> K2Node_CreateDelegate_OutputDelegate;            // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FDataTableRowHandle& TutorialMsg)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UCommonInputSubsystem*                  CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalTutorialManager*                    CallFunc_GetTutorialManager_ReturnValue;           // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_TutorialMessage_Temp_C_Setup;
 
 }
 

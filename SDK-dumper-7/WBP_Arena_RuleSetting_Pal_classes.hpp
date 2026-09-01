@@ -38,15 +38,15 @@ public:
 	TMulticastInlineDelegate<void(bool IsBan)>    OnChangeAll;                                       // 0x0328(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__WBP_Arena_RuleSetting_Pal_WBP_CommonButton_BanAll_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
-	void BndEvt__WBP_Arena_RuleSetting_Pal_WBP_CommonButton_EnableAll_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
-	void BndEvt__WBP_Arena_RuleSetting_Pal_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void ExecuteUbergraph_WBP_Arena_RuleSetting_Pal(int32 EntryPoint);
-	void IsCharacterEncounted(class FName CharacterID, bool* Encounted);
-	void OnCharacterButtonClick(class FName CharacterID);
-	void OnInitialized();
-	void Setup(TArray<struct FPalDataTableRowName_PalMonsterData>& RestrictPals, bool Changeable);
 	void SetupPalList();
+	void Setup(TArray<struct FPalDataTableRowName_PalMonsterData>& RestrictPals, bool Changeable);
+	void OnInitialized();
+	void OnCharacterButtonClick(class FName CharacterID);
+	void IsCharacterEncounted(class FName CharacterID, bool* Encounted);
+	void ExecuteUbergraph_WBP_Arena_RuleSetting_Pal(int32 EntryPoint);
+	void BndEvt__WBP_Arena_RuleSetting_Pal_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
+	void BndEvt__WBP_Arena_RuleSetting_Pal_WBP_CommonButton_EnableAll_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature();
+	void BndEvt__WBP_Arena_RuleSetting_Pal_WBP_CommonButton_BanAll_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()

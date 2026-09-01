@@ -15,7 +15,7 @@ struct FLiveLinkTransformControllerData
 class ULiveLinkComponentController : public UActorComponent
 {
     FLiveLinkSubjectRepresentation SubjectRepresentation;                             // 0x00A0 (size: 0x10)
-    TMap<class TSubclassOf<ULiveLinkRole>, class ULiveLinkControllerBase*> ControllerMap; // 0x00B0 (size: 0x50)
+    TMap<TSubclassOf<class ULiveLinkRole>, ULiveLinkControllerBase*> ControllerMap;   // 0x00B0 (size: 0x50)
     bool bUpdateInEditor;                                                             // 0x0100 (size: 0x1)
     FLiveLinkComponentControllerOnLiveLinkUpdated OnLiveLinkUpdated;                  // 0x0108 (size: 0x10)
     void LiveLinkTickDelegate(float DeltaTime);
@@ -31,7 +31,7 @@ class ULiveLinkComponentController : public UActorComponent
 
 class ULiveLinkComponentSettings : public UObject
 {
-    TMap<class TSubclassOf<ULiveLinkRole>, class TSubclassOf<ULiveLinkControllerBase>> DefaultControllerForRole; // 0x0028 (size: 0x50)
+    TMap<TSubclassOf<class ULiveLinkRole>, TSubclassOf<class ULiveLinkControllerBase>> DefaultControllerForRole; // 0x0028 (size: 0x50)
 
 }; // Size: 0x78
 

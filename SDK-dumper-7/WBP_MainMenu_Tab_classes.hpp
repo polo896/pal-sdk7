@@ -38,13 +38,13 @@ public:
 	TMap<EPalUIInGameMainMenuTabType, struct FDataTableRowHandle> MsgIDMap;                          // 0x02D8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void AnmEvent_FirstOpen(bool isFocused);
-	void AnmEvent_FocusToNormal();
-	void AnmEvent_NormalToFocus();
-	void BndEvt__WBP_MainMenu_Tab_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void ExecuteUbergraph_WBP_MainMenu_Tab(int32 EntryPoint);
-	void OnInitialized();
 	void SetEnableAttentionDot(bool IsEnable);
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_MainMenu_Tab(int32 EntryPoint);
+	void BndEvt__WBP_MainMenu_Tab_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void AnmEvent_NormalToFocus();
+	void AnmEvent_FocusToNormal();
+	void AnmEvent_FirstOpen(bool isFocused);
 
 public:
 	static class UClass* StaticClass()

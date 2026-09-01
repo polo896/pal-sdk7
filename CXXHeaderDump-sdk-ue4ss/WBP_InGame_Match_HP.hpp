@@ -17,12 +17,12 @@ class UWBP_InGame_Match_HP_C : public UUserWidget
     class UWBP_InGame_Match_HPPal_C* WBP_InGame_Match_HPPal_Rival_2;                  // 0x02D0 (size: 0x8)
     class UPalUIDelayGaugeCalculator* PlayerHPGauge;                                  // 0x02D8 (size: 0x8)
     class UPalUIDelayGaugeCalculator* RivalHPGauge;                                   // 0x02E0 (size: 0x8)
-    TArray<class UWBP_InGame_Match_HPPal_C*> PlayerPals;                              // 0x02E8 (size: 0x10)
-    TArray<class UWBP_InGame_Match_HPPal_C*> RivalPals;                               // 0x02F8 (size: 0x10)
+    TArray<UWBP_InGame_Match_HPPal_C*> PlayerPals;                                    // 0x02E8 (size: 0x10)
+    TArray<UWBP_InGame_Match_HPPal_C*> RivalPals;                                     // 0x02F8 (size: 0x10)
     class UPalIndividualCharacterParameter* Player Individual Parameter;              // 0x0308 (size: 0x8)
     class UPalIndividualCharacterParameter* Rival Individual Parameter;               // 0x0310 (size: 0x8)
 
-    void Setup(EPalArenaPlayerIndex LocalPlayerIndex, const TMap<class EPalArenaPlayerIndex, class FPalArenaPlayerInfo>& PlayerInfoMap, int32 MaxBattleTime);
+    void Setup(EPalArenaPlayerIndex LocalPlayerIndex, const TMap<EPalArenaPlayerIndex, FPalArenaPlayerInfo>& PlayerInfoMap, int32 MaxBattleTime);
     void Update Rival HP(FFixedPoint64 nowHP, FFixedPoint64 MaxHP);
     void UpdatePlayerHP(FFixedPoint64 nowHP, FFixedPoint64 MaxHP);
     void OnInitialized();

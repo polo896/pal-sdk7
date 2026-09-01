@@ -15,7 +15,7 @@ class UWBP_MainMenu_Pal_FoodAmount_C : public UUserWidget
     class UWBP_MainMenu_Pal_FoodAmountIcon_C* WBP_MainMenu_Pal_FoodAmountIcon_7;      // 0x02C0 (size: 0x8)
     class UWBP_MainMenu_Pal_FoodAmountIcon_C* WBP_MainMenu_Pal_FoodAmountIcon_8;      // 0x02C8 (size: 0x8)
     class UWBP_MainMenu_Pal_FoodAmountIcon_C* WBP_MainMenu_Pal_FoodAmountIcon_9;      // 0x02D0 (size: 0x8)
-    TArray<class UWBP_MainMenu_Pal_FoodAmountIcon_C*> IconArray;                      // 0x02D8 (size: 0x10)
+    TArray<UWBP_MainMenu_Pal_FoodAmountIcon_C*> IconArray;                            // 0x02D8 (size: 0x10)
 
     void SetFoodAmount(int32 FoodAmount);
     void OnInitialized();

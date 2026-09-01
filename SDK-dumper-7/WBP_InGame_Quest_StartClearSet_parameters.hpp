@@ -17,26 +17,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_InGame_Quest_StartClearSet.WBP_InGame_Quest_StartClearSet_C.CompleteQuest
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_InGame_Quest_StartClearSet_C_CompleteQuest final
-{
-public:
-	class FName                                   QuestId;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FF_PalQuestStartClearNotifyQueData     K2Node_MakeStruct_F_PalQuestStartClearNotifyQueData; // 0x0008(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FF_PalQuestStartClearNotifyQueData     CallFunc_Array_Get_Item;                           // 0x0024(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0035(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0036(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0037(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InGame_Quest_StartClearSet_C_CompleteQuest;
-
 // Function WBP_InGame_Quest_StartClearSet.WBP_InGame_Quest_StartClearSet_C.ExecuteUbergraph_WBP_InGame_Quest_StartClearSet
 // 0x0050 (0x0050 - 0x0000)
 struct WBP_InGame_Quest_StartClearSet_C_ExecuteUbergraph_WBP_InGame_Quest_StartClearSet final
@@ -59,40 +39,9 @@ public:
 };
 DUMPER7_ASSERTS_WBP_InGame_Quest_StartClearSet_C_ExecuteUbergraph_WBP_InGame_Quest_StartClearSet;
 
-// Function WBP_InGame_Quest_StartClearSet.WBP_InGame_Quest_StartClearSet_C.GetCurrentQuestNotifyTime
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_InGame_Quest_StartClearSet_C_GetCurrentQuestNotifyTime final
-{
-public:
-	double                                        NotifyTime;                                        // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_GetQuestNotifyTime_NotifyTime;            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InGame_Quest_StartClearSet_C_GetCurrentQuestNotifyTime;
-
-// Function WBP_InGame_Quest_StartClearSet.WBP_InGame_Quest_StartClearSet_C.OnEndWidgetSequence
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_InGame_Quest_StartClearSet_C_OnEndWidgetSequence final
-{
-public:
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InGame_Quest_StartClearSet_C_OnEndWidgetSequence;
-
-// Function WBP_InGame_Quest_StartClearSet.WBP_InGame_Quest_StartClearSet_C.SetActionBindData
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_InGame_Quest_StartClearSet_C_SetActionBindData final
-{
-public:
-	struct FPalUIActionBindData                   BindData;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InGame_Quest_StartClearSet_C_SetActionBindData;
-
-// Function WBP_InGame_Quest_StartClearSet.WBP_InGame_Quest_StartClearSet_C.StartQuest
+// Function WBP_InGame_Quest_StartClearSet.WBP_InGame_Quest_StartClearSet_C.CompleteQuest
 // 0x0038 (0x0038 - 0x0000)
-struct WBP_InGame_Quest_StartClearSet_C_StartQuest final
+struct WBP_InGame_Quest_StartClearSet_C_CompleteQuest final
 {
 public:
 	class FName                                   QuestId;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -108,7 +57,7 @@ public:
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0036(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0037(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_InGame_Quest_StartClearSet_C_StartQuest;
+DUMPER7_ASSERTS_WBP_InGame_Quest_StartClearSet_C_CompleteQuest;
 
 // Function WBP_InGame_Quest_StartClearSet.WBP_InGame_Quest_StartClearSet_C.TryNextNotify
 // 0x00F0 (0x00F0 - 0x0000)
@@ -144,6 +93,57 @@ public:
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_InGame_Quest_StartClearSet_C_TryNextNotify;
+
+// Function WBP_InGame_Quest_StartClearSet.WBP_InGame_Quest_StartClearSet_C.StartQuest
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_InGame_Quest_StartClearSet_C_StartQuest final
+{
+public:
+	class FName                                   QuestId;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FF_PalQuestStartClearNotifyQueData     K2Node_MakeStruct_F_PalQuestStartClearNotifyQueData; // 0x0008(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FF_PalQuestStartClearNotifyQueData     CallFunc_Array_Get_Item;                           // 0x0024(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0035(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0036(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0037(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InGame_Quest_StartClearSet_C_StartQuest;
+
+// Function WBP_InGame_Quest_StartClearSet.WBP_InGame_Quest_StartClearSet_C.SetActionBindData
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_InGame_Quest_StartClearSet_C_SetActionBindData final
+{
+public:
+	struct FPalUIActionBindData                   BindData;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InGame_Quest_StartClearSet_C_SetActionBindData;
+
+// Function WBP_InGame_Quest_StartClearSet.WBP_InGame_Quest_StartClearSet_C.OnEndWidgetSequence
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_InGame_Quest_StartClearSet_C_OnEndWidgetSequence final
+{
+public:
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InGame_Quest_StartClearSet_C_OnEndWidgetSequence;
+
+// Function WBP_InGame_Quest_StartClearSet.WBP_InGame_Quest_StartClearSet_C.GetCurrentQuestNotifyTime
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_InGame_Quest_StartClearSet_C_GetCurrentQuestNotifyTime final
+{
+public:
+	double                                        NotifyTime;                                        // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_GetQuestNotifyTime_NotifyTime;            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InGame_Quest_StartClearSet_C_GetCurrentQuestNotifyTime;
 
 }
 

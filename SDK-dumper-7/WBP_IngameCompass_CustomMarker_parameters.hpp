@@ -18,28 +18,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameCompass_CustomMarker.WBP_IngameCompass_CustomMarker_C.SetColorType
-// 0x0014 (0x0014 - 0x0000)
-struct WBP_IngameCompass_CustomMarker_C_SetColorType final
-{
-public:
-	bool                                          IsCustomMarker;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameCompass_CustomMarker_C_SetColorType;
-
-// Function WBP_IngameCompass_CustomMarker.WBP_IngameCompass_CustomMarker_C.SetCustomMarkerTexture
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_IngameCompass_CustomMarker_C_SetCustomMarkerTexture final
-{
-public:
-	int32                                         IconType;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             CallFunc_Array_Get_Item;                           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameCompass_CustomMarker_C_SetCustomMarkerTexture;
-
 // Function WBP_IngameCompass_CustomMarker.WBP_IngameCompass_CustomMarker_C.SetDistanceText
 // 0x00A8 (0x00A8 - 0x0000)
 struct WBP_IngameCompass_CustomMarker_C_SetDistanceText final
@@ -55,18 +33,27 @@ public:
 };
 DUMPER7_ASSERTS_WBP_IngameCompass_CustomMarker_C_SetDistanceText;
 
-// Function WBP_IngameCompass_CustomMarker.WBP_IngameCompass_CustomMarker_C.UpdateDistance
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_IngameCompass_CustomMarker_C_UpdateDistance final
+// Function WBP_IngameCompass_CustomMarker.WBP_IngameCompass_CustomMarker_C.SetCustomMarkerTexture
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_IngameCompass_CustomMarker_C_SetCustomMarkerTexture final
 {
 public:
-	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0010(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Vector_Distance2D_ReturnValue;            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         IconType;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             CallFunc_Array_Get_Item;                           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameCompass_CustomMarker_C_UpdateDistance;
+DUMPER7_ASSERTS_WBP_IngameCompass_CustomMarker_C_SetCustomMarkerTexture;
+
+// Function WBP_IngameCompass_CustomMarker.WBP_IngameCompass_CustomMarker_C.SetColorType
+// 0x0014 (0x0014 - 0x0000)
+struct WBP_IngameCompass_CustomMarker_C_SetColorType final
+{
+public:
+	bool                                          IsCustomMarker;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameCompass_CustomMarker_C_SetColorType;
 
 // Function WBP_IngameCompass_CustomMarker.WBP_IngameCompass_CustomMarker_C.UpdateVisibility
 // 0x0050 (0x0050 - 0x0000)
@@ -92,6 +79,19 @@ public:
 	double                                        CallFunc_Less_DoubleDouble_B_ImplicitCast;         // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_IngameCompass_CustomMarker_C_UpdateVisibility;
+
+// Function WBP_IngameCompass_CustomMarker.WBP_IngameCompass_CustomMarker_C.UpdateDistance
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_IngameCompass_CustomMarker_C_UpdateDistance final
+{
+public:
+	class APalPlayerCharacter*                    CallFunc_GetPalmi_ReturnValue;                     // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0010(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Vector_Distance2D_ReturnValue;            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameCompass_CustomMarker_C_UpdateDistance;
 
 }
 

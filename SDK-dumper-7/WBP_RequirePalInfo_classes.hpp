@@ -59,26 +59,26 @@ public:
 	TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData> Suitability_Display_Data; // 0x03A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void Construct();
-	void Destruct();
-	void ExecuteUbergraph_WBP_RequirePalInfo(int32 EntryPoint);
-	void GetWorkIcons(TArray<class UWBP_MainMenu_Pal_WorkIcon_C*>* ReturnValues);
-	void IsValidWorkSuitabilityData(TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData>& NewParam, bool* bValidData);
-	void On_Ready_Registered_Map_Object_Concrete_Model(class UPalMapObjectConcreteModelBase* Model);
-	void OnChangeRegisteredMapObjectCannotApproach(class UPalMapObjectWorkeeModule* Module);
-	void OnReadyRegisteredMapObjectWorkeeModule(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module);
-	void Play_Path_Animation(bool bToDetails, bool bFinishImmediately);
-	void RegisterOwnerMapObject(class APalMapObject* OwnerMapObject_0);
-	void Set_Work_Suitability(TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData>& DisplayData);
-	void SetupBulletRequire(class UPalMapObjectDefenseBulletLauncherModel* LauncherModel);
-	void SetupPowerSuffcient(class UPalMapObjectEnergyModule* Module);
-	bool ShouldDisplayPathDetail();
-	void Update_Display(class UPalWorkBase* Work, TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData>& SuitabilityDisplayData);
-	void Update_Power_Suffcient(class UPalMapObjectEnergyModule* Module);
-	void UpdateBulletRequire(int32 bulletNum);
-	void UpdateDisplayIsExistsRequiredWorker();
-	void UpdateDisplayPeriodically();
 	void UpdatePowerOrBulletRequireDisplay();
+	void UpdateDisplayPeriodically();
+	void UpdateDisplayIsExistsRequiredWorker();
+	void UpdateBulletRequire(int32 bulletNum);
+	void Update_Power_Suffcient(class UPalMapObjectEnergyModule* Module);
+	void Update_Display(class UPalWorkBase* Work, TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData>& SuitabilityDisplayData);
+	bool ShouldDisplayPathDetail();
+	void SetupPowerSuffcient(class UPalMapObjectEnergyModule* Module);
+	void SetupBulletRequire(class UPalMapObjectDefenseBulletLauncherModel* LauncherModel);
+	void Set_Work_Suitability(TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData>& DisplayData);
+	void RegisterOwnerMapObject(class APalMapObject* OwnerMapObject_0);
+	void Play_Path_Animation(bool bToDetails, bool bFinishImmediately);
+	void OnReadyRegisteredMapObjectWorkeeModule(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module);
+	void OnChangeRegisteredMapObjectCannotApproach(class UPalMapObjectWorkeeModule* Module);
+	void On_Ready_Registered_Map_Object_Concrete_Model(class UPalMapObjectConcreteModelBase* Model);
+	void IsValidWorkSuitabilityData(TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData>& NewParam, bool* bValidData);
+	void GetWorkIcons(TArray<class UWBP_MainMenu_Pal_WorkIcon_C*>* ReturnValues);
+	void ExecuteUbergraph_WBP_RequirePalInfo(int32 EntryPoint);
+	void Destruct();
+	void Construct();
 
 public:
 	static class UClass* StaticClass()

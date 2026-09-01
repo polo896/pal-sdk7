@@ -16,6 +16,18 @@
 namespace SDK::Params
 {
 
+// Function WBP_Research_Buff.WBP_Research_Buff_C.Setup
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_Research_Buff_C_Setup final
+{
+public:
+	EPalWorkSuitability                           MainType;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalLabCategorySubType                        SubType;                                           // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Effect;                                            // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_Research_Buff_C_Setup;
+
 // Function WBP_Research_Buff.WBP_Research_Buff_C.ExecuteUbergraph_WBP_Research_Buff
 // 0x0020 (0x0020 - 0x0000)
 struct WBP_Research_Buff_C_ExecuteUbergraph_WBP_Research_Buff final
@@ -28,18 +40,6 @@ public:
 	class FText                                   K2Node_CustomEvent_Effect;                         // 0x0008(0x0018)()
 };
 DUMPER7_ASSERTS_WBP_Research_Buff_C_ExecuteUbergraph_WBP_Research_Buff;
-
-// Function WBP_Research_Buff.WBP_Research_Buff_C.Setup
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_Research_Buff_C_Setup final
-{
-public:
-	EPalWorkSuitability                           MainType;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalLabCategorySubType                        SubType;                                           // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Effect;                                            // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_Research_Buff_C_Setup;
 
 }
 

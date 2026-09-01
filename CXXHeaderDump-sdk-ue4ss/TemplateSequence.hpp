@@ -105,8 +105,8 @@ class UTemplateSequence : public UMovieSceneSequence
 {
     class UMovieScene* MovieScene;                                                    // 0x0068 (size: 0x8)
     TSoftClassPtr<AActor> BoundActorClass;                                            // 0x0070 (size: 0x30)
-    TSoftObjectPtr<AActor> BoundPreviewActor;                                         // 0x00A0 (size: 0x30)
-    TMap<class FGuid, class FName> BoundActorComponents;                              // 0x00D0 (size: 0x50)
+    TSoftObjectPtr<class AActor> BoundPreviewActor;                                   // 0x00A0 (size: 0x30)
+    TMap<FGuid, FName> BoundActorComponents;                                          // 0x00D0 (size: 0x50)
 
 }; // Size: 0x120
 

@@ -17,7 +17,7 @@ struct FNiagaraGeometryCacheReference
 {
     class UGeometryCache* GeometryCache;                                              // 0x0000 (size: 0x8)
     FNiagaraUserParameterBinding GeometryCacheUserParamBinding;                       // 0x0008 (size: 0x20)
-    TArray<class UMaterialInterface*> OverrideMaterials;                              // 0x0028 (size: 0x10)
+    TArray<UMaterialInterface*> OverrideMaterials;                                    // 0x0028 (size: 0x10)
 
 }; // Size: 0x38
 
@@ -53,8 +53,8 @@ class UDEPRECATED_GeometryCacheTrack_TransformGroupAnimation : public UGeometryC
 
 class UGeometryCache : public UObject
 {
-    TArray<class UMaterialInterface*> Materials;                                      // 0x0030 (size: 0x10)
-    TArray<class UGeometryCacheTrack*> Tracks;                                        // 0x0040 (size: 0x10)
+    TArray<UMaterialInterface*> Materials;                                            // 0x0030 (size: 0x10)
+    TArray<UGeometryCacheTrack*> Tracks;                                              // 0x0040 (size: 0x10)
     int32 StartFrame;                                                                 // 0x0060 (size: 0x4)
     int32 EndFrame;                                                                   // 0x0064 (size: 0x4)
     uint64 Hash;                                                                      // 0x0068 (size: 0x8)

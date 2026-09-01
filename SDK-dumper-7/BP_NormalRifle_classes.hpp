@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "BP_AssaultRifleBase_classes.hpp"
 #include "Pal_structs.hpp"
+#include "BP_AssaultRifleBase_classes.hpp"
 
 
 namespace SDK
@@ -33,33 +33,33 @@ public:
 	class UAnimSequence*                          LoadedAnim;                                        // 0x0708(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_NormalRifle(int32 EntryPoint);
-	void GetMuzzleEffectAttached(class UNiagaraSystem** Effect);
-	void PlayEndFireSound();
-	void PlayEndFireSound_Callback(bool IsPlaying);
-	void PlayFireSound();
-	void ReceiveBeginPlay();
-	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
-	void StopFireSound();
 	void カスタムイベント_0(EWeaponNotifyType NotifyType);
-	void GetAimingBlurAngle(double* Angle);
-	class FName GetEquipSocketName();
-	void GetMuzzleLocation(struct FVector* MuzzleLocation);
-	void GetMuzzleRotator(struct FRotator* Rotator);
-	void GetShootInterval(double* Time);
-	void GetShotAnimation();
-	void GeyEjectionPortTransform(struct FTransform* Transform);
-	void Is_UseEjectionPort(bool* isUse);
-	void OnAttachWeapon(class AActor* attachActor);
-	void OnDetachWeapon(class AActor* detachActor);
-	void OnFireStart();
-	void OnPullTrigger();
-	void OnReleaseTrigger(bool bCanShootOnRelease);
-	void OnShoot(class APalBullet* BulletActor);
+	void StopFireSound();
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void ReceiveBeginPlay();
+	void PlayFireSound();
+	void PlayEndFireSound_Callback(bool IsPlaying);
+	void PlayEndFireSound();
+	void GetMuzzleEffectAttached(class UNiagaraSystem** Effect);
+	void ExecuteUbergraph_BP_NormalRifle(int32 EntryPoint);
 	void PlayReloadAnimation();
+	void OnShoot(class APalBullet* BulletActor);
+	void OnReleaseTrigger(bool bCanShootOnRelease);
+	void OnPullTrigger();
+	void OnFireStart();
+	void OnDetachWeapon(class AActor* detachActor);
+	void OnAttachWeapon(class AActor* attachActor);
+	void Is_UseEjectionPort(bool* isUse);
+	void GeyEjectionPortTransform(struct FTransform* Transform);
+	void GetShotAnimation();
+	void GetShootInterval(double* Time);
+	void GetMuzzleRotator(struct FRotator* Rotator);
+	void GetMuzzleLocation(struct FVector* MuzzleLocation);
+	class FName GetEquipSocketName();
+	void GetAimingBlurAngle(double* Angle);
 
-	float GetDefaultBlurAngle() const;
 	struct FTransform GetLeftHandTransform() const;
+	float GetDefaultBlurAngle() const;
 	bool IsUseLeftHandAttach() const;
 
 public:

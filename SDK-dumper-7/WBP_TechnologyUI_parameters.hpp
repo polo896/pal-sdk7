@@ -15,61 +15,157 @@
 #include "CoreUObject_structs.hpp"
 #include "UMG_structs.hpp"
 #include "SlateCore_structs.hpp"
-#include "EPalUIInGameMainMenuTabType_structs.hpp"
 #include "Slate_structs.hpp"
+#include "EPalUIInGameMainMenuTabType_structs.hpp"
 
 
 namespace SDK::Params
 {
 
-// Function WBP_TechnologyUI.WBP_TechnologyUI_C.BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_1_OnNameFilterApplied__DelegateSignature
+// Function WBP_TechnologyUI.WBP_TechnologyUI_C.Tick
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_TechnologyUI_C_Tick final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_TechnologyUI_C_Tick;
+
+// Function WBP_TechnologyUI.WBP_TechnologyUI_C.Setup
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_TechnologyUI_C_Setup final
+{
+public:
+	EScrollWhenFocusChanges                       OriginalFocusChangeRule;                           // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x0004(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x000C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x001C(0x0004)(NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_TechnologyUI_C_Setup;
+
+// Function WBP_TechnologyUI.WBP_TechnologyUI_C.RegisterShortcutCloseInputAction
+// 0x0014 (0x0014 - 0x0000)
+struct WBP_TechnologyUI_C_RegisterShortcutCloseInputAction final
+{
+public:
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x0010(0x0004)(NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_TechnologyUI_C_RegisterShortcutCloseInputAction;
+
+// Function WBP_TechnologyUI.WBP_TechnologyUI_C.OnUnhoveredTechnology
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_TechnologyUI_C_OnUnhoveredTechnology final
+{
+public:
+	class UWBP_MainMenu_Technology_Content_C*     Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetBindedTechnologyName_technologyName;   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPalTechnologyData*                     CallFunc_GetLocalTechnologyData_ReturnValue;       // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsExistNewUnlockedTechnology_ReturnValue; // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsNewUnlockedTechnology_ReturnValue;      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_TechnologyUI_C_OnUnhoveredTechnology;
+
+// Function WBP_TechnologyUI.WBP_TechnologyUI_C.OnMouseMove
+// 0x0310 (0x0310 - 0x0000)
+struct WBP_TechnologyUI_C_OnMouseMove final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0040(0x0098)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00D8(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0190(0x00B8)()
+	bool                                          CallFunc_PointerEvent_IsMouseButtonDown_ReturnValue; // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_PointerEvent_IsMouseButtonDown_ReturnValue_1; // 0x0249(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24A[0x6];                                      // 0x024A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0250(0x00B8)()
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0308(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_TechnologyUI_C_OnMouseMove;
+
+// Function WBP_TechnologyUI.WBP_TechnologyUI_C.OnInputAction_ShortcutClose
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_TechnologyUI_C_OnInputAction_ShortcutClose final
+{
+public:
+	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_TechnologyUI_C_OnInputAction_ShortcutClose;
+
+// Function WBP_TechnologyUI.WBP_TechnologyUI_C.OnHoveredTechnology
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_TechnologyUI_C_OnHoveredTechnology final
+{
+public:
+	class UWBP_MainMenu_Technology_Content_C*     Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetBindedTechnologyName_technologyName;   // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             K2Node_DynamicCast_AsTexture_2D;                   // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_TechnologyUI_C_OnHoveredTechnology;
+
+// Function WBP_TechnologyUI.WBP_TechnologyUI_C.OnClickedTechnology
+// 0x0140 (0x0140 - 0x0000)
+struct WBP_TechnologyUI_C_OnClickedTechnology final
+{
+public:
+	class UWBP_MainMenu_Technology_Content_C*     Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPalTechnologyData*                     CallFunc_GetLocalTechnologyData_ReturnValue;       // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetBindedTechnologyName_technologyName;   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDeniedTechnology_ReturnValue;           // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalTechnologyDataTableRowBase         CallFunc_GetTechlonogyBaseData_ReturnValue;        // 0x0020(0x0048)(ConstParm)
+	bool                                          CallFunc_IsUnlockableRecipeTechnology_ReturnValue; // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0070(0x0018)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0088(0x0050)(HasGetValueTypeHash)
+	bool                                          CallFunc_IsUnlockRecipeTechnology_ReturnValue;     // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00E0(0x0010)(ReferenceParm)
+	TDelegate<void(bool bResult)>                 K2Node_CreateDelegate_OutputDelegate;              // 0x00F0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetLocalizedText_ReturnValue_1;           // 0x0100(0x0018)()
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0118(0x0018)()
+	struct FGuid                                  CallFunc_Dialog_ReturnValue;                       // 0x0130(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_TechnologyUI_C_OnClickedTechnology;
+
+// Function WBP_TechnologyUI.WBP_TechnologyUI_C.On Unlocked Any Technology
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_TechnologyUI_C_On_Unlocked_Any_Technology final
+{
+public:
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_TechnologyUI_C_On_Unlocked_Any_Technology;
+
+// Function WBP_TechnologyUI.WBP_TechnologyUI_C.On Close Dialog
 // 0x0018 (0x0018 - 0x0000)
-struct WBP_TechnologyUI_C_BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_1_OnNameFilterApplied__DelegateSignature final
+struct WBP_TechnologyUI_C_On_Close_Dialog final
 {
 public:
-	class FText                                   newText;                                           // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPalTechnologyData*                     CallFunc_GetLocalTechnologyData_ReturnValue;       // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_GetBindedTechnologyName_technologyName;   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_TechnologyUI_C_BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_1_OnNameFilterApplied__DelegateSignature;
+DUMPER7_ASSERTS_WBP_TechnologyUI_C_On_Close_Dialog;
 
-// Function WBP_TechnologyUI.WBP_TechnologyUI_C.BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_3_OnClickedTchnology__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_TechnologyUI_C_BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_3_OnClickedTchnology__DelegateSignature final
+// Function WBP_TechnologyUI.WBP_TechnologyUI_C.On Category Filter Applied
+// 0x00A8 (0x00A8 - 0x0000)
+struct WBP_TechnologyUI_C_On_Category_Filter_Applied final
 {
 public:
-	class UWBP_MainMenu_Technology_Content_C*     Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TSet<EPalItemTypeA>                           ItemTypes;                                         // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm)
+	TSet<EPalBuildObjectTypeA>                    BuildTypes;                                        // 0x0050(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm)
+	bool                                          ShowUnlocked;                                      // 0x00A0(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_TechnologyUI_C_BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_3_OnClickedTchnology__DelegateSignature;
-
-// Function WBP_TechnologyUI.WBP_TechnologyUI_C.BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_4_OnHoveredTechnology__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_TechnologyUI_C_BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_4_OnHoveredTechnology__DelegateSignature final
-{
-public:
-	class UWBP_MainMenu_Technology_Content_C*     Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_TechnologyUI_C_BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_4_OnHoveredTechnology__DelegateSignature;
-
-// Function WBP_TechnologyUI.WBP_TechnologyUI_C.BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_5_OnUnhoveredTechnology__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_TechnologyUI_C_BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_5_OnUnhoveredTechnology__DelegateSignature final
-{
-public:
-	class UWBP_MainMenu_Technology_Content_C*     Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_TechnologyUI_C_BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_5_OnUnhoveredTechnology__DelegateSignature;
-
-// Function WBP_TechnologyUI.WBP_TechnologyUI_C.CanClose
-// 0x0005 (0x0005 - 0x0000)
-struct WBP_TechnologyUI_C_CanClose final
-{
-public:
-	bool                                          CanCloseFlag;                                      // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasAnyUserFocus_ReturnValue;              // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_TechnologyUI_C_CanClose;
+DUMPER7_ASSERTS_WBP_TechnologyUI_C_On_Category_Filter_Applied;
 
 // Function WBP_TechnologyUI.WBP_TechnologyUI_C.ExecuteUbergraph_WBP_TechnologyUI
 // 0x01A0 (0x01A0 - 0x0000)
@@ -105,150 +201,54 @@ public:
 };
 DUMPER7_ASSERTS_WBP_TechnologyUI_C_ExecuteUbergraph_WBP_TechnologyUI;
 
-// Function WBP_TechnologyUI.WBP_TechnologyUI_C.On Category Filter Applied
-// 0x00A8 (0x00A8 - 0x0000)
-struct WBP_TechnologyUI_C_On_Category_Filter_Applied final
+// Function WBP_TechnologyUI.WBP_TechnologyUI_C.CanClose
+// 0x0005 (0x0005 - 0x0000)
+struct WBP_TechnologyUI_C_CanClose final
 {
 public:
-	TSet<EPalItemTypeA>                           ItemTypes;                                         // 0x0000(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm)
-	TSet<EPalBuildObjectTypeA>                    BuildTypes;                                        // 0x0050(0x0050)(BlueprintVisible, BlueprintReadOnly, Parm)
-	bool                                          ShowUnlocked;                                      // 0x00A0(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CanCloseFlag;                                      // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasAnyUserFocus_ReturnValue;              // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_TechnologyUI_C_On_Category_Filter_Applied;
+DUMPER7_ASSERTS_WBP_TechnologyUI_C_CanClose;
 
-// Function WBP_TechnologyUI.WBP_TechnologyUI_C.On Close Dialog
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_TechnologyUI_C_On_Close_Dialog final
-{
-public:
-	bool                                          bResult;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPalTechnologyData*                     CallFunc_GetLocalTechnologyData_ReturnValue;       // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetBindedTechnologyName_technologyName;   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_TechnologyUI_C_On_Close_Dialog;
-
-// Function WBP_TechnologyUI.WBP_TechnologyUI_C.On Unlocked Any Technology
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_TechnologyUI_C_On_Unlocked_Any_Technology final
-{
-public:
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_TechnologyUI_C_On_Unlocked_Any_Technology;
-
-// Function WBP_TechnologyUI.WBP_TechnologyUI_C.OnClickedTechnology
-// 0x0140 (0x0140 - 0x0000)
-struct WBP_TechnologyUI_C_OnClickedTechnology final
-{
-public:
-	class UWBP_MainMenu_Technology_Content_C*     Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UPalTechnologyData*                     CallFunc_GetLocalTechnologyData_ReturnValue;       // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetBindedTechnologyName_technologyName;   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDeniedTechnology_ReturnValue;           // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalTechnologyDataTableRowBase         CallFunc_GetTechlonogyBaseData_ReturnValue;        // 0x0020(0x0048)(ConstParm)
-	bool                                          CallFunc_IsUnlockableRecipeTechnology_ReturnValue; // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_GetLocalizedText_ReturnValue;             // 0x0070(0x0018)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0088(0x0050)(HasGetValueTypeHash)
-	bool                                          CallFunc_IsUnlockRecipeTechnology_ReturnValue;     // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00E0(0x0010)(ReferenceParm)
-	TDelegate<void(bool bResult)>                 K2Node_CreateDelegate_OutputDelegate;              // 0x00F0(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetLocalizedText_ReturnValue_1;           // 0x0100(0x0018)()
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0118(0x0018)()
-	struct FGuid                                  CallFunc_Dialog_ReturnValue;                       // 0x0130(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_TechnologyUI_C_OnClickedTechnology;
-
-// Function WBP_TechnologyUI.WBP_TechnologyUI_C.OnHoveredTechnology
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_TechnologyUI_C_OnHoveredTechnology final
-{
-public:
-	class UWBP_MainMenu_Technology_Content_C*     Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetBindedTechnologyName_technologyName;   // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             K2Node_DynamicCast_AsTexture_2D;                   // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_TechnologyUI_C_OnHoveredTechnology;
-
-// Function WBP_TechnologyUI.WBP_TechnologyUI_C.OnInputAction_ShortcutClose
+// Function WBP_TechnologyUI.WBP_TechnologyUI_C.BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_5_OnUnhoveredTechnology__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_TechnologyUI_C_OnInputAction_ShortcutClose final
-{
-public:
-	class UPalHUDService*                         CallFunc_GetHUDService_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_TechnologyUI_C_OnInputAction_ShortcutClose;
-
-// Function WBP_TechnologyUI.WBP_TechnologyUI_C.OnMouseMove
-// 0x0310 (0x0310 - 0x0000)
-struct WBP_TechnologyUI_C_OnMouseMove final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0040(0x0098)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00D8(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0190(0x00B8)()
-	bool                                          CallFunc_PointerEvent_IsMouseButtonDown_ReturnValue; // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_PointerEvent_IsMouseButtonDown_ReturnValue_1; // 0x0249(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24A[0x6];                                      // 0x024A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0250(0x00B8)()
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0308(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_TechnologyUI_C_OnMouseMove;
-
-// Function WBP_TechnologyUI.WBP_TechnologyUI_C.OnUnhoveredTechnology
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_TechnologyUI_C_OnUnhoveredTechnology final
+struct WBP_TechnologyUI_C_BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_5_OnUnhoveredTechnology__DelegateSignature final
 {
 public:
 	class UWBP_MainMenu_Technology_Content_C*     Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_GetBindedTechnologyName_technologyName;   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPalTechnologyData*                     CallFunc_GetLocalTechnologyData_ReturnValue;       // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsExistNewUnlockedTechnology_ReturnValue; // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsNewUnlockedTechnology_ReturnValue;      // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_TechnologyUI_C_OnUnhoveredTechnology;
+DUMPER7_ASSERTS_WBP_TechnologyUI_C_BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_5_OnUnhoveredTechnology__DelegateSignature;
 
-// Function WBP_TechnologyUI.WBP_TechnologyUI_C.RegisterShortcutCloseInputAction
-// 0x0014 (0x0014 - 0x0000)
-struct WBP_TechnologyUI_C_RegisterShortcutCloseInputAction final
+// Function WBP_TechnologyUI.WBP_TechnologyUI_C.BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_4_OnHoveredTechnology__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_TechnologyUI_C_BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_4_OnHoveredTechnology__DelegateSignature final
 {
 public:
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x0010(0x0004)(NoDestructor)
+	class UWBP_MainMenu_Technology_Content_C*     Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_TechnologyUI_C_RegisterShortcutCloseInputAction;
+DUMPER7_ASSERTS_WBP_TechnologyUI_C_BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_4_OnHoveredTechnology__DelegateSignature;
 
-// Function WBP_TechnologyUI.WBP_TechnologyUI_C.Setup
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_TechnologyUI_C_Setup final
+// Function WBP_TechnologyUI.WBP_TechnologyUI_C.BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_3_OnClickedTchnology__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_TechnologyUI_C_BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_3_OnClickedTchnology__DelegateSignature final
 {
 public:
-	EScrollWhenFocusChanges                       OriginalFocusChangeRule;                           // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x0004(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x000C(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalUIActionBindData                   CallFunc_RegisterActionBinding_ReturnValue;        // 0x001C(0x0004)(NoDestructor)
+	class UWBP_MainMenu_Technology_Content_C*     Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_TechnologyUI_C_Setup;
+DUMPER7_ASSERTS_WBP_TechnologyUI_C_BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_3_OnClickedTchnology__DelegateSignature;
 
-// Function WBP_TechnologyUI.WBP_TechnologyUI_C.Tick
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_TechnologyUI_C_Tick final
+// Function WBP_TechnologyUI.WBP_TechnologyUI_C.BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_1_OnNameFilterApplied__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_TechnologyUI_C_BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_1_OnNameFilterApplied__DelegateSignature final
 {
 public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	float                                         InDeltaTime;                                       // 0x0040(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   newText;                                           // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-DUMPER7_ASSERTS_WBP_TechnologyUI_C_Tick;
+DUMPER7_ASSERTS_WBP_TechnologyUI_C_BndEvt__WBP_TechnologyUI_WBP_MainMenu_Technology_00_K2Node_ComponentBoundEvent_1_OnNameFilterApplied__DelegateSignature;
 
 // Function WBP_TechnologyUI.WBP_TechnologyUI_C.BP_GetDesiredFocusTarget
 // 0x0010 (0x0010 - 0x0000)

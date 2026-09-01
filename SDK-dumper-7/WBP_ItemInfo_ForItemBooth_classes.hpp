@@ -27,8 +27,8 @@ public:
 	class UWBP_InventoryEquipment_ItemInfo_C*     WBP_InventoryEquipment_ItemInfo_Product;           // 0x0288(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_ItemInfo_ForItemBooth(int32 EntryPoint);
 	void SetItemPairInfo(const struct FPalItemAndNum& Product, const struct FPalItemAndNum& Cost);
+	void ExecuteUbergraph_WBP_ItemInfo_ForItemBooth(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

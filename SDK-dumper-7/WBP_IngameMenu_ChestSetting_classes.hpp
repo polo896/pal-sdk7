@@ -44,22 +44,22 @@ public:
 	bool                                          Can_Edit_Security;                                 // 0x0521(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_IngameMenu_Chest_Filter_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
-	void BndEvt__WBP_IngameMenu_ChestSetting_WBP_IngameMenu_ChestSetting_FilterBlock_K2Node_ComponentBoundEvent_2_OnClickedAllCheckButton__DelegateSignature();
-	void BndEvt__WBP_IngameMenu_ChestSetting_WBP_IngameMenu_ChestSetting_FilterBlock_K2Node_ComponentBoundEvent_3_OnClickedEditCustomNameButton__DelegateSignature();
-	void BndEvt__WBP_IngameMenu_ChestSetting_WBP_IngameMenu_ChestSetting_FilterBlock_K2Node_ComponentBoundEvent_4_OnEditedCustomName__DelegateSignature(const class FString& NewCustomName);
-	void BndEvt__WBP_IngameMenu_ChestSetting_WBP_IngameMenu_ChestSetting_FilterBlock_K2Node_ComponentBoundEvent_5_OnClickedAllUncheckButton__DelegateSignature();
-	void BndEvt__WBP_IngameMenu_ChestSetting_WBP_IngameMenu_ChestSetting_SecurityBlock_K2Node_ComponentBoundEvent_1_OnGetLockedNotLocal__DelegateSignature();
-	void ExecuteUbergraph_WBP_IngameMenu_ChestSetting(int32 EntryPoint);
-	void OnClickedCheck(class FName FilterId, bool bChecked);
-	void OnFilterTabClicked();
-	void OnSecuTabClicked();
-	void OnSetup();
-	void SetupFilter();
-	void SetupNameEdit();
-	void SWITCH(bool ToFilter);
-	void SwitchTab();
 	void WBP_IngameMenu_ChestSetting_AutoGenFunc();
+	void SwitchTab();
+	void SWITCH(bool ToFilter);
+	void SetupNameEdit();
+	void SetupFilter();
+	void OnSetup();
+	void OnSecuTabClicked();
+	void OnFilterTabClicked();
+	void OnClickedCheck(class FName FilterId, bool bChecked);
+	void ExecuteUbergraph_WBP_IngameMenu_ChestSetting(int32 EntryPoint);
+	void BndEvt__WBP_IngameMenu_ChestSetting_WBP_IngameMenu_ChestSetting_SecurityBlock_K2Node_ComponentBoundEvent_1_OnGetLockedNotLocal__DelegateSignature();
+	void BndEvt__WBP_IngameMenu_ChestSetting_WBP_IngameMenu_ChestSetting_FilterBlock_K2Node_ComponentBoundEvent_5_OnClickedAllUncheckButton__DelegateSignature();
+	void BndEvt__WBP_IngameMenu_ChestSetting_WBP_IngameMenu_ChestSetting_FilterBlock_K2Node_ComponentBoundEvent_4_OnEditedCustomName__DelegateSignature(const class FString& NewCustomName);
+	void BndEvt__WBP_IngameMenu_ChestSetting_WBP_IngameMenu_ChestSetting_FilterBlock_K2Node_ComponentBoundEvent_3_OnClickedEditCustomNameButton__DelegateSignature();
+	void BndEvt__WBP_IngameMenu_ChestSetting_WBP_IngameMenu_ChestSetting_FilterBlock_K2Node_ComponentBoundEvent_2_OnClickedAllCheckButton__DelegateSignature();
+	void BndEvt__WBP_IngameMenu_Chest_Filter_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 

@@ -17,109 +17,53 @@
 namespace SDK
 {
 
-// Function WBP_MapPoint_Info.WBP_MapPoint_Info_C.ToggleDisplay
+// Function WBP_MapPoint_Info.WBP_MapPoint_Info_C.AdjustSide
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    ShouldDisplay                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGeometry&                 TargetGeometry                                         (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 
-void UWBP_MapPoint_Info_C::ToggleDisplay(bool ShouldDisplay)
+void UWBP_MapPoint_Info_C::AdjustSide(const struct FGeometry& TargetGeometry)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapPoint_Info_C", "ToggleDisplay");
+		Func = Class->GetFunction("WBP_MapPoint_Info_C", "AdjustSide");
 
-	Params::WBP_MapPoint_Info_C_ToggleDisplay Parms{};
+	Params::WBP_MapPoint_Info_C_AdjustSide Parms{};
 
-	Parms.ShouldDisplay = ShouldDisplay;
+	Parms.TargetGeometry = std::move(TargetGeometry);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_MapPoint_Info.WBP_MapPoint_Info_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_MapPoint_Info.WBP_MapPoint_Info_C.AllReset
+// (Private, BlueprintCallable, BlueprintEvent)
 
-void UWBP_MapPoint_Info_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+void UWBP_MapPoint_Info_C::AllReset()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapPoint_Info_C", "Tick");
+		Func = Class->GetFunction("WBP_MapPoint_Info_C", "AllReset");
 
-	Params::WBP_MapPoint_Info_C_Tick Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_MapPoint_Info.WBP_MapPoint_Info_C.SetTowerBossInfo
+// Function WBP_MapPoint_Info.WBP_MapPoint_Info_C.AppendQuestInfo
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class APalBossTower*                    BossTower                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    CanTeleport                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MapPoint_Info_C::SetTowerBossInfo(class APalBossTower* BossTower, bool CanTeleport)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapPoint_Info_C", "SetTowerBossInfo");
-
-	Params::WBP_MapPoint_Info_C_SetTowerBossInfo Parms{};
-
-	Parms.BossTower = BossTower;
-	Parms.CanTeleport = CanTeleport;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MapPoint_Info.WBP_MapPoint_Info_C.SetStandaloneBossInfo
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsDefeated                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const TArray<class FName>&              CharacterIds                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// int32                                   Level                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             BossBattleRow                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MapPoint_Info_C::SetStandaloneBossInfo(bool IsDefeated, const TArray<class FName>& CharacterIds, int32 Level, class FName BossBattleRow)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapPoint_Info_C", "SetStandaloneBossInfo");
-
-	Params::WBP_MapPoint_Info_C_SetStandaloneBossInfo Parms{};
-
-	Parms.IsDefeated = IsDefeated;
-	Parms.CharacterIds = std::move(CharacterIds);
-	Parms.Level = Level;
-	Parms.BossBattleRow = BossBattleRow;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MapPoint_Info.WBP_MapPoint_Info_C.SetQuestInfo
-// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                             QuestId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MapPoint_Info_C::SetQuestInfo(class FName QuestId)
+void UWBP_MapPoint_Info_C::AppendQuestInfo(class FName QuestId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapPoint_Info_C", "SetQuestInfo");
+		Func = Class->GetFunction("WBP_MapPoint_Info_C", "AppendQuestInfo");
 
-	Params::WBP_MapPoint_Info_C_SetQuestInfo Parms{};
+	Params::WBP_MapPoint_Info_C_AppendQuestInfo Parms{};
 
 	Parms.QuestId = QuestId;
 
@@ -127,45 +71,21 @@ void UWBP_MapPoint_Info_C::SetQuestInfo(class FName QuestId)
 }
 
 
-// Function WBP_MapPoint_Info.WBP_MapPoint_Info_C.SetFTInfo
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_MapPoint_Info.WBP_MapPoint_Info_C.ExecuteUbergraph_WBP_MapPoint_Info
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class FName                             FTID                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    CanTeleport                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MapPoint_Info_C::SetFTInfo(class FName FTID, bool CanTeleport)
+void UWBP_MapPoint_Info_C::ExecuteUbergraph_WBP_MapPoint_Info(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapPoint_Info_C", "SetFTInfo");
+		Func = Class->GetFunction("WBP_MapPoint_Info_C", "ExecuteUbergraph_WBP_MapPoint_Info");
 
-	Params::WBP_MapPoint_Info_C_SetFTInfo Parms{};
+	Params::WBP_MapPoint_Info_C_ExecuteUbergraph_WBP_MapPoint_Info Parms{};
 
-	Parms.FTID = FTID;
-	Parms.CanTeleport = CanTeleport;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_MapPoint_Info.WBP_MapPoint_Info_C.SetCampInfo
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    CanTeleport                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FGuid&                     BaseCampId                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MapPoint_Info_C::SetCampInfo(bool CanTeleport, const struct FGuid& BaseCampId)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapPoint_Info_C", "SetCampInfo");
-
-	Params::WBP_MapPoint_Info_C_SetCampInfo Parms{};
-
-	Parms.CanTeleport = CanTeleport;
-	Parms.BaseCampId = std::move(BaseCampId);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -201,39 +121,63 @@ void UWBP_MapPoint_Info_C::SetBossInfo(bool IsDefeated, const class FName& Chara
 }
 
 
-// Function WBP_MapPoint_Info.WBP_MapPoint_Info_C.ExecuteUbergraph_WBP_MapPoint_Info
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_MapPoint_Info.WBP_MapPoint_Info_C.SetCampInfo
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    CanTeleport                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGuid&                     BaseCampId                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MapPoint_Info_C::ExecuteUbergraph_WBP_MapPoint_Info(int32 EntryPoint)
+void UWBP_MapPoint_Info_C::SetCampInfo(bool CanTeleport, const struct FGuid& BaseCampId)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapPoint_Info_C", "ExecuteUbergraph_WBP_MapPoint_Info");
+		Func = Class->GetFunction("WBP_MapPoint_Info_C", "SetCampInfo");
 
-	Params::WBP_MapPoint_Info_C_ExecuteUbergraph_WBP_MapPoint_Info Parms{};
+	Params::WBP_MapPoint_Info_C_SetCampInfo Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.CanTeleport = CanTeleport;
+	Parms.BaseCampId = std::move(BaseCampId);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_MapPoint_Info.WBP_MapPoint_Info_C.AppendQuestInfo
+// Function WBP_MapPoint_Info.WBP_MapPoint_Info_C.SetFTInfo
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             QuestId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             FTID                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    CanTeleport                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MapPoint_Info_C::AppendQuestInfo(class FName QuestId)
+void UWBP_MapPoint_Info_C::SetFTInfo(class FName FTID, bool CanTeleport)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapPoint_Info_C", "AppendQuestInfo");
+		Func = Class->GetFunction("WBP_MapPoint_Info_C", "SetFTInfo");
 
-	Params::WBP_MapPoint_Info_C_AppendQuestInfo Parms{};
+	Params::WBP_MapPoint_Info_C_SetFTInfo Parms{};
+
+	Parms.FTID = FTID;
+	Parms.CanTeleport = CanTeleport;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MapPoint_Info.WBP_MapPoint_Info_C.SetQuestInfo
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             QuestId                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MapPoint_Info_C::SetQuestInfo(class FName QuestId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MapPoint_Info_C", "SetQuestInfo");
+
+	Params::WBP_MapPoint_Info_C_SetQuestInfo Parms{};
 
 	Parms.QuestId = QuestId;
 
@@ -241,35 +185,91 @@ void UWBP_MapPoint_Info_C::AppendQuestInfo(class FName QuestId)
 }
 
 
-// Function WBP_MapPoint_Info.WBP_MapPoint_Info_C.AllReset
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_MapPoint_Info.WBP_MapPoint_Info_C.SetStandaloneBossInfo
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsDefeated                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const TArray<class FName>&              CharacterIds                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// int32                                   Level                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             BossBattleRow                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MapPoint_Info_C::AllReset()
+void UWBP_MapPoint_Info_C::SetStandaloneBossInfo(bool IsDefeated, const TArray<class FName>& CharacterIds, int32 Level, class FName BossBattleRow)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapPoint_Info_C", "AllReset");
+		Func = Class->GetFunction("WBP_MapPoint_Info_C", "SetStandaloneBossInfo");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_MapPoint_Info_C_SetStandaloneBossInfo Parms{};
+
+	Parms.IsDefeated = IsDefeated;
+	Parms.CharacterIds = std::move(CharacterIds);
+	Parms.Level = Level;
+	Parms.BossBattleRow = BossBattleRow;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_MapPoint_Info.WBP_MapPoint_Info_C.AdjustSide
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_MapPoint_Info.WBP_MapPoint_Info_C.SetTowerBossInfo
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FGeometry&                 TargetGeometry                                         (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// class APalBossTower*                    BossTower                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    CanTeleport                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MapPoint_Info_C::AdjustSide(const struct FGeometry& TargetGeometry)
+void UWBP_MapPoint_Info_C::SetTowerBossInfo(class APalBossTower* BossTower, bool CanTeleport)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MapPoint_Info_C", "AdjustSide");
+		Func = Class->GetFunction("WBP_MapPoint_Info_C", "SetTowerBossInfo");
 
-	Params::WBP_MapPoint_Info_C_AdjustSide Parms{};
+	Params::WBP_MapPoint_Info_C_SetTowerBossInfo Parms{};
 
-	Parms.TargetGeometry = std::move(TargetGeometry);
+	Parms.BossTower = BossTower;
+	Parms.CanTeleport = CanTeleport;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MapPoint_Info.WBP_MapPoint_Info_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MapPoint_Info_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MapPoint_Info_C", "Tick");
+
+	Params::WBP_MapPoint_Info_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MapPoint_Info.WBP_MapPoint_Info_C.ToggleDisplay
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ShouldDisplay                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MapPoint_Info_C::ToggleDisplay(bool ShouldDisplay)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MapPoint_Info_C", "ToggleDisplay");
+
+	Params::WBP_MapPoint_Info_C_ToggleDisplay Parms{};
+
+	Parms.ShouldDisplay = ShouldDisplay;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

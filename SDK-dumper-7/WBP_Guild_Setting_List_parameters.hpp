@@ -17,44 +17,32 @@
 namespace SDK::Params
 {
 
-// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.BndEvt__WBP_Guild_Setting_List_WBP_OptionSettings_ListContentSwitch_K2Node_ComponentBoundEvent_1_OnSwitcherChanged__DelegateSignature
+// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.SetupOnOff
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_Guild_Setting_List_C_BndEvt__WBP_Guild_Setting_List_WBP_OptionSettings_ListContentSwitch_K2Node_ComponentBoundEvent_1_OnSwitcherChanged__DelegateSignature final
+struct WBP_Guild_Setting_List_C_SetupOnOff final
 {
 public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsOn;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Guild_Setting_List_C_BndEvt__WBP_Guild_Setting_List_WBP_OptionSettings_ListContentSwitch_K2Node_ComponentBoundEvent_1_OnSwitcherChanged__DelegateSignature;
+DUMPER7_ASSERTS_WBP_Guild_Setting_List_C_SetupOnOff;
 
-// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.BndEvt__WBP_Guild_Setting_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Guild_Setting_List_C_BndEvt__WBP_Guild_Setting_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Guild_Setting_List_C_BndEvt__WBP_Guild_Setting_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.ExecuteUbergraph_WBP_Guild_Setting_List
+// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.SetText
 // 0x0018 (0x0018 - 0x0000)
-struct WBP_Guild_Setting_List_C_ExecuteUbergraph_WBP_Guild_Setting_List final
+struct WBP_Guild_Setting_List_C_SetText final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_IsOn;                   // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   InText;                                            // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-DUMPER7_ASSERTS_WBP_Guild_Setting_List_C_ExecuteUbergraph_WBP_Guild_Setting_List;
+DUMPER7_ASSERTS_WBP_Guild_Setting_List_C_SetText;
 
-// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.GetPermissionType
+// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.SetPermissionType
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_Guild_Setting_List_C_GetPermissionType final
+struct WBP_Guild_Setting_List_C_SetPermissionType final
 {
 public:
-	EPalGuildPermission                           PermissionType;                                    // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalGuildPermission                           PermissionType;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Guild_Setting_List_C_GetPermissionType;
+DUMPER7_ASSERTS_WBP_Guild_Setting_List_C_SetPermissionType;
 
 // Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.SetEnableSetting
 // 0x0030 (0x0030 - 0x0000)
@@ -79,32 +67,44 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Guild_Setting_List_C_SetEnableSetting;
 
-// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.SetPermissionType
+// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.GetPermissionType
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_Guild_Setting_List_C_SetPermissionType final
+struct WBP_Guild_Setting_List_C_GetPermissionType final
 {
 public:
-	EPalGuildPermission                           PermissionType;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalGuildPermission                           PermissionType;                                    // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Guild_Setting_List_C_SetPermissionType;
+DUMPER7_ASSERTS_WBP_Guild_Setting_List_C_GetPermissionType;
 
-// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.SetText
+// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.ExecuteUbergraph_WBP_Guild_Setting_List
 // 0x0018 (0x0018 - 0x0000)
-struct WBP_Guild_Setting_List_C_SetText final
+struct WBP_Guild_Setting_List_C_ExecuteUbergraph_WBP_Guild_Setting_List final
 {
 public:
-	class FText                                   InText;                                            // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_IsOn;                   // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Guild_Setting_List_C_SetText;
+DUMPER7_ASSERTS_WBP_Guild_Setting_List_C_ExecuteUbergraph_WBP_Guild_Setting_List;
 
-// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.SetupOnOff
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Guild_Setting_List_C_SetupOnOff final
+// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.BndEvt__WBP_Guild_Setting_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Guild_Setting_List_C_BndEvt__WBP_Guild_Setting_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
 {
 public:
-	bool                                          bIsOn;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Guild_Setting_List_C_SetupOnOff;
+DUMPER7_ASSERTS_WBP_Guild_Setting_List_C_BndEvt__WBP_Guild_Setting_List_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_Guild_Setting_List.WBP_Guild_Setting_List_C.BndEvt__WBP_Guild_Setting_List_WBP_OptionSettings_ListContentSwitch_K2Node_ComponentBoundEvent_1_OnSwitcherChanged__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Guild_Setting_List_C_BndEvt__WBP_Guild_Setting_List_WBP_OptionSettings_ListContentSwitch_K2Node_ComponentBoundEvent_1_OnSwitcherChanged__DelegateSignature final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Guild_Setting_List_C_BndEvt__WBP_Guild_Setting_List_WBP_OptionSettings_ListContentSwitch_K2Node_ComponentBoundEvent_1_OnSwitcherChanged__DelegateSignature;
 
 }
 

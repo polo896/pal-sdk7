@@ -53,8 +53,8 @@ class UDataRegistry : public UObject
     FName RegistryType;                                                               // 0x0028 (size: 0x8)
     FDataRegistryIdFormat IdFormat;                                                   // 0x0030 (size: 0x8)
     class UScriptStruct* ItemStruct;                                                  // 0x0038 (size: 0x8)
-    TArray<class UDataRegistrySource*> DataSources;                                   // 0x0040 (size: 0x10)
-    TArray<class UDataRegistrySource*> RuntimeSources;                                // 0x0050 (size: 0x10)
+    TArray<UDataRegistrySource*> DataSources;                                         // 0x0040 (size: 0x10)
+    TArray<UDataRegistrySource*> RuntimeSources;                                      // 0x0050 (size: 0x10)
     float TimerUpdateFrequency;                                                       // 0x0060 (size: 0x4)
     FDataRegistryCachePolicy DefaultCachePolicy;                                      // 0x0064 (size: 0x14)
 
@@ -76,7 +76,7 @@ class UDataRegistrySource : public UObject
 
 class UDataRegistrySource_CurveTable : public UDataRegistrySource
 {
-    TSoftObjectPtr<UCurveTable> SourceTable;                                          // 0x0038 (size: 0x30)
+    TSoftObjectPtr<class UCurveTable> SourceTable;                                    // 0x0038 (size: 0x30)
     FDataRegistrySource_DataTableRules TableRules;                                    // 0x0068 (size: 0x8)
     class UCurveTable* CachedTable;                                                   // 0x0070 (size: 0x8)
     class UCurveTable* PreloadTable;                                                  // 0x0078 (size: 0x8)
@@ -85,7 +85,7 @@ class UDataRegistrySource_CurveTable : public UDataRegistrySource
 
 class UDataRegistrySource_DataTable : public UDataRegistrySource
 {
-    TSoftObjectPtr<UDataTable> SourceTable;                                           // 0x0038 (size: 0x30)
+    TSoftObjectPtr<class UDataTable> SourceTable;                                     // 0x0038 (size: 0x30)
     FDataRegistrySource_DataTableRules TableRules;                                    // 0x0068 (size: 0x8)
     class UDataTable* CachedTable;                                                    // 0x0070 (size: 0x8)
     class UDataTable* PreloadTable;                                                   // 0x0078 (size: 0x8)
@@ -114,7 +114,7 @@ class UMetaDataRegistrySource : public UDataRegistrySource
 {
     EMetaDataRegistrySourceAssetUsage AssetUsage;                                     // 0x0038 (size: 0x1)
     FAssetManagerSearchRules SearchRules;                                             // 0x0040 (size: 0x50)
-    TMap<class FName, class UDataRegistrySource*> RuntimeChildren;                    // 0x0090 (size: 0x50)
+    TMap<FName, UDataRegistrySource*> RuntimeChildren;                                // 0x0090 (size: 0x50)
 
 }; // Size: 0x108
 

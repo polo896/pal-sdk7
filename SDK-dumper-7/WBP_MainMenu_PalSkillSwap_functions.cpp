@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_MainMenu_PalSkillSwap.WBP_MainMenu_PalSkillSwap_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_MainMenu_PalSkillSwap_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MainMenu_PalSkillSwap_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_MainMenu_PalSkillSwap.WBP_MainMenu_PalSkillSwap_C.Setup
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -198,6 +184,20 @@ void UWBP_MainMenu_PalSkillSwap_C::Destruct()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_MainMenu_PalSkillSwap_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_MainMenu_PalSkillSwap.WBP_MainMenu_PalSkillSwap_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_MainMenu_PalSkillSwap_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_PalSkillSwap_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -33,10 +33,10 @@ public:
 	TMulticastInlineDelegate<void(int32 Index)>   SwitchTabTo;                                       // 0x02A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__WBP_OptionSettings_TabButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void ExecuteUbergraph_WBP_OptionSettings_TabButton(int32 EntryPoint);
-	void SetName(const class FText& Name_0, int32 Param_Index_0);
 	void SetTabActive(bool Active);
+	void SetName(const class FText& Name_0, int32 Param_Index_0);
+	void ExecuteUbergraph_WBP_OptionSettings_TabButton(int32 EntryPoint);
+	void BndEvt__WBP_OptionSettings_TabButton_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 
 public:
 	static class UClass* StaticClass()

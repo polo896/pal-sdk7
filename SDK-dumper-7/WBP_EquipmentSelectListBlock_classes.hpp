@@ -21,9 +21,9 @@ namespace SDK
 class UWBP_EquipmentSelectListBlock_C final : public UWBP_PalItemListBlock_C
 {
 public:
-	void EditCreatedSlotWidget(class UWBP_PalItemSlotButtonBase_C* createdSlotWidget, class UWidget** editedWidget);
-	void GetAllItemSlotButtons(TArray<class UWBP_PalItemSlotButtonBase_C*>* slotButtons);
 	void GetFocusTarget(class UWidget** NewParam);
+	void GetAllItemSlotButtons(TArray<class UWBP_PalItemSlotButtonBase_C*>* slotButtons);
+	void EditCreatedSlotWidget(class UWBP_PalItemSlotButtonBase_C* createdSlotWidget, class UWidget** editedWidget);
 
 public:
 	static class UClass* StaticClass()

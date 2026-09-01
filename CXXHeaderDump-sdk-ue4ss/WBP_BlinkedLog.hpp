@@ -23,7 +23,7 @@ class UWBP_BlinkedLog_C : public UPalLogWidgetBase
     void SetLogText(const FText& InText);
     void RequestInAnime();
     void RequestOutAnime();
-    void RequestLoadIconTexture(const TSoftObjectPtr<UTexture2D>& softTexturePtr);
+    void RequestLoadIconTexture(const TSoftObjectPtr<class UTexture2D>& softTexturePtr);
     void OnInitialized();
     void SetAdditionalData(const FPalLogAdditionalData& inAdditionalData);
     void Construct();

@@ -17,35 +17,15 @@
 namespace SDK
 {
 
-// Function WBP_Buildup_Gauge.WBP_Buildup_Gauge_C.ExecuteUbergraph_WBP_Buildup_Gauge
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Buildup_Gauge_C::ExecuteUbergraph_WBP_Buildup_Gauge(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Gauge_C", "ExecuteUbergraph_WBP_Buildup_Gauge");
-
-	Params::WBP_Buildup_Gauge_C_ExecuteUbergraph_WBP_Buildup_Gauge Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Buildup_Gauge.WBP_Buildup_Gauge_C.SetEmpty
+// Function WBP_Buildup_Gauge.WBP_Buildup_Gauge_C.SetSelect
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Buildup_Gauge_C::SetEmpty()
+void UWBP_Buildup_Gauge_C::SetSelect()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Gauge_C", "SetEmpty");
+		Func = Class->GetFunction("WBP_Buildup_Gauge_C", "SetSelect");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,17 +51,37 @@ void UWBP_Buildup_Gauge_C::SetFill(bool IsFill)
 }
 
 
-// Function WBP_Buildup_Gauge.WBP_Buildup_Gauge_C.SetSelect
+// Function WBP_Buildup_Gauge.WBP_Buildup_Gauge_C.SetEmpty
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Buildup_Gauge_C::SetSelect()
+void UWBP_Buildup_Gauge_C::SetEmpty()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Buildup_Gauge_C", "SetSelect");
+		Func = Class->GetFunction("WBP_Buildup_Gauge_C", "SetEmpty");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Buildup_Gauge.WBP_Buildup_Gauge_C.ExecuteUbergraph_WBP_Buildup_Gauge
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Buildup_Gauge_C::ExecuteUbergraph_WBP_Buildup_Gauge(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Buildup_Gauge_C", "ExecuteUbergraph_WBP_Buildup_Gauge");
+
+	Params::WBP_Buildup_Gauge_C_ExecuteUbergraph_WBP_Buildup_Gauge Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

@@ -42,16 +42,16 @@ public:
 	TMap<EPalBuildObjectTypeA, TSoftObjectPtr<class UTexture2D>> IconMap;                            // 0x02E0(0x0050)(Edit, BlueprintVisible)
 
 public:
-	void BndEvt__WBP_IngameMenuConstruction_Tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void Construct();
-	void ExecuteUbergraph_WBP_IngameMenuConstruction_Tab_OLD(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime);
-	void ResetActiveTab();
-	void SetActiveNewMark(bool Active);
-	void SetActiveTab(int32 Index_0);
-	void SetTab(int32 Num, EPalBuildObjectTypeA TypeA);
-	void SetupTabs();
 	void SwitchToTab();
+	void SetupTabs();
+	void SetTab(int32 Num, EPalBuildObjectTypeA TypeA);
+	void SetActiveTab(int32 Index_0);
+	void SetActiveNewMark(bool Active);
+	void ResetActiveTab();
+	void PreConstruct(bool IsDesignTime);
+	void ExecuteUbergraph_WBP_IngameMenuConstruction_Tab_OLD(int32 EntryPoint);
+	void Construct();
+	void BndEvt__WBP_IngameMenuConstruction_Tab_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 
 	void GetTabNum(int32* TabNum_0) const;
 

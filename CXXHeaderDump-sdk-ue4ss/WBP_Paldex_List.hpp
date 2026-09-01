@@ -37,7 +37,7 @@ class UWBP_Paldex_List_C : public UUserWidget
     void GetCharacterID(FName& CharacterID);
     void SetupForWorldTreeDragon2(FPalUIPaldex_DisplayInfo DisplayInfo);
     void SetupBySimpleText(FText InText);
-    void SetupForSkinData(FName SkinName, TSoftObjectPtr<UTexture2D> Texture, FText LocalizedSkinNameText);
+    void SetupForSkinData(FName SkinName, TSoftObjectPtr<class UTexture2D> Texture, FText LocalizedSkinNameText);
     void SetupByCharacterID(FName CharacterID);
     void SetVisibilityNewMark(ESlateVisibility NewVisibility);
     void OnClickEvent();

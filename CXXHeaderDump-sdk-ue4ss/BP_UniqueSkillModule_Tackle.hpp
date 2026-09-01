@@ -37,7 +37,7 @@ class UBP_UniqueSkillModule_Tackle_C : public UPalUniqueSkillModule
     bool bLocalVelocityControl;                                                       // 0x0238 (size: 0x1)
 
     void CanDashSkip(const FGeneralAnimationParameter& GeneralAnimationParameter, class APalCharacter* Character, bool& Success);
-    void IsPlayingAnyMontage(TArray<class UAnimMontage*>& Montages, bool& Result);
+    void IsPlayingAnyMontage(TArray<UAnimMontage*>& Montages, bool& Result);
     void IsPlayingEndMontage(bool& Result);
     void SetFlagName(FName flagName);
     void GetCurrentState(TEnumAsByte<EAction_Unique_Tackle::Type>& State);

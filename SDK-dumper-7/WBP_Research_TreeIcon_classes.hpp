@@ -46,20 +46,20 @@ public:
 	bool                                          Is_Pined;                                          // 0x0319(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_DIsable();
-	void AnmEvent_Focus();
-	void AnmEvent_Lock();
-	void AnmEvent_NoFocus();
-	void AnmEvent_Progressing();
-	void AnmEvent_Unlock();
-	void BndEvt__WBP_Research_TreeIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Research_TreeIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Research_TreeIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void Construct();
-	void ExecuteUbergraph_WBP_Research_TreeIcon(int32 EntryPoint);
-	void SetDisplayType(ETreeNodeDisplayType DisplayType);
-	void Setup(const struct FPalUIGuildLabResearchInfo& ResearchInfo);
 	void SwitchPin(bool IsPined);
+	void Setup(const struct FPalUIGuildLabResearchInfo& ResearchInfo);
+	void SetDisplayType(ETreeNodeDisplayType DisplayType);
+	void ExecuteUbergraph_WBP_Research_TreeIcon(int32 EntryPoint);
+	void Construct();
+	void BndEvt__WBP_Research_TreeIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Research_TreeIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Research_TreeIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void AnmEvent_Unlock();
+	void AnmEvent_Progressing();
+	void AnmEvent_NoFocus();
+	void AnmEvent_Lock();
+	void AnmEvent_Focus();
+	void AnmEvent_DIsable();
 
 public:
 	static class UClass* StaticClass()

@@ -50,25 +50,25 @@ public:
 	double                                        HitSinkOffset;                                     // 0x0740(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void CalcNextPoint();
-	void EndPick();
-	void EscapeMove(double DeltaTime);
-	void ExecuteUbergraph_BP_Fishing_FishShadowBase(int32 EntryPoint);
-	void FishingHit();
-	void GetSocketMouthLocation(struct FVector* MouthLocation);
-	void OnEscape();
-	void OnFishingStart();
-	void OnInitialized();
-	void OnSearchHit(const struct FVector& PickLocation_0);
-	void OnSpawnedRareEffect(class UNiagaraSystem* Effect);
-	void PickMove(double DeltaTime);
-	void ReceiveBeginPlay();
-	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
-	void ReceiveTick(float DeltaSeconds);
-	void RestDelayTimer();
-	void SetupMesh();
-	void StartPick(const struct FVector& PickLocation_0);
 	void Update_Move(float DeltaTime);
+	void StartPick(const struct FVector& PickLocation_0);
+	void SetupMesh();
+	void RestDelayTimer();
+	void ReceiveTick(float DeltaSeconds);
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void ReceiveBeginPlay();
+	void PickMove(double DeltaTime);
+	void OnSpawnedRareEffect(class UNiagaraSystem* Effect);
+	void OnSearchHit(const struct FVector& PickLocation_0);
+	void OnInitialized();
+	void OnFishingStart();
+	void OnEscape();
+	void GetSocketMouthLocation(struct FVector* MouthLocation);
+	void FishingHit();
+	void ExecuteUbergraph_BP_Fishing_FishShadowBase(int32 EntryPoint);
+	void EscapeMove(double DeltaTime);
+	void EndPick();
+	void CalcNextPoint();
 
 public:
 	static class UClass* StaticClass()

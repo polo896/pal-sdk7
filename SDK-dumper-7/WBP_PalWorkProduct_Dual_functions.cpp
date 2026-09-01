@@ -17,129 +17,301 @@
 namespace SDK
 {
 
-// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.AnmEvent_ForceSimple
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalWorkProduct_Dual_C::AnmEvent_ForceSimple()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "AnmEvent_ForceSimple");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.AnmEvent_NoRecipe
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalWorkProduct_Dual_C::AnmEvent_NoRecipe()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "AnmEvent_NoRecipe");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.AnmEvent_ToDetail
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalWorkProduct_Dual_C::AnmEvent_ToDetail()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "AnmEvent_ToDetail");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.AnmEvent_ToSimpleDetail
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalWorkProduct_Dual_C::AnmEvent_ToSimpleDetail()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "AnmEvent_ToSimpleDetail");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PalWorkProduct_Dual_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.CreateWidgetSets
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalWorkProduct_Dual_C::CreateWidgetSets()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "CreateWidgetSets");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.ExecuteUbergraph_WBP_PalWorkProduct_Dual
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.UpdateRequireInfo
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalWorkBase*                     Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData>&DisplayData                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_PalWorkProduct_Dual_C::ExecuteUbergraph_WBP_PalWorkProduct_Dual(int32 EntryPoint)
+void UWBP_PalWorkProduct_Dual_C::UpdateRequireInfo(class UPalWorkBase* Work, TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData>& DisplayData)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "ExecuteUbergraph_WBP_PalWorkProduct_Dual");
+		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "UpdateRequireInfo");
 
-	Params::WBP_PalWorkProduct_Dual_C_ExecuteUbergraph_WBP_PalWorkProduct_Dual Parms{};
+	Params::WBP_PalWorkProduct_Dual_C_UpdateRequireInfo Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Work = Work;
+	Parms.DisplayData = std::move(DisplayData);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	DisplayData = std::move(Parms.DisplayData);
+}
+
+
+// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.SetWorkSuitability
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalWorkSuitability                     WorkSuitability                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWorkProduct_Dual_C::SetWorkSuitability(EPalWorkSuitability WorkSuitability)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "SetWorkSuitability");
+
+	Params::WBP_PalWorkProduct_Dual_C_SetWorkSuitability Parms{};
+
+	Parms.WorkSuitability = WorkSuitability;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.GetTargetWorkSuitabilityByWork
-// (Public, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.SetupUI_ForWorkSlot
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bLeft                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPalWorkProgress*                 Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalWorkProgressMultiType*        Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalWorkProduct_Dual_C::GetTargetWorkSuitabilityByWork(bool bLeft, class UPalWorkProgress* Work)
+void UWBP_PalWorkProduct_Dual_C::SetupUI_ForWorkSlot(class UPalWorkProgressMultiType* Work, int32 Index_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "GetTargetWorkSuitabilityByWork");
+		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "SetupUI_ForWorkSlot");
 
-	Params::WBP_PalWorkProduct_Dual_C_GetTargetWorkSuitabilityByWork Parms{};
+	Params::WBP_PalWorkProduct_Dual_C_SetupUI_ForWorkSlot Parms{};
 
-	Parms.bLeft = bLeft;
+	Parms.Work = Work;
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.SetupUI
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalWorkProgressMultiType*        WorkProgressMulti                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWorkProduct_Dual_C::SetupUI(class UPalWorkProgressMultiType* WorkProgressMulti)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "SetupUI");
+
+	Params::WBP_PalWorkProduct_Dual_C_SetupUI Parms{};
+
+	Parms.WorkProgressMulti = WorkProgressMulti;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.SetProductNum
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   nowProductNum                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   maxProductNum                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWorkProduct_Dual_C::SetProductNum(int32 nowProductNum, int32 maxProductNum)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "SetProductNum");
+
+	Params::WBP_PalWorkProduct_Dual_C_SetProductNum Parms{};
+
+	Parms.nowProductNum = nowProductNum;
+	Parms.maxProductNum = maxProductNum;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.SetProductItemID
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ItemId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWorkProduct_Dual_C::SetProductItemID(class FName ItemId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "SetProductItemID");
+
+	Params::WBP_PalWorkProduct_Dual_C_SetProductItemID Parms{};
+
+	Parms.ItemId = ItemId;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.SetInfinityProductMode
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalWorkProduct_Dual_C::SetInfinityProductMode()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "SetInfinityProductMode");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.SetIcon
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ItemId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWorkProduct_Dual_C::SetIcon(class FName ItemId)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "SetIcon");
+
+	Params::WBP_PalWorkProduct_Dual_C_SetIcon Parms{};
+
+	Parms.ItemId = ItemId;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.Set Invalid Recipe Detail
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalWorkProduct_Dual_C::Set_Invalid_Recipe_Detail()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "Set Invalid Recipe Detail");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.RefreshWorkPalSlots
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalWorkProgressMultiType*        Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWorkProduct_Dual_C::RefreshWorkPalSlots(class UPalWorkProgressMultiType* Work)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "RefreshWorkPalSlots");
+
+	Params::WBP_PalWorkProduct_Dual_C_RefreshWorkPalSlots Parms{};
+
 	Parms.Work = Work;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.RefreshWorkPalSlot
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalWorkProgressMultiType*        Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const int32                             WidgetIndex                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWorkProduct_Dual_C::RefreshWorkPalSlot(class UPalWorkProgressMultiType* Work, const int32 WidgetIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "RefreshWorkPalSlot");
+
+	Params::WBP_PalWorkProduct_Dual_C_RefreshWorkPalSlot Parms{};
+
+	Parms.Work = Work;
+	Parms.WidgetIndex = WidgetIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.ReflectWorkProgressRateForTargetSlot
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalWorkProgressMultiType*        WorkProgress                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   WidgetIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWorkProduct_Dual_C::ReflectWorkProgressRateForTargetSlot(class UPalWorkProgressMultiType* WorkProgress, int32 WidgetIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "ReflectWorkProgressRateForTargetSlot");
+
+	Params::WBP_PalWorkProduct_Dual_C_ReflectWorkProgressRateForTargetSlot Parms{};
+
+	Parms.WorkProgress = WorkProgress;
+	Parms.WidgetIndex = WidgetIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.ReflectWorkProgressRate
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalWorkProgressMultiType*        WorkProgress                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWorkProduct_Dual_C::ReflectWorkProgressRate(class UPalWorkProgressMultiType* WorkProgress)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "ReflectWorkProgressRate");
+
+	Params::WBP_PalWorkProduct_Dual_C_ReflectWorkProgressRate Parms{};
+
+	Parms.WorkProgress = WorkProgress;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.OnUpdateProgress_ForTarget
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalWorkProgressMultiType*        Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// EPalWorkSuitability                     WorkSuitability                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UImage*                           WidgetImage_Progress                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWorkProduct_Dual_C::OnUpdateProgress_ForTarget(class UPalWorkProgressMultiType* Work, EPalWorkSuitability WorkSuitability, class UImage* WidgetImage_Progress)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "OnUpdateProgress_ForTarget");
+
+	Params::WBP_PalWorkProduct_Dual_C_OnUpdateProgress_ForTarget Parms{};
+
+	Parms.Work = Work;
+	Parms.WorkSuitability = WorkSuitability;
+	Parms.WidgetImage_Progress = WidgetImage_Progress;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_PalWorkProduct_Dual_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -168,320 +340,148 @@ bool UWBP_PalWorkProduct_Dual_C::IsCharacterAssignedFixedToTargetWork(class UPal
 }
 
 
-// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.OnInitialized
+// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.GetTargetWorkSuitabilityByWork
+// (Public, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool                                    bLeft                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalWorkProgress*                 Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWorkProduct_Dual_C::GetTargetWorkSuitabilityByWork(bool bLeft, class UPalWorkProgress* Work)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "GetTargetWorkSuitabilityByWork");
+
+	Params::WBP_PalWorkProduct_Dual_C_GetTargetWorkSuitabilityByWork Parms{};
+
+	Parms.bLeft = bLeft;
+	Parms.Work = Work;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.ExecuteUbergraph_WBP_PalWorkProduct_Dual
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWorkProduct_Dual_C::ExecuteUbergraph_WBP_PalWorkProduct_Dual(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "ExecuteUbergraph_WBP_PalWorkProduct_Dual");
+
+	Params::WBP_PalWorkProduct_Dual_C_ExecuteUbergraph_WBP_PalWorkProduct_Dual Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.CreateWidgetSets
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalWorkProduct_Dual_C::CreateWidgetSets()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "CreateWidgetSets");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_PalWorkProduct_Dual_C::OnInitialized()
+void UWBP_PalWorkProduct_Dual_C::Construct()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.OnUpdateProgress_ForTarget
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalWorkProgressMultiType*        Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// EPalWorkSuitability                     WorkSuitability                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UImage*                           WidgetImage_Progress                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.AnmEvent_ToSimpleDetail
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalWorkProduct_Dual_C::OnUpdateProgress_ForTarget(class UPalWorkProgressMultiType* Work, EPalWorkSuitability WorkSuitability, class UImage* WidgetImage_Progress)
+void UWBP_PalWorkProduct_Dual_C::AnmEvent_ToSimpleDetail()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "OnUpdateProgress_ForTarget");
-
-	Params::WBP_PalWorkProduct_Dual_C_OnUpdateProgress_ForTarget Parms{};
-
-	Parms.Work = Work;
-	Parms.WorkSuitability = WorkSuitability;
-	Parms.WidgetImage_Progress = WidgetImage_Progress;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.ReflectWorkProgressRate
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalWorkProgressMultiType*        WorkProgress                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalWorkProduct_Dual_C::ReflectWorkProgressRate(class UPalWorkProgressMultiType* WorkProgress)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "ReflectWorkProgressRate");
-
-	Params::WBP_PalWorkProduct_Dual_C_ReflectWorkProgressRate Parms{};
-
-	Parms.WorkProgress = WorkProgress;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.ReflectWorkProgressRateForTargetSlot
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalWorkProgressMultiType*        WorkProgress                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   WidgetIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalWorkProduct_Dual_C::ReflectWorkProgressRateForTargetSlot(class UPalWorkProgressMultiType* WorkProgress, int32 WidgetIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "ReflectWorkProgressRateForTargetSlot");
-
-	Params::WBP_PalWorkProduct_Dual_C_ReflectWorkProgressRateForTargetSlot Parms{};
-
-	Parms.WorkProgress = WorkProgress;
-	Parms.WidgetIndex = WidgetIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.RefreshWorkPalSlot
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalWorkProgressMultiType*        Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const int32                             WidgetIndex                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalWorkProduct_Dual_C::RefreshWorkPalSlot(class UPalWorkProgressMultiType* Work, const int32 WidgetIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "RefreshWorkPalSlot");
-
-	Params::WBP_PalWorkProduct_Dual_C_RefreshWorkPalSlot Parms{};
-
-	Parms.Work = Work;
-	Parms.WidgetIndex = WidgetIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.RefreshWorkPalSlots
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalWorkProgressMultiType*        Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalWorkProduct_Dual_C::RefreshWorkPalSlots(class UPalWorkProgressMultiType* Work)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "RefreshWorkPalSlots");
-
-	Params::WBP_PalWorkProduct_Dual_C_RefreshWorkPalSlots Parms{};
-
-	Parms.Work = Work;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.Set Invalid Recipe Detail
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalWorkProduct_Dual_C::Set_Invalid_Recipe_Detail()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "Set Invalid Recipe Detail");
+		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "AnmEvent_ToSimpleDetail");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.SetIcon
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ItemId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.AnmEvent_ToDetail
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalWorkProduct_Dual_C::SetIcon(class FName ItemId)
+void UWBP_PalWorkProduct_Dual_C::AnmEvent_ToDetail()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "SetIcon");
-
-	Params::WBP_PalWorkProduct_Dual_C_SetIcon Parms{};
-
-	Parms.ItemId = ItemId;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.SetInfinityProductMode
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalWorkProduct_Dual_C::SetInfinityProductMode()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "SetInfinityProductMode");
+		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "AnmEvent_ToDetail");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.SetProductItemID
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ItemId                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.AnmEvent_NoRecipe
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalWorkProduct_Dual_C::SetProductItemID(class FName ItemId)
+void UWBP_PalWorkProduct_Dual_C::AnmEvent_NoRecipe()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "SetProductItemID");
+		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "AnmEvent_NoRecipe");
 
-	Params::WBP_PalWorkProduct_Dual_C_SetProductItemID Parms{};
-
-	Parms.ItemId = ItemId;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.SetProductNum
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   nowProductNum                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   maxProductNum                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.AnmEvent_ForceSimple
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalWorkProduct_Dual_C::SetProductNum(int32 nowProductNum, int32 maxProductNum)
+void UWBP_PalWorkProduct_Dual_C::AnmEvent_ForceSimple()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "SetProductNum");
+		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "AnmEvent_ForceSimple");
 
-	Params::WBP_PalWorkProduct_Dual_C_SetProductNum Parms{};
-
-	Parms.nowProductNum = nowProductNum;
-	Parms.maxProductNum = maxProductNum;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.SetupUI
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalWorkProgressMultiType*        WorkProgressMulti                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalWorkProduct_Dual_C::SetupUI(class UPalWorkProgressMultiType* WorkProgressMulti)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "SetupUI");
-
-	Params::WBP_PalWorkProduct_Dual_C_SetupUI Parms{};
-
-	Parms.WorkProgressMulti = WorkProgressMulti;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.SetupUI_ForWorkSlot
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalWorkProgressMultiType*        Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalWorkProduct_Dual_C::SetupUI_ForWorkSlot(class UPalWorkProgressMultiType* Work, int32 Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "SetupUI_ForWorkSlot");
-
-	Params::WBP_PalWorkProduct_Dual_C_SetupUI_ForWorkSlot Parms{};
-
-	Parms.Work = Work;
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.SetWorkSuitability
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalWorkSuitability                     WorkSuitability                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalWorkProduct_Dual_C::SetWorkSuitability(EPalWorkSuitability WorkSuitability)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "SetWorkSuitability");
-
-	Params::WBP_PalWorkProduct_Dual_C_SetWorkSuitability Parms{};
-
-	Parms.WorkSuitability = WorkSuitability;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.UpdateRequireInfo
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalWorkBase*                     Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData>&DisplayData                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_PalWorkProduct_Dual_C::UpdateRequireInfo(class UPalWorkBase* Work, TArray<struct FPalUIMapObjectStatusIndicatorWorkSuitabilityDisplayData>& DisplayData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "UpdateRequireInfo");
-
-	Params::WBP_PalWorkProduct_Dual_C_UpdateRequireInfo Parms{};
-
-	Parms.Work = Work;
-	Parms.DisplayData = std::move(DisplayData);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	DisplayData = std::move(Parms.DisplayData);
-}
-
-
-// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.GetWidgetSetByIndex
+// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.GetWorkSuitabilityColor
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFPalUIWorkProductDualWidgetSet  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
+// EPalWorkSuitability                     Target                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-struct FFPalUIWorkProductDualWidgetSet UWBP_PalWorkProduct_Dual_C::GetWidgetSetByIndex(int32 Index_0) const
+struct FLinearColor UWBP_PalWorkProduct_Dual_C::GetWorkSuitabilityColor(EPalWorkSuitability Target) const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "GetWidgetSetByIndex");
+		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "GetWorkSuitabilityColor");
 
-	Params::WBP_PalWorkProduct_Dual_C_GetWidgetSetByIndex Parms{};
+	Params::WBP_PalWorkProduct_Dual_C_GetWorkSuitabilityColor Parms{};
 
-	Parms.Index_0 = Index_0;
+	Parms.Target = Target;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -509,22 +509,22 @@ TArray<class UWBP_PalCraftInfo_Pal_C*> UWBP_PalWorkProduct_Dual_C::GetWorkerPalW
 }
 
 
-// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.GetWorkSuitabilityColor
+// Function WBP_PalWorkProduct_Dual.WBP_PalWorkProduct_Dual_C.GetWidgetSetByIndex
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// EPalWorkSuitability                     Target                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                     ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FFPalUIWorkProductDualWidgetSet  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
 
-struct FLinearColor UWBP_PalWorkProduct_Dual_C::GetWorkSuitabilityColor(EPalWorkSuitability Target) const
+struct FFPalUIWorkProductDualWidgetSet UWBP_PalWorkProduct_Dual_C::GetWidgetSetByIndex(int32 Index_0) const
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "GetWorkSuitabilityColor");
+		Func = Class->GetFunction("WBP_PalWorkProduct_Dual_C", "GetWidgetSetByIndex");
 
-	Params::WBP_PalWorkProduct_Dual_C_GetWorkSuitabilityColor Parms{};
+	Params::WBP_PalWorkProduct_Dual_C_GetWidgetSetByIndex Parms{};
 
-	Parms.Target = Target;
+	Parms.Index_0 = Index_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 

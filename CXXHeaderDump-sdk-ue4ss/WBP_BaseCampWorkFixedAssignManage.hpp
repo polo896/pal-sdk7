@@ -6,11 +6,11 @@ class UWBP_BaseCampWorkFixedAssignManage_C : public UPalUserWidgetOverlayUI
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0478 (size: 0x8)
     class UWidgetAnimation* Default_In;                                               // 0x0480 (size: 0x8)
     class UWBP_AssignBoard_C* WBP_AssignBoard;                                        // 0x0488 (size: 0x8)
-    TSoftObjectPtr<UWBP_AssignBoard_WorkListBase_C> LastSelectedWorkListContentWidget; // 0x0490 (size: 0x30)
-    TSoftObjectPtr<UWBP_AssignBoard_WorkListBase_C> LastHoveredWorkListContentWidget; // 0x04C0 (size: 0x30)
+    TSoftObjectPtr<class UWBP_AssignBoard_WorkListBase_C> LastSelectedWorkListContentWidget; // 0x0490 (size: 0x30)
+    TSoftObjectPtr<class UWBP_AssignBoard_WorkListBase_C> LastHoveredWorkListContentWidget; // 0x04C0 (size: 0x30)
     EPalUIFixedAssignManageListSortType NowSortType;                                  // 0x04F0 (size: 0x1)
     TArray<EPalUIFixedAssignManageListSortType> SortTypeOrder;                        // 0x04F8 (size: 0x10)
-    TMap<class EPalUIFixedAssignManageListSortType, class FDataTableRowHandle> SortTypeNameMap; // 0x0508 (size: 0x50)
+    TMap<EPalUIFixedAssignManageListSortType, FDataTableRowHandle> SortTypeNameMap;   // 0x0508 (size: 0x50)
     FPalDataTableRowName_UIInputAction SortInputAction;                               // 0x0558 (size: 0x8)
 
     void UpdateWidgetList(bool ForceReferesh);

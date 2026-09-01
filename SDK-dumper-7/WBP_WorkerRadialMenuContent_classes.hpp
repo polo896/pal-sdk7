@@ -24,8 +24,8 @@ public:
 	class UBP_PalTextBlock_C*                     BP_PalTextBlock_C_41;                              // 0x0450(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void SetText(const class FText& Text);
 	void SetTextColor(const struct FSlateColor& NewColor);
+	void SetText(const class FText& Text);
 
 public:
 	static class UClass* StaticClass()

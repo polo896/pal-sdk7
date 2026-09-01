@@ -1,0 +1,45 @@
+---@meta
+
+---@class UWBP_WorkSuitabilityPreference_CheckBox_0_C : UUserWidget
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field Image_None UImage
+---@field PalCheckBox UPalCheckBox
+---@field WBP_PalInvisibleButton_0 UWBP_PalInvisibleButton_C
+---@field IsEnableCheckBox boolean
+---@field OnCheckStateChanged FWBP_WorkSuitabilityPreference_CheckBox_0_COnCheckStateChanged
+---@field BindedSuitability EPalWorkSuitability
+---@field IsBattleSettingMode boolean
+---@field OnHoveredCheckBox FWBP_WorkSuitabilityPreference_CheckBox_0_COnHoveredCheckBox
+---@field bEnableOperation boolean
+local UWBP_WorkSuitabilityPreference_CheckBox_0_C = {}
+
+function UWBP_WorkSuitabilityPreference_CheckBox_0_C:UpdateOperationPermission() end
+---@param InbEnableOperation boolean
+function UWBP_WorkSuitabilityPreference_CheckBox_0_C:SetOperationPermission(InbEnableOperation) end
+---@param IsBattleSetting boolean
+function UWBP_WorkSuitabilityPreference_CheckBox_0_C:IsBattleSettingCheckBox(IsBattleSetting) end
+function UWBP_WorkSuitabilityPreference_CheckBox_0_C:Setup_ForBattleSetting() end
+---@param IsChecked boolean
+function UWBP_WorkSuitabilityPreference_CheckBox_0_C:SetCheckedState(IsChecked) end
+---@param Suitability EPalWorkSuitability
+function UWBP_WorkSuitabilityPreference_CheckBox_0_C:GetBindedSuitability(Suitability) end
+---@param BindSuitability EPalWorkSuitability
+function UWBP_WorkSuitabilityPreference_CheckBox_0_C:Setup(BindSuitability) end
+---@param IsEnable boolean
+function UWBP_WorkSuitabilityPreference_CheckBox_0_C:SetEnableClick(IsEnable) end
+---@param Button UCommonButtonBase
+function UWBP_WorkSuitabilityPreference_CheckBox_0_C:BndEvt__WBP_WorkSuitabilityPreference_CheckBox_0_WBP_PalInvisibleButton_0_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(Button) end
+---@param bIsChecked boolean
+function UWBP_WorkSuitabilityPreference_CheckBox_0_C:BndEvt__WBP_WorkSuitabilityPreference_CheckBox_0_PalCheckBox_K2Node_ComponentBoundEvent_1_OnCheckBoxComponentStateChanged__DelegateSignature(bIsChecked) end
+---@param Button UCommonButtonBase
+function UWBP_WorkSuitabilityPreference_CheckBox_0_C:BndEvt__WBP_WorkSuitabilityPreference_CheckBox_0_WBP_PalInvisibleButton_0_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(Button) end
+function UWBP_WorkSuitabilityPreference_CheckBox_0_C:OnInitialized() end
+---@param EntryPoint int32
+function UWBP_WorkSuitabilityPreference_CheckBox_0_C:ExecuteUbergraph_WBP_WorkSuitabilityPreference_CheckBox_0(EntryPoint) end
+---@param SelfWidget UWBP_WorkSuitabilityPreference_CheckBox_0_C
+function UWBP_WorkSuitabilityPreference_CheckBox_0_C:OnHoveredCheckBox__DelegateSignature(SelfWidget) end
+---@param IsChecked boolean
+---@param Suitability EPalWorkSuitability
+function UWBP_WorkSuitabilityPreference_CheckBox_0_C:OnCheckStateChanged__DelegateSignature(IsChecked, Suitability) end
+
+

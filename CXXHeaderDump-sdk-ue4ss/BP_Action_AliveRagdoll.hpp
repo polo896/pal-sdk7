@@ -30,7 +30,7 @@ class UBP_Action_AliveRagdoll_C : public UPalActionBase
     void OnBeginAction();
     void TickAction(float DeltaTime);
     void OnEndAction();
-    void SpawnStunEffect(TSoftObjectPtr<UNiagaraSystem> Path);
+    void SpawnStunEffect(TSoftObjectPtr<class UNiagaraSystem> Path);
     void ExecuteUbergraph_BP_Action_AliveRagdoll(int32 EntryPoint);
 }; // Size: 0x230
 

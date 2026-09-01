@@ -6,7 +6,7 @@ class ABP_FishingSpotPalSpawner_C : public APalNPCSpawnerBase
     FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0528 (size: 0x8)
     class UStaticMeshComponent* Debug_Mesh;                                           // 0x0530 (size: 0x8)
     class USceneComponent* DefaultSceneRoot;                                          // 0x0538 (size: 0x8)
-    TArray<class UPalIndividualCharacterHandle*> IndividualHandleList;                // 0x0540 (size: 0x10)
+    TArray<UPalIndividualCharacterHandle*> IndividualHandleList;                      // 0x0540 (size: 0x10)
     double SpawnRadius;                                                               // 0x0550 (size: 0x8)
     bool IsWorldLoadComplete;                                                         // 0x0558 (size: 0x1)
     bool IsSpawnRequested;                                                            // 0x0559 (size: 0x1)

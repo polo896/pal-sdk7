@@ -17,49 +17,43 @@
 namespace SDK
 {
 
-// Function WBP_Option_Note.WBP_Option_Note_C.ChangeNoteContent
+// Function WBP_Option_Note.WBP_Option_Note_C.Setup
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             NoteTitle                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Option_Note_C::ChangeNoteContent(class FName NoteTitle)
+void UWBP_Option_Note_C::Setup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_Note_C", "ChangeNoteContent");
-
-	Params::WBP_Option_Note_C_ChangeNoteContent Parms{};
-
-	Parms.NoteTitle = NoteTitle;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Option_Note.WBP_Option_Note_C.ClosePanel
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Option_Note_C::ClosePanel()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_Note_C", "ClosePanel");
+		Func = Class->GetFunction("WBP_Option_Note_C", "Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Option_Note.WBP_Option_Note_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Option_Note.WBP_Option_Note_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Option_Note_C::Destruct()
+void UWBP_Option_Note_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_Note_C", "Destruct");
+		Func = Class->GetFunction("WBP_Option_Note_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Option_Note.WBP_Option_Note_C.Finished_793C14214599C67575C16AB5C1CD4F27
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Option_Note_C::Finished_793C14214599C67575C16AB5C1CD4F27()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_Note_C", "Finished_793C14214599C67575C16AB5C1CD4F27");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -85,45 +79,51 @@ void UWBP_Option_Note_C::ExecuteUbergraph_WBP_Option_Note(int32 EntryPoint)
 }
 
 
-// Function WBP_Option_Note.WBP_Option_Note_C.Finished_793C14214599C67575C16AB5C1CD4F27
+// Function WBP_Option_Note.WBP_Option_Note_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_Option_Note_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Option_Note_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Option_Note.WBP_Option_Note_C.ClosePanel
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Option_Note_C::Finished_793C14214599C67575C16AB5C1CD4F27()
+void UWBP_Option_Note_C::ClosePanel()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_Note_C", "Finished_793C14214599C67575C16AB5C1CD4F27");
+		Func = Class->GetFunction("WBP_Option_Note_C", "ClosePanel");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Option_Note.WBP_Option_Note_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Option_Note_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_Note_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Option_Note.WBP_Option_Note_C.Setup
+// Function WBP_Option_Note.WBP_Option_Note_C.ChangeNoteContent
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             NoteTitle                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Option_Note_C::Setup()
+void UWBP_Option_Note_C::ChangeNoteContent(class FName NoteTitle)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Option_Note_C", "Setup");
+		Func = Class->GetFunction("WBP_Option_Note_C", "ChangeNoteContent");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Option_Note_C_ChangeNoteContent Parms{};
+
+	Parms.NoteTitle = NoteTitle;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

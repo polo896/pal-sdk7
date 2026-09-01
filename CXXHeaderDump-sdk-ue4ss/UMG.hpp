@@ -136,8 +136,8 @@ struct FSlateMeshVertex
 
 struct FUserWidgetPool
 {
-    TArray<class UUserWidget*> ActiveWidgets;                                         // 0x0000 (size: 0x10)
-    TArray<class UUserWidget*> InactiveWidgets;                                       // 0x0010 (size: 0x10)
+    TArray<UUserWidget*> ActiveWidgets;                                               // 0x0000 (size: 0x10)
+    TArray<UUserWidget*> InactiveWidgets;                                             // 0x0010 (size: 0x10)
 
 }; // Size: 0x88
 
@@ -425,7 +425,7 @@ class UColorBinding : public UPropertyBinding
 
 class UComboBox : public UWidget
 {
-    TArray<class UObject*> Items;                                                     // 0x0150 (size: 0x10)
+    TArray<UObject*> Items;                                                           // 0x0150 (size: 0x10)
     FComboBoxOnGenerateWidgetEvent OnGenerateWidgetEvent;                             // 0x0160 (size: 0x10)
     class UWidget* GenerateWidgetForObject(class UObject* Item);
     bool bIsFocusable;                                                                // 0x0170 (size: 0x1)
@@ -558,7 +558,7 @@ class UDynamicEntryBoxBase : public UWidget
     void SetRadialSettings(const FRadialBoxSettings& InSettings);
     void SetEntrySpacing(const FVector2D& InEntrySpacing);
     int32 GetNumEntries();
-    TArray<class UUserWidget*> GetAllEntries();
+    TArray<UUserWidget*> GetAllEntries();
 }; // Size: 0x230
 
 class UEditableText : public UWidget
@@ -763,8 +763,8 @@ class UImage : public UWidget
     void SetBrushResourceObject(class UObject* ResourceObject);
     void SetBrushFromTextureDynamic(class UTexture2DDynamic* Texture, bool bMatchSize);
     void SetBrushFromTexture(class UTexture2D* Texture, bool bMatchSize);
-    void SetBrushFromSoftTexture(TSoftObjectPtr<UTexture2D> SoftTexture, bool bMatchSize);
-    void SetBrushFromSoftMaterial(TSoftObjectPtr<UMaterialInterface> SoftMaterial);
+    void SetBrushFromSoftTexture(TSoftObjectPtr<class UTexture2D> SoftTexture, bool bMatchSize);
+    void SetBrushFromSoftMaterial(TSoftObjectPtr<class UMaterialInterface> SoftMaterial);
     void SetBrushFromMaterial(class UMaterialInterface* Material);
     void SetBrushFromAtlasInterface(TScriptInterface<class ISlateTextureAtlasInterface> AtlasRegion, bool bMatchSize);
     void SetBrushFromAsset(class USlateBrushAsset* Asset);
@@ -827,7 +827,7 @@ class UListView : public UListViewBase
     bool bIsFocusable;                                                                // 0x0B94 (size: 0x1)
     float EntrySpacing;                                                               // 0x0B98 (size: 0x4)
     bool bReturnFocusToSelection;                                                     // 0x0B9C (size: 0x1)
-    TArray<class UObject*> ListItems;                                                 // 0x0BA0 (size: 0x10)
+    TArray<UObject*> ListItems;                                                       // 0x0BA0 (size: 0x10)
     FListViewBP_OnEntryInitialized BP_OnEntryInitialized;                             // 0x0BC0 (size: 0x10)
     void OnListEntryInitializedDynamic(class UObject* Item, class UUserWidget* Widget);
     FListViewBP_OnItemClicked BP_OnItemClicked;                                       // 0x0BD0 (size: 0x10)
@@ -850,17 +850,17 @@ class UListView : public UListViewBase
     void NavigateToIndex(int32 Index);
     bool IsRefreshPending();
     int32 GetNumItems();
-    TArray<class UObject*> GetListItems();
+    TArray<UObject*> GetListItems();
     class UObject* GetItemAt(int32 Index);
     int32 GetIndexForItem(const class UObject* Item);
     void ClearListItems();
     void BP_SetSelectedItem(class UObject* Item);
-    void BP_SetListItems(const TArray<class UObject*>& InListItems);
+    void BP_SetListItems(const TArray<UObject*>& InListItems);
     void BP_SetItemSelection(class UObject* Item, bool bSelected);
     void BP_ScrollItemIntoView(class UObject* Item);
     void BP_NavigateToItem(class UObject* Item);
     bool BP_IsItemVisible(class UObject* Item);
-    bool BP_GetSelectedItems(TArray<class UObject*>& Items);
+    bool BP_GetSelectedItems(TArray<UObject*>& Items);
     class UObject* BP_GetSelectedItem();
     int32 BP_GetNumItemsSelected();
     void BP_ClearSelection();
@@ -892,7 +892,7 @@ class UListViewBase : public UWidget
     void RequestRefresh();
     void RegenerateAllEntries();
     float GetScrollOffset();
-    TArray<class UUserWidget*> GetDisplayedEntryWidgets();
+    TArray<UUserWidget*> GetDisplayedEntryWidgets();
 }; // Size: 0x268
 
 class UListViewDesignerPreviewItem : public UObject
@@ -1073,7 +1073,7 @@ class UPanelSlot : public UVisual
 
 class UPanelWidget : public UWidget
 {
-    TArray<class UPanelSlot*> Slots;                                                  // 0x0150 (size: 0x10)
+    TArray<UPanelSlot*> Slots;                                                        // 0x0150 (size: 0x10)
 
     bool RemoveChildAt(int32 Index);
     bool RemoveChild(class UWidget* Content);
@@ -1082,7 +1082,7 @@ class UPanelWidget : public UWidget
     int32 GetChildrenCount();
     int32 GetChildIndex(const class UWidget* Content);
     class UWidget* GetChildAt(int32 Index);
-    TArray<class UWidget*> GetAllChildren();
+    TArray<UWidget*> GetAllChildren();
     void ClearChildren();
     class UPanelSlot* AddChild(class UWidget* Content);
 }; // Size: 0x168
@@ -1136,14 +1136,14 @@ class URichTextBlock : public UTextLayoutWidget
 {
     FText Text;                                                                       // 0x0170 (size: 0x18)
     class UDataTable* TextStyleSet;                                                   // 0x0188 (size: 0x8)
-    TArray<class TSubclassOf<URichTextBlockDecorator>> DecoratorClasses;              // 0x0190 (size: 0x10)
+    TArray<TSubclassOf<class URichTextBlockDecorator>> DecoratorClasses;              // 0x0190 (size: 0x10)
     bool bOverrideDefaultStyle;                                                       // 0x01A0 (size: 0x1)
     FTextBlockStyle DefaultTextStyleOverride;                                         // 0x01B0 (size: 0x350)
     float MinDesiredWidth;                                                            // 0x0500 (size: 0x4)
     ETextTransformPolicy TextTransformPolicy;                                         // 0x0504 (size: 0x1)
     ETextOverflowPolicy TextOverflowPolicy;                                           // 0x0505 (size: 0x1)
     FTextBlockStyle DefaultTextStyle;                                                 // 0x0510 (size: 0x350)
-    TArray<class URichTextBlockDecorator*> InstanceDecorators;                        // 0x0860 (size: 0x10)
+    TArray<URichTextBlockDecorator*> InstanceDecorators;                              // 0x0860 (size: 0x10)
 
     void SetTextTransformPolicy(ETextTransformPolicy InTransformPolicy);
     void SetTextStyleSet(class UDataTable* NewTextStyleSet);
@@ -1157,7 +1157,7 @@ class URichTextBlock : public UTextLayoutWidget
     void SetDefaultMaterial(class UMaterialInterface* InMaterial);
     void SetDefaultFont(FSlateFontInfo InFontInfo);
     void SetDefaultColorAndOpacity(FSlateColor InColorAndOpacity);
-    void SetDecorators(const TArray<class TSubclassOf<URichTextBlockDecorator>>& InDecoratorClasses);
+    void SetDecorators(const TArray<TSubclassOf<class URichTextBlockDecorator>>& InDecoratorClasses);
     void SetAutoWrapText(bool InAutoTextWrap);
     void RefreshTextLayout();
     class UDataTable* GetTextStyleSet();
@@ -1596,7 +1596,7 @@ class UTileView : public UListView
 class UTreeView : public UListView
 {
     FTreeViewBP_OnGetItemChildren BP_OnGetItemChildren;                               // 0x0C30 (size: 0x10)
-    void OnGetItemChildrenDynamic(class UObject* Item, TArray<class UObject*>& Children);
+    void OnGetItemChildrenDynamic(class UObject* Item, TArray<UObject*>& Children);
     FTreeViewBP_OnItemExpansionChanged BP_OnItemExpansionChanged;                     // 0x0C40 (size: 0x10)
     void OnItemExpansionChangedDynamic(class UObject* Item, bool bIsExpanded);
 
@@ -1616,7 +1616,7 @@ class UUMGSequencePlayer : public UObject
 
 class UUMGSequenceTickManager : public UObject
 {
-    TMap<class TWeakObjectPtr<UUserWidget>, class FSequenceTickManagerWidgetData> WeakUserWidgetData; // 0x0028 (size: 0x50)
+    TMap<TWeakObjectPtr<class UUserWidget>, FSequenceTickManagerWidgetData> WeakUserWidgetData; // 0x0028 (size: 0x50)
     class UMovieSceneEntitySystemLinker* Linker;                                      // 0x0078 (size: 0x8)
 
 }; // Size: 0xC0
@@ -1671,11 +1671,11 @@ class UUserWidget : public UWidget
     FUserWidgetOnVisibilityChanged OnVisibilityChanged;                               // 0x01A0 (size: 0x10)
     void OnVisibilityChangedEvent(ESlateVisibility InVisibility);
     FMargin Padding;                                                                  // 0x01C8 (size: 0x10)
-    TArray<class UUMGSequencePlayer*> ActiveSequencePlayers;                          // 0x01D8 (size: 0x10)
+    TArray<UUMGSequencePlayer*> ActiveSequencePlayers;                                // 0x01D8 (size: 0x10)
     class UUMGSequenceTickManager* AnimationTickManager;                              // 0x01E8 (size: 0x8)
-    TArray<class UUMGSequencePlayer*> StoppedSequencePlayers;                         // 0x01F0 (size: 0x10)
+    TArray<UUMGSequencePlayer*> StoppedSequencePlayers;                               // 0x01F0 (size: 0x10)
     TArray<FNamedSlotBinding> NamedSlotBindings;                                      // 0x0200 (size: 0x10)
-    TArray<class UUserWidgetExtension*> Extensions;                                   // 0x0210 (size: 0x10)
+    TArray<UUserWidgetExtension*> Extensions;                                         // 0x0210 (size: 0x10)
     class UWidgetTree* WidgetTree;                                                    // 0x0220 (size: 0x8)
     int32 Priority;                                                                   // 0x0228 (size: 0x4)
     uint8 bIsFocusable;                                                               // 0x022C (size: 0x1)
@@ -1766,7 +1766,7 @@ class UUserWidget : public UWidget
     class APawn* GetOwningPlayerPawn();
     class APlayerCameraManager* GetOwningPlayerCameraManager();
     bool GetIsVisible();
-    TArray<class UUserWidgetExtension*> GetExtensions(TSubclassOf<class UUserWidgetExtension> ExtensionType);
+    TArray<UUserWidgetExtension*> GetExtensions(TSubclassOf<class UUserWidgetExtension> ExtensionType);
     class UUserWidgetExtension* GetExtension(TSubclassOf<class UUserWidgetExtension> ExtensionType);
     float GetAnimationCurrentTime(const class UWidgetAnimation* InAnimation);
     FAnchors GetAnchorsInViewport();
@@ -1859,7 +1859,7 @@ class UWidget : public UVisual
     float RenderOpacity;                                                              // 0x00E8 (size: 0x4)
     class USlateAccessibleWidgetData* AccessibleWidgetData;                           // 0x00F0 (size: 0x8)
     class UWidgetNavigation* Navigation;                                              // 0x00F8 (size: 0x8)
-    TArray<class UPropertyBinding*> NativeBindings;                                   // 0x0120 (size: 0x10)
+    TArray<UPropertyBinding*> NativeBindings;                                         // 0x0120 (size: 0x10)
 
     void SetVisibility(ESlateVisibility InVisibility);
     void SetUserFocus(class APlayerController* PlayerController);
@@ -1975,11 +1975,11 @@ class UWidgetBinding : public UPropertyBinding
 class UWidgetBlueprintGeneratedClass : public UBlueprintGeneratedClass
 {
     class UWidgetTree* WidgetTree;                                                    // 0x0380 (size: 0x8)
-    TArray<class UWidgetBlueprintGeneratedClassExtension*> Extensions;                // 0x0388 (size: 0x10)
+    TArray<UWidgetBlueprintGeneratedClassExtension*> Extensions;                      // 0x0388 (size: 0x10)
     TArray<FFieldNotificationId> FieldNotifyNames;                                    // 0x0398 (size: 0x10)
     uint8 bClassRequiresNativeTick;                                                   // 0x03AC (size: 0x1)
     TArray<FDelegateRuntimeBinding> Bindings;                                         // 0x03B0 (size: 0x10)
-    TArray<class UWidgetAnimation*> Animations;                                       // 0x03C0 (size: 0x10)
+    TArray<UWidgetAnimation*> Animations;                                             // 0x03C0 (size: 0x10)
     TArray<FName> NamedSlots;                                                         // 0x03D0 (size: 0x10)
     TArray<FName> AvailableNamedSlots;                                                // 0x03E0 (size: 0x10)
     TArray<FName> InstanceNamedSlots;                                                 // 0x03F0 (size: 0x10)
@@ -2030,8 +2030,8 @@ class UWidgetBlueprintLibrary : public UBlueprintFunctionLibrary
     class UTexture2D* GetBrushResourceAsTexture2D(const FSlateBrush& Brush);
     class UMaterialInterface* GetBrushResourceAsMaterial(const FSlateBrush& Brush);
     class UObject* GetBrushResource(const FSlateBrush& Brush);
-    void GetAllWidgetsWithInterface(class UObject* WorldContextObject, TArray<class UUserWidget*>& FoundWidgets, TSubclassOf<class UInterface> Interface, bool TopLevelOnly);
-    void GetAllWidgetsOfClass(class UObject* WorldContextObject, TArray<class UUserWidget*>& FoundWidgets, TSubclassOf<class UUserWidget> WidgetClass, bool TopLevelOnly);
+    void GetAllWidgetsWithInterface(class UObject* WorldContextObject, TArray<UUserWidget*>& FoundWidgets, TSubclassOf<class UInterface> Interface, bool TopLevelOnly);
+    void GetAllWidgetsOfClass(class UObject* WorldContextObject, TArray<UUserWidget*>& FoundWidgets, TSubclassOf<class UUserWidget> WidgetClass, bool TopLevelOnly);
     FEventReply EndDragDrop(FEventReply& Reply);
     void DrawTextFormatted(FPaintContext& Context, const FText& Text, FVector2D Position, class UFont* Font, int32 FontSize, FName FontTypeFace, FLinearColor Tint);
     void DrawText(FPaintContext& Context, FString InString, FVector2D Position, FLinearColor Tint);
@@ -2239,7 +2239,7 @@ class UWidgetSwitcherSlot : public UPanelSlot
 class UWidgetTree : public UObject
 {
     class UWidget* RootWidget;                                                        // 0x0030 (size: 0x8)
-    TMap<class FName, class UWidget*> NamedSlotBindings;                              // 0x0038 (size: 0x50)
+    TMap<FName, UWidget*> NamedSlotBindings;                                          // 0x0038 (size: 0x50)
 
 }; // Size: 0x88
 

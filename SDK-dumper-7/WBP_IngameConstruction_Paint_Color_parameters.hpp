@@ -17,6 +17,16 @@
 namespace SDK::Params
 {
 
+// Function WBP_IngameConstruction_Paint_Color.WBP_IngameConstruction_Paint_Color_C.SetPaletteInfo
+// 0x0014 (0x0014 - 0x0000)
+struct WBP_IngameConstruction_Paint_Color_C_SetPaletteInfo final
+{
+public:
+	struct FFPalUIPaintPaletteInfo                Info;                                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_Conv_ColorToLinearColor_ReturnValue;      // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameConstruction_Paint_Color_C_SetPaletteInfo;
+
 // Function WBP_IngameConstruction_Paint_Color.WBP_IngameConstruction_Paint_Color_C.ExecuteUbergraph_WBP_IngameConstruction_Paint_Color
 // 0x0018 (0x0018 - 0x0000)
 struct WBP_IngameConstruction_Paint_Color_C_ExecuteUbergraph_WBP_IngameConstruction_Paint_Color final
@@ -28,16 +38,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_IngameConstruction_Paint_Color_C_ExecuteUbergraph_WBP_IngameConstruction_Paint_Color;
-
-// Function WBP_IngameConstruction_Paint_Color.WBP_IngameConstruction_Paint_Color_C.SetPaletteInfo
-// 0x0014 (0x0014 - 0x0000)
-struct WBP_IngameConstruction_Paint_Color_C_SetPaletteInfo final
-{
-public:
-	struct FFPalUIPaintPaletteInfo                Info;                                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_Conv_ColorToLinearColor_ReturnValue;      // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameConstruction_Paint_Color_C_SetPaletteInfo;
 
 }
 

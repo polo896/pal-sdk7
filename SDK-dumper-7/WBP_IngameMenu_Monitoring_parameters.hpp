@@ -17,24 +17,82 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.DisplayCurrentWorkHardInfo
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_IngameMenu_Monitoring_C_DisplayCurrentWorkHardInfo final
+// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.UpdateWorkHardInfoPermission
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_IngameMenu_Monitoring_C_UpdateWorkHardInfoPermission final
 {
 public:
-	TArray<EPalBaseCampPassiveEffectWorkHardType> CallFunc_Map_Keys_Keys;                            // 0x0000(0x0010)(ReferenceParm)
-	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          HasBasePalOperationPermission;                     // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Temp_real_Variable;                                // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         Temp_real_Variable_1;                              // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Select_Default;                             // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UWBP_IngameMenu_Monitoring_WorkButton_C*> CallFunc_Map_Values_Values;               // 0x0020(0x0010)(ReferenceParm, ContainsInstancedReference)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_IngameMenu_Monitoring_WorkButton_C* CallFunc_Array_Get_Item;                          // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasBasePalOperationPermissionByLocalPlayer_ReturnValue; // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Monitoring_C_DisplayCurrentWorkHardInfo;
+DUMPER7_ASSERTS_WBP_IngameMenu_Monitoring_C_UpdateWorkHardInfoPermission;
 
-// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.DisplayHoverWorkHardInfo
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_IngameMenu_Monitoring_C_DisplayHoverWorkHardInfo final
+// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.UpdateWorkHardInfo
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_IngameMenu_Monitoring_C_UpdateWorkHardInfo final
 {
 public:
 	int32                                         WorkHardLevel_0;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    CallFunc_Array_Get_Item;                           // 0x0010(0x0010)(NoDestructor)
+	class UWBP_IngameMenu_Monitoring_WorkInfo_C*  CallFunc_Array_Get_Item_1;                         // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0028(0x0018)()
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Monitoring_C_DisplayHoverWorkHardInfo;
+DUMPER7_ASSERTS_WBP_IngameMenu_Monitoring_C_UpdateWorkHardInfo;
+
+// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.RequestChangeHardWorkLevel
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_IngameMenu_Monitoring_C_RequestChangeHardWorkLevel final
+{
+public:
+	int32                                         Level;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<EPalBaseCampPassiveEffectWorkHardType> CallFunc_Map_Keys_Keys;                            // 0x0008(0x0010)(ReferenceParm)
+	EPalBaseCampPassiveEffectWorkHardType         CallFunc_Array_Get_Item;                           // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Monitoring_C_RequestChangeHardWorkLevel;
+
+// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.OnUpdateWorkHardType
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_IngameMenu_Monitoring_C_OnUpdateWorkHardType final
+{
+public:
+	class UPalBaseCampPassiveEffect_WorkHard*     EffectWorkHard;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPalBaseCampPassiveEffectWorkHardType         CurrentType;                                       // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalBaseCampPassiveEffectWorkHardType         CallFunc_GetWorkHardType_ReturnValue;              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<EPalBaseCampPassiveEffectWorkHardType> CallFunc_Map_Keys_Keys;                            // 0x0018(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalBaseCampPassiveEffectWorkHardType         CallFunc_Array_Get_Item;                           // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x002E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2F[0x1];                                       // 0x002F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_IngameMenu_Monitoring_WorkButton_C* CallFunc_Map_Find_Value;                          // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_Monitoring_C_OnUpdateWorkHardType;
 
 // Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.ExecuteUbergraph_WBP_IngameMenu_Monitoring
 // 0x0100 (0x0100 - 0x0000)
@@ -68,82 +126,24 @@ public:
 };
 DUMPER7_ASSERTS_WBP_IngameMenu_Monitoring_C_ExecuteUbergraph_WBP_IngameMenu_Monitoring;
 
-// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.OnUpdateWorkHardType
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_IngameMenu_Monitoring_C_OnUpdateWorkHardType final
-{
-public:
-	class UPalBaseCampPassiveEffect_WorkHard*     EffectWorkHard;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPalBaseCampPassiveEffectWorkHardType         CurrentType;                                       // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalBaseCampPassiveEffectWorkHardType         CallFunc_GetWorkHardType_ReturnValue;              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<EPalBaseCampPassiveEffectWorkHardType> CallFunc_Map_Keys_Keys;                            // 0x0018(0x0010)(ReferenceParm)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalBaseCampPassiveEffectWorkHardType         CallFunc_Array_Get_Item;                           // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x002E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2F[0x1];                                       // 0x002F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_IngameMenu_Monitoring_WorkButton_C* CallFunc_Map_Find_Value;                          // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Monitoring_C_OnUpdateWorkHardType;
-
-// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.RequestChangeHardWorkLevel
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_IngameMenu_Monitoring_C_RequestChangeHardWorkLevel final
-{
-public:
-	int32                                         Level;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<EPalBaseCampPassiveEffectWorkHardType> CallFunc_Map_Keys_Keys;                            // 0x0008(0x0010)(ReferenceParm)
-	EPalBaseCampPassiveEffectWorkHardType         CallFunc_Array_Get_Item;                           // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_Monitoring_C_RequestChangeHardWorkLevel;
-
-// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.UpdateWorkHardInfo
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_IngameMenu_Monitoring_C_UpdateWorkHardInfo final
+// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.DisplayHoverWorkHardInfo
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_IngameMenu_Monitoring_C_DisplayHoverWorkHardInfo final
 {
 public:
 	int32                                         WorkHardLevel_0;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    CallFunc_Array_Get_Item;                           // 0x0010(0x0010)(NoDestructor)
-	class UWBP_IngameMenu_Monitoring_WorkInfo_C*  CallFunc_Array_Get_Item_1;                         // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0028(0x0018)()
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Monitoring_C_UpdateWorkHardInfo;
+DUMPER7_ASSERTS_WBP_IngameMenu_Monitoring_C_DisplayHoverWorkHardInfo;
 
-// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.UpdateWorkHardInfoPermission
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_IngameMenu_Monitoring_C_UpdateWorkHardInfoPermission final
+// Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.DisplayCurrentWorkHardInfo
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_IngameMenu_Monitoring_C_DisplayCurrentWorkHardInfo final
 {
 public:
-	bool                                          HasBasePalOperationPermission;                     // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Temp_real_Variable;                                // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         Temp_real_Variable_1;                              // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Select_Default;                             // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UWBP_IngameMenu_Monitoring_WorkButton_C*> CallFunc_Map_Values_Values;               // 0x0020(0x0010)(ReferenceParm, ContainsInstancedReference)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_IngameMenu_Monitoring_WorkButton_C* CallFunc_Array_Get_Item;                          // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasBasePalOperationPermissionByLocalPlayer_ReturnValue; // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<EPalBaseCampPassiveEffectWorkHardType> CallFunc_Map_Keys_Keys;                            // 0x0000(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_Monitoring_C_UpdateWorkHardInfoPermission;
+DUMPER7_ASSERTS_WBP_IngameMenu_Monitoring_C_DisplayCurrentWorkHardInfo;
 
 // Function WBP_IngameMenu_Monitoring.WBP_IngameMenu_Monitoring_C.BP_GetDesiredFocusTarget
 // 0x0008 (0x0008 - 0x0000)

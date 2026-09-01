@@ -36,20 +36,20 @@ public:
 	class FName                                   OverridePadActionName_Additional;                  // 0x02D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ActivateEvent();
-	void AdditionalBind();
-	void CoolFinish();
-	void CoolStart();
-	void CREATEDELEGATE_PROXYFUNCTION_0(float CoolRate);
-	void ExecuteUbergraph_WBP_PalSkillEntry(int32 EntryPoint);
-	void LongPress(bool Start);
-	void OnInitialized();
-	void ResetBind();
-	void SetSkillText(const class FText& SkillName);
-	void Setup(class UPalActiveSkill* ActiveSkill);
-	void ToggleVisibility(bool IsCooling);
-	void Unbind(class UPalActiveSkill* ActiveSkill);
 	void UpdateCooldown(double Cool);
+	void Unbind(class UPalActiveSkill* ActiveSkill);
+	void ToggleVisibility(bool IsCooling);
+	void Setup(class UPalActiveSkill* ActiveSkill);
+	void SetSkillText(const class FText& SkillName);
+	void ResetBind();
+	void OnInitialized();
+	void LongPress(bool Start);
+	void ExecuteUbergraph_WBP_PalSkillEntry(int32 EntryPoint);
+	void CREATEDELEGATE_PROXYFUNCTION_0(float CoolRate);
+	void CoolStart();
+	void CoolFinish();
+	void AdditionalBind();
+	void ActivateEvent();
 
 public:
 	static class UClass* StaticClass()

@@ -16,6 +16,16 @@
 namespace SDK::Params
 {
 
+// Function WBP_Arena_PalSelect_Ready.WBP_Arena_PalSelect_Ready_C.SetPalCount
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Arena_PalSelect_Ready_C_SetPalCount final
+{
+public:
+	int32                                         Current;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Max;                                               // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Arena_PalSelect_Ready_C_SetPalCount;
+
 // Function WBP_Arena_PalSelect_Ready.WBP_Arena_PalSelect_Ready_C.ExecuteUbergraph_WBP_Arena_PalSelect_Ready
 // 0x0108 (0x0108 - 0x0000)
 struct WBP_Arena_PalSelect_Ready_C_ExecuteUbergraph_WBP_Arena_PalSelect_Ready final
@@ -40,16 +50,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Arena_PalSelect_Ready_C_ExecuteUbergraph_WBP_Arena_PalSelect_Ready;
-
-// Function WBP_Arena_PalSelect_Ready.WBP_Arena_PalSelect_Ready_C.SetPalCount
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Arena_PalSelect_Ready_C_SetPalCount final
-{
-public:
-	int32                                         Current;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Max;                                               // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Arena_PalSelect_Ready_C_SetPalCount;
 
 }
 

@@ -17,121 +17,217 @@
 namespace SDK
 {
 
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.ApplyCachedSortInfo
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.SaveSettingAndClose
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PaldexFilteringSettingsWindow_C::SaveSettingAndClose()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "SaveSettingAndClose");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PaldexFilteringSettingsWindow_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.OnInputAction_ResetSetting
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PaldexFilteringSettingsWindow_C::OnInputAction_ResetSetting()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "OnInputAction_ResetSetting");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.OnInputAction_Confirm
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PaldexFilteringSettingsWindow_C::OnInputAction_Confirm()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "OnInputAction_Confirm");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_PaldexFilteringSettingsWindow_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.OnClickedWorlSutabilityCheckBox
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bChecked                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalWorkSuitability                     WorkSuitbility                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PaldexFilteringSettingsWindow_C::OnClickedWorlSutabilityCheckBox(bool bChecked, EPalWorkSuitability WorkSuitbility)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "OnClickedWorlSutabilityCheckBox");
+
+	Params::WBP_PaldexFilteringSettingsWindow_C_OnClickedWorlSutabilityCheckBox Parms{};
+
+	Parms.bChecked = bChecked;
+	Parms.WorkSuitbility = WorkSuitbility;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.OnClickedSortTypeButton
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_PaldexFilteringSettings_SortTypeButton_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PaldexFilteringSettingsWindow_C::OnClickedSortTypeButton(class UWBP_PaldexFilteringSettings_SortTypeButton_C* Widget)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "OnClickedSortTypeButton");
+
+	Params::WBP_PaldexFilteringSettingsWindow_C_OnClickedSortTypeButton Parms{};
+
+	Parms.Widget = Widget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.OnClickedElementTypeCheckBox
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bChecked                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalElementType                         ElementType                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PaldexFilteringSettingsWindow_C::OnClickedElementTypeCheckBox(bool bChecked, EPalElementType ElementType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "OnClickedElementTypeCheckBox");
+
+	Params::WBP_PaldexFilteringSettingsWindow_C_OnClickedElementTypeCheckBox Parms{};
+
+	Parms.bChecked = bChecked;
+	Parms.ElementType = ElementType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.Initialize
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PaldexFilteringSettingsWindow_C::ApplyCachedSortInfo()
+void UWBP_PaldexFilteringSettingsWindow_C::Initialize()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "ApplyCachedSortInfo");
+		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "Initialize");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_CommonButton_Sort_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_PaldexFilteringSettingsWindow_C::BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_CommonButton_Sort_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_CommonButton_Sort_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_Menu_btn_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_PaldexFilteringSettingsWindow_C::BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_Menu_btn_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_Menu_btn_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_PalInvisibleButton_ExcludeReceivedBonus_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.ExecuteUbergraph_WBP_PaldexFilteringSettingsWindow
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PaldexFilteringSettingsWindow_C::BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_PalInvisibleButton_ExcludeReceivedBonus_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+void UWBP_PaldexFilteringSettingsWindow_C::ExecuteUbergraph_WBP_PaldexFilteringSettingsWindow(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_PalInvisibleButton_ExcludeReceivedBonus_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
+		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "ExecuteUbergraph_WBP_PaldexFilteringSettingsWindow");
 
-	Params::WBP_PaldexFilteringSettingsWindow_C_BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_PalInvisibleButton_ExcludeReceivedBonus_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
+	Params::WBP_PaldexFilteringSettingsWindow_C_ExecuteUbergraph_WBP_PaldexFilteringSettingsWindow Parms{};
 
-	Parms.Button = Button;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.CacheSortInfo
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PaldexFilteringSettingsWindow_C::CacheSortInfo()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "CacheSortInfo");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.CollectFilteringElementType
-// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.DoCustomNavi_ToSortButtonTopLeft
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<EPalElementType>*                ElementTypeArray                                       (Parm, OutParm)
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PaldexFilteringSettingsWindow_C::CollectFilteringElementType(TArray<EPalElementType>* ElementTypeArray)
+class UWidget* UWBP_PaldexFilteringSettingsWindow_C::DoCustomNavi_ToSortButtonTopLeft(EUINavigation Navigation_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "CollectFilteringElementType");
+		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "DoCustomNavi_ToSortButtonTopLeft");
 
-	Params::WBP_PaldexFilteringSettingsWindow_C_CollectFilteringElementType Parms{};
+	Params::WBP_PaldexFilteringSettingsWindow_C_DoCustomNavi_ToSortButtonTopLeft Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (ElementTypeArray != nullptr)
-		*ElementTypeArray = std::move(Parms.ElementTypeArray);
+	return Parms.ReturnValue;
 }
 
 
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.CollectFilteringSuitability
-// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.DoCustomNavi_ToExcludeReceivedBonusButton
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<EPalWorkSuitability>*            SuitabilityArray                                       (Parm, OutParm)
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PaldexFilteringSettingsWindow_C::CollectFilteringSuitability(TArray<EPalWorkSuitability>* SuitabilityArray)
+class UWidget* UWBP_PaldexFilteringSettingsWindow_C::DoCustomNavi_ToExcludeReceivedBonusButton(EUINavigation Navigation_0)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "CollectFilteringSuitability");
+		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "DoCustomNavi_ToExcludeReceivedBonusButton");
 
-	Params::WBP_PaldexFilteringSettingsWindow_C_CollectFilteringSuitability Parms{};
+	Params::WBP_PaldexFilteringSettingsWindow_C_DoCustomNavi_ToExcludeReceivedBonusButton Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (SuitabilityArray != nullptr)
-		*SuitabilityArray = std::move(Parms.SuitabilityArray);
+	return Parms.ReturnValue;
 }
 
 
@@ -181,215 +277,119 @@ class UWidget* UWBP_PaldexFilteringSettingsWindow_C::DoCustomNavi_ToConfirmButto
 }
 
 
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.DoCustomNavi_ToExcludeReceivedBonusButton
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.CollectFilteringSuitability
+// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// TArray<EPalWorkSuitability>*            SuitabilityArray                                       (Parm, OutParm)
 
-class UWidget* UWBP_PaldexFilteringSettingsWindow_C::DoCustomNavi_ToExcludeReceivedBonusButton(EUINavigation Navigation_0)
+void UWBP_PaldexFilteringSettingsWindow_C::CollectFilteringSuitability(TArray<EPalWorkSuitability>* SuitabilityArray)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "DoCustomNavi_ToExcludeReceivedBonusButton");
+		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "CollectFilteringSuitability");
 
-	Params::WBP_PaldexFilteringSettingsWindow_C_DoCustomNavi_ToExcludeReceivedBonusButton Parms{};
-
-	Parms.Navigation_0 = Navigation_0;
+	Params::WBP_PaldexFilteringSettingsWindow_C_CollectFilteringSuitability Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	return Parms.ReturnValue;
+	if (SuitabilityArray != nullptr)
+		*SuitabilityArray = std::move(Parms.SuitabilityArray);
 }
 
 
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.DoCustomNavi_ToSortButtonTopLeft
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-class UWidget* UWBP_PaldexFilteringSettingsWindow_C::DoCustomNavi_ToSortButtonTopLeft(EUINavigation Navigation_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "DoCustomNavi_ToSortButtonTopLeft");
-
-	Params::WBP_PaldexFilteringSettingsWindow_C_DoCustomNavi_ToSortButtonTopLeft Parms{};
-
-	Parms.Navigation_0 = Navigation_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.ExecuteUbergraph_WBP_PaldexFilteringSettingsWindow
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PaldexFilteringSettingsWindow_C::ExecuteUbergraph_WBP_PaldexFilteringSettingsWindow(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "ExecuteUbergraph_WBP_PaldexFilteringSettingsWindow");
-
-	Params::WBP_PaldexFilteringSettingsWindow_C_ExecuteUbergraph_WBP_PaldexFilteringSettingsWindow Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.Initialize
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.CacheSortInfo
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PaldexFilteringSettingsWindow_C::Initialize()
+void UWBP_PaldexFilteringSettingsWindow_C::CacheSortInfo()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "Initialize");
+		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "CacheSortInfo");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.OnClickedElementTypeCheckBox
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.CollectFilteringElementType
+// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// bool                                    bChecked                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPalElementType                         ElementType                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<EPalElementType>*                ElementTypeArray                                       (Parm, OutParm)
 
-void UWBP_PaldexFilteringSettingsWindow_C::OnClickedElementTypeCheckBox(bool bChecked, EPalElementType ElementType)
+void UWBP_PaldexFilteringSettingsWindow_C::CollectFilteringElementType(TArray<EPalElementType>* ElementTypeArray)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "OnClickedElementTypeCheckBox");
+		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "CollectFilteringElementType");
 
-	Params::WBP_PaldexFilteringSettingsWindow_C_OnClickedElementTypeCheckBox Parms{};
+	Params::WBP_PaldexFilteringSettingsWindow_C_CollectFilteringElementType Parms{};
 
-	Parms.bChecked = bChecked;
-	Parms.ElementType = ElementType;
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ElementTypeArray != nullptr)
+		*ElementTypeArray = std::move(Parms.ElementTypeArray);
+}
+
+
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_PalInvisibleButton_ExcludeReceivedBonus_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PaldexFilteringSettingsWindow_C::BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_PalInvisibleButton_ExcludeReceivedBonus_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_PalInvisibleButton_ExcludeReceivedBonus_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature");
+
+	Params::WBP_PaldexFilteringSettingsWindow_C_BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_PalInvisibleButton_ExcludeReceivedBonus_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.OnClickedSortTypeButton
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_PaldexFilteringSettings_SortTypeButton_C*Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_Menu_btn_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_PaldexFilteringSettingsWindow_C::OnClickedSortTypeButton(class UWBP_PaldexFilteringSettings_SortTypeButton_C* Widget)
+void UWBP_PaldexFilteringSettingsWindow_C::BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_Menu_btn_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "OnClickedSortTypeButton");
-
-	Params::WBP_PaldexFilteringSettingsWindow_C_OnClickedSortTypeButton Parms{};
-
-	Parms.Widget = Widget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.OnClickedWorlSutabilityCheckBox
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bChecked                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPalWorkSuitability                     WorkSuitbility                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PaldexFilteringSettingsWindow_C::OnClickedWorlSutabilityCheckBox(bool bChecked, EPalWorkSuitability WorkSuitbility)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "OnClickedWorlSutabilityCheckBox");
-
-	Params::WBP_PaldexFilteringSettingsWindow_C_OnClickedWorlSutabilityCheckBox Parms{};
-
-	Parms.bChecked = bChecked;
-	Parms.WorkSuitbility = WorkSuitbility;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PaldexFilteringSettingsWindow_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "OnInitialized");
+		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_Menu_btn_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.OnInputAction_Confirm
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_CommonButton_Sort_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_PaldexFilteringSettingsWindow_C::OnInputAction_Confirm()
+void UWBP_PaldexFilteringSettingsWindow_C::BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_CommonButton_Sort_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "OnInputAction_Confirm");
+		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "BndEvt__WBP_PaldexFilteringSettingsWindow_WBP_CommonButton_Sort_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.OnInputAction_ResetSetting
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.ApplyCachedSortInfo
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PaldexFilteringSettingsWindow_C::OnInputAction_ResetSetting()
+void UWBP_PaldexFilteringSettingsWindow_C::ApplyCachedSortInfo()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "OnInputAction_ResetSetting");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PaldexFilteringSettingsWindow_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PaldexFilteringSettingsWindow.WBP_PaldexFilteringSettingsWindow_C.SaveSettingAndClose
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PaldexFilteringSettingsWindow_C::SaveSettingAndClose()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "SaveSettingAndClose");
+		Func = Class->GetFunction("WBP_PaldexFilteringSettingsWindow_C", "ApplyCachedSortInfo");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

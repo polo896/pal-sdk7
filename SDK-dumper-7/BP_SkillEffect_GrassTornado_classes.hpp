@@ -25,9 +25,9 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_SkillEffect_GrassTornado_C;      // 0x04C8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_BP_SkillEffect_GrassTornado(int32 EntryPoint);
-	void OnInitialize();
 	void OnTornadoReady(class APalSkillEffectBase* SkillEffect);
+	void OnInitialize();
+	void ExecuteUbergraph_BP_SkillEffect_GrassTornado(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

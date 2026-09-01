@@ -17,227 +17,313 @@
 namespace SDK
 {
 
-// Function WBP_PalStatus.WBP_PalStatus_C.BackToList
+// Function WBP_PalStatus.WBP_PalStatus_C.UnhoveredAnyPalPanel_Internal
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalStatus_C::BackToList()
+void UWBP_PalStatus_C::UnhoveredAnyPalPanel_Internal()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "BackToList");
+		Func = Class->GetFunction("WBP_PalStatus_C", "UnhoveredAnyPalPanel_Internal");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalStatus.WBP_PalStatus_C.BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_0_OnClickedAnyPalPanel__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UPalIndividualCharacterHandle*    Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function WBP_PalStatus.WBP_PalStatus_C.UnbindInputAction
+// (Private, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalStatus_C::BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_0_OnClickedAnyPalPanel__DelegateSignature(class UPalIndividualCharacterHandle* Handle)
+void UWBP_PalStatus_C::UnbindInputAction()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_0_OnClickedAnyPalPanel__DelegateSignature");
-
-	Params::WBP_PalStatus_C_BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_0_OnClickedAnyPalPanel__DelegateSignature Parms{};
-
-	Parms.Handle = Handle;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalStatus.WBP_PalStatus_C.BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_1_OnHoveredAnyPalPanel__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UPalIndividualCharacterHandle*    Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalStatus_C::BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_1_OnHoveredAnyPalPanel__DelegateSignature(class UPalIndividualCharacterHandle* Handle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_1_OnHoveredAnyPalPanel__DelegateSignature");
-
-	Params::WBP_PalStatus_C_BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_1_OnHoveredAnyPalPanel__DelegateSignature Parms{};
-
-	Parms.Handle = Handle;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalStatus.WBP_PalStatus_C.BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_2_OnUnhoveredAnyPalPanel__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_PalStatus_C::BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_2_OnUnhoveredAnyPalPanel__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_2_OnUnhoveredAnyPalPanel__DelegateSignature");
+		Func = Class->GetFunction("WBP_PalStatus_C", "UnbindInputAction");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalStatus.WBP_PalStatus_C.BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_3_OnCommitedNickName__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// const class FText&                      NewNickName                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+// Function WBP_PalStatus.WBP_PalStatus_C.ToSkillDetail
+// (Private, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalStatus_C::BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_3_OnCommitedNickName__DelegateSignature(const class FText& NewNickName)
+void UWBP_PalStatus_C::ToSkillDetail()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_3_OnCommitedNickName__DelegateSignature");
+		Func = Class->GetFunction("WBP_PalStatus_C", "ToSkillDetail");
 
-	Params::WBP_PalStatus_C_BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_3_OnCommitedNickName__DelegateSignature Parms{};
-
-	Parms.NewNickName = std::move(NewNickName);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalStatus.WBP_PalStatus_C.BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_4_OnRequestedRemoveWaza__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// EPalWazaID                              WazaID                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPalIndividualCharacterHandle*    targetHandle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function WBP_PalStatus.WBP_PalStatus_C.ToParameterDetail
+// (Private, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalStatus_C::BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_4_OnRequestedRemoveWaza__DelegateSignature(EPalWazaID WazaID, class UPalIndividualCharacterHandle* targetHandle)
+void UWBP_PalStatus_C::ToParameterDetail()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_4_OnRequestedRemoveWaza__DelegateSignature");
+		Func = Class->GetFunction("WBP_PalStatus_C", "ToParameterDetail");
 
-	Params::WBP_PalStatus_C_BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_4_OnRequestedRemoveWaza__DelegateSignature Parms{};
-
-	Parms.WazaID = WazaID;
-	Parms.targetHandle = targetHandle;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalStatus.WBP_PalStatus_C.BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_5_OnSelectedChangeActiveSkill__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UPalIndividualCharacterHandle*    targetHandle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// EPalWazaID                              changeWazaID                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPalWazaID                              newWazaID                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_PalStatus.WBP_PalStatus_C.Toggle Favorite Pal by Action
+// (Private, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalStatus_C::BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_5_OnSelectedChangeActiveSkill__DelegateSignature(class UPalIndividualCharacterHandle* targetHandle, EPalWazaID changeWazaID, EPalWazaID newWazaID)
+void UWBP_PalStatus_C::Toggle_Favorite_Pal_by_Action()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_5_OnSelectedChangeActiveSkill__DelegateSignature");
+		Func = Class->GetFunction("WBP_PalStatus_C", "Toggle Favorite Pal by Action");
 
-	Params::WBP_PalStatus_C_BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_5_OnSelectedChangeActiveSkill__DelegateSignature Parms{};
-
-	Parms.targetHandle = targetHandle;
-	Parms.changeWazaID = changeWazaID;
-	Parms.newWazaID = newWazaID;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalStatus.WBP_PalStatus_C.BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_6_OnToggleFavoritePal__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_PalStatus.WBP_PalStatus_C.ShouldBackList
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool*                                   shouldBack                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalStatus_C::ShouldBackList(bool* shouldBack)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalStatus_C", "ShouldBackList");
+
+	Params::WBP_PalStatus_C_ShouldBackList Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (shouldBack != nullptr)
+		*shouldBack = Parms.shouldBack;
+}
+
+
+// Function WBP_PalStatus.WBP_PalStatus_C.Setup_NothingPal
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalStatus_C::Setup_NothingPal()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalStatus_C", "Setup_NothingPal");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalStatus.WBP_PalStatus_C.Setup_MultiPal
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalStatus_C::Setup_MultiPal()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalStatus_C", "Setup_MultiPal");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalStatus.WBP_PalStatus_C.Setup One Pal
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UPalIndividualCharacterHandle*    CharacterHandle                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    Editable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalStatus_C::BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_6_OnToggleFavoritePal__DelegateSignature(class UPalIndividualCharacterHandle* CharacterHandle)
+void UWBP_PalStatus_C::Setup_One_Pal(class UPalIndividualCharacterHandle* CharacterHandle, bool Editable)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_6_OnToggleFavoritePal__DelegateSignature");
+		Func = Class->GetFunction("WBP_PalStatus_C", "Setup One Pal");
 
-	Params::WBP_PalStatus_C_BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_6_OnToggleFavoritePal__DelegateSignature Parms{};
+	Params::WBP_PalStatus_C_Setup_One_Pal Parms{};
 
 	Parms.CharacterHandle = CharacterHandle;
+	Parms.Editable = Editable;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalStatus.WBP_PalStatus_C.ClampInputNickName
+// Function WBP_PalStatus.WBP_PalStatus_C.Setup Input Action
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalStatus_C::Setup_Input_Action()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalStatus_C", "Setup Input Action");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalStatus.WBP_PalStatus_C.Setup
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<class UPalIndividualCharacterHandle*>&Handles                                                (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_PalStatus_C::Setup(TArray<class UPalIndividualCharacterHandle*>& Handles)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalStatus_C", "Setup");
+
+	Params::WBP_PalStatus_C_Setup Parms{};
+
+	Parms.Handles = std::move(Handles);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Handles = std::move(Parms.Handles);
+}
+
+
+// Function WBP_PalStatus.WBP_PalStatus_C.OnTriggerDropPal
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalStatus_C::OnTriggerDropPal()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalStatus_C", "OnTriggerDropPal");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalStatus.WBP_PalStatus_C.OnCompletedCaptureActorSetup
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalStatus_C::OnCompletedCaptureActorSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalStatus_C", "OnCompletedCaptureActorSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalStatus.WBP_PalStatus_C.OnClosedDropPalDialog
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalStatus_C::OnClosedDropPalDialog(bool bResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalStatus_C", "OnClosedDropPalDialog");
+
+	Params::WBP_PalStatus_C_OnClosedDropPalDialog Parms{};
+
+	Parms.bResult = bResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalStatus.WBP_PalStatus_C.OnClosedCannotDropPalDialog
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalStatus_C::OnClosedCannotDropPalDialog(bool bResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalStatus_C", "OnClosedCannotDropPalDialog");
+
+	Params::WBP_PalStatus_C_OnClosedCannotDropPalDialog Parms{};
+
+	Parms.bResult = bResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalStatus.WBP_PalStatus_C.NickNameFinalCheck
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
-// class FText*                            clampedNickName                                        (Parm, OutParm)
+// ETextCommit                             textCommit                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText*                            finalNickName                                          (Parm, OutParm)
 
-void UWBP_PalStatus_C::ClampInputNickName(const class FText& InText, class FText* clampedNickName)
+void UWBP_PalStatus_C::NickNameFinalCheck(const class FText& InText, ETextCommit textCommit, class FText* finalNickName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "ClampInputNickName");
+		Func = Class->GetFunction("WBP_PalStatus_C", "NickNameFinalCheck");
 
-	Params::WBP_PalStatus_C_ClampInputNickName Parms{};
+	Params::WBP_PalStatus_C_NickNameFinalCheck Parms{};
 
 	Parms.InText = std::move(InText);
+	Parms.textCommit = textCommit;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (clampedNickName != nullptr)
-		*clampedNickName = std::move(Parms.clampedNickName);
+	if (finalNickName != nullptr)
+		*finalNickName = std::move(Parms.finalNickName);
 }
 
 
-// Function WBP_PalStatus.WBP_PalStatus_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PalStatus_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalStatus.WBP_PalStatus_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PalStatus_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalStatus.WBP_PalStatus_C.ExecuteUbergraph_WBP_PalStatus
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_PalStatus.WBP_PalStatus_C.Is Editing Nick Name
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   IsEditing                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalStatus_C::ExecuteUbergraph_WBP_PalStatus(int32 EntryPoint)
+void UWBP_PalStatus_C::Is_Editing_Nick_Name(bool* IsEditing)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "ExecuteUbergraph_WBP_PalStatus");
+		Func = Class->GetFunction("WBP_PalStatus_C", "Is Editing Nick Name");
 
-	Params::WBP_PalStatus_C_ExecuteUbergraph_WBP_PalStatus Parms{};
+	Params::WBP_PalStatus_C_Is_Editing_Nick_Name Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (IsEditing != nullptr)
+		*IsEditing = Parms.IsEditing;
+}
+
+
+// Function WBP_PalStatus.WBP_PalStatus_C.HoveredAnyPalPanel_Internal
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalIndividualCharacterHandle*    Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalStatus_C::HoveredAnyPalPanel_Internal(class UPalIndividualCharacterHandle* Handle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalStatus_C", "HoveredAnyPalPanel_Internal");
+
+	Params::WBP_PalStatus_C_HoveredAnyPalPanel_Internal Parms{};
+
+	Parms.Handle = Handle;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -271,19 +357,191 @@ void UWBP_PalStatus_C::Get_Panel_Index_from_Handle(class UPalIndividualCharacter
 }
 
 
-// Function WBP_PalStatus.WBP_PalStatus_C.HoveredAnyPalPanel_Internal
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalStatus.WBP_PalStatus_C.ExecuteUbergraph_WBP_PalStatus
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class UPalIndividualCharacterHandle*    Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalStatus_C::HoveredAnyPalPanel_Internal(class UPalIndividualCharacterHandle* Handle)
+void UWBP_PalStatus_C::ExecuteUbergraph_WBP_PalStatus(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "HoveredAnyPalPanel_Internal");
+		Func = Class->GetFunction("WBP_PalStatus_C", "ExecuteUbergraph_WBP_PalStatus");
 
-	Params::WBP_PalStatus_C_HoveredAnyPalPanel_Internal Parms{};
+	Params::WBP_PalStatus_C_ExecuteUbergraph_WBP_PalStatus Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalStatus.WBP_PalStatus_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_PalStatus_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalStatus_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalStatus.WBP_PalStatus_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_PalStatus_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalStatus_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalStatus.WBP_PalStatus_C.ClampInputNickName
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+// class FText*                            clampedNickName                                        (Parm, OutParm)
+
+void UWBP_PalStatus_C::ClampInputNickName(const class FText& InText, class FText* clampedNickName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalStatus_C", "ClampInputNickName");
+
+	Params::WBP_PalStatus_C_ClampInputNickName Parms{};
+
+	Parms.InText = std::move(InText);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (clampedNickName != nullptr)
+		*clampedNickName = std::move(Parms.clampedNickName);
+}
+
+
+// Function WBP_PalStatus.WBP_PalStatus_C.BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_6_OnToggleFavoritePal__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UPalIndividualCharacterHandle*    CharacterHandle                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalStatus_C::BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_6_OnToggleFavoritePal__DelegateSignature(class UPalIndividualCharacterHandle* CharacterHandle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalStatus_C", "BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_6_OnToggleFavoritePal__DelegateSignature");
+
+	Params::WBP_PalStatus_C_BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_6_OnToggleFavoritePal__DelegateSignature Parms{};
+
+	Parms.CharacterHandle = CharacterHandle;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalStatus.WBP_PalStatus_C.BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_5_OnSelectedChangeActiveSkill__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UPalIndividualCharacterHandle*    targetHandle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// EPalWazaID                              changeWazaID                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPalWazaID                              newWazaID                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalStatus_C::BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_5_OnSelectedChangeActiveSkill__DelegateSignature(class UPalIndividualCharacterHandle* targetHandle, EPalWazaID changeWazaID, EPalWazaID newWazaID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalStatus_C", "BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_5_OnSelectedChangeActiveSkill__DelegateSignature");
+
+	Params::WBP_PalStatus_C_BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_5_OnSelectedChangeActiveSkill__DelegateSignature Parms{};
+
+	Parms.targetHandle = targetHandle;
+	Parms.changeWazaID = changeWazaID;
+	Parms.newWazaID = newWazaID;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalStatus.WBP_PalStatus_C.BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_4_OnRequestedRemoveWaza__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// EPalWazaID                              WazaID                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalIndividualCharacterHandle*    targetHandle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalStatus_C::BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_4_OnRequestedRemoveWaza__DelegateSignature(EPalWazaID WazaID, class UPalIndividualCharacterHandle* targetHandle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalStatus_C", "BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_4_OnRequestedRemoveWaza__DelegateSignature");
+
+	Params::WBP_PalStatus_C_BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_4_OnRequestedRemoveWaza__DelegateSignature Parms{};
+
+	Parms.WazaID = WazaID;
+	Parms.targetHandle = targetHandle;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalStatus.WBP_PalStatus_C.BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_3_OnCommitedNickName__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// const class FText&                      NewNickName                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_PalStatus_C::BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_3_OnCommitedNickName__DelegateSignature(const class FText& NewNickName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalStatus_C", "BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_3_OnCommitedNickName__DelegateSignature");
+
+	Params::WBP_PalStatus_C_BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_3_OnCommitedNickName__DelegateSignature Parms{};
+
+	Parms.NewNickName = std::move(NewNickName);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalStatus.WBP_PalStatus_C.BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_2_OnUnhoveredAnyPalPanel__DelegateSignature
+// (BlueprintEvent)
+
+void UWBP_PalStatus_C::BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_2_OnUnhoveredAnyPalPanel__DelegateSignature()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalStatus_C", "BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_2_OnUnhoveredAnyPalPanel__DelegateSignature");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalStatus.WBP_PalStatus_C.BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_1_OnHoveredAnyPalPanel__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UPalIndividualCharacterHandle*    Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalStatus_C::BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_1_OnHoveredAnyPalPanel__DelegateSignature(class UPalIndividualCharacterHandle* Handle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalStatus_C", "BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_1_OnHoveredAnyPalPanel__DelegateSignature");
+
+	Params::WBP_PalStatus_C_BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_1_OnHoveredAnyPalPanel__DelegateSignature Parms{};
 
 	Parms.Handle = Handle;
 
@@ -291,293 +549,35 @@ void UWBP_PalStatus_C::HoveredAnyPalPanel_Internal(class UPalIndividualCharacter
 }
 
 
-// Function WBP_PalStatus.WBP_PalStatus_C.Is Editing Nick Name
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_PalStatus.WBP_PalStatus_C.BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_0_OnClickedAnyPalPanel__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool*                                   IsEditing                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalIndividualCharacterHandle*    Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalStatus_C::Is_Editing_Nick_Name(bool* IsEditing)
+void UWBP_PalStatus_C::BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_0_OnClickedAnyPalPanel__DelegateSignature(class UPalIndividualCharacterHandle* Handle)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "Is Editing Nick Name");
+		Func = Class->GetFunction("WBP_PalStatus_C", "BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_0_OnClickedAnyPalPanel__DelegateSignature");
 
-	Params::WBP_PalStatus_C_Is_Editing_Nick_Name Parms{};
+	Params::WBP_PalStatus_C_BndEvt__WBP_PalStatus_WBP_MainMenu_Pal_00_K2Node_ComponentBoundEvent_0_OnClickedAnyPalPanel__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (IsEditing != nullptr)
-		*IsEditing = Parms.IsEditing;
-}
-
-
-// Function WBP_PalStatus.WBP_PalStatus_C.NickNameFinalCheck
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
-// ETextCommit                             textCommit                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText*                            finalNickName                                          (Parm, OutParm)
-
-void UWBP_PalStatus_C::NickNameFinalCheck(const class FText& InText, ETextCommit textCommit, class FText* finalNickName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "NickNameFinalCheck");
-
-	Params::WBP_PalStatus_C_NickNameFinalCheck Parms{};
-
-	Parms.InText = std::move(InText);
-	Parms.textCommit = textCommit;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (finalNickName != nullptr)
-		*finalNickName = std::move(Parms.finalNickName);
-}
-
-
-// Function WBP_PalStatus.WBP_PalStatus_C.OnClosedCannotDropPalDialog
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalStatus_C::OnClosedCannotDropPalDialog(bool bResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "OnClosedCannotDropPalDialog");
-
-	Params::WBP_PalStatus_C_OnClosedCannotDropPalDialog Parms{};
-
-	Parms.bResult = bResult;
+	Parms.Handle = Handle;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalStatus.WBP_PalStatus_C.OnClosedDropPalDialog
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bResult                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalStatus_C::OnClosedDropPalDialog(bool bResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "OnClosedDropPalDialog");
-
-	Params::WBP_PalStatus_C_OnClosedDropPalDialog Parms{};
-
-	Parms.bResult = bResult;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalStatus.WBP_PalStatus_C.OnCompletedCaptureActorSetup
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalStatus_C::OnCompletedCaptureActorSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "OnCompletedCaptureActorSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalStatus.WBP_PalStatus_C.OnTriggerDropPal
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalStatus_C::OnTriggerDropPal()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "OnTriggerDropPal");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalStatus.WBP_PalStatus_C.Setup
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<class UPalIndividualCharacterHandle*>&Handles                                                (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_PalStatus_C::Setup(TArray<class UPalIndividualCharacterHandle*>& Handles)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "Setup");
-
-	Params::WBP_PalStatus_C_Setup Parms{};
-
-	Parms.Handles = std::move(Handles);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Handles = std::move(Parms.Handles);
-}
-
-
-// Function WBP_PalStatus.WBP_PalStatus_C.Setup Input Action
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalStatus_C::Setup_Input_Action()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "Setup Input Action");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalStatus.WBP_PalStatus_C.Setup One Pal
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalIndividualCharacterHandle*    CharacterHandle                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    Editable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalStatus_C::Setup_One_Pal(class UPalIndividualCharacterHandle* CharacterHandle, bool Editable)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "Setup One Pal");
-
-	Params::WBP_PalStatus_C_Setup_One_Pal Parms{};
-
-	Parms.CharacterHandle = CharacterHandle;
-	Parms.Editable = Editable;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalStatus.WBP_PalStatus_C.Setup_MultiPal
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalStatus_C::Setup_MultiPal()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "Setup_MultiPal");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalStatus.WBP_PalStatus_C.Setup_NothingPal
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalStatus_C::Setup_NothingPal()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "Setup_NothingPal");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalStatus.WBP_PalStatus_C.ShouldBackList
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// bool*                                   shouldBack                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalStatus_C::ShouldBackList(bool* shouldBack)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "ShouldBackList");
-
-	Params::WBP_PalStatus_C_ShouldBackList Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (shouldBack != nullptr)
-		*shouldBack = Parms.shouldBack;
-}
-
-
-// Function WBP_PalStatus.WBP_PalStatus_C.Toggle Favorite Pal by Action
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalStatus_C::Toggle_Favorite_Pal_by_Action()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "Toggle Favorite Pal by Action");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalStatus.WBP_PalStatus_C.ToParameterDetail
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalStatus_C::ToParameterDetail()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "ToParameterDetail");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalStatus.WBP_PalStatus_C.ToSkillDetail
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalStatus_C::ToSkillDetail()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "ToSkillDetail");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalStatus.WBP_PalStatus_C.UnbindInputAction
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalStatus_C::UnbindInputAction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "UnbindInputAction");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalStatus.WBP_PalStatus_C.UnhoveredAnyPalPanel_Internal
+// Function WBP_PalStatus.WBP_PalStatus_C.BackToList
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalStatus_C::UnhoveredAnyPalPanel_Internal()
+void UWBP_PalStatus_C::BackToList()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalStatus_C", "UnhoveredAnyPalPanel_Internal");
+		Func = Class->GetFunction("WBP_PalStatus_C", "BackToList");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

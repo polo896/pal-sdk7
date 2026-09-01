@@ -27,11 +27,11 @@ public:
 	TArray<class UTexture2D*>                     Textures;                                          // 0x04A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void SetColorType(bool IsCustomMarker);
-	void SetCustomMarkerTexture(int32 IconType);
 	void SetDistanceText(double Length);
-	void UpdateDistance();
+	void SetCustomMarkerTexture(int32 IconType);
+	void SetColorType(bool IsCustomMarker);
 	void UpdateVisibility(bool* InDistance);
+	void UpdateDistance();
 
 public:
 	static class UClass* StaticClass()

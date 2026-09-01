@@ -7,10 +7,10 @@ class UBP_ActionSimpleRandomMonoMontage_C : public UPalActionBase
     EPalActionType ActionType;                                                        // 0x0168 (size: 0x1)
     FString ErrorString;                                                              // 0x0170 (size: 0x10)
     double AnimPlayRate;                                                              // 0x0180 (size: 0x8)
-    TArray<class UAnimMontage*> montageList;                                          // 0x0188 (size: 0x10)
+    TArray<UAnimMontage*> montageList;                                                // 0x0188 (size: 0x10)
     class UAnimMontage* Motage;                                                       // 0x0198 (size: 0x8)
     bool IsStop;                                                                      // 0x01A0 (size: 0x1)
-    TArray<class TSubclassOf<APalCharacter>> IgnoreBPList;                            // 0x01A8 (size: 0x10)
+    TArray<TSubclassOf<class APalCharacter>> IgnoreBPList;                            // 0x01A8 (size: 0x10)
     bool IsIgnore;                                                                    // 0x01B8 (size: 0x1)
     bool IsStopNPCTalkMothOnMontageComplete;                                          // 0x01B9 (size: 0x1)
 

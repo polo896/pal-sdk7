@@ -18,47 +18,28 @@
 namespace SDK::Params
 {
 
-// Function WBP_IngameMenu_WorkSpace_Category.WBP_IngameMenu_WorkSpace_Category_C.AnmEvent_Active
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_IngameMenu_WorkSpace_Category_C_AnmEvent_Active final
+// Function WBP_IngameMenu_WorkSpace_Category.WBP_IngameMenu_WorkSpace_Category_C.Setup
+// 0x0080 (0x0080 - 0x0000)
+struct WBP_IngameMenu_WorkSpace_Category_C_Setup final
 {
 public:
-	bool                                          bIsActive;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	E_PalUIWorkSpaceDisplayCategory               Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Temp_object_Variable_1;                            // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Temp_object_Variable_2;                            // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Temp_object_Variable_3;                            // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Temp_object_Variable_4;                            // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Temp_object_Variable_5;                            // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Temp_object_Variable_6;                            // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UTexture2D*                             Temp_object_Variable_7;                            // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FDataTableRowHandle                    CallFunc_Map_Find_Value;                           // 0x0048(0x0010)(NoDestructor)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTexture2D*                             K2Node_Select_Default;                             // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0068(0x0018)()
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_Category_C_AnmEvent_Active;
-
-// Function WBP_IngameMenu_WorkSpace_Category.WBP_IngameMenu_WorkSpace_Category_C.BndEvt__WBP_IngameMenu_WorkSpace_Category_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_IngameMenu_WorkSpace_Category_C_BndEvt__WBP_IngameMenu_WorkSpace_Category_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_Category_C_BndEvt__WBP_IngameMenu_WorkSpace_Category_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
-
-// Function WBP_IngameMenu_WorkSpace_Category.WBP_IngameMenu_WorkSpace_Category_C.ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Category
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_IngameMenu_WorkSpace_Category_C_ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Category final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_CustomEvent_bIsActive;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_Category_C_ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Category;
-
-// Function WBP_IngameMenu_WorkSpace_Category.WBP_IngameMenu_WorkSpace_Category_C.GetBindCategory
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_IngameMenu_WorkSpace_Category_C_GetBindCategory final
-{
-public:
-	E_PalUIWorkSpaceDisplayCategory               OutCategory;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_Category_C_GetBindCategory;
+DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_Category_C_Setup;
 
 // Function WBP_IngameMenu_WorkSpace_Category.WBP_IngameMenu_WorkSpace_Category_C.GetTargetItemTypes
 // 0x0110 (0x0110 - 0x0000)
@@ -108,28 +89,47 @@ public:
 };
 DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_Category_C_GetTargetItemTypes;
 
-// Function WBP_IngameMenu_WorkSpace_Category.WBP_IngameMenu_WorkSpace_Category_C.Setup
-// 0x0080 (0x0080 - 0x0000)
-struct WBP_IngameMenu_WorkSpace_Category_C_Setup final
+// Function WBP_IngameMenu_WorkSpace_Category.WBP_IngameMenu_WorkSpace_Category_C.GetBindCategory
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_IngameMenu_WorkSpace_Category_C_GetBindCategory final
 {
 public:
-	E_PalUIWorkSpaceDisplayCategory               Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Temp_object_Variable_1;                            // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Temp_object_Variable_2;                            // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Temp_object_Variable_3;                            // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Temp_object_Variable_4;                            // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Temp_object_Variable_5;                            // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Temp_object_Variable_6;                            // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UTexture2D*                             Temp_object_Variable_7;                            // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FDataTableRowHandle                    CallFunc_Map_Find_Value;                           // 0x0048(0x0010)(NoDestructor)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTexture2D*                             K2Node_Select_Default;                             // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetLocalizedTextFromHandle_Text;          // 0x0068(0x0018)()
+	E_PalUIWorkSpaceDisplayCategory               OutCategory;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_Category_C_Setup;
+DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_Category_C_GetBindCategory;
+
+// Function WBP_IngameMenu_WorkSpace_Category.WBP_IngameMenu_WorkSpace_Category_C.ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Category
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_IngameMenu_WorkSpace_Category_C_ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Category final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_bIsActive;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_Category_C_ExecuteUbergraph_WBP_IngameMenu_WorkSpace_Category;
+
+// Function WBP_IngameMenu_WorkSpace_Category.WBP_IngameMenu_WorkSpace_Category_C.BndEvt__WBP_IngameMenu_WorkSpace_Category_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_IngameMenu_WorkSpace_Category_C_BndEvt__WBP_IngameMenu_WorkSpace_Category_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_Category_C_BndEvt__WBP_IngameMenu_WorkSpace_Category_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
+
+// Function WBP_IngameMenu_WorkSpace_Category.WBP_IngameMenu_WorkSpace_Category_C.AnmEvent_Active
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_IngameMenu_WorkSpace_Category_C_AnmEvent_Active final
+{
+public:
+	bool                                          bIsActive;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_IngameMenu_WorkSpace_Category_C_AnmEvent_Active;
 
 }
 

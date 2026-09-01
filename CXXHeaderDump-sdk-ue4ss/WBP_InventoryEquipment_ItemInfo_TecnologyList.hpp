@@ -13,7 +13,7 @@ class UWBP_InventoryEquipment_ItemInfo_TecnologyList_C : public UUserWidget
     class UBP_PalTextBlock_C* Text_Stock;                                             // 0x02B0 (size: 0x8)
     class UBP_PalTextBlock_C* Text_Total;                                             // 0x02B8 (size: 0x8)
 
-    void SetInfo(FText Name, int32 Num, TSoftObjectPtr<UTexture2D> Icon, int32 Stock);
+    void SetInfo(FText Name, int32 Num, TSoftObjectPtr<class UTexture2D> Icon, int32 Stock);
     void Construct();
     void ExecuteUbergraph_WBP_InventoryEquipment_ItemInfo_TecnologyList(int32 EntryPoint);
 }; // Size: 0x2C0

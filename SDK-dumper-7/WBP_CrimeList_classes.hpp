@@ -46,21 +46,21 @@ public:
 	TMulticastInlineDelegate<void()>              OnFinishedClose;                                   // 0x0318(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void AnmEvent_Default();
-	void AnmEvent_In();
-	void AnmEvent_Inprogress();
-	void AnmEvent_Out();
-	void Construct();
-	void ExecuteUbergraph_WBP_CrimeList(int32 EntryPoint);
-	void Finished_F06653854F004C1F58C38EA2B1D3D934();
-	void RemoveAllCrime();
-	void SetCrimeList(TArray<class FName>& CrimeList);
-	void SetGaugeProgress(double CurrentTimer, double MaxTime);
-	void SetGaugeProgressInternal(double ProgressValue);
-	void SetPrizeMoney(int32 Money);
-	void SetWantedLevel(int32 NewWantedLevel);
-	void SortCrime();
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void SortCrime();
+	void SetWantedLevel(int32 NewWantedLevel);
+	void SetPrizeMoney(int32 Money);
+	void SetGaugeProgressInternal(double ProgressValue);
+	void SetGaugeProgress(double CurrentTimer, double MaxTime);
+	void SetCrimeList(TArray<class FName>& CrimeList);
+	void RemoveAllCrime();
+	void Finished_F06653854F004C1F58C38EA2B1D3D934();
+	void ExecuteUbergraph_WBP_CrimeList(int32 EntryPoint);
+	void Construct();
+	void AnmEvent_Out();
+	void AnmEvent_Inprogress();
+	void AnmEvent_In();
+	void AnmEvent_Default();
 
 public:
 	static class UClass* StaticClass()

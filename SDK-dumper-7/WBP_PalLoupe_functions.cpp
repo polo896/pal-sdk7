@@ -17,69 +17,23 @@
 namespace SDK
 {
 
-// Function WBP_PalLoupe.WBP_PalLoupe_C.Clear
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalLoupe_C::Clear()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalLoupe_C", "Clear");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalLoupe.WBP_PalLoupe_C.ExecuteUbergraph_WBP_PalLoupe
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalLoupe_C::ExecuteUbergraph_WBP_PalLoupe(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalLoupe_C", "ExecuteUbergraph_WBP_PalLoupe");
-
-	Params::WBP_PalLoupe_C_ExecuteUbergraph_WBP_PalLoupe Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalLoupe.WBP_PalLoupe_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PalLoupe_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalLoupe_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalLoupe.WBP_PalLoupe_C.SetTargetPal
+// Function WBP_PalLoupe.WBP_PalLoupe_C.UpdateHunger
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPalIndividualCharacterSlot*      TargetSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// double                                  nowHunger                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  nowMaxHunger                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalLoupe_C::SetTargetPal(class UPalIndividualCharacterSlot* TargetSlot)
+void UWBP_PalLoupe_C::UpdateHunger(double nowHunger, double nowMaxHunger)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalLoupe_C", "SetTargetPal");
+		Func = Class->GetFunction("WBP_PalLoupe_C", "UpdateHunger");
 
-	Params::WBP_PalLoupe_C_SetTargetPal Parms{};
+	Params::WBP_PalLoupe_C_UpdateHunger Parms{};
 
-	Parms.TargetSlot = TargetSlot;
+	Parms.nowHunger = nowHunger;
+	Parms.nowMaxHunger = nowMaxHunger;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -107,25 +61,71 @@ void UWBP_PalLoupe_C::UpdateHP(const struct FFixedPoint64& nowHP, const struct F
 }
 
 
-// Function WBP_PalLoupe.WBP_PalLoupe_C.UpdateHunger
+// Function WBP_PalLoupe.WBP_PalLoupe_C.SetTargetPal
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  nowHunger                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  nowMaxHunger                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalIndividualCharacterSlot*      TargetSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalLoupe_C::UpdateHunger(double nowHunger, double nowMaxHunger)
+void UWBP_PalLoupe_C::SetTargetPal(class UPalIndividualCharacterSlot* TargetSlot)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalLoupe_C", "UpdateHunger");
+		Func = Class->GetFunction("WBP_PalLoupe_C", "SetTargetPal");
 
-	Params::WBP_PalLoupe_C_UpdateHunger Parms{};
+	Params::WBP_PalLoupe_C_SetTargetPal Parms{};
 
-	Parms.nowHunger = nowHunger;
-	Parms.nowMaxHunger = nowMaxHunger;
+	Parms.TargetSlot = TargetSlot;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalLoupe.WBP_PalLoupe_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_PalLoupe_C::OnInitialized()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalLoupe_C", "OnInitialized");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalLoupe.WBP_PalLoupe_C.ExecuteUbergraph_WBP_PalLoupe
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalLoupe_C::ExecuteUbergraph_WBP_PalLoupe(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalLoupe_C", "ExecuteUbergraph_WBP_PalLoupe");
+
+	Params::WBP_PalLoupe_C_ExecuteUbergraph_WBP_PalLoupe Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalLoupe.WBP_PalLoupe_C.Clear
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalLoupe_C::Clear()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalLoupe_C", "Clear");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_CrimeList_RankGauge.WBP_CrimeList_RankGauge_C.AnmEvent_Off
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_CrimeList_RankGauge_C::AnmEvent_Off()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeList_RankGauge_C", "AnmEvent_Off");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CrimeList_RankGauge.WBP_CrimeList_RankGauge_C.AnmEvent_Rankup
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_CrimeList_RankGauge_C::AnmEvent_Rankup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CrimeList_RankGauge_C", "AnmEvent_Rankup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_CrimeList_RankGauge.WBP_CrimeList_RankGauge_C.ExecuteUbergraph_WBP_CrimeList_RankGauge
 // (Final, UbergraphFunction)
 // Parameters:
@@ -62,6 +34,34 @@ void UWBP_CrimeList_RankGauge_C::ExecuteUbergraph_WBP_CrimeList_RankGauge(int32 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimeList_RankGauge.WBP_CrimeList_RankGauge_C.AnmEvent_Rankup
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_CrimeList_RankGauge_C::AnmEvent_Rankup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeList_RankGauge_C", "AnmEvent_Rankup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CrimeList_RankGauge.WBP_CrimeList_RankGauge_C.AnmEvent_Off
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_CrimeList_RankGauge_C::AnmEvent_Off()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_CrimeList_RankGauge_C", "AnmEvent_Off");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

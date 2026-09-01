@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "E_PaldexDistributionTimeType_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
+#include "E_PaldexDistributionTimeType_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
 #include "UMG_classes.hpp"
@@ -71,53 +71,53 @@ public:
 	TMulticastInlineDelegate<void()>              OnClickedFilteringButton;                          // 0x0418(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void Add_Captured_Actor_Rotation(const struct FRotator& Rotator);
-	void AddDistributionMapOffset(const struct FVector2D& Offset);
-	void AddZoomDistributionMap(double addZoomRate);
-	void AnmEvent_ChnageTimeType(E_PaldexDistributionTimeType timeType);
-	void AnmEvent_FirstOpen();
-	void AnmEvent_ToDistribution();
-	void AnmEvent_ToModel();
-	void BndEvt__WBP_Paldex_WBP_CommonButton_Activation_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature();
-	void BndEvt__WBP_Paldex_WBP_Paldex_tabset_K2Node_ComponentBoundEvent_1_OnSelectedModelTab__DelegateSignature();
-	void BndEvt__WBP_Paldex_WBP_Paldex_tabset_K2Node_ComponentBoundEvent_2_OnSelectedDistributionTab__DelegateSignature();
-	void BndEvt__WBP_Paldex_WBP_PaldexScrollList_K2Node_ComponentBoundEvent_0_OnHoveredAnyPanel__DelegateSignature(class FName CharacterID, class UWBP_Paldex_List_C* SelfWidget);
-	void BndEvt__WBP_Paldex_WBP_PaldexScrollList_K2Node_ComponentBoundEvent_3_OnClickedAnyPanel__DelegateSignature(class FName CharacterID, class UWBP_Paldex_List_C* Widget);
-	void CapturePalActor(class FName CharacterID);
-	void ChangeMap(class FName MapName);
-	void ChangeNextMap();
-	void ChangeToDistributionDIsplayMode();
-	void ChangeToModelDisplayModel();
-	void ClickByCharacterID(class FName CharacterID);
-	void ClickByIndex(int32 Index_0);
-	void Construct();
-	void Destruct();
-	void DisplayDistribution();
-	void DisplayNoDataWidget(const struct FDataTableRowHandle& msgIdHandle);
-	void DisplayPalStat();
-	void ExecuteUbergraph_WBP_Paldex(int32 EntryPoint);
-	void Filtering(TArray<struct FPalUIPaldex_DisplayInfo>& displayInfoArray);
-	void FocusByCharacterID(class FName CharacterID);
-	void FocusByIndex(int32 Index_0);
-	void GetFilteringButtonFocusTarget(class UWidget** Target);
-	void GetFocusTargetByCharacterID(class FName CharacterID, class UWidget** Target);
-	void GetFocusTargetByIndex(int32 Index_0, class UWidget** Target);
-	void HideNoDataWidget();
-	void IsZoomMax(bool* IsMax);
-	void OnCompleteCapturePalActor();
-	void OnInitialized();
-	void PageSkip_Down(EUINavigation Navigation_0);
-	void PageSkip_Up(EUINavigation Navigation_0);
-	void ResetFiltering();
-	void ResetMapOffset();
-	void ScrollByCharacterID(class FName CharacterID);
-	void ScrollByPanelIndex(int32 ScrollByPanelIndex_0);
-	void Set_Display_Info(const struct FPalUIPaldex_DisplayInfo& DisplayInfo, E_PaldexDistributionTimeType timeType);
-	void SetEncountedPalNum(int32 Num);
-	void SetRegisteredPalNum(int32 Num);
-	void SetupCaptureCameraActor();
-	void SetupPalPanelList(TArray<struct FPalUIPaldex_DisplayInfo>& displayInfoArray);
 	void SetZoomDisrtibutionMap(double Rate);
+	void SetupPalPanelList(TArray<struct FPalUIPaldex_DisplayInfo>& displayInfoArray);
+	void SetupCaptureCameraActor();
+	void SetRegisteredPalNum(int32 Num);
+	void SetEncountedPalNum(int32 Num);
+	void Set_Display_Info(const struct FPalUIPaldex_DisplayInfo& DisplayInfo, E_PaldexDistributionTimeType timeType);
+	void ScrollByPanelIndex(int32 ScrollByPanelIndex_0);
+	void ScrollByCharacterID(class FName CharacterID);
+	void ResetMapOffset();
+	void ResetFiltering();
+	void PageSkip_Up(EUINavigation Navigation_0);
+	void PageSkip_Down(EUINavigation Navigation_0);
+	void OnInitialized();
+	void OnCompleteCapturePalActor();
+	void IsZoomMax(bool* IsMax);
+	void HideNoDataWidget();
+	void GetFocusTargetByIndex(int32 Index_0, class UWidget** Target);
+	void GetFocusTargetByCharacterID(class FName CharacterID, class UWidget** Target);
+	void GetFilteringButtonFocusTarget(class UWidget** Target);
+	void FocusByIndex(int32 Index_0);
+	void FocusByCharacterID(class FName CharacterID);
+	void Filtering(TArray<struct FPalUIPaldex_DisplayInfo>& displayInfoArray);
+	void ExecuteUbergraph_WBP_Paldex(int32 EntryPoint);
+	void DisplayPalStat();
+	void DisplayNoDataWidget(const struct FDataTableRowHandle& msgIdHandle);
+	void DisplayDistribution();
+	void Destruct();
+	void Construct();
+	void ClickByIndex(int32 Index_0);
+	void ClickByCharacterID(class FName CharacterID);
+	void ChangeToModelDisplayModel();
+	void ChangeToDistributionDIsplayMode();
+	void CapturePalActor(class FName CharacterID);
+	void BndEvt__WBP_Paldex_WBP_PaldexScrollList_K2Node_ComponentBoundEvent_3_OnClickedAnyPanel__DelegateSignature(class FName CharacterID, class UWBP_Paldex_List_C* Widget);
+	void BndEvt__WBP_Paldex_WBP_PaldexScrollList_K2Node_ComponentBoundEvent_0_OnHoveredAnyPanel__DelegateSignature(class FName CharacterID, class UWBP_Paldex_List_C* SelfWidget);
+	void BndEvt__WBP_Paldex_WBP_Paldex_tabset_K2Node_ComponentBoundEvent_2_OnSelectedDistributionTab__DelegateSignature();
+	void BndEvt__WBP_Paldex_WBP_Paldex_tabset_K2Node_ComponentBoundEvent_1_OnSelectedModelTab__DelegateSignature();
+	void BndEvt__WBP_Paldex_WBP_CommonButton_Activation_K2Node_ComponentBoundEvent_5_OnClicked__DelegateSignature();
+	void AnmEvent_ToModel();
+	void AnmEvent_ToDistribution();
+	void AnmEvent_FirstOpen();
+	void AnmEvent_ChnageTimeType(E_PaldexDistributionTimeType timeType);
+	void AddZoomDistributionMap(double addZoomRate);
+	void AddDistributionMapOffset(const struct FVector2D& Offset);
+	void Add_Captured_Actor_Rotation(const struct FRotator& Rotator);
+	void ChangeNextMap();
+	void ChangeMap(class FName MapName);
 
 public:
 	static class UClass* StaticClass()

@@ -17,63 +17,15 @@
 namespace SDK
 {
 
-// Function WBP_Crime_Found.WBP_Crime_Found_C.ClearFoundList
+// Function WBP_Crime_Found.WBP_Crime_Found_C.SetDroneFound
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Crime_Found_C::ClearFoundList()
+void UWBP_Crime_Found_C::SetDroneFound()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Crime_Found_C", "ClearFoundList");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Crime_Found.WBP_Crime_Found_C.ExecuteUbergraph_WBP_Crime_Found
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Crime_Found_C::ExecuteUbergraph_WBP_Crime_Found(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Crime_Found_C", "ExecuteUbergraph_WBP_Crime_Found");
-
-	Params::WBP_Crime_Found_C_ExecuteUbergraph_WBP_Crime_Found Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Crime_Found.WBP_Crime_Found_C.Finished_8752189C4872B9EED39A3DB743928758
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Crime_Found_C::Finished_8752189C4872B9EED39A3DB743928758()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Crime_Found_C", "Finished_8752189C4872B9EED39A3DB743928758");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Crime_Found.WBP_Crime_Found_C.Finished_DEA8290E42785E70DA2914B20F7C172E
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Crime_Found_C::Finished_DEA8290E42785E70DA2914B20F7C172E()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Crime_Found_C", "Finished_DEA8290E42785E70DA2914B20F7C172E");
+		Func = Class->GetFunction("WBP_Crime_Found_C", "SetDroneFound");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,15 +51,63 @@ void UWBP_Crime_Found_C::SetCrimesFound(const TArray<class FName>& CrimeIds)
 }
 
 
-// Function WBP_Crime_Found.WBP_Crime_Found_C.SetDroneFound
+// Function WBP_Crime_Found.WBP_Crime_Found_C.Finished_DEA8290E42785E70DA2914B20F7C172E
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Crime_Found_C::SetDroneFound()
+void UWBP_Crime_Found_C::Finished_DEA8290E42785E70DA2914B20F7C172E()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Crime_Found_C", "SetDroneFound");
+		Func = Class->GetFunction("WBP_Crime_Found_C", "Finished_DEA8290E42785E70DA2914B20F7C172E");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Crime_Found.WBP_Crime_Found_C.Finished_8752189C4872B9EED39A3DB743928758
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Crime_Found_C::Finished_8752189C4872B9EED39A3DB743928758()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Crime_Found_C", "Finished_8752189C4872B9EED39A3DB743928758");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Crime_Found.WBP_Crime_Found_C.ExecuteUbergraph_WBP_Crime_Found
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Crime_Found_C::ExecuteUbergraph_WBP_Crime_Found(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Crime_Found_C", "ExecuteUbergraph_WBP_Crime_Found");
+
+	Params::WBP_Crime_Found_C_ExecuteUbergraph_WBP_Crime_Found Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Crime_Found.WBP_Crime_Found_C.ClearFoundList
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Crime_Found_C::ClearFoundList()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Crime_Found_C", "ClearFoundList");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

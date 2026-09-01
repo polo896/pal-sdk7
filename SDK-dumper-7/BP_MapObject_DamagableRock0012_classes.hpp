@@ -35,8 +35,8 @@ public:
 
 public:
 	void ExecuteUbergraph_BP_MapObject_DamagableRock0012(int32 EntryPoint);
-	void InitializeFromPool();
 	void ReturnToPool();
+	void InitializeFromPool();
 
 	struct FPalObjectPoolParameter GetObjectPoolParameter() const;
 

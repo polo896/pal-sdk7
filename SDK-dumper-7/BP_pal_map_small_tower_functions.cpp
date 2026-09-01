@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function BP_pal_map_small_tower.BP_pal_map_small_tower_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_pal_map_small_tower_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_pal_map_small_tower_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_pal_map_small_tower.BP_pal_map_small_tower_C.ExecuteUbergraph_BP_pal_map_small_tower
 // (Final, UbergraphFunction)
 // Parameters:
@@ -34,20 +48,6 @@ void ABP_pal_map_small_tower_C::ExecuteUbergraph_BP_pal_map_small_tower(int32 En
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_pal_map_small_tower.BP_pal_map_small_tower_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_pal_map_small_tower_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_pal_map_small_tower_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

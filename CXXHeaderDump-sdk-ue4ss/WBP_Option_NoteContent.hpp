@@ -10,7 +10,7 @@ class UWBP_Option_NoteContent_C : public UUserWidget
     class UScrollBox* ScrollBox_Content;                                              // 0x0298 (size: 0x8)
 
     void SetText(FText InText);
-    void SetImage(TSoftObjectPtr<UTexture2D> SoftTexture);
+    void SetImage(TSoftObjectPtr<class UTexture2D> SoftTexture);
     void Construct();
     void SetNoteContent(class UPalNoteData* NoteData, FText Desc);
     void Destruct();

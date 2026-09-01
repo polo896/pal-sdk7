@@ -17,28 +17,6 @@
 namespace SDK
 {
 
-// Function BP_DropWeaponPartNotify.BP_DropWeaponPartNotify_C.BeginWeaponDrop
-// (Public, BlueprintCallable, BlueprintEvent, Const)
-// Parameters:
-// class ABP_DropWeaponPart_C*             self2                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Owner                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UBP_DropWeaponPartNotify_C::BeginWeaponDrop(class ABP_DropWeaponPart_C* self2, class AActor* Owner) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DropWeaponPartNotify_C", "BeginWeaponDrop");
-
-	Params::BP_DropWeaponPartNotify_C_BeginWeaponDrop Parms{};
-
-	Parms.self2 = self2;
-	Parms.Owner = Owner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_DropWeaponPartNotify.BP_DropWeaponPartNotify_C.Received_Notify
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
@@ -63,6 +41,28 @@ bool UBP_DropWeaponPartNotify_C::Received_Notify(class USkeletalMeshComponent* M
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
+}
+
+
+// Function BP_DropWeaponPartNotify.BP_DropWeaponPartNotify_C.BeginWeaponDrop
+// (Public, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// class ABP_DropWeaponPart_C*             self2                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Owner                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_DropWeaponPartNotify_C::BeginWeaponDrop(class ABP_DropWeaponPart_C* self2, class AActor* Owner) const
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_DropWeaponPartNotify_C", "BeginWeaponDrop");
+
+	Params::BP_DropWeaponPartNotify_C_BeginWeaponDrop Parms{};
+
+	Parms.self2 = self2;
+	Parms.Owner = Owner;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

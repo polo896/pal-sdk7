@@ -17,171 +17,55 @@
 namespace SDK
 {
 
-// Function WBP_PalWorkPowerPlant_1.WBP_PalWorkPowerPlant_1_C.ChangeCheck
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalWorkPowerPlant_1_C::ChangeCheck()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkPowerPlant_1_C", "ChangeCheck");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWorkPowerPlant_1.WBP_PalWorkPowerPlant_1_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PalWorkPowerPlant_1_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkPowerPlant_1_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWorkPowerPlant_1.WBP_PalWorkPowerPlant_1_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PalWorkPowerPlant_1_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkPowerPlant_1_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWorkPowerPlant_1.WBP_PalWorkPowerPlant_1_C.DisplayCheck
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalWorkPowerPlant_1_C::DisplayCheck()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkPowerPlant_1_C", "DisplayCheck");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWorkPowerPlant_1.WBP_PalWorkPowerPlant_1_C.ExecuteUbergraph_WBP_PalWorkPowerPlant_1
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalWorkPowerPlant_1_C::ExecuteUbergraph_WBP_PalWorkPowerPlant_1(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkPowerPlant_1_C", "ExecuteUbergraph_WBP_PalWorkPowerPlant_1");
-
-	Params::WBP_PalWorkPowerPlant_1_C_ExecuteUbergraph_WBP_PalWorkPowerPlant_1 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWorkPowerPlant_1.WBP_PalWorkPowerPlant_1_C.GetAnimationDetailToSimple
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UWidgetAnimation*                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
-
-class UWidgetAnimation* UWBP_PalWorkPowerPlant_1_C::GetAnimationDetailToSimple()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkPowerPlant_1_C", "GetAnimationDetailToSimple");
-
-	Params::WBP_PalWorkPowerPlant_1_C_GetAnimationDetailToSimple Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_PalWorkPowerPlant_1.WBP_PalWorkPowerPlant_1_C.On Updated Worker Pal
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalWorkBase*                     Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalWorkPowerPlant_1_C::On_Updated_Worker_Pal(class UPalWorkBase* Work)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkPowerPlant_1_C", "On Updated Worker Pal");
-
-	Params::WBP_PalWorkPowerPlant_1_C_On_Updated_Worker_Pal Parms{};
-
-	Parms.Work = Work;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWorkPowerPlant_1.WBP_PalWorkPowerPlant_1_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalWorkPowerPlant_1_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkPowerPlant_1_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalWorkPowerPlant_1.WBP_PalWorkPowerPlant_1_C.OnUpdateEnergyStack
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalUIMapObjectEnergyStatusIndicatorModel*Model                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalWorkPowerPlant_1_C::OnUpdateEnergyStack(class UPalUIMapObjectEnergyStatusIndicatorModel* Model)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkPowerPlant_1_C", "OnUpdateEnergyStack");
-
-	Params::WBP_PalWorkPowerPlant_1_C_OnUpdateEnergyStack Parms{};
-
-	Parms.Model = Model;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalWorkPowerPlant_1.WBP_PalWorkPowerPlant_1_C.OnUpdateOverHeatGauge
+// Function WBP_PalWorkPowerPlant_1.WBP_PalWorkPowerPlant_1_C.SetVisibleOverHeatCaution
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPalUIMapObjectEnergyStatusIndicatorModel_GenerateEnergy*Model                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bOn                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalWorkPowerPlant_1_C::OnUpdateOverHeatGauge(class UPalUIMapObjectEnergyStatusIndicatorModel_GenerateEnergy* Model)
+void UWBP_PalWorkPowerPlant_1_C::SetVisibleOverHeatCaution(bool bOn)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkPowerPlant_1_C", "OnUpdateOverHeatGauge");
+		Func = Class->GetFunction("WBP_PalWorkPowerPlant_1_C", "SetVisibleOverHeatCaution");
 
-	Params::WBP_PalWorkPowerPlant_1_C_OnUpdateOverHeatGauge Parms{};
+	Params::WBP_PalWorkPowerPlant_1_C_SetVisibleOverHeatCaution Parms{};
 
-	Parms.Model = Model;
+	Parms.bOn = bOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWorkPowerPlant_1.WBP_PalWorkPowerPlant_1_C.SetupForMapObjectConcreteModel
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalWorkPowerPlant_1_C::SetupForMapObjectConcreteModel()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkPowerPlant_1_C", "SetupForMapObjectConcreteModel");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalWorkPowerPlant_1.WBP_PalWorkPowerPlant_1_C.SetHeatGaugeValue
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalUIMapObjectEnergyStatusIndicatorModel_GenerateEnergy*IndicatorModel                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWorkPowerPlant_1_C::SetHeatGaugeValue(class UPalUIMapObjectEnergyStatusIndicatorModel_GenerateEnergy* IndicatorModel)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkPowerPlant_1_C", "SetHeatGaugeValue");
+
+	Params::WBP_PalWorkPowerPlant_1_C_SetHeatGaugeValue Parms{};
+
+	Parms.IndicatorModel = IndicatorModel;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -207,57 +91,173 @@ void UWBP_PalWorkPowerPlant_1_C::SetArrow(bool IsIncrease)
 }
 
 
-// Function WBP_PalWorkPowerPlant_1.WBP_PalWorkPowerPlant_1_C.SetHeatGaugeValue
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalWorkPowerPlant_1.WBP_PalWorkPowerPlant_1_C.OnUpdateOverHeatGauge
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPalUIMapObjectEnergyStatusIndicatorModel_GenerateEnergy*IndicatorModel                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPalUIMapObjectEnergyStatusIndicatorModel_GenerateEnergy*Model                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalWorkPowerPlant_1_C::SetHeatGaugeValue(class UPalUIMapObjectEnergyStatusIndicatorModel_GenerateEnergy* IndicatorModel)
+void UWBP_PalWorkPowerPlant_1_C::OnUpdateOverHeatGauge(class UPalUIMapObjectEnergyStatusIndicatorModel_GenerateEnergy* Model)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkPowerPlant_1_C", "SetHeatGaugeValue");
+		Func = Class->GetFunction("WBP_PalWorkPowerPlant_1_C", "OnUpdateOverHeatGauge");
 
-	Params::WBP_PalWorkPowerPlant_1_C_SetHeatGaugeValue Parms{};
+	Params::WBP_PalWorkPowerPlant_1_C_OnUpdateOverHeatGauge Parms{};
 
-	Parms.IndicatorModel = IndicatorModel;
+	Parms.Model = Model;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PalWorkPowerPlant_1.WBP_PalWorkPowerPlant_1_C.SetupForMapObjectConcreteModel
+// Function WBP_PalWorkPowerPlant_1.WBP_PalWorkPowerPlant_1_C.OnUpdateEnergyStack
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalUIMapObjectEnergyStatusIndicatorModel*Model                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalWorkPowerPlant_1_C::SetupForMapObjectConcreteModel()
+void UWBP_PalWorkPowerPlant_1_C::OnUpdateEnergyStack(class UPalUIMapObjectEnergyStatusIndicatorModel* Model)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkPowerPlant_1_C", "SetupForMapObjectConcreteModel");
+		Func = Class->GetFunction("WBP_PalWorkPowerPlant_1_C", "OnUpdateEnergyStack");
+
+	Params::WBP_PalWorkPowerPlant_1_C_OnUpdateEnergyStack Parms{};
+
+	Parms.Model = Model;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWorkPowerPlant_1.WBP_PalWorkPowerPlant_1_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalWorkPowerPlant_1_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkPowerPlant_1_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PalWorkPowerPlant_1.WBP_PalWorkPowerPlant_1_C.SetVisibleOverHeatCaution
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_PalWorkPowerPlant_1.WBP_PalWorkPowerPlant_1_C.On Updated Worker Pal
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bOn                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPalWorkBase*                     Work                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PalWorkPowerPlant_1_C::SetVisibleOverHeatCaution(bool bOn)
+void UWBP_PalWorkPowerPlant_1_C::On_Updated_Worker_Pal(class UPalWorkBase* Work)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalWorkPowerPlant_1_C", "SetVisibleOverHeatCaution");
+		Func = Class->GetFunction("WBP_PalWorkPowerPlant_1_C", "On Updated Worker Pal");
 
-	Params::WBP_PalWorkPowerPlant_1_C_SetVisibleOverHeatCaution Parms{};
+	Params::WBP_PalWorkPowerPlant_1_C_On_Updated_Worker_Pal Parms{};
 
-	Parms.bOn = bOn;
+	Parms.Work = Work;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWorkPowerPlant_1.WBP_PalWorkPowerPlant_1_C.GetAnimationDetailToSimple
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWidgetAnimation*                 ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
+
+class UWidgetAnimation* UWBP_PalWorkPowerPlant_1_C::GetAnimationDetailToSimple()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkPowerPlant_1_C", "GetAnimationDetailToSimple");
+
+	Params::WBP_PalWorkPowerPlant_1_C_GetAnimationDetailToSimple Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_PalWorkPowerPlant_1.WBP_PalWorkPowerPlant_1_C.ExecuteUbergraph_WBP_PalWorkPowerPlant_1
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalWorkPowerPlant_1_C::ExecuteUbergraph_WBP_PalWorkPowerPlant_1(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkPowerPlant_1_C", "ExecuteUbergraph_WBP_PalWorkPowerPlant_1");
+
+	Params::WBP_PalWorkPowerPlant_1_C_ExecuteUbergraph_WBP_PalWorkPowerPlant_1 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalWorkPowerPlant_1.WBP_PalWorkPowerPlant_1_C.DisplayCheck
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalWorkPowerPlant_1_C::DisplayCheck()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkPowerPlant_1_C", "DisplayCheck");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalWorkPowerPlant_1.WBP_PalWorkPowerPlant_1_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_PalWorkPowerPlant_1_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkPowerPlant_1_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalWorkPowerPlant_1.WBP_PalWorkPowerPlant_1_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_PalWorkPowerPlant_1_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkPowerPlant_1_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalWorkPowerPlant_1.WBP_PalWorkPowerPlant_1_C.ChangeCheck
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalWorkPowerPlant_1_C::ChangeCheck()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalWorkPowerPlant_1_C", "ChangeCheck");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

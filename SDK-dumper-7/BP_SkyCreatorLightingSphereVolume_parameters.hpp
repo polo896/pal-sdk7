@@ -14,6 +14,24 @@
 namespace SDK::Params
 {
 
+// Function BP_SkyCreatorLightingSphereVolume.BP_SkyCreatorLightingSphereVolume_C.ReceiveActorEndOverlap
+// 0x0008 (0x0008 - 0x0000)
+struct BP_SkyCreatorLightingSphereVolume_C_ReceiveActorEndOverlap final
+{
+public:
+	class AActor*                                 OtherActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SkyCreatorLightingSphereVolume_C_ReceiveActorEndOverlap;
+
+// Function BP_SkyCreatorLightingSphereVolume.BP_SkyCreatorLightingSphereVolume_C.ReceiveActorBeginOverlap
+// 0x0008 (0x0008 - 0x0000)
+struct BP_SkyCreatorLightingSphereVolume_C_ReceiveActorBeginOverlap final
+{
+public:
+	class AActor*                                 OtherActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SkyCreatorLightingSphereVolume_C_ReceiveActorBeginOverlap;
+
 // Function BP_SkyCreatorLightingSphereVolume.BP_SkyCreatorLightingSphereVolume_C.ExecuteUbergraph_BP_SkyCreatorLightingSphereVolume
 // 0x0018 (0x0018 - 0x0000)
 struct BP_SkyCreatorLightingSphereVolume_C_ExecuteUbergraph_BP_SkyCreatorLightingSphereVolume final
@@ -25,24 +43,6 @@ public:
 	class AActor*                                 K2Node_Event_OtherActor_1;                         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_SkyCreatorLightingSphereVolume_C_ExecuteUbergraph_BP_SkyCreatorLightingSphereVolume;
-
-// Function BP_SkyCreatorLightingSphereVolume.BP_SkyCreatorLightingSphereVolume_C.ReceiveActorBeginOverlap
-// 0x0008 (0x0008 - 0x0000)
-struct BP_SkyCreatorLightingSphereVolume_C_ReceiveActorBeginOverlap final
-{
-public:
-	class AActor*                                 OtherActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_SkyCreatorLightingSphereVolume_C_ReceiveActorBeginOverlap;
-
-// Function BP_SkyCreatorLightingSphereVolume.BP_SkyCreatorLightingSphereVolume_C.ReceiveActorEndOverlap
-// 0x0008 (0x0008 - 0x0000)
-struct BP_SkyCreatorLightingSphereVolume_C_ReceiveActorEndOverlap final
-{
-public:
-	class AActor*                                 OtherActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_SkyCreatorLightingSphereVolume_C_ReceiveActorEndOverlap;
 
 }
 

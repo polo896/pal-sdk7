@@ -41,57 +41,17 @@ void UWBP_BattleEntry_Member_C::AddTaslDetailText(const class FText& Text, int32
 }
 
 
-// Function WBP_BattleEntry_Member.WBP_BattleEntry_Member_C.ExecuteUbergraph_WBP_BattleEntry_Member
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_BattleEntry_Member.WBP_BattleEntry_Member_C.RemoveTaskDetailText
+// (Private, BlueprintCallable, BlueprintEvent)
 
-void UWBP_BattleEntry_Member_C::ExecuteUbergraph_WBP_BattleEntry_Member(int32 EntryPoint)
+void UWBP_BattleEntry_Member_C::RemoveTaskDetailText()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BattleEntry_Member_C", "ExecuteUbergraph_WBP_BattleEntry_Member");
-
-	Params::WBP_BattleEntry_Member_C_ExecuteUbergraph_WBP_BattleEntry_Member Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_BattleEntry_Member.WBP_BattleEntry_Member_C.OnArenaEntryEnd
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_BattleEntry_Member_C::OnArenaEntryEnd()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BattleEntry_Member_C", "OnArenaEntryEnd");
+		Func = Class->GetFunction("WBP_BattleEntry_Member_C", "RemoveTaskDetailText");
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_BattleEntry_Member.WBP_BattleEntry_Member_C.OnArenaEntryPairing
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FPalArenaEntryPair&        Pair                                                   (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void UWBP_BattleEntry_Member_C::OnArenaEntryPairing(const struct FPalArenaEntryPair& Pair)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BattleEntry_Member_C", "OnArenaEntryPairing");
-
-	Params::WBP_BattleEntry_Member_C_OnArenaEntryPairing Parms{};
-
-	Parms.Pair = std::move(Pair);
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -121,17 +81,57 @@ void UWBP_BattleEntry_Member_C::OnChangedBossBattlePlayerListEvent(class FName B
 }
 
 
-// Function WBP_BattleEntry_Member.WBP_BattleEntry_Member_C.RemoveTaskDetailText
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_BattleEntry_Member.WBP_BattleEntry_Member_C.OnArenaEntryPairing
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FPalArenaEntryPair&        Pair                                                   (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void UWBP_BattleEntry_Member_C::RemoveTaskDetailText()
+void UWBP_BattleEntry_Member_C::OnArenaEntryPairing(const struct FPalArenaEntryPair& Pair)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BattleEntry_Member_C", "RemoveTaskDetailText");
+		Func = Class->GetFunction("WBP_BattleEntry_Member_C", "OnArenaEntryPairing");
+
+	Params::WBP_BattleEntry_Member_C_OnArenaEntryPairing Parms{};
+
+	Parms.Pair = std::move(Pair);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BattleEntry_Member.WBP_BattleEntry_Member_C.OnArenaEntryEnd
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_BattleEntry_Member_C::OnArenaEntryEnd()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BattleEntry_Member_C", "OnArenaEntryEnd");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_BattleEntry_Member.WBP_BattleEntry_Member_C.ExecuteUbergraph_WBP_BattleEntry_Member
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_BattleEntry_Member_C::ExecuteUbergraph_WBP_BattleEntry_Member(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_BattleEntry_Member_C", "ExecuteUbergraph_WBP_BattleEntry_Member");
+
+	Params::WBP_BattleEntry_Member_C_ExecuteUbergraph_WBP_BattleEntry_Member Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "WBP_IndividualParameterBindWidget_classes.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -32,13 +32,13 @@ public:
 	TMulticastInlineDelegate<void()>              OnPalIconUnhovered;                                // 0x0690(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BindFromHandle(class UPalIndividualCharacterHandle* targetHandle);
-	void BndEvt__WBP_Arena_PalIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Arena_PalIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void ExecuteUbergraph_WBP_Arena_PalIcon(int32 EntryPoint);
-	void OnInitialized();
-	void OnLevelUpdate(int32 NewLevel);
 	void SetBan(bool IsBaned);
+	void OnLevelUpdate(int32 NewLevel);
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_Arena_PalIcon(int32 EntryPoint);
+	void BndEvt__WBP_Arena_PalIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Arena_PalIcon_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BindFromHandle(class UPalIndividualCharacterHandle* targetHandle);
 
 public:
 	static class UClass* StaticClass()

@@ -16,6 +16,15 @@
 namespace SDK::Params
 {
 
+// Function WBP_Buildup_Gauge.WBP_Buildup_Gauge_C.SetFill
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Buildup_Gauge_C_SetFill final
+{
+public:
+	bool                                          IsFill;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Buildup_Gauge_C_SetFill;
+
 // Function WBP_Buildup_Gauge.WBP_Buildup_Gauge_C.ExecuteUbergraph_WBP_Buildup_Gauge
 // 0x000C (0x000C - 0x0000)
 struct WBP_Buildup_Gauge_C_ExecuteUbergraph_WBP_Buildup_Gauge final
@@ -29,15 +38,6 @@ public:
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Buildup_Gauge_C_ExecuteUbergraph_WBP_Buildup_Gauge;
-
-// Function WBP_Buildup_Gauge.WBP_Buildup_Gauge_C.SetFill
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Buildup_Gauge_C_SetFill final
-{
-public:
-	bool                                          IsFill;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Buildup_Gauge_C_SetFill;
 
 }
 

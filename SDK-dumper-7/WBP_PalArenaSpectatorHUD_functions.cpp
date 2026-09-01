@@ -17,113 +17,57 @@
 namespace SDK
 {
 
-// Function WBP_PalArenaSpectatorHUD.WBP_PalArenaSpectatorHUD_C.EndSpectate
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalArenaSpectatorHUD_C::EndSpectate()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalArenaSpectatorHUD_C", "EndSpectate");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalArenaSpectatorHUD.WBP_PalArenaSpectatorHUD_C.ExecuteUbergraph_WBP_PalArenaSpectatorHUD
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalArenaSpectatorHUD_C::ExecuteUbergraph_WBP_PalArenaSpectatorHUD(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalArenaSpectatorHUD_C", "ExecuteUbergraph_WBP_PalArenaSpectatorHUD");
-
-	Params::WBP_PalArenaSpectatorHUD_C_ExecuteUbergraph_WBP_PalArenaSpectatorHUD Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalArenaSpectatorHUD.WBP_PalArenaSpectatorHUD_C.On Spectate Next Player
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FString&                    PlayerName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// EPalArenaPlayerIndex                    IndexType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PalArenaSpectatorHUD_C::On_Spectate_Next_Player(const class FString& PlayerName, EPalArenaPlayerIndex IndexType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalArenaSpectatorHUD_C", "On Spectate Next Player");
-
-	Params::WBP_PalArenaSpectatorHUD_C_On_Spectate_Next_Player Parms{};
-
-	Parms.PlayerName = std::move(PlayerName);
-	Parms.IndexType = IndexType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PalArenaSpectatorHUD.WBP_PalArenaSpectatorHUD_C.OnClosed
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalArenaSpectatorHUD_C::OnClosed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalArenaSpectatorHUD_C", "OnClosed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalArenaSpectatorHUD.WBP_PalArenaSpectatorHUD_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalArenaSpectatorHUD_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalArenaSpectatorHUD_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalArenaSpectatorHUD.WBP_PalArenaSpectatorHUD_C.RegisterInputActions
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalArenaSpectatorHUD_C::RegisterInputActions()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalArenaSpectatorHUD_C", "RegisterInputActions");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalArenaSpectatorHUD.WBP_PalArenaSpectatorHUD_C.RequestOpenChat
+// Function WBP_PalArenaSpectatorHUD.WBP_PalArenaSpectatorHUD_C.UnRegisterInputActions
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalArenaSpectatorHUD_C::RequestOpenChat()
+void UWBP_PalArenaSpectatorHUD_C::UnRegisterInputActions()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalArenaSpectatorHUD_C", "RequestOpenChat");
+		Func = Class->GetFunction("WBP_PalArenaSpectatorHUD_C", "UnRegisterInputActions");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalArenaSpectatorHUD.WBP_PalArenaSpectatorHUD_C.SpectateNextPlayer
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalArenaSpectatorHUD_C::SpectateNextPlayer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalArenaSpectatorHUD_C", "SpectateNextPlayer");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalArenaSpectatorHUD.WBP_PalArenaSpectatorHUD_C.SpectateFreely
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalArenaSpectatorHUD_C::SpectateFreely()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalArenaSpectatorHUD_C", "SpectateFreely");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalArenaSpectatorHUD.WBP_PalArenaSpectatorHUD_C.Spectate TopDown
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalArenaSpectatorHUD_C::Spectate_TopDown()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalArenaSpectatorHUD_C", "Spectate TopDown");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -151,57 +95,113 @@ void UWBP_PalArenaSpectatorHUD_C::SetUILayerVisibility(bool bIsHide, const struc
 }
 
 
-// Function WBP_PalArenaSpectatorHUD.WBP_PalArenaSpectatorHUD_C.Spectate TopDown
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalArenaSpectatorHUD_C::Spectate_TopDown()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalArenaSpectatorHUD_C", "Spectate TopDown");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalArenaSpectatorHUD.WBP_PalArenaSpectatorHUD_C.SpectateFreely
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalArenaSpectatorHUD_C::SpectateFreely()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalArenaSpectatorHUD_C", "SpectateFreely");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalArenaSpectatorHUD.WBP_PalArenaSpectatorHUD_C.SpectateNextPlayer
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void UWBP_PalArenaSpectatorHUD_C::SpectateNextPlayer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalArenaSpectatorHUD_C", "SpectateNextPlayer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PalArenaSpectatorHUD.WBP_PalArenaSpectatorHUD_C.UnRegisterInputActions
+// Function WBP_PalArenaSpectatorHUD.WBP_PalArenaSpectatorHUD_C.RequestOpenChat
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_PalArenaSpectatorHUD_C::UnRegisterInputActions()
+void UWBP_PalArenaSpectatorHUD_C::RequestOpenChat()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PalArenaSpectatorHUD_C", "UnRegisterInputActions");
+		Func = Class->GetFunction("WBP_PalArenaSpectatorHUD_C", "RequestOpenChat");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalArenaSpectatorHUD.WBP_PalArenaSpectatorHUD_C.RegisterInputActions
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalArenaSpectatorHUD_C::RegisterInputActions()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalArenaSpectatorHUD_C", "RegisterInputActions");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalArenaSpectatorHUD.WBP_PalArenaSpectatorHUD_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalArenaSpectatorHUD_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalArenaSpectatorHUD_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalArenaSpectatorHUD.WBP_PalArenaSpectatorHUD_C.OnClosed
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalArenaSpectatorHUD_C::OnClosed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalArenaSpectatorHUD_C", "OnClosed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PalArenaSpectatorHUD.WBP_PalArenaSpectatorHUD_C.On Spectate Next Player
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    PlayerName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// EPalArenaPlayerIndex                    IndexType                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalArenaSpectatorHUD_C::On_Spectate_Next_Player(const class FString& PlayerName, EPalArenaPlayerIndex IndexType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalArenaSpectatorHUD_C", "On Spectate Next Player");
+
+	Params::WBP_PalArenaSpectatorHUD_C_On_Spectate_Next_Player Parms{};
+
+	Parms.PlayerName = std::move(PlayerName);
+	Parms.IndexType = IndexType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalArenaSpectatorHUD.WBP_PalArenaSpectatorHUD_C.ExecuteUbergraph_WBP_PalArenaSpectatorHUD
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PalArenaSpectatorHUD_C::ExecuteUbergraph_WBP_PalArenaSpectatorHUD(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalArenaSpectatorHUD_C", "ExecuteUbergraph_WBP_PalArenaSpectatorHUD");
+
+	Params::WBP_PalArenaSpectatorHUD_C_ExecuteUbergraph_WBP_PalArenaSpectatorHUD Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PalArenaSpectatorHUD.WBP_PalArenaSpectatorHUD_C.EndSpectate
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void UWBP_PalArenaSpectatorHUD_C::EndSpectate()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_PalArenaSpectatorHUD_C", "EndSpectate");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

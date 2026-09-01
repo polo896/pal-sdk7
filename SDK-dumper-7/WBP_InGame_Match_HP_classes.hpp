@@ -43,13 +43,13 @@ public:
 	class UPalIndividualCharacterParameter*       Rival_Individual_Parameter;                        // 0x0310(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_InGame_Match_HP(int32 EntryPoint);
-	void OnInitialized();
-	void Setup(EPalArenaPlayerIndex LocalPlayerIndex, const TMap<EPalArenaPlayerIndex, struct FPalArenaPlayerInfo>& PlayerInfoMap, int32 MaxBattleTime);
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void Unbind();
-	void Update_Rival_HP(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& MaxHP);
 	void UpdatePlayerHP(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& MaxHP);
+	void Update_Rival_HP(const struct FFixedPoint64& nowHP, const struct FFixedPoint64& MaxHP);
+	void Unbind();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void Setup(EPalArenaPlayerIndex LocalPlayerIndex, const TMap<EPalArenaPlayerIndex, struct FPalArenaPlayerInfo>& PlayerInfoMap, int32 MaxBattleTime);
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_InGame_Match_HP(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

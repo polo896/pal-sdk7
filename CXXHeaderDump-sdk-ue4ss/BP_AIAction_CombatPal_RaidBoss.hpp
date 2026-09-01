@@ -3,16 +3,17 @@
 
 class UBP_AIAction_CombatPal_RaidBoss_C : public UBP_AIAction_CombatPal_C
 {
-    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0228 (size: 0x8)
-    bool IsPowerUpMode;                                                               // 0x0230 (size: 0x1)
-    FGuid Camp ID;                                                                    // 0x0234 (size: 0x10)
-    bool CanModeChange;                                                               // 0x0244 (size: 0x1)
-    double HPOneTimer;                                                                // 0x0248 (size: 0x8)
-    double Const_NotActionTime;                                                       // 0x0250 (size: 0x8)
-    int32 PlayerNotTargetCounter;                                                     // 0x0258 (size: 0x4)
-    bool CanSummon;                                                                   // 0x025C (size: 0x1)
-    int32 NextSummonHPRateIndex;                                                      // 0x0260 (size: 0x4)
+    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x0238 (size: 0x8)
+    bool IsPowerUpMode;                                                               // 0x0240 (size: 0x1)
+    FGuid Camp ID;                                                                    // 0x0244 (size: 0x10)
+    bool CanModeChange;                                                               // 0x0254 (size: 0x1)
+    double HPOneTimer;                                                                // 0x0258 (size: 0x8)
+    double Const_NotActionTime;                                                       // 0x0260 (size: 0x8)
+    int32 PlayerNotTargetCounter;                                                     // 0x0268 (size: 0x4)
+    bool CanSummon;                                                                   // 0x026C (size: 0x1)
+    int32 NextSummonHPRateIndex;                                                      // 0x0270 (size: 0x4)
 
+    void ReleaseInitialHPLock();
     void UpdateNoActionTimer();
     FPalRaidBossDataRow FindRaidBossData();
     void CanNextSummon(bool& CanSummon);
@@ -32,6 +33,6 @@ class UBP_AIAction_CombatPal_RaidBoss_C : public UBP_AIAction_CombatPal_C
     void ActionStart(class APawn* ControlledPawn);
     void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
     void ExecuteUbergraph_BP_AIAction_CombatPal_RaidBoss(int32 EntryPoint);
-}; // Size: 0x264
+}; // Size: 0x274
 
 #endif

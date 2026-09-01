@@ -123,96 +123,6 @@ void UWBP_Menu_PalList_C::UpdateFavorite(int32 NewIndex)
 }
 
 
-// Function WBP_Menu_PalList.WBP_Menu_PalList_C.BindFromHandle
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UPalIndividualCharacterHandle*    targetHandle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Menu_PalList_C::BindFromHandle(class UPalIndividualCharacterHandle* targetHandle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_PalList_C", "BindFromHandle");
-
-	Params::WBP_Menu_PalList_C_BindFromHandle Parms{};
-
-	Parms.targetHandle = targetHandle;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Menu_PalList.WBP_Menu_PalList_C.AnmEvent_Unfocus
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Menu_PalList_C::AnmEvent_Unfocus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_PalList_C", "AnmEvent_Unfocus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Menu_PalList.WBP_Menu_PalList_C.AnmEvent_ResetPush
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Menu_PalList_C::AnmEvent_ResetPush()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_PalList_C", "AnmEvent_ResetPush");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Menu_PalList.WBP_Menu_PalList_C.AnmEvent_Push
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Menu_PalList_C::AnmEvent_Push()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_PalList_C", "AnmEvent_Push");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Menu_PalList.WBP_Menu_PalList_C.AnmEvent_Open
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Menu_PalList_C::AnmEvent_Open()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_PalList_C", "AnmEvent_Open");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Menu_PalList.WBP_Menu_PalList_C.AnmEvent_Focus
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Menu_PalList_C::AnmEvent_Focus()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_PalList_C", "AnmEvent_Focus");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_Menu_PalList.WBP_Menu_PalList_C.Update Level
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -446,6 +356,96 @@ void UWBP_Menu_PalList_C::BndEvt__WBP_Menu_PalList_WBP_PalInvisibleButton_K2Node
 	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Menu_PalList.WBP_Menu_PalList_C.BindFromHandle
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPalIndividualCharacterHandle*    targetHandle                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Menu_PalList_C::BindFromHandle(class UPalIndividualCharacterHandle* targetHandle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Menu_PalList_C", "BindFromHandle");
+
+	Params::WBP_Menu_PalList_C_BindFromHandle Parms{};
+
+	Parms.targetHandle = targetHandle;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Menu_PalList.WBP_Menu_PalList_C.AnmEvent_Unfocus
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Menu_PalList_C::AnmEvent_Unfocus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Menu_PalList_C", "AnmEvent_Unfocus");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Menu_PalList.WBP_Menu_PalList_C.AnmEvent_ResetPush
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Menu_PalList_C::AnmEvent_ResetPush()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Menu_PalList_C", "AnmEvent_ResetPush");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Menu_PalList.WBP_Menu_PalList_C.AnmEvent_Push
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Menu_PalList_C::AnmEvent_Push()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Menu_PalList_C", "AnmEvent_Push");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Menu_PalList.WBP_Menu_PalList_C.AnmEvent_Open
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Menu_PalList_C::AnmEvent_Open()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Menu_PalList_C", "AnmEvent_Open");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Menu_PalList.WBP_Menu_PalList_C.AnmEvent_Focus
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_Menu_PalList_C::AnmEvent_Focus()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Menu_PalList_C", "AnmEvent_Focus");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

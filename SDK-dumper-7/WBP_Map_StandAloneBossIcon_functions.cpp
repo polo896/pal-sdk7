@@ -17,37 +17,104 @@
 namespace SDK
 {
 
-// Function WBP_Map_StandAloneBossIcon.WBP_Map_StandAloneBossIcon_C.Update Boss Icon State
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_Map_StandAloneBossIcon.WBP_Map_StandAloneBossIcon_C.BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Map_StandAloneBossIcon_C::Update_Boss_Icon_State()
+void UWBP_Map_StandAloneBossIcon_C::BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_StandAloneBossIcon_C", "Update Boss Icon State");
+		Func = Class->GetFunction("WBP_Map_StandAloneBossIcon_C", "BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_Map_StandAloneBossIcon_C_BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Map_StandAloneBossIcon.WBP_Map_StandAloneBossIcon_C.Setup_Internal
-// (Protected, BlueprintCallable, BlueprintEvent)
+// Function WBP_Map_StandAloneBossIcon.WBP_Map_StandAloneBossIcon_C.BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class UPalLocationPoint*                LocationPoint                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Map_StandAloneBossIcon_C::Setup_Internal(class UPalLocationPoint* LocationPoint)
+void UWBP_Map_StandAloneBossIcon_C::BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_StandAloneBossIcon_C", "Setup_Internal");
+		Func = Class->GetFunction("WBP_Map_StandAloneBossIcon_C", "BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature");
 
-	Params::WBP_Map_StandAloneBossIcon_C_Setup_Internal Parms{};
+	Params::WBP_Map_StandAloneBossIcon_C_BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature Parms{};
 
-	Parms.LocationPoint = LocationPoint;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Map_StandAloneBossIcon.WBP_Map_StandAloneBossIcon_C.CreateBossList
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPalBossType                            BossType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Map_StandAloneBossIcon_C::CreateBossList(EPalBossType BossType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Map_StandAloneBossIcon_C", "CreateBossList");
+
+	Params::WBP_Map_StandAloneBossIcon_C_CreateBossList Parms{};
+
+	Parms.BossType = BossType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Map_StandAloneBossIcon.WBP_Map_StandAloneBossIcon_C.ExecuteUbergraph_WBP_Map_StandAloneBossIcon
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Map_StandAloneBossIcon_C::ExecuteUbergraph_WBP_Map_StandAloneBossIcon(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Map_StandAloneBossIcon_C", "ExecuteUbergraph_WBP_Map_StandAloneBossIcon");
+
+	Params::WBP_Map_StandAloneBossIcon_C_ExecuteUbergraph_WBP_Map_StandAloneBossIcon Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Map_StandAloneBossIcon.WBP_Map_StandAloneBossIcon_C.GetInvisibleButton
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UWidget**                         Button                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Map_StandAloneBossIcon_C::GetInvisibleButton(class UWidget** Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Map_StandAloneBossIcon_C", "GetInvisibleButton");
+
+	Params::WBP_Map_StandAloneBossIcon_C_GetInvisibleButton Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Button != nullptr)
+		*Button = Parms.Button;
 }
 
 
@@ -75,104 +142,37 @@ void UWBP_Map_StandAloneBossIcon_C::SetBoss(EPalBossType BossType, const struct 
 }
 
 
-// Function WBP_Map_StandAloneBossIcon.WBP_Map_StandAloneBossIcon_C.GetInvisibleButton
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function WBP_Map_StandAloneBossIcon.WBP_Map_StandAloneBossIcon_C.Setup_Internal
+// (Protected, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWidget**                         Button                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UPalLocationPoint*                LocationPoint                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Map_StandAloneBossIcon_C::GetInvisibleButton(class UWidget** Button)
+void UWBP_Map_StandAloneBossIcon_C::Setup_Internal(class UPalLocationPoint* LocationPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_StandAloneBossIcon_C", "GetInvisibleButton");
+		Func = Class->GetFunction("WBP_Map_StandAloneBossIcon_C", "Setup_Internal");
 
-	Params::WBP_Map_StandAloneBossIcon_C_GetInvisibleButton Parms{};
+	Params::WBP_Map_StandAloneBossIcon_C_Setup_Internal Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Button != nullptr)
-		*Button = Parms.Button;
-}
-
-
-// Function WBP_Map_StandAloneBossIcon.WBP_Map_StandAloneBossIcon_C.ExecuteUbergraph_WBP_Map_StandAloneBossIcon
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Map_StandAloneBossIcon_C::ExecuteUbergraph_WBP_Map_StandAloneBossIcon(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_StandAloneBossIcon_C", "ExecuteUbergraph_WBP_Map_StandAloneBossIcon");
-
-	Params::WBP_Map_StandAloneBossIcon_C_ExecuteUbergraph_WBP_Map_StandAloneBossIcon Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.LocationPoint = LocationPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Map_StandAloneBossIcon.WBP_Map_StandAloneBossIcon_C.CreateBossList
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EPalBossType                            BossType                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Map_StandAloneBossIcon.WBP_Map_StandAloneBossIcon_C.Update Boss Icon State
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Map_StandAloneBossIcon_C::CreateBossList(EPalBossType BossType)
+void UWBP_Map_StandAloneBossIcon_C::Update_Boss_Icon_State()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_StandAloneBossIcon_C", "CreateBossList");
+		Func = Class->GetFunction("WBP_Map_StandAloneBossIcon_C", "Update Boss Icon State");
 
-	Params::WBP_Map_StandAloneBossIcon_C_CreateBossList Parms{};
-
-	Parms.BossType = BossType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Map_StandAloneBossIcon.WBP_Map_StandAloneBossIcon_C.BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Map_StandAloneBossIcon_C::BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_StandAloneBossIcon_C", "BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_Map_StandAloneBossIcon_C_BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Map_StandAloneBossIcon.WBP_Map_StandAloneBossIcon_C.BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButtonBase*                Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Map_StandAloneBossIcon_C::BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Map_StandAloneBossIcon_C", "BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
-
-	Params::WBP_Map_StandAloneBossIcon_C_BndEvt__WBP_Map_IconTower_WBP_PalCommonButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

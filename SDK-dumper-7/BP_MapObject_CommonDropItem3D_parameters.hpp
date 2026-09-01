@@ -18,27 +18,113 @@
 namespace SDK::Params
 {
 
-// Function BP_MapObject_CommonDropItem3D.BP_MapObject_CommonDropItem3D_C.BndEvt__BP_MapObject_CommonDropItem3D_StaticMesh_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature
-// 0x0118 (0x0118 - 0x0000)
-struct BP_MapObject_CommonDropItem3D_C_BndEvt__BP_MapObject_CommonDropItem3D_StaticMesh_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature final
-{
-public:
-	class UPrimitiveComponent*                    HitComponent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                NormalImpulse;                                     // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Hit;                                               // 0x0030(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-DUMPER7_ASSERTS_BP_MapObject_CommonDropItem3D_C_BndEvt__BP_MapObject_CommonDropItem3D_StaticMesh_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature;
-
-// Function BP_MapObject_CommonDropItem3D.BP_MapObject_CommonDropItem3D_C.BP_OnSetConcreteModel
-// 0x0008 (0x0008 - 0x0000)
-struct BP_MapObject_CommonDropItem3D_C_BP_OnSetConcreteModel final
+// Function BP_MapObject_CommonDropItem3D.BP_MapObject_CommonDropItem3D_C.SetupVisualInServer
+// 0x0108 (0x0108 - 0x0000)
+struct BP_MapObject_CommonDropItem3D_C_SetupVisualInServer final
 {
 public:
 	class UPalMapObjectConcreteModelBase*         ConcreteModel;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalItemIDManager*                      CallFunc_GetItemIDManager_ReturnValue;             // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectDropItemModel*             K2Node_DynamicCast_AsPal_Map_Object_Drop_Item_Model; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalItemData                           CallFunc_GetItemData_ReturnValue;                  // 0x0020(0x0010)(ConstParm, NoDestructor)
+	class FText                                   CallFunc_Conv_NameToText_ReturnValue;              // 0x0030(0x0018)()
+	TSoftClassPtr<class UClass>                   CallFunc_GetVisualBlueprintClass_ReturnValue;      // 0x0048(0x0030)(UObjectWrapper, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0078(0x0050)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00C8(0x0010)(ReferenceParm)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00E0(0x0018)()
+	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00F8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_MapObject_CommonDropItem3D_C_BP_OnSetConcreteModel;
+DUMPER7_ASSERTS_BP_MapObject_CommonDropItem3D_C_SetupVisualInServer;
+
+// Function BP_MapObject_CommonDropItem3D.BP_MapObject_CommonDropItem3D_C.SetupStaticMesh
+// 0x0050 (0x0050 - 0x0000)
+struct BP_MapObject_CommonDropItem3D_C_SetupStaticMesh final
+{
+public:
+	class UStaticMesh*                            InStaticMesh;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CenterOfMass;                                      // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UMaterialInterface*>             Material;                                          // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInterface*                     CallFunc_Array_Get_Item;                           // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x004D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_MapObject_CommonDropItem3D_C_SetupStaticMesh;
+
+// Function BP_MapObject_CommonDropItem3D.BP_MapObject_CommonDropItem3D_C.SetItemModelInServer
+// 0x0030 (0x0030 - 0x0000)
+struct BP_MapObject_CommonDropItem3D_C_SetItemModelInServer final
+{
+public:
+	TSoftClassPtr<class UClass>                   VisualModel;                                       // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_MapObject_CommonDropItem3D_C_SetItemModelInServer;
+
+// Function BP_MapObject_CommonDropItem3D.BP_MapObject_CommonDropItem3D_C.ReleaseObject
+// 0x0030 (0x0030 - 0x0000)
+struct BP_MapObject_CommonDropItem3D_C_ReleaseObject final
+{
+public:
+	struct FVector                                Direction;                                         // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_MapObject_CommonDropItem3D_C_ReleaseObject;
+
+// Function BP_MapObject_CommonDropItem3D.BP_MapObject_CommonDropItem3D_C.OnSetConcreteModel
+// 0x0008 (0x0008 - 0x0000)
+struct BP_MapObject_CommonDropItem3D_C_OnSetConcreteModel final
+{
+public:
+	class UPalMapObjectConcreteModelBase*         Model;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_MapObject_CommonDropItem3D_C_OnSetConcreteModel;
+
+// Function BP_MapObject_CommonDropItem3D.BP_MapObject_CommonDropItem3D_C.OnRep_VisualActorClass
+// 0x01D0 (0x01D0 - 0x0000)
+struct BP_MapObject_CommonDropItem3D_C_OnRep_VisualActorClass final
+{
+public:
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FPalItemVisualModelFXInfo>      CallFunc_GetItemVisualModelFX_OutFXInfos;          // 0x0010(0x0010)(ReferenceParm)
+	struct FPalItemVisualModelFXInfo              CallFunc_Array_Get_Item;                           // 0x0020(0x0070)(NoDestructor)
+	class UStaticMesh*                            CallFunc_TryGetItemVisualModelStaticMesh_OutStaticMesh; // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_98[0x8];                                       // 0x0098(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_TryGetItemVisualModelStaticMesh_OutComponentTransform; // 0x00A0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_TryGetItemVisualModelStaticMesh_OutCenterOfMass; // 0x0100(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UMaterialInterface*>             CallFunc_TryGetItemVisualModelStaticMesh_OutMaterialInterface; // 0x0118(0x0010)(ReferenceParm)
+	bool                                          CallFunc_TryGetItemVisualModelStaticMesh_ReturnValue; // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_129[0x7];                                      // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0130(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x0148(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0160(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      CallFunc_SpawnSystemAttached_ReturnValue;          // 0x0178(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_BreakTransform_Location_1;                // 0x0180(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_BreakTransform_Rotation_1;                // 0x0198(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                CallFunc_BreakTransform_Scale_1;                   // 0x01B0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x01C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_MapObject_CommonDropItem3D_C_OnRep_VisualActorClass;
+
+// Function BP_MapObject_CommonDropItem3D.BP_MapObject_CommonDropItem3D_C.OnLoaded_857256B349A5E9E377896489F9AD883E
+// 0x0008 (0x0008 - 0x0000)
+struct BP_MapObject_CommonDropItem3D_C_OnLoaded_857256B349A5E9E377896489F9AD883E final
+{
+public:
+	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_MapObject_CommonDropItem3D_C_OnLoaded_857256B349A5E9E377896489F9AD883E;
 
 // Function BP_MapObject_CommonDropItem3D.BP_MapObject_CommonDropItem3D_C.ExecuteUbergraph_BP_MapObject_CommonDropItem3D
 // 0x01D8 (0x01D8 - 0x0000)
@@ -76,113 +162,27 @@ public:
 };
 DUMPER7_ASSERTS_BP_MapObject_CommonDropItem3D_C_ExecuteUbergraph_BP_MapObject_CommonDropItem3D;
 
-// Function BP_MapObject_CommonDropItem3D.BP_MapObject_CommonDropItem3D_C.OnLoaded_857256B349A5E9E377896489F9AD883E
+// Function BP_MapObject_CommonDropItem3D.BP_MapObject_CommonDropItem3D_C.BP_OnSetConcreteModel
 // 0x0008 (0x0008 - 0x0000)
-struct BP_MapObject_CommonDropItem3D_C_OnLoaded_857256B349A5E9E377896489F9AD883E final
-{
-public:
-	TSubclassOf<class UObject>                    Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_MapObject_CommonDropItem3D_C_OnLoaded_857256B349A5E9E377896489F9AD883E;
-
-// Function BP_MapObject_CommonDropItem3D.BP_MapObject_CommonDropItem3D_C.OnRep_VisualActorClass
-// 0x01D0 (0x01D0 - 0x0000)
-struct BP_MapObject_CommonDropItem3D_C_OnRep_VisualActorClass final
-{
-public:
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FPalItemVisualModelFXInfo>      CallFunc_GetItemVisualModelFX_OutFXInfos;          // 0x0010(0x0010)(ReferenceParm)
-	struct FPalItemVisualModelFXInfo              CallFunc_Array_Get_Item;                           // 0x0020(0x0070)(NoDestructor)
-	class UStaticMesh*                            CallFunc_TryGetItemVisualModelStaticMesh_OutStaticMesh; // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_98[0x8];                                       // 0x0098(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_TryGetItemVisualModelStaticMesh_OutComponentTransform; // 0x00A0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_TryGetItemVisualModelStaticMesh_OutCenterOfMass; // 0x0100(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UMaterialInterface*>             CallFunc_TryGetItemVisualModelStaticMesh_OutMaterialInterface; // 0x0118(0x0010)(ReferenceParm)
-	bool                                          CallFunc_TryGetItemVisualModelStaticMesh_ReturnValue; // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_129[0x7];                                      // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_BreakTransform_Location;                  // 0x0130(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x0148(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0160(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      CallFunc_SpawnSystemAttached_ReturnValue;          // 0x0178(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_BreakTransform_Location_1;                // 0x0180(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_BreakTransform_Rotation_1;                // 0x0198(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                CallFunc_BreakTransform_Scale_1;                   // 0x01B0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x01C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_MapObject_CommonDropItem3D_C_OnRep_VisualActorClass;
-
-// Function BP_MapObject_CommonDropItem3D.BP_MapObject_CommonDropItem3D_C.OnSetConcreteModel
-// 0x0008 (0x0008 - 0x0000)
-struct BP_MapObject_CommonDropItem3D_C_OnSetConcreteModel final
-{
-public:
-	class UPalMapObjectConcreteModelBase*         Model;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_MapObject_CommonDropItem3D_C_OnSetConcreteModel;
-
-// Function BP_MapObject_CommonDropItem3D.BP_MapObject_CommonDropItem3D_C.ReleaseObject
-// 0x0030 (0x0030 - 0x0000)
-struct BP_MapObject_CommonDropItem3D_C_ReleaseObject final
-{
-public:
-	struct FVector                                Direction;                                         // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_MapObject_CommonDropItem3D_C_ReleaseObject;
-
-// Function BP_MapObject_CommonDropItem3D.BP_MapObject_CommonDropItem3D_C.SetItemModelInServer
-// 0x0030 (0x0030 - 0x0000)
-struct BP_MapObject_CommonDropItem3D_C_SetItemModelInServer final
-{
-public:
-	TSoftClassPtr<class UClass>                   VisualModel;                                       // 0x0000(0x0030)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_MapObject_CommonDropItem3D_C_SetItemModelInServer;
-
-// Function BP_MapObject_CommonDropItem3D.BP_MapObject_CommonDropItem3D_C.SetupStaticMesh
-// 0x0050 (0x0050 - 0x0000)
-struct BP_MapObject_CommonDropItem3D_C_SetupStaticMesh final
-{
-public:
-	class UStaticMesh*                            InStaticMesh;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CenterOfMass;                                      // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class UMaterialInterface*>             Material;                                          // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInterface*                     CallFunc_Array_Get_Item;                           // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x004D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_MapObject_CommonDropItem3D_C_SetupStaticMesh;
-
-// Function BP_MapObject_CommonDropItem3D.BP_MapObject_CommonDropItem3D_C.SetupVisualInServer
-// 0x0108 (0x0108 - 0x0000)
-struct BP_MapObject_CommonDropItem3D_C_SetupVisualInServer final
+struct BP_MapObject_CommonDropItem3D_C_BP_OnSetConcreteModel final
 {
 public:
 	class UPalMapObjectConcreteModelBase*         ConcreteModel;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalItemIDManager*                      CallFunc_GetItemIDManager_ReturnValue;             // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalMapObjectDropItemModel*             K2Node_DynamicCast_AsPal_Map_Object_Drop_Item_Model; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalItemData                           CallFunc_GetItemData_ReturnValue;                  // 0x0020(0x0010)(ConstParm, NoDestructor)
-	class FText                                   CallFunc_Conv_NameToText_ReturnValue;              // 0x0030(0x0018)()
-	TSoftClassPtr<class UClass>                   CallFunc_GetVisualBlueprintClass_ReturnValue;      // 0x0048(0x0030)(UObjectWrapper, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0078(0x0050)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00C8(0x0010)(ReferenceParm)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00E0(0x0018)()
-	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x00F8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_BP_MapObject_CommonDropItem3D_C_SetupVisualInServer;
+DUMPER7_ASSERTS_BP_MapObject_CommonDropItem3D_C_BP_OnSetConcreteModel;
+
+// Function BP_MapObject_CommonDropItem3D.BP_MapObject_CommonDropItem3D_C.BndEvt__BP_MapObject_CommonDropItem3D_StaticMesh_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature
+// 0x0118 (0x0118 - 0x0000)
+struct BP_MapObject_CommonDropItem3D_C_BndEvt__BP_MapObject_CommonDropItem3D_StaticMesh_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature final
+{
+public:
+	class UPrimitiveComponent*                    HitComponent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                NormalImpulse;                                     // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Hit;                                               // 0x0030(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_BP_MapObject_CommonDropItem3D_C_BndEvt__BP_MapObject_CommonDropItem3D_StaticMesh_K2Node_ComponentBoundEvent_1_ComponentHitSignature__DelegateSignature;
 
 }
 

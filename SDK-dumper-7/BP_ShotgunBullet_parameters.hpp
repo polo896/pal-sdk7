@@ -17,18 +17,6 @@
 namespace SDK::Params
 {
 
-// Function BP_ShotgunBullet.BP_ShotgunBullet_C.OnDestroy
-// 0x0100 (0x0100 - 0x0000)
-struct BP_ShotgunBullet_C_OnDestroy final
-{
-public:
-	class UPrimitiveComponent*                    HitComp;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherCharacter;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Hit;                                               // 0x0018(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-DUMPER7_ASSERTS_BP_ShotgunBullet_C_OnDestroy;
-
 // Function BP_ShotgunBullet.BP_ShotgunBullet_C.ExecuteUbergraph_BP_ShotgunBullet
 // 0x0258 (0x0258 - 0x0000)
 struct BP_ShotgunBullet_C_ExecuteUbergraph_BP_ShotgunBullet final
@@ -72,6 +60,18 @@ public:
 	bool                                          CallFunc_AddUniqueHitActor_IsNew;                  // 0x0251(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_ShotgunBullet_C_ExecuteUbergraph_BP_ShotgunBullet;
+
+// Function BP_ShotgunBullet.BP_ShotgunBullet_C.OnDestroy
+// 0x0100 (0x0100 - 0x0000)
+struct BP_ShotgunBullet_C_OnDestroy final
+{
+public:
+	class UPrimitiveComponent*                    HitComp;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherCharacter;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Hit;                                               // 0x0018(0x00E8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_BP_ShotgunBullet_C_OnDestroy;
 
 }
 

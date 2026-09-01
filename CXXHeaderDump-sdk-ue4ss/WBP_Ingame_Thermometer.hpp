@@ -22,8 +22,8 @@ class UWBP_Ingame_Thermometer_C : public UUserWidget
     int32 LimitTenperature;                                                           // 0x02F4 (size: 0x4)
     int32 CachedDisplayTemperature;                                                   // 0x02F8 (size: 0x4)
     bool IsFirstSetup;                                                                // 0x02FC (size: 0x1)
-    TArray<class UImage*> HeatMaterArray;                                             // 0x0300 (size: 0x10)
-    TArray<class UImage*> ColdMaterArray;                                             // 0x0310 (size: 0x10)
+    TArray<UImage*> HeatMaterArray;                                                   // 0x0300 (size: 0x10)
+    TArray<UImage*> ColdMaterArray;                                                   // 0x0310 (size: 0x10)
     double TargetTemperatureAnimeTime;                                                // 0x0320 (size: 0x8)
     double NowTemperatureAnimtTime;                                                   // 0x0328 (size: 0x8)
 

@@ -293,7 +293,7 @@ class ACameraCalibrationCheckerboard : public AActor
 
 class UCalibrationPointComponent : public UProceduralMeshComponent
 {
-    TMap<class FString, class FVector> SubPoints;                                     // 0x05F0 (size: 0x50)
+    TMap<FString, FVector> SubPoints;                                                 // 0x05F0 (size: 0x50)
     bool bVisualizePointsInEditor;                                                    // 0x0640 (size: 0x1)
     float PointVisualizationScale;                                                    // 0x0644 (size: 0x4)
     TEnumAsByte<ECalibrationPointVisualization> VisualizationShape;                   // 0x0648 (size: 0x1)
@@ -310,12 +310,12 @@ class UCameraCalibrationEditorSettings : public UDeveloperSettings
 
 class UCameraCalibrationSettings : public UDeveloperSettings
 {
-    TSoftObjectPtr<ULensFile> StartupLensFile;                                        // 0x0038 (size: 0x30)
+    TSoftObjectPtr<class ULensFile> StartupLensFile;                                  // 0x0038 (size: 0x30)
     FIntPoint DisplacementMapResolution;                                              // 0x0068 (size: 0x8)
     float CalibrationInputTolerance;                                                  // 0x0070 (size: 0x4)
-    TMap<class TSubclassOf<ULensDistortionModelHandlerBase>, class TSoftObjectPtr<UMaterialInterface>> DefaultUndistortionDisplacementMaterials; // 0x0078 (size: 0x50)
-    TMap<class TSubclassOf<ULensDistortionModelHandlerBase>, class TSoftObjectPtr<UMaterialInterface>> DefaultDistortionDisplacementMaterials; // 0x00C8 (size: 0x50)
-    TMap<class TSubclassOf<ULensDistortionModelHandlerBase>, class TSoftObjectPtr<UMaterialInterface>> DefaultDistortionMaterials; // 0x0118 (size: 0x50)
+    TMap<TSubclassOf<class ULensDistortionModelHandlerBase>, TSoftObjectPtr<class UMaterialInterface>> DefaultUndistortionDisplacementMaterials; // 0x0078 (size: 0x50)
+    TMap<TSubclassOf<class ULensDistortionModelHandlerBase>, TSoftObjectPtr<class UMaterialInterface>> DefaultDistortionDisplacementMaterials; // 0x00C8 (size: 0x50)
+    TMap<TSubclassOf<class ULensDistortionModelHandlerBase>, TSoftObjectPtr<class UMaterialInterface>> DefaultDistortionMaterials; // 0x0118 (size: 0x50)
     bool bEnableCalibrationDatasetImportExport;                                       // 0x0168 (size: 0x1)
 
 }; // Size: 0x178
@@ -327,10 +327,10 @@ class UCameraCalibrationStep : public UObject
 class UCameraCalibrationSubsystem : public UEngineSubsystem
 {
     class ULensFile* DefaultLensFile;                                                 // 0x0030 (size: 0x8)
-    TMap<class FName, class TSubclassOf<ULensModel>> LensModelMap;                    // 0x0038 (size: 0x50)
-    TMap<class FName, class TSubclassOf<UCameraNodalOffsetAlgo>> CameraNodalOffsetAlgosMap; // 0x0088 (size: 0x50)
-    TMap<class FName, class TSubclassOf<UCameraImageCenterAlgo>> CameraImageCenterAlgosMap; // 0x00D8 (size: 0x50)
-    TMap<class FName, class TSubclassOf<UCameraCalibrationStep>> CameraCalibrationStepsMap; // 0x0128 (size: 0x50)
+    TMap<FName, TSubclassOf<class ULensModel>> LensModelMap;                          // 0x0038 (size: 0x50)
+    TMap<FName, TSubclassOf<class UCameraNodalOffsetAlgo>> CameraNodalOffsetAlgosMap; // 0x0088 (size: 0x50)
+    TMap<FName, TSubclassOf<class UCameraImageCenterAlgo>> CameraImageCenterAlgosMap; // 0x00D8 (size: 0x50)
+    TMap<FName, TSubclassOf<class UCameraCalibrationStep>> CameraCalibrationStepsMap; // 0x0128 (size: 0x50)
 
     void UnregisterDistortionModelHandler(class UCineCameraComponent* Component, class ULensDistortionModelHandlerBase* Handler);
     void SetDefaultLensFile(class ULensFile* NewDefaultLensFile);
@@ -338,7 +338,7 @@ class UCameraCalibrationSubsystem : public UEngineSubsystem
     TArray<FName> GetOverlayMaterialNames();
     class UMaterialInterface* GetOverlayMaterial(const FName& OverlayName);
     class ULensFile* GetLensFile(const FLensFilePicker& Picker);
-    TArray<class ULensDistortionModelHandlerBase*> GetDistortionModelHandlers(class UCineCameraComponent* Component);
+    TArray<ULensDistortionModelHandlerBase*> GetDistortionModelHandlers(class UCineCameraComponent* Component);
     class ULensFile* GetDefaultLensFile();
     TArray<FName> GetCameraNodalOffsetAlgos();
     TSubclassOf<class UCameraNodalOffsetAlgo> GetCameraNodalOffsetAlgo(FName Name);
@@ -382,7 +382,7 @@ class ULensComponent : public UActorComponent
     float OriginalFocalLength;                                                        // 0x01C4 (size: 0x4)
     class UMaterialInstanceDynamic* LastDistortionMID;                                // 0x01C8 (size: 0x8)
     class UCineCameraComponent* LastCameraComponent;                                  // 0x01D0 (size: 0x8)
-    TMap<class TSubclassOf<ULensModel>, class ULensDistortionModelHandlerBase*> LensDistortionHandlerMap; // 0x01D8 (size: 0x50)
+    TMap<TSubclassOf<class ULensModel>, ULensDistortionModelHandlerBase*> LensDistortionHandlerMap; // 0x01D8 (size: 0x50)
     TWeakObjectPtr<class USceneComponent> TrackedComponent;                           // 0x0228 (size: 0x8)
     FString TrackedComponentName;                                                     // 0x0230 (size: 0x10)
 
@@ -439,15 +439,15 @@ class ULensFile : public UObject
 {
     FLensInfo LensInfo;                                                               // 0x0030 (size: 0x40)
     ELensDataMode DataMode;                                                           // 0x0070 (size: 0x1)
-    TMap<class FString, class FString> UserMetadata;                                  // 0x0078 (size: 0x50)
+    TMap<FString, FString> UserMetadata;                                              // 0x0078 (size: 0x50)
     FEncodersTable EncodersTable;                                                     // 0x00C8 (size: 0x100)
     FDistortionTable DistortionTable;                                                 // 0x01C8 (size: 0x20)
     FFocalLengthTable FocalLengthTable;                                               // 0x01E8 (size: 0x20)
     FImageCenterTable ImageCenterTable;                                               // 0x0208 (size: 0x20)
     FNodalOffsetTable NodalOffsetTable;                                               // 0x0228 (size: 0x20)
     FSTMapTable STMapTable;                                                           // 0x0248 (size: 0x20)
-    TArray<class UTextureRenderTarget2D*> UndistortionDisplacementMapHolders;         // 0x0278 (size: 0x10)
-    TArray<class UTextureRenderTarget2D*> DistortionDisplacementMapHolders;           // 0x0288 (size: 0x10)
+    TArray<UTextureRenderTarget2D*> UndistortionDisplacementMapHolders;               // 0x0278 (size: 0x10)
+    TArray<UTextureRenderTarget2D*> DistortionDisplacementMapHolders;                 // 0x0288 (size: 0x10)
 
     void RemoveZoomPoint(ELensDataCategory InDataCategory, float InFocus, float InZoom);
     void RemoveFocusPoint(ELensDataCategory InDataCategory, float InFocus);

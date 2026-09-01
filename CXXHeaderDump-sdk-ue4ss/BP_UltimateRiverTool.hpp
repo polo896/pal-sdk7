@@ -104,7 +104,7 @@ class ABP_UltimateRiverTool_C : public AActor
     double ObstacleFront_BubblesPower;                                                // 0x0600 (size: 0x8)
     double ObstacleFront_BubblesIntensity;                                            // 0x0608 (size: 0x8)
     double ObstacleFront_LandscapeDFOffset;                                           // 0x0610 (size: 0x8)
-    TArray<class USplineMeshComponent*> SplineOverlapVolumes;                         // 0x0618 (size: 0x10)
+    TArray<USplineMeshComponent*> SplineOverlapVolumes;                               // 0x0618 (size: 0x10)
     double Obstacles_FoamIntensityGlobal;                                             // 0x0628 (size: 0x8)
     bool ShowVolumes;                                                                 // 0x0630 (size: 0x1)
     double DepthVolumesScaleZ;                                                        // 0x0638 (size: 0x8)

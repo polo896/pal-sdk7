@@ -17,23 +17,17 @@
 namespace SDK
 {
 
-// Function WBP_CommonWorkRequirement.WBP_CommonWorkRequirement_C.ExecuteUbergraph_WBP_CommonWorkRequirement
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_CommonWorkRequirement.WBP_CommonWorkRequirement_C.OnSetup
+// (Event, Protected, BlueprintCallable, BlueprintEvent)
 
-void UWBP_CommonWorkRequirement_C::ExecuteUbergraph_WBP_CommonWorkRequirement(int32 EntryPoint)
+void UWBP_CommonWorkRequirement_C::OnSetup()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonWorkRequirement_C", "ExecuteUbergraph_WBP_CommonWorkRequirement");
+		Func = Class->GetFunction("WBP_CommonWorkRequirement_C", "OnSetup");
 
-	Params::WBP_CommonWorkRequirement_C_ExecuteUbergraph_WBP_CommonWorkRequirement Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -57,17 +51,23 @@ void UWBP_CommonWorkRequirement_C::On_Updated_Worker_Pal(class UPalWorkBase* Wor
 }
 
 
-// Function WBP_CommonWorkRequirement.WBP_CommonWorkRequirement_C.OnSetup
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// Function WBP_CommonWorkRequirement.WBP_CommonWorkRequirement_C.ExecuteUbergraph_WBP_CommonWorkRequirement
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CommonWorkRequirement_C::OnSetup()
+void UWBP_CommonWorkRequirement_C::ExecuteUbergraph_WBP_CommonWorkRequirement(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CommonWorkRequirement_C", "OnSetup");
+		Func = Class->GetFunction("WBP_CommonWorkRequirement_C", "ExecuteUbergraph_WBP_CommonWorkRequirement");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_CommonWorkRequirement_C_ExecuteUbergraph_WBP_CommonWorkRequirement Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

@@ -34,15 +34,15 @@ public:
 	struct FPalDataTableRowName_UIInputAction     bindActionName;                                    // 0x02C0(0x0008)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void OnInitialized();
-	void ExecuteUbergraph_WBP_Main_Menu_Tab_Key(int32 EntryPoint);
-	void Construct();
-	void BndEvt__WBP_Main_Menu_Tab_Key_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Main_Menu_Tab_Key_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void BndEvt__WBP_Main_Menu_Tab_Key_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
-	void AnmEvent_Unfocus();
-	void AnmEvent_Push();
 	void AnmEvent_Focus();
+	void AnmEvent_Push();
+	void AnmEvent_Unfocus();
+	void BndEvt__WBP_Main_Menu_Tab_Key_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Main_Menu_Tab_Key_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void BndEvt__WBP_Main_Menu_Tab_Key_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_3_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
+	void Construct();
+	void ExecuteUbergraph_WBP_Main_Menu_Tab_Key(int32 EntryPoint);
+	void OnInitialized();
 
 public:
 	static class UClass* StaticClass()

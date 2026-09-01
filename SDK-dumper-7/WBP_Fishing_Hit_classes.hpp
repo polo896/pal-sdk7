@@ -30,10 +30,10 @@ public:
 	class UImage*                                 Image_Mark_1;                                      // 0x0298(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void AnmEvent_Hit();
-	void ExecuteUbergraph_WBP_Fishing_Hit(int32 EntryPoint);
-	void Finished_2E34FB9345682690EC9932908042E186();
 	void OnInitialized();
+	void Finished_2E34FB9345682690EC9932908042E186();
+	void ExecuteUbergraph_WBP_Fishing_Hit(int32 EntryPoint);
+	void AnmEvent_Hit();
 
 public:
 	static class UClass* StaticClass()

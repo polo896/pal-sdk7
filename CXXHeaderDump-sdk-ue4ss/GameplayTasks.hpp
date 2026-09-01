@@ -33,7 +33,7 @@ class UGameplayTaskResource : public UObject
 class UGameplayTask_ClaimResource : public UGameplayTask
 {
 
-    class UGameplayTask_ClaimResource* ClaimResources(TScriptInterface<class IGameplayTaskOwnerInterface> InTaskOwner, TArray<class TSubclassOf<UGameplayTaskResource>> ResourceClasses, const uint8 Priority, const FName TaskInstanceName);
+    class UGameplayTask_ClaimResource* ClaimResources(TScriptInterface<class IGameplayTaskOwnerInterface> InTaskOwner, TArray<TSubclassOf<class UGameplayTaskResource>> ResourceClasses, const uint8 Priority, const FName TaskInstanceName);
     class UGameplayTask_ClaimResource* ClaimResource(TScriptInterface<class IGameplayTaskOwnerInterface> InTaskOwner, TSubclassOf<class UGameplayTaskResource> ResourceClass, const uint8 Priority, const FName TaskInstanceName);
 }; // Size: 0x68
 
@@ -71,15 +71,15 @@ class UGameplayTask_WaitDelay : public UGameplayTask
 class UGameplayTasksComponent : public UActorComponent
 {
     uint8 bIsNetDirty;                                                                // 0x00B4 (size: 0x1)
-    TArray<class UGameplayTask*> TaskPriorityQueue;                                   // 0x00B8 (size: 0x10)
-    TArray<class UGameplayTask*> TickingTasks;                                        // 0x00D8 (size: 0x10)
-    TArray<class UGameplayTask*> KnownTasks;                                          // 0x00E8 (size: 0x10)
+    TArray<UGameplayTask*> TaskPriorityQueue;                                         // 0x00B8 (size: 0x10)
+    TArray<UGameplayTask*> TickingTasks;                                              // 0x00D8 (size: 0x10)
+    TArray<UGameplayTask*> KnownTasks;                                                // 0x00E8 (size: 0x10)
     FGameplayTasksComponentOnClaimedResourcesChange OnClaimedResourcesChange;         // 0x00F8 (size: 0x10)
     void OnClaimedResourcesChangeSignature(FGameplayResourceSet NewlyClaimed, FGameplayResourceSet FreshlyReleased);
-    TArray<class UGameplayTask*> SimulatedTasks;                                      // 0x0108 (size: 0x10)
+    TArray<UGameplayTask*> SimulatedTasks;                                            // 0x0108 (size: 0x10)
 
-    void OnRep_SimulatedTasks(const TArray<class UGameplayTask*>& PreviousSimulatedTasks);
-    EGameplayTaskRunResult K2_RunGameplayTask(TScriptInterface<class IGameplayTaskOwnerInterface> TaskOwner, class UGameplayTask* Task, uint8 Priority, TArray<class TSubclassOf<UGameplayTaskResource>> AdditionalRequiredResources, TArray<class TSubclassOf<UGameplayTaskResource>> AdditionalClaimedResources);
+    void OnRep_SimulatedTasks(const TArray<UGameplayTask*>& PreviousSimulatedTasks);
+    EGameplayTaskRunResult K2_RunGameplayTask(TScriptInterface<class IGameplayTaskOwnerInterface> TaskOwner, class UGameplayTask* Task, uint8 Priority, TArray<TSubclassOf<class UGameplayTaskResource>> AdditionalRequiredResources, TArray<TSubclassOf<class UGameplayTaskResource>> AdditionalClaimedResources);
 }; // Size: 0x118
 
 #endif

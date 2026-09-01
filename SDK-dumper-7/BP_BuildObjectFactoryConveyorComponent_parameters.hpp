@@ -18,90 +18,6 @@
 namespace SDK::Params
 {
 
-// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.ExecuteUbergraph_BP_BuildObjectFactoryConveyorComponent
-// 0x0028 (0x0028 - 0x0000)
-struct BP_BuildObjectFactoryConveyorComponent_C_ExecuteUbergraph_BP_BuildObjectFactoryConveyorComponent final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module)> K2Node_CreateDelegate_OutputDelegate; // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	const class UPalMapObjectConcreteModelBase*   K2Node_Event_MapObjectConcreteModel;               // 0x0018(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_BuildObjectFactoryConveyorComponent_C_ExecuteUbergraph_BP_BuildObjectFactoryConveyorComponent;
-
-// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.GetMaterialInstance
-// 0x0010 (0x0010 - 0x0000)
-struct BP_BuildObjectFactoryConveyorComponent_C_GetMaterialInstance final
-{
-public:
-	class UMaterialInstanceDynamic*               ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_GetBuildObjectMaterialInstanceDynamic_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_BuildObjectFactoryConveyorComponent_C_GetMaterialInstance;
-
-// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.OnReadyOwnerEnergyModule
-// 0x0030 (0x0030 - 0x0000)
-struct BP_BuildObjectFactoryConveyorComponent_C_OnReadyOwnerEnergyModule final
-{
-public:
-	class UPalMapObjectConcreteModelBase*         Model;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalMapObjectConcreteModelModuleBase*   Module;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UPalMapObjectEnergyModule* Module)> K2Node_CreateDelegate_OutputDelegate;   // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPalMapObjectEnergyModule*              K2Node_DynamicCast_AsPal_Map_Object_Energy_Module; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_BuildObjectFactoryConveyorComponent_C_OnReadyOwnerEnergyModule;
-
-// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.OnUpdateBuildObjectVisual
-// 0x0008 (0x0008 - 0x0000)
-struct BP_BuildObjectFactoryConveyorComponent_C_OnUpdateBuildObjectVisual final
-{
-public:
-	const class UPalMapObjectConcreteModelBase*   MapObjectConcreteModel;                            // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_BuildObjectFactoryConveyorComponent_C_OnUpdateBuildObjectVisual;
-
-// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.OnUpdateCurrentEnergyState
-// 0x0010 (0x0010 - 0x0000)
-struct BP_BuildObjectFactoryConveyorComponent_C_OnUpdateCurrentEnergyState final
-{
-public:
-	class UPalMapObjectEnergyModule*              Module;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsRequiredEnergy_ReturnValue;             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPalMapObjectEnergyModuleStatusType           CallFunc_GetCurrentState_ReturnValue;              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_BuildObjectFactoryConveyorComponent_C_OnUpdateCurrentEnergyState;
-
-// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.OnUpdateRecipe
-// 0x0090 (0x0090 - 0x0000)
-struct BP_BuildObjectFactoryConveyorComponent_C_OnUpdateRecipe final
-{
-public:
-	class UPalMapObjectConvertItemModel*          Model;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FPalItemRecipe                         CallFunc_GetCurrentRecipe_ReturnValue;             // 0x0008(0x0088)()
-};
-DUMPER7_ASSERTS_BP_BuildObjectFactoryConveyorComponent_C_OnUpdateRecipe;
-
-// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.SetRunningConveyor
-// 0x0040 (0x0040 - 0x0000)
-struct BP_BuildObjectFactoryConveyorComponent_C_SetRunningConveyor final
-{
-public:
-	bool                                          bOn;                                               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               MaterialInstance;                                  // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_GetMaterialInstance_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_MakeColor_ReturnValue;                    // 0x001C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x002C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_MakeColor_G_ImplicitCast;                 // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BP_BuildObjectFactoryConveyorComponent_C_SetRunningConveyor;
-
 // Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.SetupByOwner
 // 0x0128 (0x0128 - 0x0000)
 struct BP_BuildObjectFactoryConveyorComponent_C_SetupByOwner final
@@ -129,6 +45,90 @@ public:
 	double                                        K2Node_VariableSet_ConveyorSpeed_ImplicitCast;     // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BP_BuildObjectFactoryConveyorComponent_C_SetupByOwner;
+
+// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.SetRunningConveyor
+// 0x0040 (0x0040 - 0x0000)
+struct BP_BuildObjectFactoryConveyorComponent_C_SetRunningConveyor final
+{
+public:
+	bool                                          bOn;                                               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               MaterialInstance;                                  // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetMaterialInstance_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           CallFunc_MakeColor_ReturnValue;                    // 0x001C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x002C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_MakeColor_G_ImplicitCast;                 // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BuildObjectFactoryConveyorComponent_C_SetRunningConveyor;
+
+// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.OnUpdateRecipe
+// 0x0090 (0x0090 - 0x0000)
+struct BP_BuildObjectFactoryConveyorComponent_C_OnUpdateRecipe final
+{
+public:
+	class UPalMapObjectConvertItemModel*          Model;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FPalItemRecipe                         CallFunc_GetCurrentRecipe_ReturnValue;             // 0x0008(0x0088)()
+};
+DUMPER7_ASSERTS_BP_BuildObjectFactoryConveyorComponent_C_OnUpdateRecipe;
+
+// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.OnUpdateCurrentEnergyState
+// 0x0010 (0x0010 - 0x0000)
+struct BP_BuildObjectFactoryConveyorComponent_C_OnUpdateCurrentEnergyState final
+{
+public:
+	class UPalMapObjectEnergyModule*              Module;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsRequiredEnergy_ReturnValue;             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPalMapObjectEnergyModuleStatusType           CallFunc_GetCurrentState_ReturnValue;              // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BuildObjectFactoryConveyorComponent_C_OnUpdateCurrentEnergyState;
+
+// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.OnUpdateBuildObjectVisual
+// 0x0008 (0x0008 - 0x0000)
+struct BP_BuildObjectFactoryConveyorComponent_C_OnUpdateBuildObjectVisual final
+{
+public:
+	const class UPalMapObjectConcreteModelBase*   MapObjectConcreteModel;                            // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BuildObjectFactoryConveyorComponent_C_OnUpdateBuildObjectVisual;
+
+// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.OnReadyOwnerEnergyModule
+// 0x0030 (0x0030 - 0x0000)
+struct BP_BuildObjectFactoryConveyorComponent_C_OnReadyOwnerEnergyModule final
+{
+public:
+	class UPalMapObjectConcreteModelBase*         Model;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectConcreteModelModuleBase*   Module;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UPalMapObjectEnergyModule* Module)> K2Node_CreateDelegate_OutputDelegate;   // 0x0010(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPalMapObjectEnergyModule*              K2Node_DynamicCast_AsPal_Map_Object_Energy_Module; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BuildObjectFactoryConveyorComponent_C_OnReadyOwnerEnergyModule;
+
+// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.GetMaterialInstance
+// 0x0010 (0x0010 - 0x0000)
+struct BP_BuildObjectFactoryConveyorComponent_C_GetMaterialInstance final
+{
+public:
+	class UMaterialInstanceDynamic*               ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_GetBuildObjectMaterialInstanceDynamic_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BuildObjectFactoryConveyorComponent_C_GetMaterialInstance;
+
+// Function BP_BuildObjectFactoryConveyorComponent.BP_BuildObjectFactoryConveyorComponent_C.ExecuteUbergraph_BP_BuildObjectFactoryConveyorComponent
+// 0x0028 (0x0028 - 0x0000)
+struct BP_BuildObjectFactoryConveyorComponent_C_ExecuteUbergraph_BP_BuildObjectFactoryConveyorComponent final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class UPalMapObjectConcreteModelBase* Model, class UPalMapObjectConcreteModelModuleBase* Module)> K2Node_CreateDelegate_OutputDelegate; // 0x0004(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	const class UPalMapObjectConcreteModelBase*   K2Node_Event_MapObjectConcreteModel;               // 0x0018(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BuildObjectFactoryConveyorComponent_C_ExecuteUbergraph_BP_BuildObjectFactoryConveyorComponent;
 
 }
 

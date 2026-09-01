@@ -14,15 +14,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_InventoryEquipment_StatusUpButton.WBP_InventoryEquipment_StatusUpButton_C.BndEvt__WBP_InventoryEquipment_StatusUpButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_InventoryEquipment_StatusUpButton_C_BndEvt__WBP_InventoryEquipment_StatusUpButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
-{
-public:
-	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InventoryEquipment_StatusUpButton_C_BndEvt__WBP_InventoryEquipment_StatusUpButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
-
 // Function WBP_InventoryEquipment_StatusUpButton.WBP_InventoryEquipment_StatusUpButton_C.ExecuteUbergraph_WBP_InventoryEquipment_StatusUpButton
 // 0x0028 (0x0028 - 0x0000)
 struct WBP_InventoryEquipment_StatusUpButton_C_ExecuteUbergraph_WBP_InventoryEquipment_StatusUpButton final
@@ -36,6 +27,15 @@ public:
 	class UCommonButtonBase*                      K2Node_ComponentBoundEvent_Button;                 // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_InventoryEquipment_StatusUpButton_C_ExecuteUbergraph_WBP_InventoryEquipment_StatusUpButton;
+
+// Function WBP_InventoryEquipment_StatusUpButton.WBP_InventoryEquipment_StatusUpButton_C.BndEvt__WBP_InventoryEquipment_StatusUpButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_InventoryEquipment_StatusUpButton_C_BndEvt__WBP_InventoryEquipment_StatusUpButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature final
+{
+public:
+	class UCommonButtonBase*                      Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InventoryEquipment_StatusUpButton_C_BndEvt__WBP_InventoryEquipment_StatusUpButton_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature;
 
 }
 
