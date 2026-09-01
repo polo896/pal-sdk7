@@ -38,7 +38,8 @@ local CONFIG = {
                                -- calls on streamed-out actors crash the game - use TP/AUTO instead)
     GimmickStepMs  = 1000,     -- pause between clearing multiple gimmicks of one tower
     MiniGameOpenMs = 5000,     -- how long to wait for the mini-game HUD to open
-    FightStartMs   = 20000,    -- how long to wait for a pal fight to actually start
+    FightStartMs   = 6000,     -- how long to wait for a pal fight to start before
+                               -- forcing the native Succeeded transition
     FightWinMs     = 4000,     -- how long to wait after the "win" before checking the wall
     SettleMs       = 600,      -- pause after landing before acting (let streaming settle)
     DirectRange    = 9000.0,   -- direct teleport if within this range, staged otherwise
@@ -856,6 +857,33 @@ local function clearGimmick(g)
     return "direct"
 end
 
+-- mini-game overlay widgets live on the PERSISTENT game-instance UI stack:
+-- one left open survives the world unload and crashes the game on the next
+-- world load (stale references to dead tower actors). Close() is the game's
+-- own stackable-UI close, exactly what ESC does.
+local MINGAME_WIDGET_PATS = { "MiniGame", "Picking", "OneStroke", "GaugeStop" }
+
+local function isMinigameWidget(w)
+    local cls = getClassName(w) or ""
+    for _, p in ipairs(MINGAME_WIDGET_PATS) do
+        if cls:find(p, 1, true) ~= nil then return true end
+    end
+    return false
+end
+
+local function closeMinigameWidgets()
+    local ok, list = pcall(FindAllOf, "PalUserWidgetStackableUI")
+    if not (ok and type(list) == "table") then return 0 end
+    local n = 0
+    for _, w in ipairs(list) do
+        if IsValidObj(w) and isMinigameWidget(w) then
+            if SafeDo(function() w:Close() end) then n = n + 1 end
+        end
+    end
+    if n > 0 then Log(string.format("  cleanup: closed %d mini-game widget(s)", n)) end
+    return n
+end
+
 -- close any open pal-fight widgets: the fight UI holds a WEAK pointer to the
 -- gimmick; if the gimmick is destroyed (world unload) while the widget stays,
 -- the game dereferences NULL + 0x338 (bUseLightOrb) on the next world load -
@@ -907,6 +935,10 @@ local function clearMinigameGimmick(g, onDone)
                 SafeDo(function() param.bMiniGameSuccess = true end)
             end
             SafeDo(function() g:OnMiniGameComplete(param) end)
+            -- the widget never saw the player "play", so it stays open -
+            -- close it exactly like ESC does (a stale overlay survives the
+            -- world unload and crashes the next world load)
+            closeMinigameWidgets()
             return onDone()
         end
         waited = waited + 250
@@ -920,20 +952,21 @@ local function clearMinigameGimmick(g, onDone)
     ExecuteWithDelay(400, poll)
 end
 
--- ---- pal-fight gimmick: let the fight start, then report every enemy dead ----
--- The fight starts NATURALLY: the teleport lands inside the gimmick's trigger
--- sphere (OnTriggerBeginOverlap). When all enemies die the gimmick's own logic
--- switches GameState to Succeeded and the wall falls. We report each spawned
--- enemy dead through the gimmick's native OnPalDead(FPalDeadInfo) - the same
--- handler the game runs when an enemy actually dies. No MarkAsCleared.
+-- ---- pal-fight gimmick ----
+-- Preferred: let the fight start on its own (the teleport lands inside the
+-- trigger sphere) and report every spawned enemy dead through the gimmick's
+-- native OnPalDead - the exact handler the game runs when an enemy dies.
+-- If the fight refuses to start (happens on some towers: the trigger logic
+-- is server-side and ignores a direct overlap call), replay the gimmick's
+-- own SUCCEEDED state transition - OnGameStateChanged(Succeeded, ...) - the
+-- same handler the game runs when the fight is won.
 local function clearPalFightGimmick(g, onDone)
     local char = getLocalCharacter()
     if char == nil then
         Log("  step: no player - cannot start the fight")
         return onDone()
     end
-    Log("  step: waiting for the fight to start (walk-in trigger)")
-    local waited = 0
+
     local function collectEnemies()
         local out = {}
         local handles = SafeCall(function() return g.SpawnedHandles end)
@@ -950,32 +983,25 @@ local function clearPalFightGimmick(g, onDone)
         end
         return out
     end
-    local function pokeTrigger()
-        -- if the overlap did not fire (edge of the sphere), replay it natively
-        local sphere = SafeCall(function() return g.TriggerSphere end)
-        if not IsValidObj(sphere) then return end
-        Log("  step: OnTriggerBeginOverlap() - nudging the fight trigger")
-        SafeDo(function()
-            g:OnTriggerBeginOverlap(sphere, char, char.RootComponent, 0, false, {})
+
+    local function finishUp()
+        ExecuteWithDelay(CONFIG.FightWinMs, function()
+            if not worldAlive() then Busy = false return onDone() end
+            closeFightWidgets()
+            closeMinigameWidgets()
+            if SafeCall(function() return g:IsCleared() end) ~= true then
+                notify("[pal fight] could not be finished automatically - win this one yourself")
+            end
+            onDone()
         end)
     end
+
     local function killStep(enemies, idx)
         if not worldAlive() then Busy = false return onDone() end
         local e = enemies[idx]
         if e == nil then
             Log(string.format("  step: fight won (%d enemies reported dead)", #enemies))
-            ExecuteWithDelay(CONFIG.FightWinMs, function()
-                if not worldAlive() then Busy = false return onDone() end
-                closeFightWidgets()
-                local cleared = SafeCall(function() return g:IsCleared() end) == true
-                if not cleared then
-                    -- last resort: replay the Succeeded state transition
-                    Log("  step: OnGameStateChanged(Succeeded) fallback")
-                    SafeDo(function() g:OnGameStateChanged(2, 1) end)
-                end
-                onDone()
-            end)
-            return
+            return finishUp()
         end
         local eloc = getActorLoc(e) or { X = 0, Y = 0, Z = 0 }
         SafeDo(function()
@@ -991,26 +1017,47 @@ local function clearPalFightGimmick(g, onDone)
         end)
         ExecuteWithDelay(CONFIG.GimmickStepMs, function() killStep(enemies, idx + 1) end)
     end
+
+    local function forceSucceeded(oldState)
+        Log("  step: OnGameStateChanged(Succeeded) - finishing the fight natively")
+        SafeDo(function() g:OnGameStateChanged(2, oldState or 0) end)
+        finishUp()
+    end
+
+    local function pokeTrigger()
+        local sphere = SafeCall(function() return g.TriggerSphere end)
+        if not IsValidObj(sphere) then return end
+        Log("  step: OnTriggerBeginOverlap() - nudging the fight trigger")
+        SafeDo(function()
+            g:OnTriggerBeginOverlap(sphere, char, char.RootComponent, 0, false, {})
+        end)
+    end
+
+    Log("  step: waiting for the fight to start (walk-in trigger)")
+    local waited = 0
+    local poked = false
     local function poll()
         if not worldAlive() then Busy = false return onDone() end
         local state = SafeCall(function() return g.GameState end)
+        if state == 2 then -- already Succeeded
+            Log("  step: fight already won")
+            return onDone()
+        end
         if state == 1 then -- Active
             local enemies = collectEnemies()
             if #enemies > 0 then
                 Log(string.format("  step: fight active, %d enemy(ies) spawned", #enemies))
-                killStep(enemies, 1)
-                return
+                return killStep(enemies, 1)
             end
-        elseif state == 2 then -- already Succeeded
-            Log("  step: fight already won")
-            return onDone()
         end
         waited = waited + 500
-        if waited == 3000 then pokeTrigger() end
-        if waited >= CONFIG.FightStartMs then
-            Log("  step: fight did not start in time")
-            notify("[pal fight] did not start - win this one yourself")
-            return onDone()
+        if waited == 2500 and not poked then
+            poked = true
+            pokeTrigger()
+        elseif waited >= CONFIG.FightStartMs then
+            -- the trigger logic did not react: force the fight's own
+            -- success transition (works even though no fight ever ran)
+            return forceSucceeded(state)
         end
         ExecuteWithDelay(500, poll)
     end
@@ -1097,6 +1144,21 @@ local function openTowerInternal(tw, onDone)
     step()
 end
 
+-- the stele sits behind the barrier: obtaining it while the tower is still
+-- locked leaves an inconsistent state in the save (locked tower + looted
+-- stele) - a prime suspect for the 0x338 crash on the next world load
+local function towerOpenedForLoot(tw)
+    if IsValidObj(tw.barrier) then
+        local locked = SafeCall(function() return tw.barrier.bLocked end)
+        if locked == true then return false end
+    end
+    if #tw.gimmicks > 0 then
+        local total, cleared = countCleared(tw)
+        if cleared < total then return false end
+    end
+    return true
+end
+
 local function lootTowerInternal(tw, onDone)
     if not towerInRange(tw) then
         notify(string.format("[%s] too far away - use TP or AUTO first (safe range %.0f m)",
@@ -1106,6 +1168,11 @@ local function lootTowerInternal(tw, onDone)
     end
     if #tw.steles == 0 then
         notify(string.format("[%s] no stele found near this tower", tw.name))
+        if onDone then onDone() end
+        return
+    end
+    if not towerOpenedForLoot(tw) then
+        notify(string.format("[%s] still locked - OPEN it first (loot behind a locked wall corrupts the save)", tw.name))
         if onDone then onDone() end
         return
     end
@@ -1540,9 +1607,10 @@ local function watchdogTick()
     end
     if watchdogCleaned then return end
     watchdogCleaned = true
-    Log("watchdog: world unloaded - closing UI and stale fight widgets")
+    Log("watchdog: world unloaded - closing UI and stale game widgets")
     SafeDo(function() if towerUI.is_visible() then towerUI.close() end end)
     closeFightWidgets()
+    closeMinigameWidgets()
     controllerCache = nil
     kismetLibCache = nil
     Tour.active = false
