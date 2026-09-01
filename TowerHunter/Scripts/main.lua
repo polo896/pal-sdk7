@@ -14,9 +14,10 @@
 --  then closes the overlay exactly like ESC does. Fights and rocks are left
 --  to the player.
 --
---  A world-enter event hook (OnInitializeLocalPlayer_BP) closes stale UI
---  left over from the previous session - the crash source on
---  "exit to menu -> enter world" (0x338).
+--  Outside a live world the mod does NOTHING native: no widget closes, no
+--  level-object calls - a native call through a pointer that died with the
+--  unloaded world is exactly the 0x338 crash on "exit to menu -> enter
+--  world". World enter only closes our own panel and resets Lua caches.
 -- ============================================================================
 
 local MOD_TAG  = "[TowerHunter]"
@@ -143,6 +144,14 @@ local function getLocalCharacter()
         if IsValidObj(pawn) and not IsDefaultObj(pawn) then return pawn end
     end
     return nil
+end
+
+-- "am I inside a loaded world?" - the mod NEVER touches native widgets or
+-- level objects outside a live world: a widget whose gimmick died with the
+-- world unload crashes the game (0x338) the moment its close path reports
+-- the result through the dead pointer.
+local function inWorld()
+    return getLocalCharacter() ~= nil
 end
 
 -- UPalNetworkPlayerComponent - the same component the game uses for every
@@ -784,6 +793,7 @@ local function isMinigameWidget(w)
 end
 
 local function closeMinigameWidgets()
+    if not inWorld() then return 0 end   -- NEVER touch widgets outside a live world
     local ok, list = pcall(FindAllOf, "PalUserWidgetStackableUI")
     if not (ok and type(list) == "table") then return 0 end
     local n = 0
@@ -794,19 +804,6 @@ local function closeMinigameWidgets()
     end
     if n > 0 then Log(string.format("  cleanup: closed %d mini-game widget(s)", n)) end
     return n
-end
-
--- the pal-fight widget holds a WEAK pointer to its gimmick; left open it
--- reads bUseLightOrb (offset 0x338) through NULL after the world unloads
-local function closeFightWidgets()
-    local ok, list = pcall(FindAllOf, "PalLockGimmickPalFightWidget")
-    if not (ok and type(list) == "table") then return end
-    for _, w in ipairs(list) do
-        if IsValidObj(w) then
-            SafeDo(function() w:FinishClose() end)
-            Log("  cleanup: closed a stale pal-fight widget")
-        end
-    end
 end
 
 -- ======================= native mini-game assist (F) =======================
@@ -839,14 +836,19 @@ local function winMinigame(g, param)
         SafeDo(function() param.bMiniGameSuccess = true end)
     end
     SafeDo(function() g:OnMiniGameComplete(param) end)
-    ExecuteWithDelay(300, function() closeMinigameWidgets() end)
+    -- close the overlay only while the world is still alive; if the player
+    -- left to the menu meanwhile, do nothing - better one visible overlay
+    -- closed by ESC than a native call through a dead gimmick pointer
+    ExecuteWithDelay(300, function()
+        if inWorld() then closeMinigameWidgets() end
+    end)
 end
 
 local function winMinigameSoon(g, attempt)
     attempt = attempt or 1
     if not IsValidObj(g) then return end
     ExecuteWithDelay(CONFIG.MinigameWinDelayMs, function()
-        if not IsValidObj(g) then return end
+        if not IsValidObj(g) or not inWorld() then return end
         if SafeCall(function() return g:IsCleared() end) == true then return end
         local param = SafeCall(function() return g.CurrentParameter end)
         if param ~= nil and hasMethod(param, "get") then param = param:get() end
@@ -861,6 +863,7 @@ end
 -- fallback scan: a mini-game is waiting for its result right now - win it
 -- (used by the widget-Construct trigger, which has no gimmick reference)
 local function autoWinOpenedMinigames()
+    if not inWorld() then return end
     local ok, list = pcall(FindAllOf, "PalLevelObject_LockGimmickMiniGame")
     if not (ok and type(list) == "table") then return end
     for _, g in ipairs(list) do
@@ -937,12 +940,14 @@ end
 -- The world-enter event (OnInitializeLocalPlayer_BP) is our trigger - no
 -- background ticking.
 local function onWorldEnter()
-    Log("world entered - cleaning up stale UI")
+    -- Pure Lua only: close our own panel and drop cached object references.
+    -- Stale GAME widgets are left alone on purpose: calling Close() on a
+    -- widget whose world (and gimmick) is gone reads through a dead pointer
+    -- - the exact 0x338 crash on "menu -> enter world".
+    Log("world entered - panel closed, caches reset (game widgets untouched)")
     SafeDo(function()
         if towerUI.is_visible() then towerUI.close() end
     end)
-    closeMinigameWidgets()
-    closeFightWidgets()
     controllerCache = nil
     kismetLibCache = nil
 end
