@@ -478,16 +478,12 @@ local function renderAllContent()
         if ctx.onRescan then ctx.onRescan() end
     end, 60)
 
-    createGameButton(hostCanvas, surface, tree, ctx.isTouring() and "STOP TOUR" or "AUTO TOUR", PAD + 244, actionsY + 8, 170, 34, function()
-        if ctx.onTour then ctx.onTour() end
-    end, 60)
-
-    createGameButton(hostCanvas, surface, tree, "TP NEAREST", PAD + 424, actionsY + 8, 140, 34, function()
+    createGameButton(hostCanvas, surface, tree, "TP NEAREST", PAD + 244, actionsY + 8, 150, 34, function()
         if ctx.onTpNearest then ctx.onTpNearest() end
     end, 60)
 
     createGameButton(hostCanvas, surface, tree, "SORT: " .. (ctx.getSortLabel and ctx.getSortLabel() or "?"),
-            PAD + 574, actionsY + 8, 150, 34, function()
+            PAD + 404, actionsY + 8, 150, 34, function()
         if ctx.onCycleSort then ctx.onCycleSort() end
     end, 60)
 
@@ -503,7 +499,7 @@ local function renderAllContent()
     if listBg then F.AnchorWidget(surface, listBg, PAD, listY, contentW, listH, 5) end
     F.DrawFrame(surface, tree, PAD, listY, contentW, listH, T.Divider)
 
-    local gTitle = F.CreateText(tree, "TOWERS  (mini-games are replayed and fights are won natively; *MANUAL* = gimmick out of reach)", 12, T.TextPrimary, true, 0)
+    local gTitle = F.CreateText(tree, "TOWERS  (press F on a tower - the mod wins the mini-game for you; fights and rocks are yours)", 12, T.TextPrimary, true, 0)
     if gTitle then F.AnchorWidget(surface, gTitle, PAD + 16, listY + 10, 640, 16, 7) end
 
     local towers, page, pageSize = ctx.getTowers(), ctx.getPage(), ctx.getPageSize()
@@ -551,27 +547,15 @@ local function renderAllContent()
         if locText then F.AnchorWidget(surface, locText, rowX + 14, cy + 30, 330, 14, 8) end
 
         local stateText = F.CreateText(tree, st.state, 10, pal.text, true, 0)
-        if stateText then F.AnchorWidget(surface, stateText, rowX + 350, cy + 8, 255, 40, 8) end
+        if stateText then F.AnchorWidget(surface, stateText, rowX + 350, cy + 8, 190, 40, 8) end
 
-        local bx = rowX + rowW - 470
+        local bx = rowX + rowW - 190
         createGameButton(hostCanvas, surface, tree, st.done and "[v] DONE" or "[ ] MARK", bx, cy + 11, 110, 30, function()
             if ctx.onToggleDone then ctx.onToggleDone(tw) end
         end, 60)
 
         createGameButton(hostCanvas, surface, tree, "TP", bx + 116, cy + 11, 56, 30, function()
             if ctx.onTeleport then ctx.onTeleport(tw) end
-        end, 60)
-
-        createGameButton(hostCanvas, surface, tree, "OPEN", bx + 178, cy + 11, 84, 30, function()
-            if ctx.onOpen then ctx.onOpen(tw) end
-        end, 60)
-
-        createGameButton(hostCanvas, surface, tree, "LOOT", bx + 268, cy + 11, 84, 30, function()
-            if ctx.onLoot then ctx.onLoot(tw) end
-        end, 60)
-
-        createGameButton(hostCanvas, surface, tree, "AUTO", bx + 358, cy + 11, 90, 30, function()
-            if ctx.onAuto then ctx.onAuto(tw) end
         end, 60)
     end
 
