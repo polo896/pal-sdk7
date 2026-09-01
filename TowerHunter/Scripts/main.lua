@@ -7,13 +7,15 @@
 --    TP      - teleport near the tower (staged, waits for terrain streaming)
 --  Global: RESCAN / TP NEAREST / SORT / paging.
 --
---  Mini-game pedestals (v4.3): the active F-assist is REMOVED - every
---  variant of "win the mini-game for the player" ended in a SECOND native
---  completion of the gimmick and a crash on the next world load. What is
---  left is a passive RECORDER: press F and play the mini-game by hand; the
---  mod logs the game's exact native sequence (report -> completion ->
---  unlock -> overlay close) so the assist can be rebuilt on facts, not
---  guesses. Fights and rocks are left to the player.
+--  Mini-game pedestals (v4.4): rebuilt strictly on the chain the v4.3
+--  recorder captured from a hand-played win. The recording proved the
+--  param reports (OnReceive*) are mere per-click feedback and ALL the
+--  unlock work (OnGimmickCleared -> server request -> OnMiniGameComplete)
+--  happens inside the overlay widget's OWN close path. So the assist does
+--  exactly two things and nothing else: writes bMiniGameSuccess=true on
+--  the param and calls Close() on the visible overlay ONCE - the widget
+--  itself then unlocks the tower through the very same native sequence a
+--  manual win takes. A passive recorder stays attached as a witness.
 --
 --  Outside a live world the mod does NOTHING native: no widget closes, no
 --  level-object calls - a native call through a pointer that died with the
@@ -35,6 +37,8 @@ local CONFIG = {
     PageSize       = 7,        -- tower rows per page
     ClusterRadius  = 4000.0,   -- units (~40 m): gimmicks closer than this belong to the same tower
     CooldownMs     = 400,      -- min pause between UI actions
+    MinigameAssist = true,     -- v4.4: flag + single Close(), the widget does the rest
+    MinigameAssistDelayMs = 700, -- after F: let the overlay + param appear
     DirectRange    = 9000.0,   -- direct teleport if within this range, staged otherwise
     StagingZ       = 100000.0,
     TraceTop       = 200000.0,
@@ -973,6 +977,91 @@ local function registerMinigameObserver()
             attached, failed, #pendingWidgets))
 end
 
+-- ======================= mini-game assist (v4.4) ============================
+-- Rebuilt on the RECORDED manual chain (see the recorder above):
+--   [player wins by hand]
+--   +07.6s  param.OnReceiveSuccessPicking   <- per-click report, completes
+--                                              NOTHING (2 fail reports came
+--                                              before it - the game went on)
+--   +09.1s  widget.Close()                  <- the widget closes ITSELF:
+--              OnPreClose
+--              gimmick.OnGimmickCleared
+--              network.RequestMiniGameSuccess_ToServer
+--              gimmick.OnMiniGameComplete (bMiniGameSuccess=true)
+--              OnClose / OnPostClose
+-- Exactly ONE completion, performed entirely by the game's own code.
+--
+-- The assist imitates only the FINAL step of that chain: set the param's
+-- success flag and close the overlay ONCE. The widget's conclude path then
+-- does every native call itself. The mod NEVER calls OnReceive* and NEVER
+-- calls OnMiniGameComplete - those were the 0x338 crashers (a report
+-- completed the tower once, our Close concluded it a second time).
+
+local mgAssisted = setmetatable({}, { __mode = "k" })   -- gimmick -> true
+
+local function findVisibleMinigameWidget()
+    local ok, list = pcall(FindAllOf, "PalUserWidgetStackableUI")
+    if not (ok and type(list) == "table") then return nil end
+    for _, w in ipairs(list) do
+        if IsValidObj(w) and isMinigameWidget(w)
+           and SafeCall(function() return w:IsVisible() end) == true then
+            return w
+        end
+    end
+    return nil
+end
+
+-- returns true = acted/finished, false = not ready yet (retry), nil = abort
+local function assistMinigame(g)
+    if not IsValidObj(g) or not inWorld() then return end
+    if mgAssisted[g] then return end
+    if SafeCall(function() return g:IsCleared() end) == true then return end
+    local param = SafeCall(function() return g.CurrentParameter end)
+    if param ~= nil and hasMethod(param, "get") then param = param:get() end
+    if not IsValidObj(param) then return false end    -- HUD not ready yet
+    local w = findVisibleMinigameWidget()
+    if w == nil then return false end                 -- overlay not up yet
+    mgAssisted[g] = true
+    Log("[mini-game] assist: flag set + one Close() - the widget concludes it")
+    SafeDo(function() param.bMiniGameSuccess = true end)
+    if not SafeDo(function() w:Close() end) then
+        Log("[mini-game] assist: Close() failed - play the mini-game by hand")
+    end
+    return true
+end
+
+local function assistMinigameSoon(g, attempt)
+    attempt = attempt or 1
+    ExecuteWithDelay(CONFIG.MinigameAssistDelayMs, function()
+        if not IsValidObj(g) or not inWorld() then return end
+        local res = assistMinigame(g)
+        if res == false and attempt < 3 then
+            assistMinigameSoon(g, attempt + 1)        -- param/overlay on their way
+        elseif res == false then
+            Log("[mini-game] assist: overlay never appeared - play by hand")
+        end
+    end)
+end
+
+local function registerMinigameAssist()
+    if not CONFIG.MinigameAssist then
+        Log("mini-game assist: OFF in config (recorder stays on)")
+        return
+    end
+    local ok = pcall(RegisterHook,
+        "/Script/Pal.PalLevelObject_LockGimmickMiniGame:OnTriggerInteract",
+        function() end,
+        function(selfParam)
+            SafeDo(function()
+                local g = selfParam
+                if g ~= nil and hasMethod(g, "get") then g = g:get() end
+                if not IsValidObj(g) then return end
+                assistMinigameSoon(g)
+            end)
+        end)
+    if ok then Log("mini-game assist hook attached (F -> flag + single Close)") end
+end
+
 -- ======================= world-enter cleanup (event) =======================
 -- Stale widgets survive a world unload on the PERSISTENT UI stack and crash
 -- the next world load (0x338: a tower-actor field read through NULL).
@@ -1235,9 +1324,12 @@ local function init()
     end)
     registerChatHook()
     registerMinigameObserver()
+    registerMinigameAssist()
     registerWorldEnterHook()
 
-    Log(string.format("ready | F6 = panel | !th in chat | mini-game: recorder (assist off) | %s",
+    Log(string.format("ready | F6 = panel | !th in chat | mini-game: %s | %s",
+            CONFIG.MinigameAssist and "assist (flag + single Close) + recorder"
+                                     or "recorder only",
             IsValidObj(getLocalCharacter()) and "in world" or "enter a world to start"))
 end
 
