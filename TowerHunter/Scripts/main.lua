@@ -798,7 +798,10 @@ local function closeMinigameWidgets()
     if not (ok and type(list) == "table") then return 0 end
     local n = 0
     for _, w in ipairs(list) do
-        if IsValidObj(w) and isMinigameWidget(w) then
+        -- only widgets that are actually on screen: closing an already
+        -- closed overlay runs its native close path a second time
+        if IsValidObj(w) and isMinigameWidget(w)
+           and SafeCall(function() return w:IsVisible() end) == true then
             if SafeDo(function() w:Close() end) then n = n + 1 end
         end
     end
@@ -823,7 +826,13 @@ local function winMinigame(g, param)
     if recentWins[g] then return end
     if SafeCall(function() return g:IsCleared() end) == true then return end
     recentWins[g] = true
-    Log("[mini-game] won for you (native completion)")
+    Log("[mini-game] reporting the win exactly like the widget does")
+    -- ONE native call: the widget's own report. In the real game the HUD
+    -- hears this report and completes the tower itself (OnMiniGameComplete,
+    -- barrier, save, overlay close). We must NOT also call OnMiniGameComplete
+    -- ourselves: a second native completion on a gimmick the HUD already
+    -- completed leaves torn-down state behind - and the game crashes reading
+    -- it on the NEXT world load (the 0x338 crash, delayed by design).
     local reported = false
     if hasMethod(param, "OnReceiveGameSuccess") then        -- one-stroke puzzle
         reported = SafeDo(function() param:OnReceiveGameSuccess() end)
@@ -832,14 +841,29 @@ local function winMinigame(g, param)
     elseif hasMethod(param, "OnReceiveMiniGameResult") then -- ring / gauge stop
         reported = SafeDo(function() param:OnReceiveMiniGameResult(true) end)
     end
-    if not reported then
+    if reported then
+        -- give the game's own chain time to complete the tower; only if it
+        -- never happens do we finish it explicitly (fallback)
+        ExecuteWithDelay(1500, function()
+            if not IsValidObj(g) or not inWorld() then return end
+            if SafeCall(function() return g:IsCleared() end) == true then
+                Log("[mini-game] the game completed it natively")
+            else
+                Log("[mini-game] no native completion - finishing explicitly")
+                SafeDo(function() g:OnMiniGameComplete(param) end)
+            end
+        end)
+    else
+        -- could not report through the param: set the flag and complete
+        -- explicitly - this is the only path where WE call OnMiniGameComplete
         SafeDo(function() param.bMiniGameSuccess = true end)
+        SafeDo(function() g:OnMiniGameComplete(param) end)
     end
-    SafeDo(function() g:OnMiniGameComplete(param) end)
-    -- close the overlay only while the world is still alive; if the player
-    -- left to the menu meanwhile, do nothing - better one visible overlay
-    -- closed by ESC than a native call through a dead gimmick pointer
-    ExecuteWithDelay(300, function()
+    -- the overlay: after a real win the game closes it itself. Close it
+    -- ourselves only as a late fallback, and only if it is still on screen -
+    -- a premature Close() races the widget's own close timer and double
+    -- closes it (the second crash source found the hard way).
+    ExecuteWithDelay(2400, function()
         if inWorld() then closeMinigameWidgets() end
     end)
 end
@@ -890,7 +914,9 @@ local function registerMinigameHooks()
             end)
         end)
     -- safety net: whatever completes a mini-game (win OR fail) counts as a
-    -- win - report the native success before the gimmick processes it
+    -- win. Flag ONLY - never re-report from here: calling OnReceive* inside
+    -- a completion re-enters the native chain and double-completes the
+    -- gimmick (the delayed 0x338 crash).
     local ok2 = pcall(RegisterHook,
         "/Script/Pal.PalLevelObject_LockGimmickMiniGame:OnMiniGameComplete",
         function(selfParam, paramParam)
@@ -898,15 +924,11 @@ local function registerMinigameHooks()
                 local param = paramParam
                 if param ~= nil and hasMethod(param, "get") then param = param:get() end
                 if not IsValidObj(param) then return end
-                if SafeCall(function() return param.bMiniGameSuccess end) == true then return end
-                Log("[mini-game] turning the result into a win")
-                if hasMethod(param, "OnReceiveGameSuccess") then
-                    SafeDo(function() param:OnReceiveGameSuccess() end)
-                elseif hasMethod(param, "OnReceiveSuccessPicking") then
-                    SafeDo(function() param:OnReceiveSuccessPicking() end)
-                elseif hasMethod(param, "OnReceiveMiniGameResult") then
-                    SafeDo(function() param:OnReceiveMiniGameResult(true) end)
-                else
+                local ok = SafeCall(function() return param.bMiniGameSuccess end)
+                Log(string.format("[mini-game] native completion (success=%s)",
+                        tostring(ok)))
+                if ok ~= true then
+                    Log("[mini-game] turning the fail into a win (flag only)")
                     SafeDo(function() param.bMiniGameSuccess = true end)
                 end
             end)
