@@ -7,12 +7,13 @@
 --    TP      - teleport near the tower (staged, waits for terrain streaming)
 --  Global: RESCAN / TP NEAREST / SORT / paging.
 --
---  Mini-game pedestals: press F as usual - the mod hooks the game's own
---  PalLevelObject_LockGimmickMiniGame:OnTriggerInteract (a pure event hook,
---  no background polling) and completes the mini-game through the same
---  native path a legitimate win takes (parameter -> OnMiniGameComplete),
---  then closes the overlay exactly like ESC does. Fights and rocks are left
---  to the player.
+--  Mini-game pedestals (v4.3): the active F-assist is REMOVED - every
+--  variant of "win the mini-game for the player" ended in a SECOND native
+--  completion of the gimmick and a crash on the next world load. What is
+--  left is a passive RECORDER: press F and play the mini-game by hand; the
+--  mod logs the game's exact native sequence (report -> completion ->
+--  unlock -> overlay close) so the assist can be rebuilt on facts, not
+--  guesses. Fights and rocks are left to the player.
 --
 --  Outside a live world the mod does NOTHING native: no widget closes, no
 --  level-object calls - a native call through a pointer that died with the
@@ -34,7 +35,6 @@ local CONFIG = {
     PageSize       = 7,        -- tower rows per page
     ClusterRadius  = 4000.0,   -- units (~40 m): gimmicks closer than this belong to the same tower
     CooldownMs     = 400,      -- min pause between UI actions
-    MinigameWinDelayMs = 400,  -- after the player presses F: let the mini-game open, then report the win
     DirectRange    = 9000.0,   -- direct teleport if within this range, staged otherwise
     StagingZ       = 100000.0,
     TraceTop       = 200000.0,
@@ -777,11 +777,7 @@ local function teleportToTower(tw, onDone)
     warpToRawCoords(ox, oy, tw.loc.Z, yaw, false, onDone)
 end
 
--- ======================= stale widget cleanup ==============================
--- mini-game overlay widgets live on the PERSISTENT game-instance UI stack:
--- one left open survives the world unload and crashes the game on the next
--- world load (stale references to dead tower actors). Close() is the game's
--- own stackable-UI close, exactly what ESC does.
+-- ======================= mini-game widget matcher ============================
 local MINGAME_WIDGET_PATS = { "MiniGame", "Picking", "OneStroke", "GaugeStop" }
 
 local function isMinigameWidget(w)
@@ -792,168 +788,189 @@ local function isMinigameWidget(w)
     return false
 end
 
-local function closeMinigameWidgets()
-    if not inWorld() then return 0 end   -- NEVER touch widgets outside a live world
-    local ok, list = pcall(FindAllOf, "PalUserWidgetStackableUI")
-    if not (ok and type(list) == "table") then return 0 end
-    local n = 0
-    for _, w in ipairs(list) do
-        -- only widgets that are actually on screen: closing an already
-        -- closed overlay runs its native close path a second time
-        if IsValidObj(w) and isMinigameWidget(w)
-           and SafeCall(function() return w:IsVisible() end) == true then
-            if SafeDo(function() w:Close() end) then n = n + 1 end
-        end
-    end
-    if n > 0 then Log(string.format("  cleanup: closed %d mini-game widget(s)", n)) end
-    return n
+-- ======================= mini-game chain recorder (v4.3) ====================
+-- The active F-assist is GONE. The v4.2 instrumented log proved that even
+-- its last remaining native call was one too many: after our param report
+-- the game completed the gimmick once - but the overlay widget never learns
+-- the game concluded, stays open, and a forced Close() pushes it through
+-- its own "conclude on close" path: a SECOND native completion on the same
+-- gimmick. Corrupted state -> NULL+0x338 read on the NEXT world load.
+--
+-- Until the assist is rebuilt on facts, this is a black-box RECORDER: hooks
+-- that only LOG what the game itself does between "F pressed" and "tower
+-- unlocked" while the player wins the mini-game BY HAND. Zero native calls,
+-- zero timers, zero writes - as passive as the mod not being installed.
+
+local mgActive = false     -- a recording session is live
+local mgSeq    = 0         -- event counter inside the session
+local mgT0     = nil       -- os.clock() when the session started
+
+local retryWidgetHooks = function() end   -- set below, re-armed on world enter
+
+local function nowClock()
+    local ok, v = pcall(function() return os.clock() end)
+    if ok and type(v) == "number" then return v end
+    return nil
 end
 
--- ======================= native mini-game assist (F) =======================
--- The player presses F on a mini-game pedestal; the game calls
--- PalLevelObject_LockGimmickMiniGame:OnTriggerInteract on the gimmick -
--- that call IS our trigger (no background polling of any kind).
--- We then replay what the mini-game widget does when the player WINS:
---   param:OnReceive*Success()  -> bMiniGameSuccess = true
---   gimmick:OnMiniGameComplete(param)  -> the native success chain
---     (wall falls, state saved) - and the overlay is closed the way ESC
---     closes it. MarkAsCleared / open / loot requests are never used.
-
-local recentWins = setmetatable({}, { __mode = "k" })   -- gimmick -> true
-
-local function winMinigame(g, param)
-    if not IsValidObj(g) or not IsValidObj(param) then return end
-    if recentWins[g] then return end
-    if SafeCall(function() return g:IsCleared() end) == true then return end
-    recentWins[g] = true
-    Log("[mini-game] reporting the win exactly like the widget does")
-    -- ONE native call: the widget's own report. In the real game the HUD
-    -- hears this report and completes the tower itself (OnMiniGameComplete,
-    -- barrier, save, overlay close). We must NOT also call OnMiniGameComplete
-    -- ourselves: a second native completion on a gimmick the HUD already
-    -- completed leaves torn-down state behind - and the game crashes reading
-    -- it on the NEXT world load (the 0x338 crash, delayed by design).
-    local reported = false
-    if hasMethod(param, "OnReceiveGameSuccess") then        -- one-stroke puzzle
-        reported = SafeDo(function() param:OnReceiveGameSuccess() end)
-    elseif hasMethod(param, "OnReceiveSuccessPicking") then -- point-picking
-        reported = SafeDo(function() param:OnReceiveSuccessPicking() end)
-    elseif hasMethod(param, "OnReceiveMiniGameResult") then -- ring / gauge stop
-        reported = SafeDo(function() param:OnReceiveMiniGameResult(true) end)
-    end
-    if reported then
-        -- give the game's own chain time to complete the tower; only if it
-        -- never happens do we finish it explicitly (fallback)
-        ExecuteWithDelay(1500, function()
-            if not IsValidObj(g) or not inWorld() then return end
-            if SafeCall(function() return g:IsCleared() end) == true then
-                Log("[mini-game] the game completed it natively")
-            else
-                Log("[mini-game] no native completion - finishing explicitly")
-                SafeDo(function() g:OnMiniGameComplete(param) end)
-            end
-        end)
-    else
-        -- could not report through the param: set the flag and complete
-        -- explicitly - this is the only path where WE call OnMiniGameComplete
-        SafeDo(function() param.bMiniGameSuccess = true end)
-        SafeDo(function() g:OnMiniGameComplete(param) end)
-    end
-    -- the overlay: after a real win the game closes it itself. Close it
-    -- ourselves only as a late fallback, and only if it is still on screen -
-    -- a premature Close() races the widget's own close timer and double
-    -- closes it (the second crash source found the hard way).
-    ExecuteWithDelay(2400, function()
-        if inWorld() then closeMinigameWidgets() end
-    end)
+local function unwrapRef(v)
+    if v ~= nil and hasMethod(v, "get") then return v:get() end
+    return v
 end
 
-local function winMinigameSoon(g, attempt)
-    attempt = attempt or 1
-    if not IsValidObj(g) then return end
-    ExecuteWithDelay(CONFIG.MinigameWinDelayMs, function()
-        if not IsValidObj(g) or not inWorld() then return end
-        if SafeCall(function() return g:IsCleared() end) == true then return end
-        local param = SafeCall(function() return g.CurrentParameter end)
-        if param ~= nil and hasMethod(param, "get") then param = param:get() end
-        if IsValidObj(param) then
-            winMinigame(g, param)
-        elseif attempt < 3 then
-            winMinigameSoon(g, attempt + 1)   -- HUD dispatch still on its way
-        end
-    end)
+local function objClass(o)
+    if not IsValidObj(o) then return "<invalid>" end
+    local ok, name = pcall(function() return o:GetClass():GetName() end)
+    if ok and type(name) == "string" and name ~= "" then return name end
+    local ok2, fname = pcall(function() return o:GetClass():GetFName():ToString() end)
+    if ok2 and type(fname) == "string" and fname ~= "" then return fname end
+    local ok3, full = pcall(function() return o:GetFullName() end)
+    if ok3 and type(full) == "string" then return full end
+    return "<unknown>"
 end
 
--- fallback scan: a mini-game is waiting for its result right now - win it
--- (used by the widget-Construct trigger, which has no gimmick reference)
-local function autoWinOpenedMinigames()
-    if not inWorld() then return end
-    local ok, list = pcall(FindAllOf, "PalLevelObject_LockGimmickMiniGame")
-    if not (ok and type(list) == "table") then return end
-    for _, g in ipairs(list) do
-        if IsValidObj(g) and SafeCall(function() return g:IsCleared() end) ~= true then
-            local param = SafeCall(function() return g.CurrentParameter end)
-            if param ~= nil and hasMethod(param, "get") then param = param:get() end
-            if IsValidObj(param) then winMinigame(g, param) end
-        end
+local function mgLog(what)
+    if not mgActive then return end
+    mgSeq = mgSeq + 1
+    local dt = ""
+    if mgT0 ~= nil then
+        local c = nowClock()
+        if c ~= nil then dt = string.format(" +%06.3fs", c - mgT0) end
     end
+    Log(string.format("[MG #%d%s] %s", mgSeq, dt, what))
 end
 
-local function registerMinigameHooks()
-    -- fires exactly when the player interacts with a mini-game gimmick
-    local ok1 = pcall(RegisterHook,
-        "/Script/Pal.PalLevelObject_LockGimmickMiniGame:OnTriggerInteract",
-        function() end,
-        function(selfParam)
-            SafeDo(function()
-                local g = selfParam
-                if g ~= nil and hasMethod(g, "get") then g = g:get() end
-                if not IsValidObj(g) then return end
-                Log("[mini-game] F pressed - completing it natively")
-                winMinigameSoon(g)
-            end)
-        end)
-    -- safety net: whatever completes a mini-game (win OR fail) counts as a
-    -- win. Flag ONLY - never re-report from here: calling OnReceive* inside
-    -- a completion re-enters the native chain and double-completes the
-    -- gimmick (the delayed 0x338 crash).
-    local ok2 = pcall(RegisterHook,
-        "/Script/Pal.PalLevelObject_LockGimmickMiniGame:OnMiniGameComplete",
-        function(selfParam, paramParam)
-            SafeDo(function()
-                local param = paramParam
-                if param ~= nil and hasMethod(param, "get") then param = param:get() end
-                if not IsValidObj(param) then return end
-                local ok = SafeCall(function() return param.bMiniGameSuccess end)
-                Log(string.format("[mini-game] native completion (success=%s)",
-                        tostring(ok)))
-                if ok ~= true then
-                    Log("[mini-game] turning the fail into a win (flag only)")
-                    SafeDo(function() param.bMiniGameSuccess = true end)
-                end
-            end)
-        end)
-    -- a mini-game widget just appeared on screen: extra trigger that covers
-    -- pedestals whose F press is handled by a blueprint override
-    local widgetPaths = {
-        "/Game/Pal/Blueprint/UI/OneStroke/WBP_OneStrokeGame_ForDisplay.WBP_OneStrokeGame_ForDisplay_C",
-        "/Game/Pal/Blueprint/UI/Picking/WBP_PickingGame02_ForDisplay.WBP_PickingGame02_ForDisplay_C",
-        "/Game/Pal/Blueprint/UI/Salvage/WBP_SalvageGame_GaugeStopMiniGame.WBP_SalvageGame_GaugeStopMiniGame_C",
-    }
-    local hooked = 0
-    for _, p in ipairs(widgetPaths) do
-        local okW = pcall(RegisterHook, p .. ":Construct",
+local function mgStart(reason)
+    mgActive = true
+    mgSeq = 0
+    mgT0 = nowClock()
+    Log(string.format("[MG] === recording: %s - play the mini-game by hand ===", reason))
+end
+
+local WIDGET_CONSTRUCT_PATHS = {
+    "/Game/Pal/Blueprint/UI/OneStroke/WBP_OneStrokeGame_ForDisplay.WBP_OneStrokeGame_ForDisplay_C",
+    "/Game/Pal/Blueprint/UI/Picking/WBP_PickingGame02_ForDisplay.WBP_PickingGame02_ForDisplay_C",
+    "/Game/Pal/Blueprint/UI/Salvage/WBP_SalvageGame_GaugeStopMiniGame.WBP_SalvageGame_GaugeStopMiniGame_C",
+}
+
+local function registerMinigameObserver()
+    local attached, failed = 0, 0
+    local pendingWidgets = {}
+
+    -- post-only hooks: never touch params, never override returns
+    local function obs(path, fn)
+        local ok = pcall(RegisterHook, path,
             function() end,
-            function()
-                ExecuteWithDelay(CONFIG.MinigameWinDelayMs, function()
-                    SafeDo(autoWinOpenedMinigames)
-                end)
+            function(...)
+                local args = { ... }
+                SafeDo(function() fn(table.unpack(args)) end)
             end)
-        if okW then hooked = hooked + 1 end
+        if ok then attached = attached + 1 else failed = failed + 1 end
+        return ok
     end
-    Log(string.format("mini-game assist: %d widget hook(s) attached", hooked))
-    if ok1 then Log("mini-game assist hook attached (OnTriggerInteract)") end
-    if ok2 then Log("mini-game assist hook attached (OnMiniGameComplete)") end
+
+    -- the player presses F on the pedestal: a fresh recording starts here
+    obs("/Script/Pal.PalLevelObject_LockGimmickMiniGame:OnTriggerInteract",
+        function(selfParam)
+            mgStart("F pressed on the pedestal (" .. objClass(unwrapRef(selfParam)) .. ")")
+        end)
+
+    -- the gimmick completes - THE call that must run exactly once per tower
+    obs("/Script/Pal.PalLevelObject_LockGimmickMiniGame:OnMiniGameComplete",
+        function(selfParam, paramParam)
+            local p = unwrapRef(paramParam)
+            mgLog("gimmick.OnMiniGameComplete (param=" .. objClass(p)
+                .. ", bMiniGameSuccess="
+                .. tostring(SafeCall(function() return p.bMiniGameSuccess end)) .. ")")
+        end)
+
+    -- the native unlock chain on the base class
+    obs("/Script/Pal.PalLevelObject_LockGimmickBase:MarkAsCleared",
+        function(selfParam)
+            mgLog("gimmick.MarkAsCleared (" .. objClass(unwrapRef(selfParam)) .. ")")
+        end)
+    obs("/Script/Pal.PalLevelObject_LockGimmickBase:OnGimmickCleared",
+        function(selfParam)
+            mgLog("gimmick.OnGimmickCleared (" .. objClass(unwrapRef(selfParam)) .. ")")
+        end)
+    obs("/Script/Pal.PalLevelObject_LockGimmickBase:OnRep_bCleared",
+        function(selfParam)
+            mgLog("gimmick.OnRep_bCleared (" .. objClass(unwrapRef(selfParam)) .. ")")
+        end)
+
+    -- the overlay asks the SERVER to register the win (what the old assist
+    -- tried to imitate - now we get to see the real thing)
+    obs("/Script/Pal.PalNetworkPlayerComponent:RequestMiniGameSuccess_ToServer",
+        function(selfParam)
+            mgLog("network.RequestMiniGameSuccess_ToServer (self="
+                .. objClass(unwrapRef(selfParam)) .. ")")
+        end)
+
+    -- the reports delivered back to the HUD / widget
+    obs("/Script/Pal.PalHUDDispatchParameter_OneStrokeMiniGame:OnReceiveGameSuccess",
+        function() mgLog("param.OnReceiveGameSuccess (OneStroke: WIN reported)") end)
+    obs("/Script/Pal.PalHUDDispatchParameter_OneStrokeMiniGame:OnReceiveGameFail",
+        function() mgLog("param.OnReceiveGameFail (OneStroke: FAIL reported)") end)
+    obs("/Script/Pal.PalHUDDispatchParameter_PickingMiniGame:OnReceiveSuccessPicking",
+        function() mgLog("param.OnReceiveSuccessPicking (Picking: WIN reported)") end)
+    obs("/Script/Pal.PalHUDDispatchParameter_PickingMiniGame:OnReceiveFailPicking",
+        function() mgLog("param.OnReceiveFailPicking (Picking: FAIL reported)") end)
+    obs("/Script/Pal.PalHUDDispatchParameter_GaugeStopMiniGame:OnReceiveMiniGameResult",
+        function(selfParam, okParam)
+            mgLog("param.OnReceiveMiniGameResult (GaugeStop: result="
+                .. tostring(unwrapRef(okParam)) .. ")")
+        end)
+
+    -- the overlay lifecycle: pack dispatch -> UI push -> construct -> close
+    obs("/Script/Pal.PalMiniGamePackBase:CreateDispatchParameter",
+        function() mgLog("pack.CreateDispatchParameter (the game is opening a mini-game UI)") end)
+    obs("/Script/Pal.PalHUDInGame:PushWidgetStackableUI",
+        function(selfParam, classParam)
+            local c = unwrapRef(classParam)
+            local name = "<unknown>"
+            if c ~= nil then
+                name = SafeCall(function() return c:GetFullName() end)
+                       or SafeCall(function() return c:GetName() end)
+                       or objClass(c)
+            end
+            mgLog("hud.PushWidgetStackableUI -> " .. tostring(name))
+        end)
+    obs("/Script/Pal.PalUserWidgetStackableUI:Close",
+        function(selfParam)
+            local w = unwrapRef(selfParam)
+            local tag = isMinigameWidget(w) and "  *** THE MINI-GAME OVERLAY ***" or ""
+            mgLog("widget.Close (" .. objClass(w) .. ")" .. tag)
+        end)
+    obs("/Script/Pal.PalUserWidgetStackableUI:OnPreClose",
+        function(selfParam) mgLog("widget.OnPreClose (" .. objClass(unwrapRef(selfParam)) .. ")") end)
+    obs("/Script/Pal.PalUserWidgetStackableUI:OnClose",
+        function(selfParam) mgLog("widget.OnClose (" .. objClass(unwrapRef(selfParam)) .. ")") end)
+    obs("/Script/Pal.PalUserWidgetStackableUI:OnPostClose",
+        function(selfParam) mgLog("widget.OnPostClose (" .. objClass(unwrapRef(selfParam)) .. ")") end)
+
+    -- the overlay widget classes themselves. These are BLUEPRINT paths: they
+    -- can fail to register until the world (and its UI) is loaded, so any
+    -- that failed are retried on every world enter.
+    local function attachWidget(path)
+        local short = path:match("([^/]+)%.") or path
+        return obs(path .. ":Construct", function()
+            if not mgActive then mgStart("mini-game overlay appeared on screen") end
+            mgLog("overlay CONSTRUCT (" .. short .. ")")
+        end)
+    end
+    for _, p in ipairs(WIDGET_CONSTRUCT_PATHS) do
+        if not attachWidget(p) then pendingWidgets[#pendingWidgets + 1] = p end
+    end
+    retryWidgetHooks = function()
+        local left = {}
+        for _, p in ipairs(pendingWidgets) do
+            if not attachWidget(p) then left[#left + 1] = p end
+        end
+        pendingWidgets = left
+    end
+
+    Log(string.format("mini-game recorder: %d hook(s) attached, %d failed, %d widget path(s) pending",
+            attached, failed, #pendingWidgets))
 end
 
 -- ======================= world-enter cleanup (event) =======================
@@ -972,6 +989,11 @@ local function onWorldEnter()
     end)
     controllerCache = nil
     kismetLibCache = nil
+    -- a fresh world ends any recorder session; blueprint widget classes
+    -- that failed to register at boot usually load with the world - retry
+    mgActive = false
+    mgSeq = 0
+    SafeDo(retryWidgetHooks)
 end
 
 local function registerWorldEnterHook()
@@ -1212,10 +1234,10 @@ local function init()
         if towerUI.is_visible() then towerUI.close() end
     end)
     registerChatHook()
-    registerMinigameHooks()
+    registerMinigameObserver()
     registerWorldEnterHook()
 
-    Log(string.format("ready | F6 = panel | !th in chat | %s",
+    Log(string.format("ready | F6 = panel | !th in chat | mini-game: recorder (assist off) | %s",
             IsValidObj(getLocalCharacter()) and "in world" or "enter a world to start"))
 end
 
