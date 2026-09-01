@@ -37,6 +37,9 @@ local CONFIG = {
     ActionRange    = 20000.0,  -- units (~200 m): OPEN/LOOT allowed only this close (remote native
                                -- calls on streamed-out actors crash the game - use TP/AUTO instead)
     GimmickStepMs  = 1000,     -- pause between clearing multiple gimmicks of one tower
+    MiniGameOpenMs = 5000,     -- how long to wait for the mini-game HUD to open
+    FightStartMs   = 20000,    -- how long to wait for a pal fight to actually start
+    FightWinMs     = 4000,     -- how long to wait after the "win" before checking the wall
     SettleMs       = 600,      -- pause after landing before acting (let streaming settle)
     DirectRange    = 9000.0,   -- direct teleport if within this range, staged otherwise
     StagingZ       = 100000.0,
@@ -719,14 +722,14 @@ getTowerState = function(tw)
         wallUp = (SafeCall(function() return tw.barrier.bLocked end) == true)
     end
 
-    -- MarkAsCleared is only safe for destruction-type gimmicks; the others
-    -- (mini-game / pal fight) crash the game when cleared without their setup
+    -- every gimmick type is now cleared through its own native flow
+    -- (destruction -> MarkAsCleared, mini-game -> interact+win, fight -> win);
+    -- "manual" remains only for gimmicks the mod cannot touch at all
+    -- (no RootComponent: not spawned / streamed out)
     local manual = false
     for _, g in ipairs(tw.gimmicks) do
         if IsValidObj(g) and SafeCall(function() return g:IsCleared() end) ~= true then
-            local cls = getClassName(g) or ""
-            local rootOk = IsValidObj(SafeCall(function() return g.RootComponent end))
-            if cls:find("Destruction", 1, true) == nil or not rootOk then
+            if not IsValidObj(SafeCall(function() return g.RootComponent end)) then
                 manual = true
             end
         end
@@ -787,7 +790,7 @@ local function tryConsumeCooldown()
     return true
 end
 
-local function teleportToTower(tw, onDone)
+local function teleportToTower(tw, onDone, offsetOverride)
     local char = getLocalCharacter()
     if char == nil then notify("[TP] player not found") if onDone then onDone(false) end return end
     local src = getActorLoc(char)
@@ -800,8 +803,9 @@ local function teleportToTower(tw, onDone)
         len = math.sqrt(dx * dx + dy * dy)
         if len < 1 then dx, dy, len = 1, 0, 1 end
     end
-    local ox = tw.loc.X + dx / len * CONFIG.TeleportOffset
-    local oy = tw.loc.Y + dy / len * CONFIG.TeleportOffset
+    local off = offsetOverride or CONFIG.TeleportOffset
+    local ox = tw.loc.X + dx / len * off
+    local oy = tw.loc.Y + dy / len * off
     local yaw = math.deg(math.atan(tw.loc.X - ox, tw.loc.Y - oy))
 
     warpToRawCoords(ox, oy, tw.loc.Z, yaw, false, onDone)
@@ -829,6 +833,16 @@ local function towerInRange(tw)
     return dist2d(src.X, src.Y, tw.loc.X, tw.loc.Y) <= CONFIG.ActionRange
 end
 
+-- gimmick type by class name (drives HOW the gimmick is cleared natively)
+local function gimmickKind(g)
+    local cls = getClassName(g) or ""
+    if cls:find("Destruction", 1, true) ~= nil then return "ROCKS" end
+    if cls:find("MiniGame", 1, true) ~= nil then return "MINIGAME" end
+    if cls:find("PalFight", 1, true) ~= nil then return "PALFIGHT" end
+    if cls:find("Interact", 1, true) ~= nil then return "INTERACT" end
+    return "UNKNOWN"
+end
+
 local function clearGimmick(g)
     -- a streamed-out / not spawned actor has no root component: touching it
     -- natively crashes the game (NULL + small offset reads), so skip it
@@ -840,6 +854,195 @@ local function clearGimmick(g)
     Log("  step: MarkAsCleared() on " .. tostring(getClassName(g)))
     SafeDo(function() g:MarkAsCleared() end)
     return "direct"
+end
+
+-- close any open pal-fight widgets: the fight UI holds a WEAK pointer to the
+-- gimmick; if the gimmick is destroyed (world unload) while the widget stays,
+-- the game dereferences NULL + 0x338 (bUseLightOrb) on the next world load -
+-- that is exactly the crash on "exit to menu -> enter world"
+local function closeFightWidgets()
+    local ok, list = pcall(FindAllOf, "PalLockGimmickPalFightWidget")
+    if not (ok and type(list) == "table") then return end
+    for _, w in ipairs(list) do
+        if IsValidObj(w) then
+            SafeDo(function() w:FinishClose() end)
+            Log("  cleanup: closed a stale pal-fight widget")
+        end
+    end
+end
+
+-- ---- mini-game gimmick: replay what the player does, natively ----
+-- 1) OnTriggerInteract(player) - exactly what runs when the player presses F
+--    on the gimmick pedestal: the game opens the mini-game HUD and the gimmick
+--    stores its dispatch parameter (CurrentParameter);
+-- 2) the parameter's OnReceive*Success - exactly what the mini-game widget
+--    calls when the player WINS (sets bMiniGameSuccess = true);
+-- 3) gimmick:OnMiniGameComplete(parameter) - exactly what the HUD module calls
+--    afterwards: the gimmick runs its native success chain (wall, save).
+-- MarkAsCleared is never used here - that was the crash (0x10).
+local function clearMinigameGimmick(g, onDone)
+    local char = getLocalCharacter()
+    if char == nil then
+        Log("  step: no player - cannot start the mini-game")
+        return onDone()
+    end
+    Log("  step: OnTriggerInteract() - opening the mini-game natively")
+    SafeDo(function() g:OnTriggerInteract(char, 0) end)
+    local waited = 0
+    local function poll()
+        if not worldAlive() then Busy = false return onDone() end
+        local param = SafeCall(function() return g.CurrentParameter end)
+        if IsValidObj(param) then
+            Log("  step: mini-game opened - reporting the winning result")
+            local reported = false
+            if hasMethod(param, "OnReceiveGameSuccess") then        -- one-stroke puzzle
+                reported = SafeDo(function() param:OnReceiveGameSuccess() end)
+            elseif hasMethod(param, "OnReceiveSuccessPicking") then -- point-picking
+                reported = SafeDo(function() param:OnReceiveSuccessPicking() end)
+            elseif hasMethod(param, "OnReceiveMiniGameResult") then -- ring / gauge stop
+                reported = SafeDo(function() param:OnReceiveMiniGameResult(true) end)
+            end
+            if not reported then
+                -- parameter type not known: set the result flag directly
+                SafeDo(function() param.bMiniGameSuccess = true end)
+            end
+            SafeDo(function() g:OnMiniGameComplete(param) end)
+            return onDone()
+        end
+        waited = waited + 250
+        if waited >= CONFIG.MiniGameOpenMs then
+            Log("  step: mini-game did not open in time")
+            notify("[mini-game] did not open - press F on the pedestal and win it yourself")
+        end
+        if waited >= CONFIG.MiniGameOpenMs then return onDone() end
+        ExecuteWithDelay(250, poll)
+    end
+    ExecuteWithDelay(400, poll)
+end
+
+-- ---- pal-fight gimmick: let the fight start, then report every enemy dead ----
+-- The fight starts NATURALLY: the teleport lands inside the gimmick's trigger
+-- sphere (OnTriggerBeginOverlap). When all enemies die the gimmick's own logic
+-- switches GameState to Succeeded and the wall falls. We report each spawned
+-- enemy dead through the gimmick's native OnPalDead(FPalDeadInfo) - the same
+-- handler the game runs when an enemy actually dies. No MarkAsCleared.
+local function clearPalFightGimmick(g, onDone)
+    local char = getLocalCharacter()
+    if char == nil then
+        Log("  step: no player - cannot start the fight")
+        return onDone()
+    end
+    Log("  step: waiting for the fight to start (walk-in trigger)")
+    local waited = 0
+    local function collectEnemies()
+        local out = {}
+        local handles = SafeCall(function() return g.SpawnedHandles end)
+        if type(handles) == "table" then
+            local n = SafeCall(function() return #handles end) or 0
+            for i = 1, n do
+                local a = SafeCall(function()
+                    local h = handles[i]
+                    if IsValidObj(h) then return h:TryGetIndividualActor() end
+                    return nil
+                end)
+                if IsValidObj(a) then out[#out + 1] = a end
+            end
+        end
+        return out
+    end
+    local function pokeTrigger()
+        -- if the overlap did not fire (edge of the sphere), replay it natively
+        local sphere = SafeCall(function() return g.TriggerSphere end)
+        if not IsValidObj(sphere) then return end
+        Log("  step: OnTriggerBeginOverlap() - nudging the fight trigger")
+        SafeDo(function()
+            g:OnTriggerBeginOverlap(sphere, char, char.RootComponent, 0, false, {})
+        end)
+    end
+    local function killStep(enemies, idx)
+        if not worldAlive() then Busy = false return onDone() end
+        local e = enemies[idx]
+        if e == nil then
+            Log(string.format("  step: fight won (%d enemies reported dead)", #enemies))
+            ExecuteWithDelay(CONFIG.FightWinMs, function()
+                if not worldAlive() then Busy = false return onDone() end
+                closeFightWidgets()
+                local cleared = SafeCall(function() return g:IsCleared() end) == true
+                if not cleared then
+                    -- last resort: replay the Succeeded state transition
+                    Log("  step: OnGameStateChanged(Succeeded) fallback")
+                    SafeDo(function() g:OnGameStateChanged(2, 1) end)
+                end
+                onDone()
+            end)
+            return
+        end
+        local eloc = getActorLoc(e) or { X = 0, Y = 0, Z = 0 }
+        SafeDo(function()
+            g:OnPalDead({
+                LastDamage       = 1000000,
+                LastAttacker     = char,
+                SelfActor        = e,
+                BlowVelocity     = { X = 0, Y = 0, Z = 0 },
+                HitLocation      = { X = eloc.X, Y = eloc.Y, Z = eloc.Z },
+                SelfDestructWaza = 0,
+                DeadType         = 1, -- EPalDeadType::Attack
+            })
+        end)
+        ExecuteWithDelay(CONFIG.GimmickStepMs, function() killStep(enemies, idx + 1) end)
+    end
+    local function poll()
+        if not worldAlive() then Busy = false return onDone() end
+        local state = SafeCall(function() return g.GameState end)
+        if state == 1 then -- Active
+            local enemies = collectEnemies()
+            if #enemies > 0 then
+                Log(string.format("  step: fight active, %d enemy(ies) spawned", #enemies))
+                killStep(enemies, 1)
+                return
+            end
+        elseif state == 2 then -- already Succeeded
+            Log("  step: fight already won")
+            return onDone()
+        end
+        waited = waited + 500
+        if waited == 3000 then pokeTrigger() end
+        if waited >= CONFIG.FightStartMs then
+            Log("  step: fight did not start in time")
+            notify("[pal fight] did not start - win this one yourself")
+            return onDone()
+        end
+        ExecuteWithDelay(500, poll)
+    end
+    ExecuteWithDelay(800, poll)
+end
+
+-- ---- dispatch: clear ONE gimmick the way its type expects ----
+local function clearGimmickNative(g, onDone)
+    if not IsValidObj(SafeCall(function() return g.RootComponent end)) then
+        Log("  step: SKIP gimmick without RootComponent (not spawned / streamed out)")
+        return onDone()
+    end
+    local kind = gimmickKind(g)
+    if kind == "ROCKS" then
+        clearGimmick(g)                     -- MarkAsCleared - proven safe & saved
+        return onDone()
+    elseif kind == "MINIGAME" then
+        return clearMinigameGimmick(g, onDone)
+    elseif kind == "PALFIGHT" then
+        return clearPalFightGimmick(g, onDone)
+    elseif kind == "INTERACT" then
+        -- lever-style gimmick: interacting IS the clearing
+        local char = getLocalCharacter()
+        if char ~= nil then
+            Log("  step: EventOnTriggerInteract() (interact gimmick)")
+            SafeDo(function() g:EventOnTriggerInteract(char, 0) end)
+            SafeDo(function() g:OnTriggerInteract(char, 0) end)
+        end
+        return onDone()
+    end
+    Log("  step: unknown gimmick type - skipped")
+    return onDone()
 end
 
 local function openTowerInternal(tw, onDone)
@@ -854,26 +1057,11 @@ local function openTowerInternal(tw, onDone)
         if onDone then onDone() end
         return
     end
-    local todo, manual = {}, 0
+    local todo = {}
     for _, g in ipairs(tw.gimmicks) do
         if IsValidObj(g) and SafeCall(function() return g:IsCleared() end) ~= true then
-            local cls = getClassName(g) or ""
-            if cls:find("Destruction", 1, true) ~= nil then
-                todo[#todo + 1] = g
-            else
-                manual = manual + 1
-            end
+            todo[#todo + 1] = g
         end
-    end
-    if manual > 0 then
-        -- MarkAsCleared on mini-game / pal-fight gimmicks crashes the game
-        -- (their internals expect the running mini-game / spawned enemies),
-        -- so those towers are opened by hand - the mod only teleports you there
-        notify(string.format("[%s] opened by hand (mini-game / fight tower): " ..
-                "%d gimmick(s) need the real thing. Wall falls when YOU clear them.",
-                tw.name, manual))
-        if onDone then onDone() end
-        return
     end
     if #todo == 0 then
         Log(string.format("[%s] already cleared", tw.name))
@@ -902,8 +1090,9 @@ local function openTowerInternal(tw, onDone)
             end)
             return
         end
-        clearGimmick(g)
-        ExecuteWithDelay(CONFIG.GimmickStepMs, step)
+        clearGimmickNative(g, function()
+            ExecuteWithDelay(CONFIG.GimmickStepMs, step)
+        end)
     end
     step()
 end
@@ -990,6 +1179,22 @@ local function autoTower(tw, onDone)
     end
 
     notify(string.format("[AUTO] %s at (%.0f, %.0f)", tw.name, tw.loc.X, tw.loc.Y))
+    -- pal fights start from a trigger sphere on the gimmick: land INSIDE it
+    local off
+    for _, g in ipairs(tw.gimmicks) do
+        if IsValidObj(g) and gimmickKind(g) == "PALFIGHT" then
+            local r = SafeCall(function()
+                local s = g.TriggerSphere
+                if IsValidObj(s) then return tonumber(s.SphereRadius) or nil end
+                return nil
+            end)
+            if r ~= nil and r > 200 then
+                off = math.max(200, r * 0.5)
+                Log(string.format("  step: fight trigger radius %.0f - landing at %.0f", r, off))
+            end
+            break
+        end
+    end
     teleportToTower(tw, function()
         if not worldAlive() then
             Log("world unloaded - auto aborted")
@@ -1101,6 +1306,20 @@ local function openUI()
         return
     end
     scanTowers()
+    -- after a re-sort the row you were looking at can land on another page;
+    -- open the panel on the page of the tower you are standing at
+    do
+        local char = getLocalCharacter()
+        local src2 = char and getActorLoc(char) or nil
+        if src2 ~= nil and #Towers > 0 then
+            local best, bestD = 1, math.huge
+            for i, t in ipairs(Towers) do
+                local d = dist2d(t.loc.X, t.loc.Y, src2.X, src2.Y)
+                if d < bestD then best, bestD = i, d end
+            end
+            Page = math.floor((best - 1) / CONFIG.PageSize) + 1
+        end
+    end
     uiCtx = {
         getTowers  = function() return Towers end,
         getPage    = function() return Page end,
@@ -1154,6 +1373,7 @@ local function openUI()
             teleportToTower(tw, function(ok)
                 Busy = false
                 if ok then notify(string.format("[TP] %s (%.0f, %.0f)", tw.name, tw.loc.X, tw.loc.Y)) end
+                uiRefresh()
             end)
         end,
         onOpen = function(tw)
@@ -1179,7 +1399,7 @@ local function openUI()
             local st = getTowerState(tw)
             if #tw.gimmicks > 0 and gCleared < #tw.gimmicks then
                 if st.manual then
-                    notify(string.format("[%s] opened by hand (mini-game / fight tower) - loot may be unavailable until you do", tw.name))
+                    notify(string.format("[%s] some gimmicks are unreachable (streamed out) - loot may not react until you clear them", tw.name))
                 end
                 openTowerInternal(tw, function()
                     ExecuteWithDelay(CONFIG.ActionDelayMs, grab)
@@ -1307,6 +1527,28 @@ TowerHunter = {
     ui       = openUI,
 }
 
+-- tiny heartbeat: when the world unloads (exit to menu / world switch), tear
+-- down everything that still references dead actors. The stale pal-fight
+-- widget (weak pointer to a destroyed gimmick -> NULL + 0x338 read on the
+-- next world load) is exactly the "exit to menu -> crash on entering" bug.
+local watchdogCleaned = false
+local function watchdogTick()
+    ExecuteWithDelay(2000, watchdogTick)
+    if worldAlive() then
+        watchdogCleaned = false
+        return
+    end
+    if watchdogCleaned then return end
+    watchdogCleaned = true
+    Log("watchdog: world unloaded - closing UI and stale fight widgets")
+    SafeDo(function() if towerUI.is_visible() then towerUI.close() end end)
+    closeFightWidgets()
+    controllerCache = nil
+    kismetLibCache = nil
+    Tour.active = false
+    Busy = false
+end
+
 local function init()
     progressPath = pickFile(PROGRESS_FILE, "r") or pickFile(PROGRESS_FILE, "a")
     local loaded = loadProgress()
@@ -1321,6 +1563,7 @@ local function init()
         if towerUI.is_visible() then towerUI.close() end
     end)
     registerChatHook()
+    ExecuteWithDelay(2000, watchdogTick)
 
     Log(string.format("ready | F6 = panel | !th in chat | %s",
             IsValidObj(getLocalCharacter()) and "in world" or "enter a world to start"))
