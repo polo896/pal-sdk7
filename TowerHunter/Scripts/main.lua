@@ -5,16 +5,18 @@
 --  world. For each tower:
 --    [v] MARK - player's own "visited" checkbox (saved to a local file)
 --    TP      - teleport near the tower (staged, waits for terrain streaming)
---    OPEN    - clears the tower natively (mini-game success request /
---              MarkAsCleared), unlocks its fast travel point
---    LOOT    - collects the stele (ancient shrine) reward natively
---    AUTO    - teleport -> open -> loot, chained
---  Global: RESCAN / OPEN ALL / LOOT ALL / AUTO TOUR.
+--  Global: RESCAN / TP NEAREST / SORT / paging.
 --
---  Everything goes through the game's own request functions
---  (UPalNetworkPlayerComponent::Request*), so the server treats it exactly
---  as if the player did it by hand - world save flags, fast travel unlocks
---  and item grants behave normally.
+--  Mini-game pedestals: press F as usual - the mod hooks the game's own
+--  PalLevelObject_LockGimmickMiniGame:OnTriggerInteract (a pure event hook,
+--  no background polling) and completes the mini-game through the same
+--  native path a legitimate win takes (parameter -> OnMiniGameComplete),
+--  then closes the overlay exactly like ESC does. Fights and rocks are left
+--  to the player.
+--
+--  A world-enter event hook (OnInitializeLocalPlayer_BP) closes stale UI
+--  left over from the previous session - the crash source on
+--  "exit to menu -> enter world" (0x338).
 -- ============================================================================
 
 local MOD_TAG  = "[TowerHunter]"
@@ -28,10 +30,10 @@ local CONFIG = {
     ChatPrefix     = "!",
     TeleportOffset = 900.0,    -- units (~9 m) from tower center, so you don't spawn inside the mesh
     GroupRadius    = 6000.0,   -- units (~60 m): stele/barrier/fast-travel are linked to a gimmick within this radius
-    ClusterRadius  = 4000.0,   -- units (~40 m): gimmicks closer than this belong to the same tower
     PageSize       = 7,        -- tower rows per page
-    CooldownMs     = 400,      -- min pause between panel actions
-    WinDelayMs     = 500,      -- after you press F: let the mini-game open, then win it for you
+    ClusterRadius  = 4000.0,   -- units (~40 m): gimmicks closer than this belong to the same tower
+    CooldownMs     = 400,      -- min pause between UI actions
+    MinigameWinDelayMs = 400,  -- after the player presses F: let the mini-game open, then report the win
     DirectRange    = 9000.0,   -- direct teleport if within this range, staged otherwise
     StagingZ       = 100000.0,
     TraceTop       = 200000.0,
@@ -143,6 +145,8 @@ local function getLocalCharacter()
     return nil
 end
 
+-- UPalNetworkPlayerComponent - the same component the game uses for every
+-- player request (Transmitter.Player on the local PlayerController).
 local function notify(msg)
     Log(msg)
     local util, ctrl = palUtility(), getController()
@@ -481,14 +485,14 @@ local SortMode = 1   -- 1 = distance, 2 = type, 3 = status
 local SORT_LABELS = { "DIST", "TYPE", "STATUS" }
 local getTowerState  -- forward declaration (defined in the tower state section)
 
--- current state rank for status sorting: towers to open first,
--- then loot to grab, finished, marked-done last
+-- current state rank for status sorting: towers to open first, then loot
+-- to grab, finished, marked-done last
 local function statusRank(tw)
     local st = getTowerState(tw)
-    if st.done then return 3 end
-    if st.cleared == false then return 0 end
-    if not st.looted then return 1 end
-    return 2
+    if st.done then return 4 end
+    if st.cleared == false then return 1 end
+    if not st.looted then return 2 end
+    return 3
 end
 
 local function resortTowers()
@@ -656,13 +660,6 @@ local function scanTowers(preserveOrder)
     return #towers, #gims, #steles
 end
 
-local function findTowerByKey(key)
-    for _, tw in ipairs(Towers) do
-        if tw.key == key then return tw end
-    end
-    return nil
-end
-
 -- ============================== tower state ================================
 
 local function countCleared(tw)
@@ -751,7 +748,7 @@ local function tryConsumeCooldown()
     return true
 end
 
-local function teleportToTower(tw, onDone, offsetOverride)
+local function teleportToTower(tw, onDone)
     local char = getLocalCharacter()
     if char == nil then notify("[TP] player not found") if onDone then onDone(false) end return end
     local src = getActorLoc(char)
@@ -764,14 +761,14 @@ local function teleportToTower(tw, onDone, offsetOverride)
         len = math.sqrt(dx * dx + dy * dy)
         if len < 1 then dx, dy, len = 1, 0, 1 end
     end
-    local off = offsetOverride or CONFIG.TeleportOffset
-    local ox = tw.loc.X + dx / len * off
-    local oy = tw.loc.Y + dy / len * off
+    local ox = tw.loc.X + dx / len * CONFIG.TeleportOffset
+    local oy = tw.loc.Y + dy / len * CONFIG.TeleportOffset
     local yaw = math.deg(math.atan(tw.loc.X - ox, tw.loc.Y - oy))
 
     warpToRawCoords(ox, oy, tw.loc.Z, yaw, false, onDone)
 end
 
+-- ======================= stale widget cleanup ==============================
 -- mini-game overlay widgets live on the PERSISTENT game-instance UI stack:
 -- one left open survives the world unload and crashes the game on the next
 -- world load (stale references to dead tower actors). Close() is the game's
@@ -795,44 +792,32 @@ local function closeMinigameWidgets()
             if SafeDo(function() w:Close() end) then n = n + 1 end
         end
     end
-    if n > 0 then Log(string.format("cleanup: closed %d mini-game widget(s)", n)) end
+    if n > 0 then Log(string.format("  cleanup: closed %d mini-game widget(s)", n)) end
     return n
 end
 
--- the pal-fight widget holds a WEAK pointer to its gimmick; a stale one reads
--- bUseLightOrb (offset 0x338) through NULL on the next world load
+-- the pal-fight widget holds a WEAK pointer to its gimmick; left open it
+-- reads bUseLightOrb (offset 0x338) through NULL after the world unloads
 local function closeFightWidgets()
     local ok, list = pcall(FindAllOf, "PalLockGimmickPalFightWidget")
     if not (ok and type(list) == "table") then return end
     for _, w in ipairs(list) do
         if IsValidObj(w) then
             SafeDo(function() w:FinishClose() end)
-            Log("cleanup: closed a stale pal-fight widget")
+            Log("  cleanup: closed a stale pal-fight widget")
         end
     end
 end
 
--- the world can be torn down (exit to menu) while deferred steps are pending
-local function worldAlive()
-    return getLocalCharacter() ~= nil
-end
-
--- ======================= mini-game assist (event-driven) ===================
--- The mod never touches towers on its own. When YOU press F on a mini-game
--- pedestal, the game opens the mini-game - and the mod replays the player's
--- winning move through the exact native calls the widget itself uses:
---   parameter OnReceive*Success()  (what the widget calls when you win)
---   gimmick OnMiniGameComplete(param)  (what the HUD calls afterwards)
---   widget Close()  (what ESC does - nothing stays on screen)
--- Everything is hook-driven: zero background polling.
-
--- unwrap a RegisterHook argument (RemoteUnrealParam or plain value)
-local function hookArg(p)
-    if type(p) == "table" and hasMethod(p, "get") then
-        return SafeCall(function() return p:get() end) or p
-    end
-    return p
-end
+-- ======================= native mini-game assist (F) =======================
+-- The player presses F on a mini-game pedestal; the game calls
+-- PalLevelObject_LockGimmickMiniGame:OnTriggerInteract on the gimmick -
+-- that call IS our trigger (no background polling of any kind).
+-- We then replay what the mini-game widget does when the player WINS:
+--   param:OnReceive*Success()  -> bMiniGameSuccess = true
+--   gimmick:OnMiniGameComplete(param)  -> the native success chain
+--     (wall falls, state saved) - and the overlay is closed the way ESC
+--     closes it. MarkAsCleared / open / loot requests are never used.
 
 local recentWins = setmetatable({}, { __mode = "k" })   -- gimmick -> true
 
@@ -841,117 +826,146 @@ local function winMinigame(g, param)
     if recentWins[g] then return end
     if SafeCall(function() return g:IsCleared() end) == true then return end
     recentWins[g] = true
-    Log("[mini-game] auto-winning for you")
-    -- exactly what the mini-game widget calls when the player wins:
+    Log("[mini-game] won for you (native completion)")
     local reported = false
     if hasMethod(param, "OnReceiveGameSuccess") then        -- one-stroke puzzle
         reported = SafeDo(function() param:OnReceiveGameSuccess() end)
-    elseif hasMethod(param, "OnReceiveSuccessPicking") then -- point picking
+    elseif hasMethod(param, "OnReceiveSuccessPicking") then -- point-picking
         reported = SafeDo(function() param:OnReceiveSuccessPicking() end)
-    elseif hasMethod(param, "OnReceiveMiniGameResult") then -- gauge / ring stop
+    elseif hasMethod(param, "OnReceiveMiniGameResult") then -- ring / gauge stop
         reported = SafeDo(function() param:OnReceiveMiniGameResult(true) end)
     end
     if not reported then
         SafeDo(function() param.bMiniGameSuccess = true end)
     end
     SafeDo(function() g:OnMiniGameComplete(param) end)
-    -- the widget never saw the player "play", so close it like ESC does
     ExecuteWithDelay(300, function() closeMinigameWidgets() end)
 end
 
--- find a mini-game gimmick that is currently waiting for its result and win it
+local function winMinigameSoon(g, attempt)
+    attempt = attempt or 1
+    if not IsValidObj(g) then return end
+    ExecuteWithDelay(CONFIG.MinigameWinDelayMs, function()
+        if not IsValidObj(g) then return end
+        if SafeCall(function() return g:IsCleared() end) == true then return end
+        local param = SafeCall(function() return g.CurrentParameter end)
+        if param ~= nil and hasMethod(param, "get") then param = param:get() end
+        if IsValidObj(param) then
+            winMinigame(g, param)
+        elseif attempt < 3 then
+            winMinigameSoon(g, attempt + 1)   -- HUD dispatch still on its way
+        end
+    end)
+end
+
+-- fallback scan: a mini-game is waiting for its result right now - win it
+-- (used by the widget-Construct trigger, which has no gimmick reference)
 local function autoWinOpenedMinigames()
-    if not worldAlive() then return end
     local ok, list = pcall(FindAllOf, "PalLevelObject_LockGimmickMiniGame")
     if not (ok and type(list) == "table") then return end
     for _, g in ipairs(list) do
         if IsValidObj(g) and SafeCall(function() return g:IsCleared() end) ~= true then
             local param = SafeCall(function() return g.CurrentParameter end)
-            if IsValidObj(param) then
-                winMinigame(g, param)
-            end
+            if param ~= nil and hasMethod(param, "get") then param = param:get() end
+            if IsValidObj(param) then winMinigame(g, param) end
         end
     end
 end
 
-local function registerMinigameAssist()
-    -- HOOK 1: you pressed F on the pedestal (the gimmick's own interact event)
+local function registerMinigameHooks()
+    -- fires exactly when the player interacts with a mini-game gimmick
     local ok1 = pcall(RegisterHook,
         "/Script/Pal.PalLevelObject_LockGimmickMiniGame:OnTriggerInteract",
         function() end,
-        function()
-            -- the mini-game is opening right now - win it in a moment
-            ExecuteWithDelay(CONFIG.WinDelayMs, autoWinOpenedMinigames)
+        function(selfParam)
+            SafeDo(function()
+                local g = selfParam
+                if g ~= nil and hasMethod(g, "get") then g = g:get() end
+                if not IsValidObj(g) then return end
+                Log("[mini-game] F pressed - completing it natively")
+                winMinigameSoon(g)
+            end)
         end)
-    Log(ok1 and "mini-game assist: F hook attached" or "mini-game assist: F hook unavailable")
-
-    -- HOOK 2: the mini-game widget itself just appeared on screen (covers
-    -- gimmick classes whose F goes through a blueprint override)
+    -- safety net: whatever completes a mini-game (win OR fail) counts as a
+    -- win - report the native success before the gimmick processes it
+    local ok2 = pcall(RegisterHook,
+        "/Script/Pal.PalLevelObject_LockGimmickMiniGame:OnMiniGameComplete",
+        function(selfParam, paramParam)
+            SafeDo(function()
+                local param = paramParam
+                if param ~= nil and hasMethod(param, "get") then param = param:get() end
+                if not IsValidObj(param) then return end
+                if SafeCall(function() return param.bMiniGameSuccess end) == true then return end
+                Log("[mini-game] turning the result into a win")
+                if hasMethod(param, "OnReceiveGameSuccess") then
+                    SafeDo(function() param:OnReceiveGameSuccess() end)
+                elseif hasMethod(param, "OnReceiveSuccessPicking") then
+                    SafeDo(function() param:OnReceiveSuccessPicking() end)
+                elseif hasMethod(param, "OnReceiveMiniGameResult") then
+                    SafeDo(function() param:OnReceiveMiniGameResult(true) end)
+                else
+                    SafeDo(function() param.bMiniGameSuccess = true end)
+                end
+            end)
+        end)
+    -- a mini-game widget just appeared on screen: extra trigger that covers
+    -- pedestals whose F press is handled by a blueprint override
     local widgetPaths = {
-        "/Game/Pal/Blueprint/UI/OneStrorke/WBP_OneStrokeGame_ForDisplay.WBP_OneStrokeGame_ForDisplay_C",
         "/Game/Pal/Blueprint/UI/OneStroke/WBP_OneStrokeGame_ForDisplay.WBP_OneStrokeGame_ForDisplay_C",
         "/Game/Pal/Blueprint/UI/Picking/WBP_PickingGame02_ForDisplay.WBP_PickingGame02_ForDisplay_C",
         "/Game/Pal/Blueprint/UI/Salvage/WBP_SalvageGame_GaugeStopMiniGame.WBP_SalvageGame_GaugeStopMiniGame_C",
     }
     local hooked = 0
     for _, p in ipairs(widgetPaths) do
-        local ok = pcall(RegisterHook, p .. ":Construct",
+        local okW = pcall(RegisterHook, p .. ":Construct",
             function() end,
             function()
-                ExecuteWithDelay(CONFIG.WinDelayMs, autoWinOpenedMinigames)
+                ExecuteWithDelay(CONFIG.MinigameWinDelayMs, function()
+                    SafeDo(autoWinOpenedMinigames)
+                end)
             end)
-        if ok then hooked = hooked + 1 end
+        if okW then hooked = hooked + 1 end
     end
     Log(string.format("mini-game assist: %d widget hook(s) attached", hooked))
-
-    -- HOOK 3 (safety net): whatever finishes the mini-game - even a FAIL -
-    -- is turned into a win before the gimmick processes the result, so the
-    -- tower always opens once you have played it
-    local ok3 = pcall(RegisterHook,
-        "/Script/Pal.PalLevelObject_LockGimmickMiniGame:OnMiniGameComplete",
-        function(_selfParam, paramParam)
-            local param = hookArg(paramParam)
-            if IsValidObj(param) and SafeCall(function() return param.bMiniGameSuccess end) ~= true then
-                Log("[mini-game] turning your result into a win")
-                SafeDo(function()
-                    if hasMethod(param, "OnReceiveGameSuccess") then
-                        param:OnReceiveGameSuccess()
-                    elseif hasMethod(param, "OnReceiveSuccessPicking") then
-                        param:OnReceiveSuccessPicking()
-                    elseif hasMethod(param, "OnReceiveMiniGameResult") then
-                        param:OnReceiveMiniGameResult(true)
-                    else
-                        param.bMiniGameSuccess = true
-                    end
-                end)
-            end
-        end)
-    Log(ok3 and "mini-game assist: result hook attached" or "mini-game assist: result hook unavailable")
+    if ok1 then Log("mini-game assist hook attached (OnTriggerInteract)") end
+    if ok2 then Log("mini-game assist hook attached (OnMiniGameComplete)") end
 end
 
--- ======================= world-entry cleanup (event-driven) ================
--- A mini-game overlay left on screen survives the world unload (it lives on
--- the persistent game-instance UI stack) and crashes the game on the next
--- world load - the 0x338 bug. Instead of a background timer, the cleanup runs
--- exactly when a new player character spawns (= you entered a world).
-local function registerWorldEntryCleanup()
-    if type(NotifyOnNewObject) ~= "function" then
-        Log("WARNING: NotifyOnNewObject unavailable - close mini-games with ESC before exiting to menu")
-        return
-    end
-    local ok = pcall(NotifyOnNewObject, "/Script/Pal.PalPlayerCharacter", function()
-        SafeDo(function()
-            ExecuteWithDelay(500, function()
-                closeMinigameWidgets()
-                closeFightWidgets()
-                controllerCache = nil
-                kismetLibCache = nil
-                SafeDo(function() if towerUI.is_visible() then towerUI.close() end end)
+-- ======================= world-enter cleanup (event) =======================
+-- Stale widgets survive a world unload on the PERSISTENT UI stack and crash
+-- the next world load (0x338: a tower-actor field read through NULL).
+-- The world-enter event (OnInitializeLocalPlayer_BP) is our trigger - no
+-- background ticking.
+local function onWorldEnter()
+    Log("world entered - cleaning up stale UI")
+    SafeDo(function()
+        if towerUI.is_visible() then towerUI.close() end
+    end)
+    closeMinigameWidgets()
+    closeFightWidgets()
+    controllerCache = nil
+    kismetLibCache = nil
+end
+
+local function registerWorldEnterHook()
+    -- primary: the local player initializes (= a world was entered)
+    local ok = pcall(RegisterHook,
+        "/Script/Pal.PalPlayerController:OnInitializeLocalPlayer_BP",
+        function() end,
+        function() SafeDo(onWorldEnter) end)
+    if ok then Log("world-enter hook attached (OnInitializeLocalPlayer_BP)") end
+    -- secondary: the player character spawns (covers hitches where the
+    -- controller event fires before the stale widgets are safe to touch)
+    if type(NotifyOnNewObject) == "function" then
+        local okN = pcall(NotifyOnNewObject, "/Script/Pal.PalPlayerCharacter", function()
+            SafeDo(function()
+                ExecuteWithDelay(500, function() SafeDo(onWorldEnter) end)
             end)
         end)
-    end)
-    Log(ok and "world-entry cleanup attached" or "WARNING: world-entry cleanup unavailable")
+        if okN then Log("world-enter hook attached (PalPlayerCharacter spawn)") end
+    end
 end
+
 
 -- ================================== UI =====================================
 
@@ -1018,7 +1032,7 @@ local function openUI()
                 local st = getTowerState(tw)
                 local needOpen = #tw.gimmicks > 0 and st.cleared ~= true
                 local needLoot = #tw.steles > 0 and not st.looted
-                if (needOpen or needLoot) and not st.done then best = tw break end
+                if needOpen or needLoot then best = tw break end
             end
             if best == nil then best = Towers[1] end
             if best == nil then return notify("no towers found - press RESCAN") end
@@ -1029,8 +1043,8 @@ local function openUI()
             end)
         end,
         onHelp    = function()
-            notify("TP = teleport | MARK = your own checklist (saved) | press F on the tower " ..
-                   "and the mod wins the mini-game for you | !th help in chat")
+            notify("TP = teleport next to a tower | MARK = your own checklist (saved) | " ..
+                   "press F at a mini-game pedestal - the mod finishes it for you | !th help in chat")
         end,
         onPrev = function() Page = math.max(1, Page - 1) uiRefresh() end,
         onNext = function() Page = Page + 1 uiRefresh() end,
@@ -1092,7 +1106,7 @@ local function handleChatCommand(text)
         elseif sub == "stats" then
             notify(uiStats())
         elseif sub == "help" then
-            notify("!th - toggle panel | !th rescan | !th stats | press F on a tower and the mini-game is won for you")
+            notify("!th - toggle panel | !th rescan | !th stats")
         else
             openUI()
         end
@@ -1171,8 +1185,8 @@ local function init()
         if towerUI.is_visible() then towerUI.close() end
     end)
     registerChatHook()
-    registerMinigameAssist()
-    registerWorldEntryCleanup()
+    registerMinigameHooks()
+    registerWorldEnterHook()
 
     Log(string.format("ready | F6 = panel | !th in chat | %s",
             IsValidObj(getLocalCharacter()) and "in world" or "enter a world to start"))

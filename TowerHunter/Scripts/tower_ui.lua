@@ -487,7 +487,7 @@ local function renderAllContent()
         if ctx.onCycleSort then ctx.onCycleSort() end
     end, 60)
 
-    createGameButton(hostCanvas, surface, tree, "?", PAD + contentW - 46, actionsY + 8, 36, 34, function()
+    createGameButton(hostCanvas, surface, tree, "PRESS F AT A PEDESTAL TO WIN IT", PAD + 564, actionsY + 8, 270, 34, function()
         if ctx.onHelp then ctx.onHelp() end
     end, 60)
 
@@ -499,7 +499,7 @@ local function renderAllContent()
     if listBg then F.AnchorWidget(surface, listBg, PAD, listY, contentW, listH, 5) end
     F.DrawFrame(surface, tree, PAD, listY, contentW, listH, T.Divider)
 
-    local gTitle = F.CreateText(tree, "TOWERS  (press F on a tower - the mod wins the mini-game for you; fights and rocks are yours)", 12, T.TextPrimary, true, 0)
+    local gTitle = F.CreateText(tree, "TOWERS  (mini-games are replayed and fights are won natively; *MANUAL* = gimmick out of reach)", 12, T.TextPrimary, true, 0)
     if gTitle then F.AnchorWidget(surface, gTitle, PAD + 16, listY + 10, 640, 16, 7) end
 
     local towers, page, pageSize = ctx.getTowers(), ctx.getPage(), ctx.getPageSize()
@@ -547,9 +547,9 @@ local function renderAllContent()
         if locText then F.AnchorWidget(surface, locText, rowX + 14, cy + 30, 330, 14, 8) end
 
         local stateText = F.CreateText(tree, st.state, 10, pal.text, true, 0)
-        if stateText then F.AnchorWidget(surface, stateText, rowX + 350, cy + 8, 190, 40, 8) end
+        if stateText then F.AnchorWidget(surface, stateText, rowX + 350, cy + 8, 470, 40, 8) end
 
-        local bx = rowX + rowW - 190
+        local bx = rowX + rowW - 470
         createGameButton(hostCanvas, surface, tree, st.done and "[v] DONE" or "[ ] MARK", bx, cy + 11, 110, 30, function()
             if ctx.onToggleDone then ctx.onToggleDone(tw) end
         end, 60)
