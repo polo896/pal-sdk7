@@ -109,12 +109,13 @@ local S = {
     lastParamClass = nil,
     lastParamAt    = 0,
     lastScheduleAt = 0,     -- дедуп планирования победы
-    stats = { minigames = 0, autowins = 0, interacts = 0, rpc = 0 },
+    stats = { minigames = 0, autowins = 0, interacts = 0, rpc = 0, completes = 0 },
 }
 
 -- дедуп по ПОЛНОМУ ИМЕНИ объекта (identity userdata ненадёжен — обёртки каждый раз новые)
 local handledNames       = {}  -- "полное имя параметра" -> true (уже выигран)
 local gaugeResultNames   = {}  -- "полное имя параметра" -> true (модель рулетки прислала ответ)
+local completedNames     = {}  -- "полное имя параметра" -> true (OnMiniGameComplete прошёл)
 
 -- ------------------------------- утилиты -------------------------------
 local function Log(msg)  print(TAG .. " " .. tostring(msg) .. "\n") end
