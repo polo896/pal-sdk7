@@ -1,6 +1,14 @@
 -- ============================================================================================
--- MinigameAutoWin v0.1 — ТЕСТОВЫЙ мод (UE4SS Lua) для Palworld
+-- MinigameAutoWin v0.2 — ТЕСТОВЫЙ мод (UE4SS Lua) для Palworld
 -- Авто-победа мини-игр: Отмычка (Picking) / Рулетка-датчик (GaugeStop) / Росчерк (OneStroke)
+--
+-- ИСТОРИЯ ВЕРСИЙ:
+--   v0.2 — FIX: объекты из колбэков хуков/NotifyOnNewObject приходят обёрнутыми в
+--          RemoteUnrealParam — теперь разворачиваются через :get() (паттерн PalWarp).
+--          Классификация параметра — 4 уровня: GetClass → имя объекта → проба членов →
+--          проба вызова. Дедуп победы — по полному имени объекта (не по identity).
+--          Добавлена диагностика в лог, если параметр не опознан.
+--   v0.1 — первая версия.
 --
 -- ПРИНЦИП (без паков, без правки ассетов, только свой Lua-код):
 --   При старте мини-игры игра создаёт HUD-dispatch-параметр (наследники
@@ -48,6 +56,10 @@ local Config = {
     GaugeFallback   = true,
     GaugeFallbackMs = 2500,
 
+    -- Если класс параметра не опознался — пробуем вызвать функции завершения по очереди
+    -- (каждая существует только у своего класса; несуществующая даёт ошибку Lua в pcall)
+    ProbeWinWhenUnknown = true,
+
     TryCloseUI      = true,      -- если через 900 мс после победы виджет ещё висит — попробовать Close()
     LogVerbose      = true,      -- подробные логи (модель рулетки, процессор, пак)
 }
@@ -60,20 +72,42 @@ if rawget(_G, "MINIGAMEAUTOWIN_ACTIVE") then
 end
 rawset(_G, "MINIGAMEAUTOWIN_ACTIVE", true)
 
+-- ------------------------------- наши 3 игры -------------------------------
+local GAMES = {
+    ["PalHUDDispatchParameter_PickingMiniGame"] = {
+        key = "picking", title = "Отмычка (Picking)",
+        widget = "WBP_PickingGame02_ForDisplay_C",
+    },
+    ["PalHUDDispatchParameter_OneStrokeMiniGame"] = {
+        key = "onestroke", title = "Росчерк (OneStroke)",
+        widget = "WBP_OneStrokeGame_ForDisplay_C",
+    },
+    ["PalHUDDispatchParameter_GaugeStopMiniGame"] = {
+        key = "gauge", title = "Рулетка (GaugeStop)",
+        widget = "WBP_SalvageGame_GaugeStopMiniGame_C",
+    },
+}
+
+local function GameByKey(key)
+    for _, g in pairs(GAMES) do
+        if g.key == key then return g end
+    end
+    return nil
+end
+
 -- ------------------------------- состояние -------------------------------
 local S = {
     mode           = Config.Mode,
-    lastParam      = nil,   -- последний dispatch-параметр мини-игры
+    lastParam      = nil,   -- последний dispatch-параметр мини-игры (развёрнутый)
     lastParamClass = nil,
     lastParamAt    = 0,
     lastScheduleAt = 0,     -- дедуп планирования победы
     stats = { minigames = 0, autowins = 0, interacts = 0, rpc = 0 },
 }
 
-local handledParams   = {}  -- param -> true (уже выигран этим модом)
-local gaugeResultSeen = {}  -- param -> true (модель рулетки прислала ответ)
-setmetatable(handledParams,   { __mode = "k" })
-setmetatable(gaugeResultSeen, { __mode = "k" })
+-- дедуп по ПОЛНОМУ ИМЕНИ объекта (identity userdata ненадёжен — обёртки каждый раз новые)
+local handledNames       = {}  -- "полное имя параметра" -> true (уже выигран)
+local gaugeResultNames   = {}  -- "полное имя параметра" -> true (модель рулетки прислала ответ)
 
 -- ------------------------------- утилиты -------------------------------
 local function Log(msg)  print(TAG .. " " .. tostring(msg) .. "\n") end
@@ -90,13 +124,34 @@ local function nowMs()
     return (ok and c) and math.floor(c * 1000) or 0
 end
 
+-- есть ли у объекта метод (точный паттерн из PalWarp)
+local function hasMethod(obj, name)
+    local res = false
+    pcall(function() res = (type(obj[name]) == "function") end)
+    return res
+end
+
+-- Разворачивание RemoteUnrealParam → настоящий UObject/значение.
+-- В колбэках хуков и NotifyOnNewObject объекты приходят обёрнутыми; у обёртки есть :get().
+local function Unwrap(v)
+    if type(v) == "userdata" or type(v) == "table" then
+        if hasMethod(v, "get") then
+            local ok, r = pcall(function() return v:get() end)
+            if ok and r ~= nil then return r end
+        end
+    end
+    return v
+end
+
 local function IsValidObj(o)
+    o = Unwrap(o)
     if o == nil then return false end
     local ok, v = pcall(function() return o:IsValid() end)
     return ok and v == true
 end
 
 local function ObjName(o)
+    o = Unwrap(o)
     if o == nil then return "nil" end
     local ok, n = pcall(function() return o:GetFullName() end)
     if ok and type(n) == "string" then return n end
@@ -106,15 +161,28 @@ local function ObjName(o)
 end
 
 local function ClassName(o)
+    o = Unwrap(o)
     if o == nil then return nil end
     local ok, cls = pcall(function() return o:GetClass() end)
-    if not ok or cls == nil then return nil end
-    local ok2, n = pcall(function() return cls:GetName() end)
-    if ok2 and type(n) == "string" then return n end
+    if ok and cls ~= nil then
+        cls = Unwrap(cls)
+        local ok2, n = pcall(function() return cls:GetName() end)
+        if ok2 and type(n) == "string" then return n end
+        local ok3, f = pcall(function() return cls:GetFullName() end)
+        if ok3 and type(f) == "string" then return f:match("([%w_]+)$") end
+    end
     return nil
 end
 
+local function SafeText(v)
+    v = Unwrap(v)
+    if v == nil then return "nil" end
+    local ok, s = pcall(tostring, v)
+    return ok and s or "?"
+end
+
 local function FmtArg(a)
+    a = Unwrap(a)
     if a == nil then return "nil" end
     if type(a) == "userdata" then return "<" .. ObjName(a) .. ">" end
     local ok, s = pcall(tostring, a)
@@ -137,26 +205,71 @@ local function ScheduleInGameThread(delayMs, label, fn)
     end)
 end
 
--- ------------------------------- наши 3 игры -------------------------------
-local GAMES = {
-    ["PalHUDDispatchParameter_PickingMiniGame"] = {
-        key = "picking", title = "Отмычка (Picking)",
-        widget = "WBP_PickingGame02_ForDisplay_C",
-    },
-    ["PalHUDDispatchParameter_OneStrokeMiniGame"] = {
-        key = "onestroke", title = "Росчерк (OneStroke)",
-        widget = "WBP_OneStrokeGame_ForDisplay_C",
-    },
-    ["PalHUDDispatchParameter_GaugeStopMiniGame"] = {
-        key = "gauge", title = "Рулетка (GaugeStop)",
-        widget = "WBP_SalvageGame_GaugeStopMiniGame_C",
-    },
-}
+-- есть ли у объекта член с таким именем (без вызова)
+local function ProbeMember(o, name)
+    o = Unwrap(o)
+    if o == nil then return false end
+    local res = false
+    pcall(function() res = (o[name] ~= nil) end)
+    return res
+end
+
+-- ------------------------------- классификация параметра (4 уровня) -------------------------------
+-- 1) GetClass():GetName()  2) имя объекта (инстанс назван как класс)  3) проба членов  4) проба вызова (в ExecuteWinByProbe)
+local function ClassifyParam(rawParam)
+    local param = Unwrap(rawParam)
+    if not IsValidObj(param) then return nil, param end
+
+    -- уровень 1: честный класс
+    local cls = ClassName(param)
+    if cls and GAMES[cls] then return cls, param end
+
+    -- уровень 2: имя объекта содержит имя класса (инстанс = "ИмяКласса_N")
+    local okF, fn = pcall(function() return param:GetFullName() end)
+    if okF and type(fn) == "string" then
+        local own = fn:match("([%w_]+)$") or fn
+        for cname in pairs(GAMES) do
+            if own:find(cname, 1, true) then return cname, param end
+        end
+    end
+
+    -- уровень 3: уникальные члены (функции завершения существуют только у своего класса)
+    if ProbeMember(param, "OnReceiveSuccessPicking") then return "PalHUDDispatchParameter_PickingMiniGame", param end
+    if ProbeMember(param, "OnReceiveGameSuccess")    then return "PalHUDDispatchParameter_OneStrokeMiniGame", param end
+    if ProbeMember(param, "OnReceiveMiniGameResult") then return "PalHUDDispatchParameter_GaugeStopMiniGame", param end
+
+    return cls, param
+end
+
+local diagDone = false
+local function DumpParamDiagnostics(param)
+    if diagDone then return end
+    diagDone = true
+    Log("ДИАГНОСТИКА параметра (один раз за сессию; пришли этот блок в чат):")
+    local function probe(label, fn)
+        local ok, v = pcall(fn)
+        local shown
+        if not ok then shown = "ОШИБКА"
+        elseif type(v) == "string" then shown = v
+        else shown = type(v) end
+        Logf("   %-32s => %s", label, shown)
+    end
+    probe("param имеет :get()",        function() return hasMethod(param, "get") and "да (обёртка)" or "нет" end)
+    probe("param:GetClass():GetName()", function() return (Unwrap(param)):GetClass():GetName() end)
+    probe("param:GetName()",           function() return (Unwrap(param)):GetName() end)
+    probe("param:GetFullName()",       function() return (Unwrap(param)):GetFullName() end)
+    probe("param:IsValid()",           function() return tostring((Unwrap(param)):IsValid()) end)
+    probe("param[OnReceiveSuccessPicking]", function() return tostring((Unwrap(param))["OnReceiveSuccessPicking"]) end)
+    probe("param[OnReceiveGameSuccess]",    function() return tostring((Unwrap(param))["OnReceiveGameSuccess"]) end)
+    probe("param[OnReceiveMiniGameResult]", function() return tostring((Unwrap(param))["OnReceiveMiniGameResult"]) end)
+    probe("param.MiniGamePack",        function() return tostring((Unwrap(param)).MiniGamePack) end)
+end
 
 -- ------------------------------- победа -------------------------------
 local ScheduleGaugeFallback -- forward declaration
 
-local function ExecuteWin(g, param)
+local function ExecuteWin(g, rawParam)
+    local param = Unwrap(rawParam)
     if g.key == "picking" then
         param:OnReceiveSuccessPicking()
         return "param:OnReceiveSuccessPicking()"
@@ -165,7 +278,7 @@ local function ExecuteWin(g, param)
         return "param:OnReceiveGameSuccess()"
     elseif g.key == "gauge" then
         local model = nil
-        pcall(function() model = param.Model end)
+        pcall(function() model = Unwrap(param.Model) end)
         if Config.GaugeNatural and IsValidObj(model) then
             model:SendResult(true) -- ровно то, что делает виджет при удачной остановке
             if Config.GaugeFallback then ScheduleGaugeFallback(param) end
@@ -177,17 +290,51 @@ local function ExecuteWin(g, param)
     return nil
 end
 
-ScheduleGaugeFallback = function(param)
+ScheduleGaugeFallback = function(rawParam)
     local ms = Config.GaugeFallbackMs
     ScheduleInGameThread(ms, "gauge-fallback", function()
+        local param = Unwrap(rawParam)
         if not IsValidObj(param) then return end
-        if gaugeResultSeen[param] then
+        if gaugeResultNames[ObjName(param)] then
             Log("рулетка: ответ модели получен — fallback не нужен")
             return
         end
         Log("рулетка: ответа от SendResult нет за " .. ms .. " мс → OnReceiveMiniGameResult(true) напрямую")
         pcall(function() param:OnReceiveMiniGameResult(true) end)
     end)
+end
+
+-- последний рубеж: класс не опознан — пробуем функции завершения по очереди.
+-- Несуществующая у данного класса функция даёт ошибку Lua (ловится pcall), нативно ничего не зовётся.
+local function ExecuteWinByProbe(rawParam)
+    local param = Unwrap(rawParam)
+    local attempts = {}
+    if Config.Games.picking then
+        attempts[#attempts + 1] = { "picking", function()
+            param:OnReceiveSuccessPicking()
+            return "probe: OnReceiveSuccessPicking()"
+        end }
+    end
+    if Config.Games.onestroke then
+        attempts[#attempts + 1] = { "onestroke", function()
+            param:OnReceiveGameSuccess()
+            return "probe: OnReceiveGameSuccess()"
+        end }
+    end
+    if Config.Games.gauge then
+        attempts[#attempts + 1] = { "gauge", function()
+            return ExecuteWin(GameByKey("gauge"), param)
+        end }
+    end
+    for _, a in ipairs(attempts) do
+        local ok, how = pcall(a[2])
+        if ok then
+            local g = GameByKey(a[1])
+            -- (для рулетки fallback уже запланирован внутри ExecuteWin при натуральном пути)
+            return a[1], how, g
+        end
+    end
+    return nil, nil, nil
 end
 
 -- ------------------------------- UI после победы -------------------------------
@@ -208,6 +355,7 @@ local function ScheduleCloseCheck(g)
             Log("UI: виджет " .. g.widget .. " не найден — игра закрыла сама ОК")
             return
         end
+        w = Unwrap(w)
         local vis, how = WidgetVisible(w)
         if vis == false then
             Log("UI: виджет скрыт (" .. tostring(how) .. ") — игра закрыла сама ОК")
@@ -242,26 +390,40 @@ local function TryWinNow(sourceDesc, resolveParam)
             return
         end
         local param = nil
-        SafeCall("resolve-param", function() param = resolveParam() end)
+        SafeCall("resolve-param", function() param = Unwrap(resolveParam()) end)
         if not IsValidObj(param) then
             Log("параметр мини-игры не найден/мертв — авто-победа отменена (погоняй observe и пришли лог)")
             return
         end
-        if handledParams[param] then
+        local name = ObjName(param)
+        if handledNames[name] then
             Log("этот параметр уже выигран — пропуск (двойной триггер, это нормально)")
             return
         end
-        local cls = ClassName(param)
+        local cls, p2 = ClassifyParam(param)
+        param = p2
         local g = cls and GAMES[cls] or nil
         if not g then
-            Log("параметр не нашей игры: " .. tostring(cls) .. " — пропуск")
+            -- класс не опознан — последний рубеж: пробуем по очереди
+            if Config.ProbeWinWhenUnknown then
+                local key, how, gg = ExecuteWinByProbe(param)
+                if key then
+                    handledNames[name] = true
+                    S.stats.autowins = S.stats.autowins + 1
+                    Logf(">>> АВТО-ПОБЕДА (probe, класс не опознан): %s через %s", key, tostring(how))
+                    if gg then ScheduleCloseCheck(gg) end
+                    return
+                end
+            end
+            Log("параметр не опознан (" .. name .. ") — победа не дёргана")
+            DumpParamDiagnostics(param)
             return
         end
         if not Config.Games[g.key] then
             Log(g.title .. " выключена в конфиге (включить: mgaw " .. g.key .. " on)")
             return
         end
-        handledParams[param] = true
+        handledNames[name] = true
         local how = nil
         local ok = SafeCall("win:" .. g.key, function() how = ExecuteWin(g, param) end)
         if ok then
@@ -273,40 +435,46 @@ local function TryWinNow(sourceDesc, resolveParam)
 end
 
 -- ------------------------------- детекторы старта -------------------------------
-local function OnNewParam(param)
+local function OnNewParam(rawParam)
     SafeCall("on-new-param", function()
-        -- защита от Default__-объектов (CDO), если класс сконструировался уже после загрузки мода
+        local param = Unwrap(rawParam)
+        if not IsValidObj(param) then return end
+
+        -- защита от Default__-объектов (CDO)
         local full = ObjName(param)
         if full:find("Default__", 1, true) then return end
-        local cls = ClassName(param) or "?"
-        S.lastParam, S.lastParamClass, S.lastParamAt = param, cls, nowMs()
+
+        local cls, p2 = ClassifyParam(param)
+        param = p2
+        S.lastParam, S.lastParamClass, S.lastParamAt = param, cls or "?", nowMs()
         S.stats.minigames = S.stats.minigames + 1
 
-        local packName = "нет"
-        pcall(function()
-            local pack = param.MiniGamePack
-            if IsValidObj(pack) then packName = ClassName(pack) .. " (" .. ObjName(pack) .. ")" end
-        end)
-
-        local g = GAMES[cls]
-        Logf("-- мини-игра началась: %s | pack: %s", cls, packName)
+        local g = cls and GAMES[cls] or nil
+        Logf("-- мини-игра началась: %s | объект: %s", tostring(cls), full)
 
         if g and Config.LogVerbose then
             if g.key == "gauge" then
                 pcall(function()
-                    local m = param.Model
+                    local m = Unwrap(param.Model)
                     if IsValidObj(m) then
                         Logf("   модель рулетки: Start=%s End=%s Range=%s CursorSpeed=%s",
-                            tostring(m.GaugeStart), tostring(m.GaugeEnd),
-                            tostring(m.GaugeRange), tostring(m.CursorSpeed))
+                            SafeText(m.GaugeStart), SafeText(m.GaugeEnd),
+                            SafeText(m.GaugeRange), SafeText(m.CursorSpeed))
                     else
                         Log("   модель рулетки: param.Model пуст")
                     end
                 end)
             else
                 pcall(function()
-                    local p = param.Processor
-                    if IsValidObj(p) then Log("   процессор: " .. ClassName(p) .. " (" .. ObjName(p) .. ")") end
+                    local p = Unwrap(param.Processor)
+                    if IsValidObj(p) then
+                        local pk = "нет"
+                        pcall(function()
+                            local pack = Unwrap(param.MiniGamePack)
+                            if IsValidObj(pack) then pk = ObjName(pack) end
+                        end)
+                        Log("   процессор: " .. ObjName(p) .. " | pack: " .. pk)
+                    end
                 end)
             end
         end
@@ -314,7 +482,8 @@ local function OnNewParam(param)
         if g then
             TryWinNow("notify", function() return param end)
         else
-            Log("   -> вне наших 3 игр (только наблюдение)")
+            Log("   -> класс не опознан (только наблюдение; в autowin сработает проба вызова)")
+            DumpParamDiagnostics(param)
         end
     end)
 end
@@ -331,7 +500,10 @@ local function OnInteract(levelObj)
         -- 2) текущий параметр этого замка
         if IsValidObj(levelObj) then
             local ok, p = pcall(function() return levelObj.CurrentParameter end)
-            if ok and IsValidObj(p) then return p end
+            if ok then
+                p = Unwrap(p)
+                if IsValidObj(p) then return p end
+            end
         end
         -- 3) последний известный параметр
         if IsValidObj(S.lastParam) then return S.lastParam end
@@ -353,8 +525,12 @@ local HOOKS = {
 
 local hookRegistered = {}
 
-local function OnHook(d, context, ...)
-    local args = { ... }
+local function OnHook(d, rawContext, ...)
+    -- объекты из хука приходят обёрнутыми в RemoteUnrealParam — разворачиваем
+    local context = Unwrap(rawContext)
+    local args = {}
+    for i = 1, select("#", ...) do args[i] = Unwrap(select(i, ...)) end
+
     SafeCall("hook:" .. d.label, function()
         if d.interact then
             Logf("[hook] %s | замок=%s", d.label, ObjName(context))
@@ -363,15 +539,15 @@ local function OnHook(d, context, ...)
         end
         if d.label == "RPC: успех на сервер" then S.stats.rpc = S.stats.rpc + 1 end
         if d.label == "РУЛЕТКА: результат" and args[1] == true and IsValidObj(context) then
-            gaugeResultSeen[context] = true
+            gaugeResultNames[ObjName(context)] = true
         end
         local extra = ""
         for i = 1, math.min(#args, 3) do
             extra = extra .. " arg" .. i .. "=" .. FmtArg(args[i])
         end
         if d.label == "ЗАМОК: OnMiniGameComplete" and IsValidObj(args[1]) then
-            local okS, bS = pcall(function() return args[1].bMiniGameSuccess end)
-            if okS then extra = extra .. " bMiniGameSuccess=" .. tostring(bS) end
+            local okS, bS = pcall(function() return (Unwrap(args[1])).bMiniGameSuccess end)
+            if okS then extra = extra .. " bMiniGameSuccess=" .. SafeText(bS) end
         end
         Logf("[hook] %s | self=%s%s", d.label, ObjName(context), extra)
     end)
@@ -406,24 +582,40 @@ local function ManualWin()
         Log("mgaw win: параметра ещё нет — сначала открой мини-игру")
         return
     end
-    local param = S.lastParam
-    local cls = ClassName(param) or "?"
-    local g = GAMES[cls]
-    if not g then
-        Log("mgaw win: последний параметр не нашей игры: " .. cls)
-        return
-    end
-    if handledParams[param] then
+    local param = Unwrap(S.lastParam)
+    local name = ObjName(param)
+    if handledNames[name] then
         Log("mgaw win: этот параметр уже выигран")
         return
     end
-    handledParams[param] = true
+    local cls, p2 = ClassifyParam(param)
+    param = p2
+    local g = cls and GAMES[cls] or nil
     local how = nil
-    local ok = SafeCall("manual-win", function() how = ExecuteWin(g, param) end)
+    if g and not Config.Games[g.key] then
+        Log("mgaw win: " .. g.title .. " выключена в конфиге — всё равно дёргаю (ручной режим)")
+    end
+    local ok
+    if g then
+        ok = SafeCall("manual-win", function() how = ExecuteWin(g, param) end)
+    else
+        local key
+        ok, key, how = true, nil, nil
+        SafeCall("manual-win-probe", function()
+            key, how, g = ExecuteWinByProbe(param)
+        end)
+        if not key then
+            Log("mgaw win: параметр не опознан и пробы не сработали")
+            DumpParamDiagnostics(param)
+            return
+        end
+        Log("mgaw win: класс не опознан, сработала проба: " .. tostring(key))
+    end
     if ok then
+        handledNames[name] = true
         S.stats.autowins = S.stats.autowins + 1
-        Logf(">>> РУЧНАЯ ПОБЕДА (%s) через %s", g.title, tostring(how))
-        ScheduleCloseCheck(g)
+        Logf(">>> РУЧНАЯ ПОБЕДА через %s", tostring(how))
+        if g then ScheduleCloseCheck(g) end
     end
 end
 
@@ -519,7 +711,7 @@ local function TryInit()
 end
 
 -- ------------------------------- старт -------------------------------
-Log("=== MinigameAutoWin v0.1 (тест) загружен ===")
+Log("=== MinigameAutoWin v0.2 (тест) загружен ===")
 Logf("режим: %s | задержка: %d мс | игры: picking/gauge/onestroke = %s/%s/%s",
     tostring(S.mode), Config.DelayMs,
     tostring(Config.Games.picking), tostring(Config.Games.gauge), tostring(Config.Games.onestroke))
