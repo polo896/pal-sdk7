@@ -66,28 +66,36 @@ Wwise и без полного Visual Studio 2022 IDE**.
 ## Пререквизиты — минимум мусора
 
 - **UE 5.1** — уже есть.
-- **Компилятор MSVC v143 (14.38)** — единственное, что реально нужно докачать.
+- **Компилятор MSVC v143 (14.39)** — единственное, что реально нужно докачать.
   Два способа, выбери один:
 
   **Способ А — если стоит Visual Studio 2026 (легче, без нового продукта).**
   Visual Studio Installer → строка VS 2026 → *Modify* → вкладка *Individual
   components* → в поиске набери `v143` → отметь
-  **«MSVC v143 - VS 2022 C++ x64/x86 build tools (v14.38-17.8)»** → Modify.
+  **«MSVC v143 - VS 2022 C++ x64/x86 build tools (v14.39-17.9)»**
+  (может называться «MSVC v143 - инструменты сборки VS 2022 С++ х64/х86
+  (v14.39-17.9)»; пометка «не поддерживается/Out of support» — не страшна,
+  это значит лишь, что Microsoft его больше не патчит).
   Это ~1–2 ГБ внутри уже установленной 2026: компилятор кладётся в
-  `C:\Program Files\Microsoft Visual Studio\18\<edition>\VC\Tools\MSVC\14.38.33130`,
-  отдельный продукт не появляется, удаляется снятием галочки. Нативный тулчейн
-  2026 (v145) движком 5.1 не принимается, поэтому пиновать будем именно v143
-  через BuildConfiguration.xml (см. ниже).
-  Важно: нужен **ровно v14.38-17.8**. Если инсталлятор 2026 предложит только
-  другие v143 (например v14.44) — они НЕ подойдут: движок 5.1 принимает
-  максимум 14.38 (проверка в `WindowsPlatformCompilerSetup.h`).
+  `C:\Program Files\Microsoft Visual Studio\18\<edition>\VC\Tools\MSVC\14.39.33519`,
+  отдельный продукт не появляется, удаляется снятием галочки.
+
+  Почему именно v14.39: компонента v14.38-17.8 (рекомендация вики кита) в
+  каталоге VS 2026 **нет** — Microsoft её выпилил. Порог в исходниках движка
+  5.1 (`WindowsPlatformCompilerSetup.h`): `_MSC_VER > 1939` → значит 14.39 —
+  максимум, который движок 5.1 принимает молча (14.40+ печатает безобидное
+  сообщение, v145 из 2026 ломается на новом конформантном препроцессоре —
+  ошибки C4668/C4067 в `ConcurrentLinearAllocator.h`). Брать надо именно
+  «build tools x64/x86» — НЕ ARM и НЕ «Spectre-mitigated libs».
+  Запасной вариант, если с 14.39 что-то пойдёт не так: v14.35-17.5
+  (пин 14.35.32215).
 
   **Способ Б — standalone «Build Tools for Visual Studio 2022»** (~3–5 ГБ,
   отдельный продукт, живёт рядом с 2026, удаляется штатно). Качается с
   [visualstudio.microsoft.com/downloads](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022)
   (внизу страницы, «Build Tools for Visual Studio 2022»). В Installer →
   *Individual components*: **MSVC v143 — VS 2022 C++ x64/x86 build tools
-  (v14.38-17.8)** и **Windows 10/11 SDK**.
+  (любой v143, лучше v14.39-17.9)** и **Windows 10/11 SDK**.
 
   Если в логе сборки появится ругань на Windows SDK — добавь компонент
   «Windows 10 SDK (10.0.19041.0)» тем же способом.
@@ -96,20 +104,24 @@ Wwise и без полного Visual Studio 2022 IDE**.
 ### BuildConfiguration.xml
 
 Создай файл `%APPDATA%\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml`
-(проверенная сообществом кита версия — именно она чинит «Pal could not be compiled»):
+(пинует тулчейн MSVC к установленной версии v143 — без него UBT возьмёт
+новейший v145 из 2026 и сборка упадёт):
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <Configuration xmlns="https://www.unrealengine.com/BuildConfiguration">
     <WindowsPlatform>
-        <CompilerVersion>14.38.33130</CompilerVersion>
-        <ToolchainVersion>14.38.33130</ToolchainVersion>
+        <CompilerVersion>14.39.33519</CompilerVersion>
+        <ToolchainVersion>14.39.33519</ToolchainVersion>
     </WindowsPlatform>
 </Configuration>
 ```
 
-Оба поля важны: они пинуют тулчейн MSVC к версии **14.38.33130** (та самая
-«MSVC v143 — v14.38-17.8»), под которую собран весь путь Pal-кита.
+`14.39.33519` — это имя папки, которую ставит компонент «MSVC v143
+(v14.39-17.9)». Если после установки команда
+`dir "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC"`
+покажет другое имя (например `14.39.33xxx` другой ревизии) — впиши в XML
+точно такое, как в папке.
 
 Создать файл можно из cmd (путь именно в **Roaming**-AppData, не в Local):
 
@@ -119,10 +131,10 @@ notepad "%APPDATA%\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml"
 ```
 
 **Признак, что пин подхватился:** в начале ручной сборки строка
-`Using Visual Studio 2022 14.38.33130 toolchain (...\VC\Tools\MSVC\14.38.33130)`.
+`Using Visual Studio 2022 14.39.33519 toolchain (...\VC\Tools\MSVC\14.39.33519)`.
 Если там 14.50.x — файл не читается (не тот путь/имя). Если после пина выходит
 «Visual Studio 2022 is installed, but is missing the C++ toolchain» — компонент
-v143 из Способа А не установлен.
+v143 из Способа А не установлен или в XML указано несуществующее имя папки.
 
 ## Запуск кита
 
@@ -151,8 +163,8 @@ v143 из Способа А не установлен.
 
 | Что написано | Причина | Лечение |
 |---|---|---|
-| `Detected compiler newer than Visual Studio 2022, please update min version checking in WindowsPlatformCompilerSetup.h` | движок 5.1 отверг тулчейн v145 из VS 2026 — самая частая причина с одной только 2026-й | поставить v143 v14.38 (Способ А выше) + BuildConfiguration.xml с пином 14.38.33130 |
-| `Visual Studio 2022 is installed, but is missing the C++ toolchain` / `UnrealBuildTool requires at minimum the MSVC 14.xx toolchain` | v143 не установлен или UBT не видит его в инсталляции | проверить, что компонент v14.38-17.8 реально стоит (папка `...\VC\Tools\MSVC\14.38.33130` существует), и что BuildConfiguration.xml лежит в `%APPDATA%\Unreal Engine\UnrealBuildTool\` |
+| `Detected compiler newer than Visual Studio 2022...` + ошибки C4668/C4067 в `ConcurrentLinearAllocator.h` | UBT взял v145 из VS 2026 (по умолчанию выбирает новейший тулчейн), а его конформантный препроцессор ломает движковые заголовки | поставить v143 v14.39 (Способ А) + BuildConfiguration.xml с пином 14.39.33519. Само по себе сообщение «Detected compiler newer» — безобидный `#pragma message`, но с 14.39 оно не появится вовсе (порог в 5.1 — `_MSC_VER > 1939`) |
+| `Visual Studio 2022 is installed, but is missing the C++ toolchain` / `UnrealBuildTool requires at minimum the MSVC 14.xx toolchain` | v143 не установлен или UBT не видит его в инсталляции | проверить, что компонент v14.39-17.9 реально стоит (папка `...\VC\Tools\MSVC\14.39.33519` существует), и что BuildConfiguration.xml лежит в `%APPDATA%\Unreal Engine\UnrealBuildTool\` |
 | Ругань на Windows SDK (`windows.h not found`, `LNK1181` и т.п.) | нет SDK или UBT взял слишком новый | добавить «Windows 10 SDK (10.0.19041.0)» в Individual components |
 | Вечное «modules need recompile» при каждом запуске | путь с суффиксом `-main` или второй открытый редактор | переименовать папку (короткий путь `C:\PMK`), закрыть другие копии редактора |
 | `The following modules are missing or built with a different engine version` → Да → сразу ошибка | то же, что выше: падение UBT на первом же шаге | смотреть консоль ручной сборки |
