@@ -1,0 +1,112 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "SkeletalMesh": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+      },
+      "SkeletalMesh_MaleHead": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+      },
+      "IconTexture": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+      },
+      "ABPAsset": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ClassPathRegex"
+      },
+      "ShiftUIDisplayEyeColor": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "R": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "G": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "B": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "A": {
+            "type": "number",
+            "description": "FloatProperty"
+          }
+        }
+      },
+      "ShiftUIDisplayBodyColor": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "R": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "G": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "B": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "A": {
+            "type": "number",
+            "description": "FloatProperty"
+          }
+        }
+      },
+      "ShiftUIDisplayBrowColor": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "R": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "G": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "B": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "A": {
+            "type": "number",
+            "description": "FloatProperty"
+          }
+        }
+      },
+      "ShiftUIDisplayHairColor": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "R": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "G": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "B": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "A": {
+            "type": "number",
+            "description": "FloatProperty"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "ReferenceTableNum": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

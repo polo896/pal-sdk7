@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "Stamina": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Hp": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "MeleeAttack": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "ShotAttack": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Defense": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Support": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "CraftSpeed": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Satiety": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

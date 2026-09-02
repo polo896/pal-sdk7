@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "DummyValue": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "ActionTimeLimit": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalIVisitorNPCAction"
+      },
+      "IsSquad": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "FormationRow": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

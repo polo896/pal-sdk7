@@ -1,0 +1,7 @@
+{
+  "BP_BuildObject_EnergyStorage_Electric_C": {
+    "EnergyStorageParameter": {
+      "MaxEnergyStorage": 100000000.0
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "TextId": {
+        "type": "string",
+        "description": "FName"
+      }
+    }
+  }
+}

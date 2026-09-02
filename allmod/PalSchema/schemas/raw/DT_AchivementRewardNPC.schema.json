@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "RequireCount": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "AchivementCategory": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalAchivementCategory"
+      },
+      "RewardItemString": {
+        "type": "string",
+        "description": "FString"
+      },
+      "ExpBonusLevel": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

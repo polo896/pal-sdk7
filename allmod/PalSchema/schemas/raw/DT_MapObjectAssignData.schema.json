@@ -1,0 +1,132 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "GenusCategory": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalGenusCategoryType"
+      },
+      "ElementType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalElementType"
+      },
+      "WorkSuitability": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalWorkSuitability"
+      },
+      "WorkSuitabilityRank": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "bPlayerWorkable": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "bBaseCampWorkerWorkable": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "WorkableTribeIDs": {
+        "oneOf": [
+          {
+            "type": "array",
+            "description": "ArrayProperty",
+            "items": {
+              "type": "string",
+              "description": "EnumProperty",
+              "$ref": "../enums.schema.json#/definitions/EPalTribeID"
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Items": {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "string",
+                  "description": "EnumProperty",
+                  "$ref": "../enums.schema.json#/definitions/EPalTribeID"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "WorkableSizeMin": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalSizeType"
+      },
+      "WorkableSizeMax": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalSizeType"
+      },
+      "WorkType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalWorkType"
+      },
+      "WorkActionType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalActionType"
+      },
+      "WorkerMaxNum": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "AffectSanityValue": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "AffectFullStomachValue": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "MultiWorkSuitability1": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalWorkSuitability"
+      },
+      "MultiWorkType1": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalWorkType"
+      },
+      "MultiWorkActionType1": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalActionType"
+      },
+      "MultiRequiredRank1": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "MultiWorkSuitability2": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalWorkSuitability"
+      },
+      "MultiWorkType2": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalWorkType"
+      },
+      "MultiWorkActionType2": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalActionType"
+      },
+      "MultiRequiredRank2": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

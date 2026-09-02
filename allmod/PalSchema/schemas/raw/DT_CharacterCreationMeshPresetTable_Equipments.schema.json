@@ -1,0 +1,80 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "SkeletalMeshMap": {
+        "type": "array",
+        "description": "MapProperty",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Key": {
+              "type": "string",
+              "description": "FName"
+            },
+            "Value": {
+              "type": "string",
+              "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+            }
+          }
+        }
+      },
+      "ABPAssetMap": {
+        "type": "array",
+        "description": "MapProperty",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Key": {
+              "type": "string",
+              "description": "FName"
+            },
+            "Value": {
+              "type": "string",
+              "$ref": "../utility.schema.json#/definitions/ClassPathRegex"
+            }
+          }
+        }
+      },
+      "IsHairAttachAccessory": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "HairAttachSocketNameMap": {
+        "type": "array",
+        "description": "MapProperty",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Key": {
+              "type": "string",
+              "description": "FName"
+            },
+            "Value": {
+              "type": "string",
+              "description": "FName"
+            }
+          }
+        }
+      },
+      "bUseCustomDepthPass": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "bIsFullBodyEquipment": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "OverrideBodyType": {
+        "type": "string",
+        "description": "FName"
+      },
+      "BodyShape": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalPlayerBodyShape"
+      }
+    }
+  }
+}

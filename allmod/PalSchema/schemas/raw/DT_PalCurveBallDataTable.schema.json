@@ -1,0 +1,57 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "CurveID": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalCurveBall"
+      },
+      "InitVelocity": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "X": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Y": {
+            "type": "number",
+            "description": "FloatProperty"
+          }
+        }
+      },
+      "CurveVelocity": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "X": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Y": {
+            "type": "number",
+            "description": "FloatProperty"
+          }
+        }
+      },
+      "CurveInterval": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "ForwardVelocity": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "GravityScale": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "GravityInterval": {
+        "type": "number",
+        "description": "FloatProperty"
+      }
+    }
+  }
+}

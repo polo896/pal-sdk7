@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "Money": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

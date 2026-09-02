@@ -1,0 +1,391 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "OverrideNameTextID": {
+        "type": "string",
+        "description": "FName"
+      },
+      "NamePrefixID": {
+        "type": "string",
+        "description": "FName"
+      },
+      "OverridePartnerSkillNameTextID": {
+        "type": "string",
+        "description": "FName"
+      },
+      "OverridePartnerSkillDescTextID": {
+        "type": "string",
+        "description": "FName"
+      },
+      "IsPal": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "Tribe": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalTribeID"
+      },
+      "BPClass": {
+        "type": "string",
+        "description": "FName"
+      },
+      "ZukanIndex": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "ZukanIndexSuffix": {
+        "type": "string",
+        "description": "FString"
+      },
+      "Size": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalSizeType"
+      },
+      "Rarity": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "ElementType1": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalElementType"
+      },
+      "ElementType2": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalElementType"
+      },
+      "GenusCategory": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalGenusCategoryType"
+      },
+      "Organization": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalOrganizationType"
+      },
+      "Weapon": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalWeaponType"
+      },
+      "WeaponEquip": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "Hp": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "MeleeAttack": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "ShotAttack": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Defense": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Support": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "CraftSpeed": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Friendship_HP": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "Friendship_ShotAttack": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "Friendship_Defense": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "Friendship_CraftSpeed": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "EnemyMaxHPRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "EnemyReceiveDamageRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "EnemyInflictDamageRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "EnemyWazaCoolTimeRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "CaptureRateCorrect": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "ExpRatio": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "Price": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "StatusResistUpRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "AIResponse": {
+        "type": "string",
+        "description": "FName"
+      },
+      "AISightResponse": {
+        "type": "string",
+        "description": "FName"
+      },
+      "SlowWalkSpeed": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "WalkSpeed": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "RunSpeed": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "RideSprintSpeed": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "TransportSpeed": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "SwimSpeed": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "SwimDashSpeed": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "IsBoss": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "IsTowerBoss": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "IsRaidBoss": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "UseBossHPGauge": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "BattleBGM": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalBattleBGMType"
+      },
+      "IgnoreLeanBack": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "IgnoreBlowAway": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "IgnoreStun": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "MaxFullStomach": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "FullStomachDecreaseRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "FoodAmount": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "ViewingDistance": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "ViewingAngle": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "HearingRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "NooseTrap": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "Nocturnal": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "BiologicalGrade": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Predator": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "Edible": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "Stamina": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "MaleProbability": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "CombiRank": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "CombiDuplicatePriority": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "IgnoreCombi": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "MeshCapsuleHalfHeight": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "MeshCapsuleRadius": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "MeshRelativeLocation": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "X": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Y": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Z": {
+            "type": "number",
+            "description": "FloatProperty"
+          }
+        }
+      },
+      "BestWorkSuitability": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalWorkSuitability"
+      },
+      "WorkSuitability_EmitFlame": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "WorkSuitability_Watering": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "WorkSuitability_Seeding": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "WorkSuitability_GenerateElectricity": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "WorkSuitability_Handcraft": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "WorkSuitability_Collection": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "WorkSuitability_Deforest": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "WorkSuitability_Mining": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "WorkSuitability_OilExtraction": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "WorkSuitability_ProductMedicine": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "WorkSuitability_Cool": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "WorkSuitability_Transport": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "WorkSuitability_MonsterFarm": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "PassiveSkill1": {
+        "type": "string",
+        "description": "FName"
+      },
+      "PassiveSkill2": {
+        "type": "string",
+        "description": "FName"
+      },
+      "PassiveSkill3": {
+        "type": "string",
+        "description": "FName"
+      },
+      "PassiveSkill4": {
+        "type": "string",
+        "description": "FName"
+      },
+      "FirstDefeatRewardItemID": {
+        "type": "string",
+        "description": "FName"
+      }
+    }
+  }
+}

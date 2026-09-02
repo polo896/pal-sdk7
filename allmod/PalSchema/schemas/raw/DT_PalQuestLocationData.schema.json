@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "Position": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "X": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Y": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Z": {
+            "type": "number",
+            "description": "FloatProperty"
+          }
+        }
+      },
+      "Range": {
+        "type": "number",
+        "description": "FloatProperty"
+      }
+    }
+  }
+}

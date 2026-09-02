@@ -1,0 +1,73 @@
+// ======================================================
+// MOD: Upgradable Pal Spheres
+// VERSION: 3.3
+// AUTHOR: MelwenMods
+// REQUIREMENTS: PalSchema, UE4SS
+// DOWNLOAD: https://www.nexusmods.com/palworld/mods/2208
+// ======================================================
+
+{	"DT_TechnologyRecipeUnlock": {
+// Mega Sphere
+	"Special_PalSphere_Grade_02": {
+		"UnlockItemRecipes": [
+		"PalSphere_Mega",
+		"MelwenMods_Sphere02"
+		]
+	},
+// Giga Sphere
+	"Special_PalSphere_Grade_03": {
+		"UnlockItemRecipes": [
+		"PalSphere_Giga",
+		"MelwenMods_Sphere03"
+		]
+	},
+// Hyper Sphere
+	"Special_PalSphere_Grade_04": {
+		"UnlockItemRecipes": [
+		"PalSphere_Tera",
+		"MelwenMods_Sphere04"
+		]
+	},
+// Ultra Sphere
+	"Special_PalSphere_Grade_05": {
+		"UnlockItemRecipes": [
+		"PalSphere_Master",
+		"MelwenMods_Sphere05"
+		]
+	},
+// Legendary Sphere
+	"Special_PalSphere_Grade_06": {
+		"UnlockItemRecipes": [
+		"PalSphere_Legend",
+		"MelwenMods_Sphere06"
+		]
+	},
+// Ultimate Sphere
+	"Special_PalSphere_Grade_07": {
+		"UnlockItemRecipes": [
+		"PalSphere_Ultimate",
+		"MelwenMods_Sphere07"
+		]
+	},
+// Exotic Sphere
+	"PalSphere_Exotic": {
+		"UnlockItemRecipes": [
+		"PalSphere_Exotic",
+		"MelwenMods_Sphere08"
+		]
+	},
+// Sol Sphere
+	"PalSphere_Ancient_1": {
+		"UnlockItemRecipes": [
+		"PalSphere_Ancient_1",
+		"MelwenMods_Sphere09"
+		]
+	},
+// Ancient Sphere
+	"PalSphere_Ancient_2": {
+		"UnlockItemRecipes": [
+		"PalSphere_Ancient_2",
+		"MelwenMods_Sphere10"
+		]
+	}
+}}

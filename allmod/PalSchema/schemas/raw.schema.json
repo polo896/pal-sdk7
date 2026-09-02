@@ -1,0 +1,1428 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "DT_ArenaNPCDataTable": {
+      "$ref": "raw/DT_ArenaNPCDataTable.schema.json"
+    },
+    "DT_ArenaSoloRewardTable": {
+      "$ref": "raw/DT_ArenaSoloRewardTable.schema.json"
+    },
+    "DT_ArenaSoloNPCTable": {
+      "$ref": "raw/DT_ArenaSoloNPCTable.schema.json"
+    },
+    "DT_PalInvaderReward": {
+      "$ref": "raw/DT_PalInvaderReward.schema.json"
+    },
+    "DT_PalRecruitMonster_SkyIsland": {
+      "$ref": "raw/DT_PalRecruitMonster_SkyIsland.schema.json"
+    },
+    "DT_PalRecruitMonster_Sakurajima": {
+      "$ref": "raw/DT_PalRecruitMonster_Sakurajima.schema.json"
+    },
+    "DT_PalRecruitMonster_Grass": {
+      "$ref": "raw/DT_PalRecruitMonster_Grass.schema.json"
+    },
+    "DT_PalRecruitMonster_Forest_Volcano": {
+      "$ref": "raw/DT_PalRecruitMonster_Forest_Volcano.schema.json"
+    },
+    "DT_PalRecruitMonster_Desert_Snow": {
+      "$ref": "raw/DT_PalRecruitMonster_Desert_Snow.schema.json"
+    },
+    "DT_PalRecruitMonster_DarkIsland": {
+      "$ref": "raw/DT_PalRecruitMonster_DarkIsland.schema.json"
+    },
+    "DT_PalRecruitDataTable": {
+      "$ref": "raw/DT_PalRecruitDataTable.schema.json"
+    },
+    "DT_PalRecruitAppealDataTable": {
+      "$ref": "raw/DT_PalRecruitAppealDataTable.schema.json"
+    },
+    "DT_PalVisitorNPC": {
+      "$ref": "raw/DT_PalVisitorNPC.schema.json"
+    },
+    "DT_RandomIncidentOutbreakLocations": {
+      "$ref": "raw/DT_RandomIncidentOutbreakLocations.schema.json"
+    },
+    "DT_SupplyIncident_Pal_Volcano04": {
+      "$ref": "raw/DT_SupplyIncident_Pal_Volcano04.schema.json"
+    },
+    "DT_SupplyIncident_Pal_Volcano03": {
+      "$ref": "raw/DT_SupplyIncident_Pal_Volcano03.schema.json"
+    },
+    "DT_SupplyIncident_Pal_Volcano02": {
+      "$ref": "raw/DT_SupplyIncident_Pal_Volcano02.schema.json"
+    },
+    "DT_SupplyIncident_Pal_Volcano01": {
+      "$ref": "raw/DT_SupplyIncident_Pal_Volcano01.schema.json"
+    },
+    "DT_SupplyIncident_Pal_Snow04": {
+      "$ref": "raw/DT_SupplyIncident_Pal_Snow04.schema.json"
+    },
+    "DT_SupplyIncident_Pal_Snow03": {
+      "$ref": "raw/DT_SupplyIncident_Pal_Snow03.schema.json"
+    },
+    "DT_SupplyIncident_Pal_Snow02": {
+      "$ref": "raw/DT_SupplyIncident_Pal_Snow02.schema.json"
+    },
+    "DT_SupplyIncident_Pal_Snow01": {
+      "$ref": "raw/DT_SupplyIncident_Pal_Snow01.schema.json"
+    },
+    "DT_SupplyIncident_Pal_SkyIsland04": {
+      "$ref": "raw/DT_SupplyIncident_Pal_SkyIsland04.schema.json"
+    },
+    "DT_SupplyIncident_Pal_SkyIsland03": {
+      "$ref": "raw/DT_SupplyIncident_Pal_SkyIsland03.schema.json"
+    },
+    "DT_SupplyIncident_Pal_SkyIsland02": {
+      "$ref": "raw/DT_SupplyIncident_Pal_SkyIsland02.schema.json"
+    },
+    "DT_SupplyIncident_Pal_SkyIsland01": {
+      "$ref": "raw/DT_SupplyIncident_Pal_SkyIsland01.schema.json"
+    },
+    "DT_SupplyIncident_Pal_Sakura02": {
+      "$ref": "raw/DT_SupplyIncident_Pal_Sakura02.schema.json"
+    },
+    "DT_SupplyIncident_Pal_Sakura01": {
+      "$ref": "raw/DT_SupplyIncident_Pal_Sakura01.schema.json"
+    },
+    "DT_SupplyIncident_Pal_Grass02": {
+      "$ref": "raw/DT_SupplyIncident_Pal_Grass02.schema.json"
+    },
+    "DT_SupplyIncident_Pal_Grass01": {
+      "$ref": "raw/DT_SupplyIncident_Pal_Grass01.schema.json"
+    },
+    "DT_SupplyIncident_Pal_Forest02": {
+      "$ref": "raw/DT_SupplyIncident_Pal_Forest02.schema.json"
+    },
+    "DT_SupplyIncident_Pal_Forest01": {
+      "$ref": "raw/DT_SupplyIncident_Pal_Forest01.schema.json"
+    },
+    "DT_SupplyIncident_Pal_Desert04": {
+      "$ref": "raw/DT_SupplyIncident_Pal_Desert04.schema.json"
+    },
+    "DT_SupplyIncident_Pal_Desert03": {
+      "$ref": "raw/DT_SupplyIncident_Pal_Desert03.schema.json"
+    },
+    "DT_SupplyIncident_Pal_Desert02": {
+      "$ref": "raw/DT_SupplyIncident_Pal_Desert02.schema.json"
+    },
+    "DT_SupplyIncident_Pal_Desert01": {
+      "$ref": "raw/DT_SupplyIncident_Pal_Desert01.schema.json"
+    },
+    "DT_SupplyIncident_Pal_DarkIsland_03": {
+      "$ref": "raw/DT_SupplyIncident_Pal_DarkIsland_03.schema.json"
+    },
+    "DT_SupplyIncident_Pal_DarkIsland04": {
+      "$ref": "raw/DT_SupplyIncident_Pal_DarkIsland04.schema.json"
+    },
+    "DT_SupplyIncident_Pal_DarkIsland02": {
+      "$ref": "raw/DT_SupplyIncident_Pal_DarkIsland02.schema.json"
+    },
+    "DT_SupplyIncident_Pal_DarkIsland01": {
+      "$ref": "raw/DT_SupplyIncident_Pal_DarkIsland01.schema.json"
+    },
+    "DT_SupplyIncident_Pal": {
+      "$ref": "raw/DT_SupplyIncident_Pal.schema.json"
+    },
+    "DT_SupplyIncident_NPC_Volcano01": {
+      "$ref": "raw/DT_SupplyIncident_NPC_Volcano01.schema.json"
+    },
+    "DT_SupplyIncident_NPC_Snow01": {
+      "$ref": "raw/DT_SupplyIncident_NPC_Snow01.schema.json"
+    },
+    "DT_SupplyIncident_NPC_SkyIsland01": {
+      "$ref": "raw/DT_SupplyIncident_NPC_SkyIsland01.schema.json"
+    },
+    "DT_SupplyIncident_NPC_Sakura01": {
+      "$ref": "raw/DT_SupplyIncident_NPC_Sakura01.schema.json"
+    },
+    "DT_SupplyIncident_NPC_Grass01": {
+      "$ref": "raw/DT_SupplyIncident_NPC_Grass01.schema.json"
+    },
+    "DT_SupplyIncident_NPC_Forest01": {
+      "$ref": "raw/DT_SupplyIncident_NPC_Forest01.schema.json"
+    },
+    "DT_SupplyIncident_NPC_Desert01": {
+      "$ref": "raw/DT_SupplyIncident_NPC_Desert01.schema.json"
+    },
+    "DT_SupplyIncident_NPC_DarkIsland01": {
+      "$ref": "raw/DT_SupplyIncident_NPC_DarkIsland01.schema.json"
+    },
+    "DT_SupplyIncident_NPC": {
+      "$ref": "raw/DT_SupplyIncident_NPC.schema.json"
+    },
+    "DT_RandomIncidentMonster_Outbreak_Volcano": {
+      "$ref": "raw/DT_RandomIncidentMonster_Outbreak_Volcano.schema.json"
+    },
+    "DT_RandomIncidentMonster_Outbreak_Test": {
+      "$ref": "raw/DT_RandomIncidentMonster_Outbreak_Test.schema.json"
+    },
+    "DT_RandomIncidentMonster_Outbreak_Snow": {
+      "$ref": "raw/DT_RandomIncidentMonster_Outbreak_Snow.schema.json"
+    },
+    "DT_RandomIncidentMonster_outbreak_Sheepball": {
+      "$ref": "raw/DT_RandomIncidentMonster_outbreak_Sheepball.schema.json"
+    },
+    "DT_RandomIncidentMonster_Outbreak_Sakurajima": {
+      "$ref": "raw/DT_RandomIncidentMonster_Outbreak_Sakurajima.schema.json"
+    },
+    "DT_RandomIncidentMonster_outbreak_QueenBee": {
+      "$ref": "raw/DT_RandomIncidentMonster_outbreak_QueenBee.schema.json"
+    },
+    "DT_RandomIncidentMonster_outbreak_Penguin2": {
+      "$ref": "raw/DT_RandomIncidentMonster_outbreak_Penguin2.schema.json"
+    },
+    "DT_RandomIncidentMonster_outbreak_MopKing2": {
+      "$ref": "raw/DT_RandomIncidentMonster_outbreak_MopKing2.schema.json"
+    },
+    "DT_RandomIncidentMonster_outbreak_MopBaby": {
+      "$ref": "raw/DT_RandomIncidentMonster_outbreak_MopBaby.schema.json"
+    },
+    "DT_RandomIncidentMonster_outbreak_MoonChild": {
+      "$ref": "raw/DT_RandomIncidentMonster_outbreak_MoonChild.schema.json"
+    },
+    "DT_RandomIncidentMonster_Outbreak_Grass_Desert": {
+      "$ref": "raw/DT_RandomIncidentMonster_Outbreak_Grass_Desert.schema.json"
+    },
+    "DT_RandomIncidentMonster_Outbreak_Grass2": {
+      "$ref": "raw/DT_RandomIncidentMonster_Outbreak_Grass2.schema.json"
+    },
+    "DT_RandomIncidentMonster_Outbreak_Grass": {
+      "$ref": "raw/DT_RandomIncidentMonster_Outbreak_Grass.schema.json"
+    },
+    "DT_RandomIncidentMonster_Outbreak_Forest_Frost": {
+      "$ref": "raw/DT_RandomIncidentMonster_Outbreak_Forest_Frost.schema.json"
+    },
+    "DT_RandomIncidentMonster_Outbreak_Forest": {
+      "$ref": "raw/DT_RandomIncidentMonster_Outbreak_Forest.schema.json"
+    },
+    "DT_RandomIncidentMonster_Outbreak_Desert": {
+      "$ref": "raw/DT_RandomIncidentMonster_Outbreak_Desert.schema.json"
+    },
+    "DT_RandomIncidentMonster_outbreak_DandelionGirl": {
+      "$ref": "raw/DT_RandomIncidentMonster_outbreak_DandelionGirl.schema.json"
+    },
+    "DT_RandomIncidentMonster_outbreak_ColorfulBird": {
+      "$ref": "raw/DT_RandomIncidentMonster_outbreak_ColorfulBird.schema.json"
+    },
+    "DT_RandomIncidentNPC_WorldTreeHunter": {
+      "$ref": "raw/DT_RandomIncidentNPC_WorldTreeHunter.schema.json"
+    },
+    "DT_RandomIncidentNPC_Viking": {
+      "$ref": "raw/DT_RandomIncidentNPC_Viking.schema.json"
+    },
+    "DT_RandomIncidentNPC_Test002": {
+      "$ref": "raw/DT_RandomIncidentNPC_Test002.schema.json"
+    },
+    "DT_RandomIncidentNPC_Test001": {
+      "$ref": "raw/DT_RandomIncidentNPC_Test001.schema.json"
+    },
+    "DT_RandomIncidentNPC_Test000": {
+      "$ref": "raw/DT_RandomIncidentNPC_Test000.schema.json"
+    },
+    "DT_RandomIncidentNPC_Scientist_VS_Ninja": {
+      "$ref": "raw/DT_RandomIncidentNPC_Scientist_VS_Ninja.schema.json"
+    },
+    "DT_RandomIncidentNPC_Scientist_VS_Hunter": {
+      "$ref": "raw/DT_RandomIncidentNPC_Scientist_VS_Hunter.schema.json"
+    },
+    "DT_RandomIncidentNPC_Scientist_Snow": {
+      "$ref": "raw/DT_RandomIncidentNPC_Scientist_Snow.schema.json"
+    },
+    "DT_RandomIncidentNPC_Salsman_VS_Poacher": {
+      "$ref": "raw/DT_RandomIncidentNPC_Salsman_VS_Poacher.schema.json"
+    },
+    "DT_RandomIncidentNPC_Reward_Emote_I": {
+      "$ref": "raw/DT_RandomIncidentNPC_Reward_Emote_I.schema.json"
+    },
+    "DT_RandomIncidentNPC_Reward_Emote_H": {
+      "$ref": "raw/DT_RandomIncidentNPC_Reward_Emote_H.schema.json"
+    },
+    "DT_RandomIncidentNPC_Reward_Emote_G": {
+      "$ref": "raw/DT_RandomIncidentNPC_Reward_Emote_G.schema.json"
+    },
+    "DT_RandomIncidentNPC_Reward_Emote_F": {
+      "$ref": "raw/DT_RandomIncidentNPC_Reward_Emote_F.schema.json"
+    },
+    "DT_RandomIncidentNPC_Reward_Emote_E": {
+      "$ref": "raw/DT_RandomIncidentNPC_Reward_Emote_E.schema.json"
+    },
+    "DT_RandomIncidentNPC_Reward_Emote_D": {
+      "$ref": "raw/DT_RandomIncidentNPC_Reward_Emote_D.schema.json"
+    },
+    "DT_RandomIncidentNPC_Reward_Emote_C": {
+      "$ref": "raw/DT_RandomIncidentNPC_Reward_Emote_C.schema.json"
+    },
+    "DT_RandomIncidentNPC_Reward_Emote_B": {
+      "$ref": "raw/DT_RandomIncidentNPC_Reward_Emote_B.schema.json"
+    },
+    "DT_RandomIncidentNPC_Reward_Emote_A": {
+      "$ref": "raw/DT_RandomIncidentNPC_Reward_Emote_A.schema.json"
+    },
+    "DT_RandomIncidentNPC_Police_VS_Hunter": {
+      "$ref": "raw/DT_RandomIncidentNPC_Police_VS_Hunter.schema.json"
+    },
+    "DT_RandomIncidentNPC_Police_Desert": {
+      "$ref": "raw/DT_RandomIncidentNPC_Police_Desert.schema.json"
+    },
+    "DT_RandomIncidentNPC_PalTamer_VS_Hunter": {
+      "$ref": "raw/DT_RandomIncidentNPC_PalTamer_VS_Hunter.schema.json"
+    },
+    "DT_RandomIncidentNPC_PalPassive": {
+      "$ref": "raw/DT_RandomIncidentNPC_PalPassive.schema.json"
+    },
+    "DT_RandomIncidentNPC_PalBattle_9": {
+      "$ref": "raw/DT_RandomIncidentNPC_PalBattle_9.schema.json"
+    },
+    "DT_RandomIncidentNPC_PalBattle_8": {
+      "$ref": "raw/DT_RandomIncidentNPC_PalBattle_8.schema.json"
+    },
+    "DT_RandomIncidentNPC_PalBattle_7": {
+      "$ref": "raw/DT_RandomIncidentNPC_PalBattle_7.schema.json"
+    },
+    "DT_RandomIncidentNPC_PalBattle_6": {
+      "$ref": "raw/DT_RandomIncidentNPC_PalBattle_6.schema.json"
+    },
+    "DT_RandomIncidentNPC_PalBattle_5": {
+      "$ref": "raw/DT_RandomIncidentNPC_PalBattle_5.schema.json"
+    },
+    "DT_RandomIncidentNPC_PalBattle_4": {
+      "$ref": "raw/DT_RandomIncidentNPC_PalBattle_4.schema.json"
+    },
+    "DT_RandomIncidentNPC_PalBattle_3": {
+      "$ref": "raw/DT_RandomIncidentNPC_PalBattle_3.schema.json"
+    },
+    "DT_RandomIncidentNPC_PalBattle_2": {
+      "$ref": "raw/DT_RandomIncidentNPC_PalBattle_2.schema.json"
+    },
+    "DT_RandomIncidentNPC_PalBattle_18": {
+      "$ref": "raw/DT_RandomIncidentNPC_PalBattle_18.schema.json"
+    },
+    "DT_RandomIncidentNPC_PalBattle_17": {
+      "$ref": "raw/DT_RandomIncidentNPC_PalBattle_17.schema.json"
+    },
+    "DT_RandomIncidentNPC_PalBattle_16": {
+      "$ref": "raw/DT_RandomIncidentNPC_PalBattle_16.schema.json"
+    },
+    "DT_RandomIncidentNPC_PalBattle_15": {
+      "$ref": "raw/DT_RandomIncidentNPC_PalBattle_15.schema.json"
+    },
+    "DT_RandomIncidentNPC_PalBattle_14": {
+      "$ref": "raw/DT_RandomIncidentNPC_PalBattle_14.schema.json"
+    },
+    "DT_RandomIncidentNPC_PalBattle_13": {
+      "$ref": "raw/DT_RandomIncidentNPC_PalBattle_13.schema.json"
+    },
+    "DT_RandomIncidentNPC_PalBattle_12": {
+      "$ref": "raw/DT_RandomIncidentNPC_PalBattle_12.schema.json"
+    },
+    "DT_RandomIncidentNPC_PalBattle_11": {
+      "$ref": "raw/DT_RandomIncidentNPC_PalBattle_11.schema.json"
+    },
+    "DT_RandomIncidentNPC_PalBattle_10": {
+      "$ref": "raw/DT_RandomIncidentNPC_PalBattle_10.schema.json"
+    },
+    "DT_RandomIncidentNPC_PalBattle_1": {
+      "$ref": "raw/DT_RandomIncidentNPC_PalBattle_1.schema.json"
+    },
+    "DT_RandomIncidentNPC_Ninja": {
+      "$ref": "raw/DT_RandomIncidentNPC_Ninja.schema.json"
+    },
+    "DT_RandomIncidentNPC_MarchantwithPAL2": {
+      "$ref": "raw/DT_RandomIncidentNPC_MarchantwithPAL2.schema.json"
+    },
+    "DT_RandomIncidentNPC_MarchantwithPAL1": {
+      "$ref": "raw/DT_RandomIncidentNPC_MarchantwithPAL1.schema.json"
+    },
+    "DT_RandomIncidentNPC_MarchantwithPAL": {
+      "$ref": "raw/DT_RandomIncidentNPC_MarchantwithPAL.schema.json"
+    },
+    "DT_RandomIncidentNPC_Hunter_GrassDesert": {
+      "$ref": "raw/DT_RandomIncidentNPC_Hunter_GrassDesert.schema.json"
+    },
+    "DT_RandomIncidentNPC_DarkTrader4": {
+      "$ref": "raw/DT_RandomIncidentNPC_DarkTrader4.schema.json"
+    },
+    "DT_RandomIncidentNPC_DarkTrader3": {
+      "$ref": "raw/DT_RandomIncidentNPC_DarkTrader3.schema.json"
+    },
+    "DT_RandomIncidentNPC_DarkTrader2": {
+      "$ref": "raw/DT_RandomIncidentNPC_DarkTrader2.schema.json"
+    },
+    "DT_RandomIncidentNPC_DarkTrader": {
+      "$ref": "raw/DT_RandomIncidentNPC_DarkTrader.schema.json"
+    },
+    "DT_RandomIncidentNPC_Cultist_VS_Hunter": {
+      "$ref": "raw/DT_RandomIncidentNPC_Cultist_VS_Hunter.schema.json"
+    },
+    "DT_RandomIncidentNPC_Cultist_Volcano": {
+      "$ref": "raw/DT_RandomIncidentNPC_Cultist_Volcano.schema.json"
+    },
+    "DT_RandomIncidentNPC_BadPolice": {
+      "$ref": "raw/DT_RandomIncidentNPC_BadPolice.schema.json"
+    },
+    "DT_RandomIncidentNPC_Aigo_VS_Hunter": {
+      "$ref": "raw/DT_RandomIncidentNPC_Aigo_VS_Hunter.schema.json"
+    },
+    "DT_RandomIncidentMonster_Yeti_Couple": {
+      "$ref": "raw/DT_RandomIncidentMonster_Yeti_Couple.schema.json"
+    },
+    "DT_RandomIncidentMonster_WhiteTiger_Ground": {
+      "$ref": "raw/DT_RandomIncidentMonster_WhiteTiger_Ground.schema.json"
+    },
+    "DT_RandomIncidentMonster_WhiteMoth": {
+      "$ref": "raw/DT_RandomIncidentMonster_WhiteMoth.schema.json"
+    },
+    "DT_RandomIncidentMonster_Werewolf_Ice_VS_Werewolf": {
+      "$ref": "raw/DT_RandomIncidentMonster_Werewolf_Ice_VS_Werewolf.schema.json"
+    },
+    "DT_RandomIncidentMonster_WeaselDragon_Couple": {
+      "$ref": "raw/DT_RandomIncidentMonster_WeaselDragon_Couple.schema.json"
+    },
+    "DT_RandomIncidentMonster_VolcanicMonster_Battle": {
+      "$ref": "raw/DT_RandomIncidentMonster_VolcanicMonster_Battle.schema.json"
+    },
+    "DT_RandomIncidentMonster_VolcanicMonster": {
+      "$ref": "raw/DT_RandomIncidentMonster_VolcanicMonster.schema.json"
+    },
+    "DT_RandomIncidentMonster_ThunderDog": {
+      "$ref": "raw/DT_RandomIncidentMonster_ThunderDog.schema.json"
+    },
+    "DT_RandomIncidentMonster_TestObjectPlacement": {
+      "$ref": "raw/DT_RandomIncidentMonster_TestObjectPlacement.schema.json"
+    },
+    "DT_RandomIncidentMonster_Test002": {
+      "$ref": "raw/DT_RandomIncidentMonster_Test002.schema.json"
+    },
+    "DT_RandomIncidentMonster_Test000": {
+      "$ref": "raw/DT_RandomIncidentMonster_Test000.schema.json"
+    },
+    "DT_RandomIncidentMonster_SleeveRabbit_VS_BrownRabbit": {
+      "$ref": "raw/DT_RandomIncidentMonster_SleeveRabbit_VS_BrownRabbit.schema.json"
+    },
+    "DT_RandomIncidentMonster_SharkKid_Couple": {
+      "$ref": "raw/DT_RandomIncidentMonster_SharkKid_Couple.schema.json"
+    },
+    "DT_RandomIncidentMonster_RobinHood_Rose": {
+      "$ref": "raw/DT_RandomIncidentMonster_RobinHood_Rose.schema.json"
+    },
+    "DT_RandomIncidentMonster_RobinHood_Ground": {
+      "$ref": "raw/DT_RandomIncidentMonster_RobinHood_Ground.schema.json"
+    },
+    "DT_RandomIncidentMonster_RaijinDaughter_VS_ThunderDog": {
+      "$ref": "raw/DT_RandomIncidentMonster_RaijinDaughter_VS_ThunderDog.schema.json"
+    },
+    "DT_RandomIncidentMonster_PurpleSpider": {
+      "$ref": "raw/DT_RandomIncidentMonster_PurpleSpider.schema.json"
+    },
+    "DT_RandomIncidentMonster_PinkRabbit_Couple": {
+      "$ref": "raw/DT_RandomIncidentMonster_PinkRabbit_Couple.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_Yeti": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_Yeti.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_WhiteTiger": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_WhiteTiger.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_ThunderFluffyBird": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_ThunderFluffyBird.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_ThunderDog_Ice": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_ThunderDog_Ice.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_ThunderDog": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_ThunderDog.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_ThiefBird": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_ThiefBird.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_SnakeGirl": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_SnakeGirl.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_ScorpionMan": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_ScorpionMan.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_RobinHood": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_RobinHood.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_RedArmorBird": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_RedArmorBird.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_RaijinDaughter_Water": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_RaijinDaughter_Water.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_QueenBee": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_QueenBee.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_NegativeKoala": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_NegativeKoala.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_LazyDragon": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_LazyDragon.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_KendoFrog": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_KendoFrog.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_GrassPanda": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_GrassPanda.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_GoldenHorse": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_GoldenHorse.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_GhostRabbit": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_GhostRabbit.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_Garm": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_Garm.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_FluffyBird_2": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_FluffyBird_2.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_FluffyBird": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_FluffyBird.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_FlameBuffalo": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_FlameBuffalo.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_FireKirin": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_FireKirin.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_Eagle": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_Eagle.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_ColorfulBird": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_ColorfulBird.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_CloverFairy": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_CloverFairy.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_BlueberryFairy": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_BlueberryFairy.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_BlackPuppy": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_BlackPuppy.schema.json"
+    },
+    "DT_RandomIncidentMonster_PalNest_BirdDragon": {
+      "$ref": "raw/DT_RandomIncidentMonster_PalNest_BirdDragon.schema.json"
+    },
+    "DT_RandomIncidentMonster_Pachiguri_VS_wolf": {
+      "$ref": "raw/DT_RandomIncidentMonster_Pachiguri_VS_wolf.schema.json"
+    },
+    "DT_RandomIncidentMonster_MysteryMask_vs_GhostRabbit": {
+      "$ref": "raw/DT_RandomIncidentMonster_MysteryMask_vs_GhostRabbit.schema.json"
+    },
+    "DT_RandomIncidentMonster_MushroomDragon_Battle": {
+      "$ref": "raw/DT_RandomIncidentMonster_MushroomDragon_Battle.schema.json"
+    },
+    "DT_RandomIncidentMonster_MiningDrillGame": {
+      "$ref": "raw/DT_RandomIncidentMonster_MiningDrillGame.schema.json"
+    },
+    "DT_RandomIncidentMonster_MarchantwithPAL2": {
+      "$ref": "raw/DT_RandomIncidentMonster_MarchantwithPAL2.schema.json"
+    },
+    "DT_RandomIncidentMonster_MarchantwithPAL1": {
+      "$ref": "raw/DT_RandomIncidentMonster_MarchantwithPAL1.schema.json"
+    },
+    "DT_RandomIncidentMonster_MarchantwithPAL": {
+      "$ref": "raw/DT_RandomIncidentMonster_MarchantwithPAL.schema.json"
+    },
+    "DT_RandomIncidentMonster_LazyDragon": {
+      "$ref": "raw/DT_RandomIncidentMonster_LazyDragon.schema.json"
+    },
+    "DT_RandomIncidentMonster_LavaGirl_VS_BirdDragon": {
+      "$ref": "raw/DT_RandomIncidentMonster_LavaGirl_VS_BirdDragon.schema.json"
+    },
+    "DT_RandomIncidentMonster_Kitsunebi_Couple": {
+      "$ref": "raw/DT_RandomIncidentMonster_Kitsunebi_Couple.schema.json"
+    },
+    "DT_RandomIncidentMonster_KendoFrog": {
+      "$ref": "raw/DT_RandomIncidentMonster_KendoFrog.schema.json"
+    },
+    "DT_RandomIncidentMonster_Horus_Couple": {
+      "$ref": "raw/DT_RandomIncidentMonster_Horus_Couple.schema.json"
+    },
+    "DT_RandomIncidentMonster_HerculesBeetle_Ground_vs_HerculesBeetle": {
+      "$ref": "raw/DT_RandomIncidentMonster_HerculesBeetle_Ground_vs_HerculesBeetle.schema.json"
+    },
+    "DT_RandomIncidentMonster_GuardianDog_VS_SifuDog": {
+      "$ref": "raw/DT_RandomIncidentMonster_GuardianDog_VS_SifuDog.schema.json"
+    },
+    "DT_RandomIncidentMonster_GrimGirl": {
+      "$ref": "raw/DT_RandomIncidentMonster_GrimGirl.schema.json"
+    },
+    "DT_RandomIncidentMonster_GrassPanda_VS_PandaGirl": {
+      "$ref": "raw/DT_RandomIncidentMonster_GrassPanda_VS_PandaGirl.schema.json"
+    },
+    "DT_RandomIncidentMonster_GrassMinotaur_VS_GrassMinotaur_Ice": {
+      "$ref": "raw/DT_RandomIncidentMonster_GrassMinotaur_VS_GrassMinotaur_Ice.schema.json"
+    },
+    "DT_RandomIncidentMonster_GrassMammoth_Battle": {
+      "$ref": "raw/DT_RandomIncidentMonster_GrassMammoth_Battle.schema.json"
+    },
+    "DT_RandomIncidentMonster_Gorilla_Battle": {
+      "$ref": "raw/DT_RandomIncidentMonster_Gorilla_Battle.schema.json"
+    },
+    "DT_RandomIncidentMonster_FlowerRabbit_VS_wolf": {
+      "$ref": "raw/DT_RandomIncidentMonster_FlowerRabbit_VS_wolf.schema.json"
+    },
+    "DT_RandomIncidentMonster_FlowerRabbit_VS_Eagle": {
+      "$ref": "raw/DT_RandomIncidentMonster_FlowerRabbit_VS_Eagle.schema.json"
+    },
+    "DT_RandomIncidentMonster_Flowerdoll_Couple": {
+      "$ref": "raw/DT_RandomIncidentMonster_Flowerdoll_Couple.schema.json"
+    },
+    "DT_RandomIncidentMonster_FlowerDinosaurCouple": {
+      "$ref": "raw/DT_RandomIncidentMonster_FlowerDinosaurCouple.schema.json"
+    },
+    "DT_RandomIncidentMonster_ElecPanda_VS_GrassPanda_Electric": {
+      "$ref": "raw/DT_RandomIncidentMonster_ElecPanda_VS_GrassPanda_Electric.schema.json"
+    },
+    "DT_RandomIncidentMonster_DrillGame": {
+      "$ref": "raw/DT_RandomIncidentMonster_DrillGame.schema.json"
+    },
+    "DT_RandomIncidentMonster_DancingCactusDoll": {
+      "$ref": "raw/DT_RandomIncidentMonster_DancingCactusDoll.schema.json"
+    },
+    "DT_RandomIncidentMonster_BOSS_Penguin": {
+      "$ref": "raw/DT_RandomIncidentMonster_BOSS_Penguin.schema.json"
+    },
+    "DT_RandomIncidentMonster_BirdDragonIce_Battle": {
+      "$ref": "raw/DT_RandomIncidentMonster_BirdDragonIce_Battle.schema.json"
+    },
+    "DT_RandomIncidentMonster_BerryGoat_Couple": {
+      "$ref": "raw/DT_RandomIncidentMonster_BerryGoat_Couple.schema.json"
+    },
+    "DT_RandomIncidentMonster_BerryGoat": {
+      "$ref": "raw/DT_RandomIncidentMonster_BerryGoat.schema.json"
+    },
+    "DT_RandomIncidentMonster_BastetIce_VS_WhiteTiger": {
+      "$ref": "raw/DT_RandomIncidentMonster_BastetIce_VS_WhiteTiger.schema.json"
+    },
+    "DT_RandomIncidentMonster_BadCatgirl": {
+      "$ref": "raw/DT_RandomIncidentMonster_BadCatgirl.schema.json"
+    },
+    "DT_RandomIncidentSettings": {
+      "$ref": "raw/DT_RandomIncidentSettings.schema.json"
+    },
+    "DT_IncidentParameter": {
+      "$ref": "raw/DT_IncidentParameter.schema.json"
+    },
+    "DT_PalInvaderCancelCost": {
+      "$ref": "raw/DT_PalInvaderCancelCost.schema.json"
+    },
+    "DT_PalInvader": {
+      "$ref": "raw/DT_PalInvader.schema.json"
+    },
+    "DT_StatusEffectFood": {
+      "$ref": "raw/DT_StatusEffectFood.schema.json"
+    },
+    "DT_UIInputAction": {
+      "$ref": "raw/DT_UIInputAction.schema.json"
+    },
+    "DT_PalFishingSpotPalSpawnerDataTable": {
+      "$ref": "raw/DT_PalFishingSpotPalSpawnerDataTable.schema.json"
+    },
+    "DT_BuildObjectDescText_Common": {
+      "$ref": "raw/DT_BuildObjectDescText_Common.schema.json"
+    },
+    "DT_HumanNameText_Common": {
+      "$ref": "raw/DT_HumanNameText_Common.schema.json"
+    },
+    "DT_ItemDescriptionText_Common": {
+      "$ref": "raw/DT_ItemDescriptionText_Common.schema.json"
+    },
+    "DT_ItemNameText_Common": {
+      "$ref": "raw/DT_ItemNameText_Common.schema.json"
+    },
+    "DT_MapObjectNameText_Common": {
+      "$ref": "raw/DT_MapObjectNameText_Common.schema.json"
+    },
+    "DT_NamePrefixText_Common": {
+      "$ref": "raw/DT_NamePrefixText_Common.schema.json"
+    },
+    "DT_NpcTalkText_Common": {
+      "$ref": "raw/DT_NpcTalkText_Common.schema.json"
+    },
+    "DT_PalNameText_Common": {
+      "$ref": "raw/DT_PalNameText_Common.schema.json"
+    },
+    "DT_SkillNameText_Common": {
+      "$ref": "raw/DT_SkillNameText_Common.schema.json"
+    },
+    "DT_TechnologyDescText_Common": {
+      "$ref": "raw/DT_TechnologyDescText_Common.schema.json"
+    },
+    "DT_TechnologyNameText_Common": {
+      "$ref": "raw/DT_TechnologyNameText_Common.schema.json"
+    },
+    "DT_WorldMap_Common_Text_Common": {
+      "$ref": "raw/DT_WorldMap_Common_Text_Common.schema.json"
+    },
+    "DT_BuildObjectCategoryText": {
+      "$ref": "raw/DT_BuildObjectCategoryText.schema.json"
+    },
+    "DT_PalRichTextImage": {
+      "$ref": "raw/DT_PalRichTextImage.schema.json"
+    },
+    "DT_PalRichTextControlKeyIcon": {
+      "$ref": "raw/DT_PalRichTextControlKeyIcon.schema.json"
+    },
+    "DT_PalRichTextStyle": {
+      "$ref": "raw/DT_PalRichTextStyle.schema.json"
+    },
+    "DT_ItemIconDataTable_Common": {
+      "$ref": "raw/DT_ItemIconDataTable_Common.schema.json"
+    },
+    "DT_BuildObjectIconDataTable_Common": {
+      "$ref": "raw/DT_BuildObjectIconDataTable_Common.schema.json"
+    },
+    "DT_TechnologyIconData": {
+      "$ref": "raw/DT_TechnologyIconData.schema.json"
+    },
+    "DT_partnerSkillIconDataTable": {
+      "$ref": "raw/DT_partnerSkillIconDataTable.schema.json"
+    },
+    "DT_UI_Common_Text_Common": {
+      "$ref": "raw/DT_UI_Common_Text_Common.schema.json"
+    },
+    "DT_PalHumanParameter_Common": {
+      "$ref": "raw/DT_PalHumanParameter_Common.schema.json"
+    },
+    "DT_BaseCampWorkerEventDataTable": {
+      "$ref": "raw/DT_BaseCampWorkerEventDataTable.schema.json"
+    },
+    "DT_OptionWorldPresetTable": {
+      "$ref": "raw/DT_OptionWorldPresetTable.schema.json"
+    },
+    "DT_OptionWorldModePresetTable": {
+      "$ref": "raw/DT_OptionWorldModePresetTable.schema.json"
+    },
+    "DT_OptionGraphicsTable": {
+      "$ref": "raw/DT_OptionGraphicsTable.schema.json"
+    },
+    "DT_PalRaidBoss_Common": {
+      "$ref": "raw/DT_PalRaidBoss_Common.schema.json"
+    },
+    "DT_BaseCampWorkerSickDataTable": {
+      "$ref": "raw/DT_BaseCampWorkerSickDataTable.schema.json"
+    },
+    "DT_BaseCampTask": {
+      "$ref": "raw/DT_BaseCampTask.schema.json"
+    },
+    "DT_PalQuestLocationData": {
+      "$ref": "raw/DT_PalQuestLocationData.schema.json"
+    },
+    "DT_PalBossNPCIcon_Common": {
+      "$ref": "raw/DT_PalBossNPCIcon_Common.schema.json"
+    },
+    "DT_PalBPClass_Common": {
+      "$ref": "raw/DT_PalBPClass_Common.schema.json"
+    },
+    "DT_PalCharacterIconDataTable_Common": {
+      "$ref": "raw/DT_PalCharacterIconDataTable_Common.schema.json"
+    },
+    "DT_PalCharacterIconDataTable_SkinOverride_Common": {
+      "$ref": "raw/DT_PalCharacterIconDataTable_SkinOverride_Common.schema.json"
+    },
+    "DT_PalDropItem_Common": {
+      "$ref": "raw/DT_PalDropItem_Common.schema.json"
+    },
+    "DT_PalMonsterParameter_Common": {
+      "$ref": "raw/DT_PalMonsterParameter_Common.schema.json"
+    },
+    "DT_NPCOtomoWaza": {
+      "$ref": "raw/DT_NPCOtomoWaza.schema.json"
+    },
+    "DT_PartnerSkill": {
+      "$ref": "raw/DT_PartnerSkill.schema.json"
+    },
+    "DT_TalentUpItem": {
+      "$ref": "raw/DT_TalentUpItem.schema.json"
+    },
+    "DT_PalAwakeningItemElement": {
+      "$ref": "raw/DT_PalAwakeningItemElement.schema.json"
+    },
+    "DT_GainWorkSuitabilityRankItem": {
+      "$ref": "raw/DT_GainWorkSuitabilityRankItem.schema.json"
+    },
+    "DT_GainStatusPointsItem": {
+      "$ref": "raw/DT_GainStatusPointsItem.schema.json"
+    },
+    "DT_FriendshipRankTable": {
+      "$ref": "raw/DT_FriendshipRankTable.schema.json"
+    },
+    "DT_PalSizeParameter": {
+      "$ref": "raw/DT_PalSizeParameter.schema.json"
+    },
+    "DT_PalPlayerParameter": {
+      "$ref": "raw/DT_PalPlayerParameter.schema.json"
+    },
+    "DT_PalCombiUnique": {
+      "$ref": "raw/DT_PalCombiUnique.schema.json"
+    },
+    "DT_CapturedCagePal": {
+      "$ref": "raw/DT_CapturedCagePal.schema.json"
+    },
+    "DT_ArenaUnusableItemTable": {
+      "$ref": "raw/DT_ArenaUnusableItemTable.schema.json"
+    },
+    "DT_ArenaRankingNPCIconTable": {
+      "$ref": "raw/DT_ArenaRankingNPCIconTable.schema.json"
+    },
+    "DT_PalExpTable_V1": {
+      "$ref": "raw/DT_PalExpTable_V1.schema.json"
+    },
+    "DT_PalExpTable": {
+      "$ref": "raw/DT_PalExpTable.schema.json"
+    },
+    "DT_PalCaptureBonusExpTable": {
+      "$ref": "raw/DT_PalCaptureBonusExpTable.schema.json"
+    },
+    "DT_AreaFindBonusExpTableReferenceNum": {
+      "$ref": "raw/DT_AreaFindBonusExpTableReferenceNum.schema.json"
+    },
+    "DT_FishingBaitItem": {
+      "$ref": "raw/DT_FishingBaitItem.schema.json"
+    },
+    "DT_SoundSourceRadius": {
+      "$ref": "raw/DT_SoundSourceRadius.schema.json"
+    },
+    "DT_GliderMeshDataTble": {
+      "$ref": "raw/DT_GliderMeshDataTble.schema.json"
+    },
+    "DT_CharacterCreationMeshPresetTable_Equipments": {
+      "$ref": "raw/DT_CharacterCreationMeshPresetTable_Equipments.schema.json"
+    },
+    "DT_ItemDataTable_Common": {
+      "$ref": "raw/DT_ItemDataTable_Common.schema.json"
+    },
+    "DT_PalStaticItemIDRedirectData": {
+      "$ref": "raw/DT_PalStaticItemIDRedirectData.schema.json"
+    },
+    "DT_MapObjectAssignData_Common": {
+      "$ref": "raw/DT_MapObjectAssignData_Common.schema.json"
+    },
+    "DT_ItemRecipeDataTable_Common": {
+      "$ref": "raw/DT_ItemRecipeDataTable_Common.schema.json"
+    },
+    "DT_ItemShopCreateData_Common": {
+      "$ref": "raw/DT_ItemShopCreateData_Common.schema.json"
+    },
+    "DT_ItemShopLotteryData_Common": {
+      "$ref": "raw/DT_ItemShopLotteryData_Common.schema.json"
+    },
+    "DT_BuildObjectDataTable_Common": {
+      "$ref": "raw/DT_BuildObjectDataTable_Common.schema.json"
+    },
+    "DT_MapObjectItemProductDataTable_Common": {
+      "$ref": "raw/DT_MapObjectItemProductDataTable_Common.schema.json"
+    },
+    "DT_MapObjectMasterDataTable_EnemyCamp": {
+      "$ref": "raw/DT_MapObjectMasterDataTable_EnemyCamp.schema.json"
+    },
+    "DT_MapObjectMasterDataTable_Common": {
+      "$ref": "raw/DT_MapObjectMasterDataTable_Common.schema.json"
+    },
+    "DT_TechnologyRecipeUnlock_Common": {
+      "$ref": "raw/DT_TechnologyRecipeUnlock_Common.schema.json"
+    },
+    "DT_SkillDescText_Common": {
+      "$ref": "raw/DT_SkillDescText_Common.schema.json"
+    },
+    "DT_UniqueNPCText_Common": {
+      "$ref": "raw/DT_UniqueNPCText_Common.schema.json"
+    },
+    "DT_WorldSecurity_CrimeMasterDataTable": {
+      "$ref": "raw/DT_WorldSecurity_CrimeMasterDataTable.schema.json"
+    },
+    "DT_WorldMapAreaData": {
+      "$ref": "raw/DT_WorldMapAreaData.schema.json"
+    },
+    "DT_BossSpawnerLoactionData": {
+      "$ref": "raw/DT_BossSpawnerLoactionData.schema.json"
+    },
+    "DT_PartnerSkillAppendText": {
+      "$ref": "raw/DT_PartnerSkillAppendText.schema.json"
+    },
+    "DT_PalShortDescriptionText": {
+      "$ref": "raw/DT_PalShortDescriptionText.schema.json"
+    },
+    "DT_PalLongDescriptionText": {
+      "$ref": "raw/DT_PalLongDescriptionText.schema.json"
+    },
+    "DT_PalFirstActivatedInfoText": {
+      "$ref": "raw/DT_PalFirstActivatedInfoText.schema.json"
+    },
+    "DT_NoteDescText": {
+      "$ref": "raw/DT_NoteDescText.schema.json"
+    },
+    "DT_MapRespawnPointInfoText": {
+      "$ref": "raw/DT_MapRespawnPointInfoText.schema.json"
+    },
+    "DT_LabResearchText": {
+      "$ref": "raw/DT_LabResearchText.schema.json"
+    },
+    "DT_HelpGuideDescText": {
+      "$ref": "raw/DT_HelpGuideDescText.schema.json"
+    },
+    "DT_FishPondTargetTypeNameText": {
+      "$ref": "raw/DT_FishPondTargetTypeNameText.schema.json"
+    },
+    "DT_DungeonNameText": {
+      "$ref": "raw/DT_DungeonNameText.schema.json"
+    },
+    "DT_CharacterTeamMissionText": {
+      "$ref": "raw/DT_CharacterTeamMissionText.schema.json"
+    },
+    "DT_BaseCampWorkerEventText": {
+      "$ref": "raw/DT_BaseCampWorkerEventText.schema.json"
+    },
+    "DT_PalWildSpawner": {
+      "$ref": "raw/DT_PalWildSpawner.schema.json"
+    },
+    "DT_PalSpawnerPlacement": {
+      "$ref": "raw/DT_PalSpawnerPlacement.schema.json"
+    },
+    "DT_PalRandomizer": {
+      "$ref": "raw/DT_PalRandomizer.schema.json"
+    },
+    "DT_PlayerStatusRankMasterDataTable": {
+      "$ref": "raw/DT_PlayerStatusRankMasterDataTable.schema.json"
+    },
+    "DT_PartnerSkillParameter": {
+      "$ref": "raw/DT_PartnerSkillParameter.schema.json"
+    },
+    "DT_PalShopCreateData": {
+      "$ref": "raw/DT_PalShopCreateData.schema.json"
+    },
+    "DT_OperatingTablePassiveSkillDataTable": {
+      "$ref": "raw/DT_OperatingTablePassiveSkillDataTable.schema.json"
+    },
+    "DT_MapObjectSpawnerDataTable": {
+      "$ref": "raw/DT_MapObjectSpawnerDataTable.schema.json"
+    },
+    "DT_MapObjectLotteryDataTable": {
+      "$ref": "raw/DT_MapObjectLotteryDataTable.schema.json"
+    },
+    "DT_MapObjectFarmSkillFruitsLottery": {
+      "$ref": "raw/DT_MapObjectFarmSkillFruitsLottery.schema.json"
+    },
+    "DT_MapObjectFarmCrop": {
+      "$ref": "raw/DT_MapObjectFarmCrop.schema.json"
+    },
+    "DT_LabResearchDataTable": {
+      "$ref": "raw/DT_LabResearchDataTable.schema.json"
+    },
+    "DT_NPCEmoteLotteryDataTable": {
+      "$ref": "raw/DT_NPCEmoteLotteryDataTable.schema.json"
+    },
+    "DT_ItemPickupDataTable": {
+      "$ref": "raw/DT_ItemPickupDataTable.schema.json"
+    },
+    "DT_ItemLotteryDataTable": {
+      "$ref": "raw/DT_ItemLotteryDataTable.schema.json"
+    },
+    "DT_PalFishShadowDataTable": {
+      "$ref": "raw/DT_PalFishShadowDataTable.schema.json"
+    },
+    "DT_PalFishPondLotteryNameDataTable": {
+      "$ref": "raw/DT_PalFishPondLotteryNameDataTable.schema.json"
+    },
+    "DT_PalFishPondLotteryDataTable": {
+      "$ref": "raw/DT_PalFishPondLotteryDataTable.schema.json"
+    },
+    "DT_PalFishingSpotLotteryNameDataTable": {
+      "$ref": "raw/DT_PalFishingSpotLotteryNameDataTable.schema.json"
+    },
+    "DT_PalFishingSpotLotteryDataTable": {
+      "$ref": "raw/DT_PalFishingSpotLotteryDataTable.schema.json"
+    },
+    "DT_DungeonSpawnAreaDataTable": {
+      "$ref": "raw/DT_DungeonSpawnAreaDataTable.schema.json"
+    },
+    "DT_DungeonRewardSpawnerLotteryDataTable": {
+      "$ref": "raw/DT_DungeonRewardSpawnerLotteryDataTable.schema.json"
+    },
+    "DT_DungeonLevelDataTable": {
+      "$ref": "raw/DT_DungeonLevelDataTable.schema.json"
+    },
+    "DT_DungeonItemLotteryDataTable": {
+      "$ref": "raw/DT_DungeonItemLotteryDataTable.schema.json"
+    },
+    "DT_DungeonEnemySpawnDataTable": {
+      "$ref": "raw/DT_DungeonEnemySpawnDataTable.schema.json"
+    },
+    "DT_FieldLotteryNameDataTable": {
+      "$ref": "raw/DT_FieldLotteryNameDataTable.schema.json"
+    },
+    "DT_CharacterTeamMissionDataTable": {
+      "$ref": "raw/DT_CharacterTeamMissionDataTable.schema.json"
+    },
+    "DT_CharacterTeamMissionChallengeConditionDataTable": {
+      "$ref": "raw/DT_CharacterTeamMissionChallengeConditionDataTable.schema.json"
+    },
+    "DT_CharacterUpgradeMasterDataTable": {
+      "$ref": "raw/DT_CharacterUpgradeMasterDataTable.schema.json"
+    },
+    "DT_BaseCampLevelData": {
+      "$ref": "raw/DT_BaseCampLevelData.schema.json"
+    },
+    "DT_UniqueNPC_Common": {
+      "$ref": "raw/DT_UniqueNPC_Common.schema.json"
+    },
+    "DT_NPCTalkFlow": {
+      "$ref": "raw/DT_NPCTalkFlow.schema.json"
+    },
+    "DT_PassiveSkill_Main_Common": {
+      "$ref": "raw/DT_PassiveSkill_Main_Common.schema.json"
+    },
+    "DT_PassiveSkillEffectCondition": {
+      "$ref": "raw/DT_PassiveSkillEffectCondition.schema.json"
+    },
+    "DT_PalQuestData": {
+      "$ref": "raw/DT_PalQuestData.schema.json"
+    },
+    "DT_WorldMapUIData": {
+      "$ref": "raw/DT_WorldMapUIData.schema.json"
+    },
+    "DT_ItemShopSettingData_Common": {
+      "$ref": "raw/DT_ItemShopSettingData_Common.schema.json"
+    },
+    "DT_WazaDataTable_Common": {
+      "$ref": "raw/DT_WazaDataTable_Common.schema.json"
+    },
+    "DT_WazaMasterLevel_Common": {
+      "$ref": "raw/DT_WazaMasterLevel_Common.schema.json"
+    },
+    "DT_WazaMasterTamago": {
+      "$ref": "raw/DT_WazaMasterTamago.schema.json"
+    },
+    "DT_TutorialTriggerCondtion": {
+      "$ref": "raw/DT_TutorialTriggerCondtion.schema.json"
+    },
+    "DT_TutorialMessage_Text": {
+      "$ref": "raw/DT_TutorialMessage_Text.schema.json"
+    },
+    "DT_SystemLocalize": {
+      "$ref": "raw/DT_SystemLocalize.schema.json"
+    },
+    "DT_CharacterCreationColorPresetTable": {
+      "$ref": "raw/DT_CharacterCreationColorPresetTable.schema.json"
+    },
+    "DT_CharacterCreationMakeInfoPreset": {
+      "$ref": "raw/DT_CharacterCreationMakeInfoPreset.schema.json"
+    },
+    "DT_CharacterCreationMeshPresetTable_Head": {
+      "$ref": "raw/DT_CharacterCreationMeshPresetTable_Head.schema.json"
+    },
+    "DT_CharacterCreationMeshPresetTable_Hair": {
+      "$ref": "raw/DT_CharacterCreationMeshPresetTable_Hair.schema.json"
+    },
+    "DT_CharacterCreationMeshPresetTable_Body": {
+      "$ref": "raw/DT_CharacterCreationMeshPresetTable_Body.schema.json"
+    },
+    "DT_CharacterCreationEyeMaterialPresetTable": {
+      "$ref": "raw/DT_CharacterCreationEyeMaterialPresetTable.schema.json"
+    },
+    "DT_PalGamepadButtonImage": {
+      "$ref": "raw/DT_PalGamepadButtonImage.schema.json"
+    },
+    "DT_PalGameProgressPreset_Common": {
+      "$ref": "raw/DT_PalGameProgressPreset_Common.schema.json"
+    },
+    "DT_PalUICaptureCameraOffsetData": {
+      "$ref": "raw/DT_PalUICaptureCameraOffsetData.schema.json"
+    },
+    "DT_RespawnPointInfo": {
+      "$ref": "raw/DT_RespawnPointInfo.schema.json"
+    },
+    "DT_BiomeEffect": {
+      "$ref": "raw/DT_BiomeEffect.schema.json"
+    },
+    "DT_PlayerDamageCameraShakeTable": {
+      "$ref": "raw/DT_PlayerDamageCameraShakeTable.schema.json"
+    },
+    "DT_PalCurveBallDataTable": {
+      "$ref": "raw/DT_PalCurveBallDataTable.schema.json"
+    },
+    "DT_PaldexDistributionData": {
+      "$ref": "raw/DT_PaldexDistributionData.schema.json"
+    },
+    "DT_LocationUIData": {
+      "$ref": "raw/DT_LocationUIData.schema.json"
+    },
+    "DT_PalPickingGameSettings": {
+      "$ref": "raw/DT_PalPickingGameSettings.schema.json"
+    },
+    "DT_WorldMap_Common_Text": {
+      "$ref": "raw/DT_WorldMap_Common_Text.schema.json"
+    },
+    "DT_TechnologyNameText": {
+      "$ref": "raw/DT_TechnologyNameText.schema.json"
+    },
+    "DT_TechnologyDescText": {
+      "$ref": "raw/DT_TechnologyDescText.schema.json"
+    },
+    "DT_SkillNameText": {
+      "$ref": "raw/DT_SkillNameText.schema.json"
+    },
+    "DT_PalNameText": {
+      "$ref": "raw/DT_PalNameText.schema.json"
+    },
+    "DT_NpcTalkText": {
+      "$ref": "raw/DT_NpcTalkText.schema.json"
+    },
+    "DT_NamePrefixText": {
+      "$ref": "raw/DT_NamePrefixText.schema.json"
+    },
+    "DT_MapObjectNameText": {
+      "$ref": "raw/DT_MapObjectNameText.schema.json"
+    },
+    "DT_ItemNameText": {
+      "$ref": "raw/DT_ItemNameText.schema.json"
+    },
+    "DT_ItemDescriptionText": {
+      "$ref": "raw/DT_ItemDescriptionText.schema.json"
+    },
+    "DT_HumanNameText": {
+      "$ref": "raw/DT_HumanNameText.schema.json"
+    },
+    "DT_BuildObjectDescText": {
+      "$ref": "raw/DT_BuildObjectDescText.schema.json"
+    },
+    "DT_BuildObjectIconDataTable": {
+      "$ref": "raw/DT_BuildObjectIconDataTable.schema.json"
+    },
+    "DT_ItemIconDataTable": {
+      "$ref": "raw/DT_ItemIconDataTable.schema.json"
+    },
+    "DT_UI_Common_Text": {
+      "$ref": "raw/DT_UI_Common_Text.schema.json"
+    },
+    "DT_PalRaidBoss": {
+      "$ref": "raw/DT_PalRaidBoss.schema.json"
+    },
+    "DT_PalMonsterParameter": {
+      "$ref": "raw/DT_PalMonsterParameter.schema.json"
+    },
+    "DT_PalHumanParameter": {
+      "$ref": "raw/DT_PalHumanParameter.schema.json"
+    },
+    "DT_PalDropItem": {
+      "$ref": "raw/DT_PalDropItem.schema.json"
+    },
+    "DT_PalCharacterIconDataTable_SkinOverride": {
+      "$ref": "raw/DT_PalCharacterIconDataTable_SkinOverride.schema.json"
+    },
+    "DT_PalCharacterIconDataTable": {
+      "$ref": "raw/DT_PalCharacterIconDataTable.schema.json"
+    },
+    "DT_PalBPClass": {
+      "$ref": "raw/DT_PalBPClass.schema.json"
+    },
+    "DT_PalBossNPCIcon": {
+      "$ref": "raw/DT_PalBossNPCIcon.schema.json"
+    },
+    "DT_ItemDataTable": {
+      "$ref": "raw/DT_ItemDataTable.schema.json"
+    },
+    "DT_MapObjectAssignData": {
+      "$ref": "raw/DT_MapObjectAssignData.schema.json"
+    },
+    "DT_UniqueNPCText": {
+      "$ref": "raw/DT_UniqueNPCText.schema.json"
+    },
+    "DT_SkillDescText": {
+      "$ref": "raw/DT_SkillDescText.schema.json"
+    },
+    "DT_TechnologyRecipeUnlock": {
+      "$ref": "raw/DT_TechnologyRecipeUnlock.schema.json"
+    },
+    "DT_MapObjectMasterDataTable": {
+      "$ref": "raw/DT_MapObjectMasterDataTable.schema.json"
+    },
+    "DT_MapObjectItemProductDataTable": {
+      "$ref": "raw/DT_MapObjectItemProductDataTable.schema.json"
+    },
+    "DT_BuildObjectDataTable": {
+      "$ref": "raw/DT_BuildObjectDataTable.schema.json"
+    },
+    "DT_ItemShopLotteryData": {
+      "$ref": "raw/DT_ItemShopLotteryData.schema.json"
+    },
+    "DT_ItemShopCreateData": {
+      "$ref": "raw/DT_ItemShopCreateData.schema.json"
+    },
+    "DT_ItemRecipeDataTable": {
+      "$ref": "raw/DT_ItemRecipeDataTable.schema.json"
+    },
+    "DT_UniqueNPC": {
+      "$ref": "raw/DT_UniqueNPC.schema.json"
+    },
+    "DT_PassiveSkill_Main": {
+      "$ref": "raw/DT_PassiveSkill_Main.schema.json"
+    },
+    "DT_ItemShopSettingData": {
+      "$ref": "raw/DT_ItemShopSettingData.schema.json"
+    },
+    "DT_WazaMasterLevel": {
+      "$ref": "raw/DT_WazaMasterLevel.schema.json"
+    },
+    "DT_WazaDataTable": {
+      "$ref": "raw/DT_WazaDataTable.schema.json"
+    },
+    "DT_PalGameProgressPreset": {
+      "$ref": "raw/DT_PalGameProgressPreset.schema.json"
+    },
+    "DT_TalkCamera": {
+      "$ref": "raw/DT_TalkCamera.schema.json"
+    },
+    "DT_NPCAppearFlagDable": {
+      "$ref": "raw/DT_NPCAppearFlagDable.schema.json"
+    },
+    "DT_HelpGuideMasterDataTable": {
+      "$ref": "raw/DT_HelpGuideMasterDataTable.schema.json"
+    },
+    "DT_HelpGuideTextureDataTable": {
+      "$ref": "raw/DT_HelpGuideTextureDataTable.schema.json"
+    },
+    "DT_AchivementRewardNPC": {
+      "$ref": "raw/DT_AchivementRewardNPC.schema.json"
+    },
+    "DT_ItemRequestNPCData": {
+      "$ref": "raw/DT_ItemRequestNPCData.schema.json"
+    },
+    "DT_PalDisplayNPCData": {
+      "$ref": "raw/DT_PalDisplayNPCData.schema.json"
+    },
+    "DT_Battle_Royale_Map_a_x0_y1_NewRow": {
+      "$ref": "raw/DT_Battle_Royale_Map_a_x0_y1_NewRow.schema.json"
+    },
+    "DT_Battle_Royale_Map_a_x0_y1_NewRow_0": {
+      "$ref": "raw/DT_Battle_Royale_Map_a_x0_y1_NewRow_0.schema.json"
+    },
+    "DT_Battle_Royale_Map_a_x0_y1_NewRow_1": {
+      "$ref": "raw/DT_Battle_Royale_Map_a_x0_y1_NewRow_1.schema.json"
+    },
+    "DT_Battle_Royale_Map_a_x0_y1_NewRow_2": {
+      "$ref": "raw/DT_Battle_Royale_Map_a_x0_y1_NewRow_2.schema.json"
+    },
+    "DT_Battle_Royale_Map_a_x0_y1_NewRow_3": {
+      "$ref": "raw/DT_Battle_Royale_Map_a_x0_y1_NewRow_3.schema.json"
+    },
+    "DT_Battle_Royale_Map_a_x0_y1_NewRow_4": {
+      "$ref": "raw/DT_Battle_Royale_Map_a_x0_y1_NewRow_4.schema.json"
+    },
+    "DT_Battle_Royale_Map_a_x1_y1_NewRow": {
+      "$ref": "raw/DT_Battle_Royale_Map_a_x1_y1_NewRow.schema.json"
+    },
+    "DT_Battle_Royale_Map_a_x1_y1_NewRow_0": {
+      "$ref": "raw/DT_Battle_Royale_Map_a_x1_y1_NewRow_0.schema.json"
+    },
+    "DT_Battle_Royale_Map_a_x1_y1_NewRow_1": {
+      "$ref": "raw/DT_Battle_Royale_Map_a_x1_y1_NewRow_1.schema.json"
+    },
+    "DT_Battle_Royale_Map_a_x1_y1_NewRow_2": {
+      "$ref": "raw/DT_Battle_Royale_Map_a_x1_y1_NewRow_2.schema.json"
+    },
+    "DT_Battle_Royale_Map_a_x1_y1_NewRow_3": {
+      "$ref": "raw/DT_Battle_Royale_Map_a_x1_y1_NewRow_3.schema.json"
+    },
+    "DT_Battle_Royale_Map_a_x1_y1_NewRow_4": {
+      "$ref": "raw/DT_Battle_Royale_Map_a_x1_y1_NewRow_4.schema.json"
+    },
+    "DT_pal_test_ground_NewRow": {
+      "$ref": "raw/DT_pal_test_ground_NewRow.schema.json"
+    },
+    "DT_pal_test_ground_NewRow_0": {
+      "$ref": "raw/DT_pal_test_ground_NewRow_0.schema.json"
+    },
+    "DT_PL_MainWorld_FoliageType001": {
+      "$ref": "raw/DT_PL_MainWorld_FoliageType001.schema.json"
+    },
+    "DT_PL_MainWorld_2_Stylescape_FoliageType0001": {
+      "$ref": "raw/DT_PL_MainWorld_2_Stylescape_FoliageType0001.schema.json"
+    },
+    "DT_PL_MainWorld_2_Stylescape_FoliageType002": {
+      "$ref": "raw/DT_PL_MainWorld_2_Stylescape_FoliageType002.schema.json"
+    },
+    "DT_PL_MainWorld_2_Stylescape_FoliageType002_0": {
+      "$ref": "raw/DT_PL_MainWorld_2_Stylescape_FoliageType002_0.schema.json"
+    },
+    "DT_PL_MainWorld_2_Stylescape_FoliageType002_1": {
+      "$ref": "raw/DT_PL_MainWorld_2_Stylescape_FoliageType002_1.schema.json"
+    },
+    "DT_PL_MainWorld_2_Stylescape_FoliageType002_2": {
+      "$ref": "raw/DT_PL_MainWorld_2_Stylescape_FoliageType002_2.schema.json"
+    },
+    "DT_PL_MainWorld_2_Stylescape_FoliageType002_3": {
+      "$ref": "raw/DT_PL_MainWorld_2_Stylescape_FoliageType002_3.schema.json"
+    },
+    "DT_PL_MainWorld_2_Stylescape_FoliageType002_4": {
+      "$ref": "raw/DT_PL_MainWorld_2_Stylescape_FoliageType002_4.schema.json"
+    },
+    "DT_PL_MainWorld_2_Stylescape_FoliageType002_5": {
+      "$ref": "raw/DT_PL_MainWorld_2_Stylescape_FoliageType002_5.schema.json"
+    },
+    "DT_PL_TestSandbox_Hisa_NewRow": {
+      "$ref": "raw/DT_PL_TestSandbox_Hisa_NewRow.schema.json"
+    },
+    "DT_PL_TestSandbox_Hisa_NewRow_0": {
+      "$ref": "raw/DT_PL_TestSandbox_Hisa_NewRow_0.schema.json"
+    },
+    "DT_PV_0027_MainWorld_2_cp01_FoliageType0001": {
+      "$ref": "raw/DT_PV_0027_MainWorld_2_cp01_FoliageType0001.schema.json"
+    },
+    "DT_PV_0027_MainWorld_2_cp01_FoliageType002": {
+      "$ref": "raw/DT_PV_0027_MainWorld_2_cp01_FoliageType002.schema.json"
+    },
+    "DT_PV_0027_MainWorld_2_cp01_FoliageType002_0": {
+      "$ref": "raw/DT_PV_0027_MainWorld_2_cp01_FoliageType002_0.schema.json"
+    },
+    "DT_PV_0027_MainWorld_2_cp01_FoliageType002_1": {
+      "$ref": "raw/DT_PV_0027_MainWorld_2_cp01_FoliageType002_1.schema.json"
+    },
+    "DT_PV_0027_MainWorld_2_cp01_FoliageType002_2": {
+      "$ref": "raw/DT_PV_0027_MainWorld_2_cp01_FoliageType002_2.schema.json"
+    },
+    "DT_PV_0027_MainWorld_2_cp01_FoliageType002_3": {
+      "$ref": "raw/DT_PV_0027_MainWorld_2_cp01_FoliageType002_3.schema.json"
+    },
+    "DT_PV_0027_MainWorld_2_cp01_FoliageType002_4": {
+      "$ref": "raw/DT_PV_0027_MainWorld_2_cp01_FoliageType002_4.schema.json"
+    },
+    "DT_PV_0027_MainWorld_2_cp01_FoliageType002_5": {
+      "$ref": "raw/DT_PV_0027_MainWorld_2_cp01_FoliageType002_5.schema.json"
+    },
+    "DT_S_TestMainWorld_FoliageType001": {
+      "$ref": "raw/DT_S_TestMainWorld_FoliageType001.schema.json"
+    },
+    "DT_SL_MainWorld_3_RealBiomes_TestMap_x00_y00_NewRow_5": {
+      "$ref": "raw/DT_SL_MainWorld_3_RealBiomes_TestMap_x00_y00_NewRow_5.schema.json"
+    },
+    "DT_SL_MainWorld_3_RealBiomes_TestMap_x00_y00_NewRow_7": {
+      "$ref": "raw/DT_SL_MainWorld_3_RealBiomes_TestMap_x00_y00_NewRow_7.schema.json"
+    },
+    "DT_SL_MainWorld_3_RealBiomes_TestMap_x00_y00_NewRow_8": {
+      "$ref": "raw/DT_SL_MainWorld_3_RealBiomes_TestMap_x00_y00_NewRow_8.schema.json"
+    },
+    "DT_SL_MainWorld_3_RealBiomes_TestMap_x00_y00_NewRow_9": {
+      "$ref": "raw/DT_SL_MainWorld_3_RealBiomes_TestMap_x00_y00_NewRow_9.schema.json"
+    },
+    "DT_SL_MainWorld_3_RealBiomes_TestMap_x00_y00_NewRow_10": {
+      "$ref": "raw/DT_SL_MainWorld_3_RealBiomes_TestMap_x00_y00_NewRow_10.schema.json"
+    },
+    "DT_SL_MainWorld_3_RealBiomes_TestMap_x00_y00_NewRow_11": {
+      "$ref": "raw/DT_SL_MainWorld_3_RealBiomes_TestMap_x00_y00_NewRow_11.schema.json"
+    },
+    "DT_SL_MainWorld_3_RealBiomes_TestMap_x00_y00_NewRow_12": {
+      "$ref": "raw/DT_SL_MainWorld_3_RealBiomes_TestMap_x00_y00_NewRow_12.schema.json"
+    },
+    "DT_SL_MainWorld_3_RealBiomes_TestMap_x00_y00_NewRow_13": {
+      "$ref": "raw/DT_SL_MainWorld_3_RealBiomes_TestMap_x00_y00_NewRow_13.schema.json"
+    },
+    "DT_SL_MainWorld_3_RealBiomes_TestMap_x00_y00_NewRow_14": {
+      "$ref": "raw/DT_SL_MainWorld_3_RealBiomes_TestMap_x00_y00_NewRow_14.schema.json"
+    },
+    "DT_SL_MainWorld_3_RealBiomes_TestMap_x00_y00_NewRow_15": {
+      "$ref": "raw/DT_SL_MainWorld_3_RealBiomes_TestMap_x00_y00_NewRow_15.schema.json"
+    },
+    "DT_SL_TestFoliageExportMap_x00_y00_FT_TestFoliageExport_001": {
+      "$ref": "raw/DT_SL_TestFoliageExportMap_x00_y00_FT_TestFoliageExport_001.schema.json"
+    },
+    "DT_SL_TestFoliageExportMap_x00_y00_FT_TestFoliageExport_002": {
+      "$ref": "raw/DT_SL_TestFoliageExportMap_x00_y00_FT_TestFoliageExport_002.schema.json"
+    },
+    "DT_NoteMasterDataTable": {
+      "$ref": "raw/DT_NoteMasterDataTable.schema.json"
+    },
+    "DT_NoteTextureDataTable": {
+      "$ref": "raw/DT_NoteTextureDataTable.schema.json"
+    },
+    "DT_Gift_PresentNPC_01": {
+      "$ref": "raw/DT_Gift_PresentNPC_01.schema.json"
+    },
+    "DT_GiftBakedMushroom": {
+      "$ref": "raw/DT_GiftBakedMushroom.schema.json"
+    },
+    "DT_GiftChromium": {
+      "$ref": "raw/DT_GiftChromium.schema.json"
+    },
+    "DT_GiftCloth": {
+      "$ref": "raw/DT_GiftCloth.schema.json"
+    },
+    "DT_GiftCloth2": {
+      "$ref": "raw/DT_GiftCloth2.schema.json"
+    },
+    "DT_GiftPalCrystal": {
+      "$ref": "raw/DT_GiftPalCrystal.schema.json"
+    },
+    "DT_GiftPan": {
+      "$ref": "raw/DT_GiftPan.schema.json"
+    },
+    "DT_GiftRainbowCrystal": {
+      "$ref": "raw/DT_GiftRainbowCrystal.schema.json"
+    },
+    "DT_GiftSkyIslandOre": {
+      "$ref": "raw/DT_GiftSkyIslandOre.schema.json"
+    },
+    "DT_GiftSulfur": {
+      "$ref": "raw/DT_GiftSulfur.schema.json"
+    },
+    "DT_GiftVegetable": {
+      "$ref": "raw/DT_GiftVegetable.schema.json"
+    },
+    "DT_VisitorNPCPresentLottery_Ambassador01": {
+      "$ref": "raw/DT_VisitorNPCPresentLottery_Ambassador01.schema.json"
+    },
+    "DT_VisitorNPCPresentLottery_Blacksmith01": {
+      "$ref": "raw/DT_VisitorNPCPresentLottery_Blacksmith01.schema.json"
+    },
+    "DT_VisitorNPCPresentLottery_Epicure01": {
+      "$ref": "raw/DT_VisitorNPCPresentLottery_Epicure01.schema.json"
+    },
+    "DT_SkinAssetMapTable_Common": {
+      "$ref": "raw/DT_SkinAssetMapTable_Common.schema.json"
+    },
+    "DT_SkinDataTable_Common": {
+      "$ref": "raw/DT_SkinDataTable_Common.schema.json"
+    },
+    "DT_SkinStaticClassDataTable": {
+      "$ref": "raw/DT_SkinStaticClassDataTable.schema.json"
+    },
+    "DT_SoundIDList": {
+      "$ref": "raw/DT_SoundIDList.schema.json"
+    },
+    "DT_PalSignBoardIconImage": {
+      "$ref": "raw/DT_PalSignBoardIconImage.schema.json"
+    },
+    "DT_PalSignBoardRichTextStyle": {
+      "$ref": "raw/DT_PalSignBoardRichTextStyle.schema.json"
+    },
+    "DT_ItemActorClassDataTable": {
+      "$ref": "raw/DT_ItemActorClassDataTable.schema.json"
+    },
+    "DT_ItemDynamicClassDataTable": {
+      "$ref": "raw/DT_ItemDynamicClassDataTable.schema.json"
+    },
+    "DT_ItemStaticClassDataTable": {
+      "$ref": "raw/DT_ItemStaticClassDataTable.schema.json"
+    },
+    "DT_ItemStaticMeshDataTable": {
+      "$ref": "raw/DT_ItemStaticMeshDataTable.schema.json"
+    },
+    "DefaultGeometrySurfacePropertiesTable": {
+      "$ref": "raw/DefaultGeometrySurfacePropertiesTable.schema.json"
+    },
+    "DefaultReverbAssignmentTable": {
+      "$ref": "raw/DefaultReverbAssignmentTable.schema.json"
+    },
+    "DT_SkinAssetMapTable": {
+      "$ref": "raw/DT_SkinAssetMapTable.schema.json"
+    },
+    "DT_SkinDataTable": {
+      "$ref": "raw/DT_SkinDataTable.schema.json"
+    }
+  }
+}

@@ -1,0 +1,817 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "Level": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "HPLevel": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "SPLevel": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "AttackLevel": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "WorkLevel": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "WeightLevel": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "CaptureLevel": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "OtomoPals": {
+        "oneOf": [
+          {
+            "type": "array",
+            "description": "ArrayProperty",
+            "items": {
+              "type": "object",
+              "description": "StructProperty",
+              "properties": {
+                "PalName": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "Key": {
+                      "type": "string",
+                      "description": "FName"
+                    }
+                  }
+                },
+                "Level": {
+                  "type": "integer",
+                  "description": "IntProperty"
+                },
+                "Rank": {
+                  "type": "integer",
+                  "description": "IntProperty"
+                },
+                "TalentLevel": {
+                  "type": "integer",
+                  "description": "IntProperty"
+                },
+                "WazaList": {
+                  "oneOf": [
+                    {
+                      "type": "array",
+                      "description": "ArrayProperty",
+                      "items": {
+                        "type": "string",
+                        "description": "EnumProperty",
+                        "$ref": "../enums.schema.json#/definitions/EPalWazaID"
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "Items": {
+                          "type": "array",
+                          "description": "ArrayProperty",
+                          "items": {
+                            "type": "string",
+                            "description": "EnumProperty",
+                            "$ref": "../enums.schema.json#/definitions/EPalWazaID"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                "PassiveSkill": {
+                  "oneOf": [
+                    {
+                      "type": "array",
+                      "description": "ArrayProperty",
+                      "items": {
+                        "type": "object",
+                        "description": "StructProperty",
+                        "properties": {
+                          "Key": {
+                            "type": "string",
+                            "description": "FName"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "Items": {
+                          "type": "array",
+                          "description": "ArrayProperty",
+                          "items": {
+                            "type": "object",
+                            "description": "StructProperty",
+                            "properties": {
+                              "Key": {
+                                "type": "string",
+                                "description": "FName"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                "StatusRank": {
+                  "oneOf": [
+                    {
+                      "type": "array",
+                      "description": "ArrayProperty",
+                      "items": {
+                        "type": "object",
+                        "description": "StructProperty",
+                        "properties": {
+                          "OperationName": {
+                            "type": "string",
+                            "description": "EnumProperty",
+                            "$ref": "../enums.schema.json#/definitions/EPalCharacterStatusOperationName"
+                          },
+                          "Rank": {
+                            "type": "integer",
+                            "description": "IntProperty"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "Items": {
+                          "type": "array",
+                          "description": "ArrayProperty",
+                          "items": {
+                            "type": "object",
+                            "description": "StructProperty",
+                            "properties": {
+                              "OperationName": {
+                                "type": "string",
+                                "description": "EnumProperty",
+                                "$ref": "../enums.schema.json#/definitions/EPalCharacterStatusOperationName"
+                              },
+                              "Rank": {
+                                "type": "integer",
+                                "description": "IntProperty"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                "FriendshipRank": {
+                  "type": "integer",
+                  "description": "IntProperty"
+                },
+                "bIsAwakening": {
+                  "type": "boolean",
+                  "description": "BoolProperty"
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Items": {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "PalName": {
+                      "type": "object",
+                      "description": "StructProperty",
+                      "properties": {
+                        "Key": {
+                          "type": "string",
+                          "description": "FName"
+                        }
+                      }
+                    },
+                    "Level": {
+                      "type": "integer",
+                      "description": "IntProperty"
+                    },
+                    "Rank": {
+                      "type": "integer",
+                      "description": "IntProperty"
+                    },
+                    "TalentLevel": {
+                      "type": "integer",
+                      "description": "IntProperty"
+                    },
+                    "WazaList": {
+                      "oneOf": [
+                        {
+                          "type": "array",
+                          "description": "ArrayProperty",
+                          "items": {
+                            "type": "string",
+                            "description": "EnumProperty",
+                            "$ref": "../enums.schema.json#/definitions/EPalWazaID"
+                          }
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "Items": {
+                              "type": "array",
+                              "description": "ArrayProperty",
+                              "items": {
+                                "type": "string",
+                                "description": "EnumProperty",
+                                "$ref": "../enums.schema.json#/definitions/EPalWazaID"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "PassiveSkill": {
+                      "oneOf": [
+                        {
+                          "type": "array",
+                          "description": "ArrayProperty",
+                          "items": {
+                            "type": "object",
+                            "description": "StructProperty",
+                            "properties": {
+                              "Key": {
+                                "type": "string",
+                                "description": "FName"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "Items": {
+                              "type": "array",
+                              "description": "ArrayProperty",
+                              "items": {
+                                "type": "object",
+                                "description": "StructProperty",
+                                "properties": {
+                                  "Key": {
+                                    "type": "string",
+                                    "description": "FName"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "StatusRank": {
+                      "oneOf": [
+                        {
+                          "type": "array",
+                          "description": "ArrayProperty",
+                          "items": {
+                            "type": "object",
+                            "description": "StructProperty",
+                            "properties": {
+                              "OperationName": {
+                                "type": "string",
+                                "description": "EnumProperty",
+                                "$ref": "../enums.schema.json#/definitions/EPalCharacterStatusOperationName"
+                              },
+                              "Rank": {
+                                "type": "integer",
+                                "description": "IntProperty"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "Items": {
+                              "type": "array",
+                              "description": "ArrayProperty",
+                              "items": {
+                                "type": "object",
+                                "description": "StructProperty",
+                                "properties": {
+                                  "OperationName": {
+                                    "type": "string",
+                                    "description": "EnumProperty",
+                                    "$ref": "../enums.schema.json#/definitions/EPalCharacterStatusOperationName"
+                                  },
+                                  "Rank": {
+                                    "type": "integer",
+                                    "description": "IntProperty"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "FriendshipRank": {
+                      "type": "integer",
+                      "description": "IntProperty"
+                    },
+                    "bIsAwakening": {
+                      "type": "boolean",
+                      "description": "BoolProperty"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "CapturedPals": {
+        "oneOf": [
+          {
+            "type": "array",
+            "description": "ArrayProperty",
+            "items": {
+              "type": "object",
+              "description": "StructProperty",
+              "properties": {
+                "PalInfo": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "PalName": {
+                      "type": "object",
+                      "description": "StructProperty",
+                      "properties": {
+                        "Key": {
+                          "type": "string",
+                          "description": "FName"
+                        }
+                      }
+                    },
+                    "Level": {
+                      "type": "integer",
+                      "description": "IntProperty"
+                    },
+                    "Rank": {
+                      "type": "integer",
+                      "description": "IntProperty"
+                    },
+                    "TalentLevel": {
+                      "type": "integer",
+                      "description": "IntProperty"
+                    },
+                    "WazaList": {
+                      "oneOf": [
+                        {
+                          "type": "array",
+                          "description": "ArrayProperty",
+                          "items": {
+                            "type": "string",
+                            "description": "EnumProperty",
+                            "$ref": "../enums.schema.json#/definitions/EPalWazaID"
+                          }
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "Items": {
+                              "type": "array",
+                              "description": "ArrayProperty",
+                              "items": {
+                                "type": "string",
+                                "description": "EnumProperty",
+                                "$ref": "../enums.schema.json#/definitions/EPalWazaID"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "PassiveSkill": {
+                      "oneOf": [
+                        {
+                          "type": "array",
+                          "description": "ArrayProperty",
+                          "items": {
+                            "type": "object",
+                            "description": "StructProperty",
+                            "properties": {
+                              "Key": {
+                                "type": "string",
+                                "description": "FName"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "Items": {
+                              "type": "array",
+                              "description": "ArrayProperty",
+                              "items": {
+                                "type": "object",
+                                "description": "StructProperty",
+                                "properties": {
+                                  "Key": {
+                                    "type": "string",
+                                    "description": "FName"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "StatusRank": {
+                      "oneOf": [
+                        {
+                          "type": "array",
+                          "description": "ArrayProperty",
+                          "items": {
+                            "type": "object",
+                            "description": "StructProperty",
+                            "properties": {
+                              "OperationName": {
+                                "type": "string",
+                                "description": "EnumProperty",
+                                "$ref": "../enums.schema.json#/definitions/EPalCharacterStatusOperationName"
+                              },
+                              "Rank": {
+                                "type": "integer",
+                                "description": "IntProperty"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "Items": {
+                              "type": "array",
+                              "description": "ArrayProperty",
+                              "items": {
+                                "type": "object",
+                                "description": "StructProperty",
+                                "properties": {
+                                  "OperationName": {
+                                    "type": "string",
+                                    "description": "EnumProperty",
+                                    "$ref": "../enums.schema.json#/definitions/EPalCharacterStatusOperationName"
+                                  },
+                                  "Rank": {
+                                    "type": "integer",
+                                    "description": "IntProperty"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "FriendshipRank": {
+                      "type": "integer",
+                      "description": "IntProperty"
+                    },
+                    "bIsAwakening": {
+                      "type": "boolean",
+                      "description": "BoolProperty"
+                    }
+                  }
+                },
+                "Count": {
+                  "type": "integer",
+                  "description": "IntProperty"
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Items": {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "PalInfo": {
+                      "type": "object",
+                      "description": "StructProperty",
+                      "properties": {
+                        "PalName": {
+                          "type": "object",
+                          "description": "StructProperty",
+                          "properties": {
+                            "Key": {
+                              "type": "string",
+                              "description": "FName"
+                            }
+                          }
+                        },
+                        "Level": {
+                          "type": "integer",
+                          "description": "IntProperty"
+                        },
+                        "Rank": {
+                          "type": "integer",
+                          "description": "IntProperty"
+                        },
+                        "TalentLevel": {
+                          "type": "integer",
+                          "description": "IntProperty"
+                        },
+                        "WazaList": {
+                          "oneOf": [
+                            {
+                              "type": "array",
+                              "description": "ArrayProperty",
+                              "items": {
+                                "type": "string",
+                                "description": "EnumProperty",
+                                "$ref": "../enums.schema.json#/definitions/EPalWazaID"
+                              }
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "Items": {
+                                  "type": "array",
+                                  "description": "ArrayProperty",
+                                  "items": {
+                                    "type": "string",
+                                    "description": "EnumProperty",
+                                    "$ref": "../enums.schema.json#/definitions/EPalWazaID"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "PassiveSkill": {
+                          "oneOf": [
+                            {
+                              "type": "array",
+                              "description": "ArrayProperty",
+                              "items": {
+                                "type": "object",
+                                "description": "StructProperty",
+                                "properties": {
+                                  "Key": {
+                                    "type": "string",
+                                    "description": "FName"
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "Items": {
+                                  "type": "array",
+                                  "description": "ArrayProperty",
+                                  "items": {
+                                    "type": "object",
+                                    "description": "StructProperty",
+                                    "properties": {
+                                      "Key": {
+                                        "type": "string",
+                                        "description": "FName"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "StatusRank": {
+                          "oneOf": [
+                            {
+                              "type": "array",
+                              "description": "ArrayProperty",
+                              "items": {
+                                "type": "object",
+                                "description": "StructProperty",
+                                "properties": {
+                                  "OperationName": {
+                                    "type": "string",
+                                    "description": "EnumProperty",
+                                    "$ref": "../enums.schema.json#/definitions/EPalCharacterStatusOperationName"
+                                  },
+                                  "Rank": {
+                                    "type": "integer",
+                                    "description": "IntProperty"
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "Items": {
+                                  "type": "array",
+                                  "description": "ArrayProperty",
+                                  "items": {
+                                    "type": "object",
+                                    "description": "StructProperty",
+                                    "properties": {
+                                      "OperationName": {
+                                        "type": "string",
+                                        "description": "EnumProperty",
+                                        "$ref": "../enums.schema.json#/definitions/EPalCharacterStatusOperationName"
+                                      },
+                                      "Rank": {
+                                        "type": "integer",
+                                        "description": "IntProperty"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "FriendshipRank": {
+                          "type": "integer",
+                          "description": "IntProperty"
+                        },
+                        "bIsAwakening": {
+                          "type": "boolean",
+                          "description": "BoolProperty"
+                        }
+                      }
+                    },
+                    "Count": {
+                      "type": "integer",
+                      "description": "IntProperty"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "LoadoutItems": {
+        "oneOf": [
+          {
+            "type": "array",
+            "description": "ArrayProperty",
+            "items": {
+              "type": "object",
+              "description": "StructProperty",
+              "properties": {
+                "itemRowName": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "Key": {
+                      "type": "string",
+                      "description": "FName"
+                    }
+                  }
+                },
+                "itemNum": {
+                  "type": "integer",
+                  "description": "IntProperty"
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Items": {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "itemRowName": {
+                      "type": "object",
+                      "description": "StructProperty",
+                      "properties": {
+                        "Key": {
+                          "type": "string",
+                          "description": "FName"
+                        }
+                      }
+                    },
+                    "itemNum": {
+                      "type": "integer",
+                      "description": "IntProperty"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Items": {
+        "oneOf": [
+          {
+            "type": "array",
+            "description": "ArrayProperty",
+            "items": {
+              "type": "object",
+              "description": "StructProperty",
+              "properties": {
+                "itemRowName": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "Key": {
+                      "type": "string",
+                      "description": "FName"
+                    }
+                  }
+                },
+                "itemNum": {
+                  "type": "integer",
+                  "description": "IntProperty"
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Items": {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "itemRowName": {
+                      "type": "object",
+                      "description": "StructProperty",
+                      "properties": {
+                        "Key": {
+                          "type": "string",
+                          "description": "FName"
+                        }
+                      }
+                    },
+                    "itemNum": {
+                      "type": "integer",
+                      "description": "IntProperty"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "ExecuteCommands": {
+        "oneOf": [
+          {
+            "type": "array",
+            "description": "ArrayProperty",
+            "items": {
+              "type": "string",
+              "description": "FString"
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Items": {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "string",
+                  "description": "FString"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

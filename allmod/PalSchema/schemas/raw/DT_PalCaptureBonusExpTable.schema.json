@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "BonusExp": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

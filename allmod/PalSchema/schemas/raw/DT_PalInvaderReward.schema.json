@@ -1,0 +1,172 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "GroupName": {
+        "type": "string",
+        "description": "FName"
+      },
+      "ItemId1": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Rate1": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "min1": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Max1": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "ItemId2": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Rate2": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "min2": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Max2": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "ItemId3": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Rate3": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "min3": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Max3": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "ItemId4": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Rate4": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "min4": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Max4": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "ItemId5": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Rate5": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "min5": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Max5": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "ItemId6": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Rate6": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "min6": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Max6": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "ItemId7": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Rate7": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "min7": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Max7": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "ItemId8": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Rate8": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "min8": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Max8": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "ItemId9": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Rate9": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "min9": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Max9": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "ItemId10": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Rate10": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "min10": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Max10": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

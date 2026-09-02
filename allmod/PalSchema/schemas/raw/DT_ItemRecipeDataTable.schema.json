@@ -1,0 +1,110 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "Product_Id": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Product_Count": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "WorkAmount": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "WorkableAttribute": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "UnlockItemID": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Material1_Id": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Material1_Count": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Material2_Id": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Material2_Count": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Material3_Id": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Material3_Count": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Material4_Id": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Material4_Count": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Material5_Id": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Material5_Count": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "EnergyType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalEnergyType"
+      },
+      "EnergyAmount": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "CraftExpRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "DenyRecipeChain": {
+        "oneOf": [
+          {
+            "type": "array",
+            "description": "ArrayProperty",
+            "items": {
+              "type": "string",
+              "description": "FName"
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Items": {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "string",
+                  "description": "FName"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "Editor_RowNameHash": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

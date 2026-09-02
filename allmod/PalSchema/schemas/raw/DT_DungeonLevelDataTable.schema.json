@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "SpawnAreaId": {
+        "type": "string",
+        "description": "FName"
+      },
+      "WeightInSpawnArea": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "LevelName": {
+        "type": "string",
+        "description": "FName"
+      },
+      "BonusExpRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      }
+    }
+  }
+}

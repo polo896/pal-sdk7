@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "PassiveSkill": {
+        "type": "string",
+        "description": "FName"
+      },
+      "TextId": {
+        "type": "string",
+        "description": "FName"
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "productDataArray": {
+        "oneOf": [
+          {
+            "type": "array",
+            "description": "ArrayProperty",
+            "items": {
+              "type": "object",
+              "description": "StructProperty",
+              "properties": {
+                "StaticItemId": {
+                  "type": "string",
+                  "description": "FName"
+                },
+                "ProductType": {
+                  "type": "string",
+                  "description": "EnumProperty",
+                  "$ref": "../enums.schema.json#/definitions/EPalItemShopProductType"
+                },
+                "OverridePrice": {
+                  "type": "integer",
+                  "description": "IntProperty"
+                },
+                "ProductNum": {
+                  "type": "integer",
+                  "description": "IntProperty"
+                },
+                "Stock": {
+                  "type": "integer",
+                  "description": "IntProperty"
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Items": {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "StaticItemId": {
+                      "type": "string",
+                      "description": "FName"
+                    },
+                    "ProductType": {
+                      "type": "string",
+                      "description": "EnumProperty",
+                      "$ref": "../enums.schema.json#/definitions/EPalItemShopProductType"
+                    },
+                    "OverridePrice": {
+                      "type": "integer",
+                      "description": "IntProperty"
+                    },
+                    "ProductNum": {
+                      "type": "integer",
+                      "description": "IntProperty"
+                    },
+                    "Stock": {
+                      "type": "integer",
+                      "description": "IntProperty"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

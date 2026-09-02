@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "TextData": {
+        "type": "string",
+        "description": "FText"
+      }
+    }
+  }
+}

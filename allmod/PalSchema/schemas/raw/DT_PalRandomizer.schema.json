@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "PalId": {
+        "type": "string",
+        "description": "FName"
+      },
+      "BaseLv": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "NumMin": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "NumMax": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

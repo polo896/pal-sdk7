@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "ClassName": {
+        "type": "string",
+        "description": "FName"
+      },
+      "StaticClass": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ClassPathRegex"
+      }
+    }
+  }
+}

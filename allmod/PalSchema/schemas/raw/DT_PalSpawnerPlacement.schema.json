@@ -1,0 +1,90 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "InstanceName": {
+        "type": "string",
+        "description": "FString"
+      },
+      "SpawnerName": {
+        "type": "string",
+        "description": "FName"
+      },
+      "SpawnerType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalSpawnedCharacterType"
+      },
+      "PlacementType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalSpawnerPlacementType"
+      },
+      "Location": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "X": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Y": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Z": {
+            "type": "number",
+            "description": "FloatProperty"
+          }
+        }
+      },
+      "RadiusType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalSpawnRadiusType"
+      },
+      "StaticRadius": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "WorldName": {
+        "type": "string",
+        "description": "FName"
+      },
+      "LayerNames": {
+        "oneOf": [
+          {
+            "type": "array",
+            "description": "ArrayProperty",
+            "items": {
+              "type": "string",
+              "description": "FName"
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Items": {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "string",
+                  "description": "FName"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "SpawnerClass": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ClassPathRegex"
+      },
+      "RespawnCoolTime": {
+        "type": "number",
+        "description": "FloatProperty"
+      }
+    }
+  }
+}

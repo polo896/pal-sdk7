@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "Radius_Meter": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "bIsMuteable": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      }
+    }
+  }
+}

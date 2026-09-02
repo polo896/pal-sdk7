@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "SoftTalkFlowAsset": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+      }
+    }
+  }
+}

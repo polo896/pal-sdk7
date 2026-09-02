@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "Size": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalSizeType"
+      },
+      "EffectScale": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "JumpEffectOffsetZ": {
+        "type": "number",
+        "description": "FloatProperty"
+      }
+    }
+  }
+}

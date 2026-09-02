@@ -1,0 +1,111 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "SpawnerName": {
+        "type": "string",
+        "description": "FName"
+      },
+      "SpawnerType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalSpawnedCharacterType"
+      },
+      "Weight": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "OnlyTime": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalOneDayTimeType"
+      },
+      "OnlyWeather": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalWeatherConditionType"
+      },
+      "Pal_1": {
+        "type": "string",
+        "description": "FName"
+      },
+      "NPC_1": {
+        "type": "string",
+        "description": "FName"
+      },
+      "LvMin_1": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "LvMax_1": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "NumMin_1": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "NumMax_1": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Pal_2": {
+        "type": "string",
+        "description": "FName"
+      },
+      "NPC_2": {
+        "type": "string",
+        "description": "FName"
+      },
+      "LvMin_2": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "LvMax_2": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "NumMin_2": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "NumMax_2": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Pal_3": {
+        "type": "string",
+        "description": "FName"
+      },
+      "NPC_3": {
+        "type": "string",
+        "description": "FName"
+      },
+      "LvMin_3": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "LvMax_3": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "NumMin_3": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "NumMax_3": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "bIsAllowRandomizer": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "bHasWorldTreeAura": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      }
+    }
+  }
+}

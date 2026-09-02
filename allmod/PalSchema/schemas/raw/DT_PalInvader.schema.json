@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "Wave": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Interval": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Exp": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "WaveLevelOffset": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "ConditionBuildObjectId": {
+        "type": "string",
+        "description": "FName"
+      }
+    }
+  }
+}

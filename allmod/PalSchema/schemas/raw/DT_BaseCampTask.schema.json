@@ -1,0 +1,135 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "Level": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "workerNum": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "WorkerNum_IncompleteMsgID": {
+        "type": "string",
+        "description": "FName"
+      },
+      "WorkerNum_CompleteMsgID": {
+        "type": "string",
+        "description": "FName"
+      },
+      "BuildObject1": {
+        "oneOf": [
+          {
+            "type": "array",
+            "description": "ArrayProperty",
+            "items": {
+              "type": "string",
+              "description": "FName"
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Items": {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "string",
+                  "description": "FName"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "BuildObjectNum1": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "BuildObject1_IncompleteMsgID": {
+        "type": "string",
+        "description": "FName"
+      },
+      "BuildObject1_CompleteMsgID": {
+        "type": "string",
+        "description": "FName"
+      },
+      "BuildObject2": {
+        "oneOf": [
+          {
+            "type": "array",
+            "description": "ArrayProperty",
+            "items": {
+              "type": "string",
+              "description": "FName"
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Items": {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "string",
+                  "description": "FName"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "BuildObjectNum2": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "BuildObject2_IncompleteMsgID": {
+        "type": "string",
+        "description": "FName"
+      },
+      "BuildObject2_CompleteMsgID": {
+        "type": "string",
+        "description": "FName"
+      },
+      "BuildObject3": {
+        "oneOf": [
+          {
+            "type": "array",
+            "description": "ArrayProperty",
+            "items": {
+              "type": "string",
+              "description": "FName"
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Items": {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "string",
+                  "description": "FName"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "BuildObjectNum3": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "BuildObject3_IncompleteMsgID": {
+        "type": "string",
+        "description": "FName"
+      },
+      "BuildObject3_CompleteMsgID": {
+        "type": "string",
+        "description": "FName"
+      }
+    }
+  }
+}

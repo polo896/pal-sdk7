@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "RequestCategory": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalItemRequireCategory"
+      },
+      "RequestItem": {
+        "type": "string",
+        "description": "FName"
+      },
+      "RequestNum": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "RewardItemString": {
+        "type": "string",
+        "description": "FString"
+      },
+      "ExpBonusLevel": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

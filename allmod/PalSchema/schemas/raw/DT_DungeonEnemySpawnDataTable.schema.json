@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "SpawnAreaId": {
+        "type": "string",
+        "description": "FName"
+      },
+      "RankType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalDungeonEnemySpawnerRankType"
+      },
+      "WeightInSpawnAreaAndRank": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "SpawnerBlueprintSoftClass": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ClassPathRegex"
+      },
+      "SpawnerName": {
+        "type": "string",
+        "description": "FName"
+      }
+    }
+  }
+}

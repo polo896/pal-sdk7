@@ -1,0 +1,28 @@
+// ======================================================
+// MOD: Keys Are Key Items (KAKI)
+// VERSION: 1.1
+// AUTHOR: MelwenMods
+// REQUIREMENTS: PalSchema, UE4SS
+// DOWNLOAD: https://www.nexusmods.com/palworld/mods/3229
+// ======================================================
+
+{
+// Copper Key
+	"TreasureBoxKey01": {
+		"TypeA": "EPalItemTypeA::Essential",
+		"TypeB": "EPalItemTypeB::ConsumeOther",
+		"Weight": 0.0
+	},
+// Silver Key
+	"TreasureBoxKey02": {
+		"TypeA": "EPalItemTypeA::Essential",
+		"TypeB": "EPalItemTypeB::ConsumeOther",
+		"Weight": 0.0
+	},
+// Gold Key
+	"TreasureBoxKey03": {
+		"TypeA": "EPalItemTypeA::Essential",
+		"TypeB": "EPalItemTypeB::ConsumeOther",
+		"Weight": 0.0
+	}
+}

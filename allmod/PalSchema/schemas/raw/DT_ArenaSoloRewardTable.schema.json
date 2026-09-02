@@ -1,0 +1,159 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "Rank": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalArenaRank"
+      },
+      "FirstClearReward": {
+        "oneOf": [
+          {
+            "type": "array",
+            "description": "ArrayProperty",
+            "items": {
+              "type": "object",
+              "description": "StructProperty",
+              "properties": {
+                "ItemName": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "Key": {
+                      "type": "string",
+                      "description": "FName"
+                    }
+                  }
+                },
+                "Rate": {
+                  "type": "number",
+                  "description": "FloatProperty"
+                },
+                "Min": {
+                  "type": "integer",
+                  "description": "IntProperty"
+                },
+                "Max": {
+                  "type": "integer",
+                  "description": "IntProperty"
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Items": {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "ItemName": {
+                      "type": "object",
+                      "description": "StructProperty",
+                      "properties": {
+                        "Key": {
+                          "type": "string",
+                          "description": "FName"
+                        }
+                      }
+                    },
+                    "Rate": {
+                      "type": "number",
+                      "description": "FloatProperty"
+                    },
+                    "Min": {
+                      "type": "integer",
+                      "description": "IntProperty"
+                    },
+                    "Max": {
+                      "type": "integer",
+                      "description": "IntProperty"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "RepeatClearReward": {
+        "oneOf": [
+          {
+            "type": "array",
+            "description": "ArrayProperty",
+            "items": {
+              "type": "object",
+              "description": "StructProperty",
+              "properties": {
+                "ItemName": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "Key": {
+                      "type": "string",
+                      "description": "FName"
+                    }
+                  }
+                },
+                "Rate": {
+                  "type": "number",
+                  "description": "FloatProperty"
+                },
+                "Min": {
+                  "type": "integer",
+                  "description": "IntProperty"
+                },
+                "Max": {
+                  "type": "integer",
+                  "description": "IntProperty"
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Items": {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "ItemName": {
+                      "type": "object",
+                      "description": "StructProperty",
+                      "properties": {
+                        "Key": {
+                          "type": "string",
+                          "description": "FName"
+                        }
+                      }
+                    },
+                    "Rate": {
+                      "type": "number",
+                      "description": "FloatProperty"
+                    },
+                    "Min": {
+                      "type": "integer",
+                      "description": "IntProperty"
+                    },
+                    "Max": {
+                      "type": "integer",
+                      "description": "IntProperty"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

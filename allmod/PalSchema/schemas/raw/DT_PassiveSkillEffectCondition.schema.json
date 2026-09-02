@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "bIsHighestOnly": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "bIsFixedValue": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      }
+    }
+  }
+}

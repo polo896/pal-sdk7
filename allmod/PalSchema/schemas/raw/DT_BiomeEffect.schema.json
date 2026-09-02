@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "BiomeType_3_EFD8108847E039AF2D6BA0B9AAB38583": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalBiomeType"
+      },
+      "Effect_6_8CEBD2B248D3A5ACFB29BD947CC5E3D0": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "Decay": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "AuxBus": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "locationUIDataMap": {
+        "type": "array",
+        "description": "MapProperty",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Key": {
+              "type": "string",
+              "description": "EnumProperty",
+              "$ref": "../enums.schema.json#/definitions/EPalLocationType"
+            },
+            "Value": {
+              "type": "object",
+              "description": "StructProperty",
+              "properties": {
+                "Icon": {
+                  "type": "string",
+                  "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+                },
+                "compassIconWidget": {
+                  "type": "string",
+                  "$ref": "../utility.schema.json#/definitions/ClassPathRegex"
+                },
+                "displayLength": {
+                  "type": "number",
+                  "description": "FloatProperty"
+                }
+              }
+            }
+          }
+        }
+      },
+      "mapObjectIconMap": {
+        "type": "array",
+        "description": "MapProperty",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Key": {
+              "type": "string",
+              "description": "FName"
+            },
+            "Value": {
+              "type": "string",
+              "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+            }
+          }
+        }
+      },
+      "levelObjectIconMap": {
+        "type": "array",
+        "description": "MapProperty",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Key": {
+              "type": "string",
+              "description": "EnumProperty",
+              "$ref": "../enums.schema.json#/definitions/EPalRelicType"
+            },
+            "Value": {
+              "type": "string",
+              "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+            }
+          }
+        }
+      }
+    }
+  }
+}

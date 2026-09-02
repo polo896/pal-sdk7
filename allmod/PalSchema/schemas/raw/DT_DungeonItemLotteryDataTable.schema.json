@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "SpawnAreaId": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Type": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalDungeonItemSpawnerType"
+      },
+      "ItemFieldLotteryName": {
+        "type": "string",
+        "description": "FName"
+      }
+    }
+  }
+}

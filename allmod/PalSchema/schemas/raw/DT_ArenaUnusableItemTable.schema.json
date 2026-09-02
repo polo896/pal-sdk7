@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "ItemId": {
+        "type": "string",
+        "description": "FName"
+      }
+    }
+  }
+}

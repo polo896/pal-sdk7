@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "EffectTime": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "EffectType1": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalFoodStatusEffectType"
+      },
+      "EffectValue1": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Interaval1": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "EffectType2": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalFoodStatusEffectType"
+      },
+      "EffectValue2": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Interaval2": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

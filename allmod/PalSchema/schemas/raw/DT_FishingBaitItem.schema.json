@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "HitBarSizeRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "MissFightAmountRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "SuccessFightAmountRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "SearchProbabilityRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "StartProgressAmountPercent": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "EnemyAddDropPercent": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "ItemLotteryAddDropPercent": {
+        "type": "number",
+        "description": "FloatProperty"
+      }
+    }
+  }
+}

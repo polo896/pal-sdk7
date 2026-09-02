@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "BlueprintClassName": {
+        "type": "string",
+        "description": "FName"
+      },
+      "BlueprintClassSoft": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ClassPathRegex"
+      }
+    }
+  }
+}

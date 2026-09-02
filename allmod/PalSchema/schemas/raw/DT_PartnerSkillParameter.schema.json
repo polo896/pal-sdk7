@@ -1,0 +1,1894 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "RestrictionItems": {
+        "oneOf": [
+          {
+            "type": "array",
+            "description": "ArrayProperty",
+            "items": {
+              "type": "object",
+              "description": "StructProperty",
+              "properties": {
+                "Key": {
+                  "type": "string",
+                  "description": "FName"
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Items": {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "Key": {
+                      "type": "string",
+                      "description": "FName"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "ActiveSkill": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "SkillName": {
+            "type": "string",
+            "description": "FName"
+          },
+          "WazaID": {
+            "type": "string",
+            "description": "EnumProperty",
+            "$ref": "../enums.schema.json#/definitions/EPalWazaID"
+          },
+          "bIdlelCostDecreaseEveryFrame": {
+            "type": "boolean",
+            "description": "BoolProperty"
+          },
+          "bIsExecSkillContinuation": {
+            "type": "boolean",
+            "description": "BoolProperty"
+          },
+          "bIsOneShotRideAction": {
+            "type": "boolean",
+            "description": "BoolProperty"
+          },
+          "ActiveSkill_MainValue_Overview_EditorOnly": {
+            "type": "string",
+            "description": "FName"
+          },
+          "IsRidingActiveSkillNotWeapon": {
+            "type": "boolean",
+            "description": "BoolProperty"
+          },
+          "RidingActiveSkillNotWeaponCondition": {
+            "type": "string",
+            "description": "EnumProperty",
+            "$ref": "../enums.schema.json#/definitions/EPalRidingActiveSkillNotWeaponCondition"
+          },
+          "bIsToggleRidingActiveSkillNotWeapon": {
+            "type": "boolean",
+            "description": "BoolProperty"
+          },
+          "ActiveSkill_MainValueByRank": {
+            "oneOf": [
+              {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "number",
+                  "description": "FloatProperty"
+                }
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "Items": {
+                    "type": "array",
+                    "description": "ArrayProperty",
+                    "items": {
+                      "type": "number",
+                      "description": "FloatProperty"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "ActiveSkill_OverWriteCoolTimeByRank": {
+            "oneOf": [
+              {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "number",
+                  "description": "FloatProperty"
+                }
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "Items": {
+                    "type": "array",
+                    "description": "ArrayProperty",
+                    "items": {
+                      "type": "number",
+                      "description": "FloatProperty"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "ActiveSkill_OverWriteEffectTimeByRank": {
+            "oneOf": [
+              {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "number",
+                  "description": "FloatProperty"
+                }
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "Items": {
+                    "type": "array",
+                    "description": "ArrayProperty",
+                    "items": {
+                      "type": "number",
+                      "description": "FloatProperty"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "PassiveSkills": {
+        "oneOf": [
+          {
+            "type": "array",
+            "description": "ArrayProperty",
+            "items": {
+              "type": "object",
+              "description": "StructProperty",
+              "properties": {
+                "SkillAndParametersArray": {
+                  "oneOf": [
+                    {
+                      "type": "array",
+                      "description": "ArrayProperty",
+                      "items": {
+                        "type": "object",
+                        "description": "StructProperty",
+                        "properties": {
+                          "SkillName": {
+                            "type": "object",
+                            "description": "StructProperty",
+                            "properties": {
+                              "Key": {
+                                "type": "string",
+                                "description": "FName"
+                              }
+                            }
+                          },
+                          "Parameters": {
+                            "type": "object",
+                            "description": "StructProperty",
+                            "properties": {
+                              "DelayTime": {
+                                "type": "number",
+                                "description": "FloatProperty"
+                              },
+                              "WorkType": {
+                                "type": "string",
+                                "description": "EnumProperty",
+                                "$ref": "../enums.schema.json#/definitions/EPalWorkType"
+                              },
+                              "bAssignPassiveIgnoreCurrentWorkType": {
+                                "type": "boolean",
+                                "description": "BoolProperty"
+                              },
+                              "MapObjectId": {
+                                "oneOf": [
+                                  {
+                                    "type": "array",
+                                    "description": "ArrayProperty",
+                                    "items": {
+                                      "type": "object",
+                                      "description": "StructProperty",
+                                      "properties": {
+                                        "Key": {
+                                          "type": "string",
+                                          "description": "FName"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "Items": {
+                                        "type": "array",
+                                        "description": "ArrayProperty",
+                                        "items": {
+                                          "type": "object",
+                                          "description": "StructProperty",
+                                          "properties": {
+                                            "Key": {
+                                              "type": "string",
+                                              "description": "FName"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                ]
+                              },
+                              "ItemId": {
+                                "oneOf": [
+                                  {
+                                    "type": "array",
+                                    "description": "ArrayProperty",
+                                    "items": {
+                                      "type": "object",
+                                      "description": "StructProperty",
+                                      "properties": {
+                                        "Key": {
+                                          "type": "string",
+                                          "description": "FName"
+                                        }
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "Items": {
+                                        "type": "array",
+                                        "description": "ArrayProperty",
+                                        "items": {
+                                          "type": "object",
+                                          "description": "StructProperty",
+                                          "properties": {
+                                            "Key": {
+                                              "type": "string",
+                                              "description": "FName"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                ]
+                              },
+                              "AssignOthers": {
+                                "type": "boolean",
+                                "description": "BoolProperty"
+                              },
+                              "TargetElementType": {
+                                "type": "string",
+                                "description": "EnumProperty",
+                                "$ref": "../enums.schema.json#/definitions/EPalElementType"
+                              },
+                              "PalTribeIds": {
+                                "oneOf": [
+                                  {
+                                    "type": "array",
+                                    "description": "ArrayProperty",
+                                    "items": {
+                                      "type": "string",
+                                      "description": "EnumProperty",
+                                      "$ref": "../enums.schema.json#/definitions/EPalTribeID"
+                                    }
+                                  },
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "Items": {
+                                        "type": "array",
+                                        "description": "ArrayProperty",
+                                        "items": {
+                                          "type": "string",
+                                          "description": "EnumProperty",
+                                          "$ref": "../enums.schema.json#/definitions/EPalTribeID"
+                                        }
+                                      }
+                                    }
+                                  }
+                                ]
+                              },
+                              "bNotAssignSelf": {
+                                "type": "boolean",
+                                "description": "BoolProperty"
+                              },
+                              "TriggerParam": {
+                                "type": "object",
+                                "description": "StructProperty",
+                                "properties": {
+                                  "TargetTribeIds": {
+                                    "oneOf": [
+                                      {
+                                        "type": "array",
+                                        "description": "ArrayProperty",
+                                        "items": {
+                                          "type": "string",
+                                          "description": "EnumProperty",
+                                          "$ref": "../enums.schema.json#/definitions/EPalTribeID"
+                                        }
+                                      },
+                                      {
+                                        "type": "object",
+                                        "properties": {
+                                          "Items": {
+                                            "type": "array",
+                                            "description": "ArrayProperty",
+                                            "items": {
+                                              "type": "string",
+                                              "description": "EnumProperty",
+                                              "$ref": "../enums.schema.json#/definitions/EPalTribeID"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              },
+                              "ItemParam": {
+                                "type": "object",
+                                "description": "StructProperty",
+                                "properties": {
+                                  "ItemTypeA": {
+                                    "type": "string",
+                                    "description": "EnumProperty",
+                                    "$ref": "../enums.schema.json#/definitions/EPalItemTypeA"
+                                  },
+                                  "ItemTypeB": {
+                                    "type": "string",
+                                    "description": "EnumProperty",
+                                    "$ref": "../enums.schema.json#/definitions/EPalItemTypeB"
+                                  },
+                                  "ItemIds": {
+                                    "oneOf": [
+                                      {
+                                        "type": "array",
+                                        "description": "ArrayProperty",
+                                        "items": {
+                                          "type": "object",
+                                          "description": "StructProperty",
+                                          "properties": {
+                                            "Key": {
+                                              "type": "string",
+                                              "description": "FName"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "type": "object",
+                                        "properties": {
+                                          "Items": {
+                                            "type": "array",
+                                            "description": "ArrayProperty",
+                                            "items": {
+                                              "type": "object",
+                                              "description": "StructProperty",
+                                              "properties": {
+                                                "Key": {
+                                                  "type": "string",
+                                                  "description": "FName"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "ExcludedItemIds": {
+                                    "oneOf": [
+                                      {
+                                        "type": "array",
+                                        "description": "ArrayProperty",
+                                        "items": {
+                                          "type": "object",
+                                          "description": "StructProperty",
+                                          "properties": {
+                                            "Key": {
+                                              "type": "string",
+                                              "description": "FName"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "type": "object",
+                                        "properties": {
+                                          "Items": {
+                                            "type": "array",
+                                            "description": "ArrayProperty",
+                                            "items": {
+                                              "type": "object",
+                                              "description": "StructProperty",
+                                              "properties": {
+                                                "Key": {
+                                                  "type": "string",
+                                                  "description": "FName"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "bIsContainNoItemId": {
+                                    "type": "boolean",
+                                    "description": "BoolProperty"
+                                  },
+                                  "WeaponType": {
+                                    "type": "string",
+                                    "description": "EnumProperty",
+                                    "$ref": "../enums.schema.json#/definitions/EPalWeaponType"
+                                  },
+                                  "WeaponTypes": {
+                                    "oneOf": [
+                                      {
+                                        "type": "array",
+                                        "description": "ArrayProperty",
+                                        "items": {
+                                          "type": "string",
+                                          "description": "EnumProperty",
+                                          "$ref": "../enums.schema.json#/definitions/EPalWeaponType"
+                                        }
+                                      },
+                                      {
+                                        "type": "object",
+                                        "properties": {
+                                          "Items": {
+                                            "type": "array",
+                                            "description": "ArrayProperty",
+                                            "items": {
+                                              "type": "string",
+                                              "description": "EnumProperty",
+                                              "$ref": "../enums.schema.json#/definitions/EPalWeaponType"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "bMeleeOnly": {
+                                    "type": "boolean",
+                                    "description": "BoolProperty"
+                                  }
+                                }
+                              },
+                              "RegeneParam": {
+                                "type": "object",
+                                "description": "StructProperty",
+                                "properties": {
+                                  "Interval": {
+                                    "type": "integer",
+                                    "description": "IntProperty"
+                                  }
+                                }
+                              },
+                              "OtherOtomoConditionParam": {
+                                "type": "object",
+                                "description": "StructProperty",
+                                "properties": {
+                                  "TargetElementType": {
+                                    "type": "string",
+                                    "description": "EnumProperty",
+                                    "$ref": "../enums.schema.json#/definitions/EPalElementType"
+                                  },
+                                  "TargetElementTypes": {
+                                    "oneOf": [
+                                      {
+                                        "type": "array",
+                                        "description": "ArrayProperty",
+                                        "items": {
+                                          "type": "string",
+                                          "description": "EnumProperty",
+                                          "$ref": "../enums.schema.json#/definitions/EPalElementType"
+                                        }
+                                      },
+                                      {
+                                        "type": "object",
+                                        "properties": {
+                                          "Items": {
+                                            "type": "array",
+                                            "description": "ArrayProperty",
+                                            "items": {
+                                              "type": "string",
+                                              "description": "EnumProperty",
+                                              "$ref": "../enums.schema.json#/definitions/EPalElementType"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "PalTribeIds": {
+                                    "oneOf": [
+                                      {
+                                        "type": "array",
+                                        "description": "ArrayProperty",
+                                        "items": {
+                                          "type": "string",
+                                          "description": "EnumProperty",
+                                          "$ref": "../enums.schema.json#/definitions/EPalTribeID"
+                                        }
+                                      },
+                                      {
+                                        "type": "object",
+                                        "properties": {
+                                          "Items": {
+                                            "type": "array",
+                                            "description": "ArrayProperty",
+                                            "items": {
+                                              "type": "string",
+                                              "description": "EnumProperty",
+                                              "$ref": "../enums.schema.json#/definitions/EPalTribeID"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              },
+                              "FloatValue1": {
+                                "type": "number",
+                                "description": "FloatProperty"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "Items": {
+                          "type": "array",
+                          "description": "ArrayProperty",
+                          "items": {
+                            "type": "object",
+                            "description": "StructProperty",
+                            "properties": {
+                              "SkillName": {
+                                "type": "object",
+                                "description": "StructProperty",
+                                "properties": {
+                                  "Key": {
+                                    "type": "string",
+                                    "description": "FName"
+                                  }
+                                }
+                              },
+                              "Parameters": {
+                                "type": "object",
+                                "description": "StructProperty",
+                                "properties": {
+                                  "DelayTime": {
+                                    "type": "number",
+                                    "description": "FloatProperty"
+                                  },
+                                  "WorkType": {
+                                    "type": "string",
+                                    "description": "EnumProperty",
+                                    "$ref": "../enums.schema.json#/definitions/EPalWorkType"
+                                  },
+                                  "bAssignPassiveIgnoreCurrentWorkType": {
+                                    "type": "boolean",
+                                    "description": "BoolProperty"
+                                  },
+                                  "MapObjectId": {
+                                    "oneOf": [
+                                      {
+                                        "type": "array",
+                                        "description": "ArrayProperty",
+                                        "items": {
+                                          "type": "object",
+                                          "description": "StructProperty",
+                                          "properties": {
+                                            "Key": {
+                                              "type": "string",
+                                              "description": "FName"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "type": "object",
+                                        "properties": {
+                                          "Items": {
+                                            "type": "array",
+                                            "description": "ArrayProperty",
+                                            "items": {
+                                              "type": "object",
+                                              "description": "StructProperty",
+                                              "properties": {
+                                                "Key": {
+                                                  "type": "string",
+                                                  "description": "FName"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "ItemId": {
+                                    "oneOf": [
+                                      {
+                                        "type": "array",
+                                        "description": "ArrayProperty",
+                                        "items": {
+                                          "type": "object",
+                                          "description": "StructProperty",
+                                          "properties": {
+                                            "Key": {
+                                              "type": "string",
+                                              "description": "FName"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "type": "object",
+                                        "properties": {
+                                          "Items": {
+                                            "type": "array",
+                                            "description": "ArrayProperty",
+                                            "items": {
+                                              "type": "object",
+                                              "description": "StructProperty",
+                                              "properties": {
+                                                "Key": {
+                                                  "type": "string",
+                                                  "description": "FName"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "AssignOthers": {
+                                    "type": "boolean",
+                                    "description": "BoolProperty"
+                                  },
+                                  "TargetElementType": {
+                                    "type": "string",
+                                    "description": "EnumProperty",
+                                    "$ref": "../enums.schema.json#/definitions/EPalElementType"
+                                  },
+                                  "PalTribeIds": {
+                                    "oneOf": [
+                                      {
+                                        "type": "array",
+                                        "description": "ArrayProperty",
+                                        "items": {
+                                          "type": "string",
+                                          "description": "EnumProperty",
+                                          "$ref": "../enums.schema.json#/definitions/EPalTribeID"
+                                        }
+                                      },
+                                      {
+                                        "type": "object",
+                                        "properties": {
+                                          "Items": {
+                                            "type": "array",
+                                            "description": "ArrayProperty",
+                                            "items": {
+                                              "type": "string",
+                                              "description": "EnumProperty",
+                                              "$ref": "../enums.schema.json#/definitions/EPalTribeID"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "bNotAssignSelf": {
+                                    "type": "boolean",
+                                    "description": "BoolProperty"
+                                  },
+                                  "TriggerParam": {
+                                    "type": "object",
+                                    "description": "StructProperty",
+                                    "properties": {
+                                      "TargetTribeIds": {
+                                        "oneOf": [
+                                          {
+                                            "type": "array",
+                                            "description": "ArrayProperty",
+                                            "items": {
+                                              "type": "string",
+                                              "description": "EnumProperty",
+                                              "$ref": "../enums.schema.json#/definitions/EPalTribeID"
+                                            }
+                                          },
+                                          {
+                                            "type": "object",
+                                            "properties": {
+                                              "Items": {
+                                                "type": "array",
+                                                "description": "ArrayProperty",
+                                                "items": {
+                                                  "type": "string",
+                                                  "description": "EnumProperty",
+                                                  "$ref": "../enums.schema.json#/definitions/EPalTribeID"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  "ItemParam": {
+                                    "type": "object",
+                                    "description": "StructProperty",
+                                    "properties": {
+                                      "ItemTypeA": {
+                                        "type": "string",
+                                        "description": "EnumProperty",
+                                        "$ref": "../enums.schema.json#/definitions/EPalItemTypeA"
+                                      },
+                                      "ItemTypeB": {
+                                        "type": "string",
+                                        "description": "EnumProperty",
+                                        "$ref": "../enums.schema.json#/definitions/EPalItemTypeB"
+                                      },
+                                      "ItemIds": {
+                                        "oneOf": [
+                                          {
+                                            "type": "array",
+                                            "description": "ArrayProperty",
+                                            "items": {
+                                              "type": "object",
+                                              "description": "StructProperty",
+                                              "properties": {
+                                                "Key": {
+                                                  "type": "string",
+                                                  "description": "FName"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "type": "object",
+                                            "properties": {
+                                              "Items": {
+                                                "type": "array",
+                                                "description": "ArrayProperty",
+                                                "items": {
+                                                  "type": "object",
+                                                  "description": "StructProperty",
+                                                  "properties": {
+                                                    "Key": {
+                                                      "type": "string",
+                                                      "description": "FName"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "ExcludedItemIds": {
+                                        "oneOf": [
+                                          {
+                                            "type": "array",
+                                            "description": "ArrayProperty",
+                                            "items": {
+                                              "type": "object",
+                                              "description": "StructProperty",
+                                              "properties": {
+                                                "Key": {
+                                                  "type": "string",
+                                                  "description": "FName"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "type": "object",
+                                            "properties": {
+                                              "Items": {
+                                                "type": "array",
+                                                "description": "ArrayProperty",
+                                                "items": {
+                                                  "type": "object",
+                                                  "description": "StructProperty",
+                                                  "properties": {
+                                                    "Key": {
+                                                      "type": "string",
+                                                      "description": "FName"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "bIsContainNoItemId": {
+                                        "type": "boolean",
+                                        "description": "BoolProperty"
+                                      },
+                                      "WeaponType": {
+                                        "type": "string",
+                                        "description": "EnumProperty",
+                                        "$ref": "../enums.schema.json#/definitions/EPalWeaponType"
+                                      },
+                                      "WeaponTypes": {
+                                        "oneOf": [
+                                          {
+                                            "type": "array",
+                                            "description": "ArrayProperty",
+                                            "items": {
+                                              "type": "string",
+                                              "description": "EnumProperty",
+                                              "$ref": "../enums.schema.json#/definitions/EPalWeaponType"
+                                            }
+                                          },
+                                          {
+                                            "type": "object",
+                                            "properties": {
+                                              "Items": {
+                                                "type": "array",
+                                                "description": "ArrayProperty",
+                                                "items": {
+                                                  "type": "string",
+                                                  "description": "EnumProperty",
+                                                  "$ref": "../enums.schema.json#/definitions/EPalWeaponType"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "bMeleeOnly": {
+                                        "type": "boolean",
+                                        "description": "BoolProperty"
+                                      }
+                                    }
+                                  },
+                                  "RegeneParam": {
+                                    "type": "object",
+                                    "description": "StructProperty",
+                                    "properties": {
+                                      "Interval": {
+                                        "type": "integer",
+                                        "description": "IntProperty"
+                                      }
+                                    }
+                                  },
+                                  "OtherOtomoConditionParam": {
+                                    "type": "object",
+                                    "description": "StructProperty",
+                                    "properties": {
+                                      "TargetElementType": {
+                                        "type": "string",
+                                        "description": "EnumProperty",
+                                        "$ref": "../enums.schema.json#/definitions/EPalElementType"
+                                      },
+                                      "TargetElementTypes": {
+                                        "oneOf": [
+                                          {
+                                            "type": "array",
+                                            "description": "ArrayProperty",
+                                            "items": {
+                                              "type": "string",
+                                              "description": "EnumProperty",
+                                              "$ref": "../enums.schema.json#/definitions/EPalElementType"
+                                            }
+                                          },
+                                          {
+                                            "type": "object",
+                                            "properties": {
+                                              "Items": {
+                                                "type": "array",
+                                                "description": "ArrayProperty",
+                                                "items": {
+                                                  "type": "string",
+                                                  "description": "EnumProperty",
+                                                  "$ref": "../enums.schema.json#/definitions/EPalElementType"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "PalTribeIds": {
+                                        "oneOf": [
+                                          {
+                                            "type": "array",
+                                            "description": "ArrayProperty",
+                                            "items": {
+                                              "type": "string",
+                                              "description": "EnumProperty",
+                                              "$ref": "../enums.schema.json#/definitions/EPalTribeID"
+                                            }
+                                          },
+                                          {
+                                            "type": "object",
+                                            "properties": {
+                                              "Items": {
+                                                "type": "array",
+                                                "description": "ArrayProperty",
+                                                "items": {
+                                                  "type": "string",
+                                                  "description": "EnumProperty",
+                                                  "$ref": "../enums.schema.json#/definitions/EPalTribeID"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  "FloatValue1": {
+                                    "type": "number",
+                                    "description": "FloatProperty"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Items": {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "SkillAndParametersArray": {
+                      "oneOf": [
+                        {
+                          "type": "array",
+                          "description": "ArrayProperty",
+                          "items": {
+                            "type": "object",
+                            "description": "StructProperty",
+                            "properties": {
+                              "SkillName": {
+                                "type": "object",
+                                "description": "StructProperty",
+                                "properties": {
+                                  "Key": {
+                                    "type": "string",
+                                    "description": "FName"
+                                  }
+                                }
+                              },
+                              "Parameters": {
+                                "type": "object",
+                                "description": "StructProperty",
+                                "properties": {
+                                  "DelayTime": {
+                                    "type": "number",
+                                    "description": "FloatProperty"
+                                  },
+                                  "WorkType": {
+                                    "type": "string",
+                                    "description": "EnumProperty",
+                                    "$ref": "../enums.schema.json#/definitions/EPalWorkType"
+                                  },
+                                  "bAssignPassiveIgnoreCurrentWorkType": {
+                                    "type": "boolean",
+                                    "description": "BoolProperty"
+                                  },
+                                  "MapObjectId": {
+                                    "oneOf": [
+                                      {
+                                        "type": "array",
+                                        "description": "ArrayProperty",
+                                        "items": {
+                                          "type": "object",
+                                          "description": "StructProperty",
+                                          "properties": {
+                                            "Key": {
+                                              "type": "string",
+                                              "description": "FName"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "type": "object",
+                                        "properties": {
+                                          "Items": {
+                                            "type": "array",
+                                            "description": "ArrayProperty",
+                                            "items": {
+                                              "type": "object",
+                                              "description": "StructProperty",
+                                              "properties": {
+                                                "Key": {
+                                                  "type": "string",
+                                                  "description": "FName"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "ItemId": {
+                                    "oneOf": [
+                                      {
+                                        "type": "array",
+                                        "description": "ArrayProperty",
+                                        "items": {
+                                          "type": "object",
+                                          "description": "StructProperty",
+                                          "properties": {
+                                            "Key": {
+                                              "type": "string",
+                                              "description": "FName"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "type": "object",
+                                        "properties": {
+                                          "Items": {
+                                            "type": "array",
+                                            "description": "ArrayProperty",
+                                            "items": {
+                                              "type": "object",
+                                              "description": "StructProperty",
+                                              "properties": {
+                                                "Key": {
+                                                  "type": "string",
+                                                  "description": "FName"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "AssignOthers": {
+                                    "type": "boolean",
+                                    "description": "BoolProperty"
+                                  },
+                                  "TargetElementType": {
+                                    "type": "string",
+                                    "description": "EnumProperty",
+                                    "$ref": "../enums.schema.json#/definitions/EPalElementType"
+                                  },
+                                  "PalTribeIds": {
+                                    "oneOf": [
+                                      {
+                                        "type": "array",
+                                        "description": "ArrayProperty",
+                                        "items": {
+                                          "type": "string",
+                                          "description": "EnumProperty",
+                                          "$ref": "../enums.schema.json#/definitions/EPalTribeID"
+                                        }
+                                      },
+                                      {
+                                        "type": "object",
+                                        "properties": {
+                                          "Items": {
+                                            "type": "array",
+                                            "description": "ArrayProperty",
+                                            "items": {
+                                              "type": "string",
+                                              "description": "EnumProperty",
+                                              "$ref": "../enums.schema.json#/definitions/EPalTribeID"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "bNotAssignSelf": {
+                                    "type": "boolean",
+                                    "description": "BoolProperty"
+                                  },
+                                  "TriggerParam": {
+                                    "type": "object",
+                                    "description": "StructProperty",
+                                    "properties": {
+                                      "TargetTribeIds": {
+                                        "oneOf": [
+                                          {
+                                            "type": "array",
+                                            "description": "ArrayProperty",
+                                            "items": {
+                                              "type": "string",
+                                              "description": "EnumProperty",
+                                              "$ref": "../enums.schema.json#/definitions/EPalTribeID"
+                                            }
+                                          },
+                                          {
+                                            "type": "object",
+                                            "properties": {
+                                              "Items": {
+                                                "type": "array",
+                                                "description": "ArrayProperty",
+                                                "items": {
+                                                  "type": "string",
+                                                  "description": "EnumProperty",
+                                                  "$ref": "../enums.schema.json#/definitions/EPalTribeID"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  "ItemParam": {
+                                    "type": "object",
+                                    "description": "StructProperty",
+                                    "properties": {
+                                      "ItemTypeA": {
+                                        "type": "string",
+                                        "description": "EnumProperty",
+                                        "$ref": "../enums.schema.json#/definitions/EPalItemTypeA"
+                                      },
+                                      "ItemTypeB": {
+                                        "type": "string",
+                                        "description": "EnumProperty",
+                                        "$ref": "../enums.schema.json#/definitions/EPalItemTypeB"
+                                      },
+                                      "ItemIds": {
+                                        "oneOf": [
+                                          {
+                                            "type": "array",
+                                            "description": "ArrayProperty",
+                                            "items": {
+                                              "type": "object",
+                                              "description": "StructProperty",
+                                              "properties": {
+                                                "Key": {
+                                                  "type": "string",
+                                                  "description": "FName"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "type": "object",
+                                            "properties": {
+                                              "Items": {
+                                                "type": "array",
+                                                "description": "ArrayProperty",
+                                                "items": {
+                                                  "type": "object",
+                                                  "description": "StructProperty",
+                                                  "properties": {
+                                                    "Key": {
+                                                      "type": "string",
+                                                      "description": "FName"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "ExcludedItemIds": {
+                                        "oneOf": [
+                                          {
+                                            "type": "array",
+                                            "description": "ArrayProperty",
+                                            "items": {
+                                              "type": "object",
+                                              "description": "StructProperty",
+                                              "properties": {
+                                                "Key": {
+                                                  "type": "string",
+                                                  "description": "FName"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "type": "object",
+                                            "properties": {
+                                              "Items": {
+                                                "type": "array",
+                                                "description": "ArrayProperty",
+                                                "items": {
+                                                  "type": "object",
+                                                  "description": "StructProperty",
+                                                  "properties": {
+                                                    "Key": {
+                                                      "type": "string",
+                                                      "description": "FName"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "bIsContainNoItemId": {
+                                        "type": "boolean",
+                                        "description": "BoolProperty"
+                                      },
+                                      "WeaponType": {
+                                        "type": "string",
+                                        "description": "EnumProperty",
+                                        "$ref": "../enums.schema.json#/definitions/EPalWeaponType"
+                                      },
+                                      "WeaponTypes": {
+                                        "oneOf": [
+                                          {
+                                            "type": "array",
+                                            "description": "ArrayProperty",
+                                            "items": {
+                                              "type": "string",
+                                              "description": "EnumProperty",
+                                              "$ref": "../enums.schema.json#/definitions/EPalWeaponType"
+                                            }
+                                          },
+                                          {
+                                            "type": "object",
+                                            "properties": {
+                                              "Items": {
+                                                "type": "array",
+                                                "description": "ArrayProperty",
+                                                "items": {
+                                                  "type": "string",
+                                                  "description": "EnumProperty",
+                                                  "$ref": "../enums.schema.json#/definitions/EPalWeaponType"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "bMeleeOnly": {
+                                        "type": "boolean",
+                                        "description": "BoolProperty"
+                                      }
+                                    }
+                                  },
+                                  "RegeneParam": {
+                                    "type": "object",
+                                    "description": "StructProperty",
+                                    "properties": {
+                                      "Interval": {
+                                        "type": "integer",
+                                        "description": "IntProperty"
+                                      }
+                                    }
+                                  },
+                                  "OtherOtomoConditionParam": {
+                                    "type": "object",
+                                    "description": "StructProperty",
+                                    "properties": {
+                                      "TargetElementType": {
+                                        "type": "string",
+                                        "description": "EnumProperty",
+                                        "$ref": "../enums.schema.json#/definitions/EPalElementType"
+                                      },
+                                      "TargetElementTypes": {
+                                        "oneOf": [
+                                          {
+                                            "type": "array",
+                                            "description": "ArrayProperty",
+                                            "items": {
+                                              "type": "string",
+                                              "description": "EnumProperty",
+                                              "$ref": "../enums.schema.json#/definitions/EPalElementType"
+                                            }
+                                          },
+                                          {
+                                            "type": "object",
+                                            "properties": {
+                                              "Items": {
+                                                "type": "array",
+                                                "description": "ArrayProperty",
+                                                "items": {
+                                                  "type": "string",
+                                                  "description": "EnumProperty",
+                                                  "$ref": "../enums.schema.json#/definitions/EPalElementType"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "PalTribeIds": {
+                                        "oneOf": [
+                                          {
+                                            "type": "array",
+                                            "description": "ArrayProperty",
+                                            "items": {
+                                              "type": "string",
+                                              "description": "EnumProperty",
+                                              "$ref": "../enums.schema.json#/definitions/EPalTribeID"
+                                            }
+                                          },
+                                          {
+                                            "type": "object",
+                                            "properties": {
+                                              "Items": {
+                                                "type": "array",
+                                                "description": "ArrayProperty",
+                                                "items": {
+                                                  "type": "string",
+                                                  "description": "EnumProperty",
+                                                  "$ref": "../enums.schema.json#/definitions/EPalTribeID"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  "FloatValue1": {
+                                    "type": "number",
+                                    "description": "FloatProperty"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "Items": {
+                              "type": "array",
+                              "description": "ArrayProperty",
+                              "items": {
+                                "type": "object",
+                                "description": "StructProperty",
+                                "properties": {
+                                  "SkillName": {
+                                    "type": "object",
+                                    "description": "StructProperty",
+                                    "properties": {
+                                      "Key": {
+                                        "type": "string",
+                                        "description": "FName"
+                                      }
+                                    }
+                                  },
+                                  "Parameters": {
+                                    "type": "object",
+                                    "description": "StructProperty",
+                                    "properties": {
+                                      "DelayTime": {
+                                        "type": "number",
+                                        "description": "FloatProperty"
+                                      },
+                                      "WorkType": {
+                                        "type": "string",
+                                        "description": "EnumProperty",
+                                        "$ref": "../enums.schema.json#/definitions/EPalWorkType"
+                                      },
+                                      "bAssignPassiveIgnoreCurrentWorkType": {
+                                        "type": "boolean",
+                                        "description": "BoolProperty"
+                                      },
+                                      "MapObjectId": {
+                                        "oneOf": [
+                                          {
+                                            "type": "array",
+                                            "description": "ArrayProperty",
+                                            "items": {
+                                              "type": "object",
+                                              "description": "StructProperty",
+                                              "properties": {
+                                                "Key": {
+                                                  "type": "string",
+                                                  "description": "FName"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "type": "object",
+                                            "properties": {
+                                              "Items": {
+                                                "type": "array",
+                                                "description": "ArrayProperty",
+                                                "items": {
+                                                  "type": "object",
+                                                  "description": "StructProperty",
+                                                  "properties": {
+                                                    "Key": {
+                                                      "type": "string",
+                                                      "description": "FName"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "ItemId": {
+                                        "oneOf": [
+                                          {
+                                            "type": "array",
+                                            "description": "ArrayProperty",
+                                            "items": {
+                                              "type": "object",
+                                              "description": "StructProperty",
+                                              "properties": {
+                                                "Key": {
+                                                  "type": "string",
+                                                  "description": "FName"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "type": "object",
+                                            "properties": {
+                                              "Items": {
+                                                "type": "array",
+                                                "description": "ArrayProperty",
+                                                "items": {
+                                                  "type": "object",
+                                                  "description": "StructProperty",
+                                                  "properties": {
+                                                    "Key": {
+                                                      "type": "string",
+                                                      "description": "FName"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "AssignOthers": {
+                                        "type": "boolean",
+                                        "description": "BoolProperty"
+                                      },
+                                      "TargetElementType": {
+                                        "type": "string",
+                                        "description": "EnumProperty",
+                                        "$ref": "../enums.schema.json#/definitions/EPalElementType"
+                                      },
+                                      "PalTribeIds": {
+                                        "oneOf": [
+                                          {
+                                            "type": "array",
+                                            "description": "ArrayProperty",
+                                            "items": {
+                                              "type": "string",
+                                              "description": "EnumProperty",
+                                              "$ref": "../enums.schema.json#/definitions/EPalTribeID"
+                                            }
+                                          },
+                                          {
+                                            "type": "object",
+                                            "properties": {
+                                              "Items": {
+                                                "type": "array",
+                                                "description": "ArrayProperty",
+                                                "items": {
+                                                  "type": "string",
+                                                  "description": "EnumProperty",
+                                                  "$ref": "../enums.schema.json#/definitions/EPalTribeID"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      "bNotAssignSelf": {
+                                        "type": "boolean",
+                                        "description": "BoolProperty"
+                                      },
+                                      "TriggerParam": {
+                                        "type": "object",
+                                        "description": "StructProperty",
+                                        "properties": {
+                                          "TargetTribeIds": {
+                                            "oneOf": [
+                                              {
+                                                "type": "array",
+                                                "description": "ArrayProperty",
+                                                "items": {
+                                                  "type": "string",
+                                                  "description": "EnumProperty",
+                                                  "$ref": "../enums.schema.json#/definitions/EPalTribeID"
+                                                }
+                                              },
+                                              {
+                                                "type": "object",
+                                                "properties": {
+                                                  "Items": {
+                                                    "type": "array",
+                                                    "description": "ArrayProperty",
+                                                    "items": {
+                                                      "type": "string",
+                                                      "description": "EnumProperty",
+                                                      "$ref": "../enums.schema.json#/definitions/EPalTribeID"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      },
+                                      "ItemParam": {
+                                        "type": "object",
+                                        "description": "StructProperty",
+                                        "properties": {
+                                          "ItemTypeA": {
+                                            "type": "string",
+                                            "description": "EnumProperty",
+                                            "$ref": "../enums.schema.json#/definitions/EPalItemTypeA"
+                                          },
+                                          "ItemTypeB": {
+                                            "type": "string",
+                                            "description": "EnumProperty",
+                                            "$ref": "../enums.schema.json#/definitions/EPalItemTypeB"
+                                          },
+                                          "ItemIds": {
+                                            "oneOf": [
+                                              {
+                                                "type": "array",
+                                                "description": "ArrayProperty",
+                                                "items": {
+                                                  "type": "object",
+                                                  "description": "StructProperty",
+                                                  "properties": {
+                                                    "Key": {
+                                                      "type": "string",
+                                                      "description": "FName"
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              {
+                                                "type": "object",
+                                                "properties": {
+                                                  "Items": {
+                                                    "type": "array",
+                                                    "description": "ArrayProperty",
+                                                    "items": {
+                                                      "type": "object",
+                                                      "description": "StructProperty",
+                                                      "properties": {
+                                                        "Key": {
+                                                          "type": "string",
+                                                          "description": "FName"
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          "ExcludedItemIds": {
+                                            "oneOf": [
+                                              {
+                                                "type": "array",
+                                                "description": "ArrayProperty",
+                                                "items": {
+                                                  "type": "object",
+                                                  "description": "StructProperty",
+                                                  "properties": {
+                                                    "Key": {
+                                                      "type": "string",
+                                                      "description": "FName"
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              {
+                                                "type": "object",
+                                                "properties": {
+                                                  "Items": {
+                                                    "type": "array",
+                                                    "description": "ArrayProperty",
+                                                    "items": {
+                                                      "type": "object",
+                                                      "description": "StructProperty",
+                                                      "properties": {
+                                                        "Key": {
+                                                          "type": "string",
+                                                          "description": "FName"
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          "bIsContainNoItemId": {
+                                            "type": "boolean",
+                                            "description": "BoolProperty"
+                                          },
+                                          "WeaponType": {
+                                            "type": "string",
+                                            "description": "EnumProperty",
+                                            "$ref": "../enums.schema.json#/definitions/EPalWeaponType"
+                                          },
+                                          "WeaponTypes": {
+                                            "oneOf": [
+                                              {
+                                                "type": "array",
+                                                "description": "ArrayProperty",
+                                                "items": {
+                                                  "type": "string",
+                                                  "description": "EnumProperty",
+                                                  "$ref": "../enums.schema.json#/definitions/EPalWeaponType"
+                                                }
+                                              },
+                                              {
+                                                "type": "object",
+                                                "properties": {
+                                                  "Items": {
+                                                    "type": "array",
+                                                    "description": "ArrayProperty",
+                                                    "items": {
+                                                      "type": "string",
+                                                      "description": "EnumProperty",
+                                                      "$ref": "../enums.schema.json#/definitions/EPalWeaponType"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          "bMeleeOnly": {
+                                            "type": "boolean",
+                                            "description": "BoolProperty"
+                                          }
+                                        }
+                                      },
+                                      "RegeneParam": {
+                                        "type": "object",
+                                        "description": "StructProperty",
+                                        "properties": {
+                                          "Interval": {
+                                            "type": "integer",
+                                            "description": "IntProperty"
+                                          }
+                                        }
+                                      },
+                                      "OtherOtomoConditionParam": {
+                                        "type": "object",
+                                        "description": "StructProperty",
+                                        "properties": {
+                                          "TargetElementType": {
+                                            "type": "string",
+                                            "description": "EnumProperty",
+                                            "$ref": "../enums.schema.json#/definitions/EPalElementType"
+                                          },
+                                          "TargetElementTypes": {
+                                            "oneOf": [
+                                              {
+                                                "type": "array",
+                                                "description": "ArrayProperty",
+                                                "items": {
+                                                  "type": "string",
+                                                  "description": "EnumProperty",
+                                                  "$ref": "../enums.schema.json#/definitions/EPalElementType"
+                                                }
+                                              },
+                                              {
+                                                "type": "object",
+                                                "properties": {
+                                                  "Items": {
+                                                    "type": "array",
+                                                    "description": "ArrayProperty",
+                                                    "items": {
+                                                      "type": "string",
+                                                      "description": "EnumProperty",
+                                                      "$ref": "../enums.schema.json#/definitions/EPalElementType"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          "PalTribeIds": {
+                                            "oneOf": [
+                                              {
+                                                "type": "array",
+                                                "description": "ArrayProperty",
+                                                "items": {
+                                                  "type": "string",
+                                                  "description": "EnumProperty",
+                                                  "$ref": "../enums.schema.json#/definitions/EPalTribeID"
+                                                }
+                                              },
+                                              {
+                                                "type": "object",
+                                                "properties": {
+                                                  "Items": {
+                                                    "type": "array",
+                                                    "description": "ArrayProperty",
+                                                    "items": {
+                                                      "type": "string",
+                                                      "description": "EnumProperty",
+                                                      "$ref": "../enums.schema.json#/definitions/EPalTribeID"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      },
+                                      "FloatValue1": {
+                                        "type": "number",
+                                        "description": "FloatProperty"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "TextReferencePassiveSkills": {
+        "oneOf": [
+          {
+            "type": "array",
+            "description": "ArrayProperty",
+            "items": {
+              "type": "object",
+              "description": "StructProperty",
+              "properties": {
+                "PassiveSkillIds": {
+                  "oneOf": [
+                    {
+                      "type": "array",
+                      "description": "ArrayProperty",
+                      "items": {
+                        "type": "object",
+                        "description": "StructProperty",
+                        "properties": {
+                          "Key": {
+                            "type": "string",
+                            "description": "FName"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "Items": {
+                          "type": "array",
+                          "description": "ArrayProperty",
+                          "items": {
+                            "type": "object",
+                            "description": "StructProperty",
+                            "properties": {
+                              "Key": {
+                                "type": "string",
+                                "description": "FName"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Items": {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "PassiveSkillIds": {
+                      "oneOf": [
+                        {
+                          "type": "array",
+                          "description": "ArrayProperty",
+                          "items": {
+                            "type": "object",
+                            "description": "StructProperty",
+                            "properties": {
+                              "Key": {
+                                "type": "string",
+                                "description": "FName"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "Items": {
+                              "type": "array",
+                              "description": "ArrayProperty",
+                              "items": {
+                                "type": "object",
+                                "description": "StructProperty",
+                                "properties": {
+                                  "Key": {
+                                    "type": "string",
+                                    "description": "FName"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

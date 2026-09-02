@@ -1,0 +1,140 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "MapObjectId": {
+        "type": "string",
+        "description": "FName"
+      },
+      "TypeA": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalBuildObjectTypeA"
+      },
+      "SortId": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "TypeB": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalBuildObjectTypeB"
+      },
+      "TypeUIDisplay": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalBuildObjectTypeForUIDisplay"
+      },
+      "Rank": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "BuildCapacity": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "RequiredBuildWorkAmount": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "AssetValue": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "RequiredEnergyType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalEnergyType"
+      },
+      "ConsumeEnergySpeed": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "Material1_Id": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Material1_Count": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Material2_Id": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Material2_Count": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Material3_Id": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Material3_Count": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Material4_Id": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Material4_Count": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "BlueprintItemID": {
+        "type": "string",
+        "description": "FName"
+      },
+      "OverrideDescMsgID": {
+        "type": "string",
+        "description": "FName"
+      },
+      "bInstallAtReticle": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "InstallNeighborThreshold": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "bIsInstallOnlyOnBase": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "bIsInstallOnlyInDoor": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "bIsInstallOnlyHubAround": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "InstallMaxNumInBaseCamp": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "bInstallableNoObstacleFromCamera": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "BuildExpRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "bIsProhibitedInRaidBossArea": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "MaxBuildCountInRaidBossArea": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "bIsPaintable": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "DT_CharacterTeamMissionDataTable": {
+    "Dungeon_Grass": {
+      "MaxCharacterNum": 300
+    },
+    "Dungeon_Forest": {
+      "MaxCharacterNum": 300
+    },
+    "Dungeon_Volcano": {
+      "MaxCharacterNum": 300
+    },
+    "Dungeon_Desert": {
+      "MaxCharacterNum": 300
+    },
+    "Dungeon_Snow": {
+      "MaxCharacterNum": 300
+    },
+    "Dungeon_Sakurajima": {
+      "MaxCharacterNum": 300
+    },
+    "Dungeon_DarkIsland": {
+      "MaxCharacterNum": 300
+    },
+    "Dungeon_SkyIsland": {
+      "MaxCharacterNum": 300
+    },
+    "Dungeon_WorldTree": {
+      "MaxCharacterNum": 300
+    },
+    "Dungeon_GrassHard": {
+      "MaxCharacterNum": 300
+    },
+    "Dungeon_ForestHard": {
+      "MaxCharacterNum": 300
+    },
+    "Dungeon_VolcanoHard": {
+      "MaxCharacterNum": 300
+    },
+    "Dungeon_DesertHard": {
+      "MaxCharacterNum": 300
+    },
+    "Dungeon_SnowHard": {
+      "MaxCharacterNum": 300
+    },
+    "Dungeon_SakurajimaHard": {
+      "MaxCharacterNum": 300
+    },
+    "Dungeon_DarkIslandHard": {
+      "MaxCharacterNum": 300
+    },
+    "Dungeon_SkyIslandHard": {
+      "MaxCharacterNum": 300
+    },
+    "Dungeon_WorldTreeHard": {
+      "MaxCharacterNum": 300
+    }
+  }
+}

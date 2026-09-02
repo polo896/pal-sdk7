@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "FieldName": {
+        "type": "string",
+        "description": "FName"
+      },
+      "PalId": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Weight": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "MinLevel": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "MaxLevel": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

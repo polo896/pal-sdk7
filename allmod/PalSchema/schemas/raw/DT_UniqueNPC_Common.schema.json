@@ -1,0 +1,67 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "CharacterID": {
+        "type": "string",
+        "description": "FName"
+      },
+      "NameTextID": {
+        "type": "string",
+        "description": "FName"
+      },
+      "OneTalkDTName": {
+        "type": "string",
+        "description": "FName"
+      },
+      "TalkBPClass": {
+        "type": "string",
+        "description": "FName"
+      },
+      "IsTransientTalkCount": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "Gender": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalGenderType"
+      },
+      "SkinColor": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalNPCSkinColor"
+      },
+      "Face": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalNPCFaceType"
+      },
+      "HairStyle": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalNPCHairStyleType"
+      },
+      "HairColor": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalNPCHairColorType"
+      },
+      "Clothes": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalNPCClothesType"
+      },
+      "Scale": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalNPCScaleType"
+      },
+      "Level": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

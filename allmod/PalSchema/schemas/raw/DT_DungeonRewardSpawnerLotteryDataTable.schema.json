@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "SpawnAreaId": {
+        "type": "string",
+        "description": "FName"
+      },
+      "RewardSpawnerType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalDungeonRewardSpawnerType"
+      },
+      "Weight": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "SpawnerContentType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalDungeonRewardSpawnerContentType"
+      },
+      "LotteryValue": {
+        "type": "string",
+        "description": "FName"
+      },
+      "LotteryValueBlueprintClassName": {
+        "type": "string",
+        "description": "FName"
+      },
+      "LotteryValueBlueprintSoftClass": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ClassPathRegex"
+      }
+    }
+  }
+}

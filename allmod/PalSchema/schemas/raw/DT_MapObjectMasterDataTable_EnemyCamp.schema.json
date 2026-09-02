@@ -1,0 +1,78 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "OverrideNameMsgID": {
+        "type": "string",
+        "description": "FName"
+      },
+      "BlueprintClassName": {
+        "type": "string",
+        "description": "FName"
+      },
+      "BlueprintClassSoft": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ClassPathRegex"
+      },
+      "MaterialType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalMapObjectMaterialType"
+      },
+      "MaterialSubType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalMapObjectMaterialSubType"
+      },
+      "bCollectionObject": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "Hp": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Defense": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Hp_PVP": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Defense_PVP": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "bBelongToBaseCamp": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "DistributeExpAroundPlayer": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "DeteriorationDamage": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "ExtinguishBurnWorkAmount": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "bShowHPGauge": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "bInDevelop": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "Editor_RowNameHash": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

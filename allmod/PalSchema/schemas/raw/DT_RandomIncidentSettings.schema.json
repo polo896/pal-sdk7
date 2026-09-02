@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "MonsterSpawnData": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+      },
+      "NPCSpawnData": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+      },
+      "ExcludeOtherPal": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "action": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ClassPathRegex"
+      },
+      "ObjectPlacement": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ClassPathRegex"
+      }
+    }
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "MakeInfo": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "BodyMeshName": {
+            "type": "string",
+            "description": "FName"
+          },
+          "HeadMeshName": {
+            "type": "string",
+            "description": "FName"
+          },
+          "HairMeshName": {
+            "type": "string",
+            "description": "FName"
+          },
+          "EquipmentBodyMeshName": {
+            "type": "string",
+            "description": "FName"
+          },
+          "EquipmentHeadMeshName": {
+            "type": "string",
+            "description": "FName"
+          },
+          "OverrideEquipmentInfo": {
+            "type": "object",
+            "description": "StructProperty",
+            "properties": {
+              "Head": {
+                "type": "string",
+                "description": "FName"
+              },
+              "Body": {
+                "type": "string",
+                "description": "FName"
+              },
+              "Glider": {
+                "type": "string",
+                "description": "FName"
+              },
+              "Weapon": {
+                "type": "array",
+                "description": "MapProperty",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "Key": {
+                      "type": "string",
+                      "description": "FName"
+                    },
+                    "Value": {
+                      "type": "string",
+                      "description": "FName"
+                    }
+                  }
+                }
+              },
+              "Pal": {
+                "type": "array",
+                "description": "MapProperty",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "Key": {
+                      "type": "string",
+                      "description": "FName"
+                    },
+                    "Value": {
+                      "type": "string",
+                      "description": "FName"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "DisableHeadDressingFlag": {
+            "type": "boolean",
+            "description": "BoolProperty"
+          },
+          "DisableBodyDressingFlag": {
+            "type": "boolean",
+            "description": "BoolProperty"
+          },
+          "DisableGliderDressingFlag": {
+            "type": "boolean",
+            "description": "BoolProperty"
+          },
+          "ArmVolume": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "TorsoVolume": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "LegVolume": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "HairColor": {
+            "type": "object",
+            "description": "StructProperty",
+            "properties": {
+              "R": {
+                "type": "number",
+                "description": "FloatProperty"
+              },
+              "G": {
+                "type": "number",
+                "description": "FloatProperty"
+              },
+              "B": {
+                "type": "number",
+                "description": "FloatProperty"
+              },
+              "A": {
+                "type": "number",
+                "description": "FloatProperty"
+              }
+            }
+          },
+          "BrowColor": {
+            "type": "object",
+            "description": "StructProperty",
+            "properties": {
+              "R": {
+                "type": "number",
+                "description": "FloatProperty"
+              },
+              "G": {
+                "type": "number",
+                "description": "FloatProperty"
+              },
+              "B": {
+                "type": "number",
+                "description": "FloatProperty"
+              },
+              "A": {
+                "type": "number",
+                "description": "FloatProperty"
+              }
+            }
+          },
+          "BodyColor": {
+            "type": "object",
+            "description": "StructProperty",
+            "properties": {
+              "R": {
+                "type": "number",
+                "description": "FloatProperty"
+              },
+              "G": {
+                "type": "number",
+                "description": "FloatProperty"
+              },
+              "B": {
+                "type": "number",
+                "description": "FloatProperty"
+              },
+              "A": {
+                "type": "number",
+                "description": "FloatProperty"
+              }
+            }
+          },
+          "BodySubsurfaceColor": {
+            "type": "object",
+            "description": "StructProperty",
+            "properties": {
+              "R": {
+                "type": "number",
+                "description": "FloatProperty"
+              },
+              "G": {
+                "type": "number",
+                "description": "FloatProperty"
+              },
+              "B": {
+                "type": "number",
+                "description": "FloatProperty"
+              },
+              "A": {
+                "type": "number",
+                "description": "FloatProperty"
+              }
+            }
+          },
+          "EyeColor": {
+            "type": "object",
+            "description": "StructProperty",
+            "properties": {
+              "R": {
+                "type": "number",
+                "description": "FloatProperty"
+              },
+              "G": {
+                "type": "number",
+                "description": "FloatProperty"
+              },
+              "B": {
+                "type": "number",
+                "description": "FloatProperty"
+              },
+              "A": {
+                "type": "number",
+                "description": "FloatProperty"
+              }
+            }
+          },
+          "EyeMaterialName": {
+            "type": "string",
+            "description": "FName"
+          },
+          "VoiceID": {
+            "type": "integer",
+            "description": "IntProperty"
+          },
+          "SkinInfo": {
+            "type": "object",
+            "description": "StructProperty",
+            "properties": {
+              "Head": {
+                "type": "string",
+                "description": "FName"
+              },
+              "Body": {
+                "type": "string",
+                "description": "FName"
+              },
+              "Glider": {
+                "type": "string",
+                "description": "FName"
+              },
+              "Weapon": {
+                "type": "array",
+                "description": "MapProperty",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "Key": {
+                      "type": "string",
+                      "description": "FName"
+                    },
+                    "Value": {
+                      "type": "string",
+                      "description": "FName"
+                    }
+                  }
+                }
+              },
+              "Pal": {
+                "type": "array",
+                "description": "MapProperty",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "Key": {
+                      "type": "string",
+                      "description": "FName"
+                    },
+                    "Value": {
+                      "type": "string",
+                      "description": "FName"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "IconTexture": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+      }
+    }
+  }
+}

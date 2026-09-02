@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "SkinName": {
+        "type": "string",
+        "description": "FName"
+      },
+      "SkinType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalSkinType"
+      },
+      "SkinStaticClass": {
+        "type": "string",
+        "description": "FName"
+      },
+      "bIsHairAccessory": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "TargetActorClassName": {
+        "type": "string",
+        "description": "FName"
+      },
+      "TargetPalName": {
+        "type": "string",
+        "description": "FName"
+      },
+      "bAutoGetItem": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "PlatformItemID_Steam": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

@@ -1,0 +1,713 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "InfoList": {
+        "oneOf": [
+          {
+            "type": "array",
+            "description": "ArrayProperty",
+            "items": {
+              "type": "object",
+              "description": "StructProperty",
+              "properties": {
+                "PalId": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "Key": {
+                      "type": "string",
+                      "description": "FName"
+                    }
+                  }
+                },
+                "Level": {
+                  "type": "integer",
+                  "description": "IntProperty"
+                },
+                "WarpWazaID": {
+                  "type": "string",
+                  "description": "EnumProperty",
+                  "$ref": "../enums.schema.json#/definitions/EPalWazaID"
+                },
+                "BaseCampAttackWazaIDs": {
+                  "oneOf": [
+                    {
+                      "type": "array",
+                      "description": "ArrayProperty",
+                      "items": {
+                        "type": "string",
+                        "description": "EnumProperty",
+                        "$ref": "../enums.schema.json#/definitions/EPalWazaID"
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "Items": {
+                          "type": "array",
+                          "description": "ArrayProperty",
+                          "items": {
+                            "type": "string",
+                            "description": "EnumProperty",
+                            "$ref": "../enums.schema.json#/definitions/EPalWazaID"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                "OverrideInitialElement1": {
+                  "type": "string",
+                  "description": "EnumProperty",
+                  "$ref": "../enums.schema.json#/definitions/EPalElementType"
+                },
+                "OverrideInitialElement2": {
+                  "type": "string",
+                  "description": "EnumProperty",
+                  "$ref": "../enums.schema.json#/definitions/EPalElementType"
+                },
+                "CanModeChange": {
+                  "type": "boolean",
+                  "description": "BoolProperty"
+                },
+                "IgnoreLargeDown": {
+                  "type": "boolean",
+                  "description": "BoolProperty"
+                },
+                "ModeChange_AddStatusToAllWhenModeChgange": {
+                  "type": "string",
+                  "description": "EnumProperty",
+                  "$ref": "../enums.schema.json#/definitions/EPalStatusID"
+                },
+                "ModeChange_Element1": {
+                  "type": "string",
+                  "description": "EnumProperty",
+                  "$ref": "../enums.schema.json#/definitions/EPalElementType"
+                },
+                "ModeChange_Element2": {
+                  "type": "string",
+                  "description": "EnumProperty",
+                  "$ref": "../enums.schema.json#/definitions/EPalElementType"
+                },
+                "ModeChange_AddPassiveSkill": {
+                  "oneOf": [
+                    {
+                      "type": "array",
+                      "description": "ArrayProperty",
+                      "items": {
+                        "type": "string",
+                        "description": "FName"
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "Items": {
+                          "type": "array",
+                          "description": "ArrayProperty",
+                          "items": {
+                            "type": "string",
+                            "description": "FName"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                "ModeChange_AddWaza": {
+                  "oneOf": [
+                    {
+                      "type": "array",
+                      "description": "ArrayProperty",
+                      "items": {
+                        "type": "string",
+                        "description": "EnumProperty",
+                        "$ref": "../enums.schema.json#/definitions/EPalWazaID"
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "Items": {
+                          "type": "array",
+                          "description": "ArrayProperty",
+                          "items": {
+                            "type": "string",
+                            "description": "EnumProperty",
+                            "$ref": "../enums.schema.json#/definitions/EPalWazaID"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                "ModeChange_RemoveWaza": {
+                  "oneOf": [
+                    {
+                      "type": "array",
+                      "description": "ArrayProperty",
+                      "items": {
+                        "type": "string",
+                        "description": "EnumProperty",
+                        "$ref": "../enums.schema.json#/definitions/EPalWazaID"
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "Items": {
+                          "type": "array",
+                          "description": "ArrayProperty",
+                          "items": {
+                            "type": "string",
+                            "description": "EnumProperty",
+                            "$ref": "../enums.schema.json#/definitions/EPalWazaID"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                "AIControllerClass": {
+                  "type": "string",
+                  "$ref": "../utility.schema.json#/definitions/ClassPathRegex"
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Items": {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "PalId": {
+                      "type": "object",
+                      "description": "StructProperty",
+                      "properties": {
+                        "Key": {
+                          "type": "string",
+                          "description": "FName"
+                        }
+                      }
+                    },
+                    "Level": {
+                      "type": "integer",
+                      "description": "IntProperty"
+                    },
+                    "WarpWazaID": {
+                      "type": "string",
+                      "description": "EnumProperty",
+                      "$ref": "../enums.schema.json#/definitions/EPalWazaID"
+                    },
+                    "BaseCampAttackWazaIDs": {
+                      "oneOf": [
+                        {
+                          "type": "array",
+                          "description": "ArrayProperty",
+                          "items": {
+                            "type": "string",
+                            "description": "EnumProperty",
+                            "$ref": "../enums.schema.json#/definitions/EPalWazaID"
+                          }
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "Items": {
+                              "type": "array",
+                              "description": "ArrayProperty",
+                              "items": {
+                                "type": "string",
+                                "description": "EnumProperty",
+                                "$ref": "../enums.schema.json#/definitions/EPalWazaID"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "OverrideInitialElement1": {
+                      "type": "string",
+                      "description": "EnumProperty",
+                      "$ref": "../enums.schema.json#/definitions/EPalElementType"
+                    },
+                    "OverrideInitialElement2": {
+                      "type": "string",
+                      "description": "EnumProperty",
+                      "$ref": "../enums.schema.json#/definitions/EPalElementType"
+                    },
+                    "CanModeChange": {
+                      "type": "boolean",
+                      "description": "BoolProperty"
+                    },
+                    "IgnoreLargeDown": {
+                      "type": "boolean",
+                      "description": "BoolProperty"
+                    },
+                    "ModeChange_AddStatusToAllWhenModeChgange": {
+                      "type": "string",
+                      "description": "EnumProperty",
+                      "$ref": "../enums.schema.json#/definitions/EPalStatusID"
+                    },
+                    "ModeChange_Element1": {
+                      "type": "string",
+                      "description": "EnumProperty",
+                      "$ref": "../enums.schema.json#/definitions/EPalElementType"
+                    },
+                    "ModeChange_Element2": {
+                      "type": "string",
+                      "description": "EnumProperty",
+                      "$ref": "../enums.schema.json#/definitions/EPalElementType"
+                    },
+                    "ModeChange_AddPassiveSkill": {
+                      "oneOf": [
+                        {
+                          "type": "array",
+                          "description": "ArrayProperty",
+                          "items": {
+                            "type": "string",
+                            "description": "FName"
+                          }
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "Items": {
+                              "type": "array",
+                              "description": "ArrayProperty",
+                              "items": {
+                                "type": "string",
+                                "description": "FName"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "ModeChange_AddWaza": {
+                      "oneOf": [
+                        {
+                          "type": "array",
+                          "description": "ArrayProperty",
+                          "items": {
+                            "type": "string",
+                            "description": "EnumProperty",
+                            "$ref": "../enums.schema.json#/definitions/EPalWazaID"
+                          }
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "Items": {
+                              "type": "array",
+                              "description": "ArrayProperty",
+                              "items": {
+                                "type": "string",
+                                "description": "EnumProperty",
+                                "$ref": "../enums.schema.json#/definitions/EPalWazaID"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "ModeChange_RemoveWaza": {
+                      "oneOf": [
+                        {
+                          "type": "array",
+                          "description": "ArrayProperty",
+                          "items": {
+                            "type": "string",
+                            "description": "EnumProperty",
+                            "$ref": "../enums.schema.json#/definitions/EPalWazaID"
+                          }
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "Items": {
+                              "type": "array",
+                              "description": "ArrayProperty",
+                              "items": {
+                                "type": "string",
+                                "description": "EnumProperty",
+                                "$ref": "../enums.schema.json#/definitions/EPalWazaID"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "AIControllerClass": {
+                      "type": "string",
+                      "$ref": "../utility.schema.json#/definitions/ClassPathRegex"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "SummonMeteor_Num": {
+        "oneOf": [
+          {
+            "type": "array",
+            "description": "ArrayProperty",
+            "items": {
+              "type": "object",
+              "description": "StructProperty",
+              "properties": {
+                "HPRate": {
+                  "type": "number",
+                  "description": "FloatProperty"
+                },
+                "SummonPalInfoList": {
+                  "oneOf": [
+                    {
+                      "type": "array",
+                      "description": "ArrayProperty",
+                      "items": {
+                        "type": "object",
+                        "description": "StructProperty",
+                        "properties": {
+                          "PalNameAndNum": {
+                            "type": "array",
+                            "description": "MapProperty",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "Key": {
+                                  "type": "object",
+                                  "description": "StructProperty",
+                                  "properties": {
+                                    "Key": {
+                                      "type": "string",
+                                      "description": "FName"
+                                    }
+                                  }
+                                },
+                                "Value": {
+                                  "type": "integer",
+                                  "description": "IntProperty"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "Items": {
+                          "type": "array",
+                          "description": "ArrayProperty",
+                          "items": {
+                            "type": "object",
+                            "description": "StructProperty",
+                            "properties": {
+                              "PalNameAndNum": {
+                                "type": "array",
+                                "description": "MapProperty",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "Key": {
+                                      "type": "object",
+                                      "description": "StructProperty",
+                                      "properties": {
+                                        "Key": {
+                                          "type": "string",
+                                          "description": "FName"
+                                        }
+                                      }
+                                    },
+                                    "Value": {
+                                      "type": "integer",
+                                      "description": "IntProperty"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Items": {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "HPRate": {
+                      "type": "number",
+                      "description": "FloatProperty"
+                    },
+                    "SummonPalInfoList": {
+                      "oneOf": [
+                        {
+                          "type": "array",
+                          "description": "ArrayProperty",
+                          "items": {
+                            "type": "object",
+                            "description": "StructProperty",
+                            "properties": {
+                              "PalNameAndNum": {
+                                "type": "array",
+                                "description": "MapProperty",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "Key": {
+                                      "type": "object",
+                                      "description": "StructProperty",
+                                      "properties": {
+                                        "Key": {
+                                          "type": "string",
+                                          "description": "FName"
+                                        }
+                                      }
+                                    },
+                                    "Value": {
+                                      "type": "integer",
+                                      "description": "IntProperty"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "Items": {
+                              "type": "array",
+                              "description": "ArrayProperty",
+                              "items": {
+                                "type": "object",
+                                "description": "StructProperty",
+                                "properties": {
+                                  "PalNameAndNum": {
+                                    "type": "array",
+                                    "description": "MapProperty",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "Key": {
+                                          "type": "object",
+                                          "description": "StructProperty",
+                                          "properties": {
+                                            "Key": {
+                                              "type": "string",
+                                              "description": "FName"
+                                            }
+                                          }
+                                        },
+                                        "Value": {
+                                          "type": "integer",
+                                          "description": "IntProperty"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "SummonGeneratorClass": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ClassPathRegex"
+      },
+      "EggPalIDAndWeight": {
+        "type": "array",
+        "description": "MapProperty",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Key": {
+              "type": "object",
+              "description": "StructProperty",
+              "properties": {
+                "Key": {
+                  "type": "string",
+                  "description": "FName"
+                }
+              }
+            },
+            "Value": {
+              "type": "number",
+              "description": "FloatProperty"
+            }
+          }
+        }
+      },
+      "SuccessItemList": {
+        "oneOf": [
+          {
+            "type": "array",
+            "description": "ArrayProperty",
+            "items": {
+              "type": "object",
+              "description": "StructProperty",
+              "properties": {
+                "ItemName": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "Key": {
+                      "type": "string",
+                      "description": "FName"
+                    }
+                  }
+                },
+                "Rate": {
+                  "type": "number",
+                  "description": "FloatProperty"
+                },
+                "Min": {
+                  "type": "integer",
+                  "description": "IntProperty"
+                },
+                "Max": {
+                  "type": "integer",
+                  "description": "IntProperty"
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Items": {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "ItemName": {
+                      "type": "object",
+                      "description": "StructProperty",
+                      "properties": {
+                        "Key": {
+                          "type": "string",
+                          "description": "FName"
+                        }
+                      }
+                    },
+                    "Rate": {
+                      "type": "number",
+                      "description": "FloatProperty"
+                    },
+                    "Min": {
+                      "type": "integer",
+                      "description": "IntProperty"
+                    },
+                    "Max": {
+                      "type": "integer",
+                      "description": "IntProperty"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "SuccessAnyOneItemList": {
+        "oneOf": [
+          {
+            "type": "array",
+            "description": "ArrayProperty",
+            "items": {
+              "type": "object",
+              "description": "StructProperty",
+              "properties": {
+                "ItemName": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "Key": {
+                      "type": "string",
+                      "description": "FName"
+                    }
+                  }
+                },
+                "Num": {
+                  "type": "integer",
+                  "description": "IntProperty"
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Items": {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "ItemName": {
+                      "type": "object",
+                      "description": "StructProperty",
+                      "properties": {
+                        "Key": {
+                          "type": "string",
+                          "description": "FName"
+                        }
+                      }
+                    },
+                    "Num": {
+                      "type": "integer",
+                      "description": "IntProperty"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "AchievementId": {
+        "type": "string",
+        "description": "FString"
+      },
+      "OverrideRaidBossBattleActorClass": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ClassPathRegex"
+      }
+    }
+  }
+}

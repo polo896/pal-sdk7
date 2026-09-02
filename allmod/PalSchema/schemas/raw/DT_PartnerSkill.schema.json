@@ -1,0 +1,45 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "DevName": {
+        "type": "string",
+        "description": "FName"
+      },
+      "EffectTime": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "CoolDownTime": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "ExecCost": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "IdleCost": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "CanThrowPal": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "CanChangeWeapon": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "IsToggleKey": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "TriggerType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalPartnerSkillTriggerType"
+      }
+    }
+  }
+}

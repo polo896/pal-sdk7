@@ -1,0 +1,8 @@
+{
+  "name": "UnlimitedBuildings",
+  "authors": [
+    "czubai"
+  ],
+  "description": "Removes build count limits for Guild Chest, Expedition Station, and Summoning Altar",
+  "version": "2.0.0"
+}

@@ -1,0 +1,210 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "WazaType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalWazaID"
+      },
+      "Element": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalElementType"
+      },
+      "IgnoreRandomInherit": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "Category": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalWazaCategory"
+      },
+      "Power": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "DisplayPower": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "IsLeanBack": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "CameraShake": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalPlayerDamageCameraShakeCategory"
+      },
+      "IgnoreRaycast": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "MinRange": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "MaxRange": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "MaxHeightDiff": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "CoolTime": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "ForceRagdollSize": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalSizeType"
+      },
+      "EffectType1": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalAdditionalEffectType"
+      },
+      "EffectValue1": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "EffectValueEx1": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "EffectType2": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalAdditionalEffectType"
+      },
+      "EffectValue2": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "EffectValueEx2": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "SpecialAttackRateInfos": {
+        "oneOf": [
+          {
+            "type": "array",
+            "description": "ArrayProperty",
+            "items": {
+              "type": "object",
+              "description": "StructProperty",
+              "properties": {
+                "Type": {
+                  "type": "string",
+                  "description": "EnumProperty",
+                  "$ref": "../enums.schema.json#/definitions/EPalSpecialAttackRateType"
+                },
+                "Rate": {
+                  "type": "number",
+                  "description": "FloatProperty"
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Items": {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "Type": {
+                      "type": "string",
+                      "description": "EnumProperty",
+                      "$ref": "../enums.schema.json#/definitions/EPalSpecialAttackRateType"
+                    },
+                    "Rate": {
+                      "type": "number",
+                      "description": "FloatProperty"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "bIsWeaponDamage": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "WazaCustomExecuteConditions": {
+        "oneOf": [
+          {
+            "type": "array",
+            "description": "ArrayProperty",
+            "items": {
+              "type": "object",
+              "description": "StructProperty",
+              "properties": {
+                "Type": {
+                  "type": "string",
+                  "description": "EnumProperty",
+                  "$ref": "../enums.schema.json#/definitions/EPalWazaExecuteConditionType"
+                },
+                "Value": {
+                  "type": "number",
+                  "description": "FloatProperty"
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Items": {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "Type": {
+                      "type": "string",
+                      "description": "EnumProperty",
+                      "$ref": "../enums.schema.json#/definitions/EPalWazaExecuteConditionType"
+                    },
+                    "Value": {
+                      "type": "number",
+                      "description": "FloatProperty"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "bIsExplosionDamage": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "DisabledData": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "Strength": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalWazaStrength"
+      },
+      "BulletEmiiterOverlapClass": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ClassPathRegex"
+      }
+    }
+  }
+}

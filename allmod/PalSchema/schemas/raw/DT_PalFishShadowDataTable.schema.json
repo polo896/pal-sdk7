@@ -1,0 +1,54 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "FishShadowSize": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalFishShadowSizeType"
+      },
+      "PalId": {
+        "type": "string",
+        "description": "FName"
+      },
+      "BlueprintClassName": {
+        "type": "string",
+        "description": "FName"
+      },
+      "FishShadowBlueprintClassSoft": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ClassPathRegex"
+      },
+      "MoveSpeedPerSec": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "SearchRadius": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "SearchProbability": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "KingPassiveRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "BossPassiveRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "RarePassiveRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "BehaviorType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalFishBattleBehaviorType"
+      }
+    }
+  }
+}

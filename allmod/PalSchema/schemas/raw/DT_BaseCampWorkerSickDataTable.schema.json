@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "SickType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalBaseCampWorkerSickType"
+      },
+      "EffectiveItemRank": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Facial": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalFacialEyeType"
+      },
+      "WorkSpeed": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "MoveSpeed": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "SatietyDecrease": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "RecoveryProbabilityPercentageInPalBox": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

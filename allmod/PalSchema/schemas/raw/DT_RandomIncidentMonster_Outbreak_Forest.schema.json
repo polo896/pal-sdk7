@@ -1,0 +1,50 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "CharacterID": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "Key": {
+            "type": "string",
+            "description": "FName"
+          }
+        }
+      },
+      "Num": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "LevelMin": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "LevelMax": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Group": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "IsSquad": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "LocationTable": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+      },
+      "ControllerClass": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ClassPathRegex"
+      },
+      "DefaultActionClass": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ClassPathRegex"
+      }
+    }
+  }
+}

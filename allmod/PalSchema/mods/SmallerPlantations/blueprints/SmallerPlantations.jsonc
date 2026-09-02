@@ -1,0 +1,276 @@
+{
+  
+  // PLANTATIONS
+
+  // Wheat
+  "BP_BuildObject_FarmBlockV2_wheet_C": {
+    "BuildWorkableBounds": {
+      "BoxExtent": {
+        "X": 250.0,
+        "Y": 250.0,
+        "Z": 12.0
+      }
+    },
+    "CheckOverlapCollision": {
+      "BoxExtent": {
+        "X": 150.0,
+        "Y": 150.0,
+        "Z": 4.0
+      }
+    },
+    "VirtualMeshCollision": {
+      "BoxExtent": {
+        "X": 185.0,
+        "Y": 185.0,
+        "Z": 18.0
+      }
+    },
+    "Mesh": {
+      "RelativeScale3D": {
+        "X": 0.65,
+        "Y": 0.65,
+        "Z": 1.0
+      }
+    }
+  },
+
+  "BP_PalMapObjectFarmCrop_Wheat_C": {
+    "CropISM": {
+      "RelativeScale3D": {
+        "X": 0.8,
+        "Y": 0.8,
+        "Z": 1.0
+      }
+    },
+    "GrassISM": {
+      "RelativeScale3D": {
+        "X": 0.8,
+        "Y": 0.8,
+        "Z": 1.0
+      }
+    },
+    "GrowupISM": {
+      "RelativeScale3D": {
+        "X": 0.8,
+        "Y": 0.8,
+        "Z": 1.0
+      }
+    }
+  },
+
+  // Tomato
+  "BP_BuildObject_FarmBlockV2_tomato_C": {
+    "BuildWorkableBounds": {
+      "BoxExtent": {
+        "X": 250.0,
+        "Y": 250.0,
+        "Z": 12.0
+      }
+    },
+    "CheckOverlapCollision": {
+      "BoxExtent": {
+        "X": 150.0,
+        "Y": 150.0,
+        "Z": 4.0
+      }
+    },
+    "VirtualMeshCollision": {
+      "BoxExtent": {
+        "X": 185.0,
+        "Y": 185.0,
+        "Z": 18.0
+      }
+    },
+    "Mesh": {
+      "RelativeScale3D": {
+        "X": 0.65,
+        "Y": 0.65,
+        "Z": 1.0
+      }
+    }
+  },
+
+  // Lettuce
+  "BP_BuildObject_FarmBlockV2_Lettuce_C": {
+    "BuildWorkableBounds": {
+      "BoxExtent": {
+        "X": 250.0,
+        "Y": 250.0,
+        "Z": 12.0
+      }
+    },
+    "CheckOverlapCollision": {
+      "BoxExtent": {
+        "X": 150.0,
+        "Y": 150.0,
+        "Z": 4.0
+      }
+    },
+    "VirtualMeshCollision": {
+      "BoxExtent": {
+        "X": 185.0,
+        "Y": 185.0,
+        "Z": 18.0
+      }
+    },
+    "Mesh": {
+      "RelativeScale3D": {
+        "X": 0.65,
+        "Y": 0.65,
+        "Z": 1.0
+      }
+    }
+  },
+
+  "BP_PalMapObjectFarmCrop_Lettuce_C": {
+    "CropISM": {
+      "RelativeScale3D": {
+        "X": 0.9,
+        "Y": 0.9,
+        "Z": 1.0
+      }
+    },
+    "GrassISM": {
+      "RelativeScale3D": {
+        "X": 0.9,
+        "Y": 0.9,
+        "Z": 1.0
+      }
+    },
+    "GrowupISM": {
+      "RelativeScale3D": {
+        "X": 0.9,
+        "Y": 0.9,
+        "Z": 1.0
+      }
+    }
+  },
+
+  // Potato
+  "BP_BuildObject_FarmBlockV2_Potato_C": {
+    "BuildWorkableBounds": {
+      "BoxExtent": {
+        "X": 250.0,
+        "Y": 250.0,
+        "Z": 12.0
+      }
+    },
+    "CheckOverlapCollision": {
+      "BoxExtent": {
+        "X": 150.0,
+        "Y": 150.0,
+        "Z": 4.0
+      }
+    },
+    "VirtualMeshCollision": {
+      "BoxExtent": {
+        "X": 185.0,
+        "Y": 185.0,
+        "Z": 18.0
+      }
+    },
+    "Mesh": {
+      "RelativeScale3D": {
+        "X": 0.65,
+        "Y": 0.65,
+        "Z": 1.0
+      }
+    }
+  },
+
+  // Carrot
+  "BP_BuildObject_FarmBlockV2_Carrot_C": {
+    "BuildWorkableBounds": {
+      "BoxExtent": {
+        "X": 250.0,
+        "Y": 250.0,
+        "Z": 12.0
+      }
+    },
+    "CheckOverlapCollision": {
+      "BoxExtent": {
+        "X": 150.0,
+        "Y": 150.0,
+        "Z": 4.0
+      }
+    },
+    "VirtualMeshCollision": {
+      "BoxExtent": {
+        "X": 185.0,
+        "Y": 185.0,
+        "Z": 18.0
+      }
+    },
+    "Mesh": {
+      "RelativeScale3D": {
+        "X": 0.65,
+        "Y": 0.65,
+        "Z": 1.0
+      }
+    }
+  },
+
+  // Onion
+  "BP_BuildObject_FarmBlockV2_Onion_C": {
+    "BuildWorkableBounds": {
+      "BoxExtent": {
+        "X": 250.0,
+        "Y": 250.0,
+        "Z": 12.0
+      }
+    },
+    "CheckOverlapCollision": {
+      "BoxExtent": {
+        "X": 150.0,
+        "Y": 150.0,
+        "Z": 4.0
+      }
+    },
+    "VirtualMeshCollision": {
+      "BoxExtent": {
+        "X": 185.0,
+        "Y": 185.0,
+        "Z": 18.0
+      }
+    },
+    "Mesh": {
+      "RelativeScale3D": {
+        "X": 0.65,
+        "Y": 0.65,
+        "Z": 1.0
+      }
+    }
+  },
+
+  // Skill Fruit Orchard
+  "BP_BuildObject_Farm_SkillFruits_C": {
+    "BuildWorkableBounds": {
+      "BoxExtent": {
+        "X": 250.0,
+        "Y": 250.0,
+        "Z": 12.0
+      }
+    },
+    "CheckOverlapCollision": {
+      "BoxExtent": {
+        "X": 150.0,
+        "Y": 150.0,
+        "Z": 4.0
+      }
+    },
+    "VirtualMeshCollision": {
+      "BoxExtent": {
+        "X": 185.0,
+        "Y": 185.0,
+        "Z": 18.0
+      }
+    },
+    "Mesh": {
+      "RelativeScale3D": {
+        "X": 0.65,
+        "Y": 0.65,
+        "Z": 1.0
+      }
+    }
+  }
+}

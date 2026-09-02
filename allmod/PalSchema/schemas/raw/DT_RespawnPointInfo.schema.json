@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "SpawnPointID": {
+        "type": "string",
+        "description": "FName"
+      },
+      "ResourcesAbundant": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "PalAbundant": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "ForPvP": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      }
+    }
+  }
+}

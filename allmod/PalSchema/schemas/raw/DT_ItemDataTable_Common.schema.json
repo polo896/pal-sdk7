@@ -1,0 +1,225 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "OverrideName": {
+        "type": "string",
+        "description": "FName"
+      },
+      "OverrideDescription": {
+        "type": "string",
+        "description": "FName"
+      },
+      "IconName": {
+        "type": "string",
+        "description": "FName"
+      },
+      "TypeA": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalItemTypeA"
+      },
+      "TypeB": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalItemTypeB"
+      },
+      "Rank": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Rarity": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "MaxStackCount": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Weight": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "Price": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "SortId": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "bInTreasureBox": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "bNotConsumed": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "bNotAvailableInPVP": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "bEnableHandcraft": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "bLegalInGame": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "TechnologyTreeLock": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "ItemStaticClass": {
+        "type": "string",
+        "description": "FName"
+      },
+      "ItemDynamicClass": {
+        "type": "string",
+        "description": "FName"
+      },
+      "ItemActorClass": {
+        "type": "string",
+        "description": "FName"
+      },
+      "ItemStaticMeshName": {
+        "type": "string",
+        "description": "FName"
+      },
+      "VisualBlueprintClassName": {
+        "type": "string",
+        "description": "FName"
+      },
+      "VisualBlueprintClassSoft": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ClassPathRegex"
+      },
+      "DropItemType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalDropItemType"
+      },
+      "Editor_RowNameHash": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "RestoreSatiety": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "RestoreConcentration": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "RestoreSanity": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "RestoreHealth": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "GrantEffect1Id": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "GrantEffect1Time": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "GrantEffect2Id": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "GrantEffect2Time": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "GrantEffect3Id": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "GrantEffect3Time": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "Durability": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "ElementType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalElementType"
+      },
+      "bSleepWeapon": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "MagazineSize": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "SneakAttackRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "PhysicalAttackValue": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "HPValue": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "PhysicalDefenseValue": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "ShieldValue": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "MagicAttackValue": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "MagicDefenseValue": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "PassiveSkillName": {
+        "type": "string",
+        "description": "FName"
+      },
+      "PassiveSkillName2": {
+        "type": "string",
+        "description": "FName"
+      },
+      "PassiveSkillName3": {
+        "type": "string",
+        "description": "FName"
+      },
+      "PassiveSkillName4": {
+        "type": "string",
+        "description": "FName"
+      },
+      "WazaID": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalWazaID"
+      },
+      "CorruptionFactor": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "FloatValue1": {
+        "type": "number",
+        "description": "FloatProperty"
+      }
+    }
+  }
+}

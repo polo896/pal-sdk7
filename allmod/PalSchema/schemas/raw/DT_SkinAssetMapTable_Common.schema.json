@@ -1,0 +1,96 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "SkeletalMesh": {
+        "type": "array",
+        "description": "MapProperty",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Key": {
+              "type": "string",
+              "description": "FName"
+            },
+            "Value": {
+              "type": "string",
+              "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+            }
+          }
+        }
+      },
+      "Materials": {
+        "oneOf": [
+          {
+            "type": "array",
+            "description": "ArrayProperty",
+            "items": {
+              "type": "string",
+              "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Items": {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "string",
+                  "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "StaticMesh": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+      },
+      "AnimBP": {
+        "type": "array",
+        "description": "MapProperty",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Key": {
+              "type": "string",
+              "description": "FName"
+            },
+            "Value": {
+              "type": "string",
+              "$ref": "../utility.schema.json#/definitions/ClassPathRegex"
+            }
+          }
+        }
+      },
+      "BaseCharacterClass": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ClassPathRegex"
+      },
+      "BossCharacterClass": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ClassPathRegex"
+      },
+      "HairAttachSocketNameMap": {
+        "type": "array",
+        "description": "MapProperty",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Key": {
+              "type": "string",
+              "description": "FName"
+            },
+            "Value": {
+              "type": "string",
+              "description": "FName"
+            }
+          }
+        }
+      }
+    }
+  }
+}

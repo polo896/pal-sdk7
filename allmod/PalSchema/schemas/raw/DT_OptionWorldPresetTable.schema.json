@@ -1,0 +1,195 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "Diffculty": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalOptionWorldDifficulty"
+      },
+      "RandomizerType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalRandomizerType"
+      },
+      "DayTimeSpeedRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "NightTimeSpeedRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "ExpRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "PalCaptureRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "PalSpawnNumRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "PalDamageRateAttack": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "PalDamageRateDefense": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "PlayerDamageRateAttack": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "PlayerDamageRateDefense": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "PlayerStomachDecreaceRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "PlayerStaminaDecreaceRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "PlayerAutoHPRegeneRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "PlayerAutoHpRegeneRateInSleep": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "PalStomachDecreaceRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "PalStaminaDecreaceRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "PalAutoHPRegeneRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "PalAutoHpRegeneRateInSleep": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "BuildObjectHpRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "BuildObjectDamageRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "BuildObjectDeteriorationDamageRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "CollectionDropRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "CollectionObjectHpRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "CollectionObjectRespawnSpeedRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "EnemyDropItemRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "DeathPenalty": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalOptionWorldDeathPenalty"
+      },
+      "bActiveUNKO": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "DropItemMaxNum_UNKO": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "bEnableInvaderEnemy": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "DropItemMaxNum": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "PhysicsActiveDropItemMaxNum": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "bAutoResetGuildNoOnlinePlayers": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "AutoResetGuildTimeNoOnlinePlayers": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "GuildPlayerMaxNum": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "PalEggDefaultHatchingTime": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "BaseCampWorkerMaxNum": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "SupplyDropSpan": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "bHardcore": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "bPalLost": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "bAllowGlobalPalboxExport": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "bAllowGlobalPalboxImport": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "AutoTransferMasterCheckIntervalSeconds": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "AutoTransferMasterThresholdDays": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "GuildRejoinCooldownMinutes": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "MaxGuildsPerFrame": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "Rank": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "LotteryWeight": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "OverrideDescMsgID": {
+        "type": "string",
+        "description": "FName"
+      },
+      "TargetElementType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalElementType"
+      },
+      "EffectType1": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalPassiveSkillEffectType"
+      },
+      "EffectValue1": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "TargetType1": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalPassiveSkillEffectTargetType"
+      },
+      "EffectType2": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalPassiveSkillEffectType"
+      },
+      "EffectValue2": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "TargetType2": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalPassiveSkillEffectTargetType"
+      },
+      "EffectType3": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalPassiveSkillEffectType"
+      },
+      "EffectValue3": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "TargetType3": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalPassiveSkillEffectTargetType"
+      },
+      "EffectType4": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalPassiveSkillEffectType"
+      },
+      "EffectValue4": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "TargetType4": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalPassiveSkillEffectTargetType"
+      },
+      "InvokeActiveOtomo": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "InvokeWorker": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "InvokeRiding": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "InvokeReserve": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "InvokeInOtomo": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "InvokeAlways": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "InvokeInBaseCamp": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "AddInvokeTriggerType_1": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalPassiveAddTriggerType"
+      },
+      "AddInvokeTriggerType_2": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalPassiveAddTriggerType"
+      },
+      "AddPal": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "AddRarePal": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "AddWorldTreePal": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "AddMutationPal": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "AddShotWeapon": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "AddMeleeWeapon": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "AddArmor": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "AddAccessory": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "IsStackablePartnerSkillBySameTribe": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "OverrideNameTextID": {
+        "type": "string",
+        "description": "FName"
+      },
+      "OverrideSummaryTextId": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Category": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalPassiveCategory"
+      },
+      "SortKeyJP": {
+        "type": "string",
+        "description": "FString"
+      }
+    }
+  }
+}

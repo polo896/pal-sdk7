@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "SpawnerID": {
+        "type": "string",
+        "description": "FName"
+      },
+      "CharacterID": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Location": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "X": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Y": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Z": {
+            "type": "number",
+            "description": "FloatProperty"
+          }
+        }
+      },
+      "Level": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

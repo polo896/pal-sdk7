@@ -1,0 +1,26 @@
+{
+  "BP_BuildObject_BreedFarm_C": {
+    "BreedFarmParameter": {
+      "BreedRequiredRealTime": 0.0,
+      "ExistPalEggMaxNum": 30,
+      "TargetItemIds": [
+        { "Key": "Cake" },
+		{ "Key": "Cake02"},
+        { "Key": "Cake03"},
+        { "Key": "Cake04"},
+        { "Key": "Cake05" }
+      ]
+    }
+  },
+  "BP_PalGameSetting_C": {
+	"LongPressInterval_GetHatchedPal":0.1,
+	"Combi_BossPalRate":0.25,
+	"PalEggRankInfoArray": [
+      { "PalRarity": 2, "EggScale": 0.7, "HatchingSpeedDivisionRate": 0.0 },
+      { "PalRarity": 4, "EggScale": 0.9, "HatchingSpeedDivisionRate": 0.0 },
+      { "PalRarity": 6, "EggScale": 1.1, "HatchingSpeedDivisionRate": 0.0 },
+      { "PalRarity": 7, "EggScale": 1.5, "HatchingSpeedDivisionRate": 0.0 },
+      { "PalRarity": 99, "EggScale": 2.0, "HatchingSpeedDivisionRate": 0.0 }
+    ]
+  }
+}

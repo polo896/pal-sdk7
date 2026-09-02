@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "MaxHP": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "MaxSP": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Power": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "WorkSpeed": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "MaxInventoryWeight": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "QuestType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalQuestType"
+      },
+      "QuestData": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ClassPathRegex"
+      },
+      "bReorderable": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      }
+    }
+  }
+}

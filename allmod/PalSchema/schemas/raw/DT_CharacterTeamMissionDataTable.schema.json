@@ -1,0 +1,55 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "TitleTextId": {
+        "type": "string",
+        "description": "FName"
+      },
+      "TextureType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalMapObjectCharacterTeamMissionIconTextureType"
+      },
+      "Difficulty": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalCharacterTeamMissionDifficulty"
+      },
+      "RequiredSeconds": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "RecommendedStrength": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "RequiredElementType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalElementType"
+      },
+      "RequiredElementNum": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "MaxCharacterNum": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "ItemFieldLotteryName": {
+        "type": "string",
+        "description": "FName"
+      },
+      "ReleaseCondition": {
+        "type": "string",
+        "description": "FName"
+      },
+      "ChallengeCondition": {
+        "type": "string",
+        "description": "FName"
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "Debug_DisplayName": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Priority": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalBaseCampWorkerEventPriority"
+      },
+      "TriggerSanity": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "bAllowInterruptRecoverHungry": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "bAllowInterruptSleep": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "bAssignableWork": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "bAssignableFixedWork": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "TriggerSkipCount": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "logPriority": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalLogPriority"
+      },
+      "LogTone": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalLogContentToneType"
+      },
+      "Invalid": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      }
+    }
+  }
+}

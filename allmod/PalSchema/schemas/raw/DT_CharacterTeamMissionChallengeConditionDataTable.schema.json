@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "DefeatBossType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalBossType"
+      },
+      "DefeatBossDifficulty": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalBossBattleDifficulty"
+      },
+      "DefeatHardBossNum": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "RelicType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalRelicType"
+      },
+      "Rank": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "RequiredRelicNum": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "EffectRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "ResetRequiredMoney": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

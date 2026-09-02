@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "EyeMaterialInstance": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+      },
+      "IconTexture": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+      },
+      "ShiftUIDisplayEyeColor": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "R": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "G": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "B": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "A": {
+            "type": "number",
+            "description": "FloatProperty"
+          }
+        }
+      }
+    }
+  }
+}

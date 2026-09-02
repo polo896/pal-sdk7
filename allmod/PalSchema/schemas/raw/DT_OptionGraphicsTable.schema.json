@@ -1,0 +1,50 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "GraphicsLevel": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalOptionGraphicsLevel"
+      },
+      "AntiAliasingType": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "CommonQuality": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "ViewDistanceQuality": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "MapObjectDrawDistanceType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalOptionMapObjectDrawDistanceType"
+      },
+      "FoliageQuality": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "ShadowQuality": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "TextureQuality": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "bEnableMotionBlur": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      },
+      "ScreenPercentage": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

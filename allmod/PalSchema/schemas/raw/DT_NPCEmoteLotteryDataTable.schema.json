@@ -1,0 +1,45 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "FieldName": {
+        "type": "string",
+        "description": "FName"
+      },
+      "SlotNo": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "WeightInSlot": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "StaticItemId": {
+        "type": "string",
+        "description": "FName"
+      },
+      "MinNum": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "MaxNum": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "NumUnit": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "TreasureBoxGrade": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalMapObjectTreasureGradeType"
+      },
+      "BonusExpRate": {
+        "type": "number",
+        "description": "FloatProperty"
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "Rank": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "RequiredStaticItemId": {
+        "type": "string",
+        "description": "FName"
+      },
+      "RequiredItemNum": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "ResetRequiredMoney": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

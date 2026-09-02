@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "ItemName_2_BD5693AE46A268A165B9F0A534652D84": {
+        "type": "string",
+        "description": "FName"
+      },
+      "ItemNum_Min_25_5D424FC741B30676B343719C44549878": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "ItemNum_Max_26_36F7E42D491FCECB7399F78070B5B7A7": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "UnitNum_27_27848ED645752B16DF5FC38F2915DEB8": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Weight_8_F7EB66974C769D7AA8EA0B99E234AE6B": {
+        "type": "number",
+        "description": "FloatProperty"
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "Item_01_Id": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Item_01_Num": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Item_02_Id": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Item_02_Num": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "Item_03_Id": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Item_03_Num": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

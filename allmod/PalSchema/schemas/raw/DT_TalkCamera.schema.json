@@ -1,0 +1,48 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "Location_2_DC39D6C94609360093407D8B9DFDF702": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "X": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Y": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Z": {
+            "type": "number",
+            "description": "FloatProperty"
+          }
+        }
+      },
+      "Rotation_5_772409A842673803A88290B1CBD837F1": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "Pitch": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Yaw": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Roll": {
+            "type": "number",
+            "description": "FloatProperty"
+          }
+        }
+      },
+      "FOV_8_6D4CE0444686A0B09206AE9B3A04378C": {
+        "type": "number",
+        "description": "FloatProperty"
+      }
+    }
+  }
+}

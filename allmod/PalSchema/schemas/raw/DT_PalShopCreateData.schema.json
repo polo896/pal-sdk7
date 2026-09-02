@@ -1,0 +1,61 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "MaxLostPalNum": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "CharacterNum": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "CharacterIDArray": {
+        "oneOf": [
+          {
+            "type": "array",
+            "description": "ArrayProperty",
+            "items": {
+              "type": "object",
+              "description": "StructProperty",
+              "properties": {
+                "Key": {
+                  "type": "string",
+                  "description": "FName"
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Items": {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "Key": {
+                      "type": "string",
+                      "description": "FName"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "MinCharacterLevel": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "MaxCharacterLevel": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

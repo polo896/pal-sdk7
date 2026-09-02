@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "DifficultyLevel": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "UnlockableRangeSize": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "LimitKeyPressureCurve": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+      },
+      "KeyTurningCurveOutsideUnlockableRange": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+      }
+    }
+  }
+}

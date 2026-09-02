@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "XboxButtonImage": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+      },
+      "Key": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "KeyName": {
+            "type": "string",
+            "description": "FName"
+          }
+        }
+      }
+    }
+  }
+}

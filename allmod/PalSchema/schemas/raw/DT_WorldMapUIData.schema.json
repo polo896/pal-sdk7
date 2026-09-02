@@ -1,0 +1,166 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "minMapTextureBlockSize": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "X": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Y": {
+            "type": "number",
+            "description": "FloatProperty"
+          }
+        }
+      },
+      "mapBlockNum": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "X": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Y": {
+            "type": "number",
+            "description": "FloatProperty"
+          }
+        }
+      },
+      "MaskTextureSize": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "X": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Y": {
+            "type": "number",
+            "description": "FloatProperty"
+          }
+        }
+      },
+      "landScapeRealPositionMin": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "X": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Y": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Z": {
+            "type": "number",
+            "description": "FloatProperty"
+          }
+        }
+      },
+      "landScapeRealPositionMax": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "X": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Y": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Z": {
+            "type": "number",
+            "description": "FloatProperty"
+          }
+        }
+      },
+      "textureDataMap": {
+        "type": "array",
+        "description": "MapProperty",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Key": {
+              "type": "string",
+              "description": "FName"
+            },
+            "Value": {
+              "type": "object",
+              "description": "StructProperty",
+              "properties": {
+                "Texture": {
+                  "type": "string",
+                  "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+                },
+                "blockSize": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "X": {
+                      "type": "number",
+                      "description": "FloatProperty"
+                    },
+                    "Y": {
+                      "type": "number",
+                      "description": "FloatProperty"
+                    }
+                  }
+                },
+                "gridPosition": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "X": {
+                      "type": "number",
+                      "description": "FloatProperty"
+                    },
+                    "Y": {
+                      "type": "number",
+                      "description": "FloatProperty"
+                    }
+                  }
+                },
+                "regionNameMsgId": {
+                  "type": "string",
+                  "description": "FName"
+                }
+              }
+            }
+          }
+        }
+      },
+      "DefaultMaskTexture": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+      },
+      "AlternativeTrackingLocationId": {
+        "type": "array",
+        "description": "MapProperty",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Key": {
+              "type": "string",
+              "description": "FName"
+            },
+            "Value": {
+              "type": "string",
+              "description": "FName"
+            }
+          }
+        }
+      },
+      "WorldMapPriority": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

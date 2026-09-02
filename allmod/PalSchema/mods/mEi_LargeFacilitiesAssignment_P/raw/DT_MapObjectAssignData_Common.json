@@ -1,0 +1,145 @@
+{
+    "DT_MapObjectAssignData_Common": {
+        "BlastFurnace_0": {
+            "bPlayerWorkable": true
+        },
+        "BlastFurnace2_0": {
+            "bPlayerWorkable": true
+        },
+        "BlastFurnace3_0": {
+            "bPlayerWorkable": true
+        },
+        "BlastFurnace4_0": {
+            "bPlayerWorkable": true
+        },
+        "FarmBlockV2_Grade01_5": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_Grade01_2": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_Grade01_4": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_Grade02_5": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_Grade02_2": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_Grade02_4": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_Grade03_5": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_Grade03_2": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_Grade03_4": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_wheet_5": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_wheet_2": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_wheet_4": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_tomato_5": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_tomato_2": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_tomato_4": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_Lettuce_5": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_Lettuce_2": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_Lettuce_4": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_Berries_5": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_Berries_2": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_Berries_4": {
+            "WorkerMaxNum": 5
+        },
+        "ElectricGenerator_0": {
+            "WorkerMaxNum": 4
+        },
+        "ElectricGenerator2_0": {
+            "WorkerMaxNum": 4
+        },
+        "ElectricGenerator3_0": {
+            "WorkerMaxNum": 4
+        },
+        "MedicineFacility_02_0": {
+            "bPlayerWorkable": true
+        },
+        "MedicineFacility_03_0": {
+            "bPlayerWorkable": true
+        },
+        "Crusher_0": {
+            "bPlayerWorkable": true
+        },
+        "FlourMill_0": {
+            "bPlayerWorkable": true
+        },
+        "MonsterFarm_0": {
+            "WorkerMaxNum": 10
+        },
+        "ElectricGenerator_Large_0": {
+            "WorkerMaxNum": 4
+        },
+        "FarmBlockV2_Carrot_5": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_Carrot_2": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_Carrot_4": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_Onion_5": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_Onion_2": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_Onion_4": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_Potato_5": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_Potato_2": {
+            "WorkerMaxNum": 5
+        },
+        "FarmBlockV2_Potato_4": {
+            "WorkerMaxNum": 5
+        },
+        "Farm_SkillFruits_2": {
+            "WorkerMaxNum": 5
+        },
+        "AncientFarmBlock_5": {
+            "WorkerMaxNum": 5
+        },
+        "AncientFarmBlock_2": {
+            "WorkerMaxNum": 5
+        },
+        "AncientFarmBlock_4": {
+            "WorkerMaxNum": 5
+        }
+    }
+}

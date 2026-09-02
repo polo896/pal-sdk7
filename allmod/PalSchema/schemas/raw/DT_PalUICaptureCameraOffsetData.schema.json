@@ -1,0 +1,140 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "LocationOffset": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "X": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Y": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Z": {
+            "type": "number",
+            "description": "FloatProperty"
+          }
+        }
+      },
+      "Rotator": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "Pitch": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Yaw": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Roll": {
+            "type": "number",
+            "description": "FloatProperty"
+          }
+        }
+      },
+      "PointLightOffset_1": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "X": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Y": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Z": {
+            "type": "number",
+            "description": "FloatProperty"
+          }
+        }
+      },
+      "PointLightIntensity_1": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "PointLightSize_1": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "PointLightOffset_2": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "X": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Y": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Z": {
+            "type": "number",
+            "description": "FloatProperty"
+          }
+        }
+      },
+      "PointLightIntensity_2": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "PointLightSize_2": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "RectLightOffset": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "X": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Y": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Z": {
+            "type": "number",
+            "description": "FloatProperty"
+          }
+        }
+      },
+      "RectLightRotator": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "Pitch": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Yaw": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "Roll": {
+            "type": "number",
+            "description": "FloatProperty"
+          }
+        }
+      },
+      "RectLightIntensity": {
+        "type": "number",
+        "description": "FloatProperty"
+      },
+      "RectLightSize": {
+        "type": "number",
+        "description": "FloatProperty"
+      }
+    }
+  }
+}

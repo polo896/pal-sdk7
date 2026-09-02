@@ -1,0 +1,1005 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "DisplayName": {
+        "type": "string",
+        "description": "FText"
+      },
+      "HoldDisplayName": {
+        "type": "string",
+        "description": "FText"
+      },
+      "NavBarPriority": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "KeyboardInputTypeInfo": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "Key": {
+            "type": "object",
+            "description": "StructProperty",
+            "properties": {
+              "KeyName": {
+                "type": "string",
+                "description": "FName"
+              }
+            }
+          },
+          "OverrrideState": {
+            "type": "string",
+            "description": "EnumProperty",
+            "$ref": "../enums.schema.json#/definitions/EInputActionState"
+          },
+          "bActionRequiresHold": {
+            "type": "boolean",
+            "description": "BoolProperty"
+          },
+          "HoldTime": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "OverrideBrush": {
+            "type": "object",
+            "description": "StructProperty",
+            "properties": {
+              "bIsDynamicallyLoaded": {
+                "type": "boolean",
+                "description": "BoolProperty"
+              },
+              "DrawAs": {
+                "type": "integer",
+                "description": "IntProperty"
+              },
+              "Tiling": {
+                "type": "integer",
+                "description": "IntProperty"
+              },
+              "Mirroring": {
+                "type": "integer",
+                "description": "IntProperty"
+              },
+              "ImageType": {
+                "type": "integer",
+                "description": "IntProperty"
+              },
+              "ImageSize": {
+                "type": "object",
+                "description": "StructProperty",
+                "properties": {
+                  "X": {
+                    "type": "number",
+                    "description": "FloatProperty"
+                  },
+                  "Y": {
+                    "type": "number",
+                    "description": "FloatProperty"
+                  }
+                }
+              },
+              "Margin": {
+                "type": "object",
+                "description": "StructProperty",
+                "properties": {
+                  "Left": {
+                    "type": "number",
+                    "description": "FloatProperty"
+                  },
+                  "Top": {
+                    "type": "number",
+                    "description": "FloatProperty"
+                  },
+                  "Right": {
+                    "type": "number",
+                    "description": "FloatProperty"
+                  },
+                  "Bottom": {
+                    "type": "number",
+                    "description": "FloatProperty"
+                  }
+                }
+              },
+              "TintColor": {
+                "type": "object",
+                "description": "StructProperty",
+                "properties": {
+                  "SpecifiedColor": {
+                    "type": "object",
+                    "description": "StructProperty",
+                    "properties": {
+                      "R": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      },
+                      "G": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      },
+                      "B": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      },
+                      "A": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      }
+                    }
+                  },
+                  "ColorUseRule": {
+                    "type": "string",
+                    "description": "EnumProperty",
+                    "$ref": "../enums.schema.json#/definitions/ESlateColorStylingMode"
+                  }
+                }
+              },
+              "OutlineSettings": {
+                "type": "object",
+                "description": "StructProperty",
+                "properties": {
+                  "CornerRadii": {
+                    "type": "object",
+                    "description": "StructProperty",
+                    "properties": {
+                      "X": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      },
+                      "Y": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      },
+                      "Z": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      },
+                      "W": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      }
+                    }
+                  },
+                  "Color": {
+                    "type": "object",
+                    "description": "StructProperty",
+                    "properties": {
+                      "SpecifiedColor": {
+                        "type": "object",
+                        "description": "StructProperty",
+                        "properties": {
+                          "R": {
+                            "type": "number",
+                            "description": "FloatProperty"
+                          },
+                          "G": {
+                            "type": "number",
+                            "description": "FloatProperty"
+                          },
+                          "B": {
+                            "type": "number",
+                            "description": "FloatProperty"
+                          },
+                          "A": {
+                            "type": "number",
+                            "description": "FloatProperty"
+                          }
+                        }
+                      },
+                      "ColorUseRule": {
+                        "type": "string",
+                        "description": "EnumProperty",
+                        "$ref": "../enums.schema.json#/definitions/ESlateColorStylingMode"
+                      }
+                    }
+                  },
+                  "Width": {
+                    "type": "number",
+                    "description": "FloatProperty"
+                  },
+                  "RoundingType": {
+                    "type": "integer",
+                    "description": "IntProperty"
+                  },
+                  "bUseBrushTransparency": {
+                    "type": "boolean",
+                    "description": "BoolProperty"
+                  }
+                }
+              },
+              "ResourceObject": {
+                "type": "string",
+                "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+              },
+              "ResourceName": {
+                "type": "string",
+                "description": "FName"
+              },
+              "UVRegion": {
+                "type": "object",
+                "description": "StructProperty",
+                "properties": {
+                  "Min": {
+                    "type": "object",
+                    "description": "StructProperty",
+                    "properties": {
+                      "X": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      },
+                      "Y": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      }
+                    }
+                  },
+                  "Max": {
+                    "type": "object",
+                    "description": "StructProperty",
+                    "properties": {
+                      "X": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      },
+                      "Y": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      }
+                    }
+                  },
+                  "bIsValid": {
+                    "type": "integer",
+                    "description": "IntProperty"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "DefaultGamepadInputTypeInfo": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "Key": {
+            "type": "object",
+            "description": "StructProperty",
+            "properties": {
+              "KeyName": {
+                "type": "string",
+                "description": "FName"
+              }
+            }
+          },
+          "OverrrideState": {
+            "type": "string",
+            "description": "EnumProperty",
+            "$ref": "../enums.schema.json#/definitions/EInputActionState"
+          },
+          "bActionRequiresHold": {
+            "type": "boolean",
+            "description": "BoolProperty"
+          },
+          "HoldTime": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "OverrideBrush": {
+            "type": "object",
+            "description": "StructProperty",
+            "properties": {
+              "bIsDynamicallyLoaded": {
+                "type": "boolean",
+                "description": "BoolProperty"
+              },
+              "DrawAs": {
+                "type": "integer",
+                "description": "IntProperty"
+              },
+              "Tiling": {
+                "type": "integer",
+                "description": "IntProperty"
+              },
+              "Mirroring": {
+                "type": "integer",
+                "description": "IntProperty"
+              },
+              "ImageType": {
+                "type": "integer",
+                "description": "IntProperty"
+              },
+              "ImageSize": {
+                "type": "object",
+                "description": "StructProperty",
+                "properties": {
+                  "X": {
+                    "type": "number",
+                    "description": "FloatProperty"
+                  },
+                  "Y": {
+                    "type": "number",
+                    "description": "FloatProperty"
+                  }
+                }
+              },
+              "Margin": {
+                "type": "object",
+                "description": "StructProperty",
+                "properties": {
+                  "Left": {
+                    "type": "number",
+                    "description": "FloatProperty"
+                  },
+                  "Top": {
+                    "type": "number",
+                    "description": "FloatProperty"
+                  },
+                  "Right": {
+                    "type": "number",
+                    "description": "FloatProperty"
+                  },
+                  "Bottom": {
+                    "type": "number",
+                    "description": "FloatProperty"
+                  }
+                }
+              },
+              "TintColor": {
+                "type": "object",
+                "description": "StructProperty",
+                "properties": {
+                  "SpecifiedColor": {
+                    "type": "object",
+                    "description": "StructProperty",
+                    "properties": {
+                      "R": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      },
+                      "G": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      },
+                      "B": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      },
+                      "A": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      }
+                    }
+                  },
+                  "ColorUseRule": {
+                    "type": "string",
+                    "description": "EnumProperty",
+                    "$ref": "../enums.schema.json#/definitions/ESlateColorStylingMode"
+                  }
+                }
+              },
+              "OutlineSettings": {
+                "type": "object",
+                "description": "StructProperty",
+                "properties": {
+                  "CornerRadii": {
+                    "type": "object",
+                    "description": "StructProperty",
+                    "properties": {
+                      "X": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      },
+                      "Y": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      },
+                      "Z": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      },
+                      "W": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      }
+                    }
+                  },
+                  "Color": {
+                    "type": "object",
+                    "description": "StructProperty",
+                    "properties": {
+                      "SpecifiedColor": {
+                        "type": "object",
+                        "description": "StructProperty",
+                        "properties": {
+                          "R": {
+                            "type": "number",
+                            "description": "FloatProperty"
+                          },
+                          "G": {
+                            "type": "number",
+                            "description": "FloatProperty"
+                          },
+                          "B": {
+                            "type": "number",
+                            "description": "FloatProperty"
+                          },
+                          "A": {
+                            "type": "number",
+                            "description": "FloatProperty"
+                          }
+                        }
+                      },
+                      "ColorUseRule": {
+                        "type": "string",
+                        "description": "EnumProperty",
+                        "$ref": "../enums.schema.json#/definitions/ESlateColorStylingMode"
+                      }
+                    }
+                  },
+                  "Width": {
+                    "type": "number",
+                    "description": "FloatProperty"
+                  },
+                  "RoundingType": {
+                    "type": "integer",
+                    "description": "IntProperty"
+                  },
+                  "bUseBrushTransparency": {
+                    "type": "boolean",
+                    "description": "BoolProperty"
+                  }
+                }
+              },
+              "ResourceObject": {
+                "type": "string",
+                "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+              },
+              "ResourceName": {
+                "type": "string",
+                "description": "FName"
+              },
+              "UVRegion": {
+                "type": "object",
+                "description": "StructProperty",
+                "properties": {
+                  "Min": {
+                    "type": "object",
+                    "description": "StructProperty",
+                    "properties": {
+                      "X": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      },
+                      "Y": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      }
+                    }
+                  },
+                  "Max": {
+                    "type": "object",
+                    "description": "StructProperty",
+                    "properties": {
+                      "X": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      },
+                      "Y": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      }
+                    }
+                  },
+                  "bIsValid": {
+                    "type": "integer",
+                    "description": "IntProperty"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "GamepadInputOverrides": {
+        "type": "array",
+        "description": "MapProperty",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Key": {
+              "type": "string",
+              "description": "FName"
+            },
+            "Value": {
+              "type": "object",
+              "description": "StructProperty",
+              "properties": {
+                "Key": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "KeyName": {
+                      "type": "string",
+                      "description": "FName"
+                    }
+                  }
+                },
+                "OverrrideState": {
+                  "type": "string",
+                  "description": "EnumProperty",
+                  "$ref": "../enums.schema.json#/definitions/EInputActionState"
+                },
+                "bActionRequiresHold": {
+                  "type": "boolean",
+                  "description": "BoolProperty"
+                },
+                "HoldTime": {
+                  "type": "number",
+                  "description": "FloatProperty"
+                },
+                "OverrideBrush": {
+                  "type": "object",
+                  "description": "StructProperty",
+                  "properties": {
+                    "bIsDynamicallyLoaded": {
+                      "type": "boolean",
+                      "description": "BoolProperty"
+                    },
+                    "DrawAs": {
+                      "type": "integer",
+                      "description": "IntProperty"
+                    },
+                    "Tiling": {
+                      "type": "integer",
+                      "description": "IntProperty"
+                    },
+                    "Mirroring": {
+                      "type": "integer",
+                      "description": "IntProperty"
+                    },
+                    "ImageType": {
+                      "type": "integer",
+                      "description": "IntProperty"
+                    },
+                    "ImageSize": {
+                      "type": "object",
+                      "description": "StructProperty",
+                      "properties": {
+                        "X": {
+                          "type": "number",
+                          "description": "FloatProperty"
+                        },
+                        "Y": {
+                          "type": "number",
+                          "description": "FloatProperty"
+                        }
+                      }
+                    },
+                    "Margin": {
+                      "type": "object",
+                      "description": "StructProperty",
+                      "properties": {
+                        "Left": {
+                          "type": "number",
+                          "description": "FloatProperty"
+                        },
+                        "Top": {
+                          "type": "number",
+                          "description": "FloatProperty"
+                        },
+                        "Right": {
+                          "type": "number",
+                          "description": "FloatProperty"
+                        },
+                        "Bottom": {
+                          "type": "number",
+                          "description": "FloatProperty"
+                        }
+                      }
+                    },
+                    "TintColor": {
+                      "type": "object",
+                      "description": "StructProperty",
+                      "properties": {
+                        "SpecifiedColor": {
+                          "type": "object",
+                          "description": "StructProperty",
+                          "properties": {
+                            "R": {
+                              "type": "number",
+                              "description": "FloatProperty"
+                            },
+                            "G": {
+                              "type": "number",
+                              "description": "FloatProperty"
+                            },
+                            "B": {
+                              "type": "number",
+                              "description": "FloatProperty"
+                            },
+                            "A": {
+                              "type": "number",
+                              "description": "FloatProperty"
+                            }
+                          }
+                        },
+                        "ColorUseRule": {
+                          "type": "string",
+                          "description": "EnumProperty",
+                          "$ref": "../enums.schema.json#/definitions/ESlateColorStylingMode"
+                        }
+                      }
+                    },
+                    "OutlineSettings": {
+                      "type": "object",
+                      "description": "StructProperty",
+                      "properties": {
+                        "CornerRadii": {
+                          "type": "object",
+                          "description": "StructProperty",
+                          "properties": {
+                            "X": {
+                              "type": "number",
+                              "description": "FloatProperty"
+                            },
+                            "Y": {
+                              "type": "number",
+                              "description": "FloatProperty"
+                            },
+                            "Z": {
+                              "type": "number",
+                              "description": "FloatProperty"
+                            },
+                            "W": {
+                              "type": "number",
+                              "description": "FloatProperty"
+                            }
+                          }
+                        },
+                        "Color": {
+                          "type": "object",
+                          "description": "StructProperty",
+                          "properties": {
+                            "SpecifiedColor": {
+                              "type": "object",
+                              "description": "StructProperty",
+                              "properties": {
+                                "R": {
+                                  "type": "number",
+                                  "description": "FloatProperty"
+                                },
+                                "G": {
+                                  "type": "number",
+                                  "description": "FloatProperty"
+                                },
+                                "B": {
+                                  "type": "number",
+                                  "description": "FloatProperty"
+                                },
+                                "A": {
+                                  "type": "number",
+                                  "description": "FloatProperty"
+                                }
+                              }
+                            },
+                            "ColorUseRule": {
+                              "type": "string",
+                              "description": "EnumProperty",
+                              "$ref": "../enums.schema.json#/definitions/ESlateColorStylingMode"
+                            }
+                          }
+                        },
+                        "Width": {
+                          "type": "number",
+                          "description": "FloatProperty"
+                        },
+                        "RoundingType": {
+                          "type": "integer",
+                          "description": "IntProperty"
+                        },
+                        "bUseBrushTransparency": {
+                          "type": "boolean",
+                          "description": "BoolProperty"
+                        }
+                      }
+                    },
+                    "ResourceObject": {
+                      "type": "string",
+                      "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+                    },
+                    "ResourceName": {
+                      "type": "string",
+                      "description": "FName"
+                    },
+                    "UVRegion": {
+                      "type": "object",
+                      "description": "StructProperty",
+                      "properties": {
+                        "Min": {
+                          "type": "object",
+                          "description": "StructProperty",
+                          "properties": {
+                            "X": {
+                              "type": "number",
+                              "description": "FloatProperty"
+                            },
+                            "Y": {
+                              "type": "number",
+                              "description": "FloatProperty"
+                            }
+                          }
+                        },
+                        "Max": {
+                          "type": "object",
+                          "description": "StructProperty",
+                          "properties": {
+                            "X": {
+                              "type": "number",
+                              "description": "FloatProperty"
+                            },
+                            "Y": {
+                              "type": "number",
+                              "description": "FloatProperty"
+                            }
+                          }
+                        },
+                        "bIsValid": {
+                          "type": "integer",
+                          "description": "IntProperty"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "TouchInputTypeInfo": {
+        "type": "object",
+        "description": "StructProperty",
+        "properties": {
+          "Key": {
+            "type": "object",
+            "description": "StructProperty",
+            "properties": {
+              "KeyName": {
+                "type": "string",
+                "description": "FName"
+              }
+            }
+          },
+          "OverrrideState": {
+            "type": "string",
+            "description": "EnumProperty",
+            "$ref": "../enums.schema.json#/definitions/EInputActionState"
+          },
+          "bActionRequiresHold": {
+            "type": "boolean",
+            "description": "BoolProperty"
+          },
+          "HoldTime": {
+            "type": "number",
+            "description": "FloatProperty"
+          },
+          "OverrideBrush": {
+            "type": "object",
+            "description": "StructProperty",
+            "properties": {
+              "bIsDynamicallyLoaded": {
+                "type": "boolean",
+                "description": "BoolProperty"
+              },
+              "DrawAs": {
+                "type": "integer",
+                "description": "IntProperty"
+              },
+              "Tiling": {
+                "type": "integer",
+                "description": "IntProperty"
+              },
+              "Mirroring": {
+                "type": "integer",
+                "description": "IntProperty"
+              },
+              "ImageType": {
+                "type": "integer",
+                "description": "IntProperty"
+              },
+              "ImageSize": {
+                "type": "object",
+                "description": "StructProperty",
+                "properties": {
+                  "X": {
+                    "type": "number",
+                    "description": "FloatProperty"
+                  },
+                  "Y": {
+                    "type": "number",
+                    "description": "FloatProperty"
+                  }
+                }
+              },
+              "Margin": {
+                "type": "object",
+                "description": "StructProperty",
+                "properties": {
+                  "Left": {
+                    "type": "number",
+                    "description": "FloatProperty"
+                  },
+                  "Top": {
+                    "type": "number",
+                    "description": "FloatProperty"
+                  },
+                  "Right": {
+                    "type": "number",
+                    "description": "FloatProperty"
+                  },
+                  "Bottom": {
+                    "type": "number",
+                    "description": "FloatProperty"
+                  }
+                }
+              },
+              "TintColor": {
+                "type": "object",
+                "description": "StructProperty",
+                "properties": {
+                  "SpecifiedColor": {
+                    "type": "object",
+                    "description": "StructProperty",
+                    "properties": {
+                      "R": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      },
+                      "G": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      },
+                      "B": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      },
+                      "A": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      }
+                    }
+                  },
+                  "ColorUseRule": {
+                    "type": "string",
+                    "description": "EnumProperty",
+                    "$ref": "../enums.schema.json#/definitions/ESlateColorStylingMode"
+                  }
+                }
+              },
+              "OutlineSettings": {
+                "type": "object",
+                "description": "StructProperty",
+                "properties": {
+                  "CornerRadii": {
+                    "type": "object",
+                    "description": "StructProperty",
+                    "properties": {
+                      "X": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      },
+                      "Y": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      },
+                      "Z": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      },
+                      "W": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      }
+                    }
+                  },
+                  "Color": {
+                    "type": "object",
+                    "description": "StructProperty",
+                    "properties": {
+                      "SpecifiedColor": {
+                        "type": "object",
+                        "description": "StructProperty",
+                        "properties": {
+                          "R": {
+                            "type": "number",
+                            "description": "FloatProperty"
+                          },
+                          "G": {
+                            "type": "number",
+                            "description": "FloatProperty"
+                          },
+                          "B": {
+                            "type": "number",
+                            "description": "FloatProperty"
+                          },
+                          "A": {
+                            "type": "number",
+                            "description": "FloatProperty"
+                          }
+                        }
+                      },
+                      "ColorUseRule": {
+                        "type": "string",
+                        "description": "EnumProperty",
+                        "$ref": "../enums.schema.json#/definitions/ESlateColorStylingMode"
+                      }
+                    }
+                  },
+                  "Width": {
+                    "type": "number",
+                    "description": "FloatProperty"
+                  },
+                  "RoundingType": {
+                    "type": "integer",
+                    "description": "IntProperty"
+                  },
+                  "bUseBrushTransparency": {
+                    "type": "boolean",
+                    "description": "BoolProperty"
+                  }
+                }
+              },
+              "ResourceObject": {
+                "type": "string",
+                "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+              },
+              "ResourceName": {
+                "type": "string",
+                "description": "FName"
+              },
+              "UVRegion": {
+                "type": "object",
+                "description": "StructProperty",
+                "properties": {
+                  "Min": {
+                    "type": "object",
+                    "description": "StructProperty",
+                    "properties": {
+                      "X": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      },
+                      "Y": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      }
+                    }
+                  },
+                  "Max": {
+                    "type": "object",
+                    "description": "StructProperty",
+                    "properties": {
+                      "X": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      },
+                      "Y": {
+                        "type": "number",
+                        "description": "FloatProperty"
+                      }
+                    }
+                  },
+                  "bIsValid": {
+                    "type": "integer",
+                    "description": "IntProperty"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "SkeletalMesh": {
+        "type": "string",
+        "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+      },
+      "Materials": {
+        "oneOf": [
+          {
+            "type": "array",
+            "description": "ArrayProperty",
+            "items": {
+              "type": "string",
+              "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+            }
+          },
+          {
+            "type": "object",
+            "properties": {
+              "Items": {
+                "type": "array",
+                "description": "ArrayProperty",
+                "items": {
+                  "type": "string",
+                  "$ref": "../utility.schema.json#/definitions/ObjectPathRegex"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

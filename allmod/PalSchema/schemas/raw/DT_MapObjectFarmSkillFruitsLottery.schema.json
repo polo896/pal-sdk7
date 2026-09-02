@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "LotteryItemType": {
+        "type": "string",
+        "description": "EnumProperty",
+        "$ref": "../enums.schema.json#/definitions/EPalFarmSkillFruitsLotteryItemType"
+      },
+      "OtherItemId": {
+        "type": "string",
+        "description": "FName"
+      },
+      "Weight": {
+        "type": "integer",
+        "description": "IntProperty"
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "TextureID_8_2B2F889C43EB586246BDB981B6462ACA": {
+        "type": "integer",
+        "description": "IntProperty"
+      },
+      "IsSquare_5_116F13E54A95BA260E4C56848C50332E": {
+        "type": "boolean",
+        "description": "BoolProperty"
+      }
+    }
+  }
+}
