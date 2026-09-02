@@ -182,14 +182,38 @@ v143 из Способа А не установлен или в XML указан
 
 ## Что дальше (roadmap правки мини-игр)
 
-1. FModel → извлечь из игры `WBP_PickingGame02_ForDisplay`, `WBP_OneStrokeGame_ForDisplay`,
-   `WBP_SalvageGame_GaugeStopMiniGame`, `BP_PalLevelObject_LockGimmickPalFight`
-   (+ их зависимости) в `Content/` кита по родным путям.
-2. В ките: правка графов (цепочка: `OnReceive*Success` → виджет сам закрывается →
-   `Close: OnPreClose` → `OnGimmickCleared` → `RequestMiniGameSuccess_ToServer` →
-   `OnMiniGameComplete(true)`; безопасный скип — форсировать успех внутри BP виджета).
-3. Cook только этих ассетов → упаковка в pak (имя с `-WIN64` / крипто-ключ Palworld,
-   `~mods` или `LogicMods`-путь — как у твоего таймер-мода).
+**Почему нельзя «просто чистый проект»:** целевые виджеты — дети нативных
+классов `/Script/Pal.*` (проверено по заглушкам кита):
+`WBP_PickingGame02_ForDisplay` → `UPalUIPickingGame : UPalUserWidgetOverlayUI`
+(внутри `UPalPickingGameProcessor*`, BP-события `SetGameResult` /
+`RegisterPickinGameProcessor`); палфайт-виджет →
+`UPalLockGimmickPalFightWidget : UPalUserWidget` (внутри
+`TWeakObjectPtr<APalLevelObject_LockGimmickPalFight> Gimmick`, события
+`OnTimerUpdated` / `OnTimeOut`). Редактор, не знающий этих классов, ассет не
+откроет — поэтому и нужны 6668 заглушек кита. Чистый проект работает только
+для НОВЫХ виджетов от `UUserWidget` (как HUD-таймер). Любой C++-проект на
+UE 5.1 всё равно требует тулчейн v143 (14.39) — движковые заголовки с v145
+не собираются нигде.
+
+1. FModel → найти и извлечь (Export Raw Data):
+   `WBP_PickingGame02_ForDisplay`, `WBP_OneStroke_ForDisplay` /
+   `WBP_OneStrokeGame_ForDisplay`, `WBP_SalvageGame_GaugeStopMiniGame`,
+   `BP_PalLevelObject_LockGimmickPalFight`.
+   ВАЖНО: если у файла есть вариант с суффиксом `_Common` — править нужно
+   именно его (иначе игра возьмёт `_Common` и мод не сработает).
+2. В ките: правка графов (цепочка: `OnReceive*Success` → виджет сам
+   закрывается → `Close: OnPreClose` → `OnGimmickCleared` →
+   `RequestMiniGameSuccess_ToServer` → `OnMiniGameComplete(true)`; безопасный
+   скип — форсировать успех внутри BP виджета).
+3. Cook только правленых ассетов → repak. Внутренние пути в pak — зеркально
+   игровым (как извлёк FModel), папка мода с суффиксом `_P`, установка в
+   `Pal\Content\Paks\~mods` (или `LogicMods` — как у таймер-мода).
+
+**План В без C++ (UAssetGUI):** если у виджетов найдутся «тюнингуемые»
+свойства (скорость иглы, размер зоны успеха, таймаут) — их можно править
+прямо в извлечённом .uasset через UAssetGUI и паковать repak'ом, вообще без
+редактора и компилятора. Граф-логику (авто-успех) так не перепишешь — только
+облегчить мини-игры.
 
 ## Состав папки
 
