@@ -1,28 +1,34 @@
 -- ============================================================================================
--- ExpeditionHubTest v0.2 — ТЕСТОВЫЙ мод-пробник (UE4SS Lua) для Palworld 0.4.11
+-- ExpeditionHubTest v0.3 — ТЕСТОВЫЙ мод-пробник (UE4SS Lua) для Palworld 0.4.11
 -- СИСТЕМА ЭКСПЕДИЦИЙ: разведка перед чистым модом-менеджером. GUI на F6, только кнопки —
 -- консоль НЕ нужна. Весь вывод проб печатается прямо в панель (и в лог UE4SS).
 --
--- ЧТО ПРОВЕРЯЕМ (по итогам разведки SDK):
---   1. FindAllOf("PalMapObjectCharacterTeamMissionModel") находит ВСЕ станции со всех баз;
---   2. чтение состояния (Ready/InProgress/Reward), таймера, базы, сундука;
---   3. UI-модель через StaticConstructObject(класс, outer=станция): удалённый запуск
---      (RequestSelectMission / RequestSelectAuto / RequestStartMission);
---   4. сбор лута: RequestMoveItemToInventoryFromContainer(сундук, false) — та же кнопка
---      «забрать всё», что в игре;
---   5. фолбэк: ServerInternal-функции напрямую (синглплеер).
+-- ЧТО УЗНАЛИ ИЗ ТЕСТА v0.2:
+--   • станции читаются отлично (SCAN/INFO/GUILD работали);
+--   • свежесозданная UI-модель НЕ привязывается к станции (GUID пустой, все Request*
+--     уходят в никуда) — игра привязывает её нативным полем, которого нет в дампе;
+--   • FDateTime не имеет отражённых полей — тики не читаются, таймер берём из UI-модели;
+--   • краш давил 3-секундный авто-рефреш (полная пересборка ~50 виджетов каждые 3 с) —
+--     УДАЛЁН. Панель обновляется только по действиям (REFRESH/PREV/NEXT/кнопки).
 --
--- КАК ТЕСТИРОВАТЬ: F6 → панель. Сверху выбор станции (◀ ▶), ниже — её данные,
--- дальше кнопки проб. Жми по порядку: SCAN → INFO → UI-PROBE → MISSIONS → AUTO → START.
--- Когда экспедиция завершится: CHEST → COLLECT. Панель пишет всё сама.
+-- НОВОЕ В v0.3 — три пути атаки:
+--   1. ЗАХВАТ: NotifyOnNewObject ловит игровую UI-модель, когда ты открываешь UI станции
+--      в игре САМ (подошёл и нажал F). Модель уже привязана игрой — AUTO/START/MISSIONS
+--      идут через неё. В панели видно «UI-МОДЕЛЬ ИГРЫ: ЗАХВАЧЕНА».
+--   2. FB-START с настоящим playerId (PalPlayerState:GetPlayerId()) — ServerInternal
+--      напрямую (в v0.2 посылался 0, потому и молчало).
+--   3. OPEN-GAME-UI — дёргает OnTriggerInteract станции: откроется ли игровой UI
+--      экспедиции удалённо.
+--
+-- КАК ТЕСТИРОВАТЬ: F6 → панель. Порядок: SCAN → FB-START (на станции с миссией) →
+-- если молчит: OPEN-GAME-UI / подойди к станции, открой её UI в игре (произойдёт ЗАХВАТ)
+-- → вернись в панель → MISSIONS → SELECT+START.
 --
 -- БЕЗОПАСНОСТЬ (не повторяем краши чужого мода при перезаходе):
 --   • только нативные UFunction через ProcessEvent; каждое действие в pcall;
---   • между действиями мод ничего не хранит: станции ищутся заново каждый раз;
---   • UI-модель живёт ровно одно действие: RequestStartReplication → действие →
---     RequestStopReplication → ссылка отброшена (делегаты не висят);
---   • панель пересоздаётся при каждом открытии и закрывается при смене мира
---     (хук OnInitializeLocalPlayer_BP + спавн персонажа).
+--   • станции ищутся заново при каждом действии; захваченные модели сбрасываются
+--     при смене мира (хук OnInitializeLocalPlayer_BP + спавн персонажа);
+--   • никаких таймеров-пересборщиков UI.
 --
 -- УДАЛЕНИЕ: снести папку Mods/ExpeditionHubTest.
 -- ============================================================================================
@@ -34,8 +40,7 @@ local Config = {
     OpenKey     = "F6",   -- открыть/закрыть панель
     VerifyMs    = 500,    -- задержка проверки состояния после действия
     AutoStartMs = 400,    -- пауза между шагами цепочки select→auto→start
-    RefreshMs   = 3000,   -- авто-обновление панели, пока открыта
-    LogLines    = 11,     -- сколько строк лога видно в панели
+    LogLines    = 8,      -- сколько строк лога видно в панели
     LogBuffer   = 100,    -- сколько строк храним всего
 }
 
@@ -45,9 +50,11 @@ local UI_MODEL_CLASS = "/Script/Pal.PalUIMapObjectCharacterTeamMissionModel"
 
 -- ============================== СОСТОЯНИЕ МОДА ==============================
 local S = {
-    sel       = 1,     -- выбранная станция (индекс в FindStations)
-    logLines  = {},    -- кольцевой буфер лога (строки)
-    missions  = nil,   -- список миссий последнего MISSIONS: { {id=..., text=...}, ... }
+    sel           = 1,     -- выбранная станция (индекс в FindStations)
+    logLines      = {},    -- кольцевой буфер лога (строки)
+    missions      = nil,   -- список миссий последнего MISSIONS: { {id=..., text=...}, ... }
+    captured      = {},    -- [ObjName станции] = { model = игровая UI-модель, guid = ... }
+    lastCaptured  = nil,   -- последняя захваченная модель без привязки к станции
 }
 
 -- ============================== ЛОГ ==============================
@@ -141,8 +148,7 @@ local function Num(v)
 end
 
 -- чтение свойства объекта/структуры — всегда безопасно.
--- ВАЖНО: без проверки IsValid — она врёт на обёртках структур (FVector, FDateTime…);
--- TowerHunter читает поля структур напрямую (l.X + tonumber), так же делаем здесь.
+-- ВАЖНО: без проверки IsValid — она врёт на обёртках структур (FVector, FGuid…).
 local function ReadField(obj, name)
     if obj == nil then return nil end
     local ok, v = pcall(function() return obj[name] end)
@@ -167,6 +173,31 @@ local function ArrAt(arr, i)
     local ok, v = pcall(function() return arr[i] end)
     if not ok then return nil end
     return Unwrap(v)
+end
+
+-- массив из out-параметра/свойства → обычная Lua-таблица (или nil).
+-- LocalUnrealParam разворачивается через Unwrap; длина пробуется 4 способами.
+local function ArrayToTable(v)
+    if v == nil then return nil end
+    v = Unwrap(v)
+    local n = TryLen(v)
+    if n == nil then
+        local t = {}
+        local i = 1
+        while i <= 200 do
+            local ok, item = pcall(function() return v[i] end)
+            if not ok or item == nil then break end
+            t[i] = Unwrap(item)
+            i = i + 1
+        end
+        if #t > 0 then return t end
+        return nil
+    end
+    local t = {}
+    for i = 1, n do
+        t[i] = ArrAt(v, i)
+    end
+    return t
 end
 
 local function DelayCall(ms, fn)
@@ -226,6 +257,53 @@ local function GetGuildMission()
     return result
 end
 
+local function GetLocalPlayerController()
+    local result = nil
+    SafeDo("FindAllOf(PalPlayerController)", function()
+        local all = FindAllOf("PalPlayerController")
+        if not all then return end
+        for _, m in ipairs(all) do
+            local mo = Unwrap(m)
+            if IsValidObj(mo) and not ObjName(mo):find("Default__", 1, true) then
+                result = mo
+                break
+            end
+        end
+    end)
+    return result
+end
+
+-- настоящий playerId для ServerInternal-функций (в v0.2 слал 0 — потому молчало)
+local function GetLocalPlayerId()
+    local pc = GetLocalPlayerController()
+    if not pc then return nil, "нет PlayerController" end
+    local ok, ps = pcall(function() return pc:GetPalPlayerState() end)
+    if ok and ps ~= nil then
+        ps = Unwrap(ps)
+        if IsValidObj(ps) then
+            local okI, id = pcall(function() return ps:GetPlayerId() end)
+            if okI then return Num(id), "PalPlayerState:GetPlayerId()" end
+        end
+    end
+    local ps2 = ReadField(pc, "PlayerState")
+    if IsValidObj(ps2) then
+        local okI, id = pcall(function() return ps2:GetPlayerId() end)
+        if okI then return Num(id), "PlayerState:GetPlayerId()" end
+    end
+    return nil, "PlayerState не найден"
+end
+
+local function GetLocalPawn()
+    local pc = GetLocalPlayerController()
+    if not pc then return nil end
+    local ok, pawn = pcall(function() return pc:K2_GetPawn() end)
+    if ok and pawn ~= nil then
+        pawn = Unwrap(pawn)
+        if IsValidObj(pawn) then return pawn end
+    end
+    return nil
+end
+
 -- ============================== ЧТЕНИЕ СОСТОЯНИЙ ==============================
 local function GetState(st)
     local v = ReadField(st, "State")
@@ -265,44 +343,64 @@ local function GetLoc(st)
     return { x = x, y = y, z = Num(ReadField(v, "Z")) }
 end
 
+local function GuidKeyFromParts(a, b, c, d)
+    if a == nil or b == nil or c == nil or d == nil then return nil end
+    return string.format("%d_%d_%d_%d", a, b, c, d)
+end
+
+-- GUID станции из поля ModelInstanceId (вложенная структура — поля A/B/C/D отражены)
+local function StationGuidKey(st)
+    local w = ReadField(st, "ModelInstanceId")
+    if w == nil then return nil end
+    return GuidKeyFromParts(Num(ReadField(w, "A")), Num(ReadField(w, "B")),
+                            Num(ReadField(w, "C")), Num(ReadField(w, "D")))
+end
+
+-- GUID из out-таблицы GetConcreteModelInstanceId
+local function OutTableGuidKey(out)
+    if type(out) ~= "table" then return nil end
+    return GuidKeyFromParts(Num(out.A), Num(out.B), Num(out.C), Num(out.D))
+end
+
+-- сундук станции: сначала прямое чтение поля TargetContainer у модуля
+-- (GetContainer()/TryGetContainer в v0.2 возвращали пусто)
 local function GetStationContainer(st)
     local ok, mod = pcall(function() return st:GetItemContainerModule() end)
     if not ok then return nil, "GetItemContainerModule → " .. tostring(mod) end
     mod = Unwrap(mod)
     if not IsValidObj(mod) then return nil, "item container module = nil/invalid" end
 
+    local tc = ReadField(mod, "TargetContainer")
+    if IsValidObj(tc) then return tc, "module.TargetContainer" end
+
     local okC, cont = pcall(function() return mod:GetContainer() end)
     if okC and cont ~= nil then
         cont = Unwrap(cont)
-        if IsValidObj(cont) then return cont end
+        if IsValidObj(cont) then return cont, "GetContainer" end
     end
 
     local out = {}
     local okT = pcall(function() return mod:TryGetContainer(out) end)
     if okT then
         local c = Unwrap(out.OutContainer or out.outContainer or out[1])
-        if IsValidObj(c) then return c end
+        if IsValidObj(c) then return c, "TryGetContainer" end
     end
-    return nil, "у станции нет контейнера (GetContainer/TryGetContainer пусты)"
+    return nil, "контейнера нет (у станции без награды это норма)"
 end
 
--- сколько занято/всего слотов в сундуке
 local function CountChest(cont)
     if not IsValidObj(cont) then return 0, 0 end
-    local slots = ReadField(cont, "ItemSlotArray")
-    local total = TryLen(slots)
-    if not total then
-        local n2 = nil
-        pcall(function() n2 = Num(cont:Num()) end)
-        total = n2 or 0
-    end
+    local slots = ArrayToTable(ReadField(cont, "ItemSlotArray"))
+    local total = slots and #slots or 0
     local used = 0
-    for i = 1, total do
-        local slot = ArrAt(slots, i)
-        if IsValidObj(slot) then
-            local empty = true
-            pcall(function() empty = (slot:IsEmpty() == true) end)
-            if not empty then used = used + 1 end
+    if slots then
+        for i = 1, total do
+            local slot = slots[i]
+            if IsValidObj(slot) then
+                local empty = true
+                pcall(function() empty = (slot:IsEmpty() == true) end)
+                if not empty then used = used + 1 end
+            end
         end
     end
     return used, total
@@ -313,20 +411,14 @@ local function DumpContainer(label, cont)
         Log(label .. ": контейнер невалиден")
         return
     end
-    local slots = ReadField(cont, "ItemSlotArray")
-    local len = TryLen(slots)
-    if not len then
-        local n2 = nil
-        pcall(function() n2 = Num(cont:Num()) end)
-        len = n2
-    end
-    if not len then
-        Log(label .. ": длину ItemSlotArray не прочитать")
+    local slots = ArrayToTable(ReadField(cont, "ItemSlotArray"))
+    if not slots then
+        Log(label .. ": ItemSlotArray не читается")
         return
     end
     local used = 0
-    for i = 1, len do
-        local slot = ArrAt(slots, i)
+    for i = 1, #slots do
+        local slot = slots[i]
         if IsValidObj(slot) then
             local empty = true
             pcall(function() empty = (slot:IsEmpty() == true) end)
@@ -339,21 +431,10 @@ local function DumpContainer(label, cont)
             end
         end
     end
-    if used == 0 then Log(label .. ": сундук ПУСТ (" .. tostring(len) .. " слотов)") end
+    if used == 0 then Log(label .. ": сундук ПУСТ (" .. tostring(#slots) .. " слотов)") end
 end
 
-local function TicksToUTC(ticks)
-    if not ticks then return nil, nil end
-    local secs = math.floor(ticks / 10000000)
-    local epoch = secs - 62135596800
-    return os.date("!%Y-%m-%d %H:%M:%S UTC", epoch), epoch
-end
-
-local function NowEpoch()
-    return os.time(os.date("!*t"))
-end
-
--- ============================== UI-МОДЕЛЬ (одно действие = одна жизнь) ==============================
+-- ============================== UI-МОДЕЛЬ ==============================
 local function CreateUIModel(st)
     local cls = StaticFindObject(UI_MODEL_CLASS)
     if not IsValidObj(cls) then return nil, "класс " .. UI_MODEL_CLASS .. " не найден" end
@@ -383,18 +464,28 @@ local function WithUIModel(st, useRep, fn)
     end
 end
 
+-- главное действие: если для станции ЗАХВАЧЕНА игровая UI-модель — работаем через неё
+-- (она привязана игрой нативно и её Request* реально доходят до сервера);
+-- иначе — свежая модель (как в v0.2, почти наверняка непривязанная)
+local function ActOnUIModel(st, fn)
+    local cap = S.captured[ObjName(st)]
+    if cap and IsValidObj(cap.model) then
+        Log("использую ЗАХВАЧЕННУЮ игровую UI-модель (привязана игрой)")
+        local ok, res = pcall(fn, cap.model)
+        if not ok then Err("действие UI-модели → " .. tostring(res)) end
+        return
+    end
+    WithUIModel(st, true, fn)
+end
+
 local function ProbeUIModelReads(ui)
     local f = ReadField(ui, "Functions")
-    Log("  Functions: " .. ((IsValidObj(f) and ObjName(f)) or "nil (пусто — нужен инжект из PalGameSetting)"))
+    Log("  Functions: " .. ((IsValidObj(f) and ObjName(f)) or "nil"))
 
     local out = {}
     local ok = pcall(function() ui:GetConcreteModelInstanceId(out) end)
     if ok then
-        local parts = {}
-        for k, v in pairs(out) do
-            parts[#parts + 1] = tostring(k) .. "=" .. tostring(Str(v) or Num(v) or "?")
-        end
-        Log("  GetConcreteModelInstanceId: " .. table.concat(parts, ", "))
+        Log("  GetConcreteModelInstanceId: " .. tostring(OutTableGuidKey(out) or "не читается"))
     else
         Log("  GetConcreteModelInstanceId: FAIL")
     end
@@ -433,10 +524,16 @@ local function DoScan()
         local base = GetBaseName(st) or "?"
         local loc = GetLoc(st)
         local locStr = loc and string.format("(%.0f, %.0f)", loc.x, loc.y) or "?"
-        Logf("  [%d] %s | миссия=%s | база=%q | %s", i, tostring(sname), tostring(tmid), tostring(base), locStr)
+        Logf("  [%d] %s | миссия=%s | база=%q | %s | guid=%s", i, tostring(sname), tostring(tmid),
+            tostring(base), locStr, tostring(StationGuidKey(st)))
     end
     local net = GetNetComp()
     Log("NetworkPlayerComponent: " .. ((net and "найден") or "НЕ НАЙДЕН"))
+    local pid, psrc = GetLocalPlayerId()
+    Logf("playerId: %s (%s) — используется FB-START", tostring(pid), tostring(psrc))
+    local n = 0
+    for _ in pairs(S.captured) do n = n + 1 end
+    Log("захвачено игровых UI-моделей: " .. tostring(n))
     if refreshIfOpen then refreshIfOpen() end
 end
 
@@ -451,22 +548,23 @@ local function StationDetailLines()
     lines[#lines + 1] = string.format("БАЗА: %s%s", tostring(GetBaseName(st) or "?"), locStr)
     local ai = ReadField(st, "AssignedInfo")
     local rep = ai and ReadField(ai, "RepInfoArray") or nil
-    local items = rep and ReadField(rep, "Items") or nil
-    lines[#lines + 1] = "НАЗНАЧЕНО ПАЛОВ: " .. tostring(items and TryLen(items) or nil)
-    local endT = Num(ReadField(ReadField(st, "MissionCompleteDateTime"), "Ticks"))
-    if endT then
-        local s, e = TicksToUTC(endT)
-        lines[#lines + 1] = string.format("ФИНИШ: %s     ОСТАЛОСЬ: %s сек", tostring(s), tostring(e and (e - NowEpoch()) or "?"))
-    else
-        lines[#lines + 1] = "ТАЙМЕР: нет (станция не в рейсе)"
-    end
+    local items = rep and ArrayToTable(ReadField(rep, "Items")) or nil
     local cont = GetStationContainer(st)
-    if cont then
-        local used, totalSlots = CountChest(cont)
-        lines[#lines + 1] = string.format("СУНДУК: занято %s из %s слотов", tostring(used), tostring(totalSlots))
-    else
-        lines[#lines + 1] = "СУНДУК: не найден"
+    local used, totalSlots = 0, 0
+    if cont then used, totalSlots = CountChest(cont) end
+    lines[#lines + 1] = string.format("ПАЛЫ: %s     СУНДУК: %s", tostring(items and #items or nil),
+        (cont and string.format("занято %d из %d", used, totalSlots)) or "нет (норма без награды)")
+    -- таймер: из захваченной модели, если есть
+    local cap = S.captured[ObjName(st)]
+    local remainStr = "—"
+    if cap and IsValidObj(cap.model) then
+        local okR, r = pcall(function() return cap.model:GetRemainMissionSeconds() end)
+        local rv = okR and Num(r)
+        if rv and rv >= 0 then remainStr = string.format("%.0f сек", rv) end
     end
+    lines[#lines + 1] = "ТАЙМЕР (UI-модель): " .. remainStr
+    lines[#lines + 1] = "UI-МОДЕЛЬ ИГРЫ: " ..
+        ((cap and IsValidObj(cap.model)) and "ЗАХВАЧЕНА (можно рулить)" or "нет — открой UI станции в игре (F на станции)")
     return lines, total
 end
 
@@ -481,21 +579,14 @@ local function DoInfo()
     Log("  объект: " .. ObjName(st))
     local sn, sname = GetState(st)
     Logf("  State: %s (%s) | disposed=%s", tostring(sname), tostring(sn), tostring(ReadField(st, "bDisposed")))
-    Log("  InstanceId: " .. tostring(Str(ReadField(st, "InstanceId"))))
-    Log("  ModelInstanceId: " .. tostring(Str(ReadField(st, "ModelInstanceId"))))
-    local startT = Num(ReadField(ReadField(st, "MissionStartDateTime"), "Ticks"))
-    if startT then
-        local s = TicksToUTC(startT)
-        Log("  старт: " .. tostring(s) .. " (ticks=" .. tostring(startT) .. ")")
+    Log("  ModelInstanceId: " .. tostring(StationGuidKey(st)))
+    local ai = ReadField(st, "AssignedInfo")
+    if IsValidObj(ai) then
+        local rep = ReadField(ai, "RepInfoArray")
+        local items = rep and ArrayToTable(ReadField(rep, "Items")) or nil
+        Log("  назначено палов (AssignedInfo): " .. tostring(items and #items or nil))
     else
-        Log("  MissionStartDateTime.Ticks: не читается")
-    end
-    local endT = Num(ReadField(ReadField(st, "MissionCompleteDateTime"), "Ticks"))
-    if endT then
-        local s, e = TicksToUTC(endT)
-        Logf("  финиш: %s (ticks=%s), осталось: %s сек", tostring(s), tostring(endT), tostring(e and (e - NowEpoch()) or "?"))
-    else
-        Log("  MissionCompleteDateTime.Ticks: не читается")
+        Log("  AssignedInfo: nil")
     end
     if refreshIfOpen then refreshIfOpen() end
 end
@@ -505,11 +596,11 @@ local function DoChest()
     if not st then return end
     local cont, why = GetStationContainer(st)
     if not cont then
-        Err("станция " .. S.sel .. ": " .. tostring(why))
+        Log("CHEST: " .. tostring(why) .. " — проверь на станции в состоянии Reward")
         if refreshIfOpen then refreshIfOpen() end
         return
     end
-    Log("=== CHEST станции " .. S.sel .. " ===")
+    Log("=== CHEST станции " .. S.sel .. " (через " .. tostring(why) .. ") ===")
     DumpContainer("[chest]", cont)
     if refreshIfOpen then refreshIfOpen() end
 end
@@ -517,10 +608,15 @@ end
 local function DoUIProbe()
     local st = SelectedStation()
     if not st then return end
-    Log("=== UI-ПРОБА станции " .. S.sel .. " (БЕЗ репликации) ===")
-    WithUIModel(st, false, ProbeUIModelReads)
-    Log("=== UI-ПРОБА станции " .. S.sel .. " (С репликацией) ===")
+    Log("=== UI-ПРОБА станции " .. S.sel .. " (свежая модель, С репликацией) ===")
     WithUIModel(st, true, ProbeUIModelReads)
+    local cap = S.captured[ObjName(st)]
+    if cap and IsValidObj(cap.model) then
+        Log("=== UI-ПРОБА: ЗАХВАЧЕННАЯ модель этой станции ===")
+        ProbeUIModelReads(cap.model)
+    else
+        Log("захваченной модели для этой станции нет")
+    end
     if refreshIfOpen then refreshIfOpen() end
 end
 
@@ -543,14 +639,13 @@ local function DumpMissionElem(el)
     else
         line = line .. " | (MasterData не читается)"
     end
-    local rew = ReadField(el, "RewardStaticItemIds")
-    local rl = rew and TryLen(rew) or nil
-    if rl and rl > 0 then
+    local rew = ArrayToTable(ReadField(el, "RewardStaticItemIds"))
+    if rew and #rew > 0 then
         local names = {}
-        for j = 1, math.min(rl, 4) do
-            names[#names + 1] = tostring(Str(ArrAt(rew, j)))
+        for j = 1, math.min(#rew, 4) do
+            names[#names + 1] = tostring(Str(rew[j]))
         end
-        line = line .. " | награды: " .. table.concat(names, ", ") .. ((rl > 4 and (" (+" .. (rl - 4) .. ")")) or "")
+        line = line .. " | награды: " .. table.concat(names, ", ") .. ((#rew > 4 and (" (+" .. (#rew - 4) .. ")")) or "")
     end
     res.text = line
     return res
@@ -560,7 +655,7 @@ local function DoMissions()
     local st = SelectedStation()
     if not st then return end
     Log("=== MISSIONS станции " .. S.sel .. " ===")
-    WithUIModel(st, true, function(ui)
+    ActOnUIModel(st, function(ui)
         local out = {}
         local ok, res = pcall(function() ui:GetSelectableMissionInfos(out) end)
         if not ok then
@@ -568,27 +663,21 @@ local function DoMissions()
             return
         end
         local arr = out.OutInfos or out.outInfos or out[1]
-        if arr == nil then
+        local t = ArrayToTable(arr)
+        if t == nil then
             local parts = {}
             for k, v in pairs(out) do parts[#parts + 1] = tostring(k) .. " (" .. type(v) .. ")" end
             Log("  out-таблица: {" .. table.concat(parts, ", ") .. "}")
             return
         end
-        local n = TryLen(arr)
-        if not n then
-            local cnt = 0
-            SafeDo("missions (pairs)", function()
-                for k, v in pairs(arr) do
-                    if type(k) == "number" then cnt = cnt + 1 end
-                end
-            end)
-            Log("  длина массива не читается; pairs дал " .. cnt .. " числовых ключей")
+        if #t == 0 then
+            Log("  список ПУСТ — модель не привязана или миссий нет (затем и SELECT+START не работал)")
             return
         end
-        Logf("  доступно миссий: %d (показаны в панели — кнопка SELECT+START)", n)
+        Logf("  доступно миссий: %d — кнопки SELECT+START в панели", #t)
         S.missions = {}
-        for i = 1, math.min(n, 12) do
-            local info = DumpMissionElem(ArrAt(arr, i))
+        for i = 1, math.min(#t, 12) do
+            local info = DumpMissionElem(t[i])
             S.missions[#S.missions + 1] = info
             Log("  " .. info.text)
         end
@@ -602,7 +691,7 @@ local function LaunchMission(missionId)
     if not st then return end
     if missionId == nil or missionId == "" then Err("missionId пуст — сначала MISSIONS") return end
     Logf("=== ЗАПУСК '%s' на станции %d: select → auto → start ===", tostring(missionId), S.sel)
-    WithUIModel(st, true, function(ui)
+    ActOnUIModel(st, function(ui)
         local ok, res = pcall(function() ui:RequestSelectMission(missionId) end)
         Log("RequestSelectMission: " .. ((ok and "вызвана") or ("FAIL → " .. tostring(res))))
     end)
@@ -614,16 +703,15 @@ local function LaunchMission(missionId)
             end
         end)
         local st3 = SelectedStation()
-        if IsValidObj(st3) then
-            WithUIModel(st3, true, function(ui)
-                local ok, res = pcall(function() ui:RequestSelectAuto() end)
-                Log("RequestSelectAuto: " .. ((ok and "вызвана") or ("FAIL → " .. tostring(res))))
-            end)
-        end
+        if not IsValidObj(st3) then return end
+        ActOnUIModel(st3, function(ui)
+            local ok, res = pcall(function() ui:RequestSelectAuto() end)
+            Log("RequestSelectAuto: " .. ((ok and "вызвана") or ("FAIL → " .. tostring(res))))
+        end)
         DelayCall(Config.AutoStartMs, function()
             local st4 = SelectedStation()
             if not IsValidObj(st4) then return end
-            WithUIModel(st4, true, function(ui)
+            ActOnUIModel(st4, function(ui)
                 local okC, c = pcall(function() return ui:CanStartMission() end)
                 Log("CanStartMission: " .. ((okC and tostring(c == true)) or "FAIL"))
                 local ok, res = pcall(function() ui:RequestStartMission() end)
@@ -647,7 +735,7 @@ local function DoAuto()
     local st = SelectedStation()
     if not st then return end
     Log("=== AUTO станции " .. S.sel .. " (RequestSelectAuto) ===")
-    WithUIModel(st, true, function(ui)
+    ActOnUIModel(st, function(ui)
         local ok, res = pcall(function() ui:RequestSelectAuto() end)
         Log("RequestSelectAuto: " .. ((ok and "вызвана") or ("FAIL → " .. tostring(res))))
     end)
@@ -657,8 +745,8 @@ local function DoAuto()
             if IsValidObj(st2) then
                 local ai = ReadField(st2, "AssignedInfo")
                 local rep = ai and ReadField(ai, "RepInfoArray") or nil
-                local items = rep and ReadField(rep, "Items") or nil
-                Log("назначено палов (AssignedInfo): " .. tostring(items and TryLen(items) or nil))
+                local items = rep and ArrayToTable(ReadField(rep, "Items")) or nil
+                Log("назначено палов (AssignedInfo): " .. tostring(items and #items or nil))
                 if refreshIfOpen then refreshIfOpen() end
             end
         end)
@@ -669,7 +757,7 @@ local function DoStart()
     local st = SelectedStation()
     if not st then return end
     Log("=== START станции " .. S.sel .. " ===")
-    WithUIModel(st, true, function(ui)
+    ActOnUIModel(st, function(ui)
         local okC, c = pcall(function() return ui:CanStartMission() end)
         Log("CanStartMission до запуска: " .. ((okC and tostring(c == true)) or "FAIL"))
         local ok, res = pcall(function() ui:RequestStartMission() end)
@@ -691,17 +779,10 @@ local function DoRemain()
     local st = SelectedStation()
     if not st then return end
     Log("=== REMAIN станции " .. S.sel .. " ===")
-    local endT = Num(ReadField(ReadField(st, "MissionCompleteDateTime"), "Ticks"))
-    if endT then
-        local s, e = TicksToUTC(endT)
-        Logf("  из модели: финиш=%s, осталось ≈ %s сек (сейчас UTC %s)",
-            tostring(s), tostring(e and (e - NowEpoch()) or "?"), os.date("!%Y-%m-%d %H:%M:%S"))
-    else
-        Log("  MissionCompleteDateTime.Ticks не читается")
-    end
-    WithUIModel(st, true, function(ui)
+    ActOnUIModel(st, function(ui)
         local ok, r = pcall(function() return ui:GetRemainMissionSeconds() end)
-        Log("  из UI-модели GetRemainMissionSeconds: " .. ((ok and tostring(Num(r))) or "FAIL"))
+        local rv = ok and Num(r)
+        Log("  GetRemainMissionSeconds: " .. ((rv ~= nil and tostring(rv)) or "FAIL"))
     end)
     if refreshIfOpen then refreshIfOpen() end
 end
@@ -772,21 +853,26 @@ end
 local function DoFallbackStart()
     local st = SelectedStation()
     if not st then return end
-    Log("=== ФОЛБЭК станции " .. S.sel .. ": ServerInternal напрямую, playerId=0 ===")
-    SafeDo("RequestSelectAuto_ServerInternal(0)", function() st:RequestSelectAuto_ServerInternal(0) end)
+    local pid, psrc = GetLocalPlayerId()
+    if pid == nil then
+        Err("playerId не получен: " .. tostring(psrc))
+        return
+    end
+    Logf("=== ФОЛБЭК станции %d: ServerInternal напрямую, playerId=%s (%s) ===", S.sel, tostring(pid), tostring(psrc))
+    SafeDo("RequestSelectAuto_ServerInternal", function() st:RequestSelectAuto_ServerInternal(pid) end)
     DelayCall(Config.AutoStartMs, function()
         SafeDo("проверка авто-назначения", function()
             local st2 = SelectedStation()
             if IsValidObj(st2) then
                 local ai = ReadField(st2, "AssignedInfo")
                 local rep = ai and ReadField(ai, "RepInfoArray") or nil
-                local items = rep and ReadField(rep, "Items") or nil
-                Log("AssignedInfo: " .. tostring(items and TryLen(items) or nil) .. " палов назначено")
+                local items = rep and ArrayToTable(ReadField(rep, "Items")) or nil
+                Log("AssignedInfo: " .. tostring(items and #items or nil) .. " палов назначено")
             end
         end)
-        SafeDo("RequestStartMission_ServerInternal(0)", function()
+        SafeDo("RequestStartMission_ServerInternal", function()
             local st3 = SelectedStation()
-            if IsValidObj(st3) then st3:RequestStartMission_ServerInternal(0) end
+            if IsValidObj(st3) then st3:RequestStartMission_ServerInternal(pid) end
         end)
         DelayCall(Config.VerifyMs + 200, function()
             SafeDo("проверка после фолбэк-запуска", function()
@@ -809,14 +895,12 @@ local function DoGuild()
         return
     end
     Log("=== GUILD ===")
-    Log("  объект: " .. ObjName(guild))
     Log("  одновременных экспедиций (GuildExpedtionCount): " .. tostring(Num(ReadField(guild, "GuildExpedtionCount"))))
-    local rel = ReadField(guild, "ReleasedMissionInfos")
-    local n = rel and TryLen(rel) or nil
-    Log("  открытых миссий: " .. tostring(n))
-    if n then
-        for i = 1, math.min(n, 30) do
-            local el = ArrAt(rel, i)
+    local rel = ArrayToTable(ReadField(guild, "ReleasedMissionInfos"))
+    Log("  открытых миссий: " .. tostring(rel and #rel or nil))
+    if rel then
+        for i = 1, math.min(#rel, 30) do
+            local el = rel[i]
             if el ~= nil then
                 Logf("    [%d] %s (bEnableChallenge=%s)", i,
                     tostring(Str(ReadField(el, "MissionId"))), tostring(ReadField(el, "bEnableChallenge")))
@@ -839,7 +923,6 @@ local function DoSettings()
         if refreshIfOpen then refreshIfOpen() end
         return
     end
-    Log("  объект: " .. ObjName(gs))
     local cls = ReadField(gs, "ExpeditionStrengthSortFunctionsClass")
     if IsValidObj(cls) then
         Log("  ExpeditionStrengthSortFunctionsClass: " .. ObjName(cls))
@@ -847,6 +930,86 @@ local function DoSettings()
         Log("  ExpeditionStrengthSortFunctionsClass: nil/не класс")
     end
     if refreshIfOpen then refreshIfOpen() end
+end
+
+-- удалённый запуск ИГРОВОГО UI станции (OnTriggerInteract)
+local function DoOpenGameUI()
+    local st = SelectedStation()
+    if not st then return end
+    local pawn = GetLocalPawn()
+    if not pawn then
+        Err("не найдена пешка игрока (Pawn)")
+        return
+    end
+    Log("=== OPEN-GAME-UI станции " .. S.sel .. ": OnTriggerInteract(pawn, Open=4) ===")
+    local ok, res = pcall(function() return st:OnTriggerInteract(pawn, 4) end)
+    Log("OnTriggerInteract: " .. ((ok and "вызвана — открылся ли UI станции в игре?") or ("FAIL → " .. tostring(res))))
+    if refreshIfOpen then refreshIfOpen() end
+end
+
+-- ============================== ЗАХВАТ игровых UI-моделей ==============================
+local function OnCapturedUIModel(obj)
+    local ui = Unwrap(obj)
+    if not IsValidObj(ui) then return end
+    Log(">>> ЗАХВАЧЕНА игровая UI-модель: " .. ObjName(ui))
+    -- инспекция отложенно: в момент создания привязка может быть ещё не готова
+    DelayCall(600, function()
+        if not IsValidObj(ui) then
+            Log(">>> захваченная UI-модель умерла до инспекции")
+            return
+        end
+        local out = {}
+        local ok = pcall(function() ui:GetConcreteModelInstanceId(out) end)
+        local guidKey = ok and OutTableGuidKey(out) or nil
+        local outerObj = nil
+        pcall(function() outerObj = Unwrap(ui:GetOuter()) end)
+        local outerName = IsValidObj(outerObj) and ObjName(outerObj) or nil
+        local okS, s = pcall(function() return ui:GetCurrentState() end)
+        local stateName = "?"
+        if okS then
+            local n = Num(s)
+            stateName = (n ~= nil and (STATE_NAMES[math.floor(n)] or tostring(n))) or tostring(Str(s))
+        end
+        Log(string.format(">>> инспекция: guid=%s | outer=%s | state=%s",
+            tostring(guidKey), tostring(outerName), tostring(stateName)))
+        -- привязка к станции: по GUID, иначе по outer
+        local stations = FindStations()
+        local matched = nil
+        for _, st in ipairs(stations) do
+            local sk = StationGuidKey(st)
+            if guidKey ~= nil and sk ~= nil and sk == guidKey then
+                matched = st
+                break
+            end
+            if outerName ~= nil and ObjName(st) == outerName then
+                matched = st
+            end
+        end
+        if matched then
+            S.captured[ObjName(matched)] = { model = ui, guid = guidKey }
+            Log(">>> привязана к станции: " .. ObjName(matched) .. " — AUTO/START/MISSIONS теперь через неё")
+        else
+            S.lastCaptured = { model = ui, guid = guidKey }
+            Log(">>> станция не определена (guid станций не читается?) — сохранена как lastCaptured")
+        end
+        if refreshIfOpen then refreshIfOpen() end
+    end)
+end
+
+local function RegisterCaptureNotify()
+    if type(NotifyOnNewObject) ~= "function" then
+        Err("NotifyOnNewObject недоступен — захват игровых UI-моделей не работает")
+        return
+    end
+    local ok = pcall(NotifyOnNewObject, UI_MODEL_CLASS, OnCapturedUIModel)
+    if not ok then
+        ok = pcall(NotifyOnNewObject, "PalUIMapObjectCharacterTeamMissionModel", OnCapturedUIModel)
+    end
+    if ok then
+        Log("захват UI-моделей включён: открой UI станции в игре — модель будет перехвачена")
+    else
+        Err("NotifyOnNewObject не зарегистрирован")
+    end
 end
 
 -- ============================================================================================
@@ -870,7 +1033,6 @@ local Theme = {
     PanelHeader   = hexToLinearColor("#26333A", 1.00),
     PanelSection  = hexToLinearColor("#192226", 0.90),
     CardActive    = hexToLinearColor("#1D2D2A", 0.96),
-    CardInactive  = hexToLinearColor("#241D1E", 0.85),
     Divider       = hexToLinearColor("#314046", 1.00),
     BorderDefault = hexToLinearColor("#42555C", 1.00),
     TextPrimary   = hexToLinearColor("#EAF2F6", 1.00),
@@ -879,9 +1041,6 @@ local Theme = {
     Gold          = hexToLinearColor("#FFC53D", 1.00),
     Green         = hexToLinearColor("#4ADE80", 1.00),
     Red           = hexToLinearColor("#F87171", 1.00),
-    Blue          = hexToLinearColor("#7DD3FC", 1.00),
-    Purple        = hexToLinearColor("#C084FC", 1.00),
-    Orange        = hexToLinearColor("#FB923C", 1.00),
 }
 
 local Assets = {
@@ -1248,11 +1407,13 @@ local function renderAllContent()
     Factory.DrawFrame(surface, tree, PAD, PAD, contentW, headerH, Theme.BorderDefault)
     local goldLine = Factory.CreateSolidBorder(tree, Theme.Gold)
     if goldLine then Factory.AnchorWidget(surface, goldLine, PAD, PAD + headerH - 2, contentW, 2, 6) end
-    local title = Factory.CreateText(tree, "EXPEDITION HUB — TEST v0.2", 16, Theme.TextPrimary, true, 0)
+    local title = Factory.CreateText(tree, "EXPEDITION HUB — TEST v0.3", 16, Theme.TextPrimary, true, 0)
     if title then Factory.AnchorWidget(surface, title, PAD + 16, PAD + 12, 460, 24, 7) end
     local _, stationTotal = SelectedStation()
-    local sub = Factory.CreateText(tree, string.format("станций в мире: %d", stationTotal), 11, Theme.TextSecond, false, 2)
-    if sub then Factory.AnchorWidget(surface, sub, PAD + contentW - 300, PAD + 16, 284, 16, 7) end
+    local capCount = 0
+    for _ in pairs(S.captured) do capCount = capCount + 1 end
+    local sub = Factory.CreateText(tree, string.format("станций: %d   захвачено UI-моделей: %d", stationTotal, capCount), 11, Theme.TextSecond, false, 2)
+    if sub then Factory.AnchorWidget(surface, sub, PAD + contentW - 340, PAD + 16, 324, 16, 7) end
 
     -- ===== селектор станции (70..124) =====
     local selY, selH = 70, 54
@@ -1286,69 +1447,72 @@ local function renderAllContent()
     local detLines = StationDetailLines()
     for i, lineTxt in ipairs(detLines) do
         local t = Factory.CreateText(tree, lineTxt, 11, Theme.TextPrimary, false, 0)
-        if t then Factory.AnchorWidget(surface, t, PAD + 16, detY + 10 + (i - 1) * 17, contentW - 32, 16, 7) end
+        if t then Factory.AnchorWidget(surface, t, PAD + 16, detY + 8 + (i - 1) * 18, contentW - 32, 17, 7) end
     end
 
-    -- ===== миссии (252..412) =====
-    local misY, misH = 252, 160
+    -- ===== миссии (252..404) =====
+    local misY, misH = 252, 152
     local misBg = Factory.CreateSolidBorder(tree, Theme.PanelSection)
     if misBg then Factory.AnchorWidget(surface, misBg, PAD, misY, contentW, misH, 5) end
     Factory.DrawFrame(surface, tree, PAD, misY, contentW, misH, Theme.Divider)
 
     if S.missions and #S.missions > 0 then
         local mTitle = Factory.CreateText(tree,
-            string.format("МИССИИ СТАНЦИИ %d — нажми SELECT+START:", S.sel), 11, Theme.TextPrimary, true, 0)
-        if mTitle then Factory.AnchorWidget(surface, mTitle, PAD + 16, misY + 8, 700, 16, 7) end
-        createGameButton(hostCanvas, surface, tree, "x CLEAR", PAD + contentW - 96, misY + 5, 80, 24, function()
+            string.format("МИССИИ СТАНЦИИ %d — кнопка SELECT+START:", S.sel), 11, Theme.TextPrimary, true, 0)
+        if mTitle then Factory.AnchorWidget(surface, mTitle, PAD + 16, misY + 6, 700, 15, 7) end
+        createGameButton(hostCanvas, surface, tree, "x CLEAR", PAD + contentW - 96, misY + 4, 80, 22, function()
             S.missions = nil
             renderAllContent()
         end, 60)
         for i, info in ipairs(S.missions) do
             if i > 4 then break end
-            local cy = misY + 32 + (i - 1) * 31
+            local cy = misY + 28 + (i - 1) * 30
             local rowBg = Factory.CreateSolidBorder(tree, Theme.CardActive)
-            if rowBg then Factory.AnchorWidget(surface, rowBg, PAD + 14, cy, contentW - 28, 27, 6) end
+            if rowBg then Factory.AnchorWidget(surface, rowBg, PAD + 14, cy, contentW - 28, 26, 6) end
             local t = Factory.CreateText(tree, string.format("%d. %s", i, info.text), 10, Theme.TextSecond, false, 0)
-            if t then Factory.AnchorWidget(surface, t, PAD + 24, cy + 6, 620, 16, 7) end
-            createGameButton(hostCanvas, surface, tree, "SELECT+START", PAD + contentW - 174, cy - 2, 156, 26, function()
+            if t then Factory.AnchorWidget(surface, t, PAD + 24, cy + 6, 620, 15, 7) end
+            createGameButton(hostCanvas, surface, tree, "SELECT+START", PAD + contentW - 174, cy - 2, 156, 24, function()
                 LaunchMission(info.id)
             end, 60)
         end
     else
         local hint = Factory.CreateText(tree,
-            "МИССИИ: нажми MISSIONS ниже — здесь появится список с кнопками SELECT+START (выбор→авто-палы→запуск одной кнопкой)",
+            "МИССИИ: нажми MISSIONS. Если список пуст — UI-модель станции не привязана: подойди к станции и открой её UI в игре (произойдёт ЗАХВАТ), либо жми OPEN-GAME-UI",
             10, Theme.TextDim, false, 0)
-        if hint then Factory.AnchorWidget(surface, hint, PAD + 16, misY + 12, contentW - 32, 60, 7) end
+        if hint then Factory.AnchorWidget(surface, hint, PAD + 16, misY + 10, contentW - 32, 60, 7) end
     end
 
-    -- ===== кнопки проб (420..560) =====
-    local btnY = 420
+    -- ===== кнопки проб (412..598) =====
+    local btnY = 412
     local btnW, btnH, gap = 225, 42, 8
     local rows = {
-        { "SCAN", DoScan, "INFO", DoInfo, "CHEST", DoChest, "UI-PROBE", DoUIProbe },
-        { "MISSIONS", DoMissions, "AUTO", DoAuto, "START", DoStart, "COLLECT", DoCollect },
-        { "COLLECT ALL", DoCollectAll, "REMAIN", DoRemain, "FB-START", DoFallbackStart, "GUILD", DoGuild },
+        { "SCAN", DoScan, "REFRESH", function() end, "INFO", DoInfo, "CHEST", DoChest },
+        { "UI-PROBE", DoUIProbe, "MISSIONS", DoMissions, "AUTO", DoAuto, "START", DoStart },
+        { "COLLECT", DoCollect, "COLLECT ALL", DoCollectAll, "REMAIN", DoRemain, "FB-START", DoFallbackStart },
+        { "OPEN-GAME-UI", DoOpenGameUI, "GUILD", DoGuild, "SETTINGS", DoSettings },
     }
     for r, row in ipairs(rows) do
         local cy = btnY + (r - 1) * (btnH + gap)
         for c = 1, 4 do
             local label = row[c * 2 - 1]
             local fn    = row[c * 2]
-            createGameButton(hostCanvas, surface, tree, label,
-                PAD + 16 + (c - 1) * (btnW + gap), cy, btnW, btnH, function()
-                    SafeDo("btn:" .. tostring(label), fn)
-                    renderAllContent()
-                end, 60)
+            if label ~= nil and fn ~= nil then
+                createGameButton(hostCanvas, surface, tree, label,
+                    PAD + 16 + (c - 1) * (btnW + gap), cy, btnW, btnH, function()
+                        SafeDo("btn:" .. tostring(label), fn)
+                        renderAllContent()
+                    end, 60)
+            end
         end
     end
 
-    -- ===== лог (568..748) =====
-    local logY, logH = 568, 180
+    -- ===== лог (606..748) =====
+    local logY, logH = 606, 142
     local logBg = Factory.CreateSolidBorder(tree, Theme.PanelSection)
     if logBg then Factory.AnchorWidget(surface, logBg, PAD, logY, contentW, logH, 5) end
     Factory.DrawFrame(surface, tree, PAD, logY, contentW, logH, Theme.Divider)
-    local logTitle = Factory.CreateText(tree, "ЛОГ ПРОБ (последние строки; полный лог — в логе UE4SS):", 10, Theme.TextDim, true, 0)
-    if logTitle then Factory.AnchorWidget(surface, logTitle, PAD + 16, logY + 6, 600, 14, 7) end
+    local logTitle = Factory.CreateText(tree, "ЛОГ ПРОБ (полный лог — в логе UE4SS):", 10, Theme.TextDim, true, 0)
+    if logTitle then Factory.AnchorWidget(surface, logTitle, PAD + 16, logY + 5, 600, 13, 7) end
     local startIdx = math.max(1, #S.logLines - Config.LogLines + 1)
     local shown = 0
     for i = startIdx, #S.logLines do
@@ -1356,21 +1520,18 @@ local function renderAllContent()
         local lineTxt = S.logLines[i]
         local color = Theme.TextSecond
         if lineTxt:find("ОШИБКА", 1, true) then color = Theme.Red
-        elseif lineTxt:find("ok", 1, true) or lineTxt:find("вызвана", 1, true) then color = Theme.Green end
+        elseif lineTxt:find(">>> ЗАХВАЧ", 1, true) or lineTxt:find("привязана к станции", 1, true) then color = Theme.Gold
+        elseif lineTxt:find("ok", 1, true) or lineTxt:find("вызвана", 1, true) or lineTxt:find("InProgress", 1, true) then color = Theme.Green end
         local t = Factory.CreateText(tree, lineTxt, 10, color, false, 0)
-        if t then Factory.AnchorWidget(surface, t, PAD + 16, logY + 24 + (shown - 1) * 14, contentW - 32, 13, 7) end
+        if t then Factory.AnchorWidget(surface, t, PAD + 16, logY + 22 + (shown - 1) * 14, contentW - 32, 13, 7) end
     end
 
     -- ===== футер (752..784) =====
     local footerY = UI_H - PAD - 32
     local footLine = Factory.CreateSolidBorder(tree, Theme.Divider)
     if footLine then Factory.AnchorWidget(surface, footLine, PAD, footerY - 4, contentW, 1, 6) end
-    local escHint = Factory.CreateText(tree, "F6 или ESC — закрыть | тестируй по порядку: SCAN → INFO → UI-PROBE → MISSIONS → AUTO → START", 10, Theme.TextDim, false, 0)
-    if escHint then Factory.AnchorWidget(surface, escHint, PAD + 10, footerY + 8, 640, 16, 7) end
-    createGameButton(hostCanvas, surface, tree, "SETTINGS", PAD + contentW - 320, footerY - 2, 140, 30, function()
-        SafeDo("btn:SETTINGS", DoSettings)
-        renderAllContent()
-    end, 60)
+    local escHint = Factory.CreateText(tree, "F6/ESC — закрыть | порядок: SCAN → FB-START → если молчит: OPEN-GAME-UI или открой UI станции в игре → MISSIONS → SELECT+START", 10, Theme.TextDim, false, 0)
+    if escHint then Factory.AnchorWidget(surface, escHint, PAD + 10, footerY + 8, 700, 16, 7) end
     createGameButton(hostCanvas, surface, tree, "CLOSE [ESC]", PAD + contentW - 166, footerY - 2, 150, 30, function()
         Presenter_Close()
     end, 60)
@@ -1441,16 +1602,6 @@ end
 
 refreshIfOpen = Presenter_Refresh
 
--- авто-обновление открытой панели (таймеры/состояние тикают сами)
-local function scheduleAutoRefresh()
-    DelayCall(Config.RefreshMs, function()
-        if State.isDisplayed then
-            renderAllContent()
-            scheduleAutoRefresh()
-        end
-    end)
-end
-
 -- ============================== ХОТКЕИ / МИР ==============================
 local function bindAction(fn)
     local guarded = function() SafeDo(fn) end
@@ -1480,7 +1631,6 @@ local function toggleUI()
         Presenter_Close()
     else
         Presenter_Show()
-        scheduleAutoRefresh()
     end
 end
 
@@ -1488,7 +1638,10 @@ local function onWorldEnter()
     SafeDo(function()
         if Presenter_IsVisible() then Presenter_Close() end
     end)
-    Log("мир загружен — панель закрыта, кэши сброшены")
+    S.captured = {}
+    S.lastCaptured = nil
+    S.missions = nil
+    Log("мир загружен — панель закрыта, захваченные UI-модели сброшены")
 end
 
 local function registerWorldEnterHook()
@@ -1514,8 +1667,9 @@ local function init()
         if Presenter_IsVisible() then Presenter_Close() end
     end)
     registerWorldEnterHook()
-    Log("ExpeditionHubTest v0.2 готов. F6 — панель проб экспедиций (кнопки, консоль не нужна).")
-    Log("порядок теста: SCAN → INFO → UI-PROBE → MISSIONS → SELECT+START → COLLECT")
+    RegisterCaptureNotify()
+    Log("ExpeditionHubTest v0.3 готов. F6 — панель (мигание и краш таймера исправлены).")
+    Log("порядок: SCAN → FB-START → если молчит: открой UI станции в игре (ЗАХВАТ) → MISSIONS → SELECT+START")
 end
 
 SafeDo(init)
