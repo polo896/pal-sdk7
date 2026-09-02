@@ -6,19 +6,25 @@
 --  smashing / a pal fight, with a stele (ancient altar) inside.
 --
 --  F6 opens the control panel listing every tower found in the world:
---    [v] MARK - your own "visited" checklist (saved to a local file)
+--    [v] MARK - your own "visited" checklist (saved to a local file;
+--                marks are keyed by stable anchors - stele / barrier /
+--                fast-travel point - so they survive the tower being
+--                cleared and game restarts)
 --    TP      - teleport near the tower (staged, waits for terrain streaming)
 --  Global: RESCAN / TP NEAREST / SORT / paging / !th chat commands.
 --
---  The mod never opens towers or loots them for you and never interferes
---  with mini-games or fights - it only reads world state and teleports.
---  Mini-game skips are a job for pak mods that edit the widgets themselves.
+--  Lock mini-games (lockpick / roulette / one-stroke) are auto-won shortly
+--  after they open - see Scripts/minigame.lua (self-contained module,
+--  disable it in its CONFIG). Rocks and pal-fight towers are still opened
+--  by you, and steles are looted by you.
 --
 --  Design rules:
 --    * event-driven only: hooks + keybinds, zero background polling
 --    * outside a live world the mod makes NO native calls at all (a cached
 --      pointer that died with the unloaded world is a guaranteed crash)
 --    * world enter only closes our own panel and drops Lua caches
+--    * the only game-mechanic calls are the native mini-game completion
+--      functions (the same ones the game invokes on an honest win)
 -- ============================================================================
 
 local MOD_TAG  = "[TowerHunter]"
@@ -26,6 +32,7 @@ local MOD_DIR  = "TowerHunter"
 local PROGRESS_FILE = "towerhunter_progress.txt"
 
 local towerUI = require("tower_ui")
+require("minigame")  -- lock mini-game auto-win (self-contained module)
 
 local CONFIG = {
     OpenKey        = "F6",
@@ -399,11 +406,23 @@ local function saveProgress()
     local ok = pcall(function()
         local f = io.open(progressPath, "w")
         if f == nil then error("cannot open " .. tostring(progressPath)) end
-        f:write("# TowerHunter progress. Format: towerKey|1 (key = rounded coordinates)\n")
+        f:write("# TowerHunter progress. Format: towerKey|1 (key = anchor coordinates)\n")
         for key in pairs(Progress) do f:write(key .. "|1\n") end
         f:close()
     end)
     return ok
+end
+
+-- A tower is marked when ANY of its anchor keys is marked. Anchors are
+-- coordinates of objects that stay in the world forever (stele / barrier /
+-- fast-travel point), unlike the gimmick cluster center, which drifts once
+-- cleared gimmicks despawn - that drift used to lose marks between sessions.
+local function isMarkedTower(tw)
+    local anchors = tw.anchors or { tw.key }
+    for _, k in ipairs(anchors) do
+        if Progress[k] == true then return true end
+    end
+    return false
 end
 
 -- ============================== tower discovery ============================
@@ -595,7 +614,8 @@ local function scanTowers(preserveOrder)
         local loc = { X = cx / count, Y = cy / count, Z = cz / count }
         towers[#towers + 1] = {
             gimmicks = gimmicks, kind = bestKind, name = bestKind, loc = loc,
-            key = towerKey(loc), steles = {}, barrier = nil, ft = nil,
+            key = towerKey(loc), steles = {}, steleLocs = {},
+            barrier = nil, barrierLoc = nil, ft = nil, ftLoc = nil,
         }
     end
 
@@ -603,9 +623,9 @@ local function scanTowers(preserveOrder)
     local usedBarrier, usedFt = {}, {}
     for _, t in ipairs(towers) do
         local bi = nearestFree(barriers, usedBarrier, t.loc, CONFIG.GroupRadius)
-        if bi then usedBarrier[bi] = true t.barrier = barriers[bi].actor end
+        if bi then usedBarrier[bi] = true t.barrier = barriers[bi].actor t.barrierLoc = barriers[bi].loc end
         local fi = nearestFree(fts, usedFt, t.loc, CONFIG.GroupRadius)
-        if fi then usedFt[fi] = true t.ft = fts[fi].actor end
+        if fi then usedFt[fi] = true t.ft = fts[fi].actor t.ftLoc = fts[fi].loc end
     end
     local usedStele = {}
     for si, s in ipairs(steles) do
@@ -617,6 +637,7 @@ local function scanTowers(preserveOrder)
         if bestT ~= nil then
             usedStele[si] = true
             bestT.steles[#bestT.steles + 1] = s.actor
+            bestT.steleLocs[#bestT.steleLocs + 1] = s.loc
         end
     end
 
@@ -625,7 +646,8 @@ local function scanTowers(preserveOrder)
         if not usedStele[si] then
             towers[#towers + 1] = {
                 gimmicks = {}, kind = "STELA", name = "STELA", loc = s.loc,
-                key = towerKey(s.loc), steles = { s.actor }, barrier = nil, ft = nil,
+                key = towerKey(s.loc), steles = { s.actor }, steleLocs = { s.loc },
+                barrier = nil, barrierLoc = nil, ft = nil, ftLoc = nil,
             }
         end
     end
@@ -642,6 +664,18 @@ local function scanTowers(preserveOrder)
         end
     end
     towers = kept
+
+    -- stable anchor keys: marks must survive the tower being cleared
+    -- (cleared gimmicks despawn, so the cluster-center key drifts;
+    --  stele / barrier / fast-travel actors stay in the world forever)
+    for _, t in ipairs(towers) do
+        local anchors = { t.key }
+        if t.barrierLoc ~= nil then anchors[#anchors + 1] = towerKey(t.barrierLoc) end
+        if t.ftLoc ~= nil then anchors[#anchors + 1] = towerKey(t.ftLoc) end
+        for _, sl in ipairs(t.steleLocs or {}) do anchors[#anchors + 1] = towerKey(sl) end
+        t.anchors = anchors
+    end
+
     local oldTowers = Towers
     Towers = towers
 
@@ -694,7 +728,7 @@ getTowerState = function(tw)
     local cleared = nil
     if gTotal > 0 then cleared = (gCleared == gTotal) end
     local looted = (sTotal > 0 and sLooted == sTotal)
-    local done = Progress[tw.key] == true
+    local done = isMarkedTower(tw)
 
     -- the barrier is the real truth about "is the tower open"
     local wallUp = nil
@@ -890,7 +924,12 @@ local function openUI()
         onNext = function() Page = Page + 1 uiRefresh() end,
 
         onToggleDone = function(tw)
-            if Progress[tw.key] then Progress[tw.key] = nil else Progress[tw.key] = true end
+            local anchors = tw.anchors or { tw.key }
+            if isMarkedTower(tw) then
+                for _, k in ipairs(anchors) do Progress[k] = nil end
+            else
+                for _, k in ipairs(anchors) do Progress[k] = true end
+            end
             saveProgress()
             uiRefresh()
         end,
