@@ -54,9 +54,20 @@ UAssetGUI (~10 МБ), repak (есть), AES-ключ (есть).
      Pal/Content/Pal/DataTable/PickingGame/DT_PalPickingGameSettings.uasset (+.uexp)
      Pal/Content/Pal/DataAsset/OneStrokeGame/DA_OneStrokeMinigameData.uasset (+.uexp)
    ```
-   Собрать в pak твоим обычным `repak.exe create` (AES-ключ Palworld).
-4. Pak → `Pal/Content/Paks/~mods/` (как таймер-мод). Имя с `_P` + позднее
-   монтирование = ассеты перекрывают игровые.
+   Сборка (папка начинается с `Pal\`, поэтому `-m` НЕ нужен — дефолтная точка
+   монтирования repak и есть `../../../`):
+   ```bat
+   repak.exe pack MyMinigameTweaks_P MyMinigameTweaks_P.pak
+   ```
+   (если твоя версия repak не принимает имя пак позиционно —
+   `repak.exe pack -o MyMinigameTweaks_P.pak MyMinigameTweaks_P`).
+   **AES-ключ для СОЗДАНИЯ пак-мода не нужен** — ключом зашифрован игровой
+   `Pal-Windows.pak`, он нужен только на ЧТЕНИЕ (FModel). Твой таймер-пак
+   тоже собирался без ключа и работал. Файл `.uexp` обязан лежать рядом с
+   `.uasset` — в пак попадают оба.
+4. Pak → `Pal/Content/Paks/~mods/`. Имя с `_P` = патч-приоритет поверх
+   игровых ассетов (для таймера было необязательно — там пути были новые,
+   а для override — обязательно).
 
 ## Тест-чеклист
 
