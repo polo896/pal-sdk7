@@ -66,36 +66,47 @@ Wwise и без полного Visual Studio 2022 IDE**.
 ## Пререквизиты — минимум мусора
 
 - **UE 5.1** — уже есть.
-- **Visual Studio Build Tools 2022** (standalone, БЕЗ IDE, ~3–5 ГБ). Качается с
+- **Компилятор MSVC v143 (14.38)** — единственное, что реально нужно докачать.
+  Два способа, выбери один:
+
+  **Способ А — если стоит Visual Studio 2026 (легче, без нового продукта).**
+  Visual Studio Installer → строка VS 2026 → *Modify* → вкладка *Individual
+  components* → в поиске набери `v143` → отметь
+  **«MSVC v143 - VS 2022 C++ x64/x86 build tools (v14.38-17.8)»** → Modify.
+  Это ~1–2 ГБ внутри уже установленной 2026: компилятор кладётся в
+  `C:\Program Files\Microsoft Visual Studio\18\<edition>\VC\Tools\MSVC\14.38.33130`,
+  отдельный продукт не появляется, удаляется снятием галочки. Нативный тулчейн
+  2026 (v145) движком 5.1 не принимается, поэтому пиновать будем именно v143
+  через BuildConfiguration.xml (см. ниже).
+
+  **Способ Б — standalone «Build Tools for Visual Studio 2022»** (~3–5 ГБ,
+  отдельный продукт, живёт рядом с 2026, удаляется штатно). Качается с
   [visualstudio.microsoft.com/downloads](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022)
-  (внизу страницы, «Build Tools for Visual Studio 2022»). Живёт рядом с VS 2026,
-  не конфликтует, удаляется штатно из «Установленных приложений».
-  В Installer → *Individual components* отметить:
-  - **MSVC v143 — VS 2022 C++ x64/x86 build tools (v14.38-17.8)** — именно v14.38;
-  - **Windows 10 SDK** (10.0.19041+) или Windows 11 SDK.
+  (внизу страницы, «Build Tools for Visual Studio 2022»). В Installer →
+  *Individual components*: **MSVC v143 — VS 2022 C++ x64/x86 build tools
+  (v14.38-17.8)** и **Windows 10/11 SDK**.
+
+  Если в логе сборки появится ругань на Windows SDK — добавь компонент
+  «Windows 10 SDK (10.0.19041.0)» тем же способом.
 - **.NET SDK 6.x** — если UBT пожалуется при сборке (обычно хватает встроенного в движок).
 
 ### BuildConfiguration.xml
 
-Создай файл `%APPDATA%\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml`:
+Создай файл `%APPDATA%\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml`
+(проверенная сообществом кита версия — именно она чинит «Pal could not be compiled»):
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <Configuration xmlns="https://www.unrealengine.com/BuildConfiguration">
-    <BuildConfiguration>
-        <Compiler>VisualStudio2022</Compiler>
-    </BuildConfiguration>
     <WindowsPlatform>
-        <Compiler>VisualStudio2022</Compiler>
+        <CompilerVersion>14.38.33130</CompilerVersion>
         <ToolchainVersion>14.38.33130</ToolchainVersion>
     </WindowsPlatform>
-    <VCProjectFileGenerator>
-        <Version>VisualStudio2022</Version>
-    </VCProjectFileGenerator>
 </Configuration>
 ```
 
-Это заставит UBT движка 5.1 использовать тулчейн Build Tools 2022, а не твой VS 2026.
+Оба поля важны: они пинуют тулчейн MSVC к версии **14.38.33130** (та самая
+«MSVC v143 — v14.38-17.8»), под которую собран весь путь Pal-кита.
 
 ## Запуск кита
 
@@ -103,10 +114,32 @@ Wwise и без полного Visual Studio 2022 IDE**.
 2. *«Missing Pal Modules … rebuild now?»* → **Да**. Это норма: заглушки кита
    компилируются первый раз (~5–15 мин).
 3. Диалога про Wwise больше не будет.
-4. Если *«Pal could not be compiled»*: проверь (а) установлен ли MSVC v143 **14.38**,
-   (б) правильный ли `BuildConfiguration.xml`, (в) нет ли в пути папки `-main`,
-   (г) не запущен ли второй экземпляр редактора. **Не** кликай `.uproject` повторно,
-   пока идёт компиляция — это и порождает «could not be compiled».
+4. Если *«Pal could not be compiled»* — не гадай, а посмотри настоящую причину
+   (см. «Диагностика» ниже): она всегда есть в логе UBT.
+
+### Диагностика: почему «Pal could not be compiled»
+
+Окно ошибки ничего не сообщает. Настоящая причина — в логе
+`%LOCALAPPDATA%\UnrealBuildTool\Log.txt` (и в `<кит>\Saved\Logs\Pal.log`),
+но быстрее запустить сборку руками в cmd — она напечатает всё в консоль:
+
+```bat
+"C:\Program Files\Epic Games\UE_5.1\Engine\Build\BatchFiles\Build.bat" PalEditor Win64 Development -Project="C:\PMK\Pal.uproject" -WaitMutex
+```
+
+(подставь свой путь к движку и киту). Успешная сборка заканчивается строкой
+без `ERROR:` — после неё двойной клик по `Pal.uproject` открывает редактор,
+модули уже собраны.
+
+Типовые причины из лога/консоли:
+
+| Что написано | Причина | Лечение |
+|---|---|---|
+| `Detected compiler newer than Visual Studio 2022, please update min version checking in WindowsPlatformCompilerSetup.h` | движок 5.1 отверг тулчейн v145 из VS 2026 — самая частая причина с одной только 2026-й | поставить v143 v14.38 (Способ А выше) + BuildConfiguration.xml с пином 14.38.33130 |
+| `Visual Studio 2022 is installed, but is missing the C++ toolchain` / `UnrealBuildTool requires at minimum the MSVC 14.xx toolchain` | v143 не установлен или UBT не видит его в инсталляции | проверить, что компонент v14.38-17.8 реально стоит (папка `...\VC\Tools\MSVC\14.38.33130` существует), и что BuildConfiguration.xml лежит в `%APPDATA%\Unreal Engine\UnrealBuildTool\` |
+| Ругань на Windows SDK (`windows.h not found`, `LNK1181` и т.п.) | нет SDK или UBT взял слишком новый | добавить «Windows 10 SDK (10.0.19041.0)» в Individual components |
+| Вечное «modules need recompile» при каждом запуске | путь с суффиксом `-main` или второй открытый редактор | переименовать папку (короткий путь `C:\PMK`), закрыть другие копии редактора |
+| `The following modules are missing or built with a different engine version` → Да → сразу ошибка | то же, что выше: падение UBT на первом же шаге | смотреть консоль ручной сборки |
 
 ## Ограничения стаба (честно)
 
