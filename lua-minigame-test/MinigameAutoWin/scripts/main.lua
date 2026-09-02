@@ -1,8 +1,22 @@
 -- ============================================================================================
--- MinigameAutoWin v0.3 — ТЕСТОВЫЙ мод (UE4SS Lua) для Palworld
+-- MinigameAutoWin v0.4 — ТЕСТОВЫЙ мод (UE4SS Lua) для Palworld
 -- Авто-победа мини-игр: Отмычка (Picking) / Рулетка-датчик (GaugeStop) / Росчерк (OneStroke)
 --
 -- ИСТОРИЯ ВЕРСИЙ:
+--   v0.4 — тайминги: победа через DelayMs=800, принудительное закрытие через
+--          CloseCheckMs=500 ПОСЛЕ победы. В v0.3 был баг: закрытие ждало
+--          (DelayMs + CloseCheckMs) уже ПОСЛЕ победы — выходило ~4.6 с втыкания.
+--          Теперь весь цикл ~1.3 с. Подстройка на лету: `mgaw delay <мс>` и
+--          `mgaw close <мс>`.
+--   v0.3 — FIX: виджет не закрывался сам (висел до ESC). Причина: FindFirstOf
+--          возвращал CDO виджета (Default__...), у которого GetIsVisible=false —
+--          проверка "всё закрыто" врала. Теперь: ищем ВСЕ живые инстансы
+--          (FindAllOf, без CDO) и, если после победы OnMiniGameComplete не пришёл,
+--          принудительно Close() (эквивалент ESC — именно закрытие виджета
+--          запускает OnMiniGameComplete → RPC → замок), затем проверка, затем
+--          эскалация CloseOverlayUIAll(). Завершение отслеживается по полному
+--          имени параметра (completedNames). v0.3.1: hotfix — потерянное при сбое
+--          песочницы объявление local completedNames.
 --   v0.2 — FIX: объекты из колбэков хуков/NotifyOnNewObject приходят обёрнутыми в
 --          RemoteUnrealParam — теперь разворачиваются через :get() (паттерн PalWarp).
 --          Классификация параметра — 4 уровня: GetClass → имя объекта → проба членов →
@@ -46,7 +60,7 @@ local TAG = "[MinigameAutoWin]"
 -- ============================== НАСТРОЙКИ (правь тут) ==============================
 local Config = {
     Mode            = "autowin", -- "autowin" | "observe"
-    DelayMs         = 1200,      -- сколько мс держать мини-игру открытой перед победой
+    DelayMs         = 800,       -- сколько мс держать мини-игру открытой перед победой
     Games           = { picking = true, gauge = true, onestroke = true },
 
     -- Рулетка: сначала "натуральный" путь (Model:SendResult(true) — ровно как виджет
@@ -65,7 +79,7 @@ local Config = {
     -- (OnMiniGameComplete → RPC → замок открывается) в этой игре срабатывает именно
     -- при закрытии виджета — это делал ESC во втором тесте.
     CloseIfHanging   = true,
-    CloseCheckMs     = 2200,  -- ожидание после победы (поверх DelayMs), мс
+    CloseCheckMs     = 500,   -- ожидание после победы до принудительного Close(), мс
     EscalateCloseAll = true,  -- если Close() не завершил — PalHUDService:CloseOverlayUIAll()
 
     LogVerbose      = true,      -- подробные логи (модель рулетки, процессор, пак)
@@ -378,7 +392,8 @@ local function SchedulePostWinClose(g, paramName)
     if not Config.CloseIfHanging then return end
 
     -- проверка 1: может, игра сама доиграла успех (анимация → закрытие)?
-    ScheduleInGameThread(Config.DelayMs + Config.CloseCheckMs, "close-if-hanging:" .. g.key, function()
+    -- (вызывается уже ПОСЛЕ победы, поэтому ждём только CloseCheckMs, без DelayMs)
+    ScheduleInGameThread(Config.CloseCheckMs, "close-if-hanging:" .. g.key, function()
         if completedNames[paramName] then
             Log("UI: игра сама завершила и закрыла мини-игру — ОК")
             return
@@ -619,6 +634,7 @@ local function PrintStatus()
     Log("=== статус ===")
     Logf("режим: %s  (mgaw observe / mgaw autowin)", tostring(S.mode))
     Logf("задержка: %d мс  (mgaw delay <мс>)", Config.DelayMs)
+    Logf("закрытие: через %d мс после победы (mgaw close <мс>)", Config.CloseCheckMs)
     Logf("игры: picking=%s gauge=%s onestroke=%s",
         tostring(Config.Games.picking), tostring(Config.Games.gauge), tostring(Config.Games.onestroke))
     Logf("статистика: стартов мини-игр=%d, F-нажатий=%d, авто-побед=%d, завершений=%d, RPC-успехов=%d",
@@ -699,12 +715,20 @@ local cmdHandler = function(fullCmd, params)
             else
                 Log("формат: mgaw delay 2000")
             end
+        elseif sub == "close" then
+            local v = tonumber(params and params[2])
+            if v and v >= 0 then
+                Config.CloseCheckMs = math.floor(v)
+                Logf("CloseCheckMs = %d (ожидание после победы до принудительного Close())", Config.CloseCheckMs)
+            else
+                Log("формат: mgaw close 500")
+            end
         elseif Config.Games[sub] ~= nil then
             local on = ParseOnOff(params and params[2])
             Config.Games[sub] = on
             Logf("игра '%s' -> %s", sub, tostring(on))
         elseif sub == "help" then
-            Log("команды: mgaw status | observe | autowin | win | delay <мс> | picking on/off | gauge on/off | onestroke on/off")
+            Log("команды: mgaw status | observe | autowin | win | delay <мс> | close <мс> | picking on/off | gauge on/off | onestroke on/off")
         else
             Log("неизвестная подкоманда '" .. tostring(sub) .. "' — mgaw help")
         end
@@ -772,7 +796,7 @@ local function TryInit()
 end
 
 -- ------------------------------- старт -------------------------------
-Log("=== MinigameAutoWin v0.3 (тест) загружен ===")
+Log("=== MinigameAutoWin v0.4 (тест) загружен ===")
 Logf("режим: %s | задержка: %d мс | игры: picking/gauge/onestroke = %s/%s/%s",
     tostring(S.mode), Config.DelayMs,
     tostring(Config.Games.picking), tostring(Config.Games.gauge), tostring(Config.Games.onestroke))
