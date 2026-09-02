@@ -1,5 +1,5 @@
 -- ============================================================================================
--- MinigameAutoWin v0.2 — ТЕСТОВЫЙ мод (UE4SS Lua) для Palworld
+-- MinigameAutoWin v0.3 — ТЕСТОВЫЙ мод (UE4SS Lua) для Palworld
 -- Авто-победа мини-игр: Отмычка (Picking) / Рулетка-датчик (GaugeStop) / Росчерк (OneStroke)
 --
 -- ИСТОРИЯ ВЕРСИЙ:
@@ -60,7 +60,14 @@ local Config = {
     -- (каждая существует только у своего класса; несуществующая даёт ошибку Lua в pcall)
     ProbeWinWhenUnknown = true,
 
-    TryCloseUI      = true,      -- если через 900 мс после победы виджет ещё висит — попробовать Close()
+    -- Если после победы мини-игра не завершилась сама (OnMiniGameComplete не пришёл за
+    -- CloseCheckMs) — принудительно закрываем виджет (эквивалент ESC). Завершение
+    -- (OnMiniGameComplete → RPC → замок открывается) в этой игре срабатывает именно
+    -- при закрытии виджета — это делал ESC во втором тесте.
+    CloseIfHanging   = true,
+    CloseCheckMs     = 2200,  -- ожидание после победы (поверх DelayMs), мс
+    EscalateCloseAll = true,  -- если Close() не завершил — PalHUDService:CloseOverlayUIAll()
+
     LogVerbose      = true,      -- подробные логи (модель рулетки, процессор, пак)
 }
 -- ====================================================================================
@@ -339,7 +346,7 @@ end
 
 -- ------------------------------- UI после победы -------------------------------
 local function WidgetVisible(w)
-    -- пробуем известные геттеры видимости UUserWidget
+    -- информационно: видимость конкретного инстанса (в лог)
     for _, fname in ipairs({ "GetIsVisible", "IsVisible", "IsInViewport" }) do
         local ok, v = pcall(function() return w[fname](w) end)
         if ok and type(v) == "boolean" then return v, fname end
@@ -347,25 +354,74 @@ local function WidgetVisible(w)
     return nil, nil
 end
 
-local function ScheduleCloseCheck(g)
-    if not Config.TryCloseUI then return end
-    ScheduleInGameThread(Config.DelayMs + 900, "close-check:" .. g.key, function()
-        local ok, w = pcall(FindFirstOf, g.widget)
-        if not ok or not IsValidObj(w) then
-            Log("UI: виджет " .. g.widget .. " не найден — игра закрыла сама ОК")
+-- все живые инстансы класса, КРОМЕ CDO (Default__...) — FindFirstOf берёт CDO первым!
+local function FindInstancesOf(className)
+    local out = {}
+    local ok, arr = pcall(FindAllOf, className)
+    if ok and type(arr) == "table" then
+        for _, o in ipairs(arr) do
+            o = Unwrap(o)
+            if IsValidObj(o) then
+                local nm = ObjName(o)
+                if not nm:find("Default__", 1, true) then out[#out + 1] = o end
+            end
+        end
+    end
+    return out
+end
+
+-- Если после победы мини-игра не завершилась сама (OnMiniGameComplete не пришёл) —
+-- принудительно закрываем виджет. Именно закрытие виджета (что делал ESC) запускает
+-- OnMiniGameComplete → RequestMiniGameSuccess_ToServer → замок открывается.
+local function SchedulePostWinClose(g, paramName)
+    if not Config.CloseIfHanging then return end
+
+    -- проверка 1: может, игра сама доиграла успех (анимация → закрытие)?
+    ScheduleInGameThread(Config.DelayMs + Config.CloseCheckMs, "close-if-hanging:" .. g.key, function()
+        if completedNames[paramName] then
+            Log("UI: игра сама завершила и закрыла мини-игру — ОК")
             return
         end
-        w = Unwrap(w)
-        local vis, how = WidgetVisible(w)
-        if vis == false then
-            Log("UI: виджет скрыт (" .. tostring(how) .. ") — игра закрыла сама ОК")
-        elseif vis == true then
-            Log("UI: виджет ещё виден → пробую Close()")
-            pcall(function() w:Close() end)
-        else
-            Log("UI: видимость проверить не удалось → пробую Close() на всякий случай")
+        local inst = FindInstancesOf(g.widget)
+        if #inst == 0 then
+            Log("UI: живых инстансов виджета нет, но завершение не замечено — ждём (ESC, если висит ввод)")
+            return
+        end
+        for _, w in ipairs(inst) do
+            local vis, how = WidgetVisible(w)
+            Logf("UI: виджет висит (%s | visible=%s/%s) → Close()", ObjName(w), tostring(vis), tostring(how))
             pcall(function() w:Close() end)
         end
+
+        -- проверка 2: Close() завершил мини-игру?
+        ScheduleInGameThread(1000, "close-check2:" .. g.key, function()
+            if completedNames[paramName] then
+                Log("UI: Close() сработал — мини-игра завершена, замок должен открыться")
+                return
+            end
+            if not Config.EscalateCloseAll then
+                Log("UI: Close() не завершил — эскалация выключена (нажми ESC и пришли лог)")
+                return
+            end
+            Log("UI: Close() не завершил → PalHUDService:CloseOverlayUIAll()")
+            local svc = FindInstancesOf("PalHUDService")
+            if #svc == 0 then
+                Log("UI: PalHUDService не найден — эскалация невозможна (нажми ESC и пришли лог)")
+                return
+            end
+            for _, s in ipairs(svc) do
+                pcall(function() s:CloseOverlayUIAll() end)
+            end
+
+            -- проверка 3: последняя
+            ScheduleInGameThread(1200, "close-check3:" .. g.key, function()
+                if completedNames[paramName] then
+                    Log("UI: CloseOverlayUIAll() завершил мини-игру")
+                else
+                    Log("UI: автоматически завершить не удалось — нажми ESC и пришли этот кусок лога")
+                end
+            end)
+        end)
     end)
 end
 
@@ -411,7 +467,7 @@ local function TryWinNow(sourceDesc, resolveParam)
                     handledNames[name] = true
                     S.stats.autowins = S.stats.autowins + 1
                     Logf(">>> АВТО-ПОБЕДА (probe, класс не опознан): %s через %s", key, tostring(how))
-                    if gg then ScheduleCloseCheck(gg) end
+                    if gg then SchedulePostWinClose(gg, name) end
                     return
                 end
             end
@@ -429,7 +485,7 @@ local function TryWinNow(sourceDesc, resolveParam)
         if ok then
             S.stats.autowins = S.stats.autowins + 1
             Logf(">>> АВТО-ПОБЕДА: %s через %s — ниже должна пройти цепочка [hook]-ов", g.title, tostring(how))
-            ScheduleCloseCheck(g)
+            SchedulePostWinClose(g, name)
         end
     end)
 end
@@ -461,7 +517,7 @@ local function OnNewParam(rawParam)
                             SafeText(m.GaugeStart), SafeText(m.GaugeEnd),
                             SafeText(m.GaugeRange), SafeText(m.CursorSpeed))
                     else
-                        Log("   модель рулетки: param.Model пуст")
+                        Log("   модель рулетки: param.Model пуст на старте (обычно заполняется чуть позже — проверим в момент победы)")
                     end
                 end)
             else
@@ -545,9 +601,13 @@ local function OnHook(d, rawContext, ...)
         for i = 1, math.min(#args, 3) do
             extra = extra .. " arg" .. i .. "=" .. FmtArg(args[i])
         end
-        if d.label == "ЗАМОК: OnMiniGameComplete" and IsValidObj(args[1]) then
-            local okS, bS = pcall(function() return (Unwrap(args[1])).bMiniGameSuccess end)
-            if okS then extra = extra .. " bMiniGameSuccess=" .. SafeText(bS) end
+        if d.label == "ЗАМОК: OnMiniGameComplete" then
+            S.stats.completes = S.stats.completes + 1
+            if IsValidObj(args[1]) then
+                completedNames[ObjName(args[1])] = true
+                local okS, bS = pcall(function() return (Unwrap(args[1])).bMiniGameSuccess end)
+                if okS then extra = extra .. " bMiniGameSuccess=" .. SafeText(bS) end
+            end
         end
         Logf("[hook] %s | self=%s%s", d.label, ObjName(context), extra)
     end)
@@ -560,8 +620,8 @@ local function PrintStatus()
     Logf("задержка: %d мс  (mgaw delay <мс>)", Config.DelayMs)
     Logf("игры: picking=%s gauge=%s onestroke=%s",
         tostring(Config.Games.picking), tostring(Config.Games.gauge), tostring(Config.Games.onestroke))
-    Logf("статистика: стартов мини-игр=%d, F-нажатий=%d, авто-побед=%d, RPC-успехов замечено=%d",
-        S.stats.minigames, S.stats.interacts, S.stats.autowins, S.stats.rpc)
+    Logf("статистика: стартов мини-игр=%d, F-нажатий=%d, авто-побед=%d, завершений=%d, RPC-успехов=%d",
+        S.stats.minigames, S.stats.interacts, S.stats.autowins, S.stats.completes, S.stats.rpc)
     if IsValidObj(S.lastParam) then
         Logf("последний параметр: %s (%.1f сек назад)",
             tostring(S.lastParamClass), (nowMs() - S.lastParamAt) / 1000)
@@ -615,7 +675,7 @@ local function ManualWin()
         handledNames[name] = true
         S.stats.autowins = S.stats.autowins + 1
         Logf(">>> РУЧНАЯ ПОБЕДА через %s", tostring(how))
-        if g then ScheduleCloseCheck(g) end
+        if g then SchedulePostWinClose(g, name) end
     end
 end
 
@@ -711,7 +771,7 @@ local function TryInit()
 end
 
 -- ------------------------------- старт -------------------------------
-Log("=== MinigameAutoWin v0.2 (тест) загружен ===")
+Log("=== MinigameAutoWin v0.3 (тест) загружен ===")
 Logf("режим: %s | задержка: %d мс | игры: picking/gauge/onestroke = %s/%s/%s",
     tostring(S.mode), Config.DelayMs,
     tostring(Config.Games.picking), tostring(Config.Games.gauge), tostring(Config.Games.onestroke))
