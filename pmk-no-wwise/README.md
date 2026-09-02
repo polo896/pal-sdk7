@@ -201,6 +201,38 @@ UE 5.1 всё равно требует тулчейн v143 (14.39) — движ
    `BP_PalLevelObject_LockGimmickPalFight`.
    ВАЖНО: если у файла есть вариант с суффиксом `_Common` — править нужно
    именно его (иначе игра возьмёт `_Common` и мод не сработает).
+
+### Точки перехвата (проверено по дампам 2026-09-02)
+
+Паки мини-игр ссылаются на виджеты и процессоры через CDO:
+
+| Пак | ProcessorClass | MiniGameWidgetClass |
+|---|---|---|
+| `BP_LevelGimmickMiniGamePack_OneStrokeBase` | `PalOneStrokeGameProcessor` — **нативный** (не перекрыть) | `WBP_OneStrokeGame_ForDisplay_C` |
+| `BP_LevelGimmickMiniGamePack_PickingBase` | `BP_PalPickingGameProcessor_C` (BP) | `WBP_PickingGame02_ForDisplay_C` |
+| `BP_LevelGimmickMiniGamePack_GaugeStop001` | (нативный, в дефолтах класса) | `WBP_SalvageGame_GaugeStopMiniGame_C` |
+
+→ для OneStroke единственная точка перехвата — **виджет**; для остальных тоже
+проще всего виджет. Замена = свой Widget Blueprint от нативного родителя,
+положенный в ките на ТОТ ЖЕ внутренний путь (пак-приоритет `_P` перекроет
+игровой). Родители виджетов (по CXX-дампу):
+
+- `WBP_OneStrokeGame_ForDisplay` → `UPalUserWidgetOverlayUI`
+  (путь с опечаткой игры: `Pal/Content/Pal/Blueprint/UI/OneStrorke/…`);
+- `WBP_PickingGame02_ForDisplay` → семейство `UPalUIPickingGame : UPalUserWidgetOverlayUI`
+  (`SetGameResult(bool)` — BlueprintImplementableEvent: её реализует виджет,
+  её ВЫЗЫВАЕТ нативный код — дёргать самому бесполезно);
+- `WBP_SalvageGame_GaugeStopMiniGame` → будет видно в ките.
+
+API для авто-скипа: `UPalNetworkPlayerComponent::RequestMiniGameSuccess_ToServer(Interactable)`
+— `UFUNCTION(BlueprintCallable, Reliable, Server)` — вызывается из BP, это и
+есть «сундук засчитал победу». В виджете-оригинале OneStroke есть свой
+`OnSuccessGame()` / `bSuccessed` / `OnTimerEvent_Close()` (функции ГРАФА, в
+замене их нет — путь к успеху собирается из нативного API, список подскажет
+автокомплит кита). Процессор OneStroke: `TryMoveTo/TryMoveDirection/
+SelectStartPosition/IsStuck/HasStarted` — BlueprintCallable (если захочется
+не заменять, а «дожимать» паззл из кода).
+
 2. В ките: правка графов (цепочка: `OnReceive*Success` → виджет сам
    закрывается → `Close: OnPreClose` → `OnGimmickCleared` →
    `RequestMiniGameSuccess_ToServer` → `OnMiniGameComplete(true)`; безопасный
