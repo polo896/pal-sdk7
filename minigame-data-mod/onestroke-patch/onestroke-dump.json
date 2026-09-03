@@ -1,0 +1,875 @@
+[
+  {
+    "Type": "PalOneStrokeGameDataAsset",
+    "Name": "DA_OneStrokeMinigameData",
+    "Class": "UScriptClass'PalOneStrokeGameDataAsset'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "GameSettings": [
+        {
+          "Key": "Easy_0",
+          "Value": {
+            "GridSize": 4,
+            "StartPosition": {
+              "X": 0,
+              "Y": 1
+            },
+            "GoalPosition": {
+              "X": 3,
+              "Y": 0
+            },
+            "ObstaclePositions": [
+              {
+                "X": 3,
+                "Y": 1
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Hard_0",
+          "Value": {
+            "GridSize": 6,
+            "StartPosition": {
+              "X": 5,
+              "Y": 5
+            },
+            "GoalPosition": {
+              "X": 5,
+              "Y": 0
+            },
+            "ObstaclePositions": [
+              {
+                "X": 5,
+                "Y": 1
+              },
+              {
+                "X": 1,
+                "Y": 2
+              },
+              {
+                "X": 1,
+                "Y": 3
+              },
+              {
+                "X": 4,
+                "Y": 5
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Normal_0",
+          "Value": {
+            "GridSize": 5,
+            "StartPosition": {
+              "X": 4,
+              "Y": 2
+            },
+            "GoalPosition": {
+              "X": 4,
+              "Y": 0
+            },
+            "ObstaclePositions": [
+              {
+                "X": 3,
+                "Y": 0
+              },
+              {
+                "X": 1,
+                "Y": 1
+              }
+            ]
+          }
+        },
+        {
+          "Key": "VeryEasy_0",
+          "Value": {
+            "GridSize": 3,
+            "StartPosition": {
+              "X": 1,
+              "Y": 1
+            },
+            "GoalPosition": {
+              "X": 0,
+              "Y": 2
+            },
+            "ObstaclePositions": []
+          }
+        },
+        {
+          "Key": "VeryHard_0",
+          "Value": {
+            "GridSize": 7,
+            "StartPosition": {
+              "X": 6,
+              "Y": 5
+            },
+            "GoalPosition": {
+              "X": 3,
+              "Y": 4
+            },
+            "ObstaclePositions": [
+              {
+                "X": 5,
+                "Y": 1
+              },
+              {
+                "X": 5,
+                "Y": 2
+              },
+              {
+                "X": 3,
+                "Y": 3
+              },
+              {
+                "X": 1,
+                "Y": 4
+              },
+              {
+                "X": 4,
+                "Y": 4
+              },
+              {
+                "X": 6,
+                "Y": 6
+              }
+            ]
+          }
+        },
+        {
+          "Key": "VeryHard_1",
+          "Value": {
+            "GridSize": 7,
+            "StartPosition": {
+              "X": 3,
+              "Y": 6
+            },
+            "GoalPosition": {
+              "X": 6,
+              "Y": 6
+            },
+            "ObstaclePositions": [
+              {
+                "X": 5,
+                "Y": 1
+              },
+              {
+                "X": 2,
+                "Y": 3
+              },
+              {
+                "X": 0,
+                "Y": 4
+              },
+              {
+                "X": 4,
+                "Y": 4
+              },
+              {
+                "X": 5,
+                "Y": 6
+              }
+            ]
+          }
+        },
+        {
+          "Key": "VeryHard_2",
+          "Value": {
+            "GridSize": 7,
+            "StartPosition": {
+              "X": 5,
+              "Y": 4
+            },
+            "GoalPosition": {
+              "X": 6,
+              "Y": 4
+            },
+            "ObstaclePositions": [
+              {
+                "X": 1,
+                "Y": 1
+              },
+              {
+                "X": 1,
+                "Y": 4
+              },
+              {
+                "X": 4,
+                "Y": 4
+              },
+              {
+                "X": 4,
+                "Y": 5
+              },
+              {
+                "X": 0,
+                "Y": 6
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Normal_1",
+          "Value": {
+            "GridSize": 5,
+            "StartPosition": {
+              "X": 3,
+              "Y": 3
+            },
+            "GoalPosition": {
+              "X": 3,
+              "Y": 0
+            },
+            "ObstaclePositions": [
+              {
+                "X": 1,
+                "Y": 1
+              },
+              {
+                "X": 1,
+                "Y": 2
+              },
+              {
+                "X": 2,
+                "Y": 4
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Normal_2",
+          "Value": {
+            "GridSize": 5,
+            "StartPosition": {
+              "X": 0,
+              "Y": 0
+            },
+            "GoalPosition": {
+              "X": 4,
+              "Y": 3
+            },
+            "ObstaclePositions": [
+              {
+                "X": 3,
+                "Y": 1
+              },
+              {
+                "X": 2,
+                "Y": 3
+              },
+              {
+                "X": 3,
+                "Y": 3
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Normal_3",
+          "Value": {
+            "GridSize": 5,
+            "StartPosition": {
+              "X": 3,
+              "Y": 1
+            },
+            "GoalPosition": {
+              "X": 1,
+              "Y": 0
+            },
+            "ObstaclePositions": [
+              {
+                "X": 0,
+                "Y": 0
+              },
+              {
+                "X": 2,
+                "Y": 0
+              },
+              {
+                "X": 2,
+                "Y": 1
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Normal_4",
+          "Value": {
+            "GridSize": 5,
+            "StartPosition": {
+              "X": 4,
+              "Y": 0
+            },
+            "GoalPosition": {
+              "X": 1,
+              "Y": 4
+            },
+            "ObstaclePositions": [
+              {
+                "X": 3,
+                "Y": 2
+              },
+              {
+                "X": 1,
+                "Y": 3
+              },
+              {
+                "X": 2,
+                "Y": 4
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Normal_5",
+          "Value": {
+            "GridSize": 5,
+            "StartPosition": {
+              "X": 2,
+              "Y": 0
+            },
+            "GoalPosition": {
+              "X": 3,
+              "Y": 4
+            },
+            "ObstaclePositions": [
+              {
+                "X": 4,
+                "Y": 3
+              },
+              {
+                "X": 2,
+                "Y": 4
+              },
+              {
+                "X": 4,
+                "Y": 4
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Normal_6",
+          "Value": {
+            "GridSize": 5,
+            "StartPosition": {
+              "X": 1,
+              "Y": 2
+            },
+            "GoalPosition": {
+              "X": 4,
+              "Y": 4
+            },
+            "ObstaclePositions": [
+              {
+                "X": 1,
+                "Y": 1
+              },
+              {
+                "X": 1,
+                "Y": 3
+              },
+              {
+                "X": 3,
+                "Y": 4
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Normal_7",
+          "Value": {
+            "GridSize": 5,
+            "StartPosition": {
+              "X": 0,
+              "Y": 0
+            },
+            "GoalPosition": {
+              "X": 3,
+              "Y": 0
+            },
+            "ObstaclePositions": [
+              {
+                "X": 2,
+                "Y": 0
+              },
+              {
+                "X": 4,
+                "Y": 0
+              },
+              {
+                "X": 0,
+                "Y": 1
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Normal_8",
+          "Value": {
+            "GridSize": 5,
+            "StartPosition": {
+              "X": 2,
+              "Y": 3
+            },
+            "GoalPosition": {
+              "X": 0,
+              "Y": 4
+            },
+            "ObstaclePositions": [
+              {
+                "X": 0,
+                "Y": 0
+              },
+              {
+                "X": 4,
+                "Y": 0
+              },
+              {
+                "X": 0,
+                "Y": 1
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Easy_1",
+          "Value": {
+            "GridSize": 4,
+            "StartPosition": {
+              "X": 0,
+              "Y": 0
+            },
+            "GoalPosition": {
+              "X": 1,
+              "Y": 3
+            },
+            "ObstaclePositions": [
+              {
+                "X": 0,
+                "Y": 1
+              },
+              {
+                "X": 1,
+                "Y": 1
+              },
+              {
+                "X": 2,
+                "Y": 1
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Easy_2",
+          "Value": {
+            "GridSize": 4,
+            "StartPosition": {
+              "X": 3,
+              "Y": 3
+            },
+            "GoalPosition": {
+              "X": 2,
+              "Y": 0
+            },
+            "ObstaclePositions": [
+              {
+                "X": 3,
+                "Y": 0
+              },
+              {
+                "X": 2,
+                "Y": 1
+              },
+              {
+                "X": 3,
+                "Y": 1
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Easy_3",
+          "Value": {
+            "GridSize": 4,
+            "StartPosition": {
+              "X": 0,
+              "Y": 0
+            },
+            "GoalPosition": {
+              "X": 2,
+              "Y": 0
+            },
+            "ObstaclePositions": [
+              {
+                "X": 1,
+                "Y": 0
+              },
+              {
+                "X": 3,
+                "Y": 0
+              },
+              {
+                "X": 3,
+                "Y": 1
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Easy_4",
+          "Value": {
+            "GridSize": 4,
+            "StartPosition": {
+              "X": 3,
+              "Y": 1
+            },
+            "GoalPosition": {
+              "X": 3,
+              "Y": 3
+            },
+            "ObstaclePositions": [
+              {
+                "X": 0,
+                "Y": 0
+              },
+              {
+                "X": 2,
+                "Y": 1
+              },
+              {
+                "X": 2,
+                "Y": 3
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Easy_5",
+          "Value": {
+            "GridSize": 4,
+            "StartPosition": {
+              "X": 3,
+              "Y": 2
+            },
+            "GoalPosition": {
+              "X": 3,
+              "Y": 0
+            },
+            "ObstaclePositions": [
+              {
+                "X": 2,
+                "Y": 0
+              },
+              {
+                "X": 1,
+                "Y": 2
+              },
+              {
+                "X": 2,
+                "Y": 2
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Easy_6",
+          "Value": {
+            "GridSize": 4,
+            "StartPosition": {
+              "X": 0,
+              "Y": 3
+            },
+            "GoalPosition": {
+              "X": 3,
+              "Y": 2
+            },
+            "ObstaclePositions": [
+              {
+                "X": 0,
+                "Y": 0
+              },
+              {
+                "X": 2,
+                "Y": 3
+              },
+              {
+                "X": 3,
+                "Y": 3
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Easy_7",
+          "Value": {
+            "GridSize": 4,
+            "StartPosition": {
+              "X": 0,
+              "Y": 1
+            },
+            "GoalPosition": {
+              "X": 1,
+              "Y": 0
+            },
+            "ObstaclePositions": [
+              {
+                "X": 0,
+                "Y": 0
+              },
+              {
+                "X": 3,
+                "Y": 0
+              },
+              {
+                "X": 1,
+                "Y": 1
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Easy_8",
+          "Value": {
+            "GridSize": 4,
+            "StartPosition": {
+              "X": 0,
+              "Y": 0
+            },
+            "GoalPosition": {
+              "X": 3,
+              "Y": 3
+            },
+            "ObstaclePositions": [
+              {
+                "X": 1,
+                "Y": 0
+              },
+              {
+                "X": 1,
+                "Y": 1
+              },
+              {
+                "X": 2,
+                "Y": 3
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Easy_9",
+          "Value": {
+            "GridSize": 4,
+            "StartPosition": {
+              "X": 1,
+              "Y": 1
+            },
+            "GoalPosition": {
+              "X": 0,
+              "Y": 0
+            },
+            "ObstaclePositions": [
+              {
+                "X": 1,
+                "Y": 0
+              },
+              {
+                "X": 0,
+                "Y": 3
+              },
+              {
+                "X": 3,
+                "Y": 3
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Easy_10",
+          "Value": {
+            "GridSize": 4,
+            "StartPosition": {
+              "X": 0,
+              "Y": 0
+            },
+            "GoalPosition": {
+              "X": 0,
+              "Y": 2
+            },
+            "ObstaclePositions": [
+              {
+                "X": 0,
+                "Y": 1
+              },
+              {
+                "X": 1,
+                "Y": 2
+              },
+              {
+                "X": 2,
+                "Y": 2
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Easy_11",
+          "Value": {
+            "GridSize": 4,
+            "StartPosition": {
+              "X": 2,
+              "Y": 2
+            },
+            "GoalPosition": {
+              "X": 3,
+              "Y": 3
+            },
+            "ObstaclePositions": [
+              {
+                "X": 0,
+                "Y": 2
+              },
+              {
+                "X": 3,
+                "Y": 2
+              },
+              {
+                "X": 0,
+                "Y": 3
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Easy_12",
+          "Value": {
+            "GridSize": 4,
+            "StartPosition": {
+              "X": 1,
+              "Y": 0
+            },
+            "GoalPosition": {
+              "X": 3,
+              "Y": 0
+            },
+            "ObstaclePositions": [
+              {
+                "X": 2,
+                "Y": 0
+              },
+              {
+                "X": 1,
+                "Y": 1
+              },
+              {
+                "X": 1,
+                "Y": 2
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Easy_13",
+          "Value": {
+            "GridSize": 4,
+            "StartPosition": {
+              "X": 3,
+              "Y": 3
+            },
+            "GoalPosition": {
+              "X": 3,
+              "Y": 1
+            },
+            "ObstaclePositions": [
+              {
+                "X": 1,
+                "Y": 1
+              },
+              {
+                "X": 2,
+                "Y": 1
+              },
+              {
+                "X": 3,
+                "Y": 2
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Easy_14",
+          "Value": {
+            "GridSize": 4,
+            "StartPosition": {
+              "X": 0,
+              "Y": 0
+            },
+            "GoalPosition": {
+              "X": 2,
+              "Y": 0
+            },
+            "ObstaclePositions": [
+              {
+                "X": 1,
+                "Y": 0
+              },
+              {
+                "X": 3,
+                "Y": 0
+              },
+              {
+                "X": 2,
+                "Y": 2
+              }
+            ]
+          }
+        },
+        {
+          "Key": "Easy_15",
+          "Value": {
+            "GridSize": 4,
+            "StartPosition": {
+              "X": 2,
+              "Y": 3
+            },
+            "GoalPosition": {
+              "X": 0,
+              "Y": 3
+            },
+            "ObstaclePositions": [
+              {
+                "X": 2,
+                "Y": 1
+              },
+              {
+                "X": 0,
+                "Y": 2
+              },
+              {
+                "X": 3,
+                "Y": 3
+              }
+            ]
+          }
+        }
+      ],
+      "EasyGenerateData": {
+        "GridSize": 4,
+        "ObstacleCount": 3
+      },
+      "NormalGenerateData": {
+        "GridSize": 5,
+        "ObstacleCount": 3
+      },
+      "HardGenerateData": {
+        "GridSize": 6,
+        "ObstacleCount": 4
+      },
+      "VeryHardGenerateData": {
+        "GridSize": 7,
+        "ObstacleCount": 5
+      }
+    }
+  }
+]
