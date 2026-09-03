@@ -3,7 +3,7 @@
 -- ============================================================================================
 -- ============================================================================================
 -- ============================================================================================
--- ExpeditionHubTest v0.10 — ТЕСТОВЫЙ мод (UE4SS Lua) для Palworld 0.4.11
+-- ExpeditionHubTest v0.11 — ТЕСТОВЫЙ мод (UE4SS Lua) для Palworld 0.4.11
 -- Менеджер экспедиций: панель на F6. ВСЕ станции со всех баз. Полный цикл из панели:
 -- выбор миссии → НАЗНАЧЕНИЕ ПАЛОВ ВРУЧНУЮ (Palbox, слоты 0..100) или АВТО → запуск → сбор.
 -- Игровой UI станции НЕ открываем вообще (v0.4/v0.5: ломает мышь + краш при перезаходе).
@@ -38,7 +38,10 @@
 --
 -- БОРЬБА С КРАШАМИ (pcall НЕ ловит нативные краши):
 --   1. НИ ОДНОЙ ссылки на UObject между действиями (S хранит только примитивы/таблицы);
---   2. одна перерисовка на клик, все объекты переищиваются заново;
+--   2. панель строится ОДИН раз (buildView), обновления ТОЛЬКО на месте
+--      (SetText/SetVisibility/цвет/перебинд обработчиков — refreshView);
+--      НИКАКОГО destroy/recreate виджетов между открытием и закрытием панели
+--      (полная пересборка на каждый клик = нативный краш 0x10, уроки v0.9/v0.10);
 --   3. UI-модели — ТОЛЬКО ЧТЕНИЕ; записи только через ServerInternal станции;
 --   4. НИКАКИХ прямых записей игровых полей и вызовов игровых сериализаторов (уроки v0.6/v0.7);
 --   5. хуки ServerInternal только ЛОГИРУЮТ (дамп байтов — и наши, и ванильные вызовы).
@@ -1657,7 +1660,12 @@ local function assembleModalFrame(panel, tree, frameWidth, frameHeight)
     return { shell = frameShell, surface = contentSurface }
 end
 
-local function createGameButton(hostCanvas, surface, tree, label, x, y, w, h, onClick, z)
+-- Постоянное представление: кнопки подписываются ОДИН раз, обработчик берётся
+-- из Handlers[key] в момент клика (перебинд без пересоздания виджетов)
+local Handlers = {}
+local View     = { built = false }
+
+local function createGameButton(hostCanvas, surface, tree, label, x, y, w, h, key, z)
     local btnCls    = resolveStaticObject(Assets.ButtonBlueprint)
     local widgetLib = resolveStaticObject("/Script/UMG.Default__WidgetBlueprintLibrary")
     if not btnCls or not widgetLib then return nil end
@@ -1677,133 +1685,244 @@ local function createGameButton(hostCanvas, surface, tree, label, x, y, w, h, on
     local target = btn
     local okIn, inner = pcall(function() return btn.WBP_PalInvisibleButton end)
     if okIn and IsValidObj(inner) then target = inner end
-    ClickDispatcher.Subscribe(target, onClick)
+    ClickDispatcher.Subscribe(target, function()
+        local fn = Handlers[key]
+        if type(fn) == "function" then SafeDo("btn:" .. tostring(key), fn) end
+    end)
 
     return btn
 end
 
--- ------------------------------- отрисовка ----------------------------------
--- RequestRender: троттлинг отрисовки — не чаще раза в 250 мс, лишние запросы
--- сливаются в один отложенный рендер (анти-фликер и анти-краш при быстрых кликах:
--- полное уничтожение/пересоздание виджетов на каждый клик = нативный краш)
-local RequestRender
+-- ------------------------------- view (in-place) ----------------------------------
+-- УРОК v0.9/v0.10: полное уничтожение и пересоздание виджетов на каждый клик
+-- = нативный краш 0x10 (клик попадает в уничтожаемый виджет; анимации кнопок
+-- ссылаются на мёртвые объекты). Новая схема: панель строится ОДИН раз
+-- (buildView), любое обновление — ТОЛЬКО SetText / SetVisibility / смена цвета
+-- / перебинд обработчика (refreshView). Никакого ClearChildren/destroy между
+-- открытием и закрытием панели.
 
-local function renderAllContent()
-    if not IsValidObj(State.activeSurface) or not IsValidObj(State.widgetTree) then return end
+local function setTextW(w, s)
+    if w ~= nil and IsValidObj(w) then
+        pcall(function() w:SetText(FText(s == nil and "" or tostring(s))) end)
+    end
+end
 
+local function setVisW(w, visible)
+    if w ~= nil and IsValidObj(w) then
+        pcall(function() w:SetVisibility(visible and 0 or 1) end)
+    end
+end
+
+-- смена цвета текста на месте (FSlateColor.SpecifiedColor; цвета Theme линейные)
+local function tintTextW(w, colorTuple)
+    if w ~= nil and IsValidObj(w) and colorTuple then
+        pcall(function()
+            local c = w.ColorAndOpacity
+            c.SpecifiedColor.R = colorTuple[1]
+            c.SpecifiedColor.G = colorTuple[2]
+            c.SpecifiedColor.B = colorTuple[3]
+            w.ColorAndOpacity = c
+        end)
+    end
+end
+
+local MODE_TITLE = {
+    missions = "MODE: MISSIONS ⟳",
+    palbox   = "MODE: PALBOX ⟳",
+    assigned = "MODE: ASSIGNED ⟳",
+}
+local EMPTY_HINTS = {
+    missions = "List is empty. Click 'MODE: MISSIONS ⟳' to load available expeditions with element and power requirements. SELECT → PALBOX → add pals → START. Weak pals = 0% reward!",
+    palbox   = "Click 'MODE: PALBOX ⟳' to load your Palbox (Palbox only: party and base workers are not eligible), sorted by power.",
+    assigned = "No pals assigned. Select a mission, then add pals from PALBOX or use AUTO PALS.",
+}
+
+-- ================================ ПОСТРОЕНИЕ (один раз на открытие) ==================
+local refreshView  -- назначается ниже (обработчики берут её как upvalue)
+
+local function buildView()
     local surface    = State.activeSurface
     local tree       = State.widgetTree
     local hostCanvas = State.hostCanvas
-    local contentW   = UI_W - PAD * 2
+    if not IsValidObj(surface) or not IsValidObj(tree) or not IsValidObj(hostCanvas) then return end
 
-    pcall(function() surface:ClearChildren() end)
-    ClickDispatcher.Reset()
+    local contentW = UI_W - PAD * 2
+    View = { built = false, rows = {}, det = {}, logLines = {}, pages = 1, logFit = 10 }
 
-    local blurCls = resolveStaticObject("/Script/UMG.BackgroundBlur")
-    if blurCls then
-        local blur = StaticConstructObject(blurCls, tree)
-        if IsValidObj(blur) then
-            pcall(function() blur:SetBlurStrength(6.0) end)
-            Factory.AnchorWidget(surface, blur, 0, 0, UI_W, UI_H, 0)
-        end
+    local function mkText(txt, size, color, bold, x, y, w, h)
+        local t = Factory.CreateText(tree, txt, size, color, bold, 0)
+        if t then Factory.AnchorWidget(surface, t, x, y, w, h, 7) end
+        return t
     end
-    local base = Factory.CreateSolidBorder(tree, Theme.PanelBase)
-    if base then Factory.AnchorWidget(surface, base, 0, 0, UI_W, UI_H, 1) end
-
-    -- ===== header (16..62) =====
-    local headerH = 46
-    local headerBg = Factory.CreateSolidBorder(tree, Theme.PanelHeader)
-    if headerBg then Factory.AnchorWidget(surface, headerBg, PAD, PAD, contentW, headerH, 5) end
-    Factory.DrawFrame(surface, tree, PAD, PAD, contentW, headerH, Theme.BorderDefault)
-    local goldLine = Factory.CreateSolidBorder(tree, Theme.Gold)
-    if goldLine then Factory.AnchorWidget(surface, goldLine, PAD, PAD + headerH - 2, contentW, 2, 6) end
-    local title = Factory.CreateText(tree, "EXPEDITION HUB", 16, Theme.TextPrimary, true, 0)
-    if title then Factory.AnchorWidget(surface, title, PAD + 16, PAD + 12, 380, 24, 7) end
-    local _, stationTotal = SelectedStation()
-    local sub = Factory.CreateText(tree, string.format("stations: %d", stationTotal), 12, Theme.TextSecond, false, 2)
-    if sub then Factory.AnchorWidget(surface, sub, PAD + contentW - 320, PAD + 15, 200, 16, 7) end
-    createGameButton(hostCanvas, surface, tree, "REFRESH", PAD + contentW - 110, PAD + 7, 94, 32, function()
-        if S.mode == "palbox" then
-            SafeDo("reload palbox", DoLoadPalbox)
-        end
-        RequestRender()
-    end, 60)
-
-    -- ===== селектор станции (70..124) =====
-    local selY, selH = 70, 54
-    local selBg = Factory.CreateSolidBorder(tree, Theme.PanelSection)
-    if selBg then Factory.AnchorWidget(surface, selBg, PAD, selY, contentW, selH, 5) end
-    Factory.DrawFrame(surface, tree, PAD, selY, contentW, selH, Theme.Divider)
-
-    createGameButton(hostCanvas, surface, tree, "<< PREV", PAD + 16, selY + 10, 110, 34, function()
-        local _, total = SelectedStation()
-        if total > 0 then
-            S.sel = (S.sel - 2) % total + 1
-        end
-        RequestRender()
-    end, 60)
-    local selText = Factory.CreateText(tree,
-        string.format("STATION  %d / %d", (stationTotal > 0 and S.sel) or 0, stationTotal), 13, Theme.Gold, true, 1)
-    if selText then Factory.AnchorWidget(surface, selText, PAD + 140, selY + 15, 240, 20, 7) end
-    createGameButton(hostCanvas, surface, tree, "NEXT >>", PAD + contentW - 126, selY + 10, 110, 34, function()
-        local _, total = SelectedStation()
-        if total > 0 then
-            S.sel = S.sel % total + 1
-        end
-        RequestRender()
-    end, 60)
-
-    -- ===== детали станции (132..220) =====
-    local detY, detH = 132, 88
-    local detBg = Factory.CreateSolidBorder(tree, Theme.PanelSection)
-    if detBg then Factory.AnchorWidget(surface, detBg, PAD, detY, contentW, detH, 5) end
-    Factory.DrawFrame(surface, tree, PAD, detY, contentW, detH, Theme.Divider)
-    local curMissionId
-    do
-        local stC = SelectedStation()
-        if stC then curMissionId = Str(ReadField(stC, "TargetMissionId")) end
+    local function mkBtn(label, key, x, y, w, h)
+        return createGameButton(hostCanvas, surface, tree, label, x, y, w, h, key, 60)
     end
-    local detLines = StationDetailLines()
-    for i, lineTxt in ipairs(detLines) do
-        local t = Factory.CreateText(tree, lineTxt, 11, Theme.TextPrimary, false, 0)
-        if t then Factory.AnchorWidget(surface, t, PAD + 16, detY + 8 + (i - 1) * 18, contentW - 32, 17, 7) end
+    local function mkBg(color, x, y, w, h, z)
+        local b = Factory.CreateSolidBorder(tree, color)
+        if b then Factory.AnchorWidget(surface, b, x, y, w, h, z) end
+        return b
     end
 
-    -- ===== 4 кнопки одной строкой (232..278) =====
-    local btnY = 232
+    -- ===== header (16..62) ===== (фон/блюр уже созданы в assembleModalFrame)
+    mkBg(Theme.PanelHeader, PAD, PAD, contentW, 46, 5)
+    Factory.DrawFrame(surface, tree, PAD, PAD, contentW, 46, Theme.BorderDefault)
+    mkBg(Theme.Gold, PAD, PAD + 44, contentW, 2, 6)
+    mkText("EXPEDITION HUB", 16, Theme.TextPrimary, true, PAD + 16, PAD + 12, 380, 24)
+    View.sub = mkText("", 12, Theme.TextSecond, false, PAD + contentW - 320, PAD + 15, 200, 16)
+    mkBtn("REFRESH", "refresh", PAD + contentW - 110, PAD + 7, 94, 32)
+
+    -- ===== станция (70..124) =====
+    mkBg(Theme.PanelSection, PAD, 70, contentW, 54, 5)
+    Factory.DrawFrame(surface, tree, PAD, 70, contentW, 54, Theme.Divider)
+    mkBtn("<< PREV", "prev", PAD + 16, 80, 110, 34)
+    View.selText = mkText("", 13, Theme.Gold, true, PAD + 140, 85, 240, 20)
+    mkBtn("NEXT >>", "next", PAD + contentW - 126, 80, 110, 34)
+
+    -- ===== детали (132..220) =====
+    mkBg(Theme.PanelSection, PAD, 132, contentW, 88, 5)
+    Factory.DrawFrame(surface, tree, PAD, 132, contentW, 88, Theme.Divider)
+    for i = 1, 5 do
+        View.det[i] = mkText("", 11, Theme.TextPrimary, false, PAD + 16, 140 + (i - 1) * 18, contentW - 32, 17)
+    end
+
+    -- ===== 4 кнопки (232..278) =====
     local bigW = (contentW - 32 - 3 * 10) / 4
-    local bigH = 46
-    local bigBtns = {
-        { "AUTO PALS", DoAutoFill },
-        { "START", DoLaunchRepeat },
-        { "COLLECT", DoCollect },
-        { "COLLECT ALL", DoCollectAll },
+    local defs = {
+        { "AUTO PALS", "auto" }, { "START", "start" },
+        { "COLLECT", "collect" }, { "COLLECT ALL", "collectall" },
     }
-    for i, def in ipairs(bigBtns) do
-        local label, fn = def[1], def[2]
-        createGameButton(hostCanvas, surface, tree, label,
-            PAD + 16 + (i - 1) * (bigW + 10), btnY, bigW, bigH, function()
-                SafeDo("btn:" .. tostring(label), fn)
-                -- без мгновенной перерисовки: действие само обновит панель
-                -- после серверной проверки (анти-фликер/анти-краш)
-            end, 60)
+    for i, d in ipairs(defs) do
+        mkBtn(d[1], d[2], PAD + 16 + (i - 1) * (bigW + 10), 232, bigW, 46)
     end
 
-    -- ===== блок списка (290..556): МИССИИ / PALBOX / НАЗНАЧЕНЫ =====
-    local misY, misH = 290, 266
-    local misBg = Factory.CreateSolidBorder(tree, Theme.PanelSection)
-    if misBg then Factory.AnchorWidget(surface, misBg, PAD, misY, contentW, misH, 5) end
-    Factory.DrawFrame(surface, tree, PAD, misY, contentW, misH, Theme.Divider)
+    -- ===== блок списка (290..556) =====
+    local misY = 290
+    mkBg(Theme.PanelSection, PAD, misY, contentW, 266, 5)
+    Factory.DrawFrame(surface, tree, PAD, misY, contentW, 266, Theme.Divider)
+    mkBtn("<", "modePrev", PAD + 16, misY + 3, 34, 22)
+    View.modeTitle = mkBtn("MODE: MISSIONS ⟳", "modeTitle", PAD + 58, misY + 3, 320, 22)
+    mkBtn(">", "modeNext", PAD + 386, misY + 3, 34, 22)
+    View.pageHint = mkText("", 10, Theme.TextSecond, false, PAD + 440, misY + 8, 200, 14)
+    for r = 1, 6 do
+        local cy = misY + 30 + (r - 1) * 33
+        local row = {}
+        row.bgHi = mkBg(Theme.Gold,       PAD + 14, cy, contentW - 28, 30, 6)
+        row.bgNo = mkBg(Theme.CardActive, PAD + 14, cy, contentW - 28, 30, 6)
+        row.txt  = mkText("", 10, Theme.TextSecond, false, PAD + 24, cy + 8, 700, 15)
+        row.btn  = mkBtn("", "row" .. r, PAD + contentW - 130, cy + 2, 112, 26)
+        View.rows[r] = row
+    end
+    View.hint = mkText("", 10, Theme.TextDim, false, PAD + 16, misY + 48, contentW - 32, 80)
+    local botY = misY + 234
+    View.removeall = mkBtn("REMOVE ALL", "removeall", PAD + 16, botY, 150, 26)
+    View.cancel    = mkBtn("CANCEL EXPEDITION", "cancel", PAD + 16, botY, 220, 26)
+    View.reload    = mkBtn("RELOAD LIST", "reload", PAD + 16, botY, 190, 26)
+    mkBtn("< PAGE", "pagePrev", PAD + contentW - 350, botY, 105, 26)
+    mkBtn("PAGE >", "pageNext", PAD + contentW - 235, botY, 105, 26)
 
-    local MODE_TITLE = {
-        missions = "MODE: MISSIONS ⟳",
-        palbox   = "MODE: PALBOX ⟳",
-        assigned = "MODE: ASSIGNED ⟳",
-    }
+    -- ===== лог (566..744) =====
+    mkBg(Theme.PanelSection, PAD, 566, contentW, 178, 5)
+    Factory.DrawFrame(surface, tree, PAD, 566, contentW, 178, Theme.Divider)
+    mkText("LOG:", 10, Theme.TextDim, true, PAD + 16, 571, 300, 13)
+    View.logFit = math.floor((178 - 26) / 15)
+    for k = 1, View.logFit do
+        View.logLines[k] = mkText("", 10, Theme.TextSecond, false, PAD + 16, 588 + (k - 1) * 15, contentW - 32, 14)
+    end
+
+    -- ===== футер =====
+    local footerY = UI_H - PAD - 32
+    mkBg(Theme.Divider, PAD, footerY - 4, contentW, 1, 6)
+    mkText(string.format("%s or ESC — close panel", Config.OpenKey), 10, Theme.TextDim, false, PAD + 10, footerY + 8, 400, 16)
+    mkBtn("CLOSE [ESC]", "close", PAD + contentW - 166, footerY - 2, 150, 30)
+
+    -- ===== статические обработчики (назначаются один раз) =====
+    Handlers["refresh"] = function()
+        if S.mode == "palbox" then SafeDo("reload palbox", DoLoadPalbox) end
+        refreshView()
+    end
+    Handlers["prev"] = function()
+        local _, total = SelectedStation()
+        if total > 0 then S.sel = (S.sel - 2) % total + 1 end
+        refreshView()
+    end
+    Handlers["next"] = function()
+        local _, total = SelectedStation()
+        if total > 0 then S.sel = S.sel % total + 1 end
+        refreshView()
+    end
+    Handlers["modePrev"] = function()
+        local order = { "missions", "palbox", "assigned" }
+        local idx = 1
+        for i, m in ipairs(order) do if m == S.mode then idx = i; break end end
+        S.mode = order[(idx - 2) % 3 + 1]
+        S.listPage = 1
+        if S.mode == "palbox" then SafeDo("load palbox", DoLoadPalbox)
+        elseif S.mode == "missions" and S.missions == nil then SafeDo("load missions", DoLoadMissions) end
+        refreshView()
+    end
+    Handlers["modeNext"] = function()
+        local order = { "missions", "palbox", "assigned" }
+        local idx = 1
+        for i, m in ipairs(order) do if m == S.mode then idx = i; break end end
+        S.mode = order[idx % 3 + 1]
+        S.listPage = 1
+        if S.mode == "palbox" then SafeDo("load palbox", DoLoadPalbox)
+        elseif S.mode == "missions" and S.missions == nil then SafeDo("load missions", DoLoadMissions) end
+        refreshView()
+    end
+    Handlers["modeTitle"] = function()
+        if S.mode == "missions" then SafeDo("refresh missions", DoLoadMissions)
+        elseif S.mode == "palbox" then SafeDo("refresh palbox", DoLoadPalbox) end
+        refreshView()
+    end
+    Handlers["auto"]       = DoAutoFill
+    Handlers["start"]      = DoLaunchRepeat
+    Handlers["collect"]    = DoCollect
+    Handlers["collectall"] = DoCollectAll
+    Handlers["removeall"]  = DoUnselectAllPals
+    Handlers["cancel"]     = DoCancelMission
+    Handlers["reload"] = function()
+        SafeDo("reload palbox", DoLoadPalbox)
+        refreshView()
+    end
+    Handlers["pagePrev"] = function()
+        S.listPage = S.listPage - 1
+        if S.listPage < 1 then S.listPage = View.pages or 1 end
+        refreshView()
+    end
+    Handlers["pageNext"] = function()
+        S.listPage = S.listPage + 1
+        if S.listPage > (View.pages or 1) then S.listPage = 1 end
+        refreshView()
+    end
+    Handlers["close"] = function() Presenter_Close() end
+
+    View.built = true
+end
+
+-- ================================ ОБНОВЛЕНИЕ (только на месте) ======================
+refreshView = function()
+    if not View.built or not IsValidObj(State.activeSurface) then return end
+
+    local st, total = SelectedStation()
+
+    -- шапка / станция
+    setTextW(View.sub, string.format("stations: %d", total))
+    setTextW(View.selText, string.format("STATION  %d / %d", (total > 0 and S.sel) or 0, total))
+
+    -- детали станции
+    local lines = StationDetailLines()
+    for i = 1, #View.det do
+        local w = View.det[i]
+        if lines[i] then setTextW(w, lines[i]); setVisW(w, true)
+        else setVisW(w, false) end
+    end
+
+    -- данные списка
+    local curMissionId
+    if st then curMissionId = Str(ReadField(st, "TargetMissionId")) end
     local assignedItems = nil
-    if S.mode == "assigned" then
-        assignedItems = AssignedItemsOf(SelectedStation())
-    end
+    if S.mode == "assigned" then assignedItems = AssignedItemsOf(st) end
     local items = (S.mode == "missions" and S.missions)
         or (S.mode == "palbox" and S.palbox)
         or assignedItems
@@ -1812,178 +1931,111 @@ local function renderAllContent()
     local pages = math.max(1, math.ceil(#items / rowsPerPage))
     if S.listPage > pages then S.listPage = pages end
     if S.listPage < 1 then S.listPage = 1 end
+    View.pages = pages
+    setTextW(View.modeTitle, MODE_TITLE[S.mode] or "?")
+    setTextW(View.pageHint, string.format("page %d/%d · total %d", S.listPage, pages, #items))
 
-    -- шапка блока: [<] [РЕЖИМ ⟳] [>]
-    createGameButton(hostCanvas, surface, tree, "<", PAD + 16, misY + 3, 34, 22, function()
-        local order = { "missions", "palbox", "assigned" }
-        local idx = 1
-        for i, m in ipairs(order) do if m == S.mode then idx = i; break end end
-        S.mode = order[(idx - 2) % 3 + 1]
-        S.listPage = 1
-        if S.mode == "palbox" then SafeDo("load palbox", DoLoadPalbox)
-        elseif S.mode == "missions" and S.missions == nil then SafeDo("load missions", DoLoadMissions) end
-        RequestRender()
-    end, 60)
-    createGameButton(hostCanvas, surface, tree, MODE_TITLE[S.mode] or "?", PAD + 58, misY + 3, 320, 22, function()
-        -- клик по текущему режиму = обновить список этого режима
-        if S.mode == "missions" then
-            SafeDo("refresh missions", DoLoadMissions)
-        elseif S.mode == "palbox" then
-            SafeDo("refresh palbox", DoLoadPalbox)
-        end
-        RequestRender()
-    end, 60)
-    createGameButton(hostCanvas, surface, tree, ">", PAD + 386, misY + 3, 34, 22, function()
-        local order = { "missions", "palbox", "assigned" }
-        local idx = 1
-        for i, m in ipairs(order) do if m == S.mode then idx = i; break end end
-        S.mode = order[idx % 3 + 1]
-        S.listPage = 1
-        if S.mode == "palbox" then SafeDo("load palbox", DoLoadPalbox)
-        elseif S.mode == "missions" and S.missions == nil then SafeDo("load missions", DoLoadMissions) end
-        RequestRender()
-    end, 60)
-    local listHint = Factory.CreateText(tree,
-        string.format("page %d/%d · total %d", S.listPage, pages, #items), 10, Theme.TextSecond, false, 0)
-    if listHint then Factory.AnchorWidget(surface, listHint, PAD + 440, misY + 8, 200, 14, 7) end
-
-    -- строки списка (6 на страницу)
+    -- строки списка
     local first = (S.listPage - 1) * rowsPerPage + 1
     for r = 1, rowsPerPage do
+        local row = View.rows[r]
         local i = first + r - 1
         local it = items[i]
-        local cy = misY + 30 + (r - 1) * 33
-        if S.mode == "missions" and it then
-            local cur = (it.id == curMissionId)
-            local rowBg = Factory.CreateSolidBorder(tree, cur and Theme.Gold or Theme.CardActive)
-            if rowBg then Factory.AnchorWidget(surface, rowBg, PAD + 14, cy, contentW - 28, 30, 6) end
-            local t = Factory.CreateText(tree, string.format("%d. %s", i, it.text), 10,
-                cur and Theme.TextPrimary or Theme.TextSecond, false, 0)
-            if t then Factory.AnchorWidget(surface, t, PAD + 24, cy + 8, 700, 15, 7) end
-            createGameButton(hostCanvas, surface, tree, cur and "SELECTED" or "SELECT",
-                PAD + contentW - 130, cy + 2, 112, 26, function()
-                    SafeDo("select mission", function() DoSelectMission(it.id) end)
-                end, 60)
-        elseif S.mode == "palbox" and it then
-            local rowBg = Factory.CreateSolidBorder(tree, it.busy and Theme.Divider or Theme.CardActive)
-            if rowBg then Factory.AnchorWidget(surface, rowBg, PAD + 14, cy, contentW - 28, 30, 6) end
-            local lvl = it.level and ("Lv" .. it.level) or "Lv?"
-            local rk = (it.rank and it.rank > 0) and (" ★" .. it.rank) or ""
-            local strn = it.strength and tostring(it.strength) or "?"
-            local mark = it.busy and "  [on expedition]" or (it.excluded and "  [excluded]" or "")
-            local t = Factory.CreateText(tree,
-                string.format("%d. %s %s%s | power %s%s", i, it.name, lvl, rk, strn, mark), 10,
-                it.busy and Theme.TextDim or Theme.TextSecond, false, 0)
-            if t then Factory.AnchorWidget(surface, t, PAD + 24, cy + 8, 700, 15, 7) end
-            createGameButton(hostCanvas, surface, tree, it.busy and "BUSY" or "+ ADD",
-                PAD + contentW - 130, cy + 2, 112, 26, function()
-                    SafeDo("add pal", function() DoAddPal(it.key) end)
-                end, 60)
-        elseif S.mode == "assigned" and it then
-            local rowBg = Factory.CreateSolidBorder(tree, Theme.CardActive)
-            if rowBg then Factory.AnchorWidget(surface, rowBg, PAD + 14, cy, contentW - 28, 30, 6) end
-            local lvl = it.level and ("Lv" .. it.level) or ""
-            local strn = it.strength and tostring(it.strength) or "?"
-            local t = Factory.CreateText(tree,
-                string.format("%d. %s %s | power %s", i, it.name, lvl, strn), 10, Theme.TextSecond, false, 0)
-            if t then Factory.AnchorWidget(surface, t, PAD + 24, cy + 8, 700, 15, 7) end
-            createGameButton(hostCanvas, surface, tree, "− REMOVE",
-                PAD + contentW - 130, cy + 2, 112, 26, function()
-                    SafeDo("remove pal", function() DoRemovePal(it.key) end)
-                end, 60)
-        end
-    end
-
-    -- подсказка для пустого списка
-    if #items == 0 then
-        local hints = {
-            missions = "List is empty. Click 'MODE: MISSIONS ⟳' to load available expeditions with element and power requirements. SELECT → PALBOX → add pals → START. Weak pals = 0% reward!",
-            palbox   = "Click 'MODE: PALBOX ⟳' to load your Palbox (Palbox only: party and base workers are not eligible), sorted by power.",
-            assigned = "No pals assigned. Select a mission, then add pals from PALBOX or use AUTO PALS.",
-        }
-        local hint = Factory.CreateText(tree, hints[S.mode] or "", 10, Theme.TextDim, false, 0)
-        if hint then Factory.AnchorWidget(surface, hint, PAD + 16, misY + 48, contentW - 32, 80, 7) end
-    end
-
-    -- нижняя строка блока: [СНЯТЬ ВСЕХ / ОБНОВИТЬ СПИСОК] … [paging]
-    local botY = misY + 234
-    if S.mode == "assigned" then
-        local stNow = SelectedStation()
-        local _, stState = GetState(stNow)
-        if stState == "InProgress" then
-            createGameButton(hostCanvas, surface, tree, "CANCEL EXPEDITION", PAD + 16, botY, 220, 26, function()
-                SafeDo("cancel mission", DoCancelMission)
-            end, 60)
+        if it then
+            local hi, dim, txt, btnTxt
+            if S.mode == "missions" then
+                hi = (it.id == curMissionId)
+                dim = false
+                txt = string.format("%d. %s", i, it.text)
+                btnTxt = hi and "SELECTED" or "SELECT"
+                Handlers["row" .. r] = function() DoSelectMission(it.id) end
+            elseif S.mode == "palbox" then
+                local lvl = it.level and ("Lv" .. it.level) or "Lv?"
+                local rk = (it.rank and it.rank > 0) and (" ★" .. it.rank) or ""
+                local strn = it.strength and tostring(it.strength) or "?"
+                local mark = it.busy and "  [on expedition]" or (it.excluded and "  [excluded]" or "")
+                hi = false
+                dim = it.busy
+                txt = string.format("%d. %s %s%s | power %s%s", i, it.name, lvl, rk, strn, mark)
+                btnTxt = it.busy and "BUSY" or "+ ADD"
+                Handlers["row" .. r] = function() DoAddPal(it.key) end
+            else
+                local lvl = it.level and ("Lv" .. it.level) or ""
+                local strn = it.strength and tostring(it.strength) or "?"
+                hi = false
+                dim = false
+                txt = string.format("%d. %s %s | power %s", i, it.name, lvl, strn)
+                btnTxt = "− REMOVE"
+                Handlers["row" .. r] = function() DoRemovePal(it.key) end
+            end
+            setVisW(row.bgHi, hi)
+            setVisW(row.bgNo, not hi)
+            setVisW(row.txt, true)
+            setVisW(row.btn, true)
+            setTextW(row.txt, txt)
+            tintTextW(row.txt, dim and Theme.TextDim or Theme.TextSecond)
+            setTextW(row.btn, btnTxt)
         else
-            createGameButton(hostCanvas, surface, tree, "REMOVE ALL", PAD + 16, botY, 150, 26, function()
-                SafeDo("unselect all", DoUnselectAllPals)
-            end, 60)
+            setVisW(row.bgHi, false)
+            setVisW(row.bgNo, false)
+            setVisW(row.txt, false)
+            setVisW(row.btn, false)
+            Handlers["row" .. r] = nil
         end
-    elseif S.mode == "palbox" then
-        createGameButton(hostCanvas, surface, tree, "RELOAD LIST", PAD + 16, botY, 190, 26, function()
-            SafeDo("reload palbox", DoLoadPalbox)
-            RequestRender()
-        end, 60)
-    end
-    createGameButton(hostCanvas, surface, tree, "< PAGE", PAD + contentW - 350, botY, 105, 26, function()
-        S.listPage = S.listPage - 1
-        if S.listPage < 1 then S.listPage = pages end
-        RequestRender()
-    end, 60)
-    createGameButton(hostCanvas, surface, tree, "PAGE >", PAD + contentW - 235, botY, 105, 26, function()
-        S.listPage = S.listPage + 1
-        if S.listPage > pages then S.listPage = 1 end
-        RequestRender()
-    end, 60)
-
-
-    -- ===== лог (566..744) =====
-    local logY, logH = 566, 178
-    local logBg = Factory.CreateSolidBorder(tree, Theme.PanelSection)
-    if logBg then Factory.AnchorWidget(surface, logBg, PAD, logY, contentW, logH, 5) end
-    Factory.DrawFrame(surface, tree, PAD, logY, contentW, logH, Theme.Divider)
-    local logTitle = Factory.CreateText(tree, "LOG:", 10, Theme.TextDim, true, 0)
-    if logTitle then Factory.AnchorWidget(surface, logTitle, PAD + 16, logY + 5, 300, 13, 7) end
-    local fitLines = math.floor((logH - 26) / 15)  -- сколько строк реально влезает в бокс
-    local startIdx = math.max(1, #S.logLines - math.min(Config.LogLines, fitLines) + 1)
-    local shown = 0
-    for i = startIdx, #S.logLines do
-        shown = shown + 1
-        local lineTxt = S.logLines[i]
-        local color = Theme.TextSecond
-        if lineTxt:find("ERROR", 1, true) then color = Theme.Red
-        elseif lineTxt:find("InProgress", 1, true) or lineTxt:find("ok", 1, true) then color = Theme.Green end
-        local t = Factory.CreateText(tree, lineTxt, 10, color, false, 0)
-        if t then Factory.AnchorWidget(surface, t, PAD + 16, logY + 22 + (shown - 1) * 15, contentW - 32, 14, 7) end
     end
 
-    -- ===== футер (752..784) =====
-    local footerY = UI_H - PAD - 32
-    local footLine = Factory.CreateSolidBorder(tree, Theme.Divider)
-    if footLine then Factory.AnchorWidget(surface, footLine, PAD, footerY - 4, contentW, 1, 6) end
-    local escHint = Factory.CreateText(tree, string.format("%s or ESC — close panel", Config.OpenKey), 10, Theme.TextDim, false, 0)
-    if escHint then Factory.AnchorWidget(surface, escHint, PAD + 10, footerY + 8, 400, 16, 7) end
-    createGameButton(hostCanvas, surface, tree, "CLOSE [ESC]", PAD + contentW - 166, footerY - 2, 150, 30, function()
-        Presenter_Close()
-    end, 60)
+    -- подсказка пустого списка
+    if #items == 0 then
+        setTextW(View.hint, EMPTY_HINTS[S.mode] or "")
+        setVisW(View.hint, true)
+    else
+        setVisW(View.hint, false)
+    end
+
+    -- нижняя строка блока (режимные кнопки)
+    local _, stState = GetState(st)
+    setVisW(View.removeall, S.mode == "assigned" and stState ~= "InProgress")
+    setVisW(View.cancel, S.mode == "assigned" and stState == "InProgress")
+    setVisW(View.reload, S.mode == "palbox")
+
+    -- лог (последние влезающие строки)
+    local maxShow = View.logFit or 10
+    local startIdx = math.max(1, #S.logLines - maxShow + 1)
+    for k = 1, #View.logLines do
+        local lineTxt = S.logLines[startIdx + k - 1]
+        if lineTxt then
+            setTextW(View.logLines[k], lineTxt)
+            setVisW(View.logLines[k], true)
+            local color
+            if lineTxt:find("ERROR", 1, true) then color = Theme.Red
+            elseif lineTxt:find("InProgress", 1, true) or lineTxt:find("OK:", 1, true) then color = Theme.Green
+            else color = Theme.TextSecond end
+            tintTextW(View.logLines[k], color)
+        else
+            setVisW(View.logLines[k], false)
+        end
+    end
 end
 
-local lastRenderAt, renderPending = 0, false
+-- RequestRender: троттлинг обновлений (обновление на месте безопасно, но
+-- незачем молотить чаще 200 мс — например, при COLLECT ALL по многим станциям)
+local RequestRender
+local lastRefreshAt, refreshPending = 0, false
 RequestRender = function()
     if not State.isDisplayed then return end
     local now = os.clock() * 1000
-    if now - lastRenderAt >= 250 then
-        lastRenderAt = now
-        renderAllContent()
+    if now - lastRefreshAt >= 200 then
+        lastRefreshAt = now
+        refreshView()
         return
     end
-    if renderPending then return end
-    renderPending = true
-    DelayCall(270, function()
-        renderPending = false
+    if refreshPending then return end
+    refreshPending = true
+    DelayCall(220, function()
+        refreshPending = false
         if not State.isDisplayed then return end
-        lastRenderAt = os.clock() * 1000
-        renderAllContent()
+        lastRefreshAt = os.clock() * 1000
+        refreshView()
     end)
 end
 
@@ -2000,6 +2052,7 @@ function Presenter_Close()
     State.widgetTree    = nil
     State.hostCanvas    = nil
     State.isDisplayed   = false
+    View.built = false
     ClickDispatcher.Reset()
 end
 
@@ -2036,7 +2089,8 @@ local function Presenter_Show()
     State.hostCanvas    = hostCanvas
     State.isDisplayed   = true
 
-    renderAllContent()
+    buildView()
+    refreshView()
     Log("panel opened")
 end
 
@@ -2164,7 +2218,7 @@ local function init()
     end)
     registerWorldEnterHook()
     RegisterPassiveHooks()
-    Log("ExpeditionHub v0.10 ready: full English UI, render throttling (rapid-click crash fix), log box fit, time-left display.")
+    Log("ExpeditionHub v0.11 ready: in-place UI updates only — no widget destroy/recreate (0x10 crash fix).")
 end
 
 SafeDo(init)
