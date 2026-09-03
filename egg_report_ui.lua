@@ -89,6 +89,9 @@ PalUI.Theme = {
     Female        = hexToLinearColor("#FF8AC4", 1.00),
 
     PassiveSlotBg = hexToLinearColor("#11181C", 0.90),
+
+    StarOn  = hexToLinearColor("#FCD34D", 1.00),
+    StarOff = hexToLinearColor("#6A7480", 0.90),
 }
 
 PalUI.Assets = {
@@ -900,6 +903,7 @@ local ControllerState = {
     activeSurface= nil,
     widgetTree   = nil,
     isDisplayed  = false,
+    hostCanvas   = nil,
 
     all          = {},
     view         = {},
@@ -972,6 +976,7 @@ local function parsePalDataList(palList, ctx)
     for index, pal in ipairs(palList) do
         pal._order       = index
         pal._displayName = resolveDisplayName(pal, world, utility)
+        pal._isFavorite  = false
 
         pal._evaluatedPassives = {}
         pal._goldCount   = 0
@@ -1044,7 +1049,7 @@ local function parsePalDataList(palList, ctx)
     end
 end
 
-local function drawPalCard(scrollBox, tree, pal, cardW)
+local function drawPalCard(scrollBox, tree, pal, cardW, hostCanvas)
     local canvasCls = resolveStaticObject("/Script/UMG.CanvasPanel")
     if not canvasCls then return end
     local card = StaticConstructObject(canvasCls, tree)
@@ -1241,6 +1246,20 @@ local function drawPalCard(scrollBox, tree, pal, cardW)
         end
     end
 
+    if hostCanvas and pal.characterId then
+        local FAV_W, FAV_H = 24, 20
+        local favX = cardW - FAV_W - 12
+        local favY = 6
+        local favLabel = pal._isFavorite and "★" or ""
+        local favBtn = createGameButton(hostCanvas, card, tree, favLabel, favX, favY, FAV_W, FAV_H, function()
+            pal._isFavorite = not pal._isFavorite
+            rebuildList()
+        end, 30)
+        if favBtn then
+            applyFavButtonStyle(favBtn, pal._isFavorite)
+        end
+    end
+
     local wrap = PalUI.Factory.CreateContainerBox(tree, cardW, cardH + CARD_GAP, card)
     if wrap then pcall(function() scrollBox:AddChild(wrap) end) end
 end
@@ -1325,7 +1344,7 @@ local function rebuildList()
         drawNoticeCard(S.scroll, S.widgetTree, S.cardW, "No pals match this filter.")
     else
         for i = first, last do
-            drawPalCard(S.scroll, S.widgetTree, S.view[i], S.cardW)
+            drawPalCard(S.scroll, S.widgetTree, S.view[i], S.cardW, S.hostCanvas)
         end
     end
 
@@ -1373,6 +1392,44 @@ local function createGameButton(hostCanvas, surface, tree, label, x, y, w, h, on
     return btn
 end
 
+local function applyFavButtonStyle(btn, isFav)
+    pcall(function()
+        local bc = btn.ButtonColorAndOpacity
+        if bc then bc.SpecifiedColor.A = 0.0; btn.ButtonColorAndOpacity = bc end
+    end)
+    pcall(function()
+        local h = btn.HighlightColorAndOpacity
+        if h then h.SpecifiedColor.A = 0.0; btn.HighlightColorAndOpacity = h end
+    end)
+    pcall(function()
+        local p = btn.PressedColorAndOpacity
+        if p then p.SpecifiedColor.A = 0.0; btn.PressedColorAndOpacity = p end
+    end)
+    pcall(function()
+        local d = btn.DisabledColorAndOpacity
+        if d then d.SpecifiedColor.A = 0.0; btn.DisabledColorAndOpacity = d end
+    end)
+    pcall(function()
+        local hv = btn.HoveredColorAndOpacity
+        if hv then hv.SpecifiedColor.A = 0.0; btn.HoveredColorAndOpacity = hv end
+    end)
+    pcall(function()
+        local b = btn.BorderColorAndOpacity
+        if b then b.SpecifiedColor.A = 0.0; btn.BorderColorAndOpacity = b end
+    end)
+    pcall(function()
+        local fc = btn.ForegroundColorAndOpacity
+        if fc then
+            fc.SpecifiedColor.R = isFav and 1.0 or 0.35
+            fc.SpecifiedColor.G = isFav and 0.80 or 0.40
+            fc.SpecifiedColor.B = isFav and 0.20 or 0.45
+            fc.SpecifiedColor.A = 1.0
+            btn.ForegroundColorAndOpacity = fc
+        end
+    end)
+end
+
+
 function PalUI.Presenter.Show(palDataList, context)
     palDataList = palDataList or {}
     printLog("Opening hatch report for " .. #palDataList .. " pal(s)")
@@ -1389,6 +1446,7 @@ function PalUI.Presenter.Show(palDataList, context)
 
     local hostCanvas = PalUI.Engine.FindHostCanvas(layoutName, PalUI.Assets.HostPanelName)
     if not isObjectValid(hostCanvas) then printLog("Host canvas panel missing"); return end
+    S.hostCanvas = hostCanvas
 
     parsePalDataList(palDataList, context)
 
