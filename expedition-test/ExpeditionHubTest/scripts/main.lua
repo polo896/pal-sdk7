@@ -1,42 +1,43 @@
 -- ============================================================================================
 -- ============================================================================================
--- ExpeditionHubTest v0.6 — ТЕСТОВЫЙ мод (UE4SS Lua) для Palworld 0.4.11
+-- ============================================================================================
+-- ExpeditionHubTest v0.7 — ТЕСТОВЫЙ мод (UE4SS Lua) для Palworld 0.4.11
 -- Менеджер экспедиций: панель на F6. ВСЕ станции со всех баз. Полный цикл из панели:
 -- выбор миссии → НАЗНАЧЕНИЕ ПАЛОВ ВРУЧНУЮ (Palbox, слоты 0..100) или АВТО → запуск → сбор.
 -- Игровой UI станции НЕ открываем вообще (v0.4/v0.5: ломает мышь + краш при перезаходе).
 --
--- ЧТО УЗНАЛИ ПО SDK ДЛЯ v0.6:
---   • ванильный флоу: список миссий → выбор → окно палов 0..100 (у миссии есть требование
---     стихии ×N, рекомендуемая сила и макс. число палов; % награды = сила команды ÷
---     рекомендуемая сила; слабые палы = 0% награды); палы ТОЛЬКО из Palbox;
---   • краш v0.5 на клике миссии = RequestSelectMission на живой HUD-модели требует
---     контекст открытого окна станции. Правило v0.6: UI-модели — ТОЛЬКО ЧТЕНИЕ;
+-- УРОКИ ЖИВОГО ТЕСТА v0.6 (краш 0x70 при выборе миссии):
+--   • ПРЯМАЯ ЗАПИСЬ TargetMissionId ЗАПРЕЩЕНА: она обходит серверный флоу (делегаты,
+--     RequiredElementalCharacterNum и пр.) и оставляет станцию в полуинициализированном
+--     состоянии → краш 0x70 на следующем рендере/старте. Удалена полностью;
+--   • имена CDO в объектной системе UE — БЕЗ префикса U:
+--     /Script/Pal.Default__PalActionTransportItem (в v0.6 был с U — не находился);
+--   • RegisterHook требует ДВОЕТОЧИЕ: /Script/Pal.Класс:Функция (в v0.5/v0.6 была
+--     точка — хуки молча не регистрировались);
+--   • действия со станцией возможны только в состоянии Ready (InProgress/Reward
+--     сервер всё равно отклонит — теперь проверяем заранее и пишем состояние в лог).
+--
+-- МЕХАНИКА (SDK + ванила):
+--   • флоу: список миссий → выбор → окно палов 0..100 → старт. Требование стихии ×N,
+--     рекомендуемая сила; % награды = сила команды ÷ рекомендуемая; палы только из Palbox;
 --   • все записи — через ServerInternal модели станции (путь подтверждён v0.3):
 --       RequestSelectMission_ServerInternal(playerId, FPalNetArchive)
 --       RequestSelectAssignedCharacter_ServerInternal(playerId, FPalNetArchive)
 --       RequestUnselectAssignedCharacter_ServerInternal(playerId, FPalNetArchive)
---       RequestUnselectAll_ServerInternal(playerId)  / RequestSelectAuto_ServerInternal(playerId)
---       RequestStartMission_ServerInternal(playerId) — последние три с простыми параметрами;
---   • FPalNetArchive = { TArray<uint8> Bytes } — UE4SS передаёт структуры таблицами:
---     { Bytes = { …байты… } } (проверено по исходникам RE-UE4SS, branch palworld);
---   • байты FName миссии в архив сериализует САМА ИГРА: статическая
---     UPalActionTransportItem.WriteBlackboard(archive, FName) — зовём на CDO;
---   • байты FPalInstanceID пала — 3 раскладки-кандидата, перебор с проверкой результата
---     чтением AssignedInfo (неверные байты = тихий отказ сервера, НЕ краш: сетевой
---     формат с проверками границ);
---   • запасной путь выбора миссии: прямая запись TargetMissionId (отражённое FName-поле);
---   • Palbox: PlayerState:GetPalStorage() → TargetContainer → SlotArray → слоты →
---     ReplicateHandleID (FPalInstanceID) + ReplicateIndividualParameter (уровень/ник).
+--       RequestUnselectAll_ServerInternal(playerId) / RequestSelectAuto_ServerInternal(playerId)
+--       RequestStartMission_ServerInternal(playerId) / RequestCancelInProgressMission_ServerInternal(playerId)
+--   • FPalNetArchive = { TArray<uint8> Bytes }, передаётся таблицей { Bytes = {…} };
+--   • байты FName сериализует сама игра: статический WriteBlackboard(archive, FName)
+--     на CDO PalActionTransportItem;
+--   • байты FPalInstanceID пала: раскладки-кандидаты с проверкой результата; формат
+--     уточняется по пробе GUID (WritePlayerFeedItemTo) и дампам хуков.
 --
--- ГЛАВНОЕ (с v0.4) — БОРЬБА С КРАШАМИ (pcall НЕ ловит нативные краши, поэтому):
---   1. МОД НИЧЕГО НЕ ХРАНИТ: ни одной ссылки на UObject между действиями. Вообще.
---      (S.palbox хранит ТОЛЬКО числа/строки/Lua-таблицы GUID-ов — это безопасно);
---   2. одна перерисовка на клик (никаких таймеров);
---   3. все объекты переищиваются при каждом действии;
---   4. UI-модели — ТОЛЬКО ЧТЕНИЕ (Get*/Calculate*), записи только через ServerInternal
---      модели станции или запись отражённых полей;
---   5. пассивные хуки ServerInternal только ЛОГИРУЮТ (дамп байтов архива — сверка
---      формата; срабатывают и на наши вызовы, и на ванильные).
+-- БОРЬБА С КРАШАМИ (pcall НЕ ловит нативные краши):
+--   1. НИ ОДНОЙ ссылки на UObject между действиями (S хранит только примитивы/таблицы);
+--   2. одна перерисовка на клик, все объекты переищиваются заново;
+--   3. UI-модели — ТОЛЬКО ЧТЕНИЕ; записи только через ServerInternal станции;
+--   4. НИКАКИХ прямых записей игровых полей, влияющих на логику (урок v0.6);
+--   5. хуки ServerInternal только ЛОГИРУЮТ (дамп байтов — и наши, и ванильные вызовы).
 --
 -- УДАЛЕНИЕ: снести папку Mods/ExpeditionHubTest.
 -- ============================================================================================
@@ -58,9 +59,12 @@ local ELEMENT_NAMES = {
     [0] = "—", [1] = "Normal", [2] = "Fire", [3] = "Water", [4] = "Leaf",
     [5] = "Electricity", [6] = "Ice", [7] = "Earth", [8] = "Dark", [9] = "Dragon",
 }
--- CDO классов со статическими сериализаторами FPalNetArchive
-local ACTION_CDO_PATH = "/Script/Pal.Default__UPalActionTransportItem"
-local PLAYER_CDO_PATH = "/Script/Pal.Default__UPalPlayerUtility"
+-- CDO классов со статическими сериализаторами FPalNetArchive.
+-- ВАЖНО: имена CDO в объектной системе БЕЗ префикса U (сверено с GObjects-дампом).
+local ACTION_CDO_PATH  = "/Script/Pal.Default__PalActionTransportItem"
+local ACTION_CLASS_PATH = "/Script/Pal.PalActionTransportItem"
+local SPAWN_CDO_PATH   = "/Script/Pal.Default__PalActionSpawnItem"
+local PLAYER_CDO_PATH  = "/Script/Pal.Default__PalPlayerUtility"
 
 -- ============================== СОСТОЯНИЕ (только примитивы, НИКАКИХ UObject) ============
 local S = {
@@ -542,50 +546,78 @@ local function BytesToHex(bytes, maxN)
     return table.concat(hex, " ")
 end
 
--- CDO класса (для статических функций)
-local function GetClassDefault(path, className)
-    local obj = StaticFindObject(path)
-    if IsValidObj(obj) then return obj end
-    local ok, all = pcall(FindAllOf, className)
-    if ok and all then
+-- чем звонить в статическую функцию: CDO → сам класс → живой экземпляр
+-- (для статических функций self не используется, подходит любой из них)
+local function GetStaticCaller(path, className, classPath)
+    local ok, obj = pcall(StaticFindObject, path)
+    if ok and IsValidObj(obj) then return obj, "CDO" end
+    if classPath then
+        local okC, cls = pcall(StaticFindObject, classPath)
+        if okC and IsValidObj(cls) then return cls, "класс" end
+    end
+    local okA, all = pcall(FindAllOf, className)
+    if okA and type(all) == "table" then
         for _, m in ipairs(all) do
             local mo = Unwrap(m)
-            if IsValidObj(mo) then return mo end
+            if IsValidObj(mo) then return mo, "экземпляр" end
         end
     end
-    return nil
+    return nil, "не найден"
 end
 
 -- FName миссии → байты FPalNetArchive: сериализует САМА ИГРА
 -- (статический UPalActionTransportItem.WriteBlackboard(archive, FName))
 local function MissionNameBytes(name)
-    local cdo = GetClassDefault(ACTION_CDO_PATH, "PalActionTransportItem")
-    if not IsValidObj(cdo) then return nil, "CDO PalActionTransportItem не найден" end
+    local caller, src = GetStaticCaller(ACTION_CDO_PATH, "PalActionTransportItem", ACTION_CLASS_PATH)
+    if not caller then return nil, "PalActionTransportItem (" .. tostring(src) .. ")" end
     local ar = { Bytes = {} }
-    local ok, err = pcall(function() cdo:WriteBlackboard(ar, name) end)
+    local ok, err = pcall(function() caller:WriteBlackboard(ar, name) end)
     if not ok then return nil, "WriteBlackboard → " .. tostring(err) end
     local bytes = ArrayToTable(ar.Bytes)
     if not bytes or #bytes == 0 then return nil, "архив после WriteBlackboard пуст" end
+    Logf("WriteBlackboard(%s) ок", tostring(src))
     return bytes
 end
 
--- разовая проба сериализации GUID+int32 (диагностика формата архива, пишется в лог)
+-- разовые пробы сериализации (диагностика формата архива, ВСЕ исходы в лог)
 local function ProbeGuidFormat()
     if S.guidProbe then return end
-    S.guidProbe = "не выполнена"
-    local cdo = GetClassDefault(PLAYER_CDO_PATH, "PalPlayerUtility")
-    if not IsValidObj(cdo) then return end
-    local ar = { Bytes = {} }
-    local ok = pcall(function()
-        cdo:WritePlayerFeedItemTo(ar,
-            { ContainerId = { ID = { A = 0x01020304, B = 0x05060708, C = 0x090A0B0C, D = 0x0D0E0F10 } },
-              SlotIndex = 0x11223344 }, 0x55667788)
-    end)
-    if not ok then S.guidProbe = "провалилась (pcall)"; return end
-    local bytes = ArrayToTable(ar.Bytes)
-    if not bytes or #bytes == 0 then S.guidProbe = "пустой архив"; return end
-    S.guidProbe = string.format("%d байт: %s", #bytes, BytesToHex(bytes, 40))
-    Logf("[проба GUID] WritePlayerFeedItemTo → %s (ожидание raw-LE: 04 03 02 01 … 44 33 22 11 88 77 66 55)", S.guidProbe)
+    S.guidProbe = "выполнена"
+    -- 1) GUID + int32: WritePlayerFeedItemTo(Blackboard, FPalItemSlotId, int32)
+    local caller, src = GetStaticCaller(PLAYER_CDO_PATH, "PalPlayerUtility", nil)
+    if caller then
+        local ar = { Bytes = {} }
+        local ok = pcall(function()
+            caller:WritePlayerFeedItemTo(ar,
+                { ContainerId = { ID = { A = 0x01020304, B = 0x05060708, C = 0x090A0B0C, D = 0x0D0E0F10 } },
+                  SlotIndex = 0x11223344 }, 0x55667788)
+        end)
+        local bytes = ok and ArrayToTable(ar.Bytes) or nil
+        if bytes and #bytes > 0 then
+            Logf("[проба GUID+int] %s → %d байт: %s", tostring(src), #bytes, BytesToHex(bytes, 40))
+            Log("[проба GUID+int] raw-LE ожидалось: 04 03 02 01 08 07 06 05 0C 0B 0A 09 10 0F 0E 0D 44 33 22 11 88 77 66 55")
+        else
+            Log("[проба GUID+int] байтов нет (pcall=" .. tostring(ok) .. ")")
+        end
+    else
+        Log("[проба GUID+int] PalPlayerUtility не найден (" .. tostring(src) .. ")")
+    end
+    -- 2) FName + int32: UPalActionSpawnItem.WriteBlackboard(Blackboard, FPalStaticItemIdAndNum)
+    local caller2, src2 = GetStaticCaller(SPAWN_CDO_PATH, "PalActionSpawnItem", nil)
+    if caller2 then
+        local ar2 = { Bytes = {} }
+        local ok2 = pcall(function()
+            caller2:WriteBlackboard(ar2, { StaticItemId = "ProbeName", Num = 0x11223344 })
+        end)
+        local bytes2 = ok2 and ArrayToTable(ar2.Bytes) or nil
+        if bytes2 and #bytes2 > 0 then
+            Logf("[проба FName+int] %s → %d байт: %s", tostring(src2), #bytes2, BytesToHex(bytes2, 48))
+        else
+            Log("[проба FName+int] байтов нет (pcall=" .. tostring(ok2) .. ")")
+        end
+    else
+        Log("[проба FName+int] PalActionSpawnItem не найден (" .. tostring(src2) .. ")")
+    end
 end
 
 -- назначенные палы станции (чтение AssignedInfo.RepInfoArray.Items) — примитивы/таблицы
@@ -752,6 +784,15 @@ end
 local function DoLaunchRepeat()
     local st = SelectedStation()
     if not st then return end
+    local _, sname = GetState(st)
+    if sname == "InProgress" then
+        Log("ЗАПУСК: экспедиция уже идёт (InProgress) — дождись или ОТМЕНИТЬ (режим НАЗНАЧЕНЫ)")
+        return
+    end
+    if sname ~= "Ready" then
+        Log("ЗАПУСК: станция в состоянии " .. tostring(sname) .. " — старт возможен только из Ready")
+        return
+    end
     local tmid = Str(ReadField(st, "TargetMissionId"))
     if tmid == nil or tmid == "None" or tmid == "" then
         Log("ЗАПУСК: у станции НЕ выбрана миссия — выбери её в списке (режим МИССИИ)")
@@ -885,8 +926,9 @@ local function DoLoadMissions()
     if refreshIfOpen then refreshIfOpen() end
 end
 
--- ВЫБОР МИССИИ: путь 1 = ServerInternal с архивом (байты FName сериализует сама игра
--- через WriteBlackboard); путь 2 (если архив не сработал) = прямая запись TargetMissionId.
+-- ВЫБОР МИССИИ: ТОЛЬКО через ServerInternal с архивом (байты FName сериализует
+-- сама игра через WriteBlackboard). Прямая запись TargetMissionId УДАЛЕНА после краша
+-- 0x70 в v0.6: она обходила серверный флоу и оставляла станцию полуинициализированной.
 local function DoSelectMission(missionId)
     local st = SelectedStation()
     if not st then return end
@@ -894,64 +936,58 @@ local function DoSelectMission(missionId)
         Err("missionId пуст")
         return
     end
+    local _, sname = GetState(st)
+    if sname ~= "Ready" then
+        Err(string.format("ВЫБОР: станция в состоянии %s — выбор возможен только в Ready%s",
+            tostring(sname), (sname == "Reward" and " (сначала СОБРАТЬ ЛУТ)" or "")))
+        return
+    end
     local pid, psrc = GetLocalPlayerId()
     if pid == nil then
         Err("playerId не получен: " .. tostring(psrc))
         return
     end
-    Logf("ВЫБОР миссии '%s' (playerId=%s)", tostring(missionId), tostring(pid))
-
-    local function FallbackPropertyWrite()
-        SafeDo("прямая запись TargetMissionId", function()
-            local stF = SelectedStation()
-            if stF then stF.TargetMissionId = missionId end
-        end)
-        DelayCall(400, function()
-            SafeDo("проверка прямой записи", function()
-                local st3 = SelectedStation()
-                if not st3 then return end
-                local now = Str(ReadField(st3, "TargetMissionId"))
-                if now == missionId then
-                    Log("ГОТОВО: миссия выбрана прямой записью TargetMissionId")
-                else
-                    Err("выбор миссии не сработал — см. лог и хуки выше")
-                end
-                if refreshIfOpen then refreshIfOpen() end
-            end)
-        end)
-    end
+    Logf("ВЫБОР миссии '%s' (playerId=%s, state=%s)", tostring(missionId), tostring(pid), tostring(sname))
 
     local bytes, why = MissionNameBytes(missionId)
-    if bytes then
-        Logf("архив миссии (%d байт): %s", #bytes, BytesToHex(bytes, 32))
-        SafeDo("RequestSelectMission_ServerInternal", function()
-            local st1 = SelectedStation()
-            if st1 then st1:RequestSelectMission_ServerInternal(pid, { Bytes = bytes }) end
-        end)
-        DelayCall(700, function()
-            SafeDo("проверка выбора миссии", function()
-                local st2 = SelectedStation()
-                if not st2 then return end
-                local now = Str(ReadField(st2, "TargetMissionId"))
-                if now == missionId then
-                    Logf("ГОТОВО: миссия выбрана через архив (TargetMissionId=%s)", tostring(now))
-                    if refreshIfOpen then refreshIfOpen() end
-                    return
-                end
-                Logf("архивный путь не сработал (TargetMissionId=%s) → прямая запись поля", tostring(now))
-                FallbackPropertyWrite()
-            end)
-        end)
-    else
-        Log("путь архива недоступен: " .. tostring(why) .. " → прямая запись поля")
-        FallbackPropertyWrite()
+    if not bytes then
+        Err("архив недоступен: " .. tostring(why) ..
+            " — пришли лог; пока миссию можно выбрать 1 раз в игровом UI")
+        return
     end
+    Logf("архив миссии (%d байт): %s", #bytes, BytesToHex(bytes, 32))
+    SafeDo("RequestSelectMission_ServerInternal", function()
+        local st1 = SelectedStation()
+        if st1 then st1:RequestSelectMission_ServerInternal(pid, { Bytes = bytes }) end
+    end)
+    DelayCall(700, function()
+        SafeDo("проверка выбора миссии", function()
+            local st2 = SelectedStation()
+            if not st2 then return end
+            local now = Str(ReadField(st2, "TargetMissionId"))
+            if now == missionId then
+                Logf("ГОТОВО: миссия выбрана через архив (TargetMissionId=%s)", tostring(now))
+            else
+                Err(string.format("выбор через архив не сработал (TargetMissionId=%s). " ..
+                    "Выбери эту миссию ОДИН раз в игровом UI и пришли строки [hook] — вставлю точный формат.",
+                    tostring(now)))
+            end
+            if refreshIfOpen then refreshIfOpen() end
+        end)
+    end)
 end
+
 
 -- АВТО-заполнение слотов палов (подтверждено живьём в v0.3)
 local function DoAutoFill()
     local st = SelectedStation()
     if not st then return end
+    local _, sname = GetState(st)
+    if sname ~= "Ready" then
+        Err(string.format("АВТО: станция в состоянии %s — нужно Ready%s", tostring(sname),
+            (sname == "Reward" and " (сначала СОБРАТЬ ЛУТ)" or "")))
+        return
+    end
     local tmid = Str(ReadField(st, "TargetMissionId"))
     if tmid == nil or tmid == "None" or tmid == "" then
         Err("АВТО: сначала выбери миссию")
@@ -960,7 +996,7 @@ local function DoAutoFill()
     local pid, psrc = GetLocalPlayerId()
     if pid == nil then Err("playerId: " .. tostring(psrc)); return end
     local before = #AssignedItemsOf(st)
-    Logf("АВТО-ПАЛЫ: было назначено %d …", before)
+    Logf("АВТО-ПАЛЫ: было назначено %d (state=%s) …", before, tostring(sname))
     SafeDo("RequestSelectAuto_ServerInternal", function()
         local st1 = SelectedStation()
         if st1 then st1:RequestSelectAuto_ServerInternal(pid) end
@@ -980,10 +1016,16 @@ local function DoAutoFill()
     end)
 end
 
+
 -- снять ВСЕХ назначенных палов станции
 local function DoUnselectAllPals()
     local st = SelectedStation()
     if not st then return end
+    local _, sname = GetState(st)
+    if sname ~= "Ready" then
+        Err("СНЯТЬ ВСЕХ: станция в состоянии " .. tostring(sname) .. " — нужно Ready")
+        return
+    end
     local pid, psrc = GetLocalPlayerId()
     if pid == nil then Err("playerId: " .. tostring(psrc)); return end
     Log("СНЯТЬ ВСЕХ: RequestUnselectAll_ServerInternal …")
@@ -1001,6 +1043,35 @@ local function DoUnselectAllPals()
         end)
     end)
 end
+
+-- отменить идущую экспедицию (станция вернётся в Ready, миссия останется выбранной)
+local function DoCancelMission()
+    local st = SelectedStation()
+    if not st then return end
+    local _, sname = GetState(st)
+    if sname ~= "InProgress" then
+        Log("ОТМЕНА: станция в состоянии " .. tostring(sname) .. " — отменять можно только InProgress")
+        return
+    end
+    local pid, psrc = GetLocalPlayerId()
+    if pid == nil then Err("playerId: " .. tostring(psrc)); return end
+    Log("ОТМЕНА: RequestCancelInProgressMission_ServerInternal …")
+    SafeDo("RequestCancelInProgressMission_ServerInternal", function()
+        local st1 = SelectedStation()
+        if st1 then st1:RequestCancelInProgressMission_ServerInternal(pid) end
+    end)
+    DelayCall(700, function()
+        SafeDo("проверка отмены", function()
+            local st2 = SelectedStation()
+            if st2 then
+                local _, sn2 = GetState(st2)
+                Logf("после отмены: state=%s", tostring(sn2))
+                if refreshIfOpen then refreshIfOpen() end
+            end
+        end)
+    end)
+end
+
 
 -- снимок Palbox: сортировка по силе (сила — через живую UI-модель, только чтение)
 local function DoLoadPalbox()
@@ -1107,6 +1178,12 @@ local function DoAddPal(key)
     local st = SelectedStation()
     if not st then return end
     ProbeGuidFormat()
+    local _, sname = GetState(st)
+    if sname ~= "Ready" then
+        Err(string.format("ДОБАВИТЬ: станция в состоянии %s — состав можно менять только в Ready%s",
+            tostring(sname), (sname == "Reward" and " (сначала СОБРАТЬ ЛУТ)" or "")))
+        return
+    end
     local tmid = Str(ReadField(st, "TargetMissionId"))
     if tmid == nil or tmid == "None" or tmid == "" then
         Err("сначала выбери миссию — потом добавляй палов")
@@ -1120,13 +1197,18 @@ local function DoAddPal(key)
         end
     end
     local layouts = S.palLayout and { S.palLayout } or PAL_LAYOUTS
-    Logf("ДОБАВИТЬ пала %s (назначено %d)", tostring(key), #assigned)
+    Logf("ДОБАВИТЬ пала %s (назначено %d, state=%s)", tostring(key), #assigned, tostring(sname))
     TryPalRequest("add", key, #assigned, layouts, 1)
 end
 
 local function DoRemovePal(key)
     local st = SelectedStation()
     if not st then return end
+    local _, sname = GetState(st)
+    if sname ~= "Ready" then
+        Err("СНЯТЬ: станция в состоянии " .. tostring(sname) .. " — состав можно менять только в Ready")
+        return
+    end
     local assigned = AssignedItemsOf(st)
     if #assigned == 0 then
         Log("назначенных палов нет")
@@ -1793,10 +1875,19 @@ local function renderAllContent()
     -- нижняя строка блока: [СНЯТЬ ВСЕХ / ОБНОВИТЬ СПИСОК] … [paging]
     local botY = misY + 234
     if S.mode == "assigned" then
-        createGameButton(hostCanvas, surface, tree, "СНЯТЬ ВСЕХ", PAD + 16, botY, 150, 26, function()
-            SafeDo("unselect all", DoUnselectAllPals)
-            if State.isDisplayed then renderAllContent() end
-        end, 60)
+        local stNow = SelectedStation()
+        local _, stState = GetState(stNow)
+        if stState == "InProgress" then
+            createGameButton(hostCanvas, surface, tree, "ОТМЕНИТЬ ЭКСПЕДИЦИЮ", PAD + 16, botY, 220, 26, function()
+                SafeDo("cancel mission", DoCancelMission)
+                if State.isDisplayed then renderAllContent() end
+            end, 60)
+        else
+            createGameButton(hostCanvas, surface, tree, "СНЯТЬ ВСЕХ", PAD + 16, botY, 150, 26, function()
+                SafeDo("unselect all", DoUnselectAllPals)
+                if State.isDisplayed then renderAllContent() end
+            end, 60)
+        end
     elseif S.mode == "palbox" then
         createGameButton(hostCanvas, surface, tree, "ОБНОВИТЬ СПИСОК", PAD + 16, botY, 190, 26, function()
             SafeDo("reload palbox", DoLoadPalbox)
@@ -1968,6 +2059,8 @@ end
 -- ============================== ПАССИВНЫЕ ХУКИ (только лог) ==============================
 -- Логируем все ServerInternal экспедиций: и наши вызовы, и ванильные (когда сам
 -- выбираешь миссию/палов у станции в игре). Дамп байтов архива = сверка формата.
+-- ВАЖНО: путь функции — с ДВОЕТОЧИЕМ (/Script/Pal.Класс:Функция); с точкой
+-- RegisterHook молча не находит функцию (урок v0.6).
 local function DumpHookArchive(label, paramPid, paramArchive)
     SafeDo("hook:" .. label, function()
         local pid = Num(Unwrap(paramPid))
@@ -1985,27 +2078,32 @@ end
 
 local function RegisterPassiveHooks()
     local hooks = {
-        { "выбор миссии",  "RequestSelectMission_ServerInternal" },
-        { "добавить пала", "RequestSelectAssignedCharacter_ServerInternal" },
-        { "снять пала",    "RequestUnselectAssignedCharacter_ServerInternal" },
+        { "выбор миссии",  "RequestSelectMission_ServerInternal",        true },
+        { "добавить пала", "RequestSelectAssignedCharacter_ServerInternal", true },
+        { "снять пала",    "RequestUnselectAssignedCharacter_ServerInternal", true },
     }
     for _, h in ipairs(hooks) do
         local label, fn = h[1], h[2]
-        local ok = pcall(RegisterHook,
-            "/Script/Pal.PalMapObjectCharacterTeamMissionModel." .. fn,
+        local ok, err = pcall(RegisterHook,
+            "/Script/Pal.PalMapObjectCharacterTeamMissionModel:" .. fn,
             function(self, paramPid, paramArchive)
                 DumpHookArchive(label, paramPid, paramArchive)
             end)
-        if ok then Log("hook установлен: " .. label) end
+        if ok then
+            Log("hook установлен: " .. label)
+        else
+            Log("hook НЕ установлен: " .. label .. " → " .. tostring(err))
+        end
     end
-    local okS = pcall(RegisterHook,
-        "/Script/Pal.PalMapObjectCharacterTeamMissionModel.RequestStartMission_ServerInternal",
+    local okS, errS = pcall(RegisterHook,
+        "/Script/Pal.PalMapObjectCharacterTeamMissionModel:RequestStartMission_ServerInternal",
         function(self, paramPid)
             SafeDo("hook:старт", function()
                 Log(">>> [hook] старт экспедиции: playerId=" .. tostring(Num(Unwrap(paramPid))))
             end)
         end)
-    if okS then Log("hook старта установлен") end
+    if okS then Log("hook старта установлен")
+    else Log("hook старта НЕ установлен → " .. tostring(errS)) end
 end
 
 
@@ -2017,7 +2115,7 @@ local function init()
     end)
     registerWorldEnterHook()
     RegisterPassiveHooks()
-    Log("ExpeditionHub v0.6 готов: миссия + палы (вручную/АВТО) + запуск + сбор — всё из панели.")
+    Log("ExpeditionHub v0.7 готов: починлены CDO/хуки, убрана прямая запись поля (краш), гейты состояний, ОТМЕНА.")
 end
 
 SafeDo(init)
