@@ -3,7 +3,7 @@
 -- ============================================================================================
 -- ============================================================================================
 -- ============================================================================================
--- ExpeditionHubTest v0.9 — ТЕСТОВЫЙ мод (UE4SS Lua) для Palworld 0.4.11
+-- ExpeditionHubTest v0.10 — ТЕСТОВЫЙ мод (UE4SS Lua) для Palworld 0.4.11
 -- Менеджер экспедиций: панель на F6. ВСЕ станции со всех баз. Полный цикл из панели:
 -- выбор миссии → НАЗНАЧЕНИЕ ПАЛОВ ВРУЧНУЮ (Palbox, слоты 0..100) или АВТО → запуск → сбор.
 -- Игровой UI станции НЕ открываем вообще (v0.4/v0.5: ломает мышь + краш при перезаходе).
@@ -92,7 +92,7 @@ local function Log(msg)
 end
 
 local function Err(msg)
-    pushLog("ОШИБКА: " .. tostring(msg))
+    pushLog("ERROR: " .. tostring(msg))
     print(TAG .. " ERR: " .. tostring(msg) .. "\n")
 end
 
@@ -278,7 +278,7 @@ end
 -- playerId для ServerInternal-функций (подтверждено тестом: 259)
 local function GetLocalPlayerId()
     local pc = GetLocalPlayerController()
-    if not pc then return nil, "нет PlayerController" end
+    if not pc then return nil, "no PlayerController" end
     local ok, ps = pcall(function() return pc:GetPalPlayerState() end)
     if ok and ps ~= nil then
         ps = Unwrap(ps)
@@ -292,7 +292,7 @@ local function GetLocalPlayerId()
         local okI, id = pcall(function() return ps2:GetPlayerId() end)
         if okI then return Num(id), "PlayerState:GetPlayerId()" end
     end
-    return nil, "PlayerState не найден"
+    return nil, "PlayerState not found"
 end
 
 local function GetLocalPawn()
@@ -325,7 +325,12 @@ local function GetBaseName(st)
             local okN, name = pcall(function() return bcm:GetBaseCampName() end)
             if okN then
                 local s = Str(name)
-                if s and s ~= "" then return s end
+                if s and s ~= "" then
+                    -- дев-плейсхолдер имени базы (新規生成拠点テンプレート名 =
+                    -- "new base template name") — показываем понятное имя
+                    if s:find("新規生成拠点テンプレート名", 1, true) then return "Unnamed base" end
+                    return s
+                end
             end
             return Str(ReadField(bcm, "BaseCampName")) or "?"
         end
@@ -387,19 +392,19 @@ local function FindBoundModelForStation(st, quiet)
         end
     end)
     for _, e in ipairs(bound) do
-        if e.guid == instKey then return e.model, "совпал InstanceId" end
+        if e.guid == instKey then return e.model, "InstanceId matched" end
     end
     for _, e in ipairs(bound) do
-        if e.guid == modelKey then return e.model, "совпал ModelInstanceId" end
+        if e.guid == modelKey then return e.model, "ModelInstanceId matched" end
     end
     local guids = {}
     for _, e in ipairs(bound) do guids[#guids + 1] = e.guid end
     if not quiet then
-        Log(string.format("привязанные UI-модели: %d шт %s", #bound,
-            (#bound > 0 and ("{" .. table.concat(guids, ", ") .. "}")) or "(не найдено)"))
-        Log(string.format("станция: InstanceId=%s | ModelInstanceId=%s", tostring(instKey), tostring(modelKey)))
+        Log(string.format("bound UI models: %d %s", #bound,
+            (#bound > 0 and ("{" .. table.concat(guids, ", ") .. "}")) or "(none found)"))
+        Log(string.format("station: InstanceId=%s | ModelInstanceId=%s", tostring(instKey), tostring(modelKey)))
     end
-    return nil, "ни одна привязанная модель не совпала со станцией"
+    return nil, "no bound model matched the station"
 end
 
 -- сундук станции: прямое чтение поля TargetContainer, затем функции
@@ -424,7 +429,7 @@ local function GetStationContainer(st)
         local c = Unwrap(out.OutContainer or out.outContainer or out[1])
         if IsValidObj(c) then return c, "TryGetContainer" end
     end
-    return nil, "контейнера нет (у станции без награды это норма)"
+    return nil, "no container (normal for a station without reward)"
 end
 
 local function CountChest(cont)
@@ -447,12 +452,12 @@ end
 
 local function DumpContainer(label, cont)
     if not IsValidObj(cont) then
-        Log(label .. ": контейнер невалиден")
+        Log(label .. ": container invalid")
         return
     end
     local slots = ArrayToTable(ReadField(cont, "ItemSlotArray"))
     if not slots then
-        Log(label .. ": ItemSlotArray не читается")
+        Log(label .. ": ItemSlotArray unreadable")
         return
     end
     local used = 0
@@ -466,11 +471,11 @@ local function DumpContainer(label, cont)
                 local itemId = ReadField(slot, "ItemId")
                 local sid = itemId and Str(ReadField(itemId, "StaticId")) or "?"
                 local cnt = Num(ReadField(slot, "StackCount"))
-                Logf("%s: слот %d — %s x%s", label, i, tostring(sid), tostring(cnt))
+                Logf("%s: slot %d — %s x%s", label, i, tostring(sid), tostring(cnt))
             end
         end
     end
-    if used == 0 then Log(label .. ": сундук ПУСТ (" .. tostring(#slots) .. " слотов)") end
+    if used == 0 then Log(label .. ": chest EMPTY (" .. tostring(#slots) .. " slots)") end
 end
 
 -- ============================== ПАЛЫ / БАЙТЫ АРХИВА ==============================
@@ -600,11 +605,11 @@ local function BorrowByteBuffer()
                             return { buf = buf, saved = saved, src = cand.class .. "." .. cand.field }
                         end
                         if S.bufferSrc == nil then
-                            Logf("буфер: %s.%s — не 1-байтовый (тест дал %s), пробую дальше",
+                            Logf("buffer: %s.%s — not 1-byte (test gave %s), skipping",
                                 cand.class, cand.field, tostring(back))
                         end
                     elseif S.bufferSrc == nil and buf ~= nil then
-                        Logf("буфер: %s.%s — не userdata (%s), пробую дальше",
+                        Logf("buffer: %s.%s — not userdata (%s), skipping",
                             cand.class, cand.field, type(buf))
                     end
                 end
@@ -618,7 +623,7 @@ end
 local function CallServerInternalWithArchive(kind, st, pid, bytes)
     local b = BorrowByteBuffer()
     if not b then
-        return nil, "не найден живой байтовый буфер (см. лог 'буфер:')"
+        return nil, "no live byte buffer found (see 'buffer:' lines)"
     end
     local ok, err = pcall(function()
         b.buf:Empty()
@@ -636,7 +641,7 @@ local function CallServerInternalWithArchive(kind, st, pid, bytes)
     if not ok then return nil, tostring(err) end
     if S.bufferSrc ~= b.src then
         S.bufferSrc = b.src
-        Log("буфер архива: " .. b.src)
+        Log("archive buffer: " .. b.src)
     end
     return true
 end
@@ -666,7 +671,7 @@ local function AssignedItemsOf(st)
             out[#out + 1] = {
                 key      = idT and PalKeyOf(idT) or ("idx" .. i),
                 idTable  = idT,
-                name     = (info and Str(ReadField(info, "NickName"))) or "пал",
+                name     = (info and Str(ReadField(info, "NickName"))) or "Pal",
                 level    = (info and Num(ReadField(info, "Level"))) or nil,
                 strength = (info and Num(ReadField(info, "Strength"))) or nil,
             }
@@ -689,12 +694,12 @@ end
 -- контейнер Palbox игрока
 local function GetPalStorageContainer()
     local pc = GetLocalPlayerController()
-    if not pc then return nil, "нет PlayerController" end
+    if not pc then return nil, "no PlayerController" end
     local ps = nil
     local ok, r = pcall(function() return pc:GetPalPlayerState() end)
     if ok then ps = Unwrap(r) end
     if not IsValidObj(ps) then ps = ReadField(pc, "PlayerState") end
-    if not IsValidObj(ps) then return nil, "PlayerState не найден" end
+    if not IsValidObj(ps) then return nil, "PlayerState not found" end
     local storage
     local okS, s = pcall(function() return ps:GetPalStorage() end)
     if okS then storage = Unwrap(s) end
@@ -730,13 +735,13 @@ local function ReadPalSlot(slot)
         if okP then param = Unwrap(p2) end
     end
 
-    local name, level, rank, species, excluded = "пал", nil, nil, nil, false
+    local name, level, rank, species, excluded = "Pal", nil, nil, nil, false
     if IsValidObj(param) then
         local sp = ReadField(param, "SaveParameter")
         if sp ~= nil then
             local nick = Str(ReadField(sp, "NickName"))
             species = Str(ReadField(sp, "CharacterID"))
-            name = (nick and nick ~= "" and nick) or species or "пал"
+            name = (nick and nick ~= "" and nick) or species or "Pal"
             level = Num(ReadField(sp, "Level"))
             rank = Num(ReadField(sp, "Rank"))
         end
@@ -763,22 +768,22 @@ end
 
 local function StationDetailLines()
     local st, total = SelectedStation()
-    if not st then return { "СТАНЦИЙ НЕ НАЙДЕНО — построй станцию или перезайди" }, 0 end
+    if not st then return { "NO STATIONS FOUND — build one or re-enter the world" }, 0 end
     local lines = {}
     local _, sname = GetState(st)
     local tmid = Str(ReadField(st, "TargetMissionId"))
-    lines[#lines + 1] = string.format("СОСТОЯНИЕ: %s     МИССИЯ: %s", tostring(sname), tostring(tmid))
+    lines[#lines + 1] = string.format("STATE: %s     MISSION: %s", tostring(sname), tostring(tmid))
     local loc = GetLoc(st)
-    local locStr = loc and string.format("     коорд: (%.0f, %.0f)", loc.x, loc.y) or ""
-    lines[#lines + 1] = string.format("БАЗА: %s%s", tostring(GetBaseName(st) or "?"), locStr)
+    local locStr = loc and string.format("     at: (%.0f, %.0f)", loc.x, loc.y) or ""
+    lines[#lines + 1] = string.format("BASE: %s%s", tostring(GetBaseName(st) or "?"), locStr)
     local ai = ReadField(st, "AssignedInfo")
     local rep = ai and ReadField(ai, "RepInfoArray") or nil
     local items = rep and ArrayToTable(ReadField(rep, "Items")) or nil
     local cont = GetStationContainer(st)
     local used, totalSlots = 0, 0
     if cont then used, totalSlots = CountChest(cont) end
-    lines[#lines + 1] = string.format("ПАЛЫ: %s     СУНДУК: %s", tostring(items and #items or nil),
-        (cont and string.format("занято %d из %d", used, totalSlots)) or "нет (норма без награды)")
+    lines[#lines + 1] = string.format("PALS: %s     CHEST: %s", tostring(items and #items or nil),
+        (cont and string.format("used %d of %d", used, totalSlots)) or "none (normal, no reward yet)")
     -- требования стихии / сила команды / % награды — через живую UI-модель (ТОЛЬКО ЧТЕНИЕ)
     do
         local bm = FindBoundModelForStation(st, true)
@@ -794,13 +799,21 @@ local function StationDetailLines()
                 local reqN = Num(out.RequiredNum)
                 local sat = out.bSatisfiedCondition
                 if elT ~= nil then
-                    parts[#parts + 1] = string.format("стихия: %s %s/%s%s",
+                    parts[#parts + 1] = string.format("element: %s %s/%s%s",
                         ELEMENT_NAMES[elT] or tostring(elT), tostring(curN), tostring(reqN),
                         ((sat == true or sat == 1) and " ✔") or "")
                 end
             end
-            if okT then parts[#parts + 1] = "сила: " .. tostring(Num(team)) end
-            if okR then parts[#parts + 1] = string.format("награда: %.0f%%", (Num(rate) or 0) * 100) end
+            if okT then parts[#parts + 1] = "power: " .. tostring(Num(team)) end
+            if okR then parts[#parts + 1] = string.format("reward: %.0f%%", (Num(rate) or 0) * 100) end
+            if sname == "InProgress" then
+                local okL, rem = pcall(function() return bm:GetRemainMissionSeconds() end)
+                local remN = okL and Num(rem) or nil
+                if remN ~= nil and remN > 0 then
+                    parts[#parts + 1] = string.format("left: %dh %02dm",
+                        math.floor(remN / 3600), math.floor((remN % 3600) / 60))
+                end
+            end
             if #parts > 0 then
                 lines[#lines + 1] = table.concat(parts, "   |   ")
             end
@@ -816,39 +829,39 @@ local function DoLaunchRepeat()
     if not st then return end
     local _, sname = GetState(st)
     if sname == "InProgress" then
-        Log("ЗАПУСК: экспедиция уже идёт (InProgress) — дождись или ОТМЕНИТЬ (режим НАЗНАЧЕНЫ)")
+        Log("START: expedition already running (InProgress) — wait or CANCEL (MODE: ASSIGNED)")
         return
     end
     if sname ~= "Ready" then
-        Log("ЗАПУСК: станция в состоянии " .. tostring(sname) .. " — старт возможен только из Ready")
+        Log("START: station state is " .. tostring(sname) .. " — start requires Ready")
         return
     end
     local tmid = Str(ReadField(st, "TargetMissionId"))
     if tmid == nil or tmid == "None" or tmid == "" then
-        Log("ЗАПУСК: у станции НЕ выбрана миссия — выбери её в списке (режим МИССИИ)")
+        Log("START: no mission selected — pick one in the list (MODE: MISSIONS)")
         return
     end
     local nAssigned = #AssignedItemsOf(st)
     if nAssigned == 0 then
-        Log("ЗАПУСК: назначено 0 палов — пустая команда = 0% награды. Добавь палов (режим PALBOX) или АВТО-ПАЛЫ.")
+        Log("START: 0 pals assigned — empty team = 0% reward. Add pals (MODE: PALBOX) or use AUTO PALS.")
         return
     end
     local pid, psrc = GetLocalPlayerId()
     if pid == nil then
-        Err("playerId не получен: " .. tostring(psrc))
+        Err("playerId unavailable: " .. tostring(psrc))
         return
     end
-    Logf("ЗАПУСК станции %d: миссия '%s', палов %d (playerId=%s)", S.sel, tmid, nAssigned, tostring(pid))
+    Logf("START station %d: mission '%s', pals %d (playerId=%s)", S.sel, tmid, nAssigned, tostring(pid))
     SafeDo("RequestStartMission_ServerInternal", function()
         local st1 = SelectedStation()
         if st1 then st1:RequestStartMission_ServerInternal(pid) end
     end)
     DelayCall(Config.VerifyMs, function()
-        SafeDo("проверка после запуска", function()
+        SafeDo("check after start", function()
             local st2 = SelectedStation()
             if st2 then
                 local _, sname = GetState(st2)
-                Logf("итог: state=%s, палов=%d", tostring(sname), #AssignedItemsOf(st2))
+                Logf("result: state=%s, pals=%d", tostring(sname), #AssignedItemsOf(st2))
                 if refreshIfOpen then refreshIfOpen() end
             end
         end)
@@ -884,7 +897,7 @@ end
 
 local function DumpMissionElem(el)
     local res = { id = nil, text = "", secs = nil, rec = nil, el = nil, elNum = nil, max = nil }
-    if el == nil then res.text = "(элемент nil)"; return res end
+    if el == nil then res.text = "(nil element)"; return res end
     local mid = Str(ReadField(el, "MissionId"))
     res.id = mid
     local line = tostring(mid or "?")
@@ -902,10 +915,10 @@ local function DumpMissionElem(el)
         local timeStr = "?"
         if secs ~= nil then
             local mins = math.floor(secs / 60)
-            if mins >= 60 then timeStr = string.format("%dч%02d", math.floor(mins / 60), mins % 60)
-            else timeStr = mins .. "м" end
+            if mins >= 60 then timeStr = string.format("%dh%02d", math.floor(mins / 60), mins % 60)
+            else timeStr = mins .. "m" end
         end
-        line = string.format("%s | %s | %s | сила %s | %s×%s | макс %s",
+        line = string.format("%s | %s | %s | power %s | %s×%s | max %s",
             tostring(mid or "?"), diffName, timeStr, tostring(rec),
             ELEMENT_NAMES[elT] or tostring(elT), tostring(elNum), tostring(maxN))
     end
@@ -918,7 +931,7 @@ end
 local function DoLoadMissions()
     local st = SelectedStation()
     if not st then return end
-    Log("=== СПИСОК МИССИЙ станции " .. S.sel .. " ===")
+    Log("=== MISSION LIST: station " .. S.sel .. " ===")
     local function LoadFrom(ui)
         local out = {}
         local ok, res = pcall(function() ui:GetSelectableMissionInfos(out) end)
@@ -928,7 +941,7 @@ local function DoLoadMissions()
         end
         local t = MissionsFromOutTable(out) or ArrayToTable(out.OutInfos or out.outInfos)
         if not t or #t == 0 then
-            Log("список пуст")
+            Log("list is empty")
             return
         end
         S.missions = {}
@@ -936,22 +949,22 @@ local function DoLoadMissions()
             local info = DumpMissionElem(t[i])
             S.missions[#S.missions + 1] = info
         end
-        Logf("миссий: %d — список ниже (режим МИССИИ)", #t)
+        Logf("missions: %d — see the list (MODE: MISSIONS)", #t)
     end
     local bound = FindBoundModelForStation(st)
     if bound then
-        Log("список: через живую привязанную модель")
+        Log("list: via live bound model")
         local ok, res = pcall(LoadFrom, bound)
-        if not ok then Err("чтение через привязанную модель → " .. tostring(res)) end
+        if not ok then Err("read via bound model → " .. tostring(res)) end
     else
-        Log("список: привязанной модели нет — через свежую (гильдейский список)")
+        Log("list: no bound model — via fresh one (guild list)")
         local ui = CreateUIModel(st)
         if not ui then
-            Err("не удалось создать модель для чтения списка")
+            Err("failed to create model for list read")
             return
         end
         local ok, res = pcall(LoadFrom, ui)
-        if not ok then Err("чтение через свежую модель → " .. tostring(res)) end
+        if not ok then Err("read via fresh model → " .. tostring(res)) end
     end
     if refreshIfOpen then refreshIfOpen() end
 end
@@ -963,40 +976,40 @@ local function DoSelectMission(missionId)
     local st = SelectedStation()
     if not st then return end
     if missionId == nil or missionId == "" then
-        Err("missionId пуст")
+        Err("missionId is empty")
         return
     end
     local _, sname = GetState(st)
     if sname ~= "Ready" then
-        Err(string.format("ВЫБОР: станция в состоянии %s — выбор возможен только в Ready%s",
-            tostring(sname), (sname == "Reward" and " (сначала СОБРАТЬ ЛУТ)" or "")))
+        Err(string.format("SELECT: station state is %s — selection requires Ready%s",
+            tostring(sname), (sname == "Reward" and " (collect the reward first)" or "")))
         return
     end
     local pid, psrc = GetLocalPlayerId()
     if pid == nil then
-        Err("playerId не получен: " .. tostring(psrc))
+        Err("playerId unavailable: " .. tostring(psrc))
         return
     end
-    Logf("ВЫБОР миссии '%s' (playerId=%s, state=%s)", tostring(missionId), tostring(pid), tostring(sname))
+    Logf("SELECT mission '%s' (playerId=%s, state=%s)", tostring(missionId), tostring(pid), tostring(sname))
 
     local bytes = FNameToArchiveBytes(missionId)
-    Logf("архив миссии (%d байт): %s", #bytes, BytesToHex(bytes, 32))
+    Logf("mission archive (%d bytes): %s", #bytes, BytesToHex(bytes, 32))
     SafeDo("RequestSelectMission_ServerInternal", function()
         local st1 = SelectedStation()
         if not st1 then return end
         local ok, err = CallServerInternalWithArchive("mission", st1, pid, bytes)
-        if not ok then Err("архив не передан: " .. tostring(err)) end
+        if not ok then Err("archive not delivered: " .. tostring(err)) end
     end)
     DelayCall(700, function()
-        SafeDo("проверка выбора миссии", function()
+        SafeDo("check mission selection", function()
             local st2 = SelectedStation()
             if not st2 then return end
             local now = Str(ReadField(st2, "TargetMissionId"))
             if now == missionId then
-                Logf("ГОТОВО: миссия выбрана через архив (TargetMissionId=%s)", tostring(now))
+                Logf("OK: mission selected via archive (TargetMissionId=%s)", tostring(now))
             else
-                Err(string.format("выбор не сработал (TargetMissionId=%s). " ..
-                    "Сравни в логе наши байты с «>>> [hook] выбор миссии» и пришли лог.",
+                Err(string.format("selection failed (TargetMissionId=%s). " ..
+                    "Compare our bytes with the '>>> [hook] select mission' line in the log and send me the log.",
                     tostring(now)))
             end
             if refreshIfOpen then refreshIfOpen() end
@@ -1011,32 +1024,32 @@ local function DoAutoFill()
     if not st then return end
     local _, sname = GetState(st)
     if sname ~= "Ready" then
-        Err(string.format("АВТО: станция в состоянии %s — нужно Ready%s", tostring(sname),
-            (sname == "Reward" and " (сначала СОБРАТЬ ЛУТ)" or "")))
+        Err(string.format("AUTO: station state is %s — requires Ready%s", tostring(sname),
+            (sname == "Reward" and " (collect the reward first)" or "")))
         return
     end
     local tmid = Str(ReadField(st, "TargetMissionId"))
     if tmid == nil or tmid == "None" or tmid == "" then
-        Err("АВТО: сначала выбери миссию")
+        Err("AUTO: select a mission first")
         return
     end
     local pid, psrc = GetLocalPlayerId()
     if pid == nil then Err("playerId: " .. tostring(psrc)); return end
     local before = #AssignedItemsOf(st)
-    Logf("АВТО-ПАЛЫ: было назначено %d (state=%s) …", before, tostring(sname))
+    Logf("AUTO PALS: %d assigned (state=%s) ...", before, tostring(sname))
     SafeDo("RequestSelectAuto_ServerInternal", function()
         local st1 = SelectedStation()
         if st1 then st1:RequestSelectAuto_ServerInternal(pid) end
     end)
     DelayCall(800, function()
-        SafeDo("проверка АВТО", function()
+        SafeDo("check auto", function()
             local st2 = SelectedStation()
             if not st2 then return end
             local after = #AssignedItemsOf(st2)
             if after > before then
-                Logf("ГОТОВО: АВТО назначил палов %d → %d", before, after)
+                Logf("OK: AUTO assigned pals %d → %d", before, after)
             else
-                Log("АВТО: состав не изменился")
+                Log("AUTO: roster unchanged")
             end
             if refreshIfOpen then refreshIfOpen() end
         end)
@@ -1050,21 +1063,21 @@ local function DoUnselectAllPals()
     if not st then return end
     local _, sname = GetState(st)
     if sname ~= "Ready" then
-        Err("СНЯТЬ ВСЕХ: станция в состоянии " .. tostring(sname) .. " — нужно Ready")
+        Err("REMOVE ALL: station state is " .. tostring(sname) .. " — requires Ready")
         return
     end
     local pid, psrc = GetLocalPlayerId()
     if pid == nil then Err("playerId: " .. tostring(psrc)); return end
-    Log("СНЯТЬ ВСЕХ: RequestUnselectAll_ServerInternal …")
+    Log("REMOVE ALL: RequestUnselectAll_ServerInternal ...")
     SafeDo("RequestUnselectAll_ServerInternal", function()
         local st1 = SelectedStation()
         if st1 then st1:RequestUnselectAll_ServerInternal(pid) end
     end)
     DelayCall(700, function()
-        SafeDo("проверка снятия", function()
+        SafeDo("check removal", function()
             local st2 = SelectedStation()
             if st2 then
-                Logf("после снятия: палов %d", #AssignedItemsOf(st2))
+                Logf("after removal: %d pals", #AssignedItemsOf(st2))
                 if refreshIfOpen then refreshIfOpen() end
             end
         end)
@@ -1077,22 +1090,22 @@ local function DoCancelMission()
     if not st then return end
     local _, sname = GetState(st)
     if sname ~= "InProgress" then
-        Log("ОТМЕНА: станция в состоянии " .. tostring(sname) .. " — отменять можно только InProgress")
+        Log("CANCEL: station state is " .. tostring(sname) .. " — only InProgress can be cancelled")
         return
     end
     local pid, psrc = GetLocalPlayerId()
     if pid == nil then Err("playerId: " .. tostring(psrc)); return end
-    Log("ОТМЕНА: RequestCancelInProgressMission_ServerInternal …")
+    Log("CANCEL: RequestCancelInProgressMission_ServerInternal ...")
     SafeDo("RequestCancelInProgressMission_ServerInternal", function()
         local st1 = SelectedStation()
         if st1 then st1:RequestCancelInProgressMission_ServerInternal(pid) end
     end)
     DelayCall(700, function()
-        SafeDo("проверка отмены", function()
+        SafeDo("check cancel", function()
             local st2 = SelectedStation()
             if st2 then
                 local _, sn2 = GetState(st2)
-                Logf("после отмены: state=%s", tostring(sn2))
+                Logf("after cancel: state=%s", tostring(sn2))
                 if refreshIfOpen then refreshIfOpen() end
             end
         end)
@@ -1102,7 +1115,7 @@ end
 
 -- снимок Palbox: сортировка по силе (сила — через живую UI-модель, только чтение)
 local function DoLoadPalbox()
-    Log("=== СПИСОК PALBOX ===")
+    Log("=== PALBOX LIST ===")
     local cont, why = GetPalStorageContainer()
     if not cont then
         Err("Palbox: " .. tostring(why))
@@ -1110,7 +1123,7 @@ local function DoLoadPalbox()
     end
     local slots = ArrayToTable(ReadField(cont, "SlotArray"))
     if not slots then
-        Err("Palbox: SlotArray не читается")
+        Err("Palbox: SlotArray unreadable")
         return
     end
     local busy = BusyPalKeys()
@@ -1135,7 +1148,7 @@ local function DoLoadPalbox()
     end)
     S.palbox = list
     S.listPage = 1
-    Logf("Palbox: палов %d (сила: %s)", #list, bound and "показана" or "нет — без живой модели")
+    Logf("Palbox: %d pals (power: %s)", #list, bound and "shown" or "not shown — no live model")
 end
 
 -- добавить/снять пала: байты по ванильному формату + проверка результата.
@@ -1159,36 +1172,36 @@ local function DoPalRequest(kind, key)
         end
     end
     if not idTable then
-        Err("пал " .. tostring(key) .. " не найден — обнови список")
+        Err("pal " .. tostring(key) .. " not found — reload the list")
         return
     end
 
     local before = #AssignedItemsOf(st)
     local bytes = PalIdToArchiveBytes(idTable)
-    Logf("%s пала: архив(%d байт): %s",
-        (kind == "add" and "добавить" or "снять"), #bytes, BytesToHex(bytes, 40))
+    Logf("%s pal: archive(%d bytes): %s",
+        (kind == "add" and "ADD" or "REMOVE"), #bytes, BytesToHex(bytes, 40))
 
     SafeDo("RequestServerInternal", function()
         local st1 = SelectedStation()
         if not st1 then return end
         local ok, err = CallServerInternalWithArchive(kind, st1, pid, bytes)
-        if not ok then Err("архив не передан: " .. tostring(err)) end
+        if not ok then Err("archive not delivered: " .. tostring(err)) end
     end)
     DelayCall(600, function()
-        SafeDo("проверка " .. kind, function()
+        SafeDo("check " .. kind, function()
             local st2 = SelectedStation()
             if not st2 then return end
             local now = #AssignedItemsOf(st2)
             local ok = (kind == "add" and now > before) or (kind == "remove" and now < before)
             if ok then
-                Logf("ГОТОВО: пал %s (палов теперь %d)",
-                    (kind == "add" and "добавлен" or "снят"), now)
+                Logf("OK: pal %s (now %d pals)",
+                    (kind == "add" and "added" or "removed"), now)
                 if refreshIfOpen then refreshIfOpen() end
             else
-                Err(string.format("%s не сработало (палов по-прежнему %d). " ..
-                    "Сравни в логе байты «>>> [hook] %s пала» с нашими и пришли лог.",
-                    (kind == "add" and "добавление" or "снятие"), now,
-                    (kind == "add" and "добавить" or "снять")))
+                Err(string.format("%s failed (still %d pals). " ..
+                    "Compare our bytes with the '>>> [hook] %s pal' line in the log and send me the log.",
+                    (kind == "add" and "ADD" or "REMOVE"), now,
+                    (kind == "add" and "ADD" or "REMOVE")))
             end
         end)
     end)
@@ -1200,23 +1213,23 @@ local function DoAddPal(key)
     if not st then return end
     local _, sname = GetState(st)
     if sname ~= "Ready" then
-        Err(string.format("ДОБАВИТЬ: станция в состоянии %s — состав можно менять только в Ready%s",
-            tostring(sname), (sname == "Reward" and " (сначала СОБРАТЬ ЛУТ)" or "")))
+        Err(string.format("ADD: station state is %s — roster changes require Ready%s",
+            tostring(sname), (sname == "Reward" and " (collect the reward first)" or "")))
         return
     end
     local tmid = Str(ReadField(st, "TargetMissionId"))
     if tmid == nil or tmid == "None" or tmid == "" then
-        Err("сначала выбери миссию — потом добавляй палов")
+        Err("select a mission first, then add pals")
         return
     end
     local assigned = AssignedItemsOf(st)
     for _, item in ipairs(assigned) do
         if item.key == key then
-            Log("этот пал уже назначен на эту станцию")
+            Log("this pal is already assigned to this station")
             return
         end
     end
-    Logf("ДОБАВИТЬ пала %s (назначено %d, state=%s)", tostring(key), #assigned, tostring(sname))
+    Logf("ADD pal %s (assigned %d, state=%s)", tostring(key), #assigned, tostring(sname))
     DoPalRequest("add", key)
 end
 
@@ -1225,15 +1238,15 @@ local function DoRemovePal(key)
     if not st then return end
     local _, sname = GetState(st)
     if sname ~= "Ready" then
-        Err("СНЯТЬ: станция в состоянии " .. tostring(sname) .. " — состав можно менять только в Ready")
+        Err("REMOVE: station state is " .. tostring(sname) .. " — roster changes require Ready")
         return
     end
     local assigned = AssignedItemsOf(st)
     if #assigned == 0 then
-        Log("назначенных палов нет")
+        Log("no assigned pals")
         return
     end
-    Logf("СНЯТЬ пала %s (назначено %d)", tostring(key), #assigned)
+    Logf("REMOVE pal %s (assigned %d)", tostring(key), #assigned)
     DoPalRequest("remove", key)
 end
 
@@ -1243,37 +1256,37 @@ local function DoCollectOne(idx)
     local stations = FindStations()
     local st = stations[idx]
     if not IsValidObj(st) then
-        Err("станция " .. idx .. " не найдена")
+        Err("station " .. idx .. " not found")
         return
     end
     local _, sname = GetState(st)
     if sname ~= "Reward" then
-        Log("станция " .. idx .. ": state=" .. tostring(sname) .. " — лут ещё не готов (нужен Reward)")
+        Log("station " .. idx .. ": state=" .. tostring(sname) .. " — reward not ready (needs Reward)")
         return
     end
     local cont, why = GetStationContainer(st)
     if not cont then
-        Err("станция " .. idx .. ": " .. tostring(why))
+        Err("station " .. idx .. ": " .. tostring(why))
         return
     end
     local net = GetNetComp()
     if not net then
-        Err("PalNetworkPlayerComponent не найден")
+        Err("PalNetworkPlayerComponent not found")
         return
     end
-    DumpContainer("ДО сбора (ст." .. idx .. ")", cont)
-    Log("RequestMoveItemToInventoryFromContainer …")
+    DumpContainer("BEFORE (st." .. idx .. ")", cont)
+    Log("RequestMoveItemToInventoryFromContainer ...")
     local ok, res = pcall(function() return net:RequestMoveItemToInventoryFromContainer(cont, false) end)
     if not ok then
         Err("RequestMoveItemToInventoryFromContainer → " .. tostring(res))
         return
     end
     DelayCall(600, function()
-        SafeDo("проверка после сбора", function()
+        SafeDo("check after collect", function()
             local st2 = FindStations()[idx]
             if IsValidObj(st2) then
                 local cont2 = GetStationContainer(st2)
-                if cont2 then DumpContainer("ПОСЛЕ сбора (ст." .. idx .. ")", cont2) end
+                if cont2 then DumpContainer("AFTER (st." .. idx .. ")", cont2) end
                 if refreshIfOpen then refreshIfOpen() end
             end
         end)
@@ -1283,7 +1296,7 @@ end
 local function DoCollect()
     local _, total = SelectedStation()
     if total == 0 then return end
-    Log("=== СОБРАТЬ ЛУТ: станция " .. S.sel .. " ===")
+    Log("=== COLLECT: station " .. S.sel .. " ===")
     DoCollectOne(S.sel)
 end
 
@@ -1295,13 +1308,13 @@ local function DoCollectAll()
         if sname == "Reward" then targets[#targets + 1] = i end
     end
     if #targets == 0 then
-        Log("СОБРАТЬ ВСЁ: нет станций в состоянии Reward")
+        Log("COLLECT ALL: no stations in Reward state")
         return
     end
-    Logf("=== СОБРАТЬ ВСЁ: станций с наградой: %d (%s) ===", #targets, table.concat(targets, ", "))
+    Logf("=== COLLECT ALL: stations with reward: %d (%s) ===", #targets, table.concat(targets, ", "))
     for k, i in ipairs(targets) do
         DelayCall(250 * k, function()
-            SafeDo("collect ст." .. i, function() DoCollectOne(i) end)
+            SafeDo("collect st." .. i, function() DoCollectOne(i) end)
         end)
     end
 end
@@ -1670,6 +1683,11 @@ local function createGameButton(hostCanvas, surface, tree, label, x, y, w, h, on
 end
 
 -- ------------------------------- отрисовка ----------------------------------
+-- RequestRender: троттлинг отрисовки — не чаще раза в 250 мс, лишние запросы
+-- сливаются в один отложенный рендер (анти-фликер и анти-краш при быстрых кликах:
+-- полное уничтожение/пересоздание виджетов на каждый клик = нативный краш)
+local RequestRender
+
 local function renderAllContent()
     if not IsValidObj(State.activeSurface) or not IsValidObj(State.widgetTree) then return end
 
@@ -1702,13 +1720,13 @@ local function renderAllContent()
     local title = Factory.CreateText(tree, "EXPEDITION HUB", 16, Theme.TextPrimary, true, 0)
     if title then Factory.AnchorWidget(surface, title, PAD + 16, PAD + 12, 380, 24, 7) end
     local _, stationTotal = SelectedStation()
-    local sub = Factory.CreateText(tree, string.format("станций: %d", stationTotal), 12, Theme.TextSecond, false, 2)
+    local sub = Factory.CreateText(tree, string.format("stations: %d", stationTotal), 12, Theme.TextSecond, false, 2)
     if sub then Factory.AnchorWidget(surface, sub, PAD + contentW - 320, PAD + 15, 200, 16, 7) end
-    createGameButton(hostCanvas, surface, tree, "ОБНОВИТЬ", PAD + contentW - 110, PAD + 7, 94, 32, function()
+    createGameButton(hostCanvas, surface, tree, "REFRESH", PAD + contentW - 110, PAD + 7, 94, 32, function()
         if S.mode == "palbox" then
             SafeDo("reload palbox", DoLoadPalbox)
         end
-        renderAllContent()
+        RequestRender()
     end, 60)
 
     -- ===== селектор станции (70..124) =====
@@ -1722,17 +1740,17 @@ local function renderAllContent()
         if total > 0 then
             S.sel = (S.sel - 2) % total + 1
         end
-        renderAllContent()
+        RequestRender()
     end, 60)
     local selText = Factory.CreateText(tree,
-        string.format("СТАНЦИЯ  %d / %d", (stationTotal > 0 and S.sel) or 0, stationTotal), 13, Theme.Gold, true, 1)
+        string.format("STATION  %d / %d", (stationTotal > 0 and S.sel) or 0, stationTotal), 13, Theme.Gold, true, 1)
     if selText then Factory.AnchorWidget(surface, selText, PAD + 140, selY + 15, 240, 20, 7) end
     createGameButton(hostCanvas, surface, tree, "NEXT >>", PAD + contentW - 126, selY + 10, 110, 34, function()
         local _, total = SelectedStation()
         if total > 0 then
             S.sel = S.sel % total + 1
         end
-        renderAllContent()
+        RequestRender()
     end, 60)
 
     -- ===== детали станции (132..220) =====
@@ -1756,18 +1774,18 @@ local function renderAllContent()
     local bigW = (contentW - 32 - 3 * 10) / 4
     local bigH = 46
     local bigBtns = {
-        { "АВТО-ПАЛЫ", DoAutoFill },
-        { "ЗАПУСК", DoLaunchRepeat },
-        { "СОБРАТЬ ЛУТ", DoCollect },
-        { "СОБРАТЬ ВСЁ", DoCollectAll },
+        { "AUTO PALS", DoAutoFill },
+        { "START", DoLaunchRepeat },
+        { "COLLECT", DoCollect },
+        { "COLLECT ALL", DoCollectAll },
     }
     for i, def in ipairs(bigBtns) do
         local label, fn = def[1], def[2]
         createGameButton(hostCanvas, surface, tree, label,
             PAD + 16 + (i - 1) * (bigW + 10), btnY, bigW, bigH, function()
                 SafeDo("btn:" .. tostring(label), fn)
-                -- одна перерисовка на клик
-                if State.isDisplayed then renderAllContent() end
+                -- без мгновенной перерисовки: действие само обновит панель
+                -- после серверной проверки (анти-фликер/анти-краш)
             end, 60)
     end
 
@@ -1778,9 +1796,9 @@ local function renderAllContent()
     Factory.DrawFrame(surface, tree, PAD, misY, contentW, misH, Theme.Divider)
 
     local MODE_TITLE = {
-        missions = "РЕЖИМ: МИССИИ ⟳",
-        palbox   = "РЕЖИМ: PALBOX ⟳",
-        assigned = "РЕЖИМ: НАЗНАЧЕНЫ ⟳",
+        missions = "MODE: MISSIONS ⟳",
+        palbox   = "MODE: PALBOX ⟳",
+        assigned = "MODE: ASSIGNED ⟳",
     }
     local assignedItems = nil
     if S.mode == "assigned" then
@@ -1802,18 +1820,18 @@ local function renderAllContent()
         for i, m in ipairs(order) do if m == S.mode then idx = i; break end end
         S.mode = order[(idx - 2) % 3 + 1]
         S.listPage = 1
-        if S.mode == "palbox" then SafeDo("загрузка palbox", DoLoadPalbox)
-        elseif S.mode == "missions" and S.missions == nil then SafeDo("загрузка миссий", DoLoadMissions) end
-        renderAllContent()
+        if S.mode == "palbox" then SafeDo("load palbox", DoLoadPalbox)
+        elseif S.mode == "missions" and S.missions == nil then SafeDo("load missions", DoLoadMissions) end
+        RequestRender()
     end, 60)
     createGameButton(hostCanvas, surface, tree, MODE_TITLE[S.mode] or "?", PAD + 58, misY + 3, 320, 22, function()
         -- клик по текущему режиму = обновить список этого режима
         if S.mode == "missions" then
-            SafeDo("обновление миссий", DoLoadMissions)
+            SafeDo("refresh missions", DoLoadMissions)
         elseif S.mode == "palbox" then
-            SafeDo("обновление palbox", DoLoadPalbox)
+            SafeDo("refresh palbox", DoLoadPalbox)
         end
-        renderAllContent()
+        RequestRender()
     end, 60)
     createGameButton(hostCanvas, surface, tree, ">", PAD + 386, misY + 3, 34, 22, function()
         local order = { "missions", "palbox", "assigned" }
@@ -1821,12 +1839,12 @@ local function renderAllContent()
         for i, m in ipairs(order) do if m == S.mode then idx = i; break end end
         S.mode = order[idx % 3 + 1]
         S.listPage = 1
-        if S.mode == "palbox" then SafeDo("загрузка palbox", DoLoadPalbox)
-        elseif S.mode == "missions" and S.missions == nil then SafeDo("загрузка миссий", DoLoadMissions) end
-        renderAllContent()
+        if S.mode == "palbox" then SafeDo("load palbox", DoLoadPalbox)
+        elseif S.mode == "missions" and S.missions == nil then SafeDo("load missions", DoLoadMissions) end
+        RequestRender()
     end, 60)
     local listHint = Factory.CreateText(tree,
-        string.format("стр %d/%d · всего %d", S.listPage, pages, #items), 10, Theme.TextSecond, false, 0)
+        string.format("page %d/%d · total %d", S.listPage, pages, #items), 10, Theme.TextSecond, false, 0)
     if listHint then Factory.AnchorWidget(surface, listHint, PAD + 440, misY + 8, 200, 14, 7) end
 
     -- строки списка (6 на страницу)
@@ -1842,10 +1860,9 @@ local function renderAllContent()
             local t = Factory.CreateText(tree, string.format("%d. %s", i, it.text), 10,
                 cur and Theme.TextPrimary or Theme.TextSecond, false, 0)
             if t then Factory.AnchorWidget(surface, t, PAD + 24, cy + 8, 700, 15, 7) end
-            createGameButton(hostCanvas, surface, tree, cur and "ВЫБРАНА" or "ВЫБРАТЬ",
+            createGameButton(hostCanvas, surface, tree, cur and "SELECTED" or "SELECT",
                 PAD + contentW - 130, cy + 2, 112, 26, function()
                     SafeDo("select mission", function() DoSelectMission(it.id) end)
-                    if State.isDisplayed then renderAllContent() end
                 end, 60)
         elseif S.mode == "palbox" and it then
             local rowBg = Factory.CreateSolidBorder(tree, it.busy and Theme.Divider or Theme.CardActive)
@@ -1853,15 +1870,14 @@ local function renderAllContent()
             local lvl = it.level and ("Lv" .. it.level) or "Lv?"
             local rk = (it.rank and it.rank > 0) and (" ★" .. it.rank) or ""
             local strn = it.strength and tostring(it.strength) or "?"
-            local mark = it.busy and "  [на экспедиции]" or (it.excluded and "  [искл.]" or "")
+            local mark = it.busy and "  [on expedition]" or (it.excluded and "  [excluded]" or "")
             local t = Factory.CreateText(tree,
-                string.format("%d. %s %s%s | сила %s%s", i, it.name, lvl, rk, strn, mark), 10,
+                string.format("%d. %s %s%s | power %s%s", i, it.name, lvl, rk, strn, mark), 10,
                 it.busy and Theme.TextDim or Theme.TextSecond, false, 0)
             if t then Factory.AnchorWidget(surface, t, PAD + 24, cy + 8, 700, 15, 7) end
-            createGameButton(hostCanvas, surface, tree, it.busy and "ЗАНЯТ" or "+ ДОБАВИТЬ",
+            createGameButton(hostCanvas, surface, tree, it.busy and "BUSY" or "+ ADD",
                 PAD + contentW - 130, cy + 2, 112, 26, function()
                     SafeDo("add pal", function() DoAddPal(it.key) end)
-                    if State.isDisplayed then renderAllContent() end
                 end, 60)
         elseif S.mode == "assigned" and it then
             local rowBg = Factory.CreateSolidBorder(tree, Theme.CardActive)
@@ -1869,12 +1885,11 @@ local function renderAllContent()
             local lvl = it.level and ("Lv" .. it.level) or ""
             local strn = it.strength and tostring(it.strength) or "?"
             local t = Factory.CreateText(tree,
-                string.format("%d. %s %s | сила %s", i, it.name, lvl, strn), 10, Theme.TextSecond, false, 0)
+                string.format("%d. %s %s | power %s", i, it.name, lvl, strn), 10, Theme.TextSecond, false, 0)
             if t then Factory.AnchorWidget(surface, t, PAD + 24, cy + 8, 700, 15, 7) end
-            createGameButton(hostCanvas, surface, tree, "− СНЯТЬ",
+            createGameButton(hostCanvas, surface, tree, "− REMOVE",
                 PAD + contentW - 130, cy + 2, 112, 26, function()
                     SafeDo("remove pal", function() DoRemovePal(it.key) end)
-                    if State.isDisplayed then renderAllContent() end
                 end, 60)
         end
     end
@@ -1882,9 +1897,9 @@ local function renderAllContent()
     -- подсказка для пустого списка
     if #items == 0 then
         local hints = {
-            missions = "Список пуст. Нажми «РЕЖИМ: МИССИИ ⟳» — загрузятся доступные экспедиции с требованием стихии и силы. ВЫБРАТЬ → PALBOX → добавь палов → ЗАПУСК. Слабые палы = 0% награды!",
-            palbox   = "Нажми «РЕЖИМ: PALBOX ⟳» — загрузится твой Palbox (только Palbox: партия и рабочие базы не подходят), сортировка по силе.",
-            assigned = "Назначенных палов нет. Выбери миссию, затем добавь палов из PALBOX или нажми АВТО-ПАЛЫ.",
+            missions = "List is empty. Click 'MODE: MISSIONS ⟳' to load available expeditions with element and power requirements. SELECT → PALBOX → add pals → START. Weak pals = 0% reward!",
+            palbox   = "Click 'MODE: PALBOX ⟳' to load your Palbox (Palbox only: party and base workers are not eligible), sorted by power.",
+            assigned = "No pals assigned. Select a mission, then add pals from PALBOX or use AUTO PALS.",
         }
         local hint = Factory.CreateText(tree, hints[S.mode] or "", 10, Theme.TextDim, false, 0)
         if hint then Factory.AnchorWidget(surface, hint, PAD + 16, misY + 48, contentW - 32, 80, 7) end
@@ -1896,31 +1911,29 @@ local function renderAllContent()
         local stNow = SelectedStation()
         local _, stState = GetState(stNow)
         if stState == "InProgress" then
-            createGameButton(hostCanvas, surface, tree, "ОТМЕНИТЬ ЭКСПЕДИЦИЮ", PAD + 16, botY, 220, 26, function()
+            createGameButton(hostCanvas, surface, tree, "CANCEL EXPEDITION", PAD + 16, botY, 220, 26, function()
                 SafeDo("cancel mission", DoCancelMission)
-                if State.isDisplayed then renderAllContent() end
             end, 60)
         else
-            createGameButton(hostCanvas, surface, tree, "СНЯТЬ ВСЕХ", PAD + 16, botY, 150, 26, function()
+            createGameButton(hostCanvas, surface, tree, "REMOVE ALL", PAD + 16, botY, 150, 26, function()
                 SafeDo("unselect all", DoUnselectAllPals)
-                if State.isDisplayed then renderAllContent() end
             end, 60)
         end
     elseif S.mode == "palbox" then
-        createGameButton(hostCanvas, surface, tree, "ОБНОВИТЬ СПИСОК", PAD + 16, botY, 190, 26, function()
+        createGameButton(hostCanvas, surface, tree, "RELOAD LIST", PAD + 16, botY, 190, 26, function()
             SafeDo("reload palbox", DoLoadPalbox)
-            renderAllContent()
+            RequestRender()
         end, 60)
     end
-    createGameButton(hostCanvas, surface, tree, "< СТР", PAD + contentW - 350, botY, 105, 26, function()
+    createGameButton(hostCanvas, surface, tree, "< PAGE", PAD + contentW - 350, botY, 105, 26, function()
         S.listPage = S.listPage - 1
         if S.listPage < 1 then S.listPage = pages end
-        renderAllContent()
+        RequestRender()
     end, 60)
-    createGameButton(hostCanvas, surface, tree, "СТР >", PAD + contentW - 235, botY, 105, 26, function()
+    createGameButton(hostCanvas, surface, tree, "PAGE >", PAD + contentW - 235, botY, 105, 26, function()
         S.listPage = S.listPage + 1
         if S.listPage > pages then S.listPage = 1 end
-        renderAllContent()
+        RequestRender()
     end, 60)
 
 
@@ -1929,15 +1942,16 @@ local function renderAllContent()
     local logBg = Factory.CreateSolidBorder(tree, Theme.PanelSection)
     if logBg then Factory.AnchorWidget(surface, logBg, PAD, logY, contentW, logH, 5) end
     Factory.DrawFrame(surface, tree, PAD, logY, contentW, logH, Theme.Divider)
-    local logTitle = Factory.CreateText(tree, "ЛОГ:", 10, Theme.TextDim, true, 0)
+    local logTitle = Factory.CreateText(tree, "LOG:", 10, Theme.TextDim, true, 0)
     if logTitle then Factory.AnchorWidget(surface, logTitle, PAD + 16, logY + 5, 300, 13, 7) end
-    local startIdx = math.max(1, #S.logLines - Config.LogLines + 1)
+    local fitLines = math.floor((logH - 26) / 15)  -- сколько строк реально влезает в бокс
+    local startIdx = math.max(1, #S.logLines - math.min(Config.LogLines, fitLines) + 1)
     local shown = 0
     for i = startIdx, #S.logLines do
         shown = shown + 1
         local lineTxt = S.logLines[i]
         local color = Theme.TextSecond
-        if lineTxt:find("ОШИБКА", 1, true) then color = Theme.Red
+        if lineTxt:find("ERROR", 1, true) then color = Theme.Red
         elseif lineTxt:find("InProgress", 1, true) or lineTxt:find("ok", 1, true) then color = Theme.Green end
         local t = Factory.CreateText(tree, lineTxt, 10, color, false, 0)
         if t then Factory.AnchorWidget(surface, t, PAD + 16, logY + 22 + (shown - 1) * 15, contentW - 32, 14, 7) end
@@ -1947,11 +1961,30 @@ local function renderAllContent()
     local footerY = UI_H - PAD - 32
     local footLine = Factory.CreateSolidBorder(tree, Theme.Divider)
     if footLine then Factory.AnchorWidget(surface, footLine, PAD, footerY - 4, contentW, 1, 6) end
-    local escHint = Factory.CreateText(tree, "F6 или ESC — закрыть панель", 10, Theme.TextDim, false, 0)
+    local escHint = Factory.CreateText(tree, string.format("%s or ESC — close panel", Config.OpenKey), 10, Theme.TextDim, false, 0)
     if escHint then Factory.AnchorWidget(surface, escHint, PAD + 10, footerY + 8, 400, 16, 7) end
     createGameButton(hostCanvas, surface, tree, "CLOSE [ESC]", PAD + contentW - 166, footerY - 2, 150, 30, function()
         Presenter_Close()
     end, 60)
+end
+
+local lastRenderAt, renderPending = 0, false
+RequestRender = function()
+    if not State.isDisplayed then return end
+    local now = os.clock() * 1000
+    if now - lastRenderAt >= 250 then
+        lastRenderAt = now
+        renderAllContent()
+        return
+    end
+    if renderPending then return end
+    renderPending = true
+    DelayCall(270, function()
+        renderPending = false
+        if not State.isDisplayed then return end
+        lastRenderAt = os.clock() * 1000
+        renderAllContent()
+    end)
 end
 
 -- ------------------------------- Presenter ----------------------------------
@@ -1975,22 +2008,22 @@ local function Presenter_Show()
 
     local layout = Engine.LocateMainLayout()
     if not IsValidObj(layout) then
-        Log("layout не найден — войди в мир и открой панель снова")
+        Log("layout not found — enter the world and open the panel again")
         return
     end
     local tree = layout.WidgetTree
     if not IsValidObj(tree) then
-        Log("WidgetTree не найден")
+        Log("WidgetTree not found")
         return
     end
     local layoutName
     local okN, n = pcall(function() return tree:GetFullName() end)
     if okN and type(n) == "string" then layoutName = n end
-    if not layoutName then Log("не удалось получить имя layout"); return end
+    if not layoutName then Log("failed to get layout name"); return end
 
     local hostCanvas = Engine.FindHostCanvas(layoutName, Assets.HostPanelName)
     if not IsValidObj(hostCanvas) then
-        Log("host canvas не найден")
+        Log("host canvas not found")
         return
     end
 
@@ -2004,7 +2037,7 @@ local function Presenter_Show()
     State.isDisplayed   = true
 
     renderAllContent()
-    Log("панель открыта")
+    Log("panel opened")
 end
 
 local function Presenter_IsVisible()
@@ -2012,9 +2045,7 @@ local function Presenter_IsVisible()
 end
 
 local function Presenter_Refresh()
-    if State.isDisplayed then
-        renderAllContent()
-    end
+    RequestRender()
 end
 
 refreshIfOpen = Presenter_Refresh
@@ -2032,12 +2063,12 @@ end
 
 local function bindKey(keyName, fn)
     if type(RegisterKeyBind) ~= "function" or type(Key) ~= "table" then
-        Err("RegisterKeyBind недоступен")
+        Err("RegisterKeyBind unavailable")
         return false
     end
     local keyEnum = Key[tostring(keyName):upper()]
     if keyEnum == nil then
-        Err("неизвестная клавиша: " .. tostring(keyName))
+        Err("unknown key: " .. tostring(keyName))
         return false
     end
     return pcall(RegisterKeyBind, keyEnum, bindAction(fn))
@@ -2055,7 +2086,7 @@ local function onWorldEnter()
     SafeDo(function()
         if Presenter_IsVisible() then Presenter_Close() end
     end)
-    Log("мир загружен — панель закрыта")
+    Log("world loaded — panel closed")
 end
 
 local function registerWorldEnterHook()
@@ -2086,19 +2117,19 @@ local function DumpHookArchive(label, paramPid, paramArchive)
         local bytes = arc and ReadField(arc, "Bytes") or nil
         local t = bytes and ArrayToTable(bytes) or nil
         if t and #t > 0 then
-            Logf(">>> [hook] %s: playerId=%s, архив(%d байт): %s",
+            Logf(">>> [hook] %s: playerId=%s, archive(%d bytes): %s",
                 label, tostring(pid), #t, BytesToHex(t, 64))
         else
-            Logf(">>> [hook] %s: playerId=%s, архив не читается", label, tostring(pid))
+            Logf(">>> [hook] %s: playerId=%s, archive not readable", label, tostring(pid))
         end
     end)
 end
 
 local function RegisterPassiveHooks()
     local hooks = {
-        { "выбор миссии",  "RequestSelectMission_ServerInternal",        true },
-        { "добавить пала", "RequestSelectAssignedCharacter_ServerInternal", true },
-        { "снять пала",    "RequestUnselectAssignedCharacter_ServerInternal", true },
+        { "select mission",  "RequestSelectMission_ServerInternal",        true },
+        { "add pal", "RequestSelectAssignedCharacter_ServerInternal", true },
+        { "remove pal",    "RequestUnselectAssignedCharacter_ServerInternal", true },
     }
     for _, h in ipairs(hooks) do
         local label, fn = h[1], h[2]
@@ -2108,20 +2139,20 @@ local function RegisterPassiveHooks()
                 DumpHookArchive(label, paramPid, paramArchive)
             end)
         if ok then
-            Log("hook установлен: " .. label)
+            Log("hook registered: " .. label)
         else
-            Log("hook НЕ установлен: " .. label .. " → " .. tostring(err))
+            Log("hook NOT registered: " .. label .. " → " .. tostring(err))
         end
     end
     local okS, errS = pcall(RegisterHook,
         "/Script/Pal.PalMapObjectCharacterTeamMissionModel:RequestStartMission_ServerInternal",
         function(self, paramPid)
-            SafeDo("hook:старт", function()
-                Log(">>> [hook] старт экспедиции: playerId=" .. tostring(Num(Unwrap(paramPid))))
+            SafeDo("hook:start", function()
+                Log(">>> [hook] expedition start: playerId=" .. tostring(Num(Unwrap(paramPid))))
             end)
         end)
-    if okS then Log("hook старта установлен")
-    else Log("hook старта НЕ установлен → " .. tostring(errS)) end
+    if okS then Log("start hook registered")
+    else Log("start hook NOT registered → " .. tostring(errS)) end
 end
 
 
@@ -2133,7 +2164,7 @@ local function init()
     end)
     registerWorldEnterHook()
     RegisterPassiveHooks()
-    Log("ExpeditionHub v0.9 готов: архив передаётся через заёмный байтовый буфер (обход бага UE4SS с массивами в структурах).")
+    Log("ExpeditionHub v0.10 ready: full English UI, render throttling (rapid-click crash fix), log box fit, time-left display.")
 end
 
 SafeDo(init)
