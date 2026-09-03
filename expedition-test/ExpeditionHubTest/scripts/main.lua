@@ -1,42 +1,41 @@
 -- ============================================================================================
 -- ============================================================================================
 -- ============================================================================================
--- ExpeditionHubTest v0.7 — ТЕСТОВЫЙ мод (UE4SS Lua) для Palworld 0.4.11
+-- ============================================================================================
+-- ExpeditionHubTest v0.8 — ТЕСТОВЫЙ мод (UE4SS Lua) для Palworld 0.4.11
 -- Менеджер экспедиций: панель на F6. ВСЕ станции со всех баз. Полный цикл из панели:
 -- выбор миссии → НАЗНАЧЕНИЕ ПАЛОВ ВРУЧНУЮ (Palbox, слоты 0..100) или АВТО → запуск → сбор.
 -- Игровой UI станции НЕ открываем вообще (v0.4/v0.5: ломает мышь + краш при перезаходе).
 --
--- УРОКИ ЖИВОГО ТЕСТА v0.6 (краш 0x70 при выборе миссии):
---   • ПРЯМАЯ ЗАПИСЬ TargetMissionId ЗАПРЕЩЕНА: она обходит серверный флоу (делегаты,
---     RequiredElementalCharacterNum и пр.) и оставляет станцию в полуинициализированном
---     состоянии → краш 0x70 на следующем рендере/старте. Удалена полностью;
---   • имена CDO в объектной системе UE — БЕЗ префикса U:
---     /Script/Pal.Default__PalActionTransportItem (в v0.6 был с U — не находился);
---   • RegisterHook требует ДВОЕТОЧИЕ: /Script/Pal.Класс:Функция (в v0.5/v0.6 была
---     точка — хуки молча не регистрировались);
---   • действия со станцией возможны только в состоянии Ready (InProgress/Reward
---     сервер всё равно отклонит — теперь проверяем заранее и пишем состояние в лог).
+-- УРОКИ ЖИВОГО ТЕСТА v0.7 (краш 0x70 при выборе миссии):
+--   • вызов статических сериализаторов игры (WriteBlackboard/WritePlayerFeedItemTo на CDO)
+--     САМ КРАШИТ 0x70 (ref-параметр архива) → в v0.8 НЕ вызываем их вообще;
+--   • хуки с двоеточием работают и дали ВАНИЛЬНЫЕ ЭТАЛОНЫ байтов FPalNetArchive:
+--       FName        → int32(len+1) + UTF-16LE + L'\0'
+--         ("DUNGEON_GRASS" → 0E 00 00 00 44 00 55 00 … 53 00 00 00, 32 байта)
+--       FPalInstanceID → FString(DebugName, пустая → 00 00 00 00)
+--                        + PlayerUId GUID (16 байт raw LE) + InstanceId GUID (16 байт raw LE)
+--         (итого 36 байт; SDK: FPalInstanceID{PlayerUId FGuid; InstanceId FGuid; DebugName FString});
+--   • АВТО-заполнение подтверждено живьём (0 → 6 палов);
+--   • байты теперь собираем ЧИСТЫМ LUA — никаких вызовов игровых сериализаторов.
 --
 -- МЕХАНИКА (SDK + ванила):
---   • флоу: список миссий → выбор → окно палов 0..100 → старт. Требование стихии ×N,
+--   • флоу: список миссий → выбор → заполнение палов 0..100 → старт. Требование стихии ×N,
 --     рекомендуемая сила; % награды = сила команды ÷ рекомендуемая; палы только из Palbox;
---   • все записи — через ServerInternal модели станции (путь подтверждён v0.3):
+--   • все записи — через ServerInternal модели станции (подтверждено v0.3/v0.7):
 --       RequestSelectMission_ServerInternal(playerId, FPalNetArchive)
 --       RequestSelectAssignedCharacter_ServerInternal(playerId, FPalNetArchive)
 --       RequestUnselectAssignedCharacter_ServerInternal(playerId, FPalNetArchive)
 --       RequestUnselectAll_ServerInternal(playerId) / RequestSelectAuto_ServerInternal(playerId)
 --       RequestStartMission_ServerInternal(playerId) / RequestCancelInProgressMission_ServerInternal(playerId)
 --   • FPalNetArchive = { TArray<uint8> Bytes }, передаётся таблицей { Bytes = {…} };
---   • байты FName сериализует сама игра: статический WriteBlackboard(archive, FName)
---     на CDO PalActionTransportItem;
---   • байты FPalInstanceID пала: раскладки-кандидаты с проверкой результата; формат
---     уточняется по пробе GUID (WritePlayerFeedItemTo) и дампам хуков.
+--   • действия со станцией — только в состоянии Ready (InProgress/Reward сервер отклонит).
 --
 -- БОРЬБА С КРАШАМИ (pcall НЕ ловит нативные краши):
 --   1. НИ ОДНОЙ ссылки на UObject между действиями (S хранит только примитивы/таблицы);
 --   2. одна перерисовка на клик, все объекты переищиваются заново;
 --   3. UI-модели — ТОЛЬКО ЧТЕНИЕ; записи только через ServerInternal станции;
---   4. НИКАКИХ прямых записей игровых полей, влияющих на логику (урок v0.6);
+--   4. НИКАКИХ прямых записей игровых полей и вызовов игровых сериализаторов (уроки v0.6/v0.7);
 --   5. хуки ServerInternal только ЛОГИРУЮТ (дамп байтов — и наши, и ванильные вызовы).
 --
 -- УДАЛЕНИЕ: снести папку Mods/ExpeditionHubTest.
@@ -59,12 +58,9 @@ local ELEMENT_NAMES = {
     [0] = "—", [1] = "Normal", [2] = "Fire", [3] = "Water", [4] = "Leaf",
     [5] = "Electricity", [6] = "Ice", [7] = "Earth", [8] = "Dark", [9] = "Dragon",
 }
--- CDO классов со статическими сериализаторами FPalNetArchive.
--- ВАЖНО: имена CDO в объектной системе БЕЗ префикса U (сверено с GObjects-дампом).
-local ACTION_CDO_PATH  = "/Script/Pal.Default__PalActionTransportItem"
-local ACTION_CLASS_PATH = "/Script/Pal.PalActionTransportItem"
-local SPAWN_CDO_PATH   = "/Script/Pal.Default__PalActionSpawnItem"
-local PLAYER_CDO_PATH  = "/Script/Pal.Default__PalPlayerUtility"
+-- Статические сериализаторы игры (WriteBlackboard и пр.) НЕ вызываем: вызов на CDO
+-- крашил 0x70 (живой тест v0.7). Байты архива собираем сами — см. сериализаторы ниже
+-- (форматы подтверждены ванильными дампами из хуков).
 
 -- ============================== СОСТОЯНИЕ (только примитивы, НИКАКИХ UObject) ============
 local S = {
@@ -74,8 +70,6 @@ local S = {
     mode      = "missions", -- режим блока списка: missions | palbox | assigned
     palbox    = nil,        -- снимок Palbox { {key, idTable, name, level, rank, strength, busy} }
     listPage  = 1,          -- страница списка
-    palLayout = nil,        -- сработавшая раскладка байтов FPalInstanceID (1..3)
-    guidProbe = nil,        -- лог-строка пробы сериализации GUID
 }
 
 -- ============================== ЛОГ ==============================
@@ -520,22 +514,39 @@ local function GuidToBytes(g)
     return t
 end
 
--- FPalInstanceID → байты архива (раскладки-кандидаты):
---   1: PlayerUId(16) + InstanceId(16)
---   2: PlayerUId(16) + InstanceId(16) + пустая FString (int32 0)
---   3: только InstanceId(16)
-local function BuildPalIdBytes(idTable, layout)
-    local t = {}
-    if layout == 1 or layout == 2 then
-        local p = GuidToBytes(idTable.PlayerUId or { A = 0, B = 0, C = 0, D = 0 })
-        for i = 1, #p do t[#t + 1] = p[i] end
+-- ================== СЕРИАЛИЗАТОРЫ FPalNetArchive (чистый Lua) ==================
+-- Форматы подтверждены ВАНИЛЬНЫМИ ДАМПАМИ из хуков (живой тест v0.7):
+--   строка/FName → int32(число символов С нулём) + UTF-16LE + L'\0';
+--   FPalInstanceID → FString(DebugName, пустая) + PlayerUId(16 raw LE) + InstanceId(16 raw LE).
+
+-- FString: int32(len+1) + UTF-16LE + завершающий L'\0' (ASCII-имена)
+local function FStringBytes(text)
+    local s = tostring(text or "")
+    local out = U32Bytes(s:len() + 1)
+    for i = 1, #s do
+        local c = s:byte(i)
+        out[#out + 1] = c
+        out[#out + 1] = 0
     end
+    out[#out + 1] = 0
+    out[#out + 1] = 0
+    return out
+end
+
+-- FName → байты архива ("DUNGEON_GRASS" → 0E 00 00 00 44 00 55 00 … 53 00 00 00)
+local function FNameToArchiveBytes(name)
+    return FStringBytes(name)
+end
+
+-- FPalInstanceID пала → 36 байт архива:
+--   00 00 00 00 (пустой FString DebugName) + PlayerUId GUID + InstanceId GUID
+local function PalIdToArchiveBytes(idTable)
+    local out = U32Bytes(0)
+    local p = GuidToBytes(idTable.PlayerUId or { A = 0, B = 0, C = 0, D = 0 })
+    for i = 1, #p do out[#out + 1] = p[i] end
     local inst = GuidToBytes(idTable.InstanceId)
-    for i = 1, #inst do t[#t + 1] = inst[i] end
-    if layout == 2 then
-        t[#t + 1] = 0; t[#t + 1] = 0; t[#t + 1] = 0; t[#t + 1] = 0
-    end
-    return t
+    for i = 1, #inst do out[#out + 1] = inst[i] end
+    return out
 end
 
 local function BytesToHex(bytes, maxN)
@@ -546,79 +557,6 @@ local function BytesToHex(bytes, maxN)
     return table.concat(hex, " ")
 end
 
--- чем звонить в статическую функцию: CDO → сам класс → живой экземпляр
--- (для статических функций self не используется, подходит любой из них)
-local function GetStaticCaller(path, className, classPath)
-    local ok, obj = pcall(StaticFindObject, path)
-    if ok and IsValidObj(obj) then return obj, "CDO" end
-    if classPath then
-        local okC, cls = pcall(StaticFindObject, classPath)
-        if okC and IsValidObj(cls) then return cls, "класс" end
-    end
-    local okA, all = pcall(FindAllOf, className)
-    if okA and type(all) == "table" then
-        for _, m in ipairs(all) do
-            local mo = Unwrap(m)
-            if IsValidObj(mo) then return mo, "экземпляр" end
-        end
-    end
-    return nil, "не найден"
-end
-
--- FName миссии → байты FPalNetArchive: сериализует САМА ИГРА
--- (статический UPalActionTransportItem.WriteBlackboard(archive, FName))
-local function MissionNameBytes(name)
-    local caller, src = GetStaticCaller(ACTION_CDO_PATH, "PalActionTransportItem", ACTION_CLASS_PATH)
-    if not caller then return nil, "PalActionTransportItem (" .. tostring(src) .. ")" end
-    local ar = { Bytes = {} }
-    local ok, err = pcall(function() caller:WriteBlackboard(ar, name) end)
-    if not ok then return nil, "WriteBlackboard → " .. tostring(err) end
-    local bytes = ArrayToTable(ar.Bytes)
-    if not bytes or #bytes == 0 then return nil, "архив после WriteBlackboard пуст" end
-    Logf("WriteBlackboard(%s) ок", tostring(src))
-    return bytes
-end
-
--- разовые пробы сериализации (диагностика формата архива, ВСЕ исходы в лог)
-local function ProbeGuidFormat()
-    if S.guidProbe then return end
-    S.guidProbe = "выполнена"
-    -- 1) GUID + int32: WritePlayerFeedItemTo(Blackboard, FPalItemSlotId, int32)
-    local caller, src = GetStaticCaller(PLAYER_CDO_PATH, "PalPlayerUtility", nil)
-    if caller then
-        local ar = { Bytes = {} }
-        local ok = pcall(function()
-            caller:WritePlayerFeedItemTo(ar,
-                { ContainerId = { ID = { A = 0x01020304, B = 0x05060708, C = 0x090A0B0C, D = 0x0D0E0F10 } },
-                  SlotIndex = 0x11223344 }, 0x55667788)
-        end)
-        local bytes = ok and ArrayToTable(ar.Bytes) or nil
-        if bytes and #bytes > 0 then
-            Logf("[проба GUID+int] %s → %d байт: %s", tostring(src), #bytes, BytesToHex(bytes, 40))
-            Log("[проба GUID+int] raw-LE ожидалось: 04 03 02 01 08 07 06 05 0C 0B 0A 09 10 0F 0E 0D 44 33 22 11 88 77 66 55")
-        else
-            Log("[проба GUID+int] байтов нет (pcall=" .. tostring(ok) .. ")")
-        end
-    else
-        Log("[проба GUID+int] PalPlayerUtility не найден (" .. tostring(src) .. ")")
-    end
-    -- 2) FName + int32: UPalActionSpawnItem.WriteBlackboard(Blackboard, FPalStaticItemIdAndNum)
-    local caller2, src2 = GetStaticCaller(SPAWN_CDO_PATH, "PalActionSpawnItem", nil)
-    if caller2 then
-        local ar2 = { Bytes = {} }
-        local ok2 = pcall(function()
-            caller2:WriteBlackboard(ar2, { StaticItemId = "ProbeName", Num = 0x11223344 })
-        end)
-        local bytes2 = ok2 and ArrayToTable(ar2.Bytes) or nil
-        if bytes2 and #bytes2 > 0 then
-            Logf("[проба FName+int] %s → %d байт: %s", tostring(src2), #bytes2, BytesToHex(bytes2, 48))
-        else
-            Log("[проба FName+int] байтов нет (pcall=" .. tostring(ok2) .. ")")
-        end
-    else
-        Log("[проба FName+int] PalActionSpawnItem не найден (" .. tostring(src2) .. ")")
-    end
-end
 
 -- назначенные палы станции (чтение AssignedInfo.RepInfoArray.Items) — примитивы/таблицы
 local function AssignedItemsOf(st)
@@ -949,12 +887,7 @@ local function DoSelectMission(missionId)
     end
     Logf("ВЫБОР миссии '%s' (playerId=%s, state=%s)", tostring(missionId), tostring(pid), tostring(sname))
 
-    local bytes, why = MissionNameBytes(missionId)
-    if not bytes then
-        Err("архив недоступен: " .. tostring(why) ..
-            " — пришли лог; пока миссию можно выбрать 1 раз в игровом UI")
-        return
-    end
+    local bytes = FNameToArchiveBytes(missionId)
     Logf("архив миссии (%d байт): %s", #bytes, BytesToHex(bytes, 32))
     SafeDo("RequestSelectMission_ServerInternal", function()
         local st1 = SelectedStation()
@@ -968,8 +901,8 @@ local function DoSelectMission(missionId)
             if now == missionId then
                 Logf("ГОТОВО: миссия выбрана через архив (TargetMissionId=%s)", tostring(now))
             else
-                Err(string.format("выбор через архив не сработал (TargetMissionId=%s). " ..
-                    "Выбери эту миссию ОДИН раз в игровом UI и пришли строки [hook] — вставлю точный формат.",
+                Err(string.format("выбор не сработал (TargetMissionId=%s). " ..
+                    "Сравни в логе наши байты с «>>> [hook] выбор миссии» и пришли лог.",
                     tostring(now)))
             end
             if refreshIfOpen then refreshIfOpen() end
@@ -1111,10 +1044,9 @@ local function DoLoadPalbox()
     Logf("Palbox: палов %d (сила: %s)", #list, bound and "показана" or "нет — без живой модели")
 end
 
--- добавить/снять пала: перебор раскладок байтов FPalInstanceID с проверкой результата
-local PAL_LAYOUTS = { 1, 2, 3 }
-
-local function TryPalRequest(kind, key, before, layouts, idx)
+-- добавить/снять пала: байты по ванильному формату + проверка результата.
+-- Наши вызовы тоже видны в хуках («>>> [hook] добавить/снять пала») — сверка в логе.
+local function DoPalRequest(kind, key)
     local st = SelectedStation()
     if not st then return end
     local pid, psrc = GetLocalPlayerId()
@@ -1137,15 +1069,10 @@ local function TryPalRequest(kind, key, before, layouts, idx)
         return
     end
 
-    if idx > #layouts then
-        Err((kind == "add" and "добавление" or "снятие") ..
-            " не сработало ни с одной раскладкой байтов — см. лог и хуки")
-        return
-    end
-    local layout = layouts[idx]
-    local bytes = BuildPalIdBytes(idTable, layout)
-    Logf("%s пала: раскладка %d (%d байт): %s",
-        (kind == "add" and "добавить" or "снять"), layout, #bytes, BytesToHex(bytes, 40))
+    local before = #AssignedItemsOf(st)
+    local bytes = PalIdToArchiveBytes(idTable)
+    Logf("%s пала: архив(%d байт): %s",
+        (kind == "add" and "добавить" or "снять"), #bytes, BytesToHex(bytes, 40))
 
     SafeDo("RequestServerInternal", function()
         local st1 = SelectedStation()
@@ -1164,20 +1091,23 @@ local function TryPalRequest(kind, key, before, layouts, idx)
             local now = #AssignedItemsOf(st2)
             local ok = (kind == "add" and now > before) or (kind == "remove" and now < before)
             if ok then
-                S.palLayout = layout
-                Logf("ГОТОВО: раскладка %d работает (палов теперь %d)", layout, now)
+                Logf("ГОТОВО: пал %s (палов теперь %d)",
+                    (kind == "add" and "добавлен" or "снят"), now)
                 if refreshIfOpen then refreshIfOpen() end
             else
-                TryPalRequest(kind, key, before, layouts, idx + 1)
+                Err(string.format("%s не сработало (палов по-прежнему %d). " ..
+                    "Сравни в логе байты «>>> [hook] %s пала» с нашими и пришли лог.",
+                    (kind == "add" and "добавление" or "снятие"), now,
+                    (kind == "add" and "добавить" or "снять")))
             end
         end)
     end)
 end
 
+
 local function DoAddPal(key)
     local st = SelectedStation()
     if not st then return end
-    ProbeGuidFormat()
     local _, sname = GetState(st)
     if sname ~= "Ready" then
         Err(string.format("ДОБАВИТЬ: станция в состоянии %s — состав можно менять только в Ready%s",
@@ -1196,9 +1126,8 @@ local function DoAddPal(key)
             return
         end
     end
-    local layouts = S.palLayout and { S.palLayout } or PAL_LAYOUTS
     Logf("ДОБАВИТЬ пала %s (назначено %d, state=%s)", tostring(key), #assigned, tostring(sname))
-    TryPalRequest("add", key, #assigned, layouts, 1)
+    DoPalRequest("add", key)
 end
 
 local function DoRemovePal(key)
@@ -1214,9 +1143,8 @@ local function DoRemovePal(key)
         Log("назначенных палов нет")
         return
     end
-    local layouts = S.palLayout and { S.palLayout } or PAL_LAYOUTS
     Logf("СНЯТЬ пала %s (назначено %d)", tostring(key), #assigned)
-    TryPalRequest("remove", key, #assigned, layouts, 1)
+    DoPalRequest("remove", key)
 end
 
 
@@ -2115,7 +2043,7 @@ local function init()
     end)
     registerWorldEnterHook()
     RegisterPassiveHooks()
-    Log("ExpeditionHub v0.7 готов: починлены CDO/хуки, убрана прямая запись поля (краш), гейты состояний, ОТМЕНА.")
+    Log("ExpeditionHub v0.8 готов: сериализаторы архива на чистом Lua по ванильным дампам, вызовы игровых статиков убраны (краш).")
 end
 
 SafeDo(init)
