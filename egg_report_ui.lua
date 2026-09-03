@@ -89,6 +89,8 @@ PalUI.Theme = {
     Female        = hexToLinearColor("#FF8AC4", 1.00),
 
     PassiveSlotBg = hexToLinearColor("#11181C", 0.90),
+    Favorite      = hexToLinearColor("#FACC15", 1.00),
+    FavoriteDim   = hexToLinearColor("#6B7280", 1.00),
 }
 
 PalUI.Assets = {
@@ -793,6 +795,7 @@ end
 
 local ClickDispatcher = {
     subscribers = {},
+    cardKeys    = {},
     hookActive  = false,
 }
 
@@ -822,6 +825,24 @@ end
 
 function ClickDispatcher.Reset()
     ClickDispatcher.subscribers = {}
+    ClickDispatcher.cardKeys = {}
+end
+
+-- Card buttons are rebuilt on every page/filter change, so their handlers are
+-- tracked separately and dropped before the list is redrawn.
+function ClickDispatcher.SubscribeTransient(buttonWidget, callback)
+    ClickDispatcher.Subscribe(buttonWidget, callback)
+    local okName, name = pcall(function() return buttonWidget:GetFullName() end)
+    if okName and name then
+        ClickDispatcher.cardKeys[#ClickDispatcher.cardKeys + 1] = name
+    end
+end
+
+function ClickDispatcher.ClearTransient()
+    for _, key in ipairs(ClickDispatcher.cardKeys) do
+        ClickDispatcher.subscribers[key] = nil
+    end
+    ClickDispatcher.cardKeys = {}
 end
 
 local function assembleModalFrame(panel, tree, frameWidth, frameHeight)
@@ -909,6 +930,9 @@ local ControllerState = {
     pageSize     = PAGE_SIZE,
 
     scroll       = nil,
+    hostCanvas   = nil,
+    context      = nil,
+    favMaxIndex  = 3,
     pageLabel    = nil,
     sortButton   = nil,
     filterMarks  = {},
@@ -916,15 +940,21 @@ local ControllerState = {
     cardW        = 800,
 }
 
+local applyView
+
 local FILTERS = {
     { key = "all",   label = "ALL" },
     { key = "god",   label = "★ GOD" },
     { key = "iv",    label = "3x100" },
     { key = "clean", label = "CLEAN" },
     { key = "bad",   label = "DEBUFF" },
+    { key = "fav",   label = "★ FAV" },
 }
 
-local SORT_LABELS = { "SORT: BEST", "SORT: IV", "SORT: NAME", "SORT: HATCH" }
+local SORT_LABELS = { "SORT: BEST", "SORT: IV", "SORT: NAME", "SORT: HATCH", "SORT: FAV" }
+local SORT_MODE_COUNT = #SORT_LABELS
+
+local FAVORITE_LABELS = { [0] = "FAV  —", [1] = "FAV  I", [2] = "FAV  II", [3] = "FAV  III" }
 
 local function ivColor(v)
     v = v or 0
@@ -972,6 +1002,12 @@ local function parsePalDataList(palList, ctx)
     for index, pal in ipairs(palList) do
         pal._order       = index
         pal._displayName = resolveDisplayName(pal, world, utility)
+
+        local fav = tonumber(pal.favoriteIndex) or 0
+        if fav < 0 then fav = 0 end
+        if fav > 3 then fav = 3 end
+        pal.favoriteIndex = fav
+        pal._isFavorite   = (fav > 0)
 
         pal._evaluatedPassives = {}
         pal._goldCount   = 0
@@ -1041,7 +1077,42 @@ local function parsePalDataList(palList, ctx)
                    + pal._goodCount * 12
                    - pal._debuffCount * 55
                    + rank * 4
+                   + (pal.favoriteIndex or 0) * 25
     end
+end
+
+local createGameButton
+local rebuildList
+local refreshFilterCounts
+
+-- Cycles the favorite lock of a pal: none -> I -> II -> III -> none.
+local function cycleFavorite(pal)
+    local S = ControllerState
+    local ctx = S.context
+    local maxIdx = S.favMaxIndex or 3
+    local current = tonumber(pal.favoriteIndex) or 0
+    local target = (current + 1) % (maxIdx + 1)
+
+    if not (ctx and type(ctx.setFavorite) == "function") then
+        printLog("Favorite is not supported by this mod version")
+        return
+    end
+
+    local ok, err = ctx.setFavorite(pal, target)
+    if ok then
+        pal.favoriteIndex = target
+        pal._isFavorite   = (target > 0)
+        pal._score = (pal._score or 0) + (target - current) * 25
+        printLog(string.format("%s -> %s", tostring(pal._displayName), FAVORITE_LABELS[target] or tostring(target)))
+    else
+        printLog("Could not change favorite: " .. tostring(err))
+    end
+
+    refreshFilterCounts()
+    if S.filter == "fav" or S.sortMode == 5 then
+        applyView()
+    end
+    rebuildList()
 end
 
 local function drawPalCard(scrollBox, tree, pal, cardW)
@@ -1080,7 +1151,8 @@ local function drawPalCard(scrollBox, tree, pal, cardW)
     if bg then F.AnchorWidget(card, bg, 0, 0, cardW, cardH, 0) end
 
     local accent = T.BorderDefault
-    if pal._isGodRoll then accent = T.Gold
+    if (pal.favoriteIndex or 0) > 0 then accent = T.Favorite
+    elseif pal._isGodRoll then accent = T.Gold
     elseif pal._hasDebuff then accent = T.Red
     elseif pal._isClean then accent = T.Cyan
     elseif (pal._totalIV or 0) >= 240 then accent = T.Green end
@@ -1108,10 +1180,29 @@ local function drawPalCard(scrollBox, tree, pal, cardW)
     local lvlTxt = F.CreateText(tree, "Lv " .. (pal.level or 1), 11, T.TextSecond, true, 0)
     if lvlTxt then F.AnchorWidget(card, lvlTxt, padX + 320, headY + 3, 66, 15, 2) end
 
+    local favIdx  = pal.favoriteIndex or 0
+    local favBtnW = 116
+    local favBtnX = padX + 392
+
+    local favBtn = createGameButton(ControllerState.hostCanvas, card, tree,
+        FAVORITE_LABELS[favIdx] or "FAV", favBtnX, headY - 1, favBtnW, 22,
+        function() cycleFavorite(pal) end, 5, true)
+
+    if not favBtn then
+        local fbBg = F.CreateSolidBorder(tree, withAlpha(favIdx > 0 and T.Favorite or T.FavoriteDim, 0.18))
+        if fbBg then F.AnchorWidget(card, fbBg, favBtnX, headY - 1, favBtnW, 22, 4) end
+        local fbTxt = F.CreateText(tree, FAVORITE_LABELS[favIdx] or "FAV", 10,
+            favIdx > 0 and T.Favorite or T.FavoriteDim, true, 1)
+        if fbTxt then F.AnchorWidget(card, fbTxt, favBtnX, headY + 3, favBtnW, 14, 5) end
+    end
+
+    local favMark = F.CreateSolidBorder(tree, favIdx > 0 and T.Favorite or T.FavoriteDim)
+    if favMark then F.AnchorWidget(card, favMark, favBtnX, headY + 20, favBtnW, 2, 6) end
+
     local cursor = cardW - padX
     local function pill(text, col)
         local w = math.max(50, math.floor(#text * 6.6) + 16)
-        if cursor - w < padX + 400 then return end
+        if cursor - w < padX + 530 then return end
         cursor = cursor - w
         local p = F.CreateSolidBorder(tree, withAlpha(col, 0.16))
         if p then F.AnchorWidget(card, p, cursor, headY + 1, w, 18, 2) end
@@ -1120,6 +1211,9 @@ local function drawPalCard(scrollBox, tree, pal, cardW)
         cursor = cursor - 6
     end
 
+    if favIdx > 0 then
+        pill("★ FAV " .. string.rep("I", favIdx), T.Favorite)
+    end
     if pal._isGodRoll then
         pill("★ GOD ROLL", T.Gold)
     elseif (pal._goldCount or 0) > 0 then
@@ -1262,7 +1356,7 @@ local function drawNoticeCard(scrollBox, tree, cardW, message)
     if wrap then pcall(function() scrollBox:AddChild(wrap) end) end
 end
 
-local function applyView()
+function applyView()
     local S = ControllerState
     local out = {}
 
@@ -1271,7 +1365,8 @@ local function applyView()
         if     S.filter == "god"   then keep = p._isGodRoll or (p._goldCount or 0) > 0
         elseif S.filter == "iv"    then keep = p._is3x100
         elseif S.filter == "clean" then keep = p._isClean
-        elseif S.filter == "bad"   then keep = p._hasDebuff end
+        elseif S.filter == "bad"   then keep = p._hasDebuff
+        elseif S.filter == "fav"   then keep = ((p.favoriteIndex or 0) > 0) end
         if keep then out[#out + 1] = p end
     end
 
@@ -1290,12 +1385,45 @@ local function applyView()
             if a._displayName ~= b._displayName then return a._displayName < b._displayName end
             return a._order < b._order
         end)
+    elseif S.sortMode == 5 then
+        table.sort(out, function(a, b)
+            local fa, fb = a.favoriteIndex or 0, b.favoriteIndex or 0
+            if fa ~= fb then
+                if fa == 0 then return false end
+                if fb == 0 then return true end
+                return fa < fb
+            end
+            if a._score ~= b._score then return a._score > b._score end
+            return a._order < b._order
+        end)
     else
         table.sort(out, function(a, b) return a._order < b._order end)
     end
 
     S.view = out
     S.page = 1
+end
+
+refreshFilterCounts = function()
+    local S = ControllerState
+    if not S.filterCounts or not S.filterButtons then return end
+
+    local counts = { all = #S.all, god = 0, iv = 0, clean = 0, bad = 0, fav = 0 }
+    for _, p in ipairs(S.all) do
+        if p._isGodRoll or (p._goldCount or 0) > 0 then counts.god = counts.god + 1 end
+        if p._is3x100  then counts.iv    = counts.iv + 1 end
+        if p._isClean  then counts.clean = counts.clean + 1 end
+        if p._hasDebuff then counts.bad  = counts.bad + 1 end
+        if (p.favoriteIndex or 0) > 0 then counts.fav = counts.fav + 1 end
+    end
+    S.filterCounts = counts
+
+    for i, def in ipairs(FILTERS) do
+        local btn = S.filterButtons[i]
+        if isObjectValid(btn) then
+            pcall(function() btn:SetText(FText(def.label .. "  " .. (counts[def.key] or 0))) end)
+        end
+    end
 end
 
 local function refreshFilterMarks()
@@ -1308,10 +1436,11 @@ local function refreshFilterMarks()
     end
 end
 
-local function rebuildList()
+rebuildList = function()
     local S = ControllerState
     if not isObjectValid(S.scroll) then return end
 
+    ClickDispatcher.ClearTransient()
     pcall(function() S.scroll:ClearChildren() end)
 
     local total = #S.view
@@ -1348,10 +1477,12 @@ local function rebuildList()
     pcall(function() S.scroll:ScrollToStart() end)
 end
 
-local function createGameButton(hostCanvas, surface, tree, label, x, y, w, h, onClick, z)
+createGameButton = function(hostCanvas, surface, tree, label, x, y, w, h, onClick, z, transient)
     local btnCls    = resolveStaticObject(PalUI.Assets.ButtonBlueprint)
     local widgetLib = resolveStaticObject("/Script/UMG.Default__WidgetBlueprintLibrary")
     if not btnCls or not widgetLib then return nil end
+
+    if not isObjectValid(hostCanvas) then return nil end
 
     local ok, btn = pcall(function()
         local owner = hostCanvas:GetOwningPlayer()
@@ -1368,7 +1499,11 @@ local function createGameButton(hostCanvas, surface, tree, label, x, y, w, h, on
     local target = btn
     local okIn, inner = pcall(function() return btn.WBP_PalInvisibleButton end)
     if okIn and isObjectValid(inner) then target = inner end
-    ClickDispatcher.Subscribe(target, onClick)
+    if transient then
+        ClickDispatcher.SubscribeTransient(target, onClick)
+    else
+        ClickDispatcher.Subscribe(target, onClick)
+    end
 
     return btn
 end
@@ -1406,6 +1541,10 @@ function PalUI.Presenter.Show(palDataList, context)
     S.pageSize      = PAGE_SIZE
     S.filterMarks   = {}
     S.pageButtons   = {}
+    S.hostCanvas    = hostCanvas
+    S.context       = context
+    S.favMaxIndex   = (context and tonumber(context.favoriteMaxIndex)) or 3
+    S.filterCounts  = nil
     ClickDispatcher.Reset()
 
     local F, T   = PalUI.Factory, PalUI.Theme
@@ -1426,17 +1565,22 @@ function PalUI.Presenter.Show(palDataList, context)
     local sub = F.CreateText(tree, subtitle, 11, T.TextSecond, false, 2)
     if sub then F.AnchorWidget(surface, sub, PAD + contentW - 420, PAD + 16, 404, 16, 7) end
 
-    local counts = { all = #palDataList, god = 0, iv = 0, clean = 0, bad = 0 }
+    local counts = { all = #palDataList, god = 0, iv = 0, clean = 0, bad = 0, fav = 0 }
     for _, p in ipairs(palDataList) do
         if p._isGodRoll or (p._goldCount or 0) > 0 then counts.god = counts.god + 1 end
         if p._is3x100  then counts.iv    = counts.iv + 1 end
         if p._isClean  then counts.clean = counts.clean + 1 end
         if p._hasDebuff then counts.bad  = counts.bad + 1 end
+        if (p.favoriteIndex or 0) > 0 then counts.fav = counts.fav + 1 end
     end
 
     local filterY = PAD + HEADER_H + 8
-    local fBtnW, fGap = 126, 8
+    local fGap  = 8
+    local fBtnW = math.floor((contentW - 176 - fGap * #FILTERS) / #FILTERS)
     local fx = PAD
+
+    S.filterCounts  = counts
+    S.filterButtons = {}
 
     for i, def in ipairs(FILTERS) do
         local key = def.key
@@ -1449,6 +1593,7 @@ function PalUI.Presenter.Show(palDataList, context)
                 refreshFilterMarks()
                 rebuildList()
             end, 60)
+        S.filterButtons[i] = btn
 
         local mark = F.CreateSolidBorder(tree, T.Gold)
         if mark then
@@ -1469,7 +1614,7 @@ function PalUI.Presenter.Show(palDataList, context)
         PAD + contentW - 168, filterY, 168, FILTER_H,
         function()
             local st = ControllerState
-            st.sortMode = (st.sortMode % 4) + 1
+            st.sortMode = (st.sortMode % SORT_MODE_COUNT) + 1
             if isObjectValid(st.sortButton) then
                 pcall(function() st.sortButton:SetText(FText(SORT_LABELS[st.sortMode])) end)
             end
@@ -1550,6 +1695,10 @@ function PalUI.Presenter.Close()
     S.sortButton    = nil
     S.filterMarks   = {}
     S.pageButtons   = {}
+    S.filterButtons = {}
+    S.filterCounts  = nil
+    S.hostCanvas    = nil
+    S.context       = nil
     S.all           = {}
     S.view          = {}
     S.isDisplayed   = false

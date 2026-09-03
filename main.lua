@@ -1,7 +1,7 @@
 -- ============================================================================
 -- AutoIncubatorManager + Hatch Report UI - By Wol4ara896
 -- ============================================================================
-local VERSION = "2.2.2"
+local VERSION = "2.3.0"
 
 local CONFIG = {
     CommandIn  = "!eggin",
@@ -361,6 +361,7 @@ local function extractPalInfo(saveParam)
     info.rankAttack = tonumber(call(function() return saveParam.Rank_Attack end)) or 0
     info.rankDefence = tonumber(call(function() return saveParam.Rank_Defence end)) or 0
     info.rankCraftSpeed = tonumber(call(function() return saveParam.Rank_CraftSpeed end)) or 0
+    info.favoriteIndex = tonumber(call(function() return saveParam.FavoriteIndex end)) or 0
 
     info.passiveSkills = {}
     local skills = call(function() return saveParam.PassiveSkillList end)
@@ -574,6 +575,212 @@ local function runEggFillerInternal(controller, world, playerState, playerUId, c
     sendNotice(msg, ctx)
 end
 
+-- ============================================================================
+-- Favorite Pal support (FavoriteIndex 0..3, same system as the Palbox locks)
+-- ============================================================================
+
+local FAVORITE_MAX_INDEX = 3
+
+local function getPalStorageContainer(world, utility)
+    if not isUObject(utility) or not isUObject(world) then return nil end
+    local storage = call(function() return utility:GetLocalPalStorageData(world) end)
+    if not isUObject(storage) then
+        storage = call(function() return FindFirstOf("PalPlayerDataPalStorage") end)
+    end
+    if not isUObject(storage) then return nil end
+    return call(function() return storage.TargetContainer end)
+end
+
+local function getPartySlots(world, utility)
+    local slots = {}
+    local holder = isUObject(utility) and isUObject(world)
+        and call(function() return utility:GetOtomoHolderComponent(world) end)
+    if not isUObject(holder) then
+        holder = call(function() return FindFirstOf("PalOtomoHolderComponentBase") end)
+    end
+    if not isUObject(holder) then return slots end
+
+    local container = call(function() return holder.CharacterContainer end)
+    local arr = isUObject(container) and call(function() return container.SlotArray end)
+    local count = getArrayCount(arr)
+    if count > 0 then
+        for i = 1, count do
+            local s = getArrayElement(arr, i)
+            if isUObject(s) then slots[#slots + 1] = s end
+        end
+        return slots
+    end
+
+    local maxNum = tonumber(call(function() return holder:GetMaxOtomoNum() end)) or 5
+    for i = 0, maxNum - 1 do
+        local s = call(function() return holder:GetOtomoIndividualCharacterSlot(i) end)
+        if isUObject(s) then slots[#slots + 1] = s end
+    end
+    return slots
+end
+
+local function collectPalSlots(world, utility)
+    local slots = {}
+
+    local box = getPalStorageContainer(world, utility)
+    local arr = isUObject(box) and call(function() return box.SlotArray end)
+    local count = getArrayCount(arr)
+    for i = 1, count do
+        local s = getArrayElement(arr, i)
+        if isUObject(s) then slots[#slots + 1] = s end
+    end
+
+    for _, s in ipairs(getPartySlots(world, utility)) do
+        slots[#slots + 1] = s
+    end
+
+    return slots
+end
+
+-- Hatched pals have no instance id inside the report data, so they are matched
+-- back to their real Palbox slot by a signature built from the save parameter.
+local function palSignature(info)
+    if not info then return nil end
+    local passives = {}
+    for _, p in ipairs(info.passiveSkills or {}) do passives[#passives + 1] = tostring(p) end
+    table.sort(passives)
+    return table.concat({
+        tostring(info.characterId or ""),
+        tostring(info.gender or 0),
+        tostring(info.level or 0),
+        tostring(info.rank or 0),
+        tostring(info.talentHP or 0),
+        tostring(info.talentMelee or 0),
+        tostring(info.talentShot or 0),
+        tostring(info.talentDefense or 0),
+        table.concat(passives, ","),
+    }, "|")
+end
+
+local function slotSaveParameter(slot)
+    local handle = isUObject(slot) and call(function() return slot:GetHandle() end)
+    if not isUObject(handle) then return nil, nil, nil end
+    local param = call(function() return handle:TryGetIndividualParameter() end)
+    if not isUObject(param) then return nil, handle, nil end
+    local sp = call(function() return param.SaveParameter end)
+    return sp, handle, param
+end
+
+local function findSlotForInfo(info, world, utility)
+    local wanted = palSignature(info)
+    if not wanted then return nil end
+
+    local fallback = nil
+    for _, slot in ipairs(collectPalSlots(world, utility)) do
+        if call(function() return slot:IsEmpty() end) ~= true then
+            local sp, handle, param = slotSaveParameter(slot)
+            local candidate = sp and extractPalInfo(sp)
+            if candidate then
+                if palSignature(candidate) == wanted then
+                    return slot, handle, param, candidate
+                end
+                if not fallback
+                    and candidate.characterId == info.characterId
+                    and (candidate.talentHP or 0) == (info.talentHP or 0)
+                    and (candidate.talentMelee or 0) == (info.talentMelee or 0)
+                    and (candidate.talentDefense or 0) == (info.talentDefense or 0) then
+                    fallback = { slot, handle, param, candidate }
+                end
+            end
+        end
+    end
+
+    if fallback then return fallback[1], fallback[2], fallback[3], fallback[4] end
+    return nil
+end
+
+local function readFavoriteIndex(param)
+    local idx = tonumber(call(function() return param:GetFavoriteIndex() end))
+    if idx then return idx end
+    return tonumber(call(function() return param.SaveParameter.FavoriteIndex end)) or 0
+end
+
+local function writeFavoriteIndexLocally(param, target)
+    if not isUObject(param) then return false end
+    local wrote = false
+    pcall(function()
+        local sp = param.SaveParameter
+        sp.FavoriteIndex = target
+        sp.IsFavoritePal = (target > 0)
+        param.SaveParameter = sp
+        wrote = true
+    end)
+    if not wrote then
+        pcall(function()
+            param.SaveParameter.FavoriteIndex = target
+            wrote = true
+        end)
+    end
+    pcall(function() param:OnRep_SaveParameter() end)
+    return wrote
+end
+
+-- Sets the favorite lock (0 = none, 1..3 = Favorite I/II/III) on the real pal.
+local function applyFavorite(info, target, controller, world, utility)
+    target = math.floor(tonumber(target) or 0)
+    if target < 0 then target = 0 end
+    if target > FAVORITE_MAX_INDEX then target = FAVORITE_MAX_INDEX end
+
+    local slot, handle, param = findSlotForInfo(info, world, utility)
+    if not isUObject(param) then
+        return false, "pal not found in Palbox/party yet"
+    end
+
+    local current = readFavoriteIndex(param)
+    if current == target then
+        info.favoriteIndex = target
+        return true, nil
+    end
+
+    local instanceId = isUObject(handle) and call(function() return handle:GetIndividualID() end)
+    local steps = (target - current) % (FAVORITE_MAX_INDEX + 1)
+
+    if instanceId and isUObject(controller) and steps > 0 then
+        local ok = true
+        for _ = 1, steps do
+            if not call(function() controller:IncrementFavoriteIndexPal_ToServer(instanceId); return true end) then
+                ok = false
+                break
+            end
+        end
+        if ok then
+            writeFavoriteIndexLocally(param, target)
+            info.favoriteIndex = target
+            return true, nil
+        end
+    end
+
+    if isUObject(slot) then
+        local uiUtil = call(function() return StaticFindObject("/Script/Pal.Default__PalUIUtility") end)
+        if isUObject(uiUtil) and steps > 0 then
+            local ok = true
+            for _ = 1, steps do
+                if not call(function() uiUtil:ToggleFavoritePalBySlot(world, slot); return true end) then
+                    ok = false
+                    break
+                end
+            end
+            if ok then
+                writeFavoriteIndexLocally(param, target)
+                info.favoriteIndex = target
+                return true, nil
+            end
+        end
+    end
+
+    if writeFavoriteIndexLocally(param, target) then
+        info.favoriteIndex = target
+        return true, nil
+    end
+
+    return false, "the game refused the favorite request"
+end
+
 local function runEggHarvestInternal(controller, world, playerState, playerUId, ctx)
     local baseModel = getInsideBaseCampModel(controller, world)
     local baseId = isUObject(baseModel) and guidToTable(call(function() return baseModel:GetId() end))
@@ -670,6 +877,33 @@ local function onReceivedChat(context, message)
 
         if isUObject(controller) and isUObject(world) and isUObject(playerState) then
             local ctx = { world = world, playerState = playerState, playerUId = playerUId, utility = getUtility() }
+            ctx.favoriteMaxIndex = FAVORITE_MAX_INDEX
+            ctx.setFavorite = function(info, target)
+                local ok, err = applyFavorite(info, target, controller, world, ctx.utility)
+                if ok then return true end
+
+                -- Freshly hatched pals may still be on their way into the Palbox,
+                -- so retry a few times in the background before giving up.
+                local attempts = 0
+                local function retry()
+                    attempts = attempts + 1
+                    local done = applyFavorite(info, target, controller, world, ctx.utility)
+                    if done then
+                        print(CONFIG.LogPrefix .. "Favorite applied (retry " .. attempts .. ").")
+                    elseif attempts < 5 then
+                        call(function() ExecuteWithDelay(800, retry) end)
+                    else
+                        print(CONFIG.LogPrefix .. "Favorite failed: " .. tostring(err))
+                    end
+                end
+                if call(function() ExecuteWithDelay(800, retry); return true end) then
+                    info.favoriteIndex = target
+                    return true
+                end
+
+                print(CONFIG.LogPrefix .. "Favorite failed: " .. tostring(err))
+                return false, err
+            end
             local ok, err
             if isEggIn then
                 ok, err = pcall(function() runEggFillerInternal(controller, world, playerState, playerUId, ctx) end)
