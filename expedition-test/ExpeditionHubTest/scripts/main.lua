@@ -2,33 +2,38 @@
 -- ============================================================================================
 -- ============================================================================================
 -- ============================================================================================
--- ExpeditionHubTest v0.8 — ТЕСТОВЫЙ мод (UE4SS Lua) для Palworld 0.4.11
+-- ============================================================================================
+-- ExpeditionHubTest v0.9 — ТЕСТОВЫЙ мод (UE4SS Lua) для Palworld 0.4.11
 -- Менеджер экспедиций: панель на F6. ВСЕ станции со всех баз. Полный цикл из панели:
 -- выбор миссии → НАЗНАЧЕНИЕ ПАЛОВ ВРУЧНУЮ (Palbox, слоты 0..100) или АВТО → запуск → сбор.
 -- Игровой UI станции НЕ открываем вообще (v0.4/v0.5: ломает мышь + краш при перезаходе).
 --
--- УРОКИ ЖИВОГО ТЕСТА v0.7 (краш 0x70 при выборе миссии):
---   • вызов статических сериализаторов игры (WriteBlackboard/WritePlayerFeedItemTo на CDO)
---     САМ КРАШИТ 0x70 (ref-параметр архива) → в v0.8 НЕ вызываем их вообще;
---   • хуки с двоеточием работают и дали ВАНИЛЬНЫЕ ЭТАЛОНЫ байтов FPalNetArchive:
---       FName        → int32(len+1) + UTF-16LE + L'\0'
---         ("DUNGEON_GRASS" → 0E 00 00 00 44 00 55 00 … 53 00 00 00, 32 байта)
---       FPalInstanceID → FString(DebugName, пустая → 00 00 00 00)
---                        + PlayerUId GUID (16 байт raw LE) + InstanceId GUID (16 байт raw LE)
---         (итого 36 байт; SDK: FPalInstanceID{PlayerUId FGuid; InstanceId FGuid; DebugName FString});
---   • АВТО-заполнение подтверждено живьём (0 → 6 палов);
---   • байты теперь собираем ЧИСТЫМ LUA — никаких вызовов игровых сериализаторов.
+-- УРОКИ ЖИВОГО ТЕСТА v0.8 (нет краша, но архив приходил ПУСТЫМ):
+--   • найден БАГ САМОГО UE4SS (LuaUObject.cpp, push_arrayproperty::lua_table_to_memory):
+--     длина таблицы читается с захардкоженного стек-индекса 1, поэтому массив, ВЛОЖЕННЫЙ
+--     в структуру-параметр ({Bytes={...}}), ВСЕГДА передаётся пустым; для ref-параметров
+--     (WriteBlackboard) placement-new ещё и затирал указатель → краш 0x70 в v0.7;
+--   • путь с TArray-USERDATA копирует честно (get_userdata<TArray> → поэлементный copy) —
+--     поэтому в v0.9 занимаем живой байтовый массив у игрового объекта, пишем байты
+--     (запись ud[i]=v авто-растит массив: TArray::prepare_to_handle → AddZeroed), передаём
+--     {Bytes=ud}, содержимое восстанавливаем сразу после вызова (сервер читает архив
+--     синхронно, внутри ProcessEvent). Кандидаты буфера с рантайм-проверкой размера
+--     элемента (запись 511 → чтение 255 = ровно 1 байт): PalWorldMapUIData /
+--     PalGameSetting / PalGroupGuildBase / PalMapObjectItemContainerModule;
+--   • ванильные форматы (хук-дампы v0.7, байт-в-байт):
+--       FName        → int32(len+1) + UTF-16LE + L'\0' ("DUNGEON_GRASS" → 32 байта)
+--       FPalInstanceID → пустой FString DebugName + PlayerUId GUID + InstanceId GUID (36 байт)
+--   • АВТО-заполнение и все int-параметры ServerInternal работают стабильно (v0.3/v0.7/v0.8).
 --
 -- МЕХАНИКА (SDK + ванила):
 --   • флоу: список миссий → выбор → заполнение палов 0..100 → старт. Требование стихии ×N,
 --     рекомендуемая сила; % награды = сила команды ÷ рекомендуемая; палы только из Palbox;
---   • все записи — через ServerInternal модели станции (подтверждено v0.3/v0.7):
+--   • все записи — через ServerInternal модели станции:
 --       RequestSelectMission_ServerInternal(playerId, FPalNetArchive)
 --       RequestSelectAssignedCharacter_ServerInternal(playerId, FPalNetArchive)
 --       RequestUnselectAssignedCharacter_ServerInternal(playerId, FPalNetArchive)
 --       RequestUnselectAll_ServerInternal(playerId) / RequestSelectAuto_ServerInternal(playerId)
 --       RequestStartMission_ServerInternal(playerId) / RequestCancelInProgressMission_ServerInternal(playerId)
---   • FPalNetArchive = { TArray<uint8> Bytes }, передаётся таблицей { Bytes = {…} };
 --   • действия со станцией — только в состоянии Ready (InProgress/Reward сервер отклонит).
 --
 -- БОРЬБА С КРАШАМИ (pcall НЕ ловит нативные краши):
@@ -70,6 +75,7 @@ local S = {
     mode      = "missions", -- режим блока списка: missions | palbox | assigned
     palbox    = nil,        -- снимок Palbox { {key, idTable, name, level, rank, strength, busy} }
     listPage  = 1,          -- страница списка
+    bufferSrc = nil,        -- источник байтового буфера архива (строка для лога)
 }
 
 -- ============================== ЛОГ ==============================
@@ -549,6 +555,92 @@ local function PalIdToArchiveBytes(idTable)
     return out
 end
 
+-- ================== БУФЕР АРХИВА (обход бага UE4SS с массивами в структурах) ==============
+-- БАГ UE4SS: массив-поле внутри структуры-параметра ({Bytes={...}}) передаётся пустым
+-- (lua_table_to_memory читает длину с неверного стек-индекса). Обход: путь с
+-- TArray-USERDATA копирует честно. Занимаем живой 1-байтовый массив у игрового объекта,
+-- пишем туда байты архива (запись ud[i]=v авто-растит массив), вызываем, восстанавливаем.
+local BUFFER_CANDIDATES = {
+    { class = "PalWorldMapUIData",               field = "CachedTextureRawData_ForV3Convert" },
+    { class = "PalGameSetting",                  field = "BaseCampBuildingItemContainerTypes" },
+    { class = "PalGroupGuildBase",               field = "GuildChestAllowedRoles" },
+    { class = "PalMapObjectItemContainerModule", field = "AllSlotAttribute" },
+}
+
+local function RestoreBuffer(b)
+    if not b then return end
+    pcall(function()
+        b.buf:Empty()
+        for i = 1, #b.saved do b.buf[i] = b.saved[i] end
+    end)
+end
+
+-- вернуть {buf=userdata, saved=байты, src=имя} для первого подходящего кандидата
+local function BorrowByteBuffer()
+    for _, cand in ipairs(BUFFER_CANDIDATES) do
+        local okAll, all = pcall(FindAllOf, cand.class)
+        if okAll and type(all) == "table" then
+            for _, inst in ipairs(all) do
+                local o = Unwrap(inst)
+                if IsValidObj(o) and not ObjName(o):find("Default__", 1, true) then
+                    local okF, buf = pcall(function() return o[cand.field] end)
+                    if okF and buf ~= nil and type(buf) == "userdata" then
+                        -- снимок содержимого ДО любых записей
+                        local saved, n = {}, TryLen(buf)
+                        if type(n) == "number" then
+                            for i = 1, n do
+                                local okR, v = pcall(function() return buf[i] end)
+                                saved[i] = (okR and Num(v)) or 0
+                            end
+                        end
+                        -- рантайм-проверка: элементы ровно 1 байт (511 → 255)
+                        local okW = pcall(function() buf[1] = 511 end)
+                        local okR2, back = pcall(function() return buf[1] end)
+                        if okW and okR2 and back == 255 then
+                            return { buf = buf, saved = saved, src = cand.class .. "." .. cand.field }
+                        end
+                        if S.bufferSrc == nil then
+                            Logf("буфер: %s.%s — не 1-байтовый (тест дал %s), пробую дальше",
+                                cand.class, cand.field, tostring(back))
+                        end
+                    elseif S.bufferSrc == nil and buf ~= nil then
+                        Logf("буфер: %s.%s — не userdata (%s), пробую дальше",
+                            cand.class, cand.field, type(buf))
+                    end
+                end
+            end
+        end
+    end
+    return nil
+end
+
+-- вызов архивного ServerInternal через буфер: kind = mission | add | remove
+local function CallServerInternalWithArchive(kind, st, pid, bytes)
+    local b = BorrowByteBuffer()
+    if not b then
+        return nil, "не найден живой байтовый буфер (см. лог 'буфер:')"
+    end
+    local ok, err = pcall(function()
+        b.buf:Empty()
+        for i = 1, #bytes do b.buf[i] = bytes[i] end
+        local ar = { Bytes = b.buf }
+        if kind == "mission" then
+            st:RequestSelectMission_ServerInternal(pid, ar)
+        elseif kind == "add" then
+            st:RequestSelectAssignedCharacter_ServerInternal(pid, ar)
+        else
+            st:RequestUnselectAssignedCharacter_ServerInternal(pid, ar)
+        end
+    end)
+    RestoreBuffer(b)
+    if not ok then return nil, tostring(err) end
+    if S.bufferSrc ~= b.src then
+        S.bufferSrc = b.src
+        Log("буфер архива: " .. b.src)
+    end
+    return true
+end
+
 local function BytesToHex(bytes, maxN)
     local hex = {}
     for i = 1, math.min(#bytes, maxN or 48) do
@@ -891,7 +983,9 @@ local function DoSelectMission(missionId)
     Logf("архив миссии (%d байт): %s", #bytes, BytesToHex(bytes, 32))
     SafeDo("RequestSelectMission_ServerInternal", function()
         local st1 = SelectedStation()
-        if st1 then st1:RequestSelectMission_ServerInternal(pid, { Bytes = bytes }) end
+        if not st1 then return end
+        local ok, err = CallServerInternalWithArchive("mission", st1, pid, bytes)
+        if not ok then Err("архив не передан: " .. tostring(err)) end
     end)
     DelayCall(700, function()
         SafeDo("проверка выбора миссии", function()
@@ -1077,12 +1171,8 @@ local function DoPalRequest(kind, key)
     SafeDo("RequestServerInternal", function()
         local st1 = SelectedStation()
         if not st1 then return end
-        local ar = { Bytes = bytes }
-        if kind == "add" then
-            st1:RequestSelectAssignedCharacter_ServerInternal(pid, ar)
-        else
-            st1:RequestUnselectAssignedCharacter_ServerInternal(pid, ar)
-        end
+        local ok, err = CallServerInternalWithArchive(kind, st1, pid, bytes)
+        if not ok then Err("архив не передан: " .. tostring(err)) end
     end)
     DelayCall(600, function()
         SafeDo("проверка " .. kind, function()
@@ -2043,7 +2133,7 @@ local function init()
     end)
     registerWorldEnterHook()
     RegisterPassiveHooks()
-    Log("ExpeditionHub v0.8 готов: сериализаторы архива на чистом Lua по ванильным дампам, вызовы игровых статиков убраны (краш).")
+    Log("ExpeditionHub v0.9 готов: архив передаётся через заёмный байтовый буфер (обход бага UE4SS с массивами в структурах).")
 end
 
 SafeDo(init)
