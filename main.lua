@@ -326,7 +326,7 @@ local function ExtractActorFromHitResult(HitResult)
     return SafeIsValid(Actor) and Actor or nil
 end
 
-local function FindMapObjectOnLookRay(pc, character)
+local function FindMapObjectOnLookRay(pc)
     if not SafeIsValid(pc) then return nil end
     local camera = pc.PlayerCameraManager
     if not SafeIsValid(camera) then return nil end
@@ -338,27 +338,29 @@ local function FindMapObjectOnLookRay(pc, character)
     local best, bestDistance = nil, math.huge
     local models = FindAllOf("PalMapObjectModel") or {}
     for _, model in ipairs(models) do
-        if SafeIsValid(model) then
+        local candidate, candidateDistance = nil, nil
+        pcall(function()
+            if not SafeIsValid(model) then return end
             local concrete = model:GetConcreteModel(true)
-            if SafeIsValid(concrete) and SafeIsValid(concrete:GetWorkeeModule()) then
-                local location = {}
-                local ok = pcall(function() concrete:GetMapObjectLocation(location) end)
-                if ok and location.X and location.Y and location.Z then
-                    local dx = location.X - camLoc.X
-                    local dy = location.Y - camLoc.Y
-                    local dz = location.Z - camLoc.Z
-                    local along = dx * forward.X + dy * forward.Y + dz * forward.Z
-                    if along > 0 and along < Config.RaycastDistance then
-                        local px = dx - forward.X * along
-                        local py = dy - forward.Y * along
-                        local pz = dz - forward.Z * along
-                        local distance = math.sqrt(px * px + py * py + pz * pz)
-                        if distance < 220 and distance < bestDistance then
-                            best, bestDistance = model, distance
-                        end
-                    end
-                end
+            if not SafeIsValid(concrete) or not SafeIsValid(concrete:GetWorkeeModule()) then return end
+            local location = {}
+            concrete:GetMapObjectLocation(location)
+            if not (location.X and location.Y and location.Z) then return end
+            local dx = location.X - camLoc.X
+            local dy = location.Y - camLoc.Y
+            local dz = location.Z - camLoc.Z
+            local along = dx * forward.X + dy * forward.Y + dz * forward.Z
+            if along <= 0 or along >= Config.RaycastDistance then return end
+            local px = dx - forward.X * along
+            local py = dy - forward.Y * along
+            local pz = dz - forward.Z * along
+            local distance = math.sqrt(px * px + py * py + pz * pz)
+            if distance < 220 then
+                candidate, candidateDistance = model, distance
             end
+        end)
+        if candidate and candidateDistance < bestDistance then
+            best, bestDistance = candidate, candidateDistance
         end
     end
     return best
@@ -680,6 +682,15 @@ local function CheckAndApplyStationPause(workee)
     end
 end
 
+local function ReapplySavedStationPauses()
+    local stations = ScanBaseWorkstations()
+    for _, station in ipairs(stations) do
+        if station.isPaused and SafeIsValid(station.work) then
+            SetStationState(station.workee, station.work, station.concrete, true, station.key)
+        end
+    end
+end
+
 RegisterHook("/Script/Pal.PalMapObjectWorkeeModule:OnRep_TargetWork", function(Context)
     pcall(function() CheckAndApplyStationPause(Context:get()) end)
 end)
@@ -702,6 +713,11 @@ end)
 
 local function Init()
     LoadPausedStationsFromDisk()
+    -- Work objects for farms are created after their map models on world load.
+    -- Reapply once after that initialization window, instead of racing it.
+    if type(ExecuteWithDelay) == "function" then
+        ExecuteWithDelay(3000, function() pcall(ReapplySavedStationPauses) end)
+    end
 
     RegisterKeyBind(Config.HotkeyToggle, function()
         ExecuteInGameThread(function() pcall(ToggleStation) end)
