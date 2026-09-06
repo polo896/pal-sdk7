@@ -326,23 +326,42 @@ local function ExtractActorFromHitResult(HitResult)
     return SafeIsValid(Actor) and Actor or nil
 end
 
--- A paused/empty workstation can be represented by a child collision actor.
--- Walk the owner chain so F6 can still resolve the PalMapObject after its
--- interaction target has disappeared.
-local function FindMapObjectFromActor(actor)
-    local current = actor
-    for _ = 1, 4 do
-        if not SafeIsValid(current) then return nil end
-        local ok, isMapObject = pcall(function()
-            return current:IsA("/Script/Pal.PalMapObject")
-        end)
-        if ok and isMapObject then return current end
-        local nextOwner = nil
-        pcall(function() nextOwner = current:GetOwner() end)
-        if not SafeIsValid(nextOwner) or nextOwner == current then return nil end
-        current = nextOwner
+local function FindMapObjectOnLookRay(pc, character)
+    if not SafeIsValid(pc) then return nil end
+    local camera = pc.PlayerCameraManager
+    if not SafeIsValid(camera) then return nil end
+    local camLoc = camera:GetCameraLocation()
+    local camRot = camera:GetCameraRotation()
+    local mathLib = StaticFindObject("/Script/Engine.Default__KismetMathLibrary")
+    if not SafeIsValid(mathLib) then return nil end
+    local forward = mathLib:GetForwardVector(camRot)
+    local best, bestDistance = nil, math.huge
+    local models = FindAllOf("PalMapObjectModel") or {}
+    for _, model in ipairs(models) do
+        if SafeIsValid(model) then
+            local concrete = model:GetConcreteModel(true)
+            if SafeIsValid(concrete) and SafeIsValid(concrete:GetWorkeeModule()) then
+                local location = {}
+                local ok = pcall(function() concrete:GetMapObjectLocation(location) end)
+                if ok and location.X and location.Y and location.Z then
+                    local dx = location.X - camLoc.X
+                    local dy = location.Y - camLoc.Y
+                    local dz = location.Z - camLoc.Z
+                    local along = dx * forward.X + dy * forward.Y + dz * forward.Z
+                    if along > 0 and along < Config.RaycastDistance then
+                        local px = dx - forward.X * along
+                        local py = dy - forward.Y * along
+                        local pz = dz - forward.Z * along
+                        local distance = math.sqrt(px * px + py * py + pz * pz)
+                        if distance < 220 and distance < bestDistance then
+                            best, bestDistance = model, distance
+                        end
+                    end
+                end
+            end
+        end
     end
-    return nil
+    return best
 end
 
 local function GetTargetStationObjects()
@@ -380,12 +399,21 @@ local function GetTargetStationObjects()
                 local bHit = sysLib:LineTraceSingle(pc, camLoc, endLoc, 0, false, ignoreActors, 0, hitResult, true, {R=1,G=0,B=0,A=1}, {R=0,G=1,B=0,A=1}, 0.0)
                 local hitActor = ExtractActorFromHitResult(hitResult)
                 if bHit and SafeIsValid(hitActor) then
-                    mapObj = FindMapObjectFromActor(hitActor)
+                    if hitActor:IsA("/Script/Pal.PalMapObject") then mapObj = hitActor
+                    else
+                        local owner = hitActor:GetOwner()
+                        if SafeIsValid(owner) and owner:IsA("/Script/Pal.PalMapObject") then mapObj = owner end
+                    end
                 end
             end
         end
     end
 
+    if not SafeIsValid(mapObj) then
+        local pc = GetLocalPlayerController()
+        local lookedModel = FindMapObjectOnLookRay(pc, character)
+        if SafeIsValid(lookedModel) then mapObj = lookedModel:GetActor() end
+    end
     if not SafeIsValid(mapObj) then return nil, nil, nil, nil, nil end
     local model = mapObj:GetModel()
     if not SafeIsValid(model) then return nil, nil, nil, nil, nil end
@@ -631,15 +659,23 @@ local function CheckAndApplyStationPause(workee)
     local k1 = GuidToKey(work.OwnerMapObjectModelId)
     local k2 = GuidToKey(work.OwnerMapObjectConcreteModelId)
     local k3 = GuidToKey(work.ID)
+    local concrete = work.CachedOwnerMapObjectConcreteModel
+    local k4 = ""
+    local k5 = ""
+    if SafeIsValid(concrete) then
+        k4 = GuidToKey(concrete.InstanceId)
+        k5 = GuidToKey(concrete.ModelInstanceId)
+    end
 
     local targetKey = nil
     if k1 ~= "" and PausedStations[k1] then targetKey = k1
     elseif k2 ~= "" and PausedStations[k2] then targetKey = k2
     elseif k3 ~= "" and PausedStations[k3] then targetKey = k3
+    elseif k4 ~= "" and PausedStations[k4] then targetKey = k4
+    elseif k5 ~= "" and PausedStations[k5] then targetKey = k5
     end
 
     if targetKey then
-        local concrete = work.CachedOwnerMapObjectConcreteModel
         SetStationState(workee, work, concrete, true, targetKey)
     end
 end
