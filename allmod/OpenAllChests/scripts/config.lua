@@ -18,6 +18,14 @@ return {
     CollectionRadius   = 100000,   -- 100,000 = 1 km
     -- =================================================
 
+    -- ================= INVENTORY CHECK ===============
+    -- Stops opening chests as soon as the player's inventory has no free
+    -- slot. Re-run !chest to continue with the remaining chests.
+    -- Uses a single native call (TryGetEmptySlot) per chest, so it stays
+    -- cheap even with thousands of chests on the map.
+    EnableInventorySpaceCheck = true,
+    -- =================================================
+
     -- ================= PERFORMANCE ==================
     BatchSize          = 25,       -- Chests per tick
     BatchDelayMs       = 20,       -- Delay (ms)

@@ -76,6 +76,38 @@ local function IsServerAuthority(gameState)
     return true
 end
 
+local function GetPlayerInventoryData(playerState)
+    if not playerState then return nil end
+
+    local inv = nil
+    pcall(function() inv = playerState:GetInventoryData() end)
+    if inv and inv:IsValid() then return inv end
+
+    pcall(function() inv = playerState.InventoryData end)
+    if inv and inv:IsValid() then return inv end
+
+    return nil
+end
+
+-- One native call (UPalPlayerInventoryData::TryGetEmptySlot) scans the whole
+-- Common inventory for a free slot. No Lua-side slot iteration, so checking
+-- space before each chest costs one engine call regardless of slot count.
+local function HasInventorySpace(invData)
+    if not invData or not invData:IsValid() then
+        return true -- cannot check, do not block the feature
+    end
+
+    local ok, hasEmpty = pcall(function()
+        local out = {}
+        return invData:TryGetEmptySlot(0, out) -- EPalPlayerInventoryType.Common
+    end)
+
+    if ok and hasEmpty ~= nil then
+        return hasEmpty == true
+    end
+    return true
+end
+
 local function IsChestValidAndClosed(model)
     if not model or not model:IsValid() then return false end
 
@@ -159,6 +191,7 @@ end
 local function ResolvePlayerFromGuid(senderGuid)
     local foundPlayerId = nil
     local foundLocation = nil
+    local foundPlayerState = nil
 
     local playerStates = FindAllOf("PalPlayerState")
     if playerStates then
@@ -168,6 +201,7 @@ local function ResolvePlayerFromGuid(senderGuid)
                 pcall(function() psGuid = ps.PlayerUId end)
 
                 if psGuid and AreGuidsEqual(psGuid, senderGuid) then
+                    foundPlayerState = ps
                     pcall(function() foundPlayerId = ps.PlayerId end)
                     if not foundPlayerId then
                         pcall(function() foundPlayerId = ps:GetPlayerId() end)
@@ -197,7 +231,12 @@ local function ResolvePlayerFromGuid(senderGuid)
             if controller and controller:IsValid() then
                 local ps = controller.PlayerState
                 if ps and ps:IsValid() then
-                    foundPlayerId = ps.PlayerId or ps:GetPlayerId()
+                    if not foundPlayerId then
+                        foundPlayerId = ps.PlayerId or ps:GetPlayerId()
+                    end
+                    if not foundPlayerState then
+                        foundPlayerState = ps
+                    end
                 end
                 local pawn = controller.Pawn
                 if pawn and pawn:IsValid() then
@@ -210,10 +249,10 @@ local function ResolvePlayerFromGuid(senderGuid)
         end)
     end
 
-    return foundPlayerId, foundLocation
+    return foundPlayerId, foundLocation, foundPlayerState
 end
 
-local function OpenEverything(gameState, playerId, playerLoc)
+local function OpenEverything(gameState, playerId, playerLoc, invData)
     local chestModels = FindAllOf("PalMapObjectTreasureBoxModel")
     if not chestModels or #chestModels == 0 then
         Notify(gameState, "!chest: No chests found on the map")
@@ -230,11 +269,19 @@ local function OpenEverything(gameState, playerId, playerLoc)
     local function ProcessBatch()
         ExecuteInGameThread(function()
             local batchEnd = math.min(currentIndex + Config.BatchSize - 1, totalModels)
+            local stoppedFull = false
 
             for i = currentIndex, batchEnd do
                 local model = chestModels[i]
                 if IsChestValidAndClosed(model) then
                     if IsWithinRadius(model, playerLoc) then
+                        -- One native call per chest (TryGetEmptySlot), no Lua-side
+                        -- slot iteration: cheap even with thousands of chests.
+                        if Config.EnableInventorySpaceCheck and not HasInventorySpace(invData) then
+                            stoppedFull = true
+                            break
+                        end
+
                         local ok = pcall(function()
                             model:RequestOpen_ServerInternal(playerId, Config.IgnoreOpenItem)
                         end)
@@ -249,13 +296,21 @@ local function OpenEverything(gameState, playerId, playerLoc)
                 end
             end
 
-            currentIndex = batchEnd + 1
+            if stoppedFull then
+                currentIndex = totalModels + 1
+            else
+                currentIndex = batchEnd + 1
+            end
 
             if currentIndex <= totalModels then
                 ExecuteWithDelay(Config.BatchDelayMs, ProcessBatch)
             else
                 processing = false
-                Notify(gameState, string.format("!chest: Opened: %d, Failed: %d, Out of range: %d", processed, failed, skippedRadius))
+                if stoppedFull then
+                    Notify(gameState, string.format("!chest: Inventory full! Opened: %d, Failed: %d, Out of range: %d. Re-run !chest to continue.", processed, failed, skippedRadius))
+                else
+                    Notify(gameState, string.format("!chest: Opened: %d, Failed: %d, Out of range: %d", processed, failed, skippedRadius))
+                end
             end
         end)
     end
@@ -272,7 +327,7 @@ local function StartOpenChests(senderGuid)
     end
     processing = true
 
-    local playerId, playerLoc = ResolvePlayerFromGuid(senderGuid)
+    local playerId, playerLoc, playerState = ResolvePlayerFromGuid(senderGuid)
 
     if not playerId then
         Notify(gameState, "!chest: Could not resolve Player ID")
@@ -280,8 +335,13 @@ local function StartOpenChests(senderGuid)
         return
     end
 
+    local invData = nil
+    if Config.EnableInventorySpaceCheck then
+        invData = GetPlayerInventoryData(playerState)
+    end
+
     DebugPrint(string.format("Opening chests for PlayerID: %s at Loc: %s", tostring(playerId), playerLoc and string.format("(%.1f, %.1f, %.1f)", playerLoc.X, playerLoc.Y, playerLoc.Z) or "nil"))
-    OpenEverything(gameState, playerId, playerLoc)
+    OpenEverything(gameState, playerId, playerLoc, invData)
 end
 
 local function RegisterChatHook()
