@@ -326,6 +326,70 @@ local function ExtractActorFromHitResult(HitResult)
     return SafeIsValid(Actor) and Actor or nil
 end
 
+local function GetStationLocation(concrete)
+    if not SafeIsValid(concrete) then return nil end
+
+    local loc = nil
+    pcall(function()
+        local transform = concrete:GetTransform()
+        if transform and transform.Translation then
+            local t = transform.Translation
+            if t.X ~= nil and (t.X ~= 0 or t.Y ~= 0 or t.Z ~= 0) then loc = t end
+        end
+    end)
+    if loc then return loc end
+
+    pcall(function()
+        local actor = concrete:GetActor()
+        if SafeIsValid(actor) then
+            local actorLoc = actor:K2_GetActorLocation()
+            if actorLoc and actorLoc.X ~= nil then loc = actorLoc end
+        end
+    end)
+
+    return loc
+end
+
+-- Fallback target pick: use the logical models instead of a physical hit so F6
+-- still works on stations whose mesh/collision/interactable is hidden or
+-- despawned (e.g. an empty farm plot with no loot on it).
+local function FindStationByView(camLoc, camRot)
+    local mathLib = StaticFindObject("/Script/Engine.Default__KismetMathLibrary")
+    if not SafeIsValid(mathLib) then return nil, nil, nil, nil, nil end
+
+    local forward = mathLib:GetForwardVector(camRot)
+    if not forward or not forward.X then return nil, nil, nil, nil, nil end
+
+    local best = nil
+    local bestDot = 0.75
+    for _, station in ipairs(ScanBaseWorkstations()) do
+        if SafeIsValid(station.concrete) and SafeIsValid(station.work) then
+            local loc = GetStationLocation(station.concrete)
+            if loc and loc.X ~= nil then
+                local dx = loc.X - camLoc.X
+                local dy = loc.Y - camLoc.Y
+                local dz = loc.Z - camLoc.Z
+                local dist = math.sqrt(dx * dx + dy * dy + dz * dz)
+                if dist > 1.0 and dist <= Config.RaycastDistance then
+                    local dot = (dx * forward.X + dy * forward.Y + dz * forward.Z) / dist
+                    if dot > bestDot then
+                        bestDot = dot
+                        best = station
+                    end
+                end
+            end
+        end
+    end
+
+    if not best then return nil, nil, nil, nil, nil end
+
+    local mapObj = nil
+    pcall(function() mapObj = best.concrete:GetActor() end)
+    if not SafeIsValid(mapObj) then mapObj = nil end
+
+    return mapObj, best.model, best.concrete, best.workee, best.work
+end
+
 local function GetTargetStationObjects()
     local character = GetLocalPlayerCharacter()
     if not SafeIsValid(character) then return nil, nil, nil, nil, nil end
@@ -371,20 +435,37 @@ local function GetTargetStationObjects()
         end
     end
 
-    if not SafeIsValid(mapObj) then return nil, nil, nil, nil, nil end
-    local model = mapObj:GetModel()
+    local model, concrete, workee, work = nil, nil, nil, nil
+
+    if SafeIsValid(mapObj) then
+        model = mapObj:GetModel()
+        if SafeIsValid(model) then
+            concrete = model:GetConcreteModel(true)
+            if SafeIsValid(concrete) then
+                workee = concrete:GetWorkeeModule()
+                work = SafeIsValid(workee) and workee:GetWork() or nil
+            end
+        end
+    else
+        local pc = GetLocalPlayerController()
+        if SafeIsValid(pc) and SafeIsValid(pc.PlayerCameraManager) then
+            mapObj, model, concrete, workee, work = FindStationByView(
+                pc.PlayerCameraManager:GetCameraLocation(),
+                pc.PlayerCameraManager:GetCameraRotation()
+            )
+        end
+    end
+
     if not SafeIsValid(model) then return nil, nil, nil, nil, nil end
-    local concrete = model:GetConcreteModel(true)
     if not SafeIsValid(concrete) then return nil, nil, nil, nil, nil end
-    local workee = concrete:GetWorkeeModule()
-    local work = SafeIsValid(workee) and workee:GetWork() or nil
+    if not SafeIsValid(work) then return nil, nil, nil, nil, nil end
 
     return mapObj, model, concrete, workee, work
 end
 
 local function ToggleStation()
     local mapObj, model, concrete, workee, work = GetTargetStationObjects()
-    if not SafeIsValid(mapObj) or not SafeIsValid(model) then ShowToast("Look directly at a workstation!"); return end
+    if not SafeIsValid(model) then ShowToast("Look directly at a workstation!"); return end
     if not SafeIsValid(work) then ShowToast("This building is not a workstation."); return end
 
     local g1 = model.InstanceId
@@ -544,7 +625,14 @@ local function PauseCategoryBatch(catList, onDone)
         for _, cat in ipairs(catList) do
             if s.category == cat and not s.isPaused then
                 local defId = s.origDefineId or "None"
-                local entry = { Name = s.name, OrigDefineId = defId }
+                local entry = {
+                    A = (s.guid and s.guid.A) or 0,
+                    B = (s.guid and s.guid.B) or 0,
+                    C = (s.guid and s.guid.C) or 0,
+                    D = (s.guid and s.guid.D) or 0,
+                    Name = s.name,
+                    OrigDefineId = defId
+                }
                 if s.key ~= "" then PausedStations[s.key] = entry end
                 if s.key1 and s.key1 ~= "" then PausedStations[s.key1] = entry end
                 if s.key2 and s.key2 ~= "" then PausedStations[s.key2] = entry end
@@ -628,6 +716,19 @@ end)
 
 RegisterHook("/Script/Pal.PalMapObjectWorkeeModule:CallOrRegisterOnReadyWork", function(Context)
     pcall(function() CheckAndApplyStationPause(Context:get()) end)
+end)
+
+-- Farms run their own state machine (UPalMapObjectFarmBlockV2Model) that can
+-- re-activate the work after a world load / crop-state change, wiping the
+-- pause the workee hooks above applied. Re-apply it whenever the farm's crop
+-- state replicates down.
+RegisterHook("/Script/Pal.PalMapObjectFarmBlockV2Model:OnRep_CurrentState", function(Context)
+    pcall(function()
+        local farmModel = Context:get()
+        if SafeIsValid(farmModel) then
+            CheckAndApplyStationPause(farmModel:GetWorkeeModule())
+        end
+    end)
 end)
 
 pcall(function()
