@@ -326,44 +326,20 @@ local function ExtractActorFromHitResult(HitResult)
     return SafeIsValid(Actor) and Actor or nil
 end
 
-local function FindMapObjectOnLookRay(pc)
-    if not SafeIsValid(pc) then return nil end
-    local camera = pc.PlayerCameraManager
-    if not SafeIsValid(camera) then return nil end
-    local camLoc = camera:GetCameraLocation()
-    local camRot = camera:GetCameraRotation()
-    local mathLib = StaticFindObject("/Script/Engine.Default__KismetMathLibrary")
-    if not SafeIsValid(mathLib) then return nil end
-    local forward = mathLib:GetForwardVector(camRot)
-    local best, bestDistance = nil, math.huge
-    local models = FindAllOf("PalMapObjectModel") or {}
-    for _, model in ipairs(models) do
-        local candidate, candidateDistance = nil, nil
-        pcall(function()
-            if not SafeIsValid(model) then return end
-            local concrete = model:GetConcreteModel(true)
-            if not SafeIsValid(concrete) or not SafeIsValid(concrete:GetWorkeeModule()) then return end
-            local location = {}
-            concrete:GetMapObjectLocation(location)
-            if not (location.X and location.Y and location.Z) then return end
-            local dx = location.X - camLoc.X
-            local dy = location.Y - camLoc.Y
-            local dz = location.Z - camLoc.Z
-            local along = dx * forward.X + dy * forward.Y + dz * forward.Z
-            if along <= 0 or along >= Config.RaycastDistance then return end
-            local px = dx - forward.X * along
-            local py = dy - forward.Y * along
-            local pz = dz - forward.Z * along
-            local distance = math.sqrt(px * px + py * py + pz * pz)
-            if distance < 220 then
-                candidate, candidateDistance = model, distance
-            end
+local function ResolveMapObjectActor(actor)
+    local current = actor
+    for _ = 1, 4 do
+        if not SafeIsValid(current) then return nil end
+        local ok, isMapObject = pcall(function()
+            return current:IsA("/Script/Pal.PalMapObject")
         end)
-        if candidate and candidateDistance < bestDistance then
-            best, bestDistance = candidate, candidateDistance
-        end
+        if ok and isMapObject then return current end
+        local owner = nil
+        pcall(function() owner = current:GetOwner() end)
+        if not SafeIsValid(owner) or owner == current then return nil end
+        current = owner
     end
-    return best
+    return nil
 end
 
 local function GetTargetStationObjects()
@@ -375,8 +351,16 @@ local function GetTargetStationObjects()
     if SafeIsValid(interactComp) then
         local targetInteractive = interactComp.TargetInteractiveObject
         if SafeIsValid(targetInteractive) then
-            local owner = targetInteractive:GetOwner()
-            if SafeIsValid(owner) and owner:IsA("/Script/Pal.PalMapObject") then mapObj = owner end
+            mapObj = ResolveMapObjectActor(targetInteractive)
+        end
+    end
+
+    if not SafeIsValid(mapObj) then
+        local parameter = character.CharacterParameterComponent
+        if SafeIsValid(parameter) then
+            local reticleActor = nil
+            pcall(function() reticleActor = parameter:GetReticleTargetActor() end)
+            mapObj = ResolveMapObjectActor(reticleActor)
         end
     end
 
@@ -401,21 +385,12 @@ local function GetTargetStationObjects()
                 local bHit = sysLib:LineTraceSingle(pc, camLoc, endLoc, 0, false, ignoreActors, 0, hitResult, true, {R=1,G=0,B=0,A=1}, {R=0,G=1,B=0,A=1}, 0.0)
                 local hitActor = ExtractActorFromHitResult(hitResult)
                 if bHit and SafeIsValid(hitActor) then
-                    if hitActor:IsA("/Script/Pal.PalMapObject") then mapObj = hitActor
-                    else
-                        local owner = hitActor:GetOwner()
-                        if SafeIsValid(owner) and owner:IsA("/Script/Pal.PalMapObject") then mapObj = owner end
-                    end
+                    mapObj = ResolveMapObjectActor(hitActor)
                 end
             end
         end
     end
 
-    if not SafeIsValid(mapObj) then
-        local pc = GetLocalPlayerController()
-        local lookedModel = FindMapObjectOnLookRay(pc, character)
-        if SafeIsValid(lookedModel) then mapObj = lookedModel:GetActor() end
-    end
     if not SafeIsValid(mapObj) then return nil, nil, nil, nil, nil end
     local model = mapObj:GetModel()
     if not SafeIsValid(model) then return nil, nil, nil, nil, nil end
@@ -662,12 +637,8 @@ local function CheckAndApplyStationPause(workee)
     local k2 = GuidToKey(work.OwnerMapObjectConcreteModelId)
     local k3 = GuidToKey(work.ID)
     local concrete = work.CachedOwnerMapObjectConcreteModel
-    local k4 = ""
-    local k5 = ""
-    if SafeIsValid(concrete) then
-        k4 = GuidToKey(concrete.InstanceId)
-        k5 = GuidToKey(concrete.ModelInstanceId)
-    end
+    local k4 = SafeIsValid(concrete) and GuidToKey(concrete.InstanceId) or ""
+    local k5 = SafeIsValid(concrete) and GuidToKey(concrete.ModelInstanceId) or ""
 
     local targetKey = nil
     if k1 ~= "" and PausedStations[k1] then targetKey = k1
@@ -679,15 +650,6 @@ local function CheckAndApplyStationPause(workee)
 
     if targetKey then
         SetStationState(workee, work, concrete, true, targetKey)
-    end
-end
-
-local function ReapplySavedStationPauses()
-    local stations = ScanBaseWorkstations()
-    for _, station in ipairs(stations) do
-        if station.isPaused and SafeIsValid(station.work) then
-            SetStationState(station.workee, station.work, station.concrete, true, station.key)
-        end
     end
 end
 
@@ -713,11 +675,6 @@ end)
 
 local function Init()
     LoadPausedStationsFromDisk()
-    -- Work objects for farms are created after their map models on world load.
-    -- Reapply once after that initialization window, instead of racing it.
-    if type(ExecuteWithDelay) == "function" then
-        ExecuteWithDelay(3000, function() pcall(ReapplySavedStationPauses) end)
-    end
 
     RegisterKeyBind(Config.HotkeyToggle, function()
         ExecuteInGameThread(function() pcall(ToggleStation) end)
