@@ -1,0 +1,45 @@
+---@meta
+
+---@class FAnimBlueprintGeneratedConstantData : FAnimBlueprintConstantData
+---@field __NameProperty_32 FName
+---@field __StructProperty_33 FAnimNodeFunctionRef
+---@field __NameProperty_34 FName
+---@field __NameProperty_35 FName
+---@field AnimBlueprintExtension_PropertyAccess FAnimSubsystem_PropertyAccess
+---@field AnimBlueprintExtension_Base FAnimSubsystem_Base
+local FAnimBlueprintGeneratedConstantData = {}
+
+
+
+---@class UABP_NPC_NPC_Male_Trader01_Implimentation_C : UAnimInstance
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field AnimBlueprintExtension_PropertyAccess FAnimSubsystemInstance
+---@field AnimBlueprintExtension_Base FAnimSubsystemInstance
+---@field AnimGraphNode_ComponentToLocalSpace FAnimNode_ConvertComponentToLocalSpace
+---@field AnimGraphNode_KawaiiPhysics_5 FAnimNode_KawaiiPhysics
+---@field AnimGraphNode_KawaiiPhysics_4 FAnimNode_KawaiiPhysics
+---@field AnimGraphNode_KawaiiPhysics_3 FAnimNode_KawaiiPhysics
+---@field AnimGraphNode_KawaiiPhysics_2 FAnimNode_KawaiiPhysics
+---@field AnimGraphNode_KawaiiPhysics_1 FAnimNode_KawaiiPhysics
+---@field AnimGraphNode_Root_1 FAnimNode_Root
+---@field AnimGraphNode_LocalToComponentSpace FAnimNode_ConvertLocalToComponentSpace
+---@field AnimGraphNode_KawaiiPhysics FAnimNode_KawaiiPhysics
+---@field AnimGraphNode_LinkedInputPose FAnimNode_LinkedInputPose
+---@field AnimGraphNode_Root FAnimNode_Root
+local UABP_NPC_NPC_Male_Trader01_Implimentation_C = {}
+
+---@param InPose FPoseLink
+---@param NPC_HairClothLayer FPoseLink
+function UABP_NPC_NPC_Male_Trader01_Implimentation_C:NPC_HairClothLayer(InPose, NPC_HairClothLayer) end
+---@param AnimGraph FPoseLink
+function UABP_NPC_NPC_Male_Trader01_Implimentation_C:AnimGraph(AnimGraph) end
+function UABP_NPC_NPC_Male_Trader01_Implimentation_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_NPC_NPC_Male_Trader01_Implimentation_AnimGraphNode_KawaiiPhysics_090F60A0417580EE3F2358A03174B3BC() end
+function UABP_NPC_NPC_Male_Trader01_Implimentation_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_NPC_NPC_Male_Trader01_Implimentation_AnimGraphNode_KawaiiPhysics_34E7E4FA42243D2E211C85A4F19F1FEE() end
+function UABP_NPC_NPC_Male_Trader01_Implimentation_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_NPC_NPC_Male_Trader01_Implimentation_AnimGraphNode_KawaiiPhysics_9EE362FE4E80CF236C3362AA919B1D40() end
+function UABP_NPC_NPC_Male_Trader01_Implimentation_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_NPC_NPC_Male_Trader01_Implimentation_AnimGraphNode_KawaiiPhysics_2F7FA8644F65566CDB1EC097D645CFF7() end
+function UABP_NPC_NPC_Male_Trader01_Implimentation_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_NPC_NPC_Male_Trader01_Implimentation_AnimGraphNode_KawaiiPhysics_8002778347A521528E4EF0805F33E2D1() end
+function UABP_NPC_NPC_Male_Trader01_Implimentation_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_NPC_NPC_Male_Trader01_Implimentation_AnimGraphNode_KawaiiPhysics_4680EC924BA0444DD676739F1F8702CC() end
+---@param EntryPoint int32
+function UABP_NPC_NPC_Male_Trader01_Implimentation_C:ExecuteUbergraph_ABP_NPC_NPC_Male_Trader01_Implimentation(EntryPoint) end
+
+

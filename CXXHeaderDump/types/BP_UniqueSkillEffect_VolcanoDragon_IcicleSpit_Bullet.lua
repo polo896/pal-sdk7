@@ -1,0 +1,13 @@
+---@meta
+
+---@class ABP_UniqueSkillEffect_VolcanoDragon_IcicleSpit_Bullet_C : ABP_UniqueSkillEffect_VolcanoDragon_MagmaSpit_Bullet_C
+---@field UberGraphFrame FPointerToUberGraphFrame
+local ABP_UniqueSkillEffect_VolcanoDragon_IcicleSpit_Bullet_C = {}
+
+---@param SpitClass TSubclassOf<ABP_UniqueSkillEffect_VolcanoDragon_MagmaSpit_Magma_C>
+function ABP_UniqueSkillEffect_VolcanoDragon_IcicleSpit_Bullet_C:GetSpitClass(SpitClass) end
+function ABP_UniqueSkillEffect_VolcanoDragon_IcicleSpit_Bullet_C:DoFadeEffect() end
+---@param EntryPoint int32
+function ABP_UniqueSkillEffect_VolcanoDragon_IcicleSpit_Bullet_C:ExecuteUbergraph_BP_UniqueSkillEffect_VolcanoDragon_IcicleSpit_Bullet(EntryPoint) end
+
+

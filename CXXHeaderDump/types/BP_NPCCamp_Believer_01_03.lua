@@ -1,0 +1,70 @@
+---@meta
+
+---@class ABP_NPCCamp_Believer_01_03_C : ABP_NPCCampPresetBase_C
+---@field BP_SquadNPCSpawner_ForCamp_Believer_01_03_3F_Rooftop UChildActorComponent
+---@field Spawner465_EnemyCamp_Wooden_DoorWall_2 UPalMapObjectSpawnComponent
+---@field VirtualShapeBox464_EnemyCamp_Wood_WindowWall_1 UBoxComponent
+---@field VirtualShapeBox463_EnemyCamp_Wood_WindowWall_1 UBoxComponent
+---@field Spawner454_EnemyCamp_Wooden_DoorWall_2 UPalMapObjectSpawnComponent
+---@field ISM_SM_WallTryangle_Wood UHierarchicalInstancedStaticMeshComponent
+---@field VirtualShapeBox439_EnemyCamp_Wood_WindowWall_1 UBoxComponent
+---@field VirtualShapeBox438_EnemyCamp_Wood_WindowWall_1 UBoxComponent
+---@field VirtualShapeBox410_EnemyCamp_Wood_WindowWall_1 UBoxComponent
+---@field VirtualShapeBox406_EnemyCamp_Wood_WindowWall_1 UBoxComponent
+---@field ISM_SM_Flowerbed UHierarchicalInstancedStaticMeshComponent
+---@field VirtualShapeBox364_EnemyCamp_Wood_WindowWall_1 UBoxComponent
+---@field ISM_SM_ConservationGroupBannerA UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_LilyQueenStatue UHierarchicalInstancedStaticMeshComponent
+---@field Light351_EnemyCamp_WallTorch_2 UPointLightComponent
+---@field FX351_EnemyCamp_WallTorch_1 UNiagaraComponent
+---@field Light350_EnemyCamp_WallTorch_2 UPointLightComponent
+---@field FX350_EnemyCamp_WallTorch_1 UNiagaraComponent
+---@field ISM_SM_TorchHang UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_Pillar_Wood UHierarchicalInstancedStaticMeshComponent
+---@field ISM_Architecture_JapaneseStyle_WallTryangle UHierarchicalInstancedStaticMeshComponent
+---@field VirtualShapeBox316_EnemyCamp_JapaneseStyle_WindowWall_1 UBoxComponent
+---@field VirtualShapeBox314_EnemyCamp_JapaneseStyle_WindowWall_1 UBoxComponent
+---@field ISM_Architecture_JapaneseStyle_WallWindow UHierarchicalInstancedStaticMeshComponent
+---@field ISM_Architecture_JapaneseStyle_WallA UHierarchicalInstancedStaticMeshComponent
+---@field Spawner259_EnemyCamp_Glass_DoorWall_2 UPalMapObjectSpawnComponent
+---@field EditorOnly_ISM_SM_Door_Glass UHierarchicalInstancedStaticMeshComponent
+---@field EditorOnly_ISM_SM_Doorbase_Glass UHierarchicalInstancedStaticMeshComponent
+---@field Spawner258_EnemyCamp_Wooden_DoorWall_2 UPalMapObjectSpawnComponent
+---@field VirtualShapeBox254_EnemyCamp_Wood_WindowWall_1 UBoxComponent
+---@field ISM_SM_Roof_Glass UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_Stair_Wood UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_Wall_Glass UHierarchicalInstancedStaticMeshComponent
+---@field Spawner130_EnemyCamp_Wooden_ladder_1 UPalMapObjectSpawnComponent
+---@field EditorOnly_ISM_SM_Ladder_Wood UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_Fence_Wood UHierarchicalInstancedStaticMeshComponent
+---@field VirtualShapeBox080_EnemyCamp_Wood_WindowWall_1 UBoxComponent
+---@field VirtualShapeBox078_EnemyCamp_Wood_WindowWall_1 UBoxComponent
+---@field VirtualShapeBox077_EnemyCamp_Wood_WindowWall_1 UBoxComponent
+---@field VirtualShapeBox048_EnemyCamp_Wood_WindowWall_1 UBoxComponent
+---@field ISM_SM_WallWindow_Wood UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_Wall_Wood UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_Roof_Wood UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_RoofB_Wood UHierarchicalInstancedStaticMeshComponent
+---@field Spawner036_EnemyCamp_Wooden_DoorWall_2 UPalMapObjectSpawnComponent
+---@field EditorOnly_ISM_SM_Door_Wood UHierarchicalInstancedStaticMeshComponent
+---@field EditorOnly_ISM_SM_Doorbase_Wood UHierarchicalInstancedStaticMeshComponent
+---@field ISM_SM_Floor_Wood UHierarchicalInstancedStaticMeshComponent
+---@field ISM_Banyan_Hero_Forest_Big_001 UHierarchicalInstancedStaticMeshComponent
+---@field PalLimitVolumeBox UPalLimitVolumeBoxComponent
+---@field BP_SquadNPCSpawner_ForCamp_Believer_01_03_1F_Corrider4 UChildActorComponent
+---@field BP_EnemyCampTreasureBoxSpawnerComponent3 UBP_EnemyCampTreasureBoxSpawnerComponent_C
+---@field BP_SquadNPCSpawner_ForCamp_Believer_01_03_3F_Outside_Corrider UChildActorComponent
+---@field BP_SquadNPCSpawner_ForCamp_Believer_01_03_1F_Corrider3 UChildActorComponent
+---@field BP_SquadNPCSpawner_ForCamp_Believer_01_03_1F_Corrider2 UChildActorComponent
+---@field BP_SquadNPCSpawner_ForCamp_Believer_01_03_1F_Corrider UChildActorComponent
+---@field BP_EnemyCampTreasureBoxSpawnerComponent2 UBP_EnemyCampTreasureBoxSpawnerComponent_C
+---@field BP_EnemyCampTreasureBoxSpawnerComponent1 UBP_EnemyCampTreasureBoxSpawnerComponent_C
+---@field BP_EnemyCampTreasureBoxSpawnerComponent UBP_EnemyCampTreasureBoxSpawnerComponent_C
+---@field BP_EnemyCampTreasureBoxSpawnerComponent_Goal UBP_EnemyCampTreasureBoxSpawnerComponent_C
+---@field BP_PalCapturedCage UChildActorComponent
+---@field PalFoliageRemoveVolumeBox UPalFoliageRemoveVolumeBoxComponent
+---@field BuildObjectRoot USceneComponent
+local ABP_NPCCamp_Believer_01_03_C = {}
+
+
+

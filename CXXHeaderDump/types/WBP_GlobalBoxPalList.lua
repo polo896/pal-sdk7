@@ -1,0 +1,63 @@
+---@meta
+
+---@class UWBP_GlobalBoxPalList_C : UPalUIGlobalPalStorageList
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field WBP_BoxPalListBase UWBP_BoxPalListBase_C
+---@field OnLeftClickedSlot FWBP_GlobalBoxPalList_COnLeftClickedSlot
+---@field OnRightClickedSlot FWBP_GlobalBoxPalList_COnRightClickedSlot
+---@field OnHoveredSlot FWBP_GlobalBoxPalList_COnHoveredSlot
+---@field OnUnhoveredSlot FWBP_GlobalBoxPalList_COnUnhoveredSlot
+---@field bCanDragDrop boolean
+---@field NextPageInputAction FPalDataTableRowName_UIInputAction
+---@field PrevPageInputAction FPalDataTableRowName_UIInputAction
+---@field OnCreatedNewSlot FWBP_GlobalBoxPalList_COnCreatedNewSlot
+---@field SortEnable boolean
+local UWBP_GlobalBoxPalList_C = {}
+
+function UWBP_GlobalBoxPalList_C:UpdateAllSlotFiltering() end
+function UWBP_GlobalBoxPalList_C:UpdateSearchButton() end
+---@param SlotButton UWBP_PalCharacterSlotButtonBase_C
+function UWBP_GlobalBoxPalList_C:UpdateSlotFiltering(SlotButton) end
+---@param Param UPalHUDDispatchParameterBase
+function UWBP_GlobalBoxPalList_C:OnClosedSearchWindow(Param) end
+---@param Param UPalHUDDispatchParameterBase
+function UWBP_GlobalBoxPalList_C:OnClosedSortWindow(Param) end
+---@param bIsEnableAction boolean
+UWBP_GlobalBoxPalList_C['Set Enable Page Control Action'] = function(self, bIsEnableAction) end
+function UWBP_GlobalBoxPalList_C:RefreshCurrentPage() end
+function UWBP_GlobalBoxPalList_C:SetupForBP() end
+function UWBP_GlobalBoxPalList_C:Construct() end
+---@param Widget UWBP_PalCharacterSlotButtonBase_C
+---@param PressType EPalItemSlotPressType
+function UWBP_GlobalBoxPalList_C:BndEvt__WBP_GlobalBoxPalList_WBP_BoxPalListBase_K2Node_ComponentBoundEvent_0_OnLeftClickedSlot__DelegateSignature(Widget, PressType) end
+---@param Widget UWBP_PalCharacterSlotButtonBase_C
+function UWBP_GlobalBoxPalList_C:BndEvt__WBP_GlobalBoxPalList_WBP_BoxPalListBase_K2Node_ComponentBoundEvent_1_OnHoveredSlot__DelegateSignature(Widget) end
+---@param Widget UWBP_PalCharacterSlotButtonBase_C
+function UWBP_GlobalBoxPalList_C:BndEvt__WBP_GlobalBoxPalList_WBP_BoxPalListBase_K2Node_ComponentBoundEvent_2_OnUnhoveredSlot__DelegateSignature(Widget) end
+---@param NowPage int32
+function UWBP_GlobalBoxPalList_C:BndEvt__WBP_GlobalBoxPalList_WBP_BoxPalListBase_K2Node_ComponentBoundEvent_3_OnUpdatedPage__DelegateSignature(NowPage) end
+function UWBP_GlobalBoxPalList_C:BndEvt__WBP_GlobalBoxPalList_WBP_BoxPalListBase_K2Node_ComponentBoundEvent_4_OnClickedSortButton__DelegateSignature() end
+---@param NewSlot UWBP_PalCharacterSlotButtonBase_C
+function UWBP_GlobalBoxPalList_C:BndEvt__WBP_GlobalBoxPalList_WBP_BoxPalListBase_K2Node_ComponentBoundEvent_5_OnCreatedNewSlot__DelegateSignature(NewSlot) end
+---@param Widget UWBP_PalCharacterSlotButtonBase_C
+function UWBP_GlobalBoxPalList_C:BndEvt__WBP_GlobalBoxPalList_WBP_BoxPalListBase_K2Node_ComponentBoundEvent_6_OnRightClickedSlot__DelegateSignature(Widget) end
+---@param IsEnable boolean
+function UWBP_GlobalBoxPalList_C:SetSortButtonEnable(IsEnable) end
+function UWBP_GlobalBoxPalList_C:BndEvt__WBP_GlobalBoxPalList_WBP_BoxPalListBase_K2Node_ComponentBoundEvent_7_OnClickedSearchButton__DelegateSignature() end
+---@param SlotButton UWBP_PalCharacterSlotButtonBase_C
+function UWBP_GlobalBoxPalList_C:BndEvt__WBP_GlobalBoxPalList_WBP_BoxPalListBase_K2Node_ComponentBoundEvent_8_OnSlotSynced__DelegateSignature(SlotButton) end
+---@param EntryPoint int32
+function UWBP_GlobalBoxPalList_C:ExecuteUbergraph_WBP_GlobalBoxPalList(EntryPoint) end
+---@param Widget UWBP_PalCharacterSlotButtonBase_C
+function UWBP_GlobalBoxPalList_C:OnRightClickedSlot__DelegateSignature(Widget) end
+---@param Slot UWBP_PalCharacterSlotButtonBase_C
+function UWBP_GlobalBoxPalList_C:OnCreatedNewSlot__DelegateSignature(Slot) end
+---@param Widget UWBP_PalCharacterSlotButtonBase_C
+function UWBP_GlobalBoxPalList_C:OnUnhoveredSlot__DelegateSignature(Widget) end
+---@param Widget UWBP_PalCharacterSlotButtonBase_C
+function UWBP_GlobalBoxPalList_C:OnHoveredSlot__DelegateSignature(Widget) end
+---@param Widget UWBP_PalCharacterSlotButtonBase_C
+---@param PressType EPalItemSlotPressType
+function UWBP_GlobalBoxPalList_C:OnLeftClickedSlot__DelegateSignature(Widget, PressType) end
+
+

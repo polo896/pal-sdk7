@@ -1,0 +1,100 @@
+---@meta
+
+---@class UWBP_GlobalPalStorage_ForDisplay_C : UPalUIGlobalPalStorage
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field CircularThrobber_37 UCircularThrobber
+---@field Image_38 UImage
+---@field Overlay_Importing UOverlay
+---@field WBP_IngameMenu_PalBoxGlobal UWBP_IngameMenu_PalBoxGlobal_C
+---@field ExportCache FF_PalUIGlobalPalStorageExportCacheData
+---@field CachedRemoveInstanceIDArray TArray<FPalInstanceID>
+---@field bWaitingImport boolean
+---@field TutorialMsgID FDataTableRowHandle
+---@field ImportCache FF_PalUIGlobalPalStorageImportCacheData
+---@field FavoriteAction FPalDataTableRowName_UIInputAction
+---@field ShowPalDetailAction FPalDataTableRowName_UIInputAction
+---@field RemoveDataMsgID FDataTableRowHandle
+---@field SendSlotAction FPalDataTableRowName_UIInputAction
+---@field ShowPalDetailActionHandle FPalUIActionBindData
+---@field FavoriteActionhandle FPalUIActionBindData
+---@field SendSlotActionhandle FPalUIActionBindData
+---@field ToggleSkillInfoInput FPalDataTableRowName_UIInputAction
+---@field ToggleSkillInfoActionHandle FPalUIActionBindData
+local UWBP_GlobalPalStorage_ForDisplay_C = {}
+
+function UWBP_GlobalPalStorage_ForDisplay_C:OnInputAction_ToggleSkillInfo() end
+---@param FocusSlotIndex int32
+function UWBP_GlobalPalStorage_ForDisplay_C:RestorePalBoxSlotPage(FocusSlotIndex) end
+---@param SlotIndex int32
+function UWBP_GlobalPalStorage_ForDisplay_C:RestoreGlobalPalBoxSlotFocus(SlotIndex) end
+---@param ExportDataIndex int32
+function UWBP_GlobalPalStorage_ForDisplay_C:HandleExportSuccess(ExportDataIndex) end
+function UWBP_GlobalPalStorage_ForDisplay_C:RegisterPalOperationAction() end
+UWBP_GlobalPalStorage_ForDisplay_C['Unregister Pal Operation Action'] = function(self, ) end
+---@param bWaiting boolean
+function UWBP_GlobalPalStorage_ForDisplay_C:IsWaitingImport(bWaiting) end
+---@param bCanOpen boolean
+function UWBP_GlobalPalStorage_ForDisplay_C:CanOpenPalDetail(bCanOpen) end
+---@param bIsEnableAction boolean
+UWBP_GlobalPalStorage_ForDisplay_C['Set Enable Show Pal Status Action'] = function(self, bIsEnableAction) end
+function UWBP_GlobalPalStorage_ForDisplay_C:OnSendSlotAction() end
+---@return UPalUIGlobalPalStorageList
+function UWBP_GlobalPalStorage_ForDisplay_C:GetGlobalStorageListUI() end
+function UWBP_GlobalPalStorage_ForDisplay_C:OnShowPalDetailAction() end
+function UWBP_GlobalPalStorage_ForDisplay_C:OnFavoriteShortcutAction() end
+---@param Result EPalGlobalStorageImportResult
+---@param AdditionalData FPalGlobalPalStorageImportResultAdditionalData
+function UWBP_GlobalPalStorage_ForDisplay_C:OnImport(Result, AdditionalData) end
+---@param Param UPalHUDDispatchParameterBase
+function UWBP_GlobalPalStorage_ForDisplay_C:OnClosedImportOverwriteCheckWindow(Param) end
+---@param AdditionalData FPalGlobalPalStorageImportResultAdditionalData
+function UWBP_GlobalPalStorage_ForDisplay_C:OpenImportOverwriteWindow(AdditionalData) end
+---@param Param UPalHUDDispatchParameterBase
+function UWBP_GlobalPalStorage_ForDisplay_C:OnClosedExportOverwriteCheckWindow(Param) end
+---@param bImporting boolean
+function UWBP_GlobalPalStorage_ForDisplay_C:SetImportingMode(bImporting) end
+function UWBP_GlobalPalStorage_ForDisplay_C:OnCancelAction() end
+---@param bResult boolean
+function UWBP_GlobalPalStorage_ForDisplay_C:OnDialogClosed_CheckRemove(bResult) end
+---@param bResult boolean
+function UWBP_GlobalPalStorage_ForDisplay_C:OnDialogClosed_DoNothing(bResult) end
+---@param Result EPalGlobalStorageExportResult
+---@param TargetSlot UPalIndividualCharacterSlot
+---@param ExportDataIndex int32
+---@param ExportOption FPalGlobalPalStorageExportOption
+function UWBP_GlobalPalStorage_ForDisplay_C:HandleExportFailed(Result, TargetSlot, ExportDataIndex, ExportOption) end
+---@return UWidget
+function UWBP_GlobalPalStorage_ForDisplay_C:BP_GetDesiredFocusTarget() end
+---@param bIsSuccess boolean
+function UWBP_GlobalPalStorage_ForDisplay_C:OnSaveGPSData(bIsSuccess) end
+function UWBP_GlobalPalStorage_ForDisplay_C:Construct() end
+function UWBP_GlobalPalStorage_ForDisplay_C:OnReadyGPSSubsystem() end
+function UWBP_GlobalPalStorage_ForDisplay_C:Destruct() end
+function UWBP_GlobalPalStorage_ForDisplay_C:OnSetup() end
+---@param Widget UWBP_PalCharacterSlotButtonBase_C
+---@param PressType EPalItemSlotPressType
+function UWBP_GlobalPalStorage_ForDisplay_C:BndEvt__WBP_GlobalPalStorage_ForDisplay_WBP_IngameMenu_PalBoxGlobal_K2Node_ComponentBoundEvent_0_OnSelectedInGameBoxSlot__DelegateSignature(Widget, PressType) end
+---@param Widget UWBP_PalCharacterSlotButtonBase_C
+---@param PressType EPalItemSlotPressType
+function UWBP_GlobalPalStorage_ForDisplay_C:BndEvt__WBP_GlobalPalStorage_ForDisplay_WBP_IngameMenu_PalBoxGlobal_K2Node_ComponentBoundEvent_1_OnSelectedGPSSlot__DelegateSignature(Widget, PressType) end
+---@param SelectedInstanceIDArray TArray<FPalInstanceID>
+function UWBP_GlobalPalStorage_ForDisplay_C:BndEvt__WBP_GlobalPalStorage_ForDisplay_WBP_IngameMenu_PalBoxGlobal_K2Node_ComponentBoundEvent_2_OnConfirmRemoveData__DelegateSignature(SelectedInstanceIDArray) end
+function UWBP_GlobalPalStorage_ForDisplay_C:BndEvt__WBP_GlobalPalStorage_ForDisplay_WBP_IngameMenu_PalBoxGlobal_K2Node_ComponentBoundEvent_3_OnStartRemoveDataMode__DelegateSignature() end
+---@param GPSDataIndex int32
+---@param TargetSlotIndex int32
+---@param ImportOption FPalGlobalPalStorageImportOption
+function UWBP_GlobalPalStorage_ForDisplay_C:OnStartImport(GPSDataIndex, TargetSlotIndex, ImportOption) end
+function UWBP_GlobalPalStorage_ForDisplay_C:BndEvt__WBP_GlobalPalStorage_ForDisplay_WBP_IngameMenu_PalBoxGlobal_K2Node_ComponentBoundEvent_4_OnClickedCloseButton__DelegateSignature() end
+---@param Widget UWBP_PalCharacterSlotButtonBase_C
+function UWBP_GlobalPalStorage_ForDisplay_C:BndEvt__WBP_GlobalPalStorage_ForDisplay_WBP_IngameMenu_PalBoxGlobal_K2Node_ComponentBoundEvent_5_OnRightClickedLocalBoxSlot__DelegateSignature(Widget) end
+---@param Widget UWBP_PalCharacterSlotButtonBase_C
+function UWBP_GlobalPalStorage_ForDisplay_C:BndEvt__WBP_GlobalPalStorage_ForDisplay_WBP_IngameMenu_PalBoxGlobal_K2Node_ComponentBoundEvent_6_OnRightClickedGlobalBoxSlot__DelegateSignature(Widget) end
+---@param Widget UWBP_PalCharacterSlotButtonBase_C
+function UWBP_GlobalPalStorage_ForDisplay_C:BndEvt__WBP_GlobalPalStorage_ForDisplay_WBP_IngameMenu_PalBoxGlobal_K2Node_ComponentBoundEvent_7_OnHoveredGPSSlot__DelegateSignature(Widget) end
+---@param Widget UWBP_PalCharacterSlotButtonBase_C
+function UWBP_GlobalPalStorage_ForDisplay_C:BndEvt__WBP_GlobalPalStorage_ForDisplay_WBP_IngameMenu_PalBoxGlobal_K2Node_ComponentBoundEvent_8_OnHoveredInGameBoxSlot__DelegateSignature(Widget) end
+function UWBP_GlobalPalStorage_ForDisplay_C:BndEvt__WBP_GlobalPalStorage_ForDisplay_WBP_IngameMenu_PalBoxGlobal_K2Node_ComponentBoundEvent_9_OnEndRemoveDataMode__DelegateSignature() end
+---@param EntryPoint int32
+function UWBP_GlobalPalStorage_ForDisplay_C:ExecuteUbergraph_WBP_GlobalPalStorage_ForDisplay(EntryPoint) end
+
+

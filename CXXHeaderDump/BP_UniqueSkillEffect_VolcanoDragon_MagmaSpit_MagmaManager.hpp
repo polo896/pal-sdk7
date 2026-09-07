@@ -1,0 +1,8 @@
+#ifndef UE4SS_SDK_BP_UniqueSkillEffect_VolcanoDragon_MagmaSpit_MagmaManager_HPP
+#define UE4SS_SDK_BP_UniqueSkillEffect_VolcanoDragon_MagmaSpit_MagmaManager_HPP
+
+class ABP_UniqueSkillEffect_VolcanoDragon_MagmaSpit_MagmaManager_C : public ABP_SkillEffectBase_C
+{
+}; // Size: 0x429
+
+#endif

@@ -1,0 +1,17 @@
+#ifndef UE4SS_SDK_BP_ActionAquaJet_HPP
+#define UE4SS_SDK_BP_ActionAquaJet_HPP
+
+class UBP_ActionAquaJet_C : public UBP_ActionGeneralAttackFarBase_C
+{
+    FPointerToUberGraphFrame UberGraphFrame;                                          // 0x02E8 (size: 0x8)
+    bool IsShooted;                                                                   // 0x02F0 (size: 0x1)
+
+    void BulletHasShooted(class APalSkillEffectBase* Effect);
+    void SetHomingTarget(class APalSkillEffectBase* Effect);
+    void OnShoot();
+    void OnStartProcessAnimation();
+    void OnSpawnEffect(class APalSkillEffectBase* Effect);
+    void ExecuteUbergraph_BP_ActionAquaJet(int32 EntryPoint);
+}; // Size: 0x2F1
+
+#endif

@@ -1,0 +1,70 @@
+---@meta
+
+---@class FAnimBlueprintGeneratedConstantData : FAnimBlueprintConstantData
+---@field __NameProperty_65 FName
+---@field __BoolProperty_66 boolean
+---@field __FloatProperty_67 float
+---@field __StructProperty_68 FInputScaleBiasClampConstants
+---@field __FloatProperty_69 float
+---@field __BoolProperty_70 boolean
+---@field __EnumProperty_71 EAnimSyncMethod
+---@field __ByteProperty_72 EAnimGroupRole::Type
+---@field __StructProperty_73 FAnimNodeFunctionRef
+---@field __NameProperty_74 FName
+---@field __NameProperty_75 FName
+---@field AnimBlueprintExtension_PropertyAccess FAnimSubsystem_PropertyAccess
+---@field AnimBlueprintExtension_Base FAnimSubsystem_Base
+local FAnimBlueprintGeneratedConstantData = {}
+
+
+
+---@class UABP_Player_Hair001_Implementation_C : UPalAnimInstance
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field AnimBlueprintExtension_PropertyAccess FAnimSubsystemInstance
+---@field AnimBlueprintExtension_Base FAnimSubsystemInstance
+---@field AnimGraphNode_Root_1 FAnimNode_Root
+---@field AnimGraphNode_LinkedInputPose FAnimNode_LinkedInputPose
+---@field AnimGraphNode_LocalToComponentSpace FAnimNode_ConvertLocalToComponentSpace
+---@field AnimGraphNode_ComponentToLocalSpace FAnimNode_ConvertComponentToLocalSpace
+---@field AnimGraphNode_KawaiiPhysics_13 FAnimNode_KawaiiPhysics
+---@field AnimGraphNode_KawaiiPhysics_12 FAnimNode_KawaiiPhysics
+---@field AnimGraphNode_KawaiiPhysics_11 FAnimNode_KawaiiPhysics
+---@field AnimGraphNode_KawaiiPhysics_10 FAnimNode_KawaiiPhysics
+---@field AnimGraphNode_KawaiiPhysics_9 FAnimNode_KawaiiPhysics
+---@field AnimGraphNode_KawaiiPhysics_8 FAnimNode_KawaiiPhysics
+---@field AnimGraphNode_KawaiiPhysics_7 FAnimNode_KawaiiPhysics
+---@field AnimGraphNode_KawaiiPhysics_6 FAnimNode_KawaiiPhysics
+---@field AnimGraphNode_KawaiiPhysics_5 FAnimNode_KawaiiPhysics
+---@field AnimGraphNode_KawaiiPhysics_4 FAnimNode_KawaiiPhysics
+---@field AnimGraphNode_KawaiiPhysics_3 FAnimNode_KawaiiPhysics
+---@field AnimGraphNode_KawaiiPhysics_2 FAnimNode_KawaiiPhysics
+---@field AnimGraphNode_KawaiiPhysics_1 FAnimNode_KawaiiPhysics
+---@field AnimGraphNode_KawaiiPhysics FAnimNode_KawaiiPhysics
+---@field AnimGraphNode_ApplyAdditive FAnimNode_ApplyAdditive
+---@field AnimGraphNode_SequencePlayer FAnimNode_SequencePlayer
+---@field AnimGraphNode_Root FAnimNode_Root
+---@field PhysicsSettings FKawaiiPhysicsSettings
+---@field Alpha double
+local UABP_Player_Hair001_Implementation_C = {}
+
+---@param InPose FPoseLink
+---@param HairLayer FPoseLink
+function UABP_Player_Hair001_Implementation_C:HairLayer(InPose, HairLayer) end
+---@param AnimGraph FPoseLink
+function UABP_Player_Hair001_Implementation_C:AnimGraph(AnimGraph) end
+function UABP_Player_Hair001_Implementation_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Player_Hair001_Implementation_AnimGraphNode_KawaiiPhysics_CF68BD814004A9BE933855AAF278E492() end
+function UABP_Player_Hair001_Implementation_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Player_Hair001_Implementation_AnimGraphNode_KawaiiPhysics_45CE30654A7FB37D97E2E4A5510467E9() end
+function UABP_Player_Hair001_Implementation_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Player_Hair001_Implementation_AnimGraphNode_KawaiiPhysics_815AC33B4E182803179C95A88BD10CE7() end
+function UABP_Player_Hair001_Implementation_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Player_Hair001_Implementation_AnimGraphNode_KawaiiPhysics_CCBF9F7B4F40FCEF790AA69A253ED00C() end
+function UABP_Player_Hair001_Implementation_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Player_Hair001_Implementation_AnimGraphNode_KawaiiPhysics_869DD29A413AF4EDA005FE98B0E48048() end
+function UABP_Player_Hair001_Implementation_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Player_Hair001_Implementation_AnimGraphNode_KawaiiPhysics_77CD87CA487FEE98D17775ADDFECDA34() end
+function UABP_Player_Hair001_Implementation_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Player_Hair001_Implementation_AnimGraphNode_KawaiiPhysics_9722388A446D396F3E44C2953C8CF4BA() end
+function UABP_Player_Hair001_Implementation_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Player_Hair001_Implementation_AnimGraphNode_KawaiiPhysics_D2C627AB41C7F7242090DEB9F5971E6A() end
+function UABP_Player_Hair001_Implementation_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Player_Hair001_Implementation_AnimGraphNode_KawaiiPhysics_1AA876F346A93B52CF7D11A83BC812CD() end
+function UABP_Player_Hair001_Implementation_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Player_Hair001_Implementation_AnimGraphNode_KawaiiPhysics_5D45771D4196D87E7E3035959F88C0B0() end
+function UABP_Player_Hair001_Implementation_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Player_Hair001_Implementation_AnimGraphNode_KawaiiPhysics_DDAA787A43E397585134FC973C278B17() end
+function UABP_Player_Hair001_Implementation_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Player_Hair001_Implementation_AnimGraphNode_KawaiiPhysics_3038E75C46270EDCF356C9AE6CDD7DEF() end
+---@param EntryPoint int32
+function UABP_Player_Hair001_Implementation_C:ExecuteUbergraph_ABP_Player_Hair001_Implementation(EntryPoint) end
+
+

@@ -1,0 +1,76 @@
+---@meta
+
+---@class UWBP_IngameMenu_Chest_LockSettings_C : UPalUserWidgetOverlayUI
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field ButtonPrivateLockToggle UWBP_PalInvisibleButton_C
+---@field CheckBox_80 UCheckBox
+---@field CheckBox_Guest UCheckBox
+---@field CheckBox_Member UCheckBox
+---@field CheckBox_SubMaster UCheckBox
+---@field CheckBoxPrivateLock UCheckBox
+---@field HorizontalBox_PrivateLock UHorizontalBox
+---@field WBP_CommonButton_Confirm UWBP_CommonButton_C
+---@field WBP_CommonButton_Password UWBP_CommonButton_C
+---@field WBP_Menu_btn UWBP_Menu_btn_C
+---@field WBP_PalInvisibleButton_Guest UWBP_PalInvisibleButton_C
+---@field WBP_PalInvisibleButton_Lock UWBP_PalInvisibleButton_C
+---@field WBP_PalInvisibleButton_Member UWBP_PalInvisibleButton_C
+---@field WBP_PalInvisibleButton_SubMaster UWBP_PalInvisibleButton_C
+---@field PasswordLockModule UPalMapObjectPasswordLockModule
+local UWBP_IngameMenu_Chest_LockSettings_C = {}
+
+---@param Navigation EUINavigation
+---@return UWidget
+function UWBP_IngameMenu_Chest_LockSettings_C:DoCustomNavi_ToLockButton(Navigation) end
+---@param Navigation EUINavigation
+---@return UWidget
+function UWBP_IngameMenu_Chest_LockSettings_C:DoCustomNavi_ToPrivateLockOrSubMaster(Navigation) end
+---@param Navigation EUINavigation
+---@return UWidget
+function UWBP_IngameMenu_Chest_LockSettings_C:DoCustomNavi_ToConfirmButton(Navigation) end
+---@param Navigation EUINavigation
+---@return UWidget
+function UWBP_IngameMenu_Chest_LockSettings_C:DoCustomNavi_SecurityLevelToUpper(Navigation) end
+---@param Role EPalGuildRole
+---@param CheckBox UCheckBox
+function UWBP_IngameMenu_Chest_LockSettings_C:GetRoleCheckBox(Role, CheckBox) end
+---@param Module UPalMapObjectGuildSecurityModule
+---@param NewRoles TArray<EPalGuildRole>
+function UWBP_IngameMenu_Chest_LockSettings_C:OnUpdateGuildSecurityAllowedRoles(Module, NewRoles) end
+---@param _____ UCheckBox
+---@return boolean
+function UWBP_IngameMenu_Chest_LockSettings_C:IsCheckedBox(_____) end
+---@param TargetRole EPalGuildRole
+---@param bCurrentDisplayChecked boolean
+function UWBP_IngameMenu_Chest_LockSettings_C:RequestApplyGuildSecurityLevel(TargetRole, bCurrentDisplayChecked) end
+---@param Navigation EUINavigation
+---@return UWidget
+function UWBP_IngameMenu_Chest_LockSettings_C:CustomNavigation_ToCloseButton(Navigation) end
+---@param ConcreteModel UPalMapObjectItemChestModel
+function UWBP_IngameMenu_Chest_LockSettings_C:OnUpdateItemChestPrivateLock(ConcreteModel) end
+---@param ConcreteModel UPalMapObjectConcreteModelBase
+function UWBP_IngameMenu_Chest_LockSettings_C:SetupForGuildSecurity(ConcreteModel) end
+---@param ConcreteModel UPalMapObjectConcreteModelBase
+function UWBP_IngameMenu_Chest_LockSettings_C:SetupForPrivateLock(ConcreteModel) end
+---@param ConcreteModel UPalMapObjectConcreteModelBase
+function UWBP_IngameMenu_Chest_LockSettings_C:SetupForPassword(ConcreteModel) end
+---@return UWidget
+function UWBP_IngameMenu_Chest_LockSettings_C:BP_GetDesiredFocusTarget() end
+function UWBP_IngameMenu_Chest_LockSettings_C:OnSetup() end
+function UWBP_IngameMenu_Chest_LockSettings_C:BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_CommonButton_K2Node_ComponentBoundEvent_1_OnClicked__DelegateSignature() end
+function UWBP_IngameMenu_Chest_LockSettings_C:BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_CommonButton_1_K2Node_ComponentBoundEvent_2_OnClicked__DelegateSignature() end
+function UWBP_IngameMenu_Chest_LockSettings_C:BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_Menu_btn_K2Node_ComponentBoundEvent_3_OnButtonClicked__DelegateSignature() end
+---@param Button UCommonButtonBase
+function UWBP_IngameMenu_Chest_LockSettings_C:BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_4_CommonButtonBaseClicked__DelegateSignature(Button) end
+---@param Button UCommonButtonBase
+function UWBP_IngameMenu_Chest_LockSettings_C:BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_1_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(Button) end
+---@param Button UCommonButtonBase
+function UWBP_IngameMenu_Chest_LockSettings_C:BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_SubMaster_K2Node_ComponentBoundEvent_8_CommonButtonBaseClicked__DelegateSignature(Button) end
+---@param Button UCommonButtonBase
+function UWBP_IngameMenu_Chest_LockSettings_C:BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Member_K2Node_ComponentBoundEvent_5_CommonButtonBaseClicked__DelegateSignature(Button) end
+---@param Button UCommonButtonBase
+function UWBP_IngameMenu_Chest_LockSettings_C:BndEvt__WBP_IngameMenu_Chest_LockSettings_WBP_PalInvisibleButton_Guest_K2Node_ComponentBoundEvent_6_CommonButtonBaseClicked__DelegateSignature(Button) end
+---@param EntryPoint int32
+function UWBP_IngameMenu_Chest_LockSettings_C:ExecuteUbergraph_WBP_IngameMenu_Chest_LockSettings(EntryPoint) end
+
+

@@ -1,0 +1,35 @@
+---@meta
+
+---@class UWBP_RaidBossMenuSelectBattleType_C : UPalUserWidgetOverlayUI
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field WBP_Altar_SelectStage UWBP_Altar_SelectStage_C
+---@field LastSelectedSlot UWBP_Altar_SelectStage_Button_C
+local UWBP_RaidBossMenuSelectBattleType_C = {}
+
+function UWBP_RaidBossMenuSelectBattleType_C:UnselectCurrentSlot() end
+---@param Return_Value UWBP_Altar_SelectStage_Button_C
+function UWBP_RaidBossMenuSelectBattleType_C:GetSelectedSlot(Return_Value) end
+---@return UWidget
+function UWBP_RaidBossMenuSelectBattleType_C:BP_GetDesiredFocusTarget() end
+function UWBP_RaidBossMenuSelectBattleType_C:OnClickedSubmitButton() end
+---@param SelfSlot UWBP_Altar_SelectStage_Button_C
+function UWBP_RaidBossMenuSelectBattleType_C:OnUnhoveredSlot(SelfSlot) end
+---@param SelfSlot UWBP_Altar_SelectStage_Button_C
+function UWBP_RaidBossMenuSelectBattleType_C:OnHoveredSlot(SelfSlot) end
+---@param SelfSlot UWBP_Altar_SelectStage_Button_C
+function UWBP_RaidBossMenuSelectBattleType_C:OnClickSlot(SelfSlot) end
+---@param UIModel UPalUIMapObjectRaidBossSummonSelectionModel
+function UWBP_RaidBossMenuSelectBattleType_C:OnUpdateSelectedInfo(UIModel) end
+function UWBP_RaidBossMenuSelectBattleType_C:BindUIEvents() end
+---@param UIModel UPalUIMapObjectRaidBossSummonSelectionModel
+function UWBP_RaidBossMenuSelectBattleType_C:GetUIModel(UIModel) end
+function UWBP_RaidBossMenuSelectBattleType_C:Setup() end
+function UWBP_RaidBossMenuSelectBattleType_C:OnSetup() end
+function UWBP_RaidBossMenuSelectBattleType_C:BndEvt__WBP_RaidBossMenuSelectBattleType_WBP_Altar_SelectStage_K2Node_ComponentBoundEvent_0_OnClickedCloseButton__DelegateSignature() end
+---@param BattleType EPalRaidBossBattleType
+function UWBP_RaidBossMenuSelectBattleType_C:BndEvt__WBP_RaidBossMenuSelectBattleType_WBP_Altar_SelectStage_K2Node_ComponentBoundEvent_2_OnClickedBattleTypeButton__DelegateSignature(BattleType) end
+function UWBP_RaidBossMenuSelectBattleType_C:OnClose() end
+---@param EntryPoint int32
+function UWBP_RaidBossMenuSelectBattleType_C:ExecuteUbergraph_WBP_RaidBossMenuSelectBattleType(EntryPoint) end
+
+

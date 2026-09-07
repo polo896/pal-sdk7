@@ -1,0 +1,91 @@
+---@meta
+
+---@class UWBP_IngameMenu_CommonCharacterContainer_C : UPalUserWidgetOverlayUI
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field MapObjectTitle UBP_PalTextBlock_C
+---@field WBP_BoxPalList_Party UWBP_BoxPalList_Party_C
+---@field WBP_DisplayCharacterScrollList UWBP_PalCharacterScrollList_C
+---@field WBP_IngameMenu_PalBox_PalDetail UWBP_IngameMenu_PalBox_PalDetail_C
+---@field WBP_Menu_btn UWBP_Menu_btn_C
+---@field Model UPalMapObjectConcreteModelBase
+---@field PartyPalSlots TArray<UWBP_PalCommonCharacterSlotButton_C>
+---@field SendSlotInputHandle FPalUIActionBindData
+---@field ViewDetailInputHandle FPalUIActionBindData
+---@field SendSlotInput FPalDataTableRowName_UIInputAction
+---@field ViewDetailInput FPalDataTableRowName_UIInputAction
+---@field CachedLastHoveredSlot UPalIndividualCharacterSlot
+---@field hoverdSlotType EPalBoxHoveredSlotType::Type
+---@field FavoriteInputHandle FPalUIActionBindData
+---@field FavoriteShortcutInput FPalDataTableRowName_UIInputAction
+local UWBP_IngameMenu_CommonCharacterContainer_C = {}
+
+function UWBP_IngameMenu_CommonCharacterContainer_C:RefreshDisplayCageSlotsEnable() end
+---@param SlotButton UWBP_PalCommonCharacterSlotButton_C
+function UWBP_IngameMenu_CommonCharacterContainer_C:UnbindSlotDataEvents(SlotButton) end
+---@param SlotButton UWBP_PalCommonCharacterSlotButton_C
+function UWBP_IngameMenu_CommonCharacterContainer_C:BindSlotDataEvents(SlotButton) end
+---@param SlotButton UWBP_PalCharacterSlotButtonBase_C
+function UWBP_IngameMenu_CommonCharacterContainer_C:OnSyncSlot(SlotButton) end
+---@param SlotButton UWBP_PalCharacterSlotButtonBase_C
+function UWBP_IngameMenu_CommonCharacterContainer_C:OnEmptySlot(SlotButton) end
+---@param SlotButton UWBP_PalCharacterSlotButtonBase_C
+function UWBP_IngameMenu_CommonCharacterContainer_C:OnUpdateSlot(SlotButton) end
+UWBP_IngameMenu_CommonCharacterContainer_C['On Favorite Shortcut'] = function(self, ) end
+---@param SlotButton UWBP_PalCommonCharacterSlotButton_C
+function UWBP_IngameMenu_CommonCharacterContainer_C:RefreshDisplayCageSlotEnable(SlotButton) end
+function UWBP_IngameMenu_CommonCharacterContainer_C:ToPrevShortcut() end
+function UWBP_IngameMenu_CommonCharacterContainer_C:ToNextShortcut() end
+UWBP_IngameMenu_CommonCharacterContainer_C['Set Title'] = function(self, ) end
+---@param Slot UWBP_PalCharacterSlotButtonBase_C
+function UWBP_IngameMenu_CommonCharacterContainer_C:OnHoverPartyPalSlot(Slot) end
+function UWBP_IngameMenu_CommonCharacterContainer_C:OnSendSlotInput() end
+function UWBP_IngameMenu_CommonCharacterContainer_C:OnViewDetailInput() end
+function UWBP_IngameMenu_CommonCharacterContainer_C:UnregisterPalOperateInput() end
+---@param CanFavorite boolean
+function UWBP_IngameMenu_CommonCharacterContainer_C:RegisterPalOperateInput(CanFavorite) end
+---@param Slot UPalIndividualCharacterSlot
+---@param PressType EPalItemSlotPressType
+UWBP_IngameMenu_CommonCharacterContainer_C['Select Slot'] = function(self, Slot, PressType) end
+---@param Slot UWBP_PalCharacterSlotButtonBase_C
+---@param PressType EPalItemSlotPressType
+function UWBP_IngameMenu_CommonCharacterContainer_C:OnClickSlot(Slot, PressType) end
+---@return UWidget
+function UWBP_IngameMenu_CommonCharacterContainer_C:BP_GetDesiredFocusTarget() end
+---@param Slot UWBP_PalCharacterSlotButtonBase_C
+function UWBP_IngameMenu_CommonCharacterContainer_C:OnUnhoverPalSlot(Slot) end
+---@param Slot UWBP_PalCharacterSlotButtonBase_C
+function UWBP_IngameMenu_CommonCharacterContainer_C:OnHoverPalSlot(Slot) end
+function UWBP_IngameMenu_CommonCharacterContainer_C:Setup() end
+function UWBP_IngameMenu_CommonCharacterContainer_C:OnSetup() end
+function UWBP_IngameMenu_CommonCharacterContainer_C:Destruct() end
+---@param createdSlot UWBP_PalCharacterSlotButtonBase_C
+function UWBP_IngameMenu_CommonCharacterContainer_C:BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_3_OnCreatedSlot__DelegateSignature(createdSlot) end
+---@param Widget UWBP_PalCharacterSlotButtonBase_C
+function UWBP_IngameMenu_CommonCharacterContainer_C:BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_4_OnHoveredSlot__DelegateSignature(Widget) end
+---@param Widget UWBP_PalCharacterSlotButtonBase_C
+function UWBP_IngameMenu_CommonCharacterContainer_C:BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_5_OnUnhoveredSlot__DelegateSignature(Widget) end
+---@param Widget UWBP_PalCharacterSlotButtonBase_C
+---@param PressType EPalItemSlotPressType
+function UWBP_IngameMenu_CommonCharacterContainer_C:BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_6_OnLeftClickedSlot__DelegateSignature(Widget, PressType) end
+---@param Widget UWBP_PalCharacterSlotButtonBase_C
+function UWBP_IngameMenu_CommonCharacterContainer_C:BndEvt__WBP_IngameMenu_DisplayCage_WBP_DisplayCharacterScrollList_K2Node_ComponentBoundEvent_8_OnRightClickedSlot__DelegateSignature(Widget) end
+function UWBP_IngameMenu_CommonCharacterContainer_C:BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_Menu_btn_K2Node_ComponentBoundEvent_9_OnButtonClicked__DelegateSignature() end
+---@param Slot UWBP_PalCharacterSlotButtonBase_C
+function UWBP_IngameMenu_CommonCharacterContainer_C:BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_10_OnRightClickedSlot__DelegateSignature(Slot) end
+---@param Slot UWBP_PalCharacterSlotButtonBase_C
+function UWBP_IngameMenu_CommonCharacterContainer_C:BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_11_OnHoverSlot__DelegateSignature(Slot) end
+---@param Slot UWBP_PalCharacterSlotButtonBase_C
+function UWBP_IngameMenu_CommonCharacterContainer_C:BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_12_OnUnhoverSlot__DelegateSignature(Slot) end
+---@param Slot UWBP_PalCharacterSlotButtonBase_C
+function UWBP_IngameMenu_CommonCharacterContainer_C:BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_13_OnCreatedNewSlot__DelegateSignature(Slot) end
+---@param Slot UWBP_PalCharacterSlotButtonBase_C
+---@param PressType EPalItemSlotPressType
+function UWBP_IngameMenu_CommonCharacterContainer_C:BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_14_OnLeftClickedSlot__DelegateSignature(Slot, PressType) end
+---@param IsDesignTime boolean
+function UWBP_IngameMenu_CommonCharacterContainer_C:PreConstruct(IsDesignTime) end
+---@param Page int32
+function UWBP_IngameMenu_CommonCharacterContainer_C:BndEvt__WBP_IngameMenu_CommonCharacterContainer_WBP_BoxPalList_Party_K2Node_ComponentBoundEvent_0_OnPageUpdated__DelegateSignature(Page) end
+---@param EntryPoint int32
+function UWBP_IngameMenu_CommonCharacterContainer_C:ExecuteUbergraph_WBP_IngameMenu_CommonCharacterContainer(EntryPoint) end
+
+

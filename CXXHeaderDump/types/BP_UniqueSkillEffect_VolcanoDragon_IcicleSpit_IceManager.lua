@@ -1,0 +1,15 @@
+---@meta
+
+---@class ABP_UniqueSkillEffect_VolcanoDragon_IcicleSpit_IceManager_C : ABP_UniqueSkillEffect_VolcanoDragon_MagmaSpit_MagmaManager_C
+---@field UberGraphFrame FPointerToUberGraphFrame
+local ABP_UniqueSkillEffect_VolcanoDragon_IcicleSpit_IceManager_C = {}
+
+---@param Defencer AActor
+---@param DamageInfo FPalDamageInfo
+---@param HitCount int32
+---@param AttackerComponent UPrimitiveComponent
+function ABP_UniqueSkillEffect_VolcanoDragon_IcicleSpit_IceManager_C:BndEvt__BP_UniqueSkillEffect_VolcanoDragon_IceLaser_DamageManager_AttackFilter_K2Node_ComponentBoundEvent_0_OnAttackDelegate__DelegateSignature(Defencer, DamageInfo, HitCount, AttackerComponent) end
+---@param EntryPoint int32
+function ABP_UniqueSkillEffect_VolcanoDragon_IcicleSpit_IceManager_C:ExecuteUbergraph_BP_UniqueSkillEffect_VolcanoDragon_IcicleSpit_IceManager(EntryPoint) end
+
+

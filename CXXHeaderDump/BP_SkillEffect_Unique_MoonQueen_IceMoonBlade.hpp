@@ -1,0 +1,8 @@
+#ifndef UE4SS_SDK_BP_SkillEffect_Unique_MoonQueen_IceMoonBlade_HPP
+#define UE4SS_SDK_BP_SkillEffect_Unique_MoonQueen_IceMoonBlade_HPP
+
+class ABP_SkillEffect_Unique_MoonQueen_IceMoonBlade_C : public ABP_SkillEffect_Unique_MoonQueen_MoonBlade_C
+{
+}; // Size: 0x490
+
+#endif

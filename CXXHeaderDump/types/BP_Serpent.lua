@@ -1,0 +1,18 @@
+---@meta
+
+---@class ABP_Serpent_C : ABP_MonsterBase_C
+---@field BP_PalRideMarkerBiggerHorse UBP_PalRideMarkerBiggerHorse_C
+---@field PalBodyPartsCapsule9 UPalBodyPartsCapsuleComponent
+---@field PalBodyPartsCapsule8 UPalBodyPartsCapsuleComponent
+---@field PalBodyPartsCapsule7 UPalBodyPartsCapsuleComponent
+---@field PalBodyPartsCapsule6 UPalBodyPartsCapsuleComponent
+---@field PalBodyPartsCapsule5 UPalBodyPartsCapsuleComponent
+---@field PalBodyPartsCapsule4 UPalBodyPartsCapsuleComponent
+---@field PalBodyPartsCapsule3 UPalBodyPartsCapsuleComponent
+---@field PalBodyPartsCapsule2 UPalBodyPartsCapsuleComponent
+---@field PalBodyPartsCapsule1 UPalBodyPartsCapsuleComponent
+---@field PalBodyPartsCapsule UPalBodyPartsCapsuleComponent
+local ABP_Serpent_C = {}
+
+
+

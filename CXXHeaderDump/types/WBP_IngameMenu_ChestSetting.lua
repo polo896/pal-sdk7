@@ -1,0 +1,53 @@
+---@meta
+
+---@class UWBP_IngameMenu_ChestSetting_C : UPalUserWidgetOverlayUI
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field HorizontalBox_Tab UHorizontalBox
+---@field Image_Dark UImage
+---@field WBP_IngameMenu_ChestSetting_FilterBlock UWBP_IngameMenu_ChestSetting_FilterBlock_C
+---@field WBP_IngameMenu_ChestSetting_SecurityBlock UWBP_IngameMenu_ChestSetting_SecurityBlock_C
+---@field WBP_Menu_btn UWBP_Menu_btn_C
+---@field WBP_PalCommonWindow UWBP_PalCommonWindow_C
+---@field WBP_Paldex_tab_Filter UWBP_Paldex_tab_C
+---@field WBP_Paldex_tab_Security UWBP_Paldex_tab_C
+---@field WBP_PalKeyGuideIcon_Next UWBP_PalKeyGuideIcon_C
+---@field WBP_PalKeyGuideIcon_Prev UWBP_PalKeyGuideIcon_C
+---@field WidgetSwitcher UWidgetSwitcher
+---@field OnClickedCloseButton FWBP_IngameMenu_ChestSetting_COnClickedCloseButton
+---@field OnClickedAllCheckButton FWBP_IngameMenu_ChestSetting_COnClickedAllCheckButton
+---@field OnClickedAllUncheckButton FWBP_IngameMenu_ChestSetting_COnClickedAllUncheckButton
+---@field OnClickedApplyButton FWBP_IngameMenu_ChestSetting_COnClickedApplyButton
+---@field PreferenceModel UPalUIItemChestFilterModel
+---@field NowFilter boolean
+---@field ['Can Edit Security'] boolean
+local UWBP_IngameMenu_ChestSetting_C = {}
+
+function UWBP_IngameMenu_ChestSetting_C:WBP_IngameMenu_ChestSetting_AutoGenFunc() end
+function UWBP_IngameMenu_ChestSetting_C:SetupNameEdit() end
+---@param ToFilter boolean
+function UWBP_IngameMenu_ChestSetting_C:SWITCH(ToFilter) end
+---@param FilterId FName
+---@param bChecked boolean
+function UWBP_IngameMenu_ChestSetting_C:OnClickedCheck(FilterId, bChecked) end
+function UWBP_IngameMenu_ChestSetting_C:SetupFilter() end
+---@return UWidget
+function UWBP_IngameMenu_ChestSetting_C:BP_GetDesiredFocusTarget() end
+function UWBP_IngameMenu_ChestSetting_C:BndEvt__WBP_IngameMenu_Chest_Filter_WBP_Menu_btn_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature() end
+function UWBP_IngameMenu_ChestSetting_C:OnSetup() end
+function UWBP_IngameMenu_ChestSetting_C:OnFilterTabClicked() end
+function UWBP_IngameMenu_ChestSetting_C:OnSecuTabClicked() end
+function UWBP_IngameMenu_ChestSetting_C:SwitchTab() end
+function UWBP_IngameMenu_ChestSetting_C:BndEvt__WBP_IngameMenu_ChestSetting_WBP_IngameMenu_ChestSetting_FilterBlock_K2Node_ComponentBoundEvent_2_OnClickedAllCheckButton__DelegateSignature() end
+function UWBP_IngameMenu_ChestSetting_C:BndEvt__WBP_IngameMenu_ChestSetting_WBP_IngameMenu_ChestSetting_FilterBlock_K2Node_ComponentBoundEvent_5_OnClickedAllUncheckButton__DelegateSignature() end
+function UWBP_IngameMenu_ChestSetting_C:BndEvt__WBP_IngameMenu_ChestSetting_WBP_IngameMenu_ChestSetting_SecurityBlock_K2Node_ComponentBoundEvent_1_OnGetLockedNotLocal__DelegateSignature() end
+function UWBP_IngameMenu_ChestSetting_C:BndEvt__WBP_IngameMenu_ChestSetting_WBP_IngameMenu_ChestSetting_FilterBlock_K2Node_ComponentBoundEvent_3_OnClickedEditCustomNameButton__DelegateSignature() end
+---@param NewCustomName FString
+function UWBP_IngameMenu_ChestSetting_C:BndEvt__WBP_IngameMenu_ChestSetting_WBP_IngameMenu_ChestSetting_FilterBlock_K2Node_ComponentBoundEvent_4_OnEditedCustomName__DelegateSignature(NewCustomName) end
+---@param EntryPoint int32
+function UWBP_IngameMenu_ChestSetting_C:ExecuteUbergraph_WBP_IngameMenu_ChestSetting(EntryPoint) end
+function UWBP_IngameMenu_ChestSetting_C:OnClickedApplyButton__DelegateSignature() end
+function UWBP_IngameMenu_ChestSetting_C:OnClickedAllUncheckButton__DelegateSignature() end
+function UWBP_IngameMenu_ChestSetting_C:OnClickedAllCheckButton__DelegateSignature() end
+function UWBP_IngameMenu_ChestSetting_C:OnClickedCloseButton__DelegateSignature() end
+
+

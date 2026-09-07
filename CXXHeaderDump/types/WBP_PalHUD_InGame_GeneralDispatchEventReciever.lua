@@ -1,0 +1,31 @@
+---@meta
+
+---@class UWBP_PalHUD_InGame_GeneralDispatchEventReciever_C : UPalUIInGameGeneralDispatchEventReciever
+---@field Default_In UWidgetAnimation
+---@field WidgetId_BuildingUI FGuid
+---@field WidgetId_DismantlingUI FGuid
+---@field WidgetId_PaintingUI FGuid
+local UWBP_PalHUD_InGame_GeneralDispatchEventReciever_C = {}
+
+function UWBP_PalHUD_InGame_GeneralDispatchEventReciever_C:AddCameraOffset() end
+function UWBP_PalHUD_InGame_GeneralDispatchEventReciever_C:UnregisterBuilderModeCameraOffset() end
+function UWBP_PalHUD_InGame_GeneralDispatchEventReciever_C:ReturnToBuildObjectList() end
+function UWBP_PalHUD_InGame_GeneralDispatchEventReciever_C:OpenBuildObjectListUI() end
+function UWBP_PalHUD_InGame_GeneralDispatchEventReciever_C:ClosePaintingUI() end
+function UWBP_PalHUD_InGame_GeneralDispatchEventReciever_C:OpenPaintingUI() end
+function UWBP_PalHUD_InGame_GeneralDispatchEventReciever_C:OpenDismantlingUI_Impl() end
+---@param LastSelectedIndex int32
+function UWBP_PalHUD_InGame_GeneralDispatchEventReciever_C:OpenDismantlingUIFromRadialMenu(LastSelectedIndex) end
+---@param BuildObjectId FName
+function UWBP_PalHUD_InGame_GeneralDispatchEventReciever_C:OpenBuildingUI_Impl(BuildObjectId) end
+---@param BuildObjectId FName
+function UWBP_PalHUD_InGame_GeneralDispatchEventReciever_C:OpenBuildingUIFromRadialMenu(BuildObjectId) end
+---@param Disable boolean
+function UWBP_PalHUD_InGame_GeneralDispatchEventReciever_C:SetDisablePlayerInputAction(Disable) end
+function UWBP_PalHUD_InGame_GeneralDispatchEventReciever_C:CloseDismantlingUI() end
+function UWBP_PalHUD_InGame_GeneralDispatchEventReciever_C:OpenDismantlingUI() end
+function UWBP_PalHUD_InGame_GeneralDispatchEventReciever_C:CloseBuildingUI() end
+---@param BuildObjectId FName
+function UWBP_PalHUD_InGame_GeneralDispatchEventReciever_C:OpenBuildingUI(BuildObjectId) end
+
+

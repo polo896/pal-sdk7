@@ -1,0 +1,30 @@
+---@meta
+
+---@class UWBP_ColorEditor_C : UPalUserWidgetOverlayUI
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field WBP_IngameConstruction_Paint_EditColor UWBP_IngameConstruction_Paint_EditColor_C
+---@field DispatchParam UPalHUDDispatchParameter_ColorEditor
+---@field CancelActionHandle_GamepadOnly FPalDataTableRowName_UIInputAction
+---@field CancelActionHandle_Escape FPalDataTableRowName_UIInputAction
+---@field CancelActionHandle_Tab FPalDataTableRowName_UIInputAction
+local UWBP_ColorEditor_C = {}
+
+function UWBP_ColorEditor_C:ResetColor() end
+function UWBP_ColorEditor_C:PasteClipboard() end
+function UWBP_ColorEditor_C:OnClickCopyButton() end
+---@return UWidget
+function UWBP_ColorEditor_C:BP_GetDesiredFocusTarget() end
+function UWBP_ColorEditor_C:EmptyFunction() end
+function UWBP_ColorEditor_C:OnCancelAction() end
+function UWBP_ColorEditor_C:Setup() end
+function UWBP_ColorEditor_C:OnSetup() end
+function UWBP_ColorEditor_C:BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_0_OnClickCloseButton__DelegateSignature() end
+---@param Color FLinearColor
+function UWBP_ColorEditor_C:BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_1_OnClickSubmitButton__DelegateSignature(Color) end
+function UWBP_ColorEditor_C:BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_2_OnClickCopyButton__DelegateSignature() end
+function UWBP_ColorEditor_C:BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_3_OnClickPasteButton__DelegateSignature() end
+function UWBP_ColorEditor_C:BndEvt__WBP_ColorEditor_WBP_IngameConstruction_Paint_EditColor_K2Node_ComponentBoundEvent_4_OnClickResetButton__DelegateSignature() end
+---@param EntryPoint int32
+function UWBP_ColorEditor_C:ExecuteUbergraph_WBP_ColorEditor(EntryPoint) end
+
+
