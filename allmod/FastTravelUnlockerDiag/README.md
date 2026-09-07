@@ -20,7 +20,9 @@
 | `!eaglediag` | безопасная часть: наличие функций + **контрольная проверка** (несуществующий метод — чтобы понять, можно ли верить строкам `OK`), счётчики, чтение свойств |
 | `!eaglediag rpc` | старый RPC `RequestUnlockFastTravelPoint_ToServer` на одной точке |
 | `!eaglediag keys` | **РЕШАЮЩИЙ ТЕСТ**: какие ключи лежат в `FastTravelPointUnlockFlag` и какому полю статуи они соответствуют (`FastTravelPointID` или GUID `LevelObjectInstanceId`) |
-| `!eaglediag flagmap` | `OnUpdateFlagMapRecord(FName Key, true)` — единственный найденный путь записи **без struct-параметров** |
+| `!eaglediag flagmap` | `OnUpdateFlagMapRecord(FName Key, true)` — написан без struct-параметров |
+| `!eaglediag interact` | симуляция нажатия F через `UPalInteractComponent` игрока (`StartTriggerInteract`) |
+| `!eaglediag record` | struct-параметры на **чтение**: `GetRecordData_BoolCount` / `GetRecordData_Bool` — поддерживает ли ваш UE4SS структуры вообще |
 | `!eaglediag brute` | перебор индикаторов `OnTriggerInteract(Other, 0..80)` — ищет, какой `N` реально открывает точку в вашей сборке |
 | `!eaglediag announce` | тест `SendSystemAnnounce` (подозревался в краше основного мода) |
 | `!eaglediag statue` | + `OnTriggerInteract(Character, 26)` на одной закрытой точке |
@@ -73,7 +75,9 @@
 | `OnTriggerInteract(Other, 0..80)` не открыл точку ни с `Character`, ни с `PlayerController` | путь сообщества в этой сборке мёртв |
 | `SendSystemAnnounce` выжил | он не виновник краша |
 | В `FastTravelPointUnlockFlag.Items` ключ вида `DDBBFFAF43D9219AE68DF98744DF0831` | ключ флага — это GUID в верхнем регистре (32 hex) |
-| `APalLevelObjectUnlockableFastTravelPoint::OnUpdateFlagMapRecord(FName Key, bool bFlag)` | найден в SDK: запись без struct-параметров |
+| `OnUpdateFlagMapRecord(GUID_статуи, true)` → `IsUnlocked=true`, но `Items`=0 и `IsEnableFastTravel()`=false | ключ флага — GUID `LevelObjectInstanceId` в ВЕРХНЕМ регистре (подтверждено); сам вызов меняет только визуальное состояние |
+| `!eaglediag write` → AV **writing** address 0x24 | struct-параметры в этом UE4SS не передаются |
+| `OnEndCutscene` занял 75 мс вместо обычных 10 | разблокировка может быть АСИНХРОННОЙ: теперь каждый тест проверяется ещё раз через +1 / +3 / +6 с |
 
 ## Порядок, если ничего не открывается
 
