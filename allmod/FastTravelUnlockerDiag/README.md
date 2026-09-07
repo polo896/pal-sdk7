@@ -3,7 +3,28 @@
 Нужен, когда основной мод молча «не работает»: он сам ничего не разблокирует,
 а вываливает в `UE4SS.log` состояние игры и UE4SS.
 
-Команда в чате: `!eaglediag`
+Диагностика **пошаговая**: сначала только безопасное чтение, опасные вызовы —
+отдельными командами. Каждый опасный вызов печатается так:
+
+```
+[EagleDiag] >>> ПЕРЕД ВЫЗОВОМ: OnTriggerInteract(Character, 26)
+[EagleDiag] <<< ВЫЖИЛИ ПОСЛЕ: OnTriggerInteract(Character, 26) -> nil
+```
+
+Если игра упала — **последняя строка `>>>` в UE4SS.log и есть виновник**.
+
+Команды:
+
+| Команда | Что делает |
+|---|---|
+| `!eaglediag` | безопасная часть: наличие функций, счётчики, чтение свойств |
+| `!eaglediag statue` | + `OnTriggerInteract(Character, 26)` на одной закрытой точке |
+| `!eaglediag record` | + чтение RecordData через struct-параметры (**падает на части сборок UE4SS**) |
+| `!eaglediag cutscene` | + `OnEndCutscene(...)` на одной точке (**эксперимент, может падать**) |
+| `!eaglediag write` | + `SetRecordData_Bool_ForServer` (**может падать**) |
+| `!eaglediag cosmetic` | + `bUnlocked = true` |
+| `!eaglediag all` | всё подряд |
+| `!eaglediag help` | список команд |
 
 Что попадает в лог:
 

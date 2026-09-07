@@ -1,23 +1,29 @@
 -- ============================================================================
 -- FAST TRAVEL UNLOCKER - ДИАГНОСТИКА (Palworld 1.0.4+ / SDK7)
 -- ============================================================================
---  Отдельный тестовый мод. Ничего не делает сам, только отвечает на команду
---      !eaglediag
---  и вываливает в UE4SS.log всё, что нужно, чтобы понять, почему разблокировка
---  не работает именно в этой сборке игры/UE4SS:
---    * какие функции/классы из SDK реально находятся;
---    * есть ли ещё старый RPC RequestUnlockFastTravelPoint_ToServer (должен быть
---      выпилен в 1.0.4 - если он есть, значит патч другой);
---    * умеет ли UE4SS передавать struct-параметры (нужно для записи флага
---      через UPalPlayerRecordDataUtility);
---    * какими ключами игра реально помечает открытые точки в
---      UPalPlayerRecordData::FastTravelPointUnlockFlag;
---    * прогоняет по ОДНОЙ закрытой точке все способы разблокировки и пишет,
---      какой из них реально выставляет флаг.
--- ----------------------------------------------------------------------------
+--  Тестовый мод. Сам ничего не разблокирует (кроме явных тестов), только
+--  отвечает на команды и пишет в UE4SS.log.
+--
+--  ВАЖНО: команды РАЗДЕЛЕНЫ ПО СТЕПЕНИ ОПАСНОСТИ. Часть вызовов роняет игру
+--  (EXCEPTION_ACCESS_VIOLATION) на некоторых сборках UE4SS - поэтому каждый
+--  рискованный вызов обрамляется метками:
+--      >>> ПЕРЕД ВЫЗОВОМ <имя>
+--      <<< ВЫЖИЛИ ПОСЛЕ <имя>
+--  Если игра упала - последняя строка ">>>" в UE4SS.log и есть виновник.
+--
+--  Команды:
+--      !eaglediag              - безопасная часть: наличие функций, счётчики,
+--                                чтение свойств (вызовов в игру почти нет)
+--      !eaglediag record       - + чтение RecordData через struct-параметры
+--                                (UPalPlayerRecordDataUtility::GetRecordData_Bool)
+--      !eaglediag statue       - + OnTriggerInteract(Character, 26) на одной точке
+--      !eaglediag cutscene     - + OnEndCutscene(...) на одной точке
+--      !eaglediag write        - + SetRecordData_Bool_ForServer (запись флага)
+--      !eaglediag all          - всё подряд (только если предыдущие выжили)
+--      !eaglediag help         - подсказка
+-- ============================================================================
 
 local TAG = "[EagleDiag]"
-local DIAG_COMMAND = "!eaglediag"
 
 local function Log(msg)
     print(TAG .. " " .. tostring(msg) .. "\n")
@@ -26,6 +32,20 @@ end
 local function Sep(title)
     Log("--------------------------------------------------------------")
     if title then Log(title) end
+end
+
+-- Рискованный вызов: печатаем метку ДО и ПОСЛЕ, чтобы по логу видеть,
+-- на чём именно игра умерла.
+local function Risky(label, fn)
+    Log(">>> ПЕРЕД ВЫЗОВОМ: " .. label)
+    local results = { pcall(fn) }
+    local ok = table.remove(results, 1)
+    if not ok then
+        Log("!!! ОШИБКА (Lua) в " .. label .. ": " .. tostring(results[1]))
+        return nil
+    end
+    Log("<<< ВЫЖИЛИ ПОСЛЕ: " .. label .. " -> " .. tostring(results[1]))
+    return results[1], results[2]
 end
 
 local function IsValid(obj)
@@ -51,7 +71,7 @@ local function GuidToHexStr(guid)
 end
 
 -- ---------------------------------------------------------------------------
--- Поиск объектов
+-- Доступ к игроку / RecordData
 -- ---------------------------------------------------------------------------
 
 local function GetLocalPlayerController()
@@ -86,19 +106,22 @@ local function GetLocalPlayerState()
     return IsValid(f) and f or nil
 end
 
-local function GetRecordData(worldContext)
+local function GetRecordData(worldContext, callLog)
     local util = StaticFindObject("/Script/Pal.Default__PalUtility")
-    local src = nil
     if util and worldContext then
-        local ok, res = pcall(function() return util:GetLocalRecordData(worldContext) end)
-        if ok and IsValid(res) then return res, "PalUtility::GetLocalRecordData" end
+        local rd = Risky("PalUtility::GetLocalRecordData(WorldContext)", function()
+            return util:GetLocalRecordData(worldContext)
+        end)
+        if IsValid(rd) then return rd, "PalUtility::GetLocalRecordData" end
     end
     local ps = GetLocalPlayerState()
     if IsValid(ps) then
-        local ok, res = pcall(function() return ps:GetRecordData() end)
-        if ok and IsValid(res) then return res, "PalPlayerState::GetRecordData" end
+        local rd = Risky("PalPlayerState::GetRecordData()", function()
+            return ps:GetRecordData()
+        end)
+        if IsValid(rd) then return rd, "PalPlayerState::GetRecordData" end
     end
-    return nil, src
+    return nil, nil
 end
 
 local function GetFlagsTable()
@@ -112,7 +135,7 @@ local function GetFlagsTable()
 end
 
 -- ---------------------------------------------------------------------------
--- Проверки наличия
+-- ШАГ 1. Наличие классов и функций (только чтение, без вызовов в игру)
 -- ---------------------------------------------------------------------------
 
 local function CheckStaticObject(label, path)
@@ -132,8 +155,8 @@ local function CheckMethod(label, obj, name)
     return present
 end
 
-local function DumpPresence()
-    Sep("1. НАЛИЧИЕ КЛАССОВ / ФУНКЦИЙ (SDK 1.0.4)")
+local function Stage1()
+    Sep("ШАГ 1. НАЛИЧИЕ КЛАССОВ / ФУНКЦИЙ (чтение, без вызовов)")
 
     CheckStaticObject("PalUtility (CDO)", "/Script/Pal.Default__PalUtility")
     CheckStaticObject("PalPlayerRecordDataUtility (CDO)", "/Script/Pal.Default__PalPlayerRecordDataUtility")
@@ -141,35 +164,29 @@ local function DumpPresence()
     CheckStaticObject("PalUnlockFastTravelTriggerEvent_RemoveSkyIslandCloud",
         "/Script/Pal.PalUnlockFastTravelTriggerEvent_RemoveSkyIslandCloud")
 
-    -- Старый RPC: в 1.0.4 его быть не должно.
     local pc = GetLocalPlayerController()
-    local transmitter = nil
-    local playerNet = nil
-    if IsValid(pc) then
-        transmitter = pc.Transmitter
-        if IsValid(transmitter) and IsValid(transmitter.Player) then playerNet = transmitter.Player end
-    end
-    Log(string.format("%-58s : %s", "PalPlayerController / Transmitter / Player",
+    local transmitter = IsValid(pc) and pc.Transmitter or nil
+    local playerNet = (IsValid(transmitter) and IsValid(transmitter.Player)) and transmitter.Player or nil
+    Log(string.format("%-58s : %s", "PlayerController / Transmitter / Player",
         (IsValid(pc) and "PC ok" or "PC НЕ НАЙДЕН") .. ", "
         .. (IsValid(transmitter) and "transmitter ok" or "transmitter НЕ НАЙДЕН") .. ", "
-        .. (IsValid(playerNet) and "network component ok" or "network component НЕ НАЙДЕН")))
+        .. (IsValid(playerNet) and "network ok" or "network НЕ НАЙДЕН")))
     if playerNet then
-        CheckMethod("старый RPC RequestUnlockFastTravelPoint_ToServer", playerNet, "RequestUnlockFastTravelPoint_ToServer")
+        CheckMethod("старый RPC RequestUnlockFastTravelPoint_ToServer", playerNet,
+            "RequestUnlockFastTravelPoint_ToServer")
     end
 
-    -- Методы статуи
     local statue = FindFirstOf("PalLevelObjectUnlockableFastTravelPoint")
     if IsValid(statue) then
-        CheckMethod("APalLevelObjectUnlockableFastTravelPoint.OnTriggerInteract", statue, "OnTriggerInteract")
-        CheckMethod("APalLevelObjectUnlockableFastTravelPoint.OnEndCutscene", statue, "OnEndCutscene")
-        CheckMethod("APalLevelObjectUnlockableFastTravelPoint.OnCompleteSyncPlayer", statue, "OnCompleteSyncPlayer")
-        CheckMethod("APalLevelObjectUnlockableFastTravelPoint.IsUnlocked", statue, "IsUnlocked")
-        CheckMethod("APalLevelObjectUnlockableFastTravelPoint.OnUpdateFlagMapRecord", statue, "OnUpdateFlagMapRecord")
+        CheckMethod("...FastTravelPoint.OnTriggerInteract", statue, "OnTriggerInteract")
+        CheckMethod("...FastTravelPoint.OnEndCutscene", statue, "OnEndCutscene")
+        CheckMethod("...FastTravelPoint.OnCompleteSyncPlayer", statue, "OnCompleteSyncPlayer")
+        CheckMethod("...FastTravelPoint.IsUnlocked", statue, "IsUnlocked")
+        CheckMethod("...FastTravelPoint.OnUpdateFlagMapRecord", statue, "OnUpdateFlagMapRecord")
     else
-        Log("APalLevelObjectUnlockableFastTravelPoint                : НЕ НАЙДЕН НИ ОДИН ЭКЗЕМПЛЯР")
+        Log("PalLevelObjectUnlockableFastTravelPoint                 : НЕ НАЙДЕН НИ ОДИН ЭКЗЕМПЛЯР")
     end
 
-    -- Точки на карте / локейшены
     local loc = FindFirstOf("PalLocationPointFastTravel")
     if IsValid(loc) then
         CheckMethod("UPalLocationPointFastTravel.IsUnlockMapPoint", loc, "IsUnlockMapPoint")
@@ -178,69 +195,103 @@ local function DumpPresence()
         Log("UPalLocationPointFastTravel                             : НЕ НАЙДЕН НИ ОДИН ЭКЗЕМПЛЯР")
     end
 
-    -- RecordData
     local util = StaticFindObject("/Script/Pal.Default__PalPlayerRecordDataUtility")
     if util then
-        CheckMethod("PalPlayerRecordDataUtility.SetRecordData_Bool_ForServer", util, "SetRecordData_Bool_ForServer")
-        CheckMethod("PalPlayerRecordDataUtility.GetRecordData_Bool", util, "GetRecordData_Bool")
-        CheckMethod("PalPlayerRecordDataUtility.GetRecordData_BoolCount", util, "GetRecordData_BoolCount")
+        CheckMethod("RecordDataUtility.SetRecordData_Bool_ForServer", util, "SetRecordData_Bool_ForServer")
+        CheckMethod("RecordDataUtility.GetRecordData_Bool", util, "GetRecordData_Bool")
+        CheckMethod("RecordDataUtility.GetRecordData_BoolCount", util, "GetRecordData_BoolCount")
     end
 
-    -- Отладочный флаг "игнорировать блокировку быстрого перемещения"
     local palUtil = StaticFindObject("/Script/Pal.Default__PalUtility")
     if palUtil then
-        local ok, debugSetting = pcall(function() return palUtil:GetPalDebugSetting() end)
-        if ok and debugSetting ~= nil then
-            local okFlag, val = pcall(function() return debugSetting.bIgnoreFastTravelLock end)
-            Log(string.format("%-58s : %s (сейчас = %s)", "UPalDebugSetting.bIgnoreFastTravelLock",
-                okFlag and "OK" or "НЕ ЧИТАЕТСЯ", tostring(val)))
-        else
-            Log(string.format("%-58s : %s", "UPalDebugSetting (GetPalDebugSetting)", "НЕ НАЙДЕН"))
-        end
+        CheckMethod("PalUtility.GetPalDebugSetting", palUtil, "GetPalDebugSetting")
     end
 end
 
 -- ---------------------------------------------------------------------------
--- Struct-параметры и ключи флагов
+-- ШАГ 2. Счётчики (вызовы IsUnlocked/IsEnableFastTravel - дешёвые и безопасные)
 -- ---------------------------------------------------------------------------
 
-local function DumpRecordData()
-    Sep("2. RECORD DATA / ФЛАГИ ОТКРЫТЫХ ТОЧЕК")
+local function StatueIsUnlocked(statue)
+    local ok, res = pcall(function() return statue:IsUnlocked() end)
+    return ok and res == true
+end
+
+local function Stage2()
+    Sep("ШАГ 2. СЧЁТЧИКИ (IsUnlocked / IsEnableFastTravel)")
+
+    local statues = FindAllOf("PalLevelObjectUnlockableFastTravelPoint")
+    local total, unlocked = 0, 0
+    for _, s in ipairs(statues or {}) do
+        if IsValid(s) then
+            total = total + 1
+            if StatueIsUnlocked(s) then unlocked = unlocked + 1 end
+        end
+    end
+    Log(string.format("PalLevelObjectUnlockableFastTravelPoint: %d шт., IsUnlocked()=true: %d", total, unlocked))
+
+    local locs = FindAllOf("PalLocationPointFastTravel")
+    local enabled, disabled, pillars, statuesN = 0, 0, 0, 0
+    for _, loc in ipairs(locs or {}) do
+        if IsValid(loc) then
+            local isPillar
+            local ok, res = pcall(function() return loc:IsUnlockMapPoint() end)
+            if ok then isPillar = (res == true) else isPillar = (loc.bUnlockMapPoint == true) end
+            if isPillar then pillars = pillars + 1 else statuesN = statuesN + 1 end
+            local okEn, en = pcall(function() return loc:IsEnableFastTravel() end)
+            if okEn and en == true then enabled = enabled + 1 else disabled = disabled + 1 end
+        end
+    end
+    Log(string.format("PalLocationPointFastTravel: %d шт. (статуи: %d, колонны: %d)",
+        (locs and #locs) or 0, statuesN, pillars))
+    Log(string.format("IsEnableFastTravel() = true: %d, false/не читается: %d", enabled, disabled))
+end
+
+-- ---------------------------------------------------------------------------
+-- ШАГ 3. RecordData: чтение свойства + struct-вызовы (ОПАСНО)
+-- ---------------------------------------------------------------------------
+
+local function ReadFlagSafe(flags, keys)
+    local util = StaticFindObject("/Script/Pal.Default__PalPlayerRecordDataUtility")
+    if not util or not flags then return nil end
+    local anyOk = false
+    for _, key in ipairs(keys) do
+        local res = Risky("GetRecordData_Bool(flags, '" .. tostring(key) .. "')", function()
+            return util:GetRecordData_Bool(flags, FName(key))
+        end)
+        if res ~= nil then
+            anyOk = true
+            if res == true then return true end
+        end
+    end
+    if not anyOk then return nil end
+    return false
+end
+
+local function Stage3(structCalls)
+    Sep("ШАГ 3. RECORD DATA")
 
     local world = GetLocalPlayerController()
     if not IsValid(world) then
-        Log("PlayerController не найден - дальше некуда.")
+        Log("PlayerController не найден.")
         return nil
     end
 
     local recordData, src = GetRecordData(world)
     if not recordData then
-        Log("UPalPlayerRecordData НЕ НАЙДЕН (ни через PalUtility, ни через PlayerState).")
+        Log("UPalPlayerRecordData НЕ НАЙДЕН.")
         return nil
     end
     Log("RecordData получен через: " .. tostring(src))
 
-    local flags = GetFlagsTable()
-    if flags == nil then
-        Log("FastTravelPointUnlockFlag не читается - прямая запись/чтение флага невозможна.")
+    local okFlags, flags = pcall(function() return recordData.FastTravelPointUnlockFlag end)
+    if not okFlags or flags == nil then
+        Log("FastTravelPointUnlockFlag не читается.")
         return nil
     end
-    Log("FastTravelPointUnlockFlag: прочитан.")
+    Log("FastTravelPointUnlockFlag: свойство прочитано (тип struct).")
 
-    -- Поддержка struct-параметров в этой сборке UE4SS
-    local util = StaticFindObject("/Script/Pal.Default__PalPlayerRecordDataUtility")
-    if util then
-        local ok, err = pcall(function() return util:GetRecordData_Bool(flags, FName("None")) end)
-        Log(string.format("struct-параметры UE4SS (GetRecordData_Bool)      : %s",
-            ok and "ПОДДЕРЖИВАЮТСЯ" or ("НЕ ПОДДЕРЖИВАЮТСЯ -> " .. tostring(err))))
-
-        local okCount, count = pcall(function() return util:GetRecordData_BoolCount(flags) end)
-        if okCount then
-            Log(string.format("Открытых точек по версии RecordData (GetRecordData_BoolCount): %s", tostring(count)))
-        end
-    end
-
-    -- Пробуем вытащить сами ключи - так видно, чем игра реально помечает точки
+    -- Покажем ключи, если массив читается (это просто чтение свойства)
     local okItems, items = pcall(function() return flags.Items end)
     if okItems and items ~= nil then
         local okNum, num = pcall(function() return #items end)
@@ -256,22 +307,37 @@ local function DumpRecordData()
                 end
             end
         else
-            Log("FastTravelPointUnlockFlag.Items: прочитать размер не удалось (" .. tostring(num) .. ")")
+            Log("FastTravelPointUnlockFlag.Items: размер не читается (" .. tostring(num) .. ")")
         end
     else
         Log("FastTravelPointUnlockFlag.Items: не читается (" .. tostring(items) .. ")")
     end
 
+    if not structCalls then
+        Log("struct-вызовы пропущены (нужна команда !eaglediag record).")
+        return flags
+    end
+
+    local util = StaticFindObject("/Script/Pal.Default__PalPlayerRecordDataUtility")
+    if util then
+        Risky("GetRecordData_BoolCount(flags)", function() return util:GetRecordData_BoolCount(flags) end)
+        Risky("GetRecordData_Bool(flags, 'None') - проба struct-параметра", function()
+            return util:GetRecordData_Bool(flags, FName("None"))
+        end)
+    end
     return flags
 end
 
 -- ---------------------------------------------------------------------------
--- Тест способов разблокировки на одной закрытой точке
+-- ШАГ 4. Тест способов разблокировки на ОДНОЙ закрытой точке
 -- ---------------------------------------------------------------------------
 
-local function StatueIsUnlocked(statue)
-    local ok, res = pcall(function() return statue:IsUnlocked() end)
-    return ok and res == true
+local function FindTestTarget()
+    local statues = FindAllOf("PalLevelObjectUnlockableFastTravelPoint")
+    for _, s in ipairs(statues or {}) do
+        if IsValid(s) and not StatueIsUnlocked(s) then return s end
+    end
+    return nil
 end
 
 local function KeysFor(statue)
@@ -283,161 +349,113 @@ local function KeysFor(statue)
     return keys
 end
 
-local function ReadFlag(flags, keys)
-    local util = StaticFindObject("/Script/Pal.Default__PalPlayerRecordDataUtility")
-    if not util or not flags then return nil end
-    local anyOk = false
-    for _, key in ipairs(keys) do
-        local ok, res = pcall(function() return util:GetRecordData_Bool(flags, FName(key)) end)
-        if ok then
-            anyOk = true
-            if res == true then return true end
-        end
+local function TestMethod(target, flags, label, fn, readFlagAfter)
+    Log("--- тест: " .. label)
+    local before = nil
+    if readFlagAfter and flags then before = ReadFlagSafe(flags, KeysFor(target)) end
+
+    Risky(label, fn)
+
+    local playerState = GetLocalPlayerState()
+    if IsValid(playerState) then
+        Risky("OnCompleteSyncPlayer(PlayerState)", function() return target:OnCompleteSyncPlayer(playerState) end)
     end
-    if not anyOk then return nil end
-    return false
+
+    local unlocked = StatueIsUnlocked(target)
+    local after = nil
+    if readFlagAfter and flags then after = ReadFlagSafe(flags, KeysFor(target)) end
+
+    Log(string.format("    итог %-24s | IsUnlocked=%-5s | флаг до=%-5s после=%s",
+        label, tostring(unlocked), tostring(before), tostring(after)))
+    return (after == true)
 end
 
-local function DumpStatueTest()
-    Sep("3. ТЕСТ СПОСОБОВ РАЗБЛОКИРОВКИ (на одной закрытой точке)")
+local function Stage4(kind, readFlagAfter)
+    Sep("ШАГ 4. ТЕСТ СПОСОБА РАЗБЛОКИРОВКИ (одна точка)")
 
-    local statues = FindAllOf("PalLevelObjectUnlockableFastTravelPoint")
-    if not statues or #statues == 0 then
-        Log("Не найдено ни одной PalLevelObjectUnlockableFastTravelPoint (стриминг?).")
-        return
-    end
-
-    local total, unlockedCount = 0, 0
-    for _, s in ipairs(statues) do
-        if IsValid(s) then
-            total = total + 1
-            if StatueIsUnlocked(s) then unlockedCount = unlockedCount + 1 end
-        end
-    end
-    Log(string.format("Статуй загружено: %d, из них IsUnlocked() = true: %d", total, unlockedCount))
-
-    local target = nil
-    for _, s in ipairs(statues) do
-        if IsValid(s) and not StatueIsUnlocked(s) then target = s break end
-    end
+    local target = FindTestTarget()
     if not target then
-        Log("Все загруженные точки уже открыты - тест выполнять не на ком.")
+        Log("Нет ни одной закрытой точки (или статуи не загружены).")
         return
     end
 
-    local idStr = ToStr(target.FastTravelPointID)
     local keys = KeysFor(target)
     Log(string.format("Тестовая точка: FastTravelPointID=%s, LevelObjectInstanceId=%s",
-        tostring(idStr), tostring(keys[2])))
-    Log("Проверочные ключи флага: " .. table.concat(keys, ", "))
-
-    local character = GetLocalPlayerCharacter()
-    local playerState = GetLocalPlayerState()
-    local flags = GetFlagsTable()
-
-    local function Report(methodName, fn)
-        local before = ReadFlag(flags, keys)
-        local ok, err = pcall(fn)
-        pcall(function() target:OnCompleteSyncPlayer(playerState) end)
-        local unlocked = StatueIsUnlocked(target)
-        local after = ReadFlag(flags, keys)
-        Log(string.format("  %-22s | вызов: %-28s | IsUnlocked=%-5s | флаг до=%-5s после=%-5s",
-            methodName,
-            ok and "ok" or ("ОШИБКА: " .. tostring(err)),
-            tostring(unlocked), tostring(before), tostring(after)))
-        return (after == true)
-    end
+        tostring(keys[1]), tostring(keys[2])))
+    local flags = readFlagAfter and GetFlagsTable() or nil
 
     pcall(function() target.EnableRequestUnlock = true end)
 
-    local worked = false
+    if kind == "statue" then
+        local character = GetLocalPlayerCharacter()
+        TestMethod(target, flags, "OnTriggerInteract(Character, 26)", function()
+            return target:OnTriggerInteract(character, 26)
+        end, readFlagAfter)
 
-    -- 1) хендлер завершения катсцены (без самой катсцены)
-    worked = Report("OnEndCutscene", function()
-        local cls = StaticFindObject("/Script/Pal.PalCutsceneBindParameter_FasttravelPoint")
-        local param = StaticConstructObject(cls, target)
-        target:OnEndCutscene(param)
-    end) or worked
+    elseif kind == "cutscene" then
+        TestMethod(target, flags, "OnEndCutscene(<BindParameter>)", function()
+            local cls = StaticFindObject("/Script/Pal.PalCutsceneBindParameter_FasttravelPoint")
+            local param = StaticConstructObject(cls, target)
+            return target:OnEndCutscene(param)
+        end, readFlagAfter)
 
-    -- если первым сработал этот способ, дальше проверять нечего
-    if not StatueIsUnlocked(target) or ReadFlag(flags, keys) ~= true then
-        -- 2) симуляция нажатия F (индикатор UnlockFastTravel = 26)
-        worked = Report("OnTriggerInteract(26)", function()
-            target:OnTriggerInteract(character, 26)
-        end) or worked
-    end
-
-    -- 3) прямая запись флага
-    if ReadFlag(flags, keys) ~= true then
-        worked = Report("SetRecordData_Bool", function()
+    elseif kind == "write" then
+        TestMethod(target, flags, "SetRecordData_Bool_ForServer", function()
             local util = StaticFindObject("/Script/Pal.Default__PalPlayerRecordDataUtility")
             local world = GetLocalPlayerController()
+            local f = GetFlagsTable()
             for _, key in ipairs(keys) do
-                util:SetRecordData_Bool_ForServer(world, flags, FName(key), true)
+                util:SetRecordData_Bool_ForServer(world, f, FName(key), true)
             end
-        end) or worked
-    end
+            return true
+        end, readFlagAfter)
 
-    -- 4) косметика
-    if ReadFlag(flags, keys) ~= true then
-        worked = Report("bUnlocked=true", function()
+    elseif kind == "cosmetic" then
+        TestMethod(target, flags, "bUnlocked = true", function()
             target.bUnlocked = true
-        end) or worked
-    end
-
-    if worked then
-        Log("ИТОГ: флаг FastTravelPointUnlockFlag выставлен - разблокировка настоящая, попадёт в сейв.")
-    else
-        Log("ИТОГ: ни один способ не выставил флаг в RecordData (или ключ флага отличается "
-            .. "от FastTravelPointID / LevelObjectInstanceId).")
-        Log("      Пришли в лог раздел 2 (список Items с ключами) - там видно, какими ключами "
-            .. "игра реально помечает открытые точки.")
+            return true
+        end, readFlagAfter)
     end
 end
 
 -- ---------------------------------------------------------------------------
--- Точки на карте: что доступно для быстрого перемещения
+-- Диспетчер
 -- ---------------------------------------------------------------------------
 
-local function DumpLocationPoints()
-    Sep("4. ЛОКЕЙШЕНЫ (что видит карта)")
+local HELP = {
+    "!eaglediag          - наличие функций + счётчики (безопасные вызовы)",
+    "!eaglediag record   - + чтение RecordData через struct-параметры (ОПАСНО)",
+    "!eaglediag statue   - + OnTriggerInteract(26) на одной точке",
+    "!eaglediag cutscene - + OnEndCutscene на одной точке (ОПАСНО)",
+    "!eaglediag write    - + запись флага SetRecordData_Bool_ForServer (ОПАСНО)",
+    "!eaglediag cosmetic - + bUnlocked = true",
+    "!eaglediag all      - всё подряд",
+}
 
-    local locs = FindAllOf("PalLocationPointFastTravel")
-    if not locs or #locs == 0 then
-        Log("PalLocationPointFastTravel не найдены.")
-        return
+local function Run(kind)
+    Log("==============================================================")
+    Log("ДИАГНОСТИКА FAST TRAVEL UNLOCKER, режим: " .. tostring(kind))
+    Log("==============================================================")
+    for _, line in ipairs(HELP) do Log("  " .. line) end
+
+    Stage1()
+    Stage2()
+
+    local structCalls = (kind == "record") or (kind == "all") or (kind == "write")
+    Stage3(structCalls)
+
+    if kind == "statue" then Stage4("statue", kind == "all")
+    elseif kind == "cutscene" then Stage4("cutscene", kind == "all")
+    elseif kind == "write" then Stage4("write", true)
+    elseif kind == "cosmetic" then Stage4("cosmetic", false)
+    elseif kind == "all" then
+        Stage4("statue", true)
+        Stage4("cutscene", true)
+        Stage4("write", true)
+        Stage4("cosmetic", true)
     end
 
-    local enabled, disabled, pillars, statues = 0, 0, 0, 0
-    for _, loc in ipairs(locs) do
-        if IsValid(loc) then
-            local isPillar
-            local ok, res = pcall(function() return loc:IsUnlockMapPoint() end)
-            if ok then isPillar = (res == true) else isPillar = (loc.bUnlockMapPoint == true) end
-            if isPillar then pillars = pillars + 1 else statues = statues + 1 end
-
-            local okEn, en = pcall(function() return loc:IsEnableFastTravel() end)
-            if okEn and en == true then enabled = enabled + 1 else disabled = disabled + 1 end
-        end
-    end
-    Log(string.format("PalLocationPointFastTravel: %d шт. (статуи: %d, колонны/мап-поинты: %d)",
-        #locs, statues, pillars))
-    Log(string.format("IsEnableFastTravel() = true: %d, false/не читается: %d", enabled, disabled))
-end
-
--- ---------------------------------------------------------------------------
--- Команда
--- ---------------------------------------------------------------------------
-
-local function RunDiag()
-    Log("==============================================================")
-    Log("ДИАГНОСТИКА FAST TRAVEL UNLOCKER")
-    Log("==============================================================")
-    DumpPresence()
-    DumpRecordData()
-    DumpLocationPoints()
-    DumpStatueTest()
-    Sep("КОНЕЦ ДИАГНОСТИКИ")
+    Sep("КОНЕЦ ДИАГНОСТИКИ (режим " .. tostring(kind) .. ")")
 end
 
 local ok, err = pcall(function()
@@ -445,15 +463,29 @@ local ok, err = pcall(function()
         local received = message:get()
         if not received or not received.Message then return end
         local text = string.lower(received.Message:ToString())
-        if text == DIAG_COMMAND then
-            local okRun, runErr = pcall(RunDiag)
-            if not okRun then Log("Диагностика упала: " .. tostring(runErr)) end
+
+        local kind = nil
+        if text == "!eaglediag" then kind = "safe"
+        elseif text == "!eaglediag record" then kind = "record"
+        elseif text == "!eaglediag statue" then kind = "statue"
+        elseif text == "!eaglediag cutscene" then kind = "cutscene"
+        elseif text == "!eaglediag write" then kind = "write"
+        elseif text == "!eaglediag cosmetic" then kind = "cosmetic"
+        elseif text == "!eaglediag all" then kind = "all"
+        elseif text == "!eaglediag help" then
+            Log("Команды диагностики:")
+            for _, line in ipairs(HELP) do Log("  " .. line) end
+            return
         end
+        if not kind then return end
+
+        local okRun, runErr = pcall(Run, kind)
+        if not okRun then Log("Диагностика упала: " .. tostring(runErr)) end
     end)
 end)
 
 if ok then
-    Log(string.format("Диагностический мод загружен. Команда: %s", DIAG_COMMAND))
+    Log("Диагностический мод загружен. Начни с команды: !eaglediag")
 else
     Log("Не удалось зарегистрировать чат-хук: " .. tostring(err))
 end

@@ -67,20 +67,31 @@ local CONFIG = {
     MapClearIntervalMs   = 250,
 
     -- разблокировка пачками: меньше шанс уронить игру
-    UnlockBatchSize      = 5,
-    UnlockBatchDelayMs   = 250,
+    UnlockBatchSize      = 3,
+    UnlockBatchDelayMs   = 350,
 
     -- EPalInteractiveObjectIndicatorType::UnlockFastTravel (Pal_enums.hpp: 26)
     IndicatorUnlockFastTravel = 26,
 
-    -- с какого способа начинать: "EndCutscene" (тихий, без катсцены) или
-    -- "Interact" (сымитировать нажатие F - игра может включить катсцену)
-    PrimaryMethod = "EndCutscene",
+    -- с какого способа начинать:
+    --   "Interact"    - симитировать нажатие F (путь, проверенный сообществом,
+    --                   статистически самый безопасный)   <-- по умолчанию
+    --   "EndCutscene" - дёрнуть сразу хендлер завершения катсцены (эксперимент)
+    --   "RecordData"  - писать флаг напрямую (нужна поддержка struct-параметров)
+    PrimaryMethod = "Interact",
 
-    -- какие способы разблокировки использовать
-    EnableCutsceneEndPath  = true,
+    -- какие способы разблокировки использовать.
+    -- ВАЖНО: EndCutscene и RecordData по умолчанию ВЫКЛЮЧЕНЫ - это нетривиальные
+    -- вызовы, на части сборок UE4SS они роняют игру (EXCEPTION_ACCESS_VIOLATION).
+    -- Включаются одной командой в чате: !eagle method cutscene / record
     EnableInteractPath     = true,
-    EnableRecordDataPath   = true,
+    EnableCutsceneEndPath  = false,
+    EnableRecordDataPath   = false,
+
+    -- проверять результат по флагу FastTravelPointUnlockFlag (struct-параметры).
+    -- Выключено по той же причине: чтение идёт через UPalPlayerRecordDataUtility.
+    EnableStructVerification = false,
+
     EnableCosmeticFallback = true,
 
     -- писать ли сообщения в игровой чат-панель (PalUtility::SendSystemAnnounce)
@@ -300,6 +311,7 @@ end
 
 -- true / false / nil (nil = проверить не удалось)
 local function RecordFlagIsSet(keys)
+    if not CONFIG.EnableStructVerification then return nil end
     if not ProbeStructAccess() then return nil end
     local util = GetRecordDataUtility()
     local flags = GetFlagsTable()
@@ -806,7 +818,10 @@ local function RunUnlock(filterMode)
             .. "не подтверждён у %d, проверить не удалось у %d.",
             stats.confirmed, stats.unconfirmed, stats.unknown))
 
-        if ProbeStructAccess() then
+        if not CONFIG.EnableStructVerification then
+            Log("Проверка по флагу RecordData отключена (CONFIG.EnableStructVerification = false): "
+                .. "считаем только IsUnlocked(). Включить можно командой !eagle method record.")
+        elseif ProbeStructAccess() then
             if stats.unconfirmed > 0 then
                 Log(string.format(
                     "ВНИМАНИЕ: у %d точек IsUnlocked() = true, но флаг в RecordData не выставлен. "
@@ -837,6 +852,37 @@ end
 -- ---------------------------------------------------------------------------
 -- Команды
 -- ---------------------------------------------------------------------------
+
+-- Переключение способа разблокировки на ходу (без правки файла)
+local function SetPrimaryMethod(name)
+    if name == "interact" then
+        CONFIG.PrimaryMethod = "Interact"
+        CONFIG.EnableInteractPath = true
+        return "Основной способ: OnTriggerInteract(Character, 26) - симуляция нажатия F."
+    elseif name == "cutscene" then
+        CONFIG.PrimaryMethod = "EndCutscene"
+        CONFIG.EnableCutsceneEndPath = true
+        return "Основной способ: OnEndCutscene(<BindParameter>). ЭКСПЕРИМЕНТ - может ронять игру."
+    elseif name == "record" then
+        CONFIG.PrimaryMethod = "RecordData"
+        CONFIG.EnableRecordDataPath = true
+        CONFIG.EnableStructVerification = true
+        return "Основной способ: прямая запись FastTravelPointUnlockFlag. "
+            .. "Требует struct-параметры в UE4SS - может ронять игру."
+    end
+    return nil
+end
+
+local function CurrentMethodInfo()
+    local flags = {}
+    if CONFIG.EnableInteractPath then flags[#flags + 1] = "Interact" end
+    if CONFIG.EnableCutsceneEndPath then flags[#flags + 1] = "EndCutscene" end
+    if CONFIG.EnableRecordDataPath then flags[#flags + 1] = "RecordData" end
+    return string.format("способ=%s, разрешено: %s, проверка по флагу=%s",
+        tostring(CONFIG.PrimaryMethod), table.concat(flags, "+"),
+        tostring(CONFIG.EnableStructVerification))
+end
+
 
 local function CollectEagles(filterMode)
     RunUnlock(filterMode)
@@ -896,6 +942,32 @@ local function RegisterChatHook()
             elseif textLower == CONFIG.ChatCommandVerify then
                 SafeRun("verify", function() ReportUnlocked("all") end)
 
+            elseif textLower == "!eagle method" then
+                Log("Текущий режим: " .. CurrentMethodInfo())
+
+            elseif textLower == "!eagle method interact"
+                or textLower == "!eagle method cutscene"
+                or textLower == "!eagle method record" then
+                local name = textLower:match("!eagle method (%a+)")
+                local info = SetPrimaryMethod(name)
+                if info then
+                    Log("Режим переключён. " .. info)
+                else
+                    Log("Неизвестный режим: " .. tostring(name))
+                end
+
+            elseif textLower == "!eagle verifystruct" then
+                SafeRun("verifystruct", function()
+                    CONFIG.EnableStructVerification = true
+                    local ok = ProbeStructAccess()
+                    Log(string.format("struct-параметры UE4SS: %s (%s)",
+                        tostring(ok), tostring(structAccess.lastError)))
+                    if not ok then
+                        CONFIG.EnableStructVerification = false
+                        Log("Проверка по флагу снова отключена, чтобы не ронять игру.")
+                    end
+                end)
+
             elseif textLower == CONFIG.ChatCommandBypass or textLower == CONFIG.ChatCommandBypass .. " on" then
                 SafeRun("bypass", function()
                     local ok, info = SetIgnoreFastTravelLock(true)
@@ -922,6 +994,9 @@ local function RegisterChatHook()
     end)
 
     if success then
+        Log("Режим по умолчанию: " .. CurrentMethodInfo())
+        Log("Опасные способы (EndCutscene / прямая запись флага) отключены до команды "
+            .. "!eagle method cutscene|record.")
         Log(string.format("Мод загружен. Команды: %s, %s, %s, %s, %s, %s, %s",
             CONFIG.ChatCommand, CONFIG.ChatCommandStatues, CONFIG.ChatCommandPillars,
             CONFIG.ChatCommandNoExp, CONFIG.ChatCommandMap, CONFIG.ChatCommandVerify,

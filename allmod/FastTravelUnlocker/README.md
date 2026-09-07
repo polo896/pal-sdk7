@@ -81,6 +81,38 @@ enum class EPalInteractiveObjectIndicatorType {
 ```
 Т.е. `statue:OnTriggerInteract(character, 26)` — это ровно «игрок нажал F у статуи».
 
+## Режим по умолчанию — безопасный (после EXCEPTION_ACCESS_VIOLATION)
+
+Первая версия фикса падала с `EXCEPTION_ACCESS_VIOLATION reading address 0x24`:
+оба «умных» пути оказались опасны на части сборок UE4SS —
+
+* передача `FPalPlayerRecordDataRepInfoArrayThreadSafe_BoolVal` (struct по ссылке)
+  в `UPalPlayerRecordDataUtility` — UE4SS кладёт в параметры мусор/нули, нативный
+  код deref'ает null;
+* `OnEndCutscene(<свой BindParameter>)` — путь, которого в природе не существует
+  (игра создаёт параметр и биндит делегат сама), часть хендлеров на нём падает.
+
+Поэтому **по умолчанию включён ровно один путь** — тот, что давно и массово
+используется Lua-модами (Nexus 795 и др.) и подтверждён SDK:
+
+```
+statue.EnableRequestUnlock = true
+statue:OnTriggerInteract(playerCharacter, 26)   -- UnlockFastTravel
+statue:OnCompleteSyncPlayer(playerState)
+```
+
+Всё остальное — **opt-in**, включается командой в чате, а не правкой файла:
+
+| Команда | Что включает |
+|---|---|
+| `!eagle method interact` | (по умолчанию) только `OnTriggerInteract(26)` |
+| `!eagle method cutscene` | `OnEndCutscene(<BindParameter>)` — эксперимент, может ронять игру |
+| `!eagle method record` | прямая запись `FastTravelPointUnlockFlag` + проверка по флагу — может ронять игру |
+| `!eagle method` | показать текущий режим |
+| `!eagle verifystruct` | разовая проба: поддерживает ли ваш UE4SS struct-параметры (и отключит проверку, если нет) |
+
+Проверка результата по умолчанию идёт через `IsUnlocked()` (без struct-вызовов).
+
 ## Что делает мод теперь
 
 На каждую статую по очереди (порядок задаётся `CONFIG.PrimaryMethod`):
@@ -103,7 +135,7 @@ enum class EPalInteractiveObjectIndicatorType {
 пробует следующий способ. Итог по флагам печатается в лог:
 `Подтверждение: флаг в RecordData выставлен у N точек, не подтверждён у M ...`.
 
-Разблокировка идёт пачками (`UnlockBatchSize = 5`, пауза `UnlockBatchDelayMs = 250`):
+Разблокировка идёт пачками (`UnlockBatchSize = 3`, пауза `UnlockBatchDelayMs = 350`):
 если скормить игре ~174 разблокировки в один кадр, она падает (это же и есть
 причина массовых жалоб «мод крашит игру» у аналогичных скриптов).
 
@@ -129,7 +161,10 @@ enum class EPalInteractiveObjectIndicatorType {
 
 ## Если что-то не так
 
-Подключи мод `allmod/FastTravelUnlockerDiag` и напиши в чат `!eaglediag` — он
+Подключи мод `allmod/FastTravelUnlockerDiag` и напиши в чат `!eaglediag` (безопасный
+режим), затем `!eaglediag statue`, и только если нужно — `!eaglediag record`.
+Каждый опасный вызов обрамляется метками `>>> ПЕРЕД ВЫЗОВОМ` / `<<< ВЫЖИЛИ ПОСЛЕ`,
+так что последняя строка `>>>` перед падением — это и есть виновник. Он
 выведет в `UE4SS.log`, какие функции реально есть в сборке, поддерживает ли
 UE4SS struct-параметры, какими ключами игра помечает открытые точки и какой из
 способов реально выставляет флаг.
